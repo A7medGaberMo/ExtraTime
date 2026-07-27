@@ -1,0 +1,73 @@
+{
+  "tiers": [
+    {
+      "id": "ICON",
+      "label": "Icon",
+      "description": "Retired legends only",
+      "color": "#F59E0B",
+      "gradient": ["#F59E0B", "#D97706"],
+      "sortOrder": 0
+    },
+    {
+      "id": "MASTER",
+      "label": "Master",
+      "description": "Top-tier active players",
+      "color": "#A855F7",
+      "gradient": ["#A855F7", "#7C3AED"],
+      "sortOrder": 1
+    },
+    {
+      "id": "ELITE_PLUS",
+      "label": "Elite+",
+      "description": "World-class performers",
+      "color": "#3B82F6",
+      "gradient": ["#3B82F6", "#2563EB"],
+      "sortOrder": 2
+    },
+    {
+      "id": "ELITE",
+      "label": "Elite",
+      "description": "Top league starters",
+      "color": "#06B6D4",
+      "gradient": ["#06B6D4", "#0891B2"],
+      "sortOrder": 3
+    },
+    {
+      "id": "GOLD",
+      "label": "Gold",
+      "description": "Strong squad players",
+      "color": "#EAB308",
+      "gradient": ["#EAB308", "#CA8A04"],
+      "sortOrder": 4
+    },
+    {
+      "id": "SILVER",
+      "label": "Silver",
+      "description": "Reliable squad options",
+      "color": "#94A3B8",
+      "gradient": ["#94A3B8", "#64748B"],
+      "sortOrder": 5
+    },
+    {
+      "id": "BRONZE",
+      "label": "Bronze",
+      "description": "Emerging talent",
+      "color": "#CD7F32",
+      "gradient": ["#CD7F32", "#A0522D"],
+      "sortOrder": 6
+    }
+  ],
+  "positions": {
+    "GK": { "label": "Goalkeeper", "category": "defense" },
+    "CB": { "label": "Center Back", "category": "defense" },
+    "LB": { "label": "Left Back", "category": "defense" },
+    "RB": { "label": "Right Back", "category": "defense" },
+    "CDM": { "label": "Defensive Midfielder", "category": "midfield" },
+    "CM": { "label": "Central Midfielder", "category": "midfield" },
+    "CAM": { "label": "Attacking Midfielder", "category": "midfield" },
+    "LW": { "label": "Left Winger", "category": "attack" },
+    "RW": { "label": "Right Winger", "category": "attack" },
+    "ST": { "label": "Striker", "category": "attack" },
+    "CF": { "label": "Center Forward", "category": "attack" }
+  }
+}
