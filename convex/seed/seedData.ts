@@ -4,24 +4,26 @@ import { v } from "convex/values";
 /**
  * Seeder mutation for populating clubs, nations, and players into Convex.
  */
+
+const PREMIER_LEAGUE_CLUBS = new Set([
+  "Arsenal",
+  "Chelsea",
+  "Liverpool",
+  "Manchester City",
+  "Manchester United",
+  "Newcastle United",
+]);
+
+function inferLeague(club: string) {
+  return PREMIER_LEAGUE_CLUBS.has(club) ? "Premier League" : "Global Legends";
+}
+
 export const seedAllData = mutation({
   args: {
     players: v.array(
       v.object({
         name: v.string(),
-        position: v.union(
-          v.literal("GK"),
-          v.literal("CB"),
-          v.literal("LB"),
-          v.literal("RB"),
-          v.literal("CDM"),
-          v.literal("CM"),
-          v.literal("CAM"),
-          v.literal("LW"),
-          v.literal("RW"),
-          v.literal("ST"),
-          v.literal("CF")
-        ),
+        position: v.string(),
         club: v.string(),
         nation: v.string(),
         tier: v.union(
@@ -66,7 +68,7 @@ export const seedAllData = mutation({
           name: p.club,
           shortName: p.club.slice(0, 3).toUpperCase(),
           logo: `logos/clubs/${p.club.toLowerCase().replace(/\s+/g, '-')}.png`,
-          league: "Top Division",
+          league: inferLeague(p.club),
           country: p.nation,
           apiId: ""
         });

@@ -8,6 +8,10 @@
  * @module
  */
 
+import type * as auctions_draftEngine from "../auctions/draftEngine.js";
+import type * as auctions_formations from "../auctions/formations.js";
+import type * as auctions_mutations from "../auctions/mutations.js";
+import type * as auctions_queries from "../auctions/queries.js";
 import type * as clubs_mutations from "../clubs/mutations.js";
 import type * as clubs_queries from "../clubs/queries.js";
 import type * as guests_mutations from "../guests/mutations.js";
@@ -27,6 +31,10 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  "auctions/draftEngine": typeof auctions_draftEngine;
+  "auctions/formations": typeof auctions_formations;
+  "auctions/mutations": typeof auctions_mutations;
+  "auctions/queries": typeof auctions_queries;
   "clubs/mutations": typeof clubs_mutations;
   "clubs/queries": typeof clubs_queries;
   "guests/mutations": typeof guests_mutations;

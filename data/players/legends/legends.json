@@ -24,7 +24,7 @@
   {
     "apiId": "leg_3",
     "name": "Zinedine Zidane",
-    "position": "CAM",
+    "position": "CAM/CM",
     "club": "Real Madrid",
     "nation": "France",
     "tier": "ICON",
@@ -57,7 +57,7 @@
   {
     "apiId": "leg_6",
     "name": "Johan Cruyff",
-    "position": "CF",
+    "position": "CF/CAM",
     "club": "Ajax",
     "nation": "Netherlands",
     "tier": "ICON",
@@ -68,7 +68,7 @@
   {
     "apiId": "leg_7",
     "name": "Paolo Maldini",
-    "position": "CB",
+    "position": "CB/LB",
     "club": "AC Milan",
     "nation": "Italy",
     "tier": "ICON",
@@ -79,7 +79,7 @@
   {
     "apiId": "leg_8",
     "name": "Franz Beckenbauer",
-    "position": "CB",
+    "position": "CB/CDM",
     "club": "Bayern Munich",
     "nation": "Germany",
     "tier": "ICON",
@@ -90,7 +90,7 @@
   {
     "apiId": "leg_9",
     "name": "Thierry Henry",
-    "position": "ST",
+    "position": "ST/LW",
     "club": "Arsenal",
     "nation": "France",
     "tier": "ICON",
@@ -112,7 +112,7 @@
   {
     "apiId": "leg_11",
     "name": "Roberto Carlos",
-    "position": "LB",
+    "position": "LB/LM",
     "club": "Real Madrid",
     "nation": "Brazil",
     "tier": "ICON",
@@ -123,7 +123,7 @@
   {
     "apiId": "leg_12",
     "name": "Cafu",
-    "position": "RB",
+    "position": "RB/RM",
     "club": "AC Milan",
     "nation": "Brazil",
     "tier": "ICON",
@@ -167,7 +167,7 @@
   {
     "apiId": "leg_16",
     "name": "George Best",
-    "position": "RW",
+    "position": "RW/LW",
     "club": "Manchester United",
     "nation": "Northern Ireland",
     "tier": "ICON",
@@ -200,7 +200,7 @@
   {
     "apiId": "leg_19",
     "name": "Ruud Gullit",
-    "position": "CM",
+    "position": "CM/CAM",
     "club": "AC Milan",
     "nation": "Netherlands",
     "tier": "ICON",
@@ -255,7 +255,7 @@
   {
     "apiId": "leg_24",
     "name": "Garrincha",
-    "position": "RW",
+    "position": "RW/RM",
     "club": "Botafogo",
     "nation": "Brazil",
     "tier": "ICON",
@@ -288,7 +288,7 @@
   {
     "apiId": "leg_27",
     "name": "Roberto Baggio",
-    "position": "CAM",
+    "position": "CF/CAM",
     "club": "Juventus",
     "nation": "Italy",
     "tier": "ICON",
@@ -343,7 +343,7 @@
   {
     "apiId": "leg_32",
     "name": "Carles Puyol",
-    "position": "CB",
+    "position": "CB/RB",
     "club": "FC Barcelona",
     "nation": "Spain",
     "tier": "ICON",
@@ -354,7 +354,7 @@
   {
     "apiId": "leg_33",
     "name": "Fabio Cannavaro",
-    "position": "CB",
+    "position": "CB/RB",
     "club": "Juventus",
     "nation": "Italy",
     "tier": "ICON",
@@ -365,7 +365,7 @@
   {
     "apiId": "leg_34",
     "name": "Alessandro Del Piero",
-    "position": "CF",
+    "position": "CF/ST",
     "club": "Juventus",
     "nation": "Italy",
     "tier": "ICON",
@@ -376,7 +376,7 @@
   {
     "apiId": "leg_35",
     "name": "Dennis Bergkamp",
-    "position": "CF",
+    "position": "CF/ST",
     "club": "Arsenal",
     "nation": "Netherlands",
     "tier": "ICON",
@@ -387,7 +387,7 @@
   {
     "apiId": "leg_36",
     "name": "Patrick Vieira",
-    "position": "CM",
+    "position": "CDM/CM",
     "club": "Arsenal",
     "nation": "France",
     "tier": "ICON",
@@ -398,7 +398,7 @@
   {
     "apiId": "leg_37",
     "name": "Roy Keane",
-    "position": "CM",
+    "position": "CDM/CM",
     "club": "Manchester United",
     "nation": "Republic of Ireland",
     "tier": "ICON",
@@ -409,7 +409,7 @@
   {
     "apiId": "leg_38",
     "name": "Paul Scholes",
-    "position": "CM",
+    "position": "CM/CAM",
     "club": "Manchester United",
     "nation": "England",
     "tier": "ICON",
@@ -420,7 +420,7 @@
   {
     "apiId": "leg_39",
     "name": "Steven Gerrard",
-    "position": "CM",
+    "position": "CM/CDM",
     "club": "Liverpool",
     "nation": "England",
     "tier": "ICON",
@@ -431,7 +431,7 @@
   {
     "apiId": "leg_40",
     "name": "Frank Lampard",
-    "position": "CM",
+    "position": "CM/CAM",
     "club": "Chelsea",
     "nation": "England",
     "tier": "ICON",
@@ -442,7 +442,7 @@
   {
     "apiId": "leg_41",
     "name": "Wayne Rooney",
-    "position": "ST",
+    "position": "ST/CF",
     "club": "Manchester United",
     "nation": "England",
     "tier": "ICON",
@@ -453,7 +453,7 @@
   {
     "apiId": "leg_42",
     "name": "Didier Drogba",
-    "position": "ST",
+    "position": "ST/CF",
     "club": "Chelsea",
     "nation": "Ivory Coast",
     "tier": "ICON",
@@ -497,7 +497,7 @@
   {
     "apiId": "leg_46",
     "name": "Ryan Giggs",
-    "position": "LW",
+    "position": "LW/LM",
     "club": "Manchester United",
     "nation": "Wales",
     "tier": "ICON",
@@ -519,7 +519,7 @@
   {
     "apiId": "leg_48",
     "name": "Rivaldo",
-    "position": "CAM",
+    "position": "LW/CAM",
     "club": "FC Barcelona",
     "nation": "Brazil",
     "tier": "ICON",
@@ -530,7 +530,7 @@
   {
     "apiId": "leg_49",
     "name": "Samuel Eto'o",
-    "position": "ST",
+    "position": "ST/CF",
     "club": "FC Barcelona",
     "nation": "Cameroon",
     "tier": "ICON",
@@ -618,7 +618,7 @@
   {
     "apiId": "leg_57",
     "name": "Clarence Seedorf",
-    "position": "CM",
+    "position": "CM/CAM",
     "club": "AC Milan",
     "nation": "Netherlands",
     "tier": "ICON",
@@ -629,7 +629,7 @@
   {
     "apiId": "leg_58",
     "name": "Andrea Pirlo",
-    "position": "CM",
+    "position": "CM/CDM",
     "club": "Juventus",
     "nation": "Italy",
     "tier": "ICON",
@@ -640,7 +640,7 @@
   {
     "apiId": "leg_59",
     "name": "Philipp Lahm",
-    "position": "RB",
+    "position": "RB/LB",
     "club": "Bayern Munich",
     "nation": "Germany",
     "tier": "ICON",
@@ -695,7 +695,7 @@
   {
     "apiId": "leg_64",
     "name": "Rio Ferdinand",
-    "position": "CB",
+    "position": "CB/RB",
     "club": "Manchester United",
     "nation": "England",
     "tier": "ICON",
@@ -706,7 +706,7 @@
   {
     "apiId": "leg_65",
     "name": "Ashley Cole",
-    "position": "LB",
+    "position": "LB/LM",
     "club": "Chelsea",
     "nation": "England",
     "tier": "ICON",
@@ -739,7 +739,7 @@
   {
     "apiId": "leg_68",
     "name": "David Beckham",
-    "position": "RW",
+    "position": "RW/CM",
     "club": "Manchester United",
     "nation": "England",
     "tier": "ICON",
@@ -860,7 +860,7 @@
   {
     "apiId": "leg_79",
     "name": "Marcelo",
-    "position": "LB",
+    "position": "LB/LM",
     "club": "Real Madrid",
     "nation": "Brazil",
     "tier": "ICON",

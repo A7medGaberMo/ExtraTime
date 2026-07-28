@@ -3,19 +3,7 @@ import { v } from "convex/values";
 
 export const playersTable = defineTable({
   name: v.string(),
-  position: v.union(
-    v.literal("GK"),
-    v.literal("CB"),
-    v.literal("LB"),
-    v.literal("RB"),
-    v.literal("CDM"),
-    v.literal("CM"),
-    v.literal("CAM"),
-    v.literal("LW"),
-    v.literal("RW"),
-    v.literal("ST"),
-    v.literal("CF")
-  ),
+  position: v.string(), // Supports FC-style multi-position values like "CDM/CM" or "LW/ST".
   clubId: v.id("clubs"),
   nationId: v.id("nations"),
   tier: v.union(

@@ -27,8 +27,13 @@ export const getByTier = query({
 export const getByPosition = query({
   args: { position: v.string() },
   handler: async (ctx, args) => {
-    return await ctx.db.query("players")
-      .filter(q => q.eq(q.field("position"), args.position))
-      .collect();
+    const target = args.position.trim().toUpperCase();
+    const players = await ctx.db.query("players").collect();
+    return players.filter((player) =>
+      player.position
+        .split("/")
+        .map((position) => position.trim().toUpperCase())
+        .includes(target)
+    );
   },
 });

@@ -13,9 +13,11 @@ export const roomsTable = defineTable({
     v.literal("completed"),
     v.literal("abandoned")
   ),
+  isPublic: v.optional(v.boolean()),
   settings: v.any(),
   createdAt: v.number(),
 })
   .index("by_code", ["code"])
   .index("by_status", ["status"])
-  .index("by_host", ["hostId"]);
+  .index("by_host", ["hostId"])
+  .index("by_public_status", ["isPublic", "status"]);

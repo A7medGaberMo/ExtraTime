@@ -96,7 +96,7 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
 
         {/* Position badge */}
         <div className="absolute top-10 left-3 z-10">
-          <span className="inline-flex items-center rounded-md bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[10px] font-black tracking-widest text-amber-300 backdrop-blur-md">
+          <span className="inline-flex max-w-[4.75rem] items-center truncate rounded-md bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[10px] font-black text-amber-300 backdrop-blur-md">
             {player.position}
           </span>
         </div>
@@ -180,7 +180,7 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
 
       {/* Position badge top left */}
       <div className="absolute top-2.5 left-2.5 z-10 flex items-center gap-1.5">
-        <span className="inline-flex items-center rounded-md bg-white/10 px-2 py-0.5 text-[10px] font-bold tracking-wider text-white/80 backdrop-blur-sm border border-white/10">
+        <span className="inline-flex max-w-[4.75rem] items-center truncate rounded-md bg-white/10 px-2 py-0.5 text-[10px] font-bold text-white/80 backdrop-blur-sm border border-white/10">
           {player.position}
         </span>
       </div>

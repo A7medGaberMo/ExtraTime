@@ -15,6 +15,8 @@ export type Position =
   | 'ST'
   | 'CF';
 
+export type PlayerPosition = Position | `${Position}/${Position}` | string;
+
 /** Position category for grouping */
 export type PositionCategory = 'defense' | 'midfield' | 'attack';
 
@@ -23,7 +25,7 @@ export interface PlayerCardData {
   id: string;
   name: string;
   tier: Tier;
-  position: Position;
+  position: PlayerPosition;
   club: string;
   nation: string;
   imageUrl?: string;
