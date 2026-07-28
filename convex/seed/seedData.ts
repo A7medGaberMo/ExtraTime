@@ -5,17 +5,41 @@ import { v } from "convex/values";
  * Seeder mutation for populating clubs, nations, and players into Convex.
  */
 
-const PREMIER_LEAGUE_CLUBS = new Set([
-  "Arsenal",
-  "Chelsea",
-  "Liverpool",
-  "Manchester City",
-  "Manchester United",
-  "Newcastle United",
-]);
+const KNOWN_LEAGUES: Record<string, string> = {
+  // Premier League
+  Arsenal: "Premier League",
+  Chelsea: "Premier League",
+  Liverpool: "Premier League",
+  "Manchester City": "Premier League",
+  "Manchester United": "Premier League",
+  "Newcastle United": "Premier League",
+  Tottenham: "Premier League",
+  "Aston Villa": "Premier League",
+  // La Liga
+  "Real Madrid": "La Liga",
+  Barcelona: "La Liga",
+  "Atlético Madrid": "La Liga",
+  Sevilla: "La Liga",
+  // Serie A
+  "AC Milan": "Serie A",
+  "Inter Milan": "Serie A",
+  Juventus: "Serie A",
+  Napoli: "Serie A",
+  Roma: "Serie A",
+  // Bundesliga
+  "Bayern Munich": "Bundesliga",
+  "Borussia Dortmund": "Bundesliga",
+  "Bayer Leverkusen": "Bundesliga",
+  // Ligue 1
+  PSG: "Ligue 1",
+  "Paris Saint-Germain": "Ligue 1",
+  Monaco: "Ligue 1",
+  Lyon: "Ligue 1",
+};
 
-function inferLeague(club: string) {
-  return PREMIER_LEAGUE_CLUBS.has(club) ? "Premier League" : "Global Legends";
+function inferLeague(club: string, customLeague?: string) {
+  if (customLeague && customLeague.trim()) return customLeague.trim();
+  return KNOWN_LEAGUES[club] || "Global Legends";
 }
 
 export const seedAllData = mutation({
@@ -26,6 +50,7 @@ export const seedAllData = mutation({
         position: v.string(),
         club: v.string(),
         nation: v.string(),
+        league: v.optional(v.string()),
         tier: v.union(
           v.literal("ICON"),
           v.literal("MASTER"),
@@ -68,7 +93,7 @@ export const seedAllData = mutation({
           name: p.club,
           shortName: p.club.slice(0, 3).toUpperCase(),
           logo: `logos/clubs/${p.club.toLowerCase().replace(/\s+/g, '-')}.png`,
-          league: inferLeague(p.club),
+          league: inferLeague(p.club, p.league),
           country: p.nation,
           apiId: ""
         });

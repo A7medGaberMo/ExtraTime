@@ -1,29 +1,58 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { PageHeader } from "@/components/shared/page-header";
-import { KeyRound } from "lucide-react";
+import { Loader2, RefreshCw, CheckCircle2, XCircle, Search } from "lucide-react";
+
+/* ── Random football manager name ────────────────────────────────────── */
+const FIRST = ["Coach", "Boss", "Gaffer", "Mister", "Don", "Captain", "Chief", "Maestro", "Legend", "Striker", "El Capitán", "Manager"];
+const LAST = ["Santos", "Müller", "Silva", "Ali", "Rossi", "Park", "König", "Torres", "Diallo", "Kovač", "Zidane", "Pirlo"];
+function randomName() {
+  return `${FIRST[Math.floor(Math.random() * FIRST.length)]} ${LAST[Math.floor(Math.random() * LAST.length)]}`;
+}
 
 export default function JoinRoomPage() {
   const router = useRouter();
   const createGuest = useMutation(api.guests.mutations.create);
   const joinRoom = useMutation(api.rooms.mutations.join);
-  const [nickname, setNickname] = useState("Manager");
+
+  const [nickname, setNickname] = useState("");
   const [roomCode, setRoomCode] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => { setNickname(randomName()); }, []);
+
   const normalizedCode = roomCode.replace(/[^A-Z0-9]/g, "").slice(0, 6).toUpperCase();
   const room = useQuery(api.rooms.queries.getByCode, normalizedCode.length === 6 ? { code: normalizedCode } : "skip");
   const canJoin = Boolean(room && room.status === "waiting" && !room.guestId);
+
+  const statusIcon = normalizedCode.length < 6
+    ? <Search className="w-4 h-4 text-steel" />
+    : room === undefined
+      ? <Loader2 className="w-4 h-4 text-lime animate-spin" />
+      : canJoin
+        ? <CheckCircle2 className="w-4 h-4 text-lime" />
+        : <XCircle className="w-4 h-4 text-rose-400" />;
+
+  const statusText = normalizedCode.length < 6
+    ? "Enter a 6-character room code"
+    : room === undefined
+      ? "Checking…"
+      : canJoin
+        ? "Room found — ready to join!"
+        : room
+          ? "Room is full or already started"
+          : "Room not found";
 
   async function handleJoin(event: FormEvent) {
     event.preventDefault();
     if (!canJoin || loading) return;
     setLoading(true);
     try {
-      const guestId = await createGuest({ nickname, avatarSeed: nickname });
+      const guestId = await createGuest({ nickname: nickname.trim(), avatarSeed: nickname.trim() });
       localStorage.setItem("extratime_guestId", guestId);
       const result = await joinRoom({ roomId: room!._id, guestId });
       router.push(`/auction/${result.roomId}`);
@@ -34,62 +63,65 @@ export default function JoinRoomPage() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto space-y-8 animate-fade-in">
+    <div className="max-w-lg mx-auto space-y-6 animate-fade-in pb-24 md:pb-8">
       <PageHeader title="Join Room" subtitle="Enter a code to join an existing match" backUrl="/" />
 
-      <form onSubmit={handleJoin} className="bg-card border border-border rounded-2xl p-6 shadow-xl space-y-6">
-        <label className="space-y-2 block">
-          <span className="text-sm font-semibold text-steel">Your Nickname</span>
-          <input 
-            value={nickname} 
-            onChange={(e) => setNickname(e.target.value)} 
-            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime" 
+      <form onSubmit={handleJoin} className="bg-card border border-border rounded-2xl p-5 md:p-6 shadow-xl space-y-5">
+        {/* Nickname */}
+        <label className="block space-y-1.5">
+          <span className="text-xs font-black uppercase text-steel tracking-wider">Manager Name</span>
+          <div className="flex gap-2">
+            <input
+              value={nickname}
+              onChange={(e) => setNickname(e.target.value)}
+              maxLength={24}
+              className="flex-1 bg-background border border-border rounded-xl px-4 py-3 text-white text-sm font-semibold focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-colors"
+            />
+            <button
+              type="button"
+              onClick={() => setNickname(randomName())}
+              className="px-3 rounded-xl bg-background border border-border text-steel hover:text-lime hover:border-lime/50 transition-all active:scale-95"
+              title="Random name"
+            >
+              <RefreshCw className="w-4 h-4" />
+            </button>
+          </div>
+        </label>
+
+        {/* Room Code */}
+        <label className="block space-y-1.5">
+          <span className="text-xs font-black uppercase text-steel tracking-wider">Room Code</span>
+          <input
+            value={roomCode}
+            onChange={(e) => setRoomCode(e.target.value.replace(/[^a-zA-Z0-9]/g, "").slice(0, 6).toUpperCase())}
+            maxLength={6}
+            className="w-full bg-background border border-border rounded-xl px-4 py-4 text-center text-2xl tracking-[0.35em] uppercase font-stats text-lime placeholder:text-border focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-colors"
+            placeholder="X7K9M2"
+            autoComplete="off"
           />
         </label>
 
-        <label className="space-y-2 block">
-          <span className="text-sm font-semibold text-steel">Room Code</span>
-          <input 
-            value={roomCode} 
-            onChange={(e) => setRoomCode(e.target.value.replace(/[^a-zA-Z0-9]/g, "").slice(0, 6).toUpperCase())} 
-            maxLength={6} 
-            className="w-full bg-background border border-border rounded-xl px-4 py-4 text-center text-2xl tracking-[0.35em] uppercase font-stats text-lime placeholder:text-slate-800 focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime" 
-            placeholder="X7K9M2" 
-          />
-        </label>
-
-        <div className="rounded-xl border border-border bg-background px-4 py-3">
-          <p className="text-sm font-bold text-lime">
-            {normalizedCode.length < 6
-              ? "Enter a six-character room code"
-              : room === undefined
-                ? "Checking room..."
-                : canJoin
-                  ? "Room ready"
-                  : room
-                    ? "Room unavailable"
-                    : "Room not found"}
-          </p>
-          <p className="text-xs text-steel mt-1">
-            {canJoin
-              ? "Joining will activate the auction and randomly choose the first turn."
-              : "Scout and Spy are assigned fairly when an opponent joins."}
-          </p>
+        {/* Status indicator */}
+        <div className={`flex items-center gap-3 px-4 py-3 rounded-xl border transition-all ${
+          canJoin ? "bg-lime/5 border-lime/30" : "bg-background border-border"
+        }`}>
+          {statusIcon}
+          <span className={`text-sm font-bold ${canJoin ? "text-lime" : "text-steel"}`}>{statusText}</span>
         </div>
 
-        <button 
-          type="submit" 
-          disabled={!canJoin || loading} 
+        {/* Join button */}
+        <button
+          type="submit"
+          disabled={!canJoin || loading}
           className="w-full py-4 bg-lime hover:bg-vivid text-background font-black text-sm rounded-xl shadow-lg shadow-lime/10 hover:shadow-lime/20 active:scale-95 transition-all disabled:opacity-30 flex items-center justify-center gap-2"
         >
-          {loading ? "Joining..." : "Join Room"}
+          {loading ? (
+            <><Loader2 className="w-4 h-4 animate-spin" /> Joining…</>
+          ) : (
+            "Join Room"
+          )}
         </button>
       </form>
-
-      <div className="flex items-start gap-4 p-4 rounded-xl bg-blue-950/30 border border-blue-900/50">
-        <KeyRound className="w-6 h-6 text-blue-400 flex-shrink-0 mt-0.5" />
-        <p className="text-sm text-blue-300">Need a room code? Ask the host for the six-character code from their waiting room.</p>
-      </div>
     </div>
   );
 }

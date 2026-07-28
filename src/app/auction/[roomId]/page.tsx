@@ -215,10 +215,22 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           </div>
         </div>
 
-        {/* Center: timer */}
-        <AuctionTimer timeLeft={timeLeft} maxTime={15} isActive={isActive} size={56} />
+        {/* Center: timer & formation badge */}
+        <div className="flex items-center gap-3">
+          <AuctionTimer timeLeft={timeLeft} maxTime={15} isActive={isActive} size={56} />
+          <div className="hidden md:flex flex-col items-center">
+            <span className="px-2.5 py-0.5 rounded-full bg-lime/10 border border-lime/30 text-lime text-[10px] font-black uppercase tracking-wider">
+              {auction.formation || "4-3-3"} • {auction.matchSize ?? 11}P
+            </span>
+            {me?.perk && (
+              <span className="mt-1 flex items-center gap-1 text-[9px] font-black text-amber-400 uppercase tracking-widest">
+                <Sparkles className="w-2.5 h-2.5" /> Perk: {me.perk}
+              </span>
+            )}
+          </div>
+        </div>
 
-        {/* Right: round info */}
+        {/* Right: round info & opponent perk */}
         <div className="flex items-center gap-3 text-right">
           <div className="flex flex-col items-end">
             <span className="text-[9px] font-black uppercase text-steel tracking-wider">Round</span>
@@ -281,8 +293,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           {/* Status pills */}
           <div className="flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-card border border-border text-[11px] font-black uppercase tracking-wider text-steel">
-              <Shield className="w-3 h-3 text-lime" /> {currentPosition} Slot
+              <Shield className="w-3 h-3 text-lime" /> {currentPosition} Slot ({auction.formation || "4-3-3"})
             </span>
+            {me?.perk && (
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[11px] font-black uppercase tracking-wider">
+                <Sparkles className="w-3 h-3" /> {me.perk} PERK ACTIVE
+              </span>
+            )}
             <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider ${
               iAmLeading ? "bg-lime/10 border border-lime/30 text-lime" : highestBid > 0 ? "bg-rose-500/10 border border-rose-500/30 text-rose-400" : "bg-card border border-border text-steel"
             }`}>

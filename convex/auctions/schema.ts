@@ -6,7 +6,7 @@ export const auctionsTable = defineTable({
   formation: v.string(),
   matchSize: v.union(v.literal(5), v.literal(11)),
   startingBudget: v.number(),
-  poolMode: v.union(v.literal("GLOBAL"), v.literal("EPL"), v.literal("ICONS")),
+  poolMode: v.string(),
   rounds: v.array(
     v.object({
       roundNumber: v.number(),

@@ -2,7 +2,7 @@ import { GenericMutationCtx } from "convex/server";
 import { Id } from "../_generated/dataModel";
 import { getFormationPositions, MatchSize, Position } from "./formations";
 
-export type PlayerPoolMode = "GLOBAL" | "EPL" | "ICONS";
+export type PlayerPoolMode = string;
 
 export interface DraftRound {
   roundNumber: number;
@@ -55,18 +55,33 @@ function countCompatiblePlayers(players: Array<{ position: string }>, position: 
   return { exact, line };
 }
 
-function selectPlayersForPosition<T extends { _id: any; position: string }>(
+const TIER_RANK: Record<string, number> = {
+  ICON: 0, MASTER: 1, ELITE_PLUS: 2, ELITE: 3,
+  GOLD: 4, SILVER: 5, BRONZE: 6,
+};
+
+function tierRank(player: { tier?: string }): number {
+  return TIER_RANK[(player as any).tier ?? ""] ?? 7;
+}
+
+function selectPlayersForPosition<T extends { _id: any; position: string; tier?: string }>(
   source: T[],
   used: Set<string>,
   position: Position
 ): [T, T] {
   const unused = source.filter((p) => !used.has(p._id));
 
+  const pickPairWithDynamicSurprise = (candidates: T[]): [T, T] => {
+    const sorted = shuffle([...candidates]).sort((a, b) => tierRank(a) - tierRank(b));
+    // 75% of the time, highest tier is main target; 25% surprise factor flips the order for dynamic gameplay!
+    const isSurpriseSwap = Math.random() < 0.25;
+    return isSurpriseSwap ? [sorted[1], sorted[0]] : [sorted[0], sorted[1]];
+  };
+
   // 1. Prefer exact position matches
   const exactMatches = unused.filter((p) => matchesExact(p.position, position));
   if (exactMatches.length >= 2) {
-    const shuffled = shuffle(exactMatches);
-    return [shuffled[0], shuffled[1]];
+    return pickPairWithDynamicSurprise(exactMatches);
   }
 
   // 2. Fall back to line matches (DEF, MID, ATT, GK)
@@ -74,14 +89,12 @@ function selectPlayersForPosition<T extends { _id: any; position: string }>(
     (p) => matchesExact(p.position, position) || matchesLine(p.position, position)
   );
   if (lineMatches.length >= 2) {
-    const shuffled = shuffle(lineMatches);
-    return [shuffled[0], shuffled[1]];
+    return pickPairWithDynamicSurprise(lineMatches);
   }
 
   // 3. Fall back to any available unused players
   if (unused.length >= 2) {
-    const shuffled = shuffle(unused);
-    return [shuffled[0], shuffled[1]];
+    return pickPairWithDynamicSurprise(unused);
   }
 
   throw new Error(`Not enough players available to fulfill draft round for ${position}.`);

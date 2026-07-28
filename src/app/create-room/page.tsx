@@ -10,11 +10,37 @@ import { Loader2, Globe, Lock, RefreshCw } from "lucide-react";
 type MatchSize = 5 | 11;
 type PoolMode = "GLOBAL" | "EPL" | "ICONS";
 
-/* ── Random football manager name ────────────────────────────────────── */
-const FIRST = ["Coach", "Boss", "Gaffer", "Mister", "Don", "Captain", "Chief", "Maestro", "Legend", "Striker", "El Capitán", "The Gaffer", "Manager"];
+const FIRST = ["Coach", "Boss", "Gaffer", "Mister", "Don", "Captain", "Chief", "Maestro", "Legend", "Striker", "El Capitán", "Manager"];
 const LAST = ["Santos", "Müller", "Silva", "Ali", "Rossi", "Park", "König", "Torres", "Diallo", "Kovač", "Zidane", "Pirlo", "Maldini", "Ramos"];
 function randomName() {
   return `${FIRST[Math.floor(Math.random() * FIRST.length)]} ${LAST[Math.floor(Math.random() * LAST.length)]}`;
+}
+
+/* Reusable radio pill group */
+function RadioPills<T extends string | number>({ options, value, onChange }: {
+  options: { value: T; label: string; sub?: string }[];
+  value: T;
+  onChange: (v: T) => void;
+}) {
+  return (
+    <div className={`grid gap-2`} style={{ gridTemplateColumns: `repeat(${options.length}, 1fr)` }}>
+      {options.map((opt) => (
+        <button
+          key={String(opt.value)}
+          type="button"
+          onClick={() => onChange(opt.value)}
+          className={`flex flex-col items-center justify-center px-3 py-3 rounded-xl text-center transition-all border btn-haptic ${
+            value === opt.value
+              ? "bg-lime/10 border-lime/40 text-lime shadow-[0_0_12px_rgba(149,232,16,0.1)]"
+              : "bg-background border-border text-steel hover:text-white hover:border-steel/50"
+          }`}
+        >
+          <span className="text-sm font-bold">{opt.label}</span>
+          {opt.sub && <span className="text-[10px] opacity-70 mt-0.5">{opt.sub}</span>}
+        </button>
+      ))}
+    </div>
+  );
 }
 
 export default function CreateRoomPage() {
@@ -29,12 +55,7 @@ export default function CreateRoomPage() {
   const [isPublic, setIsPublic] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  /* Auto-generate a random nickname on mount */
-  useEffect(() => {
-    setNickname(randomName());
-  }, []);
-
-  const rerollName = () => setNickname(randomName());
+  useEffect(() => { setNickname(randomName()); }, []);
 
   async function handleCreate() {
     if (loading || !nickname.trim()) return;
@@ -50,7 +71,6 @@ export default function CreateRoomPage() {
     }
   }
 
-  /* shared select styling */
   const selectClass = "w-full bg-background border border-border rounded-xl px-4 py-3 text-white text-sm font-semibold focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-colors appearance-none cursor-pointer";
 
   return (
@@ -59,8 +79,8 @@ export default function CreateRoomPage() {
 
       <div className="bg-card border border-border rounded-2xl p-5 md:p-6 shadow-xl space-y-5">
         {/* Nickname */}
-        <label className="block space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider">Manager Name</span>
+        <div className="space-y-1.5">
+          <span className="text-xs font-black uppercase text-steel tracking-wider block">Manager Name</span>
           <div className="flex gap-2">
             <input
               value={nickname}
@@ -70,45 +90,57 @@ export default function CreateRoomPage() {
             />
             <button
               type="button"
-              onClick={rerollName}
+              onClick={() => setNickname(randomName())}
               className="px-3 rounded-xl bg-background border border-border text-steel hover:text-lime hover:border-lime/50 transition-all active:scale-95"
               title="Random name"
             >
               <RefreshCw className="w-4 h-4" />
             </button>
           </div>
-        </label>
+        </div>
 
-        {/* Match Size */}
-        <label className="block space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider">Match Size</span>
-          <select value={matchSize} onChange={(e) => setMatchSize(Number(e.target.value) as MatchSize)} className={selectClass}>
-            <option value={11}>11 vs 11 — Full Squad</option>
-            <option value={5}>5 vs 5 — Futsal</option>
-          </select>
-        </label>
+        {/* Match Size — radio pills */}
+        <div className="space-y-1.5">
+          <span className="text-xs font-black uppercase text-steel tracking-wider block">Match Size</span>
+          <RadioPills
+            options={[
+              { value: 11 as MatchSize, label: "11 vs 11", sub: "Full Squad" },
+              { value: 5 as MatchSize, label: "5 vs 5", sub: "Futsal" },
+            ]}
+            value={matchSize}
+            onChange={setMatchSize}
+          />
+        </div>
 
-        {/* Budget */}
-        <label className="block space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider">Starting Budget</span>
-          <select value={startingBudget} onChange={(e) => setStartingBudget(Number(e.target.value))} className={selectClass}>
-            <option value={100}>$100M — Standard</option>
-            <option value={150}>$150M — High Roller</option>
-            <option value={200}>$200M — Mega Draft</option>
-          </select>
-        </label>
+        {/* Budget — radio pills */}
+        <div className="space-y-1.5">
+          <span className="text-xs font-black uppercase text-steel tracking-wider block">Starting Budget</span>
+          <RadioPills
+            options={[
+              { value: 100, label: "$100M", sub: "Standard" },
+              { value: 150, label: "$150M", sub: "High" },
+              { value: 200, label: "$200M", sub: "Mega" },
+            ]}
+            value={startingBudget}
+            onChange={setStartingBudget}
+          />
+        </div>
 
-        {/* Player Pool */}
-        <label className="block space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider">Player Pool</span>
-          <select value={poolMode} onChange={(e) => setPoolMode(e.target.value as PoolMode)} className={selectClass}>
-            <option value="GLOBAL">Global Mix — All leagues</option>
-            <option value="EPL">EPL Only — Premier League</option>
-            <option value="ICONS">Icons Only — Legends</option>
-          </select>
-        </label>
+        {/* Player Pool — select (3 options with descriptions work better as dropdown) */}
+        <div className="space-y-1.5">
+          <span className="text-xs font-black uppercase text-steel tracking-wider block">Player Pool</span>
+          <RadioPills
+            options={[
+              { value: "GLOBAL" as PoolMode, label: "🌍 Global", sub: "All leagues" },
+              { value: "EPL" as PoolMode, label: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 EPL", sub: "Prem only" },
+              { value: "ICONS" as PoolMode, label: "👑 Icons", sub: "Legends" },
+            ]}
+            value={poolMode}
+            onChange={setPoolMode}
+          />
+        </div>
 
-        {/* Public / Private — Radio pills */}
+        {/* Visibility — radio pills */}
         <div className="space-y-1.5">
           <span className="text-xs font-black uppercase text-steel tracking-wider block">Room Visibility</span>
           <div className="grid grid-cols-2 gap-2">
@@ -121,8 +153,7 @@ export default function CreateRoomPage() {
                   : "bg-background border-border text-steel hover:text-white hover:border-steel/50"
               }`}
             >
-              <Lock className="w-4 h-4" />
-              Private
+              <Lock className="w-4 h-4" /> Private
             </button>
             <button
               type="button"
@@ -133,14 +164,11 @@ export default function CreateRoomPage() {
                   : "bg-background border-border text-steel hover:text-white hover:border-steel/50"
               }`}
             >
-              <Globe className="w-4 h-4" />
-              Public
+              <Globe className="w-4 h-4" /> Public
             </button>
           </div>
           <p className="text-[11px] text-steel leading-relaxed mt-1">
-            {isPublic
-              ? "Anyone can find & join your room via public matchmaking."
-              : "Only players with your room code can join."}
+            {isPublic ? "Anyone can find & join via public matchmaking." : "Only players with your room code can join."}
           </p>
         </div>
 
@@ -150,19 +178,12 @@ export default function CreateRoomPage() {
           disabled={loading || !nickname.trim()}
           className="w-full py-4 bg-lime hover:bg-vivid text-background font-black text-sm rounded-xl shadow-lg shadow-lime/10 hover:shadow-lime/20 active:scale-95 transition-all disabled:opacity-40 flex items-center justify-center gap-2"
         >
-          {loading ? (
-            <>
-              <Loader2 className="w-4 h-4 animate-spin" /> Creating…
-            </>
-          ) : (
-            "Create Hidden Bid Room"
-          )}
+          {loading ? <><Loader2 className="w-4 h-4 animate-spin" /> Creating…</> : "Create Hidden Bid Room"}
         </button>
       </div>
 
-      {/* Info note */}
       <p className="text-[11px] text-steel text-center leading-relaxed px-4">
-        Formation, position order, first turn, and Scout / Spy perks are all assigned automatically by the engine.
+        Formation, position order, first turn, and Scout / Spy perks are all assigned automatically.
       </p>
     </div>
   );
