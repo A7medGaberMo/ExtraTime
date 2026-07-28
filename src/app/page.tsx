@@ -60,18 +60,24 @@ export default function HomePage() {
       </div>
 
       {/* ── CTA BUTTONS ────────────────────────────────────────────────── */}
-      <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md animate-slide-up delay-100" style={{ animationFillMode: 'both' }}>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-xl animate-slide-up delay-100" style={{ animationFillMode: 'both' }}>
         <Link
           href="/create-room"
-          className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-lime hover:bg-vivid text-background font-black text-sm rounded-xl transition-all btn-haptic shadow-lg shadow-lime/15 hover:shadow-lime/25"
+          className="flex items-center justify-center gap-2 px-5 py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-sm rounded-2xl transition-all btn-haptic shadow-lg shadow-lime/20"
         >
           <PlusCircle className="w-5 h-5" /> Create Room
         </Link>
         <Link
           href="/join-room"
-          className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-card hover:bg-white/5 text-white font-bold text-sm rounded-xl transition-all btn-haptic border border-border hover:border-white/30"
+          className="flex items-center justify-center gap-2 px-5 py-4 bg-card hover:bg-white/5 text-white font-bold text-sm rounded-2xl transition-all btn-haptic border border-border hover:border-white/30"
         >
           <Users className="w-5 h-5" /> Join Room
+        </Link>
+        <Link
+          href="/packs"
+          className="flex items-center justify-center gap-2 px-5 py-4 bg-slate-900 hover:bg-amber-500/10 text-amber-400 font-black text-sm rounded-2xl transition-all btn-haptic border border-amber-500/40 hover:border-amber-400 shadow-md"
+        >
+          <Trophy className="w-5 h-5 text-amber-400" /> Player Packs
         </Link>
       </div>
 

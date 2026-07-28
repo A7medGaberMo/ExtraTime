@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Chelsea",
       "nation": "Denmark",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286616.png",
       "kitNumber": 12
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/287868.png",
       "kitNumber": 1
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Chelsea",
       "nation": "Spain",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18959.png",
       "kitNumber": 1
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/180940.png",
       "kitNumber": 28
@@ -57,7 +57,7 @@
       "position": "GK",
       "club": "Chelsea",
       "nation": "USA",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/64167.png",
       "kitNumber": 44
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/366735.png",
       "kitNumber": 34
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19145.png",
       "kitNumber": 4
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609590.png",
       "kitNumber": null
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "France",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/95.png",
       "kitNumber": 5
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19720.png",
       "kitNumber": 23
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152953.png",
       "kitNumber": 6
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "France",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22094.png",
       "kitNumber": 29
@@ -145,7 +145,7 @@
       "position": "RB/LB",
       "club": "Chelsea",
       "nation": "France",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161907.png",
       "kitNumber": 27
@@ -156,7 +156,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341642.png",
       "kitNumber": 21
@@ -167,7 +167,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19545.png",
       "kitNumber": 24
@@ -178,7 +178,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "Italy",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383018.png",
       "kitNumber": null
@@ -189,7 +189,7 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "France",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/276184.png",
       "kitNumber": 19
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568950.png",
       "kitNumber": 43
@@ -211,7 +211,7 @@
       "position": "CDM/CM",
       "club": "Chelsea",
       "nation": "Ecuador",
-      "tier": "",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/116117.png",
       "kitNumber": 25
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568066.png",
       "kitNumber": 72
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Chelsea",
       "nation": "Portugal",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/308678.png",
       "kitNumber": 14
@@ -244,7 +244,7 @@
       "position": "CM/CDM",
       "club": "Chelsea",
       "nation": "Argentina",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5996.png",
       "kitNumber": 8
@@ -255,7 +255,7 @@
       "position": "CM",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610563.png",
       "kitNumber": 75
@@ -266,7 +266,7 @@
       "position": "CM",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557379.png",
       "kitNumber": 76
@@ -277,7 +277,7 @@
       "position": "CDM/CM",
       "club": "Chelsea",
       "nation": "Belgium",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/282125.png",
       "kitNumber": 45
@@ -288,7 +288,7 @@
       "position": "RW/CAM",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152982.png",
       "kitNumber": 10
@@ -299,7 +299,7 @@
       "position": "CAM/LW",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19170.png",
       "kitNumber": 27
@@ -310,7 +310,7 @@
       "position": "ST/CF",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161948.png",
       "kitNumber": 9
@@ -321,7 +321,7 @@
       "position": "ST",
       "club": "Chelsea",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203762.png",
       "kitNumber": 10
@@ -332,7 +332,7 @@
       "position": "ST",
       "club": "Chelsea",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/425733.png",
       "kitNumber": 41
@@ -343,7 +343,7 @@
       "position": "ST",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286894.png",
       "kitNumber": 11
@@ -354,7 +354,7 @@
       "position": "ST",
       "club": "Chelsea",
       "nation": "Spain",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/392270.png",
       "kitNumber": 38
@@ -365,7 +365,7 @@
       "position": "ST",
       "club": "Chelsea",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10329.png",
       "kitNumber": 20
@@ -376,7 +376,7 @@
       "position": "ST",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/359117.png",
       "kitNumber": 62
@@ -387,7 +387,7 @@
       "position": "ST",
       "club": "Chelsea",
       "nation": "Portugal",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1864.png",
       "kitNumber": 7
@@ -398,7 +398,7 @@
       "position": "ST",
       "club": "Chelsea",
       "nation": "Portugal",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419582.png",
       "kitNumber": 57

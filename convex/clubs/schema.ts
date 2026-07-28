@@ -8,4 +8,6 @@ export const clubsTable = defineTable({
   league: v.string(),
   country: v.string(),
   apiId: v.string(),
-});
+})
+  .index("by_league", ["league"])
+  .index("by_name", ["name"]);

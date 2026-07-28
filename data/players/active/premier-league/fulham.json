@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Fulham",
       "nation": "France",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21566.png",
       "kitNumber": 23
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Fulham",
       "nation": "Germany",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1438.png",
       "kitNumber": 1
@@ -35,7 +35,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/384981.png",
       "kitNumber": 4
@@ -46,7 +46,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "Denmark",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2729.png",
       "kitNumber": 5
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "Nigeria",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152967.png",
       "kitNumber": 3
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "Belgium",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2920.png",
       "kitNumber": 21
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "Spain",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/131.png",
       "kitNumber": 15
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "France",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18814.png",
       "kitNumber": 31
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "USA",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19549.png",
       "kitNumber": 33
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/657.png",
       "kitNumber": 2
@@ -123,7 +123,7 @@
       "position": "CM",
       "club": "Fulham",
       "nation": "Norway",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1934.png",
       "kitNumber": 16
@@ -134,7 +134,7 @@
       "position": "CM",
       "club": "Fulham",
       "nation": "Norway",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278133.png",
       "kitNumber": 14
@@ -145,7 +145,7 @@
       "position": "CM",
       "club": "Fulham",
       "nation": "Scotland",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19025.png",
       "kitNumber": 10
@@ -156,7 +156,7 @@
       "position": "CM/LM",
       "club": "Fulham",
       "nation": "Nigeria",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1455.png",
       "kitNumber": 17
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Fulham",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/389315.png",
       "kitNumber": 24
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Fulham",
       "nation": "Serbia",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2823.png",
       "kitNumber": 20
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Fulham",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19480.png",
       "kitNumber": 6
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Fulham",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19032.png",
       "kitNumber": 30
@@ -211,7 +211,7 @@
       "position": "CAM/LW",
       "club": "Fulham",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1161.png",
       "kitNumber": 32
@@ -222,7 +222,7 @@
       "position": "ST",
       "club": "Fulham",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237819.png",
       "kitNumber": 22
@@ -233,7 +233,7 @@
       "position": "ST",
       "club": "Fulham",
       "nation": "Sweden",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/436443.png",
       "kitNumber": 18
@@ -244,7 +244,7 @@
       "position": "ST",
       "club": "Fulham",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195106.png",
       "kitNumber": 9

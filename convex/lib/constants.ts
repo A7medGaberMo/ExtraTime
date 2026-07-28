@@ -1,0 +1,68 @@
+import { v } from "convex/values";
+
+// ── Tier System ────────────────────────────────────────────
+export const TIERS = ["ICON", "MASTER", "ELITE_PLUS", "ELITE", "GOLD", "SILVER", "BRONZE"] as const;
+export type Tier = (typeof TIERS)[number];
+
+export const TIER_RANK: Record<Tier, number> = {
+  ICON: 0, MASTER: 1, ELITE_PLUS: 2, ELITE: 3,
+  GOLD: 4, SILVER: 5, BRONZE: 6,
+};
+
+export function tierRank(tier?: string): number {
+  return TIER_RANK[tier as Tier] ?? 7;
+}
+
+export const tierValidator = v.union(
+  v.literal("ICON"),
+  v.literal("MASTER"),
+  v.literal("ELITE_PLUS"),
+  v.literal("ELITE"),
+  v.literal("GOLD"),
+  v.literal("SILVER"),
+  v.literal("BRONZE")
+);
+
+// ── Position System ────────────────────────────────────────
+export type Position = "GK" | "CB" | "LB" | "RB" | "CDM" | "CM" | "CAM" | "LW" | "RW" | "ST" | "CF";
+
+export function normalizePosition(position: string): string {
+  const val = position.trim().toUpperCase();
+  if (val === "LM") return "LW";
+  if (val === "RM") return "RW";
+  return val;
+}
+
+export function playerPositions(position: string): string[] {
+  return position.split("/").map(normalizePosition).filter(Boolean);
+}
+
+export function lineFor(position: string): "GK" | "DEF" | "MID" | "ATT" {
+  const norm = normalizePosition(position);
+  if (norm === "GK") return "GK";
+  if (["CB", "LB", "RB"].includes(norm)) return "DEF";
+  if (["CDM", "CM", "CAM"].includes(norm)) return "MID";
+  return "ATT";
+}
+
+// ── Settings Validator (shared between schema + mutations) ─
+export const roomSettingsValidator = v.object({
+  formation: v.string(),
+  matchSize: v.union(v.literal(5), v.literal(11)),
+  startingBudget: v.number(),
+  poolMode: v.string(),
+});
+
+// ── League → Country mapping ───────────────────────────────
+export const LEAGUE_COUNTRY: Record<string, string> = {
+  "Premier League": "England",
+  "La Liga": "Spain",
+  "Serie A": "Italy",
+  "Bundesliga": "Germany",
+  "Ligue 1": "France",
+  "Eredivisie": "Netherlands",
+  "Primeira Liga": "Portugal",
+  "Super Lig": "Turkey",
+  "Scottish Premiership": "Scotland",
+  "Global Legends": "International",
+};

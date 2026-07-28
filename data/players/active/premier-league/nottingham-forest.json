@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Nottingham Forest",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/70366.png",
       "kitNumber": 13
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Nottingham Forest",
       "nation": "Belgium",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2919.png",
       "kitNumber": 26
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/357238.png",
       "kitNumber": 67
@@ -46,7 +46,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329357.png",
       "kitNumber": 44
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "Nigeria",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2771.png",
       "kitNumber": 34
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "USA",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/430835.png",
       "kitNumber": 6
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/362711.png",
       "kitNumber": 23
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329361.png",
       "kitNumber": 28
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/334369.png",
       "kitNumber": 65
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "Serbia",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2817.png",
       "kitNumber": 31
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/67943.png",
       "kitNumber": 4
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/363695.png",
       "kitNumber": 5
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "Germany",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163069.png",
       "kitNumber": 25
@@ -156,7 +156,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19610.png",
       "kitNumber": 77
@@ -167,7 +167,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380663.png",
       "kitNumber": 61
@@ -178,7 +178,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329345.png",
       "kitNumber": 26
@@ -189,7 +189,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "Wales",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138780.png",
       "kitNumber": 3
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "Argentina",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6056.png",
       "kitNumber": 16
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18746.png",
       "kitNumber": 10
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2298.png",
       "kitNumber": 7
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158697.png",
       "kitNumber": 24
@@ -244,7 +244,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "Ireland",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/551288.png",
       "kitNumber": 60
@@ -255,7 +255,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "Côte d'Ivoire",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22149.png",
       "kitNumber": 6
@@ -266,7 +266,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "Austria",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1095.png",
       "kitNumber": 24
@@ -277,7 +277,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/353968.png",
       "kitNumber": 51
@@ -288,7 +288,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19305.png",
       "kitNumber": 22
@@ -299,7 +299,7 @@
       "position": "CM",
       "club": "Nottingham Forest",
       "nation": "Germany",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380492.png",
       "kitNumber": 17
@@ -310,7 +310,7 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "Nigeria",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8598.png",
       "kitNumber": 9
@@ -321,7 +321,7 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "France",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129695.png",
       "kitNumber": 29
@@ -332,7 +332,7 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383771.png",
       "kitNumber": 77
@@ -343,7 +343,7 @@
       "position": "RW/CAM",
       "club": "Nottingham Forest",
       "nation": "Jamaica",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284428.png",
       "kitNumber": 21
@@ -354,7 +354,7 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9366.png",
       "kitNumber": 19
@@ -365,7 +365,7 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "France",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/147831.png",
       "kitNumber": 25
@@ -376,7 +376,7 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "Switzerland",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/48648.png",
       "kitNumber": 14
@@ -387,7 +387,7 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "Gambia",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/498864.png",
       "kitNumber": 45
@@ -398,7 +398,7 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "New Zealand",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18931.png",
       "kitNumber": 11

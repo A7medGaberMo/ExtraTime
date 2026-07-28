@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Brighton",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18960.png",
       "kitNumber": 23
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Brighton",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129058.png",
       "kitNumber": 1
@@ -35,7 +35,7 @@
       "position": "CB",
       "club": "Brighton",
       "nation": "France",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22160.png",
       "kitNumber": 21
@@ -46,7 +46,7 @@
       "position": "CB",
       "club": "Brighton",
       "nation": "Portugal",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/204037.png",
       "kitNumber": 20
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Brighton",
       "nation": "Belgium",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162007.png",
       "kitNumber": 29
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Brighton",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7600.png",
       "kitNumber": 3
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Brighton",
       "nation": "Türkiye",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1361.png",
       "kitNumber": 24
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Brighton",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/64003.png",
       "kitNumber": 5
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Brighton",
       "nation": "Czech Republic",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7090.png",
       "kitNumber": 30
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Brighton",
       "nation": "Croatia",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387521.png",
       "kitNumber": null
@@ -123,7 +123,7 @@
       "position": "CM",
       "club": "Brighton",
       "nation": "Sweden",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/265820.png",
       "kitNumber": 26
@@ -134,7 +134,7 @@
       "position": "CDM/CM",
       "club": "Brighton",
       "nation": "Cameroon",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/356041.png",
       "kitNumber": 17
@@ -145,7 +145,7 @@
       "position": "CM",
       "club": "Brighton",
       "nation": "Paraguay",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278370.png",
       "kitNumber": 25
@@ -156,7 +156,7 @@
       "position": "CM",
       "club": "Brighton",
       "nation": "Germany",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18970.png",
       "kitNumber": 30
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Brighton",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/305730.png",
       "kitNumber": 13
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Brighton",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/392610.png",
       "kitNumber": 10
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Brighton",
       "nation": "Denmark",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19030.png",
       "kitNumber": 33
@@ -200,7 +200,7 @@
       "position": "CDM/CM",
       "club": "Brighton",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/92993.png",
       "kitNumber": 27
@@ -211,7 +211,7 @@
       "position": "ST",
       "club": "Brighton",
       "nation": "Greece",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/392482.png",
       "kitNumber": 19
@@ -222,7 +222,7 @@
       "position": "RW/RM",
       "club": "Brighton",
       "nation": "Gambia",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383685.png",
       "kitNumber": 11
@@ -233,7 +233,7 @@
       "position": "LW/LM",
       "club": "Brighton",
       "nation": "Japan",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/106835.png",
       "kitNumber": 22
@@ -244,7 +244,7 @@
       "position": "ST/CAM",
       "club": "Brighton",
       "nation": "France",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/90590.png",
       "kitNumber": 10
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Brighton",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1469.png",
       "kitNumber": 18
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Brighton",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/524411.png",
       "kitNumber": 36

@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18958.png",
       "kitNumber": 27
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/82097.png",
       "kitNumber": 1
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19541.png",
       "kitNumber": 28
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Ipswich",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328669.png",
       "kitNumber": 1
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327749.png",
       "kitNumber": 3
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19119.png",
       "kitNumber": 3
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Ipswich",
       "nation": "France",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18814.png",
       "kitNumber": 31
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19577.png",
       "kitNumber": 19
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127579.png",
       "kitNumber": 24
@@ -112,7 +112,7 @@
       "position": "RW/ST",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18823.png",
       "kitNumber": 18
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Ipswich",
       "nation": "Ivory Coast",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19546.png",
       "kitNumber": 4
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Ipswich",
       "nation": "Republic of Ireland",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/17597.png",
       "kitNumber": 26
@@ -145,7 +145,7 @@
       "position": "CM",
       "club": "Ipswich",
       "nation": "Wales",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20089.png",
       "kitNumber": 7
@@ -156,7 +156,7 @@
       "position": "CM",
       "club": "Ipswich",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37236.png",
       "kitNumber": 5
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Ipswich",
       "nation": "Chile",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195121.png",
       "kitNumber": 32
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Ipswich",
       "nation": "Republic of Ireland",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18397.png",
       "kitNumber": 14
@@ -189,7 +189,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2380.png",
       "kitNumber": 29
@@ -200,7 +200,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19136.png",
       "kitNumber": 47
@@ -211,7 +211,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "Norway",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342654.png",
       "kitNumber": 8
@@ -222,7 +222,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/321648.png",
       "kitNumber": 20
@@ -233,7 +233,7 @@
       "position": "RW/RM",
       "club": "Ipswich",
       "nation": "Ghana",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/303467.png",
       "kitNumber": 7
@@ -244,7 +244,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8794.png",
       "kitNumber": 9
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "Japan",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/33224.png",
       "kitNumber": 38
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "Ireland",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/283290.png",
       "kitNumber": 20
@@ -277,7 +277,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "Albania",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286349.png",
       "kitNumber": 33
@@ -288,7 +288,7 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138931.png",
       "kitNumber": 11

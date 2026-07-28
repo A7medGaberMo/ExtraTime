@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect, useState, useCallback } from "react";
+import { use, useEffect, useState, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
@@ -9,33 +9,34 @@ import { PlayerCard } from "@/components/shared/player-card";
 import { AuctionTimer } from "@/components/shared/auction-timer";
 import { BidSlider } from "@/components/shared/bid-slider";
 import { TacticalPitch } from "@/components/shared/tactical-pitch";
+import { BidRevealAnimation } from "@/components/shared/bid-reveal-animation";
 import type { PlayerCardData } from "@/types/player";
 import {
   Wallet, Loader2, ArrowRight, X, Trophy, Shield, Eye, Zap,
-  Swords, Crown, ChevronRight, Sparkles, Copy, Check, LayoutGrid, ListFilter
+  Swords, Crown, Sparkles, Copy, Check
 } from "lucide-react";
-
-/* ── Random football-themed name generator ────────────────────────────── */
-const FIRST = ["Coach", "Boss", "Gaffer", "Mister", "Don", "Captain", "Chief", "Maestro", "Legend", "Striker"];
-const LAST = ["Santos", "Müller", "Silva", "Ali", "Rossi", "Park", "König", "Torres", "Diallo", "Kovač"];
-function randomManagerName() {
-  return `${FIRST[Math.floor(Math.random() * FIRST.length)]} ${LAST[Math.floor(Math.random() * LAST.length)]}`;
-}
-
-/* ── Tier color helper ─────────────────────────────────────────────────── */
-function tierAccent(tier?: string) {
-  const map: Record<string, string> = {
-    ICON: "text-lime", MASTER: "text-purple-400", ELITE_PLUS: "text-blue-400",
-    ELITE: "text-cyan-400", GOLD: "text-amber-400", SILVER: "text-slate-300", BRONZE: "text-orange-500",
-  };
-  return map[tier || ""] || "text-white";
-}
 
 export default function AuctionPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
   const [guestId, setGuestId] = useState<Id<"guestUsers"> | null>(null);
   const [codeCopied, setCodeCopied] = useState(false);
+  const [selectedTeamTab, setSelectedTeamTab] = useState<"me" | "rival">("me");
+
+  // Reveal animation state
+  const [showReveal, setShowReveal] = useState(false);
+  const [revealData, setRevealData] = useState<{
+    position: string;
+    roundNumber: number;
+    mainPlayer: PlayerCardData | null;
+    subPlayer: PlayerCardData | null;
+    winnerName: string;
+    winnerIsMe: boolean;
+    winningBid: number;
+    runnerUpName: string;
+  } | null>(null);
+
+  const prevRoundRef = useRef<number | null>(null);
 
   useEffect(() => {
     const id = localStorage.getItem("extratime_guestId") as Id<"guestUsers">;
@@ -51,6 +52,55 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const placeBid = useMutation(api.auctions.mutations.placeBid);
   const pass = useMutation(api.auctions.mutations.pass);
   const cancelRoom = useMutation(api.rooms.mutations.cancel);
+  const usePerkMutation = useMutation(api.auctions.mutations.usePerk);
+  const autoPassFired = useRef(false);
+
+  const [bidAmount, setBidAmount] = useState<number>(0);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isActivatingPerk, setIsActivatingPerk] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  /* Detect round transition for dramatic card reveal animation */
+  useEffect(() => {
+    if (!state?.auction) return;
+    const currentRoundNum = state.auction.currentRound;
+
+    if (prevRoundRef.current !== null && currentRoundNum > prevRoundRef.current) {
+      const prevRoundIdx = prevRoundRef.current - 1;
+      const prevRound = state.auction.rounds[prevRoundIdx];
+      if (prevRound) {
+        const myLastPick = state.mySquad?.find(s => s.position === prevRound.position);
+        const rivalLastPick = state.opponentSquad?.find(s => s.position === prevRound.position);
+
+        const iGotMain = myLastPick && !myLastPick.isSub;
+        const winnerIsMe = Boolean(iGotMain);
+        const winnerName = winnerIsMe ? "You" : "Opponent";
+        const runnerUpName = winnerIsMe ? "Opponent" : "You";
+        const winningBid = iGotMain ? myLastPick.cost : (rivalLastPick?.cost || 0);
+
+        setRevealData({
+          position: prevRound.position,
+          roundNumber: prevRoundRef.current,
+          mainPlayer: state.mainPlayer,
+          subPlayer: state.revealedSubPlayer ? {
+            id: state.revealedSubPlayer._id,
+            name: state.revealedSubPlayer.name,
+            tier: state.revealedSubPlayer.tier as any,
+            position: state.revealedSubPlayer.position,
+            club: state.revealedSubPlayer.club,
+            nation: state.revealedSubPlayer.nation,
+            imageUrl: state.revealedSubPlayer.imageUrl,
+          } : null,
+          winnerName,
+          winnerIsMe,
+          winningBid,
+          runnerUpName,
+        });
+        setShowReveal(true);
+      }
+    }
+    prevRoundRef.current = currentRoundNum;
+  }, [state?.auction?.currentRound, state?.mySquad, state?.opponentSquad, state?.mainPlayer, state?.revealedSubPlayer]);
 
   const handleCancelRoom = useCallback(async () => {
     if (!guestId || !roomId) return;
@@ -62,10 +112,19 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     }
   }, [cancelRoom, guestId, roomId, router]);
 
-  const [bidAmount, setBidAmount] = useState<number>(0);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [lastAction, setLastAction] = useState<"bid" | "pass" | null>(null);
+  /* Perk activation handler */
+  const handleActivatePerk = useCallback(async () => {
+    if (!guestId || !roomId || isActivatingPerk || state?.me?.perkUsed) return;
+    setIsActivatingPerk(true);
+    setError(null);
+    try {
+      await usePerkMutation({ roomId: roomId as Id<"rooms">, userId: guestId });
+    } catch (e: any) {
+      setError(e.message || "Could not activate perk");
+    } finally {
+      setIsActivatingPerk(false);
+    }
+  }, [usePerkMutation, guestId, isActivatingPerk, roomId, state?.me?.perkUsed]);
 
   /* Timer logic */
   const [timeLeft, setTimeLeft] = useState(0);
@@ -87,9 +146,11 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   useEffect(() => {
     if (!state || !state.auction || state.auction.status !== "active") return;
     const isMyTurn = state.auction.currentBidding.activeTurnUserId === guestId;
-    if (timeLeft === 0 && isMyTurn && !isSubmitting) {
+    if (timeLeft === 0 && isMyTurn && !isSubmitting && !autoPassFired.current) {
+      autoPassFired.current = true;
       pass({ roomId: roomId as Id<"rooms">, userId: guestId! }).catch(console.error);
     }
+    if (timeLeft > 0) autoPassFired.current = false;
   }, [timeLeft, state, isSubmitting, pass, roomId, guestId]);
 
   /* Reset bid to min whenever round/turn changes */
@@ -99,7 +160,6 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     const min = hb > 0 ? hb + 1 : 1;
     setBidAmount(min);
     setError(null);
-    setLastAction(null);
   }, [state?.auction?.currentRound, state?.auction?.currentBidding?.highestBid]);
 
   /* ── Derived data ───────────────────────────────────────────────────── */
@@ -108,6 +168,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const me = state?.me;
   const opponent = state?.opponent;
   const mainPlayer = state?.mainPlayer;
+  const revealedSubPlayer = state?.revealedSubPlayer;
+  const revealedNextMainPlayer = state?.revealedNextMainPlayer;
+  const nextRoundInfo = state?.nextRoundInfo;
   const mySquad = state?.mySquad;
   const opponentSquad = state?.opponentSquad;
 
@@ -120,7 +183,6 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const rivalSquad = opponentSquad ?? [];
   const currentPosition = (auction?.rounds && auction?.currentRound) ? (auction.rounds[auction.currentRound - 1]?.position ?? "-") : "-";
   const totalRounds = auction?.rounds?.length ?? 11;
-  const progress = Math.round((squad.length / totalRounds) * 100);
   const iAmLeading = auction?.currentBidding?.highestBidderId === guestId;
 
   const playerData: PlayerCardData | null = mainPlayer ? {
@@ -129,7 +191,6 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     imageUrl: mainPlayer.imageUrl, isLegend: mainPlayer.isLegend, kitNumber: mainPlayer.kitNumber,
   } : null;
 
-  /* Quick bid chips: +1, +5, +10, ALL-IN */
   const quickChips = [
     { label: "+1", value: minBid },
     { label: "+5", value: Math.min(myBudget, minBid + 4) },
@@ -144,7 +205,6 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setError(null);
     try {
       await placeBid({ roomId: roomId as Id<"rooms">, userId: guestId, amount: bidAmount });
-      setLastAction("bid");
     } catch (e: any) {
       setError(e.message || "Bid failed");
     } finally {
@@ -158,7 +218,6 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setError(null);
     try {
       await pass({ roomId: roomId as Id<"rooms">, userId: guestId });
-      setLastAction("pass");
     } catch (e: any) {
       setError(e.message || "Pass failed");
     } finally {
@@ -166,18 +225,12 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     }
   }, [isActive, guestId, pass, roomId]);
 
-  /* ── Loading states ─────────────────────────────────────────────────── */
   if (!guestId || state === undefined) {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="flex flex-col items-center gap-4 animate-fade-in">
-          <div className="relative w-16 h-16">
-            <div className="absolute inset-0 rounded-full border-2 border-lime/20 border-t-lime animate-spin" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Swords className="w-6 h-6 text-lime" />
-            </div>
-          </div>
-          <p className="text-sm text-steel font-black uppercase tracking-widest">Loading Auction…</p>
+        <div className="flex flex-col items-center gap-3 animate-fade-in">
+          <Loader2 className="w-8 h-8 text-lime animate-spin" />
+          <p className="text-xs text-steel font-bold uppercase tracking-widest">Loading Game Screen…</p>
         </div>
       </div>
     );
@@ -187,12 +240,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     return (
       <div className="flex items-center justify-center min-h-[60vh] animate-fade-in">
         <div className="text-center space-y-4 max-w-xs">
-          <div className="w-16 h-16 mx-auto rounded-2xl bg-white/5 flex items-center justify-center">
-            <Swords className="w-7 h-7 text-steel" />
-          </div>
-          <h2 className="text-lg font-black text-white">Auction Not Found</h2>
-          <p className="text-sm text-steel">This room may not exist or hasn't started yet.</p>
-          <button onClick={() => router.push("/")} className="px-6 py-3 bg-lime text-background rounded-xl font-black text-xs active:scale-95 transition-transform">
+          <Swords className="w-8 h-8 mx-auto text-steel" />
+          <h2 className="text-base font-bold text-white">Auction Not Found</h2>
+          <button onClick={() => router.push("/")} className="px-5 py-2.5 bg-lime text-background rounded-xl font-bold text-xs">
             Go Home
           </button>
         </div>
@@ -207,329 +257,225 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     });
   };
 
-  /* ═══════════════════════════════════════════════════════════════════ */
-  /* RENDER                                                              */
-  /* ═══════════════════════════════════════════════════════════════════ */
   return (
-    <div className="max-w-5xl mx-auto flex flex-col gap-4 pb-24 md:pb-8 animate-fade-in">
-      {/* ── TOP BAR ────────────────────────────────────────────────────── */}
-      <div className="glass-card rounded-2xl p-3 flex items-center justify-between gap-3">
-        {/* Left: budgets */}
-        <div className="flex items-center gap-3 min-w-0">
-          <div className="flex items-center gap-1.5">
-            <Wallet className="w-4 h-4 text-lime shrink-0" />
-            <span className="font-stats text-base text-lime">${myBudget}M</span>
+    <div className="max-w-6xl mx-auto flex flex-col gap-3 pb-20 md:pb-6 animate-fade-in">
+      {/* ── CARD REVEAL OVERLAY ────────────────────────────────────────── */}
+      {revealData && (
+        <BidRevealAnimation
+          isOpen={showReveal}
+          onClose={() => setShowReveal(false)}
+          position={revealData.position}
+          roundNumber={revealData.roundNumber}
+          mainPlayer={revealData.mainPlayer}
+          subPlayer={revealData.subPlayer}
+          winnerName={revealData.winnerName}
+          winnerIsMe={revealData.winnerIsMe}
+          winningBid={revealData.winningBid}
+          runnerUpName={revealData.runnerUpName}
+        />
+      )}
+
+      {/* ── CLEAN BROADCAST SCOREBAR ───────────────────────────────────── */}
+      <div className="bg-card rounded-xl px-4 py-2.5 border border-border/80 flex items-center justify-between gap-2 shadow-md">
+        {/* Left: Clean Budget Display */}
+        <div className="flex items-center gap-3 text-xs">
+          <div className="flex items-center gap-1.5 font-bold">
+            <span className="w-2 h-2 rounded-full bg-lime" />
+            <span className="text-steel">YOU:</span>
+            <span className="font-stats text-sm text-lime">${myBudget}M</span>
           </div>
-          <div className="w-px h-6 bg-border shrink-0" />
-          <div className="flex items-center gap-1.5">
-            <Wallet className="w-4 h-4 text-rose-400 shrink-0" />
-            <span className="font-stats text-base text-rose-400">${opponent?.budget ?? 0}M</span>
+          <span className="text-border">|</span>
+          <div className="flex items-center gap-1.5 font-bold">
+            <span className="w-2 h-2 rounded-full bg-rose-400" />
+            <span className="text-steel">RIVAL:</span>
+            <span className="font-stats text-sm text-rose-400">${opponent?.budget ?? 0}M</span>
           </div>
         </div>
 
-        {/* Center: timer & formation badge */}
+        {/* Center: Timer & Round */}
         <div className="flex items-center gap-3">
-          <AuctionTimer timeLeft={timeLeft} maxTime={15} isActive={isActive} size={56} />
-          <div className="hidden md:flex flex-col items-center">
-            <span className="px-2.5 py-0.5 rounded-full bg-lime/10 border border-lime/30 text-lime text-[10px] font-black uppercase tracking-wider">
-              {auction.formation || "4-3-3"} • {auction.matchSize ?? 11}P
+          <AuctionTimer timeLeft={timeLeft} maxTime={15} isActive={isActive} size={44} />
+          <div className="flex flex-col text-center">
+            <span className="text-[11px] font-bold text-white uppercase tracking-wider">
+              {currentPosition} • R{auction.currentRound}/{totalRounds}
             </span>
-            {me?.perk && (
-              <span className="mt-1 flex items-center gap-1 text-[9px] font-black text-amber-400 uppercase tracking-widest">
-                <Sparkles className="w-2.5 h-2.5" /> Perk: {me.perk}
-              </span>
-            )}
+            <span className="text-[9px] text-steel font-medium">({auction.formation || "4-3-3"})</span>
           </div>
         </div>
 
-        {/* Right: round info & opponent perk */}
-        <div className="flex items-center gap-3 text-right">
-          <div className="flex flex-col items-end">
-            <span className="text-[9px] font-black uppercase text-steel tracking-wider">Round</span>
-            <span className="font-stats text-base text-white">{auction.currentRound}/{auction.rounds.length}</span>
-          </div>
-          <div className="hidden sm:flex flex-col items-end">
-            <span className="text-[9px] font-black uppercase text-steel tracking-wider">Slot</span>
-            <span className="font-stats text-base text-white">{currentPosition}</span>
-          </div>
+        {/* Right: Perk Button */}
+        <div>
+          {me?.perk && (
+            <button
+              onClick={handleActivatePerk}
+              disabled={me.perkUsed || isActivatingPerk || !isActive}
+              className={`px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 transition-all ${
+                me.perkUsed
+                  ? "bg-slate-900 text-steel border border-border cursor-not-allowed"
+                  : "bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-sm active:scale-95"
+              }`}
+            >
+              <Sparkles className="w-3 h-3" />
+              {me.perkUsed ? `${me.perk} USED` : me.perk}
+            </button>
+          )}
         </div>
       </div>
 
-      {/* ── MAIN GRID ──────────────────────────────────────────────────── */}
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4 relative">
-
-        {/* OVERLAY: waiting for opponent */}
+      {/* ── MAIN LAYOUT ────────────────────────────────────────────────── */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-3 relative">
+        {/* OVERLAY: Waiting for Opponent */}
         {auction.status === "pending" && (
-          <div className="absolute inset-0 z-50 glass-card rounded-2xl flex flex-col items-center justify-center gap-5 animate-fade-in p-6">
-            <div className="relative w-20 h-20">
-              <div className="absolute inset-0 rounded-full border-2 border-lime/20 border-t-lime animate-spin" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Swords className="w-8 h-8 text-lime animate-float" />
-              </div>
-            </div>
-            <div className="text-center space-y-2">
-              <h2 className="text-xl font-black text-white">Waiting for Opponent</h2>
-              <p className="text-sm text-steel max-w-xs">Share the room code below. The auction begins when someone joins.</p>
+          <div className="absolute inset-0 z-30 bg-card/95 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center gap-4 p-6 border border-border">
+            <Loader2 className="w-8 h-8 text-lime animate-spin" />
+            <div className="text-center space-y-1">
+              <h2 className="text-lg font-bold text-white">Waiting for Opponent</h2>
+              <p className="text-xs text-steel">Room Code: <span className="text-lime font-stats text-base">{room.code}</span></p>
             </div>
             <button
               onClick={copyCode}
-              className="flex items-center gap-2 px-5 py-3 rounded-xl bg-card border border-lime/30 hover:border-lime transition-all active:scale-95 shadow-md shadow-lime/5"
+              className="px-4 py-2 bg-slate-900 border border-border hover:border-lime/40 text-xs font-bold text-white rounded-lg flex items-center gap-1.5"
             >
-              <span className="font-stats text-2xl tracking-[0.3em] text-lime">{room.code}</span>
-              {codeCopied ? <Check className="w-4 h-4 text-lime" /> : <Copy className="w-4 h-4 text-steel" />}
-            </button>
-            {room.hostId === guestId && (
-              <button
-                onClick={handleCancelRoom}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 font-bold text-xs uppercase tracking-wider border border-rose-500/20 active:scale-95 transition-all"
-              >
-                <X className="w-4 h-4" /> Cancel Room
-              </button>
-            )}
-          </div>
-        )}
-
-        {/* OVERLAY: completed */}
-        {auction.status === "completed" && (
-          <div className="absolute inset-0 z-50 glass-card rounded-2xl flex flex-col items-center justify-center gap-5 animate-scale-in">
-            <div className="w-20 h-20 rounded-full bg-lime/10 border-2 border-lime flex items-center justify-center animate-breathe-glow">
-              <Trophy className="w-10 h-10 text-lime" />
-            </div>
-            <div className="text-center space-y-2">
-              <h2 className="text-2xl font-black text-white">Auction Complete!</h2>
-              <p className="text-sm text-steel">Your squad is locked in. Check the final results.</p>
-            </div>
-            <button
-              onClick={() => router.push(`/result/${roomId}`)}
-              className="px-8 py-3 bg-lime hover:bg-vivid text-background font-black text-sm rounded-xl shadow-lg shadow-lime/20 active:scale-95 transition-all flex items-center gap-2"
-            >
-              View Results <ChevronRight className="w-4 h-4" />
+              {codeCopied ? "Copied!" : "Copy Code"} <Copy className="w-3.5 h-3.5" />
             </button>
           </div>
         )}
 
-        {/* ── LEFT: Player spotlight + Bidding ─────────────────────────── */}
-        <div className="flex flex-col gap-4">
-          {/* Status pills */}
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-card border border-border text-[11px] font-black uppercase tracking-wider text-steel">
-              <Shield className="w-3 h-3 text-lime" /> {currentPosition} Slot ({auction.formation || "4-3-3"})
-            </span>
-            {me?.perk && (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[11px] font-black uppercase tracking-wider">
-                <Sparkles className="w-3 h-3" /> {me.perk} PERK ACTIVE
+        {/* ── LEFT: Card Spotlight & Clean Controls ─────────────────────── */}
+        <div className="flex flex-col gap-3">
+          {/* Card Spotlight Container */}
+          <div className="bg-card border border-border/80 rounded-2xl p-5 flex flex-col items-center gap-4 relative shadow-md">
+            {/* Status Line */}
+            <div className="w-full flex items-center justify-between text-[11px] text-steel font-bold px-1">
+              <span>{currentPosition} SLOT</span>
+              <span className={highestBid > 0 ? (iAmLeading ? "text-lime" : "text-rose-400") : "text-steel"}>
+                {highestBid === 0 ? "STARTING BID" : iAmLeading ? "YOU LEAD ($" + highestBid + "M)" : "RIVAL LEADS ($" + highestBid + "M)"}
               </span>
-            )}
-            <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider ${
-              iAmLeading ? "bg-lime/10 border border-lime/30 text-lime" : highestBid > 0 ? "bg-rose-500/10 border border-rose-500/30 text-rose-400" : "bg-card border border-border text-steel"
-            }`}>
-              <Eye className="w-3 h-3" />
-              {highestBid === 0 ? "No Bids" : iAmLeading ? "You Lead" : "Rival Leads"}
-            </span>
-            {auction.rounds[auction.currentRound - 1]?.isMysteryRound && (
-              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-[11px] font-black uppercase tracking-wider animate-badge-bounce">
-                <Sparkles className="w-3 h-3" /> Mystery
-              </span>
-            )}
-          </div>
+            </div>
 
-          {/* Player card showcase */}
-          <div className="auction-spotlight bg-card border border-border rounded-2xl p-5 md:p-8 flex flex-col items-center gap-6 min-h-[320px]">
+            {/* Main Player Card */}
             {playerData ? (
               <div className="animate-card-reveal" key={`${auction.currentRound}-${playerData.id}`}>
                 <PlayerCard player={playerData} size="lg" />
               </div>
             ) : (
-              <div className="w-56 h-[290px] rounded-3xl bg-border/30 animate-pulse flex items-center justify-center">
-                <Loader2 className="w-8 h-8 text-steel animate-spin" />
+              <div className="w-48 h-[260px] rounded-2xl bg-border/20 animate-pulse flex items-center justify-center">
+                <Loader2 className="w-6 h-6 text-steel animate-spin" />
               </div>
             )}
 
-            {/* Current bid display */}
-            {highestBid > 0 && (
-              <div className="flex items-center gap-3 px-4 py-2 rounded-xl bg-background/60 border border-border animate-slide-up">
-                <span className="text-[10px] font-black uppercase text-steel">Current Bid</span>
-                <span className="font-stats text-xl text-lime">${highestBid}M</span>
-                <span className={`text-[10px] font-black uppercase ${iAmLeading ? "text-lime" : "text-rose-400"}`}>
-                  {iAmLeading ? "• YOU" : "• RIVAL"}
+            {/* Perk Intel (Clean, Unobtrusive) */}
+            {me?.perkUsed && (
+              <div className="w-full p-2.5 bg-slate-900 border border-amber-500/30 rounded-xl text-xs flex items-center justify-between">
+                <span className="text-amber-400 font-bold text-[10px] uppercase flex items-center gap-1">
+                  <Sparkles className="w-3 h-3" /> INTEL:
                 </span>
+                {me.perk === "SPY" && revealedSubPlayer && (
+                  <span className="text-white text-[11px] font-medium truncate max-w-[220px]">
+                    Sub: <strong className="text-amber-300">{revealedSubPlayer.name}</strong> ({revealedSubPlayer.club})
+                  </span>
+                )}
+                {me.perk === "SCOUT" && revealedNextMainPlayer && (
+                  <span className="text-white text-[11px] font-medium truncate max-w-[220px]">
+                    Next: <strong className="text-amber-300">{revealedNextMainPlayer.name}</strong> ({nextRoundInfo?.position})
+                  </span>
+                )}
               </div>
             )}
           </div>
 
-          {/* ── BID CONTROLS ───────────────────────────────────────────── */}
+          {/* Clean Action Controls */}
           {isMyTurn ? (
-            <div className="bg-card border-2 border-lime/30 rounded-2xl p-5 space-y-5 animate-swipe-up shadow-xl shadow-lime/5" key="bid-controls">
-              <div className="flex items-center justify-between">
-                <h3 className="text-lime font-black text-sm uppercase tracking-wider flex items-center gap-2">
-                  <Zap className="w-4 h-4 fill-lime" /> Your Turn
-                </h3>
-                <span className="font-stats text-xs text-steel">Budget: ${myBudget}M</span>
+            <div className="bg-card border border-lime/30 rounded-2xl p-4 space-y-3 shadow-md">
+              <div className="flex items-center justify-between text-xs">
+                <span className="text-lime font-bold uppercase tracking-wider flex items-center gap-1">
+                  <Zap className="w-3.5 h-3.5 fill-lime" /> YOUR TURN TO BID
+                </span>
+                <span className="font-stats text-steel">Max: ${myBudget}M</span>
               </div>
 
-              {/* Quick bid chips */}
-              <div className="flex flex-wrap gap-2">
+              {/* Quick Chips */}
+              <div className="flex flex-wrap gap-1.5">
                 {quickChips.map((chip) => (
                   <button
                     key={chip.label}
                     onClick={() => setBidAmount(chip.value)}
-                    className={`px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all btn-haptic border ${
+                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all border ${
                       bidAmount === chip.value
-                        ? "bg-lime text-background border-lime shadow-md shadow-lime/20"
-                        : "bg-background border-border text-white hover:border-lime/50 hover:text-lime"
+                        ? "bg-lime text-slate-950 border-lime shadow-sm"
+                        : "bg-slate-900 border-border text-white hover:border-lime/30"
                     }`}
                   >
-                    {chip.label === "ALL IN" ? "🔥 ALL IN" : `$${chip.value}M`}
+                    {chip.label === "ALL IN" ? "ALL IN" : `$${chip.value}M`}
                   </button>
                 ))}
               </div>
 
-              {/* Swipe slider */}
-              <div className="pt-4 pb-2 px-1">
-                <BidSlider
-                  value={bidAmount}
-                  min={minBid}
-                  max={myBudget}
-                  onChange={setBidAmount}
-                />
-              </div>
+              <BidSlider value={bidAmount} min={minBid} max={myBudget} onChange={setBidAmount} />
 
-              {error && (
-                <p className="text-rose-500 text-xs font-black bg-rose-500/10 rounded-lg px-3 py-2">{error}</p>
-              )}
+              {error && <p className="text-rose-400 text-xs font-medium bg-rose-500/10 px-3 py-1 rounded-lg">{error}</p>}
 
-              {/* Action buttons */}
-              <div className="flex gap-3">
+              <div className="flex gap-2 pt-1">
                 <button
                   onClick={handlePass}
                   disabled={isSubmitting}
-                  className="flex-1 py-3.5 bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 font-black text-xs uppercase tracking-wider rounded-xl transition-all btn-haptic flex items-center justify-center gap-2 border border-rose-500/20"
+                  className="flex-1 py-2.5 bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 font-bold text-xs uppercase rounded-xl border border-rose-500/20 transition-all flex items-center justify-center gap-1"
                 >
-                  <X className="w-4 h-4" /> Pass
+                  <X className="w-3.5 h-3.5" /> Pass
                 </button>
                 <button
                   onClick={handleBid}
                   disabled={isSubmitting || bidAmount < minBid || bidAmount > myBudget}
-                  className="flex-[2] py-3.5 bg-lime hover:bg-vivid text-background font-black text-xs uppercase tracking-wider rounded-xl transition-all btn-haptic disabled:opacity-40 flex items-center justify-center gap-2 shadow-lg shadow-lime/20"
+                  className="flex-[2] py-2.5 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase rounded-xl shadow-md transition-all flex items-center justify-center gap-1"
                 >
-                  Bid ${bidAmount}M <ArrowRight className="w-4 h-4" />
+                  Bid ${bidAmount}M <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
             </div>
           ) : isActive ? (
-            <div className="bg-card border border-border rounded-2xl p-6 flex items-center justify-center gap-4 animate-fade-in" key="waiting-turn">
-              <Loader2 className="w-5 h-5 text-steel animate-spin shrink-0" />
-              <div>
-                <p className="text-white font-black text-sm">Opponent's Turn</p>
-                <p className="text-steel text-xs">They'll bid or pass — you'll be up next.</p>
-              </div>
+            <div className="bg-card border border-border/80 rounded-2xl p-4 flex items-center justify-center gap-2">
+              <Loader2 className="w-4 h-4 text-steel animate-spin shrink-0" />
+              <span className="text-steel font-bold text-xs uppercase tracking-wider">Opponent's Turn...</span>
             </div>
           ) : null}
         </div>
 
-        {/* ── RIGHT SIDEBAR: My Squad ──────────────────────────────────── */}
-        <div className="bg-card border border-border rounded-2xl p-4 flex flex-col max-h-[600px] lg:max-h-none">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-sm font-black text-white flex items-center gap-2">
-              <Crown className="w-4 h-4 text-lime" /> My Squad
-            </h2>
-            <span className="px-2 py-0.5 bg-lime/10 rounded-md text-lime text-[11px] font-stats border border-lime/20">
-              {squad.length}/{auction.rounds.length}
-            </span>
+        {/* ── RIGHT: Tactical Pitch View ────────────────────────────────── */}
+        <div className="flex flex-col gap-2">
+          {/* Pitch Tab Selector */}
+          <div className="flex items-center p-1 rounded-xl bg-slate-900 border border-border/80">
+            <button
+              onClick={() => setSelectedTeamTab("me")}
+              className={`flex-1 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
+                selectedTeamTab === "me"
+                  ? "bg-lime text-slate-950 shadow-sm"
+                  : "text-steel hover:text-white"
+              }`}
+            >
+              My Squad ({squad.length})
+            </button>
+            <button
+              onClick={() => setSelectedTeamTab("rival")}
+              className={`flex-1 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
+                selectedTeamTab === "rival"
+                  ? "bg-rose-500 text-white shadow-sm"
+                  : "text-steel hover:text-white"
+              }`}
+            >
+              Rival Squad ({rivalSquad.length})
+            </button>
           </div>
 
-          {/* Progress bar */}
-          <div className="mb-3">
-            <div className="h-1.5 rounded-full bg-background overflow-hidden">
-              <div
-                className="h-full rounded-full bg-gradient-to-r from-lime/60 to-lime transition-all duration-500"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
-          </div>
-
-          {/* Squad list */}
-          <div className="flex-1 flex flex-col gap-1.5 overflow-y-auto scrollbar-hidden pr-1">
-            {squad.map((slot, idx) => (
-              <div
-                key={idx}
-                className={`flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all animate-slide-in-up ${
-                  slot.isSub
-                    ? "bg-background/40 border border-dashed border-border"
-                    : "bg-background border border-lime/15"
-                }`}
-                style={{ animationDelay: `${idx * 50}ms` }}
-              >
-                <span className={`w-9 text-center text-[10px] font-black rounded-md py-1 ${
-                  slot.isSub ? "bg-border/50 text-steel" : "bg-lime/15 text-lime"
-                }`}>
-                  {slot.position}
-                </span>
-                <div className="flex-1 min-w-0">
-                  <p className={`text-xs font-bold truncate ${slot.isSub ? "text-steel/70 line-through" : "text-white"}`}>
-                    {slot.player?.name || "Unknown"}
-                  </p>
-                  <p className="text-[10px] text-steel truncate">{slot.player?.club || ""}</p>
-                </div>
-                <span className="font-stats text-[10px] text-lime shrink-0">
-                  {slot.cost > 0 ? `$${slot.cost}M` : "Free"}
-                </span>
-              </div>
-            ))}
-
-            {/* Empty slots */}
-            {Array.from({ length: Math.max(0, auction.rounds.length - squad.length) }).map((_, i) => (
-              <div
-                key={`empty-${i}`}
-                className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl border border-dashed border-border/50 bg-background/10"
-              >
-                <span className="w-9 text-center text-[10px] font-black text-border rounded-md py-1 bg-border/20">—</span>
-                <div className="flex-1 h-2 w-16 bg-border/20 rounded-full" />
-              </div>
-            ))}
-          </div>
+          {/* Tactical Pitch Component */}
+          <TacticalPitch
+            formation={auction.formation || "4-3-3"}
+            matchSize={(auction.matchSize as 5 | 11) || 11}
+            squad={selectedTeamTab === "me" ? squad : rivalSquad}
+            title={selectedTeamTab === "me" ? "My Pitch" : "Rival Pitch"}
+            accentColor={selectedTeamTab === "me" ? "#95E810" : "#F43F5E"}
+            badgeLabel={selectedTeamTab === "me" ? "Home" : "Away"}
+          />
         </div>
-      </div>
-
-      {/* ── BROADCAST TACTICAL PITCH ─────────────────────────────────── */}
-      <TacticalPitch
-        formation={auction.formation || "4-3-3"}
-        matchSize={(auction.matchSize as 5 | 11) || 11}
-        squad={squad}
-        title="Live Tactical Squad"
-      />
-
-      {/* ── BOTTOM: Opponent draft ──────────────────────────────────────── */}
-      <div className="bg-card border border-border rounded-2xl p-4">
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-black text-white flex items-center gap-2">
-            <Swords className="w-4 h-4 text-rose-400" /> Opponent Draft
-          </h2>
-          <span className="font-stats text-[11px] text-steel">{rivalSquad.length}/{auction.rounds.length}</span>
-        </div>
-        {rivalSquad.length === 0 ? (
-          <p className="text-center text-xs text-steel py-4">No picks yet.</p>
-        ) : (
-          <div className="flex gap-2 overflow-x-auto scrollbar-hidden pb-1">
-            {rivalSquad.map((slot, idx) => (
-              <div
-                key={`${slot.playerId}-${idx}`}
-                className={`shrink-0 flex flex-col items-center gap-1 px-3 py-2 rounded-xl border transition-all ${
-                  slot.isSub ? "bg-background/40 border-border" : "bg-background border-lime/15"
-                }`}
-                style={{ minWidth: 90 }}
-              >
-                <span className={`text-[10px] font-black ${slot.isSub ? "text-steel" : "text-white"}`}>
-                  {slot.position}
-                </span>
-                <p className={`text-[10px] font-bold text-center truncate w-full ${slot.isSub ? "text-steel/60" : "text-white"}`}>
-                  {slot.player?.name || "Unknown"}
-                </p>
-                <span className="font-stats text-[9px] text-lime">${slot.cost}M</span>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );

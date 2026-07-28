@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Aston Villa",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/36878.png",
       "kitNumber": 40
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Aston Villa",
       "nation": "Australia",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7029.png",
       "kitNumber": 46
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Aston Villa",
       "nation": "Argentina",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19599.png",
       "kitNumber": 23
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284390.png",
       "kitNumber": 64
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284457.png",
       "kitNumber": 26
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "Poland",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19298.png",
       "kitNumber": 2
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "France",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/478441.png",
       "kitNumber": 48
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "France",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2724.png",
       "kitNumber": 12
@@ -101,7 +101,7 @@
       "position": "CB/RB",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19354.png",
       "kitNumber": 4
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "Sweden",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/889.png",
       "kitNumber": 3
@@ -123,7 +123,7 @@
       "position": "LB/LM",
       "club": "Aston Villa",
       "nation": "Netherlands",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138816.png",
       "kitNumber": 22
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19179.png",
       "kitNumber": 5
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "Serbia",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342320.png",
       "kitNumber": 19
@@ -156,7 +156,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546703.png",
       "kitNumber": 2
@@ -167,7 +167,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "Spain",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46815.png",
       "kitNumber": 14
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2287.png",
       "kitNumber": 6
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "Scotland",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/434180.png",
       "kitNumber": 25
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380715.png",
       "kitNumber": 11
@@ -211,7 +211,7 @@
       "position": "CAM/RW",
       "club": "Aston Villa",
       "nation": "Argentina",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19071.png",
       "kitNumber": 10
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/453101.png",
       "kitNumber": 83
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/416250.png",
       "kitNumber": 4
@@ -244,7 +244,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412084.png",
       "kitNumber": 3
@@ -255,7 +255,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/364566.png",
       "kitNumber": 53
@@ -266,7 +266,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/360268.png",
       "kitNumber": 18
@@ -277,7 +277,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195103.png",
       "kitNumber": 8
@@ -288,7 +288,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "Switzerland",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/406244.png",
       "kitNumber": 44
@@ -299,7 +299,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "Scotland",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19191.png",
       "kitNumber": 7
@@ -310,7 +310,7 @@
       "position": "CDM/CM",
       "club": "Aston Villa",
       "nation": "Belgium",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162714.png",
       "kitNumber": 24
@@ -321,7 +321,7 @@
       "position": "ST",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19194.png",
       "kitNumber": 18
@@ -332,7 +332,7 @@
       "position": "ST",
       "club": "Aston Villa",
       "nation": "Brazil",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/464004.png",
       "kitNumber": 47
@@ -343,7 +343,7 @@
       "position": "RW/RM",
       "club": "Aston Villa",
       "nation": "Jamaica",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/983.png",
       "kitNumber": 31
@@ -354,7 +354,7 @@
       "position": "LW/RW",
       "club": "Aston Villa",
       "nation": "Argentina",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284324.png",
       "kitNumber": 49
@@ -365,7 +365,7 @@
       "position": "ST",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162173.png",
       "kitNumber": 19
@@ -376,7 +376,7 @@
       "position": "ST",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/514519.png",
       "kitNumber": 24
@@ -387,7 +387,7 @@
       "position": "ST",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/553848.png",
       "kitNumber": 16
@@ -398,7 +398,7 @@
       "position": "ST/LW",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19366.png",
       "kitNumber": 11

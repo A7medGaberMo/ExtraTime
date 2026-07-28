@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Everton",
       "nation": "Wales",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/82855.png",
       "kitNumber": 31
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2932.png",
       "kitNumber": 1
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Everton",
       "nation": "Republic of Ireland",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18860.png",
       "kitNumber": 12
@@ -46,7 +46,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "Morocco",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/431921.png",
       "kitNumber": 39
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/17661.png",
       "kitNumber": 32
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284385.png",
       "kitNumber": 27
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/410421.png",
       "kitNumber": 55
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "Ukraine",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2165.png",
       "kitNumber": 16
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "Republic of Ireland",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/270139.png",
       "kitNumber": 15
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "Scotland",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138417.png",
       "kitNumber": 2
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557410.png",
       "kitNumber": 15
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2936.png",
       "kitNumber": 6
@@ -145,7 +145,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "Argentina",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195993.png",
       "kitNumber": 24
@@ -156,7 +156,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/405360.png",
       "kitNumber": 45
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/148099.png",
       "kitNumber": 22
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/410423.png",
       "kitNumber": 6
@@ -189,7 +189,7 @@
       "position": "CM/RB",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/895.png",
       "kitNumber": 37
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/179685.png",
       "kitNumber": 7
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284500.png",
       "kitNumber": 42
@@ -222,7 +222,7 @@
       "position": "LW/LM",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18929.png",
       "kitNumber": 7
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/588468.png",
       "kitNumber": 14
@@ -244,7 +244,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "Germany",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202854.png",
       "kitNumber": 34
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Everton",
       "nation": "France",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343684.png",
       "kitNumber": 11
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Everton",
       "nation": "Portugal",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/125743.png",
       "kitNumber": 9
@@ -277,7 +277,7 @@
       "position": "ST",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304317.png",
       "kitNumber": 20
@@ -288,7 +288,7 @@
       "position": "ST",
       "club": "Everton",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/334037.png",
       "kitNumber": 19
@@ -299,7 +299,7 @@
       "position": "ST",
       "club": "Everton",
       "nation": "Scotland",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413034.png",
       "kitNumber": 11
@@ -310,7 +310,7 @@
       "position": "ST/CAM",
       "club": "Everton",
       "nation": "Senegal",
-      "tier": "",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18592.png",
       "kitNumber": 10

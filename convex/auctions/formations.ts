@@ -1,15 +1,4 @@
-export type Position =
-  | "GK"
-  | "CB"
-  | "LB"
-  | "RB"
-  | "CDM"
-  | "CM"
-  | "CAM"
-  | "LW"
-  | "RW"
-  | "ST"
-  | "CF";
+import { type Position } from "../lib/constants";
 
 export type MatchSize = 5 | 11;
 
@@ -33,13 +22,12 @@ function pick<T>(items: T[]): T {
   return items[Math.floor(Math.random() * items.length)];
 }
 
-export function getRandomFormation(matchSize: MatchSize) {
+export function getRandomFormation(matchSize: MatchSize): string {
   return pick(Object.keys(matchSize === 5 ? FORMATIONS_5 : FORMATIONS_11));
 }
 
-export function getFormationPositions(formation: string, matchSize: MatchSize) {
+export function getFormationPositions(formation: string, matchSize: MatchSize): Position[] {
   const registry = matchSize === 5 ? FORMATIONS_5 : FORMATIONS_11;
   const variants = registry[formation] || registry[matchSize === 5 ? "1-2-1" : "4-3-3"];
   return pick(variants);
 }
-

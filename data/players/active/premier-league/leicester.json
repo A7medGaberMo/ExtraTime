@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Leicester",
       "nation": "Bosnia and Herzegovina",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18858.png",
       "kitNumber": 31
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288137.png",
       "kitNumber": 13
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Leicester",
       "nation": "Poland",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152970.png",
       "kitNumber": 1
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Leicester",
       "nation": "Spain",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/179996.png",
       "kitNumber": 13
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/417310.png",
       "kitNumber": 32
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "France",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128338.png",
       "kitNumber": 26
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "Belgium",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8694.png",
       "kitNumber": 3
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557468.png",
       "kitNumber": 43
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "Denmark",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158710.png",
       "kitNumber": 16
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278118.png",
       "kitNumber": 4
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "Italy",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30427.png",
       "kitNumber": 5
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437569.png",
       "kitNumber": 25
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "Australia",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20079.png",
       "kitNumber": 15
@@ -156,7 +156,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152969.png",
       "kitNumber": 33
@@ -167,7 +167,7 @@
       "position": "CB",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/305732.png",
       "kitNumber": 44
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/305733.png",
       "kitNumber": 37
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/289624.png",
       "kitNumber": 36
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18779.png",
       "kitNumber": 17
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Leicester",
       "nation": "Jamaica",
-      "tier": "",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19004.png",
       "kitNumber": 14
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/180.png",
       "kitNumber": 22
@@ -233,7 +233,7 @@
       "position": "ST",
       "club": "Leicester",
       "nation": "Northern Ireland",
-      "tier": "",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/434183.png",
       "kitNumber": 15
@@ -244,7 +244,7 @@
       "position": "RW/RM",
       "club": "Leicester",
       "nation": "Ghana",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/303467.png",
       "kitNumber": 7
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/879.png",
       "kitNumber": 10
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Leicester",
       "nation": "England",
-      "tier": "",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284403.png",
       "kitNumber": 39

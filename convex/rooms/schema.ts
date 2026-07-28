@@ -1,5 +1,6 @@
 import { defineTable } from "convex/server";
 import { v } from "convex/values";
+import { roomSettingsValidator } from "../lib/constants";
 
 export const roomsTable = defineTable({
   code: v.string(),
@@ -14,7 +15,7 @@ export const roomsTable = defineTable({
     v.literal("abandoned")
   ),
   isPublic: v.optional(v.boolean()),
-  settings: v.any(),
+  settings: roomSettingsValidator,
   createdAt: v.number(),
 })
   .index("by_code", ["code"])

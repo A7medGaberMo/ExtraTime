@@ -16,4 +16,4 @@ export const matchesTable = defineTable({
     v.literal("completed")
   ),
   completedAt: v.optional(v.number()),
-});
+}).index("by_room", ["roomId"]);

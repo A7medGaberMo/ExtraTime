@@ -1,14 +1,18 @@
 import { mutation } from "../_generated/server";
+import { Id } from "../_generated/dataModel";
 import { v } from "convex/values";
+import { GenericMutationCtx } from "convex/server";
 import { generateDraftRounds, PlayerPoolMode } from "../auctions/draftEngine";
 import { getRandomFormation, MatchSize } from "../auctions/formations";
 
-function generateRoomCode() {
+// ── Helpers ────────────────────────────────────────────────
+
+function generateRoomCode(): string {
   const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
   return Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
 }
 
-async function generateUniqueRoomCode(ctx: any) {
+async function generateUniqueRoomCode(ctx: GenericMutationCtx<any>): Promise<string> {
   for (let attempt = 0; attempt < 8; attempt++) {
     const code = generateRoomCode();
     const existing = await ctx.db
@@ -20,24 +24,29 @@ async function generateUniqueRoomCode(ctx: any) {
   throw new Error("Could not generate a unique room code");
 }
 
-function autoPerks() {
-  return Math.random() < 0.5
-    ? ({ host: "SCOUT", guest: "SPY" } as const)
-    : ({ host: "SPY", guest: "SCOUT" } as const);
+function randomPerk(): "SCOUT" | "SPY" {
+  return Math.random() < 0.5 ? "SCOUT" : "SPY";
 }
 
-async function createWaitingRoom(ctx: any, args: {
-  hostId: any;
+function complementPerk(perk: "SCOUT" | "SPY"): "SCOUT" | "SPY" {
+  return perk === "SCOUT" ? "SPY" : "SCOUT";
+}
+
+interface CreateRoomArgs {
+  hostId: Id<"guestUsers">;
   matchSize: MatchSize;
   startingBudget: number;
   isPublic: boolean;
   poolMode: PlayerPoolMode;
-}) {
+}
+
+async function createWaitingRoom(ctx: GenericMutationCtx<any>, args: CreateRoomArgs) {
   const formation = getRandomFormation(args.matchSize);
   const rounds = await generateDraftRounds(ctx, formation, args.matchSize, args.poolMode);
-  const perks = autoPerks();
+  const hostPerk = randomPerk();
   const code = await generateUniqueRoomCode(ctx);
   const now = Date.now();
+
   const roomId = await ctx.db.insert("rooms", {
     code,
     hostId: args.hostId,
@@ -71,7 +80,7 @@ async function createWaitingRoom(ctx: any, args: {
     host: {
       userId: args.hostId,
       budget: args.startingBudget,
-      perk: perks.host,
+      perk: hostPerk,
       perkUsed: false,
       squad: [],
     },
@@ -80,6 +89,48 @@ async function createWaitingRoom(ctx: any, args: {
 
   return { roomId, code, matched: false };
 }
+
+// ── Join Logic (shared between join + findOrCreate) ────────
+
+async function joinAuction(
+  ctx: GenericMutationCtx<any>,
+  roomId: Id<"rooms">,
+  guestId: Id<"guestUsers">,
+  auction: any
+) {
+  // FIX: Preserve the host's original perk — only assign guest as complement
+  const hostPerk = auction.host.perk as "SCOUT" | "SPY";
+  const guestPerk = complementPerk(hostPerk);
+  const activeTurnUserId = auction.host.userId;
+  const now = Date.now();
+
+  await ctx.db.patch(roomId, {
+    guestId: guestId,
+    status: "in_progress",
+  });
+
+  await ctx.db.patch(auction._id, {
+    status: "active",
+    // NOTE: host perk is NOT overwritten — kept as-is from creation
+    guest: {
+      userId: guestId,
+      budget: auction.startingBudget,
+      perk: guestPerk,
+      perkUsed: false,
+      squad: [],
+    },
+    currentBidding: {
+      highestBid: 0,
+      highestBidderId: undefined,
+      activeTurnUserId,
+      turnExpiresAt: now + 15000,
+    },
+  });
+
+  return activeTurnUserId;
+}
+
+// ── Mutations ──────────────────────────────────────────────
 
 export const create = mutation({
   args: {
@@ -90,14 +141,14 @@ export const create = mutation({
     poolMode: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const matchSize: MatchSize = args.matchSize || 11;
-    const startingBudget = args.startingBudget || 100;
-    const poolMode: PlayerPoolMode = args.poolMode as PlayerPoolMode || "GLOBAL";
+    const matchSize: MatchSize = args.matchSize ?? 11;
+    const startingBudget = args.startingBudget ?? 100;
+    const poolMode = (args.poolMode ?? "GLOBAL") as PlayerPoolMode;
     return await createWaitingRoom(ctx, {
       hostId: args.hostId,
       matchSize,
       startingBudget,
-      isPublic: args.isPublic || false,
+      isPublic: args.isPublic ?? false,
       poolMode,
     });
   },
@@ -123,31 +174,7 @@ export const join = mutation({
       .first();
     if (!auction) throw new Error("Auction not found for room");
 
-    const perks = autoPerks();
-    const activeTurnUserId = Math.random() < 0.5 ? auction.host.userId : args.guestId;
-    const now = Date.now();
-    await ctx.db.patch(args.roomId, {
-      guestId: args.guestId,
-      status: "in_progress",
-    });
-    await ctx.db.patch(auction._id, {
-      status: "active",
-      host: { ...auction.host, perk: perks.host },
-      guest: {
-        userId: args.guestId,
-        budget: auction.startingBudget,
-        perk: perks.guest,
-        perkUsed: false,
-        squad: [],
-      },
-      currentBidding: {
-        ...auction.currentBidding,
-        highestBid: 0,
-        highestBidderId: undefined,
-        activeTurnUserId,
-        turnExpiresAt: now + 15000,
-      },
-    });
+    const activeTurnUserId = await joinAuction(ctx, args.roomId, args.guestId, auction);
     return { roomId: args.roomId, activeTurnUserId };
   },
 });
@@ -159,59 +186,37 @@ export const findOrCreatePublicMatch = mutation({
     poolMode: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const matchSize: MatchSize = args.matchSize || 11;
-    const poolMode: PlayerPoolMode = args.poolMode as PlayerPoolMode || "GLOBAL";
+    const matchSize: MatchSize = args.matchSize ?? 11;
+    const poolMode = (args.poolMode ?? "GLOBAL") as PlayerPoolMode;
     const now = Date.now();
+
     const openRooms = await ctx.db
       .query("rooms")
       .withIndex("by_public_status", (q) => q.eq("isPublic", true).eq("status", "waiting"))
       .collect();
-    let match = null;
-    let matchAuction = null;
+
+    // Find a compatible room
     for (const room of openRooms) {
       const isCompatible =
         room.hostId !== args.userId &&
         room.createdAt > now - 10 * 60 * 1000 &&
         room.settings?.matchSize === matchSize &&
-        (room.settings?.poolMode || "GLOBAL") === poolMode;
+        (room.settings?.poolMode ?? "GLOBAL") === poolMode;
+
       if (!isCompatible) continue;
 
       const auction = await ctx.db
         .query("auctions")
         .withIndex("by_room", (q) => q.eq("roomId", room._id))
         .first();
+
       if (auction) {
-        match = room;
-        matchAuction = auction;
-        break;
+        await joinAuction(ctx, room._id, args.userId, auction);
+        return { roomId: room._id, code: room.code, matched: true };
       }
     }
 
-    if (match && matchAuction) {
-      const perks = autoPerks();
-      const activeTurnUserId = Math.random() < 0.5 ? matchAuction.host.userId : args.userId;
-      await ctx.db.patch(match._id, { guestId: args.userId, status: "in_progress" });
-      await ctx.db.patch(matchAuction._id, {
-        status: "active",
-        host: { ...matchAuction.host, perk: perks.host },
-        guest: {
-          userId: args.userId,
-          budget: matchAuction.startingBudget,
-          perk: perks.guest,
-          perkUsed: false,
-          squad: [],
-        },
-        currentBidding: {
-          ...matchAuction.currentBidding,
-          highestBid: 0,
-          highestBidderId: undefined,
-          activeTurnUserId,
-          turnExpiresAt: now + 15000,
-        },
-      });
-      return { roomId: match._id, code: match.code, matched: true };
-    }
-
+    // No compatible room found — create a new one
     return await createWaitingRoom(ctx, {
       hostId: args.userId,
       matchSize,

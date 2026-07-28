@@ -1,5 +1,11 @@
-# Matches Feature
+# Matches Module
 
-TODO: Match simulation logic will be added here in Phase 2.
+Manages match records created after an auction completes.
 
-This module will handle taking the squads acquired during the auction phase and simulating the match result.
+## Mutations
+- `createFromAuction` — Creates a match record from a completed auction. Idempotent (won't create duplicates).
+- `updateResult` — Records the final score and optional winner.
+
+## Queries
+- `getByRoom` — Fetch match by room ID with hydrated squad details.
+- `getById` — Direct match access by ID.

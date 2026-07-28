@@ -1,5 +1,6 @@
 import { mutation } from "../_generated/server";
 import { v } from "convex/values";
+import { tierValidator } from "../lib/constants";
 
 export const create = mutation({
   args: {
@@ -7,23 +8,25 @@ export const create = mutation({
     position: v.string(),
     clubId: v.id("clubs"),
     nationId: v.id("nations"),
-    tier: v.string(),
+    tier: tierValidator,
     isLegend: v.boolean(),
-    seasonYear: v.number(),
-    apiId: v.string(),
-    imageUrl: v.string(),
+    seasonYear: v.optional(v.number()),
+    apiId: v.optional(v.string()),
+    imageUrl: v.optional(v.string()),
+    kitNumber: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
     return await ctx.db.insert("players", {
       name: args.name,
-      position: args.position as any,
+      position: args.position,
       clubId: args.clubId,
       nationId: args.nationId,
-      tier: args.tier as any,
+      tier: args.tier,
       isLegend: args.isLegend,
       seasonYear: args.seasonYear,
       apiId: args.apiId,
       imageUrl: args.imageUrl,
+      kitNumber: args.kitNumber,
     });
   },
 });
