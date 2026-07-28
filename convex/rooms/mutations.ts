@@ -87,12 +87,12 @@ export const create = mutation({
     matchSize: v.optional(v.union(v.literal(5), v.literal(11))),
     startingBudget: v.optional(v.number()),
     isPublic: v.optional(v.boolean()),
-    poolMode: v.optional(v.union(v.literal("GLOBAL"), v.literal("EPL"), v.literal("ICONS"))),
+    poolMode: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const matchSize: MatchSize = args.matchSize || 11;
     const startingBudget = args.startingBudget || 100;
-    const poolMode: PlayerPoolMode = args.poolMode || "GLOBAL";
+    const poolMode: PlayerPoolMode = args.poolMode as PlayerPoolMode || "GLOBAL";
     return await createWaitingRoom(ctx, {
       hostId: args.hostId,
       matchSize,
@@ -156,11 +156,11 @@ export const findOrCreatePublicMatch = mutation({
   args: {
     userId: v.id("guestUsers"),
     matchSize: v.optional(v.union(v.literal(5), v.literal(11))),
-    poolMode: v.optional(v.union(v.literal("GLOBAL"), v.literal("EPL"), v.literal("ICONS"))),
+    poolMode: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const matchSize: MatchSize = args.matchSize || 11;
-    const poolMode: PlayerPoolMode = args.poolMode || "GLOBAL";
+    const poolMode: PlayerPoolMode = args.poolMode as PlayerPoolMode || "GLOBAL";
     const now = Date.now();
     const openRooms = await ctx.db
       .query("rooms")
@@ -235,5 +235,30 @@ export const updateStatus = mutation({
   },
   handler: async (ctx, args) => {
     await ctx.db.patch(args.roomId, { status: args.status });
+  },
+});
+
+export const cancel = mutation({
+  args: {
+    roomId: v.id("rooms"),
+    hostId: v.id("guestUsers"),
+  },
+  handler: async (ctx, args) => {
+    const room = await ctx.db.get(args.roomId);
+    if (!room) throw new Error("Room not found");
+    if (room.hostId !== args.hostId) throw new Error("Only room host can cancel");
+
+    await ctx.db.patch(args.roomId, { status: "abandoned" });
+
+    const auction = await ctx.db
+      .query("auctions")
+      .withIndex("by_room", (q) => q.eq("roomId", args.roomId))
+      .first();
+
+    if (auction) {
+      await ctx.db.patch(auction._id, { status: "completed" });
+    }
+
+    return { success: true };
   },
 });

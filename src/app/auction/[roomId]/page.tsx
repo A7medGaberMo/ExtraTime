@@ -8,10 +8,11 @@ import { Id } from "../../../../convex/_generated/dataModel";
 import { PlayerCard } from "@/components/shared/player-card";
 import { AuctionTimer } from "@/components/shared/auction-timer";
 import { BidSlider } from "@/components/shared/bid-slider";
+import { TacticalPitch } from "@/components/shared/tactical-pitch";
 import type { PlayerCardData } from "@/types/player";
 import {
   Wallet, Loader2, ArrowRight, X, Trophy, Shield, Eye, Zap,
-  Swords, Crown, ChevronRight, Sparkles, Copy, Check,
+  Swords, Crown, ChevronRight, Sparkles, Copy, Check, LayoutGrid, ListFilter
 } from "lucide-react";
 
 /* ── Random football-themed name generator ────────────────────────────── */
@@ -49,6 +50,17 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   const placeBid = useMutation(api.auctions.mutations.placeBid);
   const pass = useMutation(api.auctions.mutations.pass);
+  const cancelRoom = useMutation(api.rooms.mutations.cancel);
+
+  const handleCancelRoom = useCallback(async () => {
+    if (!guestId || !roomId) return;
+    try {
+      await cancelRoom({ roomId: roomId as Id<"rooms">, hostId: guestId });
+      router.push("/");
+    } catch (e: any) {
+      alert(e.message || "Could not cancel room");
+    }
+  }, [cancelRoom, guestId, roomId, router]);
 
   const [bidAmount, setBidAmount] = useState<number>(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -248,7 +260,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
         {/* OVERLAY: waiting for opponent */}
         {auction.status === "pending" && (
-          <div className="absolute inset-0 z-50 glass-card rounded-2xl flex flex-col items-center justify-center gap-5 animate-fade-in">
+          <div className="absolute inset-0 z-50 glass-card rounded-2xl flex flex-col items-center justify-center gap-5 animate-fade-in p-6">
             <div className="relative w-20 h-20">
               <div className="absolute inset-0 rounded-full border-2 border-lime/20 border-t-lime animate-spin" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -261,11 +273,19 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             </div>
             <button
               onClick={copyCode}
-              className="flex items-center gap-2 px-5 py-3 rounded-xl bg-card border border-lime/30 hover:border-lime transition-all active:scale-95"
+              className="flex items-center gap-2 px-5 py-3 rounded-xl bg-card border border-lime/30 hover:border-lime transition-all active:scale-95 shadow-md shadow-lime/5"
             >
               <span className="font-stats text-2xl tracking-[0.3em] text-lime">{room.code}</span>
               {codeCopied ? <Check className="w-4 h-4 text-lime" /> : <Copy className="w-4 h-4 text-steel" />}
             </button>
+            {room.hostId === guestId && (
+              <button
+                onClick={handleCancelRoom}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 font-bold text-xs uppercase tracking-wider border border-rose-500/20 active:scale-95 transition-all"
+              >
+                <X className="w-4 h-4" /> Cancel Room
+              </button>
+            )}
           </div>
         )}
 
@@ -470,6 +490,14 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           </div>
         </div>
       </div>
+
+      {/* ── BROADCAST TACTICAL PITCH ─────────────────────────────────── */}
+      <TacticalPitch
+        formation={auction.formation || "4-3-3"}
+        matchSize={(auction.matchSize as 5 | 11) || 11}
+        squad={squad}
+        title="Live Tactical Squad"
+      />
 
       {/* ── BOTTOM: Opponent draft ──────────────────────────────────────── */}
       <div className="bg-card border border-border rounded-2xl p-4">
