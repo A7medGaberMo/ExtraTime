@@ -1,16 +1,32 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Sora, Inter, Rajdhani } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { MobileNav } from '@/components/layout/mobile-nav';
 
+const sora = Sora({ subsets: ['latin'], variable: '--font-sora' });
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const rajdhani = Rajdhani({ 
+  weight: ['400', '500', '600', '700'], 
+  subsets: ['latin'], 
+  variable: '--font-rajdhani' 
+});
 
 export const metadata: Metadata = {
-  title: 'ExtraTime | Football Gaming Platform',
-  description: 'Draft, Trivia, and Predictions for football fans',
+  title: 'ExtraTime | Live Multiplayer Football Auction & Draft Game',
+  description: 'Draft legendary football icons in real-time escalating auctions (Hidden Bid). Complete squads with 11P and 5P futsal formations, tactical Scout & Spy perks, and underdog budget bonuses!',
+  icons: {
+    icon: '/ExtraTimeLogo.png',
+    shortcut: '/ExtraTimeLogo.png',
+    apple: '/ExtraTimeLogo.png',
+  },
+  openGraph: {
+    title: 'ExtraTime | Live Multiplayer Football Auction Game',
+    description: 'Draft legendary icons in real-time auctions with live turn timers, tactical perks, and 11P/5P pitch formations.',
+    images: ['/ExtraTimeLogo.png'],
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} font-sans antialiased bg-background text-text-primary min-h-screen flex flex-col`}>
+      <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col selection:bg-lime selection:text-background`}>
         <ConvexClientProvider>
           <Header />
           <main className="flex-1 container mx-auto px-4 py-8 animate-fade-in">

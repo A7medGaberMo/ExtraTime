@@ -1,0 +1,297 @@
+{
+  "club": {
+    "apiId": 41,
+    "name": "Southampton",
+    "logo": "https://media.api-sports.io/football/teams/41.png",
+    "league": "Premier League",
+    "leagueId": 39
+  },
+  "players": [
+    {
+      "apiId": 19406,
+      "name": "G. Long",
+      "position": "GK",
+      "club": "Southampton",
+      "nation": "Ireland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19406.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 126530,
+      "name": "Daniel Peretz",
+      "position": "GK",
+      "club": "Southampton",
+      "nation": "Israel",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/126530.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 19719,
+      "name": "J. Bree",
+      "position": "CB",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19719.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 557522,
+      "name": "T. Dobson-Ventura",
+      "position": "CB",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/557522.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 144729,
+      "name": "T. Harwood-Bellis",
+      "position": "CB",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/144729.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 19587,
+      "name": "R. Manning",
+      "position": "CB",
+      "club": "Southampton",
+      "nation": "Republic of Ireland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19587.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 334353,
+      "name": "J. Quarshie",
+      "position": "CB",
+      "club": "Southampton",
+      "nation": "Germany",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/334353.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 18940,
+      "name": "J. Stephens",
+      "position": "CB",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18940.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 180919,
+      "name": "Welington",
+      "position": "CB",
+      "club": "Southampton",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/180919.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 19248,
+      "name": "N. Wood-Gordon",
+      "position": "CB",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19248.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 231039,
+      "name": "F. Azaz",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "Ireland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/231039.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 304318,
+      "name": "Cameron Bragg",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304318.png",
+      "kitNumber": 48
+    },
+    {
+      "apiId": 284356,
+      "name": "S. Charles",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "Northern Ireland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284356.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 19733,
+      "name": "F. Downes",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19733.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 283278,
+      "name": "T. Fellows",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/283278.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 282060,
+      "name": "C. Jander",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "Germany",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/282060.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 351013,
+      "name": "K. Matsuki",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "Japan",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/351013.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 322305,
+      "name": "J. O&apos;Brien-Whitmarsh",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "Ireland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/322305.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 401241,
+      "name": "M. Sesay",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/401241.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 557372,
+      "name": "B. Williams",
+      "position": "CM",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/557372.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 137302,
+      "name": "C. Archer",
+      "position": "ST",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/137302.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 278085,
+      "name": "S. Edozie",
+      "position": "ST",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278085.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 2001,
+      "name": "C. Larin",
+      "position": "ST",
+      "club": "Southampton",
+      "nation": "Canada",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2001.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 546536,
+      "name": "N. Oyekunle",
+      "position": "ST",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/546536.png",
+      "kitNumber": 49
+    },
+    {
+      "apiId": 380691,
+      "name": "Jay Robinson",
+      "position": "ST",
+      "club": "Southampton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/380691.png",
+      "kitNumber": 46
+    },
+    {
+      "apiId": 283323,
+      "name": "Léo Scienza",
+      "position": "ST",
+      "club": "Southampton",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/283323.png",
+      "kitNumber": 13
+    }
+  ]
+}

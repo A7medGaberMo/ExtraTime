@@ -8,8 +8,9 @@ export const getByCode = query({
   args: { code: v.string() },
   handler: async (ctx, args) => {
     const code = args.code.trim().toUpperCase();
-    return await ctx.db.query("rooms")
-      .filter(q => q.eq(q.field("code"), code))
+    return await ctx.db
+      .query("rooms")
+      .withIndex("by_code", (q) => q.eq("code", code))
       .first();
   },
 });

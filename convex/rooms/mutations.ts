@@ -111,6 +111,8 @@ export const join = mutation({
   handler: async (ctx, args) => {
     const room = await ctx.db.get(args.roomId);
     if (!room) throw new Error("Room not found");
+    const guest = await ctx.db.get(args.guestId);
+    if (!guest) throw new Error("Guest not found");
     if (room.guestId) throw new Error("Room is full");
     if (room.status !== "waiting") throw new Error("Room is not open");
     if (room.hostId === args.guestId) throw new Error("You cannot join your own room");
@@ -121,12 +123,13 @@ export const join = mutation({
       .first();
     if (!auction) throw new Error("Auction not found for room");
 
+    const perks = autoPerks();
+    const activeTurnUserId = Math.random() < 0.5 ? auction.host.userId : args.guestId;
+    const now = Date.now();
     await ctx.db.patch(args.roomId, {
       guestId: args.guestId,
       status: "in_progress",
     });
-
-    const perks = autoPerks();
     await ctx.db.patch(auction._id, {
       status: "active",
       host: { ...auction.host, perk: perks.host },
@@ -139,10 +142,13 @@ export const join = mutation({
       },
       currentBidding: {
         ...auction.currentBidding,
-        activeTurnUserId: Math.random() < 0.5 ? auction.host.userId : args.guestId,
-        turnExpiresAt: Date.now() + 15000,
+        highestBid: 0,
+        highestBidderId: undefined,
+        activeTurnUserId,
+        turnExpiresAt: now + 15000,
       },
     });
+    return { roomId: args.roomId, activeTurnUserId };
   },
 });
 
@@ -182,8 +188,9 @@ export const findOrCreatePublicMatch = mutation({
     }
 
     if (match && matchAuction) {
-      await ctx.db.patch(match._id, { guestId: args.userId, status: "in_progress" });
       const perks = autoPerks();
+      const activeTurnUserId = Math.random() < 0.5 ? matchAuction.host.userId : args.userId;
+      await ctx.db.patch(match._id, { guestId: args.userId, status: "in_progress" });
       await ctx.db.patch(matchAuction._id, {
         status: "active",
         host: { ...matchAuction.host, perk: perks.host },
@@ -196,7 +203,9 @@ export const findOrCreatePublicMatch = mutation({
         },
         currentBidding: {
           ...matchAuction.currentBidding,
-          activeTurnUserId: Math.random() < 0.5 ? matchAuction.host.userId : args.userId,
+          highestBid: 0,
+          highestBidderId: undefined,
+          activeTurnUserId,
           turnExpiresAt: now + 15000,
         },
       });

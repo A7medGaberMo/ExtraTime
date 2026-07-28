@@ -1,0 +1,308 @@
+{
+  "club": {
+    "apiId": 34,
+    "name": "Newcastle",
+    "logo": "https://media.api-sports.io/football/teams/34.png",
+    "league": "Premier League",
+    "leagueId": 39
+  },
+  "players": [
+    {
+      "apiId": 365988,
+      "name": "Aidan Harris",
+      "position": "GK",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/365988.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 329640,
+      "name": "E. Jaouen",
+      "position": "GK",
+      "club": "Newcastle",
+      "nation": "France",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/329640.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 18911,
+      "name": "N. Pope",
+      "position": "GK",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18911.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 20355,
+      "name": "A. Ramsdale",
+      "position": "GK",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20355.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 284374,
+      "name": "Max Thompson",
+      "position": "GK",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284374.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 38734,
+      "name": "S. Botman",
+      "position": "CB",
+      "club": "Newcastle",
+      "nation": "Netherlands",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/38734.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 18961,
+      "name": "D. Burn",
+      "position": "CB",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18961.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 284492,
+      "name": "L. Hall",
+      "position": "CB",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284492.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 158694,
+      "name": "T. Livramento",
+      "position": "CB",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158694.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 318056,
+      "name": "A. Murphy",
+      "position": "CB",
+      "club": "Newcastle",
+      "nation": "Republic of Ireland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/318056.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 337934,
+      "name": "L. Shahar",
+      "position": "CB",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/337934.png",
+      "kitNumber": 51
+    },
+    {
+      "apiId": 163189,
+      "name": "M. Thiaw",
+      "position": "CB",
+      "club": "Newcastle",
+      "nation": "Germany",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/163189.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 10135,
+      "name": "Bruno Guimarães",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10135.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 723,
+      "name": "Joelinton",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/723.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 328105,
+      "name": "L. Miley",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/328105.png",
+      "kitNumber": 67
+    },
+    {
+      "apiId": 19163,
+      "name": "J. Murphy",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19163.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 394165,
+      "name": "S. Neave",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/394165.png",
+      "kitNumber": 62
+    },
+    {
+      "apiId": 423714,
+      "name": "Park Seung-Soo",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "South Korea",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/423714.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 19192,
+      "name": "J. Ramsey",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19192.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 469321,
+      "name": "Sean Steur",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "Netherlands",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/469321.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 387643,
+      "name": "B. Touré",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "Ivory Coast",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/387643.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 1463,
+      "name": "J. Willock",
+      "position": "CM",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1463.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 18778,
+      "name": "H. Barnes",
+      "position": "ST",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18778.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 153430,
+      "name": "A. Elanga",
+      "position": "ST",
+      "club": "Newcastle",
+      "nation": "Sweden",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/153430.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 315237,
+      "name": "W. Osula",
+      "position": "ST",
+      "club": "Newcastle",
+      "nation": "Denmark",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/315237.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 20649,
+      "name": "Y. Wissa",
+      "position": "ST",
+      "club": "Newcastle",
+      "nation": "DR Congo",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20649.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 158054,
+      "name": "N. Woltemade",
+      "position": "ST",
+      "club": "Newcastle",
+      "nation": "Germany",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158054.png",
+      "kitNumber": 27
+    }
+  ]
+}

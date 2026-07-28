@@ -1,0 +1,275 @@
+{
+  "club": {
+    "apiId": 51,
+    "name": "Brighton",
+    "logo": "https://media.api-sports.io/football/teams/51.png",
+    "league": "Premier League",
+    "leagueId": 39
+  },
+  "players": [
+    {
+      "apiId": 18960,
+      "name": "J. Steele",
+      "position": "GK",
+      "club": "Brighton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18960.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 129058,
+      "name": "B. Verbruggen",
+      "position": "GK",
+      "club": "Brighton",
+      "nation": "Netherlands",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129058.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 22160,
+      "name": "O. Boscagli",
+      "position": "CB",
+      "club": "Brighton",
+      "nation": "France",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22160.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 204037,
+      "name": "Costinha",
+      "position": "CB",
+      "club": "Brighton",
+      "nation": "Portugal",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/204037.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 162007,
+      "name": "M. De Cuyper",
+      "position": "CB",
+      "club": "Brighton",
+      "nation": "Belgium",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162007.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 7600,
+      "name": "Igor",
+      "position": "CB",
+      "club": "Brighton",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7600.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 1361,
+      "name": "F. Kadıoğlu",
+      "position": "CB",
+      "club": "Brighton",
+      "nation": "Türkiye",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1361.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 64003,
+      "name": "P. Struijk",
+      "position": "CB",
+      "club": "Brighton",
+      "nation": "Netherlands",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64003.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 7090,
+      "name": "M. Svoboda",
+      "position": "CB",
+      "club": "Brighton",
+      "nation": "Czech Republic",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7090.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 387521,
+      "name": "L. Vušković",
+      "position": "CB",
+      "club": "Brighton",
+      "nation": "Croatia",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/387521.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 265820,
+      "name": "Y. Ayari",
+      "position": "CM",
+      "club": "Brighton",
+      "nation": "Sweden",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/265820.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 356041,
+      "name": "C. Baleba",
+      "position": "CM",
+      "club": "Brighton",
+      "nation": "Cameroon",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/356041.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 278370,
+      "name": "D. Gómez",
+      "position": "CM",
+      "club": "Brighton",
+      "nation": "Paraguay",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278370.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 18970,
+      "name": "P. Groß",
+      "position": "CM",
+      "club": "Brighton",
+      "nation": "Germany",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18970.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 305730,
+      "name": "J. Hinshelwood",
+      "position": "CM",
+      "club": "Brighton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/305730.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 392610,
+      "name": "H. Howell",
+      "position": "CM",
+      "club": "Brighton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/392610.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 19030,
+      "name": "M. O&apos;Riley",
+      "position": "CM",
+      "club": "Brighton",
+      "nation": "Denmark",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19030.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 92993,
+      "name": "M. Wieffer",
+      "position": "CM",
+      "club": "Brighton",
+      "nation": "Netherlands",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/92993.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 392482,
+      "name": "C. Kostoulas",
+      "position": "ST",
+      "club": "Brighton",
+      "nation": "Greece",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/392482.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 383685,
+      "name": "Y. Minteh",
+      "position": "ST",
+      "club": "Brighton",
+      "nation": "Gambia",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/383685.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 106835,
+      "name": "K. Mitoma",
+      "position": "ST",
+      "club": "Brighton",
+      "nation": "Japan",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/106835.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 90590,
+      "name": "G. Rutter",
+      "position": "ST",
+      "club": "Brighton",
+      "nation": "France",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/90590.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 1469,
+      "name": "D. Welbeck",
+      "position": "ST",
+      "club": "Brighton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1469.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 524411,
+      "name": "Z. Yohanna",
+      "position": "ST",
+      "club": "Brighton",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/524411.png",
+      "kitNumber": 36
+    }
+  ]
+}

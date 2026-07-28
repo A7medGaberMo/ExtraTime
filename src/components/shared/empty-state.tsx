@@ -36,17 +36,17 @@ export function EmptyState({ icon, title, description, action, className }: Empt
         className,
       )}
     >
-      <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/5 text-slate-500">
+      <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/5 text-steel">
         {icon}
       </div>
-      <h3 className="mb-2 text-lg font-semibold text-white">{title}</h3>
-      <p className="mb-6 max-w-sm text-sm leading-relaxed text-slate-400">{description}</p>
+      <h3 className="mb-2 text-lg font-bold text-white">{title}</h3>
+      <p className="mb-6 max-w-sm text-sm leading-relaxed text-steel">{description}</p>
       {action && (
         <div>
           {isActionObject(action) ? (
             <Link
               href={action.href}
-              className="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all hover:bg-emerald-600 hover:shadow-emerald-500/30"
+              className="inline-flex items-center gap-2 rounded-xl bg-lime px-6 py-3 text-sm font-black text-background shadow-lg shadow-lime/20 transition-all hover:bg-vivid hover:shadow-lime/30 active:scale-95"
             >
               {action.label}
             </Link>

@@ -1,0 +1,253 @@
+{
+  "club": {
+    "apiId": 36,
+    "name": "Fulham",
+    "logo": "https://media.api-sports.io/football/teams/36.png",
+    "league": "Premier League",
+    "leagueId": 39
+  },
+  "players": [
+    {
+      "apiId": 21566,
+      "name": "B. Lecomte",
+      "position": "GK",
+      "club": "Fulham",
+      "nation": "France",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21566.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 1438,
+      "name": "B. Leno",
+      "position": "GK",
+      "club": "Fulham",
+      "nation": "Germany",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1438.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 384981,
+      "name": "S. Amissah",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/384981.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 2729,
+      "name": "J. Andersen",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "Denmark",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2729.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 152967,
+      "name": "C. Bassey",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "Nigeria",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/152967.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 2920,
+      "name": "T. Castagne",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "Belgium",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2920.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 131,
+      "name": "Jorge Cuenca",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "Spain",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/131.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 18814,
+      "name": "I. Diop",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "France",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18814.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 19549,
+      "name": "A. Robinson",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "USA",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19549.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 657,
+      "name": "K. Tete",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "Netherlands",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/657.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 1934,
+      "name": "S. Berge",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "Norway",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1934.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 278133,
+      "name": "Oscar Bobb",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "Norway",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278133.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 19025,
+      "name": "T. Cairney",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "Scotland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19025.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 1455,
+      "name": "A. Iwobi",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "Nigeria",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1455.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 389315,
+      "name": "Joshua King",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/389315.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 2823,
+      "name": "S. Lukić",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "Serbia",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2823.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 19480,
+      "name": "H. Reed",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19480.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 19032,
+      "name": "R. Sessegnon",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19032.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 1161,
+      "name": "E. Smith Rowe",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1161.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 237819,
+      "name": "Kevin",
+      "position": "ST",
+      "club": "Fulham",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/237819.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 436443,
+      "name": "J. Kusi-Asare",
+      "position": "ST",
+      "club": "Fulham",
+      "nation": "Sweden",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/436443.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 195106,
+      "name": "Rodrigo Muniz",
+      "position": "ST",
+      "club": "Fulham",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195106.png",
+      "kitNumber": 9
+    }
+  ]
+}

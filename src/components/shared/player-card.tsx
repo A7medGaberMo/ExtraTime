@@ -6,25 +6,25 @@ import { cn } from '@/lib/utils';
 import type { PlayerCardData } from '@/types/player';
 import { TierBadge } from './tier-badge';
 import { PlayerSilhouette } from './player-silhouette';
-import { Crown, Sparkles, ShieldAlert, Shirt } from 'lucide-react';
+import { Crown, Sparkles } from 'lucide-react';
 
 const playerCardVariants = cva(
   'group relative flex flex-col items-center overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl select-none',
   {
     variants: {
       tier: {
-        ICON: 'border-2 border-amber-400/80 bg-gradient-to-b from-amber-300/20 via-amber-900/30 to-[#181105] shadow-[0_0_25px_rgba(245,158,11,0.25)] hover:border-amber-300 hover:shadow-[0_0_35px_rgba(245,158,11,0.45)]',
+        ICON: 'border-2 border-lime bg-gradient-to-b from-lime/20 via-deep-olive/30 to-background shadow-[0_0_25px_rgba(149,232,16,0.15)] hover:border-vivid hover:shadow-[0_0_35px_rgba(149,232,16,0.3)]',
         MASTER:
-          'border border-purple-500/50 bg-gradient-to-b from-purple-500/20 via-purple-950/40 to-[#0e0719] hover:border-purple-400 hover:shadow-purple-500/30 shadow-[0_0_15px_rgba(168,85,247,0.15)]',
+          'border border-purple-500/50 bg-gradient-to-b from-purple-500/10 via-purple-950/20 to-card hover:border-purple-400 hover:shadow-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.1)]',
         ELITE_PLUS:
-          'border border-blue-500/50 bg-gradient-to-b from-blue-500/20 via-blue-950/40 to-[#070e1e] hover:border-blue-400 hover:shadow-blue-500/30 shadow-[0_0_15px_rgba(59,130,246,0.15)]',
+          'border border-blue-500/50 bg-gradient-to-b from-blue-500/10 via-blue-950/20 to-card hover:border-blue-400 hover:shadow-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]',
         ELITE:
-          'border border-cyan-500/40 bg-gradient-to-b from-cyan-500/15 via-slate-900 to-[#06151a] hover:border-cyan-400 hover:shadow-cyan-500/20',
-        GOLD: 'border border-amber-500/40 bg-gradient-to-b from-amber-500/15 via-slate-900 to-[#181408] hover:border-amber-400 hover:shadow-amber-500/20',
+          'border border-cyan-500/40 bg-gradient-to-b from-cyan-500/10 via-slate-900 to-card hover:border-cyan-400 hover:shadow-cyan-500/10',
+        GOLD: 'border border-amber-500/40 bg-gradient-to-b from-amber-500/10 via-slate-900 to-card hover:border-amber-400 hover:shadow-amber-500/10',
         SILVER:
-          'border border-slate-400/40 bg-gradient-to-b from-slate-400/15 via-slate-900 to-[#0f141d] hover:border-slate-300 hover:shadow-slate-400/20',
+          'border border-slate-400/40 bg-gradient-to-b from-slate-400/10 via-slate-900 to-card hover:border-slate-300 hover:shadow-slate-400/10',
         BRONZE:
-          'border border-orange-700/40 bg-gradient-to-b from-orange-700/15 via-slate-900 to-[#170e0a] hover:border-orange-600 hover:shadow-orange-700/20',
+          'border border-orange-700/40 bg-gradient-to-b from-orange-700/10 via-slate-900 to-card hover:border-orange-600 hover:shadow-orange-700/10',
       },
       size: {
         sm: 'w-36 p-3 rounded-xl min-h-[190px]',
@@ -70,25 +70,25 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
       <div
         className={cn(
           playerCardVariants({ tier: 'ICON', size: cardSize }),
-          'relative bg-[#120d04] ring-1 ring-amber-400/40',
+          'relative bg-card ring-1 ring-lime/40',
           className,
         )}
         {...props}
       >
         {/* Shimmer light effect line overlay */}
-        <div className="absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-amber-300/10 to-transparent group-hover:animate-shine" />
+        <div className="absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-lime/10 to-transparent group-hover:animate-shine" />
 
-        {/* Golden top filigree / crown banner */}
-        <div className="w-full flex items-center justify-between border-b border-amber-400/30 pb-2 mb-2 z-10">
-          <div className="flex items-center gap-1 bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 px-2 py-0.5 rounded-md font-extrabold text-[10px] tracking-wider shadow-sm">
-            <Crown className="w-3 h-3 text-slate-950 fill-slate-950" />
+        {/* Top banner */}
+        <div className="w-full flex items-center justify-between border-b border-lime/30 pb-2 mb-2 z-10">
+          <div className="flex items-center gap-1 bg-gradient-to-r from-lime to-vivid text-background px-2 py-0.5 rounded-md font-black text-[10px] tracking-wider shadow-sm">
+            <Crown className="w-3 h-3 text-background fill-background" />
             <span>ICON</span>
           </div>
 
           {/* Kit Number badge for ICON */}
           {player.kitNumber !== undefined && player.kitNumber !== null && (
-            <div className="flex items-center gap-0.5 px-2 py-0.5 rounded-md bg-amber-400/20 border border-amber-400/50 text-amber-300 font-mono font-extrabold text-xs shadow-inner">
-              <span className="text-[9px] text-amber-400/70 font-sans">#</span>
+            <div className="flex items-center gap-0.5 px-2 py-0.5 rounded-md bg-lime/20 border border-lime/50 text-lime font-mono font-extrabold text-xs shadow-inner">
+              <span className="text-[9px] text-lime/70 font-sans">#</span>
               <span>{player.kitNumber}</span>
             </div>
           )}
@@ -96,7 +96,7 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
 
         {/* Position badge */}
         <div className="absolute top-10 left-3 z-10">
-          <span className="inline-flex max-w-[4.75rem] items-center truncate rounded-md bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[10px] font-black text-amber-300 backdrop-blur-md">
+          <span className="inline-flex items-center rounded-md bg-lime/20 border border-lime/40 px-2 py-0.5 text-[10px] font-black tracking-widest text-lime backdrop-blur-md">
             {player.position}
           </span>
         </div>
@@ -105,7 +105,7 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
         <div className="relative my-2 flex items-center justify-center">
           <div
             className={cn(
-              'relative flex items-center justify-center overflow-hidden rounded-full border-2 border-amber-400/60 bg-gradient-to-b from-amber-500/20 via-amber-900/40 to-slate-950 shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-transform duration-300 group-hover:scale-105',
+              'relative flex items-center justify-center overflow-hidden rounded-full border-2 border-lime/60 bg-gradient-to-b from-lime/20 via-deep-olive/40 to-card shadow-[0_0_20px_rgba(149,232,16,0.2)] transition-transform duration-300 group-hover:scale-105',
               cardSize === 'sm' && 'h-20 w-20',
               cardSize === 'md' && 'h-24 w-24',
               cardSize === 'lg' && 'h-28 w-28',
@@ -120,11 +120,11 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
               />
             ) : (
               /* Shadow silhouette as fallback */
-              <div className="flex items-center justify-center w-full h-full bg-gradient-to-b from-amber-500/10 to-transparent">
+              <div className="flex items-center justify-center w-full h-full bg-gradient-to-b from-lime/10 to-transparent">
                 <PlayerSilhouette
                   variant={silhouetteVariant}
                   className={cn(
-                    'text-amber-300/80 drop-shadow-[0_4px_10px_rgba(245,158,11,0.5)] transition-all duration-300 group-hover:opacity-100',
+                    'text-lime/80 drop-shadow-[0_4px_10px_rgba(149,232,16,0.3)] transition-all duration-300 group-hover:opacity-100',
                     cardSize === 'sm' && 'h-16 w-16 opacity-75',
                     cardSize === 'md' && 'h-20 w-20 opacity-80',
                     cardSize === 'lg' && 'h-24 w-24 opacity-85',
@@ -138,7 +138,7 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
         {/* Player Name */}
         <h3
           className={cn(
-            'mb-1 text-center font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-300 to-amber-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] z-10 max-w-full truncate px-1',
+            'mb-1 text-center font-extrabold tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] z-10 max-w-full truncate px-1',
             cardSize === 'sm' && 'text-xs',
             cardSize === 'md' && 'text-sm',
             cardSize === 'lg' && 'text-base',
@@ -148,16 +148,16 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
         </h3>
 
         {/* Club & Nation info */}
-        <div className="flex items-center justify-center gap-1.5 text-[11px] text-amber-200/70 z-10 w-full px-1">
+        <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#BDBDBF] z-10 w-full px-1">
           <span className="truncate max-w-[80px] font-medium">{player.club}</span>
-          <span className="text-amber-400/50">•</span>
+          <span className="text-lime/50">•</span>
           <span className="truncate max-w-[65px] font-medium">{player.nation}</span>
         </div>
 
         {/* Legend Ribbon bottom */}
         <div className="mt-auto pt-2 z-10 w-full flex items-center justify-center">
-          <div className="flex items-center gap-1 text-[9px] font-black tracking-widest text-amber-400 uppercase bg-amber-500/10 border border-amber-400/30 rounded-full px-2.5 py-0.5">
-            <Sparkles className="w-2.5 h-2.5 text-amber-400" />
+          <div className="flex items-center gap-1 text-[9px] font-black tracking-widest text-lime uppercase bg-lime/10 border border-lime/30 rounded-full px-2.5 py-0.5">
+            <Sparkles className="w-2.5 h-2.5 text-lime" />
             <span>LEGENDARY</span>
           </div>
         </div>
@@ -170,7 +170,7 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
   // ---------------------------------------------------------------------------
   return (
     <div
-      className={cn(playerCardVariants({ tier: player.tier, size: cardSize }), 'bg-[#0b101d]', className)}
+      className={cn(playerCardVariants({ tier: player.tier, size: cardSize }), 'bg-card border-border', className)}
       {...props}
     >
       {/* Tier badge top right */}
@@ -180,12 +180,12 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
 
       {/* Position badge top left */}
       <div className="absolute top-2.5 left-2.5 z-10 flex items-center gap-1.5">
-        <span className="inline-flex max-w-[4.75rem] items-center truncate rounded-md bg-white/10 px-2 py-0.5 text-[10px] font-bold text-white/80 backdrop-blur-sm border border-white/10">
+        <span className="inline-flex items-center rounded-md bg-white/10 px-2 py-0.5 text-[10px] font-bold tracking-wider text-white/80 backdrop-blur-sm border border-white/10">
           {player.position}
         </span>
       </div>
 
-      {/* Kit Number display top right below tier or alongside */}
+      {/* Kit Number display top left below position */}
       {player.kitNumber !== undefined && player.kitNumber !== null && (
         <div className="absolute top-9 left-2.5 z-10">
           <span className="inline-flex items-center rounded-md bg-slate-900/80 px-1.5 py-0.5 text-[10px] font-mono font-bold text-slate-300 border border-slate-700/60 shadow-sm">
@@ -239,7 +239,7 @@ export function PlayerCard({ className, player, size = 'md', ...props }: PlayerC
       </h3>
 
       {/* Club & Nation */}
-      <div className="flex items-center gap-1.5 text-xs text-slate-400 max-w-full truncate px-1 mt-auto">
+      <div className="flex items-center gap-1.5 text-xs text-steel max-w-full truncate px-1 mt-auto">
         <span className="max-w-[75px] truncate">{player.club}</span>
         <span className="text-slate-600">•</span>
         <span className="max-w-[60px] truncate">{player.nation}</span>
@@ -253,17 +253,16 @@ export function PlayerCardSkeleton({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' 
   return (
     <div
       className={cn(
-        'flex flex-col items-center rounded-2xl border border-white/5 bg-[#0b101d] p-5 animate-pulse',
+        'flex flex-col items-center rounded-2xl border border-white/5 bg-card p-5 animate-pulse relative',
         size === 'sm' && 'w-36 p-3 min-h-[190px]',
         size === 'md' && 'w-48 p-4 min-h-[250px]',
         size === 'lg' && 'w-56 p-5 min-h-[290px]',
       )}
     >
       <div className="absolute top-2.5 right-2.5 h-5 w-14 rounded-full bg-white/5" />
-      <div className="mb-3 mt-4 h-24 w-24 rounded-full bg-white/5" />
-      <div className="mb-2 h-4 w-24 rounded bg-white/5" />
-      <div className="h-3 w-28 rounded bg-white/5" />
+      <div className="mb-3 mt-4 h-24 w-24 rounded-full bg-white/5 animate-pulse" />
+      <div className="mb-2 h-4 w-24 rounded bg-white/5 animate-pulse" />
+      <div className="h-3 w-28 rounded bg-white/5 animate-pulse" />
     </div>
   );
 }
-

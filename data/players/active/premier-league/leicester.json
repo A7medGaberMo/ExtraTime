@@ -1,0 +1,275 @@
+{
+  "club": {
+    "apiId": 46,
+    "name": "Leicester",
+    "logo": "https://media.api-sports.io/football/teams/46.png",
+    "league": "Premier League",
+    "leagueId": 39
+  },
+  "players": [
+    {
+      "apiId": 18858,
+      "name": "A. Begović",
+      "position": "GK",
+      "club": "Leicester",
+      "nation": "Bosnia and Herzegovina",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18858.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 288137,
+      "name": "Harry French",
+      "position": "GK",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/288137.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 152970,
+      "name": "J. Stolarczyk",
+      "position": "GK",
+      "club": "Leicester",
+      "nation": "Poland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/152970.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 179996,
+      "name": "Fran Vieites",
+      "position": "GK",
+      "club": "Leicester",
+      "nation": "Spain",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/179996.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 417310,
+      "name": "O. Aluko",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/417310.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 128338,
+      "name": "W. Coulibaly",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "France",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/128338.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 8694,
+      "name": "W. Faes",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "Belgium",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8694.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 557468,
+      "name": "K. Gray",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/557468.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 158710,
+      "name": "V. Kristiansen",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "Denmark",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158710.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 278118,
+      "name": "B. Nelson",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278118.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 30427,
+      "name": "C. Okoli",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "Italy",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30427.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 437569,
+      "name": "L. Page",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437569.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 20079,
+      "name": "H. Souttar",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "Australia",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20079.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 152969,
+      "name": "L. Thomas",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/152969.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 305732,
+      "name": "T. Wilson-Brown",
+      "position": "CB",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/305732.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 305733,
+      "name": "W. Alves",
+      "position": "CM",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/305733.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 289624,
+      "name": "S. Braybrooke",
+      "position": "CM",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/289624.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 18779,
+      "name": "H. Choudhury",
+      "position": "CM",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18779.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 19004,
+      "name": "B. De Cordova-Reid",
+      "position": "CM",
+      "club": "Leicester",
+      "nation": "Jamaica",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19004.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 180,
+      "name": "O. Skipp",
+      "position": "CM",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/180.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 434183,
+      "name": "J. Evans",
+      "position": "ST",
+      "club": "Leicester",
+      "nation": "Northern Ireland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/434183.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 303467,
+      "name": "A. Fatawu",
+      "position": "ST",
+      "club": "Leicester",
+      "nation": "Ghana",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/303467.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 879,
+      "name": "S. Mavididi",
+      "position": "ST",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/879.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 284403,
+      "name": "Silko Amari Otieno Thomas",
+      "position": "ST",
+      "club": "Leicester",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284403.png",
+      "kitNumber": 39
+    }
+  ]
+}

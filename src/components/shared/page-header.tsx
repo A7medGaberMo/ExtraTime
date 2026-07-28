@@ -27,14 +27,14 @@ export function PageHeader({ title, subtitle, backUrl, action, className }: Page
         {backUrl && (
           <Link
             href={backUrl}
-            className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-300 transition-colors mb-2"
+            className="inline-flex items-center gap-1.5 text-sm text-steel hover:text-white transition-colors mb-2"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Back
           </Link>
         )}
-        <h1 className="text-2xl font-bold tracking-tight text-white md:text-3xl">{title}</h1>
-        {subtitle && <p className="text-sm text-slate-400 md:text-base">{subtitle}</p>}
+        <h1 className="text-2xl font-black tracking-tight text-white md:text-3xl">{title}</h1>
+        {subtitle && <p className="text-sm text-steel md:text-base">{subtitle}</p>}
       </div>
       {action && <div className="flex-shrink-0">{action}</div>}
     </div>

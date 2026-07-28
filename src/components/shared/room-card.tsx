@@ -16,13 +16,13 @@ export function RoomCard({ room, className, ...props }: RoomCardProps) {
   return (
     <div
       className={cn(
-        'group relative overflow-hidden rounded-2xl border border-white/5 bg-[#121829] p-5 transition-all duration-300 hover:border-emerald-500/30 hover:bg-[#1a2035] hover:shadow-lg hover:shadow-emerald-500/5 cursor-pointer',
+        'group relative overflow-hidden rounded-2xl border border-border bg-card p-5 transition-all duration-300 hover:border-lime/30 hover:bg-slate-900 hover:shadow-lg hover:shadow-lime/5 cursor-pointer',
         className,
       )}
       {...props}
     >
       {/* Subtle gradient glow on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-transparent opacity-0 transition-opacity group-hover:opacity-5" />
+      <div className="absolute inset-0 bg-gradient-to-br from-lime/0 to-transparent opacity-0 transition-opacity group-hover:opacity-5" />
 
       <div className="relative flex items-start justify-between mb-3">
         <div>

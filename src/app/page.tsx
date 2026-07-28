@@ -35,36 +35,42 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50 flex flex-col items-center justify-center p-6 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950">
-      <main className="w-full max-w-4xl flex flex-col items-center gap-10 animate-fade-in">
+    <div className="max-w-4xl mx-auto space-y-12 py-4 md:py-8 animate-fade-in">
+      <main className="w-full flex flex-col items-center gap-12">
         <div className="text-center space-y-4">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-br from-green-400 to-emerald-600 text-transparent bg-clip-text animate-slide-up">
-            ExtraTime
+          <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white animate-slide-up uppercase">
+            Extra<span className="text-transparent bg-clip-text bg-gradient-to-r from-lime to-vivid">Time</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-steel max-w-2xl mx-auto">
             Hidden Bid football drafting with random formations, auto perks, position-fit cards, and fast public matchmaking.
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-6 w-full max-w-lg justify-center">
-          <Link href="/create-room" className="group w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-8 py-4 bg-green-500 hover:bg-green-600 text-slate-950 font-bold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+          <Link 
+            href="/create-room" 
+            className="group w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-8 py-4 bg-lime hover:bg-vivid text-background font-black rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg shadow-lime/10 hover:shadow-lime/20"
+          >
             <PlusCircle className="w-5 h-5" />
             <span>Create Room</span>
           </Link>
-          <Link href="/join-room" className="group w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 border border-slate-700 hover:border-slate-500">
+          <Link 
+            href="/join-room" 
+            className="group w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-8 py-4 bg-transparent hover:bg-white/5 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 border border-white/20 hover:border-white/40"
+          >
             <Users className="w-5 h-5" />
             <span>Join Room</span>
           </Link>
         </div>
 
-        <section className="w-full rounded-2xl border border-amber-500/30 bg-amber-500/10 p-5 flex flex-col lg:flex-row items-center justify-between gap-4">
+        <section className="w-full rounded-2xl border border-lime/30 bg-lime/5 p-5 flex flex-col lg:flex-row items-center justify-between gap-4 shadow-lg shadow-lime/5">
           <div className="flex items-center gap-3 text-center lg:text-left">
-            <div className="p-3 rounded-xl bg-amber-500/20 text-amber-300">
-              <Zap className="w-6 h-6" />
+            <div className="p-3 rounded-xl bg-lime/10 text-lime">
+              <Zap className="w-6 h-6 fill-lime" />
             </div>
             <div>
-              <h2 className="font-black text-white">Public Quick Match</h2>
-              <p className="text-xs text-slate-300">
+              <h2 className="font-black text-white text-lg">Public Quick Match</h2>
+              <p className="text-xs text-steel">
                 {queueSummary && queueSummary.totalWaiting > 0
                   ? `${queueSummary.totalWaiting} public queue${queueSummary.totalWaiting === 1 ? "" : "s"} active now. Pick the same mode to match faster.`
                   : "Match by size and pool. Formation and perks are automatic."}
@@ -72,28 +78,39 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-            <select value={poolMode} onChange={(e) => setPoolMode(e.target.value as PoolMode)} className="rounded-xl border border-slate-700 bg-slate-950 px-3 py-3 text-xs font-bold text-slate-200">
+            <select 
+              value={poolMode} 
+              onChange={(e) => setPoolMode(e.target.value as PoolMode)} 
+              className="rounded-xl border border-border bg-card px-3 py-3 text-xs font-bold text-white focus:outline-none focus:border-lime"
+            >
               <option value="GLOBAL">Global Mix</option>
               <option value="EPL">EPL Only</option>
               <option value="ICONS">Icons Only</option>
             </select>
-            <button onClick={() => quickMatch(11)} disabled={loading} className="px-5 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs rounded-xl disabled:opacity-60">
+            <button 
+              onClick={() => quickMatch(11)} 
+              disabled={loading} 
+              className="px-5 py-3 bg-lime hover:bg-vivid text-background font-black text-xs rounded-xl shadow-lg shadow-lime/10 transition-all active:scale-95 disabled:opacity-60"
+            >
               <span className="inline-flex items-center gap-2">
                 {loading ? "Searching..." : "11P Match"}
                 {waiting11 > 0 && (
-                  <span className="inline-flex items-center gap-1 text-[10px] font-black text-green-950" title={`${waiting11} waiting`}>
-                    <span className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.9)]" />
+                  <span className="inline-flex items-center gap-1 text-[10px] font-black text-background px-1.5 py-0.5 rounded-full bg-lime shadow-[0_0_8px_rgba(149,232,16,0.5)]">
                     {waiting11}
                   </span>
                 )}
               </span>
             </button>
-            <button onClick={() => quickMatch(5)} disabled={loading} className="px-5 py-3 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold text-xs rounded-xl disabled:opacity-60">
+            <button 
+              onClick={() => quickMatch(5)} 
+              disabled={loading} 
+              className="px-5 py-3 bg-transparent hover:bg-white/5 border border-white/20 text-white font-bold text-xs rounded-xl transition-all active:scale-95 disabled:opacity-60"
+            >
               <span className="inline-flex items-center gap-2">
                 5P Match
                 {waiting5 > 0 && (
-                  <span className="inline-flex items-center gap-1 text-[10px] font-black text-green-300" title={`${waiting5} waiting`}>
-                    <span className="h-2 w-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.9)]" />
+                  <span className="inline-flex items-center gap-1 text-[10px] font-black text-lime">
+                    <span className="h-2 w-2 rounded-full bg-lime shadow-[0_0_8px_rgba(149,232,16,0.8)]" />
                     {waiting5}
                   </span>
                 )}
@@ -103,20 +120,26 @@ export default function HomePage() {
         </section>
 
         <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 flex flex-col items-center text-center gap-4">
-            <Trophy className="w-6 h-6 text-amber-500" />
-            <h3 className="text-lg font-bold">Random Setup</h3>
-            <p className="text-sm text-slate-400">Every match starts with a surprise formation and shuffled position order.</p>
+          <div className="bg-card p-6 rounded-2xl border border-border flex flex-col items-center text-center gap-4 hover:border-lime/20 hover:shadow-lg hover:shadow-lime/5 transition-all">
+            <div className="p-3 bg-lime/10 rounded-full text-lime">
+              <Trophy className="w-6 h-6" />
+            </div>
+            <h3 className="text-lg font-black text-white">Random Setup</h3>
+            <p className="text-sm text-steel">Every match starts with a surprise formation and shuffled position order.</p>
           </div>
-          <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 flex flex-col items-center text-center gap-4">
-            <Users className="w-6 h-6 text-green-500" />
-            <h3 className="text-lg font-bold">Fair Perks</h3>
-            <p className="text-sm text-slate-400">Scout and Spy are assigned automatically so players can focus on bidding.</p>
+          <div className="bg-card p-6 rounded-2xl border border-border flex flex-col items-center text-center gap-4 hover:border-lime/20 hover:shadow-lg hover:shadow-lime/5 transition-all">
+            <div className="p-3 bg-lime/10 rounded-full text-lime">
+              <Users className="w-6 h-6" />
+            </div>
+            <h3 className="text-lg font-black text-white">Fair Perks</h3>
+            <p className="text-sm text-steel">Scout and Spy are assigned automatically so players can focus on bidding.</p>
           </div>
-          <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 flex flex-col items-center text-center gap-4">
-            <ArrowRight className="w-6 h-6 text-blue-500" />
-            <h3 className="text-lg font-bold">Simple Pools</h3>
-            <p className="text-sm text-slate-400">Global Mix is default, with EPL Only and Icons Only for focused rooms.</p>
+          <div className="bg-card p-6 rounded-2xl border border-border flex flex-col items-center text-center gap-4 hover:border-lime/20 hover:shadow-lg hover:shadow-lime/5 transition-all">
+            <div className="p-3 bg-lime/10 rounded-full text-lime">
+              <ArrowRight className="w-6 h-6" />
+            </div>
+            <h3 className="text-lg font-black text-white">Simple Pools</h3>
+            <p className="text-sm text-steel">Global Mix is default, with EPL Only and Icons Only for focused rooms.</p>
           </div>
         </section>
       </main>

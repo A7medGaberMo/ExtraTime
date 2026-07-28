@@ -55,24 +55,36 @@ function countCompatiblePlayers(players: Array<{ position: string }>, position: 
   return { exact, line };
 }
 
-function canBuildCompatibleDraft(players: Array<{ _id: string; position: string }>, positions: Position[]) {
-  if (players.length < positions.length * 2) return false;
-  const used = new Set<string>();
-  const ordered = positions
-    .map((position) => ({ position, counts: countCompatiblePlayers(players, position) }))
-    .sort((a, b) => a.counts.line - b.counts.line || a.counts.exact - b.counts.exact);
+function selectPlayersForPosition<T extends { _id: any; position: string }>(
+  source: T[],
+  used: Set<string>,
+  position: Position
+): [T, T] {
+  const unused = source.filter((p) => !used.has(p._id));
 
-  for (const { position } of ordered) {
-    let pool = players.filter((player) => !used.has(player._id) && matchesExact(player.position, position));
-    if (pool.length < 2) {
-      pool = players.filter((player) => !used.has(player._id) && matchesLine(player.position, position));
-    }
-    if (pool.length < 2) return false;
-    used.add(pool[0]._id);
-    used.add(pool[1]._id);
+  // 1. Prefer exact position matches
+  const exactMatches = unused.filter((p) => matchesExact(p.position, position));
+  if (exactMatches.length >= 2) {
+    const shuffled = shuffle(exactMatches);
+    return [shuffled[0], shuffled[1]];
   }
 
-  return true;
+  // 2. Fall back to line matches (DEF, MID, ATT, GK)
+  const lineMatches = unused.filter(
+    (p) => matchesExact(p.position, position) || matchesLine(p.position, position)
+  );
+  if (lineMatches.length >= 2) {
+    const shuffled = shuffle(lineMatches);
+    return [shuffled[0], shuffled[1]];
+  }
+
+  // 3. Fall back to any available unused players
+  if (unused.length >= 2) {
+    const shuffled = shuffle(unused);
+    return [shuffled[0], shuffled[1]];
+  }
+
+  throw new Error(`Not enough players available to fulfill draft round for ${position}.`);
 }
 
 export async function generateDraftRounds(
@@ -90,13 +102,11 @@ export async function generateDraftRounds(
     if (poolMode === "EPL") return clubById.get(player.clubId)?.league === "Premier League";
     return true;
   });
-  const source = canBuildCompatibleDraft(filtered, formationPositions) ? filtered : allPlayers;
+
   const requiredPlayerCount = formationPositions.length * 2;
+  const source = filtered.length >= requiredPlayerCount ? filtered : allPlayers;
   if (source.length < requiredPlayerCount) {
-    throw new Error(`Not enough players for ${matchSize}P Hidden Bid.`);
-  }
-  if (!canBuildCompatibleDraft(source, formationPositions)) {
-    throw new Error(`Not enough compatible players for ${formation} ${matchSize}P Hidden Bid.`);
+    throw new Error(`Not enough players for ${matchSize}P Hidden Bid (requires ${requiredPlayerCount} players).`);
   }
 
   const used = new Set<string>();
@@ -105,24 +115,17 @@ export async function generateDraftRounds(
       const counts = countCompatiblePlayers(source, position);
       return { position, originalIndex, counts };
     })
-    .sort((a, b) => a.counts.line - b.counts.line || a.counts.exact - b.counts.exact);
+    .sort((a, b) => a.counts.exact - b.counts.exact);
 
   const assignedRounds = positionsByScarcity.map(({ position, originalIndex }) => {
-    let pool = source.filter((player) => !used.has(player._id) && matchesExact(player.position, position));
-    if (pool.length < 2) {
-      pool = source.filter((player) => !used.has(player._id) && matchesLine(player.position, position));
-    }
-    if (pool.length < 2) {
-      throw new Error(`Not enough ${position}-compatible players for ${formation} ${matchSize}P.`);
-    }
-    const [main, sub] = shuffle(pool);
+    const [main, sub] = selectPlayersForPosition(source, used, position);
     used.add(main._id);
     used.add(sub._id);
     return {
       originalIndex,
       position,
-      mainPlayerId: main._id,
-      subPlayerId: sub._id,
+      mainPlayerId: main._id as Id<"players">,
+      subPlayerId: sub._id as Id<"players">,
       isMysteryRound: Math.random() < 0.2,
     };
   });

@@ -1,0 +1,319 @@
+{
+  "club": {
+    "apiId": 39,
+    "name": "Wolves",
+    "logo": "https://media.api-sports.io/football/teams/39.png",
+    "league": "Premier League",
+    "leagueId": 39
+  },
+  "players": [
+    {
+      "apiId": 19341,
+      "name": "D. Bentley",
+      "position": "GK",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19341.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 431387,
+      "name": "J. Gracey",
+      "position": "GK",
+      "club": "Wolves",
+      "nation": "Northern Ireland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/431387.png",
+      "kitNumber": 70
+    },
+    {
+      "apiId": 19143,
+      "name": "S. Johnstone",
+      "position": "GK",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19143.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 1590,
+      "name": "José Sá",
+      "position": "GK",
+      "club": "Wolves",
+      "nation": "Portugal",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1590.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 280687,
+      "name": "Hugo Bueno",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "Spain",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280687.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 135334,
+      "name": "S. Bueno",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "Uruguay",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/135334.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 282770,
+      "name": "Rodrigo Gomes",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "Portugal",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/282770.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 66407,
+      "name": "L. Krejčí",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "Czech Republic",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/66407.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 397999,
+      "name": "S. Olagunju",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/397999.png",
+      "kitNumber": 59
+    },
+    {
+      "apiId": 449245,
+      "name": "Pedro Lima",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449245.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 41606,
+      "name": "Toti Gomes",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "Portugal",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41606.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 169,
+      "name": "K. Trippier",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/169.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 265782,
+      "name": "D. Møller Wolfe",
+      "position": "CB",
+      "club": "Wolves",
+      "nation": "Norway",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/265782.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 265784,
+      "name": "André",
+      "position": "CM",
+      "club": "Wolves",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/265784.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 20665,
+      "name": "J. Bellegarde",
+      "position": "CM",
+      "club": "Wolves",
+      "nation": "France",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20665.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 546745,
+      "name": "T. Edozie",
+      "position": "CM",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/546745.png",
+      "kitNumber": 74
+    },
+    {
+      "apiId": 195103,
+      "name": "João Gomes",
+      "position": "CM",
+      "club": "Wolves",
+      "nation": "Brazil",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195103.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 391822,
+      "name": "Fer López",
+      "position": "CM",
+      "club": "Wolves",
+      "nation": "Spain",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/391822.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 195717,
+      "name": "Y. Mosquera",
+      "position": "CM",
+      "club": "Wolves",
+      "nation": "Colombia",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195717.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 401098,
+      "name": "L. Rawlings",
+      "position": "CM",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/401098.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 19484,
+      "name": "A. Armstrong",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19484.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 110153,
+      "name": "T. Arokodare",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "Nigeria",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/110153.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 24888,
+      "name": "Hwang Hee-Chan",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "Korea Republic",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24888.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 2887,
+      "name": "R. Jiménez",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "Mexico",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2887.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 456206,
+      "name": "M. Mane",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/456206.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 194116,
+      "name": "R. Saïd",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "France",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/194116.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 379678,
+      "name": "Ethan Sutherland",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "Scotland",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/379678.png",
+      "kitNumber": 60
+    },
+    {
+      "apiId": 296560,
+      "name": "J. Tchatchoua",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "Cameroon",
+      "tier": "",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/296560.png",
+      "kitNumber": 38
+    }
+  ]
+}
