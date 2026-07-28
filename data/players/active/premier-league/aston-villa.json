@@ -98,7 +98,7 @@
     {
       "apiId": 19354,
       "name": "E. Konsa",
-      "position": "CB",
+      "position": "CB/RB",
       "club": "Aston Villa",
       "nation": "England",
       "tier": "",
@@ -120,7 +120,7 @@
     {
       "apiId": 138816,
       "name": "I. Maatsen",
-      "position": "CB",
+      "position": "LB/LM",
       "club": "Aston Villa",
       "nation": "Netherlands",
       "tier": "",
@@ -208,7 +208,7 @@
     {
       "apiId": 19071,
       "name": "E. Buendía",
-      "position": "CM",
+      "position": "CAM/RW",
       "club": "Aston Villa",
       "nation": "Argentina",
       "tier": "",
@@ -307,7 +307,7 @@
     {
       "apiId": 162714,
       "name": "A. Onana",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Aston Villa",
       "nation": "Belgium",
       "tier": "",
@@ -340,7 +340,7 @@
     {
       "apiId": 983,
       "name": "L. Bailey",
-      "position": "ST",
+      "position": "RW/RM",
       "club": "Aston Villa",
       "nation": "Jamaica",
       "tier": "",
@@ -351,7 +351,7 @@
     {
       "apiId": 284324,
       "name": "A. Garnacho",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Aston Villa",
       "nation": "Argentina",
       "tier": "",
@@ -395,7 +395,7 @@
     {
       "apiId": 19366,
       "name": "O. Watkins",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Aston Villa",
       "nation": "England",
       "tier": "",

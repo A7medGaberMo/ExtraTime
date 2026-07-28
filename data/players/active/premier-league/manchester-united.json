@@ -43,7 +43,7 @@
     {
       "apiId": 886,
       "name": "Diogo Dalot",
-      "position": "CB",
+      "position": "RB/LB",
       "club": "Manchester United",
       "nation": "Portugal",
       "tier": "",
@@ -120,7 +120,7 @@
     {
       "apiId": 545,
       "name": "N. Mazraoui",
-      "position": "CB",
+      "position": "RB/LB",
       "club": "Manchester United",
       "nation": "Morocco",
       "tier": "",
@@ -164,7 +164,7 @@
     {
       "apiId": 1485,
       "name": "Bruno Fernandes",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Manchester United",
       "nation": "Portugal",
       "tier": "",
@@ -230,7 +230,7 @@
     {
       "apiId": 2926,
       "name": "Y. Tielemans",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Manchester United",
       "nation": "Belgium",
       "tier": "",
@@ -241,7 +241,7 @@
     {
       "apiId": 51494,
       "name": "M. Ugarte",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Manchester United",
       "nation": "Uruguay",
       "tier": "",
@@ -263,7 +263,7 @@
     {
       "apiId": 157997,
       "name": "A. Diallo",
-      "position": "ST",
+      "position": "RW/CAM",
       "club": "Manchester United",
       "nation": "Côte d'Ivoire",
       "tier": "",
@@ -285,7 +285,7 @@
     {
       "apiId": 20589,
       "name": "B. Mbeumo",
-      "position": "ST",
+      "position": "RW/ST",
       "club": "Manchester United",
       "nation": "Cameroon",
       "tier": "",
@@ -307,7 +307,7 @@
     {
       "apiId": 70100,
       "name": "J. Zirkzee",
-      "position": "ST",
+      "position": "ST/CAM",
       "club": "Manchester United",
       "nation": "Netherlands",
       "tier": "",

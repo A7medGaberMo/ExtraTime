@@ -142,7 +142,7 @@
     {
       "apiId": 161907,
       "name": "M. Gusto",
-      "position": "CB",
+      "position": "RB/LB",
       "club": "Chelsea",
       "nation": "France",
       "tier": "",
@@ -208,7 +208,7 @@
     {
       "apiId": 116117,
       "name": "M. Caicedo",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Chelsea",
       "nation": "Ecuador",
       "tier": "",
@@ -241,7 +241,7 @@
     {
       "apiId": 5996,
       "name": "E. Fernández",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Chelsea",
       "nation": "Argentina",
       "tier": "",
@@ -274,7 +274,7 @@
     {
       "apiId": 282125,
       "name": "R. Lavia",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Chelsea",
       "nation": "Belgium",
       "tier": "",
@@ -285,7 +285,7 @@
     {
       "apiId": 152982,
       "name": "C. Palmer",
-      "position": "CM",
+      "position": "RW/CAM",
       "club": "Chelsea",
       "nation": "England",
       "tier": "",
@@ -296,7 +296,7 @@
     {
       "apiId": 19170,
       "name": "M. Rogers",
-      "position": "CM",
+      "position": "CAM/LW",
       "club": "Chelsea",
       "nation": "England",
       "tier": "",
@@ -307,7 +307,7 @@
     {
       "apiId": 161948,
       "name": "L. Delap",
-      "position": "ST",
+      "position": "ST/CF",
       "club": "Chelsea",
       "nation": "England",
       "tier": "",

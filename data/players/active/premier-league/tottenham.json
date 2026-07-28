@@ -87,7 +87,7 @@
     {
       "apiId": 328089,
       "name": "A. Gray",
-      "position": "CB",
+      "position": "CB/CDM",
       "club": "Tottenham",
       "nation": "England",
       "tier": "",
@@ -318,7 +318,7 @@
     {
       "apiId": 18784,
       "name": "J. Maddison",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Tottenham",
       "nation": "England",
       "tier": "",
@@ -340,7 +340,7 @@
     {
       "apiId": 237129,
       "name": "P. Sarr",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Tottenham",
       "nation": "Senegal",
       "tier": "",
@@ -362,7 +362,7 @@
     {
       "apiId": 31146,
       "name": "S. Tonali",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Tottenham",
       "nation": "Italy",
       "tier": "",
@@ -417,7 +417,7 @@
     {
       "apiId": 2413,
       "name": "Richarlison",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Tottenham",
       "nation": "Brazil",
       "tier": "",

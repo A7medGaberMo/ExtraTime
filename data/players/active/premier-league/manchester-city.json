@@ -87,7 +87,7 @@
     {
       "apiId": 129033,
       "name": "J. Gvardiol",
-      "position": "CB",
+      "position": "LB/CB",
       "club": "Manchester City",
       "nation": "Croatia",
       "tier": "",
@@ -109,7 +109,7 @@
     {
       "apiId": 284230,
       "name": "R. Lewis",
-      "position": "CB",
+      "position": "RB/CDM",
       "club": "Manchester City",
       "nation": "England",
       "tier": "",
@@ -142,7 +142,7 @@
     {
       "apiId": 156477,
       "name": "R. Cherki",
-      "position": "CM",
+      "position": "CAM/RW",
       "club": "Manchester City",
       "nation": "France",
       "tier": "",
@@ -153,7 +153,7 @@
     {
       "apiId": 631,
       "name": "P. Foden",
-      "position": "CM",
+      "position": "CAM/RW",
       "club": "Manchester City",
       "nation": "England",
       "tier": "",
@@ -175,7 +175,7 @@
     {
       "apiId": 2291,
       "name": "M. Kovačić",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Manchester City",
       "nation": "Croatia",
       "tier": "",
@@ -241,7 +241,7 @@
     {
       "apiId": 44,
       "name": "Rodri",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Manchester City",
       "nation": "Spain",
       "tier": "",
@@ -252,7 +252,7 @@
     {
       "apiId": 1422,
       "name": "J. Doku",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Manchester City",
       "nation": "Belgium",
       "tier": "",
@@ -274,7 +274,7 @@
     {
       "apiId": 81573,
       "name": "Omar Marmoush",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Manchester City",
       "nation": "Egypt",
       "tier": "",
@@ -307,7 +307,7 @@
     {
       "apiId": 266657,
       "name": "Sávio",
-      "position": "ST",
+      "position": "RW/LW",
       "club": "Manchester City",
       "nation": "Brazil",
       "tier": "",
@@ -318,7 +318,7 @@
     {
       "apiId": 19281,
       "name": "A. Semenyo",
-      "position": "ST",
+      "position": "RW/ST",
       "club": "Manchester City",
       "nation": "Ghana",
       "tier": "",

@@ -98,7 +98,7 @@
     {
       "apiId": 158694,
       "name": "T. Livramento",
-      "position": "CB",
+      "position": "RB/LB",
       "club": "Newcastle",
       "nation": "England",
       "tier": "",
@@ -142,7 +142,7 @@
     {
       "apiId": 10135,
       "name": "Bruno Guimarães",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Newcastle",
       "nation": "Brazil",
       "tier": "",
@@ -153,7 +153,7 @@
     {
       "apiId": 723,
       "name": "Joelinton",
-      "position": "CM",
+      "position": "CM/LW",
       "club": "Newcastle",
       "nation": "Brazil",
       "tier": "",
@@ -252,7 +252,7 @@
     {
       "apiId": 18778,
       "name": "H. Barnes",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Newcastle",
       "nation": "England",
       "tier": "",
@@ -263,7 +263,7 @@
     {
       "apiId": 153430,
       "name": "A. Elanga",
-      "position": "ST",
+      "position": "RW/LW",
       "club": "Newcastle",
       "nation": "Sweden",
       "tier": "",
@@ -285,7 +285,7 @@
     {
       "apiId": 20649,
       "name": "Y. Wissa",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Newcastle",
       "nation": "DR Congo",
       "tier": "",

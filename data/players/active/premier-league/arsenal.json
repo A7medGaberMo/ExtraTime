@@ -76,7 +76,7 @@
     {
       "apiId": 157052,
       "name": "R. Calafiori",
-      "position": "CB",
+      "position": "LB/CB",
       "club": "Arsenal",
       "nation": "Italy",
       "tier": "",
@@ -109,7 +109,7 @@
     {
       "apiId": 127817,
       "name": "P. Hincapié",
-      "position": "CB",
+      "position": "CB/LB",
       "club": "Arsenal",
       "nation": "Ecuador",
       "tier": "",
@@ -164,7 +164,7 @@
     {
       "apiId": 38746,
       "name": "J. Timber",
-      "position": "CB",
+      "position": "CB/RB",
       "club": "Arsenal",
       "nation": "Netherlands",
       "tier": "",
@@ -175,7 +175,7 @@
     {
       "apiId": 19959,
       "name": "B. White",
-      "position": "CB",
+      "position": "RB/CB",
       "club": "Arsenal",
       "nation": "England",
       "tier": "",
@@ -197,7 +197,7 @@
     {
       "apiId": 19586,
       "name": "E. Eze",
-      "position": "CM",
+      "position": "CAM/LW",
       "club": "Arsenal",
       "nation": "England",
       "tier": "",
@@ -219,7 +219,7 @@
     {
       "apiId": 47311,
       "name": "Mikel Merino",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Arsenal",
       "nation": "Spain",
       "tier": "",
@@ -252,7 +252,7 @@
     {
       "apiId": 2937,
       "name": "D. Rice",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Arsenal",
       "nation": "England",
       "tier": "",
@@ -263,7 +263,7 @@
     {
       "apiId": 47315,
       "name": "Martín Zubimendi",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Arsenal",
       "nation": "Spain",
       "tier": "",
@@ -285,7 +285,7 @@
     {
       "apiId": 643,
       "name": "Gabriel Jesus",
-      "position": "ST",
+      "position": "ST/RW",
       "club": "Arsenal",
       "nation": "Brazil",
       "tier": "",
@@ -318,7 +318,7 @@
     {
       "apiId": 978,
       "name": "K. Havertz",
-      "position": "ST",
+      "position": "ST/CAM",
       "club": "Arsenal",
       "nation": "Germany",
       "tier": "",
@@ -329,7 +329,7 @@
     {
       "apiId": 136723,
       "name": "N. Madueke",
-      "position": "ST",
+      "position": "RW/LW",
       "club": "Arsenal",
       "nation": "England",
       "tier": "",
@@ -340,7 +340,7 @@
     {
       "apiId": 127769,
       "name": "Gabriel Martinelli",
-      "position": "ST",
+      "position": "LW/ST",
       "club": "Arsenal",
       "nation": "Brazil",
       "tier": "",
@@ -351,7 +351,7 @@
     {
       "apiId": 1460,
       "name": "B. Saka",
-      "position": "ST",
+      "position": "RW/ST",
       "club": "Arsenal",
       "nation": "England",
       "tier": "",

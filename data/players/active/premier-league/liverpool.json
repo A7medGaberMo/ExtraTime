@@ -76,7 +76,7 @@
     {
       "apiId": 284,
       "name": "J. Gomez",
-      "position": "CB",
+      "position": "CB/RB",
       "club": "Liverpool",
       "nation": "England",
       "tier": "",
@@ -98,7 +98,7 @@
     {
       "apiId": 206254,
       "name": "M. Kerkez",
-      "position": "CB",
+      "position": "LB/LM",
       "club": "Liverpool",
       "nation": "Hungary",
       "tier": "",
@@ -175,7 +175,7 @@
     {
       "apiId": 8500,
       "name": "W. Endo",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Liverpool",
       "nation": "Japan",
       "tier": "",
@@ -197,7 +197,7 @@
     {
       "apiId": 542,
       "name": "R. Gravenberch",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Liverpool",
       "nation": "Netherlands",
       "tier": "",
@@ -219,7 +219,7 @@
     {
       "apiId": 6716,
       "name": "A. Mac Allister",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Liverpool",
       "nation": "Argentina",
       "tier": "",
@@ -263,7 +263,7 @@
     {
       "apiId": 1096,
       "name": "D. Szoboszlai",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Liverpool",
       "nation": "Hungary",
       "tier": "",
@@ -318,7 +318,7 @@
     {
       "apiId": 247,
       "name": "C. Gakpo",
-      "position": "ST",
+      "position": "LW/ST",
       "club": "Liverpool",
       "nation": "Netherlands",
       "tier": "",
@@ -329,7 +329,7 @@
     {
       "apiId": 2864,
       "name": "A. Isak",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Liverpool",
       "nation": "Sweden",
       "tier": "",
