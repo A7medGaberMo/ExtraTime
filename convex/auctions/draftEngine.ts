@@ -43,11 +43,35 @@ function weightedPick<T>(items: T[], weights: number[]): T {
 }
 
 // ── Position Matching ──────────────────────────────────────
+const LEFT_POSITIONS = new Set(["LB", "LWB", "LM", "LW"]);
+const RIGHT_POSITIONS = new Set(["RB", "RWB", "RM", "RW"]);
+const CENTER_POSITIONS = new Set(["GK", "CB", "CDM", "CM", "CAM", "ST", "CF"]);
+
 function matchesExact(playerPosition: string, slot: Position): boolean {
   return playerPositions(playerPosition).includes(slot);
 }
 
+function isSideCompatible(playerPosition: string, slot: Position): boolean {
+  const pPositions = playerPositions(playerPosition);
+  
+  // Exact match is always compatible
+  if (pPositions.includes(slot)) return true;
+
+  // Left-sided slot: player MUST have a Left or Center position (cannot be purely Right-sided)
+  if (LEFT_POSITIONS.has(slot)) {
+    return pPositions.some((p) => LEFT_POSITIONS.has(p) || CENTER_POSITIONS.has(p));
+  }
+
+  // Right-sided slot: player MUST have a Right or Center position (cannot be purely Left-sided)
+  if (RIGHT_POSITIONS.has(slot)) {
+    return pPositions.some((p) => RIGHT_POSITIONS.has(p) || CENTER_POSITIONS.has(p));
+  }
+
+  return true;
+}
+
 function matchesLine(playerPosition: string, slot: Position): boolean {
+  if (!isSideCompatible(playerPosition, slot)) return false;
   const targetLine = lineFor(slot);
   return playerPositions(playerPosition).some((p) => lineFor(p) === targetLine);
 }
@@ -55,6 +79,10 @@ function matchesLine(playerPosition: string, slot: Position): boolean {
 /** Score how well a player fits a formation slot (0–100). */
 function positionFitScore(playerPosition: string, slot: Position): number {
   if (matchesExact(playerPosition, slot)) return 100;
+
+  // Strict side incompatibility penalty (LB cannot play RB/RW, RB cannot play LB/LW)
+  if (!isSideCompatible(playerPosition, slot)) return 0;
+
   if (matchesLine(playerPosition, slot)) return 55;
   // Adjacent-line partial credit
   const pLines = playerPositions(playerPosition).map(lineFor);

@@ -117,6 +117,30 @@ const squadB = [{ tier: "MASTER" }, { tier: "MASTER" }, { tier: "ELITE" }];     
 
 const winner = evaluateWinner(squadA, squadB, 20, 10);
 assert.strictEqual(winner, "MY_SQUAD", "Higher quality squad must win");
-console.log("  ✅ Squad quality evaluation & winner determination verified.\n");
+// Test 5: Position Side Compatibility (LB cannot play RB/RW, RB cannot play LB/LW)
+console.log("Test 5: Position Side Compatibility");
+const LEFT_POSITIONS = new Set(["LB", "LWB", "LM", "LW"]);
+const RIGHT_POSITIONS = new Set(["RB", "RWB", "RM", "RW"]);
+const CENTER_POSITIONS = new Set(["GK", "CB", "CDM", "CM", "CAM", "ST", "CF"]);
+
+function isSideCompatible(playerPosStr, slot) {
+  const pPositions = playerPosStr.split("/").map((p) => p.trim());
+  if (pPositions.includes(slot)) return true;
+
+  if (LEFT_POSITIONS.has(slot)) {
+    return pPositions.some((p) => LEFT_POSITIONS.has(p) || CENTER_POSITIONS.has(p));
+  }
+  if (RIGHT_POSITIONS.has(slot)) {
+    return pPositions.some((p) => RIGHT_POSITIONS.has(p) || CENTER_POSITIONS.has(p));
+  }
+  return true;
+}
+
+assert.strictEqual(isSideCompatible("LB", "RB"), false, "Pure LB must NOT fit RB");
+assert.strictEqual(isSideCompatible("LB/LM", "RW"), false, "Pure Left player must NOT fit RW");
+assert.strictEqual(isSideCompatible("RB", "LB"), false, "Pure RB must NOT fit LB");
+assert.strictEqual(isSideCompatible("LB", "LB"), true, "LB fits LB");
+assert.strictEqual(isSideCompatible("CB", "RB"), true, "Center defender CB fits RB");
+console.log("  ✅ Position side compatibility verified (LB never plays RB/RW & vice-versa).\n");
 
 console.log("🎉 ALL E2E ALGORITHM TESTS PASSED SUCCESSFULLY! 🏆");

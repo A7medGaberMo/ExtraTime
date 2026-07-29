@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Stade Brestois 29",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21248.png",
       "kitNumber": 30
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Stade Brestois 29",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/348052.png",
       "kitNumber": 50
@@ -35,21 +35,21 @@
       "position": "GK",
       "club": "Stade Brestois 29",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667330.png",
-      "kitNumber": null
+      "kitNumber": 40
     },
     {
-      "apiId": 369556,
-      "name": "J. Bourgault",
-      "position": "CB",
+      "apiId": 274267,
+      "name": "B. Locko",
+      "position": "LB/LWB",
       "club": "Stade Brestois 29",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/369556.png",
-      "kitNumber": 3
+      "imageUrl": "https://media.api-sports.io/football/players/274267.png",
+      "kitNumber": 2
     },
     {
       "apiId": 20546,
@@ -65,7 +65,7 @@
     {
       "apiId": 22247,
       "name": "K. Lala",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
@@ -74,26 +74,37 @@
       "kitNumber": 77
     },
     {
+      "apiId": 422595,
+      "name": "L. Zogbe",
+      "position": "RB/CB",
+      "club": "Stade Brestois 29",
+      "nation": "Ivory Coast",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/422595.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 369556,
+      "name": "J. Bourgault",
+      "position": "CB",
+      "club": "Stade Brestois 29",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/369556.png",
+      "kitNumber": 3
+    },
+    {
       "apiId": 498791,
       "name": "R. Le Guen",
       "position": "CB",
       "club": "Stade Brestois 29",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/498791.png",
       "kitNumber": 71
-    },
-    {
-      "apiId": 274267,
-      "name": "B. Locko",
-      "position": "CB",
-      "club": "Stade Brestois 29",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/274267.png",
-      "kitNumber": 2
     },
     {
       "apiId": 669878,
@@ -101,26 +112,26 @@
       "position": "CB",
       "club": "Stade Brestois 29",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669878.png",
-      "kitNumber": null
+      "kitNumber": 35
     },
     {
-      "apiId": 422595,
-      "name": "L. Zogbe",
-      "position": "CB",
+      "apiId": 326068,
+      "name": "K. Doumbia",
+      "position": "CAM/CM",
       "club": "Stade Brestois 29",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Mali",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/422595.png",
-      "kitNumber": 12
+      "imageUrl": "https://media.api-sports.io/football/players/326068.png",
+      "kitNumber": 23
     },
     {
       "apiId": 128287,
       "name": "J. Chotard",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
@@ -129,20 +140,9 @@
       "kitNumber": 13
     },
     {
-      "apiId": 326068,
-      "name": "K. Doumbia",
-      "position": "CM",
-      "club": "Stade Brestois 29",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/326068.png",
-      "kitNumber": 23
-    },
-    {
       "apiId": 20558,
       "name": "H. Magnetti",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
@@ -151,26 +151,37 @@
       "kitNumber": 8
     },
     {
-      "apiId": 449153,
-      "name": "H. Makalou",
-      "position": "CM",
-      "club": "Stade Brestois 29",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449153.png",
-      "kitNumber": 33
-    },
-    {
       "apiId": 664,
       "name": "L. Tousart",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/664.png",
       "kitNumber": 24
+    },
+    {
+      "apiId": 449153,
+      "name": "H. Makalou",
+      "position": "CM",
+      "club": "Stade Brestois 29",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449153.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 2214,
+      "name": "R. Del Castillo",
+      "position": "RW/CAM/RM",
+      "club": "Stade Brestois 29",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2214.png",
+      "kitNumber": 10
     },
     {
       "apiId": 22264,
@@ -186,46 +197,35 @@
     {
       "apiId": 41323,
       "name": "Mama Baldé",
-      "position": "ST",
+      "position": "ST/RW",
       "club": "Stade Brestois 29",
-      "nation": "France",
+      "nation": "Guinea-Bissau",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41323.png",
       "kitNumber": 17
     },
     {
-      "apiId": 2214,
-      "name": "R. Del Castillo",
-      "position": "ST",
-      "club": "Stade Brestois 29",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2214.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 554352,
-      "name": "Ibrahim Yayiya Kante",
-      "position": "ST",
-      "club": "Stade Brestois 29",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/554352.png",
-      "kitNumber": 21
-    },
-    {
       "apiId": 375990,
       "name": "P. Mboup",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Stade Brestois 29",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Senegal",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/375990.png",
       "kitNumber": 99
+    },
+    {
+      "apiId": 554352,
+      "name": "Ibrahim Kante",
+      "position": "ST",
+      "club": "Stade Brestois 29",
+      "nation": "Mali",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/554352.png",
+      "kitNumber": 21
     }
   ]
 }
