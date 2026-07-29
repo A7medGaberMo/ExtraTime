@@ -98,7 +98,11 @@ async function joinAuction(
   guestId: Id<"guestUsers">,
   auction: any
 ) {
-  const hostPerk = auction.host.perk as "SCOUT" | "SPY";
+  const room = await ctx.db.get(roomId);
+  if (!room || room.guestId || room.status !== "waiting") {
+    throw new Error("Room is no longer available");
+  }
+
   const guestPerk = randomPerk();
   const activeTurnUserId = auction.host.userId;
   const now = Date.now();

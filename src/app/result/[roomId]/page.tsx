@@ -1,38 +1,47 @@
 "use client";
 
-import { use, useEffect, useState, useMemo } from "react";
+import { use, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { useQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
 import { PageHeader } from "@/components/shared/page-header";
 import { TacticalPitch } from "@/components/shared/tactical-pitch";
-import { Trophy, Swords, RefreshCw, Home, Loader2 } from "lucide-react";
+import { useGuestSession } from "@/hooks/use-guest-session";
+import { Loader2, Trophy, Swords, RefreshCw, Home } from "lucide-react";
+
+/* Tier weights for squad quality evaluation */
+const TIER_WEIGHTS: Record<string, number> = {
+  ICON: 7, MASTER: 6, ELITE_PLUS: 5, ELITE: 4,
+  GOLD: 3, SILVER: 2, BRONZE: 1,
+};
+
+/* Tier counts breakdown helper */
+function countTiers(squad: Array<{ player?: { tier?: string } | null }>) {
+  const counts: Record<string, number> = { ICON: 0, MASTER: 0, ELITE_PLUS: 0, ELITE: 0, GOLD: 0, SILVER: 0, BRONZE: 0 };
+  for (const item of squad) {
+    if (item.player?.tier && counts[item.player.tier] !== undefined) {
+      counts[item.player.tier]++;
+    }
+  }
+  return counts;
+}
 
 export default function ResultsPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
-  const [guestId, setGuestId] = useState<Id<"guestUsers"> | null>(null);
-
-  useEffect(() => {
-    const id = localStorage.getItem("extratime_guestId") as Id<"guestUsers">;
-    if (id) setGuestId(id);
-    else router.push("/");
-  }, [router]);
+  const { guestId } = useGuestSession(true);
 
   const state = useQuery(
     api.auctions.queries.getState,
     guestId && roomId ? { roomId: roomId as Id<"rooms">, userId: guestId } : "skip"
   );
 
-  const mySquad = state?.mySquad ?? [];
-  const rivalSquad = state?.opponentSquad ?? [];
+  const rawMySquad = state?.mySquad;
+  const rawRivalSquad = state?.opponentSquad;
 
-  /* Tier weights for squad quality evaluation */
-  const TIER_WEIGHTS: Record<string, number> = {
-    ICON: 7, MASTER: 6, ELITE_PLUS: 5, ELITE: 4,
-    GOLD: 3, SILVER: 2, BRONZE: 1,
-  };
+  const mySquad = useMemo(() => rawMySquad ?? [], [rawMySquad]);
+  const rivalSquad = useMemo(() => rawRivalSquad ?? [], [rawRivalSquad]);
 
   /* 1. Squad Quality Score: sum of tier weights */
   const mySquadQuality = useMemo(
@@ -43,17 +52,6 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     () => rivalSquad.reduce((sum, s) => sum + (TIER_WEIGHTS[s.player?.tier as string] ?? 1), 0),
     [rivalSquad]
   );
-
-  /* Tier counts breakdown */
-  const countTiers = (squad: typeof mySquad) => {
-    const counts: Record<string, number> = { ICON: 0, MASTER: 0, ELITE_PLUS: 0, ELITE: 0, GOLD: 0, SILVER: 0, BRONZE: 0 };
-    for (const item of squad) {
-      if (item.player?.tier && counts[item.player.tier] !== undefined) {
-        counts[item.player.tier]++;
-      }
-    }
-    return counts;
-  };
 
   const myTierCounts = useMemo(() => countTiers(mySquad), [mySquad]);
   const rivalTierCounts = useMemo(() => countTiers(rivalSquad), [rivalSquad]);

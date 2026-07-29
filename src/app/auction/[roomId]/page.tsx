@@ -11,6 +11,7 @@ import { BidSlider } from "@/components/shared/bid-slider";
 import { BidRevealAnimation } from "@/components/shared/bid-reveal-animation";
 import { TacticalPitch } from "@/components/shared/tactical-pitch";
 import type { PlayerCardData } from "@/types/player";
+import { useGuestSession } from "@/hooks/use-guest-session";
 import {
   Loader2, ArrowRight, X, Sparkles, Zap, Copy, Check,
   Swords, Eye, Binoculars, DollarSign, ChevronDown, ChevronUp
@@ -25,7 +26,7 @@ const TIER_COLORS: Record<string, string> = {
 export default function AuctionPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
-  const [guestId, setGuestId] = useState<Id<"guestUsers"> | null>(null);
+  const { guestId } = useGuestSession(true);
   const [codeCopied, setCodeCopied] = useState(false);
   const [showSquad, setShowSquad] = useState(false);
   const [squadTab, setSquadTab] = useState<"my" | "rival" | "pitch">("my");
@@ -33,12 +34,6 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   // Reveal animation state
   const [showReveal, setShowReveal] = useState(false);
   const prevRoundRef = useRef<number | null>(null);
-
-  useEffect(() => {
-    const id = localStorage.getItem("extratime_guestId") as Id<"guestUsers">;
-    if (id) setGuestId(id);
-    else router.push("/");
-  }, [router]);
 
   const state = useQuery(
     api.auctions.queries.getState,
@@ -58,7 +53,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const placeBid = useMutation(api.auctions.mutations.placeBid);
   const pass = useMutation(api.auctions.mutations.pass);
   const cancelRoom = useMutation(api.rooms.mutations.cancel);
-  const usePerkMutation = useMutation(api.auctions.mutations.usePerk);
+  const mutatePerk = useMutation(api.auctions.mutations.usePerk);
   const autoPassFired = useRef(false);
 
   const [bidAmount, setBidAmount] = useState<number>(0);
@@ -83,19 +78,19 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setIsActivatingPerk(true);
     setError(null);
     try {
-      await usePerkMutation({ roomId: roomId as Id<"rooms">, userId: guestId });
-    } catch (e: any) {
-      setError(e.message || "Could not activate perk");
+      await mutatePerk({ roomId: roomId as Id<"rooms">, userId: guestId });
+    } catch (e: unknown) {
+      const err = e as { message?: string };
+      setError(err.message || "Could not activate perk");
     } finally {
       setIsActivatingPerk(false);
     }
-  }, [usePerkMutation, guestId, isActivatingPerk, roomId, state?.me?.perkUsed]);
+  }, [mutatePerk, guestId, isActivatingPerk, roomId, state?.me?.perkUsed]);
 
   /* Timer logic */
   const [timeLeft, setTimeLeft] = useState(0);
   useEffect(() => {
     if (!state?.auction?.currentBidding?.turnExpiresAt || state.auction.status !== "active") {
-      setTimeLeft(0);
       return;
     }
     const tick = () => {
@@ -119,13 +114,19 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   }, [timeLeft, state, isSubmitting, pass, roomId, guestId]);
 
   /* Reset bid to min whenever round/turn changes */
+  const prevBiddingKeyRef = useRef<string>("");
+  const currentBiddingKey = `${state?.auction?.currentRound}-${state?.auction?.currentBidding?.highestBid}`;
+
   useEffect(() => {
     if (!state?.auction) return;
-    const hb = state.auction.currentBidding.highestBid;
-    const min = hb > 0 ? hb + 1 : 1;
-    setBidAmount(min);
-    setError(null);
-  }, [state?.auction?.currentRound, state?.auction?.currentBidding?.highestBid]);
+    if (prevBiddingKeyRef.current !== currentBiddingKey) {
+      prevBiddingKeyRef.current = currentBiddingKey;
+      const hb = state.auction.currentBidding.highestBid;
+      const min = hb > 0 ? hb + 1 : 1;
+      setBidAmount(min);
+      setError(null);
+    }
+  }, [currentBiddingKey, state?.auction]);
 
   /* ── Derived data ───────────────────────────────────────────────────── */
   const auction = state?.auction;
@@ -149,7 +150,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const tierColor = TIER_COLORS[mainPlayer?.tier as string] ?? "#95E810";
 
   const playerData: PlayerCardData | null = mainPlayer ? {
-    id: mainPlayer._id, name: mainPlayer.name, tier: mainPlayer.tier as any,
+    id: mainPlayer._id, name: mainPlayer.name, tier: mainPlayer.tier as PlayerCardData["tier"],
     position: mainPlayer.position, club: mainPlayer.club, nation: mainPlayer.nation,
     imageUrl: mainPlayer.imageUrl, isLegend: mainPlayer.isLegend, kitNumber: mainPlayer.kitNumber,
   } : null;
@@ -168,8 +169,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setError(null);
     try {
       await placeBid({ roomId: roomId as Id<"rooms">, userId: guestId, amount: bidAmount });
-    } catch (e: any) {
-      setError(e.message || "Bid failed");
+    } catch (e: unknown) {
+      const err = e as { message?: string };
+      setError(err.message || "Bid failed");
     } finally {
       setIsSubmitting(false);
     }
@@ -181,8 +183,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setError(null);
     try {
       await pass({ roomId: roomId as Id<"rooms">, userId: guestId });
-    } catch (e: any) {
-      setError(e.message || "Pass failed");
+    } catch (e: unknown) {
+      const err = e as { message?: string };
+      setError(err.message || "Pass failed");
     } finally {
       setIsSubmitting(false);
     }
@@ -357,17 +360,12 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             <div className="flex-1 min-w-0 text-[11px] sm:text-xs">
               {me.perk === "SPY" && revealedSubPlayer && (
                 <p className="text-white font-medium">
-                  🕵️ <strong className="text-amber-300">SPY INTEL</strong>: Hidden Backup is <strong className="text-amber-200">{revealedSubPlayer.name}</strong> ({revealedSubPlayer.tier} • {revealedSubPlayer.position})
+                  🕵️ <strong className="text-amber-300">SPY INTEL</strong>: Secret Backup is <strong className="text-amber-200">{revealedSubPlayer.name}</strong> ({revealedSubPlayer.tier} • {revealedSubPlayer.position})
                 </p>
               )}
               {me.perk === "SCOUT" && revealedNextMainPlayer && (
                 <p className="text-white font-medium">
                   🔭 <strong className="text-amber-300">SCOUT INTEL</strong>: Next Target is <strong className="text-amber-200">{revealedNextMainPlayer.name}</strong> ({nextRoundInfo?.position})
-                </p>
-              )}
-              {me.perk === "SPY" && !revealedSubPlayer && (
-                <p className="text-white font-medium">
-                  🕵️ <strong className="text-amber-300">SPY INTEL</strong>: Rival remaining budget is <strong className="text-amber-200">${opponent?.budget ?? 0}M</strong>
                 </p>
               )}
             </div>

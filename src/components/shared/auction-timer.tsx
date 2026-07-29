@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { Zap } from 'lucide-react';
 
@@ -13,17 +13,17 @@ interface AuctionTimerProps {
 }
 
 export function AuctionTimer({ timeLeft, maxTime = 30, isActive, size = 64, showBoost = false }: AuctionTimerProps) {
-  const [prevTime, setPrevTime] = useState(timeLeft);
+  const prevTimeRef = useRef(timeLeft);
   const [boostActive, setBoostActive] = useState(false);
 
   useEffect(() => {
-    if (timeLeft > prevTime + 2 && prevTime > 0) {
+    if (timeLeft > prevTimeRef.current + 2 && prevTimeRef.current > 0) {
       setBoostActive(true);
       const timer = setTimeout(() => setBoostActive(false), 2200);
       return () => clearTimeout(timer);
     }
-    setPrevTime(timeLeft);
-  }, [timeLeft, prevTime]);
+    prevTimeRef.current = timeLeft;
+  }, [timeLeft]);
 
   const radius = (size - 8) / 2;
   const circumference = 2 * Math.PI * radius;

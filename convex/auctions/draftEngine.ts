@@ -122,25 +122,39 @@ function scoreCandidate(
   return Math.max(0, score);
 }
 
+const TOP_CLUB_NAMES = new Set([
+  "Real Madrid", "Barcelona", "Barca", "Atlético Madrid", "Atletico Madrid",
+  "Manchester City", "Man City", "Arsenal", "Liverpool", "Manchester United", "Man Utd", "Chelsea", "Tottenham",
+  "Bayern Munich", "Bayern", "Borussia Dortmund", "Dortmund", "Bayer Leverkusen", "Leverkusen",
+  "Paris Saint-Germain", "PSG",
+  "AC Milan", "Inter Milan", "Inter", "Juventus", "Juve", "Napoli",
+]);
+
 // ── Tier Distribution Planning ─────────────────────────────
 function planTierBudget(pool: PoolPlayer[], totalSlots: number): Map<Tier, number> {
-  // Count available players per tier
   const available = new Map<Tier, number>();
+  let totalAvailable = 0;
   for (const p of pool) {
     available.set(p.tier, (available.get(p.tier) ?? 0) + 1);
+    totalAvailable++;
   }
 
-  // Ideal distribution ratios (mains only — subs are flexible)
-  const idealRatios: Record<Tier, number> = {
-    ICON: 0.08, MASTER: 0.12, ELITE_PLUS: 0.15, ELITE: 0.2,
-    GOLD: 0.25, SILVER: 0.12, BRONZE: 0.08,
+  // Dynamic ratio weights based on actual database tier proportions
+  const targetRatios: Record<Tier, number> = {
+    ICON: Math.min(0.25, ((available.get("ICON") ?? 0) / (totalAvailable || 1)) * 1.6),
+    MASTER: Math.min(0.25, ((available.get("MASTER") ?? 0) / (totalAvailable || 1)) * 1.4),
+    ELITE_PLUS: Math.min(0.25, ((available.get("ELITE_PLUS") ?? 0) / (totalAvailable || 1)) * 1.3),
+    ELITE: Math.min(0.20, ((available.get("ELITE") ?? 0) / (totalAvailable || 1)) * 1.1),
+    GOLD: Math.min(0.12, ((available.get("GOLD") ?? 0) / (totalAvailable || 1)) * 0.7),
+    SILVER: Math.min(0.03, ((available.get("SILVER") ?? 0) / (totalAvailable || 1)) * 0.3),
+    BRONZE: Math.min(0.02, ((available.get("BRONZE") ?? 0) / (totalAvailable || 1)) * 0.2),
   };
 
   const budget = new Map<Tier, number>();
   for (const tier of Object.keys(TIER_RANK) as Tier[]) {
-    const ideal = Math.round(totalSlots * idealRatios[tier]);
-    const cap = Math.floor((available.get(tier) ?? 0) / 2); // need 2 per slot (main+sub backup)
-    budget.set(tier, Math.min(ideal, cap));
+    const ideal = Math.round(totalSlots * (targetRatios[tier] || 0.1));
+    const cap = Math.floor((available.get(tier) ?? 0) / 2);
+    budget.set(tier, Math.max(0, Math.min(ideal, cap)));
   }
   return budget;
 }
@@ -152,7 +166,7 @@ function selectSmartPair(
   slot: Position,
   scoringCtx: ScoringContext
 ): [PoolPlayer, PoolPlayer] {
-  const unused = pool.filter((p) => !used.has(p._id));
+  const unused = pool.filter((p) => !used.has(String(p._id)));
   if (unused.length < 2) {
     throw new Error(`Not enough players for position ${slot}. Only ${unused.length} left.`);
   }
@@ -169,24 +183,33 @@ function selectSmartPair(
   const mainWeights = topMain.map((c) => Math.max(1, c.score));
   const main = weightedPick(topMain, mainWeights).player;
 
-  // Now score SUB candidates (exclude main, prefer 1-2 tiers below)
+  // Now score SUB candidates (exclude main player)
   const subCandidates = unused.filter((p) => p._id !== main._id);
   const mainRank = tierRank(main.tier);
 
+  // 55:45 ratio — 55% chance sub is lower tier, 45% chance sub is equal or higher tier!
+  const isEqualOrHigherRoll = Math.random() < 0.45;
+
   const subScores = subCandidates.map((p) => {
     let score = scoreCandidate(p, slot, scoringCtx, "sub");
-    // Bonus for being 1-2 tiers below main (creates interesting bidding dynamics)
-    const gap = tierRank(p.tier) - mainRank;
-    if (gap >= 1 && gap <= 2) score += 40;
-    else if (gap === 0) score += 15; // Same tier = competitive
-    else if (gap > 3) score -= 20; // Too large a gap is boring
-    // Penalize if sub is higher tier than main (feels wrong)
-    if (gap < 0) score -= 30;
+    const pRank = tierRank(p.tier);
+    const gap = pRank - mainRank; // Positive = lower tier than main, Negative = higher tier than main
+
+    if (isEqualOrHigherRoll) {
+      // 45% Archetype: Equal or Higher Tier Sub (Same tier clash or higher tier jackpot)
+      if (gap <= 0) score += 50;
+      else score -= 15;
+    } else {
+      // 55% Archetype: Lower Tier Sub (Standard risk/reward)
+      if (gap >= 1 && gap <= 2) score += 50;
+      else if (gap > 2) score += 25;
+      else score -= 15;
+    }
     return { player: p, score };
   });
   subScores.sort((a, b) => b.score - a.score);
 
-  const topSub = subScores.slice(0, Math.min(5, subScores.length));
+  const topSub = subScores.slice(0, Math.min(6, subScores.length));
   const subWeights = topSub.map((c) => Math.max(1, c.score));
   const sub = weightedPick(topSub, subWeights).player;
 
@@ -267,6 +290,10 @@ export async function generateDraftRounds(
     .filter((player) => {
       if (poolMode === "ICONS") return player.isLegend || player.tier === "ICON";
       if (poolMode === "EPL") return clubById.get(player.clubId)?.league === "Premier League";
+      if (poolMode === "TOP_TEAMS") {
+        const clubName = clubById.get(player.clubId)?.name ?? "";
+        return TOP_CLUB_NAMES.has(clubName) || player.isLegend || player.tier === "ICON";
+      }
       return true; // GLOBAL
     })
     .map((p) => ({
@@ -279,14 +306,21 @@ export async function generateDraftRounds(
     }));
 
   const requiredPlayers = formationPositions.length * 2;
-  const pool = filtered.length >= requiredPlayers ? filtered : (allPlayers.map((p) => ({
+  const mappedAll: PoolPlayer[] = allPlayers.map((p) => ({
     _id: p._id,
     position: p.position,
     tier: p.tier as Tier,
     clubId: p.clubId,
     nationId: p.nationId,
     isLegend: p.isLegend,
-  })));
+  }));
+
+  let pool: PoolPlayer[] = [...filtered];
+  if (pool.length < requiredPlayers) {
+    const existingIds = new Set(pool.map((p) => p._id));
+    const extra = mappedAll.filter((p) => !existingIds.has(p._id));
+    pool = [...pool, ...extra];
+  }
 
   if (pool.length < requiredPlayers) {
     throw new Error(
@@ -303,7 +337,7 @@ export async function generateDraftRounds(
   // Sort positions by scarcity (hardest to fill first)
   const positionsByScarcity = formationPositions
     .map((pos, origIdx) => {
-      const available = pool.filter((p) => !used.has(p._id));
+      const available = pool.filter((p) => !used.has(String(p._id)));
       const exact = available.filter((p) => matchesExact(p.position, pos)).length;
       return { position: pos, origIdx, scarcity: exact };
     })
@@ -315,8 +349,8 @@ export async function generateDraftRounds(
     const scoringCtx: ScoringContext = { usedClubs, usedNations, tierBudget };
     const [main, sub] = selectSmartPair(pool, used, position, scoringCtx);
 
-    used.add(main._id);
-    used.add(sub._id);
+    used.add(String(main._id));
+    used.add(String(sub._id));
     usedClubs.set(main.clubId, (usedClubs.get(main.clubId) ?? 0) + 1);
     usedClubs.set(sub.clubId, (usedClubs.get(sub.clubId) ?? 0) + 1);
     usedNations.set(main.nationId, (usedNations.get(main.nationId) ?? 0) + 1);

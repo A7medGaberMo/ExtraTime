@@ -1,0 +1,66 @@
+{
+  "club": {
+    "apiId": 194,
+    "name": "Ajax",
+    "logo": "https://media.api-sports.io/football/teams/194.png",
+    "league": "Eredivisie",
+    "leagueId": 88
+  },
+  "players": [
+    {
+      "apiId": 626,
+      "name": "Jordan Henderson",
+      "position": "CDM/CM",
+      "club": "Ajax",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Jordan_Henderson_England_v_Ghana_23_June_2026-029_%28cropped%29.jpg",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 27329,
+      "name": "Kenneth Taylor",
+      "position": "CM/CDM",
+      "club": "Ajax",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Qaraba%C4%9F_vs_Ajax_%2824.10.2024%29_%284%29_%28Kenneth_Taylor%29.jpg",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 138815,
+      "name": "Brian Brobbey",
+      "position": "ST/CF",
+      "club": "Ajax",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/GAE_-_Ajax_-_52788469380_%28Brobbey%29.jpg",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 2489,
+      "name": "Steven Berghuis",
+      "position": "RW/CAM",
+      "club": "Ajax",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/GAE_-_Ajax_-_52788476320_%28Steven_Berghuis%29.jpg",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 138816,
+      "name": "Josip Šutalo",
+      "position": "CB",
+      "club": "Ajax",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Josip_Sutalo_Croatia_v_Portugal_2_July_2026-234.jpg",
+      "kitNumber": 37
+    }
+  ]
+}

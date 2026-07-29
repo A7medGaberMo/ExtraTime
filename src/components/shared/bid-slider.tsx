@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useCallback, useEffect, useState } from 'react';
+import { useRef, useCallback, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 interface BidSliderProps {
@@ -78,11 +78,21 @@ export function BidSlider({ value, min, max, onChange, className }: BidSliderPro
       {/* Track */}
       <div
         ref={trackRef}
+        role="slider"
+        aria-valuenow={value}
+        aria-valuemin={min}
+        aria-valuemax={max}
+        aria-label="Bid Amount Slider"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === "ArrowRight" || e.key === "ArrowUp") onChange(Math.min(max, value + 1));
+          if (e.key === "ArrowLeft" || e.key === "ArrowDown") onChange(Math.max(min, value - 1));
+        }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        className="relative h-10 flex items-center cursor-grab active:cursor-grabbing"
+        className="relative h-10 flex items-center cursor-grab active:cursor-grabbing focus:outline-none focus:ring-1 focus:ring-lime rounded-lg"
       >
         {/* Rail bg */}
         <div className="absolute inset-x-0 h-2 rounded-full bg-border/60" />

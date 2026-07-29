@@ -1,0 +1,55 @@
+{
+  "club": {
+    "apiId": 2506,
+    "name": "Al-Nassr",
+    "logo": "https://media.api-sports.io/football/teams/2506.png",
+    "league": "Saudi Pro League",
+    "leagueId": 307
+  },
+  "players": [
+    {
+      "apiId": 874,
+      "name": "Cristiano Ronaldo",
+      "position": "ST/LW",
+      "club": "Al-Nassr",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 184,
+      "name": "Sadio Mané",
+      "position": "LW/ST",
+      "club": "Al-Nassr",
+      "nation": "Senegal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Sadio_Mane_France_v_Senegal_16_June_2026-450.jpg",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 731,
+      "name": "Marcelo Brozović",
+      "position": "CDM/CM",
+      "club": "Al-Nassr",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Marcelo_Brozovi%C4%87_2021_%28cropped%29.jpg",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 1991,
+      "name": "Otávio",
+      "position": "CAM/RW",
+      "club": "Al-Nassr",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Otavio_2023_%28cropped%29.jpg",
+      "kitNumber": 25
+    }
+  ]
+}

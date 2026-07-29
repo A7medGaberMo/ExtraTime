@@ -4,6 +4,10 @@ import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Shield, Flag } from 'lucide-react';
 
+import clubLogosJson from '@/lib/clubLogos.json';
+
+const clubLogos: Record<string, string> = clubLogosJson;
+
 interface ClubCrestProps {
   clubName: string;
   clubLogoUrl?: string;
@@ -13,53 +17,17 @@ interface ClubCrestProps {
 export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestProps) {
   const [error, setError] = useState(false);
 
-  // Map known Premier League & European clubs to API logos if not explicitly provided
-  const knownLogos: Record<string, string> = {
-    'Arsenal': 'https://media.api-sports.io/football/teams/42.png',
-    'Chelsea': 'https://media.api-sports.io/football/teams/49.png',
-    'Liverpool': 'https://media.api-sports.io/football/teams/40.png',
-    'Manchester City': 'https://media.api-sports.io/football/teams/50.png',
-    'Man City': 'https://media.api-sports.io/football/teams/50.png',
-    'Manchester United': 'https://media.api-sports.io/football/teams/33.png',
-    'Man United': 'https://media.api-sports.io/football/teams/33.png',
-    'Man Utd': 'https://media.api-sports.io/football/teams/33.png',
-    'Real Madrid': 'https://media.api-sports.io/football/teams/541.png',
-    'Barcelona': 'https://media.api-sports.io/football/teams/529.png',
-    'FC Barcelona': 'https://media.api-sports.io/football/teams/529.png',
-    'Atletico Madrid': 'https://media.api-sports.io/football/teams/530.png',
-    'Atlético Madrid': 'https://media.api-sports.io/football/teams/530.png',
-    'AC Milan': 'https://media.api-sports.io/football/teams/489.png',
-    'Inter': 'https://media.api-sports.io/football/teams/505.png',
-    'Inter Milan': 'https://media.api-sports.io/football/teams/505.png',
-    'Bayern Munich': 'https://media.api-sports.io/football/teams/157.png',
-    'PSG': 'https://media.api-sports.io/football/teams/85.png',
-    'Paris Saint-Germain': 'https://media.api-sports.io/football/teams/85.png',
-    'Dynamo Moscow': 'https://media.api-sports.io/football/teams/597.png',
-    'Tottenham': 'https://media.api-sports.io/football/teams/47.png',
-    'Newcastle': 'https://media.api-sports.io/football/teams/34.png',
-    'Newcastle United': 'https://media.api-sports.io/football/teams/34.png',
-    'Aston Villa': 'https://media.api-sports.io/football/teams/66.png',
-    'Juventus': 'https://media.api-sports.io/football/teams/496.png',
-    'Napoli': 'https://media.api-sports.io/football/teams/492.png',
-    'SSC Napoli': 'https://media.api-sports.io/football/teams/492.png',
-    'Roma': 'https://media.api-sports.io/football/teams/497.png',
-    'Dortmund': 'https://media.api-sports.io/football/teams/165.png',
-    'Borussia Dortmund': 'https://media.api-sports.io/football/teams/165.png',
-    'Bayer Leverkusen': 'https://media.api-sports.io/football/teams/168.png',
-    'Ajax': 'https://media.api-sports.io/football/teams/194.png',
-    'Porto': 'https://media.api-sports.io/football/teams/212.png',
-    'Benfica': 'https://media.api-sports.io/football/teams/211.png',
-    'Sporting CP': 'https://media.api-sports.io/football/teams/228.png',
-    'Santos FC': 'https://media.api-sports.io/football/teams/121.png',
-    'Santos': 'https://media.api-sports.io/football/teams/121.png',
-    'Botafogo': 'https://media.api-sports.io/football/teams/120.png',
-    'Corinthians': 'https://media.api-sports.io/football/teams/131.png',
-    'Flamengo': 'https://media.api-sports.io/football/teams/127.png',
-    'Sevilla FC': 'https://media.api-sports.io/football/teams/536.png',
-    'Sevilla': 'https://media.api-sports.io/football/teams/536.png',
-  };
+  // Retrieve logo from the comprehensive dictionary with case-insensitive fallback mapping
+  let logoSrc = clubLogoUrl;
+  if (!logoSrc && clubName) {
+    const cleanName = clubName.trim();
+    logoSrc = clubLogos[cleanName];
+    if (!logoSrc) {
+      const normKey = cleanName.toLowerCase().replace(/[^a-z0-9]/g, '');
+      logoSrc = clubLogos[normKey];
+    }
+  }
 
-  const logoSrc = clubLogoUrl || knownLogos[clubName];
 
   return (
     <div

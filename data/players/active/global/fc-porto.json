@@ -1,0 +1,99 @@
+{
+  "club": {
+    "apiId": 212,
+    "name": "FC Porto",
+    "logo": "https://media.api-sports.io/football/teams/212.png",
+    "league": "Primeira Liga",
+    "leagueId": 94
+  },
+  "players": [
+    {
+      "apiId": 338169,
+      "name": "Samu Aghehowa",
+      "position": "ST/CF",
+      "club": "FC Porto",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Uzbekistan_vs._Spain%2C_2024_Summer_Olympic_men%27s_association_football%2C_2024-07-24_%28471%29_-_Samu.jpg",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 2146,
+      "name": "Diogo Costa",
+      "position": "GK",
+      "club": "FC Porto",
+      "nation": "Portugal",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Diogo_Costa_Croatia_v_Portugal_2_July_2026-188_%28cropped%29.jpg",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 114940,
+      "name": "Alan Varela",
+      "position": "CDM/CM",
+      "club": "FC Porto",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/FC_Salzburg_gegen_FC_Porto_%282025-09-25_UEFA_Euro_League_%29_63_%28Alan_Varela%29.jpg",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 127909,
+      "name": "Gabri Veiga",
+      "position": "CM/CAM",
+      "club": "FC Porto",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/127909.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 1989,
+      "name": "Pepê",
+      "position": "RW/LW",
+      "club": "FC Porto",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Pep%C3%AA_-_Porto_-_2023.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 445212,
+      "name": "Alberto Costa",
+      "position": "LB/LM",
+      "club": "FC Porto",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/445212.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 495812,
+      "name": "William Gomes",
+      "position": "LW/RW",
+      "club": "FC Porto",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/495812.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 739,
+      "name": "Thiago Silva",
+      "position": "CB",
+      "club": "FC Porto",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Thiago_Silva_850_1582.jpg",
+      "kitNumber": 3
+    }
+  ]
+}

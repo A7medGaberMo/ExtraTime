@@ -21,9 +21,12 @@ export const metadata: Metadata = {
   title: 'ExtraTime | Live Multiplayer Football Auction & Draft Game',
   description: 'Draft legendary football icons in real-time escalating auctions (Hidden Bid). Complete squads with 11P and 5P futsal formations, tactical Scout & Spy perks, and underdog budget bonuses!',
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/logos/et-logo-primary.svg',
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico' }
+    ],
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
   },
   openGraph: {
     title: 'ExtraTime | Live Multiplayer Football Auction Game',

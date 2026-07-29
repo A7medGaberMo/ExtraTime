@@ -1,0 +1,44 @@
+{
+  "club": {
+    "apiId": 2503,
+    "name": "Al-Ittihad",
+    "logo": "https://media.api-sports.io/football/teams/2503.png",
+    "league": "Saudi Pro League",
+    "leagueId": 307
+  },
+  "players": [
+    {
+      "apiId": 751,
+      "name": "Karim Benzema",
+      "position": "ST/CF",
+      "club": "Al-Ittihad",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Karim_Benzema_Pick.jpg",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 1206,
+      "name": "Moussa Diaby",
+      "position": "RW/LW",
+      "club": "Al-Ittihad",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Moussa_Diaby%2C_2022-07-31%2C_Saisoner%C3%B6ffnung_Bayer_04%2C_Leverkusen_%281%29.jpg",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 1108,
+      "name": "Predrag Rajković",
+      "position": "GK",
+      "club": "Al-Ittihad",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1108.png",
+      "kitNumber": 1
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Shield, Loader2, Clock, Layers } from "lucide-react";
+import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Shield, Loader2, Clock } from "lucide-react";
 
 type PoolMode = "GLOBAL" | "EPL" | "ICONS";
 
@@ -34,8 +34,9 @@ export default function HomePage() {
       localStorage.setItem("extratime_guestId", userId);
       const result = await findMatch({ userId, matchSize, poolMode });
       router.push(`/auction/${result.roomId}`);
-    } catch (error: any) {
-      alert(error.message || "Could not start matchmaking");
+    } catch (error: unknown) {
+      const err = error as { message?: string };
+      alert(err.message || "Could not start matchmaking");
       setLoading(false);
     }
   }

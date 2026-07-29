@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState, useEffect } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
@@ -19,11 +19,9 @@ export default function JoinRoomPage() {
   const createGuest = useMutation(api.guests.mutations.create);
   const joinRoom = useMutation(api.rooms.mutations.join);
 
-  const [nickname, setNickname] = useState("");
+  const [nickname, setNickname] = useState(() => randomName());
   const [roomCode, setRoomCode] = useState("");
   const [loading, setLoading] = useState(false);
-
-  useEffect(() => { setNickname(randomName()); }, []);
 
   const normalizedCode = roomCode.replace(/[^A-Z0-9]/g, "").slice(0, 6).toUpperCase();
   const room = useQuery(api.rooms.queries.getByCode, normalizedCode.length === 6 ? { code: normalizedCode } : "skip");
@@ -56,8 +54,9 @@ export default function JoinRoomPage() {
       localStorage.setItem("extratime_guestId", guestId);
       const result = await joinRoom({ roomId: room!._id, guestId });
       router.push(`/auction/${result.roomId}`);
-    } catch (error: any) {
-      alert(error.message || "Could not join room");
+    } catch (error: unknown) {
+      const err = error as { message?: string };
+      alert(err.message || "Could not join room");
       setLoading(false);
     }
   }

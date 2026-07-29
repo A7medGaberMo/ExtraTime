@@ -1,0 +1,99 @@
+{
+  "club": {
+    "apiId": 645,
+    "name": "Galatasaray",
+    "logo": "https://media.api-sports.io/football/teams/645.png",
+    "league": "Süper Lig",
+    "leagueId": 203
+  },
+  "players": [
+    {
+      "apiId": 1531,
+      "name": "Victor Osimhen",
+      "position": "ST/CF",
+      "club": "Galatasaray",
+      "nation": "Nigeria",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Victor-osimhen-nigeria-2024-3-4.jpg",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 1478,
+      "name": "Mauro Icardi",
+      "position": "ST/CF",
+      "club": "Galatasaray",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mauro_Icardi_en_2025.jpg",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 629,
+      "name": "İlkay Gündoğan",
+      "position": "CM/CAM",
+      "club": "Galatasaray",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/20180602_FIFA_Friendly_Match_Austria_vs._Germany_%C4%B0lkay_G%C3%BCndo%C4%9Fan_850_0728.jpg",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 635,
+      "name": "Leroy Sané",
+      "position": "RW/LW",
+      "club": "Galatasaray",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Leroy_Sane_Ecuador_v_Germany_25_June_2026-119_%28cropped%29.jpg",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 27958,
+      "name": "Barış Alper Yılmaz",
+      "position": "RW/LB",
+      "club": "Galatasaray",
+      "nation": "Turkey",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz_20251019.jpg/3840px-Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz_20251019.jpg",
+      "kitNumber": 53
+    },
+    {
+      "apiId": 114,
+      "name": "Lucas Torreira",
+      "position": "CDM/CM",
+      "club": "Galatasaray",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lucas_Torreira_2019.jpg",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 38166,
+      "name": "Yunus Akgün",
+      "position": "LW/RW",
+      "club": "Galatasaray",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Yunus_Akg%C3%BCn_20220225_7_%28cropped%29.jpg",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 20359,
+      "name": "Abdülkerim Bardakçı",
+      "position": "CB/LB",
+      "club": "Galatasaray",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Abd%C3%BClkerim_Bardak%C3%A7%C4%B1_-_beIN-Sports-Reklam_%282021%29_%28cropped%29.png",
+      "kitNumber": 42
+    }
+  ]
+}

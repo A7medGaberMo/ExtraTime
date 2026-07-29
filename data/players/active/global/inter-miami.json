@@ -1,0 +1,55 @@
+{
+  "club": {
+    "apiId": 1598,
+    "name": "Inter Miami",
+    "logo": "https://media.api-sports.io/football/teams/1598.png",
+    "league": "MLS",
+    "leagueId": 253
+  },
+  "players": [
+    {
+      "apiId": 154,
+      "name": "Lionel Messi",
+      "position": "RW/ST",
+      "club": "Inter Miami",
+      "nation": "Argentina",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 147,
+      "name": "Sergio Busquets",
+      "position": "CDM/CM",
+      "club": "Inter Miami",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Sergio_Busquets_NYCFC_Miami_24_Sep_2025-020_%28cropped%29.jpg",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 153,
+      "name": "Luis Suárez",
+      "position": "ST/CF",
+      "club": "Inter Miami",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Luis_Su%C3%A1rez_2026_%28cropped%29.jpg",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 146,
+      "name": "Jordi Alba",
+      "position": "LB/LM",
+      "club": "Inter Miami",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Jordi_Alba_NE_Revolution_Inter_Miami_7.9.25-047_%28cropped%29.jpg",
+      "kitNumber": 18
+    }
+  ]
+}

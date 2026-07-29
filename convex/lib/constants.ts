@@ -63,6 +63,12 @@ export const LEAGUE_COUNTRY: Record<string, string> = {
   "Eredivisie": "Netherlands",
   "Primeira Liga": "Portugal",
   "Super Lig": "Turkey",
+  "Süper Lig": "Turkey",
   "Scottish Premiership": "Scotland",
+  "Brasileirão": "Brazil",
+  "MLS": "USA",
+  "Saudi Pro League": "Saudi Arabia",
+  "Belgian Pro League": "Belgium",
   "Global Legends": "International",
 };
+

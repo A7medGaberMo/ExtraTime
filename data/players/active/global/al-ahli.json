@@ -1,0 +1,88 @@
+{
+  "club": {
+    "apiId": 2502,
+    "name": "Al-Ahli",
+    "logo": "https://media.api-sports.io/football/teams/2502.png",
+    "league": "Saudi Pro League",
+    "leagueId": 307
+  },
+  "players": [
+    {
+      "apiId": 18911,
+      "name": "Ivan Toney",
+      "position": "ST/CF",
+      "club": "Al-Ahli",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ivan_Toney_England_v_Ghana_23_June_2026-051.jpg",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 1153,
+      "name": "Riyad Mahrez",
+      "position": "RW/RM",
+      "club": "Al-Ahli",
+      "nation": "Algeria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Mahrez_2021.jpg",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 158,
+      "name": "Roberto Firmino",
+      "position": "ST/CAM",
+      "club": "Al-Ahli",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Roberto_Firmino_850_1557.jpg",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 732,
+      "name": "Franck Kessié",
+      "position": "CM/CDM",
+      "club": "Al-Ahli",
+      "nation": "Ivory Coast",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Franck_Kessie_Cote_D%27Ivoire_v_Ecuador_14_June_2026-15_%28cropped%29.jpg",
+      "kitNumber": 79
+    },
+    {
+      "apiId": 2112,
+      "name": "Wenderson Galeno",
+      "position": "LW/LM",
+      "club": "Al-Ahli",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2112.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 1582,
+      "name": "Édouard Mendy",
+      "position": "GK",
+      "club": "Al-Ahli",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Edouard_Mendy_France_v_Senegal_16_June_2026-375_%28cropped%29.jpg",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 27301,
+      "name": "Enzo Millot",
+      "position": "CAM/CM",
+      "club": "Al-Ahli",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Enzo_millot.jpg",
+      "kitNumber": 8
+    }
+  ]
+}

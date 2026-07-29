@@ -6,18 +6,14 @@ import { useQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
 import { PageHeader } from "@/components/shared/page-header";
-import { Copy, Users, Settings2, Clock, Check, Loader2, ArrowRight } from "lucide-react";
+import { useGuestSession } from "@/hooks/use-guest-session";
+import { Copy, Users, Settings2, Clock, Check, ArrowRight } from "lucide-react";
 
 export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
   const [copied, setCopied] = useState(false);
-  const [guestId, setGuestId] = useState<Id<"guestUsers"> | null>(null);
-
-  useEffect(() => {
-    const id = localStorage.getItem("extratime_guestId") as Id<"guestUsers">;
-    if (id) setGuestId(id);
-  }, []);
+  const { guestId } = useGuestSession();
 
   const state = useQuery(
     api.auctions.queries.getState,

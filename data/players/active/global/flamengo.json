@@ -1,0 +1,110 @@
+{
+  "club": {
+    "apiId": 127,
+    "name": "Flamengo",
+    "logo": "https://media.api-sports.io/football/teams/127.png",
+    "league": "Brasileirão",
+    "leagueId": 71
+  },
+  "players": [
+    {
+      "apiId": 1152,
+      "name": "Lucas Paquetá",
+      "position": "CAM/CM",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Lucas_Paqueta_Brazil_V_Morocco_13_June_2026-134_%28cropped%29.jpg",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 1009,
+      "name": "Giorgian de Arrascaeta",
+      "position": "CAM/LW",
+      "club": "Flamengo",
+      "nation": "Uruguay",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Giorgian_De_Arrascaeta_20171114_AUT_URU_4546_%28cropped%29.jpg",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 2541,
+      "name": "Pedro",
+      "position": "ST/CF",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/2025-02-18_Pedro_Guilherme_Abreu_dos_Santos.jpg",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 10640,
+      "name": "Samuel Lino",
+      "position": "LM/LW",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Samuel_Lino%2C_FC_Salzburg_vs._Atletico_Madrid_%282025-01-29_UEFA_Championsleague%29_83_%28cropped%29.jpg",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 9687,
+      "name": "Léo Ortiz",
+      "position": "CB/CDM",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/LEO_ORTIZ_X_FLU_-_ONE9_CONTENT_-_GABRIEL_NUFFER_2024-7.jpg",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 1010,
+      "name": "Léo Pereira",
+      "position": "CB/LB",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Leo_Pereira_Brazil_V_Morocco_13_June_2026-136_%28cropped%29.jpg",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 1102,
+      "name": "Erick Pulgar",
+      "position": "CDM/CM",
+      "club": "Flamengo",
+      "nation": "Chile",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/ErickPulgar.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 1209,
+      "name": "Jorginho",
+      "position": "CM/CDM",
+      "club": "Flamengo",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Jorginho%2C_2021_%28cropped%29.jpg",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 2153,
+      "name": "Bruno Henrique",
+      "position": "LW/ST",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Bruno-Henrique-Flamengo-2021.jpg",
+      "kitNumber": 27
+    }
+  ]
+}

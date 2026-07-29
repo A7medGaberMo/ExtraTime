@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { PlayerCardData } from "@/types/player";
-import { Shield, Layers, Shirt } from "lucide-react";
+import { Shield, Layers } from "lucide-react";
 
 export interface SquadSlot {
   position: string;
@@ -20,6 +20,17 @@ interface TacticalPitchProps {
   badgeLabel?: string;
   compact?: boolean;
 }
+
+/* Tier accent color map for player node glows */
+const TIER_ACCENT_COLORS: Record<string, string> = {
+  ICON: "#D4AF37",
+  MASTER: "#9333EA",
+  ELITE_PLUS: "#0284C7",
+  ELITE: "#E11D48",
+  GOLD: "#EAB308",
+  SILVER: "#94A3B8",
+  BRONZE: "#D97706",
+};
 
 // Relative pitch percentage coordinates (x: left-right, y: bottom-up from GK at bottom to ST at top)
 const FORMATION_COORDS_11: Record<string, Array<{ pos: string; x: number; y: number }>> = {
@@ -120,7 +131,7 @@ export function TacticalPitch({
   squad,
   title = "Tactical Formation",
   accentColor = "#95E810",
-  badgeLabel = "Live Tactical Broadcast",
+  badgeLabel = "Live Broadcast",
   compact = false,
 }: TacticalPitchProps) {
   const [is3DView, setIs3DView] = useState(!compact);
@@ -129,9 +140,11 @@ export function TacticalPitch({
   const positions = coordsMap[formation] || coordsMap[matchSize === 5 ? "1-2-1" : "4-3-3"];
 
   return (
-    <div className={`relative w-full rounded-3xl overflow-hidden border border-border bg-card shadow-2xl space-y-3 ${
-      compact ? "p-3" : "p-4 md:p-6 space-y-4"
-    }`}>
+    <div
+      className={`relative w-full rounded-3xl overflow-hidden border border-border/80 bg-slate-950/90 shadow-2xl space-y-3 ${
+        compact ? "p-3" : "p-4 md:p-6 space-y-4"
+      }`}
+    >
       {/* Broadcast Header */}
       <div className="flex items-center justify-between border-b border-border/80 pb-2.5 flex-wrap gap-2">
         <div className="flex items-center gap-2">
@@ -165,84 +178,150 @@ export function TacticalPitch({
         </div>
       </div>
 
-      {/* Pitch Container */}
-      <div className={`relative w-full rounded-2xl overflow-hidden bg-gradient-to-b from-[#092612] via-[#0e3b1c] to-[#082210] border border-lime/20 shadow-2xl flex items-center justify-center p-2 ${
-        compact ? "h-[280px] sm:h-[320px]" : "h-[380px] sm:h-[460px] md:h-[500px]"
-      }`}>
+      {/* Stadium Pitch Container */}
+      <div
+        className={`relative w-full rounded-2xl overflow-hidden bg-gradient-to-b from-[#0a2e16] via-[#104220] to-[#072411] border border-lime/30 shadow-[0_0_40px_rgba(0,0,0,0.8)] flex items-center justify-center p-2 ${
+          compact ? "h-[300px] sm:h-[340px]" : "h-[400px] sm:h-[480px] md:h-[530px]"
+        }`}
+      >
         <div
           className={`relative w-full h-full transition-transform duration-700 ${
-            is3DView ? "transform [transform:perspective(1000px)_rotateX(24deg)_scale(0.95)] origin-bottom" : ""
+            is3DView ? "transform [transform:perspective(1000px)_rotateX(22deg)_scale(0.96)] origin-bottom" : ""
           }`}
         >
-          {/* Turf pattern stripes */}
-          <div className="absolute inset-0 opacity-25 pointer-events-none bg-[repeating-linear-gradient(0deg,#ffffff_0px,#ffffff_1px,transparent_1px,transparent_40px)]" />
+          {/* Turf stripes pattern */}
+          <div className="absolute inset-0 opacity-20 pointer-events-none bg-[repeating-linear-gradient(0deg,#ffffff_0px,#ffffff_2px,transparent_2px,transparent_48px)]" />
 
-          {/* SVG Pitch Markings */}
-          <svg className="absolute inset-0 w-full h-full stroke-white/30 fill-none stroke-[1.5]" preserveAspectRatio="none" viewBox="0 0 100 100">
+          {/* Stadium Pitch Markings */}
+          <svg
+            className="absolute inset-0 w-full h-full stroke-white/40 fill-none stroke-[1.5]"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 100"
+          >
+            {/* Outer Boundary */}
             <rect x="2" y="2" width="96" height="96" rx="2" />
+            {/* Corner Arcs */}
             <path d="M 2 6 A 4 4 0 0 0 6 2" />
             <path d="M 94 2 A 4 4 0 0 0 98 6" />
             <path d="M 2 94 A 4 4 0 0 1 6 98" />
             <path d="M 94 98 A 4 4 0 0 1 98 94" />
+            {/* Halfway Line & Center Circle */}
             <line x1="2" y1="50" x2="98" y2="50" />
             <circle cx="50" cy="50" r="14" />
-            <circle cx="50" cy="50" r="0.9" fill="#ffffff" />
-            <rect x="42" y="0.5" width="16" height="1.5" fill="#ffffff" opacity="0.6" />
-            <rect x="42" y="98" width="16" height="1.5" fill="#ffffff" opacity="0.6" />
+            <circle cx="50" cy="50" r="1" fill="#ffffff" />
+            {/* Goals */}
+            <rect x="42" y="0.5" width="16" height="1.5" fill="#ffffff" opacity="0.7" />
+            <rect x="42" y="98" width="16" height="1.5" fill="#ffffff" opacity="0.7" />
+            {/* Bottom Penalty Box (Home) */}
             <rect x="24" y="76" width="52" height="22" />
             <rect x="36" y="88" width="28" height="10" />
             <path d="M 38 76 A 12 12 0 0 1 62 76" />
-            <circle cx="50" cy="84" r="0.9" fill="#ffffff" />
+            <circle cx="50" cy="84" r="1" fill="#ffffff" />
+            {/* Top Penalty Box (Away) */}
             <rect x="24" y="2" width="52" height="22" />
             <rect x="36" y="2" width="28" height="10" />
             <path d="M 38 24 A 12 12 0 0 0 62 24" />
-            <circle cx="50" cy="16" r="0.9" fill="#ffffff" />
+            <circle cx="50" cy="16" r="1" fill="#ffffff" />
           </svg>
 
-          {/* Broadcast Player Pins - exact indexing by roundNumber or position slot */}
+          {/* Authentic Broadcast Player Nodes */}
           {positions.map((item, idx) => {
-            const slot = squad.find((s: SquadSlot & { roundNumber?: number }) => s.roundNumber === idx + 1) || squad[idx];
+            const slot =
+              squad.find((s: SquadSlot & { roundNumber?: number }) => s.roundNumber === idx + 1) || squad[idx];
             const hasPlayer = Boolean(slot?.player);
-            const playerName = slot?.player?.name || item.pos;
+            const player = slot?.player;
+            const tierColor = TIER_ACCENT_COLORS[player?.tier as string] ?? "#95E810";
 
             return (
               <div
                 key={`${item.pos}-${idx}`}
-                className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1 transition-all duration-500 hover:scale-110 z-10 cursor-pointer"
+                className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1 transition-all duration-500 hover:scale-110 z-10 cursor-pointer group"
                 style={{ left: `${item.x}%`, top: `${100 - item.y}%` }}
               >
-                {/* Team Jersey Kit Circle Pin */}
-                <div
-                  className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 flex items-center justify-center shadow-2xl transition-all ${
-                    hasPlayer
-                      ? "bg-slate-950 border-lime text-lime shadow-lime/40 animate-pulse-glow"
-                      : "bg-black/70 border-white/20 text-steel"
-                  }`}
-                  style={{
-                    borderColor: hasPlayer ? accentColor : undefined,
-                    boxShadow: hasPlayer ? `0 0 20px ${accentColor}50` : undefined,
-                  }}
-                >
-                  {hasPlayer ? (
-                    <Shirt className="w-5 h-5" style={{ color: accentColor }} />
-                  ) : (
-                    <span className="text-xs font-black uppercase text-white">{item.pos}</span>
-                  )}
-                </div>
+                {hasPlayer && player ? (
+                  /* ── ACQUIRED PLAYER BADGE NODE ──────────────────── */
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="relative w-11 h-11 sm:w-14 sm:h-14 rounded-2xl p-0.5 border-2 shadow-[0_0_25px_rgba(0,0,0,0.9)] bg-slate-950 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
+                      style={{
+                        borderColor: tierColor,
+                        boxShadow: `0 0 20px ${tierColor}60`,
+                      }}
+                    >
+                      {/* Player Image or Initial Avatar */}
+                      {player.imageUrl ? (
+                        <img
+                          src={player.imageUrl}
+                          alt={player.name}
+                          className="w-full h-full object-cover rounded-xl"
+                          onError={(e) => {
+                            (e.target as HTMLElement).style.display = "none";
+                          }}
+                        />
+                      ) : (
+                        <div
+                          className="w-full h-full rounded-xl flex items-center justify-center font-black text-sm uppercase"
+                          style={{ backgroundColor: `${tierColor}20`, color: tierColor }}
+                        >
+                          {player.name
+                            ? player.name
+                                .split(" ")
+                                .map((n) => n[0])
+                                .slice(0, 2)
+                                .join("")
+                            : item.pos}
+                        </div>
+                      )}
 
-                {/* Player Tag Pill */}
-                <div
-                  className={`px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wide truncate max-w-[85px] sm:max-w-[105px] text-center border shadow-xl backdrop-blur-md transition-all ${
-                    hasPlayer
-                      ? "bg-slate-950/90 text-white border-lime/50"
-                      : "bg-black/80 text-steel border-white/10"
-                  }`}
-                  style={{
-                    borderColor: hasPlayer ? `${accentColor}80` : undefined,
-                  }}
-                >
-                  {playerName}
-                </div>
+                      {/* Position Tag Pill */}
+                      <span
+                        className="absolute -top-2 -left-2 px-1.5 py-0.2 text-[8px] sm:text-[9px] font-black uppercase rounded-md border shadow-md"
+                        style={{
+                          backgroundColor: "#090d16",
+                          color: tierColor,
+                          borderColor: `${tierColor}80`,
+                        }}
+                      >
+                        {slot.position || item.pos}
+                      </span>
+
+                      {/* Sub Tag Indicator */}
+                      {slot.isSub && (
+                        <span className="absolute -top-2 -right-2 px-1 py-0.2 text-[7px] font-black uppercase bg-amber-500 text-slate-950 rounded border border-amber-300 shadow-md">
+                          SUB
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Name & Cost Badge */}
+                    <div
+                      className="mt-1 px-2 py-0.5 rounded-lg text-[9px] sm:text-[10px] font-black uppercase tracking-wide text-center border shadow-xl backdrop-blur-md max-w-[90px] sm:max-w-[115px] truncate flex items-center gap-1"
+                      style={{
+                        backgroundColor: "rgba(9, 13, 22, 0.95)",
+                        borderColor: `${tierColor}60`,
+                        color: "#FFFFFF",
+                      }}
+                    >
+                      <span className="truncate">{player.name}</span>
+                      {(slot.cost ?? 0) > 0 && (
+                        <span className="text-[8px] text-lime shrink-0">${slot.cost}M</span>
+                      )}
+                    </div>
+                  </div>
+                ) : (
+                  /* ── OPEN TARGET SLOT NODE ──────────────────────── */
+                  <div className="flex flex-col items-center">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl border-2 border-dashed border-white/30 bg-black/60 backdrop-blur-md flex items-center justify-center shadow-lg transition-all group-hover:border-lime/60 group-hover:bg-lime/10">
+                      <span className="text-xs sm:text-sm font-black uppercase text-steel group-hover:text-lime">
+                        {item.pos}
+                      </span>
+                    </div>
+
+                    <div className="mt-1 px-2 py-0.5 rounded-md text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-steel/70 bg-black/70 border border-white/10">
+                      Open Slot
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}

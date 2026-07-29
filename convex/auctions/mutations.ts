@@ -120,12 +120,6 @@ export const placeBid = mutation({
     const opponent = auction.host.userId === args.userId ? auction.guest : auction.host;
     if (!opponent) throw new Error("Waiting for opponent");
 
-    // FIX: Use strict less-than — opponent should get a chance to match equal bids
-    if (opponent.budget < args.amount) {
-      await resolveRound(ctx, args.roomId, auction, args.userId, args.amount);
-      return { resolved: true, reason: "UNBEATABLE_BID" };
-    }
-
     await ctx.db.patch(auction._id, {
       currentBidding: {
         highestBid: args.amount,

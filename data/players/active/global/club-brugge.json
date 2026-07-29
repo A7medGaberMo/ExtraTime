@@ -1,0 +1,66 @@
+{
+  "club": {
+    "apiId": 569,
+    "name": "Club Brugge",
+    "logo": "https://media.api-sports.io/football/teams/569.png",
+    "league": "Belgian Pro League",
+    "leagueId": 144
+  },
+  "players": [
+    {
+      "apiId": 1509,
+      "name": "Andreas Skov Olsen",
+      "position": "RW/RM",
+      "club": "Club Brugge",
+      "nation": "Denmark",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1509.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 27311,
+      "name": "Hans Vanaken",
+      "position": "CAM/CM",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Hans_Vanaken_Lommel_United.jpg",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 27312,
+      "name": "Maxim De Cuyper",
+      "position": "LB/LM",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Maxim_De_Cuyper_USMNT_v_Belgium_Mar_28_2026-79_%28cropped%29.jpg",
+      "kitNumber": 55
+    },
+    {
+      "apiId": 27313,
+      "name": "Christos Tzolis",
+      "position": "LW/LM",
+      "club": "Club Brugge",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Sweden_-_Greece22_%28cropped%29.jpg",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 18910,
+      "name": "Simon Mignolet",
+      "position": "GK",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Simon_Mignolet_2018.jpg",
+      "kitNumber": 22
+    }
+  ]
+}

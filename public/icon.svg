@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="et-lime-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B8F036" />
+      <stop offset="50%" stop-color="#95E810" />
+      <stop offset="100%" stop-color="#65B307" />
+    </linearGradient>
+    <linearGradient id="et-gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7CC" />
+      <stop offset="30%" stop-color="#FDE68A" />
+      <stop offset="60%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#02050A" rx="44" />
+  <g transform="translate(0, 0)">
+    <!-- E Monogram Slash -->
+    <path d="M 45 40 L 115 40 L 105 68 L 65 68 L 59 86 L 95 86 L 85 114 L 49 114 L 41 138 L 85 138 L 75 166 L 5 166 Z" fill="#FFFFFF" />
+    <!-- T Monogram Slash -->
+    <path d="M 85 40 L 190 40 L 180 68 L 148 68 L 114 166 L 82 166 L 116 68 L 75 68 Z" fill="url(#et-lime-grad)" />
+  </g>
+</svg>

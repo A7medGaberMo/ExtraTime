@@ -12,7 +12,7 @@ export default function NotFound() {
         <div className="space-y-2">
           <h1 className="text-4xl font-extrabold text-slate-50 tracking-tight">Offside!</h1>
           <p className="text-slate-400 text-lg">
-            Looks like you've strayed past the last defender. This page doesn't exist.
+            Looks like you&apos;ve strayed past the last defender. This page doesn&apos;t exist.
           </p>
         </div>
         

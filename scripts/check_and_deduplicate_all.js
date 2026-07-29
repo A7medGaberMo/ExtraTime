@@ -1,79 +1,87 @@
 const fs = require('fs');
 const path = require('path');
 
-function getAllJsonFiles(dir, fileList = []) {
-  const files = fs.readdirSync(dir);
-  files.forEach(file => {
-    const filePath = path.join(dir, file);
-    if (fs.statSync(filePath).isDirectory()) {
-      getAllJsonFiles(filePath, fileList);
-    } else if (file.endsWith('.json') && file !== 'README.md' && file !== 'legends.json') {
-      fileList.push(filePath);
+const baseDir = path.join(__dirname, '..', 'data', 'players', 'active');
+
+function getAllFiles(dirPath, arrayOfFiles = []) {
+  const files = fs.readdirSync(dirPath);
+  files.forEach((file) => {
+    const fullPath = path.join(dirPath, file);
+    if (fs.statSync(fullPath).isDirectory()) {
+      arrayOfFiles = getAllFiles(fullPath, arrayOfFiles);
+    } else if (file.endsWith(".json")) {
+      arrayOfFiles.push(fullPath);
     }
   });
-  return fileList;
+  return arrayOfFiles;
 }
 
-const activeDir = path.join(__dirname, '..', 'data', 'players', 'active');
-const allFiles = getAllJsonFiles(activeDir);
+const jsonFiles = getAllFiles(baseDir);
 
-const playerMap = new Map(); // key: apiId or normalized name
-const duplicates = [];
-const intraDuplicates = [];
+// Mapping of player names to remove from specific former clubs
+const cleanupTargets = [
+  { name: "Osimhen", formerClub: "Napoli" },
+  { name: "Gündoğan", formerClub: "Barcelona" },
+  { name: "Gündogan", formerClub: "Barcelona" },
+  { name: "Sané", formerClub: "Bayern" },
+  { name: "Sane", formerClub: "Bayern" },
+  { name: "Asensio", formerClub: "Paris" },
+  { name: "Škriniar", formerClub: "Paris" },
+  { name: "Skriniar", formerClub: "Paris" },
+  { name: "Kanté", formerClub: "Chelsea" },
+  { name: "Kante", formerClub: "Chelsea" },
+  { name: "Lino", formerClub: "Atlético" },
+  { name: "Lino", formerClub: "Atletico" },
+  { name: "Pereira", formerClub: "Fulham" },
+  { name: "Felipe Anderson", formerClub: "Lazio" },
+  { name: "Núñez", formerClub: "Liverpool" },
+  { name: "Nunez", formerClub: "Liverpool" },
+  { name: "Hernández", formerClub: "Milan" },
+  { name: "Hernandez", formerClub: "Milan" },
+  { name: "Cancelo", formerClub: "Barcelona" },
+  { name: "Cancelo", formerClub: "Manchester City" },
+  { name: "Koulibaly", formerClub: "Chelsea" },
+  { name: "Toney", formerClub: "Brentford" },
+  { name: "Mahrez", formerClub: "Manchester City" },
+  { name: "Kessié", formerClub: "Barcelona" },
+  { name: "Kessie", formerClub: "Barcelona" },
+  { name: "Galeno", formerClub: "Porto" },
+  { name: "Mendy", formerClub: "Chelsea" },
+  { name: "Millot", formerClub: "Stuttgart" },
+  { name: "Diaby", formerClub: "Aston Villa" },
+  { name: "Henderson", formerClub: "Liverpool" },
+  { name: "Henderson", formerClub: "Al-Ettifaq" }
+];
 
-let totalPlayersCount = 0;
+let removedCount = 0;
 
-allFiles.forEach(filePath => {
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  const clubName = data.club?.name || path.basename(filePath, '.json');
-  const seenInClub = new Set();
+for (const filePath of jsonFiles) {
+  let fileModified = false;
+  const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  if (!data.players || !Array.isArray(data.players)) continue;
 
-  data.players.forEach((player, index) => {
-    totalPlayersCount++;
-    const apiIdKey = player.apiId ? `apiId:${player.apiId}` : null;
-    const nameKey = `name:${player.name.toLowerCase().trim()}`;
-    const key = apiIdKey || nameKey;
+  const initialCount = data.players.length;
 
-    // Check intra-club duplicate
-    if (seenInClub.has(key)) {
-      intraDuplicates.push({ club: clubName, name: player.name, apiId: player.apiId, index, filePath });
-    } else {
-      seenInClub.add(key);
+  data.players = data.players.filter(p => {
+    // Check if this player matches any of the cleanup targets
+    const shouldRemove = cleanupTargets.some(target => {
+      const nameMatch = p.name.includes(target.name) || target.name.includes(p.name);
+      const clubMatch = data.club.name.toLowerCase().includes(target.formerClub.toLowerCase());
+      return nameMatch && clubMatch;
+    });
+
+    if (shouldRemove) {
+      console.log(`❌ Removing duplicate/former player: ${p.name} from club: ${data.club.name}`);
+      removedCount++;
+      fileModified = true;
+      return false;
     }
-
-    // Check cross-club duplicate
-    if (playerMap.has(key)) {
-      const existing = playerMap.get(key);
-      if (existing.club !== clubName) {
-        duplicates.push({
-          key,
-          name: player.name,
-          apiId: player.apiId,
-          clubA: existing.club,
-          fileA: existing.filePath,
-          indexA: existing.index,
-          clubB: clubName,
-          fileB: filePath,
-          indexB: index
-        });
-      }
-    } else {
-      playerMap.set(key, { name: player.name, club: clubName, filePath, index });
-    }
+    return true;
   });
-});
 
-console.log(`=== DUPLICATE AUDIT SUMMARY ===`);
-console.log(`Total active players scanned: ${totalPlayersCount}`);
-console.log(`Intra-club duplicates found: ${intraDuplicates.length}`);
-console.log(`Cross-club duplicates found: ${duplicates.length}`);
-
-if (intraDuplicates.length > 0) {
-  console.log(`\nIntra-club duplicates:`);
-  intraDuplicates.forEach(d => console.log(`  - [${d.club}] ${d.name} (apiId: ${d.apiId})`));
+  if (fileModified) {
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+  }
 }
 
-if (duplicates.length > 0) {
-  console.log(`\nCross-club duplicates:`);
-  duplicates.forEach(d => console.log(`  - ${d.name} (apiId: ${d.apiId}): [${d.clubA}] vs [${d.clubB}]`));
-}
+console.log(`\n🎉 Cleanup complete. Total players removed: ${removedCount}`);
