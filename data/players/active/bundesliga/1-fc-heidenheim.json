@@ -1,0 +1,319 @@
+{
+  "club": {
+    "apiId": 180,
+    "name": "1. FC Heidenheim",
+    "logo": "https://media.api-sports.io/football/teams/180.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 40271,
+      "name": "T. Dähne",
+      "position": "GK",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/40271.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 328008,
+      "name": "Frank  Feller",
+      "position": "GK",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/328008.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 668442,
+      "name": "Felix Mark",
+      "position": "GK",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/668442.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 207229,
+      "name": "P. Tschernuth",
+      "position": "GK",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/207229.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 24897,
+      "name": "M. Busch",
+      "position": "CB",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24897.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 24979,
+      "name": "J. Föhrenbach",
+      "position": "CB",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24979.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 431917,
+      "name": "Adam Kölle",
+      "position": "CB",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/431917.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 24899,
+      "name": "P. Mainka",
+      "position": "CB",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24899.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 282953,
+      "name": "O. Mhamdi",
+      "position": "CB",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/282953.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 177815,
+      "name": "T. Siersleben",
+      "position": "CB",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/177815.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 620936,
+      "name": "M. Zrilic",
+      "position": "CB",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/620936.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 8959,
+      "name": "A. Beck",
+      "position": "CM",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8959.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 25232,
+      "name": "M. Costly",
+      "position": "CM",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25232.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 24904,
+      "name": "N. Dorsch",
+      "position": "CM",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24904.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 25203,
+      "name": "B. Gimber",
+      "position": "CM",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25203.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 327887,
+      "name": "Luka Janes",
+      "position": "CM",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327887.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 280055,
+      "name": "L. Kerber",
+      "position": "CM",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280055.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 203011,
+      "name": "J. Niehues",
+      "position": "CM",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203011.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 127619,
+      "name": "J. Schöppner",
+      "position": "CM",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/127619.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 128849,
+      "name": "M. Breunig",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/128849.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 64302,
+      "name": "C. Conteh",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64302.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 125720,
+      "name": "S. Conteh",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/125720.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 336031,
+      "name": "P. Hennrich",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336031.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 24955,
+      "name": "M. Honsak",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24955.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 15732,
+      "name": "M. Kaufmann",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/15732.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 178106,
+      "name": "M. Pieringer",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178106.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 480613,
+      "name": "Y. Wagner",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/480613.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 24641,
+      "name": "B. Zivzivadze",
+      "position": "ST",
+      "club": "1. FC Heidenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24641.png",
+      "kitNumber": 11
+    }
+  ]
+}

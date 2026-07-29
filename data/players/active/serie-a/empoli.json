@@ -1,0 +1,198 @@
+{
+  "club": {
+    "apiId": 511,
+    "name": "Empoli",
+    "logo": "https://media.api-sports.io/football/teams/511.png",
+    "league": "serie-a",
+    "leagueId": 135
+  },
+  "players": [
+    {
+      "apiId": 30794,
+      "name": "S. Perisan",
+      "position": "GK",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30794.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 31040,
+      "name": "M. Curto",
+      "position": "CB",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31040.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 340706,
+      "name": "G. Guarino",
+      "position": "CB",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/340706.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 340697,
+      "name": "G. Indragoli",
+      "position": "CB",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/340697.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 422152,
+      "name": "L. Tosto",
+      "position": "CB",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/422152.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 31051,
+      "name": "L. Belardinelli",
+      "position": "CM",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31051.png",
+      "kitNumber": 57
+    },
+    {
+      "apiId": 47841,
+      "name": "J. Ceesay",
+      "position": "CM",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47841.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 340699,
+      "name": "D. Degli Innocenti",
+      "position": "CM",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/340699.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 616952,
+      "name": "M. Egan",
+      "position": "CM",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/616952.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 31765,
+      "name": "L. Magnino",
+      "position": "CM",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31765.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 352354,
+      "name": "E. Saporiti",
+      "position": "CM",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/352354.png",
+      "kitNumber": 70
+    },
+    {
+      "apiId": 329401,
+      "name": "Gerard Yepes",
+      "position": "CM",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/329401.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 266481,
+      "name": "F. Bianchi",
+      "position": "ST",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/266481.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 342067,
+      "name": "F. Distefano",
+      "position": "ST",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342067.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 32023,
+      "name": "S. Elia",
+      "position": "ST",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/32023.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 452409,
+      "name": "B. Popov",
+      "position": "ST",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/452409.png",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 337982,
+      "name": "S. Shpendi",
+      "position": "ST",
+      "club": "Empoli",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/337982.png",
+      "kitNumber": 11
+    }
+  ]
+}

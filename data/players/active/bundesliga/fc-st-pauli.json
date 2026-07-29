@@ -1,0 +1,308 @@
+{
+  "club": {
+    "apiId": 186,
+    "name": "FC St. Pauli",
+    "logo": "https://media.api-sports.io/football/teams/186.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 203324,
+      "name": "S. Spari",
+      "position": "GK",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203324.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 119167,
+      "name": "B. Voll",
+      "position": "GK",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/119167.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 307929,
+      "name": "T. Ando",
+      "position": "CB",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/307929.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 48358,
+      "name": "M. Mathisen",
+      "position": "CB",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48358.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 7649,
+      "name": "D. Nemeth",
+      "position": "CB",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7649.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 202636,
+      "name": "L. Oppie",
+      "position": "CB",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/202636.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 90731,
+      "name": "L. Ritzka",
+      "position": "CB",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/90731.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 384968,
+      "name": "J. Robatsch",
+      "position": "CB",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/384968.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 27157,
+      "name": "M. Saliakas",
+      "position": "CB",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/27157.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 47965,
+      "name": "E. Ahlstrand",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47965.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 107087,
+      "name": "S. Banks",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/107087.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 40274,
+      "name": "A. Dźwigała",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/40274.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 146586,
+      "name": "J. Fujita",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/146586.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 2749,
+      "name": "J. Irvine",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2749.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 308581,
+      "name": "Samuel Klein",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/308581.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 20780,
+      "name": "Mathias Pereira Lage",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20780.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 148448,
+      "name": "A. Pyrka",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/148448.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 15917,
+      "name": "M. Rasmussen",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/15917.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 469579,
+      "name": "N. Schmidt",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/469579.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 449985,
+      "name": "Marwin Reiner Ian Schmitz",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449985.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 8486,
+      "name": "E. Smith",
+      "position": "CM",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8486.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 474789,
+      "name": "Abdoulie Ceesay",
+      "position": "ST",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/474789.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 32871,
+      "name": "T. Hara",
+      "position": "ST",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/32871.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 1827,
+      "name": "B. Hrgota",
+      "position": "ST",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1827.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 138873,
+      "name": "R. Jones",
+      "position": "ST",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138873.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 37759,
+      "name": "M. Kaars",
+      "position": "ST",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37759.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 6904,
+      "name": "C. Metcalfe",
+      "position": "ST",
+      "club": "FC St. Pauli",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6904.png",
+      "kitNumber": 24
+    }
+  ]
+}

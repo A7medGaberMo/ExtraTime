@@ -1,0 +1,297 @@
+{
+  "club": {
+    "apiId": 503,
+    "name": "Torino",
+    "logo": "https://media.api-sports.io/football/teams/503.png",
+    "league": "serie-a",
+    "leagueId": 135
+  },
+  "players": [
+    {
+      "apiId": 56266,
+      "name": "F. Israel",
+      "position": "GK",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/56266.png",
+      "kitNumber": 81
+    },
+    {
+      "apiId": 419871,
+      "name": "D. Mascardi",
+      "position": "GK",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/419871.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 30642,
+      "name": "A. Paleari",
+      "position": "GK",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30642.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 565709,
+      "name": "L. Siviero",
+      "position": "GK",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/565709.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 438215,
+      "name": "C. Bianay Balcot",
+      "position": "CB",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/438215.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 30396,
+      "name": "C. Biraghi",
+      "position": "CB",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30396.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 122468,
+      "name": "Saúl Coco",
+      "position": "CB",
+      "club": "Torino",
+      "nation": "Equatorial Guinea",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/122468.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 349232,
+      "name": "A. Dembélé",
+      "position": "CB",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/349232.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 14329,
+      "name": "A. Ismajli",
+      "position": "CB",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/14329.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 39362,
+      "name": "M. Pedersen",
+      "position": "CB",
+      "club": "Torino",
+      "nation": "Norway",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39362.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 598593,
+      "name": "M. Pellini",
+      "position": "CB",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/598593.png",
+      "kitNumber": 93
+    },
+    {
+      "apiId": 613435,
+      "name": "W. Acquah",
+      "position": "CM",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/613435.png",
+      "kitNumber": 94
+    },
+    {
+      "apiId": 138777,
+      "name": "F. Anjorin",
+      "position": "CM",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138777.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 270507,
+      "name": "C. Casadei",
+      "position": "CM",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/270507.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 343189,
+      "name": "G. Gineitis",
+      "position": "CM",
+      "club": "Torino",
+      "nation": "Lithuania",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/343189.png",
+      "kitNumber": 66
+    },
+    {
+      "apiId": 46170,
+      "name": "I. Ilić",
+      "position": "CM",
+      "club": "Torino",
+      "nation": "Serbia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46170.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 336573,
+      "name": "E. İlkhan",
+      "position": "CM",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336573.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 161859,
+      "name": "G. Oristanio",
+      "position": "CM",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161859.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 842,
+      "name": "N. Vlašić",
+      "position": "CM",
+      "club": "Torino",
+      "nation": "Croatia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/842.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 243,
+      "name": "Z. Aboukhlal",
+      "position": "ST",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/243.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 19524,
+      "name": "C. Adams",
+      "position": "ST",
+      "club": "Torino",
+      "nation": "Scotland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19524.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 437088,
+      "name": "T. Gabellini",
+      "position": "ST",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437088.png",
+      "kitNumber": 84
+    },
+    {
+      "apiId": 40405,
+      "name": "S. Kulenović",
+      "position": "ST",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/40405.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 383006,
+      "name": "A. Njie",
+      "position": "ST",
+      "club": "Torino",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/383006.png",
+      "kitNumber": 92
+    },
+    {
+      "apiId": 30414,
+      "name": "G. Simeone",
+      "position": "ST",
+      "club": "Torino",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30414.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 2495,
+      "name": "D. Zapata",
+      "position": "ST",
+      "club": "Torino",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2495.png",
+      "kitNumber": 91
+    }
+  ]
+}

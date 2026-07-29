@@ -1,0 +1,363 @@
+{
+  "club": {
+    "apiId": 720,
+    "name": "Valladolid",
+    "logo": "https://media.api-sports.io/football/teams/720.png",
+    "league": "la-liga",
+    "leagueId": 140
+  },
+  "players": [
+    {
+      "apiId": 309917,
+      "name": "Álvaro Aceves",
+      "position": "GK",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/309917.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 602558,
+      "name": "A. de Pablo",
+      "position": "GK",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/602558.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 661803,
+      "name": "Alejandro Galdeano",
+      "position": "CB",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/661803.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 354142,
+      "name": "Iván Garriel",
+      "position": "CB",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/354142.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 390438,
+      "name": "M. Jaouab",
+      "position": "CB",
+      "club": "Valladolid",
+      "nation": "Morocco",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/390438.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 197196,
+      "name": "Ramón Martínez",
+      "position": "CB",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/197196.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 20946,
+      "name": "C. Michelin",
+      "position": "CB",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20946.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 298064,
+      "name": "David Torres",
+      "position": "CB",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/298064.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 506254,
+      "name": "I. Alani",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/506254.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 14341,
+      "name": "S. Jurić",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/14341.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 191422,
+      "name": "M. Lachuer",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191422.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 181463,
+      "name": "Víctor Meseguer",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/181463.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 307565,
+      "name": "T. Ojeda",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Paraguay",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/307565.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 351131,
+      "name": "Dani Pérez",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/351131.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 20641,
+      "name": "J. Ponceau",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Uruguay",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20641.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 412083,
+      "name": "Ricardo de Moraes",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/412083.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 195510,
+      "name": "L. Sanseviero",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Uruguay",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195510.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 285422,
+      "name": "Pablo Tomeo",
+      "position": "CM",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/285422.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 46824,
+      "name": "Iván Alejo",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46824.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 336554,
+      "name": "Victor Barberá",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336554.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 292219,
+      "name": "S. Biuk",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/292219.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 575371,
+      "name": "A. Carvajal",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/575371.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 179183,
+      "name": "Luis Chacón",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/179183.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 586418,
+      "name": "Brain Chinedu",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Nigeria",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/586418.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 57296,
+      "name": "V. Erlien",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/57296.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 445025,
+      "name": "Víctor Fernández",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/445025.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 162028,
+      "name": "Juanmi Latasa",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162028.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 122233,
+      "name": "Marcos André",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/122233.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 405722,
+      "name": "Hugo San",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/405722.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 104793,
+      "name": "A. Ndiaye",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/104793.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 37647,
+      "name": "K. de Rooij",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37647.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 419629,
+      "name": "R. Duiven",
+      "position": "ST",
+      "club": "Valladolid",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/419629.png",
+      "kitNumber": 11
+    }
+  ]
+}

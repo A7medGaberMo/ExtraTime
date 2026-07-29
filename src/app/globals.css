@@ -2,12 +2,15 @@
 
 @theme {
   /* Font Family Mappings */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-inter-tight), var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-display: var(--font-sora), sans-serif;
   --font-mono: var(--font-rajdhani), ui-monospace, monospace;
   --font-sora: var(--font-sora), sans-serif;
   --font-inter: var(--font-inter), sans-serif;
   --font-rajdhani: var(--font-rajdhani), sans-serif;
+  --font-anton: var(--font-anton), sans-serif;
+  --font-bebas: var(--font-bebas), sans-serif;
+  --font-inter-tight: var(--font-inter-tight), sans-serif;
 
   /* Premium Core Color Mappings */
   --color-background: #02050A; /* Midnight Black (70% background) */
@@ -22,13 +25,13 @@
   --color-deep-olive: #32521E; /* Deep Olive Shadow */
 
   /* Distinct Tier Colors */
-  --color-tier-icon: #95E810;
+  --color-tier-icon: #D4AF37;
   --color-tier-master: #A855F7;
-  --color-tier-elite-plus: #3B82F6;
-  --color-tier-elite: #10B981;
-  --color-tier-gold: #F59E0B;
-  --color-tier-silver: #94A3B8;
-  --color-tier-bronze: #D97706;
+  --color-tier-elite-plus: #0EA5E9;
+  --color-tier-elite: #E11D48;
+  --color-tier-gold: #EAB308;
+  --color-tier-silver: #CBD5E1;
+  --color-tier-bronze: #C97A3A;
 
   /* Override standard Tailwind colors */
   --color-slate-950: #02050A;

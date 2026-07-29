@@ -1,156 +1,207 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { PlayerCard } from "@/components/shared/player-card";
 import type { PlayerCardData } from "@/types/player";
-import { Crown, Sparkles, Trophy, ArrowRight, ShieldCheck, UserPlus } from "lucide-react";
+import { Sparkles, Trophy, ShieldCheck, UserCheck, Crown, X } from "lucide-react";
+
+export interface LastCompletedRoundInfo {
+  roundNumber: number;
+  position: string;
+  mainPlayer: PlayerCardData | null;
+  subPlayer: PlayerCardData | null;
+  myPick: {
+    isSub: boolean;
+    cost: number;
+    player: PlayerCardData | null;
+  } | null;
+  opponentPick: {
+    isSub: boolean;
+    cost: number;
+    player: PlayerCardData | null;
+  } | null;
+  winnerUserId: string | null;
+  winnerIsMe: boolean;
+  winnerName: string;
+  winningBid: number;
+}
 
 interface BidRevealAnimationProps {
   isOpen: boolean;
   onClose: () => void;
-  position: string;
-  roundNumber: number;
-  mainPlayer: PlayerCardData | null;
-  subPlayer: PlayerCardData | null;
-  winnerName: string;
-  winnerIsMe: boolean;
-  winningBid: number;
-  runnerUpName: string;
+  lastCompletedRound: LastCompletedRoundInfo | null;
 }
+
+const REVEAL_DURATION = 5000; // ms
 
 export function BidRevealAnimation({
   isOpen,
   onClose,
-  position,
-  roundNumber,
-  mainPlayer,
-  subPlayer,
-  winnerName,
-  winnerIsMe,
-  winningBid,
-  runnerUpName,
+  lastCompletedRound,
 }: BidRevealAnimationProps) {
   const [stage, setStage] = useState<"enter" | "show" | "exit">("enter");
+  const [progressPct, setProgressPct] = useState(0);
+  const onCloseRef = useRef(onClose);
+
+  useEffect(() => {
+    onCloseRef.current = onClose;
+  });
 
   useEffect(() => {
     if (isOpen) {
       setStage("enter");
-      const timer1 = setTimeout(() => setStage("show"), 400);
-      return () => clearTimeout(timer1);
+      setProgressPct(0);
+
+      const enterTimer = setTimeout(() => setStage("show"), 80);
+
+      const progressStart = Date.now();
+      const progressInterval = setInterval(() => {
+        const elapsed = Date.now() - progressStart;
+        setProgressPct(Math.min(100, (elapsed / REVEAL_DURATION) * 100));
+      }, 50);
+
+      const dismissTimer = setTimeout(() => {
+        setStage("exit");
+        setTimeout(() => {
+          onCloseRef.current();
+        }, 280);
+      }, REVEAL_DURATION);
+
+      return () => {
+        clearTimeout(enterTimer);
+        clearTimeout(dismissTimer);
+        clearInterval(progressInterval);
+      };
     }
   }, [isOpen]);
 
-  const handleDismiss = () => {
-    setStage("exit");
-    setTimeout(() => {
-      onClose();
-    }, 400);
-  };
+  if (!isOpen || !lastCompletedRound) return null;
 
-  if (!isOpen || !mainPlayer) return null;
+  const { roundNumber, position, myPick, opponentPick, winnerIsMe, winnerName, winningBid } = lastCompletedRound;
+  const myPlayer = myPick?.player;
+  const opponentPlayer = opponentPick?.player;
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xl transition-opacity duration-400 ${
-        stage === "exit" ? "opacity-0 pointer-events-none" : "opacity-100"
+      className={`fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-4 bg-slate-950/96 backdrop-blur-2xl transition-all duration-300 ${
+        stage === "exit" ? "opacity-0 scale-95 pointer-events-none" : "opacity-100 scale-100"
       }`}
+      onClick={() => {
+        setStage("exit");
+        setTimeout(() => onCloseRef.current(), 280);
+      }}
     >
-      {/* Stadium spotlight glow backdrop */}
-      <div className="absolute inset-0 bg-radial-gradient from-lime/15 via-transparent to-transparent pointer-events-none" />
+      {/* Ambient Glow */}
+      <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[450px] h-[280px] sm:h-[450px] ${
+        winnerIsMe ? "bg-lime/20" : "bg-blue-500/15"
+      } blur-[120px] rounded-full pointer-events-none`} />
 
-      <div className="relative max-w-4xl w-full flex flex-col items-center gap-6 animate-scale-in">
-        {/* TV Broadcast Banner */}
-        <div className="flex flex-col items-center text-center space-y-1">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-lime/40 text-lime text-xs font-black uppercase tracking-widest shadow-xl">
-            <Sparkles className="w-3.5 h-3.5 text-lime animate-spin" />
-            Round {roundNumber} Result — {position} Slot
+      <div
+        className="relative max-w-md w-full flex flex-col items-center gap-2.5 sm:gap-4 animate-scale-in bg-card/90 border border-lime/30 rounded-3xl p-3.5 sm:p-6 shadow-[0_0_50px_rgba(0,0,0,0.8)] backdrop-blur-md max-h-[95vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close X button top right */}
+        <button
+          onClick={() => {
+            setStage("exit");
+            setTimeout(() => onCloseRef.current(), 280);
+          }}
+          className="absolute top-3 right-3 p-1.5 rounded-full bg-slate-900/80 border border-border text-steel hover:text-white transition-all z-20"
+        >
+          <X className="w-4 h-4" />
+        </button>
+
+        {/* Header */}
+        <div className="flex flex-col items-center text-center space-y-1 z-10 pt-1">
+          <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-slate-900/90 border border-lime/40 text-lime text-[10px] sm:text-xs font-black uppercase tracking-widest shadow-md">
+            <Sparkles className="w-3 h-3 text-lime" />
+            Round {roundNumber} • {position}
           </div>
-          <h2 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight flex items-center gap-2">
+
+          <h2 className="text-sm sm:text-lg font-black uppercase tracking-tight flex items-center gap-1.5">
             {winningBid > 0 ? (
-              <>
-                <Trophy className="w-7 h-7 text-amber-400 animate-bounce" />
-                {winnerIsMe ? "You Won The Bid!" : `${winnerName} Won The Bid!`}
-              </>
+              winnerIsMe ? (
+                <>
+                  <Trophy className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0 animate-bounce" />
+                  <span className="text-lime">You won — ${winningBid}M</span>
+                </>
+              ) : (
+                <>
+                  <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 shrink-0" />
+                  <span className="text-white">{winnerName} won — ${winningBid}M</span>
+                </>
+              )
             ) : (
-              "Passed — Players Distributed"
+              <span className="text-amber-300">Tie-break — $0M each</span>
             )}
           </h2>
-          <p className="text-xs text-steel font-medium">
-            {winningBid > 0 ? `Winning Bid: $${winningBid}M` : "Free allocation round"}
-          </p>
         </div>
 
-        {/* Dynamic Dual Card Front-and-Center Stage */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center justify-center w-full max-w-2xl">
-          {/* Main Card (Winner) */}
-          <div
-            className={`flex flex-col items-center gap-3 transition-all duration-500 transform ${
-              stage === "enter"
-                ? "-translate-x-12 opacity-0 scale-90"
-                : stage === "exit"
-                ? winnerIsMe
-                  ? "-translate-x-32 opacity-0"
-                  : "translate-x-32 opacity-0"
-                : "translate-x-0 opacity-100 scale-100"
-            }`}
-          >
-            <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-lime to-emerald-400 rounded-3xl blur-md opacity-40 group-hover:opacity-80 transition" />
-              <div className="relative">
-                <PlayerCard player={mainPlayer} size="md" />
-              </div>
-              <div className="absolute -top-3 -right-3 bg-amber-400 text-slate-950 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider flex items-center gap-1 shadow-lg border border-amber-300">
-                <Crown className="w-3 h-3 fill-slate-950" /> Starter
-              </div>
+        {/* DUAL CARDS SPOTLIGHT */}
+        <div className="relative w-full flex items-center justify-center gap-1.5 sm:gap-4 py-1 z-10">
+          {/* YOUR CARD */}
+          <div className="flex flex-col items-center gap-1 flex-1 min-w-0">
+            <div className="px-2 py-0.5 bg-lime/15 border border-lime/50 text-lime text-[9px] sm:text-[10px] font-black uppercase tracking-wider rounded-md flex items-center gap-1 shadow-sm">
+              <UserCheck className="w-3 h-3" /> You
             </div>
 
-            <div className="text-center bg-slate-900/90 border border-lime/30 rounded-xl px-4 py-2 w-full shadow-lg">
-              <p className="text-[10px] font-black uppercase text-lime tracking-wider flex items-center justify-center gap-1">
-                <ShieldCheck className="w-3 h-3" /> Winner: {winnerName}
-              </p>
-              <p className="font-stats text-sm text-white">
-                {winningBid > 0 ? `$${winningBid}M` : "Free Starter"}
-              </p>
-            </div>
+            {myPlayer ? (
+              <div className={`rounded-2xl transition-all scale-80 sm:scale-95 md:scale-100 origin-center ${
+                !myPick?.isSub
+                  ? "shadow-[0_0_20px_rgba(149,232,16,0.35)] ring-2 ring-lime"
+                  : "shadow-md ring-1 ring-border"
+              }`}>
+                <PlayerCard player={myPlayer} size="sm" />
+              </div>
+            ) : (
+              <div className="w-32 sm:w-36 h-40 sm:h-48 rounded-2xl bg-card border border-border flex items-center justify-center text-xs text-steel">
+                No Card
+              </div>
+            )}
+
+            <span className="text-[9px] sm:text-[10px] font-bold text-steel bg-slate-900/90 px-2 py-0.5 rounded-full border border-border text-center">
+              {myPick?.isSub ? "Backup — $0M" : `Main — $${myPick?.cost ?? 0}M`}
+            </span>
           </div>
 
-          {/* Sub Card (Runner Up / Sub Player) */}
-          {subPlayer && (
-            <div
-              className={`flex flex-col items-center gap-3 transition-all duration-500 delay-100 transform ${
-                stage === "enter"
-                  ? "translate-x-12 opacity-0 scale-90"
-                  : stage === "exit"
-                  ? winnerIsMe
-                    ? "translate-x-32 opacity-0"
-                    : "-translate-x-32 opacity-0"
-                  : "translate-x-0 opacity-100 scale-100"
-              }`}
-            >
-              <div className="relative opacity-90 hover:opacity-100 transition">
-                <PlayerCard player={subPlayer} size="md" />
-                <div className="absolute -top-3 -right-3 bg-blue-500 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider flex items-center gap-1 shadow-lg border border-blue-400">
-                  <UserPlus className="w-3 h-3" /> Sub Player
-                </div>
-              </div>
-
-              <div className="text-center bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-2 w-full shadow-lg">
-                <p className="text-[10px] font-black uppercase text-steel tracking-wider">
-                  Reserve: {runnerUpName}
-                </p>
-                <p className="font-stats text-sm text-slate-300">Free Sub</p>
-              </div>
+          {/* RIVAL CARD */}
+          <div className="flex flex-col items-center gap-1 flex-1 min-w-0">
+            <div className="px-2 py-0.5 bg-blue-500/15 border border-blue-500/50 text-blue-300 text-[9px] sm:text-[10px] font-black uppercase tracking-wider rounded-md flex items-center gap-1 shadow-sm">
+              <Crown className="w-3 h-3" /> Rival
             </div>
-          )}
+
+            {opponentPlayer ? (
+              <div className={`rounded-2xl transition-all scale-80 sm:scale-95 md:scale-100 origin-center ${
+                !opponentPick?.isSub
+                  ? "shadow-[0_0_20px_rgba(59,130,246,0.35)] ring-2 ring-blue-400"
+                  : "shadow-md ring-1 ring-border"
+              }`}>
+                <PlayerCard player={opponentPlayer} size="sm" />
+              </div>
+            ) : (
+              <div className="w-32 sm:w-36 h-40 sm:h-48 rounded-2xl bg-card border border-border flex items-center justify-center text-xs text-steel">
+                No Card
+              </div>
+            )}
+
+            <span className="text-[9px] sm:text-[10px] font-bold text-steel bg-slate-900/90 px-2 py-0.5 rounded-full border border-border text-center">
+              {opponentPick?.isSub ? "Backup — $0M" : `Main — $${opponentPick?.cost ?? 0}M`}
+            </span>
+          </div>
         </div>
 
-        {/* Action Button */}
-        <button
-          onClick={handleDismiss}
-          className="mt-2 px-8 py-3.5 bg-lime hover:bg-vivid text-background font-black text-xs uppercase tracking-widest rounded-2xl shadow-xl shadow-lime/20 active:scale-95 transition-all flex items-center gap-2"
-        >
-          Continue Draft <ArrowRight className="w-4 h-4" />
-        </button>
+        {/* Progress Bar — shrinking countdown (100% -> 0%) */}
+        <div className="w-full max-w-xs flex flex-col items-center gap-1 z-10 pt-1">
+          <div className="w-full bg-slate-900 border border-border/80 rounded-full h-1.5 overflow-hidden">
+            <div
+              className="bg-lime h-full rounded-full transition-[width] duration-100 ease-linear"
+              style={{ width: `${Math.max(0, 100 - progressPct)}%` }}
+            />
+          </div>
+          <span className="text-[8px] sm:text-[9px] font-bold text-steel uppercase tracking-widest">
+            Tap anywhere to dismiss • Next round starting…
+          </span>
+        </div>
       </div>
     </div>
   );

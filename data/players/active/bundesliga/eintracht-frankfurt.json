@@ -1,0 +1,363 @@
+{
+  "club": {
+    "apiId": 169,
+    "name": "Eintracht Frankfurt",
+    "logo": "https://media.api-sports.io/football/teams/169.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 26291,
+      "name": "J. Grahl",
+      "position": "GK",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26291.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 362884,
+      "name": "Kauã Santos",
+      "position": "GK",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/362884.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 467927,
+      "name": "A. Siljevic",
+      "position": "GK",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/467927.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 7288,
+      "name": "M. Zetterer",
+      "position": "GK",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7288.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 382492,
+      "name": "Elias Baum",
+      "position": "CB",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/382492.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 1803,
+      "name": "T. Chandler",
+      "position": "CB",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1803.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 269531,
+      "name": "N. Collins",
+      "position": "CB",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/269531.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 26238,
+      "name": "R. Koch",
+      "position": "CB",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26238.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 423789,
+      "name": "K. Kosugi",
+      "position": "CB",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/423789.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 156490,
+      "name": "N. Nkounkou",
+      "position": "CB",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/156490.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 204043,
+      "name": "A. Theate",
+      "position": "CB",
+      "club": "Eintracht Frankfurt",
+      "nation": "Belgium",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/204043.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 496976,
+      "name": "L. Arrhov",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/496976.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 342171,
+      "name": "N. Aséko Nkili",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342171.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 369674,
+      "name": "J. Bahoya",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/369674.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 478662,
+      "name": "M. Dills",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/478662.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 90594,
+      "name": "J. Dina Ebimbe",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/90594.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 2598,
+      "name": "R. Dōan",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2598.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 16,
+      "name": "M. Götze",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/16.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 339874,
+      "name": "O. HÃ¸jlund",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339874.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 478663,
+      "name": "E. İş",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/478663.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 335094,
+      "name": "H. Larsson",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Sweden",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/335094.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 21587,
+      "name": "E. Skhiri",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Tunisia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21587.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 339887,
+      "name": "C. Uzun",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339887.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 365266,
+      "name": "Metehan Yildirim",
+      "position": "CM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/365266.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 535046,
+      "name": "A. Amaimouni",
+      "position": "ST",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/535046.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 2927,
+      "name": "M. Batshuayi",
+      "position": "ST",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2927.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 25926,
+      "name": "J. Burkardt",
+      "position": "ST",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25926.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 276670,
+      "name": "F. Chaïbi",
+      "position": "ST",
+      "club": "Eintracht Frankfurt",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/276670.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 409190,
+      "name": "Y. Ebnoutalib",
+      "position": "ST",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/409190.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 196500,
+      "name": "N. Futkeu",
+      "position": "ST",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/196500.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 161922,
+      "name": "A. Knauff",
+      "position": "ST",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161922.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 585850,
+      "name": "M. Pimpong",
+      "position": "ST",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/585850.png",
+      "kitNumber": 48
+    }
+  ]
+}

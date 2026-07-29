@@ -1,0 +1,352 @@
+{
+  "club": {
+    "apiId": 523,
+    "name": "Parma",
+    "logo": "https://media.api-sports.io/football/teams/523.png",
+    "league": "serie-a",
+    "leagueId": 135
+  },
+  "players": [
+    {
+      "apiId": 585335,
+      "name": "G. Astaldi",
+      "position": "GK",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/585335.png",
+      "kitNumber": 64
+    },
+    {
+      "apiId": 595808,
+      "name": "Gabriele Casentini",
+      "position": "GK",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/595808.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 180762,
+      "name": "E. Corvi",
+      "position": "GK",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/180762.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 335117,
+      "name": "G. Daffara",
+      "position": "GK",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/335117.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 637969,
+      "name": "A. Mazzocchi",
+      "position": "GK",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/637969.png",
+      "kitNumber": 60
+    },
+    {
+      "apiId": 199578,
+      "name": "Z. Suzuki",
+      "position": "GK",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/199578.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 499380,
+      "name": "S. Britschgi",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/499380.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 286473,
+      "name": "F. Carboni",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286473.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 348568,
+      "name": "A. Circati",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/348568.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 595810,
+      "name": "Bernardo Conde",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/595810.png",
+      "kitNumber": 70
+    },
+    {
+      "apiId": 30420,
+      "name": "E. Del Prato",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30420.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 576948,
+      "name": "D. Drobnic",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/576948.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 203483,
+      "name": "A. N&apos;Diaye",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203483.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 428237,
+      "name": "M. Troilo",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/428237.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 6221,
+      "name": "L. Valenti",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6221.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 91358,
+      "name": "E. Valeri",
+      "position": "CB",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/91358.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 48193,
+      "name": "P. Almqvist",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48193.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 628,
+      "name": "Adrián Bernabé",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/628.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 362061,
+      "name": "B. Cremaschi",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/362061.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 308836,
+      "name": "M. Keita",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/308836.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 881,
+      "name": "H. Nicolussi",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/881.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 191979,
+      "name": "J. Ondrejka",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191979.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 362752,
+      "name": "C. Ordoñez",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/362752.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 446006,
+      "name": "E. Plicco",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/446006.png",
+      "kitNumber": 65
+    },
+    {
+      "apiId": 161569,
+      "name": "O. Sørensen",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161569.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 595819,
+      "name": "Edoardo Tigani",
+      "position": "CM",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/595819.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 40592,
+      "name": "A. Benedyczak",
+      "position": "ST",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/40592.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 595822,
+      "name": "Alessandro Cardinali",
+      "position": "ST",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/595822.png",
+      "kitNumber": 75
+    },
+    {
+      "apiId": 301924,
+      "name": "N. Elphege",
+      "position": "ST",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/301924.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 394882,
+      "name": "D. Mikołajewski",
+      "position": "ST",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/394882.png",
+      "kitNumber": 76
+    },
+    {
+      "apiId": 292172,
+      "name": "Mateo Pellegrino",
+      "position": "ST",
+      "club": "Parma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/292172.png",
+      "kitNumber": 9
+    }
+  ]
+}

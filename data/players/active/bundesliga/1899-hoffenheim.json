@@ -1,0 +1,319 @@
+{
+  "club": {
+    "apiId": 167,
+    "name": "1899 Hoffenheim",
+    "logo": "https://media.api-sports.io/football/teams/167.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 702,
+      "name": "O. Baumann",
+      "position": "GK",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/702.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 163066,
+      "name": "L. Philipp",
+      "position": "GK",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/163066.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 304686,
+      "name": "Arthur Chaves",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304686.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 18964,
+      "name": "Bernardo",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18964.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 1231,
+      "name": "V. Coufal",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1231.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 387306,
+      "name": "Sean Dulic",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/387306.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 127631,
+      "name": "V. Gendrey",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/127631.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 278453,
+      "name": "A. Hajdari",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278453.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 162964,
+      "name": "R. Hranáč",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162964.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 26300,
+      "name": "O. Kabak",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26300.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 408853,
+      "name": "M. Rots",
+      "position": "CB",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/408853.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 390586,
+      "name": "L. Avdullahu",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/390586.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 37153,
+      "name": "W. Burger",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37153.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 453903,
+      "name": "Nathan De Cat",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/453903.png",
+      "kitNumber": 74
+    },
+    {
+      "apiId": 279913,
+      "name": "L. Đurić",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/279913.png",
+      "kitNumber": 48
+    },
+    {
+      "apiId": 202976,
+      "name": "V. Lässig",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/202976.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 418888,
+      "name": "Cajetan Benjamin Lenz",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/418888.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 340089,
+      "name": "Florian Micheler",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/340089.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 7327,
+      "name": "A. Prass",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7327.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 126642,
+      "name": "P. Wimmer",
+      "position": "CM",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/126642.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 460151,
+      "name": "Konstantin Aleksa",
+      "position": "ST",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/460151.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 202501,
+      "name": "F. Asllani",
+      "position": "ST",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/202501.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 66019,
+      "name": "A. Hložek",
+      "position": "ST",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/66019.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 726,
+      "name": "A. Kramarić",
+      "position": "ST",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/726.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 203040,
+      "name": "T. Lemperle",
+      "position": "ST",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203040.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 387973,
+      "name": "Max Moerstedt",
+      "position": "ST",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/387973.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 650520,
+      "name": "A. Skender",
+      "position": "ST",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/650520.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 381537,
+      "name": "A. Vogt",
+      "position": "ST",
+      "club": "1899 Hoffenheim",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/381537.png",
+      "kitNumber": 18
+    }
+  ]
+}

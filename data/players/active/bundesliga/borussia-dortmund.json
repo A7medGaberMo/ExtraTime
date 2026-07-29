@@ -1,0 +1,319 @@
+{
+  "club": {
+    "apiId": 165,
+    "name": "Borussia Dortmund",
+    "logo": "https://media.api-sports.io/football/teams/165.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 26395,
+      "name": "P. Drewes",
+      "position": "GK",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26395.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 25282,
+      "name": "G. Kobel",
+      "position": "GK",
+      "club": "Borussia Dortmund",
+      "nation": "Switzerland",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25282.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 26292,
+      "name": "A. Meyer",
+      "position": "GK",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26292.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 280463,
+      "name": "S. Ostrzinski",
+      "position": "GK",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280463.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 25368,
+      "name": "W. Anton",
+      "position": "CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25368.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 420351,
+      "name": "Elias  Benkara",
+      "position": "CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/420351.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 2194,
+      "name": "R. Bensebaïni",
+      "position": "CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2194.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 197448,
+      "name": "Yan Couto",
+      "position": "RB/RM",
+      "club": "Borussia Dortmund",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/197448.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 409215,
+      "name": "Kouakou Joane Gadou",
+      "position": "CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/409215.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 394667,
+      "name": "Almugera Raouf Mohammed Kabar",
+      "position": "CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/394667.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 341839,
+      "name": "F. Mané",
+      "position": "CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/341839.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 568225,
+      "name": "L. Reggiani",
+      "position": "CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568225.png",
+      "kitNumber": 49
+    },
+    {
+      "apiId": 24845,
+      "name": "J. Ryerson",
+      "position": "RB/LB",
+      "club": "Borussia Dortmund",
+      "nation": "Norway",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24845.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 26243,
+      "name": "N. Schlotterbeck",
+      "position": "CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26243.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 158053,
+      "name": "A. Azhil",
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158053.png",
+      "kitNumber": 46
+    },
+    {
+      "apiId": 326757,
+      "name": "J. Bellingham",
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/326757.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 864,
+      "name": "E. Can",
+      "position": "CDM/CB",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/864.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 138935,
+      "name": "C. Chukwuemeka",
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138935.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 478991,
+      "name": "S. Inacio",
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/478991.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 568733,
+      "name": "J. Lerma",
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568733.png",
+      "kitNumber": 53
+    },
+    {
+      "apiId": 637,
+      "name": "F. Nmecha",
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/637.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 1159,
+      "name": "M. Sabitzer",
+      "position": "CM/CAM",
+      "club": "Borussia Dortmund",
+      "nation": "Austria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1159.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 198654,
+      "name": "D. Svensson",
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/198654.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 568612,
+      "name": "T. Yamamoto",
+      "position": "CM",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568612.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 486522,
+      "name": "M. Albert",
+      "position": "ST",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/486522.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 158644,
+      "name": "M. Beier",
+      "position": "ST/LW",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158644.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 21393,
+      "name": "S. Guirassy",
+      "position": "ST",
+      "club": "Borussia Dortmund",
+      "nation": "Guinea",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21393.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 129791,
+      "name": "Fábio Silva",
+      "position": "ST",
+      "club": "Borussia Dortmund",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129791.png",
+      "kitNumber": 21
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" opacity="1.0">
+  
+    <defs>
+      <!-- Primary Green Gradient -->
+      <linearGradient id="et-primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#34D399" />
+        <stop offset="50%" stop-color="#10B981" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+
+      <!-- Lime Electric Gradient -->
+      <linearGradient id="et-lime-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#B8F036" />
+        <stop offset="50%" stop-color="#95E810" />
+        <stop offset="100%" stop-color="#65B307" />
+      </linearGradient>
+
+      <!-- Metallic Silver Gradient -->
+      <linearGradient id="et-silver-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="25%" stop-color="#E2E8F0" />
+        <stop offset="50%" stop-color="#94A3B8" />
+        <stop offset="75%" stop-color="#CBD5E1" />
+        <stop offset="100%" stop-color="#64748B" />
+      </linearGradient>
+
+      <!-- Metallic Gold Gradient -->
+      <linearGradient id="et-gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF7CC" />
+        <stop offset="30%" stop-color="#FDE68A" />
+        <stop offset="60%" stop-color="#D4AF37" />
+        <stop offset="85%" stop-color="#92400E" />
+        <stop offset="100%" stop-color="#F59E0B" />
+      </linearGradient>
+
+      <!-- Brushed Steel Gradient -->
+      <linearGradient id="et-steel-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#94A3B8" />
+        <stop offset="50%" stop-color="#334155" />
+        <stop offset="100%" stop-color="#0F172A" />
+      </linearGradient>
+
+      <!-- Holographic Foil Multi-color Spectrum -->
+      <linearGradient id="et-holo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF7A8A" />
+        <stop offset="25%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#34D399" />
+        <stop offset="75%" stop-color="#60A5FA" />
+        <stop offset="100%" stop-color="#C084FC" />
+      </linearGradient>
+
+      <!-- Glass Gloss Gradient -->
+      <linearGradient id="et-glass-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.8)" />
+        <stop offset="50%" stop-color="rgba(255,255,255,0.2)" />
+        <stop offset="100%" stop-color="rgba(255,255,255,0.05)" />
+      </linearGradient>
+
+      <!-- Emboss Bevel Drop Shadows -->
+      <filter id="et-emboss" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
+        <feOffset in="blur" dx="-2" dy="-2" result="offset1" />
+        <feComponentTransfer in="offset1" result="light">
+          <feFuncA type="linear" slope="0.7" />
+        </feComponentTransfer>
+        <feMerge>
+          <feMergeNode in="light" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+  
+  <rect width="100%" height="100%" fill="#02050A" rx="30" />
+  <g >
+    <g transform="translate(0, 0)">
+      
+    <!-- E Monogram Slash -->
+    <path d="M 45 40 L 115 40 L 105 68 L 65 68 L 59 86 L 95 86 L 85 114 L 49 114 L 41 138 L 85 138 L 75 166 L 5 166 Z" fill="#FFFFFF"  />
+  
+      
+    <!-- T Monogram Slash -->
+    <path d="M 85 40 L 190 40 L 180 68 L 148 68 L 114 166 L 82 166 L 116 68 L 75 68 Z" fill="#95E810"  />
+  
+    </g>
+    
+  </g>
+</svg>

@@ -1,0 +1,330 @@
+{
+  "club": {
+    "apiId": 91,
+    "name": "Monaco",
+    "logo": "https://media.api-sports.io/football/teams/91.png",
+    "league": "ligue-1",
+    "leagueId": 61
+  },
+  "players": [
+    {
+      "apiId": 963,
+      "name": "L. Hrádecký",
+      "position": "GK",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/963.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 7313,
+      "name": "P. Köhn",
+      "position": "GK",
+      "club": "Monaco",
+      "nation": "Switzerland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7313.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 274296,
+      "name": "Y. Lienard",
+      "position": "GK",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/274296.png",
+      "kitNumber": 50
+    },
+    {
+      "apiId": 440070,
+      "name": "J. Stawiecki",
+      "position": "GK",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/440070.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 175,
+      "name": "E. Dier",
+      "position": "CB",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/175.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 261,
+      "name": "T. Kehrer",
+      "position": "CB",
+      "club": "Monaco",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/261.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 371916,
+      "name": "C. Mawissa Elebi",
+      "position": "CB",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/371916.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 294722,
+      "name": "Flávio Nazinho",
+      "position": "CB",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/294722.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 428084,
+      "name": "Sadibou Sané",
+      "position": "CB",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/428084.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 231,
+      "name": "J. Teze",
+      "position": "CB",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/231.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 472253,
+      "name": "V. Konaté",
+      "position": "CB",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/472253.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 291649,
+      "name": "Vanderson",
+      "position": "CB",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/291649.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 543470,
+      "name": "Pape Cabral",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/543470.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 374058,
+      "name": "L. Camara",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/374058.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 419035,
+      "name": "M. Coulibaly",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/419035.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 374361,
+      "name": "E. Diop",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/374361.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 109,
+      "name": "A. Golovin",
+      "position": "CAM/LM",
+      "club": "Monaco",
+      "nation": "Russia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/109.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 340152,
+      "name": "S. Idumbo-Muzambo",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/340152.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 449676,
+      "name": "S. Nibombé",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449676.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 904,
+      "name": "P. Pogba",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/904.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 531402,
+      "name": "I. Toure",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/531402.png",
+      "kitNumber": 49
+    },
+    {
+      "apiId": 483126,
+      "name": "M. Oyatambwe",
+      "position": "CM",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/483126.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 2810,
+      "name": "D. Zakaria",
+      "position": "CDM/CB",
+      "club": "Monaco",
+      "nation": "Switzerland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2810.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 274300,
+      "name": "M. Akliouche",
+      "position": "CAM/RW",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/274300.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 138835,
+      "name": "F. Balogun",
+      "position": "ST/CF",
+      "club": "Monaco",
+      "nation": "USA",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138835.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 283026,
+      "name": "M. Biereth",
+      "position": "ST",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/283026.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 386276,
+      "name": "Paris Josua  Brunner",
+      "position": "ST",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/386276.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 462278,
+      "name": "M. Detourbet",
+      "position": "ST",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/462278.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 135775,
+      "name": "Ansu Fati",
+      "position": "ST",
+      "club": "Monaco",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/135775.png",
+      "kitNumber": 31
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Sora, Inter, Rajdhani } from 'next/font/google';
+import { Sora, Inter, Rajdhani, Anton, Bebas_Neue, Inter_Tight } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
 import { Header } from '@/components/layout/header';
@@ -13,14 +13,17 @@ const rajdhani = Rajdhani({
   subsets: ['latin'], 
   variable: '--font-rajdhani' 
 });
+const anton = Anton({ weight: ['400'], subsets: ['latin'], variable: '--font-anton' });
+const bebas = Bebas_Neue({ weight: ['400'], subsets: ['latin'], variable: '--font-bebas' });
+const interTight = Inter_Tight({ subsets: ['latin'], variable: '--font-inter-tight' });
 
 export const metadata: Metadata = {
   title: 'ExtraTime | Live Multiplayer Football Auction & Draft Game',
   description: 'Draft legendary football icons in real-time escalating auctions (Hidden Bid). Complete squads with 11P and 5P futsal formations, tactical Scout & Spy perks, and underdog budget bonuses!',
   icons: {
-    icon: '/ExtraTimeLogo.png',
-    shortcut: '/ExtraTimeLogo.png',
-    apple: '/ExtraTimeLogo.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/logos/et-logo-primary.svg',
   },
   openGraph: {
     title: 'ExtraTime | Live Multiplayer Football Auction Game',
@@ -36,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col selection:bg-lime selection:text-background`}>
+      <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col selection:bg-lime selection:text-background`}>
         <ConvexClientProvider>
           <Header />
           <main className="flex-1 container mx-auto px-4 py-8 animate-fade-in">

@@ -54,7 +54,21 @@ export const GAME_TYPE_CONFIG: Record<GameType, { label: string; description: st
     description: 'Outbid your opponent in a blind auction to build the ultimate squad.',
     icon: '🏆',
   },
-  // TODO: Future games will be added here
+  squad_draft: {
+    label: 'Squad Draft',
+    description: 'Select players sequentially to form your tactical squad.',
+    icon: '📋',
+  },
+  pack_opening_duel: {
+    label: 'Pack Duel',
+    description: 'Open packs simultaneously and battle with your drawn players.',
+    icon: '📦',
+  },
+  penalty_shootout: {
+    label: 'Penalty Shootout',
+    description: 'High-stakes penalty kicks to decide the winner.',
+    icon: '⚽',
+  },
 };
 
 // ---------------------------------------------------------------------------

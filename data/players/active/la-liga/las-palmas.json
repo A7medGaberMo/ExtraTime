@@ -1,0 +1,341 @@
+{
+  "club": {
+    "apiId": 534,
+    "name": "Las Palmas",
+    "logo": "https://media.api-sports.io/football/teams/534.png",
+    "league": "la-liga",
+    "leagueId": 140
+  },
+  "players": [
+    {
+      "apiId": 46698,
+      "name": "José Caro",
+      "position": "GK",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46698.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 1304,
+      "name": "D. Horkaš",
+      "position": "GK",
+      "club": "Las Palmas",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1304.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 440748,
+      "name": "Ãlvaro Killane",
+      "position": "GK",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/440748.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 443146,
+      "name": "Adrián Suárez",
+      "position": "GK",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443146.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 651608,
+      "name": "V. Alegre",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/651608.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 131535,
+      "name": "Álex Suárez",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/131535.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 131529,
+      "name": "Enrique Clemente",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/131529.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 122230,
+      "name": "Manu Fuster",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/122230.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 137441,
+      "name": "Cristian Gutiérrez",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/137441.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 431890,
+      "name": "Juan Herzog",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/431890.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 162026,
+      "name": "Marvin Park",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162026.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 609685,
+      "name": "C. Navarro",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/609685.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 481993,
+      "name": "Valentín Pezzolesi",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Argentina",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/481993.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 548814,
+      "name": "A. Rodriguez",
+      "position": "CB",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/548814.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 453885,
+      "name": "A. Bassinga",
+      "position": "CM",
+      "club": "Las Palmas",
+      "nation": "Ivory Coast",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/453885.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 669801,
+      "name": "Aimar Dominguez",
+      "position": "CM",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/669801.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 297869,
+      "name": "Iñaki González Zambrano",
+      "position": "CM",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/297869.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 21709,
+      "name": "E. Loiodice",
+      "position": "CM",
+      "club": "Las Palmas",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21709.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 70315,
+      "name": "Kirian Rodríguez",
+      "position": "CM",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/70315.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 122756,
+      "name": "Sergio Ruiz",
+      "position": "CM",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/122756.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 430773,
+      "name": "José Adam Arvelo López",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/430773.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 7518,
+      "name": "Jefté Betancor",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7518.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 330361,
+      "name": "Ale García",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/330361.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 1585,
+      "name": "Jesé",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1585.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 601690,
+      "name": "I. Medina",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/601690.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 32972,
+      "name": "T. Miyashiro",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Peru",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/32972.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 47324,
+      "name": "Sandro Ramírez",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47324.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 522649,
+      "name": "Arturo Rodríguez",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/522649.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 440133,
+      "name": "Elías Romero",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/440133.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 46854,
+      "name": "Viti Rozada",
+      "position": "ST",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46854.png",
+      "kitNumber": 17
+    }
+  ]
+}

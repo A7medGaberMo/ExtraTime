@@ -25,7 +25,7 @@ export const auctionsTable = defineTable({
   currentBidding: v.object({
     highestBid: v.number(),
     highestBidderId: v.optional(v.id("guestUsers")),
-    activeTurnUserId: v.union(v.id("guestUsers"), v.string()),
+    activeTurnUserId: v.optional(v.union(v.id("guestUsers"), v.string())),
     turnExpiresAt: v.number(),
     firstPassUserId: v.optional(v.id("guestUsers")),
   }),
@@ -37,6 +37,7 @@ export const auctionsTable = defineTable({
     perkUsedRound: v.optional(v.number()),
     squad: v.array(
       v.object({
+        roundNumber: v.number(),
         position: v.string(),
         playerId: v.id("players"),
         isSub: v.boolean(),
@@ -53,6 +54,7 @@ export const auctionsTable = defineTable({
       perkUsedRound: v.optional(v.number()),
       squad: v.array(
         v.object({
+          roundNumber: v.number(),
           position: v.string(),
           playerId: v.id("players"),
           isSub: v.boolean(),

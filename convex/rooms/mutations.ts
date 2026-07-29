@@ -75,7 +75,7 @@ async function createWaitingRoom(ctx: GenericMutationCtx<any>, args: CreateRoomA
       highestBid: 0,
       highestBidderId: undefined,
       activeTurnUserId: args.hostId,
-      turnExpiresAt: now + 15000,
+      turnExpiresAt: now + 30000,
     },
     host: {
       userId: args.hostId,
@@ -98,9 +98,8 @@ async function joinAuction(
   guestId: Id<"guestUsers">,
   auction: any
 ) {
-  // FIX: Preserve the host's original perk — only assign guest as complement
   const hostPerk = auction.host.perk as "SCOUT" | "SPY";
-  const guestPerk = complementPerk(hostPerk);
+  const guestPerk = randomPerk();
   const activeTurnUserId = auction.host.userId;
   const now = Date.now();
 
@@ -123,7 +122,7 @@ async function joinAuction(
       highestBid: 0,
       highestBidderId: undefined,
       activeTurnUserId,
-      turnExpiresAt: now + 15000,
+      turnExpiresAt: now + 30000,
     },
   });
 

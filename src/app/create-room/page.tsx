@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { PageHeader } from "@/components/shared/page-header";
-import { Loader2, Globe, Lock, RefreshCw } from "lucide-react";
+import { Loader2, Globe, Lock, RefreshCw, Clock, Sparkles, Zap } from "lucide-react";
 
 type MatchSize = 5 | 11;
 type PoolMode = "GLOBAL" | "EPL" | "ICONS";
@@ -29,13 +29,13 @@ function RadioPills<T extends string | number>({ options, value, onChange }: {
           key={String(opt.value)}
           type="button"
           onClick={() => onChange(opt.value)}
-          className={`flex flex-col items-center justify-center px-3 py-3 rounded-xl text-center transition-all border btn-haptic ${
+          className={`flex flex-col items-center justify-center px-3 py-3.5 rounded-xl text-center transition-all border btn-haptic ${
             value === opt.value
-              ? "bg-lime/10 border-lime/40 text-lime shadow-[0_0_12px_rgba(149,232,16,0.1)]"
-              : "bg-background border-border text-steel hover:text-white hover:border-steel/50"
+              ? "bg-lime/10 border-lime/40 text-lime shadow-[0_0_15px_rgba(149,232,16,0.1)]"
+              : "bg-slate-900 border-border text-steel hover:text-white hover:border-steel/50"
           }`}
         >
-          <span className="text-sm font-bold">{opt.label}</span>
+          <span className="text-xs font-black uppercase tracking-wider">{opt.label}</span>
           {opt.sub && <span className="text-[10px] opacity-70 mt-0.5">{opt.sub}</span>}
         </button>
       ))}
@@ -71,27 +71,33 @@ export default function CreateRoomPage() {
     }
   }
 
-  const selectClass = "w-full bg-background border border-border rounded-xl px-4 py-3 text-white text-sm font-semibold focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-colors appearance-none cursor-pointer";
-
   return (
     <div className="max-w-lg mx-auto space-y-6 animate-fade-in pb-24 md:pb-8">
-      <PageHeader title="Create Room" subtitle="Set up a Hidden Bid match in seconds" backUrl="/" />
+      <PageHeader title="Create Room" subtitle="Set up a 30s Hidden Bid match in seconds" backUrl="/" />
 
-      <div className="bg-card border border-border rounded-2xl p-5 md:p-6 shadow-xl space-y-5">
-        {/* Nickname */}
+      <div className="bg-card border border-border/90 rounded-3xl p-6 md:p-7 shadow-2xl space-y-5 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-48 h-48 bg-lime/5 blur-3xl rounded-full pointer-events-none" />
+
+        {/* Dynamic Timer Rule Banner */}
+        <div className="flex items-center gap-2 p-3 rounded-2xl bg-slate-900 border border-lime/30 text-lime text-xs font-bold">
+          <Clock className="w-4 h-4 text-lime shrink-0" />
+          <span>30-Second Turn Bidding • Activating Perk adds +10s Boost</span>
+        </div>
+
+        {/* Manager Name */}
         <div className="space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider block">Manager Name</span>
+          <span className="text-[10px] font-black uppercase text-steel tracking-wider block">Manager Name</span>
           <div className="flex gap-2">
             <input
               value={nickname}
               onChange={(e) => setNickname(e.target.value)}
               maxLength={24}
-              className="flex-1 bg-background border border-border rounded-xl px-4 py-3 text-white text-sm font-semibold focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-colors"
+              className="flex-1 bg-slate-900 border border-border rounded-xl px-4 py-3 text-white text-sm font-bold focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-all"
             />
             <button
               type="button"
               onClick={() => setNickname(randomName())}
-              className="px-3 rounded-xl bg-background border border-border text-steel hover:text-lime hover:border-lime/50 transition-all active:scale-95"
+              className="px-3.5 rounded-xl bg-slate-900 border border-border text-steel hover:text-lime hover:border-lime/50 transition-all active:scale-95"
               title="Random name"
             >
               <RefreshCw className="w-4 h-4" />
@@ -99,22 +105,22 @@ export default function CreateRoomPage() {
           </div>
         </div>
 
-        {/* Match Size — radio pills */}
+        {/* Match Size */}
         <div className="space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider block">Match Size</span>
+          <span className="text-[10px] font-black uppercase text-steel tracking-wider block">Match Size</span>
           <RadioPills
             options={[
-              { value: 11 as MatchSize, label: "11 vs 11", sub: "Full Squad" },
-              { value: 5 as MatchSize, label: "5 vs 5", sub: "Futsal" },
+              { value: 11 as MatchSize, label: "11 vs 11", sub: "Full Squad (11 Rounds)" },
+              { value: 5 as MatchSize, label: "5 vs 5", sub: "Futsal (5 Rounds)" },
             ]}
             value={matchSize}
             onChange={setMatchSize}
           />
         </div>
 
-        {/* Budget — radio pills */}
+        {/* Budget */}
         <div className="space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider block">Starting Budget</span>
+          <span className="text-[10px] font-black uppercase text-steel tracking-wider block">Starting Budget</span>
           <RadioPills
             options={[
               { value: 100, label: "$100M", sub: "Standard" },
@@ -126,13 +132,13 @@ export default function CreateRoomPage() {
           />
         </div>
 
-        {/* Player Pool — select (3 options with descriptions work better as dropdown) */}
+        {/* Player Pool */}
         <div className="space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider block">Player Pool</span>
+          <span className="text-[10px] font-black uppercase text-steel tracking-wider block">Player Pool</span>
           <RadioPills
             options={[
               { value: "GLOBAL" as PoolMode, label: "🌍 Global", sub: "All leagues" },
-              { value: "EPL" as PoolMode, label: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 EPL", sub: "Prem only" },
+              { value: "EPL" as PoolMode, label: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 EPL", sub: "Prem stars" },
               { value: "ICONS" as PoolMode, label: "👑 Icons", sub: "Legends" },
             ]}
             value={poolMode}
@@ -140,17 +146,17 @@ export default function CreateRoomPage() {
           />
         </div>
 
-        {/* Visibility — radio pills */}
+        {/* Visibility */}
         <div className="space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider block">Room Visibility</span>
+          <span className="text-[10px] font-black uppercase text-steel tracking-wider block">Room Visibility</span>
           <div className="grid grid-cols-2 gap-2">
             <button
               type="button"
               onClick={() => setIsPublic(false)}
-              className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-bold transition-all border btn-haptic ${
+              className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-black uppercase tracking-wider transition-all border btn-haptic ${
                 !isPublic
                   ? "bg-lime/10 border-lime/40 text-lime shadow-[0_0_12px_rgba(149,232,16,0.1)]"
-                  : "bg-background border-border text-steel hover:text-white hover:border-steel/50"
+                  : "bg-slate-900 border-border text-steel hover:text-white"
               }`}
             >
               <Lock className="w-4 h-4" /> Private
@@ -158,32 +164,29 @@ export default function CreateRoomPage() {
             <button
               type="button"
               onClick={() => setIsPublic(true)}
-              className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-bold transition-all border btn-haptic ${
+              className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-black uppercase tracking-wider transition-all border btn-haptic ${
                 isPublic
                   ? "bg-lime/10 border-lime/40 text-lime shadow-[0_0_12px_rgba(149,232,16,0.1)]"
-                  : "bg-background border-border text-steel hover:text-white hover:border-steel/50"
+                  : "bg-slate-900 border-border text-steel hover:text-white"
               }`}
             >
               <Globe className="w-4 h-4" /> Public
             </button>
           </div>
-          <p className="text-[11px] text-steel leading-relaxed mt-1">
-            {isPublic ? "Anyone can find & join via public matchmaking." : "Only players with your room code can join."}
-          </p>
         </div>
 
         {/* Create button */}
         <button
           onClick={handleCreate}
           disabled={loading || !nickname.trim()}
-          className="w-full py-4 bg-lime hover:bg-vivid text-background font-black text-sm rounded-xl shadow-lg shadow-lime/10 hover:shadow-lime/20 active:scale-95 transition-all disabled:opacity-40 flex items-center justify-center gap-2"
+          className="w-full py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-widest rounded-xl shadow-lg shadow-lime/10 hover:shadow-lime/20 active:scale-95 transition-all disabled:opacity-40 flex items-center justify-center gap-2"
         >
-          {loading ? <><Loader2 className="w-4 h-4 animate-spin" /> Creating…</> : "Create Hidden Bid Room"}
+          {loading ? <><Loader2 className="w-4 h-4 animate-spin" /> Creating Room…</> : "Create Hidden Bid Room"}
         </button>
       </div>
 
       <p className="text-[11px] text-steel text-center leading-relaxed px-4">
-        Formation, position order, first turn, and Scout / Spy perks are all assigned automatically.
+        Tactical formation, starter turn, and Scout / Spy perks are all assigned automatically.
       </p>
     </div>
   );

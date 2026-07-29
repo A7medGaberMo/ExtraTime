@@ -1,0 +1,363 @@
+{
+  "club": {
+    "apiId": 505,
+    "name": "Inter",
+    "logo": "https://media.api-sports.io/football/teams/505.png",
+    "league": "serie-a",
+    "leagueId": 135
+  },
+  "players": [
+    {
+      "apiId": 336707,
+      "name": "A. Calligaris",
+      "position": "GK",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336707.png",
+      "kitNumber": 91
+    },
+    {
+      "apiId": 91488,
+      "name": "R. Di Gennaro",
+      "position": "GK",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/91488.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 46988,
+      "name": "Josep Martínez",
+      "position": "GK",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46988.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 31037,
+      "name": "I. Provedel",
+      "position": "GK",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31037.png",
+      "kitNumber": 94
+    },
+    {
+      "apiId": 5,
+      "name": "M. Akanji",
+      "position": "CB",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/5.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 31009,
+      "name": "A. Bastoni",
+      "position": "CB",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31009.png",
+      "kitNumber": 95
+    },
+    {
+      "apiId": 24953,
+      "name": "Y. Bisseck",
+      "position": "CB",
+      "club": "Inter",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24953.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 31010,
+      "name": "F. Dimarco",
+      "position": "LB/LM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31010.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 563858,
+      "name": "Y. Maye",
+      "position": "CB",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/563858.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 2725,
+      "name": "B. Pavard",
+      "position": "CB/RB",
+      "club": "Inter",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2725.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 408635,
+      "name": "E. Akinsanmiro",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/408635.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 30558,
+      "name": "N. Barella",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30558.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 395849,
+      "name": "Thomas Berenbruch",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/395849.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 562597,
+      "name": "L. Bovo",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/562597.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 1640,
+      "name": "H. Çalhanoğlu",
+      "position": "CDM/CM",
+      "club": "Inter",
+      "nation": "Turkey",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1640.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 10238,
+      "name": "Carlos Augusto",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10238.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 270509,
+      "name": "A. Diouf",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/270509.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 31173,
+      "name": "D. Frattesi",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31173.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 383000,
+      "name": "I. Kamate",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/383000.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 1457,
+      "name": "H. Mkhitaryan",
+      "position": "CM/CAM",
+      "club": "Inter",
+      "nation": "Armenia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1457.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 342230,
+      "name": "A. Stanković",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342230.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 348205,
+      "name": "P. Sučić",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/348205.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 367878,
+      "name": "L. Topalović",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/367878.png",
+      "kitNumber": 58
+    },
+    {
+      "apiId": 329,
+      "name": "P. Zieliński",
+      "position": "CM/CAM",
+      "club": "Inter",
+      "nation": "Poland",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/329.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 275651,
+      "name": "A. Bonny",
+      "position": "ST",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/275651.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 345808,
+      "name": "F. Esposito",
+      "position": "ST",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/345808.png",
+      "kitNumber": 94
+    },
+    {
+      "apiId": 461830,
+      "name": "M. Lavelli",
+      "position": "ST",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/461830.png",
+      "kitNumber": 90
+    },
+    {
+      "apiId": 10077,
+      "name": "Luis Henrique",
+      "position": "ST",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10077.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 217,
+      "name": "Lautaro Martínez",
+      "position": "ST",
+      "club": "Inter",
+      "nation": "Argentina",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/217.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 437678,
+      "name": "M. Mosconi",
+      "position": "ST",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437678.png",
+      "kitNumber": 48
+    },
+    {
+      "apiId": 436238,
+      "name": "M. Spinaccè",
+      "position": "ST",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/436238.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 21509,
+      "name": "M. Thuram",
+      "position": "ST/LW",
+      "club": "Inter",
+      "nation": "France",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21509.png",
+      "kitNumber": 9
+    }
+  ]
+}

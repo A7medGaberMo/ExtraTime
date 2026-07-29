@@ -1,0 +1,297 @@
+{
+  "club": {
+    "apiId": 176,
+    "name": "VfL Bochum",
+    "logo": "https://media.api-sports.io/football/teams/176.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 7640,
+      "name": "T. Casali",
+      "position": "GK",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7640.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 24785,
+      "name": "T. Horn",
+      "position": "GK",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24785.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 380643,
+      "name": "Hugo Johannes Walter Rölleke",
+      "position": "GK",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/380643.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 327971,
+      "name": "Y. Karademir",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327971.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 444980,
+      "name": "Owono Darnell Keumo",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/444980.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 480847,
+      "name": "K. Koscierski",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/480847.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 25322,
+      "name": "J.  Mbom",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25322.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 48142,
+      "name": "K. Mets",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48142.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 15794,
+      "name": "O. Olsen",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/15794.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 7653,
+      "name": "M. Steinwender",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7653.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 178169,
+      "name": "P. Strompf",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178169.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 25151,
+      "name": "M. Wittek",
+      "position": "CB",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25151.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 3575,
+      "name": "E. Çokaj",
+      "position": "CM",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/3575.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 329472,
+      "name": "N. Jahn",
+      "position": "CM",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/329472.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 33019,
+      "name": "K. Miyoshi",
+      "position": "CM",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/33019.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 336224,
+      "name": "M. Pannewig",
+      "position": "CM",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336224.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 24856,
+      "name": "B. Taz",
+      "position": "CM",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24856.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 280368,
+      "name": "S. Bamba",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280368.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 592764,
+      "name": "Alessandro Crimaldi",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/592764.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 279915,
+      "name": "C. Drakas",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/279915.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 108482,
+      "name": "D. Hanslik",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/108482.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 26287,
+      "name": "P. Hofmann",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26287.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 25919,
+      "name": "G. Holtmann",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25919.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 310131,
+      "name": "M. Rakneberg",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/310131.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 161886,
+      "name": "C. Rasmussen",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161886.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 20648,
+      "name": "I. Sissoko",
+      "position": "ST",
+      "club": "VfL Bochum",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20648.png",
+      "kitNumber": 9
+    }
+  ]
+}

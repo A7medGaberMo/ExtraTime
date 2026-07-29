@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { PlayerCardData } from "@/types/player";
-import { Shield, Sparkles, UserCheck, Layers, Eye, Users, Shirt } from "lucide-react";
+import { Shield, Layers, Shirt } from "lucide-react";
 
 export interface SquadSlot {
   position: string;
@@ -18,6 +18,7 @@ interface TacticalPitchProps {
   title?: string;
   accentColor?: string;
   badgeLabel?: string;
+  compact?: boolean;
 }
 
 // Relative pitch percentage coordinates (x: left-right, y: bottom-up from GK at bottom to ST at top)
@@ -119,94 +120,88 @@ export function TacticalPitch({
   squad,
   title = "Tactical Formation",
   accentColor = "#95E810",
-  badgeLabel = "EA Broadcast TV Mode",
+  badgeLabel = "Live Tactical Broadcast",
+  compact = false,
 }: TacticalPitchProps) {
-  const [is3DView, setIs3DView] = useState(true);
+  const [is3DView, setIs3DView] = useState(!compact);
 
   const coordsMap = matchSize === 5 ? FORMATION_COORDS_5 : FORMATION_COORDS_11;
   const positions = coordsMap[formation] || coordsMap[matchSize === 5 ? "1-2-1" : "4-3-3"];
 
-  const starterSlots = squad.filter((s) => !s.isSub);
-  const subSlots = squad.filter((s) => s.isSub);
-
   return (
-    <div className="relative w-full rounded-3xl overflow-hidden border border-border bg-card shadow-2xl p-4 md:p-6 space-y-4">
+    <div className={`relative w-full rounded-3xl overflow-hidden border border-border bg-card shadow-2xl space-y-3 ${
+      compact ? "p-3" : "p-4 md:p-6 space-y-4"
+    }`}>
       {/* Broadcast Header */}
-      <div className="flex items-center justify-between border-b border-border/80 pb-3 flex-wrap gap-2">
+      <div className="flex items-center justify-between border-b border-border/80 pb-2.5 flex-wrap gap-2">
         <div className="flex items-center gap-2">
-          <Shield className="w-5 h-5 animate-pulse" style={{ color: accentColor }} />
-          <h3 className="text-sm md:text-base font-black uppercase text-white tracking-wider">
+          <Shield className="w-4 h-4 sm:w-5 sm:h-5 animate-pulse" style={{ color: accentColor }} />
+          <h3 className="text-xs sm:text-sm md:text-base font-black uppercase text-white tracking-wider">
             {title} — <span style={{ color: accentColor }}>{formation}</span>
           </h3>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <button
             onClick={() => setIs3DView(!is3DView)}
-            className="px-3 py-1 rounded-full bg-background border border-border hover:border-lime/50 text-[11px] font-black uppercase tracking-wider text-steel hover:text-white transition-all flex items-center gap-1.5 active:scale-95 shadow-sm"
+            className="px-2.5 py-1 rounded-full bg-background border border-border hover:border-lime/50 text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-steel hover:text-white transition-all flex items-center gap-1 active:scale-95 shadow-sm"
           >
-            <Layers className="w-3.5 h-3.5 text-lime" />
-            {is3DView ? "3D Pitch View" : "2D Pitch View"}
+            <Layers className="w-3 h-3 text-lime" />
+            {is3DView ? "3D Pitch" : "2D Pitch"}
           </button>
 
-          <span
-            className="text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full border hidden sm:inline-block"
-            style={{
-              color: accentColor,
-              backgroundColor: `${accentColor}15`,
-              borderColor: `${accentColor}40`,
-            }}
-          >
-            {badgeLabel}
-          </span>
+          {!compact && (
+            <span
+              className="text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full border hidden sm:inline-block"
+              style={{
+                color: accentColor,
+                backgroundColor: `${accentColor}15`,
+                borderColor: `${accentColor}40`,
+              }}
+            >
+              {badgeLabel}
+            </span>
+          )}
         </div>
       </div>
 
-      {/* Realistic Broadcast Pitch Container */}
-      <div className="relative w-full h-[380px] sm:h-[460px] md:h-[500px] rounded-2xl overflow-hidden bg-gradient-to-b from-[#092612] via-[#0e3b1c] to-[#082210] border border-lime/20 shadow-2xl flex items-center justify-center p-2">
+      {/* Pitch Container */}
+      <div className={`relative w-full rounded-2xl overflow-hidden bg-gradient-to-b from-[#092612] via-[#0e3b1c] to-[#082210] border border-lime/20 shadow-2xl flex items-center justify-center p-2 ${
+        compact ? "h-[280px] sm:h-[320px]" : "h-[380px] sm:h-[460px] md:h-[500px]"
+      }`}>
         <div
           className={`relative w-full h-full transition-transform duration-700 ${
-            is3DView ? "transform [transform:perspective(1000px)_rotateX(26deg)_scale(0.94)] origin-bottom" : ""
+            is3DView ? "transform [transform:perspective(1000px)_rotateX(24deg)_scale(0.95)] origin-bottom" : ""
           }`}
         >
           {/* Turf pattern stripes */}
           <div className="absolute inset-0 opacity-25 pointer-events-none bg-[repeating-linear-gradient(0deg,#ffffff_0px,#ffffff_1px,transparent_1px,transparent_40px)]" />
 
-          {/* Authentic Stadium SVG Pitch Markings */}
+          {/* SVG Pitch Markings */}
           <svg className="absolute inset-0 w-full h-full stroke-white/30 fill-none stroke-[1.5]" preserveAspectRatio="none" viewBox="0 0 100 100">
-            {/* Outer Boundary */}
             <rect x="2" y="2" width="96" height="96" rx="2" />
-            {/* Corner Arcs */}
             <path d="M 2 6 A 4 4 0 0 0 6 2" />
             <path d="M 94 2 A 4 4 0 0 0 98 6" />
             <path d="M 2 94 A 4 4 0 0 1 6 98" />
             <path d="M 94 98 A 4 4 0 0 1 98 94" />
-
-            {/* Halfway Line & Center Circle */}
             <line x1="2" y1="50" x2="98" y2="50" />
             <circle cx="50" cy="50" r="14" />
             <circle cx="50" cy="50" r="0.9" fill="#ffffff" />
-
-            {/* Goal Posts Top & Bottom */}
             <rect x="42" y="0.5" width="16" height="1.5" fill="#ffffff" opacity="0.6" />
             <rect x="42" y="98" width="16" height="1.5" fill="#ffffff" opacity="0.6" />
-
-            {/* Bottom Penalty Area (Our Side) */}
             <rect x="24" y="76" width="52" height="22" />
             <rect x="36" y="88" width="28" height="10" />
             <path d="M 38 76 A 12 12 0 0 1 62 76" />
             <circle cx="50" cy="84" r="0.9" fill="#ffffff" />
-
-            {/* Top Penalty Area (Opponent Side) */}
             <rect x="24" y="2" width="52" height="22" />
             <rect x="36" y="2" width="28" height="10" />
             <path d="M 38 24 A 12 12 0 0 0 62 24" />
             <circle cx="50" cy="16" r="0.9" fill="#ffffff" />
           </svg>
 
-          {/* Realistic Broadcast Player Pins */}
+          {/* Broadcast Player Pins - exact indexing by roundNumber or position slot */}
           {positions.map((item, idx) => {
-            const slot = starterSlots[idx] || squad[idx];
+            const slot = squad.find((s: SquadSlot & { roundNumber?: number }) => s.roundNumber === idx + 1) || squad[idx];
             const hasPlayer = Boolean(slot?.player);
             const playerName = slot?.player?.name || item.pos;
 
@@ -252,37 +247,6 @@ export function TacticalPitch({
             );
           })}
         </div>
-      </div>
-
-      {/* Substitute Players (Sub Bench) Section */}
-      <div className="bg-background/60 border border-border/80 rounded-2xl p-3 space-y-2">
-        <div className="flex items-center justify-between">
-          <h4 className="text-xs font-black uppercase tracking-wider text-steel flex items-center gap-1.5">
-            <Users className="w-3.5 h-3.5 text-blue-400" /> Substitute Players ({subSlots.length})
-          </h4>
-          <span className="text-[10px] font-black text-steel uppercase">Reserve Squad</span>
-        </div>
-
-        {subSlots.length === 0 ? (
-          <p className="text-[11px] text-steel/60 italic py-1">No substitute players on bench yet.</p>
-        ) : (
-          <div className="flex gap-2 overflow-x-auto scrollbar-hidden pb-1">
-            {subSlots.map((slot, i) => (
-              <div
-                key={`sub-${i}-${slot.player?.id || i}`}
-                className="shrink-0 flex items-center gap-2 px-3 py-1.5 rounded-xl bg-card border border-blue-500/30 text-xs shadow-md"
-              >
-                <span className="px-1.5 py-0.5 bg-blue-500/20 text-blue-400 text-[10px] font-black rounded uppercase">
-                  {slot.position}
-                </span>
-                <span className="font-bold text-white text-xs truncate max-w-[100px]">
-                  {slot.player?.name || "Sub Player"}
-                </span>
-                <span className="text-[10px] font-stats text-slate-400">Reserve</span>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );

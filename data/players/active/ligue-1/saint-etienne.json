@@ -1,0 +1,363 @@
+{
+  "club": {
+    "apiId": 1063,
+    "name": "Saint Etienne",
+    "logo": "https://media.api-sports.io/football/teams/1063.png",
+    "league": "ligue-1",
+    "leagueId": 61
+  },
+  "players": [
+    {
+      "apiId": 20541,
+      "name": "G. Larsonneur",
+      "position": "GK",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20541.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 408223,
+      "name": "Mamour Ndiaye",
+      "position": "GK",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/408223.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 368026,
+      "name": "I. Touré",
+      "position": "GK",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/368026.png",
+      "kitNumber": 50
+    },
+    {
+      "apiId": 305450,
+      "name": "E. Annan",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/305450.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 667865,
+      "name": "O. Benkou",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/667865.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 90599,
+      "name": "M. Bernauer",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/90599.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 583991,
+      "name": "A. Dodote",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/583991.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 127634,
+      "name": "João Ferreira",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/127634.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 281438,
+      "name": "Chico Lamba",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/281438.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 85914,
+      "name": "J. Le Cardinal",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/85914.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 22087,
+      "name": "M. Nadé",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22087.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 191336,
+      "name": "S. Nair",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191336.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 452315,
+      "name": "K. Pedro",
+      "position": "CB",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/452315.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 659012,
+      "name": "Adam Baallal",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/659012.png",
+      "kitNumber": 51
+    },
+    {
+      "apiId": 152950,
+      "name": "T. Ballo",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/152950.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 262677,
+      "name": "J. Breum",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/262677.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 179907,
+      "name": "Á. Csongvai",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/179907.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 500070,
+      "name": "N. El Jamali",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/500070.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 583992,
+      "name": "P. Eymard",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/583992.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 495154,
+      "name": "L. Gadegbeku",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/495154.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 136155,
+      "name": "M. Jaber",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/136155.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 363053,
+      "name": "I. Miladinović",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/363053.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 174801,
+      "name": "A. Moueffek",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174801.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 385636,
+      "name": "J. Sahraoui",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/385636.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 337426,
+      "name": "A. Boakye",
+      "position": "ST",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/337426.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 8683,
+      "name": "I. Cardona",
+      "position": "ST",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8683.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 24743,
+      "name": "Z. Davitashvili",
+      "position": "ST",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24743.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 305735,
+      "name": "J. Duffus",
+      "position": "ST",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/305735.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 531403,
+      "name": "D. N'Guessan",
+      "position": "ST",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/531403.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 179856,
+      "name": "B. Old",
+      "position": "ST",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/179856.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 322560,
+      "name": "L. Stassin",
+      "position": "ST",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/322560.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 663280,
+      "name": "Mylan Toty",
+      "position": "ST",
+      "club": "Saint Etienne",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/663280.png",
+      "kitNumber": 52
+    }
+  ]
+}

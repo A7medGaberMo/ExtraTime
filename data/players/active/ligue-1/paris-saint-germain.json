@@ -1,0 +1,297 @@
+{
+  "club": {
+    "apiId": 85,
+    "name": "Paris Saint Germain",
+    "logo": "https://media.api-sports.io/football/teams/85.png",
+    "league": "ligue-1",
+    "leagueId": 61
+  },
+  "players": [
+    {
+      "apiId": 162453,
+      "name": "L. Chevalier",
+      "position": "GK",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162453.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 659070,
+      "name": "B. Laurendon",
+      "position": "GK",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/659070.png",
+      "kitNumber": 80
+    },
+    {
+      "apiId": 606062,
+      "name": "A. Longoni",
+      "position": "GK",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/606062.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 2068,
+      "name": "M. Safonov",
+      "position": "GK",
+      "club": "Paris Saint Germain",
+      "nation": "Russia",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2068.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 568273,
+      "name": "A. Vignaud",
+      "position": "GK",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568273.png",
+      "kitNumber": 70
+    },
+    {
+      "apiId": 307835,
+      "name": "Beraldo",
+      "position": "CB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/307835.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 610763,
+      "name": "D. Boly",
+      "position": "CB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/610763.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 568269,
+      "name": "T. Cordier",
+      "position": "CB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568269.png",
+      "kitNumber": 53
+    },
+    {
+      "apiId": 9,
+      "name": "A. Hakimi",
+      "position": "RB/RM",
+      "club": "Paris Saint Germain",
+      "nation": "Morocco",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 33,
+      "name": "L. Hernández",
+      "position": "CB/LB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/33.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 568268,
+      "name": "D. Lucea",
+      "position": "CB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568268.png",
+      "kitNumber": 54
+    },
+    {
+      "apiId": 257,
+      "name": "Marquinhos",
+      "position": "CB",
+      "club": "Paris Saint Germain",
+      "nation": "Brazil",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/257.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 263482,
+      "name": "Nuno Mendes",
+      "position": "CB",
+      "club": "Paris Saint Germain",
+      "nation": "Portugal",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/263482.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 16367,
+      "name": "W. Pacho",
+      "position": "CB",
+      "club": "Paris Saint Germain",
+      "nation": "Ecuador",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/16367.png",
+      "kitNumber": 51
+    },
+    {
+      "apiId": 161671,
+      "name": "I. Zabarnyi",
+      "position": "CB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161671.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 491087,
+      "name": "Pedro Fernández",
+      "position": "CM",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/491087.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 409216,
+      "name": "Senny Mayulu",
+      "position": "CM",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/409216.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 335051,
+      "name": "João Neves",
+      "position": "CM/CDM",
+      "club": "Paris Saint Germain",
+      "nation": "Portugal",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/335051.png",
+      "kitNumber": 87
+    },
+    {
+      "apiId": 328,
+      "name": "Fabián Ruiz",
+      "position": "CM",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/328.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 128384,
+      "name": "Vitinha",
+      "position": "CM/CDM",
+      "club": "Paris Saint Germain",
+      "nation": "Portugal",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/128384.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 336657,
+      "name": "W. Zaïre-Emery",
+      "position": "CM/RB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336657.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 161904,
+      "name": "B. Barcola",
+      "position": "LW/RW",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161904.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 153,
+      "name": "O. Dembélé",
+      "position": "RW/LW",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/153.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 343027,
+      "name": "D. Doué",
+      "position": "LW/CAM",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/343027.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 483,
+      "name": "K. Kvaratskhelia",
+      "position": "ST",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/483.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 446249,
+      "name": "I. Mbaye",
+      "position": "ST",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/446249.png",
+      "kitNumber": 49
+    }
+  ]
+}

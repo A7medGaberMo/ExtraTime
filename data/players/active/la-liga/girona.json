@@ -1,0 +1,286 @@
+{
+  "club": {
+    "apiId": 547,
+    "name": "Girona",
+    "logo": "https://media.api-sports.io/football/teams/547.png",
+    "league": "la-liga",
+    "leagueId": 140
+  },
+  "players": [
+    {
+      "apiId": 442861,
+      "name": "A. Andreev",
+      "position": "GK",
+      "club": "Girona",
+      "nation": "Bulgaria",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/442861.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 158,
+      "name": "P. Gazzaniga",
+      "position": "GK",
+      "club": "Girona",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 432476,
+      "name": "V. Krapyvtsov",
+      "position": "GK",
+      "club": "Girona",
+      "nation": "Ukraine",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/432476.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 162434,
+      "name": "Alejandro Francés",
+      "position": "RB/CB",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162434.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 491106,
+      "name": "Gibert Jordana",
+      "position": "CB",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/491106.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 47334,
+      "name": "David López",
+      "position": "CB/CDM",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47334.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 283668,
+      "name": "Arnau Martínez",
+      "position": "RB/CB",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/283668.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 47547,
+      "name": "Álex Moreno",
+      "position": "CB",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47547.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 327628,
+      "name": "Ricard Artero",
+      "position": "CM",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327628.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 47435,
+      "name": "Fran Beltrán",
+      "position": "CM",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47435.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 548670,
+      "name": "I. Gonzalez",
+      "position": "CM",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/548670.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 439305,
+      "name": "L. Kourouma",
+      "position": "CM",
+      "club": "Girona",
+      "nation": "Guinea",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/439305.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 1700,
+      "name": "Iván Martín",
+      "position": "CM",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1700.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 182686,
+      "name": "Iván Morante",
+      "position": "CM",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182686.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 129678,
+      "name": "A. Ounahi",
+      "position": "CM",
+      "club": "Girona",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129678.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 339105,
+      "name": "Joel Roca",
+      "position": "CM",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339105.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 2182,
+      "name": "V. Tsygankov",
+      "position": "RW/CAM",
+      "club": "Girona",
+      "nation": "Ukraine",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2182.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 547,
+      "name": "D. van de Beek",
+      "position": "CAM/CM",
+      "club": "Girona",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/547.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 626331,
+      "name": "Juan Arango",
+      "position": "ST",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/626331.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 455366,
+      "name": "P. Ba",
+      "position": "ST",
+      "club": "Girona",
+      "nation": "Senegal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/455366.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 2061,
+      "name": "Bryan Gil",
+      "position": "LW/LM",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2061.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 325710,
+      "name": "Oleksandr Pishchur",
+      "position": "ST",
+      "club": "Girona",
+      "nation": "Ukraine",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/325710.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 155,
+      "name": "Abel Ruiz",
+      "position": "ST",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/155.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 2617,
+      "name": "C. Stuani",
+      "position": "ST",
+      "club": "Girona",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2617.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 161670,
+      "name": "V. Vanat",
+      "position": "ST",
+      "club": "Girona",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161670.png",
+      "kitNumber": 19
+    }
+  ]
+}

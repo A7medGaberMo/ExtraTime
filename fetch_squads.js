@@ -13,6 +13,12 @@ if (fs.existsSync(envPath)) {
   }
 }
 
+// Re-order keys to prioritize known active key 80b632...
+const activeKey = '80b6323c921cda2a6fb58ec3aabf1f90';
+if (keys.includes(activeKey)) {
+  keys = [activeKey, ...keys.filter(k => k !== activeKey)];
+}
+
 if (keys.length === 0) {
   console.log("⚠️ No API keys found! Please check API_FOOTBALL_KEYS in .env.local.");
   process.exit(1);
@@ -31,14 +37,14 @@ async function fetchWithKeyRotations(endpoint) {
       });
 
       if (res.status === 429) {
-        console.log(`[Key ${keyIndex + 1}] Rate limit per minute (429). Waiting 10s...`);
+        console.log(`[Key ${keyIndex + 1}] Rate limit 429. Waiting 10s...`);
         await new Promise(r => setTimeout(r, 10000));
         attempts++;
         continue;
       }
 
       if (res.status === 403) {
-        console.log(`[Key ${keyIndex + 1}] Forbidden (403). Switching key...`);
+        console.log(`[Key ${keyIndex + 1} (${key.substring(0, 6)}...)] Forbidden (403). Switching key...`);
         keyIndex = (keyIndex + 1) % keys.length;
         attempts++;
         continue;
@@ -55,7 +61,7 @@ async function fetchWithKeyRotations(endpoint) {
           continue;
         }
         if (errStr.includes("requests") || errStr.includes("token") || errStr.includes("access")) {
-          console.log(`[Key ${keyIndex + 1}] Access/quota error: ${errStr}. Switching key...`);
+          console.log(`[Key ${keyIndex + 1} (${key.substring(0, 6)}...)] Access/quota error: ${errStr}. Switching key...`);
           keyIndex = (keyIndex + 1) % keys.length;
           attempts++;
           continue;
@@ -100,12 +106,12 @@ function normalizePosition(rawPos) {
   return 'CM';
 }
 
-async function fetchLeagueSquads(targetLeagueId = 39, season = 2024) {
+async function fetchLeagueSquads(targetLeagueId = 140, season = 2024) {
   const leagueSlug = LEAGUES[targetLeagueId] || 'league-' + targetLeagueId;
   const baseDir = path.join(__dirname, 'data', 'players', 'active', leagueSlug);
   fs.mkdirSync(baseDir, { recursive: true });
 
-  console.log(`\n🏆 Starting 1ST TEAM squad fetch for ${leagueSlug.toUpperCase()}...`);
+  console.log(`\n🏆 Starting 1ST TEAM squad fetch for ${leagueSlug.toUpperCase()} (League ${targetLeagueId})...`);
   
   // 1. Fetch Teams
   const teamsData = await fetchWithKeyRotations(`teams?league=${targetLeagueId}&season=${season}`);
@@ -125,39 +131,30 @@ async function fetchLeagueSquads(targetLeagueId = 39, season = 2024) {
     const clubSlug = slugify(teamName);
     const filePath = path.join(baseDir, `${clubSlug}.json`);
 
+    // Skip if already saved
+    if (fs.existsSync(filePath)) {
+      try {
+        const existing = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        if (existing.players && existing.players.length > 0) {
+          console.log(`[${i + 1}/${teams.length}] ⏭️ ${teamName} already saved (${existing.players.length} players). Skipping.`);
+          continue;
+        }
+      } catch (e) {}
+    }
+
     console.log(`[${i + 1}/${teams.length}] ⚽ Fetching official 1st team squad for ${teamName} (ID: ${teamId})...`);
 
-    // A. Fetch official 1st team squad roster (returns ~25-30 official 1st team players)
+    // Fetch official 1st team squad roster (1 request per team)
     const squadData = await fetchWithKeyRotations(`players/squads?team=${teamId}`);
     const officialSquad = squadData?.response?.[0]?.players || [];
 
-    await new Promise(r => setTimeout(r, 6500)); // Rate limit pause
-
-    // B. Fetch nationality mapping from /players endpoint (pages 1-2)
-    const natMap = new Map();
-    let page = 1;
-    while (page <= 2) {
-      const pData = await fetchWithKeyRotations(`players?team=${teamId}&season=${season}&page=${page}`);
-      if (pData?.response) {
-        for (const item of pData.response) {
-          if (item.player && item.player.id) {
-            natMap.set(item.player.id, item.player.nationality || 'Unknown');
-          }
-        }
-      }
-      page++;
-      await new Promise(r => setTimeout(r, 6500));
-    }
-
-    // C. Clean & map ONLY official 1st team squad players
     const cleanedPlayers = officialSquad.map(p => {
-      const nation = natMap.get(p.id) || 'Unknown';
       return {
         apiId: p.id,
         name: p.name ? p.name.trim() : 'Unknown',
         position: normalizePosition(p.position),
         club: teamName,
-        nation: nation,
+        nation: 'Unknown',
         tier: '',
         isLegend: false,
         imageUrl: p.photo || `https://media.api-sports.io/football/players/${p.id}.png`,
@@ -170,7 +167,7 @@ async function fetchLeagueSquads(targetLeagueId = 39, season = 2024) {
         apiId: teamId,
         name: teamName,
         logo: t.team.logo,
-        league: t.league?.name || 'Premier League',
+        league: t.league?.name || leagueSlug,
         leagueId: targetLeagueId
       },
       players: cleanedPlayers
@@ -179,13 +176,14 @@ async function fetchLeagueSquads(targetLeagueId = 39, season = 2024) {
     fs.writeFileSync(filePath, JSON.stringify(teamFileContent, null, 2));
     console.log(`   💾 Saved ${cleanedPlayers.length} official 1st team players to data/players/active/${leagueSlug}/${clubSlug}.json`);
     
-    await new Promise(r => setTimeout(r, 3000));
+    // 6.5s delay to stay well within per-minute limit (10 req/min)
+    await new Promise(r => setTimeout(r, 6500));
   }
 
   console.log(`\n🎉 Successfully fetched and cleaned all official 1st team squads for ${leagueSlug}!`);
 }
 
-const leagueArg = process.argv[2] ? parseInt(process.argv[2], 10) : 39;
+const leagueArg = process.argv[2] ? parseInt(process.argv[2], 10) : 140; // Default 140 (La Liga)
 const seasonArg = process.argv[3] ? parseInt(process.argv[3], 10) : 2024;
 
 fetchLeagueSquads(leagueArg, seasonArg).catch(console.error);

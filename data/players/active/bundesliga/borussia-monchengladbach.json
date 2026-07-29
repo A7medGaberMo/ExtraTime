@@ -1,0 +1,330 @@
+{
+  "club": {
+    "apiId": 163,
+    "name": "Borussia Mönchengladbach",
+    "logo": "https://media.api-sports.io/football/teams/163.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 90829,
+      "name": "D. Batz",
+      "position": "GK",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/90829.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 25626,
+      "name": "M. Nicolas",
+      "position": "GK",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25626.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 178405,
+      "name": "J. Olschowsky",
+      "position": "GK",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178405.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 25627,
+      "name": "T. Sippel",
+      "position": "GK",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25627.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 322627,
+      "name": "F. Chiarodia",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/322627.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 31043,
+      "name": "K. Diks",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31043.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 2803,
+      "name": "N. Elvedi",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2803.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 162536,
+      "name": "D. Herold",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162536.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 125418,
+      "name": "Y. Konoplya",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/125418.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 462217,
+      "name": "J. Leszczyński",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/462217.png",
+      "kitNumber": 56
+    },
+    {
+      "apiId": 50852,
+      "name": "J. Scally",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50852.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 327664,
+      "name": "V. Stange",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327664.png",
+      "kitNumber": 48
+    },
+    {
+      "apiId": 327646,
+      "name": "L. Ullrich",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327646.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 651914,
+      "name": "Simon Walde",
+      "position": "CB",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/651914.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 335095,
+      "name": "H. Bolin",
+      "position": "CM",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/335095.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 280358,
+      "name": "J. Castrop",
+      "position": "CM",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280358.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 178250,
+      "name": "E. Leopold",
+      "position": "CM",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178250.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 501906,
+      "name": "W. Mohya",
+      "position": "CM",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/501906.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 25638,
+      "name": "F. Neuhaus",
+      "position": "CM",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25638.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 161921,
+      "name": "G. Reyna",
+      "position": "CAM/RW",
+      "club": "Borussia Mönchengladbach",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161921.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 24969,
+      "name": "P. Sander",
+      "position": "CM",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24969.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 25461,
+      "name": "K. Stöger",
+      "position": "CM",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25461.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 351084,
+      "name": "Z. Uno",
+      "position": "CM",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/351084.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 585704,
+      "name": "F. Fleck",
+      "position": "ST",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/585704.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 725,
+      "name": "R. Hack",
+      "position": "ST",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/725.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 20784,
+      "name": "F. Honorat",
+      "position": "ST",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20784.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 26256,
+      "name": "T. Kleindienst",
+      "position": "ST",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26256.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 47895,
+      "name": "I. Lidberg",
+      "position": "ST",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47895.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 106851,
+      "name": "S. Machino",
+      "position": "ST",
+      "club": "Borussia Mönchengladbach",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/106851.png",
+      "kitNumber": 18
+    }
+  ]
+}

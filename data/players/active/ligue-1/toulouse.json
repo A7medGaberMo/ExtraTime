@@ -1,0 +1,319 @@
+{
+  "club": {
+    "apiId": 96,
+    "name": "Toulouse",
+    "logo": "https://media.api-sports.io/football/teams/96.png",
+    "league": "ligue-1",
+    "leagueId": 61
+  },
+  "players": [
+    {
+      "apiId": 551204,
+      "name": "M. Niflore",
+      "position": "GK",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/551204.png",
+      "kitNumber": 60
+    },
+    {
+      "apiId": 325346,
+      "name": "G. Restes",
+      "position": "GK",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/325346.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 571904,
+      "name": "N. Said Mchindra",
+      "position": "GK",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/571904.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 584362,
+      "name": "G. Bakhouche Piernas",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/584362.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 278392,
+      "name": "C. Cresswell",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278392.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 437174,
+      "name": "I. Diallo",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437174.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 449543,
+      "name": "T. Garondo",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449543.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 489905,
+      "name": "S. Koumbassa",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/489905.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 50735,
+      "name": "M. McKenzie",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50735.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 452697,
+      "name": "D. Methalie",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/452697.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 15793,
+      "name": "R. Nicolaisen",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/15793.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 472266,
+      "name": "C. Tapé",
+      "position": "CB",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/472266.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 50956,
+      "name": "C. Cásseres",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50956.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 39115,
+      "name": "A. Dønnum",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39115.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 118345,
+      "name": "A. Francis",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/118345.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 385351,
+      "name": "N. Lahmadi",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/385351.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 334952,
+      "name": "R. Messali",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/334952.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 551200,
+      "name": "M. Saka",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/551200.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 304140,
+      "name": "M. Sauer",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304140.png",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 25533,
+      "name": "N. Schmidt",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25533.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 514464,
+      "name": "A. Vossah",
+      "position": "CM",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/514464.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 570583,
+      "name": "A. Amaaouch",
+      "position": "ST",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/570583.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 489903,
+      "name": "Y. Azizi",
+      "position": "ST",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/489903.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 492727,
+      "name": "E. Faty",
+      "position": "ST",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/492727.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 84128,
+      "name": "Y. Gboho",
+      "position": "ST",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/84128.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 362741,
+      "name": "S. Hidalgo",
+      "position": "ST",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/362741.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 203428,
+      "name": "J. Russell-Rowe",
+      "position": "ST",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203428.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 457025,
+      "name": "Julián Vignolo",
+      "position": "ST",
+      "club": "Toulouse",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/457025.png",
+      "kitNumber": 7
+    }
+  ]
+}

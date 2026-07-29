@@ -43,29 +43,30 @@ async function resolveRound(
 
   if (!winnerId) {
     // TIE-BREAK: Both passed with no bid
-    // The player whose turn it was to start the current round gets the main player.
+    // Turn starter gets main player for 0, non-starter gets hidden sub player for 0
     const hostGetsMain = auction.currentRound % 2 !== 0;
-
     host.squad.push({
+      roundNumber: auction.currentRound,
       position: round.position,
       playerId: hostGetsMain ? round.mainPlayerId : round.subPlayerId,
-      isSub: false,
+      isSub: !hostGetsMain,
       cost: 0,
     });
     guest.squad.push({
+      roundNumber: auction.currentRound,
       position: round.position,
       playerId: hostGetsMain ? round.subPlayerId : round.mainPlayerId,
-      isSub: false,
+      isSub: hostGetsMain,
       cost: 0,
     });
   } else if (winnerId === host.userId) {
     host.budget -= price;
-    host.squad.push({ position: round.position, playerId: round.mainPlayerId, isSub: false, cost: price });
-    guest.squad.push({ position: round.position, playerId: round.subPlayerId, isSub: false, cost: 0 });
+    host.squad.push({ roundNumber: auction.currentRound, position: round.position, playerId: round.mainPlayerId, isSub: false, cost: price });
+    guest.squad.push({ roundNumber: auction.currentRound, position: round.position, playerId: round.subPlayerId, isSub: true, cost: 0 });
   } else {
     guest.budget -= price;
-    guest.squad.push({ position: round.position, playerId: round.mainPlayerId, isSub: false, cost: price });
-    host.squad.push({ position: round.position, playerId: round.subPlayerId, isSub: false, cost: 0 });
+    guest.squad.push({ roundNumber: auction.currentRound, position: round.position, playerId: round.mainPlayerId, isSub: false, cost: price });
+    host.squad.push({ roundNumber: auction.currentRound, position: round.position, playerId: round.subPlayerId, isSub: true, cost: 0 });
   }
 
   const completed = auction.currentRound >= auction.rounds.length;
@@ -78,7 +79,7 @@ async function resolveRound(
       highestBid: 0,
       highestBidderId: undefined,
       activeTurnUserId: completed ? undefined : nextStarterId,
-      turnExpiresAt: Date.now() + 15000,
+      turnExpiresAt: Date.now() + 30000,
       firstPassUserId: undefined,
     },
   });
@@ -130,7 +131,7 @@ export const placeBid = mutation({
         highestBid: args.amount,
         highestBidderId: args.userId,
         activeTurnUserId: opponent.userId,
-        turnExpiresAt: Date.now() + 15000,
+        turnExpiresAt: Date.now() + 30000,
         firstPassUserId: undefined,
       },
     });
@@ -171,7 +172,7 @@ export const pass = mutation({
             ...auction.currentBidding,
             activeTurnUserId: opponent.userId,
             firstPassUserId: args.userId,
-            turnExpiresAt: Date.now() + 15000, // Reset timer for opponent
+            turnExpiresAt: Date.now() + 30000, // Reset timer for opponent
           }
         });
         return { resolved: false };
@@ -210,24 +211,50 @@ export const usePerk = mutation({
     const opponent = isHost ? auction.guest : auction.host;
     if (!opponent) throw new Error("Waiting for opponent");
 
-    // Mark perk as used
-    const updatedMe = { ...me, perkUsed: true };
+    // Mark perk as used & add +10s time boost to current turn timer!
+    const updatedMe = { ...me, perkUsed: true, perkUsedRound: auction.currentRound };
+    const boostedExpiresAt = Math.max(Date.now(), auction.currentBidding.turnExpiresAt || Date.now()) + 10000;
+
     if (isHost) {
-      await ctx.db.patch(auction._id, { host: updatedMe });
+      await ctx.db.patch(auction._id, {
+        host: updatedMe,
+        currentBidding: {
+          ...auction.currentBidding,
+          turnExpiresAt: boostedExpiresAt,
+        },
+      });
     } else {
-      await ctx.db.patch(auction._id, { guest: updatedMe });
+      await ctx.db.patch(auction._id, {
+        guest: updatedMe,
+        currentBidding: {
+          ...auction.currentBidding,
+          turnExpiresAt: boostedExpiresAt,
+        },
+      });
     }
 
     // Return perk effect data based on perk type
     const round = auction.rounds[auction.currentRound - 1];
+    const nextRound = auction.rounds[auction.currentRound] ?? null;
 
     if (me.perk === "SCOUT") {
-      // SCOUT: Reveals the sub player's identity for the current round
+      // SCOUT: Scouts ahead — reveals opponent's budget + next round's main player
+      const nextMain: any = nextRound ? await ctx.db.get(nextRound.mainPlayerId) : null;
+      return {
+        perk: "SCOUT" as const,
+        opponentBudget: opponent.budget,
+        nextPosition: nextRound?.position ?? null,
+        nextMainName: nextMain?.name ?? null,
+      };
+    }
+
+    if (me.perk === "SPY") {
+      // SPY: Spies on hidden info — reveals the backup sub player for this round
       const subPlayer: any = await ctx.db.get(round.subPlayerId);
       const subClub: any = subPlayer ? await ctx.db.get(subPlayer.clubId) : null;
       const subNation: any = subPlayer ? await ctx.db.get(subPlayer.nationId) : null;
       return {
-        perk: "SCOUT" as const,
+        perk: "SPY" as const,
         revealedSub: subPlayer
           ? {
               name: subPlayer.name,
@@ -241,11 +268,10 @@ export const usePerk = mutation({
       };
     }
 
-    if (me.perk === "SPY") {
-      // SPY: Reveals opponent's remaining budget
+    if (me.perk === "FREEZE" || me.perk === "SHIELD") {
       return {
-        perk: "SPY" as const,
-        opponentBudget: opponent.budget,
+        perk: me.perk,
+        active: true,
       };
     }
 
@@ -254,4 +280,5 @@ export const usePerk = mutation({
 });
 
 export const activatePerk = usePerk;
+
 

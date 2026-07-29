@@ -1,0 +1,308 @@
+{
+  "club": {
+    "apiId": 77,
+    "name": "Angers",
+    "logo": "https://media.api-sports.io/football/teams/77.png",
+    "league": "ligue-1",
+    "leagueId": 61
+  },
+  "players": [
+    {
+      "apiId": 647,
+      "name": "Anthony Lopes",
+      "position": "GK",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/647.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 396308,
+      "name": "Oumar Pona",
+      "position": "GK",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/396308.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 174973,
+      "name": "M. Zinga",
+      "position": "GK",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174973.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 20850,
+      "name": "C. Arcus",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20850.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 385569,
+      "name": "E. Biumla",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/385569.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 271540,
+      "name": "O. Camara",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/271540.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 425207,
+      "name": "M. Courcoul",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/425207.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 343609,
+      "name": "J. Ekomié",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/343609.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 570586,
+      "name": "M. Gernigon",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/570586.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 21381,
+      "name": "J. Lefort",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21381.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 456831,
+      "name": "M. Louãr",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/456831.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 174660,
+      "name": "L. Rao-Lisoa",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174660.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 419595,
+      "name": "Dan Sinaté",
+      "position": "CB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/419595.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 174708,
+      "name": "Y. Belkhdim",
+      "position": "CM",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174708.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 655113,
+      "name": "Bane Diatta",
+      "position": "CM",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/655113.png",
+      "kitNumber": 46
+    },
+    {
+      "apiId": 486627,
+      "name": "I. Garin",
+      "position": "CM",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/486627.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 289555,
+      "name": "L. Mouton",
+      "position": "CM",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/289555.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 37652,
+      "name": "B. van den Boomen",
+      "position": "CM",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37652.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 21618,
+      "name": "J. Allevinah",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21618.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 402066,
+      "name": "A. Bermont",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/402066.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 579375,
+      "name": "Djibirin Harouna",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/579375.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 193188,
+      "name": "A. El Ouazzani",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/193188.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 639473,
+      "name": "Yahia Jlidi",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/639473.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 403277,
+      "name": "L. Machine",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/403277.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 457541,
+      "name": "P. Peter",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/457541.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 191289,
+      "name": "A. Sbaï",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191289.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 275385,
+      "name": "U. Simbakoli",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/275385.png",
+      "kitNumber": 9
+    }
+  ]
+}

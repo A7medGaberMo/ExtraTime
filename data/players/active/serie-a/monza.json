@@ -1,0 +1,308 @@
+{
+  "club": {
+    "apiId": 1579,
+    "name": "Monza",
+    "logo": "https://media.api-sports.io/football/teams/1579.png",
+    "league": "serie-a",
+    "leagueId": 135
+  },
+  "players": [
+    {
+      "apiId": 31566,
+      "name": "S. Pizzignacco",
+      "position": "GK",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31566.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 388883,
+      "name": "A. Strajnar",
+      "position": "GK",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/388883.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 31191,
+      "name": "D. Thiam",
+      "position": "GK",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31191.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 10997,
+      "name": "V. Antov",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10997.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 384423,
+      "name": "A. Bakoune",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/384423.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 30708,
+      "name": "S. Birindelli",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30708.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 48294,
+      "name": "A. Brorsson",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48294.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 193270,
+      "name": "A. Carboni",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/193270.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 56996,
+      "name": "F. Delli Carri",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/56996.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 448977,
+      "name": "E. Kouadio",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/448977.png",
+      "kitNumber": 60
+    },
+    {
+      "apiId": 342018,
+      "name": "L. Lucchesi",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342018.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 41324,
+      "name": "Ricardo Mangas",
+      "position": "CB",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41324.png",
+      "kitNumber": 91
+    },
+    {
+      "apiId": 579153,
+      "name": "N. Ballabio",
+      "position": "CM",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/579153.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 394438,
+      "name": "L. Colombo",
+      "position": "CM",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/394438.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 30431,
+      "name": "A. Colpani",
+      "position": "CM",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30431.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 280938,
+      "name": "N. Galazzi",
+      "position": "CM",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280938.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 18824,
+      "name": "Pedro Obiang",
+      "position": "CM",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18824.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 550912,
+      "name": "F. Ondoa",
+      "position": "CM",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/550912.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 30436,
+      "name": "M. Pessina",
+      "position": "CM",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30436.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 213,
+      "name": "K. Baldé",
+      "position": "ST",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/213.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 31532,
+      "name": "P. Ciurria",
+      "position": "ST",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31532.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 1649,
+      "name": "P. Cutrone",
+      "position": "ST",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1649.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 284242,
+      "name": "O. Forson",
+      "position": "ST",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284242.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 422109,
+      "name": "S. Loubao",
+      "position": "ST",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/422109.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 30603,
+      "name": "Dany Mota",
+      "position": "ST",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30603.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 613450,
+      "name": "M. Mout",
+      "position": "ST",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/613450.png",
+      "kitNumber": 52
+    },
+    {
+      "apiId": 30879,
+      "name": "A. Petagna",
+      "position": "ST",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30879.png",
+      "kitNumber": 37
+    }
+  ]
+}

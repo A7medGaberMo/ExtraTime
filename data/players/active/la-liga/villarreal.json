@@ -1,0 +1,308 @@
+{
+  "club": {
+    "apiId": 533,
+    "name": "Villarreal",
+    "logo": "https://media.api-sports.io/football/teams/533.png",
+    "league": "la-liga",
+    "leagueId": 140
+  },
+  "players": [
+    {
+      "apiId": 302277,
+      "name": "Rubén Gómez",
+      "position": "GK",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/302277.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 548871,
+      "name": "Y. Kinareykin",
+      "position": "GK",
+      "club": "Villarreal",
+      "nation": "Ukraine",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/548871.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 278619,
+      "name": "Luíz Júnior",
+      "position": "GK",
+      "club": "Villarreal",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278619.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 455356,
+      "name": "Daniel Budesca",
+      "position": "CB",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/455356.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 70500,
+      "name": "Sergi Cardona",
+      "position": "LB/CB",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/70500.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 21997,
+      "name": "Logan Costa",
+      "position": "CB",
+      "club": "Villarreal",
+      "nation": "Cape Verde",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21997.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 355994,
+      "name": "A. Freeman",
+      "position": "CB",
+      "club": "Villarreal",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/355994.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 288112,
+      "name": "Willy Kambwala Ndengushi",
+      "position": "CB",
+      "club": "Villarreal",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/288112.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 311773,
+      "name": "S. Mouriño",
+      "position": "CB",
+      "club": "Villarreal",
+      "nation": "Uruguay",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/311773.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 435552,
+      "name": "Pau Navarro",
+      "position": "CB",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/435552.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 184420,
+      "name": "Carlos Romero",
+      "position": "CB",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/184420.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 336671,
+      "name": "Renato Veiga",
+      "position": "CB/CDM",
+      "club": "Villarreal",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336671.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 51016,
+      "name": "T. Buchanan",
+      "position": "RM/RB",
+      "club": "Villarreal",
+      "nation": "Canada",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51016.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 47541,
+      "name": "Santi Comesaña",
+      "position": "CM/CDM",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47541.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 463280,
+      "name": "A. Diatta",
+      "position": "RM/RW",
+      "club": "Villarreal",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/463280.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 362750,
+      "name": "T. Fernández",
+      "position": "CM",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/362750.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 20696,
+      "name": "P. Gueye",
+      "position": "CDM/CM",
+      "club": "Villarreal",
+      "nation": "Senegal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20696.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 548734,
+      "name": "C. Macia",
+      "position": "CM",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/548734.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 182519,
+      "name": "Alberto Moleiro",
+      "position": "CAM/CM",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182519.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 411702,
+      "name": "Pau Cabanes",
+      "position": "ST",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/411702.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 184194,
+      "name": "Álex Forés",
+      "position": "ST",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/184194.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 514913,
+      "name": "Hugo López",
+      "position": "ST",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/514913.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 180496,
+      "name": "G. Mikautadze",
+      "position": "ST",
+      "club": "Villarreal",
+      "nation": "Georgia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/180496.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 1707,
+      "name": "Gerard Moreno",
+      "position": "ST/RW",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1707.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 351587,
+      "name": "T. Oluwaseyi",
+      "position": "ST",
+      "club": "Villarreal",
+      "nation": "Canada",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/351587.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 3246,
+      "name": "N. Pépé",
+      "position": "RW/ST",
+      "club": "Villarreal",
+      "nation": "Ivory Coast",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/3246.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 18906,
+      "name": "Ayoze Pérez",
+      "position": "ST/LW",
+      "club": "Villarreal",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18906.png",
+      "kitNumber": 22
+    }
+  ]
+}

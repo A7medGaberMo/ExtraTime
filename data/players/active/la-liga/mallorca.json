@@ -1,0 +1,297 @@
+{
+  "club": {
+    "apiId": 798,
+    "name": "Mallorca",
+    "logo": "https://media.api-sports.io/football/teams/798.png",
+    "league": "la-liga",
+    "leagueId": 140
+  },
+  "players": [
+    {
+      "apiId": 152955,
+      "name": "L. Bergström",
+      "position": "GK",
+      "club": "Mallorca",
+      "nation": "Sweden",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/152955.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 648740,
+      "name": "Rareș Vlad",
+      "position": "GK",
+      "club": "Mallorca",
+      "nation": "Romania",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/648740.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 612028,
+      "name": "M. Calatayud",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/612028.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 920,
+      "name": "Toni Lato",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/920.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 335697,
+      "name": "David López",
+      "position": "CB/CDM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/335697.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 64268,
+      "name": "J. Mojica",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Colombia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64268.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 108519,
+      "name": "Mateu Morey",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/108519.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 551463,
+      "name": "J. Olaizola",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/551463.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 626497,
+      "name": "L. Orejuela",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/626497.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 46733,
+      "name": "Raíllo",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46733.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 462277,
+      "name": "I. Salhi",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Morocco",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/462277.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 647395,
+      "name": "Leo Sánchez",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/647395.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 384861,
+      "name": "A. Souhmahoro",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Ivory Coast",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/384861.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 46738,
+      "name": "M. Valjent",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Slovakia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46738.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 47336,
+      "name": "Darder",
+      "position": "CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47336.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 629089,
+      "name": "J. Garcia",
+      "position": "CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/629089.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 1701,
+      "name": "Manu Morlanes",
+      "position": "CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1701.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 138809,
+      "name": "Arnau Puigmal",
+      "position": "CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138809.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 646868,
+      "name": "C. Riba",
+      "position": "CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/646868.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 190485,
+      "name": "Samú Costa",
+      "position": "CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/190485.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 107194,
+      "name": "Antonio Sánchez",
+      "position": "CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/107194.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 285909,
+      "name": "Pablo Torre",
+      "position": "CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/285909.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 14488,
+      "name": "Fuentes",
+      "position": "ST",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/14488.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 405074,
+      "name": "J. Kalumba",
+      "position": "ST",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/405074.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 46751,
+      "name": "Abdón Prats",
+      "position": "ST",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46751.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 491248,
+      "name": "Jan Virgili",
+      "position": "ST",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/491248.png",
+      "kitNumber": 17
+    }
+  ]
+}

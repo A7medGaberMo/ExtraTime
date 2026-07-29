@@ -1,0 +1,330 @@
+{
+  "club": {
+    "apiId": 162,
+    "name": "Werder Bremen",
+    "logo": "https://media.api-sports.io/football/teams/162.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 169295,
+      "name": "K. Hein",
+      "position": "GK",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/169295.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 25519,
+      "name": "M. Kolke",
+      "position": "GK",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25519.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 7525,
+      "name": "A. Schlager",
+      "position": "GK",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7525.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 26319,
+      "name": "F. Agu",
+      "position": "CB",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26319.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 440147,
+      "name": "Abdoul Karim Coulibaly",
+      "position": "CB",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/440147.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 25314,
+      "name": "M. Friedl",
+      "position": "CB",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25314.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 289460,
+      "name": "J. Malatini",
+      "position": "CB",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/289460.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 25011,
+      "name": "A. Pieper",
+      "position": "CB",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25011.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 444984,
+      "name": "Mick Schmetgens",
+      "position": "CB",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/444984.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 2916,
+      "name": "N. Stark",
+      "position": "CB",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2916.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 270836,
+      "name": "O. Wójcik",
+      "position": "CB",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/270836.png",
+      "kitNumber": 66
+    },
+    {
+      "apiId": 193720,
+      "name": "S. Alvero",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/193720.png",
+      "kitNumber": 80
+    },
+    {
+      "apiId": 331004,
+      "name": "Chuky San José",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/331004.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 448468,
+      "name": "P. Čović",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/448468.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 8673,
+      "name": "O. Deman",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8673.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 38798,
+      "name": "S. Lynen",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/38798.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 7562,
+      "name": "R. Schmid",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7562.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 585661,
+      "name": "D. Soylu",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/585661.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 15592,
+      "name": "J. Stage",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/15592.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 323507,
+      "name": "Dariusz Stalmach",
+      "position": "CM",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/323507.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 623771,
+      "name": "P. Erevbenagie",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/623771.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 7073,
+      "name": "M. Grüll",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7073.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 48497,
+      "name": "C. Itten",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48497.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 3013,
+      "name": "D. Kownacki",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/3013.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 346866,
+      "name": "S. Mbangula",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/346866.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 561838,
+      "name": "S. Musah",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/561838.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 177807,
+      "name": "J. Njinmah",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/177807.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 584356,
+      "name": "K. Quetant",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/584356.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 334334,
+      "name": "K. Topp",
+      "position": "ST",
+      "club": "Werder Bremen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/334334.png",
+      "kitNumber": 9
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "club": {
+    "apiId": 542,
+    "name": "Alaves",
+    "logo": "https://media.api-sports.io/football/teams/542.png",
+    "league": "la-liga",
+    "leagueId": 140
+  },
+  "players": [
+    {
+      "apiId": 551461,
+      "name": "R. Montero",
+      "position": "GK",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/551461.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 122471,
+      "name": "Jesús Owono",
+      "position": "GK",
+      "club": "Alaves",
+      "nation": "Equatorial Guinea",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/122471.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 47353,
+      "name": "Sivera",
+      "position": "GK",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47353.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 377215,
+      "name": "G. Swiderski",
+      "position": "GK",
+      "club": "Alaves",
+      "nation": "Poland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/377215.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 387530,
+      "name": "Carlos Ballestero García",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/387530.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 70476,
+      "name": "M. Diarra",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Mali",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/70476.png",
+      "kitNumber": 93
+    },
+    {
+      "apiId": 6638,
+      "name": "F. Garcés",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6638.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 442058,
+      "name": "Álvaro García",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/442058.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 18740,
+      "name": "Jonny",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18740.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 106759,
+      "name": "V. Koski",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Finland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/106759.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 162170,
+      "name": "Hugo Novoa",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162170.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 646886,
+      "name": "P. Sanz",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/646886.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 6233,
+      "name": "N. Tenaglia",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Argentina",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6233.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 361384,
+      "name": "Yusi",
+      "position": "CB",
+      "club": "Alaves",
+      "nation": "Morocco",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/361384.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 143,
+      "name": "Carles Aleñá",
+      "position": "CM",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/143.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 162686,
+      "name": "Antonio Blanco",
+      "position": "CM",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162686.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 47309,
+      "name": "Guevara",
+      "position": "CM",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47309.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 139001,
+      "name": "Pablo Ibáñez",
+      "position": "CM",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/139001.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 6085,
+      "name": "C. Benavídez",
+      "position": "CM",
+      "club": "Alaves",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6085.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 332645,
+      "name": "Mikel Rodríguez",
+      "position": "CM",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/332645.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 1461,
+      "name": "Denis Suárez",
+      "position": "CM",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1461.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 608,
+      "name": "L. Boyé",
+      "position": "ST",
+      "club": "Alaves",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/608.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 760,
+      "name": "M. Díaz",
+      "position": "ST",
+      "club": "Alaves",
+      "nation": "Dominican Republic",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/760.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 623902,
+      "name": "A. Manas",
+      "position": "ST",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/623902.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 47181,
+      "name": "Toni Martínez",
+      "position": "ST",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47181.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 331369,
+      "name": "Angel Pérez",
+      "position": "ST",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/331369.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 183751,
+      "name": "A. Rebbach",
+      "position": "ST",
+      "club": "Alaves",
+      "nation": "Algeria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/183751.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 192434,
+      "name": "Miguel Rodríguez",
+      "position": "ST",
+      "club": "Alaves",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/192434.png",
+      "kitNumber": 22
+    }
+  ]
+}

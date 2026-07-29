@@ -1,0 +1,297 @@
+{
+  "club": {
+    "apiId": 1660,
+    "name": "SV Elversberg",
+    "logo": "https://media.api-sports.io/football/teams/1660.png",
+    "league": "bundesliga",
+    "leagueId": 78
+  },
+  "players": [
+    {
+      "apiId": 25113,
+      "name": "T. Boss",
+      "position": "GK",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25113.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 178194,
+      "name": "N. Kristof",
+      "position": "GK",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178194.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 162079,
+      "name": "L. Günther",
+      "position": "CB",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162079.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 25063,
+      "name": "J. Gyamerah",
+      "position": "CB",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25063.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 21333,
+      "name": "F. Le Joncour",
+      "position": "CB",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21333.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 39331,
+      "name": "N. Mickelson",
+      "position": "CB",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39331.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 177731,
+      "name": "L. Pinckert",
+      "position": "CB",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/177731.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 126951,
+      "name": "M. Rohr",
+      "position": "CB",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/126951.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 583807,
+      "name": "L. Seifert",
+      "position": "CB",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/583807.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 177509,
+      "name": "L. Sirch",
+      "position": "CB",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/177509.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 554307,
+      "name": "R. Adam",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/554307.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 90695,
+      "name": "A. Condé",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/90695.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 412704,
+      "name": "Noah Darvich",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/412704.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 280070,
+      "name": "F. Keidel",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280070.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 342170,
+      "name": "M. Krattenmacher",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342170.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 392254,
+      "name": "Francis-Ikechukwu Onyeka",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/392254.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 40533,
+      "name": "Ł. Poręba",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/40533.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 203260,
+      "name": "F. Schmahl",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203260.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 177362,
+      "name": "T. Zimmerschied",
+      "position": "CM",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/177362.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 328617,
+      "name": "William Cole Campbell",
+      "position": "ST",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/328617.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 178346,
+      "name": "J. Çeka",
+      "position": "ST",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178346.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 272219,
+      "name": "F. Gerezgiher",
+      "position": "ST",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/272219.png",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 350047,
+      "name": "D. Mokwa",
+      "position": "ST",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350047.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 177452,
+      "name": "L. Petkov",
+      "position": "ST",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/177452.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 26342,
+      "name": "L. Pfeiffer",
+      "position": "ST",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26342.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 26642,
+      "name": "L. Schnellbacher",
+      "position": "ST",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26642.png",
+      "kitNumber": 24
+    }
+  ]
+}

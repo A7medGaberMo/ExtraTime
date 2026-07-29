@@ -1,0 +1,330 @@
+{
+  "club": {
+    "apiId": 540,
+    "name": "Espanyol",
+    "logo": "https://media.api-sports.io/football/teams/540.png",
+    "league": "la-liga",
+    "leagueId": 140
+  },
+  "players": [
+    {
+      "apiId": 2813,
+      "name": "M. Dmitrović",
+      "position": "GK",
+      "club": "Espanyol",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2813.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 182735,
+      "name": "Ángel Fortuño",
+      "position": "GK",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182735.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 461502,
+      "name": "Llorenç Serred",
+      "position": "GK",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/461502.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 162585,
+      "name": "Pol Tristán",
+      "position": "GK",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162585.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 47249,
+      "name": "L. Cabrera",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47249.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 286601,
+      "name": "O. El Hilali",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286601.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 375915,
+      "name": "Q. Hartman",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/375915.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 450716,
+      "name": "Roger Hinojo",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/450716.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 46734,
+      "name": "Pablo Ramón",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46734.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 282054,
+      "name": "C. Riedel",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/282054.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 47256,
+      "name": "Miguel Rubio",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47256.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 184407,
+      "name": "José Salinas",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/184407.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 199824,
+      "name": "Rubén Sánchez",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/199824.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 438284,
+      "name": "Rafel Bauzà",
+      "position": "CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/438284.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 286038,
+      "name": "Álex Calatrava",
+      "position": "CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286038.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 46799,
+      "name": "Edu Expósito",
+      "position": "CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46799.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 415089,
+      "name": "Gabriel Moscardo",
+      "position": "CM",
+      "club": "Espanyol",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/415089.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 601891,
+      "name": "F. Gomez",
+      "position": "CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/601891.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 183699,
+      "name": "Urko González",
+      "position": "CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/183699.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 388495,
+      "name": "Javier Hernandez",
+      "position": "CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/388495.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 127426,
+      "name": "Pol Lozano",
+      "position": "CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/127426.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 656722,
+      "name": "A. Almansa",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/656722.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 669869,
+      "name": "Cala",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/669869.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 273732,
+      "name": "T. Dolan",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Ireland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/273732.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 312990,
+      "name": "Roberto Fernández",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/312990.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 347885,
+      "name": "Marcos Fernández",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/347885.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 47396,
+      "name": "Kike García",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47396.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 182674,
+      "name": "Jofre Carreras",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182674.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 47398,
+      "name": "Pere Milla",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47398.png",
+      "kitNumber": 11
+    }
+  ]
+}

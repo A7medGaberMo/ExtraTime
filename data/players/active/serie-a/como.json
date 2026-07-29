@@ -1,0 +1,341 @@
+{
+  "club": {
+    "apiId": 895,
+    "name": "Como",
+    "logo": "https://media.api-sports.io/football/teams/895.png",
+    "league": "serie-a",
+    "leagueId": 135
+  },
+  "players": [
+    {
+      "apiId": 8574,
+      "name": "J. Butez",
+      "position": "GK",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8574.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 193328,
+      "name": "N. Törnqvist",
+      "position": "GK",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/193328.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 441244,
+      "name": "Andrés Cuenca",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/441244.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 32034,
+      "name": "A. Dossena",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/32034.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 31073,
+      "name": "E. Goldaniga",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31073.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 309792,
+      "name": "Kaiki",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/309792.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 26301,
+      "name": "M. Kempf",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26301.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 386305,
+      "name": "Jacobo Ramón Naveros",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/386305.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 14266,
+      "name": "I. Smolčić",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/14266.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 336560,
+      "name": "Álex Valle",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336560.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 129119,
+      "name": "I. Van der Brempt",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129119.png",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 295026,
+      "name": "M. Baturina",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/295026.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 476862,
+      "name": "L. Bősze",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/476862.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 659,
+      "name": "M. Caqueret",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/659.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 662278,
+      "name": "R. Cassano",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/662278.png",
+      "kitNumber": 49
+    },
+    {
+      "apiId": 162266,
+      "name": "L. da Cunha",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162266.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 459029,
+      "name": "A. Lahdo",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/459029.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 410396,
+      "name": "M. Liberali",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/410396.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 47085,
+      "name": "Luis Milla",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47085.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 350037,
+      "name": "N. Paz",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350037.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 288699,
+      "name": "M. Perrone",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/288699.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 443162,
+      "name": "Jesús Rodríguez",
+      "position": "CM",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443162.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 354533,
+      "name": "J. Addai",
+      "position": "ST",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/354533.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 400948,
+      "name": "Assane Diao",
+      "position": "ST",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/400948.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 26845,
+      "name": "T. Douvikas",
+      "position": "ST",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26845.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 263699,
+      "name": "A. Fadera",
+      "position": "ST",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/263699.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 106257,
+      "name": "A. Gabrielloni",
+      "position": "ST",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/106257.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 38753,
+      "name": "N. Kühn",
+      "position": "ST",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/38753.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 59,
+      "name": "Álvaro Morata",
+      "position": "ST",
+      "club": "Como",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/59.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 567667,
+      "name": "S. Pisati",
+      "position": "ST",
+      "club": "Como",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/567667.png",
+      "kitNumber": 58
+    }
+  ]
+}

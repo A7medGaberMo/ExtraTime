@@ -1,0 +1,319 @@
+{
+  "club": {
+    "apiId": 111,
+    "name": "Le Havre",
+    "logo": "https://media.api-sports.io/football/teams/111.png",
+    "league": "ligue-1",
+    "leagueId": 61
+  },
+  "players": [
+    {
+      "apiId": 395808,
+      "name": "Paul Argney",
+      "position": "GK",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/395808.png",
+      "kitNumber": 50
+    },
+    {
+      "apiId": 119853,
+      "name": "M. Diaw",
+      "position": "GK",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/119853.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 24012,
+      "name": "L. Mpasi",
+      "position": "GK",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24012.png",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 515772,
+      "name": "Alex Teixeira",
+      "position": "GK",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/515772.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 174625,
+      "name": "F. Doucouré",
+      "position": "CB",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174625.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 355955,
+      "name": "Rory Davidson",
+      "position": "CB",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/355955.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 64255,
+      "name": "G. Lloris",
+      "position": "CB",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64255.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 41238,
+      "name": "V. Sasso",
+      "position": "CB",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41238.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 33165,
+      "name": "A. Seko",
+      "position": "CB",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/33165.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 513415,
+      "name": "Stephan Zagadou",
+      "position": "CB",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/513415.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 23637,
+      "name": "Y. Zouaoui",
+      "position": "CB",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/23637.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 535384,
+      "name": "M. Bentoumi",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/535384.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 314232,
+      "name": "M. Bodmer",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/314232.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 395765,
+      "name": "I. Bouneb",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/395765.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 471290,
+      "name": "A. Diabate",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/471290.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 364093,
+      "name": "S. Ebonog",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/364093.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 460805,
+      "name": "D. Mosengo",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/460805.png",
+      "kitNumber": 78
+    },
+    {
+      "apiId": 128342,
+      "name": "R. Ndiaye",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/128342.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 314231,
+      "name": "A. Richardson",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/314231.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 630731,
+      "name": "Thomas Rousseau",
+      "position": "CM",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/630731.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 630733,
+      "name": "Yanis Beau Djellel",
+      "position": "ST",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/630733.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 21641,
+      "name": "G. Kyeremeh",
+      "position": "ST",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21641.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 961,
+      "name": "F. Mambimbi",
+      "position": "ST",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/961.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 273142,
+      "name": "K. Mizuta",
+      "position": "ST",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/273142.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 508070,
+      "name": "S. Nakamura",
+      "position": "ST",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/508070.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 437529,
+      "name": "N. Obougoujacquet",
+      "position": "ST",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437529.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 1945,
+      "name": "M. Samatta",
+      "position": "ST",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1945.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 437349,
+      "name": "E. Koffi Vinette",
+      "position": "ST",
+      "club": "Le Havre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437349.png",
+      "kitNumber": 27
+    }
+  ]
+}

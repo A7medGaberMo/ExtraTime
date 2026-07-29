@@ -1,0 +1,352 @@
+{
+  "club": {
+    "apiId": 496,
+    "name": "Juventus",
+    "logo": "https://media.api-sports.io/football/teams/496.png",
+    "league": "serie-a",
+    "leagueId": 135
+  },
+  "players": [
+    {
+      "apiId": 30670,
+      "name": "M. Di Gregorio",
+      "position": "GK",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30670.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 620060,
+      "name": "R. Huli",
+      "position": "GK",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/620060.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 849,
+      "name": "M. Perin",
+      "position": "GK",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/849.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 850,
+      "name": "C. Pinsoglio",
+      "position": "GK",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/850.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 597936,
+      "name": "R. Radu",
+      "position": "GK",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/597936.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 335099,
+      "name": "S. Scaglia",
+      "position": "GK",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/335099.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 30497,
+      "name": "Bremer",
+      "position": "CB",
+      "club": "Juventus",
+      "nation": "Brazil",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30497.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 125674,
+      "name": "J. Cabal",
+      "position": "LB/CB",
+      "club": "Juventus",
+      "nation": "Colombia",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/125674.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 127011,
+      "name": "A. Cambiaso",
+      "position": "RB/LB",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/127011.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 22222,
+      "name": "Z. Çelik",
+      "position": "CB",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22222.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 268341,
+      "name": "F. Gatti",
+      "position": "CB",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/268341.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 436925,
+      "name": "Javier Gil",
+      "position": "CB",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/436925.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 41734,
+      "name": "João Mário",
+      "position": "CB",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41734.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 162188,
+      "name": "P. Kalulu",
+      "position": "CB/RB",
+      "club": "Juventus",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162188.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 19263,
+      "name": "L. Kelly",
+      "position": "CB",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19263.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 405298,
+      "name": "N. Rizzo",
+      "position": "CB",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/405298.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 335101,
+      "name": "J. Rouhi",
+      "position": "CB",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/335101.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 339872,
+      "name": "Vasilije Adžić",
+      "position": "CM",
+      "club": "Juventus",
+      "nation": "Montenegro",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339872.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 36899,
+      "name": "T. Koopmeiners",
+      "position": "CAM/CM",
+      "club": "Juventus",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/36899.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 30533,
+      "name": "M. Locatelli",
+      "position": "CDM/CM",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30533.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 415,
+      "name": "W. McKennie",
+      "position": "CM/RM",
+      "club": "Juventus",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/415.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 181808,
+      "name": "F. Miretti",
+      "position": "CM",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/181808.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 116,
+      "name": "K. Thuram",
+      "position": "CM/CDM",
+      "club": "Juventus",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/116.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 30531,
+      "name": "J. Boga",
+      "position": "ST",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30531.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 161585,
+      "name": "Francisco Conceição",
+      "position": "ST",
+      "club": "Juventus",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161585.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 8489,
+      "name": "J. David",
+      "position": "ST",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8489.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 451504,
+      "name": "J. Ekhator",
+      "position": "ST",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/451504.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 333,
+      "name": "A. Milik",
+      "position": "ST",
+      "club": "Juventus",
+      "nation": "Poland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/333.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 86,
+      "name": "L. Openda",
+      "position": "ST",
+      "club": "Juventus",
+      "nation": "Belgium",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/86.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 339883,
+      "name": "K. Yıldız",
+      "position": "LW/CAM",
+      "club": "Juventus",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339883.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 48392,
+      "name": "E. Zhegrova",
+      "position": "ST",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48392.png",
+      "kitNumber": 11
+    }
+  ]
+}

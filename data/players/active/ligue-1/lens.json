@@ -1,0 +1,330 @@
+{
+  "club": {
+    "apiId": 116,
+    "name": "Lens",
+    "logo": "https://media.api-sports.io/football/teams/116.png",
+    "league": "ligue-1",
+    "leagueId": 61
+  },
+  "players": [
+    {
+      "apiId": 497661,
+      "name": "I. Jourdren",
+      "position": "GK",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/497661.png",
+      "kitNumber": 60
+    },
+    {
+      "apiId": 22220,
+      "name": "H. Koffi",
+      "position": "GK",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22220.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 347211,
+      "name": "R. Risser",
+      "position": "GK",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/347211.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 44594,
+      "name": "Saud Abdulhamid",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44594.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 21568,
+      "name": "R. Aguilar",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21568.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 441264,
+      "name": "K. Antonio",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/441264.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 322984,
+      "name": "S. Baidoo",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/322984.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 395589,
+      "name": "N. Äelik",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/395589.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 369500,
+      "name": "I. Ganiou",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/369500.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 668701,
+      "name": "N. Kemtchoum-Stasiowski",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/668701.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 178708,
+      "name": "M. Nawrocki",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178708.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 437139,
+      "name": "S. Sagnan",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437139.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 20525,
+      "name": "M. Udol",
+      "position": "CB",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20525.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 394950,
+      "name": "A. Bulatović",
+      "position": "CM",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/394950.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 25634,
+      "name": "M. Cuisance",
+      "position": "CM",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25634.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 668702,
+      "name": "N. Gane Bernardino",
+      "position": "CM",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/668702.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 1153,
+      "name": "A. Haidara",
+      "position": "CM",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1153.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 2929,
+      "name": "T. Hazard",
+      "position": "CM",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2929.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 669863,
+      "name": "Mezian Mesloub",
+      "position": "CM",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/669863.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 277306,
+      "name": "M. Sangaré",
+      "position": "CM",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/277306.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 660571,
+      "name": "M. Soares",
+      "position": "CM",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/660571.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 1135,
+      "name": "O. Édouard",
+      "position": "ST",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1135.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 443579,
+      "name": "R. Fofana",
+      "position": "ST",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443579.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 633361,
+      "name": "Erawan Garnier",
+      "position": "ST",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/633361.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 326073,
+      "name": "R. Labeau Lascary",
+      "position": "ST",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/326073.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 277191,
+      "name": "A. Sima",
+      "position": "ST",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/277191.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 40809,
+      "name": "M. Skóraś",
+      "position": "ST",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/40809.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 20761,
+      "name": "F. Sotoca",
+      "position": "ST",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20761.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 1922,
+      "name": "F. Thauvin",
+      "position": "ST",
+      "club": "Lens",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1922.png",
+      "kitNumber": 10
+    }
+  ]
+}

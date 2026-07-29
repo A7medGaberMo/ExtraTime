@@ -1,0 +1,352 @@
+{
+  "club": {
+    "apiId": 80,
+    "name": "Lyon",
+    "logo": "https://media.api-sports.io/football/teams/80.png",
+    "league": "ligue-1",
+    "leagueId": 61
+  },
+  "players": [
+    {
+      "apiId": 20762,
+      "name": "R. Descamps",
+      "position": "GK",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20762.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 392671,
+      "name": "L. Diarra",
+      "position": "GK",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/392671.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 61142,
+      "name": "D. Greif",
+      "position": "GK",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/61142.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 438694,
+      "name": "Y. Konan",
+      "position": "GK",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/438694.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 9700,
+      "name": "Abner",
+      "position": "CB",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9700.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 493026,
+      "name": "N. Kamara",
+      "position": "CB",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/493026.png",
+      "kitNumber": 85
+    },
+    {
+      "apiId": 645969,
+      "name": "Steeve Kango",
+      "position": "CB",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/645969.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 193293,
+      "name": "R. Kluivert",
+      "position": "CB",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/193293.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 1456,
+      "name": "A. Maitland-Niles",
+      "position": "RB/CM",
+      "club": "Lyon",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1456.png",
+      "kitNumber": 98
+    },
+    {
+      "apiId": 68,
+      "name": "Clinton Mata",
+      "position": "CB",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/68.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 25916,
+      "name": "M. Niakhaté",
+      "position": "CB",
+      "club": "Lyon",
+      "nation": "Senegal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25916.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 529,
+      "name": "N. Tagliafico",
+      "position": "CB",
+      "club": "Lyon",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/529.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 162189,
+      "name": "M. Bidstrup",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162189.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 585333,
+      "name": "T. Goncalves",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/585333.png",
+      "kitNumber": 46
+    },
+    {
+      "apiId": 623922,
+      "name": "A. Hamdani",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/623922.png",
+      "kitNumber": 84
+    },
+    {
+      "apiId": 24882,
+      "name": "O. Mangala",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24882.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 519664,
+      "name": "K. Merah",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/519664.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 162590,
+      "name": "T. Morton",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162590.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 361352,
+      "name": "N. Nartey",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/361352.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 412049,
+      "name": "M. Ouédraogo",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/412049.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 66387,
+      "name": "P. Šulc",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/66387.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 80752,
+      "name": "T. Tessmann",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/80752.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 519,
+      "name": "C. Tolisso",
+      "position": "CM/CDM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/519.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 438692,
+      "name": "M. de Carvalho",
+      "position": "CM",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/438692.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 405237,
+      "name": "K. Boudache",
+      "position": "ST",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/405237.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 368230,
+      "name": "J. Duranville",
+      "position": "ST",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/368230.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 361348,
+      "name": "M. Fofana",
+      "position": "ST",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/361348.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 409794,
+      "name": "Alejandro Gomes Rodriguez",
+      "position": "ST",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/409794.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 497617,
+      "name": "R. Himbert",
+      "position": "ST",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/497617.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 471106,
+      "name": "E. Molébé",
+      "position": "ST",
+      "club": "Lyon",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/471106.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 350856,
+      "name": "E. Nuamah",
+      "position": "ST",
+      "club": "Lyon",
+      "nation": "Ghana",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350856.png",
+      "kitNumber": 37
+    }
+  ]
+}

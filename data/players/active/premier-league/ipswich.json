@@ -74,17 +74,6 @@
       "kitNumber": 3
     },
     {
-      "apiId": 18814,
-      "name": "I. Diop",
-      "position": "CB",
-      "club": "Ipswich",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18814.png",
-      "kitNumber": 31
-    },
-    {
       "apiId": 19577,
       "name": "D. Furlong",
       "position": "CB",
@@ -226,17 +215,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/321648.png",
       "kitNumber": 20
-    },
-    {
-      "apiId": 303467,
-      "name": "A. Fatawu",
-      "position": "RW/RM",
-      "club": "Ipswich",
-      "nation": "Ghana",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/303467.png",
-      "kitNumber": 7
     },
     {
       "apiId": 8794,
