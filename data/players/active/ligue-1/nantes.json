@@ -8,26 +8,26 @@
   },
   "players": [
     {
-      "apiId": 659069,
-      "name": "L. Bonelli",
-      "position": "GK",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/659069.png",
-      "kitNumber": 40
-    },
-    {
       "apiId": 21079,
       "name": "M. Dupé",
       "position": "GK",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21079.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 659069,
+      "name": "L. Bonelli",
+      "position": "GK",
+      "club": "Nantes",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/659069.png",
+      "kitNumber": 40
     },
     {
       "apiId": 331856,
@@ -35,26 +35,37 @@
       "position": "GK",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/331856.png",
       "kitNumber": 50
     },
     {
       "apiId": 304427,
-      "name": "Ali Yousef Musrati",
-      "position": "CB",
+      "name": "Ali Musrati",
+      "position": "CDM/CM/CB",
       "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Libya",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304427.png",
       "kitNumber": 2
     },
     {
+      "apiId": 50026,
+      "name": "C. Awaziem",
+      "position": "CB",
+      "club": "Nantes",
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50026.png",
+      "kitNumber": 6
+    },
+    {
       "apiId": 22134,
       "name": "K. Amian",
-      "position": "CB",
+      "position": "RB/CB",
       "club": "Nantes",
       "nation": "France",
       "tier": "GOLD",
@@ -63,20 +74,9 @@
       "kitNumber": 98
     },
     {
-      "apiId": 50026,
-      "name": "C. Awaziem",
-      "position": "CB",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/50026.png",
-      "kitNumber": 6
-    },
-    {
       "apiId": 20654,
       "name": "F. Centonze",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Nantes",
       "nation": "France",
       "tier": "GOLD",
@@ -85,59 +85,15 @@
       "kitNumber": 18
     },
     {
-      "apiId": 392569,
-      "name": "Sékou Doucouré",
-      "position": "CB",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/392569.png",
-      "kitNumber": 72
-    },
-    {
-      "apiId": 20655,
-      "name": "J. Duverne",
-      "position": "CB",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20655.png",
-      "kitNumber": 93
-    },
-    {
       "apiId": 21636,
       "name": "F. Guilbert",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Nantes",
       "nation": "France",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21636.png",
       "kitNumber": 24
-    },
-    {
-      "apiId": 662352,
-      "name": "Hugo Lamy",
-      "position": "CB",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/662352.png",
-      "kitNumber": 65
-    },
-    {
-      "apiId": 413061,
-      "name": "E. Mongo",
-      "position": "CB",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/413061.png",
-      "kitNumber": 46
     },
     {
       "apiId": 67953,
@@ -151,15 +107,103 @@
       "kitNumber": 5
     },
     {
+      "apiId": 20655,
+      "name": "J. Duverne",
+      "position": "CB/LB",
+      "club": "Nantes",
+      "nation": "Haiti",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20655.png",
+      "kitNumber": 93
+    },
+    {
+      "apiId": 392569,
+      "name": "Sékou Doucouré",
+      "position": "CB",
+      "club": "Nantes",
+      "nation": "Mali",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/392569.png",
+      "kitNumber": 72
+    },
+    {
+      "apiId": 662352,
+      "name": "Hugo Lamy",
+      "position": "CB",
+      "club": "Nantes",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/662352.png",
+      "kitNumber": 65
+    },
+    {
+      "apiId": 413061,
+      "name": "E. Mongo",
+      "position": "CB",
+      "club": "Nantes",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/413061.png",
+      "kitNumber": 46
+    },
+    {
       "apiId": 522609,
       "name": "T. Tati",
       "position": "CB",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/522609.png",
       "kitNumber": 78
+    },
+    {
+      "apiId": 193952,
+      "name": "J. Lepenant",
+      "position": "CM/CDM",
+      "club": "Nantes",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/193952.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 22260,
+      "name": "I. Sissoko",
+      "position": "CDM/CM",
+      "club": "Nantes",
+      "nation": "Mali",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22260.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 119029,
+      "name": "L. Diack",
+      "position": "CDM/CM",
+      "club": "Nantes",
+      "nation": "Senegal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/119029.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 271274,
+      "name": "W. Younoussa",
+      "position": "CM",
+      "club": "Nantes",
+      "nation": "Comoros",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/271274.png",
+      "kitNumber": 8
     },
     {
       "apiId": 197771,
@@ -167,7 +211,7 @@
       "position": "CM",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/197771.png",
       "kitNumber": 90
@@ -178,32 +222,10 @@
       "position": "CM",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443755.png",
       "kitNumber": 52
-    },
-    {
-      "apiId": 119029,
-      "name": "L. Diack",
-      "position": "CM",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/119029.png",
-      "kitNumber": 25
-    },
-    {
-      "apiId": 193952,
-      "name": "J. Lepenant",
-      "position": "CM",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/193952.png",
-      "kitNumber": 8
     },
     {
       "apiId": 443674,
@@ -211,21 +233,10 @@
       "position": "CM",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443674.png",
       "kitNumber": 66
-    },
-    {
-      "apiId": 22260,
-      "name": "I. Sissoko",
-      "position": "CM",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22260.png",
-      "kitNumber": 28
     },
     {
       "apiId": 388779,
@@ -233,21 +244,10 @@
       "position": "CM",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/388779.png",
       "kitNumber": 17
-    },
-    {
-      "apiId": 271274,
-      "name": "W. Younoussa",
-      "position": "CM",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/271274.png",
-      "kitNumber": 8
     },
     {
       "apiId": 554353,
@@ -255,26 +255,48 @@
       "position": "CM",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/554353.png",
       "kitNumber": 69
     },
     {
-      "apiId": 161622,
-      "name": "M. Abline",
+      "apiId": 2668,
+      "name": "Mostafa Mohamed",
       "position": "ST",
       "club": "Nantes",
+      "nation": "Egypt",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2668.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 161622,
+      "name": "M. Abline",
+      "position": "ST/LW",
+      "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161622.png",
       "kitNumber": 10
     },
     {
+      "apiId": 22177,
+      "name": "I. Ganago",
+      "position": "ST/RW",
+      "club": "Nantes",
+      "nation": "Cameroon",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22177.png",
+      "kitNumber": 37
+    },
+    {
       "apiId": 22003,
       "name": "M. Cafaro",
-      "position": "ST",
+      "position": "LM/RM",
       "club": "Nantes",
       "nation": "France",
       "tier": "GOLD",
@@ -294,37 +316,15 @@
       "kitNumber": 12
     },
     {
-      "apiId": 22177,
-      "name": "I. Ganago",
-      "position": "ST",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22177.png",
-      "kitNumber": 37
-    },
-    {
       "apiId": 443676,
       "name": "Bahereba Guirassy",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Nantes",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443676.png",
       "kitNumber": 11
-    },
-    {
-      "apiId": 2668,
-      "name": "Mostafa Mohamed",
-      "position": "ST",
-      "club": "Nantes",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2668.png",
-      "kitNumber": 31
     }
   ]
 }

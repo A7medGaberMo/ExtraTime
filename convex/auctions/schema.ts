@@ -37,7 +37,7 @@ export const auctionsTable = defineTable({
     perkUsedRound: v.optional(v.number()),
     squad: v.array(
       v.object({
-        roundNumber: v.number(),
+        roundNumber: v.optional(v.number()),
         position: v.string(),
         playerId: v.id("players"),
         isSub: v.boolean(),
@@ -54,7 +54,7 @@ export const auctionsTable = defineTable({
       perkUsedRound: v.optional(v.number()),
       squad: v.array(
         v.object({
-          roundNumber: v.number(),
+          roundNumber: v.optional(v.number()),
           position: v.string(),
           playerId: v.id("players"),
           isSub: v.boolean(),

@@ -8,26 +8,37 @@
   },
   "players": [
     {
-      "apiId": 237198,
-      "name": "O. Ba",
-      "position": "GK",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/237198.png",
-      "kitNumber": 40
-    },
-    {
       "apiId": 158532,
       "name": "J. Fischer",
       "position": "GK",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158532.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 237198,
+      "name": "O. Ba",
+      "position": "GK",
+      "club": "Metz",
+      "nation": "Senegal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/237198.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 403878,
+      "name": "P. Sy",
+      "position": "GK",
+      "club": "Metz",
+      "nation": "Senegal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/403878.png",
+      "kitNumber": 61
     },
     {
       "apiId": 613214,
@@ -35,26 +46,15 @@
       "position": "GK",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/613214.png",
       "kitNumber": 16
     },
     {
-      "apiId": 403878,
-      "name": "P. Sy",
-      "position": "GK",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/403878.png",
-      "kitNumber": 61
-    },
-    {
       "apiId": 19518,
       "name": "M. Colin",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Metz",
       "nation": "France",
       "tier": "GOLD",
@@ -63,31 +63,9 @@
       "kitNumber": 2
     },
     {
-      "apiId": 613215,
-      "name": "Moustapha Diop",
-      "position": "CB",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/613215.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 378353,
-      "name": "U. Mboula",
-      "position": "CB",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/378353.png",
-      "kitNumber": 4
-    },
-    {
       "apiId": 21433,
       "name": "F. Miguel",
-      "position": "CB",
+      "position": "LB/CB",
       "club": "Metz",
       "nation": "France",
       "tier": "GOLD",
@@ -96,12 +74,45 @@
       "kitNumber": 12
     },
     {
+      "apiId": 1915,
+      "name": "B. Sarr",
+      "position": "RB/RM",
+      "club": "Metz",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1915.png",
+      "kitNumber": 70
+    },
+    {
+      "apiId": 378353,
+      "name": "U. Mboula",
+      "position": "CB",
+      "club": "Metz",
+      "nation": "Gabon",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/378353.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 613215,
+      "name": "Moustapha Diop",
+      "position": "CB",
+      "club": "Metz",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/613215.png",
+      "kitNumber": 3
+    },
+    {
       "apiId": 535338,
       "name": "I. Mohamed",
       "position": "CB",
       "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Comoros",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/535338.png",
       "kitNumber": 25
@@ -112,21 +123,10 @@
       "position": "CB",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21011.png",
-      "kitNumber": 25
-    },
-    {
-      "apiId": 1915,
-      "name": "B. Sarr",
-      "position": "CB",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1915.png",
-      "kitNumber": 70
+      "kitNumber": 24
     },
     {
       "apiId": 434352,
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/434352.png",
       "kitNumber": 12
@@ -142,7 +142,7 @@
     {
       "apiId": 21640,
       "name": "J. Deminguet",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Metz",
       "nation": "France",
       "tier": "GOLD",
@@ -156,7 +156,7 @@
       "position": "CM",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/629779.png",
       "kitNumber": 17
@@ -167,21 +167,54 @@
       "position": "CM",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/570580.png",
       "kitNumber": 33
     },
     {
-      "apiId": 68177,
-      "name": "G. Abuashvili",
-      "position": "ST",
+      "apiId": 20529,
+      "name": "G. Hein",
+      "position": "CAM/RW/LW",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20529.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 20535,
+      "name": "H. Diallo",
+      "position": "ST",
+      "club": "Metz",
+      "nation": "Senegal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20535.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 68177,
+      "name": "G. Abuashvili",
+      "position": "LW/RW",
+      "club": "Metz",
+      "nation": "Georgia",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/68177.png",
       "kitNumber": 9
+    },
+    {
+      "apiId": 408870,
+      "name": "Ibou Sané",
+      "position": "ST",
+      "club": "Metz",
+      "nation": "Senegal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/408870.png",
+      "kitNumber": 29
     },
     {
       "apiId": 336180,
@@ -189,43 +222,21 @@
       "position": "ST",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336180.png",
       "kitNumber": 69
-    },
-    {
-      "apiId": 20535,
-      "name": "H. Diallo",
-      "position": "ST",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20535.png",
-      "kitNumber": 30
     },
     {
       "apiId": 437901,
       "name": "P. Fall",
       "position": "ST",
       "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Senegal",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437901.png",
       "kitNumber": 7
-    },
-    {
-      "apiId": 20529,
-      "name": "G. Hein",
-      "position": "ST",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20529.png",
-      "kitNumber": 10
     },
     {
       "apiId": 584096,
@@ -233,7 +244,7 @@
       "position": "ST",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584096.png",
       "kitNumber": 34
@@ -244,7 +255,7 @@
       "position": "ST",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/404588.png",
       "kitNumber": 25
@@ -255,7 +266,7 @@
       "position": "ST",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343319.png",
       "kitNumber": 19
@@ -266,21 +277,10 @@
       "position": "ST",
       "club": "Metz",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/647405.png",
       "kitNumber": 35
-    },
-    {
-      "apiId": 408870,
-      "name": "Ibou Sané",
-      "position": "ST",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/408870.png",
-      "kitNumber": 29
     }
   ]
 }

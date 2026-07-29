@@ -8,15 +8,15 @@
   },
   "players": [
     {
-      "apiId": 398204,
-      "name": "V. DžodiÄ",
+      "apiId": 145060,
+      "name": "S. Ngapandouetnbu",
       "position": "GK",
       "club": "Montpellier",
-      "nation": "France",
+      "nation": "Cameroon",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/398204.png",
-      "kitNumber": 50
+      "imageUrl": "https://media.api-sports.io/football/players/145060.png",
+      "kitNumber": 31
     },
     {
       "apiId": 20849,
@@ -24,21 +24,21 @@
       "position": "GK",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20849.png",
       "kitNumber": 1
     },
     {
-      "apiId": 145060,
-      "name": "S. Ngapandouetnbu",
+      "apiId": 398204,
+      "name": "V. Džodić",
       "position": "GK",
       "club": "Montpellier",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Serbia",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/145060.png",
-      "kitNumber": 31
+      "imageUrl": "https://media.api-sports.io/football/players/398204.png",
+      "kitNumber": 50
     },
     {
       "apiId": 20766,
@@ -52,26 +52,15 @@
       "kitNumber": 15
     },
     {
-      "apiId": 128992,
-      "name": "D. Meddah",
-      "position": "CB",
+      "apiId": 179399,
+      "name": "E. Tchato",
+      "position": "RB/RWB",
       "club": "Montpellier",
-      "nation": "France",
+      "nation": "Cameroon",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/128992.png",
-      "kitNumber": 97
-    },
-    {
-      "apiId": 333118,
-      "name": "L. Mincarelli Davin",
-      "position": "CB",
-      "club": "Montpellier",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/333118.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/179399.png",
+      "kitNumber": 29
     },
     {
       "apiId": 350388,
@@ -85,26 +74,59 @@
       "kitNumber": 23
     },
     {
-      "apiId": 21434,
-      "name": "T. Sainte-Luce",
-      "position": "CB",
+      "apiId": 333118,
+      "name": "L. Mincarelli Davin",
+      "position": "LB",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/333118.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 21434,
+      "name": "T. Sainte-Luce",
+      "position": "LB",
+      "club": "Montpellier",
+      "nation": "France",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21434.png",
       "kitNumber": 17
     },
     {
-      "apiId": 179399,
-      "name": "E. Tchato",
+      "apiId": 128992,
+      "name": "D. Meddah",
       "position": "CB",
+      "club": "Montpellier",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/128992.png",
+      "kitNumber": 97
+    },
+    {
+      "apiId": 326088,
+      "name": "K. Fayad",
+      "position": "CM/CAM",
+      "club": "Montpellier",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/326088.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 8624,
+      "name": "F. Tardieu",
+      "position": "CDM/CM",
       "club": "Montpellier",
       "nation": "France",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/179399.png",
-      "kitNumber": 29
+      "imageUrl": "https://media.api-sports.io/football/players/8624.png",
+      "kitNumber": 10
     },
     {
       "apiId": 667892,
@@ -112,10 +134,10 @@
       "position": "CM",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667892.png",
-      "kitNumber": null
+      "kitNumber": 30
     },
     {
       "apiId": 670141,
@@ -123,10 +145,10 @@
       "position": "CM",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/670141.png",
-      "kitNumber": null
+      "kitNumber": 32
     },
     {
       "apiId": 369676,
@@ -134,7 +156,7 @@
       "position": "CM",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/369676.png",
       "kitNumber": 44
@@ -145,21 +167,10 @@
       "position": "CM",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/551212.png",
       "kitNumber": 37
-    },
-    {
-      "apiId": 326088,
-      "name": "K. Fayad",
-      "position": "CM",
-      "club": "Montpellier",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/326088.png",
-      "kitNumber": 10
     },
     {
       "apiId": 639172,
@@ -167,7 +178,7 @@
       "position": "CM",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/639172.png",
       "kitNumber": 20
@@ -177,8 +188,8 @@
       "name": "Everson",
       "position": "CM",
       "club": "Montpellier",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Brazil",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/325783.png",
       "kitNumber": 77
@@ -189,21 +200,10 @@
       "position": "CM",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/349616.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 8624,
-      "name": "F. Tardieu",
-      "position": "CM",
-      "club": "Montpellier",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/8624.png",
-      "kitNumber": 10
     },
     {
       "apiId": 629797,
@@ -211,29 +211,18 @@
       "position": "CM",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/629797.png",
       "kitNumber": 40
     },
     {
-      "apiId": 669864,
-      "name": "Daryll Benlahlou",
-      "position": "ST",
-      "club": "Montpellier",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/669864.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 191194,
       "name": "M. Camara",
-      "position": "ST",
+      "position": "ST/RW",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/191194.png",
       "kitNumber": 9
@@ -241,10 +230,10 @@
     {
       "apiId": 355076,
       "name": "A. Gueguin",
-      "position": "ST",
+      "position": "RW/CAM",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/355076.png",
       "kitNumber": 22
@@ -252,13 +241,35 @@
     {
       "apiId": 395760,
       "name": "Y. Issoufou",
-      "position": "ST",
+      "position": "ST/RW",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/395760.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 361383,
+      "name": "J. Ndiaye",
+      "position": "ST",
+      "club": "Montpellier",
+      "nation": "Senegal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/361383.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 669864,
+      "name": "Daryll Benlahlou",
+      "position": "ST",
+      "club": "Montpellier",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/669864.png",
+      "kitNumber": 35
     },
     {
       "apiId": 667893,
@@ -266,21 +277,10 @@
       "position": "ST",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667893.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 361383,
-      "name": "J. Ndiaye",
-      "position": "ST",
-      "club": "Montpellier",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/361383.png",
-      "kitNumber": 25
+      "kitNumber": 38
     },
     {
       "apiId": 630777,
@@ -288,7 +288,7 @@
       "position": "ST",
       "club": "Montpellier",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630777.png",
       "kitNumber": 39

@@ -8,28 +8,6 @@
   },
   "players": [
     {
-      "apiId": 134264,
-      "name": "M. Diop",
-      "position": "GK",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/134264.png",
-      "kitNumber": 13
-    },
-    {
-      "apiId": 614174,
-      "name": "Louis Mezerette",
-      "position": "GK",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/614174.png",
-      "kitNumber": 37
-    },
-    {
       "apiId": 8657,
       "name": "P. Nardi",
       "position": "GK",
@@ -41,108 +19,53 @@
       "kitNumber": 1
     },
     {
-      "apiId": 191189,
-      "name": "C. Akpa",
-      "position": "CB",
+      "apiId": 134264,
+      "name": "M. Diop",
+      "position": "GK",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/191189.png",
-      "kitNumber": 92
+      "imageUrl": "https://media.api-sports.io/football/players/134264.png",
+      "kitNumber": 13
     },
     {
-      "apiId": 669875,
-      "name": "Salimou Danfakha",
-      "position": "CB",
+      "apiId": 614174,
+      "name": "Louis Mezerette",
+      "position": "GK",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/669875.png",
-      "kitNumber": null
+      "imageUrl": "https://media.api-sports.io/football/players/614174.png",
+      "kitNumber": 37
     },
     {
       "apiId": 162466,
       "name": "S. Diomandé",
       "position": "CB",
       "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Ivory Coast",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162466.png",
       "kitNumber": 20
     },
     {
-      "apiId": 193505,
-      "name": "Sekou Fofana",
+      "apiId": 31016,
+      "name": "F. Sierralta",
       "position": "CB",
       "club": "Auxerre",
-      "nation": "France",
+      "nation": "Chile",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/193505.png",
-      "kitNumber": 93
-    },
-    {
-      "apiId": 496787,
-      "name": "E. Legros",
-      "position": "CB",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/496787.png",
-      "kitNumber": 35
-    },
-    {
-      "apiId": 412926,
-      "name": "C. Makosso",
-      "position": "CB",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/412926.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 115588,
-      "name": "B. Okoh",
-      "position": "CB",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/115588.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 215827,
-      "name": "F. Oppegård",
-      "position": "CB",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/215827.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 371950,
-      "name": "A. Piedfort",
-      "position": "CB",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/371950.png",
-      "kitNumber": 46
+      "imageUrl": "https://media.api-sports.io/football/players/31016.png",
+      "kitNumber": 4
     },
     {
       "apiId": 191240,
       "name": "M. Senaya",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Auxerre",
       "nation": "France",
       "tier": "GOLD",
@@ -151,15 +74,103 @@
       "kitNumber": 29
     },
     {
-      "apiId": 31016,
-      "name": "F. Sierralta",
+      "apiId": 191189,
+      "name": "C. Akpa",
+      "position": "CB/LB",
+      "club": "Auxerre",
+      "nation": "Ivory Coast",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191189.png",
+      "kitNumber": 92
+    },
+    {
+      "apiId": 215827,
+      "name": "F. Oppegård",
+      "position": "LB/LWB",
+      "club": "Auxerre",
+      "nation": "Norway",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/215827.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 115588,
+      "name": "B. Okoh",
+      "position": "CB",
+      "club": "Auxerre",
+      "nation": "Switzerland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/115588.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 193505,
+      "name": "Sekou Fofana",
+      "position": "LB",
+      "club": "Auxerre",
+      "nation": "Ivory Coast",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/193505.png",
+      "kitNumber": 93
+    },
+    {
+      "apiId": 412926,
+      "name": "C. Makosso",
+      "position": "CB",
+      "club": "Auxerre",
+      "nation": "Congo",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/412926.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 568137,
+      "name": "A. Zoukrou",
       "position": "CB",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31016.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/568137.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 669875,
+      "name": "Salimou Danfakha",
+      "position": "CB",
+      "club": "Auxerre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/669875.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 496787,
+      "name": "E. Legros",
+      "position": "CB",
+      "club": "Auxerre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/496787.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 371950,
+      "name": "A. Piedfort",
+      "position": "CB",
+      "club": "Auxerre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/371950.png",
+      "kitNumber": 46
     },
     {
       "apiId": 402542,
@@ -167,7 +178,7 @@
       "position": "CB",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/402542.png",
       "kitNumber": 13
@@ -178,26 +189,15 @@
       "position": "CB",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/193953.png",
       "kitNumber": 27
     },
     {
-      "apiId": 568137,
-      "name": "A. Zoukrou",
-      "position": "CB",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/568137.png",
-      "kitNumber": 15
-    },
-    {
       "apiId": 152418,
       "name": "N. Ahamada",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Auxerre",
       "nation": "France",
       "tier": "GOLD",
@@ -206,12 +206,34 @@
       "kitNumber": 8
     },
     {
+      "apiId": 21010,
+      "name": "E. Owusu",
+      "position": "CDM/CM",
+      "club": "Auxerre",
+      "nation": "Ghana",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21010.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 30748,
+      "name": "A. Dioussé",
+      "position": "CDM/CM",
+      "club": "Auxerre",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30748.png",
+      "kitNumber": 18
+    },
+    {
       "apiId": 323625,
       "name": "K. Danois",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/323625.png",
       "kitNumber": 5
@@ -222,32 +244,10 @@
       "position": "CM",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/551415.png",
       "kitNumber": 36
-    },
-    {
-      "apiId": 30748,
-      "name": "A. Dioussé",
-      "position": "CM",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30748.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 21010,
-      "name": "E. Owusu",
-      "position": "CM",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/21010.png",
-      "kitNumber": 42
     },
     {
       "apiId": 604390,
@@ -255,28 +255,28 @@
       "position": "CM",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/604390.png",
-      "kitNumber": null
+      "kitNumber": 50
     },
     {
-      "apiId": 669876,
-      "name": "Kiliane Assougrou",
-      "position": "ST",
+      "apiId": 19625,
+      "name": "D. Namaso",
+      "position": "ST/SS",
       "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "England",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/669876.png",
-      "kitNumber": null
+      "imageUrl": "https://media.api-sports.io/football/players/19625.png",
+      "kitNumber": 19
     },
     {
       "apiId": 51293,
       "name": "T. Bair",
       "position": "ST",
       "club": "Auxerre",
-      "nation": "France",
+      "nation": "Canada",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51293.png",
@@ -285,7 +285,7 @@
     {
       "apiId": 174915,
       "name": "J. Casimir",
-      "position": "ST",
+      "position": "RW/ST",
       "club": "Auxerre",
       "nation": "France",
       "tier": "GOLD",
@@ -294,37 +294,37 @@
       "kitNumber": 7
     },
     {
-      "apiId": 627298,
-      "name": "Mamoudou Cissokho",
-      "position": "ST",
-      "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/627298.png",
-      "kitNumber": 44
-    },
-    {
       "apiId": 322595,
       "name": "L. Coulibaly",
-      "position": "ST",
+      "position": "RW/ST",
       "club": "Auxerre",
-      "nation": "France",
+      "nation": "Mali",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/322595.png",
       "kitNumber": 21
     },
     {
-      "apiId": 19625,
-      "name": "D. Namaso",
+      "apiId": 669876,
+      "name": "Kiliane Assougrou",
       "position": "ST",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19625.png",
-      "kitNumber": 19
+      "imageUrl": "https://media.api-sports.io/football/players/669876.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 627298,
+      "name": "Mamoudou Cissokho",
+      "position": "ST",
+      "club": "Auxerre",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/627298.png",
+      "kitNumber": 44
     },
     {
       "apiId": 381123,
@@ -332,7 +332,7 @@
       "position": "ST",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/381123.png",
       "kitNumber": 31
@@ -342,8 +342,8 @@
       "name": "Wei Xiangxin",
       "position": "ST",
       "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "China",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/511151.png",
       "kitNumber": 11
@@ -354,7 +354,7 @@
       "position": "ST",
       "club": "Auxerre",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/613216.png",
       "kitNumber": 41
@@ -364,8 +364,8 @@
       "name": "Aristide Zossou",
       "position": "ST",
       "club": "Auxerre",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Ivory Coast",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/490095.png",
       "kitNumber": 77
