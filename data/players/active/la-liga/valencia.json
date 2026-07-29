@@ -3,21 +3,10 @@
     "apiId": 532,
     "name": "Valencia",
     "logo": "https://media.api-sports.io/football/teams/532.png",
-    "league": "Premier League",
+    "league": "la-liga",
     "leagueId": 140
   },
   "players": [
-    {
-      "apiId": 401983,
-      "name": "Vicent Abril",
-      "position": "GK",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/401983.png",
-      "kitNumber": 28
-    },
     {
       "apiId": 47527,
       "name": "S. Dimitrievski",
@@ -41,6 +30,50 @@
       "kitNumber": 13
     },
     {
+      "apiId": 401983,
+      "name": "Vicent Abril",
+      "position": "GK",
+      "club": "Valencia",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/401983.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 918,
+      "name": "José Gayà",
+      "position": "LB",
+      "club": "Valencia",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/918.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 916,
+      "name": "M. Diakhaby",
+      "position": "CB",
+      "club": "Valencia",
+      "nation": "Guinea",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/916.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 333672,
+      "name": "César Tárrega",
+      "position": "CB",
+      "club": "Valencia",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/333672.png",
+      "kitNumber": 5
+    },
+    {
       "apiId": 181582,
       "name": "Copete",
       "position": "CB",
@@ -50,6 +83,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181582.png",
       "kitNumber": 3
+    },
+    {
+      "apiId": 47251,
+      "name": "D. Foulquier",
+      "position": "RB/CB",
+      "club": "Valencia",
+      "nation": "Guadeloupe",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47251.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 162175,
+      "name": "Jesús Vázquez",
+      "position": "LB",
+      "club": "Valencia",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162175.png",
+      "kitNumber": 21
     },
     {
       "apiId": 442188,
@@ -74,15 +129,15 @@
       "kitNumber": 16
     },
     {
-      "apiId": 916,
-      "name": "M. Diakhaby",
+      "apiId": 315701,
+      "name": "Rubo Iranzo",
       "position": "CB",
       "club": "Valencia",
-      "nation": "Guinea",
-      "tier": "GOLD",
+      "nation": "Spain",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/916.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/315701.png",
+      "kitNumber": 26
     },
     {
       "apiId": 623732,
@@ -94,28 +149,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/623732.png",
       "kitNumber": 40
-    },
-    {
-      "apiId": 47251,
-      "name": "D. Foulquier",
-      "position": "CB",
-      "club": "Valencia",
-      "nation": "Guadeloupe",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47251.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 918,
-      "name": "José Gayà",
-      "position": "CB",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/918.png",
-      "kitNumber": 14
     },
     {
       "apiId": 641317,
@@ -145,65 +178,10 @@
       "position": "CB",
       "club": "Valencia",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584165.png",
       "kitNumber": 32
-    },
-    {
-      "apiId": 315701,
-      "name": "Rubo Iranzo",
-      "position": "CB",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/315701.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 333672,
-      "name": "César Tárrega",
-      "position": "CB",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/333672.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 162175,
-      "name": "Jesús Vázquez",
-      "position": "CB",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162175.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 41157,
-      "name": "André Almeida",
-      "position": "CAM/CM",
-      "club": "Valencia",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41157.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 4458,
-      "name": "A. Dieng",
-      "position": "CM",
-      "club": "Valencia",
-      "nation": "Mali",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/4458.png",
-      "kitNumber": 23
     },
     {
       "apiId": 315699,
@@ -211,7 +189,7 @@
       "position": "CM/CAM",
       "club": "Valencia",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/315699.png",
       "kitNumber": 8
@@ -222,21 +200,54 @@
       "position": "CDM/CM",
       "club": "Valencia",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47463.png",
       "kitNumber": 18
     },
     {
+      "apiId": 41157,
+      "name": "André Almeida",
+      "position": "CAM/CM",
+      "club": "Valencia",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41157.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 2476,
       "name": "G. Rodríguez",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Valencia",
       "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2476.png",
       "kitNumber": 2
+    },
+    {
+      "apiId": 4458,
+      "name": "A. Dieng",
+      "position": "CM",
+      "club": "Valencia",
+      "nation": "Mali",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/4458.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 48465,
+      "name": "F. Ugrinic",
+      "position": "CM",
+      "club": "Valencia",
+      "nation": "Switzerland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48465.png",
+      "kitNumber": 15
     },
     {
       "apiId": 542861,
@@ -247,18 +258,73 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542861.png",
-      "kitNumber": 23
+      "kitNumber": 25
     },
     {
-      "apiId": 48465,
-      "name": "F. Ugrinic",
-      "position": "CM",
+      "apiId": 47264,
+      "name": "Hugo Duro",
+      "position": "ST",
       "club": "Valencia",
-      "nation": "Switzerland",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47264.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 83,
+      "name": "A. Danjuma",
+      "position": "ST/LW",
+      "club": "Valencia",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/83.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 46933,
+      "name": "Luis Rioja",
+      "position": "LM/LW",
+      "club": "Valencia",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46933.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 1708,
+      "name": "Dani Raba",
+      "position": "ST/RW",
+      "club": "Valencia",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1708.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 31406,
+      "name": "U. Sadiq",
+      "position": "ST",
+      "club": "Valencia",
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31406.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 439578,
+      "name": "David Otorbi",
+      "position": "RW",
+      "club": "Valencia",
+      "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/48465.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/439578.png",
+      "kitNumber": 27
     },
     {
       "apiId": 406045,
@@ -270,72 +336,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/406045.png",
       "kitNumber": 37
-    },
-    {
-      "apiId": 83,
-      "name": "A. Danjuma",
-      "position": "ST",
-      "club": "Valencia",
-      "nation": "Netherlands",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/83.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 47264,
-      "name": "Hugo Duro",
-      "position": "ST",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47264.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 439578,
-      "name": "David Otorbi",
-      "position": "ST",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/439578.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 1708,
-      "name": "Dani Raba",
-      "position": "ST",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1708.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 46933,
-      "name": "Luis Rioja",
-      "position": "ST",
-      "club": "Valencia",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46933.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 31406,
-      "name": "U. Sadiq",
-      "position": "ST",
-      "club": "Valencia",
-      "nation": "Nigeria",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31406.png",
-      "kitNumber": 6
     }
   ]
 }

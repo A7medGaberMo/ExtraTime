@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 46987,
-      "name": "Raúl Fernández",
-      "position": "GK",
-      "club": "Leganes",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46987.png",
-      "kitNumber": 13
-    },
-    {
       "apiId": 2036,
       "name": "Juan Soriano",
       "position": "GK",
@@ -30,6 +19,83 @@
       "kitNumber": 1
     },
     {
+      "apiId": 46987,
+      "name": "Raúl Fernández",
+      "position": "GK",
+      "club": "Leganes",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46987.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 129657,
+      "name": "Enric Franquesa",
+      "position": "LB",
+      "club": "Leganes",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129657.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 46709,
+      "name": "Álvaro Tejero",
+      "position": "RB/RM",
+      "club": "Leganes",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46709.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 47253,
+      "name": "Ignasi Miquel",
+      "position": "CB",
+      "club": "Leganes",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47253.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 47391,
+      "name": "Rubén Peña",
+      "position": "RB/RM",
+      "club": "Leganes",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47391.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 336706,
+      "name": "Marvel",
+      "position": "CB",
+      "club": "Leganes",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336706.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 119231,
+      "name": "Rubén Pulido",
+      "position": "CB",
+      "club": "Leganes",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/119231.png",
+      "kitNumber": 4
+    },
+    {
       "apiId": 337955,
       "name": "Lalo Aguilar",
       "position": "CB",
@@ -39,6 +105,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/337955.png",
       "kitNumber": 6
+    },
+    {
+      "apiId": 352928,
+      "name": "S. Figueredo",
+      "position": "CB",
+      "club": "Leganes",
+      "nation": "Uruguay",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/352928.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 507345,
+      "name": "S. Imigene",
+      "position": "CB",
+      "club": "Leganes",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/507345.png",
+      "kitNumber": 27
     },
     {
       "apiId": 585715,
@@ -74,48 +162,15 @@
       "kitNumber": 32
     },
     {
-      "apiId": 352928,
-      "name": "S. Figueredo",
-      "position": "CB",
-      "club": "Leganes",
-      "nation": "Uruguay",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/352928.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 129657,
-      "name": "Enric Franquesa",
-      "position": "CB",
-      "club": "Leganes",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129657.png",
-      "kitNumber": 15
-    },
-    {
       "apiId": 585717,
       "name": "D. Gueye",
       "position": "CB",
       "club": "Leganes",
       "nation": "Senegal",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585717.png",
       "kitNumber": 38
-    },
-    {
-      "apiId": 507345,
-      "name": "S. Imigene",
-      "position": "CB",
-      "club": "Leganes",
-      "nation": "France",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/507345.png",
-      "kitNumber": 27
     },
     {
       "apiId": 506488,
@@ -129,81 +184,81 @@
       "kitNumber": 28
     },
     {
-      "apiId": 336706,
-      "name": "Marvel",
-      "position": "CB",
-      "club": "Leganes",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/336706.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 47253,
-      "name": "Ignasi Miquel",
-      "position": "CB",
+      "apiId": 310196,
+      "name": "Ismaël Gharbi",
+      "position": "CAM/LW",
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47253.png",
-      "kitNumber": 5
+      "imageUrl": "https://media.api-sports.io/football/players/310196.png",
+      "kitNumber": 11
     },
     {
-      "apiId": 47391,
-      "name": "Rubén Peña",
-      "position": "CB",
+      "apiId": 47321,
+      "name": "Roberto López",
+      "position": "CAM/RM",
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47391.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/47321.png",
+      "kitNumber": 14
     },
     {
-      "apiId": 119231,
-      "name": "Rubén Pulido",
-      "position": "CB",
+      "apiId": 47576,
+      "name": "Melero",
+      "position": "CM/CAM",
       "club": "Leganes",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/119231.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/47576.png",
+      "kitNumber": 16
     },
     {
-      "apiId": 46709,
-      "name": "Álvaro Tejero",
-      "position": "CB",
+      "apiId": 46742,
+      "name": "Dani Rodríguez",
+      "position": "LM/CAM",
       "club": "Leganes",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46709.png",
-      "kitNumber": 15
+      "imageUrl": "https://media.api-sports.io/football/players/46742.png",
+      "kitNumber": 9
     },
     {
-      "apiId": 651068,
-      "name": "Modou Ndiaye",
-      "position": "CM",
+      "apiId": 324,
+      "name": "A. Diawara",
+      "position": "CDM/CM",
       "club": "Leganes",
-      "nation": "Senegal",
-      "tier": "SILVER",
+      "nation": "Guinea",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/651068.png",
-      "kitNumber": 47
+      "imageUrl": "https://media.api-sports.io/football/players/324.png",
+      "kitNumber": 24
     },
     {
       "apiId": 181867,
       "name": "Miguel Atienza",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Leganes",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181867.png",
-      "kitNumber": 5
+      "kitNumber": 18
+    },
+    {
+      "apiId": 174937,
+      "name": "Y. Kechta",
+      "position": "CM/CAM",
+      "club": "Leganes",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174937.png",
+      "kitNumber": 8
     },
     {
       "apiId": 272695,
@@ -214,29 +269,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/272695.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 324,
-      "name": "A. Diawara",
-      "position": "CM",
-      "club": "Leganes",
-      "nation": "Guinea",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/324.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 310196,
-      "name": "Ismaël Gharbi",
-      "position": "CM",
-      "club": "Leganes",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/310196.png",
-      "kitNumber": 11
+      "kitNumber": 20
     },
     {
       "apiId": 388032,
@@ -252,13 +285,24 @@
     {
       "apiId": 46849,
       "name": "Javi Hernández",
-      "position": "CM",
+      "position": "LB/CB",
       "club": "Leganes",
       "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46849.png",
-      "kitNumber": 26
+      "kitNumber": 25
+    },
+    {
+      "apiId": 651068,
+      "name": "Modou Ndiaye",
+      "position": "CM",
+      "club": "Leganes",
+      "nation": "Senegal",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/651068.png",
+      "kitNumber": 47
     },
     {
       "apiId": 629326,
@@ -272,17 +316,6 @@
       "kitNumber": 43
     },
     {
-      "apiId": 174937,
-      "name": "Y. Kechta",
-      "position": "CM",
-      "club": "Leganes",
-      "nation": "Morocco",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/174937.png",
-      "kitNumber": 8
-    },
-    {
       "apiId": 585718,
       "name": "M. Leiva",
       "position": "CM",
@@ -294,17 +327,6 @@
       "kitNumber": 36
     },
     {
-      "apiId": 47321,
-      "name": "Roberto López",
-      "position": "CM",
-      "club": "Leganes",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47321.png",
-      "kitNumber": 14
-    },
-    {
       "apiId": 626217,
       "name": "Nico Lozano",
       "position": "CM",
@@ -314,28 +336,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626217.png",
       "kitNumber": 42
-    },
-    {
-      "apiId": 47576,
-      "name": "Melero",
-      "position": "CM",
-      "club": "Leganes",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47576.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 46742,
-      "name": "Dani Rodríguez",
-      "position": "CM",
-      "club": "Leganes",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46742.png",
-      "kitNumber": 9
     },
     {
       "apiId": 599138,
@@ -360,26 +360,37 @@
       "kitNumber": 33
     },
     {
-      "apiId": 290479,
-      "name": "Andrés Campos",
+      "apiId": 327622,
+      "name": "Naim García",
+      "position": "RW/LW",
+      "club": "Leganes",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327622.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 182668,
+      "name": "Álex Millán",
       "position": "ST",
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/290479.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/182668.png",
+      "kitNumber": 23
     },
     {
-      "apiId": 327622,
-      "name": "Naim García",
+      "apiId": 290479,
+      "name": "Andrés Campos",
       "position": "ST",
       "club": "Leganes",
       "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327622.png",
-      "kitNumber": 17
+      "imageUrl": "https://media.api-sports.io/football/players/290479.png",
+      "kitNumber": 21
     },
     {
       "apiId": 445669,
@@ -390,7 +401,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/445669.png",
-      "kitNumber": 20
+      "kitNumber": 29
     },
     {
       "apiId": 651175,
@@ -402,17 +413,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/651175.png",
       "kitNumber": 45
-    },
-    {
-      "apiId": 182668,
-      "name": "Álex Millán",
-      "position": "ST",
-      "club": "Leganes",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182668.png",
-      "kitNumber": 23
     }
   ]
 }

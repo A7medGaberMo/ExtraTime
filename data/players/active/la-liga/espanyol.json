@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Espanyol",
       "nation": "Serbia",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2813.png",
       "kitNumber": 13
@@ -56,7 +56,7 @@
       "name": "L. Cabrera",
       "position": "CB",
       "club": "Espanyol",
-      "nation": "Spain",
+      "nation": "Uruguay",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47249.png",
@@ -65,10 +65,10 @@
     {
       "apiId": 286601,
       "name": "O. El Hilali",
-      "position": "CB",
+      "position": "RB/CB",
       "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "SILVER",
+      "nation": "Morocco",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286601.png",
       "kitNumber": 23
@@ -76,13 +76,35 @@
     {
       "apiId": 375915,
       "name": "Q. Hartman",
-      "position": "CB",
+      "position": "LB",
       "club": "Espanyol",
       "nation": "Netherlands",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/375915.png",
       "kitNumber": 3
+    },
+    {
+      "apiId": 47256,
+      "name": "Miguel Rubio",
+      "position": "CB",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47256.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 199824,
+      "name": "Rubén Sánchez",
+      "position": "RB/RM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/199824.png",
+      "kitNumber": 2
     },
     {
       "apiId": 450716,
@@ -104,7 +126,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46734.png",
-      "kitNumber": 21
+      "kitNumber": 22
     },
     {
       "apiId": 282054,
@@ -118,20 +140,9 @@
       "kitNumber": 38
     },
     {
-      "apiId": 47256,
-      "name": "Miguel Rubio",
-      "position": "CB",
-      "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47256.png",
-      "kitNumber": 15
-    },
-    {
       "apiId": 184407,
       "name": "José Salinas",
-      "position": "CB",
+      "position": "LB",
       "club": "Espanyol",
       "nation": "Spain",
       "tier": "SILVER",
@@ -140,42 +151,20 @@
       "kitNumber": 12
     },
     {
-      "apiId": 199824,
-      "name": "Rubén Sánchez",
-      "position": "CB",
+      "apiId": 127426,
+      "name": "Pol Lozano",
+      "position": "CM/CDM",
       "club": "Espanyol",
       "nation": "Spain",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/199824.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 438284,
-      "name": "Rafel Bauzà",
-      "position": "CM",
-      "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/438284.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 286038,
-      "name": "Álex Calatrava",
-      "position": "CM",
-      "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286038.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/127426.png",
+      "kitNumber": 10
     },
     {
       "apiId": 46799,
       "name": "Edu Expósito",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Espanyol",
       "nation": "Spain",
       "tier": "GOLD",
@@ -186,7 +175,7 @@
     {
       "apiId": 415089,
       "name": "Gabriel Moscardo",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Espanyol",
       "nation": "Brazil",
       "tier": "GOLD",
@@ -195,26 +184,48 @@
       "kitNumber": 17
     },
     {
-      "apiId": 601891,
-      "name": "F. Gomez",
+      "apiId": 183699,
+      "name": "Urko González",
+      "position": "CDM/CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/183699.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 438284,
+      "name": "Rafel Bauzà",
       "position": "CM",
       "club": "Espanyol",
       "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/601891.png",
-      "kitNumber": 28
+      "imageUrl": "https://media.api-sports.io/football/players/438284.png",
+      "kitNumber": 18
     },
     {
-      "apiId": 183699,
-      "name": "Urko González",
+      "apiId": 286038,
+      "name": "Álex Calatrava",
+      "position": "CAM/CM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286038.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 601891,
+      "name": "F. Gomez",
       "position": "CM",
       "club": "Espanyol",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/183699.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/601891.png",
+      "kitNumber": 28
     },
     {
       "apiId": 388495,
@@ -222,21 +233,76 @@
       "position": "CM",
       "club": "Espanyol",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/388495.png",
-      "kitNumber": 28
+      "kitNumber": 26
     },
     {
-      "apiId": 127426,
-      "name": "Pol Lozano",
-      "position": "CM",
+      "apiId": 182674,
+      "name": "Jofre Carreras",
+      "position": "RW/RM",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182674.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 312990,
+      "name": "Roberto Fernández",
+      "position": "ST",
       "club": "Espanyol",
       "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/127426.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/312990.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 47396,
+      "name": "Kike García",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47396.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 47398,
+      "name": "Pere Milla",
+      "position": "ST/LW",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47398.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 273732,
+      "name": "T. Dolan",
+      "position": "RW/ST",
+      "club": "Espanyol",
+      "nation": "Ireland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/273732.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 347885,
+      "name": "Marcos Fernández",
+      "position": "ST",
+      "club": "Espanyol",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/347885.png",
+      "kitNumber": 27
     },
     {
       "apiId": 656722,
@@ -255,76 +321,10 @@
       "position": "ST",
       "club": "Espanyol",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669869.png",
       "kitNumber": 29
-    },
-    {
-      "apiId": 273732,
-      "name": "T. Dolan",
-      "position": "ST",
-      "club": "Espanyol",
-      "nation": "Ireland",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/273732.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 312990,
-      "name": "Roberto Fernández",
-      "position": "ST",
-      "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/312990.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 347885,
-      "name": "Marcos Fernández",
-      "position": "ST",
-      "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/347885.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 47396,
-      "name": "Kike García",
-      "position": "ST",
-      "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47396.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 182674,
-      "name": "Jofre Carreras",
-      "position": "ST",
-      "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182674.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 47398,
-      "name": "Pere Milla",
-      "position": "ST",
-      "club": "Espanyol",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47398.png",
-      "kitNumber": 11
     }
   ]
 }

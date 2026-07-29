@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162453.png",
       "kitNumber": 30
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/659070.png",
       "kitNumber": 80
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Paris Saint Germain",
       "nation": "Russia",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2068.png",
       "kitNumber": 39
@@ -57,7 +57,7 @@
       "position": "GK",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568273.png",
       "kitNumber": 70
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/307835.png",
       "kitNumber": 4
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610763.png",
       "kitNumber": 42
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568269.png",
       "kitNumber": 53
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568268.png",
       "kitNumber": 54
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/257.png",
       "kitNumber": 5
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "Portugal",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/263482.png",
       "kitNumber": 25
@@ -156,7 +156,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "Ecuador",
-      "tier": "ELITE_PLUS",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/16367.png",
       "kitNumber": 51
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/491087.png",
       "kitNumber": 27
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/409216.png",
       "kitNumber": 24
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328.png",
       "kitNumber": 8
@@ -222,7 +222,7 @@
       "position": "CM/CDM",
       "club": "Paris Saint Germain",
       "nation": "Portugal",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128384.png",
       "kitNumber": 17
@@ -233,7 +233,7 @@
       "position": "CM/RB",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336657.png",
       "kitNumber": 33
@@ -277,7 +277,7 @@
       "position": "ST",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/483.png",
       "kitNumber": 7
@@ -288,7 +288,7 @@
       "position": "ST",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/446249.png",
       "kitNumber": 49

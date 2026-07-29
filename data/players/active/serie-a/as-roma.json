@@ -8,6 +8,39 @@
   },
   "players": [
     {
+      "apiId": 556,
+      "name": "M. Svilar",
+      "position": "GK",
+      "club": "AS Roma",
+      "nation": "Serbia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/556.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 30418,
+      "name": "P. Gollini",
+      "position": "GK",
+      "club": "AS Roma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30418.png",
+      "kitNumber": 95
+    },
+    {
+      "apiId": 81012,
+      "name": "D. Vásquez",
+      "position": "GK",
+      "club": "AS Roma",
+      "nation": "Colombia",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/81012.png",
+      "kitNumber": 32
+    },
+    {
       "apiId": 483676,
       "name": "G. De Marzi",
       "position": "GK",
@@ -19,53 +52,42 @@
       "kitNumber": 70
     },
     {
-      "apiId": 30418,
-      "name": "P. Gollini",
-      "position": "GK",
-      "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30418.png",
-      "kitNumber": 95
-    },
-    {
-      "apiId": 556,
-      "name": "M. Svilar",
-      "position": "GK",
-      "club": "AS Roma",
-      "nation": "Serbia",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/556.png",
-      "kitNumber": 99
-    },
-    {
-      "apiId": 81012,
-      "name": "D. Vásquez",
-      "position": "GK",
-      "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/81012.png",
-      "kitNumber": 32
-    },
-    {
       "apiId": 452423,
       "name": "R. Żelezny",
       "position": "GK",
       "club": "AS Roma",
-      "nation": "Italy",
+      "nation": "Poland",
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/452423.png",
       "kitNumber": 91
     },
     {
+      "apiId": 30425,
+      "name": "G. Mancini",
+      "position": "CB",
+      "club": "AS Roma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30425.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 1807,
+      "name": "E. Ndicka",
+      "position": "CB",
+      "club": "AS Roma",
+      "nation": "Ivory Coast",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1807.png",
+      "kitNumber": 5
+    },
+    {
       "apiId": 227,
       "name": "Angeliño",
-      "position": "CB",
+      "position": "LB/LWB",
       "club": "AS Roma",
       "nation": "Spain",
       "tier": "GOLD",
@@ -74,26 +96,59 @@
       "kitNumber": 3
     },
     {
+      "apiId": 2669,
+      "name": "Hermoso",
+      "position": "CB/LB",
+      "club": "AS Roma",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2669.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 162452,
+      "name": "D. Rensch",
+      "position": "RB/CB",
+      "club": "AS Roma",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162452.png",
+      "kitNumber": 2
+    },
+    {
       "apiId": 342019,
       "name": "D. Ghilardi",
       "position": "CB",
       "club": "AS Roma",
       "nation": "Italy",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342019.png",
       "kitNumber": 87
     },
     {
-      "apiId": 2669,
-      "name": "Hermoso",
+      "apiId": 349001,
+      "name": "Wesley",
+      "position": "LB/RB",
+      "club": "AS Roma",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/349001.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 384543,
+      "name": "J. Ziółkowski",
       "position": "CB",
       "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "GOLD",
+      "nation": "Poland",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2669.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/384543.png",
+      "kitNumber": 24
     },
     {
       "apiId": 598615,
@@ -105,17 +160,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/598615.png",
       "kitNumber": 77
-    },
-    {
-      "apiId": 30425,
-      "name": "G. Mancini",
-      "position": "CB",
-      "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30425.png",
-      "kitNumber": 23
     },
     {
       "apiId": 458411,
@@ -134,65 +178,65 @@
       "position": "CB",
       "club": "AS Roma",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449806.png",
       "kitNumber": 13
-    },
-    {
-      "apiId": 1807,
-      "name": "E. Ndicka",
-      "position": "CB",
-      "club": "AS Roma",
-      "nation": "Ivory Coast",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1807.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 162452,
-      "name": "D. Rensch",
-      "position": "CB",
-      "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162452.png",
-      "kitNumber": 2
     },
     {
       "apiId": 626713,
       "name": "M. Seck",
       "position": "CB",
       "club": "AS Roma",
-      "nation": "Italy",
+      "nation": "Senegal",
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626713.png",
       "kitNumber": 74
     },
     {
-      "apiId": 349001,
-      "name": "Wesley",
-      "position": "CB",
+      "apiId": 22147,
+      "name": "M. Koné",
+      "position": "CM/CDM",
       "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "BRONZE",
+      "nation": "France",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/349001.png",
-      "kitNumber": 43
+      "imageUrl": "https://media.api-sports.io/football/players/22147.png",
+      "kitNumber": 17
     },
     {
-      "apiId": 384543,
-      "name": "J. Ziółkowski",
-      "position": "CB",
+      "apiId": 778,
+      "name": "B. Cristante",
+      "position": "CDM/CM",
       "club": "AS Roma",
       "nation": "Italy",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/384543.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/778.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 356888,
+      "name": "N. Pisilli",
+      "position": "CM/CAM",
+      "club": "AS Roma",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/356888.png",
+      "kitNumber": 61
+    },
+    {
+      "apiId": 277003,
+      "name": "N. El Aynaoui",
+      "position": "CM",
+      "club": "AS Roma",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/277003.png",
+      "kitNumber": 8
     },
     {
       "apiId": 626686,
@@ -200,21 +244,10 @@
       "position": "CM",
       "club": "AS Roma",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626686.png",
       "kitNumber": 8
-    },
-    {
-      "apiId": 778,
-      "name": "B. Cristante",
-      "position": "CM",
-      "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/778.png",
-      "kitNumber": 4
     },
     {
       "apiId": 472080,
@@ -228,48 +261,15 @@
       "kitNumber": 75
     },
     {
-      "apiId": 277003,
-      "name": "N. El Aynaoui",
-      "position": "CM",
+      "apiId": 875,
+      "name": "P. Dybala",
+      "position": "CAM/ST/RW",
       "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "GOLD",
+      "nation": "Argentina",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/277003.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 22147,
-      "name": "M. Koné",
-      "position": "CM",
-      "club": "AS Roma",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22147.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 356888,
-      "name": "N. Pisilli",
-      "position": "CM",
-      "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/356888.png",
-      "kitNumber": 61
-    },
-    {
-      "apiId": 484027,
-      "name": "A. Arena",
-      "position": "ST",
-      "club": "AS Roma",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/484027.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/875.png",
+      "kitNumber": 21
     },
     {
       "apiId": 15811,
@@ -283,37 +283,37 @@
       "kitNumber": 9
     },
     {
-      "apiId": 875,
-      "name": "P. Dybala",
-      "position": "ST",
-      "club": "AS Roma",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/875.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 249,
-      "name": "D. Malen",
-      "position": "ST",
-      "club": "AS Roma",
-      "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/249.png",
-      "kitNumber": 14
-    },
-    {
       "apiId": 323936,
       "name": "M. Soulé",
-      "position": "ST",
+      "position": "RW/CAM",
       "club": "AS Roma",
       "nation": "Argentina",
       "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/323936.png",
       "kitNumber": 18
+    },
+    {
+      "apiId": 249,
+      "name": "D. Malen",
+      "position": "ST/RW",
+      "club": "AS Roma",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/249.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 484027,
+      "name": "A. Arena",
+      "position": "ST",
+      "club": "AS Roma",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/484027.png",
+      "kitNumber": 9
     },
     {
       "apiId": 435482,

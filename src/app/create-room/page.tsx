@@ -13,11 +13,7 @@ import {
 type MatchSize = 5 | 11;
 type PoolMode = "GLOBAL" | "EPL" | "TOP_TEAMS" | "ICONS";
 
-const FIRST = ["Coach", "Boss", "Gaffer", "Mister", "Don", "Captain", "Chief", "Maestro", "Legend", "Striker", "El Capitán", "Manager"];
-const LAST = ["Santos", "Müller", "Silva", "Ali", "Rossi", "Park", "König", "Torres", "Diallo", "Kovač", "Zidane", "Pirlo", "Maldini", "Ramos"];
-function randomName() {
-  return `${FIRST[Math.floor(Math.random() * FIRST.length)]} ${LAST[Math.floor(Math.random() * LAST.length)]}`;
-}
+import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
 
 export default function CreateRoomPage() {
   const router = useRouter();

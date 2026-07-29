@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 19012,
-      "name": "M. Bettinelli",
-      "position": "GK",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19012.png",
-      "kitNumber": 13
-    },
-    {
       "apiId": 1622,
       "name": "G. Donnarumma",
       "position": "GK",
@@ -35,32 +24,21 @@
       "position": "GK",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162489.png",
       "kitNumber": 1
     },
     {
-      "apiId": 21138,
-      "name": "R. Aït-Nouri",
-      "position": "CB",
-      "club": "Manchester City",
-      "nation": "Algeria",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/21138.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 293168,
-      "name": "Max Alleyne",
-      "position": "CB",
+      "apiId": 19012,
+      "name": "M. Bettinelli",
+      "position": "GK",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/293168.png",
-      "kitNumber": 68
+      "imageUrl": "https://media.api-sports.io/football/players/19012.png",
+      "kitNumber": 13
     },
     {
       "apiId": 567,
@@ -74,17 +52,6 @@
       "kitNumber": 3
     },
     {
-      "apiId": 67971,
-      "name": "M. Guéhi",
-      "position": "CB",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/67971.png",
-      "kitNumber": 15
-    },
-    {
       "apiId": 129033,
       "name": "J. Gvardiol",
       "position": "LB/CB",
@@ -96,15 +63,26 @@
       "kitNumber": 24
     },
     {
-      "apiId": 360114,
-      "name": "A. Khusanov",
+      "apiId": 67971,
+      "name": "M. Guéhi",
       "position": "CB",
       "club": "Manchester City",
-      "nation": "Uzbekistan",
-      "tier": "GOLD",
+      "nation": "England",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/360114.png",
-      "kitNumber": 45
+      "imageUrl": "https://media.api-sports.io/football/players/67971.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 21138,
+      "name": "R. Aït-Nouri",
+      "position": "LB",
+      "club": "Manchester City",
+      "nation": "Algeria",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21138.png",
+      "kitNumber": 21
     },
     {
       "apiId": 284230,
@@ -112,10 +90,32 @@
       "position": "RB/CDM",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284230.png",
       "kitNumber": 82
+    },
+    {
+      "apiId": 360114,
+      "name": "A. Khusanov",
+      "position": "CB",
+      "club": "Manchester City",
+      "nation": "Uzbekistan",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/360114.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 293168,
+      "name": "Max Alleyne",
+      "position": "CB",
+      "club": "Manchester City",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/293168.png",
+      "kitNumber": 68
     },
     {
       "apiId": 382358,
@@ -123,120 +123,10 @@
       "position": "CB",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/382358.png",
       "kitNumber": 21
-    },
-    {
-      "apiId": 138908,
-      "name": "E. Anderson",
-      "position": "CM",
-      "club": "Manchester City",
-      "nation": "Scotland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/138908.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 156477,
-      "name": "R. Cherki",
-      "position": "CAM/RW",
-      "club": "Manchester City",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/156477.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 631,
-      "name": "P. Foden",
-      "position": "CAM/RW",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/631.png",
-      "kitNumber": 47
-    },
-    {
-      "apiId": 389034,
-      "name": "Charlie Gray",
-      "position": "CM",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/389034.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 2291,
-      "name": "M. Kovačić",
-      "position": "CM/CDM",
-      "club": "Manchester City",
-      "nation": "Croatia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2291.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 442048,
-      "name": "R. McAidoo",
-      "position": "CM",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/442048.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 161933,
-      "name": "Nico González",
-      "position": "CM",
-      "club": "Manchester City",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161933.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 41621,
-      "name": "Matheus Nunes",
-      "position": "CM",
-      "club": "Manchester City",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41621.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 307123,
-      "name": "N. O&apos;Reilly",
-      "position": "CM",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/307123.png",
-      "kitNumber": 33
-    },
-    {
-      "apiId": 36902,
-      "name": "T. Reijnders",
-      "position": "CM",
-      "club": "Manchester City",
-      "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/36902.png",
-      "kitNumber": 4
     },
     {
       "apiId": 44,
@@ -250,15 +140,114 @@
       "kitNumber": 16
     },
     {
-      "apiId": 1422,
-      "name": "J. Doku",
-      "position": "LW/RW",
+      "apiId": 631,
+      "name": "P. Foden",
+      "position": "CAM/RW",
       "club": "Manchester City",
-      "nation": "Belgium",
+      "nation": "England",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/631.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 36902,
+      "name": "T. Reijnders",
+      "position": "CM",
+      "club": "Manchester City",
+      "nation": "Netherlands",
       "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1422.png",
-      "kitNumber": 11
+      "imageUrl": "https://media.api-sports.io/football/players/36902.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 2291,
+      "name": "M. Kovačić",
+      "position": "CM/CDM",
+      "club": "Manchester City",
+      "nation": "Croatia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2291.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 41621,
+      "name": "Matheus Nunes",
+      "position": "CM",
+      "club": "Manchester City",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41621.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 161933,
+      "name": "Nico González",
+      "position": "CM",
+      "club": "Manchester City",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161933.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 156477,
+      "name": "R. Cherki",
+      "position": "CAM/RW",
+      "club": "Manchester City",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/156477.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 138908,
+      "name": "E. Anderson",
+      "position": "CM",
+      "club": "Manchester City",
+      "nation": "Scotland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138908.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 307123,
+      "name": "N. O'Reilly",
+      "position": "CM",
+      "club": "Manchester City",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/307123.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 389034,
+      "name": "Charlie Gray",
+      "position": "CM",
+      "club": "Manchester City",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/389034.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 442048,
+      "name": "R. McAidoo",
+      "position": "CM",
+      "club": "Manchester City",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/442048.png",
+      "kitNumber": 7
     },
     {
       "apiId": 1100,
@@ -272,37 +261,15 @@
       "kitNumber": 9
     },
     {
-      "apiId": 81573,
-      "name": "Omar Marmoush",
-      "position": "ST/LW",
+      "apiId": 1422,
+      "name": "J. Doku",
+      "position": "LW/RW",
       "club": "Manchester City",
-      "nation": "Egypt",
-      "tier": "ELITE",
+      "nation": "Belgium",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/81573.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 460853,
-      "name": "J. Monga",
-      "position": "ST",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/460853.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 380681,
-      "name": "D. Mukasa",
-      "position": "ST",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/380681.png",
-      "kitNumber": 29
+      "imageUrl": "https://media.api-sports.io/football/players/1422.png",
+      "kitNumber": 11
     },
     {
       "apiId": 266657,
@@ -316,6 +283,17 @@
       "kitNumber": 26
     },
     {
+      "apiId": 81573,
+      "name": "Omar Marmoush",
+      "position": "ST/LW",
+      "club": "Manchester City",
+      "nation": "Egypt",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/81573.png",
+      "kitNumber": 7
+    },
+    {
       "apiId": 19281,
       "name": "A. Semenyo",
       "position": "RW/ST",
@@ -325,6 +303,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19281.png",
       "kitNumber": 42
+    },
+    {
+      "apiId": 460853,
+      "name": "J. Monga",
+      "position": "ST",
+      "club": "Manchester City",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/460853.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 380681,
+      "name": "D. Mukasa",
+      "position": "ST",
+      "club": "Manchester City",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/380681.png",
+      "kitNumber": 29
     }
   ]
 }

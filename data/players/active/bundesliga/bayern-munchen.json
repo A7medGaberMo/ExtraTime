@@ -8,26 +8,48 @@
   },
   "players": [
     {
-      "apiId": 432595,
-      "name": "Jannis Bärtl",
-      "position": "GK",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/432595.png",
-      "kitNumber": 35
-    },
-    {
       "apiId": 497,
       "name": "M. Neuer",
       "position": "GK",
       "club": "Bayern München",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/497.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 203376,
+      "name": "J. Urbig",
+      "position": "GK",
+      "club": "Bayern München",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203376.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 498,
+      "name": "S. Ulreich",
+      "position": "GK",
+      "club": "Bayern München",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/498.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 432595,
+      "name": "Jannis Bärtl",
+      "position": "GK",
+      "club": "Bayern München",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/432595.png",
+      "kitNumber": 35
     },
     {
       "apiId": 568316,
@@ -41,59 +63,59 @@
       "kitNumber": 37
     },
     {
-      "apiId": 498,
-      "name": "S. Ulreich",
-      "position": "GK",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/498.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 203376,
-      "name": "J. Urbig",
-      "position": "GK",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/203376.png",
-      "kitNumber": 40
-    },
-    {
-      "apiId": 2195,
-      "name": "S. Boey",
-      "position": "CB",
-      "club": "Bayern München",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2195.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 280074,
-      "name": "N. Brown",
-      "position": "CB",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/280074.png",
-      "kitNumber": 21
-    },
-    {
       "apiId": 509,
       "name": "A. Davies",
-      "position": "CB",
+      "position": "LB/LWB",
       "club": "Bayern München",
       "nation": "Canada",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/509.png",
       "kitNumber": 19
+    },
+    {
+      "apiId": 972,
+      "name": "J. Tah",
+      "position": "CB",
+      "club": "Bayern München",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/972.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 1149,
+      "name": "D. Upamecano",
+      "position": "CB",
+      "club": "Bayern München",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1149.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 2897,
+      "name": "Kim Min-Jae",
+      "position": "CB",
+      "club": "Bayern München",
+      "nation": "South Korea",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2897.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 125171,
+      "name": "J. Stanišić",
+      "position": "RB/CB",
+      "club": "Bayern München",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/125171.png",
+      "kitNumber": 44
     },
     {
       "apiId": 32893,
@@ -107,26 +129,37 @@
       "kitNumber": 21
     },
     {
+      "apiId": 2195,
+      "name": "S. Boey",
+      "position": "RB/RWB",
+      "club": "Bayern München",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2195.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 280074,
+      "name": "N. Brown",
+      "position": "LB",
+      "club": "Bayern München",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280074.png",
+      "kitNumber": 21
+    },
+    {
       "apiId": 524214,
       "name": "Cassiano Kiala",
       "position": "CB",
       "club": "Bayern München",
       "nation": "Germany",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/524214.png",
       "kitNumber": 30
-    },
-    {
-      "apiId": 2897,
-      "name": "Kim Min-Jae",
-      "position": "CB",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2897.png",
-      "kitNumber": 3
     },
     {
       "apiId": 610483,
@@ -151,48 +184,103 @@
       "kitNumber": 43
     },
     {
-      "apiId": 125171,
-      "name": "J. Stanišić",
-      "position": "RB/CB",
-      "club": "Bayern München",
-      "nation": "Croatia",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/125171.png",
-      "kitNumber": 44
-    },
-    {
-      "apiId": 972,
-      "name": "J. Tah",
-      "position": "CB",
+      "apiId": 181812,
+      "name": "J. Musiala",
+      "position": "CAM/LW/RW",
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/972.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/181812.png",
+      "kitNumber": 10
     },
     {
-      "apiId": 1149,
-      "name": "D. Upamecano",
-      "position": "CB",
+      "apiId": 502,
+      "name": "J. Kimmich",
+      "position": "CDM/CM/RB",
       "club": "Bayern München",
-      "nation": "France",
+      "nation": "Germany",
       "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1149.png",
-      "kitNumber": 2
+      "imageUrl": "https://media.api-sports.io/football/players/502.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 19617,
+      "name": "M. Olise",
+      "position": "RW/CAM",
+      "club": "Bayern München",
+      "nation": "France",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19617.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 41104,
+      "name": "João Palhinha",
+      "position": "CDM/CM",
+      "club": "Bayern München",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41104.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 328033,
+      "name": "A. Pavlović",
+      "position": "CDM/CM",
+      "club": "Bayern München",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/328033.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 1157,
+      "name": "K. Laimer",
+      "position": "CM/RB",
+      "club": "Bayern München",
+      "nation": "Austria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1157.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 161897,
+      "name": "I. Saibari",
+      "position": "CAM/CM",
+      "club": "Bayern München",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161897.png",
+      "kitNumber": 34
     },
     {
       "apiId": 325975,
       "name": "T. Bischof",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/325975.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 327897,
+      "name": "A. Ibrahimović",
+      "position": "CAM/LW",
+      "club": "Bayern München",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327897.png",
+      "kitNumber": 20
     },
     {
       "apiId": 568042,
@@ -230,10 +318,10 @@
     {
       "apiId": 568043,
       "name": "G. Della Rovere",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "SILVER",
+      "nation": "Italy",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568043.png",
       "kitNumber": 31
@@ -250,28 +338,6 @@
       "kitNumber": 42
     },
     {
-      "apiId": 502,
-      "name": "J. Kimmich",
-      "position": "CDM/RB",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/502.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 1157,
-      "name": "K. Laimer",
-      "position": "CM/RB",
-      "club": "Bayern München",
-      "nation": "Austria",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1157.png",
-      "kitNumber": 27
-    },
-    {
       "apiId": 496738,
       "name": "W. Mike",
       "position": "CM",
@@ -283,89 +349,34 @@
       "kitNumber": 36
     },
     {
-      "apiId": 181812,
-      "name": "J. Musiala",
-      "position": "CAM/LW",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/181812.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 19617,
-      "name": "M. Olise",
-      "position": "RW/CAM",
-      "club": "Bayern München",
-      "nation": "France",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19617.png",
-      "kitNumber": 17
-    },
-    {
       "apiId": 648615,
       "name": "Erblin Osmani",
       "position": "CM",
       "club": "Bayern München",
-      "nation": "Germany",
+      "nation": "Kosovo",
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/648615.png",
       "kitNumber": 38
     },
     {
-      "apiId": 41104,
-      "name": "João Palhinha",
-      "position": "CM",
-      "club": "Bayern München",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41104.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 328033,
-      "name": "A. Pavlović",
-      "position": "CDM/CM",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/328033.png",
-      "kitNumber": 45
-    },
-    {
-      "apiId": 161897,
-      "name": "I. Saibari",
-      "position": "CM",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161897.png",
-      "kitNumber": 34
-    },
-    {
-      "apiId": 657672,
-      "name": "B. Assomo",
+      "apiId": 184,
+      "name": "H. Kane",
       "position": "ST",
       "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "SILVER",
+      "nation": "England",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/657672.png",
-      "kitNumber": 33
+      "imageUrl": "https://media.api-sports.io/football/players/184.png",
+      "kitNumber": 9
     },
     {
       "apiId": 2489,
       "name": "L. Díaz",
-      "position": "ST",
+      "position": "LW/LM",
       "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "GOLD",
+      "nation": "Colombia",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2489.png",
       "kitNumber": 14
@@ -376,43 +387,32 @@
       "position": "LW/RW",
       "club": "Bayern München",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/510.png",
       "kitNumber": 7
     },
     {
-      "apiId": 327897,
-      "name": "A. Ibrahimović",
-      "position": "CM",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327897.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 184,
-      "name": "H. Kane",
-      "position": "ST",
-      "club": "Bayern München",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/184.png",
-      "kitNumber": 9
-    },
-    {
       "apiId": 280339,
       "name": "A. Sieb",
-      "position": "ST",
+      "position": "ST/CAM",
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280339.png",
       "kitNumber": 11
+    },
+    {
+      "apiId": 657672,
+      "name": "B. Assomo",
+      "position": "ST",
+      "club": "Bayern München",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/657672.png",
+      "kitNumber": 33
     }
   ]
 }

@@ -3,31 +3,20 @@
     "apiId": 530,
     "name": "Atletico Madrid",
     "logo": "https://media.api-sports.io/football/teams/530.png",
-    "league": "Premier League",
+    "league": "la-liga",
     "leagueId": 140
   },
   "players": [
     {
-      "apiId": 393198,
-      "name": "Salvador Esquivel",
+      "apiId": 29,
+      "name": "J. Oblak",
       "position": "GK",
       "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
+      "nation": "Slovenia",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/393198.png",
+      "imageUrl": "https://media.api-sports.io/football/players/29.png",
       "kitNumber": 13
-    },
-    {
-      "apiId": 646997,
-      "name": "Álvaro Moreno",
-      "position": "GK",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/646997.png",
-      "kitNumber": 51
     },
     {
       "apiId": 2465,
@@ -41,15 +30,26 @@
       "kitNumber": 1
     },
     {
-      "apiId": 29,
-      "name": "J. Oblak",
+      "apiId": 393198,
+      "name": "Salvador Esquivel",
       "position": "GK",
       "club": "Atletico Madrid",
-      "nation": "Slovenia",
-      "tier": "ELITE_PLUS",
+      "nation": "Spain",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/29.png",
-      "kitNumber": 13
+      "imageUrl": "https://media.api-sports.io/football/players/393198.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 646997,
+      "name": "Álvaro Moreno",
+      "position": "GK",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/646997.png",
+      "kitNumber": 51
     },
     {
       "apiId": 189997,
@@ -60,7 +60,84 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/189997.png",
-      "kitNumber": 1
+      "kitNumber": 31
+    },
+    {
+      "apiId": 47301,
+      "name": "Robin Le Normand",
+      "position": "CB",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47301.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 563,
+      "name": "Álex Grimaldo",
+      "position": "LB/LM",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/563.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 31,
+      "name": "J. Giménez",
+      "position": "CB",
+      "club": "Atletico Madrid",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 30399,
+      "name": "D. Hancko",
+      "position": "CB/LB",
+      "club": "Atletico Madrid",
+      "nation": "Slovakia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30399.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 6503,
+      "name": "N. Molina",
+      "position": "RB/RM",
+      "club": "Atletico Madrid",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6503.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 295793,
+      "name": "Marc Pubill",
+      "position": "RB/CB",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/295793.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 162012,
+      "name": "M. Ruggeri",
+      "position": "LB/CB",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162012.png",
+      "kitNumber": 3
     },
     {
       "apiId": 336685,
@@ -82,95 +159,18 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386870.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 31,
-      "name": "J. Giménez",
-      "position": "CB",
-      "club": "Atletico Madrid",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 563,
-      "name": "Álex Grimaldo",
-      "position": "LB/LM",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/563.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 30399,
-      "name": "D. Hancko",
-      "position": "CB/LB",
-      "club": "Atletico Madrid",
-      "nation": "Slovakia",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30399.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 47301,
-      "name": "Robin Le Normand",
-      "position": "CB",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47301.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 753,
-      "name": "Marcos Llorente",
-      "position": "RB/CM",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/753.png",
-      "kitNumber": 14
+      "kitNumber": 28
     },
     {
       "apiId": 386869,
-      "name": "Dani MartÃ­nez",
+      "name": "Dani Martínez",
       "position": "CB",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386869.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 6503,
-      "name": "N. Molina",
-      "position": "RB/RM",
-      "club": "Atletico Madrid",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6503.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 295793,
-      "name": "Marc Pubill",
-      "position": "RB/CB",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/295793.png",
-      "kitNumber": 18
+      "kitNumber": 35
     },
     {
       "apiId": 428799,
@@ -181,18 +181,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/428799.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 162012,
-      "name": "M. Ruggeri",
-      "position": "CB",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162012.png",
-      "kitNumber": 3
+      "kitNumber": 45
     },
     {
       "apiId": 441280,
@@ -200,43 +189,21 @@
       "position": "CB",
       "club": "Atletico Madrid",
       "nation": "Argentina",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441280.png",
       "kitNumber": 12
     },
     {
-      "apiId": 336594,
-      "name": "Pablo Barrios",
-      "position": "CM/CDM",
+      "apiId": 753,
+      "name": "Marcos Llorente",
+      "position": "RB/CM",
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/336594.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 133185,
-      "name": "J. Cardoso",
-      "position": "CDM/CM",
-      "club": "Atletico Madrid",
-      "nation": "USA",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/133185.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 7712,
-      "name": "M. Hjulmand",
-      "position": "CDM/CM",
-      "club": "Atletico Madrid",
-      "nation": "Denmark",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/7712.png",
-      "kitNumber": 42
+      "imageUrl": "https://media.api-sports.io/football/players/753.png",
+      "kitNumber": 14
     },
     {
       "apiId": 50,
@@ -250,6 +217,28 @@
       "kitNumber": 6
     },
     {
+      "apiId": 336594,
+      "name": "Pablo Barrios",
+      "position": "CM/CDM",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336594.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 7712,
+      "name": "M. Hjulmand",
+      "position": "CDM/CM",
+      "club": "Atletico Madrid",
+      "nation": "Denmark",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7712.png",
+      "kitNumber": 42
+    },
+    {
       "apiId": 927,
       "name": "Lee Kang-In",
       "position": "CAM/RW",
@@ -258,7 +247,18 @@
       "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/927.png",
-      "kitNumber": 19
+      "kitNumber": 21
+    },
+    {
+      "apiId": 133185,
+      "name": "J. Cardoso",
+      "position": "CDM/CM",
+      "club": "Atletico Madrid",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/133185.png",
+      "kitNumber": 5
     },
     {
       "apiId": 341371,
@@ -269,29 +269,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341371.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 548704,
-      "name": "J. Morcillo",
-      "position": "CM",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/548704.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 548867,
-      "name": "T. Seidu",
-      "position": "CM",
-      "club": "Atletico Madrid",
-      "nation": "Ghana",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/548867.png",
-      "kitNumber": 27
+      "kitNumber": 34
     },
     {
       "apiId": 303378,
@@ -302,7 +280,29 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/303378.png",
-      "kitNumber": 6
+      "kitNumber": 36
+    },
+    {
+      "apiId": 548704,
+      "name": "J. Morcillo",
+      "position": "CM",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/548704.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 548867,
+      "name": "T. Seidu",
+      "position": "CM",
+      "club": "Atletico Madrid",
+      "nation": "Ghana",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/548867.png",
+      "kitNumber": 27
     },
     {
       "apiId": 313383,
@@ -310,21 +310,10 @@
       "position": "CM",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/313383.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 6067,
-      "name": "T. Almada",
-      "position": "CAM/LW",
-      "club": "Atletico Madrid",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6067.png",
-      "kitNumber": 11
+      "kitNumber": 37
     },
     {
       "apiId": 6009,
@@ -349,59 +338,26 @@
       "kitNumber": 10
     },
     {
-      "apiId": 443668,
-      "name": "Rayane Belid",
-      "position": "ST",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/443668.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 548707,
-      "name": "M. Llorente",
-      "position": "RB/CM",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/548707.png",
-      "kitNumber": 30
-    },
-    {
       "apiId": 18767,
       "name": "A. Lookman",
       "position": "ST/LW",
       "club": "Atletico Madrid",
       "nation": "Nigeria",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18767.png",
       "kitNumber": 22
     },
     {
-      "apiId": 548706,
-      "name": "I. Luque",
-      "position": "ST",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/548706.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 323935,
-      "name": "G. Simeone",
-      "position": "RW/RM",
+      "apiId": 6067,
+      "name": "T. Almada",
+      "position": "CAM/LW",
       "club": "Atletico Madrid",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/323935.png",
-      "kitNumber": 20
+      "imageUrl": "https://media.api-sports.io/football/players/6067.png",
+      "kitNumber": 11
     },
     {
       "apiId": 8492,
@@ -413,6 +369,39 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8492.png",
       "kitNumber": 9
+    },
+    {
+      "apiId": 323935,
+      "name": "G. Simeone",
+      "position": "RW/RM",
+      "club": "Atletico Madrid",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/323935.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 443668,
+      "name": "Rayane Belid",
+      "position": "ST",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443668.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 548706,
+      "name": "I. Luque",
+      "position": "ST",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/548706.png",
+      "kitNumber": 39
     }
   ]
 }

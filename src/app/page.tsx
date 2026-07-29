@@ -9,11 +9,7 @@ import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Shield, Loader2, Cloc
 
 type PoolMode = "GLOBAL" | "EPL" | "ICONS";
 
-const FIRST = ["Coach", "Boss", "Gaffer", "Mister", "Don", "Captain", "Chief", "Maestro", "Legend", "Striker"];
-const LAST = ["Santos", "Müller", "Silva", "Ali", "Rossi", "Park", "König", "Torres", "Diallo", "Kovač"];
-function randomName() {
-  return `${FIRST[Math.floor(Math.random() * FIRST.length)]} ${LAST[Math.floor(Math.random() * LAST.length)]}`;
-}
+import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
 
 export default function HomePage() {
   const router = useRouter();

@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Lens",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/497661.png",
       "kitNumber": 60
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Lens",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/347211.png",
       "kitNumber": 40
@@ -46,7 +46,7 @@
       "position": "CB",
       "club": "Lens",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44594.png",
       "kitNumber": 23
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Lens",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441264.png",
       "kitNumber": 32
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Lens",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/369500.png",
       "kitNumber": 25
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Lens",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437139.png",
       "kitNumber": 28
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Lens",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1153.png",
       "kitNumber": 21
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Lens",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/660571.png",
       "kitNumber": 41
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Lens",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443579.png",
       "kitNumber": 38
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Lens",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/633361.png",
       "kitNumber": 34
@@ -321,7 +321,7 @@
       "position": "ST",
       "club": "Lens",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1922.png",
       "kitNumber": 10

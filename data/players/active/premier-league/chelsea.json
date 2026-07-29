@@ -8,15 +8,37 @@
   },
   "players": [
     {
+      "apiId": 18959,
+      "name": "Robert Sánchez",
+      "position": "GK",
+      "club": "Chelsea",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18959.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 286616,
       "name": "F. Jörgensen",
       "position": "GK",
       "club": "Chelsea",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286616.png",
       "kitNumber": 12
+    },
+    {
+      "apiId": 64167,
+      "name": "G. Słonina",
+      "position": "GK",
+      "club": "Chelsea",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64167.png",
+      "kitNumber": 44
     },
     {
       "apiId": 287868,
@@ -27,18 +49,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/287868.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 18959,
-      "name": "Robert Sánchez",
-      "position": "GK",
-      "club": "Chelsea",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18959.png",
-      "kitNumber": 1
+      "kitNumber": 50
     },
     {
       "apiId": 180940,
@@ -52,75 +63,9 @@
       "kitNumber": 28
     },
     {
-      "apiId": 64167,
-      "name": "G. Słonina",
-      "position": "GK",
-      "club": "Chelsea",
-      "nation": "USA",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/64167.png",
-      "kitNumber": 44
-    },
-    {
-      "apiId": 366735,
-      "name": "Joshua Kofi Acheampong",
-      "position": "CB",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/366735.png",
-      "kitNumber": 34
-    },
-    {
-      "apiId": 19145,
-      "name": "T. Adarabioyo",
-      "position": "CB",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19145.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 609590,
-      "name": "Denner",
-      "position": "CB",
-      "club": "Chelsea",
-      "nation": "Brazil",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/609590.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 95,
-      "name": "B. Badiashile",
-      "position": "CB",
-      "club": "Chelsea",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/95.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 19720,
-      "name": "T. Chalobah",
-      "position": "CB",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19720.png",
-      "kitNumber": 23
-    },
-    {
       "apiId": 152953,
       "name": "L. Colwill",
-      "position": "CB",
+      "position": "CB/LB",
       "club": "Chelsea",
       "nation": "England",
       "tier": "ELITE_PLUS",
@@ -129,15 +74,15 @@
       "kitNumber": 6
     },
     {
-      "apiId": 22094,
-      "name": "W. Fofana",
-      "position": "CB",
+      "apiId": 19545,
+      "name": "R. James",
+      "position": "RB/CB",
       "club": "Chelsea",
-      "nation": "France",
-      "tier": "ELITE",
+      "nation": "England",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22094.png",
-      "kitNumber": 29
+      "imageUrl": "https://media.api-sports.io/football/players/19545.png",
+      "kitNumber": 24
     },
     {
       "apiId": 161907,
@@ -151,37 +96,70 @@
       "kitNumber": 27
     },
     {
-      "apiId": 341642,
-      "name": "J. Hato",
+      "apiId": 22094,
+      "name": "W. Fofana",
       "position": "CB",
       "club": "Chelsea",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22094.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 95,
+      "name": "B. Badiashile",
+      "position": "CB",
+      "club": "Chelsea",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/95.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 19145,
+      "name": "T. Adarabioyo",
+      "position": "CB",
+      "club": "Chelsea",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19145.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 341642,
+      "name": "J. Hato",
+      "position": "CB/LB",
+      "club": "Chelsea",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341642.png",
       "kitNumber": 21
     },
     {
-      "apiId": 19545,
-      "name": "R. James",
+      "apiId": 19720,
+      "name": "T. Chalobah",
       "position": "CB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19545.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/19720.png",
+      "kitNumber": 23
     },
     {
-      "apiId": 383018,
-      "name": "M. Palestra",
-      "position": "CB",
+      "apiId": 366735,
+      "name": "Joshua Kofi Acheampong",
+      "position": "CB/RB",
       "club": "Chelsea",
-      "nation": "Italy",
-      "tier": "BRONZE",
+      "nation": "England",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/383018.png",
-      "kitNumber": null
+      "imageUrl": "https://media.api-sports.io/football/players/366735.png",
+      "kitNumber": 34
     },
     {
       "apiId": 276184,
@@ -189,21 +167,43 @@
       "position": "CB",
       "club": "Chelsea",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/276184.png",
       "kitNumber": 19
     },
     {
-      "apiId": 568950,
-      "name": "Harrison Bettoni",
-      "position": "CM",
+      "apiId": 383018,
+      "name": "M. Palestra",
+      "position": "CB",
       "club": "Chelsea",
-      "nation": "England",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/383018.png",
+      "kitNumber": 48
+    },
+    {
+      "apiId": 609590,
+      "name": "Denner",
+      "position": "CB",
+      "club": "Chelsea",
+      "nation": "Brazil",
       "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/568950.png",
-      "kitNumber": 43
+      "imageUrl": "https://media.api-sports.io/football/players/609590.png",
+      "kitNumber": 51
+    },
+    {
+      "apiId": 152982,
+      "name": "C. Palmer",
+      "position": "RW/CAM",
+      "club": "Chelsea",
+      "nation": "England",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/152982.png",
+      "kitNumber": 10
     },
     {
       "apiId": 116117,
@@ -217,28 +217,6 @@
       "kitNumber": 25
     },
     {
-      "apiId": 568066,
-      "name": "M. Eboue",
-      "position": "CM",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/568066.png",
-      "kitNumber": 72
-    },
-    {
-      "apiId": 308678,
-      "name": "Dário Essugo",
-      "position": "CM",
-      "club": "Chelsea",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/308678.png",
-      "kitNumber": 14
-    },
-    {
       "apiId": 5996,
       "name": "E. Fernández",
       "position": "CM/CDM",
@@ -248,6 +226,61 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5996.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 282125,
+      "name": "R. Lavia",
+      "position": "CDM/CM",
+      "club": "Chelsea",
+      "nation": "Belgium",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/282125.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 19170,
+      "name": "M. Rogers",
+      "position": "CAM/LW",
+      "club": "Chelsea",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19170.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 308678,
+      "name": "Dário Essugo",
+      "position": "CM/CDM",
+      "club": "Chelsea",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/308678.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 568950,
+      "name": "Harrison Bettoni",
+      "position": "CM",
+      "club": "Chelsea",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568950.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 568066,
+      "name": "M. Eboue",
+      "position": "CM",
+      "club": "Chelsea",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568066.png",
+      "kitNumber": 72
     },
     {
       "apiId": 610563,
@@ -272,64 +305,31 @@
       "kitNumber": 76
     },
     {
-      "apiId": 282125,
-      "name": "R. Lavia",
-      "position": "CDM/CM",
+      "apiId": 1864,
+      "name": "Pedro Neto",
+      "position": "RW/LW",
       "club": "Chelsea",
-      "nation": "Belgium",
+      "nation": "Portugal",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/282125.png",
-      "kitNumber": 45
+      "imageUrl": "https://media.api-sports.io/football/players/1864.png",
+      "kitNumber": 7
     },
     {
-      "apiId": 152982,
-      "name": "C. Palmer",
-      "position": "RW/CAM",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/152982.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 19170,
-      "name": "M. Rogers",
-      "position": "CAM/LW",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19170.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 161948,
-      "name": "L. Delap",
+      "apiId": 10329,
+      "name": "João Pedro",
       "position": "ST/CF",
       "club": "Chelsea",
-      "nation": "England",
-      "tier": "ELITE",
+      "nation": "Brazil",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161948.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 203762,
-      "name": "E. Emegha",
-      "position": "ST",
-      "club": "Chelsea",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/203762.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/10329.png",
+      "kitNumber": 20
     },
     {
       "apiId": 425733,
       "name": "Estêvão",
-      "position": "ST",
+      "position": "RW/CAM",
       "club": "Chelsea",
       "nation": "Brazil",
       "tier": "ELITE_PLUS",
@@ -340,7 +340,7 @@
     {
       "apiId": 286894,
       "name": "J. Bynoe-Gittens",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Chelsea",
       "nation": "England",
       "tier": "ELITE",
@@ -349,26 +349,48 @@
       "kitNumber": 11
     },
     {
+      "apiId": 161948,
+      "name": "L. Delap",
+      "position": "ST",
+      "club": "Chelsea",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161948.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 419582,
+      "name": "Geovany Tcherno Quenda",
+      "position": "RW/RM",
+      "club": "Chelsea",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/419582.png",
+      "kitNumber": 57
+    },
+    {
+      "apiId": 203762,
+      "name": "E. Emegha",
+      "position": "ST",
+      "club": "Chelsea",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203762.png",
+      "kitNumber": 18
+    },
+    {
       "apiId": 392270,
       "name": "Marc Guiu",
       "position": "ST",
       "club": "Chelsea",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/392270.png",
       "kitNumber": 38
-    },
-    {
-      "apiId": 10329,
-      "name": "João Pedro",
-      "position": "ST",
-      "club": "Chelsea",
-      "nation": "Brazil",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10329.png",
-      "kitNumber": 20
     },
     {
       "apiId": 359117,
@@ -380,28 +402,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/359117.png",
       "kitNumber": 62
-    },
-    {
-      "apiId": 1864,
-      "name": "Pedro Neto",
-      "position": "ST",
-      "club": "Chelsea",
-      "nation": "Portugal",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1864.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 419582,
-      "name": "Geovany Tcherno Quenda",
-      "position": "ST",
-      "club": "Chelsea",
-      "nation": "Portugal",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/419582.png",
-      "kitNumber": 57
     }
   ]
 }

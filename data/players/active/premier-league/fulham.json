@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 21566,
-      "name": "B. Lecomte",
-      "position": "GK",
-      "club": "Fulham",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/21566.png",
-      "kitNumber": 23
-    },
-    {
       "apiId": 1438,
       "name": "B. Leno",
       "position": "GK",
@@ -30,15 +19,26 @@
       "kitNumber": 1
     },
     {
-      "apiId": 384981,
-      "name": "S. Amissah",
-      "position": "CB",
+      "apiId": 21566,
+      "name": "B. Lecomte",
+      "position": "GK",
       "club": "Fulham",
-      "nation": "England",
-      "tier": "BRONZE",
+      "nation": "France",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/384981.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/21566.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 19549,
+      "name": "A. Robinson",
+      "position": "LB",
+      "club": "Fulham",
+      "nation": "USA",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19549.png",
+      "kitNumber": 33
     },
     {
       "apiId": 2729,
@@ -54,10 +54,10 @@
     {
       "apiId": 152967,
       "name": "C. Bassey",
-      "position": "CB",
+      "position": "CB/LB",
       "club": "Fulham",
       "nation": "Nigeria",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152967.png",
       "kitNumber": 3
@@ -65,7 +65,7 @@
     {
       "apiId": 2920,
       "name": "T. Castagne",
-      "position": "CB",
+      "position": "RB/LB",
       "club": "Fulham",
       "nation": "Belgium",
       "tier": "GOLD",
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/131.png",
       "kitNumber": 15
@@ -90,26 +90,15 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18814.png",
       "kitNumber": 31
     },
     {
-      "apiId": 19549,
-      "name": "A. Robinson",
-      "position": "CB",
-      "club": "Fulham",
-      "nation": "USA",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19549.png",
-      "kitNumber": 33
-    },
-    {
       "apiId": 657,
       "name": "K. Tete",
-      "position": "CB",
+      "position": "RB",
       "club": "Fulham",
       "nation": "Netherlands",
       "tier": "GOLD",
@@ -118,12 +107,45 @@
       "kitNumber": 2
     },
     {
+      "apiId": 384981,
+      "name": "S. Amissah",
+      "position": "CB",
+      "club": "Fulham",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/384981.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 1161,
+      "name": "E. Smith Rowe",
+      "position": "CAM/LW",
+      "club": "Fulham",
+      "nation": "England",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1161.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 1455,
+      "name": "A. Iwobi",
+      "position": "CM/LM",
+      "club": "Fulham",
+      "nation": "Nigeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1455.png",
+      "kitNumber": 17
+    },
+    {
       "apiId": 1934,
       "name": "S. Berge",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Fulham",
       "nation": "Norway",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1934.png",
       "kitNumber": 16
@@ -131,7 +153,7 @@
     {
       "apiId": 278133,
       "name": "Oscar Bobb",
-      "position": "CM",
+      "position": "RW/CAM",
       "club": "Fulham",
       "nation": "Norway",
       "tier": "ELITE",
@@ -140,9 +162,20 @@
       "kitNumber": 14
     },
     {
+      "apiId": 2823,
+      "name": "S. Lukić",
+      "position": "CM/CDM",
+      "club": "Fulham",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2823.png",
+      "kitNumber": 20
+    },
+    {
       "apiId": 19025,
       "name": "T. Cairney",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Fulham",
       "nation": "Scotland",
       "tier": "GOLD",
@@ -151,15 +184,26 @@
       "kitNumber": 10
     },
     {
-      "apiId": 1455,
-      "name": "A. Iwobi",
-      "position": "CM/LM",
+      "apiId": 19480,
+      "name": "H. Reed",
+      "position": "CM/CDM",
       "club": "Fulham",
-      "nation": "Nigeria",
-      "tier": "ELITE_PLUS",
+      "nation": "England",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1455.png",
-      "kitNumber": 17
+      "imageUrl": "https://media.api-sports.io/football/players/19480.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 19032,
+      "name": "R. Sessegnon",
+      "position": "LM/LB",
+      "club": "Fulham",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19032.png",
+      "kitNumber": 30
     },
     {
       "apiId": 389315,
@@ -173,56 +217,23 @@
       "kitNumber": 24
     },
     {
-      "apiId": 2823,
-      "name": "S. Lukić",
-      "position": "CM",
+      "apiId": 195106,
+      "name": "Rodrigo Muniz",
+      "position": "ST",
       "club": "Fulham",
-      "nation": "Serbia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2823.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 19480,
-      "name": "H. Reed",
-      "position": "CM",
-      "club": "Fulham",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19480.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 19032,
-      "name": "R. Sessegnon",
-      "position": "CM",
-      "club": "Fulham",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19032.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 1161,
-      "name": "E. Smith Rowe",
-      "position": "CAM/LW",
-      "club": "Fulham",
-      "nation": "England",
+      "nation": "Brazil",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1161.png",
-      "kitNumber": 32
+      "imageUrl": "https://media.api-sports.io/football/players/195106.png",
+      "kitNumber": 9
     },
     {
       "apiId": 237819,
       "name": "Kevin",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Fulham",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237819.png",
       "kitNumber": 22
@@ -233,21 +244,10 @@
       "position": "ST",
       "club": "Fulham",
       "nation": "Sweden",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/436443.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 195106,
-      "name": "Rodrigo Muniz",
-      "position": "ST",
-      "club": "Fulham",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195106.png",
-      "kitNumber": 9
     }
   ]
 }

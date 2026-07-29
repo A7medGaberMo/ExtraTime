@@ -319,6 +319,7 @@ export function PlayerCard({
                 }}
               >
                 {hasValidImage ? (
+                  /* eslint-disable-next-line @next/next/no-img-element */
                   <img
                     src={player.imageUrl}
                     alt={player.name}

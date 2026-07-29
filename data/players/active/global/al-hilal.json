@@ -13,7 +13,7 @@
       "position": "ST",
       "club": "Al-Hilal",
       "nation": "Uruguay",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Darwin_N%C3%BA%C3%B1ez_%28cropped%29.jpg",
       "kitNumber": 9
@@ -24,7 +24,7 @@
       "position": "LB/LM",
       "club": "Al-Hilal",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Theo_Hernandez_France_v_Norway_26_June_26-122.jpg",
       "kitNumber": 6
@@ -35,7 +35,7 @@
       "position": "CDM/CM",
       "club": "Al-Hilal",
       "nation": "Portugal",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Ruben_Neves_USMNT_v_Portugal_Mar_31_2026-25.jpg",
       "kitNumber": 8
@@ -46,7 +46,7 @@
       "position": "CM/CAM",
       "club": "Al-Hilal",
       "nation": "Serbia",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/734.png",
       "kitNumber": 22
@@ -57,7 +57,7 @@
       "position": "RW/LW",
       "club": "Al-Hilal",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Malcom_in_2021.jpg",
       "kitNumber": 77

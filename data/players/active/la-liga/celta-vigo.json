@@ -8,28 +8,6 @@
   },
   "players": [
     {
-      "apiId": 286623,
-      "name": "Coke Carrillo",
-      "position": "GK",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286623.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 30765,
-      "name": "I. Radu",
-      "position": "GK",
-      "club": "Celta Vigo",
-      "nation": "Romania",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30765.png",
-      "kitNumber": 13
-    },
-    {
       "apiId": 47427,
       "name": "Iván Villar",
       "position": "GK",
@@ -41,9 +19,31 @@
       "kitNumber": 1
     },
     {
+      "apiId": 30765,
+      "name": "I. Radu",
+      "position": "GK",
+      "club": "Celta Vigo",
+      "nation": "Romania",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30765.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 286623,
+      "name": "Coke Carrillo",
+      "position": "GK",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286623.png",
+      "kitNumber": 25
+    },
+    {
       "apiId": 2278,
       "name": "Marcos Alonso",
-      "position": "CB",
+      "position": "CB/LB",
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "GOLD",
@@ -52,15 +52,37 @@
       "kitNumber": 20
     },
     {
-      "apiId": 157988,
-      "name": "Sergio Carreira",
+      "apiId": 47566,
+      "name": "Javi Galán",
+      "position": "LB",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47566.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 47277,
+      "name": "Unai Núñez",
       "position": "CB",
       "club": "Celta Vigo",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/157988.png",
-      "kitNumber": 5
+      "imageUrl": "https://media.api-sports.io/football/players/47277.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 47988,
+      "name": "C. Starfelt",
+      "position": "CB",
+      "club": "Celta Vigo",
+      "nation": "Sweden",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47988.png",
+      "kitNumber": 2
     },
     {
       "apiId": 286559,
@@ -74,15 +96,59 @@
       "kitNumber": 24
     },
     {
-      "apiId": 47566,
-      "name": "Javi Galán",
-      "position": "CB",
+      "apiId": 384135,
+      "name": "Javi Rodríguez",
+      "position": "CB/RB",
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47566.png",
-      "kitNumber": 20
+      "imageUrl": "https://media.api-sports.io/football/players/384135.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 64309,
+      "name": "Manu Sánchez",
+      "position": "LB",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64309.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 157988,
+      "name": "Sergio Carreira",
+      "position": "RB",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/157988.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 182661,
+      "name": "Álvaro Núñez",
+      "position": "RB",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182661.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 179955,
+      "name": "Javi Rueda",
+      "position": "RB",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/179955.png",
+      "kitNumber": 17
     },
     {
       "apiId": 329722,
@@ -107,92 +173,26 @@
       "kitNumber": 18
     },
     {
-      "apiId": 182661,
-      "name": "Álvaro Núñez",
-      "position": "CB",
+      "apiId": 162123,
+      "name": "I. Moriba",
+      "position": "CM/CDM",
       "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182661.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 47277,
-      "name": "Unai Núñez",
-      "position": "CB",
-      "club": "Celta Vigo",
-      "nation": "Spain",
+      "nation": "Guinea",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47277.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/162123.png",
+      "kitNumber": 6
     },
     {
-      "apiId": 384135,
-      "name": "Javi Rodríguez",
-      "position": "CB",
+      "apiId": 211,
+      "name": "M. Vecino",
+      "position": "CM/CDM",
       "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/384135.png",
-      "kitNumber": 32
-    },
-    {
-      "apiId": 179955,
-      "name": "Javi Rueda",
-      "position": "CB",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/179955.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 64309,
-      "name": "Manu Sánchez",
-      "position": "CB",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/64309.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 47988,
-      "name": "C. Starfelt",
-      "position": "CB",
-      "club": "Celta Vigo",
-      "nation": "Sweden",
+      "nation": "Uruguay",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47988.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 481678,
-      "name": "Andrés Antañón",
-      "position": "CM",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/481678.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 560930,
-      "name": "H. Burcio",
-      "position": "CM",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/560930.png",
-      "kitNumber": 5
+      "imageUrl": "https://media.api-sports.io/football/players/211.png",
+      "kitNumber": 15
     },
     {
       "apiId": 46711,
@@ -219,35 +219,13 @@
     {
       "apiId": 161875,
       "name": "Hugo González",
-      "position": "CM",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161875.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 554286,
-      "name": "O. Marcos",
-      "position": "CM",
+      "position": "CAM/RM",
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/554286.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 162123,
-      "name": "I. Moriba",
-      "position": "CM",
-      "club": "Celta Vigo",
-      "nation": "Guinea",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162123.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/161875.png",
+      "kitNumber": 28
     },
     {
       "apiId": 333502,
@@ -255,76 +233,54 @@
       "position": "CM",
       "club": "Celta Vigo",
       "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/333502.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 211,
-      "name": "M. Vecino",
-      "position": "CM",
-      "club": "Celta Vigo",
-      "nation": "Uruguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/211.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 329720,
-      "name": "Hugo Álvarez",
-      "position": "ST",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/329720.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 554287,
-      "name": "A. Arcos",
-      "position": "ST",
-      "club": "Celta Vigo",
-      "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/554287.png",
-      "kitNumber": 11
+      "imageUrl": "https://media.api-sports.io/football/players/333502.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 481678,
+      "name": "Andrés Antañón",
+      "position": "CM",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/481678.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 560930,
+      "name": "H. Burcio",
+      "position": "CM",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/560930.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 554286,
+      "name": "O. Marcos",
+      "position": "CM",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/554286.png",
+      "kitNumber": 30
     },
     {
       "apiId": 47445,
       "name": "Iago Aspas",
-      "position": "ST",
+      "position": "ST/CAM",
       "club": "Celta Vigo",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47445.png",
       "kitNumber": 10
-    },
-    {
-      "apiId": 320517,
-      "name": "Pablo Durán",
-      "position": "ST",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/320517.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 351913,
-      "name": "J. El Abdellaoui",
-      "position": "ST",
-      "club": "Celta Vigo",
-      "nation": "Norway",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/351913.png",
-      "kitNumber": 39
     },
     {
       "apiId": 47348,
@@ -332,7 +288,7 @@
       "position": "ST",
       "club": "Celta Vigo",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47348.png",
       "kitNumber": 7
@@ -343,10 +299,65 @@
       "position": "ST",
       "club": "Celta Vigo",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/122734.png",
       "kitNumber": 9
+    },
+    {
+      "apiId": 269163,
+      "name": "W. Swedberg",
+      "position": "LW/ST",
+      "club": "Celta Vigo",
+      "nation": "Sweden",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/269163.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 329720,
+      "name": "Hugo Álvarez",
+      "position": "LM/LW",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/329720.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 320517,
+      "name": "Pablo Durán",
+      "position": "ST",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/320517.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 351913,
+      "name": "J. El Abdellaoui",
+      "position": "ST",
+      "club": "Celta Vigo",
+      "nation": "Norway",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/351913.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 554287,
+      "name": "A. Arcos",
+      "position": "ST",
+      "club": "Celta Vigo",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/554287.png",
+      "kitNumber": 11
     },
     {
       "apiId": 560931,
@@ -354,21 +365,10 @@
       "position": "ST",
       "club": "Celta Vigo",
       "nation": "Ghana",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560931.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 269163,
-      "name": "W. Swedberg",
-      "position": "ST",
-      "club": "Celta Vigo",
-      "nation": "Sweden",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/269163.png",
-      "kitNumber": 19
+      "kitNumber": 37
     }
   ]
 }

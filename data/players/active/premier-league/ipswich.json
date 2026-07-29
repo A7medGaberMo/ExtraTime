@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 18958,
-      "name": "D. Button",
-      "position": "GK",
-      "club": "Ipswich",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18958.png",
-      "kitNumber": 27
-    },
-    {
       "apiId": 82097,
       "name": "A. Palmer",
       "position": "GK",
@@ -35,10 +24,21 @@
       "position": "GK",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19541.png",
       "kitNumber": 28
+    },
+    {
+      "apiId": 18958,
+      "name": "D. Button",
+      "position": "GK",
+      "club": "Ipswich",
+      "nation": "England",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18958.png",
+      "kitNumber": 27
     },
     {
       "apiId": 328669,
@@ -49,40 +49,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328669.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 327749,
-      "name": "S. Boniface",
-      "position": "CB",
-      "club": "Ipswich",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327749.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 19119,
-      "name": "L. Davis",
-      "position": "CB",
-      "club": "Ipswich",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19119.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 19577,
-      "name": "D. Furlong",
-      "position": "CB",
-      "club": "Ipswich",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19577.png",
-      "kitNumber": 19
+      "kitNumber": 31
     },
     {
       "apiId": 127579,
@@ -90,21 +57,32 @@
       "position": "CB",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127579.png",
       "kitNumber": 24
     },
     {
-      "apiId": 18823,
-      "name": "B. Johnson",
-      "position": "RW/ST",
+      "apiId": 19119,
+      "name": "L. Davis",
+      "position": "LB",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18823.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/19119.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 17597,
+      "name": "D. O'Shea",
+      "position": "CB",
+      "club": "Ipswich",
+      "nation": "Republic of Ireland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/17597.png",
+      "kitNumber": 26
     },
     {
       "apiId": 19546,
@@ -118,31 +96,31 @@
       "kitNumber": 4
     },
     {
-      "apiId": 17597,
-      "name": "D. O&apos;Shea",
-      "position": "CB",
+      "apiId": 19577,
+      "name": "D. Furlong",
+      "position": "RB",
       "club": "Ipswich",
-      "nation": "Republic of Ireland",
-      "tier": "ELITE",
+      "nation": "England",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/17597.png",
-      "kitNumber": 26
+      "imageUrl": "https://media.api-sports.io/football/players/19577.png",
+      "kitNumber": 19
     },
     {
-      "apiId": 20089,
-      "name": "W. Burns",
-      "position": "CM",
+      "apiId": 327749,
+      "name": "S. Boniface",
+      "position": "CB",
       "club": "Ipswich",
-      "nation": "Wales",
-      "tier": "SILVER",
+      "nation": "England",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20089.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/327749.png",
+      "kitNumber": 42
     },
     {
       "apiId": 37236,
       "name": "A. Matusiwa",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Ipswich",
       "nation": "Netherlands",
       "tier": "GOLD",
@@ -156,7 +134,7 @@
       "position": "CM",
       "club": "Ipswich",
       "nation": "Chile",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195121.png",
       "kitNumber": 32
@@ -173,9 +151,53 @@
       "kitNumber": 14
     },
     {
+      "apiId": 20089,
+      "name": "W. Burns",
+      "position": "RM/RW",
+      "club": "Ipswich",
+      "nation": "Wales",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20089.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 138931,
+      "name": "J. Philogene",
+      "position": "LW/RW",
+      "club": "Ipswich",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138931.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 19136,
+      "name": "J. Clarke",
+      "position": "LW/LM",
+      "club": "Ipswich",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19136.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 33224,
+      "name": "D. Maeda",
+      "position": "LW/ST",
+      "club": "Ipswich",
+      "nation": "Japan",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/33224.png",
+      "kitNumber": 38
+    },
+    {
       "apiId": 2380,
       "name": "C. Akpom",
-      "position": "ST",
+      "position": "ST/CAM",
       "club": "Ipswich",
       "nation": "England",
       "tier": "GOLD",
@@ -184,15 +206,48 @@
       "kitNumber": 29
     },
     {
-      "apiId": 19136,
-      "name": "J. Clarke",
+      "apiId": 8794,
+      "name": "G. Hirst",
       "position": "ST",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19136.png",
-      "kitNumber": 47
+      "imageUrl": "https://media.api-sports.io/football/players/8794.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 18823,
+      "name": "B. Johnson",
+      "position": "RW/ST",
+      "club": "Ipswich",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18823.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 283290,
+      "name": "K. McAteer",
+      "position": "RM/RW",
+      "club": "Ipswich",
+      "nation": "Ireland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/283290.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 286349,
+      "name": "A. Mehmeti",
+      "position": "LW/CAM",
+      "club": "Ipswich",
+      "nation": "Albania",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286349.png",
+      "kitNumber": 33
     },
     {
       "apiId": 342654,
@@ -211,65 +266,10 @@
       "position": "ST",
       "club": "Ipswich",
       "nation": "Brazil",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/321648.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 8794,
-      "name": "G. Hirst",
-      "position": "ST",
-      "club": "Ipswich",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/8794.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 33224,
-      "name": "D. Maeda",
-      "position": "ST",
-      "club": "Ipswich",
-      "nation": "Japan",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/33224.png",
-      "kitNumber": 38
-    },
-    {
-      "apiId": 283290,
-      "name": "K. McAteer",
-      "position": "ST",
-      "club": "Ipswich",
-      "nation": "Ireland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/283290.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 286349,
-      "name": "A. Mehmeti",
-      "position": "ST",
-      "club": "Ipswich",
-      "nation": "Albania",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286349.png",
-      "kitNumber": 33
-    },
-    {
-      "apiId": 138931,
-      "name": "J. Philogene",
-      "position": "ST",
-      "club": "Ipswich",
-      "nation": "England",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/138931.png",
-      "kitNumber": 11
+      "kitNumber": 22
     }
   ]
 }

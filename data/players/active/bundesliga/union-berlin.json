@@ -8,15 +8,15 @@
   },
   "players": [
     {
-      "apiId": 668541,
-      "name": "F. Gagzow",
+      "apiId": 1798,
+      "name": "F. Rønnow",
       "position": "GK",
       "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
+      "nation": "Denmark",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/668541.png",
-      "kitNumber": null
+      "imageUrl": "https://media.api-sports.io/football/players/1798.png",
+      "kitNumber": 1
     },
     {
       "apiId": 127471,
@@ -41,26 +41,81 @@
       "kitNumber": 31
     },
     {
-      "apiId": 1798,
-      "name": "F. Rønnow",
+      "apiId": 668541,
+      "name": "F. Gagzow",
       "position": "GK",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1798.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/668541.png",
+      "kitNumber": 12
     },
     {
-      "apiId": 585741,
-      "name": "S. Barry",
-      "position": "CB",
+      "apiId": 14330,
+      "name": "J. Juranović",
+      "position": "RB/RWB",
+      "club": "Union Berlin",
+      "nation": "Croatia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/14330.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 324957,
+      "name": "T. Rothe",
+      "position": "LB/LWB",
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/585741.png",
-      "kitNumber": null
+      "imageUrl": "https://media.api-sports.io/football/players/324957.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 128853,
+      "name": "D. Köhn",
+      "position": "LB/LWB",
+      "club": "Union Berlin",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/128853.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 288206,
+      "name": "L. Querfeld",
+      "position": "CB",
+      "club": "Union Berlin",
+      "nation": "Austria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/288206.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 24848,
+      "name": "C. Trimmel",
+      "position": "RB/RWB",
+      "club": "Union Berlin",
+      "nation": "Austria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24848.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 270,
+      "name": "S. Nsoki",
+      "position": "CB/LB",
+      "club": "Union Berlin",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/270.png",
+      "kitNumber": 34
     },
     {
       "apiId": 24839,
@@ -74,26 +129,26 @@
       "kitNumber": 5
     },
     {
-      "apiId": 14330,
-      "name": "J. Juranović",
+      "apiId": 303679,
+      "name": "Z. Van Den Bosch",
       "position": "CB",
       "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
+      "nation": "Belgium",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/14330.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/303679.png",
+      "kitNumber": 33
     },
     {
-      "apiId": 128853,
-      "name": "D. Köhn",
+      "apiId": 585741,
+      "name": "S. Barry",
       "position": "CB",
       "club": "Union Berlin",
-      "nation": "Germany",
+      "nation": "Guinea",
       "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/128853.png",
-      "kitNumber": 39
+      "imageUrl": "https://media.api-sports.io/football/players/585741.png",
+      "kitNumber": 2
     },
     {
       "apiId": 413294,
@@ -101,65 +156,76 @@
       "position": "CB",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413294.png",
       "kitNumber": 3
     },
     {
-      "apiId": 270,
-      "name": "S. Nsoki",
-      "position": "CB",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/270.png",
-      "kitNumber": 34
-    },
-    {
       "apiId": 412847,
-      "name": "Oluwaseun God Power Osaro Ogbemudia",
+      "name": "God Power Ogbemudia",
       "position": "CB",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412847.png",
       "kitNumber": 5
     },
     {
-      "apiId": 288206,
-      "name": "L. Querfeld",
-      "position": "CB",
+      "apiId": 512,
+      "name": "Jeong Woo-Yeong",
+      "position": "CAM/RW/LW",
+      "club": "Union Berlin",
+      "nation": "South Korea",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/512.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 30785,
+      "name": "A. Schäfer",
+      "position": "CM/CAM",
+      "club": "Union Berlin",
+      "nation": "Hungary",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30785.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 26249,
+      "name": "J. Haberer",
+      "position": "CM/RM",
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/288206.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/26249.png",
+      "kitNumber": 19
     },
     {
-      "apiId": 324957,
-      "name": "T. Rothe",
-      "position": "CB",
+      "apiId": 1298,
+      "name": "R. Skov",
+      "position": "LWB/RWB/RW",
       "club": "Union Berlin",
-      "nation": "Germany",
+      "nation": "Denmark",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/324957.png",
-      "kitNumber": 15
+      "imageUrl": "https://media.api-sports.io/football/players/1298.png",
+      "kitNumber": 24
     },
     {
-      "apiId": 24848,
-      "name": "C. Trimmel",
-      "position": "CB",
+      "apiId": 327831,
+      "name": "A. Kemlein",
+      "position": "CM/CDM",
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/24848.png",
-      "kitNumber": 28
+      "imageUrl": "https://media.api-sports.io/football/players/327831.png",
+      "kitNumber": 6
     },
     {
       "apiId": 585682,
@@ -167,7 +233,7 @@
       "position": "CM",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585682.png",
       "kitNumber": 6
@@ -177,33 +243,11 @@
       "name": "M. Etobe",
       "position": "CM",
       "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
+      "nation": "Cameroon",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668543.png",
       "kitNumber": 6
-    },
-    {
-      "apiId": 26249,
-      "name": "J. Haberer",
-      "position": "CM",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26249.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 512,
-      "name": "Jeong Woo-Yeong",
-      "position": "CM",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/512.png",
-      "kitNumber": 11
     },
     {
       "apiId": 668544,
@@ -211,54 +255,21 @@
       "position": "CM",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668544.png",
       "kitNumber": 19
-    },
-    {
-      "apiId": 327831,
-      "name": "A. Kemlein",
-      "position": "CM",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327831.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 30785,
-      "name": "A. Schäfer",
-      "position": "CM",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30785.png",
-      "kitNumber": 13
-    },
-    {
-      "apiId": 303679,
-      "name": "Z. Van Den Bosch",
-      "position": "CM",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/303679.png",
-      "kitNumber": 33
     },
     {
       "apiId": 619702,
       "name": "L. Vulin",
       "position": "CM",
       "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
+      "nation": "Croatia",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/619702.png",
-      "kitNumber": null
+      "kitNumber": 26
     },
     {
       "apiId": 668546,
@@ -266,18 +277,73 @@
       "position": "CM",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668546.png",
-      "kitNumber": null
+      "kitNumber": 27
     },
     {
-      "apiId": 380873,
-      "name": "Ilyas  Ansah",
-      "position": "ST",
+      "apiId": 24910,
+      "name": "T. Skarke",
+      "position": "RW/LW/ST",
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24910.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 45892,
+      "name": "A. Ilić",
+      "position": "ST",
+      "club": "Union Berlin",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/45892.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 292218,
+      "name": "M. Ljubičić",
+      "position": "ST",
+      "club": "Union Berlin",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/292218.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 1124,
+      "name": "O. Burke",
+      "position": "RM/RW/ST",
+      "club": "Union Berlin",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1124.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 430354,
+      "name": "Livan Burcu",
+      "position": "LW/RW",
+      "club": "Union Berlin",
+      "nation": "Turkey",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/430354.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 380873,
+      "name": "Ilyas Ansah",
+      "position": "ST/LW",
+      "club": "Union Berlin",
+      "nation": "Germany",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380873.png",
       "kitNumber": 10
@@ -287,33 +353,11 @@
       "name": "Dmytro Bohdanov",
       "position": "ST",
       "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "SILVER",
+      "nation": "Ukraine",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/440136.png",
       "kitNumber": 30
-    },
-    {
-      "apiId": 430354,
-      "name": "Livan Burcu",
-      "position": "ST",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/430354.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 1124,
-      "name": "O. Burke",
-      "position": "ST",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1124.png",
-      "kitNumber": 7
     },
     {
       "apiId": 621185,
@@ -321,10 +365,10 @@
       "position": "ST",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/621185.png",
-      "kitNumber": null
+      "kitNumber": 32
     },
     {
       "apiId": 592161,
@@ -332,7 +376,7 @@
       "position": "ST",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/592161.png",
       "kitNumber": 22
@@ -349,59 +393,15 @@
       "kitNumber": 49
     },
     {
-      "apiId": 45892,
-      "name": "A. Ilić",
-      "position": "ST",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/45892.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 292218,
-      "name": "M. LjubiÄiÄ",
-      "position": "ST",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/292218.png",
-      "kitNumber": 20
-    },
-    {
       "apiId": 668547,
       "name": "L. Pepinski",
       "position": "ST",
       "club": "Union Berlin",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668547.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 24910,
-      "name": "T. Skarke",
-      "position": "ST",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/24910.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 1298,
-      "name": "R. Skov",
-      "position": "ST",
-      "club": "Union Berlin",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1298.png",
-      "kitNumber": 24
+      "kitNumber": 35
     }
   ]
 }

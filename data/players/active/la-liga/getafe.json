@@ -8,6 +8,28 @@
   },
   "players": [
     {
+      "apiId": 47247,
+      "name": "David Soria",
+      "position": "GK",
+      "club": "Getafe",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47247.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 66491,
+      "name": "J. Letáček",
+      "position": "GK",
+      "club": "Getafe",
+      "nation": "Czech Republic",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/66491.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 432080,
       "name": "Jorge Benito",
       "position": "GK",
@@ -30,26 +52,15 @@
       "kitNumber": 42
     },
     {
-      "apiId": 66491,
-      "name": "J. Letáček",
-      "position": "GK",
+      "apiId": 47250,
+      "name": "D. Dakonam",
+      "position": "CB/RB",
       "club": "Getafe",
-      "nation": "Czech Republic",
-      "tier": "SILVER",
+      "nation": "Togo",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/66491.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 47247,
-      "name": "David Soria",
-      "position": "GK",
-      "club": "Getafe",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47247.png",
-      "kitNumber": 13
+      "imageUrl": "https://media.api-sports.io/football/players/47250.png",
+      "kitNumber": 2
     },
     {
       "apiId": 46813,
@@ -63,6 +74,39 @@
       "kitNumber": 3
     },
     {
+      "apiId": 18794,
+      "name": "Kiko Femenía",
+      "position": "RB",
+      "club": "Getafe",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18794.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 316516,
+      "name": "S. Boselli",
+      "position": "CB/RB",
+      "club": "Getafe",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/316516.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 471478,
+      "name": "Davinchi",
+      "position": "LB/CB",
+      "club": "Getafe",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/471478.png",
+      "kitNumber": 26
+    },
+    {
       "apiId": 439617,
       "name": "Z. Tassounte",
       "position": "CB",
@@ -72,39 +116,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/439617.png",
       "kitNumber": 31
-    },
-    {
-      "apiId": 316516,
-      "name": "S. Boselli",
-      "position": "CB",
-      "club": "Getafe",
-      "nation": "Uruguay",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/316516.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 471478,
-      "name": "Davinchi",
-      "position": "CB",
-      "club": "Getafe",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/471478.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 47250,
-      "name": "D. Dakonam",
-      "position": "CB",
-      "club": "Getafe",
-      "nation": "Togo",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47250.png",
-      "kitNumber": 2
     },
     {
       "apiId": 388013,
@@ -118,15 +129,15 @@
       "kitNumber": 16
     },
     {
-      "apiId": 18794,
-      "name": "Kiko Femenía",
-      "position": "CB",
+      "apiId": 180927,
+      "name": "Z. Romero",
+      "position": "LB",
       "club": "Getafe",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18794.png",
-      "kitNumber": 17
+      "imageUrl": "https://media.api-sports.io/football/players/180927.png",
+      "kitNumber": 24
     },
     {
       "apiId": 625636,
@@ -151,17 +162,6 @@
       "kitNumber": 30
     },
     {
-      "apiId": 180927,
-      "name": "Z. Romero",
-      "position": "CB",
-      "club": "Getafe",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/180927.png",
-      "kitNumber": 24
-    },
-    {
       "apiId": 484474,
       "name": "J. Valou",
       "position": "CB",
@@ -173,42 +173,9 @@
       "kitNumber": 23
     },
     {
-      "apiId": 551460,
-      "name": "A. R. Alcantara",
-      "position": "CM",
-      "club": "Getafe",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/551460.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 46860,
-      "name": "Javi Muñoz",
-      "position": "CM",
-      "club": "Getafe",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46860.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 669800,
-      "name": "Mady Macalou",
-      "position": "CM",
-      "club": "Getafe",
-      "nation": "Mali",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/669800.png",
-      "kitNumber": 30
-    },
-    {
       "apiId": 343205,
       "name": "Mario Martín",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Getafe",
       "nation": "Spain",
       "tier": "GOLD",
@@ -217,15 +184,15 @@
       "kitNumber": 6
     },
     {
-      "apiId": 631889,
-      "name": "Adrián Riquelme",
-      "position": "CM",
+      "apiId": 46860,
+      "name": "Javi Muñoz",
+      "position": "CM/CAM",
       "club": "Getafe",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/631889.png",
-      "kitNumber": 44
+      "imageUrl": "https://media.api-sports.io/football/players/46860.png",
+      "kitNumber": 14
     },
     {
       "apiId": 187987,
@@ -236,29 +203,40 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/187987.png",
-      "kitNumber": 14
+      "kitNumber": 11
     },
     {
-      "apiId": 184459,
-      "name": "Álex Sancris",
-      "position": "ST",
+      "apiId": 551460,
+      "name": "A. R. Alcantara",
+      "position": "CM",
       "club": "Getafe",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/184459.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/551460.png",
+      "kitNumber": 32
     },
     {
-      "apiId": 47320,
-      "name": "Juanmi",
-      "position": "ST",
+      "apiId": 669800,
+      "name": "Mady Macalou",
+      "position": "CM",
+      "club": "Getafe",
+      "nation": "Mali",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/669800.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 631889,
+      "name": "Adrián Riquelme",
+      "position": "CM",
       "club": "Getafe",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47320.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/631889.png",
+      "kitNumber": 44
     },
     {
       "apiId": 47472,
@@ -272,6 +250,17 @@
       "kitNumber": 9
     },
     {
+      "apiId": 47320,
+      "name": "Juanmi",
+      "position": "ST/LW",
+      "club": "Getafe",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47320.png",
+      "kitNumber": 7
+    },
+    {
       "apiId": 195512,
       "name": "M. Satriano",
       "position": "ST",
@@ -281,6 +270,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195512.png",
       "kitNumber": 10
+    },
+    {
+      "apiId": 184459,
+      "name": "Álex Sancris",
+      "position": "RW/RM",
+      "club": "Getafe",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/184459.png",
+      "kitNumber": 18
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { mutation } from "../_generated/server";
-import { Id } from "../_generated/dataModel";
+import { Id, DataModel, Doc } from "../_generated/dataModel";
 import { v } from "convex/values";
 import { GenericMutationCtx } from "convex/server";
 import { generateDraftRounds, PlayerPoolMode } from "../auctions/draftEngine";
@@ -12,12 +12,12 @@ function generateRoomCode(): string {
   return Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
 }
 
-async function generateUniqueRoomCode(ctx: GenericMutationCtx<any>): Promise<string> {
+async function generateUniqueRoomCode(ctx: GenericMutationCtx<DataModel>): Promise<string> {
   for (let attempt = 0; attempt < 8; attempt++) {
     const code = generateRoomCode();
     const existing = await ctx.db
       .query("rooms")
-      .withIndex("by_code", (q: any) => q.eq("code", code))
+      .withIndex("by_code", (q) => q.eq("code", code))
       .first();
     if (!existing) return code;
   }
@@ -28,10 +28,6 @@ function randomPerk(): "SCOUT" | "SPY" {
   return Math.random() < 0.5 ? "SCOUT" : "SPY";
 }
 
-function complementPerk(perk: "SCOUT" | "SPY"): "SCOUT" | "SPY" {
-  return perk === "SCOUT" ? "SPY" : "SCOUT";
-}
-
 interface CreateRoomArgs {
   hostId: Id<"guestUsers">;
   matchSize: MatchSize;
@@ -40,7 +36,7 @@ interface CreateRoomArgs {
   poolMode: PlayerPoolMode;
 }
 
-async function createWaitingRoom(ctx: GenericMutationCtx<any>, args: CreateRoomArgs) {
+async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: CreateRoomArgs) {
   const formation = getRandomFormation(args.matchSize);
   const rounds = await generateDraftRounds(ctx, formation, args.matchSize, args.poolMode);
   const hostPerk = randomPerk();
@@ -93,10 +89,10 @@ async function createWaitingRoom(ctx: GenericMutationCtx<any>, args: CreateRoomA
 // ── Join Logic (shared between join + findOrCreate) ────────
 
 async function joinAuction(
-  ctx: GenericMutationCtx<any>,
+  ctx: GenericMutationCtx<DataModel>,
   roomId: Id<"rooms">,
   guestId: Id<"guestUsers">,
-  auction: any
+  auction: Doc<"auctions">
 ) {
   const room = await ctx.db.get(roomId);
   if (!room || room.guestId || room.status !== "waiting") {

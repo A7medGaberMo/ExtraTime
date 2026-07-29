@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 22157,
-      "name": "W. Benítez",
-      "position": "GK",
-      "club": "Crystal Palace",
-      "nation": "Argentina",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22157.png",
-      "kitNumber": 44
-    },
-    {
       "apiId": 19088,
       "name": "D. Henderson",
       "position": "GK",
@@ -28,6 +17,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19088.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 22157,
+      "name": "W. Benítez",
+      "position": "GK",
+      "club": "Crystal Palace",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22157.png",
+      "kitNumber": 44
     },
     {
       "apiId": 19684,
@@ -46,18 +46,106 @@
       "position": "GK",
       "club": "Crystal Palace",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284549.png",
-      "kitNumber": 1
+      "kitNumber": 41
+    },
+    {
+      "apiId": 13736,
+      "name": "D. Muñoz",
+      "position": "RB/RM",
+      "club": "Crystal Palace",
+      "nation": "Colombia",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/13736.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 20995,
+      "name": "M. Lacroix",
+      "position": "CB",
+      "club": "Crystal Palace",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20995.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 162712,
+      "name": "Óscar Mingueza",
+      "position": "RB/CB",
+      "club": "Crystal Palace",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162712.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 182201,
+      "name": "T. Mitchell",
+      "position": "LB",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182201.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 126949,
+      "name": "C. Richards",
+      "position": "CB/CDM",
+      "club": "Crystal Palace",
+      "nation": "USA",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/126949.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 278898,
+      "name": "C. Riad",
+      "position": "CB",
+      "club": "Crystal Palace",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278898.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 26303,
+      "name": "B. Sosa",
+      "position": "LB",
+      "club": "Crystal Palace",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26303.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 18862,
+      "name": "N. Clyne",
+      "position": "RB/CB",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18862.png",
+      "kitNumber": 17
     },
     {
       "apiId": 284493,
       "name": "T. Adaramola",
-      "position": "CB",
+      "position": "LB",
       "club": "Crystal Palace",
       "nation": "Republic of Ireland",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284493.png",
       "kitNumber": 45
@@ -71,7 +159,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557414.png",
-      "kitNumber": 3
+      "kitNumber": 33
     },
     {
       "apiId": 412759,
@@ -79,7 +167,7 @@
       "position": "CB",
       "club": "Crystal Palace",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412759.png",
       "kitNumber": 23
@@ -94,17 +182,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380703.png",
       "kitNumber": 59
-    },
-    {
-      "apiId": 18862,
-      "name": "N. Clyne",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18862.png",
-      "kitNumber": 17
     },
     {
       "apiId": 196856,
@@ -137,194 +214,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557584.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 20995,
-      "name": "M. Lacroix",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20995.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 162712,
-      "name": "Óscar Mingueza",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162712.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 182201,
-      "name": "T. Mitchell",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182201.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 13736,
-      "name": "D. Muñoz",
-      "position": "RB/RM",
-      "club": "Crystal Palace",
-      "nation": "Colombia",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/13736.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 278898,
-      "name": "C. Riad",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/278898.png",
-      "kitNumber": 34
-    },
-    {
-      "apiId": 126949,
-      "name": "C. Richards",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "USA",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/126949.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 26303,
-      "name": "B. Sosa",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "Croatia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26303.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 286458,
-      "name": "J. Devenny",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "Scotland",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286458.png",
-      "kitNumber": 55
-    },
-    {
-      "apiId": 3339,
-      "name": "C. Doucouré",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "Mali",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/3339.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 557413,
-      "name": "J. Drakes-Thomas",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/557413.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 402640,
-      "name": "R. Esse",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/402640.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 18806,
-      "name": "W. Hughes",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18806.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 2601,
-      "name": "D. Kamada",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "Japan",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2601.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 2490,
-      "name": "J. Lerma",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2490.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 311157,
-      "name": "Matheus França",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/311157.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 304320,
-      "name": "D. Ozoh",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/304320.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 284449,
-      "name": "J. Rak-Sakyi",
-      "position": "CM",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284449.png",
-      "kitNumber": 21
+      "kitNumber": 48
     },
     {
       "apiId": 288102,
@@ -338,15 +228,169 @@
       "kitNumber": 20
     },
     {
+      "apiId": 3339,
+      "name": "C. Doucouré",
+      "position": "CDM/CM",
+      "club": "Crystal Palace",
+      "nation": "Mali",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/3339.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 2601,
+      "name": "D. Kamada",
+      "position": "CAM/CM",
+      "club": "Crystal Palace",
+      "nation": "Japan",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2601.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 2490,
+      "name": "J. Lerma",
+      "position": "CDM/CM",
+      "club": "Crystal Palace",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2490.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 18806,
+      "name": "W. Hughes",
+      "position": "CM/CDM",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18806.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 311157,
+      "name": "Matheus França",
+      "position": "CAM/RW",
+      "club": "Crystal Palace",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/311157.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 284449,
+      "name": "J. Rak-Sakyi",
+      "position": "RW/RM",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284449.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 402640,
+      "name": "R. Esse",
+      "position": "CAM/CM",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/402640.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 304320,
+      "name": "D. Ozoh",
+      "position": "CDM",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304320.png",
+      "kitNumber": 58
+    },
+    {
+      "apiId": 286458,
+      "name": "J. Devenny",
+      "position": "CM",
+      "club": "Crystal Palace",
+      "nation": "Scotland",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286458.png",
+      "kitNumber": 55
+    },
+    {
+      "apiId": 557413,
+      "name": "J. Drakes-Thomas",
+      "position": "CM",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/557413.png",
+      "kitNumber": 50
+    },
+    {
+      "apiId": 25927,
+      "name": "J. Mateta",
+      "position": "ST",
+      "club": "Crystal Palace",
+      "nation": "France",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25927.png",
+      "kitNumber": 14
+    },
+    {
       "apiId": 129711,
       "name": "B. Johnson",
       "position": "RW/ST",
       "club": "Crystal Palace",
       "nation": "Wales",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129711.png",
-      "kitNumber": 11
+      "kitNumber": 15
+    },
+    {
+      "apiId": 184226,
+      "name": "Yeremy Pino",
+      "position": "LW/RW",
+      "club": "Crystal Palace",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/184226.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 2218,
+      "name": "I. Sarr",
+      "position": "RW/ST",
+      "club": "Crystal Palace",
+      "nation": "Senegal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2218.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 1468,
+      "name": "E. Nketiah",
+      "position": "ST",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1468.png",
+      "kitNumber": 9
     },
     {
       "apiId": 2032,
@@ -368,51 +412,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557416.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 25927,
-      "name": "J. Mateta",
-      "position": "ST",
-      "club": "Crystal Palace",
-      "nation": "France",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25927.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 1468,
-      "name": "E. Nketiah",
-      "position": "ST",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1468.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 184226,
-      "name": "Yeremy Pino",
-      "position": "ST",
-      "club": "Crystal Palace",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/184226.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 2218,
-      "name": "I. Sarr",
-      "position": "ST",
-      "club": "Crystal Palace",
-      "nation": "Senegal",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2218.png",
-      "kitNumber": 7
+      "kitNumber": 52
     }
   ]
 }

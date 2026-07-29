@@ -38,6 +38,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
       title={clubName}
     >
       {logoSrc && !error ? (
+        /* eslint-disable-next-line @next/next/no-img-element */
         <img
           src={logoSrc}
           alt={clubName}
@@ -130,6 +131,7 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
       title={nationName}
     >
       {!error ? (
+        /* eslint-disable-next-line @next/next/no-img-element */
         <img
           src={logoSrc}
           alt={nationName}

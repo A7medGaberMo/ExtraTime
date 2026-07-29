@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 19340,
-      "name": "E. Balcombe",
-      "position": "GK",
-      "club": "Brentford",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19340.png",
-      "kitNumber": 31
-    },
-    {
       "apiId": 281,
       "name": "C. Kelleher",
       "position": "GK",
@@ -41,15 +30,15 @@
       "kitNumber": 12
     },
     {
-      "apiId": 1119,
-      "name": "K. Ajer",
-      "position": "CB/RB",
+      "apiId": 19340,
+      "name": "E. Balcombe",
+      "position": "GK",
       "club": "Brentford",
-      "nation": "Norway",
-      "tier": "GOLD",
+      "nation": "England",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1119.png",
-      "kitNumber": 20
+      "imageUrl": "https://media.api-sports.io/football/players/19340.png",
+      "kitNumber": 31
     },
     {
       "apiId": 19495,
@@ -63,48 +52,70 @@
       "kitNumber": 22
     },
     {
-      "apiId": 19346,
-      "name": "R. Henry",
-      "position": "CB",
-      "club": "Brentford",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19346.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 44871,
-      "name": "A. Hickey",
-      "position": "CB",
-      "club": "Brentford",
-      "nation": "Scotland",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44871.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 342022,
-      "name": "M. Kayode",
-      "position": "CB",
-      "club": "Brentford",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/342022.png",
-      "kitNumber": 33
-    },
-    {
       "apiId": 19789,
       "name": "E. Pinnock",
       "position": "CB",
       "club": "Brentford",
       "nation": "Jamaica",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19789.png",
       "kitNumber": 5
+    },
+    {
+      "apiId": 1119,
+      "name": "K. Ajer",
+      "position": "CB/RB",
+      "club": "Brentford",
+      "nation": "Norway",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1119.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 44871,
+      "name": "A. Hickey",
+      "position": "RB/LB",
+      "club": "Brentford",
+      "nation": "Scotland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44871.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 19346,
+      "name": "R. Henry",
+      "position": "LB",
+      "club": "Brentford",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19346.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 36922,
+      "name": "S. van den Berg",
+      "position": "CB",
+      "club": "Brentford",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/36922.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 342022,
+      "name": "M. Kayode",
+      "position": "RB",
+      "club": "Brentford",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342022.png",
+      "kitNumber": 33
     },
     {
       "apiId": 577002,
@@ -118,31 +129,9 @@
       "kitNumber": 50
     },
     {
-      "apiId": 36922,
-      "name": "S. van den Berg",
-      "position": "CB",
-      "club": "Brentford",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/36922.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 513316,
-      "name": "Luka Bentt",
-      "position": "CM",
-      "club": "Brentford",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/513316.png",
-      "kitNumber": 48
-    },
-    {
       "apiId": 15908,
       "name": "M. Damsgaard",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Brentford",
       "nation": "Denmark",
       "tier": "ELITE",
@@ -151,34 +140,12 @@
       "kitNumber": 24
     },
     {
-      "apiId": 19362,
-      "name": "J. Dasilva",
-      "position": "CM",
-      "club": "Brentford",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19362.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 292,
-      "name": "J. Henderson",
-      "position": "CM",
-      "club": "Brentford",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/292.png",
-      "kitNumber": 6
-    },
-    {
       "apiId": 25073,
       "name": "V. Janelt",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Brentford",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25073.png",
       "kitNumber": 27
@@ -189,7 +156,7 @@
       "position": "CM",
       "club": "Brentford",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47438.png",
       "kitNumber": 8
@@ -197,46 +164,13 @@
     {
       "apiId": 106725,
       "name": "K. Lewis-Potter",
-      "position": "CM",
+      "position": "LM/LW",
       "club": "Brentford",
       "nation": "England",
       "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/106725.png",
       "kitNumber": 23
-    },
-    {
-      "apiId": 327726,
-      "name": "R. Owen",
-      "position": "CM",
-      "club": "Brentford",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327726.png",
-      "kitNumber": 52
-    },
-    {
-      "apiId": 178077,
-      "name": "K. Schade",
-      "position": "LW/ST",
-      "club": "Brentford",
-      "nation": "Germany",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/178077.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 441271,
-      "name": "Jannik Schuster",
-      "position": "CM",
-      "club": "Brentford",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/441271.png",
-      "kitNumber": 44
     },
     {
       "apiId": 263538,
@@ -250,12 +184,111 @@
       "kitNumber": 18
     },
     {
-      "apiId": 196855,
-      "name": "J. Anthony",
+      "apiId": 19362,
+      "name": "J. Dasilva",
+      "position": "CM",
+      "club": "Brentford",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19362.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 292,
+      "name": "J. Henderson",
+      "position": "CM/CDM",
+      "club": "Brentford",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/292.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 513316,
+      "name": "Luka Bentt",
+      "position": "CM",
+      "club": "Brentford",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/513316.png",
+      "kitNumber": 48
+    },
+    {
+      "apiId": 327726,
+      "name": "R. Owen",
+      "position": "CM",
+      "club": "Brentford",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327726.png",
+      "kitNumber": 52
+    },
+    {
+      "apiId": 441271,
+      "name": "Jannik Schuster",
+      "position": "CM",
+      "club": "Brentford",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/441271.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 196156,
+      "name": "Thiago",
+      "position": "ST",
+      "club": "Brentford",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/196156.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 178077,
+      "name": "K. Schade",
+      "position": "LW/ST",
+      "club": "Brentford",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178077.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 284797,
+      "name": "D. Ouattara",
+      "position": "RW/ST",
+      "club": "Brentford",
+      "nation": "Burkina Faso",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284797.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 2939,
+      "name": "C. Wilson",
       "position": "ST",
       "club": "Brentford",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2939.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 196855,
+      "name": "J. Anthony",
+      "position": "LW/ST",
+      "club": "Brentford",
+      "nation": "England",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/196855.png",
       "kitNumber": 11
@@ -272,17 +305,6 @@
       "kitNumber": 47
     },
     {
-      "apiId": 284797,
-      "name": "D. Ouattara",
-      "position": "ST",
-      "club": "Brentford",
-      "nation": "Burkina Faso",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284797.png",
-      "kitNumber": 19
-    },
-    {
       "apiId": 624708,
       "name": "O. Shield",
       "position": "ST",
@@ -292,28 +314,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/624708.png",
       "kitNumber": 49
-    },
-    {
-      "apiId": 196156,
-      "name": "Thiago",
-      "position": "ST",
-      "club": "Brentford",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/196156.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 2939,
-      "name": "C. Wilson",
-      "position": "ST",
-      "club": "Brentford",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2939.png",
-      "kitNumber": 9
     }
   ]
 }

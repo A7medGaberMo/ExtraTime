@@ -7,12 +7,7 @@ import { api } from "../../../convex/_generated/api";
 import { PageHeader } from "@/components/shared/page-header";
 import { Loader2, RefreshCw, CheckCircle2, XCircle, Search } from "lucide-react";
 
-/* ── Random football manager name ────────────────────────────────────── */
-const FIRST = ["Coach", "Boss", "Gaffer", "Mister", "Don", "Captain", "Chief", "Maestro", "Legend", "Striker", "El Capitán", "Manager"];
-const LAST = ["Santos", "Müller", "Silva", "Ali", "Rossi", "Park", "König", "Torres", "Diallo", "Kovač", "Zidane", "Pirlo"];
-function randomName() {
-  return `${FIRST[Math.floor(Math.random() * FIRST.length)]} ${LAST[Math.floor(Math.random() * LAST.length)]}`;
-}
+import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
 
 export default function JoinRoomPage() {
   const router = useRouter();

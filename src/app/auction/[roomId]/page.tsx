@@ -70,7 +70,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       setShowReveal(true);
     }
     prevRoundRef.current = currentRoundNum;
-  }, [state?.auction?.currentRound]);
+  }, [state?.auction]);
 
   /* Perk activation handler */
   const handleActivatePerk = useCallback(async () => {
@@ -235,7 +235,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         <BidRevealAnimation
           isOpen={showReveal}
           onClose={() => setShowReveal(false)}
-          lastCompletedRound={state.lastCompletedRound as any}
+          lastCompletedRound={state.lastCompletedRound as unknown as Parameters<typeof BidRevealAnimation>[0]["lastCompletedRound"]}
         />
       )}
 

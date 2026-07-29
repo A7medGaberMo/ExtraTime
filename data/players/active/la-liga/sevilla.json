@@ -8,6 +8,28 @@
   },
   "players": [
     {
+      "apiId": 557,
+      "name": "O. Vlachodimos",
+      "position": "GK",
+      "club": "Sevilla",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/557.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 290686,
+      "name": "Rafael Romero",
+      "position": "GK",
+      "club": "Sevilla",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/290686.png",
+      "kitNumber": 13
+    },
+    {
       "apiId": 308346,
       "name": "Alberto Flores",
       "position": "GK",
@@ -19,26 +41,48 @@
       "kitNumber": 31
     },
     {
-      "apiId": 290686,
-      "name": "Rafael Romero",
-      "position": "GK",
+      "apiId": 182772,
+      "name": "Juanlu Sánchez",
+      "position": "RB/RM",
       "club": "Sevilla",
       "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/290686.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 557,
-      "name": "O. Vlachodimos",
-      "position": "GK",
-      "club": "Sevilla",
-      "nation": "Greece",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/557.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/182772.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 195923,
+      "name": "José Ángel Carmona",
+      "position": "RB/CB",
+      "club": "Sevilla",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195923.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 47329,
+      "name": "Adrià Pedrosa",
+      "position": "LB",
+      "club": "Sevilla",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47329.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 297311,
+      "name": "Kike Salas",
+      "position": "CB/LB",
+      "club": "Sevilla",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/297311.png",
+      "kitNumber": 4
     },
     {
       "apiId": 41208,
@@ -52,15 +96,37 @@
       "kitNumber": 15
     },
     {
-      "apiId": 195923,
-      "name": "José Ángel Carmona",
+      "apiId": 125331,
+      "name": "F. Gattoni",
       "position": "CB",
       "club": "Sevilla",
-      "nation": "Spain",
+      "nation": "Argentina",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195923.png",
-      "kitNumber": 2
+      "imageUrl": "https://media.api-sports.io/football/players/125331.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 11421,
+      "name": "G. Suazo",
+      "position": "LB",
+      "club": "Sevilla",
+      "nation": "Chile",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/11421.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 174927,
+      "name": "A. Sangante",
+      "position": "CB",
+      "club": "Sevilla",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174927.png",
+      "kitNumber": 93
     },
     {
       "apiId": 338902,
@@ -74,15 +140,15 @@
       "kitNumber": 32
     },
     {
-      "apiId": 125331,
-      "name": "F. Gattoni",
-      "position": "CB",
+      "apiId": 341453,
+      "name": "Oso",
+      "position": "LB/CB",
       "club": "Sevilla",
-      "nation": "Argentina",
-      "tier": "GOLD",
+      "nation": "Spain",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/125331.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/341453.png",
+      "kitNumber": 36
     },
     {
       "apiId": 546857,
@@ -90,76 +156,10 @@
       "position": "CB",
       "club": "Sevilla",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546857.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 341453,
-      "name": "Oso",
-      "position": "CB",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/341453.png",
-      "kitNumber": 36
-    },
-    {
-      "apiId": 47329,
-      "name": "Adrià Pedrosa",
-      "position": "CB",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47329.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 297311,
-      "name": "Kike Salas",
-      "position": "CB",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/297311.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 182772,
-      "name": "Juanlu Sánchez",
-      "position": "RB/RM",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182772.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 174927,
-      "name": "A. Sangante",
-      "position": "CB",
-      "club": "Sevilla",
-      "nation": "Senegal",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/174927.png",
-      "kitNumber": 93
-    },
-    {
-      "apiId": 11421,
-      "name": "G. Suazo",
-      "position": "CB",
-      "club": "Sevilla",
-      "nation": "Chile",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/11421.png",
-      "kitNumber": 12
+      "kitNumber": 34
     },
     {
       "apiId": 21004,
@@ -167,21 +167,43 @@
       "position": "CDM/CM",
       "club": "Sevilla",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21004.png",
       "kitNumber": 18
     },
     {
-      "apiId": 443593,
-      "name": "Eduardo Altozano Agudo",
-      "position": "CM",
+      "apiId": 957,
+      "name": "D. Sow",
+      "position": "CM/CDM",
+      "club": "Sevilla",
+      "nation": "Switzerland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/957.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 47389,
+      "name": "Joan Jordán",
+      "position": "CM/CDM",
       "club": "Sevilla",
       "nation": "Spain",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/443593.png",
+      "imageUrl": "https://media.api-sports.io/football/players/47389.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 104821,
+      "name": "Jon Guridi",
+      "position": "CM/CAM",
+      "club": "Sevilla",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/104821.png",
+      "kitNumber": 17
     },
     {
       "apiId": 331607,
@@ -195,70 +217,15 @@
       "kitNumber": 28
     },
     {
-      "apiId": 546882,
-      "name": "N. Guillen",
-      "position": "CM",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/546882.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 104821,
-      "name": "Jon Guridi",
-      "position": "CM",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/104821.png",
-      "kitNumber": 18
-    },
-    {
       "apiId": 119742,
       "name": "Juan Iglesias",
-      "position": "CM",
+      "position": "RM/RB",
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/119742.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 47389,
-      "name": "Joan Jordán",
-      "position": "CM",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47389.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 321658,
-      "name": "P. Mercado",
-      "position": "CM",
-      "club": "Sevilla",
-      "nation": "Argentina",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/321658.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 957,
-      "name": "D. Sow",
-      "position": "CM",
-      "club": "Sevilla",
-      "nation": "Switzerland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/957.png",
-      "kitNumber": 20
+      "kitNumber": 25
     },
     {
       "apiId": 48471,
@@ -272,26 +239,37 @@
       "kitNumber": 11
     },
     {
-      "apiId": 39121,
-      "name": "C. Ejuke",
-      "position": "ST",
-      "club": "Sevilla",
-      "nation": "Nigeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/39121.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 162126,
-      "name": "Peque Fernández",
-      "position": "ST",
+      "apiId": 443593,
+      "name": "Eduardo Altozano Agudo",
+      "position": "CM",
       "club": "Sevilla",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162126.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/443593.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 546882,
+      "name": "N. Guillen",
+      "position": "CM",
+      "club": "Sevilla",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/546882.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 321658,
+      "name": "P. Mercado",
+      "position": "CM",
+      "club": "Sevilla",
+      "nation": "Argentina",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/321658.png",
+      "kitNumber": 37
     },
     {
       "apiId": 185398,
@@ -299,10 +277,32 @@
       "position": "ST",
       "club": "Sevilla",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/185398.png",
       "kitNumber": 7
+    },
+    {
+      "apiId": 39121,
+      "name": "C. Ejuke",
+      "position": "LW/RW",
+      "club": "Sevilla",
+      "nation": "Nigeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39121.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 162126,
+      "name": "Peque Fernández",
+      "position": "ST/CAM",
+      "club": "Sevilla",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162126.png",
+      "kitNumber": 14
     },
     {
       "apiId": 546798,
@@ -310,10 +310,10 @@
       "position": "ST",
       "club": "Sevilla",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546798.png",
-      "kitNumber": 7
+      "kitNumber": 38
     }
   ]
 }

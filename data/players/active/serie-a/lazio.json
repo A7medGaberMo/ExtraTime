@@ -8,37 +8,26 @@
   },
   "players": [
     {
-      "apiId": 63934,
-      "name": "A. Furlanetto",
-      "position": "GK",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/63934.png",
-      "kitNumber": 55
-    },
-    {
-      "apiId": 616196,
-      "name": "Giacomo Giacomone",
-      "position": "GK",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/616196.png",
-      "kitNumber": 99
-    },
-    {
       "apiId": 26644,
       "name": "C. Mandas",
       "position": "GK",
       "club": "Lazio",
       "nation": "Greece",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26644.png",
       "kitNumber": 29
+    },
+    {
+      "apiId": 63934,
+      "name": "A. Furlanetto",
+      "position": "GK",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/63934.png",
+      "kitNumber": 55
     },
     {
       "apiId": 431413,
@@ -52,6 +41,28 @@
       "kitNumber": 40
     },
     {
+      "apiId": 557183,
+      "name": "D. Renzetti",
+      "position": "GK",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/557183.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 616196,
+      "name": "Giacomo Giacomone",
+      "position": "GK",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/616196.png",
+      "kitNumber": 99
+    },
+    {
       "apiId": 616197,
       "name": "Nicolo Pannozzo",
       "position": "GK",
@@ -63,114 +74,15 @@
       "kitNumber": 72
     },
     {
-      "apiId": 557183,
-      "name": "D. Renzetti",
-      "position": "GK",
+      "apiId": 41577,
+      "name": "Nuno Tavares",
+      "position": "LB/LWB",
       "club": "Lazio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/557183.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 544574,
-      "name": "F. Bordon",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/544574.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 37117,
-      "name": "D. Doekhi",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37117.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 342651,
-      "name": "R. Floriani Mussolini",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/342651.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 1775,
-      "name": "S. Gigot",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1775.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 1844,
-      "name": "A. Marušić",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1844.png",
-      "kitNumber": 77
-    },
-    {
-      "apiId": 1841,
-      "name": "Patric",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1841.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 1702,
-      "name": "Pedraza",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1702.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 30554,
-      "name": "L. Pellegrini",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "Italy",
+      "nation": "Portugal",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30554.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 350857,
-      "name": "O. Provstgaard",
-      "position": "CB",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/350857.png",
-      "kitNumber": 25
+      "imageUrl": "https://media.api-sports.io/football/players/41577.png",
+      "kitNumber": 17
     },
     {
       "apiId": 1632,
@@ -184,48 +96,180 @@
       "kitNumber": 13
     },
     {
-      "apiId": 41577,
-      "name": "Nuno Tavares",
-      "position": "CB",
+      "apiId": 1844,
+      "name": "A. Marušić",
+      "position": "RB/LB",
       "club": "Lazio",
-      "nation": "Portugal",
+      "nation": "Montenegro",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41577.png",
-      "kitNumber": 17
+      "imageUrl": "https://media.api-sports.io/football/players/1844.png",
+      "kitNumber": 77
     },
     {
-      "apiId": 333116,
-      "name": "R. Belahyane",
-      "position": "CM",
+      "apiId": 1775,
+      "name": "S. Gigot",
+      "position": "CB",
+      "club": "Lazio",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1775.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 1841,
+      "name": "Patric",
+      "position": "CB/RB",
+      "club": "Lazio",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1841.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 30554,
+      "name": "L. Pellegrini",
+      "position": "LB",
       "club": "Lazio",
       "nation": "Italy",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/333116.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/30554.png",
+      "kitNumber": 3
     },
     {
-      "apiId": 1852,
-      "name": "D. Cataldi",
-      "position": "CM",
+      "apiId": 1702,
+      "name": "Pedraza",
+      "position": "LB/LM",
+      "club": "Lazio",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1702.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 37117,
+      "name": "D. Doekhi",
+      "position": "CB",
+      "club": "Lazio",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37117.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 342651,
+      "name": "R. Floriani Mussolini",
+      "position": "RB/CB",
       "club": "Lazio",
       "nation": "Italy",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1852.png",
-      "kitNumber": 32
+      "imageUrl": "https://media.api-sports.io/football/players/342651.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 350857,
+      "name": "O. Provstgaard",
+      "position": "CB",
+      "club": "Lazio",
+      "nation": "Denmark",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350857.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 544574,
+      "name": "F. Bordon",
+      "position": "CB",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/544574.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 30937,
+      "name": "M. Zaccagni",
+      "position": "LW/LM",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30937.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 30784,
+      "name": "N. Rovella",
+      "position": "CDM/CM",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30784.png",
+      "kitNumber": 6
     },
     {
       "apiId": 144740,
       "name": "F. Dele-Bashiru",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Lazio",
       "nation": "Nigeria",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/144740.png",
       "kitNumber": 7
+    },
+    {
+      "apiId": 30866,
+      "name": "M. Lazzari",
+      "position": "RB/RM",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30866.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 1852,
+      "name": "D. Cataldi",
+      "position": "CM/CDM",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1852.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 38749,
+      "name": "K. Taylor",
+      "position": "CM",
+      "club": "Lazio",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/38749.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 333116,
+      "name": "R. Belahyane",
+      "position": "CM",
+      "club": "Lazio",
+      "nation": "Morocco",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/333116.png",
+      "kitNumber": 21
     },
     {
       "apiId": 483662,
@@ -250,75 +294,9 @@
       "kitNumber": 41
     },
     {
-      "apiId": 30866,
-      "name": "M. Lazzari",
-      "position": "CM",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30866.png",
-      "kitNumber": 29
-    },
-    {
-      "apiId": 30784,
-      "name": "N. Rovella",
-      "position": "CM",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30784.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 38749,
-      "name": "K. Taylor",
-      "position": "CM",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/38749.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 30937,
-      "name": "M. Zaccagni",
-      "position": "CM",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30937.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 180764,
-      "name": "G. Artistico",
-      "position": "ST",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/180764.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 286474,
-      "name": "M. Cancellieri",
-      "position": "ST",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286474.png",
-      "kitNumber": 22
-    },
-    {
       "apiId": 22015,
       "name": "B. Dia",
-      "position": "ST",
+      "position": "ST/CF",
       "club": "Lazio",
       "nation": "Senegal",
       "tier": "ELITE",
@@ -327,20 +305,9 @@
       "kitNumber": 19
     },
     {
-      "apiId": 436193,
-      "name": "S. Fernandes",
-      "position": "ST",
-      "club": "Lazio",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/436193.png",
-      "kitNumber": 77
-    },
-    {
       "apiId": 135519,
       "name": "G. Isaksen",
-      "position": "ST",
+      "position": "RW/RM",
       "club": "Lazio",
       "nation": "Denmark",
       "tier": "GOLD",
@@ -351,7 +318,7 @@
     {
       "apiId": 133729,
       "name": "T. Noslin",
-      "position": "ST",
+      "position": "ST/RW",
       "club": "Lazio",
       "nation": "Netherlands",
       "tier": "GOLD",
@@ -360,26 +327,59 @@
       "kitNumber": 14
     },
     {
-      "apiId": 405241,
-      "name": "A. Przyborek",
-      "position": "ST",
+      "apiId": 286474,
+      "name": "M. Cancellieri",
+      "position": "RW/ST",
       "club": "Lazio",
       "nation": "Italy",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/405241.png",
-      "kitNumber": 28
+      "imageUrl": "https://media.api-sports.io/football/players/286474.png",
+      "kitNumber": 22
     },
     {
       "apiId": 301763,
       "name": "P. Ratkov",
       "position": "ST",
       "club": "Lazio",
-      "nation": "Italy",
+      "nation": "Serbia",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/301763.png",
       "kitNumber": 20
+    },
+    {
+      "apiId": 405241,
+      "name": "A. Przyborek",
+      "position": "RM/RW",
+      "club": "Lazio",
+      "nation": "Poland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/405241.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 180764,
+      "name": "G. Artistico",
+      "position": "ST",
+      "club": "Lazio",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/180764.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 436193,
+      "name": "S. Fernandes",
+      "position": "ST",
+      "club": "Lazio",
+      "nation": "Portugal",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/436193.png",
+      "kitNumber": 77
     },
     {
       "apiId": 436244,

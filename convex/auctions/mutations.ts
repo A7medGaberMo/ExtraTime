@@ -1,13 +1,13 @@
 import { mutation } from "../_generated/server";
-import { Id } from "../_generated/dataModel";
+import { Id, DataModel, Doc } from "../_generated/dataModel";
 import { v } from "convex/values";
 import { GenericMutationCtx } from "convex/server";
 
 // ── Helpers ────────────────────────────────────────────────
-async function getAuction(ctx: GenericMutationCtx<any>, roomId: Id<"rooms">) {
+async function getAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<"rooms">) {
   const auction = await ctx.db
     .query("auctions")
-    .withIndex("by_room", (q: any) => q.eq("roomId", roomId))
+    .withIndex("by_room", (q) => q.eq("roomId", roomId))
     .first();
   if (!auction) throw new Error("Auction not found");
   if (auction.status !== "active") throw new Error("Auction is not active");
@@ -23,9 +23,9 @@ function validateTurnExpiry(expiresAt: number): void {
 }
 
 async function resolveRound(
-  ctx: GenericMutationCtx<any>,
+  ctx: GenericMutationCtx<DataModel>,
   roomId: Id<"rooms">,
-  auction: any,
+  auction: Doc<"auctions">,
   winnerId: Id<"guestUsers"> | undefined,
   price: number
 ) {
@@ -233,7 +233,7 @@ export const usePerk = mutation({
 
     if (me.perk === "SCOUT") {
       // SCOUT: Scouts ahead — reveals opponent's budget + next round's main player
-      const nextMain: any = nextRound ? await ctx.db.get(nextRound.mainPlayerId) : null;
+      const nextMain = nextRound ? await ctx.db.get(nextRound.mainPlayerId) : null;
       return {
         perk: "SCOUT" as const,
         opponentBudget: opponent.budget,
@@ -244,9 +244,9 @@ export const usePerk = mutation({
 
     if (me.perk === "SPY") {
       // SPY: Spies on hidden info — reveals the backup sub player for this round
-      const subPlayer: any = await ctx.db.get(round.subPlayerId);
-      const subClub: any = subPlayer ? await ctx.db.get(subPlayer.clubId) : null;
-      const subNation: any = subPlayer ? await ctx.db.get(subPlayer.nationId) : null;
+      const subPlayer = await ctx.db.get(round.subPlayerId);
+      const subClub = subPlayer ? await ctx.db.get(subPlayer.clubId) : null;
+      const subNation = subPlayer ? await ctx.db.get(subPlayer.nationId) : null;
       return {
         perk: "SPY" as const,
         revealedSub: subPlayer

@@ -1,9 +1,9 @@
 import { query } from "../_generated/server";
 import { v } from "convex/values";
-import { Id } from "../_generated/dataModel";
+import { Id, DataModel } from "../_generated/dataModel";
 import { GenericQueryCtx } from "convex/server";
 
-async function hydratePlayerIds(ctx: GenericQueryCtx<any>, playerIds: Id<"players">[]) {
+async function hydratePlayerIds(ctx: GenericQueryCtx<DataModel>, playerIds: Id<"players">[]) {
   return Promise.all(
     playerIds.map(async (id) => {
       const p = await ctx.db.get(id);

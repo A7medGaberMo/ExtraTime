@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Monaco",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/274296.png",
       "kitNumber": 50
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Monaco",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/440070.png",
       "kitNumber": 40
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Monaco",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/428084.png",
       "kitNumber": 38
@@ -145,7 +145,7 @@
       "position": "CM",
       "club": "Monaco",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/543470.png",
       "kitNumber": 41
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Monaco",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419035.png",
       "kitNumber": 28
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Monaco",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/374361.png",
       "kitNumber": 37
@@ -189,7 +189,7 @@
       "position": "CAM/LM",
       "club": "Monaco",
       "nation": "Russia",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/109.png",
       "kitNumber": 10
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Monaco",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449676.png",
       "kitNumber": 44
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Monaco",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/531402.png",
       "kitNumber": 49
@@ -266,7 +266,7 @@
       "position": "CAM/RW",
       "club": "Monaco",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/274300.png",
       "kitNumber": 11
@@ -277,7 +277,7 @@
       "position": "ST/CF",
       "club": "Monaco",
       "nation": "USA",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138835.png",
       "kitNumber": 9
@@ -299,7 +299,7 @@
       "position": "ST",
       "club": "Monaco",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386276.png",
       "kitNumber": 29
@@ -321,7 +321,7 @@
       "position": "ST",
       "club": "Monaco",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135775.png",
       "kitNumber": 31

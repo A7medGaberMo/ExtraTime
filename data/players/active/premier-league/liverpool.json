@@ -19,17 +19,6 @@
       "kitNumber": 1
     },
     {
-      "apiId": 180316,
-      "name": "H. Davies",
-      "position": "GK",
-      "club": "Liverpool",
-      "nation": "Wales",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/180316.png",
-      "kitNumber": 95
-    },
-    {
       "apiId": 24760,
       "name": "G. Mamardashvili",
       "position": "GK",
@@ -39,6 +28,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24760.png",
       "kitNumber": 25
+    },
+    {
+      "apiId": 18889,
+      "name": "F. Woodman",
+      "position": "GK",
+      "club": "Liverpool",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18889.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 180316,
+      "name": "H. Davies",
+      "position": "GK",
+      "club": "Liverpool",
+      "nation": "Wales",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/180316.png",
+      "kitNumber": 95
     },
     {
       "apiId": 415992,
@@ -52,48 +63,26 @@
       "kitNumber": 13
     },
     {
-      "apiId": 18889,
-      "name": "F. Woodman",
-      "position": "GK",
-      "club": "Liverpool",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18889.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 284366,
-      "name": "L. Chambers",
+      "apiId": 290,
+      "name": "V. van Dijk",
       "position": "CB",
       "club": "Liverpool",
-      "nation": "England",
-      "tier": "SILVER",
+      "nation": "Netherlands",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284366.png",
-      "kitNumber": 44
+      "imageUrl": "https://media.api-sports.io/football/players/290.png",
+      "kitNumber": 4
     },
     {
-      "apiId": 284,
-      "name": "J. Gomez",
-      "position": "CB/RB",
+      "apiId": 152654,
+      "name": "J. Frimpong",
+      "position": "RB/RM",
       "club": "Liverpool",
-      "nation": "England",
-      "tier": "GOLD",
+      "nation": "Netherlands",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 367636,
-      "name": "J. Jacquet",
-      "position": "CB",
-      "club": "Liverpool",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/367636.png",
-      "kitNumber": 97
+      "imageUrl": "https://media.api-sports.io/football/players/152654.png",
+      "kitNumber": 30
     },
     {
       "apiId": 206254,
@@ -107,6 +96,61 @@
       "kitNumber": 6
     },
     {
+      "apiId": 284,
+      "name": "J. Gomez",
+      "position": "CB/RB",
+      "club": "Liverpool",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 1600,
+      "name": "K. Tsimikas",
+      "position": "LB",
+      "club": "Liverpool",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1600.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 135525,
+      "name": "C. Ramsay",
+      "position": "RB",
+      "club": "Liverpool",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/135525.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 284366,
+      "name": "L. Chambers",
+      "position": "LB/CB",
+      "club": "Liverpool",
+      "nation": "England",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284366.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 367636,
+      "name": "J. Jacquet",
+      "position": "CB",
+      "club": "Liverpool",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/367636.png",
+      "kitNumber": 97
+    },
+    {
       "apiId": 606814,
       "name": "T. Ndiaye",
       "position": "CB",
@@ -118,20 +162,9 @@
       "kitNumber": 75
     },
     {
-      "apiId": 135525,
-      "name": "C. Ramsay",
-      "position": "CB",
-      "club": "Liverpool",
-      "nation": "Scotland",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/135525.png",
-      "kitNumber": 47
-    },
-    {
       "apiId": 310186,
       "name": "C. Scanlon",
-      "position": "CB",
+      "position": "LB",
       "club": "Liverpool",
       "nation": "England",
       "tier": "BRONZE",
@@ -140,31 +173,64 @@
       "kitNumber": 48
     },
     {
-      "apiId": 1600,
-      "name": "K. Tsimikas",
-      "position": "CB",
+      "apiId": 6716,
+      "name": "A. Mac Allister",
+      "position": "CM/CDM",
       "club": "Liverpool",
-      "nation": "Greece",
-      "tier": "GOLD",
+      "nation": "Argentina",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1600.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/6716.png",
+      "kitNumber": 10
     },
     {
-      "apiId": 290,
-      "name": "V. van Dijk",
-      "position": "CB",
+      "apiId": 203224,
+      "name": "F. Wirtz",
+      "position": "CAM/CM",
+      "club": "Liverpool",
+      "nation": "Germany",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203224.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 542,
+      "name": "R. Gravenberch",
+      "position": "CDM/CM",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "MASTER",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/290.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/542.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 1096,
+      "name": "D. Szoboszlai",
+      "position": "CAM/CM",
+      "club": "Liverpool",
+      "nation": "Hungary",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1096.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 293,
+      "name": "C. Jones",
+      "position": "CM",
+      "club": "Liverpool",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/293.png",
+      "kitNumber": 17
     },
     {
       "apiId": 19035,
       "name": "H. Elliott",
-      "position": "CM",
+      "position": "CAM/RW",
       "club": "Liverpool",
       "nation": "England",
       "tier": "ELITE",
@@ -184,48 +250,15 @@
       "kitNumber": 3
     },
     {
-      "apiId": 152654,
-      "name": "J. Frimpong",
-      "position": "CM",
-      "club": "Liverpool",
-      "nation": "Netherlands",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/152654.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 542,
-      "name": "R. Gravenberch",
-      "position": "CDM/CM",
-      "club": "Liverpool",
-      "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/542.png",
-      "kitNumber": 38
-    },
-    {
-      "apiId": 293,
-      "name": "C. Jones",
+      "apiId": 397997,
+      "name": "T. Nyoni",
       "position": "CM",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/293.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 6716,
-      "name": "A. Mac Allister",
-      "position": "CM/CDM",
-      "club": "Liverpool",
-      "nation": "Argentina",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6716.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/397997.png",
+      "kitNumber": 42
     },
     {
       "apiId": 287109,
@@ -233,7 +266,7 @@
       "position": "CM",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/287109.png",
       "kitNumber": 53
@@ -244,65 +277,21 @@
       "position": "CM",
       "club": "Liverpool",
       "nation": "Scotland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/389032.png",
       "kitNumber": 68
     },
     {
-      "apiId": 397997,
-      "name": "T. Nyoni",
-      "position": "CM",
+      "apiId": 2864,
+      "name": "A. Isak",
+      "position": "ST/LW",
       "club": "Liverpool",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/397997.png",
-      "kitNumber": 42
-    },
-    {
-      "apiId": 1096,
-      "name": "D. Szoboszlai",
-      "position": "CAM/CM",
-      "club": "Liverpool",
-      "nation": "Hungary",
+      "nation": "Sweden",
       "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1096.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 203224,
-      "name": "F. Wirtz",
-      "position": "CM",
-      "club": "Liverpool",
-      "nation": "Germany",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/203224.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 588501,
-      "name": "Joshua Abe",
-      "position": "ST",
-      "club": "Liverpool",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/588501.png",
-      "kitNumber": 40
-    },
-    {
-      "apiId": 30410,
-      "name": "F. Chiesa",
-      "position": "ST",
-      "club": "Liverpool",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30410.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/2864.png",
+      "kitNumber": 9
     },
     {
       "apiId": 174565,
@@ -327,26 +316,48 @@
       "kitNumber": 18
     },
     {
-      "apiId": 2864,
-      "name": "A. Isak",
-      "position": "ST/LW",
+      "apiId": 30410,
+      "name": "F. Chiesa",
+      "position": "RW/ST",
       "club": "Liverpool",
-      "nation": "Sweden",
-      "tier": "MASTER",
+      "nation": "Italy",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2864.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/30410.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 452685,
+      "name": "R. Ngumoha",
+      "position": "LW/RW",
+      "club": "Liverpool",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/452685.png",
+      "kitNumber": 73
     },
     {
       "apiId": 328107,
       "name": "L. Koumas",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Liverpool",
       "nation": "Wales",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328107.png",
       "kitNumber": 67
+    },
+    {
+      "apiId": 588501,
+      "name": "Joshua Abe",
+      "position": "ST",
+      "club": "Liverpool",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/588501.png",
+      "kitNumber": 40
     },
     {
       "apiId": 338751,
@@ -354,21 +365,10 @@
       "position": "ST",
       "club": "Liverpool",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/338751.png",
       "kitNumber": 21
-    },
-    {
-      "apiId": 452685,
-      "name": "R. Ngumoha",
-      "position": "ST",
-      "club": "Liverpool",
-      "nation": "England",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/452685.png",
-      "kitNumber": 73
     },
     {
       "apiId": 498377,

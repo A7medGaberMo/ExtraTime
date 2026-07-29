@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 18932,
-      "name": "F. Forster",
-      "position": "GK",
-      "club": "Bournemouth",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18932.png",
-      "kitNumber": 17
-    },
-    {
       "apiId": 118307,
       "name": "Đ. Petrović",
       "position": "GK",
@@ -30,15 +19,48 @@
       "kitNumber": 1
     },
     {
+      "apiId": 18932,
+      "name": "F. Forster",
+      "position": "GK",
+      "club": "Bournemouth",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18932.png",
+      "kitNumber": 17
+    },
+    {
       "apiId": 22136,
       "name": "B. Diakité",
-      "position": "CB",
+      "position": "CB/RB",
       "club": "Bournemouth",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22136.png",
       "kitNumber": 18
+    },
+    {
+      "apiId": 162267,
+      "name": "A. Truffert",
+      "position": "LB",
+      "club": "Bournemouth",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162267.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 18869,
+      "name": "A. Smith",
+      "position": "RB",
+      "club": "Bournemouth",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18869.png",
+      "kitNumber": 15
     },
     {
       "apiId": 20093,
@@ -46,7 +68,7 @@
       "position": "CB",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20093.png",
       "kitNumber": 23
@@ -63,28 +85,6 @@
       "kitNumber": 44
     },
     {
-      "apiId": 18869,
-      "name": "A. Smith",
-      "position": "CB",
-      "club": "Bournemouth",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18869.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 162267,
-      "name": "A. Truffert",
-      "position": "CB",
-      "club": "Bournemouth",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162267.png",
-      "kitNumber": 3
-    },
-    {
       "apiId": 1150,
       "name": "T. Adams",
       "position": "CDM/CM",
@@ -98,18 +98,29 @@
     {
       "apiId": 129682,
       "name": "A. Adli",
-      "position": "CM",
+      "position": "CAM/RW",
       "club": "Bournemouth",
       "nation": "Morocco",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129682.png",
       "kitNumber": 21
     },
     {
+      "apiId": 304853,
+      "name": "A. Scott",
+      "position": "CM/CAM",
+      "club": "Bournemouth",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304853.png",
+      "kitNumber": 8
+    },
+    {
       "apiId": 1125,
       "name": "R. Christie",
-      "position": "CM",
+      "position": "CM/RW",
       "club": "Bournemouth",
       "nation": "Scotland",
       "tier": "GOLD",
@@ -120,51 +131,18 @@
     {
       "apiId": 18872,
       "name": "L. Cook",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18872.png",
       "kitNumber": 4
     },
     {
-      "apiId": 626383,
-      "name": "Malcom Dacosta",
-      "position": "CM",
-      "club": "Bournemouth",
-      "nation": "France",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/626383.png",
-      "kitNumber": 51
-    },
-    {
-      "apiId": 304853,
-      "name": "A. Scott",
-      "position": "CM",
-      "club": "Bournemouth",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/304853.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 573755,
-      "name": "C. Stevens",
-      "position": "CM",
-      "club": "Bournemouth",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/573755.png",
-      "kitNumber": 53
-    },
-    {
       "apiId": 19245,
       "name": "M. Tavernier",
-      "position": "CM",
+      "position": "LM/CAM",
       "club": "Bournemouth",
       "nation": "England",
       "tier": "GOLD",
@@ -184,15 +162,26 @@
       "kitNumber": 27
     },
     {
-      "apiId": 18870,
-      "name": "D. Brooks",
-      "position": "ST",
+      "apiId": 626383,
+      "name": "Malcom Dacosta",
+      "position": "CM",
       "club": "Bournemouth",
-      "nation": "Wales",
-      "tier": "GOLD",
+      "nation": "France",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18870.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/626383.png",
+      "kitNumber": 51
+    },
+    {
+      "apiId": 573755,
+      "name": "C. Stevens",
+      "position": "CM",
+      "club": "Bournemouth",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/573755.png",
+      "kitNumber": 53
     },
     {
       "apiId": 152856,
@@ -206,17 +195,6 @@
       "kitNumber": 9
     },
     {
-      "apiId": 343576,
-      "name": "B. Doak",
-      "position": "ST",
-      "club": "Bournemouth",
-      "nation": "Scotland",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/343576.png",
-      "kitNumber": 11
-    },
-    {
       "apiId": 792,
       "name": "J. Kluivert",
       "position": "LW/CAM",
@@ -228,37 +206,37 @@
       "kitNumber": 19
     },
     {
+      "apiId": 18870,
+      "name": "D. Brooks",
+      "position": "RW/CAM",
+      "club": "Bournemouth",
+      "nation": "Wales",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18870.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 343576,
+      "name": "B. Doak",
+      "position": "RW",
+      "club": "Bournemouth",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/343576.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 368030,
       "name": "E. Kroupi",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Bournemouth",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/368030.png",
       "kitNumber": 22
-    },
-    {
-      "apiId": 407806,
-      "name": "Rayan",
-      "position": "ST",
-      "club": "Bournemouth",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/407806.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 402434,
-      "name": "Remy Rees-Dottin",
-      "position": "ST",
-      "club": "Bournemouth",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/402434.png",
-      "kitNumber": 50
     },
     {
       "apiId": 343202,
@@ -277,10 +255,32 @@
       "position": "ST",
       "club": "Bournemouth",
       "nation": "Türkiye",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47499.png",
       "kitNumber": 26
+    },
+    {
+      "apiId": 407806,
+      "name": "Rayan",
+      "position": "ST/RW",
+      "club": "Bournemouth",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/407806.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 402434,
+      "name": "Remy Rees-Dottin",
+      "position": "ST",
+      "club": "Bournemouth",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/402434.png",
+      "kitNumber": 50
     }
   ]
 }

@@ -1,12 +1,11 @@
 import { GenericMutationCtx } from "convex/server";
-import { Id } from "../_generated/dataModel";
+import { Id, DataModel } from "../_generated/dataModel";
 import { getFormationPositions, MatchSize } from "./formations";
 import {
   type Position,
   type Tier,
   TIER_RANK,
   tierRank,
-  normalizePosition,
   playerPositions,
   lineFor,
 } from "../lib/constants";
@@ -32,15 +31,6 @@ interface PoolPlayer {
 }
 
 // ── Utilities ──────────────────────────────────────────────
-function shuffle<T>(items: T[]): T[] {
-  const copy = [...items];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
 function weightedPick<T>(items: T[], weights: number[]): T {
   const total = weights.reduce((sum, w) => sum + w, 0);
   if (total === 0) return items[Math.floor(Math.random() * items.length)];
@@ -275,7 +265,7 @@ function assignMysteryRounds(rounds: DraftRound[], pool: PoolPlayer[]): DraftRou
 
 // ── Main Entry Point ───────────────────────────────────────
 export async function generateDraftRounds(
-  ctx: GenericMutationCtx<any>,
+  ctx: GenericMutationCtx<DataModel>,
   formation: string,
   matchSize: MatchSize,
   poolMode: PlayerPoolMode

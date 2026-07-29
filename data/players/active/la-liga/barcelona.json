@@ -3,10 +3,32 @@
     "apiId": 529,
     "name": "Barcelona",
     "logo": "https://media.api-sports.io/football/teams/529.png",
-    "league": "Premier League",
+    "league": "la-liga",
     "leagueId": 140
   },
   "players": [
+    {
+      "apiId": 851,
+      "name": "W. Szczęsny",
+      "position": "GK",
+      "club": "Barcelona",
+      "nation": "Poland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/851.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 182718,
+      "name": "Joan García",
+      "position": "GK",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182718.png",
+      "kitNumber": 13
+    },
     {
       "apiId": 543468,
       "name": "Eder Aller",
@@ -17,105 +39,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/543468.png",
       "kitNumber": 33
-    },
-    {
-      "apiId": 182718,
-      "name": "Joan García",
-      "position": "GK",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182718.png",
-      "kitNumber": 13
-    },
-    {
-      "apiId": 851,
-      "name": "W. Szczęsny",
-      "position": "GK",
-      "club": "Barcelona",
-      "nation": "Poland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/851.png",
-      "kitNumber": 25
-    },
-    {
-      "apiId": 101814,
-      "name": "R. Araújo",
-      "position": "CB/RB",
-      "club": "Barcelona",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/101814.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 161928,
-      "name": "Alejandro Balde",
-      "position": "LB/LM",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161928.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 2282,
-      "name": "A. Christensen",
-      "position": "CB/CDM",
-      "club": "Barcelona",
-      "nation": "Denmark",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2282.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 433395,
-      "name": "Álvaro Cortés Moyano",
-      "position": "CB",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/433395.png",
-      "kitNumber": 36
-    },
-    {
-      "apiId": 396623,
-      "name": "Pau Cubarsí Paredes",
-      "position": "CB",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/396623.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 568001,
-      "name": "X. Espart",
-      "position": "CB",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/568001.png",
-      "kitNumber": 42
-    },
-    {
-      "apiId": 619,
-      "name": "Eric García",
-      "position": "CB/RB",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/619.png",
-      "kitNumber": 24
     },
     {
       "apiId": 1257,
@@ -129,6 +52,61 @@
       "kitNumber": 23
     },
     {
+      "apiId": 101814,
+      "name": "R. Araújo",
+      "position": "CB/RB",
+      "club": "Barcelona",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/101814.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 396623,
+      "name": "Pau Cubarsí Paredes",
+      "position": "CB",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/396623.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 161928,
+      "name": "Alejandro Balde",
+      "position": "LB",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161928.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 2282,
+      "name": "A. Christensen",
+      "position": "CB/CDM",
+      "club": "Barcelona",
+      "nation": "Denmark",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2282.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 619,
+      "name": "Eric García",
+      "position": "CB/RB",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/619.png",
+      "kitNumber": 24
+    },
+    {
       "apiId": 181701,
       "name": "Gerard Martín",
       "position": "LB/CB",
@@ -137,7 +115,29 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181701.png",
-      "kitNumber": 18
+      "kitNumber": 35
+    },
+    {
+      "apiId": 433395,
+      "name": "Álvaro Cortés Moyano",
+      "position": "CB",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/433395.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 568001,
+      "name": "X. Espart",
+      "position": "CB",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/568001.png",
+      "kitNumber": 42
     },
     {
       "apiId": 491250,
@@ -151,15 +151,48 @@
       "kitNumber": 26
     },
     {
-      "apiId": 433396,
-      "name": "Marc Bernal",
-      "position": "CDM/CM",
+      "apiId": 133609,
+      "name": "Pedri",
+      "position": "CM/CAM",
       "club": "Barcelona",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/433396.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/133609.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 1323,
+      "name": "Dani Olmo",
+      "position": "CAM/LW",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1323.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 296667,
+      "name": "Gavi",
+      "position": "CM/CAM",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/296667.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 538,
+      "name": "F. de Jong",
+      "position": "CM/CDM",
+      "club": "Barcelona",
+      "nation": "Netherlands",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/538.png",
+      "kitNumber": 21
     },
     {
       "apiId": 329728,
@@ -178,21 +211,21 @@
       "position": "CAM/CM",
       "club": "Barcelona",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340626.png",
       "kitNumber": 16
     },
     {
-      "apiId": 296667,
-      "name": "Gavi",
-      "position": "CM/CAM",
+      "apiId": 433396,
+      "name": "Marc Bernal",
+      "position": "CDM/CM",
       "club": "Barcelona",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/296667.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/433396.png",
+      "kitNumber": 22
     },
     {
       "apiId": 491086,
@@ -206,103 +239,15 @@
       "kitNumber": 43
     },
     {
-      "apiId": 1323,
-      "name": "Dani Olmo",
-      "position": "CAM/LW",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1323.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 133609,
-      "name": "Pedri",
-      "position": "CM/CAM",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/133609.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 538,
-      "name": "F. de Jong",
-      "position": "CM/CDM",
-      "club": "Barcelona",
-      "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/538.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 550547,
-      "name": "H. Abdelkarim",
-      "position": "ST",
-      "club": "Barcelona",
-      "nation": "Egypt",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/550547.png",
-      "kitNumber": 39
-    },
-    {
-      "apiId": 7334,
-      "name": "K. Adeyemi",
-      "position": "LW/ST",
-      "club": "Barcelona",
-      "nation": "Germany",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/7334.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 338958,
-      "name": "R. Bardghji",
-      "position": "RW/CAM",
-      "club": "Barcelona",
-      "nation": "Sweden",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/338958.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 138787,
-      "name": "A. Gordon",
-      "position": "LW/RW",
-      "club": "Barcelona",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/138787.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 579244,
-      "name": "Juan Hernández",
-      "position": "ST",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/579244.png",
-      "kitNumber": 41
-    },
-    {
       "apiId": 386828,
       "name": "Lamine Yamal",
-      "position": "RW/ST",
+      "position": "RW",
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386828.png",
-      "kitNumber": 10
+      "kitNumber": 19
     },
     {
       "apiId": 1496,
@@ -316,6 +261,28 @@
       "kitNumber": 11
     },
     {
+      "apiId": 7334,
+      "name": "K. Adeyemi",
+      "position": "LW/ST",
+      "club": "Barcelona",
+      "nation": "Germany",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7334.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 138787,
+      "name": "A. Gordon",
+      "position": "LW/RW",
+      "club": "Barcelona",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138787.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 931,
       "name": "Ferran Torres",
       "position": "ST/LW",
@@ -325,6 +292,39 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/931.png",
       "kitNumber": 7
+    },
+    {
+      "apiId": 338958,
+      "name": "R. Bardghji",
+      "position": "RW/CAM",
+      "club": "Barcelona",
+      "nation": "Sweden",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/338958.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 550547,
+      "name": "H. Abdelkarim",
+      "position": "ST",
+      "club": "Barcelona",
+      "nation": "Egypt",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/550547.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 579244,
+      "name": "Juan Hernández",
+      "position": "ST",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/579244.png",
+      "kitNumber": 41
     }
   ]
 }

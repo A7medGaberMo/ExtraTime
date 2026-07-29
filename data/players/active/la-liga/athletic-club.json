@@ -3,10 +3,21 @@
     "apiId": 531,
     "name": "Athletic Club",
     "logo": "https://media.api-sports.io/football/teams/531.png",
-    "league": "Premier League",
+    "league": "la-liga",
     "leagueId": 140
   },
   "players": [
+    {
+      "apiId": 47270,
+      "name": "Unai Simón",
+      "position": "GK",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47270.png",
+      "kitNumber": 1
+    },
     {
       "apiId": 312468,
       "name": "Álex Padilla",
@@ -27,18 +38,29 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437637.png",
-      "kitNumber": 13
+      "kitNumber": 35
     },
     {
-      "apiId": 47270,
-      "name": "Unai Simón",
-      "position": "GK",
+      "apiId": 47278,
+      "name": "Dani Vivian",
+      "position": "CB",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47270.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/47278.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 622,
+      "name": "Aymeric Laporte",
+      "position": "CB",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/622.png",
+      "kitNumber": 14
     },
     {
       "apiId": 47271,
@@ -46,21 +68,21 @@
       "position": "CB",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47271.png",
       "kitNumber": 5
     },
     {
-      "apiId": 182181,
-      "name": "Jesús Areso",
-      "position": "RB",
+      "apiId": 183849,
+      "name": "Aitor Paredes",
+      "position": "CB",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182181.png",
-      "kitNumber": 12
+      "imageUrl": "https://media.api-sports.io/football/players/183849.png",
+      "kitNumber": 4
     },
     {
       "apiId": 47273,
@@ -74,9 +96,31 @@
       "kitNumber": 17
     },
     {
+      "apiId": 47299,
+      "name": "Gorosabel",
+      "position": "RB",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47299.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 182181,
+      "name": "Jesús Areso",
+      "position": "RB",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182181.png",
+      "kitNumber": 12
+    },
+    {
       "apiId": 336998,
       "name": "A. Boiro",
-      "position": "CB",
+      "position": "LB/CB",
       "club": "Athletic Club",
       "nation": "Senegal",
       "tier": "SILVER",
@@ -93,29 +137,18 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/332305.png",
-      "kitNumber": 13
+      "kitNumber": 28
     },
     {
-      "apiId": 47299,
-      "name": "Gorosabel",
+      "apiId": 313025,
+      "name": "Hugo Rincón",
       "position": "RB",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47299.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 622,
-      "name": "Aymeric Laporte",
-      "position": "CB",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/622.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/313025.png",
+      "kitNumber": 29
     },
     {
       "apiId": 407677,
@@ -123,21 +156,10 @@
       "position": "CB",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/407677.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 183849,
-      "name": "Aitor Paredes",
-      "position": "CB",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/183849.png",
-      "kitNumber": 4
+      "kitNumber": 36
     },
     {
       "apiId": 332309,
@@ -151,81 +173,15 @@
       "kitNumber": 30
     },
     {
-      "apiId": 313025,
-      "name": "Hugo Rincón",
-      "position": "CB",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/313025.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 47278,
-      "name": "Dani Vivian",
-      "position": "CB",
+      "apiId": 128398,
+      "name": "Oihan Sancet",
+      "position": "CAM/ST",
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47278.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 437643,
-      "name": "Peio Canales",
-      "position": "CM",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/437643.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 332307,
-      "name": "Beñat Gerenabarrena",
-      "position": "CM",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/332307.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 560981,
-      "name": "E. Gift",
-      "position": "CM",
-      "club": "Athletic Club",
-      "nation": "Nigeria",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/560981.png",
-      "kitNumber": 40
-    },
-    {
-      "apiId": 383780,
-      "name": "Mikel Jauregizar",
-      "position": "CM/CDM",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/383780.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 84086,
-      "name": "Robert Navarro",
-      "position": "CAM/LW",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/84086.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/128398.png",
+      "kitNumber": 8
     },
     {
       "apiId": 182617,
@@ -233,7 +189,7 @@
       "position": "CDM/CM",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182617.png",
       "kitNumber": 24
@@ -250,15 +206,70 @@
       "kitNumber": 16
     },
     {
-      "apiId": 128398,
-      "name": "Oihan Sancet",
-      "position": "CAM/ST",
+      "apiId": 47418,
+      "name": "Mikel Vesga",
+      "position": "CDM/CM",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/128398.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/47418.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 383780,
+      "name": "Mikel Jauregizar",
+      "position": "CM/CDM",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/383780.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 84086,
+      "name": "Robert Navarro",
+      "position": "CAM/LW",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/84086.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 437643,
+      "name": "Peio Canales",
+      "position": "CM",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437643.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 332307,
+      "name": "Beñat Gerenabarrena",
+      "position": "CM",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/332307.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 560981,
+      "name": "E. Gift",
+      "position": "CM",
+      "club": "Athletic Club",
+      "nation": "Nigeria",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/560981.png",
+      "kitNumber": 40
     },
     {
       "apiId": 568156,
@@ -272,15 +283,37 @@
       "kitNumber": 33
     },
     {
-      "apiId": 47418,
-      "name": "Mikel Vesga",
-      "position": "CDM/CM",
+      "apiId": 183799,
+      "name": "Nico Williams",
+      "position": "LW/RW",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47418.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/183799.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 47294,
+      "name": "I. Williams",
+      "position": "RW/ST",
+      "club": "Athletic Club",
+      "nation": "Ghana",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47294.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 47291,
+      "name": "Gorka Guruzeta",
+      "position": "ST",
+      "club": "Athletic Club",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47291.png",
+      "kitNumber": 11
     },
     {
       "apiId": 30510,
@@ -302,40 +335,7 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/190489.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 47291,
-      "name": "Gorka Guruzeta",
-      "position": "ST",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47291.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 560954,
-      "name": "A. Hierro",
-      "position": "ST",
-      "club": "Athletic Club",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/560954.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 287680,
-      "name": "Maroan Sannadi",
-      "position": "ST",
-      "club": "Athletic Club",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/287680.png",
-      "kitNumber": 21
+      "kitNumber": 15
     },
     {
       "apiId": 286593,
@@ -349,26 +349,26 @@
       "kitNumber": 22
     },
     {
-      "apiId": 47294,
-      "name": "I. Williams",
-      "position": "RW/ST",
+      "apiId": 287680,
+      "name": "Maroan Sannadi",
+      "position": "ST",
       "club": "Athletic Club",
-      "nation": "Ghana",
-      "tier": "ELITE_PLUS",
+      "nation": "Morocco",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47294.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/287680.png",
+      "kitNumber": 21
     },
     {
-      "apiId": 183799,
-      "name": "Nico Williams",
-      "position": "LW/RW",
+      "apiId": 560954,
+      "name": "A. Hierro",
+      "position": "ST",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "MASTER",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/183799.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/560954.png",
+      "kitNumber": 34
     }
   ]
 }

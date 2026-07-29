@@ -1,11 +1,11 @@
 import { query } from "../_generated/server";
-import { Id } from "../_generated/dataModel";
+import { Id, DataModel } from "../_generated/dataModel";
 import { v } from "convex/values";
 import { GenericQueryCtx } from "convex/server";
 
 // ── Hydration Helpers ──────────────────────────────────────
 
-async function hydratePlayer(ctx: GenericQueryCtx<any>, playerId: Id<"players">) {
+async function hydratePlayer(ctx: GenericQueryCtx<DataModel>, playerId: Id<"players">) {
   const player = await ctx.db.get(playerId);
   if (!player) return null;
   const [club, nation] = await Promise.all([
@@ -30,7 +30,7 @@ type SquadSlot = {
   cost: number;
 };
 
-async function hydrateSquad(ctx: GenericQueryCtx<any>, squad: SquadSlot[] = []) {
+async function hydrateSquad(ctx: GenericQueryCtx<DataModel>, squad: SquadSlot[] = []) {
   return Promise.all(
     squad.map(async (slot) => ({
       ...slot,
@@ -102,8 +102,8 @@ export const getState = query({
         ]);
 
         // Find picks by roundNumber — the correct, unambiguous way
-        const hostPick = auction.host.squad?.find((s: any) => s.roundNumber === completedRoundNum);
-        const guestPick = auction.guest?.squad?.find((s: any) => s.roundNumber === completedRoundNum);
+        const hostPick = auction.host.squad?.find((s) => s.roundNumber === completedRoundNum);
+        const guestPick = auction.guest?.squad?.find((s) => s.roundNumber === completedRoundNum);
 
         // Winner is whoever got the main player (isSub === false)
         const hostWonMain = hostPick && !hostPick.isSub;

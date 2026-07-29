@@ -8,23 +8,12 @@
   },
   "players": [
     {
-      "apiId": 82855,
-      "name": "T. King",
-      "position": "GK",
-      "club": "Everton",
-      "nation": "Wales",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/82855.png",
-      "kitNumber": 31
-    },
-    {
       "apiId": 2932,
       "name": "J. Pickford",
       "position": "GK",
       "club": "Everton",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2932.png",
       "kitNumber": 1
@@ -35,21 +24,21 @@
       "position": "GK",
       "club": "Everton",
       "nation": "Republic of Ireland",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18860.png",
       "kitNumber": 12
     },
     {
-      "apiId": 431921,
-      "name": "Adam Aznou Ben Cheikh",
-      "position": "CB",
+      "apiId": 82855,
+      "name": "T. King",
+      "position": "GK",
       "club": "Everton",
-      "nation": "Morocco",
-      "tier": "GOLD",
+      "nation": "Wales",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/431921.png",
-      "kitNumber": 39
+      "imageUrl": "https://media.api-sports.io/football/players/82855.png",
+      "kitNumber": 31
     },
     {
       "apiId": 17661,
@@ -57,10 +46,65 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/17661.png",
       "kitNumber": 32
+    },
+    {
+      "apiId": 2936,
+      "name": "J. Tarkowski",
+      "position": "CB",
+      "club": "Everton",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2936.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 2165,
+      "name": "V. Mykolenko",
+      "position": "LB",
+      "club": "Everton",
+      "nation": "Ukraine",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2165.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 270139,
+      "name": "J. O'Brien",
+      "position": "CB",
+      "club": "Everton",
+      "nation": "Republic of Ireland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/270139.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 138417,
+      "name": "N. Patterson",
+      "position": "RB",
+      "club": "Everton",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138417.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 431921,
+      "name": "Adam Aznou Ben Cheikh",
+      "position": "LB",
+      "club": "Everton",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/431921.png",
+      "kitNumber": 39
     },
     {
       "apiId": 284385,
@@ -85,39 +129,6 @@
       "kitNumber": 55
     },
     {
-      "apiId": 2165,
-      "name": "V. Mykolenko",
-      "position": "CB",
-      "club": "Everton",
-      "nation": "Ukraine",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2165.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 270139,
-      "name": "J. O&apos;Brien",
-      "position": "CB",
-      "club": "Everton",
-      "nation": "Republic of Ireland",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/270139.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 138417,
-      "name": "N. Patterson",
-      "position": "CB",
-      "club": "Everton",
-      "nation": "Scotland",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/138417.png",
-      "kitNumber": 2
-    },
-    {
       "apiId": 557410,
       "name": "W. Tamen",
       "position": "CB",
@@ -126,45 +137,34 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557410.png",
-      "kitNumber": 15
+      "kitNumber": 56
     },
     {
-      "apiId": 2936,
-      "name": "J. Tarkowski",
-      "position": "CB",
+      "apiId": 895,
+      "name": "J. Garner",
+      "position": "CM/RB",
       "club": "Everton",
       "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2936.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 195993,
-      "name": "C. Alcaraz",
-      "position": "CM",
-      "club": "Everton",
-      "nation": "Argentina",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195993.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/895.png",
+      "kitNumber": 37
     },
     {
-      "apiId": 405360,
-      "name": "H. Armstrong",
-      "position": "CM",
+      "apiId": 18929,
+      "name": "D. McNeil",
+      "position": "LW/CAM",
       "club": "Everton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/405360.png",
-      "kitNumber": 45
+      "imageUrl": "https://media.api-sports.io/football/players/18929.png",
+      "kitNumber": 7
     },
     {
       "apiId": 148099,
       "name": "K. Dewsbury-Hall",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Everton",
       "nation": "England",
       "tier": "ELITE",
@@ -173,26 +173,15 @@
       "kitNumber": 22
     },
     {
-      "apiId": 410423,
-      "name": "H. Foster",
-      "position": "CM",
+      "apiId": 195993,
+      "name": "C. Alcaraz",
+      "position": "CM/CAM",
       "club": "Everton",
-      "nation": "England",
-      "tier": "BRONZE",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/410423.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 895,
-      "name": "J. Garner",
-      "position": "CM/RB",
-      "club": "Everton",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/895.png",
-      "kitNumber": 37
+      "imageUrl": "https://media.api-sports.io/football/players/195993.png",
+      "kitNumber": 24
     },
     {
       "apiId": 179685,
@@ -203,40 +192,18 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/179685.png",
-      "kitNumber": 7
+      "kitNumber": 18
     },
     {
       "apiId": 284500,
       "name": "T. Iroegbunam",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Everton",
       "nation": "England",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284500.png",
       "kitNumber": 42
-    },
-    {
-      "apiId": 18929,
-      "name": "D. McNeil",
-      "position": "LW/LM",
-      "club": "Everton",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18929.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 588468,
-      "name": "Malik Olayiwola",
-      "position": "CM",
-      "club": "Everton",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/588468.png",
-      "kitNumber": 14
     },
     {
       "apiId": 202854,
@@ -250,6 +217,72 @@
       "kitNumber": 34
     },
     {
+      "apiId": 405360,
+      "name": "H. Armstrong",
+      "position": "CM",
+      "club": "Everton",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/405360.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 410423,
+      "name": "H. Foster",
+      "position": "CM",
+      "club": "Everton",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/410423.png",
+      "kitNumber": 46
+    },
+    {
+      "apiId": 588468,
+      "name": "Malik Olayiwola",
+      "position": "CM",
+      "club": "Everton",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/588468.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 18592,
+      "name": "I. Ndiaye",
+      "position": "ST/CAM",
+      "club": "Everton",
+      "nation": "Senegal",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18592.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 304317,
+      "name": "T. Dibling",
+      "position": "RW/CAM",
+      "club": "Everton",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304317.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 125743,
+      "name": "Beto",
+      "position": "ST",
+      "club": "Everton",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/125743.png",
+      "kitNumber": 9
+    },
+    {
       "apiId": 343684,
       "name": "T. Barry",
       "position": "ST",
@@ -261,34 +294,12 @@
       "kitNumber": 11
     },
     {
-      "apiId": 125743,
-      "name": "Beto",
-      "position": "ST",
-      "club": "Everton",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/125743.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 304317,
-      "name": "T. Dibling",
-      "position": "ST",
-      "club": "Everton",
-      "nation": "England",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/304317.png",
-      "kitNumber": 20
-    },
-    {
       "apiId": 334037,
       "name": "Tyrique George",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Everton",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/334037.png",
       "kitNumber": 19
@@ -302,18 +313,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413034.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 18592,
-      "name": "I. Ndiaye",
-      "position": "ST/CAM",
-      "club": "Everton",
-      "nation": "Senegal",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18592.png",
-      "kitNumber": 10
+      "kitNumber": 50
     }
   ]
 }

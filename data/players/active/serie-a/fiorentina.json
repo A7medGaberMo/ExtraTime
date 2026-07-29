@@ -8,12 +8,23 @@
   },
   "players": [
     {
+      "apiId": 882,
+      "name": "David de Gea",
+      "position": "GK",
+      "club": "Fiorentina",
+      "nation": "Spain",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/882.png",
+      "kitNumber": 43
+    },
+    {
       "apiId": 15843,
       "name": "O. Christensen",
       "position": "GK",
       "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "BRONZE",
+      "nation": "Denmark",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15843.png",
       "kitNumber": 53
@@ -24,7 +35,7 @@
       "position": "GK",
       "club": "Fiorentina",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31352.png",
       "kitNumber": 1
@@ -41,26 +52,15 @@
       "kitNumber": 51
     },
     {
-      "apiId": 882,
-      "name": "David de Gea",
-      "position": "GK",
+      "apiId": 41144,
+      "name": "Dodô",
+      "position": "RB/RWB",
       "club": "Fiorentina",
-      "nation": "Spain",
+      "nation": "Brazil",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/882.png",
-      "kitNumber": 43
-    },
-    {
-      "apiId": 575285,
-      "name": "L. Balbo",
-      "position": "CB",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/575285.png",
-      "kitNumber": 62
+      "imageUrl": "https://media.api-sports.io/football/players/41144.png",
+      "kitNumber": 2
     },
     {
       "apiId": 396637,
@@ -74,70 +74,15 @@
       "kitNumber": 15
     },
     {
-      "apiId": 41144,
-      "name": "Dodô",
-      "position": "CB",
-      "club": "Fiorentina",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41144.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 162498,
-      "name": "R. Drăgușin",
-      "position": "CB",
+      "apiId": 31642,
+      "name": "L. Ranieri",
+      "position": "CB/LB",
       "club": "Fiorentina",
       "nation": "Italy",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162498.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 437093,
-      "name": "N. Fortini",
-      "position": "CB",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/437093.png",
-      "kitNumber": 29
-    },
-    {
-      "apiId": 330437,
-      "name": "Álex Jiménez",
-      "position": "CB",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/330437.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 441290,
-      "name": "E. Košpo",
-      "position": "CB",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/441290.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 136087,
-      "name": "F. Parisi",
-      "position": "CB",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/136087.png",
-      "kitNumber": 65
+      "imageUrl": "https://media.api-sports.io/football/players/31642.png",
+      "kitNumber": 6
     },
     {
       "apiId": 1084,
@@ -151,15 +96,70 @@
       "kitNumber": 5
     },
     {
-      "apiId": 31642,
-      "name": "L. Ranieri",
-      "position": "CB",
+      "apiId": 136087,
+      "name": "F. Parisi",
+      "position": "LB/LWB",
       "club": "Fiorentina",
       "nation": "Italy",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31642.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/136087.png",
+      "kitNumber": 65
+    },
+    {
+      "apiId": 162498,
+      "name": "R. Drăgușin",
+      "position": "CB",
+      "club": "Fiorentina",
+      "nation": "Romania",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162498.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 330437,
+      "name": "Álex Jiménez",
+      "position": "RB/LB",
+      "club": "Fiorentina",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/330437.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 575285,
+      "name": "L. Balbo",
+      "position": "CB",
+      "club": "Fiorentina",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/575285.png",
+      "kitNumber": 62
+    },
+    {
+      "apiId": 437093,
+      "name": "N. Fortini",
+      "position": "CB",
+      "club": "Fiorentina",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437093.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 441290,
+      "name": "E. Košpo",
+      "position": "CB",
+      "club": "Fiorentina",
+      "nation": "Switzerland",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/441290.png",
+      "kitNumber": 23
     },
     {
       "apiId": 610778,
@@ -167,7 +167,7 @@
       "position": "CB",
       "club": "Fiorentina",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610778.png",
       "kitNumber": 5
@@ -184,26 +184,26 @@
       "kitNumber": 44
     },
     {
-      "apiId": 347644,
-      "name": "A. Atta",
-      "position": "CM",
+      "apiId": 876,
+      "name": "N. Fagioli",
+      "position": "CM/CDM",
       "club": "Fiorentina",
       "nation": "Italy",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/347644.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/876.png",
+      "kitNumber": 44
     },
     {
-      "apiId": 610724,
-      "name": "P. Bonanno",
-      "position": "CM",
+      "apiId": 30810,
+      "name": "R. Mandragora",
+      "position": "CM/CDM",
       "club": "Fiorentina",
       "nation": "Italy",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/610724.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/30810.png",
+      "kitNumber": 8
     },
     {
       "apiId": 1639,
@@ -214,6 +214,50 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1639.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 322630,
+      "name": "G. Fabbian",
+      "position": "CM/CAM",
+      "club": "Fiorentina",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/322630.png",
+      "kitNumber": 80
+    },
+    {
+      "apiId": 311083,
+      "name": "C. Ndour",
+      "position": "CM",
+      "club": "Fiorentina",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/311083.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 347644,
+      "name": "A. Atta",
+      "position": "CM",
+      "club": "Fiorentina",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/347644.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 610724,
+      "name": "P. Bonanno",
+      "position": "CM",
+      "club": "Fiorentina",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/610724.png",
       "kitNumber": 4
     },
     {
@@ -228,59 +272,15 @@
       "kitNumber": 64
     },
     {
-      "apiId": 322630,
-      "name": "G. Fabbian",
-      "position": "CM",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/322630.png",
-      "kitNumber": 80
-    },
-    {
-      "apiId": 876,
-      "name": "N. Fagioli",
-      "position": "CM",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/876.png",
-      "kitNumber": 44
-    },
-    {
       "apiId": 474591,
-      "name": "C. Inao OulaÃ¯",
+      "name": "C. Inao Oulaï",
       "position": "CM",
       "club": "Fiorentina",
-      "nation": "Italy",
+      "nation": "Ivory Coast",
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/474591.png",
       "kitNumber": 42
-    },
-    {
-      "apiId": 30810,
-      "name": "R. Mandragora",
-      "position": "CM",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30810.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 311083,
-      "name": "C. Ndour",
-      "position": "CM",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/311083.png",
-      "kitNumber": 27
     },
     {
       "apiId": 631204,
@@ -294,12 +294,56 @@
       "kitNumber": 72
     },
     {
+      "apiId": 877,
+      "name": "M. Kean",
+      "position": "ST",
+      "club": "Fiorentina",
+      "nation": "Italy",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/877.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 2799,
+      "name": "A. Guðmundsson",
+      "position": "ST/CAM/LW",
+      "club": "Fiorentina",
+      "nation": "Iceland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2799.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 31318,
+      "name": "M'Bala Nzola",
+      "position": "ST",
+      "club": "Fiorentina",
+      "nation": "Angola",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31318.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 30440,
+      "name": "R. Piccoli",
+      "position": "ST",
+      "club": "Fiorentina",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30440.png",
+      "kitNumber": 91
+    },
+    {
       "apiId": 610726,
       "name": "G. Bertolini",
       "position": "ST",
       "club": "Fiorentina",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610726.png",
       "kitNumber": 7
@@ -314,50 +358,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437094.png",
       "kitNumber": 61
-    },
-    {
-      "apiId": 2799,
-      "name": "A. Guðmundsson",
-      "position": "ST",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2799.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 877,
-      "name": "M. Kean",
-      "position": "ST",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/877.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 31318,
-      "name": "M&apos;Bala Nzola",
-      "position": "ST",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31318.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 30440,
-      "name": "R. Piccoli",
-      "position": "ST",
-      "club": "Fiorentina",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30440.png",
-      "kitNumber": 91
     },
     {
       "apiId": 579241,

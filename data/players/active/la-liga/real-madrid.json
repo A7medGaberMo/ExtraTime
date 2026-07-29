@@ -13,20 +13,9 @@
       "position": "GK",
       "club": "Real Madrid",
       "nation": "Belgium",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/730.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 396475,
-      "name": "Fran González",
-      "position": "GK",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/396475.png",
       "kitNumber": 1
     },
     {
@@ -35,10 +24,21 @@
       "position": "GK",
       "club": "Real Madrid",
       "nation": "Ukraine",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47400.png",
       "kitNumber": 13
+    },
+    {
+      "apiId": 396475,
+      "name": "Fran González",
+      "position": "GK",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/396475.png",
+      "kitNumber": 26
     },
     {
       "apiId": 386872,
@@ -46,10 +46,10 @@
       "position": "GK",
       "club": "Real Madrid",
       "nation": "Spain",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386872.png",
-      "kitNumber": 25
+      "kitNumber": 34
     },
     {
       "apiId": 544044,
@@ -63,158 +63,15 @@
       "kitNumber": 29
     },
     {
-      "apiId": 451355,
-      "name": "Diego Aguado",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/451355.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 283,
-      "name": "T. Alexander-Arnold",
-      "position": "RB/RM",
-      "club": "Real Madrid",
-      "nation": "England",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/283.png",
-      "kitNumber": 12
-    },
-    {
-      "apiId": 341640,
-      "name": "Raúl Asencio",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/341640.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 284300,
-      "name": "Álvaro Fernández",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284300.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 47380,
-      "name": "Marc Cucurella",
-      "position": "LB/LM",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47380.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 226,
-      "name": "D. Dumfries",
-      "position": "RB/RM",
-      "club": "Real Madrid",
-      "nation": "Netherlands",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/226.png",
-      "kitNumber": 22
-    },
-    {
       "apiId": 372,
       "name": "Éder Militão",
       "position": "CB/RB",
       "club": "Real Madrid",
       "nation": "Brazil",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/372.png",
       "kitNumber": 3
-    },
-    {
-      "apiId": 561032,
-      "name": "L. Fati",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/561032.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 443595,
-      "name": "Jesús Fortea",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/443595.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 361497,
-      "name": "D. Huijsen",
-      "position": "CB/RB",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/361497.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 330436,
-      "name": "David Jiménez",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/330436.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 1145,
-      "name": "I. Konaté",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1145.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 561033,
-      "name": "J. Martinez",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/561033.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 653,
-      "name": "F. Mendy",
-      "position": "LB",
-      "club": "Real Madrid",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/653.png",
-      "kitNumber": 23
     },
     {
       "apiId": 2285,
@@ -228,6 +85,149 @@
       "kitNumber": 22
     },
     {
+      "apiId": 283,
+      "name": "T. Alexander-Arnold",
+      "position": "RB/RM",
+      "club": "Real Madrid",
+      "nation": "England",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/283.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 226,
+      "name": "D. Dumfries",
+      "position": "RB/RM",
+      "club": "Real Madrid",
+      "nation": "Netherlands",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/226.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 1145,
+      "name": "I. Konaté",
+      "position": "CB",
+      "club": "Real Madrid",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1145.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 47380,
+      "name": "Marc Cucurella",
+      "position": "LB/LM",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47380.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 653,
+      "name": "F. Mendy",
+      "position": "LB",
+      "club": "Real Madrid",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/653.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 361497,
+      "name": "D. Huijsen",
+      "position": "CB",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/361497.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 341640,
+      "name": "Raúl Asencio",
+      "position": "CB",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/341640.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 284300,
+      "name": "Álvaro Fernández",
+      "position": "CB/LB",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284300.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 451355,
+      "name": "Diego Aguado",
+      "position": "CB",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/451355.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 561032,
+      "name": "L. Fati",
+      "position": "CB",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/561032.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 443595,
+      "name": "Jesús Fortea",
+      "position": "RB",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443595.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 330436,
+      "name": "David Jiménez",
+      "position": "CB",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/330436.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 561033,
+      "name": "J. Martinez",
+      "position": "CB",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/561033.png",
+      "kitNumber": 39
+    },
+    {
       "apiId": 560902,
       "name": "M. Serrano",
       "position": "CB",
@@ -236,7 +236,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560902.png",
-      "kitNumber": 5
+      "kitNumber": 40
     },
     {
       "apiId": 129718,
@@ -250,26 +250,48 @@
       "kitNumber": 5
     },
     {
+      "apiId": 756,
+      "name": "F. Valverde",
+      "position": "CM/RW",
+      "club": "Real Madrid",
+      "nation": "Uruguay",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/756.png",
+      "kitNumber": 8
+    },
+    {
       "apiId": 2207,
       "name": "E. Camavinga",
       "position": "CDM/CM",
       "club": "Real Madrid",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2207.png",
       "kitNumber": 6
     },
     {
-      "apiId": 560905,
-      "name": "J. Cestero Sancho",
-      "position": "CM",
+      "apiId": 1271,
+      "name": "A. Tchouaméni",
+      "position": "CDM/CB",
       "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
+      "nation": "France",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/560905.png",
+      "imageUrl": "https://media.api-sports.io/football/players/1271.png",
       "kitNumber": 14
+    },
+    {
+      "apiId": 636,
+      "name": "Bernardo Silva",
+      "position": "CAM/RW",
+      "club": "Real Madrid",
+      "nation": "Portugal",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/636.png",
+      "kitNumber": 16
     },
     {
       "apiId": 744,
@@ -288,10 +310,32 @@
       "position": "CAM/RW",
       "club": "Real Madrid",
       "nation": "Turkey",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/291964.png",
       "kitNumber": 15
+    },
+    {
+      "apiId": 449249,
+      "name": "Franco Mastantuono",
+      "position": "CAM/RW",
+      "club": "Real Madrid",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449249.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 560905,
+      "name": "J. Cestero Sancho",
+      "position": "CM",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/560905.png",
+      "kitNumber": 41
     },
     {
       "apiId": 313167,
@@ -310,10 +354,10 @@
       "position": "CM",
       "club": "Real Madrid",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386306.png",
-      "kitNumber": 10
+      "kitNumber": 42
     },
     {
       "apiId": 509470,
@@ -321,76 +365,10 @@
       "position": "CM",
       "club": "Real Madrid",
       "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/509470.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 636,
-      "name": "Bernardo Silva",
-      "position": "CAM/RW",
-      "club": "Real Madrid",
-      "nation": "Portugal",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/636.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 1271,
-      "name": "A. Tchouaméni",
-      "position": "CDM/CB",
-      "club": "Real Madrid",
-      "nation": "France",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1271.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 756,
-      "name": "F. Valverde",
-      "position": "CM/RW",
-      "club": "Real Madrid",
-      "nation": "Uruguay",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/756.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 336711,
-      "name": "Gonzalo García",
-      "position": "ST",
-      "club": "Real Madrid",
-      "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/336711.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 308998,
-      "name": "Ávaro Leiva",
-      "position": "ST",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/308998.png",
-      "kitNumber": 39
-    },
-    {
-      "apiId": 449249,
-      "name": "Franco Mastantuono",
-      "position": "CAM/RW",
-      "club": "Real Madrid",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449249.png",
-      "kitNumber": 30
+      "imageUrl": "https://media.api-sports.io/football/players/509470.png",
+      "kitNumber": 43
     },
     {
       "apiId": 278,
@@ -401,18 +379,7 @@
       "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 10009,
-      "name": "Rodrygo",
-      "position": "RW/ST",
-      "club": "Real Madrid",
-      "nation": "Brazil",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10009.png",
-      "kitNumber": 11
+      "kitNumber": 9
     },
     {
       "apiId": 762,
@@ -426,6 +393,39 @@
       "kitNumber": 7
     },
     {
+      "apiId": 10009,
+      "name": "Rodrygo",
+      "position": "RW/ST",
+      "club": "Real Madrid",
+      "nation": "Brazil",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10009.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 336711,
+      "name": "Gonzalo García",
+      "position": "ST",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336711.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 308998,
+      "name": "Ávaro Leiva",
+      "position": "ST",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/308998.png",
+      "kitNumber": 39
+    },
+    {
       "apiId": 441497,
       "name": "Daniel Yañez",
       "position": "ST",
@@ -434,7 +434,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441497.png",
-      "kitNumber": 7
+      "kitNumber": 45
     }
   ]
 }

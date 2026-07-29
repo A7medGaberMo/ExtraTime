@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "West Ham",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/253.png",
       "kitNumber": 23
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "West Ham",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15870.png",
       "kitNumber": 1
@@ -41,48 +41,15 @@
       "kitNumber": 49
     },
     {
-      "apiId": 557408,
-      "name": "R. Battrum",
+      "apiId": 138,
+      "name": "J. Todibo",
       "position": "CB",
       "club": "West Ham",
-      "nation": "England",
-      "tier": "BRONZE",
+      "nation": "France",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/557408.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 288116,
-      "name": "K. Casey",
-      "position": "CB",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/288116.png",
-      "kitNumber": 42
-    },
-    {
-      "apiId": 409303,
-      "name": "E. Diouf",
-      "position": "CB",
-      "club": "West Ham",
-      "nation": "Senegal",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/409303.png",
-      "kitNumber": 12
-    },
-    {
-      "apiId": 557541,
-      "name": "A. Golambeckis",
-      "position": "CB",
-      "club": "West Ham",
-      "nation": "Lithuania",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/557541.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/138.png",
+      "kitNumber": 25
     },
     {
       "apiId": 18744,
@@ -90,10 +57,32 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18744.png",
       "kitNumber": 3
+    },
+    {
+      "apiId": 18846,
+      "name": "A. Wan-Bissaka",
+      "position": "RB",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18846.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 171,
+      "name": "K. Walker-Peters",
+      "position": "RB/LB",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/171.png",
+      "kitNumber": 2
     },
     {
       "apiId": 1445,
@@ -105,6 +94,61 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1445.png",
       "kitNumber": 15
+    },
+    {
+      "apiId": 409303,
+      "name": "E. Diouf",
+      "position": "LB",
+      "club": "West Ham",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/409303.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 288116,
+      "name": "K. Casey",
+      "position": "CB",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/288116.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 327730,
+      "name": "O. Scarles",
+      "position": "LB/CB",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327730.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 557408,
+      "name": "R. Battrum",
+      "position": "CB",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/557408.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 557541,
+      "name": "A. Golambeckis",
+      "position": "CB",
+      "club": "West Ham",
+      "nation": "Lithuania",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/557541.png",
+      "kitNumber": 4
     },
     {
       "apiId": 553065,
@@ -120,79 +164,57 @@
     {
       "apiId": 284444,
       "name": "Junior Robinson",
-      "position": "CB",
+      "position": "RB",
       "club": "West Ham",
       "nation": "England",
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284444.png",
-      "kitNumber": 2
+      "kitNumber": 36
     },
     {
-      "apiId": 327730,
-      "name": "O. Scarles",
-      "position": "CB",
+      "apiId": 1243,
+      "name": "T. Souček",
+      "position": "CM/CDM",
       "club": "West Ham",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327730.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 138,
-      "name": "J. Todibo",
-      "position": "CB",
-      "club": "West Ham",
-      "nation": "France",
+      "nation": "Czechia",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/138.png",
-      "kitNumber": 25
+      "imageUrl": "https://media.api-sports.io/football/players/1243.png",
+      "kitNumber": 28
     },
     {
-      "apiId": 171,
-      "name": "K. Walker-Peters",
-      "position": "RB/LB",
+      "apiId": 2938,
+      "name": "J. Ward-Prowse",
+      "position": "CM/CAM",
       "club": "West Ham",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/171.png",
-      "kitNumber": 2
+      "imageUrl": "https://media.api-sports.io/football/players/2938.png",
+      "kitNumber": 8
     },
     {
-      "apiId": 18846,
-      "name": "A. Wan-Bissaka",
-      "position": "RB/CB",
+      "apiId": 326176,
+      "name": "S. Magassa",
+      "position": "CDM/CM",
       "club": "West Ham",
-      "nation": "England",
+      "nation": "France",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18846.png",
-      "kitNumber": 29
+      "imageUrl": "https://media.api-sports.io/football/players/326176.png",
+      "kitNumber": 27
     },
     {
       "apiId": 291363,
       "name": "George Earthy",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/291363.png",
       "kitNumber": 40
-    },
-    {
-      "apiId": 552938,
-      "name": "P. Fearon",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/552938.png",
-      "kitNumber": 7
     },
     {
       "apiId": 401278,
@@ -206,6 +228,39 @@
       "kitNumber": 55
     },
     {
+      "apiId": 288118,
+      "name": "L. Orford",
+      "position": "CM",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/288118.png",
+      "kitNumber": 61
+    },
+    {
+      "apiId": 284446,
+      "name": "F. Potts",
+      "position": "CDM",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284446.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 552938,
+      "name": "P. Fearon",
+      "position": "CM",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/552938.png",
+      "kitNumber": 7
+    },
+    {
       "apiId": 358969,
       "name": "K. Lamadrid",
       "position": "CM",
@@ -215,72 +270,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/358969.png",
       "kitNumber": 21
-    },
-    {
-      "apiId": 326176,
-      "name": "S. Magassa",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/326176.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 288118,
-      "name": "L. Orford",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/288118.png",
-      "kitNumber": 61
-    },
-    {
-      "apiId": 284446,
-      "name": "F. Potts",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284446.png",
-      "kitNumber": 32
-    },
-    {
-      "apiId": 1243,
-      "name": "T. Souček",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "Czechia",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1243.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 2938,
-      "name": "J. Ward-Prowse",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2938.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 432404,
-      "name": "J. Ajala",
-      "position": "ST",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/432404.png",
-      "kitNumber": 10
     },
     {
       "apiId": 19428,
@@ -299,7 +288,7 @@
       "position": "ST",
       "club": "West Ham",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50856.png",
       "kitNumber": 11
@@ -307,7 +296,7 @@
     {
       "apiId": 665,
       "name": "M. Cornet",
-      "position": "ST",
+      "position": "LW/ST",
       "club": "West Ham",
       "nation": "Côte d'Ivoire",
       "tier": "GOLD",
@@ -316,26 +305,37 @@
       "kitNumber": 22
     },
     {
-      "apiId": 344707,
-      "name": "C. Marshall",
-      "position": "ST",
-      "club": "West Ham",
-      "nation": "Northern Ireland",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/344707.png",
-      "kitNumber": 50
-    },
-    {
       "apiId": 301187,
       "name": "Pablo",
       "position": "ST",
       "club": "West Ham",
       "nation": "Brazil",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/301187.png",
       "kitNumber": 19
+    },
+    {
+      "apiId": 344707,
+      "name": "C. Marshall",
+      "position": "ST",
+      "club": "West Ham",
+      "nation": "Northern Ireland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/344707.png",
+      "kitNumber": 50
+    },
+    {
+      "apiId": 432404,
+      "name": "J. Ajala",
+      "position": "ST",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/432404.png",
+      "kitNumber": 10
     }
   ]
 }

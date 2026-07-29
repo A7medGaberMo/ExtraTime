@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 47448,
-      "name": "Aitor Fernández",
-      "position": "GK",
-      "club": "Osasuna",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47448.png",
-      "kitNumber": 13
-    },
-    {
       "apiId": 46646,
       "name": "Sergio Herrera",
       "position": "GK",
@@ -30,15 +19,26 @@
       "kitNumber": 1
     },
     {
-      "apiId": 561057,
-      "name": "Rafa",
+      "apiId": 47448,
+      "name": "Aitor Fernández",
       "position": "GK",
       "club": "Osasuna",
       "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/561057.png",
+      "imageUrl": "https://media.api-sports.io/football/players/47448.png",
       "kitNumber": 13
+    },
+    {
+      "apiId": 561057,
+      "name": "Rafa",
+      "position": "GK",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/561057.png",
+      "kitNumber": 25
     },
     {
       "apiId": 348029,
@@ -57,21 +57,10 @@
       "position": "CB",
       "club": "Osasuna",
       "nation": "Cameroon",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/279822.png",
       "kitNumber": 22
-    },
-    {
-      "apiId": 181259,
-      "name": "Abel Bretones",
-      "position": "CB",
-      "club": "Osasuna",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/181259.png",
-      "kitNumber": 23
     },
     {
       "apiId": 47533,
@@ -85,6 +74,28 @@
       "kitNumber": 24
     },
     {
+      "apiId": 181259,
+      "name": "Abel Bretones",
+      "position": "LB",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/181259.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 21701,
+      "name": "V. Rosier",
+      "position": "RB",
+      "club": "Osasuna",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21701.png",
+      "kitNumber": 19
+    },
+    {
       "apiId": 182592,
       "name": "Jorge Herrando",
       "position": "CB",
@@ -96,45 +107,45 @@
       "kitNumber": 5
     },
     {
-      "apiId": 21701,
-      "name": "V. Rosier",
-      "position": "CB",
-      "club": "Osasuna",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/21701.png",
-      "kitNumber": 19
-    },
-    {
       "apiId": 560924,
       "name": "U. Santos",
       "position": "CB",
       "club": "Osasuna",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560924.png",
-      "kitNumber": 5
+      "kitNumber": 28
     },
     {
-      "apiId": 429553,
-      "name": "Mauro Echegoyen",
-      "position": "CM",
+      "apiId": 67939,
+      "name": "Aimar Oroz",
+      "position": "CAM/CM",
       "club": "Osasuna",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/429553.png",
+      "imageUrl": "https://media.api-sports.io/football/players/67939.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 1825,
+      "name": "Lucas Torró",
+      "position": "CDM/CM",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1825.png",
       "kitNumber": 6
     },
     {
       "apiId": 46662,
       "name": "Moncayola",
-      "position": "CM",
+      "position": "CM/RB",
       "club": "Osasuna",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46662.png",
       "kitNumber": 7
@@ -142,24 +153,13 @@
     {
       "apiId": 182621,
       "name": "Iker Muñoz",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Osasuna",
       "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182621.png",
       "kitNumber": 8
-    },
-    {
-      "apiId": 67939,
-      "name": "Aimar Oroz",
-      "position": "CM",
-      "club": "Osasuna",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/67939.png",
-      "kitNumber": 10
     },
     {
       "apiId": 381197,
@@ -173,48 +173,15 @@
       "kitNumber": 29
     },
     {
-      "apiId": 1825,
-      "name": "Lucas Torró",
+      "apiId": 429553,
+      "name": "Mauro Echegoyen",
       "position": "CM",
       "club": "Osasuna",
       "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1825.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 421044,
-      "name": "Íñigo Arguibide",
-      "position": "ST",
-      "club": "Osasuna",
-      "nation": "Spain",
       "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/421044.png",
-      "kitNumber": 41
-    },
-    {
-      "apiId": 46667,
-      "name": "Kike Barja",
-      "position": "ST",
-      "club": "Osasuna",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46667.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 288800,
-      "name": "Iker Benito",
-      "position": "ST",
-      "club": "Osasuna",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/288800.png",
-      "kitNumber": 2
+      "imageUrl": "https://media.api-sports.io/football/players/429553.png",
+      "kitNumber": 30
     },
     {
       "apiId": 46746,
@@ -222,10 +189,43 @@
       "position": "ST",
       "club": "Osasuna",
       "nation": "Croatia",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46746.png",
       "kitNumber": 17
+    },
+    {
+      "apiId": 47574,
+      "name": "Moi Gómez",
+      "position": "LM/CAM",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47574.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 46658,
+      "name": "Rubén García",
+      "position": "RW/RM",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46658.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 264470,
+      "name": "Raul Moro",
+      "position": "LW/RW",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/264470.png",
+      "kitNumber": 18
     },
     {
       "apiId": 146751,
@@ -239,37 +239,37 @@
       "kitNumber": 9
     },
     {
-      "apiId": 46658,
-      "name": "Rubén García",
-      "position": "ST",
+      "apiId": 46667,
+      "name": "Kike Barja",
+      "position": "LW/RW",
       "club": "Osasuna",
       "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46658.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/46667.png",
+      "kitNumber": 11
     },
     {
-      "apiId": 47574,
-      "name": "Moi Gómez",
-      "position": "ST",
-      "club": "Osasuna",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47574.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 264470,
-      "name": "Raul Moro",
-      "position": "ST",
+      "apiId": 288800,
+      "name": "Iker Benito",
+      "position": "RM/RB",
       "club": "Osasuna",
       "nation": "Spain",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/264470.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/288800.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 421044,
+      "name": "Íñigo Arguibide",
+      "position": "ST",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/421044.png",
+      "kitNumber": 41
     }
   ]
 }

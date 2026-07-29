@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
+import { Id } from '../../../convex/_generated/dataModel';
 import { PageHeader } from '@/components/shared/page-header';
 import { PlayerCard } from '@/components/shared/player-card';
 import { ETLogo } from '@/components/shared/et-logo';
@@ -22,13 +23,15 @@ import {
   Dices,
 } from 'lucide-react';
 
+import type { LucideIcon } from "lucide-react";
+
 export interface TierPackConfig {
   id: string;
   tier: Tier | 'ALL';
   name: string;
   badgeLabel: string;
   cost: number;
-  icon: any;
+  icon: LucideIcon;
   accentColor: string;
   gradient: string;
   borderColor: string;
@@ -165,12 +168,22 @@ export default function PacksPage() {
     const clubMap = new Map((dbClubs || []).map((c) => [c._id, c]));
     const nationMap = new Map((dbNations || []).map((n) => [n._id, n.name]));
 
-    return dbPlayers.map((p: any) => {
+    return (dbPlayers as unknown as Array<{
+      _id: string;
+      name: string;
+      tier: Tier;
+      position: string;
+      clubId: Id<"clubs">;
+      nationId: Id<"nations">;
+      imageUrl?: string;
+      isLegend?: boolean;
+      kitNumber?: number;
+    }>).map((p) => {
       const clubObj = clubMap.get(p.clubId);
       return {
         id: p._id,
         name: p.name,
-        tier: p.tier as Tier,
+        tier: p.tier,
         position: p.position,
         club: clubObj?.name || 'Club',
         league: clubObj?.league || 'Global Legends',

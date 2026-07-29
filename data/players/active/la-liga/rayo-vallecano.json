@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Rayo Vallecano",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/156488.png",
       "kitNumber": 1
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Rayo Vallecano",
       "nation": "Spain",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/285505.png",
       "kitNumber": 30
@@ -49,12 +49,34 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/478244.png",
-      "kitNumber": 30
+      "kitNumber": 31
+    },
+    {
+      "apiId": 1703,
+      "name": "A. Rațiu",
+      "position": "RB",
+      "club": "Rayo Vallecano",
+      "nation": "Romania",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1703.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 18895,
+      "name": "F. Lejeune",
+      "position": "CB",
+      "club": "Rayo Vallecano",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18895.png",
+      "kitNumber": 24
     },
     {
       "apiId": 20520,
       "name": "I. Balliu",
-      "position": "CB",
+      "position": "RB",
       "club": "Rayo Vallecano",
       "nation": "Albania",
       "tier": "GOLD",
@@ -65,7 +87,7 @@
     {
       "apiId": 181734,
       "name": "Pep Chavarría",
-      "position": "CB",
+      "position": "LB",
       "club": "Rayo Vallecano",
       "nation": "Spain",
       "tier": "GOLD",
@@ -85,15 +107,26 @@
       "kitNumber": 27
     },
     {
-      "apiId": 18895,
-      "name": "F. Lejeune",
+      "apiId": 358431,
+      "name": "N. Mendy",
       "position": "CB",
       "club": "Rayo Vallecano",
-      "nation": "Spain",
-      "tier": "GOLD",
+      "nation": "Senegal",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18895.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/358431.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 314006,
+      "name": "J. Vertrouwd",
+      "position": "LB/CB",
+      "club": "Rayo Vallecano",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/314006.png",
+      "kitNumber": 33
     },
     {
       "apiId": 626804,
@@ -101,43 +134,10 @@
       "position": "CB",
       "club": "Rayo Vallecano",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626804.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 358431,
-      "name": "N. Mendy",
-      "position": "CB",
-      "club": "Rayo Vallecano",
-      "nation": "Senegal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/358431.png",
-      "kitNumber": 32
-    },
-    {
-      "apiId": 1703,
-      "name": "A. Rațiu",
-      "position": "CB",
-      "club": "Rayo Vallecano",
-      "nation": "Romania",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1703.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 314006,
-      "name": "J. Vertrouwd",
-      "position": "CB",
-      "club": "Rayo Vallecano",
-      "nation": "Netherlands",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/314006.png",
-      "kitNumber": 33
+      "kitNumber": 35
     },
     {
       "apiId": 478243,
@@ -151,6 +151,72 @@
       "kitNumber": 26
     },
     {
+      "apiId": 47543,
+      "name": "Álvaro García",
+      "position": "LM/LW",
+      "club": "Rayo Vallecano",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47543.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 47109,
+      "name": "Óscar Valentín",
+      "position": "CDM/CM",
+      "club": "Rayo Vallecano",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47109.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 41552,
+      "name": "P. Ciss",
+      "position": "CDM/CM",
+      "club": "Rayo Vallecano",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41552.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 46887,
+      "name": "Pedro Díaz",
+      "position": "CM/CAM",
+      "club": "Rayo Vallecano",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46887.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 47285,
+      "name": "Unai López",
+      "position": "CM/CAM",
+      "club": "Rayo Vallecano",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47285.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 122657,
+      "name": "R. Nteka",
+      "position": "CAM/ST",
+      "club": "Rayo Vallecano",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/122657.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 439633,
       "name": "Samu Becerra",
       "position": "CM",
@@ -162,92 +228,26 @@
       "kitNumber": 28
     },
     {
-      "apiId": 41552,
-      "name": "P. Ciss",
-      "position": "CM",
-      "club": "Rayo Vallecano",
-      "nation": "Senegal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41552.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 46887,
-      "name": "Pedro Díaz",
-      "position": "CM",
-      "club": "Rayo Vallecano",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46887.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 47543,
-      "name": "Álvaro García",
-      "position": "CM",
-      "club": "Rayo Vallecano",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47543.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 47285,
-      "name": "Unai López",
-      "position": "CM",
-      "club": "Rayo Vallecano",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47285.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 122657,
-      "name": "R. Nteka",
-      "position": "CM",
-      "club": "Rayo Vallecano",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/122657.png",
-      "kitNumber": 11
-    },
-    {
       "apiId": 626805,
       "name": "M. Roman",
       "position": "CM",
       "club": "Rayo Vallecano",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626805.png",
-      "kitNumber": 31
+      "kitNumber": 34
     },
     {
-      "apiId": 47109,
-      "name": "Óscar Valentín",
-      "position": "CM",
+      "apiId": 131546,
+      "name": "Isi Palazón",
+      "position": "RW/RM",
       "club": "Rayo Vallecano",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47109.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 91745,
-      "name": "Alemão",
-      "position": "ST",
-      "club": "Rayo Vallecano",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/91745.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/131546.png",
+      "kitNumber": 7
     },
     {
       "apiId": 52,
@@ -261,26 +261,15 @@
       "kitNumber": 10
     },
     {
-      "apiId": 551397,
-      "name": "E. Eto'o",
-      "position": "ST",
-      "club": "Rayo Vallecano",
-      "nation": "Cameroon",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/551397.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 131546,
-      "name": "Isi Palazón",
-      "position": "ST",
+      "apiId": 128582,
+      "name": "Jorge de Frutos",
+      "position": "RM/RW",
       "club": "Rayo Vallecano",
       "nation": "Spain",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/131546.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/128582.png",
+      "kitNumber": 19
     },
     {
       "apiId": 162931,
@@ -294,15 +283,26 @@
       "kitNumber": 21
     },
     {
-      "apiId": 128582,
-      "name": "Jorge de Frutos",
+      "apiId": 91745,
+      "name": "Alemão",
       "position": "ST",
       "club": "Rayo Vallecano",
-      "nation": "Spain",
-      "tier": "ELITE",
+      "nation": "Brazil",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/128582.png",
-      "kitNumber": 19
+      "imageUrl": "https://media.api-sports.io/football/players/91745.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 551397,
+      "name": "E. Eto'o",
+      "position": "ST",
+      "club": "Rayo Vallecano",
+      "nation": "Cameroon",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/551397.png",
+      "kitNumber": 29
     }
   ]
 }

@@ -8,12 +8,34 @@
   },
   "players": [
     {
+      "apiId": 1590,
+      "name": "José Sá",
+      "position": "GK",
+      "club": "Wolves",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1590.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 19143,
+      "name": "S. Johnstone",
+      "position": "GK",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19143.png",
+      "kitNumber": 31
+    },
+    {
       "apiId": 19341,
       "name": "D. Bentley",
       "position": "GK",
       "club": "Wolves",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19341.png",
       "kitNumber": 25
@@ -30,31 +52,42 @@
       "kitNumber": 70
     },
     {
-      "apiId": 19143,
-      "name": "S. Johnstone",
-      "position": "GK",
+      "apiId": 169,
+      "name": "K. Trippier",
+      "position": "RB",
       "club": "Wolves",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19143.png",
-      "kitNumber": 31
+      "imageUrl": "https://media.api-sports.io/football/players/169.png",
+      "kitNumber": 2
     },
     {
-      "apiId": 1590,
-      "name": "José Sá",
-      "position": "GK",
+      "apiId": 41606,
+      "name": "Toti Gomes",
+      "position": "CB/LB",
       "club": "Wolves",
       "nation": "Portugal",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1590.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/41606.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 66407,
+      "name": "L. Krejčí",
+      "position": "CB/CDM",
+      "club": "Wolves",
+      "nation": "Czech Republic",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/66407.png",
+      "kitNumber": 37
     },
     {
       "apiId": 280687,
       "name": "Hugo Bueno",
-      "position": "CB",
+      "position": "LB",
       "club": "Wolves",
       "nation": "Spain",
       "tier": "GOLD",
@@ -76,7 +109,7 @@
     {
       "apiId": 282770,
       "name": "Rodrigo Gomes",
-      "position": "CB",
+      "position": "RM/RB",
       "club": "Wolves",
       "nation": "Portugal",
       "tier": "GOLD",
@@ -85,15 +118,37 @@
       "kitNumber": 21
     },
     {
-      "apiId": 66407,
-      "name": "L. Krejčí",
+      "apiId": 449245,
+      "name": "Pedro Lima",
+      "position": "RB",
+      "club": "Wolves",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449245.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 265782,
+      "name": "D. Møller Wolfe",
+      "position": "LB",
+      "club": "Wolves",
+      "nation": "Norway",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/265782.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 195717,
+      "name": "Y. Mosquera",
       "position": "CB",
       "club": "Wolves",
-      "nation": "Czech Republic",
-      "tier": "SILVER",
+      "nation": "Colombia",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/66407.png",
-      "kitNumber": 37
+      "imageUrl": "https://media.api-sports.io/football/players/195717.png",
+      "kitNumber": 15
     },
     {
       "apiId": 397999,
@@ -107,56 +162,23 @@
       "kitNumber": 59
     },
     {
-      "apiId": 449245,
-      "name": "Pedro Lima",
-      "position": "CB",
+      "apiId": 195103,
+      "name": "João Gomes",
+      "position": "CM/CDM",
       "club": "Wolves",
       "nation": "Brazil",
-      "tier": "BRONZE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449245.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 41606,
-      "name": "Toti Gomes",
-      "position": "CB",
-      "club": "Wolves",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41606.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 169,
-      "name": "K. Trippier",
-      "position": "CB",
-      "club": "Wolves",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/169.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 265782,
-      "name": "D. Møller Wolfe",
-      "position": "CB",
-      "club": "Wolves",
-      "nation": "Norway",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/265782.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/195103.png",
+      "kitNumber": 8
     },
     {
       "apiId": 265784,
       "name": "André",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Wolves",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/265784.png",
       "kitNumber": 7
@@ -164,13 +186,24 @@
     {
       "apiId": 20665,
       "name": "J. Bellegarde",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Wolves",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20665.png",
       "kitNumber": 27
+    },
+    {
+      "apiId": 391822,
+      "name": "Fer López",
+      "position": "CAM/CM",
+      "club": "Wolves",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/391822.png",
+      "kitNumber": 18
     },
     {
       "apiId": 546745,
@@ -184,75 +217,20 @@
       "kitNumber": 74
     },
     {
-      "apiId": 195103,
-      "name": "João Gomes",
-      "position": "CM",
-      "club": "Wolves",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195103.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 391822,
-      "name": "Fer López",
-      "position": "CM",
-      "club": "Wolves",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/391822.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 195717,
-      "name": "Y. Mosquera",
-      "position": "CM",
-      "club": "Wolves",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195717.png",
-      "kitNumber": 15
-    },
-    {
       "apiId": 401098,
       "name": "L. Rawlings",
       "position": "CM",
       "club": "Wolves",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/401098.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 19484,
-      "name": "A. Armstrong",
-      "position": "ST",
-      "club": "Wolves",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19484.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 110153,
-      "name": "T. Arokodare",
-      "position": "ST",
-      "club": "Wolves",
-      "nation": "Nigeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/110153.png",
-      "kitNumber": 14
+      "kitNumber": 58
     },
     {
       "apiId": 24888,
       "name": "Hwang Hee-Chan",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Wolves",
       "nation": "Korea Republic",
       "tier": "ELITE",
@@ -266,10 +244,54 @@
       "position": "ST",
       "club": "Wolves",
       "nation": "Mexico",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2887.png",
-      "kitNumber": 7
+      "kitNumber": 9
+    },
+    {
+      "apiId": 19484,
+      "name": "A. Armstrong",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19484.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 110153,
+      "name": "T. Arokodare",
+      "position": "ST",
+      "club": "Wolves",
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/110153.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 194116,
+      "name": "R. Saïd",
+      "position": "LW/RW",
+      "club": "Wolves",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/194116.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 296560,
+      "name": "J. Tchatchoua",
+      "position": "RM/RB",
+      "club": "Wolves",
+      "nation": "Cameroon",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/296560.png",
+      "kitNumber": 38
     },
     {
       "apiId": 456206,
@@ -277,21 +299,10 @@
       "position": "ST",
       "club": "Wolves",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/456206.png",
       "kitNumber": 36
-    },
-    {
-      "apiId": 194116,
-      "name": "R. Saïd",
-      "position": "ST",
-      "club": "Wolves",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/194116.png",
-      "kitNumber": 17
     },
     {
       "apiId": 379678,
@@ -303,17 +314,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/379678.png",
       "kitNumber": 60
-    },
-    {
-      "apiId": 296560,
-      "name": "J. Tchatchoua",
-      "position": "ST",
-      "club": "Wolves",
-      "nation": "Cameroon",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/296560.png",
-      "kitNumber": 38
     }
   ]
 }

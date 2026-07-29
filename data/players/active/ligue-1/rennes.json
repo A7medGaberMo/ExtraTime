@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/562237.png",
       "kitNumber": 80
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/601332.png",
       "kitNumber": 60
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Rennes",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21628.png",
       "kitNumber": 30
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/417830.png",
       "kitNumber": 48
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/640701.png",
       "kitNumber": 75
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Rennes",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/272460.png",
       "kitNumber": 26
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/400525.png",
       "kitNumber": 64
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Rennes",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129681.png",
       "kitNumber": 24
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/196187.png",
       "kitNumber": 36
@@ -156,7 +156,7 @@
       "position": "CB",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/653231.png",
       "kitNumber": 67
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24147.png",
       "kitNumber": 45
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Rennes",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22261.png",
       "kitNumber": 28
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/639279.png",
       "kitNumber": 79
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/456765.png",
       "kitNumber": 69
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Rennes",
       "nation": "Switzerland",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/421.png",
       "kitNumber": 7
@@ -277,7 +277,7 @@
       "position": "ST",
       "club": "Rennes",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/625629.png",
       "kitNumber": 35
@@ -310,7 +310,7 @@
       "position": "ST",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/399890.png",
       "kitNumber": 65
@@ -321,7 +321,7 @@
       "position": "ST",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22097.png",
       "kitNumber": 70
@@ -332,7 +332,7 @@
       "position": "ST",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/156465.png",
       "kitNumber": 45
@@ -354,7 +354,7 @@
       "position": "ST",
       "club": "Rennes",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/457101.png",
       "kitNumber": 77

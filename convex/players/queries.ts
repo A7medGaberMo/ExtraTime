@@ -1,15 +1,12 @@
 import { query } from "../_generated/server";
 import { v } from "convex/values";
 import { GenericQueryCtx } from "convex/server";
-import { Id } from "../_generated/dataModel";
+import { DataModel, Doc } from "../_generated/dataModel";
+import { Tier } from "../lib/constants";
 
 // ── Hydration Helper ───────────────────────────────────────
 
-async function hydratePlayer(ctx: GenericQueryCtx<any>, p: {
-  clubId: Id<"clubs">;
-  nationId: Id<"nations">;
-  [key: string]: any;
-}) {
+async function hydratePlayer(ctx: GenericQueryCtx<DataModel>, p: Doc<"players">) {
   const [club, nation] = await Promise.all([
     ctx.db.get(p.clubId),
     ctx.db.get(p.nationId),
@@ -48,7 +45,7 @@ export const getByTier = query({
     // FIX: Use the by_tier index instead of full table scan + filter
     const players = await ctx.db
       .query("players")
-      .withIndex("by_tier", (q) => q.eq("tier", args.tier as any))
+      .withIndex("by_tier", (q) => q.eq("tier", args.tier as Tier))
       .collect();
     return Promise.all(players.map((p) => hydratePlayer(ctx, p)));
   },

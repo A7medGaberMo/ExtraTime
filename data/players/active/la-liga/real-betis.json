@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 122956,
-      "name": "Diego Conde",
-      "position": "GK",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/122956.png",
-      "kitNumber": 13
-    },
-    {
       "apiId": 46990,
       "name": "Álvaro Vallés",
       "position": "GK",
@@ -28,6 +17,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46990.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 122956,
+      "name": "Diego Conde",
+      "position": "GK",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/122956.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 47302,
+      "name": "Diego Llorente",
+      "position": "CB",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47302.png",
+      "kitNumber": 3
     },
     {
       "apiId": 1561,
@@ -52,28 +63,6 @@
       "kitNumber": 2
     },
     {
-      "apiId": 439994,
-      "name": "Pablo Busto",
-      "position": "CB",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/439994.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 610742,
-      "name": "C. De Roa",
-      "position": "CB",
-      "club": "Real Betis",
-      "nation": "Argentina",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/610742.png",
-      "kitNumber": 33
-    },
-    {
       "apiId": 1564,
       "name": "Junior Firpo",
       "position": "LB",
@@ -83,39 +72,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1564.png",
       "kitNumber": 23
-    },
-    {
-      "apiId": 736,
-      "name": "Fran García",
-      "position": "CB",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/736.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 355004,
-      "name": "V. Gómez",
-      "position": "CB",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/355004.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 47302,
-      "name": "Diego Llorente",
-      "position": "CB",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47302.png",
-      "kitNumber": 3
     },
     {
       "apiId": 195100,
@@ -129,70 +85,59 @@
       "kitNumber": 4
     },
     {
+      "apiId": 736,
+      "name": "Fran García",
+      "position": "LB",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/736.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 355004,
+      "name": "V. Gómez",
+      "position": "CB",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/355004.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 439994,
+      "name": "Pablo Busto",
+      "position": "RB/CB",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/439994.png",
+      "kitNumber": 26
+    },
+    {
       "apiId": 334574,
       "name": "Ángel Ortiz",
       "position": "CB",
       "club": "Real Betis",
       "nation": "Spain",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/334574.png",
       "kitNumber": 40
     },
     {
-      "apiId": 316519,
-      "name": "F. Bernal",
-      "position": "CM",
+      "apiId": 610742,
+      "name": "C. De Roa",
+      "position": "CB",
       "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
+      "nation": "Argentina",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/316519.png",
-      "kitNumber": 32
-    },
-    {
-      "apiId": 450714,
-      "name": "Ivan Corralejo",
-      "position": "CM",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/450714.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 300885,
-      "name": "N. Deossa",
-      "position": "CM/CAM",
-      "club": "Real Betis",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/300885.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 750,
-      "name": "Álvaro Fidalgo",
-      "position": "CM/CAM",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/750.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 1697,
-      "name": "Pablo Fornals",
-      "position": "CAM/RM",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1697.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/610742.png",
+      "kitNumber": 33
     },
     {
       "apiId": 745,
@@ -200,7 +145,7 @@
       "position": "CAM/CM",
       "club": "Real Betis",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/745.png",
       "kitNumber": 22
@@ -217,6 +162,17 @@
       "kitNumber": 20
     },
     {
+      "apiId": 1697,
+      "name": "Pablo Fornals",
+      "position": "CAM/RM",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1697.png",
+      "kitNumber": 8
+    },
+    {
       "apiId": 47341,
       "name": "Marc Roca",
       "position": "CDM/CM",
@@ -228,15 +184,48 @@
       "kitNumber": 21
     },
     {
-      "apiId": 9971,
-      "name": "Antony",
-      "position": "RW",
+      "apiId": 750,
+      "name": "Álvaro Fidalgo",
+      "position": "CM/CAM",
       "club": "Real Betis",
-      "nation": "Brazil",
-      "tier": "ELITE",
+      "nation": "Spain",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9971.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/750.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 300885,
+      "name": "N. Deossa",
+      "position": "CM/CAM",
+      "club": "Real Betis",
+      "nation": "Colombia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/300885.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 316519,
+      "name": "F. Bernal",
+      "position": "CM",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/316519.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 450714,
+      "name": "Ivan Corralejo",
+      "position": "CM",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/450714.png",
+      "kitNumber": 37
     },
     {
       "apiId": 181421,
@@ -244,76 +233,21 @@
       "position": "LW/RW",
       "club": "Real Betis",
       "nation": "Morocco",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181421.png",
       "kitNumber": 10
     },
     {
-      "apiId": 443163,
-      "name": "Pablo García",
-      "position": "ST",
+      "apiId": 9971,
+      "name": "Antony",
+      "position": "RW",
       "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "GOLD",
+      "nation": "Brazil",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/443163.png",
+      "imageUrl": "https://media.api-sports.io/football/players/9971.png",
       "kitNumber": 7
-    },
-    {
-      "apiId": 47582,
-      "name": "C. Hernández",
-      "position": "ST",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47582.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 128985,
-      "name": "Iker Losada",
-      "position": "ST",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/128985.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 548691,
-      "name": "R. Marina",
-      "position": "ST",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/548691.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 544644,
-      "name": "J. A. Morante",
-      "position": "ST",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/544644.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 414442,
-      "name": "G. Petit",
-      "position": "ST",
-      "club": "Real Betis",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/414442.png",
-      "kitNumber": 9
     },
     {
       "apiId": 136117,
@@ -321,7 +255,7 @@
       "position": "LW/CAM",
       "club": "Real Betis",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/136117.png",
       "kitNumber": 17
@@ -336,6 +270,72 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47119.png",
       "kitNumber": 24
+    },
+    {
+      "apiId": 47582,
+      "name": "C. Hernández",
+      "position": "ST",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47582.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 128985,
+      "name": "Iker Losada",
+      "position": "ST/CAM",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/128985.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 443163,
+      "name": "Pablo García",
+      "position": "ST",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443163.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 548691,
+      "name": "R. Marina",
+      "position": "ST",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/548691.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 544644,
+      "name": "J. A. Morante",
+      "position": "ST",
+      "club": "Real Betis",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/544644.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 414442,
+      "name": "G. Petit",
+      "position": "ST",
+      "club": "Real Betis",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/414442.png",
+      "kitNumber": 29
     }
   ]
 }

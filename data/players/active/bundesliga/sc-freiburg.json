@@ -13,10 +13,21 @@
       "position": "GK",
       "club": "SC Freiburg",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178768.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 25905,
+      "name": "F. Müller",
+      "position": "GK",
+      "club": "SC Freiburg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25905.png",
+      "kitNumber": 21
     },
     {
       "apiId": 329578,
@@ -41,23 +52,12 @@
       "kitNumber": 24
     },
     {
-      "apiId": 25905,
-      "name": "F. Müller",
-      "position": "GK",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25905.png",
-      "kitNumber": 21
-    },
-    {
       "apiId": 2915,
       "name": "M. Ginter",
       "position": "CB",
       "club": "SC Freiburg",
       "nation": "Germany",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2915.png",
       "kitNumber": 28
@@ -65,29 +65,29 @@
     {
       "apiId": 26236,
       "name": "C. Günter",
-      "position": "CB",
+      "position": "LB/LWB",
       "club": "SC Freiburg",
       "nation": "Germany",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26236.png",
       "kitNumber": 30
     },
     {
-      "apiId": 15874,
-      "name": "A. Jung",
+      "apiId": 26240,
+      "name": "P. Lienhart",
       "position": "CB",
       "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "GOLD",
+      "nation": "Austria",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/15874.png",
-      "kitNumber": 5
+      "imageUrl": "https://media.api-sports.io/football/players/26240.png",
+      "kitNumber": 3
     },
     {
       "apiId": 26239,
       "name": "L. Kübler",
-      "position": "CB",
+      "position": "RB/CB",
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
@@ -96,26 +96,59 @@
       "kitNumber": 17
     },
     {
-      "apiId": 26240,
-      "name": "P. Lienhart",
-      "position": "CB",
+      "apiId": 15874,
+      "name": "A. Jung",
+      "position": "CB/LB",
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26240.png",
-      "kitNumber": 3
+      "imageUrl": "https://media.api-sports.io/football/players/15874.png",
+      "kitNumber": 5
     },
     {
       "apiId": 191160,
       "name": "J. Makengo",
+      "position": "LB/LWB",
+      "club": "SC Freiburg",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191160.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 202919,
+      "name": "M. Rosenfelder",
       "position": "CB",
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/191160.png",
-      "kitNumber": 33
+      "imageUrl": "https://media.api-sports.io/football/players/202919.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 178769,
+      "name": "P. Treu",
+      "position": "RB/LB",
+      "club": "SC Freiburg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178769.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 353142,
+      "name": "Berkay Yilmaz",
+      "position": "LB",
+      "club": "SC Freiburg",
+      "nation": "Turkey",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/353142.png",
+      "kitNumber": 21
     },
     {
       "apiId": 361393,
@@ -129,17 +162,6 @@
       "kitNumber": 43
     },
     {
-      "apiId": 202919,
-      "name": "M. Rosenfelder",
-      "position": "CB",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/202919.png",
-      "kitNumber": 37
-    },
-    {
       "apiId": 574674,
       "name": "K. Steinmann",
       "position": "CB",
@@ -151,31 +173,20 @@
       "kitNumber": 65
     },
     {
-      "apiId": 178769,
-      "name": "P. Treu",
-      "position": "CB",
+      "apiId": 26248,
+      "name": "V. Grifo",
+      "position": "LM/LW/CAM",
       "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "SILVER",
+      "nation": "Italy",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/178769.png",
-      "kitNumber": 29
-    },
-    {
-      "apiId": 353142,
-      "name": "Berkay Yilmaz",
-      "position": "CB",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/353142.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/26248.png",
+      "kitNumber": 32
     },
     {
       "apiId": 25313,
       "name": "J. Beste",
-      "position": "CM",
+      "position": "LM/LW/LB",
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
@@ -186,7 +197,7 @@
     {
       "apiId": 2917,
       "name": "M. Eggestein",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
@@ -195,47 +206,47 @@
       "kitNumber": 8
     },
     {
-      "apiId": 178709,
-      "name": "Y. Engelhardt",
-      "position": "CM",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/178709.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 26248,
-      "name": "V. Grifo",
-      "position": "CM",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26248.png",
-      "kitNumber": 32
-    },
-    {
-      "apiId": 26250,
-      "name": "N. Höfler",
-      "position": "CM",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26250.png",
-      "kitNumber": 27
-    },
-    {
       "apiId": 163022,
       "name": "P. Osterhage",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163022.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 26250,
+      "name": "N. Höfler",
+      "position": "CDM/CM",
+      "club": "SC Freiburg",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26250.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 178709,
+      "name": "Y. Engelhardt",
+      "position": "CM/CDM",
+      "club": "SC Freiburg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178709.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 33805,
+      "name": "R. Yamamoto",
+      "position": "CM/CAM",
+      "club": "SC Freiburg",
+      "nation": "Japan",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/33805.png",
       "kitNumber": 6
     },
     {
@@ -250,42 +261,31 @@
       "kitNumber": 69
     },
     {
-      "apiId": 33805,
-      "name": "R. Yamamoto",
-      "position": "CM",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/33805.png",
-      "kitNumber": 6
-    },
-    {
       "apiId": 202526,
       "name": "E. Dinkçi",
-      "position": "ST",
+      "position": "RW/RM/ST",
       "club": "SC Freiburg",
-      "nation": "Germany",
+      "nation": "Turkey",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202526.png",
       "kitNumber": 8
     },
     {
-      "apiId": 375930,
-      "name": "K. Goto",
+      "apiId": 202696,
+      "name": "I. Matanović",
       "position": "ST",
       "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "BRONZE",
+      "nation": "Croatia",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/375930.png",
-      "kitNumber": 42
+      "imageUrl": "https://media.api-sports.io/football/players/202696.png",
+      "kitNumber": 31
     },
     {
       "apiId": 26255,
       "name": "L. Höler",
-      "position": "ST",
+      "position": "ST/CF",
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
@@ -294,59 +294,59 @@
       "kitNumber": 9
     },
     {
-      "apiId": 431149,
-      "name": "Cyriaque Kalou Irié",
-      "position": "ST",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/431149.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 202696,
-      "name": "I. Matanović",
-      "position": "ST",
-      "club": "SC Freiburg",
-      "nation": "Croatia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/202696.png",
-      "kitNumber": 31
-    },
-    {
-      "apiId": 286710,
-      "name": "D. Scherhant",
-      "position": "ST",
-      "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286710.png",
-      "kitNumber": 7
-    },
-    {
       "apiId": 199143,
       "name": "Y. Suzuki",
-      "position": "ST",
+      "position": "ST/CAM",
       "club": "SC Freiburg",
-      "nation": "Germany",
+      "nation": "Japan",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/199143.png",
       "kitNumber": 14
     },
     {
+      "apiId": 286710,
+      "name": "D. Scherhant",
+      "position": "ST/LW",
+      "club": "SC Freiburg",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286710.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 375930,
+      "name": "K. Goto",
+      "position": "ST",
+      "club": "SC Freiburg",
+      "nation": "Japan",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/375930.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 431149,
+      "name": "Cyriaque Kalou Irié",
+      "position": "RW/ST",
+      "club": "SC Freiburg",
+      "nation": "Ivory Coast",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/431149.png",
+      "kitNumber": 22
+    },
+    {
       "apiId": 406094,
       "name": "Mateo Zelic",
       "position": "ST",
       "club": "SC Freiburg",
-      "nation": "Germany",
-      "tier": "GOLD",
+      "nation": "Croatia",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/406094.png",
-      "kitNumber": null
+      "kitNumber": 18
     }
   ]
 }

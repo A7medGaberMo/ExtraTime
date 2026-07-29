@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Marseille",
       "nation": "Argentina",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47296.png",
       "kitNumber": 1
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Marseille",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336654.png",
       "kitNumber": 40
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Marseille",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129672.png",
       "kitNumber": 92
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Marseille",
       "nation": "Argentina",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6.png",
       "kitNumber": 5
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Marseille",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568060.png",
       "kitNumber": 35
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Marseille",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2284.png",
       "kitNumber": 33
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Marseille",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/656975.png",
       "kitNumber": 72
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Marseille",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6231.png",
       "kitNumber": 32
@@ -145,7 +145,7 @@
       "position": "CM",
       "club": "Marseille",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/896.png",
       "kitNumber": 47
@@ -156,7 +156,7 @@
       "position": "CAM/LW",
       "club": "Marseille",
       "nation": "Morocco",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412.png",
       "kitNumber": 25
@@ -167,7 +167,7 @@
       "position": "CDM/CM",
       "club": "Marseille",
       "nation": "Denmark",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2735.png",
       "kitNumber": 23
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Marseille",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/656976.png",
       "kitNumber": 71
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Marseille",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/562661.png",
       "kitNumber": 76
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Marseille",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38747.png",
       "kitNumber": 27
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Marseille",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606267.png",
       "kitNumber": 78
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Marseille",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568058.png",
       "kitNumber": 70

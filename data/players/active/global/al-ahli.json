@@ -13,7 +13,7 @@
       "position": "ST/CF",
       "club": "Al-Ahli",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ivan_Toney_England_v_Ghana_23_June_2026-051.jpg",
       "kitNumber": 99
@@ -24,7 +24,7 @@
       "position": "RW/RM",
       "club": "Al-Ahli",
       "nation": "Algeria",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Mahrez_2021.jpg",
       "kitNumber": 7
@@ -35,7 +35,7 @@
       "position": "ST/CAM",
       "club": "Al-Ahli",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Roberto_Firmino_850_1557.jpg",
       "kitNumber": 10
@@ -46,7 +46,7 @@
       "position": "CM/CDM",
       "club": "Al-Ahli",
       "nation": "Ivory Coast",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Franck_Kessie_Cote_D%27Ivoire_v_Ecuador_14_June_2026-15_%28cropped%29.jpg",
       "kitNumber": 79
@@ -68,7 +68,7 @@
       "position": "GK",
       "club": "Al-Ahli",
       "nation": "Senegal",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Edouard_Mendy_France_v_Senegal_16_June_2026-375_%28cropped%29.jpg",
       "kitNumber": 16

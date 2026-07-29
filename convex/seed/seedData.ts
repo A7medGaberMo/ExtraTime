@@ -1,4 +1,5 @@
 import { mutation } from "../_generated/server";
+import { Id } from "../_generated/dataModel";
 import { v } from "convex/values";
 import { tierValidator } from "../lib/constants";
 import { LEAGUE_COUNTRY } from "../lib/constants";
@@ -110,8 +111,8 @@ export const seedAllData = mutation({
     }
 
     // 2. Cache clubs and nations
-    const clubMap = new Map<string, any>();
-    const nationMap = new Map<string, any>();
+    const clubMap = new Map<string, Id<"clubs">>();
+    const nationMap = new Map<string, Id<"nations">>();
 
     for (const p of args.players) {
       if (!clubMap.has(p.club)) {
@@ -144,6 +145,7 @@ export const seedAllData = mutation({
     for (const p of args.players) {
       const clubId = clubMap.get(p.club);
       const nationId = nationMap.get(p.nation);
+      if (!clubId || !nationId) continue;
 
       await ctx.db.insert("players", {
         name: p.name,

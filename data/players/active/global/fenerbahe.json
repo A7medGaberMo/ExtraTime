@@ -13,7 +13,7 @@
       "position": "RW/CAM",
       "club": "Fenerbahçe",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Marco_Asensio_2018.jpg",
       "kitNumber": 11
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Fenerbahçe",
       "nation": "Brazil",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Ederson_Brazil_V_Morocco_13_June_2026-14_%28cropped%29.jpg",
       "kitNumber": 31
@@ -79,7 +79,7 @@
       "position": "RB/LB",
       "club": "Fenerbahçe",
       "nation": "Turkey",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Rapid-Spartak_%2815%29_%28cropped%29.jpg",
       "kitNumber": 18
@@ -90,7 +90,7 @@
       "position": "CDM/CM",
       "club": "Fenerbahçe",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/N%27Golo_Kante_France_v_Senegal_16_June_2026-397.jpg",
       "kitNumber": 7

@@ -8,34 +8,34 @@
   },
   "players": [
     {
-      "apiId": 616142,
-      "name": "Matteo Franceschelli",
+      "apiId": 2998,
+      "name": "Ł. Skorupski",
       "position": "GK",
       "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
+      "nation": "Poland",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/616142.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/2998.png",
+      "kitNumber": 1
     },
     {
-      "apiId": 616143,
-      "name": "Riccardo Gnudi",
+      "apiId": 31098,
+      "name": "F. Ravaglia",
       "position": "GK",
       "club": "Bologna",
       "nation": "Italy",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/616143.png",
-      "kitNumber": 34
+      "imageUrl": "https://media.api-sports.io/football/players/31098.png",
+      "kitNumber": 13
     },
     {
       "apiId": 416518,
       "name": "U. Happonen",
       "position": "GK",
       "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
+      "nation": "Finland",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/416518.png",
       "kitNumber": 1
@@ -46,87 +46,32 @@
       "position": "GK",
       "club": "Bologna",
       "nation": "Italy",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/446089.png",
       "kitNumber": 25
     },
     {
-      "apiId": 31098,
-      "name": "F. Ravaglia",
+      "apiId": 616142,
+      "name": "Matteo Franceschelli",
       "position": "GK",
       "club": "Bologna",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31098.png",
-      "kitNumber": 13
+      "imageUrl": "https://media.api-sports.io/football/players/616142.png",
+      "kitNumber": 22
     },
     {
-      "apiId": 2998,
-      "name": "Ł. Skorupski",
+      "apiId": 616143,
+      "name": "Riccardo Gnudi",
       "position": "GK",
       "club": "Bologna",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2998.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 295223,
-      "name": "R. Alhassane",
-      "position": "CB",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/295223.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 626715,
-      "name": "D. Baroncioni",
-      "position": "CB",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/626715.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 31099,
-      "name": "N. Casale",
-      "position": "CB",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31099.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 416062,
-      "name": "E. Helland",
-      "position": "CB",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/416062.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 346923,
-      "name": "M. Ilić",
-      "position": "CB",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/346923.png",
-      "kitNumber": 15
+      "imageUrl": "https://media.api-sports.io/football/players/616143.png",
+      "kitNumber": 34
     },
     {
       "apiId": 1929,
@@ -140,64 +85,31 @@
       "kitNumber": 26
     },
     {
-      "apiId": 39254,
-      "name": "T. Heggem",
-      "position": "CB",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/39254.png",
-      "kitNumber": 14
-    },
-    {
       "apiId": 134,
       "name": "Juan Miranda",
-      "position": "CB",
+      "position": "LB/LWB",
       "club": "Bologna",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/134.png",
       "kitNumber": 33
     },
     {
-      "apiId": 287564,
-      "name": "M. Vitík",
+      "apiId": 31099,
+      "name": "N. Casale",
       "position": "CB",
       "club": "Bologna",
       "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/287564.png",
-      "kitNumber": 41
-    },
-    {
-      "apiId": 319919,
-      "name": "O. El Azzouzi",
-      "position": "CM",
-      "club": "Bologna",
-      "nation": "Morocco",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/319919.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 44814,
-      "name": "L. Ferguson",
-      "position": "CM",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44814.png",
-      "kitNumber": 19
+      "imageUrl": "https://media.api-sports.io/football/players/31099.png",
+      "kitNumber": 16
     },
     {
       "apiId": 47985,
       "name": "E. Holm",
-      "position": "CM",
+      "position": "RB/RWB",
       "club": "Bologna",
       "nation": "Sweden",
       "tier": "GOLD",
@@ -206,11 +118,88 @@
       "kitNumber": 2
     },
     {
-      "apiId": 1322,
-      "name": "N. Moro",
-      "position": "CM",
+      "apiId": 287564,
+      "name": "M. Vitík",
+      "position": "CB",
+      "club": "Bologna",
+      "nation": "Czechia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/287564.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 346923,
+      "name": "M. Ilić",
+      "position": "CB",
+      "club": "Bologna",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/346923.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 39254,
+      "name": "T. Heggem",
+      "position": "CB/LB",
+      "club": "Bologna",
+      "nation": "Norway",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39254.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 295223,
+      "name": "R. Alhassane",
+      "position": "LB",
+      "club": "Bologna",
+      "nation": "Niger",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/295223.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 626715,
+      "name": "D. Baroncioni",
+      "position": "CB",
       "club": "Bologna",
       "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/626715.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 416062,
+      "name": "E. Helland",
+      "position": "CB",
+      "club": "Bologna",
+      "nation": "Norway",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/416062.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 44814,
+      "name": "L. Ferguson",
+      "position": "CM/CAM",
+      "club": "Bologna",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44814.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 1322,
+      "name": "N. Moro",
+      "position": "CDM/CM",
+      "club": "Bologna",
+      "nation": "Croatia",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1322.png",
@@ -228,9 +217,20 @@
       "kitNumber": 4
     },
     {
+      "apiId": 319919,
+      "name": "O. El Azzouzi",
+      "position": "CDM/CM",
+      "club": "Bologna",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/319919.png",
+      "kitNumber": 17
+    },
+    {
       "apiId": 128461,
       "name": "N. Zortea",
-      "position": "CM",
+      "position": "RM/RB",
       "club": "Bologna",
       "nation": "Italy",
       "tier": "GOLD",
@@ -239,37 +239,15 @@
       "kitNumber": 20
     },
     {
-      "apiId": 873,
-      "name": "F. Bernardeschi",
-      "position": "ST",
+      "apiId": 30488,
+      "name": "R. Orsolini",
+      "position": "RW/RM",
       "club": "Bologna",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/873.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 30438,
-      "name": "N. Cambiaghi",
-      "position": "ST",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30438.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 584426,
-      "name": "F. Castaldo",
-      "position": "ST",
-      "club": "Bologna",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/584426.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/30488.png",
+      "kitNumber": 7
     },
     {
       "apiId": 311067,
@@ -288,54 +266,76 @@
       "position": "ST",
       "club": "Bologna",
       "nation": "Netherlands",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/93016.png",
       "kitNumber": 24
     },
     {
-      "apiId": 347265,
-      "name": "B. Domínguez",
-      "position": "ST",
+      "apiId": 30438,
+      "name": "N. Cambiaghi",
+      "position": "LW/RW",
       "club": "Bologna",
-      "nation": "Argentina",
-      "tier": "SILVER",
+      "nation": "Italy",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/347265.png",
-      "kitNumber": 30
+      "imageUrl": "https://media.api-sports.io/football/players/30438.png",
+      "kitNumber": 28
     },
     {
       "apiId": 30542,
       "name": "J. Odgaard",
-      "position": "ST",
+      "position": "ST/RW",
       "club": "Bologna",
-      "nation": "Italy",
+      "nation": "Denmark",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30542.png",
       "kitNumber": 21
     },
     {
-      "apiId": 30488,
-      "name": "R. Orsolini",
-      "position": "ST",
+      "apiId": 347265,
+      "name": "B. Domínguez",
+      "position": "LW/LM",
+      "club": "Bologna",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/347265.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 873,
+      "name": "F. Bernardeschi",
+      "position": "RW/CAM",
       "club": "Bologna",
       "nation": "Italy",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30488.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/873.png",
+      "kitNumber": 10
     },
     {
       "apiId": 278095,
       "name": "J. Rowe",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Bologna",
-      "nation": "Italy",
+      "nation": "England",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278095.png",
       "kitNumber": 11
+    },
+    {
+      "apiId": 584426,
+      "name": "F. Castaldo",
+      "position": "ST",
+      "club": "Bologna",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/584426.png",
+      "kitNumber": 9
     }
   ]
 }

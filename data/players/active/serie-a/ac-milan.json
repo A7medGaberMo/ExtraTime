@@ -19,23 +19,12 @@
       "kitNumber": 16
     },
     {
-      "apiId": 484293,
-      "name": "M. Pittarella",
-      "position": "GK",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/484293.png",
-      "kitNumber": 37
-    },
-    {
       "apiId": 30394,
       "name": "P. Terracciano",
       "position": "GK",
       "club": "AC Milan",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30394.png",
       "kitNumber": 1
@@ -46,98 +35,21 @@
       "position": "GK",
       "club": "AC Milan",
       "nation": "Italy",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386298.png",
       "kitNumber": 96
     },
     {
-      "apiId": 396380,
-      "name": "Z. Athekame",
-      "position": "CM",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/396380.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 374359,
-      "name": "D. Bartesaghi",
-      "position": "CM",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/374359.png",
-      "kitNumber": 33
-    },
-    {
-      "apiId": 162141,
-      "name": "K. De Winter",
-      "position": "CB",
-      "club": "AC Milan",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162141.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 46731,
-      "name": "P. Estupiñán",
-      "position": "CB",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46731.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 56473,
-      "name": "M. Gabbia",
-      "position": "CB",
+      "apiId": 484293,
+      "name": "M. Pittarella",
+      "position": "GK",
       "club": "AC Milan",
       "nation": "Italy",
       "tier": "BRONZE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/56473.png",
-      "kitNumber": 46
-    },
-    {
-      "apiId": 162952,
-      "name": "Mario Gila",
-      "position": "CB",
-      "club": "AC Milan",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162952.png",
-      "kitNumber": 34
-    },
-    {
-      "apiId": 394740,
-      "name": "D. Odogu",
-      "position": "CB",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/394740.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 45826,
-      "name": "S. Pavlović",
-      "position": "CB",
-      "club": "AC Milan",
-      "nation": "Serbia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/45826.png",
-      "kitNumber": 31
+      "imageUrl": "https://media.api-sports.io/football/players/484293.png",
+      "kitNumber": 37
     },
     {
       "apiId": 19209,
@@ -151,37 +63,114 @@
       "kitNumber": 23
     },
     {
+      "apiId": 45826,
+      "name": "S. Pavlović",
+      "position": "CB",
+      "club": "AC Milan",
+      "nation": "Serbia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/45826.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 56473,
+      "name": "M. Gabbia",
+      "position": "CB",
+      "club": "AC Milan",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/56473.png",
+      "kitNumber": 46
+    },
+    {
+      "apiId": 46731,
+      "name": "P. Estupiñán",
+      "position": "LB",
+      "club": "AC Milan",
+      "nation": "Ecuador",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46731.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 162141,
+      "name": "K. De Winter",
+      "position": "CB/RB",
+      "club": "AC Milan",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162141.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 162952,
+      "name": "Mario Gila",
+      "position": "CB",
+      "club": "AC Milan",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162952.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 264472,
+      "name": "F. Terracciano",
+      "position": "RB/LB",
+      "club": "AC Milan",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/264472.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 374359,
+      "name": "D. Bartesaghi",
+      "position": "LB",
+      "club": "AC Milan",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/374359.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 396380,
+      "name": "Z. Athekame",
+      "position": "RB",
+      "club": "AC Milan",
+      "nation": "Switzerland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/396380.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 394740,
+      "name": "D. Odogu",
+      "position": "CB",
+      "club": "AC Milan",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/394740.png",
+      "kitNumber": 27
+    },
+    {
       "apiId": 496790,
       "name": "V. Vladimirov",
       "position": "CB",
       "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "SILVER",
+      "nation": "Bulgaria",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/496790.png",
       "kitNumber": 34
-    },
-    {
-      "apiId": 336580,
-      "name": "S. Vos",
-      "position": "CM",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/336580.png",
-      "kitNumber": 55
-    },
-    {
-      "apiId": 452330,
-      "name": "C. Comotto",
-      "position": "CM",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/452330.png",
-      "kitNumber": 28
     },
     {
       "apiId": 22254,
@@ -195,15 +184,15 @@
       "kitNumber": 19
     },
     {
-      "apiId": 264705,
-      "name": "A. Jashari",
+      "apiId": 272,
+      "name": "A. Rabiot",
       "position": "CM",
       "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "SILVER",
+      "nation": "France",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/264705.png",
-      "kitNumber": 30
+      "imageUrl": "https://media.api-sports.io/football/players/272.png",
+      "kitNumber": 12
     },
     {
       "apiId": 2292,
@@ -217,45 +206,23 @@
       "kitNumber": 8
     },
     {
-      "apiId": 754,
-      "name": "L. Modrić",
-      "position": "CM",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/754.png",
-      "kitNumber": 14
-    },
-    {
       "apiId": 162106,
       "name": "Y. Musah",
       "position": "CM/RM",
       "club": "AC Milan",
       "nation": "USA",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162106.png",
       "kitNumber": 80
     },
     {
-      "apiId": 272,
-      "name": "A. Rabiot",
-      "position": "CM",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/272.png",
-      "kitNumber": 12
-    },
-    {
       "apiId": 31056,
       "name": "S. Ricci",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "AC Milan",
       "nation": "Italy",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31056.png",
       "kitNumber": 4
@@ -263,13 +230,46 @@
     {
       "apiId": 1417,
       "name": "A. Saelemaekers",
-      "position": "CM",
+      "position": "RM/RW",
       "club": "AC Milan",
       "nation": "Belgium",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1417.png",
       "kitNumber": 56
+    },
+    {
+      "apiId": 336580,
+      "name": "S. Vos",
+      "position": "CM/CDM",
+      "club": "AC Milan",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336580.png",
+      "kitNumber": 55
+    },
+    {
+      "apiId": 264705,
+      "name": "A. Jashari",
+      "position": "CM",
+      "club": "AC Milan",
+      "nation": "Switzerland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/264705.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 452330,
+      "name": "C. Comotto",
+      "position": "CM",
+      "club": "AC Milan",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/452330.png",
+      "kitNumber": 28
     },
     {
       "apiId": 448968,
@@ -283,15 +283,92 @@
       "kitNumber": 45
     },
     {
-      "apiId": 264472,
-      "name": "F. Terracciano",
-      "position": "RB/LB",
+      "apiId": 22236,
+      "name": "Rafael Leão",
+      "position": "LW/ST",
+      "club": "AC Milan",
+      "nation": "Portugal",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22236.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 17,
+      "name": "C. Pulišić",
+      "position": "RW/LW/CAM",
+      "club": "AC Milan",
+      "nation": "USA",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/17.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 269,
+      "name": "C. Nkunku",
+      "position": "ST/CAM",
+      "club": "AC Milan",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/269.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 94562,
+      "name": "S. Giménez",
+      "position": "ST",
+      "club": "AC Milan",
+      "nation": "Mexico",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/94562.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 41585,
+      "name": "Gonçalo Ramos",
+      "position": "ST",
+      "club": "AC Milan",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41585.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 1696,
+      "name": "S. Chukwueze",
+      "position": "RW/RM",
+      "club": "AC Milan",
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1696.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 436260,
+      "name": "F. Camarda",
+      "position": "ST",
       "club": "AC Milan",
       "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/436260.png",
+      "kitNumber": 73
+    },
+    {
+      "apiId": 449642,
+      "name": "A. Kostić",
+      "position": "LM/LB",
+      "club": "AC Milan",
+      "nation": "Serbia",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/264472.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/449642.png",
+      "kitNumber": 17
     },
     {
       "apiId": 336928,
@@ -299,7 +376,7 @@
       "position": "ST",
       "club": "AC Milan",
       "nation": "Italy",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336928.png",
       "kitNumber": 25
@@ -310,32 +387,10 @@
       "position": "ST",
       "club": "AC Milan",
       "nation": "Italy",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/582073.png",
       "kitNumber": 35
-    },
-    {
-      "apiId": 436260,
-      "name": "F. Camarda",
-      "position": "ST",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/436260.png",
-      "kitNumber": 73
-    },
-    {
-      "apiId": 1696,
-      "name": "S. Chukwueze",
-      "position": "ST",
-      "club": "AC Milan",
-      "nation": "Nigeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1696.png",
-      "kitNumber": 21
     },
     {
       "apiId": 359100,
@@ -347,72 +402,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/359100.png",
       "kitNumber": 70
-    },
-    {
-      "apiId": 94562,
-      "name": "S. Giménez",
-      "position": "ST",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/94562.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 449642,
-      "name": "A. Kostić",
-      "position": "ST",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449642.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 22236,
-      "name": "Rafael Leão",
-      "position": "LW/ST",
-      "club": "AC Milan",
-      "nation": "Portugal",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22236.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 269,
-      "name": "C. Nkunku",
-      "position": "ST",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/269.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 17,
-      "name": "C. Pulišić",
-      "position": "ST",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/17.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 41585,
-      "name": "Gonçalo Ramos",
-      "position": "ST",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41585.png",
-      "kitNumber": 9
     }
   ]
 }

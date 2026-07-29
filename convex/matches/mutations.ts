@@ -21,8 +21,8 @@ export const createFromAuction = mutation({
     if (existing) return existing._id;
 
     // Extract player IDs from each squad
-    const hostSquad = auction.host.squad.map((s: any) => s.playerId);
-    const guestSquad = auction.guest?.squad.map((s: any) => s.playerId) ?? [];
+    const hostSquad = auction.host.squad.map((s) => s.playerId);
+    const guestSquad = auction.guest?.squad.map((s) => s.playerId) ?? [];
 
     const matchId = await ctx.db.insert("matches", {
       roomId: args.roomId,
