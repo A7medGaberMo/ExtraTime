@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Tottenham",
       "nation": "Italy",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31354.png",
       "kitNumber": 1
@@ -68,7 +68,7 @@
       "position": "CB/LB",
       "club": "Tottenham",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152849.png",
       "kitNumber": 37
@@ -233,7 +233,7 @@
       "position": "CAM/CM",
       "club": "Tottenham",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18784.png",
       "kitNumber": 10
@@ -244,7 +244,7 @@
       "position": "CM/CAM",
       "club": "Tottenham",
       "nation": "Sweden",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/347316.png",
       "kitNumber": 15
@@ -255,7 +255,7 @@
       "position": "CM/CDM",
       "club": "Tottenham",
       "nation": "Senegal",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237129.png",
       "kitNumber": 29
@@ -266,7 +266,7 @@
       "position": "CM/CDM",
       "club": "Tottenham",
       "nation": "Italy",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31146.png",
       "kitNumber": 8
@@ -310,7 +310,7 @@
       "position": "CM",
       "club": "Tottenham",
       "nation": "Portugal",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336585.png",
       "kitNumber": 18
@@ -420,7 +420,7 @@
       "position": "LW/RW",
       "club": "Tottenham",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380690.png",
       "kitNumber": 47
@@ -445,7 +445,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/293163.png",
-      "kitNumber": 33
+      "kitNumber": 41
     },
     {
       "apiId": 162552,

@@ -35,7 +35,7 @@
       "position": "LB",
       "club": "Fulham",
       "nation": "USA",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19549.png",
       "kitNumber": 33
@@ -123,7 +123,7 @@
       "position": "CAM/LW",
       "club": "Fulham",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1161.png",
       "kitNumber": 32

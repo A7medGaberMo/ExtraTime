@@ -68,7 +68,7 @@
       "position": "CB/LB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152953.png",
       "kitNumber": 6
@@ -79,7 +79,7 @@
       "position": "RB/CB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19545.png",
       "kitNumber": 24
@@ -211,7 +211,7 @@
       "position": "CDM/CM",
       "club": "Chelsea",
       "nation": "Ecuador",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/116117.png",
       "kitNumber": 25
@@ -222,7 +222,7 @@
       "position": "CM/CDM",
       "club": "Chelsea",
       "nation": "Argentina",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5996.png",
       "kitNumber": 8
@@ -321,7 +321,7 @@
       "position": "ST/CF",
       "club": "Chelsea",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10329.png",
       "kitNumber": 20
@@ -332,7 +332,7 @@
       "position": "RW/CAM",
       "club": "Chelsea",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/425733.png",
       "kitNumber": 41

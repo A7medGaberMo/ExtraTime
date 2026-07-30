@@ -123,7 +123,7 @@
       "position": "LB",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19610.png",
       "kitNumber": 77
@@ -200,7 +200,7 @@
       "position": "CAM/CM",
       "club": "Nottingham Forest",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18746.png",
       "kitNumber": 10
@@ -221,11 +221,11 @@
       "name": "I. Sangaré",
       "position": "CDM/CM",
       "club": "Nottingham Forest",
-      "nation": "Côte d'Ivoire",
+      "nation": "Ivory Coast",
       "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22149.png",
-      "kitNumber": 6
+      "kitNumber": 40
     },
     {
       "apiId": 6056,
@@ -401,7 +401,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383771.png",
-      "kitNumber": 77
+      "kitNumber": 41
     }
   ]
 }

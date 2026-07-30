@@ -38,7 +38,7 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20619.png",
-      "kitNumber": 1
+      "kitNumber": 40
     },
     {
       "apiId": 416697,
@@ -49,7 +49,7 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/416697.png",
-      "kitNumber": 13
+      "kitNumber": 41
     },
     {
       "apiId": 403221,
@@ -60,7 +60,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403221.png",
-      "kitNumber": 1
+      "kitNumber": 42
     },
     {
       "apiId": 342243,
@@ -112,7 +112,7 @@
       "position": "CB/RB",
       "club": "Arsenal",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38746.png",
       "kitNumber": 12
@@ -170,7 +170,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/418403.png",
-      "kitNumber": 2
+      "kitNumber": 43
     },
     {
       "apiId": 482903,
@@ -192,7 +192,7 @@
       "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2937.png",
-      "kitNumber": 41
+      "kitNumber": 44
     },
     {
       "apiId": 37127,
@@ -200,7 +200,7 @@
       "position": "CM/CAM",
       "club": "Arsenal",
       "nation": "Norway",
-      "tier": "MASTER",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37127.png",
       "kitNumber": 8
@@ -269,7 +269,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/553530.png",
-      "kitNumber": 6
+      "kitNumber": 45
     },
     {
       "apiId": 1460,
@@ -346,7 +346,7 @@
       "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161800.png",
-      "kitNumber": 8
+      "kitNumber": 46
     },
     {
       "apiId": 463908,
@@ -357,7 +357,7 @@
       "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/463908.png",
-      "kitNumber": 7
+      "kitNumber": 47
     },
     {
       "apiId": 457731,
@@ -368,7 +368,7 @@
       "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/457731.png",
-      "kitNumber": 11
+      "kitNumber": 48
     }
   ]
 }
