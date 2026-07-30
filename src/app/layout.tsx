@@ -83,10 +83,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark overflow-x-hidden">
-      <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} font-sans antialiased bg-background text-foreground min-h-screen w-full flex flex-col items-center justify-between overflow-x-hidden selection:bg-lime selection:text-background`}>
+      <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-lime selection:text-background`}>
         <ConvexClientProvider>
           <Header />
-          <main className="flex-1 w-full max-w-7xl mx-auto px-3 sm:px-4 py-4 sm:py-8 pb-24 md:pb-8 animate-fade-in overflow-x-hidden">
+          <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 pb-24 md:pb-8 animate-fade-in">
             {children}
           </main>
           <Footer />
