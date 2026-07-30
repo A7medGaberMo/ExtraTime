@@ -319,7 +319,7 @@ export default function PacksPage() {
   };
 
   return (
-    <article className="space-y-6 pb-16 animate-fade-in max-w-7xl mx-auto font-sans">
+    <article className="space-y-6 animate-fade-in max-w-7xl mx-auto font-sans">
       {/* Top Header & Tokens Balance */}
       <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-3">
         <PageHeader
@@ -433,8 +433,8 @@ export default function PacksPage() {
               </h2>
             </div>
 
-            {/* 3-Card Display Layout: Strictly Horizontal Row on Mobile & Desktop, No Box Shadows */}
-            <div className="flex flex-row items-center justify-center gap-1 sm:gap-4 py-2 w-full max-w-4xl">
+            {/* 3-Card Display Layout: wraps to 2 lines on narrow screens to prevent overflow */}
+            <div className="flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 py-2 w-full max-w-4xl mx-auto px-1">
               {openedCards.map((player, idx) => {
                 const isCenter = idx === 1;
 
@@ -442,7 +442,7 @@ export default function PacksPage() {
                   <div
                     key={player.id}
                     onClick={() => setSelectedModalCard(player)}
-                    className={`transform transition-all duration-300 cursor-pointer animate-slide-up scale-[0.78] xs:scale-[0.85] sm:scale-100 shrink-0 ${isCenter ? 'z-20 sm:-translate-y-1.5' : 'z-10'
+                    className={`transform transition-all duration-300 cursor-pointer animate-slide-up scale-[0.78] sm:scale-[0.85] lg:scale-100 shrink-0 ${isCenter ? 'z-20 sm:-translate-y-1.5' : 'z-10'
                       }`}
                     style={{ animationDelay: `${idx * 150}ms` }}
                   >

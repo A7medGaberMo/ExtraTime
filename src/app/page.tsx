@@ -47,7 +47,7 @@ export default function HomePage() {
   }
 
   return (
-    <article className="max-w-4xl mx-auto flex flex-col items-center gap-10 py-6 md:py-12 pb-24 md:pb-12 animate-fade-in">
+    <article className="max-w-4xl mx-auto flex flex-col items-center gap-10 py-6 md:py-12 animate-fade-in">
       {/* ── HERO ────────────────────────────────────────────────────────── */}
       <header className="text-center space-y-5 relative">
         {/* Ambient glow */}
@@ -67,8 +67,8 @@ export default function HomePage() {
             Draft real-world stars, outsmart rivals in tactical auctions, unlock tier packs, and dominate the arena.
           </p>
 
-          {/* Dynamic DB Players Badge Card */}
-          <div className="pt-2 flex items-center justify-center">
+          {/* Dynamic DB Players Badge Card (Desktop only to prevent mobile duplication) */}
+          <div className="pt-2 hidden sm:flex items-center justify-center">
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-slate-900/90 border border-lime/30 shadow-xl backdrop-blur-md transition-all hover:border-lime/60">
               <div className="flex items-center justify-center w-8 h-8 rounded-xl bg-lime/10 text-lime border border-lime/30 shrink-0">
                 <Users className="w-4 h-4" />

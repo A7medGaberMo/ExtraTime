@@ -78,7 +78,7 @@ export default function RootLayout({
       <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col selection:bg-lime selection:text-background`}>
         <ConvexClientProvider>
           <Header />
-          <main className="flex-1 container mx-auto px-4 py-8 animate-fade-in">
+          <main className="flex-1 container mx-auto px-4 py-8 pb-24 md:pb-8 animate-fade-in">
             {children}
           </main>
           <Footer />
