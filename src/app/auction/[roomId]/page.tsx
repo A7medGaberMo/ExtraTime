@@ -226,7 +226,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   /* ── RENDER ─────────────────────────────────────────────────── */
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-2.5 animate-fade-in relative">
+    <div className="mx-auto flex max-w-2xl flex-col gap-3 animate-fade-in relative">
       {/* CARD REVEAL OVERLAY */}
       {state.lastCompletedRound && (
         <BidRevealAnimation isOpen={showReveal} onClose={handleRevealClose}
@@ -254,26 +254,20 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       )}
 
       {/* ── SCOREBAR ─────────────────────────────────────────── */}
-      <div className="rounded-2xl border border-white/10 bg-card/95 p-3 shadow-xl backdrop-blur-xl">
-        <div className="flex items-center justify-between gap-3">
-          <div className="grid flex-1 grid-cols-[1fr_auto_1fr] items-center gap-2">
-            <div className="flex min-w-0 items-center gap-1.5 rounded-xl border border-lime/30 bg-lime/10 px-2.5 py-2">
-              <DollarSign className="w-3.5 h-3.5 text-lime" />
-              <div className="flex min-w-0 flex-col">
-                <span className="text-[9px] text-steel font-bold uppercase leading-none">You</span>
-                <span className="font-stats text-sm text-lime leading-tight">${myBudget}M</span>
-              </div>
+      <div className="rounded-2xl border border-white/10 bg-card/95 p-2.5 sm:p-3 shadow-xl backdrop-blur-xl">
+        <div className="flex items-center justify-between gap-1.5 sm:gap-3">
+          <div className="flex flex-1 items-stretch gap-1 sm:gap-2 min-w-0">
+            <div className="flex flex-col items-center justify-center gap-0 rounded-lg border border-lime/30 bg-lime/10 px-2 py-1 sm:px-3 sm:py-1.5 min-w-0 flex-1">
+              <span className="text-[7px] sm:text-[9px] text-steel font-bold uppercase leading-tight">You</span>
+              <span className="font-stats text-xs sm:text-sm text-lime leading-tight">${myBudget}M</span>
             </div>
-            <span className="text-steel/50 text-xs font-bold">vs</span>
-            <div className="flex min-w-0 items-center gap-1.5 rounded-xl border border-rose-500/20 bg-rose-500/10 px-2.5 py-2">
-              <DollarSign className="w-3.5 h-3.5 text-rose-400" />
-              <div className="flex min-w-0 flex-col">
-                <span className="text-[9px] text-steel font-bold uppercase leading-none">Rival</span>
-                <span className="font-stats text-sm text-rose-400 leading-tight">${opponent?.budget ?? 0}M</span>
-              </div>
+            <span className="flex items-center text-[9px] sm:text-xs text-steel/50 font-bold shrink-0 px-0.5">vs</span>
+            <div className="flex flex-col items-center justify-center gap-0 rounded-lg border border-rose-500/20 bg-rose-500/10 px-2 py-1 sm:px-3 sm:py-1.5 min-w-0 flex-1">
+              <span className="text-[7px] sm:text-[9px] text-steel font-bold uppercase leading-tight">Rival</span>
+              <span className="font-stats text-xs sm:text-sm text-rose-400 leading-tight">${opponent?.budget ?? 0}M</span>
             </div>
           </div>
-          <AuctionTimer timeLeft={timeLeft} maxTime={30} isActive={isActive} size={44} showBoost={isActivatingPerk} />
+          <AuctionTimer timeLeft={timeLeft} maxTime={30} isActive={isActive} size={40} showBoost={isActivatingPerk} />
         </div>
         <div className="mt-2.5 flex items-center gap-2">
           <div className="flex-1 h-1.5 bg-border/40 rounded-full overflow-hidden">
@@ -359,7 +353,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
       {/* ── BID CONTROLS ─────────────────────────────────────── */}
       {isMyTurn ? (
-        <div className="bg-card/95 border border-lime/30 rounded-2xl p-3 sm:p-4 space-y-3 shadow-xl animate-slide-up backdrop-blur-xl">
+        <div className="bg-card/95 border border-lime/30 rounded-2xl p-3 sm:p-4 space-y-3.5 shadow-xl animate-slide-up backdrop-blur-xl">
           <div className="flex items-center justify-between gap-2">
             <span className="text-lime font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 fill-lime" /> Your turn to bid
