@@ -13,8 +13,9 @@ import { TacticalPitch } from "@/components/shared/tactical-pitch";
 import type { PlayerCardData } from "@/types/player";
 import { useGuestSession } from "@/hooks/use-guest-session";
 import {
-  Loader2, ArrowRight, X, Sparkles, Zap, Copy, Check,
-  Swords, Eye, Binoculars, DollarSign, ChevronDown, ChevronUp
+  Loader2, ArrowRight, X, Layers, Zap, Copy, Check,
+  Swords, Eye, Binoculars, DollarSign, ChevronDown, ChevronUp,
+  Sparkles
 } from "lucide-react";
 
 const TIER_COLORS: Record<string, string> = {
@@ -30,6 +31,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const [showReveal, setShowReveal] = useState(false);
   const [showFormation, setShowFormation] = useState(true);
   const prevRoundRef = useRef<number | null>(null);
+  const pendingRedirectRef = useRef(false);
+  const completedTriggeredRef = useRef(false);
 
   const state = useQuery(
     api.auctions.queries.getState,
@@ -42,12 +45,20 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     }
   }, []);
 
+  // Detect auction completion → show final round reveal before redirect
   useEffect(() => {
-    if (state?.auction?.status === "completed" || state?.room?.status === "completed") {
-      const timer = setTimeout(() => router.push(`/result/${roomId}`), 1500);
-      return () => clearTimeout(timer);
+    const isCompleted = state?.auction?.status === "completed" || state?.room?.status === "completed";
+    if (isCompleted) {
+      if (state?.lastCompletedRound && !completedTriggeredRef.current) {
+        completedTriggeredRef.current = true;
+        setShowReveal(true);
+        pendingRedirectRef.current = true;
+      } else if (!state?.lastCompletedRound) {
+        const timer = setTimeout(() => router.push(`/result/${roomId}`), 1500);
+        return () => clearTimeout(timer);
+      }
     }
-  }, [state?.auction?.status, state?.room?.status, roomId, router]);
+  }, [state?.auction?.status, state?.room?.status, state?.lastCompletedRound, roomId, router]);
 
   const placeBid = useMutation(api.auctions.mutations.placeBid);
   const pass = useMutation(api.auctions.mutations.pass);
@@ -163,13 +174,18 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   const handleRevealClose = useCallback(() => {
     setShowReveal(false);
+    if (pendingRedirectRef.current) {
+      pendingRedirectRef.current = false;
+      router.push(`/result/${roomId}`);
+      return;
+    }
     setShowFormation(true);
     if (typeof window !== "undefined" && window.innerWidth < 768) {
       setTimeout(() => {
         setShowFormation(false);
       }, 3800);
     }
-  }, []);
+  }, [router, roomId]);
 
   const copyCode = () => {
     if (!room?.code) return;
@@ -273,10 +289,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       {/* ── LIVE FORMATION VIEW ──────────────────────────────── */}
       <div className="bg-card/95 border border-white/10 rounded-2xl overflow-hidden shadow-xl backdrop-blur-xl">
         <button onClick={() => setShowFormation(!showFormation)}
-          className="w-full px-4 py-2.5 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-steel hover:text-white transition-colors">
+          className="w-full px-4 py-3 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-steel hover:text-white transition-colors">
           <span className="flex items-center gap-2">
-            <Sparkles className="w-3.5 h-3.5 text-lime" />
-            Live Squad Builder ({mySquad.filter(s => s.player).length}/{totalRounds})
+            <Layers className="w-4 h-4 text-lime" />
+            Squad · {mySquad.filter(s => s.player).length}/{totalRounds}
           </span>
           {showFormation ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
         </button>
@@ -299,20 +315,17 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[240px] h-[140px] blur-[90px] rounded-full pointer-events-none opacity-15"
           style={{ backgroundColor: tierColor }} />
 
-        <div className="relative z-10 flex items-center justify-between gap-2 mb-2">
-          <div className="flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded-lg text-xs font-black uppercase tracking-wider border shadow-sm"
-              style={{ color: tierColor, backgroundColor: `${tierColor}15`, borderColor: `${tierColor}40` }}>
-              {currentPosition}
-            </span>
-            <span className="text-[10px] text-steel font-bold uppercase tracking-wider">{mainPlayer?.tier}</span>
-          </div>
-          <span className={`shrink-0 text-[11px] sm:text-xs font-bold px-2.5 py-1 rounded-full border ${
+        <div className="relative z-10 flex items-center justify-between gap-2 mb-3">
+          <span className="px-2.5 py-0.5 rounded-lg text-xs font-black uppercase tracking-wider border shadow-sm"
+            style={{ color: tierColor, backgroundColor: `${tierColor}15`, borderColor: `${tierColor}40` }}>
+            {currentPosition} · {mainPlayer?.tier}
+          </span>
+          <span className={`shrink-0 text-[11px] font-bold px-2.5 py-1 rounded-full border ${
             highestBid === 0 ? "bg-slate-900 border-border text-steel"
               : iAmLeading ? "bg-lime/10 border-lime/30 text-lime"
               : "bg-rose-500/10 border-rose-500/20 text-rose-400"
           }`}>
-            {highestBid === 0 ? "Opening Bid" : iAmLeading ? `You lead $${highestBid}M` : `Rival leads $${highestBid}M`}
+            {highestBid === 0 ? "Open" : iAmLeading ? `Lead $${highestBid}M` : `Rival $${highestBid}M`}
           </span>
         </div>
 

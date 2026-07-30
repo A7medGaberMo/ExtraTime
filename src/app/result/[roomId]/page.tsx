@@ -57,6 +57,9 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   const myName = viewerName ? `You (${viewerName})` : "You";
   const rivalName = opponentName ?? "Rival";
 
+  const matchSize = (state?.auction?.matchSize as 5 | 11) || 11;
+  const totalRounds = matchSize === 5 ? 5 : 11;
+
   const mySquadQuality = useMemo(
     () => mySquad.reduce((sum, s) => sum + (TIER_WEIGHTS[s.player?.tier as string] ?? 1), 0),
     [mySquad]
@@ -219,8 +222,9 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           {activeTab === "me" ? (
             <TacticalPitch
               formation={state?.auction?.formation || "4-3-3"}
-              matchSize={(state?.auction?.matchSize as 5 | 11) || 11}
+              matchSize={matchSize}
               squad={mySquad}
+              totalRounds={totalRounds}
               title={`${myName}'s Lineup`}
               accentColor="#95E810"
               badgeLabel="HOME SQUAD"
@@ -228,8 +232,9 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           ) : (
             <TacticalPitch
               formation={state?.auction?.formation || "4-3-3"}
-              matchSize={(state?.auction?.matchSize as 5 | 11) || 11}
+              matchSize={matchSize}
               squad={rivalSquad}
+              totalRounds={totalRounds}
               title={`${rivalName}'s Lineup`}
               accentColor="#F43F5E"
               badgeLabel={`AWAY · ${topTierLabel(rivalTierCounts)}`}

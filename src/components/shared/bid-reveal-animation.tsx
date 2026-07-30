@@ -74,10 +74,13 @@ export function BidRevealAnimation({
 
   if (!isOpen || !lastCompletedRound) return null;
 
-  const { roundNumber, position, myPick, winnerIsMe, winnerName, winningBid, mainPlayer, subPlayer } = lastCompletedRound;
+  const { roundNumber, position, myPick, opponentPick, winnerIsMe, winnerName, winningBid } = lastCompletedRound;
 
-  // Determine who got which player
   const youGotMain = myPick ? !myPick.isSub : false;
+  const yourPlayer = myPick?.player ?? null;
+  const yourCost = myPick?.cost ?? 0;
+  const rivalPlayer = opponentPick?.player ?? null;
+  const rivalCost = opponentPick?.cost ?? 0;
 
   return (
     <div
@@ -89,16 +92,12 @@ export function BidRevealAnimation({
         setTimeout(() => onCloseRef.current(), 280);
       }}
     >
-      {/* Ambient Glow */}
-      <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[480px] h-[300px] sm:h-[480px] ${
-        winnerIsMe ? "bg-lime/15" : "bg-rose-500/10"
-      } blur-[130px] rounded-full pointer-events-none`} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[480px] h-[300px] sm:h-[480px] bg-lime/12 blur-[130px] rounded-full pointer-events-none" />
 
       <div
-        className="relative max-w-lg w-full flex flex-col items-center gap-3 sm:gap-4 animate-scale-in bg-slate-900/90 border border-white/10 rounded-2xl p-4 sm:p-6 shadow-[0_0_60px_rgba(0,0,0,0.85)] backdrop-blur-md max-h-[96vh] overflow-y-auto"
+        className="relative max-w-lg w-full flex flex-col items-center gap-4 animate-scale-in bg-slate-900/90 border border-white/10 rounded-2xl p-4 sm:p-6 shadow-[0_0_60px_rgba(0,0,0,0.85)] backdrop-blur-md max-h-[96vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close Button */}
         <button
           onClick={() => {
             setStage("exit");
@@ -109,113 +108,82 @@ export function BidRevealAnimation({
           <X className="w-4 h-4" />
         </button>
 
-        {/* Header Summary */}
-        <div className="flex flex-col items-center text-center space-y-1.5 z-10 pt-1">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/80 border border-white/15 text-[10px] sm:text-xs font-black uppercase tracking-widest text-steel shadow-inner">
-            <Sparkles className="w-3.5 h-3.5 text-lime" />
-            Round {roundNumber} Reveal · {position}
+        {/* Round + Position */}
+        <div className="flex flex-col items-center text-center z-10 pt-1">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/80 border border-white/15 text-[10px] font-black uppercase tracking-widest text-steel shadow-inner">
+            <Sparkles className="w-3 h-3 text-lime" />
+            R{roundNumber} · {position}
+          </div>
+        </div>
+
+        {/* Status */}
+        <div className="z-10 text-center">
+          {winnerIsMe ? (
+            <div className="text-lime text-sm font-black uppercase tracking-wider flex items-center gap-1.5 justify-center">
+              <Trophy className="w-4 h-4" />
+              You Got · ${winningBid}M
+            </div>
+          ) : (
+            <div className="text-amber-300 text-sm font-black uppercase tracking-wider flex items-center gap-1.5 justify-center">
+              <HelpCircle className="w-4 h-4" />
+              {winningBid > 0 ? `Rival Got · $${winningBid}M` : 'Dual Pass'}
+            </div>
+          )}
+        </div>
+
+        {/* Horizontal card comparison */}
+        <div className="relative w-full z-10">
+          {/* RIVAL card (behind, smaller) */}
+          <div className={`flex flex-col items-center gap-1 transition-all duration-700 delay-100 transform absolute top-0 right-1 ${
+            stage === "show" ? "translate-y-0 opacity-60" : "translate-y-4 opacity-0"
+          }`}>
+            <span className="text-[7px] font-black uppercase tracking-widest text-rose-400/60">Rival</span>
+            <div className="relative scale-[0.58] sm:scale-[0.62] origin-center">
+              {rivalPlayer ? (
+                <>
+                  <PlayerCard player={rivalPlayer} size="sm" />
+                  <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-slate-950 text-rose-300/70 text-[7px] font-black uppercase whitespace-nowrap border border-rose-500/20">
+                    ${rivalCost}M
+                  </div>
+                </>
+              ) : yourPlayer && !rivalPlayer ? null : null}
+            </div>
           </div>
 
-          <h2 className="text-sm sm:text-lg font-black uppercase tracking-tight flex items-center gap-2">
-            {winningBid > 0 ? (
-              winnerIsMe ? (
+          {/* YOUR card (front, larger) */}
+          <div className={`flex flex-col items-center gap-1 transition-all duration-700 transform ${
+            stage === "show" ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+          }`}>
+            <span className="text-[8px] font-black uppercase tracking-widest text-lime">You</span>
+            <div className="relative scale-[0.82] sm:scale-[0.9] origin-center">
+              {yourPlayer ? (
                 <>
-                  <Trophy className="w-4.5 h-4.5 sm:w-5.5 sm:h-5.5 text-lime shrink-0 animate-bounce" />
-                  <span className="text-lime">Target Won for ${winningBid}M</span>
+                  <PlayerCard player={yourPlayer} size="sm" />
+                  <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-full bg-lime text-slate-950 text-[8px] font-black uppercase whitespace-nowrap shadow-lg border border-lime">
+                    ${yourCost}M
+                  </div>
                 </>
               ) : (
-                <>
-                  <ShieldCheck className="w-4.5 h-4.5 sm:w-5.5 sm:h-5.5 text-rose-400 shrink-0" />
-                  <span className="text-rose-400">{winnerName} won for ${winningBid}M</span>
-                </>
-              )
-            ) : (
-              <>
-                <HelpCircle className="w-4.5 h-4.5 sm:w-5.5 sm:h-5.5 text-amber-400 shrink-0" />
-                <span className="text-amber-300">Dual Pass — Random Assignment</span>
-              </>
-            )}
-          </h2>
-        </div>
-
-        {/* MAIN VS SUB SIDE-BY-SIDE */}
-        <div className="relative w-full grid grid-cols-2 gap-3 sm:gap-6 py-2.5 z-10">
-          {/* MAIN PLAYER OF THE ROUND */}
-          <div className={`flex flex-col items-center gap-2 transition-all duration-700 transform ${
-            stage === "show" ? "translate-y-0 opacity-100 scale-100" : "translate-y-4 opacity-0 scale-90"
-          }`}>
-            <span className="text-[10px] font-black uppercase tracking-wider text-lime/90 flex items-center gap-1">
-              ⭐ Main Target
-            </span>
-
-            {mainPlayer ? (
-              <div className={`relative rounded-2xl transition-all duration-500 scale-[0.82] sm:scale-95 origin-center ${
-                youGotMain
-                  ? "shadow-[0_0_25px_rgba(149,232,16,0.3)] ring-2 ring-lime"
-                  : "shadow-[0_0_25px_rgba(244,63,94,0.15)] ring-2 ring-rose-500/40"
-              }`}>
-                <PlayerCard player={mainPlayer} size="sm" />
-                
-                {/* Winner Label Overlay */}
-                <div className={`absolute -bottom-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider border shadow-lg whitespace-nowrap ${
-                  youGotMain
-                    ? "bg-lime text-slate-950 border-lime"
-                    : "bg-rose-500 text-white border-rose-400"
-                }`}>
-                  {youGotMain ? `YOU WON · $${winningBid}M` : `${winnerName.split(" ")[0]} WON`}
-                </div>
-              </div>
-            ) : (
-              <div className="w-32 sm:w-36 h-40 sm:h-48 rounded-2xl bg-slate-950 border border-white/5 flex items-center justify-center text-xs text-steel">
-                Empty
-              </div>
-            )}
-          </div>
-
-          {/* SUB/BACKUP PLAYER OF THE ROUND */}
-          <div className={`flex flex-col items-center gap-2 transition-all duration-700 delay-100 transform ${
-            stage === "show" ? "translate-y-0 opacity-100 scale-100" : "translate-y-4 opacity-0 scale-90"
-          }`}>
-            <span className="text-[10px] font-black uppercase tracking-wider text-amber-400 flex items-center gap-1">
-              📦 Backup Player
-            </span>
-
-            {subPlayer ? (
-              <div className={`relative rounded-2xl transition-all duration-500 scale-[0.82] sm:scale-95 origin-center ${
-                !youGotMain
-                  ? "shadow-[0_0_25px_rgba(149,232,16,0.3)] ring-2 ring-lime"
-                  : "shadow-md ring-1 ring-white/10 opacity-75"
-              }`}>
-                <PlayerCard player={subPlayer} size="sm" />
-
-                {/* Receiver Label Overlay */}
-                <div className={`absolute -bottom-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider border shadow-lg whitespace-nowrap ${
-                  !youGotMain
-                    ? "bg-lime text-slate-950 border-lime"
-                    : "bg-slate-950 text-steel border-white/10"
-                }`}>
-                  {!youGotMain ? "YOU ASSIGNED (FREE)" : "RIVAL ASSIGNED"}
-                </div>
-              </div>
-            ) : (
-              <div className="w-32 sm:w-36 h-40 sm:h-48 rounded-2xl bg-slate-950 border border-white/5 flex items-center justify-center text-xs text-steel">
-                Empty
-              </div>
-            )}
+                <div className="w-28 h-36 sm:w-32 sm:h-40 rounded-xl bg-slate-950 border border-white/5 flex items-center justify-center text-[9px] text-steel">—</div>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* Countdown Progress */}
-        <div className="w-full max-w-[200px] sm:max-w-xs flex flex-col items-center gap-1.5 z-10 pt-2">
+        {/* Subtitle */}
+        <span className="text-[9px] font-bold text-steel/60 uppercase tracking-wider z-10 -mt-1">
+          {youGotMain ? 'Main target' : 'Backup sub'}
+        </span>
+
+        {/* Countdown */}
+        <div className="w-full max-w-[180px] flex flex-col items-center gap-1.5 z-10">
           <div className="w-full bg-slate-950 border border-white/10 rounded-full h-1 overflow-hidden">
             <div
               className="bg-lime h-full rounded-full transition-[width] duration-100 ease-linear"
               style={{ width: `${Math.max(0, 100 - progressPct)}%` }}
             />
           </div>
-          <span className="text-[8px] sm:text-[9px] font-black text-steel uppercase tracking-widest">
-            NEXT ROUND STARTING...
-          </span>
+          <span className="text-[7px] font-black text-steel/40 uppercase tracking-widest">Next round</span>
         </div>
       </div>
     </div>
