@@ -210,7 +210,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   /* ── RENDER ─────────────────────────────────────────────────── */
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-2.5 pb-24 md:pb-6 animate-fade-in relative">
+    <div className="mx-auto flex max-w-2xl flex-col gap-2.5 animate-fade-in relative">
       {/* CARD REVEAL OVERLAY */}
       {state.lastCompletedRound && (
         <BidRevealAnimation isOpen={showReveal} onClose={handleRevealClose}

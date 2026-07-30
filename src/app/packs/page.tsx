@@ -434,7 +434,7 @@ export default function PacksPage() {
             </div>
 
             {/* 3-Card Display Layout: wraps to 2 lines on narrow screens to prevent overflow */}
-            <div className="flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 py-2 w-full max-w-4xl mx-auto px-1">
+            <div className="flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-4 py-2 w-full max-w-4xl mx-auto px-1">
               {openedCards.map((player, idx) => {
                 const isCenter = idx === 1;
 

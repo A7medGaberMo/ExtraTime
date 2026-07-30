@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck } from "lucide-react";
+import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck, X, RefreshCw } from "lucide-react";
 
 type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
 
@@ -27,20 +27,28 @@ export default function HomePage() {
   const dbStats = useQuery(api.players.queries.getStats);
   const [poolMode, setPoolMode] = useState<PoolMode>("GLOBAL");
   const [loading, setLoading] = useState(false);
+  const [showNameModal, setShowNameModal] = useState(false);
+  const [pendingMatchSize, setPendingMatchSize] = useState<5 | 11 | null>(null);
+  const [nickname, setNickname] = useState(() => randomName());
   const waiting11 = queueSummary?.queues[poolMode]?.[11] ?? 0;
   const waiting5 = queueSummary?.queues[poolMode]?.[5] ?? 0;
 
-  async function quickMatch(matchSize: 5 | 11) {
-    if (loading) return;
-    setLoading(true);
-    try {
-      const savedName = localStorage.getItem("extratime_guestName") || localStorage.getItem("extratime_guestId");
-      const nickname = savedName && !savedName.startsWith("guest_") ? savedName : randomName();
-      if (!savedName) localStorage.setItem("extratime_guestName", nickname);
+  function openNameModal(matchSize: 5 | 11) {
+    const saved = localStorage.getItem("extratime_guestName");
+    setNickname(saved || randomName());
+    setPendingMatchSize(matchSize);
+    setShowNameModal(true);
+  }
 
-      const userId = await createGuest({ nickname, avatarSeed: nickname });
+  async function quickMatch() {
+    if (loading || !pendingMatchSize || !nickname.trim()) return;
+    setLoading(true);
+    setShowNameModal(false);
+    try {
+      const userId = await createGuest({ nickname: nickname.trim(), avatarSeed: nickname.trim() });
       localStorage.setItem("extratime_guestId", userId);
-      const result = await findMatch({ userId, matchSize, poolMode });
+      localStorage.setItem("extratime_guestName", nickname.trim());
+      const result = await findMatch({ userId, matchSize: pendingMatchSize, poolMode });
       router.push(`/auction/${result.roomId}`);
     } catch (error: unknown) {
       const err = error as { message?: string };
@@ -180,7 +188,7 @@ export default function HomePage() {
 
         <div className="grid grid-cols-2 gap-3">
           <button
-            onClick={() => quickMatch(11)}
+            onClick={() => openNameModal(11)}
             disabled={loading}
             className="py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-lg shadow-lime/10 transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2 whitespace-nowrap"
           >
@@ -197,7 +205,7 @@ export default function HomePage() {
             )}
           </button>
           <button
-            onClick={() => quickMatch(5)}
+            onClick={() => openNameModal(5)}
             disabled={loading}
             className="py-4 bg-slate-900 hover:bg-white/5 text-white font-black text-xs uppercase tracking-wider rounded-xl border border-border transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2 whitespace-nowrap"
           >
@@ -232,6 +240,71 @@ export default function HomePage() {
           </div>
         ))}
       </section>
+
+      {/* ── NAME POPUP MODAL ──────────────────────────────────────────── */}
+      {showNameModal && (
+        <div
+          className="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
+          onClick={() => { if (!loading) setShowNameModal(false); }}
+        >
+          <div
+            className="relative w-full max-w-sm bg-slate-900 border border-white/20 rounded-2xl p-5 shadow-2xl animate-scale-in"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowNameModal(false)}
+              disabled={loading}
+              className="absolute top-3 right-3 p-1.5 rounded-lg bg-slate-950 text-steel hover:text-white border border-white/10 hover:border-lime/40 transition-all disabled:opacity-30"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            <div className="text-center space-y-1 mb-4">
+              <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lime px-2.5 py-0.5 rounded-full bg-lime/10 border border-lime/30">
+                <Swords className="w-3 h-3" />
+                <span>{pendingMatchSize} vs {pendingMatchSize}</span>
+              </div>
+              <h3 className="text-lg font-bold text-white tracking-tight">Enter the Arena</h3>
+              <p className="text-xs text-steel font-medium">Pick your manager name to queue</p>
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-[10px] font-black uppercase tracking-widest text-steel">Manager Name</label>
+              <div className="flex gap-2">
+                <input
+                  value={nickname}
+                  onChange={(e) => setNickname(e.target.value)}
+                  maxLength={24}
+                  disabled={loading}
+                  className="min-w-0 flex-1 rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-base font-black text-white outline-none transition-all placeholder:text-steel focus:border-lime/70 focus:ring-2 focus:ring-lime/20 disabled:opacity-30"
+                  placeholder="Your name"
+                  autoFocus
+                />
+                <button
+                  onClick={() => setNickname(randomName())}
+                  disabled={loading}
+                  className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-xl border border-white/10 bg-slate-950 text-steel transition-all hover:border-lime/50 hover:text-lime active:scale-95 disabled:opacity-30"
+                  title="Randomize"
+                >
+                  <RefreshCw className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
+
+            <button
+              onClick={quickMatch}
+              disabled={loading || !nickname.trim()}
+              className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-lime px-4 py-3.5 text-sm font-black uppercase tracking-widest text-slate-950 shadow-xl shadow-lime/15 transition-all hover:bg-vivid active:scale-[0.98] disabled:opacity-40"
+            >
+              {loading ? (
+                <><Loader2 className="h-4 w-4 animate-spin" /> Finding Match...</>
+              ) : (
+                <><Swords className="h-4 w-4" /> Find Match</>
+              )}
+            </button>
+          </div>
+        </div>
+      )}
     </article>
   );
 }

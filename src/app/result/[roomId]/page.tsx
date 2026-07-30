@@ -97,7 +97,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   }
 
   return (
-    <div className="mx-auto max-w-2xl space-y-5 pb-24 md:pb-10 animate-fade-in px-3">
+    <div className="mx-auto max-w-2xl space-y-5 animate-fade-in px-3">
       <PageHeader
         title="Hidden Bid Result"
         subtitle="Final squad value, saved budget, and tactical lineups."

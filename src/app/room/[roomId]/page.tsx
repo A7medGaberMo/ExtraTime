@@ -42,7 +42,7 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
   const guestReady = Boolean(room?.guestId);
 
   return (
-    <div className="mx-auto max-w-5xl space-y-4 pb-24 md:pb-8 animate-fade-in">
+    <div className="mx-auto max-w-5xl space-y-4 animate-fade-in">
       <div className="grid gap-3 lg:grid-cols-[1fr_auto] lg:items-end">
         <PageHeader
           title="Hidden Bid Lobby"

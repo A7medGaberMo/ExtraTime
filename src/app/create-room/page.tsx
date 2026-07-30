@@ -51,7 +51,7 @@ export default function CreateRoomPage() {
   }
 
   return (
-    <div className="mx-auto max-w-3xl space-y-4 pb-24 md:pb-8 animate-fade-in">
+    <div className="mx-auto max-w-3xl space-y-4 animate-fade-in">
       <PageHeader
         title="Create Hidden Bid"
         subtitle="Pick the arena rules, share the code, and draft your squad card by card."

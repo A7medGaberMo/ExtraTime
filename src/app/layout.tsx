@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Sora, Inter, Rajdhani, Anton, Bebas_Neue, Inter_Tight } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
@@ -16,6 +16,14 @@ const rajdhani = Rajdhani({
 const anton = Anton({ weight: ['400'], subsets: ['latin'], variable: '--font-anton' });
 const bebas = Bebas_Neue({ weight: ['400'], subsets: ['latin'], variable: '--font-bebas' });
 const interTight = Inter_Tight({ subsets: ['latin'], variable: '--font-inter-tight' });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: 'cover',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_CONVEX_SITE_URL || 'https://wary-pig-127.convex.site'),
@@ -74,11 +82,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col selection:bg-lime selection:text-background`}>
+    <html lang="en" className="dark overflow-x-hidden">
+      <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} font-sans antialiased bg-background text-foreground min-h-screen w-full flex flex-col items-center justify-between overflow-x-hidden selection:bg-lime selection:text-background`}>
         <ConvexClientProvider>
           <Header />
-          <main className="flex-1 container mx-auto px-4 py-8 pb-24 md:pb-8 animate-fade-in">
+          <main className="flex-1 w-full max-w-7xl mx-auto px-3 sm:px-4 py-4 sm:py-8 pb-24 md:pb-8 animate-fade-in overflow-x-hidden">
             {children}
           </main>
           <Footer />

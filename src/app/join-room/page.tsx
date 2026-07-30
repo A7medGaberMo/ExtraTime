@@ -57,7 +57,7 @@ export default function JoinRoomPage() {
   }
 
   return (
-    <div className="mx-auto max-w-2xl space-y-4 pb-24 md:pb-8 animate-fade-in">
+    <div className="mx-auto max-w-2xl space-y-4 animate-fade-in">
       <PageHeader
         title="Join Hidden Bid"
         subtitle="Enter your rival's code and jump straight into the auction arena."
