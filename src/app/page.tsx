@@ -34,7 +34,10 @@ export default function HomePage() {
     if (loading) return;
     setLoading(true);
     try {
-      const nickname = randomName();
+      const savedName = localStorage.getItem("extratime_guestName") || localStorage.getItem("extratime_guestId");
+      const nickname = savedName && !savedName.startsWith("guest_") ? savedName : randomName();
+      if (!savedName) localStorage.setItem("extratime_guestName", nickname);
+
       const userId = await createGuest({ nickname, avatarSeed: nickname });
       localStorage.setItem("extratime_guestId", userId);
       const result = await findMatch({ userId, matchSize, poolMode });
@@ -113,7 +116,7 @@ export default function HomePage() {
       </nav>
 
       {/* ── QUICK MATCH ARENA ───────────────────────────────────────────── */}
-      <section aria-label="Public Matchmaking" className="w-full max-w-xl rounded-3xl border border-lime/30 bg-gradient-to-b from-lime/5 via-card/80 to-card p-5 sm:p-6 space-y-5 animate-slide-up delay-200 shadow-2xl shadow-lime/5" style={{ animationFillMode: 'both' }}>
+      <section aria-label="Public Matchmaking" className="w-full max-w-xl rounded-3xl border border-lime/30 bg-gradient-to-b from-lime/5 via-card/80 to-card p-3 sm:p-6 space-y-5 animate-slide-up delay-200 shadow-2xl shadow-lime/5" style={{ animationFillMode: 'both' }}>
         <div className="flex items-center gap-3 border-b border-border/60 pb-3">
           <div className="p-2.5 rounded-xl bg-lime/10 text-lime border border-lime/30 shrink-0">
             <Zap className="w-5 h-5 fill-lime" />
@@ -185,7 +188,10 @@ export default function HomePage() {
               <>
                 <span className="whitespace-nowrap">11 vs 11</span>
                 {waiting11 > 0 && (
-                  <span className="px-1.5 py-0.5 rounded-full bg-slate-950/20 text-[10px] font-stats whitespace-nowrap">{waiting11} queued</span>
+                  <span className="flex items-center gap-1 text-[10px] text-slate-950 font-stats whitespace-nowrap bg-slate-950/15 px-2 py-0.5 rounded-full border border-slate-950/20">
+                    <span className="h-1.5 w-1.5 rounded-full bg-slate-950 shadow-[0_0_6px_rgba(2,6,23,0.8)] shrink-0 animate-pulse" />
+                    {waiting11}
+                  </span>
                 )}
               </>
             )}
