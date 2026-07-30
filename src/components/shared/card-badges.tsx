@@ -17,17 +17,46 @@ interface ClubCrestProps {
 export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestProps) {
   const [error, setError] = useState(false);
 
-  // Retrieve logo from the comprehensive dictionary with case-insensitive fallback mapping
+  const cleanName = clubName?.trim() || "";
+  const lowerName = cleanName.toLowerCase();
+
+  // Special handling for Icon/Legend teams -> Metallic Gold ET Logo
+  const isIconTeam =
+    lowerName === "icon" ||
+    lowerName === "icons" ||
+    lowerName === "global legends" ||
+    lowerName === "legend" ||
+    lowerName === "legends" ||
+    lowerName === "icon club" ||
+    lowerName === "icons club";
+
+  if (isIconTeam) {
+    return (
+      <div
+        className={cn(
+          'relative w-7 h-7 md:w-8 md:h-8 rounded-full bg-slate-950/80 border border-amber-400/50 p-1 flex items-center justify-center shadow-lg backdrop-blur-md transition-transform group-hover:scale-105 shrink-0',
+          className
+        )}
+        title="Global Icons & Legends"
+      >
+        <img
+          src="/logos/et-logo-metallic-gold.svg"
+          alt="Icon Team"
+          className="w-full h-full object-contain filter drop-shadow-[0_0_6px_rgba(212,175,55,0.7)]"
+        />
+      </div>
+    );
+  }
+
+  // Retrieve logo from clubLogoUrl or dictionary
   let logoSrc = clubLogoUrl;
-  if (!logoSrc && clubName) {
-    const cleanName = clubName.trim();
+  if (!logoSrc || logoSrc.includes("logos/clubs/icon.png") || logoSrc.includes("logos/clubs/global-legends.png") || logoSrc.includes("logos/clubs/")) {
     logoSrc = clubLogos[cleanName];
     if (!logoSrc) {
       const normKey = cleanName.toLowerCase().replace(/[^a-z0-9]/g, '');
       logoSrc = clubLogos[normKey];
     }
   }
-
 
   return (
     <div

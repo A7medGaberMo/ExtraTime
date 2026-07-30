@@ -45,7 +45,7 @@ function weightedPick<T>(items: T[], weights: number[]): T {
 // ── Position Matching ──────────────────────────────────────
 const LEFT_POSITIONS = new Set(["LB", "LWB", "LM", "LW"]);
 const RIGHT_POSITIONS = new Set(["RB", "RWB", "RM", "RW"]);
-const CENTER_POSITIONS = new Set(["GK", "CB", "CDM", "CM", "CAM", "ST", "CF"]);
+const CENTER_OUTFIELD_POSITIONS = new Set(["CB", "CDM", "CM", "CAM", "ST", "CF"]);
 
 function matchesExact(playerPosition: string, slot: Position): boolean {
   return playerPositions(playerPosition).includes(slot);
@@ -59,12 +59,12 @@ function isSideCompatible(playerPosition: string, slot: Position): boolean {
 
   // Left-sided slot: player MUST have a Left or Center position (cannot be purely Right-sided)
   if (LEFT_POSITIONS.has(slot)) {
-    return pPositions.some((p) => LEFT_POSITIONS.has(p) || CENTER_POSITIONS.has(p));
+    return pPositions.some((p) => LEFT_POSITIONS.has(p) || CENTER_OUTFIELD_POSITIONS.has(p));
   }
 
   // Right-sided slot: player MUST have a Right or Center position (cannot be purely Left-sided)
   if (RIGHT_POSITIONS.has(slot)) {
-    return pPositions.some((p) => RIGHT_POSITIONS.has(p) || CENTER_POSITIONS.has(p));
+    return pPositions.some((p) => RIGHT_POSITIONS.has(p) || CENTER_OUTFIELD_POSITIONS.has(p));
   }
 
   return true;
@@ -78,23 +78,42 @@ function matchesLine(playerPosition: string, slot: Position): boolean {
 
 /** Score how well a player fits a formation slot (0–100). */
 function positionFitScore(playerPosition: string, slot: Position): number {
-  if (matchesExact(playerPosition, slot)) return 100;
+  const pPositions = playerPositions(playerPosition);
 
-  // Strict side incompatibility penalty (LB cannot play RB/RW, RB cannot play LB/LW)
-  if (!isSideCompatible(playerPosition, slot)) return 0;
+  // 1. Strict GK Isolation
+  const isGkSlot = slot === "GK";
+  const isPlayerGk = pPositions.includes("GK");
+  if (isGkSlot && !isPlayerGk) return 0;
+  if (!isGkSlot && isPlayerGk) return 0;
+  if (isGkSlot && isPlayerGk) return 100;
 
-  if (matchesLine(playerPosition, slot)) return 55;
-  // Adjacent-line partial credit
-  const pLines = playerPositions(playerPosition).map(lineFor);
-  const target = lineFor(slot);
-  const adjacency: Record<string, string[]> = {
-    GK: ["DEF"],
-    DEF: ["GK", "MID"],
-    MID: ["DEF", "ATT"],
-    ATT: ["MID"],
+  // 2. Exact match for any position (CB, ST, LW, RW, CM, CDM, CAM, LB, RB, LM, RM, CF, LWB, RWB)
+  if (pPositions.includes(slot)) return 100;
+
+  // 3. Direct natural variants for all position categories
+  const variants: Partial<Record<Position, Position[]>> = {
+    LB: ["LWB"],
+    LWB: ["LB"],
+    RB: ["RWB"],
+    RWB: ["RB"],
+    ST: ["CF"],
+    CF: ["ST"],
+    LW: ["LM"],
+    LM: ["LW"],
+    RW: ["RM"],
+    RM: ["RW"],
+    CM: ["CDM", "CAM"],
+    CDM: ["CM"],
+    CAM: ["CM"],
   };
-  if (pLines.some((l) => adjacency[target]?.includes(l))) return 25;
-  return 5;
+
+  const allowed = variants[slot];
+  if (allowed && pPositions.some((p) => allowed.includes(p as Position))) {
+    return 80;
+  }
+
+  // 4. Return 0 for all other cross-position mismatches
+  return 0;
 }
 
 // ── Smart Candidate Scoring ────────────────────────────────

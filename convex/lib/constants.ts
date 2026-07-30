@@ -24,7 +24,7 @@ export const tierValidator = v.union(
 );
 
 // ── Position System ────────────────────────────────────────
-export type Position = "GK" | "CB" | "LB" | "RB" | "CDM" | "CM" | "CAM" | "LM" | "RM" | "LW" | "RW" | "ST" | "CF";
+export type Position = "GK" | "CB" | "LB" | "RB" | "LWB" | "RWB" | "CDM" | "CM" | "CAM" | "LM" | "RM" | "LW" | "RW" | "ST" | "CF";
 
 export function normalizePosition(position: string): string {
   return position.trim().toUpperCase();

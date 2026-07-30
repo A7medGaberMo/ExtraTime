@@ -119,32 +119,37 @@ function normalizePosition(pos: string): string {
 function findBestCoordinateIndex(targetPos: string, coords: Coord[], usedCoords: Set<number>): number {
   const normTarget = normalizePosition(targetPos);
 
-  // 1. Exact match
+  // 1. Exact match (CB to CB, ST to ST, GK to GK, etc.)
   let found = coords.findIndex((c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === normTarget);
   if (found !== -1) return found;
 
-  // 2. Close group match
+  // 2. Close variant match (CF for ST, LWB for LB, RWB for RB)
   const close = CLOSE_GROUPS[normTarget] || [];
   for (const fallback of close) {
     found = coords.findIndex((c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === fallback);
     if (found !== -1) return found;
   }
 
-  // 3. Fallback to any unused coordinate that belongs to the same general area
-  // GK vs DEF vs MID vs ATT
+  // 3. Line match (STRICT: GK coordinate is ONLY for GK)
   const getLine = (p: string) => {
     const n = normalizePosition(p);
     if (n === "GK") return "GK";
     if (["CB", "LB", "RB", "LWB", "RWB"].includes(n)) return "DEF";
-    if (["CDM", "CM", "CAM", "LM", "RM", "LW", "RW"].includes(n)) return "MID";
+    if (["CDM", "CM", "CAM", "LM", "RM"].includes(n)) return "MID";
     return "ATT";
   };
   const targetLine = getLine(normTarget);
+  if (targetLine === "GK") {
+    found = coords.findIndex((c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === "GK");
+    if (found !== -1) return found;
+    return -1; // Never place GK in outfield
+  }
+
   found = coords.findIndex((c, idx) => !usedCoords.has(idx) && getLine(c.pos) === targetLine);
   if (found !== -1) return found;
 
-  // 4. Ultimate fallback: pick first unused
-  return coords.findIndex((_, idx) => !usedCoords.has(idx));
+  // 4. Ultimate outfield fallback: pick first unused non-GK slot
+  return coords.findIndex((c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) !== "GK");
 }
 
 /* ── Component ────────────────────────────────────────────── */
@@ -237,7 +242,7 @@ export function TacticalPitch({
         const foundIndex = sortedSquad.findIndex(
           (item) => !assignedSquadSlotIdxs.has(item.originalIdx) &&
             (normalizePosition(item.slot.position) === normalizePosition(coord.pos) ||
-             CLOSE_GROUPS[normalizePosition(coord.pos)]?.includes(normalizePosition(item.slot.position)))
+              CLOSE_GROUPS[normalizePosition(coord.pos)]?.includes(normalizePosition(item.slot.position)))
         );
 
         if (foundIndex !== -1) {
@@ -314,7 +319,7 @@ export function TacticalPitch({
       <div className="relative w-full overflow-hidden rounded-xl bg-gradient-to-b from-[#06200f] via-[#0b3319] to-[#04170b] border border-lime/20 shadow-[0_0_30px_rgba(0,0,0,0.6)]"
         style={{ paddingBottom: is5 ? "85%" : "100%" }}>
         <div className={`absolute inset-0 transition-transform duration-700 ${is3DView ? "transform [transform:perspective(800px)_rotateX(20deg)_scale(0.95)] origin-bottom" : ""}`}>
-          
+
           {/* Turf stripes */}
           <div className="absolute inset-0 opacity-15 pointer-events-none bg-[repeating-linear-gradient(0deg,#ffffff_0px,#ffffff_1px,transparent_1px,transparent_36px)]" />
 
@@ -366,7 +371,7 @@ export function TacticalPitch({
                             {player.name?.split(" ").map(n => n[0]).slice(0, 2).join("")}
                           </div>
                         )}
-                        
+
                         {/* Position indicator */}
                         <span className="absolute -top-1.5 -left-1.5 px-1.5 py-0.2 text-[7px] font-black uppercase rounded border shadow-md"
                           style={{ backgroundColor: "#090d16", color: tierColor, borderColor: `${tierColor}80` }}>
