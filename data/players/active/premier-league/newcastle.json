@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Newcastle",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329640.png",
       "kitNumber": 29
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284374.png",
       "kitNumber": 31
@@ -57,7 +57,7 @@
       "position": "GK",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/365988.png",
       "kitNumber": 1
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "Netherlands",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38734.png",
       "kitNumber": 4
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "Germany",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163189.png",
       "kitNumber": 12
@@ -112,7 +112,7 @@
       "position": "CB/LB",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18961.png",
       "kitNumber": 33
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "Republic of Ireland",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/318056.png",
       "kitNumber": 37
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/337934.png",
       "kitNumber": 51
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1463.png",
       "kitNumber": 28
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/394165.png",
       "kitNumber": 62
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "South Korea",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/423714.png",
       "kitNumber": 11
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "Netherlands",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/469321.png",
       "kitNumber": 14
@@ -244,7 +244,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "Ivory Coast",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387643.png",
       "kitNumber": 30
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Newcastle",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158054.png",
       "kitNumber": 27
@@ -299,7 +299,7 @@
       "position": "ST",
       "club": "Newcastle",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/315237.png",
       "kitNumber": 18

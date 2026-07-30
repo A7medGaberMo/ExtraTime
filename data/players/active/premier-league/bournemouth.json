@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Bournemouth",
       "nation": "Serbia",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/118307.png",
       "kitNumber": 1
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18932.png",
       "kitNumber": 17
@@ -35,7 +35,7 @@
       "position": "CB/RB",
       "club": "Bournemouth",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22136.png",
       "kitNumber": 18
@@ -46,7 +46,7 @@
       "position": "LB",
       "club": "Bournemouth",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162267.png",
       "kitNumber": 3
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20093.png",
       "kitNumber": 23
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Bournemouth",
       "nation": "Serbia",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412719.png",
       "kitNumber": 44
@@ -90,7 +90,7 @@
       "position": "CDM/CM",
       "club": "Bournemouth",
       "nation": "USA",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1150.png",
       "kitNumber": 12
@@ -101,7 +101,7 @@
       "position": "CAM/RW",
       "club": "Bournemouth",
       "nation": "Morocco",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129682.png",
       "kitNumber": 21
@@ -112,7 +112,7 @@
       "position": "CM/CAM",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304853.png",
       "kitNumber": 8
@@ -134,7 +134,7 @@
       "position": "CM/CDM",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18872.png",
       "kitNumber": 4
@@ -156,7 +156,7 @@
       "position": "CM",
       "club": "Bournemouth",
       "nation": "Hungary",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361485.png",
       "kitNumber": 27
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Bournemouth",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626383.png",
       "kitNumber": 51
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/573755.png",
       "kitNumber": 53
@@ -233,7 +233,7 @@
       "position": "ST/LW",
       "club": "Bournemouth",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/368030.png",
       "kitNumber": 22
@@ -266,7 +266,7 @@
       "position": "ST/RW",
       "club": "Bournemouth",
       "nation": "Brazil",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/407806.png",
       "kitNumber": 37
@@ -277,7 +277,7 @@
       "position": "ST",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/402434.png",
       "kitNumber": 50

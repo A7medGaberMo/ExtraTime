@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "West Ham",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/253.png",
       "kitNumber": 23
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "West Ham",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/337932.png",
       "kitNumber": 49
@@ -68,7 +68,7 @@
       "position": "RB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18846.png",
       "kitNumber": 29
@@ -79,7 +79,7 @@
       "position": "RB/LB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/171.png",
       "kitNumber": 2
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288116.png",
       "kitNumber": 42
@@ -123,7 +123,7 @@
       "position": "LB/CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327730.png",
       "kitNumber": 30
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557408.png",
       "kitNumber": 14
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "Lithuania",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557541.png",
       "kitNumber": 4
@@ -156,7 +156,7 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/553065.png",
       "kitNumber": 6
@@ -167,7 +167,7 @@
       "position": "RB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284444.png",
       "kitNumber": 36
@@ -178,7 +178,7 @@
       "position": "CM/CDM",
       "club": "West Ham",
       "nation": "Czech Republic",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1243.png",
       "kitNumber": 28
@@ -189,7 +189,7 @@
       "position": "CM/CAM",
       "club": "West Ham",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2938.png",
       "kitNumber": 8
@@ -244,7 +244,7 @@
       "position": "CDM",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284446.png",
       "kitNumber": 32
@@ -255,7 +255,7 @@
       "position": "CM",
       "club": "West Ham",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/552938.png",
       "kitNumber": 7
@@ -266,7 +266,7 @@
       "position": "CM",
       "club": "West Ham",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/358969.png",
       "kitNumber": 21
@@ -288,7 +288,7 @@
       "position": "ST",
       "club": "West Ham",
       "nation": "Argentina",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50856.png",
       "kitNumber": 11
@@ -332,7 +332,7 @@
       "position": "ST",
       "club": "West Ham",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/432404.png",
       "kitNumber": 10

@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Liverpool",
       "nation": "Georgia",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24760.png",
       "kitNumber": 25
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Liverpool",
       "nation": "Wales",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/180316.png",
       "kitNumber": 95
@@ -57,7 +57,7 @@
       "position": "GK",
       "club": "Liverpool",
       "nation": "Poland",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415992.png",
       "kitNumber": 13
@@ -79,7 +79,7 @@
       "position": "RB/RM",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152654.png",
       "kitNumber": 30
@@ -101,7 +101,7 @@
       "position": "CB/RB",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284.png",
       "kitNumber": 2
@@ -134,7 +134,7 @@
       "position": "LB/CB",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284366.png",
       "kitNumber": 44
@@ -156,7 +156,7 @@
       "position": "CB",
       "club": "Liverpool",
       "nation": "France",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606814.png",
       "kitNumber": 75
@@ -167,7 +167,7 @@
       "position": "LB",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/310186.png",
       "kitNumber": 48
@@ -189,7 +189,7 @@
       "position": "CAM/CM",
       "club": "Liverpool",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203224.png",
       "kitNumber": 7
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/293.png",
       "kitNumber": 17
@@ -233,7 +233,7 @@
       "position": "CAM/RW",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19035.png",
       "kitNumber": 19
@@ -255,7 +255,7 @@
       "position": "CM",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/397997.png",
       "kitNumber": 42
@@ -277,7 +277,7 @@
       "position": "CM",
       "club": "Liverpool",
       "nation": "Scotland",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/389032.png",
       "kitNumber": 68
@@ -299,7 +299,7 @@
       "position": "ST",
       "club": "Liverpool",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174565.png",
       "kitNumber": 22
@@ -354,7 +354,7 @@
       "position": "ST",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/588501.png",
       "kitNumber": 40
@@ -365,7 +365,7 @@
       "position": "ST",
       "club": "Liverpool",
       "nation": "Spain",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/338751.png",
       "kitNumber": 41
@@ -376,7 +376,7 @@
       "position": "ST",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/498377.png",
       "kitNumber": 79

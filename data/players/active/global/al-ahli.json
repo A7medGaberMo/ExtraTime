@@ -8,28 +8,6 @@
   },
   "players": [
     {
-      "apiId": 18911,
-      "name": "Ivan Toney",
-      "position": "ST/CF",
-      "club": "Al-Ahli",
-      "nation": "England",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ivan_Toney_England_v_Ghana_23_June_2026-051.jpg",
-      "kitNumber": 99
-    },
-    {
-      "apiId": 1153,
-      "name": "Riyad Mahrez",
-      "position": "RW/RM",
-      "club": "Al-Ahli",
-      "nation": "Algeria",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Mahrez_2021.jpg",
-      "kitNumber": 7
-    },
-    {
       "apiId": 158,
       "name": "Roberto Firmino",
       "position": "ST/CAM",

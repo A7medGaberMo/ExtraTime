@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Manchester United",
       "nation": "Turkey",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50132.png",
       "kitNumber": 1
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18885.png",
       "kitNumber": 26
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Manchester United",
       "nation": "Belgium",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162511.png",
       "kitNumber": 31
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2935.png",
       "kitNumber": 5
@@ -101,7 +101,7 @@
       "position": "LB/CB",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/891.png",
       "kitNumber": 23
@@ -112,7 +112,7 @@
       "position": "LB/LM",
       "club": "Manchester United",
       "nation": "Denmark",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/382452.png",
       "kitNumber": 13
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328101.png",
       "kitNumber": 4
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/440159.png",
       "kitNumber": 12
@@ -189,7 +189,7 @@
       "position": "CAM/CM",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19220.png",
       "kitNumber": 7
@@ -200,7 +200,7 @@
       "position": "CM/CDM",
       "club": "Manchester United",
       "nation": "Belgium",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2926.png",
       "kitNumber": 14
@@ -211,7 +211,7 @@
       "position": "CM/CDM",
       "club": "Manchester United",
       "nation": "Brazil",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/305834.png",
       "kitNumber": 17
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Manchester United",
       "nation": "Scotland",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383770.png",
       "kitNumber": 38
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Manchester United",
       "nation": "Scotland",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557460.png",
       "kitNumber": 39
@@ -244,7 +244,7 @@
       "position": "CM",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/344229.png",
       "kitNumber": 48
@@ -277,7 +277,7 @@
       "position": "ST",
       "club": "Manchester United",
       "nation": "Slovenia",
-      "tier": "ELITE_PLUS",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/115589.png",
       "kitNumber": 30

@@ -8,23 +8,12 @@
   },
   "players": [
     {
-      "apiId": 126530,
-      "name": "Daniel Peretz",
-      "position": "GK",
-      "club": "Southampton",
-      "nation": "Israel",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/126530.png",
-      "kitNumber": 1
-    },
-    {
       "apiId": 19406,
       "name": "G. Long",
       "position": "GK",
       "club": "Southampton",
       "nation": "Ireland",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19406.png",
       "kitNumber": 25
@@ -101,7 +90,7 @@
       "position": "CB",
       "club": "Southampton",
       "nation": "Germany",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/334353.png",
       "kitNumber": 17
@@ -112,7 +101,7 @@
       "position": "CB",
       "club": "Southampton",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557522.png",
       "kitNumber": 35
@@ -123,7 +112,7 @@
       "position": "CDM/CM",
       "club": "Southampton",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19733.png",
       "kitNumber": 4
@@ -178,7 +167,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "Germany",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/282060.png",
       "kitNumber": 20
@@ -189,7 +178,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304318.png",
       "kitNumber": 48
@@ -200,7 +189,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "Ireland",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/322305.png",
       "kitNumber": 37
@@ -211,7 +200,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/401241.png",
       "kitNumber": 8
@@ -222,7 +211,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557372.png",
       "kitNumber": 19
@@ -233,7 +222,7 @@
       "position": "ST",
       "club": "Southampton",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/137302.png",
       "kitNumber": 11
@@ -244,7 +233,7 @@
       "position": "ST",
       "club": "Southampton",
       "nation": "Canada",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2001.png",
       "kitNumber": 9
@@ -277,7 +266,7 @@
       "position": "ST",
       "club": "Southampton",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546536.png",
       "kitNumber": 49
@@ -288,7 +277,7 @@
       "position": "ST",
       "club": "Southampton",
       "nation": "England",
-      "tier": "BRONZE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380691.png",
       "kitNumber": 46

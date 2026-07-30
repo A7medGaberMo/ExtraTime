@@ -49,7 +49,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/446138.png",
-      "kitNumber": 1
+      "kitNumber": 40
     },
     {
       "apiId": 156619,
@@ -184,17 +184,6 @@
       "kitNumber": 29
     },
     {
-      "apiId": 126974,
-      "name": "O. Gandelman",
-      "position": "CM/CAM",
-      "club": "Lecce",
-      "nation": "Israel",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/126974.png",
-      "kitNumber": 16
-    },
-    {
       "apiId": 56560,
       "name": "Y. Maleh",
       "position": "CM",
@@ -203,7 +192,7 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/56560.png",
-      "kitNumber": 29
+      "kitNumber": 41
     },
     {
       "apiId": 387537,
@@ -291,7 +280,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327763.png",
-      "kitNumber": 7
+      "kitNumber": 42
     },
     {
       "apiId": 589789,
@@ -302,7 +291,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/589789.png",
-      "kitNumber": 19
+      "kitNumber": 43
     }
   ]
 }

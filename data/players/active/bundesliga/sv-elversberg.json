@@ -126,7 +126,7 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412704.png",
-      "kitNumber": 31
+      "kitNumber": 40
     },
     {
       "apiId": 342170,
@@ -203,7 +203,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/392254.png",
-      "kitNumber": 21
+      "kitNumber": 41
     },
     {
       "apiId": 203260,
@@ -225,7 +225,7 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328617.png",
-      "kitNumber": 20
+      "kitNumber": 42
     },
     {
       "apiId": 177452,
@@ -291,7 +291,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/350047.png",
-      "kitNumber": 42
+      "kitNumber": 44
     }
   ]
 }

@@ -115,7 +115,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667865.png",
-      "kitNumber": 30
+      "kitNumber": 40
     },
     {
       "apiId": 583991,
@@ -181,7 +181,7 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/262677.png",
-      "kitNumber": 7
+      "kitNumber": 41
     },
     {
       "apiId": 179907,
@@ -192,18 +192,7 @@
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/179907.png",
-      "kitNumber": 33
-    },
-    {
-      "apiId": 136155,
-      "name": "M. Jaber",
-      "position": "CM/CDM",
-      "club": "Saint Etienne",
-      "nation": "Israel",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/136155.png",
-      "kitNumber": 5
+      "kitNumber": 42
     },
     {
       "apiId": 363053,
@@ -269,7 +258,7 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/385636.png",
-      "kitNumber": 13
+      "kitNumber": 43
     },
     {
       "apiId": 24743,
@@ -302,7 +291,7 @@
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8683.png",
-      "kitNumber": 7
+      "kitNumber": 44
     },
     {
       "apiId": 337426,

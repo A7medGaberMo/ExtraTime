@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 750,
-      "name": "Marco Asensio",
-      "position": "RW/CAM",
-      "club": "Fenerbahçe",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Marco_Asensio_2018.jpg",
-      "kitNumber": 11
-    },
-    {
       "apiId": 617,
       "name": "Ederson",
       "position": "GK",
@@ -41,17 +30,6 @@
       "kitNumber": 3
     },
     {
-      "apiId": 30421,
-      "name": "Anderson Talisca",
-      "position": "CAM/ST",
-      "club": "Fenerbahçe",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Anderson_talisca-1527276212_%28cropped%29.jpg",
-      "kitNumber": 94
-    },
-    {
       "apiId": 1205,
       "name": "N'Golo Kanté",
       "position": "CDM/CM",
@@ -72,17 +50,6 @@
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Nelson_Semedo_Croatia_v_Portugal_2_July_2026-227.jpg",
       "kitNumber": 2
-    },
-    {
-      "apiId": 38167,
-      "name": "İsmail Yüksek",
-      "position": "CDM/CM",
-      "club": "Fenerbahçe",
-      "nation": "Turkey",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/977561_sPICT_%28cropped%29.jpg",
-      "kitNumber": 5
     },
     {
       "apiId": 1636,

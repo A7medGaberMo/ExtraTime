@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2273.png",
       "kitNumber": 13
@@ -57,7 +57,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403221.png",
       "kitNumber": 42
@@ -68,7 +68,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342243.png",
       "kitNumber": 35
@@ -134,7 +134,7 @@
       "position": "CB/LB",
       "club": "Arsenal",
       "nation": "Ecuador",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127817.png",
       "kitNumber": 5
@@ -156,7 +156,7 @@
       "position": "LB/CM",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/313245.png",
       "kitNumber": 49
@@ -244,7 +244,7 @@
       "position": "CM",
       "club": "Arsenal",
       "nation": "Denmark",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30407.png",
       "kitNumber": 16
@@ -255,7 +255,7 @@
       "position": "CM",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/442044.png",
       "kitNumber": 56
@@ -332,7 +332,7 @@
       "position": "RW/LW",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/136723.png",
       "kitNumber": 20
@@ -343,7 +343,7 @@
       "position": "ST",
       "club": "Arsenal",
       "nation": "Greece",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161800.png",
       "kitNumber": 46
@@ -354,7 +354,7 @@
       "position": "ST",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/463908.png",
       "kitNumber": 47
@@ -365,7 +365,7 @@
       "position": "ST",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/457731.png",
       "kitNumber": 48
