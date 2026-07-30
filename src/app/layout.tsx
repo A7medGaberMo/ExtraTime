@@ -18,6 +18,7 @@ const bebas = Bebas_Neue({ weight: ['400'], subsets: ['latin'], variable: '--fon
 const interTight = Inter_Tight({ subsets: ['latin'], variable: '--font-inter-tight' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_CONVEX_SITE_URL || 'https://wary-pig-127.convex.site'),
   title: {
     default: 'ExtraTime | Live Multiplayer Football Auction & Draft Arena',
     template: '%s | ExtraTime Football Draft',

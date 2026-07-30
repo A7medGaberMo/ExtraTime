@@ -109,8 +109,37 @@ const CLOSE_GROUPS: Record<string, string[]> = {
   CF: ["CF", "ST"],
 };
 
-function normalizePosition(pos: string): string {
+/* ── Position Compatibility Rules (Identical to backend draftEngine.ts) ── */
+const POSITION_VARIANTS: Partial<Record<string, string[]>> = {
+  LB: ["LWB"],
+  LWB: ["LB"],
+  RB: ["RWB"],
+  RWB: ["RB"],
+  ST: ["CF"],
+  CF: ["ST"],
+  LW: ["LM"],
+  LM: ["LW"],
+  RW: ["RM"],
+  RM: ["RW"],
+  CM: ["CDM", "CAM"],
+  CDM: ["CM"],
+  CAM: ["CM"],
+};
+
+export function normalizePosition(pos: string): string {
   return pos.trim().toUpperCase().split("/")[0];
+}
+
+export function isPosCompatible(playerPos: string, slotPos: string): boolean {
+  const normP = normalizePosition(playerPos);
+  const normS = normalizePosition(slotPos);
+
+  // Exact match
+  if (normP === normS) return true;
+
+  // Direct natural variant match
+  const allowed = POSITION_VARIANTS[normS];
+  return Boolean(allowed?.includes(normP));
 }
 
 /**
@@ -119,37 +148,18 @@ function normalizePosition(pos: string): string {
 function findBestCoordinateIndex(targetPos: string, coords: Coord[], usedCoords: Set<number>): number {
   const normTarget = normalizePosition(targetPos);
 
-  // 1. Exact match (CB to CB, ST to ST, GK to GK, etc.)
+  // 1. Exact match
   let found = coords.findIndex((c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === normTarget);
   if (found !== -1) return found;
 
-  // 2. Close variant match (CF for ST, LWB for LB, RWB for RB)
-  const close = CLOSE_GROUPS[normTarget] || [];
-  for (const fallback of close) {
+  // 2. Direct variant match
+  const allowed = POSITION_VARIANTS[normTarget] || [];
+  for (const fallback of allowed) {
     found = coords.findIndex((c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === fallback);
     if (found !== -1) return found;
   }
 
-  // 3. Line match (STRICT: GK coordinate is ONLY for GK)
-  const getLine = (p: string) => {
-    const n = normalizePosition(p);
-    if (n === "GK") return "GK";
-    if (["CB", "LB", "RB", "LWB", "RWB"].includes(n)) return "DEF";
-    if (["CDM", "CM", "CAM", "LM", "RM"].includes(n)) return "MID";
-    return "ATT";
-  };
-  const targetLine = getLine(normTarget);
-  if (targetLine === "GK") {
-    found = coords.findIndex((c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === "GK");
-    if (found !== -1) return found;
-    return -1; // Never place GK in outfield
-  }
-
-  found = coords.findIndex((c, idx) => !usedCoords.has(idx) && getLine(c.pos) === targetLine);
-  if (found !== -1) return found;
-
-  // 4. Ultimate outfield fallback: pick first unused non-GK slot
-  return coords.findIndex((c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) !== "GK");
+  return -1;
 }
 
 /* ── Component ────────────────────────────────────────────── */
@@ -237,12 +247,11 @@ export function TacticalPitch({
         return 0;
       });
 
-      // Allocate starting slots by matching coordinates
+      // Allocate starting slots by strict position compatibility matching coordinates
       coords.forEach((coord, ci) => {
         const foundIndex = sortedSquad.findIndex(
           (item) => !assignedSquadSlotIdxs.has(item.originalIdx) &&
-            (normalizePosition(item.slot.position) === normalizePosition(coord.pos) ||
-              CLOSE_GROUPS[normalizePosition(coord.pos)]?.includes(normalizePosition(item.slot.position)))
+            isPosCompatible(item.slot.position, coord.pos)
         );
 
         if (foundIndex !== -1) {
@@ -250,25 +259,6 @@ export function TacticalPitch({
           placedIndices.set(ci, item.slot);
           assignedSquadSlotIdxs.add(item.originalIdx);
           usedCoordIdx.add(ci);
-        } else {
-          // General line matching fallback
-          const getLine = (p: string) => {
-            const n = normalizePosition(p);
-            if (n === "GK") return "GK";
-            if (["CB", "LB", "RB", "LWB", "RWB"].includes(n)) return "DEF";
-            if (["CDM", "CM", "CAM", "LM", "RM", "LW", "RW"].includes(n)) return "MID";
-            return "ATT";
-          };
-          const coordLine = getLine(coord.pos);
-          const fallbackIdx = sortedSquad.findIndex(
-            (item) => !assignedSquadSlotIdxs.has(item.originalIdx) && getLine(item.slot.position) === coordLine
-          );
-          if (fallbackIdx !== -1) {
-            const item = sortedSquad[fallbackIdx];
-            placedIndices.set(ci, item.slot);
-            assignedSquadSlotIdxs.add(item.originalIdx);
-            usedCoordIdx.add(ci);
-          }
         }
       });
 
