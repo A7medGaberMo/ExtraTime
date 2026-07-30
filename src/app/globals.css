@@ -131,6 +131,12 @@ h1, h2, h3, h4, h5, h6 {
   100% { transform: rotate(360deg); }
 }
 
+@keyframes scannerLine {
+  0% { top: 4%; opacity: 0.8; }
+  50% { top: 92%; opacity: 1; }
+  100% { top: 4%; opacity: 0.8; }
+}
+
 .animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
 .animate-slide-up { animation: slideUp 0.4s ease-out forwards; }
 .animate-slide-down { animation: slideDown 0.4s ease-out forwards; }
@@ -139,6 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 .animate-pack-float { animation: packFloat 4s ease-in-out infinite; }
 .animate-pack-open { animation: packOpeningGlow 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
 .animate-light-rays { animation: lightRays 20s linear infinite; }
+.animate-scanner-line { animation: scannerLine 1.4s ease-in-out infinite; }
 
 /* Player slot fill pop-in */
 @keyframes slotFillIn {

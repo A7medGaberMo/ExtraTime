@@ -5,11 +5,19 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Shield, Loader2, Clock } from "lucide-react";
+import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck } from "lucide-react";
 
-type PoolMode = "GLOBAL" | "EPL" | "ICONS";
+type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
 
 import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
+
+const poolOptions = [
+  { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All Players" },
+  { id: "ACTIVE" as PoolMode, label: "Active Stars", icon: UserCheck, sub: "Current players" },
+  { id: "EPL" as PoolMode, label: "EPL", icon: Flame, sub: "Premier League" },
+  { id: "TOP_TEAMS" as PoolMode, label: "Top Clubs", icon: Star, sub: "Elite clubs" },
+  { id: "ICONS" as PoolMode, label: "Icons", icon: Crown, sub: "Legends only" },
+];
 
 export default function HomePage() {
   const router = useRouter();
@@ -18,8 +26,8 @@ export default function HomePage() {
   const queueSummary = useQuery(api.rooms.queries.getPublicQueueSummary);
   const [poolMode, setPoolMode] = useState<PoolMode>("GLOBAL");
   const [loading, setLoading] = useState(false);
-  const waiting11 = queueSummary?.queues[poolMode][11] ?? 0;
-  const waiting5 = queueSummary?.queues[poolMode][5] ?? 0;
+  const waiting11 = queueSummary?.queues[poolMode]?.[11] ?? 0;
+  const waiting5 = queueSummary?.queues[poolMode]?.[5] ?? 0;
 
   async function quickMatch(matchSize: 5 | 11) {
     if (loading) return;
@@ -37,84 +45,128 @@ export default function HomePage() {
     }
   }
 
-  const selectClass = "w-full bg-card/90 border border-border/80 rounded-xl px-4 py-3 text-xs font-bold text-white focus:outline-none focus:border-lime transition-all appearance-none cursor-pointer";
-
   return (
-    <div className="max-w-4xl mx-auto flex flex-col items-center gap-10 py-6 md:py-12 pb-24 md:pb-12 animate-fade-in">
+    <article className="max-w-4xl mx-auto flex flex-col items-center gap-10 py-6 md:py-12 pb-24 md:pb-12 animate-fade-in">
       {/* ── HERO ────────────────────────────────────────────────────────── */}
-      <div className="text-center space-y-5 relative">
+      <header className="text-center space-y-5 relative">
         {/* Ambient glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] bg-lime/10 blur-[130px] rounded-full pointer-events-none" />
 
         <div className="relative animate-slide-up space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lime/10 border border-lime/30 text-lime text-[11px] font-black uppercase tracking-widest shadow-md">
-            <Clock className="w-3.5 h-3.5" /> 30s Turn Drafts • +10s Perk Boosts
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lime/10 border border-lime/30 text-lime text-[11px] font-black uppercase tracking-widest shadow-md whitespace-nowrap">
+            <Clock className="w-3.5 h-3.5 shrink-0" />
+            <span>30s Turn Bids • +10s Perk Boosts</span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight text-white uppercase leading-none">
             Extra<span className="gradient-text-lime">Time</span>
           </h1>
 
-          <p className="mt-3 text-sm md:text-base text-steel max-w-xl mx-auto leading-relaxed">
-            The ultimate collectible football drafting platform — blind auctions, tactical pitch management, real-time database player packs, and dynamic perks.
+          <p className="mt-3 text-sm md:text-base text-steel max-w-lg mx-auto leading-relaxed font-medium">
+            Draft real-world stars, outsmart rivals in tactical auctions, unlock tier packs, and dominate the arena.
           </p>
         </div>
-      </div>
+      </header>
 
       {/* ── CTA BUTTONS ────────────────────────────────────────────────── */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full max-w-xl animate-slide-up delay-100" style={{ animationFillMode: 'both' }}>
+      <nav aria-label="Main Actions" className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 w-full max-w-xl animate-slide-up delay-100" style={{ animationFillMode: 'both' }}>
         <Link
           href="/create-room"
-          className="flex items-center justify-center gap-2 px-5 py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic shadow-xl shadow-lime/20"
+          className="flex items-center justify-center gap-2 px-5 py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic shadow-xl shadow-lime/20 whitespace-nowrap"
         >
-          <PlusCircle className="w-4 h-4" /> Create Room
+          <PlusCircle className="w-4 h-4 shrink-0" />
+          <span>Create Room</span>
         </Link>
         <Link
           href="/join-room"
-          className="flex items-center justify-center gap-2 px-5 py-4 bg-card hover:bg-white/5 text-white font-bold text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-border hover:border-white/30 shadow-md"
+          className="flex items-center justify-center gap-2 px-5 py-4 bg-card hover:bg-white/5 text-white font-bold text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-border hover:border-white/30 shadow-md whitespace-nowrap"
         >
-          <Users className="w-4 h-4" /> Join Room
+          <Users className="w-4 h-4 shrink-0" />
+          <span>Join Room</span>
         </Link>
         <Link
           href="/packs"
-          className="flex items-center justify-center gap-2 px-5 py-4 bg-slate-900 hover:bg-amber-500/10 text-amber-400 font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-amber-500/40 hover:border-amber-400 shadow-lg"
+          className="hidden sm:flex items-center justify-center gap-2 px-5 py-4 bg-slate-900 hover:bg-amber-500/10 text-amber-400 font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-amber-500/40 hover:border-amber-400 shadow-lg whitespace-nowrap"
         >
-          <Trophy className="w-4 h-4 text-amber-400" /> Tier Packs
+          <Trophy className="w-4 h-4 text-amber-400 shrink-0" />
+          <span>Tier Packs</span>
         </Link>
-      </div>
+      </nav>
 
       {/* ── QUICK MATCH ARENA ───────────────────────────────────────────── */}
-      <div className="w-full max-w-md rounded-3xl border border-lime/30 bg-gradient-to-b from-lime/5 via-card/80 to-card p-6 space-y-5 animate-slide-up delay-200 shadow-2xl shadow-lime/5" style={{ animationFillMode: 'both' }}>
+      <section aria-label="Public Matchmaking" className="w-full max-w-xl rounded-3xl border border-lime/30 bg-gradient-to-b from-lime/5 via-card/80 to-card p-5 sm:p-6 space-y-5 animate-slide-up delay-200 shadow-2xl shadow-lime/5" style={{ animationFillMode: 'both' }}>
         <div className="flex items-center gap-3 border-b border-border/60 pb-3">
-          <div className="p-2.5 rounded-xl bg-lime/10 text-lime border border-lime/30">
+          <div className="p-2.5 rounded-xl bg-lime/10 text-lime border border-lime/30 shrink-0">
             <Zap className="w-5 h-5 fill-lime" />
           </div>
-          <div className="flex-1">
-            <h2 className="font-black text-white text-base uppercase tracking-tight">Public Matchmaking</h2>
-            <p className="text-[11px] text-steel">Instant 30s turn draft against online managers</p>
+          <div className="flex-1 min-w-0">
+            <h2 className="font-black text-white text-base uppercase tracking-tight whitespace-nowrap truncate">
+              <span className="hidden sm:inline">Public </span>Matchmaking
+            </h2>
+            <p className="text-[11px] text-steel font-medium whitespace-nowrap truncate">Instant 30s turn draft against online managers</p>
           </div>
         </div>
 
-        <div className="space-y-1.5">
-          <span className="text-[10px] font-black uppercase text-steel tracking-wider block">Player Pool Filter</span>
-          <select value={poolMode} onChange={(e) => setPoolMode(e.target.value as PoolMode)} className={selectClass}>
-            <option value="GLOBAL">🌍 Global Mix — All Top Leagues</option>
-            <option value="EPL">🏴󠁧󠁢󠁥󠁮󠁧󠁿 EPL Only — Premier League Stars</option>
-            <option value="ICONS">👑 Icons Only — Global Legends</option>
-          </select>
+        <div className="space-y-2">
+          <span className="text-[10px] font-black uppercase text-steel tracking-wider block whitespace-nowrap">Player Pool Filter</span>
+          <div className="flex flex-col gap-2 sm:grid sm:grid-cols-5 sm:gap-2">
+            {/* Mobile Row 1: 2 items (Global, Active Stars) */}
+            <div className="grid grid-cols-2 gap-2 sm:contents">
+              {poolOptions.slice(0, 2).map((option) => {
+                const IconComp = option.icon;
+                const selected = poolMode === option.id;
+                return (
+                  <button
+                    key={option.id}
+                    type="button"
+                    onClick={() => setPoolMode(option.id)}
+                    className={`min-h-[72px] sm:min-h-[76px] rounded-xl border p-2 text-center transition-all active:scale-95 flex flex-col items-center justify-center ${
+                      selected ? "border-lime/60 bg-lime/10" : "border-white/10 bg-slate-950/80"
+                    }`}
+                  >
+                    <IconComp className={`mx-auto mb-1 h-4 w-4 shrink-0 ${selected ? "text-lime" : "text-steel"}`} />
+                    <p className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-white whitespace-nowrap truncate max-w-full">{option.label}</p>
+                    <p className="mt-0.5 text-[9px] sm:text-[10px] font-medium text-steel whitespace-nowrap truncate max-w-full">{option.sub}</p>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Mobile Row 2: 3 items (EPL, Top Clubs, Icons) */}
+            <div className="grid grid-cols-3 gap-2 sm:contents">
+              {poolOptions.slice(2).map((option) => {
+                const IconComp = option.icon;
+                const selected = poolMode === option.id;
+                return (
+                  <button
+                    key={option.id}
+                    type="button"
+                    onClick={() => setPoolMode(option.id)}
+                    className={`min-h-[72px] sm:min-h-[76px] rounded-xl border p-2 text-center transition-all active:scale-95 flex flex-col items-center justify-center ${
+                      selected ? "border-lime/60 bg-lime/10" : "border-white/10 bg-slate-950/80"
+                    }`}
+                  >
+                    <IconComp className={`mx-auto mb-1 h-4 w-4 shrink-0 ${selected ? "text-lime" : "text-steel"}`} />
+                    <p className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-white whitespace-nowrap truncate max-w-full">{option.label}</p>
+                    <p className="mt-0.5 text-[9px] sm:text-[10px] font-medium text-steel whitespace-nowrap truncate max-w-full">{option.sub}</p>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-3">
           <button
             onClick={() => quickMatch(11)}
             disabled={loading}
-            className="py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-lg shadow-lime/10 transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2"
+            className="py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-lg shadow-lime/10 transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2 whitespace-nowrap"
           >
-            {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : (
+            {loading ? <Loader2 className="w-4 h-4 animate-spin shrink-0" /> : (
               <>
-                11 vs 11
+                <span className="whitespace-nowrap">11 vs 11</span>
                 {waiting11 > 0 && (
-                  <span className="px-1.5 py-0.5 rounded-full bg-slate-950/20 text-[10px] font-stats">{waiting11} in queue</span>
+                  <span className="px-1.5 py-0.5 rounded-full bg-slate-950/20 text-[10px] font-stats whitespace-nowrap">{waiting11} queued</span>
                 )}
               </>
             )}
@@ -122,14 +174,14 @@ export default function HomePage() {
           <button
             onClick={() => quickMatch(5)}
             disabled={loading}
-            className="py-4 bg-slate-900 hover:bg-white/5 text-white font-black text-xs uppercase tracking-wider rounded-xl border border-border transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2"
+            className="py-4 bg-slate-900 hover:bg-white/5 text-white font-black text-xs uppercase tracking-wider rounded-xl border border-border transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2 whitespace-nowrap"
           >
-            {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : (
+            {loading ? <Loader2 className="w-4 h-4 animate-spin shrink-0" /> : (
               <>
-                5 vs 5
+                <span className="whitespace-nowrap">5 vs 5</span>
                 {waiting5 > 0 && (
-                  <span className="flex items-center gap-1 text-[10px] text-lime font-stats">
-                    <span className="h-1.5 w-1.5 rounded-full bg-lime shadow-[0_0_6px_rgba(149,232,16,0.8)]" />
+                  <span className="flex items-center gap-1 text-[10px] text-lime font-stats whitespace-nowrap">
+                    <span className="h-1.5 w-1.5 rounded-full bg-lime shadow-[0_0_6px_rgba(149,232,16,0.8)] shrink-0" />
                     {waiting5}
                   </span>
                 )}
@@ -137,24 +189,24 @@ export default function HomePage() {
             )}
           </button>
         </div>
-      </div>
+      </section>
 
       {/* ── FEATURE HIGHLIGHTS ────────────────────────────────────────── */}
-      <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 animate-slide-up delay-300" style={{ animationFillMode: 'both' }}>
+      <section aria-label="Core Features" className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 animate-slide-up delay-300" style={{ animationFillMode: 'both' }}>
         {[
           { icon: Swords, title: "30s Hidden Bids", desc: "Outbid or pass — win the star or get the backup sub card." },
           { icon: Shield, title: "Tactical Formations", desc: "Auto-assigned 4-3-3, 4-4-2, 3-5-2 and more every match." },
-          { icon: Sparkles, title: "Scout & Spy Perks", desc: "Activate Perks to gain intel and add +10s to your turn timer." },
+          { icon: Binoculars, title: "Scout & Spy Perks", desc: "Activate Perks to gain intel and add +10s to your turn timer." },
         ].map((f) => (
           <div key={f.title} className="bg-card p-5 rounded-2xl border border-border flex flex-col items-center text-center gap-3 hover:border-lime/30 hover:shadow-lg hover:shadow-lime/5 transition-all group">
-            <div className="p-2.5 rounded-xl bg-lime/10 text-lime group-hover:scale-110 transition-transform">
+            <div className="p-2.5 rounded-xl bg-lime/10 text-lime group-hover:scale-110 transition-transform shrink-0">
               <f.icon className="w-5 h-5" />
             </div>
-            <h3 className="text-sm font-black text-white">{f.title}</h3>
-            <p className="text-xs text-steel leading-relaxed">{f.desc}</p>
+            <h3 className="text-sm font-black text-white whitespace-nowrap">{f.title}</h3>
+            <p className="text-xs text-steel leading-relaxed font-medium">{f.desc}</p>
           </div>
         ))}
-      </div>
-    </div>
+      </section>
+    </article>
   );
 }

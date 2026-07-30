@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20619.png",
       "kitNumber": 1
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/416697.png",
       "kitNumber": 13
@@ -57,7 +57,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403221.png",
       "kitNumber": 1
@@ -68,7 +68,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342243.png",
       "kitNumber": 35
@@ -101,7 +101,7 @@
       "position": "LB/CB",
       "club": "Arsenal",
       "nation": "Italy",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/157052.png",
       "kitNumber": 33
@@ -123,7 +123,7 @@
       "position": "RB/CB",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19959.png",
       "kitNumber": 4
@@ -167,7 +167,7 @@
       "position": "CB",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/418403.png",
       "kitNumber": 2
@@ -178,7 +178,7 @@
       "position": "CB",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/482903.png",
       "kitNumber": 89

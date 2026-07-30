@@ -69,26 +69,28 @@ export default function JoinRoomPage() {
         <div className="pointer-events-none absolute -left-20 -top-24 h-64 w-64 rounded-full bg-lime/10 blur-3xl" />
 
         <div className="relative space-y-5">
-          <div className="grid gap-3 sm:grid-cols-[1fr_auto] sm:items-end">
-            <label className="block space-y-2">
-              <span className="text-[10px] font-black uppercase tracking-widest text-steel">Manager Handle</span>
+          <div className="space-y-2">
+            <div className="flex items-center justify-between gap-3">
+              <label className="text-[10px] font-black uppercase tracking-widest text-steel">Manager Handle</label>
+              <span className="text-[10px] font-black uppercase tracking-widest text-lime">Auto generated</span>
+            </div>
+            <div className="flex gap-2">
               <input
                 value={nickname}
                 onChange={(e) => setNickname(e.target.value)}
                 maxLength={24}
-                className="w-full rounded-xl border border-white/10 bg-slate-950 px-4 py-3.5 text-base font-black text-white outline-none transition-all focus:border-lime/70 focus:ring-2 focus:ring-lime/20"
+                className="min-w-0 flex-1 rounded-xl border border-white/10 bg-slate-950 px-4 py-3.5 text-base font-black text-white outline-none transition-all placeholder:text-steel focus:border-lime/70 focus:ring-2 focus:ring-lime/20"
                 placeholder="Manager name"
               />
-            </label>
-            <button
-              type="button"
-              onClick={() => setNickname(randomName())}
-              className="flex h-[52px] items-center justify-center gap-2 rounded-xl border border-white/10 bg-slate-900 px-4 text-xs font-black uppercase tracking-wider text-steel transition-all hover:border-lime/50 hover:text-lime active:scale-95"
-              title="Random name"
-            >
-              <RefreshCw className="h-4 w-4" />
-              <span>Reroll</span>
-            </button>
+              <button
+                type="button"
+                onClick={() => setNickname(randomName())}
+                className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel transition-all hover:border-lime/50 hover:text-lime active:scale-95"
+                title="Randomize manager handle"
+              >
+                <RefreshCw className="h-4 w-4" />
+              </button>
+            </div>
           </div>
 
           <label className="block space-y-2">

@@ -1,7 +1,7 @@
 import { query } from "../_generated/server";
 import { v } from "convex/values";
 
-type PoolMode = "GLOBAL" | "EPL" | "TOP_TEAMS" | "ICONS";
+type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
 type PublicQueueSummary = Record<PoolMode, Record<5 | 11, number>>;
 
 export const getByCode = query({
@@ -34,6 +34,7 @@ export const getPublicQueueSummary = query({
     const freshRooms = rooms.filter((room) => room.createdAt > now - 10 * 60 * 1000);
     const queues: PublicQueueSummary = {
       GLOBAL: { 5: 0, 11: 0 },
+      ACTIVE: { 5: 0, 11: 0 },
       EPL: { 5: 0, 11: 0 },
       TOP_TEAMS: { 5: 0, 11: 0 },
       ICONS: { 5: 0, 11: 0 },
@@ -42,7 +43,10 @@ export const getPublicQueueSummary = query({
     for (const room of freshRooms) {
       const poolMode = room.settings?.poolMode || "GLOBAL";
       const matchSize = room.settings?.matchSize;
-      if ((poolMode === "GLOBAL" || poolMode === "EPL" || poolMode === "TOP_TEAMS" || poolMode === "ICONS") && (matchSize === 5 || matchSize === 11)) {
+      if (
+        (poolMode === "GLOBAL" || poolMode === "ACTIVE" || poolMode === "EPL" || poolMode === "TOP_TEAMS" || poolMode === "ICONS") &&
+        (matchSize === 5 || matchSize === 11)
+      ) {
         queues[poolMode as PoolMode][matchSize as 5 | 11] += 1;
       }
     }

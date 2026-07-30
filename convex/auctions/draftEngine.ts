@@ -11,7 +11,7 @@ import {
 } from "../lib/constants";
 
 // ── Types ──────────────────────────────────────────────────
-export type PlayerPoolMode = "GLOBAL" | "EPL" | "ICONS" | string;
+export type PlayerPoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS" | string;
 
 export interface DraftRound {
   roundNumber: number;
@@ -53,7 +53,7 @@ function matchesExact(playerPosition: string, slot: Position): boolean {
 
 function isSideCompatible(playerPosition: string, slot: Position): boolean {
   const pPositions = playerPositions(playerPosition);
-  
+
   // Exact match is always compatible
   if (pPositions.includes(slot)) return true;
 
@@ -107,48 +107,44 @@ interface ScoringContext {
 function scoreCandidate(
   player: PoolPlayer,
   slot: Position,
-  ctx: ScoringContext,
-  role: "main" | "sub"
+  ctx: ScoringContext
 ): number {
   let score = 0;
 
-  // 1. Position fit (0–100, heavily weighted)
-  score += positionFitScore(player.position, slot) * 3;
+  // 1. Position fit (0–100, heavily weighted to preserve categories)
+  const posFit = positionFitScore(player.position, slot);
+  if (posFit === 0) return 0; // Strictly exclude positionally incompatible candidates
+  score += posFit * 3;
 
-  // 2. Tier preference — favor higher tiers for main, lower for sub
+  // 2. High Tier preference for overall quality, balanced across upper tiers
   const rank = tierRank(player.tier);
-  if (role === "main") {
-    score += Math.max(0, (6 - rank) * 15); // ICONs get 90, BRONZE gets 0
-  } else {
-    // Subs should be decent but not top-tier (sweet spot: GOLD-SILVER range)
-    const subIdeal = 4; // GOLD
-    score += Math.max(0, 40 - Math.abs(rank - subIdeal) * 12);
-  }
+  score += Math.max(0, (6 - rank) * 12);
 
-  // 3. Tier budget bonus — favor tiers we still need
+  // 3. Tier budget bonus — favor tiers we still need for target ratio
   const remaining = ctx.tierBudget.get(player.tier) ?? 0;
-  if (remaining > 0) score += 30;
+  if (remaining > 0) score += 25;
 
   // 4. Club diversity penalty
   const clubCount = ctx.usedClubs.get(player.clubId) ?? 0;
-  score -= clubCount * 25;
+  score -= clubCount * 20;
 
-  // 5. Nation diversity (mild penalty)
+  // 5. Nation diversity penalty
   const nationCount = ctx.usedNations.get(player.nationId) ?? 0;
   score -= nationCount * 8;
 
-  return Math.max(0, score);
+  return Math.max(1, score);
 }
 
 const TOP_CLUB_NAMES = new Set([
   "Real Madrid", "Barcelona", "Barca", "Atlético Madrid", "Atletico Madrid",
   "Manchester City", "Man City", "Arsenal", "Liverpool", "Manchester United", "Man Utd", "Chelsea", "Tottenham",
-  "Bayern Munich", "Bayern", "Borussia Dortmund", "Dortmund", "Bayer Leverkusen", "Leverkusen",
+  "Bayern Munich", "Bayern", "Borussia Dortmund", "Dortmund",
   "Paris Saint-Germain", "PSG",
   "AC Milan", "Inter Milan", "Inter", "Juventus", "Juve", "Napoli",
 ]);
 
 // ── Tier Distribution Planning ─────────────────────────────
+// Enforces 80% to 85% Elite & Above (ICON, MASTER, ELITE_PLUS, ELITE) and 15% to 20% Gold/Lower
 function planTierBudget(pool: PoolPlayer[], totalSlots: number): Map<Tier, number> {
   const available = new Map<Tier, number>();
   let totalAvailable = 0;
@@ -157,27 +153,36 @@ function planTierBudget(pool: PoolPlayer[], totalSlots: number): Map<Tier, numbe
     totalAvailable++;
   }
 
-  // Dynamic ratio weights based on actual database tier proportions
+  // Target ratios: 85% Elite or higher (ICON, MASTER, ELITE_PLUS, ELITE), 15% Gold & lower
   const targetRatios: Record<Tier, number> = {
-    ICON: Math.min(0.25, ((available.get("ICON") ?? 0) / (totalAvailable || 1)) * 1.6),
-    MASTER: Math.min(0.25, ((available.get("MASTER") ?? 0) / (totalAvailable || 1)) * 1.4),
-    ELITE_PLUS: Math.min(0.25, ((available.get("ELITE_PLUS") ?? 0) / (totalAvailable || 1)) * 1.3),
-    ELITE: Math.min(0.20, ((available.get("ELITE") ?? 0) / (totalAvailable || 1)) * 1.1),
-    GOLD: Math.min(0.12, ((available.get("GOLD") ?? 0) / (totalAvailable || 1)) * 0.7),
-    SILVER: Math.min(0.03, ((available.get("SILVER") ?? 0) / (totalAvailable || 1)) * 0.3),
-    BRONZE: Math.min(0.02, ((available.get("BRONZE") ?? 0) / (totalAvailable || 1)) * 0.2),
+    ICON: 0.25,        // Upper tier ~25%
+    MASTER: 0.25,      // Upper tier ~25%
+    ELITE_PLUS: 0.20,  // Upper tier ~20%
+    ELITE: 0.15,       // Upper tier ~15% (Total Upper = 85%)
+    GOLD: 0.10,        // Lower tier ~10%
+    SILVER: 0.04,      // Lower tier ~4%
+    BRONZE: 0.01,      // Lower tier ~1%  (Total Lower = 15%)
   };
 
   const budget = new Map<Tier, number>();
   for (const tier of Object.keys(TIER_RANK) as Tier[]) {
-    const ideal = Math.round(totalSlots * (targetRatios[tier] || 0.1));
-    const cap = Math.floor((available.get(tier) ?? 0) / 2);
-    budget.set(tier, Math.max(0, Math.min(ideal, cap)));
+    const availCount = available.get(tier) ?? 0;
+    if (availCount === 0) {
+      budget.set(tier, 0);
+      continue;
+    }
+    const ratio = targetRatios[tier] ?? 0.05;
+    const ideal = Math.max(1, Math.round(totalSlots * 2 * ratio));
+    budget.set(tier, Math.min(ideal, availCount));
   }
   return budget;
 }
 
-// ── Smart Pair Selection ───────────────────────────────────
+// ── Football Media Agency Dynamic Pair Selection ─────────────
+// Dynamic outcomes for friend entertainment:
+// 1. JACKPOT_SUB_SURPRISE (~30%): Sub is HIGHER tier than Main (Losing bid gets secret upgrade!)
+// 2. CLASH_OF_TITANS (~35%): Main and Sub are EQUAL tier (High tension parity duel)
+// 3. CLASSIC_MAIN (~35%): Main is HIGHER tier than Sub (Classic target lead)
 function selectSmartPair(
   pool: PoolPlayer[],
   used: Set<string>,
@@ -189,47 +194,100 @@ function selectSmartPair(
     throw new Error(`Not enough players for position ${slot}. Only ${unused.length} left.`);
   }
 
-  // Score all candidates for MAIN role
-  const mainScores = unused.map((p) => ({
-    player: p,
-    score: scoreCandidate(p, slot, scoringCtx, "main"),
-  }));
-  mainScores.sort((a, b) => b.score - a.score);
+  // Filter candidates strictly matching position category rules
+  const candidates = unused
+    .map((p) => ({
+      player: p,
+      score: scoreCandidate(p, slot, scoringCtx),
+    }))
+    .filter((c) => c.score > 0);
 
-  // Pick main from top candidates (weighted random from top 6 for variety)
-  const topMain = mainScores.slice(0, Math.min(6, mainScores.length));
-  const mainWeights = topMain.map((c) => Math.max(1, c.score));
-  const main = weightedPick(topMain, mainWeights).player;
+  if (candidates.length < 2) {
+    // Fallback if strict criteria limited candidates
+    const fallback = unused.slice(0, 2);
+    return [fallback[0], fallback[1]];
+  }
 
-  // Now score SUB candidates (exclude main player)
-  const subCandidates = unused.filter((p) => p._id !== main._id);
-  const mainRank = tierRank(main.tier);
+  candidates.sort((a, b) => b.score - a.score);
 
-  // Sub candidate scoring: Subs can be higher tier (jackpot), equal tier, or lower tier!
-  const subScores = subCandidates.map((p) => {
-    let score = scoreCandidate(p, slot, scoringCtx, "sub");
-    const pRank = tierRank(p.tier);
-    const gap = pRank - mainRank; // Negative = higher tier than main, 0 = equal, Positive = lower
+  // Sample top candidates for position fit and quality
+  const topCandidates = candidates.slice(0, Math.min(8, candidates.length));
 
-    if (gap < 0) {
-      // Higher tier sub (Jackpot Sub Surprise)
-      score += 45;
-    } else if (gap === 0) {
-      // Equal tier sub (Clash of Titans)
-      score += 40;
-    } else if (gap <= 2) {
-      // Close lower tier sub
-      score += 35;
+  // Pick first candidate weighted by score
+  const c1Weights = topCandidates.map((c) => c.score);
+  const playerA = weightedPick(topCandidates, c1Weights).player;
+
+  // Remaining candidates excluding playerA
+  const subPool = topCandidates.filter((c) => c.player._id !== playerA._id);
+  const c2Weights = subPool.map((c) => c.score);
+  const playerB = weightedPick(subPool, c2Weights).player;
+
+  const rankA = tierRank(playerA.tier); // lower number = higher tier
+  const rankB = tierRank(playerB.tier);
+
+  let main: PoolPlayer;
+  let sub: PoolPlayer;
+
+  // Media Agency Dynamic Pairing Decision Roll
+  const roll = Math.random();
+
+  if (roll < 0.30) {
+    // 🌟 JACKPOT_SUB_SURPRISE (~30%): Sub gets the higher tier player!
+    if (rankA < rankB) {
+      // playerA is higher tier -> make playerA the SUB!
+      sub = playerA;
+      main = playerB;
+    } else if (rankB < rankA) {
+      // playerB is higher tier -> make playerB the SUB!
+      sub = playerB;
+      main = playerA;
     } else {
-      score += 15;
+      // Equal tier: randomly assign
+      if (Math.random() < 0.5) {
+        main = playerA;
+        sub = playerB;
+      } else {
+        main = playerB;
+        sub = playerA;
+      }
     }
-    return { player: p, score };
-  });
-  subScores.sort((a, b) => b.score - a.score);
+  } else if (roll < 0.65) {
+    // ⚔️ CLASH_OF_TITANS (~35%): Try to pair equal/similar tiers for a tense duel
+    // Attempt to pick a sub from unused that matches playerA's tier
+    const sameTierCandidate = unused.find(
+      (p) => p._id !== playerA._id && p.tier === playerA.tier && positionFitScore(p.position, slot) > 0
+    );
 
-  const topSub = subScores.slice(0, Math.min(6, subScores.length));
-  const subWeights = topSub.map((c) => Math.max(1, c.score));
-  const sub = weightedPick(topSub, subWeights).player;
+    if (sameTierCandidate) {
+      const isAFirst = Math.random() < 0.5;
+      main = isAFirst ? playerA : sameTierCandidate;
+      sub = isAFirst ? sameTierCandidate : playerA;
+    } else {
+      // 50/50 assignment of selected pair
+      const isAFirst = Math.random() < 0.5;
+      main = isAFirst ? playerA : playerB;
+      sub = isAFirst ? playerB : playerA;
+    }
+  } else {
+    // 👑 CLASSIC_MAIN (~35%): Main gets the higher tier player!
+    if (rankA < rankB) {
+      main = playerA;
+      sub = playerB;
+    } else if (rankB < rankA) {
+      main = playerB;
+      sub = playerA;
+    } else {
+      main = playerA;
+      sub = playerB;
+    }
+  }
+
+  // 15% Random Chaos Flip for maximum surprise factor among friends
+  if (Math.random() < 0.15) {
+    const temp = main;
+    main = sub;
+    sub = temp;
+  }
 
   return [main, sub];
 }
@@ -289,6 +347,7 @@ export async function generateDraftRounds(
   const filtered: PoolPlayer[] = allPlayers
     .filter((player) => {
       if (poolMode === "ICONS") return player.isLegend || player.tier === "ICON";
+      if (poolMode === "ACTIVE") return !player.isLegend && player.tier !== "ICON";
       if (poolMode === "EPL") return clubById.get(player.clubId)?.league === "Premier League";
       if (poolMode === "TOP_TEAMS") {
         const clubName = clubById.get(player.clubId)?.name ?? "";

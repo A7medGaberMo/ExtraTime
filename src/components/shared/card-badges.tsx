@@ -42,6 +42,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
         <img
           src={logoSrc}
           alt={clubName}
+          crossOrigin="anonymous"
           onError={() => setError(true)}
           className="w-full h-full object-contain filter drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]"
         />
@@ -135,6 +136,7 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
         <img
           src={logoSrc}
           alt={nationName}
+          crossOrigin="anonymous"
           onError={() => setError(true)}
           className="w-full h-full object-cover filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"
         />

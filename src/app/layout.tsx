@@ -18,19 +18,51 @@ const bebas = Bebas_Neue({ weight: ['400'], subsets: ['latin'], variable: '--fon
 const interTight = Inter_Tight({ subsets: ['latin'], variable: '--font-inter-tight' });
 
 export const metadata: Metadata = {
-  title: 'ExtraTime | Live Multiplayer Football Auction & Draft Game',
-  description: 'Draft legendary football icons in real-time escalating auctions (Hidden Bid). Complete squads with 11P and 5P futsal formations, tactical Scout & Spy perks, and underdog budget bonuses!',
+  title: {
+    default: 'ExtraTime | Live Multiplayer Football Auction & Draft Arena',
+    template: '%s | ExtraTime Football Draft',
+  },
+  description: 'Draft legendary football icons in real-time escalating auctions (Hidden Bid). Build winning 11v11 and 5v5 futsal squads with tactical Scout & Spy perks and dynamic budget strategy.',
+  keywords: [
+    'Football Draft Game',
+    'Multiplayer Football Auction',
+    'Hidden Bid Football',
+    'Tactical Football Squad Builder',
+    'Football Player Cards',
+    'ExtraTime Draft Engine',
+    'Football Manager Online',
+  ],
+  authors: [{ name: 'ExtraTime Media' }],
+  creator: 'ExtraTime',
+  publisher: 'ExtraTime',
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico' }
+      { url: '/ETIcon.png?v=2', type: 'image/png' },
+      { url: '/favicon.ico?v=2' },
     ],
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    shortcut: '/ETIcon.png?v=2',
+    apple: '/ETIcon.png?v=2',
   },
   openGraph: {
-    title: 'ExtraTime | Live Multiplayer Football Auction Game',
-    description: 'Draft legendary icons in real-time auctions with live turn timers, tactical perks, and 11P/5P pitch formations.',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://extratime.app',
+    title: 'ExtraTime | Live Multiplayer Football Auction Arena',
+    description: 'Draft legendary icons in real-time auctions with live turn timers, tactical perks, and 11v11 / 5v5 pitch formations.',
+    siteName: 'ExtraTime',
+    images: [
+      {
+        url: '/ExtraTimeLogo.png',
+        width: 1200,
+        height: 630,
+        alt: 'ExtraTime Live Multiplayer Football Auction & Draft Arena',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ExtraTime | Live Football Auction Game',
+    description: 'Real-time blind auctions, tactical pitch management, and dynamic perks.',
     images: ['/ExtraTimeLogo.png'],
   },
 };

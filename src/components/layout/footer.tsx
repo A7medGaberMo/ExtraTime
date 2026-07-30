@@ -4,31 +4,23 @@ import Image from 'next/image';
 
 export function Footer() {
   return (
-    <footer className="w-full border-t border-border/80 bg-slate-950/60 backdrop-blur-md py-4 pb-20 md:pb-6">
-      <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-        {/* Logo */}
-        <div className="flex items-center gap-2.5">
-          <div className="relative flex h-6 w-6 items-center justify-center overflow-hidden rounded-lg shadow-sm">
-            <Image
-              src="/ExtraTimeLogo.png"
-              alt="ExtraTime Logo"
-              fill
-              className="object-cover"
-              sizes="24px"
-            />
-          </div>
-          <span
-            className="text-base font-black tracking-tight text-white uppercase"
-            style={{ fontFamily: 'var(--font-anton), var(--font-bebas), sans-serif' }}
-          >
-            Extra<span className="text-lime">Time</span>
-          </span>
+    <footer className="w-full border-t border-border/40 bg-slate-950/40 backdrop-blur-md py-4 pb-20 md:pb-6">
+      <div className="container mx-auto px-4 flex items-center justify-center gap-2.5">
+        <div className="relative flex h-6 w-6 items-center justify-center overflow-hidden rounded-lg bg-slate-950 ring-1 ring-lime/30 shadow-sm">
+          <Image
+            src="/ETIcon.png"
+            alt="ExtraTime Logo"
+            fill
+            className="object-contain p-0.5"
+            sizes="24px"
+          />
         </div>
-
-        {/* Default Copyright */}
-        <p className="text-xs text-steel/80 font-medium">
-          &copy; {new Date().getFullYear()} ExtraTime. All rights reserved.
-        </p>
+        <span
+          className="text-sm font-extrabold tracking-wider text-steel/90"
+          style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}
+        >
+          Extra<span className="text-lime/90">Time</span>
+        </span>
       </div>
     </footer>
   );

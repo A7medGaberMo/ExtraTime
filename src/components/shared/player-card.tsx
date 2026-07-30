@@ -323,6 +323,7 @@ export function PlayerCard({
                   <img
                     src={player.imageUrl}
                     alt={player.name}
+                    crossOrigin="anonymous"
                     onError={() => setImgError(true)}
                     className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-110"
                   />

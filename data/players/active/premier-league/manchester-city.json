@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "Gold",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19012.png",
       "kitNumber": 13
@@ -219,7 +219,7 @@
     {
       "apiId": 307123,
       "name": "N. O'Reilly",
-      "position": "CM",
+      "position": "CM/LB",
       "club": "Manchester City",
       "nation": "England",
       "tier": "ELITE",
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/389034.png",
       "kitNumber": 6
@@ -244,7 +244,7 @@
       "position": "CM",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/442048.png",
       "kitNumber": 7
@@ -310,7 +310,7 @@
       "position": "ST",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/460853.png",
       "kitNumber": 28
@@ -321,7 +321,7 @@
       "position": "ST",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380681.png",
       "kitNumber": 29

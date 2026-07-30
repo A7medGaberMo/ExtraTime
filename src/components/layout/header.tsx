@@ -14,18 +14,19 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group transition-opacity hover:opacity-90">
-          <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl shadow-lg shadow-lime/20 ring-1 ring-white/20 transition-transform group-hover:scale-105">
+          <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-slate-950 shadow-lg shadow-lime/20 ring-1 ring-lime/30 transition-transform group-hover:scale-105">
             <Image
-              src="/ExtraTimeLogo.png"
+              src="/ETIcon.png"
               alt="ExtraTime Logo"
               fill
-              className="object-cover"
+              className="object-contain p-0.5"
               sizes="40px"
+              priority
             />
           </div>
           <span
-            className="text-xl font-black tracking-tight text-white drop-shadow-sm uppercase"
-            style={{ fontFamily: 'var(--font-anton), var(--font-bebas), sans-serif' }}
+            className="text-2xl font-extrabold tracking-wider text-white drop-shadow-sm"
+            style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}
           >
             Extra<span className="text-transparent bg-clip-text bg-gradient-to-r from-lime to-vivid">Time</span>
           </span>
