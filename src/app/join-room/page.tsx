@@ -5,12 +5,14 @@ import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { PageHeader } from "@/components/shared/page-header";
+import { useToast } from "@/components/shared/toast";
 import { Loader2, RefreshCw, CheckCircle2, XCircle, Search, KeyRound, Swords } from "lucide-react";
 
 import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
 
 export default function JoinRoomPage() {
   const router = useRouter();
+  const { toast } = useToast();
   const createGuest = useMutation(api.guests.mutations.create);
   const joinRoom = useMutation(api.rooms.mutations.join);
 
@@ -51,7 +53,7 @@ export default function JoinRoomPage() {
       router.push(`/auction/${result.roomId}`);
     } catch (error: unknown) {
       const err = error as { message?: string };
-      alert(err.message || "Could not join room");
+      toast(err.message || "Could not join room", "error");
       setLoading(false);
     }
   }

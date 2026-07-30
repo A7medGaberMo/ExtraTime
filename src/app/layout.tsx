@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Sora, Inter, Rajdhani, Anton, Bebas_Neue, Inter_Tight } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
+import { ToastProvider } from '@/components/shared/toast';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { MobileNav } from '@/components/layout/mobile-nav';
@@ -85,12 +86,14 @@ export default function RootLayout({
     <html lang="en" className="dark overflow-x-hidden">
       <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-lime selection:text-background`}>
         <ConvexClientProvider>
-          <Header />
-          <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 pb-24 md:pb-8 animate-fade-in">
-            {children}
-          </main>
-          <Footer />
-          <MobileNav />
+          <ToastProvider>
+            <Header />
+            <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 pb-24 md:pb-8 animate-fade-in">
+              {children}
+            </main>
+            <Footer />
+            <MobileNav />
+          </ToastProvider>
         </ConvexClientProvider>
       </body>
     </html>

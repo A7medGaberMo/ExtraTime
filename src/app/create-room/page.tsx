@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { PageHeader } from "@/components/shared/page-header";
+import { useToast } from "@/components/shared/toast";
 import {
   Loader2, Globe, Lock, RefreshCw, Clock, Zap, UserCheck,
   Swords, Coins, Users, Star, Crown, Flame, ShieldCheck
@@ -25,6 +26,7 @@ const poolOptions = [
 
 export default function CreateRoomPage() {
   const router = useRouter();
+  const { toast } = useToast();
   const createGuest = useMutation(api.guests.mutations.create);
   const createRoom = useMutation(api.rooms.mutations.create);
 
@@ -45,7 +47,7 @@ export default function CreateRoomPage() {
       router.push(`/auction/${room.roomId}`);
     } catch (error: unknown) {
       const err = error as { message?: string };
-      alert(err.message || "Could not create room");
+      toast(err.message || "Could not create room", "error");
       setLoading(false);
     }
   }

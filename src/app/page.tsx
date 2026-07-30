@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
+import { useToast } from "@/components/shared/toast";
 import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck, X, RefreshCw } from "lucide-react";
 
 type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
@@ -21,6 +22,7 @@ const poolOptions = [
 
 export default function HomePage() {
   const router = useRouter();
+  const { toast } = useToast();
   const createGuest = useMutation(api.guests.mutations.create);
   const findMatch = useMutation(api.rooms.mutations.findOrCreatePublicMatch);
   const queueSummary = useQuery(api.rooms.queries.getPublicQueueSummary);
@@ -52,7 +54,7 @@ export default function HomePage() {
       router.push(`/auction/${result.roomId}`);
     } catch (error: unknown) {
       const err = error as { message?: string };
-      alert(err.message || "Could not start matchmaking");
+      toast(err.message || "Could not start matchmaking", "error");
       setLoading(false);
     }
   }
