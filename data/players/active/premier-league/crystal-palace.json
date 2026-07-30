@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Crystal Palace",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19088.png",
       "kitNumber": 1
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Crystal Palace",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22157.png",
       "kitNumber": 44
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Crystal Palace",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20995.png",
       "kitNumber": 5
@@ -79,7 +79,7 @@
       "position": "RB/CB",
       "club": "Crystal Palace",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162712.png",
       "kitNumber": 3
@@ -90,7 +90,7 @@
       "position": "LB",
       "club": "Crystal Palace",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182201.png",
       "kitNumber": 12
@@ -167,7 +167,7 @@
       "position": "CB",
       "club": "Crystal Palace",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412759.png",
       "kitNumber": 23
@@ -189,7 +189,7 @@
       "position": "CB",
       "club": "Crystal Palace",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/196856.png",
       "kitNumber": 30
@@ -200,7 +200,7 @@
       "position": "CB",
       "club": "Crystal Palace",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380702.png",
       "kitNumber": 4
@@ -222,7 +222,7 @@
       "position": "CM/CDM",
       "club": "Crystal Palace",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288102.png",
       "kitNumber": 20
@@ -233,7 +233,7 @@
       "position": "CDM/CM",
       "club": "Crystal Palace",
       "nation": "Mali",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/3339.png",
       "kitNumber": 28
@@ -244,7 +244,7 @@
       "position": "CAM/CM",
       "club": "Crystal Palace",
       "nation": "Japan",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2601.png",
       "kitNumber": 18
@@ -365,7 +365,7 @@
       "position": "LW/RW",
       "club": "Crystal Palace",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/184226.png",
       "kitNumber": 10
@@ -387,7 +387,7 @@
       "position": "ST",
       "club": "Crystal Palace",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1468.png",
       "kitNumber": 9
@@ -398,7 +398,7 @@
       "position": "ST",
       "club": "Crystal Palace",
       "nation": "Norway",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2032.png",
       "kitNumber": 22

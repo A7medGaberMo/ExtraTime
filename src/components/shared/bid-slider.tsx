@@ -57,10 +57,10 @@ export function BidSlider({ value, min, max, onChange, className }: BidSliderPro
   }, []);
 
   return (
-    <div className={cn('relative select-none touch-none', className)}>
+    <div className={cn('relative select-none touch-none pt-8 pb-5', className)}>
       {/* Value label above thumb */}
       <div
-        className="absolute -top-7 transition-all duration-100 pointer-events-none"
+        className="absolute top-1 transition-all duration-100 pointer-events-none"
         style={{ left: `${pct}%`, transform: 'translateX(-50%)' }}
       >
         <span

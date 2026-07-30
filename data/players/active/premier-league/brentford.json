@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Brentford",
       "nation": "Ireland",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/281.png",
       "kitNumber": 1
@@ -68,7 +68,7 @@
       "position": "CB/RB",
       "club": "Brentford",
       "nation": "Norway",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1119.png",
       "kitNumber": 20
@@ -79,7 +79,7 @@
       "position": "RB/LB",
       "club": "Brentford",
       "nation": "Scotland",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44871.png",
       "kitNumber": 2
@@ -90,7 +90,7 @@
       "position": "LB",
       "club": "Brentford",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19346.png",
       "kitNumber": 3
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Brentford",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/36922.png",
       "kitNumber": 4
@@ -134,7 +134,7 @@
       "position": "CM/CAM",
       "club": "Brentford",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15908.png",
       "kitNumber": 24
@@ -145,7 +145,7 @@
       "position": "CDM/CM",
       "club": "Brentford",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25073.png",
       "kitNumber": 27
@@ -156,7 +156,7 @@
       "position": "CM",
       "club": "Brentford",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47438.png",
       "kitNumber": 8
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Brentford",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441271.png",
       "kitNumber": 44
@@ -277,7 +277,7 @@
       "position": "ST",
       "club": "Brentford",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2939.png",
       "kitNumber": 13

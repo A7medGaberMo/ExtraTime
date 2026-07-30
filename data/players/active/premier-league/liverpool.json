@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Liverpool",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280.png",
       "kitNumber": 1
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Liverpool",
       "nation": "Georgia",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24760.png",
       "kitNumber": 25
@@ -79,7 +79,7 @@
       "position": "RB/RM",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152654.png",
       "kitNumber": 30
@@ -189,7 +189,7 @@
       "position": "CAM/CM",
       "club": "Liverpool",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203224.png",
       "kitNumber": 7
@@ -255,7 +255,7 @@
       "position": "CM",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/397997.png",
       "kitNumber": 42

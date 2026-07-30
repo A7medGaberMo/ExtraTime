@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Wolves",
       "nation": "Portugal",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1590.png",
       "kitNumber": 1
@@ -57,7 +57,7 @@
       "position": "RB",
       "club": "Wolves",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/169.png",
       "kitNumber": 2
@@ -167,7 +167,7 @@
       "position": "CM/CDM",
       "club": "Wolves",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195103.png",
       "kitNumber": 8

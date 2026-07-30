@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38734.png",
       "kitNumber": 4
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163189.png",
       "kitNumber": 12
@@ -156,7 +156,7 @@
       "position": "CM/LW",
       "club": "Newcastle",
       "nation": "Brazil",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/723.png",
       "kitNumber": 7
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1463.png",
       "kitNumber": 28
@@ -189,7 +189,7 @@
       "position": "RW/RM",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19163.png",
       "kitNumber": 23
@@ -200,7 +200,7 @@
       "position": "CM/CAM",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19192.png",
       "kitNumber": 41
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "South Korea",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/423714.png",
       "kitNumber": 11
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/469321.png",
       "kitNumber": 14
@@ -244,7 +244,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "Ivory Coast",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387643.png",
       "kitNumber": 30
