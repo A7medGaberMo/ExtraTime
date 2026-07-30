@@ -13,7 +13,7 @@
       "position": "RW/CAM",
       "club": "Fenerbahçe",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Marco_Asensio_2018.jpg",
       "kitNumber": 11
@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Fenerbahçe",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Ederson_Brazil_V_Morocco_13_June_2026-14_%28cropped%29.jpg",
       "kitNumber": 31
@@ -35,21 +35,10 @@
       "position": "CB",
       "club": "Fenerbahçe",
       "nation": "Slovakia",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/SVK_vs._SMR_2024_Slovakia_Nr._14_Skriniar_%283%29_%28cropped%29.jpg",
       "kitNumber": 3
-    },
-    {
-      "apiId": 38167,
-      "name": "İsmail Yüksek",
-      "position": "CDM/CM",
-      "club": "Fenerbahçe",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/977561_sPICT_%28cropped%29.jpg",
-      "kitNumber": 5
     },
     {
       "apiId": 30421,
@@ -57,32 +46,10 @@
       "position": "CAM/ST",
       "club": "Fenerbahçe",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Anderson_talisca-1527276212_%28cropped%29.jpg",
       "kitNumber": 94
-    },
-    {
-      "apiId": 642,
-      "name": "Nélson Semedo",
-      "position": "RB/RWB",
-      "club": "Fenerbahçe",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Nelson_Semedo_Croatia_v_Portugal_2_July_2026-227.jpg",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 1636,
-      "name": "Mert Müldür",
-      "position": "RB/LB",
-      "club": "Fenerbahçe",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Rapid-Spartak_%2815%29_%28cropped%29.jpg",
-      "kitNumber": 18
     },
     {
       "apiId": 1205,
@@ -94,6 +61,39 @@
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/N%27Golo_Kante_France_v_Senegal_16_June_2026-397.jpg",
       "kitNumber": 7
+    },
+    {
+      "apiId": 642,
+      "name": "Nélson Semedo",
+      "position": "RB/RWB",
+      "club": "Fenerbahçe",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Nelson_Semedo_Croatia_v_Portugal_2_July_2026-227.jpg",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 38167,
+      "name": "İsmail Yüksek",
+      "position": "CDM/CM",
+      "club": "Fenerbahçe",
+      "nation": "Turkey",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/977561_sPICT_%28cropped%29.jpg",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 1636,
+      "name": "Mert Müldür",
+      "position": "RB/LB",
+      "club": "Fenerbahçe",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Rapid-Spartak_%2815%29_%28cropped%29.jpg",
+      "kitNumber": 18
     }
   ]
 }

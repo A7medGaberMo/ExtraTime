@@ -24,13 +24,10 @@ export const tierValidator = v.union(
 );
 
 // ── Position System ────────────────────────────────────────
-export type Position = "GK" | "CB" | "LB" | "RB" | "CDM" | "CM" | "CAM" | "LW" | "RW" | "ST" | "CF";
+export type Position = "GK" | "CB" | "LB" | "RB" | "CDM" | "CM" | "CAM" | "LM" | "RM" | "LW" | "RW" | "ST" | "CF";
 
 export function normalizePosition(position: string): string {
-  const val = position.trim().toUpperCase();
-  if (val === "LM") return "LW";
-  if (val === "RM") return "RW";
-  return val;
+  return position.trim().toUpperCase();
 }
 
 export function playerPositions(position: string): string[] {
@@ -41,7 +38,7 @@ export function lineFor(position: string): "GK" | "DEF" | "MID" | "ATT" {
   const norm = normalizePosition(position);
   if (norm === "GK") return "GK";
   if (["CB", "LB", "RB"].includes(norm)) return "DEF";
-  if (["CDM", "CM", "CAM"].includes(norm)) return "MID";
+  if (["CDM", "CM", "CAM", "LM", "RM"].includes(norm)) return "MID";
   return "ATT";
 }
 
@@ -71,4 +68,3 @@ export const LEAGUE_COUNTRY: Record<string, string> = {
   "Belgian Pro League": "Belgium",
   "Global Legends": "International",
 };
-

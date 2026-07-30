@@ -140,6 +140,41 @@ h1, h2, h3, h4, h5, h6 {
 .animate-pack-open { animation: packOpeningGlow 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
 .animate-light-rays { animation: lightRays 20s linear infinite; }
 
+/* Player slot fill pop-in */
+@keyframes slotFillIn {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(1.15) rotate(4deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+/* Active bidding position pulse */
+@keyframes activePosRing {
+  0% { box-shadow: 0 0 0 0 rgba(149, 232, 16, 0.6); }
+  50% { box-shadow: 0 0 0 12px rgba(149, 232, 16, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(149, 232, 16, 0); }
+}
+
+/* Stagger formation nodes entrance */
+@keyframes nodeStagger {
+  from { transform: translateY(18px) scale(0.8); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+/* Shimmer loading effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-slot-fill { animation: slotFillIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+.animate-active-ring { animation: activePosRing 1.8s ease-out infinite; }
+.animate-node-stagger { animation: nodeStagger 0.5s ease-out forwards; }
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 30%, rgba(149,232,16,0.08) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
 /* ========================================================================= */
 /* TIER SHAPES & STYLES                                                      */
 /* ========================================================================= */

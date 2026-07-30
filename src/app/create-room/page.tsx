@@ -7,13 +7,20 @@ import { api } from "../../../convex/_generated/api";
 import { PageHeader } from "@/components/shared/page-header";
 import {
   Loader2, Globe, Lock, RefreshCw, Clock, Zap,
-  Swords, Coins, Users, Star, Crown, Flame
+  Swords, Coins, Users, Star, Crown, Flame, ShieldCheck
 } from "lucide-react";
 
 type MatchSize = 5 | 11;
 type PoolMode = "GLOBAL" | "EPL" | "TOP_TEAMS" | "ICONS";
 
 import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
+
+const poolOptions = [
+  { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All leagues" },
+  { id: "EPL" as PoolMode, label: "EPL", icon: Flame, sub: "Premier stars" },
+  { id: "TOP_TEAMS" as PoolMode, label: "Top Clubs", icon: Star, sub: "Elite clubs" },
+  { id: "ICONS" as PoolMode, label: "Icons", icon: Crown, sub: "Legends only" },
+];
 
 export default function CreateRoomPage() {
   const router = useRouter();
@@ -43,199 +50,170 @@ export default function CreateRoomPage() {
   }
 
   return (
-    <div className="max-w-xl mx-auto space-y-6 animate-fade-in pb-24 md:pb-8">
-      <PageHeader title="Create Match" subtitle="Set up a 30s Hidden Bid arena in seconds" backUrl="/" />
+    <div className="mx-auto max-w-3xl space-y-4 pb-24 md:pb-8 animate-fade-in">
+      <PageHeader
+        title="Create Hidden Bid"
+        subtitle="Pick the arena rules, share the code, and draft your squad card by card."
+        backUrl="/"
+        className="mb-3"
+      />
 
-      <div className="bg-card/90 border border-border/90 rounded-3xl p-5 sm:p-7 shadow-2xl space-y-6 relative overflow-hidden backdrop-blur-xl">
-        <div className="absolute top-0 right-0 w-60 h-60 bg-lime/8 blur-3xl rounded-full pointer-events-none" />
+      <section className="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-950/70 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
+        <div className="pointer-events-none absolute inset-x-8 top-0 h-28 rounded-full bg-lime/10 blur-3xl" />
 
-        {/* Dynamic Timer Rule Banner */}
-        <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-slate-950/80 border border-lime/30 text-lime text-xs font-bold shadow-md">
-          <div className="w-8 h-8 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center shrink-0">
-            <Clock className="w-4 h-4 text-lime" />
+        <div className="relative grid gap-3 sm:grid-cols-3">
+          <div className="rounded-xl border border-lime/25 bg-lime/10 p-3">
+            <Clock className="mb-2 h-4 w-4 text-lime" />
+            <p className="text-[10px] font-black uppercase tracking-widest text-lime">30s Turns</p>
+            <p className="mt-1 text-xs font-medium leading-snug text-slate-300">Scout or Spy gives +10s when used.</p>
           </div>
-          <div className="flex flex-col min-w-0">
-            <span className="text-white font-black uppercase text-[11px] tracking-wider">30s Turn Bidding</span>
-            <span className="text-[10px] text-steel font-medium">Using Scout or Spy perk adds +10s decision boost</span>
+          <div className="rounded-xl border border-white/10 bg-slate-900/80 p-3">
+            <ShieldCheck className="mb-2 h-4 w-4 text-amber-400" />
+            <p className="text-[10px] font-black uppercase tracking-widest text-white">Hidden Backup</p>
+            <p className="mt-1 text-xs font-medium leading-snug text-steel">Lose the bid, still receive the secret sub.</p>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-slate-900/80 p-3">
+            <Coins className="mb-2 h-4 w-4 text-lime" />
+            <p className="text-[10px] font-black uppercase tracking-widest text-white">Budget Wins</p>
+            <p className="mt-1 text-xs font-medium leading-snug text-steel">Strong cards matter. Saved cash breaks ties.</p>
           </div>
         </div>
+      </section>
 
-        {/* Manager Name Section */}
-        <div className="space-y-2">
-          <label className="text-[10px] font-black uppercase text-steel tracking-widest block flex items-center justify-between">
-            <span>Manager Handle</span>
-            <span className="text-[9px] text-lime font-bold">Auto Generated</span>
-          </label>
-          <div className="flex gap-2">
-            <div className="relative flex-1">
+      <section className="relative overflow-hidden rounded-2xl border border-white/10 bg-card/90 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
+        <div className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-lime/10 blur-3xl" />
+
+        <div className="relative space-y-5">
+          <div className="space-y-2">
+            <div className="flex items-center justify-between gap-3">
+              <label className="text-[10px] font-black uppercase tracking-widest text-steel">Manager Handle</label>
+              <span className="text-[10px] font-black uppercase tracking-widest text-lime">Auto generated</span>
+            </div>
+            <div className="flex gap-2">
               <input
                 value={nickname}
                 onChange={(e) => setNickname(e.target.value)}
                 maxLength={24}
-                className="w-full bg-slate-950/90 border border-border rounded-2xl px-4 py-3.5 text-white text-sm font-black focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-all"
-                placeholder="Enter handle..."
+                className="min-w-0 flex-1 rounded-xl border border-white/10 bg-slate-950 px-4 py-3.5 text-base font-black text-white outline-none transition-all placeholder:text-steel focus:border-lime/70 focus:ring-2 focus:ring-lime/20"
+                placeholder="Manager name"
               />
+              <button
+                type="button"
+                onClick={() => setNickname(randomName())}
+                className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel transition-all hover:border-lime/50 hover:text-lime active:scale-95"
+                title="Randomize manager handle"
+              >
+                <RefreshCw className="h-4 w-4" />
+              </button>
             </div>
-            <button
-              type="button"
-              onClick={() => setNickname(randomName())}
-              className="px-4 rounded-2xl bg-slate-900 border border-border text-steel hover:text-lime hover:border-lime/50 transition-all active:scale-95 flex items-center justify-center gap-1.5 font-bold text-xs"
-              title="Randomize manager handle"
-            >
-              <RefreshCw className="w-4 h-4" />
-              <span className="hidden sm:inline">Reroll</span>
-            </button>
           </div>
-        </div>
 
-        {/* Match Format */}
-        <div className="space-y-2">
-          <label className="text-[10px] font-black uppercase text-steel tracking-widest block">Match Format</label>
-          <div className="grid grid-cols-2 gap-2.5">
+          <div className="grid gap-3 sm:grid-cols-2">
             <button
               type="button"
               onClick={() => setMatchSize(11)}
-              className={`p-3.5 rounded-2xl text-left transition-all border flex items-center gap-3 active:scale-95 ${
-                matchSize === 11
-                  ? "bg-lime/10 border-lime/50 text-lime shadow-[0_0_20px_rgba(149,232,16,0.15)]"
-                  : "bg-slate-950/80 border-border text-steel hover:text-white"
+              className={`min-h-[88px] rounded-xl border p-3 text-left transition-all active:scale-[0.98] ${
+                matchSize === 11 ? "border-lime/60 bg-lime/10 shadow-[0_0_24px_rgba(149,232,16,0.14)]" : "border-white/10 bg-slate-950/80"
               }`}
             >
-              <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 border ${
-                matchSize === 11 ? "bg-lime/20 border-lime text-lime" : "bg-slate-900 border-border text-steel"
-              }`}>
-                <Users className="w-4 h-4" />
-              </div>
-              <div className="flex flex-col min-w-0">
-                <span className="text-xs font-black uppercase tracking-wider text-white">11 vs 11</span>
-                <span className="text-[10px] text-steel font-medium truncate">Full Squad (11 Rounds)</span>
-              </div>
+              <Users className={`mb-2 h-5 w-5 ${matchSize === 11 ? "text-lime" : "text-steel"}`} />
+              <p className="text-sm font-black uppercase tracking-wider text-white">11 vs 11</p>
+              <p className="mt-1 text-xs font-medium text-steel">Full pitch - 11 rounds</p>
             </button>
-
             <button
               type="button"
               onClick={() => setMatchSize(5)}
-              className={`p-3.5 rounded-2xl text-left transition-all border flex items-center gap-3 active:scale-95 ${
-                matchSize === 5
-                  ? "bg-lime/10 border-lime/50 text-lime shadow-[0_0_20px_rgba(149,232,16,0.15)]"
-                  : "bg-slate-950/80 border-border text-steel hover:text-white"
+              className={`min-h-[88px] rounded-xl border p-3 text-left transition-all active:scale-[0.98] ${
+                matchSize === 5 ? "border-lime/60 bg-lime/10 shadow-[0_0_24px_rgba(149,232,16,0.14)]" : "border-white/10 bg-slate-950/80"
               }`}
             >
-              <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 border ${
-                matchSize === 5 ? "bg-lime/20 border-lime text-lime" : "bg-slate-900 border-border text-steel"
-              }`}>
-                <Zap className="w-4 h-4" />
-              </div>
-              <div className="flex flex-col min-w-0">
-                <span className="text-xs font-black uppercase tracking-wider text-white">5 vs 5</span>
-                <span className="text-[10px] text-steel font-medium truncate">Futsal (5 Rounds)</span>
-              </div>
+              <Zap className={`mb-2 h-5 w-5 ${matchSize === 5 ? "text-lime" : "text-steel"}`} />
+              <p className="text-sm font-black uppercase tracking-wider text-white">5 vs 5</p>
+              <p className="mt-1 text-xs font-medium text-steel">Fast futsal - 5 rounds</p>
             </button>
           </div>
-        </div>
 
-        {/* Starting Budget */}
-        <div className="space-y-2">
-          <label className="text-[10px] font-black uppercase text-steel tracking-widest block">Starting Budget</label>
-          <div className="grid grid-cols-3 gap-2">
-            {[
-              { amount: 100, label: "$100M", desc: "Standard" },
-              { amount: 150, label: "$150M", desc: "High Stakes" },
-              { amount: 200, label: "$200M", desc: "Mega Budget" },
-            ].map((b) => (
-              <button
-                key={b.amount}
-                type="button"
-                onClick={() => setStartingBudget(b.amount)}
-                className={`py-3 px-2 rounded-2xl text-center transition-all border flex flex-col items-center justify-center active:scale-95 ${
-                  startingBudget === b.amount
-                    ? "bg-lime/10 border-lime/50 text-lime shadow-[0_0_15px_rgba(149,232,16,0.15)]"
-                    : "bg-slate-950/80 border-border text-steel hover:text-white"
-                }`}
-              >
-                <div className="flex items-center gap-1">
-                  <Coins className="w-3.5 h-3.5 shrink-0" />
-                  <span className="text-xs font-black tracking-wider text-white">{b.label}</span>
-                </div>
-                <span className="text-[9px] text-steel font-bold mt-0.5">{b.desc}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Player Pool Selection */}
-        <div className="space-y-2">
-          <label className="text-[10px] font-black uppercase text-steel tracking-widest block">Player Pool Filter</label>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-            {[
-              { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All Leagues" },
-              { id: "EPL" as PoolMode, label: "EPL", icon: Flame, sub: "Premier Stars" },
-              { id: "TOP_TEAMS" as PoolMode, label: "Top Clubs", icon: Star, sub: "RM, Barca, City..." },
-              { id: "ICONS" as PoolMode, label: "Icons", icon: Crown, sub: "Legends Only" },
-            ].map((p) => {
-              const IconComp = p.icon;
-              return (
+          <div className="space-y-2">
+            <label className="text-[10px] font-black uppercase tracking-widest text-steel">Starting Budget</label>
+            <div className="grid grid-cols-3 gap-2">
+              {[100, 150, 200].map((amount) => (
                 <button
-                  key={p.id}
+                  key={amount}
                   type="button"
-                  onClick={() => setPoolMode(p.id)}
-                  className={`p-3 rounded-2xl transition-all border flex flex-col items-center justify-center text-center active:scale-95 ${
-                    poolMode === p.id
-                      ? "bg-lime/10 border-lime/50 text-lime shadow-[0_0_15px_rgba(149,232,16,0.15)]"
-                      : "bg-slate-950/80 border-border text-steel hover:text-white"
+                  onClick={() => setStartingBudget(amount)}
+                  className={`rounded-xl border px-2 py-3 text-center transition-all active:scale-95 ${
+                    startingBudget === amount ? "border-lime/60 bg-lime/10" : "border-white/10 bg-slate-950/80"
                   }`}
                 >
-                  <IconComp className={`w-4 h-4 mb-1 ${poolMode === p.id ? "text-lime" : "text-steel"}`} />
-                  <span className="text-xs font-black uppercase tracking-wider text-white">{p.label}</span>
-                  <span className="text-[9px] text-steel font-medium mt-0.5 truncate max-w-full">{p.sub}</span>
+                  <p className="font-stats text-lg text-lime">${amount}M</p>
+                  <p className="text-[10px] font-bold uppercase tracking-wider text-steel">
+                    {amount === 100 ? "Standard" : amount === 150 ? "Stakes" : "Mega"}
+                  </p>
                 </button>
-              );
-            })}
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Room Privacy */}
-        <div className="space-y-2">
-          <label className="text-[10px] font-black uppercase text-steel tracking-widest block">Room Privacy</label>
+          <div className="space-y-2">
+            <label className="text-[10px] font-black uppercase tracking-widest text-steel">Player Pool</label>
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+              {poolOptions.map((option) => {
+                const IconComp = option.icon;
+                const selected = poolMode === option.id;
+                return (
+                  <button
+                    key={option.id}
+                    type="button"
+                    onClick={() => setPoolMode(option.id)}
+                    className={`min-h-[76px] rounded-xl border p-2.5 text-center transition-all active:scale-95 ${
+                      selected ? "border-lime/60 bg-lime/10" : "border-white/10 bg-slate-950/80"
+                    }`}
+                  >
+                    <IconComp className={`mx-auto mb-1.5 h-4 w-4 ${selected ? "text-lime" : "text-steel"}`} />
+                    <p className="text-xs font-black uppercase tracking-wider text-white">{option.label}</p>
+                    <p className="mt-0.5 truncate text-[10px] font-medium text-steel">{option.sub}</p>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           <div className="grid grid-cols-2 gap-2">
             <button
               type="button"
               onClick={() => setIsPublic(false)}
-              className={`p-3.5 rounded-2xl flex items-center justify-center gap-2 text-xs font-black uppercase tracking-wider transition-all border active:scale-95 ${
-                !isPublic
-                  ? "bg-lime/10 border-lime/50 text-lime shadow-[0_0_15px_rgba(149,232,16,0.15)]"
-                  : "bg-slate-950/80 border-border text-steel hover:text-white"
+              className={`rounded-xl border px-3 py-3 text-xs font-black uppercase tracking-wider transition-all active:scale-95 ${
+                !isPublic ? "border-lime/60 bg-lime/10 text-lime" : "border-white/10 bg-slate-950 text-steel"
               }`}
             >
-              <Lock className="w-4 h-4 text-lime" /> Private Code
+              <Lock className="mx-auto mb-1.5 h-4 w-4" />
+              Private Code
             </button>
             <button
               type="button"
               onClick={() => setIsPublic(true)}
-              className={`p-3.5 rounded-2xl flex items-center justify-center gap-2 text-xs font-black uppercase tracking-wider transition-all border active:scale-95 ${
-                isPublic
-                  ? "bg-lime/10 border-lime/50 text-lime shadow-[0_0_15px_rgba(149,232,16,0.15)]"
-                  : "bg-slate-950/80 border-border text-steel hover:text-white"
+              className={`rounded-xl border px-3 py-3 text-xs font-black uppercase tracking-wider transition-all active:scale-95 ${
+                isPublic ? "border-lime/60 bg-lime/10 text-lime" : "border-white/10 bg-slate-950 text-steel"
               }`}
             >
-              <Globe className="w-4 h-4 text-lime" /> Public Arena
+              <Globe className="mx-auto mb-1.5 h-4 w-4" />
+              Public Arena
             </button>
           </div>
-        </div>
 
-        {/* Submit Button */}
-        <button
-          onClick={handleCreate}
-          disabled={loading || !nickname.trim()}
-          className="w-full py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-widest rounded-2xl shadow-xl shadow-lime/20 active:scale-95 transition-all disabled:opacity-40 flex items-center justify-center gap-2"
-        >
-          {loading ? (
-            <><Loader2 className="w-4 h-4 animate-spin" /> Launching Match Arena…</>
-          ) : (
-            <><Swords className="w-4 h-4" /> Create Match Arena</>
-          )}
-        </button>
-      </div>
+          <button
+            onClick={handleCreate}
+            disabled={loading || !nickname.trim()}
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-lime px-4 py-4 text-sm font-black uppercase tracking-widest text-slate-950 shadow-xl shadow-lime/15 transition-all hover:bg-vivid active:scale-[0.98] disabled:opacity-40"
+          >
+            {loading ? (
+              <><Loader2 className="h-4 w-4 animate-spin" /> Launching Arena...</>
+            ) : (
+              <><Swords className="h-4 w-4" /> Create Match Arena</>
+            )}
+          </button>
+        </div>
+      </section>
     </div>
   );
 }

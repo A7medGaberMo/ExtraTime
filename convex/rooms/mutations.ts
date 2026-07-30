@@ -72,6 +72,7 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
       highestBidderId: undefined,
       activeTurnUserId: args.hostId,
       turnExpiresAt: now + 30000,
+      firstPassUserId: undefined,
     },
     host: {
       userId: args.hostId,
@@ -123,6 +124,7 @@ async function joinAuction(
       highestBidderId: undefined,
       activeTurnUserId,
       turnExpiresAt: now + 30000,
+      firstPassUserId: undefined,
     },
   });
 

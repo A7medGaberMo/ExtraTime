@@ -39,6 +39,8 @@ export const POSITION_CONFIG: Record<Position, { label: string; shortLabel: stri
   CDM: { label: 'Defensive Midfielder', shortLabel: 'CDM', category: 'midfield' },
   CM: { label: 'Central Midfielder', shortLabel: 'CM', category: 'midfield' },
   CAM: { label: 'Attacking Midfielder', shortLabel: 'CAM', category: 'midfield' },
+  LM: { label: 'Left Midfielder', shortLabel: 'LM', category: 'midfield' },
+  RM: { label: 'Right Midfielder', shortLabel: 'RM', category: 'midfield' },
   LW: { label: 'Left Winger', shortLabel: 'LW', category: 'attack' },
   RW: { label: 'Right Winger', shortLabel: 'RW', category: 'attack' },
   ST: { label: 'Striker', shortLabel: 'ST', category: 'attack' },

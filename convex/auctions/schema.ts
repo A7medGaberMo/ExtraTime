@@ -25,7 +25,7 @@ export const auctionsTable = defineTable({
   currentBidding: v.object({
     highestBid: v.number(),
     highestBidderId: v.optional(v.id("guestUsers")),
-    activeTurnUserId: v.optional(v.union(v.id("guestUsers"), v.string())),
+    activeTurnUserId: v.optional(v.id("guestUsers")),
     turnExpiresAt: v.number(),
     firstPassUserId: v.optional(v.id("guestUsers")),
   }),

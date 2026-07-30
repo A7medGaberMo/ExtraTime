@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { PageHeader } from "@/components/shared/page-header";
-import { Loader2, RefreshCw, CheckCircle2, XCircle, Search } from "lucide-react";
+import { Loader2, RefreshCw, CheckCircle2, XCircle, Search, KeyRound, Swords } from "lucide-react";
 
 import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
 
@@ -23,26 +23,26 @@ export default function JoinRoomPage() {
   const canJoin = Boolean(room && room.status === "waiting" && !room.guestId);
 
   const statusIcon = normalizedCode.length < 6
-    ? <Search className="w-4 h-4 text-steel" />
+    ? <Search className="h-4 w-4 text-steel" />
     : room === undefined
-      ? <Loader2 className="w-4 h-4 text-lime animate-spin" />
+      ? <Loader2 className="h-4 w-4 animate-spin text-lime" />
       : canJoin
-        ? <CheckCircle2 className="w-4 h-4 text-lime" />
-        : <XCircle className="w-4 h-4 text-rose-400" />;
+        ? <CheckCircle2 className="h-4 w-4 text-lime" />
+        : <XCircle className="h-4 w-4 text-rose-400" />;
 
   const statusText = normalizedCode.length < 6
-    ? "Enter a 6-character room code"
+    ? "Enter the 6-character room code."
     : room === undefined
-      ? "Checking…"
+      ? "Checking room code..."
       : canJoin
-        ? "Room found — ready to join!"
+        ? "Room found. You can join now."
         : room
-          ? "Room is full or already started"
-          : "Room not found";
+          ? "This room is full or already started."
+          : "No room found with that code.";
 
   async function handleJoin(event: FormEvent) {
     event.preventDefault();
-    if (!canJoin || loading) return;
+    if (!canJoin || loading || !nickname.trim()) return;
     setLoading(true);
     try {
       const guestId = await createGuest({ nickname: nickname.trim(), avatarSeed: nickname.trim() });
@@ -57,64 +57,80 @@ export default function JoinRoomPage() {
   }
 
   return (
-    <div className="max-w-lg mx-auto space-y-6 animate-fade-in pb-24 md:pb-8">
-      <PageHeader title="Join Room" subtitle="Enter a code to join an existing match" backUrl="/" />
+    <div className="mx-auto max-w-2xl space-y-4 pb-24 md:pb-8 animate-fade-in">
+      <PageHeader
+        title="Join Hidden Bid"
+        subtitle="Enter your rival's code and jump straight into the auction arena."
+        backUrl="/"
+        className="mb-3"
+      />
 
-      <form onSubmit={handleJoin} className="bg-card border border-border rounded-2xl p-5 md:p-6 shadow-xl space-y-5">
-        {/* Nickname */}
-        <label className="block space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider">Manager Name</span>
-          <div className="flex gap-2">
-            <input
-              value={nickname}
-              onChange={(e) => setNickname(e.target.value)}
-              maxLength={24}
-              className="flex-1 bg-background border border-border rounded-xl px-4 py-3 text-white text-sm font-semibold focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-colors"
-            />
+      <form onSubmit={handleJoin} className="relative overflow-hidden rounded-2xl border border-white/10 bg-card/90 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
+        <div className="pointer-events-none absolute -left-20 -top-24 h-64 w-64 rounded-full bg-lime/10 blur-3xl" />
+
+        <div className="relative space-y-5">
+          <div className="grid gap-3 sm:grid-cols-[1fr_auto] sm:items-end">
+            <label className="block space-y-2">
+              <span className="text-[10px] font-black uppercase tracking-widest text-steel">Manager Handle</span>
+              <input
+                value={nickname}
+                onChange={(e) => setNickname(e.target.value)}
+                maxLength={24}
+                className="w-full rounded-xl border border-white/10 bg-slate-950 px-4 py-3.5 text-base font-black text-white outline-none transition-all focus:border-lime/70 focus:ring-2 focus:ring-lime/20"
+                placeholder="Manager name"
+              />
+            </label>
             <button
               type="button"
               onClick={() => setNickname(randomName())}
-              className="px-3 rounded-xl bg-background border border-border text-steel hover:text-lime hover:border-lime/50 transition-all active:scale-95"
+              className="flex h-[52px] items-center justify-center gap-2 rounded-xl border border-white/10 bg-slate-900 px-4 text-xs font-black uppercase tracking-wider text-steel transition-all hover:border-lime/50 hover:text-lime active:scale-95"
               title="Random name"
             >
-              <RefreshCw className="w-4 h-4" />
+              <RefreshCw className="h-4 w-4" />
+              <span>Reroll</span>
             </button>
           </div>
-        </label>
 
-        {/* Room Code */}
-        <label className="block space-y-1.5">
-          <span className="text-xs font-black uppercase text-steel tracking-wider">Room Code</span>
-          <input
-            value={roomCode}
-            onChange={(e) => setRoomCode(e.target.value.replace(/[^a-zA-Z0-9]/g, "").slice(0, 6).toUpperCase())}
-            maxLength={6}
-            className="w-full bg-background border border-border rounded-xl px-4 py-4 text-center text-2xl tracking-[0.35em] uppercase font-stats text-lime placeholder:text-border focus:outline-none focus:border-lime focus:ring-1 focus:ring-lime transition-colors"
-            placeholder="X7K9M2"
-            autoComplete="off"
-          />
-        </label>
+          <label className="block space-y-2">
+            <span className="text-[10px] font-black uppercase tracking-widest text-steel">Room Code</span>
+            <div className="relative">
+              <KeyRound className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-lime" />
+              <input
+                value={roomCode}
+                onChange={(e) => setRoomCode(e.target.value.replace(/[^a-zA-Z0-9]/g, "").slice(0, 6).toUpperCase())}
+                maxLength={6}
+                className="w-full rounded-xl border border-white/10 bg-slate-950 py-4 pl-12 pr-4 text-center font-stats text-3xl uppercase tracking-[0.26em] text-lime outline-none transition-all placeholder:text-border focus:border-lime/70 focus:ring-2 focus:ring-lime/20 sm:text-4xl"
+                placeholder="X7K9M2"
+                autoComplete="off"
+                inputMode="text"
+              />
+            </div>
+          </label>
 
-        {/* Status indicator */}
-        <div className={`flex items-center gap-3 px-4 py-3 rounded-xl border transition-all ${
-          canJoin ? "bg-lime/5 border-lime/30" : "bg-background border-border"
-        }`}>
-          {statusIcon}
-          <span className={`text-sm font-bold ${canJoin ? "text-lime" : "text-steel"}`}>{statusText}</span>
+          <div className={`flex items-start gap-3 rounded-xl border px-4 py-3 transition-all ${
+            canJoin ? "border-lime/40 bg-lime/10" : "border-white/10 bg-slate-950/80"
+          }`}>
+            <div className="mt-0.5 shrink-0">{statusIcon}</div>
+            <div className="min-w-0">
+              <p className={`text-sm font-black ${canJoin ? "text-lime" : "text-white"}`}>{statusText}</p>
+              <p className="mt-1 text-xs font-medium leading-snug text-steel">
+                You will enter the same Hidden Bid room as soon as the code is valid.
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            disabled={!canJoin || loading || !nickname.trim()}
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-lime px-4 py-4 text-sm font-black uppercase tracking-widest text-slate-950 shadow-xl shadow-lime/15 transition-all hover:bg-vivid active:scale-[0.98] disabled:opacity-40"
+          >
+            {loading ? (
+              <><Loader2 className="h-4 w-4 animate-spin" /> Joining Arena...</>
+            ) : (
+              <><Swords className="h-4 w-4" /> Join Match Arena</>
+            )}
+          </button>
         </div>
-
-        {/* Join button */}
-        <button
-          type="submit"
-          disabled={!canJoin || loading}
-          className="w-full py-4 bg-lime hover:bg-vivid text-background font-black text-sm rounded-xl shadow-lg shadow-lime/10 hover:shadow-lime/20 active:scale-95 transition-all disabled:opacity-30 flex items-center justify-center gap-2"
-        >
-          {loading ? (
-            <><Loader2 className="w-4 h-4 animate-spin" /> Joining…</>
-          ) : (
-            "Join Room"
-          )}
-        </button>
       </form>
     </div>
   );

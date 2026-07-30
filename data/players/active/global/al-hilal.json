@@ -1,8 +1,8 @@
 {
   "club": {
-    "apiId": 2501,
+    "apiId": 2932,
     "name": "Al-Hilal",
-    "logo": "https://media.api-sports.io/football/teams/2501.png",
+    "logo": "https://media.api-sports.io/football/teams/2932.png",
     "league": "Saudi Pro League",
     "leagueId": 307
   },
@@ -24,7 +24,7 @@
       "position": "LB/LM",
       "club": "Al-Hilal",
       "nation": "France",
-      "tier": "MASTER",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Theo_Hernandez_France_v_Norway_26_June_26-122.jpg",
       "kitNumber": 6
@@ -68,7 +68,7 @@
       "position": "RB/LB",
       "club": "Al-Hilal",
       "nation": "Portugal",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Joao_Cancelo_Croatia_v_Portugal_2_July_2026-002.jpg",
       "kitNumber": 27
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Al-Hilal",
       "nation": "Senegal",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Kalidou_Koulibaly_France_v_Senegal_16_June_2026-370_%28cropped%29.jpg",
       "kitNumber": 3
@@ -90,10 +90,21 @@
       "position": "LW/LM",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Salem_Al-Dawsari_%28Saudi_Arabia_v_Uruguay%2C_June_2026%29_%28cropped%29.jpg",
       "kitNumber": 29
+    },
+    {
+      "apiId": 751,
+      "name": "Karim Benzema",
+      "position": "ST/CF",
+      "club": "Al-Hilal",
+      "nation": "France",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Karim_Benzema_Pick.jpg",
+      "kitNumber": 90
     }
   ]
 }

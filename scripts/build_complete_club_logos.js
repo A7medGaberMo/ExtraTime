@@ -56,16 +56,16 @@ const GLOBAL_CLUBS = {
   'Boca Juniors': 'https://media.api-sports.io/football/teams/451.png',
 
   // MLS & Saudi Pro League
-  'Inter Miami': 'https://media.api-sports.io/football/teams/1598.png',
-  'Inter Miami CF': 'https://media.api-sports.io/football/teams/1598.png',
-  'Al-Nassr': 'https://media.api-sports.io/football/teams/2506.png',
-  'Al Nassr': 'https://media.api-sports.io/football/teams/2506.png',
-  'Al-Hilal': 'https://media.api-sports.io/football/teams/2501.png',
-  'Al Hilal': 'https://media.api-sports.io/football/teams/2501.png',
-  'Al-Ahli': 'https://media.api-sports.io/football/teams/2502.png',
-  'Al Ahli': 'https://media.api-sports.io/football/teams/2502.png',
-  'Al-Ittihad': 'https://media.api-sports.io/football/teams/2503.png',
-  'Al Ittihad': 'https://media.api-sports.io/football/teams/2503.png',
+  'Inter Miami': 'https://media.api-sports.io/football/teams/9568.png',
+  'Inter Miami CF': 'https://media.api-sports.io/football/teams/9568.png',
+  'Al-Nassr': 'https://media.api-sports.io/football/teams/2939.png',
+  'Al Nassr': 'https://media.api-sports.io/football/teams/2939.png',
+  'Al-Hilal': 'https://media.api-sports.io/football/teams/2932.png',
+  'Al Hilal': 'https://media.api-sports.io/football/teams/2932.png',
+  'Al-Ahli': 'https://media.api-sports.io/football/teams/2929.png',
+  'Al Ahli': 'https://media.api-sports.io/football/teams/2929.png',
+  'Al-Ittihad': 'https://media.api-sports.io/football/teams/2938.png',
+  'Al Ittihad': 'https://media.api-sports.io/football/teams/2938.png',
 
   // Netherlands & Others
   'Ajax': 'https://media.api-sports.io/football/teams/194.png',

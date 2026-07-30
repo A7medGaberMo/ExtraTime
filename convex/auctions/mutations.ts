@@ -120,6 +120,12 @@ export const placeBid = mutation({
     const opponent = auction.host.userId === args.userId ? auction.guest : auction.host;
     if (!opponent) throw new Error("Waiting for opponent");
 
+    // AUTO-TAKE FEATURE: If bid is strictly greater than opponent's budget, opponent can NEVER outbid!
+    if (args.amount > opponent.budget) {
+      await resolveRound(ctx, args.roomId, auction, args.userId, args.amount);
+      return { resolved: true, winnerId: args.userId, price: args.amount, autoTake: true };
+    }
+
     await ctx.db.patch(auction._id, {
       currentBidding: {
         highestBid: args.amount,

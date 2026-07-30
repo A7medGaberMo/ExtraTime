@@ -4,12 +4,13 @@ export type MatchSize = 5 | 11;
 
 const FORMATIONS_11: Record<string, Position[][]> = {
   "4-3-3": [
-    ["GK", "LB", "CB", "CB", "RB", "CDM", "CM", "CAM", "LW", "ST", "RW"],
-    ["GK", "LB", "CB", "CB", "RB", "CM", "CM", "CM", "LW", "ST", "RW"],
+    ["GK", "RB", "CB", "CB", "LB", "CDM", "CM", "CM", "RW", "LW", "ST"],
+    ["GK", "RB", "CB", "CB", "LB", "CM", "CM", "CAM", "RW", "LW", "ST"],
+    ["GK", "RB", "CB", "CB", "LB", "CM", "CM", "CM", "RW", "LW", "ST"],
   ],
-  "4-4-2": [["GK", "LB", "CB", "CB", "RB", "LW", "CM", "CM", "RW", "ST", "ST"]],
-  "4-2-3-1": [["GK", "LB", "CB", "CB", "RB", "CDM", "CDM", "CAM", "LW", "RW", "ST"]],
-  "3-5-2": [["GK", "CB", "CB", "CB", "LW", "CM", "CDM", "CM", "RW", "ST", "CF"]],
+  "4-4-2": [["GK", "RB", "CB", "CB", "LB", "RM", "CM", "CM", "LM", "ST", "ST"]],
+  "4-2-3-1": [["GK", "RB", "CB", "CB", "LB", "CDM", "CDM", "CAM", "RW", "LW", "ST"]],
+  "3-5-2": [["GK", "CB", "CB", "CB", "LM", "RM", "CDM", "CM", "CM", "ST", "CF"]],
 };
 
 const FORMATIONS_5: Record<string, Position[][]> = {

@@ -205,23 +205,23 @@ function selectSmartPair(
   const subCandidates = unused.filter((p) => p._id !== main._id);
   const mainRank = tierRank(main.tier);
 
-  // 55:45 ratio — 55% chance sub is lower tier, 45% chance sub is equal or higher tier!
-  const isEqualOrHigherRoll = Math.random() < 0.45;
-
+  // Sub candidate scoring: Subs can be higher tier (jackpot), equal tier, or lower tier!
   const subScores = subCandidates.map((p) => {
     let score = scoreCandidate(p, slot, scoringCtx, "sub");
     const pRank = tierRank(p.tier);
-    const gap = pRank - mainRank; // Positive = lower tier than main, Negative = higher tier than main
+    const gap = pRank - mainRank; // Negative = higher tier than main, 0 = equal, Positive = lower
 
-    if (isEqualOrHigherRoll) {
-      // 45% Archetype: Equal or Higher Tier Sub (Same tier clash or higher tier jackpot)
-      if (gap <= 0) score += 50;
-      else score -= 15;
+    if (gap < 0) {
+      // Higher tier sub (Jackpot Sub Surprise)
+      score += 45;
+    } else if (gap === 0) {
+      // Equal tier sub (Clash of Titans)
+      score += 40;
+    } else if (gap <= 2) {
+      // Close lower tier sub
+      score += 35;
     } else {
-      // 55% Archetype: Lower Tier Sub (Standard risk/reward)
-      if (gap >= 1 && gap <= 2) score += 50;
-      else if (gap > 2) score += 25;
-      else score -= 15;
+      score += 15;
     }
     return { player: p, score };
   });
@@ -235,31 +235,13 @@ function selectSmartPair(
 }
 
 // ── Dramatic Round Ordering ────────────────────────────────
-function orderForDrama(rounds: DraftRound[], pool: PoolPlayer[]): DraftRound[] {
-  const playerMap = new Map(pool.map((p) => [p._id as string, p]));
-
-  // Order rounds by tactical position rank: GK -> DEF -> MID -> ST
-  const POSITION_RANK: Record<string, number> = {
-    GK: 1,
-    LB: 2, CB: 2, RB: 2, LWB: 2, RWB: 2,
-    CDM: 3, CM: 3, CAM: 3, LM: 3, RM: 3,
-    LW: 4, RW: 4, ST: 4, CF: 4,
-  };
-
-  const sortedByPosition = [...rounds].sort((a, b) => {
-    const rankA = POSITION_RANK[a.position] || 5;
-    const rankB = POSITION_RANK[b.position] || 5;
-    if (rankA !== rankB) return rankA - rankB;
-    // Tie-break by main player tier rank for exciting variety within line
-    const tierA = tierRank(playerMap.get(a.mainPlayerId as string)?.tier);
-    const tierB = tierRank(playerMap.get(b.mainPlayerId as string)?.tier);
-    return tierA - tierB;
-  });
-
-  return sortedByPosition.map((round, idx) => ({
-    ...round,
-    roundNumber: idx + 1,
-  }));
+function orderByFormation(rounds: Array<DraftRound & { sortIndex: number }>): DraftRound[] {
+  return [...rounds]
+    .sort((a, b) => a.sortIndex - b.sortIndex)
+    .map(({ sortIndex: _sortIndex, ...round }, idx) => ({
+      ...round,
+      roundNumber: idx + 1,
+    }));
 }
 
 // ── Strategic Mystery Placement ────────────────────────────
@@ -362,8 +344,8 @@ export async function generateDraftRounds(
     .sort((a, b) => a.scarcity - b.scarcity);
 
   // Select pairs for each position
-  const rawRounds: DraftRound[] = [];
-  for (const { position } of positionsByScarcity) {
+  const rawRounds: Array<DraftRound & { sortIndex: number }> = [];
+  for (const { position, origIdx } of positionsByScarcity) {
     const scoringCtx: ScoringContext = { usedClubs, usedNations, tierBudget };
     const [main, sub] = selectSmartPair(pool, used, position, scoringCtx);
 
@@ -383,10 +365,11 @@ export async function generateDraftRounds(
       position,
       mainPlayerId: main._id,
       subPlayerId: sub._id,
+      sortIndex: origIdx,
     });
   }
 
-  // Order rounds for dramatic arc, then assign mystery rounds
-  const ordered = orderForDrama(rawRounds, pool);
+  // Pick scarce slots first for quality, then reveal in the formation's tactical order.
+  const ordered = orderByFormation(rawRounds);
   return assignMysteryRounds(ordered, pool);
 }

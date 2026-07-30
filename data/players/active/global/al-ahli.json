@@ -1,8 +1,8 @@
 {
   "club": {
-    "apiId": 2502,
+    "apiId": 2929,
     "name": "Al-Ahli",
-    "logo": "https://media.api-sports.io/football/teams/2502.png",
+    "logo": "https://media.api-sports.io/football/teams/2929.png",
     "league": "Saudi Pro League",
     "leagueId": 307
   },
@@ -46,7 +46,7 @@
       "position": "CM/CDM",
       "club": "Al-Ahli",
       "nation": "Ivory Coast",
-      "tier": "ELITE_PLUS",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Franck_Kessie_Cote_D%27Ivoire_v_Ecuador_14_June_2026-15_%28cropped%29.jpg",
       "kitNumber": 79
@@ -57,7 +57,7 @@
       "position": "LW/LM",
       "club": "Al-Ahli",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2112.png",
       "kitNumber": 9
@@ -79,7 +79,7 @@
       "position": "CAM/CM",
       "club": "Al-Ahli",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Enzo_millot.jpg",
       "kitNumber": 8

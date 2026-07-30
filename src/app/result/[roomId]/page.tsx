@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useMemo } from "react";
+import { use, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
@@ -8,15 +8,13 @@ import { Id } from "../../../../convex/_generated/dataModel";
 import { PageHeader } from "@/components/shared/page-header";
 import { TacticalPitch } from "@/components/shared/tactical-pitch";
 import { useGuestSession } from "@/hooks/use-guest-session";
-import { Loader2, Trophy, Swords, RefreshCw, Home } from "lucide-react";
+import { Loader2, Trophy, Swords, RefreshCw, Home, Package, Coins, Star } from "lucide-react";
 
-/* Tier weights for squad quality evaluation */
 const TIER_WEIGHTS: Record<string, number> = {
   ICON: 7, MASTER: 6, ELITE_PLUS: 5, ELITE: 4,
   GOLD: 3, SILVER: 2, BRONZE: 1,
 };
 
-/* Tier counts breakdown helper */
 function countTiers(squad: Array<{ player?: { tier?: string } | null }>) {
   const counts: Record<string, number> = { ICON: 0, MASTER: 0, ELITE_PLUS: 0, ELITE: 0, GOLD: 0, SILVER: 0, BRONZE: 0 };
   for (const item of squad) {
@@ -25,6 +23,14 @@ function countTiers(squad: Array<{ player?: { tier?: string } | null }>) {
     }
   }
   return counts;
+}
+
+function topTierLabel(counts: Record<string, number>) {
+  if (counts.ICON > 0) return `${counts.ICON} Icon`;
+  const eliteCount = counts.MASTER + counts.ELITE_PLUS + counts.ELITE;
+  if (eliteCount > 0) return `${eliteCount} Elite`;
+  if (counts.GOLD > 0) return `${counts.GOLD} Gold`;
+  return "Developing";
 }
 
 export default function ResultsPage({ params }: { params: Promise<{ roomId: string }> }) {
@@ -37,13 +43,20 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     guestId && roomId ? { roomId: roomId as Id<"rooms">, userId: guestId } : "skip"
   );
 
+  const [activeTab, setActiveTab] = useState<"me" | "rival">("me");
+
   const rawMySquad = state?.mySquad;
   const rawRivalSquad = state?.opponentSquad;
 
   const mySquad = useMemo(() => rawMySquad ?? [], [rawMySquad]);
   const rivalSquad = useMemo(() => rawRivalSquad ?? [], [rawRivalSquad]);
 
-  /* 1. Squad Quality Score: sum of tier weights */
+  const viewerName = state?.isHost ? state?.hostName : state?.guestName;
+  const opponentName = state?.isHost ? state?.guestName : state?.hostName;
+
+  const myName = viewerName ? `You (${viewerName})` : "You";
+  const rivalName = opponentName ?? "Rival";
+
   const mySquadQuality = useMemo(
     () => mySquad.reduce((sum, s) => sum + (TIER_WEIGHTS[s.player?.tier as string] ?? 1), 0),
     [mySquad]
@@ -62,11 +75,6 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   const myRemainingBudget = state?.me?.budget ?? 0;
   const rivalRemainingBudget = state?.opponent?.budget ?? 0;
 
-  /* 2. Winner Determination Logic:
-     - Higher Tier Quality Score wins
-     - If equal, Manager with MORE remaining budget (spent less) wins!
-     - If budget also equal, Manager with LESS total spent wins!
-  */
   const iWon = useMemo(() => {
     if (mySquadQuality !== rivalSquadQuality) {
       return mySquadQuality > rivalSquadQuality;
@@ -79,118 +87,156 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
   if (!guestId || state === undefined) {
     return (
-      <div className="flex items-center justify-center min-h-[60vh]">
+      <div className="flex min-h-[60vh] items-center justify-center">
         <div className="flex flex-col items-center gap-3 animate-fade-in">
-          <Loader2 className="w-8 h-8 text-lime animate-spin" />
-          <p className="text-xs text-steel font-bold uppercase tracking-widest">Loading Final Match Summary…</p>
+          <Loader2 className="h-8 w-8 animate-spin text-lime" />
+          <p className="text-xs font-bold uppercase tracking-widest text-steel">Loading Final Match Summary...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="max-w-6xl mx-auto space-y-6 py-4 md:py-6 pb-20 animate-fade-in">
-      <PageHeader title="Match Summary & Results" subtitle="Final draft evaluation and tactical comparison" backUrl="/" />
+    <div className="mx-auto max-w-2xl space-y-5 pb-24 md:pb-10 animate-fade-in px-3">
+      <PageHeader
+        title="Hidden Bid Result"
+        subtitle="Final squad value, saved budget, and tactical lineups."
+        backUrl="/"
+        className="mb-2"
+      />
 
-      {/* ── WINNER HERO BANNER ────────────────────────────────────────── */}
-      <div className={`relative w-full rounded-3xl border p-5 md:p-6 overflow-hidden shadow-2xl transition-all ${
+      <section className={`relative overflow-hidden rounded-2xl border p-4 shadow-2xl backdrop-blur-xl sm:p-5 ${
         iWon
-          ? "border-lime/40 bg-gradient-to-b from-lime/10 via-card to-card shadow-[0_0_50px_rgba(149,232,16,0.15)]"
-          : "border-purple-500/40 bg-gradient-to-b from-purple-500/10 via-card to-card shadow-[0_0_50px_rgba(168,85,247,0.15)]"
+          ? "border-lime/40 bg-gradient-to-b from-lime/10 via-card to-card shadow-[0_0_50px_rgba(149,232,16,0.14)]"
+          : "border-rose-400/30 bg-gradient-to-b from-rose-500/10 via-card to-card shadow-[0_0_50px_rgba(244,63,94,0.12)]"
       }`}>
-        <div className="relative z-10 flex flex-col items-center text-center space-y-3">
-          <div className="w-14 h-14 rounded-2xl bg-slate-900 border-2 border-lime flex items-center justify-center shadow-xl shadow-lime/20 animate-bounce">
-            <Trophy className="w-7 h-7 text-lime" />
+        <div className="pointer-events-none absolute inset-x-10 top-0 h-36 rounded-full bg-lime/10 blur-3xl" />
+        <div className="relative flex flex-col gap-4 items-center">
+          <div className="space-y-2 text-center">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl border border-lime/50 bg-slate-950 shadow-xl shadow-lime/15">
+              <Trophy className="h-6 w-6 text-lime animate-bounce" />
+            </div>
+            <div>
+              <span className="inline-flex rounded-full border border-lime/30 bg-lime/10 px-3 py-0.5 text-[9px] font-black uppercase tracking-widest text-lime">
+                {iWon ? "Victorious Manager" : "Runner-Up Draft"}
+              </span>
+              <h1 className="mt-1 text-2xl font-black uppercase tracking-tight text-white">
+                {iWon ? `${myName} Wins!` : "Strong Fight!"}
+              </h1>
+              <p className="mt-1 text-xs font-medium leading-relaxed text-steel max-w-sm mx-auto">
+                {iWon
+                  ? "Your card quality and budget control won the hidden bid battle."
+                  : "Your rival edged the draft. Budget ties favor the manager who saved more."}
+              </p>
+            </div>
           </div>
 
-          <div className="space-y-0.5">
-            <span className="px-3 py-0.5 rounded-full bg-lime/10 text-lime text-[11px] font-black uppercase tracking-widest border border-lime/30">
-              {iWon ? "🏆 VICTORIOUS MANAGER" : "🥈 RUNNER-UP DRAFT"}
-            </span>
-            <h1 className="text-2xl md:text-4xl font-black text-white uppercase tracking-tight">
-              {iWon ? "Draft Champion!" : "Competitive Match"}
-            </h1>
-          </div>
-
-          {/* Quick Scoreboard Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 w-full max-w-2xl pt-2">
-            <div className="bg-slate-900/80 border border-border p-3 rounded-xl flex flex-col items-center">
-              <span className="text-[10px] text-steel font-black uppercase">Your Squad Rating</span>
-              <span className="text-xl font-stats text-lime">{mySquadQuality} <span className="text-xs font-normal">pts</span></span>
-              <span className="text-[9px] text-steel mt-0.5">${myRemainingBudget}M Budget Saved</span>
+          <div className="grid grid-cols-2 gap-2 w-full max-w-sm">
+            <div className="rounded-xl border border-lime/30 bg-lime/10 p-2.5 text-center">
+              <Star className="mx-auto mb-1 h-3.5 w-3.5 text-lime" />
+              <p className="text-[9px] font-black uppercase tracking-widest text-steel truncate">{myName}&apos;s Rating</p>
+              <p className="font-stats text-xl text-lime">{mySquadQuality}</p>
             </div>
-            <div className="bg-slate-900/80 border border-border p-3 rounded-xl flex flex-col items-center">
-              <span className="text-[10px] text-steel font-black uppercase">Rival Squad Rating</span>
-              <span className="text-xl font-stats text-rose-400">{rivalSquadQuality} <span className="text-xs font-normal">pts</span></span>
-              <span className="text-[9px] text-steel mt-0.5">${rivalRemainingBudget}M Budget Saved</span>
+            <div className="rounded-xl border border-rose-500/20 bg-rose-500/10 p-2.5 text-center">
+              <Star className="mx-auto mb-1 h-3.5 w-3.5 text-rose-400" />
+              <p className="text-[9px] font-black uppercase tracking-widest text-steel truncate">{rivalName}&apos;s Rating</p>
+              <p className="font-stats text-xl text-rose-400">{rivalSquadQuality}</p>
             </div>
-            <div className="bg-slate-900/80 border border-border p-3 rounded-xl flex flex-col items-center">
-              <span className="text-[10px] text-steel font-black uppercase">Your Top Tiers</span>
-              <span className="text-xl font-stats text-amber-400">
-                {myTierCounts.ICON > 0 ? `${myTierCounts.ICON} Icon` : `${myTierCounts.MASTER + myTierCounts.ELITE_PLUS} Elite+`}
-              </span>
-              <span className="text-[9px] text-steel mt-0.5">Total Spent: ${myTotalSpent}M</span>
+            <div className="rounded-xl border border-amber-400/20 bg-amber-400/10 p-2.5 text-center">
+              <Coins className="mx-auto mb-1 h-3.5 w-3.5 text-amber-300" />
+              <p className="text-[9px] font-black uppercase tracking-widest text-steel">Saved Budget</p>
+              <p className="font-stats text-xl text-amber-300">${myRemainingBudget}M</p>
             </div>
-            <div className="bg-slate-900/80 border border-border p-3 rounded-xl flex flex-col items-center">
-              <span className="text-[10px] text-steel font-black uppercase">Rival Top Tiers</span>
-              <span className="text-xl font-stats text-purple-400">
-                {rivalTierCounts.ICON > 0 ? `${rivalTierCounts.ICON} Icon` : `${rivalTierCounts.MASTER + rivalTierCounts.ELITE_PLUS} Elite+`}
-              </span>
-              <span className="text-[9px] text-steel mt-0.5">Total Spent: ${rivalTotalSpent}M</span>
+            <div className="rounded-xl border border-white/10 bg-slate-900/80 p-2.5 text-center">
+              <Package className="mx-auto mb-1 h-3.5 w-3.5 text-white" />
+              <p className="text-[9px] font-black uppercase tracking-widest text-steel">Top Cards</p>
+              <p className="font-stats text-base text-white truncate">{topTierLabel(myTierCounts)}</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* ── ACTION BUTTONS ────────────────────────────────────────────── */}
-      <div className="flex flex-wrap items-center justify-center gap-3">
+      <div className="grid grid-cols-3 gap-2">
         <button
           onClick={() => router.push("/create-room")}
-          className="px-5 py-3 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-lg transition-all active:scale-95 flex items-center gap-2"
+          className="flex items-center justify-center gap-1.5 rounded-xl bg-lime py-3 text-[10px] font-black uppercase tracking-wider text-slate-950 shadow-lg transition-all hover:bg-vivid active:scale-95"
         >
-          <RefreshCw className="w-4 h-4" /> Play Rematch
+          <RefreshCw className="h-3.5 w-3.5" /> Rematch
         </button>
         <button
           onClick={() => router.push("/packs")}
-          className="px-5 py-3 bg-slate-900 hover:bg-amber-500/10 text-amber-400 font-bold text-xs uppercase tracking-wider rounded-xl border border-amber-500/30 hover:border-amber-400 transition-all flex items-center gap-2"
+          className="flex items-center justify-center gap-1.5 rounded-xl border border-amber-500/30 bg-slate-900 py-3 text-[10px] font-black uppercase tracking-wider text-amber-300 transition-all hover:border-amber-400 hover:bg-amber-500/10 active:scale-95"
         >
-          <Trophy className="w-4 h-4 text-amber-400" /> Open Tier Packs
+          <Trophy className="h-3.5 w-3.5" /> Packs
         </button>
         <button
           onClick={() => router.push("/")}
-          className="px-5 py-3 bg-card hover:bg-white/5 text-white font-bold text-xs uppercase tracking-wider rounded-xl border border-border transition-all flex items-center gap-2"
+          className="flex items-center justify-center gap-1.5 rounded-xl border border-white/10 bg-card py-3 text-[10px] font-black uppercase tracking-wider text-white transition-all hover:bg-white/5 active:scale-95"
         >
-          <Home className="w-4 h-4" /> Main Menu
+          <Home className="h-3.5 w-3.5" /> Home
         </button>
       </div>
 
-      {/* ── SIDE-BY-SIDE TACTICAL PITCHES ──────────────────────────────── */}
-      <div className="space-y-4">
-        <div className="flex items-center justify-between border-b border-border pb-2">
-          <h2 className="text-lg font-black text-white flex items-center gap-2">
-            <Swords className="w-5 h-5 text-lime" /> Final Lineups & Formations
-          </h2>
+      <section className="space-y-4">
+        {/* Modern Tab Selector */}
+        <div className="flex flex-col items-center gap-3 bg-card border border-white/10 p-3 rounded-2xl">
+          <div className="flex items-center justify-between w-full border-b border-white/5 pb-2">
+            <span className="flex items-center gap-2 text-xs font-black text-white uppercase tracking-wider">
+              <Swords className="h-4 w-4 text-lime" />
+              Final Lineups
+            </span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-steel">
+              Spent: ${myTotalSpent}M vs ${rivalTotalSpent}M
+            </span>
+          </div>
+
+          <div className="inline-flex rounded-xl bg-slate-950 p-1 border border-white/5 w-full">
+            <button
+              onClick={() => setActiveTab("me")}
+              className={`flex-1 py-2 rounded-lg text-xs font-black uppercase tracking-wider transition-all duration-200 ${
+                activeTab === "me"
+                  ? "bg-lime text-slate-950 shadow-md"
+                  : "text-steel hover:text-white"
+              }`}
+            >
+              {myName}
+            </button>
+            <button
+              onClick={() => setActiveTab("rival")}
+              className={`flex-1 py-2 rounded-lg text-xs font-black uppercase tracking-wider transition-all duration-200 ${
+                activeTab === "rival"
+                  ? "bg-rose-500 text-white shadow-md"
+                  : "text-steel hover:text-white"
+              }`}
+            >
+              {rivalName}
+            </button>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <TacticalPitch
-            formation={state?.auction?.formation || "4-3-3"}
-            matchSize={(state?.auction?.matchSize as 5 | 11) || 11}
-            squad={mySquad}
-            title="Your Final Lineup"
-            accentColor="#95E810"
-            badgeLabel="HOME MANAGER"
-          />
-          <TacticalPitch
-            formation={state?.auction?.formation || "4-3-3"}
-            matchSize={(state?.auction?.matchSize as 5 | 11) || 11}
-            squad={rivalSquad}
-            title="Rival Final Lineup"
-            accentColor="#F43F5E"
-            badgeLabel="AWAY MANAGER"
-          />
+        {/* Tab Content: Single Pitch */}
+        <div className="w-full">
+          {activeTab === "me" ? (
+            <TacticalPitch
+              formation={state?.auction?.formation || "4-3-3"}
+              matchSize={(state?.auction?.matchSize as 5 | 11) || 11}
+              squad={mySquad}
+              title={`${myName}'s Lineup`}
+              accentColor="#95E810"
+              badgeLabel="HOME SQUAD"
+            />
+          ) : (
+            <TacticalPitch
+              formation={state?.auction?.formation || "4-3-3"}
+              matchSize={(state?.auction?.matchSize as 5 | 11) || 11}
+              squad={rivalSquad}
+              title={`${rivalName}'s Lineup`}
+              accentColor="#F43F5E"
+              badgeLabel={`AWAY · ${topTierLabel(rivalTierCounts)}`}
+            />
+          )}
         </div>
-      </div>
+      </section>
     </div>
   );
 }

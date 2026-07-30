@@ -10,6 +10,8 @@ export type Position =
   | 'CDM'
   | 'CM'
   | 'CAM'
+  | 'LM'
+  | 'RM'
   | 'LW'
   | 'RW'
   | 'ST'

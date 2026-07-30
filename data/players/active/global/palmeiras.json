@@ -13,32 +13,10 @@
       "position": "ST/LW",
       "club": "Palmeiras",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Vitor-roque-palmeiras-internacional-sep2025.jpg",
       "kitNumber": 19
-    },
-    {
-      "apiId": 2101,
-      "name": "Gustavo Gómez",
-      "position": "CB",
-      "club": "Palmeiras",
-      "nation": "Paraguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Gustavo-Gomez-Palmeiras-Athletico-jul-2022-2.jpg",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 627,
-      "name": "Andreas Pereira",
-      "position": "CAM/CM",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Andreas-Pereira-Palmeiras-Internacional-sep2025_%28cropped%29.jpg",
-      "kitNumber": 18
     },
     {
       "apiId": 4721,
@@ -46,10 +24,32 @@
       "position": "RW/RM",
       "club": "Palmeiras",
       "nation": "Colombia",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Jhon_Arias_en_Palmeiras_-_Copa_Libertadores_2026.jpg/3840px-Jhon_Arias_en_Palmeiras_-_Copa_Libertadores_2026.jpg",
       "kitNumber": 21
+    },
+    {
+      "apiId": 627,
+      "name": "Andreas Pereira",
+      "position": "CAM/CM",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Andreas-Pereira-Palmeiras-Internacional-sep2025_%28cropped%29.jpg",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 2101,
+      "name": "Gustavo Gómez",
+      "position": "CB",
+      "club": "Palmeiras",
+      "nation": "Paraguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Gustavo-Gomez-Palmeiras-Athletico-jul-2022-2.jpg",
+      "kitNumber": 15
     },
     {
       "apiId": 1012,
@@ -57,10 +57,32 @@
       "position": "LB/LM",
       "club": "Palmeiras",
       "nation": "Uruguay",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Joaquin-Piquerez-Palmeiras-Liverpool-abr24.jpg",
       "kitNumber": 22
+    },
+    {
+      "apiId": 1104,
+      "name": "Felipe Anderson",
+      "position": "RW/LW",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Felipe_Anderson_2021.jpg",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 2004,
+      "name": "Paulinho",
+      "position": "LW/ST",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2004.png",
+      "kitNumber": 7
     },
     {
       "apiId": 47822,
@@ -72,28 +94,6 @@
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Jose_Manuel_Lopez_Argentina_v_Spain_19_July_2026-272.jpg",
       "kitNumber": 42
-    },
-    {
-      "apiId": 1104,
-      "name": "Felipe Anderson",
-      "position": "RW/LW",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Felipe_Anderson_2021.jpg",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 2004,
-      "name": "Paulinho",
-      "position": "LW/ST",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2004.png",
-      "kitNumber": 7
     }
   ]
 }

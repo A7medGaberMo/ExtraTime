@@ -12,11 +12,22 @@
       "name": "Anthony Lopes",
       "position": "GK",
       "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Portugal",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/647.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 174973,
+      "name": "M. Zinga",
+      "position": "GK",
+      "club": "Angers",
+      "nation": "Congo",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174973.png",
+      "kitNumber": 16
     },
     {
       "apiId": 396308,
@@ -24,32 +35,32 @@
       "position": "GK",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/396308.png",
       "kitNumber": 40
     },
     {
-      "apiId": 174973,
-      "name": "M. Zinga",
-      "position": "GK",
-      "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/174973.png",
-      "kitNumber": 16
-    },
-    {
       "apiId": 20850,
       "name": "C. Arcus",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Angers",
-      "nation": "France",
+      "nation": "Haiti",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20850.png",
       "kitNumber": 2
+    },
+    {
+      "apiId": 343609,
+      "name": "J. Ekomié",
+      "position": "LB/LWB",
+      "club": "Angers",
+      "nation": "Gabon",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/343609.png",
+      "kitNumber": 3
     },
     {
       "apiId": 385569,
@@ -63,12 +74,34 @@
       "kitNumber": 24
     },
     {
+      "apiId": 21381,
+      "name": "J. Lefort",
+      "position": "CB/LB",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21381.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 174660,
+      "name": "L. Rao-Lisoa",
+      "position": "RB/RM",
+      "club": "Angers",
+      "nation": "Madagascar",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174660.png",
+      "kitNumber": 27
+    },
+    {
       "apiId": 271540,
       "name": "O. Camara",
       "position": "CB",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/271540.png",
       "kitNumber": 4
@@ -79,21 +112,10 @@
       "position": "CB",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/425207.png",
       "kitNumber": 5
-    },
-    {
-      "apiId": 343609,
-      "name": "J. Ekomié",
-      "position": "CB",
-      "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/343609.png",
-      "kitNumber": 3
     },
     {
       "apiId": 570586,
@@ -101,21 +123,10 @@
       "position": "CB",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/570586.png",
       "kitNumber": 42
-    },
-    {
-      "apiId": 21381,
-      "name": "J. Lefort",
-      "position": "CB",
-      "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/21381.png",
-      "kitNumber": 21
     },
     {
       "apiId": 456831,
@@ -123,40 +134,51 @@
       "position": "CB",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/456831.png",
       "kitNumber": 20
-    },
-    {
-      "apiId": 174660,
-      "name": "L. Rao-Lisoa",
-      "position": "CB",
-      "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/174660.png",
-      "kitNumber": 27
     },
     {
       "apiId": 419595,
       "name": "Dan Sinaté",
       "position": "CB",
       "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Mali",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419595.png",
       "kitNumber": 23
+    },
+    {
+      "apiId": 37652,
+      "name": "B. van den Boomen",
+      "position": "CM/CDM",
+      "club": "Angers",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37652.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 289555,
+      "name": "L. Mouton",
+      "position": "CM/CDM",
+      "club": "Angers",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/289555.png",
+      "kitNumber": 6
     },
     {
       "apiId": 174708,
       "name": "Y. Belkhdim",
       "position": "CM",
       "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Morocco",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174708.png",
       "kitNumber": 14
@@ -166,8 +188,8 @@
       "name": "Bane Diatta",
       "position": "CM",
       "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Senegal",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/655113.png",
       "kitNumber": 46
@@ -178,43 +200,43 @@
       "position": "CM",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/486627.png",
       "kitNumber": 38
     },
     {
-      "apiId": 289555,
-      "name": "L. Mouton",
-      "position": "CM",
+      "apiId": 193188,
+      "name": "A. El Ouazzani",
+      "position": "ST",
       "club": "Angers",
-      "nation": "France",
+      "nation": "Morocco",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/289555.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 37652,
-      "name": "B. van den Boomen",
-      "position": "CM",
-      "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37652.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/193188.png",
+      "kitNumber": 9
     },
     {
       "apiId": 21618,
       "name": "J. Allevinah",
-      "position": "ST",
+      "position": "RW/RM/ST",
       "club": "Angers",
-      "nation": "France",
+      "nation": "Gabon",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21618.png",
       "kitNumber": 18
+    },
+    {
+      "apiId": 191289,
+      "name": "A. Sbaï",
+      "position": "LW/ST",
+      "club": "Angers",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191289.png",
+      "kitNumber": 7
     },
     {
       "apiId": 402066,
@@ -222,40 +244,40 @@
       "position": "ST",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/402066.png",
       "kitNumber": 26
+    },
+    {
+      "apiId": 275385,
+      "name": "U. Simbakoli",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "Central African Republic",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/275385.png",
+      "kitNumber": 9
     },
     {
       "apiId": 579375,
       "name": "Djibirin Harouna",
       "position": "ST",
       "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Niger",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/579375.png",
       "kitNumber": 31
-    },
-    {
-      "apiId": 193188,
-      "name": "A. El Ouazzani",
-      "position": "ST",
-      "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/193188.png",
-      "kitNumber": 9
     },
     {
       "apiId": 639473,
       "name": "Yahia Jlidi",
       "position": "ST",
       "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Tunisia",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/639473.png",
       "kitNumber": 44
@@ -266,7 +288,7 @@
       "position": "ST",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403277.png",
       "kitNumber": 36
@@ -277,32 +299,10 @@
       "position": "ST",
       "club": "Angers",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/457541.png",
       "kitNumber": 35
-    },
-    {
-      "apiId": 191289,
-      "name": "A. Sbaï",
-      "position": "ST",
-      "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/191289.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 275385,
-      "name": "U. Simbakoli",
-      "position": "ST",
-      "club": "Angers",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/275385.png",
-      "kitNumber": 9
     }
   ]
 }
