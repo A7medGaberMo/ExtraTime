@@ -122,8 +122,8 @@ const POSITION_VARIANTS: Partial<Record<string, string[]>> = {
   RW: ["RM"],
   RM: ["RW"],
   CM: ["CDM", "CAM"],
-  CDM: ["CM"],
-  CAM: ["CM"],
+  CDM: ["CM", "CAM"],
+  CAM: ["CM", "CDM"],
 };
 
 export function normalizePosition(pos: string): string {

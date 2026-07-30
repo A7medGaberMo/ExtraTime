@@ -24,6 +24,7 @@ export default function HomePage() {
   const createGuest = useMutation(api.guests.mutations.create);
   const findMatch = useMutation(api.rooms.mutations.findOrCreatePublicMatch);
   const queueSummary = useQuery(api.rooms.queries.getPublicQueueSummary);
+  const dbStats = useQuery(api.players.queries.getStats);
   const [poolMode, setPoolMode] = useState<PoolMode>("GLOBAL");
   const [loading, setLoading] = useState(false);
   const waiting11 = queueSummary?.queues[poolMode]?.[11] ?? 0;
@@ -65,6 +66,24 @@ export default function HomePage() {
           <p className="mt-3 text-sm md:text-base text-steel max-w-lg mx-auto leading-relaxed font-medium">
             Draft real-world stars, outsmart rivals in tactical auctions, unlock tier packs, and dominate the arena.
           </p>
+
+          {/* Dynamic DB Players Badge Card */}
+          <div className="pt-2 flex items-center justify-center">
+            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-slate-900/90 border border-lime/30 shadow-xl backdrop-blur-md transition-all hover:border-lime/60">
+              <div className="flex items-center justify-center w-8 h-8 rounded-xl bg-lime/10 text-lime border border-lime/30 shrink-0">
+                <Users className="w-4 h-4" />
+              </div>
+              <div className="text-left">
+                <div className="text-[10px] font-black uppercase tracking-wider text-steel">Live Player Database</div>
+                <div className="text-xs font-black text-white flex items-center gap-1.5">
+                  <span className="text-lime text-sm font-stats">
+                    {dbStats?.totalPlayers ? dbStats.totalPlayers.toLocaleString() : "3,126"}
+                  </span>
+                  <span>Active Stars & Icons</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 

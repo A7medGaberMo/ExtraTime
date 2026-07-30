@@ -67,3 +67,19 @@ export const getByPosition = query({
     return Promise.all(filtered.map((p) => hydratePlayer(ctx, p)));
   },
 });
+
+export const getStats = query({
+  args: {},
+  handler: async (ctx) => {
+    const [players, clubs, nations] = await Promise.all([
+      ctx.db.query("players").collect(),
+      ctx.db.query("clubs").collect(),
+      ctx.db.query("nations").collect(),
+    ]);
+    return {
+      totalPlayers: players.length,
+      totalClubs: clubs.length,
+      totalNations: nations.length,
+    };
+  },
+});

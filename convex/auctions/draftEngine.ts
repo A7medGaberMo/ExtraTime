@@ -103,8 +103,8 @@ function positionFitScore(playerPosition: string, slot: Position): number {
     RW: ["RM"],
     RM: ["RW"],
     CM: ["CDM", "CAM"],
-    CDM: ["CM"],
-    CAM: ["CM"],
+    CDM: ["CM", "CAM"],
+    CAM: ["CM", "CDM"],
   };
 
   const allowed = variants[slot];
@@ -214,7 +214,7 @@ function selectSmartPair(
   }
 
   // Filter candidates strictly matching position category rules
-  const candidates = unused
+  let candidates = unused
     .map((p) => ({
       player: p,
       score: scoreCandidate(p, slot, scoringCtx),
@@ -222,9 +222,36 @@ function selectSmartPair(
     .filter((c) => c.score > 0);
 
   if (candidates.length < 2) {
-    // Fallback if strict criteria limited candidates
-    const fallback = unused.slice(0, 2);
-    return [fallback[0], fallback[1]];
+    const isGk = slot === "GK";
+    // Level 2 Fallback: Line-compatible candidates (excluding cross GK/Outfield)
+    const lineCandidates = unused
+      .filter((p) => {
+        const pIsGk = playerPositions(p.position).includes("GK");
+        if (isGk) return pIsGk;
+        if (pIsGk) return false;
+        return matchesLine(p.position, slot);
+      })
+      .map((p) => ({
+        player: p,
+        score: Math.max(1, scoreCandidate(p, slot, scoringCtx) || 50),
+      }));
+
+    if (lineCandidates.length >= 2) {
+      candidates = lineCandidates;
+    } else {
+      // Level 3 Fallback: Any outfield player for outfield slots, any GK for GK slots
+      const roleCandidates = unused
+        .filter((p) => {
+          const pIsGk = playerPositions(p.position).includes("GK");
+          return isGk ? pIsGk : !pIsGk;
+        })
+        .map((p) => ({
+          player: p,
+          score: 30,
+        }));
+
+      candidates = roleCandidates.length >= 2 ? roleCandidates : unused.map((p) => ({ player: p, score: 10 }));
+    }
   }
 
   candidates.sort((a, b) => b.score - a.score);
