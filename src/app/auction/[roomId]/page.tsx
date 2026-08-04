@@ -248,7 +248,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
               {codeCopied ? <Check className="w-4 h-4 text-lime" /> : <Copy className="w-4 h-4" />}
             </button>
           </div>
-          <button onClick={async () => { try { await cancelRoom({ roomId: roomId as Id<"rooms">, hostId: guestId! }); router.push("/"); } catch {} }}
+          <button onClick={async () => { try { await cancelRoom({ roomId: roomId as Id<"rooms">, hostId: guestId! }); router.push("/"); } catch { } }}
             className="text-xs text-steel hover:text-rose-400 transition-colors mt-4">Cancel Room</button>
         </div>
       )}
@@ -314,11 +314,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             style={{ color: tierColor, backgroundColor: `${tierColor}15`, borderColor: `${tierColor}40` }}>
             {currentPosition} · {mainPlayer?.tier}
           </span>
-          <span className={`shrink-0 text-[11px] font-bold px-2.5 py-1 rounded-full border ${
-            highestBid === 0 ? "bg-slate-900 border-border text-steel"
+          <span className={`shrink-0 text-[11px] font-bold px-2.5 py-1 rounded-full border ${highestBid === 0 ? "bg-slate-900 border-border text-steel"
               : iAmLeading ? "bg-lime/10 border-lime/30 text-lime"
-              : "bg-rose-500/10 border-rose-500/20 text-rose-400"
-          }`}>
+                : "bg-rose-500/10 border-rose-500/20 text-rose-400"
+            }`}>
             {highestBid === 0 ? "Open" : iAmLeading ? `Lead $${highestBid}M` : `Rival $${highestBid}M`}
           </span>
         </div>
@@ -373,9 +372,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
             {quickChips.map((chip) => (
               <button key={chip.value} onClick={() => setBidAmount(chip.value)}
-                className={`rounded-xl border px-2.5 py-2 text-xs font-bold transition-all ${
-                  bidAmount === chip.value ? "bg-lime text-slate-950 border-lime shadow-sm" : "bg-slate-900 border-border text-white hover:border-lime/30"
-                }`}>{chip.label}</button>
+                className={`rounded-xl border px-2.5 py-2 text-xs font-bold transition-all ${bidAmount === chip.value ? "bg-lime text-slate-950 border-lime shadow-sm" : "bg-slate-900 border-border text-white hover:border-lime/30"
+                  }`}>{chip.label}</button>
             ))}
           </div>
 
@@ -389,11 +387,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
               <X className="w-3.5 h-3.5" /> Pass
             </button>
             <button onClick={handleBid} disabled={isSubmitting || bidAmount < minBid || bidAmount > myBudget}
-              className={`py-3.5 font-black text-xs uppercase rounded-xl shadow-md transition-all flex items-center justify-center gap-1 active:scale-95 disabled:opacity-40 ${
-                bidAmount > (opponent?.budget ?? 0)
+              className={`py-3.5 font-black text-xs uppercase rounded-xl shadow-md transition-all flex items-center justify-center gap-1 active:scale-95 disabled:opacity-40 ${bidAmount > (opponent?.budget ?? 0)
                   ? "bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-[0_0_20px_rgba(251,191,36,0.5)]"
                   : "bg-lime hover:bg-vivid text-slate-950"
-              }`}>
+                }`}>
               {bidAmount > (opponent?.budget ?? 0) ? (
                 <span className="flex items-center gap-1"><Zap className="w-3.5 h-3.5 fill-slate-950" /> AUTO-WIN ${bidAmount}M</span>
               ) : (<>Bid ${bidAmount}M <ArrowRight className="w-3.5 h-3.5" /></>)}
