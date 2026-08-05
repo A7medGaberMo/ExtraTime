@@ -172,11 +172,12 @@ function planTierBudget(pool: PoolPlayer[], totalSlots: number): Map<Tier, numbe
     totalAvailable++;
   }
 
-  // Target ratios: 85% Elite or higher (ICON, MASTER, ELITE_PLUS, ELITE), 15% Gold & lower
+  // Target ratios: 85% Elite or higher (ICON, HERO, MASTER, ELITE_PLUS, ELITE), 15% Gold & lower
   const targetRatios: Record<Tier, number> = {
-    ICON: 0.25,        // Upper tier ~25%
-    MASTER: 0.25,      // Upper tier ~25%
-    ELITE_PLUS: 0.20,  // Upper tier ~20%
+    ICON: 0.15,        // Upper tier ~15%
+    HERO: 0.15,        // Upper tier ~15%
+    MASTER: 0.22,      // Upper tier ~22%
+    ELITE_PLUS: 0.18,  // Upper tier ~18%
     ELITE: 0.15,       // Upper tier ~15% (Total Upper = 85%)
     GOLD: 0.10,        // Lower tier ~10%
     SILVER: 0.04,      // Lower tier ~4%
@@ -392,12 +393,12 @@ export async function generateDraftRounds(
   // Filter player pool by mode
   const filtered: PoolPlayer[] = allPlayers
     .filter((player) => {
-      if (poolMode === "ICONS") return player.isLegend || player.tier === "ICON";
-      if (poolMode === "ACTIVE") return !player.isLegend && player.tier !== "ICON";
+      if (poolMode === "ICONS") return player.isLegend || player.tier === "ICON" || player.tier === "HERO";
+      if (poolMode === "ACTIVE") return !player.isLegend && player.tier !== "ICON" && player.tier !== "HERO";
       if (poolMode === "EPL") return clubById.get(player.clubId)?.league === "Premier League";
       if (poolMode === "TOP_TEAMS") {
         const clubName = clubById.get(player.clubId)?.name ?? "";
-        return TOP_CLUB_NAMES.has(clubName) || player.isLegend || player.tier === "ICON";
+        return TOP_CLUB_NAMES.has(clubName) || player.isLegend || player.tier === "ICON" || player.tier === "HERO";
       }
       return true; // GLOBAL
     })

@@ -11,10 +11,7 @@ import type { PlayerCardData, Tier } from '@/types/player';
 import {
   Zap,
   RefreshCw,
-  Layers,
   Crown,
-  Shield,
-  Star,
   Package,
   Flame,
   Search,
@@ -26,119 +23,89 @@ import {
   ShieldCheck,
   Target,
   Gem,
+  Star,
+  Users,
+  Award,
 } from 'lucide-react';
 
 import type { LucideIcon } from "lucide-react";
 
 export interface TierPackConfig {
   id: string;
-  tier: Tier | 'ALL';
   name: string;
   badgeLabel: string;
+  description: string;
   cost: number;
+  cardCount: number;
+  allowedTiers: (Tier | 'ALL')[];
   icon: LucideIcon;
   accentColor: string;
   secondaryColor: string;
   gradient: string;
   borderColor: string;
+  glowColor: string;
 }
 
-const ALL_PACKS_CONFIG: TierPackConfig[] = [
+const FOUR_ENTERTAINMENT_PACKS: TierPackConfig[] = [
   {
-    id: 'pack_icon',
-    tier: 'ICON',
-    name: 'ICON',
-    badgeLabel: 'ICON',
-    cost: 50,
-    icon: Crown,
-    accentColor: '#D4AF37',
-    secondaryColor: '#FFF3C4',
-    gradient: 'from-[#06080C] via-[#0D1017] to-[#1A1405]',
-    borderColor: 'border-[#D4AF37]/70 hover:border-[#FFF3C4] shadow-[0_0_15px_rgba(212,175,55,0.2)]',
-  },
-  {
-    id: 'pack_master',
-    tier: 'MASTER',
-    name: 'Master',
-    badgeLabel: 'MASTER',
-    cost: 40,
-    icon: Gem,
-    accentColor: '#A855F7',
-    secondaryColor: '#F3E8FF',
-    gradient: 'from-[#06080C] via-[#0D1017] to-[#1F0B2E]',
-    borderColor: 'border-[#A855F7]/70 hover:border-[#F3E8FF] shadow-[0_0_15px_rgba(168,85,247,0.2)]',
-  },
-  {
-    id: 'pack_elite_plus',
-    tier: 'ELITE_PLUS',
-    name: 'Elite+',
-    badgeLabel: 'ELITE+',
-    cost: 30,
-    icon: Zap,
-    accentColor: '#0EA5E9',
-    secondaryColor: '#E0F2FE',
-    gradient: 'from-[#06080C] via-[#0D1017] to-[#02202E]',
-    borderColor: 'border-[#0EA5E9]/70 hover:border-[#E0F2FE] shadow-[0_0_15px_rgba(14,165,233,0.2)]',
-  },
-  {
-    id: 'pack_elite',
-    tier: 'ELITE',
-    name: 'Elite',
-    badgeLabel: 'ELITE',
-    cost: 25,
-    icon: ShieldCheck,
-    accentColor: '#E11D48',
-    secondaryColor: '#FFE4E6',
-    gradient: 'from-[#06080C] via-[#0D1017] to-[#2B0610]',
-    borderColor: 'border-[#E11D48]/70 hover:border-[#FFE4E6] shadow-[0_0_15px_rgba(225,29,72,0.2)]',
-  },
-  {
-    id: 'pack_gold',
-    tier: 'GOLD',
-    name: 'Gold',
-    badgeLabel: 'GOLD',
-    cost: 20,
-    icon: Trophy,
-    accentColor: '#EAB308',
-    secondaryColor: '#FEF3C7',
-    gradient: 'from-[#06080C] via-[#0D1017] to-[#1F190B]',
-    borderColor: 'border-[#EAB308]/70 hover:border-[#FEF3C7] shadow-[0_0_12px_rgba(234,179,8,0.15)]',
-  },
-  {
-    id: 'pack_jumbo',
-    tier: 'ALL',
-    name: 'Jumbo',
-    badgeLabel: 'JUMBO',
-    cost: 35,
+    id: 'pack_all_tiers_showcase',
+    name: 'All-Tiers Showcase',
+    badgeLabel: '5 CARDS (1 EACH TIER)',
+    description: '1 ICON, HERO, MASTER, ELITE+ & ELITE card.',
+    cost: 100,
+    cardCount: 5,
+    allowedTiers: ['ALL'],
     icon: Package,
     accentColor: '#95E810',
     secondaryColor: '#00CFFF',
-    gradient: 'from-[#06080C] via-[#102404] to-[#03222B]',
-    borderColor: 'border-lime/70 hover:border-[#00CFFF] shadow-[0_0_20px_rgba(149,232,16,0.25)]',
+    gradient: 'from-[#0A1A05] via-[#122A08] to-[#030F02]',
+    borderColor: 'border-lime/80 hover:border-[#00CFFF]',
+    glowColor: 'rgba(149,232,16,0.4)',
   },
   {
-    id: 'pack_silver',
-    tier: 'SILVER',
-    name: 'Silver',
-    badgeLabel: 'SILVER',
-    cost: 15,
-    icon: Star,
-    accentColor: '#CBD5E1',
-    secondaryColor: '#F8FAFC',
-    gradient: 'from-[#06080C] via-[#0D1017] to-[#1C2026]',
-    borderColor: 'border-[#CBD5E1]/60 hover:border-[#F8FAFC] shadow-[0_0_12px_rgba(203,213,225,0.12)]',
+    id: 'pack_top_retired',
+    name: 'Top Retired Legends',
+    badgeLabel: '5 RETIRED LEGENDS',
+    description: '5 top all-time retired legends.',
+    cost: 60,
+    cardCount: 5,
+    allowedTiers: ['ICON', 'HERO'],
+    icon: Crown,
+    accentColor: '#D4AF37',
+    secondaryColor: '#FFF3C4',
+    gradient: 'from-[#1A1405] via-[#2A2008] to-[#0A0803]',
+    borderColor: 'border-[#D4AF37]/80 hover:border-[#FFF3C4]',
+    glowColor: 'rgba(212,175,55,0.4)',
   },
   {
-    id: 'pack_bronze',
-    tier: 'BRONZE',
-    name: 'Bronze',
-    badgeLabel: 'BRONZE',
-    cost: 10,
-    icon: Target,
-    accentColor: '#C97A3A',
-    secondaryColor: '#F0C8A0',
-    gradient: 'from-[#06080C] via-[#0D1017] to-[#241308]',
-    borderColor: 'border-[#C97A3A]/60 hover:border-[#F0C8A0] shadow-[0_0_12px_rgba(201,122,58,0.12)]',
+    id: 'pack_top_active',
+    name: 'Top Active Stars',
+    badgeLabel: '3 ACTIVE SUPERSTARS',
+    description: '3 top active superstars.',
+    cost: 40,
+    cardCount: 3,
+    allowedTiers: ['MASTER', 'ELITE_PLUS', 'ELITE'],
+    icon: Gem,
+    accentColor: '#A855F7',
+    secondaryColor: '#F3E8FF',
+    gradient: 'from-[#1F0B2E] via-[#2E1045] to-[#0D0414]',
+    borderColor: 'border-[#A855F7]/80 hover:border-[#F3E8FF]',
+    glowColor: 'rgba(168,85,247,0.4)',
+  },
+  {
+    id: 'pack_standard_active',
+    name: 'Standard Active',
+    badgeLabel: '3 ACTIVE CARDS',
+    description: '3 active players from Gold, Silver & Bronze.',
+    cost: 20,
+    cardCount: 3,
+    allowedTiers: ['GOLD', 'SILVER', 'BRONZE'],
+    icon: Trophy,
+    accentColor: '#EAB308',
+    secondaryColor: '#FEF3C7',
+    gradient: 'from-[#1F190B] via-[#2E240D] to-[#0A0803]',
+    borderColor: 'border-[#EAB308]/80 hover:border-[#FEF3C7]',
+    glowColor: 'rgba(234,179,8,0.35)',
   },
 ];
 
@@ -169,8 +136,8 @@ export default function PacksPage() {
   const [isOpening, setIsOpening] = useState<boolean>(false);
   const [openingPack, setOpeningPack] = useState<TierPackConfig | null>(null);
 
-  // EA FC / FIFA Style Typewriter Pack Reveal Animation State
-  const [openingStage, setOpeningStage] = useState<'idle' | 'charging' | 'scanning' | 'complete'>('idle');
+  // EA FC / FIFA Style Typewriter & Particle Stage State
+  const [openingStage, setOpeningStage] = useState<'idle' | 'charging' | 'scanning' | 'burst' | 'complete'>('idle');
   const [typewriterText, setTypewriterText] = useState<string>('');
 
   // Selected Card Inspection Popup Modal State
@@ -213,7 +180,7 @@ export default function PacksPage() {
     });
   }, [dbPlayers, dbClubs, dbNations]);
 
-  // 10-minute rotation timer background state (Functions preserved)
+  // 10-minute rotation timer background state
   const [nowMs, setNowMs] = useState<number>(() => Date.now());
   const TEN_MIN_MS = 10 * 60 * 1000;
   const current10MinSeed = Math.floor(nowMs / TEN_MIN_MS);
@@ -225,22 +192,19 @@ export default function PacksPage() {
     return () => clearInterval(interval);
   }, []);
 
-  // 10-Minute Random 8 Players Showcase (ICON, MASTER, ELITE+, ELITE with optional rare GOLD)
+  // 10-Minute Random 8 Players Showcase
   const random8FeaturedCards = useMemo(() => {
     if (activePool.length === 0) return [];
 
     const topTiers = activePool.filter((p) =>
-      ['ICON', 'MASTER', 'ELITE_PLUS', 'ELITE'].includes(p.tier)
+      ['ICON', 'HERO', 'MASTER', 'ELITE_PLUS', 'ELITE'].includes(p.tier)
     );
     const goldTier = activePool.filter((p) => p.tier === 'GOLD');
 
     const shuffledTop = shuffleWithSeed(topTiers.length > 0 ? topTiers : activePool, current10MinSeed);
     const shuffledGold = shuffleWithSeed(goldTier, current10MinSeed);
 
-    // Default: 8 top tier cards (ICON, MASTER, ELITE+, ELITE)
     const selection = shuffledTop.slice(0, 8);
-
-    // Optional rare Gold card (max 1, appears only in ~25% of rotation seeds)
     const hasRareGold = current10MinSeed % 4 === 0 && shuffledGold.length > 0;
     if (hasRareGold && selection.length === 8) {
       selection[7] = shuffledGold[0];
@@ -263,7 +227,7 @@ export default function PacksPage() {
     );
   }, [activePool, searchQuery]);
 
-  /* Minimal Pack Opening Handler */
+  /* Pack Opening Handler with Custom Tier Breakdown */
   const handleOpenPack = (pack: TierPackConfig) => {
     if (coins < pack.cost || isOpening) return;
 
@@ -271,46 +235,79 @@ export default function PacksPage() {
     setOpeningPack(pack);
     setCoins((prev) => prev - pack.cost);
     setOpeningStage('charging');
-    setTypewriterText('OPENING PACK...');
+    setTypewriterText('CHARGING ENERGY CHAMBER...');
 
     setTimeout(() => {
       setOpeningStage('scanning');
-      setTypewriterText('SCANNING CARDS...');
-    }, 400);
+      setTypewriterText(`SCANNING ${pack.badgeLabel}...`);
+    }, 500);
 
     setTimeout(() => {
-      setTypewriterText('DRAWING PLAYERS...');
-    }, 1000);
+      setOpeningStage('burst');
+      setTypewriterText('EXPLOSIVE PACK BURST!');
+    }, 1300);
 
     setTimeout(() => {
-      setTypewriterText('READY!');
-    }, 1600);
+      setTypewriterText('REVEALING PLAYERS...');
+    }, 1900);
 
     setTimeout(() => {
-      let filteredPool: PlayerCardData[] = [];
+      let drawn: PlayerCardData[] = [];
 
-      if (pack.tier === 'ALL') {
-        filteredPool = activePool;
-      } else {
-        filteredPool = activePool.filter((p) => p.tier === pack.tier);
-        if (filteredPool.length < 3) {
-          filteredPool = [...filteredPool, ...activePool.filter((p) => p.tier !== pack.tier)];
-        }
+      if (pack.id === 'pack_all_tiers_showcase') {
+        // 1. All-Tiers Showcase (100 TKN): 1 ICON, 1 HERO, 1 MASTER, 1 ELITE_PLUS, 1 ELITE
+        const iconPool = activePool.filter((p) => p.tier === 'ICON');
+        const heroPool = activePool.filter((p) => p.tier === 'HERO');
+        const masterPool = activePool.filter((p) => p.tier === 'MASTER');
+        const elitePlusPool = activePool.filter((p) => p.tier === 'ELITE_PLUS');
+        const elitePool = activePool.filter((p) => p.tier === 'ELITE');
+
+        const getRandom = (pool: PlayerCardData[]) => {
+          if (pool.length > 0) return pool[Math.floor(Math.random() * pool.length)];
+          return activePool[Math.floor(Math.random() * activePool.length)];
+        };
+
+        drawn = [
+          getRandom(iconPool),
+          getRandom(heroPool),
+          getRandom(masterPool),
+          getRandom(elitePlusPool),
+          getRandom(elitePool),
+        ].map((p, idx) => ({
+          ...p,
+          id: `showcase-${Date.now()}-${idx}`,
+        }));
+      } else if (pack.id === 'pack_top_retired') {
+        // 2. Top Retired Legends (60 TKN): 5 Top Retired Legends (ICON & HERO)
+        const retiredPool = activePool.filter((p) => p.isLegend || p.tier === 'ICON' || p.tier === 'HERO');
+        drawn = [...retiredPool]
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 5)
+          .map((p, idx) => ({ ...p, id: `retired-${Date.now()}-${idx}` }));
+      } else if (pack.id === 'pack_top_active') {
+        // 3. Top Active Stars (40 TKN): 3 Top Active Stars (MASTER, ELITE_PLUS, ELITE)
+        const topActivePool = activePool.filter(
+          (p) => !p.isLegend && ['MASTER', 'ELITE_PLUS', 'ELITE'].includes(p.tier)
+        );
+        drawn = [...(topActivePool.length >= 3 ? topActivePool : activePool)]
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 3)
+          .map((p, idx) => ({ ...p, id: `active-top-${Date.now()}-${idx}` }));
+      } else if (pack.id === 'pack_standard_active') {
+        // 4. Standard Active (20 TKN): 3 Active Players (GOLD, SILVER, BRONZE)
+        const standardActivePool = activePool.filter(
+          (p) => !p.isLegend && ['GOLD', 'SILVER', 'BRONZE'].includes(p.tier)
+        );
+        drawn = [...(standardActivePool.length >= 3 ? standardActivePool : activePool)]
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 3)
+          .map((p, idx) => ({ ...p, id: `active-std-${Date.now()}-${idx}` }));
       }
-
-      if (filteredPool.length === 0) {
-        filteredPool = activePool;
-      }
-
-      const drawn = [...filteredPool]
-        .sort(() => 0.5 - Math.random())
-        .slice(0, 3)
-        .map((p, idx) => ({ ...p, id: `drawn-${Date.now()}-${idx}` }));
 
       setOpenedCards(drawn);
       setIsOpening(false);
       setOpeningStage('idle');
-    }, 2400);
+    }, 2650);
   };
 
   const resetOpened = () => {
@@ -328,8 +325,8 @@ export default function PacksPage() {
         />
 
         {/* Tokens Balance Pill */}
-        <div className="flex items-center gap-2 bg-slate-900/90 border border-lime/30 px-3 py-1.5 rounded-xl self-start sm:self-auto shadow-md backdrop-blur-md">
-          <Coins className="h-4 w-4 text-lime shrink-0" />
+        <div className="flex items-center gap-2 bg-slate-900/90 border border-lime/30 px-3.5 py-1.5 rounded-xl self-start sm:self-auto shadow-md backdrop-blur-md">
+          <Coins className="h-4 w-4 text-lime shrink-0 animate-pulse" />
           <div className="flex items-center gap-1.5">
             <span className="text-[10px] text-steel font-bold uppercase tracking-wider whitespace-nowrap">Tokens:</span>
             <span className="text-xs sm:text-sm font-bold text-lime font-mono whitespace-nowrap">
@@ -348,34 +345,35 @@ export default function PacksPage() {
       </header>
 
       {/* ========================================================================= */}
-      {/* SECTION 1: PACK DECK SPREAD (MINIMAL & COMPACT ON MOBILE) */}
+      {/* SECTION 1: 4 CURATED ENTERTAINMENT PACKS (PERFECT FOR MOBILE & DESKTOP) */}
       {/* ========================================================================= */}
-      <section className="relative w-full rounded-2xl border border-white/10 bg-slate-950/70 p-3 sm:p-5 shadow-xl backdrop-blur-xl overflow-hidden" aria-labelledby="section-pack-decks">
+      <section className="relative w-full rounded-2xl border border-white/10 bg-slate-950/70 p-3 sm:p-6 shadow-xl backdrop-blur-xl overflow-hidden" aria-labelledby="section-pack-decks">
         {openedCards.length === 0 ? (
-          <div className="space-y-4">
-            <div className="flex items-center justify-between border-b border-white/10 pb-2.5">
-              <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-lime/10 border border-lime/30 flex items-center justify-center shrink-0">
-                  <Package className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-lime" />
+          <div className="space-y-4 sm:space-y-5">
+            <div className="flex items-center justify-between border-b border-white/10 pb-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(149,232,16,0.2)]">
+                  <Package className="w-4 h-4 text-lime" />
                 </div>
-                <div className="min-w-0">
-                  <h2 id="section-pack-decks" className="text-sm sm:text-base font-bold text-white uppercase tracking-wider truncate">
-                    Packs
+                <div>
+                  <h2 id="section-pack-decks" className="text-base sm:text-lg font-bold text-white uppercase tracking-wider">
+                    Curated Packs
                   </h2>
-                  <p className="text-[10px] sm:text-xs text-steel font-medium truncate">
-                    Draw 3 cards per pack
+                  <p className="text-[11px] sm:text-xs text-steel font-medium">
+                    Select a pack to open cards (3 to 5 players per draw)
                   </p>
                 </div>
               </div>
 
-              <span className="hidden sm:inline-flex text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-lime/10 text-lime border border-lime/30 uppercase tracking-wider whitespace-nowrap">
-                3 Cards
+              <span className="hidden sm:inline-flex items-center gap-1 text-xs font-bold px-3 py-1 rounded-full bg-lime/10 text-lime border border-lime/30 uppercase tracking-wider">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>4 Distinct Decks</span>
               </span>
             </div>
 
-            {/* Compact High-End Pack Deck Spread (4 cols on mobile = 2 small rows for all 8 cards) */}
-            <div className="grid grid-cols-4 lg:grid-cols-8 gap-1.5 sm:gap-2">
-              {ALL_PACKS_CONFIG.map((pack) => {
+            {/* 4 Distinct Packs Grid (2 cols on mobile, 4 cols on desktop) */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
+              {FOUR_ENTERTAINMENT_PACKS.map((pack) => {
                 const IconComp = pack.icon;
 
                 return (
@@ -383,36 +381,51 @@ export default function PacksPage() {
                     key={pack.id}
                     id={`pack-card-${pack.id}`}
                     onClick={() => handleOpenPack(pack)}
-                    className="group relative rounded-lg sm:rounded-xl border border-white/10 hover:border-lime/50 bg-slate-900/60 hover:bg-slate-900/90 p-1.5 sm:p-2.5 flex flex-col justify-between items-center text-center gap-1 sm:gap-1.5 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer overflow-hidden shadow-sm backdrop-blur-md"
+                    className={`group relative rounded-2xl border ${pack.borderColor} bg-gradient-to-b ${pack.gradient} p-3 sm:p-5 flex flex-col justify-between items-center text-center gap-2 sm:gap-3 transition-all duration-300 hover:-translate-y-1.5 active:scale-95 cursor-pointer overflow-hidden shadow-xl backdrop-blur-md`}
+                    style={{
+                      boxShadow: `0 8px 25px ${pack.glowColor}`,
+                    }}
                   >
-                    {/* Minimal Tier Badge Header */}
-                    <div className="w-full flex items-center justify-center border-b border-white/5 pb-0.5">
+                    {/* Top Shimmer Banner & Badge */}
+                    <div className="w-full flex items-center justify-between border-b border-white/10 pb-1.5">
                       <span
-                        className="text-[7.5px] sm:text-[9px] font-bold uppercase tracking-wider truncate max-w-full leading-none whitespace-nowrap"
+                        className="text-[8px] sm:text-[10px] font-black uppercase tracking-wider font-mono px-1.5 sm:px-2 py-0.5 rounded-full bg-slate-950/80 border border-white/10 truncate max-w-[82%]"
                         style={{ color: pack.accentColor }}
                       >
                         {pack.badgeLabel}
                       </span>
+                      <ETLogo variant="icon-only" size={14} />
                     </div>
 
-                    {/* Central Icon & Name */}
-                    <div className="my-0.5 flex flex-col items-center gap-0.5 sm:gap-1">
+                    {/* Central 3D Icon & Title */}
+                    <div className="my-1 sm:my-2 flex flex-col items-center gap-1 sm:gap-2">
                       <div
-                        className="w-6 h-6 sm:w-8 sm:h-8 rounded-md sm:rounded-lg flex items-center justify-center border border-white/10 bg-white/5 transition-transform duration-200 group-hover:scale-105 shrink-0"
+                        className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center border shadow-xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 shrink-0"
+                        style={{
+                          backgroundColor: `${pack.accentColor}18`,
+                          borderColor: pack.accentColor,
+                          boxShadow: `0 0 20px ${pack.glowColor}`,
+                        }}
                       >
-                        <IconComp className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" style={{ color: pack.accentColor }} />
+                        <IconComp className="w-5 h-5 sm:w-7 sm:h-7" style={{ color: pack.accentColor }} />
                       </div>
 
-                      <h3 className="text-[10px] sm:text-xs font-semibold text-slate-200 tracking-tight leading-none truncate max-w-full">
-                        {pack.name}
-                      </h3>
+                      <div className="space-y-0.5 sm:space-y-1">
+                        <h3 className="text-xs sm:text-lg font-bold text-white tracking-tight uppercase leading-snug">
+                          {pack.name}
+                        </h3>
+                        <p className="text-[9.5px] sm:text-[11px] text-steel font-medium leading-tight line-clamp-2 max-w-[180px] mx-auto">
+                          {pack.description}
+                        </p>
+                      </div>
                     </div>
 
-                    {/* Minimal High-End Price Button */}
+                    {/* High-End Price Action Button */}
                     <button
                       disabled={coins < pack.cost || isOpening}
-                      className="w-full py-0.5 sm:py-1 rounded bg-white/10 hover:bg-lime hover:text-slate-950 text-white font-mono text-[8.5px] sm:text-[10px] font-bold tracking-tight transition-all border border-white/10 disabled:opacity-30 flex items-center justify-center gap-1 active:scale-95 whitespace-nowrap"
+                      className="w-full py-1.5 sm:py-2 rounded-xl bg-slate-950/90 hover:bg-lime hover:text-slate-950 text-white font-mono text-[10px] sm:text-sm font-bold tracking-tight transition-all border border-white/20 hover:border-lime disabled:opacity-30 flex items-center justify-center gap-1.5 shadow-md active:scale-95 whitespace-nowrap"
                     >
+                      <Coins className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-lime group-hover:text-slate-950" />
                       <span>{pack.cost} TKN</span>
                     </button>
                   </div>
@@ -421,33 +434,30 @@ export default function PacksPage() {
             </div>
           </div>
         ) : (
-          /* Cards Reveal Arena */
-          <div className="flex flex-col items-center gap-5 py-4 animate-scale-in relative z-10">
+          /* Cards Reveal Arena (Responsive Grid & Scaled for Mobile Screens) */
+          <div className="flex flex-col items-center gap-4 sm:gap-6 py-4 sm:py-6 animate-scale-in relative z-10">
             <div className="text-center space-y-1 flex flex-col items-center">
-              <div className="flex items-center gap-1.5 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-lime bg-lime/10 px-3 py-0.5 rounded-full border border-lime/30 whitespace-nowrap">
+              <div className="flex items-center gap-1.5 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-lime bg-lime/10 px-3.5 py-1 rounded-full border border-lime/30 whitespace-nowrap shadow-[0_0_15px_rgba(149,232,16,0.2)]">
                 <ETLogo variant="icon-only" size={14} />
-                <span>Draw Complete</span>
+                <span>Draw Complete ({openedCards.length} Players)</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight pt-0.5 uppercase">
+              <h2 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight pt-0.5 sm:pt-1 uppercase">
                 {openingPack?.name || 'Pack Reveal'}
               </h2>
             </div>
 
-            {/* 3-Card Display Layout: wraps to 2 lines on narrow screens to prevent overflow */}
-            <div className="flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-4 py-2 w-full max-w-4xl mx-auto px-1">
+            {/* Dynamic Drawn Cards Grid Layout (Mobile-friendly scaling & wrapping) */}
+            <div className="flex flex-row flex-wrap items-center justify-center gap-1.5 sm:gap-4 py-2 w-full max-w-5xl mx-auto px-1">
               {openedCards.map((player, idx) => {
-                const isCenter = idx === 1;
-
                 return (
                   <div
                     key={player.id}
                     onClick={() => setSelectedModalCard(player)}
-                    className={`transform transition-all duration-300 cursor-pointer animate-slide-up scale-[0.78] sm:scale-[0.85] lg:scale-100 shrink-0 ${isCenter ? 'z-20 sm:-translate-y-1.5' : 'z-10'
-                      }`}
+                    className="transform transition-all duration-300 cursor-pointer animate-slide-up hover:scale-105 hover:-translate-y-2 scale-[0.68] xs:scale-[0.78] sm:scale-90 lg:scale-100 shrink-0 -mx-3 sm:mx-0"
                     style={{ animationDelay: `${idx * 150}ms` }}
                   >
                     <div className="relative group p-0">
-                      <PlayerCard player={player} size="md" showTierLabelBelow />
+                      <PlayerCard player={player} size={openedCards.length > 3 ? 'sm' : 'md'} showTierLabelBelow />
                     </div>
                   </div>
                 );
@@ -456,39 +466,54 @@ export default function PacksPage() {
 
             <button
               onClick={resetOpened}
-              className="px-6 py-2.5 bg-lime hover:bg-vivid text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap"
+              className="px-6 py-2.5 sm:px-7 sm:py-3 bg-lime hover:bg-vivid text-slate-950 font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-xl transition-all active:scale-95 flex items-center gap-2 whitespace-nowrap"
               id="btn-open-another"
             >
-              <RefreshCw className="h-3.5 w-3.5 shrink-0" />
-              <span>Open Pack</span>
+              <RefreshCw className="h-4 w-4 shrink-0" />
+              <span>Open Another Pack</span>
             </button>
           </div>
         )}
 
-        {/* PACK OPENING TRANSITION WITH TYPEWRITER SCANNER */}
+        {/* ENTERTAINING CINEMATIC PACK OPENING STAGE */}
         {isOpening && (
           <div className="absolute inset-0 z-50 bg-slate-950/95 backdrop-blur-2xl flex flex-col items-center justify-center p-4 animate-fade-in overflow-hidden">
-            {/* Background Spinning Conic Radial Beam */}
+            {/* Background Spinning Radial Conic Beams */}
             <div
-              className="absolute w-[500px] h-[500px] rounded-full opacity-20 animate-spin pointer-events-none"
+              className="absolute w-[650px] h-[650px] rounded-full opacity-30 animate-spin pointer-events-none"
               style={{
-                animationDuration: '10s',
-                background: `conic-gradient(from 0deg, ${openingPack?.accentColor || '#95E810'} 0deg, transparent 60deg, ${openingPack?.accentColor || '#95E810'} 120deg, transparent 180deg, ${openingPack?.accentColor || '#95E810'} 240deg, transparent 300deg)`,
+                animationDuration: '6s',
+                background: `conic-gradient(from 0deg, ${openingPack?.accentColor || '#95E810'} 0deg, transparent 45deg, ${openingPack?.accentColor || '#95E810'} 90deg, transparent 135deg, ${openingPack?.accentColor || '#95E810'} 180deg, transparent 225deg, ${openingPack?.accentColor || '#95E810'} 270deg, transparent 315deg)`,
               }}
             />
 
-            {/* Pack Shell Container */}
-            <div className="relative flex flex-col items-center gap-4 z-10 animate-scale-in">
+            {/* Sparkle Particles Burst Layer */}
+            {openingStage === 'burst' && (
+              <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+                <div
+                  className="w-96 h-96 rounded-full animate-ping opacity-75"
+                  style={{
+                    backgroundColor: openingPack?.accentColor || '#95E810',
+                    filter: 'blur(40px)',
+                  }}
+                />
+              </div>
+            )}
+
+            {/* Central Pack Container Shell */}
+            <div className="relative flex flex-col items-center gap-4 sm:gap-5 z-10 animate-scale-in">
               <div
-                className="relative w-36 h-52 sm:w-44 sm:h-64 rounded-xl border-2 flex flex-col items-center justify-between p-3 shadow-xl transition-transform duration-300 overflow-hidden bg-slate-900/90"
+                className={`relative w-36 h-52 sm:w-48 sm:h-68 rounded-2xl border-2 flex flex-col items-center justify-between p-3.5 sm:p-4 shadow-2xl transition-transform duration-300 overflow-hidden bg-slate-900/90 ${
+                  openingStage === 'burst' ? 'scale-110 rotate-2 brightness-150' : 'animate-pack-float'
+                }`}
                 style={{
                   borderColor: openingPack?.accentColor || '#95E810',
-                  boxShadow: `0 0 40px ${openingPack?.accentColor || '#95E810'}40`,
+                  boxShadow: `0 0 60px ${openingPack?.glowColor || 'rgba(149,232,16,0.4)'}`,
                 }}
               >
                 {/* Top Header */}
-                <div className="w-full flex items-center justify-between border-b border-white/10 pb-1.5">
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-lime font-mono">
+                <div className="w-full flex items-center justify-between border-b border-white/10 pb-2">
+                  <span className="text-[9.5px] sm:text-[10px] font-extrabold uppercase tracking-wider text-lime font-mono">
                     {openingPack?.badgeLabel || 'PACK'}
                   </span>
                   <ETLogo variant="icon-only" size={16} />
@@ -498,38 +523,42 @@ export default function PacksPage() {
                 <div className="flex flex-col items-center gap-2 my-auto text-center">
                   {openingPack && (
                     <div
-                      className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center border shadow-lg animate-pulse"
+                      className="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center border shadow-xl animate-pulse"
                       style={{
                         backgroundColor: `${openingPack.accentColor}20`,
                         borderColor: openingPack.accentColor,
-                        boxShadow: `0 0 20px ${openingPack.accentColor}40`,
+                        boxShadow: `0 0 30px ${openingPack.glowColor}`,
                       }}
                     >
-                      <openingPack.icon className="w-6 h-6 sm:w-7 sm:h-7" style={{ color: openingPack.accentColor }} />
+                      <openingPack.icon className="w-6 h-6 sm:w-8 sm:h-8" style={{ color: openingPack.accentColor }} />
                     </div>
                   )}
-                  <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">
+                  <h4 className="text-xs sm:text-base font-extrabold text-white uppercase tracking-wider">
                     {openingPack?.name}
                   </h4>
                 </div>
 
                 {/* Bottom Footer */}
-                <div className="w-full border-t border-white/10 pt-1.5 text-center">
-                  <span className="text-[9px] font-mono text-steel font-bold tracking-wider">
-                    3 CARDS
+                <div className="w-full border-t border-white/10 pt-2 text-center">
+                  <span className="text-[10px] font-mono text-steel font-bold tracking-wider">
+                    {openingPack?.cardCount || 3} PLAYERS
                   </span>
                 </div>
 
                 {/* Laser Scanner Line */}
                 {openingStage === 'scanning' && (
-                  <div className="absolute left-0 right-0 h-1 bg-gradient-to-r from-transparent via-lime to-transparent shadow-[0_0_15px_#95E810] animate-scanner-line" />
+                  <div className="absolute left-0 right-0 h-1.5 bg-gradient-to-r from-transparent via-lime to-transparent shadow-[0_0_20px_#95E810] animate-scanner-line" />
                 )}
               </div>
 
-              {/* Typewriter Console */}
-              <div className="w-64 sm:w-80 bg-slate-900/90 border border-lime/30 rounded-lg p-2.5 shadow-xl backdrop-blur-md flex items-center gap-2.5">
-                <div className="w-2 h-2 rounded-full bg-lime animate-ping shrink-0" />
-                <p className="text-[11px] font-mono font-bold text-lime tracking-wide uppercase truncate">
+              {/* Typewriter & Visual Equalizer Console */}
+              <div className="w-68 sm:w-84 bg-slate-900/90 border border-lime/30 rounded-xl p-2.5 sm:p-3 shadow-2xl backdrop-blur-md flex items-center gap-2.5 sm:gap-3">
+                <div className="flex items-center gap-1 shrink-0">
+                  <div className="w-1 h-3 bg-lime animate-bounce" style={{ animationDelay: '0ms' }} />
+                  <div className="w-1 h-4 bg-lime animate-bounce" style={{ animationDelay: '150ms' }} />
+                  <div className="w-1 h-2 bg-lime animate-bounce" style={{ animationDelay: '300ms' }} />
+                </div>
+                <p className="text-[11px] sm:text-xs font-mono font-bold text-lime tracking-wide uppercase truncate">
                   {typewriterText}
                 </p>
               </div>
@@ -543,7 +572,7 @@ export default function PacksPage() {
       {/* ========================================================================= */}
       <section className="space-y-4" aria-labelledby="section-search-rotation">
         {/* SEARCH BAR */}
-        <div className="bg-slate-950/60 border border-white/10 rounded-xl p-3 shadow-lg backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="bg-slate-950/60 border border-white/10 rounded-xl p-3 sm:p-3.5 shadow-lg backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Search className="w-4 h-4 text-lime" />
             <h3 id="section-search-rotation" className="text-sm sm:text-base font-bold text-white tracking-tight">
@@ -638,7 +667,7 @@ export default function PacksPage() {
           id="modal-card-inspection"
         >
           <div
-            className="relative bg-slate-900 border border-white/20 rounded-2xl p-5 sm:p-6 max-w-sm w-full shadow-2xl flex flex-col items-center gap-4 animate-scale-in"
+            className="relative bg-slate-900 border border-white/20 rounded-2xl p-4 sm:p-6 max-w-xs sm:max-w-sm w-full shadow-2xl flex flex-col items-center gap-4 animate-scale-in max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}

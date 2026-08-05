@@ -18,6 +18,18 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
         </svg>
       );
 
+    case 'HERO':
+      // Emerald starburst & heroic shield lines (opacity 4%)
+      return (
+        <svg className="absolute inset-0 w-full h-full opacity-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+          <pattern id="tex-hero-shield" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 30 5 L 55 20 L 55 45 L 30 55 L 5 45 L 5 20 Z" fill="none" stroke="#10B981" strokeWidth="0.6" />
+            <path d="M 30 15 L 45 25 L 45 40 L 30 45 L 15 40 L 15 25 Z" fill="none" stroke="#A7F3D0" strokeWidth="0.4" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#tex-hero-shield)" />
+        </svg>
+      );
+
     case 'MASTER':
       // Crystal geometry (hexagonal faceted lattice, opacity 4%)
       return (

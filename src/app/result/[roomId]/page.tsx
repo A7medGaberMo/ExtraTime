@@ -11,12 +11,12 @@ import { useGuestSession } from "@/hooks/use-guest-session";
 import { Loader2, Trophy, Swords, RefreshCw, Home, Package, Coins, Star } from "lucide-react";
 
 const TIER_WEIGHTS: Record<string, number> = {
-  ICON: 7, MASTER: 6, ELITE_PLUS: 5, ELITE: 4,
+  ICON: 7, HERO: 6.5, MASTER: 6, ELITE_PLUS: 5, ELITE: 4,
   GOLD: 3, SILVER: 2, BRONZE: 1,
 };
 
 function countTiers(squad: Array<{ player?: { tier?: string } | null }>) {
-  const counts: Record<string, number> = { ICON: 0, MASTER: 0, ELITE_PLUS: 0, ELITE: 0, GOLD: 0, SILVER: 0, BRONZE: 0 };
+  const counts: Record<string, number> = { ICON: 0, HERO: 0, MASTER: 0, ELITE_PLUS: 0, ELITE: 0, GOLD: 0, SILVER: 0, BRONZE: 0 };
   for (const item of squad) {
     if (item.player?.tier && counts[item.player.tier] !== undefined) {
       counts[item.player.tier]++;
@@ -27,6 +27,7 @@ function countTiers(squad: Array<{ player?: { tier?: string } | null }>) {
 
 function topTierLabel(counts: Record<string, number>) {
   if (counts.ICON > 0) return `${counts.ICON} Icon`;
+  if (counts.HERO > 0) return `${counts.HERO} Hero`;
   const eliteCount = counts.MASTER + counts.ELITE_PLUS + counts.ELITE;
   if (eliteCount > 0) return `${eliteCount} Elite`;
   if (counts.GOLD > 0) return `${counts.GOLD} Gold`;

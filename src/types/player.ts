@@ -1,5 +1,5 @@
 /** Player tier classification — no numerical ratings exposed in UI */
-export type Tier = 'ICON' | 'MASTER' | 'ELITE_PLUS' | 'ELITE' | 'GOLD' | 'SILVER' | 'BRONZE';
+export type Tier = 'ICON' | 'HERO' | 'MASTER' | 'ELITE_PLUS' | 'ELITE' | 'GOLD' | 'SILVER' | 'BRONZE';
 
 /** Specific football positions */
 export type Position =

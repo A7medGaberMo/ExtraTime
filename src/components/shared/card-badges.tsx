@@ -186,6 +186,9 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
     'peru': 'pe',
     'paraguay': 'py',
     'venezuela': 've',
+    'romania': 'ro',
+    'bosnia and herzegovina': 'ba',
+    'bosnia': 'ba',
   };
 
   const cleanNation = (nationName || '').trim().toLowerCase();

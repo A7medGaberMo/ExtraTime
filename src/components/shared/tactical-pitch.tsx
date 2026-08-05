@@ -41,7 +41,7 @@ interface TacticalPitchProps {
 
 /* ── Tier Colors ──────────────────────────────────────────── */
 const TIER_COLORS: Record<string, string> = {
-  ICON: "#D4AF37", MASTER: "#A855F7", ELITE_PLUS: "#0EA5E9",
+  ICON: "#D4AF37", HERO: "#10B981", MASTER: "#A855F7", ELITE_PLUS: "#0EA5E9",
   ELITE: "#E11D48", GOLD: "#EAB308", SILVER: "#CBD5E1", BRONZE: "#C97A3A",
 };
 

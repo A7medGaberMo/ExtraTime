@@ -8,6 +8,7 @@ export const playersTable = defineTable({
   nationId: v.id("nations"),
   tier: v.union(
     v.literal("ICON"),
+    v.literal("HERO"),
     v.literal("MASTER"),
     v.literal("ELITE_PLUS"),
     v.literal("ELITE"),

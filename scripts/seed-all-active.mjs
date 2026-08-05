@@ -50,23 +50,33 @@ function collectActivePlayers(baseDir) {
   return allPlayers;
 }
 
-function collectLegendPlayers(legendsFile) {
+function collectLegendPlayers(legendsDir) {
   const allPlayers = [];
-  if (fs.existsSync(legendsFile)) {
-    const data = JSON.parse(fs.readFileSync(legendsFile, "utf8"));
-    for (const p of data) {
-      allPlayers.push({
-        name: p.name,
-        position: p.position,
-        club: p.club,
-        nation: p.nation,
-        league: "Global Legends",
-        tier: p.tier,
-        isLegend: true,
-        apiId: String(p.apiId ?? ""),
-        imageUrl: p.imageUrl ?? "",
-        kitNumber: p.kitNumber ?? 0,
-      });
+  const seenIds = new Set();
+
+  const filesToRead = ["icons.json", "heroes.json", "legends.json"];
+  for (const file of filesToRead) {
+    const filePath = path.join(legendsDir, file);
+    if (fs.existsSync(filePath)) {
+      const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+      for (const p of data) {
+        const id = String(p.apiId ?? p.name);
+        if (!seenIds.has(id)) {
+          seenIds.add(id);
+          allPlayers.push({
+            name: p.name,
+            position: p.position,
+            club: p.club,
+            nation: p.nation,
+            league: "Global Legends",
+            tier: p.tier,
+            isLegend: true,
+            apiId: id,
+            imageUrl: p.imageUrl ?? "",
+            kitNumber: p.kitNumber ?? 0,
+          });
+        }
+      }
     }
   }
   return allPlayers;

@@ -40,6 +40,21 @@ export const TIER_CONFIGS: Record<Tier, TierConfig> = {
     rimGlow: 'rgba(212, 175, 55, 0.45)',
     textShadow: '0 2px 8px rgba(0,0,0,0.9)',
   },
+  HERO: {
+    name: 'HERO',
+    identity: 'Club Legend',
+    materials: 'Emerald crystal, Jade titanium, Deep gold trim',
+    colors: {
+      primary: '#10B981',
+      highlight: '#A7F3D0',
+      shadow: '#065F46',
+      accent: '#34D399',
+    },
+    frameGradient: 'from-[#ECFDF5] via-[#10B981] to-[#047857]',
+    bgGradient: 'from-[#064E3B] via-[#022C22] to-[#01140E]',
+    rimGlow: 'rgba(16, 185, 129, 0.45)',
+    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
+  },
   MASTER: {
     name: 'MASTER',
     identity: 'Elite Masterpiece',
@@ -323,7 +338,7 @@ export function PlayerCard({
                   <img
                     src={player.imageUrl}
                     alt={player.name}
-                    crossOrigin="anonymous"
+                    referrerPolicy="no-referrer"
                     onError={() => setImgError(true)}
                     className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-110"
                   />
