@@ -61,6 +61,61 @@
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Rapid-Spartak_%2815%29_%28cropped%29.jpg",
       "kitNumber": 18
+    },
+    {
+      "apiId": 315,
+      "name": "E. Džeko",
+      "position": "ST",
+      "club": "Fenerbahçe",
+      "nation": "Bosnia",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/315.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 2289,
+      "name": "Y. En-Nesyri",
+      "position": "ST",
+      "club": "Fenerbahçe",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2289.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 318,
+      "name": "D. Tadić",
+      "position": "LW/CAM",
+      "club": "Fenerbahçe",
+      "nation": "Serbia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/318.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 2820,
+      "name": "Fred",
+      "position": "CM/CDM",
+      "club": "Fenerbahçe",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2820.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 1618,
+      "name": "A. Saint-Maximin",
+      "position": "LM/LW",
+      "club": "Fenerbahçe",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1618.png",
+      "kitNumber": 97
     }
   ]
 }

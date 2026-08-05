@@ -1,0 +1,44 @@
+{
+  "club": {
+    "apiId": 564,
+    "name": "Beşiktaş",
+    "logo": "https://media.api-sports.io/football/teams/564.png",
+    "league": "Süper Lig",
+    "leagueId": 203
+  },
+  "players": [
+    {
+      "apiId": 30409,
+      "name": "C. Immobile",
+      "position": "ST",
+      "club": "Beşiktaş",
+      "nation": "Italy",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30409.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 1478,
+      "name": "Rafa Silva",
+      "position": "CAM/RW",
+      "club": "Beşiktaş",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1478.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 2118,
+      "name": "João Mário",
+      "position": "CM/RM",
+      "club": "Beşiktaş",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2118.png",
+      "kitNumber": 18
+    }
+  ]
+}

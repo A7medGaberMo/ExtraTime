@@ -12,6 +12,8 @@ import type * as auctions_draftEngine from "../auctions/draftEngine.js";
 import type * as auctions_formations from "../auctions/formations.js";
 import type * as auctions_mutations from "../auctions/mutations.js";
 import type * as auctions_queries from "../auctions/queries.js";
+import type * as careerStats_mutations from "../careerStats/mutations.js";
+import type * as careerStats_queries from "../careerStats/queries.js";
 import type * as clubs_mutations from "../clubs/mutations.js";
 import type * as clubs_queries from "../clubs/queries.js";
 import type * as guests_mutations from "../guests/mutations.js";
@@ -26,6 +28,9 @@ import type * as players_queries from "../players/queries.js";
 import type * as rooms_mutations from "../rooms/mutations.js";
 import type * as rooms_queries from "../rooms/queries.js";
 import type * as seed_seedData from "../seed/seedData.js";
+import type * as seed_seedStatsAndTransfers from "../seed/seedStatsAndTransfers.js";
+import type * as transfers_mutations from "../transfers/mutations.js";
+import type * as transfers_queries from "../transfers/queries.js";
 
 import type {
   ApiFromModules,
@@ -38,6 +43,8 @@ declare const fullApi: ApiFromModules<{
   "auctions/formations": typeof auctions_formations;
   "auctions/mutations": typeof auctions_mutations;
   "auctions/queries": typeof auctions_queries;
+  "careerStats/mutations": typeof careerStats_mutations;
+  "careerStats/queries": typeof careerStats_queries;
   "clubs/mutations": typeof clubs_mutations;
   "clubs/queries": typeof clubs_queries;
   "guests/mutations": typeof guests_mutations;
@@ -52,6 +59,9 @@ declare const fullApi: ApiFromModules<{
   "rooms/mutations": typeof rooms_mutations;
   "rooms/queries": typeof rooms_queries;
   "seed/seedData": typeof seed_seedData;
+  "seed/seedStatsAndTransfers": typeof seed_seedStatsAndTransfers;
+  "transfers/mutations": typeof transfers_mutations;
+  "transfers/queries": typeof transfers_queries;
 }>;
 
 /**

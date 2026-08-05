@@ -83,6 +83,61 @@
       "isLegend": false,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Abd%C3%BClkerim_Bardak%C3%A7%C4%B1_-_beIN-Sports-Reklam_%282021%29_%28cropped%29.png",
       "kitNumber": 42
+    },
+    {
+      "apiId": 18765,
+      "name": "V. Osimhen",
+      "position": "ST",
+      "club": "Galatasaray",
+      "nation": "Nigeria",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18765.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 2842,
+      "name": "M. Icardi",
+      "position": "ST",
+      "club": "Galatasaray",
+      "nation": "Argentina",
+      "tier": "ELITE_PLUS",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2842.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 2997,
+      "name": "D. Mertens",
+      "position": "CAM/ST",
+      "club": "Galatasaray",
+      "nation": "Belgium",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2997.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 642,
+      "name": "W. Zaha",
+      "position": "LW/ST",
+      "club": "Galatasaray",
+      "nation": "Ivory Coast",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/642.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 20347,
+      "name": "M. Batshuayi",
+      "position": "ST",
+      "club": "Galatasaray",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20347.png",
+      "kitNumber": 44
     }
   ]
 }

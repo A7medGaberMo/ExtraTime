@@ -1098,5 +1098,27 @@
     "isLegend": true,
     "kitNumber": 4,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Metalist-Inter_%282%29.jpg/330px-Metalist-Inter_%282%29.jpg"
+  },
+  {
+    "apiId": "icon_101",
+    "name": "Laurent Blanc",
+    "position": "CB",
+    "club": "Marseille",
+    "nation": "France",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 5,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Laurent_blanc_11_11_2013_reves_de_Clara.jpg/330px-Laurent_blanc_11_11_2013_reves_de_Clara.jpg"
+  },
+  {
+    "apiId": "icon_102",
+    "name": "Davor Šuker",
+    "position": "ST",
+    "club": "Real Madrid",
+    "nation": "Croatia",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Football_against_poverty_2014_-_Davor_%C5%A0uker_%28cropped%29.jpg/330px-Football_against_poverty_2014_-_Davor_%C5%A0uker_%28cropped%29.jpg"
   }
 ]

@@ -101,10 +101,10 @@ async function callMutation(fnName, args) {
 
 async function main() {
   const activeDir = path.join(__dirname, "..", "data", "players", "active");
-  const legendsFile = path.join(__dirname, "..", "data", "players", "legends", "legends.json");
+  const legendsDir = path.join(__dirname, "..", "data", "players", "legends");
   
   const activePlayers = collectActivePlayers(activeDir);
-  const legendPlayers = collectLegendPlayers(legendsFile);
+  const legendPlayers = collectLegendPlayers(legendsDir);
   
   const allPlayers = [...activePlayers, ...legendPlayers];
   console.log(`Collected ${activePlayers.length} active players and ${legendPlayers.length} legends.`);

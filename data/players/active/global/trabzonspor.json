@@ -1,0 +1,22 @@
+{
+  "club": {
+    "apiId": 605,
+    "name": "Trabzonspor",
+    "logo": "https://media.api-sports.io/football/teams/605.png",
+    "league": "Süper Lig",
+    "leagueId": 203
+  },
+  "players": [
+    {
+      "apiId": 306,
+      "name": "M. Salah",
+      "position": "RW/ST",
+      "club": "Trabzonspor",
+      "nation": "Egypt",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/306.png",
+      "kitNumber": 61
+    }
+  ]
+}
