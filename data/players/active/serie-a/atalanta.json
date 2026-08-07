@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Atalanta",
       "nation": "Italy",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/289761.png",
       "kitNumber": 42
@@ -79,7 +79,7 @@
       "position": "RB/RM",
       "club": "Atalanta",
       "nation": "Italy",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/91422.png",
       "kitNumber": 16
@@ -134,7 +134,7 @@
       "position": "RB/LB/RM",
       "club": "Atalanta",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2286.png",
       "kitNumber": 77
@@ -222,7 +222,7 @@
       "position": "CM/CAM",
       "club": "Atalanta",
       "nation": "Croatia",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2763.png",
       "kitNumber": 8
@@ -233,7 +233,7 @@
       "position": "CDM/CM",
       "club": "Atalanta",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30432.png",
       "kitNumber": 15
@@ -332,7 +332,7 @@
       "position": "ST/CAM",
       "club": "Atalanta",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30543.png",
       "kitNumber": 18

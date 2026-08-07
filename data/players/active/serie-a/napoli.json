@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Napoli",
       "nation": "Italy",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31226.png",
       "kitNumber": 4
@@ -68,7 +68,7 @@
       "position": "RB/CB",
       "club": "Napoli",
       "nation": "Italy",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31042.png",
       "kitNumber": 22
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Napoli",
       "nation": "Kosovo",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1314.png",
       "kitNumber": 13
@@ -90,7 +90,7 @@
       "position": "LB/CB",
       "club": "Napoli",
       "nation": "Uruguay",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47254.png",
       "kitNumber": 17
@@ -101,7 +101,7 @@
       "position": "LB/LM",
       "club": "Napoli",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/862.png",
       "kitNumber": 37
@@ -200,7 +200,7 @@
       "position": "CDM/CM",
       "club": "Napoli",
       "nation": "Slovakia",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47439.png",
       "kitNumber": 68
@@ -222,7 +222,7 @@
       "position": "CM/CDM",
       "club": "Napoli",
       "nation": "Scotland",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/130423.png",
       "kitNumber": 41
@@ -321,7 +321,7 @@
       "position": "RW/RM",
       "club": "Napoli",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/219.png",
       "kitNumber": 21

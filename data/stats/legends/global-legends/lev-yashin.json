@@ -1,0 +1,59 @@
+{
+  "player": {
+    "name": "Lev Yashin",
+    "apiId": "icon_8",
+    "position": "GK",
+    "isGoalkeeper": true
+  },
+  "seasonal": [
+    {"season":"1950","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":2,"starts":2,"min":180,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":0,"goalsConceded":5,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1953","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":13,"starts":13,"min":1170,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":6,"goalsConceded":11,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1953","squad":"Dynamo Moscow","competition":"Soviet Cup","mp":5,"starts":5,"min":450,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":4,"goalsConceded":2,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1954","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":24,"starts":24,"min":2160,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":14,"goalsConceded":20,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1955","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":22,"starts":22,"min":1980,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":11,"goalsConceded":16,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1955","squad":"Dynamo Moscow","competition":"Soviet Cup","mp":4,"starts":4,"min":360,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":2,"goalsConceded":3,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1956","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":19,"starts":19,"min":1710,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":7,"goalsConceded":21,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1957","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":12,"starts":12,"min":1080,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":7,"goalsConceded":7,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1957","squad":"Dynamo Moscow","competition":"Soviet Cup","mp":2,"starts":2,"min":180,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":1,"goalsConceded":1,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1958","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":19,"starts":19,"min":1710,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":9,"goalsConceded":15,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1959","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":19,"starts":19,"min":1710,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":11,"goalsConceded":15,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1960","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":18,"starts":18,"min":1620,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":8,"goalsConceded":15,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1961","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":20,"starts":20,"min":1800,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":9,"goalsConceded":18,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1962","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":17,"starts":17,"min":1530,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":8,"goalsConceded":14,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1963","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":27,"starts":27,"min":2430,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":22,"goalsConceded":6,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1964","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":28,"starts":28,"min":2520,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":16,"goalsConceded":20,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1965","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":20,"starts":20,"min":1800,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":11,"goalsConceded":12,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1966","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":8,"starts":8,"min":720,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":4,"goalsConceded":6,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1967","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":20,"starts":20,"min":1800,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00,"cleanSheets":11,"goalsConceded":11},
+    {"season":"1967","squad":"Dynamo Moscow","competition":"Soviet Cup","mp":6,"starts":6,"min":540,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":5,"goalsConceded":1,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1968","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":17,"starts":17,"min":1530,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":7,"goalsConceded":11,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1969","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":22,"starts":22,"min":1980,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":12,"goalsConceded":16,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1970","squad":"Dynamo Moscow","competition":"Soviet Top League","mp":13,"starts":13,"min":1170,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":7,"goalsConceded":7,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00},
+    {"season":"1970","squad":"Dynamo Moscow","competition":"Soviet Cup","mp":5,"starts":5,"min":450,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":3,"goalsConceded":2,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00}
+  ],
+  "perClub": [
+    {"squad":"Dynamo Moscow","mp":426,"starts":426,"min":38340,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":207,"goalsConceded":300,"saves":0,"goalsPer90":0.00,"assistsPer90":0.00,"gPlusAPer90":0.00}
+  ],
+  "perCompetition": [
+    {"competition":"Soviet Top League","mp":326,"starts":326,"min":29340,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":160,"goalsConceded":240,"saves":0},
+    {"competition":"Soviet Cup","mp":32,"starts":32,"min":2880,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":20,"goalsConceded":12,"saves":0},
+    {"competition":"International Friendly Matches","mp":68,"starts":68,"min":6120,"goals":0,"assists":0,"yellowCards":0,"redCards":0,"cleanSheets":27,"goalsConceded":48,"saves":0}
+  ],
+  "careerTotal": {
+    "mp": 426,
+    "starts": 426,
+    "min": 38340,
+    "goals": 0,
+    "assists": 0,
+    "yellowCards": 0,
+    "redCards": 0,
+    "cleanSheets": 207,
+    "goalsConceded": 300,
+    "saves": 0,
+    "squad": "All Clubs",
+    "competition": "All Competitions",
+    "goalsPer90": 0.00,
+    "assistsPer90": 0.00,
+    "gPlusAPer90": 0.00
+  }
+}

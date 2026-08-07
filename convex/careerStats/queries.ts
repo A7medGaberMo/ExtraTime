@@ -14,12 +14,12 @@ export const getByPlayer = query({
 export const getCareerTotal = query({
   args: { playerId: v.id("players") },
   handler: async (ctx, args) => {
-    const stats = await ctx.db
+    return await ctx.db
       .query("careerStats")
-      .withIndex("by_player", (q) => q.eq("playerId", args.playerId))
-      .filter((q) => q.eq(q.field("isCareerTotal"), true))
+      .withIndex("by_player_type", (q) =>
+        q.eq("playerId", args.playerId).eq("recordType", "CAREER_TOTAL")
+      )
       .first();
-    return stats;
   },
 });
 
@@ -34,21 +34,13 @@ export const getBySeason = query({
 });
 
 export const getTopScorers = query({
-  args: { season: v.optional(v.string()), limit: v.optional(v.number()) },
+  args: { limit: v.optional(v.number()) },
   handler: async (ctx, args) => {
     const limit = args.limit ?? 20;
-    if (args.season) {
-      const stats = await ctx.db
-        .query("careerStats")
-        .withIndex("by_season", (q) => q.eq("season", args.season!))
-        .collect();
-      return stats.sort((a, b) => b.goals - a.goals).slice(0, limit);
-    }
     const stats = await ctx.db
       .query("careerStats")
-      .withIndex("by_goals")
-      .order("desc")
-      .take(limit);
-    return stats;
+      .withIndex("by_record_type", (q) => q.eq("recordType", "CAREER_TOTAL"))
+      .collect();
+    return stats.sort((a, b) => b.goals - a.goals).slice(0, limit);
   },
 });

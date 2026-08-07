@@ -5,9 +5,8 @@ const statItemArg = v.object({
   playerId: v.id("players"),
   playerName: v.string(),
   apiId: v.optional(v.string()),
-  season: v.string(),
-  isCareerTotal: v.boolean(),
-  clubName: v.string(),
+  season: v.optional(v.string()),
+  squad: v.string(),
   competition: v.string(),
   matchesPlayed: v.number(),
   starts: v.optional(v.number()),
@@ -16,11 +15,18 @@ const statItemArg = v.object({
   assists: v.number(),
   yellowCards: v.optional(v.number()),
   redCards: v.optional(v.number()),
-  penaltiesScored: v.optional(v.number()),
-  penaltiesAttempted: v.optional(v.number()),
+  goalsPer90: v.optional(v.number()),
+  assistsPer90: v.optional(v.number()),
+  gPlusAPer90: v.optional(v.number()),
   cleanSheets: v.optional(v.number()),
-  goalsAgainst: v.optional(v.number()),
-  savePercentage: v.optional(v.number()),
+  goalsConceded: v.optional(v.number()),
+  saves: v.optional(v.number()),
+  recordType: v.union(
+    v.literal("SEASONAL"),
+    v.literal("PER_CLUB"),
+    v.literal("PER_COMPETITION"),
+    v.literal("CAREER_TOTAL")
+  ),
 });
 
 const transferItemArg = v.object({
@@ -62,9 +68,9 @@ export const seedStatsAndTransfersBatch = mutation({
       await ctx.db.insert("careerStats", {
         playerId: s.playerId,
         playerName: s.playerName,
+        apiId: s.apiId,
         season: s.season,
-        isCareerTotal: s.isCareerTotal,
-        clubName: s.clubName,
+        squad: s.squad,
         competition: s.competition,
         matchesPlayed: s.matchesPlayed,
         starts: s.starts,
@@ -73,14 +79,13 @@ export const seedStatsAndTransfersBatch = mutation({
         assists: s.assists,
         yellowCards: s.yellowCards ?? 0,
         redCards: s.redCards ?? 0,
-        penaltiesScored: s.penaltiesScored,
-        penaltiesAttempted: s.penaltiesAttempted,
-        goalsPer90,
-        assistsPer90,
-        gPlusAPer90,
+        goalsPer90: s.goalsPer90 ?? goalsPer90,
+        assistsPer90: s.assistsPer90 ?? assistsPer90,
+        gPlusAPer90: s.gPlusAPer90 ?? gPlusAPer90,
         cleanSheets: s.cleanSheets,
-        goalsAgainst: s.goalsAgainst,
-        savePercentage: s.savePercentage,
+        goalsConceded: s.goalsConceded,
+        saves: s.saves,
+        recordType: s.recordType,
       });
       insertedStats++;
     }

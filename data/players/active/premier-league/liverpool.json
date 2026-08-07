@@ -79,7 +79,7 @@
       "position": "RB/RM",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152654.png",
       "kitNumber": 30
@@ -90,7 +90,7 @@
       "position": "LB/LM",
       "club": "Liverpool",
       "nation": "Hungary",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/206254.png",
       "kitNumber": 6
@@ -200,7 +200,7 @@
       "position": "CDM/CM",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542.png",
       "kitNumber": 38
@@ -211,7 +211,7 @@
       "position": "CAM/CM",
       "club": "Liverpool",
       "nation": "Hungary",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1096.png",
       "kitNumber": 8
@@ -310,7 +310,7 @@
       "position": "LW/ST",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/247.png",
       "kitNumber": 18
@@ -321,7 +321,7 @@
       "position": "RW/ST",
       "club": "Liverpool",
       "nation": "Italy",
-      "tier": "ELITE",
+      "tier": "ELITE_PLUS",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30410.png",
       "kitNumber": 14

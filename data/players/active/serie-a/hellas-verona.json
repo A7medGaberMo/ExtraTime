@@ -57,7 +57,7 @@
       "position": "LB",
       "club": "Hellas Verona",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15909.png",
       "kitNumber": 3
@@ -68,7 +68,7 @@
       "position": "RB/RWB",
       "club": "Hellas Verona",
       "nation": "Algeria",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/303362.png",
       "kitNumber": 7
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Hellas Verona",
       "nation": "Luxembourg",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/70362.png",
       "kitNumber": 2
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Hellas Verona",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1090.png",
       "kitNumber": 24
@@ -310,7 +310,7 @@
       "position": "ST",
       "club": "Hellas Verona",
       "nation": "Scotland",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/126690.png",
       "kitNumber": 18

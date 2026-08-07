@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const CONVEX_URL = "https://shocking-woodpecker-506.convex.cloud";
-const BATCH_SIZE = 200;
+const BATCH_SIZE = 100;
 
 function readJsonFilesRecursively(dir) {
   let results = [];
@@ -25,15 +25,125 @@ function readJsonFilesRecursively(dir) {
   return results;
 }
 
-function collectAllStatsAndTransfers() {
-  const statsDir = path.join(__dirname, "..", "data", "stats");
-  const transfersDir = path.join(__dirname, "..", "data", "transfers");
+function parsePlayerProfile(content) {
+  const stats = [];
+  if (!content.player) return stats;
 
+  const playerName = content.player.name;
+  const apiId = content.player.apiId;
+
+  // 1. Seasonal
+  if (Array.isArray(content.seasonal)) {
+    for (const s of content.seasonal) {
+      stats.push({
+        playerName,
+        apiId,
+        season: s.season,
+        squad: s.squad,
+        competition: s.competition,
+        matchesPlayed: Number(s.mp ?? s.matchesPlayed ?? 0),
+        starts: Number(s.starts ?? 0),
+        minutesPlayed: Number(s.min ?? s.minutesPlayed ?? 0),
+        goals: Number(s.goals ?? 0),
+        assists: Number(s.assists ?? 0),
+        yellowCards: Number(s.yellowCards ?? 0),
+        redCards: Number(s.redCards ?? 0),
+        goalsPer90: s.goalsPer90 != null ? Number(s.goalsPer90) : undefined,
+        assistsPer90: s.assistsPer90 != null ? Number(s.assistsPer90) : undefined,
+        gPlusAPer90: s.gPlusAPer90 != null ? Number(s.gPlusAPer90) : undefined,
+        cleanSheets: s.cleanSheets != null ? Number(s.cleanSheets) : undefined,
+        goalsConceded: s.goalsConceded != null ? Number(s.goalsConceded) : undefined,
+        saves: s.saves != null ? Number(s.saves) : undefined,
+        recordType: "SEASONAL",
+      });
+    }
+  }
+
+  // 2. Per Club
+  if (Array.isArray(content.perClub)) {
+    for (const c of content.perClub) {
+      stats.push({
+        playerName,
+        apiId,
+        squad: c.squad,
+        competition: "All Competitions",
+        matchesPlayed: Number(c.mp ?? c.matchesPlayed ?? 0),
+        starts: Number(c.starts ?? 0),
+        minutesPlayed: Number(c.min ?? c.minutesPlayed ?? 0),
+        goals: Number(c.goals ?? 0),
+        assists: Number(c.assists ?? 0),
+        yellowCards: Number(c.yellowCards ?? 0),
+        redCards: Number(c.redCards ?? 0),
+        goalsPer90: c.goalsPer90 != null ? Number(c.goalsPer90) : undefined,
+        assistsPer90: c.assistsPer90 != null ? Number(c.assistsPer90) : undefined,
+        gPlusAPer90: c.gPlusAPer90 != null ? Number(c.gPlusAPer90) : undefined,
+        cleanSheets: c.cleanSheets != null ? Number(c.cleanSheets) : undefined,
+        goalsConceded: c.goalsConceded != null ? Number(c.goalsConceded) : undefined,
+        saves: c.saves != null ? Number(c.saves) : undefined,
+        recordType: "PER_CLUB",
+      });
+    }
+  }
+
+  // 3. Per Competition
+  if (Array.isArray(content.perCompetition)) {
+    for (const comp of content.perCompetition) {
+      stats.push({
+        playerName,
+        apiId,
+        squad: "All Clubs",
+        competition: comp.competition,
+        matchesPlayed: Number(comp.mp ?? comp.matchesPlayed ?? 0),
+        starts: Number(comp.starts ?? 0),
+        minutesPlayed: Number(comp.min ?? comp.minutesPlayed ?? 0),
+        goals: Number(comp.goals ?? 0),
+        assists: Number(comp.assists ?? 0),
+        yellowCards: Number(comp.yellowCards ?? 0),
+        redCards: Number(comp.redCards ?? 0),
+        goalsPer90: comp.goalsPer90 != null ? Number(comp.goalsPer90) : undefined,
+        assistsPer90: comp.assistsPer90 != null ? Number(comp.assistsPer90) : undefined,
+        gPlusAPer90: comp.gPlusAPer90 != null ? Number(comp.gPlusAPer90) : undefined,
+        cleanSheets: comp.cleanSheets != null ? Number(comp.cleanSheets) : undefined,
+        goalsConceded: comp.goalsConceded != null ? Number(comp.goalsConceded) : undefined,
+        saves: comp.saves != null ? Number(comp.saves) : undefined,
+        recordType: "PER_COMPETITION",
+      });
+    }
+  }
+
+  // 4. Career Total
+  if (content.careerTotal && typeof content.careerTotal === "object") {
+    const ct = content.careerTotal;
+    stats.push({
+      playerName,
+      apiId,
+      squad: ct.squad || "All Clubs",
+      competition: ct.competition || "All Competitions",
+      matchesPlayed: Number(ct.mp ?? ct.matchesPlayed ?? 0),
+      starts: Number(ct.starts ?? 0),
+      minutesPlayed: Number(ct.min ?? ct.minutesPlayed ?? 0),
+      goals: Number(ct.goals ?? 0),
+      assists: Number(ct.assists ?? 0),
+      yellowCards: Number(ct.yellowCards ?? 0),
+      redCards: Number(ct.redCards ?? 0),
+      goalsPer90: ct.goalsPer90 != null ? Number(ct.goalsPer90) : undefined,
+      assistsPer90: ct.assistsPer90 != null ? Number(ct.assistsPer90) : undefined,
+      gPlusAPer90: ct.gPlusAPer90 != null ? Number(ct.gPlusAPer90) : undefined,
+      cleanSheets: ct.cleanSheets != null ? Number(ct.cleanSheets) : undefined,
+      goalsConceded: ct.goalsConceded != null ? Number(ct.goalsConceded) : undefined,
+      saves: ct.saves != null ? Number(ct.saves) : undefined,
+      recordType: "CAREER_TOTAL",
+    });
+  }
+
+  return stats;
+}
+
+function collectAllStats() {
+  const statsDir = path.join(__dirname, "..", "data", "stats");
   const statFiles = readJsonFilesRecursively(statsDir);
-  const transferFiles = readJsonFilesRecursively(transfersDir);
 
   let allStats = [];
-  let allTransfers = [];
 
   for (const file of statFiles) {
     try {
@@ -42,26 +152,15 @@ function collectAllStatsAndTransfers() {
         allStats.push(...content);
       } else if (content.stats && Array.isArray(content.stats)) {
         allStats.push(...content.stats);
+      } else if (content.player) {
+        allStats.push(...parsePlayerProfile(content));
       }
     } catch (e) {
       console.error(`Error reading stat file ${file}:`, e.message);
     }
   }
 
-  for (const file of transferFiles) {
-    try {
-      const content = JSON.parse(fs.readFileSync(file, "utf8"));
-      if (Array.isArray(content)) {
-        allTransfers.push(...content);
-      } else if (content.transfers && Array.isArray(content.transfers)) {
-        allTransfers.push(...content.transfers);
-      }
-    } catch (e) {
-      console.error(`Error reading transfer file ${file}:`, e.message);
-    }
-  }
-
-  return { allStats, allTransfers };
+  return allStats;
 }
 
 async function callMutation(fnPath, args) {
@@ -99,13 +198,13 @@ async function callQuery(fnPath, args) {
 }
 
 async function main() {
-  const { allStats, allTransfers } = collectAllStatsAndTransfers();
-  console.log(`Collected ${allStats.length} career stats entries and ${allTransfers.length} transfer entries.`);
+  const allStats = collectAllStats();
+  console.log(`Collected ${allStats.length} career stats entries across all per-player JSON files.`);
 
   // Load all players from Convex to map names & apiIds to _id
   console.log("\nFetching players list from Convex for fast zero-read mapping...");
   const players = await callQuery("players/queries:getAll", {});
-  console.log(`✓ Retried ${players.length} players from Convex DB.`);
+  console.log(`✓ Retrieved ${players.length} players from Convex DB.`);
 
   const playerMap = new Map();
   for (const p of players) {
@@ -125,17 +224,7 @@ async function main() {
     }
   }
 
-  // Map transfers to playerId
-  const mappedTransfers = [];
-  for (const t of allTransfers) {
-    const key = (t.apiId || t.playerName).toLowerCase();
-    const playerId = playerMap.get(key) || playerMap.get(t.playerName.toLowerCase());
-    if (playerId) {
-      mappedTransfers.push({ ...t, playerId });
-    }
-  }
-
-  console.log(`✓ Mapped ${mappedStats.length}/${allStats.length} stats and ${mappedTransfers.length}/${allTransfers.length} transfers to Convex Player IDs.`);
+  console.log(`✓ Mapped ${mappedStats.length}/${allStats.length} stats to Convex Player IDs.`);
 
   // Clear existing careerStats in chunks
   console.log("\nClearing existing careerStats table in Convex...");
@@ -147,16 +236,6 @@ async function main() {
   }
   console.log(`  ✓ Cleared ${clearedStats} careerStats items.`);
 
-  // Clear existing playerTransfers in chunks
-  console.log("Clearing existing playerTransfers table in Convex...");
-  let clearedTransfers = 0;
-  while (true) {
-    const res = await callMutation("transfers/mutations:clearAll", {});
-    clearedTransfers += res.deleted;
-    if (!res.remaining || res.deleted === 0) break;
-  }
-  console.log(`  ✓ Cleared ${clearedTransfers} playerTransfers items.`);
-
   // Batch seed stats
   const statBatches = [];
   for (let i = 0; i < mappedStats.length; i += BATCH_SIZE) {
@@ -165,29 +244,13 @@ async function main() {
 
   console.log(`\nSeeding ${mappedStats.length} stats across ${statBatches.length} batch(es)...`);
   for (let i = 0; i < statBatches.length; i++) {
-    const result = await callMutation("seed/seedStatsAndTransfers:seedStatsAndTransfersBatch", {
+    const result = await callMutation("careerStats/mutations:insertBatch", {
       stats: statBatches[i],
-      transfers: [],
     });
-    console.log(`  ✓ Stats Batch ${i + 1}/${statBatches.length}: Inserted ${result.statsInserted}`);
+    console.log(`  ✓ Stats Batch ${i + 1}/${statBatches.length}: Inserted ${result.count}`);
   }
 
-  // Batch seed transfers
-  const transferBatches = [];
-  for (let i = 0; i < mappedTransfers.length; i += BATCH_SIZE) {
-    transferBatches.push(mappedTransfers.slice(i, i + BATCH_SIZE));
-  }
-
-  console.log(`\nSeeding ${mappedTransfers.length} transfers across ${transferBatches.length} batch(es)...`);
-  for (let i = 0; i < transferBatches.length; i++) {
-    const result = await callMutation("seed/seedStatsAndTransfers:seedStatsAndTransfersBatch", {
-      stats: [],
-      transfers: transferBatches[i],
-    });
-    console.log(`  ✓ Transfers Batch ${i + 1}/${transferBatches.length}: Inserted ${result.transfersInserted}`);
-  }
-
-  console.log(`\n✓ SUCCESS! All ${players.length} players' Career Stats & Transfer Histories are fully seeded into Convex!`);
+  console.log(`\n✓ SUCCESS! All ${mappedStats.length} Career Stats entries are fully seeded into Convex DB!`);
 }
 
 main().catch((err) => {
