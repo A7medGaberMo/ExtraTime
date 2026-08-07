@@ -1,0 +1,32 @@
+{
+  "apiId": 2282,
+  "name": "A. Christensen",
+  "clubs": [
+    {
+      "club": "Chelsea",
+      "appearances": 161,
+      "goals": 2
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 82,
+      "goals": 7
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 98,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 81,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 341,
+    "goals": 14
+  }
+}

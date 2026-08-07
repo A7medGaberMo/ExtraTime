@@ -1,0 +1,42 @@
+{
+  "apiId": 138787,
+  "name": "A. Gordon",
+  "clubs": [
+    {
+      "club": "Everton",
+      "appearances": 78,
+      "goals": 7
+    },
+    {
+      "club": "Everton U21",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 152,
+      "goals": 39
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 25,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 245,
+    "goals": 47
+  }
+}

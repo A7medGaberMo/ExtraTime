@@ -1,0 +1,42 @@
+{
+  "apiId": 6067,
+  "name": "T. Almada",
+  "clubs": [
+    {
+      "club": "Vélez Sarsfield",
+      "appearances": 74,
+      "goals": 22
+    },
+    {
+      "club": "Atlanta United",
+      "appearances": 83,
+      "goals": 26
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 26,
+      "goals": 3
+    },
+    {
+      "club": "Lyon",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 40,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 21,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 243,
+    "goals": 57
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 162123,
+  "name": "I. Moriba",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 22,
+      "goals": 2
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Valencia",
+      "appearances": 46,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Celta Vigo",
+      "appearances": 21,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Guinea",
+      "appearances": 25,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 127,
+    "goals": 4
+  }
+}

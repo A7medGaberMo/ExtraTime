@@ -1,0 +1,41 @@
+{
+  "apiId": 179955,
+  "name": "Javi Rueda",
+  "clubs": [
+    {
+      "club": "Real Madrid B",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "SS Reyes",
+      "appearances": 29,
+      "goals": 2
+    },
+    {
+      "club": "Murcia",
+      "appearances": 28,
+      "goals": 2
+    },
+    {
+      "club": "Celta B",
+      "appearances": 32,
+      "goals": 2
+    },
+    {
+      "club": "Celta",
+      "appearances": 39,
+      "goals": 4
+    },
+    {
+      "club": "Albacete",
+      "appearances": 31,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 159,
+    "goals": 14
+  }
+}

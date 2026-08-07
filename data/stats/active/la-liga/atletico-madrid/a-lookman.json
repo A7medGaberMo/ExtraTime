@@ -1,0 +1,52 @@
+{
+  "apiId": 18767,
+  "name": "A. Lookman",
+  "clubs": [
+    {
+      "club": "Charlton Athletic",
+      "appearances": 49,
+      "goals": 12
+    },
+    {
+      "club": "Everton",
+      "appearances": 48,
+      "goals": 4
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 24,
+      "goals": 5
+    },
+    {
+      "club": "Fulham",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 42,
+      "goals": 8
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 137,
+      "goals": 55
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 24,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 43,
+      "goals": 11
+    }
+  ],
+  "careerTotal": {
+    "appearances": 359,
+    "goals": 97
+  }
+}

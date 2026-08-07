@@ -1,0 +1,31 @@
+{
+  "apiId": 47427,
+  "name": "Iván Villar",
+  "clubs": [
+    {
+      "club": "Celta B",
+      "appearances": 86,
+      "goals": 0
+    },
+    {
+      "club": "Celta",
+      "appearances": 78,
+      "goals": 0
+    },
+    {
+      "club": "Levante",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Leganés",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 176,
+    "goals": 0
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "apiId": 8492,
+  "name": "A. Sørloth",
+  "clubs": [
+    {
+      "club": "Rosenborg",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Bodø/Glimt",
+      "appearances": 29,
+      "goals": 14
+    },
+    {
+      "club": "Groningen",
+      "appearances": 43,
+      "goals": 6
+    },
+    {
+      "club": "Midtjylland",
+      "appearances": 26,
+      "goals": 15
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 20,
+      "goals": 1
+    },
+    {
+      "club": "Gent",
+      "appearances": 22,
+      "goals": 5
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 49,
+      "goals": 33
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 38,
+      "goals": 6
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 90,
+      "goals": 24
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 41,
+      "goals": 26
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 107,
+      "goals": 44
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 77,
+      "goals": 26
+    }
+  ],
+  "careerTotal": {
+    "appearances": 475,
+    "goals": 175
+  }
+}

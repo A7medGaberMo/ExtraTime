@@ -1,0 +1,27 @@
+{
+  "apiId": 296667,
+  "name": "Gavi",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 166,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 32,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 169,
+    "goals": 10
+  }
+}

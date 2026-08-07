@@ -1,0 +1,61 @@
+{
+  "apiId": 47249,
+  "name": "L. Cabrera",
+  "clubs": [
+    {
+      "club": "Defensor",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Recreativo",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Numancia",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Hércules",
+      "appearances": 40,
+      "goals": 1
+    },
+    {
+      "club": "Real Madrid B",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Zaragoza",
+      "appearances": 113,
+      "goals": 5
+    },
+    {
+      "club": "Crotone",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Getafe",
+      "appearances": 66,
+      "goals": 5
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 241,
+      "goals": 10
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 561,
+    "goals": 21
+  }
+}

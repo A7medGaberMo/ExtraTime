@@ -1,0 +1,37 @@
+{
+  "apiId": 931,
+  "name": "Ferran Torres",
+  "clubs": [
+    {
+      "club": "Valencia Mestalla",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Valencia",
+      "appearances": 97,
+      "goals": 9
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 43,
+      "goals": 16
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 207,
+      "goals": 65
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 65,
+      "goals": 25
+    }
+  ],
+  "careerTotal": {
+    "appearances": 359,
+    "goals": 91
+  }
+}
