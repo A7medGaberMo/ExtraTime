@@ -1,0 +1,46 @@
+{
+  "apiId": 84086,
+  "name": "Robert Navarro",
+  "clubs": [
+    {
+      "club": "Monaco II",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Monaco",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Real Sociedad B",
+      "appearances": 66,
+      "goals": 14
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 34,
+      "goals": 6
+    },
+    {
+      "club": "Cádiz",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 41,
+      "goals": 8
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 208,
+    "goals": 30
+  }
+}

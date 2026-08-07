@@ -1,0 +1,42 @@
+{
+  "apiId": 47301,
+  "name": "Robin Le Normand",
+  "clubs": [
+    {
+      "club": "Brest II",
+      "appearances": 39,
+      "goals": 2
+    },
+    {
+      "club": "Brest",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Real Sociedad B",
+      "appearances": 82,
+      "goals": 4
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 221,
+      "goals": 6
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 86,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 27,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 429,
+    "goals": 16
+  }
+}

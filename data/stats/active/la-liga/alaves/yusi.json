@@ -1,0 +1,21 @@
+{
+  "apiId": 361384,
+  "name": "Yusi",
+  "clubs": [
+    {
+      "club": "Real Madrid C",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 35,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 35,
+    "goals": 1
+  }
+}

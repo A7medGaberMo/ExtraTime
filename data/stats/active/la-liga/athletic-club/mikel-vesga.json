@@ -1,0 +1,31 @@
+{
+  "apiId": 47418,
+  "name": "Mikel Vesga",
+  "clubs": [
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 79,
+      "goals": 4
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 275,
+      "goals": 10
+    },
+    {
+      "club": "Sporting Gijón",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Leganés",
+      "appearances": 28,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 399,
+    "goals": 16
+  }
+}

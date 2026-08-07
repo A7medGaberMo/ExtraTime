@@ -1,0 +1,32 @@
+{
+  "apiId": 183799,
+  "name": "Nico Williams",
+  "clubs": [
+    {
+      "club": "Basconia",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Athletic Bilbao B",
+      "appearances": 26,
+      "goals": 9
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 199,
+      "goals": 37
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 36,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 229,
+    "goals": 46
+  }
+}

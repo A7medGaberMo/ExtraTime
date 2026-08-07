@@ -1,0 +1,26 @@
+{
+  "apiId": 192434,
+  "name": "Miguel Rodríguez",
+  "clubs": [
+    {
+      "club": "Celta B",
+      "appearances": 71,
+      "goals": 20
+    },
+    {
+      "club": "Celta",
+      "appearances": 32,
+      "goals": 2
+    },
+    {
+      "club": "Utrecht",
+      "appearances": 64,
+      "goals": 15
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 167,
+    "goals": 37
+  }
+}

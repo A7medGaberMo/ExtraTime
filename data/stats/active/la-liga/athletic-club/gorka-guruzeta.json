@@ -1,0 +1,36 @@
+{
+  "apiId": 47291,
+  "name": "Gorka Guruzeta",
+  "clubs": [
+    {
+      "club": "Basconia",
+      "appearances": 47,
+      "goals": 16
+    },
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 95,
+      "goals": 31
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 181,
+      "goals": 47
+    },
+    {
+      "club": "Sabadell",
+      "appearances": 40,
+      "goals": 3
+    },
+    {
+      "club": "Amorebieta",
+      "appearances": 38,
+      "goals": 13
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 401,
+    "goals": 110
+  }
+}

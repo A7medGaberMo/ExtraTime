@@ -1,0 +1,32 @@
+{
+  "apiId": 133185,
+  "name": "J. Cardoso",
+  "clubs": [
+    {
+      "club": "Internacional",
+      "appearances": 144,
+      "goals": 7
+    },
+    {
+      "club": "Betis",
+      "appearances": 65,
+      "goals": 5
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 30,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 23,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 239,
+    "goals": 13
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 30510,
+  "name": "Álex Berenguer",
+  "clubs": [
+    {
+      "club": "Osasuna B",
+      "appearances": 53,
+      "goals": 3
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 84,
+      "goals": 5
+    },
+    {
+      "club": "Torino",
+      "appearances": 97,
+      "goals": 10
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 262,
+      "goals": 36
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 496,
+    "goals": 54
+  }
+}

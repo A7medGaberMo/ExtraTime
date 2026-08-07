@@ -1,0 +1,36 @@
+{
+  "apiId": 313025,
+  "name": "Hugo Rincón",
+  "clubs": [
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 61,
+      "goals": 3
+    },
+    {
+      "club": "Basconia",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Mirandés",
+      "appearances": 44,
+      "goals": 3
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Girona",
+      "appearances": 35,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 173,
+    "goals": 8
+  }
+}

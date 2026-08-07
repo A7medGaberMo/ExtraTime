@@ -1,0 +1,27 @@
+{
+  "apiId": 336594,
+  "name": "Pablo Barrios",
+  "clubs": [
+    {
+      "club": "Atlético Madrid B",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 140,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 152,
+    "goals": 8
+  }
+}

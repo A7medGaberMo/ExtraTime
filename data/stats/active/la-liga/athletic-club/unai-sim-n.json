@@ -1,0 +1,32 @@
+{
+  "apiId": 47270,
+  "name": "Unai Simón",
+  "clubs": [
+    {
+      "club": "Basconia",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 60,
+      "goals": 0
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 264,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 66,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 360,
+    "goals": 0
+  }
+}

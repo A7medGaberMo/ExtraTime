@@ -1,0 +1,57 @@
+{
+  "apiId": 29,
+  "name": "J. Oblak",
+  "clubs": [
+    {
+      "club": "Olimpija Ljubljana",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Benfica",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Beira-Mar",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Olhanense",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "União de Leiria",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Rio Ave",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Benfica B",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 538,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovenia",
+      "appearances": 84,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 650,
+    "goals": 0
+  }
+}

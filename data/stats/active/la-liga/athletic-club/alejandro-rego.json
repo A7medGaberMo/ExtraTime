@@ -1,0 +1,26 @@
+{
+  "apiId": 332309,
+  "name": "Alejandro Rego",
+  "clubs": [
+    {
+      "club": "Basconia",
+      "appearances": 36,
+      "goals": 3
+    },
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 86,
+      "goals": 5
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 38,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 160,
+    "goals": 9
+  }
+}

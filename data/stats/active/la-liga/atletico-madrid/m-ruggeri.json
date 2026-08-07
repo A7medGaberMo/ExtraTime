@@ -1,0 +1,26 @@
+{
+  "apiId": 162012,
+  "name": "M. Ruggeri",
+  "clubs": [
+    {
+      "club": "Atalanta",
+      "appearances": 109,
+      "goals": 2
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 47,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 171,
+    "goals": 2
+  }
+}

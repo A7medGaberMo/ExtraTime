@@ -1,0 +1,36 @@
+{
+  "apiId": 303378,
+  "name": "Javi Serrano",
+  "clubs": [
+    {
+      "club": "Atlético Madrid B",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Mirandés",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Ibiza",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Sturm Graz",
+      "appearances": 17,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 79,
+    "goals": 0
+  }
+}

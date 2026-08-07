@@ -1,0 +1,26 @@
+{
+  "apiId": 341371,
+  "name": "Rodrigo Mendoza",
+  "clubs": [
+    {
+      "club": "Elche B",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Elche",
+      "appearances": 71,
+      "goals": 6
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 103,
+    "goals": 7
+  }
+}
