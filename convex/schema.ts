@@ -6,7 +6,7 @@ import { roomsTable } from "./rooms/schema";
 import { auctionsTable } from "./auctions/schema";
 import { matchesTable } from "./matches/schema";
 import { guestsTable } from "./guests/schema";
-import { careerStatsTable } from "./careerStats/schema";
+
 import { playerTransfersTable } from "./transfers/schema";
 
 export default defineSchema({
@@ -17,6 +17,6 @@ export default defineSchema({
   auctions: auctionsTable,
   matches: matchesTable,
   guestUsers: guestsTable,
-  careerStats: careerStatsTable,
+
   playerTransfers: playerTransfersTable,
 });
