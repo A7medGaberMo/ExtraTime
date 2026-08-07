@@ -1,0 +1,42 @@
+{
+  "apiId": 328107,
+  "name": "L. Koumas",
+  "clubs": [
+    {
+      "club": "Liverpool U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "club": "Stoke City",
+      "appearances": 49,
+      "goals": 6
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Hull City",
+      "appearances": 19,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Wales",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 98,
+    "goals": 11
+  }
+}

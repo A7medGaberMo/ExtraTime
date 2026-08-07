@@ -1,0 +1,42 @@
+{
+  "apiId": 162714,
+  "name": "A. Onana",
+  "clubs": [
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 26,
+      "goals": 3
+    },
+    {
+      "club": "Lille",
+      "appearances": 43,
+      "goals": 3
+    },
+    {
+      "club": "Everton",
+      "appearances": 72,
+      "goals": 4
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 72,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 33,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 214,
+    "goals": 17
+  }
+}

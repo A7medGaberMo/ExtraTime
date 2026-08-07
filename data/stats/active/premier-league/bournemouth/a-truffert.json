@@ -1,0 +1,32 @@
+{
+  "apiId": 162267,
+  "name": "A. Truffert",
+  "clubs": [
+    {
+      "club": "Rennes B",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Rennes",
+      "appearances": 191,
+      "goals": 9
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 39,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 245,
+    "goals": 10
+  }
+}

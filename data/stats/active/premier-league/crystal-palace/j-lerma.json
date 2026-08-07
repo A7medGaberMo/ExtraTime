@@ -1,0 +1,37 @@
+{
+  "apiId": 2490,
+  "name": "J. Lerma",
+  "clubs": [
+    {
+      "club": "Atlético Huila",
+      "appearances": 93,
+      "goals": 7
+    },
+    {
+      "club": "Levante",
+      "appearances": 93,
+      "goals": 3
+    },
+    {
+      "club": "AFC Bournemouth",
+      "appearances": 184,
+      "goals": 12
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 121,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia",
+      "appearances": 69,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 491,
+    "goals": 23
+  }
+}

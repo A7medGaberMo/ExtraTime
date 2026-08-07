@@ -1,0 +1,36 @@
+{
+  "apiId": 284444,
+  "name": "Junior Robinson",
+  "clubs": [
+    {
+      "club": "West Ham United U21",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Sutton United",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Livingston",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Boreham Wood",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 14,
+    "goals": 1
+  }
+}

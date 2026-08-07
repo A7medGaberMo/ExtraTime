@@ -1,0 +1,37 @@
+{
+  "apiId": 606814,
+  "name": "T. Ndiaye",
+  "clubs": [
+    {
+      "club": "Sheffield United",
+      "appearances": 88,
+      "goals": 22
+    },
+    {
+      "club": "Hyde United",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Marseille",
+      "appearances": 46,
+      "goals": 4
+    },
+    {
+      "club": "Everton",
+      "appearances": 71,
+      "goals": 17
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 44,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 214,
+    "goals": 44
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "apiId": 557460,
+  "name": "T. Fletcher",
+  "clubs": [
+    {
+      "club": "Manchester United U21",
+      "appearances": 4,
+      "goals": 3
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 7,
+    "goals": 3
+  }
+}

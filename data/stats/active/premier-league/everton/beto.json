@@ -1,0 +1,37 @@
+{
+  "apiId": 125743,
+  "name": "Beto",
+  "clubs": [
+    {
+      "club": "Olímpico Montijo",
+      "appearances": 36,
+      "goals": 21
+    },
+    {
+      "club": "Portimonense",
+      "appearances": 47,
+      "goals": 13
+    },
+    {
+      "club": "Udinese",
+      "appearances": 65,
+      "goals": 22
+    },
+    {
+      "club": "Everton",
+      "appearances": 111,
+      "goals": 25
+    }
+  ],
+  "national": [
+    {
+      "team": "Guinea-Bissau",
+      "appearances": 10,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 259,
+    "goals": 81
+  }
+}

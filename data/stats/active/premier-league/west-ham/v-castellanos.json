@@ -1,0 +1,37 @@
+{
+  "apiId": 50856,
+  "name": "V. Castellanos",
+  "clubs": [
+    {
+      "club": "Atlético Madrid",
+      "appearances": 71,
+      "goals": 26
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 36,
+      "goals": 5
+    },
+    {
+      "club": "Bay FC",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "Portland Thorns FC",
+      "appearances": 27,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Venezuela",
+      "appearances": 38,
+      "goals": 22
+    }
+  ],
+  "careerTotal": {
+    "appearances": 155,
+    "goals": 35
+  }
+}

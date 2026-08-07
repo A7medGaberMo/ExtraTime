@@ -1,0 +1,32 @@
+{
+  "apiId": 47438,
+  "name": "M. Jensen",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 66,
+      "goals": 15
+    },
+    {
+      "club": "Celta Vigo",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Brentford",
+      "appearances": 275,
+      "goals": 17
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 32,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 347,
+    "goals": 32
+  }
+}

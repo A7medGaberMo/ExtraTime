@@ -1,0 +1,52 @@
+{
+  "apiId": 7029,
+  "name": "J. Gauci",
+  "clubs": [
+    {
+      "club": "Central Coast Mariners",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Melbourne City",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Adelaide United",
+      "appearances": 76,
+      "goals": 0
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Barnsley",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Port Vale",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Lincoln City",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Australia",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 126,
+    "goals": 0
+  }
+}

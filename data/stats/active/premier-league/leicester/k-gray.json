@@ -1,0 +1,82 @@
+{
+  "apiId": 557468,
+  "name": "K. Gray",
+  "clubs": [
+    {
+      "club": "Shrewsbury Town",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "AFC Telford United",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Hinckley United",
+      "appearances": 85,
+      "goals": 37
+    },
+    {
+      "club": "Luton Town",
+      "appearances": 111,
+      "goals": 57
+    },
+    {
+      "club": "Brentford",
+      "appearances": 52,
+      "goals": 20
+    },
+    {
+      "club": "Burnley",
+      "appearances": 78,
+      "goals": 33
+    },
+    {
+      "club": "Watford",
+      "appearances": 125,
+      "goals": 21
+    },
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 30,
+      "goals": 10
+    },
+    {
+      "club": "Aris",
+      "appearances": 39,
+      "goals": 13
+    },
+    {
+      "club": "Al-Riyadh",
+      "appearances": 27,
+      "goals": 7
+    },
+    {
+      "club": "Plymouth Argyle",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "club": "Fatih Karagümrük",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Port Vale",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Jamaica",
+      "appearances": 13,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 613,
+    "goals": 207
+  }
+}

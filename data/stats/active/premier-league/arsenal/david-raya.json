@@ -1,0 +1,42 @@
+{
+  "apiId": 19465,
+  "name": "David Raya",
+  "clubs": [
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 108,
+      "goals": 0
+    },
+    {
+      "club": "Blackburn Rovers U23",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Southport",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Brentford",
+      "appearances": 161,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 147,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 443,
+    "goals": 0
+  }
+}

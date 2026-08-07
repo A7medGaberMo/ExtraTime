@@ -1,0 +1,47 @@
+{
+  "apiId": 26303,
+  "name": "B. Sosa",
+  "clubs": [
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Dinamo Zagreb II",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 115,
+      "goals": 5
+    },
+    {
+      "club": "Ajax",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Torino",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 26,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 230,
+    "goals": 5
+  }
+}

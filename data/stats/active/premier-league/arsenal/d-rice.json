@@ -1,0 +1,37 @@
+{
+  "apiId": 2937,
+  "name": "D. Rice",
+  "clubs": [
+    {
+      "club": "West Ham United U23",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 245,
+      "goals": 15
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 158,
+      "goals": 21
+    }
+  ],
+  "national": [
+    {
+      "team": "Republic of Ireland",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "England",
+      "appearances": 80,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 406,
+    "goals": 36
+  }
+}

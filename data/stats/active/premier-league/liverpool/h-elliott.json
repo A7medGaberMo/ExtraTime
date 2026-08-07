@@ -1,0 +1,41 @@
+{
+  "apiId": 19035,
+  "name": "H. Elliott",
+  "clubs": [
+    {
+      "club": "Fulham U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Fulham",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool U21",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 149,
+      "goals": 15
+    },
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 42,
+      "goals": 7
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 205,
+    "goals": 24
+  }
+}

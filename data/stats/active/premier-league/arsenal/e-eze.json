@@ -1,0 +1,37 @@
+{
+  "apiId": 19586,
+  "name": "E. Eze",
+  "clubs": [
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 112,
+      "goals": 20
+    },
+    {
+      "club": "Wycombe Wanderers",
+      "appearances": 22,
+      "goals": 5
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 169,
+      "goals": 40
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 52,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 22,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 355,
+    "goals": 75
+  }
+}

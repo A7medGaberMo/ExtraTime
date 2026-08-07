@@ -1,0 +1,37 @@
+{
+  "apiId": 5996,
+  "name": "E. Fernández",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 51,
+      "goals": 12
+    },
+    {
+      "club": "Defensa y Justicia",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Benfica",
+      "appearances": 29,
+      "goals": 4
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 169,
+      "goals": 31
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 49,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 282,
+    "goals": 48
+  }
+}

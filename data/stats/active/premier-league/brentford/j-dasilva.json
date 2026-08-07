@@ -1,0 +1,21 @@
+{
+  "apiId": 19362,
+  "name": "J. Dasilva",
+  "clubs": [
+    {
+      "club": "Arsenal",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Brentford",
+      "appearances": 159,
+      "goals": 22
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 162,
+    "goals": 22
+  }
+}

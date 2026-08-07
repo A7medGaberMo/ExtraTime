@@ -1,0 +1,27 @@
+{
+  "apiId": 313245,
+  "name": "M. Lewis-Skelly",
+  "clubs": [
+    {
+      "club": "Arsenal U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 75,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 79,
+    "goals": 1
+  }
+}

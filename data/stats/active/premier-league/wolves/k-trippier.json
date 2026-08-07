@@ -1,0 +1,52 @@
+{
+  "apiId": 169,
+  "name": "K. Trippier",
+  "clubs": [
+    {
+      "club": "Manchester City",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Barnsley",
+      "appearances": 44,
+      "goals": 2
+    },
+    {
+      "club": "Burnley",
+      "appearances": 185,
+      "goals": 7
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 114,
+      "goals": 2
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 86,
+      "goals": 0
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 160,
+      "goals": 4
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 54,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 589,
+    "goals": 15
+  }
+}

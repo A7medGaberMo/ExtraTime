@@ -1,0 +1,47 @@
+{
+  "apiId": 2919,
+  "name": "M. Sels",
+  "clubs": [
+    {
+      "club": "Lierse",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Gent",
+      "appearances": 116,
+      "goals": 0
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 176,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 96,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 470,
+    "goals": 0
+  }
+}

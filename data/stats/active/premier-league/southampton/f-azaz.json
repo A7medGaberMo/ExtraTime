@@ -1,0 +1,46 @@
+{
+  "apiId": 231039,
+  "name": "F. Azaz",
+  "clubs": [
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Cheltenham Town",
+      "appearances": 44,
+      "goals": 3
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Newport County",
+      "appearances": 45,
+      "goals": 7
+    },
+    {
+      "club": "Plymouth Argyle",
+      "appearances": 67,
+      "goals": 15
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 68,
+      "goals": 17
+    },
+    {
+      "club": "Southampton",
+      "appearances": 47,
+      "goals": 11
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 271,
+    "goals": 53
+  }
+}

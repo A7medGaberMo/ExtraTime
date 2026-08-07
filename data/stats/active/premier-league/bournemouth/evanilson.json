@@ -1,0 +1,47 @@
+{
+  "apiId": 152856,
+  "name": "Evanilson",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 26,
+      "goals": 10
+    },
+    {
+      "club": "Šamorín",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "club": "Tombense",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Porto B",
+      "appearances": 5,
+      "goals": 6
+    },
+    {
+      "club": "Porto",
+      "appearances": 154,
+      "goals": 60
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 72,
+      "goals": 18
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 263,
+    "goals": 97
+  }
+}

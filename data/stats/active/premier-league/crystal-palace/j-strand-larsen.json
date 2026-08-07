@@ -1,0 +1,42 @@
+{
+  "apiId": 2032,
+  "name": "J. Strand Larsen",
+  "clubs": [
+    {
+      "club": "Sarpsborg 08",
+      "appearances": 59,
+      "goals": 10
+    },
+    {
+      "club": "Groningen",
+      "appearances": 71,
+      "goals": 27
+    },
+    {
+      "club": "Celta",
+      "appearances": 74,
+      "goals": 18
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 64,
+      "goals": 20
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 22,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 30,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 290,
+    "goals": 79
+  }
+}

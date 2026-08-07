@@ -1,0 +1,31 @@
+{
+  "apiId": 38734,
+  "name": "S. Botman",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 28,
+      "goals": 2
+    },
+    {
+      "club": "Heerenveen",
+      "appearances": 30,
+      "goals": 2
+    },
+    {
+      "club": "Lille",
+      "appearances": 79,
+      "goals": 3
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 114,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 251,
+    "goals": 11
+  }
+}

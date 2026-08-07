@@ -1,0 +1,26 @@
+{
+  "apiId": 557410,
+  "name": "W. Tamen",
+  "clubs": [
+    {
+      "club": "Burton Albion",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Mickleover",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Everton",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 15,
+    "goals": 0
+  }
+}

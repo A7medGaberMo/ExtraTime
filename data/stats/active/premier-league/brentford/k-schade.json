@@ -1,0 +1,32 @@
+{
+  "apiId": 178077,
+  "name": "K. Schade",
+  "clubs": [
+    {
+      "club": "SC Freiburg II",
+      "appearances": 32,
+      "goals": 11
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 36,
+      "goals": 6
+    },
+    {
+      "club": "Brentford",
+      "appearances": 113,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 181,
+    "goals": 39
+  }
+}

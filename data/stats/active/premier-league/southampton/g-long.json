@@ -1,0 +1,47 @@
+{
+  "apiId": 19406,
+  "name": "G. Long",
+  "clubs": [
+    {
+      "club": "Cork City",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Reading",
+      "appearances": 235,
+      "goals": 56
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 87,
+      "goals": 22
+    },
+    {
+      "club": "Hull City",
+      "appearances": 17,
+      "goals": 4
+    },
+    {
+      "club": "Southampton",
+      "appearances": 245,
+      "goals": 37
+    },
+    {
+      "club": "AFC Bournemouth",
+      "appearances": 12,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Republic of Ireland",
+      "appearances": 88,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 598,
+    "goals": 121
+  }
+}

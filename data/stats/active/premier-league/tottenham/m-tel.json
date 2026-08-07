@@ -1,0 +1,31 @@
+{
+  "apiId": 270510,
+  "name": "M. Tel",
+  "clubs": [
+    {
+      "club": "Rennes B",
+      "appearances": 6,
+      "goals": 6
+    },
+    {
+      "club": "Rennes",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 83,
+      "goals": 16
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 58,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 157,
+    "goals": 29
+  }
+}

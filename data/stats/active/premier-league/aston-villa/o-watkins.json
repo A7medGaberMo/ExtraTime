@@ -1,0 +1,37 @@
+{
+  "apiId": 19366,
+  "name": "O. Watkins",
+  "clubs": [
+    {
+      "club": "Exeter City",
+      "appearances": 78,
+      "goals": 26
+    },
+    {
+      "club": "Weston-super-Mare",
+      "appearances": 25,
+      "goals": 10
+    },
+    {
+      "club": "Brentford",
+      "appearances": 143,
+      "goals": 49
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 278,
+      "goals": 108
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 24,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 524,
+    "goals": 193
+  }
+}

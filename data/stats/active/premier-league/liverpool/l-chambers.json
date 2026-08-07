@@ -1,0 +1,36 @@
+{
+  "apiId": 284366,
+  "name": "L. Chambers",
+  "clubs": [
+    {
+      "club": "Liverpool U21",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Kilmarnock",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Wigan Athletic",
+      "appearances": 31,
+      "goals": 2
+    },
+    {
+      "club": "Charlton Athletic",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 74,
+    "goals": 2
+  }
+}

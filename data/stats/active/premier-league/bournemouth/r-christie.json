@@ -1,0 +1,56 @@
+{
+  "apiId": 1125,
+  "name": "R. Christie",
+  "clubs": [
+    {
+      "club": "Hamworthy United",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Brockenhurst",
+      "appearances": 47,
+      "goals": 19
+    },
+    {
+      "club": "Wycombe Wanderers",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Hungerford Town",
+      "appearances": 18,
+      "goals": 3
+    },
+    {
+      "club": "Slough Town",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Banbury United",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Braintree Town",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Weymouth",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Tonbridge Angels",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 124,
+    "goals": 24
+  }
+}

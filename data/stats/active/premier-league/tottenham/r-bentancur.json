@@ -1,0 +1,32 @@
+{
+  "apiId": 863,
+  "name": "R. Bentancur",
+  "clubs": [
+    {
+      "club": "Boca Juniors",
+      "appearances": 66,
+      "goals": 1
+    },
+    {
+      "club": "Juventus",
+      "appearances": 181,
+      "goals": 3
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 147,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay",
+      "appearances": 77,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 394,
+    "goals": 14
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "apiId": 436443,
+  "name": "J. Kusi-Asare",
+  "clubs": [
+    {
+      "club": "AIK",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich II",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Fulham",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Fulham U21",
+      "appearances": 6,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 35,
+    "goals": 7
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiId": 631,
+  "name": "P. Foden",
+  "clubs": [
+    {
+      "club": "Manchester City",
+      "appearances": 369,
+      "goals": 110
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 49,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 369,
+    "goals": 110
+  }
+}

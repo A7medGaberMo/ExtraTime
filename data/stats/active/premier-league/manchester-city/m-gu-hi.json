@@ -1,0 +1,42 @@
+{
+  "apiId": 67971,
+  "name": "M. Guéhi",
+  "clubs": [
+    {
+      "club": "Chelsea U23",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Swansea City",
+      "appearances": 59,
+      "goals": 0
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 188,
+      "goals": 11
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 20,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 37,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 276,
+    "goals": 13
+  }
+}

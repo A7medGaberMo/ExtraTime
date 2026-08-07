@@ -1,0 +1,57 @@
+{
+  "apiId": 8794,
+  "name": "G. Hirst",
+  "clubs": [
+    {
+      "club": "Sheffield Wednesday",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "OH Leuven",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Leicester City U23",
+      "appearances": 7,
+      "goals": 4
+    },
+    {
+      "club": "Rotherham United",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Portsmouth",
+      "appearances": 46,
+      "goals": 15
+    },
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 125,
+      "goals": 30
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 10,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 248,
+    "goals": 52
+  }
+}

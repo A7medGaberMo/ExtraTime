@@ -1,0 +1,32 @@
+{
+  "apiId": 19298,
+  "name": "M. Cash",
+  "clubs": [
+    {
+      "club": "Nottingham Forest",
+      "appearances": 141,
+      "goals": 13
+    },
+    {
+      "club": "Dagenham & Redbridge",
+      "appearances": 12,
+      "goals": 3
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 229,
+      "goals": 13
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland",
+      "appearances": 25,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 382,
+    "goals": 29
+  }
+}

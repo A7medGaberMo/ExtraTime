@@ -1,0 +1,36 @@
+{
+  "apiId": 30427,
+  "name": "C. Okoli",
+  "clubs": [
+    {
+      "club": "Atalanta",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "SPAL",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Cremonese",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Frosinone",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 54,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 155,
+    "goals": 3
+  }
+}

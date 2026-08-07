@@ -1,0 +1,32 @@
+{
+  "apiId": 30410,
+  "name": "F. Chiesa",
+  "clubs": [
+    {
+      "club": "Fiorentina",
+      "appearances": 153,
+      "goals": 34
+    },
+    {
+      "club": "Juventus",
+      "appearances": 131,
+      "goals": 32
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 50,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 51,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 334,
+    "goals": 71
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 51494,
+  "name": "M. Ugarte",
+  "clubs": [
+    {
+      "club": "Fénix",
+      "appearances": 57,
+      "goals": 2
+    },
+    {
+      "club": "Famalicão",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 85,
+      "goals": 1
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 69,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay",
+      "appearances": 39,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 269,
+    "goals": 6
+  }
+}

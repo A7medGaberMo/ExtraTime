@@ -1,0 +1,32 @@
+{
+  "apiId": 1455,
+  "name": "A. Iwobi",
+  "clubs": [
+    {
+      "club": "Arsenal",
+      "appearances": 149,
+      "goals": 15
+    },
+    {
+      "club": "Everton",
+      "appearances": 140,
+      "goals": 9
+    },
+    {
+      "club": "Fulham",
+      "appearances": 110,
+      "goals": 19
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 99,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 399,
+    "goals": 43
+  }
+}

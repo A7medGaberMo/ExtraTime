@@ -1,0 +1,32 @@
+{
+  "apiId": 138417,
+  "name": "N. Patterson",
+  "clubs": [
+    {
+      "club": "Rangers",
+      "appearances": 27,
+      "goals": 2
+    },
+    {
+      "club": "Rangers B",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Everton",
+      "appearances": 67,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 29,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 100,
+    "goals": 2
+  }
+}

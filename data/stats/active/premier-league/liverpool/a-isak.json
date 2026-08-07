@@ -1,0 +1,52 @@
+{
+  "apiId": 2864,
+  "name": "A. Isak",
+  "clubs": [
+    {
+      "club": "AIK",
+      "appearances": 29,
+      "goals": 13
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 12,
+      "goals": 5
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Willem II",
+      "appearances": 18,
+      "goals": 14
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 132,
+      "goals": 44
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 109,
+      "goals": 62
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 22,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 62,
+      "goals": 18
+    }
+  ],
+  "careerTotal": {
+    "appearances": 335,
+    "goals": 143
+  }
+}

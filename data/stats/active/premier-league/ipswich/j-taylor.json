@@ -1,0 +1,31 @@
+{
+  "apiId": 18397,
+  "name": "J. Taylor",
+  "clubs": [
+    {
+      "club": "Barnet",
+      "appearances": 129,
+      "goals": 16
+    },
+    {
+      "club": "Hampton & Richmond",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Peterborough United",
+      "appearances": 138,
+      "goals": 22
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 117,
+      "goals": 9
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 390,
+    "goals": 47
+  }
+}

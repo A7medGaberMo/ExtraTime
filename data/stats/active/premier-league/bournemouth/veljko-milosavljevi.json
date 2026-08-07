@@ -1,0 +1,32 @@
+{
+  "apiId": 412719,
+  "name": "Veljko Milosavljević",
+  "clubs": [
+    {
+      "club": "Red Star Belgrade",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Grafičar Beograd",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Serbia",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 43,
+    "goals": 0
+  }
+}

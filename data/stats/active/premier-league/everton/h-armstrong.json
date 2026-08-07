@@ -1,0 +1,26 @@
+{
+  "apiId": 405360,
+  "name": "H. Armstrong",
+  "clubs": [
+    {
+      "club": "Everton",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Derby County",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 17,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 50,
+    "goals": 2
+  }
+}

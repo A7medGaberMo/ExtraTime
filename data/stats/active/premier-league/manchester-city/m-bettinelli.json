@@ -1,0 +1,41 @@
+{
+  "apiId": 19012,
+  "name": "M. Bettinelli",
+  "clubs": [
+    {
+      "club": "Fulham",
+      "appearances": 120,
+      "goals": 0
+    },
+    {
+      "club": "Dartford",
+      "appearances": 42,
+      "goals": 0
+    },
+    {
+      "club": "Accrington Stanley",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 42,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 246,
+    "goals": 0
+  }
+}

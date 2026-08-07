@@ -1,0 +1,26 @@
+{
+  "apiId": 557416,
+  "name": "Z. Marsh",
+  "clubs": [
+    {
+      "club": "West Ham United",
+      "appearances": 8,
+      "goals": 3
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Wimbledon",
+      "appearances": 136,
+      "goals": 22
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 156,
+    "goals": 26
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 156477,
+  "name": "R. Cherki",
+  "clubs": [
+    {
+      "club": "Lyon B",
+      "appearances": 13,
+      "goals": 5
+    },
+    {
+      "club": "Lyon",
+      "appearances": 185,
+      "goals": 29
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 56,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 14,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 254,
+    "goals": 45
+  }
+}

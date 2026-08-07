@@ -1,0 +1,32 @@
+{
+  "apiId": 392482,
+  "name": "C. Kostoulas",
+  "clubs": [
+    {
+      "club": "Olympiacos B",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 35,
+      "goals": 7
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 26,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Greece",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 83,
+    "goals": 12
+  }
+}

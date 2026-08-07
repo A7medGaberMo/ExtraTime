@@ -1,0 +1,42 @@
+{
+  "apiId": 276184,
+  "name": "M. Sarr",
+  "clubs": [
+    {
+      "club": "Lyon B",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Lyon",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "RWD Molenbeek",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 46,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 88,
+    "goals": 1
+  }
+}

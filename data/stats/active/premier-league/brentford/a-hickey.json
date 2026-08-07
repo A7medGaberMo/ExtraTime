@@ -1,0 +1,32 @@
+{
+  "apiId": 44871,
+  "name": "A. Hickey",
+  "clubs": [
+    {
+      "club": "Heart of Midlothian",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Bologna",
+      "appearances": 48,
+      "goals": 5
+    },
+    {
+      "club": "Brentford",
+      "appearances": 63,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 22,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 144,
+    "goals": 7
+  }
+}

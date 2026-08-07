@@ -1,0 +1,31 @@
+{
+  "apiId": 180,
+  "name": "O. Skipp",
+  "clubs": [
+    {
+      "club": "Tottenham Hotspur U23",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 106,
+      "goals": 1
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 47,
+      "goals": 1
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 65,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 221,
+    "goals": 4
+  }
+}

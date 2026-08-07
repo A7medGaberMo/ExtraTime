@@ -1,0 +1,37 @@
+{
+  "apiId": 20589,
+  "name": "B. Mbeumo",
+  "clubs": [
+    {
+      "club": "Troyes II",
+      "appearances": 33,
+      "goals": 14
+    },
+    {
+      "club": "Troyes",
+      "appearances": 46,
+      "goals": 12
+    },
+    {
+      "club": "Brentford",
+      "appearances": 242,
+      "goals": 70
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 34,
+      "goals": 12
+    }
+  ],
+  "national": [
+    {
+      "team": "Cameroon",
+      "appearances": 32,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 355,
+    "goals": 108
+  }
+}

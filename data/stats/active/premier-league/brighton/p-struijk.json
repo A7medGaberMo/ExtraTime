@@ -1,0 +1,21 @@
+{
+  "apiId": 64003,
+  "name": "P. Struijk",
+  "clubs": [
+    {
+      "club": "Leeds United",
+      "appearances": 196,
+      "goals": 14
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 196,
+    "goals": 14
+  }
+}

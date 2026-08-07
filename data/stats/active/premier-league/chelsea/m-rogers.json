@@ -1,0 +1,62 @@
+{
+  "apiId": 19170,
+  "name": "M. Rogers",
+  "clubs": [
+    {
+      "club": "West Bromwich Albion U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City U21",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Lincoln City",
+      "appearances": 28,
+      "goals": 6
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Blackpool",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 33,
+      "goals": 7
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 125,
+      "goals": 31
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 22,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 232,
+    "goals": 47
+  }
+}

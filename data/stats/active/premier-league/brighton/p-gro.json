@@ -1,0 +1,57 @@
+{
+  "apiId": 18970,
+  "name": "P. Groß",
+  "clubs": [
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 17,
+      "goals": 4
+    },
+    {
+      "club": "Karlsruher SC II",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Karlsruher SC",
+      "appearances": 28,
+      "goals": 4
+    },
+    {
+      "club": "FC Ingolstadt",
+      "appearances": 165,
+      "goals": 17
+    },
+    {
+      "club": "FC Ingolstadt II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 282,
+      "goals": 33
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 65,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 19,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 575,
+    "goals": 60
+  }
+}

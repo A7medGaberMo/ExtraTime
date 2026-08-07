@@ -1,0 +1,77 @@
+{
+  "apiId": 82855,
+  "name": "T. King",
+  "clubs": [
+    {
+      "club": "Manchester United",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Mönchengladbach II",
+      "appearances": 4,
+      "goals": 2
+    },
+    {
+      "club": "Hull City",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 74,
+      "goals": 8
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 184,
+      "goals": 53
+    },
+    {
+      "club": "Everton",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Watford",
+      "appearances": 33,
+      "goals": 5
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 54,
+      "goals": 12
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 30,
+      "goals": 6
+    },
+    {
+      "club": "Al-Khaleej",
+      "appearances": 28,
+      "goals": 20
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 62,
+      "goals": 20
+    }
+  ],
+  "careerTotal": {
+    "appearances": 451,
+    "goals": 108
+  }
+}

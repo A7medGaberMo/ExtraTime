@@ -1,0 +1,36 @@
+{
+  "apiId": 284385,
+  "name": "Elijah Xavier Campbell",
+  "clubs": [
+    {
+      "club": "Everton",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Everton U23",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Fleetwood Town",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Ross County",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Port Vale",
+      "appearances": 20,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 76,
+    "goals": 1
+  }
+}

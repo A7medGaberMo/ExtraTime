@@ -1,0 +1,32 @@
+{
+  "apiId": 127769,
+  "name": "Gabriel Martinelli",
+  "clubs": [
+    {
+      "club": "Ituano",
+      "appearances": 34,
+      "goals": 10
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 278,
+      "goals": 62
+    },
+    {
+      "club": "Arsenal U21",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 27,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 313,
+    "goals": 72
+  }
+}

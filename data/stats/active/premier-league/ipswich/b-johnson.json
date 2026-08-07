@@ -1,0 +1,57 @@
+{
+  "apiId": 18823,
+  "name": "B. Johnson",
+  "clubs": [
+    {
+      "club": "Manchester United",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Bury",
+      "appearances": 115,
+      "goals": 23
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 158,
+      "goals": 62
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 165,
+      "goals": 50
+    },
+    {
+      "club": "Sheffield Wednesday",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Burnley",
+      "appearances": 8,
+      "goals": 5
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Hucknall Town",
+      "appearances": 8,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Jamaica",
+      "appearances": 4,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 465,
+    "goals": 146
+  }
+}

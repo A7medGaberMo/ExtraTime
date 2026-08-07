@@ -1,0 +1,21 @@
+{
+  "apiId": 358969,
+  "name": "K. Lamadrid",
+  "clubs": [
+    {
+      "club": "Deportivo La Guaira",
+      "appearances": 104,
+      "goals": 14
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 105,
+    "goals": 14
+  }
+}

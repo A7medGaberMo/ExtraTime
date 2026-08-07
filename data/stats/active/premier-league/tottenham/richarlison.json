@@ -1,0 +1,42 @@
+{
+  "apiId": 2413,
+  "name": "Richarlison",
+  "clubs": [
+    {
+      "club": "América Mineiro",
+      "appearances": 24,
+      "goals": 9
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 67,
+      "goals": 19
+    },
+    {
+      "club": "Watford",
+      "appearances": 41,
+      "goals": 5
+    },
+    {
+      "club": "Everton",
+      "appearances": 152,
+      "goals": 53
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 133,
+      "goals": 32
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 54,
+      "goals": 20
+    }
+  ],
+  "careerTotal": {
+    "appearances": 417,
+    "goals": 118
+  }
+}

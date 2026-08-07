@@ -1,0 +1,67 @@
+{
+  "apiId": 410423,
+  "name": "H. Foster",
+  "clubs": [
+    {
+      "club": "Stoke City",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Bristol City",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Tiverton Town",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Stafford Rangers",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Kidderminster Harriers",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Wrexham",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Watford",
+      "appearances": 207,
+      "goals": 0
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 43,
+      "goals": 0
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 223,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 548,
+    "goals": 0
+  }
+}

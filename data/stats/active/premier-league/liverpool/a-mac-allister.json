@@ -1,0 +1,37 @@
+{
+  "apiId": 6716,
+  "name": "A. Mac Allister",
+  "clubs": [
+    {
+      "club": "Argentinos Juniors",
+      "appearances": 81,
+      "goals": 12
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 112,
+      "goals": 20
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 150,
+      "goals": 19
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 54,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 363,
+    "goals": 53
+  }
+}

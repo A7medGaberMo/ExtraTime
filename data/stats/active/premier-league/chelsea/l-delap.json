@@ -1,0 +1,46 @@
+{
+  "apiId": 161948,
+  "name": "L. Delap",
+  "clubs": [
+    {
+      "club": "Manchester City U21",
+      "appearances": 4,
+      "goals": 3
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Stoke City",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Hull City",
+      "appearances": 32,
+      "goals": 8
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 40,
+      "goals": 12
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 47,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 167,
+    "goals": 31
+  }
+}

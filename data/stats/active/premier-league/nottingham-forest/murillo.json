@@ -1,0 +1,27 @@
+{
+  "apiId": 363695,
+  "name": "Murillo",
+  "clubs": [
+    {
+      "club": "Corinthians",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 113,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 140,
+    "goals": 4
+  }
+}

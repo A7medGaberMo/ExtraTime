@@ -1,0 +1,37 @@
+{
+  "apiId": 1096,
+  "name": "D. Szoboszlai",
+  "clubs": [
+    {
+      "club": "FC Liefering",
+      "appearances": 42,
+      "goals": 16
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 83,
+      "goals": 26
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 91,
+      "goals": 20
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 147,
+      "goals": 28
+    }
+  ],
+  "national": [
+    {
+      "team": "Hungary",
+      "appearances": 65,
+      "goals": 18
+    }
+  ],
+  "careerTotal": {
+    "appearances": 363,
+    "goals": 90
+  }
+}

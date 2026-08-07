@@ -1,0 +1,36 @@
+{
+  "apiId": 329640,
+  "name": "E. Jaouen",
+  "clubs": [
+    {
+      "club": "Guingamp B",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Reims B",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Rodez",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Dunkerque",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Reims",
+      "appearances": 40,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 114,
+    "goals": 0
+  }
+}

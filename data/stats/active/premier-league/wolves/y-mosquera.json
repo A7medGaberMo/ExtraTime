@@ -1,0 +1,37 @@
+{
+  "apiId": 195717,
+  "name": "Y. Mosquera",
+  "clubs": [
+    {
+      "club": "Atlético Nacional",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "FC Cincinnati",
+      "appearances": 35,
+      "goals": 3
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 18,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 116,
+    "goals": 7
+  }
+}

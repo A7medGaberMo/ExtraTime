@@ -1,0 +1,31 @@
+{
+  "apiId": 195106,
+  "name": "Rodrigo Muniz",
+  "clubs": [
+    {
+      "club": "Flamengo",
+      "appearances": 32,
+      "goals": 10
+    },
+    {
+      "club": "Coritiba",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Fulham",
+      "appearances": 122,
+      "goals": 27
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 178,
+    "goals": 40
+  }
+}

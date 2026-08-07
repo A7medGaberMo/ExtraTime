@@ -1,0 +1,36 @@
+{
+  "apiId": 147831,
+  "name": "A. Kalimuendo",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Lens",
+      "appearances": 65,
+      "goals": 21
+    },
+    {
+      "club": "Rennes",
+      "appearances": 112,
+      "goals": 40
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 19,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 215,
+    "goals": 69
+  }
+}

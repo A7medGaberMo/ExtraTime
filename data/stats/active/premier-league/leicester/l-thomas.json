@@ -1,0 +1,31 @@
+{
+  "apiId": 152969,
+  "name": "L. Thomas",
+  "clubs": [
+    {
+      "club": "Leicester City U23",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 149,
+      "goals": 3
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 180,
+    "goals": 3
+  }
+}

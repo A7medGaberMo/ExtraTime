@@ -1,0 +1,26 @@
+{
+  "apiId": 402640,
+  "name": "R. Esse",
+  "clubs": [
+    {
+      "club": "Millwall",
+      "appearances": 66,
+      "goals": 7
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Coventry City",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 101,
+    "goals": 10
+  }
+}

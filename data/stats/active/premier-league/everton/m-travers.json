@@ -1,0 +1,47 @@
+{
+  "apiId": 18860,
+  "name": "M. Travers",
+  "clubs": [
+    {
+      "club": "AFC Bournemouth",
+      "appearances": 82,
+      "goals": 0
+    },
+    {
+      "club": "Weymouth",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Swindon Town",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Stoke City",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Everton",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Republic of Ireland",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 149,
+    "goals": 1
+  }
+}

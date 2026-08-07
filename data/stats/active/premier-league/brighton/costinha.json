@@ -1,0 +1,31 @@
+{
+  "apiId": 204037,
+  "name": "Costinha",
+  "clubs": [
+    {
+      "club": "Rio Ave B",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "Rio Ave",
+      "appearances": 121,
+      "goals": 10
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 74,
+      "goals": 1
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 201,
+    "goals": 13
+  }
+}

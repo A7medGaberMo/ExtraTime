@@ -1,0 +1,32 @@
+{
+  "apiId": 430835,
+  "name": "Tyler Bindon",
+  "clubs": [
+    {
+      "club": "Reading",
+      "appearances": 91,
+      "goals": 5
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 26,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "New Zealand",
+      "appearances": 28,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 117,
+    "goals": 6
+  }
+}

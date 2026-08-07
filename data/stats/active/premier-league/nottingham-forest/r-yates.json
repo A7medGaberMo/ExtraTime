@@ -1,0 +1,36 @@
+{
+  "apiId": 19305,
+  "name": "R. Yates",
+  "clubs": [
+    {
+      "club": "Nottingham Forest",
+      "appearances": 277,
+      "goals": 24
+    },
+    {
+      "club": "Barrow",
+      "appearances": 19,
+      "goals": 2
+    },
+    {
+      "club": "Shrewsbury Town",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Notts County",
+      "appearances": 29,
+      "goals": 6
+    },
+    {
+      "club": "Scunthorpe United",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 355,
+    "goals": 34
+  }
+}

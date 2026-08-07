@@ -1,0 +1,42 @@
+{
+  "apiId": 2218,
+  "name": "I. Sarr",
+  "clubs": [
+    {
+      "club": "Metz",
+      "appearances": 33,
+      "goals": 5
+    },
+    {
+      "club": "Rennes",
+      "appearances": 77,
+      "goals": 18
+    },
+    {
+      "club": "Watford",
+      "appearances": 131,
+      "goals": 34
+    },
+    {
+      "club": "Marseille",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 92,
+      "goals": 33
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 88,
+      "goals": 23
+    }
+  ],
+  "careerTotal": {
+    "appearances": 368,
+    "goals": 94
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "apiId": 18744,
+  "name": "M. Kilman",
+  "clubs": [
+    {
+      "club": "Welling United",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Maidenhead United",
+      "appearances": 42,
+      "goals": 1
+    },
+    {
+      "club": "Marlow",
+      "appearances": 32,
+      "goals": 1
+    },
+    {
+      "club": "Wolverhampton Wanderers U21",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 151,
+      "goals": 3
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 65,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 294,
+    "goals": 5
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 247,
+  "name": "C. Gakpo",
+  "clubs": [
+    {
+      "club": "Jong PSV",
+      "appearances": 26,
+      "goals": 17
+    },
+    {
+      "club": "PSV",
+      "appearances": 159,
+      "goals": 55
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 180,
+      "goals": 50
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 54,
+      "goals": 24
+    }
+  ],
+  "careerTotal": {
+    "appearances": 365,
+    "goals": 122
+  }
+}

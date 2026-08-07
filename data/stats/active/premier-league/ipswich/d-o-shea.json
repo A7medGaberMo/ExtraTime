@@ -1,0 +1,47 @@
+{
+  "apiId": 17597,
+  "name": "D. O'Shea",
+  "clubs": [
+    {
+      "club": "West Bromwich Albion U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 107,
+      "goals": 7
+    },
+    {
+      "club": "Hereford",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Exeter City",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Burnley",
+      "appearances": 39,
+      "goals": 5
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 84,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Republic of Ireland",
+      "appearances": 45,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 274,
+    "goals": 14
+  }
+}

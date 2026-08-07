@@ -1,0 +1,42 @@
+{
+  "apiId": 2926,
+  "name": "Y. Tielemans",
+  "clubs": [
+    {
+      "club": "Anderlecht",
+      "appearances": 184,
+      "goals": 35
+    },
+    {
+      "club": "Monaco",
+      "appearances": 65,
+      "goals": 6
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 195,
+      "goals": 28
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 134,
+      "goals": 10
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 90,
+      "goals": 15
+    }
+  ],
+  "careerTotal": {
+    "appearances": 578,
+    "goals": 79
+  }
+}

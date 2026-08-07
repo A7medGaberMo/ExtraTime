@@ -1,0 +1,37 @@
+{
+  "apiId": 265820,
+  "name": "Y. Ayari",
+  "clubs": [
+    {
+      "club": "AIK",
+      "appearances": 48,
+      "goals": 6
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 75,
+      "goals": 6
+    },
+    {
+      "club": "Coventry City",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 25,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 149,
+    "goals": 13
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 284797,
+  "name": "D. Ouattara",
+  "clubs": [
+    {
+      "club": "Majestic FC",
+      "appearances": 11,
+      "goals": 5
+    },
+    {
+      "club": "Lorient B",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Lorient",
+      "appearances": 44,
+      "goals": 7
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 88,
+      "goals": 11
+    },
+    {
+      "club": "Brentford",
+      "appearances": 37,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Burkina Faso",
+      "appearances": 42,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 185,
+    "goals": 31
+  }
+}

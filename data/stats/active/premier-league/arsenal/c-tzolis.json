@@ -1,0 +1,47 @@
+{
+  "apiId": 161800,
+  "name": "C. Tzolis",
+  "clubs": [
+    {
+      "club": "PAOK",
+      "appearances": 57,
+      "goals": 17
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Twente",
+      "appearances": 15,
+      "goals": 3
+    },
+    {
+      "club": "Fortuna Düsseldorf",
+      "appearances": 35,
+      "goals": 24
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 108,
+      "goals": 43
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Greece",
+      "appearances": 34,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 245,
+    "goals": 90
+  }
+}

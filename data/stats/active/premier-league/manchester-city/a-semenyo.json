@@ -1,0 +1,47 @@
+{
+  "apiId": 19281,
+  "name": "A. Semenyo",
+  "clubs": [
+    {
+      "club": "Bristol City",
+      "appearances": 125,
+      "goals": 21
+    },
+    {
+      "club": "Bath City",
+      "appearances": 16,
+      "goals": 6
+    },
+    {
+      "club": "Newport County",
+      "appearances": 32,
+      "goals": 6
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 110,
+      "goals": 32
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 27,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Ghana",
+      "appearances": 38,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 317,
+    "goals": 76
+  }
+}

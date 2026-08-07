@@ -1,0 +1,36 @@
+{
+  "apiId": 308678,
+  "name": "Dário Essugo",
+  "clubs": [
+    {
+      "club": "Sporting CP",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP B",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Chaves",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Las Palmas",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 101,
+    "goals": 1
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 138,
+  "name": "J. Todibo",
+  "clubs": [
+    {
+      "club": "Toulouse B",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Benfica",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Nice",
+      "appearances": 136,
+      "goals": 2
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 54,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 226,
+    "goals": 3
+  }
+}

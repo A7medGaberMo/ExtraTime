@@ -1,0 +1,26 @@
+{
+  "apiId": 19192,
+  "name": "J. Ramsey",
+  "clubs": [
+    {
+      "club": "Aston Villa",
+      "appearances": 167,
+      "goals": 17
+    },
+    {
+      "club": "Doncaster Rovers",
+      "appearances": 7,
+      "goals": 3
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 43,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 217,
+    "goals": 22
+  }
+}

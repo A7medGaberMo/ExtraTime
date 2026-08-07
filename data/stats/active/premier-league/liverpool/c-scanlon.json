@@ -1,0 +1,26 @@
+{
+  "apiId": 310186,
+  "name": "C. Scanlon",
+  "clubs": [
+    {
+      "club": "Liverpool U21",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Millwall",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 8,
+    "goals": 2
+  }
+}

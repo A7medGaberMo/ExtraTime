@@ -1,0 +1,56 @@
+{
+  "apiId": 18889,
+  "name": "F. Woodman",
+  "clubs": [
+    {
+      "club": "Newcastle United",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Hartlepool United",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Crawley Town",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Kilmarnock",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Aberdeen",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Swansea City",
+      "appearances": 95,
+      "goals": 0
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 138,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 282,
+    "goals": 0
+  }
+}

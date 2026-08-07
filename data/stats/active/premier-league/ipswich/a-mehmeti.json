@@ -1,0 +1,31 @@
+{
+  "apiId": 286349,
+  "name": "A. Mehmeti",
+  "clubs": [
+    {
+      "club": "Woodford Town",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Wycombe Wanderers",
+      "appearances": 97,
+      "goals": 19
+    },
+    {
+      "club": "Bristol City",
+      "appearances": 136,
+      "goals": 26
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 19,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 266,
+    "goals": 49
+  }
+}

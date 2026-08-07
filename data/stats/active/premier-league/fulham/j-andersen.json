@@ -1,0 +1,42 @@
+{
+  "apiId": 2729,
+  "name": "J. Andersen",
+  "clubs": [
+    {
+      "club": "Twente",
+      "appearances": 50,
+      "goals": 4
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 42,
+      "goals": 0
+    },
+    {
+      "club": "Lyon",
+      "appearances": 35,
+      "goals": 2
+    },
+    {
+      "club": "Fulham",
+      "appearances": 99,
+      "goals": 2
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 112,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 51,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 338,
+    "goals": 11
+  }
+}

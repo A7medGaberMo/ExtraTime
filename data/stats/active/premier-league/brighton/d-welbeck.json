@@ -1,0 +1,52 @@
+{
+  "apiId": 1469,
+  "name": "D. Welbeck",
+  "clubs": [
+    {
+      "club": "Manchester United",
+      "appearances": 142,
+      "goals": 29
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 28,
+      "goals": 6
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 126,
+      "goals": 32
+    },
+    {
+      "club": "Watford",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 201,
+      "goals": 51
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 42,
+      "goals": 16
+    }
+  ],
+  "careerTotal": {
+    "appearances": 525,
+    "goals": 123
+  }
+}

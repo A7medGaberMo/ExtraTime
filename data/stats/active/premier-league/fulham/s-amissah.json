@@ -1,0 +1,36 @@
+{
+  "apiId": 384981,
+  "name": "S. Amissah",
+  "clubs": [
+    {
+      "club": "Sheffield United",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Guiseley",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Spennymoor Town",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Burton Albion",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Ross County",
+      "appearances": 23,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 53,
+    "goals": 0
+  }
+}

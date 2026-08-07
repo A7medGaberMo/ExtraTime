@@ -1,0 +1,42 @@
+{
+  "apiId": 1600,
+  "name": "K. Tsimikas",
+  "clubs": [
+    {
+      "club": "Olympiacos",
+      "appearances": 86,
+      "goals": 0
+    },
+    {
+      "club": "Esbjerg",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Willem II",
+      "appearances": 37,
+      "goals": 6
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 115,
+      "goals": 0
+    },
+    {
+      "club": "Roma",
+      "appearances": 25,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Greece",
+      "appearances": 51,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 276,
+    "goals": 8
+  }
+}

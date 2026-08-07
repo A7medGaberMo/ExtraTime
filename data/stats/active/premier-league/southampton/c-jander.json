@@ -1,0 +1,26 @@
+{
+  "apiId": 282060,
+  "name": "C. Jander",
+  "clubs": [
+    {
+      "club": "MSV Duisburg",
+      "appearances": 60,
+      "goals": 2
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 36,
+      "goals": 3
+    },
+    {
+      "club": "Southampton",
+      "appearances": 43,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 139,
+    "goals": 7
+  }
+}

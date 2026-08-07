@@ -1,0 +1,26 @@
+{
+  "apiId": 393193,
+  "name": "Kaye Iyowuna Furo",
+  "clubs": [
+    {
+      "club": "Club NXT",
+      "appearances": 41,
+      "goals": 8
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Brentford",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 51,
+    "goals": 9
+  }
+}

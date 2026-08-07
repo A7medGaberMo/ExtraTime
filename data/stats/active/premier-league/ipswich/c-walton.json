@@ -1,0 +1,51 @@
+{
+  "apiId": 19541,
+  "name": "C. Walton",
+  "clubs": [
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Bury",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Plymouth Argyle",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Luton Town",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Southend United",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Wigan Athletic",
+      "appearances": 69,
+      "goals": 0
+    },
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 46,
+      "goals": 0
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 135,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 306,
+    "goals": 0
+  }
+}

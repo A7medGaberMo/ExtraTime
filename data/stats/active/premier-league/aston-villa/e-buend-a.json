@@ -1,0 +1,47 @@
+{
+  "apiId": 19071,
+  "name": "E. Buendía",
+  "clubs": [
+    {
+      "club": "Getafe B",
+      "appearances": 34,
+      "goals": 7
+    },
+    {
+      "club": "Getafe",
+      "appearances": 42,
+      "goals": 3
+    },
+    {
+      "club": "Cultural Leonesa",
+      "appearances": 42,
+      "goals": 7
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 121,
+      "goals": 24
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 151,
+      "goals": 21
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 14,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 404,
+    "goals": 64
+  }
+}

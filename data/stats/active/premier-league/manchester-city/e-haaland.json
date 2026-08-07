@@ -1,0 +1,52 @@
+{
+  "apiId": 1100,
+  "name": "E. Haaland",
+  "clubs": [
+    {
+      "club": "Bryne 2",
+      "appearances": 18,
+      "goals": 18
+    },
+    {
+      "club": "Bryne",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Molde 2",
+      "appearances": 4,
+      "goals": 2
+    },
+    {
+      "club": "Molde",
+      "appearances": 50,
+      "goals": 20
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 27,
+      "goals": 29
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 89,
+      "goals": 86
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 198,
+      "goals": 162
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 55,
+      "goals": 62
+    }
+  ],
+  "careerTotal": {
+    "appearances": 402,
+    "goals": 317
+  }
+}

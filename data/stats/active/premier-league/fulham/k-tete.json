@@ -1,0 +1,42 @@
+{
+  "apiId": 657,
+  "name": "K. Tete",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 55,
+      "goals": 4
+    },
+    {
+      "club": "Ajax",
+      "appearances": 55,
+      "goals": 1
+    },
+    {
+      "club": "Lyon",
+      "appearances": 80,
+      "goals": 1
+    },
+    {
+      "club": "Lyon B",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Fulham",
+      "appearances": 144,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 14,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 336,
+    "goals": 11
+  }
+}

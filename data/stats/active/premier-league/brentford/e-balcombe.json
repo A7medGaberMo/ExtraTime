@@ -1,0 +1,61 @@
+{
+  "apiId": 19340,
+  "name": "E. Balcombe",
+  "clubs": [
+    {
+      "club": "Brentford",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Boreham Wood",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Viborg FF",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Doncaster Rovers",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Burton Albion",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Bromley",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Crawley Town",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Bristol Rovers",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "St Mirren",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Motherwell",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 114,
+    "goals": 0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 19587,
+  "name": "R. Manning",
+  "clubs": [
+    {
+      "club": "Mervue United",
+      "appearances": 30,
+      "goals": 9
+    },
+    {
+      "club": "Galway United",
+      "appearances": 26,
+      "goals": 6
+    },
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 96,
+      "goals": 9
+    },
+    {
+      "club": "Rotherham United",
+      "appearances": 18,
+      "goals": 4
+    },
+    {
+      "club": "Swansea City",
+      "appearances": 109,
+      "goals": 7
+    },
+    {
+      "club": "Southampton",
+      "appearances": 119,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Republic of Ireland",
+      "appearances": 23,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 398,
+    "goals": 43
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 195121,
+  "name": "M. Núñez",
+  "clubs": [
+    {
+      "club": "Universidad Católica",
+      "appearances": 84,
+      "goals": 12
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 119,
+      "goals": 12
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 36,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Chile",
+      "appearances": 33,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 239,
+    "goals": 27
+  }
+}

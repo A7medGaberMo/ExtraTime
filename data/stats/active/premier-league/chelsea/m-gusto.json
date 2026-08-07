@@ -1,0 +1,32 @@
+{
+  "apiId": 161907,
+  "name": "M. Gusto",
+  "clubs": [
+    {
+      "club": "Lyon II",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Lyon",
+      "appearances": 61,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 134,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 203,
+    "goals": 4
+  }
+}

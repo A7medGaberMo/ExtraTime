@@ -1,0 +1,56 @@
+{
+  "apiId": 19684,
+  "name": "R. Matthews",
+  "clubs": [
+    {
+      "club": "Norwich City",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Burton Albion",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Doncaster Rovers",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Hamilton Academical",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Plymouth Argyle",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Bolton Wanderers",
+      "appearances": 58,
+      "goals": 0
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "St Johnstone",
+      "appearances": 35,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 174,
+    "goals": 0
+  }
+}

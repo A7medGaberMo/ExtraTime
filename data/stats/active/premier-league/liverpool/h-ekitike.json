@@ -1,0 +1,47 @@
+{
+  "apiId": 174565,
+  "name": "H. Ekitike",
+  "clubs": [
+    {
+      "club": "Reims B",
+      "appearances": 15,
+      "goals": 6
+    },
+    {
+      "club": "Reims",
+      "appearances": 28,
+      "goals": 11
+    },
+    {
+      "club": "Vejle Boldklub",
+      "appearances": 11,
+      "goals": 3
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 33,
+      "goals": 4
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 64,
+      "goals": 26
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 45,
+      "goals": 17
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 8,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 196,
+    "goals": 67
+  }
+}

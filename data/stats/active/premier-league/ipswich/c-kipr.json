@@ -1,0 +1,56 @@
+{
+  "apiId": 19546,
+  "name": "C. Kipré",
+  "clubs": [
+    {
+      "club": "Leicester City",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Corby Town",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Motherwell",
+      "appearances": 52,
+      "goals": 1
+    },
+    {
+      "club": "Wigan Athletic",
+      "appearances": 77,
+      "goals": 2
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 65,
+      "goals": 3
+    },
+    {
+      "club": "Charleroi",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Cardiff City",
+      "appearances": 43,
+      "goals": 3
+    },
+    {
+      "club": "Reims",
+      "appearances": 34,
+      "goals": 2
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 35,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 313,
+    "goals": 14
+  }
+}

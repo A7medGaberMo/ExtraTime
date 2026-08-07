@@ -1,0 +1,41 @@
+{
+  "apiId": 162552,
+  "name": "D. Scarlett",
+  "clubs": [
+    {
+      "club": "Tottenham Hotspur U21",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Portsmouth",
+      "appearances": 40,
+      "goals": 6
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Oxford United",
+      "appearances": 22,
+      "goals": 4
+    },
+    {
+      "club": "Hibernian",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 115,
+    "goals": 12
+  }
+}

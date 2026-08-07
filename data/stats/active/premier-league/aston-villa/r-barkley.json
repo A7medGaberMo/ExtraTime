@@ -1,0 +1,52 @@
+{
+  "apiId": 2287,
+  "name": "R. Barkley",
+  "clubs": [
+    {
+      "club": "Everton",
+      "appearances": 179,
+      "goals": 27
+    },
+    {
+      "club": "Sheffield Wednesday",
+      "appearances": 13,
+      "goals": 4
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 100,
+      "goals": 12
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 76,
+      "goals": 10
+    },
+    {
+      "club": "Nice",
+      "appearances": 28,
+      "goals": 4
+    },
+    {
+      "club": "Luton Town",
+      "appearances": 37,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 33,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 437,
+    "goals": 62
+  }
+}

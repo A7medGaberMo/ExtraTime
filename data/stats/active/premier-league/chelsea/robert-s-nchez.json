@@ -1,0 +1,42 @@
+{
+  "apiId": 18959,
+  "name": "Robert Sánchez",
+  "clubs": [
+    {
+      "club": "Brighton & Hove Albion U21",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 90,
+      "goals": 0
+    },
+    {
+      "club": "Forest Green Rovers",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Rochdale",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 111,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 258,
+    "goals": 0
+  }
+}

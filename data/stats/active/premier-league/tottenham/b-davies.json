@@ -1,0 +1,66 @@
+{
+  "apiId": 164,
+  "name": "B. Davies",
+  "clubs": [
+    {
+      "club": "Preston North End",
+      "appearances": 145,
+      "goals": 2
+    },
+    {
+      "club": "York City",
+      "appearances": 47,
+      "goals": 0
+    },
+    {
+      "club": "Tranmere Rovers",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Southport",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Newport County",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Fleetwood Town",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Rangers",
+      "appearances": 58,
+      "goals": 1
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 44,
+      "goals": 1
+    },
+    {
+      "club": "Oxford United",
+      "appearances": 11,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 387,
+    "goals": 6
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "apiId": 288102,
+  "name": "A. Wharton",
+  "clubs": [
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 51,
+      "goals": 4
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 96,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 147,
+    "goals": 5
+  }
+}

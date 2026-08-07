@@ -1,0 +1,37 @@
+{
+  "apiId": 157997,
+  "name": "A. Diallo",
+  "clubs": [
+    {
+      "club": "Atalanta",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 97,
+      "goals": 16
+    },
+    {
+      "club": "Rangers",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 42,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 23,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 157,
+    "goals": 34
+  }
+}

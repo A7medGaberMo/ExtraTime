@@ -1,0 +1,32 @@
+{
+  "apiId": 406244,
+  "name": "J. Manzambi",
+  "clubs": [
+    {
+      "club": "SC Freiburg II",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 58,
+      "goals": 9
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland",
+      "appearances": 16,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 78,
+    "goals": 12
+  }
+}

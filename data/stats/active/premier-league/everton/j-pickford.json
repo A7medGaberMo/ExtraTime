@@ -1,0 +1,57 @@
+{
+  "apiId": 2932,
+  "name": "J. Pickford",
+  "clubs": [
+    {
+      "club": "Sunderland",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Darlington",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Alfreton Town",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Burton Albion",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Carlisle United",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Bradford City",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Everton",
+      "appearances": 358,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 91,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 514,
+    "goals": 0
+  }
+}

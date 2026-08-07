@@ -1,0 +1,26 @@
+{
+  "apiId": 380715,
+  "name": "B. Broggio",
+  "clubs": [
+    {
+      "club": "Aston Villa U21",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Falkirk",
+      "appearances": 10,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 16,
+    "goals": 4
+  }
+}

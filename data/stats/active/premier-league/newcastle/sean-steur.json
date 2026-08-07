@@ -1,0 +1,26 @@
+{
+  "apiId": 469321,
+  "name": "Sean Steur",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Ajax",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 54,
+    "goals": 2
+  }
+}

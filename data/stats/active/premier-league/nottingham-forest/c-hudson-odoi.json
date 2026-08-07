@@ -1,0 +1,42 @@
+{
+  "apiId": 2298,
+  "name": "C. Hudson-Odoi",
+  "clubs": [
+    {
+      "club": "Chelsea U23",
+      "appearances": 6,
+      "goals": 4
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 126,
+      "goals": 16
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 113,
+      "goals": 19
+    },
+    {
+      "club": "Nottingham Forest U21",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 267,
+    "goals": 40
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "apiId": 137302,
+  "name": "C. Archer",
+  "clubs": [
+    {
+      "club": "Aston Villa U-21s",
+      "appearances": 8,
+      "goals": 13
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 14,
+      "goals": 4
+    },
+    {
+      "club": "Solihull Moors",
+      "appearances": 29,
+      "goals": 6
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 20,
+      "goals": 7
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 22,
+      "goals": 11
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 32,
+      "goals": 4
+    },
+    {
+      "club": "Southampton",
+      "appearances": 76,
+      "goals": 11
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 201,
+    "goals": 56
+  }
+}

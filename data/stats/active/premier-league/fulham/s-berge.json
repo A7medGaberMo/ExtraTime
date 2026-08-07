@@ -1,0 +1,57 @@
+{
+  "apiId": 1934,
+  "name": "S. Berge",
+  "clubs": [
+    {
+      "club": "Asker 2",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Asker",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Vålerenga 2",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Vålerenga",
+      "appearances": 43,
+      "goals": 1
+    },
+    {
+      "club": "Genk",
+      "appearances": 112,
+      "goals": 6
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 109,
+      "goals": 15
+    },
+    {
+      "club": "Burnley",
+      "appearances": 40,
+      "goals": 2
+    },
+    {
+      "club": "Fulham",
+      "appearances": 75,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 71,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 414,
+    "goals": 24
+  }
+}

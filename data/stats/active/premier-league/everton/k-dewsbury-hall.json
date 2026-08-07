@@ -1,0 +1,41 @@
+{
+  "apiId": 148099,
+  "name": "K. Dewsbury-Hall",
+  "clubs": [
+    {
+      "club": "Leicester City U21",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 129,
+      "goals": 17
+    },
+    {
+      "club": "Blackpool",
+      "appearances": 10,
+      "goals": 4
+    },
+    {
+      "club": "Luton Town",
+      "appearances": 40,
+      "goals": 3
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 36,
+      "goals": 5
+    },
+    {
+      "club": "Everton",
+      "appearances": 32,
+      "goals": 8
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 258,
+    "goals": 39
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 9366,
+  "name": "Igor Jesus",
+  "clubs": [
+    {
+      "club": "Coritiba",
+      "appearances": 57,
+      "goals": 7
+    },
+    {
+      "club": "Shabab Al Ahli",
+      "appearances": 92,
+      "goals": 46
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 59,
+      "goals": 17
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 52,
+      "goals": 16
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 260,
+    "goals": 86
+  }
+}

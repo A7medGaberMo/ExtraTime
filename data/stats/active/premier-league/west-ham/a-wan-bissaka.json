@@ -1,0 +1,32 @@
+{
+  "apiId": 18846,
+  "name": "A. Wan-Bissaka",
+  "clubs": [
+    {
+      "club": "Crystal Palace",
+      "appearances": 46,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 190,
+      "goals": 2
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 65,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "DR Congo",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 301,
+    "goals": 4
+  }
+}

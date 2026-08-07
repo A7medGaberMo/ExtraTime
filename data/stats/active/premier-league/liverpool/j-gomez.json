@@ -1,0 +1,57 @@
+{
+  "apiId": 284,
+  "name": "J. Gomez",
+  "clubs": [
+    {
+      "club": "Arsenal de Sarandí",
+      "appearances": 101,
+      "goals": 16
+    },
+    {
+      "club": "San Lorenzo",
+      "appearances": 58,
+      "goals": 9
+    },
+    {
+      "club": "Catania",
+      "appearances": 111,
+      "goals": 18
+    },
+    {
+      "club": "Metalist Kharkiv",
+      "appearances": 24,
+      "goals": 4
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 252,
+      "goals": 59
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 90,
+      "goals": 10
+    },
+    {
+      "club": "Monza",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Padova",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 17,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 647,
+    "goals": 116
+  }
+}

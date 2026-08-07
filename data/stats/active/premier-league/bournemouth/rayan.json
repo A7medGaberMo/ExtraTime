@@ -1,0 +1,27 @@
+{
+  "apiId": 407806,
+  "name": "Rayan",
+  "clubs": [
+    {
+      "club": "Vasco da Gama",
+      "appearances": 99,
+      "goals": 25
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 15,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 114,
+    "goals": 30
+  }
+}

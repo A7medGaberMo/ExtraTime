@@ -1,0 +1,56 @@
+{
+  "apiId": 19136,
+  "name": "J. Clarke",
+  "clubs": [
+    {
+      "club": "Arsenal U21",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Oldham Athletic",
+      "appearances": 35,
+      "goals": 1
+    },
+    {
+      "club": "Ross County",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Hibernian",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Stoke City",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 67,
+      "goals": 1
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Charlton Athletic",
+      "appearances": 19,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 175,
+    "goals": 8
+  }
+}

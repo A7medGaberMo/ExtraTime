@@ -1,0 +1,21 @@
+{
+  "apiId": 441271,
+  "name": "Jannik Schuster",
+  "clubs": [
+    {
+      "club": "FC Liefering",
+      "appearances": 39,
+      "goals": 2
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 30,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 69,
+    "goals": 3
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 8598,
+  "name": "T. Awoniyi",
+  "clubs": [
+    {
+      "club": "FSV Frankfurt",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "NEC",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "Mouscron",
+      "appearances": 47,
+      "goals": 21
+    },
+    {
+      "club": "Gent",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 65,
+      "goals": 25
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 103,
+      "goals": 23
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 10,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 285,
+    "goals": 77
+  }
+}

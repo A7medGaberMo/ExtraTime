@@ -1,0 +1,42 @@
+{
+  "apiId": 41621,
+  "name": "Matheus Nunes",
+  "clubs": [
+    {
+      "club": "Ericeirense",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Estoril",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 101,
+      "goals": 8
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 121,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 21,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 284,
+    "goals": 16
+  }
+}

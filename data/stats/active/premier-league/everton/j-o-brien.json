@@ -1,0 +1,46 @@
+{
+  "apiId": 270139,
+  "name": "J. O'Brien",
+  "clubs": [
+    {
+      "club": "Cork City",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Crystal Palace U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Swindon Town",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "RWD Molenbeek",
+      "appearances": 31,
+      "goals": 3
+    },
+    {
+      "club": "Lyon",
+      "appearances": 32,
+      "goals": 5
+    },
+    {
+      "club": "Everton",
+      "appearances": 64,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 162,
+    "goals": 11
+  }
+}

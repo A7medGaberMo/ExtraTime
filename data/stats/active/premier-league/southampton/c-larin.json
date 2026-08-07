@@ -1,0 +1,62 @@
+{
+  "apiId": 2001,
+  "name": "C. Larin",
+  "clubs": [
+    {
+      "club": "Sigma",
+      "appearances": 5,
+      "goals": 4
+    },
+    {
+      "club": "Orlando City",
+      "appearances": 89,
+      "goals": 44
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 109,
+      "goals": 39
+    },
+    {
+      "club": "Zulte Waregem",
+      "appearances": 33,
+      "goals": 9
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 19,
+      "goals": 8
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 76,
+      "goals": 14
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Southampton",
+      "appearances": 22,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Canada",
+      "appearances": 94,
+      "goals": 32
+    }
+  ],
+  "careerTotal": {
+    "appearances": 381,
+    "goals": 129
+  }
+}

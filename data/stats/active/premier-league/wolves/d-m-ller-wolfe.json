@@ -1,0 +1,37 @@
+{
+  "apiId": 265782,
+  "name": "D. Møller Wolfe",
+  "clubs": [
+    {
+      "club": "Brann",
+      "appearances": 65,
+      "goals": 1
+    },
+    {
+      "club": "Åsane",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "AZ",
+      "appearances": 92,
+      "goals": 4
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 26,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 27,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 211,
+    "goals": 8
+  }
+}

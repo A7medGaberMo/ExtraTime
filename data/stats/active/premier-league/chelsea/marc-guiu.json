@@ -1,0 +1,31 @@
+{
+  "apiId": 392270,
+  "name": "Marc Guiu",
+  "clubs": [
+    {
+      "club": "Barcelona Atlètic",
+      "appearances": 17,
+      "goals": 6
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 29,
+      "goals": 8
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 3,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 56,
+    "goals": 17
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 25287,
+  "name": "K. Danso",
+  "clubs": [
+    {
+      "club": "FC Augsburg II",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 44,
+      "goals": 3
+    },
+    {
+      "club": "Southampton",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Fortuna Düsseldorf",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "Lens",
+      "appearances": 126,
+      "goals": 4
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 50,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Austria",
+      "appearances": 36,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 270,
+    "goals": 10
+  }
+}

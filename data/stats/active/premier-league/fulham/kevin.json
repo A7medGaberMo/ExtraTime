@@ -1,0 +1,31 @@
+{
+  "apiId": 237819,
+  "name": "Kevin",
+  "clubs": [
+    {
+      "club": "Desportivo Brasil",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 57,
+      "goals": 17
+    },
+    {
+      "club": "Fulham",
+      "appearances": 30,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 102,
+    "goals": 21
+  }
+}

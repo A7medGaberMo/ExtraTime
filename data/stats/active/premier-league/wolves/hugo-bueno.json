@@ -1,0 +1,26 @@
+{
+  "apiId": 280687,
+  "name": "Hugo Bueno",
+  "clubs": [
+    {
+      "club": "Wolverhampton Wanderers U23",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 87,
+      "goals": 2
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 30,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 124,
+    "goals": 2
+  }
+}

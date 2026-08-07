@@ -1,0 +1,52 @@
+{
+  "apiId": 792,
+  "name": "J. Kluivert",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "Ajax",
+      "appearances": 56,
+      "goals": 13
+    },
+    {
+      "club": "Roma",
+      "appearances": 68,
+      "goals": 9
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 27,
+      "goals": 4
+    },
+    {
+      "club": "Nice",
+      "appearances": 31,
+      "goals": 6
+    },
+    {
+      "club": "Valencia",
+      "appearances": 29,
+      "goals": 8
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 96,
+      "goals": 24
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 14,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 315,
+    "goals": 66
+  }
+}

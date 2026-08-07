@@ -1,0 +1,52 @@
+{
+  "apiId": 135525,
+  "name": "C. Ramsay",
+  "clubs": [
+    {
+      "club": "Aberdeen U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Aberdeen",
+      "appearances": 39,
+      "goals": 1
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Bolton Wanderers",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Wigan Athletic",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Kilmarnock",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 70,
+    "goals": 1
+  }
+}

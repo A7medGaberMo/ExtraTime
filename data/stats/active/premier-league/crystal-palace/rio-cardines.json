@@ -1,0 +1,27 @@
+{
+  "apiId": 380703,
+  "name": "Rio Cardines",
+  "clubs": [
+    {
+      "club": "Crystal Palace U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Trinidad and Tobago",
+      "appearances": 11,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 4,
+    "goals": 0
+  }
+}

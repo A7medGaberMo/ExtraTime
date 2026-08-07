@@ -1,0 +1,37 @@
+{
+  "apiId": 126949,
+  "name": "C. Richards",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 38,
+      "goals": 4
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 122,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 40,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 204,
+    "goals": 9
+  }
+}

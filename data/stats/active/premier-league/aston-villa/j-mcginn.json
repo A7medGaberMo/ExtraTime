@@ -1,0 +1,32 @@
+{
+  "apiId": 19191,
+  "name": "J. McGinn",
+  "clubs": [
+    {
+      "club": "St Mirren",
+      "appearances": 98,
+      "goals": 4
+    },
+    {
+      "club": "Hibernian",
+      "appearances": 136,
+      "goals": 18
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 329,
+      "goals": 40
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 89,
+      "goals": 21
+    }
+  ],
+  "careerTotal": {
+    "appearances": 563,
+    "goals": 62
+  }
+}

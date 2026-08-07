@@ -1,0 +1,32 @@
+{
+  "apiId": 15908,
+  "name": "M. Damsgaard",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 93,
+      "goals": 13
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 49,
+      "goals": 2
+    },
+    {
+      "club": "Brentford",
+      "appearances": 134,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 40,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 276,
+    "goals": 22
+  }
+}

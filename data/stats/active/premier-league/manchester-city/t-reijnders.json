@@ -1,0 +1,47 @@
+{
+  "apiId": 36902,
+  "name": "T. Reijnders",
+  "clubs": [
+    {
+      "club": "PEC Zwolle",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Jong AZ",
+      "appearances": 92,
+      "goals": 19
+    },
+    {
+      "club": "AZ",
+      "appearances": 128,
+      "goals": 13
+    },
+    {
+      "club": "RKC Waalwijk",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 104,
+      "goals": 19
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 50,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 35,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 383,
+    "goals": 58
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiId": 498377,
+  "name": "W. Wright",
+  "clubs": [
+    {
+      "club": "Salford City",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool U21",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 5,
+    "goals": 0
+  }
+}

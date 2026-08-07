@@ -1,0 +1,42 @@
+{
+  "apiId": 47519,
+  "name": "Pedro Porro",
+  "clubs": [
+    {
+      "club": "Peralada-Girona B",
+      "appearances": 5,
+      "goals": 3
+    },
+    {
+      "club": "Girona",
+      "appearances": 35,
+      "goals": 1
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 98,
+      "goals": 12
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 152,
+      "goals": 13
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 24,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 305,
+    "goals": 29
+  }
+}

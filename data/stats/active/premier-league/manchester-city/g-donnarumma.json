@@ -1,0 +1,32 @@
+{
+  "apiId": 1622,
+  "name": "G. Donnarumma",
+  "clubs": [
+    {
+      "club": "AC Milan",
+      "appearances": 251,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 161,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 43,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 83,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 455,
+    "goals": 0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 47311,
+  "name": "Mikel Merino",
+  "clubs": [
+    {
+      "club": "Osasuna B",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 67,
+      "goals": 8
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 242,
+      "goals": 27
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 78,
+      "goals": 15
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 51,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 426,
+    "goals": 51
+  }
+}

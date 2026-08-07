@@ -1,0 +1,57 @@
+{
+  "apiId": 20089,
+  "name": "W. Burns",
+  "clubs": [
+    {
+      "club": "Bristol City",
+      "appearances": 54,
+      "goals": 4
+    },
+    {
+      "club": "Forest Green Rovers",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Oxford United",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Cheltenham Town",
+      "appearances": 14,
+      "goals": 4
+    },
+    {
+      "club": "Fleetwood Town",
+      "appearances": 190,
+      "goals": 28
+    },
+    {
+      "club": "Aberdeen",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 164,
+      "goals": 30
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Wales",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 458,
+    "goals": 69
+  }
+}

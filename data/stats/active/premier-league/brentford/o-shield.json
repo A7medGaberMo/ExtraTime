@@ -1,0 +1,41 @@
+{
+  "apiId": 624708,
+  "name": "O. Shield",
+  "clubs": [
+    {
+      "club": "Fulham U23",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Fulham",
+      "appearances": 44,
+      "goals": 12
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 21,
+      "goals": 3
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Hull City",
+      "appearances": 20,
+      "goals": 9
+    },
+    {
+      "club": "Brentford",
+      "appearances": 33,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 139,
+    "goals": 30
+  }
+}
