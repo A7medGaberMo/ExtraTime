@@ -1,0 +1,36 @@
+{
+  "apiId": 961,
+  "name": "F. Mambimbi",
+  "clubs": [
+    {
+      "club": "Young Boys U21",
+      "appearances": 41,
+      "goals": 22
+    },
+    {
+      "club": "Young Boys",
+      "appearances": 106,
+      "goals": 19
+    },
+    {
+      "club": "Cambuur",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "St. Gallen",
+      "appearances": 50,
+      "goals": 5
+    },
+    {
+      "club": "Le Havre",
+      "appearances": 17,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 223,
+    "goals": 47
+  }
+}

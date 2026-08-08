@@ -1,0 +1,52 @@
+{
+  "apiId": 2669,
+  "name": "Hermoso",
+  "clubs": [
+    {
+      "club": "Real Madrid C",
+      "appearances": 34,
+      "goals": 2
+    },
+    {
+      "club": "Real Madrid B",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 59,
+      "goals": 4
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 174,
+      "goals": 10
+    },
+    {
+      "club": "Roma",
+      "appearances": 48,
+      "goals": 5
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 387,
+    "goals": 22
+  }
+}

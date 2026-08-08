@@ -1,0 +1,32 @@
+{
+  "apiId": 33,
+  "name": "L. Hernández",
+  "clubs": [
+    {
+      "club": "Atlético Madrid",
+      "appearances": 110,
+      "goals": 1
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 107,
+      "goals": 2
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 106,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 42,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 323,
+    "goals": 5
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 1827,
+  "name": "B. Hrgota",
+  "clubs": [
+    {
+      "club": "Jönköpings Södra IF",
+      "appearances": 41,
+      "goals": 28
+    },
+    {
+      "club": "Borussia Mönchengladbach II",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 88,
+      "goals": 19
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 39,
+      "goals": 6
+    },
+    {
+      "club": "Greuther Fürth",
+      "appearances": 135,
+      "goals": 47
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 311,
+    "goals": 102
+  }
+}

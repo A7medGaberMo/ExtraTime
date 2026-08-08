@@ -1,0 +1,26 @@
+{
+  "apiId": 335101,
+  "name": "J. Rouhi",
+  "clubs": [
+    {
+      "club": "Juventus Next Gen",
+      "appearances": 38,
+      "goals": 2
+    },
+    {
+      "club": "Juventus",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Carrarese",
+      "appearances": 10,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 53,
+    "goals": 3
+  }
+}

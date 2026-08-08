@@ -1,0 +1,26 @@
+{
+  "apiId": 333118,
+  "name": "L. Mincarelli Davin",
+  "clubs": [
+    {
+      "club": "Istres",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Montpellier B",
+      "appearances": 29,
+      "goals": 4
+    },
+    {
+      "club": "Montpellier",
+      "appearances": 24,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 65,
+    "goals": 7
+  }
+}

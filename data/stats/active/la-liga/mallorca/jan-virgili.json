@@ -1,0 +1,21 @@
+{
+  "apiId": 491248,
+  "name": "Jan Virgili",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 17,
+      "goals": 4
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 34,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 51,
+    "goals": 7
+  }
+}

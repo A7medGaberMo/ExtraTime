@@ -1,0 +1,36 @@
+{
+  "apiId": 31734,
+  "name": "M. Felici",
+  "clubs": [
+    {
+      "club": "Lecce",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Palermo",
+      "appearances": 36,
+      "goals": 5
+    },
+    {
+      "club": "Triestina",
+      "appearances": 30,
+      "goals": 4
+    },
+    {
+      "club": "Feralpisalò",
+      "appearances": 38,
+      "goals": 5
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 29,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 134,
+    "goals": 17
+  }
+}

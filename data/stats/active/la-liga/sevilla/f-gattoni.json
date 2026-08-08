@@ -1,0 +1,31 @@
+{
+  "apiId": 125331,
+  "name": "F. Gattoni",
+  "clubs": [
+    {
+      "club": "San Lorenzo",
+      "appearances": 94,
+      "goals": 8
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "River Plate",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 115,
+    "goals": 9
+  }
+}

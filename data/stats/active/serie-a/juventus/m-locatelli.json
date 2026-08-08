@@ -1,0 +1,32 @@
+{
+  "apiId": 30533,
+  "name": "M. Locatelli",
+  "clubs": [
+    {
+      "club": "AC Milan",
+      "appearances": 63,
+      "goals": 2
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 99,
+      "goals": 7
+    },
+    {
+      "club": "Juventus",
+      "appearances": 230,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 36,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 392,
+    "goals": 18
+  }
+}

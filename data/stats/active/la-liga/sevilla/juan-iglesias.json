@@ -1,0 +1,36 @@
+{
+  "apiId": 119742,
+  "name": "Juan Iglesias",
+  "clubs": [
+    {
+      "club": "Valladolid B",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Logroñés B",
+      "appearances": 32,
+      "goals": 5
+    },
+    {
+      "club": "Logroñés",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Getafe B",
+      "appearances": 38,
+      "goals": 0
+    },
+    {
+      "club": "Getafe",
+      "appearances": 95,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 222,
+    "goals": 6
+  }
+}

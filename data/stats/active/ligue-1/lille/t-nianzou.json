@@ -1,0 +1,26 @@
+{
+  "apiId": 133110,
+  "name": "T. Nianzou",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 62,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 103,
+    "goals": 7
+  }
+}

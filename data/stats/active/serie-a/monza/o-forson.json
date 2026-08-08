@@ -1,0 +1,26 @@
+{
+  "apiId": 284242,
+  "name": "O. Forson",
+  "clubs": [
+    {
+      "club": "Manchester United U21",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Monza",
+      "appearances": 11,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 24,
+    "goals": 3
+  }
+}

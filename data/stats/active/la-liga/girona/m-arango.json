@@ -1,0 +1,21 @@
+{
+  "apiId": 548700,
+  "name": "M. Arango",
+  "clubs": [
+    {
+      "club": "Girona B",
+      "appearances": 38,
+      "goals": 7
+    },
+    {
+      "club": "Girona",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 40,
+    "goals": 7
+  }
+}

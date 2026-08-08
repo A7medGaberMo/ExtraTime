@@ -1,0 +1,21 @@
+{
+  "apiId": 379329,
+  "name": "Tiago Santos",
+  "clubs": [
+    {
+      "club": "Estoril",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Lille",
+      "appearances": 81,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 115,
+    "goals": 3
+  }
+}

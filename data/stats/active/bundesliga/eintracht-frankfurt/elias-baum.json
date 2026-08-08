@@ -1,0 +1,26 @@
+{
+  "apiId": 382492,
+  "name": "Elias Baum",
+  "clubs": [
+    {
+      "club": "Eintracht Frankfurt II",
+      "appearances": 34,
+      "goals": 2
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "SV Elversberg",
+      "appearances": 37,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 82,
+    "goals": 5
+  }
+}

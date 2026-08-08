@@ -1,0 +1,21 @@
+{
+  "apiId": 491103,
+  "name": "A. Tape",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 11,
+    "goals": 0
+  }
+}

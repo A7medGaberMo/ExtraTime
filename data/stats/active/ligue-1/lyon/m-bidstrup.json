@@ -1,0 +1,31 @@
+{
+  "apiId": 162189,
+  "name": "M. Bidstrup",
+  "clubs": [
+    {
+      "club": "Brentford",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Nordsjælland",
+      "appearances": 47,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 116,
+      "goals": 4
+    },
+    {
+      "club": "Lyon",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 177,
+    "goals": 4
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "apiId": 30731,
+  "name": "E. Caprile",
+  "clubs": [
+    {
+      "club": "Chievo",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Pro Patria",
+      "appearances": 39,
+      "goals": 0
+    },
+    {
+      "club": "Bari",
+      "appearances": 43,
+      "goals": 0
+    },
+    {
+      "club": "Napoli",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Empoli",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 58,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 170,
+    "goals": 0
+  }
+}

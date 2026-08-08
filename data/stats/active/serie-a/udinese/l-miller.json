@@ -1,0 +1,21 @@
+{
+  "apiId": 343558,
+  "name": "L. Miller",
+  "clubs": [
+    {
+      "club": "Motherwell",
+      "appearances": 76,
+      "goals": 6
+    },
+    {
+      "club": "Udinese",
+      "appearances": 26,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 102,
+    "goals": 7
+  }
+}

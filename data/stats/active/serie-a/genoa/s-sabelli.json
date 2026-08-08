@@ -1,0 +1,36 @@
+{
+  "apiId": 31137,
+  "name": "S. Sabelli",
+  "clubs": [
+    {
+      "club": "Bari",
+      "appearances": 181,
+      "goals": 4
+    },
+    {
+      "club": "Carpi",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "Brescia",
+      "appearances": 99,
+      "goals": 0
+    },
+    {
+      "club": "Empoli",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Genoa",
+      "appearances": 110,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 409,
+    "goals": 6
+  }
+}

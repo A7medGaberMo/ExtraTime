@@ -1,0 +1,31 @@
+{
+  "apiId": 31352,
+  "name": "L. Lezzerini",
+  "clubs": [
+    {
+      "club": "Fiorentina",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Avellino",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Venezia",
+      "appearances": 70,
+      "goals": 0
+    },
+    {
+      "club": "Brescia",
+      "appearances": 80,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 178,
+    "goals": 0
+  }
+}

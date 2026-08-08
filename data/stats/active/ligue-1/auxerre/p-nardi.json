@@ -1,0 +1,61 @@
+{
+  "apiId": 8657,
+  "name": "P. Nardi",
+  "clubs": [
+    {
+      "club": "Nancy II",
+      "appearances": 30,
+      "goals": 0
+    },
+    {
+      "club": "Nancy",
+      "appearances": 65,
+      "goals": 0
+    },
+    {
+      "club": "Monaco II",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Monaco",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Rennes II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Rennes",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 82,
+      "goals": 0
+    },
+    {
+      "club": "Lorient",
+      "appearances": 76,
+      "goals": 0
+    },
+    {
+      "club": "Gent",
+      "appearances": 49,
+      "goals": 0
+    },
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 26,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 338,
+    "goals": 0
+  }
+}

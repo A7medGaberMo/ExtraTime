@@ -1,0 +1,52 @@
+{
+  "apiId": 483,
+  "name": "K. Kvaratskhelia",
+  "clubs": [
+    {
+      "club": "Dinamo Tbilisi",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Rustavi",
+      "appearances": 18,
+      "goals": 3
+    },
+    {
+      "club": "Lokomotiv Moscow",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Rubin Kazan",
+      "appearances": 73,
+      "goals": 9
+    },
+    {
+      "club": "Dinamo Batumi",
+      "appearances": 11,
+      "goals": 8
+    },
+    {
+      "club": "Napoli",
+      "appearances": 107,
+      "goals": 30
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 80,
+      "goals": 27
+    }
+  ],
+  "national": [
+    {
+      "team": "Georgia",
+      "appearances": 50,
+      "goals": 23
+    }
+  ],
+  "careerTotal": {
+    "appearances": 304,
+    "goals": 79
+  }
+}

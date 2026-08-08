@@ -1,0 +1,31 @@
+{
+  "apiId": 24969,
+  "name": "P. Sander",
+  "clubs": [
+    {
+      "club": "Holstein Kiel II",
+      "appearances": 52,
+      "goals": 11
+    },
+    {
+      "club": "Holstein Kiel",
+      "appearances": 87,
+      "goals": 5
+    },
+    {
+      "club": "SC Verl",
+      "appearances": 36,
+      "goals": 2
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 61,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 236,
+    "goals": 21
+  }
+}

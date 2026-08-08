@@ -1,0 +1,21 @@
+{
+  "apiId": 386287,
+  "name": "E. Mbappé",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Lille",
+      "appearances": 36,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 41,
+    "goals": 3
+  }
+}

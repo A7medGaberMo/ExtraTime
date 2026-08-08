@@ -1,0 +1,41 @@
+{
+  "apiId": 231032,
+  "name": "M. Jenz",
+  "clubs": [
+    {
+      "club": "Lausanne-Sport",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Lorient",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Celtic",
+      "appearances": 19,
+      "goals": 2
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 45,
+      "goals": 2
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 21,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 147,
+    "goals": 6
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "apiId": 18964,
+  "name": "Bernardo",
+  "clubs": [
+    {
+      "club": "Red Bull Brasil",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Ponte Preta",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "FC Liefering",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 93,
+      "goals": 4
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 49,
+      "goals": 1
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 50,
+      "goals": 1
+    },
+    {
+      "club": "VfL Bochum",
+      "appearances": 87,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 286,
+    "goals": 7
+  }
+}

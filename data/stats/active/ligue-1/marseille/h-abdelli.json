@@ -1,0 +1,37 @@
+{
+  "apiId": 20692,
+  "name": "H. Abdelli",
+  "clubs": [
+    {
+      "club": "Le Havre B",
+      "appearances": 36,
+      "goals": 6
+    },
+    {
+      "club": "Le Havre",
+      "appearances": 85,
+      "goals": 5
+    },
+    {
+      "club": "Angers",
+      "appearances": 119,
+      "goals": 20
+    },
+    {
+      "club": "Marseille",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Algeria",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 249,
+    "goals": 31
+  }
+}

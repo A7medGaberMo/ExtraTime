@@ -1,0 +1,36 @@
+{
+  "apiId": 21011,
+  "name": "J. Ruiz",
+  "clubs": [
+    {
+      "club": "Sochaux B",
+      "appearances": 57,
+      "goals": 2
+    },
+    {
+      "club": "Sochaux",
+      "appearances": 59,
+      "goals": 1
+    },
+    {
+      "club": "FC Sion",
+      "appearances": 39,
+      "goals": 0
+    },
+    {
+      "club": "US Boulogne",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Pau FC",
+      "appearances": 82,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 254,
+    "goals": 6
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 354298,
+  "name": "T. Nnadi",
+  "clubs": [
+    {
+      "club": "Botev Plovdiv II",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Botev Plovdiv",
+      "appearances": 48,
+      "goals": 0
+    },
+    {
+      "club": "Zulte Waregem",
+      "appearances": 58,
+      "goals": 1
+    },
+    {
+      "club": "Marseille",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 127,
+    "goals": 2
+  }
+}

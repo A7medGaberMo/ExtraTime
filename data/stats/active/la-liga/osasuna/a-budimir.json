@@ -1,0 +1,57 @@
+{
+  "apiId": 46746,
+  "name": "A. Budimir",
+  "clubs": [
+    {
+      "club": "Inter Zaprešić",
+      "appearances": 68,
+      "goals": 18
+    },
+    {
+      "club": "Lokomotiva Zagreb",
+      "appearances": 30,
+      "goals": 17
+    },
+    {
+      "club": "FC St. Pauli",
+      "appearances": 20,
+      "goals": 1
+    },
+    {
+      "club": "FC St. Pauli II",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "Crotone",
+      "appearances": 83,
+      "goals": 27
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 57,
+      "goals": 19
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 219,
+      "goals": 90
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 41,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 493,
+    "goals": 174
+  }
+}

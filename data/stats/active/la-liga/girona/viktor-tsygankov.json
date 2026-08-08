@@ -1,0 +1,27 @@
+{
+  "apiId": 182703,
+  "name": "Viktor Tsygankov",
+  "clubs": [
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 236,
+      "goals": 94
+    },
+    {
+      "club": "Girona",
+      "appearances": 119,
+      "goals": 20
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine",
+      "appearances": 67,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 355,
+    "goals": 114
+  }
+}

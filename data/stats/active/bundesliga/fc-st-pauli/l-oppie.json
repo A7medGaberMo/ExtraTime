@@ -1,0 +1,26 @@
+{
+  "apiId": 202636,
+  "name": "L. Oppie",
+  "clubs": [
+    {
+      "club": "Hannover 96 II",
+      "appearances": 61,
+      "goals": 2
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 89,
+      "goals": 11
+    },
+    {
+      "club": "FC St. Pauli",
+      "appearances": 27,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 177,
+    "goals": 15
+  }
+}

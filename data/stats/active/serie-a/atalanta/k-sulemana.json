@@ -1,0 +1,42 @@
+{
+  "apiId": 199837,
+  "name": "K. Sulemana",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 43,
+      "goals": 14
+    },
+    {
+      "club": "Rennes",
+      "appearances": 56,
+      "goals": 6
+    },
+    {
+      "club": "Rennes B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Southampton",
+      "appearances": 74,
+      "goals": 4
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 37,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Ghana",
+      "appearances": 30,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 211,
+    "goals": 27
+  }
+}

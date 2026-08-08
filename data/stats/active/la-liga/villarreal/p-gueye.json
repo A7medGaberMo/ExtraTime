@@ -1,0 +1,42 @@
+{
+  "apiId": 20696,
+  "name": "P. Gueye",
+  "clubs": [
+    {
+      "club": "Le Havre B",
+      "appearances": 39,
+      "goals": 2
+    },
+    {
+      "club": "Le Havre",
+      "appearances": 42,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 115,
+      "goals": 5
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 75,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 46,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 287,
+    "goals": 18
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "apiId": 20917,
+  "name": "L. Abergel",
+  "clubs": [
+    {
+      "club": "Marseille B",
+      "appearances": 40,
+      "goals": 2
+    },
+    {
+      "club": "Marseille",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Ajaccio B",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Ajaccio",
+      "appearances": 86,
+      "goals": 2
+    },
+    {
+      "club": "Nancy",
+      "appearances": 67,
+      "goals": 2
+    },
+    {
+      "club": "Lorient",
+      "appearances": 203,
+      "goals": 8
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 400,
+    "goals": 14
+  }
+}

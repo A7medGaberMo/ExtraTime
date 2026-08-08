@@ -1,0 +1,37 @@
+{
+  "apiId": 1417,
+  "name": "A. Saelemaekers",
+  "clubs": [
+    {
+      "club": "Anderlecht",
+      "appearances": 64,
+      "goals": 2
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 180,
+      "goals": 13
+    },
+    {
+      "club": "Bologna",
+      "appearances": 32,
+      "goals": 4
+    },
+    {
+      "club": "Roma",
+      "appearances": 31,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 28,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 307,
+    "goals": 26
+  }
+}

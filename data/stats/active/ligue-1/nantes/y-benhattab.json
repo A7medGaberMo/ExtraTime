@@ -1,0 +1,31 @@
+{
+  "apiId": 197771,
+  "name": "Y. Benhattab",
+  "clubs": [
+    {
+      "club": "Niort B",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Niort",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Aubagne",
+      "appearances": 53,
+      "goals": 7
+    },
+    {
+      "club": "Nantes",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 72,
+    "goals": 8
+  }
+}

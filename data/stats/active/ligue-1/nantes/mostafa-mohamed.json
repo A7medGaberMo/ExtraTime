@@ -1,0 +1,47 @@
+{
+  "apiId": 2668,
+  "name": "Mostafa Mohamed",
+  "clubs": [
+    {
+      "club": "Zamalek",
+      "appearances": 50,
+      "goals": 22
+    },
+    {
+      "club": "El Dakhleya",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Tanta",
+      "appearances": 23,
+      "goals": 6
+    },
+    {
+      "club": "Tala'ea El Gaish",
+      "appearances": 29,
+      "goals": 12
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 58,
+      "goals": 17
+    },
+    {
+      "club": "Nantes",
+      "appearances": 135,
+      "goals": 29
+    }
+  ],
+  "national": [
+    {
+      "team": "Egypt",
+      "appearances": 61,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 311,
+    "goals": 89
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "apiId": 31601,
+  "name": "B. Radunović",
+  "clubs": [
+    {
+      "club": "Rad",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Avelino",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Cremonese",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Verona",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 59,
+      "goals": 0
+    },
+    {
+      "club": "Bari",
+      "appearances": 38,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 204,
+    "goals": 0
+  }
+}

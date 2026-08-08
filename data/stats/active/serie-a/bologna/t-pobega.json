@@ -1,0 +1,47 @@
+{
+  "apiId": 31273,
+  "name": "T. Pobega",
+  "clubs": [
+    {
+      "club": "Ternana",
+      "appearances": 32,
+      "goals": 3
+    },
+    {
+      "club": "Pordenone",
+      "appearances": 34,
+      "goals": 6
+    },
+    {
+      "club": "Spezia",
+      "appearances": 20,
+      "goals": 6
+    },
+    {
+      "club": "Torino",
+      "appearances": 33,
+      "goals": 4
+    },
+    {
+      "club": "Milan",
+      "appearances": 43,
+      "goals": 3
+    },
+    {
+      "club": "Bologna",
+      "appearances": 68,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 230,
+    "goals": 30
+  }
+}

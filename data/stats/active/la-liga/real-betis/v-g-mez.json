@@ -1,0 +1,21 @@
+{
+  "apiId": 355004,
+  "name": "V. Gómez",
+  "clubs": [
+    {
+      "club": "Vélez Sarsfield",
+      "appearances": 125,
+      "goals": 3
+    },
+    {
+      "club": "Betis",
+      "appearances": 40,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 165,
+    "goals": 4
+  }
+}

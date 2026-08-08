@@ -1,0 +1,26 @@
+{
+  "apiId": 31543,
+  "name": "A. Gallo",
+  "clubs": [
+    {
+      "club": "Palermo",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Lecce",
+      "appearances": 151,
+      "goals": 1
+    },
+    {
+      "club": "Virtus Francavilla",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 159,
+    "goals": 1
+  }
+}

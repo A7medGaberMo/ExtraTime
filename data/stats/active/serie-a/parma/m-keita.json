@@ -1,0 +1,26 @@
+{
+  "apiId": 308836,
+  "name": "M. Keita",
+  "clubs": [
+    {
+      "club": "OH Leuven",
+      "appearances": 40,
+      "goals": 0
+    },
+    {
+      "club": "Royal Antwerp",
+      "appearances": 62,
+      "goals": 1
+    },
+    {
+      "club": "Parma",
+      "appearances": 68,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 170,
+    "goals": 2
+  }
+}

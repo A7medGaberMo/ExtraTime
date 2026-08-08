@@ -1,0 +1,26 @@
+{
+  "apiId": 25011,
+  "name": "A. Pieper",
+  "clubs": [
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 4,
+    "goals": 0
+  }
+}

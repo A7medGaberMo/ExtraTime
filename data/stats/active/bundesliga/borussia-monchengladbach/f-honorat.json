@@ -1,0 +1,56 @@
+{
+  "apiId": 20784,
+  "name": "F. Honorat",
+  "clubs": [
+    {
+      "club": "Nice B",
+      "appearances": 50,
+      "goals": 8
+    },
+    {
+      "club": "Nice",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Sochaux",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Sochaux B",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Clermont",
+      "appearances": 77,
+      "goals": 10
+    },
+    {
+      "club": "Saint-Étienne",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Saint-Étienne B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Brest",
+      "appearances": 109,
+      "goals": 25
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 86,
+      "goals": 12
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 397,
+    "goals": 56
+  }
+}

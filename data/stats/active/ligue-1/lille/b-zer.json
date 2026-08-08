@@ -1,0 +1,46 @@
+{
+  "apiId": 1337,
+  "name": "B. Özer",
+  "clubs": [
+    {
+      "club": "Altınordu",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Westerlo",
+      "appearances": 46,
+      "goals": 0
+    },
+    {
+      "club": "Portimonense",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Eyüpspor",
+      "appearances": 65,
+      "goals": 0
+    },
+    {
+      "club": "Ümraniyespor",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Lille",
+      "appearances": 44,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 188,
+    "goals": 0
+  }
+}

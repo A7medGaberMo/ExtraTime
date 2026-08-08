@@ -1,0 +1,57 @@
+{
+  "apiId": 333,
+  "name": "A. Milik",
+  "clubs": [
+    {
+      "club": "Rozwój Katowice",
+      "appearances": 10,
+      "goals": 4
+    },
+    {
+      "club": "Górnik Zabrze",
+      "appearances": 40,
+      "goals": 12
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Ajax",
+      "appearances": 76,
+      "goals": 47
+    },
+    {
+      "club": "Napoli",
+      "appearances": 122,
+      "goals": 48
+    },
+    {
+      "club": "Marseille",
+      "appearances": 55,
+      "goals": 30
+    },
+    {
+      "club": "Juventus",
+      "appearances": 77,
+      "goals": 17
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland",
+      "appearances": 73,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 408,
+    "goals": 160
+  }
+}

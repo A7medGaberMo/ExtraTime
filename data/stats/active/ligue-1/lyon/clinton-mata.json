@@ -1,0 +1,42 @@
+{
+  "apiId": 68,
+  "name": "Clinton Mata",
+  "clubs": [
+    {
+      "club": "Eupen",
+      "appearances": 82,
+      "goals": 3
+    },
+    {
+      "club": "Charleroi",
+      "appearances": 87,
+      "goals": 1
+    },
+    {
+      "club": "Genk",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 197,
+      "goals": 5
+    },
+    {
+      "club": "Lyon",
+      "appearances": 117,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Angola",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 512,
+    "goals": 9
+  }
+}

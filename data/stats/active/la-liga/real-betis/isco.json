@@ -1,0 +1,47 @@
+{
+  "apiId": 745,
+  "name": "Isco",
+  "clubs": [
+    {
+      "club": "Valencia Mestalla",
+      "appearances": 54,
+      "goals": 16
+    },
+    {
+      "club": "Valencia",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Málaga",
+      "appearances": 82,
+      "goals": 17
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 353,
+      "goals": 53
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Betis",
+      "appearances": 78,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 39,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 593,
+    "goals": 111
+  }
+}

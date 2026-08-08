@@ -1,0 +1,32 @@
+{
+  "apiId": 2068,
+  "name": "M. Safonov",
+  "clubs": [
+    {
+      "club": "Krasnodar-2",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Krasnodar",
+      "appearances": 175,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 44,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Russia",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 243,
+    "goals": 0
+  }
+}

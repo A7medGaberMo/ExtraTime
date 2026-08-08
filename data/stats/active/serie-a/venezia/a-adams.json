@@ -1,0 +1,37 @@
+{
+  "apiId": 57446,
+  "name": "A. Adams",
+  "clubs": [
+    {
+      "club": "Sogndal",
+      "appearances": 56,
+      "goals": 16
+    },
+    {
+      "club": "Lillestrøm",
+      "appearances": 49,
+      "goals": 28
+    },
+    {
+      "club": "Montpellier",
+      "appearances": 49,
+      "goals": 13
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 37,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 15,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 191,
+    "goals": 67
+  }
+}

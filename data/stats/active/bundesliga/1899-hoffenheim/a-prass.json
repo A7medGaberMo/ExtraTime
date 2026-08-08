@@ -1,0 +1,32 @@
+{
+  "apiId": 7327,
+  "name": "A. Prass",
+  "clubs": [
+    {
+      "club": "FC Liefering",
+      "appearances": 59,
+      "goals": 12
+    },
+    {
+      "club": "Sturm Graz",
+      "appearances": 130,
+      "goals": 12
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 65,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Austria",
+      "appearances": 21,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 254,
+    "goals": 27
+  }
+}

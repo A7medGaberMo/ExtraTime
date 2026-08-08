@@ -1,0 +1,31 @@
+{
+  "apiId": 182519,
+  "name": "Alberto Moleiro",
+  "clubs": [
+    {
+      "club": "Las Palmas Atlético",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Las Palmas C",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Las Palmas",
+      "appearances": 147,
+      "goals": 13
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 45,
+      "goals": 10
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 200,
+    "goals": 23
+  }
+}

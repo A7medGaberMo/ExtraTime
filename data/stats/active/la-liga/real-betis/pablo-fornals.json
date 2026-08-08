@@ -1,0 +1,37 @@
+{
+  "apiId": 1697,
+  "name": "Pablo Fornals",
+  "clubs": [
+    {
+      "club": "Málaga",
+      "appearances": 63,
+      "goals": 7
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 96,
+      "goals": 9
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 203,
+      "goals": 23
+    },
+    {
+      "club": "Betis",
+      "appearances": 104,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 466,
+    "goals": 53
+  }
+}

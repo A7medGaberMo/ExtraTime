@@ -1,0 +1,31 @@
+{
+  "apiId": 6,
+  "name": "L. Balerdi",
+  "clubs": [
+    {
+      "club": "Boca Juniors",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 200,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 225,
+    "goals": 7
+  }
+}

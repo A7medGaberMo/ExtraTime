@@ -1,0 +1,47 @@
+{
+  "apiId": 31642,
+  "name": "L. Ranieri",
+  "clubs": [
+    {
+      "club": "League",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Foggia",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 160,
+      "goals": 11
+    },
+    {
+      "club": "Ascoli",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "SPAL",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 27,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 255,
+    "goals": 12
+  }
+}

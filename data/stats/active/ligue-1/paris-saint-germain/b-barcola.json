@@ -1,0 +1,32 @@
+{
+  "apiId": 161904,
+  "name": "B. Barcola",
+  "clubs": [
+    {
+      "club": "Lyon II",
+      "appearances": 22,
+      "goals": 5
+    },
+    {
+      "club": "Lyon",
+      "appearances": 47,
+      "goals": 7
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 152,
+      "goals": 39
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 28,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 221,
+    "goals": 51
+  }
+}

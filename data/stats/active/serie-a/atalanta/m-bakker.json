@@ -1,0 +1,46 @@
+{
+  "apiId": 530,
+  "name": "M. Bakker",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Ajax",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 45,
+      "goals": 0
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 70,
+      "goals": 5
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Lille",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Atalanta U23",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 213,
+    "goals": 10
+  }
+}

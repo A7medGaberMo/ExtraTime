@@ -1,0 +1,32 @@
+{
+  "apiId": 25342,
+  "name": "M. Mittelstädt",
+  "clubs": [
+    {
+      "club": "Hertha BSC II",
+      "appearances": 24,
+      "goals": 4
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 156,
+      "goals": 5
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 128,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 15,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 308,
+    "goals": 19
+  }
+}

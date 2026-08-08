@@ -1,0 +1,36 @@
+{
+  "apiId": 56996,
+  "name": "F. Delli Carri",
+  "clubs": [
+    {
+      "club": "Pescara",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Rieti",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Juventus Next Gen",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Padova",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 84,
+    "goals": 2
+  }
+}

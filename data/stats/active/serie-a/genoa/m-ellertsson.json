@@ -1,0 +1,42 @@
+{
+  "apiId": 89520,
+  "name": "M. Ellertsson",
+  "clubs": [
+    {
+      "club": "Fram Reykjavik",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "SPAL",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Spezia",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Venezia",
+      "appearances": 91,
+      "goals": 6
+    },
+    {
+      "club": "Genoa",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Iceland",
+      "appearances": 31,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 125,
+    "goals": 7
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 46887,
+  "name": "Pedro Díaz",
+  "clubs": [
+    {
+      "club": "Sporting B",
+      "appearances": 138,
+      "goals": 12
+    },
+    {
+      "club": "Sporting Gijón",
+      "appearances": 151,
+      "goals": 14
+    },
+    {
+      "club": "Bordeaux",
+      "appearances": 41,
+      "goals": 7
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 76,
+      "goals": 8
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 406,
+    "goals": 41
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 277191,
+  "name": "A. Sima",
+  "clubs": [
+    {
+      "club": "Slavia Prague",
+      "appearances": 39,
+      "goals": 16
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Stoke City",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Angers",
+      "appearances": 37,
+      "goals": 6
+    },
+    {
+      "club": "Rangers",
+      "appearances": 40,
+      "goals": 16
+    },
+    {
+      "club": "Brest",
+      "appearances": 40,
+      "goals": 12
+    },
+    {
+      "club": "Lens",
+      "appearances": 27,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 187,
+    "goals": 57
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 4458,
+  "name": "A. Dieng",
+  "clubs": [
+    {
+      "club": "MC Alger",
+      "appearances": 53,
+      "goals": 1
+    },
+    {
+      "club": "Al Ahly",
+      "appearances": 250,
+      "goals": 8
+    },
+    {
+      "club": "Al-Kholood",
+      "appearances": 31,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Mali",
+      "appearances": 55,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 334,
+    "goals": 12
+  }
+}

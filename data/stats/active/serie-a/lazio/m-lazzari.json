@@ -1,0 +1,36 @@
+{
+  "apiId": 30866,
+  "name": "M. Lazzari",
+  "clubs": [
+    {
+      "club": "Montecchio Maggiore",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Delta Rovigo",
+      "appearances": 35,
+      "goals": 3
+    },
+    {
+      "club": "Giacomense",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "SPAL",
+      "appearances": 215,
+      "goals": 4
+    },
+    {
+      "club": "Lazio",
+      "appearances": 247,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 550,
+    "goals": 14
+  }
+}

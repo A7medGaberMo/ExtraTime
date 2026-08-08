@@ -1,0 +1,27 @@
+{
+  "apiId": 19824,
+  "name": "J. Zemura",
+  "clubs": [
+    {
+      "club": "AFC Bournemouth",
+      "appearances": 61,
+      "goals": 3
+    },
+    {
+      "club": "Udinese",
+      "appearances": 65,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Zimbabwe",
+      "appearances": 22,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 126,
+    "goals": 5
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 30558,
+  "name": "N. Barella",
+  "clubs": [
+    {
+      "club": "Cagliari",
+      "appearances": 112,
+      "goals": 7
+    },
+    {
+      "club": "Como",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 335,
+      "goals": 28
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 70,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 463,
+    "goals": 35
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 2735,
+  "name": "P. Højbjerg",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 44,
+      "goals": 12
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 30,
+      "goals": 0
+    },
+    {
+      "club": "Southampton",
+      "appearances": 134,
+      "goals": 5
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 184,
+      "goals": 10
+    },
+    {
+      "club": "Marseille",
+      "appearances": 75,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 97,
+      "goals": 11
+    }
+  ],
+  "careerTotal": {
+    "appearances": 508,
+    "goals": 37
+  }
+}

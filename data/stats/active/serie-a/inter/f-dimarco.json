@@ -1,0 +1,47 @@
+{
+  "apiId": 31010,
+  "name": "F. Dimarco",
+  "clubs": [
+    {
+      "club": "Inter Milan",
+      "appearances": 236,
+      "goals": 26
+    },
+    {
+      "club": "Ascoli",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Empoli",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Sion",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Parma",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 50,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 38,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 337,
+    "goals": 32
+  }
+}

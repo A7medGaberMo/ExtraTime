@@ -1,0 +1,52 @@
+{
+  "apiId": 272,
+  "name": "A. Rabiot",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain II",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 227,
+      "goals": 24
+    },
+    {
+      "club": "Toulouse II",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Juventus",
+      "appearances": 212,
+      "goals": 22
+    },
+    {
+      "club": "Marseille",
+      "appearances": 32,
+      "goals": 10
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 32,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 66,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 527,
+    "goals": 64
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "apiId": 19364,
+  "name": "N. Maupay",
+  "clubs": [
+    {
+      "club": "Nice II",
+      "appearances": 13,
+      "goals": 9
+    },
+    {
+      "club": "Nice",
+      "appearances": 53,
+      "goals": 9
+    },
+    {
+      "club": "Saint-Étienne",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Saint-Étienne II",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "Brest",
+      "appearances": 31,
+      "goals": 12
+    },
+    {
+      "club": "Brentford",
+      "appearances": 126,
+      "goals": 49
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 109,
+      "goals": 27
+    },
+    {
+      "club": "Everton",
+      "appearances": 32,
+      "goals": 1
+    },
+    {
+      "club": "Marseille",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 12,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 432,
+    "goals": 119
+  }
+}

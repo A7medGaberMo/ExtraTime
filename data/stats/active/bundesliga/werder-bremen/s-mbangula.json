@@ -1,0 +1,26 @@
+{
+  "apiId": 346866,
+  "name": "S. Mbangula",
+  "clubs": [
+    {
+      "club": "Juventus Next Gen",
+      "appearances": 25,
+      "goals": 2
+    },
+    {
+      "club": "Juventus",
+      "appearances": 32,
+      "goals": 4
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 27,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 84,
+    "goals": 9
+  }
+}

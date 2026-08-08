@@ -1,0 +1,47 @@
+{
+  "apiId": 2598,
+  "name": "R. Dōan",
+  "clubs": [
+    {
+      "club": "Gamba Osaka",
+      "appearances": 25,
+      "goals": 4
+    },
+    {
+      "club": "Groningen",
+      "appearances": 66,
+      "goals": 16
+    },
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 64,
+      "goals": 13
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 35,
+      "goals": 5
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 123,
+      "goals": 26
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 40,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 69,
+      "goals": 11
+    }
+  ],
+  "careerTotal": {
+    "appearances": 353,
+    "goals": 71
+  }
+}

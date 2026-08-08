@@ -1,0 +1,27 @@
+{
+  "apiId": 194837,
+  "name": "T. Suslov",
+  "clubs": [
+    {
+      "club": "Groningen",
+      "appearances": 96,
+      "goals": 5
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 76,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia",
+      "appearances": 44,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 172,
+    "goals": 8
+  }
+}

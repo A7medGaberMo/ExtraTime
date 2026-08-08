@@ -1,0 +1,47 @@
+{
+  "apiId": 2810,
+  "name": "D. Zakaria",
+  "clubs": [
+    {
+      "club": "Servette",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "Young Boys",
+      "appearances": 67,
+      "goals": 2
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 146,
+      "goals": 11
+    },
+    {
+      "club": "Juventus",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Monaco",
+      "appearances": 95,
+      "goals": 13
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland",
+      "appearances": 69,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 340,
+    "goals": 30
+  }
+}

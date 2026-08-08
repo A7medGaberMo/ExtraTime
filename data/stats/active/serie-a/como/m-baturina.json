@@ -1,0 +1,27 @@
+{
+  "apiId": 295026,
+  "name": "M. Baturina",
+  "clubs": [
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 165,
+      "goals": 22
+    },
+    {
+      "club": "Como",
+      "appearances": 34,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 23,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 199,
+    "goals": 30
+  }
+}

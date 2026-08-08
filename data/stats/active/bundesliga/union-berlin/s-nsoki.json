@@ -1,0 +1,31 @@
+{
+  "apiId": 270,
+  "name": "S. Nsoki",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Nice",
+      "appearances": 44,
+      "goals": 0
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 100,
+      "goals": 1
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 13,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 173,
+    "goals": 2
+  }
+}

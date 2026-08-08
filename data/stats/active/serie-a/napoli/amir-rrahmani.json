@@ -1,0 +1,57 @@
+{
+  "apiId": 1314,
+  "name": "Amir Rrahmani",
+  "clubs": [
+    {
+      "club": "Drenica",
+      "appearances": 40,
+      "goals": 1
+    },
+    {
+      "club": "Partizani",
+      "appearances": 66,
+      "goals": 3
+    },
+    {
+      "club": "Split",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "Lokomotiva",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 57,
+      "goals": 4
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Napoli",
+      "appearances": 202,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Albania",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Kosovo",
+      "appearances": 66,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 474,
+    "goals": 24
+  }
+}

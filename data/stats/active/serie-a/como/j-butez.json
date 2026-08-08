@@ -1,0 +1,36 @@
+{
+  "apiId": 8574,
+  "name": "J. Butez",
+  "clubs": [
+    {
+      "club": "Lille II",
+      "appearances": 81,
+      "goals": 0
+    },
+    {
+      "club": "Lille",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Mouscron",
+      "appearances": 58,
+      "goals": 0
+    },
+    {
+      "club": "Antwerp",
+      "appearances": 170,
+      "goals": 0
+    },
+    {
+      "club": "Como",
+      "appearances": 63,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 372,
+    "goals": 0
+  }
+}

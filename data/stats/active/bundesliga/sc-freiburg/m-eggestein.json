@@ -1,0 +1,26 @@
+{
+  "apiId": 2917,
+  "name": "M. Eggestein",
+  "clubs": [
+    {
+      "club": "Werder Bremen II",
+      "appearances": 56,
+      "goals": 7
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 183,
+      "goals": 14
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 213,
+      "goals": 14
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 452,
+    "goals": 35
+  }
+}

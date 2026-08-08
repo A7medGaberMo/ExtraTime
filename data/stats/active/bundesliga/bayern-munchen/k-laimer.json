@@ -1,0 +1,37 @@
+{
+  "apiId": 1157,
+  "name": "K. Laimer",
+  "clubs": [
+    {
+      "club": "FC Liefering",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 77,
+      "goals": 8
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 190,
+      "goals": 15
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 135,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Austria",
+      "appearances": 61,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 421,
+    "goals": 30
+  }
+}

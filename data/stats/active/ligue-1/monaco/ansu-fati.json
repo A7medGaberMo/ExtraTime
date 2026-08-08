@@ -1,0 +1,32 @@
+{
+  "apiId": 135775,
+  "name": "Ansu Fati",
+  "clubs": [
+    {
+      "club": "Barcelona",
+      "appearances": 123,
+      "goals": 29
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 27,
+      "goals": 4
+    },
+    {
+      "club": "Monaco",
+      "appearances": 30,
+      "goals": 12
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 10,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 180,
+    "goals": 45
+  }
+}

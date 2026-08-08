@@ -1,0 +1,41 @@
+{
+  "apiId": 323507,
+  "name": "Dariusz Stalmach",
+  "clubs": [
+    {
+      "club": "Górnik Zabrze II",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Górnik Zabrze",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Milan Futuro",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Magdeburg",
+      "appearances": 25,
+      "goals": 2
+    },
+    {
+      "club": "1. FC Magdeburg II",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 83,
+    "goals": 5
+  }
+}

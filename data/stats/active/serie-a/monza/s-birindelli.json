@@ -1,0 +1,21 @@
+{
+  "apiId": 30708,
+  "name": "S. Birindelli",
+  "clubs": [
+    {
+      "club": "Pisa",
+      "appearances": 192,
+      "goals": 7
+    },
+    {
+      "club": "Monza",
+      "appearances": 108,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 300,
+    "goals": 14
+  }
+}

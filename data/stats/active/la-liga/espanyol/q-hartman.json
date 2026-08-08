@@ -1,0 +1,27 @@
+{
+  "apiId": 375915,
+  "name": "Q. Hartman",
+  "clubs": [
+    {
+      "club": "Feyenoord",
+      "appearances": 83,
+      "goals": 2
+    },
+    {
+      "club": "Burnley",
+      "appearances": 23,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 106,
+    "goals": 2
+  }
+}

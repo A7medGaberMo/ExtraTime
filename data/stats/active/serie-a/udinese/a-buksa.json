@@ -1,0 +1,51 @@
+{
+  "apiId": 40594,
+  "name": "A. Buksa",
+  "clubs": [
+    {
+      "club": "Lechia Gdańsk",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Zagłębie Lubin",
+      "appearances": 31,
+      "goals": 5
+    },
+    {
+      "club": "Pogoń Szczecin",
+      "appearances": 55,
+      "goals": 22
+    },
+    {
+      "club": "New England Revolution",
+      "appearances": 73,
+      "goals": 35
+    },
+    {
+      "club": "Lens",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Antalyaspor",
+      "appearances": 35,
+      "goals": 16
+    },
+    {
+      "club": "Midtjylland",
+      "appearances": 45,
+      "goals": 17
+    },
+    {
+      "club": "Udinese",
+      "appearances": 27,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 291,
+    "goals": 99
+  }
+}

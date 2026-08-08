@@ -1,0 +1,36 @@
+{
+  "apiId": 341641,
+  "name": "Rodrigo Ribeiro",
+  "clubs": [
+    {
+      "club": "Sporting CP B",
+      "appearances": 50,
+      "goals": 15
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "AVS",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 14,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 104,
+    "goals": 18
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "apiId": 127471,
+  "name": "C. Klaus",
+  "clubs": [
+    {
+      "club": "VfL Wolfsburg II",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Stuttgarter Kickers",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Baleares",
+      "appearances": 60,
+      "goals": 0
+    },
+    {
+      "club": "Darmstadt 98",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 117,
+    "goals": 0
+  }
+}

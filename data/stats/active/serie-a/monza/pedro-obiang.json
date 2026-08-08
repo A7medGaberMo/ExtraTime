@@ -1,0 +1,37 @@
+{
+  "apiId": 18824,
+  "name": "Pedro Obiang",
+  "clubs": [
+    {
+      "club": "Sampdoria",
+      "appearances": 139,
+      "goals": 4
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 116,
+      "goals": 3
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 124,
+      "goals": 2
+    },
+    {
+      "club": "Monza",
+      "appearances": 18,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Equatorial Guinea",
+      "appearances": 29,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 397,
+    "goals": 10
+  }
+}

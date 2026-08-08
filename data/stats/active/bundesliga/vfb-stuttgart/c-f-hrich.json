@@ -1,0 +1,41 @@
+{
+  "apiId": 24798,
+  "name": "C. Führich",
+  "clubs": [
+    {
+      "club": "1. FC Köln II",
+      "appearances": 64,
+      "goals": 7
+    },
+    {
+      "club": "1. FC Köln",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 24,
+      "goals": 8
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "SC Paderborn",
+      "appearances": 37,
+      "goals": 14
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 202,
+      "goals": 29
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 330,
+    "goals": 58
+  }
+}

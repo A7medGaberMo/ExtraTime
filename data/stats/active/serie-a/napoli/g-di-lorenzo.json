@@ -1,0 +1,42 @@
+{
+  "apiId": 31042,
+  "name": "G. Di Lorenzo",
+  "clubs": [
+    {
+      "club": "Reggina",
+      "appearances": 62,
+      "goals": 0
+    },
+    {
+      "club": "Cuneo",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Matera",
+      "appearances": 70,
+      "goals": 4
+    },
+    {
+      "club": "Empoli",
+      "appearances": 74,
+      "goals": 6
+    },
+    {
+      "club": "Napoli",
+      "appearances": 305,
+      "goals": 20
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 53,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 539,
+    "goals": 30
+  }
+}

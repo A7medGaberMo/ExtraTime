@@ -1,0 +1,56 @@
+{
+  "apiId": 56459,
+  "name": "W. Falcone",
+  "clubs": [
+    {
+      "club": "Sampdoria",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Como",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Savona",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Livorno",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Bassano Virtus",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Gavorrano",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Lucchese",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Cosenza",
+      "appearances": 38,
+      "goals": 0
+    },
+    {
+      "club": "Lecce",
+      "appearances": 156,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 308,
+    "goals": 0
+  }
+}

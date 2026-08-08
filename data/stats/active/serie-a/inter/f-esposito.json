@@ -1,0 +1,27 @@
+{
+  "apiId": 345808,
+  "name": "F. Esposito",
+  "clubs": [
+    {
+      "club": "Spezia",
+      "appearances": 79,
+      "goals": 22
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 50,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 9,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 129,
+    "goals": 33
+  }
+}

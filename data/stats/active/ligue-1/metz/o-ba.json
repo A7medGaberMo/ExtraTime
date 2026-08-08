@@ -1,0 +1,31 @@
+{
+  "apiId": 237198,
+  "name": "O. Ba",
+  "clubs": [
+    {
+      "club": "Metz B",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Metz",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Cholet",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Seraing",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 48,
+    "goals": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiId": 725,
+  "name": "R. Hack",
+  "clubs": [
+    {
+      "club": "Nürnberg",
+      "appearances": 59,
+      "goals": 14
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 68,
+      "goals": 11
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 76,
+      "goals": 20
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 203,
+    "goals": 45
+  }
+}

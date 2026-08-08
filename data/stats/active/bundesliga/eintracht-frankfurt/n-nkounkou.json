@@ -1,0 +1,46 @@
+{
+  "apiId": 156490,
+  "name": "N. Nkounkou",
+  "clubs": [
+    {
+      "club": "Marseille B",
+      "appearances": 43,
+      "goals": 4
+    },
+    {
+      "club": "Everton",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Standard Liège",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Cardiff City",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Saint-Étienne",
+      "appearances": 21,
+      "goals": 6
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 64,
+      "goals": 3
+    },
+    {
+      "club": "Torino",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 191,
+    "goals": 13
+  }
+}

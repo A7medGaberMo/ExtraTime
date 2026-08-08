@@ -1,0 +1,42 @@
+{
+  "apiId": 1578,
+  "name": "G. Lo Celso",
+  "clubs": [
+    {
+      "club": "Rosario Central",
+      "appearances": 54,
+      "goals": 3
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 54,
+      "goals": 6
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 111,
+      "goals": 28
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 108,
+      "goals": 11
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 51,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 68,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 378,
+    "goals": 51
+  }
+}

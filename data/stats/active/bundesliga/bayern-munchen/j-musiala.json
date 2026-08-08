@@ -1,0 +1,27 @@
+{
+  "apiId": 181812,
+  "name": "J. Musiala",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 231,
+      "goals": 69
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 46,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 241,
+    "goals": 71
+  }
+}

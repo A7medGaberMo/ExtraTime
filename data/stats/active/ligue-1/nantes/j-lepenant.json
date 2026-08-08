@@ -1,0 +1,36 @@
+{
+  "apiId": 193952,
+  "name": "J. Lepenant",
+  "clubs": [
+    {
+      "club": "Caen II",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Caen",
+      "appearances": 56,
+      "goals": 0
+    },
+    {
+      "club": "Lyon",
+      "appearances": 40,
+      "goals": 1
+    },
+    {
+      "club": "Lyon B",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Nantes",
+      "appearances": 59,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 166,
+    "goals": 3
+  }
+}

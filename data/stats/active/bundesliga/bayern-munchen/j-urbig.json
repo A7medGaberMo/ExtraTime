@@ -1,0 +1,36 @@
+{
+  "apiId": 203376,
+  "name": "J. Urbig",
+  "clubs": [
+    {
+      "club": "1. FC Köln II",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Köln",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Jahn Regensburg",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Greuther Fürth",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 32,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 121,
+    "goals": 0
+  }
+}

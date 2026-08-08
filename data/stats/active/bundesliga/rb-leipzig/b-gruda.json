@@ -1,0 +1,26 @@
+{
+  "apiId": 328225,
+  "name": "B. Gruda",
+  "clubs": [
+    {
+      "club": "Mainz 05",
+      "appearances": 32,
+      "goals": 4
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 45,
+      "goals": 4
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 14,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 91,
+    "goals": 11
+  }
+}

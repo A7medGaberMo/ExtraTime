@@ -1,0 +1,47 @@
+{
+  "apiId": 21694,
+  "name": "N. Aguerd",
+  "clubs": [
+    {
+      "club": "FUS Rabat",
+      "appearances": 88,
+      "goals": 6
+    },
+    {
+      "club": "Dijon",
+      "appearances": 29,
+      "goals": 4
+    },
+    {
+      "club": "Rennes",
+      "appearances": 80,
+      "goals": 7
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 61,
+      "goals": 4
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 23,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Morocco",
+      "appearances": 64,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 317,
+    "goals": 22
+  }
+}

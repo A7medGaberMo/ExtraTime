@@ -1,0 +1,51 @@
+{
+  "apiId": 32034,
+  "name": "A. Dossena",
+  "clubs": [
+    {
+      "club": "Atalanta",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Perugia",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Siena",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Pistoiese",
+      "appearances": 30,
+      "goals": 0
+    },
+    {
+      "club": "Alessandria",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Avellino",
+      "appearances": 58,
+      "goals": 3
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 64,
+      "goals": 3
+    },
+    {
+      "club": "Como",
+      "appearances": 23,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 220,
+    "goals": 7
+  }
+}

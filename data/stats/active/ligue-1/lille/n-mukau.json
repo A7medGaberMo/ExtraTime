@@ -1,0 +1,27 @@
+{
+  "apiId": 375598,
+  "name": "N. Mukau",
+  "clubs": [
+    {
+      "club": "Mechelen",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Lille",
+      "appearances": 77,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "DR Congo",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 114,
+    "goals": 4
+  }
+}

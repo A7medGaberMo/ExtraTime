@@ -1,0 +1,31 @@
+{
+  "apiId": 20525,
+  "name": "M. Udol",
+  "clubs": [
+    {
+      "club": "Metz B",
+      "appearances": 51,
+      "goals": 4
+    },
+    {
+      "club": "Metz",
+      "appearances": 185,
+      "goals": 13
+    },
+    {
+      "club": "Seraing",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "club": "Lens",
+      "appearances": 40,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 289,
+    "goals": 22
+  }
+}

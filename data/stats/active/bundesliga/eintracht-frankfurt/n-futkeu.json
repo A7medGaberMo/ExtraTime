@@ -1,0 +1,41 @@
+{
+  "apiId": 196500,
+  "name": "N. Futkeu",
+  "clubs": [
+    {
+      "club": "Rot-Weiss Essen",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Köln II",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Schwarz-Weiß Essen",
+      "appearances": 34,
+      "goals": 32
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Eintracht Frankfurt II",
+      "appearances": 27,
+      "goals": 16
+    },
+    {
+      "club": "Greuther Fürth",
+      "appearances": 71,
+      "goals": 31
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 157,
+    "goals": 81
+  }
+}

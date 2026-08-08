@@ -1,0 +1,26 @@
+{
+  "apiId": 15901,
+  "name": "M. Pedersen",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 94,
+      "goals": 3
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 120,
+      "goals": 4
+    },
+    {
+      "club": "FC Zürich",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 216,
+    "goals": 7
+  }
+}

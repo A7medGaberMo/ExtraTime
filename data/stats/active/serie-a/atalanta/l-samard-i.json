@@ -1,0 +1,37 @@
+{
+  "apiId": 178749,
+  "name": "L. Samardžić",
+  "clubs": [
+    {
+      "club": "Hertha BSC",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Udinese",
+      "appearances": 98,
+      "goals": 13
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 80,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Serbia",
+      "appearances": 28,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 190,
+    "goals": 24
+  }
+}

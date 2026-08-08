@@ -1,0 +1,41 @@
+{
+  "apiId": 47251,
+  "name": "D. Foulquier",
+  "clubs": [
+    {
+      "club": "Rennes",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Granada",
+      "appearances": 166,
+      "goals": 3
+    },
+    {
+      "club": "Watford",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Getafe",
+      "appearances": 29,
+      "goals": 3
+    },
+    {
+      "club": "Valencia",
+      "appearances": 104,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 345,
+    "goals": 6
+  }
+}

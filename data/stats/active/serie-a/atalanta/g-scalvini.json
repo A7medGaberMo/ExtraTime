@@ -1,0 +1,22 @@
+{
+  "apiId": 289761,
+  "name": "G. Scalvini",
+  "clubs": [
+    {
+      "club": "Atalanta",
+      "appearances": 137,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 137,
+    "goals": 8
+  }
+}

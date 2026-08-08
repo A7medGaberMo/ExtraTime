@@ -1,0 +1,46 @@
+{
+  "apiId": 1775,
+  "name": "S. Gigot",
+  "clubs": [
+    {
+      "club": "Arles-Avignon B",
+      "appearances": 17,
+      "goals": 5
+    },
+    {
+      "club": "Arles-Avignon",
+      "appearances": 39,
+      "goals": 4
+    },
+    {
+      "club": "Kortrijk",
+      "appearances": 53,
+      "goals": 2
+    },
+    {
+      "club": "Gent",
+      "appearances": 64,
+      "goals": 2
+    },
+    {
+      "club": "Spartak Moscow",
+      "appearances": 110,
+      "goals": 10
+    },
+    {
+      "club": "Marseille",
+      "appearances": 66,
+      "goals": 5
+    },
+    {
+      "club": "Lazio",
+      "appearances": 23,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 372,
+    "goals": 30
+  }
+}

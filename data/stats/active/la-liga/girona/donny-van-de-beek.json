@@ -1,0 +1,41 @@
+{
+  "apiId": 286,
+  "name": "Donny van de Beek",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 35,
+      "goals": 8
+    },
+    {
+      "club": "Ajax",
+      "appearances": 175,
+      "goals": 41
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 62,
+      "goals": 2
+    },
+    {
+      "club": "Everton",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Girona",
+      "appearances": 37,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 324,
+    "goals": 55
+  }
+}

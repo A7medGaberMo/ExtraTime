@@ -1,0 +1,42 @@
+{
+  "apiId": 25282,
+  "name": "G. Kobel",
+  "clubs": [
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 43,
+      "goals": 0
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 65,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 216,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland",
+      "appearances": 27,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 348,
+    "goals": 0
+  }
+}

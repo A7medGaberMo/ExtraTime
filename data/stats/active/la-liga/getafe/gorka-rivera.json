@@ -1,0 +1,21 @@
+{
+  "apiId": 333373,
+  "name": "Gorka Rivera",
+  "clubs": [
+    {
+      "club": "Getafe B",
+      "appearances": 48,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 49,
+    "goals": 1
+  }
+}

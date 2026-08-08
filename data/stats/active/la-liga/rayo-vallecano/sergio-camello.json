@@ -1,0 +1,31 @@
+{
+  "apiId": 52,
+  "name": "Sergio Camello",
+  "clubs": [
+    {
+      "club": "Atlético Madrid B",
+      "appearances": 58,
+      "goals": 16
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Mirandés",
+      "appearances": 37,
+      "goals": 15
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 138,
+      "goals": 22
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 239,
+    "goals": 54
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "apiId": 30396,
+  "name": "C. Biraghi",
+  "clubs": [
+    {
+      "club": "Internazionale",
+      "appearances": 39,
+      "goals": 3
+    },
+    {
+      "club": "Juve Stabia",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Cittadella",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Catania",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Chievo",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Granada",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Pescara",
+      "appearances": 37,
+      "goals": 1
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 266,
+      "goals": 15
+    },
+    {
+      "club": "Torino",
+      "appearances": 30,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 16,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 495,
+    "goals": 19
+  }
+}

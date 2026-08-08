@@ -1,0 +1,42 @@
+{
+  "apiId": 875,
+  "name": "P. Dybala",
+  "clubs": [
+    {
+      "club": "Instituto de Córdoba",
+      "appearances": 40,
+      "goals": 17
+    },
+    {
+      "club": "Palermo",
+      "appearances": 93,
+      "goals": 21
+    },
+    {
+      "club": "Juventus",
+      "appearances": 293,
+      "goals": 115
+    },
+    {
+      "club": "Roma",
+      "appearances": 140,
+      "goals": 45
+    }
+  ],
+  "national": [
+    {
+      "team": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Argentina",
+      "appearances": 40,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 566,
+    "goals": 198
+  }
+}

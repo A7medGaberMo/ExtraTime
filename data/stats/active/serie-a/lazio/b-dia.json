@@ -1,0 +1,47 @@
+{
+  "apiId": 22015,
+  "name": "B. Dia",
+  "clubs": [
+    {
+      "club": "Jura Sud",
+      "appearances": 21,
+      "goals": 15
+    },
+    {
+      "club": "Reims II",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "Reims",
+      "appearances": 88,
+      "goals": 28
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 35,
+      "goals": 7
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 52,
+      "goals": 22
+    },
+    {
+      "club": "Lazio",
+      "appearances": 78,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 38,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 280,
+    "goals": 88
+  }
+}

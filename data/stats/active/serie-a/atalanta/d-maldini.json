@@ -1,0 +1,47 @@
+{
+  "apiId": 134926,
+  "name": "D. Maldini",
+  "clubs": [
+    {
+      "club": "AC Milan",
+      "appearances": 24,
+      "goals": 1
+    },
+    {
+      "club": "Spezia",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Empoli",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Monza",
+      "appearances": 32,
+      "goals": 7
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "Lazio",
+      "appearances": 14,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 119,
+    "goals": 16
+  }
+}

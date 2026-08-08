@@ -1,0 +1,42 @@
+{
+  "apiId": 130423,
+  "name": "B. Gilmour",
+  "clubs": [
+    {
+      "club": "Chelsea U21",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 60,
+      "goals": 0
+    },
+    {
+      "club": "Napoli",
+      "appearances": 48,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 46,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 166,
+    "goals": 1
+  }
+}

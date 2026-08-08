@@ -1,0 +1,46 @@
+{
+  "apiId": 46824,
+  "name": "Iván Alejo",
+  "clubs": [
+    {
+      "club": "Atlético Madrid B",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Villarreal B",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Alcorcón",
+      "appearances": 35,
+      "goals": 3
+    },
+    {
+      "club": "Eibar",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Málaga",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Cádiz",
+      "appearances": 113,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 228,
+    "goals": 10
+  }
+}

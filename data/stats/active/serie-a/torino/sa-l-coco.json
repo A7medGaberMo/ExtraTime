@@ -1,0 +1,21 @@
+{
+  "apiId": 122468,
+  "name": "Saúl Coco",
+  "clubs": [
+    {
+      "club": "Las Palmas",
+      "appearances": 84,
+      "goals": 2
+    },
+    {
+      "club": "Torino",
+      "appearances": 42,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 126,
+    "goals": 5
+  }
+}

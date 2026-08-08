@@ -1,0 +1,36 @@
+{
+  "apiId": 20641,
+  "name": "J. Ponceau",
+  "clubs": [
+    {
+      "club": "Lorient II",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "Lorient",
+      "appearances": 132,
+      "goals": 10
+    },
+    {
+      "club": "Rodez II",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "Rodez",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Nîmes",
+      "appearances": 41,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 234,
+    "goals": 16
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 9700,
+  "name": "Abner",
+  "clubs": [
+    {
+      "club": "Ponte Preta",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Athletico Paranaense",
+      "appearances": 138,
+      "goals": 5
+    },
+    {
+      "club": "Betis",
+      "appearances": 45,
+      "goals": 0
+    },
+    {
+      "club": "Lyon",
+      "appearances": 64,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 260,
+    "goals": 13
+  }
+}

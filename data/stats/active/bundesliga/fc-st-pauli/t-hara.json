@@ -1,0 +1,47 @@
+{
+  "apiId": 32871,
+  "name": "T. Hara",
+  "clubs": [
+    {
+      "club": "FC Tokyo",
+      "appearances": 38,
+      "goals": 3
+    },
+    {
+      "club": "Istra 1961",
+      "appearances": 18,
+      "goals": 8
+    },
+    {
+      "club": "Alavés",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Sint-Truidense",
+      "appearances": 40,
+      "goals": 8
+    },
+    {
+      "club": "Kyoto Sanga",
+      "appearances": 91,
+      "goals": 22
+    },
+    {
+      "club": "St. Pauli",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 208,
+    "goals": 43
+  }
+}

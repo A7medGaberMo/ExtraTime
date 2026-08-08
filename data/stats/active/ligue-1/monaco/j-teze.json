@@ -1,0 +1,32 @@
+{
+  "apiId": 231,
+  "name": "J. Teze",
+  "clubs": [
+    {
+      "club": "Jong PSV",
+      "appearances": 45,
+      "goals": 4
+    },
+    {
+      "club": "PSV",
+      "appearances": 189,
+      "goals": 4
+    },
+    {
+      "club": "Monaco",
+      "appearances": 66,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 300,
+    "goals": 13
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "apiId": 263482,
+  "name": "Nuno Mendes",
+  "clubs": [
+    {
+      "club": "Sporting CP",
+      "appearances": 47,
+      "goals": 1
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 177,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 49,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 224,
+    "goals": 15
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "apiId": 47895,
+  "name": "I. Lidberg",
+  "clubs": [
+    {
+      "club": "Hammarby IF",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Enskede IK (on loan)",
+      "appearances": 14,
+      "goals": 6
+    },
+    {
+      "club": "Åtvidabergs FF",
+      "appearances": 22,
+      "goals": 5
+    },
+    {
+      "club": "Start",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Jerv",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "HamKam",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Brommapojkarna",
+      "appearances": 18,
+      "goals": 3
+    },
+    {
+      "club": "Gefle",
+      "appearances": 37,
+      "goals": 22
+    },
+    {
+      "club": "Go Ahead Eagles",
+      "appearances": 72,
+      "goals": 14
+    },
+    {
+      "club": "Utrecht",
+      "appearances": 22,
+      "goals": 5
+    },
+    {
+      "club": "Darmstadt 98",
+      "appearances": 64,
+      "goals": 32
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 273,
+    "goals": 87
+  }
+}

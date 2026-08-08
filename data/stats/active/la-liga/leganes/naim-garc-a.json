@@ -1,0 +1,26 @@
+{
+  "apiId": 327622,
+  "name": "Naim García",
+  "clubs": [
+    {
+      "club": "Leganés",
+      "appearances": 54,
+      "goals": 4
+    },
+    {
+      "club": "Ponferradina",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Barcelona B",
+      "appearances": 16,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 86,
+    "goals": 9
+  }
+}

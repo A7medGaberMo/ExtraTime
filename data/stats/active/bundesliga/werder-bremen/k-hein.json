@@ -1,0 +1,47 @@
+{
+  "apiId": 169295,
+  "name": "K. Hein",
+  "clubs": [
+    {
+      "club": "Nõmme United",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Reading",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Real Valladolid",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Estonia",
+      "appearances": 47,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 49,
+    "goals": 0
+  }
+}

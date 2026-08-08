@@ -1,0 +1,36 @@
+{
+  "apiId": 46646,
+  "name": "Sergio Herrera",
+  "clubs": [
+    {
+      "club": "Alavés",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Laudio",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Amorebieta",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Huesca",
+      "appearances": 43,
+      "goals": 0
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 267,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 358,
+    "goals": 0
+  }
+}

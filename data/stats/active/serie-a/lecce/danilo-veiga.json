@@ -1,0 +1,36 @@
+{
+  "apiId": 161702,
+  "name": "Danilo Veiga",
+  "clubs": [
+    {
+      "club": "Felgueiras",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Gil Vicente",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Rijeka",
+      "appearances": 36,
+      "goals": 1
+    },
+    {
+      "club": "Estrela da Amadora",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Lecce",
+      "appearances": 38,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 119,
+    "goals": 1
+  }
+}

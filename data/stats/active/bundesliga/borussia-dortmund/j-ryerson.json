@@ -1,0 +1,32 @@
+{
+  "apiId": 24845,
+  "name": "J. Ryerson",
+  "clubs": [
+    {
+      "club": "Viking",
+      "appearances": 65,
+      "goals": 7
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 108,
+      "goals": 3
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 143,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 47,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 316,
+    "goals": 17
+  }
+}

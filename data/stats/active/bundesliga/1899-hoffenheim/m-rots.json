@@ -1,0 +1,21 @@
+{
+  "apiId": 408853,
+  "name": "M. Rots",
+  "clubs": [
+    {
+      "club": "Twente",
+      "appearances": 43,
+      "goals": 5
+    },
+    {
+      "club": "Heracles",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 61,
+    "goals": 7
+  }
+}

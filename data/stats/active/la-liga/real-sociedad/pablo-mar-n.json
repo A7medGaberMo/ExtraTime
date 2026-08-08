@@ -1,0 +1,26 @@
+{
+  "apiId": 290106,
+  "name": "Pablo Marín",
+  "clubs": [
+    {
+      "club": "Real Sociedad C",
+      "appearances": 22,
+      "goals": 7
+    },
+    {
+      "club": "Real Sociedad B",
+      "appearances": 56,
+      "goals": 7
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 94,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 172,
+    "goals": 17
+  }
+}

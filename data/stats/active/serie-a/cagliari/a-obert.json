@@ -1,0 +1,22 @@
+{
+  "apiId": 321744,
+  "name": "A. Obert",
+  "clubs": [
+    {
+      "club": "Cagliari",
+      "appearances": 123,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia",
+      "appearances": 21,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 123,
+    "goals": 1
+  }
+}

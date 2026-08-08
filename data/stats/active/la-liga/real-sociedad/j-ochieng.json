@@ -1,0 +1,32 @@
+{
+  "apiId": 387139,
+  "name": "J. Ochieng",
+  "clubs": [
+    {
+      "club": "Real Sociedad C",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Real Sociedad B",
+      "appearances": 67,
+      "goals": 10
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Kenya",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 78,
+    "goals": 10
+  }
+}

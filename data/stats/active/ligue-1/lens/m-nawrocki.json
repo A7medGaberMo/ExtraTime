@@ -1,0 +1,51 @@
+{
+  "apiId": 178708,
+  "name": "M. Nawrocki",
+  "clubs": [
+    {
+      "club": "Werder Bremen II",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Warta Poznań",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "club": "Legia Warsaw",
+      "appearances": 60,
+      "goals": 5
+    },
+    {
+      "club": "Legia Warsaw II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Celtic",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Hannover 96",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Hannover 96 II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Lens",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 108,
+    "goals": 11
+  }
+}

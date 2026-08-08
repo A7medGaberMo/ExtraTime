@@ -1,0 +1,42 @@
+{
+  "apiId": 137210,
+  "name": "A. Stiller",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 50,
+      "goals": 1
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 52,
+      "goals": 4
+    },
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 133,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 240,
+    "goals": 12
+  }
+}

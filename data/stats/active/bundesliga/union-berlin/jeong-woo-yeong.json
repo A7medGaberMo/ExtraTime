@@ -1,0 +1,47 @@
+{
+  "apiId": 512,
+  "name": "Jeong Woo-Yeong",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 46,
+      "goals": 14
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 100,
+      "goals": 11
+    },
+    {
+      "club": "SC Freiburg II",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 29,
+      "goals": 2
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 54,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "South Korea",
+      "appearances": 22,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 237,
+    "goals": 37
+  }
+}

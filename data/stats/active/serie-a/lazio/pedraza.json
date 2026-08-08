@@ -1,0 +1,41 @@
+{
+  "apiId": 1702,
+  "name": "Pedraza",
+  "clubs": [
+    {
+      "club": "Villarreal B",
+      "appearances": 43,
+      "goals": 7
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 235,
+      "goals": 13
+    },
+    {
+      "club": "Lugo",
+      "appearances": 23,
+      "goals": 6
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Alavés",
+      "appearances": 37,
+      "goals": 4
+    },
+    {
+      "club": "Betis",
+      "appearances": 22,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 374,
+    "goals": 32
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 403878,
+  "name": "P. Sy",
+  "clubs": [
+    {
+      "club": "League",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Génération Foot",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Seraing",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Metz II",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Metz",
+      "appearances": 14,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 33,
+    "goals": 0
+  }
+}

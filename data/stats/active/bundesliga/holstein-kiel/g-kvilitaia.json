@@ -1,0 +1,62 @@
+{
+  "apiId": 8490,
+  "name": "G. Kvilitaia",
+  "clubs": [
+    {
+      "club": "Győr",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Dila Gori",
+      "appearances": 21,
+      "goals": 6
+    },
+    {
+      "club": "Dinamo Tbilisi",
+      "appearances": 41,
+      "goals": 30
+    },
+    {
+      "club": "Rapid Wien",
+      "appearances": 67,
+      "goals": 22
+    },
+    {
+      "club": "Gent",
+      "appearances": 46,
+      "goals": 7
+    },
+    {
+      "club": "Anorthosis",
+      "appearances": 37,
+      "goals": 15
+    },
+    {
+      "club": "APOEL",
+      "appearances": 96,
+      "goals": 33
+    },
+    {
+      "club": "Aris",
+      "appearances": 50,
+      "goals": 17
+    },
+    {
+      "club": "Metz",
+      "appearances": 10,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Georgia",
+      "appearances": 43,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 387,
+    "goals": 132
+  }
+}

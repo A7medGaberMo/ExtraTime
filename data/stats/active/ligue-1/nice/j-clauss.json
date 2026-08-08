@@ -1,0 +1,72 @@
+{
+  "apiId": 25008,
+  "name": "J. Clauss",
+  "clubs": [
+    {
+      "club": "SV Linx",
+      "appearances": 62,
+      "goals": 15
+    },
+    {
+      "club": "Raon-l'Étape",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Avranches",
+      "appearances": 35,
+      "goals": 2
+    },
+    {
+      "club": "Avranches B",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Quevilly-Rouen",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Quevilly-Rouen B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 65,
+      "goals": 8
+    },
+    {
+      "club": "Lens B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Lens",
+      "appearances": 74,
+      "goals": 4
+    },
+    {
+      "club": "Marseille",
+      "appearances": 85,
+      "goals": 7
+    },
+    {
+      "club": "Nice",
+      "appearances": 84,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 14,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 463,
+    "goals": 42
+  }
+}

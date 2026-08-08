@@ -1,0 +1,37 @@
+{
+  "apiId": 1930,
+  "name": "J. Mæhle",
+  "clubs": [
+    {
+      "club": "AaB",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Genk",
+      "appearances": 130,
+      "goals": 6
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 96,
+      "goals": 6
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 84,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 59,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 337,
+    "goals": 19
+  }
+}

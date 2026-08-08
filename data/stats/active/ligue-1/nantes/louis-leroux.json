@@ -1,0 +1,21 @@
+{
+  "apiId": 443674,
+  "name": "Louis Leroux",
+  "clubs": [
+    {
+      "club": "Nantes B",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Nantes",
+      "appearances": 39,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 55,
+    "goals": 4
+  }
+}

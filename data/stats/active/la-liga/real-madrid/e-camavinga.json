@@ -1,0 +1,32 @@
+{
+  "apiId": 2207,
+  "name": "E. Camavinga",
+  "clubs": [
+    {
+      "club": "Rennes II",
+      "appearances": 13,
+      "goals": 4
+    },
+    {
+      "club": "Rennes",
+      "appearances": 88,
+      "goals": 2
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 223,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 29,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 324,
+    "goals": 12
+  }
+}

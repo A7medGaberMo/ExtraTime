@@ -1,0 +1,36 @@
+{
+  "apiId": 128582,
+  "name": "Jorge de Frutos",
+  "clubs": [
+    {
+      "club": "Rayo Majadahonda",
+      "appearances": 54,
+      "goals": 10
+    },
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 37,
+      "goals": 7
+    },
+    {
+      "club": "Real Valladolid",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 150,
+      "goals": 24
+    },
+    {
+      "club": "Levante",
+      "appearances": 112,
+      "goals": 13
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 358,
+    "goals": 54
+  }
+}

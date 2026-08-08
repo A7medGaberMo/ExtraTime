@@ -1,0 +1,26 @@
+{
+  "apiId": 20761,
+  "name": "F. Sotoca",
+  "clubs": [
+    {
+      "club": "Montpellier",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Grenoble",
+      "appearances": 106,
+      "goals": 31
+    },
+    {
+      "club": "Lens",
+      "appearances": 250,
+      "goals": 42
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 358,
+    "goals": 73
+  }
+}

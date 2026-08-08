@@ -1,0 +1,62 @@
+{
+  "apiId": 83,
+  "name": "A. Danjuma",
+  "clubs": [
+    {
+      "club": "Jong PSV",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "NEC",
+      "appearances": 46,
+      "goals": 14
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 25,
+      "goals": 6
+    },
+    {
+      "club": "AFC Bournemouth",
+      "appearances": 52,
+      "goals": 17
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 54,
+      "goals": 24
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Everton",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Girona",
+      "appearances": 34,
+      "goals": 3
+    },
+    {
+      "club": "Valencia",
+      "appearances": 34,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 6,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 278,
+    "goals": 72
+  }
+}

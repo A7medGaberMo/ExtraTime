@@ -1,0 +1,47 @@
+{
+  "apiId": 2763,
+  "name": "Mario Pasalic",
+  "clubs": [
+    {
+      "club": "Hajduk Split",
+      "appearances": 39,
+      "goals": 11
+    },
+    {
+      "club": "Elche",
+      "appearances": 35,
+      "goals": 3
+    },
+    {
+      "club": "Monaco",
+      "appearances": 29,
+      "goals": 7
+    },
+    {
+      "club": "Milan",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Spartak Moscow",
+      "appearances": 32,
+      "goals": 5
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 344,
+      "goals": 69
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 89,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 506,
+    "goals": 100
+  }
+}

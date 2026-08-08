@@ -1,0 +1,26 @@
+{
+  "apiId": 405241,
+  "name": "A. Przyborek",
+  "clubs": [
+    {
+      "club": "Pogoń Szczecin II",
+      "appearances": 10,
+      "goals": 3
+    },
+    {
+      "club": "Pogoń Szczecin",
+      "appearances": 83,
+      "goals": 5
+    },
+    {
+      "club": "Lazio",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 94,
+    "goals": 8
+  }
+}

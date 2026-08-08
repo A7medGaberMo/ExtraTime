@@ -1,0 +1,47 @@
+{
+  "apiId": 15843,
+  "name": "O. Christensen",
+  "clubs": [
+    {
+      "club": "OB",
+      "appearances": 52,
+      "goals": 0
+    },
+    {
+      "club": "Hertha BSC II",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 38,
+      "goals": 0
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Sturm Graz",
+      "appearances": 23,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 150,
+    "goals": 0
+  }
+}

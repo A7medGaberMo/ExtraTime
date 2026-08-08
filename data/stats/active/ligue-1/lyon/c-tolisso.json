@@ -1,0 +1,27 @@
+{
+  "apiId": 519,
+  "name": "C. Tolisso",
+  "clubs": [
+    {
+      "club": "Lyon",
+      "appearances": 310,
+      "goals": 57
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 118,
+      "goals": 21
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 28,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 428,
+    "goals": 78
+  }
+}

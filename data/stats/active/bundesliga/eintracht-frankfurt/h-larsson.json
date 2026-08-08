@@ -1,0 +1,27 @@
+{
+  "apiId": 335094,
+  "name": "H. Larsson",
+  "clubs": [
+    {
+      "club": "Malmö FF",
+      "appearances": 61,
+      "goals": 3
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 119,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 180,
+    "goals": 12
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "apiId": 6662,
+  "name": "S. Pierotti",
+  "clubs": [
+    {
+      "club": "Colón",
+      "appearances": 117,
+      "goals": 10
+    },
+    {
+      "club": "Lecce",
+      "appearances": 78,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 195,
+    "goals": 15
+  }
+}

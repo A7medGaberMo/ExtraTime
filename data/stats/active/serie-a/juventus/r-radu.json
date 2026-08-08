@@ -1,0 +1,52 @@
+{
+  "apiId": 597936,
+  "name": "R. Radu",
+  "clubs": [
+    {
+      "club": "Juventus U23",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Juventus",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Genoa",
+      "appearances": 62,
+      "goals": 6
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 48,
+      "goals": 0
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Romania",
+      "appearances": 30,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 151,
+    "goals": 7
+  }
+}

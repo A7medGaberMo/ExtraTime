@@ -1,0 +1,42 @@
+{
+  "apiId": 636,
+  "name": "Bernardo Silva",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 38,
+      "goals": 7
+    },
+    {
+      "club": "Benfica",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Monaco",
+      "appearances": 147,
+      "goals": 28
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 460,
+      "goals": 76
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 113,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 648,
+    "goals": 111
+  }
+}

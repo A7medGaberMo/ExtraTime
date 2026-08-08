@@ -1,0 +1,51 @@
+{
+  "apiId": 38112,
+  "name": "J. Chabot",
+  "clubs": [
+    {
+      "club": "RB Leipzig II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Sparta Rotterdam",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "Jong Sparta Rotterdam",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Groningen",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Spezia",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Köln",
+      "appearances": 61,
+      "goals": 1
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 86,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 236,
+    "goals": 9
+  }
+}

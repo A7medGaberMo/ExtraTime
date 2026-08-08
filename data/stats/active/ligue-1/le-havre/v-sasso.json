@@ -1,0 +1,61 @@
+{
+  "apiId": 41238,
+  "name": "V. Sasso",
+  "clubs": [
+    {
+      "club": "Nantes",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Beira-Mar",
+      "appearances": 22,
+      "goals": 2
+    },
+    {
+      "club": "Braga",
+      "appearances": 28,
+      "goals": 2
+    },
+    {
+      "club": "Braga B",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Sheffield Wednesday",
+      "appearances": 32,
+      "goals": 2
+    },
+    {
+      "club": "Belenenses",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "B-SAD",
+      "appearances": 34,
+      "goals": 3
+    },
+    {
+      "club": "Servette",
+      "appearances": 91,
+      "goals": 2
+    },
+    {
+      "club": "Boavista",
+      "appearances": 45,
+      "goals": 6
+    },
+    {
+      "club": "Dunkerque",
+      "appearances": 37,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 346,
+    "goals": 25
+  }
+}

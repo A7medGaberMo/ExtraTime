@@ -1,0 +1,37 @@
+{
+  "apiId": 9971,
+  "name": "Antony",
+  "clubs": [
+    {
+      "club": "São Paulo",
+      "appearances": 52,
+      "goals": 6
+    },
+    {
+      "club": "Ajax",
+      "appearances": 82,
+      "goals": 25
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 96,
+      "goals": 12
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 72,
+      "goals": 23
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 16,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 302,
+    "goals": 66
+  }
+}

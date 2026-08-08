@@ -1,0 +1,42 @@
+{
+  "apiId": 737,
+  "name": "Odriozola",
+  "clubs": [
+    {
+      "club": "Real Sociedad B",
+      "appearances": 86,
+      "goals": 3
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 89,
+      "goals": 2
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 49,
+      "goals": 3
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 27,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 256,
+    "goals": 9
+  }
+}

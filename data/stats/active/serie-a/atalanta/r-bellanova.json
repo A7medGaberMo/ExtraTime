@@ -1,0 +1,47 @@
+{
+  "apiId": 91422,
+  "name": "R. Bellanova",
+  "clubs": [
+    {
+      "club": "Bordeaux",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 80,
+      "goals": 1
+    },
+    {
+      "club": "Pescara",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Torino",
+      "appearances": 41,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 206,
+    "goals": 3
+  }
+}

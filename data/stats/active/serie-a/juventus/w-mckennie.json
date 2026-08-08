@@ -1,0 +1,32 @@
+{
+  "apiId": 415,
+  "name": "W. McKennie",
+  "clubs": [
+    {
+      "club": "Schalke 04",
+      "appearances": 91,
+      "goals": 5
+    },
+    {
+      "club": "Juventus",
+      "appearances": 230,
+      "goals": 27
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 20,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 71,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 341,
+    "goals": 32
+  }
+}

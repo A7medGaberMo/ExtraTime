@@ -1,0 +1,31 @@
+{
+  "apiId": 30505,
+  "name": "M. Adopo",
+  "clubs": [
+    {
+      "club": "Torino",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Viterbese",
+      "appearances": 53,
+      "goals": 3
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 60,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 137,
+    "goals": 6
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "apiId": 1457,
+  "name": "H. Mkhitaryan",
+  "clubs": [
+    {
+      "club": "Pyunik",
+      "appearances": 87,
+      "goals": 35
+    },
+    {
+      "club": "Metalurh Donetsk",
+      "appearances": 45,
+      "goals": 17
+    },
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 106,
+      "goals": 44
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 140,
+      "goals": 41
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 63,
+      "goals": 13
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 58,
+      "goals": 9
+    },
+    {
+      "club": "Roma",
+      "appearances": 117,
+      "goals": 29
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 187,
+      "goals": 12
+    }
+  ],
+  "national": [
+    {
+      "team": "Armenia",
+      "appearances": 95,
+      "goals": 32
+    }
+  ],
+  "careerTotal": {
+    "appearances": 803,
+    "goals": 200
+  }
+}

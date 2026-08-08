@@ -1,0 +1,47 @@
+{
+  "apiId": 778,
+  "name": "B. Cristante",
+  "clubs": [
+    {
+      "club": "AC Milan",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Benfica",
+      "appearances": 20,
+      "goals": 1
+    },
+    {
+      "club": "Palermo",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Pescara",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 59,
+      "goals": 15
+    },
+    {
+      "club": "Roma",
+      "appearances": 363,
+      "goals": 21
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 48,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 469,
+    "goals": 38
+  }
+}

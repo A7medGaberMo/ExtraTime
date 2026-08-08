@@ -1,0 +1,37 @@
+{
+  "apiId": 44814,
+  "name": "L. Ferguson",
+  "clubs": [
+    {
+      "club": "Hamilton Academical U20s",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Hamilton Academical",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Aberdeen",
+      "appearances": 169,
+      "goals": 37
+    },
+    {
+      "club": "Bologna",
+      "appearances": 135,
+      "goals": 15
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 27,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 320,
+    "goals": 52
+  }
+}

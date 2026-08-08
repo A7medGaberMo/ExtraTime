@@ -1,0 +1,62 @@
+{
+  "apiId": 47302,
+  "name": "Diego Llorente",
+  "clubs": [
+    {
+      "club": "Real Madrid C",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Real Madrid B",
+      "appearances": 63,
+      "goals": 3
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 37,
+      "goals": 4
+    },
+    {
+      "club": "Málaga",
+      "appearances": 27,
+      "goals": 2
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 88,
+      "goals": 8
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 59,
+      "goals": 4
+    },
+    {
+      "club": "Roma",
+      "appearances": 53,
+      "goals": 1
+    },
+    {
+      "club": "Betis",
+      "appearances": 71,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 430,
+    "goals": 27
+  }
+}

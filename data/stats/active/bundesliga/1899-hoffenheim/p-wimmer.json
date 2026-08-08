@@ -1,0 +1,37 @@
+{
+  "apiId": 126642,
+  "name": "P. Wimmer",
+  "clubs": [
+    {
+      "club": "Austria Wien II",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Austria Wien",
+      "appearances": 57,
+      "goals": 8
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 32,
+      "goals": 3
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 104,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Austria",
+      "appearances": 32,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 208,
+    "goals": 27
+  }
+}

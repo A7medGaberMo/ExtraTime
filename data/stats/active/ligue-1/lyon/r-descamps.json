@@ -1,0 +1,51 @@
+{
+  "apiId": 20762,
+  "name": "R. Descamps",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain B",
+      "appearances": 59,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Tours",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Clermont",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Clermont B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Charleroi",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Nantes",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Lyon",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 158,
+    "goals": 0
+  }
+}

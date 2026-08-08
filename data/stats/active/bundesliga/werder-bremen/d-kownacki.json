@@ -1,0 +1,47 @@
+{
+  "apiId": 3013,
+  "name": "D. Kownacki",
+  "clubs": [
+    {
+      "club": "Lech Poznań II",
+      "appearances": 8,
+      "goals": 5
+    },
+    {
+      "club": "Lech Poznań",
+      "appearances": 134,
+      "goals": 32
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 40,
+      "goals": 10
+    },
+    {
+      "club": "Fortuna Düsseldorf",
+      "appearances": 131,
+      "goals": 41
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 24,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland",
+      "appearances": 7,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 359,
+    "goals": 94
+  }
+}

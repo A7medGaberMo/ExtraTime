@@ -1,0 +1,41 @@
+{
+  "apiId": 243,
+  "name": "Z. Aboukhlal",
+  "clubs": [
+    {
+      "club": "Jong PSV",
+      "appearances": 25,
+      "goals": 9
+    },
+    {
+      "club": "PSV",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Jong AZ",
+      "appearances": 19,
+      "goals": 13
+    },
+    {
+      "club": "AZ Alkmaar",
+      "appearances": 90,
+      "goals": 12
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 83,
+      "goals": 25
+    },
+    {
+      "club": "Torino",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 237,
+    "goals": 59
+  }
+}

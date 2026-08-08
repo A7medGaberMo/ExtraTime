@@ -1,0 +1,41 @@
+{
+  "apiId": 25635,
+  "name": "J. Hofmann",
+  "clubs": [
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 71,
+      "goals": 15
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 59,
+      "goals": 5
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 10,
+      "goals": 3
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 214,
+      "goals": 48
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 91,
+      "goals": 14
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 450,
+    "goals": 87
+  }
+}

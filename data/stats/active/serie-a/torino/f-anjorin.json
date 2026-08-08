@@ -1,0 +1,36 @@
+{
+  "apiId": 138777,
+  "name": "F. Anjorin",
+  "clubs": [
+    {
+      "club": "Chelsea",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Lokomotiv Moscow",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Huddersfield Town",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Portsmouth",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Empoli",
+      "appearances": 22,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 67,
+    "goals": 8
+  }
+}

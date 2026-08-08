@@ -1,0 +1,57 @@
+{
+  "apiId": 48497,
+  "name": "C. Itten",
+  "clubs": [
+    {
+      "club": "Basel",
+      "appearances": 31,
+      "goals": 4
+    },
+    {
+      "club": "Luzern",
+      "appearances": 38,
+      "goals": 3
+    },
+    {
+      "club": "St. Gallen",
+      "appearances": 61,
+      "goals": 30
+    },
+    {
+      "club": "Rangers",
+      "appearances": 48,
+      "goals": 8
+    },
+    {
+      "club": "Greuther Fürth",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Young Boys",
+      "appearances": 128,
+      "goals": 48
+    },
+    {
+      "club": "Fortuna Düsseldorf",
+      "appearances": 32,
+      "goals": 16
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland",
+      "appearances": 18,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 350,
+    "goals": 111
+  }
+}

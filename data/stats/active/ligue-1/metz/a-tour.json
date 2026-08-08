@@ -1,0 +1,26 @@
+{
+  "apiId": 434352,
+  "name": "A. Touré",
+  "clubs": [
+    {
+      "club": "Génération Foot",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Metz",
+      "appearances": 53,
+      "goals": 1
+    },
+    {
+      "club": "Metz B",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 60,
+    "goals": 2
+  }
+}

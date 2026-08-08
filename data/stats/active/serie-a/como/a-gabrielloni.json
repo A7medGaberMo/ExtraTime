@@ -1,0 +1,56 @@
+{
+  "apiId": 106257,
+  "name": "A. Gabrielloni",
+  "clubs": [
+    {
+      "club": "Jesina",
+      "appearances": 53,
+      "goals": 7
+    },
+    {
+      "club": "Maceratese",
+      "appearances": 30,
+      "goals": 8
+    },
+    {
+      "club": "Taranto",
+      "appearances": 35,
+      "goals": 8
+    },
+    {
+      "club": "Martina",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Campobasso",
+      "appearances": 20,
+      "goals": 8
+    },
+    {
+      "club": "Cavese",
+      "appearances": 34,
+      "goals": 16
+    },
+    {
+      "club": "Bisceglie",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Como",
+      "appearances": 227,
+      "goals": 65
+    },
+    {
+      "club": "Juve Stabia",
+      "appearances": 12,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 434,
+    "goals": 114
+  }
+}

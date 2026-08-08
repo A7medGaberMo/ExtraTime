@@ -1,0 +1,41 @@
+{
+  "apiId": 15917,
+  "name": "M. Rasmussen",
+  "clubs": [
+    {
+      "club": "Lyngdal",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Start",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Nordsjælland",
+      "appearances": 102,
+      "goals": 10
+    },
+    {
+      "club": "Brann",
+      "appearances": 87,
+      "goals": 20
+    },
+    {
+      "club": "Union SG",
+      "appearances": 113,
+      "goals": 8
+    },
+    {
+      "club": "FC St. Pauli",
+      "appearances": 14,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 352,
+    "goals": 41
+  }
+}

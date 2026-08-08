@@ -1,0 +1,26 @@
+{
+  "apiId": 47329,
+  "name": "Adrià Pedrosa",
+  "clubs": [
+    {
+      "club": "Espanyol",
+      "appearances": 120,
+      "goals": 7
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 75,
+      "goals": 3
+    },
+    {
+      "club": "Elche",
+      "appearances": 30,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 225,
+    "goals": 11
+  }
+}

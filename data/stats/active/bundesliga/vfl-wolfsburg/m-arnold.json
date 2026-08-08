@@ -1,0 +1,27 @@
+{
+  "apiId": 25408,
+  "name": "M. Arnold",
+  "clubs": [
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 475,
+      "goals": 49
+    },
+    {
+      "club": "VfL Wolfsburg II",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 477,
+    "goals": 49
+  }
+}

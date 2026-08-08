@@ -1,0 +1,47 @@
+{
+  "apiId": 86,
+  "name": "L. Openda",
+  "clubs": [
+    {
+      "club": "Club Brugge",
+      "appearances": 53,
+      "goals": 5
+    },
+    {
+      "club": "Vitesse",
+      "appearances": 88,
+      "goals": 37
+    },
+    {
+      "club": "Lens",
+      "appearances": 42,
+      "goals": 21
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 92,
+      "goals": 41
+    },
+    {
+      "club": "Juventus",
+      "appearances": 34,
+      "goals": 2
+    },
+    {
+      "club": "Lyon",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 33,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 310,
+    "goals": 106
+  }
+}

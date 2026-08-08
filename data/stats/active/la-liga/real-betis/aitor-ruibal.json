@@ -1,0 +1,46 @@
+{
+  "apiId": 47119,
+  "name": "Aitor Ruibal",
+  "clubs": [
+    {
+      "club": "Cornellà",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Hospitalet",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Betis B",
+      "appearances": 72,
+      "goals": 20
+    },
+    {
+      "club": "Betis",
+      "appearances": 217,
+      "goals": 15
+    },
+    {
+      "club": "Cartagena",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Rayo Majadahonda",
+      "appearances": 35,
+      "goals": 12
+    },
+    {
+      "club": "Leganés",
+      "appearances": 29,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 379,
+    "goals": 50
+  }
+}

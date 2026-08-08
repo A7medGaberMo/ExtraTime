@@ -1,0 +1,36 @@
+{
+  "apiId": 327897,
+  "name": "A. Ibrahimović",
+  "clubs": [
+    {
+      "club": "Bayern Munich",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich II",
+      "appearances": 15,
+      "goals": 6
+    },
+    {
+      "club": "Frosinone",
+      "appearances": 18,
+      "goals": 2
+    },
+    {
+      "club": "Lazio",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 34,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 73,
+    "goals": 10
+  }
+}

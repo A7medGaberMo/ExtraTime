@@ -1,0 +1,52 @@
+{
+  "apiId": 26256,
+  "name": "T. Kleindienst",
+  "clubs": [
+    {
+      "club": "Energie Cottbus II",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Energie Cottbus",
+      "appearances": 38,
+      "goals": 13
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 39,
+      "goals": 2
+    },
+    {
+      "club": "SC Freiburg II",
+      "appearances": 11,
+      "goals": 3
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 171,
+      "goals": 83
+    },
+    {
+      "club": "Gent",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 35,
+      "goals": 16
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 6,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 321,
+    "goals": 120
+  }
+}

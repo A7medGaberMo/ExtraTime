@@ -1,0 +1,36 @@
+{
+  "apiId": 1825,
+  "name": "Lucas Torró",
+  "clubs": [
+    {
+      "club": "Alcoyano",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid B",
+      "appearances": 52,
+      "goals": 1
+    },
+    {
+      "club": "Real Oviedo",
+      "appearances": 40,
+      "goals": 1
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 234,
+      "goals": 8
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 25,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 353,
+    "goals": 12
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "apiId": 46667,
+  "name": "Kike Barja",
+  "clubs": [
+    {
+      "club": "Osasuna B",
+      "appearances": 151,
+      "goals": 38
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 138,
+      "goals": 13
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 289,
+    "goals": 51
+  }
+}

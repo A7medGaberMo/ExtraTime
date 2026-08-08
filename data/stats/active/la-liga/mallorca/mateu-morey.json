@@ -1,0 +1,26 @@
+{
+  "apiId": 108519,
+  "name": "Mateu Morey",
+  "clubs": [
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 37,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 87,
+    "goals": 1
+  }
+}

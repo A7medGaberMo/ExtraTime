@@ -1,0 +1,57 @@
+{
+  "apiId": 32862,
+  "name": "T. Kubo",
+  "clubs": [
+    {
+      "club": "FC Tokyo U-23",
+      "appearances": 34,
+      "goals": 5
+    },
+    {
+      "club": "FC Tokyo",
+      "appearances": 30,
+      "goals": 6
+    },
+    {
+      "club": "Yokohama F. Marinos",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 67,
+      "goals": 6
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 164,
+      "goals": 25
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 50,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 338,
+    "goals": 45
+  }
+}

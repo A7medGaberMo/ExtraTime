@@ -1,0 +1,47 @@
+{
+  "apiId": 47400,
+  "name": "A. Lunin",
+  "clubs": [
+    {
+      "club": "Dnipro",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Zorya Luhansk",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Leganés",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Oviedo",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 74,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 164,
+    "goals": 0
+  }
+}

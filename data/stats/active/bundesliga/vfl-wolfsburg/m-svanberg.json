@@ -1,0 +1,32 @@
+{
+  "apiId": 30484,
+  "name": "M. Svanberg",
+  "clubs": [
+    {
+      "club": "Malmö FF",
+      "appearances": 47,
+      "goals": 6
+    },
+    {
+      "club": "Bologna",
+      "appearances": 123,
+      "goals": 9
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 114,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 43,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 284,
+    "goals": 29
+  }
+}

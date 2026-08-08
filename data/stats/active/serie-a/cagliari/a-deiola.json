@@ -1,0 +1,36 @@
+{
+  "apiId": 30561,
+  "name": "A. Deiola",
+  "clubs": [
+    {
+      "club": "Tuttocuoio",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 198,
+      "goals": 15
+    },
+    {
+      "club": "Spezia",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Parma",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Lecce",
+      "appearances": 10,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 284,
+    "goals": 21
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "apiId": 163039,
+  "name": "C. Matsima",
+  "clubs": [
+    {
+      "club": "Monaco II",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Monaco",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Lorient",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Lorient II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Clermont",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "FC Augsburg II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Augsburg",
+      "appearances": 53,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 135,
+    "goals": 4
+  }
+}

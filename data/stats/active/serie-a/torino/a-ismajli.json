@@ -1,0 +1,57 @@
+{
+  "apiId": 14329,
+  "name": "A. Ismajli",
+  "clubs": [
+    {
+      "club": "2 Korriku",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Prishtina",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Hajduk Split",
+      "appearances": 93,
+      "goals": 2
+    },
+    {
+      "club": "Hajduk Split II",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Spezia",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Empoli",
+      "appearances": 106,
+      "goals": 0
+    },
+    {
+      "club": "Torino",
+      "appearances": 27,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Kosovo",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Albania",
+      "appearances": 47,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 261,
+    "goals": 3
+  }
+}

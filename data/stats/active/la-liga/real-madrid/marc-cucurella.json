@@ -1,0 +1,52 @@
+{
+  "apiId": 47380,
+  "name": "Marc Cucurella",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 54,
+      "goals": 1
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Eibar",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "Getafe",
+      "appearances": 85,
+      "goals": 4
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 38,
+      "goals": 1
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 163,
+      "goals": 9
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 32,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 374,
+    "goals": 17
+  }
+}

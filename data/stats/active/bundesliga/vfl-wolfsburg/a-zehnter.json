@@ -1,0 +1,31 @@
+{
+  "apiId": 323951,
+  "name": "A. Zehnter",
+  "clubs": [
+    {
+      "club": "Augsburg II",
+      "appearances": 31,
+      "goals": 4
+    },
+    {
+      "club": "Augsburg",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Paderborn 07",
+      "appearances": 48,
+      "goals": 4
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 21,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 102,
+    "goals": 10
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 195100,
+  "name": "Natan",
+  "clubs": [
+    {
+      "club": "Flamengo",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Red Bull Bragantino",
+      "appearances": 104,
+      "goals": 3
+    },
+    {
+      "club": "Napoli",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Betis",
+      "appearances": 97,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 239,
+    "goals": 5
+  }
+}

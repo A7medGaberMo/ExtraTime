@@ -1,0 +1,27 @@
+{
+  "apiId": 312964,
+  "name": "N. Ngoy",
+  "clubs": [
+    {
+      "club": "Standard Liège",
+      "appearances": 53,
+      "goals": 1
+    },
+    {
+      "club": "Lille",
+      "appearances": 38,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 91,
+    "goals": 4
+  }
+}

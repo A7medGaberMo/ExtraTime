@@ -1,0 +1,37 @@
+{
+  "apiId": 80752,
+  "name": "T. Tessmann",
+  "clubs": [
+    {
+      "club": "North Texas SC",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "FC Dallas",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Venezia",
+      "appearances": 99,
+      "goals": 10
+    },
+    {
+      "club": "Lyon",
+      "appearances": 77,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 14,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 220,
+    "goals": 14
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 930,
+  "name": "Carlos Soler",
+  "clubs": [
+    {
+      "club": "Valencia B",
+      "appearances": 39,
+      "goals": 3
+    },
+    {
+      "club": "Valencia",
+      "appearances": 226,
+      "goals": 36
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 63,
+      "goals": 8
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 40,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 15,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 401,
+    "goals": 52
+  }
+}

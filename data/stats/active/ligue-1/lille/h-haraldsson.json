@@ -1,0 +1,32 @@
+{
+  "apiId": 67889,
+  "name": "H. Haraldsson",
+  "clubs": [
+    {
+      "club": "ÍA",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Copenhagen",
+      "appearances": 58,
+      "goals": 9
+    },
+    {
+      "club": "Lille",
+      "appearances": 122,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Iceland",
+      "appearances": 31,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 182,
+    "goals": 31
+  }
+}

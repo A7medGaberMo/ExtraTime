@@ -1,0 +1,42 @@
+{
+  "apiId": 842,
+  "name": "N. Vlašić",
+  "clubs": [
+    {
+      "club": "Hajduk Split",
+      "appearances": 120,
+      "goals": 13
+    },
+    {
+      "club": "Everton",
+      "appearances": 19,
+      "goals": 2
+    },
+    {
+      "club": "CSKA Moscow",
+      "appearances": 108,
+      "goals": 33
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Torino",
+      "appearances": 143,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 66,
+      "goals": 11
+    }
+  ],
+  "careerTotal": {
+    "appearances": 421,
+    "goals": 71
+  }
+}

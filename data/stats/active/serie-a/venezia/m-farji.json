@@ -1,0 +1,31 @@
+{
+  "apiId": 265448,
+  "name": "M. Farji",
+  "clubs": [
+    {
+      "club": "Jerv 2",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Strømsgodset 2",
+      "appearances": 54,
+      "goals": 21
+    },
+    {
+      "club": "Strømsgodset",
+      "appearances": 75,
+      "goals": 12
+    },
+    {
+      "club": "Venezia",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 142,
+    "goals": 33
+  }
+}

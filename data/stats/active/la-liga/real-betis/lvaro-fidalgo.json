@@ -1,0 +1,47 @@
+{
+  "apiId": 750,
+  "name": "Álvaro Fidalgo",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 91,
+      "goals": 15
+    },
+    {
+      "club": "Rayo Majadahonda",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Castellón",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "América",
+      "appearances": 228,
+      "goals": 22
+    },
+    {
+      "club": "Betis",
+      "appearances": 13,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 7,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 389,
+    "goals": 38
+  }
+}

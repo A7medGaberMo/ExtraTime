@@ -1,0 +1,36 @@
+{
+  "apiId": 128985,
+  "name": "Iker Losada",
+  "clubs": [
+    {
+      "club": "Celta B",
+      "appearances": 104,
+      "goals": 15
+    },
+    {
+      "club": "Celta",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Racing Ferrol",
+      "appearances": 45,
+      "goals": 9
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Levante",
+      "appearances": 26,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 206,
+    "goals": 29
+  }
+}

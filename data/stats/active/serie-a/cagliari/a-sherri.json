@@ -1,0 +1,41 @@
+{
+  "apiId": 3737,
+  "name": "A. Sherri",
+  "clubs": [
+    {
+      "club": "Vllaznia Shkodër",
+      "appearances": 91,
+      "goals": 0
+    },
+    {
+      "club": "Vllaznia Shkodër B",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Laçi",
+      "appearances": 53,
+      "goals": 0
+    },
+    {
+      "club": "Egnatia",
+      "appearances": 87,
+      "goals": 0
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Frosinone",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 248,
+    "goals": 0
+  }
+}

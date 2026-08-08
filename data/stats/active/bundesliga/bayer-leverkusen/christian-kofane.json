@@ -1,0 +1,27 @@
+{
+  "apiId": 505295,
+  "name": "Christian Kofane",
+  "clubs": [
+    {
+      "club": "Albacete",
+      "appearances": 20,
+      "goals": 8
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 44,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Cameroon",
+      "appearances": 6,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 64,
+    "goals": 15
+  }
+}

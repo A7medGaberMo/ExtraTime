@@ -1,0 +1,26 @@
+{
+  "apiId": 369674,
+  "name": "J. Bahoya",
+  "clubs": [
+    {
+      "club": "Angers II",
+      "appearances": 9,
+      "goals": 4
+    },
+    {
+      "club": "Angers",
+      "appearances": 32,
+      "goals": 5
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 77,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 118,
+    "goals": 16
+  }
+}

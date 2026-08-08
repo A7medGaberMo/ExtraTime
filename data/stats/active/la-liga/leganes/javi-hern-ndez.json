@@ -1,0 +1,56 @@
+{
+  "apiId": 46849,
+  "name": "Javi Hernández",
+  "clubs": [
+    {
+      "club": "Real Madrid B",
+      "appearances": 24,
+      "goals": 2
+    },
+    {
+      "club": "El Ejido",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "Oviedo B",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Oviedo",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Leganés",
+      "appearances": 112,
+      "goals": 9
+    },
+    {
+      "club": "Girona",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Cádiz",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Al-Arabi",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 8,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 277,
+    "goals": 20
+  }
+}

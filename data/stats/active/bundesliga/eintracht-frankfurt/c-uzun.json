@@ -1,0 +1,26 @@
+{
+  "apiId": 339887,
+  "name": "C. Uzun",
+  "clubs": [
+    {
+      "club": "1. FC Nürnberg II",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 39,
+      "goals": 20
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 59,
+      "goals": 15
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 102,
+    "goals": 36
+  }
+}

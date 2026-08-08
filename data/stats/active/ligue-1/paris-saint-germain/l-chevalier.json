@@ -1,0 +1,42 @@
+{
+  "apiId": 162453,
+  "name": "L. Chevalier",
+  "clubs": [
+    {
+      "club": "Lille B",
+      "appearances": 38,
+      "goals": 0
+    },
+    {
+      "club": "Lille",
+      "appearances": 127,
+      "goals": 0
+    },
+    {
+      "club": "Valenciennes B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Valenciennes",
+      "appearances": 30,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 26,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 222,
+    "goals": 0
+  }
+}

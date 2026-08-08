@@ -1,0 +1,41 @@
+{
+  "apiId": 47396,
+  "name": "Kike García",
+  "clubs": [
+    {
+      "club": "Murcia B",
+      "appearances": 34,
+      "goals": 8
+    },
+    {
+      "club": "Murcia",
+      "appearances": 158,
+      "goals": 48
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 75,
+      "goals": 16
+    },
+    {
+      "club": "Eibar",
+      "appearances": 160,
+      "goals": 37
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 79,
+      "goals": 13
+    },
+    {
+      "club": "Alavés",
+      "appearances": 71,
+      "goals": 18
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 577,
+    "goals": 140
+  }
+}

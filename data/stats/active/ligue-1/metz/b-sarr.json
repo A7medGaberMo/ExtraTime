@@ -1,0 +1,32 @@
+{
+  "apiId": 1915,
+  "name": "B. Sarr",
+  "clubs": [
+    {
+      "club": "Metz II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Metz",
+      "appearances": 59,
+      "goals": 5
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 141,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 42,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 201,
+    "goals": 16
+  }
+}

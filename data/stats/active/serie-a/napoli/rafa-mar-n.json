@@ -1,0 +1,31 @@
+{
+  "apiId": 237066,
+  "name": "Rafa Marín",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 69,
+      "goals": 4
+    },
+    {
+      "club": "Alavés",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Napoli",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 31,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 141,
+    "goals": 5
+  }
+}

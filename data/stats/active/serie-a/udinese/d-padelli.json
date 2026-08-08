@@ -1,0 +1,61 @@
+{
+  "apiId": 189,
+  "name": "D. Padelli",
+  "clubs": [
+    {
+      "club": "Como",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Pizzighettone",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Crotone",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Pisa",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Bari",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Udinese",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Torino",
+      "appearances": 116,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 194,
+    "goals": 0
+  }
+}

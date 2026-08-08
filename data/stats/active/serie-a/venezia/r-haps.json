@@ -1,0 +1,36 @@
+{
+  "apiId": 37144,
+  "name": "R. Haps",
+  "clubs": [
+    {
+      "club": "AZ",
+      "appearances": 111,
+      "goals": 5
+    },
+    {
+      "club": "Go Ahead Eagles",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 100,
+      "goals": 7
+    },
+    {
+      "club": "Venezia",
+      "appearances": 69,
+      "goals": 3
+    },
+    {
+      "club": "Genoa",
+      "appearances": 23,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 313,
+    "goals": 16
+  }
+}

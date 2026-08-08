@@ -1,0 +1,51 @@
+{
+  "apiId": 21701,
+  "name": "V. Rosier",
+  "clubs": [
+    {
+      "club": "Rodez",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Dijon B",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Dijon",
+      "appearances": 60,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 126,
+      "goals": 6
+    },
+    {
+      "club": "Nice",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Leganés",
+      "appearances": 36,
+      "goals": 1
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 31,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 316,
+    "goals": 8
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 2195,
+  "name": "S. Boey",
+  "clubs": [
+    {
+      "club": "Rennes",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Dijon",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 100,
+      "goals": 6
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 37,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 173,
+    "goals": 7
+  }
+}

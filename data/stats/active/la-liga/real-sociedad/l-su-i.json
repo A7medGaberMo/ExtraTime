@@ -1,0 +1,32 @@
+{
+  "apiId": 7332,
+  "name": "L. Sučić",
+  "clubs": [
+    {
+      "club": "FC Liefering",
+      "appearances": 26,
+      "goals": 6
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 128,
+      "goals": 18
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 68,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 22,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 222,
+    "goals": 31
+  }
+}

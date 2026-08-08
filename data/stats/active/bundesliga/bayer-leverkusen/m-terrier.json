@@ -1,0 +1,46 @@
+{
+  "apiId": 663,
+  "name": "M. Terrier",
+  "clubs": [
+    {
+      "club": "Lille B",
+      "appearances": 29,
+      "goals": 6
+    },
+    {
+      "club": "Lille",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 29,
+      "goals": 4
+    },
+    {
+      "club": "Lyon",
+      "appearances": 77,
+      "goals": 17
+    },
+    {
+      "club": "Rennes",
+      "appearances": 141,
+      "goals": 51
+    },
+    {
+      "club": "Rennes B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 44,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 336,
+    "goals": 87
+  }
+}

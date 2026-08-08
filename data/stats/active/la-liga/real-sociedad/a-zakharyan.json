@@ -1,0 +1,32 @@
+{
+  "apiId": 268960,
+  "name": "A. Zakharyan",
+  "clubs": [
+    {
+      "club": "Dynamo-2 Moscow",
+      "appearances": 15,
+      "goals": 8
+    },
+    {
+      "club": "Dynamo Moscow",
+      "appearances": 89,
+      "goals": 19
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 65,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Russia",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 169,
+    "goals": 30
+  }
+}

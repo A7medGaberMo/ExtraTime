@@ -1,0 +1,42 @@
+{
+  "apiId": 26248,
+  "name": "V. Grifo",
+  "clubs": [
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 24,
+      "goals": 1
+    },
+    {
+      "club": "Dynamo Dresden",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "FSV Frankfurt",
+      "appearances": 35,
+      "goals": 7
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 360,
+      "goals": 108
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 9,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 450,
+    "goals": 117
+  }
+}

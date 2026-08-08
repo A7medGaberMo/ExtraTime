@@ -1,0 +1,77 @@
+{
+  "apiId": 31406,
+  "name": "U. Sadiq",
+  "clubs": [
+    {
+      "club": "Spezia",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Lavagnese",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Roma",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "Bologna",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Torino",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "NAC Breda",
+      "appearances": 12,
+      "goals": 5
+    },
+    {
+      "club": "Rangers",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Perugia",
+      "appearances": 18,
+      "goals": 3
+    },
+    {
+      "club": "Partizan",
+      "appearances": 52,
+      "goals": 23
+    },
+    {
+      "club": "Almería",
+      "appearances": 84,
+      "goals": 43
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 57,
+      "goals": 5
+    },
+    {
+      "club": "Valencia",
+      "appearances": 41,
+      "goals": 12
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 285,
+    "goals": 93
+  }
+}

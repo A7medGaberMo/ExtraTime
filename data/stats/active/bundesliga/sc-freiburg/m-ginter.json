@@ -1,0 +1,26 @@
+{
+  "apiId": 2915,
+  "name": "M. Ginter",
+  "clubs": [
+    {
+      "club": "SC Freiburg",
+      "appearances": 248,
+      "goals": 18
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 102,
+      "goals": 4
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 179,
+      "goals": 11
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 529,
+    "goals": 33
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 162466,
+  "name": "S. Diomandé",
+  "clubs": [
+    {
+      "club": "Lyon II",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Lyon",
+      "appearances": 85,
+      "goals": 0
+    },
+    {
+      "club": "Auxerre",
+      "appearances": 12,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 115,
+    "goals": 2
+  }
+}

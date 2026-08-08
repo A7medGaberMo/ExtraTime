@@ -1,0 +1,26 @@
+{
+  "apiId": 2096,
+  "name": "A. Bodart",
+  "clubs": [
+    {
+      "club": "Standard Liège",
+      "appearances": 190,
+      "goals": 1
+    },
+    {
+      "club": "Metz",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Lille",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 212,
+    "goals": 1
+  }
+}

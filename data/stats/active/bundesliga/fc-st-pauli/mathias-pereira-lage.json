@@ -1,0 +1,36 @@
+{
+  "apiId": 20780,
+  "name": "Mathias Pereira Lage",
+  "clubs": [
+    {
+      "club": "Clermont B",
+      "appearances": 23,
+      "goals": 5
+    },
+    {
+      "club": "Clermont",
+      "appearances": 122,
+      "goals": 22
+    },
+    {
+      "club": "Angers",
+      "appearances": 82,
+      "goals": 10
+    },
+    {
+      "club": "Brest",
+      "appearances": 99,
+      "goals": 9
+    },
+    {
+      "club": "FC St. Pauli",
+      "appearances": 32,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 358,
+    "goals": 49
+  }
+}

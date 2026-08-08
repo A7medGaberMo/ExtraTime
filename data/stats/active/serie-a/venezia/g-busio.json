@@ -1,0 +1,32 @@
+{
+  "apiId": 51266,
+  "name": "G. Busio",
+  "clubs": [
+    {
+      "club": "Swope Park Rangers",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Sporting Kansas City",
+      "appearances": 70,
+      "goals": 8
+    },
+    {
+      "club": "Venezia",
+      "appearances": 170,
+      "goals": 17
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 17,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 256,
+    "goals": 26
+  }
+}

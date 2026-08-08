@@ -1,0 +1,46 @@
+{
+  "apiId": 575285,
+  "name": "L. Balbo",
+  "clubs": [
+    {
+      "club": "Newell's Old Boys",
+      "appearances": 23,
+      "goals": 9
+    },
+    {
+      "club": "River Plate",
+      "appearances": 38,
+      "goals": 12
+    },
+    {
+      "club": "Udinese",
+      "appearances": 144,
+      "goals": 70
+    },
+    {
+      "club": "Roma",
+      "appearances": 182,
+      "goals": 87
+    },
+    {
+      "club": "Parma",
+      "appearances": 44,
+      "goals": 12
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 31,
+      "goals": 7
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 466,
+    "goals": 197
+  }
+}

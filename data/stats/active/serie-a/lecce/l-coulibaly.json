@@ -1,0 +1,57 @@
+{
+  "apiId": 1748,
+  "name": "L. Coulibaly",
+  "clubs": [
+    {
+      "club": "Bastia II",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Bastia",
+      "appearances": 49,
+      "goals": 1
+    },
+    {
+      "club": "Angers",
+      "appearances": 53,
+      "goals": 2
+    },
+    {
+      "club": "Rangers",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Angers II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 98,
+      "goals": 4
+    },
+    {
+      "club": "Lecce",
+      "appearances": 73,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Mali",
+      "appearances": 57,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 335,
+    "goals": 14
+  }
+}

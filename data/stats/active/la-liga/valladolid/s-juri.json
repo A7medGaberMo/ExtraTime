@@ -1,0 +1,31 @@
+{
+  "apiId": 14341,
+  "name": "S. Jurić",
+  "clubs": [
+    {
+      "club": "Dugopolje",
+      "appearances": 61,
+      "goals": 3
+    },
+    {
+      "club": "Hajduk Split",
+      "appearances": 93,
+      "goals": 8
+    },
+    {
+      "club": "Parma",
+      "appearances": 71,
+      "goals": 4
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 38,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 263,
+    "goals": 17
+  }
+}

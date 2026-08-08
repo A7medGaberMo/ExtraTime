@@ -1,0 +1,37 @@
+{
+  "apiId": 374058,
+  "name": "L. Camara",
+  "clubs": [
+    {
+      "club": "Génération Foot",
+      "appearances": 23,
+      "goals": 2
+    },
+    {
+      "club": "Metz",
+      "appearances": 37,
+      "goals": 2
+    },
+    {
+      "club": "Metz B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Monaco",
+      "appearances": 71,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 49,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 132,
+    "goals": 10
+  }
+}

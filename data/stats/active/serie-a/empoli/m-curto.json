@@ -1,0 +1,46 @@
+{
+  "apiId": 31040,
+  "name": "M. Curto",
+  "clubs": [
+    {
+      "club": "Empoli",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Reggina",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Virtus Verona",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Südtirol",
+      "appearances": 111,
+      "goals": 3
+    },
+    {
+      "club": "Como",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Cesena",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 181,
+    "goals": 3
+  }
+}

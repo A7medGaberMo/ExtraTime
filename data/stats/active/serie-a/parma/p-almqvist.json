@@ -1,0 +1,56 @@
+{
+  "apiId": 48193,
+  "name": "P. Almqvist",
+  "clubs": [
+    {
+      "club": "Norrköping",
+      "appearances": 31,
+      "goals": 5
+    },
+    {
+      "club": "Sylvia",
+      "appearances": 9,
+      "goals": 3
+    },
+    {
+      "club": "Varberg",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Norrby",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Rostov",
+      "appearances": 39,
+      "goals": 3
+    },
+    {
+      "club": "Utrecht",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Pogoń Szczecin",
+      "appearances": 30,
+      "goals": 5
+    },
+    {
+      "club": "Lecce",
+      "appearances": 32,
+      "goals": 3
+    },
+    {
+      "club": "Parma",
+      "appearances": 29,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 198,
+    "goals": 21
+  }
+}

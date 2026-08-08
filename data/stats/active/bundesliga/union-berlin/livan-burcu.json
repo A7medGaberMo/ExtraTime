@@ -1,0 +1,26 @@
+{
+  "apiId": 430354,
+  "name": "Livan Burcu",
+  "clubs": [
+    {
+      "club": "SV Sandhausen",
+      "appearances": 33,
+      "goals": 6
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Magdeburg",
+      "appearances": 32,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 84,
+    "goals": 10
+  }
+}

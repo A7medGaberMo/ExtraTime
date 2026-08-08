@@ -1,0 +1,41 @@
+{
+  "apiId": 285909,
+  "name": "Pablo Torre",
+  "clubs": [
+    {
+      "club": "Rayo Cantabria",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Racing Santander",
+      "appearances": 59,
+      "goals": 14
+    },
+    {
+      "club": "Barcelona Atlétic",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Girona",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 37,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 156,
+    "goals": 24
+  }
+}

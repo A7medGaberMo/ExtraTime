@@ -1,0 +1,41 @@
+{
+  "apiId": 56560,
+  "name": "Y. Maleh",
+  "clubs": [
+    {
+      "club": "Ravenna",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Venezia",
+      "appearances": 63,
+      "goals": 6
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 45,
+      "goals": 3
+    },
+    {
+      "club": "Lecce",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Empoli",
+      "appearances": 58,
+      "goals": 1
+    },
+    {
+      "club": "Cremonese",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 234,
+    "goals": 12
+  }
+}

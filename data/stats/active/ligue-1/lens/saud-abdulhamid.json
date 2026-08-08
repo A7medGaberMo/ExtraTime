@@ -1,0 +1,37 @@
+{
+  "apiId": 44594,
+  "name": "Saud Abdulhamid",
+  "clubs": [
+    {
+      "club": "Al-Ittihad",
+      "appearances": 96,
+      "goals": 2
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 121,
+      "goals": 5
+    },
+    {
+      "club": "Roma",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Lens",
+      "appearances": 31,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia",
+      "appearances": 58,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 256,
+    "goals": 11
+  }
+}

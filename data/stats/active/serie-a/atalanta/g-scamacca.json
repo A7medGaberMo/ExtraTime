@@ -1,0 +1,57 @@
+{
+  "apiId": 30544,
+  "name": "G. Scamacca",
+  "clubs": [
+    {
+      "club": "Jong PSV",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 41,
+      "goals": 16
+    },
+    {
+      "club": "Cremonese",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "PEC Zwolle",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Ascoli",
+      "appearances": 35,
+      "goals": 13
+    },
+    {
+      "club": "Genoa",
+      "appearances": 29,
+      "goals": 12
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 27,
+      "goals": 8
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 83,
+      "goals": 33
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 22,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 242,
+    "goals": 83
+  }
+}

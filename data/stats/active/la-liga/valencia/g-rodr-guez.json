@@ -1,0 +1,52 @@
+{
+  "apiId": 2476,
+  "name": "G. Rodríguez",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Defensa y Justicia",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Tijuana",
+      "appearances": 42,
+      "goals": 5
+    },
+    {
+      "club": "América",
+      "appearances": 123,
+      "goals": 12
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 173,
+      "goals": 8
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Valencia",
+      "appearances": 17,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 30,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 421,
+    "goals": 30
+  }
+}

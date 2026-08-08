@@ -1,0 +1,21 @@
+{
+  "apiId": 452033,
+  "name": "L. Venturino",
+  "clubs": [
+    {
+      "club": "Genoa",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "club": "Roma",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 21,
+    "goals": 2
+  }
+}

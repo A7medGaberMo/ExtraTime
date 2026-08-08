@@ -1,0 +1,47 @@
+{
+  "apiId": 20535,
+  "name": "H. Diallo",
+  "clubs": [
+    {
+      "club": "Metz B",
+      "appearances": 29,
+      "goals": 4
+    },
+    {
+      "club": "Metz",
+      "appearances": 140,
+      "goals": 52
+    },
+    {
+      "club": "Brest",
+      "appearances": 52,
+      "goals": 18
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 103,
+      "goals": 41
+    },
+    {
+      "club": "Al-Shabab",
+      "appearances": 33,
+      "goals": 6
+    },
+    {
+      "club": "Damac",
+      "appearances": 28,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 41,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 385,
+    "goals": 128
+  }
+}

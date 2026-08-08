@@ -1,0 +1,57 @@
+{
+  "apiId": 2449,
+  "name": "Y. Herrera",
+  "clubs": [
+    {
+      "club": "Monagas",
+      "appearances": 41,
+      "goals": 9
+    },
+    {
+      "club": "Atlético Venezuela",
+      "appearances": 33,
+      "goals": 3
+    },
+    {
+      "club": "New York City",
+      "appearances": 38,
+      "goals": 1
+    },
+    {
+      "club": "Huesca",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Granada",
+      "appearances": 78,
+      "goals": 10
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Girona",
+      "appearances": 87,
+      "goals": 11
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Venezuela",
+      "appearances": 43,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 328,
+    "goals": 35
+  }
+}

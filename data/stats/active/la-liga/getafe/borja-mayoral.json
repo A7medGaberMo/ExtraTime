@@ -1,0 +1,41 @@
+{
+  "apiId": 47472,
+  "name": "Borja Mayoral",
+  "clubs": [
+    {
+      "club": "Real Madrid B",
+      "appearances": 38,
+      "goals": 17
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 33,
+      "goals": 7
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "Levante",
+      "appearances": 69,
+      "goals": 14
+    },
+    {
+      "club": "Roma",
+      "appearances": 56,
+      "goals": 18
+    },
+    {
+      "club": "Getafe",
+      "appearances": 131,
+      "goals": 44
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 348,
+    "goals": 102
+  }
+}

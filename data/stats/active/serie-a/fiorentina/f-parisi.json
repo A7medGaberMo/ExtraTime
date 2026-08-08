@@ -1,0 +1,31 @@
+{
+  "apiId": 136087,
+  "name": "F. Parisi",
+  "clubs": [
+    {
+      "club": "Benevento",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Avellino",
+      "appearances": 73,
+      "goals": 4
+    },
+    {
+      "club": "Empoli",
+      "appearances": 81,
+      "goals": 3
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 105,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 259,
+    "goals": 10
+  }
+}

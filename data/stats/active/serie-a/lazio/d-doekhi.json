@@ -1,0 +1,31 @@
+{
+  "apiId": 37117,
+  "name": "D. Doekhi",
+  "clubs": [
+    {
+      "club": "Excelsior",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Jong Ajax",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Vitesse",
+      "appearances": 141,
+      "goals": 5
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 137,
+      "goals": 16
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 314,
+    "goals": 21
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiId": 178769,
+  "name": "P. Treu",
+  "clubs": [
+    {
+      "club": "SC Freiburg II",
+      "appearances": 68,
+      "goals": 0
+    },
+    {
+      "club": "FC St. Pauli",
+      "appearances": 65,
+      "goals": 1
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 46,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 179,
+    "goals": 2
+  }
+}

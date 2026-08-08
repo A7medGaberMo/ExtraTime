@@ -1,0 +1,31 @@
+{
+  "apiId": 264122,
+  "name": "N. Štulić",
+  "clubs": [
+    {
+      "club": "Partizan",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Radnički Niš",
+      "appearances": 37,
+      "goals": 12
+    },
+    {
+      "club": "Charleroi",
+      "appearances": 58,
+      "goals": 19
+    },
+    {
+      "club": "Lecce",
+      "appearances": 34,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 155,
+    "goals": 36
+  }
+}

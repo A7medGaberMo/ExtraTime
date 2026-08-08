@@ -1,0 +1,36 @@
+{
+  "apiId": 261,
+  "name": "T. Kehrer",
+  "clubs": [
+    {
+      "club": "Schalke 04 II",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 59,
+      "goals": 4
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 128,
+      "goals": 4
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 50,
+      "goals": 0
+    },
+    {
+      "club": "Monaco",
+      "appearances": 98,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 354,
+    "goals": 14
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 30603,
+  "name": "Dany Mota",
+  "clubs": [
+    {
+      "club": "CS Pétange",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Virtus Entella",
+      "appearances": 51,
+      "goals": 15
+    },
+    {
+      "club": "Juventus U23 (res.)",
+      "appearances": 24,
+      "goals": 8
+    },
+    {
+      "club": "Monza",
+      "appearances": 207,
+      "goals": 40
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U21",
+      "appearances": 16,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 296,
+    "goals": 65
+  }
+}

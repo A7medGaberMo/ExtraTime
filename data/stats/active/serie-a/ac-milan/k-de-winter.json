@@ -1,0 +1,42 @@
+{
+  "apiId": 162141,
+  "name": "K. De Winter",
+  "clubs": [
+    {
+      "club": "Juventus U23",
+      "appearances": 31,
+      "goals": 2
+    },
+    {
+      "club": "Juventus",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Empoli",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Genoa",
+      "appearances": 57,
+      "goals": 3
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 29,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 133,
+    "goals": 6
+  }
+}

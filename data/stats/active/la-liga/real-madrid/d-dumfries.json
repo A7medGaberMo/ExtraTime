@@ -1,0 +1,47 @@
+{
+  "apiId": 226,
+  "name": "D. Dumfries",
+  "clubs": [
+    {
+      "club": "Sparta Rotterdam",
+      "appearances": 72,
+      "goals": 2
+    },
+    {
+      "club": "Heerenveen",
+      "appearances": 37,
+      "goals": 4
+    },
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 124,
+      "goals": 16
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 207,
+      "goals": 27
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Aruba",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Netherlands",
+      "appearances": 76,
+      "goals": 11
+    }
+  ],
+  "careerTotal": {
+    "appearances": 440,
+    "goals": 49
+  }
+}

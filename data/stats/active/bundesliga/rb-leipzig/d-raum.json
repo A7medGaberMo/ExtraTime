@@ -1,0 +1,37 @@
+{
+  "apiId": 25158,
+  "name": "D. Raum",
+  "clubs": [
+    {
+      "club": "Greuther Fürth II",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Greuther Fürth",
+      "appearances": 99,
+      "goals": 6
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 35,
+      "goals": 3
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 143,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 39,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 297,
+    "goals": 18
+  }
+}

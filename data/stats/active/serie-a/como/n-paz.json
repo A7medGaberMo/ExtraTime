@@ -1,0 +1,32 @@
+{
+  "apiId": 350037,
+  "name": "N. Paz",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 53,
+      "goals": 12
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Como",
+      "appearances": 75,
+      "goals": 19
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 11,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 136,
+    "goals": 32
+  }
+}

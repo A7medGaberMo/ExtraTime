@@ -1,0 +1,26 @@
+{
+  "apiId": 404588,
+  "name": "C. Melieres",
+  "clubs": [
+    {
+      "club": "Racing Besançon",
+      "appearances": 23,
+      "goals": 5
+    },
+    {
+      "club": "Metz II",
+      "appearances": 38,
+      "goals": 5
+    },
+    {
+      "club": "Metz",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 63,
+    "goals": 10
+  }
+}

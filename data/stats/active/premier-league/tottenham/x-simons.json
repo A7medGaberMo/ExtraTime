@@ -1,0 +1,37 @@
+{
+  "apiId": 162016,
+  "name": "X. Simons",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "PSV",
+      "appearances": 48,
+      "goals": 22
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 78,
+      "goals": 22
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 41,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 34,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 178,
+    "goals": 49
+  }
+}

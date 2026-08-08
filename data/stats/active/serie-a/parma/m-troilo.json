@@ -1,0 +1,21 @@
+{
+  "apiId": 428237,
+  "name": "M. Troilo",
+  "clubs": [
+    {
+      "club": "Belgrano",
+      "appearances": 57,
+      "goals": 2
+    },
+    {
+      "club": "Parma",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 69,
+    "goals": 3
+  }
+}

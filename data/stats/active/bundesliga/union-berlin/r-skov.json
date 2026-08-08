@@ -1,0 +1,37 @@
+{
+  "apiId": 1298,
+  "name": "R. Skov",
+  "clubs": [
+    {
+      "club": "Silkeborg",
+      "appearances": 106,
+      "goals": 23
+    },
+    {
+      "club": "Copenhagen",
+      "appearances": 72,
+      "goals": 33
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 125,
+      "goals": 12
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 20,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 13,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 323,
+    "goals": 71
+  }
+}

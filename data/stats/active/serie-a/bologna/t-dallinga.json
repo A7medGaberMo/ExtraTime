@@ -1,0 +1,47 @@
+{
+  "apiId": 93016,
+  "name": "T. Dallinga",
+  "clubs": [
+    {
+      "club": "Emmen",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Jong Groningen",
+      "appearances": 17,
+      "goals": 5
+    },
+    {
+      "club": "Groningen",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Excelsior",
+      "appearances": 44,
+      "goals": 36
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 86,
+      "goals": 37
+    },
+    {
+      "club": "Bologna",
+      "appearances": 80,
+      "goals": 12
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 242,
+    "goals": 91
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "apiId": 867,
+  "name": "G. Kastanos",
+  "clubs": [
+    {
+      "club": "Pescara",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Zulte Waregem",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Juventus",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Juventus U23",
+      "appearances": 31,
+      "goals": 3
+    },
+    {
+      "club": "Frosinone",
+      "appearances": 34,
+      "goals": 2
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 86,
+      "goals": 6
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 28,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 218,
+    "goals": 12
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "apiId": 46933,
+  "name": "Luis Rioja",
+  "clubs": [
+    {
+      "club": "Cabecense",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Real Madrid C",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Celta B",
+      "appearances": 65,
+      "goals": 8
+    },
+    {
+      "club": "Marbella",
+      "appearances": 50,
+      "goals": 5
+    },
+    {
+      "club": "Almería",
+      "appearances": 41,
+      "goals": 5
+    },
+    {
+      "club": "Alavés",
+      "appearances": 189,
+      "goals": 22
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 413,
+    "goals": 44
+  }
+}

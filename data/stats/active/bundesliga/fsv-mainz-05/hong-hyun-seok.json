@@ -1,0 +1,41 @@
+{
+  "apiId": 26519,
+  "name": "Hong Hyun-Seok",
+  "clubs": [
+    {
+      "club": "SpVgg Unterhaching",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Juniors OÖ",
+      "appearances": 54,
+      "goals": 2
+    },
+    {
+      "club": "LASK",
+      "appearances": 44,
+      "goals": 1
+    },
+    {
+      "club": "Gent",
+      "appearances": 123,
+      "goals": 19
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Nantes",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 257,
+    "goals": 22
+  }
+}

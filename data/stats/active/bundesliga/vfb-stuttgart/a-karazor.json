@@ -1,0 +1,36 @@
+{
+  "apiId": 24963,
+  "name": "A. Karazor",
+  "clubs": [
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Holstein Kiel",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Holstein Kiel II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 11,
+    "goals": 0
+  }
+}

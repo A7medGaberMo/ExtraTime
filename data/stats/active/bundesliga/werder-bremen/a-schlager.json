@@ -1,0 +1,42 @@
+{
+  "apiId": 7525,
+  "name": "A. Schlager",
+  "clubs": [
+    {
+      "club": "SV Grödig",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Floridsdorfer AC",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "LASK",
+      "appearances": 212,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 111,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Austria",
+      "appearances": 30,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 357,
+    "goals": 0
+  }
+}

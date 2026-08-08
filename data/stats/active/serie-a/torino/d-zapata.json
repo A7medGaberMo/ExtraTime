@@ -1,0 +1,52 @@
+{
+  "apiId": 2495,
+  "name": "D. Zapata",
+  "clubs": [
+    {
+      "club": "América de Cali",
+      "appearances": 54,
+      "goals": 9
+    },
+    {
+      "club": "Estudiantes",
+      "appearances": 46,
+      "goals": 22
+    },
+    {
+      "club": "Napoli",
+      "appearances": 53,
+      "goals": 15
+    },
+    {
+      "club": "Udinese",
+      "appearances": 65,
+      "goals": 19
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 32,
+      "goals": 11
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 191,
+      "goals": 82
+    },
+    {
+      "club": "Torino",
+      "appearances": 75,
+      "goals": 19
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia",
+      "appearances": 34,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 516,
+    "goals": 177
+  }
+}

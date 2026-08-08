@@ -1,0 +1,42 @@
+{
+  "apiId": 1707,
+  "name": "Gerard Moreno",
+  "clubs": [
+    {
+      "club": "Villarreal C",
+      "appearances": 38,
+      "goals": 34
+    },
+    {
+      "club": "Villarreal B",
+      "appearances": 29,
+      "goals": 13
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 321,
+      "goals": 130
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 32,
+      "goals": 12
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 118,
+      "goals": 39
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 18,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 538,
+    "goals": 228
+  }
+}

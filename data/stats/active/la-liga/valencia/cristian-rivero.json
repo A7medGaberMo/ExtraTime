@@ -1,0 +1,31 @@
+{
+  "apiId": 913,
+  "name": "Cristian Rivero",
+  "clubs": [
+    {
+      "club": "Valencia B",
+      "appearances": 80,
+      "goals": 0
+    },
+    {
+      "club": "Valencia",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Alcorcón",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Albacete",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 95,
+    "goals": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiId": 203040,
+  "name": "T. Lemperle",
+  "clubs": [
+    {
+      "club": "1. FC Köln",
+      "appearances": 59,
+      "goals": 13
+    },
+    {
+      "club": "1. FC Köln II",
+      "appearances": 41,
+      "goals": 16
+    },
+    {
+      "club": "Greuther Fürth",
+      "appearances": 65,
+      "goals": 14
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 165,
+    "goals": 43
+  }
+}

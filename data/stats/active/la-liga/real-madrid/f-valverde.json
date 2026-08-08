@@ -1,0 +1,37 @@
+{
+  "apiId": 756,
+  "name": "F. Valverde",
+  "clubs": [
+    {
+      "club": "Peñarol",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Deportivo La Coruña",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 372,
+      "goals": 41
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay",
+      "appearances": 76,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 440,
+    "goals": 44
+  }
+}

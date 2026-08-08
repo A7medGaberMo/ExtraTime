@@ -1,0 +1,21 @@
+{
+  "apiId": 404523,
+  "name": "A. Albarracín",
+  "clubs": [
+    {
+      "club": "Montevideo Wanderers",
+      "appearances": 44,
+      "goals": 2
+    },
+    {
+      "club": "Boston River",
+      "appearances": 10,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 54,
+    "goals": 6
+  }
+}

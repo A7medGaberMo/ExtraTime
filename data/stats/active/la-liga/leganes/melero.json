@@ -1,0 +1,41 @@
+{
+  "apiId": 47576,
+  "name": "Melero",
+  "clubs": [
+    {
+      "club": "Real Madrid C",
+      "appearances": 37,
+      "goals": 7
+    },
+    {
+      "club": "Real Madrid B",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Ponferradina",
+      "appearances": 42,
+      "goals": 1
+    },
+    {
+      "club": "Huesca",
+      "appearances": 103,
+      "goals": 25
+    },
+    {
+      "club": "Levante",
+      "appearances": 94,
+      "goals": 17
+    },
+    {
+      "club": "Almería",
+      "appearances": 57,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 339,
+    "goals": 55
+  }
+}

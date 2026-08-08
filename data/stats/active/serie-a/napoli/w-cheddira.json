@@ -1,0 +1,61 @@
+{
+  "apiId": 128478,
+  "name": "W. Cheddira",
+  "clubs": [
+    {
+      "club": "Sangiustese",
+      "appearances": 76,
+      "goals": 21
+    },
+    {
+      "club": "Arezzo",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Lecco",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Mantova",
+      "appearances": 39,
+      "goals": 9
+    },
+    {
+      "club": "Bari",
+      "appearances": 75,
+      "goals": 28
+    },
+    {
+      "club": "Napoli",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Frosinone",
+      "appearances": 39,
+      "goals": 8
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Lecce",
+      "appearances": 16,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 305,
+    "goals": 71
+  }
+}

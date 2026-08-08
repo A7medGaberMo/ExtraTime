@@ -1,0 +1,52 @@
+{
+  "apiId": 2929,
+  "name": "T. Hazard",
+  "clubs": [
+    {
+      "club": "Lens",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Zulte Waregem",
+      "appearances": 90,
+      "goals": 21
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 182,
+      "goals": 46
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 123,
+      "goals": 18
+    },
+    {
+      "club": "PSV",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 98,
+      "goals": 21
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 46,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 523,
+    "goals": 108
+  }
+}

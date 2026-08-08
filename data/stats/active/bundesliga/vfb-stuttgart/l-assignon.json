@@ -1,0 +1,36 @@
+{
+  "apiId": 180731,
+  "name": "L. Assignon",
+  "clubs": [
+    {
+      "club": "Rennes II",
+      "appearances": 24,
+      "goals": 3
+    },
+    {
+      "club": "Rennes",
+      "appearances": 98,
+      "goals": 7
+    },
+    {
+      "club": "Bastia",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Burnley",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 37,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 187,
+    "goals": 13
+  }
+}

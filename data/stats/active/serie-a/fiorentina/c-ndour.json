@@ -1,0 +1,47 @@
+{
+  "apiId": 311083,
+  "name": "C. Ndour",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 57,
+      "goals": 5
+    },
+    {
+      "club": "Benfica",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Braga",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 56,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 151,
+    "goals": 15
+  }
+}

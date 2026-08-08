@@ -1,0 +1,41 @@
+{
+  "apiId": 181827,
+  "name": "C. Egan-Riley",
+  "clubs": [
+    {
+      "club": "Manchester City U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Burnley",
+      "appearances": 49,
+      "goals": 1
+    },
+    {
+      "club": "Hibernian",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Jong PSV",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 99,
+    "goals": 1
+  }
+}

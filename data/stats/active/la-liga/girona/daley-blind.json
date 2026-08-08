@@ -1,0 +1,47 @@
+{
+  "apiId": 1159,
+  "name": "Daley Blind",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 336,
+      "goals": 13
+    },
+    {
+      "club": "Groningen",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Jong Ajax",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 141,
+      "goals": 6
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Girona",
+      "appearances": 108,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 108,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 611,
+    "goals": 22
+  }
+}

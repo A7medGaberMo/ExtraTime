@@ -1,0 +1,27 @@
+{
+  "apiId": 916,
+  "name": "M. Diakhaby",
+  "clubs": [
+    {
+      "club": "Lyon",
+      "appearances": 55,
+      "goals": 7
+    },
+    {
+      "club": "Valencia",
+      "appearances": 195,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Guinea",
+      "appearances": 18,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 250,
+    "goals": 18
+  }
+}

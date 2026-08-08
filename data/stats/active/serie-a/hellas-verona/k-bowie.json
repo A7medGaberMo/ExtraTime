@@ -1,0 +1,42 @@
+{
+  "apiId": 126690,
+  "name": "K. Bowie",
+  "clubs": [
+    {
+      "club": "Raith Rovers",
+      "appearances": 39,
+      "goals": 10
+    },
+    {
+      "club": "Fulham",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Northampton Town",
+      "appearances": 85,
+      "goals": 14
+    },
+    {
+      "club": "Hibernian",
+      "appearances": 52,
+      "goals": 15
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 13,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 189,
+    "goals": 43
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiId": 98,
+  "name": "B. Henrichs",
+  "clubs": [
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 76,
+      "goals": 0
+    },
+    {
+      "club": "Monaco",
+      "appearances": 44,
+      "goals": 1
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 184,
+      "goals": 9
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 304,
+    "goals": 10
+  }
+}

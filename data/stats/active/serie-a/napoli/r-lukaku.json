@@ -1,0 +1,57 @@
+{
+  "apiId": 907,
+  "name": "R. Lukaku",
+  "clubs": [
+    {
+      "club": "Anderlecht",
+      "appearances": 98,
+      "goals": 41
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 59,
+      "goals": 15
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 38,
+      "goals": 17
+    },
+    {
+      "club": "Everton",
+      "appearances": 166,
+      "goals": 87
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 96,
+      "goals": 42
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 132,
+      "goals": 78
+    },
+    {
+      "club": "Roma",
+      "appearances": 47,
+      "goals": 21
+    },
+    {
+      "club": "Napoli",
+      "appearances": 45,
+      "goals": 15
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 132,
+      "goals": 93
+    }
+  ],
+  "careerTotal": {
+    "appearances": 681,
+    "goals": 316
+  }
+}

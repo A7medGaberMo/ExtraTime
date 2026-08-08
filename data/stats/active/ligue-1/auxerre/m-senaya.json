@@ -1,0 +1,47 @@
+{
+  "apiId": 191240,
+  "name": "M. Senaya",
+  "clubs": [
+    {
+      "club": "Strasbourg II",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 48,
+      "goals": 1
+    },
+    {
+      "club": "Sochaux",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Rodez",
+      "appearances": 38,
+      "goals": 2
+    },
+    {
+      "club": "Lausanne-Sport",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Auxerre",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Ghana",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 139,
+    "goals": 3
+  }
+}

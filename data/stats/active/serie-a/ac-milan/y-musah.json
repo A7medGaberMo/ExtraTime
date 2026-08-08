@@ -1,0 +1,37 @@
+{
+  "apiId": 162106,
+  "name": "Y. Musah",
+  "clubs": [
+    {
+      "club": "Valencia B",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Valencia",
+      "appearances": 108,
+      "goals": 5
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 82,
+      "goals": 0
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 27,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 47,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 234,
+    "goals": 8
+  }
+}

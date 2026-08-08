@@ -1,0 +1,57 @@
+{
+  "apiId": 59,
+  "name": "Álvaro Morata",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 83,
+      "goals": 45
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 95,
+      "goals": 31
+    },
+    {
+      "club": "Juventus",
+      "appearances": 185,
+      "goals": 59
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 72,
+      "goals": 24
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 154,
+      "goals": 58
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 25,
+      "goals": 6
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 16,
+      "goals": 7
+    },
+    {
+      "club": "Como",
+      "appearances": 30,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 87,
+      "goals": 37
+    }
+  ],
+  "careerTotal": {
+    "appearances": 660,
+    "goals": 231
+  }
+}

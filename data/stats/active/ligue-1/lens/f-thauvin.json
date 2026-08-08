@@ -1,0 +1,52 @@
+{
+  "apiId": 1922,
+  "name": "F. Thauvin",
+  "clubs": [
+    {
+      "club": "Grenoble",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Bastia",
+      "appearances": 50,
+      "goals": 10
+    },
+    {
+      "club": "Marseille",
+      "appearances": 281,
+      "goals": 86
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Tigres UANL",
+      "appearances": 39,
+      "goals": 8
+    },
+    {
+      "club": "Udinese",
+      "appearances": 73,
+      "goals": 15
+    },
+    {
+      "club": "Lens",
+      "appearances": 37,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 13,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 499,
+    "goals": 134
+  }
+}

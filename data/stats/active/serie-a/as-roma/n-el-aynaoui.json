@@ -1,0 +1,42 @@
+{
+  "apiId": 277003,
+  "name": "N. El Aynaoui",
+  "clubs": [
+    {
+      "club": "Nancy B",
+      "appearances": 42,
+      "goals": 4
+    },
+    {
+      "club": "Nancy",
+      "appearances": 24,
+      "goals": 2
+    },
+    {
+      "club": "Lens B",
+      "appearances": 1,
+      "goals": 2
+    },
+    {
+      "club": "Lens",
+      "appearances": 55,
+      "goals": 9
+    },
+    {
+      "club": "Roma",
+      "appearances": 34,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Morocco",
+      "appearances": 22,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 156,
+    "goals": 19
+  }
+}

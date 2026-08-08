@@ -1,0 +1,47 @@
+{
+  "apiId": 22260,
+  "name": "I. Sissoko",
+  "clubs": [
+    {
+      "club": "Toulouse",
+      "appearances": 218,
+      "goals": 24
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 133,
+      "goals": 12
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 202,
+      "goals": 5
+    },
+    {
+      "club": "Watford",
+      "appearances": 99,
+      "goals": 8
+    },
+    {
+      "club": "Nantes",
+      "appearances": 72,
+      "goals": 2
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 71,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 727,
+    "goals": 51
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 529,
+  "name": "N. Tagliafico",
+  "clubs": [
+    {
+      "club": "Banfield",
+      "appearances": 92,
+      "goals": 3
+    },
+    {
+      "club": "Real Murcia",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Independiente",
+      "appearances": 116,
+      "goals": 2
+    },
+    {
+      "club": "Ajax",
+      "appearances": 169,
+      "goals": 16
+    },
+    {
+      "club": "Lyon",
+      "appearances": 132,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 83,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 537,
+    "goals": 30
+  }
+}

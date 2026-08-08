@@ -1,0 +1,36 @@
+{
+  "apiId": 1708,
+  "name": "Dani Raba",
+  "clubs": [
+    {
+      "club": "Villarreal B",
+      "appearances": 39,
+      "goals": 6
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 69,
+      "goals": 8
+    },
+    {
+      "club": "Huesca",
+      "appearances": 24,
+      "goals": 5
+    },
+    {
+      "club": "Granada",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Leganés",
+      "appearances": 66,
+      "goals": 12
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 200,
+    "goals": 31
+  }
+}

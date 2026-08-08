@@ -1,0 +1,42 @@
+{
+  "apiId": 7562,
+  "name": "R. Schmid",
+  "clubs": [
+    {
+      "club": "Sturm Graz",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "FC Liefering",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Wolfsberger AC",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Austria",
+      "appearances": 38,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 33,
+    "goals": 0
+  }
+}

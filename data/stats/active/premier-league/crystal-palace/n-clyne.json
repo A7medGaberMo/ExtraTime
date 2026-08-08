@@ -1,0 +1,37 @@
+{
+  "apiId": 18862,
+  "name": "N. Clyne",
+  "clubs": [
+    {
+      "club": "Crystal Palace",
+      "appearances": 252,
+      "goals": 1
+    },
+    {
+      "club": "Southampton",
+      "appearances": 104,
+      "goals": 5
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 103,
+      "goals": 2
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 14,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 474,
+    "goals": 8
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 41144,
+  "name": "Dodô",
+  "clubs": [
+    {
+      "club": "Coritiba",
+      "appearances": 54,
+      "goals": 0
+    },
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 97,
+      "goals": 5
+    },
+    {
+      "club": "Vitória de Guimarães",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 161,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 324,
+    "goals": 10
+  }
+}

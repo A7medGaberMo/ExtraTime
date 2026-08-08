@@ -1,0 +1,42 @@
+{
+  "apiId": 134,
+  "name": "Juan Miranda",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 30,
+      "goals": 2
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 111,
+      "goals": 8
+    },
+    {
+      "club": "Bologna",
+      "appearances": 83,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 1,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 240,
+    "goals": 11
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 278095,
+  "name": "J. Rowe",
+  "clubs": [
+    {
+      "club": "Norwich City U21",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 56,
+      "goals": 13
+    },
+    {
+      "club": "Marseille",
+      "appearances": 31,
+      "goals": 3
+    },
+    {
+      "club": "Bologna",
+      "appearances": 43,
+      "goals": 8
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 132,
+    "goals": 24
+  }
+}

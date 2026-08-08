@@ -1,0 +1,52 @@
+{
+  "apiId": 47320,
+  "name": "Juanmi",
+  "clubs": [
+    {
+      "club": "Málaga",
+      "appearances": 99,
+      "goals": 21
+    },
+    {
+      "club": "Racing Santander",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Southampton",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 113,
+      "goals": 31
+    },
+    {
+      "club": "Betis",
+      "appearances": 120,
+      "goals": 31
+    },
+    {
+      "club": "Al-Riyadh",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Cádiz",
+      "appearances": 16,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 403,
+    "goals": 87
+  }
+}

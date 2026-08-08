@@ -1,0 +1,32 @@
+{
+  "apiId": 6904,
+  "name": "C. Metcalfe",
+  "clubs": [
+    {
+      "club": "Melbourne City NPL",
+      "appearances": 32,
+      "goals": 3
+    },
+    {
+      "club": "Melbourne City",
+      "appearances": 84,
+      "goals": 11
+    },
+    {
+      "club": "FC St. Pauli",
+      "appearances": 101,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Australia",
+      "appearances": 40,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 217,
+    "goals": 20
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 294722,
+  "name": "Flávio Nazinho",
+  "clubs": [
+    {
+      "club": "Sporting CP B",
+      "appearances": 29,
+      "goals": 3
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 90,
+      "goals": 6
+    },
+    {
+      "club": "Monaco",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 130,
+    "goals": 9
+  }
+}

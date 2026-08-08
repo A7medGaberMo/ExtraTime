@@ -1,0 +1,47 @@
+{
+  "apiId": 1703,
+  "name": "A. Rațiu",
+  "clubs": [
+    {
+      "club": "Villarreal C",
+      "appearances": 66,
+      "goals": 2
+    },
+    {
+      "club": "Villarreal B",
+      "appearances": 60,
+      "goals": 1
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "ADO Den Haag",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Huesca",
+      "appearances": 73,
+      "goals": 3
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 102,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Romania",
+      "appearances": 38,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 314,
+    "goals": 10
+  }
+}

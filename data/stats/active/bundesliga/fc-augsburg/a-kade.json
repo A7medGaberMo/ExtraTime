@@ -1,0 +1,36 @@
+{
+  "apiId": 279993,
+  "name": "A. Kade",
+  "clubs": [
+    {
+      "club": "Hertha BSC II",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Basel U21",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "club": "Basel",
+      "appearances": 107,
+      "goals": 13
+    },
+    {
+      "club": "Augsburg",
+      "appearances": 29,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 149,
+    "goals": 21
+  }
+}

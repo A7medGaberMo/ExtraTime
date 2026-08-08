@@ -1,0 +1,31 @@
+{
+  "apiId": 570129,
+  "name": "A. Akarakiri",
+  "clubs": [
+    {
+      "club": "Second Round",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "club": "Third Round",
+      "appearances": 3,
+      "goals": 5
+    },
+    {
+      "club": "Quarter-Final",
+      "appearances": 2,
+      "goals": 3
+    },
+    {
+      "club": "Semi-Final",
+      "appearances": 4,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 15,
+    "goals": 14
+  }
+}

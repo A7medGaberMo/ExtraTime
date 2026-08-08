@@ -1,0 +1,31 @@
+{
+  "apiId": 24910,
+  "name": "T. Skarke",
+  "clubs": [
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 70,
+      "goals": 4
+    },
+    {
+      "club": "Darmstadt 98",
+      "appearances": 111,
+      "goals": 21
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 65,
+      "goals": 1
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 255,
+    "goals": 27
+  }
+}

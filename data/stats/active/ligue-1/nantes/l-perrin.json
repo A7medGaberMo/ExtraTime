@@ -1,0 +1,41 @@
+{
+  "apiId": 67953,
+  "name": "L. Perrin",
+  "clubs": [
+    {
+      "club": "Marseille B",
+      "appearances": 61,
+      "goals": 3
+    },
+    {
+      "club": "Marseille",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 96,
+      "goals": 1
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Sporting Gijón",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 195,
+    "goals": 7
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiId": 353143,
+  "name": "Hennes Behrens",
+  "clubs": [
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 30,
+      "goals": 4
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 15,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 47,
+    "goals": 5
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "apiId": 1939,
+  "name": "J. Piotrowski",
+  "clubs": [
+    {
+      "club": "Chemik Bydgoszcz",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "club": "Wda Świecie",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Pogoń Szczecin II",
+      "appearances": 25,
+      "goals": 3
+    },
+    {
+      "club": "Pogoń Szczecin",
+      "appearances": 42,
+      "goals": 3
+    },
+    {
+      "club": "Stomil Olsztyn",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Genk",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Waasland-Beveren",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Fortuna Düsseldorf",
+      "appearances": 46,
+      "goals": 1
+    },
+    {
+      "club": "Fortuna Düsseldorf II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Ludogorets Razgrad",
+      "appearances": 145,
+      "goals": 28
+    },
+    {
+      "club": "Ludogorets Razgrad II",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "Udinese",
+      "appearances": 35,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland",
+      "appearances": 14,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 348,
+    "goals": 40
+  }
+}

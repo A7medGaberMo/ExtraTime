@@ -1,0 +1,26 @@
+{
+  "apiId": 182674,
+  "name": "Jofre Carreras",
+  "clubs": [
+    {
+      "club": "Espanyol B",
+      "appearances": 30,
+      "goals": 5
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 51,
+      "goals": 5
+    },
+    {
+      "club": "Mirandés",
+      "appearances": 28,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 109,
+    "goals": 11
+  }
+}

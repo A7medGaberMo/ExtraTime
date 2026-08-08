@@ -1,0 +1,36 @@
+{
+  "apiId": 24839,
+  "name": "M. Friedrich",
+  "clubs": [
+    {
+      "club": "Schalke 04 II",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "FC Augsburg II",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 141,
+      "goals": 9
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 91,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 302,
+    "goals": 14
+  }
+}

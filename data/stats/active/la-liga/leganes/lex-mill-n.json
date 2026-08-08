@@ -1,0 +1,31 @@
+{
+  "apiId": 182668,
+  "name": "Álex Millán",
+  "clubs": [
+    {
+      "club": "Villarreal B",
+      "appearances": 40,
+      "goals": 13
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Union SG",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 63,
+    "goals": 17
+  }
+}

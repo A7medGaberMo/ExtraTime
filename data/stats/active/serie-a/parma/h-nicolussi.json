@@ -1,0 +1,51 @@
+{
+  "apiId": 881,
+  "name": "H. Nicolussi",
+  "clubs": [
+    {
+      "club": "Juventus U23",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Juventus",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Perugia",
+      "appearances": 32,
+      "goals": 2
+    },
+    {
+      "club": "Parma",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Südtirol",
+      "appearances": 18,
+      "goals": 2
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Venezia",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 143,
+    "goals": 10
+  }
+}

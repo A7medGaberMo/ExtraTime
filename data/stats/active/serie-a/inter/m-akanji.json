@@ -1,0 +1,52 @@
+{
+  "apiId": 5,
+  "name": "M. Akanji",
+  "clubs": [
+    {
+      "club": "FC Winterthur II",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "FC Winterthur",
+      "appearances": 37,
+      "goals": 1
+    },
+    {
+      "club": "FC Basel II",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "FC Basel",
+      "appearances": 58,
+      "goals": 7
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 158,
+      "goals": 4
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 136,
+      "goals": 5
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 45,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland",
+      "appearances": 87,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 456,
+    "goals": 19
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "apiId": 91488,
+  "name": "R. Di Gennaro",
+  "clubs": [
+    {
+      "club": "Inter Milan",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Cittadella",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Latina",
+      "appearances": 42,
+      "goals": 0
+    },
+    {
+      "club": "Ternana",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Spezia",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Catanzaro",
+      "appearances": 47,
+      "goals": 0
+    },
+    {
+      "club": "Pescara",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Gubbio",
+      "appearances": 34,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 217,
+    "goals": 0
+  }
+}

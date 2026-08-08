@@ -1,0 +1,46 @@
+{
+  "apiId": 26291,
+  "name": "J. Grahl",
+  "clubs": [
+    {
+      "club": "SpVgg Greuther Fürth II",
+      "appearances": 72,
+      "goals": 0
+    },
+    {
+      "club": "SpVgg Greuther Fürth",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 78,
+      "goals": 0
+    },
+    {
+      "club": "SC Paderborn 07",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 174,
+    "goals": 0
+  }
+}

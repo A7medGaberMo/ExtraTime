@@ -1,0 +1,32 @@
+{
+  "apiId": 30425,
+  "name": "G. Mancini",
+  "clubs": [
+    {
+      "club": "Perugia",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 48,
+      "goals": 7
+    },
+    {
+      "club": "Roma",
+      "appearances": 319,
+      "goals": 23
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 20,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 397,
+    "goals": 31
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "apiId": 1852,
+  "name": "D. Cataldi",
+  "clubs": [
+    {
+      "club": "Lazio",
+      "appearances": 276,
+      "goals": 13
+    },
+    {
+      "club": "Crotone",
+      "appearances": 38,
+      "goals": 4
+    },
+    {
+      "club": "Genoa",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Benevento",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 33,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 390,
+    "goals": 21
+  }
+}

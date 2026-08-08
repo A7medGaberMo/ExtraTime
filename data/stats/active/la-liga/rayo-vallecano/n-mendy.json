@@ -1,0 +1,42 @@
+{
+  "apiId": 358431,
+  "name": "N. Mendy",
+  "clubs": [
+    {
+      "club": "Paris FC B",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Paris FC",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Betis B",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Betis",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 27,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 79,
+    "goals": 4
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 279822,
+  "name": "F. Boyomo",
+  "clubs": [
+    {
+      "club": "Albacete",
+      "appearances": 100,
+      "goals": 2
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 42,
+      "goals": 1
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 53,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Cameroon",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 195,
+    "goals": 5
+  }
+}

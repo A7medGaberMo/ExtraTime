@@ -1,0 +1,37 @@
+{
+  "apiId": 46738,
+  "name": "M. Valjent",
+  "clubs": [
+    {
+      "club": "Dubnica",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Ternana",
+      "appearances": 144,
+      "goals": 5
+    },
+    {
+      "club": "Chievo",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 280,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia",
+      "appearances": 17,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 438,
+    "goals": 9
+  }
+}

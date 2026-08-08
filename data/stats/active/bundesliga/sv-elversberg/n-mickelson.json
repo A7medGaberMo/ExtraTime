@@ -1,0 +1,37 @@
+{
+  "apiId": 39331,
+  "name": "N. Mickelson",
+  "clubs": [
+    {
+      "club": "HamKam",
+      "appearances": 55,
+      "goals": 0
+    },
+    {
+      "club": "Strømsgodset",
+      "appearances": 30,
+      "goals": 0
+    },
+    {
+      "club": "Odense boldklub",
+      "appearances": 102,
+      "goals": 2
+    },
+    {
+      "club": "SV Elversberg",
+      "appearances": 26,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Thailand",
+      "appearances": 32,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 213,
+    "goals": 3
+  }
+}

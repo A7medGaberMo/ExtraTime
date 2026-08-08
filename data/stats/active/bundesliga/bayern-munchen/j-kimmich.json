@@ -1,0 +1,27 @@
+{
+  "apiId": 502,
+  "name": "J. Kimmich",
+  "clubs": [
+    {
+      "club": "RB Leipzig",
+      "appearances": 55,
+      "goals": 3
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 493,
+      "goals": 47
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 114,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 548,
+    "goals": 50
+  }
+}

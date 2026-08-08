@@ -1,0 +1,26 @@
+{
+  "apiId": 127631,
+  "name": "V. Gendrey",
+  "clubs": [
+    {
+      "club": "Amiens II",
+      "appearances": 37,
+      "goals": 1
+    },
+    {
+      "club": "Amiens",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Lecce",
+      "appearances": 147,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 206,
+    "goals": 6
+  }
+}

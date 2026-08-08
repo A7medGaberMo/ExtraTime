@@ -1,0 +1,32 @@
+{
+  "apiId": 47317,
+  "name": "Barrenetxea",
+  "clubs": [
+    {
+      "club": "Real Sociedad C",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Real Sociedad B",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 233,
+      "goals": 30
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 245,
+    "goals": 32
+  }
+}

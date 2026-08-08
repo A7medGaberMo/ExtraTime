@@ -1,0 +1,36 @@
+{
+  "apiId": 47264,
+  "name": "Hugo Duro",
+  "clubs": [
+    {
+      "club": "Getafe B",
+      "appearances": 71,
+      "goals": 34
+    },
+    {
+      "club": "Getafe",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Real Madrid B",
+      "appearances": 20,
+      "goals": 12
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Valencia",
+      "appearances": 182,
+      "goals": 47
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 309,
+    "goals": 94
+  }
+}

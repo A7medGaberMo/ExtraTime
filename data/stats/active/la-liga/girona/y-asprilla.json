@@ -1,0 +1,37 @@
+{
+  "apiId": 3288,
+  "name": "Y. Asprilla",
+  "clubs": [
+    {
+      "club": "Envigado",
+      "appearances": 40,
+      "goals": 6
+    },
+    {
+      "club": "Watford",
+      "appearances": 86,
+      "goals": 7
+    },
+    {
+      "club": "Girona",
+      "appearances": 50,
+      "goals": 4
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia",
+      "appearances": 11,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 177,
+    "goals": 17
+  }
+}

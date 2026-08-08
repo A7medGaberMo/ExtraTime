@@ -1,0 +1,52 @@
+{
+  "apiId": 2284,
+  "name": "Emerson",
+  "clubs": [
+    {
+      "club": "Santos",
+      "appearances": 33,
+      "goals": 3
+    },
+    {
+      "club": "Palermo",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Roma",
+      "appearances": 47,
+      "goals": 2
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 71,
+      "goals": 2
+    },
+    {
+      "club": "Lyon",
+      "appearances": 36,
+      "goals": 1
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 113,
+      "goals": 5
+    },
+    {
+      "club": "Marseille",
+      "appearances": 37,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 29,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 346,
+    "goals": 13
+  }
+}

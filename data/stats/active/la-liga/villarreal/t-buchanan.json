@@ -1,0 +1,42 @@
+{
+  "apiId": 51016,
+  "name": "T. Buchanan",
+  "clubs": [
+    {
+      "club": "Sigma",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "New England Revolution",
+      "appearances": 67,
+      "goals": 12
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 67,
+      "goals": 5
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 56,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Canada",
+      "appearances": 65,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 214,
+    "goals": 28
+  }
+}

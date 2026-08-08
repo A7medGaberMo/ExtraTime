@@ -1,0 +1,47 @@
+{
+  "apiId": 24806,
+  "name": "N. Nartey",
+  "clubs": [
+    {
+      "club": "1. FC Köln II",
+      "appearances": 27,
+      "goals": 3
+    },
+    {
+      "club": "1. FC Köln",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 61,
+      "goals": 34
+    },
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Hansa Rostock",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "SV Sandhausen",
+      "appearances": 26,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 144,
+    "goals": 39
+  }
+}

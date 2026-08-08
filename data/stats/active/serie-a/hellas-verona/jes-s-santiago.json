@@ -1,0 +1,26 @@
+{
+  "apiId": 364415,
+  "name": "Jesús Santiago",
+  "clubs": [
+    {
+      "club": "Valencia",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Valencia B",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 14,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 58,
+    "goals": 2
+  }
+}

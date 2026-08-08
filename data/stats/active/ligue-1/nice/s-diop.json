@@ -1,0 +1,47 @@
+{
+  "apiId": 107,
+  "name": "S. Diop",
+  "clubs": [
+    {
+      "club": "Rennes B",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "club": "Monaco B",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Monaco",
+      "appearances": 105,
+      "goals": 17
+    },
+    {
+      "club": "Sochaux",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Sochaux B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Nice",
+      "appearances": 122,
+      "goals": 18
+    }
+  ],
+  "national": [
+    {
+      "team": "Morocco",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 267,
+    "goals": 40
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiId": 289460,
+  "name": "J. Malatini",
+  "clubs": [
+    {
+      "club": "Talleres",
+      "appearances": 43,
+      "goals": 1
+    },
+    {
+      "club": "Defensa y Justicia",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 34,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 118,
+    "goals": 3
+  }
+}

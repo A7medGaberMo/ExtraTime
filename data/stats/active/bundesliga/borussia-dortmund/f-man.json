@@ -1,0 +1,27 @@
+{
+  "apiId": 341839,
+  "name": "F. Mané",
+  "clubs": [
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 15,
+      "goals": 3
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 21,
+    "goals": 3
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 125418,
+  "name": "Y. Konoplya",
+  "clubs": [
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 115,
+      "goals": 7
+    },
+    {
+      "club": "Desna Chernihiv",
+      "appearances": 52,
+      "goals": 1
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine",
+      "appearances": 27,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 167,
+    "goals": 8
+  }
+}

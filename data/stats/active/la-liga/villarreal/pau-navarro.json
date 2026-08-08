@@ -1,0 +1,26 @@
+{
+  "apiId": 435552,
+  "name": "Pau Navarro",
+  "clubs": [
+    {
+      "club": "Villarreal C",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Villarreal B",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 46,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 75,
+    "goals": 3
+  }
+}

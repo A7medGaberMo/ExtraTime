@@ -1,0 +1,36 @@
+{
+  "apiId": 1090,
+  "name": "A. Bernede",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain B",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 66,
+      "goals": 1
+    },
+    {
+      "club": "Lausanne-Sport",
+      "appearances": 61,
+      "goals": 4
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 29,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 189,
+    "goals": 8
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 314511,
+  "name": "A. Nusa",
+  "clubs": [
+    {
+      "club": "Stabæk",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 86,
+      "goals": 7
+    },
+    {
+      "club": "Club NXT",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 71,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 30,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 172,
+    "goals": 20
+  }
+}

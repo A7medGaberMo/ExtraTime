@@ -1,0 +1,31 @@
+{
+  "apiId": 270509,
+  "name": "A. Diouf",
+  "clubs": [
+    {
+      "club": "Rennes",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Basel",
+      "appearances": 56,
+      "goals": 3
+    },
+    {
+      "club": "Lens",
+      "appearances": 68,
+      "goals": 2
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 29,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 160,
+    "goals": 9
+  }
+}

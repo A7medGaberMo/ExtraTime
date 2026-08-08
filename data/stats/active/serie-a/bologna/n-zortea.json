@@ -1,0 +1,46 @@
+{
+  "apiId": 128461,
+  "name": "N. Zortea",
+  "clubs": [
+    {
+      "club": "Cremonese",
+      "appearances": 55,
+      "goals": 1
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 17,
+      "goals": 2
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Frosinone",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 37,
+      "goals": 6
+    },
+    {
+      "club": "Bologna",
+      "appearances": 42,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 204,
+    "goals": 11
+  }
+}

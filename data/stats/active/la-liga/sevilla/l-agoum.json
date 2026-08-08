@@ -1,0 +1,41 @@
+{
+  "apiId": 21004,
+  "name": "L. Agoumé",
+  "clubs": [
+    {
+      "club": "Sochaux",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Spezia",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Brest",
+      "appearances": 30,
+      "goals": 0
+    },
+    {
+      "club": "Troyes",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 86,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 165,
+    "goals": 2
+  }
+}

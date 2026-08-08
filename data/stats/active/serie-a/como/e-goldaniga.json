@@ -1,0 +1,51 @@
+{
+  "apiId": 31073,
+  "name": "E. Goldaniga",
+  "clubs": [
+    {
+      "club": "Pisa",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "Perugia",
+      "appearances": 38,
+      "goals": 4
+    },
+    {
+      "club": "Palermo",
+      "appearances": 47,
+      "goals": 4
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Frosinone",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Genoa",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 49,
+      "goals": 0
+    },
+    {
+      "club": "Como",
+      "appearances": 52,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 305,
+    "goals": 16
+  }
+}

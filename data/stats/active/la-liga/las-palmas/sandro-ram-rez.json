@@ -1,0 +1,61 @@
+{
+  "apiId": 47324,
+  "name": "Sandro Ramírez",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 61,
+      "goals": 15
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 32,
+      "goals": 7
+    },
+    {
+      "club": "Málaga",
+      "appearances": 31,
+      "goals": 16
+    },
+    {
+      "club": "Everton",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 26,
+      "goals": 4
+    },
+    {
+      "club": "Huesca",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Getafe",
+      "appearances": 30,
+      "goals": 4
+    },
+    {
+      "club": "Las Palmas",
+      "appearances": 81,
+      "goals": 17
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 328,
+    "goals": 66
+  }
+}

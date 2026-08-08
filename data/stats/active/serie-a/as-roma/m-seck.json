@@ -1,0 +1,46 @@
+{
+  "apiId": 626713,
+  "name": "M. Seck",
+  "clubs": [
+    {
+      "club": "League",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Roma",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Carpi",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Empoli",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Novara",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Almere City",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Livorno",
+      "appearances": 11,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 60,
+    "goals": 0
+  }
+}

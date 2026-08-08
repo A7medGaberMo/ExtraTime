@@ -1,0 +1,42 @@
+{
+  "apiId": 877,
+  "name": "M. Kean",
+  "clubs": [
+    {
+      "club": "Juventus",
+      "appearances": 123,
+      "goals": 22
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 20,
+      "goals": 4
+    },
+    {
+      "club": "Everton",
+      "appearances": 39,
+      "goals": 4
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 41,
+      "goals": 17
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 77,
+      "goals": 34
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 26,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 300,
+    "goals": 81
+  }
+}

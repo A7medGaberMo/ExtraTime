@@ -1,0 +1,47 @@
+{
+  "apiId": 194750,
+  "name": "E. Touré",
+  "clubs": [
+    {
+      "club": "Reims II",
+      "appearances": 2,
+      "goals": 2
+    },
+    {
+      "club": "Reims",
+      "appearances": 68,
+      "goals": 9
+    },
+    {
+      "club": "Almería",
+      "appearances": 22,
+      "goals": 7
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 26,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Mali",
+      "appearances": 30,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 152,
+    "goals": 30
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 90594,
+  "name": "J. Dina Ebimbe",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain B",
+      "appearances": 24,
+      "goals": 2
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Le Havre",
+      "appearances": 25,
+      "goals": 3
+    },
+    {
+      "club": "Dijon",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 85,
+      "goals": 15
+    },
+    {
+      "club": "Brest",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Cameroon",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 206,
+    "goals": 26
+  }
+}

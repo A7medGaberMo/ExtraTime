@@ -1,0 +1,46 @@
+{
+  "apiId": 284570,
+  "name": "B. Norton-Cuffy",
+  "clubs": [
+    {
+      "club": "Arsenal U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Lincoln City",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Rotherham United",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Coventry City",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Millwall",
+      "appearances": 40,
+      "goals": 2
+    },
+    {
+      "club": "Genoa",
+      "appearances": 40,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 146,
+    "goals": 5
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 66817,
+  "name": "N. Krstović",
+  "clubs": [
+    {
+      "club": "Zeta",
+      "appearances": 99,
+      "goals": 41
+    },
+    {
+      "club": "Red Star Belgrade",
+      "appearances": 27,
+      "goals": 3
+    },
+    {
+      "club": "Grafičar Beograd",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "DAC 1904",
+      "appearances": 66,
+      "goals": 37
+    },
+    {
+      "club": "Lecce",
+      "appearances": 75,
+      "goals": 20
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 48,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Montenegro",
+      "appearances": 34,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 321,
+    "goals": 114
+  }
+}

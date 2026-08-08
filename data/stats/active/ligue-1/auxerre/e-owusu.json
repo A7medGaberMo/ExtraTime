@@ -1,0 +1,31 @@
+{
+  "apiId": 21010,
+  "name": "E. Owusu",
+  "clubs": [
+    {
+      "club": "Lyon B",
+      "appearances": 43,
+      "goals": 1
+    },
+    {
+      "club": "Sochaux",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Gent",
+      "appearances": 126,
+      "goals": 0
+    },
+    {
+      "club": "Auxerre",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 206,
+    "goals": 1
+  }
+}

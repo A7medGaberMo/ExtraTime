@@ -1,0 +1,26 @@
+{
+  "apiId": 334334,
+  "name": "K. Topp",
+  "clubs": [
+    {
+      "club": "Schalke 04",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Schalke 04 II",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 41,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 73,
+    "goals": 12
+  }
+}

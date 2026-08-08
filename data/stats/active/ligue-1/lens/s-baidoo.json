@@ -1,0 +1,32 @@
+{
+  "apiId": 322984,
+  "name": "S. Baidoo",
+  "clubs": [
+    {
+      "club": "FC Liefering",
+      "appearances": 46,
+      "goals": 1
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 71,
+      "goals": 2
+    },
+    {
+      "club": "Lens",
+      "appearances": 25,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Austria",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 142,
+    "goals": 5
+  }
+}

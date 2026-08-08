@@ -1,0 +1,47 @@
+{
+  "apiId": 368230,
+  "name": "J. Duranville",
+  "clubs": [
+    {
+      "club": "Anderlecht",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "RSCA Futures",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Basel",
+      "appearances": 17,
+      "goals": 2
+    },
+    {
+      "club": "Lyon",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 63,
+    "goals": 5
+  }
+}

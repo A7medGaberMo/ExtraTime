@@ -1,0 +1,26 @@
+{
+  "apiId": 400948,
+  "name": "Assane Diao",
+  "clubs": [
+    {
+      "club": "Betis B",
+      "appearances": 25,
+      "goals": 6
+    },
+    {
+      "club": "Betis",
+      "appearances": 47,
+      "goals": 6
+    },
+    {
+      "club": "Como",
+      "appearances": 35,
+      "goals": 10
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 107,
+    "goals": 22
+  }
+}

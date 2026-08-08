@@ -1,0 +1,42 @@
+{
+  "apiId": 104793,
+  "name": "A. Ndiaye",
+  "clubs": [
+    {
+      "club": "Atlético Madrid B",
+      "appearances": 34,
+      "goals": 10
+    },
+    {
+      "club": "Tenerife",
+      "appearances": 40,
+      "goals": 12
+    },
+    {
+      "club": "Getafe",
+      "appearances": 59,
+      "goals": 4
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 33,
+      "goals": 9
+    },
+    {
+      "club": "Real Valladolid",
+      "appearances": 1,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 167,
+    "goals": 37
+  }
+}

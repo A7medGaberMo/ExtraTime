@@ -1,0 +1,36 @@
+{
+  "apiId": 14704,
+  "name": "B. Franjić",
+  "clubs": [
+    {
+      "club": "Dinamo Zagreb II",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 97,
+      "goals": 1
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Darmstadt 98",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 166,
+    "goals": 6
+  }
+}

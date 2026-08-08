@@ -1,0 +1,27 @@
+{
+  "apiId": 135519,
+  "name": "G. Isaksen",
+  "clubs": [
+    {
+      "club": "Midtjylland",
+      "appearances": 139,
+      "goals": 33
+    },
+    {
+      "club": "Lazio",
+      "appearances": 121,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 15,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 260,
+    "goals": 47
+  }
+}

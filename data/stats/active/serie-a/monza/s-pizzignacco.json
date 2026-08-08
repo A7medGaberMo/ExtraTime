@@ -1,0 +1,36 @@
+{
+  "apiId": 31566,
+  "name": "S. Pizzignacco",
+  "clubs": [
+    {
+      "club": "Vicenza",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Legnago",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Renate",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Feralpisalò",
+      "appearances": 81,
+      "goals": 0
+    },
+    {
+      "club": "Monza",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 147,
+    "goals": 0
+  }
+}

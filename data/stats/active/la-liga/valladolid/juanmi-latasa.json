@@ -1,0 +1,26 @@
+{
+  "apiId": 162028,
+  "name": "Juanmi Latasa",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 51,
+      "goals": 17
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Getafe",
+      "appearances": 57,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 109,
+    "goals": 24
+  }
+}

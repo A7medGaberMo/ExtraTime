@@ -1,0 +1,42 @@
+{
+  "apiId": 20617,
+  "name": "S. Katompa Mvumpa",
+  "clubs": [
+    {
+      "club": "Alès",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Paris FC",
+      "appearances": 35,
+      "goals": 11
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 132,
+      "goals": 35
+    },
+    {
+      "club": "Red Star Belgrade",
+      "appearances": 24,
+      "goals": 7
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "DR Congo",
+      "appearances": 19,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 206,
+    "goals": 55
+  }
+}

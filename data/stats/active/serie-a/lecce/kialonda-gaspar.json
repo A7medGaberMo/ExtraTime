@@ -1,0 +1,32 @@
+{
+  "apiId": 291589,
+  "name": "Kialonda Gaspar",
+  "clubs": [
+    {
+      "club": "Sagrada Esperança",
+      "appearances": 75,
+      "goals": 4
+    },
+    {
+      "club": "Estrela da Amadora",
+      "appearances": 63,
+      "goals": 2
+    },
+    {
+      "club": "Lecce",
+      "appearances": 26,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Angola",
+      "appearances": 50,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 164,
+    "goals": 7
+  }
+}

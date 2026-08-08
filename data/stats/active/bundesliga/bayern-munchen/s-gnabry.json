@@ -1,0 +1,47 @@
+{
+  "apiId": 510,
+  "name": "S. Gnabry",
+  "clubs": [
+    {
+      "club": "Arsenal",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 27,
+      "goals": 11
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 323,
+      "goals": 103
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 26,
+      "goals": 10
+    },
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 59,
+      "goals": 26
+    }
+  ],
+  "careerTotal": {
+    "appearances": 398,
+    "goals": 125
+  }
+}

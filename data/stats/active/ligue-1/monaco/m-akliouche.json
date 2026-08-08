@@ -1,0 +1,32 @@
+{
+  "apiId": 274300,
+  "name": "M. Akliouche",
+  "clubs": [
+    {
+      "club": "Monaco B",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Monaco",
+      "appearances": 139,
+      "goals": 23
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 10,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 156,
+    "goals": 26
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiId": 191160,
+  "name": "J. Makengo",
+  "clubs": [
+    {
+      "club": "Auxerre B",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "SC Freiburg II",
+      "appearances": 47,
+      "goals": 0
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 76,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 127,
+    "goals": 0
+  }
+}

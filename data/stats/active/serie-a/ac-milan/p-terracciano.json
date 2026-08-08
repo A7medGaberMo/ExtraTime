@@ -1,0 +1,26 @@
+{
+  "apiId": 30394,
+  "name": "P. Terracciano",
+  "clubs": [
+    {
+      "club": "Hellas Verona",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Cremonese",
+      "appearances": 37,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 101,
+    "goals": 2
+  }
+}

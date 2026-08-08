@@ -1,0 +1,32 @@
+{
+  "apiId": 30497,
+  "name": "Bremer",
+  "clubs": [
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Torino",
+      "appearances": 110,
+      "goals": 13
+    },
+    {
+      "club": "Juventus",
+      "appearances": 122,
+      "goals": 12
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 265,
+    "goals": 26
+  }
+}

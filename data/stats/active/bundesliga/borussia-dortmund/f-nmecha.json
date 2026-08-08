@@ -1,0 +1,37 @@
+{
+  "apiId": 637,
+  "name": "F. Nmecha",
+  "clubs": [
+    {
+      "club": "Manchester City U21",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 50,
+      "goals": 3
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 112,
+      "goals": 13
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 12,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 171,
+    "goals": 16
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 336671,
+  "name": "Renato Veiga",
+  "clubs": [
+    {
+      "club": "Sporting CP B",
+      "appearances": 31,
+      "goals": 4
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Basel",
+      "appearances": 26,
+      "goals": 2
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 18,
+      "goals": 2
+    },
+    {
+      "club": "Juventus",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 42,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 18,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 145,
+    "goals": 9
+  }
+}

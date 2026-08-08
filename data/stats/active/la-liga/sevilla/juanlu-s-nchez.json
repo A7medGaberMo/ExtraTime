@@ -1,0 +1,26 @@
+{
+  "apiId": 182772,
+  "name": "Juanlu Sánchez",
+  "clubs": [
+    {
+      "club": "Sevilla",
+      "appearances": 109,
+      "goals": 6
+    },
+    {
+      "club": "Mirandés",
+      "appearances": 38,
+      "goals": 2
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 147,
+    "goals": 8
+  }
+}

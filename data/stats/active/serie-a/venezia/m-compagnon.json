@@ -1,0 +1,36 @@
+{
+  "apiId": 266185,
+  "name": "M. Compagnon",
+  "clubs": [
+    {
+      "club": "Udinese",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Potenza",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Juventus U23",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Juventus Next Gen",
+      "appearances": 60,
+      "goals": 14
+    },
+    {
+      "club": "Feralpisalò",
+      "appearances": 31,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 116,
+    "goals": 22
+  }
+}

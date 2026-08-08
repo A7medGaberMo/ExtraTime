@@ -1,0 +1,57 @@
+{
+  "apiId": 443579,
+  "name": "R. Fofana",
+  "clubs": [
+    {
+      "club": "Fulham",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Bastia",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Udinese",
+      "appearances": 119,
+      "goals": 13
+    },
+    {
+      "club": "Lens",
+      "appearances": 112,
+      "goals": 21
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 25,
+      "goals": 3
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 33,
+      "goals": 3
+    },
+    {
+      "club": "Rennes",
+      "appearances": 29,
+      "goals": 2
+    },
+    {
+      "club": "Porto",
+      "appearances": 18,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 35,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 394,
+    "goals": 47
+  }
+}

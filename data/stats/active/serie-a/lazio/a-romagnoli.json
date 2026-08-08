@@ -1,0 +1,37 @@
+{
+  "apiId": 1632,
+  "name": "A. Romagnoli",
+  "clubs": [
+    {
+      "club": "Roma",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 31,
+      "goals": 2
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 246,
+      "goals": 10
+    },
+    {
+      "club": "Lazio",
+      "appearances": 161,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 13,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 452,
+    "goals": 21
+  }
+}

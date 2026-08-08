@@ -1,0 +1,36 @@
+{
+  "apiId": 161569,
+  "name": "O. Sørensen",
+  "clubs": [
+    {
+      "club": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Midtjylland",
+      "appearances": 132,
+      "goals": 16
+    },
+    {
+      "club": "Frederica",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "HamKam",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Parma",
+      "appearances": 17,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 166,
+    "goals": 18
+  }
+}

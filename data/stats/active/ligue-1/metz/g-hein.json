@@ -1,0 +1,36 @@
+{
+  "apiId": 20529,
+  "name": "G. Hein",
+  "clubs": [
+    {
+      "club": "Metz B",
+      "appearances": 42,
+      "goals": 10
+    },
+    {
+      "club": "Metz",
+      "appearances": 97,
+      "goals": 23
+    },
+    {
+      "club": "Tours",
+      "appearances": 23,
+      "goals": 4
+    },
+    {
+      "club": "Valenciennes",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Auxerre",
+      "appearances": 152,
+      "goals": 29
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 343,
+    "goals": 67
+  }
+}

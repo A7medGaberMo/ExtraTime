@@ -1,0 +1,37 @@
+{
+  "apiId": 128342,
+  "name": "R. Ndiaye",
+  "clubs": [
+    {
+      "club": "Sochaux II",
+      "appearances": 22,
+      "goals": 4
+    },
+    {
+      "club": "Sochaux",
+      "appearances": 103,
+      "goals": 6
+    },
+    {
+      "club": "Le Havre",
+      "appearances": 82,
+      "goals": 5
+    },
+    {
+      "club": "Le Havre II",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 212,
+    "goals": 16
+  }
+}

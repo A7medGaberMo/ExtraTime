@@ -1,0 +1,46 @@
+{
+  "apiId": 26292,
+  "name": "A. Meyer",
+  "clubs": [
+    {
+      "club": "Hamburger SV II",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "TSV Havelse",
+      "appearances": 93,
+      "goals": 0
+    },
+    {
+      "club": "Energie Cottbus",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Jahn Regensburg",
+      "appearances": 101,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 25,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 256,
+    "goals": 0
+  }
+}

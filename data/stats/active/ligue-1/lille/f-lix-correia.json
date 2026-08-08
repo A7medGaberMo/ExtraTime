@@ -1,0 +1,51 @@
+{
+  "apiId": 135749,
+  "name": "Félix Correia",
+  "clubs": [
+    {
+      "club": "Manchester City",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Jong AZ",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Juventus",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Juventus U23",
+      "appearances": 30,
+      "goals": 12
+    },
+    {
+      "club": "Parma",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Marítimo",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Gil Vicente",
+      "appearances": 71,
+      "goals": 15
+    },
+    {
+      "club": "Lille",
+      "appearances": 47,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 208,
+    "goals": 37
+  }
+}

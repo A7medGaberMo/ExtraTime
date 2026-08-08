@@ -1,0 +1,56 @@
+{
+  "apiId": 215,
+  "name": "S. Esposito",
+  "clubs": [
+    {
+      "club": "Inter Milan",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "SPAL",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Venezia",
+      "appearances": 19,
+      "goals": 2
+    },
+    {
+      "club": "Basel",
+      "appearances": 34,
+      "goals": 7
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "Bari",
+      "appearances": 15,
+      "goals": 4
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 23,
+      "goals": 6
+    },
+    {
+      "club": "Empoli",
+      "appearances": 35,
+      "goals": 10
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 38,
+      "goals": 8
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 217,
+    "goals": 41
+  }
+}

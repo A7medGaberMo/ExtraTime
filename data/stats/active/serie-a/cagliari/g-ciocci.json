@@ -1,0 +1,31 @@
+{
+  "apiId": 135863,
+  "name": "G. Ciocci",
+  "clubs": [
+    {
+      "club": "Cagliari",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Olbia",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Pescara",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Pontedera",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 43,
+    "goals": 0
+  }
+}

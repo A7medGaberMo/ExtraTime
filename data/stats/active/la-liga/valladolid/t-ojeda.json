@@ -1,0 +1,36 @@
+{
+  "apiId": 307565,
+  "name": "T. Ojeda",
+  "clubs": [
+    {
+      "club": "Vélez",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal B",
+      "appearances": 47,
+      "goals": 1
+    },
+    {
+      "club": "Villarreal C",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Lugo",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 101,
+    "goals": 1
+  }
+}
