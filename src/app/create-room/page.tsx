@@ -17,11 +17,11 @@ type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
 import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
 
 const poolOptions = [
-  { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All leagues" },
-  { id: "ACTIVE" as PoolMode, label: "Active Stars", icon: UserCheck, sub: "Current players" },
-  { id: "EPL" as PoolMode, label: "EPL", icon: Flame, sub: "Premier stars" },
-  { id: "TOP_TEAMS" as PoolMode, label: "Top Clubs", icon: Star, sub: "Elite clubs" },
-  { id: "ICONS" as PoolMode, label: "Icons", icon: Crown, sub: "Legends only" },
+  { id: "ACTIVE" as PoolMode, label: "Active", icon: UserCheck, sub: "Current players" },
+  { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All + Legends" },
+  { id: "EPL" as PoolMode, label: "EPL", icon: Flame, sub: "Prem only" },
+  { id: "TOP_TEAMS" as PoolMode, label: "Top Clubs", icon: Star, sub: "Big teams" },
+  { id: "ICONS" as PoolMode, label: "Icons", icon: Crown, sub: "Legends" },
 ];
 
 export default function CreateRoomPage() {
@@ -33,7 +33,7 @@ export default function CreateRoomPage() {
   const [nickname, setNickname] = useState(() => randomName());
   const [matchSize, setMatchSize] = useState<MatchSize>(11);
   const [startingBudget, setStartingBudget] = useState(100);
-  const [poolMode, setPoolMode] = useState<PoolMode>("GLOBAL");
+  const [poolMode, setPoolMode] = useState<PoolMode>("ACTIVE");
   const [isPublic, setIsPublic] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -56,7 +56,7 @@ export default function CreateRoomPage() {
     <div className="mx-auto max-w-3xl space-y-4 animate-fade-in">
       <PageHeader
         title="Create Hidden Bid"
-        subtitle="Pick the arena rules, share the code, and draft your squad card by card."
+        subtitle="Set the rules, share the code, draft your squad."
         backUrl="/"
         className="mb-3"
       />
@@ -68,17 +68,17 @@ export default function CreateRoomPage() {
           <div className="rounded-xl border border-lime/25 bg-lime/10 p-2 sm:p-3 text-center sm:text-left">
             <Clock className="mx-auto sm:mx-0 mb-1.5 h-4 w-4 text-lime shrink-0" />
             <p className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-lime whitespace-nowrap truncate">30s Turns</p>
-            <p className="mt-0.5 text-[9px] sm:text-xs font-medium text-slate-300 whitespace-nowrap truncate">+10s with Scout/Spy</p>
+            <p className="mt-0.5 text-[9px] sm:text-xs font-medium text-slate-300 whitespace-nowrap truncate">+10s with Perks</p>
           </div>
           <div className="rounded-xl border border-white/10 bg-slate-900/80 p-2 sm:p-3 text-center sm:text-left">
             <ShieldCheck className="mx-auto sm:mx-0 mb-1.5 h-4 w-4 text-amber-400 shrink-0" />
-            <p className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white whitespace-nowrap truncate">Hidden Backup</p>
-            <p className="mt-0.5 text-[9px] sm:text-xs font-medium text-steel whitespace-nowrap truncate">Win star or get sub</p>
+            <p className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white whitespace-nowrap truncate">Hidden Sub</p>
+            <p className="mt-0.5 text-[9px] sm:text-xs font-medium text-steel whitespace-nowrap truncate">Win or get backup</p>
           </div>
           <div className="rounded-xl border border-white/10 bg-slate-900/80 p-2 sm:p-3 text-center sm:text-left">
             <Coins className="mx-auto sm:mx-0 mb-1.5 h-4 w-4 text-lime shrink-0" />
-            <p className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white whitespace-nowrap truncate">Saved Cash</p>
-            <p className="mt-0.5 text-[9px] sm:text-xs font-medium text-steel whitespace-nowrap truncate">Budget breaks ties</p>
+            <p className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white whitespace-nowrap truncate">Budget</p>
+            <p className="mt-0.5 text-[9px] sm:text-xs font-medium text-steel whitespace-nowrap truncate">Save cash to win ties</p>
           </div>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function CreateRoomPage() {
             >
               <Users className={`mb-1.5 h-4 w-4 sm:h-5 sm:w-5 shrink-0 ${matchSize === 11 ? "text-lime" : "text-steel"}`} />
               <p className="text-xs sm:text-sm font-black uppercase tracking-wider text-white whitespace-nowrap">11 vs 11</p>
-              <p className="mt-0.5 text-[10px] sm:text-xs font-medium text-steel whitespace-nowrap truncate">Full pitch - 11 rounds</p>
+              <p className="mt-0.5 text-[10px] sm:text-xs font-medium text-steel whitespace-nowrap truncate">Full match · 11 rounds</p>
             </button>
             <button
               type="button"
@@ -132,7 +132,7 @@ export default function CreateRoomPage() {
             >
               <Zap className={`mb-1.5 h-4 w-4 sm:h-5 sm:w-5 shrink-0 ${matchSize === 5 ? "text-lime" : "text-steel"}`} />
               <p className="text-xs sm:text-sm font-black uppercase tracking-wider text-white whitespace-nowrap">5 vs 5</p>
-              <p className="mt-0.5 text-[10px] sm:text-xs font-medium text-steel whitespace-nowrap truncate">Fast futsal - 5 rounds</p>
+              <p className="mt-0.5 text-[10px] sm:text-xs font-medium text-steel whitespace-nowrap truncate">Quick game · 5 rounds</p>
             </button>
           </div>
 
@@ -159,6 +159,7 @@ export default function CreateRoomPage() {
 
           <div className="space-y-2">
             <label className="text-[10px] font-black uppercase tracking-widest text-steel whitespace-nowrap">Player Pool</label>
+            {/* Active = current season players · Global = all including legends */}
             <div className="flex flex-col gap-2 sm:grid sm:grid-cols-5 sm:gap-2">
               {/* Mobile Row 1: 2 items (Global, Active Stars) */}
               <div className="grid grid-cols-2 gap-2 sm:contents">

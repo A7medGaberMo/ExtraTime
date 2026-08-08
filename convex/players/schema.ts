@@ -27,4 +27,6 @@ export const playersTable = defineTable({
   .index("by_club", ["clubId"])
   .index("by_nation", ["nationId"])
   .index("by_legend", ["isLegend"])
-  .index("by_season", ["seasonYear"]);
+  .index("by_season", ["seasonYear"])
+  .index("by_apiId", ["apiId"])
+  .index("by_name", ["name"]);

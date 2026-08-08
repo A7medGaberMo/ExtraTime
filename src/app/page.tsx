@@ -6,18 +6,18 @@ import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { useToast } from "@/components/shared/toast";
-import { Trophy, Users, PlusCircle, Zap, Swords, Sparkles, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck, X, RefreshCw } from "lucide-react";
+import { Trophy, Users, PlusCircle, Zap, Swords, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck, X, RefreshCw } from "lucide-react";
 
 type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
 
 import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
 
 const poolOptions = [
-  { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All Players" },
-  { id: "ACTIVE" as PoolMode, label: "Active Stars", icon: UserCheck, sub: "Current players" },
-  { id: "EPL" as PoolMode, label: "EPL", icon: Flame, sub: "Premier League" },
-  { id: "TOP_TEAMS" as PoolMode, label: "Top Clubs", icon: Star, sub: "Elite clubs" },
-  { id: "ICONS" as PoolMode, label: "Icons", icon: Crown, sub: "Legends only" },
+  { id: "ACTIVE" as PoolMode, label: "Active", icon: UserCheck, sub: "Current players" },
+  { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All + Legends" },
+  { id: "EPL" as PoolMode, label: "EPL", icon: Flame, sub: "Prem only" },
+  { id: "TOP_TEAMS" as PoolMode, label: "Top Clubs", icon: Star, sub: "Big teams" },
+  { id: "ICONS" as PoolMode, label: "Icons", icon: Crown, sub: "Legends" },
 ];
 
 export default function HomePage() {
@@ -27,7 +27,7 @@ export default function HomePage() {
   const findMatch = useMutation(api.rooms.mutations.findOrCreatePublicMatch);
   const queueSummary = useQuery(api.rooms.queries.getPublicQueueSummary);
   const dbStats = useQuery(api.players.queries.getStats);
-  const [poolMode, setPoolMode] = useState<PoolMode>("GLOBAL");
+  const [poolMode, setPoolMode] = useState<PoolMode>("ACTIVE");
   const [loading, setLoading] = useState(false);
   const [showNameModal, setShowNameModal] = useState(false);
   const [pendingMatchSize, setPendingMatchSize] = useState<5 | 11 | null>(null);
@@ -77,7 +77,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-3 text-sm md:text-base text-steel max-w-lg mx-auto leading-relaxed font-medium">
-            Draft real-world stars, outsmart rivals in tactical auctions, unlock tier packs, and dominate the arena.
+            Draft real stars. Outbid your rival. Build the best squad.
           </p>
 
           {/* Dynamic DB Players Badge Card (Desktop only to prevent mobile duplication) */}
@@ -135,12 +135,12 @@ export default function HomePage() {
             <h2 className="font-black text-white text-base uppercase tracking-tight whitespace-nowrap truncate">
               <span className="hidden sm:inline">Public </span>Matchmaking
             </h2>
-            <p className="text-[11px] text-steel font-medium whitespace-nowrap truncate">Instant 30s turn draft against online managers</p>
+            <p className="text-[11px] text-steel font-medium whitespace-nowrap truncate">Quick 30s bid rounds vs real players</p>
           </div>
         </div>
 
         <div className="space-y-2">
-          <span className="text-[10px] font-black uppercase text-steel tracking-wider block whitespace-nowrap">Player Pool Filter</span>
+          <span className="text-[10px] font-black uppercase text-steel tracking-wider block whitespace-nowrap">Player Pool</span>
           <div className="flex flex-col gap-2 sm:grid sm:grid-cols-5 sm:gap-2">
             {/* Mobile Row 1: 2 items (Global, Active Stars) */}
             <div className="grid grid-cols-2 gap-2 sm:contents">
@@ -229,9 +229,9 @@ export default function HomePage() {
       {/* ── FEATURE HIGHLIGHTS ────────────────────────────────────────── */}
       <section aria-label="Core Features" className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 animate-slide-up delay-300" style={{ animationFillMode: 'both' }}>
         {[
-          { icon: Swords, title: "30s Hidden Bids", desc: "Outbid or pass — win the star or get the backup sub card." },
-          { icon: Shield, title: "Tactical Formations", desc: "Auto-assigned 4-3-3, 4-4-2, 3-5-2 and more every match." },
-          { icon: Binoculars, title: "Scout & Spy Perks", desc: "Activate Perks to gain intel and add +10s to your turn timer." },
+          { icon: Swords, title: "Hidden Bids", desc: "Bid or pass. Win the star or get the backup." },
+          { icon: Shield, title: "Auto Formation", desc: "Random 4-3-3, 4-4-2, 3-5-2 each game." },
+          { icon: Binoculars, title: "Perks", desc: "Use Scout or Spy for intel and +10s time." },
         ].map((f) => (
           <div key={f.title} className="bg-card p-5 rounded-2xl border border-border flex flex-col items-center text-center gap-3 hover:border-lime/30 hover:shadow-lg hover:shadow-lime/5 transition-all group">
             <div className="p-2.5 rounded-xl bg-lime/10 text-lime group-hover:scale-110 transition-transform shrink-0">
@@ -267,7 +267,7 @@ export default function HomePage() {
                 <span>{pendingMatchSize} vs {pendingMatchSize}</span>
               </div>
               <h3 className="text-lg font-bold text-white tracking-tight">Enter the Arena</h3>
-              <p className="text-xs text-steel font-medium">Pick your manager name to queue</p>
+              <p className="text-xs text-steel font-medium">Set your name and go</p>
             </div>
 
             <div className="space-y-2">

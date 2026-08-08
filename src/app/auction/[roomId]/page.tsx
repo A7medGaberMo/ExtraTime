@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect, useState, useCallback, useRef } from "react";
+import { use, useEffect, useState, useCallback, useRef, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
@@ -12,10 +12,11 @@ import { BidRevealAnimation } from "@/components/shared/bid-reveal-animation";
 import { TacticalPitch } from "@/components/shared/tactical-pitch";
 import type { PlayerCardData } from "@/types/player";
 import { useGuestSession } from "@/hooks/use-guest-session";
+import { unlockAudio } from "@/lib/sfx";
 import {
-  Loader2, ArrowRight, X, Layers, Zap, Copy, Check,
+  Loader2, X, Layers, Copy, Check,
   Swords, Eye, Binoculars, DollarSign, ChevronDown, ChevronUp,
-  Sparkles
+  Sparkles, Lock
 } from "lucide-react";
 
 const TIER_COLORS: Record<string, string> = {
@@ -23,27 +24,26 @@ const TIER_COLORS: Record<string, string> = {
   ELITE: "#E11D48", GOLD: "#EAB308", SILVER: "#CBD5E1", BRONZE: "#C97A3A",
 };
 
+const BLIND_PHASE_SECONDS = 30;
+
 export default function AuctionPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
   const { guestId } = useGuestSession(true);
   const [codeCopied, setCodeCopied] = useState(false);
   const [showReveal, setShowReveal] = useState(false);
-  const [showFormation, setShowFormation] = useState(true);
+  const [showFormation, setShowFormation] = useState(
+    () => typeof window === "undefined" || window.innerWidth >= 768
+  );
   const prevRoundRef = useRef<number | null>(null);
   const pendingRedirectRef = useRef(false);
   const completedTriggeredRef = useRef(false);
+  const audioRef = useRef(false);
 
   const state = useQuery(
     api.auctions.queries.getState,
     guestId && roomId ? { roomId: roomId as Id<"rooms">, userId: guestId } : "skip",
   );
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.innerWidth < 768) {
-      setShowFormation(false);
-    }
-  }, []);
 
   // Detect auction completion → show final round reveal before redirect
   useEffect(() => {
@@ -60,13 +60,14 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     }
   }, [state?.auction?.status, state?.room?.status, state?.lastCompletedRound, roomId, router]);
 
-  const placeBid = useMutation(api.auctions.mutations.placeBid);
-  const pass = useMutation(api.auctions.mutations.pass);
+  const submitSealedBid = useMutation(api.auctions.sealed.submitSealedBid);
+  const resolveSealedRound = useMutation(api.auctions.sealed.resolveSealedRound);
   const cancelRoom = useMutation(api.rooms.mutations.cancel);
   const mutatePerk = useMutation(api.auctions.mutations.usePerk);
-  const autoPassFired = useRef(false);
+  const autoResolveFired = useRef(false);
 
-  const [bidAmount, setBidAmount] = useState<number>(0);
+  const [bidAmount, setBidAmount] = useState<number>(1);
+  const [lockedAmount, setLockedAmount] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isActivatingPerk, setIsActivatingPerk] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -74,9 +75,18 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   useEffect(() => {
     if (!state?.auction) return;
     const cur = state.auction.currentRound;
-    if (prevRoundRef.current !== null && cur > prevRoundRef.current) setShowReveal(true);
+    const prev = prevRoundRef.current;
+    if (prev !== null && cur > prev) setShowReveal(true);
+    // Reset per-round submit state when a fresh locked round starts.
+    if (prev !== null && cur !== prev) {
+      setBidAmount(1);
+      setLockedAmount(null);
+      setError(null);
+      autoResolveFired.current = false;
+    }
     prevRoundRef.current = cur;
-  }, [state?.auction]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state?.auction?.currentRound]);
 
   const handleActivatePerk = useCallback(async () => {
     if (!guestId || !roomId || isActivatingPerk || state?.me?.perkUsed) return;
@@ -86,40 +96,36 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     finally { setIsActivatingPerk(false); }
   }, [mutatePerk, guestId, isActivatingPerk, roomId, state?.me?.perkUsed]);
 
+  // ── Blind phase 30s countdown (sealed lockbox deadline) ──
   const [timeLeft, setTimeLeft] = useState(0);
+  const deadline = state?.auction?.bidDeadline ?? state?.auction?.currentBidding?.turnExpiresAt;
   useEffect(() => {
-    if (!state?.auction?.currentBidding?.turnExpiresAt || state.auction.status !== "active") return;
+    if (!deadline || state?.auction?.status !== "active") return;
     const tick = () => {
-      const remaining = Math.max(0, Math.ceil((state.auction.currentBidding.turnExpiresAt - Date.now()) / 1000));
+      const remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
       setTimeLeft(remaining);
     };
     tick();
     const iv = setInterval(tick, 1000);
     return () => clearInterval(iv);
-  }, [state?.auction?.currentBidding?.turnExpiresAt, state?.auction?.status]);
+  }, [deadline, state?.auction?.status]);
 
+  // Auto-resolve when the blind phase expires without both locks.
   useEffect(() => {
-    if (!state || !state.auction || state.auction.status !== "active" || !state.auction.currentBidding?.turnExpiresAt) return;
-    const isMyTurn = state.auction.currentBidding.activeTurnUserId === guestId;
-    const isExpired = timeLeft === 0 && (Date.now() >= state.auction.currentBidding.turnExpiresAt - 500);
-    if (isExpired && isMyTurn && !isSubmitting && !autoPassFired.current) {
-      autoPassFired.current = true;
-      pass({ roomId: roomId as Id<"rooms">, userId: guestId! }).catch(console.error);
+    if (!state || !state.auction || state.auction.status !== "active") return;
+    if (!deadline) return;
+    const isExpired = timeLeft === 0 && Date.now() >= deadline - 500;
+    if (isExpired && !autoResolveFired.current && !isSubmitting && guestId) {
+      autoResolveFired.current = true;
+      resolveSealedRound({
+        roomId: roomId as Id<"rooms">,
+        userId: guestId,
+      }).catch(() => {
+        autoResolveFired.current = false;
+      });
     }
-    if (timeLeft > 0) autoPassFired.current = false;
-  }, [timeLeft, state, isSubmitting, pass, roomId, guestId]);
-
-  const prevBiddingKeyRef = useRef<string>("");
-  const currentBiddingKey = `${state?.auction?.currentRound}-${state?.auction?.currentBidding?.highestBid}`;
-  useEffect(() => {
-    if (!state?.auction) return;
-    if (prevBiddingKeyRef.current !== currentBiddingKey) {
-      prevBiddingKeyRef.current = currentBiddingKey;
-      const hb = state.auction.currentBidding.highestBid;
-      setBidAmount(hb > 0 ? hb + 1 : 1);
-      setError(null);
-    }
-  }, [currentBiddingKey, state?.auction]);
+    if (timeLeft > 0) autoResolveFired.current = false;
+  }, [timeLeft, deadline, state, isSubmitting, resolveSealedRound, roomId, guestId]);
 
   /* ── Derived ───────────────────────────────────────────────── */
   const auction = state?.auction;
@@ -133,14 +139,21 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const mySquad = state?.mySquad ?? [];
 
   const isActive = auction?.status === "active";
-  const isMyTurn = isActive && auction?.currentBidding?.activeTurnUserId === guestId;
-  const highestBid = auction?.currentBidding?.highestBid ?? 0;
-  const minBid = highestBid > 0 ? highestBid + 1 : 1;
+  const isHost = state?.isHost ?? true;
   const myBudget = me?.budget ?? 0;
   const currentPosition = (auction?.rounds && auction?.currentRound) ? (auction.rounds[auction.currentRound - 1]?.position ?? "-") : "-";
   const totalRounds = auction?.rounds?.length ?? 11;
-  const iAmLeading = auction?.currentBidding?.highestBidderId === guestId;
   const tierColor = TIER_COLORS[mainPlayer?.tier as string] ?? "#95E810";
+
+  // ── Sealed lockbox state ──
+  const sealedHost = auction?.sealedBids?.host ?? null;
+  const sealedGuest = auction?.sealedBids?.guest ?? null;
+  const mySeal = isHost ? sealedHost : sealedGuest;
+  const opponentSeal = isHost ? sealedGuest : sealedHost;
+  const myLocked = Boolean(mySeal && isActive);
+  const opponentLocked = Boolean(opponentSeal && isActive);
+  const bothLocked = myLocked && opponentLocked;
+  const displayedLockedAmount = myLocked ? lockedAmount : null;
 
   const playerData: PlayerCardData | null = mainPlayer ? {
     id: mainPlayer._id, name: mainPlayer.name, tier: mainPlayer.tier as PlayerCardData["tier"],
@@ -148,29 +161,50 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     imageUrl: mainPlayer.imageUrl, isLegend: mainPlayer.isLegend, kitNumber: mainPlayer.kitNumber,
   } : null;
 
-  const quickChips = [
-    { label: `$${minBid}M`, value: minBid },
-    { label: `$${Math.min(myBudget, minBid + 4)}M`, value: Math.min(myBudget, minBid + 4) },
-    { label: `$${Math.min(myBudget, minBid + 9)}M`, value: Math.min(myBudget, minBid + 9) },
-    { label: "ALL IN", value: myBudget },
-  ].filter((c, i, arr) => c.value <= myBudget && c.value >= minBid && arr.findIndex(x => x.value === c.value) === i);
+  const quickChips = useMemo(() => {
+    if (myBudget <= 0) return [{ label: "$0M", value: 0 }];
+
+    const quarter = Math.max(1, Math.round(myBudget * 0.25));
+    const half = Math.max(1, Math.round(myBudget * 0.5));
+
+    const rawChips = [
+      { label: "$1M", value: 1 },
+      { label: `$${quarter}M`, value: quarter },
+      { label: `$${half}M`, value: half },
+      { label: "ALL IN", value: myBudget },
+    ];
+
+    return rawChips.filter(
+      (c, i, arr) => c.value >= 0 && c.value <= myBudget && arr.findIndex((x) => x.value === c.value) === i
+    );
+  }, [myBudget]);
 
   /* ── Handlers ──────────────────────────────────────────────── */
-  const handleBid = useCallback(async () => {
-    if (!isActive || !guestId || bidAmount < minBid || bidAmount > myBudget) return;
+  const handleLockBid = useCallback(async () => {
+    if (!isActive || !guestId || myLocked) return;
     setIsSubmitting(true); setError(null);
-    try { await placeBid({ roomId: roomId as Id<"rooms">, userId: guestId, amount: bidAmount }); }
-    catch (e: unknown) { setError((e as { message?: string }).message || "Bid failed"); }
-    finally { setIsSubmitting(false); }
-  }, [isActive, guestId, bidAmount, minBid, myBudget, placeBid, roomId]);
+    try {
+      await submitSealedBid({ roomId: roomId as Id<"rooms">, userId: guestId, amount: bidAmount });
+      setLockedAmount(bidAmount);
+    } catch (e: unknown) {
+      setError((e as { message?: string }).message || "Bid failed");
+    } finally {
+      setIsSubmitting(false);
+    }
+  }, [isActive, guestId, myLocked, bidAmount, submitSealedBid, roomId]);
 
   const handlePass = useCallback(async () => {
-    if (!isActive || !guestId) return;
+    if (!isActive || !guestId || myLocked) return;
     setIsSubmitting(true); setError(null);
-    try { await pass({ roomId: roomId as Id<"rooms">, userId: guestId }); }
-    catch (e: unknown) { setError((e as { message?: string }).message || "Pass failed"); }
-    finally { setIsSubmitting(false); }
-  }, [isActive, guestId, pass, roomId]);
+    try {
+      await submitSealedBid({ roomId: roomId as Id<"rooms">, userId: guestId, amount: 0 });
+      setLockedAmount(0);
+    } catch (e: unknown) {
+      setError((e as { message?: string }).message || "Could not pass");
+    } finally {
+      setIsSubmitting(false);
+    }
+  }, [isActive, guestId, myLocked, submitSealedBid, roomId]);
 
   const handleRevealClose = useCallback(() => {
     setShowReveal(false);
@@ -181,9 +215,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     }
     setShowFormation(true);
     if (typeof window !== "undefined" && window.innerWidth < 768) {
-      setTimeout(() => {
-        setShowFormation(false);
-      }, 3800);
+      setTimeout(() => setShowFormation(false), 3800);
     }
   }, [router, roomId]);
 
@@ -193,6 +225,14 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       setCodeCopied(true); setTimeout(() => setCodeCopied(false), 2000);
     });
   };
+
+  // Audio unlock on first touch of the reveal.
+  useEffect(() => {
+    if (showReveal && !audioRef.current) {
+      audioRef.current = true;
+      unlockAudio();
+    }
+  }, [showReveal]);
 
   /* ── Loading / Error states ─────────────────────────────────── */
   if (!guestId || state === undefined) {
@@ -226,7 +266,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   /* ── RENDER ─────────────────────────────────────────────────── */
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-3 animate-fade-in relative">
+    <div className="mx-auto flex max-w-2xl flex-col gap-3.5 animate-fade-in relative pb-6 px-1 sm:px-0">
       {/* CARD REVEAL OVERLAY */}
       {state.lastCompletedRound && (
         <BidRevealAnimation isOpen={showReveal} onClose={handleRevealClose}
@@ -235,63 +275,74 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
       {/* WAITING FOR OPPONENT OVERLAY */}
       {auction.status === "pending" && (
-        <div className="fixed inset-0 z-40 bg-background/95 backdrop-blur-xl flex flex-col items-center justify-center gap-5 p-5 animate-fade-in">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-lime/8 blur-[120px] rounded-full pointer-events-none" />
-          <Loader2 className="w-10 h-10 text-lime animate-spin" />
-          <div className="text-center space-y-2">
-            <h2 className="text-xl font-black text-white uppercase tracking-tight">Waiting for Opponent</h2>
-            <p className="text-sm text-steel">Share this code so your rival can join.</p>
+        <div className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-2xl flex flex-col items-center justify-center gap-6 p-5 animate-fade-in">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-lime/10 blur-[140px] rounded-full pointer-events-none" />
+          <div className="relative">
+            <div className="absolute inset-0 rounded-full bg-lime/20 blur-xl animate-pulse" />
+            <Loader2 className="relative w-12 h-12 text-lime animate-spin" />
           </div>
-          <div className="flex w-full max-w-sm items-center justify-between gap-3 rounded-2xl border border-lime/30 bg-card px-4 py-4 shadow-2xl">
-            <span className="font-stats text-3xl text-lime tracking-[0.22em]">{room.code}</span>
-            <button onClick={copyCode} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 border border-border hover:border-lime/40 text-steel hover:text-lime transition-all">
-              {codeCopied ? <Check className="w-4 h-4 text-lime" /> : <Copy className="w-4 h-4" />}
+          <div className="text-center space-y-2 max-w-xs">
+            <h2 className="text-2xl font-black text-white uppercase tracking-tight">Matchday Lockbox</h2>
+            <p className="text-xs text-steel font-medium leading-relaxed">Share this room code with your rival manager to enter the auction room.</p>
+          </div>
+          <div className="flex w-full max-w-sm items-center justify-between gap-3 rounded-2xl border border-lime/30 bg-card/90 px-5 py-4 shadow-[0_0_50px_rgba(149,232,16,0.15)] backdrop-blur-xl">
+            <div className="space-y-0.5">
+              <span className="text-[9px] font-black uppercase tracking-widest text-steel">Room Code</span>
+              <p className="font-stats text-3xl text-lime tracking-[0.22em]">{room.code}</p>
+            </div>
+            <button onClick={copyCode} className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-900 border border-border hover:border-lime/50 text-steel hover:text-lime transition-all active:scale-95 shadow-md">
+              {codeCopied ? <Check className="w-5 h-5 text-lime" /> : <Copy className="w-5 h-5" />}
             </button>
           </div>
           <button onClick={async () => { try { await cancelRoom({ roomId: roomId as Id<"rooms">, hostId: guestId! }); router.push("/"); } catch { } }}
-            className="text-xs text-steel hover:text-rose-400 transition-colors mt-4">Cancel Room</button>
+            className="text-xs font-bold text-steel hover:text-rose-400 transition-colors mt-2 uppercase tracking-wider">Cancel Matchday</button>
         </div>
       )}
 
-      {/* ── SCOREBAR ─────────────────────────────────────────── */}
-      <div className="rounded-2xl border border-white/10 bg-card/95 p-2.5 sm:p-3 shadow-xl backdrop-blur-xl">
-        <div className="flex items-center justify-between gap-1.5 sm:gap-3">
-          <div className="flex flex-1 items-stretch gap-1 sm:gap-2 min-w-0">
-            <div className="flex flex-col items-center justify-center gap-0 rounded-lg border border-lime/30 bg-lime/10 px-2 py-1 sm:px-3 sm:py-1.5 min-w-0 flex-1">
-              <span className="text-[7px] sm:text-[9px] text-steel font-bold uppercase leading-tight">You</span>
-              <span className="font-stats text-xs sm:text-sm text-lime leading-tight">${myBudget}M</span>
+      {/* ── HIGH-END SCOREBAR HEADER ──────────────────────────── */}
+      <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-b from-card/95 via-card/90 to-slate-950 p-3 sm:p-4 shadow-2xl backdrop-blur-xl">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-lime/60 to-transparent" />
+        <div className="flex items-center justify-between gap-2">
+          {/* Manager budgets */}
+          <div className="flex flex-1 items-center gap-1.5 sm:gap-2.5 min-w-0">
+            <div className="flex flex-col items-center justify-center rounded-xl border border-lime/30 bg-lime/5 px-2.5 py-1.5 sm:px-4 sm:py-2 min-w-0 flex-1 shadow-inner">
+              <span className="text-[8px] sm:text-[9px] text-steel font-black uppercase tracking-widest leading-none">Manager (You)</span>
+              <span className="font-stats text-sm sm:text-lg text-lime leading-tight tracking-wide">${myBudget}M</span>
             </div>
-            <span className="flex items-center text-[9px] sm:text-xs text-steel/50 font-bold shrink-0 px-0.5">vs</span>
-            <div className="flex flex-col items-center justify-center gap-0 rounded-lg border border-rose-500/20 bg-rose-500/10 px-2 py-1 sm:px-3 sm:py-1.5 min-w-0 flex-1">
-              <span className="text-[7px] sm:text-[9px] text-steel font-bold uppercase leading-tight">Rival</span>
-              <span className="font-stats text-xs sm:text-sm text-rose-400 leading-tight">${opponent?.budget ?? 0}M</span>
+            <div className="flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-slate-900 shadow-md">
+              <span className="text-[9px] font-black text-steel uppercase tracking-tighter">VS</span>
+            </div>
+            <div className="flex flex-col items-center justify-center rounded-xl border border-rose-500/30 bg-rose-500/5 px-2.5 py-1.5 sm:px-4 sm:py-2 min-w-0 flex-1 shadow-inner">
+              <span className="text-[8px] sm:text-[9px] text-steel font-black uppercase tracking-widest leading-none">Rival</span>
+              <span className="font-stats text-sm sm:text-lg text-rose-400 leading-tight tracking-wide">${opponent?.budget ?? 0}M</span>
             </div>
           </div>
-          <AuctionTimer timeLeft={timeLeft} maxTime={30} isActive={isActive} size={40} showBoost={isActivatingPerk} />
+          <AuctionTimer timeLeft={timeLeft} maxTime={BLIND_PHASE_SECONDS} isActive={isActive} size={42} showBoost={isActivatingPerk} />
         </div>
-        <div className="mt-2.5 flex items-center gap-2">
-          <div className="flex-1 h-1.5 bg-border/40 rounded-full overflow-hidden">
-            <div className="h-full bg-gradient-to-r from-lime/60 to-lime rounded-full transition-all duration-500"
+
+        <div className="mt-3 flex items-center gap-2.5">
+          <div className="flex-1 h-2 bg-slate-950 rounded-full overflow-hidden border border-white/5 p-0.5">
+            <div className="h-full bg-gradient-to-r from-lime/50 via-lime to-vivid rounded-full transition-all duration-500 shadow-[0_0_10px_rgba(149,232,16,0.6)]"
               style={{ width: `${((auction.currentRound - 1) / totalRounds) * 100}%` }} />
           </div>
-          <span className="text-[10px] font-bold text-steel whitespace-nowrap">
-            R{auction.currentRound}/{totalRounds} · {auction.formation}
+          <span className="text-[10px] font-black uppercase tracking-widest text-steel whitespace-nowrap bg-slate-900/80 px-2.5 py-1 rounded-lg border border-white/5">
+            Round {auction.currentRound}/{totalRounds} · <span className="text-lime">{auction.formation}</span>
           </span>
         </div>
       </div>
 
-      {/* ── LIVE FORMATION VIEW ──────────────────────────────── */}
-      <div className="bg-card/95 border border-white/10 rounded-2xl overflow-hidden shadow-xl backdrop-blur-xl">
+      {/* ── LIVE TACTICAL FORMATION DISPLAY ──────────────────── */}
+      <div className="bg-card/95 border border-white/15 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-xl transition-all">
         <button onClick={() => setShowFormation(!showFormation)}
-          className="w-full px-4 py-3 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-steel hover:text-white transition-colors">
+          className="w-full px-4 py-3 flex items-center justify-between text-xs font-black uppercase tracking-wider text-steel hover:text-white transition-colors bg-gradient-to-r from-white/5 to-transparent">
           <span className="flex items-center gap-2">
-            <Layers className="w-4 h-4 text-lime" />
-            Squad · {mySquad.filter(s => s.player).length}/{totalRounds}
+            <Layers className="w-4 h-4 text-lime animate-pulse" />
+            Squad Formation · {mySquad.filter(s => s.player).length}/{totalRounds} Signed
           </span>
-          {showFormation ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+          {showFormation ? <ChevronUp className="w-4 h-4 text-lime" /> : <ChevronDown className="w-4 h-4 text-steel" />}
         </button>
         {showFormation && (
-          <div className="px-2 pb-2 animate-slide-down">
+          <div className="px-2 pb-3 animate-slide-down">
             <TacticalPitch
               formation={auction.formation}
               matchSize={(auction.matchSize as 5 | 11) || 11}
@@ -304,105 +355,161 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         )}
       </div>
 
-      {/* ── MAIN CARD + BID STATUS ───────────────────────────── */}
-      <div className="bg-card/95 border border-white/10 rounded-2xl p-3 sm:p-4 relative overflow-hidden shadow-xl backdrop-blur-xl">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[240px] h-[140px] blur-[90px] rounded-full pointer-events-none opacity-15"
+      {/* ── HIGH-END PLAYER CARD STAGE ───────────────────────── */}
+      <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-b from-card via-slate-950 to-card p-4 sm:p-6 shadow-2xl backdrop-blur-2xl">
+        {/* Stadium Floodlight Backdrop */}
+        <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[220px] blur-[100px] rounded-full opacity-25 transition-all duration-700"
           style={{ backgroundColor: tierColor }} />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent opacity-40" />
 
-        <div className="relative z-10 flex items-center justify-between gap-2 mb-3">
-          <span className="px-2.5 py-0.5 rounded-lg text-xs font-black uppercase tracking-wider border shadow-sm"
-            style={{ color: tierColor, backgroundColor: `${tierColor}15`, borderColor: `${tierColor}40` }}>
-            {currentPosition} · {mainPlayer?.tier}
-          </span>
-          <span className={`shrink-0 text-[11px] font-bold px-2.5 py-1 rounded-full border ${highestBid === 0 ? "bg-slate-900 border-border text-steel"
-              : iAmLeading ? "bg-lime/10 border-lime/30 text-lime"
-                : "bg-rose-500/10 border-rose-500/20 text-rose-400"
+        {/* Top Tier Header Strip */}
+        <div className="relative z-10 flex items-center justify-between gap-2 mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-xl text-xs font-black uppercase tracking-wider border shadow-lg backdrop-blur-md"
+            style={{ color: tierColor, backgroundColor: `${tierColor}15`, borderColor: `${tierColor}50` }}>
+            <Sparkles className="w-3.5 h-3.5" style={{ color: tierColor }} />
+            {currentPosition} · {mainPlayer?.tier} Target
+          </div>
+
+          <span className={`shrink-0 text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full border shadow-sm ${opponentLocked
+              ? "bg-lime/10 border-lime/40 text-lime animate-pulse"
+              : "bg-slate-900/90 border-white/10 text-steel"
             }`}>
-            {highestBid === 0 ? "Open" : iAmLeading ? `Lead $${highestBid}M` : `Rival $${highestBid}M`}
+            {opponentLocked ? "🔒 Rival Locked Bid" : "⏳ Rival Thinking..."}
           </span>
         </div>
 
-        <div className="relative z-10 flex justify-center py-0.5">
+        {/* Player Card Frame Showcase */}
+        <div className="relative z-10 flex justify-center py-2">
           {playerData ? (
-            <div className="animate-scale-in origin-center" key={`${auction.currentRound}-${playerData.id}`}>
+            <div className="animate-scale-in origin-center drop-shadow-[0_20px_35px_rgba(0,0,0,0.8)]" key={`${auction.currentRound}-${playerData.id}`}>
               <PlayerCard player={playerData} size="md" />
             </div>
           ) : (
-            <div className="w-44 sm:w-48 h-[240px] sm:h-[260px] rounded-2xl bg-border/20 animate-pulse flex items-center justify-center">
-              <Loader2 className="w-6 h-6 text-steel animate-spin" />
+            <div className="w-48 sm:w-52 h-[260px] sm:h-[280px] rounded-2xl bg-slate-900/80 border border-white/10 animate-pulse flex flex-col items-center justify-center gap-2">
+              <Loader2 className="w-7 h-7 text-lime animate-spin" />
+              <span className="text-[10px] font-black uppercase text-steel tracking-widest">Hydrating Target...</span>
             </div>
           )}
         </div>
 
         {/* Perk Intel Banner */}
         {me?.perkUsed && me?.perkUsedRound === auction.currentRound && (
-          <div className="relative z-10 mt-2 p-2.5 bg-amber-500/10 border border-amber-500/30 rounded-xl flex items-center gap-2 shadow-md">
-            <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
-            <div className="flex-1 min-w-0 text-[11px] sm:text-xs">
+          <div className="relative z-10 mt-4 p-3 bg-gradient-to-r from-amber-500/15 via-amber-500/10 to-transparent border border-amber-500/40 rounded-2xl flex items-center gap-3 shadow-xl backdrop-blur-md">
+            <div className="p-2 rounded-xl bg-amber-400/10 border border-amber-400/30 text-amber-300">
+              <Sparkles className="w-4 h-4 animate-spin" />
+            </div>
+            <div className="flex-1 min-w-0 text-xs">
               {me.perk === "SPY" && revealedSubPlayer && (
-                <p className="text-white font-medium"><strong className="text-amber-300">SPY INTEL</strong>: Secret backup is <strong className="text-amber-200">{revealedSubPlayer.name}</strong> ({revealedSubPlayer.tier} - {revealedSubPlayer.position})</p>
+                <p className="text-white font-medium"><strong className="text-amber-300 font-black uppercase tracking-wider">SPY INTEL:</strong> Secret Backup is <strong className="text-amber-200">{revealedSubPlayer.name}</strong> ({revealedSubPlayer.tier} - {revealedSubPlayer.position})</p>
               )}
               {me.perk === "SCOUT" && revealedNextMainPlayer && (
-                <p className="text-white font-medium"><strong className="text-amber-300">SCOUT INTEL</strong>: Next target is <strong className="text-amber-200">{revealedNextMainPlayer.name}</strong> ({nextRoundInfo?.position})</p>
+                <p className="text-white font-medium"><strong className="text-amber-300 font-black uppercase tracking-wider">SCOUT INTEL:</strong> Next Round Target is <strong className="text-amber-200">{revealedNextMainPlayer.name}</strong> ({nextRoundInfo?.position})</p>
               )}
             </div>
           </div>
         )}
       </div>
 
-      {/* ── BID CONTROLS ─────────────────────────────────────── */}
-      {isMyTurn ? (
-        <div className="bg-card/95 border border-lime/30 rounded-2xl p-3 sm:p-4 space-y-3.5 shadow-xl animate-slide-up backdrop-blur-xl">
+      {/* ── LUXURY SEALED BID VAULT ──────────────────────────── */}
+      {isActive && (
+        <div className={`relative overflow-hidden rounded-3xl border p-4 sm:p-5 space-y-4 shadow-2xl backdrop-blur-2xl transition-all duration-500 ${
+          myLocked
+            ? "border-lime/50 bg-gradient-to-b from-lime/10 via-card to-slate-950 shadow-[0_0_50px_rgba(149,232,16,0.15)]"
+            : "border-white/15 bg-gradient-to-b from-card/95 via-card to-slate-950 animate-slide-up"
+        }`}>
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+          {/* Status Bar */}
           <div className="flex items-center justify-between gap-2">
-            <span className="text-lime font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
-              <Zap className="w-3.5 h-3.5 fill-lime" /> Your turn to bid
+            <span className={`flex items-center gap-2 text-xs font-black uppercase tracking-wider ${
+              bothLocked ? "text-amber-300" : myLocked ? "text-lime" : "text-white"
+            }`}>
+              <div className={`p-1.5 rounded-lg border ${myLocked ? "bg-lime/10 border-lime/40 text-lime" : "bg-slate-900 border-white/10 text-steel"}`}>
+                <Lock className={`w-4 h-4 ${myLocked ? "fill-lime" : ""}`} />
+              </div>
+              {bothLocked
+                ? "Both Sealed — Resolving Round!"
+                : myLocked
+                  ? displayedLockedAmount != null
+                    ? `✉️ Secret Envelope Sealed ($${displayedLockedAmount}M)`
+                    : "✉️ Secret Envelope Sealed"
+                  : "Sealed Bid Vault"}
             </span>
+
             {me?.perk && !me.perkUsed && (
-              <button onClick={handleActivatePerk} disabled={isActivatingPerk}
-                className="px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider bg-amber-400 hover:bg-amber-300 text-slate-950 flex items-center gap-1 transition-all active:scale-95 shadow-sm">
-                {me.perk === "SCOUT" ? <Binoculars className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+              <button onClick={handleActivatePerk} disabled={isActivatingPerk || myLocked}
+                className="px-3.5 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-200 text-slate-950 flex items-center gap-1.5 transition-all active:scale-95 shadow-md disabled:opacity-40">
+                {me.perk === "SCOUT" ? <Binoculars className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                 Use {me.perk}
               </button>
             )}
             {me?.perk && me.perkUsed && (
-              <span className="text-[10px] text-steel font-bold uppercase bg-slate-900 px-2 py-0.5 rounded-md border border-border">{me.perk} Used</span>
+              <span className="text-[10px] text-steel font-black uppercase bg-slate-900/90 px-3 py-1 rounded-xl border border-white/10">
+                {me.perk} Activated
+              </span>
             )}
           </div>
 
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-            {quickChips.map((chip) => (
-              <button key={chip.value} onClick={() => setBidAmount(chip.value)}
-                className={`rounded-xl border px-2.5 py-2 text-xs font-bold transition-all ${bidAmount === chip.value ? "bg-lime text-slate-950 border-lime shadow-sm" : "bg-slate-900 border-border text-white hover:border-lime/30"
-                  }`}>{chip.label}</button>
-            ))}
-          </div>
+          {myLocked ? (
+            <div className="py-4 text-center space-y-1.5 animate-fade-in">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-lime/30 bg-lime/10 text-lime text-xs font-black uppercase tracking-widest shadow-inner">
+                <Check className="w-4 h-4 text-lime" />{" "}
+                {lockedAmount != null ? `Locked at $${lockedAmount}M` : "Envelope Locked"}
+              </div>
+              <p className="text-xs text-steel font-medium">
+                {opponentLocked
+                  ? "Both sealed envelopes are in — server resolving round instantly..."
+                  : "Your secret bid is safe. Waiting for rival manager to lock..."}
+              </p>
+            </div>
+          ) : (
+            <>
+              {/* Quick Chip Selector */}
+              <div className="grid grid-cols-4 gap-2">
+                {quickChips.map((chip) => (
+                  <button key={chip.value} onClick={() => setBidAmount(chip.value)}
+                    className={`rounded-xl border px-3 py-2.5 text-xs font-black transition-all active:scale-95 shadow-sm ${
+                      bidAmount === chip.value
+                        ? "bg-lime text-slate-950 border-lime shadow-[0_0_15px_rgba(149,232,16,0.4)]"
+                        : "bg-slate-900/90 border-white/10 text-white hover:border-lime/40 hover:bg-slate-800"
+                    }`}>
+                    {chip.label}
+                  </button>
+                ))}
+              </div>
 
-          <div className="pt-0.5"><BidSlider value={bidAmount} min={minBid} max={myBudget} onChange={setBidAmount} /></div>
+              {/* Slider Track */}
+              <div className="pt-1">
+                <BidSlider value={bidAmount} min={0} max={myBudget} onChange={setBidAmount} />
+                <div className="mt-2 flex items-center justify-between px-1">
+                  <span className="flex items-center gap-1.5 text-[11px] font-black text-steel uppercase tracking-wider">
+                    <DollarSign className="w-3.5 h-3.5 text-lime" /> Your Bid Amount
+                  </span>
+                  <span className="font-stats text-2xl text-lime tracking-wide">${bidAmount}M</span>
+                </div>
+              </div>
 
-          {error && <p className="text-rose-400 text-xs font-medium bg-rose-500/10 px-3 py-1 rounded-lg border border-rose-500/20">{error}</p>}
+              {error && (
+                <p className="text-rose-400 text-xs font-bold bg-rose-500/10 px-4 py-2 rounded-xl border border-rose-500/30 animate-shake">
+                  {error}
+                </p>
+              )}
 
-          <div className="grid grid-cols-[1fr_1.7fr] gap-2 pt-0.5">
-            <button onClick={handlePass} disabled={isSubmitting}
-              className="py-3.5 bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 font-bold text-xs uppercase rounded-xl border border-rose-500/20 transition-all flex items-center justify-center gap-1 active:scale-95">
-              <X className="w-3.5 h-3.5" /> Pass
-            </button>
-            <button onClick={handleBid} disabled={isSubmitting || bidAmount < minBid || bidAmount > myBudget}
-              className={`py-3.5 font-black text-xs uppercase rounded-xl shadow-md transition-all flex items-center justify-center gap-1 active:scale-95 disabled:opacity-40 ${bidAmount > (opponent?.budget ?? 0)
-                  ? "bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-[0_0_20px_rgba(251,191,36,0.5)]"
-                  : "bg-lime hover:bg-vivid text-slate-950"
-                }`}>
-              {bidAmount > (opponent?.budget ?? 0) ? (
-                <span className="flex items-center gap-1"><Zap className="w-3.5 h-3.5 fill-slate-950" /> AUTO-WIN ${bidAmount}M</span>
-              ) : (<>Bid ${bidAmount}M <ArrowRight className="w-3.5 h-3.5" /></>)}
-            </button>
-          </div>
+              {/* Action Buttons */}
+              <div className="grid grid-cols-[1fr_1.8fr] gap-3 pt-1">
+                <button onClick={handlePass} disabled={isSubmitting}
+                  className="py-4 bg-rose-500/10 hover:bg-rose-500/20 text-rose-400 font-black text-xs uppercase tracking-wider rounded-2xl border border-rose-500/30 transition-all flex items-center justify-center gap-1.5 active:scale-95 disabled:opacity-40 shadow-md">
+                  <X className="w-4 h-4" /> Pass ($0M)
+                </button>
+                <button onClick={handleLockBid} disabled={isSubmitting || bidAmount < 0 || bidAmount > myBudget}
+                  className="py-4 bg-gradient-to-r from-lime via-lime to-vivid hover:brightness-110 text-slate-950 font-black text-xs uppercase tracking-wider rounded-2xl shadow-[0_0_30px_rgba(149,232,16,0.35)] transition-all flex items-center justify-center gap-2 active:scale-95 disabled:opacity-40">
+                  <Lock className="w-4 h-4 fill-slate-950" /> Lock Secret Bid · ${bidAmount}M
+                </button>
+              </div>
+            </>
+          )}
         </div>
-      ) : isActive ? (
-        <div className="bg-card/95 border border-white/10 rounded-2xl p-4 flex items-center justify-center gap-2 shadow-xl animate-shimmer">
-          <Loader2 className="w-4 h-4 text-steel animate-spin shrink-0" />
-          <span className="text-steel font-bold text-xs uppercase tracking-wider">Rival is considering a bid...</span>
-        </div>
-      ) : null}
+      )}
     </div>
   );
 }

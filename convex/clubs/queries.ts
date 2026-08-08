@@ -22,9 +22,10 @@ export const getAvailablePools = query({
     const leagues = Array.from(new Set(clubs.map((c) => c.league).filter(Boolean)));
 
     const presetPools = [
-      { id: "GLOBAL", label: "Global Mix — All Leagues", type: "preset" },
-      { id: "EPL", label: "EPL Only — Premier League", type: "preset" },
-      { id: "ICONS", label: "Icons Only — Legends", type: "preset" },
+      { id: "ACTIVE", label: "Active — Current Players", type: "preset" },
+      { id: "GLOBAL", label: "Global — All + Legends", type: "preset" },
+      { id: "EPL", label: "EPL — Prem Only", type: "preset" },
+      { id: "ICONS", label: "Icons — Legends", type: "preset" },
     ];
 
     const dynamicPools = leagues

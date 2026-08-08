@@ -166,10 +166,8 @@ const TOP_CLUB_NAMES = new Set([
 // Enforces 80% to 85% Elite & Above (ICON, MASTER, ELITE_PLUS, ELITE) and 15% to 20% Gold/Lower
 function planTierBudget(pool: PoolPlayer[], totalSlots: number): Map<Tier, number> {
   const available = new Map<Tier, number>();
-  let totalAvailable = 0;
   for (const p of pool) {
     available.set(p.tier, (available.get(p.tier) ?? 0) + 1);
-    totalAvailable++;
   }
 
   // Target ratios: 85% Elite or higher (ICON, HERO, MASTER, ELITE_PLUS, ELITE), 15% Gold & lower
@@ -343,10 +341,13 @@ function selectSmartPair(
 function orderByFormation(rounds: Array<DraftRound & { sortIndex: number }>): DraftRound[] {
   return [...rounds]
     .sort((a, b) => a.sortIndex - b.sortIndex)
-    .map(({ sortIndex: _sortIndex, ...round }, idx) => ({
-      ...round,
-      roundNumber: idx + 1,
-    }));
+    .map(({ sortIndex, ...round }, idx) => {
+      void sortIndex;
+      return {
+        ...round,
+        roundNumber: idx + 1,
+      };
+    });
 }
 
 // ── Strategic Mystery Placement ────────────────────────────
@@ -395,12 +396,17 @@ export async function generateDraftRounds(
     .filter((player) => {
       if (poolMode === "ICONS") return player.isLegend || player.tier === "ICON" || player.tier === "HERO";
       if (poolMode === "ACTIVE") return !player.isLegend && player.tier !== "ICON" && player.tier !== "HERO";
-      if (poolMode === "EPL") return clubById.get(player.clubId)?.league === "Premier League";
-      if (poolMode === "TOP_TEAMS") {
-        const clubName = clubById.get(player.clubId)?.name ?? "";
-        return TOP_CLUB_NAMES.has(clubName) || player.isLegend || player.tier === "ICON" || player.tier === "HERO";
+      if (poolMode === "EPL") {
+        // Active EPL players only — no legends/icons
+        return clubById.get(player.clubId)?.league === "Premier League"
+          && !player.isLegend && player.tier !== "ICON" && player.tier !== "HERO";
       }
-      return true; // GLOBAL
+      if (poolMode === "TOP_TEAMS") {
+        // Active top-club players only — no legends/icons
+        const clubName = clubById.get(player.clubId)?.name ?? "";
+        return TOP_CLUB_NAMES.has(clubName) && !player.isLegend && player.tier !== "ICON" && player.tier !== "HERO";
+      }
+      return true; // GLOBAL — all players including legends
     })
     .map((p) => ({
       _id: p._id,

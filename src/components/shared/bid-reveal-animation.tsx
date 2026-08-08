@@ -10,6 +10,10 @@ export interface LastCompletedRoundInfo {
   position: string;
   mainPlayer: PlayerCardData | null;
   subPlayer: PlayerCardData | null;
+  /** Sealed bids from the round history (blind reveal). */
+  myBid?: number;
+  opponentBid?: number;
+  wasTieLottery?: boolean;
   myPick: {
     isSub: boolean;
     cost: number;
@@ -74,13 +78,23 @@ export function BidRevealAnimation({
 
   if (!isOpen || !lastCompletedRound) return null;
 
-  const { roundNumber, position, myPick, opponentPick, winnerIsMe, winnerName, winningBid } = lastCompletedRound;
+  const { roundNumber, position, myPick, opponentPick, winnerIsMe, winningBid } = lastCompletedRound;
 
-  const youGotMain = myPick ? !myPick.isSub : false;
   const yourPlayer = myPick?.player ?? null;
   const yourCost = myPick?.cost ?? 0;
   const rivalPlayer = opponentPick?.player ?? null;
   const rivalCost = opponentPick?.cost ?? 0;
+
+  const myBid = lastCompletedRound.myBid;
+  const opponentBid = lastCompletedRound.opponentBid;
+  const wasTieLottery = lastCompletedRound.wasTieLottery ?? false;
+
+  const bidLine = (me: number | undefined, rival: number | undefined): string => {
+    const parts: string[] = [];
+    if (me !== undefined) parts.push(`You sealed $${me}M`);
+    if (rival !== undefined) parts.push(`Rival sealed $${rival}M`);
+    return parts.join(" · ");
+  };
 
   return (
     <div
@@ -125,7 +139,11 @@ export function BidRevealAnimation({
                 You Won {yourPlayer?.name}!
               </div>
               <p className="text-[10px] sm:text-xs text-steel font-bold uppercase tracking-wide">
-                You bid <span className="text-lime">${winningBid}M</span> · Rival got <span className="text-rose-400">{rivalPlayer?.name}</span> (${rivalCost}M)
+                {bidLine(myBid ?? winningBid, opponentBid)}
+                {winningBid > 0 && <span className="text-lime"> · Paid ${winningBid}M</span>}
+              </p>
+              <p className="text-[9px] text-steel/60 font-semibold uppercase tracking-wide">
+                Rival got <span className="text-rose-400">{rivalPlayer?.name}</span> as secret sub (${rivalCost}M)
               </p>
             </>
           ) : winningBid > 0 ? (
@@ -135,7 +153,11 @@ export function BidRevealAnimation({
                 Rival Won {rivalPlayer?.name}!
               </div>
               <p className="text-[10px] sm:text-xs text-steel font-bold uppercase tracking-wide">
-                Rival bid <span className="text-rose-400">${winningBid}M</span> · You got <span className="text-lime">{yourPlayer?.name}</span> (${yourCost}M)
+                {bidLine(myBid ?? 0, opponentBid ?? winningBid)}
+                {winningBid > 0 && <span className="text-rose-400"> · Paid ${winningBid}M</span>}
+              </p>
+              <p className="text-[9px] text-steel/60 font-semibold uppercase tracking-wide">
+                You received <span className="text-lime">{yourPlayer?.name}</span> as secret sub (${yourCost}M)
               </p>
             </>
           ) : (
@@ -145,9 +167,14 @@ export function BidRevealAnimation({
                 Dual Pass
               </div>
               <p className="text-[10px] sm:text-xs text-steel font-bold uppercase tracking-wide">
-                Both managers passed. You got {yourPlayer?.name} · Rival got {rivalPlayer?.name}
+                {bidLine(0, 0)} · Starter claims Main at $0M
               </p>
             </>
+          )}
+          {wasTieLottery && (
+            <p className="text-[9px] font-black uppercase tracking-widest text-amber-300 animate-pulse">
+              🪙 Equal sealed bids — room-seed lot draw resolved it!
+            </p>
           )}
         </div>
 

@@ -9,6 +9,7 @@ export class ShieldPerkHandler implements IPerkHandler {
     return ctx.roundNumber >= 1;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async execute(ctx: PerkExecutionContext): Promise<PerkResult> {
     return {
       success: true,

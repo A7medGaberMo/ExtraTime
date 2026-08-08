@@ -1,8 +1,7 @@
-import { mutation } from "../_generated/server";
+import { mutation, type MutationCtx } from "../_generated/server";
 import { Id } from "../_generated/dataModel";
 import { v } from "convex/values";
-import { tierValidator } from "../lib/constants";
-import { LEAGUE_COUNTRY } from "../lib/constants";
+import { tierValidator, LEAGUE_COUNTRY, type Tier } from "../lib/constants";
 
 /**
  * Seeder mutation for populating clubs, nations, and players into Convex.
@@ -70,7 +69,7 @@ export const appendData = mutation({
 
 /** Shared insertion logic used by both seedAllData and appendData. */
 async function insertPlayers(
-  ctx: any,
+  ctx: MutationCtx,
   players: Array<{
     name: string;
     position: string;
@@ -137,7 +136,7 @@ async function insertPlayers(
       position: p.position,
       clubId,
       nationId,
-      tier: p.tier as any,
+      tier: p.tier as Tier,
       isLegend: p.isLegend,
       seasonYear: p.seasonYear,
       apiId: p.apiId,

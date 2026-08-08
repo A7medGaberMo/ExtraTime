@@ -28,6 +28,13 @@ function randomPerk(): "SCOUT" | "SPY" {
   return Math.random() < 0.5 ? "SCOUT" : "SPY";
 }
 
+/** Deterministic room seed — drives tie lotteries + the match simulation. */
+function generateRoomSeed(): string {
+  const rand =
+    Math.random().toString(36).slice(2) + Date.now().toString(36) + Math.random().toString(36).slice(2);
+  return rand.slice(0, 16);
+}
+
 interface CreateRoomArgs {
   hostId: Id<"guestUsers">;
   matchSize: MatchSize;
@@ -42,6 +49,7 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
   const hostPerk = randomPerk();
   const code = await generateUniqueRoomCode(ctx);
   const now = Date.now();
+  const seed = generateRoomSeed();
 
   const roomId = await ctx.db.insert("rooms", {
     code,
@@ -67,6 +75,10 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
     rounds,
     currentRound: 1,
     status: "pending",
+    seed,
+    sealedBids: {},
+    bidDeadline: now + 30000,
+    roundHistory: [],
     currentBidding: {
       highestBid: 0,
       highestBidderId: undefined,
@@ -119,6 +131,9 @@ async function joinAuction(
       perkUsed: false,
       squad: [],
     },
+    sealedBids: {},
+    bidDeadline: now + 30000,
+    roundHistory: [],
     currentBidding: {
       highestBid: 0,
       highestBidderId: undefined,

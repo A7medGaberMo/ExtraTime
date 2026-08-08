@@ -2,6 +2,7 @@ import { query } from "../_generated/server";
 import { Id, DataModel } from "../_generated/dataModel";
 import { v } from "convex/values";
 import { GenericQueryCtx } from "convex/server";
+import { toPublicAuction } from "./sealedView";
 
 // ── Hydration Helpers ──────────────────────────────────────
 
@@ -44,10 +45,11 @@ async function hydrateSquad(ctx: GenericQueryCtx<DataModel>, squad: SquadSlot[] 
 export const getByRoom = query({
   args: { roomId: v.id("rooms") },
   handler: async (ctx, args) => {
-    return await ctx.db
+    const auction = await ctx.db
       .query("auctions")
       .withIndex("by_room", (q) => q.eq("roomId", args.roomId))
       .first();
+    return auction ? toPublicAuction(auction) : null;
   },
 });
 
@@ -111,6 +113,18 @@ export const getState = query({
         const winnerUserId = hostWonMain ? auction.host.userId : (guestWonMain ? auction.guest?.userId : null);
         const winnerIsMe = winnerUserId === args.userId;
 
+        // ── Sealed-bid reveal data (from the permanent round history) ──
+        const historyEntry = (auction.roundHistory ?? []).find(
+          (h) => h.roundNumber === completedRoundNum
+        );
+        const myBid = historyEntry
+          ? (isHost ? historyEntry.hostBid : historyEntry.guestBid)
+          : (hostWonMain ? hostPick?.cost ?? 0 : guestPick?.cost ?? 0);
+        const opponentBid = historyEntry
+          ? (isHost ? historyEntry.guestBid : historyEntry.hostBid)
+          : null;
+        const wasTieLottery = historyEntry?.wasTieLottery ?? false;
+
         const hostUser = await ctx.db.get(auction.host.userId);
         const guestUser = auction.guest?.userId ? await ctx.db.get(auction.guest.userId) : null;
         const hostName = hostUser?.nickname ?? "Host";
@@ -125,6 +139,9 @@ export const getState = query({
           position: lastRound.position,
           mainPlayer: lastMainPlayer,
           subPlayer: lastSubPlayer,
+          myBid,
+          opponentBid,
+          wasTieLottery,
           myPick: myPickData ? {
             isSub: Boolean(myPickData.isSub),
             cost: myPickData.cost ?? 0,
@@ -149,7 +166,8 @@ export const getState = query({
 
     return {
       room,
-      auction,
+      // Never leak sealed bid amounts before round resolution.
+      auction: toPublicAuction(auction),
       currentRound,
       mainPlayer,
       revealedSubPlayer,

@@ -9,23 +9,16 @@ import { PlayerCard } from '@/components/shared/player-card';
 import { ETLogo } from '@/components/shared/et-logo';
 import type { PlayerCardData, Tier } from '@/types/player';
 import {
-  Zap,
   RefreshCw,
   Crown,
   Package,
-  Flame,
   Search,
   X,
   Trophy,
   Dices,
   Sparkles,
   Coins,
-  ShieldCheck,
-  Target,
   Gem,
-  Star,
-  Users,
-  Award,
 } from 'lucide-react';
 
 import type { LucideIcon } from "lucide-react";

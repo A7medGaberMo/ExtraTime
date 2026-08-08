@@ -211,19 +211,20 @@ export function PlayerCard({
 }: PlayerCardProps) {
   const [imgError, setImgError] = useState(false);
 
-  const tier = (player.tier as Tier) || 'SILVER';
+  const tier = (player?.tier as Tier) || 'SILVER';
   const tierCfg = TIER_CONFIGS[tier] || TIER_CONFIGS.SILVER;
-  const silhouetteVariant = ((player.name.charCodeAt(0) + player.name.length) % 6) as 0 | 1 | 2 | 3 | 4 | 5;
+  const playerName = player?.name || "Player";
+  const silhouetteVariant = ((playerName.charCodeAt(0) + playerName.length) % 6) as 0 | 1 | 2 | 3 | 4 | 5;
 
   const hasValidImage =
-    Boolean(player.imageUrl) &&
+    Boolean(player?.imageUrl) &&
     !imgError &&
-    !player.imageUrl?.includes('Photo-Missing.png') &&
-    player.imageUrl?.trim() !== '';
+    !player?.imageUrl?.includes('Photo-Missing.png') &&
+    player?.imageUrl?.trim() !== '';
 
-  const kitNum = player.kitNumber ?? (player.isLegend ? 10 : (player.name.length % 20) + 1);
-  const displayName = formatDisplayName(player.name);
-  const mainPosition = formatMainPosition(player.position);
+  const kitNum = player?.kitNumber ?? (player?.isLegend ? 10 : (playerName.length % 20) + 1);
+  const displayName = formatDisplayName(playerName);
+  const mainPosition = formatMainPosition(player?.position || 'ST');
 
   // Scaled dimensions with OCD-perfect spacing
   const scaleMap = {

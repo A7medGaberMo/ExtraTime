@@ -2,6 +2,7 @@ import { mutation } from "../_generated/server";
 import { Id, DataModel, Doc } from "../_generated/dataModel";
 import { v } from "convex/values";
 import { GenericMutationCtx } from "convex/server";
+import { isSealedBidMode } from "./sealedView";
 
 // ── Helpers ────────────────────────────────────────────────
 async function getAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<"rooms">) {
@@ -12,6 +13,15 @@ async function getAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<"rooms"
   if (!auction) throw new Error("Auction not found");
   if (auction.status !== "active") throw new Error("Auction is not active");
   return auction;
+}
+
+/** Legacy turn-based bidding is incompatible with sealed Hidden Bid rooms. */
+function assertLegacyTurnBiddingAllowed(auction: Doc<"auctions">): void {
+  if (isSealedBidMode(auction)) {
+    throw new Error(
+      "This room uses sealed Hidden Bid. Use submitSealedBid / resolveSealedRound instead."
+    );
+  }
 }
 
 function validateTurnExpiry(expiresAt: number): void {
@@ -96,6 +106,7 @@ export const placeBid = mutation({
   },
   handler: async (ctx, args) => {
     const auction = await getAuction(ctx, args.roomId);
+    assertLegacyTurnBiddingAllowed(auction);
 
     // Validate it's this player's turn
     if (auction.currentBidding.activeTurnUserId !== args.userId) {
@@ -146,6 +157,7 @@ export const pass = mutation({
   },
   handler: async (ctx, args) => {
     const auction = await getAuction(ctx, args.roomId);
+    assertLegacyTurnBiddingAllowed(auction);
     if (!auction.guest) throw new Error("Waiting for opponent");
     if (auction.currentBidding.activeTurnUserId !== args.userId) {
       throw new Error("It is not your turn");
@@ -211,25 +223,30 @@ export const usePerk = mutation({
     const opponent = isHost ? auction.guest : auction.host;
     if (!opponent) throw new Error("Waiting for opponent");
 
-    // Mark perk as used & add +10s time boost to current turn timer!
+    // Mark perk as used & add +10s to the active clock (sealed deadline and/or turn timer).
     const updatedMe = { ...me, perkUsed: true, perkUsedRound: auction.currentRound };
-    const boostedExpiresAt = Math.max(Date.now(), auction.currentBidding.turnExpiresAt || Date.now()) + 10000;
+    const now = Date.now();
+    const boostedExpiresAt = Math.max(now, auction.currentBidding.turnExpiresAt || now) + 10000;
+    const boostedDeadline =
+      auction.bidDeadline != null ? Math.max(now, auction.bidDeadline) + 10000 : undefined;
+
+    const clockPatch = {
+      currentBidding: {
+        ...auction.currentBidding,
+        turnExpiresAt: boostedExpiresAt,
+      },
+      ...(boostedDeadline != null ? { bidDeadline: boostedDeadline } : {}),
+    };
 
     if (isHost) {
       await ctx.db.patch(auction._id, {
         host: updatedMe,
-        currentBidding: {
-          ...auction.currentBidding,
-          turnExpiresAt: boostedExpiresAt,
-        },
+        ...clockPatch,
       });
     } else {
       await ctx.db.patch(auction._id, {
         guest: updatedMe,
-        currentBidding: {
-          ...auction.currentBidding,
-          turnExpiresAt: boostedExpiresAt,
-        },
+        ...clockPatch,
       });
     }
 

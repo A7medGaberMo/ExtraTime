@@ -12,6 +12,8 @@ import type * as auctions_draftEngine from "../auctions/draftEngine.js";
 import type * as auctions_formations from "../auctions/formations.js";
 import type * as auctions_mutations from "../auctions/mutations.js";
 import type * as auctions_queries from "../auctions/queries.js";
+import type * as auctions_sealed from "../auctions/sealed.js";
+import type * as auctions_sealedView from "../auctions/sealedView.js";
 import type * as clubs_mutations from "../clubs/mutations.js";
 import type * as clubs_queries from "../clubs/queries.js";
 import type * as guests_mutations from "../guests/mutations.js";
@@ -42,6 +44,8 @@ declare const fullApi: ApiFromModules<{
   "auctions/formations": typeof auctions_formations;
   "auctions/mutations": typeof auctions_mutations;
   "auctions/queries": typeof auctions_queries;
+  "auctions/sealed": typeof auctions_sealed;
+  "auctions/sealedView": typeof auctions_sealedView;
   "clubs/mutations": typeof clubs_mutations;
   "clubs/queries": typeof clubs_queries;
   "guests/mutations": typeof guests_mutations;

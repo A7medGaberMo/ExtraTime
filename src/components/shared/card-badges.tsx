@@ -39,6 +39,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
         )}
         title="Global Icons & Legends"
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/logos/et-logo-metallic-gold.svg"
           alt="Icon Team"

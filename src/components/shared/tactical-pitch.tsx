@@ -39,6 +39,11 @@ interface TacticalPitchProps {
   compact?: boolean;
 }
 
+/* ── Tier Priority (stronger players are placed first) ────── */
+const TIER_PRIORITY: Record<string, number> = {
+  ICON: 8, HERO: 7, MASTER: 6, ELITE_PLUS: 5, ELITE: 4, GOLD: 3, SILVER: 2, BRONZE: 1,
+};
+
 /* ── Tier Colors ──────────────────────────────────────────── */
 const TIER_COLORS: Record<string, string> = {
   ICON: "#D4AF37", HERO: "#10B981", MASTER: "#A855F7", ELITE_PLUS: "#0EA5E9",
@@ -171,7 +176,6 @@ export function TacticalPitch({
   currentRound,
   totalRounds = 11,
   title = "Squad Lineup",
-  accentColor = "#95E810",
   badgeLabel,
   compact = false,
 }: TacticalPitchProps) {
@@ -187,8 +191,47 @@ export function TacticalPitch({
   // ── Mapping Logic ────────────────────────────────────────
   const { onField, substitutes } = useMemo(() => {
     const placedIndices = new Map<number, TacticalSquadSlot>();
-    const usedCoordIdx = new Set<number>();
     const assignedSquadSlotIdxs = new Set<number>();
+
+    // Strongest players (and mains) are considered first within each pool
+    const sortedSquad = [...squad].map((slot, originalIdx) => ({
+      slot,
+      originalIdx,
+      weight: TIER_PRIORITY[slot.player?.tier ?? ""] ?? 1,
+    }));
+    sortedSquad.sort((a, b) => {
+      if (a.slot.isSub && !b.slot.isSub) return 1;
+      if (!a.slot.isSub && b.slot.isSub) return -1;
+      return b.weight - a.weight;
+    });
+
+    // Pick the best remaining candidate for a coordinate using every available
+    // pool in order: exact match → direct variant → close group → anyone.
+    const takeForCoord = (slotPos: string): TacticalSquadSlot | null => {
+      const normSlot = normalizePosition(slotPos);
+      const pools = [normSlot];
+      const variants = POSITION_VARIANTS[normSlot] || [];
+      const close = CLOSE_GROUPS[normSlot] || [];
+      const lookup = (pos: string) =>
+        sortedSquad.findIndex(
+          (item) => !assignedSquadSlotIdxs.has(item.originalIdx) && normalizePosition(item.slot.position) === pos
+        );
+
+      for (const pos of [...pools, ...variants, ...close]) {
+        const found = lookup(pos);
+        if (found !== -1) {
+          const item = sortedSquad[found];
+          assignedSquadSlotIdxs.add(item.originalIdx);
+          return item.slot;
+        }
+      }
+      const fallback = sortedSquad.find((item) => !assignedSquadSlotIdxs.has(item.originalIdx));
+      if (fallback) {
+        assignedSquadSlotIdxs.add(fallback.originalIdx);
+        return fallback.slot;
+      }
+      return null;
+    };
 
     if (isDraftMode && rounds) {
       // 1. DRAFT MODE: Map players specifically based on the round order
@@ -214,11 +257,15 @@ export function TacticalPitch({
         }
       });
 
-      // Find if active round matches a coordinate slot
-      let activeCoordIdx: number | undefined;
-      if (currentRound) {
-        activeCoordIdx = roundToCoord.get(currentRound);
-      }
+      // Backfill any coords that had no matching round (e.g. one-off position
+      // rounds like a 2nd CB in 4-3-3) using leftover players from every pool
+      coords.forEach((coord, ci) => {
+        if (placedIndices.has(ci)) return;
+        const hasRound = Array.from(roundToCoord.values()).includes(ci);
+        if (hasRound) return;
+        const slot = takeForCoord(coord.pos);
+        if (slot) placedIndices.set(ci, slot);
+      });
 
       // Reconstruct the 11 pitch slots
       const onFieldData = coords.map((coord, ci) => {
@@ -233,51 +280,33 @@ export function TacticalPitch({
         };
       });
 
-      // Substitutes in draft mode are anything leftover
-      const subsData = squad.filter((_, sIdx) => !assignedSquadSlotIdxs.has(sIdx));
+      // Substitutes in draft mode are everything left
+      const substitutesData = squad.filter((_, sIdx) => !assignedSquadSlotIdxs.has(sIdx));
 
-      return { onField: onFieldData, substitutes: subsData };
-    } else {
-      // 2. FINAL LINEUP MODE: Smart positional allocation
-      // Sort squad: Main starters first, Subs second
-      const sortedSquad = [...squad].map((slot, originalIdx) => ({ slot, originalIdx }));
-      sortedSquad.sort((a, b) => {
-        if (a.slot.isSub && !b.slot.isSub) return 1;
-        if (!a.slot.isSub && b.slot.isSub) return -1;
-        return 0;
-      });
-
-      // Allocate starting slots by strict position compatibility matching coordinates
-      coords.forEach((coord, ci) => {
-        const foundIndex = sortedSquad.findIndex(
-          (item) => !assignedSquadSlotIdxs.has(item.originalIdx) &&
-            isPosCompatible(item.slot.position, coord.pos)
-        );
-
-        if (foundIndex !== -1) {
-          const item = sortedSquad[foundIndex];
-          placedIndices.set(ci, item.slot);
-          assignedSquadSlotIdxs.add(item.originalIdx);
-          usedCoordIdx.add(ci);
-        }
-      });
-
-      // Reconstruct onField list
-      const onFieldData = coords.map((coord, ci) => {
-        const slot = placedIndices.get(ci);
-        return {
-          coord,
-          slot: slot || null,
-          isCurrentSlot: false,
-          isFutureSlot: false,
-        };
-      });
-
-      // Substitutes are anything leftover (duplicate positions, etc.)
-      const subsData = squad.filter((_, sIdx) => !assignedSquadSlotIdxs.has(sIdx));
-
-      return { onField: onFieldData, substitutes: subsData };
+      return { onField: onFieldData, substitutes: substitutesData };
     }
+
+    // 2. FINAL LINEUP MODE: Smart positional allocation across all pools
+    coords.forEach((coord, ci) => {
+      const slot = takeForCoord(coord.pos);
+      if (slot) placedIndices.set(ci, slot);
+    });
+
+    // Reconstruct onField list
+    const onFieldData = coords.map((coord, ci) => {
+      const slot = placedIndices.get(ci);
+      return {
+        coord,
+        slot: slot || null,
+        isCurrentSlot: false,
+        isFutureSlot: false,
+      };
+    });
+
+    // Substitutes are anything leftover (duplicate positions, etc.)
+    const substitutesData = squad.filter((_, sIdx) => !assignedSquadSlotIdxs.has(sIdx));
+
+    return { onField: onFieldData, substitutes: substitutesData };
   }, [squad, rounds, currentRound, coords, isDraftMode]);
 
   return (
