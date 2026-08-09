@@ -8,6 +8,7 @@ import { matchesTable } from "./matches/schema";
 import { guestsTable } from "./guests/schema";
 import { careerStatsTable } from "./careerStats/schema";
 import { playerTransfersTable } from "./transfers/schema";
+import { squadDraftRoomsTable, squadDraftPicksTable, squadDraftSquadsTable } from "./squadDraft/schema";
 
 export default defineSchema({
   players: playersTable,
@@ -19,4 +20,7 @@ export default defineSchema({
   guestUsers: guestsTable,
   careerStats: careerStatsTable,
   playerTransfers: playerTransfersTable,
+  squadDraftRooms: squadDraftRoomsTable,
+  squadDraftPicks: squadDraftPicksTable,
+  squadDraftSquads: squadDraftSquadsTable,
 });

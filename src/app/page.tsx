@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { useToast } from "@/components/shared/toast";
-import { Trophy, Users, PlusCircle, Zap, Swords, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck, X, RefreshCw } from "lucide-react";
+import { Trophy, Users, PlusCircle, Zap, Swords, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck, X, RefreshCw, LayoutGrid } from "lucide-react";
 
 type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
 
@@ -101,7 +101,7 @@ export default function HomePage() {
       </header>
 
       {/* ── CTA BUTTONS ────────────────────────────────────────────────── */}
-      <nav aria-label="Main Actions" className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 w-full max-w-xl animate-slide-up delay-100" style={{ animationFillMode: 'both' }}>
+      <nav aria-label="Main Actions" className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 w-full max-w-xl animate-slide-up delay-100" style={{ animationFillMode: 'both' }}>
         <Link
           href="/create-room"
           className="flex items-center justify-center gap-2 px-5 py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic shadow-xl shadow-lime/20 whitespace-nowrap"
@@ -115,6 +115,20 @@ export default function HomePage() {
         >
           <Users className="w-4 h-4 shrink-0" />
           <span>Join Room</span>
+        </Link>
+        <Link
+          href="/squad-draft/create"
+          className="flex items-center justify-center gap-2 px-5 py-4 bg-slate-900 hover:bg-lime/10 text-lime font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-lime/40 hover:border-lime shadow-lg whitespace-nowrap"
+        >
+          <LayoutGrid className="w-4 h-4 shrink-0" />
+          <span>Squad Draft</span>
+        </Link>
+        <Link
+          href="/squad-draft/join"
+          className="hidden sm:flex items-center justify-center gap-2 px-5 py-4 bg-slate-900 hover:bg-lime/10 text-lime font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-lime/40 hover:border-lime shadow-lg whitespace-nowrap"
+        >
+          <Users className="w-4 h-4 shrink-0 text-lime" />
+          <span>Join Draft</span>
         </Link>
         <Link
           href="/packs"
@@ -227,11 +241,12 @@ export default function HomePage() {
       </section>
 
       {/* ── FEATURE HIGHLIGHTS ────────────────────────────────────────── */}
-      <section aria-label="Core Features" className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 animate-slide-up delay-300" style={{ animationFillMode: 'both' }}>
+      <section aria-label="Core Features" className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-slide-up delay-300" style={{ animationFillMode: 'both' }}>
         {[
           { icon: Swords, title: "Hidden Bids", desc: "Bid or pass. Win the star or get the backup." },
           { icon: Shield, title: "Auto Formation", desc: "Random 4-3-3, 4-4-2, 3-5-2 each game." },
           { icon: Binoculars, title: "Perks", desc: "Use Scout or Spy for intel and +10s time." },
+          { icon: LayoutGrid, title: "Squad Draft", desc: "Snake draft your XI with Joker wildcards." },
         ].map((f) => (
           <div key={f.title} className="bg-card p-5 rounded-2xl border border-border flex flex-col items-center text-center gap-3 hover:border-lime/30 hover:shadow-lg hover:shadow-lime/5 transition-all group">
             <div className="p-2.5 rounded-xl bg-lime/10 text-lime group-hover:scale-110 transition-transform shrink-0">

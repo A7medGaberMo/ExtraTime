@@ -43,12 +43,24 @@ export function lineFor(position: string): "GK" | "DEF" | "MID" | "ATT" {
   return "ATT";
 }
 
+// ── Pool Mode ──────────────────────────────────────────────
+export const POOL_MODES = ["GLOBAL", "ACTIVE", "EPL", "TOP_TEAMS", "ICONS"] as const;
+export type PoolMode = (typeof POOL_MODES)[number];
+
+export const poolModeValidator = v.union(
+  v.literal("GLOBAL"),
+  v.literal("ACTIVE"),
+  v.literal("EPL"),
+  v.literal("TOP_TEAMS"),
+  v.literal("ICONS")
+);
+
 // ── Settings Validator (shared between schema + mutations) ─
 export const roomSettingsValidator = v.object({
   formation: v.string(),
   matchSize: v.union(v.literal(5), v.literal(11)),
   startingBudget: v.number(),
-  poolMode: v.string(),
+  poolMode: poolModeValidator,
 });
 
 // ── League → Country mapping ───────────────────────────────

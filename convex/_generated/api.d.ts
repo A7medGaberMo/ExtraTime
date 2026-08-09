@@ -30,6 +30,10 @@ import type * as rooms_queries from "../rooms/queries.js";
 import type * as seed_seedCareerStats from "../seed/seedCareerStats.js";
 import type * as seed_seedData from "../seed/seedData.js";
 import type * as seed_seedStatsAndTransfers from "../seed/seedStatsAndTransfers.js";
+import type * as squadDraft_draftEngine from "../squadDraft/draftEngine.js";
+import type * as squadDraft_formationGraph from "../squadDraft/formationGraph.js";
+import type * as squadDraft_mutations from "../squadDraft/mutations.js";
+import type * as squadDraft_queries from "../squadDraft/queries.js";
 import type * as transfers_mutations from "../transfers/mutations.js";
 import type * as transfers_queries from "../transfers/queries.js";
 
@@ -62,6 +66,10 @@ declare const fullApi: ApiFromModules<{
   "seed/seedCareerStats": typeof seed_seedCareerStats;
   "seed/seedData": typeof seed_seedData;
   "seed/seedStatsAndTransfers": typeof seed_seedStatsAndTransfers;
+  "squadDraft/draftEngine": typeof squadDraft_draftEngine;
+  "squadDraft/formationGraph": typeof squadDraft_formationGraph;
+  "squadDraft/mutations": typeof squadDraft_mutations;
+  "squadDraft/queries": typeof squadDraft_queries;
   "transfers/mutations": typeof transfers_mutations;
   "transfers/queries": typeof transfers_queries;
 }>;

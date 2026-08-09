@@ -17,6 +17,7 @@ export const playersTable = defineTable({
     v.literal("BRONZE")
   ),
   isLegend: v.boolean(),
+  isSynthetic: v.optional(v.boolean()), // synthetic fallback cards from draft options
   seasonYear: v.optional(v.number()),
   apiId: v.optional(v.string()),
   imageUrl: v.optional(v.string()),
