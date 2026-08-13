@@ -26,6 +26,11 @@
       "club": "Lyon",
       "appearances": 6,
       "goals": 0
+    },
+    {
+      "club": "Charlotte FC",
+      "appearances": 14,
+      "goals": 2
     }
   ],
   "national": [
@@ -36,7 +41,8 @@
     }
   ],
   "careerTotal": {
-    "appearances": 556,
-    "goals": 105
+    "appearances": 570,
+    "goals": 107
   }
 }
+
