@@ -33,7 +33,7 @@ export function Footer() {
           <Users className="w-3.5 h-3.5 text-lime" />
           <span>Database:</span>
           <span className="text-white font-black font-stats">
-            {dbStats?.totalPlayers ? dbStats.totalPlayers.toLocaleString() : '3,126'} Players
+            {dbStats?.totalPlayers ? dbStats.totalPlayers.toLocaleString() : '3,320'} Players
           </span>
         </div>
       </div>
