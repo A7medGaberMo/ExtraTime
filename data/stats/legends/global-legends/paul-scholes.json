@@ -1,0 +1,27 @@
+{
+  "apiId": 80,
+  "name": "Paul Scholes",
+  "clubs": [
+    {
+      "club": "Manchester United",
+      "appearances": 718,
+      "goals": 155
+    },
+    {
+      "club": "Royton Town",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 66,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 721,
+    "goals": 155
+  }
+}

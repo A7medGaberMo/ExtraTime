@@ -1,0 +1,52 @@
+{
+  "apiId": 41,
+  "name": "Andrea Barzagli",
+  "clubs": [
+    {
+      "club": "Rondinella",
+      "appearances": 68,
+      "goals": 5
+    },
+    {
+      "club": "Pistoiese",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Ascoli",
+      "appearances": 50,
+      "goals": 3
+    },
+    {
+      "club": "Chievo",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Palermo",
+      "appearances": 165,
+      "goals": 3
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 95,
+      "goals": 1
+    },
+    {
+      "club": "Juventus",
+      "appearances": 281,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 73,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 694,
+    "goals": 17
+  }
+}

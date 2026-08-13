@@ -1,0 +1,62 @@
+{
+  "apiId": 119,
+  "name": "Paulo Wanchope",
+  "clubs": [
+    {
+      "club": "Derby County",
+      "appearances": 83,
+      "goals": 28
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 47,
+      "goals": 15
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 75,
+      "goals": 29
+    },
+    {
+      "club": "Málaga",
+      "appearances": 25,
+      "goals": 6
+    },
+    {
+      "club": "Al-Gharafa",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Herediano",
+      "appearances": 10,
+      "goals": 3
+    },
+    {
+      "club": "Rosario Central",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "club": "FC Tokyo",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Chicago Fire",
+      "appearances": 13,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Costa Rica",
+      "appearances": 73,
+      "goals": 44
+    }
+  ],
+  "careerTotal": {
+    "appearances": 289,
+    "goals": 92
+  }
+}

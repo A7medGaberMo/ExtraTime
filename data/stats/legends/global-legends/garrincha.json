@@ -1,0 +1,42 @@
+{
+  "apiId": 52,
+  "name": "Garrincha",
+  "clubs": [
+    {
+      "club": "Botafogo",
+      "appearances": 324,
+      "goals": 101
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Atlético Junior",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Olaria",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 50,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 346,
+    "goals": 102
+  }
+}

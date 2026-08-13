@@ -1,0 +1,52 @@
+{
+  "apiId": 127,
+  "name": "Enzo Francescoli",
+  "clubs": [
+    {
+      "club": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Montevideo Wanderers",
+      "appearances": 74,
+      "goals": 20
+    },
+    {
+      "club": "River Plate",
+      "appearances": 234,
+      "goals": 135
+    },
+    {
+      "club": "RC Paris",
+      "appearances": 93,
+      "goals": 32
+    },
+    {
+      "club": "Marseille",
+      "appearances": 40,
+      "goals": 11
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 99,
+      "goals": 17
+    },
+    {
+      "club": "Torino",
+      "appearances": 34,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay",
+      "appearances": 73,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 574,
+    "goals": 220
+  }
+}

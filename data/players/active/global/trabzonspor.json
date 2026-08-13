@@ -2,21 +2,32 @@
   "club": {
     "apiId": 610,
     "name": "Trabzonspor",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Trabzonspor_Amblem.svg/330px-Trabzonspor_Amblem.svg.png",
+    "logo": "https://media.api-sports.io/football/teams/610.png",
     "league": "Süper Lig",
     "leagueId": 203
   },
   "players": [
     {
-      "apiId": 306,
-      "name": "M. Salah",
-      "position": "RW/ST",
+      "apiId": 338,
+      "name": "Enis Bardhi",
+      "position": "CAM/CM",
       "club": "Trabzonspor",
-      "nation": "Egypt",
-      "tier": "MASTER",
+      "nation": "North Macedonia",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/306.png",
-      "kitNumber": 61
+      "imageUrl": "https://media.api-sports.io/football/players/338.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 18907,
+      "name": "Uğurcan Çakır",
+      "position": "GK",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18907.png",
+      "kitNumber": 1
     }
   ]
 }

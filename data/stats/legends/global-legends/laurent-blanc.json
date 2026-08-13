@@ -1,0 +1,62 @@
+{
+  "apiId": 100,
+  "name": "Laurent Blanc",
+  "clubs": [
+    {
+      "club": "Montpellier",
+      "appearances": 267,
+      "goals": 80
+    },
+    {
+      "club": "Napoli",
+      "appearances": 34,
+      "goals": 6
+    },
+    {
+      "club": "Nîmes",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Saint-Étienne",
+      "appearances": 73,
+      "goals": 18
+    },
+    {
+      "club": "Auxerre",
+      "appearances": 31,
+      "goals": 4
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 38,
+      "goals": 1
+    },
+    {
+      "club": "Marseille",
+      "appearances": 79,
+      "goals": 17
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 85,
+      "goals": 6
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 75,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 97,
+      "goals": 16
+    }
+  ],
+  "careerTotal": {
+    "appearances": 712,
+    "goals": 137
+  }
+}

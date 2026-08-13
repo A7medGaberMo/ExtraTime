@@ -1,0 +1,42 @@
+{
+  "apiId": 89,
+  "name": "Juninho Pernambucano",
+  "clubs": [
+    {
+      "club": "Sport Recife",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 365,
+      "goals": 71
+    },
+    {
+      "club": "Lyon",
+      "appearances": 343,
+      "goals": 100
+    },
+    {
+      "club": "Al-Gharafa",
+      "appearances": 66,
+      "goals": 22
+    },
+    {
+      "club": "New York Red Bulls",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 40,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 816,
+    "goals": 198
+  }
+}

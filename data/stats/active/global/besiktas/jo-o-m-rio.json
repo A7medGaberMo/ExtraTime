@@ -1,0 +1,57 @@
+{
+  "apiId": 2118,
+  "name": "João Mário",
+  "clubs": [
+    {
+      "club": "Sporting CP",
+      "appearances": 125,
+      "goals": 16
+    },
+    {
+      "club": "Vitória Setúbal",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 69,
+      "goals": 4
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Lokomotiv Moscow",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Benfica",
+      "appearances": 149,
+      "goals": 36
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 45,
+      "goals": 10
+    },
+    {
+      "club": "AEK Athens",
+      "appearances": 31,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 56,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 471,
+    "goals": 72
+  }
+}

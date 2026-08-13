@@ -9,7 +9,7 @@
   "players": [
     {
       "apiId": 30409,
-      "name": "C. Immobile",
+      "name": "Ciro Immobile",
       "position": "ST",
       "club": "Beşiktaş",
       "nation": "Italy",
@@ -19,14 +19,14 @@
       "kitNumber": 17
     },
     {
-      "apiId": 1478,
+      "apiId": 2128,
       "name": "Rafa Silva",
       "position": "CAM/RW",
       "club": "Beşiktaş",
       "nation": "Portugal",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1478.png",
+      "imageUrl": "https://media.api-sports.io/football/players/2128.png",
       "kitNumber": 27
     },
     {

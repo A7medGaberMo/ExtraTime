@@ -1,0 +1,47 @@
+{
+  "apiId": 63,
+  "name": "Gianfranco Zola",
+  "clubs": [
+    {
+      "club": "Nuorese",
+      "appearances": 31,
+      "goals": 10
+    },
+    {
+      "club": "Sassari Torres",
+      "appearances": 88,
+      "goals": 21
+    },
+    {
+      "club": "Napoli",
+      "appearances": 136,
+      "goals": 36
+    },
+    {
+      "club": "Parma",
+      "appearances": 149,
+      "goals": 64
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 312,
+      "goals": 80
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 81,
+      "goals": 27
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 35,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 797,
+    "goals": 238
+  }
+}

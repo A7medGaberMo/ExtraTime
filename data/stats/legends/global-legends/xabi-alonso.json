@@ -1,0 +1,42 @@
+{
+  "apiId": 45,
+  "name": "Xabi Alonso",
+  "clubs": [
+    {
+      "club": "Real Sociedad",
+      "appearances": 124,
+      "goals": 10
+    },
+    {
+      "club": "Eibar",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 210,
+      "goals": 19
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 236,
+      "goals": 6
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 117,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 701,
+    "goals": 44
+  }
+}

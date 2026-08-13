@@ -1,0 +1,72 @@
+{
+  "apiId": 103,
+  "name": "Abedi Pele",
+  "clubs": [
+    {
+      "club": "Real Tamale United",
+      "appearances": 65,
+      "goals": 28
+    },
+    {
+      "club": "Al Sadd",
+      "appearances": 8,
+      "goals": 7
+    },
+    {
+      "club": "FC Zürich",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Dragons l'Ouémé",
+      "appearances": 8,
+      "goals": 11
+    },
+    {
+      "club": "Niort",
+      "appearances": 32,
+      "goals": 14
+    },
+    {
+      "club": "Mulhouse",
+      "appearances": 16,
+      "goals": 5
+    },
+    {
+      "club": "Marseille",
+      "appearances": 112,
+      "goals": 23
+    },
+    {
+      "club": "Lille",
+      "appearances": 61,
+      "goals": 16
+    },
+    {
+      "club": "Lyon",
+      "appearances": 29,
+      "goals": 3
+    },
+    {
+      "club": "Torino",
+      "appearances": 99,
+      "goals": 13
+    },
+    {
+      "club": "Al Ain",
+      "appearances": 31,
+      "goals": 28
+    }
+  ],
+  "national": [
+    {
+      "team": "Ghana",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 461,
+    "goals": 148
+  }
+}

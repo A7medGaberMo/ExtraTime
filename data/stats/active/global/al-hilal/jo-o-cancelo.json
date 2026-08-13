@@ -1,0 +1,62 @@
+{
+  "apiId": 640,
+  "name": "João Cancelo",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 51,
+      "goals": 2
+    },
+    {
+      "club": "Benfica",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Valencia",
+      "appearances": 91,
+      "goals": 4
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Juventus",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 154,
+      "goals": 9
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 65,
+      "goals": 6
+    },
+    {
+      "club": "Al Hilal",
+      "appearances": 45,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 73,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 491,
+    "goals": 27
+  }
+}

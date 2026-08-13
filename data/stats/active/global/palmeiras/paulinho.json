@@ -1,0 +1,32 @@
+{
+  "apiId": 2004,
+  "name": "Paulinho",
+  "clubs": [
+    {
+      "club": "Vasco da Gama",
+      "appearances": 35,
+      "goals": 7
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 79,
+      "goals": 9
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 120,
+      "goals": 50
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 234,
+    "goals": 66
+  }
+}

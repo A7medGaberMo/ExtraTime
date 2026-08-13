@@ -1,0 +1,57 @@
+{
+  "apiId": 38,
+  "name": "Didier Drogba",
+  "clubs": [
+    {
+      "club": "Le Mans",
+      "appearances": 72,
+      "goals": 15
+    },
+    {
+      "club": "Guingamp",
+      "appearances": 50,
+      "goals": 24
+    },
+    {
+      "club": "Marseille",
+      "appearances": 55,
+      "goals": 32
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 381,
+      "goals": 164
+    },
+    {
+      "club": "Shanghai Shenhua",
+      "appearances": 11,
+      "goals": 8
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 53,
+      "goals": 20
+    },
+    {
+      "club": "Montreal Impact",
+      "appearances": 41,
+      "goals": 23
+    },
+    {
+      "club": "Phoenix Rising",
+      "appearances": 26,
+      "goals": 17
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 689,
+    "goals": 303
+  }
+}

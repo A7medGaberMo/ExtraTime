@@ -1,0 +1,47 @@
+{
+  "apiId": 96,
+  "name": "Cesc Fàbregas",
+  "clubs": [
+    {
+      "club": "Arsenal",
+      "appearances": 303,
+      "goals": 57
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 151,
+      "goals": 42
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 198,
+      "goals": 22
+    },
+    {
+      "club": "Monaco",
+      "appearances": 68,
+      "goals": 4
+    },
+    {
+      "club": "Monaco B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Como",
+      "appearances": 17,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 110,
+      "goals": 15
+    }
+  ],
+  "careerTotal": {
+    "appearances": 738,
+    "goals": 125
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 148,
+  "name": "Ruud van Nistelrooy",
+  "clubs": [
+    {
+      "club": "Den Bosch",
+      "appearances": 71,
+      "goals": 20
+    },
+    {
+      "club": "Heerenveen",
+      "appearances": 40,
+      "goals": 16
+    },
+    {
+      "club": "PSV",
+      "appearances": 90,
+      "goals": 77
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 219,
+      "goals": 150
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 96,
+      "goals": 64
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 44,
+      "goals": 17
+    },
+    {
+      "club": "Málaga",
+      "appearances": 32,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 70,
+      "goals": 35
+    }
+  ],
+  "careerTotal": {
+    "appearances": 592,
+    "goals": 349
+  }
+}

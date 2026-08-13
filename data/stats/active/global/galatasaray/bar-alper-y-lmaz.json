@@ -1,0 +1,32 @@
+{
+  "apiId": 27958,
+  "name": "Barış Alper Yılmaz",
+  "clubs": [
+    {
+      "club": "Ankara Demirspor",
+      "appearances": 43,
+      "goals": 1
+    },
+    {
+      "club": "Ankara Keçiörengücü",
+      "appearances": 36,
+      "goals": 8
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 205,
+      "goals": 37
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 38,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 284,
+    "goals": 46
+  }
+}

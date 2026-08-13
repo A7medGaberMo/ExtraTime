@@ -1,0 +1,42 @@
+{
+  "apiId": 76,
+  "name": "Łukasz Piszczek",
+  "clubs": [
+    {
+      "club": "Zagłębie Lubin",
+      "appearances": 98,
+      "goals": 21
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 87,
+      "goals": 7
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 382,
+      "goals": 19
+    },
+    {
+      "club": "Goczałkowice-Zdrój",
+      "appearances": 74,
+      "goals": 4
+    },
+    {
+      "club": "Goczałkowice-Zdrój II",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 643,
+    "goals": 51
+  }
+}

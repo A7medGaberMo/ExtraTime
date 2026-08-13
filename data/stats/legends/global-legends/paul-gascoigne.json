@@ -1,0 +1,62 @@
+{
+  "apiId": 73,
+  "name": "Paul Gascoigne",
+  "clubs": [
+    {
+      "club": "Newcastle United",
+      "appearances": 104,
+      "goals": 25
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 112,
+      "goals": 33
+    },
+    {
+      "club": "Lazio",
+      "appearances": 47,
+      "goals": 6
+    },
+    {
+      "club": "Rangers",
+      "appearances": 104,
+      "goals": 39
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 48,
+      "goals": 4
+    },
+    {
+      "club": "Everton",
+      "appearances": 38,
+      "goals": 1
+    },
+    {
+      "club": "Burnley",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Gansu Tianma",
+      "appearances": 4,
+      "goals": 2
+    },
+    {
+      "club": "Boston United",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 57,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 468,
+    "goals": 110
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 152,
+  "name": "Rafael Márquez",
+  "clubs": [
+    {
+      "club": "Atlas",
+      "appearances": 135,
+      "goals": 7
+    },
+    {
+      "club": "Monaco",
+      "appearances": 114,
+      "goals": 5
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 242,
+      "goals": 13
+    },
+    {
+      "club": "New York Red Bulls",
+      "appearances": 50,
+      "goals": 1
+    },
+    {
+      "club": "León",
+      "appearances": 58,
+      "goals": 2
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 39,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 147,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 638,
+    "goals": 28
+  }
+}

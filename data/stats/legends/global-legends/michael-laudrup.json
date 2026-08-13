@@ -1,0 +1,57 @@
+{
+  "apiId": 116,
+  "name": "Michael Laudrup",
+  "clubs": [
+    {
+      "club": "KB",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Brøndby",
+      "appearances": 38,
+      "goals": 23
+    },
+    {
+      "club": "Lazio",
+      "appearances": 70,
+      "goals": 12
+    },
+    {
+      "club": "Juventus",
+      "appearances": 152,
+      "goals": 36
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 226,
+      "goals": 55
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 76,
+      "goals": 15
+    },
+    {
+      "club": "Vissel Kobe",
+      "appearances": 24,
+      "goals": 8
+    },
+    {
+      "club": "Ajax",
+      "appearances": 30,
+      "goals": 13
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 104,
+      "goals": 37
+    }
+  ],
+  "careerTotal": {
+    "appearances": 632,
+    "goals": 165
+  }
+}

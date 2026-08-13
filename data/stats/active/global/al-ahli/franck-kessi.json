@@ -1,0 +1,42 @@
+{
+  "apiId": 732,
+  "name": "Franck Kessié",
+  "clubs": [
+    {
+      "club": "Cesena",
+      "appearances": 37,
+      "goals": 4
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 31,
+      "goals": 7
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 223,
+      "goals": 37
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 43,
+      "goals": 3
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 119,
+      "goals": 26
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 106,
+      "goals": 16
+    }
+  ],
+  "careerTotal": {
+    "appearances": 453,
+    "goals": 77
+  }
+}

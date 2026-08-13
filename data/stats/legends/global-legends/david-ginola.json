@@ -1,0 +1,57 @@
+{
+  "apiId": 104,
+  "name": "David Ginola",
+  "clubs": [
+    {
+      "club": "Toulon",
+      "appearances": 86,
+      "goals": 5
+    },
+    {
+      "club": "Racing Paris",
+      "appearances": 69,
+      "goals": 10
+    },
+    {
+      "club": "Brest",
+      "appearances": 53,
+      "goals": 15
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 158,
+      "goals": 44
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 76,
+      "goals": 7
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 124,
+      "goals": 22
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 41,
+      "goals": 5
+    },
+    {
+      "club": "Everton",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 17,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 614,
+    "goals": 108
+  }
+}

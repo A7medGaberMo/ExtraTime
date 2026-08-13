@@ -1,0 +1,21 @@
+{
+  "apiId": 114940,
+  "name": "Alan Varela",
+  "clubs": [
+    {
+      "club": "Boca Juniors",
+      "appearances": 111,
+      "goals": 2
+    },
+    {
+      "club": "Porto",
+      "appearances": 118,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 229,
+    "goals": 6
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 1636,
+  "name": "Mert Müldür",
+  "clubs": [
+    {
+      "club": "Rapid Wien II",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Rapid Wien",
+      "appearances": 47,
+      "goals": 2
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 90,
+      "goals": 2
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 120,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 48,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 280,
+    "goals": 9
+  }
+}

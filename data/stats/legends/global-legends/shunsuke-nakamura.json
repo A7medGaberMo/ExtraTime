@@ -1,0 +1,47 @@
+{
+  "apiId": 27,
+  "name": "Shunsuke Nakamura",
+  "clubs": [
+    {
+      "club": "Yokohama F. Marinos",
+      "appearances": 415,
+      "goals": 83
+    },
+    {
+      "club": "Reggina",
+      "appearances": 87,
+      "goals": 12
+    },
+    {
+      "club": "Celtic",
+      "appearances": 166,
+      "goals": 34
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Júbilo Iwata",
+      "appearances": 51,
+      "goals": 5
+    },
+    {
+      "club": "Yokohama FC",
+      "appearances": 41,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 101,
+      "goals": 25
+    }
+  ],
+  "careerTotal": {
+    "appearances": 775,
+    "goals": 135
+  }
+}

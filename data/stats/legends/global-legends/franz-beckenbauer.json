@@ -1,0 +1,32 @@
+{
+  "apiId": 15,
+  "name": "Franz Beckenbauer",
+  "clubs": [
+    {
+      "club": "Bayern Munich",
+      "appearances": 584,
+      "goals": 75
+    },
+    {
+      "club": "New York Cosmos",
+      "appearances": 132,
+      "goals": 23
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 38,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "West Germany",
+      "appearances": 103,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 754,
+    "goals": 98
+  }
+}

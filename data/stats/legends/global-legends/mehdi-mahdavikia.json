@@ -1,0 +1,62 @@
+{
+  "apiId": 93,
+  "name": "Mehdi Mahdavikia",
+  "clubs": [
+    {
+      "club": "Bank Melli",
+      "appearances": 18,
+      "goals": 10
+    },
+    {
+      "club": "Persepolis",
+      "appearances": 99,
+      "goals": 27
+    },
+    {
+      "club": "Pas",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Bochum",
+      "appearances": 12,
+      "goals": 3
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 263,
+      "goals": 34
+    },
+    {
+      "club": "Hamburger SV Amateure",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Steel Azin",
+      "appearances": 37,
+      "goals": 6
+    },
+    {
+      "club": "Damash",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Iran",
+      "appearances": 165,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 484,
+    "goals": 80
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "apiId": 38,
+  "name": "Nicolas Anelka",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 68,
+      "goals": 19
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 90,
+      "goals": 28
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 31,
+      "goals": 7
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 22,
+      "goals": 5
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 103,
+      "goals": 45
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 57,
+      "goals": 16
+    },
+    {
+      "club": "Bolton Wanderers",
+      "appearances": 61,
+      "goals": 23
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 184,
+      "goals": 59
+    },
+    {
+      "club": "Shanghai Shenhua",
+      "appearances": 27,
+      "goals": 4
+    },
+    {
+      "club": "Juventus",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Mumbai City",
+      "appearances": 13,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 69,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 671,
+    "goals": 210
+  }
+}

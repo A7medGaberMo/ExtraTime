@@ -1,0 +1,42 @@
+{
+  "apiId": 82,
+  "name": "Rio Ferdinand",
+  "clubs": [
+    {
+      "club": "West Ham United",
+      "appearances": 157,
+      "goals": 2
+    },
+    {
+      "club": "AFC Bournemouth",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 73,
+      "goals": 3
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 455,
+      "goals": 8
+    },
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 81,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 708,
+    "goals": 13
+  }
+}

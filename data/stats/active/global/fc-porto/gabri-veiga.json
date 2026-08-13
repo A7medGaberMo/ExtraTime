@@ -1,0 +1,31 @@
+{
+  "apiId": 127909,
+  "name": "Gabri Veiga",
+  "clubs": [
+    {
+      "club": "Celta B",
+      "appearances": 64,
+      "goals": 10
+    },
+    {
+      "club": "Celta",
+      "appearances": 56,
+      "goals": 11
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 66,
+      "goals": 12
+    },
+    {
+      "club": "Porto",
+      "appearances": 53,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 239,
+    "goals": 40
+  }
+}

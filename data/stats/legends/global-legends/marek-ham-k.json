@@ -1,0 +1,47 @@
+{
+  "apiId": 7,
+  "name": "Marek Hamšík",
+  "clubs": [
+    {
+      "club": "Slovan Bratislava",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Brescia",
+      "appearances": 74,
+      "goals": 12
+    },
+    {
+      "club": "Napoli",
+      "appearances": 520,
+      "goals": 121
+    },
+    {
+      "club": "Dalian Professional",
+      "appearances": 45,
+      "goals": 5
+    },
+    {
+      "club": "IFK Göteborg",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 65,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia",
+      "appearances": 138,
+      "goals": 26
+    }
+  ],
+  "careerTotal": {
+    "appearances": 716,
+    "goals": 146
+  }
+}

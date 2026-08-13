@@ -1,0 +1,47 @@
+{
+  "apiId": 97,
+  "name": "David Silva",
+  "clubs": [
+    {
+      "club": "Valencia B",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Eibar",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Celta Vigo",
+      "appearances": 38,
+      "goals": 4
+    },
+    {
+      "club": "Valencia",
+      "appearances": 168,
+      "goals": 32
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 436,
+      "goals": 76
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 93,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 125,
+      "goals": 35
+    }
+  ],
+  "careerTotal": {
+    "appearances": 784,
+    "goals": 124
+  }
+}

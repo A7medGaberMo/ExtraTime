@@ -1,0 +1,42 @@
+{
+  "apiId": 119,
+  "name": "Dejan Savićević",
+  "clubs": [
+    {
+      "club": "Budućnost Titograd",
+      "appearances": 130,
+      "goals": 36
+    },
+    {
+      "club": "Red Star Belgrade",
+      "appearances": 118,
+      "goals": 41
+    },
+    {
+      "club": "Milan",
+      "appearances": 144,
+      "goals": 34
+    },
+    {
+      "club": "Rapid Wien",
+      "appearances": 54,
+      "goals": 20
+    }
+  ],
+  "national": [
+    {
+      "team": "SFR Yugoslavia",
+      "appearances": 27,
+      "goals": 10
+    },
+    {
+      "team": "FR Yugoslavia",
+      "appearances": 29,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 446,
+    "goals": 131
+  }
+}

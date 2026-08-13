@@ -1,0 +1,52 @@
+{
+  "apiId": 84,
+  "name": "Karel Poborský",
+  "clubs": [
+    {
+      "club": "České Budějovice",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Viktoria Žižkov",
+      "appearances": 32,
+      "goals": 11
+    },
+    {
+      "club": "Slavia Prague",
+      "appearances": 37,
+      "goals": 13
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 48,
+      "goals": 6
+    },
+    {
+      "club": "Benfica",
+      "appearances": 112,
+      "goals": 17
+    },
+    {
+      "club": "Lazio",
+      "appearances": 53,
+      "goals": 5
+    },
+    {
+      "club": "Sparta Prague",
+      "appearances": 113,
+      "goals": 33
+    }
+  ],
+  "national": [
+    {
+      "team": "Czech Republic",
+      "appearances": 118,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 395,
+    "goals": 85
+  }
+}

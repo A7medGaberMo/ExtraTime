@@ -1,0 +1,52 @@
+{
+  "apiId": 97,
+  "name": "Tim Howard",
+  "clubs": [
+    {
+      "club": "North Jersey Imperials",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "MetroStars",
+      "appearances": 93,
+      "goals": 0
+    },
+    {
+      "club": "MLS Pro-40",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 77,
+      "goals": 0
+    },
+    {
+      "club": "Everton",
+      "appearances": 414,
+      "goals": 1
+    },
+    {
+      "club": "Colorado Rapids",
+      "appearances": 103,
+      "goals": 0
+    },
+    {
+      "club": "Memphis 901",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 121,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 700,
+    "goals": 1
+  }
+}

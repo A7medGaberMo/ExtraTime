@@ -1,0 +1,47 @@
+{
+  "apiId": 31,
+  "name": "Fabio Cannavaro",
+  "clubs": [
+    {
+      "club": "Napoli",
+      "appearances": 68,
+      "goals": 1
+    },
+    {
+      "club": "Parma",
+      "appearances": 291,
+      "goals": 5
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 74,
+      "goals": 3
+    },
+    {
+      "club": "Juventus",
+      "appearances": 128,
+      "goals": 7
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 118,
+      "goals": 1
+    },
+    {
+      "club": "Al-Ahli Dubai",
+      "appearances": 16,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 136,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 695,
+    "goals": 19
+  }
+}

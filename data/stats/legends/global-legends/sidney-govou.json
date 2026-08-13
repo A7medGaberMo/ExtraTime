@@ -1,0 +1,52 @@
+{
+  "apiId": 112,
+  "name": "Sidney Govou",
+  "clubs": [
+    {
+      "club": "Lyon",
+      "appearances": 292,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Évian",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Lyon B",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Monts d'Or Azergues",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "FC Miami City",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Limonest",
+      "appearances": 24,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 49,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 417,
+    "goals": 0
+  }
+}

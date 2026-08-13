@@ -1,0 +1,42 @@
+{
+  "apiId": 151,
+  "name": "Gianluca Zambrotta",
+  "clubs": [
+    {
+      "club": "Como",
+      "appearances": 50,
+      "goals": 6
+    },
+    {
+      "club": "Bari",
+      "appearances": 65,
+      "goals": 8
+    },
+    {
+      "club": "Juventus",
+      "appearances": 296,
+      "goals": 10
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 82,
+      "goals": 3
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 104,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 98,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 597,
+    "goals": 29
+  }
+}

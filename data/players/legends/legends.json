@@ -41,7 +41,7 @@
     "tier": "ICON",
     "isLegend": true,
     "kitNumber": 9,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ronaldo_Lu%C3%ADs_Naz%C3%A1rio_de_Lima_2019_%283x4_cropped%29.jpg/330px-Ronaldo_Lu%C3%ADs_Naz%C3%A1rio_de_Lima_2019_%283x4_cropped%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/12.12.2025_%E2%80%93_Cerim%C3%B4nia_de_lan%C3%A7amento_do_SBT_News_-_54980664160_%28cropped2%29.jpg/330px-12.12.2025_%E2%80%93_Cerim%C3%B4nia_de_lan%C3%A7amento_do_SBT_News_-_54980664160_%28cropped2%29.jpg"
   },
   {
     "apiId": "icon_5",
@@ -151,7 +151,7 @@
     "tier": "ICON",
     "isLegend": true,
     "kitNumber": 6,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Xavi%2C_Persepolis_vs._Al_Sadd%2C_20190520_02_%28cropped%29.jpg/330px-Xavi%2C_Persepolis_vs._Al_Sadd%2C_20190520_02_%28cropped%29.jpg"
+    "imageUrl": "https://media.api-sports.io/football/players/35845.png"
   },
   {
     "apiId": "icon_15",
@@ -448,7 +448,7 @@
     "tier": "ICON",
     "isLegend": true,
     "kitNumber": 9,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Samuel_2011.jpg/330px-Samuel_2011.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sammuel_Eto%27o_Fils_02.jpg/330px-Sammuel_Eto%27o_Fils_02.jpg"
   },
   {
     "apiId": "icon_42",
@@ -558,7 +558,7 @@
     "tier": "ICON",
     "isLegend": true,
     "kitNumber": 9,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Di_Stefano_1959.jpg/330px-Di_Stefano_1959.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Di_stefano_argentina_%28cropped%29.jpg/330px-Di_stefano_argentina_%28cropped%29.jpg"
   },
   {
     "apiId": "icon_52",
@@ -969,17 +969,6 @@
   },
   {
     "apiId": "icon_89",
-    "name": "Diego Milito",
-    "position": "ST",
-    "club": "Inter Milan",
-    "nation": "Argentina",
-    "tier": "ICON",
-    "isLegend": true,
-    "kitNumber": 22,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Diego_Milito_%2822677058983%29_%28cropped%29.jpg/330px-Diego_Milito_%2822677058983%29_%28cropped%29.jpg"
-  },
-  {
-    "apiId": "icon_90",
     "name": "Juninho Pernambucano",
     "position": "CM/CAM",
     "club": "Olympique Lyonnais",
@@ -990,7 +979,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Juninho_Pernambucano.JPG/330px-Juninho_Pernambucano.JPG"
   },
   {
-    "apiId": "icon_91",
+    "apiId": "icon_90",
     "name": "Gareth Bale",
     "position": "RW/ST",
     "club": "Real Madrid",
@@ -1001,7 +990,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/2022_FIFA_World_Cup_United_States_1%E2%80%931_Wales_-_%2832%29_%28cropped%29.jpg/330px-2022_FIFA_World_Cup_United_States_1%E2%80%931_Wales_-_%2832%29_%28cropped%29.jpg"
   },
   {
-    "apiId": "icon_92",
+    "apiId": "icon_91",
     "name": "Marcelo",
     "position": "LB/LM",
     "club": "Real Madrid",
@@ -1012,7 +1001,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Marcelo_Vieira_in_2022.jpg/330px-Marcelo_Vieira_in_2022.jpg"
   },
   {
-    "apiId": "icon_93",
+    "apiId": "icon_92",
     "name": "Pepe",
     "position": "CB",
     "club": "Real Madrid",
@@ -1023,7 +1012,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pepe_2018.jpg/330px-Pepe_2018.jpg"
   },
   {
-    "apiId": "icon_94",
+    "apiId": "icon_93",
     "name": "Franck Ribéry",
     "position": "LW/LM",
     "club": "Bayern Munich",
@@ -1034,7 +1023,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Franck_Ribery_2019_%28cropped%29.jpg/330px-Franck_Ribery_2019_%28cropped%29.jpg"
   },
   {
-    "apiId": "icon_95",
+    "apiId": "icon_94",
     "name": "Arjen Robben",
     "position": "RW/RM",
     "club": "Bayern Munich",
@@ -1045,7 +1034,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2019147183036_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_M%C3%BCnchen_-_Sven_-_1D_X_MK_II_-_0196_-_B70I8495_%28cropped%29.jpg/330px-2019147183036_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_M%C3%BCnchen_-_Sven_-_1D_X_MK_II_-_0196_-_B70I8495_%28cropped%29.jpg"
   },
   {
-    "apiId": "icon_96",
+    "apiId": "icon_95",
     "name": "Gerard Piqué",
     "position": "CB",
     "club": "FC Barcelona",
@@ -1056,7 +1045,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gerard_Piqu%C3%A9_Euro_2012_vs_France_01.jpg/330px-Gerard_Piqu%C3%A9_Euro_2012_vs_France_01.jpg"
   },
   {
-    "apiId": "icon_97",
+    "apiId": "icon_96",
     "name": "Cesc Fàbregas",
     "position": "CM/CAM",
     "club": "Arsenal",
@@ -1067,7 +1056,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/2023_-_Cesc_Fabregas_%28cropped%29.jpg/330px-2023_-_Cesc_Fabregas_%28cropped%29.jpg"
   },
   {
-    "apiId": "icon_98",
+    "apiId": "icon_97",
     "name": "David Silva",
     "position": "CAM/CM",
     "club": "Manchester City",
@@ -1078,7 +1067,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/David_Silva_2017.jpg/330px-David_Silva_2017.jpg"
   },
   {
-    "apiId": "icon_99",
+    "apiId": "icon_98",
     "name": "Dani Alves",
     "position": "RB",
     "club": "FC Barcelona",
@@ -1089,7 +1078,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/07_07_2019_Final_da_Copa_Am%C3%A9rica_2019_%2848226649586%29_%28cropped%29.jpg"
   },
   {
-    "apiId": "icon_100",
+    "apiId": "icon_99",
     "name": "Javier Zanetti",
     "position": "RB/CDM",
     "club": "Inter Milan",
@@ -1100,7 +1089,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Metalist-Inter_%282%29.jpg/330px-Metalist-Inter_%282%29.jpg"
   },
   {
-    "apiId": "icon_101",
+    "apiId": "icon_100",
     "name": "Laurent Blanc",
     "position": "CB",
     "club": "Marseille",
@@ -1111,7 +1100,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Laurent_blanc_11_11_2013_reves_de_Clara.jpg/330px-Laurent_blanc_11_11_2013_reves_de_Clara.jpg"
   },
   {
-    "apiId": "icon_102",
+    "apiId": "icon_101",
     "name": "Davor Šuker",
     "position": "ST",
     "club": "Real Madrid",
@@ -1120,6 +1109,589 @@
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Football_against_poverty_2014_-_Davor_%C5%A0uker_%28cropped%29.jpg/330px-Football_against_poverty_2014_-_Davor_%C5%A0uker_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_102",
+    "name": "Raymond Kopa",
+    "position": "CAM/RW",
+    "club": "Real Madrid",
+    "nation": "France",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Raymond_Kopa_1963b.jpg/330px-Raymond_Kopa_1963b.jpg"
+  },
+  {
+    "apiId": "icon_103",
+    "name": "Giuseppe Meazza",
+    "position": "ST/CAM",
+    "club": "Inter Milan",
+    "nation": "Italy",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Giuseppe_Meazza_1935.jpg/330px-Giuseppe_Meazza_1935.jpg"
+  },
+  {
+    "apiId": "icon_104",
+    "name": "Gianni Rivera",
+    "position": "CAM/CM",
+    "club": "AC Milan",
+    "nation": "Italy",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Rivera.jpg"
+  },
+  {
+    "apiId": "icon_105",
+    "name": "Giacinto Facchetti",
+    "position": "LB/CB",
+    "club": "Inter Milan",
+    "nation": "Italy",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 3,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/1966%E2%80%9367_Inter_Milan_-_Giacinto_Facchetti.jpg/330px-1966%E2%80%9367_Inter_Milan_-_Giacinto_Facchetti.jpg"
+  },
+  {
+    "apiId": "icon_106",
+    "name": "Gaetano Scirea",
+    "position": "CB/SW",
+    "club": "Juventus",
+    "nation": "Italy",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 6,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/1975%E2%80%9376_Juventus_FC_-_Gaetano_Scirea.jpg/330px-1975%E2%80%9376_Juventus_FC_-_Gaetano_Scirea.jpg"
+  },
+  {
+    "apiId": "icon_107",
+    "name": "Jairzinho",
+    "position": "RW/ST",
+    "club": "Botafogo",
+    "nation": "Brazil",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 7,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Jairzinho_1970s.jpg/330px-Jairzinho_1970s.jpg"
+  },
+  {
+    "apiId": "icon_108",
+    "name": "Rivellino",
+    "position": "CAM/LW",
+    "club": "Corinthians",
+    "nation": "Brazil",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Rivellino_1970.jpg/330px-Rivellino_1970.jpg"
+  },
+  {
+    "apiId": "icon_109",
+    "name": "Paulo Roberto Falcão",
+    "position": "CM/CDM",
+    "club": "AS Roma",
+    "nation": "Brazil",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 5,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Paulo_Roberto_Falc%C3%A3o%2C_Roma_1983-84.jpg/330px-Paulo_Roberto_Falc%C3%A3o%2C_Roma_1983-84.jpg"
+  },
+  {
+    "apiId": "icon_110",
+    "name": "Daniel Passarella",
+    "position": "CB",
+    "club": "River Plate",
+    "nation": "Argentina",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 6,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Passarella_copa_mundo.jpg/330px-Passarella_copa_mundo.jpg"
+  },
+  {
+    "apiId": "icon_111",
+    "name": "Mario Kempes",
+    "position": "ST/CAM",
+    "club": "Valencia CF",
+    "nation": "Argentina",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Mario_Kempes_Argentina_v_Spain_19_July_2026-036_%28cropped%29.jpg/330px-Mario_Kempes_Argentina_v_Spain_19_July_2026-036_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_112",
+    "name": "Juan Román Riquelme",
+    "position": "CAM",
+    "club": "Boca Juniors",
+    "nation": "Argentina",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Juan_Rom%C3%A1n_Riquelme_-_2019.jpg/330px-Juan_Rom%C3%A1n_Riquelme_-_2019.jpg"
+  },
+  {
+    "apiId": "icon_113",
+    "name": "Sepp Maier",
+    "position": "GK",
+    "club": "Bayern Munich",
+    "nation": "Germany",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 1,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/6137Sepp_Maier_Torwart-Legende.JPG/330px-6137Sepp_Maier_Torwart-Legende.JPG"
+  },
+  {
+    "apiId": "icon_114",
+    "name": "Paul Breitner",
+    "position": "CM/LB",
+    "club": "Bayern Munich",
+    "nation": "Germany",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Paul_Breitner.jpg/330px-Paul_Breitner.jpg"
+  },
+  {
+    "apiId": "icon_115",
+    "name": "Uwe Seeler",
+    "position": "ST",
+    "club": "Hamburger SV",
+    "nation": "Germany",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Uwe_Seeler_1966_%28cropped%29.jpg/330px-Uwe_Seeler_1966_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_116",
+    "name": "Michael Laudrup",
+    "position": "CAM/LW",
+    "club": "FC Barcelona",
+    "nation": "Denmark",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Michael_Laudrup_2016c_%28cropped%29.jpg/330px-Michael_Laudrup_2016c_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_117",
+    "name": "Ian Rush",
+    "position": "ST",
+    "club": "Liverpool",
+    "nation": "Wales",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Ian_Rush_in_Singapore.jpg"
+  },
+  {
+    "apiId": "icon_118",
+    "name": "John Charles",
+    "position": "ST/CB",
+    "club": "Juventus",
+    "nation": "Wales",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/John_Charles%2C_Wales_versus_Scotland%2C_Ninian_Park%2C_1954.jpg/330px-John_Charles%2C_Wales_versus_Scotland%2C_Ninian_Park%2C_1954.jpg"
+  },
+  {
+    "apiId": "icon_119",
+    "name": "Dejan Savićević",
+    "position": "CAM/RW",
+    "club": "AC Milan",
+    "nation": "Montenegro",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Dejan_Savi%C4%87evi%C4%87.jpg/330px-Dejan_Savi%C4%87evi%C4%87.jpg"
+  },
+  {
+    "apiId": "icon_120",
+    "name": "Dragan Stojković",
+    "position": "CAM",
+    "club": "Red Star Belgrade",
+    "nation": "Serbia",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Dragan_Stojkovic_Piksi_2024.png/330px-Dragan_Stojkovic_Piksi_2024.png"
+  },
+  {
+    "apiId": "icon_121",
+    "name": "Zvonimir Boban",
+    "position": "CAM/CM",
+    "club": "AC Milan",
+    "nation": "Croatia",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Zvonimir_Boban_in_2018.jpg/330px-Zvonimir_Boban_in_2018.jpg"
+  },
+  {
+    "apiId": "icon_122",
+    "name": "Oleg Blokhin",
+    "position": "LW/ST",
+    "club": "Dynamo Kyiv",
+    "nation": "Ukraine",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Oleg_Blokhin2013.jpg/330px-Oleg_Blokhin2013.jpg"
+  },
+  {
+    "apiId": "icon_123",
+    "name": "Josef Bican",
+    "position": "ST",
+    "club": "Slavia Prague",
+    "nation": "Czech Republic",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Josef_Bican_1940.jpg/330px-Josef_Bican_1940.jpg"
+  },
+  {
+    "apiId": "icon_124",
+    "name": "Sándor Kocsis",
+    "position": "ST",
+    "club": "FC Barcelona",
+    "nation": "Hungary",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kocsis_S%C3%A1ndor_Fortepan_261526.jpg/330px-Kocsis_S%C3%A1ndor_Fortepan_261526.jpg"
+  },
+  {
+    "apiId": "icon_125",
+    "name": "Ladislao Kubala",
+    "position": "ST/CAM",
+    "club": "FC Barcelona",
+    "nation": "Spain",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kubala.jpg/330px-Kubala.jpg"
+  },
+  {
+    "apiId": "icon_126",
+    "name": "Luis Suárez Miramontes",
+    "position": "CM/CAM",
+    "club": "FC Barcelona",
+    "nation": "Spain",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Luis_Su%C3%A1rez_Miramontes_1962.jpg/330px-Luis_Su%C3%A1rez_Miramontes_1962.jpg"
+  },
+  {
+    "apiId": "icon_127",
+    "name": "Enzo Francescoli",
+    "position": "CAM/CF",
+    "club": "River Plate",
+    "nation": "Uruguay",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Enzo_Francescoli_1984_%28cropped%29.jpg/330px-Enzo_Francescoli_1984_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_128",
+    "name": "Carlos Valderrama",
+    "position": "CAM",
+    "club": "Deportivo Cali",
+    "nation": "Colombia",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Pibe_Valderrama_2022.jpg/330px-Pibe_Valderrama_2022.jpg"
+  },
+  {
+    "apiId": "icon_129",
+    "name": "Gunnar Nordahl",
+    "position": "ST",
+    "club": "AC Milan",
+    "nation": "Sweden",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Gunnar_Nordahl_-_AC_Milan.jpg/330px-Gunnar_Nordahl_-_AC_Milan.jpg"
+  },
+  {
+    "apiId": "icon_130",
+    "name": "Nils Liedholm",
+    "position": "CM/CAM",
+    "club": "AC Milan",
+    "nation": "Sweden",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Nils_Liedholm-1959.jpg/330px-Nils_Liedholm-1959.jpg"
+  },
+  {
+    "apiId": "icon_131",
+    "name": "Siniša Mihajlović",
+    "position": "CB/LB",
+    "club": "SS Lazio",
+    "nation": "Serbia",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Sini%C5%A1a_Mihajlovi%C4%87.JPG"
+  },
+  {
+    "apiId": "icon_132",
+    "name": "Fernando Redondo",
+    "position": "CDM/CM",
+    "club": "Real Madrid",
+    "nation": "Argentina",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 6,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/%D0%A4%D0%B5%D1%80%D0%BD%D0%B0%D0%BD%D0%B4%D0%BE_%D0%A0%D0%B5%D0%B4%D0%BE%D0%BD%D0%B4%D0%BE_2019.png/330px-%D0%A4%D0%B5%D1%80%D0%BD%D0%B0%D0%BD%D0%B4%D0%BE_%D0%A0%D0%B5%D0%B4%D0%BE%D0%BD%D0%B4%D0%BE_2019.png"
+  },
+  {
+    "apiId": "icon_133",
+    "name": "David Villa",
+    "position": "ST/LW",
+    "club": "FC Barcelona",
+    "nation": "Spain",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 7,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Spain-Tahiti%2C_Confederations_Cup_2013_%2802%29_%28Villa_crop%29.jpg/330px-Spain-Tahiti%2C_Confederations_Cup_2013_%2802%29_%28Villa_crop%29.jpg"
+  },
+  {
+    "apiId": "icon_134",
+    "name": "Jaap Stam",
+    "position": "CB",
+    "club": "Manchester United",
+    "nation": "Netherlands",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 6,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Jaap_Stam_-_1.jpg/330px-Jaap_Stam_-_1.jpg"
+  },
+  {
+    "apiId": "icon_135",
+    "name": "Lúcio",
+    "position": "CB",
+    "club": "Inter Milan",
+    "nation": "Brazil",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 6,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Lucio_2019_%28cropped%29.jpg/330px-Lucio_2019_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_136",
+    "name": "John Terry",
+    "position": "CB",
+    "club": "Chelsea",
+    "nation": "England",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 26,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_Terry_at_pro-am_Wentworth_golf_course_September_2023_%28cropped%29.jpg/330px-John_Terry_at_pro-am_Wentworth_golf_course_September_2023_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_137",
+    "name": "Sol Campbell",
+    "position": "CB",
+    "club": "Arsenal",
+    "nation": "England",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 23,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Sol_Campbell_%2854921202604%29_%28cropped%29.jpg/330px-Sol_Campbell_%2854921202604%29_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_138",
+    "name": "Filippo Inzaghi",
+    "position": "ST",
+    "club": "AC Milan",
+    "nation": "Italy",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Filippo_Inzaghi.jpg/330px-Filippo_Inzaghi.jpg"
+  },
+  {
+    "apiId": "icon_139",
+    "name": "Miroslav Klose",
+    "position": "ST",
+    "club": "SS Lazio",
+    "nation": "Germany",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2016209185719_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0149_-_DV3P4742_mod.jpg/330px-2016209185719_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0149_-_DV3P4742_mod.jpg"
+  },
+  {
+    "apiId": "icon_140",
+    "name": "Gennaro Gattuso",
+    "position": "CDM",
+    "club": "AC Milan",
+    "nation": "Italy",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Lausanne_vs_Sion_27_february_2013_-_Gennaro_Gattuso.jpg/330px-Lausanne_vs_Sion_27_february_2013_-_Gennaro_Gattuso.jpg"
+  },
+  {
+    "apiId": "icon_141",
+    "name": "Robert Pirès",
+    "position": "LW/CAM",
+    "club": "Arsenal",
+    "nation": "France",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 7,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Robert_Pires_2011.jpg/330px-Robert_Pires_2011.jpg"
+  },
+  {
+    "apiId": "icon_142",
+    "name": "Marcel Desailly",
+    "position": "CB",
+    "club": "AC Milan",
+    "nation": "France",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Marcel_Desailly_-_240422_192752-3_%28cropped%29.jpg/330px-25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Marcel_Desailly_-_240422_192752-3_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_143",
+    "name": "Edwin van der Sar",
+    "position": "GK",
+    "club": "Manchester United",
+    "nation": "Netherlands",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 1,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Edwin_van_der_Sar_2015.jpg/330px-Edwin_van_der_Sar_2015.jpg"
+  },
+  {
+    "apiId": "icon_144",
+    "name": "Claude Makélélé",
+    "position": "CDM",
+    "club": "Real Madrid",
+    "nation": "France",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 6,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Claude_Mak%C3%A9l%C3%A9l%C3%A9_%2853557564951%29_%28cropped%29.jpg/330px-Claude_Mak%C3%A9l%C3%A9l%C3%A9_%2853557564951%29_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_145",
+    "name": "Emmanuel Petit",
+    "position": "CDM",
+    "club": "Arsenal",
+    "nation": "France",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 17,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Emmanuel_Petit.jpg"
+  },
+  {
+    "apiId": "icon_146",
+    "name": "Michael Owen",
+    "position": "ST",
+    "club": "Liverpool",
+    "nation": "England",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Michael_Owen.jpg/330px-Michael_Owen.jpg"
+  },
+  {
+    "apiId": "icon_147",
+    "name": "Bastian Schweinsteiger",
+    "position": "CM/CDM",
+    "club": "Bayern Munich",
+    "nation": "Germany",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 31,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Re-publica_23_-_Tag_3_%2852957826298%29_%28cropped%29.jpg/330px-Re-publica_23_-_Tag_3_%2852957826298%29_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_148",
+    "name": "Ruud van Nistelrooy",
+    "position": "ST",
+    "club": "Manchester United",
+    "nation": "Netherlands",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ruud_van_Nistelrooy_2017.jpg/330px-Ruud_van_Nistelrooy_2017.jpg"
+  },
+  {
+    "apiId": "icon_149",
+    "name": "Robin van Persie",
+    "position": "ST",
+    "club": "Arsenal",
+    "nation": "Netherlands",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Loco-Fener_%2810%29.jpg/330px-Loco-Fener_%2810%29.jpg"
+  },
+  {
+    "apiId": "icon_150",
+    "name": "Jean-Pierre Papin",
+    "position": "ST",
+    "club": "Marseille",
+    "nation": "France",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/PapinJP1997_%28cropped%29.jpg/330px-PapinJP1997_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_151",
+    "name": "Gianluca Zambrotta",
+    "position": "RB/LB",
+    "club": "Juventus",
+    "nation": "Italy",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 19,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Gianluca_Zambrotta_2019_%28cropped%29.jpg/330px-Gianluca_Zambrotta_2019_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "icon_152",
+    "name": "Rafael Márquez",
+    "position": "CB/CDM",
+    "club": "FC Barcelona",
+    "nation": "Mexico",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 4,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Rafael_M%C3%A1rquez_2014.jpg/330px-Rafael_M%C3%A1rquez_2014.jpg"
+  },
+  {
+    "apiId": "icon_153",
+    "name": "Luis Hernández",
+    "position": "ST",
+    "club": "Necaxa",
+    "nation": "Mexico",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 15,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Luis_Matador_Hernandez.jpg"
+  },
+  {
+    "apiId": "icon_154",
+    "name": "Henrik Larsson",
+    "position": "ST",
+    "club": "Celtic",
+    "nation": "Sweden",
+    "tier": "ICON",
+    "isLegend": true,
+    "kitNumber": 7,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Henrik_Larsson_in_Jan_2014.jpg/330px-Henrik_Larsson_in_Jan_2014.jpg"
   },
   {
     "apiId": "hero_1",
@@ -1376,28 +1948,6 @@
   },
   {
     "apiId": "hero_24",
-    "name": "Robin van Persie",
-    "position": "ST",
-    "club": "Arsenal",
-    "nation": "Netherlands",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 10,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Loco-Fener_%2810%29.jpg/330px-Loco-Fener_%2810%29.jpg"
-  },
-  {
-    "apiId": "hero_25",
-    "name": "Ruud van Nistelrooy",
-    "position": "ST",
-    "club": "Manchester United",
-    "nation": "Netherlands",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 10,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ruud_van_Nistelrooy_2017.jpg/330px-Ruud_van_Nistelrooy_2017.jpg"
-  },
-  {
-    "apiId": "hero_26",
     "name": "Fernando Torres",
     "position": "ST",
     "club": "Liverpool",
@@ -1408,7 +1958,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Fernando_Torres_2017.jpg"
   },
   {
-    "apiId": "hero_27",
+    "apiId": "hero_25",
     "name": "Diego Forlán",
     "position": "ST/CF",
     "club": "Atlético Madrid",
@@ -1419,7 +1969,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/U10_Diego_Forl%C3%A1n_7524.jpg/330px-U10_Diego_Forl%C3%A1n_7524.jpg"
   },
   {
-    "apiId": "hero_28",
+    "apiId": "hero_26",
     "name": "Jay-Jay Okocha",
     "position": "CAM",
     "club": "Bolton Wanderers",
@@ -1430,7 +1980,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Match_legends_2017_CC_%285%29.jpg/330px-Match_legends_2017_CC_%285%29.jpg"
   },
   {
-    "apiId": "hero_29",
+    "apiId": "hero_27",
     "name": "Shunsuke Nakamura",
     "position": "CAM/RM",
     "club": "Celtic",
@@ -1441,7 +1991,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Shunsuke2_20080622.png/330px-Shunsuke2_20080622.png"
   },
   {
-    "apiId": "hero_30",
+    "apiId": "hero_28",
     "name": "Wesley Sneijder",
     "position": "CAM/CM",
     "club": "Inter Milan",
@@ -1452,18 +2002,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Wesley_Sneijder_at_Sports_Festival_2025.jpg/330px-Wesley_Sneijder_at_Sports_Festival_2025.jpg"
   },
   {
-    "apiId": "hero_31",
-    "name": "Bastian Schweinsteiger",
-    "position": "CM/CDM",
-    "club": "Bayern Munich",
-    "nation": "Germany",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 31,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Re-publica_23_-_Tag_3_%2852957826298%29_%28cropped%29.jpg/330px-Re-publica_23_-_Tag_3_%2852957826298%29_%28cropped%29.jpg"
-  },
-  {
-    "apiId": "hero_32",
+    "apiId": "hero_29",
     "name": "Vincent Kompany",
     "position": "CB",
     "club": "Manchester City",
@@ -1474,7 +2013,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Kompany_Bayern_Munich_%28cropped%29.jpg/330px-Vincent_Kompany_Bayern_Munich_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_33",
+    "apiId": "hero_30",
     "name": "Hidetoshi Nakata",
     "position": "CAM",
     "club": "AS Roma",
@@ -1485,18 +2024,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Hidetoshi_Nakata_in_Okinawa.jpg/330px-Hidetoshi_Nakata_in_Okinawa.jpg"
   },
   {
-    "apiId": "hero_34",
-    "name": "Michael Owen",
-    "position": "ST",
-    "club": "Liverpool",
-    "nation": "England",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 10,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Michael_Owen.jpg/330px-Michael_Owen.jpg"
-  },
-  {
-    "apiId": "hero_35",
+    "apiId": "hero_31",
     "name": "Jamie Carragher",
     "position": "CB",
     "club": "Liverpool",
@@ -1507,7 +2035,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Football_against_poverty_2014_-_Jamie_Carragher_%28cropped%29.jpg/330px-Football_against_poverty_2014_-_Jamie_Carragher_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_36",
+    "apiId": "hero_32",
     "name": "Robbie Fowler",
     "position": "ST",
     "club": "Liverpool",
@@ -1518,7 +2046,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Fowler%2C_Robbie.jpg"
   },
   {
-    "apiId": "hero_37",
+    "apiId": "hero_33",
     "name": "Teddy Sheringham",
     "position": "CF",
     "club": "Tottenham Hotspur",
@@ -1529,18 +2057,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Teddy_Sheringham_-_53492983124_%28original%29.jpg/330px-Teddy_Sheringham_-_53492983124_%28original%29.jpg"
   },
   {
-    "apiId": "hero_38",
-    "name": "Emmanuel Petit",
-    "position": "CDM",
-    "club": "Arsenal",
-    "nation": "France",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 17,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Emmanuel_Petit.jpg"
-  },
-  {
-    "apiId": "hero_39",
+    "apiId": "hero_34",
     "name": "William Gallas",
     "position": "CB",
     "club": "Chelsea",
@@ -1551,18 +2068,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/William_Gallas_2018_%282%29.jpg/330px-William_Gallas_2018_%282%29.jpg"
   },
   {
-    "apiId": "hero_40",
-    "name": "Claude Makélélé",
-    "position": "CDM",
-    "club": "Real Madrid",
-    "nation": "France",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 6,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Claude_Mak%C3%A9l%C3%A9l%C3%A9_%2853557564951%29_%28cropped%29.jpg/330px-Claude_Mak%C3%A9l%C3%A9l%C3%A9_%2853557564951%29_%28cropped%29.jpg"
-  },
-  {
-    "apiId": "hero_41",
+    "apiId": "hero_35",
     "name": "Deco",
     "position": "CAM",
     "club": "FC Porto",
@@ -1573,18 +2079,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Deco_com_o_Fluminense_em_2013_%28cropped%29.jpg/330px-Deco_com_o_Fluminense_em_2013_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_42",
-    "name": "Edwin van der Sar",
-    "position": "GK",
-    "club": "Manchester United",
-    "nation": "Netherlands",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 1,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Edwin_van_der_Sar_2015.jpg/330px-Edwin_van_der_Sar_2015.jpg"
-  },
-  {
-    "apiId": "hero_43",
+    "apiId": "hero_36",
     "name": "Jens Lehmann",
     "position": "GK",
     "club": "Arsenal",
@@ -1595,7 +2090,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Jens_Lehmann_-_2019202184453_2019-07-21_Champions_for_Charity_-_3017_-_B70I3052_%28cropped%29.jpg/330px-Jens_Lehmann_-_2019202184453_2019-07-21_Champions_for_Charity_-_3017_-_B70I3052_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_44",
+    "apiId": "hero_37",
     "name": "Fabien Barthez",
     "position": "GK",
     "club": "Manchester United",
@@ -1606,29 +2101,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Fabien_Barthez_at_OM.jpg/330px-Fabien_Barthez_at_OM.jpg"
   },
   {
-    "apiId": "hero_45",
-    "name": "Marcel Desailly",
-    "position": "CB",
-    "club": "AC Milan",
-    "nation": "France",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 8,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Marcel_Desailly_-_240422_192752-3_%28cropped%29.jpg/330px-25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Marcel_Desailly_-_240422_192752-3_%28cropped%29.jpg"
-  },
-  {
-    "apiId": "hero_46",
-    "name": "Robert Pirès",
-    "position": "LW/CAM",
-    "club": "Arsenal",
-    "nation": "France",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 7,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Robert_Pires_2011.jpg/330px-Robert_Pires_2011.jpg"
-  },
-  {
-    "apiId": "hero_47",
+    "apiId": "hero_38",
     "name": "Nicolas Anelka",
     "position": "ST",
     "club": "Chelsea",
@@ -1639,7 +2112,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Nicolas_Anelka_4720.jpg"
   },
   {
-    "apiId": "hero_48",
+    "apiId": "hero_39",
     "name": "Djibril Cissé",
     "position": "ST",
     "club": "Liverpool",
@@ -1650,18 +2123,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Djibril_Ciss%C3%A9_1.jpg/330px-Djibril_Ciss%C3%A9_1.jpg"
   },
   {
-    "apiId": "hero_49",
-    "name": "Gennaro Gattuso",
-    "position": "CDM",
-    "club": "AC Milan",
-    "nation": "Italy",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 8,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Lausanne_vs_Sion_27_february_2013_-_Gennaro_Gattuso.jpg/330px-Lausanne_vs_Sion_27_february_2013_-_Gennaro_Gattuso.jpg"
-  },
-  {
-    "apiId": "hero_50",
+    "apiId": "hero_40",
     "name": "Radamel Falcao",
     "position": "ST",
     "club": "Atlético Madrid",
@@ -1672,7 +2134,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Radamel_Falcao_Garc%C3%ADa_en_Millonarios.jpg/330px-Radamel_Falcao_Garc%C3%ADa_en_Millonarios.jpg"
   },
   {
-    "apiId": "hero_51",
+    "apiId": "hero_41",
     "name": "Andrea Barzagli",
     "position": "CB",
     "club": "Juventus",
@@ -1683,7 +2145,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Andrea_Barzagli_BGR-ITA_2012.jpg/330px-Andrea_Barzagli_BGR-ITA_2012.jpg"
   },
   {
-    "apiId": "hero_52",
+    "apiId": "hero_42",
     "name": "Miralem Pjanić",
     "position": "CM",
     "club": "Juventus",
@@ -1694,7 +2156,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Miralem_Pjani%C4%87_2025.jpg/330px-Miralem_Pjani%C4%87_2025.jpg"
   },
   {
-    "apiId": "hero_53",
+    "apiId": "hero_43",
     "name": "Kevin-Prince Boateng",
     "position": "CAM",
     "club": "AC Milan",
@@ -1705,7 +2167,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Prince_Boateng_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_54",
+    "apiId": "hero_44",
     "name": "Santi Cazorla",
     "position": "CAM/CM",
     "club": "Arsenal",
@@ -1716,7 +2178,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Santi_Cazorla%2C_2012-08-18_%28cropped%29.jpg/330px-Santi_Cazorla%2C_2012-08-18_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_55",
+    "apiId": "hero_45",
     "name": "Alexis Sánchez",
     "position": "LW/ST",
     "club": "Arsenal",
@@ -1727,18 +2189,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Alexis_S%C3%A1nchez_2017.jpg/330px-Alexis_S%C3%A1nchez_2017.jpg"
   },
   {
-    "apiId": "hero_56",
-    "name": "Miroslav Klose",
-    "position": "ST",
-    "club": "SS Lazio",
-    "nation": "Germany",
-    "tier": "HERO",
-    "isLegend": true,
-    "kitNumber": 11,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2016209185719_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0149_-_DV3P4742_mod.jpg/330px-2016209185719_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0149_-_DV3P4742_mod.jpg"
-  },
-  {
-    "apiId": "hero_57",
+    "apiId": "hero_46",
     "name": "Ivan Rakitić",
     "position": "CM/CAM",
     "club": "FC Barcelona",
@@ -1749,7 +2200,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Ivan_Rakiti%C4%87_2020_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_58",
+    "apiId": "hero_47",
     "name": "Dimitar Berbatov",
     "position": "ST",
     "club": "Manchester United",
@@ -1760,7 +2211,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dimitar_Berbatov_-_53689576017.jpg/330px-Dimitar_Berbatov_-_53689576017.jpg"
   },
   {
-    "apiId": "hero_59",
+    "apiId": "hero_48",
     "name": "Jermain Defoe",
     "position": "ST",
     "club": "Tottenham Hotspur",
@@ -1771,7 +2222,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Jermain-Defoe_%28cropped%29.jpg/330px-Jermain-Defoe_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_60",
+    "apiId": "hero_49",
     "name": "Pedro Rodríguez",
     "position": "RW/LW",
     "club": "FC Barcelona",
@@ -1782,7 +2233,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg/330px-Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg"
   },
   {
-    "apiId": "hero_61",
+    "apiId": "hero_50",
     "name": "Juan Mata",
     "position": "CAM/RM",
     "club": "Chelsea",
@@ -1793,7 +2244,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Juan_Mata_Melbourne_Victory_Signing_Press_Conference_%28cropped%29.png/330px-Juan_Mata_Melbourne_Victory_Signing_Press_Conference_%28cropped%29.png"
   },
   {
-    "apiId": "hero_62",
+    "apiId": "hero_51",
     "name": "Blaise Matuidi",
     "position": "CM/CDM",
     "club": "Paris Saint-Germain",
@@ -1804,7 +2255,7 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Matuidi_PSG.jpg/330px-Matuidi_PSG.jpg"
   },
   {
-    "apiId": "hero_63",
+    "apiId": "hero_52",
     "name": "Sami Khedira",
     "position": "CM/CDM",
     "club": "Real Madrid",
@@ -1813,5 +2264,786 @@
     "isLegend": true,
     "kitNumber": 6,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sami_Khedira_-_Juventus_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_53",
+    "name": "Dirk Kuyt",
+    "position": "RW/ST",
+    "club": "Liverpool",
+    "nation": "Netherlands",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 18,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Dirk_Kuyt_Fenerbah%C3%A7e_20260805_%281%29_%28cropped%29.JPG/330px-Dirk_Kuyt_Fenerbah%C3%A7e_20260805_%281%29_%28cropped%29.JPG"
+  },
+  {
+    "apiId": "hero_54",
+    "name": "Tim Cahill",
+    "position": "CAM/ST",
+    "club": "Everton",
+    "nation": "Australia",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 17,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Tim_Cahill_%2853557484101%29.jpg/330px-Tim_Cahill_%2853557484101%29.jpg"
+  },
+  {
+    "apiId": "hero_55",
+    "name": "Landon Donovan",
+    "position": "CAM/RM",
+    "club": "LA Galaxy",
+    "nation": "United States",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/NC_Courage_vs_SD_Wave_%28Oct_2024%29_045.jpg/330px-NC_Courage_vs_SD_Wave_%28Oct_2024%29_045.jpg"
+  },
+  {
+    "apiId": "hero_56",
+    "name": "Clint Dempsey",
+    "position": "CF/CAM",
+    "club": "Fulham",
+    "nation": "United States",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 23,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg/330px-Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_57",
+    "name": "Claudio Marchisio",
+    "position": "CM/CDM",
+    "club": "Juventus",
+    "nation": "Italy",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/FC_Zenit_Saint_Petersburg_vs._Juventus%2C_20_October_2021_32_-_Claudio_Marchisio_%28cropped%29.jpg/330px-FC_Zenit_Saint_Petersburg_vs._Juventus%2C_20_October_2021_32_-_Claudio_Marchisio_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_58",
+    "name": "Antonio Di Natale",
+    "position": "ST/CF",
+    "club": "Udinese",
+    "nation": "Italy",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Antonio_di_natale.JPG"
+  },
+  {
+    "apiId": "hero_59",
+    "name": "Joe Cole",
+    "position": "CAM/RW",
+    "club": "Chelsea",
+    "nation": "England",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Joe_Cole2023.jpeg/330px-Joe_Cole2023.jpeg"
+  },
+  {
+    "apiId": "hero_60",
+    "name": "Peter Crouch",
+    "position": "ST",
+    "club": "Stoke City",
+    "nation": "England",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 25,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Chelsea_3_Stoke_0_%2813677350585%29_-_Peter_Crouch_%28cropped%29.jpg/330px-Chelsea_3_Stoke_0_%2813677350585%29_-_Peter_Crouch_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_61",
+    "name": "Ledley King",
+    "position": "CB",
+    "club": "Tottenham Hotspur",
+    "nation": "England",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 26,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ledley_King.jpg"
+  },
+  {
+    "apiId": "hero_62",
+    "name": "Ole Gunnar Solskjær",
+    "position": "ST/CF",
+    "club": "Manchester United",
+    "nation": "Norway",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 20,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ole_Gunnar_Solskjaer_Trondheim2011-1_crop.jpg/330px-Ole_Gunnar_Solskjaer_Trondheim2011-1_crop.jpg"
+  },
+  {
+    "apiId": "hero_63",
+    "name": "Dwight Yorke",
+    "position": "ST",
+    "club": "Manchester United",
+    "nation": "Trinidad and Tobago",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 19,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dwight_Yorke_in_Chennai.jpg/330px-Dwight_Yorke_in_Chennai.jpg"
+  },
+  {
+    "apiId": "hero_64",
+    "name": "Andy Cole",
+    "position": "ST",
+    "club": "Manchester United",
+    "nation": "England",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Andy_Cole_in_2014.jpg/330px-Andy_Cole_in_2014.jpg"
+  },
+  {
+    "apiId": "hero_65",
+    "name": "Ian Wright",
+    "position": "ST",
+    "club": "Arsenal",
+    "nation": "England",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg/330px-Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_66",
+    "name": "Tony Adams",
+    "position": "CB",
+    "club": "Arsenal",
+    "nation": "England",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 6,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tony_Adams_2017_portrait_%28cropped%29.jpg/330px-Tony_Adams_2017_portrait_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_67",
+    "name": "Pablo Zabaleta",
+    "position": "RB",
+    "club": "Manchester City",
+    "nation": "Argentina",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 5,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hertha_BSC_vs._West_Ham_United_20190731_%28127%29.jpg/330px-Hertha_BSC_vs._West_Ham_United_20190731_%28127%29.jpg"
+  },
+  {
+    "apiId": "hero_68",
+    "name": "Guti",
+    "position": "CAM/CM",
+    "club": "Real Madrid",
+    "nation": "Spain",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 14,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/JM_Guti.jpg/330px-JM_Guti.jpg"
+  },
+  {
+    "apiId": "hero_69",
+    "name": "Míchel Salgado",
+    "position": "RB",
+    "club": "Real Madrid",
+    "nation": "Spain",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 2,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/M%C3%ADchel_Salgado_2018.jpg/330px-M%C3%ADchel_Salgado_2018.jpg"
+  },
+  {
+    "apiId": "hero_70",
+    "name": "Iván Córdoba",
+    "position": "CB",
+    "club": "Inter Milan",
+    "nation": "Colombia",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 2,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ivan_Cordoba_-_Inter_Mailand_%281%29.jpg/330px-Ivan_Cordoba_-_Inter_Mailand_%281%29.jpg"
+  },
+  {
+    "apiId": "hero_71",
+    "name": "Marco Materazzi",
+    "position": "CB",
+    "club": "Inter Milan",
+    "nation": "Italy",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 23,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Marco_Materazzi_2020.jpg/330px-Marco_Materazzi_2020.jpg"
+  },
+  {
+    "apiId": "hero_72",
+    "name": "Dejan Stanković",
+    "position": "CM/CAM",
+    "club": "Inter Milan",
+    "nation": "Serbia",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 5,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Dejan_Stankovi%C4%87_in_2025.jpg/330px-Dejan_Stankovi%C4%87_in_2025.jpg"
+  },
+  {
+    "apiId": "hero_73",
+    "name": "Esteban Cambiasso",
+    "position": "CDM/CM",
+    "club": "Inter Milan",
+    "nation": "Argentina",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 19,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Esteban_Cambiasso_FC_Internazionale.jpg/330px-Esteban_Cambiasso_FC_Internazionale.jpg"
+  },
+  {
+    "apiId": "hero_74",
+    "name": "Walter Samuel",
+    "position": "CB",
+    "club": "Inter Milan",
+    "nation": "Argentina",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 25,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Walter_Samuel_FC_Internazionale.jpg/330px-Walter_Samuel_FC_Internazionale.jpg"
+  },
+  {
+    "apiId": "hero_75",
+    "name": "Jakub Błaszczykowski",
+    "position": "RM/RW",
+    "club": "Borussia Dortmund",
+    "nation": "Poland",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 16,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Jakub_B%C5%82aszczykowski_2019.jpg"
+  },
+  {
+    "apiId": "hero_76",
+    "name": "Łukasz Piszczek",
+    "position": "RB",
+    "club": "Borussia Dortmund",
+    "nation": "Poland",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 26,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%C5%81ukasz_Piszczek_2020.jpg/330px-%C5%81ukasz_Piszczek_2020.jpg"
+  },
+  {
+    "apiId": "hero_77",
+    "name": "Claudio Pizarro",
+    "position": "ST",
+    "club": "Werder Bremen",
+    "nation": "Peru",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 14,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Pizarro_training_FC_Bayern_%28cropped%29.jpg/330px-Pizarro_training_FC_Bayern_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_78",
+    "name": "Giovane Élber",
+    "position": "ST",
+    "club": "Bayern Munich",
+    "nation": "Brazil",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Giovane_%C3%89lber_Champions_for_Charity_2022_%28cropped%29.jpg/330px-Giovane_%C3%89lber_Champions_for_Charity_2022_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_79",
+    "name": "Roy Makaay",
+    "position": "ST",
+    "club": "Bayern Munich",
+    "nation": "Netherlands",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Roy_Makaay_001.jpg/330px-Roy_Makaay_001.jpg"
+  },
+  {
+    "apiId": "hero_80",
+    "name": "Bixente Lizarazu",
+    "position": "LB",
+    "club": "Bayern Munich",
+    "nation": "France",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 3,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bixente_Lizarazu_%28cropped%29.jpg/330px-Bixente_Lizarazu_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_81",
+    "name": "Sami Hyypiä",
+    "position": "CB",
+    "club": "Liverpool",
+    "nation": "Finland",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 4,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Sami_Hyypia_2012_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_82",
+    "name": "John Arne Riise",
+    "position": "LB/LM",
+    "club": "Liverpool",
+    "nation": "Norway",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 6,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/John_Arne_Riise_-_53492829703.jpg/330px-John_Arne_Riise_-_53492829703.jpg"
+  },
+  {
+    "apiId": "hero_83",
+    "name": "Jan Koller",
+    "position": "ST",
+    "club": "Borussia Dortmund",
+    "nation": "Czech Republic",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jan_Koller_2019.jpg/330px-Jan_Koller_2019.jpg"
+  },
+  {
+    "apiId": "hero_84",
+    "name": "Karel Poborský",
+    "position": "RM/RW",
+    "club": "SS Lazio",
+    "nation": "Czech Republic",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Karel_Poborsk%C3%BD_%282012%29.jpg/330px-Karel_Poborsk%C3%BD_%282012%29.jpg"
+  },
+  {
+    "apiId": "hero_85",
+    "name": "Hakan Şükür",
+    "position": "ST",
+    "club": "Galatasaray",
+    "nation": "Turkey",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hakan.jpg/330px-Hakan.jpg"
+  },
+  {
+    "apiId": "hero_86",
+    "name": "Nihat Kahveci",
+    "position": "ST/RW",
+    "club": "Villarreal CF",
+    "nation": "Turkey",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 15,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/AUT_vs._TUR_2016-03-29_%28186%29.jpg/330px-AUT_vs._TUR_2016-03-29_%28186%29.jpg"
+  },
+  {
+    "apiId": "hero_87",
+    "name": "Rüştü Reçber",
+    "position": "GK",
+    "club": "Fenerbahçe",
+    "nation": "Turkey",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 1,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Rustu_Recber_2010.jpg/330px-Rustu_Recber_2010.jpg"
+  },
+  {
+    "apiId": "hero_88",
+    "name": "Asamoah Gyan",
+    "position": "ST",
+    "club": "Rennes",
+    "nation": "Ghana",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 3,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Asamoah_Gyan_%282014%29.jpg/330px-Asamoah_Gyan_%282014%29.jpg"
+  },
+  {
+    "apiId": "hero_89",
+    "name": "Mustapha Hadji",
+    "position": "CAM",
+    "club": "Coventry City",
+    "nation": "Morocco",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mustapha_Hadji.jpg/330px-Mustapha_Hadji.jpg"
+  },
+  {
+    "apiId": "hero_90",
+    "name": "Sami Al-Jaber",
+    "position": "ST",
+    "club": "Al-Hilal",
+    "nation": "Saudi Arabia",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sami09.JPG/330px-Sami09.JPG"
+  },
+  {
+    "apiId": "hero_91",
+    "name": "Saeed Al-Owairan",
+    "position": "CAM/RW",
+    "club": "Al-Shabab",
+    "nation": "Saudi Arabia",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Saeed_Al-Owairan_at_the_2025_RSFF.jpg"
+  },
+  {
+    "apiId": "hero_92",
+    "name": "Ali Daei",
+    "position": "ST",
+    "club": "Bayern Munich",
+    "nation": "Iran",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Ali_Daei%2C_Saipa_vs._Al-Rayyan_pre-match_conference.jpg/330px-Ali_Daei%2C_Saipa_vs._Al-Rayyan_pre-match_conference.jpg"
+  },
+  {
+    "apiId": "hero_93",
+    "name": "Mehdi Mahdavikia",
+    "position": "RM/RB",
+    "club": "Hamburger SV",
+    "nation": "Iran",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 2,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Mehdi_Mahdavikia_02_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_94",
+    "name": "Keisuke Honda",
+    "position": "CAM/RW",
+    "club": "AC Milan",
+    "nation": "Japan",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Keisuke_Honda_2018_%28cropped%29_%28cropped%29.jpg/330px-Keisuke_Honda_2018_%28cropped%29_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_95",
+    "name": "Shinji Kagawa",
+    "position": "CAM",
+    "club": "Borussia Dortmund",
+    "nation": "Japan",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 23,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Shinji_Kagawa_2018_%28cropped%29.jpg/330px-Shinji_Kagawa_2018_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_96",
+    "name": "Ahn Jung-hwan",
+    "position": "CF/ST",
+    "club": "Perugia",
+    "nation": "South Korea",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 19,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ahn_Jung-hwan_in_November_2021.png/330px-Ahn_Jung-hwan_in_November_2021.png"
+  },
+  {
+    "apiId": "hero_97",
+    "name": "Tim Howard",
+    "position": "GK",
+    "club": "Everton",
+    "nation": "United States",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 24,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Tim_Howard_2023.jpg/330px-Tim_Howard_2023.jpg"
+  },
+  {
+    "apiId": "hero_98",
+    "name": "Iván Zamorano",
+    "position": "ST",
+    "club": "Inter Milan",
+    "nation": "Chile",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 18,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Iv%C3%A1n_Zamorano.jpg/330px-Iv%C3%A1n_Zamorano.jpg"
+  },
+  {
+    "apiId": "hero_99",
+    "name": "Marcelo Salas",
+    "position": "ST",
+    "club": "SS Lazio",
+    "nation": "Chile",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Marcelo_Salas_2015.jpg"
+  },
+  {
+    "apiId": "hero_100",
+    "name": "Álvaro Recoba",
+    "position": "CAM/ST",
+    "club": "Inter Milan",
+    "nation": "Uruguay",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 20,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%C3%81lvaro_Chino_Recoba_120520-1175-jikatu_%28cropped%29.jpg/330px-%C3%81lvaro_Chino_Recoba_120520-1175-jikatu_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_101",
+    "name": "Javier Saviola",
+    "position": "ST/CF",
+    "club": "FC Barcelona",
+    "nation": "Argentina",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 7,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Javier_Saviola_-_S.L._Benfica_player.jpg/330px-Javier_Saviola_-_S.L._Benfica_player.jpg"
+  },
+  {
+    "apiId": "hero_102",
+    "name": "Diego Milito",
+    "position": "ST",
+    "club": "Inter Milan",
+    "nation": "Argentina",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 22,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Diego_Milito_%2822677058983%29_%28cropped%29.jpg/330px-Diego_Milito_%2822677058983%29_%28cropped%29.jpg"
+  },
+  {
+    "apiId": "hero_103",
+    "name": "Abedi Pele",
+    "position": "CAM/RW",
+    "club": "Marseille",
+    "nation": "Ghana",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Abedi_Pele_2007.jpg"
+  },
+  {
+    "apiId": "hero_104",
+    "name": "David Ginola",
+    "position": "LM/CAM",
+    "club": "Paris Saint-Germain",
+    "nation": "France",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 14,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/David_Ginola_Deauville_2014_2.jpg/330px-David_Ginola_Deauville_2014_2.jpg"
+  },
+  {
+    "apiId": "hero_105",
+    "name": "Gianluca Vialli",
+    "position": "ST",
+    "club": "Juventus",
+    "nation": "Italy",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Gianluca_Vialli.jpg/330px-Gianluca_Vialli.jpg"
+  },
+  {
+    "apiId": "hero_106",
+    "name": "Fernando Morientes",
+    "position": "ST",
+    "club": "Real Madrid",
+    "nation": "Spain",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Fernando_Morientes_-_53822470816.jpg/330px-Fernando_Morientes_-_53822470816.jpg"
+  },
+  {
+    "apiId": "hero_107",
+    "name": "Joan Capdevila",
+    "position": "LB",
+    "club": "Villarreal CF",
+    "nation": "Spain",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Joan_Capdevila_2013_Catalonia.jpg/330px-Joan_Capdevila_2013_Catalonia.jpg"
+  },
+  {
+    "apiId": "hero_108",
+    "name": "Steve McManaman",
+    "position": "RM/CAM",
+    "club": "Real Madrid",
+    "nation": "England",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/1_steve_mcmanaman_2017_%28cropped%29.jpg/330px-1_steve_mcmanaman_2017_%28cropped%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_109",
+    "name": "Robbie Keane",
+    "position": "ST/CF",
+    "club": "Tottenham Hotspur",
+    "nation": "Ireland",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2013_Robbie_Keane_%28cropped%29.jpg/330px-2013_Robbie_Keane_%28cropped%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_110",
+    "name": "Nwankwo Kanu",
+    "position": "ST/CF",
+    "club": "Arsenal",
+    "nation": "Nigeria",
+    "isLegend": true,
+    "kitNumber": 25,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/1_nwankwo_kanu_2017_%28edited%29.jpg/330px-1_nwankwo_kanu_2017_%28edited%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_111",
+    "name": "Ludovic Giuly",
+    "position": "RW",
+    "club": "AS Monaco",
+    "nation": "France",
+    "isLegend": true,
+    "kitNumber": 8,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Ludovic_GIULY_-_AS_Monaco_%28cropped%29.jpg/330px-Ludovic_GIULY_-_AS_Monaco_%28cropped%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_112",
+    "name": "Sidney Govou",
+    "position": "RW/ST",
+    "club": "Olympique Lyonnais",
+    "nation": "France",
+    "isLegend": true,
+    "kitNumber": 14,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/KL_2018_%2816%29.jpg/330px-KL_2018_%2816%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_113",
+    "name": "Tomas Brolin",
+    "position": "ST/CAM",
+    "club": "Parma",
+    "nation": "Sweden",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Tomas_Brolin.jpg/330px-Tomas_Brolin.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_114",
+    "name": "Lars Ricken",
+    "position": "CAM/RM",
+    "club": "Borussia Dortmund",
+    "nation": "Germany",
+    "isLegend": true,
+    "kitNumber": 18,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/10._Tag_der_Legenden_2014_55.JPG/330px-10._Tag_der_Legenden_2014_55.JPG",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_115",
+    "name": "Włodzimierz Smolarek",
+    "position": "ST/LW",
+    "club": "Feyenoord",
+    "nation": "Poland",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/W%C5%82odzimierz_Smolarek_by_S%C5%82awek.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_116",
+    "name": "Jorge Campos",
+    "position": "GK/ST",
+    "club": "UNAM",
+    "nation": "Mexico",
+    "isLegend": true,
+    "kitNumber": 1,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Jorge_Campos_in_2016.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_117",
+    "name": "Ramires",
+    "position": "CM/CDM",
+    "club": "Chelsea",
+    "nation": "Brazil",
+    "isLegend": true,
+    "kitNumber": 7,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Chelsea_1_Man_City_1_%2816413207122%29.jpg/330px-Chelsea_1_Man_City_1_%2816413207122%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_118",
+    "name": "Jerzy Dudek",
+    "position": "GK",
+    "club": "Liverpool",
+    "nation": "Poland",
+    "isLegend": true,
+    "kitNumber": 1,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Jerzy_Dudek_%28cropped%29.jpg/330px-Jerzy_Dudek_%28cropped%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_119",
+    "name": "Paulo Wanchope",
+    "position": "ST",
+    "club": "Derby County",
+    "nation": "Costa Rica",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Paulo_Wanchope_%28cropped%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_120",
+    "name": "Cuauhtémoc Blanco",
+    "position": "CAM/ST",
+    "club": "Club América",
+    "nation": "Mexico",
+    "isLegend": true,
+    "kitNumber": 10,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Cuauht%C3%A9moc_Blanco_MORELOS_%28cropped%29.jpg/330px-Cuauht%C3%A9moc_Blanco_MORELOS_%28cropped%29.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_121",
+    "name": "Zbigniew Boniek",
+    "position": "CAM/ST",
+    "club": "Juventus",
+    "nation": "Poland",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Zbigniew_Boniek_2015.jpg/330px-Zbigniew_Boniek_2015.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_122",
+    "name": "Ciro Ferrara",
+    "position": "CB",
+    "club": "Juventus",
+    "nation": "Italy",
+    "isLegend": true,
+    "kitNumber": 2,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ciro_Ferrara.jpg/330px-Ciro_Ferrara.jpg",
+    "tier": "HERO"
+  },
+  {
+    "apiId": "hero_123",
+    "name": "Giuseppe Bergomi",
+    "position": "CB/RB",
+    "club": "Inter Milan",
+    "nation": "Italy",
+    "isLegend": true,
+    "kitNumber": 2,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Giuseppe_Bergomi.jpg/330px-Giuseppe_Bergomi.jpg",
+    "tier": "HERO"
   }
 ]

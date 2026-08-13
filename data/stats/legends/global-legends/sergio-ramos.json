@@ -1,0 +1,72 @@
+{
+  "apiId": 26,
+  "name": "Sergio Ramos",
+  "clubs": [
+    {
+      "club": "Sevilla Atlético",
+      "appearances": 26,
+      "goals": 2
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 87,
+      "goals": 10
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 671,
+      "goals": 101
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 58,
+      "goals": 6
+    },
+    {
+      "club": "Monterrey",
+      "appearances": 34,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Team",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Spain U16",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Spain U17",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Spain U19",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "team": "Spain U21",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Spain",
+      "appearances": 180,
+      "goals": 23
+    }
+  ],
+  "careerTotal": {
+    "appearances": 876,
+    "goals": 127
+  }
+}

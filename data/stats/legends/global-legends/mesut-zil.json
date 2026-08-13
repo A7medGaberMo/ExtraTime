@@ -1,0 +1,52 @@
+{
+  "apiId": 3,
+  "name": "Mesut Özil",
+  "clubs": [
+    {
+      "club": "Schalke 04 II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 39,
+      "goals": 1
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 108,
+      "goals": 17
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 159,
+      "goals": 27
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 254,
+      "goals": 44
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 37,
+      "goals": 9
+    },
+    {
+      "club": "İstanbul Başakşehir",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 92,
+      "goals": 23
+    }
+  ],
+  "careerTotal": {
+    "appearances": 605,
+    "goals": 98
+  }
+}

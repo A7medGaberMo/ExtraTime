@@ -1,0 +1,47 @@
+{
+  "apiId": 120,
+  "name": "Dragan Stojković",
+  "clubs": [
+    {
+      "club": "Radnički Niš",
+      "appearances": 70,
+      "goals": 0
+    },
+    {
+      "club": "Red Star Belgrade",
+      "appearances": 120,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Verona",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Nagoya Grampus Eight",
+      "appearances": 184,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "SFR Yugoslavia",
+      "appearances": 41,
+      "goals": 9
+    },
+    {
+      "team": "FR Yugoslavia",
+      "appearances": 127,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 422,
+    "goals": 0
+  }
+}

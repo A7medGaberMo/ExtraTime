@@ -1,0 +1,32 @@
+{
+  "apiId": 2541,
+  "name": "Pedro",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 93,
+      "goals": 31
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 285,
+      "goals": 150
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 382,
+    "goals": 181
+  }
+}

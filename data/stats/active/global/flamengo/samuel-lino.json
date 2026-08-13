@@ -1,0 +1,42 @@
+{
+  "apiId": 10640,
+  "name": "Samuel Lino",
+  "clubs": [
+    {
+      "club": "São Bernardo",
+      "appearances": 23,
+      "goals": 4
+    },
+    {
+      "club": "Gil Vicente",
+      "appearances": 101,
+      "goals": 27
+    },
+    {
+      "club": "Valencia",
+      "appearances": 41,
+      "goals": 8
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 93,
+      "goals": 12
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 67,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 325,
+    "goals": 62
+  }
+}

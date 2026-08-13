@@ -1,0 +1,27 @@
+{
+  "apiId": 115,
+  "name": "Uwe Seeler",
+  "clubs": [
+    {
+      "club": "Hamburger SV",
+      "appearances": 580,
+      "goals": 491
+    },
+    {
+      "club": "Cork Celtic",
+      "appearances": 1,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "West Germany",
+      "appearances": 72,
+      "goals": 43
+    }
+  ],
+  "careerTotal": {
+    "appearances": 581,
+    "goals": 493
+  }
+}

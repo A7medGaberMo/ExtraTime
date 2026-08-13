@@ -1,0 +1,62 @@
+{
+  "apiId": 71,
+  "name": "Marco Materazzi",
+  "clubs": [
+    {
+      "club": "Messina",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Tor di Quinto",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Marsala",
+      "appearances": 25,
+      "goals": 4
+    },
+    {
+      "club": "Trapani",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Perugia",
+      "appearances": 107,
+      "goals": 22
+    },
+    {
+      "club": "Carpi",
+      "appearances": 18,
+      "goals": 7
+    },
+    {
+      "club": "Everton",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 280,
+      "goals": 20
+    },
+    {
+      "club": "Chennaiyin",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 41,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 496,
+    "goals": 57
+  }
+}

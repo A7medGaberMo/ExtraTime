@@ -1,0 +1,47 @@
+{
+  "apiId": 28,
+  "name": "Wesley Sneijder",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 180,
+      "goals": 58
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 66,
+      "goals": 11
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 116,
+      "goals": 22
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 173,
+      "goals": 46
+    },
+    {
+      "club": "Nice",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Al-Gharafa",
+      "appearances": 30,
+      "goals": 19
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 124,
+      "goals": 31
+    }
+  ],
+  "careerTotal": {
+    "appearances": 573,
+    "goals": 156
+  }
+}

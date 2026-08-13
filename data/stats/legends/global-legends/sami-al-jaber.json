@@ -1,0 +1,27 @@
+{
+  "apiId": 90,
+  "name": "Sami Al-Jaber",
+  "clubs": [
+    {
+      "club": "Al-Hilal",
+      "appearances": 270,
+      "goals": 0
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia",
+      "appearances": 156,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 274,
+    "goals": 0
+  }
+}

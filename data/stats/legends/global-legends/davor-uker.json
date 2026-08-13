@@ -1,0 +1,57 @@
+{
+  "apiId": 101,
+  "name": "Davor Šuker",
+  "clubs": [
+    {
+      "club": "Osijek",
+      "appearances": 91,
+      "goals": 40
+    },
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 68,
+      "goals": 39
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 177,
+      "goals": 90
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 109,
+      "goals": 49
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 39,
+      "goals": 11
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 43,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Yugoslavia",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Croatia",
+      "appearances": 68,
+      "goals": 45
+    }
+  ],
+  "careerTotal": {
+    "appearances": 527,
+    "goals": 240
+  }
+}

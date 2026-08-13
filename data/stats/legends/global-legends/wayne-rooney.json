@@ -1,0 +1,37 @@
+{
+  "apiId": 37,
+  "name": "Wayne Rooney",
+  "clubs": [
+    {
+      "club": "Everton",
+      "appearances": 117,
+      "goals": 28
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 559,
+      "goals": 253
+    },
+    {
+      "club": "D.C. United",
+      "appearances": 52,
+      "goals": 25
+    },
+    {
+      "club": "Derby County",
+      "appearances": 35,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 120,
+      "goals": 53
+    }
+  ],
+  "careerTotal": {
+    "appearances": 763,
+    "goals": 313
+  }
+}

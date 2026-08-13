@@ -1,0 +1,42 @@
+{
+  "apiId": 52,
+  "name": "Sami Khedira",
+  "clubs": [
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Juventus",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 47,
+    "goals": 0
+  }
+}

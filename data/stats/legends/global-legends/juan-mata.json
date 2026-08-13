@@ -1,0 +1,57 @@
+{
+  "apiId": 50,
+  "name": "Juan Mata",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 39,
+      "goals": 9
+    },
+    {
+      "club": "Valencia",
+      "appearances": 174,
+      "goals": 46
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 135,
+      "goals": 33
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 285,
+      "goals": 51
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 18,
+      "goals": 3
+    },
+    {
+      "club": "Vissel Kobe",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Western Sydney Wanderers",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Melbourne Victory",
+      "appearances": 25,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 41,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 700,
+    "goals": 148
+  }
+}

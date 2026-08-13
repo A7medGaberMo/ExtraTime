@@ -1,0 +1,32 @@
+{
+  "apiId": 121,
+  "name": "Zbigniew Boniek",
+  "clubs": [
+    {
+      "club": "Widzew Łódź",
+      "appearances": 194,
+      "goals": 59
+    },
+    {
+      "club": "Juventus",
+      "appearances": 133,
+      "goals": 31
+    },
+    {
+      "club": "Roma",
+      "appearances": 92,
+      "goals": 23
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland",
+      "appearances": 80,
+      "goals": 24
+    }
+  ],
+  "careerTotal": {
+    "appearances": 419,
+    "goals": 113
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 1104,
+  "name": "Felipe Anderson",
+  "clubs": [
+    {
+      "club": "Santos",
+      "appearances": 106,
+      "goals": 9
+    },
+    {
+      "club": "Lazio",
+      "appearances": 326,
+      "goals": 58
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 73,
+      "goals": 12
+    },
+    {
+      "club": "Porto",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 101,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 616,
+    "goals": 87
+  }
+}

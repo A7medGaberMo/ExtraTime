@@ -1,0 +1,47 @@
+{
+  "apiId": 14,
+  "name": "Ángel Di María",
+  "clubs": [
+    {
+      "club": "Rosario Central",
+      "appearances": 80,
+      "goals": 20
+    },
+    {
+      "club": "Benfica",
+      "appearances": 217,
+      "goals": 51
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 190,
+      "goals": 36
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 32,
+      "goals": 4
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 295,
+      "goals": 92
+    },
+    {
+      "club": "Juventus",
+      "appearances": 40,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 145,
+      "goals": 31
+    }
+  ],
+  "careerTotal": {
+    "appearances": 854,
+    "goals": 211
+  }
+}

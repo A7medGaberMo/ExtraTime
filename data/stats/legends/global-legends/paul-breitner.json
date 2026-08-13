@@ -1,0 +1,32 @@
+{
+  "apiId": 114,
+  "name": "Paul Breitner",
+  "clubs": [
+    {
+      "club": "Bayern Munich",
+      "appearances": 347,
+      "goals": 109
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 100,
+      "goals": 10
+    },
+    {
+      "club": "Eintracht Braunschweig",
+      "appearances": 37,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 484,
+    "goals": 130
+  }
+}

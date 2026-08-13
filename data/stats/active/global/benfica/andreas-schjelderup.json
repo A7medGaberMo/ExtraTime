@@ -1,0 +1,32 @@
+{
+  "apiId": 27306,
+  "name": "Andreas Schjelderup",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 94,
+      "goals": 27
+    },
+    {
+      "club": "Benfica B",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Benfica",
+      "appearances": 89,
+      "goals": 16
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 188,
+    "goals": 44
+  }
+}

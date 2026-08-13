@@ -1,0 +1,52 @@
+{
+  "apiId": 78,
+  "name": "Giovane Élber",
+  "clubs": [
+    {
+      "club": "AC Milan",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Grasshoppers",
+      "appearances": 82,
+      "goals": 57
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 96,
+      "goals": 44
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 266,
+      "goals": 139
+    },
+    {
+      "club": "Lyon",
+      "appearances": 43,
+      "goals": 17
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 40,
+      "goals": 18
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 15,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 532,
+    "goals": 275
+  }
+}

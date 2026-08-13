@@ -1,0 +1,57 @@
+{
+  "apiId": 62,
+  "name": "Edgar Davids",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 185,
+      "goals": 32
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Juventus",
+      "appearances": 228,
+      "goals": 11
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 20,
+      "goals": 1
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 44,
+      "goals": 1
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Barnet",
+      "appearances": 39,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 74,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 576,
+    "goals": 47
+  }
+}

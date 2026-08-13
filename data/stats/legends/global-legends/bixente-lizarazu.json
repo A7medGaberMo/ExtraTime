@@ -1,0 +1,37 @@
+{
+  "apiId": 80,
+  "name": "Bixente Lizarazu",
+  "clubs": [
+    {
+      "club": "Bordeaux",
+      "appearances": 295,
+      "goals": 28
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 271,
+      "goals": 8
+    },
+    {
+      "club": "Marseille",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 97,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 599,
+    "goals": 36
+  }
+}

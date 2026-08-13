@@ -1,0 +1,87 @@
+{
+  "apiId": 40,
+  "name": "Rivaldo",
+  "clubs": [
+    {
+      "club": "Santa Cruz",
+      "appearances": 27,
+      "goals": 9
+    },
+    {
+      "club": "Mogi Mirim",
+      "appearances": 43,
+      "goals": 14
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 24,
+      "goals": 12
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 112,
+      "goals": 67
+    },
+    {
+      "club": "Deportivo La Coruña",
+      "appearances": 46,
+      "goals": 22
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 235,
+      "goals": 130
+    },
+    {
+      "club": "Milan",
+      "appearances": 40,
+      "goals": 8
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 95,
+      "goals": 43
+    },
+    {
+      "club": "AEK Athens",
+      "appearances": 44,
+      "goals": 15
+    },
+    {
+      "club": "Bunyodkor",
+      "appearances": 76,
+      "goals": 42
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 46,
+      "goals": 7
+    },
+    {
+      "club": "Kabuscorp",
+      "appearances": 21,
+      "goals": 11
+    },
+    {
+      "club": "São Caetano",
+      "appearances": 19,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 74,
+      "goals": 35
+    }
+  ],
+  "careerTotal": {
+    "appearances": 838,
+    "goals": 384
+  }
+}

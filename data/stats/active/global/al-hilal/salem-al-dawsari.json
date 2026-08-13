@@ -1,0 +1,27 @@
+{
+  "apiId": 25010,
+  "name": "Salem Al-Dawsari",
+  "clubs": [
+    {
+      "club": "Al Hilal",
+      "appearances": 500,
+      "goals": 142
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia",
+      "appearances": 114,
+      "goals": 27
+    }
+  ],
+  "careerTotal": {
+    "appearances": 501,
+    "goals": 142
+  }
+}

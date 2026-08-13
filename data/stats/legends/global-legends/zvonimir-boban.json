@@ -1,0 +1,42 @@
+{
+  "apiId": 121,
+  "name": "Zvonimir Boban",
+  "clubs": [
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 121,
+      "goals": 48
+    },
+    {
+      "club": "Bari",
+      "appearances": 17,
+      "goals": 2
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 255,
+      "goals": 31
+    },
+    {
+      "club": "Celta Vigo",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Yugoslavia",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Croatia",
+      "appearances": 49,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 399,
+    "goals": 81
+  }
+}

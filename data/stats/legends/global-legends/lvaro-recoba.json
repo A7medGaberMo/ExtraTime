@@ -1,0 +1,47 @@
+{
+  "apiId": 100,
+  "name": "Álvaro Recoba",
+  "clubs": [
+    {
+      "club": "Danubio",
+      "appearances": 65,
+      "goals": 21
+    },
+    {
+      "club": "Nacional",
+      "appearances": 144,
+      "goals": 44
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 261,
+      "goals": 72
+    },
+    {
+      "club": "Venezia",
+      "appearances": 19,
+      "goals": 11
+    },
+    {
+      "club": "Torino",
+      "appearances": 24,
+      "goals": 3
+    },
+    {
+      "club": "Panionios",
+      "appearances": 21,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 534,
+    "goals": 156
+  }
+}

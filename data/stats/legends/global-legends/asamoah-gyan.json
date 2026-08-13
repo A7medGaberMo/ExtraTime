@@ -1,0 +1,72 @@
+{
+  "apiId": 88,
+  "name": "Asamoah Gyan",
+  "clubs": [
+    {
+      "club": "Liberty Professionals",
+      "appearances": 16,
+      "goals": 10
+    },
+    {
+      "club": "Udinese",
+      "appearances": 40,
+      "goals": 11
+    },
+    {
+      "club": "Modena",
+      "appearances": 54,
+      "goals": 15
+    },
+    {
+      "club": "Rennes",
+      "appearances": 53,
+      "goals": 14
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 37,
+      "goals": 11
+    },
+    {
+      "club": "Al Ain",
+      "appearances": 123,
+      "goals": 128
+    },
+    {
+      "club": "Shanghai SIPG",
+      "appearances": 26,
+      "goals": 8
+    },
+    {
+      "club": "Shabab Al-Ahli",
+      "appearances": 26,
+      "goals": 11
+    },
+    {
+      "club": "Kayserispor",
+      "appearances": 34,
+      "goals": 9
+    },
+    {
+      "club": "NorthEast United",
+      "appearances": 8,
+      "goals": 4
+    },
+    {
+      "club": "Legon Cities",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Ghana",
+      "appearances": 109,
+      "goals": 51
+    }
+  ],
+  "careerTotal": {
+    "appearances": 424,
+    "goals": 221
+  }
+}

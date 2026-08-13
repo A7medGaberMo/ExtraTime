@@ -1,0 +1,47 @@
+{
+  "apiId": 139,
+  "name": "Miroslav Klose",
+  "clubs": [
+    {
+      "club": "FC 08 Homburg",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Kaiserslautern II",
+      "appearances": 50,
+      "goals": 26
+    },
+    {
+      "club": "1. FC Kaiserslautern",
+      "appearances": 147,
+      "goals": 52
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 132,
+      "goals": 63
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 150,
+      "goals": 53
+    },
+    {
+      "club": "Lazio",
+      "appearances": 170,
+      "goals": 63
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 137,
+      "goals": 71
+    }
+  ],
+  "careerTotal": {
+    "appearances": 667,
+    "goals": 258
+  }
+}

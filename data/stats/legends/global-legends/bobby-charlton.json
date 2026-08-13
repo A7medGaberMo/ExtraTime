@@ -1,0 +1,47 @@
+{
+  "apiId": 53,
+  "name": "Bobby Charlton",
+  "clubs": [
+    {
+      "club": "Manchester United",
+      "appearances": 758,
+      "goals": 249
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 45,
+      "goals": 10
+    },
+    {
+      "club": "Waterford United",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Newcastle KB United",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Perth Azzurri",
+      "appearances": 3,
+      "goals": 2
+    },
+    {
+      "club": "Blacktown City",
+      "appearances": 1,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 106,
+      "goals": 49
+    }
+  ],
+  "careerTotal": {
+    "appearances": 812,
+    "goals": 263
+  }
+}

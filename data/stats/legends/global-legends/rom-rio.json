@@ -1,0 +1,67 @@
+{
+  "apiId": 49,
+  "name": "Romário",
+  "clubs": [
+    {
+      "club": "Vasco da Gama",
+      "appearances": 349,
+      "goals": 266
+    },
+    {
+      "club": "PSV",
+      "appearances": 149,
+      "goals": 128
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 65,
+      "goals": 39
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 209,
+      "goals": 184
+    },
+    {
+      "club": "Valencia",
+      "appearances": 12,
+      "goals": 6
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 75,
+      "goals": 47
+    },
+    {
+      "club": "Al-Sadd",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Miami FC",
+      "appearances": 26,
+      "goals": 19
+    },
+    {
+      "club": "Adelaide United",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "America-RJ",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 70,
+      "goals": 55
+    }
+  ],
+  "careerTotal": {
+    "appearances": 893,
+    "goals": 690
+  }
+}

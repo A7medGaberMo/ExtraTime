@@ -1,0 +1,36 @@
+{
+  "apiId": 27301,
+  "name": "Enzo Millot",
+  "clubs": [
+    {
+      "club": "Monaco II",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "club": "Monaco",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 113,
+      "goals": 22
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 40,
+      "goals": 9
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 167,
+    "goals": 33
+  }
+}

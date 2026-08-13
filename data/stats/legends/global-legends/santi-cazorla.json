@@ -1,0 +1,47 @@
+{
+  "apiId": 44,
+  "name": "Santi Cazorla",
+  "clubs": [
+    {
+      "club": "Villarreal",
+      "appearances": 334,
+      "goals": 57
+    },
+    {
+      "club": "Recreativo Huelva",
+      "appearances": 34,
+      "goals": 5
+    },
+    {
+      "club": "Málaga",
+      "appearances": 42,
+      "goals": 9
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 180,
+      "goals": 29
+    },
+    {
+      "club": "Al Sadd",
+      "appearances": 97,
+      "goals": 39
+    },
+    {
+      "club": "Oviedo",
+      "appearances": 89,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 81,
+      "goals": 15
+    }
+  ],
+  "careerTotal": {
+    "appearances": 776,
+    "goals": 144
+  }
+}

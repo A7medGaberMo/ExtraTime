@@ -1,0 +1,32 @@
+{
+  "apiId": 1,
+  "name": "Pelé",
+  "clubs": [
+    {
+      "club": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Santos",
+      "appearances": 660,
+      "goals": 644
+    },
+    {
+      "club": "New York Cosmos",
+      "appearances": 107,
+      "goals": 66
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 767,
+    "goals": 710
+  }
+}

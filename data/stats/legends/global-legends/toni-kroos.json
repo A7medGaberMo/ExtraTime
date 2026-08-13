@@ -1,0 +1,37 @@
+{
+  "apiId": 27,
+  "name": "Toni Kroos",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 13,
+      "goals": 4
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 205,
+      "goals": 25
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 48,
+      "goals": 10
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 465,
+      "goals": 28
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 731,
+    "goals": 67
+  }
+}

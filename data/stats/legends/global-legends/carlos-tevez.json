@@ -1,0 +1,52 @@
+{
+  "apiId": 6,
+  "name": "Carlos Tevez",
+  "clubs": [
+    {
+      "club": "Boca Juniors",
+      "appearances": 279,
+      "goals": 94
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 76,
+      "goals": 46
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 29,
+      "goals": 7
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 99,
+      "goals": 34
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 148,
+      "goals": 73
+    },
+    {
+      "club": "Juventus",
+      "appearances": 95,
+      "goals": 50
+    },
+    {
+      "club": "Shanghai Shenhua",
+      "appearances": 20,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 76,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 746,
+    "goals": 308
+  }
+}

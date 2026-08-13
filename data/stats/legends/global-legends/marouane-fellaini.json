@@ -1,0 +1,37 @@
+{
+  "apiId": 18,
+  "name": "Marouane Fellaini",
+  "clubs": [
+    {
+      "club": "Standard Liège",
+      "appearances": 84,
+      "goals": 11
+    },
+    {
+      "club": "Everton",
+      "appearances": 177,
+      "goals": 33
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 177,
+      "goals": 22
+    },
+    {
+      "club": "Shandong Taishan",
+      "appearances": 141,
+      "goals": 51
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 87,
+      "goals": 18
+    }
+  ],
+  "careerTotal": {
+    "appearances": 579,
+    "goals": 117
+  }
+}

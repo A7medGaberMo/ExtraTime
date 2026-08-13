@@ -1,0 +1,42 @@
+{
+  "apiId": 112,
+  "name": "Juan Román Riquelme",
+  "clubs": [
+    {
+      "club": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 388,
+      "goals": 92
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 42,
+      "goals": 6
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 145,
+      "goals": 45
+    },
+    {
+      "club": "Argentinos Juniors",
+      "appearances": 21,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 51,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 596,
+    "goals": 150
+  }
+}

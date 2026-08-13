@@ -1,0 +1,42 @@
+{
+  "apiId": 752,
+  "name": "Malcom",
+  "clubs": [
+    {
+      "club": "Corinthians",
+      "appearances": 70,
+      "goals": 10
+    },
+    {
+      "club": "Bordeaux",
+      "appearances": 96,
+      "goals": 23
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 24,
+      "goals": 4
+    },
+    {
+      "club": "Zenit Saint Petersburg",
+      "appearances": 109,
+      "goals": 42
+    },
+    {
+      "club": "Al Hilal",
+      "appearances": 141,
+      "goals": 48
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 440,
+    "goals": 127
+  }
+}

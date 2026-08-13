@@ -1,0 +1,47 @@
+{
+  "apiId": 74,
+  "name": "Walter Samuel",
+  "clubs": [
+    {
+      "club": "Newell's Old Boys",
+      "appearances": 42,
+      "goals": 0
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 103,
+      "goals": 5
+    },
+    {
+      "club": "Roma",
+      "appearances": 173,
+      "goals": 12
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 40,
+      "goals": 2
+    },
+    {
+      "club": "Internazionale",
+      "appearances": 234,
+      "goals": 17
+    },
+    {
+      "club": "Basel",
+      "appearances": 45,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 56,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 637,
+    "goals": 39
+  }
+}

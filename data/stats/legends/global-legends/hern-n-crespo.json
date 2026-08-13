@@ -1,0 +1,52 @@
+{
+  "apiId": 66,
+  "name": "Hernán Crespo",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 84,
+      "goals": 36
+    },
+    {
+      "club": "Parma",
+      "appearances": 201,
+      "goals": 95
+    },
+    {
+      "club": "Lazio",
+      "appearances": 73,
+      "goals": 48
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 116,
+      "goals": 45
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 73,
+      "goals": 25
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 40,
+      "goals": 17
+    },
+    {
+      "club": "Genoa",
+      "appearances": 21,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 64,
+      "goals": 35
+    }
+  ],
+  "careerTotal": {
+    "appearances": 608,
+    "goals": 273
+  }
+}

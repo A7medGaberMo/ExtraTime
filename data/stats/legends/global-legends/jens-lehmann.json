@@ -1,0 +1,42 @@
+{
+  "apiId": 36,
+  "name": "Jens Lehmann",
+  "clubs": [
+    {
+      "club": "Schalke 04",
+      "appearances": 312,
+      "goals": 2
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 179,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 200,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 90,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 61,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 787,
+    "goals": 2
+  }
+}

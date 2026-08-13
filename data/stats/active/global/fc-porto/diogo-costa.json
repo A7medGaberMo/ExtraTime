@@ -1,0 +1,27 @@
+{
+  "apiId": 2146,
+  "name": "Diogo Costa",
+  "clubs": [
+    {
+      "club": "Porto B",
+      "appearances": 54,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 248,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 48,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 302,
+    "goals": 0
+  }
+}

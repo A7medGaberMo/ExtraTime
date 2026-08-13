@@ -1,0 +1,27 @@
+{
+  "apiId": 20,
+  "name": "Marco van Basten",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 174,
+      "goals": 154
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 205,
+      "goals": 128
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 58,
+      "goals": 24
+    }
+  ],
+  "careerTotal": {
+    "appearances": 379,
+    "goals": 282
+  }
+}

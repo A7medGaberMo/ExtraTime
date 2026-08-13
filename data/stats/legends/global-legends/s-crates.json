@@ -1,0 +1,47 @@
+{
+  "apiId": 57,
+  "name": "Sócrates",
+  "clubs": [
+    {
+      "club": "Botafogo-SP",
+      "appearances": 172,
+      "goals": 67
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 269,
+      "goals": 150
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 33,
+      "goals": 9
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "club": "Santos",
+      "appearances": 25,
+      "goals": 7
+    },
+    {
+      "club": "Garforth Town",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 60,
+      "goals": 22
+    }
+  ],
+  "careerTotal": {
+    "appearances": 513,
+    "goals": 236
+  }
+}

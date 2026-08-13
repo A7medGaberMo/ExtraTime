@@ -1,0 +1,82 @@
+{
+  "apiId": 41,
+  "name": "Samuel Eto'o",
+  "clubs": [
+    {
+      "club": "Leganés",
+      "appearances": 30,
+      "goals": 4
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 165,
+      "goals": 70
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 199,
+      "goals": 130
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 102,
+      "goals": 53
+    },
+    {
+      "club": "Anzhi Makhachkala",
+      "appearances": 73,
+      "goals": 36
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 35,
+      "goals": 12
+    },
+    {
+      "club": "Everton",
+      "appearances": 20,
+      "goals": 4
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 18,
+      "goals": 2
+    },
+    {
+      "club": "Antalyaspor",
+      "appearances": 77,
+      "goals": 44
+    },
+    {
+      "club": "Konyaspor",
+      "appearances": 18,
+      "goals": 6
+    },
+    {
+      "club": "Qatar SC",
+      "appearances": 23,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Cameroon",
+      "appearances": 119,
+      "goals": 56
+    }
+  ],
+  "careerTotal": {
+    "appearances": 768,
+    "goals": 371
+  }
+}

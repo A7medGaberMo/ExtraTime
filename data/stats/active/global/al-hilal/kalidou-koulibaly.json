@@ -1,0 +1,47 @@
+{
+  "apiId": 733,
+  "name": "Kalidou Koulibaly",
+  "clubs": [
+    {
+      "club": "Metz II",
+      "appearances": 31,
+      "goals": 2
+    },
+    {
+      "club": "Metz",
+      "appearances": 46,
+      "goals": 1
+    },
+    {
+      "club": "Genk",
+      "appearances": 92,
+      "goals": 3
+    },
+    {
+      "club": "Napoli",
+      "appearances": 317,
+      "goals": 14
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 32,
+      "goals": 2
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 126,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Senegal",
+      "appearances": 106,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 644,
+    "goals": 29
+  }
+}

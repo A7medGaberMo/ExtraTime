@@ -1,0 +1,47 @@
+{
+  "apiId": 117,
+  "name": "Ramires",
+  "clubs": [
+    {
+      "club": "Joinville",
+      "appearances": 14,
+      "goals": 3
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 109,
+      "goals": 25
+    },
+    {
+      "club": "Benfica",
+      "appearances": 42,
+      "goals": 5
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 251,
+      "goals": 34
+    },
+    {
+      "club": "Jiangsu Suning",
+      "appearances": 71,
+      "goals": 17
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 43,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 52,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 530,
+    "goals": 85
+  }
+}

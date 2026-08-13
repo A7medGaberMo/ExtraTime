@@ -1,0 +1,22 @@
+{
+  "apiId": 21,
+  "name": "Franco Baresi",
+  "clubs": [
+    {
+      "club": "AC Milan",
+      "appearances": 719,
+      "goals": 33
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 81,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 719,
+    "goals": 33
+  }
+}

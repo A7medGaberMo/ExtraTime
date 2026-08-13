@@ -1,0 +1,57 @@
+{
+  "apiId": 117,
+  "name": "Ian Rush",
+  "clubs": [
+    {
+      "club": "Chester",
+      "appearances": 39,
+      "goals": 18
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 660,
+      "goals": 346
+    },
+    {
+      "club": "Juventus",
+      "appearances": 40,
+      "goals": 13
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 42,
+      "goals": 3
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Wrexham",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Sydney Olympic",
+      "appearances": 2,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Wales",
+      "appearances": 73,
+      "goals": 28
+    }
+  ],
+  "careerTotal": {
+    "appearances": 828,
+    "goals": 383
+  }
+}

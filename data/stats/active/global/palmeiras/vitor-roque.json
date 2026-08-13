@@ -1,0 +1,42 @@
+{
+  "apiId": 342203,
+  "name": "Vitor Roque",
+  "clubs": [
+    {
+      "club": "Cruzeiro",
+      "appearances": 16,
+      "goals": 6
+    },
+    {
+      "club": "Athletico Paranaense",
+      "appearances": 81,
+      "goals": 28
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Betis",
+      "appearances": 33,
+      "goals": 7
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 79,
+      "goals": 26
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 225,
+    "goals": 69
+  }
+}

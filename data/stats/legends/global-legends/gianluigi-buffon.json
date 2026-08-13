@@ -1,0 +1,32 @@
+{
+  "apiId": 25,
+  "name": "Gianluigi Buffon",
+  "clubs": [
+    {
+      "club": "Parma",
+      "appearances": 265,
+      "goals": 0
+    },
+    {
+      "club": "Juventus",
+      "appearances": 685,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 25,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 176,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 975,
+    "goals": 0
+  }
+}

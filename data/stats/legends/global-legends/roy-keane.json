@@ -1,0 +1,37 @@
+{
+  "apiId": 79,
+  "name": "Roy Keane",
+  "clubs": [
+    {
+      "club": "Cobh Ramblers",
+      "appearances": 29,
+      "goals": 2
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 154,
+      "goals": 33
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 480,
+      "goals": 51
+    },
+    {
+      "club": "Celtic",
+      "appearances": 13,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Republic of Ireland",
+      "appearances": 67,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 676,
+    "goals": 87
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 2,
+  "name": "Giorgio Chiellini",
+  "clubs": [
+    {
+      "club": "Livorno",
+      "appearances": 68,
+      "goals": 4
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 42,
+      "goals": 3
+    },
+    {
+      "club": "Juventus",
+      "appearances": 561,
+      "goals": 36
+    },
+    {
+      "club": "Los Angeles FC",
+      "appearances": 45,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 117,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 716,
+    "goals": 44
+  }
+}

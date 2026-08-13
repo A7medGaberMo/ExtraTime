@@ -1,0 +1,22 @@
+{
+  "apiId": 7,
+  "name": "Paolo Maldini",
+  "clubs": [
+    {
+      "club": "AC Milan",
+      "appearances": 902,
+      "goals": 33
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 126,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 902,
+    "goals": 33
+  }
+}

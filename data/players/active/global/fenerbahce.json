@@ -15,7 +15,7 @@
       "nation": "Brazil",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Ederson_Brazil_V_Morocco_13_June_2026-14_%28cropped%29.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/617.png",
       "kitNumber": 31
     },
     {
@@ -26,7 +26,7 @@
       "nation": "Slovakia",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/SVK_vs._SMR_2024_Slovakia_Nr._14_Skriniar_%283%29_%28cropped%29.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/735.png",
       "kitNumber": 3
     },
     {
@@ -37,7 +37,7 @@
       "nation": "France",
       "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/N%27Golo_Kante_France_v_Senegal_16_June_2026-397.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/1205.png",
       "kitNumber": 7
     },
     {
@@ -48,7 +48,7 @@
       "nation": "Portugal",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Nelson_Semedo_Croatia_v_Portugal_2_July_2026-227.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/642.png",
       "kitNumber": 2
     },
     {
@@ -59,12 +59,12 @@
       "nation": "Turkey",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Rapid-Spartak_%2815%29_%28cropped%29.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/1636.png",
       "kitNumber": 18
     },
     {
       "apiId": 315,
-      "name": "E. Džeko",
+      "name": "Edin Džeko",
       "position": "ST",
       "club": "Fenerbahçe",
       "nation": "Bosnia",
@@ -75,7 +75,7 @@
     },
     {
       "apiId": 2289,
-      "name": "Y. En-Nesyri",
+      "name": "Youssef En-Nesyri",
       "position": "ST",
       "club": "Fenerbahçe",
       "nation": "Morocco",
@@ -86,7 +86,7 @@
     },
     {
       "apiId": 318,
-      "name": "D. Tadić",
+      "name": "Dušan Tadić",
       "position": "LW/CAM",
       "club": "Fenerbahçe",
       "nation": "Serbia",
@@ -108,7 +108,7 @@
     },
     {
       "apiId": 1618,
-      "name": "A. Saint-Maximin",
+      "name": "Allan Saint-Maximin",
       "position": "LM/LW",
       "club": "Fenerbahçe",
       "nation": "France",

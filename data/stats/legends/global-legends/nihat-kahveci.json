@@ -1,0 +1,32 @@
+{
+  "apiId": 86,
+  "name": "Nihat Kahveci",
+  "clubs": [
+    {
+      "club": "Beşiktaş",
+      "appearances": 173,
+      "goals": 40
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 145,
+      "goals": 59
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 78,
+      "goals": 25
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 396,
+    "goals": 124
+  }
+}

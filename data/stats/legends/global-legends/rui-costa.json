@@ -1,0 +1,37 @@
+{
+  "apiId": 60,
+  "name": "Rui Costa",
+  "clubs": [
+    {
+      "club": "Fafe",
+      "appearances": 38,
+      "goals": 6
+    },
+    {
+      "club": "Benfica",
+      "appearances": 178,
+      "goals": 30
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 276,
+      "goals": 50
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 192,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 94,
+      "goals": 26
+    }
+  ],
+  "careerTotal": {
+    "appearances": 684,
+    "goals": 97
+  }
+}

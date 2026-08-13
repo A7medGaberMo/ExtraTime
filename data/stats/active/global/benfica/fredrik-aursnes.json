@@ -1,0 +1,37 @@
+{
+  "apiId": 2487,
+  "name": "Fredrik Aursnes",
+  "clubs": [
+    {
+      "club": "Hødd",
+      "appearances": 120,
+      "goals": 12
+    },
+    {
+      "club": "Molde",
+      "appearances": 192,
+      "goals": 20
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 49,
+      "goals": 1
+    },
+    {
+      "club": "Benfica",
+      "appearances": 199,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 28,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 560,
+    "goals": 47
+  }
+}

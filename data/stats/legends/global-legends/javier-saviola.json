@@ -1,0 +1,62 @@
+{
+  "apiId": 101,
+  "name": "Javier Saviola",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 101,
+      "goals": 45
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 168,
+      "goals": 70
+    },
+    {
+      "club": "Monaco",
+      "appearances": 42,
+      "goals": 17
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 42,
+      "goals": 15
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 29,
+      "goals": 5
+    },
+    {
+      "club": "Benfica",
+      "appearances": 120,
+      "goals": 39
+    },
+    {
+      "club": "Málaga",
+      "appearances": 37,
+      "goals": 9
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 35,
+      "goals": 14
+    },
+    {
+      "club": "Verona",
+      "appearances": 16,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 39,
+      "goals": 11
+    }
+  ],
+  "careerTotal": {
+    "appearances": 590,
+    "goals": 216
+  }
+}

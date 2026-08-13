@@ -1,0 +1,52 @@
+{
+  "apiId": 98,
+  "name": "Dani Alves",
+  "clubs": [
+    {
+      "club": "Bahia",
+      "appearances": 37,
+      "goals": 5
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 250,
+      "goals": 16
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 408,
+      "goals": 22
+    },
+    {
+      "club": "Juventus",
+      "appearances": 33,
+      "goals": 6
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 73,
+      "goals": 8
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 95,
+      "goals": 10
+    },
+    {
+      "club": "UNAM",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 126,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 909,
+    "goals": 67
+  }
+}

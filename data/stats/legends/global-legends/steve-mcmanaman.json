@@ -1,0 +1,32 @@
+{
+  "apiId": 108,
+  "name": "Steve McManaman",
+  "clubs": [
+    {
+      "club": "Liverpool",
+      "appearances": 364,
+      "goals": 66
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 158,
+      "goals": 14
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 44,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 37,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 566,
+    "goals": 80
+  }
+}

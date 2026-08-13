@@ -1,0 +1,47 @@
+{
+  "apiId": 63,
+  "name": "Dwight Yorke",
+  "clubs": [
+    {
+      "club": "Aston Villa",
+      "appearances": 287,
+      "goals": 98
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 152,
+      "goals": 65
+    },
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 74,
+      "goals": 19
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Sydney FC",
+      "appearances": 24,
+      "goals": 8
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 62,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Trinidad and Tobago",
+      "appearances": 72,
+      "goals": 19
+    }
+  ],
+  "careerTotal": {
+    "appearances": 615,
+    "goals": 198
+  }
+}

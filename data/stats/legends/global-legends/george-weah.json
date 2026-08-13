@@ -1,0 +1,47 @@
+{
+  "apiId": 77,
+  "name": "George Weah",
+  "clubs": [
+    {
+      "club": "Monaco",
+      "appearances": 149,
+      "goals": 66
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 138,
+      "goals": 55
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 147,
+      "goals": 58
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 15,
+      "goals": 5
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 9,
+      "goals": 4
+    },
+    {
+      "club": "Marseille",
+      "appearances": 20,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Liberia",
+      "appearances": 75,
+      "goals": 18
+    }
+  ],
+  "careerTotal": {
+    "appearances": 478,
+    "goals": 193
+  }
+}

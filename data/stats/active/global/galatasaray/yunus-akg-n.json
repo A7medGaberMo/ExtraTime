@@ -1,0 +1,32 @@
+{
+  "apiId": 38166,
+  "name": "Yunus Akgün",
+  "clubs": [
+    {
+      "club": "Galatasaray",
+      "appearances": 147,
+      "goals": 28
+    },
+    {
+      "club": "Adana Demirspor",
+      "appearances": 70,
+      "goals": 16
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 29,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 21,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 246,
+    "goals": 46
+  }
+}

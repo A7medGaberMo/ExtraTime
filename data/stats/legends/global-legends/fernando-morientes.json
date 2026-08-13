@@ -1,0 +1,57 @@
+{
+  "apiId": 106,
+  "name": "Fernando Morientes",
+  "clubs": [
+    {
+      "club": "Albacete",
+      "appearances": 31,
+      "goals": 8
+    },
+    {
+      "club": "Zaragoza",
+      "appearances": 79,
+      "goals": 34
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 272,
+      "goals": 100
+    },
+    {
+      "club": "Monaco",
+      "appearances": 42,
+      "goals": 22
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 61,
+      "goals": 12
+    },
+    {
+      "club": "Valencia",
+      "appearances": 102,
+      "goals": 34
+    },
+    {
+      "club": "Marseille",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Santa Ana",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 47,
+      "goals": 27
+    }
+  ],
+  "careerTotal": {
+    "appearances": 609,
+    "goals": 211
+  }
+}

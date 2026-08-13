@@ -1,0 +1,62 @@
+{
+  "apiId": 107,
+  "name": "Jairzinho",
+  "clubs": [
+    {
+      "club": "Botafogo",
+      "appearances": 418,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Kaizer Chiefs",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Portuguesa (VEN)",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Noroeste",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Fast Clube",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Jorge Wilstermann",
+      "appearances": 26,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil Olympic",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Brazil",
+      "appearances": 81,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 530,
+    "goals": 0
+  }
+}

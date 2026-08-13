@@ -1,0 +1,67 @@
+{
+  "apiId": 82,
+  "name": "John Arne Riise",
+  "clubs": [
+    {
+      "club": "Aalesund",
+      "appearances": 39,
+      "goals": 6
+    },
+    {
+      "club": "Monaco 2",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "club": "Monaco",
+      "appearances": 64,
+      "goals": 7
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 348,
+      "goals": 31
+    },
+    {
+      "club": "Roma",
+      "appearances": 136,
+      "goals": 11
+    },
+    {
+      "club": "Fulham",
+      "appearances": 101,
+      "goals": 0
+    },
+    {
+      "club": "APOEL",
+      "appearances": 30,
+      "goals": 6
+    },
+    {
+      "club": "Delhi Dynamos",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Chennaiyin",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Rollon",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 110,
+      "goals": 16
+    }
+  ],
+  "careerTotal": {
+    "appearances": 754,
+    "goals": 65
+  }
+}

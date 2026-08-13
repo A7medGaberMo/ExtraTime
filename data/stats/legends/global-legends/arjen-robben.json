@@ -1,0 +1,42 @@
+{
+  "apiId": 94,
+  "name": "Arjen Robben",
+  "clubs": [
+    {
+      "club": "Groningen",
+      "appearances": 59,
+      "goals": 12
+    },
+    {
+      "club": "PSV",
+      "appearances": 75,
+      "goals": 21
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 106,
+      "goals": 19
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 65,
+      "goals": 13
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 309,
+      "goals": 144
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 96,
+      "goals": 37
+    }
+  ],
+  "careerTotal": {
+    "appearances": 614,
+    "goals": 209
+  }
+}

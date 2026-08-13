@@ -1,0 +1,32 @@
+{
+  "apiId": 116,
+  "name": "Jorge Campos",
+  "clubs": [
+    {
+      "club": "Club performance",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Mexico",
+      "appearances": 453,
+      "goals": 47
+    },
+    {
+      "club": "USA",
+      "appearances": 122,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 575,
+    "goals": 49
+  }
+}

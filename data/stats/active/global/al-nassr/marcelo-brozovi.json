@@ -1,0 +1,42 @@
+{
+  "apiId": 731,
+  "name": "Marcelo Brozović",
+  "clubs": [
+    {
+      "club": "Hrvatski Dragovoljac",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Lokomotiva",
+      "appearances": 34,
+      "goals": 6
+    },
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 99,
+      "goals": 13
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 330,
+      "goals": 31
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 129,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 99,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 615,
+    "goals": 59
+  }
+}

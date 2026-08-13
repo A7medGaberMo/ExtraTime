@@ -15,7 +15,7 @@
       "nation": "Nigeria",
       "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Victor-osimhen-nigeria-2024-3-4.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/1531.png",
       "kitNumber": 45
     },
     {
@@ -26,8 +26,8 @@
       "nation": "Argentina",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mauro_Icardi_en_2025.jpg",
-      "kitNumber": 99
+      "imageUrl": "https://media.api-sports.io/football/players/1478.png",
+      "kitNumber": 9
     },
     {
       "apiId": 635,
@@ -37,7 +37,7 @@
       "nation": "Germany",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Leroy_Sane_Ecuador_v_Germany_25_June_2026-119_%28cropped%29.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/635.png",
       "kitNumber": 19
     },
     {
@@ -48,7 +48,7 @@
       "nation": "Turkey",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz_20251019.jpg/3840px-Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz_20251019.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/27958.png",
       "kitNumber": 53
     },
     {
@@ -59,7 +59,7 @@
       "nation": "Uruguay",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lucas_Torreira_2019.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/114.png",
       "kitNumber": 34
     },
     {
@@ -70,7 +70,7 @@
       "nation": "Turkey",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Yunus_Akg%C3%BCn_20220225_7_%28cropped%29.jpg",
+      "imageUrl": "https://media.api-sports.io/football/players/38166.png",
       "kitNumber": 11
     },
     {
@@ -81,34 +81,12 @@
       "nation": "Turkey",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Abd%C3%BClkerim_Bardak%C3%A7%C4%B1_-_beIN-Sports-Reklam_%282021%29_%28cropped%29.png",
+      "imageUrl": "https://media.api-sports.io/football/players/20359.png",
       "kitNumber": 42
     },
     {
-      "apiId": 18765,
-      "name": "V. Osimhen",
-      "position": "ST",
-      "club": "Galatasaray",
-      "nation": "Nigeria",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18765.png",
-      "kitNumber": 45
-    },
-    {
-      "apiId": 2842,
-      "name": "M. Icardi",
-      "position": "ST",
-      "club": "Galatasaray",
-      "nation": "Argentina",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2842.png",
-      "kitNumber": 9
-    },
-    {
       "apiId": 2997,
-      "name": "D. Mertens",
+      "name": "Dries Mertens",
       "position": "CAM/ST",
       "club": "Galatasaray",
       "nation": "Belgium",
@@ -118,19 +96,19 @@
       "kitNumber": 10
     },
     {
-      "apiId": 642,
-      "name": "W. Zaha",
+      "apiId": 64201,
+      "name": "Wilfried Zaha",
       "position": "LW/ST",
       "club": "Galatasaray",
       "nation": "Ivory Coast",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/642.png",
+      "imageUrl": "https://media.api-sports.io/football/players/64201.png",
       "kitNumber": 14
     },
     {
       "apiId": 20347,
-      "name": "M. Batshuayi",
+      "name": "Michy Batshuayi",
       "position": "ST",
       "club": "Galatasaray",
       "nation": "Belgium",

@@ -1,0 +1,42 @@
+{
+  "apiId": 126,
+  "name": "Luis Suárez Miramontes",
+  "clubs": [
+    {
+      "club": "Deportivo La Coruña",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "España Industrial",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 122,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 256,
+      "goals": 0
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 63,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 64,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 479,
+    "goals": 0
+  }
+}

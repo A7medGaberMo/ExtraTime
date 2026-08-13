@@ -1,0 +1,42 @@
+{
+  "apiId": 36,
+  "name": "Frank Lampard",
+  "clubs": [
+    {
+      "club": "West Ham United",
+      "appearances": 187,
+      "goals": 39
+    },
+    {
+      "club": "Swansea City",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 648,
+      "goals": 211
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 38,
+      "goals": 8
+    },
+    {
+      "club": "New York City FC",
+      "appearances": 31,
+      "goals": 15
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 106,
+      "goals": 29
+    }
+  ],
+  "careerTotal": {
+    "appearances": 915,
+    "goals": 274
+  }
+}

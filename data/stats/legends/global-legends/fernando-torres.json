@@ -1,0 +1,42 @@
+{
+  "apiId": 24,
+  "name": "Fernando Torres",
+  "clubs": [
+    {
+      "club": "Atlético Madrid",
+      "appearances": 404,
+      "goals": 129
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 142,
+      "goals": 81
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 172,
+      "goals": 45
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Sagan Tosu",
+      "appearances": 40,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 110,
+      "goals": 38
+    }
+  ],
+  "careerTotal": {
+    "appearances": 768,
+    "goals": 263
+  }
+}

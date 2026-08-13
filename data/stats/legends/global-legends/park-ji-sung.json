@@ -1,0 +1,37 @@
+{
+  "apiId": 21,
+  "name": "Park Ji-sung",
+  "clubs": [
+    {
+      "club": "Kyoto Purple Sanga",
+      "appearances": 85,
+      "goals": 12
+    },
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 119,
+      "goals": 19
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 205,
+      "goals": 27
+    },
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 25,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "South Korea",
+      "appearances": 100,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 434,
+    "goals": 58
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "apiId": 83,
+  "name": "Jan Koller",
+  "clubs": [
+    {
+      "club": "Sparta Prague",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Lokeren",
+      "appearances": 46,
+      "goals": 0
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 64,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 79,
+      "goals": 0
+    },
+    {
+      "club": "Monaco",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Krylia Sovetov Samara",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Cannes",
+      "appearances": 20,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Czech Republic",
+      "appearances": 91,
+      "goals": 55
+    }
+  ],
+  "careerTotal": {
+    "appearances": 245,
+    "goals": 0
+  }
+}

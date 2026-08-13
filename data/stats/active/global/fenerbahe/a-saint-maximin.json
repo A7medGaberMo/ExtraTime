@@ -1,0 +1,66 @@
+{
+  "apiId": 1618,
+  "name": "A. Saint-Maximin",
+  "clubs": [
+    {
+      "club": "Saint-Étienne II",
+      "appearances": 22,
+      "goals": 7
+    },
+    {
+      "club": "Saint-Étienne",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Hannover 96",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Bastia",
+      "appearances": 36,
+      "goals": 3
+    },
+    {
+      "club": "Monaco",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Nice",
+      "appearances": 74,
+      "goals": 11
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 124,
+      "goals": 13
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 31,
+      "goals": 4
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 31,
+      "goals": 4
+    },
+    {
+      "club": "América",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Lens",
+      "appearances": 13,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 384,
+    "goals": 50
+  }
+}

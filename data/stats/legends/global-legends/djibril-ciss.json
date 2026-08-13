@@ -1,0 +1,77 @@
+{
+  "apiId": 39,
+  "name": "Djibril Cissé",
+  "clubs": [
+    {
+      "club": "Auxerre",
+      "appearances": 168,
+      "goals": 90
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 82,
+      "goals": 26
+    },
+    {
+      "club": "Marseille",
+      "appearances": 78,
+      "goals": 37
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 38,
+      "goals": 11
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 89,
+      "goals": 55
+    },
+    {
+      "club": "Lazio",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 29,
+      "goals": 10
+    },
+    {
+      "club": "Al-Gharafa",
+      "appearances": 17,
+      "goals": 5
+    },
+    {
+      "club": "Kuban Krasnodar",
+      "appearances": 25,
+      "goals": 5
+    },
+    {
+      "club": "Bastia",
+      "appearances": 27,
+      "goals": 6
+    },
+    {
+      "club": "Saint-Pierroise",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Yverdon-Sport",
+      "appearances": 29,
+      "goals": 23
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 41,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 610,
+    "goals": 273
+  }
+}

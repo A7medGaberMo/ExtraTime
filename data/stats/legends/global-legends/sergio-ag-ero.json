@@ -1,0 +1,37 @@
+{
+  "apiId": 44,
+  "name": "Sergio Agüero",
+  "clubs": [
+    {
+      "club": "Independiente",
+      "appearances": 56,
+      "goals": 23
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 234,
+      "goals": 101
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 390,
+      "goals": 260
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 101,
+      "goals": 41
+    }
+  ],
+  "careerTotal": {
+    "appearances": 685,
+    "goals": 385
+  }
+}

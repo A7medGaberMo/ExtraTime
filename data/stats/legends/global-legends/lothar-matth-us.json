@@ -1,0 +1,37 @@
+{
+  "apiId": 22,
+  "name": "Lothar Matthäus",
+  "clubs": [
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 200,
+      "goals": 51
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 406,
+      "goals": 100
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 153,
+      "goals": 53
+    },
+    {
+      "club": "MetroStars",
+      "appearances": 23,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 150,
+      "goals": 23
+    }
+  ],
+  "careerTotal": {
+    "appearances": 782,
+    "goals": 204
+  }
+}

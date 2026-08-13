@@ -1,0 +1,42 @@
+{
+  "apiId": 13,
+  "name": "Andrés Iniesta",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 54,
+      "goals": 5
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 674,
+      "goals": 57
+    },
+    {
+      "club": "Vissel Kobe",
+      "appearances": 134,
+      "goals": 26
+    },
+    {
+      "club": "Emirates",
+      "appearances": 23,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Spain",
+      "appearances": 131,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 885,
+    "goals": 93
+  }
+}

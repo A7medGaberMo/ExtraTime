@@ -1,0 +1,52 @@
+{
+  "apiId": 23,
+  "name": "Roberto Baggio",
+  "clubs": [
+    {
+      "club": "Vicenza",
+      "appearances": 47,
+      "goals": 16
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 136,
+      "goals": 55
+    },
+    {
+      "club": "Juventus",
+      "appearances": 200,
+      "goals": 115
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 67,
+      "goals": 19
+    },
+    {
+      "club": "Bologna",
+      "appearances": 33,
+      "goals": 23
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 59,
+      "goals": 17
+    },
+    {
+      "club": "Brescia",
+      "appearances": 101,
+      "goals": 46
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 56,
+      "goals": 27
+    }
+  ],
+  "careerTotal": {
+    "appearances": 643,
+    "goals": 291
+  }
+}

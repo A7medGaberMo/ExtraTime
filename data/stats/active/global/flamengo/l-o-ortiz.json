@@ -1,0 +1,42 @@
+{
+  "apiId": 9687,
+  "name": "Léo Ortiz",
+  "clubs": [
+    {
+      "club": "Internacional",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Sport Recife",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Red Bull Brasil",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Bragantino",
+      "appearances": 198,
+      "goals": 14
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 88,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 354,
+    "goals": 21
+  }
+}

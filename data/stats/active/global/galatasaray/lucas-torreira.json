@@ -1,0 +1,47 @@
+{
+  "apiId": 114,
+  "name": "Lucas Torreira",
+  "clubs": [
+    {
+      "club": "Pescara",
+      "appearances": 42,
+      "goals": 6
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 74,
+      "goals": 4
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 89,
+      "goals": 4
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 35,
+      "goals": 5
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 175,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay",
+      "appearances": 40,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 441,
+    "goals": 31
+  }
+}

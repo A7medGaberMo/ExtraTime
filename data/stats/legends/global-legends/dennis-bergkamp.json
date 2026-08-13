@@ -1,0 +1,32 @@
+{
+  "apiId": 33,
+  "name": "Dennis Bergkamp",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 239,
+      "goals": 122
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 74,
+      "goals": 22
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 423,
+      "goals": 120
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 79,
+      "goals": 37
+    }
+  ],
+  "careerTotal": {
+    "appearances": 736,
+    "goals": 264
+  }
+}

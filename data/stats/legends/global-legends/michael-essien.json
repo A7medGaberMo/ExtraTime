@@ -1,0 +1,57 @@
+{
+  "apiId": 20,
+  "name": "Michael Essien",
+  "clubs": [
+    {
+      "club": "Bastia",
+      "appearances": 76,
+      "goals": 12
+    },
+    {
+      "club": "Lyon",
+      "appearances": 96,
+      "goals": 13
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 256,
+      "goals": 25
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 35,
+      "goals": 2
+    },
+    {
+      "club": "Milan",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Persib Bandung",
+      "appearances": 29,
+      "goals": 5
+    },
+    {
+      "club": "Sabail",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Ghana",
+      "appearances": 59,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 545,
+    "goals": 58
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "apiId": 95,
+  "name": "Shinji Kagawa",
+  "clubs": [
+    {
+      "club": "Cerezo Osaka",
+      "appearances": 206,
+      "goals": 64
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 216,
+      "goals": 60
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 57,
+      "goals": 6
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 14,
+      "goals": 4
+    },
+    {
+      "club": "Zaragoza",
+      "appearances": 36,
+      "goals": 4
+    },
+    {
+      "club": "PAOK",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Sint-Truiden",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 97,
+      "goals": 31
+    }
+  ],
+  "careerTotal": {
+    "appearances": 560,
+    "goals": 140
+  }
+}

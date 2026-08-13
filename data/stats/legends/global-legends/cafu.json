@@ -1,0 +1,47 @@
+{
+  "apiId": 12,
+  "name": "Cafu",
+  "clubs": [
+    {
+      "club": "São Paulo",
+      "appearances": 272,
+      "goals": 38
+    },
+    {
+      "club": "Zaragoza",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Juventude",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 48,
+      "goals": 4
+    },
+    {
+      "club": "Roma",
+      "appearances": 217,
+      "goals": 8
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 166,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 142,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 724,
+    "goals": 54
+  }
+}

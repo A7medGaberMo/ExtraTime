@@ -1,0 +1,67 @@
+{
+  "apiId": 150,
+  "name": "Jean-Pierre Papin",
+  "clubs": [
+    {
+      "club": "INF Vichy",
+      "appearances": 50,
+      "goals": 13
+    },
+    {
+      "club": "Valenciennes",
+      "appearances": 35,
+      "goals": 17
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 45,
+      "goals": 33
+    },
+    {
+      "club": "Marseille",
+      "appearances": 279,
+      "goals": 184
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 63,
+      "goals": 31
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 40,
+      "goals": 6
+    },
+    {
+      "club": "Bordeaux",
+      "appearances": 70,
+      "goals": 30
+    },
+    {
+      "club": "Guingamp",
+      "appearances": 10,
+      "goals": 3
+    },
+    {
+      "club": "JS Saint-Pierroise",
+      "appearances": 27,
+      "goals": 13
+    },
+    {
+      "club": "US Lège-Cap-Ferret",
+      "appearances": 61,
+      "goals": 26
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 54,
+      "goals": 30
+    }
+  ],
+  "careerTotal": {
+    "appearances": 680,
+    "goals": 356
+  }
+}

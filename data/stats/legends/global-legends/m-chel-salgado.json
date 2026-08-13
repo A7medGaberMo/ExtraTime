@@ -1,0 +1,47 @@
+{
+  "apiId": 69,
+  "name": "Míchel Salgado",
+  "clubs": [
+    {
+      "club": "Celta B",
+      "appearances": 20,
+      "goals": 1
+    },
+    {
+      "club": "Celta",
+      "appearances": 112,
+      "goals": 3
+    },
+    {
+      "club": "Salamanca",
+      "appearances": 38,
+      "goals": 1
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 343,
+      "goals": 5
+    },
+    {
+      "club": "Blackburn",
+      "appearances": 73,
+      "goals": 1
+    },
+    {
+      "club": "Independiente",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 53,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 587,
+    "goals": 11
+  }
+}

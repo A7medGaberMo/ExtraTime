@@ -1,0 +1,32 @@
+{
+  "apiId": 95,
+  "name": "Gerard Piqué",
+  "clubs": [
+    {
+      "club": "Manchester United",
+      "appearances": 23,
+      "goals": 2
+    },
+    {
+      "club": "Real Zaragoza",
+      "appearances": 28,
+      "goals": 3
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 616,
+      "goals": 53
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 102,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 667,
+    "goals": 58
+  }
+}

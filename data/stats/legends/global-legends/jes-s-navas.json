@@ -1,0 +1,32 @@
+{
+  "apiId": 10,
+  "name": "Jesús Navas",
+  "clubs": [
+    {
+      "club": "Sevilla Atlético",
+      "appearances": 39,
+      "goals": 3
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 705,
+      "goals": 40
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 183,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 56,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 927,
+    "goals": 51
+  }
+}

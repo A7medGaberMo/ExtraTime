@@ -1,0 +1,32 @@
+{
+  "apiId": 99,
+  "name": "Javier Zanetti",
+  "clubs": [
+    {
+      "club": "Talleres",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Banfield",
+      "appearances": 66,
+      "goals": 4
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 858,
+      "goals": 21
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 145,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 957,
+    "goals": 26
+  }
+}

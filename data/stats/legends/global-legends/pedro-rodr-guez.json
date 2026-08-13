@@ -1,0 +1,22 @@
+{
+  "apiId": 49,
+  "name": "Pedro Rodríguez",
+  "clubs": [
+    {
+      "club": "FC Barcelona",
+      "appearances": 100,
+      "goals": 30
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 100,
+    "goals": 30
+  }
+}

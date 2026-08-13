@@ -1,0 +1,52 @@
+{
+  "apiId": 642,
+  "name": "Nélson Semedo",
+  "clubs": [
+    {
+      "club": "Sintrense",
+      "appearances": 27,
+      "goals": 5
+    },
+    {
+      "club": "Fátima",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Benfica B",
+      "appearances": 63,
+      "goals": 4
+    },
+    {
+      "club": "Benfica",
+      "appearances": 64,
+      "goals": 3
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 124,
+      "goals": 2
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 182,
+      "goals": 3
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 43,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 54,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 534,
+    "goals": 18
+  }
+}

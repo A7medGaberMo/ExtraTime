@@ -1,0 +1,47 @@
+{
+  "apiId": 84,
+  "name": "Ashley Cole",
+  "clubs": [
+    {
+      "club": "Arsenal",
+      "appearances": 228,
+      "goals": 9
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 338,
+      "goals": 7
+    },
+    {
+      "club": "Roma",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 94,
+      "goals": 3
+    },
+    {
+      "club": "Derby County",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 107,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 702,
+    "goals": 21
+  }
+}

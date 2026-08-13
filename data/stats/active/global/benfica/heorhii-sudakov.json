@@ -1,0 +1,27 @@
+{
+  "apiId": 138802,
+  "name": "Heorhii Sudakov",
+  "clubs": [
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 148,
+      "goals": 34
+    },
+    {
+      "club": "Benfica",
+      "appearances": 40,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine",
+      "appearances": 36,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 188,
+    "goals": 38
+  }
+}

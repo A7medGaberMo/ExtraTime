@@ -1,0 +1,27 @@
+{
+  "apiId": 114,
+  "name": "Lars Ricken",
+  "clubs": [
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 406,
+      "goals": 69
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 39,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 30,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 445,
+    "goals": 77
+  }
+}

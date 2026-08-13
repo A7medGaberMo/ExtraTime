@@ -1,0 +1,62 @@
+{
+  "apiId": 28,
+  "name": "Zlatan Ibrahimović",
+  "clubs": [
+    {
+      "club": "Malmö FF",
+      "appearances": 47,
+      "goals": 18
+    },
+    {
+      "club": "Ajax",
+      "appearances": 110,
+      "goals": 48
+    },
+    {
+      "club": "Juventus",
+      "appearances": 92,
+      "goals": 26
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 117,
+      "goals": 66
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 46,
+      "goals": 22
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 163,
+      "goals": 93
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 180,
+      "goals": 156
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 53,
+      "goals": 29
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 58,
+      "goals": 53
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 122,
+      "goals": 62
+    }
+  ],
+  "careerTotal": {
+    "appearances": 866,
+    "goals": 511
+  }
+}

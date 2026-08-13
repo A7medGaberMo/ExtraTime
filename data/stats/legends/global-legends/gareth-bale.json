@@ -1,0 +1,37 @@
+{
+  "apiId": 90,
+  "name": "Gareth Bale",
+  "clubs": [
+    {
+      "club": "Southampton",
+      "appearances": 45,
+      "goals": 5
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 237,
+      "goals": 71
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 258,
+      "goals": 106
+    },
+    {
+      "club": "Los Angeles FC",
+      "appearances": 13,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Wales",
+      "appearances": 111,
+      "goals": 41
+    }
+  ],
+  "careerTotal": {
+    "appearances": 553,
+    "goals": 185
+  }
+}

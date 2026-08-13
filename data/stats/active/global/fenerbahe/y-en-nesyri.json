@@ -1,0 +1,42 @@
+{
+  "apiId": 2289,
+  "name": "Y. En-Nesyri",
+  "clubs": [
+    {
+      "club": "Málaga",
+      "appearances": 41,
+      "goals": 5
+    },
+    {
+      "club": "Leganés",
+      "appearances": 53,
+      "goals": 15
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 196,
+      "goals": 73
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 79,
+      "goals": 38
+    },
+    {
+      "club": "Al-Ittihad",
+      "appearances": 18,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Morocco",
+      "appearances": 92,
+      "goals": 25
+    }
+  ],
+  "careerTotal": {
+    "appearances": 387,
+    "goals": 139
+  }
+}

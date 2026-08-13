@@ -1,0 +1,52 @@
+{
+  "apiId": 627,
+  "name": "Andreas Pereira",
+  "clubs": [
+    {
+      "club": "Manchester United",
+      "appearances": 75,
+      "goals": 4
+    },
+    {
+      "club": "Granada",
+      "appearances": 37,
+      "goals": 5
+    },
+    {
+      "club": "Valencia",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Lazio",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 53,
+      "goals": 8
+    },
+    {
+      "club": "Fulham",
+      "appearances": 119,
+      "goals": 10
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 60,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 10,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 406,
+    "goals": 34
+  }
+}

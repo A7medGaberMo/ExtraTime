@@ -1,0 +1,27 @@
+{
+  "apiId": 54,
+  "name": "Bobby Moore",
+  "clubs": [
+    {
+      "club": "West Ham United",
+      "appearances": 645,
+      "goals": 27
+    },
+    {
+      "club": "Fulham",
+      "appearances": 148,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 108,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 793,
+    "goals": 28
+  }
+}

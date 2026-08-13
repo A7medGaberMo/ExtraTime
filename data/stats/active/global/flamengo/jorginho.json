@@ -1,0 +1,47 @@
+{
+  "apiId": 1209,
+  "name": "Jorginho",
+  "clubs": [
+    {
+      "club": "Sambonifacese",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 96,
+      "goals": 11
+    },
+    {
+      "club": "Napoli",
+      "appearances": 160,
+      "goals": 6
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 213,
+      "goals": 29
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 79,
+      "goals": 2
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 52,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 57,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 631,
+    "goals": 57
+  }
+}

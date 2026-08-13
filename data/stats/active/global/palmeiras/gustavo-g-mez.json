@@ -1,0 +1,37 @@
+{
+  "apiId": 2101,
+  "name": "Gustavo Gómez",
+  "clubs": [
+    {
+      "club": "Libertad",
+      "appearances": 57,
+      "goals": 7
+    },
+    {
+      "club": "Lanús",
+      "appearances": 71,
+      "goals": 4
+    },
+    {
+      "club": "Milan",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 413,
+      "goals": 45
+    }
+  ],
+  "national": [
+    {
+      "team": "Paraguay",
+      "appearances": 94,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 561,
+    "goals": 56
+  }
+}

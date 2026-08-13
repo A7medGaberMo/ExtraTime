@@ -1,0 +1,47 @@
+{
+  "apiId": 46,
+  "name": "David Beckham",
+  "clubs": [
+    {
+      "club": "Manchester United",
+      "appearances": 394,
+      "goals": 85
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 159,
+      "goals": 20
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 124,
+      "goals": 20
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 14,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 115,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 729,
+    "goals": 129
+  }
+}

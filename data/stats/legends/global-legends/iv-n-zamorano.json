@@ -1,0 +1,57 @@
+{
+  "apiId": 98,
+  "name": "Iván Zamorano",
+  "clubs": [
+    {
+      "club": "Cobresal",
+      "appearances": 62,
+      "goals": 36
+    },
+    {
+      "club": "Cobreandino",
+      "appearances": 29,
+      "goals": 27
+    },
+    {
+      "club": "St. Gallen",
+      "appearances": 64,
+      "goals": 38
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 63,
+      "goals": 23
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 174,
+      "goals": 101
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 148,
+      "goals": 39
+    },
+    {
+      "club": "América",
+      "appearances": 72,
+      "goals": 37
+    },
+    {
+      "club": "Colo-Colo",
+      "appearances": 18,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Chile",
+      "appearances": 69,
+      "goals": 34
+    }
+  ],
+  "careerTotal": {
+    "appearances": 630,
+    "goals": 309
+  }
+}

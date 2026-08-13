@@ -1,0 +1,72 @@
+{
+  "apiId": 94,
+  "name": "Keisuke Honda",
+  "clubs": [
+    {
+      "club": "Nagoya Grampus",
+      "appearances": 105,
+      "goals": 13
+    },
+    {
+      "club": "VVV-Venlo",
+      "appearances": 74,
+      "goals": 26
+    },
+    {
+      "club": "CSKA Moscow",
+      "appearances": 127,
+      "goals": 27
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 92,
+      "goals": 11
+    },
+    {
+      "club": "Pachuca",
+      "appearances": 36,
+      "goals": 13
+    },
+    {
+      "club": "Melbourne Victory",
+      "appearances": 22,
+      "goals": 8
+    },
+    {
+      "club": "Vitesse",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 27,
+      "goals": 3
+    },
+    {
+      "club": "Neftçi",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Sūduva",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Paro",
+      "appearances": 7,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 98,
+      "goals": 37
+    }
+  ],
+  "careerTotal": {
+    "appearances": 507,
+    "goals": 105
+  }
+}

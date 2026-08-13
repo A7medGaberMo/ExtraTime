@@ -1,0 +1,37 @@
+{
+  "apiId": 145,
+  "name": "Emmanuel Petit",
+  "clubs": [
+    {
+      "club": "Monaco",
+      "appearances": 292,
+      "goals": 5
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 118,
+      "goals": 11
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 38,
+      "goals": 1
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 76,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 63,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 524,
+    "goals": 20
+  }
+}

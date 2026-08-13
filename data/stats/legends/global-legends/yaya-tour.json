@@ -1,0 +1,52 @@
+{
+  "apiId": 22,
+  "name": "Yaya Touré",
+  "clubs": [
+    {
+      "club": "Beveren",
+      "appearances": 70,
+      "goals": 3
+    },
+    {
+      "club": "Metalurh Donetsk",
+      "appearances": 39,
+      "goals": 5
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 31,
+      "goals": 3
+    },
+    {
+      "club": "Monaco",
+      "appearances": 28,
+      "goals": 5
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 118,
+      "goals": 6
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 316,
+      "goals": 82
+    },
+    {
+      "club": "Qingdao Huanghai",
+      "appearances": 14,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 101,
+      "goals": 19
+    }
+  ],
+  "careerTotal": {
+    "appearances": 616,
+    "goals": 106
+  }
+}

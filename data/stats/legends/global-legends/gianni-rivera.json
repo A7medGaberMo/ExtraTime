@@ -1,0 +1,32 @@
+{
+  "apiId": 104,
+  "name": "Gianni Rivera",
+  "clubs": [
+    {
+      "club": "Apps",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Alessandria",
+      "appearances": 26,
+      "goals": 6
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 658,
+      "goals": 164
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 60,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 684,
+    "goals": 170
+  }
+}

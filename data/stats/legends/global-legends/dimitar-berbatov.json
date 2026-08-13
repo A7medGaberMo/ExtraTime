@@ -1,0 +1,62 @@
+{
+  "apiId": 47,
+  "name": "Dimitar Berbatov",
+  "clubs": [
+    {
+      "club": "CSKA Sofia",
+      "appearances": 66,
+      "goals": 38
+    },
+    {
+      "club": "Bayer Leverkusen II",
+      "appearances": 7,
+      "goals": 6
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 201,
+      "goals": 91
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 102,
+      "goals": 46
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 149,
+      "goals": 56
+    },
+    {
+      "club": "Fulham",
+      "appearances": 54,
+      "goals": 20
+    },
+    {
+      "club": "Monaco",
+      "appearances": 53,
+      "goals": 18
+    },
+    {
+      "club": "PAOK",
+      "appearances": 25,
+      "goals": 5
+    },
+    {
+      "club": "Kerala Blasters",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Bulgaria",
+      "appearances": 78,
+      "goals": 48
+    }
+  ],
+  "careerTotal": {
+    "appearances": 666,
+    "goals": 281
+  }
+}

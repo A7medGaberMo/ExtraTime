@@ -1,0 +1,42 @@
+{
+  "apiId": 158,
+  "name": "Roberto Firmino",
+  "clubs": [
+    {
+      "club": "Figueirense",
+      "appearances": 38,
+      "goals": 8
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 153,
+      "goals": 49
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 362,
+      "goals": 111
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 65,
+      "goals": 21
+    },
+    {
+      "club": "Al Sadd",
+      "appearances": 35,
+      "goals": 19
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 55,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 653,
+    "goals": 208
+  }
+}

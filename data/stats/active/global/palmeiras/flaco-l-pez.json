@@ -1,0 +1,27 @@
+{
+  "apiId": 47822,
+  "name": "Flaco López",
+  "clubs": [
+    {
+      "club": "Lanús",
+      "appearances": 59,
+      "goals": 22
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 218,
+      "goals": 73
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 277,
+    "goals": 95
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 10,
+  "name": "Ruud Gullit",
+  "clubs": [
+    {
+      "club": "HFC Haarlem",
+      "appearances": 100,
+      "goals": 36
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 103,
+      "goals": 41
+    },
+    {
+      "club": "PSV",
+      "appearances": 75,
+      "goals": 53
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 171,
+      "goals": 56
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 63,
+      "goals": 26
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 63,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 66,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 575,
+    "goals": 219
+  }
+}

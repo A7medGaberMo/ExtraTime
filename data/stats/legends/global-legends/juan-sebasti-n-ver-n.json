@@ -1,0 +1,57 @@
+{
+  "apiId": 67,
+  "name": "Juan Sebastián Verón",
+  "clubs": [
+    {
+      "club": "Estudiantes",
+      "appearances": 281,
+      "goals": 33
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 17,
+      "goals": 4
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 68,
+      "goals": 7
+    },
+    {
+      "club": "Parma",
+      "appearances": 42,
+      "goals": 4
+    },
+    {
+      "club": "Lazio",
+      "appearances": 79,
+      "goals": 14
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 82,
+      "goals": 11
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Internazionale",
+      "appearances": 74,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 72,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 657,
+    "goals": 78
+  }
+}

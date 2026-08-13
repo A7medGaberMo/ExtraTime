@@ -1,0 +1,22 @@
+{
+  "apiId": 66,
+  "name": "Tony Adams",
+  "clubs": [
+    {
+      "club": "Arsenal",
+      "appearances": 672,
+      "goals": 49
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 66,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 672,
+    "goals": 49
+  }
+}

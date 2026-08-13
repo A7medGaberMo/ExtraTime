@@ -1,0 +1,47 @@
+{
+  "apiId": 9,
+  "name": "Thierry Henry",
+  "clubs": [
+    {
+      "club": "Monaco B",
+      "appearances": 19,
+      "goals": 6
+    },
+    {
+      "club": "Monaco",
+      "appearances": 141,
+      "goals": 28
+    },
+    {
+      "club": "Juventus",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 377,
+      "goals": 228
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 121,
+      "goals": 49
+    },
+    {
+      "club": "New York Red Bulls",
+      "appearances": 135,
+      "goals": 52
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 123,
+      "goals": 51
+    }
+  ],
+  "careerTotal": {
+    "appearances": 813,
+    "goals": 366
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 70,
+  "name": "Just Fontaine",
+  "clubs": [
+    {
+      "club": "US Marocaine",
+      "appearances": 48,
+      "goals": 62
+    },
+    {
+      "club": "Nice",
+      "appearances": 84,
+      "goals": 51
+    },
+    {
+      "club": "Reims",
+      "appearances": 152,
+      "goals": 145
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 21,
+      "goals": 30
+    }
+  ],
+  "careerTotal": {
+    "appearances": 284,
+    "goals": 258
+  }
+}

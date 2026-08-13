@@ -1,0 +1,37 @@
+{
+  "apiId": 132,
+  "name": "Fernando Redondo",
+  "clubs": [
+    {
+      "club": "Argentinos Juniors",
+      "appearances": 65,
+      "goals": 1
+    },
+    {
+      "club": "Tenerife",
+      "appearances": 107,
+      "goals": 8
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 228,
+      "goals": 5
+    },
+    {
+      "club": "A.C. Milan",
+      "appearances": 33,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 29,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 433,
+    "goals": 14
+  }
+}

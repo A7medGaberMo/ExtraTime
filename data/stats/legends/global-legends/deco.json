@@ -1,0 +1,57 @@
+{
+  "apiId": 35,
+  "name": "Deco",
+  "clubs": [
+    {
+      "club": "Corinthians",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "CSA",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Alverca",
+      "appearances": 33,
+      "goals": 13
+    },
+    {
+      "club": "Salgueiros",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Porto",
+      "appearances": 229,
+      "goals": 48
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 161,
+      "goals": 20
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 58,
+      "goals": 6
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 91,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 75,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 588,
+    "goals": 96
+  }
+}

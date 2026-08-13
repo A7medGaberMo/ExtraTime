@@ -1,0 +1,72 @@
+{
+  "apiId": 109,
+  "name": "Robbie Keane",
+  "clubs": [
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 87,
+      "goals": 29
+    },
+    {
+      "club": "Coventry City",
+      "appearances": 34,
+      "goals": 12
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 14,
+      "goals": 3
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 56,
+      "goals": 19
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 306,
+      "goals": 122
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 28,
+      "goals": 7
+    },
+    {
+      "club": "Celtic",
+      "appearances": 19,
+      "goals": 16
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 165,
+      "goals": 104
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 7,
+      "goals": 3
+    },
+    {
+      "club": "ATK",
+      "appearances": 11,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Republic of Ireland",
+      "appearances": 146,
+      "goals": 68
+    }
+  ],
+  "careerTotal": {
+    "appearances": 737,
+    "goals": 325
+  }
+}

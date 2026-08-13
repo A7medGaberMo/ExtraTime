@@ -1,0 +1,52 @@
+{
+  "apiId": 141,
+  "name": "Robert Pirès",
+  "clubs": [
+    {
+      "club": "Club!",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Metz",
+      "appearances": 198,
+      "goals": 48
+    },
+    {
+      "club": "Marseille",
+      "appearances": 93,
+      "goals": 14
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 287,
+      "goals": 84
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 129,
+      "goals": 18
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Goa",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 83,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 727,
+    "goals": 166
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 140,
+  "name": "Gennaro Gattuso",
+  "clubs": [
+    {
+      "club": "Perugia",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Rangers",
+      "appearances": 51,
+      "goals": 5
+    },
+    {
+      "club": "Salernitana",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 468,
+      "goals": 11
+    },
+    {
+      "club": "Sion",
+      "appearances": 32,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 73,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 586,
+    "goals": 17
+  }
+}

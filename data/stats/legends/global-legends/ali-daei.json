@@ -1,0 +1,62 @@
+{
+  "apiId": 92,
+  "name": "Ali Daei",
+  "clubs": [
+    {
+      "club": "Country",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Iran",
+      "appearances": 74,
+      "goals": 43
+    },
+    {
+      "club": "Qatar",
+      "appearances": 18,
+      "goals": 10
+    },
+    {
+      "club": "Germany",
+      "appearances": 26,
+      "goals": 7
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 32,
+      "goals": 6
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 88,
+      "goals": 12
+    },
+    {
+      "club": "UAE",
+      "appearances": 21,
+      "goals": 11
+    },
+    {
+      "club": "Saba Battery",
+      "appearances": 65,
+      "goals": 35
+    },
+    {
+      "club": "Saipa",
+      "appearances": 27,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Iran",
+      "appearances": 148,
+      "goals": 108
+    }
+  ],
+  "careerTotal": {
+    "appearances": 351,
+    "goals": 134
+  }
+}

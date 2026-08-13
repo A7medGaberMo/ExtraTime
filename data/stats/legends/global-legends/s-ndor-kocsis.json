@@ -1,0 +1,42 @@
+{
+  "apiId": 124,
+  "name": "Sándor Kocsis",
+  "clubs": [
+    {
+      "club": "Kőbányai TC",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Ferencváros",
+      "appearances": 84,
+      "goals": 70
+    },
+    {
+      "club": "Budapest Honvéd",
+      "appearances": 176,
+      "goals": 217
+    },
+    {
+      "club": "Young Fellows Juventus",
+      "appearances": 11,
+      "goals": 7
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 126,
+      "goals": 82
+    }
+  ],
+  "national": [
+    {
+      "team": "Hungary",
+      "appearances": 68,
+      "goals": 75
+    }
+  ],
+  "careerTotal": {
+    "appearances": 402,
+    "goals": 376
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 1515,
+  "name": "Vangelis Pavlidis",
+  "clubs": [
+    {
+      "club": "VfL Bochum",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 32,
+      "goals": 7
+    },
+    {
+      "club": "Willem II",
+      "appearances": 82,
+      "goals": 33
+    },
+    {
+      "club": "AZ",
+      "appearances": 137,
+      "goals": 80
+    },
+    {
+      "club": "Benfica",
+      "appearances": 114,
+      "goals": 66
+    }
+  ],
+  "national": [
+    {
+      "team": "Greece",
+      "appearances": 57,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 369,
+    "goals": 186
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiId": 105,
+  "name": "Giacinto Facchetti",
+  "clubs": [
+    {
+      "club": "Inter Milan",
+      "appearances": 629,
+      "goals": 75
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 94,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 629,
+    "goals": 75
+  }
+}

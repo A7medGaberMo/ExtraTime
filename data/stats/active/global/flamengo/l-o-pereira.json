@@ -1,0 +1,47 @@
+{
+  "apiId": 1010,
+  "name": "Léo Pereira",
+  "clubs": [
+    {
+      "club": "Athletico Paranaense",
+      "appearances": 110,
+      "goals": 9
+    },
+    {
+      "club": "Guaratinguetá",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "Náutico",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Orlando City B",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Orlando City",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 308,
+      "goals": 19
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 449,
+    "goals": 30
+  }
+}

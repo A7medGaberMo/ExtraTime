@@ -1,0 +1,37 @@
+{
+  "apiId": 56,
+  "name": "Clint Dempsey",
+  "clubs": [
+    {
+      "club": "New England Revolution",
+      "appearances": 84,
+      "goals": 26
+    },
+    {
+      "club": "Fulham",
+      "appearances": 232,
+      "goals": 60
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 43,
+      "goals": 12
+    },
+    {
+      "club": "Seattle Sounders FC",
+      "appearances": 136,
+      "goals": 57
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 141,
+      "goals": 57
+    }
+  ],
+  "careerTotal": {
+    "appearances": 495,
+    "goals": 155
+  }
+}
