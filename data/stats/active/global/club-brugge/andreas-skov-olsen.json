@@ -1,5 +1,5 @@
 {
-  "apiId": 1509,
+  "apiId": 30425,
   "name": "Andreas Skov Olsen",
   "clubs": [
     {
@@ -16,32 +16,17 @@
       "club": "Club Brugge",
       "appearances": 124,
       "goals": 49
-    },
-    {
-      "club": "VfL Wolfsburg",
-      "appearances": 24,
-      "goals": 3
-    },
-    {
-      "club": "Rangers",
-      "appearances": 11,
-      "goals": 1
-    },
-    {
-      "club": "İstanbul Başakşehir",
-      "appearances": 0,
-      "goals": 0
     }
   ],
   "national": [
     {
       "team": "Denmark",
-      "appearances": 40,
+      "appearances": 35,
       "goals": 8
     }
   ],
   "careerTotal": {
     "appearances": 281,
-    "goals": 83
+    "goals": 87
   }
 }

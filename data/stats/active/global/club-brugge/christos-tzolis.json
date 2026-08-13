@@ -1,5 +1,5 @@
 {
-  "apiId": 27313,
+  "apiId": 154133,
   "name": "Christos Tzolis",
   "clubs": [
     {
@@ -24,24 +24,19 @@
     },
     {
       "club": "Club Brugge",
-      "appearances": 108,
-      "goals": 43
-    },
-    {
-      "club": "Arsenal",
-      "appearances": 0,
-      "goals": 0
+      "appearances": 38,
+      "goals": 18
     }
   ],
   "national": [
     {
       "team": "Greece",
-      "appearances": 34,
-      "goals": 9
+      "appearances": 20,
+      "goals": 4
     }
   ],
   "careerTotal": {
-    "appearances": 245,
-    "goals": 90
+    "appearances": 195,
+    "goals": 69
   }
 }

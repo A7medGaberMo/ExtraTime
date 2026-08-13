@@ -3,14 +3,30 @@
   "name": "Lionel Messi",
   "clubs": [
     {
+      "club": "Barcelona",
+      "appearances": 778,
+      "goals": 672
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 75,
+      "goals": 32
+    },
+    {
       "club": "Inter Miami",
-      "appearances": 0,
-      "goals": 0
+      "appearances": 39,
+      "goals": 34
     }
   ],
-  "national": [],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 187,
+      "goals": 109
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 1079,
+    "goals": 847
   }
 }
