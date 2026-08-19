@@ -1,0 +1,37 @@
+{
+  "apiId": 14330,
+  "name": "J. Juranović",
+  "clubs": [
+    {
+      "club": "Hajduk Split",
+      "appearances": 165,
+      "goals": 3
+    },
+    {
+      "club": "Legia Warsaw",
+      "appearances": 41,
+      "goals": 2
+    },
+    {
+      "club": "Celtic",
+      "appearances": 53,
+      "goals": 6
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 73,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 40,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 332,
+    "goals": 16
+  }
+}

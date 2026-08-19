@@ -1,0 +1,31 @@
+{
+  "apiId": 343205,
+  "name": "Mario Martín",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 77,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Real Valladolid",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Getafe",
+      "appearances": 37,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 150,
+    "goals": 4
+  }
+}

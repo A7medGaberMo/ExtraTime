@@ -1,0 +1,57 @@
+{
+  "apiId": 502726,
+  "name": "Riquelme",
+  "clubs": [
+    {
+      "club": "Atlético Madrid B",
+      "appearances": 75,
+      "goals": 5
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 51,
+      "goals": 3
+    },
+    {
+      "club": "AFC Bournemouth",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Mirandés",
+      "appearances": 36,
+      "goals": 7
+    },
+    {
+      "club": "Girona",
+      "appearances": 34,
+      "goals": 4
+    },
+    {
+      "club": "Betis",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U21",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "team": "Spain",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 249,
+    "goals": 22
+  }
+}

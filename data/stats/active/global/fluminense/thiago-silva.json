@@ -1,0 +1,77 @@
+{
+  "apiId": 259,
+  "name": "Thiago Silva",
+  "clubs": [
+    {
+      "club": "RS Futebol",
+      "appearances": 25,
+      "goals": 2
+    },
+    {
+      "club": "Juventude",
+      "appearances": 35,
+      "goals": 3
+    },
+    {
+      "club": "Porto B",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Dynamo Moscow",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 143,
+      "goals": 14
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 119,
+      "goals": 6
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 315,
+      "goals": 17
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 155,
+      "goals": 9
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 47,
+      "goals": 3
+    },
+    {
+      "club": "Porto",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil Olympic (O.P.)",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "team": "Brazil",
+      "appearances": 113,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 863,
+    "goals": 54
+  }
+}

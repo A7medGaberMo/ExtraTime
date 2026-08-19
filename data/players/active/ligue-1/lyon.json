@@ -63,17 +63,6 @@
       "kitNumber": 3
     },
     {
-      "apiId": 25916,
-      "name": "M. Niakhaté",
-      "position": "CB",
-      "club": "Lyon",
-      "nation": "Senegal",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25916.png",
-      "kitNumber": 19
-    },
-    {
       "apiId": 9700,
       "name": "Abner",
       "position": "LB/LWB",
@@ -138,28 +127,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/645969.png",
       "kitNumber": 34
-    },
-    {
-      "apiId": 519,
-      "name": "C. Tolisso",
-      "position": "CM/CDM",
-      "club": "Lyon",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/519.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 24882,
-      "name": "O. Mangala",
-      "position": "CM/CDM",
-      "club": "Lyon",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/24882.png",
-      "kitNumber": 5
     },
     {
       "apiId": 80752,
@@ -277,21 +244,10 @@
       "position": "LW/RW/ST",
       "club": "Lyon",
       "nation": "Belgium",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361348.png",
       "kitNumber": 11
-    },
-    {
-      "apiId": 350856,
-      "name": "E. Nuamah",
-      "position": "RW/LW",
-      "club": "Lyon",
-      "nation": "Ghana",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/350856.png",
-      "kitNumber": 37
     },
     {
       "apiId": 368230,

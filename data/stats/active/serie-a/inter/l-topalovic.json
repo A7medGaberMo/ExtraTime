@@ -1,0 +1,26 @@
+{
+  "apiId": 367878,
+  "name": "L. Topalović",
+  "clubs": [
+    {
+      "club": "Domžale",
+      "appearances": 51,
+      "goals": 3
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan U23",
+      "appearances": 37,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 90,
+    "goals": 7
+  }
+}

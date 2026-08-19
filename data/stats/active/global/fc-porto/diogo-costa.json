@@ -1,27 +1,36 @@
 {
-  "apiId": 2146,
+  "apiId": 369,
   "name": "Diogo Costa",
   "clubs": [
     {
-      "club": "Porto B",
-      "appearances": 54,
+      "club": "Famalicão",
+      "appearances": 0,
       "goals": 0
     },
     {
-      "club": "Porto",
-      "appearances": 248,
+      "club": "Académica",
+      "appearances": 12,
       "goals": 0
-    }
-  ],
-  "national": [
+    },
     {
-      "team": "Portugal",
-      "appearances": 48,
+      "club": "Lion City Sailors",
+      "appearances": 9,
       "goals": 0
+    },
+    {
+      "club": "Lion City Sailors",
+      "appearances": 50,
+      "goals": 5
+    },
+    {
+      "club": "FC Porto",
+      "appearances": 12,
+      "goals": 1
     }
   ],
+  "national": [],
   "careerTotal": {
-    "appearances": 302,
-    "goals": 0
+    "appearances": 83,
+    "goals": 6
   }
 }

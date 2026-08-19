@@ -1,0 +1,31 @@
+{
+  "apiId": 162480,
+  "name": "E. Martel",
+  "clubs": [
+    {
+      "club": "RB Leipzig",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Austria Wien",
+      "appearances": 56,
+      "goals": 4
+    },
+    {
+      "club": "1. FC Köln",
+      "appearances": 134,
+      "goals": 7
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 191,
+    "goals": 11
+  }
+}

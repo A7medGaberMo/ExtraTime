@@ -1,0 +1,52 @@
+{
+  "apiId": 119485,
+  "name": "B. Rollheiser",
+  "clubs": [
+    {
+      "club": "Deportivo Sarmiento",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "River Plate",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Estudiantes",
+      "appearances": 83,
+      "goals": 13
+    },
+    {
+      "club": "Benfica",
+      "appearances": 27,
+      "goals": 2
+    },
+    {
+      "club": "Benfica",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Santos",
+      "appearances": 77,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U17",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Argentina U23",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 238,
+    "goals": 25
+  }
+}

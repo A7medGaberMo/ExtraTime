@@ -1,0 +1,36 @@
+{
+  "apiId": 15794,
+  "name": "O. Olsen",
+  "clubs": [
+    {
+      "club": "Esbjerg",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Midtjylland",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Fredericia",
+      "appearances": 64,
+      "goals": 5
+    },
+    {
+      "club": "Randers",
+      "appearances": 83,
+      "goals": 4
+    },
+    {
+      "club": "VfL Bochum",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 163,
+    "goals": 9
+  }
+}

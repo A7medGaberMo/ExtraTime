@@ -203,99 +203,116 @@ export const pass = mutation({
   },
 });
 
+async function usePerkImpl(
+  ctx: GenericMutationCtx<DataModel>,
+  roomId: Id<"rooms">,
+  userId: Id<"guestUsers">
+) {
+  const auction = await getAuction(ctx, roomId);
+
+  const isHost = auction.host.userId === userId;
+  const me = isHost ? auction.host : auction.guest;
+  if (!me) throw new Error("Player is not in this auction");
+
+  // ── Once-per-game guard ──
+  if (me.perkUsed) {
+    throw new Error("You have already used your perk this game");
+  }
+
+  const opponent = isHost ? auction.guest : auction.host;
+  if (!opponent) throw new Error("Waiting for opponent");
+
+  // Mark perk as used & add +10s to the active clock (sealed deadline and/or turn timer).
+  const updatedMe = { ...me, perkUsed: true, perkUsedRound: auction.currentRound };
+  const now = Date.now();
+  const boostedExpiresAt = Math.max(now, auction.currentBidding.turnExpiresAt || now) + 10000;
+  const boostedDeadline =
+    auction.bidDeadline != null ? Math.max(now, auction.bidDeadline) + 10000 : undefined;
+
+  const clockPatch = {
+    currentBidding: {
+      ...auction.currentBidding,
+      turnExpiresAt: boostedExpiresAt,
+    },
+    ...(boostedDeadline != null ? { bidDeadline: boostedDeadline } : {}),
+  };
+
+  if (isHost) {
+    await ctx.db.patch(auction._id, {
+      host: updatedMe,
+      ...clockPatch,
+    });
+  } else {
+    await ctx.db.patch(auction._id, {
+      guest: updatedMe,
+      ...clockPatch,
+    });
+  }
+
+  // Return perk effect data based on perk type
+  const round = auction.rounds[auction.currentRound - 1];
+  const nextRound = auction.rounds[auction.currentRound] ?? null;
+
+  if (me.perk === "SCOUT") {
+    // SCOUT: Scouts ahead — reveals opponent's budget + next round's main player
+    const nextMain = nextRound ? await ctx.db.get(nextRound.mainPlayerId) : null;
+    return {
+      perk: "SCOUT" as const,
+      opponentBudget: opponent.budget,
+      nextPosition: nextRound?.position ?? null,
+      nextMainName: nextMain?.name ?? null,
+    };
+  }
+
+  if (me.perk === "SPY") {
+    // SPY: Spies on hidden info — reveals the backup sub player for this round
+    const subPlayer = await ctx.db.get(round.subPlayerId);
+    const subClub = subPlayer ? await ctx.db.get(subPlayer.clubId) : null;
+    const subNation = subPlayer ? await ctx.db.get(subPlayer.nationId) : null;
+    return {
+      perk: "SPY" as const,
+      revealedSub: subPlayer
+        ? {
+            name: subPlayer.name,
+            position: subPlayer.position,
+            tier: subPlayer.tier,
+            club: subClub?.name ?? "Unknown",
+            nation: subNation?.name ?? "Unknown",
+            kitNumber: subPlayer.kitNumber,
+          }
+        : null,
+    };
+  }
+
+  if (me.perk === "FREEZE" || me.perk === "SHIELD") {
+    return {
+      perk: me.perk,
+      active: true,
+    };
+  }
+
+  throw new Error("Unknown perk type");
+}
+
 export const usePerk = mutation({
   args: {
     roomId: v.id("rooms"),
     userId: v.id("guestUsers"),
   },
   handler: async (ctx, args) => {
-    const auction = await getAuction(ctx, args.roomId);
-
-    const isHost = auction.host.userId === args.userId;
-    const me = isHost ? auction.host : auction.guest;
-    if (!me) throw new Error("Player is not in this auction");
-
-    // ── Once-per-game guard ──
-    if (me.perkUsed) {
-      throw new Error("You have already used your perk this game");
-    }
-
-    const opponent = isHost ? auction.guest : auction.host;
-    if (!opponent) throw new Error("Waiting for opponent");
-
-    // Mark perk as used & add +10s to the active clock (sealed deadline and/or turn timer).
-    const updatedMe = { ...me, perkUsed: true, perkUsedRound: auction.currentRound };
-    const now = Date.now();
-    const boostedExpiresAt = Math.max(now, auction.currentBidding.turnExpiresAt || now) + 10000;
-    const boostedDeadline =
-      auction.bidDeadline != null ? Math.max(now, auction.bidDeadline) + 10000 : undefined;
-
-    const clockPatch = {
-      currentBidding: {
-        ...auction.currentBidding,
-        turnExpiresAt: boostedExpiresAt,
-      },
-      ...(boostedDeadline != null ? { bidDeadline: boostedDeadline } : {}),
-    };
-
-    if (isHost) {
-      await ctx.db.patch(auction._id, {
-        host: updatedMe,
-        ...clockPatch,
-      });
-    } else {
-      await ctx.db.patch(auction._id, {
-        guest: updatedMe,
-        ...clockPatch,
-      });
-    }
-
-    // Return perk effect data based on perk type
-    const round = auction.rounds[auction.currentRound - 1];
-    const nextRound = auction.rounds[auction.currentRound] ?? null;
-
-    if (me.perk === "SCOUT") {
-      // SCOUT: Scouts ahead — reveals opponent's budget + next round's main player
-      const nextMain = nextRound ? await ctx.db.get(nextRound.mainPlayerId) : null;
-      return {
-        perk: "SCOUT" as const,
-        opponentBudget: opponent.budget,
-        nextPosition: nextRound?.position ?? null,
-        nextMainName: nextMain?.name ?? null,
-      };
-    }
-
-    if (me.perk === "SPY") {
-      // SPY: Spies on hidden info — reveals the backup sub player for this round
-      const subPlayer = await ctx.db.get(round.subPlayerId);
-      const subClub = subPlayer ? await ctx.db.get(subPlayer.clubId) : null;
-      const subNation = subPlayer ? await ctx.db.get(subPlayer.nationId) : null;
-      return {
-        perk: "SPY" as const,
-        revealedSub: subPlayer
-          ? {
-              name: subPlayer.name,
-              position: subPlayer.position,
-              tier: subPlayer.tier,
-              club: subClub?.name ?? "Unknown",
-              nation: subNation?.name ?? "Unknown",
-              kitNumber: subPlayer.kitNumber,
-            }
-          : null,
-      };
-    }
-
-    if (me.perk === "FREEZE" || me.perk === "SHIELD") {
-      return {
-        perk: me.perk,
-        active: true,
-      };
-    }
-
-    throw new Error("Unknown perk type");
+    return usePerkImpl(ctx, args.roomId, args.userId);
   },
 });
 
-export const activatePerk = usePerk;
+export const activatePerk = mutation({
+  args: {
+    roomId: v.id("rooms"),
+    userId: v.id("guestUsers"),
+  },
+  handler: async (ctx, args) => {
+    return usePerkImpl(ctx, args.roomId, args.userId);
+  },
+});
+
 
 

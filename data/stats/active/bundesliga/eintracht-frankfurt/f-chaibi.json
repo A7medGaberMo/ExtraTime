@@ -1,0 +1,26 @@
+{
+  "apiId": 276670,
+  "name": "F. Chaïbi",
+  "clubs": [
+    {
+      "club": "Toulouse B",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 43,
+      "goals": 8
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 111,
+      "goals": 8
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 174,
+    "goals": 18
+  }
+}

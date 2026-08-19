@@ -1,0 +1,26 @@
+{
+  "apiId": 15793,
+  "name": "R. Nicolaisen",
+  "clubs": [
+    {
+      "club": "Midtjylland",
+      "appearances": 56,
+      "goals": 6
+    },
+    {
+      "club": "Portsmouth",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 141,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 224,
+    "goals": 14
+  }
+}

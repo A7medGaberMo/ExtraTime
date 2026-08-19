@@ -1,0 +1,31 @@
+{
+  "apiId": 335697,
+  "name": "David López",
+  "clubs": [
+    {
+      "club": "Mallorca B",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Elche",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Burgos",
+      "appearances": 19,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 75,
+    "goals": 1
+  }
+}

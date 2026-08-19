@@ -1,0 +1,37 @@
+{
+  "apiId": 426630,
+  "name": "Bruno Steven Caicedo Quiñonez",
+  "clubs": [
+    {
+      "club": "Barcelona SC",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Cumbayá",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Orense",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Vancouver Whitecaps",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Ecuador U20",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 52,
+    "goals": 4
+  }
+}

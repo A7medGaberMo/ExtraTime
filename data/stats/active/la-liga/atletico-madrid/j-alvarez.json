@@ -1,0 +1,32 @@
+{
+  "apiId": 6009,
+  "name": "J. Álvarez",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 122,
+      "goals": 58
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 103,
+      "goals": 36
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 106,
+      "goals": 49
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 59,
+      "goals": 15
+    }
+  ],
+  "careerTotal": {
+    "appearances": 331,
+    "goals": 143
+  }
+}

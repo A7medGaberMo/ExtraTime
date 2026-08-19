@@ -1,0 +1,62 @@
+{
+  "apiId": 194,
+  "name": "S. de Vrij",
+  "clubs": [
+    {
+      "club": "Feyenoord",
+      "appearances": 154,
+      "goals": 7
+    },
+    {
+      "club": "Lazio",
+      "appearances": 118,
+      "goals": 10
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 296,
+      "goals": 13
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U16",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U17",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U19",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U21",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands",
+      "appearances": 79,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 568,
+    "goals": 30
+  }
+}

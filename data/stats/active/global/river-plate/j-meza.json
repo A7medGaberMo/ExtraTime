@@ -1,0 +1,67 @@
+{
+  "apiId": 472567,
+  "name": "J. Meza",
+  "clubs": [
+    {
+      "club": "Boca Juniors",
+      "appearances": 47,
+      "goals": 7
+    },
+    {
+      "club": "Unión",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Independiente",
+      "appearances": 33,
+      "goals": 7
+    },
+    {
+      "club": "Veracruz",
+      "appearances": 34,
+      "goals": 4
+    },
+    {
+      "club": "América",
+      "appearances": 34,
+      "goals": 5
+    },
+    {
+      "club": "Pachuca",
+      "appearances": 120,
+      "goals": 44
+    },
+    {
+      "club": "Cruz Azul",
+      "appearances": 257,
+      "goals": 63
+    },
+    {
+      "club": "Pachuca",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "River Plate",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U20",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "team": "Mexico",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 563,
+    "goals": 134
+  }
+}

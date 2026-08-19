@@ -1,0 +1,52 @@
+{
+  "apiId": 51332,
+  "name": "L. Lozano",
+  "clubs": [
+    {
+      "club": "Pumas",
+      "appearances": 152,
+      "goals": 25
+    },
+    {
+      "club": "Celaya",
+      "appearances": 24,
+      "goals": 1
+    },
+    {
+      "club": "Tigres UANL",
+      "appearances": 67,
+      "goals": 12
+    },
+    {
+      "club": "Cruz Azul",
+      "appearances": 90,
+      "goals": 15
+    },
+    {
+      "club": "Morelia",
+      "appearances": 69,
+      "goals": 12
+    },
+    {
+      "club": "Pumas",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 34,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 424,
+    "goals": 66
+  }
+}

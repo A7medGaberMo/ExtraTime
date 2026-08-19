@@ -1,0 +1,27 @@
+{
+  "apiId": 483109,
+  "name": "M. Nkota",
+  "clubs": [
+    {
+      "club": "Orlando Pirates",
+      "appearances": 25,
+      "goals": 3
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 7,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "South Africa",
+      "appearances": 7,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 32,
+    "goals": 5
+  }
+}

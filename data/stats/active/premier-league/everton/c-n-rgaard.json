@@ -1,0 +1,58 @@
+{
+  "apiId": 30407,
+  "name": "C. Nørgaard",
+  "clubs": [
+    {
+      "club": "Lyngby BK",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Hamburger SV II",
+      "appearances": 22,
+      "goals": 2
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Brøndby",
+      "appearances": 133,
+      "goals": 11
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Brentford",
+      "appearances": 196,
+      "goals": 13
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Everton",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 41,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 378,
+    "goals": 26
+  },
+  "currentTeam": "Everton"
+}

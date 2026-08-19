@@ -1,0 +1,32 @@
+{
+  "apiId": 1300,
+  "name": "M. Daramy",
+  "clubs": [
+    {
+      "club": "Copenhagen",
+      "appearances": 134,
+      "goals": 27
+    },
+    {
+      "club": "Ajax",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Reims",
+      "appearances": 31,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 10,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 181,
+    "goals": 36
+  }
+}

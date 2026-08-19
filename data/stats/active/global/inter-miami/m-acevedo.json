@@ -1,0 +1,27 @@
+{
+  "apiId": 415026,
+  "name": "M. Acevedo",
+  "clubs": [
+    {
+      "club": "Santos Laguna",
+      "appearances": 226,
+      "goals": 1
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 238,
+    "goals": 2
+  }
+}

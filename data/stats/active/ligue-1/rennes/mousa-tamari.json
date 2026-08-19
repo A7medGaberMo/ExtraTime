@@ -1,0 +1,47 @@
+{
+  "apiId": 15286,
+  "name": "Mousa Tamari",
+  "clubs": [
+    {
+      "club": "Shabab Al-Ordon",
+      "appearances": 29,
+      "goals": 7
+    },
+    {
+      "club": "Al-Jazeera",
+      "appearances": 32,
+      "goals": 18
+    },
+    {
+      "club": "APOEL",
+      "appearances": 80,
+      "goals": 13
+    },
+    {
+      "club": "OH Leuven",
+      "appearances": 90,
+      "goals": 10
+    },
+    {
+      "club": "Montpellier",
+      "appearances": 43,
+      "goals": 7
+    },
+    {
+      "club": "Rennes",
+      "appearances": 46,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Jordan",
+      "appearances": 95,
+      "goals": 25
+    }
+  ],
+  "careerTotal": {
+    "appearances": 320,
+    "goals": 63
+  }
+}

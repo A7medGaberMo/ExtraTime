@@ -369,6 +369,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/490095.png",
       "kitNumber": 77
+    },
+    {
+      "apiId": 326073,
+      "name": "R. Labeau Lascary",
+      "position": "ST/LW",
+      "club": "Auxerre",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/326073.png",
+      "kitNumber": 45
     }
   ]
 }

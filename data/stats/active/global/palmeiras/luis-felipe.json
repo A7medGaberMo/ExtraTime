@@ -1,0 +1,56 @@
+{
+  "apiId": 574837,
+  "name": "Luis Felipe",
+  "clubs": [
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Jong PSV",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Tombense",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Londrina EC",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "SC Beira-Mar",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Ethnikos Achna",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Ararat-Armenia",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 105,
+    "goals": 2
+  }
+}

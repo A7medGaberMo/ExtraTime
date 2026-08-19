@@ -1,0 +1,47 @@
+{
+  "apiId": 72155,
+  "name": "A. Ueda",
+  "clubs": [
+    {
+      "club": "Kashima Antlers",
+      "appearances": 103,
+      "goals": 47
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 40,
+      "goals": 22
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 110,
+      "goals": 41
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan U20",
+      "appearances": 3,
+      "goals": 2
+    },
+    {
+      "team": "Japan U21",
+      "appearances": 7,
+      "goals": 6
+    },
+    {
+      "team": "Japan Olympic",
+      "appearances": 17,
+      "goals": 6
+    },
+    {
+      "team": "Japan",
+      "appearances": 43,
+      "goals": 18
+    }
+  ],
+  "careerTotal": {
+    "appearances": 253,
+    "goals": 110
+  }
+}

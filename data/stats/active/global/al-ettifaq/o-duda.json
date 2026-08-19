@@ -1,0 +1,67 @@
+{
+  "apiId": 25349,
+  "name": "O. Duda",
+  "clubs": [
+    {
+      "club": "Košice",
+      "appearances": 38,
+      "goals": 6
+    },
+    {
+      "club": "Legia Warsaw",
+      "appearances": 101,
+      "goals": 16
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 71,
+      "goals": 13
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Köln",
+      "appearances": 88,
+      "goals": 11
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 60,
+      "goals": 2
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 27,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia U19",
+      "appearances": 5,
+      "goals": 4
+    },
+    {
+      "team": "Slovakia U21",
+      "appearances": 7,
+      "goals": 3
+    },
+    {
+      "team": "Slovakia",
+      "appearances": 94,
+      "goals": 16
+    }
+  ],
+  "careerTotal": {
+    "appearances": 410,
+    "goals": 48
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 219,
+  "name": "M. Politano",
+  "clubs": [
+    {
+      "club": "Perugia",
+      "appearances": 35,
+      "goals": 10
+    },
+    {
+      "club": "Pescara",
+      "appearances": 81,
+      "goals": 12
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 110,
+      "goals": 24
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 63,
+      "goals": 6
+    },
+    {
+      "club": "Napoli",
+      "appearances": 277,
+      "goals": 36
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 20,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 566,
+    "goals": 88
+  }
+}

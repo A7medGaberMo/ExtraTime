@@ -1,0 +1,67 @@
+{
+  "apiId": 646348,
+  "name": "M. Kone",
+  "clubs": [
+    {
+      "club": "Toulouse B",
+      "appearances": 59,
+      "goals": 6
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 50,
+      "goals": 3
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 86,
+      "goals": 6
+    },
+    {
+      "club": "Roma",
+      "appearances": 34,
+      "goals": 2
+    },
+    {
+      "club": "Roma",
+      "appearances": 29,
+      "goals": 2
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "France U18",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "France U19",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "team": "France U21",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "team": "France Olympic",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "team": "France",
+      "appearances": 19,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 270,
+    "goals": 20
+  }
+}

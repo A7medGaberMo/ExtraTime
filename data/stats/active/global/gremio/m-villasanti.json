@@ -1,0 +1,42 @@
+{
+  "apiId": 70566,
+  "name": "M. Villasanti",
+  "clubs": [
+    {
+      "club": "Cerro Porteño",
+      "appearances": 112,
+      "goals": 5
+    },
+    {
+      "club": "Temperley",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Sportivo Luqueño",
+      "appearances": 18,
+      "goals": 4
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 181,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Paraguay U20",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "team": "Paraguay",
+      "appearances": 50,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 325,
+    "goals": 24
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "apiId": 129886,
+  "name": "D. Ayala",
+  "clubs": [
+    {
+      "club": "Coca Cola",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Independiente Nacional 1906",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Chalatenango",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Platense",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Alianza",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Luis Ángel Firpo",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "UES",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Marte",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Chalatenango",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Topiltzín",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "El Salvador",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 12,
+    "goals": 1
+  }
+}

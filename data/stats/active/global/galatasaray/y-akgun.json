@@ -1,0 +1,57 @@
+{
+  "apiId": 454,
+  "name": "Y. Akgün",
+  "clubs": [
+    {
+      "club": "Galatasaray",
+      "appearances": 147,
+      "goals": 28
+    },
+    {
+      "club": "Adana Demirspor",
+      "appearances": 70,
+      "goals": 16
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 23,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U16",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "team": "Turkey U17",
+      "appearances": 24,
+      "goals": 4
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 9,
+      "goals": 4
+    },
+    {
+      "team": "Turkey U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Turkey",
+      "appearances": 21,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 240,
+    "goals": 45
+  }
+}

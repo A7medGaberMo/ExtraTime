@@ -79,21 +79,10 @@
       "position": "RB/CB",
       "club": "Chelsea",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19545.png",
       "kitNumber": 24
-    },
-    {
-      "apiId": 161907,
-      "name": "M. Gusto",
-      "position": "RB/LB",
-      "club": "Chelsea",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161907.png",
-      "kitNumber": 27
     },
     {
       "apiId": 22094,
@@ -138,17 +127,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341642.png",
       "kitNumber": 21
-    },
-    {
-      "apiId": 19720,
-      "name": "T. Chalobah",
-      "position": "CB",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19720.png",
-      "kitNumber": 23
     },
     {
       "apiId": 366735,
@@ -222,7 +200,7 @@
       "position": "CM/CDM",
       "club": "Chelsea",
       "nation": "Argentina",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5996.png",
       "kitNumber": 8
@@ -261,17 +239,6 @@
       "kitNumber": 14
     },
     {
-      "apiId": 568950,
-      "name": "Harrison Bettoni",
-      "position": "CM",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/568950.png",
-      "kitNumber": 43
-    },
-    {
       "apiId": 568066,
       "name": "M. Eboue",
       "position": "CM",
@@ -294,17 +261,6 @@
       "kitNumber": 75
     },
     {
-      "apiId": 557379,
-      "name": "R. Kavuma McQueen",
-      "position": "CM",
-      "club": "Chelsea",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/557379.png",
-      "kitNumber": 76
-    },
-    {
       "apiId": 1864,
       "name": "Pedro Neto",
       "position": "RW/LW",
@@ -321,7 +277,7 @@
       "position": "ST/CF",
       "club": "Chelsea",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10329.png",
       "kitNumber": 20
@@ -402,6 +358,61 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/359117.png",
       "kitNumber": 62
+    },
+    {
+      "apiId": 626,
+      "name": "Jordan Henderson",
+      "position": "CDM/CM",
+      "club": "Chelsea",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/626.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 1469,
+      "name": "Danny Welbeck",
+      "position": "ST/CF",
+      "club": "Chelsea",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1469.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 181734,
+      "name": "Pep Chavarría",
+      "position": "LB",
+      "club": "Chelsea",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/181734.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 20995,
+      "name": "M. Lacroix",
+      "position": "CB",
+      "club": "Chelsea",
+      "nation": "France",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20995.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 319572,
+      "name": "V. Barco",
+      "position": "LB/LM/CM",
+      "club": "Chelsea",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/319572.png",
+      "kitNumber": 32
     }
   ]
 }

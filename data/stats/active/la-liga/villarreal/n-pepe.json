@@ -1,0 +1,62 @@
+{
+  "apiId": 3246,
+  "name": "N. Pépé",
+  "clubs": [
+    {
+      "club": "Poitiers",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "club": "Angers II",
+      "appearances": 41,
+      "goals": 9
+    },
+    {
+      "club": "Angers",
+      "appearances": 47,
+      "goals": 3
+    },
+    {
+      "club": "Orléans",
+      "appearances": 32,
+      "goals": 8
+    },
+    {
+      "club": "Lille",
+      "appearances": 80,
+      "goals": 37
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 112,
+      "goals": 27
+    },
+    {
+      "club": "Nice",
+      "appearances": 28,
+      "goals": 8
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 23,
+      "goals": 6
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 74,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 60,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 446,
+    "goals": 111
+  }
+}

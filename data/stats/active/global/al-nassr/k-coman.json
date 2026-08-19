@@ -1,0 +1,72 @@
+{
+  "apiId": 508,
+  "name": "K. Coman",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain II",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Juventus",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 279,
+      "goals": 64
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 185,
+      "goals": 40
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 43,
+      "goals": 16
+    }
+  ],
+  "national": [
+    {
+      "team": "France U16",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "team": "France U17",
+      "appearances": 8,
+      "goals": 3
+    },
+    {
+      "team": "France U18",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "France U19",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "team": "France U21",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "team": "France",
+      "appearances": 61,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 549,
+    "goals": 121
+  }
+}

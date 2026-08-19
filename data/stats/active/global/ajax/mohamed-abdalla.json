@@ -1,0 +1,37 @@
+{
+  "apiId": 633948,
+  "name": "Mohamed Abdalla",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Ajax",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U15",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U16",
+      "appearances": 7,
+      "goals": 3
+    },
+    {
+      "team": "Netherlands U17",
+      "appearances": 8,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 15,
+    "goals": 1
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "apiId": 9958,
+  "name": "Tchê Tchê",
+  "clubs": [
+    {
+      "club": "Audax",
+      "appearances": 96,
+      "goals": 9
+    },
+    {
+      "club": "Guaratinguetá",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Ponte Preta",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Boa Esporte",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 110,
+      "goals": 5
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 98,
+      "goals": 6
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 65,
+      "goals": 2
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 150,
+      "goals": 5
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 52,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 604,
+    "goals": 29
+  }
+}

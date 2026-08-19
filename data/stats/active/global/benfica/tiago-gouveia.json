@@ -1,0 +1,62 @@
+{
+  "apiId": 158065,
+  "name": "Tiago Gouveia",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 50,
+      "goals": 12
+    },
+    {
+      "club": "Benfica",
+      "appearances": 19,
+      "goals": 3
+    },
+    {
+      "club": "Estoril",
+      "appearances": 29,
+      "goals": 5
+    },
+    {
+      "club": "Nice",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U15",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U16",
+      "appearances": 8,
+      "goals": 4
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 9,
+      "goals": 3
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 113,
+    "goals": 20
+  }
+}

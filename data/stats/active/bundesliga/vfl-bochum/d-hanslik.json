@@ -1,0 +1,41 @@
+{
+  "apiId": 108482,
+  "name": "D. Hanslik",
+  "clubs": [
+    {
+      "club": "SV Steinbach",
+      "appearances": 31,
+      "goals": 22
+    },
+    {
+      "club": "VfL Wolfsburg II",
+      "appearances": 52,
+      "goals": 30
+    },
+    {
+      "club": "Holstein Kiel",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Hansa Rostock",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "1. FC Kaiserslautern",
+      "appearances": 181,
+      "goals": 27
+    },
+    {
+      "club": "VfL Bochum",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 284,
+    "goals": 82
+  }
+}

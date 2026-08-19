@@ -1,0 +1,47 @@
+{
+  "apiId": 387521,
+  "name": "L. Vušković",
+  "clubs": [
+    {
+      "club": "Hajduk Split",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Radomiak Radom",
+      "appearances": 14,
+      "goals": 3
+    },
+    {
+      "club": "Westerlo",
+      "appearances": 36,
+      "goals": 7
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 30,
+      "goals": 6
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 91,
+    "goals": 17
+  }
+}

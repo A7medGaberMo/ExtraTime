@@ -1,0 +1,31 @@
+{
+  "apiId": 312468,
+  "name": "Álex Padilla",
+  "clubs": [
+    {
+      "club": "Basconia",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 51,
+      "goals": 0
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "UNAM",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 104,
+    "goals": 0
+  }
+}

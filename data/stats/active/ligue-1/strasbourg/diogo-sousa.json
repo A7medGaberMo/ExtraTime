@@ -1,0 +1,26 @@
+{
+  "apiId": 400510,
+  "name": "Diogo Sousa",
+  "clubs": [
+    {
+      "club": "Vitória Guimarães B",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Vitória Guimarães",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 44,
+    "goals": 1
+  }
+}

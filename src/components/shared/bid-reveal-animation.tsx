@@ -11,8 +11,8 @@ export interface LastCompletedRoundInfo {
   mainPlayer: PlayerCardData | null;
   subPlayer: PlayerCardData | null;
   /** Sealed bids from the round history (blind reveal). */
-  myBid?: number;
-  opponentBid?: number;
+  myBid?: number | null;
+  opponentBid?: number | null;
   wasTieLottery?: boolean;
   myPick: {
     isSub: boolean;
@@ -24,7 +24,7 @@ export interface LastCompletedRoundInfo {
     cost: number;
     player: PlayerCardData | null;
   } | null;
-  winnerUserId: string | null;
+  winnerUserId?: string | null;
   winnerIsMe: boolean;
   winnerName: string;
   winningBid: number;
@@ -89,10 +89,10 @@ export function BidRevealAnimation({
   const opponentBid = lastCompletedRound.opponentBid;
   const wasTieLottery = lastCompletedRound.wasTieLottery ?? false;
 
-  const bidLine = (me: number | undefined, rival: number | undefined): string => {
+  const bidLine = (me: number | null | undefined, rival: number | null | undefined): string => {
     const parts: string[] = [];
-    if (me !== undefined) parts.push(`You sealed $${me}M`);
-    if (rival !== undefined) parts.push(`Rival sealed $${rival}M`);
+    if (me !== undefined && me !== null) parts.push(`You sealed $${me}M`);
+    if (rival !== undefined && rival !== null) parts.push(`Rival sealed $${rival}M`);
     return parts.join(" · ");
   };
 

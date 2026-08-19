@@ -1,0 +1,31 @@
+{
+  "apiId": 48642,
+  "name": "Cameron Puertas",
+  "clubs": [
+    {
+      "club": "Lausanne-Sport",
+      "appearances": 101,
+      "goals": 11
+    },
+    {
+      "club": "Union SG",
+      "appearances": 118,
+      "goals": 21
+    },
+    {
+      "club": "Al-Qadsiah",
+      "appearances": 32,
+      "goals": 3
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 29,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 280,
+    "goals": 36
+  }
+}

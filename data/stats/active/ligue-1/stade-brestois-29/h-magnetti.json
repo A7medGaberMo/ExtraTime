@@ -1,0 +1,21 @@
+{
+  "apiId": 20558,
+  "name": "H. Magnetti",
+  "clubs": [
+    {
+      "club": "Rennes",
+      "appearances": 65,
+      "goals": 8
+    },
+    {
+      "club": "Brest",
+      "appearances": 204,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 269,
+    "goals": 14
+  }
+}

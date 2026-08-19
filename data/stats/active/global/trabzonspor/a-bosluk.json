@@ -1,0 +1,27 @@
+{
+  "apiId": 338815,
+  "name": "A. Boşluk",
+  "clubs": [
+    {
+      "club": "Trabzonspor",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Konyaspor",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U19",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 37,
+    "goals": 1
+  }
+}

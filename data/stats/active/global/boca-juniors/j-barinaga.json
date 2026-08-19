@@ -1,0 +1,21 @@
+{
+  "apiId": 126743,
+  "name": "J. Barinaga",
+  "clubs": [
+    {
+      "club": "Belgrano",
+      "appearances": 105,
+      "goals": 8
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 37,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 142,
+    "goals": 8
+  }
+}

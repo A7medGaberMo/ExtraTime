@@ -1,0 +1,42 @@
+{
+  "apiId": 500047,
+  "name": "Bernardo Lima",
+  "clubs": [
+    {
+      "club": "Porto B",
+      "appearances": 17,
+      "goals": 2
+    },
+    {
+      "club": "Porto",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U15",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U16",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 18,
+    "goals": 2
+  }
+}

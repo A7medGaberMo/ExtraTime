@@ -1,0 +1,22 @@
+{
+  "apiId": 20844,
+  "name": "H. Hassan",
+  "clubs": [
+    {
+      "club": "Celtic",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

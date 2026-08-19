@@ -1,0 +1,51 @@
+{
+  "apiId": 9978,
+  "name": "Everson",
+  "clubs": [
+    {
+      "club": "São Paulo",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Guaratinguetá",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Guaratinguetá",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "River",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Confiança",
+      "appearances": 45,
+      "goals": 1
+    },
+    {
+      "club": "Ceará",
+      "appearances": 194,
+      "goals": 1
+    },
+    {
+      "club": "Santos",
+      "appearances": 52,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 384,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 708,
+    "goals": 2
+  }
+}

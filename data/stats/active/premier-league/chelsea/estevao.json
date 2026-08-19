@@ -1,0 +1,27 @@
+{
+  "apiId": 425733,
+  "name": "Estêvão",
+  "clubs": [
+    {
+      "club": "Palmeiras",
+      "appearances": 83,
+      "goals": 27
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 36,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 11,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 119,
+    "goals": 35
+  }
+}

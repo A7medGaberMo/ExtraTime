@@ -1,10 +1,26 @@
 {
   "apiId": 32023,
   "name": "S. Elia",
-  "clubs": [],
+  "clubs": [
+    {
+      "club": "League",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Juve Stabia",
+      "appearances": 53,
+      "goals": 4
+    },
+    {
+      "club": "Perugia",
+      "appearances": 40,
+      "goals": 9
+    }
+  ],
   "national": [],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 93,
+    "goals": 13
   }
 }

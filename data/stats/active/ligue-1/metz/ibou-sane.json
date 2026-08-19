@@ -1,0 +1,26 @@
+{
+  "apiId": 408870,
+  "name": "Ibou Sané",
+  "clubs": [
+    {
+      "club": "Metz",
+      "appearances": 52,
+      "goals": 5
+    },
+    {
+      "club": "Metz B",
+      "appearances": 17,
+      "goals": 13
+    },
+    {
+      "club": "Amiens",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 74,
+    "goals": 19
+  }
+}

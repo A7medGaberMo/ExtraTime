@@ -1,0 +1,26 @@
+{
+  "apiId": 286710,
+  "name": "D. Scherhant",
+  "clubs": [
+    {
+      "club": "Hertha BSC II",
+      "appearances": 55,
+      "goals": 30
+    },
+    {
+      "club": "Hertha BSC",
+      "appearances": 78,
+      "goals": 12
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 49,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 182,
+    "goals": 49
+  }
+}

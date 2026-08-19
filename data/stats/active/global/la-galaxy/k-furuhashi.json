@@ -1,0 +1,47 @@
+{
+  "apiId": 33253,
+  "name": "K. Furuhashi",
+  "clubs": [
+    {
+      "club": "Gifu",
+      "appearances": 71,
+      "goals": 17
+    },
+    {
+      "club": "Vissel Kobe",
+      "appearances": 111,
+      "goals": 50
+    },
+    {
+      "club": "Celtic",
+      "appearances": 165,
+      "goals": 85
+    },
+    {
+      "club": "Rennes",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 23,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 383,
+    "goals": 153
+  }
+}

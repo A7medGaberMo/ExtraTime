@@ -1,0 +1,41 @@
+{
+  "apiId": 21248,
+  "name": "G. Coudert",
+  "clubs": [
+    {
+      "club": "Tours B",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Tours",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Amiens B",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Amiens",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Brest B",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Brest",
+      "appearances": 39,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 111,
+    "goals": 0
+  }
+}

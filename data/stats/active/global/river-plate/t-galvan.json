@@ -1,0 +1,96 @@
+{
+  "apiId": 265912,
+  "name": "T. Galván",
+  "clubs": [
+    {
+      "club": "Gimnasia LP",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "San Martín SJ",
+      "appearances": 18,
+      "goals": 2
+    },
+    {
+      "club": "Olmedo",
+      "appearances": 41,
+      "goals": 14
+    },
+    {
+      "club": "San Martín SJ",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Bnei Yehuda",
+      "appearances": 196,
+      "goals": 77
+    },
+    {
+      "club": "Maccabi Petah Tikva",
+      "appearances": 30,
+      "goals": 7
+    },
+    {
+      "club": "Bnei Yehuda",
+      "appearances": 60,
+      "goals": 33
+    },
+    {
+      "club": "Hapoel Ashkelon",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Bnei Yehuda",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Hapoel Tel Aviv",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Hapoel Marmorek",
+      "appearances": 17,
+      "goals": 6
+    },
+    {
+      "club": "Hapoel Rishon LeZion",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Olimpo",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Ciudad Bolívar",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Balonpie Bolivar",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Ciudad Bolívar",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "River Plate",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 448,
+    "goals": 145
+  }
+}

@@ -189,7 +189,7 @@
       "position": "CM/CDM",
       "club": "Genoa",
       "nation": "Denmark",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15881.png",
       "kitNumber": 32
@@ -369,6 +369,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/611384.png",
       "kitNumber": 46
+    },
+    {
+      "apiId": 957,
+      "name": "D. Sow",
+      "position": "CM/CDM",
+      "club": "Genoa",
+      "nation": "Switzerland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/957.png",
+      "kitNumber": 20
     }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "apiId": 644,
+  "name": "L. Sané",
+  "clubs": [
+    {
+      "club": "Schalke 04",
+      "appearances": 57,
+      "goals": 13
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 135,
+      "goals": 39
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 223,
+      "goals": 61
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 28,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany U19",
+      "appearances": 11,
+      "goals": 5
+    },
+    {
+      "team": "Germany U21",
+      "appearances": 10,
+      "goals": 5
+    },
+    {
+      "team": "Germany",
+      "appearances": 80,
+      "goals": 18
+    }
+  ],
+  "careerTotal": {
+    "appearances": 443,
+    "goals": 120
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "apiId": 129711,
+  "name": "B. Johnson",
+  "clubs": [
+    {
+      "club": "Birmingham City",
+      "appearances": 104,
+      "goals": 13
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 161,
+      "goals": 85
+    },
+    {
+      "club": "Everton",
+      "appearances": 74,
+      "goals": 22
+    },
+    {
+      "club": "Fulham",
+      "appearances": 112,
+      "goals": 27
+    },
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 24,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 475,
+    "goals": 149
+  },
+  "currentTeam": "Everton"
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 744,
+  "name": "Brahim Díaz",
+  "clubs": [
+    {
+      "club": "Manchester City",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 163,
+      "goals": 22
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 124,
+      "goals": 18
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "team": "Morocco",
+      "appearances": 31,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 302,
+    "goals": 42
+  }
+}

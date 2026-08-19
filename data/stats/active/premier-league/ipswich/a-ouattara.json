@@ -1,0 +1,22 @@
+{
+  "apiId": 358166,
+  "name": "A. Ouattara",
+  "clubs": [
+    {
+      "club": "Strasbourg II",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 62,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 84,
+    "goals": 7
+  },
+  "currentTeam": "Ipswich"
+}

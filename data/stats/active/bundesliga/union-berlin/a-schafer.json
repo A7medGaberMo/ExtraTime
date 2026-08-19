@@ -1,0 +1,47 @@
+{
+  "apiId": 30785,
+  "name": "A. Schäfer",
+  "clubs": [
+    {
+      "club": "MTK Budapest II",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "MTK Budapest",
+      "appearances": 51,
+      "goals": 7
+    },
+    {
+      "club": "Genoa",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Chievo",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Dunajská Streda",
+      "appearances": 62,
+      "goals": 4
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 110,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Hungary",
+      "appearances": 45,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 230,
+    "goals": 17
+  }
+}

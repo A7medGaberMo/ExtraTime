@@ -1,0 +1,32 @@
+{
+  "apiId": 204752,
+  "name": "A. Kaprálik",
+  "clubs": [
+    {
+      "club": "Žilina",
+      "appearances": 141,
+      "goals": 31
+    },
+    {
+      "club": "Górnik Zabrze",
+      "appearances": 32,
+      "goals": 8
+    },
+    {
+      "club": "Holstein Kiel",
+      "appearances": 33,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 206,
+    "goals": 43
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "apiId": 7539,
+  "name": "João Klauss",
+  "clubs": [
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 27,
+      "goals": 6
+    },
+    {
+      "club": "HJK",
+      "appearances": 33,
+      "goals": 21
+    },
+    {
+      "club": "LASK",
+      "appearances": 61,
+      "goals": 24
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Standard Liège",
+      "appearances": 47,
+      "goals": 9
+    },
+    {
+      "club": "Sint-Truiden",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "St. Louis City 2",
+      "appearances": 85,
+      "goals": 27
+    },
+    {
+      "club": "St. Louis City",
+      "appearances": 79,
+      "goals": 25
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 8,
+      "goals": 5
+    },
+    {
+      "club": "TSG 1899 Hoffenheim II",
+      "appearances": 27,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 379,
+    "goals": 125
+  }
+}

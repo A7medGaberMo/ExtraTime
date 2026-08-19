@@ -1,0 +1,32 @@
+{
+  "apiId": 134995,
+  "name": "Nawaf Boushal",
+  "clubs": [
+    {
+      "club": "Al-Fateh",
+      "appearances": 91,
+      "goals": 3
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 87,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia",
+      "appearances": 29,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 178,
+    "goals": 5
+  }
+}

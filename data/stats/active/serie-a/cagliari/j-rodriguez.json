@@ -1,0 +1,26 @@
+{
+  "apiId": 415155,
+  "name": "J. Rodríguez",
+  "clubs": [
+    {
+      "club": "Peñarol",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Boston River",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 18,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 55,
+    "goals": 1
+  }
+}

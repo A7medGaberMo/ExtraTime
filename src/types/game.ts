@@ -1,7 +1,7 @@
 /**
  * Game type identifiers for parallel game modes.
  */
-export type GameType = 'hidden_bid' | 'squad_draft' | 'pack_opening_duel' | 'penalty_shootout';
+export type GameType = 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout';
 
 /** Base configuration for any game mode */
 export interface GameConfig {
@@ -30,18 +30,6 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     maxPlayers: 2,
     icon: 'Swords',
     accentColor: '#95E810',
-    isAvailable: true,
-    routePrefix: '/auction',
-  },
-  squad_draft: {
-    type: 'squad_draft',
-    label: 'Classic Squad Draft',
-    badgeLabel: '⚽ SQUAD DRAFT',
-    description: 'Turn-based snake draft to select high-chem squads position by position.',
-    minPlayers: 2,
-    maxPlayers: 2,
-    icon: 'Layers',
-    accentColor: '#3B82F6',
     isAvailable: true,
     routePrefix: '/auction',
   },

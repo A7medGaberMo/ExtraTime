@@ -1,0 +1,37 @@
+{
+  "apiId": 474550,
+  "name": "N. Fernandez",
+  "clubs": [
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 225,
+      "goals": 30
+    },
+    {
+      "club": "RC Paris",
+      "appearances": 59,
+      "goals": 3
+    },
+    {
+      "club": "Cannes",
+      "appearances": 93,
+      "goals": 5
+    },
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 60,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 389,
+    "goals": 39
+  }
+}

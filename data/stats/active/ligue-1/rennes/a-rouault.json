@@ -1,0 +1,31 @@
+{
+  "apiId": 129681,
+  "name": "A. Rouault",
+  "clubs": [
+    {
+      "club": "Toulouse II",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 86,
+      "goals": 6
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 52,
+      "goals": 1
+    },
+    {
+      "club": "Rennes",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 155,
+    "goals": 8
+  }
+}

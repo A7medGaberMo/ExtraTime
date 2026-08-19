@@ -1,0 +1,82 @@
+{
+  "apiId": 561386,
+  "name": "S. Keller",
+  "clubs": [
+    {
+      "club": "Vejle BK",
+      "appearances": 85,
+      "goals": 11
+    },
+    {
+      "club": "Viborg FF",
+      "appearances": 92,
+      "goals": 11
+    },
+    {
+      "club": "Torino",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Lazio",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Stabæk",
+      "appearances": 56,
+      "goals": 8
+    },
+    {
+      "club": "Kasımpaşa",
+      "appearances": 57,
+      "goals": 0
+    },
+    {
+      "club": "Randers FC",
+      "appearances": 104,
+      "goals": 2
+    },
+    {
+      "club": "Viborg FF",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Al-Ittihad",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark U-16",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Denmark U-17",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "team": "Denmark U-19",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Denmark U-21",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Danish League XI",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 435,
+    "goals": 34
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 428007,
+  "name": "Neil Pierre",
+  "clubs": [
+    {
+      "club": "Philadelphia Union II",
+      "appearances": 56,
+      "goals": 6
+    },
+    {
+      "club": "Philadelphia Union",
+      "appearances": 3,
+      "goals": 2
+    },
+    {
+      "club": "Lyngby",
+      "appearances": 10,
+      "goals": 4
+    },
+    {
+      "club": "Orlando City SC",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "United States U15",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "United States U16",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "United States U18",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "United States U19",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 81,
+    "goals": 13
+  }
+}

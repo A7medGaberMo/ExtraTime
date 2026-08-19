@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Juventus",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30497.png",
       "kitNumber": 3
@@ -167,7 +167,7 @@
       "position": "CAM/CM",
       "club": "Juventus",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/36899.png",
       "kitNumber": 8
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Juventus",
       "nation": "Canada",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8489.png",
       "kitNumber": 30
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Juventus",
       "nation": "Belgium",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/86.png",
       "kitNumber": 20
@@ -314,6 +314,39 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/451504.png",
       "kitNumber": 18
+    },
+    {
+      "apiId": 31354,
+      "name": "G. Vicario",
+      "position": "GK",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31354.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 395559,
+      "name": "Kerim-Sam Alajbegović",
+      "position": "LW/CAM",
+      "club": "Juventus",
+      "nation": "Bosnia and Herzegovina",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/395559.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 47985,
+      "name": "E. Holm",
+      "position": "RB/RWB",
+      "club": "Juventus",
+      "nation": "Sweden",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47985.png",
+      "kitNumber": 2
     }
   ]
 }

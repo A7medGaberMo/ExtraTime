@@ -1,0 +1,46 @@
+{
+  "apiId": 48358,
+  "name": "M. Mathisen",
+  "clubs": [
+    {
+      "club": "Copenhagen",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Halmstads BK",
+      "appearances": 74,
+      "goals": 10
+    },
+    {
+      "club": "Falkenbergs FF",
+      "appearances": 50,
+      "goals": 5
+    },
+    {
+      "club": "IK Sirius",
+      "appearances": 73,
+      "goals": 9
+    },
+    {
+      "club": "SV Wehen Wiesbaden",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Magdeburg",
+      "appearances": 66,
+      "goals": 4
+    },
+    {
+      "club": "FC St. Pauli",
+      "appearances": 1,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 304,
+    "goals": 29
+  }
+}

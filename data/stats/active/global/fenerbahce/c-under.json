@@ -1,0 +1,77 @@
+{
+  "apiId": 785,
+  "name": "C. Ünder",
+  "clubs": [
+    {
+      "club": "Altınordu",
+      "appearances": 58,
+      "goals": 11
+    },
+    {
+      "club": "Başakşehir",
+      "appearances": 32,
+      "goals": 7
+    },
+    {
+      "club": "Roma",
+      "appearances": 88,
+      "goals": 17
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 93,
+      "goals": 18
+    },
+    {
+      "club": "Marseille",
+      "appearances": 37,
+      "goals": 5
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 43,
+      "goals": 9
+    },
+    {
+      "club": "Los Angeles FC",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 26,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U18",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 12,
+      "goals": 6
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Turkey",
+      "appearances": 51,
+      "goals": 16
+    }
+  ],
+  "careerTotal": {
+    "appearances": 398,
+    "goals": 74
+  }
+}

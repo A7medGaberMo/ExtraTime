@@ -1,0 +1,27 @@
+{
+  "apiId": 475582,
+  "name": "Mateo Silvetti",
+  "clubs": [
+    {
+      "club": "Newell's Old Boys",
+      "appearances": 37,
+      "goals": 6
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 21,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U20",
+      "appearances": 9,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 58,
+    "goals": 11
+  }
+}

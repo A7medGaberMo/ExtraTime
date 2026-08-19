@@ -1,0 +1,352 @@
+{
+  "club": {
+    "apiId": 553,
+    "name": "Olympiacos",
+    "logo": "https://media.api-sports.io/football/teams/553.png",
+    "league": "Super League 1",
+    "leagueId": 197
+  },
+  "players": [
+    {
+      "apiId": 451997,
+      "name": "G. Kouraklis",
+      "position": "GK",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/451997.png",
+      "kitNumber": 61
+    },
+    {
+      "apiId": 25004,
+      "name": "S. Ortega",
+      "position": "GK",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25004.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 66898,
+      "name": "B. Popović",
+      "position": "GK",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/66898.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 595229,
+      "name": "Dimitrios Stournaras",
+      "position": "GK",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/595229.png",
+      "kitNumber": 91
+    },
+    {
+      "apiId": 41970,
+      "name": "David Carmo",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Angola",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41970.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 620689,
+      "name": "I. Koutsidis",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/620689.png",
+      "kitNumber": 67
+    },
+    {
+      "apiId": 26302,
+      "name": "Pablo Maffeo",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26302.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 278196,
+      "name": "S. Onyemaechi",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278196.png",
+      "kitNumber": 70
+    },
+    {
+      "apiId": 134431,
+      "name": "L. Pirola",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/134431.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 971,
+      "name": "P. Retsos",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/971.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 10157,
+      "name": "Rodinei",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10157.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 27157,
+      "name": "M. Saliakas",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/27157.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 413662,
+      "name": "Z. Smajlović",
+      "position": "CB",
+      "club": "Olympiacos",
+      "nation": "Yugoslavia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/413662.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 443714,
+      "name": "T. Bakoulas",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443714.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 41130,
+      "name": "Chiquinho",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41130.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 1609,
+      "name": "K. Fortounis",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1609.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 47281,
+      "name": "Dani García",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Basque Country",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47281.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 195929,
+      "name": "S. Hezze",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195929.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 392514,
+      "name": "C. Mouzakitis",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/392514.png",
+      "kitNumber": 96
+    },
+    {
+      "apiId": 339105,
+      "name": "Joel Roca",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Catalonia",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339105.png",
+      "kitNumber": 73
+    },
+    {
+      "apiId": 379985,
+      "name": "Gustavo Sá",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/379985.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 364513,
+      "name": "L. Scipioni",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/364513.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 49888,
+      "name": "Y. Yazıcı",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Basque Country",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/49888.png",
+      "kitNumber": 97
+    },
+    {
+      "apiId": 325717,
+      "name": "André Luiz",
+      "position": "ST",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/325717.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 195580,
+      "name": "Clayton",
+      "position": "ST",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195580.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 2722,
+      "name": "A. El Kaabi",
+      "position": "ST",
+      "club": "Olympiacos",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2722.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 141901,
+      "name": "Jota Silva",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/141901.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 118,
+      "name": "Gelson Martins",
+      "position": "CM",
+      "club": "Olympiacos",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/118.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 1610,
+      "name": "G. Masouras",
+      "position": "ST",
+      "club": "Olympiacos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1610.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 42315,
+      "name": "M. Taremi",
+      "position": "ST",
+      "club": "Olympiacos",
+      "nation": "Iran",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/42315.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 8493,
+      "name": "R. Yaremchuk",
+      "position": "ST",
+      "club": "Olympiacos",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8493.png",
+      "kitNumber": 77
+    }
+  ]
+}

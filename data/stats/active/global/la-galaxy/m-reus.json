@@ -1,0 +1,47 @@
+{
+  "apiId": 25,
+  "name": "M. Reus",
+  "clubs": [
+    {
+      "club": "Rot Weiss Ahlen II",
+      "appearances": 44,
+      "goals": 5
+    },
+    {
+      "club": "Rot Weiss Ahlen",
+      "appearances": 43,
+      "goals": 5
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 109,
+      "goals": 41
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 429,
+      "goals": 170
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 63,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany U21",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Germany",
+      "appearances": 48,
+      "goals": 15
+    }
+  ],
+  "careerTotal": {
+    "appearances": 688,
+    "goals": 235
+  }
+}

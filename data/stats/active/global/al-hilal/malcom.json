@@ -1,5 +1,5 @@
 {
-  "apiId": 752,
+  "apiId": 156,
   "name": "Malcom",
   "clubs": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "club": "Barcelona",
-      "appearances": 24,
-      "goals": 4
+      "appearances": 15,
+      "goals": 1
     },
     {
       "club": "Zenit Saint Petersburg",
@@ -24,11 +24,21 @@
     },
     {
       "club": "Al Hilal",
-      "appearances": 141,
-      "goals": 48
+      "appearances": 142,
+      "goals": 49
     }
   ],
   "national": [
+    {
+      "team": "Brazil U20",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "team": "Brazil U23",
+      "appearances": 10,
+      "goals": 1
+    },
     {
       "team": "Brazil",
       "appearances": 2,
@@ -36,7 +46,7 @@
     }
   ],
   "careerTotal": {
-    "appearances": 440,
-    "goals": 127
+    "appearances": 432,
+    "goals": 125
   }
 }

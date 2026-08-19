@@ -1,0 +1,26 @@
+{
+  "apiId": 181701,
+  "name": "Gerard Martín",
+  "clubs": [
+    {
+      "club": "Cornellà",
+      "appearances": 59,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona B",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 93,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 193,
+    "goals": 1
+  }
+}

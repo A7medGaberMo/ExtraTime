@@ -1,0 +1,52 @@
+{
+  "apiId": 62401,
+  "name": "T. Çetin",
+  "clubs": [
+    {
+      "club": "Sakaryaspor",
+      "appearances": 146,
+      "goals": 12
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 274,
+      "goals": 52
+    },
+    {
+      "club": "İstanbulspor",
+      "appearances": 72,
+      "goals": 9
+    },
+    {
+      "club": "Adanaspor",
+      "appearances": 50,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U18",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U23",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "team": "Turkey",
+      "appearances": 70,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 542,
+    "goals": 79
+  }
+}

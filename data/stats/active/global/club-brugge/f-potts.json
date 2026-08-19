@@ -1,0 +1,31 @@
+{
+  "apiId": 284446,
+  "name": "F. Potts",
+  "clubs": [
+    {
+      "club": "West Ham United",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Wycombe Wanderers",
+      "appearances": 36,
+      "goals": 2
+    },
+    {
+      "club": "Portsmouth",
+      "appearances": 37,
+      "goals": 1
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 107,
+    "goals": 3
+  }
+}

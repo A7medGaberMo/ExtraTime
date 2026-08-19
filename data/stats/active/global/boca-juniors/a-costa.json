@@ -1,0 +1,47 @@
+{
+  "apiId": 288750,
+  "name": "A. Costa",
+  "clubs": [
+    {
+      "club": "Roma",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 24,
+      "goals": 4
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U19",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 39,
+    "goals": 5
+  }
+}

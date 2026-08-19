@@ -1,0 +1,81 @@
+{
+  "apiId": 201909,
+  "name": "G. Tapia",
+  "clubs": [
+    {
+      "club": "Zapotlanejo",
+      "appearances": 33,
+      "goals": 8
+    },
+    {
+      "club": "Cachorros UdeG",
+      "appearances": 19,
+      "goals": 10
+    },
+    {
+      "club": "Murciélagos",
+      "appearances": 24,
+      "goals": 12
+    },
+    {
+      "club": "Querétaro",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Delfines",
+      "appearances": 13,
+      "goals": 8
+    },
+    {
+      "club": "Altamira",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Unión de Curtidores",
+      "appearances": 11,
+      "goals": 8
+    },
+    {
+      "club": "Irapuato",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Murciélagos",
+      "appearances": 16,
+      "goals": 4
+    },
+    {
+      "club": "Suchitepéquez",
+      "appearances": 7,
+      "goals": 5
+    },
+    {
+      "club": "Deportivo Guastatoya",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "Suchitepéquez",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Furia Roja",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 173,
+    "goals": 59
+  }
+}

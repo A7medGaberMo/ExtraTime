@@ -129,17 +129,6 @@
       "kitNumber": 24
     },
     {
-      "apiId": 434352,
-      "name": "A. Touré",
-      "position": "CB",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/434352.png",
-      "kitNumber": 41
-    },
-    {
       "apiId": 21640,
       "name": "J. Deminguet",
       "position": "CM/CAM",
@@ -259,17 +248,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/404588.png",
       "kitNumber": 42
-    },
-    {
-      "apiId": 343319,
-      "name": "L. Michal",
-      "position": "ST",
-      "club": "Metz",
-      "nation": "France",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/343319.png",
-      "kitNumber": 19
     },
     {
       "apiId": 647405,

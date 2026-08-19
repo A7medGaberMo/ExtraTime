@@ -1,0 +1,31 @@
+{
+  "apiId": 46658,
+  "name": "Rubén García",
+  "clubs": [
+    {
+      "club": "Levante B",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "Levante",
+      "appearances": 149,
+      "goals": 9
+    },
+    {
+      "club": "Sporting Gijón",
+      "appearances": 43,
+      "goals": 8
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 296,
+      "goals": 33
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 490,
+    "goals": 51
+  }
+}

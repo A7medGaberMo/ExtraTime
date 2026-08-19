@@ -1,0 +1,42 @@
+{
+  "apiId": 371228,
+  "name": "T. Kraaijeveld",
+  "clubs": [
+    {
+      "club": "Feyenoord",
+      "appearances": 17,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U15",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U16",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U17",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U18",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U19",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 17,
+    "goals": 0
+  }
+}

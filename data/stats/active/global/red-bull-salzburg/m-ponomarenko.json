@@ -1,0 +1,57 @@
+{
+  "apiId": 395550,
+  "name": "M. Ponomarenko",
+  "clubs": [
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 43,
+      "goals": 20
+    },
+    {
+      "club": "Zorya Luhansk",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U17",
+      "appearances": 6,
+      "goals": 8
+    },
+    {
+      "team": "Ukraine U18",
+      "appearances": 3,
+      "goals": 2
+    },
+    {
+      "team": "Ukraine U19",
+      "appearances": 14,
+      "goals": 10
+    },
+    {
+      "team": "Ukraine U20",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 3,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 55,
+    "goals": 21
+  }
+}

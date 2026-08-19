@@ -1,0 +1,32 @@
+{
+  "apiId": 586008,
+  "name": "Duarte Cunha",
+  "clubs": [
+    {
+      "club": "Porto B",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "FC Porto",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U16",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 18,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 24,
+    "goals": 3
+  }
+}

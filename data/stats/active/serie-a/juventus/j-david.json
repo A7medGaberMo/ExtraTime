@@ -1,0 +1,32 @@
+{
+  "apiId": 8489,
+  "name": "J. David",
+  "clubs": [
+    {
+      "club": "Gent",
+      "appearances": 83,
+      "goals": 37
+    },
+    {
+      "club": "Lille",
+      "appearances": 231,
+      "goals": 109
+    },
+    {
+      "club": "Juventus",
+      "appearances": 46,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Canada",
+      "appearances": 82,
+      "goals": 42
+    }
+  ],
+  "careerTotal": {
+    "appearances": 360,
+    "goals": 154
+  }
+}

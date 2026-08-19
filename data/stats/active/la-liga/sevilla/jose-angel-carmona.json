@@ -1,0 +1,26 @@
+{
+  "apiId": 195923,
+  "name": "José Ángel Carmona",
+  "clubs": [
+    {
+      "club": "Sevilla",
+      "appearances": 91,
+      "goals": 3
+    },
+    {
+      "club": "Elche",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 32,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 132,
+    "goals": 5
+  }
+}

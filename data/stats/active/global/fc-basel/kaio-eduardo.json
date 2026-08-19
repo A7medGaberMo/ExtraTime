@@ -1,0 +1,22 @@
+{
+  "apiId": 457771,
+  "name": "Kaio Eduardo",
+  "clubs": [
+    {
+      "club": "FC Basel 1893",
+      "appearances": 32,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 32,
+    "goals": 7
+  }
+}

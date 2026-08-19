@@ -1,0 +1,26 @@
+{
+  "apiId": 26305,
+  "name": "S. Ascacíbar",
+  "clubs": [
+    {
+      "club": "Rosario Central",
+      "appearances": 96,
+      "goals": 0
+    },
+    {
+      "club": "Elche",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 67,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 190,
+    "goals": 2
+  }
+}

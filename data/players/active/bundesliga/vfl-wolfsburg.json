@@ -277,7 +277,7 @@
       "position": "ST/LW/RW",
       "club": "VfL Wolfsburg",
       "nation": "Algeria",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/200139.png",
       "kitNumber": 9
@@ -336,17 +336,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/146009.png",
       "kitNumber": 45
-    },
-    {
-      "apiId": 342188,
-      "name": "D. Pejčinović",
-      "position": "ST",
-      "club": "VfL Wolfsburg",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/342188.png",
-      "kitNumber": 17
     },
     {
       "apiId": 422572,

@@ -1,0 +1,47 @@
+{
+  "apiId": 340572,
+  "name": "D. Prpić",
+  "clubs": [
+    {
+      "club": "Hajduk Split",
+      "appearances": 50,
+      "goals": 0
+    },
+    {
+      "club": "Radomlje",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia U15",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Croatia U18",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Croatia U19",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Croatia U21",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 68,
+    "goals": 0
+  }
+}

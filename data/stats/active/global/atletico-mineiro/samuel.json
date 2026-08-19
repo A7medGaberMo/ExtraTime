@@ -1,0 +1,96 @@
+{
+  "apiId": 633527,
+  "name": "Samuel",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 57,
+      "goals": 9
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Goiás",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Sport",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Ferroviária",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Hatta",
+      "appearances": 23,
+      "goals": 10
+    },
+    {
+      "club": "Hatta",
+      "appearances": 21,
+      "goals": 11
+    },
+    {
+      "club": "Al Nasr SC",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Al-Fujairah",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Jeonbuk Hyundai Motors",
+      "appearances": 11,
+      "goals": 4
+    },
+    {
+      "club": "Hatta Club",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Buriram United",
+      "appearances": 26,
+      "goals": 11
+    },
+    {
+      "club": "Samut Prakan City",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "PT Prachuap",
+      "appearances": 58,
+      "goals": 26
+    },
+    {
+      "club": "Lee Man",
+      "appearances": 22,
+      "goals": 6
+    },
+    {
+      "club": "Hatta",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 329,
+    "goals": 87
+  }
+}

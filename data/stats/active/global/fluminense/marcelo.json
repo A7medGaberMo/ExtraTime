@@ -1,0 +1,57 @@
+{
+  "apiId": 180866,
+  "name": "Marcelo",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 68,
+      "goals": 6
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 546,
+      "goals": 38
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 43,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U17",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U23",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Brazil Olympic (O.P.)",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Brazil",
+      "appearances": 58,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 662,
+    "goals": 47
+  }
+}

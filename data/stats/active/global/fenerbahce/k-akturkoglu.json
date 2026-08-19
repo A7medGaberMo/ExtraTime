@@ -1,0 +1,62 @@
+{
+  "apiId": 142959,
+  "name": "K. Aktürkoğlu",
+  "clubs": [
+    {
+      "club": "İstanbul Başakşehir",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Bodrumspor",
+      "appearances": 27,
+      "goals": 4
+    },
+    {
+      "club": "Karacabey Belediyespor",
+      "appearances": 34,
+      "goals": 3
+    },
+    {
+      "club": "24 Erzincanspor",
+      "appearances": 30,
+      "goals": 20
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 179,
+      "goals": 46
+    },
+    {
+      "club": "Benfica",
+      "appearances": 58,
+      "goals": 17
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 50,
+      "goals": 15
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U18",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Turkey",
+      "appearances": 54,
+      "goals": 15
+    }
+  ],
+  "careerTotal": {
+    "appearances": 378,
+    "goals": 105
+  }
+}

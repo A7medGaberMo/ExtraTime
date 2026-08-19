@@ -1,0 +1,22 @@
+{
+  "apiId": 50969,
+  "name": "B. White",
+  "clubs": [
+    {
+      "club": "Vancouver Whitecaps",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "USA",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

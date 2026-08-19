@@ -1,0 +1,52 @@
+{
+  "apiId": 283566,
+  "name": "V. Brazhko",
+  "clubs": [
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 110,
+      "goals": 16
+    },
+    {
+      "club": "Zorya Luhansk",
+      "appearances": 29,
+      "goals": 7
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U15",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine U16",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine U17",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 26,
+      "goals": 2
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 151,
+    "goals": 24
+  }
+}

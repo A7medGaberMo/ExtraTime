@@ -1,0 +1,41 @@
+{
+  "apiId": 278370,
+  "name": "D. Gómez",
+  "clubs": [
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 43,
+      "goals": 21
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 230,
+      "goals": 110
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 174,
+      "goals": 113
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 47,
+      "goals": 14
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 41,
+      "goals": 28
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 52,
+      "goals": 19
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 587,
+    "goals": 305
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "apiId": 7653,
+  "name": "M. Steinwender",
+  "clubs": [
+    {
+      "club": "Mattersburg II",
+      "appearances": 64,
+      "goals": 5
+    },
+    {
+      "club": "SV Mattersburg",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "SKN St. Pölten",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "TSV Hartberg",
+      "appearances": 69,
+      "goals": 1
+    },
+    {
+      "club": "IFK Värnamo",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Heart of Midlothian",
+      "appearances": 47,
+      "goals": 2
+    },
+    {
+      "club": "VfL Bochum",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 237,
+    "goals": 9
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 359372,
+  "name": "Robert Renan",
+  "clubs": [
+    {
+      "club": "Corinthians",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Zenit Saint Petersburg",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Internacional",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Al Shabab",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 33,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U18",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "team": "Brazil U23",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 116,
+    "goals": 1
+  }
+}

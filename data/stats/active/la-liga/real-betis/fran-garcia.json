@@ -1,0 +1,31 @@
+{
+  "apiId": 736,
+  "name": "Fran García",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 59,
+      "goals": 1
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 109,
+      "goals": 3
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 122,
+      "goals": 5
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 290,
+    "goals": 9
+  }
+}

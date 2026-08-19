@@ -1,0 +1,22 @@
+{
+  "apiId": 39107,
+  "name": "S. Adekugbe",
+  "clubs": [
+    {
+      "club": "Vancouver Whitecaps",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Canada",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

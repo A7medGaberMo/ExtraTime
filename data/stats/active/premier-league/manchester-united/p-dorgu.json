@@ -1,10 +1,42 @@
 {
   "apiId": 382452,
   "name": "P. Dorgu",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "West Ham United",
+      "appearances": 159,
+      "goals": 6
+    },
+    {
+      "club": "Swindon Town",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 75,
+      "goals": 2
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 464,
+      "goals": 24
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 34,
+      "goals": 0
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 706,
+    "goals": 34
   }
 }

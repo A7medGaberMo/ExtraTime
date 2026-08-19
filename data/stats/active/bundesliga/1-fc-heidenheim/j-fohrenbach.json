@@ -1,0 +1,36 @@
+{
+  "apiId": 24979,
+  "name": "J. Föhrenbach",
+  "clubs": [
+    {
+      "club": "SC Freiburg II",
+      "appearances": 42,
+      "goals": 1
+    },
+    {
+      "club": "SC Freiburg",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Karlsruher SC",
+      "appearances": 38,
+      "goals": 3
+    },
+    {
+      "club": "Jahn Regensburg",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 213,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 331,
+    "goals": 8
+  }
+}

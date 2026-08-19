@@ -1,0 +1,41 @@
+{
+  "apiId": 90695,
+  "name": "A. Condé",
+  "clubs": [
+    {
+      "club": "VfL Wolfsburg II",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Holstein Kiel",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Rot-Weiss Essen",
+      "appearances": 67,
+      "goals": 4
+    },
+    {
+      "club": "1. FC Magdeburg",
+      "appearances": 103,
+      "goals": 9
+    },
+    {
+      "club": "Heerenveen",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "SV Elversberg",
+      "appearances": 33,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 270,
+    "goals": 14
+  }
+}

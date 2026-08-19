@@ -1,0 +1,66 @@
+{
+  "apiId": 203428,
+  "name": "J. Russell-Rowe",
+  "clubs": [
+    {
+      "club": "Second round",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Group E",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Spartak Moscow",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Zürich",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Sparta Prague",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Group J",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Partizan",
+      "appearances": 3,
+      "goals": 3
+    },
+    {
+      "club": "LASK",
+      "appearances": 1,
+      "goals": 2
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "club": "Knockout round play-offs",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 37,
+    "goals": 6
+  }
+}

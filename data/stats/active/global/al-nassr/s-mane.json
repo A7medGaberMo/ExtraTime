@@ -1,0 +1,32 @@
+{
+  "apiId": 304,
+  "name": "S. Mané",
+  "clubs": [
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 31,
+      "goals": 3
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England U18",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 43,
+    "goals": 4
+  }
+}

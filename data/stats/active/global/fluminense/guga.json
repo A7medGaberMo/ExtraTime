@@ -1,0 +1,77 @@
+{
+  "apiId": 9874,
+  "name": "Guga",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Panetolikos",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Famalicão",
+      "appearances": 36,
+      "goals": 3
+    },
+    {
+      "club": "Rio Ave",
+      "appearances": 115,
+      "goals": 6
+    },
+    {
+      "club": "Beijing Guoan",
+      "appearances": 67,
+      "goals": 10
+    },
+    {
+      "club": "Al-Najma",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Pafos",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U15",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U16",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 15,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 267,
+    "goals": 20
+  }
+}

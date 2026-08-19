@@ -1,0 +1,36 @@
+{
+  "apiId": 25322,
+  "name": "J. Mbom",
+  "clubs": [
+    {
+      "club": "Türk Gücü München",
+      "appearances": 31,
+      "goals": 7
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 46,
+      "goals": 8
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 346,
+      "goals": 109
+    },
+    {
+      "club": "Cerezo Osaka",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 8,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 445,
+    "goals": 132
+  }
+}

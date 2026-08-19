@@ -1,0 +1,27 @@
+{
+  "apiId": 426512,
+  "name": "Iker Jareth Fimbres Ochoa",
+  "clubs": [
+    {
+      "club": "Monterrey",
+      "appearances": 58,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico U20",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Mexico",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 58,
+    "goals": 6
+  }
+}

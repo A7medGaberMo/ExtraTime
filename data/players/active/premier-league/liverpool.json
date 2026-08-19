@@ -79,7 +79,7 @@
       "position": "RB/RM",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152654.png",
       "kitNumber": 30
@@ -90,7 +90,7 @@
       "position": "LB/LM",
       "club": "Liverpool",
       "nation": "Hungary",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/206254.png",
       "kitNumber": 6
@@ -162,23 +162,12 @@
       "kitNumber": 75
     },
     {
-      "apiId": 310186,
-      "name": "C. Scanlon",
-      "position": "LB",
-      "club": "Liverpool",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/310186.png",
-      "kitNumber": 48
-    },
-    {
       "apiId": 6716,
       "name": "A. Mac Allister",
       "position": "CM/CDM",
       "club": "Liverpool",
       "nation": "Argentina",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6716.png",
       "kitNumber": 10
@@ -200,7 +189,7 @@
       "position": "CDM/CM",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542.png",
       "kitNumber": 38
@@ -211,7 +200,7 @@
       "position": "CAM/CM",
       "club": "Liverpool",
       "nation": "Hungary",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1096.png",
       "kitNumber": 8
@@ -310,7 +299,7 @@
       "position": "LW/ST",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/247.png",
       "kitNumber": 18
@@ -321,7 +310,7 @@
       "position": "RW/ST",
       "club": "Liverpool",
       "nation": "Italy",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30410.png",
       "kitNumber": 14
@@ -380,6 +369,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/498377.png",
       "kitNumber": 79
+    },
+    {
+      "apiId": 286764,
+      "name": "Kaide Gordon",
+      "position": "ST",
+      "club": "Liverpool",
+      "nation": "The Football Association",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286764.png",
+      "kitNumber": 49
+    },
+    {
+      "apiId": 101814,
+      "name": "R. Araújo",
+      "position": "CB/RB",
+      "club": "Liverpool",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/101814.png",
+      "kitNumber": 4
     }
   ]
 }

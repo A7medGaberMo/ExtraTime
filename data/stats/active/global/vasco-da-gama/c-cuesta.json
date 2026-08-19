@@ -1,0 +1,47 @@
+{
+  "apiId": 13283,
+  "name": "C. Cuesta",
+  "clubs": [
+    {
+      "club": "Atlético Nacional",
+      "appearances": 73,
+      "goals": 0
+    },
+    {
+      "club": "Genk",
+      "appearances": 182,
+      "goals": 4
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 20,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia U17",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Colombia U20",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "team": "Colombia",
+      "appearances": 24,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 280,
+    "goals": 6
+  }
+}

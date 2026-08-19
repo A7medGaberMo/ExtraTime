@@ -145,7 +145,7 @@
       "position": "CAM/CM",
       "club": "Real Betis",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/745.png",
       "kitNumber": 22
@@ -244,7 +244,7 @@
       "position": "RW",
       "club": "Real Betis",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9971.png",
       "kitNumber": 7
@@ -281,17 +281,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47582.png",
       "kitNumber": 19
-    },
-    {
-      "apiId": 128985,
-      "name": "Iker Losada",
-      "position": "ST/CAM",
-      "club": "Real Betis",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/128985.png",
-      "kitNumber": 11
     },
     {
       "apiId": 443163,

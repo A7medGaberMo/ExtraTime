@@ -1,0 +1,62 @@
+{
+  "apiId": 62490,
+  "name": "S. Akaydin",
+  "clubs": [
+    {
+      "club": "Arsinspor",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Sancaktepe",
+      "appearances": 140,
+      "goals": 9
+    },
+    {
+      "club": "Şanlıurfaspor",
+      "appearances": 34,
+      "goals": 3
+    },
+    {
+      "club": "Ankara Keçiörengücü",
+      "appearances": 49,
+      "goals": 4
+    },
+    {
+      "club": "Adana Demirspor",
+      "appearances": 58,
+      "goals": 5
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Çaykur Rizespor",
+      "appearances": 43,
+      "goals": 4
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 19,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 381,
+    "goals": 26
+  }
+}

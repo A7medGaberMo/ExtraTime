@@ -1,0 +1,32 @@
+{
+  "apiId": 326068,
+  "name": "K. Doumbia",
+  "clubs": [
+    {
+      "club": "Reims II",
+      "appearances": 14,
+      "goals": 8
+    },
+    {
+      "club": "Reims",
+      "appearances": 39,
+      "goals": 4
+    },
+    {
+      "club": "Brest",
+      "appearances": 82,
+      "goals": 13
+    }
+  ],
+  "national": [
+    {
+      "team": "Mali",
+      "appearances": 32,
+      "goals": 15
+    }
+  ],
+  "careerTotal": {
+    "appearances": 135,
+    "goals": 25
+  }
+}

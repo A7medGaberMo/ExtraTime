@@ -1,0 +1,22 @@
+{
+  "apiId": 167659,
+  "name": "K. Olaigbe",
+  "clubs": [
+    {
+      "club": "FC Basel 1893",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

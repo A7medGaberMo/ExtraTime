@@ -1,0 +1,32 @@
+{
+  "apiId": 14553,
+  "name": "N. Labrović",
+  "clubs": [
+    {
+      "club": "Šibenik",
+      "appearances": 74,
+      "goals": 0
+    },
+    {
+      "club": "Rijeka",
+      "appearances": 109,
+      "goals": 0
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 201,
+    "goals": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 735,
+  "name": "Nacho",
+  "clubs": [
+    {
+      "club": "Real Madrid B",
+      "appearances": 364,
+      "goals": 16
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 242,
+      "goals": 12
+    },
+    {
+      "club": "Al-Qadsiah",
+      "appearances": 76,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U16",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Spain U17",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "team": "Spain U19",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "team": "Spain U21",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Spain",
+      "appearances": 29,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 682,
+    "goals": 29
+  }
+}

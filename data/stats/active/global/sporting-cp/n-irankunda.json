@@ -1,0 +1,57 @@
+{
+  "apiId": 338014,
+  "name": "N. Irankunda",
+  "clubs": [
+    {
+      "club": "Adelaide United Youth",
+      "appearances": 61,
+      "goals": 16
+    },
+    {
+      "club": "Adelaide United",
+      "appearances": 60,
+      "goals": 16
+    },
+    {
+      "club": "Bayern Munich II",
+      "appearances": 15,
+      "goals": 4
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Grasshopper",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Watford",
+      "appearances": 40,
+      "goals": 4
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Australia U17",
+      "appearances": 7,
+      "goals": 11
+    },
+    {
+      "team": "Australia",
+      "appearances": 19,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 195,
+    "goals": 41
+  }
+}

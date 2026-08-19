@@ -52,28 +52,6 @@
       "kitNumber": 20
     },
     {
-      "apiId": 47566,
-      "name": "Javi Galán",
-      "position": "LB",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47566.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 47277,
-      "name": "Unai Núñez",
-      "position": "CB",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47277.png",
-      "kitNumber": 4
-    },
-    {
       "apiId": 47988,
       "name": "C. Starfelt",
       "position": "CB",
@@ -105,17 +83,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/384135.png",
       "kitNumber": 32
-    },
-    {
-      "apiId": 64309,
-      "name": "Manu Sánchez",
-      "position": "LB",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/64309.png",
-      "kitNumber": 22
     },
     {
       "apiId": 157988,
@@ -195,17 +162,6 @@
       "kitNumber": 15
     },
     {
-      "apiId": 46711,
-      "name": "Aleix Febas",
-      "position": "CM",
-      "club": "Celta Vigo",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46711.png",
-      "kitNumber": 14
-    },
-    {
       "apiId": 182638,
       "name": "Manu Fernández",
       "position": "CM",
@@ -277,7 +233,7 @@
       "position": "ST/CAM",
       "club": "Celta Vigo",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47445.png",
       "kitNumber": 10
@@ -369,6 +325,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560931.png",
       "kitNumber": 37
+    },
+    {
+      "apiId": 50132,
+      "name": "A. Bayındır",
+      "position": "GK",
+      "club": "Celta Vigo",
+      "nation": "Turkey",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50132.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 437776,
+      "name": "A. Faye",
+      "position": "CB",
+      "club": "Celta Vigo",
+      "nation": "Senegal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/437776.png",
+      "kitNumber": 32
     }
   ]
 }

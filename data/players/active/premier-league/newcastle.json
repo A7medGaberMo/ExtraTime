@@ -52,23 +52,12 @@
       "kitNumber": 31
     },
     {
-      "apiId": 365988,
-      "name": "Aidan Harris",
-      "position": "GK",
-      "club": "Newcastle",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/365988.png",
-      "kitNumber": 1
-    },
-    {
       "apiId": 158694,
       "name": "T. Livramento",
       "position": "RB/LB",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158694.png",
       "kitNumber": 21
@@ -90,7 +79,7 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163189.png",
       "kitNumber": 12
@@ -101,7 +90,7 @@
       "position": "LB/LM",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284492.png",
       "kitNumber": 3
@@ -118,17 +107,6 @@
       "kitNumber": 33
     },
     {
-      "apiId": 318056,
-      "name": "A. Murphy",
-      "position": "CB",
-      "club": "Newcastle",
-      "nation": "Republic of Ireland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/318056.png",
-      "kitNumber": 37
-    },
-    {
       "apiId": 337934,
       "name": "L. Shahar",
       "position": "CB",
@@ -140,23 +118,12 @@
       "kitNumber": 51
     },
     {
-      "apiId": 10135,
-      "name": "Bruno Guimarães",
-      "position": "CDM/CM",
-      "club": "Newcastle",
-      "nation": "Brazil",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10135.png",
-      "kitNumber": 39
-    },
-    {
       "apiId": 723,
       "name": "Joelinton",
       "position": "CM/LW",
       "club": "Newcastle",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/723.png",
       "kitNumber": 7

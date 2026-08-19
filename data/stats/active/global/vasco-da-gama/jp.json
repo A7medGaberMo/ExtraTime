@@ -1,0 +1,21 @@
+{
+  "apiId": 454138,
+  "name": "JP",
+  "clubs": [
+    {
+      "club": "Vasco da Gama",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Avaí",
+      "appearances": 28,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 44,
+    "goals": 5
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "apiId": 306,
+  "name": "Mohamed Salah",
+  "clubs": [
+    {
+      "club": "Al-Mokawloon",
+      "appearances": 46,
+      "goals": 12
+    },
+    {
+      "club": "Basel",
+      "appearances": 79,
+      "goals": 20
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 19,
+      "goals": 2
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 16,
+      "goals": 6
+    },
+    {
+      "club": "Roma",
+      "appearances": 34,
+      "goals": 14
+    },
+    {
+      "club": "Roma",
+      "appearances": 31,
+      "goals": 15
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 442,
+      "goals": 257
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Egypt U20",
+      "appearances": 11,
+      "goals": 3
+    },
+    {
+      "team": "Egypt U23",
+      "appearances": 11,
+      "goals": 4
+    },
+    {
+      "team": "Egypt",
+      "appearances": 121,
+      "goals": 68
+    }
+  ],
+  "careerTotal": {
+    "appearances": 668,
+    "goals": 326
+  }
+}

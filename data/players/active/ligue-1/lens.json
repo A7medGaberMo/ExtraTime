@@ -184,17 +184,6 @@
       "kitNumber": 11
     },
     {
-      "apiId": 277306,
-      "name": "M. Sangaré",
-      "position": "CM/CDM",
-      "club": "Lens",
-      "nation": "Mali",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/277306.png",
-      "kitNumber": 8
-    },
-    {
       "apiId": 394950,
       "name": "A. Bulatović",
       "position": "CM",
@@ -292,17 +281,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/40809.png",
       "kitNumber": 44
-    },
-    {
-      "apiId": 326073,
-      "name": "R. Labeau Lascary",
-      "position": "ST/LW",
-      "club": "Lens",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/326073.png",
-      "kitNumber": 45
     },
     {
       "apiId": 443579,

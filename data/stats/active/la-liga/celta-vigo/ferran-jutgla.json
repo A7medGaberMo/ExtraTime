@@ -1,0 +1,46 @@
+{
+  "apiId": 122734,
+  "name": "Ferran Jutglà",
+  "clubs": [
+    {
+      "club": "Sant Julià de Vilatorta",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Sant Andreu",
+      "appearances": 51,
+      "goals": 8
+    },
+    {
+      "club": "Espanyol B",
+      "appearances": 52,
+      "goals": 12
+    },
+    {
+      "club": "Barcelona B",
+      "appearances": 32,
+      "goals": 19
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 148,
+      "goals": 40
+    },
+    {
+      "club": "Celta Vigo",
+      "appearances": 44,
+      "goals": 10
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 342,
+    "goals": 91
+  }
+}

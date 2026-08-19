@@ -1,0 +1,31 @@
+{
+  "apiId": 476862,
+  "name": "L. Bősze",
+  "clubs": [
+    {
+      "club": "1.R",
+      "appearances": 7,
+      "goals": 9
+    },
+    {
+      "club": "2.R",
+      "appearances": 2,
+      "goals": 4
+    },
+    {
+      "club": "2QR",
+      "appearances": 9,
+      "goals": 12
+    },
+    {
+      "club": "3QR",
+      "appearances": 6,
+      "goals": 13
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 24,
+    "goals": 38
+  }
+}

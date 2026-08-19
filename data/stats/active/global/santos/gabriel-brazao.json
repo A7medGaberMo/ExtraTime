@@ -1,0 +1,72 @@
+{
+  "apiId": 31007,
+  "name": "Gabriel Brazão",
+  "clubs": [
+    {
+      "club": "Cruzeiro",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Parma",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Albacete",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Oviedo",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "SPAL",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Ternana",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Santos",
+      "appearances": 125,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U15",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U17",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 133,
+    "goals": 0
+  }
+}

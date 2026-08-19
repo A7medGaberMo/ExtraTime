@@ -1,0 +1,36 @@
+{
+  "apiId": 265826,
+  "name": "A. Kinský",
+  "clubs": [
+    {
+      "club": "Dukla Prague",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Slavia Prague",
+      "appearances": 30,
+      "goals": 0
+    },
+    {
+      "club": "Vyškov",
+      "appearances": 47,
+      "goals": 0
+    },
+    {
+      "club": "Pardubice",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 20,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 122,
+    "goals": 0
+  }
+}

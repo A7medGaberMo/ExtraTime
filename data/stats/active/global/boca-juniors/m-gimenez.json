@@ -1,0 +1,42 @@
+{
+  "apiId": 59229,
+  "name": "M. Giménez",
+  "clubs": [
+    {
+      "club": "Cruz Azul",
+      "appearances": 105,
+      "goals": 21
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 105,
+      "goals": 65
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 37,
+      "goals": 7
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico U16",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Mexico",
+      "appearances": 51,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 259,
+    "goals": 94
+  }
+}

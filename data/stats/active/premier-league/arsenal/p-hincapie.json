@@ -1,0 +1,37 @@
+{
+  "apiId": 127817,
+  "name": "P. Hincapié",
+  "clubs": [
+    {
+      "club": "Independiente del Valle",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Talleres",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 166,
+      "goals": 7
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 39,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ecuador",
+      "appearances": 56,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 230,
+    "goals": 8
+  }
+}

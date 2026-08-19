@@ -1,0 +1,32 @@
+{
+  "apiId": 762,
+  "name": "Vinícius Júnior",
+  "clubs": [
+    {
+      "club": "Flamengo",
+      "appearances": 69,
+      "goals": 14
+    },
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 5,
+      "goals": 4
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 375,
+      "goals": 128
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 54,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 449,
+    "goals": 146
+  }
+}

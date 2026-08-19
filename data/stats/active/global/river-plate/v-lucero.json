@@ -1,0 +1,66 @@
+{
+  "apiId": 560468,
+  "name": "V. Lucero",
+  "clubs": [
+    {
+      "club": "Defensa y Justicia",
+      "appearances": 65,
+      "goals": 26
+    },
+    {
+      "club": "Independiente",
+      "appearances": 34,
+      "goals": 9
+    },
+    {
+      "club": "Johor Darul Ta'zim",
+      "appearances": 22,
+      "goals": 16
+    },
+    {
+      "club": "Tijuana",
+      "appearances": 61,
+      "goals": 13
+    },
+    {
+      "club": "Godoy Cruz",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "Defensa y Justicia",
+      "appearances": 11,
+      "goals": 5
+    },
+    {
+      "club": "Vélez Sarsfield",
+      "appearances": 48,
+      "goals": 14
+    },
+    {
+      "club": "Colo-Colo",
+      "appearances": 26,
+      "goals": 15
+    },
+    {
+      "club": "Fortaleza",
+      "appearances": 113,
+      "goals": 30
+    },
+    {
+      "club": "Universidad de Chile",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "River Plate",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 399,
+    "goals": 130
+  }
+}

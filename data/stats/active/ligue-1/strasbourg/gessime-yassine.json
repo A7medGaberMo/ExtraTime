@@ -1,0 +1,32 @@
+{
+  "apiId": 369544,
+  "name": "Gessime Yassine",
+  "clubs": [
+    {
+      "club": "Istres",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Dunkerque",
+      "appearances": 72,
+      "goals": 8
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Morocco",
+      "appearances": 7,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 92,
+    "goals": 8
+  }
+}

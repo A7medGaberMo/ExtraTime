@@ -1,0 +1,52 @@
+{
+  "apiId": 455386,
+  "name": "Y. Bright",
+  "clubs": [
+    {
+      "club": "Doncaster Belles",
+      "appearances": 53,
+      "goals": 4
+    },
+    {
+      "club": "Leeds Ladies",
+      "appearances": 13,
+      "goals": 6
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 294,
+      "goals": 17
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England U19",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "England U23",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "team": "England",
+      "appearances": 88,
+      "goals": 6
+    },
+    {
+      "team": "Great Britain",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 372,
+    "goals": 28
+  }
+}

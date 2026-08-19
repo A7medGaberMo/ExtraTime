@@ -1,0 +1,319 @@
+{
+  "club": {
+    "apiId": 1603,
+    "name": "Vancouver Whitecaps",
+    "logo": "https://media.api-sports.io/football/teams/1603.png",
+    "league": "Major League Soccer",
+    "leagueId": 253
+  },
+  "players": [
+    {
+      "apiId": 276531,
+      "name": "I. Boehmer",
+      "position": "GK",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/276531.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 33385,
+      "name": "Y. Takaoka",
+      "position": "GK",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/33385.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 51248,
+      "name": "A. Zendejas",
+      "position": "GK",
+      "club": "Vancouver Whitecaps",
+      "nation": "Mexico",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51248.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 39107,
+      "name": "S. Adekugbe",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "Canada",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39107.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 51027,
+      "name": "T. Blackmon",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "United States",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51027.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 426630,
+      "name": "Bruno Steven Caicedo Quiñonez",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/426630.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 515777,
+      "name": "N. Djordjevic",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/515777.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 374157,
+      "name": "M. Gherasimencov",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "Moldova",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/374157.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 363155,
+      "name": "T. Johnson",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/363155.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 51569,
+      "name": "M. Laborda",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51569.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 369284,
+      "name": "É. Ocampo",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/369284.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 45938,
+      "name": "R. Veselinović",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "Yugoslavia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/45938.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 644395,
+      "name": "Trevor Wright",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/644395.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 407583,
+      "name": "J. Badwal",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/407583.png",
+      "kitNumber": 59
+    },
+    {
+      "apiId": 288295,
+      "name": "K. Cabrera",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/288295.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 6236,
+      "name": "A. Cubas",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "Paraguay",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6236.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 44844,
+      "name": "R. Gauld",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44844.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 203206,
+      "name": "O. Larraz",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203206.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 407534,
+      "name": "Liam Mackenzie",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/407534.png",
+      "kitNumber": 97
+    },
+    {
+      "apiId": 191369,
+      "name": "J. Ngando",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191369.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 203436,
+      "name": "R. Priso",
+      "position": "CM",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203436.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 566059,
+      "name": "R. Elloumi",
+      "position": "ST",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/566059.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 522,
+      "name": "T. Müller",
+      "position": "CAM/CF",
+      "club": "Vancouver Whitecaps",
+      "nation": "Germany",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/522.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 338019,
+      "name": "K. Poku",
+      "position": "ST",
+      "club": "Vancouver Whitecaps",
+      "nation": "Ghana",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/338019.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 20534,
+      "name": "C. Sabaly",
+      "position": "CB",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20534.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 15783,
+      "name": "E. Sabbi",
+      "position": "ST",
+      "club": "Vancouver Whitecaps",
+      "nation": "Honduras",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/15783.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 467158,
+      "name": "Johnny Selemani",
+      "position": "ST",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/467158.png",
+      "kitNumber": 63
+    },
+    {
+      "apiId": 50969,
+      "name": "B. White",
+      "position": "ST",
+      "club": "Vancouver Whitecaps",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50969.png",
+      "kitNumber": 24
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 365018,
+  "name": "R. van Bommel",
+  "clubs": [
+    {
+      "club": "MVV",
+      "appearances": 31,
+      "goals": 15
+    },
+    {
+      "club": "AZ",
+      "appearances": 73,
+      "goals": 14
+    },
+    {
+      "club": "Jong AZ",
+      "appearances": 2,
+      "goals": 3
+    },
+    {
+      "club": "PSV",
+      "appearances": 11,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands U21",
+      "appearances": 11,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 117,
+    "goals": 37
+  }
+}

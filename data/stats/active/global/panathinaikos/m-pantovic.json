@@ -1,0 +1,52 @@
+{
+  "apiId": 154742,
+  "name": "M. Pantović",
+  "clubs": [
+    {
+      "club": "Red Star Belgrade",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Grafičar Beograd",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Voždovac",
+      "appearances": 69,
+      "goals": 13
+    },
+    {
+      "club": "Voždovac",
+      "appearances": 67,
+      "goals": 12
+    },
+    {
+      "club": "TSC",
+      "appearances": 90,
+      "goals": 28
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 17,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Serbia U21",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "team": "Serbia",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 249,
+    "goals": 55
+  }
+}

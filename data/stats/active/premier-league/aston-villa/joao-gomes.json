@@ -1,0 +1,33 @@
+{
+  "apiId": 195103,
+  "name": "João Gomes",
+  "clubs": [
+    {
+      "club": "Flamengo",
+      "appearances": 122,
+      "goals": 4
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 130,
+      "goals": 8
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 252,
+    "goals": 12
+  },
+  "currentTeam": "Aston Villa"
+}

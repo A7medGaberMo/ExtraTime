@@ -1,0 +1,77 @@
+{
+  "apiId": 37784,
+  "name": "S. Steijn",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 131,
+      "goals": 44
+    },
+    {
+      "club": "Ajax",
+      "appearances": 12,
+      "goals": 3
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Ajax",
+      "appearances": 11,
+      "goals": 7
+    },
+    {
+      "club": "Ajax",
+      "appearances": 92,
+      "goals": 35
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 32,
+      "goals": 7
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U15",
+      "appearances": 6,
+      "goals": 4
+    },
+    {
+      "team": "Netherlands U16",
+      "appearances": 5,
+      "goals": 5
+    },
+    {
+      "team": "Netherlands U17",
+      "appearances": 24,
+      "goals": 16
+    },
+    {
+      "team": "Netherlands U19",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Netherlands U21",
+      "appearances": 17,
+      "goals": 9
+    },
+    {
+      "team": "Netherlands",
+      "appearances": 16,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 299,
+    "goals": 97
+  }
+}

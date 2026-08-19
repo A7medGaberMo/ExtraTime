@@ -1,0 +1,62 @@
+{
+  "apiId": 1884,
+  "name": "A. Griezmann",
+  "clubs": [
+    {
+      "club": "Real Sociedad",
+      "appearances": 202,
+      "goals": 52
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 257,
+      "goals": 133
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 102,
+      "goals": 35
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 34,
+      "goals": 5
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 135,
+      "goals": 44
+    },
+    {
+      "club": "Orlando City",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "France U19",
+      "appearances": 7,
+      "goals": 3
+    },
+    {
+      "team": "France U20",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "France U21",
+      "appearances": 10,
+      "goals": 3
+    },
+    {
+      "team": "France",
+      "appearances": 137,
+      "goals": 44
+    }
+  ],
+  "careerTotal": {
+    "appearances": 734,
+    "goals": 270
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "apiId": 37186,
+  "name": "C. Dessers",
+  "clubs": [
+    {
+      "club": "OH Leuven",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Lokeren",
+      "appearances": 40,
+      "goals": 7
+    },
+    {
+      "club": "NAC Breda",
+      "appearances": 40,
+      "goals": 29
+    },
+    {
+      "club": "FC Utrecht",
+      "appearances": 56,
+      "goals": 19
+    },
+    {
+      "club": "Heracles Almelo",
+      "appearances": 29,
+      "goals": 18
+    },
+    {
+      "club": "Genk",
+      "appearances": 43,
+      "goals": 11
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 41,
+      "goals": 20
+    },
+    {
+      "club": "Cremonese",
+      "appearances": 29,
+      "goals": 7
+    },
+    {
+      "club": "Rangers",
+      "appearances": 116,
+      "goals": 52
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 9,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 11,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 405,
+    "goals": 167
+  }
+}

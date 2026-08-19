@@ -1,0 +1,57 @@
+{
+  "apiId": 51572,
+  "name": "M. Viña",
+  "clubs": [
+    {
+      "club": "Nacional",
+      "appearances": 49,
+      "goals": 5
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 68,
+      "goals": 5
+    },
+    {
+      "club": "Roma",
+      "appearances": 44,
+      "goals": 0
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "River Plate",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay U20",
+      "appearances": 27,
+      "goals": 4
+    },
+    {
+      "team": "Uruguay",
+      "appearances": 44,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 221,
+    "goals": 13
+  }
+}

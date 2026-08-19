@@ -1,0 +1,72 @@
+{
+  "apiId": 51031,
+  "name": "E. Segura",
+  "clubs": [
+    {
+      "club": "Envigado",
+      "appearances": 31,
+      "goals": 2
+    },
+    {
+      "club": "Watford",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Valladolid B",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Independiente Medellín",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Atlas",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Atlético Nacional",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "America de Cali",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Independiente Medellín",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Lokomotiv Plovdiv",
+      "appearances": 71,
+      "goals": 4
+    },
+    {
+      "club": "FC Zürich",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Los Angeles FC",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia U20",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 223,
+    "goals": 13
+  }
+}

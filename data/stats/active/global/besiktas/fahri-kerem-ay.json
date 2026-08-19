@@ -1,0 +1,37 @@
+{
+  "apiId": 361397,
+  "name": "Fahri Kerem Ay",
+  "clubs": [
+    {
+      "club": "Beşiktaş",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "İstanbulspor",
+      "appearances": 7,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U17",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Turkey U18",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 11,
+    "goals": 1
+  }
+}

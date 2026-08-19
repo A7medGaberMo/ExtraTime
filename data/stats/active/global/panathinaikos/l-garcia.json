@@ -1,0 +1,67 @@
+{
+  "apiId": 93059,
+  "name": "L. García",
+  "clubs": [
+    {
+      "club": "UNAM",
+      "appearances": 195,
+      "goals": 75
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 58,
+      "goals": 28
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "América",
+      "appearances": 78,
+      "goals": 39
+    },
+    {
+      "club": "Atlante",
+      "appearances": 29,
+      "goals": 14
+    },
+    {
+      "club": "Guadalajara",
+      "appearances": 56,
+      "goals": 20
+    },
+    {
+      "club": "Morelia",
+      "appearances": 17,
+      "goals": 8
+    },
+    {
+      "club": "Puebla",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico Olympic (O.P.)",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Mexico",
+      "appearances": 77,
+      "goals": 28
+    }
+  ],
+  "careerTotal": {
+    "appearances": 456,
+    "goals": 185
+  }
+}

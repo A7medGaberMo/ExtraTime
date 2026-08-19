@@ -1,0 +1,22 @@
+{
+  "apiId": 198483,
+  "name": "L. Bossin",
+  "clubs": [
+    {
+      "club": "Feyenoord",
+      "appearances": 85,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 0
+  }
+}

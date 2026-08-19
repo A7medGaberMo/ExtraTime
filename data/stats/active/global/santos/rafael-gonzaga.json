@@ -1,0 +1,37 @@
+{
+  "apiId": 609540,
+  "name": "Rafael Gonzaga",
+  "clubs": [
+    {
+      "club": "Santos",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U15",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U16",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U17",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 1,
+    "goals": 0
+  }
+}

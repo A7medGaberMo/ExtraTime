@@ -1,0 +1,56 @@
+{
+  "apiId": 345748,
+  "name": "A. Gómez",
+  "clubs": [
+    {
+      "club": "Unión Santa Fe",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Ibiza",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Atlético Madrid B",
+      "appearances": 38,
+      "goals": 1
+    },
+    {
+      "club": "Racing Ferrol",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Algeciras",
+      "appearances": 34,
+      "goals": 3
+    },
+    {
+      "club": "Badajoz",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Zürich",
+      "appearances": 52,
+      "goals": 1
+    },
+    {
+      "club": "Ferencvárosi TC",
+      "appearances": 14,
+      "goals": 3
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 217,
+    "goals": 10
+  }
+}

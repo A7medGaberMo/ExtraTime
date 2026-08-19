@@ -1,0 +1,47 @@
+{
+  "apiId": 133453,
+  "name": "Borja Sainz",
+  "clubs": [
+    {
+      "club": "Alavés B",
+      "appearances": 44,
+      "goals": 6
+    },
+    {
+      "club": "Alavés",
+      "appearances": 40,
+      "goals": 2
+    },
+    {
+      "club": "Zaragoza",
+      "appearances": 32,
+      "goals": 3
+    },
+    {
+      "club": "Giresunspor",
+      "appearances": 32,
+      "goals": 9
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 82,
+      "goals": 27
+    },
+    {
+      "club": "Porto",
+      "appearances": 27,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U19",
+      "appearances": 5,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 257,
+    "goals": 52
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 1646,
+  "name": "Lucas Paquetá",
+  "clubs": [
+    {
+      "club": "Flamengo",
+      "appearances": 95,
+      "goals": 18
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 44,
+      "goals": 1
+    },
+    {
+      "club": "Lyon",
+      "appearances": 80,
+      "goals": 21
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 139,
+      "goals": 23
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 19,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U20",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Brazil",
+      "appearances": 67,
+      "goals": 13
+    }
+  ],
+  "careerTotal": {
+    "appearances": 377,
+    "goals": 69
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "apiId": 610902,
+  "name": "A. Tekke",
+  "clubs": [
+    {
+      "club": "Trabzonspor",
+      "appearances": 140,
+      "goals": 91
+    },
+    {
+      "club": "Altay",
+      "appearances": 24,
+      "goals": 8
+    },
+    {
+      "club": "Gaziantepspor",
+      "appearances": 67,
+      "goals": 31
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 114,
+      "goals": 77
+    },
+    {
+      "club": "Zenit Saint Petersburg",
+      "appearances": 91,
+      "goals": 29
+    },
+    {
+      "club": "Rubin Kazan",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Ankaragücü",
+      "appearances": 9,
+      "goals": 3
+    },
+    {
+      "club": "Orduspor",
+      "appearances": 15,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 25,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 467,
+    "goals": 242
+  }
+}

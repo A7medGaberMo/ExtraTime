@@ -1,0 +1,57 @@
+{
+  "apiId": 1771,
+  "name": "Ayrton Lucas",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 58,
+      "goals": 0
+    },
+    {
+      "club": "Madureira",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Londrina",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "Spartak Moscow",
+      "appearances": 108,
+      "goals": 4
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 160,
+      "goals": 14
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 119,
+      "goals": 13
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U20",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U23",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Brazil",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 487,
+    "goals": 33
+  }
+}

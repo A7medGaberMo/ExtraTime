@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19465.png",
       "kitNumber": 1
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Arsenal",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22224.png",
       "kitNumber": 6
@@ -200,7 +200,7 @@
       "position": "CM/CAM",
       "club": "Arsenal",
       "nation": "Norway",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37127.png",
       "kitNumber": 8
@@ -211,7 +211,7 @@
       "position": "CDM/CM",
       "club": "Arsenal",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47315.png",
       "kitNumber": 36
@@ -233,21 +233,10 @@
       "position": "CAM/LW",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19586.png",
       "kitNumber": 10
-    },
-    {
-      "apiId": 30407,
-      "name": "C. Nørgaard",
-      "position": "CM",
-      "club": "Arsenal",
-      "nation": "Denmark",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30407.png",
-      "kitNumber": 16
     },
     {
       "apiId": 442044,
@@ -283,14 +272,14 @@
       "kitNumber": 7
     },
     {
-      "apiId": 18979,
+      "apiId": 162688,
       "name": "V. Gyökeres",
       "position": "ST",
       "club": "Arsenal",
       "nation": "Sweden",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18979.png",
+      "imageUrl": "https://media.api-sports.io/football/players/162688.png",
       "kitNumber": 14
     },
     {
@@ -299,7 +288,7 @@
       "position": "ST/CAM",
       "club": "Arsenal",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/978.png",
       "kitNumber": 29
@@ -338,17 +327,6 @@
       "kitNumber": 20
     },
     {
-      "apiId": 161800,
-      "name": "C. Tzolis",
-      "position": "ST",
-      "club": "Arsenal",
-      "nation": "Greece",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161800.png",
-      "kitNumber": 46
-    },
-    {
       "apiId": 463908,
       "name": "B. Bailey-Joseph",
       "position": "ST",
@@ -369,6 +347,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/457731.png",
       "kitNumber": 48
+    },
+    {
+      "apiId": 10135,
+      "name": "Bruno Guimarães",
+      "position": "CM",
+      "club": "Arsenal",
+      "nation": "Brazilian Football Confederation",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10135.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 161800,
+      "name": "Christos Tzolis",
+      "position": "LW/LM",
+      "club": "Arsenal",
+      "nation": "Greece",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161800.png",
+      "kitNumber": 8
     }
   ]
 }

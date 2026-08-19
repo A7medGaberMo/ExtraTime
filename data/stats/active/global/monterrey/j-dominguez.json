@@ -1,0 +1,22 @@
+{
+  "apiId": 436534,
+  "name": "J. Domínguez",
+  "clubs": [
+    {
+      "club": "CF Monterrey",
+      "appearances": 32,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 32,
+    "goals": 1
+  }
+}

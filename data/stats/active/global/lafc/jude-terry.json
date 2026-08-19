@@ -1,0 +1,32 @@
+{
+  "apiId": 461627,
+  "name": "Jude Terry",
+  "clubs": [
+    {
+      "club": "Los Angeles FC 2",
+      "appearances": 38,
+      "goals": 1
+    },
+    {
+      "club": "Los Angeles FC",
+      "appearances": 2,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "United States U15",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "team": "United States U17",
+      "appearances": 9,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 40,
+    "goals": 2
+  }
+}

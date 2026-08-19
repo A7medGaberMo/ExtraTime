@@ -6,19 +6,27 @@ import { Id } from "../../convex/_generated/dataModel";
 
 export function useGuestSession(redirectToHomeIfMissing = false) {
   const router = useRouter();
-  const [guestId, setGuestId] = useState<Id<"guestUsers"> | null>(() => {
-    if (typeof window !== "undefined") {
+  const [guestId, setGuestId] = useState<Id<"guestUsers"> | null>(null);
+  const [hydrated, setHydrated] = useState(false);
+
+  // Read the persisted id client-only. The server always renders with
+  // guestId null, so reading in an effect keeps SSR and the first client
+  // render identical (prevents hydration mismatches).
+  useEffect(() => {
+    try {
       const stored = localStorage.getItem("extratime_guestId");
-      return stored ? (stored as Id<"guestUsers">) : null;
+      if (stored) setGuestId(stored as Id<"guestUsers">);
+    } catch {
+      // storage unavailable — stay anonymous
     }
-    return null;
-  });
+    setHydrated(true);
+  }, []);
 
   useEffect(() => {
-    if (redirectToHomeIfMissing && !guestId) {
+    if (redirectToHomeIfMissing && hydrated && !guestId) {
       router.push("/");
     }
-  }, [redirectToHomeIfMissing, guestId, router]);
+  }, [redirectToHomeIfMissing, hydrated, guestId, router]);
 
   const saveGuestId = (id: Id<"guestUsers">) => {
     localStorage.setItem("extratime_guestId", id);

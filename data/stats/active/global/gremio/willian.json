@@ -1,0 +1,72 @@
+{
+  "apiId": 2294,
+  "name": "Willian",
+  "clubs": [
+    {
+      "club": "Corinthians",
+      "appearances": 45,
+      "goals": 2
+    },
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 221,
+      "goals": 37
+    },
+    {
+      "club": "Anzhi Makhachkala",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 339,
+      "goals": 63
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 35,
+      "goals": 1
+    },
+    {
+      "club": "Fulham",
+      "appearances": 67,
+      "goals": 10
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Fulham",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 28,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U20",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "team": "Brazil",
+      "appearances": 70,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 793,
+    "goals": 117
+  }
+}

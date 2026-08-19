@@ -1,0 +1,41 @@
+{
+  "apiId": 33385,
+  "name": "Y. Takaoka",
+  "clubs": [
+    {
+      "club": "Yokohama FC",
+      "appearances": 42,
+      "goals": 0
+    },
+    {
+      "club": "J.League U-22 Selection",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Sagan Tosu",
+      "appearances": 49,
+      "goals": 0
+    },
+    {
+      "club": "Sagan Tosu",
+      "appearances": 40,
+      "goals": 0
+    },
+    {
+      "club": "Yokohama F. Marinos",
+      "appearances": 92,
+      "goals": 0
+    },
+    {
+      "club": "Vancouver Whitecaps",
+      "appearances": 127,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 354,
+    "goals": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "apiId": 154839,
+  "name": "Geny Catamo",
+  "clubs": [
+    {
+      "club": "Amora",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Sporting CP B",
+      "appearances": 130,
+      "goals": 21
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 87,
+      "goals": 16
+    },
+    {
+      "club": "Vitória Guimarães",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Marítimo",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Marítimo B",
+      "appearances": 1,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mozambique U17",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Mozambique U20",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "team": "Mozambique",
+      "appearances": 43,
+      "goals": 14
+    }
+  ],
+  "careerTotal": {
+    "appearances": 241,
+    "goals": 40
+  }
+}

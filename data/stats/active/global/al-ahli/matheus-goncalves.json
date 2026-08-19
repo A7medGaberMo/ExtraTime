@@ -1,0 +1,26 @@
+{
+  "apiId": 352372,
+  "name": "Matheus Gonçalves",
+  "clubs": [
+    {
+      "club": "Flamengo",
+      "appearances": 50,
+      "goals": 6
+    },
+    {
+      "club": "Red Bull Bragantino",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 22,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 84,
+    "goals": 8
+  }
+}

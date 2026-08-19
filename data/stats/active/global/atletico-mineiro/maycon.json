@@ -1,0 +1,26 @@
+{
+  "apiId": 687,
+  "name": "Maycon",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 19,
+    "goals": 3
+  }
+}

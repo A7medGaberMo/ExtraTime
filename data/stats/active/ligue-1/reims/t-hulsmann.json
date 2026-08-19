@@ -1,0 +1,31 @@
+{
+  "apiId": 280429,
+  "name": "T. Hülsmann",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "SKN St. Pölten",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "TSV Hartberg",
+      "appearances": 20,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 74,
+    "goals": 0
+  }
+}

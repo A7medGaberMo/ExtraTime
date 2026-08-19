@@ -68,7 +68,7 @@
       "position": "LB/LWB",
       "club": "Bayern München",
       "nation": "Canada",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/509.png",
       "kitNumber": 19
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Bayern München",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/972.png",
       "kitNumber": 4
@@ -90,7 +90,7 @@
       "position": "CB",
       "club": "Bayern München",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1149.png",
       "kitNumber": 2
@@ -189,7 +189,7 @@
       "position": "CAM/LW/RW",
       "club": "Bayern München",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181812.png",
       "kitNumber": 10
@@ -200,7 +200,7 @@
       "position": "CDM/CM/RB",
       "club": "Bayern München",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/502.png",
       "kitNumber": 6
@@ -376,7 +376,7 @@
       "position": "LW/LM",
       "club": "Bayern München",
       "nation": "Colombia",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2489.png",
       "kitNumber": 14
@@ -391,17 +391,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/510.png",
       "kitNumber": 7
-    },
-    {
-      "apiId": 280339,
-      "name": "A. Sieb",
-      "position": "ST/CAM",
-      "club": "Bayern München",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/280339.png",
-      "kitNumber": 11
     },
     {
       "apiId": 657672,

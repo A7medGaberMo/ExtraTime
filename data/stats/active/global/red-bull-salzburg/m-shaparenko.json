@@ -1,0 +1,47 @@
+{
+  "apiId": 2177,
+  "name": "M. Shaparenko",
+  "clubs": [
+    {
+      "club": "Illichivets Mariupol",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 252,
+      "goals": 32
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U18",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U19",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 51,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 266,
+    "goals": 34
+  }
+}

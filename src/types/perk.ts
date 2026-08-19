@@ -38,7 +38,7 @@ export const PERK_REGISTRY: Record<PerkId, PerkDefinition> = {
     description: 'Freezes the bidding timer giving you extra decision time in critical rounds.',
     icon: 'Snowflake',
     accentColor: '#06B6D4',
-    applicableGameTypes: ['squad_draft'],
+    applicableGameTypes: ['hidden_bid'],
   },
   SHIELD: {
     id: 'SHIELD',
@@ -47,7 +47,7 @@ export const PERK_REGISTRY: Record<PerkId, PerkDefinition> = {
     description: 'Protects 20% of your remaining budget if outbid on an ICON player.',
     icon: 'Shield',
     accentColor: '#10B981',
-    applicableGameTypes: ['squad_draft'],
+    applicableGameTypes: ['hidden_bid'],
   },
 };
 

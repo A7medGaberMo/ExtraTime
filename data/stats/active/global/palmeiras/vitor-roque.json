@@ -1,5 +1,5 @@
 {
-  "apiId": 342203,
+  "apiId": 340279,
   "name": "Vitor Roque",
   "clubs": [
     {
@@ -14,21 +14,31 @@
     },
     {
       "club": "Barcelona",
-      "appearances": 16,
+      "appearances": 14,
       "goals": 2
     },
     {
       "club": "Betis",
-      "appearances": 33,
-      "goals": 7
+      "appearances": 22,
+      "goals": 4
     },
     {
       "club": "Palmeiras",
-      "appearances": 79,
+      "appearances": 81,
       "goals": 26
     }
   ],
   "national": [
+    {
+      "team": "Brazil U20",
+      "appearances": 12,
+      "goals": 8
+    },
+    {
+      "team": "Brazil U23",
+      "appearances": 1,
+      "goals": 0
+    },
     {
       "team": "Brazil",
       "appearances": 2,
@@ -36,7 +46,7 @@
     }
   ],
   "careerTotal": {
-    "appearances": 225,
-    "goals": 69
+    "appearances": 214,
+    "goals": 66
   }
 }

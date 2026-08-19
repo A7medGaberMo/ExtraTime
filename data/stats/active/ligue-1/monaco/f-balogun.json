@@ -1,0 +1,42 @@
+{
+  "apiId": 138835,
+  "name": "F. Balogun",
+  "clubs": [
+    {
+      "club": "Arsenal U21",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Reims",
+      "appearances": 39,
+      "goals": 22
+    },
+    {
+      "club": "Monaco",
+      "appearances": 91,
+      "goals": 31
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 31,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 166,
+    "goals": 61
+  }
+}

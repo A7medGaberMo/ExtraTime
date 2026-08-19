@@ -1,0 +1,37 @@
+{
+  "apiId": 22236,
+  "name": "Rafael Leão",
+  "clubs": [
+    {
+      "club": "Sporting CP B",
+      "appearances": 12,
+      "goals": 7
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Lille",
+      "appearances": 26,
+      "goals": 8
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 291,
+      "goals": 80
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 49,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 333,
+    "goals": 96
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 50788,
+  "name": "M. Choinière",
+  "clubs": [
+    {
+      "club": "CF Montréal",
+      "appearances": 139,
+      "goals": 12
+    },
+    {
+      "club": "Grasshopper",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Los Angeles FC",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Los Angeles FC",
+      "appearances": 20,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Canada U20",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Canada U21",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "Canada",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "team": "Canada B",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 186,
+    "goals": 16
+  }
+}

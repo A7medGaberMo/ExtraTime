@@ -1,0 +1,52 @@
+{
+  "apiId": 2172,
+  "name": "V. Buyalskyi",
+  "clubs": [
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 403,
+      "goals": 90
+    },
+    {
+      "club": "Hoverla Uzhhorod",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U18",
+      "appearances": 8,
+      "goals": 3
+    },
+    {
+      "team": "Ukraine U19",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "team": "Ukraine U20",
+      "appearances": 2,
+      "goals": 2
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 435,
+    "goals": 94
+  }
+}

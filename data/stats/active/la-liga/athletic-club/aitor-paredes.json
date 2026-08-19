@@ -1,0 +1,32 @@
+{
+  "apiId": 183849,
+  "name": "Aitor Paredes",
+  "clubs": [
+    {
+      "club": "Basconia",
+      "appearances": 49,
+      "goals": 2
+    },
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 55,
+      "goals": 4
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 119,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 223,
+    "goals": 12
+  }
+}

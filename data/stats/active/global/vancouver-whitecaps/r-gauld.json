@@ -1,0 +1,72 @@
+{
+  "apiId": 44844,
+  "name": "R. Gauld",
+  "clubs": [
+    {
+      "club": "Dundee United",
+      "appearances": 50,
+      "goals": 9
+    },
+    {
+      "club": "Sporting CP B",
+      "appearances": 73,
+      "goals": 8
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Vitória de Setúbal",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Aves",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Farense",
+      "appearances": 58,
+      "goals": 18
+    },
+    {
+      "club": "Hibernian",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Farense",
+      "appearances": 54,
+      "goals": 18
+    },
+    {
+      "club": "Vancouver Whitecaps FC",
+      "appearances": 158,
+      "goals": 48
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland U19",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "team": "Scotland U21",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "team": "Scotland",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 423,
+    "goals": 102
+  }
+}

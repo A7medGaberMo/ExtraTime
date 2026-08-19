@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Bayer Leverkusen",
       "nation": "Burkina Faso",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41150.png",
       "kitNumber": 40
@@ -72,17 +72,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174918.png",
       "kitNumber": 5
-    },
-    {
-      "apiId": 757,
-      "name": "Lucas Vázquez",
-      "position": "RB/RWB",
-      "club": "Bayer Leverkusen",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/757.png",
-      "kitNumber": 21
     },
     {
       "apiId": 158698,
@@ -129,17 +118,6 @@
       "kitNumber": 15
     },
     {
-      "apiId": 437776,
-      "name": "A. Faye",
-      "position": "CB",
-      "club": "Bayer Leverkusen",
-      "nation": "Senegal",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/437776.png",
-      "kitNumber": 32
-    },
-    {
       "apiId": 456187,
       "name": "Luca Erlein",
       "position": "CB",
@@ -156,7 +134,7 @@
       "position": "CM/CDM",
       "club": "Bayer Leverkusen",
       "nation": "Argentina",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6002.png",
       "kitNumber": 25
@@ -167,7 +145,7 @@
       "position": "CDM/CM/CB",
       "club": "Bayer Leverkusen",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24903.png",
       "kitNumber": 8
@@ -294,17 +272,6 @@
       "kitNumber": 45
     },
     {
-      "apiId": 493409,
-      "name": "J. Mensah",
-      "position": "CM",
-      "club": "Bayer Leverkusen",
-      "nation": "Ghana",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/493409.png",
-      "kitNumber": 46
-    },
-    {
       "apiId": 491103,
       "name": "A. Tape",
       "position": "CM",
@@ -321,7 +288,7 @@
       "position": "ST",
       "club": "Bayer Leverkusen",
       "nation": "Nigeria",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/39071.png",
       "kitNumber": 22
@@ -382,17 +349,6 @@
       "kitNumber": 9
     },
     {
-      "apiId": 395559,
-      "name": "Kerim-Sam Alajbegović",
-      "position": "LW/CAM",
-      "club": "Bayer Leverkusen",
-      "nation": "Bosnia and Herzegovina",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/395559.png",
-      "kitNumber": 27
-    },
-    {
       "apiId": 389035,
       "name": "Farid Alfa-Ruprecht",
       "position": "RW",
@@ -435,6 +391,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/505295.png",
       "kitNumber": 35
+    },
+    {
+      "apiId": 182705,
+      "name": "Miguel Gutiérrez",
+      "position": "LB/LM",
+      "club": "Bayer Leverkusen",
+      "nation": "Spain",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182705.png",
+      "kitNumber": 3
     }
   ]
 }

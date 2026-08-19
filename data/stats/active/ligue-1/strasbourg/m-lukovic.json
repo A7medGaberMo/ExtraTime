@@ -1,0 +1,36 @@
+{
+  "apiId": 346700,
+  "name": "M. Luković",
+  "clubs": [
+    {
+      "club": "IMT",
+      "appearances": 99,
+      "goals": 41
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Heerenveen",
+      "appearances": 14,
+      "goals": 3
+    },
+    {
+      "club": "Las Palmas",
+      "appearances": 18,
+      "goals": 4
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 134,
+    "goals": 48
+  }
+}

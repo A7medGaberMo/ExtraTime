@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Shield, Layers, HelpCircle } from "lucide-react";
+import { PlayerImage } from "./player-image";
 
 /* ── Types ─────────────────────────────────────────────────── */
 export interface TacticalSquadSlot {
@@ -41,12 +42,12 @@ interface TacticalPitchProps {
 
 /* ── Tier Priority (stronger players are placed first) ────── */
 const TIER_PRIORITY: Record<string, number> = {
-  ICON: 8, HERO: 7, MASTER: 6, ELITE_PLUS: 5, ELITE: 4, GOLD: 3, SILVER: 2, BRONZE: 1,
+  ICON: 8, HERO: 7, ULTIMATE: 6, MASTER: 5, ELITE: 4, GOLD: 3, SILVER: 2, BRONZE: 1,
 };
 
 /* ── Tier Colors ──────────────────────────────────────────── */
 const TIER_COLORS: Record<string, string> = {
-  ICON: "#D4AF37", HERO: "#10B981", MASTER: "#A855F7", ELITE_PLUS: "#0EA5E9",
+  ICON: "#D4AF37", HERO: "#10B981", ULTIMATE: "#0EA5E9", MASTER: "#A855F7",
   ELITE: "#E11D48", GOLD: "#EAB308", SILVER: "#CBD5E1", BRONZE: "#C97A3A",
 };
 
@@ -380,16 +381,14 @@ export function TacticalPitch({
                     >
                       <div className="relative rounded-xl border-2 shadow-lg bg-slate-950 flex items-center justify-center"
                         style={{ width: nodeSize, height: nodeSize, borderColor: tierColor, boxShadow: `0 0 16px ${tierColor}45` }}>
-                        {player.imageUrl ? (
-                          // eslint-disable-next-line @next/next/no-img-element
-                          <img src={player.imageUrl} alt={player.name} className="w-full h-full object-cover rounded-[10px]"
-                            onError={(e) => { e.currentTarget.style.display = "none"; }} />
-                        ) : (
-                          <div className="w-full h-full rounded-[10px] flex items-center justify-center font-black text-[9px] uppercase"
-                            style={{ backgroundColor: `${tierColor}20`, color: tierColor }}>
-                            {player.name?.split(" ").map(n => n[0]).slice(0, 2).join("")}
-                          </div>
-                        )}
+                        <PlayerImage
+                          src={player.imageUrl}
+                          alt={player.name}
+                          name={player.name}
+                          className="rounded-[10px]"
+                          imgClassName="rounded-[10px]"
+                          fallbackClassName="rounded-[10px]"
+                        />
 
                         {/* Position indicator */}
                         <span className="absolute -top-1.5 -left-1.5 px-1.5 py-0.2 text-[7px] font-black uppercase rounded border shadow-md"
@@ -455,14 +454,15 @@ export function TacticalPitch({
               return (
                 <div key={sIdx} className="flex items-center gap-2 p-1.5 rounded-lg bg-slate-950/80 border border-white/10 shadow-sm"
                   style={{ borderColor: `${subTierColor}30` }}>
-                  <div className="w-7 h-7 rounded bg-slate-900 border flex items-center justify-center shrink-0"
+                  <div className="w-7 h-7 rounded bg-slate-900 border flex items-center justify-center shrink-0 overflow-hidden"
                     style={{ borderColor: subTierColor }}>
-                    {sub.player?.imageUrl ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img src={sub.player.imageUrl} alt={sub.player.name} className="w-full h-full object-cover rounded" />
-                    ) : (
-                      <span className="text-[8px] font-black text-white">{sub.player?.name?.slice(0, 2).toUpperCase()}</span>
-                    )}
+                    <PlayerImage
+                      src={sub.player?.imageUrl}
+                      alt={sub.player?.name}
+                      name={sub.player?.name}
+                      className="rounded"
+                      imgClassName="rounded"
+                    />
                   </div>
                   <div className="flex flex-col min-w-0 pr-1">
                     <span className="text-[9px] font-black text-white truncate max-w-[80px] leading-tight">{sub.player?.name?.split(" ").pop()}</span>

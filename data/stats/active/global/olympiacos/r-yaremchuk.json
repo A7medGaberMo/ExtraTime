@@ -1,0 +1,87 @@
+{
+  "apiId": 8493,
+  "name": "R. Yaremchuk",
+  "clubs": [
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Dynamo-2 Kyiv",
+      "appearances": 42,
+      "goals": 7
+    },
+    {
+      "club": "Oleksandriya",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "club": "Gent",
+      "appearances": 152,
+      "goals": 61
+    },
+    {
+      "club": "Benfica",
+      "appearances": 47,
+      "goals": 9
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 25,
+      "goals": 2
+    },
+    {
+      "club": "Valencia",
+      "appearances": 25,
+      "goals": 3
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 48,
+      "goals": 14
+    },
+    {
+      "club": "Lyon",
+      "appearances": 11,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U16",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine U17",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine U18",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U19",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 69,
+      "goals": 18
+    }
+  ],
+  "careerTotal": {
+    "appearances": 375,
+    "goals": 105
+  }
+}

@@ -1,10 +1,42 @@
 {
   "apiId": 24760,
   "name": "G. Mamardashvili",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Dinamo Tbilisi",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Rustavi",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Locomotive Tbilisi",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Valencia",
+      "appearances": 134,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 20,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Georgia",
+      "appearances": 38,
+      "goals": 0
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
+    "appearances": 221,
     "goals": 0
   }
 }

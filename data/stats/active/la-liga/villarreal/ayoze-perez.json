@@ -1,0 +1,47 @@
+{
+  "apiId": 18906,
+  "name": "Ayoze Pérez",
+  "clubs": [
+    {
+      "club": "Tenerife B",
+      "appearances": 35,
+      "goals": 11
+    },
+    {
+      "club": "Tenerife",
+      "appearances": 51,
+      "goals": 17
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 195,
+      "goals": 48
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 114,
+      "goals": 15
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 59,
+      "goals": 15
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 65,
+      "goals": 29
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 5,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 519,
+    "goals": 135
+  }
+}

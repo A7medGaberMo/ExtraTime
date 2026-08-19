@@ -1,0 +1,26 @@
+{
+  "apiId": 2204,
+  "name": "B. André",
+  "clubs": [
+    {
+      "club": "Ajaccio",
+      "appearances": 206,
+      "goals": 12
+    },
+    {
+      "club": "Rennes",
+      "appearances": 184,
+      "goals": 10
+    },
+    {
+      "club": "Lille",
+      "appearances": 285,
+      "goals": 14
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 675,
+    "goals": 36
+  }
+}

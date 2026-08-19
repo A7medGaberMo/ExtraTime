@@ -1,0 +1,52 @@
+{
+  "apiId": 337587,
+  "name": "J. Bos",
+  "clubs": [
+    {
+      "club": "Melbourne City NPL",
+      "appearances": 37,
+      "goals": 2
+    },
+    {
+      "club": "Melbourne City",
+      "appearances": 50,
+      "goals": 3
+    },
+    {
+      "club": "Westerlo",
+      "appearances": 51,
+      "goals": 8
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 28,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Australia U17",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Australia U20",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Australia U23",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Australia",
+      "appearances": 31,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 166,
+    "goals": 17
+  }
+}

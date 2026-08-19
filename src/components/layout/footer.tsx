@@ -7,6 +7,7 @@ import { Users } from 'lucide-react';
 
 export function Footer() {
   const dbStats = useQuery(api.players.queries.getStats);
+  const playerCount = dbStats === undefined ? '...' : dbStats.totalPlayers.toLocaleString();
 
   return (
     <footer className="w-full border-t border-border/40 bg-slate-950/40 backdrop-blur-md py-4 pb-20 md:pb-6">
@@ -33,7 +34,7 @@ export function Footer() {
           <Users className="w-3.5 h-3.5 text-lime" />
           <span>Database:</span>
           <span className="text-white font-black font-stats">
-            {dbStats?.totalPlayers ? dbStats.totalPlayers.toLocaleString() : '3,320'} Players
+            {playerCount} Players
           </span>
         </div>
       </div>

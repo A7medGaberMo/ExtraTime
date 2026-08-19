@@ -1,0 +1,26 @@
+{
+  "apiId": 471106,
+  "name": "E. Molébé",
+  "clubs": [
+    {
+      "club": "Lyon B",
+      "appearances": 21,
+      "goals": 6
+    },
+    {
+      "club": "Lyon",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Montpellier",
+      "appearances": 12,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 38,
+    "goals": 8
+  }
+}

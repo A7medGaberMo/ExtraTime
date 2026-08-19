@@ -195,17 +195,6 @@
       "kitNumber": 14
     },
     {
-      "apiId": 187987,
-      "name": "Ramón Terrats",
-      "position": "CM",
-      "club": "Getafe",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/187987.png",
-      "kitNumber": 11
-    },
-    {
       "apiId": 551460,
       "name": "A. R. Alcantara",
       "position": "CM",
@@ -281,6 +270,50 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/184459.png",
       "kitNumber": 18
+    },
+    {
+      "apiId": 47499,
+      "name": "E. Ünal",
+      "position": "ST",
+      "club": "Getafe",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47499.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 24882,
+      "name": "O. Mangala",
+      "position": "CM/CDM",
+      "club": "Getafe",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24882.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 64268,
+      "name": "J. Mojica",
+      "position": "LB/LM",
+      "club": "Getafe",
+      "nation": "Colombia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64268.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 757,
+      "name": "Lucas Vázquez",
+      "position": "RB/RWB",
+      "club": "Getafe",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/757.png",
+      "kitNumber": 21
     }
   ]
 }

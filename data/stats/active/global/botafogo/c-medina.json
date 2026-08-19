@@ -1,0 +1,56 @@
+{
+  "apiId": 237186,
+  "name": "C. Medina",
+  "clubs": [
+    {
+      "club": "Naval",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "club": "Moura",
+      "appearances": 61,
+      "goals": 3
+    },
+    {
+      "club": "Sintrense",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Pinhalnovense",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Académico Viseu",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Chaves",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Qarabağ",
+      "appearances": 121,
+      "goals": 3
+    },
+    {
+      "club": "Johor Darul Ta'zim",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 275,
+    "goals": 11
+  }
+}

@@ -1,10 +1,47 @@
 {
   "apiId": 32893,
   "name": "H. Ito",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Gyeongju KHNP",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Jeonbuk Hyundai Motors",
+      "appearances": 60,
+      "goals": 3
+    },
+    {
+      "club": "Beijing Guoan",
+      "appearances": 59,
+      "goals": 0
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 40,
+      "goals": 1
+    },
+    {
+      "club": "Napoli",
+      "appearances": 45,
+      "goals": 2
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 116,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "South Korea",
+      "appearances": 82,
+      "goals": 4
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 337,
+    "goals": 11
   }
 }

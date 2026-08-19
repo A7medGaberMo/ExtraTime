@@ -1,0 +1,36 @@
+{
+  "apiId": 303016,
+  "name": "M. Oyedele",
+  "clubs": [
+    {
+      "club": "Manchester United U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Altrincham",
+      "appearances": 12,
+      "goals": 4
+    },
+    {
+      "club": "Forest Green Rovers",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Legia Warsaw",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 13,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 57,
+    "goals": 5
+  }
+}

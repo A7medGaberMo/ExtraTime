@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Atletico Madrid",
       "nation": "Slovenia",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/29.png",
       "kitNumber": 13
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47301.png",
       "kitNumber": 24
@@ -79,7 +79,7 @@
       "position": "LB/LM",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/563.png",
       "kitNumber": 20
@@ -105,17 +105,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30399.png",
       "kitNumber": 17
-    },
-    {
-      "apiId": 6503,
-      "name": "N. Molina",
-      "position": "RB/RM",
-      "club": "Atletico Madrid",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6503.png",
-      "kitNumber": 16
     },
     {
       "apiId": 295793,
@@ -162,17 +151,6 @@
       "kitNumber": 28
     },
     {
-      "apiId": 386869,
-      "name": "Dani Martínez",
-      "position": "CB",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/386869.png",
-      "kitNumber": 35
-    },
-    {
       "apiId": 428799,
       "name": "A. Puric",
       "position": "CB",
@@ -195,14 +173,14 @@
       "kitNumber": 12
     },
     {
-      "apiId": 753,
+      "apiId": 758,
       "name": "Marcos Llorente",
       "position": "RB/CM",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/753.png",
+      "imageUrl": "https://media.api-sports.io/football/players/758.png",
       "kitNumber": 14
     },
     {
@@ -332,7 +310,7 @@
       "position": "CAM/LW",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182219.png",
       "kitNumber": 10
@@ -343,21 +321,10 @@
       "position": "ST/LW",
       "club": "Atletico Madrid",
       "nation": "Nigeria",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18767.png",
       "kitNumber": 22
-    },
-    {
-      "apiId": 6067,
-      "name": "T. Almada",
-      "position": "CAM/LW",
-      "club": "Atletico Madrid",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6067.png",
-      "kitNumber": 11
     },
     {
       "apiId": 8492,
@@ -369,17 +336,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8492.png",
       "kitNumber": 9
-    },
-    {
-      "apiId": 323935,
-      "name": "G. Simeone",
-      "position": "RW/RM",
-      "club": "Atletico Madrid",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/323935.png",
-      "kitNumber": 25
     },
     {
       "apiId": 443668,
@@ -402,6 +358,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/548706.png",
       "kitNumber": 39
+    },
+    {
+      "apiId": 30776,
+      "name": "C. Romero",
+      "position": "CB",
+      "club": "Atletico Madrid",
+      "nation": "Argentina",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30776.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 323935,
+      "name": "G. Simeone",
+      "position": "RW/RM",
+      "club": "Atletico Madrid",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/323935.png",
+      "kitNumber": 22
     }
   ]
 }

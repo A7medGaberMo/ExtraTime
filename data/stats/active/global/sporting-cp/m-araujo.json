@@ -1,0 +1,57 @@
+{
+  "apiId": 51776,
+  "name": "M. Araújo",
+  "clubs": [
+    {
+      "club": "Rentistas",
+      "appearances": 17,
+      "goals": 7
+    },
+    {
+      "club": "Boston River",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona B",
+      "appearances": 213,
+      "goals": 14
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 143,
+      "goals": 11
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay U18",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Uruguay U20",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "team": "Uruguay",
+      "appearances": 27,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 416,
+    "goals": 33
+  }
+}

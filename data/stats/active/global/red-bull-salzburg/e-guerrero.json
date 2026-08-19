@@ -1,0 +1,87 @@
+{
+  "apiId": 95105,
+  "name": "E. Guerrero",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 66,
+      "goals": 45
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 27,
+      "goals": 10
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 183,
+      "goals": 51
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 126,
+      "goals": 52
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 113,
+      "goals": 43
+    },
+    {
+      "club": "Internacional",
+      "appearances": 72,
+      "goals": 32
+    },
+    {
+      "club": "Avaí",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Racing Club",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "LDU Quito",
+      "appearances": 13,
+      "goals": 5
+    },
+    {
+      "club": "Universidad César Vallejo",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "club": "Alianza Lima",
+      "appearances": 61,
+      "goals": 26
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Peru U17",
+      "appearances": 20,
+      "goals": 9
+    },
+    {
+      "team": "Peru U23",
+      "appearances": 4,
+      "goals": 3
+    },
+    {
+      "team": "Peru",
+      "appearances": 128,
+      "goals": 40
+    }
+  ],
+  "careerTotal": {
+    "appearances": 704,
+    "goals": 269
+  }
+}

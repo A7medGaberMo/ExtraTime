@@ -1,0 +1,52 @@
+{
+  "apiId": 333425,
+  "name": "C. Bustos",
+  "clubs": [
+    {
+      "club": "Deportivo Saprissa",
+      "appearances": 168,
+      "goals": 11
+    },
+    {
+      "club": "Cartaginés",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Herediano",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "San Carlos",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "CF Monterrey",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Costa Rica U17",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Costa Rica U20",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "team": "Costa Rica",
+      "appearances": 5,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 219,
+    "goals": 16
+  }
+}

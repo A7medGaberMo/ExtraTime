@@ -1,0 +1,22 @@
+{
+  "apiId": 2610,
+  "name": "G. González",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

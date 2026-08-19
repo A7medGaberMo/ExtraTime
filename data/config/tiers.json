@@ -9,20 +9,28 @@
       "sortOrder": 0
     },
     {
-      "id": "MASTER",
-      "label": "Master",
-      "description": "Top-tier active players",
-      "color": "#A855F7",
-      "gradient": ["#A855F7", "#7C3AED"],
+      "id": "HERO",
+      "label": "Hero",
+      "description": "Retired club and national heroes",
+      "color": "#10B981",
+      "gradient": ["#10B981", "#059669"],
       "sortOrder": 1
     },
     {
-      "id": "ELITE_PLUS",
-      "label": "Elite+",
-      "description": "World-class performers",
-      "color": "#3B82F6",
-      "gradient": ["#3B82F6", "#2563EB"],
+      "id": "ULTIMATE",
+      "label": "Ultimate",
+      "description": "Best active players in the world",
+      "color": "#0EA5E9",
+      "gradient": ["#0EA5E9", "#0369A1"],
       "sortOrder": 2
+    },
+    {
+      "id": "MASTER",
+      "label": "Master",
+      "description": "World-class active stars",
+      "color": "#A855F7",
+      "gradient": ["#A855F7", "#7C3AED"],
+      "sortOrder": 3
     },
     {
       "id": "ELITE",
@@ -30,7 +38,7 @@
       "description": "Top league starters",
       "color": "#06B6D4",
       "gradient": ["#06B6D4", "#0891B2"],
-      "sortOrder": 3
+      "sortOrder": 4
     },
     {
       "id": "GOLD",
@@ -38,7 +46,7 @@
       "description": "Strong squad players",
       "color": "#EAB308",
       "gradient": ["#EAB308", "#CA8A04"],
-      "sortOrder": 4
+      "sortOrder": 5
     },
     {
       "id": "SILVER",
@@ -46,7 +54,7 @@
       "description": "Reliable squad options",
       "color": "#94A3B8",
       "gradient": ["#94A3B8", "#64748B"],
-      "sortOrder": 5
+      "sortOrder": 6
     },
     {
       "id": "BRONZE",
@@ -54,7 +62,7 @@
       "description": "Emerging talent",
       "color": "#CD7F32",
       "gradient": ["#CD7F32", "#A0522D"],
-      "sortOrder": 6
+      "sortOrder": 7
     }
   ],
   "positions": {

@@ -1,0 +1,57 @@
+{
+  "apiId": 47258,
+  "name": "M. Arambarri",
+  "clubs": [
+    {
+      "club": "Defensor Sporting",
+      "appearances": 52,
+      "goals": 1
+    },
+    {
+      "club": "Bordeaux",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Bordeaux B",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Boston River",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Getafe",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 225,
+      "goals": 21
+    },
+    {
+      "club": "River Plate",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay U20",
+      "appearances": 19,
+      "goals": 3
+    },
+    {
+      "team": "Uruguay",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 323,
+    "goals": 23
+  }
+}

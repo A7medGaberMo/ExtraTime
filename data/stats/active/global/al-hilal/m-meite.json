@@ -1,0 +1,62 @@
+{
+  "apiId": 449662,
+  "name": "M. Meïté",
+  "clubs": [
+    {
+      "club": "Laval B",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Laval",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Lorient B",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Lorient",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Marseille",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Montpellier",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Lorient",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast U23",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 135,
+    "goals": 3
+  }
+}

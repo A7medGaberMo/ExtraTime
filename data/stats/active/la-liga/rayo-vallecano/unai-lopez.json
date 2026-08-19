@@ -1,0 +1,36 @@
+{
+  "apiId": 47285,
+  "name": "Unai López",
+  "clubs": [
+    {
+      "club": "Basconia",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 73,
+      "goals": 6
+    },
+    {
+      "club": "Athletic Bilbao",
+      "appearances": 93,
+      "goals": 4
+    },
+    {
+      "club": "Leganés",
+      "appearances": 24,
+      "goals": 2
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 222,
+      "goals": 9
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 433,
+    "goals": 23
+  }
+}

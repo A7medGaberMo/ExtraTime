@@ -1,0 +1,47 @@
+{
+  "apiId": 359386,
+  "name": "M. Godo",
+  "clubs": [
+    {
+      "club": "Dartford",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Margate (dual registration)",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "Fulham U21",
+      "appearances": 2,
+      "goals": 2
+    },
+    {
+      "club": "Fulham",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Wigan Athletic",
+      "appearances": 37,
+      "goals": 4
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 44,
+      "goals": 16
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 1,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 111,
+    "goals": 25
+  }
+}

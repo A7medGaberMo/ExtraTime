@@ -1,0 +1,66 @@
+{
+  "apiId": 469579,
+  "name": "N. Schmidt",
+  "clubs": [
+    {
+      "club": "Type",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Domestic",
+      "appearances": 35,
+      "goals": 1932
+    },
+    {
+      "club": "DFB-Pokal",
+      "appearances": 21,
+      "goals": 1956
+    },
+    {
+      "club": "DFB/DFL-Supercup",
+      "appearances": 11,
+      "goals": 1987
+    },
+    {
+      "club": "DFB/DFL-Ligapokal",
+      "appearances": 6,
+      "goals": 1997
+    },
+    {
+      "club": "Continental",
+      "appearances": 6,
+      "goals": 1973
+    },
+    {
+      "club": "UEFA Cup/UEFA Europa League",
+      "appearances": 1,
+      "goals": 1995
+    },
+    {
+      "club": "UEFA/European Cup Winners' Cup",
+      "appearances": 1,
+      "goals": 1966
+    },
+    {
+      "club": "UEFA Super Cup",
+      "appearances": 2,
+      "goals": 2013
+    },
+    {
+      "club": "Worldwide",
+      "appearances": 2,
+      "goals": 2013
+    },
+    {
+      "club": "Intercontinental Cup",
+      "appearances": 2,
+      "goals": 1976
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 87,
+    "goals": 19808
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 6064,
+  "name": "F. Ortega",
+  "clubs": [
+    {
+      "club": "Vélez Sarsfield",
+      "appearances": 153,
+      "goals": 3
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 107,
+      "goals": 1
+    },
+    {
+      "club": "River Plate",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U20",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "team": "Argentina U23",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 261,
+    "goals": 4
+  }
+}

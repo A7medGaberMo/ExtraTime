@@ -1,0 +1,72 @@
+{
+  "apiId": 51248,
+  "name": "A. Zendejas",
+  "clubs": [
+    {
+      "club": "FC Dallas",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Guadalajara",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Zacatepec",
+      "appearances": 32,
+      "goals": 4
+    },
+    {
+      "club": "Necaxa",
+      "appearances": 50,
+      "goals": 11
+    },
+    {
+      "club": "América",
+      "appearances": 191,
+      "goals": 54
+    },
+    {
+      "club": "Vancouver Whitecaps",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "United States U15",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "team": "United States U17",
+      "appearances": 27,
+      "goals": 4
+    },
+    {
+      "team": "Mexico U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Mexico U23",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Mexico",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "United States",
+      "appearances": 15,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 316,
+    "goals": 71
+  }
+}

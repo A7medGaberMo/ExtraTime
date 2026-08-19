@@ -1,0 +1,51 @@
+{
+  "apiId": 395573,
+  "name": "V. Zakharchenko",
+  "clubs": [
+    {
+      "club": "FC Beshtau Lermontov",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "FC Dynamo-d Stavropol",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "FC Dynamo Stavropol",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "FC Spartak-Kavkaztransgaz Izobilny",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "FC Volga Ulyanovsk",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "FC Okzhetpes",
+      "appearances": 147,
+      "goals": 4
+    },
+    {
+      "club": "FC Kyzylzhar",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 277,
+    "goals": 10
+  }
+}

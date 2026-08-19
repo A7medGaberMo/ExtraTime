@@ -2,7 +2,7 @@ import { defineTable } from "convex/server";
 import { v } from "convex/values";
 
 export const careerStatsTable = defineTable({
-  apiId: v.number(),
+  apiId: v.union(v.number(), v.string()),
   name: v.string(),
   clubs: v.array(
     v.object({

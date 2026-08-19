@@ -1,0 +1,22 @@
+{
+  "apiId": 43036,
+  "name": "D. Man",
+  "clubs": [
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

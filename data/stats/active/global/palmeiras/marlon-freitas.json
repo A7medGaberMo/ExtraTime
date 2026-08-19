@@ -1,0 +1,51 @@
+{
+  "apiId": 9218,
+  "name": "Marlon Freitas",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Fort Lauderdale Strikers",
+      "appearances": 31,
+      "goals": 8
+    },
+    {
+      "club": "ŠTK Šamorín",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Criciúma",
+      "appearances": 24,
+      "goals": 1
+    },
+    {
+      "club": "Botafogo-SP",
+      "appearances": 48,
+      "goals": 3
+    },
+    {
+      "club": "Atlético Goianiense",
+      "appearances": 101,
+      "goals": 12
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 132,
+      "goals": 4
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 21,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 392,
+    "goals": 34
+  }
+}

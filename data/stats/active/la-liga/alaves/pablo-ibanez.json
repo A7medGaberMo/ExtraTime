@@ -1,0 +1,26 @@
+{
+  "apiId": 139001,
+  "name": "Pablo Ibáñez",
+  "clubs": [
+    {
+      "club": "Mutilvera",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Osasuna B",
+      "appearances": 49,
+      "goals": 10
+    },
+    {
+      "club": "Osasuna",
+      "appearances": 48,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 110,
+    "goals": 12
+  }
+}

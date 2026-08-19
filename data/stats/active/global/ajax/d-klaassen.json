@@ -1,0 +1,72 @@
+{
+  "apiId": 25321,
+  "name": "D. Klaassen",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 181,
+      "goals": 55
+    },
+    {
+      "club": "Jong Ajax",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Everton",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 81,
+      "goals": 16
+    },
+    {
+      "club": "Ajax",
+      "appearances": 95,
+      "goals": 30
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Ajax",
+      "appearances": 62,
+      "goals": 14
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U16",
+      "appearances": 5,
+      "goals": 4
+    },
+    {
+      "team": "Netherlands U17",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "team": "Netherlands U19",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "team": "Netherlands U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands",
+      "appearances": 41,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 445,
+    "goals": 116
+  }
+}

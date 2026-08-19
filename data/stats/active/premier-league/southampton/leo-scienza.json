@@ -1,0 +1,51 @@
+{
+  "apiId": 283323,
+  "name": "Léo Scienza",
+  "clubs": [
+    {
+      "club": "Lajeadense",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Fanna ",
+      "appearances": 21,
+      "goals": 12
+    },
+    {
+      "club": "Schalke 04 II",
+      "appearances": 59,
+      "goals": 15
+    },
+    {
+      "club": "1. FC Magdeburg",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Magdeburg II",
+      "appearances": 10,
+      "goals": 13
+    },
+    {
+      "club": "SSV Ulm",
+      "appearances": 34,
+      "goals": 12
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 40,
+      "goals": 9
+    },
+    {
+      "club": "Southampton",
+      "appearances": 44,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 222,
+    "goals": 68
+  }
+}

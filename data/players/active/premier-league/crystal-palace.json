@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Crystal Palace",
       "nation": "Argentina",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22157.png",
       "kitNumber": 44
@@ -63,23 +63,12 @@
       "kitNumber": 2
     },
     {
-      "apiId": 20995,
-      "name": "M. Lacroix",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "France",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20995.png",
-      "kitNumber": 5
-    },
-    {
       "apiId": 162712,
       "name": "Óscar Mingueza",
       "position": "RB/CB",
       "club": "Crystal Palace",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162712.png",
       "kitNumber": 3
@@ -140,17 +129,6 @@
       "kitNumber": 17
     },
     {
-      "apiId": 284493,
-      "name": "T. Adaramola",
-      "position": "LB",
-      "club": "Crystal Palace",
-      "nation": "Republic of Ireland",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284493.png",
-      "kitNumber": 45
-    },
-    {
       "apiId": 557414,
       "name": "D. Benamar",
       "position": "CB",
@@ -171,28 +149,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412759.png",
       "kitNumber": 23
-    },
-    {
-      "apiId": 380703,
-      "name": "Rio Cardines",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/380703.png",
-      "kitNumber": 59
-    },
-    {
-      "apiId": 196856,
-      "name": "Daniel Edward Peter Imray",
-      "position": "CB",
-      "club": "Crystal Palace",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/196856.png",
-      "kitNumber": 30
     },
     {
       "apiId": 380702,
@@ -222,7 +178,7 @@
       "position": "CM/CDM",
       "club": "Crystal Palace",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288102.png",
       "kitNumber": 20
@@ -343,21 +299,10 @@
       "position": "ST",
       "club": "Crystal Palace",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25927.png",
       "kitNumber": 14
-    },
-    {
-      "apiId": 129711,
-      "name": "B. Johnson",
-      "position": "RW/ST",
-      "club": "Crystal Palace",
-      "nation": "Wales",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129711.png",
-      "kitNumber": 15
     },
     {
       "apiId": 184226,
@@ -365,7 +310,7 @@
       "position": "LW/RW",
       "club": "Crystal Palace",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/184226.png",
       "kitNumber": 10
@@ -398,7 +343,7 @@
       "position": "ST",
       "club": "Crystal Palace",
       "nation": "Norway",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2032.png",
       "kitNumber": 22
@@ -413,6 +358,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557416.png",
       "kitNumber": 52
+    },
+    {
+      "apiId": 18929,
+      "name": "D. McNeil",
+      "position": "LW/CAM",
+      "club": "Crystal Palace",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18929.png",
+      "kitNumber": 7
     }
   ]
 }

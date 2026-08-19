@@ -1,0 +1,87 @@
+{
+  "apiId": 667869,
+  "name": "Gustavo Felix",
+  "clubs": [
+    {
+      "club": "Ipanema",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Universal-AL",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Corinthians Alagoano",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "CRB",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 109,
+      "goals": 2
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 72,
+      "goals": 2
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 100,
+      "goals": 6
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 142,
+      "goals": 12
+    },
+    {
+      "club": "Marseille",
+      "appearances": 98,
+      "goals": 10
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 97,
+      "goals": 5
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 29,
+      "goals": 5
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 59,
+      "goals": 6
+    },
+    {
+      "club": "Athletico Paranaense",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 41,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 759,
+    "goals": 53
+  }
+}

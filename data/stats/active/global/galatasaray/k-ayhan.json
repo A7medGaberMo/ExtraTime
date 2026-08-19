@@ -1,0 +1,77 @@
+{
+  "apiId": 25448,
+  "name": "K. Ayhan",
+  "clubs": [
+    {
+      "club": "Schalke 04 II",
+      "appearances": 39,
+      "goals": 1
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Fortuna Düsseldorf",
+      "appearances": 121,
+      "goals": 8
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 55,
+      "goals": 2
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 127,
+      "goals": 3
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 84,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U17",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Germany U16",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Germany U17",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "team": "Germany U18",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Turkey",
+      "appearances": 74,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 458,
+    "goals": 18
+  }
+}

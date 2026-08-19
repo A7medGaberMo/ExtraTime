@@ -1,0 +1,31 @@
+{
+  "apiId": 271542,
+  "name": "I. Doukouré",
+  "clubs": [
+    {
+      "club": "Valenciennes B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Valenciennes",
+      "appearances": 32,
+      "goals": 1
+    },
+    {
+      "club": "Strasbourg B",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 129,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 164,
+    "goals": 4
+  }
+}

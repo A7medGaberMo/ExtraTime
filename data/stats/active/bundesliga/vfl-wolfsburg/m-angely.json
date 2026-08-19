@@ -1,0 +1,36 @@
+{
+  "apiId": 449714,
+  "name": "M. Angely",
+  "clubs": [
+    {
+      "club": "Bordeaux II",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Bordeaux",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "RSCA Futures",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 22,
+    "goals": 2
+  }
+}

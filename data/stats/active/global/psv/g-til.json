@@ -1,0 +1,37 @@
+{
+  "apiId": 36905,
+  "name": "G. Til",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 83,
+      "goals": 3
+    },
+    {
+      "club": "Braga",
+      "appearances": 42,
+      "goals": 7
+    },
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast U23",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Ivory Coast",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 137,
+    "goals": 11
+  }
+}

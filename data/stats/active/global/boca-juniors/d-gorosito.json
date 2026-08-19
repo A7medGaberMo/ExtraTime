@@ -1,0 +1,57 @@
+{
+  "apiId": 414484,
+  "name": "D. Gorosito",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 109,
+      "goals": 8
+    },
+    {
+      "club": "San Lorenzo",
+      "appearances": 110,
+      "goals": 36
+    },
+    {
+      "club": "Swarovski Tirol",
+      "appearances": 89,
+      "goals": 24
+    },
+    {
+      "club": "Universidad Católica",
+      "appearances": 58,
+      "goals": 12
+    },
+    {
+      "club": "Yokohama Marinos",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "club": "San Lorenzo",
+      "appearances": 99,
+      "goals": 29
+    },
+    {
+      "club": "Universidad Católica",
+      "appearances": 39,
+      "goals": 1
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 19,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 522,
+    "goals": 114
+  }
+}

@@ -162,17 +162,6 @@
       "kitNumber": 45
     },
     {
-      "apiId": 161921,
-      "name": "G. Reyna",
-      "position": "CAM/RW/LW",
-      "club": "Borussia Mönchengladbach",
-      "nation": "United States",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161921.png",
-      "kitNumber": 13
-    },
-    {
       "apiId": 25461,
       "name": "K. Stöger",
       "position": "CAM/CM",
@@ -266,7 +255,7 @@
       "position": "ST",
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26256.png",
       "kitNumber": 11

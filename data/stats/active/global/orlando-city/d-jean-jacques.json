@@ -1,0 +1,67 @@
+{
+  "apiId": 338367,
+  "name": "D. Jean-Jacques",
+  "clubs": [
+    {
+      "club": "Don Bosco",
+      "appearances": 54,
+      "goals": 7
+    },
+    {
+      "club": "Metz B",
+      "appearances": 67,
+      "goals": 0
+    },
+    {
+      "club": "Metz",
+      "appearances": 64,
+      "goals": 0
+    },
+    {
+      "club": "Philadelphia Union",
+      "appearances": 64,
+      "goals": 6
+    },
+    {
+      "club": "Orlando City SC",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Haiti U17",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "team": "Haiti U19",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Haiti U20",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Haiti U21",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Haiti U23",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Haiti",
+      "appearances": 34,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 261,
+    "goals": 14
+  }
+}

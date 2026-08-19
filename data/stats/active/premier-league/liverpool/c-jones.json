@@ -1,10 +1,22 @@
 {
   "apiId": 293,
   "name": "C. Jones",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Liverpool",
+      "appearances": 228,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 228,
+    "goals": 22
   }
 }

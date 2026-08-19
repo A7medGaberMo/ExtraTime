@@ -1,0 +1,42 @@
+{
+  "apiId": 8486,
+  "name": "E. Smith",
+  "clubs": [
+    {
+      "club": "Halmstads BK",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "IFK Norrköping",
+      "appearances": 87,
+      "goals": 0
+    },
+    {
+      "club": "Gent",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Tromsø",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "St. Pauli",
+      "appearances": 145,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 287,
+    "goals": 9
+  }
+}

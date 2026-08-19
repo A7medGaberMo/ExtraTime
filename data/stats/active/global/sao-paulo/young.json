@@ -1,0 +1,62 @@
+{
+  "apiId": 311517,
+  "name": "Young",
+  "clubs": [
+    {
+      "club": "Watford",
+      "appearances": 110,
+      "goals": 22
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 190,
+      "goals": 38
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 261,
+      "goals": 19
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 59,
+      "goals": 5
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 53,
+      "goals": 1
+    },
+    {
+      "club": "Everton",
+      "appearances": 70,
+      "goals": 2
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England U21",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "England",
+      "appearances": 39,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 768,
+    "goals": 88
+  }
+}

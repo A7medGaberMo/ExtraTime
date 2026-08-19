@@ -74,17 +74,6 @@
       "kitNumber": 17
     },
     {
-      "apiId": 162170,
-      "name": "Hugo Novoa",
-      "position": "RB/RM",
-      "club": "Alaves",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162170.png",
-      "kitNumber": 2
-    },
-    {
       "apiId": 70476,
       "name": "M. Diarra",
       "position": "LB/CB",
@@ -105,17 +94,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6638.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 106759,
-      "name": "V. Koski",
-      "position": "CB",
-      "club": "Alaves",
-      "nation": "Finland",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/106759.png",
-      "kitNumber": 16
     },
     {
       "apiId": 361384,

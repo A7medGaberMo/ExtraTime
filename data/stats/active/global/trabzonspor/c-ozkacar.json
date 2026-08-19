@@ -1,0 +1,22 @@
+{
+  "apiId": 72048,
+  "name": "C. Özkacar",
+  "clubs": [
+    {
+      "club": "Trabzonspor",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

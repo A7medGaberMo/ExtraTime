@@ -130,46 +130,56 @@ export const getByPosition = query({
     const target = args.position.trim().toUpperCase();
     const limit = args.limit ?? 50;
 
-    // Try indexed query first
-    const indexed = await ctx.db
+    // 1. Try direct exact match on indexed position
+    const exactMatches = await ctx.db
       .query("players")
       .withIndex("by_position", (q) => q.eq("position", target))
       .take(limit);
 
-    if (indexed.length > 0) {
-      return hydratePlayers(ctx, indexed);
+    if (exactMatches.length >= limit) {
+      return hydratePlayers(ctx, exactMatches);
     }
 
-    // Fallback: take a capped sample to evaluate multi-position strings without full table scan
-    const candidates = await ctx.db.query("players").take(300);
-    const filtered = candidates
-      .filter((player) =>
-        player.position
-          .split("/")
-          .map((pos) => pos.trim().toUpperCase())
-          .includes(target)
-      )
-      .slice(0, limit);
+    const matchedMap = new Map<string, Doc<"players">>();
+    for (const p of exactMatches) {
+      matchedMap.set(String(p._id), p);
+    }
 
-    return hydratePlayers(ctx, filtered);
+    // 2. Fetch records and match multi-position slash strings (e.g., "ST/LW")
+    const allCandidates = await ctx.db.query("players").collect();
+    for (const player of allCandidates) {
+      if (matchedMap.size >= limit) break;
+      if (matchedMap.has(String(player._id))) continue;
+
+      const positions = player.position
+        .split("/")
+        .map((pos) => pos.trim().toUpperCase());
+
+      if (positions.includes(target)) {
+        matchedMap.set(String(player._id), player);
+      }
+    }
+
+    return hydratePlayers(ctx, Array.from(matchedMap.values()));
   },
 });
 
 /**
- * Bounded Database Stats Query.
- * Returns fast, optimized counts to prevent scanning un-indexed records on every page view.
+ * Database Stats Query.
+ * Returns counts of players, clubs, and nations.
  */
 export const getStats = query({
   args: {},
   handler: async (ctx) => {
-    const sample = await ctx.db.query("players").take(5000);
-    const clubsSample = await ctx.db.query("clubs").take(500);
-    const nationsSample = await ctx.db.query("nations").take(300);
+    const players = await ctx.db.query("players").collect();
+    const clubs = await ctx.db.query("clubs").collect();
+    const nations = await ctx.db.query("nations").collect();
 
     return {
-      totalPlayers: sample.length,
-      totalClubs: clubsSample.length,
-      totalNations: nationsSample.length,
+      totalPlayers: players.length,
+      totalClubs: clubs.length,
+      totalNations: nations.length,
     };
   },
 });
+

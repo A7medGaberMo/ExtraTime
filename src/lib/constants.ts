@@ -18,8 +18,8 @@ export const NICKNAME_MAX_LENGTH = 16;
 export const TIER_CONFIG: Record<Tier, { label: string; color: string; gradient: [string, string] }> = {
   ICON: { label: 'Icon', color: '#F59E0B', gradient: ['#F59E0B', '#D97706'] },
   HERO: { label: 'Hero', color: '#10B981', gradient: ['#10B981', '#059669'] },
+  ULTIMATE: { label: 'Ultimate', color: '#0EA5E9', gradient: ['#0EA5E9', '#0369A1'] },
   MASTER: { label: 'Master', color: '#A855F7', gradient: ['#A855F7', '#7C3AED'] },
-  ELITE_PLUS: { label: 'Elite+', color: '#3B82F6', gradient: ['#3B82F6', '#2563EB'] },
   ELITE: { label: 'Elite', color: '#06B6D4', gradient: ['#06B6D4', '#0891B2'] },
   GOLD: { label: 'Gold', color: '#EAB308', gradient: ['#EAB308', '#CA8A04'] },
   SILVER: { label: 'Silver', color: '#94A3B8', gradient: ['#94A3B8', '#64748B'] },
@@ -27,7 +27,7 @@ export const TIER_CONFIG: Record<Tier, { label: string; color: string; gradient:
 };
 
 /** Ordered tiers from highest to lowest */
-export const TIER_ORDER: Tier[] = ['ICON', 'HERO', 'MASTER', 'ELITE_PLUS', 'ELITE', 'GOLD', 'SILVER', 'BRONZE'];
+export const TIER_ORDER: Tier[] = ['ICON', 'HERO', 'ULTIMATE', 'MASTER', 'ELITE', 'GOLD', 'SILVER', 'BRONZE'];
 
 // ---------------------------------------------------------------------------
 // Position configuration
@@ -56,11 +56,6 @@ export const GAME_TYPE_CONFIG: Record<GameType, { label: string; description: st
     label: 'Hidden Bid',
     description: 'Outbid your opponent in a blind auction to build the ultimate squad.',
     icon: '🏆',
-  },
-  squad_draft: {
-    label: 'Squad Draft',
-    description: 'Select players sequentially to form your tactical squad.',
-    icon: '📋',
   },
   pack_opening_duel: {
     label: 'Pack Duel',

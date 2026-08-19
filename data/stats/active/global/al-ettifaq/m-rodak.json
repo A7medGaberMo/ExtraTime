@@ -1,0 +1,62 @@
+{
+  "apiId": 19657,
+  "name": "M. Rodák",
+  "clubs": [
+    {
+      "club": "Fulham",
+      "appearances": 102,
+      "goals": 0
+    },
+    {
+      "club": "Farnborough",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Welling United",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Accrington Stanley",
+      "appearances": 84,
+      "goals": 0
+    },
+    {
+      "club": "Rotherham United",
+      "appearances": 80,
+      "goals": 0
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 71,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia U17",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Slovakia U19",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "team": "Slovakia U21",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "team": "Slovakia",
+      "appearances": 26,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 359,
+    "goals": 0
+  }
+}

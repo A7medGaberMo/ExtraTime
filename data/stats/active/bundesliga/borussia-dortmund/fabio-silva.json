@@ -1,0 +1,57 @@
+{
+  "apiId": 129791,
+  "name": "Fábio Silva",
+  "clubs": [
+    {
+      "club": "Porto B",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 21,
+      "goals": 3
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 73,
+      "goals": 5
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 32,
+      "goals": 11
+    },
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 19,
+      "goals": 5
+    },
+    {
+      "club": "Rangers",
+      "appearances": 25,
+      "goals": 6
+    },
+    {
+      "club": "Las Palmas",
+      "appearances": 25,
+      "goals": 10
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 39,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 237,
+    "goals": 43
+  }
+}

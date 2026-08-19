@@ -1,0 +1,71 @@
+{
+  "apiId": 10432,
+  "name": "Júnior Santos",
+  "clubs": [
+    {
+      "club": "Osvaldo Cruz",
+      "appearances": 17,
+      "goals": 5
+    },
+    {
+      "club": "Ituano",
+      "appearances": 11,
+      "goals": 4
+    },
+    {
+      "club": "Ponte Preta",
+      "appearances": 38,
+      "goals": 9
+    },
+    {
+      "club": "Fortaleza",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Kashiwa Reysol",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Yokohama F. Marinos",
+      "appearances": 22,
+      "goals": 13
+    },
+    {
+      "club": "Sanfrecce Hiroshima",
+      "appearances": 74,
+      "goals": 15
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 100,
+      "goals": 27
+    },
+    {
+      "club": "Fortaleza",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 73,
+      "goals": 16
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 20,
+      "goals": 2
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 391,
+    "goals": 94
+  }
+}

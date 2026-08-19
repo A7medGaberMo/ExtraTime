@@ -1,0 +1,62 @@
+{
+  "apiId": 574,
+  "name": "F. Krovinović",
+  "clubs": [
+    {
+      "club": "Zagreb",
+      "appearances": 78,
+      "goals": 13
+    },
+    {
+      "club": "Rio Ave",
+      "appearances": 50,
+      "goals": 6
+    },
+    {
+      "club": "Benfica",
+      "appearances": 28,
+      "goals": 2
+    },
+    {
+      "club": "Benfica B",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 55,
+      "goals": 3
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Hajduk Split",
+      "appearances": 159,
+      "goals": 16
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia U19",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Croatia U21",
+      "appearances": 11,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 392,
+    "goals": 41
+  }
+}

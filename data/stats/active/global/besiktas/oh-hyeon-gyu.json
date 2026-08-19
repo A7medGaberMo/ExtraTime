@@ -1,0 +1,62 @@
+{
+  "apiId": 34710,
+  "name": "Oh Hyeon-Gyu",
+  "clubs": [
+    {
+      "club": "Suwon Samsung Bluewings",
+      "appearances": 53,
+      "goals": 14
+    },
+    {
+      "club": "Gimcheon Sangmu (draft)",
+      "appearances": 40,
+      "goals": 9
+    },
+    {
+      "club": "Celtic",
+      "appearances": 47,
+      "goals": 12
+    },
+    {
+      "club": "Genk",
+      "appearances": 73,
+      "goals": 22
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 18,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "South Korea U14",
+      "appearances": 4,
+      "goals": 5
+    },
+    {
+      "team": "South Korea U17",
+      "appearances": 13,
+      "goals": 4
+    },
+    {
+      "team": "South Korea U20",
+      "appearances": 4,
+      "goals": 2
+    },
+    {
+      "team": "South Korea U23",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "South Korea",
+      "appearances": 30,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 231,
+    "goals": 65
+  }
+}

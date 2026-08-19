@@ -1,0 +1,22 @@
+{
+  "apiId": 96476,
+  "name": "Andorinha",
+  "clubs": [
+    {
+      "club": "FC Porto",
+      "appearances": 85,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 0
+  }
+}

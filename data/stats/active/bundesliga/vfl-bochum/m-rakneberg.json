@@ -1,0 +1,41 @@
+{
+  "apiId": 310131,
+  "name": "M. Rakneberg",
+  "clubs": [
+    {
+      "club": "Lillestrøm 2",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Ull/Kisa",
+      "appearances": 32,
+      "goals": 8
+    },
+    {
+      "club": "Ull/Kisa 2",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Kristiansund",
+      "appearances": 99,
+      "goals": 9
+    },
+    {
+      "club": "Kristiansund 2",
+      "appearances": 5,
+      "goals": 6
+    },
+    {
+      "club": "VfL Bochum",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 162,
+    "goals": 26
+  }
+}

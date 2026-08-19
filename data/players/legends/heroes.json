@@ -1351,5 +1351,16 @@
     "kitNumber": 2,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Giuseppe_Bergomi.jpg/330px-Giuseppe_Bergomi.jpg",
     "tier": "HERO"
+  },
+  {
+    "apiId": "hero_124",
+    "name": "Edinson Cavani",
+    "position": "ST",
+    "club": "Paris Saint-Germain",
+    "nation": "Uruguay",
+    "isLegend": true,
+    "kitNumber": 9,
+    "imageUrl": "https://media.api-sports.io/football/players/274.png",
+    "tier": "HERO"
   }
 ]

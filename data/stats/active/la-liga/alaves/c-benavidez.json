@@ -1,0 +1,47 @@
+{
+  "apiId": 6085,
+  "name": "C. Benavídez",
+  "clubs": [
+    {
+      "club": "Estudiantes",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Clausura",
+      "appearances": 606,
+      "goals": 327
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 76,
+      "goals": 42
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 81,
+      "goals": 21
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Alavés",
+      "appearances": 14,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 15,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 800,
+    "goals": 395
+  }
+}

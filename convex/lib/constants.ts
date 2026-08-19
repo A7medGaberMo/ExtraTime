@@ -1,11 +1,11 @@
 import { v } from "convex/values";
 
 // ── Tier System ────────────────────────────────────────────
-export const TIERS = ["ICON", "HERO", "MASTER", "ELITE_PLUS", "ELITE", "GOLD", "SILVER", "BRONZE"] as const;
+export const TIERS = ["ICON", "HERO", "ULTIMATE", "MASTER", "ELITE", "GOLD", "SILVER", "BRONZE"] as const;
 export type Tier = (typeof TIERS)[number];
 
 export const TIER_RANK: Record<Tier, number> = {
-  ICON: 0, HERO: 1, MASTER: 2, ELITE_PLUS: 3, ELITE: 4,
+  ICON: 0, HERO: 1, ULTIMATE: 2, MASTER: 3, ELITE: 4,
   GOLD: 5, SILVER: 6, BRONZE: 7,
 };
 
@@ -16,8 +16,8 @@ export function tierRank(tier?: string): number {
 export const tierValidator = v.union(
   v.literal("ICON"),
   v.literal("HERO"),
+  v.literal("ULTIMATE"),
   v.literal("MASTER"),
-  v.literal("ELITE_PLUS"),
   v.literal("ELITE"),
   v.literal("GOLD"),
   v.literal("SILVER"),

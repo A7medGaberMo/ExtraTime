@@ -1,0 +1,46 @@
+{
+  "apiId": 915,
+  "name": "Gabriel Paulista",
+  "clubs": [
+    {
+      "club": "Vitória",
+      "appearances": 141,
+      "goals": 7
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 50,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 64,
+      "goals": 1
+    },
+    {
+      "club": "Valencia",
+      "appearances": 220,
+      "goals": 8
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 45,
+      "goals": 1
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 24,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 549,
+    "goals": 18
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "apiId": 409190,
+  "name": "Y. Ebnoutalib",
+  "clubs": [
+    {
+      "club": "Rot-Weiss Frankfurt",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Perugia",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "FC Gießen",
+      "appearances": 20,
+      "goals": 6
+    },
+    {
+      "club": "SV Elversberg",
+      "appearances": 25,
+      "goals": 12
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 54,
+    "goals": 19
+  }
+}

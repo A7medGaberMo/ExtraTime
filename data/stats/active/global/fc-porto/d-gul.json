@@ -1,0 +1,22 @@
+{
+  "apiId": 388570,
+  "name": "D. Gül",
+  "clubs": [
+    {
+      "club": "FC Porto",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 925,
+  "name": "Gonçalo Guedes",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 38,
+      "goals": 11
+    },
+    {
+      "club": "Benfica",
+      "appearances": 97,
+      "goals": 13
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Valencia",
+      "appearances": 178,
+      "goals": 36
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 51,
+      "goals": 7
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 19,
+      "goals": 3
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 39,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 34,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 435,
+    "goals": 79
+  }
+}

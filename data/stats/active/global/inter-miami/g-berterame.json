@@ -1,0 +1,22 @@
+{
+  "apiId": 6485,
+  "name": "G. Berterame",
+  "clubs": [
+    {
+      "club": "Inter Miami",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "USA",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

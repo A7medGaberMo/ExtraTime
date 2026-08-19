@@ -1,10 +1,62 @@
 {
   "apiId": 19185,
   "name": "K. Davis",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Tours",
+      "appearances": 30,
+      "goals": 0
+    },
+    {
+      "club": "Lorient",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Clermont",
+      "appearances": 60,
+      "goals": 2
+    },
+    {
+      "club": "Udinese",
+      "appearances": 97,
+      "goals": 7
+    },
+    {
+      "club": "Roma",
+      "appearances": 37,
+      "goals": 5
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 46,
+      "goals": 3
+    },
+    {
+      "club": "Juventus",
+      "appearances": 59,
+      "goals": 5
+    },
+    {
+      "club": "Al-Duhail",
+      "appearances": 60,
+      "goals": 2
+    },
+    {
+      "club": "Fatih Karagümrük",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Morocco",
+      "appearances": 65,
+      "goals": 2
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 396,
+    "goals": 24
   }
 }

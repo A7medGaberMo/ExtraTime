@@ -1,0 +1,363 @@
+{
+  "club": {
+    "apiId": 247,
+    "name": "Celtic",
+    "logo": "https://media.api-sports.io/football/teams/247.png",
+    "league": "Premiership",
+    "leagueId": 179
+  },
+  "players": [
+    {
+      "apiId": 45150,
+      "name": "R. Doohan",
+      "position": "GK",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/45150.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 169291,
+      "name": "V. Sinisalo",
+      "position": "GK",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/169291.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 19314,
+      "name": "C. Carter-Vickers",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "USA",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19314.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 451314,
+      "name": "Colby Donovan",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/451314.png",
+      "kitNumber": 51
+    },
+    {
+      "apiId": 619563,
+      "name": "J. Haney",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/619563.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 78547,
+      "name": "A. Johnston",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/78547.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 304851,
+      "name": "A. Montgomery",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304851.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 311820,
+      "name": "D. Murray",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/311820.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 1115,
+      "name": "A. Ralston",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1115.png",
+      "kitNumber": 56
+    },
+    {
+      "apiId": 69450,
+      "name": "L. Scales",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/69450.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 1117,
+      "name": "K. Tierney",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1117.png",
+      "kitNumber": 63
+    },
+    {
+      "apiId": 50737,
+      "name": "A. Trusty",
+      "position": "CB",
+      "club": "Celtic",
+      "nation": "United States",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50737.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 162210,
+      "name": "A. Engels",
+      "position": "CM/CDM",
+      "club": "Celtic",
+      "nation": "Belgium",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162210.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 180758,
+      "name": "R. Hatate",
+      "position": "CM/CAM",
+      "club": "Celtic",
+      "nation": "Japan",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/180758.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 452381,
+      "name": "Thomas Hatton",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/452381.png",
+      "kitNumber": 52
+    },
+    {
+      "apiId": 634104,
+      "name": "S. McGarry",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Israel",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/634104.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 1129,
+      "name": "C. McGregor",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1129.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 443670,
+      "name": "S. McArdle",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443670.png",
+      "kitNumber": 50
+    },
+    {
+      "apiId": 339172,
+      "name": "C. Osmand",
+      "position": "ST",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339172.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 297,
+      "name": "A. Oxlade-Chamberlain",
+      "position": "CM/CAM",
+      "club": "Celtic",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/297.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 394686,
+      "name": "F. Turley",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/394686.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 412691,
+      "name": "Kyle Ure",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/412691.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 304958,
+      "name": "Yang Hyun-Jun",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "South Korea",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304958.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 267728,
+      "name": "M. Balikwisha",
+      "position": "ST",
+      "club": "Celtic",
+      "nation": "DR Congo",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/267728.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 350529,
+      "name": "J. Bonnar",
+      "position": "ST",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350529.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 454968,
+      "name": "C. Durán",
+      "position": "ST",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/454968.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 1127,
+      "name": "J. Forrest",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1127.png",
+      "kitNumber": 49
+    },
+    {
+      "apiId": 15704,
+      "name": "K. Høgh",
+      "position": "ST",
+      "club": "Celtic",
+      "nation": "Denmark",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/15704.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 45169,
+      "name": "L. McCowan",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/45169.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 48002,
+      "name": "B. Nygren",
+      "position": "ST",
+      "club": "Celtic",
+      "nation": "Sweden",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48002.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 57518,
+      "name": "S. Tounekti",
+      "position": "CM",
+      "club": "Celtic",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/57518.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 20844,
+      "name": "H. Hassan",
+      "position": "RW/LW",
+      "club": "Celtic",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20844.png",
+      "kitNumber": 77
+    }
+  ]
+}

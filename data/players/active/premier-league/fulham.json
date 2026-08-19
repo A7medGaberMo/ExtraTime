@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Fulham",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1438.png",
       "kitNumber": 1
@@ -85,17 +85,6 @@
       "kitNumber": 15
     },
     {
-      "apiId": 18814,
-      "name": "I. Diop",
-      "position": "CB",
-      "club": "Fulham",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18814.png",
-      "kitNumber": 31
-    },
-    {
       "apiId": 657,
       "name": "K. Tete",
       "position": "RB",
@@ -160,17 +149,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278133.png",
       "kitNumber": 14
-    },
-    {
-      "apiId": 2823,
-      "name": "S. Lukić",
-      "position": "CM/CDM",
-      "club": "Fulham",
-      "nation": "Serbia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2823.png",
-      "kitNumber": 20
     },
     {
       "apiId": 19025,
@@ -248,6 +226,39 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/436443.png",
       "kitNumber": 18
+    },
+    {
+      "apiId": 336711,
+      "name": "Gonzalo García",
+      "position": "ST",
+      "club": "Fulham",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/336711.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 386306,
+      "name": "César Palacios",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/386306.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 284356,
+      "name": "S. Charles",
+      "position": "CDM/CM",
+      "club": "Fulham",
+      "nation": "Northern Ireland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284356.png",
+      "kitNumber": 24
     }
   ]
 }

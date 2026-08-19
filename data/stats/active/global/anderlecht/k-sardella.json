@@ -1,0 +1,47 @@
+{
+  "apiId": 127418,
+  "name": "K. Sardella",
+  "clubs": [
+    {
+      "club": "Anderlecht",
+      "appearances": 144,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium U15",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Belgium U16",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Belgium U17",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "team": "Belgium U19",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Belgium U21",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "team": "Belgium",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 144,
+    "goals": 1
+  }
+}

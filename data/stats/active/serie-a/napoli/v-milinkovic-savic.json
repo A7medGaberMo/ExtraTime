@@ -1,0 +1,52 @@
+{
+  "apiId": 31156,
+  "name": "V. Milinković-Savić",
+  "clubs": [
+    {
+      "club": "Vojvodina",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Lechia Gdańsk",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Torino",
+      "appearances": 158,
+      "goals": 0
+    },
+    {
+      "club": "SPAL",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Ascoli",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Standard Liège",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Napoli",
+      "appearances": 38,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Serbia",
+      "appearances": 20,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 258,
+    "goals": 0
+  }
+}

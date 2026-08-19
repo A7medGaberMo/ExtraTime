@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 1139,
-      "name": "P. Gulácsi",
-      "position": "GK",
-      "club": "RB Leipzig",
-      "nation": "Hungary",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1139.png",
-      "kitNumber": 1
-    },
-    {
       "apiId": 1924,
       "name": "M. Vandevoordt",
       "position": "GK",
@@ -149,17 +138,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/601134.png",
       "kitNumber": 42
-    },
-    {
-      "apiId": 441231,
-      "name": "L. Voufack",
-      "position": "CB",
-      "club": "RB Leipzig",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/441231.png",
-      "kitNumber": 48
     },
     {
       "apiId": 715,
@@ -303,17 +281,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343286.png",
       "kitNumber": 6
-    },
-    {
-      "apiId": 513776,
-      "name": "Y. Diomande",
-      "position": "ST",
-      "club": "RB Leipzig",
-      "nation": "Ivory Coast",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/513776.png",
-      "kitNumber": 49
     },
     {
       "apiId": 383665,

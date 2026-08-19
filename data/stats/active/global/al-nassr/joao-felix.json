@@ -1,0 +1,72 @@
+{
+  "apiId": 583,
+  "name": "João Félix",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 30,
+      "goals": 7
+    },
+    {
+      "club": "Benfica",
+      "appearances": 26,
+      "goals": 15
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 131,
+      "goals": 34
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 16,
+      "goals": 4
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 30,
+      "goals": 7
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 49,
+      "goals": 29
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U18",
+      "appearances": 2,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 10,
+      "goals": 4
+    },
+    {
+      "team": "Portugal",
+      "appearances": 57,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 309,
+    "goals": 99
+  }
+}

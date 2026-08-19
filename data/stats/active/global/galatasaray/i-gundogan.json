@@ -1,0 +1,77 @@
+{
+  "apiId": 633,
+  "name": "İ. Gündoğan",
+  "clubs": [
+    {
+      "club": "VfL Bochum II",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 53,
+      "goals": 8
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 157,
+      "goals": 15
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 304,
+      "goals": 60
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 36,
+      "goals": 5
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 24,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany U18",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "team": "Germany U19",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Germany U20",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Germany U21",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Germany",
+      "appearances": 82,
+      "goals": 19
+    }
+  ],
+  "careerTotal": {
+    "appearances": 610,
+    "goals": 92
+  }
+}

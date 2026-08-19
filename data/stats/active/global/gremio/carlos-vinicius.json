@@ -1,0 +1,71 @@
+{
+  "apiId": 104,
+  "name": "Carlos Vinícius",
+  "clubs": [
+    {
+      "club": "Caldense",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Grêmio Anápolis",
+      "appearances": 49,
+      "goals": 29
+    },
+    {
+      "club": "Real Massamá",
+      "appearances": 37,
+      "goals": 19
+    },
+    {
+      "club": "Napoli",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Rio Ave",
+      "appearances": 14,
+      "goals": 8
+    },
+    {
+      "club": "Monaco",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Benfica",
+      "appearances": 50,
+      "goals": 24
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "PSV",
+      "appearances": 38,
+      "goals": 7
+    },
+    {
+      "club": "Fulham",
+      "appearances": 52,
+      "goals": 8
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 43,
+      "goals": 26
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 319,
+    "goals": 125
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 345427,
+  "name": "João Pedro Seno Luís Rêgo",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 48,
+      "goals": 6
+    },
+    {
+      "club": "Benfica",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U17",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 11,
+      "goals": 3
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 10,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 60,
+    "goals": 7
+  }
+}

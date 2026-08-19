@@ -1,0 +1,41 @@
+{
+  "apiId": 46751,
+  "name": "Abdón Prats",
+  "clubs": [
+    {
+      "club": "Mallorca B",
+      "appearances": 90,
+      "goals": 25
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 288,
+      "goals": 59
+    },
+    {
+      "club": "Burgos",
+      "appearances": 37,
+      "goals": 13
+    },
+    {
+      "club": "Tenerife",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Mirandés",
+      "appearances": 45,
+      "goals": 9
+    },
+    {
+      "club": "Racing Santander",
+      "appearances": 19,
+      "goals": 14
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 488,
+    "goals": 120
+  }
+}

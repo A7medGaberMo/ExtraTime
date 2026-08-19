@@ -1,0 +1,22 @@
+{
+  "apiId": 20833,
+  "name": "L. Leroy",
+  "clubs": [
+    {
+      "club": "FC Basel 1893",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

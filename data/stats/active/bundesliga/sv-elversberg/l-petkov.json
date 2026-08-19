@@ -1,0 +1,42 @@
+{
+  "apiId": 177452,
+  "name": "L. Petkov",
+  "clubs": [
+    {
+      "club": "FC Augsburg II",
+      "appearances": 31,
+      "goals": 6
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "SC Verl",
+      "appearances": 36,
+      "goals": 11
+    },
+    {
+      "club": "Greuther Fürth",
+      "appearances": 46,
+      "goals": 3
+    },
+    {
+      "club": "SV Elversberg",
+      "appearances": 69,
+      "goals": 18
+    }
+  ],
+  "national": [
+    {
+      "team": "Bulgaria",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 191,
+    "goals": 38
+  }
+}

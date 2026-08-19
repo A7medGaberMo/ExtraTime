@@ -1,0 +1,37 @@
+{
+  "apiId": 345756,
+  "name": "M. Terceros",
+  "clubs": [
+    {
+      "club": "Santos",
+      "appearances": 41,
+      "goals": 2
+    },
+    {
+      "club": "América Mineiro",
+      "appearances": 25,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Bolivia U15",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "team": "Bolivia U20",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Bolivia",
+      "appearances": 32,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 66,
+    "goals": 9
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "apiId": 63627,
+  "name": "A. Batagov",
+  "clubs": [
+    {
+      "club": "Dnipro",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Dnipro-1",
+      "appearances": 40,
+      "goals": 0
+    },
+    {
+      "club": "Polissya Zhytomyr",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Zorya Luhansk",
+      "appearances": 54,
+      "goals": 3
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 42,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U16",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine U17",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U19",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 39,
+      "goals": 3
+    },
+    {
+      "team": "Ukraine U23",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 140,
+    "goals": 4
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "apiId": 153506,
+  "name": "I. Vassilev",
+  "clubs": [
+    {
+      "club": "Aston Villa",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Burton Albion",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Cheltenham Town",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 48,
+      "goals": 5
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 24,
+      "goals": 2
+    },
+    {
+      "club": "St. Louis City",
+      "appearances": 75,
+      "goals": 6
+    },
+    {
+      "club": "Philadelphia Union",
+      "appearances": 27,
+      "goals": 3
+    },
+    {
+      "club": "Orlando City SC",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "United States U16",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "team": "United States U17",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "team": "United States U18",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "team": "United States U20",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "United States U23",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "United States",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 218,
+    "goals": 18
+  }
+}

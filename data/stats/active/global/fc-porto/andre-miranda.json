@@ -1,0 +1,57 @@
+{
+  "apiId": 515008,
+  "name": "André Miranda",
+  "clubs": [
+    {
+      "club": "Coritiba",
+      "appearances": 49,
+      "goals": 2
+    },
+    {
+      "club": "Sochaux",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 262,
+      "goals": 10
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 178,
+      "goals": 13
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 121,
+      "goals": 1
+    },
+    {
+      "club": "Jiangsu Suning",
+      "appearances": 28,
+      "goals": 2
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 57,
+      "goals": 1
+    },
+    {
+      "club": "FC Porto",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 58,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 727,
+    "goals": 30
+  }
+}

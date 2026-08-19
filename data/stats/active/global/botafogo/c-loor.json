@@ -1,0 +1,42 @@
+{
+  "apiId": 410134,
+  "name": "C. Loor",
+  "clubs": [
+    {
+      "club": "Universidad Católica",
+      "appearances": 85,
+      "goals": 3
+    },
+    {
+      "club": "América de Quito",
+      "appearances": 38,
+      "goals": 0
+    },
+    {
+      "club": "Independiente del Valle",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ecuador U23",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Ecuador",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 149,
+    "goals": 4
+  }
+}

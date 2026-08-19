@@ -1,0 +1,52 @@
+{
+  "apiId": 129943,
+  "name": "V. Guzmán",
+  "clubs": [
+    {
+      "club": "Pachuca",
+      "appearances": 247,
+      "goals": 57
+    },
+    {
+      "club": "Guadalajara",
+      "appearances": 76,
+      "goals": 17
+    },
+    {
+      "club": "Pachuca",
+      "appearances": 37,
+      "goals": 5
+    },
+    {
+      "club": "Toluca",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "CF Monterrey",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico U20",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "team": "Mexico U23",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Mexico",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 372,
+    "goals": 80
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "apiId": 378,
+  "name": "Alex Telles",
+  "clubs": [
+    {
+      "club": "Juventude",
+      "appearances": 30,
+      "goals": 2
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 42,
+      "goals": 1
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 60,
+      "goals": 2
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 195,
+      "goals": 26
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 50,
+      "goals": 1
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 44,
+      "goals": 3
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 98,
+      "goals": 13
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 567,
+    "goals": 48
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiId": 138753,
+  "name": "O. Edvardsen",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

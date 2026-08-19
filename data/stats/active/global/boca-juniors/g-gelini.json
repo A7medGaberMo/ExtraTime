@@ -1,0 +1,47 @@
+{
+  "apiId": 560386,
+  "name": "G. Gelini",
+  "clubs": [
+    {
+      "club": "Boca Juniors",
+      "appearances": 178,
+      "goals": 11
+    },
+    {
+      "club": "Rosario Central",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 284,
+      "goals": 14
+    },
+    {
+      "club": "AEK Athens",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Tigre",
+      "appearances": 71,
+      "goals": 2
+    },
+    {
+      "club": "Universidad Católica",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 577,
+    "goals": 27
+  }
+}

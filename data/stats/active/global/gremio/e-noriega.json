@@ -1,0 +1,92 @@
+{
+  "apiId": 199141,
+  "name": "E. Noriega",
+  "clubs": [
+    {
+      "club": "Minervén",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "Unión de Santa Fe",
+      "appearances": 49,
+      "goals": 10
+    },
+    {
+      "club": "Sporting Cristal",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Unión de Santa Fe",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Mineros",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "ItalChacao",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Independiente Medellín",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Deportivo Táchira",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Caracas",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Mineros",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Monagas",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Guaros FC",
+      "appearances": 11,
+      "goals": 3
+    },
+    {
+      "club": "Llaneros",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Venezuela",
+      "appearances": 38,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 151,
+    "goals": 19
+  }
+}

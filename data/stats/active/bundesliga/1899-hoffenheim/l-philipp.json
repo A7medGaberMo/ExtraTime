@@ -1,0 +1,81 @@
+{
+  "apiId": 163066,
+  "name": "L. Philipp",
+  "clubs": [
+    {
+      "club": "UEFA Europa League",
+      "appearances": 1,
+      "goals": 4
+    },
+    {
+      "club": "Ludogorets Razgrad",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "club": "İstanbul Başakşehir",
+      "appearances": 5,
+      "goals": 5
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "club": "Lyon",
+      "appearances": 9,
+      "goals": 3
+    },
+    {
+      "club": "Red Star Belgrade",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Slovan Liberec",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "club": "R32",
+      "appearances": 4,
+      "goals": 30
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Braga",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "FCSB",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 0,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 32,
+    "goals": 50
+  }
+}

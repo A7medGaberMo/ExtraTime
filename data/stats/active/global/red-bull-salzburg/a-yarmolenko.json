@@ -1,0 +1,67 @@
+{
+  "apiId": 18834,
+  "name": "A. Yarmolenko",
+  "clubs": [
+    {
+      "club": "Desna Chernihiv",
+      "appearances": 9,
+      "goals": 4
+    },
+    {
+      "club": "Dynamo-2 Kyiv",
+      "appearances": 37,
+      "goals": 9
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 341,
+      "goals": 137
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 18,
+      "goals": 3
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 86,
+      "goals": 13
+    },
+    {
+      "club": "Al Ain",
+      "appearances": 23,
+      "goals": 11
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 61,
+      "goals": 24
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U19",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 126,
+      "goals": 47
+    }
+  ],
+  "careerTotal": {
+    "appearances": 587,
+    "goals": 202
+  }
+}

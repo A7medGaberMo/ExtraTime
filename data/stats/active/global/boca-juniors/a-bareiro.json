@@ -1,0 +1,82 @@
+{
+  "apiId": 35551,
+  "name": "A. Bareiro",
+  "clubs": [
+    {
+      "club": "Olimpia",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "River Plate Asunción",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Nacional Asunción",
+      "appearances": 78,
+      "goals": 28
+    },
+    {
+      "club": "Monterrey",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "San Lorenzo",
+      "appearances": 68,
+      "goals": 25
+    },
+    {
+      "club": "Alanyaspor",
+      "appearances": 37,
+      "goals": 5
+    },
+    {
+      "club": "Atlético San Luis",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "club": "San Lorenzo",
+      "appearances": 26,
+      "goals": 10
+    },
+    {
+      "club": "San Lorenzo",
+      "appearances": 26,
+      "goals": 5
+    },
+    {
+      "club": "River Plate",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Al-Rayyan",
+      "appearances": 10,
+      "goals": 3
+    },
+    {
+      "club": "Fortaleza",
+      "appearances": 31,
+      "goals": 10
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 10,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Paraguay",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 320,
+    "goals": 92
+  }
+}

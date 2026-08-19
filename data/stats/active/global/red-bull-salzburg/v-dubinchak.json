@@ -1,0 +1,57 @@
+{
+  "apiId": 63564,
+  "name": "V. Dubinchak",
+  "clubs": [
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 115,
+      "goals": 1
+    },
+    {
+      "club": "Arsenal Kyiv",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Karpaty Lviv",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Dnipro-1",
+      "appearances": 43,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U17",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "team": "Ukraine U18",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "team": "Ukraine U19",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 219,
+    "goals": 2
+  }
+}

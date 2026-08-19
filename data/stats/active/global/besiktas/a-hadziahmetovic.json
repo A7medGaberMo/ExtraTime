@@ -1,0 +1,57 @@
+{
+  "apiId": 50006,
+  "name": "A. Hadžiahmetović",
+  "clubs": [
+    {
+      "club": "Željezničar",
+      "appearances": 47,
+      "goals": 3
+    },
+    {
+      "club": "Konyaspor",
+      "appearances": 199,
+      "goals": 17
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 58,
+      "goals": 1
+    },
+    {
+      "club": "Rizespor",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Hull City",
+      "appearances": 37,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Bosnia and Herzegovina U17",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "Bosnia and Herzegovina U19",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Bosnia and Herzegovina U21",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "team": "Bosnia and Herzegovina",
+      "appearances": 37,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 362,
+    "goals": 22
+  }
+}

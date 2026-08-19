@@ -1,0 +1,67 @@
+{
+  "apiId": 550902,
+  "name": "M. Figueiredo",
+  "clubs": [
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Democrata",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Kauno Žalgiris",
+      "appearances": 43,
+      "goals": 14
+    },
+    {
+      "club": "OFI",
+      "appearances": 38,
+      "goals": 11
+    },
+    {
+      "club": "Al-Wasl",
+      "appearances": 23,
+      "goals": 10
+    },
+    {
+      "club": "Gaziantep",
+      "appearances": 64,
+      "goals": 19
+    },
+    {
+      "club": "Gaziantep",
+      "appearances": 22,
+      "goals": 7
+    },
+    {
+      "club": "İstanbul Başakşehir",
+      "appearances": 102,
+      "goals": 24
+    },
+    {
+      "club": "Johor Darul Ta'zim",
+      "appearances": 10,
+      "goals": 7
+    },
+    {
+      "club": "Benfica",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Malaysia",
+      "appearances": 3,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 323,
+    "goals": 93
+  }
+}

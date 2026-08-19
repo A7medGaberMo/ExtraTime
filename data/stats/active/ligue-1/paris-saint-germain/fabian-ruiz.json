@@ -1,0 +1,42 @@
+{
+  "apiId": 328,
+  "name": "Fabián Ruiz",
+  "clubs": [
+    {
+      "club": "Real Betis B",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 60,
+      "goals": 3
+    },
+    {
+      "club": "Elche",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Napoli",
+      "appearances": 166,
+      "goals": 22
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 167,
+      "goals": 16
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 50,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 434,
+    "goals": 45
+  }
+}

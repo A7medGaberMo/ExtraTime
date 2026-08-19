@@ -1,10 +1,47 @@
 {
   "apiId": 184,
   "name": "H. Kane",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 435,
+      "goals": 280
+    },
+    {
+      "club": "Leyton Orient",
+      "appearances": 18,
+      "goals": 5
+    },
+    {
+      "club": "Millwall",
+      "appearances": 27,
+      "goals": 9
+    },
+    {
+      "club": "Norwich City",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 147,
+      "goals": 146
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 121,
+      "goals": 85
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 647,
+    "goals": 442
   }
 }

@@ -1,0 +1,22 @@
+{
+  "apiId": 15812,
+  "name": "P. Onuachu",
+  "clubs": [
+    {
+      "club": "Trabzonspor",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

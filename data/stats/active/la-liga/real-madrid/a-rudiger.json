@@ -1,0 +1,42 @@
+{
+  "apiId": 2285,
+  "name": "A. Rüdiger",
+  "clubs": [
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 80,
+      "goals": 2
+    },
+    {
+      "club": "Roma",
+      "appearances": 72,
+      "goals": 2
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 203,
+      "goals": 12
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 182,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 86,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 559,
+    "goals": 27
+  }
+}

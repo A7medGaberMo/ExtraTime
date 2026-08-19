@@ -1,0 +1,57 @@
+{
+  "apiId": 624,
+  "name": "N. Otamendi",
+  "clubs": [
+    {
+      "club": "Vélez Sarsfield",
+      "appearances": 54,
+      "goals": 1
+    },
+    {
+      "club": "Porto",
+      "appearances": 125,
+      "goals": 10
+    },
+    {
+      "club": "Valencia",
+      "appearances": 35,
+      "goals": 6
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 210,
+      "goals": 11
+    },
+    {
+      "club": "Benfica",
+      "appearances": 281,
+      "goals": 18
+    },
+    {
+      "club": "River Plate",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 139,
+      "goals": 8
+    },
+    {
+      "team": "Argentina Olympic (O.P.)",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 722,
+    "goals": 47
+  }
+}

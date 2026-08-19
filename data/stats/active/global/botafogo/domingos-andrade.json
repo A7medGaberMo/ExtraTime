@@ -1,0 +1,47 @@
+{
+  "apiId": 237165,
+  "name": "Domingos Andrade",
+  "clubs": [
+    {
+      "club": "Interclube",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Felgueiras 1932",
+      "appearances": 24,
+      "goals": 1
+    },
+    {
+      "club": "Porto B",
+      "appearances": 58,
+      "goals": 1
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Angola U17",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "team": "Angola",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 108,
+    "goals": 3
+  }
+}

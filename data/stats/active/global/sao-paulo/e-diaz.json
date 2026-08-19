@@ -1,0 +1,52 @@
+{
+  "apiId": 6237,
+  "name": "E. Díaz",
+  "clubs": [
+    {
+      "club": "Barranquilla",
+      "appearances": 42,
+      "goals": 3
+    },
+    {
+      "club": "Atlético Junior",
+      "appearances": 106,
+      "goals": 20
+    },
+    {
+      "club": "Porto",
+      "appearances": 125,
+      "goals": 41
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 148,
+      "goals": 41
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 32,
+      "goals": 15
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia U20",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Colombia",
+      "appearances": 79,
+      "goals": 23
+    }
+  ],
+  "careerTotal": {
+    "appearances": 465,
+    "goals": 121
+  }
+}

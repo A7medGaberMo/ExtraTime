@@ -1,0 +1,22 @@
+{
+  "apiId": 45150,
+  "name": "R. Doohan",
+  "clubs": [
+    {
+      "club": "Celtic",
+      "appearances": 85,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 0
+  }
+}

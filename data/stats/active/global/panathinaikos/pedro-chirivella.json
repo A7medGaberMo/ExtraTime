@@ -1,0 +1,47 @@
+{
+  "apiId": 93671,
+  "name": "Pedro Chirivella",
+  "clubs": [
+    {
+      "club": "Liverpool",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Go Ahead Eagles",
+      "appearances": 17,
+      "goals": 2
+    },
+    {
+      "club": "Willem II",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Extremadura",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Nantes",
+      "appearances": 173,
+      "goals": 4
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 41,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U17",
+      "appearances": 15,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 274,
+    "goals": 6
+  }
+}

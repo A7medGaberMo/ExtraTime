@@ -1,0 +1,42 @@
+{
+  "apiId": 6052,
+  "name": "Á. Barreal",
+  "clubs": [
+    {
+      "club": "Vélez Sarsfield",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "FC Cincinnati",
+      "appearances": 121,
+      "goals": 19
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 31,
+      "goals": 2
+    },
+    {
+      "club": "Santos",
+      "appearances": 75,
+      "goals": 14
+    },
+    {
+      "club": "Santos",
+      "appearances": 26,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U20",
+      "appearances": 5,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 271,
+    "goals": 41
+  }
+}

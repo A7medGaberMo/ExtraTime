@@ -1,0 +1,42 @@
+{
+  "apiId": 330419,
+  "name": "Alberto Baio",
+  "clubs": [
+    {
+      "club": "Vitória de Guimarães B",
+      "appearances": 45,
+      "goals": 3
+    },
+    {
+      "club": "Vitória de Guimarães",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Juventus",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 29,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U18",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 94,
+    "goals": 4
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "apiId": 10111,
+  "name": "Bento",
+  "clubs": [
+    {
+      "club": "Athletico Paranaense",
+      "appearances": 164,
+      "goals": 0
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 85,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 249,
+    "goals": 0
+  }
+}

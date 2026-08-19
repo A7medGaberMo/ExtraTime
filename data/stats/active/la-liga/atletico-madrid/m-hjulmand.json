@@ -1,0 +1,37 @@
+{
+  "apiId": 7712,
+  "name": "M. Hjulmand",
+  "clubs": [
+    {
+      "club": "Admira Wacker",
+      "appearances": 74,
+      "goals": 1
+    },
+    {
+      "club": "Lecce",
+      "appearances": 95,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 142,
+      "goals": 10
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 27,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 311,
+    "goals": 11
+  }
+}

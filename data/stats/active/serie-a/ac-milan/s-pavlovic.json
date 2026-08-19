@@ -1,0 +1,47 @@
+{
+  "apiId": 45826,
+  "name": "S. Pavlović",
+  "clubs": [
+    {
+      "club": "Partizan",
+      "appearances": 57,
+      "goals": 2
+    },
+    {
+      "club": "Monaco",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Basel",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 71,
+      "goals": 6
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 73,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Serbia",
+      "appearances": 55,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 235,
+    "goals": 16
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "apiId": 535046,
+  "name": "A. Amaimouni",
+  "clubs": [
+    {
+      "club": "SpVgg Erkenschwick",
+      "appearances": 33,
+      "goals": 18
+    },
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 46,
+      "goals": 16
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 17,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Morocco",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 96,
+    "goals": 36
+  }
+}

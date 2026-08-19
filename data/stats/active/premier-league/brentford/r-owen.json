@@ -1,0 +1,71 @@
+{
+  "apiId": 327726,
+  "name": "R. Owen",
+  "clubs": [
+    {
+      "club": "Lokomotive Leipzig",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "BSG Chemie Leipzig",
+      "appearances": 27,
+      "goals": 6
+    },
+    {
+      "club": "1. FC Magdeburg",
+      "appearances": 50,
+      "goals": 19
+    },
+    {
+      "club": "Dynamo Dresden",
+      "appearances": 59,
+      "goals": 9
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 31,
+      "goals": 3
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 176,
+      "goals": 64
+    },
+    {
+      "club": "1. FC Kaiserslautern",
+      "appearances": 37,
+      "goals": 12
+    },
+    {
+      "club": "Tennis Borussia Berlin",
+      "appearances": 30,
+      "goals": 9
+    },
+    {
+      "club": "Southampton",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "SpVgg Unterhaching",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "club": "Lillestrøm",
+      "appearances": 13,
+      "goals": 10
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 477,
+    "goals": 139
+  }
+}

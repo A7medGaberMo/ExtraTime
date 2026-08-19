@@ -46,7 +46,7 @@
       "position": "CB",
       "club": "Nottingham Forest",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/363695.png",
       "kitNumber": 5
@@ -151,28 +151,6 @@
       "kitNumber": 44
     },
     {
-      "apiId": 329361,
-      "name": "B. Hammond",
-      "position": "CB",
-      "club": "Nottingham Forest",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/329361.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 334369,
-      "name": "Justin Thomas Hanks",
-      "position": "CB",
-      "club": "Nottingham Forest",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/334369.png",
-      "kitNumber": 65
-    },
-    {
       "apiId": 380663,
       "name": "J. Sinclair",
       "position": "CB",
@@ -272,17 +250,6 @@
       "kitNumber": 18
     },
     {
-      "apiId": 380492,
-      "name": "Eric Emanuel da Silva Moreira",
-      "position": "RM/RB",
-      "club": "Nottingham Forest",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/380492.png",
-      "kitNumber": 17
-    },
-    {
       "apiId": 551288,
       "name": "G. McDonnell",
       "position": "CM",
@@ -310,21 +277,10 @@
       "position": "ST",
       "club": "Nottingham Forest",
       "nation": "New Zealand",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18931.png",
       "kitNumber": 11
-    },
-    {
-      "apiId": 8598,
-      "name": "T. Awoniyi",
-      "position": "ST",
-      "club": "Nottingham Forest",
-      "nation": "Nigeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/8598.png",
-      "kitNumber": 9
     },
     {
       "apiId": 9366,

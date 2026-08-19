@@ -1,0 +1,37 @@
+{
+  "apiId": 16,
+  "name": "M. Götze",
+  "clubs": [
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 219,
+      "goals": 45
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 114,
+      "goals": 36
+    },
+    {
+      "club": "PSV Eindhoven",
+      "appearances": 77,
+      "goals": 18
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 151,
+      "goals": 12
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany",
+      "appearances": 66,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 561,
+    "goals": 111
+  }
+}

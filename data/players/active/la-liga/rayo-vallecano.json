@@ -85,17 +85,6 @@
       "kitNumber": 20
     },
     {
-      "apiId": 181734,
-      "name": "Pep Chavarría",
-      "position": "LB",
-      "club": "Rayo Vallecano",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/181734.png",
-      "kitNumber": 3
-    },
-    {
       "apiId": 333292,
       "name": "Pelayo Fernández",
       "position": "CB",
@@ -105,17 +94,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/333292.png",
       "kitNumber": 27
-    },
-    {
-      "apiId": 358431,
-      "name": "N. Mendy",
-      "position": "CB",
-      "club": "Rayo Vallecano",
-      "nation": "Senegal",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/358431.png",
-      "kitNumber": 32
     },
     {
       "apiId": 314006,
@@ -244,7 +222,7 @@
       "position": "RW/RM",
       "club": "Rayo Vallecano",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/131546.png",
       "kitNumber": 7
@@ -303,6 +281,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/551397.png",
       "kitNumber": 29
+    },
+    {
+      "apiId": 386869,
+      "name": "Dani Martínez",
+      "position": "CB",
+      "club": "Rayo Vallecano",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/386869.png",
+      "kitNumber": 35
     }
   ]
 }

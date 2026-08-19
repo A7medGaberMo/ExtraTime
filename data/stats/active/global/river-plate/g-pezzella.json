@@ -1,0 +1,57 @@
+{
+  "apiId": 2469,
+  "name": "G. Pezzella",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 65,
+      "goals": 6
+    },
+    {
+      "club": "Betis",
+      "appearances": 113,
+      "goals": 5
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 103,
+      "goals": 6
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 97,
+      "goals": 6
+    },
+    {
+      "club": "Betis",
+      "appearances": 86,
+      "goals": 2
+    },
+    {
+      "club": "River Plate",
+      "appearances": 31,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U20",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "team": "Argentina U23",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "team": "Argentina",
+      "appearances": 42,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 495,
+    "goals": 25
+  }
+}

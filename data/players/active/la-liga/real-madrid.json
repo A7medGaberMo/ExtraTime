@@ -30,17 +30,6 @@
       "kitNumber": 13
     },
     {
-      "apiId": 396475,
-      "name": "Fran González",
-      "position": "GK",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/396475.png",
-      "kitNumber": 26
-    },
-    {
       "apiId": 386872,
       "name": "Sergio Mestre",
       "position": "GK",
@@ -68,7 +57,7 @@
       "position": "CB/RB",
       "club": "Real Madrid",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/372.png",
       "kitNumber": 3
@@ -90,7 +79,7 @@
       "position": "RB/RM",
       "club": "Real Madrid",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/283.png",
       "kitNumber": 12
@@ -101,21 +90,10 @@
       "position": "RB/RM",
       "club": "Real Madrid",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/226.png",
       "kitNumber": 2
-    },
-    {
-      "apiId": 1145,
-      "name": "I. Konaté",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1145.png",
-      "kitNumber": 4
     },
     {
       "apiId": 47380,
@@ -277,7 +255,7 @@
       "position": "CDM/CB",
       "club": "Real Madrid",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1271.png",
       "kitNumber": 14
@@ -288,7 +266,7 @@
       "position": "CAM/RW",
       "club": "Real Madrid",
       "nation": "Portugal",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/636.png",
       "kitNumber": 16
@@ -310,21 +288,10 @@
       "position": "CAM/RW",
       "club": "Real Madrid",
       "nation": "Turkey",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/291964.png",
       "kitNumber": 15
-    },
-    {
-      "apiId": 449249,
-      "name": "Franco Mastantuono",
-      "position": "CAM/RW",
-      "club": "Real Madrid",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449249.png",
-      "kitNumber": 30
     },
     {
       "apiId": 560905,
@@ -349,17 +316,6 @@
       "kitNumber": 51
     },
     {
-      "apiId": 386306,
-      "name": "César Palacios",
-      "position": "CM",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/386306.png",
-      "kitNumber": 42
-    },
-    {
       "apiId": 509470,
       "name": "Thiago Pitarch",
       "position": "CM",
@@ -376,7 +332,7 @@
       "position": "ST/LW",
       "club": "Real Madrid",
       "nation": "France",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278.png",
       "kitNumber": 9
@@ -387,7 +343,7 @@
       "position": "LW/ST",
       "club": "Real Madrid",
       "nation": "Brazil",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/762.png",
       "kitNumber": 7
@@ -398,21 +354,10 @@
       "position": "RW/ST",
       "club": "Real Madrid",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10009.png",
       "kitNumber": 11
-    },
-    {
-      "apiId": 336711,
-      "name": "Gonzalo García",
-      "position": "ST",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/336711.png",
-      "kitNumber": 27
     },
     {
       "apiId": 308998,
@@ -435,6 +380,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441497.png",
       "kitNumber": 45
+    },
+    {
+      "apiId": 450497,
+      "name": "Carlos Espí",
+      "position": "ST",
+      "club": "Real Madrid",
+      "nation": "Royal Spanish Football Federation",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/450497.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 513776,
+      "name": "Y. Diomande",
+      "position": "ST",
+      "club": "Real Madrid",
+      "nation": "Ivory Coast",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/513776.png",
+      "kitNumber": 49
     }
   ]
 }

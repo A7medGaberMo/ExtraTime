@@ -1,0 +1,57 @@
+{
+  "apiId": 544705,
+  "name": "Marquinhos",
+  "clubs": [
+    {
+      "club": "Corinthians",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Roma",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Roma",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 524,
+      "goals": 43
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U17",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Brazil Olympic",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Brazil",
+      "appearances": 110,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 576,
+    "goals": 44
+  }
+}

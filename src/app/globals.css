@@ -26,8 +26,9 @@
 
   /* Distinct Tier Colors */
   --color-tier-icon: #D4AF37;
+  --color-tier-hero: #10B981;
+  --color-tier-ultimate: #0EA5E9;
   --color-tier-master: #A855F7;
-  --color-tier-elite-plus: #0EA5E9;
   --color-tier-elite: #E11D48;
   --color-tier-gold: #EAB308;
   --color-tier-silver: #CBD5E1;

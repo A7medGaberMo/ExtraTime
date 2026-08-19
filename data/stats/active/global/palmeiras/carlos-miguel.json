@@ -1,0 +1,41 @@
+{
+  "apiId": 10373,
+  "name": "Carlos Miguel",
+  "clubs": [
+    {
+      "club": "Internacional",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Santa Cruz",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Boa Esporte",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 54,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 87,
+    "goals": 0
+  }
+}

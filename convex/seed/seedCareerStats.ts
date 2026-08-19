@@ -2,7 +2,7 @@ import { mutation } from "../_generated/server";
 import { v } from "convex/values";
 
 const statItemArg = v.object({
-  apiId: v.number(),
+  apiId: v.union(v.number(), v.string()),
   name: v.string(),
   clubs: v.array(
     v.object({

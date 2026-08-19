@@ -1,0 +1,57 @@
+{
+  "apiId": 280245,
+  "name": "Martinelli",
+  "clubs": [
+    {
+      "club": "Fiorentina",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Avellino",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy U16",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "team": "Italy U17",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "team": "Italy U18",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Italy U19",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "team": "Italy U20",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 32,
+    "goals": 1
+  }
+}

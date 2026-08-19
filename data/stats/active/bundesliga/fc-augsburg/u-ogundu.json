@@ -1,0 +1,26 @@
+{
+  "apiId": 499495,
+  "name": "U. Ogundu",
+  "clubs": [
+    {
+      "club": "Şanlıurfaspor",
+      "appearances": 19,
+      "goals": 6
+    },
+    {
+      "club": "Alanyaspor",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 44,
+    "goals": 9
+  }
+}

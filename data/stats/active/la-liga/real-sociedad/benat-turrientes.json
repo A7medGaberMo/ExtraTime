@@ -1,0 +1,32 @@
+{
+  "apiId": 183744,
+  "name": "Beñat Turrientes",
+  "clubs": [
+    {
+      "club": "Real Sociedad C",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Real Sociedad B",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Real Sociedad",
+      "appearances": 132,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 186,
+    "goals": 4
+  }
+}

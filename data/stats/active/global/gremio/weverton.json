@@ -1,0 +1,67 @@
+{
+  "apiId": 2410,
+  "name": "Weverton",
+  "clubs": [
+    {
+      "club": "Corinthians",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Remo",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Oeste",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "América de Natal",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Botafogo-SP",
+      "appearances": 22,
+      "goals": 0
+    },
+    {
+      "club": "Portuguesa",
+      "appearances": 105,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Paranaense",
+      "appearances": 303,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 448,
+      "goals": 0
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 25,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil Olympic",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Brazil",
+      "appearances": 11,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 938,
+    "goals": 0
+  }
+}

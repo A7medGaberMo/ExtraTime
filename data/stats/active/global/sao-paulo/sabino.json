@@ -1,0 +1,31 @@
+{
+  "apiId": 9340,
+  "name": "Sabino",
+  "clubs": [
+    {
+      "club": "Santos",
+      "appearances": 28,
+      "goals": 4
+    },
+    {
+      "club": "Coritiba",
+      "appearances": 87,
+      "goals": 11
+    },
+    {
+      "club": "Sport Recife",
+      "appearances": 147,
+      "goals": 7
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 66,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 328,
+    "goals": 25
+  }
+}

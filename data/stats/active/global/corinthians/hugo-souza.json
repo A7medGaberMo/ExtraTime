@@ -1,0 +1,37 @@
+{
+  "apiId": 123759,
+  "name": "Hugo Souza",
+  "clubs": [
+    {
+      "club": "Flamengo",
+      "appearances": 71,
+      "goals": 0
+    },
+    {
+      "club": "Chaves",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 131,
+      "goals": 0
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 68,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 296,
+    "goals": 0
+  }
+}

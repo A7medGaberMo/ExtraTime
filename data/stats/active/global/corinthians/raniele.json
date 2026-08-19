@@ -1,0 +1,66 @@
+{
+  "apiId": 160436,
+  "name": "Raniele",
+  "clubs": [
+    {
+      "club": "Ferroviária",
+      "appearances": 75,
+      "goals": 3
+    },
+    {
+      "club": "Taubaté",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Penapolense",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Portuguesa",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Jacuipense",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Botafogo-SP",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Bahia",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Avaí",
+      "appearances": 51,
+      "goals": 2
+    },
+    {
+      "club": "Avaí",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Cuiabá",
+      "appearances": 35,
+      "goals": 3
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 143,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 400,
+    "goals": 15
+  }
+}

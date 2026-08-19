@@ -1,0 +1,37 @@
+{
+  "apiId": 561022,
+  "name": "J. Lopez",
+  "clubs": [
+    {
+      "club": "Celta B",
+      "appearances": 84,
+      "goals": 11
+    },
+    {
+      "club": "Celta",
+      "appearances": 572,
+      "goals": 222
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 25,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 20,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 696,
+    "goals": 244
+  }
+}

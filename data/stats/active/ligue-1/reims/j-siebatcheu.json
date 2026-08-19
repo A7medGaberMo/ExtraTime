@@ -1,0 +1,57 @@
+{
+  "apiId": 2219,
+  "name": "J. Siebatcheu",
+  "clubs": [
+    {
+      "club": "Reims II",
+      "appearances": 18,
+      "goals": 4
+    },
+    {
+      "club": "Reims",
+      "appearances": 89,
+      "goals": 26
+    },
+    {
+      "club": "Châteauroux",
+      "appearances": 16,
+      "goals": 11
+    },
+    {
+      "club": "Rennes",
+      "appearances": 44,
+      "goals": 8
+    },
+    {
+      "club": "Young Boys",
+      "appearances": 88,
+      "goals": 42
+    },
+    {
+      "club": "Union Berlin",
+      "appearances": 64,
+      "goals": 5
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 27,
+      "goals": 7
+    },
+    {
+      "club": "C.D. Tondela",
+      "appearances": 19,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 365,
+    "goals": 104
+  }
+}

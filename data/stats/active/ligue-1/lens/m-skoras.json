@@ -1,0 +1,46 @@
+{
+  "apiId": 40809,
+  "name": "M. Skóraś",
+  "clubs": [
+    {
+      "club": "Lech Poznań II",
+      "appearances": 22,
+      "goals": 4
+    },
+    {
+      "club": "Bruk-Bet Termalica",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Raków Częstochowa",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Lech Poznań",
+      "appearances": 131,
+      "goals": 21
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 90,
+      "goals": 6
+    },
+    {
+      "club": "Gent",
+      "appearances": 34,
+      "goals": 2
+    },
+    {
+      "club": "Lens",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 322,
+    "goals": 35
+  }
+}

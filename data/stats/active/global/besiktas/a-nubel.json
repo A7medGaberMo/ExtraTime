@@ -1,0 +1,57 @@
+{
+  "apiId": 399,
+  "name": "A. Nübel",
+  "clubs": [
+    {
+      "club": "SC Paderborn",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Schalke 04 II",
+      "appearances": 53,
+      "goals": 0
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 46,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Monaco",
+      "appearances": 97,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 127,
+      "goals": 0
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany U21",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "team": "Germany",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 325,
+    "goals": 0
+  }
+}

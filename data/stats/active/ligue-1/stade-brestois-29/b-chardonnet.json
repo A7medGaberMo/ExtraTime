@@ -1,0 +1,21 @@
+{
+  "apiId": 20546,
+  "name": "B. Chardonnet",
+  "clubs": [
+    {
+      "club": "Brest",
+      "appearances": 226,
+      "goals": 9
+    },
+    {
+      "club": "Épinal",
+      "appearances": 20,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 246,
+    "goals": 11
+  }
+}

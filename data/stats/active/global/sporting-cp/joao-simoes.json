@@ -1,0 +1,42 @@
+{
+  "apiId": 400509,
+  "name": "João Simões",
+  "clubs": [
+    {
+      "club": "Sporting CP B",
+      "appearances": 50,
+      "goals": 2
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 27,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U15",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 39,
+      "goals": 5
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 77,
+    "goals": 3
+  }
+}

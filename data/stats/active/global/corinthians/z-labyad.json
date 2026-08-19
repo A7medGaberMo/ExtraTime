@@ -1,0 +1,77 @@
+{
+  "apiId": 543,
+  "name": "Z. Labyad",
+  "clubs": [
+    {
+      "club": "PSV",
+      "appearances": 67,
+      "goals": 15
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 19,
+      "goals": 2
+    },
+    {
+      "club": "Vitesse",
+      "appearances": 53,
+      "goals": 13
+    },
+    {
+      "club": "Fulham",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "FC Utrecht",
+      "appearances": 58,
+      "goals": 20
+    },
+    {
+      "club": "Ajax",
+      "appearances": 52,
+      "goals": 13
+    },
+    {
+      "club": "FC Utrecht",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Yunnan Yukun",
+      "appearances": 30,
+      "goals": 6
+    },
+    {
+      "club": "Dalian Yingbo",
+      "appearances": 23,
+      "goals": 5
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 11,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U17",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Morocco U23",
+      "appearances": 17,
+      "goals": 7
+    },
+    {
+      "team": "Morocco",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 331,
+    "goals": 76
+  }
+}

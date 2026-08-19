@@ -1,0 +1,62 @@
+{
+  "apiId": 15623,
+  "name": "A. Bah",
+  "clubs": [
+    {
+      "club": "AIK Freetong",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Freetonians SLIFA",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Valladolid B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Lens",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Nice",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Benfica",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Sierra Leone",
+      "appearances": 7,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 61,
+    "goals": 1
+  }
+}

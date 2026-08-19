@@ -1,0 +1,37 @@
+{
+  "apiId": 563,
+  "name": "Álex Grimaldo",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 92,
+      "goals": 6
+    },
+    {
+      "club": "Benfica",
+      "appearances": 303,
+      "goals": 27
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 145,
+      "goals": 30
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 14,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 540,
+    "goals": 63
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "apiId": 6337,
+  "name": "J. Freytes",
+  "clubs": [
+    {
+      "club": "Newell's Old Boys",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Independiente Rivadavia",
+      "appearances": 53,
+      "goals": 0
+    },
+    {
+      "club": "Unión La Calera",
+      "appearances": 24,
+      "goals": 2
+    },
+    {
+      "club": "Alianza Lima",
+      "appearances": 34,
+      "goals": 4
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 57,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 178,
+    "goals": 8
+  }
+}

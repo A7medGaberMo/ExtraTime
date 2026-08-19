@@ -1,0 +1,67 @@
+{
+  "apiId": 496868,
+  "name": "T. İnce",
+  "clubs": [
+    {
+      "club": "Fulham SC",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "KFC Memphis",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Defence Force",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Crewe Alexandra",
+      "appearances": 123,
+      "goals": 0
+    },
+    {
+      "club": "Dundee",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Coventry City",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Walsall",
+      "appearances": 152,
+      "goals": 0
+    },
+    {
+      "club": "Ma Pau",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "T&TEC",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Trinidad and Tobago",
+      "appearances": 79,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 288,
+    "goals": 1
+  }
+}

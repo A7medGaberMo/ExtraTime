@@ -1,0 +1,42 @@
+{
+  "apiId": 37890,
+  "name": "J. Schouten",
+  "clubs": [
+    {
+      "club": "ADO Den Haag",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Telstar",
+      "appearances": 37,
+      "goals": 4
+    },
+    {
+      "club": "Excelsior",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Bologna",
+      "appearances": 109,
+      "goals": 2
+    },
+    {
+      "club": "PSV",
+      "appearances": 110,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 17,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 289,
+    "goals": 14
+  }
+}

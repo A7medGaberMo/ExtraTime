@@ -1,0 +1,31 @@
+{
+  "apiId": 90599,
+  "name": "M. Bernauer",
+  "clubs": [
+    {
+      "club": "Concarneau",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Le Mans",
+      "appearances": 32,
+      "goals": 0
+    },
+    {
+      "club": "Paris FC",
+      "appearances": 71,
+      "goals": 2
+    },
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 43,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 173,
+    "goals": 4
+  }
+}

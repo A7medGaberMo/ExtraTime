@@ -1,0 +1,47 @@
+{
+  "apiId": 385027,
+  "name": "T. Mykhavko",
+  "clubs": [
+    {
+      "club": "Lviv",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 93,
+      "goals": 6
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U19",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U23",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 109,
+    "goals": 7
+  }
+}

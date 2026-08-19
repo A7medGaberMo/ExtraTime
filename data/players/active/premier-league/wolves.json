@@ -140,17 +140,6 @@
       "kitNumber": 6
     },
     {
-      "apiId": 195717,
-      "name": "Y. Mosquera",
-      "position": "CB",
-      "club": "Wolves",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195717.png",
-      "kitNumber": 15
-    },
-    {
       "apiId": 397999,
       "name": "S. Olagunju",
       "position": "CB",
@@ -160,17 +149,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/397999.png",
       "kitNumber": 59
-    },
-    {
-      "apiId": 195103,
-      "name": "João Gomes",
-      "position": "CM/CDM",
-      "club": "Wolves",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195103.png",
-      "kitNumber": 8
     },
     {
       "apiId": 265784,
@@ -259,17 +237,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19484.png",
       "kitNumber": 10
-    },
-    {
-      "apiId": 110153,
-      "name": "T. Arokodare",
-      "position": "ST",
-      "club": "Wolves",
-      "nation": "Nigeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/110153.png",
-      "kitNumber": 14
     },
     {
       "apiId": 194116,

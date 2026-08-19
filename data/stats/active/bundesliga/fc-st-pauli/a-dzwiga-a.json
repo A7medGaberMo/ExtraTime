@@ -1,0 +1,51 @@
+{
+  "apiId": 40274,
+  "name": "A. Dźwigała",
+  "clubs": [
+    {
+      "club": "Jagiellonia Białystok",
+      "appearances": 45,
+      "goals": 7
+    },
+    {
+      "club": "Lechia Gdansk",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Górnik Zabrze",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Górnik Łęczna",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Wisła Płock",
+      "appearances": 49,
+      "goals": 0
+    },
+    {
+      "club": "Aves",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "FC St. Pauli",
+      "appearances": 113,
+      "goals": 5
+    },
+    {
+      "club": "FC St. Pauli II",
+      "appearances": 21,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 278,
+    "goals": 21
+  }
+}

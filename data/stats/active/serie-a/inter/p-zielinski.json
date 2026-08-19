@@ -1,0 +1,37 @@
+{
+  "apiId": 329,
+  "name": "P. Zieliński",
+  "clubs": [
+    {
+      "club": "Udinese",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Empoli",
+      "appearances": 66,
+      "goals": 5
+    },
+    {
+      "club": "Napoli",
+      "appearances": 364,
+      "goals": 51
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 88,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland",
+      "appearances": 109,
+      "goals": 17
+    }
+  ],
+  "careerTotal": {
+    "appearances": 538,
+    "goals": 65
+  }
+}

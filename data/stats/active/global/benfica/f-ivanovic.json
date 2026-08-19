@@ -1,0 +1,52 @@
+{
+  "apiId": 202951,
+  "name": "F. Ivanović",
+  "clubs": [
+    {
+      "club": "Vojvodina",
+      "appearances": 48,
+      "goals": 10
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Millwall",
+      "appearances": 87,
+      "goals": 22
+    },
+    {
+      "club": "Benfica",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Serbia U17",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Serbia U18",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Serbia U21",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "Serbia",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 148,
+    "goals": 33
+  }
+}

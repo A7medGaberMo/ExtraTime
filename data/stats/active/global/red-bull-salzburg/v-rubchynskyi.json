@@ -1,0 +1,67 @@
+{
+  "apiId": 63637,
+  "name": "V. Rubchynskyi",
+  "clubs": [
+    {
+      "club": "Dnipro",
+      "appearances": 73,
+      "goals": 3
+    },
+    {
+      "club": "Dnipro-1",
+      "appearances": 57,
+      "goals": 1
+    },
+    {
+      "club": "Nikopol",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 39,
+      "goals": 3
+    },
+    {
+      "club": "Karpaty Lviv",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U15",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine U16",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U17",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "team": "Ukraine U23",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 210,
+    "goals": 11
+  }
+}

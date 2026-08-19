@@ -1,0 +1,67 @@
+{
+  "apiId": 2500,
+  "name": "F. Balbuena",
+  "clubs": [
+    {
+      "club": "Cerro Porteño PF",
+      "appearances": 76,
+      "goals": 5
+    },
+    {
+      "club": "Rubio Ñu",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Nacional",
+      "appearances": 42,
+      "goals": 1
+    },
+    {
+      "club": "Libertad",
+      "appearances": 55,
+      "goals": 3
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 130,
+      "goals": 11
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 62,
+      "goals": 3
+    },
+    {
+      "club": "Dynamo Moscow",
+      "appearances": 89,
+      "goals": 8
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 17,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Paraguay",
+      "appearances": 49,
+      "goals": 2
+    },
+    {
+      "team": "Paraguay Olympic (O.P.)",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 508,
+    "goals": 36
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "apiId": 22244,
+  "name": "A. Caci",
+  "clubs": [
+    {
+      "club": "League",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Strasbourg B",
+      "appearances": 54,
+      "goals": 8
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 118,
+      "goals": 2
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 113,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 285,
+    "goals": 15
+  }
+}

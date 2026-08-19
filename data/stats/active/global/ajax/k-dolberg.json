@@ -1,0 +1,72 @@
+{
+  "apiId": 550,
+  "name": "K. Dolberg",
+  "clubs": [
+    {
+      "club": "Silkeborg",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Ajax",
+      "appearances": 119,
+      "goals": 45
+    },
+    {
+      "club": "Nice",
+      "appearances": 85,
+      "goals": 24
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 96,
+      "goals": 44
+    },
+    {
+      "club": "Ajax",
+      "appearances": 24,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark U16",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Denmark U17",
+      "appearances": 8,
+      "goals": 5
+    },
+    {
+      "team": "Denmark U19",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "team": "Denmark U21",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "team": "Denmark",
+      "appearances": 56,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 344,
+    "goals": 117
+  }
+}

@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Everton",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2932.png",
       "kitNumber": 1
@@ -46,7 +46,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/17661.png",
       "kitNumber": 32
@@ -149,17 +149,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/895.png",
       "kitNumber": 37
-    },
-    {
-      "apiId": 18929,
-      "name": "D. McNeil",
-      "position": "LW/CAM",
-      "club": "Everton",
-      "nation": "England",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18929.png",
-      "kitNumber": 7
     },
     {
       "apiId": 148099,
@@ -314,6 +303,39 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413034.png",
       "kitNumber": 50
+    },
+    {
+      "apiId": 30407,
+      "name": "C. Nørgaard",
+      "position": "CM",
+      "club": "Everton",
+      "nation": "Denmark",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30407.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 129711,
+      "name": "B. Johnson",
+      "position": "RW/ST",
+      "club": "Everton",
+      "nation": "Wales",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129711.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 350856,
+      "name": "E. Nuamah",
+      "position": "RW/LW",
+      "club": "Everton",
+      "nation": "Ghana",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350856.png",
+      "kitNumber": 37
     }
   ]
 }

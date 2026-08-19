@@ -1,0 +1,330 @@
+{
+  "club": {
+    "apiId": 197,
+    "name": "PSV Eindhoven",
+    "logo": "https://media.api-sports.io/football/teams/197.png",
+    "league": "Eredivisie",
+    "leagueId": 88
+  },
+  "players": [
+    {
+      "apiId": 138804,
+      "name": "M. Kovář",
+      "position": "GK",
+      "club": "PSV Eindhoven",
+      "nation": "Czech Republic",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138804.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 37818,
+      "name": "N. Olij",
+      "position": "GK",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37818.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 371523,
+      "name": "T. Smolenaars",
+      "position": "GK",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/371523.png",
+      "kitNumber": 51
+    },
+    {
+      "apiId": 38735,
+      "name": "S. Dest",
+      "position": "RB/LB",
+      "club": "PSV Eindhoven",
+      "nation": "United States",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/38735.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 342054,
+      "name": "R. Flamingo",
+      "position": "CB",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342054.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 361385,
+      "name": "Yarek Gasiorowski",
+      "position": "CB",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/361385.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 233,
+      "name": "Mauro Júnior",
+      "position": "CB",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/233.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 474551,
+      "name": "F. Merién",
+      "position": "CB",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/474551.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 228,
+      "name": "A. Obispo",
+      "position": "CB",
+      "club": "PSV Eindhoven",
+      "nation": "Curaçao",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/228.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 191233,
+      "name": "K. Sildillia",
+      "position": "CB",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/191233.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 439829,
+      "name": "Jordy Bawuah",
+      "position": "CM",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/439829.png",
+      "kitNumber": 52
+    },
+    {
+      "apiId": 474550,
+      "name": "N. Fernandez",
+      "position": "CM",
+      "club": "PSV Eindhoven",
+      "nation": "France",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/474550.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 453712,
+      "name": "J. Koller",
+      "position": "CM",
+      "club": "PSV Eindhoven",
+      "nation": "Czech Republic",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/453712.png",
+      "kitNumber": 56
+    },
+    {
+      "apiId": 37438,
+      "name": "S. Mijnans",
+      "position": "CM",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37438.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 37890,
+      "name": "J. Schouten",
+      "position": "CM/CDM",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37890.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 36905,
+      "name": "G. Til",
+      "position": "CM",
+      "club": "PSV Eindhoven",
+      "nation": "Ivory Coast",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/36905.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 37749,
+      "name": "J. Veerman",
+      "position": "CM",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37749.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 327895,
+      "name": "P. Wanner",
+      "position": "CM",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327895.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 434623,
+      "name": "J. van den Berg",
+      "position": "CM",
+      "club": "PSV Eindhoven",
+      "nation": "Curaçao",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/434623.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 329409,
+      "name": "E. Bajraktarevic",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/329409.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 610507,
+      "name": "A. Bouhamdi",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/610507.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 441265,
+      "name": "S. Bouhoudane",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/441265.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 272543,
+      "name": "C. Driouech",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/272543.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 502417,
+      "name": "A. Jones",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Malta",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/502417.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 43036,
+      "name": "D. Man",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/43036.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 73868,
+      "name": "R. Pepi",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/73868.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 207,
+      "name": "I. Perišić",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/207.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 25646,
+      "name": "A. Pléa",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25646.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 365018,
+      "name": "R. van Bommel",
+      "position": "ST",
+      "club": "PSV Eindhoven",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/365018.png",
+      "kitNumber": null
+    }
+  ]
+}

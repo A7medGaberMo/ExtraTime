@@ -1,0 +1,72 @@
+{
+  "apiId": 1265,
+  "name": "Y. Adli",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Milan Futuro (.mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}res.)",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Shabab",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U15",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Spain U17",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "team": "Spain U19",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Spain U21",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 91,
+    "goals": 4
+  }
+}

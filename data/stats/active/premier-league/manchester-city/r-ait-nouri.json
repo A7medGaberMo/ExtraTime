@@ -1,0 +1,37 @@
+{
+  "apiId": 21138,
+  "name": "R. Aït-Nouri",
+  "clubs": [
+    {
+      "club": "Angers II",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Angers",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 157,
+      "goals": 12
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 31,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Algeria",
+      "appearances": 34,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 221,
+    "goals": 12
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiId": 510552,
+  "name": "Luis Eduardo",
+  "clubs": [
+    {
+      "club": "Grêmio",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U17",
+      "appearances": 13,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 2,
+    "goals": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "apiId": 304867,
+  "name": "Gustavo Martins",
+  "clubs": [
+    {
+      "club": "Grêmio",
+      "appearances": 88,
+      "goals": 9
+    },
+    {
+      "club": "Caxias",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U23",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 89,
+    "goals": 9
+  }
+}

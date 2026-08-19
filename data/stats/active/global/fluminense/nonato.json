@@ -1,0 +1,56 @@
+{
+  "apiId": 10396,
+  "name": "Nonato",
+  "clubs": [
+    {
+      "club": "São Caetano",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Internacional",
+      "appearances": 91,
+      "goals": 7
+    },
+    {
+      "club": "Internacional",
+      "appearances": 33,
+      "goals": 4
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 58,
+      "goals": 4
+    },
+    {
+      "club": "Ludogorets Razgrad",
+      "appearances": 39,
+      "goals": 3
+    },
+    {
+      "club": "Santos",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Santos",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 35,
+      "goals": 2
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 309,
+    "goals": 22
+  }
+}

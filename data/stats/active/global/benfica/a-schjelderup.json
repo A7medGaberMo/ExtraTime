@@ -1,0 +1,62 @@
+{
+  "apiId": 301528,
+  "name": "A. Schjelderup",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 56,
+      "goals": 17
+    },
+    {
+      "club": "Benfica B",
+      "appearances": 91,
+      "goals": 16
+    },
+    {
+      "club": "Benfica",
+      "appearances": 51,
+      "goals": 8
+    },
+    {
+      "club": "Nordsjælland",
+      "appearances": 26,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway U15",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "team": "Norway U16",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Norway U18",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Norway U19",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "team": "Norway U21",
+      "appearances": 12,
+      "goals": 8
+    },
+    {
+      "team": "Norway",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 224,
+    "goals": 50
+  }
+}

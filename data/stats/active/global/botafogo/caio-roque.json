@@ -1,0 +1,47 @@
+{
+  "apiId": 283837,
+  "name": "Caio Roque",
+  "clubs": [
+    {
+      "club": "Lommel",
+      "appearances": 37,
+      "goals": 2
+    },
+    {
+      "club": "Bahia",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Londrina",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Volta Redonda",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Portuguesa",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U18",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 69,
+    "goals": 2
+  }
+}

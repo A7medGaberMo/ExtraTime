@@ -1,0 +1,42 @@
+{
+  "apiId": 2887,
+  "name": "R. Jiménez",
+  "clubs": [
+    {
+      "club": "América",
+      "appearances": 103,
+      "goals": 38
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Benfica",
+      "appearances": 120,
+      "goals": 31
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 166,
+      "goals": 57
+    },
+    {
+      "club": "Fulham",
+      "appearances": 115,
+      "goals": 31
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 128,
+      "goals": 47
+    }
+  ],
+  "careerTotal": {
+    "appearances": 532,
+    "goals": 158
+  }
+}

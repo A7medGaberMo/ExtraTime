@@ -1,0 +1,36 @@
+{
+  "apiId": 178346,
+  "name": "J. Çeka",
+  "clubs": [
+    {
+      "club": "Schalke 04 II",
+      "appearances": 70,
+      "goals": 20
+    },
+    {
+      "club": "1. FC Magdeburg",
+      "appearances": 97,
+      "goals": 18
+    },
+    {
+      "club": "1. FC Magdeburg II",
+      "appearances": 11,
+      "goals": 10
+    },
+    {
+      "club": "SV Elversberg",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "Dynamo Dresden",
+      "appearances": 17,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 202,
+    "goals": 51
+  }
+}

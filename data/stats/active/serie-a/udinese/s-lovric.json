@@ -1,0 +1,31 @@
+{
+  "apiId": 7591,
+  "name": "S. Lovrić",
+  "clubs": [
+    {
+      "club": "Sturm Graz II",
+      "appearances": 31,
+      "goals": 4
+    },
+    {
+      "club": "Sturm Graz",
+      "appearances": 79,
+      "goals": 1
+    },
+    {
+      "club": "Lugano",
+      "appearances": 108,
+      "goals": 12
+    },
+    {
+      "club": "Udinese",
+      "appearances": 108,
+      "goals": 9
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 326,
+    "goals": 26
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "apiId": 84081,
+  "name": "G. Biancone",
+  "clubs": [
+    {
+      "club": "Monaco",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "Monaco B",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 46,
+      "goals": 2
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Troyes",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Troyes B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 64,
+      "goals": 4
+    },
+    {
+      "club": "Olympiacos B",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France U19",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 189,
+    "goals": 10
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiId": 39327,
+  "name": "J. Glesnes",
+  "clubs": [
+    {
+      "club": "LA Galaxy",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "USA",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

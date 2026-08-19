@@ -1,0 +1,31 @@
+{
+  "apiId": 349799,
+  "name": "Eliezer Mayenda",
+  "clubs": [
+    {
+      "club": "Sochaux",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Sochaux B",
+      "appearances": 14,
+      "goals": 4
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 73,
+      "goals": 12
+    },
+    {
+      "club": "Hibernian",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 107,
+    "goals": 17
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 35576,
+  "name": "O. Pineda",
+  "clubs": [
+    {
+      "club": "Querétaro",
+      "appearances": 59,
+      "goals": 9
+    },
+    {
+      "club": "Guadalajara",
+      "appearances": 128,
+      "goals": 10
+    },
+    {
+      "club": "Cruz Azul",
+      "appearances": 112,
+      "goals": 13
+    },
+    {
+      "club": "Celta",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "AEK Athens",
+      "appearances": 130,
+      "goals": 18
+    },
+    {
+      "club": "Monterrey",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico U20",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Mexico",
+      "appearances": 94,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 440,
+    "goals": 51
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "apiId": 6000,
+  "name": "L. Martínez",
+  "clubs": [
+    {
+      "club": "Cerro Porteño",
+      "appearances": 14,
+      "goals": 4
+    },
+    {
+      "club": "Deportivo Capiatá",
+      "appearances": 7,
+      "goals": 3
+    },
+    {
+      "club": "Central Norte",
+      "appearances": 13,
+      "goals": 8
+    },
+    {
+      "club": "The Strongest",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Resistencia",
+      "appearances": 40,
+      "goals": 13
+    },
+    {
+      "club": "Platense",
+      "appearances": 97,
+      "goals": 22
+    },
+    {
+      "club": "Talleres",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "River Plate",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Paraguay U17",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Paraguay",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 216,
+    "goals": 57
+  }
+}

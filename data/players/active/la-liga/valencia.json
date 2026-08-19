@@ -46,7 +46,7 @@
       "position": "LB",
       "club": "Valencia",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/918.png",
       "kitNumber": 14
@@ -189,7 +189,7 @@
       "position": "CM/CAM",
       "club": "Valencia",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/315699.png",
       "kitNumber": 8
@@ -270,17 +270,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47264.png",
       "kitNumber": 9
-    },
-    {
-      "apiId": 83,
-      "name": "A. Danjuma",
-      "position": "ST/LW",
-      "club": "Valencia",
-      "nation": "Netherlands",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/83.png",
-      "kitNumber": 7
     },
     {
       "apiId": 46933,

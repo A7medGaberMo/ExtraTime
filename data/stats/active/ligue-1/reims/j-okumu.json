@@ -1,0 +1,36 @@
+{
+  "apiId": 71545,
+  "name": "J. Okumu",
+  "clubs": [
+    {
+      "club": "Free State Stars",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Real Monarchs",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Elfsborg",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Gent",
+      "appearances": 92,
+      "goals": 4
+    },
+    {
+      "club": "Reims",
+      "appearances": 49,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 203,
+    "goals": 6
+  }
+}

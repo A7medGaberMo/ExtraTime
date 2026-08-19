@@ -1,0 +1,32 @@
+{
+  "apiId": 339872,
+  "name": "Vasilije Adžić",
+  "clubs": [
+    {
+      "club": "Budućnost",
+      "appearances": 68,
+      "goals": 11
+    },
+    {
+      "club": "Juventus Next Gen",
+      "appearances": 10,
+      "goals": 4
+    },
+    {
+      "club": "Juventus",
+      "appearances": 26,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Montenegro",
+      "appearances": 6,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 104,
+    "goals": 16
+  }
+}

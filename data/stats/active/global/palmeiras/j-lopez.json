@@ -1,0 +1,27 @@
+{
+  "apiId": 295513,
+  "name": "J. López",
+  "clubs": [
+    {
+      "club": "Lanús",
+      "appearances": 59,
+      "goals": 22
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 220,
+      "goals": 74
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 279,
+    "goals": 96
+  }
+}

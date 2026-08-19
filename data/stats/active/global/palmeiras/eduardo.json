@@ -1,0 +1,72 @@
+{
+  "apiId": 570417,
+  "name": "Eduardo",
+  "clubs": [
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 149,
+      "goals": 93
+    },
+    {
+      "club": "Croatia Sesvete",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "club": "Inter Zaprešić",
+      "appearances": 15,
+      "goals": 10
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 67,
+      "goals": 20
+    },
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 113,
+      "goals": 36
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 46,
+      "goals": 13
+    },
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 29,
+      "goals": 14
+    },
+    {
+      "club": "Atlético Paranaense",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Legia Warsaw",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia U21",
+      "appearances": 12,
+      "goals": 8
+    },
+    {
+      "team": "Croatia",
+      "appearances": 64,
+      "goals": 29
+    }
+  ],
+  "careerTotal": {
+    "appearances": 452,
+    "goals": 189
+  }
+}

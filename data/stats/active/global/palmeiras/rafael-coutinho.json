@@ -1,0 +1,87 @@
+{
+  "apiId": 464021,
+  "name": "Rafael Coutinho",
+  "clubs": [
+    {
+      "club": "Inter Milan",
+      "appearances": 47,
+      "goals": 5
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 81,
+      "goals": 17
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 16,
+      "goals": 5
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 201,
+      "goals": 54
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 106,
+      "goals": 26
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 23,
+      "goals": 8
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 43,
+      "goals": 6
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Al-Duhail",
+      "appearances": 16,
+      "goals": 3
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 31,
+      "goals": 5
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 29,
+      "goals": 7
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U17",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 7,
+      "goals": 3
+    },
+    {
+      "team": "Brazil",
+      "appearances": 68,
+      "goals": 21
+    }
+  ],
+  "careerTotal": {
+    "appearances": 627,
+    "goals": 138
+  }
+}

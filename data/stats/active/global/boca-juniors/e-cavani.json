@@ -1,0 +1,62 @@
+{
+  "apiId": 274,
+  "name": "E. Cavani",
+  "clubs": [
+    {
+      "club": "Danubio",
+      "appearances": 15,
+      "goals": 5
+    },
+    {
+      "club": "Palermo",
+      "appearances": 117,
+      "goals": 37
+    },
+    {
+      "club": "Napoli",
+      "appearances": 138,
+      "goals": 104
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 301,
+      "goals": 200
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 59,
+      "goals": 19
+    },
+    {
+      "club": "Valencia",
+      "appearances": 25,
+      "goals": 5
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 81,
+      "goals": 28
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay U20",
+      "appearances": 15,
+      "goals": 11
+    },
+    {
+      "team": "Uruguay Olympic (O.P.)",
+      "appearances": 5,
+      "goals": 3
+    },
+    {
+      "team": "Uruguay",
+      "appearances": 136,
+      "goals": 58
+    }
+  ],
+  "careerTotal": {
+    "appearances": 736,
+    "goals": 398
+  }
+}

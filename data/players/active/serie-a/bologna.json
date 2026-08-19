@@ -107,17 +107,6 @@
       "kitNumber": 16
     },
     {
-      "apiId": 47985,
-      "name": "E. Holm",
-      "position": "RB/RWB",
-      "club": "Bologna",
-      "nation": "Sweden",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47985.png",
-      "kitNumber": 2
-    },
-    {
       "apiId": 287564,
       "name": "M. Vitík",
       "position": "CB",
@@ -259,17 +248,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/311067.png",
       "kitNumber": 9
-    },
-    {
-      "apiId": 93016,
-      "name": "T. Dallinga",
-      "position": "ST",
-      "club": "Bologna",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/93016.png",
-      "kitNumber": 24
     },
     {
       "apiId": 30438,

@@ -1,0 +1,42 @@
+{
+  "apiId": 161585,
+  "name": "Francisco Conceição",
+  "clubs": [
+    {
+      "club": "Porto B",
+      "appearances": 20,
+      "goals": 4
+    },
+    {
+      "club": "Porto",
+      "appearances": 93,
+      "goals": 11
+    },
+    {
+      "club": "Jong Ajax",
+      "appearances": 7,
+      "goals": 5
+    },
+    {
+      "club": "Ajax",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Juventus",
+      "appearances": 82,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 21,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 230,
+    "goals": 32
+  }
+}

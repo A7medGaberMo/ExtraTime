@@ -1,0 +1,76 @@
+{
+  "apiId": 153454,
+  "name": "Moisés",
+  "clubs": [
+    {
+      "club": "Comercial-SP",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Batatais",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Madureira",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Bragantino",
+      "appearances": 24,
+      "goals": 1
+    },
+    {
+      "club": "Bahia",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 38,
+      "goals": 0
+    },
+    {
+      "club": "Bahia",
+      "appearances": 37,
+      "goals": 2
+    },
+    {
+      "club": "Internacional",
+      "appearances": 84,
+      "goals": 1
+    },
+    {
+      "club": "Internacional",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "CSKA Moscow",
+      "appearances": 105,
+      "goals": 6
+    },
+    {
+      "club": "CSKA Moscow",
+      "appearances": 73,
+      "goals": 6
+    },
+    {
+      "club": "Santos",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 453,
+    "goals": 20
+  }
+}

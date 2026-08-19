@@ -1,0 +1,67 @@
+{
+  "apiId": 553,
+  "name": "Danilo",
+  "clubs": [
+    {
+      "club": "América Mineiro",
+      "appearances": 29,
+      "goals": 2
+    },
+    {
+      "club": "Santos",
+      "appearances": 78,
+      "goals": 10
+    },
+    {
+      "club": "Porto",
+      "appearances": 138,
+      "goals": 12
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 56,
+      "goals": 3
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 60,
+      "goals": 4
+    },
+    {
+      "club": "Juventus",
+      "appearances": 213,
+      "goals": 9
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 53,
+      "goals": 5
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U20",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "team": "Brazil Olympic",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "Brazil",
+      "appearances": 75,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 639,
+    "goals": 46
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 193288,
+  "name": "Nawaf Al Aqidi",
+  "clubs": [
+    {
+      "club": "Al-Nassr",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Al-Tai",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Al-Fateh",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia",
+      "appearances": 24,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 64,
+    "goals": 0
+  }
+}

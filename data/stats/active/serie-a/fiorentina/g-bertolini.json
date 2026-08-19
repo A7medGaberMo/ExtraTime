@@ -1,0 +1,37 @@
+{
+  "apiId": 610726,
+  "name": "G. Bertolini",
+  "clubs": [
+    {
+      "club": "Inter Milan",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona B",
+      "appearances": 24,
+      "goals": 6
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Roma",
+      "appearances": 27,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Italy",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 64,
+    "goals": 11
+  }
+}

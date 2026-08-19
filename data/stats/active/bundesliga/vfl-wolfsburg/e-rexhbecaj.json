@@ -1,0 +1,42 @@
+{
+  "apiId": 25413,
+  "name": "E. Rexhbeçaj",
+  "clubs": [
+    {
+      "club": "VfL Wolfsburg II",
+      "appearances": 47,
+      "goals": 12
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 32,
+      "goals": 2
+    },
+    {
+      "club": "1. FC Köln",
+      "appearances": 46,
+      "goals": 7
+    },
+    {
+      "club": "VfL Bochum",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 109,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Kosovo",
+      "appearances": 18,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 270,
+    "goals": 27
+  }
+}

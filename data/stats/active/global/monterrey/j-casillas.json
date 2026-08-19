@@ -1,0 +1,72 @@
+{
+  "apiId": 554757,
+  "name": "J. Casillas",
+  "clubs": [
+    {
+      "club": "Real Madrid C",
+      "appearances": 725,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid B",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 510,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 156,
+      "goals": 0
+    },
+    {
+      "club": "CF Monterrey",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U15",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Spain U16",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "team": "Spain U17",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "Spain U18",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Spain U20",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Spain U21",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Spain",
+      "appearances": 167,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 1407,
+    "goals": 1
+  }
+}

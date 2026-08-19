@@ -1,0 +1,36 @@
+{
+  "apiId": 1135,
+  "name": "O. Édouard",
+  "clubs": [
+    {
+      "club": "Toulouse",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Celtic",
+      "appearances": 179,
+      "goals": 88
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 105,
+      "goals": 21
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Lens",
+      "appearances": 34,
+      "goals": 14
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 341,
+    "goals": 124
+  }
+}

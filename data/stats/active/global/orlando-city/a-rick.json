@@ -1,0 +1,31 @@
+{
+  "apiId": 364116,
+  "name": "A. Rick",
+  "clubs": [
+    {
+      "club": "Ceará",
+      "appearances": 71,
+      "goals": 7
+    },
+    {
+      "club": "Ludogorets Razgrad",
+      "appearances": 122,
+      "goals": 20
+    },
+    {
+      "club": "Talleres",
+      "appearances": 41,
+      "goals": 3
+    },
+    {
+      "club": "Orlando City SC",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 246,
+    "goals": 31
+  }
+}

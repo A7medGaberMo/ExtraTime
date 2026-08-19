@@ -1,0 +1,52 @@
+{
+  "apiId": 560924,
+  "name": "U. Santos",
+  "clubs": [
+    {
+      "club": "Deportivo Cali",
+      "appearances": 62,
+      "goals": 26
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 30,
+      "goals": 4
+    },
+    {
+      "club": "River Plate",
+      "appearances": 156,
+      "goals": 57
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 92,
+      "goals": 15
+    },
+    {
+      "club": "Werder Bremen",
+      "appearances": 19,
+      "goals": 4
+    },
+    {
+      "club": "Internacional",
+      "appearances": 104,
+      "goals": 28
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia",
+      "appearances": 44,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 463,
+    "goals": 134
+  }
+}

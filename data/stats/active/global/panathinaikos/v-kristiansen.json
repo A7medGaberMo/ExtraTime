@@ -1,0 +1,62 @@
+{
+  "apiId": 158710,
+  "name": "V. Kristiansen",
+  "clubs": [
+    {
+      "club": "Vanløse IF",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Go Ahead Eagles",
+      "appearances": 123,
+      "goals": 14
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Edmonton Drillers",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "HFC Haarlem",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Brønshøj Boldklub",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "SC Heerenveen",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Denmark",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 145,
+    "goals": 16
+  }
+}

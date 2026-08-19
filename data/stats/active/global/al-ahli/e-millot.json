@@ -1,0 +1,31 @@
+{
+  "apiId": 162887,
+  "name": "E. Millot",
+  "clubs": [
+    {
+      "club": "Clermont",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Clermont B",
+      "appearances": 26,
+      "goals": 2
+    },
+    {
+      "club": "Moulins Yzeure",
+      "appearances": 147,
+      "goals": 26
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 186,
+    "goals": 29
+  }
+}

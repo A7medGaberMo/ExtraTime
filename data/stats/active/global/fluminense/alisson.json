@@ -1,0 +1,47 @@
+{
+  "apiId": 10501,
+  "name": "Alisson",
+  "clubs": [
+    {
+      "club": "Internacional",
+      "appearances": 101,
+      "goals": 0
+    },
+    {
+      "club": "Roma",
+      "appearances": 64,
+      "goals": 0
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 333,
+      "goals": 1
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U17",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Brazil",
+      "appearances": 83,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 510,
+    "goals": 2
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "apiId": 47516,
+  "name": "Aleix García",
+  "clubs": [
+    {
+      "club": "Villarreal B",
+      "appearances": 10,
+      "goals": 4
+    },
+    {
+      "club": "Villarreal C",
+      "appearances": 27,
+      "goals": 4
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Girona",
+      "appearances": 172,
+      "goals": 8
+    },
+    {
+      "club": "Mouscron",
+      "appearances": 25,
+      "goals": 5
+    },
+    {
+      "club": "Dinamo București",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Eibar",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 91,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 354,
+    "goals": 33
+  }
+}

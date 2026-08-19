@@ -1,0 +1,67 @@
+{
+  "apiId": 15704,
+  "name": "K. Høgh",
+  "clubs": [
+    {
+      "club": "Randers",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Valur",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Hobro",
+      "appearances": 12,
+      "goals": 4
+    },
+    {
+      "club": "AaB",
+      "appearances": 21,
+      "goals": 3
+    },
+    {
+      "club": "Stabæk",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "club": "Stabæk",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Bodø/Glimt",
+      "appearances": 103,
+      "goals": 54
+    },
+    {
+      "club": "Celtic",
+      "appearances": 2,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark U18",
+      "appearances": 2,
+      "goals": 2
+    },
+    {
+      "team": "Denmark U19",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Denmark",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 179,
+    "goals": 70
+  }
+}

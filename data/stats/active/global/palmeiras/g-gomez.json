@@ -1,0 +1,57 @@
+{
+  "apiId": 2502,
+  "name": "G. Gómez",
+  "clubs": [
+    {
+      "club": "Atlas",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Boavista",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Santos Laguna",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Tijuana",
+      "appearances": 80,
+      "goals": 2
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico U15",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Mexico U17",
+      "appearances": 15,
+      "goals": 4
+    },
+    {
+      "team": "Mexico U23",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "team": "Mexico",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 120,
+    "goals": 4
+  }
+}

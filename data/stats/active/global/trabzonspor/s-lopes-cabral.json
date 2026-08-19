@@ -1,0 +1,42 @@
+{
+  "apiId": 308689,
+  "name": "S. Lopes Cabral",
+  "clubs": [
+    {
+      "club": "Rot-Weiß Erfurt",
+      "appearances": 52,
+      "goals": 3
+    },
+    {
+      "club": "Viktoria Köln",
+      "appearances": 50,
+      "goals": 3
+    },
+    {
+      "club": "Estrela da Amadora",
+      "appearances": 15,
+      "goals": 5
+    },
+    {
+      "club": "Benfica",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Cape Verde",
+      "appearances": 14,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 125,
+    "goals": 12
+  }
+}

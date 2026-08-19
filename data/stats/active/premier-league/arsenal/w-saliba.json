@@ -3,14 +3,45 @@
   "name": "W. Saliba",
   "clubs": [
     {
-      "club": "Squadnumber",
+      "club": "Avispa Fukuoka",
+      "appearances": 54,
+      "goals": 1
+    },
+    {
+      "club": "Sint-Truiden",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "Bologna",
+      "appearances": 64,
+      "goals": 3
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 84,
+      "goals": 2
+    },
+    {
+      "club": "Ajax",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Crystal Palace",
       "appearances": 0,
       "goals": 0
     }
   ],
-  "national": [],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 46,
+      "goals": 1
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 252,
+    "goals": 7
   }
 }

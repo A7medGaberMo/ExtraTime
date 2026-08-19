@@ -6,15 +6,17 @@ import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { useToast } from "@/components/shared/toast";
-import { Trophy, Users, PlusCircle, Zap, Swords, Binoculars, Shield, Loader2, Clock, Globe, Flame, Star, Crown, UserCheck, X, RefreshCw, LayoutGrid } from "lucide-react";
+import {
+  Trophy, Users, PlusCircle, Swords, Globe, Loader2,
+  Flame, Star, Crown, UserCheck, X, RefreshCw, ArrowRight, Clock, Coins, Binoculars
+} from "lucide-react";
+import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
 
 type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
 
-import { randomEgyptianManagerName as randomName } from "@/lib/random-names";
-
 const poolOptions = [
-  { id: "ACTIVE" as PoolMode, label: "Active", icon: UserCheck, sub: "Current players" },
-  { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All + Legends" },
+  { id: "ACTIVE" as PoolMode, label: "Active", icon: UserCheck, sub: "Current stars" },
+  { id: "GLOBAL" as PoolMode, label: "Global", icon: Globe, sub: "All + Icons" },
   { id: "EPL" as PoolMode, label: "EPL", icon: Flame, sub: "Prem only" },
   { id: "TOP_TEAMS" as PoolMode, label: "Top Clubs", icon: Star, sub: "Big teams" },
   { id: "ICONS" as PoolMode, label: "Icons", icon: Crown, sub: "Legends" },
@@ -27,13 +29,16 @@ export default function HomePage() {
   const findMatch = useMutation(api.rooms.mutations.findOrCreatePublicMatch);
   const queueSummary = useQuery(api.rooms.queries.getPublicQueueSummary);
   const dbStats = useQuery(api.players.queries.getStats);
+
   const [poolMode, setPoolMode] = useState<PoolMode>("ACTIVE");
   const [loading, setLoading] = useState(false);
   const [showNameModal, setShowNameModal] = useState(false);
   const [pendingMatchSize, setPendingMatchSize] = useState<5 | 11 | null>(null);
   const [nickname, setNickname] = useState(() => randomName());
+
   const waiting11 = queueSummary?.queues[poolMode]?.[11] ?? 0;
   const waiting5 = queueSummary?.queues[poolMode]?.[5] ?? 0;
+  const playerCount = dbStats === undefined ? "..." : dbStats.totalPlayers.toLocaleString();
 
   function openNameModal(matchSize: 5 | 11) {
     const saved = localStorage.getItem("extratime_guestName");
@@ -60,229 +65,219 @@ export default function HomePage() {
   }
 
   return (
-    <article className="max-w-4xl mx-auto flex flex-col items-center gap-10 py-6 md:py-12 animate-fade-in">
-      {/* ── HERO ────────────────────────────────────────────────────────── */}
-      <header className="text-center space-y-5 relative">
-        {/* Ambient glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] bg-lime/10 blur-[130px] rounded-full pointer-events-none" />
+    <article className="max-w-5xl mx-auto flex flex-col items-center gap-8 py-6 md:py-10 animate-fade-in px-3 sm:px-6">
+      {/* ── HERO HEADER ────────────────────────────────────────────────── */}
+      <header className="text-center space-y-3.5 relative w-full pt-2">
+        {/* Ambient backdrop glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[250px] bg-gradient-to-r from-lime/15 via-sky-500/15 to-amber-500/15 blur-[140px] rounded-full pointer-events-none" />
 
         <div className="relative animate-slide-up space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lime/10 border border-lime/30 text-lime text-[11px] font-black uppercase tracking-widest shadow-md whitespace-nowrap">
-            <Clock className="w-3.5 h-3.5 shrink-0" />
-            <span>30s Turn Bids • +10s Perk Boosts</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-lime/40 text-lime text-xs font-black uppercase tracking-widest shadow-xl backdrop-blur-md">
+            <Trophy className="w-4 h-4 shrink-0 text-lime" />
+            <span>The Premier Football Strategy Arena</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight text-white uppercase leading-none">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight text-white uppercase leading-none">
             Extra<span className="gradient-text-lime">Time</span>
           </h1>
 
-          <p className="mt-3 text-sm md:text-base text-steel max-w-lg mx-auto leading-relaxed font-medium">
-            Draft real stars. Outbid your rival. Build the best squad.
+          <p className="text-xs sm:text-base text-steel max-w-xl mx-auto font-medium leading-relaxed">
+            Outsmart rivals in <strong className="text-lime">Hidden Bid Auctions</strong>. Manage budget, unleash tactical Scout & Spy perks, and build your championship squad.
           </p>
-
-          {/* Dynamic DB Players Badge Card (Desktop only to prevent mobile duplication) */}
-          <div className="pt-2 hidden sm:flex items-center justify-center">
-            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-slate-900/90 border border-lime/30 shadow-xl backdrop-blur-md transition-all hover:border-lime/60">
-              <div className="flex items-center justify-center w-8 h-8 rounded-xl bg-lime/10 text-lime border border-lime/30 shrink-0">
-                <Users className="w-4 h-4" />
-              </div>
-              <div className="text-left">
-                <div className="text-[10px] font-black uppercase tracking-wider text-steel">Live Player Database</div>
-                <div className="text-xs font-black text-white flex items-center gap-1.5">
-                  <span className="text-lime text-sm font-stats">
-                    {dbStats?.totalPlayers ? dbStats.totalPlayers.toLocaleString() : "3,126"}
-                  </span>
-                  <span>Active Stars & Icons</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </header>
 
-      {/* ── CTA BUTTONS ────────────────────────────────────────────────── */}
-      <nav aria-label="Main Actions" className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 w-full max-w-xl animate-slide-up delay-100" style={{ animationFillMode: 'both' }}>
-        <Link
-          href="/create-room"
-          className="flex items-center justify-center gap-2 px-5 py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic shadow-xl shadow-lime/20 whitespace-nowrap"
-        >
-          <PlusCircle className="w-4 h-4 shrink-0" />
-          <span>Create Room</span>
-        </Link>
-        <Link
-          href="/join-room"
-          className="flex items-center justify-center gap-2 px-5 py-4 bg-card hover:bg-white/5 text-white font-bold text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-border hover:border-white/30 shadow-md whitespace-nowrap"
-        >
-          <Users className="w-4 h-4 shrink-0" />
-          <span>Join Room</span>
-        </Link>
-        <Link
-          href="/squad-draft/create"
-          className="flex items-center justify-center gap-2 px-5 py-4 bg-slate-900 hover:bg-lime/10 text-lime font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-lime/40 hover:border-lime shadow-lg whitespace-nowrap"
-        >
-          <LayoutGrid className="w-4 h-4 shrink-0" />
-          <span>Squad Draft</span>
-        </Link>
-        <Link
-          href="/squad-draft/join"
-          className="hidden sm:flex items-center justify-center gap-2 px-5 py-4 bg-slate-900 hover:bg-lime/10 text-lime font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-lime/40 hover:border-lime shadow-lg whitespace-nowrap"
-        >
-          <Users className="w-4 h-4 shrink-0 text-lime" />
-          <span>Join Draft</span>
-        </Link>
-        <Link
-          href="/packs"
-          className="hidden sm:flex items-center justify-center gap-2 px-5 py-4 bg-slate-900 hover:bg-amber-500/10 text-amber-400 font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic border border-amber-500/40 hover:border-amber-400 shadow-lg whitespace-nowrap"
-        >
-          <Trophy className="w-4 h-4 text-amber-400 shrink-0" />
-          <span>Tier Packs</span>
-        </Link>
-      </nav>
+      {/* ── FLAGSHIP HIDDEN BID AUCTION ARENA CARD ────────────────────────────── */}
+      <section aria-label="Hidden Bid Arena" className="w-full max-w-3xl animate-slide-up delay-100" style={{ animationFillMode: "both" }}>
+        <div className="relative overflow-hidden rounded-3xl border border-lime/50 bg-gradient-to-b from-slate-900/95 via-slate-950 to-slate-950 p-6 sm:p-8 shadow-2xl backdrop-blur-2xl flex flex-col justify-between group hover:border-lime transition-all duration-300">
+          <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-lime/20 blur-3xl group-hover:bg-lime/30 transition-all" />
 
-      {/* ── QUICK MATCH ARENA ───────────────────────────────────────────── */}
-      <section aria-label="Public Matchmaking" className="w-full max-w-xl rounded-3xl border border-lime/30 bg-gradient-to-b from-lime/5 via-card/80 to-card p-3 sm:p-6 space-y-5 animate-slide-up delay-200 shadow-2xl shadow-lime/5" style={{ animationFillMode: 'both' }}>
-        <div className="flex items-center gap-3 border-b border-border/60 pb-3">
-          <div className="p-2.5 rounded-xl bg-lime/10 text-lime border border-lime/30 shrink-0">
-            <Zap className="w-5 h-5 fill-lime" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <h2 className="font-black text-white text-base uppercase tracking-tight whitespace-nowrap truncate">
-              <span className="hidden sm:inline">Public </span>Matchmaking
-            </h2>
-            <p className="text-[11px] text-steel font-medium whitespace-nowrap truncate">Quick 30s bid rounds vs real players</p>
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <span className="text-[10px] font-black uppercase text-steel tracking-wider block whitespace-nowrap">Player Pool</span>
-          <div className="flex flex-col gap-2 sm:grid sm:grid-cols-5 sm:gap-2">
-            {/* Mobile Row 1: 2 items (Global, Active Stars) */}
-            <div className="grid grid-cols-2 gap-2 sm:contents">
-              {poolOptions.slice(0, 2).map((option) => {
-                const IconComp = option.icon;
-                const selected = poolMode === option.id;
-                return (
-                  <button
-                    key={option.id}
-                    type="button"
-                    onClick={() => setPoolMode(option.id)}
-                    className={`min-h-[72px] sm:min-h-[76px] rounded-xl border p-2 text-center transition-all active:scale-95 flex flex-col items-center justify-center ${
-                      selected ? "border-lime/60 bg-lime/10" : "border-white/10 bg-slate-950/80"
-                    }`}
-                  >
-                    <IconComp className={`mx-auto mb-1 h-4 w-4 shrink-0 ${selected ? "text-lime" : "text-steel"}`} />
-                    <p className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-white whitespace-nowrap truncate max-w-full">{option.label}</p>
-                    <p className="mt-0.5 text-[9px] sm:text-[10px] font-medium text-steel whitespace-nowrap truncate max-w-full">{option.sub}</p>
-                  </button>
-                );
-              })}
+          <div className="space-y-6 relative z-10">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-lime/15 text-lime border border-lime/40 shadow-xl shadow-lime/10">
+                  <Swords className="h-6 w-6" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-lime">Multiplayer Strategy Arena</span>
+                  <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">Hidden Bid Auction</h2>
+                </div>
+              </div>
+              <span className="rounded-full bg-lime/20 border border-lime/40 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-lime">
+                Live Duel
+              </span>
             </div>
 
-            {/* Mobile Row 2: 3 items (EPL, Top Clubs, Icons) */}
-            <div className="grid grid-cols-3 gap-2 sm:contents">
-              {poolOptions.slice(2).map((option) => {
-                const IconComp = option.icon;
-                const selected = poolMode === option.id;
-                return (
-                  <button
-                    key={option.id}
-                    type="button"
-                    onClick={() => setPoolMode(option.id)}
-                    className={`min-h-[72px] sm:min-h-[76px] rounded-xl border p-2 text-center transition-all active:scale-95 flex flex-col items-center justify-center ${
-                      selected ? "border-lime/60 bg-lime/10" : "border-white/10 bg-slate-950/80"
-                    }`}
-                  >
-                    <IconComp className={`mx-auto mb-1 h-4 w-4 shrink-0 ${selected ? "text-lime" : "text-steel"}`} />
-                    <p className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-white whitespace-nowrap truncate max-w-full">{option.label}</p>
-                    <p className="mt-0.5 text-[9px] sm:text-[10px] font-medium text-steel whitespace-nowrap truncate max-w-full">{option.sub}</p>
-                  </button>
-                );
-              })}
+            <p className="text-xs sm:text-sm text-steel font-medium leading-relaxed">
+              Place secret bids against your rival in 30-second escalating auction rounds. The winning bid takes the star; the losing bid claims the hidden backup card!
+            </p>
+
+            {/* Core Tactical Rules Highlights */}
+            <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
+              <div className="p-3 rounded-2xl bg-slate-900/90 border border-white/10 text-center sm:text-left">
+                <div className="flex items-center gap-1.5 mb-1 justify-center sm:justify-start">
+                  <Clock className="w-3.5 h-3.5 text-lime" />
+                  <span className="text-[10px] font-black uppercase text-lime">30s Turns</span>
+                </div>
+                <p className="text-[10px] text-steel font-medium">Fast-paced live auctions</p>
+              </div>
+              <div className="p-3 rounded-2xl bg-slate-900/90 border border-white/10 text-center sm:text-left">
+                <div className="flex items-center gap-1.5 mb-1 justify-center sm:justify-start">
+                  <Binoculars className="w-3.5 h-3.5 text-sky-400" />
+                  <span className="text-[10px] font-black uppercase text-sky-400">Scout & Spy</span>
+                </div>
+                <p className="text-[10px] text-steel font-medium">Tactical intelligence perks</p>
+              </div>
+              <div className="p-3 rounded-2xl bg-slate-900/90 border border-white/10 text-center sm:text-left">
+                <div className="flex items-center gap-1.5 mb-1 justify-center sm:justify-start">
+                  <Coins className="w-3.5 h-3.5 text-amber-300" />
+                  <span className="text-[10px] font-black uppercase text-amber-300">Budget Cap</span>
+                </div>
+                <p className="text-[10px] text-steel font-medium">Strategic resource bidding</p>
+              </div>
+            </div>
+
+            {/* Player Pool Selector */}
+            <div className="space-y-2 pt-1">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-black uppercase text-steel tracking-wider">Select Player Pool</span>
+                <span className="text-[10px] font-black uppercase text-lime">{poolMode}</span>
+              </div>
+              <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
+                {poolOptions.map((option) => {
+                  const IconComp = option.icon;
+                  const selected = poolMode === option.id;
+                  return (
+                    <button
+                      key={option.id}
+                      type="button"
+                      onClick={() => setPoolMode(option.id)}
+                      className={`py-2.5 px-1.5 rounded-xl border text-center transition-all active:scale-95 flex flex-col items-center justify-center ${
+                        selected
+                          ? "border-lime bg-lime/20 text-white shadow-lg shadow-lime/10"
+                          : "border-white/10 bg-slate-900/90 text-steel hover:text-white"
+                      }`}
+                    >
+                      <IconComp className={`h-4 w-4 mb-1 ${selected ? "text-lime" : "text-steel"}`} />
+                      <span className="text-[9px] font-black uppercase tracking-wider truncate w-full">{option.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-2 gap-3">
-          <button
-            onClick={() => openNameModal(11)}
-            disabled={loading}
-            className="py-4 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-lg shadow-lime/10 transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2 whitespace-nowrap"
-          >
-            {loading ? <Loader2 className="w-4 h-4 animate-spin shrink-0" /> : (
-              <>
-                <span className="whitespace-nowrap">11 vs 11</span>
-                {waiting11 > 0 && (
-                  <span className="flex items-center gap-1 text-[10px] text-slate-950 font-stats whitespace-nowrap bg-slate-950/15 px-2 py-0.5 rounded-full border border-slate-950/20">
-                    <span className="h-1.5 w-1.5 rounded-full bg-slate-950 shadow-[0_0_6px_rgba(2,6,23,0.8)] shrink-0 animate-pulse" />
-                    {waiting11}
-                  </span>
+          <div className="pt-6 sm:pt-8 relative z-10 space-y-3">
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                onClick={() => openNameModal(11)}
+                disabled={loading}
+                className="py-4 bg-gradient-to-r from-lime to-vivid hover:from-vivid hover:to-lime text-slate-950 font-black text-xs uppercase tracking-wider rounded-2xl transition-all btn-haptic shadow-lg shadow-lime/25 disabled:opacity-50 flex items-center justify-center gap-2"
+              >
+                {loading ? <Loader2 className="w-4 h-4 animate-spin shrink-0" /> : (
+                  <>
+                    <span>11 vs 11 Arena</span>
+                    {waiting11 > 0 && (
+                      <span className="text-[9px] font-stats bg-slate-950/30 px-1.5 py-0.5 rounded-full text-slate-950">
+                        {waiting11}
+                      </span>
+                    )}
+                  </>
                 )}
-              </>
-            )}
-          </button>
-          <button
-            onClick={() => openNameModal(5)}
-            disabled={loading}
-            className="py-4 bg-slate-900 hover:bg-white/5 text-white font-black text-xs uppercase tracking-wider rounded-xl border border-border transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2 whitespace-nowrap"
-          >
-            {loading ? <Loader2 className="w-4 h-4 animate-spin shrink-0" /> : (
-              <>
-                <span className="whitespace-nowrap">5 vs 5</span>
-                {waiting5 > 0 && (
-                  <span className="flex items-center gap-1 text-[10px] text-lime font-stats whitespace-nowrap">
-                    <span className="h-1.5 w-1.5 rounded-full bg-lime shadow-[0_0_6px_rgba(149,232,16,0.8)] shrink-0" />
-                    {waiting5}
-                  </span>
+              </button>
+
+              <button
+                onClick={() => openNameModal(5)}
+                disabled={loading}
+                className="py-4 bg-slate-900 hover:bg-slate-800 text-white font-black text-xs uppercase tracking-wider rounded-2xl border border-lime/40 transition-all btn-haptic disabled:opacity-50 flex items-center justify-center gap-2 shadow-md"
+              >
+                {loading ? <Loader2 className="w-4 h-4 animate-spin shrink-0" /> : (
+                  <>
+                    <span>5 vs 5 Quick Match</span>
+                    {waiting5 > 0 && (
+                      <span className="text-[9px] font-stats text-lime">
+                        {waiting5}
+                      </span>
+                    )}
+                  </>
                 )}
-              </>
-            )}
-          </button>
+              </button>
+            </div>
+
+            <div className="flex items-center justify-between pt-1 px-1">
+              <Link
+                href="/create-room"
+                className="text-[11px] font-black text-steel hover:text-white uppercase tracking-wider flex items-center gap-1.5 transition-colors"
+              >
+                <PlusCircle className="w-3.5 h-3.5 text-lime" />
+                <span>Create Custom Room</span>
+              </Link>
+              <Link
+                href="/join-room"
+                className="text-[11px] font-black text-steel hover:text-white uppercase tracking-wider flex items-center gap-1.5 transition-colors"
+              >
+                <Users className="w-3.5 h-3.5 text-steel" />
+                <span>Join with Code</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ── FEATURE HIGHLIGHTS ────────────────────────────────────────── */}
-      <section aria-label="Core Features" className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-slide-up delay-300" style={{ animationFillMode: 'both' }}>
-        {[
-          { icon: Swords, title: "Hidden Bids", desc: "Bid or pass. Win the star or get the backup." },
-          { icon: Shield, title: "Auto Formation", desc: "Random 4-3-3, 4-4-2, 3-5-2 each game." },
-          { icon: Binoculars, title: "Perks", desc: "Use Scout or Spy for intel and +10s time." },
-          { icon: LayoutGrid, title: "Squad Draft", desc: "Snake draft your XI with Joker wildcards." },
-        ].map((f) => (
-          <div key={f.title} className="bg-card p-5 rounded-2xl border border-border flex flex-col items-center text-center gap-3 hover:border-lime/30 hover:shadow-lg hover:shadow-lime/5 transition-all group">
-            <div className="p-2.5 rounded-xl bg-lime/10 text-lime group-hover:scale-110 transition-transform shrink-0">
-              <f.icon className="w-5 h-5" />
-            </div>
-            <h3 className="text-sm font-black text-white whitespace-nowrap">{f.title}</h3>
-            <p className="text-xs text-steel leading-relaxed font-medium">{f.desc}</p>
+      {/* ── DYNAMIC DATABASE STATS & PACKS SECTION ────────────────────────────────── */}
+      <section aria-label="Stats and Tier Packs" className="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-2 gap-4 animate-slide-up delay-200" style={{ animationFillMode: "both" }}>
+        <div className="rounded-2xl border border-white/10 bg-slate-950/80 p-5 flex items-center gap-4 shadow-xl backdrop-blur-md">
+          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-lime/10 text-lime border border-lime/30 shrink-0">
+            <Users className="h-6 w-6" />
           </div>
-        ))}
+          <div>
+            <span className="text-[10px] font-black uppercase text-steel tracking-wider">Live Player Database</span>
+            <p className="text-sm font-black text-white flex items-center gap-1.5 mt-0.5">
+              <span className="text-lime font-stats text-lg">{playerCount}</span>
+              <span className="text-steel text-xs font-normal">Active Stars & Icons</span>
+            </p>
+          </div>
+        </div>
+
+        <Link href="/packs" className="rounded-2xl border border-amber-500/40 bg-amber-500/10 p-5 flex items-center justify-between hover:border-amber-400 transition-all group shadow-xl backdrop-blur-md">
+          <div className="flex items-center gap-4 min-w-0">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400 text-slate-950 shrink-0 font-black shadow-md shadow-amber-400/20">
+              <Trophy className="h-6 w-6" />
+            </div>
+            <div className="min-w-0 flex-1">
+              <span className="text-[10px] font-black uppercase text-amber-300 tracking-wider block truncate">Card Collection</span>
+              <p className="text-sm font-black text-white group-hover:text-amber-300 transition-colors truncate mt-0.5">Explore Packs & Tier Stars</p>
+            </div>
+          </div>
+          <ArrowRight className="w-5 h-5 text-amber-400 group-hover:translate-x-1 transition-transform shrink-0 ml-2" />
+        </Link>
       </section>
 
-      {/* ── NAME POPUP MODAL ──────────────────────────────────────────── */}
+      {/* ── NAME POPUP MODAL FOR AUCTION MATCHMAKING ───────────────────── */}
       {showNameModal && (
         <div
           className="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
           onClick={() => { if (!loading) setShowNameModal(false); }}
         >
           <div
-            className="relative w-full max-w-sm bg-slate-900 border border-white/20 rounded-2xl p-5 shadow-2xl animate-scale-in"
+            className="relative w-full max-w-sm bg-slate-900 border border-white/20 rounded-3xl p-6 shadow-2xl animate-scale-in"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setShowNameModal(false)}
               disabled={loading}
-              className="absolute top-3 right-3 p-1.5 rounded-lg bg-slate-950 text-steel hover:text-white border border-white/10 hover:border-lime/40 transition-all disabled:opacity-30"
+              className="absolute top-4 right-4 p-1.5 rounded-xl bg-slate-950 text-steel hover:text-white border border-white/10 hover:border-lime/40 transition-all disabled:opacity-30"
             >
               <X className="w-4 h-4" />
             </button>
 
-            <div className="text-center space-y-1 mb-4">
-              <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lime px-2.5 py-0.5 rounded-full bg-lime/10 border border-lime/30">
+            <div className="text-center space-y-1.5 mb-5">
+              <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-lime px-3 py-1 rounded-full bg-lime/10 border border-lime/30">
                 <Swords className="w-3 h-3" />
-                <span>{pendingMatchSize} vs {pendingMatchSize}</span>
+                <span>{pendingMatchSize} vs {pendingMatchSize} Hidden Bid Arena</span>
               </div>
-              <h3 className="text-lg font-bold text-white tracking-tight">Enter the Arena</h3>
-              <p className="text-xs text-steel font-medium">Set your name and go</p>
+              <h3 className="text-xl font-black text-white tracking-tight">Enter the Arena</h3>
+              <p className="text-xs text-steel font-medium">Choose your manager handle</p>
             </div>
 
             <div className="space-y-2">
@@ -311,12 +306,12 @@ export default function HomePage() {
             <button
               onClick={quickMatch}
               disabled={loading || !nickname.trim()}
-              className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-lime px-4 py-3.5 text-sm font-black uppercase tracking-widest text-slate-950 shadow-xl shadow-lime/15 transition-all hover:bg-vivid active:scale-[0.98] disabled:opacity-40"
+              className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-lime to-vivid text-slate-950 px-4 py-4 text-xs font-black uppercase tracking-widest shadow-xl shadow-lime/20 transition-all hover:from-vivid hover:to-lime active:scale-[0.98] disabled:opacity-40"
             >
               {loading ? (
-                <><Loader2 className="h-4 w-4 animate-spin" /> Finding Match...</>
+                <><Loader2 className="h-4 w-4 animate-spin shrink-0" /> Finding Match...</>
               ) : (
-                <><Swords className="h-4 w-4" /> Find Match</>
+                <><Swords className="h-4 w-4 shrink-0" /> Start Hidden Bid Auction</>
               )}
             </button>
           </div>
@@ -325,3 +320,4 @@ export default function HomePage() {
     </article>
   );
 }
+

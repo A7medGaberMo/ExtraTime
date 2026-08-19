@@ -1,0 +1,112 @@
+{
+  "apiId": 647145,
+  "name": "D. Garcia",
+  "clubs": [
+    {
+      "club": "Eivissa B",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Fraga",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Pomar",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Atlético Monzón",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Vic",
+      "appearances": 30,
+      "goals": 2
+    },
+    {
+      "club": "Llagostera",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Palamós",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Cerdanyola",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Rubí",
+      "appearances": 43,
+      "goals": 0
+    },
+    {
+      "club": "Manlleu",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Granollers",
+      "appearances": 47,
+      "goals": 0
+    },
+    {
+      "club": "Montañesa",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Sant Andreu",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Engordany",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Ordino",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Fraga",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Lleida",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Binéfar",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "CF Monterrey",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Andorra",
+      "appearances": 80,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 411,
+    "goals": 8
+  }
+}

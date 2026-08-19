@@ -1,0 +1,27 @@
+{
+  "apiId": 5872,
+  "name": "A. Frías",
+  "clubs": [
+    {
+      "club": "Cruz Azul",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Santos",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico U20",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 16,
+    "goals": 1
+  }
+}

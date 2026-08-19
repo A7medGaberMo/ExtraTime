@@ -1,0 +1,58 @@
+{
+  "apiId": 1139,
+  "name": "P. Gulácsi",
+  "clubs": [
+    {
+      "club": "Liverpool",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Hereford United",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Tranmere Rovers",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Hull City",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 100,
+      "goals": 0
+    },
+    {
+      "club": "RB Leipzig II",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 362,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Hungary",
+      "appearances": 58,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 516,
+    "goals": 0
+  },
+  "currentTeam": "Villarreal"
+}

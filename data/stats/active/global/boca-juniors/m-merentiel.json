@@ -1,0 +1,72 @@
+{
+  "apiId": 6327,
+  "name": "M. Merentiel",
+  "clubs": [
+    {
+      "club": "Peñarol",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "El Tanque Sisley",
+      "appearances": 20,
+      "goals": 7
+    },
+    {
+      "club": "Lorca",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Valencia B",
+      "appearances": 29,
+      "goals": 8
+    },
+    {
+      "club": "Godoy Cruz",
+      "appearances": 29,
+      "goals": 5
+    },
+    {
+      "club": "Defensa y Justicia",
+      "appearances": 80,
+      "goals": 27
+    },
+    {
+      "club": "Defensa y Justicia",
+      "appearances": 15,
+      "goals": 7
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 166,
+      "goals": 57
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 89,
+      "goals": 32
+    },
+    {
+      "club": "Valencia Mestalla",
+      "appearances": 29,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 482,
+    "goals": 154
+  }
+}

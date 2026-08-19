@@ -1,0 +1,47 @@
+{
+  "apiId": 1590,
+  "name": "José Sá",
+  "clubs": [
+    {
+      "club": "Marítimo B",
+      "appearances": 74,
+      "goals": 0
+    },
+    {
+      "club": "Marítimo",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Porto B",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 122,
+      "goals": 0
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 170,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 433,
+    "goals": 0
+  }
+}

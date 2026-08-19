@@ -1,0 +1,26 @@
+{
+  "apiId": 297522,
+  "name": "John Kennedy",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 167,
+      "goals": 37
+    },
+    {
+      "club": "Ferroviária",
+      "appearances": 11,
+      "goals": 6
+    },
+    {
+      "club": "Pachuca",
+      "appearances": 20,
+      "goals": 9
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 198,
+    "goals": 52
+  }
+}

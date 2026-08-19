@@ -1,0 +1,41 @@
+{
+  "apiId": 22261,
+  "name": "A. Thomasson",
+  "clubs": [
+    {
+      "club": "Evian",
+      "appearances": 27,
+      "goals": 2
+    },
+    {
+      "club": "Evian II",
+      "appearances": 30,
+      "goals": 10
+    },
+    {
+      "club": "Vannes",
+      "appearances": 29,
+      "goals": 9
+    },
+    {
+      "club": "Nantes",
+      "appearances": 110,
+      "goals": 13
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 156,
+      "goals": 27
+    },
+    {
+      "club": "Lens",
+      "appearances": 130,
+      "goals": 15
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 482,
+    "goals": 76
+  }
+}

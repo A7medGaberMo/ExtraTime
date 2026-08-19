@@ -1,0 +1,32 @@
+{
+  "apiId": 66019,
+  "name": "A. Hložek",
+  "clubs": [
+    {
+      "club": "Sparta Prague",
+      "appearances": 132,
+      "goals": 40
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 80,
+      "goals": 14
+    },
+    {
+      "club": "TSG Hoffenheim",
+      "appearances": 42,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Czech Republic",
+      "appearances": 46,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 254,
+    "goals": 65
+  }
+}

@@ -1,11 +1,21 @@
 {
-  "apiId": 2153,
+  "apiId": 10180,
   "name": "Bruno Henrique",
   "clubs": [
+    {
+      "club": "Cruzeiro",
+      "appearances": 0,
+      "goals": 0
+    },
     {
       "club": "Uberlândia",
       "appearances": 29,
       "goals": 9
+    },
+    {
+      "club": "Uberlândia",
+      "appearances": 12,
+      "goals": 5
     },
     {
       "club": "Itumbiara",
@@ -14,7 +24,7 @@
     },
     {
       "club": "Goiás",
-      "appearances": 57,
+      "appearances": 49,
       "goals": 12
     },
     {
@@ -29,7 +39,7 @@
     },
     {
       "club": "Flamengo",
-      "appearances": 370,
+      "appearances": 371,
       "goals": 117
     }
   ],
@@ -41,7 +51,7 @@
     }
   ],
   "careerTotal": {
-    "appearances": 571,
-    "goals": 165
+    "appearances": 576,
+    "goals": 170
   }
 }

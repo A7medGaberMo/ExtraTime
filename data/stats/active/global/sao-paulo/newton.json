@@ -1,0 +1,42 @@
+{
+  "apiId": 277169,
+  "name": "Newton",
+  "clubs": [
+    {
+      "club": "Blackburn Rovers",
+      "appearances": 357,
+      "goals": 10
+    },
+    {
+      "club": "Everton",
+      "appearances": 58,
+      "goals": 1
+    },
+    {
+      "club": "Burnley",
+      "appearances": 252,
+      "goals": 7
+    },
+    {
+      "club": "Morecambe",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 27,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 679,
+    "goals": 19
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "apiId": 522,
+  "name": "T. Müller",
+  "clubs": [
+    {
+      "club": "SC Verl",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Bayern Munich II",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Fortuna Düsseldorf II",
+      "appearances": 51,
+      "goals": 2
+    },
+    {
+      "club": "Alemannia Aachen",
+      "appearances": 40,
+      "goals": 3
+    },
+    {
+      "club": "Waldhof Mannheim",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "SC Verl",
+      "appearances": 46,
+      "goals": 4
+    },
+    {
+      "club": "Rot-Weiß Oberhausen",
+      "appearances": 48,
+      "goals": 3
+    },
+    {
+      "club": "Wuppertaler SV",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Alemannia Aachen",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Vancouver Whitecaps",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 294,
+    "goals": 16
+  }
+}

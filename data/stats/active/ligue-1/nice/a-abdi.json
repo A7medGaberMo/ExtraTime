@@ -1,0 +1,62 @@
+{
+  "apiId": 49583,
+  "name": "A. Abdi",
+  "clubs": [
+    {
+      "club": "JS Kairouan",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Espérance de Tunis",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Stade Tunisien",
+      "appearances": 19,
+      "goals": 4
+    },
+    {
+      "club": "Club Africain",
+      "appearances": 85,
+      "goals": 10
+    },
+    {
+      "club": "Paris FC",
+      "appearances": 51,
+      "goals": 9
+    },
+    {
+      "club": "Paris FC B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Caen",
+      "appearances": 99,
+      "goals": 14
+    },
+    {
+      "club": "Caen B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Nice",
+      "appearances": 63,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Tunisia",
+      "appearances": 49,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 348,
+    "goals": 47
+  }
+}

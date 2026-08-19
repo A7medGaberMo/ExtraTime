@@ -1,0 +1,47 @@
+{
+  "apiId": 33321,
+  "name": "Keito Nakamura",
+  "clubs": [
+    {
+      "club": "Gamba Osaka",
+      "appearances": 38,
+      "goals": 8
+    },
+    {
+      "club": "Twente",
+      "appearances": 18,
+      "goals": 6
+    },
+    {
+      "club": "Sint-Truiden",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Juniors OÖ",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "club": "LASK",
+      "appearances": 69,
+      "goals": 26
+    },
+    {
+      "club": "Reims",
+      "appearances": 97,
+      "goals": 30
+    }
+  ],
+  "national": [
+    {
+      "team": "Japan",
+      "appearances": 30,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 241,
+    "goals": 76
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "apiId": 2802,
+  "name": "Y. Sommer",
+  "clubs": [
+    {
+      "club": "FC Basel U21",
+      "appearances": 170,
+      "goals": 0
+    },
+    {
+      "club": "FC Basel",
+      "appearances": 113,
+      "goals": 0
+    },
+    {
+      "club": "FC Vaduz",
+      "appearances": 54,
+      "goals": 0
+    },
+    {
+      "club": "Grasshoppers",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 335,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 139,
+      "goals": 0
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland U16",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "Switzerland U17",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "Switzerland U19",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "team": "Switzerland U21",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "team": "Switzerland",
+      "appearances": 94,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 865,
+    "goals": 0
+  }
+}

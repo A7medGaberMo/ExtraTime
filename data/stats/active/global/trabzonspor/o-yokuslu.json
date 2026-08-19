@@ -1,0 +1,87 @@
+{
+  "apiId": 47443,
+  "name": "O. Yokuşlu",
+  "clubs": [
+    {
+      "club": "Altay",
+      "appearances": 35,
+      "goals": 5
+    },
+    {
+      "club": "Kayserispor",
+      "appearances": 116,
+      "goals": 9
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 106,
+      "goals": 10
+    },
+    {
+      "club": "Celta",
+      "appearances": 81,
+      "goals": 2
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 91,
+      "goals": 4
+    },
+    {
+      "club": "Getafe",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 84,
+      "goals": 5
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 45,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U15",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "team": "Turkey U16",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Turkey U17",
+      "appearances": 25,
+      "goals": 4
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "team": "Turkey U20",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "Turkey",
+      "appearances": 47,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 569,
+    "goals": 37
+  }
+}

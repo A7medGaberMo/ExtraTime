@@ -1,0 +1,21 @@
+{
+  "apiId": 609598,
+  "name": "V. Joao",
+  "clubs": [
+    {
+      "club": "Athletico Paranaense",
+      "appearances": 68,
+      "goals": 8
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 80,
+    "goals": 9
+  }
+}

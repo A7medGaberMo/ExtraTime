@@ -1,0 +1,76 @@
+{
+  "apiId": 287868,
+  "name": "Max Merrick",
+  "clubs": [
+    {
+      "club": "Type",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Domestic",
+      "appearances": 6,
+      "goals": 1954
+    },
+    {
+      "club": "Second Division",
+      "appearances": 2,
+      "goals": 1983
+    },
+    {
+      "club": "FA Cup",
+      "appearances": 8,
+      "goals": 1969
+    },
+    {
+      "club": "Football League Cup",
+      "appearances": 5,
+      "goals": 1964
+    },
+    {
+      "club": "FA Charity Shield/FA Community Shield",
+      "appearances": 4,
+      "goals": 1955
+    },
+    {
+      "club": "Full Members' Cup",
+      "appearances": 2,
+      "goals": 1985
+    },
+    {
+      "club": "Continental",
+      "appearances": 2,
+      "goals": 2011
+    },
+    {
+      "club": "UEFA Europa League",
+      "appearances": 2,
+      "goals": 2012
+    },
+    {
+      "club": "UEFA Conference League",
+      "appearances": 1,
+      "goals": 2024
+    },
+    {
+      "club": "UEFA Cup Winners' Cup",
+      "appearances": 2,
+      "goals": 1970
+    },
+    {
+      "club": "UEFA Super Cup",
+      "appearances": 2,
+      "goals": 1998
+    },
+    {
+      "club": "Worldwide",
+      "appearances": 2,
+      "goals": 2021
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 38,
+    "goals": 23846
+  }
+}

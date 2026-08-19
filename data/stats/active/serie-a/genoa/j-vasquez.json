@@ -1,0 +1,42 @@
+{
+  "apiId": 35544,
+  "name": "J. Vásquez",
+  "clubs": [
+    {
+      "club": "Sonora",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Monterrey",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Pumas UNAM",
+      "appearances": 49,
+      "goals": 2
+    },
+    {
+      "club": "Genoa",
+      "appearances": 144,
+      "goals": 7
+    },
+    {
+      "club": "Cremonese",
+      "appearances": 29,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 50,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 281,
+    "goals": 11
+  }
+}

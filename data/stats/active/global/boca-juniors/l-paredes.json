@@ -1,0 +1,46 @@
+{
+  "apiId": 271,
+  "name": "L. Paredes",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Defensa y Justicia",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "Racing de Montevideo",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Sarmiento",
+      "appearances": 43,
+      "goals": 2
+    },
+    {
+      "club": "Independiente",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Argentinos Juniors",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 93,
+    "goals": 6
+  }
+}

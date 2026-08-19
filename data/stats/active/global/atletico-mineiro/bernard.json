@@ -1,0 +1,52 @@
+{
+  "apiId": 18761,
+  "name": "Bernard",
+  "clubs": [
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 100,
+      "goals": 22
+    },
+    {
+      "club": "Democrata-SL",
+      "appearances": 16,
+      "goals": 14
+    },
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 157,
+      "goals": 28
+    },
+    {
+      "club": "Everton",
+      "appearances": 84,
+      "goals": 8
+    },
+    {
+      "club": "Sharjah",
+      "appearances": 23,
+      "goals": 4
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 85,
+      "goals": 13
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 69,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 14,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 534,
+    "goals": 93
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 70078,
+  "name": "F. Pellistri",
+  "clubs": [
+    {
+      "club": "Peñarol",
+      "appearances": 37,
+      "goals": 2
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Alavés",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Alavés",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Granada",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 56,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay U16",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Uruguay",
+      "appearances": 39,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 189,
+    "goals": 9
+  }
+}

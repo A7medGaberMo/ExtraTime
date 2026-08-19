@@ -184,17 +184,6 @@
       "kitNumber": 42
     },
     {
-      "apiId": 90594,
-      "name": "J. Dina Ebimbe",
-      "position": "RM/CM/RWB",
-      "club": "Eintracht Frankfurt",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/90594.png",
-      "kitNumber": 7
-    },
-    {
       "apiId": 369674,
       "name": "J. Bahoya",
       "position": "LW/CAM",
@@ -303,28 +292,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161922.png",
       "kitNumber": 45
-    },
-    {
-      "apiId": 2927,
-      "name": "M. Batshuayi",
-      "position": "ST",
-      "club": "Eintracht Frankfurt",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2927.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 196500,
-      "name": "N. Futkeu",
-      "position": "ST",
-      "club": "Eintracht Frankfurt",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/196500.png",
-      "kitNumber": 46
     },
     {
       "apiId": 535046,

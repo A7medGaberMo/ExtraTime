@@ -1,0 +1,32 @@
+{
+  "apiId": 39279,
+  "name": "A. Hanche-Olsen",
+  "clubs": [
+    {
+      "club": "Stabæk",
+      "appearances": 123,
+      "goals": 7
+    },
+    {
+      "club": "Gent",
+      "appearances": 98,
+      "goals": 2
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 77,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway",
+      "appearances": 22,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 298,
+    "goals": 12
+  }
+}

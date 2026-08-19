@@ -1,0 +1,52 @@
+{
+  "apiId": 1719,
+  "name": "M. Müldür",
+  "clubs": [
+    {
+      "club": "Rapid Wien II",
+      "appearances": 47,
+      "goals": 2
+    },
+    {
+      "club": "Rapid Wien",
+      "appearances": 32,
+      "goals": 1
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 90,
+      "goals": 2
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 122,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U17",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "team": "Turkey",
+      "appearances": 48,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 291,
+    "goals": 10
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiId": 2780,
+  "name": "V. Osimhen",
+  "clubs": [
+    {
+      "club": "Galatasaray",
+      "appearances": 550,
+      "goals": 350
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 120,
+      "goals": 53
+    }
+  ],
+  "careerTotal": {
+    "appearances": 550,
+    "goals": 350
+  }
+}

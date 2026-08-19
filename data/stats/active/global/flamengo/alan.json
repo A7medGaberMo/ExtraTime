@@ -1,0 +1,47 @@
+{
+  "apiId": 589367,
+  "name": "Alan",
+  "clubs": [
+    {
+      "club": "Preston North End",
+      "appearances": 414,
+      "goals": 46
+    },
+    {
+      "club": "Sunderland",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 38,
+      "goals": 4
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Republic of Ireland U19",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "team": "Republic of Ireland U21",
+      "appearances": 11,
+      "goals": 3
+    },
+    {
+      "team": "Republic of Ireland",
+      "appearances": 39,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 487,
+    "goals": 52
+  }
+}

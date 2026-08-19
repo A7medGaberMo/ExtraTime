@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "AC Milan",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22221.png",
       "kitNumber": 16
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "AC Milan",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19209.png",
       "kitNumber": 23
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "AC Milan",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/272.png",
       "kitNumber": 12
@@ -299,7 +299,7 @@
       "position": "RW/LW/CAM",
       "club": "AC Milan",
       "nation": "USA",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/17.png",
       "kitNumber": 11
@@ -310,7 +310,7 @@
       "position": "ST/CAM",
       "club": "AC Milan",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/269.png",
       "kitNumber": 18

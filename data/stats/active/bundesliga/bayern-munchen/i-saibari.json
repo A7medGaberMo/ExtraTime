@@ -1,10 +1,32 @@
 {
   "apiId": 161897,
   "name": "I. Saibari",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Reading",
+      "appearances": 73,
+      "goals": 7
+    },
+    {
+      "club": "Crystal Palace",
+      "appearances": 90,
+      "goals": 16
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 107,
+      "goals": 42
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 25,
+      "goals": 7
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 270,
+    "goals": 65
   }
 }

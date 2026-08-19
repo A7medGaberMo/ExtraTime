@@ -1,0 +1,32 @@
+{
+  "apiId": 350381,
+  "name": "Salem Al Najdi",
+  "clubs": [
+    {
+      "club": "Al-Fateh",
+      "appearances": 42,
+      "goals": 3
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 38,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 80,
+    "goals": 4
+  }
+}

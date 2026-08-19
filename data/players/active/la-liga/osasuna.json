@@ -189,7 +189,7 @@
       "position": "ST",
       "club": "Osasuna",
       "nation": "Croatia",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46746.png",
       "kitNumber": 17
@@ -250,17 +250,6 @@
       "kitNumber": 11
     },
     {
-      "apiId": 288800,
-      "name": "Iker Benito",
-      "position": "RM/RB",
-      "club": "Osasuna",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/288800.png",
-      "kitNumber": 2
-    },
-    {
       "apiId": 421044,
       "name": "Íñigo Arguibide",
       "position": "ST",
@@ -270,6 +259,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/421044.png",
       "kitNumber": 41
+    },
+    {
+      "apiId": 47566,
+      "name": "Javi Galán",
+      "position": "LB",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47566.png",
+      "kitNumber": 21
     }
   ]
 }

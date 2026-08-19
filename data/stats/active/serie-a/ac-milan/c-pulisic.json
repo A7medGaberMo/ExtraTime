@@ -1,0 +1,32 @@
+{
+  "apiId": 17,
+  "name": "C. Pulišić",
+  "clubs": [
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 127,
+      "goals": 19
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 145,
+      "goals": 26
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 134,
+      "goals": 42
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 90,
+      "goals": 33
+    }
+  ],
+  "careerTotal": {
+    "appearances": 406,
+    "goals": 87
+  }
+}

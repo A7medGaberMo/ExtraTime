@@ -1,0 +1,36 @@
+{
+  "apiId": 64302,
+  "name": "C. Conteh",
+  "clubs": [
+    {
+      "club": "TSV Sasel",
+      "appearances": 29,
+      "goals": 6
+    },
+    {
+      "club": "FC St. Pauli II",
+      "appearances": 101,
+      "goals": 25
+    },
+    {
+      "club": "1. FC Magdeburg",
+      "appearances": 68,
+      "goals": 15
+    },
+    {
+      "club": "Paderborn 07",
+      "appearances": 73,
+      "goals": 10
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 51,
+      "goals": 5
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 322,
+    "goals": 61
+  }
+}

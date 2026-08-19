@@ -1,0 +1,47 @@
+{
+  "apiId": 128385,
+  "name": "Gonçalo Borges",
+  "clubs": [
+    {
+      "club": "Porto B",
+      "appearances": 85,
+      "goals": 11
+    },
+    {
+      "club": "Porto",
+      "appearances": 54,
+      "goals": 2
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 19,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U16",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 158,
+    "goals": 16
+  }
+}

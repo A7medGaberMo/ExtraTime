@@ -1,0 +1,32 @@
+{
+  "apiId": 1127,
+  "name": "J. Forrest",
+  "clubs": [
+    {
+      "club": "Celtic",
+      "appearances": 363,
+      "goals": 74
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland U19",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "team": "Scotland U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Scotland",
+      "appearances": 39,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 363,
+    "goals": 74
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "apiId": 262845,
+  "name": "Eduardo Quaresma",
+  "clubs": [
+    {
+      "club": "Sporting CP",
+      "appearances": 104,
+      "goals": 4
+    },
+    {
+      "club": "Sporting CP B",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Tondela",
+      "appearances": 25,
+      "goals": 2
+    },
+    {
+      "club": "Hoffenheim B",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Hoffenheim",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U15",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U16",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 145,
+    "goals": 6
+  }
+}

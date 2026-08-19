@@ -1,0 +1,36 @@
+{
+  "apiId": 126757,
+  "name": "L. Brassier",
+  "clubs": [
+    {
+      "club": "Rennes II",
+      "appearances": 43,
+      "goals": 2
+    },
+    {
+      "club": "Valenciennes",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Brest",
+      "appearances": 117,
+      "goals": 5
+    },
+    {
+      "club": "Marseille",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Rennes",
+      "appearances": 14,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 214,
+    "goals": 8
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "apiId": 41112,
+  "name": "Trincão",
+  "clubs": [
+    {
+      "club": "Braga B",
+      "appearances": 47,
+      "goals": 9
+    },
+    {
+      "club": "Braga",
+      "appearances": 33,
+      "goals": 8
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 28,
+      "goals": 3
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 28,
+      "goals": 2
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 34,
+      "goals": 10
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 99,
+      "goals": 25
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U17",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 18,
+      "goals": 10
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 8,
+      "goals": 3
+    },
+    {
+      "team": "Portugal",
+      "appearances": 19,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 270,
+    "goals": 57
+  }
+}

@@ -261,17 +261,6 @@
       "kitNumber": 7
     },
     {
-      "apiId": 284797,
-      "name": "D. Ouattara",
-      "position": "RW/ST",
-      "club": "Brentford",
-      "nation": "Burkina Faso",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284797.png",
-      "kitNumber": 19
-    },
-    {
       "apiId": 2939,
       "name": "C. Wilson",
       "position": "ST",
@@ -314,6 +303,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/624708.png",
       "kitNumber": 49
+    },
+    {
+      "apiId": 277306,
+      "name": "M. Sangaré",
+      "position": "CM/CDM",
+      "club": "Brentford",
+      "nation": "Mali",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/277306.png",
+      "kitNumber": 8
     }
   ]
 }

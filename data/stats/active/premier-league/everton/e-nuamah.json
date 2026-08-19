@@ -1,0 +1,33 @@
+{
+  "apiId": 350856,
+  "name": "E. Nuamah",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 49,
+      "goals": 20
+    },
+    {
+      "club": "RWDM",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Lyon",
+      "appearances": 69,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Ghana",
+      "appearances": 21,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 118,
+    "goals": 29
+  },
+  "currentTeam": "Everton"
+}

@@ -1,0 +1,48 @@
+{
+  "apiId": 47985,
+  "name": "E. Holm",
+  "clubs": [
+    {
+      "club": "IFK Göteborg",
+      "appearances": 42,
+      "goals": 2
+    },
+    {
+      "club": "SønderjyskE",
+      "appearances": 44,
+      "goals": 8
+    },
+    {
+      "club": "Spezia",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 32,
+      "goals": 1
+    },
+    {
+      "club": "Bologna",
+      "appearances": 48,
+      "goals": 2
+    },
+    {
+      "club": "Juventus",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden",
+      "appearances": 16,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 197,
+    "goals": 14
+  },
+  "currentTeam": "Juventus"
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 11463,
+  "name": "C. Palacios",
+  "clubs": [
+    {
+      "club": "Real Madrid B",
+      "appearances": 72,
+      "goals": 18
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Fulham",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U19",
+      "appearances": 12,
+      "goals": 7
+    },
+    {
+      "team": "Spain U20",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 89,
+    "goals": 19
+  }
+}

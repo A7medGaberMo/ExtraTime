@@ -1,0 +1,42 @@
+{
+  "apiId": 407958,
+  "name": "Rayan",
+  "clubs": [
+    {
+      "club": "Vasco da Gama",
+      "appearances": 99,
+      "goals": 25
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 15,
+      "goals": 5
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U17",
+      "appearances": 14,
+      "goals": 8
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "team": "Brazil",
+      "appearances": 6,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 126,
+    "goals": 31
+  }
+}

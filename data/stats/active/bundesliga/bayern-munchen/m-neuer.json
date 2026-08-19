@@ -1,10 +1,26 @@
 {
   "apiId": 497,
   "name": "M. Neuer",
-  "clubs": [],
+  "clubs": [
+    {
+      "club": "Schalke 04 II",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 203,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 598,
+      "goals": 0
+    }
+  ],
   "national": [],
   "careerTotal": {
-    "appearances": 0,
+    "appearances": 827,
     "goals": 0
   }
 }

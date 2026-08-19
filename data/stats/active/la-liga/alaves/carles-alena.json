@@ -1,0 +1,36 @@
+{
+  "apiId": 143,
+  "name": "Carles Aleñá",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 89,
+      "goals": 18
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 44,
+      "goals": 3
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 19,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 136,
+      "goals": 6
+    },
+    {
+      "club": "Alavés",
+      "appearances": 43,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 331,
+    "goals": 28
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "apiId": 667326,
+  "name": "Ruan",
+  "clubs": [
+    {
+      "club": "Novo Hamburgo",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 64,
+      "goals": 0
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 29,
+      "goals": 3
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 204,
+    "goals": 4
+  }
+}

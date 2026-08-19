@@ -1,0 +1,32 @@
+{
+  "apiId": 635839,
+  "name": "Abdulmalik Al-Jaber",
+  "clubs": [
+    {
+      "club": "Željezničar",
+      "appearances": 48,
+      "goals": 4
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 7,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 48,
+    "goals": 4
+  }
+}

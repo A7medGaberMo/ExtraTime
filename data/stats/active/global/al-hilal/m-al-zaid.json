@@ -1,0 +1,51 @@
+{
+  "apiId": 576181,
+  "name": "M. Al-Zaid",
+  "clubs": [
+    {
+      "club": "Godoy Cruz",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Villa Dálmine",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "LDU Quito",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Estudiantes",
+      "appearances": 62,
+      "goals": 6
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Getafe",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 156,
+    "goals": 8
+  }
+}

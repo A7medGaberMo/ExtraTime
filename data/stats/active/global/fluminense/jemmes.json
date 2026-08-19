@@ -1,0 +1,61 @@
+{
+  "apiId": 282692,
+  "name": "Jemmes",
+  "clubs": [
+    {
+      "club": "Taquaritinga",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Capivariano",
+      "appearances": 75,
+      "goals": 1
+    },
+    {
+      "club": "União Suzano",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Rio Branco-SP",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Athletic-MG",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Vila Nova",
+      "appearances": 35,
+      "goals": 3
+    },
+    {
+      "club": "Vila Nova",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Mirassol",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Mirassol",
+      "appearances": 25,
+      "goals": 1
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 207,
+    "goals": 10
+  }
+}

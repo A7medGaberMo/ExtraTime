@@ -1,0 +1,37 @@
+{
+  "apiId": 2817,
+  "name": "N. Milenković",
+  "clubs": [
+    {
+      "club": "Teleoptik",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Partizan",
+      "appearances": 44,
+      "goals": 4
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 264,
+      "goals": 17
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 93,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Serbia",
+      "appearances": 71,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 414,
+    "goals": 27
+  }
+}

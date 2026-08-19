@@ -1,0 +1,77 @@
+{
+  "apiId": 3007,
+  "name": "P. Frankowski",
+  "clubs": [
+    {
+      "club": "Lechia Gdańsk",
+      "appearances": 44,
+      "goals": 3
+    },
+    {
+      "club": "Jagiellonia Białystok",
+      "appearances": 153,
+      "goals": 28
+    },
+    {
+      "club": "Chicago Fire",
+      "appearances": 64,
+      "goals": 10
+    },
+    {
+      "club": "Lens",
+      "appearances": 141,
+      "goals": 20
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Rennes",
+      "appearances": 19,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland U16",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Poland U18",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Poland U19",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Poland U20",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "team": "Poland U21",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "team": "Poland",
+      "appearances": 51,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 433,
+    "goals": 62
+  }
+}

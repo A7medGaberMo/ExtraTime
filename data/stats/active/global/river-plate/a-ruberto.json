@@ -1,0 +1,27 @@
+{
+  "apiId": 414329,
+  "name": "A. Ruberto",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 18,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U16",
+      "appearances": 4,
+      "goals": 3
+    },
+    {
+      "team": "Argentina U17",
+      "appearances": 17,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 18,
+    "goals": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "apiId": 619,
+  "name": "Eric García",
+  "clubs": [
+    {
+      "club": "Manchester City U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 166,
+      "goals": 7
+    },
+    {
+      "club": "Girona",
+      "appearances": 33,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 22,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 235,
+    "goals": 12
+  }
+}

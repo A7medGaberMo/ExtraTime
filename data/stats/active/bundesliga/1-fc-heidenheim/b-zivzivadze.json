@@ -1,0 +1,67 @@
+{
+  "apiId": 24641,
+  "name": "B. Zivzivadze",
+  "clubs": [
+    {
+      "club": "Dinamo Tbilisi B",
+      "appearances": 50,
+      "goals": 47
+    },
+    {
+      "club": "Dinamo Tbilisi",
+      "appearances": 41,
+      "goals": 28
+    },
+    {
+      "club": "Torpedo Kutaisi",
+      "appearances": 32,
+      "goals": 13
+    },
+    {
+      "club": "Samtredia",
+      "appearances": 52,
+      "goals": 33
+    },
+    {
+      "club": "Esbjierg",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Mezőkövesd",
+      "appearances": 38,
+      "goals": 10
+    },
+    {
+      "club": "Fehérvár",
+      "appearances": 68,
+      "goals": 20
+    },
+    {
+      "club": "Újpest",
+      "appearances": 14,
+      "goals": 11
+    },
+    {
+      "club": "Karlsruher SC",
+      "appearances": 61,
+      "goals": 27
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 42,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Georgia",
+      "appearances": 41,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 411,
+    "goals": 199
+  }
+}

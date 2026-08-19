@@ -1,0 +1,67 @@
+{
+  "apiId": 25646,
+  "name": "A. Pléa",
+  "clubs": [
+    {
+      "club": "Lyon B",
+      "appearances": 67,
+      "goals": 23
+    },
+    {
+      "club": "Lyon",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Auxerre",
+      "appearances": 15,
+      "goals": 3
+    },
+    {
+      "club": "Nice",
+      "appearances": 135,
+      "goals": 44
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 235,
+      "goals": 68
+    },
+    {
+      "club": "PSV",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France U18",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "France U19",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "team": "France U20",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "team": "France U21",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "France",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 463,
+    "goals": 138
+  }
+}

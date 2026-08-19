@@ -1,0 +1,52 @@
+{
+  "apiId": 341700,
+  "name": "Iván Fresneda",
+  "clubs": [
+    {
+      "club": "Valladolid B",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 81,
+      "goals": 4
+    },
+    {
+      "club": "Sporting CP B",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U18",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Spain U19",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "team": "Spain U20",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Spain U21",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 131,
+    "goals": 4
+  }
+}

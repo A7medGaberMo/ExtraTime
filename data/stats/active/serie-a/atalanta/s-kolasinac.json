@@ -1,0 +1,36 @@
+{
+  "apiId": 1442,
+  "name": "S. Kolašinac",
+  "clubs": [
+    {
+      "club": "Schalke 04 II",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "Schalke 04",
+      "appearances": 140,
+      "goals": 5
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 118,
+      "goals": 5
+    },
+    {
+      "club": "Marseille",
+      "appearances": 58,
+      "goals": 4
+    },
+    {
+      "club": "Atalanta",
+      "appearances": 105,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 429,
+    "goals": 18
+  }
+}

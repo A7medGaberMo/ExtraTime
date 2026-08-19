@@ -1,0 +1,52 @@
+{
+  "apiId": 161661,
+  "name": "A. Brown",
+  "clubs": [
+    {
+      "club": "1. FC Nürnberg II",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 24,
+      "goals": 1
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 72,
+      "goals": 7
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany U21",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "team": "Germany",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 151,
+    "goals": 10
+  }
+}

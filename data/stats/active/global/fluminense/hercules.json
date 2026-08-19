@@ -1,0 +1,36 @@
+{
+  "apiId": 266267,
+  "name": "Hércules",
+  "clubs": [
+    {
+      "club": "Tiradentes-CE",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Cearense",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Crato",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Fortaleza",
+      "appearances": 89,
+      "goals": 11
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 57,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 174,
+    "goals": 17
+  }
+}

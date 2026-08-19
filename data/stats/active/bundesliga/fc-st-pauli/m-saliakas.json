@@ -1,0 +1,47 @@
+{
+  "apiId": 27157,
+  "name": "M. Saliakas",
+  "clubs": [
+    {
+      "club": "Olympiacos",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Karmiotissa",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Chania",
+      "appearances": 49,
+      "goals": 6
+    },
+    {
+      "club": "Lamia",
+      "appearances": 29,
+      "goals": 2
+    },
+    {
+      "club": "PAS Giannina",
+      "appearances": 72,
+      "goals": 2
+    },
+    {
+      "club": "St. Pauli",
+      "appearances": 120,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Greece",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 308,
+    "goals": 19
+  }
+}

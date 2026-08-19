@@ -1,0 +1,41 @@
+{
+  "apiId": 25272,
+  "name": "Cauly",
+  "clubs": [
+    {
+      "club": "Fortuna Köln",
+      "appearances": 83,
+      "goals": 13
+    },
+    {
+      "club": "MSV Duisburg",
+      "appearances": 59,
+      "goals": 12
+    },
+    {
+      "club": "SC Paderborn",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Ludogorets Razgrad",
+      "appearances": 115,
+      "goals": 27
+    },
+    {
+      "club": "Bahia",
+      "appearances": 148,
+      "goals": 23
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 427,
+    "goals": 78
+  }
+}

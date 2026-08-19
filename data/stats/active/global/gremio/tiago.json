@@ -1,0 +1,67 @@
+{
+  "apiId": 502998,
+  "name": "Tiago",
+  "clubs": [
+    {
+      "club": "Braga B",
+      "appearances": 67,
+      "goals": 4
+    },
+    {
+      "club": "Braga",
+      "appearances": 62,
+      "goals": 3
+    },
+    {
+      "club": "Benfica",
+      "appearances": 92,
+      "goals": 25
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 52,
+      "goals": 4
+    },
+    {
+      "club": "Lyon",
+      "appearances": 78,
+      "goals": 13
+    },
+    {
+      "club": "Juventus",
+      "appearances": 51,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 228,
+      "goals": 20
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 126,
+      "goals": 11
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U21",
+      "appearances": 21,
+      "goals": 3
+    },
+    {
+      "team": "Portugal",
+      "appearances": 66,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 768,
+    "goals": 81
+  }
+}

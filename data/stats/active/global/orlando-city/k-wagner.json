@@ -1,0 +1,46 @@
+{
+  "apiId": 50738,
+  "name": "K. Wagner",
+  "clubs": [
+    {
+      "club": "SSV Ulm",
+      "appearances": 32,
+      "goals": 1
+    },
+    {
+      "club": "Schalke 04 II",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Würzburger Kickers",
+      "appearances": 40,
+      "goals": 0
+    },
+    {
+      "club": "Philadelphia Union",
+      "appearances": 258,
+      "goals": 10
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Philadelphia Union",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Orlando City SC",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 394,
+    "goals": 12
+  }
+}

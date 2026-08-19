@@ -1,0 +1,32 @@
+{
+  "apiId": 544679,
+  "name": "Andre",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 197,
+      "goals": 4
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 76,
+      "goals": 2
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 13,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 285,
+    "goals": 7
+  }
+}

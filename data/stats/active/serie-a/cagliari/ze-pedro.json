@@ -1,0 +1,51 @@
+{
+  "apiId": 41964,
+  "name": "Zé Pedro",
+  "clubs": [
+    {
+      "club": "Vizela",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Torcatense",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Fafe",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Braga B",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Estrela Amadora",
+      "appearances": 33,
+      "goals": 3
+    },
+    {
+      "club": "Porto B",
+      "appearances": 75,
+      "goals": 5
+    },
+    {
+      "club": "Porto",
+      "appearances": 50,
+      "goals": 2
+    },
+    {
+      "club": "Cagliari",
+      "appearances": 24,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 238,
+    "goals": 12
+  }
+}

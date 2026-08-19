@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Fiorentina",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/882.png",
       "kitNumber": 43
@@ -184,14 +184,14 @@
       "kitNumber": 44
     },
     {
-      "apiId": 876,
+      "apiId": 144578,
       "name": "N. Fagioli",
       "position": "CM/CDM",
       "club": "Fiorentina",
       "nation": "Italy",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/876.png",
+      "imageUrl": "https://media.api-sports.io/football/players/144578.png",
       "kitNumber": 41
     },
     {
@@ -299,7 +299,7 @@
       "position": "ST",
       "club": "Fiorentina",
       "nation": "Italy",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/877.png",
       "kitNumber": 46
@@ -369,6 +369,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/579241.png",
       "kitNumber": 69
+    },
+    {
+      "apiId": 449249,
+      "name": "Franco Mastantuono",
+      "position": "CAM/RW",
+      "club": "Fiorentina",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449249.png",
+      "kitNumber": 30
     }
   ]
 }

@@ -1,0 +1,77 @@
+{
+  "apiId": 381,
+  "name": "Danilo Pereira",
+  "clubs": [
+    {
+      "club": "Parma",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Aris",
+      "appearances": 5,
+      "goals": 2
+    },
+    {
+      "club": "Roda",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Marítimo",
+      "appearances": 70,
+      "goals": 4
+    },
+    {
+      "club": "Porto",
+      "appearances": 202,
+      "goals": 19
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 23,
+      "goals": 2
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 86,
+      "goals": 7
+    },
+    {
+      "club": "Al-Ittihad",
+      "appearances": 76,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U18",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 19,
+      "goals": 3
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Portugal",
+      "appearances": 74,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 498,
+    "goals": 43
+  }
+}

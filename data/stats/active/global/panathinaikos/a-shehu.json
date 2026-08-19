@@ -1,0 +1,77 @@
+{
+  "apiId": 501846,
+  "name": "A. Shehu",
+  "clubs": [
+    {
+      "club": "Kano Pillars",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Qadsia",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "União da Madeira",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Anorthosis",
+      "appearances": 56,
+      "goals": 4
+    },
+    {
+      "club": "Bursaspor",
+      "appearances": 60,
+      "goals": 5
+    },
+    {
+      "club": "Omonia",
+      "appearances": 68,
+      "goals": 0
+    },
+    {
+      "club": "Levski Sofia",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Kano Pillars",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria U20",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Nigeria U21",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Nigeria",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "team": "Nigeria Olympic",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 248,
+    "goals": 12
+  }
+}

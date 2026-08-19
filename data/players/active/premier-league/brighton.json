@@ -63,17 +63,6 @@
       "kitNumber": 20
     },
     {
-      "apiId": 162007,
-      "name": "M. De Cuyper",
-      "position": "LB",
-      "club": "Brighton",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162007.png",
-      "kitNumber": 29
-    },
-    {
       "apiId": 7600,
       "name": "Igor",
       "position": "CB",
@@ -123,7 +112,7 @@
       "position": "CDM/CM",
       "club": "Brighton",
       "nation": "Cameroon",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/356041.png",
       "kitNumber": 17
@@ -195,23 +184,12 @@
       "kitNumber": 14
     },
     {
-      "apiId": 392610,
-      "name": "H. Howell",
-      "position": "CM",
-      "club": "Brighton",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/392610.png",
-      "kitNumber": 40
-    },
-    {
       "apiId": 106835,
       "name": "K. Mitoma",
       "position": "LW/LM",
       "club": "Brighton",
       "nation": "Japan",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/106835.png",
       "kitNumber": 22
@@ -237,17 +215,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/90590.png",
       "kitNumber": 10
-    },
-    {
-      "apiId": 1469,
-      "name": "D. Welbeck",
-      "position": "ST",
-      "club": "Brighton",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1469.png",
-      "kitNumber": 18
     },
     {
       "apiId": 392482,

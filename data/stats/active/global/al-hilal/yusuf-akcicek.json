@@ -1,0 +1,42 @@
+{
+  "apiId": 412703,
+  "name": "Yusuf Akçiçek",
+  "clubs": [
+    {
+      "club": "Fenerbahçe",
+      "appearances": 38,
+      "goals": 5
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U17",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U18",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Turkey",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 50,
+    "goals": 5
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "apiId": 2812,
+  "name": "A. Ajeti",
+  "clubs": [
+    {
+      "club": "Basel",
+      "appearances": 75,
+      "goals": 37
+    },
+    {
+      "club": "FC Augsburg II",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "St. Gallen",
+      "appearances": 29,
+      "goals": 10
+    },
+    {
+      "club": "St. Gallen",
+      "appearances": 7,
+      "goals": 3
+    },
+    {
+      "club": "Basel",
+      "appearances": 58,
+      "goals": 29
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Celtic",
+      "appearances": 48,
+      "goals": 9
+    },
+    {
+      "club": "Sturm Graz",
+      "appearances": 15,
+      "goals": 3
+    },
+    {
+      "club": "Gaziantep",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Basel",
+      "appearances": 69,
+      "goals": 15
+    }
+  ],
+  "national": [
+    {
+      "team": "Switzerland U15",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "team": "Switzerland U16",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Switzerland U17",
+      "appearances": 17,
+      "goals": 7
+    },
+    {
+      "team": "Switzerland U18",
+      "appearances": 3,
+      "goals": 2
+    },
+    {
+      "team": "Switzerland U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Switzerland U21",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "team": "Switzerland",
+      "appearances": 11,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 321,
+    "goals": 109
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "apiId": 576285,
+  "name": "M. Al Dawood",
+  "clubs": [
+    {
+      "club": "Al-Khutoot",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Naft",
+      "appearances": 0,
+      "goals": 58
+    },
+    {
+      "club": "Al-Shorta",
+      "appearances": 130,
+      "goals": 18
+    },
+    {
+      "club": "Al-Najaf",
+      "appearances": 0,
+      "goals": 10
+    },
+    {
+      "club": "Duhok",
+      "appearances": 0,
+      "goals": 2
+    },
+    {
+      "club": "Al-Minaa",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Iraq U17",
+      "appearances": 9,
+      "goals": 9
+    },
+    {
+      "team": "Iraq U20",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Iraq",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 142,
+    "goals": 89
+  }
+}

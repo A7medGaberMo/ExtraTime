@@ -1,0 +1,31 @@
+{
+  "apiId": 35669,
+  "name": "R. de la Rosa",
+  "clubs": [
+    {
+      "club": "Cádiz B",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "Cádiz",
+      "appearances": 53,
+      "goals": 3
+    },
+    {
+      "club": "Recreativo",
+      "appearances": 32,
+      "goals": 6
+    },
+    {
+      "club": "CF Monterrey",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 118,
+    "goals": 12
+  }
+}

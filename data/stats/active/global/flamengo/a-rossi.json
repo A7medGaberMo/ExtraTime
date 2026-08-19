@@ -1,0 +1,86 @@
+{
+  "apiId": 11756,
+  "name": "A. Rossi",
+  "clubs": [
+    {
+      "club": "Ponte Preta",
+      "appearances": 38,
+      "goals": 2
+    },
+    {
+      "club": "Mogi Mirim",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Paraná",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "Operário Ferroviário",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "club": "São Bento",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Goiás",
+      "appearances": 31,
+      "goals": 9
+    },
+    {
+      "club": "Chapecoense",
+      "appearances": 27,
+      "goals": 6
+    },
+    {
+      "club": "Shenzhen FC",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "club": "Internacional",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 39,
+      "goals": 3
+    },
+    {
+      "club": "Bahia",
+      "appearances": 85,
+      "goals": 12
+    },
+    {
+      "club": "Al-Faisaly",
+      "appearances": 38,
+      "goals": 8
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Paysandu",
+      "appearances": 28,
+      "goals": 8
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 406,
+    "goals": 61
+  }
+}

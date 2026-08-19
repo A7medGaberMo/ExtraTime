@@ -1,0 +1,112 @@
+{
+  "apiId": 610759,
+  "name": "T. Karadeniz",
+  "clubs": [
+    {
+      "club": "Beşiktaş",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Etimesgut Şekerspor",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Arsinspor",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Zeytinburnuspor",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Eyüpspor",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Kasımpaşa",
+      "appearances": 18,
+      "goals": 1
+    },
+    {
+      "club": "Orduspor",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Körfez FK",
+      "appearances": 40,
+      "goals": 4
+    },
+    {
+      "club": "Alanyaspor",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Körfez FK",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Gaziosmanpaşaspor",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Kartalspor",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Tekirdağspor",
+      "appearances": 53,
+      "goals": 8
+    },
+    {
+      "club": "Iğdır Es Spor",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Yozgatspor 1959",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Iğdır Es Spor",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Kozanspor",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Kemerspor 2003",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U20",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 255,
+    "goals": 18
+  }
+}

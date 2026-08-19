@@ -1,0 +1,62 @@
+{
+  "apiId": 36798,
+  "name": "V. Pavlidis",
+  "clubs": [
+    {
+      "club": "Schalke 04",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Jong AZ",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "TOP Oss",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "TOP Oss",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "AEK Athens B",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "PAS Giannina",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Unia Skierniewice",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Benfica",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Greece U16",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Greece U17",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 72,
+    "goals": 1
+  }
+}

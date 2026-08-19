@@ -32,12 +32,44 @@ type SquadSlot = {
 };
 
 async function hydrateSquad(ctx: GenericQueryCtx<DataModel>, squad: SquadSlot[] = []) {
-  return Promise.all(
-    squad.map(async (slot) => ({
+  if (!squad.length) return [];
+
+  const playerDocs = await Promise.all(squad.map((s) => ctx.db.get(s.playerId)));
+  const clubIds = new Set<Id<"clubs">>();
+  const nationIds = new Set<Id<"nations">>();
+
+  for (const p of playerDocs) {
+    if (p?.clubId) clubIds.add(p.clubId);
+    if (p?.nationId) nationIds.add(p.nationId);
+  }
+
+  const [clubDocs, nationDocs] = await Promise.all([
+    Promise.all([...clubIds].map((id) => ctx.db.get(id))),
+    Promise.all([...nationIds].map((id) => ctx.db.get(id))),
+  ]);
+
+  const clubMap = new Map(clubDocs.filter(Boolean).map((c) => [String(c!._id), c!]));
+  const nationMap = new Map(nationDocs.filter(Boolean).map((n) => [String(n!._id), n!]));
+
+  return squad.map((slot, index) => {
+    const player = playerDocs[index];
+    if (!player) return { ...slot, player: null };
+
+    const club = clubMap.get(String(player.clubId));
+    const nation = nationMap.get(String(player.nationId));
+
+    return {
       ...slot,
-      player: await hydratePlayer(ctx, slot.playerId),
-    }))
-  );
+      player: {
+        ...player,
+        id: player._id,
+        club: club?.name ?? "Unknown Club",
+        clubLogo: club?.logo ?? "",
+        nation: nation?.name ?? "Unknown Nation",
+        nationFlag: nation?.flag ?? "",
+      },
+    };
+  });
 }
 
 // ── Queries ────────────────────────────────────────────────

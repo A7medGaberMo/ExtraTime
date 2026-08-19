@@ -1,0 +1,32 @@
+{
+  "apiId": 67896,
+  "name": "M. Falcón",
+  "clubs": [
+    {
+      "club": "Rentistas",
+      "appearances": 37,
+      "goals": 3
+    },
+    {
+      "club": "Colo-Colo",
+      "appearances": 154,
+      "goals": 8
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay U20",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 196,
+    "goals": 12
+  }
+}

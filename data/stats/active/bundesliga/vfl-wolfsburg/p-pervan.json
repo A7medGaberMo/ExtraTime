@@ -1,0 +1,41 @@
+{
+  "apiId": 25396,
+  "name": "P. Pervan",
+  "clubs": [
+    {
+      "club": "SV Schwechat",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Lustenau",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Juniors OÖ",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "LASK II",
+      "appearances": 88,
+      "goals": 0
+    },
+    {
+      "club": "LASK",
+      "appearances": 205,
+      "goals": 0
+    },
+    {
+      "club": "Wolfsburg",
+      "appearances": 45,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 383,
+    "goals": 0
+  }
+}

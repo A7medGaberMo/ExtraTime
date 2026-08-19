@@ -1,0 +1,26 @@
+{
+  "apiId": 25290,
+  "name": "J. Gouweleeuw",
+  "clubs": [
+    {
+      "club": "Heerenveen",
+      "appearances": 80,
+      "goals": 6
+    },
+    {
+      "club": "AZ",
+      "appearances": 122,
+      "goals": 12
+    },
+    {
+      "club": "Augsburg",
+      "appearances": 284,
+      "goals": 7
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 486,
+    "goals": 25
+  }
+}

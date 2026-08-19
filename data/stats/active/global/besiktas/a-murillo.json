@@ -1,0 +1,32 @@
+{
+  "apiId": 2973,
+  "name": "A. Murillo",
+  "clubs": [
+    {
+      "club": "Corinthians",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 113,
+      "goals": 4
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 138,
+    "goals": 5
+  }
+}

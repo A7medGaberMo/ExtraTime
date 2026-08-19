@@ -1,0 +1,22 @@
+{
+  "apiId": 159,
+  "name": "H. Lloris",
+  "clubs": [
+    {
+      "club": "Los Angeles FC",
+      "appearances": 220,
+      "goals": 85
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 30,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 220,
+    "goals": 85
+  }
+}

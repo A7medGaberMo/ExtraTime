@@ -1,0 +1,71 @@
+{
+  "apiId": 71,
+  "name": "Luan Peres",
+  "clubs": [
+    {
+      "club": "Portuguesa",
+      "appearances": 34,
+      "goals": 2
+    },
+    {
+      "club": "Santa Cruz",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Red Bull Brasil",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Ituano",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Ponte Preta",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Santos",
+      "appearances": 90,
+      "goals": 1
+    },
+    {
+      "club": "Santos",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Marseille",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Santos",
+      "appearances": 62,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 337,
+    "goals": 5
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "apiId": 442540,
+  "name": "O. Pietuszewski",
+  "clubs": [
+    {
+      "club": "Jagiellonia Białystok",
+      "appearances": 54,
+      "goals": 4
+    },
+    {
+      "club": "Jagiellonia Białystok II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 18,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Poland U15",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Poland U17",
+      "appearances": 15,
+      "goals": 4
+    },
+    {
+      "team": "Poland U21",
+      "appearances": 6,
+      "goals": 4
+    },
+    {
+      "team": "Poland",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 73,
+    "goals": 7
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "apiId": 544790,
+  "name": "Y. Ozcan",
+  "clubs": [
+    {
+      "club": "Kasımpaşa",
+      "appearances": 94,
+      "goals": 5
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "RSCA Futures",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U16",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U17",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "team": "Turkey",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 104,
+    "goals": 5
+  }
+}

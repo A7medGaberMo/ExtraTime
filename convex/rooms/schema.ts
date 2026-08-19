@@ -15,6 +15,7 @@ export const roomsTable = defineTable({
     v.literal("abandoned")
   ),
   isPublic: v.optional(v.boolean()),
+  isSolo: v.optional(v.boolean()),
   settings: roomSettingsValidator,
   createdAt: v.number(),
 })

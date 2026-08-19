@@ -1,0 +1,62 @@
+{
+  "apiId": 190485,
+  "name": "Samú Costa",
+  "clubs": [
+    {
+      "club": "Braga B",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "Braga",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Almería",
+      "appearances": 113,
+      "goals": 3
+    },
+    {
+      "club": "Almería",
+      "appearances": 70,
+      "goals": 1
+    },
+    {
+      "club": "Mallorca",
+      "appearances": 108,
+      "goals": 8
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 1,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U19",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Portugal",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 305,
+    "goals": 14
+  }
+}

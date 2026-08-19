@@ -112,32 +112,10 @@
       "position": "LW/CAM",
       "club": "Strasbourg",
       "nation": "Sweden",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/226803.png",
       "kitNumber": 11
-    },
-    {
-      "apiId": 70747,
-      "name": "J. Enciso",
-      "position": "CAM/ST/LW",
-      "club": "Strasbourg",
-      "nation": "Paraguay",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/70747.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 319572,
-      "name": "V. Barco",
-      "position": "LB/LM/CM",
-      "club": "Strasbourg",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/319572.png",
-      "kitNumber": 32
     },
     {
       "apiId": 335056,
@@ -193,17 +171,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/303016.png",
       "kitNumber": 8
-    },
-    {
-      "apiId": 339417,
-      "name": "P. Diop",
-      "position": "CDM/CM",
-      "club": "Strasbourg",
-      "nation": "Senegal",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/339417.png",
-      "kitNumber": 41
     },
     {
       "apiId": 355256,
@@ -294,17 +261,6 @@
       "kitNumber": 45
     },
     {
-      "apiId": 358166,
-      "name": "A. Ouattara",
-      "position": "CM",
-      "club": "Strasbourg",
-      "nation": "France",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/358166.png",
-      "kitNumber": 47
-    },
-    {
       "apiId": 656711,
       "name": "Idrissa Sabaly",
       "position": "CM",
@@ -391,6 +347,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/488976.png",
       "kitNumber": 37
+    },
+    {
+      "apiId": 161921,
+      "name": "G. Reyna",
+      "position": "CAM/RW/LW",
+      "club": "Strasbourg",
+      "nation": "United States",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161921.png",
+      "kitNumber": 13
     }
   ]
 }

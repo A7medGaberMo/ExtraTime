@@ -1,0 +1,82 @@
+{
+  "apiId": 18858,
+  "name": "A. Begović",
+  "clubs": [
+    {
+      "club": "Portsmouth",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "La Louvière",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Macclesfield Town",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "AFC Bournemouth",
+      "appearances": 122,
+      "goals": 0
+    },
+    {
+      "club": "Yeovil Town",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Ipswich Town",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Stoke City",
+      "appearances": 172,
+      "goals": 1
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Qarabağ",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Everton",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Queens Park Rangers",
+      "appearances": 46,
+      "goals": 0
+    },
+    {
+      "club": "Leicester City",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Bosnia and Herzegovina",
+      "appearances": 63,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 459,
+    "goals": 1
+  }
+}

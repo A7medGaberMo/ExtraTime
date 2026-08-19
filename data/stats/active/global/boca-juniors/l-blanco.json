@@ -1,0 +1,82 @@
+{
+  "apiId": 289444,
+  "name": "L. Blanco",
+  "clubs": [
+    {
+      "club": "América",
+      "appearances": 308,
+      "goals": 108
+    },
+    {
+      "club": "Necaxa",
+      "appearances": 18,
+      "goals": 11
+    },
+    {
+      "club": "Real Valladolid",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Veracruz",
+      "appearances": 15,
+      "goals": 5
+    },
+    {
+      "club": "Chicago Fire",
+      "appearances": 66,
+      "goals": 18
+    },
+    {
+      "club": "Santos Laguna",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "Veracruz",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "club": "Irapuato",
+      "appearances": 47,
+      "goals": 9
+    },
+    {
+      "club": "Dorados",
+      "appearances": 40,
+      "goals": 14
+    },
+    {
+      "club": "BUAP",
+      "appearances": 22,
+      "goals": 6
+    },
+    {
+      "club": "Puebla",
+      "appearances": 19,
+      "goals": 3
+    },
+    {
+      "club": "América",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 119,
+      "goals": 38
+    }
+  ],
+  "careerTotal": {
+    "appearances": 589,
+    "goals": 184
+  }
+}

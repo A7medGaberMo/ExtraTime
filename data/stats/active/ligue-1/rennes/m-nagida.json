@@ -1,0 +1,27 @@
+{
+  "apiId": 438281,
+  "name": "M. Nagida",
+  "clubs": [
+    {
+      "club": "Rennes B",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Rennes",
+      "appearances": 34,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Cameroon",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 42,
+    "goals": 3
+  }
+}

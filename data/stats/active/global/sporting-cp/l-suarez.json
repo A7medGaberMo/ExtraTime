@@ -1,0 +1,77 @@
+{
+  "apiId": 47237,
+  "name": "L. Suárez",
+  "clubs": [
+    {
+      "club": "Nacional",
+      "appearances": 35,
+      "goals": 12
+    },
+    {
+      "club": "Groningen",
+      "appearances": 29,
+      "goals": 10
+    },
+    {
+      "club": "Ajax",
+      "appearances": 159,
+      "goals": 111
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 133,
+      "goals": 82
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 283,
+      "goals": 198
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 83,
+      "goals": 34
+    },
+    {
+      "club": "Nacional",
+      "appearances": 14,
+      "goals": 8
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 45,
+      "goals": 24
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 103,
+      "goals": 52
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay U20",
+      "appearances": 4,
+      "goals": 2
+    },
+    {
+      "team": "Uruguay Olympic (O.P.)",
+      "appearances": 4,
+      "goals": 3
+    },
+    {
+      "team": "Uruguay",
+      "appearances": 143,
+      "goals": 69
+    }
+  ],
+  "careerTotal": {
+    "appearances": 896,
+    "goals": 532
+  }
+}

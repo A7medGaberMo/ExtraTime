@@ -72,7 +72,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
         <img
           src={logoSrc}
           alt={clubName}
-          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
           onError={() => setError(true)}
           className="w-full h-full object-contain filter drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]"
         />
@@ -190,11 +190,50 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
     'romania': 'ro',
     'bosnia and herzegovina': 'ba',
     'bosnia': 'ba',
+    'jamaica': 'jm',
+    'trinidad and tobago': 'tt',
+    'trinidad & tobago': 'tt',
+    'saudi arabia': 'sa',
+    'iran': 'ir',
+    'finland': 'fi',
+    'montenegro': 'me',
+    'czechia': 'cz',
+    'türkiye': 'tr',
+    'slovenia': 'si',
+    'north macedonia': 'mk',
+    'macedonia': 'mk',
+    'albania': 'al',
+    'iceland': 'is',
+    'israel': 'il',
+    'cyprus': 'cy',
+    'luxembourg': 'lu',
+    'new zealand': 'nz',
+    'honduras': 'hn',
+    'panama': 'pa',
+    'el salvador': 'sv',
+    'guatemala': 'gt',
+    'haiti': 'ht',
+    'suriname': 'sr',
+    'curacao': 'cw',
+    'curaçao': 'cw',
+    'china': 'cn',
+    'uzbekistan': 'uz',
+    'qatar': 'qa',
+    'united arab emirates': 'ae',
+    'uae': 'ae',
+    'iraq': 'iq',
+    'syria': 'sy',
+    'jordan': 'jo',
+    'lebanon': 'lb',
+    'oman': 'om',
+    'kuwait': 'kw',
+    'bahrain': 'bh',
+    'palestine': 'ps',
   };
 
   const cleanNation = (nationName || '').trim().toLowerCase();
-  const iso = countryIso[cleanNation] || 'gb';
-  const logoSrc = flagUrl || `https://flagcdn.com/w40/${iso}.png`;
+  const iso = countryIso[cleanNation];
+  const logoSrc = flagUrl || (iso ? `https://flagcdn.com/w40/${iso}.png` : null);
 
   return (
     <div
@@ -204,12 +243,12 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
       )}
       title={nationName}
     >
-      {!error ? (
+      {logoSrc && !error ? (
         /* eslint-disable-next-line @next/next/no-img-element */
         <img
           src={logoSrc}
           alt={nationName}
-          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
           onError={() => setError(true)}
           className="w-full h-full object-cover filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"
         />
@@ -219,3 +258,4 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
     </div>
   );
 }
+

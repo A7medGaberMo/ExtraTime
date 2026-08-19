@@ -1,0 +1,51 @@
+{
+  "apiId": 122233,
+  "name": "Marcos André",
+  "clubs": [
+    {
+      "club": "Órdenes",
+      "appearances": 23,
+      "goals": 5
+    },
+    {
+      "club": "Logroñés B",
+      "appearances": 13,
+      "goals": 6
+    },
+    {
+      "club": "Logroñés",
+      "appearances": 94,
+      "goals": 26
+    },
+    {
+      "club": "Real Valladolid B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Mirandés",
+      "appearances": 45,
+      "goals": 12
+    },
+    {
+      "club": "Real Valladolid",
+      "appearances": 24,
+      "goals": 5
+    },
+    {
+      "club": "Valencia",
+      "appearances": 54,
+      "goals": 4
+    },
+    {
+      "club": "Valladolid",
+      "appearances": 16,
+      "goals": 3
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 270,
+    "goals": 61
+  }
+}

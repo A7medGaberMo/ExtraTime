@@ -1,0 +1,42 @@
+{
+  "apiId": 9,
+  "name": "A. Hakimi",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 17,
+      "goals": 2
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 73,
+      "goals": 12
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 45,
+      "goals": 7
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 207,
+      "goals": 28
+    }
+  ],
+  "national": [
+    {
+      "team": "Morocco",
+      "appearances": 102,
+      "goals": 12
+    }
+  ],
+  "careerTotal": {
+    "appearances": 370,
+    "goals": 50
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "apiId": 353034,
+  "name": "Cuiabano",
+  "clubs": [
+    {
+      "club": "Grêmio",
+      "appearances": 18,
+      "goals": 2
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 60,
+      "goals": 7
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 13,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 108,
+    "goals": 14
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "apiId": 37724,
+  "name": "C. Summerville",
+  "clubs": [
+    {
+      "club": "Feyenoord",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "FC Dordrecht",
+      "appearances": 18,
+      "goals": 5
+    },
+    {
+      "club": "ADO Den Haag",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "Leeds United",
+      "appearances": 89,
+      "goals": 25
+    },
+    {
+      "club": "West Ham United",
+      "appearances": 56,
+      "goals": 8
+    },
+    {
+      "club": "Al Hilal",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U16",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "Netherlands U17",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "team": "Netherlands U18",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "Netherlands U19",
+      "appearances": 5,
+      "goals": 6
+    },
+    {
+      "team": "Netherlands U21",
+      "appearances": 8,
+      "goals": 3
+    },
+    {
+      "team": "Netherlands",
+      "appearances": 6,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 185,
+    "goals": 40
+  }
+}

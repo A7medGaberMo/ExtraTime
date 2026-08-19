@@ -1,0 +1,37 @@
+{
+  "apiId": 268087,
+  "name": "Haitham Asiri",
+  "clubs": [
+    {
+      "club": "Al-Ahli",
+      "appearances": 79,
+      "goals": 14
+    },
+    {
+      "club": "Al-Qadsiah",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia",
+      "appearances": 10,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 79,
+    "goals": 14
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 279802,
+  "name": "Pedro Lima",
+  "clubs": [
+    {
+      "club": "Sport Recife",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Porto B",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U17",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U20",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 48,
+    "goals": 2
+  }
+}

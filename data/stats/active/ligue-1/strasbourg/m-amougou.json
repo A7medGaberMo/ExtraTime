@@ -1,0 +1,31 @@
+{
+  "apiId": 395762,
+  "name": "M. Amougou",
+  "clubs": [
+    {
+      "club": "Saint-Étienne II",
+      "appearances": 21,
+      "goals": 3
+    },
+    {
+      "club": "Saint-Étienne",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Strasbourg",
+      "appearances": 19,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 61,
+    "goals": 3
+  }
+}

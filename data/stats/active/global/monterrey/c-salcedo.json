@@ -1,0 +1,82 @@
+{
+  "apiId": 2877,
+  "name": "C. Salcedo",
+  "clubs": [
+    {
+      "club": "Real Salt Lake",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "Guadalajara",
+      "appearances": 59,
+      "goals": 1
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Tigres UANL",
+      "appearances": 102,
+      "goals": 7
+    },
+    {
+      "club": "Toronto FC",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Juárez",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Cruz Azul",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Juárez",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Monterrey",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico U21",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Mexico Olympic",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Mexico",
+      "appearances": 47,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 340,
+    "goals": 10
+  }
+}

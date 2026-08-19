@@ -1,0 +1,52 @@
+{
+  "apiId": 47348,
+  "name": "Borja Iglesias",
+  "clubs": [
+    {
+      "club": "Villarreal C",
+      "appearances": 29,
+      "goals": 11
+    },
+    {
+      "club": "Celta B",
+      "appearances": 146,
+      "goals": 75
+    },
+    {
+      "club": "Celta",
+      "appearances": 91,
+      "goals": 29
+    },
+    {
+      "club": "Zaragoza",
+      "appearances": 43,
+      "goals": 23
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 46,
+      "goals": 23
+    },
+    {
+      "club": "Betis",
+      "appearances": 181,
+      "goals": 52
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 10,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 546,
+    "goals": 213
+  }
+}

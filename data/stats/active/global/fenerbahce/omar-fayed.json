@@ -1,0 +1,52 @@
+{
+  "apiId": 381812,
+  "name": "Omar Fayed",
+  "clubs": [
+    {
+      "club": "Al Mokawloon",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Novi Pazar",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Beerschot",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Arouca",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Egypt U20",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Egypt U23",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "team": "Egypt Olympic",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 67,
+    "goals": 0
+  }
+}

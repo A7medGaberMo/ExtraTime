@@ -1,0 +1,22 @@
+{
+  "apiId": 16369,
+  "name": "G. Plata",
+  "clubs": [
+    {
+      "club": "Flamengo",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Ecuador",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

@@ -9,15 +9,14 @@ export const playersTable = defineTable({
   tier: v.union(
     v.literal("ICON"),
     v.literal("HERO"),
+    v.literal("ULTIMATE"),
     v.literal("MASTER"),
-    v.literal("ELITE_PLUS"),
     v.literal("ELITE"),
     v.literal("GOLD"),
     v.literal("SILVER"),
     v.literal("BRONZE")
   ),
   isLegend: v.boolean(),
-  isSynthetic: v.optional(v.boolean()), // synthetic fallback cards from draft options
   seasonYear: v.optional(v.number()),
   apiId: v.optional(v.string()),
   imageUrl: v.optional(v.string()),
@@ -30,4 +29,8 @@ export const playersTable = defineTable({
   .index("by_legend", ["isLegend"])
   .index("by_season", ["seasonYear"])
   .index("by_apiId", ["apiId"])
-  .index("by_name", ["name"]);
+  .index("by_name", ["name"])
+  .index("by_club_tier", ["clubId", "tier"])
+  .index("by_nation_tier", ["nationId", "tier"])
+  .index("by_legend_tier", ["isLegend", "tier"])
+  .index("by_tier_season", ["tier", "seasonYear"]);

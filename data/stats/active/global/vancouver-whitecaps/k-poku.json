@@ -1,0 +1,67 @@
+{
+  "apiId": 338019,
+  "name": "K. Poku",
+  "clubs": [
+    {
+      "club": "Georgia Revolution",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Atlanta Silverbacks",
+      "appearances": 25,
+      "goals": 2
+    },
+    {
+      "club": "New York City",
+      "appearances": 36,
+      "goals": 7
+    },
+    {
+      "club": "Wilmington Hammerheads",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Miami FC",
+      "appearances": 55,
+      "goals": 15
+    },
+    {
+      "club": "Anzhi Makhachkala",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Tampa Bay Rowdies",
+      "appearances": 43,
+      "goals": 4
+    },
+    {
+      "club": "Europa",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Tennessee Tempo",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Vancouver Whitecaps",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ghana",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 179,
+    "goals": 29
+  }
+}

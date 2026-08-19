@@ -1,0 +1,72 @@
+{
+  "apiId": 984,
+  "name": "J. Brandt",
+  "clubs": [
+    {
+      "club": "Bayer Leverkusen II",
+      "appearances": 215,
+      "goals": 42
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 165,
+      "goals": 34
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 307,
+      "goals": 57
+    },
+    {
+      "club": "Ajax",
+      "appearances": 2,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Germany U15",
+      "appearances": 2,
+      "goals": 2
+    },
+    {
+      "team": "Germany U16",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Germany U17",
+      "appearances": 19,
+      "goals": 5
+    },
+    {
+      "team": "Germany U19",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "team": "Germany U20",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "team": "Germany U21",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Germany U23",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Germany",
+      "appearances": 48,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 689,
+    "goals": 134
+  }
+}

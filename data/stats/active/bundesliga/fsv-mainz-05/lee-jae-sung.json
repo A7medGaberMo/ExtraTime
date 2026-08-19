@@ -1,0 +1,32 @@
+{
+  "apiId": 2906,
+  "name": "Lee Jae-Sung",
+  "clubs": [
+    {
+      "club": "Jeonbuk Hyundai Motors",
+      "appearances": 181,
+      "goals": 31
+    },
+    {
+      "club": "Holstein Kiel",
+      "appearances": 104,
+      "goals": 23
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 170,
+      "goals": 30
+    }
+  ],
+  "national": [
+    {
+      "team": "South Korea",
+      "appearances": 107,
+      "goals": 15
+    }
+  ],
+  "careerTotal": {
+    "appearances": 455,
+    "goals": 84
+  }
+}

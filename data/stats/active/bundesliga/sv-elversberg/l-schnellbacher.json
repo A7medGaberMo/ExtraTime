@@ -1,0 +1,36 @@
+{
+  "apiId": 26642,
+  "name": "L. Schnellbacher",
+  "clubs": [
+    {
+      "club": "SV Wehen Wiesbaden II",
+      "appearances": 6,
+      "goals": 3
+    },
+    {
+      "club": "SV Wehen Wiesbaden",
+      "appearances": 129,
+      "goals": 26
+    },
+    {
+      "club": "VfR Aalen",
+      "appearances": 78,
+      "goals": 17
+    },
+    {
+      "club": "Preußen Münster",
+      "appearances": 35,
+      "goals": 5
+    },
+    {
+      "club": "SV Elversberg",
+      "appearances": 205,
+      "goals": 68
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 453,
+    "goals": 119
+  }
+}

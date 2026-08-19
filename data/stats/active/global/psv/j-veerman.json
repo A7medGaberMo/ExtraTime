@@ -1,0 +1,47 @@
+{
+  "apiId": 37749,
+  "name": "J. Veerman",
+  "clubs": [
+    {
+      "club": "Jong Volendam",
+      "appearances": 81,
+      "goals": 12
+    },
+    {
+      "club": "Volendam",
+      "appearances": 73,
+      "goals": 12
+    },
+    {
+      "club": "Heerenveen",
+      "appearances": 81,
+      "goals": 18
+    },
+    {
+      "club": "PSV",
+      "appearances": 197,
+      "goals": 31
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U19",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Netherlands",
+      "appearances": 17,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 432,
+    "goals": 73
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiId": 2571,
+  "name": "R. Arboleda",
+  "clubs": [
+    {
+      "club": "São Paulo",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

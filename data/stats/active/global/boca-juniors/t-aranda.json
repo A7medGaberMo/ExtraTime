@@ -1,0 +1,27 @@
+{
+  "apiId": 510587,
+  "name": "T. Aranda",
+  "clubs": [
+    {
+      "club": "Boca Juniors",
+      "appearances": 14,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Argentina",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 14,
+    "goals": 1
+  }
+}

@@ -140,17 +140,6 @@
       "kitNumber": 66
     },
     {
-      "apiId": 7562,
-      "name": "R. Schmid",
-      "position": "CAM/CM/RW",
-      "club": "Werder Bremen",
-      "nation": "Austria",
-      "tier": "ELITE_PLUS",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/7562.png",
-      "kitNumber": 20
-    },
-    {
       "apiId": 15592,
       "name": "J. Stage",
       "position": "CM/CDM",
@@ -324,6 +313,17 @@
       "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584356.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 202526,
+      "name": "E. Dinkçi",
+      "position": "RW/RM/ST",
+      "club": "Werder Bremen",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/202526.png",
       "kitNumber": 45
     }
   ]

@@ -1,0 +1,27 @@
+{
+  "apiId": 518567,
+  "name": "Renato Nhaga",
+  "clubs": [
+    {
+      "club": "Casa Pia",
+      "appearances": 24,
+      "goals": 2
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 3,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Guinea-Bissau",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 27,
+    "goals": 3
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "apiId": 15909,
+  "name": "M. Frese",
+  "clubs": [
+    {
+      "club": "Nordsjælland",
+      "appearances": 131,
+      "goals": 13
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 34,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 165,
+    "goals": 15
+  }
+}

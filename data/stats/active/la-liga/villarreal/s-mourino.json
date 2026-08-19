@@ -1,0 +1,42 @@
+{
+  "apiId": 311773,
+  "name": "S. Mouriño",
+  "clubs": [
+    {
+      "club": "Racing Montevideo",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Zaragoza",
+      "appearances": 29,
+      "goals": 1
+    },
+    {
+      "club": "Alavés",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 34,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 121,
+    "goals": 3
+  }
+}

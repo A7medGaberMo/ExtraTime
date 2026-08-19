@@ -1,0 +1,42 @@
+{
+  "apiId": 449624,
+  "name": "Gabriel Silva",
+  "clubs": [
+    {
+      "club": "Palmeiras",
+      "appearances": 28,
+      "goals": 2
+    },
+    {
+      "club": "Santa Clara",
+      "appearances": 97,
+      "goals": 17
+    },
+    {
+      "club": "Santa Clara",
+      "appearances": 84,
+      "goals": 15
+    },
+    {
+      "club": "Braga",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U17",
+      "appearances": 7,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 222,
+    "goals": 35
+  }
+}

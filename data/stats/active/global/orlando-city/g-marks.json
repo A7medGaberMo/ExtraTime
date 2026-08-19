@@ -1,0 +1,22 @@
+{
+  "apiId": 351567,
+  "name": "G. Marks",
+  "clubs": [
+    {
+      "club": "Orlando City SC",
+      "appearances": 85,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "USA",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 0
+  }
+}

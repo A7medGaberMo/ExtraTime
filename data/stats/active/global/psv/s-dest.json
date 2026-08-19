@@ -1,0 +1,57 @@
+{
+  "apiId": 38735,
+  "name": "S. Dest",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 38,
+      "goals": 2
+    },
+    {
+      "club": "Ajax",
+      "appearances": 23,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 72,
+      "goals": 3
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "PSV",
+      "appearances": 46,
+      "goals": 2
+    },
+    {
+      "club": "PSV",
+      "appearances": 35,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "United States U17",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "United States U20",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "team": "United States",
+      "appearances": 44,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 222,
+    "goals": 8
+  }
+}

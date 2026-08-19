@@ -1,0 +1,42 @@
+{
+  "apiId": 25918,
+  "name": "L. Barreiro",
+  "clubs": [
+    {
+      "club": "Mainz 05",
+      "appearances": 151,
+      "goals": 11
+    },
+    {
+      "club": "Benfica",
+      "appearances": 101,
+      "goals": 11
+    }
+  ],
+  "national": [
+    {
+      "team": "Luxembourg U17",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Luxembourg U19",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Luxembourg U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Luxembourg",
+      "appearances": 73,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 252,
+    "goals": 22
+  }
+}

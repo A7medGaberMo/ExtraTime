@@ -1,0 +1,66 @@
+{
+  "apiId": 580796,
+  "name": "K. Lima",
+  "clubs": [
+    {
+      "club": "Rio Branco PR",
+      "appearances": 30,
+      "goals": 1
+    },
+    {
+      "club": "FC Cascavel",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense FC",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Bara FC",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Itajaí",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Figueirense FC",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Figueirense FC",
+      "appearances": 35,
+      "goals": 4
+    },
+    {
+      "club": "Pohang Steelers",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Pohang Steelers",
+      "appearances": 66,
+      "goals": 9
+    },
+    {
+      "club": "Jeonbuk Hyundai Motors",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 214,
+    "goals": 17
+  }
+}

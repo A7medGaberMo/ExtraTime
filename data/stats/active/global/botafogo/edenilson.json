@@ -1,0 +1,26 @@
+{
+  "apiId": 10387,
+  "name": "Edenílson",
+  "clubs": [
+    {
+      "club": "Vitória",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Itabuna",
+      "appearances": 13,
+      "goals": 2
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 36,
+    "goals": 3
+  }
+}

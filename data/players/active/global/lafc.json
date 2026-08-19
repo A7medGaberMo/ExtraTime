@@ -1,0 +1,275 @@
+{
+  "club": {
+    "apiId": 1616,
+    "name": "Los Angeles FC",
+    "logo": "https://media.api-sports.io/football/teams/1616.png",
+    "league": "Major League Soccer",
+    "leagueId": 253
+  },
+  "players": [
+    {
+      "apiId": 360621,
+      "name": "Cabral Carter",
+      "position": "GK",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/360621.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 199404,
+      "name": "T. Hasal",
+      "position": "GK",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/199404.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 159,
+      "name": "H. Lloris",
+      "position": "LW/CAM",
+      "club": "Los Angeles FC",
+      "nation": "Belgium",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/159.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 63439,
+      "name": "Y. Cheberko",
+      "position": "CB",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/63439.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 51134,
+      "name": "R. Hollingshead",
+      "position": "CB",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51134.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 50952,
+      "name": "A. Long",
+      "position": "CB",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50952.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 474474,
+      "name": "Kenny Nielsen",
+      "position": "CB",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/474474.png",
+      "kitNumber": 45
+    },
+    {
+      "apiId": 201788,
+      "name": "N. Tafari",
+      "position": "CB",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/201788.png",
+      "kitNumber": 91
+    },
+    {
+      "apiId": 1261,
+      "name": "Sergi Palencia",
+      "position": "CB",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1261.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 44836,
+      "name": "R. Porteous",
+      "position": "CB",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44836.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 51031,
+      "name": "E. Segura",
+      "position": "CM",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51031.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 50788,
+      "name": "M. Choinière",
+      "position": "CM",
+      "club": "Los Angeles FC",
+      "nation": "Canada",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50788.png",
+      "kitNumber": 66
+    },
+    {
+      "apiId": 50814,
+      "name": "M. Delgado",
+      "position": "CM",
+      "club": "Los Angeles FC",
+      "nation": "United States",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50814.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 461627,
+      "name": "Jude Terry",
+      "position": "CM",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/461627.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 25617,
+      "name": "T. Tillman",
+      "position": "CM",
+      "club": "Los Angeles FC",
+      "nation": "United States",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25617.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 541949,
+      "name": "M. Aiyenero",
+      "position": "ST",
+      "club": "Los Angeles FC",
+      "nation": "Canada B",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/541949.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 21437,
+      "name": "D. Bouanga",
+      "position": "ST",
+      "club": "Los Angeles FC",
+      "nation": "Gabon",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21437.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 50157,
+      "name": "T. Boyd",
+      "position": "ST",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50157.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 51242,
+      "name": "J. Ebobisse",
+      "position": "ST",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51242.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 356814,
+      "name": "D. Martínez",
+      "position": "ST",
+      "club": "Los Angeles FC",
+      "nation": "Mexico",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/356814.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 265736,
+      "name": "Sebastian Nava",
+      "position": "ST",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/265736.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 78451,
+      "name": "R. Raposo",
+      "position": "CM",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/78451.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 50826,
+      "name": "J. Shaffelburg",
+      "position": "ST",
+      "club": "Los Angeles FC",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50826.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 186,
+      "name": "Son Heung-Min",
+      "position": "LW/ST",
+      "club": "Los Angeles FC",
+      "nation": "South Korea",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/186.png",
+      "kitNumber": 7
+    }
+  ]
+}

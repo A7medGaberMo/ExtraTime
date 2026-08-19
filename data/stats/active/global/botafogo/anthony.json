@@ -1,0 +1,62 @@
+{
+  "apiId": 454519,
+  "name": "Anthony",
+  "clubs": [
+    {
+      "club": "Everton",
+      "appearances": 78,
+      "goals": 7
+    },
+    {
+      "club": "Preston North End",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Newcastle United",
+      "appearances": 152,
+      "goals": 39
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "England U18",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "England U19",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "team": "England U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "England U21",
+      "appearances": 16,
+      "goals": 6
+    },
+    {
+      "team": "England",
+      "appearances": 25,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 253,
+    "goals": 47
+  }
+}

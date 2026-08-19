@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Barcelona",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182718.png",
       "kitNumber": 13
@@ -46,21 +46,10 @@
       "position": "RB/CB",
       "club": "Barcelona",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1257.png",
       "kitNumber": 23
-    },
-    {
-      "apiId": 101814,
-      "name": "R. Araújo",
-      "position": "CB/RB",
-      "club": "Barcelona",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/101814.png",
-      "kitNumber": 4
     },
     {
       "apiId": 396623,
@@ -68,7 +57,7 @@
       "position": "CB",
       "club": "Barcelona",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/396623.png",
       "kitNumber": 2
@@ -167,7 +156,7 @@
       "position": "CAM/LW",
       "club": "Barcelona",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1323.png",
       "kitNumber": 20
@@ -178,7 +167,7 @@
       "position": "CM/CAM",
       "club": "Barcelona",
       "nation": "Spain",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/296667.png",
       "kitNumber": 6
@@ -189,7 +178,7 @@
       "position": "CM/CDM",
       "club": "Barcelona",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/538.png",
       "kitNumber": 21
@@ -266,7 +255,7 @@
       "position": "LW/ST",
       "club": "Barcelona",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7334.png",
       "kitNumber": 27
@@ -281,17 +270,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138787.png",
       "kitNumber": 10
-    },
-    {
-      "apiId": 931,
-      "name": "Ferran Torres",
-      "position": "ST/LW",
-      "club": "Barcelona",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/931.png",
-      "kitNumber": 7
     },
     {
       "apiId": 338958,
@@ -325,6 +303,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/579244.png",
       "kitNumber": 41
+    },
+    {
+      "apiId": 44,
+      "name": "Rodri",
+      "position": "CDM/CM",
+      "club": "Barcelona",
+      "nation": "Spain",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44.png",
+      "kitNumber": 16
     }
   ]
 }

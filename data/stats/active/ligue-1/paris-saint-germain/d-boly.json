@@ -1,0 +1,61 @@
+{
+  "apiId": 610763,
+  "name": "D. Boly",
+  "clubs": [
+    {
+      "club": "League",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Type",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Coupe de Paris",
+      "appearances": 3,
+      "goals": 1971
+    },
+    {
+      "club": "National",
+      "appearances": 7,
+      "goals": 2005
+    },
+    {
+      "club": "Coupe Gambardella",
+      "appearances": 2,
+      "goals": 1990
+    },
+    {
+      "club": "Championnat National U17",
+      "appearances": 4,
+      "goals": 2010
+    },
+    {
+      "club": "Championnat National des Cadets",
+      "appearances": 1,
+      "goals": 1987
+    },
+    {
+      "club": "Championnat National Féminin U19",
+      "appearances": 4,
+      "goals": 2015
+    },
+    {
+      "club": "Coupe Nike Féminine U18",
+      "appearances": 1,
+      "goals": 2025
+    },
+    {
+      "club": "Best Youth Club",
+      "appearances": 4,
+      "goals": 1989
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 26,
+    "goals": 15992
+  }
+}

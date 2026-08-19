@@ -1,5 +1,5 @@
 {
-  "apiId": 10640,
+  "apiId": 126936,
   "name": "Samuel Lino",
   "clubs": [
     {
@@ -13,19 +13,19 @@
       "goals": 27
     },
     {
-      "club": "Valencia",
-      "appearances": 41,
-      "goals": 8
-    },
-    {
       "club": "Atlético Madrid",
       "appearances": 93,
       "goals": 12
     },
     {
+      "club": "Valencia",
+      "appearances": 38,
+      "goals": 6
+    },
+    {
       "club": "Flamengo",
-      "appearances": 67,
-      "goals": 11
+      "appearances": 69,
+      "goals": 12
     }
   ],
   "national": [
@@ -36,7 +36,7 @@
     }
   ],
   "careerTotal": {
-    "appearances": 325,
-    "goals": 62
+    "appearances": 324,
+    "goals": 61
   }
 }

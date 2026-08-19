@@ -1,0 +1,32 @@
+{
+  "apiId": 1361,
+  "name": "F. Kadıoğlu",
+  "clubs": [
+    {
+      "club": "NEC",
+      "appearances": 70,
+      "goals": 12
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 203,
+      "goals": 18
+    },
+    {
+      "club": "Brighton & Hove Albion",
+      "appearances": 50,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey",
+      "appearances": 32,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 323,
+    "goals": 33
+  }
+}

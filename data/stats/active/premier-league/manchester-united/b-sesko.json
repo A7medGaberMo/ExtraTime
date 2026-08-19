@@ -1,0 +1,37 @@
+{
+  "apiId": 115589,
+  "name": "B. Šeško",
+  "clubs": [
+    {
+      "club": "FC Liefering",
+      "appearances": 44,
+      "goals": 22
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 79,
+      "goals": 29
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 87,
+      "goals": 39
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 32,
+      "goals": 12
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovenia",
+      "appearances": 45,
+      "goals": 16
+    }
+  ],
+  "careerTotal": {
+    "appearances": 242,
+    "goals": 102
+  }
+}

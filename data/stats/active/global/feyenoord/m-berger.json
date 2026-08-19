@@ -1,0 +1,67 @@
+{
+  "apiId": 612947,
+  "name": "M. Berger",
+  "clubs": [
+    {
+      "club": "Slavia Prague",
+      "appearances": 98,
+      "goals": 26
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 27,
+      "goals": 4
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 195,
+      "goals": 35
+    },
+    {
+      "club": "Portsmouth",
+      "appearances": 60,
+      "goals": 8
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 32,
+      "goals": 2
+    },
+    {
+      "club": "Stoke City",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Sparta Prague",
+      "appearances": 32,
+      "goals": 8
+    },
+    {
+      "club": "Feyenoord",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Czech Republic U21",
+      "appearances": 1,
+      "goals": 3
+    },
+    {
+      "team": "RCS",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Czech Republic",
+      "appearances": 42,
+      "goals": 18
+    }
+  ],
+  "careerTotal": {
+    "appearances": 463,
+    "goals": 84
+  }
+}

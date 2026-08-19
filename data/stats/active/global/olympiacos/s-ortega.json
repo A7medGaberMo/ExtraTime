@@ -1,0 +1,51 @@
+{
+  "apiId": 25004,
+  "name": "S. Ortega",
+  "clubs": [
+    {
+      "club": "Arminia Bielefeld II",
+      "appearances": 172,
+      "goals": 0
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "1860 Munich",
+      "appearances": 56,
+      "goals": 0
+    },
+    {
+      "club": "1860 Munich II",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 166,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 56,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Olympiacos",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 491,
+    "goals": 0
+  }
+}

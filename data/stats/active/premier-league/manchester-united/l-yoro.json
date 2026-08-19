@@ -1,10 +1,106 @@
 {
   "apiId": 342970,
   "name": "L. Yoro",
-  "clubs": [],
+  "clubs": [
+    {
+      "club": "PO",
+      "appearances": 15,
+      "goals": 6
+    },
+    {
+      "club": "UEFA Europa League",
+      "appearances": 2,
+      "goals": 3
+    },
+    {
+      "club": "Ludogorets Razgrad",
+      "appearances": 1,
+      "goals": 3
+    },
+    {
+      "club": "Borussia Mönchengladbach",
+      "appearances": 1,
+      "goals": 2
+    },
+    {
+      "club": "Wolfsberger AC",
+      "appearances": 1,
+      "goals": 3
+    },
+    {
+      "club": "R32",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "R16",
+      "appearances": 14,
+      "goals": 4
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "club": "3QR",
+      "appearances": 8,
+      "goals": 9
+    },
+    {
+      "club": "Group A",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "club": "Heart of Midlothian",
+      "appearances": 3,
+      "goals": 4
+    },
+    {
+      "club": "RFS",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "League Phase",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Celje",
+      "appearances": 0,
+      "goals": 1
+    },
+    {
+      "club": "Copenhagen",
+      "appearances": 0,
+      "goals": 2
+    },
+    {
+      "club": "Petrocub Hîncești",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Cercle Brugge",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
   "national": [],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 96,
+    "goals": 40
   }
 }

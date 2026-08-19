@@ -1,0 +1,36 @@
+{
+  "apiId": 178217,
+  "name": "S. Drljača",
+  "clubs": [
+    {
+      "club": "TSG Hoffenheim II",
+      "appearances": 35,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Borussia Dortmund",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Dynamo Dresden",
+      "appearances": 54,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 118,
+    "goals": 0
+  }
+}

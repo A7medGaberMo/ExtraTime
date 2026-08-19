@@ -1,0 +1,36 @@
+{
+  "apiId": 24899,
+  "name": "P. Mainka",
+  "clubs": [
+    {
+      "club": "Arminia Bielefeld II",
+      "appearances": 20,
+      "goals": 4
+    },
+    {
+      "club": "Arminia Bielefeld",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen II",
+      "appearances": 34,
+      "goals": 4
+    },
+    {
+      "club": "Borussia Dortmund II",
+      "appearances": 86,
+      "goals": 9
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 292,
+      "goals": 21
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 433,
+    "goals": 38
+  }
+}

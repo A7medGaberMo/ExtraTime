@@ -1,0 +1,26 @@
+{
+  "apiId": 10161,
+  "name": "Matheuzinho",
+  "clubs": [
+    {
+      "club": "Londrina",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 143,
+      "goals": 2
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 148,
+      "goals": 6
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 311,
+    "goals": 8
+  }
+}

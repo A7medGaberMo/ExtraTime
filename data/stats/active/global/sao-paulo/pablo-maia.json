@@ -1,0 +1,22 @@
+{
+  "apiId": 313732,
+  "name": "Pablo Maia",
+  "clubs": [
+    {
+      "club": "São Paulo",
+      "appearances": 148,
+      "goals": 8
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 148,
+    "goals": 8
+  }
+}

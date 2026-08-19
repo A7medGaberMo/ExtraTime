@@ -1,0 +1,42 @@
+{
+  "apiId": 381176,
+  "name": "Marwan Al Sahafi",
+  "clubs": [
+    {
+      "club": "Al-Ittihad",
+      "appearances": 41,
+      "goals": 2
+    },
+    {
+      "club": "Beerschot",
+      "appearances": 25,
+      "goals": 6
+    },
+    {
+      "club": "Antwerp",
+      "appearances": 24,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 90,
+    "goals": 9
+  }
+}

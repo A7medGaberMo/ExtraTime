@@ -1,0 +1,56 @@
+{
+  "apiId": 43092,
+  "name": "D. Drăguş",
+  "clubs": [
+    {
+      "club": "Gloria Buzău",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Dinamo București",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Argeș Pitești",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Suwon Samsung Bluewings",
+      "appearances": 21,
+      "goals": 6
+    },
+    {
+      "club": "Argeș Pitești",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Torpedo Moscow",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Torpedo-d Moscow",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "club": "Lokomotiv Nizhny Novgorod",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 93,
+    "goals": 15
+  }
+}

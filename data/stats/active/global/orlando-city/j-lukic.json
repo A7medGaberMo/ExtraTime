@@ -1,0 +1,57 @@
+{
+  "apiId": 263510,
+  "name": "J. Lukić",
+  "clubs": [
+    {
+      "club": "Sloga Doboj",
+      "appearances": 43,
+      "goals": 13
+    },
+    {
+      "club": "Krupa",
+      "appearances": 41,
+      "goals": 12
+    },
+    {
+      "club": "Zvijezda Gradačac",
+      "appearances": 14,
+      "goals": 5
+    },
+    {
+      "club": "Borac Banja Luka",
+      "appearances": 135,
+      "goals": 38
+    },
+    {
+      "club": "Universitatea Craiova",
+      "appearances": 27,
+      "goals": 2
+    },
+    {
+      "club": "Universitatea Cluj",
+      "appearances": 42,
+      "goals": 22
+    },
+    {
+      "club": "Orlando City SC",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Bosnia and Herzegovina U21",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Bosnia and Herzegovina",
+      "appearances": 5,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 314,
+    "goals": 93
+  }
+}

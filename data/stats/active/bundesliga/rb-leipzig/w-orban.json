@@ -1,0 +1,32 @@
+{
+  "apiId": 1148,
+  "name": "W. Orbán",
+  "clubs": [
+    {
+      "club": "1. FC Kaiserslautern II",
+      "appearances": 35,
+      "goals": 7
+    },
+    {
+      "club": "1. FC Kaiserslautern",
+      "appearances": 77,
+      "goals": 8
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 385,
+      "goals": 36
+    }
+  ],
+  "national": [
+    {
+      "team": "Hungary",
+      "appearances": 68,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 497,
+    "goals": 51
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "apiId": 36111,
+  "name": "C. Huerta",
+  "clubs": [
+    {
+      "club": "Guadalajara",
+      "appearances": 39,
+      "goals": 1
+    },
+    {
+      "club": "Zacatepec",
+      "appearances": 13,
+      "goals": 4
+    },
+    {
+      "club": "Morelia",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Mazatlán",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Tapatío",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Pumas",
+      "appearances": 87,
+      "goals": 20
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 38,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico U17",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "team": "Mexico",
+      "appearances": 27,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 201,
+    "goals": 33
+  }
+}

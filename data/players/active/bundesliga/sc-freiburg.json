@@ -178,7 +178,7 @@
       "position": "LM/LW/CAM",
       "club": "SC Freiburg",
       "nation": "Italy",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26248.png",
       "kitNumber": 32
@@ -259,17 +259,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584890.png",
       "kitNumber": 69
-    },
-    {
-      "apiId": 202526,
-      "name": "E. Dinkçi",
-      "position": "RW/RM/ST",
-      "club": "SC Freiburg",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/202526.png",
-      "kitNumber": 45
     },
     {
       "apiId": 202696,

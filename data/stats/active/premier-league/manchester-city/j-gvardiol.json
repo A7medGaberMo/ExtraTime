@@ -1,10 +1,47 @@
 {
   "apiId": 129033,
   "name": "J. Gvardiol",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 130,
+      "goals": 32
+    },
+    {
+      "club": "Zrinjski Mostar",
+      "appearances": 25,
+      "goals": 8
+    },
+    {
+      "club": "Inter Zaprešić",
+      "appearances": 18,
+      "goals": 4
+    },
+    {
+      "club": "Tottenham Hotspur",
+      "appearances": 160,
+      "goals": 17
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 597,
+      "goals": 43
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 37,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 202,
+      "goals": 29
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 967,
+    "goals": 106
   }
 }

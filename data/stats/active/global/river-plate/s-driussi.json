@@ -1,0 +1,42 @@
+{
+  "apiId": 1222,
+  "name": "S. Driussi",
+  "clubs": [
+    {
+      "club": "River Plate",
+      "appearances": 105,
+      "goals": 40
+    },
+    {
+      "club": "Zenit Saint Petersburg",
+      "appearances": 138,
+      "goals": 29
+    },
+    {
+      "club": "Austin FC",
+      "appearances": 115,
+      "goals": 51
+    },
+    {
+      "club": "River Plate",
+      "appearances": 38,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U17",
+      "appearances": 15,
+      "goals": 7
+    },
+    {
+      "team": "Argentina U20",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 396,
+    "goals": 130
+  }
+}

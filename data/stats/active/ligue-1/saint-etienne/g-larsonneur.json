@@ -1,0 +1,31 @@
+{
+  "apiId": 20541,
+  "name": "G. Larsonneur",
+  "clubs": [
+    {
+      "club": "Brest B",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Brest",
+      "appearances": 141,
+      "goals": 0
+    },
+    {
+      "club": "Valenciennes",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Saint-Étienne",
+      "appearances": 91,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 283,
+    "goals": 0
+  }
+}

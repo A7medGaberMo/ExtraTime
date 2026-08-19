@@ -1,0 +1,62 @@
+{
+  "apiId": 759,
+  "name": "K. Benzema",
+  "clubs": [
+    {
+      "club": "Lyon II",
+      "appearances": 148,
+      "goals": 66
+    },
+    {
+      "club": "Lyon",
+      "appearances": 112,
+      "goals": 43
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 648,
+      "goals": 354
+    },
+    {
+      "club": "Al-Ittihad",
+      "appearances": 87,
+      "goals": 57
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 15,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "France U17",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "France U18",
+      "appearances": 17,
+      "goals": 14
+    },
+    {
+      "team": "France U19",
+      "appearances": 9,
+      "goals": 5
+    },
+    {
+      "team": "France U21",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "France",
+      "appearances": 97,
+      "goals": 37
+    }
+  ],
+  "careerTotal": {
+    "appearances": 1010,
+    "goals": 530
+  }
+}

@@ -1,10 +1,47 @@
 {
   "apiId": 19524,
   "name": "C. Adams",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Oadby Town",
+      "appearances": 41,
+      "goals": 8
+    },
+    {
+      "club": "Ilkeston",
+      "appearances": 49,
+      "goals": 10
+    },
+    {
+      "club": "Sheffield United",
+      "appearances": 55,
+      "goals": 15
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 123,
+      "goals": 38
+    },
+    {
+      "club": "Southampton",
+      "appearances": 191,
+      "goals": 49
+    },
+    {
+      "club": "Torino",
+      "appearances": 74,
+      "goals": 18
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 50,
+      "goals": 13
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 533,
+    "goals": 138
   }
 }

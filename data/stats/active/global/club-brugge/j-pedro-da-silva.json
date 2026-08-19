@@ -1,0 +1,76 @@
+{
+  "apiId": 426447,
+  "name": "J. Pedro da Silva",
+  "clubs": [
+    {
+      "club": "Cruzeiro-RS",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Aimoré",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Vitória Guimarães B",
+      "appearances": 24,
+      "goals": 4
+    },
+    {
+      "club": "Atlético Goianiense",
+      "appearances": 44,
+      "goals": 12
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 32,
+      "goals": 11
+    },
+    {
+      "club": "Kashiwa Reysol",
+      "appearances": 8,
+      "goals": 3
+    },
+    {
+      "club": "Juárez",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Goiás",
+      "appearances": 45,
+      "goals": 26
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 23,
+      "goals": 8
+    },
+    {
+      "club": "Toluca",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Ceará",
+      "appearances": 38,
+      "goals": 14
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 68,
+      "goals": 6
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 318,
+    "goals": 89
+  }
+}

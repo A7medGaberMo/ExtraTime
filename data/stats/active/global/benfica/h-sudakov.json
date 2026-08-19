@@ -1,0 +1,42 @@
+{
+  "apiId": 161945,
+  "name": "H. Sudakov",
+  "clubs": [
+    {
+      "club": "Shakhtar Donetsk",
+      "appearances": 148,
+      "goals": 35
+    },
+    {
+      "club": "Benfica",
+      "appearances": 22,
+      "goals": 4
+    },
+    {
+      "club": "Benfica",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U17",
+      "appearances": 6,
+      "goals": 4
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 20,
+      "goals": 6
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 36,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 172,
+    "goals": 39
+  }
+}

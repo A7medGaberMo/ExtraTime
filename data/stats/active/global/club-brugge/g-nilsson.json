@@ -1,0 +1,77 @@
+{
+  "apiId": 15683,
+  "name": "G. Nilsson",
+  "clubs": [
+    {
+      "club": "IFK Stockholm",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Djurgårdens IF",
+      "appearances": 77,
+      "goals": 42
+    },
+    {
+      "club": "AIK",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "IK Sirius",
+      "appearances": 53,
+      "goals": 45
+    },
+    {
+      "club": "Djurgårdens IF",
+      "appearances": 88,
+      "goals": 19
+    },
+    {
+      "club": "IK Sirius",
+      "appearances": 50,
+      "goals": 11
+    },
+    {
+      "club": "IF Brommapojkarna",
+      "appearances": 73,
+      "goals": 11
+    },
+    {
+      "club": "IK Sirius",
+      "appearances": 12,
+      "goals": 2
+    },
+    {
+      "club": "Vallentuna BK",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Sweden U23",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "Sweden B",
+      "appearances": 5,
+      "goals": 3
+    },
+    {
+      "team": "Sweden",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 365,
+    "goals": 131
+  }
+}

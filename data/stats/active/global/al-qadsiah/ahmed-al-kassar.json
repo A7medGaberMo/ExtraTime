@@ -1,0 +1,47 @@
+{
+  "apiId": 44449,
+  "name": "Ahmed Al Kassar",
+  "clubs": [
+    {
+      "club": "Al-Raed",
+      "appearances": 97,
+      "goals": 0
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 68,
+      "goals": 0
+    },
+    {
+      "club": "Al-Faisaly",
+      "appearances": 64,
+      "goals": 0
+    },
+    {
+      "club": "Al-Fayha",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Al-Qadsiah",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 233,
+    "goals": 0
+  }
+}

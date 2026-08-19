@@ -1,0 +1,22 @@
+{
+  "apiId": 51214,
+  "name": "J. Savarino",
+  "clubs": [
+    {
+      "club": "Fluminense",
+      "appearances": 85,
+      "goals": 22
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 22
+  }
+}

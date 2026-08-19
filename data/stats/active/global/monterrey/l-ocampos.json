@@ -1,0 +1,41 @@
+{
+  "apiId": 1911,
+  "name": "L. Ocampos",
+  "clubs": [
+    {
+      "club": "León",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Celaya",
+      "appearances": 46,
+      "goals": 6
+    },
+    {
+      "club": "Correcaminos UAT",
+      "appearances": 31,
+      "goals": 3
+    },
+    {
+      "club": "Cafetaleros de Chiapas",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Lobos BUAP",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "CF Monterrey",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 97,
+    "goals": 10
+  }
+}

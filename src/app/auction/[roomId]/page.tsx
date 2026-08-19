@@ -16,11 +16,11 @@ import { unlockAudio } from "@/lib/sfx";
 import {
   Loader2, X, Layers, Copy, Check,
   Swords, Eye, Binoculars, DollarSign, ChevronDown, ChevronUp,
-  Sparkles, Lock
+  Zap, Lock, Shield
 } from "lucide-react";
 
 const TIER_COLORS: Record<string, string> = {
-  ICON: "#D4AF37", HERO: "#10B981", MASTER: "#A855F7", ELITE_PLUS: "#0EA5E9",
+  ICON: "#D4AF37", HERO: "#10B981", ULTIMATE: "#0EA5E9", MASTER: "#A855F7",
   ELITE: "#E11D48", GOLD: "#EAB308", SILVER: "#CBD5E1", BRONZE: "#C97A3A",
 };
 
@@ -270,7 +270,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       {/* CARD REVEAL OVERLAY */}
       {state.lastCompletedRound && (
         <BidRevealAnimation isOpen={showReveal} onClose={handleRevealClose}
-          lastCompletedRound={state.lastCompletedRound as unknown as Parameters<typeof BidRevealAnimation>[0]["lastCompletedRound"]} />
+          lastCompletedRound={state.lastCompletedRound} />
       )}
 
       {/* WAITING FOR OPPONENT OVERLAY */}
@@ -366,7 +366,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         <div className="relative z-10 flex items-center justify-between gap-2 mb-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-xl text-xs font-black uppercase tracking-wider border shadow-lg backdrop-blur-md"
             style={{ color: tierColor, backgroundColor: `${tierColor}15`, borderColor: `${tierColor}50` }}>
-            <Sparkles className="w-3.5 h-3.5" style={{ color: tierColor }} />
+            <Shield className="w-3.5 h-3.5" style={{ color: tierColor }} />
             {currentPosition} · {mainPlayer?.tier} Target
           </div>
 
@@ -396,7 +396,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         {me?.perkUsed && me?.perkUsedRound === auction.currentRound && (
           <div className="relative z-10 mt-4 p-3 bg-gradient-to-r from-amber-500/15 via-amber-500/10 to-transparent border border-amber-500/40 rounded-2xl flex items-center gap-3 shadow-xl backdrop-blur-md">
             <div className="p-2 rounded-xl bg-amber-400/10 border border-amber-400/30 text-amber-300">
-              <Sparkles className="w-4 h-4 animate-spin" />
+              <Zap className="w-4 h-4" />
             </div>
             <div className="flex-1 min-w-0 text-xs">
               {me.perk === "SPY" && revealedSubPlayer && (

@@ -19,17 +19,6 @@
       "kitNumber": 25
     },
     {
-      "apiId": 162489,
-      "name": "J. Trafford",
-      "position": "GK",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162489.png",
-      "kitNumber": 1
-    },
-    {
       "apiId": 19012,
       "name": "M. Bettinelli",
       "position": "GK",
@@ -46,7 +35,7 @@
       "position": "CB",
       "club": "Manchester City",
       "nation": "Portugal",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/567.png",
       "kitNumber": 3
@@ -57,7 +46,7 @@
       "position": "LB/CB",
       "club": "Manchester City",
       "nation": "Croatia",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129033.png",
       "kitNumber": 24
@@ -107,17 +96,6 @@
       "kitNumber": 45
     },
     {
-      "apiId": 293168,
-      "name": "Max Alleyne",
-      "position": "CB",
-      "club": "Manchester City",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/293168.png",
-      "kitNumber": 68
-    },
-    {
       "apiId": 382358,
       "name": "S. Mfuni",
       "position": "CB",
@@ -129,23 +107,12 @@
       "kitNumber": 40
     },
     {
-      "apiId": 44,
-      "name": "Rodri",
-      "position": "CDM/CM",
-      "club": "Manchester City",
-      "nation": "Spain",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44.png",
-      "kitNumber": 16
-    },
-    {
       "apiId": 631,
       "name": "P. Foden",
       "position": "CAM/RW",
       "club": "Manchester City",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/631.png",
       "kitNumber": 47
@@ -156,7 +123,7 @@
       "position": "CM",
       "club": "Manchester City",
       "nation": "Netherlands",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/36902.png",
       "kitNumber": 4
@@ -200,7 +167,7 @@
       "position": "CAM/RW",
       "club": "Manchester City",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/156477.png",
       "kitNumber": 10
@@ -211,7 +178,7 @@
       "position": "CM",
       "club": "Manchester City",
       "nation": "Scotland",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138908.png",
       "kitNumber": 41
@@ -255,7 +222,7 @@
       "position": "ST",
       "club": "Manchester City",
       "nation": "Norway",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1100.png",
       "kitNumber": 9
@@ -277,7 +244,7 @@
       "position": "RW/LW",
       "club": "Manchester City",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/266657.png",
       "kitNumber": 26
@@ -288,7 +255,7 @@
       "position": "ST/LW",
       "club": "Manchester City",
       "nation": "Egypt",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/81573.png",
       "kitNumber": 42
@@ -325,6 +292,39 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380681.png",
       "kitNumber": 29
+    },
+    {
+      "apiId": 47296,
+      "name": "G. Rulli",
+      "position": "GK",
+      "club": "Manchester City",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47296.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 462278,
+      "name": "M. Detourbet",
+      "position": "ST",
+      "club": "Manchester City",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/462278.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 19187,
+      "name": "J. Grealish",
+      "position": "LW/CAM",
+      "club": "Manchester City",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19187.png",
+      "kitNumber": 18
     }
   ]
 }

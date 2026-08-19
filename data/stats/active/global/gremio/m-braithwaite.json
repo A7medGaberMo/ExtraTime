@@ -1,0 +1,77 @@
+{
+  "apiId": 2737,
+  "name": "M. Braithwaite",
+  "clubs": [
+    {
+      "club": "Esbjerg fB",
+      "appearances": 97,
+      "goals": 19
+    },
+    {
+      "club": "Toulouse",
+      "appearances": 149,
+      "goals": 40
+    },
+    {
+      "club": "Middlesbrough",
+      "appearances": 40,
+      "goals": 9
+    },
+    {
+      "club": "Bordeaux",
+      "appearances": 14,
+      "goals": 4
+    },
+    {
+      "club": "Leganés",
+      "appearances": 19,
+      "goals": 4
+    },
+    {
+      "club": "Leganés",
+      "appearances": 24,
+      "goals": 6
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 58,
+      "goals": 10
+    },
+    {
+      "club": "Espanyol",
+      "appearances": 78,
+      "goals": 32
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 76,
+      "goals": 27
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark U17",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Denmark U19",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "team": "Denmark U21",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Denmark",
+      "appearances": 69,
+      "goals": 10
+    }
+  ],
+  "careerTotal": {
+    "appearances": 555,
+    "goals": 151
+  }
+}

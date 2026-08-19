@@ -1,0 +1,21 @@
+{
+  "apiId": 543468,
+  "name": "Eder Aller",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 2,
+    "goals": 0
+  }
+}

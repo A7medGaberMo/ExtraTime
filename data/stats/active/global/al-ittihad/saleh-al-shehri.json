@@ -1,0 +1,62 @@
+{
+  "apiId": 44551,
+  "name": "Saleh Al Shehri",
+  "clubs": [
+    {
+      "club": "Al-Ahli",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "club": "Mafra",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Beira-Mar",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Al-Raed",
+      "appearances": 83,
+      "goals": 29
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 139,
+      "goals": 24
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 78,
+      "goals": 15
+    },
+    {
+      "club": "Al-Ittihad",
+      "appearances": 35,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 11,
+      "goals": 8
+    },
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 5,
+      "goals": 3
+    },
+    {
+      "team": "Saudi Arabia",
+      "appearances": 59,
+      "goals": 19
+    }
+  ],
+  "careerTotal": {
+    "appearances": 357,
+    "goals": 80
+  }
+}

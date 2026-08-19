@@ -16,8 +16,8 @@
 export type SimTier =
   | 'ICON'
   | 'HERO'
+  | 'ULTIMATE'
   | 'MASTER'
-  | 'ELITE_PLUS'
   | 'ELITE'
   | 'GOLD'
   | 'SILVER'
@@ -85,7 +85,7 @@ export interface SimSynergyBreakdown {
 export interface SimMatchResult {
   matchId: string;
   roomId: string;
-  gameType: 'hidden_bid' | 'squad_draft' | 'pack_opening_duel' | 'penalty_shootout';
+  gameType: 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout';
   seed: string;
   score: { host: number; guest: number };
   winnerId: string | null; // null on draw
@@ -102,8 +102,8 @@ export interface SimMatchResult {
 export const TIER_WEIGHTS: Record<SimTier, number> = {
   ICON: 8.0,
   HERO: 7.0,
-  MASTER: 6.0,
-  ELITE_PLUS: 5.0,
+  ULTIMATE: 6.0,
+  MASTER: 5.0,
   ELITE: 4.0,
   GOLD: 3.0,
   SILVER: 2.0,

@@ -1,0 +1,42 @@
+{
+  "apiId": 47439,
+  "name": "S. Lobotka",
+  "clubs": [
+    {
+      "club": "Trenčín",
+      "appearances": 86,
+      "goals": 3
+    },
+    {
+      "club": "Jong Ajax",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Nordsjælland",
+      "appearances": 62,
+      "goals": 0
+    },
+    {
+      "club": "Celta Vigo",
+      "appearances": 90,
+      "goals": 0
+    },
+    {
+      "club": "Napoli",
+      "appearances": 239,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia",
+      "appearances": 73,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 507,
+    "goals": 9
+  }
+}

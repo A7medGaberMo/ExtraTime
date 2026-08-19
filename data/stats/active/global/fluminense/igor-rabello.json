@@ -1,0 +1,37 @@
+{
+  "apiId": 9872,
+  "name": "Igor Rabello",
+  "clubs": [
+    {
+      "club": "Botafogo",
+      "appearances": 109,
+      "goals": 6
+    },
+    {
+      "club": "Náutico",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 202,
+      "goals": 7
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U20",
+      "appearances": 3,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 330,
+    "goals": 15
+  }
+}

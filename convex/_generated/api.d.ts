@@ -23,6 +23,7 @@ import type * as matches_mutations from "../matches/mutations.js";
 import type * as matches_queries from "../matches/queries.js";
 import type * as nations_mutations from "../nations/mutations.js";
 import type * as nations_queries from "../nations/queries.js";
+import type * as packs_queries from "../packs/queries.js";
 import type * as players_mutations from "../players/mutations.js";
 import type * as players_queries from "../players/queries.js";
 import type * as rooms_mutations from "../rooms/mutations.js";
@@ -30,10 +31,6 @@ import type * as rooms_queries from "../rooms/queries.js";
 import type * as seed_seedCareerStats from "../seed/seedCareerStats.js";
 import type * as seed_seedData from "../seed/seedData.js";
 import type * as seed_seedStatsAndTransfers from "../seed/seedStatsAndTransfers.js";
-import type * as squadDraft_draftEngine from "../squadDraft/draftEngine.js";
-import type * as squadDraft_formationGraph from "../squadDraft/formationGraph.js";
-import type * as squadDraft_mutations from "../squadDraft/mutations.js";
-import type * as squadDraft_queries from "../squadDraft/queries.js";
 import type * as transfers_mutations from "../transfers/mutations.js";
 import type * as transfers_queries from "../transfers/queries.js";
 
@@ -59,6 +56,7 @@ declare const fullApi: ApiFromModules<{
   "matches/queries": typeof matches_queries;
   "nations/mutations": typeof nations_mutations;
   "nations/queries": typeof nations_queries;
+  "packs/queries": typeof packs_queries;
   "players/mutations": typeof players_mutations;
   "players/queries": typeof players_queries;
   "rooms/mutations": typeof rooms_mutations;
@@ -66,10 +64,6 @@ declare const fullApi: ApiFromModules<{
   "seed/seedCareerStats": typeof seed_seedCareerStats;
   "seed/seedData": typeof seed_seedData;
   "seed/seedStatsAndTransfers": typeof seed_seedStatsAndTransfers;
-  "squadDraft/draftEngine": typeof squadDraft_draftEngine;
-  "squadDraft/formationGraph": typeof squadDraft_formationGraph;
-  "squadDraft/mutations": typeof squadDraft_mutations;
-  "squadDraft/queries": typeof squadDraft_queries;
   "transfers/mutations": typeof transfers_mutations;
   "transfers/queries": typeof transfers_queries;
 }>;

@@ -1,0 +1,81 @@
+{
+  "apiId": 414544,
+  "name": "T. Pérez",
+  "clubs": [
+    {
+      "club": "Puebla",
+      "appearances": 46,
+      "goals": 2
+    },
+    {
+      "club": "Lobos BUAP",
+      "appearances": 13,
+      "goals": 3
+    },
+    {
+      "club": "Chiapas",
+      "appearances": 31,
+      "goals": 5
+    },
+    {
+      "club": "Tampico Madero",
+      "appearances": 43,
+      "goals": 13
+    },
+    {
+      "club": "Juárez",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Zacatepec",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "club": "Atlético Morelia",
+      "appearances": 33,
+      "goals": 11
+    },
+    {
+      "club": "Tampico Madero",
+      "appearances": 32,
+      "goals": 10
+    },
+    {
+      "club": "Santos Laguna",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Atlético La Paz",
+      "appearances": 12,
+      "goals": 3
+    },
+    {
+      "club": "Panachaiki",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Jaiba Brava",
+      "appearances": 42,
+      "goals": 17
+    },
+    {
+      "club": "Querétaro",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 288,
+    "goals": 66
+  }
+}

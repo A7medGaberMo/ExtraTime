@@ -1,0 +1,41 @@
+{
+  "apiId": 25597,
+  "name": "F. Bredlow",
+  "clubs": [
+    {
+      "club": "RB Leipzig II",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Liefering",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Hallescher FC",
+      "appearances": 72,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Nürnberg II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 46,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 187,
+    "goals": 0
+  }
+}

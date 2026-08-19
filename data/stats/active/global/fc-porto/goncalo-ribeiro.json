@@ -1,0 +1,47 @@
+{
+  "apiId": 354585,
+  "name": "Gonçalo Ribeiro",
+  "clubs": [
+    {
+      "club": "Porto B",
+      "appearances": 45,
+      "goals": 0
+    },
+    {
+      "club": "FC Porto",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U16",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 57,
+    "goals": 1
+  }
+}

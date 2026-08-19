@@ -1,0 +1,32 @@
+{
+  "apiId": 519922,
+  "name": "Eirik Granaas",
+  "clubs": [
+    {
+      "club": "Fredrikstad",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "FC Porto",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Norway U15",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Norway U16",
+      "appearances": 3,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 10,
+    "goals": 1
+  }
+}

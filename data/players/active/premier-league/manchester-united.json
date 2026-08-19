@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 50132,
-      "name": "A. Bayındır",
-      "position": "GK",
-      "club": "Manchester United",
-      "nation": "Turkey",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/50132.png",
-      "kitNumber": 1
-    },
-    {
       "apiId": 18885,
       "name": "K. Darlow",
       "position": "GK",
@@ -46,7 +35,7 @@
       "position": "CB/LB",
       "club": "Manchester United",
       "nation": "Argentina",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2467.png",
       "kitNumber": 6
@@ -57,7 +46,7 @@
       "position": "CB",
       "club": "Manchester United",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342970.png",
       "kitNumber": 15
@@ -68,7 +57,7 @@
       "position": "RB/LB",
       "club": "Manchester United",
       "nation": "Portugal",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/886.png",
       "kitNumber": 2
@@ -118,17 +107,6 @@
       "kitNumber": 13
     },
     {
-      "apiId": 328101,
-      "name": "T. Fredricson",
-      "position": "CB",
-      "club": "Manchester United",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/328101.png",
-      "kitNumber": 4
-    },
-    {
       "apiId": 402329,
       "name": "A. Heaven",
       "position": "CB",
@@ -167,7 +145,7 @@
       "position": "CM/CDM",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284322.png",
       "kitNumber": 37
@@ -255,7 +233,7 @@
       "position": "LW/ST",
       "club": "Manchester United",
       "nation": "Brazil",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1165.png",
       "kitNumber": 10
@@ -266,7 +244,7 @@
       "position": "RW/ST",
       "club": "Manchester United",
       "nation": "Cameroon",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20589.png",
       "kitNumber": 19
@@ -277,7 +255,7 @@
       "position": "ST",
       "club": "Manchester United",
       "nation": "Slovenia",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/115589.png",
       "kitNumber": 30
@@ -288,7 +266,7 @@
       "position": "RW/CAM",
       "club": "Manchester United",
       "nation": "Ivory Coast",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/157997.png",
       "kitNumber": 16

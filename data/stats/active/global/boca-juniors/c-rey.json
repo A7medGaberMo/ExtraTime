@@ -1,0 +1,47 @@
+{
+  "apiId": 414378,
+  "name": "C. Rey",
+  "clubs": [
+    {
+      "club": "Mazatlán",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Fresnillo",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "club": "Tapatío",
+      "appearances": 25,
+      "goals": 4
+    },
+    {
+      "club": "Guadalajara",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Puebla",
+      "appearances": 26,
+      "goals": 2
+    },
+    {
+      "club": "Boca Juniors",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Mexico",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 93,
+    "goals": 12
+  }
+}

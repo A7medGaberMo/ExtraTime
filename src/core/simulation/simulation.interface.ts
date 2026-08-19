@@ -2,7 +2,6 @@ import type { PlayerCardData } from '@/types/player';
 
 export type GameType =
   | 'hidden_bid'
-  | 'squad_draft'
   | 'pack_opening_duel'
   | 'penalty_shootout';
 

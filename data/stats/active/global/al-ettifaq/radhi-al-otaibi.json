@@ -1,0 +1,42 @@
+{
+  "apiId": 44476,
+  "name": "Radhi Al Otaibi",
+  "clubs": [
+    {
+      "club": "Al-Wehda",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Ohod",
+      "appearances": 30,
+      "goals": 2
+    },
+    {
+      "club": "Al-Hazem",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Al-Qadsiah",
+      "appearances": 32,
+      "goals": 2
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 26,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 125,
+    "goals": 5
+  }
+}

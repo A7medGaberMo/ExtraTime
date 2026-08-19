@@ -1,0 +1,22 @@
+{
+  "apiId": 650475,
+  "name": "N. Kalonji Kafumpata",
+  "clubs": [
+    {
+      "club": "RSC Anderlecht",
+      "appearances": 32,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 32,
+    "goals": 1
+  }
+}

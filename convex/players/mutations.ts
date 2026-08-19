@@ -68,3 +68,77 @@ export const bulkUpdatePlayerImages = mutation({
     return { success: true, updated };
   },
 });
+
+/**
+ * Deduplicate player records in Convex.
+ * Finds duplicated player rows, preserves the best record (with valid image / apiId / details),
+ * and removes redundant duplicates.
+ */
+export const deduplicatePlayers = mutation({
+  args: {},
+  handler: async (ctx) => {
+    const allPlayers = await ctx.db.query("players").collect();
+    const groups = new Map<string, Doc<"players">[]>();
+
+    for (const p of allPlayers) {
+      // Key by apiId if available, otherwise by normalized name + isLegend flag
+      const key = p.apiId && p.apiId.trim() !== ""
+        ? `api:${p.apiId.trim()}`
+        : `name:${p.name.toLowerCase().trim()}_${p.isLegend ? "legend" : "active"}`;
+
+      if (!groups.has(key)) {
+        groups.set(key, []);
+      }
+      groups.get(key)!.push(p);
+    }
+
+    let deletedCount = 0;
+    let duplicatesFound = 0;
+
+    for (const [key, group] of groups.entries()) {
+      if (group.length <= 1) continue;
+
+      duplicatesFound += group.length - 1;
+
+      // Score documents to find the most complete one to keep
+      const scored = group.map((doc) => {
+        let score = 0;
+        if (doc.imageUrl && !doc.imageUrl.includes("Photo-Missing") && doc.imageUrl.trim() !== "") score += 10;
+        if (doc.apiId && doc.apiId.trim() !== "") score += 5;
+        if (doc.kitNumber !== undefined && doc.kitNumber > 0) score += 2;
+        if (doc.seasonYear !== undefined) score += 1;
+        return { doc, score };
+      });
+
+      scored.sort((a, b) => b.score - a.score || b.doc._creationTime - a.doc._creationTime);
+      const keeper = scored[0].doc;
+      const toDelete = scored.slice(1);
+
+      // Merge any missing fields from duplicates into the keeper
+      const patchPayload: Partial<Doc<"players">> = {};
+      for (const item of toDelete) {
+        if (!keeper.imageUrl && item.doc.imageUrl) patchPayload.imageUrl = item.doc.imageUrl;
+        if (!keeper.apiId && item.doc.apiId) patchPayload.apiId = item.doc.apiId;
+        if (!keeper.kitNumber && item.doc.kitNumber) patchPayload.kitNumber = item.doc.kitNumber;
+      }
+      if (Object.keys(patchPayload).length > 0) {
+        await ctx.db.patch(keeper._id, patchPayload);
+      }
+
+      // Delete the redundant duplicate rows
+      for (const item of toDelete) {
+        await ctx.db.delete(item.doc._id);
+        deletedCount++;
+      }
+    }
+
+    return {
+      success: true,
+      totalPlayersChecked: allPlayers.length,
+      duplicatesFound,
+      deletedCount,
+      uniquePlayersRemaining: allPlayers.length - deletedCount,
+    };
+  },
+});
+

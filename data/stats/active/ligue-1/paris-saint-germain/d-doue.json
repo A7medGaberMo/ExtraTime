@@ -1,0 +1,32 @@
+{
+  "apiId": 343027,
+  "name": "D. Doué",
+  "clubs": [
+    {
+      "club": "Rennes II",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Rennes",
+      "appearances": 76,
+      "goals": 8
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 102,
+      "goals": 29
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 15,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 189,
+    "goals": 38
+  }
+}

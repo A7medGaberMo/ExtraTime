@@ -1,0 +1,48 @@
+{
+  "apiId": 2725,
+  "name": "B. Pavard",
+  "clubs": [
+    {
+      "club": "Lille II",
+      "appearances": 20,
+      "goals": 1
+    },
+    {
+      "club": "Lille",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 88,
+      "goals": 2
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 163,
+      "goals": 12
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 70,
+      "goals": 1
+    },
+    {
+      "club": "Marseille",
+      "appearances": 36,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 55,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 402,
+    "goals": 17
+  },
+  "currentTeam": "Marseille"
+}

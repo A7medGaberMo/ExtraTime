@@ -1,0 +1,47 @@
+{
+  "apiId": 126899,
+  "name": "Z. Sanusi",
+  "clubs": [
+    {
+      "club": "Gil Vicente",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Mirandela",
+      "appearances": 74,
+      "goals": 3
+    },
+    {
+      "club": "Mirandela",
+      "appearances": 32,
+      "goals": 3
+    },
+    {
+      "club": "Santa Clara",
+      "appearances": 24,
+      "goals": 1
+    },
+    {
+      "club": "Porto",
+      "appearances": 154,
+      "goals": 8
+    },
+    {
+      "club": "Porto B",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Nigeria",
+      "appearances": 32,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 286,
+    "goals": 15
+  }
+}

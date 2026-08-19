@@ -369,6 +369,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340076.png",
       "kitNumber": 47
+    },
+    {
+      "apiId": 25061,
+      "name": "A. Bella-Kotchap",
+      "position": "CB",
+      "club": "Hellas Verona",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25061.png",
+      "kitNumber": 37
     }
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "apiId": 340626,
+  "name": "Fermín",
+  "clubs": [
+    {
+      "club": "Linares",
+      "appearances": 40,
+      "goals": 12
+    },
+    {
+      "club": "Barcelona B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 136,
+      "goals": 32
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain",
+      "appearances": 7,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 177,
+    "goals": 44
+  }
+}

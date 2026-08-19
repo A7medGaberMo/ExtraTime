@@ -129,17 +129,6 @@
       "kitNumber": 87
     },
     {
-      "apiId": 349001,
-      "name": "Wesley",
-      "position": "LB/RB",
-      "club": "AS Roma",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/349001.png",
-      "kitNumber": 43
-    },
-    {
       "apiId": 384543,
       "name": "J. Ziółkowski",
       "position": "CB",
@@ -266,7 +255,7 @@
       "position": "CAM/ST/RW",
       "club": "AS Roma",
       "nation": "Argentina",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/875.png",
       "kitNumber": 21
@@ -277,7 +266,7 @@
       "position": "ST",
       "club": "AS Roma",
       "nation": "Ukraine",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15811.png",
       "kitNumber": 9
@@ -299,7 +288,7 @@
       "position": "ST/RW",
       "club": "AS Roma",
       "nation": "Netherlands",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/249.png",
       "kitNumber": 14
@@ -325,6 +314,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/435482.png",
       "kitNumber": 78
+    },
+    {
+      "apiId": 6503,
+      "name": "N. Molina",
+      "position": "RB/RM",
+      "club": "AS Roma",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6503.png",
+      "kitNumber": 16
     }
   ]
 }

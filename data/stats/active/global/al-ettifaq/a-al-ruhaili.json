@@ -1,0 +1,47 @@
+{
+  "apiId": 578974,
+  "name": "A. Al Ruhaili",
+  "clubs": [
+    {
+      "club": "Al-Ahli",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Al-Raed",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Al-Raed",
+      "appearances": 31,
+      "goals": 0
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Nassr",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Diriyah",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 3,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 49,
+    "goals": 0
+  }
+}

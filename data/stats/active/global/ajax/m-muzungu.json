@@ -1,0 +1,67 @@
+{
+  "apiId": 486052,
+  "name": "M. Muzungu",
+  "clubs": [
+    {
+      "club": "Athletic Ujana",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Vita Club",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "ENPPI",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Almería B",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Boulogne",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Boulogne B",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "RS Berkane",
+      "appearances": 23,
+      "goals": 10
+    },
+    {
+      "club": "Kelantan Darul Naim",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Ajax",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "DR Congo U20",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "DR Congo",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 72,
+    "goals": 12
+  }
+}

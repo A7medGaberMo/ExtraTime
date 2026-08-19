@@ -1,0 +1,57 @@
+{
+  "apiId": 274355,
+  "name": "B. Bouchouari",
+  "clubs": [
+    {
+      "club": "Dudelange",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "RSCA Futures",
+      "appearances": 24,
+      "goals": 2
+    },
+    {
+      "club": "Emmen",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Rodez",
+      "appearances": 36,
+      "goals": 4
+    },
+    {
+      "club": "Wydad AC",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium U18",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Belgium U19",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 121,
+    "goals": 8
+  }
+}

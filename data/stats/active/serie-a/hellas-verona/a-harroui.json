@@ -1,0 +1,36 @@
+{
+  "apiId": 37437,
+  "name": "A. Harroui",
+  "clubs": [
+    {
+      "club": "Jong Sparta Rotterdam",
+      "appearances": 45,
+      "goals": 10
+    },
+    {
+      "club": "Sparta Rotterdam",
+      "appearances": 103,
+      "goals": 18
+    },
+    {
+      "club": "Sassuolo",
+      "appearances": 48,
+      "goals": 3
+    },
+    {
+      "club": "Frosinone",
+      "appearances": 21,
+      "goals": 4
+    },
+    {
+      "club": "Hellas Verona",
+      "appearances": 25,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 242,
+    "goals": 37
+  }
+}

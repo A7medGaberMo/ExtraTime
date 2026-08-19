@@ -1,0 +1,31 @@
+{
+  "apiId": 405160,
+  "name": "Wallace",
+  "clubs": [
+    {
+      "club": "CRB B",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "CRB",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 60,
+    "goals": 2
+  }
+}

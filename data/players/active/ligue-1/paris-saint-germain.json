@@ -189,7 +189,7 @@
       "position": "CM/CDM",
       "club": "Paris Saint Germain",
       "nation": "Portugal",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/335051.png",
       "kitNumber": 87
@@ -200,7 +200,7 @@
       "position": "CM/CDM/RB",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336657.png",
       "kitNumber": 33
@@ -239,17 +239,6 @@
       "kitNumber": 27
     },
     {
-      "apiId": 153,
-      "name": "O. Dembélé",
-      "position": "RW/LW/CAM",
-      "club": "Paris Saint Germain",
-      "nation": "France",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/153.png",
-      "kitNumber": 10
-    },
-    {
       "apiId": 483,
       "name": "K. Kvaratskhelia",
       "position": "LW/RW/ST",
@@ -266,7 +255,7 @@
       "position": "LW/RW/ST",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161904.png",
       "kitNumber": 29
@@ -292,6 +281,39 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/446249.png",
       "kitNumber": 49
+    },
+    {
+      "apiId": 931,
+      "name": "Ferran Torres",
+      "position": "ST/LW",
+      "club": "Paris Saint Germain",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/931.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 2724,
+      "name": "L. Digne",
+      "position": "LB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2724.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 274300,
+      "name": "M. Akliouche",
+      "position": "CAM/RW/RM",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/274300.png",
+      "kitNumber": 11
     }
   ]
 }

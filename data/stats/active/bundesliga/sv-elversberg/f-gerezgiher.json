@@ -1,0 +1,46 @@
+{
+  "apiId": 272219,
+  "name": "F. Gerezgiher",
+  "clubs": [
+    {
+      "club": "SV Sandhausen II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Wormatia Worms",
+      "appearances": 20,
+      "goals": 6
+    },
+    {
+      "club": "FSV 08 Bissingen",
+      "appearances": 47,
+      "goals": 11
+    },
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "SGV Freiberg",
+      "appearances": 45,
+      "goals": 13
+    },
+    {
+      "club": "SV Elversberg",
+      "appearances": 21,
+      "goals": 1
+    },
+    {
+      "club": "FC Emmen",
+      "appearances": 26,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 166,
+    "goals": 33
+  }
+}

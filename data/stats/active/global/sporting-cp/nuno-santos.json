@@ -1,0 +1,67 @@
+{
+  "apiId": 41194,
+  "name": "Nuno Santos",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 42,
+      "goals": 10
+    },
+    {
+      "club": "Benfica",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Vitória Setúbal",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Rio Ave",
+      "appearances": 78,
+      "goals": 10
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 204,
+      "goals": 34
+    },
+    {
+      "club": "Sporting CP B",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U16",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 15,
+      "goals": 3
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 352,
+    "goals": 54
+  }
+}

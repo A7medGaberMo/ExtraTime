@@ -1,0 +1,81 @@
+{
+  "apiId": 30398,
+  "name": "Vitor Hugo",
+  "clubs": [
+    {
+      "club": "Santo André",
+      "appearances": 20,
+      "goals": 3
+    },
+    {
+      "club": "Sport",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Ituano",
+      "appearances": 31,
+      "goals": 4
+    },
+    {
+      "club": "Ceará",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "América Mineiro",
+      "appearances": 73,
+      "goals": 6
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 72,
+      "goals": 6
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 61,
+      "goals": 5
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 54,
+      "goals": 1
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 99,
+      "goals": 9
+    },
+    {
+      "club": "Bahia",
+      "appearances": 31,
+      "goals": 1
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 519,
+    "goals": 38
+  }
+}

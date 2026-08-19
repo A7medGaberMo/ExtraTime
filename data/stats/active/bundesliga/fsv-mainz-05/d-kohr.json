@@ -1,0 +1,36 @@
+{
+  "apiId": 979,
+  "name": "D. Kohr",
+  "clubs": [
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Bayer Leverkusen II",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "FC Augsburg",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 138,
+      "goals": 9
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 148,
+    "goals": 9
+  }
+}

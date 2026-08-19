@@ -1,0 +1,87 @@
+{
+  "apiId": 588652,
+  "name": "Bruno Andre",
+  "clubs": [
+    {
+      "club": "União Leiria",
+      "appearances": 23,
+      "goals": 4
+    },
+    {
+      "club": "Braga B",
+      "appearances": 19,
+      "goals": 2
+    },
+    {
+      "club": "Braga",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Lazio",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Wolverhampton Wanderers",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Famalicão",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "club": "Grasshopper",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "club": "Santa Clara",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Radomiak Radom",
+      "appearances": 50,
+      "goals": 0
+    },
+    {
+      "club": "CSKA Sofia",
+      "appearances": 41,
+      "goals": 4
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U18",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 7,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 185,
+    "goals": 14
+  }
+}

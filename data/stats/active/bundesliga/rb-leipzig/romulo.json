@@ -1,0 +1,26 @@
+{
+  "apiId": 326102,
+  "name": "Rômulo",
+  "clubs": [
+    {
+      "club": "Athletico Paranaense",
+      "appearances": 81,
+      "goals": 10
+    },
+    {
+      "club": "Göztepe",
+      "appearances": 46,
+      "goals": 22
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 32,
+      "goals": 9
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 159,
+    "goals": 41
+  }
+}

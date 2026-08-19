@@ -1,0 +1,27 @@
+{
+  "apiId": 44528,
+  "name": "Meshari Sunyur",
+  "clubs": [
+    {
+      "club": "Al-Raed",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Al-Qadsiah",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 20,
+    "goals": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "apiId": 541877,
+  "name": "Pepe",
+  "clubs": [
+    {
+      "club": "Marítimo B",
+      "appearances": 64,
+      "goals": 3
+    },
+    {
+      "club": "Marítimo",
+      "appearances": 64,
+      "goals": 3
+    },
+    {
+      "club": "Porto",
+      "appearances": 201,
+      "goals": 9
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 334,
+      "goals": 15
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 52,
+      "goals": 7
+    },
+    {
+      "club": "Porto",
+      "appearances": 132,
+      "goals": 7
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal",
+      "appearances": 141,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 859,
+    "goals": 45
+  }
+}

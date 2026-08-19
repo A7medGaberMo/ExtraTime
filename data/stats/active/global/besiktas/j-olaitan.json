@@ -1,0 +1,62 @@
+{
+  "apiId": 316904,
+  "name": "J. Olaitan",
+  "clubs": [
+    {
+      "club": "Ayema",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Niort",
+      "appearances": 46,
+      "goals": 6
+    },
+    {
+      "club": "Niort B",
+      "appearances": 4,
+      "goals": 2
+    },
+    {
+      "club": "Troyes",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Troyes B",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Troyes",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Grenoble",
+      "appearances": 24,
+      "goals": 4
+    },
+    {
+      "club": "Göztepe",
+      "appearances": 17,
+      "goals": 2
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 15,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Benin",
+      "appearances": 40,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 127,
+    "goals": 16
+  }
+}

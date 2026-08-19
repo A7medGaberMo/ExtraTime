@@ -1,0 +1,32 @@
+{
+  "apiId": 44509,
+  "name": "Ali Al Hassan",
+  "clubs": [
+    {
+      "club": "Al-Fateh",
+      "appearances": 46,
+      "goals": 4
+    },
+    {
+      "club": "Al Nassr",
+      "appearances": 131,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia",
+      "appearances": 18,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 177,
+    "goals": 7
+  }
+}

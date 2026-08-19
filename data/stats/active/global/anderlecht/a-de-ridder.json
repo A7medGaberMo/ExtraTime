@@ -1,0 +1,67 @@
+{
+  "apiId": 551252,
+  "name": "A. de Ridder",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Celta Vigo",
+      "appearances": 20,
+      "goals": 1
+    },
+    {
+      "club": "Birmingham City",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Wigan Athletic",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Hapoel Tel Aviv",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "club": "Grasshoppers",
+      "appearances": 22,
+      "goals": 3
+    },
+    {
+      "club": "Heerenveen",
+      "appearances": 13,
+      "goals": 4
+    },
+    {
+      "club": "RKC Waalwijk",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "club": "Cambuur",
+      "appearances": 21,
+      "goals": 2
+    },
+    {
+      "club": "RSC Anderlecht",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands U21",
+      "appearances": 30,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 167,
+    "goals": 18
+  }
+}

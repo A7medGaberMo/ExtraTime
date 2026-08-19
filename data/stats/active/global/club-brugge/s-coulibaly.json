@@ -1,0 +1,71 @@
+{
+  "apiId": 568147,
+  "name": "S. Coulibaly",
+  "clubs": [
+    {
+      "club": "Gueugnon",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Saint-Louis Neuweg",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Dornach",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Grasshoppers",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Bournemouth",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Coventry City",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Port Vale",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Racing de Santander",
+      "appearances": 63,
+      "goals": 9
+    },
+    {
+      "club": "Logroñés",
+      "appearances": 8,
+      "goals": 4
+    },
+    {
+      "club": "Vaduz",
+      "appearances": 117,
+      "goals": 26
+    },
+    {
+      "club": "Dornach",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 226,
+    "goals": 40
+  }
+}

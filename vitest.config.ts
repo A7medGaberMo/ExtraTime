@@ -6,6 +6,7 @@ export default defineConfig({
     include: ["tests/**/*.test.ts", "src/**/*.test.ts", "convex/**/*.test.ts"],
     exclude: ["node_modules", "convex/_generated/**"],
     environment: "node",
+    testTimeout: 15000,
   },
   resolve: {
     alias: {

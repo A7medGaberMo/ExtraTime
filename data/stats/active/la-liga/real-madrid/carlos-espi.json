@@ -1,0 +1,26 @@
+{
+  "apiId": 450497,
+  "name": "Carlos Espí",
+  "clubs": [
+    {
+      "club": "Levante B",
+      "appearances": 18,
+      "goals": 6
+    },
+    {
+      "club": "Levante",
+      "appearances": 24,
+      "goals": 4
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 4,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 46,
+    "goals": 11
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "apiId": 918,
+  "name": "José Gayà",
+  "clubs": [
+    {
+      "club": "Valencia B",
+      "appearances": 65,
+      "goals": 3
+    },
+    {
+      "club": "Valencia",
+      "appearances": 408,
+      "goals": 12
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 473,
+    "goals": 15
+  }
+}

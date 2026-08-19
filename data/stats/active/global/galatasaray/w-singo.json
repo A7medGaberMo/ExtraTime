@@ -1,0 +1,42 @@
+{
+  "apiId": 30504,
+  "name": "W. Singo",
+  "clubs": [
+    {
+      "club": "Torino",
+      "appearances": 109,
+      "goals": 7
+    },
+    {
+      "club": "Monaco",
+      "appearances": 60,
+      "goals": 4
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 19,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast U20",
+      "appearances": 2,
+      "goals": 1
+    },
+    {
+      "team": "Ivory Coast Olympic",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Ivory Coast",
+      "appearances": 36,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 188,
+    "goals": 13
+  }
+}

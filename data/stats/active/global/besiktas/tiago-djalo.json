@@ -1,0 +1,67 @@
+{
+  "apiId": 1479,
+  "name": "Tiago Djaló",
+  "clubs": [
+    {
+      "club": "Sporting CP B",
+      "appearances": 12,
+      "goals": 1
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Lille",
+      "appearances": 102,
+      "goals": 3
+    },
+    {
+      "club": "Juventus",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Porto",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 26,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U17",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U18",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "team": "Portugal",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 149,
+    "goals": 6
+  }
+}

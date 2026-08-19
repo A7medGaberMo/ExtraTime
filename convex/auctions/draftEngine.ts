@@ -163,19 +163,19 @@ const TOP_CLUB_NAMES = new Set([
 ]);
 
 // ── Tier Distribution Planning ─────────────────────────────
-// Enforces 80% to 85% Elite & Above (ICON, MASTER, ELITE_PLUS, ELITE) and 15% to 20% Gold/Lower
+// Enforces 80% to 85% Elite & Above (ICON, HERO, ULTIMATE, MASTER, ELITE) and 15% to 20% Gold/Lower
 function planTierBudget(pool: PoolPlayer[], totalSlots: number): Map<Tier, number> {
   const available = new Map<Tier, number>();
   for (const p of pool) {
     available.set(p.tier, (available.get(p.tier) ?? 0) + 1);
   }
 
-  // Target ratios: 85% Elite or higher (ICON, HERO, MASTER, ELITE_PLUS, ELITE), 15% Gold & lower
+  // Target ratios: 85% Elite or higher (ICON, HERO, ULTIMATE, MASTER, ELITE), 15% Gold & lower
   const targetRatios: Record<Tier, number> = {
     ICON: 0.15,        // Upper tier ~15%
     HERO: 0.15,        // Upper tier ~15%
-    MASTER: 0.22,      // Upper tier ~22%
-    ELITE_PLUS: 0.18,  // Upper tier ~18%
+    ULTIMATE: 0.22,    // Upper tier ~22%
+    MASTER: 0.18,      // Upper tier ~18%
     ELITE: 0.15,       // Upper tier ~15% (Total Upper = 85%)
     GOLD: 0.10,        // Lower tier ~10%
     SILVER: 0.04,      // Lower tier ~4%

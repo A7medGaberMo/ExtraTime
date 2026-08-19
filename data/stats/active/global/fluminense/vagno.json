@@ -1,0 +1,72 @@
+{
+  "apiId": 519811,
+  "name": "Vagno",
+  "clubs": [
+    {
+      "club": "Americano",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Vasco de Gama",
+      "appearances": 47,
+      "goals": 1
+    },
+    {
+      "club": "Internacional",
+      "appearances": 26,
+      "goals": 0
+    },
+    {
+      "club": "Caen",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 47,
+      "goals": 7
+    },
+    {
+      "club": "Goiás",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Universidad Católica",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Americano",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 11,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 212,
+    "goals": 11
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "apiId": 161933,
+  "name": "Nico González",
+  "clubs": [
+    {
+      "club": "Barcelona B",
+      "appearances": 27,
+      "goals": 0
+    },
+    {
+      "club": "Barcelona",
+      "appearances": 37,
+      "goals": 2
+    },
+    {
+      "club": "Valencia",
+      "appearances": 26,
+      "goals": 1
+    },
+    {
+      "club": "Porto",
+      "appearances": 68,
+      "goals": 9
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 58,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 216,
+    "goals": 16
+  }
+}

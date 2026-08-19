@@ -1,0 +1,52 @@
+{
+  "apiId": 2701,
+  "name": "Y. Bounou",
+  "clubs": [
+    {
+      "club": "Real Madrid B",
+      "appearances": 70,
+      "goals": 30
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 73,
+      "goals": 30
+    },
+    {
+      "club": "Fulham",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Spain U18",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Spain U19",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "Spain U21",
+      "appearances": 7,
+      "goals": 6
+    },
+    {
+      "team": "Spain",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 155,
+    "goals": 61
+  }
+}

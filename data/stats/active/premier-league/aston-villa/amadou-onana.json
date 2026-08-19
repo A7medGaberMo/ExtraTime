@@ -1,0 +1,43 @@
+{
+  "apiId": 162714,
+  "name": "Amadou Onana",
+  "clubs": [
+    {
+      "club": "Hoffenheim II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 26,
+      "goals": 3
+    },
+    {
+      "club": "Lille",
+      "appearances": 42,
+      "goals": 3
+    },
+    {
+      "club": "Everton",
+      "appearances": 72,
+      "goals": 4
+    },
+    {
+      "club": "Aston Villa",
+      "appearances": 35,
+      "goals": 3
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 20,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 176,
+    "goals": 13
+  },
+  "currentTeam": "Aston Villa"
+}

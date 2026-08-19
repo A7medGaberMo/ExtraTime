@@ -1,0 +1,38 @@
+{
+  "apiId": 284356,
+  "name": "S. Charles",
+  "clubs": [
+    {
+      "club": "Manchester City U21",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Southampton",
+      "appearances": 76,
+      "goals": 6
+    },
+    {
+      "club": "Sheffield Wednesday",
+      "appearances": 44,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Northern Ireland",
+      "appearances": 35,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 126,
+    "goals": 7
+  },
+  "currentTeam": "Fulham"
+}

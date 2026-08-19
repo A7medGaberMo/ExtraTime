@@ -1,0 +1,42 @@
+{
+  "apiId": 444463,
+  "name": "A. Vasovic",
+  "clubs": [
+    {
+      "club": "Partizan",
+      "appearances": 88,
+      "goals": 6
+    },
+    {
+      "club": "Red Star Belgrade",
+      "appearances": 13,
+      "goals": 0
+    },
+    {
+      "club": "Partizan",
+      "appearances": 40,
+      "goals": 4
+    },
+    {
+      "club": "Ajax",
+      "appearances": 145,
+      "goals": 13
+    },
+    {
+      "club": "Club Brugge",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Yugoslavia",
+      "appearances": 32,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 298,
+    "goals": 24
+  }
+}

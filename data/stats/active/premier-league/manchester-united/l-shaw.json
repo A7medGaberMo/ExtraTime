@@ -1,10 +1,27 @@
 {
   "apiId": 891,
   "name": "L. Shaw",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Southampton",
+      "appearances": 67,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 325,
+      "goals": 5
+    }
+  ],
+  "national": [
+    {
+      "team": "England",
+      "appearances": 34,
+      "goals": 3
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 392,
+    "goals": 5
   }
 }

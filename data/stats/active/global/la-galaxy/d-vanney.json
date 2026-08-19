@@ -1,0 +1,57 @@
+{
+  "apiId": 541880,
+  "name": "D. Vanney",
+  "clubs": [
+    {
+      "club": "Tucson Amigos",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 168,
+      "goals": 21
+    },
+    {
+      "club": "Sacramento Scorpions",
+      "appearances": 3,
+      "goals": 3
+    },
+    {
+      "club": "Bastia",
+      "appearances": 65,
+      "goals": 0
+    },
+    {
+      "club": "FC Dallas",
+      "appearances": 53,
+      "goals": 1
+    },
+    {
+      "club": "Colorado Rapids",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "D.C. United",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 25,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 37,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 338,
+    "goals": 25
+  }
+}

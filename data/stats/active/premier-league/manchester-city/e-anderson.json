@@ -1,10 +1,52 @@
 {
   "apiId": 138908,
   "name": "E. Anderson",
-  "clubs": [],
-  "national": [],
+  "clubs": [
+    {
+      "club": "Grêmio",
+      "appearances": 31,
+      "goals": 9
+    },
+    {
+      "club": "Porto",
+      "appearances": 25,
+      "goals": 3
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 181,
+      "goals": 9
+    },
+    {
+      "club": "Fiorentina",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Internacional",
+      "appearances": 88,
+      "goals": 6
+    },
+    {
+      "club": "Coritiba",
+      "appearances": 23,
+      "goals": 3
+    },
+    {
+      "club": "Adana Demirspor",
+      "appearances": 15,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
   "careerTotal": {
-    "appearances": 0,
-    "goals": 0
+    "appearances": 371,
+    "goals": 30
   }
 }

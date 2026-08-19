@@ -1,0 +1,21 @@
+{
+  "apiId": 280055,
+  "name": "L. Kerber",
+  "clubs": [
+    {
+      "club": "1. FC Saarbrücken",
+      "appearances": 118,
+      "goals": 12
+    },
+    {
+      "club": "1. FC Heidenheim",
+      "appearances": 54,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 172,
+    "goals": 16
+  }
+}

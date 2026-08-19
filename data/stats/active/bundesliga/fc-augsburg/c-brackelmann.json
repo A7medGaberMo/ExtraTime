@@ -1,0 +1,51 @@
+{
+  "apiId": 178403,
+  "name": "C. Brackelmann",
+  "clubs": [
+    {
+      "club": "1. FC Köln II",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Schalke 04 II",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "SV Rödinghausen",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "VfB Lübeck",
+      "appearances": 33,
+      "goals": 3
+    },
+    {
+      "club": "FC Ingolstadt",
+      "appearances": 33,
+      "goals": 2
+    },
+    {
+      "club": "Paderborn 07",
+      "appearances": 63,
+      "goals": 5
+    },
+    {
+      "club": "Paderborn 07 II",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Augsburg",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 159,
+    "goals": 11
+  }
+}

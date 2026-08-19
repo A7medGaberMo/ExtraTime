@@ -1,0 +1,41 @@
+{
+  "apiId": 182661,
+  "name": "Álvaro Núñez",
+  "clubs": [
+    {
+      "club": "Basconia",
+      "appearances": 54,
+      "goals": 3
+    },
+    {
+      "club": "Bilbao Athletic",
+      "appearances": 60,
+      "goals": 1
+    },
+    {
+      "club": "Barcelona B",
+      "appearances": 39,
+      "goals": 1
+    },
+    {
+      "club": "Amorebieta",
+      "appearances": 40,
+      "goals": 2
+    },
+    {
+      "club": "Elche",
+      "appearances": 59,
+      "goals": 2
+    },
+    {
+      "club": "Celta",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 258,
+    "goals": 9
+  }
+}

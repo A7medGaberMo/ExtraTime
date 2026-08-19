@@ -1,0 +1,72 @@
+{
+  "apiId": 415069,
+  "name": "Patrick Silva",
+  "clubs": [
+    {
+      "club": "Brøndby",
+      "appearances": 44,
+      "goals": 1
+    },
+    {
+      "club": "Randers",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Nordsjælland",
+      "appearances": 15,
+      "goals": 0
+    },
+    {
+      "club": "Roskilde",
+      "appearances": 20,
+      "goals": 0
+    },
+    {
+      "club": "Lyngby",
+      "appearances": 31,
+      "goals": 2
+    },
+    {
+      "club": "Tårnby FF",
+      "appearances": 24,
+      "goals": 5
+    },
+    {
+      "club": "KÍ",
+      "appearances": 63,
+      "goals": 0
+    },
+    {
+      "club": "FC Kalundborg",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark U19",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Denmark U20",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Denmark U21",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 214,
+    "goals": 9
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 1998,
+  "name": "K. Yılmaz",
+  "clubs": [
+    {
+      "club": "Ankara Demirspor",
+      "appearances": 43,
+      "goals": 1
+    },
+    {
+      "club": "Ankara Keçiörengücü",
+      "appearances": 34,
+      "goals": 8
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 205,
+      "goals": 37
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U21",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "team": "Turkey",
+      "appearances": 38,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 294,
+    "goals": 47
+  }
+}

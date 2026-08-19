@@ -1,0 +1,87 @@
+{
+  "apiId": 1987,
+  "name": "R. Yılmaz",
+  "clubs": [
+    {
+      "club": "Bayern Munich II",
+      "appearances": 115,
+      "goals": 33
+    },
+    {
+      "club": "Mainz 05 II",
+      "appearances": 16,
+      "goals": 10
+    },
+    {
+      "club": "Mainz 05",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "SC Paderborn",
+      "appearances": 25,
+      "goals": 5
+    },
+    {
+      "club": "Elazığspor",
+      "appearances": 28,
+      "goals": 12
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 17,
+      "goals": 2
+    },
+    {
+      "club": "Bursaspor",
+      "appearances": 36,
+      "goals": 10
+    },
+    {
+      "club": "Gençlerbirliği",
+      "appearances": 31,
+      "goals": 3
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U16",
+      "appearances": 12,
+      "goals": 4
+    },
+    {
+      "team": "Turkey U17",
+      "appearances": 28,
+      "goals": 9
+    },
+    {
+      "team": "Turkey U18",
+      "appearances": 3,
+      "goals": 1
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "team": "Azerbaijan",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 282,
+    "goals": 76
+  }
+}

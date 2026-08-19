@@ -57,7 +57,7 @@
       "position": "RB/RWB",
       "club": "Lille",
       "nation": "Portugal",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/379329.png",
       "kitNumber": 22
@@ -178,7 +178,7 @@
       "position": "CM/CDM",
       "club": "Lille",
       "nation": "France",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/438688.png",
       "kitNumber": 32
@@ -226,17 +226,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/375598.png",
       "kitNumber": 17
-    },
-    {
-      "apiId": 334878,
-      "name": "U. Raghouber",
-      "position": "CM/CDM",
-      "club": "Lille",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/334878.png",
-      "kitNumber": 14
     },
     {
       "apiId": 401333,

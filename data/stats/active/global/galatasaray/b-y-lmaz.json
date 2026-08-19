@@ -1,0 +1,107 @@
+{
+  "apiId": 63274,
+  "name": "B. Yılmaz",
+  "clubs": [
+    {
+      "club": "Antalyaspor",
+      "appearances": 73,
+      "goals": 18
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 55,
+      "goals": 25
+    },
+    {
+      "club": "Manisaspor",
+      "appearances": 16,
+      "goals": 9
+    },
+    {
+      "club": "Fenerbahçe",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Eskişehirspor",
+      "appearances": 14,
+      "goals": 1
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 93,
+      "goals": 58
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 141,
+      "goals": 82
+    },
+    {
+      "club": "Beijing Guoan",
+      "appearances": 31,
+      "goals": 19
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 32,
+      "goals": 28
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 40,
+      "goals": 24
+    },
+    {
+      "club": "Lille",
+      "appearances": 73,
+      "goals": 25
+    },
+    {
+      "club": "Fortuna Sittard",
+      "appearances": 26,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U17",
+      "appearances": 8,
+      "goals": 1
+    },
+    {
+      "team": "Turkey U18",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U19",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U20",
+      "appearances": 11,
+      "goals": 2
+    },
+    {
+      "team": "Turkey U21",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "team": "Turkey B",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "team": "Turkey",
+      "appearances": 77,
+      "goals": 31
+    }
+  ],
+  "careerTotal": {
+    "appearances": 600,
+    "goals": 298
+  }
+}

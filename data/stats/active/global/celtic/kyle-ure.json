@@ -1,0 +1,22 @@
+{
+  "apiId": 412691,
+  "name": "Kyle Ure",
+  "clubs": [
+    {
+      "club": "Celtic",
+      "appearances": 32,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Scotland",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 32,
+    "goals": 1
+  }
+}

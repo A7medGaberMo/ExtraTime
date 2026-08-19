@@ -1,0 +1,77 @@
+{
+  "apiId": 635788,
+  "name": "M. Korobov",
+  "clubs": [
+    {
+      "club": "FC Akademiya Tolyatti",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "FC Sibir-2 Novosibirsk",
+      "appearances": 24,
+      "goals": 6
+    },
+    {
+      "club": "FC Fakel Voronezh",
+      "appearances": 43,
+      "goals": 3
+    },
+    {
+      "club": "FC Ural Yekaterinburg",
+      "appearances": 28,
+      "goals": 1
+    },
+    {
+      "club": "FC Avangard Kursk",
+      "appearances": 25,
+      "goals": 4
+    },
+    {
+      "club": "FC Avangard Kursk",
+      "appearances": 36,
+      "goals": 2
+    },
+    {
+      "club": "FC Fakel Voronezh",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "FC SKA Rostov-on-Don",
+      "appearances": 40,
+      "goals": 8
+    },
+    {
+      "club": "FC Chernomorets Novorossiysk",
+      "appearances": 28,
+      "goals": 3
+    },
+    {
+      "club": "FC Volga Ulyanovsk",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Russia U-18",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Russia U-21",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 280,
+    "goals": 29
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "apiId": 91745,
+  "name": "Alemão",
+  "clubs": [
+    {
+      "club": "Metropolitano",
+      "appearances": 14,
+      "goals": 2
+    },
+    {
+      "club": "Kyoto Sanga",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Criciúma",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Fluminense do Itaum",
+      "appearances": 30,
+      "goals": 7
+    },
+    {
+      "club": "Avaí",
+      "appearances": 12,
+      "goals": 3
+    },
+    {
+      "club": "Juventus Jaraguá",
+      "appearances": 2,
+      "goals": 2
+    },
+    {
+      "club": "Novo Hamburgo",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "club": "Internacional",
+      "appearances": 71,
+      "goals": 14
+    },
+    {
+      "club": "Oviedo",
+      "appearances": 84,
+      "goals": 22
+    },
+    {
+      "club": "Pachuca",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 37,
+      "goals": 8
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 264,
+    "goals": 61
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "apiId": 216493,
+  "name": "I. Fray",
+  "clubs": [
+    {
+      "club": "Inter Miami II",
+      "appearances": 64,
+      "goals": 4
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 49,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Jamaica",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 113,
+    "goals": 8
+  }
+}

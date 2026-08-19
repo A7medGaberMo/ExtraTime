@@ -1,0 +1,71 @@
+{
+  "apiId": 550966,
+  "name": "T. Silva",
+  "clubs": [
+    {
+      "club": "Juventude de Évora",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Mafra",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Oleiros",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Vasco da Gama Vidigueira",
+      "appearances": 27,
+      "goals": 8
+    },
+    {
+      "club": "Leça",
+      "appearances": 23,
+      "goals": 8
+    },
+    {
+      "club": "Trofense",
+      "appearances": 24,
+      "goals": 3
+    },
+    {
+      "club": "Gondomar",
+      "appearances": 19,
+      "goals": 4
+    },
+    {
+      "club": "Real",
+      "appearances": 23,
+      "goals": 10
+    },
+    {
+      "club": "PSM Makassar",
+      "appearances": 46,
+      "goals": 8
+    },
+    {
+      "club": "Persekat Tegal",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "club": "Isenmulang Kalteng",
+      "appearances": 27,
+      "goals": 26
+    },
+    {
+      "club": "FC Porto",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 239,
+    "goals": 70
+  }
+}

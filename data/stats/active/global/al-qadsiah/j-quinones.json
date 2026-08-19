@@ -1,0 +1,57 @@
+{
+  "apiId": 35532,
+  "name": "J. Quiñones",
+  "clubs": [
+    {
+      "club": "Tigres UANL",
+      "appearances": 75,
+      "goals": 12
+    },
+    {
+      "club": "Venados",
+      "appearances": 14,
+      "goals": 3
+    },
+    {
+      "club": "Lobos BUAP",
+      "appearances": 28,
+      "goals": 17
+    },
+    {
+      "club": "Atlas",
+      "appearances": 83,
+      "goals": 36
+    },
+    {
+      "club": "Atlas",
+      "appearances": 55,
+      "goals": 27
+    },
+    {
+      "club": "América",
+      "appearances": 41,
+      "goals": 18
+    },
+    {
+      "club": "Al-Qadsiah",
+      "appearances": 68,
+      "goals": 62
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia U20",
+      "appearances": 13,
+      "goals": 4
+    },
+    {
+      "team": "Mexico",
+      "appearances": 27,
+      "goals": 6
+    }
+  ],
+  "careerTotal": {
+    "appearances": 364,
+    "goals": 175
+  }
+}

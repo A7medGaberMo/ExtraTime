@@ -1,0 +1,36 @@
+{
+  "apiId": 8661,
+  "name": "Vitinho",
+  "clubs": [
+    {
+      "club": "São Paulo",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "club": "Atlético San Luis",
+      "appearances": 97,
+      "goals": 18
+    },
+    {
+      "club": "Tijuana",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Fortaleza",
+      "appearances": 29,
+      "goals": 10
+    },
+    {
+      "club": "Botafogo",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 144,
+    "goals": 29
+  }
+}

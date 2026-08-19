@@ -250,17 +250,6 @@
       "kitNumber": 20
     },
     {
-      "apiId": 47499,
-      "name": "E. Ünal",
-      "position": "ST",
-      "club": "Bournemouth",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47499.png",
-      "kitNumber": 26
-    },
-    {
       "apiId": 407806,
       "name": "Rayan",
       "position": "ST/RW",
@@ -281,6 +270,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/402434.png",
       "kitNumber": 50
+    },
+    {
+      "apiId": 144577,
+      "name": "António Silva",
+      "position": "CB",
+      "club": "Bournemouth",
+      "nation": "Portugal",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/144577.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 182772,
+      "name": "Juanlu Sánchez",
+      "position": "RB/RM",
+      "club": "Bournemouth",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182772.png",
+      "kitNumber": 16
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "apiId": 202580,
+  "name": "L. Rosenboom",
+  "clubs": [
+    {
+      "club": "Holstein Kiel II",
+      "appearances": 61,
+      "goals": 18
+    },
+    {
+      "club": "Holstein Kiel",
+      "appearances": 19,
+      "goals": 2
+    },
+    {
+      "club": "VfL Osnabrück",
+      "appearances": 34,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 114,
+    "goals": 22
+  }
+}

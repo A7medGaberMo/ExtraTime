@@ -1,0 +1,52 @@
+{
+  "apiId": 2472,
+  "name": "R. De Paul",
+  "clubs": [
+    {
+      "club": "Racing Club",
+      "appearances": 57,
+      "goals": 6
+    },
+    {
+      "club": "Valencia",
+      "appearances": 44,
+      "goals": 2
+    },
+    {
+      "club": "Racing Club",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Udinese",
+      "appearances": 184,
+      "goals": 34
+    },
+    {
+      "club": "Atlético Madrid",
+      "appearances": 187,
+      "goals": 14
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Inter Miami",
+      "appearances": 15,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 94,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 509,
+    "goals": 60
+  }
+}

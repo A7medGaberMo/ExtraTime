@@ -1,0 +1,72 @@
+{
+  "apiId": 50046,
+  "name": "E. Topçu",
+  "clubs": [
+    {
+      "club": "Kdz. Ereğli Belediye Spor",
+      "appearances": 159,
+      "goals": 111
+    },
+    {
+      "club": "Konak Belediyespor",
+      "appearances": 95,
+      "goals": 46
+    },
+    {
+      "club": "Ataşehir Belediyespor",
+      "appearances": 21,
+      "goals": 10
+    },
+    {
+      "club": "Konak Belediyespor",
+      "appearances": 16,
+      "goals": 7
+    },
+    {
+      "club": "ALG Spor",
+      "appearances": 75,
+      "goals": 34
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 114,
+      "goals": 56
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U-15",
+      "appearances": 2,
+      "goals": 4
+    },
+    {
+      "team": "Turkey U-17",
+      "appearances": 16,
+      "goals": 12
+    },
+    {
+      "team": "Turkey U-19",
+      "appearances": 40,
+      "goals": 21
+    },
+    {
+      "team": "Turkey U-21",
+      "appearances": 1,
+      "goals": 1
+    },
+    {
+      "team": "Turkey",
+      "appearances": 101,
+      "goals": 25
+    }
+  ],
+  "careerTotal": {
+    "appearances": 492,
+    "goals": 265
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "apiId": 44332,
+  "name": "Ali Al Bulayhi",
+  "clubs": [
+    {
+      "club": "Al-Amal",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Nahda",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Al-Fateh",
+      "appearances": 59,
+      "goals": 2
+    },
+    {
+      "club": "Al Hilal",
+      "appearances": 274,
+      "goals": 24
+    },
+    {
+      "club": "Al-Shabab",
+      "appearances": 14,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia",
+      "appearances": 60,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 347,
+    "goals": 28
+  }
+}

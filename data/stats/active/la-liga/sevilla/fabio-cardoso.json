@@ -1,0 +1,51 @@
+{
+  "apiId": 41208,
+  "name": "Fábio Cardoso",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 55,
+      "goals": 3
+    },
+    {
+      "club": "Paços Ferreira",
+      "appearances": 43,
+      "goals": 1
+    },
+    {
+      "club": "Vitória Setúbal",
+      "appearances": 27,
+      "goals": 1
+    },
+    {
+      "club": "Rangers",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Santa Clara",
+      "appearances": 97,
+      "goals": 11
+    },
+    {
+      "club": "Porto",
+      "appearances": 78,
+      "goals": 4
+    },
+    {
+      "club": "Al Ain",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 323,
+    "goals": 21
+  }
+}

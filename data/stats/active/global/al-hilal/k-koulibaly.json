@@ -1,0 +1,52 @@
+{
+  "apiId": 318,
+  "name": "K. Koulibaly",
+  "clubs": [
+    {
+      "club": "Metz II",
+      "appearances": 46,
+      "goals": 2
+    },
+    {
+      "club": "Metz",
+      "appearances": 41,
+      "goals": 1
+    },
+    {
+      "club": "Genk",
+      "appearances": 92,
+      "goals": 3
+    },
+    {
+      "club": "Napoli",
+      "appearances": 317,
+      "goals": 14
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 23,
+      "goals": 2
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 128,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "France U20",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "team": "Senegal",
+      "appearances": 106,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 647,
+    "goals": 29
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "apiId": 217,
+  "name": "Lautaro Martínez",
+  "clubs": [
+    {
+      "club": "Racing",
+      "appearances": 62,
+      "goals": 27
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 376,
+      "goals": 175
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina",
+      "appearances": 84,
+      "goals": 40
+    }
+  ],
+  "careerTotal": {
+    "appearances": 438,
+    "goals": 202
+  }
+}

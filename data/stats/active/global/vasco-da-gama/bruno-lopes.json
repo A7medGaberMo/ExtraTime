@@ -1,0 +1,22 @@
+{
+  "apiId": 454139,
+  "name": "Bruno Lopes",
+  "clubs": [
+    {
+      "club": "Vasco da Gama",
+      "appearances": 32,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 8,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 32,
+    "goals": 7
+  }
+}

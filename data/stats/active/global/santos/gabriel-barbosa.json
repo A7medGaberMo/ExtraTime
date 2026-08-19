@@ -1,0 +1,76 @@
+{
+  "apiId": 10174,
+  "name": "Gabriel Barbosa",
+  "clubs": [
+    {
+      "club": "Palmeiras",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Londrina",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Figueirense",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Paysandu",
+      "appearances": 8,
+      "goals": 5
+    },
+    {
+      "club": "FC Seoul",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Levadiakos",
+      "appearances": 12,
+      "goals": 4
+    },
+    {
+      "club": "Kukësi",
+      "appearances": 29,
+      "goals": 5
+    },
+    {
+      "club": "Penafiel",
+      "appearances": 53,
+      "goals": 18
+    },
+    {
+      "club": "Górnik Zabrze",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Górnik Zabrze II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Tatran Prešov",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Farense",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Santos",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 154,
+    "goals": 36
+  }
+}

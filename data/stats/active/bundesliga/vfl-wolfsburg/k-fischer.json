@@ -1,0 +1,57 @@
+{
+  "apiId": 177618,
+  "name": "K. Fischer",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 69,
+      "goals": 31
+    },
+    {
+      "club": "Ajax",
+      "appearances": 29,
+      "goals": 4
+    },
+    {
+      "club": "Utrecht",
+      "appearances": 16,
+      "goals": 0
+    },
+    {
+      "club": "Jong Utrecht",
+      "appearances": 3,
+      "goals": 2
+    },
+    {
+      "club": "Twente",
+      "appearances": 78,
+      "goals": 22
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 28,
+      "goals": 6
+    },
+    {
+      "club": "Rangers",
+      "appearances": 52,
+      "goals": 18
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 34,
+      "goals": 7
+    }
+  ],
+  "national": [
+    {
+      "team": "Czech Republic",
+      "appearances": 30,
+      "goals": 8
+    }
+  ],
+  "careerTotal": {
+    "appearances": 309,
+    "goals": 90
+  }
+}

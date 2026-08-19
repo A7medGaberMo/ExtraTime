@@ -1,0 +1,52 @@
+{
+  "apiId": 579648,
+  "name": "A. Hawsawi",
+  "clubs": [
+    {
+      "club": "Ohod",
+      "appearances": 36,
+      "goals": 0
+    },
+    {
+      "club": "Al-Ittihad",
+      "appearances": 43,
+      "goals": 1
+    },
+    {
+      "club": "Al-Ittihad",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Al-Raed",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Al-Ahli",
+      "appearances": 23,
+      "goals": 1
+    },
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 145,
+    "goals": 4
+  }
+}

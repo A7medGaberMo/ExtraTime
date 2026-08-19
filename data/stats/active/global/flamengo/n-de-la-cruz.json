@@ -1,0 +1,47 @@
+{
+  "apiId": 5995,
+  "name": "N. de la Cruz",
+  "clubs": [
+    {
+      "club": "Liverpool Montevideo",
+      "appearances": 36,
+      "goals": 8
+    },
+    {
+      "club": "River Plate",
+      "appearances": 214,
+      "goals": 36
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 95,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Uruguay U17",
+      "appearances": 4,
+      "goals": 1
+    },
+    {
+      "team": "Uruguay U18",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "team": "Uruguay U20",
+      "appearances": 26,
+      "goals": 5
+    },
+    {
+      "team": "Uruguay",
+      "appearances": 37,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 345,
+    "goals": 48
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "apiId": 615196,
+  "name": "Mamady Cisse",
+  "clubs": [
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 11,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Guinea",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 11,
+    "goals": 1
+  }
+}

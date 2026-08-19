@@ -1,0 +1,57 @@
+{
+  "apiId": 297,
+  "name": "A. Oxlade-Chamberlain",
+  "clubs": [
+    {
+      "club": "Southampton",
+      "appearances": 43,
+      "goals": 10
+    },
+    {
+      "club": "Arsenal",
+      "appearances": 198,
+      "goals": 20
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 146,
+      "goals": 18
+    },
+    {
+      "club": "Beşiktaş",
+      "appearances": 50,
+      "goals": 5
+    },
+    {
+      "club": "Celtic",
+      "appearances": 13,
+      "goals": 2
+    }
+  ],
+  "national": [
+    {
+      "team": "England U18",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "England U19",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "England U21",
+      "appearances": 8,
+      "goals": 4
+    },
+    {
+      "team": "England",
+      "appearances": 35,
+      "goals": 7
+    }
+  ],
+  "careerTotal": {
+    "appearances": 450,
+    "goals": 55
+  }
+}

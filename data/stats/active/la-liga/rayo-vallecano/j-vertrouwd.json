@@ -1,0 +1,41 @@
+{
+  "apiId": 314006,
+  "name": "J. Vertrouwd",
+  "clubs": [
+    {
+      "club": "Jong Volendam",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "FC Volendam",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Jong Utrecht",
+      "appearances": 14,
+      "goals": 0
+    },
+    {
+      "club": "Castellón B",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Castellón",
+      "appearances": 60,
+      "goals": 2
+    },
+    {
+      "club": "Rayo Vallecano",
+      "appearances": 18,
+      "goals": 0
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 121,
+    "goals": 2
+  }
+}

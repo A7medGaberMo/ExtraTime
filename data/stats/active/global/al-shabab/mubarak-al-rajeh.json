@@ -1,0 +1,32 @@
+{
+  "apiId": 399417,
+  "name": "Mubarak Al Rajeh",
+  "clubs": [
+    {
+      "club": "Al-Raed",
+      "appearances": 55,
+      "goals": 0
+    },
+    {
+      "club": "Al-Shabab",
+      "appearances": 9,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia U20",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "team": "Saudi Arabia U23",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 64,
+    "goals": 0
+  }
+}

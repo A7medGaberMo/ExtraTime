@@ -2,8 +2,9 @@ import { mutation } from "../_generated/server";
 import { Id, DataModel, Doc } from "../_generated/dataModel";
 import { v } from "convex/values";
 import { GenericMutationCtx } from "convex/server";
-import { generateDraftRounds, PlayerPoolMode } from "../auctions/draftEngine";
+import { generateDraftRounds } from "../auctions/draftEngine";
 import { getRandomFormation, MatchSize } from "../auctions/formations";
+import { type PoolMode } from "../lib/constants";
 
 // ── Helpers ────────────────────────────────────────────────
 
@@ -40,7 +41,7 @@ interface CreateRoomArgs {
   matchSize: MatchSize;
   startingBudget: number;
   isPublic: boolean;
-  poolMode: PlayerPoolMode;
+  poolMode: PoolMode;
 }
 
 async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: CreateRoomArgs) {
@@ -159,7 +160,7 @@ export const create = mutation({
   handler: async (ctx, args) => {
     const matchSize: MatchSize = args.matchSize ?? 11;
     const startingBudget = args.startingBudget ?? 100;
-    const poolMode = (args.poolMode ?? "GLOBAL") as PlayerPoolMode;
+    const poolMode = (args.poolMode ?? "GLOBAL") as PoolMode;
     return await createWaitingRoom(ctx, {
       hostId: args.hostId,
       matchSize,
@@ -203,7 +204,7 @@ export const findOrCreatePublicMatch = mutation({
   },
   handler: async (ctx, args) => {
     const matchSize: MatchSize = args.matchSize ?? 11;
-    const poolMode = (args.poolMode ?? "GLOBAL") as PlayerPoolMode;
+    const poolMode = (args.poolMode ?? "GLOBAL") as PoolMode;
     const now = Date.now();
 
     const openRooms = await ctx.db
@@ -283,3 +284,4 @@ export const cancel = mutation({
     return { success: true };
   },
 });
+

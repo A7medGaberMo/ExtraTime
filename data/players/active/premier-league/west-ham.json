@@ -41,17 +41,6 @@
       "kitNumber": 49
     },
     {
-      "apiId": 138,
-      "name": "J. Todibo",
-      "position": "CB",
-      "club": "West Ham",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/138.png",
-      "kitNumber": 25
-    },
-    {
       "apiId": 18744,
       "name": "M. Kilman",
       "position": "CB",
@@ -173,14 +162,14 @@
       "kitNumber": 36
     },
     {
-      "apiId": 1243,
+      "apiId": 189999,
       "name": "T. Souček",
       "position": "CM/CDM",
       "club": "West Ham",
       "nation": "Czech Republic",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1243.png",
+      "imageUrl": "https://media.api-sports.io/football/players/189999.png",
       "kitNumber": 28
     },
     {
@@ -239,17 +228,6 @@
       "kitNumber": 61
     },
     {
-      "apiId": 284446,
-      "name": "F. Potts",
-      "position": "CDM",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284446.png",
-      "kitNumber": 32
-    },
-    {
       "apiId": 552938,
       "name": "P. Fearon",
       "position": "CM",
@@ -277,7 +255,7 @@
       "position": "RW/ST",
       "club": "West Ham",
       "nation": "England",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19428.png",
       "kitNumber": 20

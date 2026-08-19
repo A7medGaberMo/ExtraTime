@@ -41,17 +41,6 @@
       "kitNumber": 31
     },
     {
-      "apiId": 182772,
-      "name": "Juanlu Sánchez",
-      "position": "RB/RM",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182772.png",
-      "kitNumber": 16
-    },
-    {
       "apiId": 195923,
       "name": "José Ángel Carmona",
       "position": "RB/CB",
@@ -61,17 +50,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195923.png",
       "kitNumber": 2
-    },
-    {
-      "apiId": 47329,
-      "name": "Adrià Pedrosa",
-      "position": "LB",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47329.png",
-      "kitNumber": 3
     },
     {
       "apiId": 297311,
@@ -94,17 +72,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41208.png",
       "kitNumber": 15
-    },
-    {
-      "apiId": 125331,
-      "name": "F. Gattoni",
-      "position": "CB",
-      "club": "Sevilla",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/125331.png",
-      "kitNumber": 22
     },
     {
       "apiId": 11421,
@@ -171,28 +138,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21004.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 957,
-      "name": "D. Sow",
-      "position": "CM/CDM",
-      "club": "Sevilla",
-      "nation": "Switzerland",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/957.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 47389,
-      "name": "Joan Jordán",
-      "position": "CM/CDM",
-      "club": "Sevilla",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47389.png",
-      "kitNumber": 8
     },
     {
       "apiId": 104821,
@@ -314,6 +259,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546798.png",
       "kitNumber": 38
+    },
+    {
+      "apiId": 79258,
+      "name": "J. Díaz",
+      "position": "CB",
+      "club": "Sevilla",
+      "nation": "Colombia",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/79258.png",
+      "kitNumber": 28
     }
   ]
 }

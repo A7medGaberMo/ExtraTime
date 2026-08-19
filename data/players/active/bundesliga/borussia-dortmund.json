@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Borussia Dortmund",
       "nation": "Switzerland",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25282.png",
       "kitNumber": 1
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Borussia Dortmund",
       "nation": "Germany",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26243.png",
       "kitNumber": 4
@@ -96,17 +96,6 @@
       "kitNumber": 5
     },
     {
-      "apiId": 197448,
-      "name": "Yan Couto",
-      "position": "RB/RWB",
-      "club": "Borussia Dortmund",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/197448.png",
-      "kitNumber": 2
-    },
-    {
       "apiId": 409215,
       "name": "Kouakou Joane Gadou",
       "position": "CB",
@@ -116,17 +105,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/409215.png",
       "kitNumber": 22
-    },
-    {
-      "apiId": 394667,
-      "name": "Almugera Raouf Mohammed Kabar",
-      "position": "LB",
-      "club": "Borussia Dortmund",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/394667.png",
-      "kitNumber": 42
     },
     {
       "apiId": 341839,
@@ -266,7 +244,7 @@
       "position": "ST",
       "club": "Borussia Dortmund",
       "nation": "Guinea",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21393.png",
       "kitNumber": 9

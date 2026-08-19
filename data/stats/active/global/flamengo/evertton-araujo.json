@@ -1,0 +1,26 @@
+{
+  "apiId": 332654,
+  "name": "Evertton Araújo",
+  "clubs": [
+    {
+      "club": "Volta Redonda",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Flamengo",
+      "appearances": 61,
+      "goals": 2
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 78,
+    "goals": 3
+  }
+}

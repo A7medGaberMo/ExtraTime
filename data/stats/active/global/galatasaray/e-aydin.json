@@ -1,0 +1,97 @@
+{
+  "apiId": 550893,
+  "name": "E. Aydin",
+  "clubs": [
+    {
+      "club": "Eskişehirspor",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Bozüyükspor",
+      "appearances": 16,
+      "goals": 1
+    },
+    {
+      "club": "Dardanelspor",
+      "appearances": 14,
+      "goals": 3
+    },
+    {
+      "club": "Dardanelspor",
+      "appearances": 33,
+      "goals": 3
+    },
+    {
+      "club": "Dardanelspor",
+      "appearances": 70,
+      "goals": 9
+    },
+    {
+      "club": "Yeni Malatyaspor",
+      "appearances": 15,
+      "goals": 2
+    },
+    {
+      "club": "Kastamonuspor 1966",
+      "appearances": 6,
+      "goals": 2
+    },
+    {
+      "club": "Sarıyer",
+      "appearances": 33,
+      "goals": 5
+    },
+    {
+      "club": "Sakaryaspor",
+      "appearances": 45,
+      "goals": 5
+    },
+    {
+      "club": "Karşıyaka",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Anadolu Üniversitesi",
+      "appearances": 6,
+      "goals": 0
+    },
+    {
+      "club": "Diyarbekirspor",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Silifke Belediyespor",
+      "appearances": 9,
+      "goals": 2
+    },
+    {
+      "club": "Galatasaray",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Turkey U16",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U17",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "team": "Turkey U18",
+      "appearances": 6,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 274,
+    "goals": 33
+  }
+}

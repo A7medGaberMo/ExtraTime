@@ -1,0 +1,31 @@
+{
+  "apiId": 30420,
+  "name": "E. Del Prato",
+  "clubs": [
+    {
+      "club": "Atalanta",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Livorno",
+      "appearances": 33,
+      "goals": 1
+    },
+    {
+      "club": "Reggina",
+      "appearances": 28,
+      "goals": 0
+    },
+    {
+      "club": "Parma",
+      "appearances": 158,
+      "goals": 11
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 219,
+    "goals": 12
+  }
+}

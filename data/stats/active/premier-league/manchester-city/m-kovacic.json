@@ -1,0 +1,42 @@
+{
+  "apiId": 2291,
+  "name": "M. Kovačić",
+  "clubs": [
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 73,
+      "goals": 8
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 97,
+      "goals": 8
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 109,
+      "goals": 3
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 221,
+      "goals": 6
+    },
+    {
+      "club": "Manchester City",
+      "appearances": 97,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 117,
+      "goals": 5
+    }
+  ],
+  "careerTotal": {
+    "appearances": 597,
+    "goals": 35
+  }
+}

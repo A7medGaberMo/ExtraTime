@@ -1,0 +1,47 @@
+{
+  "apiId": 526,
+  "name": "A. Onana",
+  "clubs": [
+    {
+      "club": "Jong Ajax",
+      "appearances": 214,
+      "goals": 0
+    },
+    {
+      "club": "Ajax",
+      "appearances": 148,
+      "goals": 0
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 24,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "appearances": 102,
+      "goals": 0
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 29,
+      "goals": 0
+    },
+    {
+      "club": "Trabzonspor",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Cameroon",
+      "appearances": 53,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 518,
+    "goals": 0
+  }
+}

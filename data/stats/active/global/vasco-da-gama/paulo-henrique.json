@@ -1,0 +1,72 @@
+{
+  "apiId": 133910,
+  "name": "Paulo Henrique",
+  "clubs": [
+    {
+      "club": "Londrina",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Iraty",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Operário Ferroviário",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "União Beltrão",
+      "appearances": 4,
+      "goals": 0
+    },
+    {
+      "club": "Metropolitano",
+      "appearances": 37,
+      "goals": 2
+    },
+    {
+      "club": "Atlético Tubarão",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "Paraná",
+      "appearances": 40,
+      "goals": 1
+    },
+    {
+      "club": "Juventude",
+      "appearances": 59,
+      "goals": 2
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 114,
+      "goals": 6
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 93,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 2,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 364,
+    "goals": 15
+  }
+}

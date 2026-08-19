@@ -6,7 +6,7 @@ import type { PlayerCardData, Tier } from '@/types/player';
 import { CardBackgroundTexture } from './card-textures';
 import { ClubCrestBadge, CountryFlagBadge } from './card-badges';
 import { ETLogo } from './et-logo';
-import { PlayerSilhouette } from './player-silhouette';
+import { PlayerImage } from './player-image';
 
 export interface TierConfig {
   name: string;
@@ -55,6 +55,21 @@ export const TIER_CONFIGS: Record<Tier, TierConfig> = {
     rimGlow: 'rgba(16, 185, 129, 0.45)',
     textShadow: '0 2px 8px rgba(0,0,0,0.9)',
   },
+  ULTIMATE: {
+    name: 'ULTIMATE',
+    identity: 'World Best',
+    materials: 'Electric azure, Sapphire crystal, Platinum trim',
+    colors: {
+      primary: '#0EA5E9',
+      highlight: '#7DD3FC',
+      shadow: '#0369A1',
+      accent: '#E0F2FE',
+    },
+    frameGradient: 'from-[#E0F2FE] via-[#0EA5E9] to-[#0369A1]',
+    bgGradient: 'from-[#0C4A6E] via-[#031D33] to-[#010B14]',
+    rimGlow: 'rgba(14, 165, 233, 0.45)',
+    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
+  },
   MASTER: {
     name: 'MASTER',
     identity: 'Elite Masterpiece',
@@ -68,21 +83,6 @@ export const TIER_CONFIGS: Record<Tier, TierConfig> = {
     frameGradient: 'from-[#F3E8FF] via-[#7C3AED] to-[#4C1D95]',
     bgGradient: 'from-[#240A47] via-[#120424] to-[#07010E]',
     rimGlow: 'rgba(124, 58, 237, 0.45)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-  ELITE_PLUS: {
-    name: 'ELITE+',
-    identity: 'World Class Azure',
-    materials: 'Electric azure, Cyan titanium, Sapphire crystal',
-    colors: {
-      primary: '#0EA5E9',
-      highlight: '#7DD3FC',
-      shadow: '#0369A1',
-      accent: '#E0F2FE',
-    },
-    frameGradient: 'from-[#E0F2FE] via-[#0EA5E9] to-[#0369A1]',
-    bgGradient: 'from-[#0C4A6E] via-[#031D33] to-[#010B14]',
-    rimGlow: 'rgba(14, 165, 233, 0.45)',
     textShadow: '0 2px 8px rgba(0,0,0,0.9)',
   },
   ELITE: {
@@ -209,18 +209,21 @@ export function PlayerCard({
   showTierLabelBelow = false,
   ...props
 }: PlayerCardProps) {
-  const [imgError, setImgError] = useState(false);
+  const [tilt, setTilt] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    setTilt({ x: (y / rect.height) * -14, y: (x / rect.width) * 14 });
+  };
+
+  const handleMouseLeave = () => setTilt({ x: 0, y: 0 });
 
   const tier = (player?.tier as Tier) || 'SILVER';
   const tierCfg = TIER_CONFIGS[tier] || TIER_CONFIGS.SILVER;
   const playerName = player?.name || "Player";
   const silhouetteVariant = ((playerName.charCodeAt(0) + playerName.length) % 6) as 0 | 1 | 2 | 3 | 4 | 5;
-
-  const hasValidImage =
-    Boolean(player?.imageUrl) &&
-    !imgError &&
-    !player?.imageUrl?.includes('Photo-Missing.png') &&
-    player?.imageUrl?.trim() !== '';
 
   const kitNum = player?.kitNumber ?? (player?.isLegend ? 10 : (playerName.length % 20) + 1);
   const displayName = formatDisplayName(playerName);
@@ -258,12 +261,15 @@ export function PlayerCard({
     <div className="flex flex-col items-center group">
       {/* Outer Card Shell with Chamfered Metallic Frame */}
       <div
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
         className={cn(
-          'relative flex flex-col items-center transition-all duration-300 select-none cursor-pointer group-hover:-translate-y-2 group-hover:brightness-105',
+          'relative flex flex-col items-center transition-all duration-150 select-none cursor-pointer group-hover:-translate-y-2 group-hover:brightness-105',
           scaleMap.card,
           className
         )}
         style={{
+          transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
           filter: `drop-shadow(0 14px 28px rgba(0,0,0,0.85)) drop-shadow(0 0 16px ${tierCfg.rimGlow})`,
         }}
         {...props}
@@ -334,21 +340,14 @@ export function PlayerCard({
                   boxShadow: `0 0 25px rgba(0,0,0,0.85), inset 0 0 15px rgba(0,0,0,0.5), 0 0 15px ${tierCfg.rimGlow}`,
                 }}
               >
-                {hasValidImage ? (
-                  /* eslint-disable-next-line @next/next/no-img-element */
-                  <img
-                    src={player.imageUrl}
-                    alt={player.name}
-                    referrerPolicy="no-referrer"
-                    onError={() => setImgError(true)}
-                    className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-110"
-                  />
-                ) : (
-                  <PlayerSilhouette
-                    variant={silhouetteVariant}
-                    className="w-3/4 h-3/4 text-white/90 transition-transform duration-300 group-hover:scale-110"
-                  />
-                )}
+                <PlayerImage
+                  src={player?.imageUrl}
+                  alt={player?.name}
+                  name={player?.name}
+                  variant={silhouetteVariant}
+                  imgClassName="transition-transform duration-300 group-hover:scale-110"
+                  silhouetteClassName="transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
             </div>
 

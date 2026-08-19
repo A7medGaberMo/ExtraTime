@@ -43,15 +43,15 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
         </svg>
       );
 
-    case 'ELITE_PLUS':
-      // Angular ruby facets (opacity 4%)
+    case 'ULTIMATE':
+      // Sapphire facets (opacity 4%)
       return (
         <svg className="absolute inset-0 w-full h-full opacity-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
-          <pattern id="tex-eliteplus-ruby" width="45" height="45" patternUnits="userSpaceOnUse">
-            <path d="M 22.5 0 L 45 22.5 L 22.5 45 L 0 22.5 Z" fill="none" stroke="#FF7A8A" strokeWidth="0.7" />
-            <line x1="0" y1="0" x2="45" y2="45" stroke="#D72638" strokeWidth="0.4" />
+          <pattern id="tex-ultimate-sapphire" width="45" height="45" patternUnits="userSpaceOnUse">
+            <path d="M 22.5 0 L 45 22.5 L 22.5 45 L 0 22.5 Z" fill="none" stroke="#7DD3FC" strokeWidth="0.7" />
+            <line x1="0" y1="0" x2="45" y2="45" stroke="#0EA5E9" strokeWidth="0.4" />
           </pattern>
-          <rect width="100%" height="100%" fill="url(#tex-eliteplus-ruby)" />
+          <rect width="100%" height="100%" fill="url(#tex-ultimate-sapphire)" />
         </svg>
       );
 

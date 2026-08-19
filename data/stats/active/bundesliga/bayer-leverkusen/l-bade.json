@@ -1,0 +1,52 @@
+{
+  "apiId": 174918,
+  "name": "L. Badé",
+  "clubs": [
+    {
+      "club": "Le Havre II",
+      "appearances": 30,
+      "goals": 3
+    },
+    {
+      "club": "Le Havre",
+      "appearances": 7,
+      "goals": 0
+    },
+    {
+      "club": "Lens",
+      "appearances": 33,
+      "goals": 0
+    },
+    {
+      "club": "Rennes",
+      "appearances": 22,
+      "goals": 1
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Sevilla",
+      "appearances": 93,
+      "goals": 3
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 34,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "France",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 219,
+    "goals": 7
+  }
+}

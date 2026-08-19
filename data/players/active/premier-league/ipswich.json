@@ -107,17 +107,6 @@
       "kitNumber": 19
     },
     {
-      "apiId": 327749,
-      "name": "S. Boniface",
-      "position": "CB",
-      "club": "Ipswich",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327749.png",
-      "kitNumber": 42
-    },
-    {
       "apiId": 37236,
       "name": "A. Matusiwa",
       "position": "CDM/CM",
@@ -149,17 +138,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18397.png",
       "kitNumber": 14
-    },
-    {
-      "apiId": 20089,
-      "name": "W. Burns",
-      "position": "RM/RW",
-      "club": "Ipswich",
-      "nation": "Wales",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20089.png",
-      "kitNumber": 7
     },
     {
       "apiId": 138931,
@@ -270,6 +248,61 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/321648.png",
       "kitNumber": 22
+    },
+    {
+      "apiId": 2823,
+      "name": "S. Lukić",
+      "position": "CM/CDM",
+      "club": "Ipswich",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2823.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 18814,
+      "name": "I. Diop",
+      "position": "CB",
+      "club": "Ipswich",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18814.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 358166,
+      "name": "A. Ouattara",
+      "position": "CM",
+      "club": "Ipswich",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/358166.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 70747,
+      "name": "J. Enciso",
+      "position": "CAM/ST/LW",
+      "club": "Ipswich",
+      "nation": "Paraguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/70747.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 303467,
+      "name": "A. Fatawu",
+      "position": "RW/RM",
+      "club": "Ipswich",
+      "nation": "Ghana",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/303467.png",
+      "kitNumber": 7
     }
   ]
 }

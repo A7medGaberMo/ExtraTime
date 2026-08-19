@@ -1,0 +1,48 @@
+{
+  "apiId": 24882,
+  "name": "O. Mangala",
+  "clubs": [
+    {
+      "club": "VfB Stuttgart II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "VfB Stuttgart",
+      "appearances": 109,
+      "goals": 3
+    },
+    {
+      "club": "Hamburger SV",
+      "appearances": 34,
+      "goals": 1
+    },
+    {
+      "club": "Nottingham Forest",
+      "appearances": 53,
+      "goals": 2
+    },
+    {
+      "club": "Lyon",
+      "appearances": 27,
+      "goals": 2
+    },
+    {
+      "club": "Everton",
+      "appearances": 21,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium",
+      "appearances": 23,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 245,
+    "goals": 9
+  },
+  "currentTeam": "Getafe"
+}

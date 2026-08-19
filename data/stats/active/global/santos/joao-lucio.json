@@ -1,0 +1,82 @@
+{
+  "apiId": 606900,
+  "name": "Joao Lucio",
+  "clubs": [
+    {
+      "club": "Guará",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Internacional",
+      "appearances": 55,
+      "goals": 5
+    },
+    {
+      "club": "Bayer Leverkusen",
+      "appearances": 122,
+      "goals": 21
+    },
+    {
+      "club": "Bayer Leverkusen II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Bayern Munich",
+      "appearances": 218,
+      "goals": 12
+    },
+    {
+      "club": "Inter Milan",
+      "appearances": 136,
+      "goals": 5
+    },
+    {
+      "club": "Juventus",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "São Paulo",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 25,
+      "goals": 2
+    },
+    {
+      "club": "FC Goa",
+      "appearances": 19,
+      "goals": 0
+    },
+    {
+      "club": "Gama",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Brasiliense",
+      "appearances": 31,
+      "goals": 2
+    },
+    {
+      "club": "Santos",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 105,
+      "goals": 4
+    }
+  ],
+  "careerTotal": {
+    "appearances": 630,
+    "goals": 49
+  }
+}

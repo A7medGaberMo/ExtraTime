@@ -1,0 +1,72 @@
+{
+  "apiId": 129126,
+  "name": "A. Bertaccini",
+  "clubs": [
+    {
+      "club": "Genk",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Deinze",
+      "appearances": 17,
+      "goals": 3
+    },
+    {
+      "club": "Austria Lustenau",
+      "appearances": 21,
+      "goals": 3
+    },
+    {
+      "club": "Thes Sport",
+      "appearances": 67,
+      "goals": 42
+    },
+    {
+      "club": "RFC Liège",
+      "appearances": 17,
+      "goals": 11
+    },
+    {
+      "club": "Sint-Truiden",
+      "appearances": 50,
+      "goals": 26
+    },
+    {
+      "club": "Anderlecht",
+      "appearances": 46,
+      "goals": 9
+    }
+  ],
+  "national": [
+    {
+      "team": "Belgium U15",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Belgium U16",
+      "appearances": 7,
+      "goals": 2
+    },
+    {
+      "team": "Belgium U17",
+      "appearances": 8,
+      "goals": 2
+    },
+    {
+      "team": "Belgium U18",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Belgium U19",
+      "appearances": 5,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 218,
+    "goals": 94
+  }
+}

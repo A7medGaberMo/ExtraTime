@@ -1,0 +1,66 @@
+{
+  "apiId": 1585,
+  "name": "Jesé",
+  "clubs": [
+    {
+      "club": "Real Madrid Castilla",
+      "appearances": 80,
+      "goals": 33
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 94,
+      "goals": 18
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "appearances": 18,
+      "goals": 2
+    },
+    {
+      "club": "Las Palmas",
+      "appearances": 93,
+      "goals": 22
+    },
+    {
+      "club": "Stoke City",
+      "appearances": 13,
+      "goals": 1
+    },
+    {
+      "club": "Real Betis",
+      "appearances": 18,
+      "goals": 2
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 17,
+      "goals": 1
+    },
+    {
+      "club": "Ankaragücü",
+      "appearances": 16,
+      "goals": 5
+    },
+    {
+      "club": "Sampdoria",
+      "appearances": 11,
+      "goals": 1
+    },
+    {
+      "club": "Coritiba",
+      "appearances": 6,
+      "goals": 1
+    },
+    {
+      "club": "Johor Darul Ta'zim",
+      "appearances": 13,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 379,
+    "goals": 90
+  }
+}

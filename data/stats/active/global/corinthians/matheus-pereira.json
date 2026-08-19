@@ -1,0 +1,72 @@
+{
+  "apiId": 871,
+  "name": "Matheus Pereira",
+  "clubs": [
+    {
+      "club": "Sporting CP B",
+      "appearances": 42,
+      "goals": 17
+    },
+    {
+      "club": "Sporting CP",
+      "appearances": 15,
+      "goals": 1
+    },
+    {
+      "club": "Chaves",
+      "appearances": 27,
+      "goals": 7
+    },
+    {
+      "club": "1. FC Nürnberg",
+      "appearances": 19,
+      "goals": 3
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 42,
+      "goals": 8
+    },
+    {
+      "club": "West Bromwich Albion",
+      "appearances": 33,
+      "goals": 11
+    },
+    {
+      "club": "Al Hilal",
+      "appearances": 42,
+      "goals": 3
+    },
+    {
+      "club": "Al Wahda",
+      "appearances": 10,
+      "goals": 1
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 74,
+      "goals": 12
+    },
+    {
+      "club": "Cruzeiro",
+      "appearances": 85,
+      "goals": 15
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 401,
+    "goals": 79
+  }
+}

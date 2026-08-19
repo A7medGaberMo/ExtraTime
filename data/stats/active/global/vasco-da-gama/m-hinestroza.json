@@ -1,0 +1,62 @@
+{
+  "apiId": 64134,
+  "name": "M. Hinestroza",
+  "clubs": [
+    {
+      "club": "Orsomarso",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "América de Cali",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Palmeiras",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Pachuca",
+      "appearances": 46,
+      "goals": 2
+    },
+    {
+      "club": "Columbus Crew",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Atlético Nacional",
+      "appearances": 64,
+      "goals": 9
+    },
+    {
+      "club": "Atlético Nacional",
+      "appearances": 40,
+      "goals": 6
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 4,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Colombia U18",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Colombia",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 172,
+    "goals": 19
+  }
+}

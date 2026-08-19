@@ -1,0 +1,46 @@
+{
+  "apiId": 25203,
+  "name": "B. Gimber",
+  "clubs": [
+    {
+      "club": "SV Sandhausen",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "SV Sandhausen II",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "club": "Karlsruher SC",
+      "appearances": 9,
+      "goals": 0
+    },
+    {
+      "club": "Jahn Regensburg",
+      "appearances": 136,
+      "goals": 5
+    },
+    {
+      "club": "Ingolstadt 04",
+      "appearances": 25,
+      "goals": 0
+    },
+    {
+      "club": "Jahn Regensburg II",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Heidenheim",
+      "appearances": 83,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 259,
+    "goals": 6
+  }
+}

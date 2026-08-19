@@ -1,0 +1,57 @@
+{
+  "apiId": 763,
+  "name": "Daniel Fuzato",
+  "clubs": [
+    {
+      "club": "Palmeiras",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Roma",
+      "appearances": 8,
+      "goals": 0
+    },
+    {
+      "club": "Gil Vicente",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "Ibiza",
+      "appearances": 37,
+      "goals": 0
+    },
+    {
+      "club": "Getafe",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "club": "Eibar",
+      "appearances": 10,
+      "goals": 0
+    },
+    {
+      "club": "Vasco da Gama",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U20",
+      "appearances": 1,
+      "goals": 0
+    },
+    {
+      "team": "Brazil U23",
+      "appearances": 1,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 64,
+    "goals": 0
+  }
+}

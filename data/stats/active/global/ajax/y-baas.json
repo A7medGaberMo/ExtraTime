@@ -1,0 +1,22 @@
+{
+  "apiId": 294684,
+  "name": "Y. Baas",
+  "clubs": [
+    {
+      "club": "Ajax",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "Netherlands",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

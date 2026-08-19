@@ -1,0 +1,36 @@
+{
+  "apiId": 413207,
+  "name": "R. Ramos",
+  "clubs": [
+    {
+      "club": "UD Tenerife",
+      "appearances": 205,
+      "goals": 21
+    },
+    {
+      "club": "Levante",
+      "appearances": 21,
+      "goals": 3
+    },
+    {
+      "club": "UD Tenerife",
+      "appearances": 192,
+      "goals": 21
+    },
+    {
+      "club": "Liverpool",
+      "appearances": 0,
+      "goals": 0
+    },
+    {
+      "club": "LA Galaxy",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 430,
+    "goals": 46
+  }
+}

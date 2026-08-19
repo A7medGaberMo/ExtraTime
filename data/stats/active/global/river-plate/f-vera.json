@@ -1,0 +1,52 @@
+{
+  "apiId": 6725,
+  "name": "F. Vera",
+  "clubs": [
+    {
+      "club": "Argentinos Juniors",
+      "appearances": 75,
+      "goals": 8
+    },
+    {
+      "club": "Corinthians",
+      "appearances": 96,
+      "goals": 2
+    },
+    {
+      "club": "Atlético Mineiro",
+      "appearances": 59,
+      "goals": 3
+    },
+    {
+      "club": "River Plate",
+      "appearances": 16,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Argentina U17",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Argentina U20",
+      "appearances": 9,
+      "goals": 1
+    },
+    {
+      "team": "Argentina U22",
+      "appearances": 5,
+      "goals": 1
+    },
+    {
+      "team": "Argentina U23",
+      "appearances": 9,
+      "goals": 1
+    }
+  ],
+  "careerTotal": {
+    "appearances": 246,
+    "goals": 13
+  }
+}

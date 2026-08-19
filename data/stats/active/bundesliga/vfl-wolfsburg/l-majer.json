@@ -1,0 +1,37 @@
+{
+  "apiId": 1321,
+  "name": "L. Majer",
+  "clubs": [
+    {
+      "club": "Lokomotiva Zagreb",
+      "appearances": 62,
+      "goals": 18
+    },
+    {
+      "club": "Dinamo Zagreb",
+      "appearances": 100,
+      "goals": 19
+    },
+    {
+      "club": "Rennes",
+      "appearances": 79,
+      "goals": 9
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 75,
+      "goals": 10
+    }
+  ],
+  "national": [
+    {
+      "team": "Croatia",
+      "appearances": 38,
+      "goals": 9
+    }
+  ],
+  "careerTotal": {
+    "appearances": 316,
+    "goals": 56
+  }
+}

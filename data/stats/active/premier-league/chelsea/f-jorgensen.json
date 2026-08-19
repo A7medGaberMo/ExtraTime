@@ -1,0 +1,32 @@
+{
+  "apiId": 286616,
+  "name": "F. Jörgensen",
+  "clubs": [
+    {
+      "club": "Villarreal B",
+      "appearances": 41,
+      "goals": 0
+    },
+    {
+      "club": "Villarreal",
+      "appearances": 44,
+      "goals": 0
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 36,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Denmark",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 121,
+    "goals": 0
+  }
+}

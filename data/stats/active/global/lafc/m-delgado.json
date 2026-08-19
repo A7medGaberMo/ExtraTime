@@ -1,0 +1,22 @@
+{
+  "apiId": 50814,
+  "name": "M. Delgado",
+  "clubs": [
+    {
+      "club": "Los Angeles FC",
+      "appearances": 85,
+      "goals": 6
+    }
+  ],
+  "national": [
+    {
+      "team": "United States",
+      "appearances": 8,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 85,
+    "goals": 6
+  }
+}

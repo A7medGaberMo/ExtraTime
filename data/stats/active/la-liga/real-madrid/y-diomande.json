@@ -1,0 +1,38 @@
+{
+  "apiId": 513776,
+  "name": "Y. Diomande",
+  "clubs": [
+    {
+      "club": "Leganés B",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "club": "Leganés",
+      "appearances": 10,
+      "goals": 2
+    },
+    {
+      "club": "RB Leipzig",
+      "appearances": 36,
+      "goals": 13
+    },
+    {
+      "club": "Real Madrid",
+      "appearances": 0,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Ivory Coast",
+      "appearances": 14,
+      "goals": 3
+    }
+  ],
+  "careerTotal": {
+    "appearances": 49,
+    "goals": 15
+  },
+  "currentTeam": "Real Madrid"
+}

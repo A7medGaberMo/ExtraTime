@@ -1,0 +1,47 @@
+{
+  "apiId": 1291,
+  "name": "D. Vavro",
+  "clubs": [
+    {
+      "club": "MŠK Žilina",
+      "appearances": 93,
+      "goals": 10
+    },
+    {
+      "club": "MŠK Žilina B",
+      "appearances": 16,
+      "goals": 2
+    },
+    {
+      "club": "Copenhagen",
+      "appearances": 194,
+      "goals": 8
+    },
+    {
+      "club": "Lazio",
+      "appearances": 21,
+      "goals": 0
+    },
+    {
+      "club": "Huesca",
+      "appearances": 11,
+      "goals": 0
+    },
+    {
+      "club": "VfL Wolfsburg",
+      "appearances": 52,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Slovakia",
+      "appearances": 33,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 387,
+    "goals": 24
+  }
+}

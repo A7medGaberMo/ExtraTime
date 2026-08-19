@@ -1,0 +1,21 @@
+{
+  "apiId": 405703,
+  "name": "Diego Caito",
+  "clubs": [
+    {
+      "club": "Goiás",
+      "appearances": 82,
+      "goals": 3
+    },
+    {
+      "club": "Grêmio",
+      "appearances": 1,
+      "goals": 1
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 83,
+    "goals": 4
+  }
+}

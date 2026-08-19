@@ -1,0 +1,37 @@
+{
+  "apiId": 44335,
+  "name": "Hassan Kadesh",
+  "clubs": [
+    {
+      "club": "Al-Ettifaq",
+      "appearances": 157,
+      "goals": 3
+    },
+    {
+      "club": "Al-Hilal",
+      "appearances": 34,
+      "goals": 0
+    },
+    {
+      "club": "Al-Taawoun",
+      "appearances": 84,
+      "goals": 5
+    },
+    {
+      "club": "Al-Ittihad",
+      "appearances": 83,
+      "goals": 4
+    }
+  ],
+  "national": [
+    {
+      "team": "Saudi Arabia",
+      "appearances": 21,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 358,
+    "goals": 12
+  }
+}

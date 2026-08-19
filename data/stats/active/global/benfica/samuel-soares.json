@@ -1,0 +1,52 @@
+{
+  "apiId": 162595,
+  "name": "Samuel Soares",
+  "clubs": [
+    {
+      "club": "Benfica B",
+      "appearances": 32,
+      "goals": 1
+    },
+    {
+      "club": "Benfica",
+      "appearances": 12,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Portugal U15",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U16",
+      "appearances": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U17",
+      "appearances": 12,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U19",
+      "appearances": 5,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U20",
+      "appearances": 3,
+      "goals": 0
+    },
+    {
+      "team": "Portugal U21",
+      "appearances": 17,
+      "goals": 0
+    }
+  ],
+  "careerTotal": {
+    "appearances": 44,
+    "goals": 1
+  }
+}

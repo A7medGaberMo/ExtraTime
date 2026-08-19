@@ -1,0 +1,22 @@
+{
+  "apiId": 609501,
+  "name": "Nadson",
+  "clubs": [
+    {
+      "club": "Santos",
+      "appearances": 2,
+      "goals": 0
+    }
+  ],
+  "national": [
+    {
+      "team": "Brazil U15",
+      "appearances": 3,
+      "goals": 2
+    }
+  ],
+  "careerTotal": {
+    "appearances": 2,
+    "goals": 0
+  }
+}

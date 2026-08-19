@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Napoli",
       "nation": "Italy",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31226.png",
       "kitNumber": 4
@@ -68,7 +68,7 @@
       "position": "RB/CB",
       "club": "Napoli",
       "nation": "Italy",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31042.png",
       "kitNumber": 22
@@ -116,28 +116,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37604.png",
       "kitNumber": 31
-    },
-    {
-      "apiId": 237066,
-      "name": "Rafa Marín",
-      "position": "CB",
-      "club": "Napoli",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/237066.png",
-      "kitNumber": 40
-    },
-    {
-      "apiId": 162032,
-      "name": "Miguel Gutiérrez",
-      "position": "LB",
-      "club": "Napoli",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162032.png",
-      "kitNumber": 3
     },
     {
       "apiId": 31390,
@@ -189,7 +167,7 @@
       "position": "CM/CAM",
       "club": "Napoli",
       "nation": "Scotland",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/903.png",
       "kitNumber": 8
@@ -200,7 +178,7 @@
       "position": "CDM/CM",
       "club": "Napoli",
       "nation": "Slovakia",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47439.png",
       "kitNumber": 68
@@ -299,7 +277,7 @@
       "position": "ST",
       "club": "Napoli",
       "nation": "Belgium",
-      "tier": "ELITE_PLUS",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/907.png",
       "kitNumber": 9

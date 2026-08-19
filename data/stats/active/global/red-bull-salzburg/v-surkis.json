@@ -1,0 +1,62 @@
+{
+  "apiId": 395549,
+  "name": "V. Surkis",
+  "clubs": [
+    {
+      "club": "Dynamo-2 Kyiv",
+      "appearances": 56,
+      "goals": 21
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 166,
+      "goals": 94
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 296,
+      "goals": 173
+    },
+    {
+      "club": "Chelsea",
+      "appearances": 77,
+      "goals": 22
+    },
+    {
+      "club": "AC Milan",
+      "appearances": 18,
+      "goals": 0
+    },
+    {
+      "club": "Dynamo Kyiv",
+      "appearances": 55,
+      "goals": 23
+    },
+    {
+      "club": "Red Bull Salzburg",
+      "appearances": 12,
+      "goals": 1
+    }
+  ],
+  "national": [
+    {
+      "team": "Ukraine U19",
+      "appearances": 8,
+      "goals": 5
+    },
+    {
+      "team": "Ukraine U21",
+      "appearances": 7,
+      "goals": 6
+    },
+    {
+      "team": "Ukraine",
+      "appearances": 111,
+      "goals": 48
+    }
+  ],
+  "careerTotal": {
+    "appearances": 680,
+    "goals": 334
+  }
+}

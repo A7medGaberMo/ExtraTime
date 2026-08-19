@@ -1,0 +1,31 @@
+{
+  "apiId": 323785,
+  "name": "V. Taborda",
+  "clubs": [
+    {
+      "club": "Boca Juniors",
+      "appearances": 17,
+      "goals": 0
+    },
+    {
+      "club": "Platense",
+      "appearances": 72,
+      "goals": 11
+    },
+    {
+      "club": "Platense",
+      "appearances": 36,
+      "goals": 5
+    },
+    {
+      "club": "Panathinaikos",
+      "appearances": 14,
+      "goals": 4
+    }
+  ],
+  "national": [],
+  "careerTotal": {
+    "appearances": 139,
+    "goals": 20
+  }
+}
