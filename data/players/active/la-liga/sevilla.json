@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Sevilla",
       "nation": "Greece",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557.png",
       "kitNumber": 1
@@ -116,6 +116,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341453.png",
       "kitNumber": 36
+    },
+    {
+      "apiId": 79258,
+      "name": "J. Díaz",
+      "position": "CB",
+      "club": "Sevilla",
+      "nation": "Colombia",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/79258.png",
+      "kitNumber": 28
     },
     {
       "apiId": 546857,
@@ -259,17 +270,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546798.png",
       "kitNumber": 38
-    },
-    {
-      "apiId": 79258,
-      "name": "J. Díaz",
-      "position": "CB",
-      "club": "Sevilla",
-      "nation": "Colombia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/79258.png",
-      "kitNumber": 28
     }
   ]
 }

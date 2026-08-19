@@ -140,6 +140,17 @@
       "kitNumber": 10
     },
     {
+      "apiId": 265448,
+      "name": "M. Farji",
+      "position": "ST",
+      "club": "Venezia",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/265448.png",
+      "kitNumber": 44
+    },
+    {
       "apiId": 30532,
       "name": "A. Duncan",
       "position": "CM/CDM",
@@ -347,17 +358,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/266185.png",
       "kitNumber": 21
-    },
-    {
-      "apiId": 265448,
-      "name": "M. Farji",
-      "position": "ST",
-      "club": "Venezia",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/265448.png",
-      "kitNumber": 44
     },
     {
       "apiId": 212,

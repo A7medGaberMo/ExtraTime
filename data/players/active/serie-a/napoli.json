@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Napoli",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/312.png",
       "kitNumber": 1
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Napoli",
       "nation": "Italy",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31226.png",
       "kitNumber": 4
@@ -162,6 +162,17 @@
       "kitNumber": 6
     },
     {
+      "apiId": 629,
+      "name": "K. De Bruyne",
+      "position": "CAM/CM",
+      "club": "Napoli",
+      "nation": "Belgium",
+      "tier": "ULTIMATE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/629.png",
+      "kitNumber": 17
+    },
+    {
       "apiId": 903,
       "name": "S. McTominay",
       "position": "CM/CAM",
@@ -178,7 +189,7 @@
       "position": "CDM/CM",
       "club": "Napoli",
       "nation": "Slovakia",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47439.png",
       "kitNumber": 68
@@ -305,6 +316,17 @@
       "kitNumber": 21
     },
     {
+      "apiId": 128478,
+      "name": "W. Cheddira",
+      "position": "ST",
+      "club": "Napoli",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/128478.png",
+      "kitNumber": 45
+    },
+    {
       "apiId": 199089,
       "name": "L. Lucca",
       "position": "ST",
@@ -314,17 +336,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/199089.png",
       "kitNumber": 20
-    },
-    {
-      "apiId": 128478,
-      "name": "W. Cheddira",
-      "position": "ST",
-      "club": "Napoli",
-      "nation": "Morocco",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/128478.png",
-      "kitNumber": 45
     },
     {
       "apiId": 310943,

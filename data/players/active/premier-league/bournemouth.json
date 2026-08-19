@@ -24,21 +24,21 @@
       "position": "GK",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18932.png",
       "kitNumber": 17
     },
     {
-      "apiId": 22136,
-      "name": "B. Diakité",
-      "position": "CB/RB",
+      "apiId": 144577,
+      "name": "António Silva",
+      "position": "CB",
       "club": "Bournemouth",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Portugal",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22136.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/144577.png",
+      "kitNumber": 4
     },
     {
       "apiId": 162267,
@@ -50,6 +50,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162267.png",
       "kitNumber": 3
+    },
+    {
+      "apiId": 182772,
+      "name": "Juanlu Sánchez",
+      "position": "RB/RM",
+      "club": "Bournemouth",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182772.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 22136,
+      "name": "B. Diakité",
+      "position": "CB/RB",
+      "club": "Bournemouth",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22136.png",
+      "kitNumber": 18
     },
     {
       "apiId": 18869,
@@ -118,17 +140,6 @@
       "kitNumber": 8
     },
     {
-      "apiId": 1125,
-      "name": "R. Christie",
-      "position": "CM/RW",
-      "club": "Bournemouth",
-      "nation": "Scotland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1125.png",
-      "kitNumber": 10
-    },
-    {
       "apiId": 18872,
       "name": "L. Cook",
       "position": "CM/CDM",
@@ -145,10 +156,21 @@
       "position": "LM/CAM",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19245.png",
       "kitNumber": 16
+    },
+    {
+      "apiId": 1125,
+      "name": "R. Christie",
+      "position": "CM/RW",
+      "club": "Bournemouth",
+      "nation": "Scotland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1125.png",
+      "kitNumber": 10
     },
     {
       "apiId": 361485,
@@ -167,7 +189,7 @@
       "position": "CM",
       "club": "Bournemouth",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626383.png",
       "kitNumber": 51
@@ -178,7 +200,7 @@
       "position": "CM",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/573755.png",
       "kitNumber": 53
@@ -266,32 +288,10 @@
       "position": "ST",
       "club": "Bournemouth",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/402434.png",
       "kitNumber": 50
-    },
-    {
-      "apiId": 144577,
-      "name": "António Silva",
-      "position": "CB",
-      "club": "Bournemouth",
-      "nation": "Portugal",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/144577.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 182772,
-      "name": "Juanlu Sánchez",
-      "position": "RB/RM",
-      "club": "Bournemouth",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182772.png",
-      "kitNumber": 16
     }
   ]
 }

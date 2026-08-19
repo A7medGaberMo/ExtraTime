@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "West Ham",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/253.png",
       "kitNumber": 23
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/337932.png",
       "kitNumber": 49
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288116.png",
       "kitNumber": 42
@@ -112,7 +112,7 @@
       "position": "LB/CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327730.png",
       "kitNumber": 30
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557408.png",
       "kitNumber": 14
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "Lithuania",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557541.png",
       "kitNumber": 4
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/553065.png",
       "kitNumber": 6
@@ -156,10 +156,21 @@
       "position": "RB",
       "club": "West Ham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284444.png",
       "kitNumber": 36
+    },
+    {
+      "apiId": 19428,
+      "name": "J. Bowen",
+      "position": "RW/ST",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19428.png",
+      "kitNumber": 20
     },
     {
       "apiId": 189999,
@@ -184,6 +195,17 @@
       "kitNumber": 8
     },
     {
+      "apiId": 50856,
+      "name": "V. Castellanos",
+      "position": "ST",
+      "club": "West Ham",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50856.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 326176,
       "name": "S. Magassa",
       "position": "CDM/CM",
@@ -204,72 +226,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/291363.png",
       "kitNumber": 40
-    },
-    {
-      "apiId": 401278,
-      "name": "M. Kanté",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/401278.png",
-      "kitNumber": 55
-    },
-    {
-      "apiId": 288118,
-      "name": "L. Orford",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/288118.png",
-      "kitNumber": 61
-    },
-    {
-      "apiId": 552938,
-      "name": "P. Fearon",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/552938.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 358969,
-      "name": "K. Lamadrid",
-      "position": "CM",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/358969.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 19428,
-      "name": "J. Bowen",
-      "position": "RW/ST",
-      "club": "West Ham",
-      "nation": "England",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19428.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 50856,
-      "name": "V. Castellanos",
-      "position": "ST",
-      "club": "West Ham",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/50856.png",
-      "kitNumber": 11
     },
     {
       "apiId": 665,
@@ -294,6 +250,50 @@
       "kitNumber": 19
     },
     {
+      "apiId": 401278,
+      "name": "M. Kanté",
+      "position": "CM",
+      "club": "West Ham",
+      "nation": "France",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/401278.png",
+      "kitNumber": 55
+    },
+    {
+      "apiId": 288118,
+      "name": "L. Orford",
+      "position": "CM",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/288118.png",
+      "kitNumber": 61
+    },
+    {
+      "apiId": 552938,
+      "name": "P. Fearon",
+      "position": "CM",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/552938.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 358969,
+      "name": "K. Lamadrid",
+      "position": "CM",
+      "club": "West Ham",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/358969.png",
+      "kitNumber": 21
+    },
+    {
       "apiId": 344707,
       "name": "C. Marshall",
       "position": "ST",
@@ -310,7 +310,7 @@
       "position": "ST",
       "club": "West Ham",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/432404.png",
       "kitNumber": 10

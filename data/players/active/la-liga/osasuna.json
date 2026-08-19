@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Osasuna",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46646.png",
       "kitNumber": 1
@@ -61,6 +61,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/279822.png",
       "kitNumber": 22
+    },
+    {
+      "apiId": 47566,
+      "name": "Javi Galán",
+      "position": "LB",
+      "club": "Osasuna",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47566.png",
+      "kitNumber": 21
     },
     {
       "apiId": 47533,
@@ -259,17 +270,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/421044.png",
       "kitNumber": 41
-    },
-    {
-      "apiId": 47566,
-      "name": "Javi Galán",
-      "position": "LB",
-      "club": "Osasuna",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47566.png",
-      "kitNumber": 21
     }
   ]
 }

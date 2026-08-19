@@ -8,12 +8,23 @@
   },
   "players": [
     {
+      "apiId": 19657,
+      "name": "M. Rodák",
+      "position": "GK",
+      "club": "Al-Ettifaq",
+      "nation": "Slovakia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19657.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 576236,
       "name": "B. Al Dawaa",
       "position": "GK",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576236.png",
       "kitNumber": 76
@@ -24,7 +35,7 @@
       "position": "GK",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626102.png",
       "kitNumber": 23
@@ -35,7 +46,7 @@
       "position": "GK",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/578974.png",
       "kitNumber": 44
@@ -46,7 +57,7 @@
       "position": "GK",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576237.png",
       "kitNumber": 92
@@ -57,7 +68,7 @@
       "position": "GK",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/579648.png",
       "kitNumber": 22
@@ -68,21 +79,109 @@
       "position": "GK",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/388481.png",
       "kitNumber": null
     },
     {
-      "apiId": 19657,
-      "name": "M. Rodák",
-      "position": "GK",
+      "apiId": 1111,
+      "name": "J. Hendry",
+      "position": "CB",
       "club": "Al-Ettifaq",
-      "nation": "Slovakia",
+      "nation": "Scotland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1111.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 44303,
+      "name": "Abdullah Madu",
+      "position": "CB",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19657.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/44303.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 44422,
+      "name": "Abdulbasit Al-Hindi",
+      "position": "CB",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44422.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 2636,
+      "name": "Madallah Al Olayan",
+      "position": "RB",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2636.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 44476,
+      "name": "Radhi Al Otaibi",
+      "position": "RB",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44476.png",
+      "kitNumber": 61
+    },
+    {
+      "apiId": 135341,
+      "name": "Meshal Sibyani",
+      "position": "CB",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/135341.png",
+      "kitNumber": 87
+    },
+    {
+      "apiId": 420689,
+      "name": "Meshal Al Alaeli",
+      "position": "LB",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/420689.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 670146,
+      "name": "Ahmed Al Omaisi",
+      "position": "CB",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/670146.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 669873,
+      "name": "Abdullah Balharith",
+      "position": "CB",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/669873.png",
+      "kitNumber": null
     },
     {
       "apiId": 491455,
@@ -94,17 +193,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/491455.png",
       "kitNumber": 2
-    },
-    {
-      "apiId": 420689,
-      "name": "Meshal Al Alaeli",
-      "position": "CB",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/420689.png",
-      "kitNumber": 13
     },
     {
       "apiId": 606190,
@@ -140,61 +228,6 @@
       "kitNumber": 27
     },
     {
-      "apiId": 2636,
-      "name": "Madallah Al Olayan",
-      "position": "CB",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2636.png",
-      "kitNumber": 33
-    },
-    {
-      "apiId": 670146,
-      "name": "Ahmed Al Omaisi",
-      "position": "CB",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/670146.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 44476,
-      "name": "Radhi Al Otaibi",
-      "position": "CB",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44476.png",
-      "kitNumber": 61
-    },
-    {
-      "apiId": 135341,
-      "name": "Meshal Sibyani",
-      "position": "CB",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/135341.png",
-      "kitNumber": 87
-    },
-    {
-      "apiId": 669873,
-      "name": "Abdullah Balharith",
-      "position": "CB",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/669873.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 525696,
       "name": "Awad Dahal",
       "position": "CB",
@@ -206,42 +239,31 @@
       "kitNumber": 12
     },
     {
-      "apiId": 1111,
-      "name": "J. Hendry",
-      "position": "CB",
+      "apiId": 25349,
+      "name": "O. Duda",
+      "position": "CAM/CM",
       "club": "Al-Ettifaq",
-      "nation": "Scotland",
-      "tier": "GOLD",
+      "nation": "Slovakia",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1111.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/25349.png",
+      "kitNumber": 11
     },
     {
-      "apiId": 44422,
-      "name": "Abdulbasit Al-Hindi",
-      "position": "CB",
+      "apiId": 47546,
+      "name": "Álvaro Medrán",
+      "position": "CM/CAM",
       "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "nation": "Spain",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44422.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 44303,
-      "name": "Abdullah Madu",
-      "position": "CB",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44303.png",
-      "kitNumber": 3
+      "imageUrl": "https://media.api-sports.io/football/players/47546.png",
+      "kitNumber": 10
     },
     {
       "apiId": 576147,
       "name": "F. Al Ghamdi",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -250,15 +272,26 @@
       "kitNumber": 6
     },
     {
-      "apiId": 607039,
-      "name": "M. Al Khalaf",
-      "position": "CM",
+      "apiId": 37121,
+      "name": "Mukhtar Ali",
+      "position": "CDM/CM",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/607039.png",
-      "kitNumber": null
+      "imageUrl": "https://media.api-sports.io/football/players/37121.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 284099,
+      "name": "M. Gluščević",
+      "position": "LW/RW",
+      "club": "Al-Ettifaq",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284099.png",
+      "kitNumber": 71
     },
     {
       "apiId": 613458,
@@ -272,37 +305,15 @@
       "kitNumber": 58
     },
     {
-      "apiId": 37121,
-      "name": "Mukhtar Ali",
+      "apiId": 607039,
+      "name": "M. Al Khalaf",
       "position": "CM",
       "club": "Al-Ettifaq",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37121.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 25349,
-      "name": "O. Duda",
-      "position": "CM",
-      "club": "Al-Ettifaq",
-      "nation": "Slovakia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25349.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 47546,
-      "name": "Álvaro Medrán",
-      "position": "CM",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47546.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/607039.png",
+      "kitNumber": null
     },
     {
       "apiId": 643746,
@@ -314,6 +325,39 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/643746.png",
       "kitNumber": 21
+    },
+    {
+      "apiId": 666,
+      "name": "M. Dembélé",
+      "position": "ST",
+      "club": "Al-Ettifaq",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/666.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 44701,
+      "name": "Khalid Al Ghannam",
+      "position": "LW/RW",
+      "club": "Al-Ettifaq",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44701.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 483109,
+      "name": "M. Nkota",
+      "position": "ST/RW",
+      "club": "Al-Ettifaq",
+      "nation": "South Africa",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/483109.png",
+      "kitNumber": 15
     },
     {
       "apiId": 669874,
@@ -338,17 +382,6 @@
       "kitNumber": 29
     },
     {
-      "apiId": 44701,
-      "name": "Khalid Al Ghannam",
-      "position": "ST",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44701.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 491453,
       "name": "Jalal Al Salem",
       "position": "ST",
@@ -364,33 +397,11 @@
       "name": "João Gabriel e Costa Cesco",
       "position": "ST",
       "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
+      "nation": "Brazil",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/368096.png",
       "kitNumber": 67
-    },
-    {
-      "apiId": 666,
-      "name": "M. Dembélé",
-      "position": "ST",
-      "club": "Al-Ettifaq",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/666.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 284099,
-      "name": "M. Gluščević",
-      "position": "CM",
-      "club": "Al-Ettifaq",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284099.png",
-      "kitNumber": 71
     },
     {
       "apiId": 653528,
@@ -402,17 +413,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/653528.png",
       "kitNumber": 20
-    },
-    {
-      "apiId": 483109,
-      "name": "M. Nkota",
-      "position": "ST",
-      "club": "Al-Ettifaq",
-      "nation": "South Africa",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/483109.png",
-      "kitNumber": 15
     }
   ]
 }

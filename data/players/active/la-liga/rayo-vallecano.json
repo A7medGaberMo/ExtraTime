@@ -129,6 +129,17 @@
       "kitNumber": 26
     },
     {
+      "apiId": 386869,
+      "name": "Dani Martínez",
+      "position": "CB",
+      "club": "Rayo Vallecano",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/386869.png",
+      "kitNumber": 35
+    },
+    {
       "apiId": 47543,
       "name": "Álvaro García",
       "position": "LM/LW",
@@ -281,17 +292,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/551397.png",
       "kitNumber": 29
-    },
-    {
-      "apiId": 386869,
-      "name": "Dani Martínez",
-      "position": "CB",
-      "club": "Rayo Vallecano",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/386869.png",
-      "kitNumber": 35
     }
   ]
 }

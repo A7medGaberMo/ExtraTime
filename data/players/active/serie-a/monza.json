@@ -239,17 +239,6 @@
       "kitNumber": 47
     },
     {
-      "apiId": 31532,
-      "name": "P. Ciurria",
-      "position": "RM/RW/LM",
-      "club": "Monza",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31532.png",
-      "kitNumber": 26
-    },
-    {
       "apiId": 213,
       "name": "K. Baldé",
       "position": "LW/ST",
@@ -259,6 +248,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/213.png",
       "kitNumber": 17
+    },
+    {
+      "apiId": 31532,
+      "name": "P. Ciurria",
+      "position": "RM/RW/LM",
+      "club": "Monza",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31532.png",
+      "kitNumber": 26
     },
     {
       "apiId": 30879,

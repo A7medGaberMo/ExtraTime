@@ -8,6 +8,17 @@
   },
   "players": [
     {
+      "apiId": 526,
+      "name": "A. Onana",
+      "position": "GK",
+      "club": "Trabzonspor",
+      "nation": "Cameroon",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/526.png",
+      "kitNumber": 24
+    },
+    {
       "apiId": 394215,
       "name": "O. Çevikkan",
       "position": "GK",
@@ -30,17 +41,6 @@
       "kitNumber": 96
     },
     {
-      "apiId": 526,
-      "name": "A. Onana",
-      "position": "GK",
-      "club": "Trabzonspor",
-      "nation": "Cameroon",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/526.png",
-      "kitNumber": 24
-    },
-    {
       "apiId": 479721,
       "name": "A. Yıldırım",
       "position": "GK",
@@ -52,15 +52,103 @@
       "kitNumber": 1
     },
     {
+      "apiId": 39,
+      "name": "S. Savić",
+      "position": "CB",
+      "club": "Trabzonspor",
+      "nation": "Montenegro",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39.png",
+      "kitNumber": 15
+    },
+    {
       "apiId": 62490,
       "name": "S. Akaydin",
       "position": "CB",
       "club": "Trabzonspor",
       "nation": "Turkey",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/62490.png",
       "kitNumber": 4
+    },
+    {
+      "apiId": 72048,
+      "name": "C. Özkacar",
+      "position": "CB/LB",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/72048.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 332056,
+      "name": "Wagner Pina",
+      "position": "RB",
+      "club": "Trabzonspor",
+      "nation": "Cape Verde",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/332056.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 308689,
+      "name": "S. Lopes Cabral",
+      "position": "LB",
+      "club": "Trabzonspor",
+      "nation": "Cape Verde",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/308689.png",
+      "kitNumber": 55
+    },
+    {
+      "apiId": 63627,
+      "name": "A. Batagov",
+      "position": "CB",
+      "club": "Trabzonspor",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/63627.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 338815,
+      "name": "A. Boşluk",
+      "position": "LB",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/338815.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 62323,
+      "name": "M. Eskihellaç",
+      "position": "RWB/RM",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/62323.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 371027,
+      "name": "C. Nwaiwu",
+      "position": "CB",
+      "club": "Trabzonspor",
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/371027.png",
+      "kitNumber": 27
     },
     {
       "apiId": 671502,
@@ -74,81 +162,15 @@
       "kitNumber": null
     },
     {
-      "apiId": 63627,
-      "name": "A. Batagov",
-      "position": "CB",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/63627.png",
-      "kitNumber": 44
-    },
-    {
-      "apiId": 338815,
-      "name": "A. Boşluk",
-      "position": "CB",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/338815.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 496868,
       "name": "T. İnce",
       "position": "CB",
       "club": "Trabzonspor",
-      "nation": "Trinidad and Tobago",
+      "nation": "Turkey",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/496868.png",
       "kitNumber": 92
-    },
-    {
-      "apiId": 308689,
-      "name": "S. Lopes Cabral",
-      "position": "CB",
-      "club": "Trabzonspor",
-      "nation": "Cape Verde",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/308689.png",
-      "kitNumber": 55
-    },
-    {
-      "apiId": 72048,
-      "name": "C. Özkacar",
-      "position": "CB",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/72048.png",
-      "kitNumber": 39
-    },
-    {
-      "apiId": 332056,
-      "name": "Wagner Pina",
-      "position": "CB",
-      "club": "Trabzonspor",
-      "nation": "Cape Verde",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/332056.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 39,
-      "name": "S. Savić",
-      "position": "CB",
-      "club": "Trabzonspor",
-      "nation": "Montenegro",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/39.png",
-      "kitNumber": 15
     },
     {
       "apiId": 610902,
@@ -162,15 +184,125 @@
       "kitNumber": 94
     },
     {
+      "apiId": 1938,
+      "name": "R. Malinovskyi",
+      "position": "CAM/CM",
+      "club": "Trabzonspor",
+      "nation": "Ukraine",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1938.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 47443,
+      "name": "O. Yokuşlu",
+      "position": "CDM/CM",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47443.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 49942,
+      "name": "O. Tufan",
+      "position": "CM/CAM",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/49942.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 274355,
       "name": "B. Bouchouari",
+      "position": "CM/CAM",
+      "club": "Trabzonspor",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/274355.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 21087,
+      "name": "B. Mendy",
+      "position": "CDM/CM",
+      "club": "Trabzonspor",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21087.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 319514,
+      "name": "C. Çanak",
+      "position": "RW/CAM",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/319514.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 22408,
+      "name": "T. Jabol-Folcarelli",
+      "position": "CM",
+      "club": "Trabzonspor",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22408.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 158431,
+      "name": "M. Kabasakal",
       "position": "CM",
       "club": "Trabzonspor",
       "nation": "Turkey",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/274355.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/158431.png",
+      "kitNumber": 57
+    },
+    {
+      "apiId": 107660,
+      "name": "M. Mimaroğlu",
+      "position": "LW/RW",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/107660.png",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 454973,
+      "name": "N. Saviolo",
+      "position": "CM",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/454973.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 161790,
+      "name": "A. Şimşir",
+      "position": "LW/LM",
+      "club": "Trabzonspor",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161790.png",
+      "kitNumber": 58
     },
     {
       "apiId": 593482,
@@ -195,50 +327,6 @@
       "kitNumber": 90
     },
     {
-      "apiId": 62323,
-      "name": "M. Eskihellaç",
-      "position": "CB",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/62323.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 22408,
-      "name": "T. Jabol-Folcarelli",
-      "position": "CM",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22408.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 158431,
-      "name": "M. Kabasakal",
-      "position": "CM",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/158431.png",
-      "kitNumber": 57
-    },
-    {
-      "apiId": 1938,
-      "name": "R. Malinovskyi",
-      "position": "LB/LWB",
-      "club": "Trabzonspor",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1938.png",
-      "kitNumber": 17
-    },
-    {
       "apiId": 422404,
       "name": "S. Malkoçoğlu",
       "position": "CM",
@@ -250,103 +338,48 @@
       "kitNumber": 74
     },
     {
-      "apiId": 21087,
-      "name": "B. Mendy",
-      "position": "CM",
+      "apiId": 306,
+      "name": "Mohamed Salah",
+      "position": "RW/ST",
       "club": "Trabzonspor",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Egypt",
+      "tier": "ULTIMATE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/21087.png",
-      "kitNumber": null
+      "imageUrl": "https://media.api-sports.io/football/players/306.png",
+      "kitNumber": 10
     },
     {
-      "apiId": 371027,
-      "name": "C. Nwaiwu",
-      "position": "CB",
+      "apiId": 15812,
+      "name": "P. Onuachu",
+      "position": "ST",
       "club": "Trabzonspor",
       "nation": "Nigeria",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/371027.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 49942,
-      "name": "O. Tufan",
-      "position": "CM",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/49942.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 47443,
-      "name": "O. Yokuşlu",
-      "position": "CM",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47443.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 319514,
-      "name": "C. Çanak",
-      "position": "ST",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/319514.png",
-      "kitNumber": 99
-    },
-    {
-      "apiId": 43092,
-      "name": "D. Drăguş",
-      "position": "ST",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/43092.png",
-      "kitNumber": 70
-    },
-    {
-      "apiId": 610759,
-      "name": "T. Karadeniz",
-      "position": "ST",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/610759.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 107660,
-      "name": "M. Mimaroğlu",
-      "position": "CM",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/107660.png",
-      "kitNumber": 77
+      "imageUrl": "https://media.api-sports.io/football/players/15812.png",
+      "kitNumber": 30
     },
     {
       "apiId": 3638,
       "name": "E. Muçi",
-      "position": "ST",
+      "position": "CAM/LW",
       "club": "Trabzonspor",
       "nation": "Albania",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/3638.png",
       "kitNumber": 10
+    },
+    {
+      "apiId": 43092,
+      "name": "D. Drăguş",
+      "position": "ST/LW",
+      "club": "Trabzonspor",
+      "nation": "Romania",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/43092.png",
+      "kitNumber": 70
     },
     {
       "apiId": 50246,
@@ -360,48 +393,15 @@
       "kitNumber": 14
     },
     {
-      "apiId": 15812,
-      "name": "P. Onuachu",
+      "apiId": 610759,
+      "name": "T. Karadeniz",
       "position": "ST",
       "club": "Trabzonspor",
       "nation": "Turkey",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/15812.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 306,
-      "name": "Mohamed Salah",
-      "position": "RW/ST",
-      "club": "Trabzonspor",
-      "nation": "Egypt",
-      "tier": "ULTIMATE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/306.png",
+      "imageUrl": "https://media.api-sports.io/football/players/610759.png",
       "kitNumber": null
-    },
-    {
-      "apiId": 454973,
-      "name": "N. Saviolo",
-      "position": "CM",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/454973.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 161790,
-      "name": "A. Şimşir",
-      "position": "CM",
-      "club": "Trabzonspor",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161790.png",
-      "kitNumber": 58
     }
   ]
 }

@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Liverpool",
       "nation": "Brazil",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280.png",
       "kitNumber": 1
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Liverpool",
       "nation": "Wales",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/180316.png",
       "kitNumber": 95
@@ -57,7 +57,7 @@
       "position": "GK",
       "club": "Liverpool",
       "nation": "Poland",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415992.png",
       "kitNumber": 13
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Liverpool",
       "nation": "Netherlands",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/290.png",
       "kitNumber": 4
@@ -90,10 +90,21 @@
       "position": "LB/LM",
       "club": "Liverpool",
       "nation": "Hungary",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/206254.png",
       "kitNumber": 6
+    },
+    {
+      "apiId": 101814,
+      "name": "R. Araújo",
+      "position": "CB/RB",
+      "club": "Liverpool",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/101814.png",
+      "kitNumber": 4
     },
     {
       "apiId": 284,
@@ -101,7 +112,7 @@
       "position": "CB/RB",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284.png",
       "kitNumber": 2
@@ -112,7 +123,7 @@
       "position": "LB",
       "club": "Liverpool",
       "nation": "Greece",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1600.png",
       "kitNumber": 21
@@ -123,7 +134,7 @@
       "position": "RB",
       "club": "Liverpool",
       "nation": "Scotland",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135525.png",
       "kitNumber": 47
@@ -145,7 +156,7 @@
       "position": "CB",
       "club": "Liverpool",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/367636.png",
       "kitNumber": 97
@@ -156,10 +167,21 @@
       "position": "CB",
       "club": "Liverpool",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606814.png",
       "kitNumber": 75
+    },
+    {
+      "apiId": 203224,
+      "name": "F. Wirtz",
+      "position": "CAM/CM",
+      "club": "Liverpool",
+      "nation": "Germany",
+      "tier": "ULTIMATE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/203224.png",
+      "kitNumber": 7
     },
     {
       "apiId": 6716,
@@ -171,17 +193,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6716.png",
       "kitNumber": 10
-    },
-    {
-      "apiId": 203224,
-      "name": "F. Wirtz",
-      "position": "CAM/CM",
-      "club": "Liverpool",
-      "nation": "Germany",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/203224.png",
-      "kitNumber": 7
     },
     {
       "apiId": 542,
@@ -211,7 +222,7 @@
       "position": "CM",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/293.png",
       "kitNumber": 17
@@ -222,7 +233,7 @@
       "position": "CAM/RW",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19035.png",
       "kitNumber": 19
@@ -233,7 +244,7 @@
       "position": "CDM/CM",
       "club": "Liverpool",
       "nation": "Japan",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8500.png",
       "kitNumber": 3
@@ -266,7 +277,7 @@
       "position": "CM",
       "club": "Liverpool",
       "nation": "Scotland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/389032.png",
       "kitNumber": 68
@@ -283,17 +294,6 @@
       "kitNumber": 9
     },
     {
-      "apiId": 174565,
-      "name": "H. Ekitike",
-      "position": "ST",
-      "club": "Liverpool",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/174565.png",
-      "kitNumber": 22
-    },
-    {
       "apiId": 247,
       "name": "C. Gakpo",
       "position": "LW/ST",
@@ -305,15 +305,37 @@
       "kitNumber": 18
     },
     {
+      "apiId": 174565,
+      "name": "H. Ekitike",
+      "position": "ST",
+      "club": "Liverpool",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/174565.png",
+      "kitNumber": 22
+    },
+    {
       "apiId": 30410,
       "name": "F. Chiesa",
       "position": "RW/ST",
       "club": "Liverpool",
       "nation": "Italy",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30410.png",
       "kitNumber": 14
+    },
+    {
+      "apiId": 286764,
+      "name": "Kaide Gordon",
+      "position": "ST",
+      "club": "Liverpool",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286764.png",
+      "kitNumber": 49
     },
     {
       "apiId": 452685,
@@ -343,7 +365,7 @@
       "position": "ST",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/588501.png",
       "kitNumber": 40
@@ -354,7 +376,7 @@
       "position": "ST",
       "club": "Liverpool",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/338751.png",
       "kitNumber": 41
@@ -365,32 +387,10 @@
       "position": "ST",
       "club": "Liverpool",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/498377.png",
       "kitNumber": 79
-    },
-    {
-      "apiId": 286764,
-      "name": "Kaide Gordon",
-      "position": "ST",
-      "club": "Liverpool",
-      "nation": "The Football Association",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286764.png",
-      "kitNumber": 49
-    },
-    {
-      "apiId": 101814,
-      "name": "R. Araújo",
-      "position": "CB/RB",
-      "club": "Liverpool",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/101814.png",
-      "kitNumber": 4
     }
   ]
 }

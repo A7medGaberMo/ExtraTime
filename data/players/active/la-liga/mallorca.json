@@ -74,6 +74,17 @@
       "kitNumber": 3
     },
     {
+      "apiId": 462277,
+      "name": "I. Salhi",
+      "position": "CB",
+      "club": "Mallorca",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/462277.png",
+      "kitNumber": 26
+    },
+    {
       "apiId": 335697,
       "name": "David López",
       "position": "CB/CDM",
@@ -94,17 +105,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/384861.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 462277,
-      "name": "I. Salhi",
-      "position": "CB",
-      "club": "Mallorca",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/462277.png",
-      "kitNumber": 26
     },
     {
       "apiId": 612028,
@@ -173,6 +173,17 @@
       "kitNumber": 12
     },
     {
+      "apiId": 285909,
+      "name": "Pablo Torre",
+      "position": "CAM/CM",
+      "club": "Mallorca",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/285909.png",
+      "kitNumber": 20
+    },
+    {
       "apiId": 1701,
       "name": "Manu Morlanes",
       "position": "CM/CDM",
@@ -193,17 +204,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/107194.png",
       "kitNumber": 6
-    },
-    {
-      "apiId": 285909,
-      "name": "Pablo Torre",
-      "position": "CAM/CM",
-      "club": "Mallorca",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/285909.png",
-      "kitNumber": 20
     },
     {
       "apiId": 138809,

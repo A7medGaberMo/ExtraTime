@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Galatasaray",
       "nation": "Turkey",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/49866.png",
       "kitNumber": 1
@@ -30,6 +30,17 @@
       "kitNumber": 19
     },
     {
+      "apiId": 327517,
+      "name": "J. Yılmaz",
+      "position": "GK",
+      "club": "Galatasaray",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/327517.png",
+      "kitNumber": 24
+    },
+    {
       "apiId": 568439,
       "name": "A. Yilmaz",
       "position": "GK",
@@ -41,26 +52,15 @@
       "kitNumber": 60
     },
     {
-      "apiId": 327517,
-      "name": "J. Yılmaz",
-      "position": "GK",
-      "club": "Galatasaray",
-      "nation": "Turkey B",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327517.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 25448,
-      "name": "K. Ayhan",
+      "apiId": 168,
+      "name": "D. Sánchez",
       "position": "CB",
       "club": "Galatasaray",
-      "nation": "Turkey",
-      "tier": "GOLD",
+      "nation": "Colombia",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25448.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/168.png",
+      "kitNumber": 6
     },
     {
       "apiId": 61837,
@@ -68,26 +68,70 @@
       "position": "CB",
       "club": "Galatasaray",
       "nation": "Turkey",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/61837.png",
       "kitNumber": 42
     },
     {
-      "apiId": 339951,
-      "name": "A. Bülbül",
+      "apiId": 30504,
+      "name": "W. Singo",
+      "position": "RB/CB",
+      "club": "Galatasaray",
+      "nation": "Ivory Coast",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30504.png",
+      "kitNumber": 90
+    },
+    {
+      "apiId": 15912,
+      "name": "V. Nelsson",
       "position": "CB",
       "club": "Galatasaray",
-      "nation": "Turkey",
-      "tier": "SILVER",
+      "nation": "Denmark",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/339951.png",
-      "kitNumber": 81
+      "imageUrl": "https://media.api-sports.io/football/players/15912.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 25448,
+      "name": "K. Ayhan",
+      "position": "CB/RB/CDM",
+      "club": "Galatasaray",
+      "nation": "Turkey",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25448.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 3007,
+      "name": "P. Frankowski",
+      "position": "RWB/RM",
+      "club": "Galatasaray",
+      "nation": "Poland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/3007.png",
+      "kitNumber": 95
+    },
+    {
+      "apiId": 158121,
+      "name": "I. Jakobs",
+      "position": "LB/LWB",
+      "club": "Galatasaray",
+      "nation": "Senegal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158121.png",
+      "kitNumber": 4
     },
     {
       "apiId": 50057,
       "name": "E. Elmalı",
-      "position": "CB",
+      "position": "LB",
       "club": "Galatasaray",
       "nation": "Turkey",
       "tier": "GOLD",
@@ -96,37 +140,37 @@
       "kitNumber": 17
     },
     {
-      "apiId": 3007,
-      "name": "P. Frankowski",
-      "position": "CB",
-      "club": "Galatasaray",
-      "nation": "Poland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/3007.png",
-      "kitNumber": 95
-    },
-    {
-      "apiId": 158121,
-      "name": "I. Jakobs",
-      "position": "CB",
-      "club": "Galatasaray",
-      "nation": "Senegal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/158121.png",
-      "kitNumber": 4
-    },
-    {
       "apiId": 341234,
       "name": "E. Jelert",
-      "position": "CB",
+      "position": "RB/LB",
       "club": "Galatasaray",
       "nation": "Denmark",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341234.png",
       "kitNumber": 38
+    },
+    {
+      "apiId": 145057,
+      "name": "K. Karataş",
+      "position": "LB",
+      "club": "Galatasaray",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/145057.png",
+      "kitNumber": 88
+    },
+    {
+      "apiId": 339951,
+      "name": "A. Bülbül",
+      "position": "LB",
+      "club": "Galatasaray",
+      "nation": "Turkey",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339951.png",
+      "kitNumber": 81
     },
     {
       "apiId": 568393,
@@ -140,61 +184,6 @@
       "kitNumber": 64
     },
     {
-      "apiId": 145057,
-      "name": "K. Karataş",
-      "position": "CB",
-      "club": "Galatasaray",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/145057.png",
-      "kitNumber": 88
-    },
-    {
-      "apiId": 15912,
-      "name": "V. Nelsson",
-      "position": "CB",
-      "club": "Galatasaray",
-      "nation": "Denmark",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/15912.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 26252,
-      "name": "R. Sallai",
-      "position": "CB",
-      "club": "Galatasaray",
-      "nation": "Hungary",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26252.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 168,
-      "name": "D. Sánchez",
-      "position": "CB",
-      "club": "Galatasaray",
-      "nation": "Chile",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/168.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 30504,
-      "name": "W. Singo",
-      "position": "CB",
-      "club": "Galatasaray",
-      "nation": "Ivory Coast",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30504.png",
-      "kitNumber": 90
-    },
-    {
       "apiId": 404443,
       "name": "A. Ünyay",
       "position": "CB",
@@ -206,37 +195,59 @@
       "kitNumber": 91
     },
     {
+      "apiId": 633,
+      "name": "İ. Gündoğan",
+      "position": "CM/CAM",
+      "club": "Galatasaray",
+      "nation": "Germany",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/633.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 1462,
+      "name": "L. Torreira",
+      "position": "CDM/CM",
+      "club": "Galatasaray",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1462.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 80552,
+      "name": "Gabriel Sara",
+      "position": "CM/CAM",
+      "club": "Galatasaray",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/80552.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 270508,
+      "name": "L. Ugochukwu",
+      "position": "CDM/CM",
+      "club": "Galatasaray",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/270508.png",
+      "kitNumber": 18
+    },
+    {
       "apiId": 550893,
       "name": "E. Aydin",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Galatasaray",
       "nation": "Turkey",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/550893.png",
       "kitNumber": 5
-    },
-    {
-      "apiId": 80552,
-      "name": "Gabriel Sara",
-      "position": "CM",
-      "club": "Galatasaray",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/80552.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 633,
-      "name": "İ. Gündoğan",
-      "position": "CM",
-      "club": "Galatasaray",
-      "nation": "Germany",
-      "tier": "ULTIMATE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/633.png",
-      "kitNumber": 20
     },
     {
       "apiId": 518567,
@@ -261,37 +272,59 @@
       "kitNumber": 57
     },
     {
-      "apiId": 1462,
-      "name": "L. Torreira",
-      "position": "CM",
+      "apiId": 2780,
+      "name": "V. Osimhen",
+      "position": "ST",
       "club": "Galatasaray",
-      "nation": "Uruguay",
-      "tier": "GOLD",
+      "nation": "Nigeria",
+      "tier": "ULTIMATE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1462.png",
-      "kitNumber": 34
+      "imageUrl": "https://media.api-sports.io/football/players/2780.png",
+      "kitNumber": 45
     },
     {
-      "apiId": 270508,
-      "name": "L. Ugochukwu",
-      "position": "CM",
+      "apiId": 644,
+      "name": "L. Sané",
+      "position": "RW/LW",
+      "club": "Galatasaray",
+      "nation": "Germany",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/644.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 63274,
+      "name": "B. Yılmaz",
+      "position": "RW/LW/ST",
       "club": "Galatasaray",
       "nation": "Turkey",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/270508.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/63274.png",
+      "kitNumber": 53
     },
     {
       "apiId": 454,
       "name": "Y. Akgün",
-      "position": "CM",
+      "position": "LW/RW",
       "club": "Galatasaray",
       "nation": "Turkey",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/454.png",
       "kitNumber": 11
+    },
+    {
+      "apiId": 26252,
+      "name": "R. Sallai",
+      "position": "RW/LW/ST",
+      "club": "Galatasaray",
+      "nation": "Hungary",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26252.png",
+      "kitNumber": 7
     },
     {
       "apiId": 394223,
@@ -309,7 +342,7 @@
       "name": "C. Guner",
       "position": "ST",
       "club": "Galatasaray",
-      "nation": "Turkey U-21",
+      "nation": "Turkey",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585709.png",
@@ -336,39 +369,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/492270.png",
       "kitNumber": 73
-    },
-    {
-      "apiId": 2780,
-      "name": "V. Osimhen",
-      "position": "ST",
-      "club": "Galatasaray",
-      "nation": "Nigeria",
-      "tier": "ULTIMATE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2780.png",
-      "kitNumber": 45
-    },
-    {
-      "apiId": 644,
-      "name": "L. Sané",
-      "position": "CDM/CM",
-      "club": "Galatasaray",
-      "nation": "Spain",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/644.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 63274,
-      "name": "B. Yılmaz",
-      "position": "CM",
-      "club": "Galatasaray",
-      "nation": "Turkey B",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/63274.png",
-      "kitNumber": 53
     },
     {
       "apiId": 602698,

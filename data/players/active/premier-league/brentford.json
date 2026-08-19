@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Brentford",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19340.png",
       "kitNumber": 31
@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Brentford",
       "nation": "Jamaica",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19789.png",
       "kitNumber": 5
@@ -112,7 +112,7 @@
       "position": "RB",
       "club": "Brentford",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342022.png",
       "kitNumber": 33
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Brentford",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/577002.png",
       "kitNumber": 50
@@ -195,15 +195,15 @@
       "kitNumber": 10
     },
     {
-      "apiId": 292,
-      "name": "J. Henderson",
+      "apiId": 277306,
+      "name": "M. Sangaré",
       "position": "CM/CDM",
       "club": "Brentford",
-      "nation": "England",
-      "tier": "GOLD",
+      "nation": "Mali",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/292.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/277306.png",
+      "kitNumber": 8
     },
     {
       "apiId": 513316,
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Brentford",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/513316.png",
       "kitNumber": 48
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Brentford",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327726.png",
       "kitNumber": 52
@@ -233,7 +233,7 @@
       "position": "CM",
       "club": "Brentford",
       "nation": "Germany",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441271.png",
       "kitNumber": 44
@@ -244,7 +244,7 @@
       "position": "ST",
       "club": "Brentford",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/196156.png",
       "kitNumber": 9
@@ -288,7 +288,7 @@
       "position": "ST",
       "club": "Brentford",
       "nation": "Belgium",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/393193.png",
       "kitNumber": 47
@@ -299,21 +299,10 @@
       "position": "ST",
       "club": "Brentford",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/624708.png",
       "kitNumber": 49
-    },
-    {
-      "apiId": 277306,
-      "name": "M. Sangaré",
-      "position": "CM/CDM",
-      "club": "Brentford",
-      "nation": "Mali",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/277306.png",
-      "kitNumber": 8
     }
   ]
 }

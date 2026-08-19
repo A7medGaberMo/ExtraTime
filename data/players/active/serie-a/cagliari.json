@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Cagliari",
       "nation": "Italy",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30731.png",
       "kitNumber": 1
@@ -63,6 +63,17 @@
       "kitNumber": 26
     },
     {
+      "apiId": 383026,
+      "name": "Riyad Idrissi",
+      "position": "LB",
+      "club": "Cagliari",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/383026.png",
+      "kitNumber": 3
+    },
+    {
       "apiId": 200,
       "name": "G. Zappa",
       "position": "RB/RWB",
@@ -94,17 +105,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/40392.png",
       "kitNumber": 4
-    },
-    {
-      "apiId": 383026,
-      "name": "Riyad Idrissi",
-      "position": "LB",
-      "club": "Cagliari",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/383026.png",
-      "kitNumber": 3
     },
     {
       "apiId": 41964,
@@ -184,17 +184,6 @@
       "kitNumber": 42
     },
     {
-      "apiId": 30561,
-      "name": "A. Deiola",
-      "position": "CM",
-      "club": "Cagliari",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30561.png",
-      "kitNumber": 14
-    },
-    {
       "apiId": 31734,
       "name": "M. Felici",
       "position": "LM/LW",
@@ -204,6 +193,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31734.png",
       "kitNumber": 17
+    },
+    {
+      "apiId": 30561,
+      "name": "A. Deiola",
+      "position": "CM",
+      "club": "Cagliari",
+      "nation": "Italy",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30561.png",
+      "kitNumber": 14
     },
     {
       "apiId": 404523,

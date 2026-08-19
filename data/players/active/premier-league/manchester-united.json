@@ -41,6 +41,17 @@
       "kitNumber": 6
     },
     {
+      "apiId": 886,
+      "name": "Diogo Dalot",
+      "position": "RB/LB",
+      "club": "Manchester United",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/886.png",
+      "kitNumber": 2
+    },
+    {
       "apiId": 342970,
       "name": "L. Yoro",
       "position": "CB",
@@ -50,17 +61,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342970.png",
       "kitNumber": 15
-    },
-    {
-      "apiId": 886,
-      "name": "Diogo Dalot",
-      "position": "RB/LB",
-      "club": "Manchester United",
-      "nation": "Portugal",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/886.png",
-      "kitNumber": 2
     },
     {
       "apiId": 545,
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2935.png",
       "kitNumber": 5
@@ -90,7 +90,7 @@
       "position": "LB/CB",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/891.png",
       "kitNumber": 23
@@ -101,7 +101,7 @@
       "position": "LB/LM",
       "club": "Manchester United",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/382452.png",
       "kitNumber": 13
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/402329.png",
       "kitNumber": 44
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/440159.png",
       "kitNumber": 12
@@ -134,7 +134,7 @@
       "position": "CAM/CM",
       "club": "Manchester United",
       "nation": "Portugal",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1485.png",
       "kitNumber": 8
@@ -162,17 +162,6 @@
       "kitNumber": 25
     },
     {
-      "apiId": 19220,
-      "name": "M. Mount",
-      "position": "CAM/CM",
-      "club": "Manchester United",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19220.png",
-      "kitNumber": 7
-    },
-    {
       "apiId": 2926,
       "name": "Y. Tielemans",
       "position": "CM/CDM",
@@ -184,12 +173,23 @@
       "kitNumber": 14
     },
     {
+      "apiId": 19220,
+      "name": "M. Mount",
+      "position": "CAM/CM",
+      "club": "Manchester United",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19220.png",
+      "kitNumber": 7
+    },
+    {
       "apiId": 305834,
       "name": "Andrey Santos",
       "position": "CM/CDM",
       "club": "Manchester United",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/305834.png",
       "kitNumber": 17
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Manchester United",
       "nation": "Scotland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383770.png",
       "kitNumber": 38
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Manchester United",
       "nation": "Scotland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557460.png",
       "kitNumber": 39
@@ -222,7 +222,7 @@
       "position": "CM",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/344229.png",
       "kitNumber": 48
@@ -266,7 +266,7 @@
       "position": "RW/CAM",
       "club": "Manchester United",
       "nation": "Ivory Coast",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/157997.png",
       "kitNumber": 16
@@ -288,7 +288,7 @@
       "position": "RW/ST",
       "club": "Manchester United",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557462.png",
       "kitNumber": 46

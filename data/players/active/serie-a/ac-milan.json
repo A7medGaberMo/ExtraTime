@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "AC Milan",
       "nation": "Italy",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30394.png",
       "kitNumber": 1
@@ -90,7 +90,7 @@
       "position": "LB",
       "club": "AC Milan",
       "nation": "Ecuador",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46731.png",
       "kitNumber": 2
@@ -173,15 +173,15 @@
       "kitNumber": 41
     },
     {
-      "apiId": 22254,
-      "name": "Y. Fofana",
-      "position": "CDM/CM",
+      "apiId": 754,
+      "name": "Luka Modrić",
+      "position": "CM/CAM",
       "club": "AC Milan",
-      "nation": "France",
-      "tier": "ELITE",
+      "nation": "Croatia",
+      "tier": "ULTIMATE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22254.png",
-      "kitNumber": 19
+      "imageUrl": "https://media.api-sports.io/football/players/754.png",
+      "kitNumber": 14
     },
     {
       "apiId": 272,
@@ -195,6 +195,17 @@
       "kitNumber": 12
     },
     {
+      "apiId": 22254,
+      "name": "Y. Fofana",
+      "position": "CDM/CM",
+      "club": "AC Milan",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22254.png",
+      "kitNumber": 19
+    },
+    {
       "apiId": 2292,
       "name": "R. Loftus-Cheek",
       "position": "CAM/CM",
@@ -204,6 +215,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2292.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 31056,
+      "name": "S. Ricci",
+      "position": "CDM/CM",
+      "club": "AC Milan",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31056.png",
+      "kitNumber": 4
     },
     {
       "apiId": 162106,
@@ -217,17 +239,6 @@
       "kitNumber": 80
     },
     {
-      "apiId": 31056,
-      "name": "S. Ricci",
-      "position": "CDM/CM",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31056.png",
-      "kitNumber": 4
-    },
-    {
       "apiId": 1417,
       "name": "A. Saelemaekers",
       "position": "RM/RW",
@@ -237,6 +248,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1417.png",
       "kitNumber": 56
+    },
+    {
+      "apiId": 449642,
+      "name": "A. Kostić",
+      "position": "LM/LB",
+      "club": "AC Milan",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449642.png",
+      "kitNumber": 17
     },
     {
       "apiId": 336580,
@@ -281,6 +303,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/448968.png",
       "kitNumber": 45
+    },
+    {
+      "apiId": 359100,
+      "name": "A. Cissè",
+      "position": "CM",
+      "club": "AC Milan",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/359100.png",
+      "kitNumber": 70
     },
     {
       "apiId": 22236,
@@ -360,17 +393,6 @@
       "kitNumber": 73
     },
     {
-      "apiId": 449642,
-      "name": "A. Kostić",
-      "position": "LM/LB",
-      "club": "AC Milan",
-      "nation": "Serbia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449642.png",
-      "kitNumber": 17
-    },
-    {
       "apiId": 336928,
       "name": "M. Valletta",
       "position": "ST",
@@ -391,17 +413,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/582073.png",
       "kitNumber": 35
-    },
-    {
-      "apiId": 359100,
-      "name": "A. Cissè",
-      "position": "CM",
-      "club": "AC Milan",
-      "nation": "Italy",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/359100.png",
-      "kitNumber": 70
     }
   ]
 }

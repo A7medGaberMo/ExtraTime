@@ -19,15 +19,15 @@
       "kitNumber": 22
     },
     {
-      "apiId": 672697,
-      "name": "S. Lomelin",
+      "apiId": 268385,
+      "name": "C. Ramos",
       "position": "GK",
       "club": "CF Monterrey",
       "nation": "Mexico",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/672697.png",
-      "kitNumber": 232
+      "imageUrl": "https://media.api-sports.io/football/players/268385.png",
+      "kitNumber": 31
     },
     {
       "apiId": 586238,
@@ -41,20 +41,75 @@
       "kitNumber": 43
     },
     {
-      "apiId": 268385,
-      "name": "C. Ramos",
+      "apiId": 672697,
+      "name": "S. Lomelin",
       "position": "GK",
       "club": "CF Monterrey",
-      "nation": "Spain",
-      "tier": "GOLD",
+      "nation": "Mexico",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/268385.png",
-      "kitNumber": 31
+      "imageUrl": "https://media.api-sports.io/football/players/672697.png",
+      "kitNumber": 232
+    },
+    {
+      "apiId": 35774,
+      "name": "G. Arteaga",
+      "position": "LB/LWB",
+      "club": "CF Monterrey",
+      "nation": "Mexico",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/35774.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 2877,
+      "name": "C. Salcedo",
+      "position": "CB",
+      "club": "CF Monterrey",
+      "nation": "Mexico",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2877.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 129943,
+      "name": "V. Guzmán",
+      "position": "CB",
+      "club": "CF Monterrey",
+      "nation": "Mexico",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129943.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 35539,
+      "name": "S. Medina",
+      "position": "RB/CB",
+      "club": "CF Monterrey",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/35539.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 35648,
+      "name": "É. Aguirre",
+      "position": "RB/LB",
+      "club": "CF Monterrey",
+      "nation": "Mexico",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/35648.png",
+      "kitNumber": 14
     },
     {
       "apiId": 290648,
       "name": "A. Aceves",
-      "position": "CB",
+      "position": "LB",
       "club": "CF Monterrey",
       "nation": "Mexico",
       "tier": "GOLD",
@@ -63,26 +118,26 @@
       "kitNumber": 19
     },
     {
-      "apiId": 35648,
-      "name": "É. Aguirre",
-      "position": "CB",
+      "apiId": 36471,
+      "name": "R. Chávez",
+      "position": "RB",
       "club": "CF Monterrey",
       "nation": "Mexico",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/35648.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/36471.png",
+      "kitNumber": null
     },
     {
-      "apiId": 35774,
-      "name": "G. Arteaga",
-      "position": "CB",
+      "apiId": 35597,
+      "name": "L. Reyes",
+      "position": "LB",
       "club": "CF Monterrey",
       "nation": "Mexico",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/35774.png",
-      "kitNumber": 3
+      "imageUrl": "https://media.api-sports.io/football/players/35597.png",
+      "kitNumber": 21
     },
     {
       "apiId": 333425,
@@ -100,22 +155,11 @@
       "name": "J. Casillas",
       "position": "CB",
       "club": "CF Monterrey",
-      "nation": "Spain",
-      "tier": "GOLD",
+      "nation": "Mexico",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/554757.png",
       "kitNumber": 2
-    },
-    {
-      "apiId": 36471,
-      "name": "R. Chávez",
-      "position": "CB",
-      "club": "CF Monterrey",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/36471.png",
-      "kitNumber": null
     },
     {
       "apiId": 552352,
@@ -123,7 +167,7 @@
       "position": "CB",
       "club": "CF Monterrey",
       "nation": "Mexico",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/552352.png",
       "kitNumber": 193
@@ -133,66 +177,88 @@
       "name": "D. Garcia",
       "position": "CB",
       "club": "CF Monterrey",
-      "nation": "Andorra",
+      "nation": "Mexico",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/647145.png",
       "kitNumber": 256
     },
     {
-      "apiId": 129943,
-      "name": "V. Guzmán",
-      "position": "CB",
+      "apiId": 1911,
+      "name": "L. Ocampos",
+      "position": "LW/RW/CAM",
       "club": "CF Monterrey",
-      "nation": "Mexico",
-      "tier": "GOLD",
+      "nation": "Argentina",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129943.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/1911.png",
+      "kitNumber": 7
     },
     {
-      "apiId": 35539,
-      "name": "S. Medina",
-      "position": "CB",
+      "apiId": 385,
+      "name": "Óliver Torres",
+      "position": "CM/CAM",
       "club": "CF Monterrey",
-      "nation": "Mexico",
-      "tier": "GOLD",
+      "nation": "Spain",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/35539.png",
-      "kitNumber": 33
+      "imageUrl": "https://media.api-sports.io/football/players/385.png",
+      "kitNumber": 8
     },
     {
-      "apiId": 35597,
-      "name": "L. Reyes",
-      "position": "CB",
+      "apiId": 389,
+      "name": "J. Corona",
+      "position": "RW/LW/CAM",
       "club": "CF Monterrey",
       "nation": "Mexico",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/35597.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/389.png",
+      "kitNumber": 17
     },
     {
-      "apiId": 2877,
-      "name": "C. Salcedo",
-      "position": "CB",
+      "apiId": 35576,
+      "name": "O. Pineda",
+      "position": "CAM/CM/LW",
       "club": "CF Monterrey",
       "nation": "Mexico",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2877.png",
-      "kitNumber": 13
+      "imageUrl": "https://media.api-sports.io/football/players/35576.png",
+      "kitNumber": 25
     },
     {
       "apiId": 167014,
       "name": "F. Ambríz",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "CF Monterrey",
       "nation": "Mexico",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/167014.png",
       "kitNumber": 5
+    },
+    {
+      "apiId": 6369,
+      "name": "J. Rodríguez",
+      "position": "CDM/CM",
+      "club": "CF Monterrey",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6369.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 6063,
+      "name": "L. Orellano",
+      "position": "RW/RM",
+      "club": "CF Monterrey",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6063.png",
+      "kitNumber": 10
     },
     {
       "apiId": 436534,
@@ -239,44 +305,22 @@
       "kitNumber": 18
     },
     {
-      "apiId": 35576,
-      "name": "O. Pineda",
-      "position": "CM",
-      "club": "CF Monterrey",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/35576.png",
-      "kitNumber": 25
-    },
-    {
       "apiId": 454032,
       "name": "C. Reyes",
       "position": "CM",
       "club": "CF Monterrey",
-      "nation": "El Salvador",
+      "nation": "Mexico",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/454032.png",
       "kitNumber": 194
     },
     {
-      "apiId": 6369,
-      "name": "J. Rodríguez",
-      "position": "CM",
-      "club": "CF Monterrey",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6369.png",
-      "kitNumber": 30
-    },
-    {
       "apiId": 416400,
       "name": "S. Rodriguez",
       "position": "CM",
       "club": "CF Monterrey",
-      "nation": "Colombia",
+      "nation": "Mexico",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/416400.png",
@@ -294,17 +338,6 @@
       "kitNumber": 251
     },
     {
-      "apiId": 385,
-      "name": "Óliver Torres",
-      "position": "CM",
-      "club": "CF Monterrey",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/385.png",
-      "kitNumber": 8
-    },
-    {
       "apiId": 407383,
       "name": "José Alejandro Urías Félix",
       "position": "CM",
@@ -316,23 +349,23 @@
       "kitNumber": 189
     },
     {
-      "apiId": 389,
-      "name": "J. Corona",
-      "position": "CM",
+      "apiId": 51045,
+      "name": "D. Rossi",
+      "position": "ST/LW/RW",
       "club": "CF Monterrey",
-      "nation": "Mexico",
-      "tier": "GOLD",
+      "nation": "Uruguay",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/389.png",
-      "kitNumber": 17
+      "imageUrl": "https://media.api-sports.io/football/players/51045.png",
+      "kitNumber": 9
     },
     {
       "apiId": 27104,
       "name": "H. Cuypers",
       "position": "ST",
       "club": "CF Monterrey",
-      "nation": "Mexico",
-      "tier": "GOLD",
+      "nation": "Belgium",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/27104.png",
       "kitNumber": 99
@@ -343,43 +376,10 @@
       "position": "ST",
       "club": "CF Monterrey",
       "nation": "Montenegro",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46901.png",
       "kitNumber": null
-    },
-    {
-      "apiId": 1911,
-      "name": "L. Ocampos",
-      "position": "CM/CAM",
-      "club": "CF Monterrey",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1911.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 6063,
-      "name": "L. Orellano",
-      "position": "CM",
-      "club": "CF Monterrey",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6063.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 51045,
-      "name": "D. Rossi",
-      "position": "CM",
-      "club": "CF Monterrey",
-      "nation": "Uruguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51045.png",
-      "kitNumber": 9
     },
     {
       "apiId": 35669,

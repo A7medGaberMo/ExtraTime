@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Borussia Dortmund",
       "nation": "Germany",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25368.png",
       "kitNumber": 3
@@ -90,7 +90,7 @@
       "position": "LB/CB",
       "club": "Borussia Dortmund",
       "nation": "Algeria",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2194.png",
       "kitNumber": 5
@@ -156,10 +156,21 @@
       "position": "CM/CDM",
       "club": "Borussia Dortmund",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/637.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 158053,
+      "name": "A. Azhil",
+      "position": "CM/RB",
+      "club": "Borussia Dortmund",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158053.png",
+      "kitNumber": 46
     },
     {
       "apiId": 326757,
@@ -167,7 +178,7 @@
       "position": "CM/CAM",
       "club": "Borussia Dortmund",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326757.png",
       "kitNumber": 7
@@ -178,7 +189,7 @@
       "position": "CM/CAM",
       "club": "Borussia Dortmund",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138935.png",
       "kitNumber": 17
@@ -193,17 +204,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/198654.png",
       "kitNumber": 24
-    },
-    {
-      "apiId": 158053,
-      "name": "A. Azhil",
-      "position": "CM/RB",
-      "club": "Borussia Dortmund",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/158053.png",
-      "kitNumber": 46
     },
     {
       "apiId": 478991,
@@ -255,7 +255,7 @@
       "position": "ST/LW/RW",
       "club": "Borussia Dortmund",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158644.png",
       "kitNumber": 14

@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "Spain",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19465.png",
       "kitNumber": 1
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/416697.png",
       "kitNumber": 41
@@ -57,7 +57,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403221.png",
       "kitNumber": 42
@@ -68,7 +68,7 @@
       "position": "GK",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342243.png",
       "kitNumber": 35
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Arsenal",
       "nation": "France",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22090.png",
       "kitNumber": 2
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Arsenal",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/333682.png",
       "kitNumber": 3
@@ -167,7 +167,7 @@
       "position": "CB",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/418403.png",
       "kitNumber": 43
@@ -178,7 +178,7 @@
       "position": "CB",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/482903.png",
       "kitNumber": 89
@@ -189,7 +189,7 @@
       "position": "CDM/CM",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2937.png",
       "kitNumber": 44
@@ -239,12 +239,23 @@
       "kitNumber": 10
     },
     {
+      "apiId": 10135,
+      "name": "Bruno Guimarães",
+      "position": "CM",
+      "club": "Arsenal",
+      "nation": "Brazil",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10135.png",
+      "kitNumber": 39
+    },
+    {
       "apiId": 442044,
       "name": "M. Dowman",
       "position": "CM",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/442044.png",
       "kitNumber": 56
@@ -255,7 +266,7 @@
       "position": "CM",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/553530.png",
       "kitNumber": 45
@@ -266,7 +277,7 @@
       "position": "RW/ST",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1460.png",
       "kitNumber": 7
@@ -321,43 +332,10 @@
       "position": "RW/LW",
       "club": "Arsenal",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/136723.png",
       "kitNumber": 20
-    },
-    {
-      "apiId": 463908,
-      "name": "B. Bailey-Joseph",
-      "position": "ST",
-      "club": "Arsenal",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/463908.png",
-      "kitNumber": 47
-    },
-    {
-      "apiId": 457731,
-      "name": "A. Annous",
-      "position": "ST",
-      "club": "Arsenal",
-      "nation": "England",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/457731.png",
-      "kitNumber": 48
-    },
-    {
-      "apiId": 10135,
-      "name": "Bruno Guimarães",
-      "position": "CM",
-      "club": "Arsenal",
-      "nation": "Brazilian Football Confederation",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10135.png",
-      "kitNumber": 39
     },
     {
       "apiId": 161800,
@@ -369,6 +347,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161800.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 463908,
+      "name": "B. Bailey-Joseph",
+      "position": "ST",
+      "club": "Arsenal",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/463908.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 457731,
+      "name": "A. Annous",
+      "position": "ST",
+      "club": "Arsenal",
+      "nation": "England",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/457731.png",
+      "kitNumber": 48
     }
   ]
 }

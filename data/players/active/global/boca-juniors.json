@@ -19,6 +19,17 @@
       "kitNumber": 10
     },
     {
+      "apiId": 2464,
+      "name": "A. Marchesín",
+      "position": "GK",
+      "club": "Boca Juniors",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2464.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 177230,
       "name": "L. Brey",
       "position": "GK",
@@ -41,31 +52,53 @@
       "kitNumber": 13
     },
     {
-      "apiId": 2464,
-      "name": "A. Marchesín",
-      "position": "GK",
-      "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2464.png",
-      "kitNumber": 1
-    },
-    {
       "apiId": 2481,
       "name": "Á. Montero",
       "position": "GK",
       "club": "Boca Juniors",
-      "nation": "Argentina",
+      "nation": "Colombia",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2481.png",
       "kitNumber": null
     },
     {
+      "apiId": 6082,
+      "name": "N. Figal",
+      "position": "CB",
+      "club": "Boca Juniors",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6082.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 212842,
+      "name": "Marco Pellegrino",
+      "position": "CB",
+      "club": "Boca Juniors",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/212842.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 289444,
+      "name": "L. Blanco",
+      "position": "LB/LWB",
+      "club": "Boca Juniors",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/289444.png",
+      "kitNumber": 3
+    },
+    {
       "apiId": 126743,
       "name": "J. Barinaga",
-      "position": "CB",
+      "position": "RB",
       "club": "Boca Juniors",
       "nation": "Argentina",
       "tier": "GOLD",
@@ -74,15 +107,15 @@
       "kitNumber": 24
     },
     {
-      "apiId": 289444,
-      "name": "L. Blanco",
-      "position": "CB",
+      "apiId": 5969,
+      "name": "M. Weigandt",
+      "position": "RB",
       "club": "Boca Juniors",
-      "nation": "Mexico",
+      "nation": "Argentina",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/289444.png",
-      "kitNumber": 3
+      "imageUrl": "https://media.api-sports.io/football/players/5969.png",
+      "kitNumber": 23
     },
     {
       "apiId": 288750,
@@ -107,15 +140,15 @@
       "kitNumber": 2
     },
     {
-      "apiId": 6082,
-      "name": "N. Figal",
-      "position": "CB",
+      "apiId": 51332,
+      "name": "L. Lozano",
+      "position": "RB",
       "club": "Boca Juniors",
       "nation": "Argentina",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6082.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/51332.png",
+      "kitNumber": 17
     },
     {
       "apiId": 414484,
@@ -133,85 +166,63 @@
       "name": "F. Herrera",
       "position": "CB",
       "club": "Boca Juniors",
-      "nation": "Spain",
+      "nation": "Argentina",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560376.png",
       "kitNumber": 42
     },
     {
-      "apiId": 51332,
-      "name": "L. Lozano",
-      "position": "CB",
-      "club": "Boca Juniors",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51332.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 212842,
-      "name": "Marco Pellegrino",
-      "position": "CB",
+      "apiId": 271,
+      "name": "L. Paredes",
+      "position": "CM/CDM",
       "club": "Boca Juniors",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/212842.png",
-      "kitNumber": 26
+      "imageUrl": "https://media.api-sports.io/football/players/271.png",
+      "kitNumber": 5
     },
     {
-      "apiId": 5969,
-      "name": "M. Weigandt",
-      "position": "CB",
+      "apiId": 288707,
+      "name": "K. Zenón",
+      "position": "LM/CAM/CM",
       "club": "Boca Juniors",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5969.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 11424,
-      "name": "W. Alarcón",
-      "position": "CM",
-      "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/11424.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 510587,
-      "name": "T. Aranda",
-      "position": "ST",
-      "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/510587.png",
-      "kitNumber": null
+      "imageUrl": "https://media.api-sports.io/football/players/288707.png",
+      "kitNumber": 21
     },
     {
       "apiId": 26305,
       "name": "S. Ascacíbar",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Boca Juniors",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26305.png",
       "kitNumber": 25
     },
     {
-      "apiId": 6209,
-      "name": "T. Belmonte",
-      "position": "CM",
+      "apiId": 6092,
+      "name": "A. Velasco",
+      "position": "CAM/LW/RW",
       "club": "Boca Juniors",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6092.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 6209,
+      "name": "T. Belmonte",
+      "position": "CM/CDM",
+      "club": "Boca Juniors",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6209.png",
       "kitNumber": 8
@@ -219,24 +230,24 @@
     {
       "apiId": 5791,
       "name": "M. Braida",
-      "position": "CM",
+      "position": "LM/LB",
       "club": "Boca Juniors",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5791.png",
       "kitNumber": 27
     },
     {
-      "apiId": 11463,
-      "name": "C. Palacios",
-      "position": "ST",
+      "apiId": 11424,
+      "name": "W. Alarcón",
+      "position": "CM/CDM",
       "club": "Boca Juniors",
       "nation": "Chile",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/11463.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/11424.png",
+      "kitNumber": 15
     },
     {
       "apiId": 459876,
@@ -250,45 +261,45 @@
       "kitNumber": 18
     },
     {
-      "apiId": 271,
-      "name": "L. Paredes",
-      "position": "CM",
-      "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/271.png",
-      "kitNumber": 5
-    },
-    {
       "apiId": 414378,
       "name": "C. Rey",
       "position": "CM",
       "club": "Boca Juniors",
-      "nation": "Mexico",
+      "nation": "Argentina",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/414378.png",
       "kitNumber": null
     },
     {
-      "apiId": 288707,
-      "name": "K. Zenón",
-      "position": "CM",
+      "apiId": 6327,
+      "name": "M. Merentiel",
+      "position": "ST",
       "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "GOLD",
+      "nation": "Uruguay",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/288707.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/6327.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 11463,
+      "name": "C. Palacios",
+      "position": "RW/CAM/ST",
+      "club": "Boca Juniors",
+      "nation": "Chile",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/11463.png",
+      "kitNumber": 7
     },
     {
       "apiId": 2521,
       "name": "Á. Romero",
-      "position": "ST",
+      "position": "LW/RW/ST",
       "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "GOLD",
+      "nation": "Paraguay",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2521.png",
       "kitNumber": 11
@@ -299,10 +310,54 @@
       "position": "ST",
       "club": "Boca Juniors",
       "nation": "Paraguay",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/35551.png",
       "kitNumber": 28
+    },
+    {
+      "apiId": 237090,
+      "name": "E. Zeballos",
+      "position": "RW/LW",
+      "club": "Boca Juniors",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/237090.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 2494,
+      "name": "S. Villa",
+      "position": "LW/RW",
+      "club": "Boca Juniors",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2494.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 59229,
+      "name": "M. Giménez",
+      "position": "ST",
+      "club": "Boca Juniors",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/59229.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 510587,
+      "name": "T. Aranda",
+      "position": "ST",
+      "club": "Boca Juniors",
+      "nation": "Argentina",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/510587.png",
+      "kitNumber": null
     },
     {
       "apiId": 510586,
@@ -325,61 +380,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560386.png",
       "kitNumber": 37
-    },
-    {
-      "apiId": 59229,
-      "name": "M. Giménez",
-      "position": "ST",
-      "club": "Boca Juniors",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/59229.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 6327,
-      "name": "M. Merentiel",
-      "position": "ST",
-      "club": "Boca Juniors",
-      "nation": "Uruguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6327.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 6092,
-      "name": "A. Velasco",
-      "position": "CM",
-      "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6092.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 2494,
-      "name": "S. Villa",
-      "position": "ST",
-      "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2494.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 237090,
-      "name": "E. Zeballos",
-      "position": "ST",
-      "club": "Boca Juniors",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/237090.png",
-      "kitNumber": null
     },
     {
       "apiId": 459858,

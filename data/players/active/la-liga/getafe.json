@@ -63,15 +63,37 @@
       "kitNumber": 2
     },
     {
+      "apiId": 757,
+      "name": "Lucas Vázquez",
+      "position": "RB/RWB",
+      "club": "Getafe",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/757.png",
+      "kitNumber": 21
+    },
+    {
       "apiId": 46813,
       "name": "A. Abqar",
       "position": "CB",
       "club": "Getafe",
       "nation": "Morocco",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46813.png",
       "kitNumber": 3
+    },
+    {
+      "apiId": 439617,
+      "name": "Z. Tassounte",
+      "position": "CB",
+      "club": "Getafe",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/439617.png",
+      "kitNumber": 31
     },
     {
       "apiId": 18794,
@@ -96,6 +118,17 @@
       "kitNumber": 15
     },
     {
+      "apiId": 64268,
+      "name": "J. Mojica",
+      "position": "LB/LM",
+      "club": "Getafe",
+      "nation": "Colombia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64268.png",
+      "kitNumber": 22
+    },
+    {
       "apiId": 471478,
       "name": "Davinchi",
       "position": "LB/CB",
@@ -105,17 +138,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/471478.png",
       "kitNumber": 26
-    },
-    {
-      "apiId": 439617,
-      "name": "Z. Tassounte",
-      "position": "CB",
-      "club": "Getafe",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/439617.png",
-      "kitNumber": 31
     },
     {
       "apiId": 388013,
@@ -171,6 +193,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/484474.png",
       "kitNumber": 23
+    },
+    {
+      "apiId": 24882,
+      "name": "O. Mangala",
+      "position": "CM/CDM",
+      "club": "Getafe",
+      "nation": "Belgium",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24882.png",
+      "kitNumber": 5
     },
     {
       "apiId": 343205,
@@ -239,6 +272,17 @@
       "kitNumber": 9
     },
     {
+      "apiId": 47499,
+      "name": "E. Ünal",
+      "position": "ST",
+      "club": "Getafe",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47499.png",
+      "kitNumber": 26
+    },
+    {
       "apiId": 47320,
       "name": "Juanmi",
       "position": "ST/LW",
@@ -270,50 +314,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/184459.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 47499,
-      "name": "E. Ünal",
-      "position": "ST",
-      "club": "Getafe",
-      "nation": "Turkey",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47499.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 24882,
-      "name": "O. Mangala",
-      "position": "CM/CDM",
-      "club": "Getafe",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/24882.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 64268,
-      "name": "J. Mojica",
-      "position": "LB/LM",
-      "club": "Getafe",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/64268.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 757,
-      "name": "Lucas Vázquez",
-      "position": "RB/RWB",
-      "club": "Getafe",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/757.png",
-      "kitNumber": 21
     }
   ]
 }

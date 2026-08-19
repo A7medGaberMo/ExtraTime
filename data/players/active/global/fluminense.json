@@ -13,21 +13,10 @@
       "position": "GK",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10080.png",
       "kitNumber": 1
-    },
-    {
-      "apiId": 667869,
-      "name": "Gustavo Felix",
-      "position": "GK",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/667869.png",
-      "kitNumber": null
     },
     {
       "apiId": 180866,
@@ -35,7 +24,7 @@
       "position": "GK",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/180866.png",
       "kitNumber": 27
@@ -52,48 +41,59 @@
       "kitNumber": 98
     },
     {
-      "apiId": 6337,
-      "name": "J. Freytes",
-      "position": "CB",
+      "apiId": 667869,
+      "name": "Gustavo Felix",
+      "position": "GK",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6337.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/667869.png",
+      "kitNumber": null
     },
     {
-      "apiId": 9874,
-      "name": "Guga",
+      "apiId": 259,
+      "name": "Thiago Silva",
       "position": "CB",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9874.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/259.png",
+      "kitNumber": 3
     },
     {
       "apiId": 2038,
       "name": "Guilherme Arana",
-      "position": "CB",
+      "position": "LB/LWB",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2038.png",
       "kitNumber": 13
     },
     {
-      "apiId": 10017,
-      "name": "Ignacio",
-      "position": "CB",
+      "apiId": 9874,
+      "name": "Guga",
+      "position": "RB",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10017.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/9874.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 10267,
+      "name": "Samuel Xavier",
+      "position": "RB/RWB",
+      "club": "Fluminense",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10267.png",
+      "kitNumber": 2
     },
     {
       "apiId": 9872,
@@ -107,6 +107,39 @@
       "kitNumber": 21
     },
     {
+      "apiId": 10163,
+      "name": "Renê",
+      "position": "LB",
+      "club": "Fluminense",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10163.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 6337,
+      "name": "J. Freytes",
+      "position": "CB/LB",
+      "club": "Fluminense",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6337.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 10017,
+      "name": "Ignacio",
+      "position": "CB",
+      "club": "Fluminense",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10017.png",
+      "kitNumber": 4
+    },
+    {
       "apiId": 282692,
       "name": "Jemmes",
       "position": "CB",
@@ -118,59 +151,26 @@
       "kitNumber": 44
     },
     {
-      "apiId": 443088,
-      "name": "Julio Fidelis",
-      "position": "CB",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/443088.png",
-      "kitNumber": 46
-    },
-    {
       "apiId": 13715,
       "name": "J. Millán",
       "position": "CB",
       "club": "Fluminense",
-      "nation": "Brazil",
+      "nation": "Colombia",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/13715.png",
       "kitNumber": 29
     },
     {
-      "apiId": 10163,
-      "name": "Renê",
-      "position": "CB",
+      "apiId": 443088,
+      "name": "Julio Fidelis",
+      "position": "RB",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10163.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 10267,
-      "name": "Samuel Xavier",
-      "position": "CB",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10267.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 259,
-      "name": "Thiago Silva",
-      "position": "CB",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/259.png",
-      "kitNumber": 3
+      "imageUrl": "https://media.api-sports.io/football/players/443088.png",
+      "kitNumber": 46
     },
     {
       "apiId": 519811,
@@ -184,23 +184,56 @@
       "kitNumber": 36
     },
     {
-      "apiId": 50763,
-      "name": "L. Acosta",
-      "position": "CM",
+      "apiId": 10311,
+      "name": "PH Ganso",
+      "position": "CAM/CM",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10311.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 50763,
+      "name": "L. Acosta",
+      "position": "CAM/LW",
+      "club": "Fluminense",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50763.png",
       "kitNumber": 32
     },
     {
-      "apiId": 10501,
-      "name": "Alisson",
-      "position": "CM",
+      "apiId": 280245,
+      "name": "Martinelli",
+      "position": "CM/CDM",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280245.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 1262,
+      "name": "Otávio",
+      "position": "CDM/CM",
+      "club": "Fluminense",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1262.png",
+      "kitNumber": 94
+    },
+    {
+      "apiId": 10501,
+      "name": "Alisson",
+      "position": "CM/RW",
+      "club": "Fluminense",
+      "nation": "Brazil",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10501.png",
       "kitNumber": 25
@@ -211,21 +244,10 @@
       "position": "CM",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/266267.png",
       "kitNumber": 35
-    },
-    {
-      "apiId": 280245,
-      "name": "Martinelli",
-      "position": "CM",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/280245.png",
-      "kitNumber": 8
     },
     {
       "apiId": 10396,
@@ -239,39 +261,6 @@
       "kitNumber": 16
     },
     {
-      "apiId": 1262,
-      "name": "Otávio",
-      "position": "CM",
-      "club": "Fluminense",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1262.png",
-      "kitNumber": 94
-    },
-    {
-      "apiId": 10311,
-      "name": "PH Ganso",
-      "position": "CM",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10311.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 502726,
-      "name": "Riquelme",
-      "position": "ST",
-      "club": "Fluminense",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/502726.png",
-      "kitNumber": 28
-    },
-    {
       "apiId": 667326,
       "name": "Ruan",
       "position": "CM",
@@ -283,37 +272,81 @@
       "kitNumber": null
     },
     {
-      "apiId": 51214,
-      "name": "J. Savarino",
-      "position": "ST",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51214.png",
-      "kitNumber": 11
-    },
-    {
       "apiId": 13523,
       "name": "G. Cano",
       "position": "ST",
       "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "GOLD",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/13523.png",
       "kitNumber": 14
     },
     {
+      "apiId": 12705,
+      "name": "Hulk",
+      "position": "ST/RW",
+      "club": "Fluminense",
+      "nation": "Brazil",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/12705.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 2454,
+      "name": "Y. Soteldo",
+      "position": "LW/LM",
+      "club": "Fluminense",
+      "nation": "Venezuela",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2454.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 51214,
+      "name": "J. Savarino",
+      "position": "RW/CAM",
+      "club": "Fluminense",
+      "nation": "Venezuela",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51214.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 51603,
       "name": "A. Canobbio",
-      "position": "CM",
+      "position": "RW/RM/LW",
       "club": "Fluminense",
       "nation": "Uruguay",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51603.png",
       "kitNumber": 17
+    },
+    {
+      "apiId": 297522,
+      "name": "John Kennedy",
+      "position": "ST",
+      "club": "Fluminense",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/297522.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 70849,
+      "name": "K. Serna",
+      "position": "RW/LW",
+      "club": "Fluminense",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/70849.png",
+      "kitNumber": 90
     },
     {
       "apiId": 304048,
@@ -327,26 +360,15 @@
       "kitNumber": 19
     },
     {
-      "apiId": 12705,
-      "name": "Hulk",
-      "position": "ST",
+      "apiId": 502726,
+      "name": "Riquelme",
+      "position": "LW",
       "club": "Fluminense",
       "nation": "Brazil",
-      "tier": "ELITE",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/12705.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 297522,
-      "name": "John Kennedy",
-      "position": "ST",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/297522.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/502726.png",
+      "kitNumber": 28
     },
     {
       "apiId": 519809,
@@ -369,28 +391,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/634370.png",
       "kitNumber": 15
-    },
-    {
-      "apiId": 70849,
-      "name": "K. Serna",
-      "position": "ST",
-      "club": "Fluminense",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/70849.png",
-      "kitNumber": 90
-    },
-    {
-      "apiId": 2454,
-      "name": "Y. Soteldo",
-      "position": "CM",
-      "club": "Fluminense",
-      "nation": "Venezuela",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2454.png",
-      "kitNumber": 30
     },
     {
       "apiId": 568706,

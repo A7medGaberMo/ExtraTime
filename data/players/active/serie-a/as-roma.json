@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "AS Roma",
       "nation": "Serbia",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/556.png",
       "kitNumber": 99
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "AS Roma",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30425.png",
       "kitNumber": 23
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "AS Roma",
       "nation": "Ivory Coast",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1807.png",
       "kitNumber": 5
@@ -90,7 +90,7 @@
       "position": "LB/LWB",
       "club": "AS Roma",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/227.png",
       "kitNumber": 3
@@ -101,10 +101,21 @@
       "position": "CB/LB",
       "club": "AS Roma",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2669.png",
       "kitNumber": 22
+    },
+    {
+      "apiId": 6503,
+      "name": "N. Molina",
+      "position": "RB/RM",
+      "club": "AS Roma",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6503.png",
+      "kitNumber": 16
     },
     {
       "apiId": 162452,
@@ -189,10 +200,21 @@
       "position": "CM/CDM",
       "club": "AS Roma",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22147.png",
       "kitNumber": 17
+    },
+    {
+      "apiId": 277003,
+      "name": "N. El Aynaoui",
+      "position": "CM",
+      "club": "AS Roma",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/277003.png",
+      "kitNumber": 8
     },
     {
       "apiId": 778,
@@ -215,17 +237,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/356888.png",
       "kitNumber": 61
-    },
-    {
-      "apiId": 277003,
-      "name": "N. El Aynaoui",
-      "position": "CM",
-      "club": "AS Roma",
-      "nation": "Morocco",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/277003.png",
-      "kitNumber": 8
     },
     {
       "apiId": 626686,
@@ -272,17 +283,6 @@
       "kitNumber": 9
     },
     {
-      "apiId": 323936,
-      "name": "M. Soulé",
-      "position": "RW/CAM",
-      "club": "AS Roma",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/323936.png",
-      "kitNumber": 18
-    },
-    {
       "apiId": 249,
       "name": "D. Malen",
       "position": "ST/RW",
@@ -292,6 +292,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/249.png",
       "kitNumber": 14
+    },
+    {
+      "apiId": 323936,
+      "name": "M. Soulé",
+      "position": "RW/CAM",
+      "club": "AS Roma",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/323936.png",
+      "kitNumber": 18
     },
     {
       "apiId": 484027,
@@ -314,17 +325,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/435482.png",
       "kitNumber": 78
-    },
-    {
-      "apiId": 6503,
-      "name": "N. Molina",
-      "position": "RB/RM",
-      "club": "AS Roma",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6503.png",
-      "kitNumber": 16
     }
   ]
 }

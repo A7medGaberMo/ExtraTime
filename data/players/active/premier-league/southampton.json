@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Southampton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557522.png",
       "kitNumber": 35
@@ -118,17 +118,6 @@
       "kitNumber": 4
     },
     {
-      "apiId": 231039,
-      "name": "F. Azaz",
-      "position": "CAM/CM",
-      "club": "Southampton",
-      "nation": "Ireland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/231039.png",
-      "kitNumber": 10
-    },
-    {
       "apiId": 283278,
       "name": "T. Fellows",
       "position": "RM/RW",
@@ -138,6 +127,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/283278.png",
       "kitNumber": 18
+    },
+    {
+      "apiId": 231039,
+      "name": "F. Azaz",
+      "position": "CAM/CM",
+      "club": "Southampton",
+      "nation": "Ireland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/231039.png",
+      "kitNumber": 10
     },
     {
       "apiId": 351013,
@@ -167,7 +167,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304318.png",
       "kitNumber": 48
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "Ireland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/322305.png",
       "kitNumber": 37
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/401241.png",
       "kitNumber": 8
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Southampton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557372.png",
       "kitNumber": 19
@@ -211,7 +211,7 @@
       "position": "ST",
       "club": "Southampton",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/137302.png",
       "kitNumber": 11
@@ -255,7 +255,7 @@
       "position": "ST",
       "club": "Southampton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546536.png",
       "kitNumber": 49
@@ -266,7 +266,7 @@
       "position": "ST",
       "club": "Southampton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380691.png",
       "kitNumber": 46

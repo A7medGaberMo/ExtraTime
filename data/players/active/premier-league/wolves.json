@@ -24,7 +24,7 @@
       "position": "GK",
       "club": "Wolves",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19143.png",
       "kitNumber": 31
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Wolves",
       "nation": "Northern Ireland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/431387.png",
       "kitNumber": 70
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Wolves",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/397999.png",
       "kitNumber": 59
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Wolves",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546745.png",
       "kitNumber": 74
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Wolves",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/401098.png",
       "kitNumber": 58
@@ -277,7 +277,7 @@
       "position": "ST",
       "club": "Wolves",
       "nation": "Scotland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/379678.png",
       "kitNumber": 60

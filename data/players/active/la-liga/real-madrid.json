@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Real Madrid",
       "nation": "Belgium",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/730.png",
       "kitNumber": 1
@@ -52,6 +52,17 @@
       "kitNumber": 29
     },
     {
+      "apiId": 2285,
+      "name": "A. Rüdiger",
+      "position": "CB",
+      "club": "Real Madrid",
+      "nation": "Germany",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2285.png",
+      "kitNumber": 22
+    },
+    {
       "apiId": 372,
       "name": "Éder Militão",
       "position": "CB/RB",
@@ -61,17 +72,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/372.png",
       "kitNumber": 3
-    },
-    {
-      "apiId": 2285,
-      "name": "A. Rüdiger",
-      "position": "CB",
-      "club": "Real Madrid",
-      "nation": "Germany",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2285.png",
-      "kitNumber": 22
     },
     {
       "apiId": 283,
@@ -222,7 +222,7 @@
       "position": "CAM/CM",
       "club": "Real Madrid",
       "nation": "England",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129718.png",
       "kitNumber": 5
@@ -239,15 +239,15 @@
       "kitNumber": 8
     },
     {
-      "apiId": 2207,
-      "name": "E. Camavinga",
-      "position": "CDM/CM",
+      "apiId": 636,
+      "name": "Bernardo Silva",
+      "position": "CAM/RW",
       "club": "Real Madrid",
-      "nation": "France",
-      "tier": "ELITE",
+      "nation": "Portugal",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2207.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/636.png",
+      "kitNumber": 16
     },
     {
       "apiId": 1271,
@@ -261,26 +261,15 @@
       "kitNumber": 14
     },
     {
-      "apiId": 636,
-      "name": "Bernardo Silva",
-      "position": "CAM/RW",
+      "apiId": 2207,
+      "name": "E. Camavinga",
+      "position": "CDM/CM",
       "club": "Real Madrid",
-      "nation": "Portugal",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/636.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 744,
-      "name": "Brahim Díaz",
-      "position": "CAM/RW",
-      "club": "Real Madrid",
-      "nation": "Morocco",
+      "nation": "France",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/744.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/2207.png",
+      "kitNumber": 6
     },
     {
       "apiId": 291964,
@@ -292,6 +281,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/291964.png",
       "kitNumber": 15
+    },
+    {
+      "apiId": 744,
+      "name": "Brahim Díaz",
+      "position": "CAM/RW",
+      "club": "Real Madrid",
+      "nation": "Morocco",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/744.png",
+      "kitNumber": 21
     },
     {
       "apiId": 560905,
@@ -321,7 +321,7 @@
       "position": "CM",
       "club": "Real Madrid",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/509470.png",
       "kitNumber": 43
@@ -360,6 +360,17 @@
       "kitNumber": 11
     },
     {
+      "apiId": 450497,
+      "name": "Carlos Espí",
+      "position": "ST",
+      "club": "Real Madrid",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/450497.png",
+      "kitNumber": 19
+    },
+    {
       "apiId": 308998,
       "name": "Ávaro Leiva",
       "position": "ST",
@@ -382,23 +393,12 @@
       "kitNumber": 45
     },
     {
-      "apiId": 450497,
-      "name": "Carlos Espí",
-      "position": "ST",
-      "club": "Real Madrid",
-      "nation": "Royal Spanish Football Federation",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/450497.png",
-      "kitNumber": 19
-    },
-    {
       "apiId": 513776,
       "name": "Y. Diomande",
       "position": "ST",
       "club": "Real Madrid",
       "nation": "Ivory Coast",
-      "tier": "BRONZE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/513776.png",
       "kitNumber": 49

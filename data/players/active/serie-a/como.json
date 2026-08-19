@@ -30,6 +30,17 @@
       "kitNumber": 21
     },
     {
+      "apiId": 197448,
+      "name": "Yan Couto",
+      "position": "RB/RWB",
+      "club": "Como",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/197448.png",
+      "kitNumber": 2
+    },
+    {
       "apiId": 32034,
       "name": "A. Dossena",
       "position": "CB",
@@ -41,15 +52,15 @@
       "kitNumber": 22
     },
     {
-      "apiId": 26301,
-      "name": "M. Kempf",
+      "apiId": 19720,
+      "name": "T. Chalobah",
       "position": "CB",
       "club": "Como",
-      "nation": "Germany",
-      "tier": "SILVER",
+      "nation": "England",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26301.png",
-      "kitNumber": 2
+      "imageUrl": "https://media.api-sports.io/football/players/19720.png",
+      "kitNumber": 23
     },
     {
       "apiId": 336560,
@@ -72,6 +83,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129119.png",
       "kitNumber": 77
+    },
+    {
+      "apiId": 26301,
+      "name": "M. Kempf",
+      "position": "CB",
+      "club": "Como",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26301.png",
+      "kitNumber": 2
     },
     {
       "apiId": 31073,
@@ -336,28 +358,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/567667.png",
       "kitNumber": 58
-    },
-    {
-      "apiId": 197448,
-      "name": "Yan Couto",
-      "position": "RB/RWB",
-      "club": "Como",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/197448.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 19720,
-      "name": "T. Chalobah",
-      "position": "CB",
-      "club": "Como",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19720.png",
-      "kitNumber": 23
     }
   ]
 }

@@ -52,6 +52,17 @@
       "kitNumber": 4
     },
     {
+      "apiId": 390438,
+      "name": "M. Jaouab",
+      "position": "CB",
+      "club": "Valladolid",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/390438.png",
+      "kitNumber": 23
+    },
+    {
       "apiId": 197196,
       "name": "Ramón Martínez",
       "position": "CB",
@@ -61,17 +72,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/197196.png",
       "kitNumber": 5
-    },
-    {
-      "apiId": 390438,
-      "name": "M. Jaouab",
-      "position": "CB",
-      "club": "Valladolid",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/390438.png",
-      "kitNumber": 23
     },
     {
       "apiId": 354142,

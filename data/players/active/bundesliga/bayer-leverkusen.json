@@ -63,6 +63,17 @@
       "kitNumber": 40
     },
     {
+      "apiId": 182705,
+      "name": "Miguel Gutiérrez",
+      "position": "LB/LM",
+      "club": "Bayer Leverkusen",
+      "nation": "Spain",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182705.png",
+      "kitNumber": 3
+    },
+    {
       "apiId": 174918,
       "name": "L. Badé",
       "position": "CB",
@@ -145,7 +156,7 @@
       "position": "CDM/CM/CB",
       "club": "Bayer Leverkusen",
       "nation": "Germany",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24903.png",
       "kitNumber": 8
@@ -160,6 +171,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47516.png",
       "kitNumber": 41
+    },
+    {
+      "apiId": 380587,
+      "name": "I. Maza",
+      "position": "CAM/CM",
+      "club": "Bayer Leverkusen",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/380587.png",
+      "kitNumber": 30
     },
     {
       "apiId": 25635,
@@ -204,17 +226,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237087.png",
       "kitNumber": 6
-    },
-    {
-      "apiId": 380587,
-      "name": "I. Maza",
-      "position": "CAM/CM",
-      "club": "Bayer Leverkusen",
-      "nation": "Algeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/380587.png",
-      "kitNumber": 30
     },
     {
       "apiId": 298006,
@@ -391,17 +402,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/505295.png",
       "kitNumber": 35
-    },
-    {
-      "apiId": 182705,
-      "name": "Miguel Gutiérrez",
-      "position": "LB/LM",
-      "club": "Bayer Leverkusen",
-      "nation": "Spain",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182705.png",
-      "kitNumber": 3
     }
   ]
 }

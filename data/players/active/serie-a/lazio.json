@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Lazio",
       "nation": "Greece",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26644.png",
       "kitNumber": 29
@@ -200,7 +200,7 @@
       "position": "LW/LM",
       "club": "Lazio",
       "nation": "Italy",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30937.png",
       "kitNumber": 10
@@ -215,6 +215,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30784.png",
       "kitNumber": 6
+    },
+    {
+      "apiId": 333116,
+      "name": "R. Belahyane",
+      "position": "CM",
+      "club": "Lazio",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/333116.png",
+      "kitNumber": 21
     },
     {
       "apiId": 144740,
@@ -259,17 +270,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38749.png",
       "kitNumber": 44
-    },
-    {
-      "apiId": 333116,
-      "name": "R. Belahyane",
-      "position": "CM",
-      "club": "Lazio",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/333116.png",
-      "kitNumber": 21
     },
     {
       "apiId": 483662,

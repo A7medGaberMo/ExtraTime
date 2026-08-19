@@ -85,6 +85,17 @@
       "kitNumber": 16
     },
     {
+      "apiId": 2286,
+      "name": "D. Zappacosta",
+      "position": "RB/LB/RM",
+      "club": "Atalanta",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2286.png",
+      "kitNumber": 77
+    },
+    {
       "apiId": 137976,
       "name": "I. Hien",
       "position": "CB",
@@ -127,17 +138,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30421.png",
       "kitNumber": 19
-    },
-    {
-      "apiId": 2286,
-      "name": "D. Zappacosta",
-      "position": "RB/LB/RM",
-      "club": "Atalanta",
-      "nation": "Italy",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2286.png",
-      "kitNumber": 77
     },
     {
       "apiId": 530,

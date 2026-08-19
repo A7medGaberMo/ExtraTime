@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284390.png",
       "kitNumber": 64
@@ -57,7 +57,7 @@
       "position": "CB/RB",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19354.png",
       "kitNumber": 4
@@ -123,7 +123,7 @@
       "position": "CB/CDM",
       "club": "Aston Villa",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284457.png",
       "kitNumber": 26
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/478441.png",
       "kitNumber": 48
@@ -145,7 +145,7 @@
       "position": "CB",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546703.png",
       "kitNumber": 52
@@ -160,6 +160,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19191.png",
       "kitNumber": 7
+    },
+    {
+      "apiId": 195103,
+      "name": "João Gomes",
+      "position": "CM/CDM",
+      "club": "Aston Villa",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195103.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 162714,
+      "name": "Amadou Onana",
+      "position": "CDM/CM",
+      "club": "Aston Villa",
+      "nation": "Belgium",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162714.png",
+      "kitNumber": 24
     },
     {
       "apiId": 2287,
@@ -189,7 +211,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "Scotland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/434180.png",
       "kitNumber": 25
@@ -200,7 +222,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380715.png",
       "kitNumber": 50
@@ -211,7 +233,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/453101.png",
       "kitNumber": 83
@@ -222,7 +244,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/416250.png",
       "kitNumber": 51
@@ -233,7 +255,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412084.png",
       "kitNumber": 53
@@ -244,7 +266,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/364566.png",
       "kitNumber": 54
@@ -255,7 +277,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/360268.png",
       "kitNumber": 18
@@ -266,7 +288,7 @@
       "position": "CM",
       "club": "Aston Villa",
       "nation": "Switzerland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/406244.png",
       "kitNumber": 44
@@ -321,7 +343,7 @@
       "position": "ST",
       "club": "Aston Villa",
       "nation": "Brazil",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/464004.png",
       "kitNumber": 47
@@ -332,7 +354,7 @@
       "position": "ST",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/514519.png",
       "kitNumber": 55
@@ -343,32 +365,10 @@
       "position": "ST",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/553848.png",
       "kitNumber": 56
-    },
-    {
-      "apiId": 195103,
-      "name": "João Gomes",
-      "position": "CM/CDM",
-      "club": "Aston Villa",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195103.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 162714,
-      "name": "Amadou Onana",
-      "position": "CDM/CM",
-      "club": "Aston Villa",
-      "nation": "Belgium",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162714.png",
-      "kitNumber": 24
     }
   ]
 }

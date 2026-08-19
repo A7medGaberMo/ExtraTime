@@ -45,7 +45,7 @@
       "name": "Abdulelah Al Amri",
       "position": "CB",
       "club": "Al-Nassr",
-      "nation": "Saudi Arabia U-20",
+      "nation": "Saudi Arabia",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44475.png",
@@ -54,7 +54,7 @@
     {
       "apiId": 44309,
       "name": "Sultan Al Ghannam",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -65,7 +65,7 @@
     {
       "apiId": 350381,
       "name": "Salem Al Najdi",
-      "position": "CB",
+      "position": "LB",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -76,7 +76,7 @@
     {
       "apiId": 296940,
       "name": "Saad Al Nasser",
-      "position": "CB",
+      "position": "LB/LM",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -109,7 +109,7 @@
     {
       "apiId": 134995,
       "name": "Nawaf Boushal",
-      "position": "CB",
+      "position": "RB",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Al-Nassr",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2670.png",
       "kitNumber": 26
@@ -131,10 +131,10 @@
     {
       "apiId": 22250,
       "name": "M. Simakan",
-      "position": "CB",
+      "position": "CB/RB",
       "club": "Al-Nassr",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "nation": "France",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22250.png",
       "kitNumber": 3
@@ -142,7 +142,7 @@
     {
       "apiId": 147812,
       "name": "Ayman Yahya",
-      "position": "CM",
+      "position": "RW/RM",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -155,8 +155,8 @@
       "name": "Hayder Abdulkareem",
       "position": "CM",
       "club": "Al-Nassr",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "nation": "Iraq",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/420243.png",
       "kitNumber": 8
@@ -164,7 +164,7 @@
     {
       "apiId": 44509,
       "name": "Ali Al Hassan",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -186,9 +186,9 @@
     {
       "apiId": 44315,
       "name": "Abdullah Al Khaibari",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Al-Nassr",
-      "nation": "Saudi Arabia U-23",
+      "nation": "Saudi Arabia",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44315.png",
@@ -197,7 +197,7 @@
     {
       "apiId": 44692,
       "name": "Sami Al Naji",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -219,10 +219,10 @@
     {
       "apiId": 288055,
       "name": "Ângelo",
-      "position": "CM",
+      "position": "RW/RM",
       "club": "Al-Nassr",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "nation": "Brazil",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288055.png",
       "kitNumber": 20
@@ -230,10 +230,10 @@
     {
       "apiId": 508,
       "name": "K. Coman",
-      "position": "CM",
+      "position": "LW/RW",
       "club": "Al-Nassr",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/508.png",
       "kitNumber": 21
@@ -241,7 +241,7 @@
     {
       "apiId": 583,
       "name": "João Félix",
-      "position": "ST/CAM",
+      "position": "ST/CAM/LW",
       "club": "Al-Nassr",
       "nation": "Portugal",
       "tier": "MASTER",
@@ -252,10 +252,10 @@
     {
       "apiId": 304,
       "name": "S. Mané",
-      "position": "CM",
+      "position": "LW/ST",
       "club": "Al-Nassr",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "nation": "Senegal",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304.png",
       "kitNumber": 10

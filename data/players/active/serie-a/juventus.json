@@ -8,6 +8,17 @@
   },
   "players": [
     {
+      "apiId": 31354,
+      "name": "G. Vicario",
+      "position": "GK",
+      "club": "Juventus",
+      "nation": "Italy",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31354.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 30670,
       "name": "M. Di Gregorio",
       "position": "GK",
@@ -127,6 +138,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/125674.png",
       "kitNumber": 32
+    },
+    {
+      "apiId": 47985,
+      "name": "E. Holm",
+      "position": "RB/RWB",
+      "club": "Juventus",
+      "nation": "Sweden",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47985.png",
+      "kitNumber": 2
     },
     {
       "apiId": 335101,
@@ -272,6 +294,17 @@
       "kitNumber": 20
     },
     {
+      "apiId": 48392,
+      "name": "E. Zhegrova",
+      "position": "RW/RM",
+      "club": "Juventus",
+      "nation": "Kosovo",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48392.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 333,
       "name": "A. Milik",
       "position": "ST",
@@ -294,17 +327,6 @@
       "kitNumber": 13
     },
     {
-      "apiId": 48392,
-      "name": "E. Zhegrova",
-      "position": "RW/RM",
-      "club": "Juventus",
-      "nation": "Kosovo",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/48392.png",
-      "kitNumber": 11
-    },
-    {
       "apiId": 451504,
       "name": "J. Ekhator",
       "position": "ST",
@@ -316,17 +338,6 @@
       "kitNumber": 18
     },
     {
-      "apiId": 31354,
-      "name": "G. Vicario",
-      "position": "GK",
-      "club": "Juventus",
-      "nation": "Italy",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31354.png",
-      "kitNumber": 1
-    },
-    {
       "apiId": 395559,
       "name": "Kerim-Sam Alajbegović",
       "position": "LW/CAM",
@@ -336,17 +347,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/395559.png",
       "kitNumber": 27
-    },
-    {
-      "apiId": 47985,
-      "name": "E. Holm",
-      "position": "RB/RWB",
-      "club": "Juventus",
-      "nation": "Sweden",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47985.png",
-      "kitNumber": 2
     }
   ]
 }

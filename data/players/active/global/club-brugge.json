@@ -8,6 +8,28 @@
   },
   "players": [
     {
+      "apiId": 2802,
+      "name": "Y. Sommer",
+      "position": "GK",
+      "club": "Club Brugge",
+      "nation": "Switzerland",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2802.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 1923,
+      "name": "N. Jackers",
+      "position": "GK",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1923.png",
+      "kitNumber": 29
+    },
+    {
       "apiId": 395891,
       "name": "A. De Corte",
       "position": "GK",
@@ -17,28 +39,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/395891.png",
       "kitNumber": 71
-    },
-    {
-      "apiId": 1923,
-      "name": "N. Jackers",
-      "position": "GK",
-      "club": "Club Brugge",
-      "nation": "Sweden",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1923.png",
-      "kitNumber": 29
-    },
-    {
-      "apiId": 2802,
-      "name": "Y. Sommer",
-      "position": "GK",
-      "club": "Club Brugge",
-      "nation": "Switzerland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2802.png",
-      "kitNumber": 1
     },
     {
       "apiId": 426668,
@@ -52,11 +52,88 @@
       "kitNumber": 81
     },
     {
+      "apiId": 69,
+      "name": "B. Mechele",
+      "position": "CB",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/69.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 354027,
+      "name": "J. Ordoñez",
+      "position": "CB",
+      "club": "Club Brugge",
+      "nation": "Ecuador",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/354027.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 314265,
+      "name": "B. Meijer",
+      "position": "LB",
+      "club": "Club Brugge",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/314265.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 290213,
+      "name": "H. Siquet",
+      "position": "RB",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/290213.png",
+      "kitNumber": 41
+    },
+    {
+      "apiId": 301322,
+      "name": "K. Sabbe",
+      "position": "RB",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/301322.png",
+      "kitNumber": 64
+    },
+    {
+      "apiId": 375974,
+      "name": "J. Seys",
+      "position": "LB/RB",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/375974.png",
+      "kitNumber": 65
+    },
+    {
+      "apiId": 304984,
+      "name": "J. Spileers",
+      "position": "CB",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304984.png",
+      "kitNumber": 58
+    },
+    {
       "apiId": 568147,
       "name": "S. Coulibaly",
       "position": "CB",
       "club": "Club Brugge",
-      "nation": "Belgium",
+      "nation": "Ivory Coast",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568147.png",
@@ -67,99 +144,22 @@
       "name": "S. Gomez van Hoogen",
       "position": "CB",
       "club": "Club Brugge",
-      "nation": "Belgium",
+      "nation": "Netherlands",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/439579.png",
       "kitNumber": 82
     },
     {
-      "apiId": 69,
-      "name": "B. Mechele",
-      "position": "CB",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/69.png",
-      "kitNumber": 44
-    },
-    {
-      "apiId": 314265,
-      "name": "B. Meijer",
-      "position": "CB",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/314265.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 354027,
-      "name": "J. Ordoñez",
-      "position": "CB",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/354027.png",
-      "kitNumber": 4
-    },
-    {
       "apiId": 474741,
       "name": "V. Osuji",
       "position": "CB",
       "club": "Club Brugge",
-      "nation": "Belgium",
+      "nation": "Nigeria",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/474741.png",
       "kitNumber": 24
-    },
-    {
-      "apiId": 301322,
-      "name": "K. Sabbe",
-      "position": "CB",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/301322.png",
-      "kitNumber": 64
-    },
-    {
-      "apiId": 375974,
-      "name": "J. Seys",
-      "position": "CB",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/375974.png",
-      "kitNumber": 65
-    },
-    {
-      "apiId": 290213,
-      "name": "H. Siquet",
-      "position": "CB",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/290213.png",
-      "kitNumber": 41
-    },
-    {
-      "apiId": 304984,
-      "name": "J. Spileers",
-      "position": "CB",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/304984.png",
-      "kitNumber": 58
     },
     {
       "apiId": 444154,
@@ -173,59 +173,59 @@
       "kitNumber": 93
     },
     {
-      "apiId": 271609,
-      "name": "L. Audoor",
-      "position": "CM",
+      "apiId": 78,
+      "name": "H. Vanaken",
+      "position": "CAM/CM",
       "club": "Club Brugge",
       "nation": "Belgium",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/271609.png",
-      "kitNumber": 62
+      "imageUrl": "https://media.api-sports.io/football/players/78.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 39291,
+      "name": "H. Vetlesen",
+      "position": "CM/CAM",
+      "club": "Club Brugge",
+      "nation": "Norway",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39291.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 38124,
+      "name": "L. Reis",
+      "position": "CM/CDM",
+      "club": "Club Brugge",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/38124.png",
+      "kitNumber": 6
     },
     {
       "apiId": 325594,
       "name": "F. Lemaréchal",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
+      "nation": "France",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/325594.png",
       "kitNumber": 80
     },
     {
-      "apiId": 496791,
-      "name": "G. Okon-Engstler",
-      "position": "CM",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/496791.png",
-      "kitNumber": 86
-    },
-    {
       "apiId": 284446,
       "name": "F. Potts",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Club Brugge",
-      "nation": "Belgium",
+      "nation": "England",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284446.png",
       "kitNumber": 8
-    },
-    {
-      "apiId": 38124,
-      "name": "L. Reis",
-      "position": "CM",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/38124.png",
-      "kitNumber": 6
     },
     {
       "apiId": 162211,
@@ -239,6 +239,28 @@
       "kitNumber": null
     },
     {
+      "apiId": 271609,
+      "name": "L. Audoor",
+      "position": "CM",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/271609.png",
+      "kitNumber": 62
+    },
+    {
+      "apiId": 496791,
+      "name": "G. Okon-Engstler",
+      "position": "CM",
+      "club": "Club Brugge",
+      "nation": "Belgium",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/496791.png",
+      "kitNumber": 86
+    },
+    {
       "apiId": 394206,
       "name": "C. Tsawa",
       "position": "CM",
@@ -250,26 +272,48 @@
       "kitNumber": 16
     },
     {
-      "apiId": 78,
-      "name": "H. Vanaken",
-      "position": "CM",
+      "apiId": 282126,
+      "name": "Carlos Forbs",
+      "position": "RW/LW",
       "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
+      "nation": "Portugal",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/78.png",
-      "kitNumber": 20
+      "imageUrl": "https://media.api-sports.io/football/players/282126.png",
+      "kitNumber": 9
     },
     {
-      "apiId": 39291,
-      "name": "H. Vetlesen",
-      "position": "CM",
+      "apiId": 15683,
+      "name": "G. Nilsson",
+      "position": "ST",
+      "club": "Club Brugge",
+      "nation": "Sweden",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/15683.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 287923,
+      "name": "N. Tresoldi",
+      "position": "ST",
+      "club": "Club Brugge",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/287923.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 271276,
+      "name": "R. Vermant",
+      "position": "ST",
       "club": "Club Brugge",
       "nation": "Belgium",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/39291.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/271276.png",
+      "kitNumber": 17
     },
     {
       "apiId": 426447,
@@ -285,79 +329,35 @@
     {
       "apiId": 386481,
       "name": "M. Diakhon",
-      "position": "CM",
+      "position": "LW",
       "club": "Club Brugge",
-      "nation": "Senegal",
+      "nation": "France",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386481.png",
       "kitNumber": 67
     },
     {
-      "apiId": 282126,
-      "name": "Carlos Forbs",
-      "position": "CM",
-      "club": "Club Brugge",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/282126.png",
-      "kitNumber": 9
-    },
-    {
       "apiId": 551259,
       "name": "T. N. Koren",
       "position": "ST",
       "club": "Club Brugge",
-      "nation": "Belgium",
+      "nation": "Slovenia",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/551259.png",
       "kitNumber": 85
     },
     {
-      "apiId": 15683,
-      "name": "G. Nilsson",
-      "position": "ST",
-      "club": "Club Brugge",
-      "nation": "Sweden B",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/15683.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 287923,
-      "name": "N. Tresoldi",
-      "position": "ST",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/287923.png",
-      "kitNumber": 7
-    },
-    {
       "apiId": 444463,
       "name": "A. Vasovic",
       "position": "ST",
       "club": "Club Brugge",
-      "nation": "Yugoslavia",
+      "nation": "Belgium",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/444463.png",
       "kitNumber": 77
-    },
-    {
-      "apiId": 271276,
-      "name": "R. Vermant",
-      "position": "ST",
-      "club": "Club Brugge",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/271276.png",
-      "kitNumber": 17
     }
   ]
 }

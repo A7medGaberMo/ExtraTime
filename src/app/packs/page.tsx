@@ -1,537 +1,271 @@
 'use client';
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
+import { CardDetailModal } from '@/components/packs/card-detail-modal';
 import { PageHeader } from '@/components/shared/page-header';
 import { PlayerCard } from '@/components/shared/player-card';
-import { CardDetailModal } from '@/components/packs/card-detail-modal';
+import { TierBadge } from '@/components/shared/tier-badge';
+import { sfx } from '@/lib/sfx';
+import { getTierStyle, TIER_ORDER } from '@/lib/tier-styles';
 import type { PlayerCardData, Tier } from '@/types/player';
-import {
-  Package,
-  Crown,
-  Gem,
-  Search,
-  X,
-  ArrowRight,
-  RotateCcw,
-  Loader2,
-  RefreshCw,
-  Clock,
-  ChevronDown,
-} from 'lucide-react';
 
-/* ── Pack Definitions ─────────────────────────────────────────── */
-
-interface PackDef {
+type PackDef = {
   id: string;
   name: string;
-  badge: string;
-  desc: string;
+  note: string;
   cardCount: number;
-  icon: React.ComponentType<{ className?: string }>;
-  accent: string;
   tiers: Tier[];
   guaranteed: Tier[];
-}
+};
 
 const PACKS: PackDef[] = [
   {
-    id: 'legends',
-    name: 'Legends Prime',
-    badge: '4 CARDS · 2+ ICONS/HEROES',
-    desc: 'Guaranteed 2 legendary Icon or Hero cards plus 2 world-class players.',
+    id: 'heritage',
+    name: 'Heritage Case',
+    note: 'Icon and Hero-led premium pulls.',
     cardCount: 4,
-    icon: Crown,
-    accent: '#D4AF37',
     tiers: ['ICON', 'HERO', 'ULTIMATE', 'MASTER'],
     guaranteed: ['ICON', 'HERO'],
   },
   {
-    id: 'superstars',
-    name: 'Superstars Elite',
-    badge: '4 CARDS · 2+ ULTIMATE/MASTER',
-    desc: '2+ guaranteed Ultimate or Master cards plus top active talents.',
+    id: 'signature',
+    name: 'Signature Case',
+    note: 'Top active and legacy materials.',
     cardCount: 4,
-    icon: Gem,
-    accent: '#A855F7',
     tiers: ['ULTIMATE', 'MASTER', 'ELITE', 'GOLD'],
     guaranteed: ['ULTIMATE', 'MASTER'],
   },
   {
-    id: 'global',
-    name: 'Global All-Stars',
-    badge: '5 CARDS · ALL TIERS',
-    desc: '5 cards drawn across all tiers for full squad variety.',
+    id: 'clubhouse',
+    name: 'Clubhouse Case',
+    note: 'Balanced squad depth across tiers.',
     cardCount: 5,
-    icon: Package,
-    accent: '#95E810',
-    tiers: ['ICON', 'HERO', 'ULTIMATE', 'MASTER', 'ELITE', 'GOLD'],
-    guaranteed: ['ULTIMATE', 'ELITE'],
+    tiers: TIER_ORDER,
+    guaranteed: ['ELITE', 'GOLD'],
   },
 ];
 
-/* ── Tier Filter Config ───────────────────────────────────────── */
+const ROTATION_MS = 10 * 60 * 1000;
 
-const TIER_FILTERS: (Tier | 'ALL')[] = [
-  'ALL',
-  'ICON',
-  'HERO',
-  'ULTIMATE',
-  'MASTER',
-  'ELITE',
-  'GOLD',
-  'SILVER',
-  'BRONZE',
-];
+function seededShuffle<T>(items: T[], seed: number): T[] {
+  const copy = [...items];
+  let state = Math.max(1, Math.abs(seed));
 
-const TIER_COLORS: Record<string, string> = {
-  ICON: '#D4AF37',
-  HERO: '#10B981',
-  ULTIMATE: '#0EA5E9',
-  MASTER: '#A855F7',
-  ELITE: '#E11D48',
-  GOLD: '#EAB308',
-  SILVER: '#94A3B8',
-  BRONZE: '#CD7F32',
-};
-
-const TEN_MINUTES_MS = 10 * 60 * 1000;
-
-/* ── High Performance Seeded PRNG Shuffle ──────────────────────── */
-
-function seededShuffle<T>(arr: T[], seed: number): T[] {
-  const copy = [...arr];
-  let s = Math.abs(seed);
   for (let i = copy.length - 1; i > 0; i--) {
-    s = (s * 9301 + 49297) % 233280;
-    const j = Math.floor((s / 233280) * (i + 1));
+    state = (state * 1664525 + 1013904223) >>> 0;
+    const j = state % (i + 1);
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
+
   return copy;
 }
 
-/* ── Component ────────────────────────────────────────────────── */
+function toPlayerCardData(player: {
+  _id: string;
+  name: string;
+  position: string;
+  tier: string;
+  club: string;
+  nation: string;
+  imageUrl?: string;
+  isLegend?: boolean;
+  kitNumber?: number;
+}): PlayerCardData {
+  return {
+    id: String(player._id),
+    name: player.name,
+    position: player.position,
+    tier: player.tier as Tier,
+    club: player.club,
+    nation: player.nation,
+    imageUrl: player.imageUrl,
+    isLegend: player.isLegend ?? false,
+    kitNumber: player.kitNumber,
+  };
+}
+
+function pickCards(pack: PackDef, players: PlayerCardData[]): PlayerCardData[] {
+  const seed = Date.now() + pack.id.length * 1009;
+  const guaranteed = seededShuffle(players.filter((player) => pack.guaranteed.includes(player.tier)), seed);
+  const eligible = seededShuffle(players.filter((player) => pack.tiers.includes(player.tier)), seed + 17);
+  const fallback = seededShuffle(players, seed + 31);
+  const selected: PlayerCardData[] = [];
+  const used = new Set<string>();
+
+  for (const player of guaranteed) {
+    if (selected.length >= Math.min(2, pack.cardCount)) break;
+    selected.push(player);
+    used.add(player.id);
+  }
+
+  for (const pool of [eligible, fallback]) {
+    for (const player of pool) {
+      if (selected.length >= pack.cardCount) return selected;
+      if (used.has(player.id)) continue;
+      selected.push(player);
+      used.add(player.id);
+    }
+  }
+
+  return selected;
+}
+
+function formatRemaining(ms: number): string {
+  return `${Math.max(1, Math.ceil(ms / 60000))}m`;
+}
 
 export default function PacksPage() {
-  const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 60 });
-  const isLoadingPlayers = rawData === undefined;
-
-  // Pack opening state
+  const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 500 });
+  const [nowMs, setNowMs] = useState(() => Date.now());
+  const [shuffleSeed, setShuffleSeed] = useState(0);
   const [activePack, setActivePack] = useState<PackDef | null>(null);
   const [openedCards, setOpenedCards] = useState<PlayerCardData[]>([]);
-  const [isOpening, setIsOpening] = useState(false);
-
-  // Search & Filter state
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedTier, setSelectedTier] = useState<Tier | 'ALL'>('ALL');
-  const [displayCount, setDisplayCount] = useState(18);
-
-  // Modal inspection
   const [inspectedCard, setInspectedCard] = useState<PlayerCardData | null>(null);
 
-  // 10-Minute Auto-Rotation Time Tracker
-  const [mounted, setMounted] = useState(false);
-  const [nowMs, setNowMs] = useState<number>(0);
-  const [manualShuffleOffset, setManualShuffleOffset] = useState(0);
-
-  // Periodic heartbeat: updates time every 1s for the 10-minute rotation slot
   useEffect(() => {
-    setMounted(true);
-    setNowMs(Date.now());
-    const timer = setInterval(() => {
-      setNowMs(Date.now());
-    }, 1000);
+    const timer = setInterval(() => setNowMs(Date.now()), 15000);
     return () => clearInterval(timer);
   }, []);
 
-  // Compute remaining time in the current 10-minute window
-  const remainingInSlotMs = useMemo(() => {
-    if (!nowMs) return TEN_MINUTES_MS;
-    const elapsed = nowMs % TEN_MINUTES_MS;
-    return TEN_MINUTES_MS - elapsed;
-  }, [nowMs]);
+  const players = useMemo(() => {
+    const loaded = rawData?.allLoaded ?? [];
+    if (loaded.length > 0) return loaded.map(toPlayerCardData);
 
-  const remainingMinutes = Math.floor(remainingInSlotMs / 60000);
-  const remainingSeconds = Math.floor((remainingInSlotMs % 60000) / 1000);
-
-  // ── Unified Player Pool ────────────────────────────────────────
-  const allPlayers: PlayerCardData[] = useMemo(() => {
-    return (rawData?.allLoaded ?? []).map((p) => ({
-        id: String(p._id),
-        name: p.name,
-        position: p.position,
-        tier: p.tier as Tier,
-        club: p.club,
-        nation: p.nation,
-        isLegend: p.isLegend ?? false,
-        imageUrl: p.imageUrl,
-        kitNumber: p.kitNumber,
-    }));
+    const tierLoaded = TIER_ORDER.flatMap((tier) => rawData?.[tier] ?? []);
+    return tierLoaded.map(toPlayerCardData);
   }, [rawData]);
+  const rotationSlot = Math.floor(nowMs / ROTATION_MS);
+  const remainingMs = ROTATION_MS - (nowMs % ROTATION_MS);
 
-  // ── 8 Featured Showcase Players (Auto-Shuffles every 10m) ──────
-  const showcasePlayers = useMemo(() => {
-    if (allPlayers.length === 0) return [];
+  const showcase = useMemo(() => {
+    return seededShuffle(players, rotationSlot * 8191 + shuffleSeed * 4099).slice(0, 8);
+  }, [players, rotationSlot, shuffleSeed]);
 
-    const slot = Math.floor(nowMs / TEN_MINUTES_MS);
-    const combinedSeed = slot * 7919 + manualShuffleOffset * 3571;
-
-    // Filter top tiers for the showcase (Icon, Hero, Ultimate, Master)
-    const topTiers = allPlayers.filter((p) =>
-      ['ICON', 'HERO', 'ULTIMATE', 'MASTER'].includes(p.tier)
-    );
-    const pool = topTiers.length >= 8 ? topTiers : allPlayers;
-
-    return seededShuffle(pool, combinedSeed).slice(0, 8);
-  }, [allPlayers, nowMs, manualShuffleOffset]);
-
-  // ── Search & Tier Filtered Results ─────────────────────────────
-  const isFiltering = searchQuery.trim().length > 0 || selectedTier !== 'ALL';
-
-  const filteredResults = useMemo(() => {
-    if (!isFiltering) return [];
-
-    const q = searchQuery.trim().toLowerCase();
-    return allPlayers.filter((p) => {
-      const matchSearch =
-        !q ||
-        p.name.toLowerCase().includes(q) ||
-        p.club.toLowerCase().includes(q) ||
-        p.nation.toLowerCase().includes(q) ||
-        p.position.toLowerCase().includes(q);
-
-      const matchTier = selectedTier === 'ALL' || p.tier === selectedTier;
-
-      return matchSearch && matchTier;
-    });
-  }, [allPlayers, searchQuery, selectedTier, isFiltering]);
-
-  // ── Open Pack Handler ──────────────────────────────────────────
-  function handleOpenPack(pack: PackDef) {
-    setIsOpening(true);
+  function openPack(pack: PackDef) {
+    sfx.unlock();
+    sfx.save();
     setActivePack(pack);
-
-    const gPool = allPlayers.filter((p) => pack.guaranteed.includes(p.tier));
-    const rPool = allPlayers.filter((p) => pack.tiers.includes(p.tier));
-    const selected: PlayerCardData[] = [];
-    const usedIds = new Set<string>();
-
-    // 1. Guaranteed picks
-    const shuffledG = [...gPool].sort(() => Math.random() - 0.5);
-    for (let i = 0; i < Math.min(2, shuffledG.length); i++) {
-      selected.push(shuffledG[i]);
-      usedIds.add(shuffledG[i].id);
-    }
-
-    // 2. Fill remaining cards
-    const remaining = [...rPool]
-      .filter((p) => !usedIds.has(p.id))
-      .sort(() => Math.random() - 0.5);
-    for (let i = 0; selected.length < pack.cardCount && i < remaining.length; i++) {
-      selected.push(remaining[i]);
-      usedIds.add(remaining[i].id);
-    }
-
-    // Fallback if needed
-    while (selected.length < pack.cardCount && allPlayers.length > 0) {
-      const r = allPlayers[Math.floor(Math.random() * allPlayers.length)];
-      if (!usedIds.has(r.id)) {
-        selected.push(r);
-        usedIds.add(r.id);
-      } else break;
-    }
-
-    setTimeout(() => {
-      setOpenedCards(selected);
-      setIsOpening(false);
-    }, 320);
+    setOpenedCards(pickCards(pack, players));
   }
 
-  function handleResetPack() {
-    setOpenedCards([]);
-    setActivePack(null);
+  function shuffleShowcase() {
+    sfx.unlock();
+    setShuffleSeed((value) => value + 1);
   }
 
   return (
-    <div className="mx-auto max-w-5xl space-y-6 animate-fade-in pb-12">
-      <PageHeader
-        title="Card Packs & Collection"
-        subtitle="Open tier packs and explore authentic players across all leagues."
-        backUrl="/"
-      />
+    <main className="mx-auto max-w-6xl space-y-6 pb-12 animate-fade-in">
+      <PageHeader title="Packs" subtitle="Premium tier cards, quiet rotation, and all loaded players." backUrl="/" />
 
-      {/* ── SEARCH & TIER FILTER CONTROLS ───────────────────────────── */}
-      <div className="space-y-3 rounded-2xl border border-white/10 bg-slate-950/80 p-4 shadow-xl backdrop-blur-md">
-        {/* Search Input Bar */}
-        <div className="relative">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-steel" />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => {
-              setSearchQuery(e.target.value);
-              setDisplayCount(18);
-            }}
-            placeholder="Search player name, club, nation, or position..."
-            className="w-full pl-10 pr-10 py-2.5 bg-slate-900 border border-white/10 rounded-xl text-sm font-medium text-white placeholder:text-steel outline-none focus:border-lime/70 focus:ring-1 focus:ring-lime/30 transition-all"
-          />
-          {searchQuery && (
-            <button
-              onClick={() => setSearchQuery('')}
-              className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 text-steel hover:text-white cursor-pointer"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          )}
-        </div>
+      <section className="space-y-5 rounded-2xl border border-white/10 bg-slate-950/75 p-4 shadow-2xl backdrop-blur-md sm:p-5">
+        <header className="flex flex-wrap items-center justify-between gap-3">
+          <span>
+            <span className="block text-[10px] font-black uppercase tracking-widest text-steel">Cases</span>
+            <span className="block text-xl font-black uppercase tracking-normal text-white">Pack Display</span>
+          </span>
+          <span className="text-[10px] font-black uppercase tracking-widest text-steel">
+            {players.length || rawData?.totalLoaded || 0} loaded players
+          </span>
+        </header>
 
-        {/* Tier Quick Filter Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 scrollbar-none">
-          {TIER_FILTERS.map((tier) => {
-            const isSelected = selectedTier === tier;
-            const color = tier === 'ALL' ? '#95E810' : TIER_COLORS[tier] || '#FFFFFF';
+        <article className="grid grid-cols-1 gap-3 md:grid-cols-3">
+          {PACKS.map((pack) => {
+            const style = getTierStyle(pack.guaranteed[0]);
             return (
               <button
-                key={tier}
-                onClick={() => {
-                  setSelectedTier(tier);
-                  setDisplayCount(18);
-                }}
-                className={`px-3 py-1 rounded-xl text-[10px] font-black uppercase tracking-wider whitespace-nowrap transition-all border shrink-0 cursor-pointer ${
-                  isSelected
-                    ? 'bg-slate-900 text-white shadow-md'
-                    : 'bg-slate-950/60 text-steel border-white/5 hover:border-white/20 hover:text-white'
-                }`}
-                style={isSelected ? { borderColor: color, color } : undefined}
+                key={pack.id}
+                onClick={() => openPack(pack)}
+                disabled={players.length === 0}
+                className="group min-h-40 rounded-xl border bg-slate-900/70 p-4 text-left shadow-xl transition duration-200 hover:-translate-y-1 disabled:cursor-not-allowed disabled:opacity-50"
+                style={{ borderColor: `${style.accent}45`, boxShadow: `0 16px 36px rgba(0,0,0,0.26), 0 0 16px ${style.glow}` }}
               >
-                {tier}
+                <span className="flex h-full flex-col justify-between gap-5">
+                  <span className="space-y-3">
+                    <span className="flex flex-wrap gap-1.5">
+                      {pack.tiers.slice(0, 4).map((tier) => (
+                        <TierBadge key={tier} tier={tier} className="px-2 py-0.5 text-[9px]" />
+                      ))}
+                    </span>
+                    <span className="block">
+                      <span className="block text-lg font-black uppercase tracking-normal text-white">{pack.name}</span>
+                      <span className="mt-1 block text-xs font-medium leading-relaxed text-steel">{pack.note}</span>
+                    </span>
+                  </span>
+                  <span className="flex items-end justify-between gap-3">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-steel">{pack.cardCount} cards</span>
+                    <span className="rounded-lg border px-3 py-1.5 text-[10px] font-black uppercase tracking-wider" style={{ color: style.highlight, borderColor: `${style.highlight}55` }}>
+                      Open
+                    </span>
+                  </span>
+                </span>
               </button>
             );
           })}
-        </div>
-      </div>
+        </article>
 
-      {/* ── VIEW 1: FILTER / SEARCH RESULTS (WHEN ACTIVE) ───────────── */}
-      {isFiltering ? (
-        <section className="space-y-4 animate-fade-in">
-          <div className="flex items-center justify-between text-xs text-steel font-mono px-1">
-            <span>
-              Showing <strong className="text-white">{Math.min(filteredResults.length, displayCount)}</strong> of{' '}
-              <strong className="text-white">{filteredResults.length}</strong> matching cards
-            </span>
-            <button
-              onClick={() => {
-                setSearchQuery('');
-                setSelectedTier('ALL');
-              }}
-              className="text-[11px] text-lime hover:underline font-bold cursor-pointer"
-            >
-              Clear filters
-            </button>
-          </div>
-
-          {filteredResults.length === 0 ? (
-            <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-12 text-center space-y-2">
-              <p className="text-sm font-bold text-white uppercase">No players found</p>
-              <p className="text-xs text-steel">Try adjusting your search query or tier filter.</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-4 justify-items-center">
-              {filteredResults.slice(0, displayCount).map((player) => (
-                <div
-                  key={player.id}
-                  onClick={() => setInspectedCard(player)}
-                  className="cursor-pointer transition-transform hover:scale-105 active:scale-95"
-                >
+        {openedCards.length > 0 && activePack && (
+          <article className="border-t border-white/10 pt-5">
+            <header className="mb-4 flex flex-wrap items-center justify-between gap-3">
+              <span>
+                <span className="block text-[10px] font-black uppercase tracking-widest text-steel">Opened</span>
+                <span className="block text-xl font-black uppercase tracking-normal text-white">{activePack.name}</span>
+              </span>
+              <span className="flex gap-2">
+                <button onClick={() => openPack(activePack)} className="rounded-lg border border-white/15 bg-slate-900 px-3 py-2 text-[10px] font-black uppercase tracking-wider text-white transition hover:border-white/30">
+                  Again
+                </button>
+                <button onClick={() => setOpenedCards([])} className="rounded-lg border border-white/10 bg-white px-3 py-2 text-[10px] font-black uppercase tracking-wider text-slate-950 transition hover:bg-slate-200">
+                  Clear
+                </button>
+              </span>
+            </header>
+            <span className="grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-4 lg:grid-cols-5">
+              {openedCards.map((player, index) => (
+                <button key={`${player.id}-${index}`} onClick={() => setInspectedCard(player)} className="animate-scale-in transition active:scale-95" style={{ animationDelay: `${index * 45}ms` }}>
                   <PlayerCard player={player} size="sm" showTierLabelBelow />
-                </div>
+                </button>
               ))}
-            </div>
-          )}
+            </span>
+          </article>
+        )}
+      </section>
 
-          {displayCount < filteredResults.length && (
-            <div className="flex justify-center pt-3">
-              <button
-                onClick={() => setDisplayCount((prev) => prev + 18)}
-                className="px-6 py-2.5 bg-slate-900 hover:bg-slate-800 text-white font-black text-xs uppercase tracking-wider rounded-xl border border-white/15 transition-all flex items-center gap-2 cursor-pointer"
-              >
-                <span>Load More ({filteredResults.length - displayCount} remaining)</span>
-                <ChevronDown className="w-4 h-4" />
+      <section className="space-y-4">
+        <header className="flex flex-wrap items-end justify-between gap-3">
+          <span>
+            <span className="block text-[10px] font-black uppercase tracking-widest text-steel">Showcase</span>
+            <span className="block text-xl font-black uppercase tracking-normal text-white">Featured Rotation</span>
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="rounded-lg border border-white/10 bg-slate-950/75 px-3 py-2 text-[10px] font-black uppercase tracking-wider text-steel">
+              Changes in <span className="text-white" suppressHydrationWarning>{formatRemaining(remainingMs)}</span>
+            </span>
+            <button onClick={shuffleShowcase} className="rounded-lg border border-white/15 bg-slate-900 px-3 py-2 text-[10px] font-black uppercase tracking-wider text-white transition hover:border-white/30">
+              Shuffle
+            </button>
+          </span>
+        </header>
+
+        {showcase.length > 0 ? (
+          <article className="grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-4 lg:grid-cols-8">
+            {showcase.map((player, index) => (
+              <button key={player.id} onClick={() => setInspectedCard(player)} className="animate-scale-in transition active:scale-95" style={{ animationDelay: `${index * 35}ms` }}>
+                <PlayerCard player={player} size="sm" showTierLabelBelow />
               </button>
-            </div>
-          )}
-        </section>
-      ) : (
-        /* ── VIEW 2: PACK OPENERS & FEATURED SHOWCASE ──────────────── */
-        <>
-          {openedCards.length === 0 ? (
-            <section className="space-y-8">
-              {/* 3 Curated Packs */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {PACKS.map((pack) => {
-                  const Icon = pack.icon;
-                  return (
-                    <div
-                      key={pack.id}
-                      className="rounded-2xl border border-white/10 bg-slate-950/80 p-5 flex flex-col justify-between gap-5 hover:border-white/20 transition-all shadow-xl group backdrop-blur-md"
-                    >
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                          <span
-                            className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-lg border bg-slate-900/90"
-                            style={{ color: pack.accent, borderColor: `${pack.accent}40` }}
-                          >
-                            {pack.badge}
-                          </span>
-                          <div
-                            className="p-2 rounded-xl border bg-slate-900/80"
-                            style={{ borderColor: `${pack.accent}30`, color: pack.accent }}
-                          >
-                            <Icon className="w-5 h-5" />
-                          </div>
-                        </div>
+            ))}
+          </article>
+        ) : (
+          <article className="rounded-xl border border-white/10 bg-slate-950/75 p-10 text-center">
+            <p className="text-xs font-black uppercase tracking-widest text-steel">
+              {rawData === undefined ? 'Loading players' : 'No players available'}
+            </p>
+          </article>
+        )}
+      </section>
 
-                        <h3 className="text-lg font-black uppercase tracking-tight text-white">
-                          {pack.name}
-                        </h3>
-                        <p className="text-xs text-steel font-medium leading-relaxed">
-                          {pack.desc}
-                        </p>
-                      </div>
-
-                      <button
-                        onClick={() => handleOpenPack(pack)}
-                        disabled={isOpening || allPlayers.length === 0}
-                        className="w-full py-3 bg-slate-900 hover:bg-lime text-white hover:text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl border border-white/15 hover:border-lime transition-all flex items-center justify-center gap-2 group-hover:bg-lime group-hover:text-slate-950 cursor-pointer disabled:opacity-50 active:scale-98"
-                      >
-                        {isOpening && activePack?.id === pack.id ? (
-                          <>
-                            <Loader2 className="w-4 h-4 animate-spin" />
-                            <span>Opening...</span>
-                          </>
-                        ) : (
-                          <>
-                            <span>{allPlayers.length === 0 ? 'No Players' : 'Open Pack'}</span>
-                            <ArrowRight className="w-4 h-4" />
-                          </>
-                        )}
-                      </button>
-                    </div>
-                  );
-                })}
-              </div>
-
-              {/* ── 8 Featured Players Showcase (Auto-Rotates every 10m) ── */}
-              {showcasePlayers.length > 0 && (
-                <div className="space-y-3 pt-4 border-t border-white/10">
-                  <div className="flex items-center justify-between flex-wrap gap-2">
-                    <div className="flex items-center gap-2">
-                      <h3 className="text-sm font-black uppercase tracking-wide text-white">
-                        Featured Rotation
-                      </h3>
-                      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-slate-900/80 border border-white/10 text-[10px] text-steel font-mono">
-                        <Clock className="w-3 h-3 text-lime" />
-                        <span suppressHydrationWarning>
-                          {mounted ? `Auto-shuffles in ${remainingMinutes}m ${remainingSeconds}s` : 'Auto-shuffles every 10m'}
-                        </span>
-                      </div>
-                    </div>
-
-                    <button
-                      onClick={() => setManualShuffleOffset((prev) => prev + 1)}
-                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-wider text-steel hover:text-white bg-slate-900/60 border border-white/5 hover:border-white/20 transition-all cursor-pointer"
-                    >
-                      <RefreshCw className="w-3 h-3" />
-                      <span>Shuffle Now</span>
-                    </button>
-                  </div>
-
-                  <div className="grid grid-cols-4 sm:grid-cols-8 gap-3 justify-items-center">
-                    {showcasePlayers.map((player) => (
-                      <div
-                        key={player.id}
-                        onClick={() => setInspectedCard(player)}
-                        className="cursor-pointer transition-transform hover:scale-105 active:scale-95"
-                      >
-                        <PlayerCard player={player} size="sm" showTierLabelBelow />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {showcasePlayers.length === 0 && (
-                <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-12 text-center space-y-2">
-                  <p className="text-sm font-bold text-white uppercase">
-                    {isLoadingPlayers ? 'Loading players' : 'No players in database'}
-                  </p>
-                  <p className="text-xs text-steel">
-                    {isLoadingPlayers ? 'Reading Convex pack pools...' : 'Import players into Convex to open packs and view the showcase.'}
-                  </p>
-                </div>
-              )}
-            </section>
-          ) : (
-            /* ── PACK REVEAL VIEW ────────────────────────────────────── */
-            <section className="space-y-6 rounded-3xl border border-lime/30 bg-slate-950/90 p-6 sm:p-8 shadow-2xl animate-fade-in backdrop-blur-xl">
-              <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                <div>
-                  <span className="text-[10px] font-black uppercase tracking-wider text-lime">
-                    Pack Opened Successfully
-                  </span>
-                  <h3 className="text-2xl font-black uppercase tracking-tight text-white">
-                    {activePack?.name}
-                  </h3>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => activePack && handleOpenPack(activePack)}
-                    disabled={isOpening}
-                    className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white font-black text-xs uppercase tracking-wider rounded-xl border border-white/15 transition-all flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
-                  >
-                    <RotateCcw className="w-3.5 h-3.5" />
-                    <span>Open Again</span>
-                  </button>
-
-                  <button
-                    onClick={handleResetPack}
-                    className="px-4 py-2 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl transition-all cursor-pointer"
-                  >
-                    Done
-                  </button>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center py-4">
-                {openedCards.map((player, idx) => (
-                  <div
-                    key={`${player.id}-${idx}`}
-                    onClick={() => setInspectedCard(player)}
-                    className="cursor-pointer transition-transform hover:scale-105 active:scale-95 animate-scale-in"
-                    style={{ animationDelay: `${idx * 80}ms` }}
-                  >
-                    <PlayerCard player={player} size="sm" showTierLabelBelow />
-                  </div>
-                ))}
-              </div>
-
-              <p className="text-center text-xs text-steel font-medium">
-                Click any card to inspect full telemetry.
-              </p>
-            </section>
-          )}
-        </>
-      )}
-
-      {/* ── CARD DETAIL MODAL ────────────────────────────────────────── */}
-      {inspectedCard && (
-        <CardDetailModal
-          card={inspectedCard}
-          onClose={() => setInspectedCard(null)}
-        />
-      )}
-    </div>
+      {inspectedCard && <CardDetailModal card={inspectedCard} onClose={() => setInspectedCard(null)} />}
+    </main>
   );
 }

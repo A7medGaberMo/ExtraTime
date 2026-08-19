@@ -19,6 +19,17 @@
       "kitNumber": 1
     },
     {
+      "apiId": 1139,
+      "name": "P. Gulácsi",
+      "position": "GK",
+      "club": "Villarreal",
+      "nation": "Hungary",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1139.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 302277,
       "name": "Rubén Gómez",
       "position": "GK",
@@ -211,7 +222,7 @@
       "position": "ST/RW",
       "club": "Villarreal",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1707.png",
       "kitNumber": 7
@@ -281,17 +292,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/514913.png",
       "kitNumber": 33
-    },
-    {
-      "apiId": 1139,
-      "name": "P. Gulácsi",
-      "position": "GK",
-      "club": "Villarreal",
-      "nation": "Hungary",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1139.png",
-      "kitNumber": 1
     }
   ]
 }

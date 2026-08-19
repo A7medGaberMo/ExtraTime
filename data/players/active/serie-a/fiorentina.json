@@ -74,6 +74,17 @@
       "kitNumber": 15
     },
     {
+      "apiId": 162498,
+      "name": "R. Drăgușin",
+      "position": "CB",
+      "club": "Fiorentina",
+      "nation": "Romania",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162498.png",
+      "kitNumber": 3
+    },
+    {
       "apiId": 31642,
       "name": "L. Ranieri",
       "position": "CB/LB",
@@ -105,17 +116,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/136087.png",
       "kitNumber": 65
-    },
-    {
-      "apiId": 162498,
-      "name": "R. Drăgușin",
-      "position": "CB",
-      "club": "Fiorentina",
-      "nation": "Romania",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162498.png",
-      "kitNumber": 3
     },
     {
       "apiId": 330437,
@@ -193,6 +193,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/144578.png",
       "kitNumber": 41
+    },
+    {
+      "apiId": 449249,
+      "name": "Franco Mastantuono",
+      "position": "CAM/RW",
+      "club": "Fiorentina",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449249.png",
+      "kitNumber": 30
     },
     {
       "apiId": 30810,
@@ -369,17 +380,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/579241.png",
       "kitNumber": 69
-    },
-    {
-      "apiId": 449249,
-      "name": "Franco Mastantuono",
-      "position": "CAM/RW",
-      "club": "Fiorentina",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449249.png",
-      "kitNumber": 30
     }
   ]
 }

@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Ipswich",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18958.png",
       "kitNumber": 27
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Ipswich",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328669.png",
       "kitNumber": 31
@@ -85,6 +85,17 @@
       "kitNumber": 26
     },
     {
+      "apiId": 18814,
+      "name": "I. Diop",
+      "position": "CB",
+      "club": "Ipswich",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18814.png",
+      "kitNumber": 31
+    },
+    {
       "apiId": 19546,
       "name": "C. Kipré",
       "position": "CB",
@@ -118,6 +129,17 @@
       "kitNumber": 5
     },
     {
+      "apiId": 2823,
+      "name": "S. Lukić",
+      "position": "CM/CDM",
+      "club": "Ipswich",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2823.png",
+      "kitNumber": 20
+    },
+    {
       "apiId": 195121,
       "name": "M. Núñez",
       "position": "CM",
@@ -140,6 +162,17 @@
       "kitNumber": 14
     },
     {
+      "apiId": 70747,
+      "name": "J. Enciso",
+      "position": "CAM/ST/LW",
+      "club": "Ipswich",
+      "nation": "Paraguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/70747.png",
+      "kitNumber": 19
+    },
+    {
       "apiId": 138931,
       "name": "J. Philogene",
       "position": "LW/RW",
@@ -151,15 +184,15 @@
       "kitNumber": 11
     },
     {
-      "apiId": 19136,
-      "name": "J. Clarke",
-      "position": "LW/LM",
+      "apiId": 303467,
+      "name": "A. Fatawu",
+      "position": "RW/RM",
       "club": "Ipswich",
-      "nation": "England",
-      "tier": "SILVER",
+      "nation": "Ghana",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19136.png",
-      "kitNumber": 47
+      "imageUrl": "https://media.api-sports.io/football/players/303467.png",
+      "kitNumber": 7
     },
     {
       "apiId": 33224,
@@ -171,6 +204,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/33224.png",
       "kitNumber": 38
+    },
+    {
+      "apiId": 18823,
+      "name": "B. Johnson",
+      "position": "RW/ST",
+      "club": "Ipswich",
+      "nation": "Wales",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18823.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 19136,
+      "name": "J. Clarke",
+      "position": "LW/LM",
+      "club": "Ipswich",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19136.png",
+      "kitNumber": 47
     },
     {
       "apiId": 2380,
@@ -193,17 +248,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8794.png",
       "kitNumber": 9
-    },
-    {
-      "apiId": 18823,
-      "name": "B. Johnson",
-      "position": "RW/ST",
-      "club": "Ipswich",
-      "nation": "Wales",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18823.png",
-      "kitNumber": 18
     },
     {
       "apiId": 283290,
@@ -250,28 +294,6 @@
       "kitNumber": 22
     },
     {
-      "apiId": 2823,
-      "name": "S. Lukić",
-      "position": "CM/CDM",
-      "club": "Ipswich",
-      "nation": "Serbia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2823.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 18814,
-      "name": "I. Diop",
-      "position": "CB",
-      "club": "Ipswich",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18814.png",
-      "kitNumber": 31
-    },
-    {
       "apiId": 358166,
       "name": "A. Ouattara",
       "position": "CM",
@@ -281,28 +303,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/358166.png",
       "kitNumber": 47
-    },
-    {
-      "apiId": 70747,
-      "name": "J. Enciso",
-      "position": "CAM/ST/LW",
-      "club": "Ipswich",
-      "nation": "Paraguay",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/70747.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 303467,
-      "name": "A. Fatawu",
-      "position": "RW/RM",
-      "club": "Ipswich",
-      "nation": "Ghana",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/303467.png",
-      "kitNumber": 7
     }
   ]
 }

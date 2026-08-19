@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 402634,
-      "name": "Abdulaziz Rahma",
-      "position": "GK",
-      "club": "Al-Shabab",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/402634.png",
-      "kitNumber": 23
-    },
-    {
       "apiId": 135006,
       "name": "Mohammed Al Mahasneh",
       "position": "GK",
@@ -28,6 +17,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135006.png",
       "kitNumber": 33
+    },
+    {
+      "apiId": 402634,
+      "name": "Abdulaziz Rahma",
+      "position": "GK",
+      "club": "Al-Shabab",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/402634.png",
+      "kitNumber": 23
     },
     {
       "apiId": 607036,
@@ -41,26 +41,37 @@
       "kitNumber": 60
     },
     {
-      "apiId": 576174,
-      "name": "S. Al Anzi",
+      "apiId": 969,
+      "name": "T. Jedvaj",
       "position": "CB",
       "club": "Al-Shabab",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "nation": "Croatia",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/576174.png",
-      "kitNumber": 34
+      "imageUrl": "https://media.api-sports.io/football/players/969.png",
+      "kitNumber": 4
     },
     {
-      "apiId": 399417,
-      "name": "Mubarak Al Rajeh",
-      "position": "CB",
+      "apiId": 340978,
+      "name": "Hussain Al Sibyani",
+      "position": "LB",
       "club": "Al-Shabab",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/399417.png",
-      "kitNumber": 94
+      "imageUrl": "https://media.api-sports.io/football/players/340978.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 44470,
+      "name": "Mohammed Fuad Ibrahim Al Thani",
+      "position": "RB",
+      "club": "Al-Shabab",
+      "nation": "Saudi Arabia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/44470.png",
+      "kitNumber": 17
     },
     {
       "apiId": 431623,
@@ -74,48 +85,15 @@
       "kitNumber": 2
     },
     {
-      "apiId": 340978,
-      "name": "Hussain Al Sibyani",
+      "apiId": 399417,
+      "name": "Mubarak Al Rajeh",
       "position": "CB",
       "club": "Al-Shabab",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/340978.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 44470,
-      "name": "Mohammed Fuad Ibrahim Al Thani",
-      "position": "CB",
-      "club": "Al-Shabab",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44470.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 465786,
-      "name": "M. Barry",
-      "position": "CB",
-      "club": "Al-Shabab",
-      "nation": "Saudi Arabia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/465786.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 969,
-      "name": "T. Jedvaj",
-      "position": "CB",
-      "club": "Al-Shabab",
-      "nation": "Croatia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/969.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/399417.png",
+      "kitNumber": 94
     },
     {
       "apiId": 383676,
@@ -129,26 +107,26 @@
       "kitNumber": 5
     },
     {
-      "apiId": 1265,
-      "name": "Y. Adli",
-      "position": "CM",
+      "apiId": 576174,
+      "name": "S. Al Anzi",
+      "position": "CB",
       "club": "Al-Shabab",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1265.png",
-      "kitNumber": 29
+      "imageUrl": "https://media.api-sports.io/football/players/576174.png",
+      "kitNumber": 34
     },
     {
-      "apiId": 44754,
-      "name": "Ali Al Asmari",
-      "position": "CM",
+      "apiId": 465786,
+      "name": "M. Barry",
+      "position": "CB",
       "club": "Al-Shabab",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44754.png",
-      "kitNumber": 40
+      "imageUrl": "https://media.api-sports.io/football/players/465786.png",
+      "kitNumber": 3
     },
     {
       "apiId": 673649,
@@ -162,20 +140,53 @@
       "kitNumber": 56
     },
     {
-      "apiId": 586639,
-      "name": "Abdulaziz Al Hadhood",
-      "position": "ST",
+      "apiId": 1265,
+      "name": "Y. Adli",
+      "position": "CM/CAM",
+      "club": "Al-Shabab",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1265.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 19268,
+      "name": "J. Brownhill",
+      "position": "CM/CDM",
+      "club": "Al-Shabab",
+      "nation": "England",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19268.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 48491,
+      "name": "V. Sierro",
+      "position": "CM/CDM",
+      "club": "Al-Shabab",
+      "nation": "Switzerland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48491.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 44754,
+      "name": "Ali Al Asmari",
+      "position": "CM",
       "club": "Al-Shabab",
       "nation": "Saudi Arabia",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/586639.png",
-      "kitNumber": 74
+      "imageUrl": "https://media.api-sports.io/football/players/44754.png",
+      "kitNumber": 40
     },
     {
       "apiId": 269171,
       "name": "Awad Al Nashri",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Al-Shabab",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -184,26 +195,37 @@
       "kitNumber": 6
     },
     {
-      "apiId": 19268,
-      "name": "J. Brownhill",
-      "position": "CM",
+      "apiId": 2923,
+      "name": "Y. Carrasco",
+      "position": "LW/LM/CAM",
       "club": "Al-Shabab",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
+      "nation": "Belgium",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19268.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/2923.png",
+      "kitNumber": 10
     },
     {
-      "apiId": 48491,
-      "name": "V. Sierro",
-      "position": "CM",
+      "apiId": 41190,
+      "name": "Carlos Júnior",
+      "position": "ST/RW",
       "club": "Al-Shabab",
-      "nation": "Switzerland",
-      "tier": "GOLD",
+      "nation": "Brazil",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/48491.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/41190.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 35604,
+      "name": "Roger Martínez",
+      "position": "ST",
+      "club": "Al-Shabab",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/35604.png",
+      "kitNumber": 9
     },
     {
       "apiId": 383181,
@@ -228,50 +250,6 @@
       "kitNumber": 22
     },
     {
-      "apiId": 477140,
-      "name": "Hamad Al-Khorayef",
-      "position": "ST",
-      "club": "Al-Shabab",
-      "nation": "Saudi Arabia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/477140.png",
-      "kitNumber": 99
-    },
-    {
-      "apiId": 41190,
-      "name": "Carlos Júnior",
-      "position": "ST",
-      "club": "Al-Shabab",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41190.png",
-      "kitNumber": 13
-    },
-    {
-      "apiId": 2923,
-      "name": "Y. Carrasco",
-      "position": "CM",
-      "club": "Al-Shabab",
-      "nation": "Spain amateur",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2923.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 35604,
-      "name": "Roger Martínez",
-      "position": "ST",
-      "club": "Al-Shabab",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/35604.png",
-      "kitNumber": 9
-    },
-    {
       "apiId": 576275,
       "name": "A. Matuq",
       "position": "ST",
@@ -281,6 +259,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576275.png",
       "kitNumber": 37
+    },
+    {
+      "apiId": 586639,
+      "name": "Abdulaziz Al Hadhood",
+      "position": "ST",
+      "club": "Al-Shabab",
+      "nation": "Saudi Arabia",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/586639.png",
+      "kitNumber": 74
+    },
+    {
+      "apiId": 477140,
+      "name": "Hamad Al-Khorayef",
+      "position": "ST",
+      "club": "Al-Shabab",
+      "nation": "Saudi Arabia",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/477140.png",
+      "kitNumber": 99
     }
   ]
 }

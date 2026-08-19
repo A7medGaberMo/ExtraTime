@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/622.png",
       "kitNumber": 14
@@ -277,7 +277,7 @@
       "position": "CM",
       "club": "Athletic Club",
       "nation": "Spain",
-      "tier": "BRONZE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568156.png",
       "kitNumber": 33
@@ -327,6 +327,17 @@
       "kitNumber": 7
     },
     {
+      "apiId": 287680,
+      "name": "Maroan Sannadi",
+      "position": "ST",
+      "club": "Athletic Club",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/287680.png",
+      "kitNumber": 21
+    },
+    {
       "apiId": 190489,
       "name": "Álvaro Djaló",
       "position": "LW/ST",
@@ -347,17 +358,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286593.png",
       "kitNumber": 22
-    },
-    {
-      "apiId": 287680,
-      "name": "Maroan Sannadi",
-      "position": "ST",
-      "club": "Athletic Club",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/287680.png",
-      "kitNumber": 21
     },
     {
       "apiId": 560954,

@@ -10,6 +10,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "convex:dev": "npx convex dev",
+    "seed": "node scripts/seedAll.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },

@@ -8,23 +8,12 @@
   },
   "players": [
     {
-      "apiId": 372083,
-      "name": "Dyogo",
-      "position": "GK",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/372083.png",
-      "kitNumber": 49
-    },
-    {
       "apiId": 11756,
       "name": "A. Rossi",
       "position": "GK",
       "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/11756.png",
       "kitNumber": 1
@@ -41,31 +30,108 @@
       "kitNumber": 42
     },
     {
-      "apiId": 860,
-      "name": "Alex Sandro",
-      "position": "CB",
+      "apiId": 372083,
+      "name": "Dyogo",
+      "position": "GK",
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/372083.png",
+      "kitNumber": 49
+    },
+    {
+      "apiId": 618,
+      "name": "Danilo",
+      "position": "RB/CB",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/618.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 860,
+      "name": "Alex Sandro",
+      "position": "LB/CB",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/860.png",
       "kitNumber": 26
     },
     {
-      "apiId": 1771,
-      "name": "Ayrton Lucas",
+      "apiId": 1566,
+      "name": "Emerson Royal",
+      "position": "RB/RWB",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1566.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 9458,
+      "name": "Léo Ortiz",
       "position": "CB",
       "club": "Flamengo",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9458.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 10124,
+      "name": "Léo Pereira",
+      "position": "CB",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10124.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 1771,
+      "name": "Ayrton Lucas",
+      "position": "LB/LWB",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1771.png",
       "kitNumber": 6
     },
     {
+      "apiId": 1290,
+      "name": "G. Varela",
+      "position": "RB",
+      "club": "Flamengo",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1290.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 9909,
+      "name": "Vitão",
+      "position": "CB",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9909.png",
+      "kitNumber": 44
+    },
+    {
       "apiId": 403299,
       "name": "Daniel Sales",
-      "position": "CB",
+      "position": "RB",
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
@@ -83,28 +149,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/634767.png",
       "kitNumber": 87
-    },
-    {
-      "apiId": 618,
-      "name": "Danilo",
-      "position": "CB",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/618.png",
-      "kitNumber": 13
-    },
-    {
-      "apiId": 1566,
-      "name": "Emerson Royal",
-      "position": "CB",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1566.png",
-      "kitNumber": 22
     },
     {
       "apiId": 512740,
@@ -129,59 +173,114 @@
       "kitNumber": 61
     },
     {
-      "apiId": 9458,
-      "name": "Léo Ortiz",
-      "position": "CB",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9458.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 10124,
-      "name": "Léo Pereira",
-      "position": "CB",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10124.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 1290,
-      "name": "G. Varela",
-      "position": "CB",
+      "apiId": 2612,
+      "name": "G. de Arrascaeta",
+      "position": "CAM/LW",
       "club": "Flamengo",
       "nation": "Uruguay",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1290.png",
-      "kitNumber": 2
+      "imageUrl": "https://media.api-sports.io/football/players/2612.png",
+      "kitNumber": 10
     },
     {
-      "apiId": 9909,
-      "name": "Vitão",
-      "position": "CB",
+      "apiId": 1646,
+      "name": "Lucas Paquetá",
+      "position": "CAM/CM",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1646.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 5995,
+      "name": "N. de la Cruz",
+      "position": "CM/CAM",
+      "club": "Flamengo",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/5995.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 2289,
+      "name": "Jorginho",
+      "position": "CDM/CM",
+      "club": "Flamengo",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2289.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 48,
+      "name": "Saúl",
+      "position": "CM/LM",
+      "club": "Flamengo",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 2560,
+      "name": "E. Pulgar",
+      "position": "CDM/CM",
+      "club": "Flamengo",
+      "nation": "Chile",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2560.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 5994,
+      "name": "J. Carrascal",
+      "position": "CAM/LW",
+      "club": "Flamengo",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/5994.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 403300,
+      "name": "Lorran",
+      "position": "CAM/RW",
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9909.png",
-      "kitNumber": 44
+      "imageUrl": "https://media.api-sports.io/football/players/403300.png",
+      "kitNumber": 99
     },
     {
       "apiId": 332654,
       "name": "Evertton Araújo",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/332654.png",
       "kitNumber": 52
+    },
+    {
+      "apiId": 407958,
+      "name": "Rayan",
+      "position": "CM",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/407958.png",
+      "kitNumber": 60
     },
     {
       "apiId": 454555,
@@ -195,17 +294,6 @@
       "kitNumber": 47
     },
     {
-      "apiId": 2289,
-      "name": "Jorginho",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2289.png",
-      "kitNumber": 21
-    },
-    {
       "apiId": 544685,
       "name": "Joshua",
       "position": "CM",
@@ -215,28 +303,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544685.png",
       "kitNumber": 79
-    },
-    {
-      "apiId": 403300,
-      "name": "Lorran",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/403300.png",
-      "kitNumber": 99
-    },
-    {
-      "apiId": 1646,
-      "name": "Lucas Paquetá",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1646.png",
-      "kitNumber": 20
     },
     {
       "apiId": 644618,
@@ -250,17 +316,6 @@
       "kitNumber": 75
     },
     {
-      "apiId": 48,
-      "name": "Saúl",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/48.png",
-      "kitNumber": 8
-    },
-    {
       "apiId": 505531,
       "name": "Lucio",
       "position": "CM",
@@ -272,81 +327,81 @@
       "kitNumber": null
     },
     {
-      "apiId": 2560,
-      "name": "E. Pulgar",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Chile",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2560.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 407958,
-      "name": "Rayan",
-      "position": "CM",
+      "apiId": 10321,
+      "name": "Pedro",
+      "position": "ST",
       "club": "Flamengo",
       "nation": "Brazil",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/407958.png",
-      "kitNumber": 60
+      "imageUrl": "https://media.api-sports.io/football/players/10321.png",
+      "kitNumber": 9
     },
     {
-      "apiId": 2612,
-      "name": "G. de Arrascaeta",
-      "position": "CM",
+      "apiId": 126936,
+      "name": "Samuel Lino",
+      "position": "LW/LM",
       "club": "Flamengo",
-      "nation": "Uruguay",
-      "tier": "GOLD",
+      "nation": "Brazil",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2612.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/126936.png",
+      "kitNumber": 16
     },
     {
-      "apiId": 5995,
-      "name": "N. de la Cruz",
-      "position": "CM",
+      "apiId": 10180,
+      "name": "Bruno Henrique",
+      "position": "LW/ST",
       "club": "Flamengo",
-      "nation": "Uruguay",
-      "tier": "GOLD",
+      "nation": "Brazil",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5995.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/10180.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 16369,
+      "name": "G. Plata",
+      "position": "RW/RM",
+      "club": "Flamengo",
+      "nation": "Ecuador",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/16369.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 2414,
+      "name": "Everton",
+      "position": "LW/LM",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2414.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 22238,
+      "name": "Luiz Araújo",
+      "position": "RW/LW",
+      "club": "Flamengo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22238.png",
+      "kitNumber": 7
     },
     {
       "apiId": 589367,
       "name": "Alan",
       "position": "ST",
       "club": "Flamengo",
-      "nation": "Republic of Ireland",
+      "nation": "Brazil",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/589367.png",
       "kitNumber": 59
-    },
-    {
-      "apiId": 10180,
-      "name": "Bruno Henrique",
-      "position": "ST",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10180.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 5994,
-      "name": "J. Carrascal",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5994.png",
-      "kitNumber": 15
     },
     {
       "apiId": 586025,
@@ -358,61 +413,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/586025.png",
       "kitNumber": 81
-    },
-    {
-      "apiId": 2414,
-      "name": "Everton",
-      "position": "ST",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2414.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 22238,
-      "name": "Luiz Araújo",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22238.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 10321,
-      "name": "Pedro",
-      "position": "ST",
-      "club": "Flamengo",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10321.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 16369,
-      "name": "G. Plata",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Ecuador",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/16369.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 126936,
-      "name": "Samuel Lino",
-      "position": "CM",
-      "club": "Flamengo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/126936.png",
-      "kitNumber": 16
     },
     {
       "apiId": 405160,

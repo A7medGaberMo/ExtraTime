@@ -156,7 +156,7 @@
       "position": "CM/CDM",
       "club": "Saint Etienne",
       "nation": "Morocco",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174801.png",
       "kitNumber": 29
@@ -211,7 +211,7 @@
       "position": "CM",
       "club": "Saint Etienne",
       "nation": "Morocco",
-      "tier": "BRONZE",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/659012.png",
       "kitNumber": 51
@@ -222,10 +222,21 @@
       "position": "CM",
       "club": "Saint Etienne",
       "nation": "Morocco",
-      "tier": "BRONZE",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/500070.png",
       "kitNumber": 31
+    },
+    {
+      "apiId": 385636,
+      "name": "J. Sahraoui",
+      "position": "CM",
+      "club": "Saint Etienne",
+      "nation": "Tunisia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/385636.png",
+      "kitNumber": 43
     },
     {
       "apiId": 583992,
@@ -248,17 +259,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/495154.png",
       "kitNumber": 35
-    },
-    {
-      "apiId": 385636,
-      "name": "J. Sahraoui",
-      "position": "CM",
-      "club": "Saint Etienne",
-      "nation": "Tunisia",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/385636.png",
-      "kitNumber": 43
     },
     {
       "apiId": 24743,

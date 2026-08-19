@@ -8,6 +8,17 @@
   },
   "players": [
     {
+      "apiId": 2410,
+      "name": "Weverton",
+      "position": "GK",
+      "club": "Grêmio",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2410.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 309634,
       "name": "Gabriel Grando",
       "position": "GK",
@@ -17,17 +28,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/309634.png",
       "kitNumber": 12
-    },
-    {
-      "apiId": 635023,
-      "name": "G. Menegon",
-      "position": "GK",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/635023.png",
-      "kitNumber": 31
     },
     {
       "apiId": 454135,
@@ -41,37 +41,26 @@
       "kitNumber": 24
     },
     {
-      "apiId": 2410,
-      "name": "Weverton",
+      "apiId": 635023,
+      "name": "G. Menegon",
       "position": "GK",
       "club": "Grêmio",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2410.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/635023.png",
+      "kitNumber": 31
     },
     {
-      "apiId": 10527,
-      "name": "Caio Paulista",
+      "apiId": 2466,
+      "name": "W. Kannemann",
       "position": "CB",
       "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10527.png",
-      "kitNumber": 38
-    },
-    {
-      "apiId": 405703,
-      "name": "Diego Caito",
-      "position": "CB",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/405703.png",
-      "kitNumber": 27
+      "imageUrl": "https://media.api-sports.io/football/players/2466.png",
+      "kitNumber": 4
     },
     {
       "apiId": 2500,
@@ -79,10 +68,65 @@
       "position": "CB",
       "club": "Grêmio",
       "nation": "Paraguay",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2500.png",
       "kitNumber": 2
+    },
+    {
+      "apiId": 9916,
+      "name": "Marcos Rocha",
+      "position": "RB",
+      "club": "Grêmio",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9916.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 374,
+      "name": "João Pedro",
+      "position": "RB",
+      "club": "Grêmio",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/374.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 10527,
+      "name": "Caio Paulista",
+      "position": "LB/LWB",
+      "club": "Grêmio",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10527.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 10309,
+      "name": "Marlon",
+      "position": "LB",
+      "club": "Grêmio",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10309.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 9993,
+      "name": "Wagner Leonardo",
+      "position": "CB",
+      "club": "Grêmio",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9993.png",
+      "kitNumber": 3
     },
     {
       "apiId": 304867,
@@ -96,15 +140,26 @@
       "kitNumber": 6
     },
     {
-      "apiId": 374,
-      "name": "João Pedro",
+      "apiId": 405703,
+      "name": "Diego Caito",
+      "position": "RB",
+      "club": "Grêmio",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/405703.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 454925,
+      "name": "Wallace",
       "position": "CB",
       "club": "Grêmio",
       "nation": "Brazil",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/374.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/454925.png",
+      "kitNumber": 82
     },
     {
       "apiId": 510552,
@@ -116,28 +171,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/510552.png",
       "kitNumber": 43
-    },
-    {
-      "apiId": 9916,
-      "name": "Marcos Rocha",
-      "position": "CB",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9916.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 10309,
-      "name": "Marlon",
-      "position": "CB",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10309.png",
-      "kitNumber": 23
     },
     {
       "apiId": 647516,
@@ -162,37 +195,81 @@
       "kitNumber": 32
     },
     {
-      "apiId": 9993,
-      "name": "Wagner Leonardo",
-      "position": "CB",
+      "apiId": 70566,
+      "name": "M. Villasanti",
+      "position": "CDM/CM",
       "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
+      "nation": "Paraguay",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9993.png",
-      "kitNumber": 3
+      "imageUrl": "https://media.api-sports.io/football/players/70566.png",
+      "kitNumber": 20
     },
     {
-      "apiId": 454925,
-      "name": "Wallace",
-      "position": "CB",
+      "apiId": 22167,
+      "name": "Danilo Barbosa",
+      "position": "CDM/CM",
       "club": "Grêmio",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/454925.png",
-      "kitNumber": 82
+      "imageUrl": "https://media.api-sports.io/football/players/22167.png",
+      "kitNumber": 5
     },
     {
-      "apiId": 2466,
-      "name": "W. Kannemann",
-      "position": "CB",
+      "apiId": 574,
+      "name": "F. Krovinović",
+      "position": "CM/CAM",
+      "club": "Grêmio",
+      "nation": "Croatia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/574.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 277771,
+      "name": "M. Monsalve",
+      "position": "CAM/CM",
+      "club": "Grêmio",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/277771.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 129882,
+      "name": "J. Nardoni",
+      "position": "CM/CDM",
+      "club": "Grêmio",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129882.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 10314,
+      "name": "Dodi",
+      "position": "CM/CDM",
       "club": "Grêmio",
       "nation": "Brazil",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2466.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/10314.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 199141,
+      "name": "E. Noriega",
+      "position": "CM/CB",
+      "club": "Grêmio",
+      "nation": "Peru",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/199141.png",
+      "kitNumber": 8
     },
     {
       "apiId": 510554,
@@ -204,28 +281,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/510554.png",
       "kitNumber": 50
-    },
-    {
-      "apiId": 22167,
-      "name": "Danilo Barbosa",
-      "position": "CM",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22167.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 10314,
-      "name": "Dodi",
-      "position": "CM",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10314.png",
-      "kitNumber": 17
     },
     {
       "apiId": 457508,
@@ -250,50 +305,6 @@
       "kitNumber": 40
     },
     {
-      "apiId": 574,
-      "name": "F. Krovinović",
-      "position": "CM",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/574.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 277771,
-      "name": "M. Monsalve",
-      "position": "CM",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/277771.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 129882,
-      "name": "J. Nardoni",
-      "position": "CM",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129882.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 199141,
-      "name": "E. Noriega",
-      "position": "CM",
-      "club": "Grêmio",
-      "nation": "Venezuela",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/199141.png",
-      "kitNumber": 8
-    },
-    {
       "apiId": 502998,
       "name": "Tiago",
       "position": "CM",
@@ -305,48 +316,48 @@
       "kitNumber": 39
     },
     {
-      "apiId": 70566,
-      "name": "M. Villasanti",
-      "position": "CM",
-      "club": "Grêmio",
-      "nation": "Paraguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/70566.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 1431,
-      "name": "F. Amuzu",
-      "position": "CM",
-      "club": "Grêmio",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1431.png",
-      "kitNumber": 9
-    },
-    {
       "apiId": 2737,
       "name": "M. Braithwaite",
       "position": "ST",
       "club": "Grêmio",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2737.png",
       "kitNumber": 22
     },
     {
-      "apiId": 1494,
-      "name": "Jovane Cabral",
-      "position": "ST",
+      "apiId": 2294,
+      "name": "Willian",
+      "position": "LW/RW/CAM",
       "club": "Grêmio",
-      "nation": "Cape Verde",
-      "tier": "GOLD",
+      "nation": "Brazil",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1494.png",
-      "kitNumber": 77
+      "imageUrl": "https://media.api-sports.io/football/players/2294.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 691,
+      "name": "Tetê",
+      "position": "RW/LW",
+      "club": "Grêmio",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/691.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 5981,
+      "name": "C. Pavón",
+      "position": "RW/LW",
+      "club": "Grêmio",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/5981.png",
+      "kitNumber": 7
     },
     {
       "apiId": 104,
@@ -354,32 +365,43 @@
       "position": "ST",
       "club": "Grêmio",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/104.png",
       "kitNumber": 95
     },
     {
-      "apiId": 13616,
-      "name": "J. Enamorado",
-      "position": "ST",
+      "apiId": 1431,
+      "name": "F. Amuzu",
+      "position": "LW/RW",
       "club": "Grêmio",
-      "nation": "Spain",
-      "tier": "GOLD",
+      "nation": "Belgium",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/13616.png",
-      "kitNumber": 99
+      "imageUrl": "https://media.api-sports.io/football/players/1431.png",
+      "kitNumber": 9
     },
     {
       "apiId": 507527,
       "name": "Gabriel Mec",
-      "position": "ST",
+      "position": "CAM/LW",
       "club": "Grêmio",
       "nation": "Brazil",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/507527.png",
       "kitNumber": 37
+    },
+    {
+      "apiId": 1494,
+      "name": "Jovane Cabral",
+      "position": "LW/RW",
+      "club": "Grêmio",
+      "nation": "Cape Verde",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1494.png",
+      "kitNumber": 77
     },
     {
       "apiId": 269441,
@@ -393,15 +415,15 @@
       "kitNumber": 30
     },
     {
-      "apiId": 5981,
-      "name": "C. Pavón",
-      "position": "CM",
+      "apiId": 13616,
+      "name": "J. Enamorado",
+      "position": "RW/LW",
       "club": "Grêmio",
-      "nation": "Argentina",
+      "nation": "Colombia",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5981.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/13616.png",
+      "kitNumber": 99
     },
     {
       "apiId": 576652,
@@ -413,28 +435,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576652.png",
       "kitNumber": 47
-    },
-    {
-      "apiId": 691,
-      "name": "Tetê",
-      "position": "ST",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/691.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 2294,
-      "name": "Willian",
-      "position": "ST",
-      "club": "Grêmio",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2294.png",
-      "kitNumber": null
     }
   ]
 }

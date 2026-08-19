@@ -272,17 +272,6 @@
       "kitNumber": 77
     },
     {
-      "apiId": 350047,
-      "name": "D. Mokwa",
-      "position": "ST",
-      "club": "SV Elversberg",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/350047.png",
-      "kitNumber": 44
-    },
-    {
       "apiId": 196500,
       "name": "N. Futkeu",
       "position": "ST",
@@ -292,6 +281,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/196500.png",
       "kitNumber": 46
+    },
+    {
+      "apiId": 350047,
+      "name": "D. Mokwa",
+      "position": "ST",
+      "club": "SV Elversberg",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350047.png",
+      "kitNumber": 44
     }
   ]
 }

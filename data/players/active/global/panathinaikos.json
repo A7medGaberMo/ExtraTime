@@ -8,26 +8,26 @@
   },
   "players": [
     {
+      "apiId": 126,
+      "name": "Iñaki Peña",
+      "position": "GK",
+      "club": "Panathinaikos",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/126.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 6697,
       "name": "L. Chaves",
       "position": "GK",
       "club": "Panathinaikos",
-      "nation": "Greece",
+      "nation": "Argentina",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6697.png",
       "kitNumber": 12
-    },
-    {
-      "apiId": 619667,
-      "name": "C. Geitonas",
-      "position": "GK",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/619667.png",
-      "kitNumber": 71
     },
     {
       "apiId": 544039,
@@ -41,23 +41,34 @@
       "kitNumber": 70
     },
     {
-      "apiId": 126,
-      "name": "Iñaki Peña",
-      "position": "CDM/CM",
+      "apiId": 619667,
+      "name": "C. Geitonas",
+      "position": "GK",
       "club": "Panathinaikos",
-      "nation": "Colombia",
-      "tier": "ELITE",
+      "nation": "Greece",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/126.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/619667.png",
+      "kitNumber": 71
+    },
+    {
+      "apiId": 194,
+      "name": "S. de Vrij",
+      "position": "CB",
+      "club": "Panathinaikos",
+      "nation": "Netherlands",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/194.png",
+      "kitNumber": 6
     },
     {
       "apiId": 1627,
       "name": "D. Calabria",
-      "position": "CB",
+      "position": "RB",
       "club": "Panathinaikos",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1627.png",
       "kitNumber": 2
@@ -67,11 +78,77 @@
       "name": "S. Ingason",
       "position": "CB",
       "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "GOLD",
+      "nation": "Iceland",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2361.png",
       "kitNumber": 15
+    },
+    {
+      "apiId": 158710,
+      "name": "V. Kristiansen",
+      "position": "LB",
+      "club": "Panathinaikos",
+      "nation": "Denmark",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158710.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 26828,
+      "name": "G. Kiriakopoulos",
+      "position": "LB/LWB",
+      "club": "Panathinaikos",
+      "nation": "Greece",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26828.png",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 8777,
+      "name": "A. Touba",
+      "position": "CB/LB",
+      "club": "Panathinaikos",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8777.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 38692,
+      "name": "E. Palmer-Brown",
+      "position": "CB",
+      "club": "Panathinaikos",
+      "nation": "USA",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/38692.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 24873,
+      "name": "R. van Drongelen",
+      "position": "CB",
+      "club": "Panathinaikos",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24873.png",
+      "kitNumber": 55
+    },
+    {
+      "apiId": 204290,
+      "name": "T. Tsapras",
+      "position": "RB",
+      "club": "Panathinaikos",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/204290.png",
+      "kitNumber": 19
     },
     {
       "apiId": 561134,
@@ -85,28 +162,6 @@
       "kitNumber": 3
     },
     {
-      "apiId": 158710,
-      "name": "V. Kristiansen",
-      "position": "CB",
-      "club": "Panathinaikos",
-      "nation": "Denmark",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/158710.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 26828,
-      "name": "G. Kiriakopoulos",
-      "position": "CM",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26828.png",
-      "kitNumber": 77
-    },
-    {
       "apiId": 550216,
       "name": "Vasilios Lavdas",
       "position": "CB",
@@ -118,70 +173,103 @@
       "kitNumber": 56
     },
     {
-      "apiId": 38692,
-      "name": "E. Palmer-Brown",
-      "position": "CB",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/38692.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 8777,
-      "name": "A. Touba",
-      "position": "CB",
-      "club": "Panathinaikos",
-      "nation": "Algeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/8777.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 204290,
-      "name": "T. Tsapras",
-      "position": "CB",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/204290.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 24873,
-      "name": "R. van Drongelen",
-      "position": "CB",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/24873.png",
-      "kitNumber": 55
-    },
-    {
-      "apiId": 194,
-      "name": "S. de Vrij",
-      "position": "CB",
-      "club": "Panathinaikos",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/194.png",
-      "kitNumber": 6
-    },
-    {
       "apiId": 607,
       "name": "A. Bakasetas",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Panathinaikos",
       "nation": "Greece",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/607.png",
       "kitNumber": 11
+    },
+    {
+      "apiId": 179,
+      "name": "M. Sissoko",
+      "position": "CM/CDM",
+      "club": "Panathinaikos",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/179.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 129169,
+      "name": "A. Zaroury",
+      "position": "LW/CAM",
+      "club": "Panathinaikos",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129169.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 56025,
+      "name": "A. Čerin",
+      "position": "CM",
+      "club": "Panathinaikos",
+      "nation": "Slovenia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/56025.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 93671,
+      "name": "Pedro Chirivella",
+      "position": "CDM/CM",
+      "club": "Panathinaikos",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/93671.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 37157,
+      "name": "T. Vilhena",
+      "position": "CM",
+      "club": "Panathinaikos",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37157.png",
+      "kitNumber": 52
+    },
+    {
+      "apiId": 154742,
+      "name": "M. Pantović",
+      "position": "LW/RW/CAM",
+      "club": "Panathinaikos",
+      "nation": "Serbia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/154742.png",
+      "kitNumber": 72
+    },
+    {
+      "apiId": 297139,
+      "name": "E. Camara",
+      "position": "CDM/CM",
+      "club": "Panathinaikos",
+      "nation": "France",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/297139.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 323785,
+      "name": "V. Taborda",
+      "position": "CAM/RW",
+      "club": "Panathinaikos",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/323785.png",
+      "kitNumber": 20
     },
     {
       "apiId": 650482,
@@ -195,44 +283,11 @@
       "kitNumber": 44
     },
     {
-      "apiId": 297139,
-      "name": "E. Camara",
-      "position": "CM",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/297139.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 93671,
-      "name": "Pedro Chirivella",
-      "position": "CM",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/93671.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 56025,
-      "name": "A. Čerin",
-      "position": "CM",
-      "club": "Panathinaikos",
-      "nation": "Slovenia B",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/56025.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 550627,
       "name": "A. Jagusic",
       "position": "CM",
       "club": "Panathinaikos",
-      "nation": "Greece",
+      "nation": "Croatia",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/550627.png",
@@ -250,17 +305,6 @@
       "kitNumber": 18
     },
     {
-      "apiId": 154742,
-      "name": "M. Pantović",
-      "position": "CM",
-      "club": "Panathinaikos",
-      "nation": "Serbia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/154742.png",
-      "kitNumber": 72
-    },
-    {
       "apiId": 501846,
       "name": "A. Shehu",
       "position": "CM",
@@ -272,59 +316,15 @@
       "kitNumber": 57
     },
     {
-      "apiId": 179,
-      "name": "M. Sissoko",
-      "position": "CM",
+      "apiId": 70078,
+      "name": "F. Pellistri",
+      "position": "RW/RM",
       "club": "Panathinaikos",
-      "nation": "France",
-      "tier": "GOLD",
+      "nation": "Uruguay",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/179.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 323785,
-      "name": "V. Taborda",
-      "position": "ST",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/323785.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 37157,
-      "name": "T. Vilhena",
-      "position": "CM",
-      "club": "Panathinaikos",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37157.png",
-      "kitNumber": 52
-    },
-    {
-      "apiId": 129169,
-      "name": "A. Zaroury",
-      "position": "CM",
-      "club": "Panathinaikos",
-      "nation": "Morocco",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129169.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 490156,
-      "name": "Santino Andino",
-      "position": "ST",
-      "club": "Panathinaikos",
-      "nation": "Greece",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/490156.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/70078.png",
+      "kitNumber": 28
     },
     {
       "apiId": 37186,
@@ -332,7 +332,7 @@
       "position": "ST",
       "club": "Panathinaikos",
       "nation": "Nigeria",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37186.png",
       "kitNumber": 9
@@ -340,18 +340,29 @@
     {
       "apiId": 93059,
       "name": "L. García",
-      "position": "ST",
+      "position": "ST/RW",
       "club": "Panathinaikos",
-      "nation": "Mexico",
-      "tier": "GOLD",
+      "nation": "Trinidad and Tobago",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/93059.png",
       "kitNumber": 99
     },
     {
+      "apiId": 490156,
+      "name": "Santino Andino",
+      "position": "LW/RW",
+      "club": "Panathinaikos",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/490156.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 388842,
       "name": "G. Kyriopoulos",
-      "position": "ST",
+      "position": "LW",
       "club": "Panathinaikos",
       "nation": "Greece",
       "tier": "GOLD",
@@ -371,22 +382,11 @@
       "kitNumber": null
     },
     {
-      "apiId": 70078,
-      "name": "F. Pellistri",
-      "position": "CM",
-      "club": "Panathinaikos",
-      "nation": "Uruguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/70078.png",
-      "kitNumber": 28
-    },
-    {
       "apiId": 277896,
       "name": "E. Rastoder",
       "position": "ST",
       "club": "Panathinaikos",
-      "nation": "Greece",
+      "nation": "Slovenia",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/277896.png",
@@ -397,7 +397,7 @@
       "name": "A. Tetteh",
       "position": "ST",
       "club": "Panathinaikos",
-      "nation": "Greece",
+      "nation": "Ghana",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/561139.png",

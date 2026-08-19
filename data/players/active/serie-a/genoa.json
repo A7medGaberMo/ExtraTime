@@ -195,6 +195,17 @@
       "kitNumber": 32
     },
     {
+      "apiId": 957,
+      "name": "D. Sow",
+      "position": "CM/CDM",
+      "club": "Genoa",
+      "nation": "Switzerland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/957.png",
+      "kitNumber": 20
+    },
+    {
       "apiId": 89520,
       "name": "M. Ellertsson",
       "position": "CM/LM",
@@ -288,7 +299,7 @@
       "position": "ST/CF",
       "club": "Genoa",
       "nation": "Portugal",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/281408.png",
       "kitNumber": 9
@@ -369,17 +380,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/611384.png",
       "kitNumber": 46
-    },
-    {
-      "apiId": 957,
-      "name": "D. Sow",
-      "position": "CM/CDM",
-      "club": "Genoa",
-      "nation": "Switzerland",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/957.png",
-      "kitNumber": 20
     }
   ]
 }

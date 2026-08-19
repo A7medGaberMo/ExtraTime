@@ -8,15 +8,15 @@
   },
   "players": [
     {
-      "apiId": 386314,
-      "name": "Diogo Ferreira",
+      "apiId": 675,
+      "name": "A. Trubin",
       "position": "GK",
       "club": "Benfica",
-      "nation": "Portugal",
-      "tier": "SILVER",
+      "nation": "Ukraine",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/386314.png",
-      "kitNumber": 50
+      "imageUrl": "https://media.api-sports.io/football/players/675.png",
+      "kitNumber": 1
     },
     {
       "apiId": 162595,
@@ -30,15 +30,15 @@
       "kitNumber": 24
     },
     {
-      "apiId": 675,
-      "name": "A. Trubin",
+      "apiId": 386314,
+      "name": "Diogo Ferreira",
       "position": "GK",
       "club": "Benfica",
-      "nation": "Ukraine",
-      "tier": "GOLD",
+      "nation": "Portugal",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/675.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/386314.png",
+      "kitNumber": 50
     },
     {
       "apiId": 161939,
@@ -46,7 +46,7 @@
       "position": "CB",
       "club": "Benfica",
       "nation": "Portugal",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161939.png",
       "kitNumber": 44
@@ -54,13 +54,46 @@
     {
       "apiId": 15623,
       "name": "A. Bah",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Benfica",
-      "nation": "Sierra Leone",
-      "tier": "GOLD",
+      "nation": "Denmark",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15623.png",
       "kitNumber": 6
+    },
+    {
+      "apiId": 7318,
+      "name": "A. Dedić",
+      "position": "RB/LB",
+      "club": "Benfica",
+      "nation": "Bosnia and Herzegovina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7318.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 133,
+      "name": "C. Lenglet",
+      "position": "CB",
+      "club": "Benfica",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/133.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 135505,
+      "name": "S. Dahl",
+      "position": "LB",
+      "club": "Benfica",
+      "nation": "Sweden",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/135505.png",
+      "kitNumber": 26
     },
     {
       "apiId": 550932,
@@ -74,37 +107,15 @@
       "kitNumber": 58
     },
     {
-      "apiId": 7318,
-      "name": "A. Dedić",
-      "position": "CB",
-      "club": "Benfica",
-      "nation": "Bosnia and Herzegovina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/7318.png",
-      "kitNumber": 17
-    },
-    {
       "apiId": 630903,
       "name": "Gabriel Indio",
       "position": "CB",
       "club": "Benfica",
-      "nation": "Portugal",
+      "nation": "Brazil",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630903.png",
       "kitNumber": 33
-    },
-    {
-      "apiId": 133,
-      "name": "C. Lenglet",
-      "position": "CB",
-      "club": "Benfica",
-      "nation": "France",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/133.png",
-      "kitNumber": 2
     },
     {
       "apiId": 567694,
@@ -131,21 +142,43 @@
     {
       "apiId": 39043,
       "name": "F. Aursnes",
-      "position": "CM",
+      "position": "CM/CDM/RB",
       "club": "Benfica",
-      "nation": "Portugal",
-      "tier": "GOLD",
+      "nation": "Norway",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/39043.png",
       "kitNumber": 8
     },
     {
+      "apiId": 195104,
+      "name": "R. Rios",
+      "position": "CM/CDM",
+      "club": "Benfica",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195104.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 161945,
+      "name": "H. Sudakov",
+      "position": "CAM/CM",
+      "club": "Benfica",
+      "nation": "Ukraine",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161945.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 25918,
       "name": "L. Barreiro",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Benfica",
       "nation": "Luxembourg",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25918.png",
       "kitNumber": 18
@@ -153,42 +186,31 @@
     {
       "apiId": 158378,
       "name": "E. Barrenechea",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Benfica",
-      "nation": "Portugal",
-      "tier": "GOLD",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158378.png",
       "kitNumber": 5
     },
     {
-      "apiId": 135505,
-      "name": "S. Dahl",
-      "position": "CB",
+      "apiId": 573,
+      "name": "Rafa",
+      "position": "CAM/RW/LW",
       "club": "Benfica",
-      "nation": "Sweden",
-      "tier": "GOLD",
+      "nation": "Portugal",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/135505.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 550902,
-      "name": "M. Figueiredo",
-      "position": "CM",
-      "club": "Benfica",
-      "nation": "Malaysia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/550902.png",
-      "kitNumber": 73
+      "imageUrl": "https://media.api-sports.io/football/players/573.png",
+      "kitNumber": 27
     },
     {
       "apiId": 40560,
       "name": "J. Kamiński",
-      "position": "CM",
+      "position": "LM/LW",
       "club": "Benfica",
-      "nation": "Portugal",
+      "nation": "Poland",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/40560.png",
@@ -206,6 +228,28 @@
       "kitNumber": 16
     },
     {
+      "apiId": 362755,
+      "name": "G. Prestianni",
+      "position": "RW/CAM",
+      "club": "Benfica",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/362755.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 550902,
+      "name": "M. Figueiredo",
+      "position": "CM",
+      "club": "Benfica",
+      "nation": "Portugal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/550902.png",
+      "kitNumber": 73
+    },
+    {
       "apiId": 345427,
       "name": "João Pedro Seno Luís Rêgo",
       "position": "CM",
@@ -217,75 +261,64 @@
       "kitNumber": 84
     },
     {
-      "apiId": 195104,
-      "name": "R. Rios",
-      "position": "CM",
-      "club": "Benfica",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195104.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 161945,
-      "name": "H. Sudakov",
-      "position": "CM",
-      "club": "Benfica",
-      "nation": "Ukraine",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161945.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 567695,
-      "name": "A. Cabral",
+      "apiId": 36798,
+      "name": "V. Pavlidis",
       "position": "ST",
       "club": "Benfica",
-      "nation": "Cape Verde",
-      "tier": "SILVER",
+      "nation": "Greece",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/567695.png",
-      "kitNumber": 72
-    },
-    {
-      "apiId": 1163,
-      "name": "Bruma",
-      "position": "ST",
-      "club": "Benfica",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1163.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/36798.png",
+      "kitNumber": 14
     },
     {
       "apiId": 13489,
       "name": "J. Durán",
       "position": "ST",
       "club": "Benfica",
-      "nation": "Spain",
-      "tier": "GOLD",
+      "nation": "Colombia",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/13489.png",
       "kitNumber": 22
     },
     {
-      "apiId": 616827,
-      "name": "Felipe Lima",
-      "position": "ST",
+      "apiId": 25458,
+      "name": "D. Lukebakio",
+      "position": "RW/LW/ST",
+      "club": "Benfica",
+      "nation": "Belgium",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25458.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 1163,
+      "name": "Bruma",
+      "position": "LW/RW",
       "club": "Benfica",
       "nation": "Portugal",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/616827.png",
-      "kitNumber": 77
+      "imageUrl": "https://media.api-sports.io/football/players/1163.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 301528,
+      "name": "A. Schjelderup",
+      "position": "LW/LM",
+      "club": "Benfica",
+      "nation": "Norway",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/301528.png",
+      "kitNumber": 21
     },
     {
       "apiId": 158065,
       "name": "Tiago Gouveia",
-      "position": "ST",
+      "position": "RW/LW",
       "club": "Benfica",
       "nation": "Portugal",
       "tier": "GOLD",
@@ -305,15 +338,26 @@
       "kitNumber": 9
     },
     {
-      "apiId": 25458,
-      "name": "D. Lukebakio",
+      "apiId": 567695,
+      "name": "A. Cabral",
       "position": "ST",
       "club": "Benfica",
-      "nation": "DR Congo",
-      "tier": "GOLD",
+      "nation": "Cape Verde",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25458.png",
-      "kitNumber": 11
+      "imageUrl": "https://media.api-sports.io/football/players/567695.png",
+      "kitNumber": 72
+    },
+    {
+      "apiId": 616827,
+      "name": "Felipe Lima",
+      "position": "ST",
+      "club": "Benfica",
+      "nation": "Portugal",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/616827.png",
+      "kitNumber": 77
     },
     {
       "apiId": 400513,
@@ -325,50 +369,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/400513.png",
       "kitNumber": null
-    },
-    {
-      "apiId": 36798,
-      "name": "V. Pavlidis",
-      "position": "ST",
-      "club": "Benfica",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/36798.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 362755,
-      "name": "G. Prestianni",
-      "position": "CM",
-      "club": "Benfica",
-      "nation": "Portugal",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/362755.png",
-      "kitNumber": 25
-    },
-    {
-      "apiId": 573,
-      "name": "Rafa",
-      "position": "CM",
-      "club": "Benfica",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/573.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 301528,
-      "name": "A. Schjelderup",
-      "position": "ST",
-      "club": "Benfica",
-      "nation": "Norway",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/301528.png",
-      "kitNumber": 21
     }
   ]
 }

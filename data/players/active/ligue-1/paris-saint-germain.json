@@ -68,7 +68,7 @@
       "position": "RB/RWB/RM",
       "club": "Paris Saint Germain",
       "nation": "Morocco",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9.png",
       "kitNumber": 2
@@ -79,7 +79,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "Brazil",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/257.png",
       "kitNumber": 5
@@ -90,7 +90,7 @@
       "position": "LB/LWB",
       "club": "Paris Saint Germain",
       "nation": "Portugal",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/263482.png",
       "kitNumber": 25
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Paris Saint Germain",
       "nation": "Ecuador",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/16367.png",
       "kitNumber": 51
@@ -138,6 +138,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161671.png",
       "kitNumber": 6
+    },
+    {
+      "apiId": 2724,
+      "name": "L. Digne",
+      "position": "LB",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2724.png",
+      "kitNumber": 12
     },
     {
       "apiId": 610763,
@@ -178,7 +189,7 @@
       "position": "CM/CDM/CAM",
       "club": "Paris Saint Germain",
       "nation": "Portugal",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128384.png",
       "kitNumber": 17
@@ -217,12 +228,23 @@
       "kitNumber": 8
     },
     {
+      "apiId": 274300,
+      "name": "M. Akliouche",
+      "position": "CAM/RW/RM",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/274300.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 409216,
       "name": "Senny Mayulu",
       "position": "CAM/CM",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/409216.png",
       "kitNumber": 24
@@ -239,12 +261,23 @@
       "kitNumber": 27
     },
     {
+      "apiId": 153,
+      "name": "O. Dembélé",
+      "position": "RW/LW/CAM",
+      "club": "Paris Saint Germain",
+      "nation": "France",
+      "tier": "ULTIMATE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/153.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 483,
       "name": "K. Kvaratskhelia",
       "position": "LW/RW/ST",
       "club": "Paris Saint Germain",
       "nation": "Georgia",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/483.png",
       "kitNumber": 7
@@ -266,21 +299,10 @@
       "position": "LW/CAM/RW",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343027.png",
       "kitNumber": 14
-    },
-    {
-      "apiId": 446249,
-      "name": "I. Mbaye",
-      "position": "ST/RW",
-      "club": "Paris Saint Germain",
-      "nation": "France",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/446249.png",
-      "kitNumber": 49
     },
     {
       "apiId": 931,
@@ -294,26 +316,15 @@
       "kitNumber": 7
     },
     {
-      "apiId": 2724,
-      "name": "L. Digne",
-      "position": "LB",
+      "apiId": 446249,
+      "name": "I. Mbaye",
+      "position": "ST/RW",
       "club": "Paris Saint Germain",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2724.png",
-      "kitNumber": 12
-    },
-    {
-      "apiId": 274300,
-      "name": "M. Akliouche",
-      "position": "CAM/RW/RM",
-      "club": "Paris Saint Germain",
-      "nation": "France",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/274300.png",
-      "kitNumber": 11
+      "imageUrl": "https://media.api-sports.io/football/players/446249.png",
+      "kitNumber": 49
     }
   ]
 }

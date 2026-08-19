@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Angers",
       "nation": "Portugal",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/647.png",
       "kitNumber": 1
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Angers",
       "nation": "Morocco",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174708.png",
       "kitNumber": 14
@@ -211,7 +211,7 @@
       "position": "ST",
       "club": "Angers",
       "nation": "Morocco",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/193188.png",
       "kitNumber": 9
@@ -233,10 +233,21 @@
       "position": "LW/ST",
       "club": "Angers",
       "nation": "Morocco",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/191289.png",
       "kitNumber": 7
+    },
+    {
+      "apiId": 639473,
+      "name": "Yahia Jlidi",
+      "position": "ST",
+      "club": "Angers",
+      "nation": "Tunisia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/639473.png",
+      "kitNumber": 44
     },
     {
       "apiId": 402066,
@@ -270,17 +281,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/579375.png",
       "kitNumber": 31
-    },
-    {
-      "apiId": 639473,
-      "name": "Yahia Jlidi",
-      "position": "ST",
-      "club": "Angers",
-      "nation": "Tunisia",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/639473.png",
-      "kitNumber": 44
     },
     {
       "apiId": 403277,

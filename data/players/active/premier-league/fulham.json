@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Fulham",
       "nation": "Germany",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1438.png",
       "kitNumber": 1
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Fulham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/384981.png",
       "kitNumber": 4
@@ -184,15 +184,37 @@
       "kitNumber": 30
     },
     {
+      "apiId": 284356,
+      "name": "S. Charles",
+      "position": "CDM/CM",
+      "club": "Fulham",
+      "nation": "Northern Ireland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284356.png",
+      "kitNumber": 24
+    },
+    {
       "apiId": 389315,
       "name": "Joshua King",
       "position": "CM",
       "club": "Fulham",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/389315.png",
       "kitNumber": 24
+    },
+    {
+      "apiId": 386306,
+      "name": "César Palacios",
+      "position": "CM",
+      "club": "Fulham",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/386306.png",
+      "kitNumber": 42
     },
     {
       "apiId": 195106,
@@ -233,32 +255,10 @@
       "position": "ST",
       "club": "Fulham",
       "nation": "Spain",
-      "tier": "ELITE",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336711.png",
       "kitNumber": 27
-    },
-    {
-      "apiId": 386306,
-      "name": "César Palacios",
-      "position": "CM",
-      "club": "Fulham",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/386306.png",
-      "kitNumber": 42
-    },
-    {
-      "apiId": 284356,
-      "name": "S. Charles",
-      "position": "CDM/CM",
-      "club": "Fulham",
-      "nation": "Northern Ireland",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284356.png",
-      "kitNumber": 24
     }
   ]
 }

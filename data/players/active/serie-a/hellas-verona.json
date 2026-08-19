@@ -52,6 +52,28 @@
       "kitNumber": 12
     },
     {
+      "apiId": 303362,
+      "name": "R. Belghali",
+      "position": "RB/RWB",
+      "club": "Hellas Verona",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/303362.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 25061,
+      "name": "A. Bella-Kotchap",
+      "position": "CB",
+      "club": "Hellas Verona",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25061.png",
+      "kitNumber": 37
+    },
+    {
       "apiId": 15909,
       "name": "M. Frese",
       "position": "LB",
@@ -61,17 +83,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15909.png",
       "kitNumber": 3
-    },
-    {
-      "apiId": 303362,
-      "name": "R. Belghali",
-      "position": "RB/RWB",
-      "club": "Hellas Verona",
-      "nation": "Algeria",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/303362.png",
-      "kitNumber": 7
     },
     {
       "apiId": 70362,
@@ -162,6 +173,17 @@
       "kitNumber": 10
     },
     {
+      "apiId": 37437,
+      "name": "A. Harroui",
+      "position": "CAM/CM",
+      "club": "Hellas Verona",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37437.png",
+      "kitNumber": 21
+    },
+    {
       "apiId": 418,
       "name": "S. Serdar",
       "position": "CM/CDM",
@@ -173,17 +195,6 @@
       "kitNumber": 8
     },
     {
-      "apiId": 37437,
-      "name": "A. Harroui",
-      "position": "CAM/CM",
-      "club": "Hellas Verona",
-      "nation": "Morocco",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37437.png",
-      "kitNumber": 21
-    },
-    {
       "apiId": 364415,
       "name": "Jesús Santiago",
       "position": "CM/CDM",
@@ -193,6 +204,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/364415.png",
       "kitNumber": 20
+    },
+    {
+      "apiId": 867,
+      "name": "G. Kastanos",
+      "position": "CAM/RW",
+      "club": "Hellas Verona",
+      "nation": "Cyprus",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/867.png",
+      "kitNumber": 45
     },
     {
       "apiId": 1090,
@@ -283,17 +305,6 @@
       "kitNumber": 30
     },
     {
-      "apiId": 867,
-      "name": "G. Kastanos",
-      "position": "CAM/RW",
-      "club": "Hellas Verona",
-      "nation": "Cyprus",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/867.png",
-      "kitNumber": 45
-    },
-    {
       "apiId": 59421,
       "name": "D. Mosquera",
       "position": "ST",
@@ -305,17 +316,6 @@
       "kitNumber": 25
     },
     {
-      "apiId": 126690,
-      "name": "K. Bowie",
-      "position": "ST",
-      "club": "Hellas Verona",
-      "nation": "Scotland",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/126690.png",
-      "kitNumber": 18
-    },
-    {
       "apiId": 236955,
       "name": "A. Sarr",
       "position": "ST",
@@ -325,6 +325,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/236955.png",
       "kitNumber": 9
+    },
+    {
+      "apiId": 126690,
+      "name": "K. Bowie",
+      "position": "ST",
+      "club": "Hellas Verona",
+      "nation": "Scotland",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/126690.png",
+      "kitNumber": 18
     },
     {
       "apiId": 352940,
@@ -369,17 +380,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340076.png",
       "kitNumber": 47
-    },
-    {
-      "apiId": 25061,
-      "name": "A. Bella-Kotchap",
-      "position": "CB",
-      "club": "Hellas Verona",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25061.png",
-      "kitNumber": 37
     }
   ]
 }

@@ -129,6 +129,17 @@
       "kitNumber": 34
     },
     {
+      "apiId": 66387,
+      "name": "P. Šulc",
+      "position": "CAM/CM",
+      "club": "Lyon",
+      "nation": "Czech Republic",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/66387.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 80752,
       "name": "T. Tessmann",
       "position": "CDM/CM",
@@ -140,15 +151,15 @@
       "kitNumber": 6
     },
     {
-      "apiId": 66387,
-      "name": "P. Šulc",
+      "apiId": 412049,
+      "name": "M. Ouédraogo",
       "position": "CAM/CM",
       "club": "Lyon",
-      "nation": "Czech Republic",
+      "nation": "Germany",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/66387.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/412049.png",
+      "kitNumber": 29
     },
     {
       "apiId": 162189,
@@ -182,17 +193,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361352.png",
       "kitNumber": 99
-    },
-    {
-      "apiId": 412049,
-      "name": "M. Ouédraogo",
-      "position": "CAM/CM",
-      "club": "Lyon",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/412049.png",
-      "kitNumber": 29
     },
     {
       "apiId": 585333,

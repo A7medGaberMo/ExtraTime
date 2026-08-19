@@ -13,10 +13,21 @@
       "position": "GK",
       "club": "Palmeiras",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10373.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 10372,
+      "name": "Marcelo Lomba",
+      "position": "GK",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10372.png",
+      "kitNumber": 14
     },
     {
       "apiId": 348897,
@@ -41,15 +52,92 @@
       "kitNumber": null
     },
     {
-      "apiId": 10372,
-      "name": "Marcelo Lomba",
-      "position": "GK",
+      "apiId": 2502,
+      "name": "G. Gómez",
+      "position": "CB",
+      "club": "Palmeiras",
+      "nation": "Paraguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2502.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 51466,
+      "name": "J. Piquerez",
+      "position": "LB/LWB",
+      "club": "Palmeiras",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51466.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 10083,
+      "name": "Murilo",
+      "position": "CB",
       "club": "Palmeiras",
       "nation": "Brazil",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10372.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/10083.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 306706,
+      "name": "A. Giay",
+      "position": "RB/RWB",
+      "club": "Palmeiras",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/306706.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 5933,
+      "name": "A. Barboza",
+      "position": "CB",
+      "club": "Palmeiras",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/5933.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 10125,
+      "name": "Khellven",
+      "position": "RB",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10125.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 311384,
+      "name": "Jefté",
+      "position": "LB",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/311384.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 10379,
+      "name": "Bruno Fuchs",
+      "position": "CB",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10379.png",
+      "kitNumber": 3
     },
     {
       "apiId": 425715,
@@ -63,17 +151,6 @@
       "kitNumber": 56
     },
     {
-      "apiId": 5933,
-      "name": "A. Barboza",
-      "position": "CB",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5933.png",
-      "kitNumber": 2
-    },
-    {
       "apiId": 415068,
       "name": "Benedetti",
       "position": "CB",
@@ -83,61 +160,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415068.png",
       "kitNumber": 43
-    },
-    {
-      "apiId": 10379,
-      "name": "Bruno Fuchs",
-      "position": "CB",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10379.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 306706,
-      "name": "A. Giay",
-      "position": "CB",
-      "club": "Palmeiras",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/306706.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 2502,
-      "name": "G. Gómez",
-      "position": "CB",
-      "club": "Palmeiras",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2502.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 311384,
-      "name": "Jefté",
-      "position": "CB",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/311384.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 10125,
-      "name": "Khellven",
-      "position": "CB",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10125.png",
-      "kitNumber": 12
     },
     {
       "apiId": 646348,
@@ -151,26 +173,92 @@
       "kitNumber": null
     },
     {
-      "apiId": 10083,
-      "name": "Murilo",
-      "position": "CB",
+      "apiId": 899,
+      "name": "Andreas Pereira",
+      "position": "CM/CAM",
       "club": "Palmeiras",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10083.png",
-      "kitNumber": 26
+      "imageUrl": "https://media.api-sports.io/football/players/899.png",
+      "kitNumber": 8
     },
     {
-      "apiId": 51466,
-      "name": "J. Piquerez",
-      "position": "CB",
+      "apiId": 13708,
+      "name": "J. Arias",
+      "position": "RW/CAM/LW",
+      "club": "Palmeiras",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/13708.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 2412,
+      "name": "Felipe Anderson",
+      "position": "RW/CAM/LW",
       "club": "Palmeiras",
       "nation": "Brazil",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2412.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 9218,
+      "name": "Marlon Freitas",
+      "position": "CM/CDM",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9218.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 106485,
+      "name": "Maurício",
+      "position": "CAM/RW",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/106485.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 21095,
+      "name": "Lucas Evangelista",
+      "position": "CM/CAM",
+      "club": "Palmeiras",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/21095.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 172327,
+      "name": "Abd Al Qader Ghareeb",
+      "position": "CM",
+      "club": "Palmeiras",
+      "nation": "Saudi Arabia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/172327.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 153083,
+      "name": "E. Martínez",
+      "position": "CM/CDM",
+      "club": "Palmeiras",
+      "nation": "Uruguay",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51466.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/153083.png",
+      "kitNumber": 32
     },
     {
       "apiId": 425714,
@@ -184,15 +272,15 @@
       "kitNumber": 40
     },
     {
-      "apiId": 899,
-      "name": "Andreas Pereira",
+      "apiId": 464021,
+      "name": "Rafael Coutinho",
       "position": "CM",
       "club": "Palmeiras",
       "nation": "Brazil",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/899.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/464021.png",
+      "kitNumber": 5
     },
     {
       "apiId": 575323,
@@ -206,17 +294,6 @@
       "kitNumber": 48
     },
     {
-      "apiId": 21095,
-      "name": "Lucas Evangelista",
-      "position": "CM",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/21095.png",
-      "kitNumber": 30
-    },
-    {
       "apiId": 574837,
       "name": "Luis Felipe",
       "position": "CM",
@@ -228,81 +305,48 @@
       "kitNumber": 50
     },
     {
-      "apiId": 9218,
-      "name": "Marlon Freitas",
-      "position": "CM",
+      "apiId": 340279,
+      "name": "Vitor Roque",
+      "position": "ST",
       "club": "Palmeiras",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9218.png",
-      "kitNumber": 17
+      "imageUrl": "https://media.api-sports.io/football/players/340279.png",
+      "kitNumber": 9
     },
     {
-      "apiId": 153083,
-      "name": "E. Martínez",
-      "position": "CM",
-      "club": "Palmeiras",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/153083.png",
-      "kitNumber": 32
-    },
-    {
-      "apiId": 106485,
-      "name": "Maurício",
-      "position": "CM",
-      "club": "Palmeiras",
-      "nation": "Paraguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/106485.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 464021,
-      "name": "Rafael Coutinho",
-      "position": "CM",
+      "apiId": 987,
+      "name": "Paulinho",
+      "position": "LW/RW/ST",
       "club": "Palmeiras",
       "nation": "Brazil",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/464021.png",
-      "kitNumber": 5
+      "imageUrl": "https://media.api-sports.io/football/players/987.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 295513,
+      "name": "J. López",
+      "position": "ST",
+      "club": "Palmeiras",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/295513.png",
+      "kitNumber": 42
     },
     {
       "apiId": 196298,
       "name": "R. Sosa",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
+      "nation": "Paraguay",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/196298.png",
       "kitNumber": 19
-    },
-    {
-      "apiId": 172327,
-      "name": "Abd Al Qader Ghareeb",
-      "position": "CM",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/172327.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 13708,
-      "name": "J. Arias",
-      "position": "CM",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/13708.png",
-      "kitNumber": 11
     },
     {
       "apiId": 669472,
@@ -320,7 +364,7 @@
       "name": "Eduardo",
       "position": "ST",
       "club": "Palmeiras",
-      "nation": "Croatia",
+      "nation": "Brazil",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/570417.png",
@@ -336,17 +380,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/512522.png",
       "kitNumber": null
-    },
-    {
-      "apiId": 2412,
-      "name": "Felipe Anderson",
-      "position": "CM",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2412.png",
-      "kitNumber": 7
     },
     {
       "apiId": 516815,
@@ -369,39 +402,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/575324.png",
       "kitNumber": 39
-    },
-    {
-      "apiId": 295513,
-      "name": "J. López",
-      "position": "ST",
-      "club": "Palmeiras",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/295513.png",
-      "kitNumber": 42
-    },
-    {
-      "apiId": 987,
-      "name": "Paulinho",
-      "position": "ST",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/987.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 340279,
-      "name": "Vitor Roque",
-      "position": "ST",
-      "club": "Palmeiras",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/340279.png",
-      "kitNumber": 9
     }
   ]
 }

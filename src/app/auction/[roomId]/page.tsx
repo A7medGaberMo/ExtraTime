@@ -13,16 +13,12 @@ import { TacticalPitch } from "@/components/shared/tactical-pitch";
 import type { PlayerCardData } from "@/types/player";
 import { useGuestSession } from "@/hooks/use-guest-session";
 import { unlockAudio } from "@/lib/sfx";
+import { getTierStyle } from "@/lib/tier-styles";
 import {
   Loader2, X, Layers, Copy, Check,
   Swords, Eye, Binoculars, DollarSign, ChevronDown, ChevronUp,
   Zap, Lock, Shield
 } from "lucide-react";
-
-const TIER_COLORS: Record<string, string> = {
-  ICON: "#D4AF37", HERO: "#10B981", ULTIMATE: "#0EA5E9", MASTER: "#A855F7",
-  ELITE: "#E11D48", GOLD: "#EAB308", SILVER: "#CBD5E1", BRONZE: "#C97A3A",
-};
 
 const BLIND_PHASE_SECONDS = 30;
 
@@ -143,7 +139,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const myBudget = me?.budget ?? 0;
   const currentPosition = (auction?.rounds && auction?.currentRound) ? (auction.rounds[auction.currentRound - 1]?.position ?? "-") : "-";
   const totalRounds = auction?.rounds?.length ?? 11;
-  const tierColor = TIER_COLORS[mainPlayer?.tier as string] ?? "#95E810";
+  const tierColor = mainPlayer?.tier ? getTierStyle(mainPlayer.tier).highlight : "#95E810";
 
   // ── Sealed lockbox state ──
   const sealedHost = auction?.sealedBids?.host ?? null;

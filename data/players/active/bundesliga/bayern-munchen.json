@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Bayern München",
       "nation": "Germany",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/497.png",
       "kitNumber": 1
@@ -101,7 +101,7 @@
       "position": "CB",
       "club": "Bayern München",
       "nation": "South Korea",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2897.png",
       "kitNumber": 3
@@ -112,7 +112,7 @@
       "position": "RB/CB",
       "club": "Bayern München",
       "nation": "Croatia",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/125171.png",
       "kitNumber": 44
@@ -145,7 +145,7 @@
       "position": "LB",
       "club": "Bayern München",
       "nation": "Germany",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280074.png",
       "kitNumber": 41
@@ -195,6 +195,17 @@
       "kitNumber": 10
     },
     {
+      "apiId": 19617,
+      "name": "M. Olise",
+      "position": "RW/CAM",
+      "club": "Bayern München",
+      "nation": "France",
+      "tier": "ULTIMATE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19617.png",
+      "kitNumber": 17
+    },
+    {
       "apiId": 502,
       "name": "J. Kimmich",
       "position": "CDM/CM/RB",
@@ -204,17 +215,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/502.png",
       "kitNumber": 6
-    },
-    {
-      "apiId": 19617,
-      "name": "M. Olise",
-      "position": "RW/CAM",
-      "club": "Bayern München",
-      "nation": "France",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19617.png",
-      "kitNumber": 17
     },
     {
       "apiId": 41104,
@@ -239,6 +239,17 @@
       "kitNumber": 45
     },
     {
+      "apiId": 161897,
+      "name": "I. Saibari",
+      "position": "CAM/CM",
+      "club": "Bayern München",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161897.png",
+      "kitNumber": 34
+    },
+    {
       "apiId": 1157,
       "name": "K. Laimer",
       "position": "CM/RB",
@@ -248,17 +259,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1157.png",
       "kitNumber": 27
-    },
-    {
-      "apiId": 161897,
-      "name": "I. Saibari",
-      "position": "CAM/CM",
-      "club": "Bayern München",
-      "nation": "Morocco",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161897.png",
-      "kitNumber": 34
     },
     {
       "apiId": 325975,
@@ -365,7 +365,7 @@
       "position": "ST",
       "club": "Bayern München",
       "nation": "England",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/184.png",
       "kitNumber": 9

@@ -151,6 +151,17 @@
       "kitNumber": 32
     },
     {
+      "apiId": 20634,
+      "name": "A. Claude-Maurice",
+      "position": "ST/CAM/LW",
+      "club": "FC Augsburg",
+      "nation": "France",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20634.png",
+      "kitNumber": 20
+    },
+    {
       "apiId": 14395,
       "name": "K. Jakić",
       "position": "CDM/CM",
@@ -237,17 +248,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343159.png",
       "kitNumber": 8
-    },
-    {
-      "apiId": 20634,
-      "name": "A. Claude-Maurice",
-      "position": "ST/CAM/LW",
-      "club": "FC Augsburg",
-      "nation": "France",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20634.png",
-      "kitNumber": 20
     },
     {
       "apiId": 25297,

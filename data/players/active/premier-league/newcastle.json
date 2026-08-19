@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18911.png",
       "kitNumber": 22
@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Newcastle",
       "nation": "France",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329640.png",
       "kitNumber": 29
@@ -46,7 +46,7 @@
       "position": "GK",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284374.png",
       "kitNumber": 31
@@ -63,12 +63,23 @@
       "kitNumber": 21
     },
     {
+      "apiId": 284492,
+      "name": "L. Hall",
+      "position": "LB/LM",
+      "club": "Newcastle",
+      "nation": "England",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284492.png",
+      "kitNumber": 3
+    },
+    {
       "apiId": 38734,
       "name": "S. Botman",
       "position": "CB",
       "club": "Newcastle",
       "nation": "Netherlands",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38734.png",
       "kitNumber": 4
@@ -79,21 +90,10 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "Germany",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163189.png",
       "kitNumber": 12
-    },
-    {
-      "apiId": 284492,
-      "name": "L. Hall",
-      "position": "LB/LM",
-      "club": "Newcastle",
-      "nation": "England",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284492.png",
-      "kitNumber": 3
     },
     {
       "apiId": 18961,
@@ -112,7 +112,7 @@
       "position": "CB",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/337934.png",
       "kitNumber": 51
@@ -145,7 +145,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328105.png",
       "kitNumber": 67
@@ -178,7 +178,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/394165.png",
       "kitNumber": 62
@@ -189,7 +189,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "South Korea",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/423714.png",
       "kitNumber": 11
@@ -200,7 +200,7 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "Netherlands",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/469321.png",
       "kitNumber": 14
@@ -211,21 +211,10 @@
       "position": "CM",
       "club": "Newcastle",
       "nation": "Ivory Coast",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387643.png",
       "kitNumber": 30
-    },
-    {
-      "apiId": 158054,
-      "name": "N. Woltemade",
-      "position": "ST",
-      "club": "Newcastle",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/158054.png",
-      "kitNumber": 27
     },
     {
       "apiId": 18778,
@@ -261,12 +250,23 @@
       "kitNumber": 9
     },
     {
+      "apiId": 158054,
+      "name": "N. Woltemade",
+      "position": "ST",
+      "club": "Newcastle",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158054.png",
+      "kitNumber": 27
+    },
+    {
       "apiId": 315237,
       "name": "W. Osula",
       "position": "ST",
       "club": "Newcastle",
       "nation": "Denmark",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/315237.png",
       "kitNumber": 18

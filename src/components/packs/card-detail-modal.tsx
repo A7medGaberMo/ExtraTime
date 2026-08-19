@@ -6,6 +6,7 @@ import { PlayerCard } from '@/components/shared/player-card';
 import { ETLogo } from '@/components/shared/et-logo';
 import { ClubCrestBadge, CountryFlagBadge } from '@/components/shared/card-badges';
 import type { PlayerCardData } from '@/types/player';
+import { getTierStyle } from '@/lib/tier-styles';
 
 interface CardDetailModalProps {
   card: PlayerCardData | null;
@@ -17,6 +18,7 @@ export function CardDetailModal({
   onClose,
 }: CardDetailModalProps) {
   if (!card) return null;
+  const tierStyle = getTierStyle(card.tier);
 
   return (
     <div
@@ -78,7 +80,9 @@ export function CardDetailModal({
 
           <div className="space-y-0.5 p-2 rounded-xl bg-slate-900/60 border border-white/5">
             <span className="text-[9px] text-steel font-bold uppercase block">Tier Classification</span>
-            <p className="text-amber-400 font-black font-mono">{card.tier}</p>
+            <p className="font-black font-mono" style={{ color: tierStyle.highlight }}>
+              {card.tier}
+            </p>
           </div>
         </div>
 

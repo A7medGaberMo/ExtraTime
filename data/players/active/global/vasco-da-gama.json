@@ -8,6 +8,17 @@
   },
   "players": [
     {
+      "apiId": 41169,
+      "name": "Léo Jardim",
+      "position": "GK",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41169.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 763,
       "name": "Daniel Fuzato",
       "position": "GK",
@@ -19,26 +30,114 @@
       "kitNumber": 13
     },
     {
-      "apiId": 41169,
-      "name": "Léo Jardim",
+      "apiId": 454136,
+      "name": "Pablo",
       "position": "GK",
       "club": "Vasco da Gama",
       "nation": "Brazil",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41169.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 454136,
-      "name": "Pablo",
-      "position": "GK",
-      "club": "Vasco da Gama",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/454136.png",
       "kitNumber": 37
+    },
+    {
+      "apiId": 13283,
+      "name": "C. Cuesta",
+      "position": "CB",
+      "club": "Vasco da Gama",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/13283.png",
+      "kitNumber": 46
+    },
+    {
+      "apiId": 10234,
+      "name": "Lucas Piton",
+      "position": "LB/LWB",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10234.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 359372,
+      "name": "Robert Renan",
+      "position": "CB",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/359372.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 353034,
+      "name": "Cuiabano",
+      "position": "LB",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/353034.png",
+      "kitNumber": 66
+    },
+    {
+      "apiId": 133910,
+      "name": "Paulo Henrique",
+      "position": "RB",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/133910.png",
+      "kitNumber": 96
+    },
+    {
+      "apiId": 51426,
+      "name": "J. Rodríguez",
+      "position": "RB",
+      "club": "Vasco da Gama",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51426.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 310774,
+      "name": "A. Saldivia",
+      "position": "CB",
+      "club": "Vasco da Gama",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/310774.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 286962,
+      "name": "Lucas Freitas",
+      "position": "CB",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/286962.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 415160,
+      "name": "Paulinho",
+      "position": "RB",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/415160.png",
+      "kitNumber": 29
     },
     {
       "apiId": 505138,
@@ -74,72 +173,6 @@
       "kitNumber": 87
     },
     {
-      "apiId": 13283,
-      "name": "C. Cuesta",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/13283.png",
-      "kitNumber": 46
-    },
-    {
-      "apiId": 353034,
-      "name": "Cuiabano",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/353034.png",
-      "kitNumber": 66
-    },
-    {
-      "apiId": 286962,
-      "name": "Lucas Freitas",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286962.png",
-      "kitNumber": 43
-    },
-    {
-      "apiId": 10234,
-      "name": "Lucas Piton",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10234.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 415160,
-      "name": "Paulinho",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/415160.png",
-      "kitNumber": 29
-    },
-    {
-      "apiId": 133910,
-      "name": "Paulo Henrique",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/133910.png",
-      "kitNumber": 96
-    },
-    {
       "apiId": 505408,
       "name": "Avellar",
       "position": "CB",
@@ -149,50 +182,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/505408.png",
       "kitNumber": 82
-    },
-    {
-      "apiId": 359372,
-      "name": "Robert Renan",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/359372.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 51426,
-      "name": "J. Rodríguez",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51426.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 310774,
-      "name": "A. Saldivia",
-      "position": "CB",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/310774.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 6006,
-      "name": "S. Sosa",
-      "position": "CM",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6006.png",
-      "kitNumber": 5
     },
     {
       "apiId": 505139,
@@ -206,9 +195,53 @@
       "kitNumber": 64
     },
     {
+      "apiId": 6006,
+      "name": "S. Sosa",
+      "position": "CDM/CM",
+      "club": "Vasco da Gama",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6006.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 22232,
+      "name": "Thiago Mendes",
+      "position": "CM/CDM",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/22232.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 9958,
+      "name": "Tchê Tchê",
+      "position": "CM/CDM",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9958.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 9890,
+      "name": "Jair",
+      "position": "CM/CDM",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9890.png",
+      "kitNumber": 8
+    },
+    {
       "apiId": 404753,
       "name": "Cauan Barros",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Vasco da Gama",
       "nation": "Brazil",
       "tier": "GOLD",
@@ -239,17 +272,6 @@
       "kitNumber": 98
     },
     {
-      "apiId": 9890,
-      "name": "Jair",
-      "position": "CM",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9890.png",
-      "kitNumber": 8
-    },
-    {
       "apiId": 454458,
       "name": "Lukas Zuccarello",
       "position": "CM",
@@ -272,17 +294,6 @@
       "kitNumber": 83
     },
     {
-      "apiId": 351920,
-      "name": "J. Rojas",
-      "position": "ST",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/351920.png",
-      "kitNumber": 10
-    },
-    {
       "apiId": 606272,
       "name": "Samuel",
       "position": "CM",
@@ -294,37 +305,103 @@
       "kitNumber": 67
     },
     {
-      "apiId": 9958,
-      "name": "Tchê Tchê",
-      "position": "CM",
+      "apiId": 214,
+      "name": "F. Colidio",
+      "position": "ST/LW/RW",
       "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9958.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 22232,
-      "name": "Thiago Mendes",
-      "position": "CM",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/22232.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/214.png",
+      "kitNumber": null
     },
     {
       "apiId": 306261,
       "name": "Adson",
-      "position": "ST",
+      "position": "RW/LW",
       "club": "Vasco da Gama",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/306261.png",
       "kitNumber": 28
+    },
+    {
+      "apiId": 9975,
+      "name": "Brenner",
+      "position": "ST",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9975.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 345748,
+      "name": "A. Gómez",
+      "position": "RW/LW",
+      "club": "Vasco da Gama",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/345748.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 64134,
+      "name": "M. Hinestroza",
+      "position": "LW/RW",
+      "club": "Vasco da Gama",
+      "nation": "Colombia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64134.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 10105,
+      "name": "David",
+      "position": "LW/ST",
+      "club": "Vasco da Gama",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10105.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 163260,
+      "name": "Nuno Moreira",
+      "position": "LW/RW",
+      "club": "Vasco da Gama",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/163260.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 351920,
+      "name": "J. Rojas",
+      "position": "RW/LW",
+      "club": "Vasco da Gama",
+      "nation": "Ecuador",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/351920.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 6735,
+      "name": "C. Spinelli",
+      "position": "ST",
+      "club": "Vasco da Gama",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6735.png",
+      "kitNumber": 77
     },
     {
       "apiId": 505407,
@@ -336,17 +413,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/505407.png",
       "kitNumber": 9
-    },
-    {
-      "apiId": 9975,
-      "name": "Brenner",
-      "position": "ST",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9975.png",
-      "kitNumber": 20
     },
     {
       "apiId": 454139,
@@ -371,50 +437,6 @@
       "kitNumber": 60
     },
     {
-      "apiId": 214,
-      "name": "F. Colidio",
-      "position": "CM",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/214.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 10105,
-      "name": "David",
-      "position": "ST",
-      "club": "Vasco da Gama",
-      "nation": "Canada",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10105.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 345748,
-      "name": "A. Gómez",
-      "position": "CM",
-      "club": "Vasco da Gama",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/345748.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 64134,
-      "name": "M. Hinestroza",
-      "position": "ST",
-      "club": "Vasco da Gama",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/64134.png",
-      "kitNumber": 18
-    },
-    {
       "apiId": 607352,
       "name": "Joao Vitor",
       "position": "ST",
@@ -424,28 +446,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/607352.png",
       "kitNumber": null
-    },
-    {
-      "apiId": 163260,
-      "name": "Nuno Moreira",
-      "position": "CM",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/163260.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 6735,
-      "name": "C. Spinelli",
-      "position": "ST",
-      "club": "Vasco da Gama",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6735.png",
-      "kitNumber": 77
     }
   ]
 }

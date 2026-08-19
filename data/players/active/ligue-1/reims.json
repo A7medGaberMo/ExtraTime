@@ -266,10 +266,21 @@
       "position": "LW/RW/ST",
       "club": "Reims",
       "nation": "Denmark",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1300.png",
       "kitNumber": 9
+    },
+    {
+      "apiId": 37442,
+      "name": "Y. El Kachati",
+      "position": "ST",
+      "club": "Reims",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37442.png",
+      "kitNumber": 34
     },
     {
       "apiId": 2219,
@@ -314,17 +325,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584168.png",
       "kitNumber": 46
-    },
-    {
-      "apiId": 37442,
-      "name": "Y. El Kachati",
-      "position": "ST",
-      "club": "Reims",
-      "nation": "Morocco",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37442.png",
-      "kitNumber": 34
     },
     {
       "apiId": 570585,

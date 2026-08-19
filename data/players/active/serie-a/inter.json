@@ -8,6 +8,17 @@
   },
   "players": [
     {
+      "apiId": 31037,
+      "name": "I. Provedel",
+      "position": "GK",
+      "club": "Inter",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/31037.png",
+      "kitNumber": 94
+    },
+    {
       "apiId": 46988,
       "name": "Josep Martínez",
       "position": "GK",
@@ -41,23 +52,12 @@
       "kitNumber": 91
     },
     {
-      "apiId": 31037,
-      "name": "I. Provedel",
-      "position": "GK",
-      "club": "Inter",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31037.png",
-      "kitNumber": 94
-    },
-    {
       "apiId": 31009,
       "name": "A. Bastoni",
       "position": "CB/LB",
       "club": "Inter",
       "nation": "Italy",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31009.png",
       "kitNumber": 95
@@ -72,6 +72,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31010.png",
       "kitNumber": 32
+    },
+    {
+      "apiId": 626,
+      "name": "John Stones",
+      "position": "CB/CDM",
+      "club": "Inter",
+      "nation": "England",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/626.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 5,
+      "name": "M. Akanji",
+      "position": "CB",
+      "club": "Inter",
+      "nation": "Switzerland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/5.png",
+      "kitNumber": 25
     },
     {
       "apiId": 24953,
@@ -96,15 +118,15 @@
       "kitNumber": 30
     },
     {
-      "apiId": 5,
-      "name": "M. Akanji",
-      "position": "CB",
+      "apiId": 19235,
+      "name": "D. Spence",
+      "position": "RB/LB",
       "club": "Inter",
-      "nation": "Switzerland",
+      "nation": "England",
       "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5.png",
-      "kitNumber": 25
+      "imageUrl": "https://media.api-sports.io/football/players/19235.png",
+      "kitNumber": 24
     },
     {
       "apiId": 563858,
@@ -173,6 +195,17 @@
       "kitNumber": 7
     },
     {
+      "apiId": 348205,
+      "name": "P. Sučić",
+      "position": "CM",
+      "club": "Inter",
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/348205.png",
+      "kitNumber": 8
+    },
+    {
       "apiId": 408635,
       "name": "E. Akinsanmiro",
       "position": "CM",
@@ -189,7 +222,7 @@
       "position": "CM",
       "club": "Inter",
       "nation": "Senegal",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/270509.png",
       "kitNumber": 17
@@ -204,17 +237,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383000.png",
       "kitNumber": 10
-    },
-    {
-      "apiId": 348205,
-      "name": "P. Sučić",
-      "position": "CM",
-      "club": "Inter",
-      "nation": "Croatia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/348205.png",
-      "kitNumber": 8
     },
     {
       "apiId": 395849,
@@ -255,10 +277,10 @@
       "position": "ST",
       "club": "Inter",
       "nation": "Argentina",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/217.png",
-      "kitNumber": 42
+      "kitNumber": 10
     },
     {
       "apiId": 21509,
@@ -272,12 +294,23 @@
       "kitNumber": 9
     },
     {
+      "apiId": 10077,
+      "name": "Luis Henrique",
+      "position": "RW/LW",
+      "club": "Inter",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10077.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 275651,
       "name": "A. Bonny",
       "position": "ST",
       "club": "Inter",
       "nation": "France",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/275651.png",
       "kitNumber": 43
@@ -288,21 +321,10 @@
       "position": "ST",
       "club": "Inter",
       "nation": "Italy",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/345808.png",
       "kitNumber": 45
-    },
-    {
-      "apiId": 10077,
-      "name": "Luis Henrique",
-      "position": "RW/LW",
-      "club": "Inter",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10077.png",
-      "kitNumber": 11
     },
     {
       "apiId": 461830,
@@ -336,17 +358,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/436238.png",
       "kitNumber": 46
-    },
-    {
-      "apiId": 19235,
-      "name": "D. Spence",
-      "position": "RB/LB",
-      "club": "Inter",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19235.png",
-      "kitNumber": 24
     }
   ]
 }

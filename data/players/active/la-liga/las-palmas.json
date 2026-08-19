@@ -52,6 +52,17 @@
       "kitNumber": 35
     },
     {
+      "apiId": 162026,
+      "name": "Marvin Park",
+      "position": "RB/RM",
+      "club": "Las Palmas",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162026.png",
+      "kitNumber": 2
+    },
+    {
       "apiId": 131535,
       "name": "Álex Suárez",
       "position": "CB/RB",
@@ -61,17 +72,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/131535.png",
       "kitNumber": 4
-    },
-    {
-      "apiId": 162026,
-      "name": "Marvin Park",
-      "position": "RB/RM",
-      "club": "Las Palmas",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162026.png",
-      "kitNumber": 2
     },
     {
       "apiId": 431890,

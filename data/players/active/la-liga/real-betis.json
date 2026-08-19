@@ -13,7 +13,7 @@
       "position": "GK",
       "club": "Real Betis",
       "nation": "Spain",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46990.png",
       "kitNumber": 1
@@ -90,7 +90,7 @@
       "position": "LB",
       "club": "Real Betis",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/736.png",
       "kitNumber": 14
@@ -156,7 +156,7 @@
       "position": "CAM/CM",
       "club": "Real Betis",
       "nation": "Argentina",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1578.png",
       "kitNumber": 20

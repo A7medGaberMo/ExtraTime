@@ -41,15 +41,15 @@
       "kitNumber": 92
     },
     {
-      "apiId": 6,
-      "name": "L. Balerdi",
-      "position": "CB",
+      "apiId": 2725,
+      "name": "B. Pavard",
+      "position": "CB/RB",
       "club": "Marseille",
-      "nation": "Argentina",
-      "tier": "ELITE",
+      "nation": "France",
+      "tier": "MASTER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6.png",
-      "kitNumber": 5
+      "imageUrl": "https://media.api-sports.io/football/players/2725.png",
+      "kitNumber": 28
     },
     {
       "apiId": 21694,
@@ -61,6 +61,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21694.png",
       "kitNumber": 21
+    },
+    {
+      "apiId": 6,
+      "name": "L. Balerdi",
+      "position": "CB",
+      "club": "Marseille",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6.png",
+      "kitNumber": 5
     },
     {
       "apiId": 6231,
@@ -123,10 +134,32 @@
       "position": "CDM/CM",
       "club": "Marseille",
       "nation": "Denmark",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2735.png",
       "kitNumber": 23
+    },
+    {
+      "apiId": 412,
+      "name": "A. Harit",
+      "position": "CAM/LW",
+      "club": "Marseille",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/412.png",
+      "kitNumber": 25
+    },
+    {
+      "apiId": 20692,
+      "name": "H. Abdelli",
+      "position": "CM/CAM",
+      "club": "Marseille",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20692.png",
+      "kitNumber": 8
     },
     {
       "apiId": 38747,
@@ -151,17 +184,6 @@
       "kitNumber": 22
     },
     {
-      "apiId": 412,
-      "name": "A. Harit",
-      "position": "CAM/LW",
-      "club": "Marseille",
-      "nation": "Morocco",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/412.png",
-      "kitNumber": 25
-    },
-    {
       "apiId": 926,
       "name": "G. Kondogbia",
       "position": "CDM/CM/CB",
@@ -182,17 +204,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/896.png",
       "kitNumber": 47
-    },
-    {
-      "apiId": 20692,
-      "name": "H. Abdelli",
-      "position": "CM/CAM",
-      "club": "Marseille",
-      "nation": "Algeria",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20692.png",
-      "kitNumber": 8
     },
     {
       "apiId": 354298,
@@ -292,17 +303,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568058.png",
       "kitNumber": 70
-    },
-    {
-      "apiId": 2725,
-      "name": "B. Pavard",
-      "position": "CB/RB",
-      "club": "Marseille",
-      "nation": "France",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2725.png",
-      "kitNumber": 28
     }
   ]
 }

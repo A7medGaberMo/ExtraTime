@@ -63,6 +63,17 @@
       "kitNumber": 31
     },
     {
+      "apiId": 30776,
+      "name": "C. Romero",
+      "position": "CB",
+      "club": "Atletico Madrid",
+      "nation": "Argentina",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30776.png",
+      "kitNumber": 17
+    },
+    {
       "apiId": 47301,
       "name": "Robin Le Normand",
       "position": "CB",
@@ -134,7 +145,7 @@
       "position": "CB",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336685.png",
       "kitNumber": 4
@@ -182,6 +193,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/758.png",
       "kitNumber": 14
+    },
+    {
+      "apiId": 182219,
+      "name": "Álex Baena",
+      "position": "CAM/LW",
+      "club": "Atletico Madrid",
+      "nation": "Spain",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182219.png",
+      "kitNumber": 10
     },
     {
       "apiId": 50,
@@ -244,7 +266,7 @@
       "position": "CM",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341371.png",
       "kitNumber": 34
@@ -255,7 +277,7 @@
       "position": "CM",
       "club": "Atletico Madrid",
       "nation": "Spain",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/303378.png",
       "kitNumber": 36
@@ -299,21 +321,10 @@
       "position": "ST/LW",
       "club": "Atletico Madrid",
       "nation": "Argentina",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6009.png",
       "kitNumber": 19
-    },
-    {
-      "apiId": 182219,
-      "name": "Álex Baena",
-      "position": "CAM/LW",
-      "club": "Atletico Madrid",
-      "nation": "Spain",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182219.png",
-      "kitNumber": 10
     },
     {
       "apiId": 18767,
@@ -338,6 +349,17 @@
       "kitNumber": 9
     },
     {
+      "apiId": 323935,
+      "name": "G. Simeone",
+      "position": "RW/RM",
+      "club": "Atletico Madrid",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/323935.png",
+      "kitNumber": 22
+    },
+    {
       "apiId": 443668,
       "name": "Rayane Belid",
       "position": "ST",
@@ -358,28 +380,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/548706.png",
       "kitNumber": 39
-    },
-    {
-      "apiId": 30776,
-      "name": "C. Romero",
-      "position": "CB",
-      "club": "Atletico Madrid",
-      "nation": "Argentina",
-      "tier": "MASTER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30776.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 323935,
-      "name": "G. Simeone",
-      "position": "RW/RM",
-      "club": "Atletico Madrid",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/323935.png",
-      "kitNumber": 22
     }
   ]
 }

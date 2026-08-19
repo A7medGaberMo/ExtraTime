@@ -156,7 +156,7 @@
       "position": "CAM/CM",
       "club": "FSV Mainz 05",
       "nation": "Germany",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/714.png",
       "kitNumber": 10
@@ -171,6 +171,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2906.png",
       "kitNumber": 7
+    },
+    {
+      "apiId": 20617,
+      "name": "S. Katompa Mvumpa",
+      "position": "RW/RM/ST",
+      "club": "FSV Mainz 05",
+      "nation": "DR Congo",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/20617.png",
+      "kitNumber": 26
     },
     {
       "apiId": 33889,
@@ -281,17 +292,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/548539.png",
       "kitNumber": 17
-    },
-    {
-      "apiId": 20617,
-      "name": "S. Katompa Mvumpa",
-      "position": "RW/RM/ST",
-      "club": "FSV Mainz 05",
-      "nation": "DR Congo",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20617.png",
-      "kitNumber": 26
     },
     {
       "apiId": 37938,

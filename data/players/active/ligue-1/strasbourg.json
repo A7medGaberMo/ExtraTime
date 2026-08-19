@@ -118,6 +118,39 @@
       "kitNumber": 11
     },
     {
+      "apiId": 161921,
+      "name": "G. Reyna",
+      "position": "CAM/RW/LW",
+      "club": "Strasbourg",
+      "nation": "United States",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161921.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 415431,
+      "name": "S. El Mourabet",
+      "position": "CM",
+      "club": "Strasbourg",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/415431.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 369544,
+      "name": "Gessime Yassine",
+      "position": "CM",
+      "club": "Strasbourg",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/369544.png",
+      "kitNumber": 80
+    },
+    {
       "apiId": 335056,
       "name": "Diego Moreira",
       "position": "LW/LM/LB",
@@ -173,6 +206,39 @@
       "kitNumber": 8
     },
     {
+      "apiId": 346700,
+      "name": "M. Luković",
+      "position": "ST",
+      "club": "Strasbourg",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/346700.png",
+      "kitNumber": 49
+    },
+    {
+      "apiId": 359386,
+      "name": "M. Godo",
+      "position": "LW/RW",
+      "club": "Strasbourg",
+      "nation": "England",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/359386.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 390742,
+      "name": "J. Panichelli",
+      "position": "ST",
+      "club": "Strasbourg",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/390742.png",
+      "kitNumber": 9
+    },
+    {
       "apiId": 355256,
       "name": "M. Del Blanco",
       "position": "LB/LM",
@@ -215,17 +281,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/438752.png",
       "kitNumber": 44
-    },
-    {
-      "apiId": 415431,
-      "name": "S. El Mourabet",
-      "position": "CM",
-      "club": "Strasbourg",
-      "nation": "Morocco",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/415431.png",
-      "kitNumber": 29
     },
     {
       "apiId": 584192,
@@ -283,50 +338,6 @@
       "kitNumber": 23
     },
     {
-      "apiId": 369544,
-      "name": "Gessime Yassine",
-      "position": "CM",
-      "club": "Strasbourg",
-      "nation": "Morocco",
-      "tier": "BRONZE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/369544.png",
-      "kitNumber": 80
-    },
-    {
-      "apiId": 346700,
-      "name": "M. Luković",
-      "position": "ST",
-      "club": "Strasbourg",
-      "nation": "Serbia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/346700.png",
-      "kitNumber": 49
-    },
-    {
-      "apiId": 359386,
-      "name": "M. Godo",
-      "position": "LW/RW",
-      "club": "Strasbourg",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/359386.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 390742,
-      "name": "J. Panichelli",
-      "position": "ST",
-      "club": "Strasbourg",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/390742.png",
-      "kitNumber": 9
-    },
-    {
       "apiId": 629148,
       "name": "Jean-Baptiste Bosey",
       "position": "ST",
@@ -347,17 +358,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/488976.png",
       "kitNumber": 37
-    },
-    {
-      "apiId": 161921,
-      "name": "G. Reyna",
-      "position": "CAM/RW/LW",
-      "club": "Strasbourg",
-      "nation": "United States",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161921.png",
-      "kitNumber": 13
     }
   ]
 }

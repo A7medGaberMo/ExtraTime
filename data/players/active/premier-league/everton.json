@@ -35,7 +35,7 @@
       "position": "GK",
       "club": "Everton",
       "nation": "Wales",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/82855.png",
       "kitNumber": 31
@@ -74,6 +74,17 @@
       "kitNumber": 16
     },
     {
+      "apiId": 431921,
+      "name": "Adam Aznou Ben Cheikh",
+      "position": "LB",
+      "club": "Everton",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/431921.png",
+      "kitNumber": 39
+    },
+    {
       "apiId": 270139,
       "name": "J. O'Brien",
       "position": "CB",
@@ -96,23 +107,12 @@
       "kitNumber": 2
     },
     {
-      "apiId": 431921,
-      "name": "Adam Aznou Ben Cheikh",
-      "position": "LB",
-      "club": "Everton",
-      "nation": "Morocco",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/431921.png",
-      "kitNumber": 39
-    },
-    {
       "apiId": 284385,
       "name": "Elijah Xavier Campbell",
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284385.png",
       "kitNumber": 27
@@ -123,7 +123,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/410421.png",
       "kitNumber": 55
@@ -134,7 +134,7 @@
       "position": "CB",
       "club": "Everton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557410.png",
       "kitNumber": 56
@@ -145,7 +145,7 @@
       "position": "CM/RB",
       "club": "Everton",
       "nation": "England",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/895.png",
       "kitNumber": 37
@@ -156,10 +156,21 @@
       "position": "CM/CAM",
       "club": "Everton",
       "nation": "England",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/148099.png",
       "kitNumber": 22
+    },
+    {
+      "apiId": 30407,
+      "name": "C. Nørgaard",
+      "position": "CM",
+      "club": "Everton",
+      "nation": "Denmark",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30407.png",
+      "kitNumber": 16
     },
     {
       "apiId": 195993,
@@ -189,7 +200,7 @@
       "position": "CM/CDM",
       "club": "Everton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284500.png",
       "kitNumber": 42
@@ -211,7 +222,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/405360.png",
       "kitNumber": 45
@@ -222,7 +233,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/410423.png",
       "kitNumber": 46
@@ -233,7 +244,7 @@
       "position": "CM",
       "club": "Everton",
       "nation": "England",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/588468.png",
       "kitNumber": 14
@@ -259,6 +270,28 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304317.png",
       "kitNumber": 20
+    },
+    {
+      "apiId": 129711,
+      "name": "B. Johnson",
+      "position": "RW/ST",
+      "club": "Everton",
+      "nation": "Wales",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129711.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 350856,
+      "name": "E. Nuamah",
+      "position": "RW/LW",
+      "club": "Everton",
+      "nation": "Ghana",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350856.png",
+      "kitNumber": 37
     },
     {
       "apiId": 125743,
@@ -299,43 +332,10 @@
       "position": "ST",
       "club": "Everton",
       "nation": "Scotland",
-      "tier": "SILVER",
+      "tier": "BRONZE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413034.png",
       "kitNumber": 50
-    },
-    {
-      "apiId": 30407,
-      "name": "C. Nørgaard",
-      "position": "CM",
-      "club": "Everton",
-      "nation": "Denmark",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30407.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 129711,
-      "name": "B. Johnson",
-      "position": "RW/ST",
-      "club": "Everton",
-      "nation": "Wales",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129711.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 350856,
-      "name": "E. Nuamah",
-      "position": "RW/LW",
-      "club": "Everton",
-      "nation": "Ghana",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/350856.png",
-      "kitNumber": 37
     }
   ]
 }

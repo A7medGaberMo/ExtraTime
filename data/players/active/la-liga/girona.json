@@ -41,17 +41,6 @@
       "kitNumber": 17
     },
     {
-      "apiId": 162434,
-      "name": "Alejandro Francés",
-      "position": "CB/RB",
-      "club": "Girona",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162434.png",
-      "kitNumber": 16
-    },
-    {
       "apiId": 47444,
       "name": "Arnau Martínez",
       "position": "RB/CB",
@@ -61,6 +50,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47444.png",
       "kitNumber": 4
+    },
+    {
+      "apiId": 162434,
+      "name": "Alejandro Francés",
+      "position": "CB/RB",
+      "club": "Girona",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162434.png",
+      "kitNumber": 16
     },
     {
       "apiId": 47319,
@@ -134,7 +134,7 @@
       "position": "CAM/CM",
       "club": "Girona",
       "nation": "Netherlands",
-      "tier": "MASTER",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286.png",
       "kitNumber": 6

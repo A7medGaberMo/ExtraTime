@@ -8,6 +8,28 @@
   },
   "players": [
     {
+      "apiId": 127,
+      "name": "M. ter Stegen",
+      "position": "GK",
+      "club": "Ajax",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/127.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 37167,
+      "name": "M. Paes",
+      "position": "GK",
+      "club": "Ajax",
+      "nation": "Indonesia",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37167.png",
+      "kitNumber": 26
+    },
+    {
       "apiId": 453702,
       "name": "A. Hani",
       "position": "GK",
@@ -30,17 +52,6 @@
       "kitNumber": 22
     },
     {
-      "apiId": 37167,
-      "name": "M. Paes",
-      "position": "GK",
-      "club": "Ajax",
-      "nation": "Indonesia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37167.png",
-      "kitNumber": 26
-    },
-    {
       "apiId": 392258,
       "name": "P. Reverson",
       "position": "GK",
@@ -50,17 +61,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/392258.png",
       "kitNumber": 52
-    },
-    {
-      "apiId": 127,
-      "name": "M. ter Stegen",
-      "position": "GK",
-      "club": "Ajax",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/127.png",
-      "kitNumber": 1
     },
     {
       "apiId": 586133,
@@ -74,9 +74,53 @@
       "kitNumber": 58
     },
     {
+      "apiId": 14701,
+      "name": "J. Šutalo",
+      "position": "CB",
+      "club": "Ajax",
+      "nation": "Croatia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/14701.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 38114,
+      "name": "K. Itakura",
+      "position": "CB/CDM",
+      "club": "Ajax",
+      "nation": "Japan",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/38114.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 10316,
+      "name": "Caio Henrique",
+      "position": "LB/LM",
+      "club": "Ajax",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10316.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 531,
+      "name": "D. Blind",
+      "position": "CB/LB/CDM",
+      "club": "Ajax",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/531.png",
+      "kitNumber": 17
+    },
+    {
       "apiId": 294684,
       "name": "Y. Baas",
-      "position": "CB",
+      "position": "CB/LB",
       "club": "Ajax",
       "nation": "Netherlands",
       "tier": "GOLD",
@@ -85,15 +129,48 @@
       "kitNumber": 15
     },
     {
-      "apiId": 531,
-      "name": "D. Blind",
-      "position": "CB",
+      "apiId": 36893,
+      "name": "O. Wijndal",
+      "position": "LB",
       "club": "Ajax",
       "nation": "Netherlands",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/531.png",
-      "kitNumber": 17
+      "imageUrl": "https://media.api-sports.io/football/players/36893.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 313941,
+      "name": "A. Gaaei",
+      "position": "RB/RWB",
+      "club": "Ajax",
+      "nation": "Denmark",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/313941.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 278159,
+      "name": "A. Kaplan",
+      "position": "CB",
+      "club": "Ajax",
+      "nation": "Turkey",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/278159.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 56283,
+      "name": "Lucas Rosa",
+      "position": "RB/LB",
+      "club": "Ajax",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/56283.png",
+      "kitNumber": 2
     },
     {
       "apiId": 453706,
@@ -105,39 +182,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/453706.png",
       "kitNumber": 30
-    },
-    {
-      "apiId": 10316,
-      "name": "Caio Henrique",
-      "position": "CB",
-      "club": "Ajax",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10316.png",
-      "kitNumber": 12
-    },
-    {
-      "apiId": 313941,
-      "name": "A. Gaaei",
-      "position": "CB",
-      "club": "Ajax",
-      "nation": "Denmark",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/313941.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 38114,
-      "name": "K. Itakura",
-      "position": "CB",
-      "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/38114.png",
-      "kitNumber": 4
     },
     {
       "apiId": 412872,
@@ -162,20 +206,9 @@
       "kitNumber": 6
     },
     {
-      "apiId": 278159,
-      "name": "A. Kaplan",
-      "position": "CB",
-      "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/278159.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 514183,
       "name": "K. Kasanwirjo",
-      "position": "CB",
+      "position": "RB/CB",
       "club": "Ajax",
       "nation": "Netherlands",
       "tier": "SILVER",
@@ -195,39 +228,6 @@
       "kitNumber": null
     },
     {
-      "apiId": 56283,
-      "name": "Lucas Rosa",
-      "position": "CB",
-      "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/56283.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 14701,
-      "name": "J. Šutalo",
-      "position": "CB",
-      "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/14701.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 36893,
-      "name": "O. Wijndal",
-      "position": "CB",
-      "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/36893.png",
-      "kitNumber": 5
-    },
-    {
       "apiId": 453711,
       "name": "M. van der Lans",
       "position": "CB",
@@ -239,34 +239,12 @@
       "kitNumber": null
     },
     {
-      "apiId": 633948,
-      "name": "Mohamed Abdalla",
-      "position": "CM",
-      "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/633948.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 396202,
-      "name": "Rayane Bounida",
-      "position": "CM",
-      "club": "Ajax",
-      "nation": "Morocco",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/396202.png",
-      "kitNumber": 43
-    },
-    {
       "apiId": 984,
       "name": "J. Brandt",
-      "position": "CM",
+      "position": "CAM/CM/LW",
       "club": "Ajax",
       "nation": "Germany",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/984.png",
       "kitNumber": null
@@ -274,10 +252,10 @@
     {
       "apiId": 329715,
       "name": "O. Gloukh",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "Ajax",
       "nation": "Israel",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329715.png",
       "kitNumber": 10
@@ -285,32 +263,43 @@
     {
       "apiId": 25321,
       "name": "D. Klaassen",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Ajax",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25321.png",
       "kitNumber": 18
     },
     {
-      "apiId": 443829,
-      "name": "J. Mokio",
+      "apiId": 396202,
+      "name": "Rayane Bounida",
+      "position": "CAM/RW",
+      "club": "Ajax",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/396202.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 633948,
+      "name": "Mohamed Abdalla",
       "position": "CM",
       "club": "Ajax",
-      "nation": "Germany",
-      "tier": "SILVER",
+      "nation": "Egypt",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/443829.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/633948.png",
+      "kitNumber": 8
     },
     {
       "apiId": 515967,
       "name": "A. Ouazane",
       "position": "CM",
       "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "SILVER",
+      "nation": "Morocco",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/515967.png",
       "kitNumber": 68
@@ -318,13 +307,24 @@
     {
       "apiId": 161883,
       "name": "Y. Regeer",
-      "position": "CM",
+      "position": "CM/RB",
       "club": "Ajax",
       "nation": "Netherlands",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161883.png",
       "kitNumber": null
+    },
+    {
+      "apiId": 443829,
+      "name": "J. Mokio",
+      "position": "CDM/CB",
+      "club": "Ajax",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/443829.png",
+      "kitNumber": 24
     },
     {
       "apiId": 551129,
@@ -338,37 +338,26 @@
       "kitNumber": null
     },
     {
-      "apiId": 110153,
-      "name": "T. Arokodare",
-      "position": "ST",
-      "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/110153.png",
-      "kitNumber": 99
-    },
-    {
       "apiId": 37160,
       "name": "S. Berghuis",
-      "position": "ST",
+      "position": "RW/CAM",
       "club": "Ajax",
       "nation": "Netherlands",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37160.png",
       "kitNumber": 23
     },
     {
-      "apiId": 449247,
-      "name": "M. Carrizo",
+      "apiId": 267771,
+      "name": "Marcos Leonardo",
       "position": "ST",
       "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "SILVER",
+      "nation": "Brazil",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449247.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/267771.png",
+      "kitNumber": 38
     },
     {
       "apiId": 550,
@@ -376,21 +365,43 @@
       "position": "ST",
       "club": "Ajax",
       "nation": "Denmark",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/550.png",
       "kitNumber": 9
     },
     {
-      "apiId": 138753,
-      "name": "O. Edvardsen",
+      "apiId": 110153,
+      "name": "T. Arokodare",
       "position": "ST",
       "club": "Ajax",
-      "nation": "Netherlands",
+      "nation": "Nigeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/110153.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 138753,
+      "name": "O. Edvardsen",
+      "position": "LW/RW",
+      "club": "Ajax",
+      "nation": "Norway",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138753.png",
       "kitNumber": 20
+    },
+    {
+      "apiId": 449247,
+      "name": "M. Carrizo",
+      "position": "ST/RW",
+      "club": "Ajax",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449247.png",
+      "kitNumber": 7
     },
     {
       "apiId": 474378,
@@ -404,22 +415,11 @@
       "kitNumber": 19
     },
     {
-      "apiId": 267771,
-      "name": "Marcos Leonardo",
-      "position": "ST",
-      "club": "Ajax",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/267771.png",
-      "kitNumber": 38
-    },
-    {
       "apiId": 546756,
       "name": "P. Nash",
       "position": "ST",
       "club": "Ajax",
-      "nation": "Netherlands",
+      "nation": "Ireland",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546756.png",

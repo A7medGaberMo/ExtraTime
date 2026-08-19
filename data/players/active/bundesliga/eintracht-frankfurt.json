@@ -57,7 +57,7 @@
       "position": "CB/LB",
       "club": "Eintracht Frankfurt",
       "nation": "Belgium",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/204043.png",
       "kitNumber": 3
@@ -68,7 +68,7 @@
       "position": "CB",
       "club": "Eintracht Frankfurt",
       "nation": "Germany",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26238.png",
       "kitNumber": 4
@@ -134,7 +134,7 @@
       "position": "CM/CDM",
       "club": "Eintracht Frankfurt",
       "nation": "Sweden",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/335094.png",
       "kitNumber": 16
@@ -160,6 +160,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21587.png",
       "kitNumber": 15
+    },
+    {
+      "apiId": 276670,
+      "name": "F. Chaïbi",
+      "position": "CAM/LW/RW",
+      "club": "Eintracht Frankfurt",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/276670.png",
+      "kitNumber": 8
     },
     {
       "apiId": 16,
@@ -204,6 +215,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/339874.png",
       "kitNumber": 6
+    },
+    {
+      "apiId": 161922,
+      "name": "A. Knauff",
+      "position": "RM/RW/LM",
+      "club": "Eintracht Frankfurt",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161922.png",
+      "kitNumber": 45
     },
     {
       "apiId": 342171,
@@ -266,32 +288,10 @@
       "position": "ST",
       "club": "Eintracht Frankfurt",
       "nation": "Germany",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25926.png",
       "kitNumber": 9
-    },
-    {
-      "apiId": 276670,
-      "name": "F. Chaïbi",
-      "position": "CAM/LW/RW",
-      "club": "Eintracht Frankfurt",
-      "nation": "Algeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/276670.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 161922,
-      "name": "A. Knauff",
-      "position": "RM/RW/LM",
-      "club": "Eintracht Frankfurt",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161922.png",
-      "kitNumber": 45
     },
     {
       "apiId": 535046,
@@ -299,7 +299,7 @@
       "position": "ST",
       "club": "Eintracht Frankfurt",
       "nation": "Morocco",
-      "tier": "BRONZE",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/535046.png",
       "kitNumber": 29
@@ -310,7 +310,7 @@
       "position": "ST",
       "club": "Eintracht Frankfurt",
       "nation": "Morocco",
-      "tier": "BRONZE",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/409190.png",
       "kitNumber": 11

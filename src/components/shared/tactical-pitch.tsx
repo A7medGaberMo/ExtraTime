@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Shield, Layers, HelpCircle } from "lucide-react";
 import { PlayerImage } from "./player-image";
+import { getTierStyle } from "@/lib/tier-styles";
 
 /* ── Types ─────────────────────────────────────────────────── */
 export interface TacticalSquadSlot {
@@ -43,12 +44,6 @@ interface TacticalPitchProps {
 /* ── Tier Priority (stronger players are placed first) ────── */
 const TIER_PRIORITY: Record<string, number> = {
   ICON: 8, HERO: 7, ULTIMATE: 6, MASTER: 5, ELITE: 4, GOLD: 3, SILVER: 2, BRONZE: 1,
-};
-
-/* ── Tier Colors ──────────────────────────────────────────── */
-const TIER_COLORS: Record<string, string> = {
-  ICON: "#D4AF37", HERO: "#10B981", ULTIMATE: "#0EA5E9", MASTER: "#A855F7",
-  ELITE: "#E11D48", GOLD: "#EAB308", SILVER: "#CBD5E1", BRONZE: "#C97A3A",
 };
 
 /* ── Coordinates ───────────────────────────────────────────── */
@@ -359,7 +354,7 @@ export function TacticalPitch({
           {onField.map(({ coord, slot, isCurrentSlot, isFutureSlot }, idx) => {
             const hasPlayer = Boolean(slot?.player);
             const player = slot?.player;
-            const tierColor = player?.tier ? (TIER_COLORS[player.tier] || "#95E810") : "#95E810";
+            const tierColor = player?.tier ? getTierStyle(player.tier).highlight : "#95E810";
             const nodeSize = is5 ? 46 : 38;
             const emptySize = is5 ? 42 : 34;
 
@@ -450,7 +445,7 @@ export function TacticalPitch({
           </h4>
           <div className="flex flex-wrap gap-2">
             {substitutes.map((sub, sIdx) => {
-              const subTierColor = sub.player?.tier ? (TIER_COLORS[sub.player.tier] || "#95E810") : "#95E810";
+              const subTierColor = sub.player?.tier ? getTierStyle(sub.player.tier).highlight : "#95E810";
               return (
                 <div key={sIdx} className="flex items-center gap-2 p-1.5 rounded-lg bg-slate-950/80 border border-white/10 shadow-sm"
                   style={{ borderColor: `${subTierColor}30` }}>

@@ -57,7 +57,7 @@
       "position": "LB/LWB",
       "club": "VfB Stuttgart",
       "nation": "Germany",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25342.png",
       "kitNumber": 7
@@ -193,6 +193,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340573.png",
       "kitNumber": 11
+    },
+    {
+      "apiId": 334879,
+      "name": "B. Bouanani",
+      "position": "RW/RM",
+      "club": "VfB Stuttgart",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/334879.png",
+      "kitNumber": 27
     },
     {
       "apiId": 24963,
@@ -338,17 +349,6 @@
       "kitNumber": 47
     },
     {
-      "apiId": 334879,
-      "name": "B. Bouanani",
-      "position": "RW/RM",
-      "club": "VfB Stuttgart",
-      "nation": "Algeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/334879.png",
-      "kitNumber": 27
-    },
-    {
       "apiId": 371911,
       "name": "J. Milošević",
       "position": "ST",
@@ -358,6 +358,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/371911.png",
       "kitNumber": 19
+    },
+    {
+      "apiId": 342188,
+      "name": "D. Pejčinović",
+      "position": "ST",
+      "club": "VfB Stuttgart",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342188.png",
+      "kitNumber": 17
     },
     {
       "apiId": 350799,
@@ -380,17 +391,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546701.png",
       "kitNumber": 48
-    },
-    {
-      "apiId": 342188,
-      "name": "D. Pejčinović",
-      "position": "ST",
-      "club": "VfB Stuttgart",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/342188.png",
-      "kitNumber": 17
     }
   ]
 }

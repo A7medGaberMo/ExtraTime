@@ -8,6 +8,17 @@
   },
   "players": [
     {
+      "apiId": 10081,
+      "name": "Rafael",
+      "position": "GK",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10081.png",
+      "kitNumber": 23
+    },
+    {
       "apiId": 50726,
       "name": "Carlos Coronel",
       "position": "GK",
@@ -19,26 +30,114 @@
       "kitNumber": 31
     },
     {
-      "apiId": 10081,
-      "name": "Rafael",
+      "apiId": 311517,
+      "name": "Young",
       "position": "GK",
       "club": "São Paulo",
       "nation": "Brazil",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10081.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 311517,
-      "name": "Young",
-      "position": "GK",
-      "club": "São Paulo",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/311517.png",
       "kitNumber": 50
+    },
+    {
+      "apiId": 30429,
+      "name": "R. Tolói",
+      "position": "CB",
+      "club": "São Paulo",
+      "nation": "Italy",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30429.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 2571,
+      "name": "R. Arboleda",
+      "position": "CB",
+      "club": "São Paulo",
+      "nation": "Ecuador",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2571.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 970,
+      "name": "Wendell",
+      "position": "LB/LWB",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/970.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 190,
+      "name": "Cédric Soares",
+      "position": "RB/RWB",
+      "club": "São Paulo",
+      "nation": "Portugal",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/190.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 6237,
+      "name": "E. Díaz",
+      "position": "LB",
+      "club": "São Paulo",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6237.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 8451,
+      "name": "Aurélio Buta",
+      "position": "RB",
+      "club": "São Paulo",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8451.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 9340,
+      "name": "Sabino",
+      "position": "CB",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9340.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 133330,
+      "name": "Lucas Carvalho",
+      "position": "CB",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/133330.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 277169,
+      "name": "Newton",
+      "position": "CB",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/277169.png",
+      "kitNumber": 28
     },
     {
       "apiId": 516821,
@@ -52,31 +151,9 @@
       "kitNumber": 56
     },
     {
-      "apiId": 8451,
-      "name": "Aurélio Buta",
-      "position": "CB",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/8451.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 6237,
-      "name": "E. Díaz",
-      "position": "CB",
-      "club": "São Paulo",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6237.png",
-      "kitNumber": 13
-    },
-    {
       "apiId": 634548,
       "name": "Igor Felisberto",
-      "position": "CB",
+      "position": "RB",
       "club": "São Paulo",
       "nation": "Brazil",
       "tier": "SILVER",
@@ -89,22 +166,11 @@
       "name": "Isac",
       "position": "CB",
       "club": "São Paulo",
-      "nation": "Sweden",
+      "nation": "Brazil",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/414456.png",
       "kitNumber": 53
-    },
-    {
-      "apiId": 133330,
-      "name": "Lucas Carvalho",
-      "position": "CB",
-      "club": "São Paulo",
-      "nation": "Brazil (University)",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/133330.png",
-      "kitNumber": 19
     },
     {
       "apiId": 639743,
@@ -120,7 +186,7 @@
     {
       "apiId": 505991,
       "name": "Maik",
-      "position": "CB",
+      "position": "RB",
       "club": "São Paulo",
       "nation": "Brazil",
       "tier": "SILVER",
@@ -129,81 +195,48 @@
       "kitNumber": 42
     },
     {
-      "apiId": 2571,
-      "name": "R. Arboleda",
-      "position": "CB",
+      "apiId": 313732,
+      "name": "Pablo Maia",
+      "position": "CDM/CM",
       "club": "São Paulo",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2571.png",
-      "kitNumber": 5
+      "imageUrl": "https://media.api-sports.io/football/players/313732.png",
+      "kitNumber": 29
     },
     {
-      "apiId": 9340,
-      "name": "Sabino",
-      "position": "CB",
+      "apiId": 696,
+      "name": "Marcos Antônio",
+      "position": "CM/CDM",
       "club": "São Paulo",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9340.png",
-      "kitNumber": 35
-    },
-    {
-      "apiId": 190,
-      "name": "Cédric Soares",
-      "position": "CB",
-      "club": "São Paulo",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/190.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 30429,
-      "name": "R. Tolói",
-      "position": "CB",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30429.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 970,
-      "name": "Wendell",
-      "position": "CB",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/970.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 195107,
-      "name": "D. Bobadilla",
-      "position": "CM",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195107.png",
-      "kitNumber": 16
+      "imageUrl": "https://media.api-sports.io/football/players/696.png",
+      "kitNumber": 8
     },
     {
       "apiId": 25272,
       "name": "Cauly",
-      "position": "CM",
+      "position": "CAM/CM",
       "club": "São Paulo",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25272.png",
       "kitNumber": 80
+    },
+    {
+      "apiId": 195107,
+      "name": "D. Bobadilla",
+      "position": "CM/CDM",
+      "club": "São Paulo",
+      "nation": "Paraguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195107.png",
+      "kitNumber": 16
     },
     {
       "apiId": 77754,
@@ -217,15 +250,15 @@
       "kitNumber": 94
     },
     {
-      "apiId": 612911,
-      "name": "D. Ferreira",
-      "position": "CM",
+      "apiId": 9957,
+      "name": "Luan",
+      "position": "CDM/CM",
       "club": "São Paulo",
       "nation": "Brazil",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/612911.png",
-      "kitNumber": 48
+      "imageUrl": "https://media.api-sports.io/football/players/9957.png",
+      "kitNumber": 33
     },
     {
       "apiId": 633532,
@@ -239,48 +272,15 @@
       "kitNumber": 38
     },
     {
-      "apiId": 9957,
-      "name": "Luan",
+      "apiId": 612911,
+      "name": "D. Ferreira",
       "position": "CM",
       "club": "São Paulo",
       "nation": "Brazil",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9957.png",
-      "kitNumber": 33
-    },
-    {
-      "apiId": 696,
-      "name": "Marcos Antônio",
-      "position": "CM",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/696.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 277169,
-      "name": "Newton",
-      "position": "CB",
-      "club": "São Paulo",
-      "nation": "England",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/277169.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 313732,
-      "name": "Pablo Maia",
-      "position": "CM",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/313732.png",
-      "kitNumber": 29
+      "imageUrl": "https://media.api-sports.io/football/players/612911.png",
+      "kitNumber": 48
     },
     {
       "apiId": 505992,
@@ -294,6 +294,72 @@
       "kitNumber": 46
     },
     {
+      "apiId": 607347,
+      "name": "G. Santana",
+      "position": "CM",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/607347.png",
+      "kitNumber": 43
+    },
+    {
+      "apiId": 178,
+      "name": "Lucas Moura",
+      "position": "RW/CAM/LW",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/178.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 47368,
+      "name": "J. Calleri",
+      "position": "ST",
+      "club": "São Paulo",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47368.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 10323,
+      "name": "Luciano",
+      "position": "ST/CAM",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10323.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 106510,
+      "name": "Ferreira",
+      "position": "LW/LM",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/106510.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 10040,
+      "name": "Artur",
+      "position": "RW/LW",
+      "club": "São Paulo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10040.png",
+      "kitNumber": 37
+    },
+    {
       "apiId": 41188,
       "name": "André Silva",
       "position": "ST",
@@ -305,48 +371,26 @@
       "kitNumber": 17
     },
     {
-      "apiId": 10040,
-      "name": "Artur",
-      "position": "ST",
+      "apiId": 201909,
+      "name": "G. Tapia",
+      "position": "ST/RW",
+      "club": "São Paulo",
+      "nation": "Chile",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/201909.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 7541,
+      "name": "Victor Sá",
+      "position": "LW/RW",
       "club": "São Paulo",
       "nation": "Brazil",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10040.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 106510,
-      "name": "Ferreira",
-      "position": "ST",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/106510.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 47368,
-      "name": "J. Calleri",
-      "position": "ST",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47368.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 178,
-      "name": "Lucas Moura",
-      "position": "ST",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/178.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/7541.png",
+      "kitNumber": 27
     },
     {
       "apiId": 505994,
@@ -360,17 +404,6 @@
       "kitNumber": 45
     },
     {
-      "apiId": 10323,
-      "name": "Luciano",
-      "position": "ST",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10323.png",
-      "kitNumber": 10
-    },
-    {
       "apiId": 465195,
       "name": "Paulo Sérgio",
       "position": "ST",
@@ -382,44 +415,11 @@
       "kitNumber": 39
     },
     {
-      "apiId": 607347,
-      "name": "G. Santana",
-      "position": "CM",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/607347.png",
-      "kitNumber": 43
-    },
-    {
-      "apiId": 201909,
-      "name": "G. Tapia",
-      "position": "ST",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/201909.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 7541,
-      "name": "Victor Sá",
-      "position": "ST",
-      "club": "São Paulo",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/7541.png",
-      "kitNumber": 27
-    },
-    {
       "apiId": 607350,
       "name": "P. dos Santos",
       "position": "ST",
       "club": "São Paulo",
-      "nation": "Mexico",
+      "nation": "Brazil",
       "tier": "SILVER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/607350.png",

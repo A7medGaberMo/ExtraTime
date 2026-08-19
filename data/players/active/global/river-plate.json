@@ -8,17 +8,6 @@
   },
   "players": [
     {
-      "apiId": 414525,
-      "name": "S. Beltrán",
-      "position": "GK",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/414525.png",
-      "kitNumber": 41
-    },
-    {
       "apiId": 5985,
       "name": "E. Centurión",
       "position": "GK",
@@ -28,6 +17,17 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5985.png",
       "kitNumber": 33
+    },
+    {
+      "apiId": 414525,
+      "name": "S. Beltrán",
+      "position": "GK",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/414525.png",
+      "kitNumber": 41
     },
     {
       "apiId": 576649,
@@ -43,21 +43,65 @@
     {
       "apiId": 1493,
       "name": "M. Acuña",
-      "position": "CB",
+      "position": "LB/LWB",
       "club": "River Plate",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1493.png",
       "kitNumber": 21
     },
     {
-      "apiId": 6080,
-      "name": "F. Bustos",
+      "apiId": 624,
+      "name": "N. Otamendi",
       "position": "CB",
       "club": "River Plate",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/624.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 2469,
+      "name": "G. Pezzella",
+      "position": "CB",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2469.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 2468,
+      "name": "G. Montiel",
+      "position": "RB/RWB",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2468.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 51572,
+      "name": "M. Viña",
+      "position": "LB",
+      "club": "River Plate",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51572.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 6080,
+      "name": "F. Bustos",
+      "position": "RB",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6080.png",
       "kitNumber": 16
@@ -65,24 +109,24 @@
     {
       "apiId": 2610,
       "name": "G. González",
-      "position": "CB",
+      "position": "RB/CB",
       "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
+      "nation": "Uruguay",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2610.png",
       "kitNumber": 20
     },
     {
-      "apiId": 538363,
-      "name": "F. Gonzalez",
-      "position": "CB",
+      "apiId": 6064,
+      "name": "F. Ortega",
+      "position": "LB",
       "club": "River Plate",
       "nation": "Argentina",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/538363.png",
-      "kitNumber": 31
+      "imageUrl": "https://media.api-sports.io/football/players/6064.png",
+      "kitNumber": 3
     },
     {
       "apiId": 6000,
@@ -96,56 +140,12 @@
       "kitNumber": 28
     },
     {
-      "apiId": 2468,
-      "name": "G. Montiel",
-      "position": "CB",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2468.png",
-      "kitNumber": 29
-    },
-    {
-      "apiId": 6064,
-      "name": "F. Ortega",
-      "position": "CB",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6064.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 624,
-      "name": "N. Otamendi",
-      "position": "CB",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/624.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 2469,
-      "name": "G. Pezzella",
-      "position": "CB",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2469.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 414386,
       "name": "T. Palacio",
       "position": "CB",
       "club": "River Plate",
       "nation": "Argentina",
-      "tier": "SILVER",
+      "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/414386.png",
       "kitNumber": 2
@@ -162,15 +162,114 @@
       "kitNumber": 13
     },
     {
-      "apiId": 51572,
-      "name": "M. Viña",
+      "apiId": 538363,
+      "name": "F. Gonzalez",
       "position": "CB",
       "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/538363.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 53,
+      "name": "Á. Correa",
+      "position": "RW/ST/CAM",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/53.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 6067,
+      "name": "T. Almada",
+      "position": "CAM/LW",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6067.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 406303,
+      "name": "K. Páez",
+      "position": "CAM/RW",
+      "club": "River Plate",
+      "nation": "Ecuador",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/406303.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 47258,
+      "name": "M. Arambarri",
+      "position": "CM/CDM",
+      "club": "River Plate",
       "nation": "Uruguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47258.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 6347,
+      "name": "A. Moreno",
+      "position": "CDM/CM",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6347.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 6379,
+      "name": "G. Galoppo",
+      "position": "CM/CAM",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6379.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 6725,
+      "name": "F. Vera",
+      "position": "CM/CDM",
+      "club": "River Plate",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6725.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 305832,
+      "name": "M. Galarza",
+      "position": "CM",
+      "club": "River Plate",
+      "nation": "Paraguay",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/305832.png",
+      "kitNumber": 88
+    },
+    {
+      "apiId": 265912,
+      "name": "T. Galván",
+      "position": "CAM/CM",
+      "club": "River Plate",
+      "nation": "Argentina",
       "tier": "GOLD",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51572.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/265912.png",
+      "kitNumber": 26
     },
     {
       "apiId": 516771,
@@ -184,17 +283,6 @@
       "kitNumber": 50
     },
     {
-      "apiId": 47258,
-      "name": "M. Arambarri",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Uruguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47258.png",
-      "kitNumber": 8
-    },
-    {
       "apiId": 662553,
       "name": "J. Asuzu",
       "position": "CM",
@@ -204,61 +292,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/662553.png",
       "kitNumber": 52
-    },
-    {
-      "apiId": 53,
-      "name": "Á. Correa",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/53.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 6725,
-      "name": "F. Vera",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6725.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 305832,
-      "name": "M. Galarza",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Paraguay",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/305832.png",
-      "kitNumber": 88
-    },
-    {
-      "apiId": 265912,
-      "name": "T. Galván",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/265912.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 6379,
-      "name": "G. Galoppo",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6379.png",
-      "kitNumber": 34
     },
     {
       "apiId": 560468,
@@ -283,17 +316,6 @@
       "kitNumber": 24
     },
     {
-      "apiId": 6347,
-      "name": "A. Moreno",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6347.png",
-      "kitNumber": 6
-    },
-    {
       "apiId": 506487,
       "name": "Lucas Agustin Obregon",
       "position": "CM",
@@ -303,17 +325,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/506487.png",
       "kitNumber": 40
-    },
-    {
-      "apiId": 406303,
-      "name": "K. Páez",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/406303.png",
-      "kitNumber": 19
     },
     {
       "apiId": 642174,
@@ -327,17 +338,6 @@
       "kitNumber": 25
     },
     {
-      "apiId": 414329,
-      "name": "A. Ruberto",
-      "position": "CM",
-      "club": "River Plate",
-      "nation": "Argentina",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/414329.png",
-      "kitNumber": 32
-    },
-    {
       "apiId": 657681,
       "name": "L. Silva",
       "position": "CM",
@@ -349,15 +349,15 @@
       "kitNumber": 44
     },
     {
-      "apiId": 6067,
-      "name": "T. Almada",
+      "apiId": 560314,
+      "name": "J. Freitas",
       "position": "CM",
       "club": "River Plate",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6067.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/560314.png",
+      "kitNumber": 35
     },
     {
       "apiId": 6010,
@@ -365,7 +365,7 @@
       "position": "ST",
       "club": "River Plate",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6010.png",
       "kitNumber": null
@@ -376,7 +376,7 @@
       "position": "ST",
       "club": "River Plate",
       "nation": "Colombia",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6011.png",
       "kitNumber": null
@@ -387,21 +387,21 @@
       "position": "ST",
       "club": "River Plate",
       "nation": "Argentina",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1222.png",
       "kitNumber": 9
     },
     {
-      "apiId": 560314,
-      "name": "J. Freitas",
-      "position": "CM",
+      "apiId": 414329,
+      "name": "A. Ruberto",
+      "position": "ST",
       "club": "River Plate",
       "nation": "Argentina",
-      "tier": "SILVER",
+      "tier": "ELITE",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/560314.png",
-      "kitNumber": 35
+      "imageUrl": "https://media.api-sports.io/football/players/414329.png",
+      "kitNumber": 32
     }
   ]
 }

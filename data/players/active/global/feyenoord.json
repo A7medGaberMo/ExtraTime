@@ -8,28 +8,6 @@
   },
   "players": [
     {
-      "apiId": 612947,
-      "name": "M. Berger",
-      "position": "GK",
-      "club": "Feyenoord",
-      "nation": "RCS",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/612947.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 198483,
-      "name": "L. Bossin",
-      "position": "GK",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/198483.png",
-      "kitNumber": 39
-    },
-    {
       "apiId": 203380,
       "name": "T. Ernst",
       "position": "GK",
@@ -41,31 +19,64 @@
       "kitNumber": 1
     },
     {
-      "apiId": 629173,
-      "name": "H. Agboluaje",
-      "position": "CB",
+      "apiId": 198483,
+      "name": "L. Bossin",
+      "position": "GK",
+      "club": "Feyenoord",
+      "nation": "Ireland",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/198483.png",
+      "kitNumber": 39
+    },
+    {
+      "apiId": 612947,
+      "name": "M. Berger",
+      "position": "GK",
       "club": "Feyenoord",
       "nation": "Netherlands",
       "tier": "SILVER",
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/629173.png",
-      "kitNumber": 72
+      "imageUrl": "https://media.api-sports.io/football/players/612947.png",
+      "kitNumber": 37
     },
     {
       "apiId": 1949,
       "name": "A. Ahmedhodžić",
-      "position": "RW/RM",
+      "position": "CB",
       "club": "Feyenoord",
-      "nation": "Sweden",
+      "nation": "Bosnia and Herzegovina",
       "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1949.png",
       "kitNumber": 21
     },
     {
+      "apiId": 37148,
+      "name": "J. St. Juste",
+      "position": "CB/RB",
+      "club": "Feyenoord",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37148.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 162475,
+      "name": "Mika Màrmol",
+      "position": "CB/LB",
+      "club": "Feyenoord",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162475.png",
+      "kitNumber": 35
+    },
+    {
       "apiId": 337587,
       "name": "J. Bos",
-      "position": "CB",
+      "position": "LB/LWB",
       "club": "Feyenoord",
       "nation": "Australia",
       "tier": "GOLD",
@@ -74,53 +85,20 @@
       "kitNumber": 15
     },
     {
-      "apiId": 37451,
-      "name": "M. Deijl",
-      "position": "CB",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37451.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 134756,
-      "name": "N. Kasanwirjo",
-      "position": "CB",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/134756.png",
-      "kitNumber": 47
-    },
-    {
       "apiId": 945,
       "name": "J. Lotomba",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Feyenoord",
-      "nation": "Netherlands",
+      "nation": "Switzerland",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/945.png",
       "kitNumber": 30
     },
     {
-      "apiId": 162475,
-      "name": "Mika Màrmol",
-      "position": "CB",
-      "club": "Feyenoord",
-      "nation": "Catalonia",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162475.png",
-      "kitNumber": 35
-    },
-    {
       "apiId": 37147,
       "name": "B. Nieuwkoop",
-      "position": "CB",
+      "position": "RB/RWB",
       "club": "Feyenoord",
       "nation": "Netherlands",
       "tier": "GOLD",
@@ -129,37 +107,15 @@
       "kitNumber": 2
     },
     {
-      "apiId": 359390,
-      "name": "G. Read",
-      "position": "CB",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/359390.png",
-      "kitNumber": 26
-    },
-    {
       "apiId": 37742,
       "name": "G. Smal",
-      "position": "CB",
+      "position": "LB",
       "club": "Feyenoord",
       "nation": "Netherlands",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37742.png",
       "kitNumber": 5
-    },
-    {
-      "apiId": 37148,
-      "name": "J. St. Juste",
-      "position": "CB",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37148.png",
-      "kitNumber": 6
     },
     {
       "apiId": 32858,
@@ -173,6 +129,127 @@
       "kitNumber": 4
     },
     {
+      "apiId": 37451,
+      "name": "M. Deijl",
+      "position": "RB",
+      "club": "Feyenoord",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37451.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 134756,
+      "name": "N. Kasanwirjo",
+      "position": "RB/CB",
+      "club": "Feyenoord",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/134756.png",
+      "kitNumber": 47
+    },
+    {
+      "apiId": 629173,
+      "name": "H. Agboluaje",
+      "position": "CB",
+      "club": "Feyenoord",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/629173.png",
+      "kitNumber": 72
+    },
+    {
+      "apiId": 359390,
+      "name": "G. Read",
+      "position": "RB",
+      "club": "Feyenoord",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/359390.png",
+      "kitNumber": 26
+    },
+    {
+      "apiId": 37784,
+      "name": "S. Steijn",
+      "position": "CAM/CM",
+      "club": "Feyenoord",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/37784.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 14394,
+      "name": "L. Ivanušec",
+      "position": "LW/CAM",
+      "club": "Feyenoord",
+      "nation": "Croatia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/14394.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 40911,
+      "name": "J. Moder",
+      "position": "CM/CDM",
+      "club": "Feyenoord",
+      "nation": "Poland",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/40911.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 284071,
+      "name": "O. Targhalline",
+      "position": "CM/CDM",
+      "club": "Feyenoord",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284071.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 314266,
+      "name": "L. Valente",
+      "position": "CAM/CM",
+      "club": "Feyenoord",
+      "nation": "Italy",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/314266.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 8680,
+      "name": "C. Vanhoutte",
+      "position": "CDM/CM",
+      "club": "Feyenoord",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8680.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 425819,
+      "name": "G. Zechiël",
+      "position": "CM/CDM",
+      "club": "Feyenoord",
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/425819.png",
+      "kitNumber": 8
+    },
+    {
       "apiId": 653521,
       "name": "I. Grootfaam",
       "position": "CM",
@@ -182,17 +259,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/653521.png",
       "kitNumber": 79
-    },
-    {
-      "apiId": 14394,
-      "name": "L. Ivanušec",
-      "position": "CM",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/14394.png",
-      "kitNumber": 18
     },
     {
       "apiId": 371228,
@@ -206,17 +272,6 @@
       "kitNumber": 24
     },
     {
-      "apiId": 40911,
-      "name": "J. Moder",
-      "position": "CM",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/40911.png",
-      "kitNumber": 7
-    },
-    {
       "apiId": 632814,
       "name": "A. Nahany",
       "position": "CM",
@@ -226,61 +281,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/632814.png",
       "kitNumber": 75
-    },
-    {
-      "apiId": 37784,
-      "name": "S. Steijn",
-      "position": "CM",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/37784.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 284071,
-      "name": "O. Targhalline",
-      "position": "CM",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284071.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 314266,
-      "name": "L. Valente",
-      "position": "CM",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/314266.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 8680,
-      "name": "C. Vanhoutte",
-      "position": "CM",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/8680.png",
-      "kitNumber": 34
-    },
-    {
-      "apiId": 425819,
-      "name": "G. Zechiël",
-      "position": "CM",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/425819.png",
-      "kitNumber": 8
     },
     {
       "apiId": 491239,
@@ -294,11 +294,55 @@
       "kitNumber": 22
     },
     {
-      "apiId": 128385,
-      "name": "Gonçalo Borges",
+      "apiId": 326067,
+      "name": "A. Hadj-Moussa",
+      "position": "RW/RM",
+      "club": "Feyenoord",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/326067.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 72155,
+      "name": "A. Ueda",
       "position": "ST",
       "club": "Feyenoord",
-      "nation": "Netherlands",
+      "nation": "Japan",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/72155.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 412873,
+      "name": "A. Sliti",
+      "position": "RW/LW",
+      "club": "Feyenoord",
+      "nation": "Tunisia",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/412873.png",
+      "kitNumber": null
+    },
+    {
+      "apiId": 162703,
+      "name": "C. Tengstedt",
+      "position": "ST",
+      "club": "Feyenoord",
+      "nation": "Denmark",
+      "tier": "GOLD",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162703.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 128385,
+      "name": "Gonçalo Borges",
+      "position": "RW/LW",
+      "club": "Feyenoord",
+      "nation": "Portugal",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128385.png",
@@ -316,22 +360,11 @@
       "kitNumber": 27
     },
     {
-      "apiId": 326067,
-      "name": "A. Hadj-Moussa",
-      "position": "ST",
-      "club": "Feyenoord",
-      "nation": "Algeria",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/326067.png",
-      "kitNumber": 23
-    },
-    {
       "apiId": 353943,
       "name": "Nacho Ferri",
       "position": "ST",
       "club": "Feyenoord",
-      "nation": "Netherlands",
+      "nation": "Spain",
       "tier": "GOLD",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/353943.png",
@@ -347,39 +380,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/629206.png",
       "kitNumber": 70
-    },
-    {
-      "apiId": 412873,
-      "name": "A. Sliti",
-      "position": "ST",
-      "club": "Feyenoord",
-      "nation": "Tunisia",
-      "tier": "SILVER",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/412873.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 162703,
-      "name": "C. Tengstedt",
-      "position": "ST",
-      "club": "Feyenoord",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162703.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 72155,
-      "name": "A. Ueda",
-      "position": "ST",
-      "club": "Feyenoord",
-      "nation": "Japan",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/72155.png",
-      "kitNumber": 9
     },
     {
       "apiId": 624605,

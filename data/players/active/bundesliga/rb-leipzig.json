@@ -35,7 +35,7 @@
       "position": "CB",
       "club": "RB Leipzig",
       "nation": "France",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162761.png",
       "kitNumber": 23
@@ -167,7 +167,7 @@
       "position": "CM/CDM",
       "club": "RB Leipzig",
       "nation": "Belgium",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340154.png",
       "kitNumber": 18
@@ -228,6 +228,17 @@
       "kitNumber": 77
     },
     {
+      "apiId": 290549,
+      "name": "J. Bakayoko",
+      "position": "RW/RM",
+      "club": "RB Leipzig",
+      "nation": "Belgium",
+      "tier": "MASTER",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/290549.png",
+      "kitNumber": 9
+    },
+    {
       "apiId": 314511,
       "name": "A. Nusa",
       "position": "LW/RW",
@@ -237,17 +248,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/314511.png",
       "kitNumber": 7
-    },
-    {
-      "apiId": 290549,
-      "name": "J. Bakayoko",
-      "position": "RW/RM",
-      "club": "RB Leipzig",
-      "nation": "Belgium",
-      "tier": "ELITE",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/290549.png",
-      "kitNumber": 9
     },
     {
       "apiId": 328225,

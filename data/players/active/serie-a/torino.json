@@ -57,7 +57,7 @@
       "position": "CB",
       "club": "Torino",
       "nation": "Equatorial Guinea",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/122468.png",
       "kitNumber": 23
@@ -68,7 +68,7 @@
       "position": "LB/CB",
       "club": "Torino",
       "nation": "Italy",
-      "tier": "GOLD",
+      "tier": "ELITE",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30396.png",
       "kitNumber": 34
@@ -151,6 +151,17 @@
       "kitNumber": 8
     },
     {
+      "apiId": 243,
+      "name": "Z. Aboukhlal",
+      "position": "RW/LW",
+      "club": "Torino",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/243.png",
+      "kitNumber": 7
+    },
+    {
       "apiId": 270507,
       "name": "C. Casadei",
       "position": "CM",
@@ -222,7 +233,7 @@
       "position": "ST",
       "club": "Torino",
       "nation": "Colombia",
-      "tier": "ELITE",
+      "tier": "MASTER",
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2495.png",
       "kitNumber": 91
@@ -248,17 +259,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30414.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 243,
-      "name": "Z. Aboukhlal",
-      "position": "RW/LW",
-      "club": "Torino",
-      "nation": "Morocco",
-      "tier": "GOLD",
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/243.png",
-      "kitNumber": 7
     },
     {
       "apiId": 40405,
