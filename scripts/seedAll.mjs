@@ -7,14 +7,16 @@ dotenv.config({ path: ".env.local" });
 
 const url = process.env.NEXT_PUBLIC_CONVEX_URL;
 if (!url) {
-  console.error("Missing NEXT_PUBLIC_CONVEX_URL in .env.local");
+  console.error("❌ Missing NEXT_PUBLIC_CONVEX_URL in .env.local");
   process.exit(1);
 }
 
 const client = new ConvexHttpClient(url);
-console.log("Connecting to Convex at:", url);
+console.log("⚡ Convex Database Sync — Players & Tiers Only");
+console.log("🔗 Connecting to Convex at:", url);
 
 function getAllFiles(dirPath, arrayOfFiles = []) {
+  if (!fs.existsSync(dirPath)) return arrayOfFiles;
   const files = fs.readdirSync(dirPath);
   for (const file of files) {
     const fullPath = path.join(dirPath, file);
@@ -27,15 +29,18 @@ function getAllFiles(dirPath, arrayOfFiles = []) {
   return arrayOfFiles;
 }
 
-async function seedActivePlayers() {
-  console.log("\n--- Seeding Active Players ---");
-  const files = getAllFiles("data/players/active");
-  console.log(`Found ${files.length} active squad files.`);
+async function seedPlayersAndTiers() {
+  const startTime = Date.now();
+  const activeFiles = getAllFiles("data/players/active");
+  const legendFiles = getAllFiles("data/players/legends");
+  
+  console.log(`\n📂 Loading player files (${activeFiles.length} active squads, ${legendFiles.length} legend files)...`);
 
-  let allPlayers = [];
+  const allPlayers = [];
   const seenApiIds = new Set();
 
-  for (const file of files) {
+  // 1. Active Squads
+  for (const file of activeFiles) {
     try {
       const content = JSON.parse(fs.readFileSync(file, "utf-8"));
       const club = content.club || {};
@@ -43,9 +48,7 @@ async function seedActivePlayers() {
 
       for (const p of players) {
         const apiIdStr = p.apiId ? String(p.apiId) : undefined;
-        if (apiIdStr && seenApiIds.has(apiIdStr)) {
-          continue; // skip duplicate
-        }
+        if (apiIdStr && seenApiIds.has(apiIdStr)) continue;
         if (apiIdStr) seenApiIds.add(apiIdStr);
 
         allPlayers.push({
@@ -65,32 +68,12 @@ async function seedActivePlayers() {
         });
       }
     } catch (e) {
-      console.error(`Error reading ${file}:`, e);
+      console.error(`❌ Error reading ${file}:`, e.message);
     }
   }
 
-  console.log(`Prepared ${allPlayers.length} unique active players.`);
-
-  const BATCH_SIZE = 100;
-  for (let i = 0; i < allPlayers.length; i += BATCH_SIZE) {
-    const batch = allPlayers.slice(i, i + BATCH_SIZE);
-    try {
-      const res = await client.mutation("seed/seedData:upsertPlayersBatch", { players: batch });
-      process.stdout.write(`\rActive Players: [${Math.min(i + BATCH_SIZE, allPlayers.length)} / ${allPlayers.length}] (${res.count} processed)`);
-    } catch (err) {
-      console.error(`\nError in active batch at offset ${i}:`, err);
-    }
-  }
-  console.log("\nActive players seed complete!");
-}
-
-async function seedLegends() {
-  console.log("\n--- Seeding Legends ---");
-  const files = getAllFiles("data/players/legends");
-  let allLegends = [];
-  const seenApiIds = new Set();
-
-  for (const file of files) {
+  // 2. Legends (Icons & Heroes)
+  for (const file of legendFiles) {
     try {
       const content = JSON.parse(fs.readFileSync(file, "utf-8"));
       const list = Array.isArray(content) ? content : (content.players || []);
@@ -100,7 +83,7 @@ async function seedLegends() {
         if (apiIdStr && seenApiIds.has(apiIdStr)) continue;
         if (apiIdStr) seenApiIds.add(apiIdStr);
 
-        allLegends.push({
+        allPlayers.push({
           name: p.name,
           position: p.position || "ST",
           club: p.club || "Legend Club",
@@ -117,93 +100,32 @@ async function seedLegends() {
         });
       }
     } catch (e) {
-      console.error(`Error reading legend file ${file}:`, e);
+      console.error(`❌ Error reading legend file ${file}:`, e.message);
     }
   }
 
-  console.log(`Prepared ${allLegends.length} unique legends.`);
+  console.log(`✅ Loaded ${allPlayers.length} total players (tiers & metadata).`);
+  console.log("🚀 Syncing batches to Convex Cloud...");
 
   const BATCH_SIZE = 100;
-  for (let i = 0; i < allLegends.length; i += BATCH_SIZE) {
-    const batch = allLegends.slice(i, i + BATCH_SIZE);
+  for (let i = 0; i < allPlayers.length; i += BATCH_SIZE) {
+    const batch = allPlayers.slice(i, i + BATCH_SIZE);
     try {
-      const res = await client.mutation("seed/seedData:upsertPlayersBatch", { players: batch });
-      process.stdout.write(`\rLegends: [${Math.min(i + BATCH_SIZE, allLegends.length)} / ${allLegends.length}] (${res.count} processed)`);
+      await client.mutation("seed/seedData:upsertPlayersBatch", { players: batch });
+      process.stdout.write(`\r[${Math.min(i + BATCH_SIZE, allPlayers.length)} / ${allPlayers.length}] players synced...`);
     } catch (err) {
-      console.error(`\nError in legend batch at offset ${i}:`, err);
-    }
-  }
-  console.log("\nLegends seed complete!");
-}
-
-async function seedStats() {
-  console.log("\n--- Seeding Career Stats ---");
-  if (!fs.existsSync("data/stats")) {
-    console.log("No data/stats directory found, skipping.");
-    return;
-  }
-
-  const files = getAllFiles("data/stats");
-  console.log(`Found ${files.length} stats files.`);
-
-  let allStats = [];
-  for (const file of files) {
-    try {
-      const stat = JSON.parse(fs.readFileSync(file, "utf-8"));
-      if (stat.apiId && stat.name && stat.careerTotal) {
-        allStats.push({
-          apiId: stat.apiId,
-          name: stat.name,
-          clubs: (stat.clubs || []).map(c => ({
-            club: c.club || "Unknown",
-            appearances: Number(c.appearances) || 0,
-            goals: Number(c.goals) || 0,
-          })),
-          national: (stat.national || []).map(n => ({
-            team: n.team || "Unknown",
-            appearances: Number(n.appearances) || 0,
-            goals: Number(n.goals) || 0,
-          })),
-          careerTotal: {
-            appearances: Number(stat.careerTotal.appearances) || 0,
-            goals: Number(stat.careerTotal.goals) || 0,
-          },
-        });
-      }
-    } catch (e) {
-      // ignore malformed
+      console.error(`\n❌ Error at batch offset ${i}:`, err.message);
     }
   }
 
-  console.log(`Prepared ${allStats.length} career stat records.`);
+  console.log(`\n🎉 Player tiers and squad edits synced in ${((Date.now() - startTime) / 1000).toFixed(1)}s!`);
 
-  const BATCH_SIZE = 100;
-  for (let i = 0; i < allStats.length; i += BATCH_SIZE) {
-    const batch = allStats.slice(i, i + BATCH_SIZE);
-    try {
-      await client.mutation("seed/seedCareerStats:seedCompactStatsBatch", { stats: batch });
-      process.stdout.write(`\rStats: [${Math.min(i + BATCH_SIZE, allStats.length)} / ${allStats.length}]`);
-    } catch (err) {
-      console.error(`\nError in stats batch at offset ${i}:`, err);
-    }
-  }
-  console.log("\nStats seed complete!");
-}
-
-async function main() {
-  const start = Date.now();
-  await seedActivePlayers();
-  await seedLegends();
-  await seedStats();
-
-  console.log("\n--- Final DB Stats Verification ---");
   try {
     const stats = await client.query("players/queries:getStats", {});
-    console.log("Database Stats:", stats);
+    console.log("📊 Updated DB Stats:", stats);
   } catch (e) {
-    console.error("Error fetching stats:", e);
+    // ignore
   }
-  console.log(`Total seeding time: ${((Date.now() - start) / 1000).toFixed(1)}s`);
 }
 
-main().catch(console.error);
+seedPlayersAndTiers().catch(console.error);
