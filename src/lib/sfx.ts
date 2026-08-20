@@ -141,6 +141,65 @@ export function runnerUpTone(): void {
   [392.0, 329.63, 261.63].forEach((f, i) => tone(f, i * 0.22, 0.5, 'triangle', 0.14, c, { attack: 0.02 }));
 }
 
+/** 📦 Foil pack rip / unseal tear sound with crisp burst & frequency sweep. */
+export function packRip(): void {
+  const c = getCtx();
+  if (!c) return;
+  noiseBurst(0, 0.22, 0.35, c, 3200);
+  tone(550, 0.02, 0.18, 'sine', 0.22, c, { endFreq: 180, attack: 0.005 });
+  tone(220, 0.06, 0.28, 'triangle', 0.28, c, { endFreq: 60, attack: 0.008 });
+}
+
+/** 🃏 Quick snappy card deal / whoosh sound. */
+export function cardDeal(): void {
+  const c = getCtx();
+  if (!c) return;
+  noiseBurst(0, 0.06, 0.14, c, 1800);
+  tone(380, 0, 0.08, 'sine', 0.12, c, { endFreq: 750, attack: 0.003 });
+}
+
+/** 🎴 Crisp card flip snap sound. */
+export function cardFlip(): void {
+  const c = getCtx();
+  if (!c) return;
+  tone(620, 0, 0.09, 'triangle', 0.22, c, { endFreq: 980, attack: 0.002 });
+  noiseBurst(0, 0.04, 0.16, c, 2400);
+}
+
+/** ✨ Shimmer sparkle chime for high tier reveal. */
+export function tierReveal(): void {
+  const c = getCtx();
+  if (!c) return;
+  const chord = [523.25, 659.25, 783.99, 1046.5, 1318.5]; // C E G C E
+  chord.forEach((freq, idx) => {
+    tone(freq, idx * 0.04, 0.45, 'sine', 0.15, c, { attack: 0.005 });
+    tone(freq * 1.5, idx * 0.04 + 0.02, 0.3, 'triangle', 0.08, c, { attack: 0.005 });
+  });
+  noiseBurst(0, 0.12, 0.1, c, 3500);
+}
+
+/** 🌟 Legendary walkout stinger (dramatic cinematic chord sequence). */
+export function walkoutStinger(): void {
+  const c = getCtx();
+  if (!c) return;
+  // Dramatic bass surge
+  tone(80, 0, 0.8, 'sine', 0.45, c, { endFreq: 40, attack: 0.02 });
+  tone(120, 0.05, 0.6, 'sawtooth', 0.15, c, { endFreq: 60, attack: 0.02 });
+  
+  // Stinger Fanfare
+  const fanfare = [
+    [440.0, 0.1], // A4
+    [554.37, 0.22], // C#5
+    [659.25, 0.35], // E5
+    [880.0, 0.48], // A5
+    [1108.73, 0.62], // C#6
+  ];
+  fanfare.forEach(([freq, time]) => {
+    tone(freq, time, 0.65, 'triangle', 0.18, c, { attack: 0.008 });
+    tone(freq / 2, time + 0.01, 0.6, 'sine', 0.12, c, { attack: 0.008 });
+  });
+}
+
 export const sfx = {
   unlock: unlockAudio,
   kickoff: kickoffWhistle,
@@ -149,4 +208,9 @@ export const sfx = {
   crossbar: crossbarClang,
   victory: victoryFanfare,
   runnerUp: runnerUpTone,
+  packRip: packRip,
+  cardDeal: cardDeal,
+  cardFlip: cardFlip,
+  tierReveal: tierReveal,
+  walkout: walkoutStinger,
 };

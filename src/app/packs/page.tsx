@@ -3,51 +3,61 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
+import {
+  Zap,
+  Search,
+  RefreshCw,
+  X,
+  RotateCcw,
+} from 'lucide-react';
 import { CardDetailModal } from '@/components/packs/card-detail-modal';
 import { PageHeader } from '@/components/shared/page-header';
 import { PlayerCard } from '@/components/shared/player-card';
 import { TierBadge } from '@/components/shared/tier-badge';
+import { ETLogo } from '@/components/shared/et-logo';
 import { sfx } from '@/lib/sfx';
 import { getTierStyle, TIER_ORDER } from '@/lib/tier-styles';
 import type { PlayerCardData, Tier } from '@/types/player';
 
-type PackDef = {
+export interface PackDef {
   id: string;
   name: string;
   note: string;
   cardCount: number;
-  tiers: Tier[];
+  featuredTier: Tier;
   guaranteed: Tier[];
-};
+  eligibleTiers: Tier[];
+}
 
 const PACKS: PackDef[] = [
   {
     id: 'heritage',
-    name: 'Heritage Case',
-    note: 'Icon and Hero-led premium pulls.',
-    cardCount: 4,
-    tiers: ['ICON', 'HERO', 'ULTIMATE', 'MASTER'],
+    name: 'Heritage',
+    note: 'Icon & Hero legend case',
+    cardCount: 5,
+    featuredTier: 'ICON',
     guaranteed: ['ICON', 'HERO'],
+    eligibleTiers: ['ICON', 'HERO', 'ULTIMATE', 'MASTER'],
   },
   {
     id: 'signature',
-    name: 'Signature Case',
-    note: 'Top active and legacy materials.',
-    cardCount: 4,
-    tiers: ['ULTIMATE', 'MASTER', 'ELITE', 'GOLD'],
+    name: 'Signature',
+    note: 'World best & active masters',
+    cardCount: 5,
+    featuredTier: 'ULTIMATE',
     guaranteed: ['ULTIMATE', 'MASTER'],
+    eligibleTiers: ['ULTIMATE', 'MASTER', 'ELITE', 'GOLD'],
   },
   {
     id: 'clubhouse',
-    name: 'Clubhouse Case',
-    note: 'Balanced squad depth across tiers.',
+    name: 'Clubhouse',
+    note: 'Balanced squad dynamic pulls',
     cardCount: 5,
-    tiers: TIER_ORDER,
+    featuredTier: 'ELITE',
     guaranteed: ['ELITE', 'GOLD'],
+    eligibleTiers: ['MASTER', 'ELITE', 'GOLD'],
   },
 ];
-
-const ROTATION_MS = 10 * 60 * 1000;
 
 function seededShuffle<T>(items: T[], seed: number): T[] {
   const copy = [...items];
@@ -86,48 +96,61 @@ function toPlayerCardData(player: {
   };
 }
 
-function pickCards(pack: PackDef, players: PlayerCardData[]): PlayerCardData[] {
+function pickCardsForPack(pack: PackDef, allPlayers: PlayerCardData[]): PlayerCardData[] {
   const seed = Date.now() + pack.id.length * 1009;
-  const guaranteed = seededShuffle(players.filter((player) => pack.guaranteed.includes(player.tier)), seed);
-  const eligible = seededShuffle(players.filter((player) => pack.tiers.includes(player.tier)), seed + 17);
-  const fallback = seededShuffle(players, seed + 31);
   const selected: PlayerCardData[] = [];
   const used = new Set<string>();
 
-  for (const player of guaranteed) {
-    if (selected.length >= Math.min(2, pack.cardCount)) break;
+  // 1. Guarantee at least 1 card from EACH tier in pack.guaranteed
+  for (const gTier of pack.guaranteed) {
+    const tierPool = seededShuffle(allPlayers.filter((p) => p.tier === gTier && !used.has(p.id)), seed + selected.length * 19);
+    if (tierPool.length > 0) {
+      selected.push(tierPool[0]);
+      used.add(tierPool[0].id);
+    }
+  }
+
+  // 2. Eligible pool for the remaining slots (strictly from pack.eligibleTiers)
+  const eligiblePool = seededShuffle(
+    allPlayers.filter((p) => pack.eligibleTiers.includes(p.tier) && !used.has(p.id)),
+    seed + 43
+  );
+
+  for (const player of eligiblePool) {
+    if (selected.length >= pack.cardCount) break;
     selected.push(player);
     used.add(player.id);
   }
 
-  for (const pool of [eligible, fallback]) {
-    for (const player of pool) {
-      if (selected.length >= pack.cardCount) return selected;
-      if (used.has(player.id)) continue;
+  // 3. Fallback only if database has insufficient eligible players
+  if (selected.length < pack.cardCount) {
+    const fallbackPool = seededShuffle(
+      allPlayers.filter((p) => !used.has(p.id)),
+      seed + 97
+    );
+    for (const player of fallbackPool) {
+      if (selected.length >= pack.cardCount) break;
       selected.push(player);
       used.add(player.id);
     }
   }
 
-  return selected;
-}
-
-function formatRemaining(ms: number): string {
-  return `${Math.max(1, Math.ceil(ms / 60000))}m`;
+  // Shuffle final 5 cards so guaranteed cards aren't always in index 0 & 1
+  return seededShuffle(selected, seed + 101).slice(0, pack.cardCount);
 }
 
 export default function PacksPage() {
-  const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 500 });
-  const [nowMs, setNowMs] = useState(() => Date.now());
+  const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 40 });
   const [shuffleSeed, setShuffleSeed] = useState(0);
+
+  // Active opened pack state
   const [activePack, setActivePack] = useState<PackDef | null>(null);
   const [openedCards, setOpenedCards] = useState<PlayerCardData[]>([]);
+  const [isOpening, setIsOpening] = useState(false);
   const [inspectedCard, setInspectedCard] = useState<PlayerCardData | null>(null);
 
-  useEffect(() => {
-    const timer = setInterval(() => setNowMs(Date.now()), 15000);
-    return () => clearInterval(timer);
-  }, []);
+  // Search in showcase
+  const [searchQuery, setSearchQuery] = useState('');
 
   const players = useMemo(() => {
     const loaded = rawData?.allLoaded ?? [];
@@ -136,136 +159,282 @@ export default function PacksPage() {
     const tierLoaded = TIER_ORDER.flatMap((tier) => rawData?.[tier] ?? []);
     return tierLoaded.map(toPlayerCardData);
   }, [rawData]);
-  const rotationSlot = Math.floor(nowMs / ROTATION_MS);
-  const remainingMs = ROTATION_MS - (nowMs % ROTATION_MS);
 
-  const showcase = useMemo(() => {
-    return seededShuffle(players, rotationSlot * 8191 + shuffleSeed * 4099).slice(0, 8);
-  }, [players, rotationSlot, shuffleSeed]);
+  // Generate 8 Showcase Cards: Minimum GOLD tier, at most 1 GOLD card!
+  const showcaseCards = useMemo(() => {
+    if (players.length === 0) return [];
 
-  function openPack(pack: PackDef) {
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase().trim();
+      return players
+        .filter(
+          (p) =>
+            p.name.toLowerCase().includes(q) ||
+            p.club.toLowerCase().includes(q) ||
+            p.nation.toLowerCase().includes(q) ||
+            p.position.toLowerCase().includes(q)
+        )
+        .slice(0, 8);
+    }
+
+    const highTierPool = players.filter((p) =>
+      ['ICON', 'HERO', 'ULTIMATE', 'MASTER', 'ELITE'].includes(p.tier)
+    );
+    const goldPool = players.filter((p) => p.tier === 'GOLD');
+
+    const seed = 42 + shuffleSeed * 911;
+    const shuffledHigh = seededShuffle(highTierPool, seed);
+    const shuffledGold = seededShuffle(goldPool, seed + 17);
+
+    const result: PlayerCardData[] = [];
+
+    // Max 1 gold card in the 8 cards
+    if (shuffledGold.length > 0) {
+      result.push(shuffledGold[0]);
+    }
+
+    // Fill remaining 7 slots from high tiers (Elite, Master, Ultimate, Hero, Icon)
+    for (const player of shuffledHigh) {
+      if (result.length >= 8) break;
+      if (!result.some((p) => p.id === player.id)) {
+        result.push(player);
+      }
+    }
+
+    // If still less than 8, fill from available
+    if (result.length < 8) {
+      for (const p of shuffledHigh) {
+        if (result.length >= 8) break;
+        result.push(p);
+      }
+    }
+
+    // Shuffle final 8 so the gold card isn't always in position 0
+    return seededShuffle(result, seed + 99);
+  }, [players, searchQuery, shuffleSeed]);
+
+  // Open Pack handler: instant, responsive, clean
+  function handleOpenPack(pack: PackDef) {
     sfx.unlock();
-    sfx.save();
+    sfx.packRip();
+    setIsOpening(true);
     setActivePack(pack);
-    setOpenedCards(pickCards(pack, players));
+
+    const picked = pickCardsForPack(pack, players);
+    setOpenedCards(picked);
+
+    setTimeout(() => {
+      sfx.cardDeal();
+      setIsOpening(false);
+    }, 300);
   }
 
-  function shuffleShowcase() {
+  function handleShuffle() {
     sfx.unlock();
-    setShuffleSeed((value) => value + 1);
+    sfx.cardDeal();
+    setShuffleSeed((prev) => prev + 1);
   }
 
   return (
-    <main className="mx-auto max-w-6xl space-y-6 pb-12 animate-fade-in">
-      <PageHeader title="Packs" subtitle="Premium tier cards, quiet rotation, and all loaded players." backUrl="/" />
+    <main className="mx-auto max-w-5xl space-y-8 pb-16 px-3 sm:px-4 animate-fade-in">
+      <PageHeader
+        title="Packs"
+        subtitle="Open premium cases and discover elite football cards."
+        backUrl="/"
+      />
 
-      <section className="space-y-5 rounded-2xl border border-white/10 bg-slate-950/75 p-4 shadow-2xl backdrop-blur-md sm:p-5">
-        <header className="flex flex-wrap items-center justify-between gap-3">
-          <span>
-            <span className="block text-[10px] font-black uppercase tracking-widest text-steel">Cases</span>
-            <span className="block text-xl font-black uppercase tracking-normal text-white">Pack Display</span>
-          </span>
-          <span className="text-[10px] font-black uppercase tracking-widest text-steel">
-            {players.length || rawData?.totalLoaded || 0} loaded players
-          </span>
-        </header>
-
-        <article className="grid grid-cols-1 gap-3 md:grid-cols-3">
+      {/* ========================================================================= */}
+      {/* 1. CENTRALIZED MINIMAL PACK CASES GRID                                    */}
+      {/* ========================================================================= */}
+      <section className="space-y-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
           {PACKS.map((pack) => {
-            const style = getTierStyle(pack.guaranteed[0]);
+            const style = getTierStyle(pack.featuredTier);
+            const isSelected = activePack?.id === pack.id && openedCards.length > 0;
+
             return (
-              <button
+              <div
                 key={pack.id}
-                onClick={() => openPack(pack)}
-                disabled={players.length === 0}
-                className="group min-h-40 rounded-xl border bg-slate-900/70 p-4 text-left shadow-xl transition duration-200 hover:-translate-y-1 disabled:cursor-not-allowed disabled:opacity-50"
-                style={{ borderColor: `${style.accent}45`, boxShadow: `0 16px 36px rgba(0,0,0,0.26), 0 0 16px ${style.glow}` }}
+                className={`group relative rounded-2xl border bg-slate-900/80 p-4 sm:p-5 flex flex-col justify-between gap-4 shadow-xl transition-all duration-200 hover:-translate-y-1 overflow-hidden ${
+                  isSelected ? 'ring-2 ring-lime/70' : ''
+                }`}
+                style={{
+                  borderColor: `${style.accent}45`,
+                  boxShadow: `0 14px 28px rgba(0,0,0,0.4), 0 0 16px ${style.glow}`,
+                }}
               >
-                <span className="flex h-full flex-col justify-between gap-5">
-                  <span className="space-y-3">
-                    <span className="flex flex-wrap gap-1.5">
-                      {pack.tiers.slice(0, 4).map((tier) => (
-                        <TierBadge key={tier} tier={tier} className="px-2 py-0.5 text-[9px]" />
+                <div className="space-y-2.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-black uppercase tracking-wider text-steel">
+                      {pack.cardCount} Cards
+                    </span>
+                    <div className="flex gap-1">
+                      {pack.guaranteed.map((tier) => (
+                        <TierBadge key={tier} tier={tier} className="px-1.5 py-0.5 text-[8px]" />
                       ))}
-                    </span>
-                    <span className="block">
-                      <span className="block text-lg font-black uppercase tracking-normal text-white">{pack.name}</span>
-                      <span className="mt-1 block text-xs font-medium leading-relaxed text-steel">{pack.note}</span>
-                    </span>
-                  </span>
-                  <span className="flex items-end justify-between gap-3">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-steel">{pack.cardCount} cards</span>
-                    <span className="rounded-lg border px-3 py-1.5 text-[10px] font-black uppercase tracking-wider" style={{ color: style.highlight, borderColor: `${style.highlight}55` }}>
-                      Open
-                    </span>
-                  </span>
-                </span>
-              </button>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-black uppercase text-white tracking-tight">
+                      {pack.name}
+                    </h3>
+                    <p className="text-xs text-steel font-medium leading-relaxed mt-0.5">{pack.note}</p>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => handleOpenPack(pack)}
+                  disabled={players.length === 0 || isOpening}
+                  className="w-full py-2.5 px-4 rounded-xl text-xs font-black uppercase tracking-widest bg-lime hover:bg-vivid text-slate-950 shadow-md transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <Zap className="w-3.5 h-3.5 fill-current" />
+                  <span>Open Case</span>
+                </button>
+              </div>
             );
           })}
-        </article>
+        </div>
 
+        {/* ========================================================================= */}
+        {/* OPENED PACK RESULTS                                                       */}
+        {/* ========================================================================= */}
         {openedCards.length > 0 && activePack && (
-          <article className="border-t border-white/10 pt-5">
-            <header className="mb-4 flex flex-wrap items-center justify-between gap-3">
-              <span>
-                <span className="block text-[10px] font-black uppercase tracking-widest text-steel">Opened</span>
-                <span className="block text-xl font-black uppercase tracking-normal text-white">{activePack.name}</span>
-              </span>
-              <span className="flex gap-2">
-                <button onClick={() => openPack(activePack)} className="rounded-lg border border-white/15 bg-slate-900 px-3 py-2 text-[10px] font-black uppercase tracking-wider text-white transition hover:border-white/30">
-                  Again
+          <article className="rounded-2xl border border-white/10 bg-slate-950/90 p-4 sm:p-6 shadow-2xl backdrop-blur-md space-y-4 animate-scale-in">
+            <header className="flex items-center justify-between border-b border-white/10 pb-3">
+              <div>
+                <span className="text-[9px] font-black uppercase tracking-widest text-lime block">
+                  Opened Case
+                </span>
+                <h4 className="text-lg font-black uppercase text-white tracking-tight">
+                  {activePack.name} ({openedCards.length} Cards)
+                </h4>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => handleOpenPack(activePack)}
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-white/15 bg-slate-900 text-white text-[10px] sm:text-xs font-black uppercase tracking-wider hover:border-lime/40 transition-colors cursor-pointer"
+                >
+                  <RotateCcw className="w-3 h-3 text-lime" />
+                  <span>Again</span>
                 </button>
-                <button onClick={() => setOpenedCards([])} className="rounded-lg border border-white/10 bg-white px-3 py-2 text-[10px] font-black uppercase tracking-wider text-slate-950 transition hover:bg-slate-200">
-                  Clear
+                <button
+                  onClick={() => {
+                    setOpenedCards([]);
+                    setActivePack(null);
+                  }}
+                  className="p-1.5 rounded-lg bg-slate-900 text-steel hover:text-white border border-white/10 transition-colors cursor-pointer"
+                  aria-label="Clear Results"
+                >
+                  <X className="w-3.5 h-3.5" />
                 </button>
-              </span>
+              </div>
             </header>
-            <span className="grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-4 lg:grid-cols-5">
+
+            {/* Opened Cards Grid (5 Columns on Desktop) */}
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 justify-items-center pt-1">
               {openedCards.map((player, index) => (
-                <button key={`${player.id}-${index}`} onClick={() => setInspectedCard(player)} className="animate-scale-in transition active:scale-95" style={{ animationDelay: `${index * 45}ms` }}>
+                <button
+                  key={`opened-${player.id}-${index}`}
+                  onClick={() => {
+                    sfx.cardDeal();
+                    setInspectedCard(player);
+                  }}
+                  className="animate-scale-in transition-transform hover:scale-105 active:scale-95 cursor-pointer"
+                  style={{ animationDelay: `${index * 45}ms` }}
+                >
                   <PlayerCard player={player} size="sm" showTierLabelBelow />
                 </button>
               ))}
-            </span>
+            </div>
           </article>
         )}
       </section>
 
-      <section className="space-y-4">
-        <header className="flex flex-wrap items-end justify-between gap-3">
-          <span>
-            <span className="block text-[10px] font-black uppercase tracking-widest text-steel">Showcase</span>
-            <span className="block text-xl font-black uppercase tracking-normal text-white">Featured Rotation</span>
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="rounded-lg border border-white/10 bg-slate-950/75 px-3 py-2 text-[10px] font-black uppercase tracking-wider text-steel">
-              Changes in <span className="text-white" suppressHydrationWarning>{formatRemaining(remainingMs)}</span>
+      {/* ========================================================================= */}
+      {/* 2. BEAUTIFUL 8-PLAYER SINGLE LINE SHOWCASE                                */}
+      {/* ========================================================================= */}
+      <section className="space-y-4 max-w-6xl mx-auto pt-2">
+        <header className="flex flex-wrap items-center justify-between gap-3 px-1">
+          <div>
+            <h3 className="text-base sm:text-lg font-black uppercase text-white tracking-tight">
+              Featured Cards
+            </h3>
+            <span className="text-[10px] font-mono text-steel uppercase">
+              Gold+ Tier Curated (8 Players)
             </span>
-            <button onClick={shuffleShowcase} className="rounded-lg border border-white/15 bg-slate-900 px-3 py-2 text-[10px] font-black uppercase tracking-wider text-white transition hover:border-white/30">
-              Shuffle
+          </div>
+
+          <div className="flex items-center gap-2">
+            {/* Minimal Search Bar */}
+            <div className="relative w-44 sm:w-60">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-steel" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search..."
+                className="w-full pl-8 pr-3 py-1.5 rounded-xl border border-white/10 bg-slate-900 text-white text-xs placeholder:text-steel focus:outline-none focus:border-lime/50 transition-colors"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-steel hover:text-white text-xs"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              )}
+            </div>
+
+            {/* Shuffle Button */}
+            <button
+              onClick={handleShuffle}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-white/15 bg-slate-900 text-white text-xs font-black uppercase tracking-wider hover:border-lime/40 transition-all active:scale-95 cursor-pointer shadow-sm"
+            >
+              <RefreshCw className="w-3 h-3 text-lime" />
+              <span>Shuffle</span>
             </button>
-          </span>
+          </div>
         </header>
 
-        {showcase.length > 0 ? (
-          <article className="grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-4 lg:grid-cols-8">
-            {showcase.map((player, index) => (
-              <button key={player.id} onClick={() => setInspectedCard(player)} className="animate-scale-in transition active:scale-95" style={{ animationDelay: `${index * 35}ms` }}>
+        {/* 8-Card Showcase Grid (No Horizontal Scroll - 2 cols on mobile, 4 cols on tablet, 8 cols on desktop) */}
+        {showcaseCards.length > 0 ? (
+          <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-3 justify-items-center pt-1">
+            {showcaseCards.map((player, index) => (
+              <button
+                key={`showcase-${player.id}-${index}`}
+                onClick={() => {
+                  sfx.cardDeal();
+                  setInspectedCard(player);
+                }}
+                className="animate-scale-in transition-transform hover:scale-105 active:scale-95 cursor-pointer"
+                style={{ animationDelay: `${index * 30}ms` }}
+              >
                 <PlayerCard player={player} size="sm" showTierLabelBelow />
               </button>
             ))}
-          </article>
+          </div>
         ) : (
-          <article className="rounded-xl border border-white/10 bg-slate-950/75 p-10 text-center">
+          <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-8 text-center space-y-1">
             <p className="text-xs font-black uppercase tracking-widest text-steel">
-              {rawData === undefined ? 'Loading players' : 'No players available'}
+              {rawData === undefined ? 'Loading Cards...' : 'No cards found.'}
             </p>
-          </article>
+          </div>
         )}
       </section>
 
-      {inspectedCard && <CardDetailModal card={inspectedCard} onClose={() => setInspectedCard(null)} />}
+      {/* ========================================================================= */}
+      {/* 3. CARD DETAIL INSPECTION MODAL                                           */}
+      {/* ========================================================================= */}
+      {inspectedCard && (
+        <CardDetailModal
+          card={inspectedCard}
+          cardsList={openedCards.length > 0 ? openedCards : showcaseCards}
+          onSelectCard={(c) => setInspectedCard(c)}
+          onClose={() => setInspectedCard(null)}
+        />
+      )}
     </main>
   );
 }
