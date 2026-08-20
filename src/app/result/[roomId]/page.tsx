@@ -71,23 +71,35 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   const triggeredRef = useRef(false);
   const [audioReady, setAudioReady] = useState(false);
 
+  const viewerIsHost = state?.isHost ?? true;
+
   useEffect(() => {
     const mat = match as HydratedMatch | null | undefined;
     const needsTrigger =
       mat && !mat.simulation && !triggeredRef.current && guestId && roomId;
-    if (needsTrigger && guestId) {
+    if (!needsTrigger || !guestId) return;
+
+    if (viewerIsHost) {
       triggeredRef.current = true;
       void runSimulation({ roomId: roomIdTyped, userId: guestId }).catch(console.error);
+    } else {
+      // Guest fallback: wait 2s to allow Host to trigger first and avoid write conflicts
+      const timer = setTimeout(() => {
+        const currentMat = match as HydratedMatch | null | undefined;
+        if (!triggeredRef.current && currentMat && !currentMat.simulation) {
+          triggeredRef.current = true;
+          void runSimulation({ roomId: roomIdTyped, userId: guestId }).catch(console.error);
+        }
+      }, 2000);
+      return () => clearTimeout(timer);
     }
-  }, [match, guestId, roomId, roomIdTyped, runSimulation]);
+  }, [match, guestId, roomId, roomIdTyped, runSimulation, viewerIsHost]);
 
   useEffect(() => {
     if (audioReady) unlockAudio();
   }, [audioReady]);
 
   const simulation = (match as HydratedMatch | null | undefined)?.simulation ?? null;
-
-  const viewerIsHost = state?.isHost ?? true;
 
   const hostSquad = useMemo<PitchSquadPlayer[]>(() => {
     const raw = viewerIsHost ? state?.mySquad : state?.opponentSquad;
