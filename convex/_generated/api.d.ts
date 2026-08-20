@@ -28,11 +28,7 @@ import type * as players_mutations from "../players/mutations.js";
 import type * as players_queries from "../players/queries.js";
 import type * as rooms_mutations from "../rooms/mutations.js";
 import type * as rooms_queries from "../rooms/queries.js";
-import type * as seed_seedCareerStats from "../seed/seedCareerStats.js";
 import type * as seed_seedData from "../seed/seedData.js";
-import type * as seed_seedStatsAndTransfers from "../seed/seedStatsAndTransfers.js";
-import type * as transfers_mutations from "../transfers/mutations.js";
-import type * as transfers_queries from "../transfers/queries.js";
 
 import type {
   ApiFromModules,
@@ -61,11 +57,7 @@ declare const fullApi: ApiFromModules<{
   "players/queries": typeof players_queries;
   "rooms/mutations": typeof rooms_mutations;
   "rooms/queries": typeof rooms_queries;
-  "seed/seedCareerStats": typeof seed_seedCareerStats;
   "seed/seedData": typeof seed_seedData;
-  "seed/seedStatsAndTransfers": typeof seed_seedStatsAndTransfers;
-  "transfers/mutations": typeof transfers_mutations;
-  "transfers/queries": typeof transfers_queries;
 }>;
 
 /**
