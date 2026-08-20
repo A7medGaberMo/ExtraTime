@@ -6,7 +6,10 @@ export const nicknameSchema = z
   .string()
   .min(NICKNAME_MIN_LENGTH, `Nickname must be at least ${NICKNAME_MIN_LENGTH} characters`)
   .max(NICKNAME_MAX_LENGTH, `Nickname must be at most ${NICKNAME_MAX_LENGTH} characters`)
-  .regex(/^[a-zA-Z0-9_\-\s]+$/, 'Nickname can only contain letters, numbers, spaces, hyphens, and underscores');
+  .regex(
+    /^[a-zA-Z0-9_\-\s]+$/,
+    'Nickname can only contain letters, numbers, spaces, hyphens, and underscores',
+  );
 
 /** Validate a room code */
 export const roomCodeSchema = z

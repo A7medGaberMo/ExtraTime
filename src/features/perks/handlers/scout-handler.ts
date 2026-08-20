@@ -1,4 +1,8 @@
-import type { IPerkHandler, PerkExecutionContext, PerkResult } from '@/core/perk/perk-handler.interface';
+import type {
+  IPerkHandler,
+  PerkExecutionContext,
+  PerkResult,
+} from '@/core/perk/perk-handler.interface';
 import { PERK_REGISTRY, type PerkId } from '@/types/perk';
 
 export class ScoutPerkHandler implements IPerkHandler {

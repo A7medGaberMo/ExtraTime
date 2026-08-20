@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import { use, useEffect, useMemo, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
-import { useQuery, useMutation } from "convex/react";
-import { api } from "../../../../convex/_generated/api";
-import { Id } from "../../../../convex/_generated/dataModel";
-import { PageHeader } from "@/components/shared/page-header";
-import { ScoreHub } from "@/components/match/score-hub";
-import type { PitchSquadPlayer } from "@/components/match/tactical-pitch-view";
-import type { MatchSimulationResult } from "@/core/simulation/simulation.interface";
-import { useGuestSession } from "@/hooks/use-guest-session";
-import { unlockAudio } from "@/lib/sfx";
-import { Loader2, RefreshCw, Trophy, Home, Volume2 } from "lucide-react";
+import { use, useEffect, useMemo, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useQuery, useMutation } from 'convex/react';
+import { api } from '../../../../convex/_generated/api';
+import { Id } from '../../../../convex/_generated/dataModel';
+import { PageHeader } from '@/components/shared/page-header';
+import { ScoreHub } from '@/components/match/score-hub';
+import type { PitchSquadPlayer } from '@/components/match/tactical-pitch-view';
+import type { MatchSimulationResult } from '@/core/simulation/simulation.interface';
+import { useGuestSession } from '@/hooks/use-guest-session';
+import { unlockAudio } from '@/lib/sfx';
+import { Loader2, RefreshCw, Trophy, Home, Volume2 } from 'lucide-react';
 
 interface HydratedMatch {
   simulation?: MatchSimulationResult | null;
@@ -59,13 +59,13 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   const { roomId } = use(params);
   const router = useRouter();
   const { guestId } = useGuestSession(true);
-  const roomIdTyped = roomId as Id<"rooms">;
+  const roomIdTyped = roomId as Id<'rooms'>;
 
   const state = useQuery(
     api.auctions.queries.getState,
-    guestId && roomId ? { roomId: roomIdTyped, userId: guestId } : "skip"
+    guestId && roomId ? { roomId: roomIdTyped, userId: guestId } : 'skip',
   );
-  const match = useQuery(api.matches.queries.getByRoom, roomId ? { roomId: roomIdTyped } : "skip");
+  const match = useQuery(api.matches.queries.getByRoom, roomId ? { roomId: roomIdTyped } : 'skip');
 
   const runSimulation = useMutation(api.matches.mutations.runSimulation);
   const triggeredRef = useRef(false);
@@ -75,8 +75,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
   useEffect(() => {
     const mat = match as HydratedMatch | null | undefined;
-    const needsTrigger =
-      mat && !mat.simulation && !triggeredRef.current && guestId && roomId;
+    const needsTrigger = mat && !mat.simulation && !triggeredRef.current && guestId && roomId;
     if (!needsTrigger || !guestId) return;
 
     if (viewerIsHost) {
@@ -106,8 +105,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     if (!raw) return [];
     return (raw as unknown as SquadSlot[]).map((slot) => ({
       playerId: slot.player?._id ?? slot.playerId,
-      name: slot.player?.name ?? "",
-      tier: slot.player?.tier ?? "GOLD",
+      name: slot.player?.name ?? '',
+      tier: slot.player?.tier ?? 'GOLD',
       position: slot.position,
       imageUrl: slot.player?.imageUrl,
       club: slot.player?.club,
@@ -123,8 +122,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     if (!raw) return [];
     return (raw as unknown as SquadSlot[]).map((slot) => ({
       playerId: slot.player?._id ?? slot.playerId,
-      name: slot.player?.name ?? "",
-      tier: slot.player?.tier ?? "GOLD",
+      name: slot.player?.name ?? '',
+      tier: slot.player?.tier ?? 'GOLD',
       position: slot.position,
       imageUrl: slot.player?.imageUrl,
       club: slot.player?.club,
@@ -137,8 +136,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
   const viewerName = viewerIsHost ? state?.hostName : state?.guestName;
   const opponentName = viewerIsHost ? state?.guestName : state?.hostName;
-  const myName = viewerName ? `You (${viewerName})` : "You";
-  const rivalName = opponentName ?? "Rival";
+  const myName = viewerName ? `You (${viewerName})` : 'You';
+  const rivalName = opponentName ?? 'Rival';
 
   const viewerWon =
     simulation == null
@@ -147,15 +146,17 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
         ? null
         : simulation.winnerId === guestId;
 
-  const formation = state?.auction?.formation ?? "4-3-3";
+  const formation = state?.auction?.formation ?? '4-3-3';
   const matchSize = ((state?.auction?.matchSize ?? 11) as 5 | 11) || 11;
 
   if (!guestId || state === undefined || match === undefined) {
     return (
       <div className="flex min-h-[60vh] items-center justify-center">
-        <div className="flex flex-col items-center gap-3 animate-fade-in">
-          <Loader2 className="h-8 w-8 animate-spin text-lime" />
-          <p className="text-xs font-bold uppercase tracking-widest text-steel">Loading Matchday...</p>
+        <div className="animate-fade-in flex flex-col items-center gap-3">
+          <Loader2 className="text-lime h-8 w-8 animate-spin" />
+          <p className="text-steel text-xs font-bold tracking-widest uppercase">
+            Loading Matchday...
+          </p>
         </div>
       </div>
     );
@@ -163,14 +164,16 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
   if (!match || !simulation) {
     return (
-      <div className="mx-auto flex min-h-[60vh] max-w-md flex-col items-center justify-center gap-4 px-3 text-center animate-fade-in">
+      <div className="animate-fade-in mx-auto flex min-h-[60vh] max-w-md flex-col items-center justify-center gap-4 px-3 text-center">
         <div className="relative">
-          <div className="absolute inset-0 rounded-full bg-lime/25 blur-2xl" />
-          <Loader2 className="relative h-10 w-10 animate-spin text-lime" />
+          <div className="bg-lime/25 absolute inset-0 rounded-full blur-2xl" />
+          <Loader2 className="text-lime relative h-10 w-10 animate-spin" />
         </div>
         <div className="space-y-1">
-          <h2 className="text-base font-black uppercase tracking-tight text-white">Final Whistle</h2>
-          <p className="text-xs font-medium text-steel">
+          <h2 className="text-base font-black tracking-tight text-white uppercase">
+            Final Whistle
+          </h2>
+          <p className="text-steel text-xs font-medium">
             Both squads are locked in. The tactical engine is resolving the matchday...
           </p>
         </div>
@@ -179,7 +182,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   }
 
   return (
-    <div className="mx-auto max-w-2xl space-y-4 animate-fade-in px-3">
+    <div className="animate-fade-in mx-auto max-w-2xl space-y-4 px-3">
       <PageHeader
         title="Hidden Bid Result"
         subtitle="Match result · sealed bids resolved."
@@ -192,10 +195,10 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           setAudioReady(true);
           unlockAudio();
         }}
-        className={`fixed bottom-5 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-xl border shadow-xl backdrop-blur-xl transition-all ${
+        className={`fixed right-5 bottom-5 z-40 flex h-11 w-11 items-center justify-center rounded-xl border shadow-xl backdrop-blur-xl transition-all ${
           audioReady
-            ? "border-lime/30 bg-lime/10 text-lime"
-            : "border-white/10 bg-card/90 text-steel hover:text-lime"
+            ? 'border-lime/30 bg-lime/10 text-lime'
+            : 'bg-card/90 text-steel hover:text-lime border-white/10'
         }`}
         title="Enable matchday audio"
       >
@@ -216,20 +219,20 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
       <div className="grid grid-cols-3 gap-2">
         <button
-          onClick={() => router.push("/create-room")}
-          className="flex items-center justify-center gap-1.5 rounded-xl bg-lime py-3 text-[10px] font-black uppercase tracking-wider text-slate-950 shadow-lg transition-all hover:bg-vivid active:scale-95"
+          onClick={() => router.push('/create-room')}
+          className="bg-lime hover:bg-vivid flex items-center justify-center gap-1.5 rounded-xl py-3 text-[10px] font-black tracking-wider text-slate-950 uppercase shadow-lg transition-all active:scale-95"
         >
           <RefreshCw className="h-3.5 w-3.5" /> Rematch
         </button>
         <button
-          onClick={() => router.push("/packs")}
-          className="flex items-center justify-center gap-1.5 rounded-xl border border-amber-500/30 bg-slate-900 py-3 text-[10px] font-black uppercase tracking-wider text-amber-300 transition-all hover:border-amber-400 hover:bg-amber-500/10 active:scale-95"
+          onClick={() => router.push('/packs')}
+          className="flex items-center justify-center gap-1.5 rounded-xl border border-amber-500/30 bg-slate-900 py-3 text-[10px] font-black tracking-wider text-amber-300 uppercase transition-all hover:border-amber-400 hover:bg-amber-500/10 active:scale-95"
         >
           <Trophy className="h-3.5 w-3.5" /> Packs
         </button>
         <button
-          onClick={() => router.push("/")}
-          className="flex items-center justify-center gap-1.5 rounded-xl border border-white/10 bg-card py-3 text-[10px] font-black uppercase tracking-wider text-white transition-all hover:bg-white/5 active:scale-95"
+          onClick={() => router.push('/')}
+          className="bg-card flex items-center justify-center gap-1.5 rounded-xl border border-white/10 py-3 text-[10px] font-black tracking-wider text-white uppercase transition-all hover:bg-white/5 active:scale-95"
         >
           <Home className="h-3.5 w-3.5" /> Home
         </button>

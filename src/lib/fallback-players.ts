@@ -10,7 +10,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'Santos FC',
     nation: 'Brazil',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg',
     kitNumber: 10,
   },
   {
@@ -21,7 +22,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'SSC Napoli',
     nation: 'Argentina',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Argentina_celebrando_copa_%28cropped%29.jpg/330px-Argentina_celebrando_copa_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Argentina_celebrando_copa_%28cropped%29.jpg/330px-Argentina_celebrando_copa_%28cropped%29.jpg',
     kitNumber: 10,
   },
   {
@@ -32,7 +34,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'Real Madrid',
     nation: 'France',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/330px-Zinedine_Zidane_by_Tasnim_03.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/330px-Zinedine_Zidane_by_Tasnim_03.jpg',
     kitNumber: 5,
   },
   {
@@ -43,7 +46,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'AC Milan',
     nation: 'Italy',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Paolo_Maldini_2008.jpg/330px-Paolo_Maldini_2008.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Paolo_Maldini_2008.jpg/330px-Paolo_Maldini_2008.jpg',
     kitNumber: 3,
   },
   {
@@ -54,7 +58,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'FC Barcelona',
     nation: 'Netherlands',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Johan_Cruijff_1974c.jpg/330px-Johan_Cruijff_1974c.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Johan_Cruijff_1974c.jpg/330px-Johan_Cruijff_1974c.jpg',
     kitNumber: 14,
   },
   {
@@ -65,7 +70,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'Real Madrid',
     nation: 'Brazil',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ronaldo_smiling.jpg/330px-Ronaldo_smiling.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ronaldo_smiling.jpg/330px-Ronaldo_smiling.jpg',
     kitNumber: 9,
   },
   {
@@ -76,7 +82,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'FC Barcelona',
     nation: 'Brazil',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ronaldinho_061115.jpg/330px-Ronaldinho_061115.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ronaldinho_061115.jpg/330px-Ronaldinho_061115.jpg',
     kitNumber: 10,
   },
   {
@@ -87,7 +94,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'Dynamo Moscow',
     nation: 'Russia',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Lev_Yashin_1966.jpg/330px-Lev_Yashin_1966.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Lev_Yashin_1966.jpg/330px-Lev_Yashin_1966.jpg',
     kitNumber: 1,
   },
 
@@ -100,7 +108,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'Manchester City',
     nation: 'Ivory Coast',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Yaya_Toure_2018.jpg/330px-Yaya_Toure_2018.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Yaya_Toure_2018.jpg/330px-Yaya_Toure_2018.jpg',
     kitNumber: 42,
   },
   {
@@ -111,7 +120,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'Atlético de Madrid',
     nation: 'Uruguay',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Diego_Forlan_2010.jpg/330px-Diego_Forlan_2010.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Diego_Forlan_2010.jpg/330px-Diego_Forlan_2010.jpg',
     kitNumber: 7,
   },
   {
@@ -122,7 +132,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'Juventus',
     nation: 'Italy',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Claudio_Marchisio_2015.jpg/330px-Claudio_Marchisio_2015.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Claudio_Marchisio_2015.jpg/330px-Claudio_Marchisio_2015.jpg',
     kitNumber: 8,
   },
   {
@@ -133,7 +144,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     club: 'Newcastle United',
     nation: 'France',
     isLegend: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/David_Ginola_2015.jpg/330px-David_Ginola_2015.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/David_Ginola_2015.jpg/330px-David_Ginola_2015.jpg',
     kitNumber: 14,
   },
   {
@@ -155,7 +167,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'ST/LW',
     club: 'Real Madrid',
     nation: 'France',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg/500px-Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg/500px-Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg',
     kitNumber: 9,
   },
   {
@@ -165,7 +178,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'ST',
     club: 'Manchester City',
     nation: 'Norway',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg/500px-Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg/500px-Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg',
     kitNumber: 9,
   },
   {
@@ -175,7 +189,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'LW/LM',
     club: 'Real Madrid',
     nation: 'Brazil',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Vin%C3%ADcius_J%C3%BAnior_Brazil_V_Morocco_13_June_2026-207_%28cropped%29.jpg/500px-Vin%C3%ADcius_J%C3%BAnior_Brazil_V_Morocco_13_June_2026-207_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Vin%C3%ADcius_J%C3%BAnior_Brazil_V_Morocco_13_June_2026-207_%28cropped%29.jpg/500px-Vin%C3%ADcius_J%C3%BAnior_Brazil_V_Morocco_13_June_2026-207_%28cropped%29.jpg',
     kitNumber: 7,
   },
   {
@@ -185,7 +200,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'CAM/CM',
     club: 'Manchester City',
     nation: 'Belgium',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kevin_De_Bruyne_201807091.jpg/330px-Kevin_De_Bruyne_201807091.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kevin_De_Bruyne_201807091.jpg/330px-Kevin_De_Bruyne_201807091.jpg',
     kitNumber: 17,
   },
   {
@@ -195,7 +211,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'ST',
     club: 'Bayern Munich',
     nation: 'England',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Harry_Kane_2018.jpg/330px-Harry_Kane_2018.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Harry_Kane_2018.jpg/330px-Harry_Kane_2018.jpg',
     kitNumber: 9,
   },
   {
@@ -205,7 +222,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'RW',
     club: 'Liverpool',
     nation: 'Egypt',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_%28cropped%29.jpg/500px-Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_%28cropped%29.jpg/500px-Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_%28cropped%29.jpg',
     kitNumber: 11,
   },
 
@@ -217,7 +235,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'CAM/CM',
     club: 'Real Madrid',
     nation: 'England',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Jude_Bellingham_2024_%28cropped%29.jpg/330px-Jude_Bellingham_2024_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Jude_Bellingham_2024_%28cropped%29.jpg/330px-Jude_Bellingham_2024_%28cropped%29.jpg',
     kitNumber: 5,
   },
   {
@@ -227,7 +246,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'RW/RM',
     club: 'Arsenal',
     nation: 'England',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bukayo_Saka_2024_%28cropped%29.jpg/330px-Bukayo_Saka_2024_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bukayo_Saka_2024_%28cropped%29.jpg/330px-Bukayo_Saka_2024_%28cropped%29.jpg',
     kitNumber: 7,
   },
   {
@@ -237,7 +257,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'CDM/CM',
     club: 'Manchester City',
     nation: 'Spain',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Rodri_2024_%28cropped%29.jpg/330px-Rodri_2024_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Rodri_2024_%28cropped%29.jpg/330px-Rodri_2024_%28cropped%29.jpg',
     kitNumber: 16,
   },
   {
@@ -247,7 +268,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'CB',
     club: 'Liverpool',
     nation: 'Netherlands',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Virgil_van_Dijk_2024.jpg/330px-Virgil_van_Dijk_2024.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Virgil_van_Dijk_2024.jpg/330px-Virgil_van_Dijk_2024.jpg',
     kitNumber: 4,
   },
   {
@@ -257,7 +279,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'GK',
     club: 'Real Madrid',
     nation: 'Belgium',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Thibaut_Courtois_2018.jpg/330px-Thibaut_Courtois_2018.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Thibaut_Courtois_2018.jpg/330px-Thibaut_Courtois_2018.jpg',
     kitNumber: 1,
   },
 
@@ -269,7 +292,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'CDM/CM',
     club: 'Arsenal',
     nation: 'England',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Declan_Rice_2024_%28cropped%29.jpg/330px-Declan_Rice_2024_%28cropped%29.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Declan_Rice_2024_%28cropped%29.jpg/330px-Declan_Rice_2024_%28cropped%29.jpg',
     kitNumber: 41,
   },
   {
@@ -279,7 +303,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'CB',
     club: 'Arsenal',
     nation: 'France',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/William_Saliba_2024.jpg/330px-William_Saliba_2024.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/William_Saliba_2024.jpg/330px-William_Saliba_2024.jpg',
     kitNumber: 2,
   },
   {
@@ -298,7 +323,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'CM/RM',
     club: 'Real Madrid',
     nation: 'Uruguay',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Federico_Valverde_2024.jpg/330px-Federico_Valverde_2024.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Federico_Valverde_2024.jpg/330px-Federico_Valverde_2024.jpg',
     kitNumber: 8,
   },
   {
@@ -308,7 +334,8 @@ export const FALLBACK_PLAYERS: PlayerCardData[] = [
     position: 'GK',
     club: 'Liverpool',
     nation: 'Brazil',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Alisson_Becker_2018.jpg/330px-Alisson_Becker_2018.jpg',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Alisson_Becker_2018.jpg/330px-Alisson_Becker_2018.jpg',
     kitNumber: 1,
   },
 

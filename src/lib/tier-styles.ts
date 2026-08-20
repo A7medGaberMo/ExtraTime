@@ -16,7 +16,16 @@ export interface TierVisualStyle {
   glow: string;
 }
 
-export const TIER_ORDER: Tier[] = ['ICON', 'HERO', 'ULTIMATE', 'MASTER', 'ELITE', 'GOLD', 'SILVER', 'BRONZE'];
+export const TIER_ORDER: Tier[] = [
+  'ICON',
+  'HERO',
+  'ULTIMATE',
+  'MASTER',
+  'ELITE',
+  'GOLD',
+  'SILVER',
+  'BRONZE',
+];
 
 export const TIER_STYLES: Record<Tier, TierVisualStyle> = {
   ICON: {
@@ -29,7 +38,8 @@ export const TIER_STYLES: Record<Tier, TierVisualStyle> = {
     accent: '#C9A646',
     ink: '#18130A',
     surface: '#EEE7D2',
-    frame: 'linear-gradient(145deg, #FFFDF4 0%, #E9D8A4 28%, #B8912F 52%, #FFF8DE 72%, #7A5A1B 100%)',
+    frame:
+      'linear-gradient(145deg, #FFFDF4 0%, #E9D8A4 28%, #B8912F 52%, #FFF8DE 72%, #7A5A1B 100%)',
     backdrop: 'linear-gradient(160deg, #F8F4EA 0%, #E5DCC4 46%, #9C7C31 100%)',
     plate: 'linear-gradient(180deg, rgba(255,253,244,0.96), rgba(225,212,180,0.9))',
     glow: 'rgba(201,166,70,0.34)',
@@ -59,7 +69,8 @@ export const TIER_STYLES: Record<Tier, TierVisualStyle> = {
     accent: '#AEB9C6',
     ink: '#F7FBFF',
     surface: '#0A376D',
-    frame: 'linear-gradient(145deg, #F8FBFF 0%, #8FA4B9 24%, #1767B8 50%, #DCEEFF 74%, #08234A 100%)',
+    frame:
+      'linear-gradient(145deg, #F8FBFF 0%, #8FA4B9 24%, #1767B8 50%, #DCEEFF 74%, #08234A 100%)',
     backdrop: 'linear-gradient(160deg, #0B4D91 0%, #061E3E 55%, #020A16 100%)',
     plate: 'linear-gradient(180deg, rgba(9,45,89,0.92), rgba(2,10,22,0.94))',
     glow: 'rgba(133,198,255,0.28)',

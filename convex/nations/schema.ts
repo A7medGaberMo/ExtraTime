@@ -1,5 +1,5 @@
-import { defineTable } from "convex/server";
-import { v } from "convex/values";
+import { defineTable } from 'convex/server';
+import { v } from 'convex/values';
 
 export const nationsTable = defineTable({
   name: v.string(),

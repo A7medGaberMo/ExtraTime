@@ -1,6 +1,6 @@
-import { GenericMutationCtx } from "convex/server";
-import { Id, DataModel } from "../_generated/dataModel";
-import { getFormationPositions, MatchSize } from "./formations";
+import { GenericMutationCtx } from 'convex/server';
+import { Id, DataModel } from '../_generated/dataModel';
+import { getFormationPositions, MatchSize } from './formations';
 import {
   type Position,
   type Tier,
@@ -8,25 +8,25 @@ import {
   tierRank,
   playerPositions,
   lineFor,
-} from "../lib/constants";
+} from '../lib/constants';
 
 // ── Types ──────────────────────────────────────────────────
-export type PlayerPoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS" | string;
+export type PlayerPoolMode = 'GLOBAL' | 'ACTIVE' | 'EPL' | 'TOP_TEAMS' | 'ICONS' | string;
 
 export interface DraftRound {
   roundNumber: number;
   position: Position;
-  mainPlayerId: Id<"players">;
-  subPlayerId: Id<"players">;
+  mainPlayerId: Id<'players'>;
+  subPlayerId: Id<'players'>;
   isMysteryRound?: boolean;
 }
 
 interface PoolPlayer {
-  _id: Id<"players">;
+  _id: Id<'players'>;
   position: string;
   tier: Tier;
-  clubId: Id<"clubs">;
-  nationId: Id<"nations">;
+  clubId: Id<'clubs'>;
+  nationId: Id<'nations'>;
   isLegend: boolean;
 }
 
@@ -43,9 +43,9 @@ function weightedPick<T>(items: T[], weights: number[]): T {
 }
 
 // ── Position Matching ──────────────────────────────────────
-const LEFT_POSITIONS = new Set(["LB", "LWB", "LM", "LW"]);
-const RIGHT_POSITIONS = new Set(["RB", "RWB", "RM", "RW"]);
-const CENTER_OUTFIELD_POSITIONS = new Set(["CB", "CDM", "CM", "CAM", "ST", "CF"]);
+const LEFT_POSITIONS = new Set(['LB', 'LWB', 'LM', 'LW']);
+const RIGHT_POSITIONS = new Set(['RB', 'RWB', 'RM', 'RW']);
+const CENTER_OUTFIELD_POSITIONS = new Set(['CB', 'CDM', 'CM', 'CAM', 'ST', 'CF']);
 
 function matchesExact(playerPosition: string, slot: Position): boolean {
   return playerPositions(playerPosition).includes(slot);
@@ -81,8 +81,8 @@ function positionFitScore(playerPosition: string, slot: Position): number {
   const pPositions = playerPositions(playerPosition);
 
   // 1. Strict GK Isolation
-  const isGkSlot = slot === "GK";
-  const isPlayerGk = pPositions.includes("GK");
+  const isGkSlot = slot === 'GK';
+  const isPlayerGk = pPositions.includes('GK');
   if (isGkSlot && !isPlayerGk) return 0;
   if (!isGkSlot && isPlayerGk) return 0;
   if (isGkSlot && isPlayerGk) return 100;
@@ -92,19 +92,19 @@ function positionFitScore(playerPosition: string, slot: Position): number {
 
   // 3. Direct natural variants for all position categories
   const variants: Partial<Record<Position, Position[]>> = {
-    LB: ["LWB"],
-    LWB: ["LB"],
-    RB: ["RWB"],
-    RWB: ["RB"],
-    ST: ["CF"],
-    CF: ["ST"],
-    LW: ["LM"],
-    LM: ["LW"],
-    RW: ["RM"],
-    RM: ["RW"],
-    CM: ["CDM", "CAM"],
-    CDM: ["CM", "CAM"],
-    CAM: ["CM", "CDM"],
+    LB: ['LWB'],
+    LWB: ['LB'],
+    RB: ['RWB'],
+    RWB: ['RB'],
+    ST: ['CF'],
+    CF: ['ST'],
+    LW: ['LM'],
+    LM: ['LW'],
+    RW: ['RM'],
+    RM: ['RW'],
+    CM: ['CDM', 'CAM'],
+    CDM: ['CM', 'CAM'],
+    CAM: ['CM', 'CDM'],
   };
 
   const allowed = variants[slot];
@@ -123,11 +123,7 @@ interface ScoringContext {
   tierBudget: Map<Tier, number>; // how many more of this tier we want
 }
 
-function scoreCandidate(
-  player: PoolPlayer,
-  slot: Position,
-  ctx: ScoringContext
-): number {
+function scoreCandidate(player: PoolPlayer, slot: Position, ctx: ScoringContext): number {
   let score = 0;
 
   // 1. Position fit (0–100, heavily weighted to preserve categories)
@@ -155,11 +151,31 @@ function scoreCandidate(
 }
 
 const TOP_CLUB_NAMES = new Set([
-  "Real Madrid", "Barcelona", "Barca", "Atlético Madrid", "Atletico Madrid",
-  "Manchester City", "Man City", "Arsenal", "Liverpool", "Manchester United", "Man Utd", "Chelsea", "Tottenham",
-  "Bayern Munich", "Bayern", "Borussia Dortmund", "Dortmund",
-  "Paris Saint-Germain", "PSG",
-  "AC Milan", "Inter Milan", "Inter", "Juventus", "Juve", "Napoli",
+  'Real Madrid',
+  'Barcelona',
+  'Barca',
+  'Atlético Madrid',
+  'Atletico Madrid',
+  'Manchester City',
+  'Man City',
+  'Arsenal',
+  'Liverpool',
+  'Manchester United',
+  'Man Utd',
+  'Chelsea',
+  'Tottenham',
+  'Bayern Munich',
+  'Bayern',
+  'Borussia Dortmund',
+  'Dortmund',
+  'Paris Saint-Germain',
+  'PSG',
+  'AC Milan',
+  'Inter Milan',
+  'Inter',
+  'Juventus',
+  'Juve',
+  'Napoli',
 ]);
 
 // ── Tier Distribution Planning ─────────────────────────────
@@ -172,14 +188,14 @@ function planTierBudget(pool: PoolPlayer[], totalSlots: number): Map<Tier, numbe
 
   // Target ratios: 85% Elite or higher (ICON, HERO, ULTIMATE, MASTER, ELITE), 15% Gold & lower
   const targetRatios: Record<Tier, number> = {
-    ICON: 0.15,        // Upper tier ~15%
-    HERO: 0.15,        // Upper tier ~15%
-    ULTIMATE: 0.22,    // Upper tier ~22%
-    MASTER: 0.18,      // Upper tier ~18%
-    ELITE: 0.15,       // Upper tier ~15% (Total Upper = 85%)
-    GOLD: 0.10,        // Lower tier ~10%
-    SILVER: 0.04,      // Lower tier ~4%
-    BRONZE: 0.01,      // Lower tier ~1%  (Total Lower = 15%)
+    ICON: 0.15, // Upper tier ~15%
+    HERO: 0.15, // Upper tier ~15%
+    ULTIMATE: 0.22, // Upper tier ~22%
+    MASTER: 0.18, // Upper tier ~18%
+    ELITE: 0.15, // Upper tier ~15% (Total Upper = 85%)
+    GOLD: 0.1, // Lower tier ~10%
+    SILVER: 0.04, // Lower tier ~4%
+    BRONZE: 0.01, // Lower tier ~1%  (Total Lower = 15%)
   };
 
   const budget = new Map<Tier, number>();
@@ -205,7 +221,7 @@ function selectSmartPair(
   pool: PoolPlayer[],
   used: Set<string>,
   slot: Position,
-  scoringCtx: ScoringContext
+  scoringCtx: ScoringContext,
 ): [PoolPlayer, PoolPlayer] {
   const unused = pool.filter((p) => !used.has(String(p._id)));
   if (unused.length < 2) {
@@ -221,11 +237,11 @@ function selectSmartPair(
     .filter((c) => c.score > 0);
 
   if (candidates.length < 2) {
-    const isGk = slot === "GK";
+    const isGk = slot === 'GK';
     // Level 2 Fallback: Line-compatible candidates (excluding cross GK/Outfield)
     const lineCandidates = unused
       .filter((p) => {
-        const pIsGk = playerPositions(p.position).includes("GK");
+        const pIsGk = playerPositions(p.position).includes('GK');
         if (isGk) return pIsGk;
         if (pIsGk) return false;
         return matchesLine(p.position, slot);
@@ -241,7 +257,7 @@ function selectSmartPair(
       // Level 3 Fallback: Any outfield player for outfield slots, any GK for GK slots
       const roleCandidates = unused
         .filter((p) => {
-          const pIsGk = playerPositions(p.position).includes("GK");
+          const pIsGk = playerPositions(p.position).includes('GK');
           return isGk ? pIsGk : !pIsGk;
         })
         .map((p) => ({
@@ -249,7 +265,8 @@ function selectSmartPair(
           score: 30,
         }));
 
-      candidates = roleCandidates.length >= 2 ? roleCandidates : unused.map((p) => ({ player: p, score: 10 }));
+      candidates =
+        roleCandidates.length >= 2 ? roleCandidates : unused.map((p) => ({ player: p, score: 10 }));
     }
   }
 
@@ -276,7 +293,7 @@ function selectSmartPair(
   // Media Agency Dynamic Pairing Decision Roll
   const roll = Math.random();
 
-  if (roll < 0.30) {
+  if (roll < 0.3) {
     // 🌟 JACKPOT_SUB_SURPRISE (~30%): Sub gets the higher tier player!
     if (rankA < rankB) {
       // playerA is higher tier -> make playerA the SUB!
@@ -300,7 +317,8 @@ function selectSmartPair(
     // ⚔️ CLASH_OF_TITANS (~35%): Try to pair equal/similar tiers for a tense duel
     // Attempt to pick a sub from unused that matches playerA's tier
     const sameTierCandidate = unused.find(
-      (p) => p._id !== playerA._id && p.tier === playerA.tier && positionFitScore(p.position, slot) > 0
+      (p) =>
+        p._id !== playerA._id && p.tier === playerA.tier && positionFitScore(p.position, slot) > 0,
     );
 
     if (sameTierCandidate) {
@@ -384,27 +402,38 @@ export async function generateDraftRounds(
   ctx: GenericMutationCtx<DataModel>,
   formation: string,
   matchSize: MatchSize,
-  poolMode: PlayerPoolMode
+  poolMode: PlayerPoolMode,
 ): Promise<DraftRound[]> {
   const formationPositions = getFormationPositions(formation, matchSize);
-  const allPlayers = await ctx.db.query("players").collect();
-  const clubs = await ctx.db.query("clubs").collect();
+  const allPlayers = await ctx.db.query('players').collect();
+  const clubs = await ctx.db.query('clubs').collect();
   const clubById = new Map(clubs.map((c) => [c._id, c]));
 
   // Filter player pool by mode
   const filtered: PoolPlayer[] = allPlayers
     .filter((player) => {
-      if (poolMode === "ICONS") return player.isLegend || player.tier === "ICON" || player.tier === "HERO";
-      if (poolMode === "ACTIVE") return !player.isLegend && player.tier !== "ICON" && player.tier !== "HERO";
-      if (poolMode === "EPL") {
+      if (poolMode === 'ICONS')
+        return player.isLegend || player.tier === 'ICON' || player.tier === 'HERO';
+      if (poolMode === 'ACTIVE')
+        return !player.isLegend && player.tier !== 'ICON' && player.tier !== 'HERO';
+      if (poolMode === 'EPL') {
         // Active EPL players only — no legends/icons
-        return clubById.get(player.clubId)?.league === "Premier League"
-          && !player.isLegend && player.tier !== "ICON" && player.tier !== "HERO";
+        return (
+          clubById.get(player.clubId)?.league === 'Premier League' &&
+          !player.isLegend &&
+          player.tier !== 'ICON' &&
+          player.tier !== 'HERO'
+        );
       }
-      if (poolMode === "TOP_TEAMS") {
+      if (poolMode === 'TOP_TEAMS') {
         // Active top-club players only — no legends/icons
-        const clubName = clubById.get(player.clubId)?.name ?? "";
-        return TOP_CLUB_NAMES.has(clubName) && !player.isLegend && player.tier !== "ICON" && player.tier !== "HERO";
+        const clubName = clubById.get(player.clubId)?.name ?? '';
+        return (
+          TOP_CLUB_NAMES.has(clubName) &&
+          !player.isLegend &&
+          player.tier !== 'ICON' &&
+          player.tier !== 'HERO'
+        );
       }
       return true; // GLOBAL — all players including legends
     })
@@ -436,7 +465,7 @@ export async function generateDraftRounds(
 
   if (pool.length < requiredPlayers) {
     throw new Error(
-      `Not enough players for ${matchSize}P Hidden Bid (need ${requiredPlayers}, have ${pool.length}).`
+      `Not enough players for ${matchSize}P Hidden Bid (need ${requiredPlayers}, have ${pool.length}).`,
     );
   }
 

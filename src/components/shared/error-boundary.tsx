@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { Component, type ReactNode, type ErrorInfo } from "react";
-import { AlertTriangle, RefreshCw } from "lucide-react";
+import { Component, type ReactNode, type ErrorInfo } from 'react';
+import { AlertTriangle, RefreshCw } from 'lucide-react';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -24,7 +24,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error("ErrorBoundary caught:", error, info.componentStack);
+    console.error('ErrorBoundary caught:', error, info.componentStack);
   }
 
   render() {
@@ -37,12 +37,12 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
             <AlertTriangle className="h-8 w-8" />
           </div>
           <h2 className="text-xl font-black text-white">Something went wrong</h2>
-          <p className="max-w-sm text-sm text-steel">
-            {this.state.error?.message || "An unexpected error occurred."}
+          <p className="text-steel max-w-sm text-sm">
+            {this.state.error?.message || 'An unexpected error occurred.'}
           </p>
           <button
             onClick={() => this.setState({ hasError: false, error: null })}
-            className="inline-flex items-center gap-2 rounded-xl bg-lime px-6 py-3 text-sm font-black text-background shadow-lg shadow-lime/20 transition-all hover:bg-vivid active:scale-95"
+            className="bg-lime text-background shadow-lime/20 hover:bg-vivid inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-black shadow-lg transition-all active:scale-95"
           >
             <RefreshCw className="h-4 w-4" />
             Try again

@@ -1,4 +1,8 @@
-import type { IPerkHandler, PerkExecutionContext, PerkResult } from '@/core/perk/perk-handler.interface';
+import type {
+  IPerkHandler,
+  PerkExecutionContext,
+  PerkResult,
+} from '@/core/perk/perk-handler.interface';
 import type { PerkId } from '@/types/perk';
 import { ScoutPerkHandler } from './handlers/scout-handler';
 import { SpyPerkHandler } from './handlers/spy-handler';

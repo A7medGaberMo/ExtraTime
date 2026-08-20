@@ -19,7 +19,7 @@ export function PageHeader({ title, subtitle, backUrl, action, className }: Page
   return (
     <div
       className={cn(
-        'flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-8',
+        'mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between',
         className,
       )}
     >
@@ -27,14 +27,14 @@ export function PageHeader({ title, subtitle, backUrl, action, className }: Page
         {backUrl && (
           <Link
             href={backUrl}
-            className="inline-flex items-center gap-1.5 text-sm text-steel hover:text-white transition-colors mb-2"
+            className="text-steel mb-2 inline-flex items-center gap-1.5 text-sm transition-colors hover:text-white"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Back
           </Link>
         )}
         <h1 className="text-2xl font-black tracking-tight text-white md:text-3xl">{title}</h1>
-        {subtitle && <p className="text-sm text-steel md:text-base">{subtitle}</p>}
+        {subtitle && <p className="text-steel text-sm md:text-base">{subtitle}</p>}
       </div>
       {action && <div className="flex-shrink-0">{action}</div>}
     </div>

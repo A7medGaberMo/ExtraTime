@@ -1,5 +1,5 @@
-import { mutation } from "../_generated/server";
-import { v } from "convex/values";
+import { mutation } from '../_generated/server';
+import { v } from 'convex/values';
 
 export const create = mutation({
   args: {
@@ -10,6 +10,6 @@ export const create = mutation({
     apiId: v.string(),
   },
   handler: async (ctx, args) => {
-    return await ctx.db.insert("nations", args);
+    return await ctx.db.insert('nations', args);
   },
 });

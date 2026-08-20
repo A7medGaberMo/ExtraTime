@@ -44,7 +44,9 @@ describe('Player Career Stats Integrity & Accuracy Tests', () => {
       const tGoals = Number(data.careerTotal?.goals) || 0;
 
       if (tApps !== clubApps || tGoals !== clubGoals) {
-        mathErrors.push(`${path.basename(sFile)}: expected ${clubApps}/${clubGoals}, got ${tApps}/${tGoals}`);
+        mathErrors.push(
+          `${path.basename(sFile)}: expected ${clubApps}/${clubGoals}, got ${tApps}/${tGoals}`,
+        );
       }
     }
 

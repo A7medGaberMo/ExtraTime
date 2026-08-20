@@ -1,7 +1,7 @@
-import { query } from "../_generated/server";
-import { v } from "convex/values";
+import { query } from '../_generated/server';
+import { v } from 'convex/values';
 
-type PoolMode = "GLOBAL" | "ACTIVE" | "EPL" | "TOP_TEAMS" | "ICONS";
+type PoolMode = 'GLOBAL' | 'ACTIVE' | 'EPL' | 'TOP_TEAMS' | 'ICONS';
 type PublicQueueSummary = Record<PoolMode, Record<5 | 11, number>>;
 
 export const getByCode = query({
@@ -9,14 +9,14 @@ export const getByCode = query({
   handler: async (ctx, args) => {
     const code = args.code.trim().toUpperCase();
     return await ctx.db
-      .query("rooms")
-      .withIndex("by_code", (q) => q.eq("code", code))
+      .query('rooms')
+      .withIndex('by_code', (q) => q.eq('code', code))
       .first();
   },
 });
 
 export const getById = query({
-  args: { id: v.id("rooms") },
+  args: { id: v.id('rooms') },
   handler: async (ctx, args) => {
     return await ctx.db.get(args.id);
   },
@@ -27,8 +27,8 @@ export const getPublicQueueSummary = query({
   handler: async (ctx) => {
     const now = Date.now();
     const rooms = await ctx.db
-      .query("rooms")
-      .withIndex("by_public_status", (q) => q.eq("isPublic", true).eq("status", "waiting"))
+      .query('rooms')
+      .withIndex('by_public_status', (q) => q.eq('isPublic', true).eq('status', 'waiting'))
       .collect();
 
     const freshRooms = rooms.filter((room) => room.createdAt > now - 10 * 60 * 1000);
@@ -41,10 +41,14 @@ export const getPublicQueueSummary = query({
     };
 
     for (const room of freshRooms) {
-      const poolMode = room.settings?.poolMode || "GLOBAL";
+      const poolMode = room.settings?.poolMode || 'GLOBAL';
       const matchSize = room.settings?.matchSize;
       if (
-        (poolMode === "GLOBAL" || poolMode === "ACTIVE" || poolMode === "EPL" || poolMode === "TOP_TEAMS" || poolMode === "ICONS") &&
+        (poolMode === 'GLOBAL' ||
+          poolMode === 'ACTIVE' ||
+          poolMode === 'EPL' ||
+          poolMode === 'TOP_TEAMS' ||
+          poolMode === 'ICONS') &&
         (matchSize === 5 || matchSize === 11)
       ) {
         queues[poolMode as PoolMode][matchSize as 5 | 11] += 1;

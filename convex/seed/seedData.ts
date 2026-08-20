@@ -1,7 +1,7 @@
-import { mutation, type MutationCtx } from "../_generated/server";
-import { Id } from "../_generated/dataModel";
-import { v } from "convex/values";
-import { tierValidator, LEAGUE_COUNTRY, type Tier } from "../lib/constants";
+import { mutation, type MutationCtx } from '../_generated/server';
+import { Id } from '../_generated/dataModel';
+import { v } from 'convex/values';
+import { tierValidator, LEAGUE_COUNTRY, type Tier } from '../lib/constants';
 
 /**
  * Seeder mutations for populating clubs, nations, players, and stats into Convex.
@@ -77,14 +77,14 @@ export const seedClubsBatch = mutation({
     let inserted = 0;
     for (const c of args.clubs) {
       const existing = await ctx.db
-        .query("clubs")
-        .withIndex("by_name", (q) => q.eq("name", c.name))
+        .query('clubs')
+        .withIndex('by_name', (q) => q.eq('name', c.name))
         .first();
 
       if (existing) {
         await ctx.db.patch(existing._id, c);
       } else {
-        await ctx.db.insert("clubs", c);
+        await ctx.db.insert('clubs', c);
       }
       inserted++;
     }
@@ -103,14 +103,14 @@ export const seedNationsBatch = mutation({
     let inserted = 0;
     for (const n of args.nations) {
       const existing = await ctx.db
-        .query("nations")
-        .filter((q) => q.eq(q.field("name"), n.name))
+        .query('nations')
+        .filter((q) => q.eq(q.field('name'), n.name))
         .first();
 
       if (existing) {
         await ctx.db.patch(existing._id, n);
       } else {
-        await ctx.db.insert("nations", n);
+        await ctx.db.insert('nations', n);
       }
       inserted++;
     }
@@ -126,14 +126,14 @@ export const upsertPlayersBatch = mutation({
     players: v.array(playerArg),
   },
   handler: async (ctx, args) => {
-    const existingClubs = await ctx.db.query("clubs").collect();
-    const clubMap = new Map<string, Id<"clubs">>();
+    const existingClubs = await ctx.db.query('clubs').collect();
+    const clubMap = new Map<string, Id<'clubs'>>();
     for (const c of existingClubs) {
       clubMap.set(c.name, c._id);
     }
 
-    const existingNations = await ctx.db.query("nations").collect();
-    const nationMap = new Map<string, Id<"nations">>();
+    const existingNations = await ctx.db.query('nations').collect();
+    const nationMap = new Map<string, Id<'nations'>>();
     for (const n of existingNations) {
       nationMap.set(n.name, n._id);
     }
@@ -141,30 +141,34 @@ export const upsertPlayersBatch = mutation({
     let count = 0;
 
     for (const p of args.players) {
-      const league = p.league?.trim() || "Global";
+      const league = p.league?.trim() || 'Global';
 
       // Ensure club exists
       if (!clubMap.has(p.club)) {
-        const clubLogo = p.clubLogo || (p.clubApiId ? `https://media.api-sports.io/football/teams/${p.clubApiId}.png` : `logos/clubs/${p.club.toLowerCase().replace(/\s+/g, "-")}.png`);
-        const clubId = await ctx.db.insert("clubs", {
+        const clubLogo =
+          p.clubLogo ||
+          (p.clubApiId
+            ? `https://media.api-sports.io/football/teams/${p.clubApiId}.png`
+            : `logos/clubs/${p.club.toLowerCase().replace(/\s+/g, '-')}.png`);
+        const clubId = await ctx.db.insert('clubs', {
           name: p.club,
           shortName: p.club.slice(0, 3).toUpperCase(),
           logo: clubLogo,
           league,
           country: inferCountry(league, p.nation),
-          apiId: p.clubApiId || "",
+          apiId: p.clubApiId || '',
         });
         clubMap.set(p.club, clubId);
       }
 
       // Ensure nation exists
       if (!nationMap.has(p.nation)) {
-        const nationId = await ctx.db.insert("nations", {
+        const nationId = await ctx.db.insert('nations', {
           name: p.nation,
           code: p.nation.slice(0, 2).toUpperCase(),
-          flag: `logos/nations/${p.nation.toLowerCase().replace(/\s+/g, "-")}.png`,
-          confederation: "FIFA",
-          apiId: "",
+          flag: `logos/nations/${p.nation.toLowerCase().replace(/\s+/g, '-')}.png`,
+          confederation: 'FIFA',
+          apiId: '',
         });
         nationMap.set(p.nation, nationId);
       }
@@ -176,8 +180,8 @@ export const upsertPlayersBatch = mutation({
       let existing = null;
       if (p.apiId) {
         existing = await ctx.db
-          .query("players")
-          .withIndex("by_apiId", (q) => q.eq("apiId", p.apiId))
+          .query('players')
+          .withIndex('by_apiId', (q) => q.eq('apiId', p.apiId))
           .first();
       }
 
@@ -197,7 +201,7 @@ export const upsertPlayersBatch = mutation({
       if (existing) {
         await ctx.db.patch(existing._id, payload);
       } else {
-        await ctx.db.insert("players", payload);
+        await ctx.db.insert('players', payload);
       }
       count++;
     }

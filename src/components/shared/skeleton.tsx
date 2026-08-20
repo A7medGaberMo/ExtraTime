@@ -1,29 +1,22 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 export function Skeleton({ className }: { className?: string }) {
-  return (
-    <div
-      className={cn(
-        "rounded-xl bg-slate-800/60 animate-shimmer",
-        className,
-      )}
-    />
-  );
+  return <div className={cn('animate-shimmer rounded-xl bg-slate-800/60', className)} />;
 }
 
 export function PlayerCardSkeleton({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-2xl border border-white/5 bg-card p-4 space-y-3",
+        'bg-card relative space-y-3 overflow-hidden rounded-2xl border border-white/5 p-4',
         className,
       )}
     >
       <div className="flex items-center gap-3">
         <Skeleton className="h-10 w-10 rounded-full" />
-        <div className="space-y-1.5 flex-1">
+        <div className="flex-1 space-y-1.5">
           <Skeleton className="h-3 w-24" />
           <Skeleton className="h-2.5 w-16" />
         </div>
@@ -41,7 +34,7 @@ export function RoomCardSkeleton({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-2xl border border-white/5 bg-card p-5 space-y-4",
+        'bg-card relative space-y-4 overflow-hidden rounded-2xl border border-white/5 p-5',
         className,
       )}
     >
@@ -63,7 +56,7 @@ export function RoomCardSkeleton({ className }: { className?: string }) {
 
 export function PageSkeleton({ className }: { className?: string }) {
   return (
-    <div className={cn("mx-auto max-w-4xl space-y-6 py-6", className)}>
+    <div className={cn('mx-auto max-w-4xl space-y-6 py-6', className)}>
       <div className="space-y-2 text-center">
         <Skeleton className="mx-auto h-6 w-48" />
         <Skeleton className="mx-auto h-4 w-72" />

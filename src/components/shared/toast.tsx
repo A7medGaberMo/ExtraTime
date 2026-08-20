@@ -1,16 +1,10 @@
-"use client";
+'use client';
 
-import {
-  createContext,
-  useContext,
-  useState,
-  useCallback,
-  type ReactNode,
-} from "react";
-import { cn } from "@/lib/utils";
-import { X, CheckCircle2, AlertCircle, AlertTriangle, Info } from "lucide-react";
+import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { cn } from '@/lib/utils';
+import { X, CheckCircle2, AlertCircle, AlertTriangle, Info } from 'lucide-react';
 
-type ToastVariant = "success" | "error" | "warning" | "info";
+type ToastVariant = 'success' | 'error' | 'warning' | 'info';
 
 interface Toast {
   id: string;
@@ -26,14 +20,14 @@ interface ToastContextValue {
 const ToastContext = createContext<ToastContextValue | null>(null);
 
 const variantStyles: Record<ToastVariant, string> = {
-  success: "border-lime/40 bg-lime/10",
-  error: "border-rose-500/40 bg-rose-500/10",
-  warning: "border-amber-500/40 bg-amber-500/10",
-  info: "border-sky-500/40 bg-sky-500/10",
+  success: 'border-lime/40 bg-lime/10',
+  error: 'border-rose-500/40 bg-rose-500/10',
+  warning: 'border-amber-500/40 bg-amber-500/10',
+  info: 'border-sky-500/40 bg-sky-500/10',
 };
 
 const variantIcons: Record<ToastVariant, ReactNode> = {
-  success: <CheckCircle2 className="h-5 w-5 shrink-0 text-lime" />,
+  success: <CheckCircle2 className="text-lime h-5 w-5 shrink-0" />,
   error: <AlertCircle className="h-5 w-5 shrink-0 text-rose-400" />,
   warning: <AlertTriangle className="h-5 w-5 shrink-0 text-amber-400" />,
   info: <Info className="h-5 w-5 shrink-0 text-sky-400" />,
@@ -47,7 +41,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const toast = useCallback(
-    (message: string, variant: ToastVariant = "info") => {
+    (message: string, variant: ToastVariant = 'info') => {
       const id = Math.random().toString(36).slice(2, 9);
       setToasts((prev) => [...prev, { id, message, variant }]);
       setTimeout(() => dismiss(id), 4000);
@@ -58,21 +52,21 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   return (
     <ToastContext.Provider value={{ toast, dismiss }}>
       {children}
-      <div className="fixed bottom-24 right-4 z-[100] flex flex-col gap-2 md:bottom-6 md:right-6">
+      <div className="fixed right-4 bottom-24 z-[100] flex flex-col gap-2 md:right-6 md:bottom-6">
         {toasts.map((t) => (
           <div
             key={t.id}
             className={cn(
-              "flex items-start gap-3 rounded-xl border px-4 py-3 shadow-2xl backdrop-blur-xl animate-slide-up max-w-xs",
+              'animate-slide-up flex max-w-xs items-start gap-3 rounded-xl border px-4 py-3 shadow-2xl backdrop-blur-xl',
               variantStyles[t.variant],
             )}
-            style={{ animationFillMode: "both" }}
+            style={{ animationFillMode: 'both' }}
           >
             {variantIcons[t.variant]}
             <p className="flex-1 text-sm font-medium text-white">{t.message}</p>
             <button
               onClick={() => dismiss(t.id)}
-              className="shrink-0 rounded-lg p-0.5 text-steel hover:text-white transition-colors"
+              className="text-steel shrink-0 rounded-lg p-0.5 transition-colors hover:text-white"
             >
               <X className="h-4 w-4" />
             </button>
@@ -85,6 +79,6 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 
 export function useToast() {
   const ctx = useContext(ToastContext);
-  if (!ctx) throw new Error("useToast must be used within ToastProvider");
+  if (!ctx) throw new Error('useToast must be used within ToastProvider');
   return ctx;
 }

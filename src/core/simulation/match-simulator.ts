@@ -14,14 +14,7 @@
  */
 
 export type SimTier =
-  | 'ICON'
-  | 'HERO'
-  | 'ULTIMATE'
-  | 'MASTER'
-  | 'ELITE'
-  | 'GOLD'
-  | 'SILVER'
-  | 'BRONZE';
+  'ICON' | 'HERO' | 'ULTIMATE' | 'MASTER' | 'ELITE' | 'GOLD' | 'SILVER' | 'BRONZE';
 
 export interface SimPlayer {
   id: string;
@@ -166,7 +159,9 @@ export function mulberry32(seed: number): () => number {
 }
 
 // ── Sector math ───────────────────────────────────────────────────
-function computeSectors(squad: SimPlayer[]): Pick<SimSectorAnalysis, 'attack' | 'midfield' | 'defense'> {
+function computeSectors(
+  squad: SimPlayer[],
+): Pick<SimSectorAnalysis, 'attack' | 'midfield' | 'defense'> {
   let attack = 0;
   let midfield = 0;
   let defense = 0;
@@ -227,7 +222,11 @@ export interface SimTeamAnalysis {
   rating: number;
 }
 
-function analyzeTeam(squad: SimPlayer[], remainingBudget: number, midMomentumDiff: number): SimTeamAnalysis {
+function analyzeTeam(
+  squad: SimPlayer[],
+  remainingBudget: number,
+  midMomentumDiff: number,
+): SimTeamAnalysis {
   const sectors = computeSectors(squad);
   const chemistry = computeChemistry(squad);
   const budgetBonus = computeBudgetBonus(remainingBudget);
@@ -254,7 +253,7 @@ export function analyzeTeamPair(
   hostSquad: SimPlayer[],
   guestSquad: SimPlayer[],
   hostBudget: number,
-  guestBudget: number
+  guestBudget: number,
 ): { host: SimTeamAnalysis; guest: SimTeamAnalysis } {
   const hostSectors = computeSectors(hostSquad);
   const guestSectors = computeSectors(guestSquad);
@@ -334,7 +333,7 @@ const CROSSBAR_DESCRIPTIONS = [
 const SAVE_DESCRIPTIONS = [
   '{gk} makes a reaction save to deny {name}!',
   'INCREDIBLE SAVE! {gk} spreads wide to stop {name}!',
-  '{gk} dives low and claws away {name}\'s effort!',
+  "{gk} dives low and claws away {name}'s effort!",
 ];
 
 const YELLOW_DESCRIPTIONS = [
@@ -362,7 +361,7 @@ interface SideStats {
 function computeRatingsFor(
   squad: SimPlayer[],
   stats: Map<string, SideStats>,
-  rng: () => number
+  rng: () => number,
 ): SimPlayerRating[] {
   return squad.map((p) => {
     const s = stats.get(p.id) ?? { goals: 0, assists: 0, saves: 0 };
@@ -405,7 +404,7 @@ export function simulateTacticalMatch(
   hostBudget: number,
   guestBudget: number,
   seed: string,
-  options: SimulateOptions = {}
+  options: SimulateOptions = {},
 ): SimMatchResult {
   const rng = mulberry32(hashSeed(`${seed}:${roomId}`));
   const flowRng = mulberry32(hashSeed(`${seed}:${roomId}::flow`));
@@ -416,7 +415,7 @@ export function simulateTacticalMatch(
     hostSquad,
     guestSquad,
     hostBudget,
-    guestBudget
+    guestBudget,
   );
 
   // Expected goals from the rating gap, scaled into a credible 90-minute band.
@@ -441,7 +440,7 @@ export function simulateTacticalMatch(
     description: string,
     player?: SimTimelineEvent['player'],
     assistPlayer?: SimTimelineEvent['assistPlayer'],
-    snapshot?: { host: number; guest: number }
+    snapshot?: { host: number; guest: number },
   ) {
     timeline.push({
       id: `${minute}-${type.toLowerCase()}-${timeline.length}`,
@@ -455,7 +454,8 @@ export function simulateTacticalMatch(
     });
   }
 
-  const sideSquad = (side: 'host' | 'guest'): SimPlayer[] => (side === 'host' ? hostSquad : guestSquad);
+  const sideSquad = (side: 'host' | 'guest'): SimPlayer[] =>
+    side === 'host' ? hostSquad : guestSquad;
 
   const cardUser = (p: SimPlayer): SimTimelineEvent['player'] => ({
     id: p.id,
@@ -468,10 +468,7 @@ export function simulateTacticalMatch(
     const squad = sideSquad(side);
     const scorer = pickScorer(rng, squad) ?? pickRandom(rng, squad) ?? squad[0];
     const assistPool = squad.filter((p) => p.id !== scorer.id);
-    const assist =
-      assistPool.length > 0 && rng() < 0.72
-        ? pickRandom(rng, assistPool)
-        : null;
+    const assist = assistPool.length > 0 && rng() < 0.72 ? pickRandom(rng, assistPool) : null;
     score[side]++;
     bump(scorer.id, 'goals');
     if (assist) bump(assist.id, 'assists');
@@ -480,11 +477,9 @@ export function simulateTacticalMatch(
       minute,
       'GOAL',
       side,
-      assist
-        ? `${description} (${pick(rng, ASSIST_PREFIXES)} from ${assist.name})`
-        : description,
+      assist ? `${description} (${pick(rng, ASSIST_PREFIXES)} from ${assist.name})` : description,
       cardUser(scorer),
-      assist ? { id: assist.id, name: assist.name } : undefined
+      assist ? { id: assist.id, name: assist.name } : undefined,
     );
   }
 
@@ -500,7 +495,7 @@ export function simulateTacticalMatch(
       side,
       fill(pick(rng, SAVE_DESCRIPTIONS), { gk: gk.name, name: attacker.name }),
       cardUser(gk),
-      attacker ? { id: attacker.id, name: attacker.name } : undefined
+      attacker ? { id: attacker.id, name: attacker.name } : undefined,
     );
   }
 
@@ -512,7 +507,7 @@ export function simulateTacticalMatch(
       'CROSSBAR',
       side,
       fill(pick(rng, CROSSBAR_DESCRIPTIONS), { name: attacker.name }),
-      cardUser(attacker)
+      cardUser(attacker),
     );
   }
 
@@ -581,7 +576,7 @@ export function simulateTacticalMatch(
       side: 'host' | 'guest',
       desc: string,
       player: SimPlayer,
-      snap: { host: number; guest: number }
+      snap: { host: number; guest: number },
     ) => {
       const minutePk = 91 + Math.floor(kick / 2);
       shootoutEvents.push({
@@ -609,7 +604,7 @@ export function simulateTacticalMatch(
           ? `${shooter.name} BURIES the penalty! (${pkScore.host}-${pkScore.guest})`
           : `${shooter.name} MISSES from the spot! (${pkScore.host}-${pkScore.guest})`,
         shooter,
-        snap
+        snap,
       );
       return converted;
     };
@@ -638,7 +633,8 @@ export function simulateTacticalMatch(
         pkScore.host > pkScore.guest ? (options.hostUserId ?? null) : (options.guestUserId ?? null);
     }
   } else {
-    winnerId = score.host > score.guest ? (options.hostUserId ?? null) : (options.guestUserId ?? null);
+    winnerId =
+      score.host > score.guest ? (options.hostUserId ?? null) : (options.guestUserId ?? null);
   }
 
   const ratings = {
@@ -684,7 +680,7 @@ function convertPenalty(
   shooter: SimPlayer,
   keeper: SimPlayer | null,
   attackStrength: number,
-  defenseStrength: number
+  defenseStrength: number,
 ): boolean {
   const diff = attackStrength - defenseStrength;
   let p = 0.74 + (TIER_WEIGHTS[shooter.tier] ?? 1) * 0.012 + diff * 0.004;

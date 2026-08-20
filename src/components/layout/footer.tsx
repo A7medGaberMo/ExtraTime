@@ -10,10 +10,10 @@ export function Footer() {
   const playerCount = dbStats === undefined ? '...' : dbStats.totalPlayers.toLocaleString();
 
   return (
-    <footer className="w-full border-t border-border/40 bg-slate-950/40 backdrop-blur-md py-4 pb-20 md:pb-6">
-      <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 text-center">
+    <footer className="border-border/40 w-full border-t bg-slate-950/40 py-4 pb-20 backdrop-blur-md md:pb-6">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-3 px-4 text-center sm:flex-row md:gap-6">
         <div className="flex items-center gap-2.5">
-          <div className="relative flex h-6 w-6 items-center justify-center overflow-hidden rounded-lg bg-slate-950 ring-1 ring-lime/30 shadow-sm">
+          <div className="ring-lime/30 relative flex h-6 w-6 items-center justify-center overflow-hidden rounded-lg bg-slate-950 shadow-sm ring-1">
             <Image
               src="/ETIcon.png"
               alt="ExtraTime Logo"
@@ -23,19 +23,17 @@ export function Footer() {
             />
           </div>
           <span
-            className="text-sm font-extrabold tracking-wider text-steel/90"
+            className="text-steel/90 text-sm font-extrabold tracking-wider"
             style={{ fontFamily: 'var(--font-rajdhani), sans-serif' }}
           >
             Extra<span className="text-lime/90">Time</span>
           </span>
         </div>
 
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/80 border border-white/10 text-xs text-steel font-medium shadow-inner">
-          <Users className="w-3.5 h-3.5 text-lime" />
+        <div className="text-steel inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1 text-xs font-medium shadow-inner">
+          <Users className="text-lime h-3.5 w-3.5" />
           <span>Database:</span>
-          <span className="text-white font-black font-stats">
-            {playerCount} Players
-          </span>
+          <span className="font-stats font-black text-white">{playerCount} Players</span>
         </div>
       </div>
     </footer>

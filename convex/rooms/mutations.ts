@@ -1,43 +1,45 @@
-import { mutation } from "../_generated/server";
-import { Id, DataModel, Doc } from "../_generated/dataModel";
-import { v } from "convex/values";
-import { GenericMutationCtx } from "convex/server";
-import { generateDraftRounds } from "../auctions/draftEngine";
-import { getRandomFormation, MatchSize } from "../auctions/formations";
-import { type PoolMode } from "../lib/constants";
+import { mutation } from '../_generated/server';
+import { Id, DataModel, Doc } from '../_generated/dataModel';
+import { v } from 'convex/values';
+import { GenericMutationCtx } from 'convex/server';
+import { generateDraftRounds } from '../auctions/draftEngine';
+import { getRandomFormation, MatchSize } from '../auctions/formations';
+import { type PoolMode } from '../lib/constants';
 
 // ── Helpers ────────────────────────────────────────────────
 
 function generateRoomCode(): string {
-  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-  return Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  return Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
 }
 
 async function generateUniqueRoomCode(ctx: GenericMutationCtx<DataModel>): Promise<string> {
   for (let attempt = 0; attempt < 8; attempt++) {
     const code = generateRoomCode();
     const existing = await ctx.db
-      .query("rooms")
-      .withIndex("by_code", (q) => q.eq("code", code))
+      .query('rooms')
+      .withIndex('by_code', (q) => q.eq('code', code))
       .first();
     if (!existing) return code;
   }
-  throw new Error("Could not generate a unique room code");
+  throw new Error('Could not generate a unique room code');
 }
 
-function randomPerk(): "SCOUT" | "SPY" {
-  return Math.random() < 0.5 ? "SCOUT" : "SPY";
+function randomPerk(): 'SCOUT' | 'SPY' {
+  return Math.random() < 0.5 ? 'SCOUT' : 'SPY';
 }
 
 /** Deterministic room seed — drives tie lotteries + the match simulation. */
 function generateRoomSeed(): string {
   const rand =
-    Math.random().toString(36).slice(2) + Date.now().toString(36) + Math.random().toString(36).slice(2);
+    Math.random().toString(36).slice(2) +
+    Date.now().toString(36) +
+    Math.random().toString(36).slice(2);
   return rand.slice(0, 16);
 }
 
 interface CreateRoomArgs {
-  hostId: Id<"guestUsers">;
+  hostId: Id<'guestUsers'>;
   matchSize: MatchSize;
   startingBudget: number;
   isPublic: boolean;
@@ -52,11 +54,11 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
   const now = Date.now();
   const seed = generateRoomSeed();
 
-  const roomId = await ctx.db.insert("rooms", {
+  const roomId = await ctx.db.insert('rooms', {
     code,
     hostId: args.hostId,
-    gameType: "HIDDEN_BID",
-    status: "waiting",
+    gameType: 'HIDDEN_BID',
+    status: 'waiting',
     isPublic: args.isPublic,
     settings: {
       formation,
@@ -67,7 +69,7 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
     createdAt: now,
   });
 
-  await ctx.db.insert("auctions", {
+  await ctx.db.insert('auctions', {
     roomId,
     formation,
     matchSize: args.matchSize,
@@ -75,7 +77,7 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
     poolMode: args.poolMode,
     rounds,
     currentRound: 1,
-    status: "pending",
+    status: 'pending',
     seed,
     sealedBids: {},
     bidDeadline: now + 30000,
@@ -104,13 +106,13 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
 
 async function joinAuction(
   ctx: GenericMutationCtx<DataModel>,
-  roomId: Id<"rooms">,
-  guestId: Id<"guestUsers">,
-  auction: Doc<"auctions">
+  roomId: Id<'rooms'>,
+  guestId: Id<'guestUsers'>,
+  auction: Doc<'auctions'>,
 ) {
   const room = await ctx.db.get(roomId);
-  if (!room || room.guestId || room.status !== "waiting") {
-    throw new Error("Room is no longer available");
+  if (!room || room.guestId || room.status !== 'waiting') {
+    throw new Error('Room is no longer available');
   }
 
   const guestPerk = randomPerk();
@@ -119,11 +121,11 @@ async function joinAuction(
 
   await ctx.db.patch(roomId, {
     guestId: guestId,
-    status: "in_progress",
+    status: 'in_progress',
   });
 
   await ctx.db.patch(auction._id, {
-    status: "active",
+    status: 'active',
     // NOTE: host perk is NOT overwritten — kept as-is from creation
     guest: {
       userId: guestId,
@@ -151,7 +153,7 @@ async function joinAuction(
 
 export const create = mutation({
   args: {
-    hostId: v.id("guestUsers"),
+    hostId: v.id('guestUsers'),
     matchSize: v.optional(v.union(v.literal(5), v.literal(11))),
     startingBudget: v.optional(v.number()),
     isPublic: v.optional(v.boolean()),
@@ -160,7 +162,7 @@ export const create = mutation({
   handler: async (ctx, args) => {
     const matchSize: MatchSize = args.matchSize ?? 11;
     const startingBudget = args.startingBudget ?? 100;
-    const poolMode = (args.poolMode ?? "GLOBAL") as PoolMode;
+    const poolMode = (args.poolMode ?? 'GLOBAL') as PoolMode;
     return await createWaitingRoom(ctx, {
       hostId: args.hostId,
       matchSize,
@@ -173,23 +175,23 @@ export const create = mutation({
 
 export const join = mutation({
   args: {
-    roomId: v.id("rooms"),
-    guestId: v.id("guestUsers"),
+    roomId: v.id('rooms'),
+    guestId: v.id('guestUsers'),
   },
   handler: async (ctx, args) => {
     const room = await ctx.db.get(args.roomId);
-    if (!room) throw new Error("Room not found");
+    if (!room) throw new Error('Room not found');
     const guest = await ctx.db.get(args.guestId);
-    if (!guest) throw new Error("Guest not found");
-    if (room.guestId) throw new Error("Room is full");
-    if (room.status !== "waiting") throw new Error("Room is not open");
-    if (room.hostId === args.guestId) throw new Error("You cannot join your own room");
+    if (!guest) throw new Error('Guest not found');
+    if (room.guestId) throw new Error('Room is full');
+    if (room.status !== 'waiting') throw new Error('Room is not open');
+    if (room.hostId === args.guestId) throw new Error('You cannot join your own room');
 
     const auction = await ctx.db
-      .query("auctions")
-      .withIndex("by_room", (q) => q.eq("roomId", args.roomId))
+      .query('auctions')
+      .withIndex('by_room', (q) => q.eq('roomId', args.roomId))
       .first();
-    if (!auction) throw new Error("Auction not found for room");
+    if (!auction) throw new Error('Auction not found for room');
 
     const activeTurnUserId = await joinAuction(ctx, args.roomId, args.guestId, auction);
     return { roomId: args.roomId, activeTurnUserId };
@@ -198,18 +200,18 @@ export const join = mutation({
 
 export const findOrCreatePublicMatch = mutation({
   args: {
-    userId: v.id("guestUsers"),
+    userId: v.id('guestUsers'),
     matchSize: v.optional(v.union(v.literal(5), v.literal(11))),
     poolMode: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const matchSize: MatchSize = args.matchSize ?? 11;
-    const poolMode = (args.poolMode ?? "GLOBAL") as PoolMode;
+    const poolMode = (args.poolMode ?? 'GLOBAL') as PoolMode;
     const now = Date.now();
 
     const openRooms = await ctx.db
-      .query("rooms")
-      .withIndex("by_public_status", (q) => q.eq("isPublic", true).eq("status", "waiting"))
+      .query('rooms')
+      .withIndex('by_public_status', (q) => q.eq('isPublic', true).eq('status', 'waiting'))
       .collect();
 
     // Find a compatible room
@@ -218,13 +220,13 @@ export const findOrCreatePublicMatch = mutation({
         room.hostId !== args.userId &&
         room.createdAt > now - 10 * 60 * 1000 &&
         room.settings?.matchSize === matchSize &&
-        (room.settings?.poolMode ?? "GLOBAL") === poolMode;
+        (room.settings?.poolMode ?? 'GLOBAL') === poolMode;
 
       if (!isCompatible) continue;
 
       const auction = await ctx.db
-        .query("auctions")
-        .withIndex("by_room", (q) => q.eq("roomId", room._id))
+        .query('auctions')
+        .withIndex('by_room', (q) => q.eq('roomId', room._id))
         .first();
 
       if (auction) {
@@ -246,13 +248,13 @@ export const findOrCreatePublicMatch = mutation({
 
 export const updateStatus = mutation({
   args: {
-    roomId: v.id("rooms"),
+    roomId: v.id('rooms'),
     status: v.union(
-      v.literal("waiting"),
-      v.literal("ready"),
-      v.literal("in_progress"),
-      v.literal("completed"),
-      v.literal("abandoned")
+      v.literal('waiting'),
+      v.literal('ready'),
+      v.literal('in_progress'),
+      v.literal('completed'),
+      v.literal('abandoned'),
     ),
   },
   handler: async (ctx, args) => {
@@ -262,26 +264,25 @@ export const updateStatus = mutation({
 
 export const cancel = mutation({
   args: {
-    roomId: v.id("rooms"),
-    hostId: v.id("guestUsers"),
+    roomId: v.id('rooms'),
+    hostId: v.id('guestUsers'),
   },
   handler: async (ctx, args) => {
     const room = await ctx.db.get(args.roomId);
-    if (!room) throw new Error("Room not found");
-    if (room.hostId !== args.hostId) throw new Error("Only room host can cancel");
+    if (!room) throw new Error('Room not found');
+    if (room.hostId !== args.hostId) throw new Error('Only room host can cancel');
 
-    await ctx.db.patch(args.roomId, { status: "abandoned" });
+    await ctx.db.patch(args.roomId, { status: 'abandoned' });
 
     const auction = await ctx.db
-      .query("auctions")
-      .withIndex("by_room", (q) => q.eq("roomId", args.roomId))
+      .query('auctions')
+      .withIndex('by_room', (q) => q.eq('roomId', args.roomId))
       .first();
 
     if (auction) {
-      await ctx.db.patch(auction._id, { status: "completed" });
+      await ctx.db.patch(auction._id, { status: 'completed' });
     }
 
     return { success: true };
   },
 });
-

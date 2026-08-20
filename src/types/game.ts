@@ -25,7 +25,8 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     type: 'hidden_bid',
     label: 'Hidden Bid Auction',
     badgeLabel: '🏆 HIDDEN BID',
-    description: 'Outbid your opponent in blind auctions to draft real player cards into your formation.',
+    description:
+      'Outbid your opponent in blind auctions to draft real player cards into your formation.',
     minPlayers: 2,
     maxPlayers: 2,
     icon: 'Swords',
@@ -37,7 +38,8 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     type: 'pack_opening_duel',
     label: 'Pack Opening Duel',
     badgeLabel: '📦 PACK DUEL',
-    description: 'Open real-time database tier packs simultaneously and compare overall squad power.',
+    description:
+      'Open real-time database tier packs simultaneously and compare overall squad power.',
     minPlayers: 2,
     maxPlayers: 2,
     icon: 'Package',

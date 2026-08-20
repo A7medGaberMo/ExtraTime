@@ -35,7 +35,7 @@ function tone(
   type: OscillatorType,
   volume: number,
   ctxRef: AudioContext,
-  opts: { attack?: number; endFreq?: number } = {}
+  opts: { attack?: number; endFreq?: number } = {},
 ) {
   const osc = ctxRef.createOscillator();
   const gain = ctxRef.createGain();
@@ -44,7 +44,7 @@ function tone(
   if (opts.endFreq) {
     osc.frequency.exponentialRampToValueAtTime(
       Math.max(1, opts.endFreq),
-      ctxRef.currentTime + start + duration
+      ctxRef.currentTime + start + duration,
     );
   }
   const attack = opts.attack ?? 0.008;
@@ -56,7 +56,13 @@ function tone(
   osc.stop(ctxRef.currentTime + start + duration + 0.05);
 }
 
-function noiseBurst(start: number, duration: number, volume: number, ctxRef: AudioContext, cutoff: number) {
+function noiseBurst(
+  start: number,
+  duration: number,
+  volume: number,
+  ctxRef: AudioContext,
+  cutoff: number,
+) {
   const bufferSize = Math.max(1, Math.floor(ctxRef.sampleRate * duration));
   const buffer = ctxRef.createBuffer(1, bufferSize, ctxRef.sampleRate);
   const data = buffer.getChannelData(0);
@@ -138,7 +144,9 @@ export function victoryFanfare(): void {
 export function runnerUpTone(): void {
   const c = getCtx();
   if (!c) return;
-  [392.0, 329.63, 261.63].forEach((f, i) => tone(f, i * 0.22, 0.5, 'triangle', 0.14, c, { attack: 0.02 }));
+  [392.0, 329.63, 261.63].forEach((f, i) =>
+    tone(f, i * 0.22, 0.5, 'triangle', 0.14, c, { attack: 0.02 }),
+  );
 }
 
 /** 📦 Foil pack rip / unseal tear sound with crisp burst & frequency sweep. */
@@ -185,7 +193,7 @@ export function walkoutStinger(): void {
   // Dramatic bass surge
   tone(80, 0, 0.8, 'sine', 0.45, c, { endFreq: 40, attack: 0.02 });
   tone(120, 0.05, 0.6, 'sawtooth', 0.15, c, { endFreq: 60, attack: 0.02 });
-  
+
   // Stinger Fanfare
   const fanfare = [
     [440.0, 0.1], // A4

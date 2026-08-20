@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
-import { Id } from "../../convex/_generated/dataModel";
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { Id } from '../../convex/_generated/dataModel';
 
 export function useGuestSession(redirectToHomeIfMissing = false) {
   const router = useRouter();
-  const [guestId, setGuestId] = useState<Id<"guestUsers"> | null>(null);
+  const [guestId, setGuestId] = useState<Id<'guestUsers'> | null>(null);
   const [hydrated, setHydrated] = useState(false);
 
   // Read the persisted id client-only. The server always renders with
@@ -14,8 +14,8 @@ export function useGuestSession(redirectToHomeIfMissing = false) {
   // render identical (prevents hydration mismatches).
   useEffect(() => {
     try {
-      const stored = localStorage.getItem("extratime_guestId");
-      if (stored) setGuestId(stored as Id<"guestUsers">);
+      const stored = localStorage.getItem('extratime_guestId');
+      if (stored) setGuestId(stored as Id<'guestUsers'>);
     } catch {
       // storage unavailable — stay anonymous
     }
@@ -24,12 +24,12 @@ export function useGuestSession(redirectToHomeIfMissing = false) {
 
   useEffect(() => {
     if (redirectToHomeIfMissing && hydrated && !guestId) {
-      router.push("/");
+      router.push('/');
     }
   }, [redirectToHomeIfMissing, hydrated, guestId, router]);
 
-  const saveGuestId = (id: Id<"guestUsers">) => {
-    localStorage.setItem("extratime_guestId", id);
+  const saveGuestId = (id: Id<'guestUsers'>) => {
+    localStorage.setItem('extratime_guestId', id);
     setGuestId(id);
   };
 

@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
-import { AlertTriangle, RefreshCw, Home } from "lucide-react";
-import Link from "next/link";
+import { useEffect } from 'react';
+import { AlertTriangle, RefreshCw, Home } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ErrorPage({
   error,
@@ -12,7 +12,7 @@ export default function ErrorPage({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error("Page error:", error);
+    console.error('Page error:', error);
   }, [error]);
 
   return (
@@ -21,27 +21,27 @@ export default function ErrorPage({
         <AlertTriangle className="h-10 w-10" />
       </div>
       <h1 className="text-3xl font-black text-white">Unexpected Error</h1>
-      <p className="max-w-md text-sm text-steel leading-relaxed">
+      <p className="text-steel max-w-md text-sm leading-relaxed">
         Something went wrong while loading this page. It&apos;s not you, it&apos;s us.
       </p>
       <div className="flex gap-3">
         <button
           onClick={reset}
-          className="inline-flex items-center gap-2 rounded-xl bg-lime px-6 py-3 text-sm font-black text-background shadow-lg shadow-lime/20 transition-all hover:bg-vivid active:scale-95"
+          className="bg-lime text-background shadow-lime/20 hover:bg-vivid inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-black shadow-lg transition-all active:scale-95"
         >
           <RefreshCw className="h-4 w-4" />
           Try again
         </button>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-card px-6 py-3 text-sm font-black text-white shadow-lg transition-all hover:border-white/30 active:scale-95"
+          className="bg-card inline-flex items-center gap-2 rounded-xl border border-white/10 px-6 py-3 text-sm font-black text-white shadow-lg transition-all hover:border-white/30 active:scale-95"
         >
           <Home className="h-4 w-4" />
           Go home
         </Link>
       </div>
       {error.digest && (
-        <p className="mt-4 text-[10px] text-steel font-mono">Error ID: {error.digest}</p>
+        <p className="text-steel mt-4 font-mono text-[10px]">Error ID: {error.digest}</p>
       )}
     </div>
   );

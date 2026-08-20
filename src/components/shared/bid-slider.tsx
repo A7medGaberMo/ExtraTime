@@ -57,18 +57,18 @@ export function BidSlider({ value, min, max, onChange, className }: BidSliderPro
   }, []);
 
   return (
-    <div className={cn('relative select-none touch-none pt-8 pb-5', className)}>
+    <div className={cn('relative touch-none pt-8 pb-5 select-none', className)}>
       {/* Value label above thumb */}
       <div
-        className="absolute top-1 transition-all duration-100 pointer-events-none"
+        className="pointer-events-none absolute top-1 transition-all duration-100"
         style={{ left: `${pct}%`, transform: 'translateX(-50%)' }}
       >
         <span
           className={cn(
-            'inline-block px-2 py-0.5 rounded-md text-xs font-stats transition-all',
+            'font-stats inline-block rounded-md px-2 py-0.5 text-xs transition-all',
             isDragging
-              ? 'bg-lime text-background scale-110 shadow-lg shadow-lime/30'
-              : 'bg-card border border-border text-lime',
+              ? 'bg-lime text-background shadow-lime/30 scale-110 shadow-lg'
+              : 'bg-card border-border text-lime border',
           )}
         >
           ${value}M
@@ -85,37 +85,37 @@ export function BidSlider({ value, min, max, onChange, className }: BidSliderPro
         aria-label="Bid Amount Slider"
         tabIndex={0}
         onKeyDown={(e) => {
-          if (e.key === "ArrowRight" || e.key === "ArrowUp") onChange(Math.min(max, value + 1));
-          if (e.key === "ArrowLeft" || e.key === "ArrowDown") onChange(Math.max(min, value - 1));
+          if (e.key === 'ArrowRight' || e.key === 'ArrowUp') onChange(Math.min(max, value + 1));
+          if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') onChange(Math.max(min, value - 1));
         }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        className="relative h-10 flex items-center cursor-grab active:cursor-grabbing focus:outline-none focus:ring-1 focus:ring-lime rounded-lg"
+        className="focus:ring-lime relative flex h-10 cursor-grab items-center rounded-lg focus:ring-1 focus:outline-none active:cursor-grabbing"
       >
         {/* Rail bg */}
-        <div className="absolute inset-x-0 h-2 rounded-full bg-border/60" />
+        <div className="bg-border/60 absolute inset-x-0 h-2 rounded-full" />
         {/* Filled rail */}
         <div
-          className="absolute left-0 h-2 rounded-full bg-gradient-to-r from-lime/70 to-lime transition-all"
+          className="from-lime/70 to-lime absolute left-0 h-2 rounded-full bg-gradient-to-r transition-all"
           style={{ width: `${pct}%` }}
         />
         {/* Thumb */}
         <div
           className={cn(
-            'absolute w-7 h-7 -ml-3.5 rounded-full border-2 border-lime bg-card transition-shadow duration-200',
+            'border-lime bg-card absolute -ml-3.5 h-7 w-7 rounded-full border-2 transition-shadow duration-200',
             isDragging
-              ? 'shadow-[0_0_20px_rgba(149,232,16,0.5)] scale-110'
+              ? 'scale-110 shadow-[0_0_20px_rgba(149,232,16,0.5)]'
               : 'shadow-[0_0_10px_rgba(149,232,16,0.2)]',
           )}
           style={{ left: `${pct}%` }}
         >
-          <div className="absolute inset-1.5 rounded-full bg-lime" />
+          <div className="bg-lime absolute inset-1.5 rounded-full" />
         </div>
         {/* Min/Max labels */}
-        <div className="absolute -bottom-5 left-0 text-[10px] text-steel font-stats">${min}M</div>
-        <div className="absolute -bottom-5 right-0 text-[10px] text-steel font-stats">${max}M</div>
+        <div className="text-steel font-stats absolute -bottom-5 left-0 text-[10px]">${min}M</div>
+        <div className="text-steel font-stats absolute right-0 -bottom-5 text-[10px]">${max}M</div>
       </div>
     </div>
   );

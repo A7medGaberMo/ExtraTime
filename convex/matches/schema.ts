@@ -1,24 +1,24 @@
-import { defineTable } from "convex/server";
-import { v } from "convex/values";
+import { defineTable } from 'convex/server';
+import { v } from 'convex/values';
 
 export const simulationTimelineEventValidator = v.object({
   id: v.string(),
   minute: v.number(),
   type: v.string(),
-  team: v.union(v.literal("host"), v.literal("guest")),
+  team: v.union(v.literal('host'), v.literal('guest')),
   player: v.optional(
     v.object({
       id: v.string(),
       name: v.string(),
       tier: v.string(),
       position: v.string(),
-    })
+    }),
   ),
   assistPlayer: v.optional(
     v.object({
       id: v.string(),
       name: v.string(),
-    })
+    }),
   ),
   description: v.string(),
   scoreSnapshot: v.object({
@@ -70,7 +70,7 @@ export const matchSimulationValidator = v.object({
     v.object({
       host: v.number(),
       guest: v.number(),
-    })
+    }),
   ),
   sectors: v.object({
     host: simulationSectorValidator,
@@ -89,22 +89,18 @@ export const matchSimulationValidator = v.object({
 });
 
 export const matchesTable = defineTable({
-  roomId: v.id("rooms"),
-  hostSquad: v.array(v.id("players")),
-  guestSquad: v.array(v.id("players")),
-  winnerId: v.optional(v.id("guestUsers")),
+  roomId: v.id('rooms'),
+  hostSquad: v.array(v.id('players')),
+  guestSquad: v.array(v.id('players')),
+  winnerId: v.optional(v.id('guestUsers')),
   score: v.object({
     host: v.number(),
     guest: v.number(),
   }),
-  status: v.union(
-    v.literal("pending"),
-    v.literal("simulating"),
-    v.literal("completed")
-  ),
+  status: v.union(v.literal('pending'), v.literal('simulating'), v.literal('completed')),
   completedAt: v.optional(v.number()),
   // ── Deterministic simulation payload (Universal Score Hub contract) ──
   seed: v.optional(v.string()),
   gameType: v.optional(v.string()),
   simulation: v.optional(matchSimulationValidator),
-}).index("by_room", ["roomId"]);
+}).index('by_room', ['roomId']);

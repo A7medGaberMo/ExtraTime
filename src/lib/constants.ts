@@ -15,7 +15,10 @@ export const NICKNAME_MAX_LENGTH = 16;
 // ---------------------------------------------------------------------------
 // Tier configuration — display properties only, no numerical ratings
 // ---------------------------------------------------------------------------
-export const TIER_CONFIG: Record<Tier, { label: string; color: string; gradient: [string, string] }> = {
+export const TIER_CONFIG: Record<
+  Tier,
+  { label: string; color: string; gradient: [string, string] }
+> = {
   ICON: { label: 'Icon', color: '#F59E0B', gradient: ['#F59E0B', '#D97706'] },
   HERO: { label: 'Hero', color: '#10B981', gradient: ['#10B981', '#059669'] },
   ULTIMATE: { label: 'Ultimate', color: '#0EA5E9', gradient: ['#0EA5E9', '#0369A1'] },
@@ -27,12 +30,24 @@ export const TIER_CONFIG: Record<Tier, { label: string; color: string; gradient:
 };
 
 /** Ordered tiers from highest to lowest */
-export const TIER_ORDER: Tier[] = ['ICON', 'HERO', 'ULTIMATE', 'MASTER', 'ELITE', 'GOLD', 'SILVER', 'BRONZE'];
+export const TIER_ORDER: Tier[] = [
+  'ICON',
+  'HERO',
+  'ULTIMATE',
+  'MASTER',
+  'ELITE',
+  'GOLD',
+  'SILVER',
+  'BRONZE',
+];
 
 // ---------------------------------------------------------------------------
 // Position configuration
 // ---------------------------------------------------------------------------
-export const POSITION_CONFIG: Record<Position, { label: string; shortLabel: string; category: PositionCategory }> = {
+export const POSITION_CONFIG: Record<
+  Position,
+  { label: string; shortLabel: string; category: PositionCategory }
+> = {
   GK: { label: 'Goalkeeper', shortLabel: 'GK', category: 'defense' },
   CB: { label: 'Center Back', shortLabel: 'CB', category: 'defense' },
   LB: { label: 'Left Back', shortLabel: 'LB', category: 'defense' },
@@ -51,7 +66,10 @@ export const POSITION_CONFIG: Record<Position, { label: string; shortLabel: stri
 // ---------------------------------------------------------------------------
 // Game type configuration
 // ---------------------------------------------------------------------------
-export const GAME_TYPE_CONFIG: Record<GameType, { label: string; description: string; icon: string }> = {
+export const GAME_TYPE_CONFIG: Record<
+  GameType,
+  { label: string; description: string; icon: string }
+> = {
   hidden_bid: {
     label: 'Hidden Bid',
     description: 'Outbid your opponent in a blind auction to build the ultimate squad.',

@@ -16,25 +16,25 @@ export function RoomCard({ room, className, ...props }: RoomCardProps) {
   return (
     <div
       className={cn(
-        'group relative overflow-hidden rounded-2xl border border-border bg-card p-5 transition-all duration-300 hover:border-lime/30 hover:bg-slate-900 hover:shadow-lg hover:shadow-lime/5 cursor-pointer',
+        'group border-border bg-card hover:border-lime/30 hover:shadow-lime/5 relative cursor-pointer overflow-hidden rounded-2xl border p-5 transition-all duration-300 hover:bg-slate-900 hover:shadow-lg',
         className,
       )}
       {...props}
     >
       {/* Subtle gradient glow on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-lime/0 to-transparent opacity-0 transition-opacity group-hover:opacity-5" />
+      <div className="from-lime/0 absolute inset-0 bg-gradient-to-br to-transparent opacity-0 transition-opacity group-hover:opacity-5" />
 
-      <div className="relative flex items-start justify-between mb-3">
+      <div className="relative mb-3 flex items-start justify-between">
         <div>
-          <div className="flex items-center gap-2 mb-1">
+          <div className="mb-1 flex items-center gap-2">
             <span className="text-base">{gameConfig.icon}</span>
             <h3 className="font-bold text-white">{gameConfig.label}</h3>
           </div>
-          <p className="text-xs text-slate-500 line-clamp-1">{gameConfig.description}</p>
+          <p className="line-clamp-1 text-xs text-slate-500">{gameConfig.description}</p>
         </div>
         <span
           className={cn(
-            'inline-flex items-center rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider',
+            'inline-flex items-center rounded-full px-2.5 py-0.5 text-[10px] font-semibold tracking-wider uppercase',
             statusConfig.color,
             room.status === 'waiting' && 'bg-emerald-500/10',
             room.status === 'in_progress' && 'bg-amber-500/10',
@@ -48,13 +48,11 @@ export function RoomCard({ room, className, ...props }: RoomCardProps) {
       <div className="relative flex items-center justify-between text-sm">
         <div className="flex items-center gap-1.5 text-slate-400">
           <Users className="h-3.5 w-3.5" />
-          <span className="font-mono text-xs">
-            {room.guestId ? '2/2' : '1/2'}
-          </span>
+          <span className="font-mono text-xs">{room.guestId ? '2/2' : '1/2'}</span>
         </div>
         <div className="flex items-center gap-1.5 text-slate-500">
           <Clock className="h-3.5 w-3.5" />
-          <span className="font-mono text-xs font-bold text-slate-300 tracking-wider">
+          <span className="font-mono text-xs font-bold tracking-wider text-slate-300">
             {room.code}
           </span>
         </div>

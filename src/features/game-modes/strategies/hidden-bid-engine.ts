@@ -1,4 +1,9 @@
-import type { IGameEngineStrategy, PlayerBid, RoundResult, GameState } from '@/core/engine/game-engine.interface';
+import type {
+  IGameEngineStrategy,
+  PlayerBid,
+  RoundResult,
+  GameState,
+} from '@/core/engine/game-engine.interface';
 import { GAME_REGISTRY, type GameType } from '@/types/game';
 
 export class HiddenBidEngine implements IGameEngineStrategy {

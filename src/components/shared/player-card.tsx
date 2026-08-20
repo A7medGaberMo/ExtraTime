@@ -222,8 +222,9 @@ export function PlayerCard({
 
   const tier = (player?.tier as Tier) || 'SILVER';
   const tierCfg = TIER_CONFIGS[tier] || TIER_CONFIGS.SILVER;
-  const playerName = player?.name || "Player";
-  const silhouetteVariant = ((playerName.charCodeAt(0) + playerName.length) % 6) as 0 | 1 | 2 | 3 | 4 | 5;
+  const playerName = player?.name || 'Player';
+  const silhouetteVariant = ((playerName.charCodeAt(0) + playerName.length) % 6) as
+    0 | 1 | 2 | 3 | 4 | 5;
 
   const kitNum = player?.kitNumber ?? (player?.isLegend ? 10 : (playerName.length % 20) + 1);
   const displayName = formatDisplayName(playerName);
@@ -258,15 +259,15 @@ export function PlayerCard({
   const chamferClip = 'polygon(8% 0%, 92% 0%, 100% 5%, 100% 95%, 92% 100%, 8% 100%, 0% 95%, 0% 5%)';
 
   return (
-    <div className="flex flex-col items-center group">
+    <div className="group flex flex-col items-center">
       {/* Outer Card Shell with Chamfered Metallic Frame */}
       <div
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         className={cn(
-          'relative flex flex-col items-center transition-all duration-150 select-none cursor-pointer group-hover:-translate-y-2 group-hover:brightness-105',
+          'relative flex cursor-pointer flex-col items-center transition-all duration-150 select-none group-hover:-translate-y-2 group-hover:brightness-105',
           scaleMap.card,
-          className
+          className,
         )}
         style={{
           transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
@@ -277,16 +278,16 @@ export function PlayerCard({
         {/* Layer 1: Outer Metallic Edge Frame */}
         <div
           className={cn(
-            'absolute inset-0 bg-gradient-to-b p-[3px] shadow-2xl overflow-hidden',
-            tierCfg.frameGradient
+            'absolute inset-0 overflow-hidden bg-gradient-to-b p-[3px] shadow-2xl',
+            tierCfg.frameGradient,
           )}
           style={{ clipPath: chamferClip }}
         >
           {/* Layer 2: Shadow Groove & Inner Surface */}
           <div
             className={cn(
-              'relative w-full h-full bg-gradient-to-b overflow-hidden flex flex-col justify-between p-2.5 sm:p-3',
-              tierCfg.bgGradient
+              'relative flex h-full w-full flex-col justify-between overflow-hidden bg-gradient-to-b p-2.5 sm:p-3',
+              tierCfg.bgGradient,
             )}
             style={{ clipPath: chamferClip }}
           >
@@ -294,17 +295,23 @@ export function PlayerCard({
             <CardBackgroundTexture tier={tier} />
 
             {/* Layer 4: Specular Border */}
-            <div className="absolute inset-0 border border-white/20 pointer-events-none" style={{ clipPath: chamferClip }} />
+            <div
+              className="pointer-events-none absolute inset-0 border border-white/20"
+              style={{ clipPath: chamferClip }}
+            />
 
             {/* Layer 5: Holographic Light Sweep on Hover */}
-            <div className="absolute -inset-full top-0 block h-full w-1/2 -skew-x-25 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shine pointer-events-none z-30" />
+            <div className="group-hover:animate-shine pointer-events-none absolute -inset-full top-0 z-30 block h-full w-1/2 -skew-x-25 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
             {/* 1. TOP HEADER: KIT NUMBER (LEFT) & ET LOGO (RIGHT) */}
-            <div className="relative z-20 w-full flex items-start justify-between">
+            <div className="relative z-20 flex w-full items-start justify-between">
               {/* TOP LEFT: Shirt Number */}
-              <div className="flex flex-col items-start leading-none pl-0.5 pt-0.5">
+              <div className="flex flex-col items-start pt-0.5 pl-0.5 leading-none">
                 <span
-                  className={cn('uppercase tracking-tighter drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]', scaleMap.num)}
+                  className={cn(
+                    'tracking-tighter uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]',
+                    scaleMap.num,
+                  )}
                   style={{
                     color: tierCfg.colors.highlight,
                     fontFamily: 'var(--font-anton), var(--font-bebas), sans-serif',
@@ -318,22 +325,25 @@ export function PlayerCard({
               </div>
 
               {/* TOP RIGHT: Integrated Metallic ET Logo Badge */}
-              <div className="flex flex-col items-center pr-0.5 pt-0.5">
+              <div className="flex flex-col items-center pt-0.5 pr-0.5">
                 <div
-                  className="px-2 py-0.5 rounded-full border border-white/20 bg-slate-950/70 backdrop-blur-md shadow-xl flex items-center justify-center group-hover:scale-105 transition-transform"
+                  className="flex items-center justify-center rounded-full border border-white/20 bg-slate-950/70 px-2 py-0.5 shadow-xl backdrop-blur-md transition-transform group-hover:scale-105"
                   style={{ borderColor: `${tierCfg.colors.accent}60` }}
                 >
-                  <ETLogo variant="card-badge" size={size === 'sm' ? 14 : size === 'md' ? 18 : 22} />
+                  <ETLogo
+                    variant="card-badge"
+                    size={size === 'sm' ? 14 : size === 'md' ? 18 : 22}
+                  />
                 </div>
               </div>
             </div>
 
             {/* 2. CENTER: CIRCULAR PLAYER PORTRAIT (PUSHED UP NEAR TOP HEADER) */}
-            <div className="relative z-10 w-full flex items-center justify-center pointer-events-none pt-0 sm:pt-1">
+            <div className="pointer-events-none relative z-10 flex w-full items-center justify-center pt-0 sm:pt-1">
               <div
                 className={cn(
-                  'rounded-full border-2 border-white/30 bg-slate-950/60 overflow-hidden flex items-center justify-center shadow-2xl relative transition-transform duration-300 group-hover:scale-105',
-                  scaleMap.avatar
+                  'relative flex items-center justify-center overflow-hidden rounded-full border-2 border-white/30 bg-slate-950/60 shadow-2xl transition-transform duration-300 group-hover:scale-105',
+                  scaleMap.avatar,
                 )}
                 style={{
                   borderColor: `${tierCfg.colors.highlight}90`,
@@ -352,25 +362,31 @@ export function PlayerCard({
             </div>
 
             {/* 3. HORIZONTAL OCD INFO ROW (NATION FLAG, CLUB CREST, SINGLE MAIN POSITION BADGE) */}
-            <div className="relative z-20 w-full flex items-center justify-center my-1.5">
+            <div className="relative z-20 my-1.5 flex w-full items-center justify-center">
               <div
                 className={cn(
-                  'w-auto rounded-full bg-slate-950/85 backdrop-blur-md border border-white/25 shadow-lg flex items-center justify-center text-center',
-                  scaleMap.infoPill
+                  'flex w-auto items-center justify-center rounded-full border border-white/25 bg-slate-950/85 text-center shadow-lg backdrop-blur-md',
+                  scaleMap.infoPill,
                 )}
                 style={{ borderColor: `${tierCfg.colors.accent}50` }}
               >
                 {/* NATION FLAG */}
-                <CountryFlagBadge nationName={player.nation} className="w-6 h-4 sm:w-7 sm:h-4.5 rounded-sm border-0 shadow-none p-0 shrink-0" />
+                <CountryFlagBadge
+                  nationName={player.nation}
+                  className="h-4 w-6 shrink-0 rounded-sm border-0 p-0 shadow-none sm:h-4.5 sm:w-7"
+                />
 
                 {/* CLUB CREST */}
-                <ClubCrestBadge clubName={player.club} className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border-0 shadow-none p-0 shrink-0" />
+                <ClubCrestBadge
+                  clubName={player.club}
+                  className="h-5 w-5 shrink-0 rounded-full border-0 p-0 shadow-none sm:h-6 sm:w-6"
+                />
 
                 {/* SINGLE MAIN POSITION BADGE */}
                 <span
                   className={cn(
-                    'font-black uppercase tracking-wider text-white bg-white/10 rounded border border-white/15 leading-none flex items-center justify-center',
-                    scaleMap.posBadge
+                    'flex items-center justify-center rounded border border-white/15 bg-white/10 leading-none font-black tracking-wider text-white uppercase',
+                    scaleMap.posBadge,
                   )}
                   style={{ fontFamily: 'var(--font-inter-tight), sans-serif' }}
                 >
@@ -380,15 +396,16 @@ export function PlayerCard({
             </div>
 
             {/* 4. BOTTOM SECTION: SLEEK FLOATING GLASS PLAYER NAME BAR */}
-            <div className="relative z-20 w-full mt-auto mb-0.5">
-              <div className="w-full bg-slate-950/85 backdrop-blur-xl border border-white/25 rounded-xl py-1.5 px-1 shadow-2xl flex items-center justify-center text-center">
+            <div className="relative z-20 mt-auto mb-0.5 w-full">
+              <div className="flex w-full items-center justify-center rounded-xl border border-white/25 bg-slate-950/85 px-1 py-1.5 text-center shadow-2xl backdrop-blur-xl">
                 <h3
                   className={cn(
-                    'font-black uppercase text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)] truncate w-full px-0.5 text-center',
-                    getDynamicNameSizeClass(displayName, size)
+                    'w-full truncate px-0.5 text-center font-black text-white uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]',
+                    getDynamicNameSizeClass(displayName, size),
                   )}
                   style={{
-                    fontFamily: 'var(--font-anton), var(--font-bebas), var(--font-inter-tight), sans-serif',
+                    fontFamily:
+                      'var(--font-anton), var(--font-bebas), var(--font-inter-tight), sans-serif',
                     background: `linear-gradient(180deg, #FFFFFF 30%, ${tierCfg.colors.highlight} 100%)`,
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
@@ -405,7 +422,7 @@ export function PlayerCard({
       {/* Optional Tier Name Below Card for Catalog / Showcase view */}
       {showTierLabelBelow && (
         <span
-          className="mt-1.5 text-[10px] font-black uppercase tracking-widest"
+          className="mt-1.5 text-[10px] font-black tracking-widest uppercase"
           style={{ color: tierCfg.colors.highlight }}
         >
           {tierCfg.name}
@@ -427,18 +444,18 @@ export function PlayerCardSkeleton({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' 
   return (
     <div
       className={cn(
-        'relative border border-white/10 bg-slate-950 p-4 animate-pulse flex flex-col justify-between overflow-hidden',
-        scaleMap
+        'relative flex animate-pulse flex-col justify-between overflow-hidden border border-white/10 bg-slate-950 p-4',
+        scaleMap,
       )}
       style={{ clipPath: chamferClip }}
     >
-      <div className="flex justify-between items-start">
-        <div className="h-7 w-7 bg-white/10 rounded-md" />
-        <div className="h-5 w-5 bg-white/10 rounded-full" />
+      <div className="flex items-start justify-between">
+        <div className="h-7 w-7 rounded-md bg-white/10" />
+        <div className="h-5 w-5 rounded-full bg-white/10" />
       </div>
-      <div className="mt-2 mb-auto h-24 w-24 rounded-full bg-white/10 mx-auto" />
-      <div className="h-6 w-32 rounded-full bg-white/10 mx-auto my-1" />
-      <div className="h-6 w-28 bg-white/10 rounded-xl mx-auto" />
+      <div className="mx-auto mt-2 mb-auto h-24 w-24 rounded-full bg-white/10" />
+      <div className="mx-auto my-1 h-6 w-32 rounded-full bg-white/10" />
+      <div className="mx-auto h-6 w-28 rounded-xl bg-white/10" />
     </div>
   );
 }

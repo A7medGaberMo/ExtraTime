@@ -56,7 +56,8 @@ export const PERK_REGISTRY: Record<PerkId, PerkDefinition> = {
  */
 export function getPerksForGame(gameType: GameType): PerkDefinition[] {
   return Object.values(PERK_REGISTRY).filter(
-    (perk) => perk.applicableGameTypes.includes('ALL') || perk.applicableGameTypes.includes(gameType)
+    (perk) =>
+      perk.applicableGameTypes.includes('ALL') || perk.applicableGameTypes.includes(gameType),
   );
 }
 
@@ -65,6 +66,13 @@ export function getPerksForGame(gameType: GameType): PerkDefinition[] {
  */
 export function getComplementaryPerks(primaryPerk: PerkId): { host: PerkId; guest: PerkId } {
   const host = primaryPerk;
-  const guest: PerkId = primaryPerk === 'SCOUT' ? 'SPY' : primaryPerk === 'SPY' ? 'SCOUT' : primaryPerk === 'FREEZE' ? 'SHIELD' : 'SCOUT';
+  const guest: PerkId =
+    primaryPerk === 'SCOUT'
+      ? 'SPY'
+      : primaryPerk === 'SPY'
+        ? 'SCOUT'
+        : primaryPerk === 'FREEZE'
+          ? 'SHIELD'
+          : 'SCOUT';
   return { host, guest };
 }

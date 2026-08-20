@@ -9,10 +9,10 @@ import { MobileNav } from '@/components/layout/mobile-nav';
 
 const sora = Sora({ subsets: ['latin'], variable: '--font-sora' });
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const rajdhani = Rajdhani({ 
-  weight: ['400', '500', '600', '700'], 
-  subsets: ['latin'], 
-  variable: '--font-rajdhani' 
+const rajdhani = Rajdhani({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-rajdhani',
 });
 const anton = Anton({ weight: ['400'], subsets: ['latin'], variable: '--font-anton' });
 const bebas = Bebas_Neue({ weight: ['400'], subsets: ['latin'], variable: '--font-bebas' });
@@ -27,12 +27,15 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_CONVEX_SITE_URL || 'https://wary-pig-127.convex.site'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_CONVEX_SITE_URL || 'https://wary-pig-127.convex.site',
+  ),
   title: {
     default: 'ExtraTime | Live Multiplayer Football Auction & Draft Arena',
     template: '%s | ExtraTime Football Draft',
   },
-  description: 'Draft legendary football icons in real-time escalating auctions (Hidden Bid). Build winning 11v11 and 5v5 futsal squads with tactical Scout & Spy perks and dynamic budget strategy.',
+  description:
+    'Draft legendary football icons in real-time escalating auctions (Hidden Bid). Build winning 11v11 and 5v5 futsal squads with tactical Scout & Spy perks and dynamic budget strategy.',
   keywords: [
     'Football Draft Game',
     'Multiplayer Football Auction',
@@ -46,10 +49,7 @@ export const metadata: Metadata = {
   creator: 'ExtraTime',
   publisher: 'ExtraTime',
   icons: {
-    icon: [
-      { url: '/ETIcon.png?v=2', type: 'image/png' },
-      { url: '/favicon.ico?v=2' },
-    ],
+    icon: [{ url: '/ETIcon.png?v=2', type: 'image/png' }, { url: '/favicon.ico?v=2' }],
     shortcut: '/ETIcon.png?v=2',
     apple: '/ETIcon.png?v=2',
   },
@@ -58,7 +58,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://extratime.app',
     title: 'ExtraTime | Live Multiplayer Football Auction Arena',
-    description: 'Draft legendary icons in real-time auctions with live turn timers, tactical perks, and 11v11 / 5v5 pitch formations.',
+    description:
+      'Draft legendary icons in real-time auctions with live turn timers, tactical perks, and 11v11 / 5v5 pitch formations.',
     siteName: 'ExtraTime',
     images: [
       {
@@ -77,18 +78,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark overflow-x-hidden">
-      <body className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-lime selection:text-background`}>
+      <body
+        className={`${sora.variable} ${inter.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${interTight.variable} bg-background text-foreground selection:bg-lime selection:text-background flex min-h-screen flex-col justify-between overflow-x-hidden font-sans antialiased`}
+      >
         <ConvexClientProvider>
           <ToastProvider>
             <Header />
-            <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 pb-24 md:pb-8 animate-fade-in">
+            <main className="animate-fade-in mx-auto w-full max-w-7xl flex-1 px-4 py-8 pb-24 md:pb-8">
               {children}
             </main>
             <Footer />

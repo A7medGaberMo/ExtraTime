@@ -56,7 +56,7 @@ export class TacticalMatchSimulatorStrategy implements IMatchSimulatorStrategy {
     guestSquad: PlayerCardData[],
     hostBudget: number,
     guestBudget: number,
-    seed: string
+    seed: string,
   ): MatchSimulationResult {
     const result = simulateTacticalMatch(
       roomId,
@@ -65,7 +65,7 @@ export class TacticalMatchSimulatorStrategy implements IMatchSimulatorStrategy {
       hostBudget,
       guestBudget,
       seed,
-      { gameType: 'hidden_bid' }
+      { gameType: 'hidden_bid' },
     );
     return toMatchSimulationResult(result);
   }

@@ -15,10 +15,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PacksLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function PacksLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

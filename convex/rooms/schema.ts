@@ -1,25 +1,25 @@
-import { defineTable } from "convex/server";
-import { v } from "convex/values";
-import { roomSettingsValidator } from "../lib/constants";
+import { defineTable } from 'convex/server';
+import { v } from 'convex/values';
+import { roomSettingsValidator } from '../lib/constants';
 
 export const roomsTable = defineTable({
   code: v.string(),
-  hostId: v.id("guestUsers"),
-  guestId: v.optional(v.id("guestUsers")),
+  hostId: v.id('guestUsers'),
+  guestId: v.optional(v.id('guestUsers')),
   gameType: v.string(),
   status: v.union(
-    v.literal("waiting"),
-    v.literal("ready"),
-    v.literal("in_progress"),
-    v.literal("completed"),
-    v.literal("abandoned")
+    v.literal('waiting'),
+    v.literal('ready'),
+    v.literal('in_progress'),
+    v.literal('completed'),
+    v.literal('abandoned'),
   ),
   isPublic: v.optional(v.boolean()),
   isSolo: v.optional(v.boolean()),
   settings: roomSettingsValidator,
   createdAt: v.number(),
 })
-  .index("by_code", ["code"])
-  .index("by_status", ["status"])
-  .index("by_host", ["hostId"])
-  .index("by_public_status", ["isPublic", "status"]);
+  .index('by_code', ['code'])
+  .index('by_status', ['status'])
+  .index('by_host', ['hostId'])
+  .index('by_public_status', ['isPublic', 'status']);

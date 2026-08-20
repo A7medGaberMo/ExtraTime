@@ -1,20 +1,20 @@
-import { mutation } from "../_generated/server";
-import { Id, DataModel, Doc } from "../_generated/dataModel";
-import { v } from "convex/values";
-import { GenericMutationCtx } from "convex/server";
-import { hashSeed, mulberry32 } from "../../src/core/simulation/match-simulator";
-import { isAuctionParticipant } from "./sealedView";
+import { mutation } from '../_generated/server';
+import { Id, DataModel, Doc } from '../_generated/dataModel';
+import { v } from 'convex/values';
+import { GenericMutationCtx } from 'convex/server';
+import { hashSeed, mulberry32 } from '../../src/core/simulation/match-simulator';
+import { isAuctionParticipant } from './sealedView';
 
 // ── Helpers ──────────────────────────────────────────────────────
 
-async function getActiveAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<"rooms">) {
+async function getActiveAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<'rooms'>) {
   const auction = await ctx.db
-    .query("auctions")
-    .withIndex("by_room", (q) => q.eq("roomId", roomId))
+    .query('auctions')
+    .withIndex('by_room', (q) => q.eq('roomId', roomId))
     .first();
-  if (!auction) throw new Error("Auction not found");
-  if (auction.status !== "active") throw new Error("Auction is not active");
-  if (!auction.guest) throw new Error("Waiting for opponent");
+  if (!auction) throw new Error('Auction not found');
+  if (auction.status !== 'active') throw new Error('Auction is not active');
+  if (!auction.guest) throw new Error('Waiting for opponent');
   return auction;
 }
 
@@ -28,7 +28,7 @@ interface SealedResolution {
   position: string;
   hostBid: number;
   guestBid: number;
-  winnerUserId: Id<"guestUsers"> | undefined;
+  winnerUserId: Id<'guestUsers'> | undefined;
   winningPrice: number;
   wasTieLottery: boolean;
   completed: boolean;
@@ -47,8 +47,8 @@ interface SealedResolution {
  */
 async function resolveSealedRoundCore(
   ctx: GenericMutationCtx<DataModel>,
-  roomId: Id<"rooms">,
-  auction: Doc<"auctions">
+  roomId: Id<'rooms'>,
+  auction: Doc<'auctions'>,
 ): Promise<SealedResolution> {
   const round = auction.rounds[auction.currentRound - 1];
   const history = [...(auction.roundHistory ?? [])];
@@ -72,7 +72,7 @@ async function resolveSealedRoundCore(
   const host = { ...auction.host, squad: [...auction.host.squad] };
   const guest = { ...auction.guest!, squad: [...auction.guest!.squad] };
 
-  let winnerUserId: Id<"guestUsers"> | undefined;
+  let winnerUserId: Id<'guestUsers'> | undefined;
   let winningPrice = 0;
   let wasTieLottery = false;
 
@@ -87,7 +87,9 @@ async function resolveSealedRoundCore(
     winningPrice = guestBid;
   } else {
     // Equal sealed bids (> $0M) — deterministic lot draw via room seed.
-    const lotRng = mulberry32(hashSeed(`${auction.seed ?? roomId}:${auction.currentRound}:lottery`));
+    const lotRng = mulberry32(
+      hashSeed(`${auction.seed ?? roomId}:${auction.currentRound}:lottery`),
+    );
     winnerUserId = lotRng() < 0.5 ? host.userId : guest.userId;
     winningPrice = hostBid;
     wasTieLottery = true;
@@ -151,7 +153,7 @@ async function resolveSealedRoundCore(
   const nextRoundNum = auction.currentRound + 1;
 
   await ctx.db.patch(auction._id, {
-    status: completed ? "completed" : "active",
+    status: completed ? 'completed' : 'active',
     currentRound: completed ? auction.currentRound : nextRoundNum,
     host,
     guest,
@@ -161,28 +163,32 @@ async function resolveSealedRoundCore(
     currentBidding: {
       highestBid: 0,
       highestBidderId: undefined,
-      activeTurnUserId: completed ? undefined : starterIsHost(nextRoundNum) ? host.userId : guest.userId,
+      activeTurnUserId: completed
+        ? undefined
+        : starterIsHost(nextRoundNum)
+          ? host.userId
+          : guest.userId,
       turnExpiresAt: Date.now() + 30000,
       firstPassUserId: undefined,
     },
   });
 
   if (completed) {
-    await ctx.db.patch(roomId, { status: "completed" });
+    await ctx.db.patch(roomId, { status: 'completed' });
     // Auto-create the pending match so the Universal Score Hub can latch on.
     const existing = await ctx.db
-      .query("matches")
-      .withIndex("by_room", (q) => q.eq("roomId", roomId))
+      .query('matches')
+      .withIndex('by_room', (q) => q.eq('roomId', roomId))
       .first();
     if (!existing) {
-      await ctx.db.insert("matches", {
+      await ctx.db.insert('matches', {
         roomId,
         hostSquad: host.squad.map((s) => s.playerId),
         guestSquad: guest.squad.map((s) => s.playerId),
         score: { host: 0, guest: 0 },
-        status: "pending",
+        status: 'pending',
         seed: auction.seed,
-        gameType: "hidden_bid",
+        gameType: 'hidden_bid',
       });
     }
   }
@@ -208,8 +214,8 @@ async function resolveSealedRoundCore(
  */
 export const submitSealedBid = mutation({
   args: {
-    roomId: v.id("rooms"),
-    userId: v.id("guestUsers"),
+    roomId: v.id('rooms'),
+    userId: v.id('guestUsers'),
     amount: v.number(),
   },
   handler: async (ctx, args) => {
@@ -217,10 +223,10 @@ export const submitSealedBid = mutation({
 
     const isHost = auction.host.userId === args.userId;
     const me = isHost ? auction.host : auction.guest;
-    if (!me) throw new Error("Player is not in this auction");
+    if (!me) throw new Error('Player is not in this auction');
 
     if (!Number.isInteger(args.amount) || args.amount < 0) {
-      throw new Error("Bid must be a whole number of $M (0 = pass)");
+      throw new Error('Bid must be a whole number of $M (0 = pass)');
     }
     if (args.amount > me.budget) {
       throw new Error(`Insufficient budget. You have $${me.budget}M`);
@@ -231,14 +237,14 @@ export const submitSealedBid = mutation({
       guest?: { amount: number; submittedAt: number };
     };
     const sealedBids: SealedBidsShape = { ...(auction.sealedBids ?? {}) };
-    const myKey = isHost ? "host" : "guest";
+    const myKey = isHost ? 'host' : 'guest';
     const mySealed = sealedBids[myKey];
-    if (mySealed) throw new Error("Your sealed bid is already locked ✉️");
+    if (mySealed) throw new Error('Your sealed bid is already locked ✉️');
 
     // Blind phase guard — the envelope is sealed at the deadline.
     const deadline = auction.bidDeadline ?? 0;
     if (deadline > 0 && Date.now() > deadline + 2000) {
-      throw new Error("Blind bid phase has expired");
+      throw new Error('Blind bid phase has expired');
     }
 
     sealedBids[myKey] = { amount: args.amount, submittedAt: Date.now() };
@@ -271,14 +277,14 @@ export const submitSealedBid = mutation({
  */
 export const resolveSealedRound = mutation({
   args: {
-    roomId: v.id("rooms"),
-    userId: v.id("guestUsers"),
+    roomId: v.id('rooms'),
+    userId: v.id('guestUsers'),
   },
   handler: async (ctx, args) => {
     const auction = await getActiveAuction(ctx, args.roomId);
 
     if (!isAuctionParticipant(auction, args.userId)) {
-      throw new Error("Only auction participants can resolve the round");
+      throw new Error('Only auction participants can resolve the round');
     }
 
     const history = auction.roundHistory ?? [];
@@ -288,7 +294,7 @@ export const resolveSealedRound = mutation({
       const deadline = auction.bidDeadline ?? 0;
       const expired = deadline > 0 && Date.now() >= deadline;
       if (!bothLocked && !expired) {
-        throw new Error("Blind phase still active — waiting for both sealed bids");
+        throw new Error('Blind phase still active — waiting for both sealed bids');
       }
     }
 

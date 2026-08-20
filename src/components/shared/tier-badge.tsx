@@ -14,8 +14,8 @@ export function TierBadge({ className, tier, ...props }: TierBadgeProps) {
   return (
     <div
       className={cn(
-        'inline-flex items-center rounded-md px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider transition-all focus:outline-none border shadow-sm',
-        className
+        'inline-flex items-center rounded-md border px-2.5 py-0.5 text-[10px] font-black tracking-wider uppercase shadow-sm transition-all focus:outline-none',
+        className,
       )}
       style={{
         color: style.highlight,

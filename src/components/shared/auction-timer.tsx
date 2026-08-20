@@ -12,7 +12,13 @@ interface AuctionTimerProps {
   showBoost?: boolean;
 }
 
-export function AuctionTimer({ timeLeft, maxTime = 30, isActive, size = 64, showBoost = false }: AuctionTimerProps) {
+export function AuctionTimer({
+  timeLeft,
+  maxTime = 30,
+  isActive,
+  size = 64,
+  showBoost = false,
+}: AuctionTimerProps) {
   const prevTimeRef = useRef(timeLeft);
   const [boostActive, setBoostActive] = useState(false);
 
@@ -34,22 +40,31 @@ export function AuctionTimer({ timeLeft, maxTime = 30, isActive, size = 64, show
   const isCritical = timeLeft <= 4 && isActive;
 
   return (
-    <div className="relative flex items-center justify-center group" style={{ width: size, height: size }}>
+    <div
+      className="group relative flex items-center justify-center"
+      style={{ width: size, height: size }}
+    >
       {/* Outer ambient glow */}
       <div
         className={cn(
-          'absolute inset-0 rounded-full blur-md transition-opacity duration-300 pointer-events-none opacity-20',
-          isCritical ? 'bg-rose-500 opacity-60' : isUrgent ? 'bg-amber-500' : boostActive ? 'bg-amber-400 opacity-80' : 'bg-lime'
+          'pointer-events-none absolute inset-0 rounded-full opacity-20 blur-md transition-opacity duration-300',
+          isCritical
+            ? 'bg-rose-500 opacity-60'
+            : isUrgent
+              ? 'bg-amber-500'
+              : boostActive
+                ? 'bg-amber-400 opacity-80'
+                : 'bg-lime',
         )}
       />
 
-      <svg width={size} height={size} className="transform -rotate-90">
+      <svg width={size} height={size} className="-rotate-90 transform">
         <circle
           cx={size / 2}
           cy={size / 2}
           r={radius}
           strokeWidth="4"
-          className="stroke-slate-900 fill-card"
+          className="fill-card stroke-slate-900"
         />
         <circle
           cx={size / 2}
@@ -59,15 +74,9 @@ export function AuctionTimer({ timeLeft, maxTime = 30, isActive, size = 64, show
           strokeDasharray={circumference}
           strokeDashoffset={offset}
           strokeLinecap="round"
-          className="transition-all duration-500 ease-out fill-transparent"
+          className="fill-transparent transition-all duration-500 ease-out"
           stroke={
-            isCritical
-              ? '#F43F5E'
-              : isUrgent
-              ? '#F59E0B'
-              : boostActive
-              ? '#FBBF24'
-              : '#95E810'
+            isCritical ? '#F43F5E' : isUrgent ? '#F59E0B' : boostActive ? '#FBBF24' : '#95E810'
           }
         />
       </svg>
@@ -75,28 +84,30 @@ export function AuctionTimer({ timeLeft, maxTime = 30, isActive, size = 64, show
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <span
           className={cn(
-            'font-stats font-bold text-lg leading-none transition-all duration-300',
-            isCritical && 'text-rose-400 animate-pulse scale-110',
+            'font-stats text-lg leading-none font-bold transition-all duration-300',
+            isCritical && 'scale-110 animate-pulse text-rose-400',
             isUrgent && !isCritical && 'text-amber-400',
-            boostActive && 'text-amber-300 scale-110',
+            boostActive && 'scale-110 text-amber-300',
             !isUrgent && !boostActive && 'text-lime',
-            !isActive && 'text-steel'
+            !isActive && 'text-steel',
           )}
         >
           {timeLeft}
         </span>
-        <span className="text-[7px] font-black uppercase text-steel tracking-widest mt-0.5">sec</span>
+        <span className="text-steel mt-0.5 text-[7px] font-black tracking-widest uppercase">
+          sec
+        </span>
       </div>
 
       {/* Perk +10s boost floating banner */}
       {(boostActive || showBoost) && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-950 px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider flex items-center gap-1 shadow-lg border border-amber-300 animate-bounce whitespace-nowrap z-20">
-          <Zap className="w-2.5 h-2.5 fill-slate-950" /> +10s BOOST
+        <div className="absolute -top-3 left-1/2 z-20 flex -translate-x-1/2 animate-bounce items-center gap-1 rounded-full border border-amber-300 bg-amber-400 px-2 py-0.5 text-[9px] font-black tracking-wider whitespace-nowrap text-slate-950 uppercase shadow-lg">
+          <Zap className="h-2.5 w-2.5 fill-slate-950" /> +10s BOOST
         </div>
       )}
 
       {isUrgent && (
-        <div className="absolute inset-0 rounded-full border border-rose-500/40 animate-ping pointer-events-none" />
+        <div className="pointer-events-none absolute inset-0 animate-ping rounded-full border border-rose-500/40" />
       )}
     </div>
   );

@@ -16,12 +16,7 @@ interface CardDetailModalProps {
   onSelectCard?: (card: PlayerCardData) => void;
 }
 
-export function CardDetailModal({
-  card,
-  onClose,
-  cardsList,
-  onSelectCard,
-}: CardDetailModalProps) {
+export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: CardDetailModalProps) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -63,12 +58,12 @@ export function CardDetailModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-lg flex items-center justify-center p-3 sm:p-4 animate-fade-in overflow-y-auto"
+      className="animate-fade-in fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-slate-950/90 p-3 backdrop-blur-lg sm:p-4"
       onClick={onClose}
       id="modal-card-inspection"
     >
       <div
-        className="relative bg-slate-900/95 border border-white/15 rounded-2xl sm:rounded-3xl p-4 sm:p-6 max-w-sm sm:max-w-md w-full shadow-2xl flex flex-col items-center gap-3.5 animate-scale-in my-auto max-h-[92vh] overflow-y-auto"
+        className="animate-scale-in relative my-auto flex max-h-[92vh] w-full max-w-sm flex-col items-center gap-3.5 overflow-y-auto rounded-2xl border border-white/15 bg-slate-900/95 p-4 shadow-2xl sm:max-w-md sm:rounded-3xl sm:p-6"
         style={{
           boxShadow: `0 24px 48px rgba(0,0,0,0.8), 0 0 32px ${tierStyle.glow}`,
           borderColor: `${tierStyle.accent}40`,
@@ -76,88 +71,100 @@ export function CardDetailModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Bar with Navigation & Close */}
-        <div className="w-full flex items-center justify-between pb-1">
-          <div className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full bg-slate-950/80 border" style={{ borderColor: `${tierStyle.accent}50`, color: tierStyle.highlight }}>
+        <div className="flex w-full items-center justify-between pb-1">
+          <div
+            className="flex items-center gap-1.5 rounded-full border bg-slate-950/80 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase"
+            style={{ borderColor: `${tierStyle.accent}50`, color: tierStyle.highlight }}
+          >
             <ETLogo variant="icon-only" size={12} />
             <span>Card Telemetry</span>
           </div>
 
           <div className="flex items-center gap-1">
             {cardsList && cardsList.length > 1 && (
-              <span className="text-[10px] font-mono text-steel px-2 font-bold">
+              <span className="text-steel px-2 font-mono text-[10px] font-bold">
                 {currentIndex + 1} / {cardsList.length}
               </span>
             )}
             <button
               onClick={onClose}
-              className="p-1.5 rounded-xl bg-slate-950 text-steel hover:text-white border border-white/10 hover:border-lime/40 transition-colors cursor-pointer"
+              className="text-steel hover:border-lime/40 cursor-pointer rounded-xl border border-white/10 bg-slate-950 p-1.5 transition-colors hover:text-white"
               id="btn-close-card-modal"
               aria-label="Close"
             >
-              <X className="w-4 h-4" />
+              <X className="h-4 w-4" />
             </button>
           </div>
         </div>
 
         {/* 3D Holographic Card View with Next/Prev Arrow Triggers */}
-        <div className="relative w-full flex items-center justify-center my-1">
+        <div className="relative my-1 flex w-full items-center justify-center">
           {hasPrev && (
             <button
               onClick={handlePrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-slate-950/80 border border-white/20 text-white hover:scale-110 active:scale-95 transition-all shadow-xl backdrop-blur-md cursor-pointer"
+              className="absolute top-1/2 left-0 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/80 p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 active:scale-95"
               aria-label="Previous Card"
             >
-              <ChevronLeft className="w-4 h-4" />
+              <ChevronLeft className="h-4 w-4" />
             </button>
           )}
 
-          <div className="scale-90 sm:scale-100 transition-transform">
+          <div className="scale-90 transition-transform sm:scale-100">
             <PlayerCard player={card} size="lg" showTierLabelBelow />
           </div>
 
           {hasNext && (
             <button
               onClick={handleNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-slate-950/80 border border-white/20 text-white hover:scale-110 active:scale-95 transition-all shadow-xl backdrop-blur-md cursor-pointer"
+              className="absolute top-1/2 right-0 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/80 p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 active:scale-95"
               aria-label="Next Card"
             >
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight className="h-4 w-4" />
             </button>
           )}
         </div>
 
         {/* Player Metadata Specs Grid */}
-        <div className="w-full grid grid-cols-2 gap-2 text-xs bg-slate-950/90 p-3 rounded-xl sm:rounded-2xl border border-white/10">
-          <div className="space-y-1 p-2 rounded-lg sm:rounded-xl bg-slate-900/70 border border-white/5 flex items-center gap-2">
-            <ClubCrestBadge clubName={card.club} className="w-6 h-6 sm:w-7 sm:h-7 shrink-0" />
+        <div className="grid w-full grid-cols-2 gap-2 rounded-xl border border-white/10 bg-slate-950/90 p-3 text-xs sm:rounded-2xl">
+          <div className="flex items-center gap-2 space-y-1 rounded-lg border border-white/5 bg-slate-900/70 p-2 sm:rounded-xl">
+            <ClubCrestBadge clubName={card.club} className="h-6 w-6 shrink-0 sm:h-7 sm:w-7" />
             <div className="min-w-0">
-              <span className="text-[8px] sm:text-[9px] text-steel font-bold uppercase block flex items-center gap-1">
-                <Shield className="w-2.5 h-2.5" /> Club
+              <span className="text-steel block flex items-center gap-1 text-[8px] font-bold uppercase sm:text-[9px]">
+                <Shield className="h-2.5 w-2.5" /> Club
               </span>
-              <p className="text-white font-bold truncate text-[10px] sm:text-[11px]">{card.club}</p>
+              <p className="truncate text-[10px] font-bold text-white sm:text-[11px]">
+                {card.club}
+              </p>
             </div>
           </div>
 
-          <div className="space-y-1 p-2 rounded-lg sm:rounded-xl bg-slate-900/70 border border-white/5 flex items-center gap-2">
-            <CountryFlagBadge nationName={card.nation} className="w-6 h-6 sm:w-7 sm:h-7 shrink-0" />
+          <div className="flex items-center gap-2 space-y-1 rounded-lg border border-white/5 bg-slate-900/70 p-2 sm:rounded-xl">
+            <CountryFlagBadge nationName={card.nation} className="h-6 w-6 shrink-0 sm:h-7 sm:w-7" />
             <div className="min-w-0">
-              <span className="text-[8px] sm:text-[9px] text-steel font-bold uppercase block flex items-center gap-1">
-                <Globe className="w-2.5 h-2.5" /> Nation
+              <span className="text-steel block flex items-center gap-1 text-[8px] font-bold uppercase sm:text-[9px]">
+                <Globe className="h-2.5 w-2.5" /> Nation
               </span>
-              <p className="text-white font-bold truncate text-[10px] sm:text-[11px]">{card.nation}</p>
+              <p className="truncate text-[10px] font-bold text-white sm:text-[11px]">
+                {card.nation}
+              </p>
             </div>
           </div>
 
-          <div className="space-y-0.5 p-2 rounded-lg sm:rounded-xl bg-slate-900/70 border border-white/5">
-            <span className="text-[8px] sm:text-[9px] text-steel font-bold uppercase block">Position</span>
-            <p className="text-lime font-black font-mono text-xs sm:text-sm">{card.position}</p>
-          </div>
-
-          <div className="space-y-0.5 p-2 rounded-lg sm:rounded-xl bg-slate-900/70 border border-white/5">
-            <span className="text-[8px] sm:text-[9px] text-steel font-bold uppercase block flex items-center gap-1">
-              <Award className="w-2.5 h-2.5" /> Classification
+          <div className="space-y-0.5 rounded-lg border border-white/5 bg-slate-900/70 p-2 sm:rounded-xl">
+            <span className="text-steel block text-[8px] font-bold uppercase sm:text-[9px]">
+              Position
             </span>
-            <p className="font-black font-mono text-xs sm:text-sm" style={{ color: tierStyle.highlight }}>
+            <p className="text-lime font-mono text-xs font-black sm:text-sm">{card.position}</p>
+          </div>
+
+          <div className="space-y-0.5 rounded-lg border border-white/5 bg-slate-900/70 p-2 sm:rounded-xl">
+            <span className="text-steel block flex items-center gap-1 text-[8px] font-bold uppercase sm:text-[9px]">
+              <Award className="h-2.5 w-2.5" /> Classification
+            </span>
+            <p
+              className="font-mono text-xs font-black sm:text-sm"
+              style={{ color: tierStyle.highlight }}
+            >
               {card.tier}
             </p>
           </div>
@@ -166,7 +173,7 @@ export function CardDetailModal({
         {/* Action Button */}
         <button
           onClick={onClose}
-          className="w-full py-2.5 sm:py-3 bg-lime hover:bg-vivid text-slate-950 font-black text-xs uppercase tracking-widest rounded-xl shadow-lg transition-all active:scale-95 cursor-pointer"
+          className="bg-lime hover:bg-vivid w-full cursor-pointer rounded-xl py-2.5 text-xs font-black tracking-widest text-slate-950 uppercase shadow-lg transition-all active:scale-95 sm:py-3"
           id="btn-done-modal"
         >
           Close Inspection

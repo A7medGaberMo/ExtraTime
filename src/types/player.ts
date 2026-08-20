@@ -3,19 +3,7 @@ export type Tier = 'ICON' | 'HERO' | 'ULTIMATE' | 'MASTER' | 'ELITE' | 'GOLD' | 
 
 /** Specific football positions */
 export type Position =
-  | 'GK'
-  | 'CB'
-  | 'LB'
-  | 'RB'
-  | 'CDM'
-  | 'CM'
-  | 'CAM'
-  | 'LM'
-  | 'RM'
-  | 'LW'
-  | 'RW'
-  | 'ST'
-  | 'CF';
+  'GK' | 'CB' | 'LB' | 'RB' | 'CDM' | 'CM' | 'CAM' | 'LM' | 'RM' | 'LW' | 'RW' | 'ST' | 'CF';
 
 export type PlayerPosition = Position | `${Position}/${Position}` | string;
 

@@ -1,9 +1,6 @@
 import type { PlayerCardData } from '@/types/player';
 
-export type GameType =
-  | 'hidden_bid'
-  | 'pack_opening_duel'
-  | 'penalty_shootout';
+export type GameType = 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout';
 
 export type TimelineEventType =
   | 'KICKOFF'
@@ -99,6 +96,6 @@ export interface IMatchSimulatorStrategy {
     guestSquad: PlayerCardData[],
     hostBudget: number,
     guestBudget: number,
-    seed: string
+    seed: string,
   ): MatchSimulationResult;
 }

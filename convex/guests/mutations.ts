@@ -1,5 +1,5 @@
-import { mutation } from "../_generated/server";
-import { v } from "convex/values";
+import { mutation } from '../_generated/server';
+import { v } from 'convex/values';
 
 export const create = mutation({
   args: {
@@ -8,7 +8,7 @@ export const create = mutation({
   },
   handler: async (ctx, args) => {
     const now = Date.now();
-    return await ctx.db.insert("guestUsers", {
+    return await ctx.db.insert('guestUsers', {
       ...args,
       createdAt: now,
       lastActiveAt: now,
@@ -17,7 +17,7 @@ export const create = mutation({
 });
 
 export const updateLastActive = mutation({
-  args: { id: v.id("guestUsers") },
+  args: { id: v.id('guestUsers') },
   handler: async (ctx, args) => {
     await ctx.db.patch(args.id, { lastActiveAt: Date.now() });
   },

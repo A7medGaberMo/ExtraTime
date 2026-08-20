@@ -1,14 +1,14 @@
-import { query } from "../_generated/server";
-import { v } from "convex/values";
-import { GenericQueryCtx } from "convex/server";
-import { DataModel, Doc, Id } from "../_generated/dataModel";
-import { Tier } from "../lib/constants";
+import { query } from '../_generated/server';
+import { v } from 'convex/values';
+import { GenericQueryCtx } from 'convex/server';
+import { DataModel, Doc, Id } from '../_generated/dataModel';
+import { Tier } from '../lib/constants';
 
 // ── Batch Hydration Helper ───────────────────────────────────
 
-async function hydratePlayers(ctx: GenericQueryCtx<DataModel>, players: Doc<"players">[]) {
-  const clubIds = new Set<Id<"clubs">>();
-  const nationIds = new Set<Id<"nations">>();
+async function hydratePlayers(ctx: GenericQueryCtx<DataModel>, players: Doc<'players'>[]) {
+  const clubIds = new Set<Id<'clubs'>>();
+  const nationIds = new Set<Id<'nations'>>();
 
   for (const p of players) {
     if (p.clubId) clubIds.add(p.clubId);
@@ -20,12 +20,12 @@ async function hydratePlayers(ctx: GenericQueryCtx<DataModel>, players: Doc<"pla
     Promise.all([...nationIds].map((id) => ctx.db.get(id))),
   ]);
 
-  const clubMap = new Map<string, Doc<"clubs">>();
+  const clubMap = new Map<string, Doc<'clubs'>>();
   for (const c of clubDocs) {
     if (c) clubMap.set(String(c._id), c);
   }
 
-  const nationMap = new Map<string, Doc<"nations">>();
+  const nationMap = new Map<string, Doc<'nations'>>();
   for (const n of nationDocs) {
     if (n) nationMap.set(String(n._id), n);
   }
@@ -42,10 +42,10 @@ async function hydratePlayers(ctx: GenericQueryCtx<DataModel>, players: Doc<"pla
       kitNumber: p.kitNumber,
       imageUrl: p.imageUrl,
       seasonYear: p.seasonYear,
-      club: club?.name ?? "World Football Club",
-      clubLogo: club?.logo ?? "",
-      nation: nation?.name ?? "International",
-      nationFlag: nation?.flag ?? "",
+      club: club?.name ?? 'World Football Club',
+      clubLogo: club?.logo ?? '',
+      nation: nation?.name ?? 'International',
+      nationFlag: nation?.flag ?? '',
     };
   });
 }
@@ -65,15 +65,42 @@ export const getPackPools = query({
 
     const [icons, heroes, ultimates, masters, elites, golds, silvers, bronzes, legends] =
       await Promise.all([
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "ICON")).take(sampleSize),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "HERO")).take(sampleSize),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "ULTIMATE")).take(sampleSize),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "MASTER")).take(sampleSize),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "ELITE")).take(sampleSize),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "GOLD")).take(sampleSize),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "SILVER")).take(sampleSize),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "BRONZE")).take(sampleSize),
-        ctx.db.query("players").withIndex("by_legend", (q) => q.eq("isLegend", true)).take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_tier', (q) => q.eq('tier', 'ICON'))
+          .take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_tier', (q) => q.eq('tier', 'HERO'))
+          .take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_tier', (q) => q.eq('tier', 'ULTIMATE'))
+          .take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_tier', (q) => q.eq('tier', 'MASTER'))
+          .take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_tier', (q) => q.eq('tier', 'ELITE'))
+          .take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_tier', (q) => q.eq('tier', 'GOLD'))
+          .take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_tier', (q) => q.eq('tier', 'SILVER'))
+          .take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_tier', (q) => q.eq('tier', 'BRONZE'))
+          .take(sampleSize),
+        ctx.db
+          .query('players')
+          .withIndex('by_legend', (q) => q.eq('isLegend', true))
+          .take(sampleSize),
       ]);
 
     const allDocs = [
@@ -88,7 +115,7 @@ export const getPackPools = query({
     ];
 
     // Deduplicate by doc ID before hydrating
-    const uniqueMap = new Map<string, Doc<"players">>();
+    const uniqueMap = new Map<string, Doc<'players'>>();
     for (const doc of allDocs) {
       uniqueMap.set(String(doc._id), doc);
     }
@@ -121,17 +148,40 @@ export const getPackPools = query({
 export const getPacksOverview = query({
   args: {},
   handler: async (ctx) => {
-    const [icons, heroes, ultimates, masters, elites, golds, silvers, bronzes] =
-      await Promise.all([
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "ICON")).take(500),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "HERO")).take(500),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "ULTIMATE")).take(500),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "MASTER")).take(500),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "ELITE")).take(500),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "GOLD")).take(500),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "SILVER")).take(500),
-        ctx.db.query("players").withIndex("by_tier", (q) => q.eq("tier", "BRONZE")).take(500),
-      ]);
+    const [icons, heroes, ultimates, masters, elites, golds, silvers, bronzes] = await Promise.all([
+      ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'ICON'))
+        .take(500),
+      ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'HERO'))
+        .take(500),
+      ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'ULTIMATE'))
+        .take(500),
+      ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'MASTER'))
+        .take(500),
+      ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'ELITE'))
+        .take(500),
+      ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'GOLD'))
+        .take(500),
+      ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'SILVER'))
+        .take(500),
+      ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'BRONZE'))
+        .take(500),
+    ]);
 
     return {
       counts: {

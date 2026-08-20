@@ -44,7 +44,7 @@ export function PlayerImage({
   const playerName = name || alt || 'Player';
   const calculatedVariant: 0 | 1 | 2 | 3 | 4 | 5 =
     variant ??
-    (((playerName.charCodeAt(0) || 0) + playerName.length) % 6 as 0 | 1 | 2 | 3 | 4 | 5);
+    ((((playerName.charCodeAt(0) || 0) + playerName.length) % 6) as 0 | 1 | 2 | 3 | 4 | 5);
 
   const isValidUrl =
     Boolean(src) &&
@@ -54,7 +54,12 @@ export function PlayerImage({
     !hasError;
 
   return (
-    <div className={cn('relative w-full h-full flex items-center justify-center overflow-hidden', className)}>
+    <div
+      className={cn(
+        'relative flex h-full w-full items-center justify-center overflow-hidden',
+        className,
+      )}
+    >
       {isValidUrl ? (
         /* eslint-disable-next-line @next/next/no-img-element */
         <img
@@ -62,13 +67,13 @@ export function PlayerImage({
           alt={alt || name || 'Player'}
           referrerPolicy="no-referrer"
           onError={() => setHasError(true)}
-          className={cn('w-full h-full object-cover object-top', imgClassName)}
+          className={cn('h-full w-full object-cover object-top', imgClassName)}
         />
       ) : (
-        <div className={cn('w-full h-full flex items-center justify-center', fallbackClassName)}>
+        <div className={cn('flex h-full w-full items-center justify-center', fallbackClassName)}>
           <PlayerSilhouette
             variant={calculatedVariant}
-            className={cn('w-3/4 h-3/4 text-white/90', silhouetteClassName)}
+            className={cn('h-3/4 w-3/4 text-white/90', silhouetteClassName)}
           />
         </div>
       )}
