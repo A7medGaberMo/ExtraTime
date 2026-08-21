@@ -3,14 +3,14 @@ import type { GameType } from '@/types/game';
 import type { RoomStatus } from '@/types/room';
 
 export const APP_NAME = 'ExtraTime';
-export const APP_DESCRIPTION = 'The premium football gaming platform';
+export const APP_DESCRIPTION = 'The premier football strategy and draft arena';
 
 /** Room code length */
 export const ROOM_CODE_LENGTH = 6;
 
 /** Nickname constraints */
 export const NICKNAME_MIN_LENGTH = 2;
-export const NICKNAME_MAX_LENGTH = 16;
+export const NICKNAME_MAX_LENGTH = 24;
 
 // ---------------------------------------------------------------------------
 // Tier configuration — display properties only, no numerical ratings
@@ -19,14 +19,14 @@ export const TIER_CONFIG: Record<
   Tier,
   { label: string; color: string; gradient: [string, string] }
 > = {
-  ICON: { label: 'Icon', color: '#F59E0B', gradient: ['#F59E0B', '#D97706'] },
+  ICON: { label: 'Icon', color: '#D4AF37', gradient: ['#F7F5EF', '#D4AF37'] },
   HERO: { label: 'Hero', color: '#10B981', gradient: ['#10B981', '#059669'] },
   ULTIMATE: { label: 'Ultimate', color: '#0EA5E9', gradient: ['#0EA5E9', '#0369A1'] },
   MASTER: { label: 'Master', color: '#A855F7', gradient: ['#A855F7', '#7C3AED'] },
-  ELITE: { label: 'Elite', color: '#06B6D4', gradient: ['#06B6D4', '#0891B2'] },
+  ELITE: { label: 'Elite', color: '#E11D48', gradient: ['#E11D48', '#881337'] },
   GOLD: { label: 'Gold', color: '#EAB308', gradient: ['#EAB308', '#CA8A04'] },
-  SILVER: { label: 'Silver', color: '#94A3B8', gradient: ['#94A3B8', '#64748B'] },
-  BRONZE: { label: 'Bronze', color: '#CD7F32', gradient: ['#CD7F32', '#A0522D'] },
+  SILVER: { label: 'Silver', color: '#CBD5E1', gradient: ['#CBD5E1', '#64748B'] },
+  BRONZE: { label: 'Bronze', color: '#C97A3A', gradient: ['#C97A3A', '#A0522D'] },
 };
 
 /** Ordered tiers from highest to lowest */
@@ -71,9 +71,9 @@ export const GAME_TYPE_CONFIG: Record<
   { label: string; description: string; icon: string }
 > = {
   hidden_bid: {
-    label: 'Hidden Bid',
-    description: 'Outbid your opponent in a blind auction to build the ultimate squad.',
-    icon: '🏆',
+    label: 'Snipe',
+    description: 'Outbid your opponent in a secret bid auction to build the ultimate squad.',
+    icon: '🎯',
   },
   pack_opening_duel: {
     label: 'Pack Duel',
@@ -91,7 +91,7 @@ export const GAME_TYPE_CONFIG: Record<
 // Room status display
 // ---------------------------------------------------------------------------
 export const ROOM_STATUS_CONFIG: Record<RoomStatus, { label: string; color: string }> = {
-  waiting: { label: 'Waiting', color: 'text-primary' },
+  waiting: { label: 'Waiting', color: 'text-lime' },
   ready: { label: 'Ready', color: 'text-blue-400' },
   in_progress: { label: 'In Progress', color: 'text-amber-400' },
   completed: { label: 'Completed', color: 'text-slate-400' },

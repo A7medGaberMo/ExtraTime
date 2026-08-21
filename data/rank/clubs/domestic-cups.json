@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "fa-cup-titles-by-club",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["fa-cup", "england", "cups", "clubs"],
+    "title": {
+      "en": "Rank these 5 English clubs by FA Cup trophies won",
+      "ar": "رتّب الأندية الإنجليزية الخمسة حسب عدد مرات الفوز بكأس الاتحاد الإنجليزي (FA Cup)"
+    },
+    "subtitle": {
+      "en": "The oldest national football competition in the world (1871–2026)",
+      "ar": "أعرق بطولة كرة قدم في العالم (1871–2026)"
+    },
+    "metricLabel": { "en": "FA Cups", "ar": "كؤوس" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fac_arsenal",
+        "name": { "en": "Arsenal", "ar": "أرسنال" },
+        "media": { "type": "club", "fallbackText": "ARS" },
+        "value": 14,
+        "valueLabel": { "en": "14 Titles", "ar": "14 لقب" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fac_manu",
+        "name": { "en": "Manchester United", "ar": "مانشستر يونايتد" },
+        "media": { "type": "club", "fallbackText": "MUN" },
+        "value": 13,
+        "valueLabel": { "en": "13 Titles", "ar": "13 لقب" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fac_chelsea",
+        "name": { "en": "Chelsea", "ar": "تشيلسي" },
+        "media": { "type": "club", "fallbackText": "CHE" },
+        "value": 8,
+        "valueLabel": { "en": "8 Titles", "ar": "8 ألقاب" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fac_mancity",
+        "name": { "en": "Manchester City", "ar": "مانشستر سيتي" },
+        "media": { "type": "club", "fallbackText": "MCI" },
+        "value": 7,
+        "valueLabel": { "en": "7 Titles", "ar": "7 ألقاب" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fac_newcastle",
+        "name": { "en": "Newcastle United", "ar": "نيوكاسل يونايتد" },
+        "media": { "type": "club", "fallbackText": "NEW" },
+        "value": 6,
+        "valueLabel": { "en": "6 Titles", "ar": "6 ألقاب" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-del-rey-titles-by-club",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-del-rey", "spain", "cups", "clubs"],
+    "title": {
+      "en": "Rank these 5 Spanish clubs by Copa del Rey trophies won",
+      "ar": "رتّب الأندية الإسبانية الخمسة حسب عدد ألقاب كأس ملك إسبانيا"
+    },
+    "subtitle": {
+      "en": "Spanish Cup winners from 1903 through 2026",
+      "ar": "أبطال كأس إسبانيا من 1903 وحتى 2026"
+    },
+    "metricLabel": { "en": "Copas", "ar": "كؤوس" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cdr_barca",
+        "name": { "en": "Barcelona", "ar": "برشلونة" },
+        "media": { "type": "club", "fallbackText": "FCB" },
+        "value": 31,
+        "valueLabel": { "en": "31 Titles", "ar": "31 لقب" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cdr_bilbao",
+        "name": { "en": "Athletic Bilbao", "ar": "أتلتيك بيلباو" },
+        "media": { "type": "club", "fallbackText": "ATH" },
+        "value": 24,
+        "valueLabel": { "en": "24 Titles", "ar": "24 لقب" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cdr_real",
+        "name": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "club", "fallbackText": "RMA" },
+        "value": 20,
+        "valueLabel": { "en": "20 Titles", "ar": "20 لقب" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cdr_atletico",
+        "name": { "en": "Atlético Madrid", "ar": "أتلتيكو مدريد" },
+        "media": { "type": "club", "fallbackText": "ATM" },
+        "value": 10,
+        "valueLabel": { "en": "10 Titles", "ar": "10 ألقاب" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cdr_valencia",
+        "name": { "en": "Valencia", "ar": "فالنسيا" },
+        "media": { "type": "club", "fallbackText": "VAL" },
+        "value": 8,
+        "valueLabel": { "en": "8 Titles", "ar": "8 ألقاب" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

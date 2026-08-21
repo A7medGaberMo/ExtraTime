@@ -23,13 +23,13 @@ export interface GameConfig {
 export const GAME_REGISTRY: Record<GameType, GameConfig> = {
   hidden_bid: {
     type: 'hidden_bid',
-    label: 'Hidden Bid Auction',
-    badgeLabel: '🏆 HIDDEN BID',
+    label: 'Snipe Auction',
+    badgeLabel: '🎯 SNIPE',
     description:
-      'Outbid your opponent in blind auctions to draft real player cards into your formation.',
+      'Outbid your opponent in secret bid auctions to draft real player cards into your formation.',
     minPlayers: 2,
     maxPlayers: 2,
-    icon: 'Swords',
+    icon: 'Crosshair',
     accentColor: '#95E810',
     isAvailable: true,
     routePrefix: '/auction',

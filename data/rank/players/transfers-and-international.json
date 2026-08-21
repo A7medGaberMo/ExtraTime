@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "record-transfer-fees-all-time",
+    "scopeType": "TRANSFERS_MARKET",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["transfers", "market", "records", "money"],
+    "title": {
+      "en": "Rank these 5 blockbusters by initial transfer fee paid (€)",
+      "ar": "رتّب الصفقات الخمسة حسب قيمة الانتقال الأساسية باليورو (€)"
+    },
+    "subtitle": {
+      "en": "Guaranteed initial fee in Euros, excluding variable add-ons",
+      "ar": "قيمة الصفقة الثابتة المضمونة باليورو (دون احتساب الحوافز المتغيرة)"
+    },
+    "metricLabel": { "en": "Transfer Fee", "ar": "قيمة الصفقة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "trf_neymar_psg",
+        "name": { "en": "Neymar Jr", "ar": "نيمار" },
+        "subText": { "en": "Barcelona → PSG (2017)", "ar": "برشلونة ← باريس سان جيرمان (2017)" },
+        "media": { "type": "player", "fallbackText": "NJR" },
+        "value": 222,
+        "valueLabel": { "en": "€222 Million", "ar": "222 مليون يورو" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "trf_mbappe_psg",
+        "name": { "en": "Kylian Mbappé", "ar": "كيليان مبابي" },
+        "subText": { "en": "Monaco → PSG (2018)", "ar": "موناكو ← باريس سان جيرمان (2018)" },
+        "media": { "type": "player", "fallbackText": "KM" },
+        "value": 180,
+        "valueLabel": { "en": "€180 Million", "ar": "180 مليون يورو" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "trf_coutinho_barca",
+        "name": { "en": "Philippe Coutinho", "ar": "فيليب كوتينيو" },
+        "subText": { "en": "Liverpool → Barcelona (2018)", "ar": "ليفربول ← برشلونة (2018)" },
+        "media": { "type": "player", "fallbackText": "PC" },
+        "value": 135,
+        "valueLabel": { "en": "€135 Million", "ar": "135 مليون يورو" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "trf_bellingham_real",
+        "name": { "en": "Jude Bellingham", "ar": "جود بيلينغهام" },
+        "subText": { "en": "Dortmund → Real Madrid (2023)", "ar": "دورتموند ← ريال مدريد (2023)" },
+        "media": { "type": "player", "fallbackText": "JB" },
+        "value": 103,
+        "valueLabel": { "en": "€103 Million", "ar": "103 مليون يورو" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "trf_cr7_real",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Man United → Real Madrid (2009)", "ar": "مان يونايتد ← ريال مدريد (2009)" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 94,
+        "valueLabel": { "en": "€94 Million", "ar": "94 مليون يورو" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "international-goals-history",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "goals", "ronaldo", "messi", "legends"],
+    "title": {
+      "en": "Rank these 5 icons by official international senior goals",
+      "ar": "رتّب الأساطير الخمسة حسب عدد الأهداف الدولية الرسمية مع المنتخب الأول"
+    },
+    "subtitle": {
+      "en": "Official FIFA international 'A' matches, as of Aug 2026",
+      "ar": "المباريات الدولية الرسمية المعتمدة من الفيفا حتى أغسطس 2026"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "int_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Portugal", "ar": "البرتغال" },
+        "media": { "type": "nation", "fallbackText": "POR" },
+        "value": 133,
+        "valueLabel": { "en": "133 Goals", "ar": "133 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "int_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Argentina", "ar": "الأرجنتين" },
+        "media": { "type": "nation", "fallbackText": "ARG" },
+        "value": 112,
+        "valueLabel": { "en": "112 Goals", "ar": "112 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "int_daei",
+        "name": { "en": "Ali Daei", "ar": "علي دائي" },
+        "subText": { "en": "Iran", "ar": "إيران" },
+        "media": { "type": "nation", "fallbackText": "IRN" },
+        "value": 108,
+        "valueLabel": { "en": "108 Goals", "ar": "108 أهداف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "int_chhetri",
+        "name": { "en": "Sunil Chhetri", "ar": "سونيل تشيتري" },
+        "subText": { "en": "India", "ar": "الهند" },
+        "media": { "type": "nation", "fallbackText": "IND" },
+        "value": 94,
+        "valueLabel": { "en": "94 Goals", "ar": "94 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "int_lewa",
+        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
+        "subText": { "en": "Poland", "ar": "بولندا" },
+        "media": { "type": "nation", "fallbackText": "POL" },
+        "value": 84,
+        "valueLabel": { "en": "84 Goals", "ar": "84 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

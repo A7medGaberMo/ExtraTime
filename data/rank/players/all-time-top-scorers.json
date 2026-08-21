@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "international-all-time-top-scorers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["international", "players", "goals", "cr7", "messi"],
+    "title": {
+      "en": "Rank these 5 international icons by career international goals scored",
+      "ar": "رتّب أساطير المنتخبات الخمسة حسب إجمالي أهدافهم الدولية مع المنتخب الأول"
+    },
+    "subtitle": {
+      "en": "Official FIFA international matches through 2026",
+      "ar": "المباريات الدولية الرسمية المعترف بها من فيفا حتى 2026"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "int_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Portugal", "ar": "البرتغال" },
+        "media": { "type": "nation", "fallbackText": "POR" },
+        "value": 135,
+        "valueLabel": { "en": "135 Goals", "ar": "135 هدف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "int_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Argentina", "ar": "الأرجنتين" },
+        "media": { "type": "nation", "fallbackText": "ARG" },
+        "value": 112,
+        "valueLabel": { "en": "112 Goals", "ar": "112 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "int_daei",
+        "name": { "en": "Ali Daei", "ar": "علي دائي" },
+        "subText": { "en": "Iran", "ar": "إيران" },
+        "media": { "type": "nation", "fallbackText": "IRN" },
+        "value": 108,
+        "valueLabel": { "en": "108 Goals", "ar": "108 أهداف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "int_sunil",
+        "name": { "en": "Sunil Chhetri", "ar": "سونيل تشيتري" },
+        "subText": { "en": "India", "ar": "الهند" },
+        "media": { "type": "nation", "fallbackText": "IND" },
+        "value": 94,
+        "valueLabel": { "en": "94 Goals", "ar": "94 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "int_mokhtar",
+        "name": { "en": "Mokhtar Dahari", "ar": "مختار دهاري" },
+        "subText": { "en": "Malaysia", "ar": "ماليزيا" },
+        "media": { "type": "nation", "fallbackText": "MAS" },
+        "value": 89,
+        "valueLabel": { "en": "89 Goals", "ar": "89 هدف" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-all-time-top-scorers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "players", "goals", "england"],
+    "title": {
+      "en": "Rank these 5 Premier League legends by total Premier League goals scored",
+      "ar": "رتّب أساطير البريميرليج الخمسة حسب إجمالي أهدافهم في الدوري الإنجليزي الممتاز"
+    },
+    "subtitle": {
+      "en": "Premier League era only (1992–present)",
+      "ar": "حقبة الدوري الإنجليزي الممتاز فقط (1992–حتى الآن)"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pl_shearer",
+        "name": { "en": "Alan Shearer", "ar": "ألان شيرر" },
+        "subText": { "en": "Blackburn / Newcastle", "ar": "بلاكبيرن / نيوكاسل" },
+        "media": { "type": "player", "fallbackText": "AS9" },
+        "value": 260,
+        "valueLabel": { "en": "260 Goals", "ar": "260 هدف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pl_kane",
+        "name": { "en": "Harry Kane", "ar": "هاري كين" },
+        "subText": { "en": "Tottenham / Norwich", "ar": "توتنهام / نورويتش" },
+        "media": { "type": "player", "fallbackText": "HK9" },
+        "value": 213,
+        "valueLabel": { "en": "213 Goals", "ar": "213 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pl_rooney",
+        "name": { "en": "Wayne Rooney", "ar": "واين روني" },
+        "subText": { "en": "Everton / Man United", "ar": "إيفرتون / مانشستر يونايتد" },
+        "media": { "type": "player", "fallbackText": "WR10" },
+        "value": 208,
+        "valueLabel": { "en": "208 Goals", "ar": "208 أهداف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pl_salah",
+        "name": { "en": "Mohamed Salah", "ar": "محمد صلاح" },
+        "subText": { "en": "Chelsea / Liverpool", "ar": "تشيلسي / ليفربول" },
+        "media": { "type": "player", "fallbackText": "MO11" },
+        "value": 188,
+        "valueLabel": { "en": "188 Goals", "ar": "188 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pl_henry",
+        "name": { "en": "Thierry Henry", "ar": "تييري هنري" },
+        "subText": { "en": "Arsenal", "ar": "أرسنال" },
+        "media": { "type": "player", "fallbackText": "TH14" },
+        "value": 175,
+        "valueLabel": { "en": "175 Goals", "ar": "175 هدف" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "la-liga-all-time-top-scorers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["la-liga", "players", "goals", "spain"],
+    "title": {
+      "en": "Rank these 5 icons by total Spanish La Liga goals scored",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي أهدافهم في الدوري الإسباني (الليغا)"
+    },
+    "subtitle": {
+      "en": "All-time Spanish Primera División league goals",
+      "ar": "إجمالي أهداف الدوري الإسباني للدرجة الأولى عبر التاريخ"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "laliga_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Barcelona", "ar": "برشلونة" },
+        "media": { "type": "player", "fallbackText": "LM10" },
+        "value": 474,
+        "valueLabel": { "en": "474 Goals", "ar": "474 هدف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "laliga_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 311,
+        "valueLabel": { "en": "311 Goals", "ar": "311 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "laliga_zarra",
+        "name": { "en": "Telmo Zarra", "ar": "تيلمو زارا" },
+        "subText": { "en": "Athletic Bilbao", "ar": "أتلتيك بيلباو" },
+        "media": { "type": "player", "fallbackText": "TZ" },
+        "value": 251,
+        "valueLabel": { "en": "251 Goals", "ar": "251 هدف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "laliga_benzema",
+        "name": { "en": "Karim Benzema", "ar": "كريم بنزيما" },
+        "subText": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "player", "fallbackText": "KB9" },
+        "value": 238,
+        "valueLabel": { "en": "238 Goals", "ar": "238 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "laliga_hugo",
+        "name": { "en": "Hugo Sánchez", "ar": "هوغو سانشيز" },
+        "subText": { "en": "Atlético / Real / Rayo", "ar": "أتلتيكو / ريال / رايو" },
+        "media": { "type": "player", "fallbackText": "HS9" },
+        "value": 234,
+        "valueLabel": { "en": "234 Goals", "ar": "234 هدف" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

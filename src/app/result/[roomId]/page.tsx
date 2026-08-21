@@ -1,17 +1,28 @@
 'use client';
 
-import { use, useEffect, useMemo, useRef, useState } from 'react';
+import React, { use, useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../../../convex/_generated/api';
 import { Id } from '../../../../convex/_generated/dataModel';
-import { PageHeader } from '@/components/shared/page-header';
 import { ScoreHub } from '@/components/match/score-hub';
 import type { PitchSquadPlayer } from '@/components/match/tactical-pitch-view';
 import type { MatchSimulationResult } from '@/core/simulation/simulation.interface';
 import { useGuestSession } from '@/hooks/use-guest-session';
 import { unlockAudio } from '@/lib/sfx';
-import { Loader2, RefreshCw, Trophy, Home, Volume2 } from 'lucide-react';
+import {
+  CircleNotch,
+  ArrowCounterClockwise,
+  Cards,
+  House,
+  SpeakerHigh,
+  SpeakerSlash,
+} from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
+import { Button } from '@/components/ui/button';
+import { PageShell } from '@/components/ui/page-shell';
+import { Panel } from '@/components/ui/panel';
+import { useI18n } from '@/lib/i18n';
 
 interface HydratedMatch {
   simulation?: MatchSimulationResult | null;
@@ -58,6 +69,7 @@ interface SquadSlot {
 export default function ResultsPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
+  const { t } = useI18n();
   const { guestId } = useGuestSession(true);
   const roomIdTyped = roomId as Id<'rooms'>;
 
@@ -82,7 +94,6 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
       triggeredRef.current = true;
       void runSimulation({ roomId: roomIdTyped, userId: guestId }).catch(console.error);
     } else {
-      // Guest fallback: wait 2s to allow Host to trigger first and avoid write conflicts
       const timer = setTimeout(() => {
         const currentMat = match as HydratedMatch | null | undefined;
         if (!triggeredRef.current && currentMat && !currentMat.simulation) {
@@ -153,9 +164,9 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     return (
       <div className="flex min-h-[60vh] items-center justify-center">
         <div className="animate-fade-in flex flex-col items-center gap-3">
-          <Loader2 className="text-lime h-8 w-8 animate-spin" />
-          <p className="text-steel text-xs font-bold tracking-widest uppercase">
-            Loading Matchday...
+          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-lime animate-spin" />
+          <p className="text-steel text-xs font-black tracking-widest uppercase font-stats">
+            {t('common.loading')}
           </p>
         </div>
       </div>
@@ -165,46 +176,49 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   if (!match || !simulation) {
     return (
       <div className="animate-fade-in mx-auto flex min-h-[60vh] max-w-md flex-col items-center justify-center gap-4 px-3 text-center">
-        <div className="relative">
-          <div className="bg-lime/25 absolute inset-0 rounded-full blur-2xl" />
-          <Loader2 className="text-lime relative h-10 w-10 animate-spin" />
-        </div>
-        <div className="space-y-1">
-          <h2 className="text-base font-black tracking-tight text-white uppercase">
-            Final Whistle
-          </h2>
-          <p className="text-steel text-xs font-medium">
-            Both squads are locked in. The tactical engine is resolving the matchday...
-          </p>
-        </div>
+        <Panel variant="highlight" className="p-8 w-full space-y-4 text-center">
+          <div className="relative mx-auto w-12 h-12 flex items-center justify-center">
+            <div className="bg-lime/25 absolute inset-0 rounded-full blur-xl animate-pulse" />
+            <AppIcon icon={CircleNotch} size={40} weight="bold" className="text-lime relative animate-spin" />
+          </div>
+          <div className="space-y-1">
+            <h2 className="text-lg font-black tracking-tight text-white uppercase font-display">
+              Resolving Matchday
+            </h2>
+            <p className="text-steel text-xs font-medium leading-relaxed">
+              Both squads are locked in. The tactical engine is resolving the matchday...
+            </p>
+          </div>
+        </Panel>
       </div>
     );
   }
 
   return (
-    <div className="animate-fade-in mx-auto max-w-2xl space-y-4 px-3">
-      <PageHeader
-        title="Hidden Bid Result"
-        subtitle="Match result · sealed bids resolved."
-        backUrl="/"
-        className="mb-1"
-      />
-
+    <PageShell
+      title={t('results.title')}
+      subtitle={t('results.subtitle')}
+      backUrl="/"
+      maxWidth="2xl"
+    >
+      {/* Sound Toggle Floating Button */}
       <button
+        type="button"
         onClick={() => {
-          setAudioReady(true);
+          setAudioReady(!audioReady);
           unlockAudio();
         }}
-        className={`fixed right-5 bottom-5 z-40 flex h-11 w-11 items-center justify-center rounded-xl border shadow-xl backdrop-blur-xl transition-all ${
+        className={`fixed end-5 bottom-5 z-40 flex h-12 w-12 items-center justify-center rounded-2xl border shadow-xl backdrop-blur-xl transition-all cursor-pointer ${
           audioReady
-            ? 'border-lime/30 bg-lime/10 text-lime'
-            : 'bg-card/90 text-steel hover:text-lime border-white/10'
+            ? 'border-lime/40 bg-lime/20 text-lime shadow-lime/20'
+            : 'border-white/15 bg-slate-900/90 text-steel hover:text-white'
         }`}
-        title="Enable matchday audio"
+        title="Toggle matchday audio"
       >
-        <Volume2 className="h-4 w-4" />
+        <AppIcon icon={audioReady ? SpeakerHigh : SpeakerSlash} size={20} weight="bold" />
       </button>
 
+      {/* Main ScoreHub */}
       <ScoreHub
         simulation={simulation}
         hostName={viewerIsHost ? myName : rivalName}
@@ -217,26 +231,35 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
         matchSize={matchSize}
       />
 
-      <div className="grid grid-cols-3 gap-2">
-        <button
+      {/* Action Buttons: Rematch, Packs, Home */}
+      <div className="grid grid-cols-3 gap-2.5 pt-2">
+        <Button
+          variant="primary"
+          size="md"
           onClick={() => router.push('/create-room')}
-          className="bg-lime hover:bg-vivid flex items-center justify-center gap-1.5 rounded-xl py-3 text-[10px] font-black tracking-wider text-slate-950 uppercase shadow-lg transition-all active:scale-95"
+          leftIcon={<AppIcon icon={ArrowCounterClockwise} size={16} weight="bold" />}
         >
-          <RefreshCw className="h-3.5 w-3.5" /> Rematch
-        </button>
-        <button
+          {t('results.rematch')}
+        </Button>
+
+        <Button
+          variant="gold"
+          size="md"
           onClick={() => router.push('/packs')}
-          className="flex items-center justify-center gap-1.5 rounded-xl border border-amber-500/30 bg-slate-900 py-3 text-[10px] font-black tracking-wider text-amber-300 uppercase transition-all hover:border-amber-400 hover:bg-amber-500/10 active:scale-95"
+          leftIcon={<AppIcon icon={Cards} size={16} weight="bold" />}
         >
-          <Trophy className="h-3.5 w-3.5" /> Packs
-        </button>
-        <button
+          {t('results.packs')}
+        </Button>
+
+        <Button
+          variant="secondary"
+          size="md"
           onClick={() => router.push('/')}
-          className="bg-card flex items-center justify-center gap-1.5 rounded-xl border border-white/10 py-3 text-[10px] font-black tracking-wider text-white uppercase transition-all hover:bg-white/5 active:scale-95"
+          leftIcon={<AppIcon icon={House} size={16} weight="bold" />}
         >
-          <Home className="h-3.5 w-3.5" /> Home
-        </button>
+          {t('results.home')}
+        </Button>
       </div>
-    </div>
+    </PageShell>
   );
 }

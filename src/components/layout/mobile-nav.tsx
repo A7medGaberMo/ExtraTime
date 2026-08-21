@@ -1,48 +1,52 @@
 'use client';
 
+import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Gamepad2, PackageSearch, PlusCircle, LogIn } from 'lucide-react';
+import { GameController, Cards, PlusCircle, SignIn } from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
+import { useI18n } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
-
-const navItems = [
-  { label: 'Arena', href: '/', icon: Gamepad2 },
-  { label: 'Packs', href: '/packs', icon: PackageSearch },
-  { label: 'Create', href: '/create-room', icon: PlusCircle },
-  { label: 'Join', href: '/join-room', icon: LogIn },
-] as const;
 
 export function MobileNav() {
   const pathname = usePathname();
+  const { t } = useI18n();
+
+  // Exactly 4 Navigation Tabs Matching Desktop Floating Nav
+  const navItems = [
+    { label: t('nav.arena'), href: '/', icon: GameController },
+    { label: t('nav.packs'), href: '/packs', icon: Cards },
+    { label: t('nav.create'), href: '/create-room', icon: PlusCircle },
+    { label: t('nav.join'), href: '/join-room', icon: SignIn },
+  ];
 
   return (
     <div
-      className="border-border/80 fixed right-0 bottom-0 left-0 z-50 border-t bg-slate-950/95 shadow-2xl backdrop-blur-2xl md:hidden"
+      className="fixed bottom-3 inset-x-3 max-w-md mx-auto z-50 md:hidden select-none"
       style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
     >
-      <nav className="grid h-16 grid-cols-4">
+      <nav className="flex items-center justify-around rounded-full border border-white/15 bg-slate-950/85 p-1.5 shadow-[0_10px_35px_rgba(0,0,0,0.85),0_0_20px_rgba(149,232,16,0.08)] backdrop-blur-2xl">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
-          const Icon = item.icon;
+          const IconComp = item.icon;
           return (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                'relative flex flex-col items-center justify-center gap-0 py-0.5 text-[9px] font-black tracking-tight uppercase transition-all',
-                isActive ? 'text-lime' : 'text-steel active:text-white',
+                'flex flex-1 items-center justify-center gap-1.5 rounded-full py-2 px-2 text-[11px] font-black transition-all duration-200 active:scale-95',
+                isActive
+                  ? 'bg-lime text-slate-950 shadow-md shadow-lime/25'
+                  : 'text-steel hover:text-white hover:bg-white/5',
               )}
             >
-              <Icon
-                className={cn(
-                  'mb-0.5 h-4 w-4 shrink-0',
-                  isActive && 'drop-shadow-[0_0_10px_rgba(149,232,16,0.6)]',
-                )}
+              <AppIcon
+                icon={IconComp}
+                size={17}
+                weight={isActive ? 'fill' : 'bold'}
+                className={isActive ? 'text-slate-950' : 'text-steel'}
               />
-              <span className="max-w-full truncate px-1">{item.label}</span>
-              {isActive && (
-                <span className="bg-lime absolute top-0 left-1/2 h-0.5 w-6 -translate-x-1/2 rounded-full shadow-[0_0_8px_#95E810]" />
-              )}
+              <span className="truncate max-w-[70px]">{item.label}</span>
             </Link>
           );
         })}

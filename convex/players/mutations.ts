@@ -96,7 +96,7 @@ export const deduplicatePlayers = mutation({
     let deletedCount = 0;
     let duplicatesFound = 0;
 
-    for (const [key, group] of groups.entries()) {
+    for (const group of groups.values()) {
       if (group.length <= 1) continue;
 
       duplicatesFound += group.length - 1;

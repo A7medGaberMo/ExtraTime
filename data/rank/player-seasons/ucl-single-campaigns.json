@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "ucl-single-season-goals-modern",
+    "scopeType": "PLAYER_STINTS",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "player-seasons", "goals", "modern-stars"],
+    "title": {
+      "en": "Rank these 5 player-seasons by Champions League goals scored",
+      "ar": "رتّب مواسم اللاعبين الخمسة حسب عدد الأهداف في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Goals scored in that specific Champions League campaign",
+      "ar": "الأهداف المسجلة في تلك النسخة المحددة من دوري أبطال أوروبا"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_ps_mbappe26",
+        "name": { "en": "Kylian Mbappé", "ar": "كيليان مبابي" },
+        "subText": { "en": "Real Madrid (2025–26)", "ar": "ريال مدريد (2025–26)" },
+        "media": {
+          "type": "stint",
+          "fallbackText": "KM",
+          "stintBadge": { "clubName": "Real Madrid", "season": "25/26" }
+        },
+        "value": 15,
+        "valueLabel": { "en": "15 Goals", "ar": "15 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_ps_raphinha25",
+        "name": { "en": "Raphinha", "ar": "رافينيا" },
+        "subText": { "en": "Barcelona (2024–25)", "ar": "برشلونة (2024–25)" },
+        "media": {
+          "type": "stint",
+          "fallbackText": "RAP",
+          "stintBadge": { "clubName": "Barcelona", "season": "24/25" }
+        },
+        "value": 13,
+        "valueLabel": { "en": "13 Goals", "ar": "13 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_ps_haaland23",
+        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
+        "subText": { "en": "Manchester City (2022–23)", "ar": "مانشستر سيتي (2022–23)" },
+        "media": {
+          "type": "stint",
+          "fallbackText": "EH",
+          "stintBadge": { "clubName": "Manchester City", "season": "22/23" }
+        },
+        "value": 12,
+        "valueLabel": { "en": "12 Goals", "ar": "12 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_ps_haaland21",
+        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
+        "subText": { "en": "Borussia Dortmund (2020–21)", "ar": "بوروسيا دورتموند (2020–21)" },
+        "media": {
+          "type": "stint",
+          "fallbackText": "EH",
+          "stintBadge": { "clubName": "Borussia Dortmund", "season": "20/21" }
+        },
+        "value": 10,
+        "valueLabel": { "en": "10 Goals", "ar": "10 أهداف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_ps_mbappe24",
+        "name": { "en": "Kylian Mbappé", "ar": "كيليان مبابي" },
+        "subText": { "en": "Paris Saint-Germain (2023–24)", "ar": "باريس سان جيرمان (2023–24)" },
+        "media": {
+          "type": "stint",
+          "fallbackText": "KM",
+          "stintBadge": { "clubName": "Paris Saint-Germain", "season": "23/24" }
+        },
+        "value": 8,
+        "valueLabel": { "en": "8 Goals", "ar": "8 أهداف" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

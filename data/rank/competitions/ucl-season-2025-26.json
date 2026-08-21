@@ -1,0 +1,302 @@
+[
+  {
+    "slug": "ucl-2025-26-team-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "goals", "teams"],
+    "title": {
+      "en": "Rank these 5 clubs by goals scored in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب الأهداف المسجلة في دوري أبطال أوروبا 2025–26"
+    },
+    "subtitle": {
+      "en": "All matches of the 2025–26 UEFA Champions League season",
+      "ar": "شامل جميع مباريات موسم 2025–26 بدوري الأبطال"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_g_bayern",
+        "name": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "media": { "type": "club", "fallbackText": "BAY" },
+        "value": 43,
+        "valueLabel": { "en": "43 Goals", "ar": "43 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_g_atletico",
+        "name": { "en": "Atlético Madrid", "ar": "أتلتيكو مدريد" },
+        "media": { "type": "club", "fallbackText": "ATM" },
+        "value": 35,
+        "valueLabel": { "en": "35 Goals", "ar": "35 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_g_real",
+        "name": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "club", "fallbackText": "RMA" },
+        "value": 33,
+        "valueLabel": { "en": "33 Goals", "ar": "33 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_g_barca",
+        "name": { "en": "Barcelona", "ar": "برشلونة" },
+        "media": { "type": "club", "fallbackText": "FCB" },
+        "value": 32,
+        "valueLabel": { "en": "32 Goals", "ar": "32 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_g_arsenal",
+        "name": { "en": "Arsenal", "ar": "أرسنال" },
+        "media": { "type": "club", "fallbackText": "ARS" },
+        "value": 30,
+        "valueLabel": { "en": "30 Goals", "ar": "30 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-average-possession",
+    "scopeType": "PER_SEASON",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "possession", "tactics"],
+    "title": {
+      "en": "Rank these 5 clubs by average possession in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب متوسط الاستحواذ في دوري أبطال أوروبا 2025–26"
+    },
+    "subtitle": {
+      "en": "Average ball possession percentage during the campaign",
+      "ar": "متوسط نسبة الاستحواذ على الكرة خلال مباريات البطولة"
+    },
+    "metricLabel": { "en": "Possession", "ar": "استحواذ" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_pos_psg",
+        "name": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "media": { "type": "club", "fallbackText": "PSG" },
+        "value": 610,
+        "valueLabel": { "en": "61.0% Possession", "ar": "61.0% استحواذ" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_pos_barca",
+        "name": { "en": "Barcelona", "ar": "برشلونة" },
+        "media": { "type": "club", "fallbackText": "FCB" },
+        "value": 606,
+        "valueLabel": { "en": "60.6% Possession", "ar": "60.6% استحواذ" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_pos_bayern",
+        "name": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "media": { "type": "club", "fallbackText": "BAY" },
+        "value": 582,
+        "valueLabel": { "en": "58.2% Possession", "ar": "58.2% استحواذ" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_pos_mancity",
+        "name": { "en": "Manchester City", "ar": "مانشستر سيتي" },
+        "media": { "type": "club", "fallbackText": "MC" },
+        "value": 580,
+        "valueLabel": { "en": "58.0% Possession", "ar": "58.0% استحواذ" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_pos_inter",
+        "name": { "en": "Inter Milan", "ar": "إنتر ميلان" },
+        "media": { "type": "club", "fallbackText": "INT" },
+        "value": 558,
+        "valueLabel": { "en": "55.8% Possession", "ar": "55.8% استحواذ" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-passing-accuracy",
+    "scopeType": "PER_SEASON",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "passing", "accuracy"],
+    "title": {
+      "en": "Rank these 5 clubs by passing accuracy in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب دقة التمرير في دوري أبطال أوروبا 2025–26"
+    },
+    "subtitle": {
+      "en": "Extremely close 2% margin between European pass masters",
+      "ar": "فروقات دقيقة جدًا بين أفضل أندية أوروبا في دقة التمرير"
+    },
+    "metricLabel": { "en": "Passing Accuracy", "ar": "دقة التمرير" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_pass_mancity",
+        "name": { "en": "Manchester City", "ar": "مانشستر سيتي" },
+        "media": { "type": "club", "fallbackText": "MC" },
+        "value": 912,
+        "valueLabel": { "en": "91.2% Accuracy", "ar": "91.2% دقة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_pass_bayern",
+        "name": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "media": { "type": "club", "fallbackText": "BAY" },
+        "value": 897,
+        "valueLabel": { "en": "89.7% Accuracy", "ar": "89.7% دقة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_pass_psg",
+        "name": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "media": { "type": "club", "fallbackText": "PSG" },
+        "value": 895,
+        "valueLabel": { "en": "89.5% Accuracy", "ar": "89.5% دقة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_pass_chelsea",
+        "name": { "en": "Chelsea", "ar": "تشيلسي" },
+        "media": { "type": "club", "fallbackText": "CHE" },
+        "value": 891,
+        "valueLabel": { "en": "89.1% Accuracy", "ar": "89.1% دقة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_pass_barca",
+        "name": { "en": "Barcelona", "ar": "برشلونة" },
+        "media": { "type": "club", "fallbackText": "FCB" },
+        "value": 888,
+        "valueLabel": { "en": "88.8% Accuracy", "ar": "88.8% دقة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-team-tackles",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "tackles", "defense"],
+    "title": {
+      "en": "Rank these 5 clubs by tackles made in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب التدخلات الناجحة (التاكلينج) في دوري الأبطال 2025–26"
+    },
+    "subtitle": {
+      "en": "Total successful tackles across the 2025–26 tournament",
+      "ar": "إجمالي التدخلات الدفاعية طوال منافسات البطولة لموسم 2025–26"
+    },
+    "metricLabel": { "en": "Tackles", "ar": "تدخلات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_tck_real",
+        "name": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "club", "fallbackText": "RMA" },
+        "value": 261,
+        "valueLabel": { "en": "261 Tackles", "ar": "261 تدخلًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_tck_psg",
+        "name": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "media": { "type": "club", "fallbackText": "PSG" },
+        "value": 225,
+        "valueLabel": { "en": "225 Tackles", "ar": "225 تدخلًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_tck_gala",
+        "name": { "en": "Galatasaray", "ar": "غلطة سراي" },
+        "media": { "type": "club", "fallbackText": "GAL" },
+        "value": 209,
+        "valueLabel": { "en": "209 Tackles", "ar": "209 تدخلات" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_tck_juve",
+        "name": { "en": "Juventus", "ar": "يوفنتوس" },
+        "media": { "type": "club", "fallbackText": "JUV" },
+        "value": 178,
+        "valueLabel": { "en": "178 Tackles", "ar": "178 تدخلًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_tck_arsenal",
+        "name": { "en": "Arsenal", "ar": "أرسنال" },
+        "media": { "type": "club", "fallbackText": "ARS" },
+        "value": 177,
+        "valueLabel": { "en": "177 Tackles", "ar": "177 تدخلًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-goalkeeper-saves",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "goalkeepers", "saves"],
+    "title": {
+      "en": "Rank these 5 clubs by saves made in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب عدد التصديات لحراس المرمى في دوري الأبطال 2025–26"
+    },
+    "subtitle": {
+      "en": "Total goalkeeper saves across the 2025–26 European campaign",
+      "ar": "إجمالي تصديات الحراس طوال مشوار البطولة لموسم 2025–26"
+    },
+    "metricLabel": { "en": "Saves", "ar": "تصديات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_sv_real",
+        "name": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "club", "fallbackText": "RMA" },
+        "value": 73,
+        "valueLabel": { "en": "73 Saves", "ar": "73 تصديًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_sv_bodo",
+        "name": { "en": "Bodø/Glimt", "ar": "بودو/غليمت" },
+        "media": { "type": "club", "fallbackText": "BOD" },
+        "value": 68,
+        "valueLabel": { "en": "68 Saves", "ar": "68 تصديًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_sv_atletico",
+        "name": { "en": "Atlético Madrid", "ar": "أتلتيكو مدريد" },
+        "media": { "type": "club", "fallbackText": "ATM" },
+        "value": 58,
+        "valueLabel": { "en": "58 Saves", "ar": "58 تصديًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_sv_bayern",
+        "name": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "media": { "type": "club", "fallbackText": "BAY" },
+        "value": 52,
+        "valueLabel": { "en": "52 Saves", "ar": "52 تصديًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_sv_gala",
+        "name": { "en": "Galatasaray", "ar": "غلطة سراي" },
+        "media": { "type": "club", "fallbackText": "GAL" },
+        "value": 48,
+        "valueLabel": { "en": "48 Saves", "ar": "48 تصديًا" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

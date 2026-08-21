@@ -1,5 +1,63 @@
 import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {/* config options here */};
+const securityHeaders = [
+  {
+    key: 'X-DNS-Prefetch-Control',
+    value: 'on',
+  },
+  {
+    key: 'Strict-Transport-Security',
+    value: 'max-age=63072000; includeSubDomains; preload',
+  },
+  {
+    key: 'X-Frame-Options',
+    value: 'SAMEORIGIN',
+  },
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
+  },
+  {
+    key: 'Referrer-Policy',
+    value: 'origin-when-cross-origin',
+  },
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+  },
+];
+
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+  poweredByHeader: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'media.api-sports.io',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.api-sports.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'flagcdn.com',
+      },
+    ],
+  },
+  experimental: {
+    optimizePackageImports: ['@phosphor-icons/react'],
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: securityHeaders,
+      },
+    ];
+  },
+};
 
 export default nextConfig;
+

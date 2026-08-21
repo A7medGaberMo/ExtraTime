@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "most-international-caps-all-time",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["international", "caps", "national-teams", "cr7", "messi"],
+    "title": {
+      "en": "Rank these 5 legends by official senior international caps earned",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات الدولية الرسمية مع المنتخب الأول"
+    },
+    "subtitle": {
+      "en": "Official FIFA international caps in history",
+      "ar": "المباريات الدولية المعتمدة من فيفا عبر التاريخ"
+    },
+    "metricLabel": { "en": "Caps", "ar": "مباريات دولية" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cap_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Portugal", "ar": "البرتغال" },
+        "media": { "type": "nation", "fallbackText": "POR" },
+        "value": 216,
+        "valueLabel": { "en": "216 Caps", "ar": "216 مباراة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cap_mutawa",
+        "name": { "en": "Bader Al-Mutawa", "ar": "بدر المطوع" },
+        "subText": { "en": "Kuwait", "ar": "الكويت" },
+        "media": { "type": "nation", "fallbackText": "KUW" },
+        "value": 196,
+        "valueLabel": { "en": "196 Caps", "ar": "196 مباراة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cap_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Argentina", "ar": "الأرجنتين" },
+        "media": { "type": "nation", "fallbackText": "ARG" },
+        "value": 190,
+        "valueLabel": { "en": "190 Caps", "ar": "190 مباراة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cap_hassan",
+        "name": { "en": "Ahmed Hassan", "ar": "أحمد حسن" },
+        "subText": { "en": "Egypt", "ar": "مصر" },
+        "media": { "type": "nation", "fallbackText": "EGY" },
+        "value": 184,
+        "valueLabel": { "en": "184 Caps", "ar": "184 مباراة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cap_ramos",
+        "name": { "en": "Sergio Ramos", "ar": "سيرجيو راموس" },
+        "subText": { "en": "Spain", "ar": "إسبانيا" },
+        "media": { "type": "nation", "fallbackText": "ESP" },
+        "value": 180,
+        "valueLabel": { "en": "180 Caps", "ar": "180 مباراة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-matches-played-by-player",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "matches", "players", "messi", "matthaus"],
+    "title": {
+      "en": "Rank these 5 legends by total FIFA World Cup finals matches played",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات التي خاضوها في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "From group stage to final in tournament history",
+      "ar": "في نهائيات المونديال عبر التاريخ"
+    },
+    "metricLabel": { "en": "WC Matches", "ar": "مباريات مونديالية" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wcm_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Argentina (2006–2022)", "ar": "الأرجنتين (2006–2022)" },
+        "media": { "type": "player", "fallbackText": "LM10" },
+        "value": 26,
+        "valueLabel": { "en": "26 Matches", "ar": "26 مباراة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcm_matthaus",
+        "name": { "en": "Lothar Matthäus", "ar": "لوثار ماتيوس" },
+        "subText": { "en": "Germany (1982–1998)", "ar": "ألمانيا (1982–1998)" },
+        "media": { "type": "player", "fallbackText": "LM10" },
+        "value": 25,
+        "valueLabel": { "en": "25 Matches", "ar": "25 مباراة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcm_klose",
+        "name": { "en": "Miroslav Klose", "ar": "ميروسلاف كلوزه" },
+        "subText": { "en": "Germany (2002–2014)", "ar": "ألمانيا (2002–2014)" },
+        "media": { "type": "player", "fallbackText": "MK11" },
+        "value": 24,
+        "valueLabel": { "en": "24 Matches", "ar": "24 مباراة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcm_maldini",
+        "name": { "en": "Paolo Maldini", "ar": "باولو مالديني" },
+        "subText": { "en": "Italy (1990–2002)", "ar": "إيطاليا (1990–2002)" },
+        "media": { "type": "player", "fallbackText": "PM3" },
+        "value": 23,
+        "valueLabel": { "en": "23 Matches", "ar": "23 مباراة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcm_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Portugal (2006–2022)", "ar": "البرتغال (2006–2022)" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 22,
+        "valueLabel": { "en": "22 Matches", "ar": "22 مباراة" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

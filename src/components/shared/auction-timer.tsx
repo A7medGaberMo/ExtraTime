@@ -2,7 +2,8 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { cn } from '@/lib/utils';
-import { Zap } from 'lucide-react';
+import { Lightning } from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
 
 interface AuctionTimerProps {
   timeLeft: number;
@@ -41,7 +42,7 @@ export function AuctionTimer({
 
   return (
     <div
-      className="group relative flex items-center justify-center"
+      className="group relative flex items-center justify-center select-none"
       style={{ width: size, height: size }}
     >
       {/* Outer ambient glow */}
@@ -64,7 +65,7 @@ export function AuctionTimer({
           cy={size / 2}
           r={radius}
           strokeWidth="4"
-          className="fill-card stroke-slate-900"
+          className="fill-slate-950 stroke-slate-900"
         />
         <circle
           cx={size / 2}
@@ -84,7 +85,7 @@ export function AuctionTimer({
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <span
           className={cn(
-            'font-stats text-lg leading-none font-bold transition-all duration-300',
+            'font-stats text-lg leading-none font-black transition-all duration-300',
             isCritical && 'scale-110 animate-pulse text-rose-400',
             isUrgent && !isCritical && 'text-amber-400',
             boostActive && 'scale-110 text-amber-300',
@@ -102,7 +103,7 @@ export function AuctionTimer({
       {/* Perk +10s boost floating banner */}
       {(boostActive || showBoost) && (
         <div className="absolute -top-3 left-1/2 z-20 flex -translate-x-1/2 animate-bounce items-center gap-1 rounded-full border border-amber-300 bg-amber-400 px-2 py-0.5 text-[9px] font-black tracking-wider whitespace-nowrap text-slate-950 uppercase shadow-lg">
-          <Zap className="h-2.5 w-2.5 fill-slate-950" /> +10s BOOST
+          <AppIcon icon={Lightning} size={10} weight="fill" className="text-slate-950" /> +10s BOOST
         </div>
       )}
 

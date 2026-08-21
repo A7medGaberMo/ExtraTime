@@ -2,7 +2,8 @@
 
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Shield, Layers, HelpCircle } from 'lucide-react';
+import { Shield, Stack, Question } from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
 import { PlayerImage } from './player-image';
 import { getTierStyle } from '@/lib/tier-styles';
 
@@ -154,7 +155,7 @@ const CLOSE_GROUPS: Record<string, string[]> = {
   CF: ['CF', 'ST'],
 };
 
-/* ── Position Compatibility Rules (Identical to backend draftEngine.ts) ── */
+/* ── Position Compatibility Rules ── */
 const POSITION_VARIANTS: Partial<Record<string, string[]>> = {
   LB: ['LWB'],
   LWB: ['LB'],
@@ -179,17 +180,11 @@ export function isPosCompatible(playerPos: string, slotPos: string): boolean {
   const normP = normalizePosition(playerPos);
   const normS = normalizePosition(slotPos);
 
-  // Exact match
   if (normP === normS) return true;
-
-  // Direct natural variant match
   const allowed = POSITION_VARIANTS[normS];
   return Boolean(allowed?.includes(normP));
 }
 
-/**
- * Finds the index of the best matching coordinate slot for a position.
- */
 function findBestCoordinateIndex(
   targetPos: string,
   coords: Coord[],
@@ -197,13 +192,11 @@ function findBestCoordinateIndex(
 ): number {
   const normTarget = normalizePosition(targetPos);
 
-  // 1. Exact match
   let found = coords.findIndex(
     (c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === normTarget,
   );
   if (found !== -1) return found;
 
-  // 2. Direct variant match
   const allowed = POSITION_VARIANTS[normTarget] || [];
   for (const fallback of allowed) {
     found = coords.findIndex(
@@ -233,7 +226,6 @@ export function TacticalPitch({
   const coords = coordsMap[formation] || coordsMap[matchSize === 5 ? '1-2-1' : '4-3-3'];
   const is5 = matchSize === 5;
 
-  // Identify display modes: active drafting or final completed view
   const isDraftMode = Boolean(rounds && currentRound !== undefined);
 
   // ── Mapping Logic ────────────────────────────────────────
@@ -241,7 +233,6 @@ export function TacticalPitch({
     const placedIndices = new Map<number, TacticalSquadSlot>();
     const assignedSquadSlotIdxs = new Set<number>();
 
-    // Strongest players (and mains) are considered first within each pool
     const sortedSquad = [...squad].map((slot, originalIdx) => ({
       slot,
       originalIdx,
@@ -253,8 +244,6 @@ export function TacticalPitch({
       return b.weight - a.weight;
     });
 
-    // Pick the best remaining candidate for a coordinate using every available
-    // pool in order: exact match → direct variant → close group → anyone.
     const takeForCoord = (slotPos: string): TacticalSquadSlot | null => {
       const normSlot = normalizePosition(slotPos);
       const pools = [normSlot];
@@ -284,8 +273,6 @@ export function TacticalPitch({
     };
 
     if (isDraftMode && rounds) {
-      // 1. DRAFT MODE: Map players specifically based on the round order
-      // Find coordinates for each round index
       const roundToCoord = new Map<number, number>();
       const usedCoordsForRounds = new Set<number>();
 
@@ -297,7 +284,6 @@ export function TacticalPitch({
         }
       }
 
-      // Assign won players to their specific round coordinate slot
       squad.forEach((slot, sIdx) => {
         if (!slot.roundNumber) return;
         const coordIdx = roundToCoord.get(slot.roundNumber);
@@ -307,8 +293,6 @@ export function TacticalPitch({
         }
       });
 
-      // Backfill any coords that had no matching round (e.g. one-off position
-      // rounds like a 2nd CB in 4-3-3) using leftover players from every pool
       coords.forEach((coord, ci) => {
         if (placedIndices.has(ci)) return;
         const hasRound = Array.from(roundToCoord.values()).includes(ci);
@@ -317,7 +301,6 @@ export function TacticalPitch({
         if (slot) placedIndices.set(ci, slot);
       });
 
-      // Reconstruct the 11 pitch slots
       const onFieldData = coords.map((coord, ci) => {
         const slot = placedIndices.get(ci);
         const matchedRound = rounds.find((r) => roundToCoord.get(r.roundNumber) === ci);
@@ -330,19 +313,16 @@ export function TacticalPitch({
         };
       });
 
-      // Substitutes in draft mode are everything left
       const substitutesData = squad.filter((_, sIdx) => !assignedSquadSlotIdxs.has(sIdx));
 
       return { onField: onFieldData, substitutes: substitutesData };
     }
 
-    // 2. FINAL LINEUP MODE: Smart positional allocation across all pools
     coords.forEach((coord, ci) => {
       const slot = takeForCoord(coord.pos);
       if (slot) placedIndices.set(ci, slot);
     });
 
-    // Reconstruct onField list
     const onFieldData = coords.map((coord, ci) => {
       const slot = placedIndices.get(ci);
       return {
@@ -353,7 +333,6 @@ export function TacticalPitch({
       };
     });
 
-    // Substitutes are anything leftover (duplicate positions, etc.)
     const substitutesData = squad.filter((_, sIdx) => !assignedSquadSlotIdxs.has(sIdx));
 
     return { onField: onFieldData, substitutes: substitutesData };
@@ -361,13 +340,13 @@ export function TacticalPitch({
 
   return (
     <div
-      className={`relative flex w-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-slate-950/85 shadow-2xl backdrop-blur-md ${compact ? 'p-3' : 'p-4 md:p-6'}`}
+      className={`relative flex w-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-slate-950/85 shadow-2xl backdrop-blur-md select-none ${compact ? 'p-3' : 'p-4 md:p-6'}`}
     >
       {/* Pitch Header */}
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-3">
         <div className="flex items-center gap-2">
-          <Shield className="text-lime h-4 w-4 animate-pulse sm:h-5 sm:w-5" />
-          <h3 className="text-xs font-black tracking-wider text-white uppercase sm:text-sm">
+          <AppIcon icon={Shield} size={18} weight="duotone" className="text-lime animate-pulse" />
+          <h3 className="text-xs font-black tracking-wider text-white uppercase font-display sm:text-sm">
             {title} — <span className="text-lime">{formation}</span>
           </h3>
         </div>
@@ -375,10 +354,10 @@ export function TacticalPitch({
         <div className="flex items-center gap-2">
           <button
             onClick={() => setIs3DView(!is3DView)}
-            className="hover:border-lime/30 text-steel flex items-center gap-1 rounded-full border border-white/10 bg-slate-900 px-2.5 py-1 text-[9px] font-black tracking-wider uppercase shadow-sm transition-all hover:text-white sm:text-[10px]"
+            className="hover:border-lime/40 text-steel flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900 px-2.5 py-1 text-[9px] font-black tracking-wider uppercase shadow-sm transition-all hover:text-white sm:text-[10px] cursor-pointer"
           >
-            <Layers className="text-lime h-3 w-3" />
-            {is3DView ? '3D Pitch' : '2D Pitch'}
+            <AppIcon icon={Stack} size={14} weight="duotone" className="text-lime" />
+            <span>{is3DView ? '3D Pitch' : '2D Pitch'}</span>
           </button>
           {badgeLabel && (
             <span className="border-lime/20 bg-lime/5 text-lime rounded-full border px-2.5 py-1 text-[9px] font-black tracking-widest uppercase sm:text-[10px]">
@@ -396,10 +375,8 @@ export function TacticalPitch({
         <div
           className={`absolute inset-0 transition-transform duration-700 ${is3DView ? 'origin-bottom [transform:perspective(800px)_rotateX(20deg)_scale(0.95)] transform' : ''}`}
         >
-          {/* Turf stripes */}
           <div className="pointer-events-none absolute inset-0 bg-[repeating-linear-gradient(0deg,#ffffff_0px,#ffffff_1px,transparent_1px,transparent_36px)] opacity-15" />
 
-          {/* Pitch SVG markings */}
           <svg
             className="absolute inset-0 h-full w-full fill-none stroke-white/20 stroke-[1.2]"
             preserveAspectRatio="none"
@@ -490,7 +467,7 @@ export function TacticalPitch({
                       >
                         <span className="truncate">{player.name?.split(' ').pop()}</span>
                         {slot?.cost !== undefined && slot.cost > 0 && (
-                          <span className="text-lime shrink-0 text-[7px]">${slot.cost}M</span>
+                          <span className="text-lime shrink-0 text-[7px] font-stats">${slot.cost}M</span>
                         )}
                       </div>
                     </motion.div>
@@ -542,7 +519,7 @@ export function TacticalPitch({
       {substitutes.length > 0 && (
         <div className="mt-3 space-y-2 rounded-xl border border-white/5 bg-slate-900/60 p-3">
           <h4 className="text-steel flex items-center gap-1.5 text-[9px] font-black tracking-wider uppercase sm:text-[10px]">
-            <HelpCircle className="h-3.5 w-3.5 text-amber-500" />
+            <AppIcon icon={Question} size={14} weight="duotone" className="text-amber-500" />
             Substitutes & Backups ({substitutes.length})
           </h4>
           <div className="flex flex-wrap gap-2">
@@ -568,7 +545,7 @@ export function TacticalPitch({
                       imgClassName="rounded"
                     />
                   </div>
-                  <div className="flex min-w-0 flex-col pr-1">
+                  <div className="flex min-w-0 flex-col pe-1">
                     <span className="max-w-[80px] truncate text-[9px] leading-tight font-black text-white">
                       {sub.player?.name?.split(' ').pop()}
                     </span>
@@ -577,7 +554,7 @@ export function TacticalPitch({
                         {sub.position}
                       </span>
                       {sub.cost !== undefined && sub.cost > 0 && (
-                        <span className="text-lime text-[7px] font-black">${sub.cost}M</span>
+                        <span className="text-lime text-[7px] font-black font-stats">${sub.cost}M</span>
                       )}
                     </div>
                   </div>
@@ -593,7 +570,7 @@ export function TacticalPitch({
         <span className="text-steel">
           <span className="text-lime">{formation}</span> Scheme
         </span>
-        <span className="text-steel">
+        <span className="text-steel font-stats">
           <span className="text-white">{squad.filter((s) => s.player).length}</span>/{totalRounds}{' '}
           Signed
         </span>

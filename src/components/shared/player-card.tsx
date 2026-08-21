@@ -3,149 +3,11 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import type { PlayerCardData, Tier } from '@/types/player';
+import { getTierStyle } from '@/lib/tier-styles';
 import { CardBackgroundTexture } from './card-textures';
 import { ClubCrestBadge, CountryFlagBadge } from './card-badges';
 import { ETLogo } from './et-logo';
 import { PlayerImage } from './player-image';
-
-export interface TierConfig {
-  name: string;
-  identity: string;
-  materials: string;
-  colors: {
-    primary: string;
-    highlight: string;
-    shadow: string;
-    accent: string;
-  };
-  frameGradient: string;
-  bgGradient: string;
-  rimGlow: string;
-  textShadow: string;
-}
-
-export const TIER_CONFIGS: Record<Tier, TierConfig> = {
-  ICON: {
-    name: 'ICON',
-    identity: 'Legendary',
-    materials: 'White marble, Ivory ceramic, Brushed gold',
-    colors: {
-      primary: '#F7F5EF',
-      highlight: '#F3E2A9',
-      shadow: '#8B6A22',
-      accent: '#D4AF37',
-    },
-    frameGradient: 'from-[#FFF8E7] via-[#D4AF37] to-[#8B6A22]',
-    bgGradient: 'from-[#2C2518] via-[#16130C] to-[#0A0805]',
-    rimGlow: 'rgba(212, 175, 55, 0.45)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-  HERO: {
-    name: 'HERO',
-    identity: 'Club Legend',
-    materials: 'Emerald crystal, Jade titanium, Deep gold trim',
-    colors: {
-      primary: '#10B981',
-      highlight: '#A7F3D0',
-      shadow: '#065F46',
-      accent: '#34D399',
-    },
-    frameGradient: 'from-[#ECFDF5] via-[#10B981] to-[#047857]',
-    bgGradient: 'from-[#064E3B] via-[#022C22] to-[#01140E]',
-    rimGlow: 'rgba(16, 185, 129, 0.45)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-  ULTIMATE: {
-    name: 'ULTIMATE',
-    identity: 'World Best',
-    materials: 'Electric azure, Sapphire crystal, Platinum trim',
-    colors: {
-      primary: '#0EA5E9',
-      highlight: '#7DD3FC',
-      shadow: '#0369A1',
-      accent: '#E0F2FE',
-    },
-    frameGradient: 'from-[#E0F2FE] via-[#0EA5E9] to-[#0369A1]',
-    bgGradient: 'from-[#0C4A6E] via-[#031D33] to-[#010B14]',
-    rimGlow: 'rgba(14, 165, 233, 0.45)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-  MASTER: {
-    name: 'MASTER',
-    identity: 'Elite Masterpiece',
-    materials: 'Royal crystal, Purple titanium, Luxury lacquer',
-    colors: {
-      primary: '#7C3AED',
-      highlight: '#D8B4FE',
-      shadow: '#4C1D95',
-      accent: '#E9D5FF',
-    },
-    frameGradient: 'from-[#F3E8FF] via-[#7C3AED] to-[#4C1D95]',
-    bgGradient: 'from-[#240A47] via-[#120424] to-[#07010E]',
-    rimGlow: 'rgba(124, 58, 237, 0.45)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-  ELITE: {
-    name: 'ELITE',
-    identity: 'Professional Excellence Red',
-    materials: 'Crimson ruby, Red metallic, Premium lacquer',
-    colors: {
-      primary: '#E11D48',
-      highlight: '#FDA4AF',
-      shadow: '#881337',
-      accent: '#FFE4E6',
-    },
-    frameGradient: 'from-[#FFE4E6] via-[#E11D48] to-[#881337]',
-    bgGradient: 'from-[#4C0519] via-[#1C020B] to-[#050002]',
-    rimGlow: 'rgba(225, 29, 72, 0.45)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-  GOLD: {
-    name: 'GOLD',
-    identity: 'Premium Professional',
-    materials: 'Champagne gold, Brushed metallic',
-    colors: {
-      primary: '#EAB308',
-      highlight: '#FDE68A',
-      shadow: '#78350F',
-      accent: '#FFF7CC',
-    },
-    frameGradient: 'from-[#FEF3C7] via-[#EAB308] to-[#78350F]',
-    bgGradient: 'from-[#332402] via-[#1A1201] to-[#080500]',
-    rimGlow: 'rgba(234, 179, 8, 0.45)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-  SILVER: {
-    name: 'SILVER',
-    identity: 'Professional',
-    materials: 'Brushed aluminum, Titanium',
-    colors: {
-      primary: '#CBD5E1',
-      highlight: '#F8FAFC',
-      shadow: '#64748B',
-      accent: '#EEF2F7',
-    },
-    frameGradient: 'from-[#F8FAFC] via-[#CBD5E1] to-[#64748B]',
-    bgGradient: 'from-[#1E293B] via-[#0F172A] to-[#020617]',
-    rimGlow: 'rgba(203, 213, 225, 0.35)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-  BRONZE: {
-    name: 'BRONZE',
-    identity: 'Rising Talent',
-    materials: 'Copper, Bronze, Oxidized metal',
-    colors: {
-      primary: '#C97A3A',
-      highlight: '#F0C8A0',
-      shadow: '#6A3E1B',
-      accent: '#F8E4D0',
-    },
-    frameGradient: 'from-[#F0C8A0] via-[#C97A3A] to-[#6A3E1B]',
-    bgGradient: 'from-[#2A160A] via-[#140B04] to-[#060301]',
-    rimGlow: 'rgba(201, 122, 58, 0.35)',
-    textShadow: '0 2px 8px rgba(0,0,0,0.9)',
-  },
-};
 
 /**
  * Display only the primary position if multi-positional (e.g. "ST/CF" -> "ST").
@@ -221,7 +83,7 @@ export function PlayerCard({
   const handleMouseLeave = () => setTilt({ x: 0, y: 0 });
 
   const tier = (player?.tier as Tier) || 'SILVER';
-  const tierCfg = TIER_CONFIGS[tier] || TIER_CONFIGS.SILVER;
+  const tierStyle = getTierStyle(tier);
   const playerName = player?.name || 'Player';
   const silhouetteVariant = ((playerName.charCodeAt(0) + playerName.length) % 6) as
     0 | 1 | 2 | 3 | 4 | 5;
@@ -259,37 +121,31 @@ export function PlayerCard({
   const chamferClip = 'polygon(8% 0%, 92% 0%, 100% 5%, 100% 95%, 92% 100%, 8% 100%, 0% 95%, 0% 5%)';
 
   return (
-    <div className="group flex flex-col items-center">
+    <div className="group flex flex-col items-center" dir="ltr">
       {/* Outer Card Shell with Chamfered Metallic Frame */}
       <div
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         className={cn(
-          'relative flex cursor-pointer flex-col items-center transition-all duration-150 select-none group-hover:-translate-y-2 group-hover:brightness-105',
+          'relative flex cursor-pointer flex-col items-center transition-all duration-150 select-none group-hover:-translate-y-2 group-hover:brightness-105 text-left',
           scaleMap.card,
           className,
         )}
         style={{
           transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-          filter: `drop-shadow(0 14px 28px rgba(0,0,0,0.85)) drop-shadow(0 0 16px ${tierCfg.rimGlow})`,
+          filter: `drop-shadow(0 14px 28px rgba(0,0,0,0.85)) drop-shadow(0 0 16px ${tierStyle.glow})`,
         }}
         {...props}
       >
         {/* Layer 1: Outer Metallic Edge Frame */}
         <div
-          className={cn(
-            'absolute inset-0 overflow-hidden bg-gradient-to-b p-[3px] shadow-2xl',
-            tierCfg.frameGradient,
-          )}
-          style={{ clipPath: chamferClip }}
+          className="absolute inset-0 overflow-hidden p-[3px] shadow-2xl"
+          style={{ clipPath: chamferClip, background: tierStyle.frame }}
         >
           {/* Layer 2: Shadow Groove & Inner Surface */}
           <div
-            className={cn(
-              'relative flex h-full w-full flex-col justify-between overflow-hidden bg-gradient-to-b p-2.5 sm:p-3',
-              tierCfg.bgGradient,
-            )}
-            style={{ clipPath: chamferClip }}
+            className="relative flex h-full w-full flex-col justify-between overflow-hidden p-2.5 sm:p-3"
+            style={{ clipPath: chamferClip, background: tierStyle.backdrop }}
           >
             {/* Layer 3: Subtle Background Pattern Texture (4% opacity) */}
             <CardBackgroundTexture tier={tier} />
@@ -309,13 +165,12 @@ export function PlayerCard({
               <div className="flex flex-col items-start pt-0.5 pl-0.5 leading-none">
                 <span
                   className={cn(
-                    'tracking-tighter uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]',
+                    'font-black tracking-normal uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)] font-stats',
                     scaleMap.num,
                   )}
                   style={{
-                    color: tierCfg.colors.highlight,
-                    fontFamily: 'var(--font-anton), var(--font-bebas), sans-serif',
-                    background: `linear-gradient(180deg, #FFFFFF 20%, ${tierCfg.colors.highlight} 100%)`,
+                    color: tierStyle.highlight,
+                    background: `linear-gradient(180deg, #FFFFFF 30%, ${tierStyle.highlight} 100%)`,
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                   }}
@@ -328,7 +183,7 @@ export function PlayerCard({
               <div className="flex flex-col items-center pt-0.5 pr-0.5">
                 <div
                   className="flex items-center justify-center rounded-full border border-white/20 bg-slate-950/70 px-2 py-0.5 shadow-xl backdrop-blur-md transition-transform group-hover:scale-105"
-                  style={{ borderColor: `${tierCfg.colors.accent}60` }}
+                  style={{ borderColor: `${tierStyle.accent}60` }}
                 >
                   <ETLogo
                     variant="card-badge"
@@ -346,8 +201,8 @@ export function PlayerCard({
                   scaleMap.avatar,
                 )}
                 style={{
-                  borderColor: `${tierCfg.colors.highlight}90`,
-                  boxShadow: `0 0 25px rgba(0,0,0,0.85), inset 0 0 15px rgba(0,0,0,0.5), 0 0 15px ${tierCfg.rimGlow}`,
+                  borderColor: `${tierStyle.highlight}90`,
+                  boxShadow: `0 0 25px rgba(0,0,0,0.85), inset 0 0 15px rgba(0,0,0,0.5), 0 0 15px ${tierStyle.glow}`,
                 }}
               >
                 <PlayerImage
@@ -368,7 +223,7 @@ export function PlayerCard({
                   'flex w-auto items-center justify-center rounded-full border border-white/25 bg-slate-950/85 text-center shadow-lg backdrop-blur-md',
                   scaleMap.infoPill,
                 )}
-                style={{ borderColor: `${tierCfg.colors.accent}50` }}
+                style={{ borderColor: `${tierStyle.accent}50` }}
               >
                 {/* NATION FLAG */}
                 <CountryFlagBadge
@@ -388,7 +243,6 @@ export function PlayerCard({
                     'flex items-center justify-center rounded border border-white/15 bg-white/10 leading-none font-black tracking-wider text-white uppercase',
                     scaleMap.posBadge,
                   )}
-                  style={{ fontFamily: 'var(--font-inter-tight), sans-serif' }}
                 >
                   {mainPosition}
                 </span>
@@ -397,16 +251,15 @@ export function PlayerCard({
 
             {/* 4. BOTTOM SECTION: SLEEK FLOATING GLASS PLAYER NAME BAR */}
             <div className="relative z-20 mt-auto mb-0.5 w-full">
-              <div className="flex w-full items-center justify-center rounded-xl border border-white/25 bg-slate-950/85 px-1 py-1.5 text-center shadow-2xl backdrop-blur-xl">
+              <div className="flex w-full items-center justify-center rounded-xl border border-white/30 bg-slate-950/90 px-1.5 py-1 text-center shadow-2xl backdrop-blur-xl">
                 <h3
                   className={cn(
-                    'w-full truncate px-0.5 text-center font-black text-white uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]',
+                    'w-full truncate px-0.5 text-center font-black uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)] font-display',
                     getDynamicNameSizeClass(displayName, size),
                   )}
                   style={{
-                    fontFamily:
-                      'var(--font-anton), var(--font-bebas), var(--font-inter-tight), sans-serif',
-                    background: `linear-gradient(180deg, #FFFFFF 30%, ${tierCfg.colors.highlight} 100%)`,
+                    color: tierStyle.highlight,
+                    background: `linear-gradient(180deg, #FFFFFF 40%, ${tierStyle.highlight} 100%)`,
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                   }}
@@ -422,10 +275,10 @@ export function PlayerCard({
       {/* Optional Tier Name Below Card for Catalog / Showcase view */}
       {showTierLabelBelow && (
         <span
-          className="mt-1.5 text-[10px] font-black tracking-widest uppercase"
-          style={{ color: tierCfg.colors.highlight }}
+          className="mt-1.5 text-[10px] font-black tracking-widest uppercase font-stats"
+          style={{ color: tierStyle.highlight }}
         >
-          {tierCfg.name}
+          {tierStyle.name}
         </span>
       )}
     </div>

@@ -1,4 +1,4 @@
-import type { PlayerCardData, Tier } from '@/types/player';
+import type { PlayerCardData } from '@/types/player';
 
 export const FALLBACK_PLAYERS: PlayerCardData[] = [
   // ── ICONS ──

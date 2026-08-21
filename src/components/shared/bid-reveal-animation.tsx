@@ -3,7 +3,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { PlayerCard } from '@/components/shared/player-card';
 import type { PlayerCardData } from '@/types/player';
-import { Swords, Trophy, ShieldCheck, HelpCircle, X } from 'lucide-react';
+import { Sword, Trophy, ShieldCheck, Question, X } from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
 
 export interface LastCompletedRoundInfo {
   roundNumber: number;
@@ -99,7 +100,7 @@ export function BidRevealAnimation({
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-slate-950/98 p-3 backdrop-blur-2xl transition-all duration-300 sm:p-4 ${
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-slate-950/98 p-3 backdrop-blur-2xl transition-all duration-300 sm:p-4 select-none ${
         stage === 'exit' ? 'pointer-events-none scale-95 opacity-0' : 'scale-100 opacity-100'
       }`}
       onClick={() => {
@@ -118,15 +119,15 @@ export function BidRevealAnimation({
             setStage('exit');
             setTimeout(() => onCloseRef.current(), 280);
           }}
-          className="text-steel absolute top-3 right-3 z-20 rounded-full border border-white/10 bg-slate-950/80 p-1.5 transition-all hover:text-white"
+          className="text-steel absolute top-3 right-3 z-20 rounded-full border border-white/10 bg-slate-950/80 p-1.5 transition-all hover:text-white cursor-pointer"
         >
-          <X className="h-4 w-4" />
+          <AppIcon icon={X} size={16} weight="bold" />
         </button>
 
         {/* Round + Position */}
         <div className="z-10 flex flex-col items-center pt-1 text-center">
-          <div className="text-steel inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-950/80 px-3 py-1 text-[10px] font-black tracking-widest uppercase shadow-inner">
-            <Swords className="text-lime h-3.5 w-3.5" />R{roundNumber} · {position}
+          <div className="text-steel inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-950/80 px-3 py-1 text-[10px] font-black tracking-widest uppercase shadow-inner font-stats">
+            <AppIcon icon={Sword} size={14} weight="duotone" className="text-lime" />R{roundNumber} · {position}
           </div>
         </div>
 
@@ -134,47 +135,47 @@ export function BidRevealAnimation({
         <div className="z-10 space-y-1.5 text-center">
           {winnerIsMe ? (
             <>
-              <div className="text-lime flex animate-pulse items-center justify-center gap-1.5 text-base font-black tracking-wider uppercase sm:text-lg">
-                <Trophy className="text-lime h-4.5 w-4.5 animate-bounce sm:h-5 sm:w-5" />
+              <div className="text-lime flex animate-pulse items-center justify-center gap-1.5 text-base font-black tracking-wider uppercase sm:text-lg font-display">
+                <AppIcon icon={Trophy} size={20} weight="duotone" className="text-lime animate-bounce" />
                 You Won {yourPlayer?.name}!
               </div>
-              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs">
+              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs font-stats">
                 {bidLine(myBid ?? winningBid, opponentBid)}
                 {winningBid > 0 && <span className="text-lime"> · Paid ${winningBid}M</span>}
               </p>
-              <p className="text-steel/60 text-[9px] font-semibold tracking-wide uppercase">
+              <p className="text-steel/60 text-[9px] font-semibold tracking-wide uppercase font-stats">
                 Rival got <span className="text-rose-400">{rivalPlayer?.name}</span> as secret sub
                 (${rivalCost}M)
               </p>
             </>
           ) : winningBid > 0 ? (
             <>
-              <div className="flex items-center justify-center gap-1.5 text-base font-black tracking-wider text-rose-400 uppercase sm:text-lg">
-                <ShieldCheck className="h-4.5 w-4.5 text-rose-400 sm:h-5 sm:w-5" />
+              <div className="flex items-center justify-center gap-1.5 text-base font-black tracking-wider text-rose-400 uppercase sm:text-lg font-display">
+                <AppIcon icon={ShieldCheck} size={20} weight="duotone" className="text-rose-400" />
                 Rival Won {rivalPlayer?.name}!
               </div>
-              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs">
+              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs font-stats">
                 {bidLine(myBid ?? 0, opponentBid ?? winningBid)}
                 {winningBid > 0 && <span className="text-rose-400"> · Paid ${winningBid}M</span>}
               </p>
-              <p className="text-steel/60 text-[9px] font-semibold tracking-wide uppercase">
+              <p className="text-steel/60 text-[9px] font-semibold tracking-wide uppercase font-stats">
                 You received <span className="text-lime">{yourPlayer?.name}</span> as secret sub ($
                 {yourCost}M)
               </p>
             </>
           ) : (
             <>
-              <div className="flex items-center justify-center gap-1.5 text-base font-black tracking-wider text-amber-300 uppercase sm:text-lg">
-                <HelpCircle className="h-4.5 w-4.5 text-amber-300 sm:h-5 sm:w-5" />
+              <div className="flex items-center justify-center gap-1.5 text-base font-black tracking-wider text-amber-300 uppercase sm:text-lg font-display">
+                <AppIcon icon={Question} size={20} weight="duotone" className="text-amber-300" />
                 Dual Pass
               </div>
-              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs">
+              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs font-stats">
                 {bidLine(0, 0)} · Starter claims Main at $0M
               </p>
             </>
           )}
           {wasTieLottery && (
-            <p className="animate-pulse text-[9px] font-black tracking-widest text-amber-300 uppercase">
+            <p className="animate-pulse text-[9px] font-black tracking-widest text-amber-300 uppercase font-stats">
               🪙 Equal sealed bids — room-seed lot draw resolved it!
             </p>
           )}
@@ -190,14 +191,14 @@ export function BidRevealAnimation({
                 : 'translate-y-4 scale-[0.6] opacity-0'
             } z-10`}
           >
-            <span className="rounded-full border border-rose-500/20 bg-rose-500/10 px-2 py-0.5 text-[9px] font-black tracking-widest text-rose-400 uppercase shadow-sm">
+            <span className="rounded-full border border-rose-500/20 bg-rose-500/10 px-2 py-0.5 text-[9px] font-black tracking-widest text-rose-400 uppercase shadow-sm font-stats">
               Rival: {opponentPick?.isSub ? 'Sub' : 'Main'}
             </span>
             <div className="relative">
               {rivalPlayer ? (
                 <>
                   <PlayerCard player={rivalPlayer} size="sm" />
-                  <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded-full border border-rose-500/30 bg-slate-950 px-2 py-0.5 text-[8px] font-black whitespace-nowrap text-rose-300 uppercase shadow-md">
+                  <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded-full border border-rose-500/30 bg-slate-950 px-2 py-0.5 text-[8px] font-black whitespace-nowrap text-rose-300 uppercase shadow-md font-stats">
                     ${rivalCost}M
                   </div>
                 </>
@@ -217,14 +218,14 @@ export function BidRevealAnimation({
                 : 'translate-y-4 scale-[0.8] opacity-0'
             } z-20`}
           >
-            <span className="text-lime bg-lime/10 border-lime/30 rounded-full border px-2 py-0.5 text-[10px] font-black tracking-widest uppercase shadow-sm">
+            <span className="text-lime bg-lime/10 border-lime/30 rounded-full border px-2 py-0.5 text-[10px] font-black tracking-widest uppercase shadow-sm font-stats">
               You: {myPick?.isSub ? 'Sub' : 'Main'}
             </span>
             <div className="relative">
               {yourPlayer ? (
                 <>
                   <PlayerCard player={yourPlayer} size="sm" />
-                  <div className="bg-lime border-lime absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded-full border px-2.5 py-0.5 text-[9px] font-black whitespace-nowrap text-slate-950 uppercase shadow-lg">
+                  <div className="bg-lime border-lime absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded-full border px-2.5 py-0.5 text-[9px] font-black whitespace-nowrap text-slate-950 uppercase shadow-lg font-stats">
                     ${yourCost}M
                   </div>
                 </>
@@ -245,7 +246,7 @@ export function BidRevealAnimation({
               style={{ width: `${Math.max(0, 100 - progressPct)}%` }}
             />
           </div>
-          <span className="text-steel/40 text-[7px] font-black tracking-widest uppercase">
+          <span className="text-steel/40 text-[7px] font-black tracking-widest uppercase font-stats">
             Next round
           </span>
         </div>

@@ -1,4 +1,4 @@
-import { mutation, type MutationCtx } from '../_generated/server';
+import { mutation } from '../_generated/server';
 import { Id } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { tierValidator, LEAGUE_COUNTRY, type Tier } from '../lib/constants';
@@ -54,7 +54,7 @@ export const clearTableBatch = mutation({
   },
   handler: async (ctx, args) => {
     const limit = args.batchSize || 300;
-    // @ts-ignore
+    // @ts-expect-error dynamic tableName query
     const docs = await ctx.db.query(args.tableName).take(limit);
     for (const doc of docs) {
       await ctx.db.delete(doc._id);

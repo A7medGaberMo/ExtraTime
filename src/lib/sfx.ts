@@ -8,10 +8,42 @@
  * Victory Fanfare   — bright square-wave horn sequence
  */
 
+const STORAGE_KEY = 'extratime_sfx_muted';
+
 let ctx: AudioContext | null = null;
+let muted = false;
+
+// Initialize mute state from localStorage
+if (typeof window !== 'undefined') {
+  try {
+    muted = localStorage.getItem(STORAGE_KEY) === 'true';
+  } catch {
+    muted = false;
+  }
+}
+
+export function isAudioMuted(): boolean {
+  return muted;
+}
+
+export function setAudioMuted(val: boolean): void {
+  muted = val;
+  try {
+    localStorage.setItem(STORAGE_KEY, String(val));
+  } catch {
+    // storage disabled
+  }
+}
+
+export function toggleAudioMuted(): boolean {
+  const next = !muted;
+  setAudioMuted(next);
+  return next;
+}
 
 function getCtx(): AudioContext | null {
   if (typeof window === 'undefined') return null;
+  if (muted) return null;
   if (!ctx) {
     const Ctor =
       window.AudioContext ??
@@ -25,7 +57,7 @@ function getCtx(): AudioContext | null {
 
 /** Call from any user gesture (click/tap) to unlock mobile audio. */
 export function unlockAudio(): void {
-  getCtx();
+  if (!muted) getCtx();
 }
 
 function tone(
@@ -37,6 +69,7 @@ function tone(
   ctxRef: AudioContext,
   opts: { attack?: number; endFreq?: number } = {},
 ) {
+  if (muted) return;
   const osc = ctxRef.createOscillator();
   const gain = ctxRef.createGain();
   osc.type = type;
@@ -63,6 +96,7 @@ function noiseBurst(
   ctxRef: AudioContext,
   cutoff: number,
 ) {
+  if (muted) return;
   const bufferSize = Math.max(1, Math.floor(ctxRef.sampleRate * duration));
   const buffer = ctxRef.createBuffer(1, bufferSize, ctxRef.sampleRate);
   const data = buffer.getChannelData(0);
@@ -84,11 +118,9 @@ function noiseBurst(
 export function kickoffWhistle(): void {
   const c = getCtx();
   if (!c) return;
-  const now = c.currentTime;
   tone(800, 0, 0.32, 'sine', 0.22, c, { endFreq: 1200, attack: 0.02 });
   tone(800, 0.02, 0.3, 'sine', 0.16, c, { endFreq: 1200, attack: 0.02 });
   tone(1200, 0.09, 0.24, 'sine', 0.1, c, { endFreq: 1500 });
-  void now;
 }
 
 /** ⚽ Goal chime: arpeggiated C major triad. */
@@ -190,11 +222,9 @@ export function tierReveal(): void {
 export function walkoutStinger(): void {
   const c = getCtx();
   if (!c) return;
-  // Dramatic bass surge
   tone(80, 0, 0.8, 'sine', 0.45, c, { endFreq: 40, attack: 0.02 });
   tone(120, 0.05, 0.6, 'sawtooth', 0.15, c, { endFreq: 60, attack: 0.02 });
 
-  // Stinger Fanfare
   const fanfare = [
     [440.0, 0.1], // A4
     [554.37, 0.22], // C#5
@@ -221,4 +251,7 @@ export const sfx = {
   cardFlip: cardFlip,
   tierReveal: tierReveal,
   walkout: walkoutStinger,
+  isMuted: isAudioMuted,
+  setMuted: setAudioMuted,
+  toggleMute: toggleAudioMuted,
 };

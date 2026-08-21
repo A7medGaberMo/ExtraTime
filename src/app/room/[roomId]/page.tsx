@@ -1,27 +1,33 @@
 'use client';
 
-import { use, useEffect, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useQuery } from 'convex/react';
 import { api } from '../../../../convex/_generated/api';
 import { Id } from '../../../../convex/_generated/dataModel';
-import { PageHeader } from '@/components/shared/page-header';
 import { useGuestSession } from '@/hooks/use-guest-session';
 import {
   Copy,
-  Users,
-  Settings2,
-  Clock,
   Check,
-  ArrowRight,
-  Swords,
+  Users,
   Coins,
-  ShieldCheck,
-} from 'lucide-react';
+  Crosshair,
+  Clock,
+  ArrowRight,
+  SlidersHorizontal,
+} from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
+import { Button } from '@/components/ui/button';
+import { PageShell } from '@/components/ui/page-shell';
+import { Panel } from '@/components/ui/panel';
+import { StatPill } from '@/components/ui/stat-pill';
+import { UserIdentity } from '@/components/ui/user-identity';
+import { useI18n } from '@/lib/i18n';
 
 export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
+  const { t } = useI18n();
   const [copied, setCopied] = useState(false);
   const { guestId } = useGuestSession();
 
@@ -52,174 +58,152 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
   const guestReady = Boolean(room?.guestId);
 
   return (
-    <div className="animate-fade-in mx-auto max-w-5xl space-y-4">
-      <div className="grid gap-3 lg:grid-cols-[1fr_auto] lg:items-end">
-        <PageHeader
-          title="Hidden Bid Lobby"
-          subtitle="Share the code, confirm the rules, then enter the auction arena."
-          backUrl="/"
-          className="mb-0"
-        />
-
-        <div className="border-lime/30 bg-lime/10 shadow-lime/10 rounded-2xl border p-3 shadow-xl">
-          <p className="text-lime mb-1 text-[10px] font-black tracking-widest uppercase">
-            Room Code
+    <PageShell
+      title={t('lobby.title')}
+      subtitle={t('lobby.subtitle')}
+      backUrl="/"
+      maxWidth="4xl"
+    >
+      {/* ── 1. ROOM CODE HERO BAR ────────────────────────────────────── */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 rounded-3xl border border-lime/30 bg-lime/10 shadow-xl">
+        <div className="space-y-0.5 text-center sm:text-start">
+          <span className="text-lime text-[10px] font-black tracking-widest uppercase">
+            {t('lobby.roomCode')}
+          </span>
+          <p className="font-stats text-lime text-3xl sm:text-4xl tracking-[0.24em] font-black">
+            {roomCode}
           </p>
-          <div className="flex items-center gap-3">
-            <span className="font-stats text-lime text-3xl tracking-[0.2em]">{roomCode}</span>
-            <button
-              onClick={copyCode}
-              className="text-steel hover:border-lime/50 hover:text-lime flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-slate-950 transition-all active:scale-95"
-              title="Copy code"
-            >
-              {copied ? <Check className="text-lime h-4 w-4" /> : <Copy className="h-4 w-4" />}
-            </button>
-          </div>
         </div>
+
+        <Button
+          variant="secondary"
+          size="md"
+          onClick={copyCode}
+          leftIcon={<AppIcon icon={copied ? Check : Copy} size={18} weight="bold" className={copied ? 'text-lime' : ''} />}
+        >
+          {copied ? t('common.copied') : t('common.copy')}
+        </Button>
       </div>
 
-      <section className="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-950/70 p-4 shadow-2xl backdrop-blur-xl sm:p-5">
-        <div className="bg-lime/10 pointer-events-none absolute inset-x-10 top-0 h-32 rounded-full blur-3xl" />
-        <div className="relative grid gap-3 sm:grid-cols-3">
-          <div className="rounded-xl border border-white/10 bg-slate-900/80 p-3">
-            <Users className="text-lime mb-2 h-4 w-4" />
-            <p className="text-steel text-[10px] font-black tracking-widest uppercase">Players</p>
-            <p className="font-stats mt-1 text-2xl text-white">{guestReady ? '2/2' : '1/2'}</p>
-          </div>
-          <div className="rounded-xl border border-white/10 bg-slate-900/80 p-3">
-            <Coins className="text-lime mb-2 h-4 w-4" />
-            <p className="text-steel text-[10px] font-black tracking-widest uppercase">Budget</p>
-            <p className="font-stats text-lime mt-1 text-2xl">
-              ${room?.settings?.startingBudget || 100}M
-            </p>
-          </div>
-          <div className="rounded-xl border border-white/10 bg-slate-900/80 p-3">
-            <Swords className="mb-2 h-4 w-4 text-amber-400" />
-            <p className="text-steel text-[10px] font-black tracking-widest uppercase">
-              Squad Size
-            </p>
-            <p className="font-stats mt-1 text-2xl text-white">
-              {room?.settings?.matchSize || 11} Cards
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* ── 2. QUICK STATS SUMMARY ───────────────────────────────────── */}
+      <div className="grid grid-cols-3 gap-2.5 sm:gap-4">
+        <Panel variant="subtle" className="p-3 sm:p-4 text-center sm:text-start">
+          <AppIcon icon={Users} size={20} weight="duotone" className="text-lime mb-1" />
+          <p className="text-steel text-[10px] font-black uppercase tracking-wider">{t('lobby.playersCount')}</p>
+          <p className="font-stats mt-0.5 text-xl sm:text-2xl font-black text-white">{guestReady ? '2/2' : '1/2'}</p>
+        </Panel>
+        <Panel variant="subtle" className="p-3 sm:p-4 text-center sm:text-start">
+          <AppIcon icon={Coins} size={20} weight="duotone" className="text-lime mb-1" />
+          <p className="text-steel text-[10px] font-black uppercase tracking-wider">{t('lobby.budget')}</p>
+          <p className="font-stats mt-0.5 text-xl sm:text-2xl font-black text-lime">
+            ${room?.settings?.startingBudget || 100}M
+          </p>
+        </Panel>
+        <Panel variant="subtle" className="p-3 sm:p-4 text-center sm:text-start">
+          <AppIcon icon={Crosshair} size={20} weight="duotone" className="text-amber-400 mb-1" />
+          <p className="text-steel text-[10px] font-black uppercase tracking-wider">{t('lobby.squadSize')}</p>
+          <p className="font-stats mt-0.5 text-xl sm:text-2xl font-black text-white">
+            {room?.settings?.matchSize || 11} {t('common.rounds')}
+          </p>
+        </Panel>
+      </div>
 
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_320px]">
-        <section className="bg-card/90 rounded-2xl border border-white/10 p-4 shadow-xl sm:p-5">
-          <div className="mb-3 flex items-center justify-between gap-3">
-            <h2 className="flex items-center gap-2 text-base font-black text-white">
-              <Users className="text-lime h-5 w-5" />
-              Managers
+      {/* ── 3. MANAGERS STATUS & RULES ───────────────────────────────── */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4">
+        {/* Managers Panel */}
+        <Panel variant="highlight" className="p-4 sm:p-6 space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="flex items-center gap-2 text-base font-black text-white uppercase font-display">
+              <AppIcon icon={Users} size={20} weight="duotone" className="text-lime" />
+              <span>{t('lobby.playersCount')}</span>
             </h2>
-            <span
-              className={`rounded-full border px-3 py-1 text-[10px] font-black tracking-widest uppercase ${
-                guestReady
-                  ? 'border-lime/40 bg-lime/10 text-lime'
-                  : 'border-amber-400/30 bg-amber-400/10 text-amber-300'
-              }`}
-            >
-              {guestReady ? 'Ready' : 'Waiting'}
-            </span>
+            <StatPill
+              variant={guestReady ? 'lime' : 'amber'}
+              size="sm"
+              label={guestReady ? t('common.ready') : t('common.waiting')}
+            />
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2">
-            <div className="border-lime/40 from-lime/10 relative min-h-[150px] overflow-hidden rounded-xl border bg-gradient-to-b to-slate-950 p-4 shadow-lg">
-              <div className="bg-lime/15 absolute top-0 right-0 h-24 w-24 rounded-full blur-3xl" />
-              <div className="relative flex h-full flex-col justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <div className="border-lime/50 font-stats text-lime flex h-14 w-14 items-center justify-center rounded-xl border bg-slate-950 text-2xl">
-                    H
-                  </div>
-                  <div className="min-w-0">
-                    <p className="text-base font-black text-white">
-                      {isHost ? 'You' : 'Host Manager'}
-                    </p>
-                    <p className="text-steel text-xs font-bold">Room creator</p>
-                  </div>
-                </div>
-                <span className="border-lime/30 bg-lime/10 text-lime w-fit rounded-lg border px-3 py-1 text-[10px] font-black tracking-widest uppercase">
-                  Perk: {state?.me?.perk || 'Assigned'}
-                </span>
-              </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            {/* Host Manager */}
+            <div className="p-4 rounded-2xl border border-lime/30 bg-lime/5 space-y-3">
+              <UserIdentity
+                nickname={state?.hostName || (isHost ? 'You' : 'Host')}
+                subtitle={t('lobby.hostSub')}
+                isHost
+                size="md"
+              />
+              <StatPill
+                variant="lime"
+                size="sm"
+                label={`Perk: ${state?.me?.perk || 'Assigned'}`}
+              />
             </div>
 
+            {/* Challenger Manager */}
             {guestReady ? (
-              <div className="relative min-h-[150px] overflow-hidden rounded-xl border border-sky-400/40 bg-gradient-to-b from-sky-400/10 to-slate-950 p-4 shadow-lg">
-                <div className="absolute top-0 right-0 h-24 w-24 rounded-full bg-sky-400/15 blur-3xl" />
-                <div className="relative flex h-full flex-col justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="font-stats flex h-14 w-14 items-center justify-center rounded-xl border border-sky-400/50 bg-slate-950 text-2xl text-sky-300">
-                      G
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-base font-black text-white">
-                        {!isHost ? 'You' : 'Challenger'}
-                      </p>
-                      <p className="text-steel text-xs font-bold">Ready to bid</p>
-                    </div>
-                  </div>
-                  <span className="w-fit rounded-lg border border-sky-400/30 bg-sky-400/10 px-3 py-1 text-[10px] font-black tracking-widest text-sky-300 uppercase">
-                    Joined
-                  </span>
-                </div>
+              <div className="p-4 rounded-2xl border border-sky-400/30 bg-sky-400/5 space-y-3">
+                <UserIdentity
+                  nickname={state?.guestName || (!isHost ? 'You' : 'Challenger')}
+                  subtitle={t('lobby.guestSub')}
+                  size="md"
+                />
+                <StatPill
+                  variant="sky"
+                  size="sm"
+                  label={t('common.ready')}
+                />
               </div>
             ) : (
-              <div className="flex min-h-[150px] flex-col items-center justify-center gap-3 rounded-xl border border-dashed border-white/15 bg-slate-950/70 p-4 text-center">
-                <Clock className="text-lime h-7 w-7 animate-pulse" />
+              <div className="flex min-h-[120px] flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-white/15 bg-slate-950/60 p-4 text-center">
+                <AppIcon icon={Clock} size={28} weight="duotone" className="text-lime animate-pulse" />
                 <div>
-                  <p className="text-sm font-black text-white">Waiting for opponent</p>
-                  <p className="text-steel mt-1 text-xs font-medium">
-                    Share code {roomCode} to start.
+                  <p className="text-xs font-black text-white uppercase">{t('lobby.waitingOpponent')}</p>
+                  <p className="text-steel mt-0.5 text-[11px] font-medium">
+                    {t('lobby.shareCodePrompt', { code: roomCode })}
                   </p>
                 </div>
               </div>
             )}
           </div>
-        </section>
+        </Panel>
 
+        {/* Rules & Action Sidebar */}
         <aside className="space-y-3">
-          <div className="bg-card/90 rounded-2xl border border-white/10 p-4 shadow-xl">
-            <h2 className="mb-3 flex items-center gap-2 text-base font-black text-white">
-              <Settings2 className="text-lime h-5 w-5" />
-              Rules
-            </h2>
-            <div className="space-y-3 text-xs">
-              <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-3">
-                <span className="text-steel font-bold">Mode</span>
-                <span className="font-black text-white uppercase">
-                  {room?.gameType || 'Hidden Bid'}
-                </span>
+          <Panel variant="default" className="p-4 sm:p-5 space-y-3">
+            <h3 className="flex items-center gap-2 text-sm font-black text-white uppercase">
+              <AppIcon icon={SlidersHorizontal} size={18} weight="duotone" className="text-lime" />
+              <span>{t('lobby.rulesTitle')}</span>
+            </h3>
+
+            <div className="space-y-2.5 text-xs">
+              <div className="flex items-center justify-between border-b border-white/10 pb-2">
+                <span className="text-steel font-bold">{t('lobby.mode')}</span>
+                <span className="font-black text-lime uppercase">Snipe</span>
               </div>
-              <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-3">
-                <span className="text-steel font-bold">Player Pool</span>
-                <span className="text-lime font-black uppercase">
-                  {room?.settings?.poolMode || 'GLOBAL'}
-                </span>
+              <div className="flex items-center justify-between border-b border-white/10 pb-2">
+                <span className="text-steel font-bold">{t('createRoom.playerPool')}</span>
+                <span className="font-black text-white uppercase">{room?.settings?.poolMode || 'GLOBAL'}</span>
               </div>
-              <div className="flex items-center justify-between gap-3">
-                <span className="text-steel font-bold">Turn Timer</span>
-                <span className="font-black text-white">30s</span>
+              <div className="flex items-center justify-between">
+                <span className="text-steel font-bold">{t('lobby.turnTimer')}</span>
+                <span className="font-black text-white font-stats">30s</span>
               </div>
             </div>
-          </div>
+          </Panel>
 
-          <div className="rounded-2xl border border-amber-400/20 bg-amber-400/10 p-4">
-            <ShieldCheck className="mb-2 h-5 w-5 text-amber-300" />
-            <p className="text-xs leading-relaxed font-bold text-amber-100">
-              Win the visible card by bidding smart. Passing can still land you the hidden sub card.
-            </p>
-          </div>
-
-          <button
+          <Button
+            variant="primary"
+            size="lg"
+            fullWidth
             onClick={() => router.push(`/auction/${roomId}`)}
-            className="bg-lime shadow-lime/15 hover:bg-vivid flex w-full items-center justify-center gap-2 rounded-xl px-4 py-4 text-sm font-black tracking-widest text-slate-950 uppercase shadow-xl transition-all active:scale-[0.98]"
+            leftIcon={<AppIcon icon={Crosshair} size={20} weight="bold" />}
+            rightIcon={<AppIcon icon={ArrowRight} size={18} weight="bold" />}
           >
-            Enter Auction Arena
-            <ArrowRight className="h-4 w-4" />
-          </button>
+            {t('lobby.enterArena')}
+          </Button>
         </aside>
       </div>
-    </div>
+    </PageShell>
   );
 }

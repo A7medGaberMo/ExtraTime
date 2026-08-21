@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "uel-all-time-matches-won",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["europa-league", "uel", "wins", "clubs"],
+    "title": {
+      "en": "Rank these 5 clubs by UEFA Cup / Europa League matches won",
+      "ar": "رتّب الأندية الخمسة حسب عدد الانتصارات في الدوري الأوروبي (وكأس الاتحاد)"
+    },
+    "subtitle": {
+      "en": "All-time tournament wins through 2025–26",
+      "ar": "إجمالي الانتصارات في تاريخ المسابقة حتى 2025–26"
+    },
+    "metricLabel": { "en": "Wins", "ar": "انتصارات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "uel_w_roma",
+        "name": { "en": "AS Roma", "ar": "روما" },
+        "media": { "type": "club", "fallbackText": "ROM" },
+        "value": 102,
+        "valueLabel": { "en": "102 Wins", "ar": "102 فوز" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "uel_w_spurs",
+        "name": { "en": "Tottenham Hotspur", "ar": "توتنهام هوتسبير" },
+        "media": { "type": "club", "fallbackText": "TOT" },
+        "value": 97,
+        "valueLabel": { "en": "97 Wins", "ar": "97 فوز" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "uel_w_inter",
+        "name": { "en": "Inter Milan", "ar": "إنتر ميلان" },
+        "media": { "type": "club", "fallbackText": "INT" },
+        "value": 96,
+        "valueLabel": { "en": "96 Wins", "ar": "96 فوز" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "uel_w_sporting",
+        "name": { "en": "Sporting CP", "ar": "سبورتينغ لشبونة" },
+        "media": { "type": "club", "fallbackText": "SCP" },
+        "value": 95,
+        "valueLabel": { "en": "95 Wins", "ar": "95 فوز" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "uel_w_sevilla",
+        "name": { "en": "Sevilla", "ar": "إشبيلية" },
+        "media": { "type": "club", "fallbackText": "SEV" },
+        "value": 92,
+        "valueLabel": { "en": "92 Wins", "ar": "92 فوز" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "uel-all-time-top-scorers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["europa-league", "uel", "goals", "strikers"],
+    "title": {
+      "en": "Rank these 5 strikers by UEFA Europa League goals",
+      "ar": "رتّب المهاجمين الخمسة حسب أهدافهم في الدوري الأوروبي"
+    },
+    "subtitle": {
+      "en": "Europa League era (2009–10 through 2025–26)",
+      "ar": "حقبة الدوري الأوروبي الحديثة (من موسم 2009–10 حتى 2025–26)"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "uel_g_auba",
+        "name": { "en": "Pierre-Emerick Aubameyang", "ar": "بيير إيميريك أوباميانغ" },
+        "media": { "type": "player", "fallbackText": "PEA" },
+        "value": 34,
+        "valueLabel": { "en": "34 Goals", "ar": "34 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "uel_g_falcao",
+        "name": { "en": "Radamel Falcao", "ar": "راداميل فالكاو" },
+        "media": { "type": "player", "fallbackText": "RF9" },
+        "value": 30,
+        "valueLabel": { "en": "30 Goals", "ar": "30 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "uel_g_bruno",
+        "name": { "en": "Bruno Fernandes", "ar": "برونو فيرنانديز" },
+        "media": { "type": "player", "fallbackText": "BF8" },
+        "value": 27,
+        "valueLabel": { "en": "27 Goals", "ar": "27 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "uel_g_aduriz",
+        "name": { "en": "Aritz Aduriz", "ar": "أريتز أدوريز" },
+        "media": { "type": "player", "fallbackText": "AA20" },
+        "value": 26,
+        "valueLabel": { "en": "26 Goals", "ar": "26 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "uel_g_dabbur",
+        "name": { "en": "Munas Dabbur", "ar": "مؤنس دبور" },
+        "media": { "type": "player", "fallbackText": "MD" },
+        "value": 24,
+        "valueLabel": { "en": "24 Goals", "ar": "24 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "uel-all-time-appearances",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["europa-league", "uel", "appearances", "veterans"],
+    "title": {
+      "en": "Rank these 5 players by UEFA Europa League appearances",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد المباريات في الدوري الأوروبي"
+    },
+    "subtitle": {
+      "en": "Europa League era (2009–10 through 2025–26)",
+      "ar": "مباريات حقبة الدوري الأوروبي حتى نهاية 2025–26"
+    },
+    "metricLabel": { "en": "Matches", "ar": "مباريات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "uel_app_moutinho",
+        "name": { "en": "João Moutinho", "ar": "جواو موتينيو" },
+        "media": { "type": "player", "fallbackText": "JM" },
+        "value": 99,
+        "valueLabel": { "en": "99 Matches", "ar": "99 مباراة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "uel_app_bergomi",
+        "name": { "en": "Giuseppe Bergomi", "ar": "جوزيبي بيرغومي" },
+        "media": { "type": "player", "fallbackText": "GB" },
+        "value": 96,
+        "valueLabel": { "en": "96 Matches", "ar": "96 مباراة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "uel_app_rost",
+        "name": { "en": "Frank Rost", "ar": "فرانك روست" },
+        "media": { "type": "player", "fallbackText": "FR" },
+        "value": 90,
+        "valueLabel": { "en": "90 Matches", "ar": "90 مباراة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "uel_app_tavernier",
+        "name": { "en": "James Tavernier", "ar": "جيمس تافيرنير" },
+        "media": { "type": "player", "fallbackText": "JT" },
+        "value": 89,
+        "valueLabel": { "en": "89 Matches", "ar": "89 مباراة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "uel_app_patricio",
+        "name": { "en": "Rui Patrício", "ar": "روي باتريسيو" },
+        "media": { "type": "player", "fallbackText": "RP" },
+        "value": 88,
+        "valueLabel": { "en": "88 Matches", "ar": "88 مباراة" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

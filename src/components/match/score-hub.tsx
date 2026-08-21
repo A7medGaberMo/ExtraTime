@@ -6,7 +6,8 @@ import { MatchScoreboard } from '@/components/match/match-scoreboard';
 import { MatchCommentaryFeed } from '@/components/match/match-commentary-feed';
 import { TacticalPitchView, type PitchSquadPlayer } from '@/components/match/tactical-pitch-view';
 import { sfx } from '@/lib/sfx';
-import { Trophy, Swords, Loader2, Zap } from 'lucide-react';
+import { Trophy, Sword, CircleNotch, Lightning } from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
 
 export interface ScoreHubProps {
   simulation: MatchSimulationResult;
@@ -111,7 +112,7 @@ export function ScoreHub({
   const isSimulating = phase === 'simulating';
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 select-none">
       <MatchScoreboard
         hostName={hostName}
         guestName={guestName}
@@ -123,8 +124,8 @@ export function ScoreHub({
 
       {isSimulating ? (
         <div className="animate-fade-in flex items-center justify-center gap-2 py-1">
-          <Loader2 className="text-lime h-3.5 w-3.5 animate-spin" />
-          <p className="text-steel text-[10px] font-black tracking-[0.25em] uppercase">
+          <AppIcon icon={CircleNotch} size={16} weight="bold" className="text-lime animate-spin" />
+          <p className="text-steel text-[10px] font-black tracking-[0.25em] uppercase font-stats">
             Simulating Matchday...
           </p>
         </div>
@@ -181,10 +182,10 @@ function WinnerBanner({
     <div
       className={`relative overflow-hidden rounded-2xl border p-4 text-center shadow-2xl backdrop-blur-xl ${
         viewerWon
-          ? 'border-lime/40 from-lime/10 via-card to-card bg-gradient-to-b shadow-[0_0_50px_rgba(149,232,16,0.15)]'
+          ? 'border-lime/40 from-lime/10 via-slate-950 to-slate-950 bg-gradient-to-b shadow-[0_0_50px_rgba(149,232,16,0.15)]'
           : draw
-            ? 'via-card to-card border-amber-400/30 bg-gradient-to-b from-amber-400/10'
-            : 'via-card to-card border-rose-400/30 bg-gradient-to-b from-rose-500/10 shadow-[0_0_50px_rgba(244,63,94,0.12)]'
+            ? 'via-slate-950 to-slate-950 border-amber-400/30 bg-gradient-to-b from-amber-400/10'
+            : 'via-slate-950 to-slate-950 border-rose-400/30 bg-gradient-to-b from-rose-500/10 shadow-[0_0_50px_rgba(244,63,94,0.12)]'
       }`}
     >
       <div className="pointer-events-none absolute inset-x-10 top-0 h-28 rounded-full bg-white/5 blur-3xl" />
@@ -197,13 +198,13 @@ function WinnerBanner({
           }`}
         >
           {viewerWon ? (
-            <Trophy className="text-lime h-5 w-5 animate-bounce" />
+            <AppIcon icon={Trophy} size={20} weight="duotone" className="text-lime animate-bounce" />
           ) : (
-            <Swords className="text-steel h-5 w-5" />
+            <AppIcon icon={Sword} size={20} weight="duotone" className="text-steel" />
           )}
         </div>
         <span
-          className={`inline-flex rounded-full border px-3 py-0.5 text-[9px] font-black tracking-widest uppercase ${
+          className={`inline-flex rounded-full border px-3 py-0.5 text-[9px] font-black tracking-widest uppercase font-stats ${
             viewerWon
               ? 'border-lime/30 bg-lime/10 text-lime'
               : draw
@@ -213,7 +214,7 @@ function WinnerBanner({
         >
           {draw ? 'Deadlock' : viewerWon ? 'Victorious Manager' : 'Runner-Up'}
         </span>
-        <h2 className="text-lg font-black tracking-tight text-white uppercase sm:text-xl">
+        <h2 className="text-lg font-black tracking-tight text-white uppercase font-display sm:text-xl">
           {viewerWon ? 'You Win The Battle!' : draw ? 'A Stalemate Duel!' : `${winnerLabel} Won`}
         </h2>
         <p className="text-steel mx-auto max-w-sm text-[11px] leading-relaxed font-medium">
@@ -250,10 +251,10 @@ function MatchupMeters({
   );
 
   return (
-    <div className="bg-card/95 rounded-2xl border border-white/10 p-4 shadow-xl backdrop-blur-xl">
+    <div className="bg-slate-950/85 rounded-2xl border border-white/10 p-4 shadow-xl backdrop-blur-xl select-none">
       <div className="mb-3 flex items-center justify-between">
         <span className="flex items-center gap-1.5 text-[10px] font-black tracking-widest text-white uppercase">
-          <Zap className="text-lime h-3.5 w-3.5" /> Sector Matchup
+          <AppIcon icon={Lightning} size={14} weight="fill" className="text-lime" /> Sector Matchup
         </span>
         <span className="text-steel/50 text-[9px] font-bold tracking-widest uppercase">
           {hostName} vs {guestName}
@@ -266,7 +267,7 @@ function MatchupMeters({
           const guestVal = simulation.sectors.guest[row.key];
           return (
             <div key={row.key} className="flex items-center gap-2">
-              <span className="text-steel w-8 shrink-0 text-[9px] font-black tracking-wider uppercase">
+              <span className="text-steel w-8 shrink-0 text-[9px] font-black tracking-wider uppercase font-stats">
                 {row.label}
               </span>
               <div className="flex h-3 flex-1 overflow-hidden rounded-full border border-white/5 bg-slate-950">
@@ -290,28 +291,28 @@ function MatchupMeters({
 
       <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
         <div className="border-lime/15 bg-lime/5 rounded-xl border p-2 sm:p-2.5">
-          <p className="text-steel truncate text-[8px] font-black tracking-widest uppercase">
+          <p className="text-steel truncate text-[8px] font-black tracking-widest uppercase font-stats">
             {hostName} Chem
           </p>
           <div className="mt-0.5 flex items-baseline justify-between gap-1">
-            <span className="font-stats text-lime text-sm">
+            <span className="font-stats text-lime text-sm font-black">
               +{simulation.synergy.host.totalSynergyPoints.toFixed(1)}
             </span>
-            <span className="text-steel text-[8px] font-bold">
+            <span className="text-steel text-[8px] font-bold font-stats">
               {simulation.synergy.host.clubChemLinks} club ·{' '}
               {simulation.synergy.host.nationChemLinks} nation
             </span>
           </div>
         </div>
         <div className="rounded-xl border border-rose-500/15 bg-rose-500/5 p-2 sm:p-2.5">
-          <p className="text-steel truncate text-[8px] font-black tracking-widest uppercase">
+          <p className="text-steel truncate text-[8px] font-black tracking-widest uppercase font-stats">
             {guestName} Chem
           </p>
           <div className="mt-0.5 flex items-baseline justify-between gap-1">
-            <span className="font-stats text-sm text-rose-400">
+            <span className="font-stats text-sm text-rose-400 font-black">
               +{simulation.synergy.guest.totalSynergyPoints.toFixed(1)}
             </span>
-            <span className="text-steel text-[8px] font-bold">
+            <span className="text-steel text-[8px] font-bold font-stats">
               {simulation.synergy.guest.clubChemLinks} club ·{' '}
               {simulation.synergy.guest.nationChemLinks} nation
             </span>

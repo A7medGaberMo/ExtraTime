@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "afcon-all-time-top-scorers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afcon", "africa", "goals", "eto", "hassan"],
+    "title": {
+      "en": "Rank these 5 African legends by all-time Africa Cup of Nations (AFCON) goals",
+      "ar": "رتّب أساطير أفريقيا الخمسة حسب إجمالي أهدافهم في تاريخ كأس الأمم الأفريقية"
+    },
+    "subtitle": {
+      "en": "AFCON finals tournaments goals in history",
+      "ar": "الأهداف في نهائيات أمم أفريقيا عبر التاريخ"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afg_etoo",
+        "name": { "en": "Samuel Eto'o", "ar": "صامويل إيتو" },
+        "subText": { "en": "Cameroon", "ar": "الكاميرون" },
+        "media": { "type": "player", "fallbackText": "SE9" },
+        "value": 18,
+        "valueLabel": { "en": "18 Goals", "ar": "18 هدف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afg_pokou",
+        "name": { "en": "Laurent Pokou", "ar": "لوران بوكو" },
+        "subText": { "en": "Ivory Coast", "ar": "ساحل العاج" },
+        "media": { "type": "player", "fallbackText": "LP" },
+        "value": 14,
+        "valueLabel": { "en": "14 Goals", "ar": "14 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afg_yekini",
+        "name": { "en": "Rashidi Yekini", "ar": "رشيدي يقيني" },
+        "subText": { "en": "Nigeria", "ar": "نيجيريا" },
+        "media": { "type": "player", "fallbackText": "RY9" },
+        "value": 13,
+        "valueLabel": { "en": "13 Goals", "ar": "13 هدف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afg_hassan",
+        "name": { "en": "Hassan El-Shazly", "ar": "حسن الشاذلي" },
+        "subText": { "en": "Egypt", "ar": "مصر" },
+        "media": { "type": "player", "fallbackText": "HS" },
+        "value": 12,
+        "valueLabel": { "en": "12 Goals", "ar": "12 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afg_drogba",
+        "name": { "en": "Didier Drogba", "ar": "ديدييه دروغبا" },
+        "subText": { "en": "Ivory Coast", "ar": "ساحل العاج" },
+        "media": { "type": "player", "fallbackText": "DD11" },
+        "value": 11,
+        "valueLabel": { "en": "11 Goals", "ar": "11 هدف" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

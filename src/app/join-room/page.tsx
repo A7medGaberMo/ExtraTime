@@ -1,22 +1,46 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
+import React, { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
-import { PageHeader } from '@/components/shared/page-header';
+import { Id } from '../../../convex/_generated/dataModel';
 import { useToast } from '@/components/shared/toast';
-import { Loader2, RefreshCw, CheckCircle2, XCircle, Search, KeyRound, Swords } from 'lucide-react';
-
+import {
+  Key,
+  MagnifyingGlass,
+  CheckCircle,
+  XCircle,
+  CircleNotch,
+  Crosshair,
+  Ranking,
+  DiceFive,
+} from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
+import { Button } from '@/components/ui/button';
+import { PageShell } from '@/components/ui/page-shell';
+import { Panel } from '@/components/ui/panel';
+import { TextInput } from '@/components/ui/text-input';
+import { UserIdentity } from '@/components/ui/user-identity';
+import { StatPill } from '@/components/ui/stat-pill';
+import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
 
 export default function JoinRoomPage() {
   const router = useRouter();
   const { toast } = useToast();
-  const createGuest = useMutation(api.guests.mutations.create);
-  const joinRoom = useMutation(api.rooms.mutations.join);
+  const { t, lang } = useI18n();
 
-  const [nickname, setNickname] = useState(() => randomName());
+  const createGuest = useMutation(api.guests.mutations.create);
+  const joinSnipeRoom = useMutation(api.rooms.mutations.join);
+  const joinRankDuel = useMutation(api.rank.mutations.joinDuelPrivateRoom);
+
+  const [nickname, setNickname] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('extratime_guestName') || randomName();
+    }
+    return randomName();
+  });
   const [roomCode, setRoomCode] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -24,43 +48,70 @@ export default function JoinRoomPage() {
     .replace(/[^A-Z0-9]/g, '')
     .slice(0, 6)
     .toUpperCase();
-  const room = useQuery(
+
+  // Query both Snipe and Rank rooms by code
+  const snipeRoom = useQuery(
     api.rooms.queries.getByCode,
     normalizedCode.length === 6 ? { code: normalizedCode } : 'skip',
   );
-  const canJoin = Boolean(room && room.status === 'waiting' && !room.guestId);
+
+  const rankRoom = useQuery(
+    api.rank.queries.getByCode,
+    normalizedCode.length === 6 ? { code: normalizedCode } : 'skip',
+  );
+
+  const isSnipe = Boolean(snipeRoom && snipeRoom.status === 'waiting' && !snipeRoom.guestId);
+  const isRank = Boolean(rankRoom && rankRoom.status === 'waiting' && !rankRoom.isFull);
+  const canJoin = isSnipe || isRank;
+
+  const isChecking = normalizedCode.length === 6 && (snipeRoom === undefined && rankRoom === undefined);
 
   const statusIcon =
     normalizedCode.length < 6 ? (
-      <Search className="text-steel h-4 w-4" />
-    ) : room === undefined ? (
-      <Loader2 className="text-lime h-4 w-4 animate-spin" />
+      <AppIcon icon={MagnifyingGlass} size={18} weight="bold" className="text-steel" />
+    ) : isChecking ? (
+      <AppIcon icon={CircleNotch} size={18} weight="bold" className="text-lime animate-spin" />
     ) : canJoin ? (
-      <CheckCircle2 className="text-lime h-4 w-4" />
+      <AppIcon icon={CheckCircle} size={18} weight="fill" className="text-lime" />
     ) : (
-      <XCircle className="h-4 w-4 text-rose-400" />
+      <AppIcon icon={XCircle} size={18} weight="fill" className="text-rose-400" />
     );
 
   const statusText =
     normalizedCode.length < 6
-      ? 'Enter the 6-character room code.'
-      : room === undefined
-        ? 'Checking room code...'
+      ? t('joinRoom.enterCodeHint')
+      : isChecking
+        ? t('joinRoom.checkingCode')
         : canJoin
-          ? 'Room found. You can join now.'
-          : room
-            ? 'This room is full or already started.'
-            : 'No room found with that code.';
+          ? isSnipe
+            ? (lang === 'ar' ? 'تم العثور على ماتش سنايب!' : 'Snipe Match Found!')
+            : (lang === 'ar' ? 'تم العثور على تحدي رتّب 1v1!' : 'Rank 1v1 Duel Found!')
+          : (snipeRoom || rankRoom)
+            ? t('joinRoom.roomFull')
+            : t('joinRoom.roomNotFound');
 
   async function handleJoin(event: FormEvent) {
     event.preventDefault();
     if (!canJoin || loading || !nickname.trim()) return;
     setLoading(true);
+
     try {
-      const guestId = await createGuest({ nickname: nickname.trim(), avatarSeed: nickname.trim() });
-      localStorage.setItem('extratime_guestId', guestId);
-      const result = await joinRoom({ roomId: room!._id, guestId });
-      router.push(`/auction/${result.roomId}`);
+      const name = nickname.trim();
+      let guestId = localStorage.getItem('extratime_guestId');
+      if (!guestId) {
+        guestId = await createGuest({ nickname: name, avatarSeed: name });
+        localStorage.setItem('extratime_guestId', guestId);
+      }
+      localStorage.setItem('extratime_guestName', name);
+      const validGuestId = guestId as Id<'guestUsers'>;
+
+      if (isSnipe && snipeRoom) {
+        const result = await joinSnipeRoom({ roomId: snipeRoom._id, guestId: validGuestId });
+        router.push(`/auction/${result.roomId}`);
+      } else if (isRank && rankRoom) {
+        const result = await joinRankDuel({ guestId: validGuestId, code: normalizedCode });
+        router.push(`/rank/${result.gameId}`);
+      }
     } catch (error: unknown) {
       const err = error as { message?: string };
       toast(err.message || 'Could not join room', 'error');
@@ -69,55 +120,49 @@ export default function JoinRoomPage() {
   }
 
   return (
-    <div className="animate-fade-in mx-auto max-w-2xl space-y-4">
-      <PageHeader
-        title="Join Hidden Bid"
-        subtitle="Enter your rival's code and jump straight into the auction arena."
-        backUrl="/"
-        className="mb-3"
-      />
-
-      <form
-        onSubmit={handleJoin}
-        className="bg-card/90 relative overflow-hidden rounded-2xl border border-white/10 p-4 shadow-2xl backdrop-blur-xl sm:p-5"
-      >
-        <div className="bg-lime/10 pointer-events-none absolute -top-24 -left-20 h-64 w-64 rounded-full blur-3xl" />
-
-        <div className="relative space-y-5">
+    <PageShell
+      title={lang === 'ar' ? 'ادخل ماتش بالكود' : 'Join Match'}
+      subtitle={lang === 'ar' ? 'ادخل كود الغرفة المكون من 6 رموز لأي لعبة (سنايب أو رتّب).' : 'Enter 6-character code for Snipe or Rank duel.'}
+      backUrl="/"
+      maxWidth="xl"
+    >
+      <form onSubmit={handleJoin}>
+        <Panel variant="highlight" className="p-4 sm:p-6 space-y-5">
+          {/* Manager Handle Input */}
           <div className="space-y-2">
-            <div className="flex items-center justify-between gap-3">
-              <label className="text-steel text-[10px] font-black tracking-widest uppercase">
-                Manager Handle
-              </label>
-              <span className="text-lime text-[10px] font-black tracking-widest uppercase">
-                Auto generated
-              </span>
-            </div>
-            <div className="flex gap-2">
-              <input
-                value={nickname}
-                onChange={(e) => setNickname(e.target.value)}
-                maxLength={24}
-                className="placeholder:text-steel focus:border-lime/70 focus:ring-lime/20 min-w-0 flex-1 rounded-xl border border-white/10 bg-slate-950 px-4 py-3.5 text-base font-black text-white transition-all outline-none focus:ring-2"
-                placeholder="Manager name"
-              />
-              <button
-                type="button"
-                onClick={() => setNickname(randomName())}
-                className="text-steel hover:border-lime/50 hover:text-lime flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-xl border border-white/10 bg-slate-900 transition-all active:scale-95"
-                title="Randomize manager handle"
-              >
-                <RefreshCw className="h-4 w-4" />
-              </button>
+            <div className="flex items-center gap-3">
+              <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
+              <div className="flex-1 min-w-0">
+                <TextInput
+                  label={t('joinRoom.managerHandle')}
+                  value={nickname}
+                  onChange={(e) => setNickname(e.target.value)}
+                  maxLength={20}
+                  placeholder="Manager name"
+                  rightAction={
+                    <button
+                      type="button"
+                      onClick={() => setNickname(randomName())}
+                      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
+                      title="Randomize"
+                    >
+                      <AppIcon icon={DiceFive} size={20} weight="duotone" />
+                    </button>
+                  }
+                />
+              </div>
             </div>
           </div>
 
-          <label className="block space-y-2">
-            <span className="text-steel text-[10px] font-black tracking-widest uppercase">
-              Room Code
-            </span>
+          {/* Big Room Code Input */}
+          <div className="space-y-1.5">
+            <label className="text-steel text-[10px] font-black tracking-widest uppercase block px-1">
+              {t('joinRoom.roomCode')}
+            </label>
             <div className="relative">
-              <KeyRound className="text-lime absolute top-1/2 left-4 h-5 w-5 -translate-y-1/2" />
+              <div className="pointer-events-none absolute start-4 top-1/2 -translate-y-1/2 text-lime">
+                <AppIcon icon={Key} size={24} weight="duotone" />
+              </div>
               <input
                 value={roomCode}
                 onChange={(e) =>
@@ -129,47 +174,67 @@ export default function JoinRoomPage() {
                   )
                 }
                 maxLength={6}
-                className="font-stats text-lime placeholder:text-border focus:border-lime/70 focus:ring-lime/20 w-full rounded-xl border border-white/10 bg-slate-950 py-4 pr-4 pl-12 text-center text-3xl tracking-[0.26em] uppercase transition-all outline-none focus:ring-2 sm:text-4xl"
+                className="font-stats text-lime placeholder:text-steel/30 focus:border-lime/70 focus:ring-lime/20 w-full rounded-2xl border border-white/10 bg-slate-950 py-3.5 px-12 text-center text-3xl sm:text-4xl tracking-[0.24em] uppercase transition-all outline-none focus:ring-2 min-h-[56px]"
                 placeholder="X7K9M2"
                 autoComplete="off"
                 inputMode="text"
+                autoFocus
               />
-            </div>
-          </label>
-
-          <div
-            className={`flex items-start gap-3 rounded-xl border px-4 py-3 transition-all ${
-              canJoin ? 'border-lime/40 bg-lime/10' : 'border-white/10 bg-slate-950/80'
-            }`}
-          >
-            <div className="mt-0.5 shrink-0">{statusIcon}</div>
-            <div className="min-w-0">
-              <p className={`text-sm font-black ${canJoin ? 'text-lime' : 'text-white'}`}>
-                {statusText}
-              </p>
-              <p className="text-steel mt-1 text-xs leading-snug font-medium">
-                You will enter the same Hidden Bid room as soon as the code is valid.
-              </p>
             </div>
           </div>
 
-          <button
-            type="submit"
-            disabled={!canJoin || loading || !nickname.trim()}
-            className="bg-lime shadow-lime/15 hover:bg-vivid flex w-full items-center justify-center gap-2 rounded-xl px-4 py-4 text-sm font-black tracking-widest text-slate-950 uppercase shadow-xl transition-all active:scale-[0.98] disabled:opacity-40"
+          {/* Status Verification Card with Mode Recognition */}
+          <div
+            className={`flex items-start justify-between rounded-2xl border p-3.5 sm:p-4 transition-all ${
+              canJoin ? 'border-lime/40 bg-lime/10' : 'border-white/10 bg-slate-950/80'
+            }`}
           >
-            {loading ? (
-              <>
-                <Loader2 className="h-4 w-4 animate-spin" /> Joining Arena...
-              </>
-            ) : (
-              <>
-                <Swords className="h-4 w-4" /> Join Match Arena
-              </>
+            <div className="flex items-start gap-3 min-w-0">
+              <div className="mt-0.5 shrink-0">{statusIcon}</div>
+              <div className="min-w-0">
+                <p className={`text-sm font-black ${canJoin ? 'text-lime' : 'text-white'}`}>
+                  {statusText}
+                </p>
+                <p className="text-steel mt-0.5 text-xs font-medium leading-relaxed">
+                  {canJoin
+                    ? isSnipe
+                      ? (lang === 'ar'
+                          ? `ماتش سنايب (${snipeRoom?.settings.matchSize || 11} ضد ${snipeRoom?.settings.matchSize || 11}) • $${snipeRoom?.settings.startingBudget || 100}M`
+                          : `Snipe Match (${snipeRoom?.settings.matchSize || 11}v${snipeRoom?.settings.matchSize || 11}) • $${snipeRoom?.settings.startingBudget || 100}M Budget`)
+                      : (lang === 'ar'
+                          ? `المضيف: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} جولات`
+                          : `Host: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} Rounds`)
+                    : t('joinRoom.statusSubtext')}
+                </p>
+              </div>
+            </div>
+
+            {canJoin && (
+              <StatPill variant={isSnipe ? 'lime' : 'amber'} size="sm" className="shrink-0">
+                <AppIcon icon={isSnipe ? Crosshair : Ranking} size={14} weight="duotone" className="me-1" />
+                <span>{isSnipe ? 'Snipe' : 'Rank 1v1'}</span>
+              </StatPill>
             )}
-          </button>
-        </div>
+          </div>
+
+          {/* Submit Action */}
+          <Button
+            type="submit"
+            variant="primary"
+            size="lg"
+            fullWidth
+            disabled={!canJoin || loading || !nickname.trim()}
+            loading={loading}
+            leftIcon={<AppIcon icon={isRank ? Ranking : Crosshair} size={20} weight="bold" />}
+          >
+            {loading
+              ? t('joinRoom.joining')
+              : isRank
+                ? (lang === 'ar' ? 'ادخل تحدي رتّب' : 'Enter Rank Duel')
+                : (lang === 'ar' ? 'ادخل ماتش سنايب' : 'Enter Snipe Match')}
+          </Button>
+        </Panel>
       </form>
-    </div>
+    </PageShell>
   );
 }

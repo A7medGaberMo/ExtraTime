@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "premier-league-all-time-clean-sheets",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goalkeepers", "clean-sheets", "cech"],
+    "title": {
+      "en": "Rank these 5 legendary goalkeepers by Premier League clean sheets kept",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة (الكلين شيت) في تاريخ البريميرليج"
+    },
+    "subtitle": {
+      "en": "Premier League era (1992–present)",
+      "ar": "حقبة الدوري الإنجليزي الممتاز (1992–حتى الآن)"
+    },
+    "metricLabel": { "en": "Clean Sheets", "ar": "شباك نظيفة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cs_cech",
+        "name": { "en": "Petr Čech", "ar": "بيتر تشيك" },
+        "subText": { "en": "Chelsea / Arsenal", "ar": "تشيلسي / أرسنال" },
+        "media": { "type": "player", "fallbackText": "PC1" },
+        "value": 202,
+        "valueLabel": { "en": "202 Clean Sheets", "ar": "202 كلين شيت" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cs_james",
+        "name": { "en": "David James", "ar": "ديفيد جيمس" },
+        "subText": { "en": "Liverpool / Aston Villa / Man City / Portsmouth", "ar": "ليفربول / أستون فيلا / بورتسموث" },
+        "media": { "type": "player", "fallbackText": "DJ1" },
+        "value": 169,
+        "valueLabel": { "en": "169 Clean Sheets", "ar": "169 كلين شيت" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cs_schwarzer",
+        "name": { "en": "Mark Schwarzer", "ar": "مارك شوارزر" },
+        "subText": { "en": "Middlesbrough / Fulham / Chelsea / Leicester", "ar": "ميدلزبره / فولهام / تشيلسي" },
+        "media": { "type": "player", "fallbackText": "MS1" },
+        "value": 151,
+        "valueLabel": { "en": "151 Clean Sheets", "ar": "151 كلين شيت" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cs_seaman",
+        "name": { "en": "David Seaman", "ar": "ديفيد سيمان" },
+        "subText": { "en": "Arsenal / Man City", "ar": "أرسنال / مانشستر سيتي" },
+        "media": { "type": "player", "fallbackText": "DS1" },
+        "value": 141,
+        "valueLabel": { "en": "141 Clean Sheets", "ar": "141 كلين شيت" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cs_vds",
+        "name": { "en": "Edwin van der Sar", "ar": "إدوين فان دير سار" },
+        "subText": { "en": "Fulham / Manchester United", "ar": "فولهام / مانشستر يونايتد" },
+        "media": { "type": "player", "fallbackText": "VDS1" },
+        "value": 132,
+        "valueLabel": { "en": "132 Clean Sheets", "ar": "132 كلين شيت" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

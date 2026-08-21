@@ -3,33 +3,32 @@
 import type { MatchSimulationResult } from '@/core/simulation/simulation.interface';
 import {
   Flag,
-  CircleDot,
+  SoccerBall,
   Shield,
-  Target,
-  AlertTriangle,
+  Crosshair,
+  Warning,
   Octagon,
   Pause,
-  Crosshair,
-  CheckCircle2,
-} from 'lucide-react';
+  CheckCircle,
+} from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
 
 export interface MatchCommentaryFeedProps {
   simulation: Pick<MatchSimulationResult, 'timeline'>;
   hostName: string;
   guestName: string;
-  /** Index up to which the feed is revealed (else full feed). */
   revealedCount?: number;
 }
 
-const EVENT_META: Record<string, { icon: typeof CircleDot; className: string }> = {
+const EVENT_META: Record<string, { icon: typeof Flag; className: string }> = {
   KICKOFF: { icon: Flag, className: 'text-lime' },
-  GOAL: { icon: CircleDot, className: 'text-lime' },
+  GOAL: { icon: SoccerBall, className: 'text-lime' },
   SAVE: { icon: Shield, className: 'text-sky-400' },
-  CROSSBAR: { icon: Target, className: 'text-amber-300' },
-  YELLOW_CARD: { icon: AlertTriangle, className: 'text-amber-400' },
+  CROSSBAR: { icon: Crosshair, className: 'text-amber-300' },
+  YELLOW_CARD: { icon: Warning, className: 'text-amber-400' },
   RED_CARD: { icon: Octagon, className: 'text-rose-500' },
   HALF_TIME: { icon: Pause, className: 'text-steel' },
-  FULL_TIME: { icon: CheckCircle2, className: 'text-steel' },
+  FULL_TIME: { icon: CheckCircle, className: 'text-steel' },
   PENALTY_SHOOTOUT: { icon: Crosshair, className: 'text-amber-300' },
 };
 
@@ -43,20 +42,20 @@ export function MatchCommentaryFeed({
   const teamLabel = (team: 'host' | 'guest') => (team === 'host' ? hostName : guestName);
 
   return (
-    <div className="bg-card/95 rounded-2xl border border-white/10 p-4 shadow-xl backdrop-blur-xl">
+    <div className="bg-slate-950/85 rounded-2xl border border-white/10 p-4 shadow-xl backdrop-blur-xl select-none">
       <div className="mb-3 flex items-center justify-between">
         <span className="text-steel text-[10px] font-black tracking-widest uppercase">
           Commentary Ticker
         </span>
-        <span className="text-steel/50 text-[9px] font-bold tracking-widest uppercase">
+        <span className="text-steel/50 text-[9px] font-bold tracking-widest uppercase font-stats">
           {simulation.timeline.length} events
         </span>
       </div>
 
-      <div className="relative max-h-[340px] space-y-1 overflow-y-auto pr-1">
+      <div className="relative max-h-[340px] space-y-1 overflow-y-auto pe-1">
         {events.map((event) => {
-          const meta = EVENT_META[event.type] ?? { icon: CircleDot, className: 'text-steel' };
-          const Icon = meta.icon;
+          const meta = EVENT_META[event.type] ?? { icon: SoccerBall, className: 'text-steel' };
+          const IconComp = meta.icon;
           const isGoal = event.type === 'GOAL';
           return (
             <div
@@ -75,16 +74,19 @@ export function MatchCommentaryFeed({
                     ? event.team === 'host'
                       ? 'border-lime/30 bg-lime/10'
                       : 'border-rose-500/30 bg-rose-500/10'
-                    : 'border-white/10 bg-slate-950'
+                    : 'border-white/10 bg-slate-900'
                 }`}
               >
-                <Icon
-                  className={`h-3.5 w-3.5 ${isGoal ? (event.team === 'host' ? 'text-lime' : 'text-rose-400') : meta.className}`}
+                <AppIcon
+                  icon={IconComp}
+                  size={14}
+                  weight="duotone"
+                  className={isGoal ? (event.team === 'host' ? 'text-lime' : 'text-rose-400') : meta.className}
                 />
               </span>
               <div className="min-w-0 flex-1">
                 <div className="flex items-baseline gap-1.5">
-                  <span className="font-stats text-steel shrink-0 text-[11px]">
+                  <span className="font-stats text-steel shrink-0 text-[11px] font-black">
                     {event.minute}&apos;
                   </span>
                   <span
@@ -92,7 +94,7 @@ export function MatchCommentaryFeed({
                   >
                     {isGoal ? `⚽ ${teamLabel(event.team)}` : event.type.replace('_', ' ')}
                   </span>
-                  <span className="font-stats text-steel/70 ml-auto shrink-0 text-[10px]">
+                  <span className="font-stats text-steel/70 ms-auto shrink-0 text-[10px] font-black">
                     {event.scoreSnapshot.host}-{event.scoreSnapshot.guest}
                   </span>
                 </div>

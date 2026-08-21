@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "world-cup-total-goals-modern-era",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "tournaments", "goals", "modern"],
+    "title": {
+      "en": "Rank these 5 World Cups by total goals scored",
+      "ar": "رتّب نسخ كأس العالم الخمسة حسب إجمالي الأهداف المسجلة"
+    },
+    "subtitle": {
+      "en": "All tournament matches included",
+      "ar": "شامل جميع أهداف البطولة في النهائيات"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_goals_2026",
+        "name": { "en": "2026 World Cup", "ar": "كأس العالم 2026" },
+        "subText": { "en": "USA / Mexico / Canada (104 matches)", "ar": "أمريكا / المكسيك / كندا (104 مباريات)" },
+        "media": { "type": "tournament", "fallbackText": "2026" },
+        "value": 308,
+        "valueLabel": { "en": "308 Goals", "ar": "308 أهداف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_goals_2022",
+        "name": { "en": "2022 World Cup", "ar": "كأس العالم 2022" },
+        "subText": { "en": "Qatar (64 matches)", "ar": "قطر (64 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "2022" },
+        "value": 172,
+        "valueLabel": { "en": "172 Goals", "ar": "172 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_goals_2014",
+        "name": { "en": "2014 World Cup", "ar": "كأس العالم 2014" },
+        "subText": { "en": "Brazil (64 matches)", "ar": "البرازيل (64 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "2014" },
+        "value": 171,
+        "valueLabel": { "en": "171 Goals", "ar": "171 هدف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_goals_2018",
+        "name": { "en": "2018 World Cup", "ar": "كأس العالم 2018" },
+        "subText": { "en": "Russia (64 matches)", "ar": "روسيا (64 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "2018" },
+        "value": 169,
+        "valueLabel": { "en": "169 Goals", "ar": "169 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_goals_2002",
+        "name": { "en": "2002 World Cup", "ar": "كأس العالم 2002" },
+        "subText": { "en": "Korea / Japan (64 matches)", "ar": "كوريا / اليابان (64 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "2002" },
+        "value": 161,
+        "valueLabel": { "en": "161 Goals", "ar": "161 هدف" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-goals-24-team-era",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "tournaments", "history", "goals"],
+    "title": {
+      "en": "Rank these 5 classic World Cups by total goals scored",
+      "ar": "رتّب نسخ كأس العالم الكلاسيكية حسب إجمالي الأهداف"
+    },
+    "subtitle": {
+      "en": "Tournaments between 1954 and 1994",
+      "ar": "البطولات بين عامي 1954 و1994"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_goals_1982",
+        "name": { "en": "1982 World Cup", "ar": "كأس العالم 1982" },
+        "subText": { "en": "Spain (52 matches)", "ar": "إسبانيا (52 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "1982" },
+        "value": 146,
+        "valueLabel": { "en": "146 Goals", "ar": "146 هدف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_goals_1994",
+        "name": { "en": "1994 World Cup", "ar": "كأس العالم 1994" },
+        "subText": { "en": "USA (52 matches)", "ar": "أمريكا (52 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "1994" },
+        "value": 141,
+        "valueLabel": { "en": "141 Goals", "ar": "141 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_goals_1954",
+        "name": { "en": "1954 World Cup", "ar": "كأس العالم 1954" },
+        "subText": { "en": "Switzerland (26 matches)", "ar": "سويسرا (26 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "1954" },
+        "value": 140,
+        "valueLabel": { "en": "140 Goals", "ar": "140 هدف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_goals_1986",
+        "name": { "en": "1986 World Cup", "ar": "كأس العالم 1986" },
+        "subText": { "en": "Mexico (52 matches)", "ar": "المكسيك (52 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "1986" },
+        "value": 132,
+        "valueLabel": { "en": "132 Goals", "ar": "132 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_goals_1990",
+        "name": { "en": "1990 World Cup", "ar": "كأس العالم 1990" },
+        "subText": { "en": "Italy (52 matches)", "ar": "إيطاليا (52 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "1990" },
+        "value": 115,
+        "valueLabel": { "en": "115 Goals", "ar": "115 هدف" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-average-goals-per-match",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "averages", "goals-per-match"],
+    "title": {
+      "en": "Rank these 5 World Cups by average goals per match",
+      "ar": "رتّب نسخ كأس العالم الخمسة حسب معدل الأهداف لكل مباراة"
+    },
+    "subtitle": {
+      "en": "Average goals per match across the tournament",
+      "ar": "معدل الأهداف في المباراة عبر جميع مباريات البطولة"
+    },
+    "metricLabel": { "en": "Goals/Match", "ar": "هدف/مباراة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_avg_1954",
+        "name": { "en": "1954 Switzerland", "ar": "سويسرا 1954" },
+        "subText": { "en": "140 goals in 26 games", "ar": "140 هدفًا في 26 مباراة" },
+        "media": { "type": "tournament", "fallbackText": "1954" },
+        "value": 538,
+        "valueLabel": { "en": "5.38 Goals/Match", "ar": "5.38 هدف/مباراة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_avg_1958",
+        "name": { "en": "1958 Sweden", "ar": "السويد 1958" },
+        "subText": { "en": "126 goals in 35 games", "ar": "126 هدفًا في 35 مباراة" },
+        "media": { "type": "tournament", "fallbackText": "1958" },
+        "value": 360,
+        "valueLabel": { "en": "3.60 Goals/Match", "ar": "3.60 هدف/مباراة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_avg_1970",
+        "name": { "en": "1970 Mexico", "ar": "المكسيك 1970" },
+        "subText": { "en": "95 goals in 32 games", "ar": "95 هدفًا في 32 مباراة" },
+        "media": { "type": "tournament", "fallbackText": "1970" },
+        "value": 297,
+        "valueLabel": { "en": "2.97 Goals/Match", "ar": "2.97 هدف/مباراة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_avg_2022",
+        "name": { "en": "2022 Qatar", "ar": "قطر 2022" },
+        "subText": { "en": "172 goals in 64 games", "ar": "172 هدفًا في 64 مباراة" },
+        "media": { "type": "tournament", "fallbackText": "2022" },
+        "value": 269,
+        "valueLabel": { "en": "2.69 Goals/Match", "ar": "2.69 هدف/مباراة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_avg_2006",
+        "name": { "en": "2006 Germany", "ar": "ألمانيا 2006" },
+        "subText": { "en": "147 goals in 64 games", "ar": "147 هدفًا في 64 مباراة" },
+        "media": { "type": "tournament", "fallbackText": "2006" },
+        "value": 230,
+        "valueLabel": { "en": "2.30 Goals/Match", "ar": "2.30 هدف/مباراة" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

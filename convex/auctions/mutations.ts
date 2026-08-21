@@ -225,7 +225,7 @@ export const pass = mutation({
   },
 });
 
-async function usePerkImpl(
+async function executePerk(
   ctx: GenericMutationCtx<DataModel>,
   roomId: Id<'rooms'>,
   userId: Id<'guestUsers'>,
@@ -322,7 +322,7 @@ export const usePerk = mutation({
     userId: v.id('guestUsers'),
   },
   handler: async (ctx, args) => {
-    return usePerkImpl(ctx, args.roomId, args.userId);
+    return executePerk(ctx, args.roomId, args.userId);
   },
 });
 
@@ -332,6 +332,6 @@ export const activatePerk = mutation({
     userId: v.id('guestUsers'),
   },
   handler: async (ctx, args) => {
-    return usePerkImpl(ctx, args.roomId, args.userId);
+    return executePerk(ctx, args.roomId, args.userId);
   },
 });

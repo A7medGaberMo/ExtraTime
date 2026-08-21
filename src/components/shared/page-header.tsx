@@ -2,7 +2,8 @@
 
 import { type ReactNode } from 'react';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
 import { cn } from '@/lib/utils';
 
 interface PageHeaderProps {
@@ -19,7 +20,7 @@ export function PageHeader({ title, subtitle, backUrl, action, className }: Page
   return (
     <div
       className={cn(
-        'mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between',
+        'mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between select-none',
         className,
       )}
     >
@@ -27,14 +28,16 @@ export function PageHeader({ title, subtitle, backUrl, action, className }: Page
         {backUrl && (
           <Link
             href={backUrl}
-            className="text-steel mb-2 inline-flex items-center gap-1.5 text-sm transition-colors hover:text-white"
+            className="text-steel mb-2 inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider transition-colors hover:text-white"
           >
-            <ArrowLeft className="h-3.5 w-3.5" />
-            Back
+            <AppIcon icon={ArrowLeft} size={14} weight="bold" />
+            <span>Back</span>
           </Link>
         )}
-        <h1 className="text-2xl font-black tracking-tight text-white md:text-3xl">{title}</h1>
-        {subtitle && <p className="text-steel text-sm md:text-base">{subtitle}</p>}
+        <h1 className="text-2xl font-black tracking-tight text-white uppercase font-display md:text-3xl">
+          {title}
+        </h1>
+        {subtitle && <p className="text-steel text-sm font-medium leading-relaxed md:text-base">{subtitle}</p>}
       </div>
       {action && <div className="flex-shrink-0">{action}</div>}
     </div>

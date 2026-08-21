@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "golden-shoe-single-season-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["golden-shoe", "players", "goals", "messi", "ronaldo"],
+    "title": {
+      "en": "Rank these 5 Golden Shoe winning campaigns by domestic league goals",
+      "ar": "رتّب مواسم الفوز بالحذاء الذهبي الخمسة حسب عدد أهداف الدوري المحلي"
+    },
+    "subtitle": {
+      "en": "Top domestic league goals in a single European season",
+      "ar": "أعلى عدد أهداف في الدوري المحلي بموسم أوروبي واحد"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gs_messi_1112",
+        "name": { "en": "Lionel Messi (2011–12)", "ar": "ليونيل ميسي (2011–12)" },
+        "subText": { "en": "Barcelona • La Liga", "ar": "برشلونة • الدوري الإسباني" },
+        "media": { "type": "player", "fallbackText": "LM10" },
+        "value": 50,
+        "valueLabel": { "en": "50 Goals", "ar": "50 هدف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gs_cr7_1415",
+        "name": { "en": "Cristiano Ronaldo (2014–15)", "ar": "كريستيانو رونالدو (2014–15)" },
+        "subText": { "en": "Real Madrid • La Liga", "ar": "ريال مدريد • الدوري الإسباني" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 48,
+        "valueLabel": { "en": "48 Goals", "ar": "48 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gs_lewa_2021",
+        "name": { "en": "Robert Lewandowski (2020–21)", "ar": "روبرت ليفاندوفسكي (2020–21)" },
+        "subText": { "en": "Bayern Munich • Bundesliga (34 gms)", "ar": "بايرن ميونخ • الدوري الألماني" },
+        "media": { "type": "player", "fallbackText": "RL9" },
+        "value": 41,
+        "valueLabel": { "en": "41 Goals", "ar": "41 هدف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gs_suarez_1516",
+        "name": { "en": "Luis Suárez (2015–16)", "ar": "لويس سواريز (2015–16)" },
+        "subText": { "en": "Barcelona • La Liga", "ar": "برشلونة • الدوري الإسباني" },
+        "media": { "type": "player", "fallbackText": "LS9" },
+        "value": 40,
+        "valueLabel": { "en": "40 Goals", "ar": "40 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gs_haaland_2223",
+        "name": { "en": "Erling Haaland (2022–23)", "ar": "إيرلينغ هالاند (2022–23)" },
+        "subText": { "en": "Manchester City • Premier League", "ar": "مانشستر سيتي • البريميرليج" },
+        "media": { "type": "player", "fallbackText": "EH9" },
+        "value": 36,
+        "valueLabel": { "en": "36 Goals", "ar": "36 هدف" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "golden-shoe-all-time-wins",
+    "scopeType": "ALL_TIME",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["golden-shoe", "awards", "players", "goals"],
+    "title": {
+      "en": "Rank these 5 strikers by European Golden Shoe trophies won",
+      "ar": "رتّب المهاجمين الخمسة حسب عدد مرات الفوز بالحذاء الذهبي الأوروبي"
+    },
+    "subtitle": {
+      "en": "European top scorer awards in history",
+      "ar": "جوائز الهداف الأعلى في الدوريات الأوروبية عبر التاريخ"
+    },
+    "metricLabel": { "en": "Trophies", "ar": "أحذية ذهبية" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gsw_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "media": { "type": "player", "fallbackText": "LM10" },
+        "value": 6,
+        "valueLabel": { "en": "6 Trophies", "ar": "6 أحذية ذهبية" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gsw_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 4,
+        "valueLabel": { "en": "4 Trophies", "ar": "4 أحذية ذهبية" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gsw_lewa",
+        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
+        "media": { "type": "player", "fallbackText": "RL9" },
+        "value": 2,
+        "valueLabel": { "en": "2 Trophies", "ar": "حذاءان ذهبيان" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gsw_kane",
+        "name": { "en": "Harry Kane", "ar": "هاري كين" },
+        "media": { "type": "player", "fallbackText": "HK9" },
+        "value": 1,
+        "valueLabel": { "en": "1 Trophy", "ar": "حذاء ذهبي واحد" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gsw_ibra",
+        "name": { "en": "Zlatan Ibrahimović", "ar": "زلاتان إبراهيموفيتش" },
+        "media": { "type": "player", "fallbackText": "IBRA" },
+        "value": 0,
+        "valueLabel": { "en": "0 Trophies", "ar": "0 ألقاب" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

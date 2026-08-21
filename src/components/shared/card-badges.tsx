@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
-import { Shield, Flag } from 'lucide-react';
+import { Shield, Flag } from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
 
 import clubLogosJson from '@/lib/clubLogos.json';
 
@@ -83,7 +84,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
         />
       ) : (
         <div className="flex items-center justify-center text-[9px] font-black tracking-tighter text-white/80 uppercase">
-          <Shield className="h-3.5 w-3.5 text-white/80" />
+          <AppIcon icon={Shield} size={14} weight="duotone" className="text-white/80" />
         </div>
       )}
     </div>
@@ -258,7 +259,7 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
           className="h-full w-full object-cover drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] filter"
         />
       ) : (
-        <Flag className="h-3 w-3 text-white/80" />
+        <AppIcon icon={Flag} size={12} weight="duotone" className="text-white/80" />
       )}
     </div>
   );

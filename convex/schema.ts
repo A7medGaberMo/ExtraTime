@@ -6,6 +6,7 @@ import { roomsTable } from './rooms/schema';
 import { auctionsTable } from './auctions/schema';
 import { matchesTable } from './matches/schema';
 import { guestsTable } from './guests/schema';
+import { rankQuestionsTable, rankGamesTable } from './rank/schema';
 
 export default defineSchema({
   players: playersTable,
@@ -15,4 +16,7 @@ export default defineSchema({
   auctions: auctionsTable,
   matches: matchesTable,
   guestUsers: guestsTable,
+  rankQuestions: rankQuestionsTable,
+  rankGames: rankGamesTable,
 });
+

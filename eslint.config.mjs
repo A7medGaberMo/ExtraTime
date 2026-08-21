@@ -15,6 +15,7 @@ const eslintConfig = defineConfig([
     'scratch/**',
     'scripts/**',
     'fetch_squads.js',
+    'convex/_generated/**',
   ]),
 ]);
 

@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "ucl-all-time-top-scorers-elite",
+    "scopeType": "ALL_TIME",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "goals", "ronaldo", "messi", "lewandowski"],
+    "title": {
+      "en": "Rank these 5 players by Champions League goals scored",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد أهدافهم في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Excluding qualifying rounds, through 2025–26",
+      "ar": "مع استبعاد الأدوار التمهيدية، حتى نهاية موسم 2025–26"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_p_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 140,
+        "valueLabel": { "en": "140 Goals", "ar": "140 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_p_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "media": { "type": "player", "fallbackText": "LM10" },
+        "value": 129,
+        "valueLabel": { "en": "129 Goals", "ar": "129 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_p_lewa",
+        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
+        "media": { "type": "player", "fallbackText": "RL9" },
+        "value": 109,
+        "valueLabel": { "en": "109 Goals", "ar": "109 أهداف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_p_benzema",
+        "name": { "en": "Karim Benzema", "ar": "كريم بنزيما" },
+        "media": { "type": "player", "fallbackText": "KB9" },
+        "value": 90,
+        "valueLabel": { "en": "90 Goals", "ar": "90 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_p_raul",
+        "name": { "en": "Raúl González", "ar": "راؤول غونزاليس" },
+        "media": { "type": "player", "fallbackText": "RG7" },
+        "value": 71,
+        "valueLabel": { "en": "71 Goals", "ar": "71 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-assists-staircase",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "assists", "playmakers"],
+    "title": {
+      "en": "Rank these 5 playmakers by Champions League assists",
+      "ar": "رتّب صُنّاع اللعب الخمسة حسب عدد التمريرات الحاسمة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Ultra-tight 1-assist margins across Champions League royalty",
+      "ar": "فروقات دقيقة جدًا بتمريرة واحدة بين نجوم دوري الأبطال حتى 2025–26"
+    },
+    "metricLabel": { "en": "Assists", "ar": "تمريرات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_ast_neymar",
+        "name": { "en": "Neymar Jr", "ar": "نيمار" },
+        "media": { "type": "player", "fallbackText": "NJR" },
+        "value": 33,
+        "valueLabel": { "en": "33 Assists", "ar": "33 تمريرة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_ast_vini",
+        "name": { "en": "Vinícius Júnior", "ar": "فينيسيوس جونيور" },
+        "media": { "type": "player", "fallbackText": "VJR" },
+        "value": 32,
+        "valueLabel": { "en": "32 Assists", "ar": "32 تمريرة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_ast_kdb",
+        "name": { "en": "Kevin De Bruyne", "ar": "كيفين دي بروين" },
+        "media": { "type": "player", "fallbackText": "KDB" },
+        "value": 31,
+        "valueLabel": { "en": "31 Assists", "ar": "31 تمريرة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_ast_xavi",
+        "name": { "en": "Xavi Hernández", "ar": "تشافي هيرنانديز" },
+        "media": { "type": "player", "fallbackText": "XAV" },
+        "value": 30,
+        "valueLabel": { "en": "30 Assists", "ar": "30 تمريرة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_ast_benzema",
+        "name": { "en": "Karim Benzema", "ar": "كريم بنزيما" },
+        "media": { "type": "player", "fallbackText": "KB9" },
+        "value": 29,
+        "valueLabel": { "en": "29 Assists", "ar": "29 تمريرة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-penalties-scored",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "penalties", "strikers"],
+    "title": {
+      "en": "Rank these 5 players by Champions League penalties scored",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد ركلات الجزاء المسجلة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Shootout penalties excluded, tournament matches only",
+      "ar": "ركلات الجزاء أثناء المباريات فقط (باستثناء ركلات الترجيح)"
+    },
+    "metricLabel": { "en": "Penalties", "ar": "ركلات جزاء" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_pen_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 19,
+        "valueLabel": { "en": "19 Penalties", "ar": "19 ركلة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_pen_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "media": { "type": "player", "fallbackText": "LM10" },
+        "value": 18,
+        "valueLabel": { "en": "18 Penalties", "ar": "18 ركلة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_pen_kane",
+        "name": { "en": "Harry Kane", "ar": "هاري كين" },
+        "media": { "type": "player", "fallbackText": "HK" },
+        "value": 15,
+        "valueLabel": { "en": "15 Penalties", "ar": "15 ركلة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_pen_rvn",
+        "name": { "en": "Ruud van Nistelrooy", "ar": "رود فان نيستلروي" },
+        "media": { "type": "player", "fallbackText": "RVN" },
+        "value": 11,
+        "valueLabel": { "en": "11 Penalties", "ar": "11 ركلة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_pen_haaland",
+        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
+        "media": { "type": "player", "fallbackText": "EH9" },
+        "value": 9,
+        "valueLabel": { "en": "9 Penalties", "ar": "9 ركلات" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-minutes-played-legends",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "minutes", "legends", "longevity"],
+    "title": {
+      "en": "Rank these 5 legends by total Champions League minutes played",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي الدقائق الملعوبة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Official UEFA Champions League minutes played, through 2025–26",
+      "ar": "إجمالي الدقائق الرسمية في تاريخ دوري الأبطال حتى 2025–26"
+    },
+    "metricLabel": { "en": "Minutes", "ar": "دقائق" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_min_casillas",
+        "name": { "en": "Iker Casillas", "ar": "إيكر كاسياس" },
+        "media": { "type": "player", "fallbackText": "IK1" },
+        "value": 16267,
+        "valueLabel": { "en": "16,267 Mins", "ar": "16,267 دقيقة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_min_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 16189,
+        "valueLabel": { "en": "16,189 Mins", "ar": "16,189 دقيقة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_min_neuer",
+        "name": { "en": "Manuel Neuer", "ar": "مانويل نوير" },
+        "media": { "type": "player", "fallbackText": "MN1" },
+        "value": 14743,
+        "valueLabel": { "en": "14,743 Mins", "ar": "14,743 دقيقة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_min_ramos",
+        "name": { "en": "Sergio Ramos", "ar": "سيرخيو راموس" },
+        "media": { "type": "player", "fallbackText": "SR4" },
+        "value": 12571,
+        "valueLabel": { "en": "12,571 Mins", "ar": "12,571 دقيقة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_min_buffon",
+        "name": { "en": "Gianluigi Buffon", "ar": "جانلويجي بوفون" },
+        "media": { "type": "player", "fallbackText": "GB1" },
+        "value": 12000,
+        "valueLabel": { "en": "12,000 Mins", "ar": "12,000 دقيقة" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "ucl-goals-conceded-records",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "goals-conceded", "defense"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League goals conceded",
+      "ar": "رتّب الأندية الخمسة حسب عدد الأهداف التي استقبلتها شباكها في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "All-time European Cup & Champions League fixtures, through 2025–26",
+      "ar": "إجمالي الأهداف المستقبلة في تاريخ المسابقة حتى 2025–26"
+    },
+    "metricLabel": { "en": "Goals Conceded", "ar": "أهداف مستقبلة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_gc_juve",
+        "name": { "en": "Juventus", "ar": "يوفنتوس" },
+        "media": { "type": "club", "fallbackText": "JUV" },
+        "value": 329,
+        "valueLabel": { "en": "329 Goals", "ar": "329 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_gc_dynamo",
+        "name": { "en": "Dynamo Kyiv", "ar": "دينامو كييف" },
+        "media": { "type": "club", "fallbackText": "DYN" },
+        "value": 324,
+        "valueLabel": { "en": "324 Goals", "ar": "324 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_gc_gala",
+        "name": { "en": "Galatasaray", "ar": "غلطة سراي" },
+        "media": { "type": "club", "fallbackText": "GAL" },
+        "value": 321,
+        "valueLabel": { "en": "321 Goals", "ar": "321 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_gc_anderlecht",
+        "name": { "en": "Anderlecht", "ar": "أندرلخت" },
+        "media": { "type": "club", "fallbackText": "AND" },
+        "value": 320,
+        "valueLabel": { "en": "320 Goals", "ar": "320 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_gc_porto",
+        "name": { "en": "Porto", "ar": "بورتو" },
+        "media": { "type": "club", "fallbackText": "POR" },
+        "value": 312,
+        "valueLabel": { "en": "312 Goals", "ar": "312 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-matches-played-second-tier-giants",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "matches"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League matches played",
+      "ar": "رتّب الأندية الخمسة حسب عدد المباريات الملعوبة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "From 1955–56 through the end of 2025–26",
+      "ar": "من موسم 1955–56 وحتى نهاية موسم 2025–26"
+    },
+    "metricLabel": { "en": "Matches", "ar": "مباريات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_mp_ajax",
+        "name": { "en": "Ajax", "ar": "أياكس" },
+        "media": { "type": "club", "fallbackText": "AJX" },
+        "value": 255,
+        "valueLabel": { "en": "255 Matches", "ar": "255 مباراة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_mp_inter",
+        "name": { "en": "Inter Milan", "ar": "إنتر ميلان" },
+        "media": { "type": "club", "fallbackText": "INT" },
+        "value": 238,
+        "valueLabel": { "en": "238 Matches", "ar": "238 مباراة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_mp_psv",
+        "name": { "en": "PSV Eindhoven", "ar": "بي إس في آيندهوفن" },
+        "media": { "type": "club", "fallbackText": "PSV" },
+        "value": 219,
+        "valueLabel": { "en": "219 Matches", "ar": "219 مباراة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_mp_chelsea",
+        "name": { "en": "Chelsea", "ar": "تشيلسي" },
+        "media": { "type": "club", "fallbackText": "CHE" },
+        "value": 211,
+        "valueLabel": { "en": "211 Matches", "ar": "211 مباراة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_mp_bvb",
+        "name": { "en": "Borussia Dortmund", "ar": "بوروسيا دورتموند" },
+        "media": { "type": "club", "fallbackText": "BVB" },
+        "value": 207,
+        "valueLabel": { "en": "207 Matches", "ar": "207 مباراة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-goals-tight-margin-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "goals", "tight-margin"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League goals scored",
+      "ar": "رتّب الأندية الخمسة حسب عدد الأهداف المسجلة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Tight statistical margin across European royalty",
+      "ar": "فروقات تهديفية دقيقة جدًا بين كبار أوروبا حتى 2025–26"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_gl_liv",
+        "name": { "en": "Liverpool", "ar": "ليفربول" },
+        "media": { "type": "club", "fallbackText": "LIV" },
+        "value": 514,
+        "valueLabel": { "en": "514 Goals", "ar": "514 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_gl_juve",
+        "name": { "en": "Juventus", "ar": "يوفنتوس" },
+        "media": { "type": "club", "fallbackText": "JUV" },
+        "value": 510,
+        "valueLabel": { "en": "510 Goals", "ar": "510 أهداف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_gl_milan",
+        "name": { "en": "AC Milan", "ar": "ميلان" },
+        "media": { "type": "club", "fallbackText": "ACM" },
+        "value": 455,
+        "valueLabel": { "en": "455 Goals", "ar": "455 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_gl_arsenal",
+        "name": { "en": "Arsenal", "ar": "أرسنال" },
+        "media": { "type": "club", "fallbackText": "ARS" },
+        "value": 412,
+        "valueLabel": { "en": "412 Goals", "ar": "412 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_gl_porto",
+        "name": { "en": "Porto", "ar": "بورتو" },
+        "media": { "type": "club", "fallbackText": "POR" },
+        "value": 411,
+        "valueLabel": { "en": "411 Goals", "ar": "411 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

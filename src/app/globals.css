@@ -3,27 +3,35 @@
 @theme {
   /* Font Family Mappings */
   --font-sans:
-    var(--font-inter-tight), var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-display: var(--font-sora), sans-serif;
+    var(--font-ibm-sans), var(--font-ibm-arabic), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-arabic: var(--font-ibm-arabic), var(--font-noto-arabic), sans-serif;
+  --font-display: var(--font-ibm-sans), var(--font-ibm-arabic), sans-serif;
+  --font-display-arabic: var(--font-noto-arabic), var(--font-ibm-arabic), sans-serif;
   --font-mono: var(--font-rajdhani), ui-monospace, monospace;
-  --font-sora: var(--font-sora), sans-serif;
-  --font-inter: var(--font-inter), sans-serif;
+  --font-stat: var(--font-rajdhani), var(--font-bebas), ui-monospace, sans-serif;
+  --font-ibm-sans: var(--font-ibm-sans), sans-serif;
+  --font-ibm-arabic: var(--font-ibm-arabic), sans-serif;
+  --font-noto-arabic: var(--font-noto-arabic), sans-serif;
   --font-rajdhani: var(--font-rajdhani), sans-serif;
   --font-anton: var(--font-anton), sans-serif;
   --font-bebas: var(--font-bebas), sans-serif;
-  --font-inter-tight: var(--font-inter-tight), sans-serif;
 
   /* Premium Core Color Mappings */
-  --color-background: #02050a; /* Midnight Black (70% background) */
-  --color-foreground: #f5f4f4; /* Off White (20% text) */
-  --color-card: #0d1017; /* Dark charcoal backgrounds */
-  --color-border: #1e232d; /* Thin gray borders */
+  --color-background: #03060b; /* Stadium Pitch Black */
+  --color-foreground: #f8f9fa; /* Off White */
+  --color-card: #0c1017; /* Dark charcoal surface */
+  --color-card-elevated: #131923; /* Elevated surface */
+  --color-border: #1c2331; /* Graphite border */
+  --color-border-subtle: #141b27;
 
   --color-lime: #95e810; /* Electric Lime */
-  --color-vivid: #72d410; /* Vivid Green */
-  --color-bold-green: #52b916; /* Bold Green */
-  --color-steel: #848487; /* Steel Gray */
-  --color-deep-olive: #32521e; /* Deep Olive Shadow */
+  --color-vivid: #72d410; /* Vivid Pitch Green */
+  --color-bold-green: #52b916; /* Deep Green */
+  --color-steel: #8893a4; /* Steel Slate */
+  --color-muted: #596579; /* Muted Slate */
+  --color-gold: #eab308; /* Premium Gold */
+  --color-sky: #0ea5e9; /* Tactical Intel Sky */
+  --color-rose: #f43f5e; /* Opponent / Error Rose */
 
   /* Distinct Tier Colors */
   --color-tier-icon: #d4af37;
@@ -35,16 +43,17 @@
   --color-tier-silver: #cbd5e1;
   --color-tier-bronze: #c97a3a;
 
-  /* Override standard Tailwind colors */
-  --color-slate-950: #02050a;
-  --color-slate-900: #0d1017;
-  --color-slate-800: #1e232d;
-  --color-slate-700: #323846;
-  --color-slate-500: #848487;
-  --color-slate-400: #bdbdbf;
-  --color-slate-300: #d8d7d7;
-  --color-slate-200: #e6e5e5;
-  --color-slate-100: #f5f4f4;
+  /* Standard Tailwind color overrides */
+  --color-slate-950: #03060b;
+  --color-slate-900: #0c1017;
+  --color-slate-850: #101620;
+  --color-slate-800: #1a2230;
+  --color-slate-700: #2d3748;
+  --color-slate-500: #8893a4;
+  --color-slate-400: #a0aec0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-200: #e2e8f0;
+  --color-slate-100: #f8f9fa;
 }
 
 :root {
@@ -55,26 +64,60 @@ html,
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
-  height: 100%;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings font overrides automatically to Sora */
+/* RTL Typography & Spacing Handling */
+html[dir='rtl'],
+.rtl {
+  font-family: var(--font-ibm-arabic), var(--font-noto-arabic), sans-serif;
+  letter-spacing: normal !important;
+}
+
+html[dir='rtl'] h1,
+html[dir='rtl'] h2,
+html[dir='rtl'] h3,
+html[dir='rtl'] h4,
+html[dir='rtl'] h5,
+html[dir='rtl'] h6,
+html[dir='rtl'] .font-display {
+  font-family: var(--font-noto-arabic), var(--font-ibm-arabic), sans-serif;
+  letter-spacing: normal !important;
+  line-height: 1.35;
+}
+
+html[dir='rtl'] p,
+html[dir='rtl'] span,
+html[dir='rtl'] button,
+html[dir='rtl'] input {
+  letter-spacing: normal !important;
+}
+
+html[dir='rtl'] .font-stats {
+  font-family: var(--font-stat), sans-serif;
+  letter-spacing: 0.04em !important;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Headings font overrides (LTR) */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-sora), sans-serif;
-  letter-spacing: -0.02em;
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: -0.015em;
 }
 
-/* Sporty Numbers, Timers, and Stats helper class */
+/* Centralized Sporty Numbers, Timers, Prices & Stats */
 .font-stats {
-  font-family: var(--font-rajdhani), sans-serif;
+  font-family: var(--font-stat), sans-serif;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Smooth customized scrollbars */
@@ -83,10 +126,10 @@ h6 {
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #02050a;
+  background: #03060b;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e232d;
+  background: #1c2331;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -108,7 +151,7 @@ h6 {
 
 @keyframes slideUp {
   from {
-    transform: translateY(20px);
+    transform: translateY(16px);
     opacity: 0;
   }
   to {
@@ -119,7 +162,7 @@ h6 {
 
 @keyframes slideDown {
   from {
-    transform: translateY(-20px);
+    transform: translateY(-16px);
     opacity: 0;
   }
   to {
@@ -130,7 +173,7 @@ h6 {
 
 @keyframes scaleIn {
   from {
-    transform: scale(0.95);
+    transform: scale(0.96);
     opacity: 0;
   }
   to {
@@ -151,182 +194,52 @@ h6 {
   }
 }
 
-@keyframes packFloat {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-8px) rotate(1deg);
-  }
-}
-
-@keyframes packOpeningGlow {
-  0% {
-    transform: scale(0.8) rotate(-5deg);
-    opacity: 0;
-    filter: brightness(1);
-  }
-  50% {
-    transform: scale(1.1) rotate(5deg);
-    opacity: 1;
-    filter: brightness(2) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8));
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-    filter: brightness(1);
-  }
-}
-
-@keyframes lightRays {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes scannerLine {
-  0% {
-    top: 4%;
-    opacity: 0.8;
-  }
-  50% {
-    top: 92%;
-    opacity: 1;
-  }
-  100% {
-    top: 4%;
-    opacity: 0.8;
-  }
-}
-
 .animate-fade-in {
-  animation: fadeIn 0.3s ease-out forwards;
+  animation: fadeIn 0.25s ease-out forwards;
 }
 .animate-slide-up {
-  animation: slideUp 0.4s ease-out forwards;
+  animation: slideUp 0.35s ease-out forwards;
 }
 .animate-slide-down {
-  animation: slideDown 0.4s ease-out forwards;
+  animation: slideDown 0.35s ease-out forwards;
 }
 .animate-scale-in {
-  animation: scaleIn 0.3s ease-out forwards;
+  animation: scaleIn 0.25s ease-out forwards;
 }
 .animate-pulse-glow {
   animation: pulseLimeGlow 2s infinite;
 }
-.animate-pack-float {
-  animation: packFloat 4s ease-in-out infinite;
-}
-.animate-pack-open {
-  animation: packOpeningGlow 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-}
-.animate-light-rays {
-  animation: lightRays 20s linear infinite;
-}
-.animate-scanner-line {
-  animation: scannerLine 1.4s ease-in-out infinite;
-}
 
-/* Player slot fill pop-in */
-@keyframes slotFillIn {
-  0% {
-    transform: scale(0) rotate(-20deg);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.15) rotate(4deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-  }
+/* Button & UI Haptics */
+.btn-haptic {
+  transition:
+    transform 0.12s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.12s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.12s ease;
 }
-
-/* Active bidding position pulse */
-@keyframes activePosRing {
-  0% {
-    box-shadow: 0 0 0 0 rgba(149, 232, 16, 0.6);
-  }
-  50% {
-    box-shadow: 0 0 0 12px rgba(149, 232, 16, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(149, 232, 16, 0);
-  }
+.btn-haptic:active {
+  transform: scale(0.97);
 }
-
-/* Stagger formation nodes entrance */
-@keyframes nodeStagger {
-  from {
-    transform: translateY(18px) scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-}
-
-/* Shimmer loading effect */
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-
-.animate-slot-fill {
-  animation: slotFillIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-}
-.animate-active-ring {
-  animation: activePosRing 1.8s ease-out infinite;
-}
-.animate-node-stagger {
-  animation: nodeStagger 0.5s ease-out forwards;
-}
-.animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    transparent 30%,
-    rgba(149, 232, 16, 0.08) 50%,
-    transparent 70%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 2s infinite;
-}
-
-/* ========================================================================= */
-/* TIER SHAPES & STYLES                                                      */
-/* ========================================================================= */
 
 .glass-card {
-  background: rgba(13, 16, 23, 0.75);
+  background: rgba(12, 16, 23, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(28, 35, 49, 0.7);
+}
+
+.glass-panel-elevated {
+  background: rgba(19, 25, 35, 0.9);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(30, 35, 45, 0.7);
+  border: 1px solid rgba(46, 56, 76, 0.6);
 }
 
 .gradient-text-lime {
-  background: linear-gradient(135deg, #95e810, #72d410, #52b916);
+  background: linear-gradient(135deg, #95e810 0%, #72d410 50%, #52b916 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.btn-haptic {
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
-}
-.btn-haptic:active {
-  transform: scale(0.95);
 }
 
 .scrollbar-hidden {
@@ -335,4 +248,16 @@ h6 {
 }
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

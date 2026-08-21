@@ -1,16 +1,26 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
-import { Zap, Search, RefreshCw, X, RotateCcw } from 'lucide-react';
+import {
+  Lightning,
+  MagnifyingGlass,
+  Shuffle,
+  X,
+  ArrowCounterClockwise,
+} from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
+import { Button } from '@/components/ui/button';
+import { PageShell } from '@/components/ui/page-shell';
+import { Panel } from '@/components/ui/panel';
+import { TextInput } from '@/components/ui/text-input';
 import { CardDetailModal } from '@/components/packs/card-detail-modal';
-import { PageHeader } from '@/components/shared/page-header';
 import { PlayerCard } from '@/components/shared/player-card';
 import { TierBadge } from '@/components/shared/tier-badge';
-import { ETLogo } from '@/components/shared/et-logo';
 import { sfx } from '@/lib/sfx';
 import { getTierStyle, TIER_ORDER } from '@/lib/tier-styles';
+import { useI18n } from '@/lib/i18n';
 import type { PlayerCardData, Tier } from '@/types/player';
 
 export interface PackDef {
@@ -95,7 +105,6 @@ function pickCardsForPack(pack: PackDef, allPlayers: PlayerCardData[]): PlayerCa
   const selected: PlayerCardData[] = [];
   const used = new Set<string>();
 
-  // 1. Guarantee at least 1 card from EACH tier in pack.guaranteed
   for (const gTier of pack.guaranteed) {
     const tierPool = seededShuffle(
       allPlayers.filter((p) => p.tier === gTier && !used.has(p.id)),
@@ -107,7 +116,6 @@ function pickCardsForPack(pack: PackDef, allPlayers: PlayerCardData[]): PlayerCa
     }
   }
 
-  // 2. Eligible pool for the remaining slots (strictly from pack.eligibleTiers)
   const eligiblePool = seededShuffle(
     allPlayers.filter((p) => pack.eligibleTiers.includes(p.tier) && !used.has(p.id)),
     seed + 43,
@@ -119,7 +127,6 @@ function pickCardsForPack(pack: PackDef, allPlayers: PlayerCardData[]): PlayerCa
     used.add(player.id);
   }
 
-  // 3. Fallback only if database has insufficient eligible players
   if (selected.length < pack.cardCount) {
     const fallbackPool = seededShuffle(
       allPlayers.filter((p) => !used.has(p.id)),
@@ -132,21 +139,19 @@ function pickCardsForPack(pack: PackDef, allPlayers: PlayerCardData[]): PlayerCa
     }
   }
 
-  // Shuffle final 5 cards so guaranteed cards aren't always in index 0 & 1
   return seededShuffle(selected, seed + 101).slice(0, pack.cardCount);
 }
 
 export default function PacksPage() {
+  const { t } = useI18n();
   const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 40 });
   const [shuffleSeed, setShuffleSeed] = useState(0);
 
-  // Active opened pack state
   const [activePack, setActivePack] = useState<PackDef | null>(null);
   const [openedCards, setOpenedCards] = useState<PlayerCardData[]>([]);
   const [isOpening, setIsOpening] = useState(false);
   const [inspectedCard, setInspectedCard] = useState<PlayerCardData | null>(null);
 
-  // Search in showcase
   const [searchQuery, setSearchQuery] = useState('');
 
   const players = useMemo(() => {
@@ -157,7 +162,6 @@ export default function PacksPage() {
     return tierLoaded.map(toPlayerCardData);
   }, [rawData]);
 
-  // Generate 8 Showcase Cards: Minimum GOLD tier, at most 1 GOLD card!
   const showcaseCards = useMemo(() => {
     if (players.length === 0) return [];
 
@@ -185,12 +189,10 @@ export default function PacksPage() {
 
     const result: PlayerCardData[] = [];
 
-    // Max 1 gold card in the 8 cards
     if (shuffledGold.length > 0) {
       result.push(shuffledGold[0]);
     }
 
-    // Fill remaining 7 slots from high tiers (Elite, Master, Ultimate, Hero, Icon)
     for (const player of shuffledHigh) {
       if (result.length >= 8) break;
       if (!result.some((p) => p.id === player.id)) {
@@ -198,7 +200,6 @@ export default function PacksPage() {
       }
     }
 
-    // If still less than 8, fill from available
     if (result.length < 8) {
       for (const p of shuffledHigh) {
         if (result.length >= 8) break;
@@ -206,11 +207,9 @@ export default function PacksPage() {
       }
     }
 
-    // Shuffle final 8 so the gold card isn't always in position 0
     return seededShuffle(result, seed + 99);
   }, [players, searchQuery, shuffleSeed]);
 
-  // Open Pack handler: instant, responsive, clean
   function handleOpenPack(pack: PackDef) {
     sfx.unlock();
     sfx.packRip();
@@ -233,37 +232,35 @@ export default function PacksPage() {
   }
 
   return (
-    <main className="animate-fade-in mx-auto max-w-5xl space-y-8 px-3 pb-16 sm:px-4">
-      <PageHeader
-        title="Packs"
-        subtitle="Open premium cases and discover elite football cards."
-        backUrl="/"
-      />
-
-      {/* ========================================================================= */}
-      {/* 1. CENTRALIZED MINIMAL PACK CASES GRID                                    */}
-      {/* ========================================================================= */}
-      <section className="mx-auto max-w-4xl space-y-4">
+    <PageShell
+      title={t('packs.title')}
+      subtitle={t('packs.subtitle')}
+      backUrl="/"
+      maxWidth="5xl"
+    >
+      {/* ── 1. PACK CASES GRID ────────────────────────────────────────── */}
+      <section className="space-y-4">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
           {PACKS.map((pack) => {
             const style = getTierStyle(pack.featuredTier);
             const isSelected = activePack?.id === pack.id && openedCards.length > 0;
 
             return (
-              <div
+              <Panel
                 key={pack.id}
-                className={`group relative flex flex-col justify-between gap-4 overflow-hidden rounded-2xl border bg-slate-900/80 p-4 shadow-xl transition-all duration-200 hover:-translate-y-1 sm:p-5 ${
-                  isSelected ? 'ring-lime/70 ring-2' : ''
+                variant={isSelected ? 'highlight' : 'default'}
+                className={`p-4 sm:p-5 flex flex-col justify-between gap-4 transition-all duration-200 hover:-translate-y-1 ${
+                  isSelected ? 'border-lime ring-2 ring-lime/50' : ''
                 }`}
                 style={{
-                  borderColor: `${style.accent}45`,
+                  borderColor: `${style.accent}50`,
                   boxShadow: `0 14px 28px rgba(0,0,0,0.4), 0 0 16px ${style.glow}`,
                 }}
               >
                 <div className="space-y-2.5">
                   <div className="flex items-center justify-between">
-                    <span className="text-steel text-[10px] font-black tracking-wider uppercase">
-                      {pack.cardCount} Cards
+                    <span className="text-steel text-[10px] font-black tracking-wider uppercase font-stats">
+                      {t('packs.cardsCount', { count: pack.cardCount })}
                     </span>
                     <div className="flex gap-1">
                       {pack.guaranteed.map((tier) => (
@@ -273,69 +270,72 @@ export default function PacksPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-black tracking-tight text-white uppercase sm:text-xl">
+                    <h3 className="text-lg font-black tracking-tight text-white uppercase font-display">
                       {pack.name}
                     </h3>
-                    <p className="text-steel mt-0.5 text-xs leading-relaxed font-medium">
+                    <p className="text-steel text-xs font-medium leading-relaxed mt-0.5">
                       {pack.note}
                     </p>
                   </div>
                 </div>
 
-                <button
+                <Button
+                  variant="primary"
+                  size="md"
+                  fullWidth
                   onClick={() => handleOpenPack(pack)}
                   disabled={players.length === 0 || isOpening}
-                  className="bg-lime hover:bg-vivid flex w-full cursor-pointer items-center justify-center gap-1.5 rounded-xl px-4 py-2.5 text-xs font-black tracking-widest text-slate-950 uppercase shadow-md transition-all active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
+                  leftIcon={<AppIcon icon={Lightning} size={16} weight="fill" />}
                 >
-                  <Zap className="h-3.5 w-3.5 fill-current" />
-                  <span>Open Case</span>
-                </button>
-              </div>
+                  {t('packs.openCase')}
+                </Button>
+              </Panel>
             );
           })}
         </div>
 
-        {/* ========================================================================= */}
-        {/* OPENED PACK RESULTS                                                       */}
-        {/* ========================================================================= */}
+        {/* ── OPENED PACK RESULTS ─────────────────────────────────────── */}
         {openedCards.length > 0 && activePack && (
-          <article className="animate-scale-in space-y-4 rounded-2xl border border-white/10 bg-slate-950/90 p-4 shadow-2xl backdrop-blur-md sm:p-6">
+          <Panel variant="highlight" className="p-4 sm:p-6 space-y-4 animate-scale-in">
             <header className="flex items-center justify-between border-b border-white/10 pb-3">
               <div>
                 <span className="text-lime block text-[9px] font-black tracking-widest uppercase">
-                  Opened Case
+                  {t('packs.openedCase')}
                 </span>
-                <h4 className="text-lg font-black tracking-tight text-white uppercase">
-                  {activePack.name} ({openedCards.length} Cards)
+                <h4 className="text-lg font-black tracking-tight text-white uppercase font-display">
+                  {activePack.name} ({openedCards.length} {t('common.rounds')})
                 </h4>
               </div>
 
               <div className="flex items-center gap-2">
-                <button
+                <Button
+                  variant="secondary"
+                  size="sm"
                   onClick={() => handleOpenPack(activePack)}
-                  className="hover:border-lime/40 flex cursor-pointer items-center gap-1 rounded-lg border border-white/15 bg-slate-900 px-3 py-1.5 text-[10px] font-black tracking-wider text-white uppercase transition-colors sm:text-xs"
+                  leftIcon={<AppIcon icon={ArrowCounterClockwise} size={14} weight="bold" className="text-lime" />}
                 >
-                  <RotateCcw className="text-lime h-3 w-3" />
-                  <span>Again</span>
-                </button>
+                  {t('packs.again')}
+                </Button>
                 <button
+                  type="button"
                   onClick={() => {
                     setOpenedCards([]);
                     setActivePack(null);
                   }}
-                  className="text-steel cursor-pointer rounded-lg border border-white/10 bg-slate-900 p-1.5 transition-colors hover:text-white"
-                  aria-label="Clear Results"
+                  className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:text-white transition-colors cursor-pointer"
+                  aria-label="Clear"
                 >
-                  <X className="h-3.5 w-3.5" />
+                  <AppIcon icon={X} size={16} weight="bold" />
                 </button>
               </div>
             </header>
 
-            {/* Opened Cards Grid (5 Columns on Desktop) */}
+            {/* 5-Card Grid on Desktop */}
             <div className="grid grid-cols-2 justify-items-center gap-3 pt-1 sm:grid-cols-5">
               {openedCards.map((player, index) => (
                 <button
                   key={`opened-${player.id}-${index}`}
+                  type="button"
                   onClick={() => {
                     sfx.cardDeal();
                     setInspectedCard(player);
@@ -347,62 +347,60 @@ export default function PacksPage() {
                 </button>
               ))}
             </div>
-          </article>
+          </Panel>
         )}
       </section>
 
-      {/* ========================================================================= */}
-      {/* 2. BEAUTIFUL 8-PLAYER SINGLE LINE SHOWCASE                                */}
-      {/* ========================================================================= */}
-      <section className="mx-auto max-w-6xl space-y-4 pt-2">
+      {/* ── 2. FEATURED 8-CARD SHOWCASE ──────────────────────────────── */}
+      <section className="space-y-4 pt-2">
         <header className="flex flex-wrap items-center justify-between gap-3 px-1">
           <div>
-            <h3 className="text-base font-black tracking-tight text-white uppercase sm:text-lg">
-              Featured Cards
+            <h3 className="text-base sm:text-lg font-black tracking-tight text-white uppercase font-display">
+              {t('packs.featuredCards')}
             </h3>
             <span className="text-steel font-mono text-[10px] uppercase">
-              Gold+ Tier Curated (8 Players)
+              {t('packs.goldPlusCurated')}
             </span>
           </div>
 
           <div className="flex items-center gap-2">
-            {/* Minimal Search Bar */}
-            <div className="relative w-44 sm:w-60">
-              <Search className="text-steel absolute top-1/2 left-3 h-3.5 w-3.5 -translate-y-1/2" />
-              <input
-                type="text"
+            <div className="w-44 sm:w-60">
+              <TextInput
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search..."
-                className="placeholder:text-steel focus:border-lime/50 w-full rounded-xl border border-white/10 bg-slate-900 py-1.5 pr-3 pl-8 text-xs text-white transition-colors focus:outline-none"
+                placeholder={t('packs.searchPlaceholder')}
+                leftIcon={<AppIcon icon={MagnifyingGlass} size={16} weight="bold" />}
+                rightAction={
+                  searchQuery ? (
+                    <button
+                      type="button"
+                      onClick={() => setSearchQuery('')}
+                      className="text-steel hover:text-white p-1"
+                    >
+                      <AppIcon icon={X} size={14} weight="bold" />
+                    </button>
+                  ) : undefined
+                }
               />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery('')}
-                  className="text-steel absolute top-1/2 right-2.5 -translate-y-1/2 text-xs hover:text-white"
-                >
-                  <X className="h-3 w-3" />
-                </button>
-              )}
             </div>
 
-            {/* Shuffle Button */}
-            <button
+            <Button
+              variant="secondary"
+              size="md"
               onClick={handleShuffle}
-              className="hover:border-lime/40 flex cursor-pointer items-center gap-1.5 rounded-xl border border-white/15 bg-slate-900 px-3 py-1.5 text-xs font-black tracking-wider text-white uppercase shadow-sm transition-all active:scale-95"
+              leftIcon={<AppIcon icon={Shuffle} size={16} weight="bold" className="text-lime" />}
             >
-              <RefreshCw className="text-lime h-3 w-3" />
-              <span>Shuffle</span>
-            </button>
+              {t('packs.shuffle')}
+            </Button>
           </div>
         </header>
 
-        {/* 8-Card Showcase Grid (No Horizontal Scroll - 2 cols on mobile, 4 cols on tablet, 8 cols on desktop) */}
         {showcaseCards.length > 0 ? (
           <div className="grid grid-cols-2 justify-items-center gap-3 pt-1 sm:grid-cols-4 xl:grid-cols-8">
             {showcaseCards.map((player, index) => (
               <button
                 key={`showcase-${player.id}-${index}`}
+                type="button"
                 onClick={() => {
                   sfx.cardDeal();
                   setInspectedCard(player);
@@ -415,17 +413,15 @@ export default function PacksPage() {
             ))}
           </div>
         ) : (
-          <div className="space-y-1 rounded-2xl border border-white/10 bg-slate-900/50 p-8 text-center">
+          <Panel variant="subtle" className="p-8 text-center">
             <p className="text-steel text-xs font-black tracking-widest uppercase">
-              {rawData === undefined ? 'Loading Cards...' : 'No cards found.'}
+              {rawData === undefined ? t('packs.loadingCards') : t('packs.noCards')}
             </p>
-          </div>
+          </Panel>
         )}
       </section>
 
-      {/* ========================================================================= */}
-      {/* 3. CARD DETAIL INSPECTION MODAL                                           */}
-      {/* ========================================================================= */}
+      {/* ── 3. CARD DETAIL INSPECTION MODAL ──────────────────────────── */}
       {inspectedCard && (
         <CardDetailModal
           card={inspectedCard}
@@ -434,6 +430,6 @@ export default function PacksPage() {
           onClose={() => setInspectedCard(null)}
         />
       )}
-    </main>
+    </PageShell>
   );
 }

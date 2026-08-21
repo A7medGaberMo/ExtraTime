@@ -1,37 +1,50 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useSyncExternalStore, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Id } from '../../convex/_generated/dataModel';
 
+function subscribe(callback: () => void) {
+  if (typeof window === 'undefined') return () => {};
+  window.addEventListener('storage', callback);
+  return () => window.removeEventListener('storage', callback);
+}
+
+function getSnapshot() {
+  if (typeof window === 'undefined') return null;
+  try {
+    return localStorage.getItem('extratime_guestId');
+  } catch {
+    return null;
+  }
+}
+
+function getServerSnapshot() {
+  return null;
+}
+
 export function useGuestSession(redirectToHomeIfMissing = false) {
   const router = useRouter();
-  const [guestId, setGuestId] = useState<Id<'guestUsers'> | null>(null);
-  const [hydrated, setHydrated] = useState(false);
+  const rawId = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const guestId = (rawId as Id<'guestUsers'> | null) ?? null;
 
-  // Read the persisted id client-only. The server always renders with
-  // guestId null, so reading in an effect keeps SSR and the first client
-  // render identical (prevents hydration mismatches).
   useEffect(() => {
-    try {
+    if (redirectToHomeIfMissing && typeof window !== 'undefined') {
       const stored = localStorage.getItem('extratime_guestId');
-      if (stored) setGuestId(stored as Id<'guestUsers'>);
+      if (!stored) {
+        router.push('/');
+      }
+    }
+  }, [redirectToHomeIfMissing, router]);
+
+  const saveGuestId = useCallback((id: Id<'guestUsers'>) => {
+    try {
+      localStorage.setItem('extratime_guestId', id);
+      window.dispatchEvent(new Event('storage'));
     } catch {
-      // storage unavailable — stay anonymous
+      // storage unavailable
     }
-    setHydrated(true);
   }, []);
-
-  useEffect(() => {
-    if (redirectToHomeIfMissing && hydrated && !guestId) {
-      router.push('/');
-    }
-  }, [redirectToHomeIfMissing, hydrated, guestId, router]);
-
-  const saveGuestId = (id: Id<'guestUsers'>) => {
-    localStorage.setItem('extratime_guestId', id);
-    setGuestId(id);
-  };
 
   return { guestId, saveGuestId };
 }

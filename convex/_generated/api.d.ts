@@ -26,8 +26,14 @@ import type * as nations_queries from "../nations/queries.js";
 import type * as packs_queries from "../packs/queries.js";
 import type * as players_mutations from "../players/mutations.js";
 import type * as players_queries from "../players/queries.js";
+import type * as rank_mutations from "../rank/mutations.js";
+import type * as rank_queries from "../rank/queries.js";
+import type * as rank_scoring from "../rank/scoring.js";
+import type * as rank_seedData from "../rank/seedData.js";
+import type * as rank_validate from "../rank/validate.js";
 import type * as rooms_mutations from "../rooms/mutations.js";
 import type * as rooms_queries from "../rooms/queries.js";
+import type * as seed_rankQuestions from "../seed/rankQuestions.js";
 import type * as seed_seedData from "../seed/seedData.js";
 
 import type {
@@ -55,8 +61,14 @@ declare const fullApi: ApiFromModules<{
   "packs/queries": typeof packs_queries;
   "players/mutations": typeof players_mutations;
   "players/queries": typeof players_queries;
+  "rank/mutations": typeof rank_mutations;
+  "rank/queries": typeof rank_queries;
+  "rank/scoring": typeof rank_scoring;
+  "rank/seedData": typeof rank_seedData;
+  "rank/validate": typeof rank_validate;
   "rooms/mutations": typeof rooms_mutations;
   "rooms/queries": typeof rooms_queries;
+  "seed/rankQuestions": typeof seed_rankQuestions;
   "seed/seedData": typeof seed_seedData;
 }>;
 
