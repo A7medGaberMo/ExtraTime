@@ -22,7 +22,9 @@ import {
   Cards,
   Database,
   Play,
-  Users,
+  Compass,
+  Info,
+  DiceFive,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
@@ -41,10 +43,16 @@ export default function HomePage() {
   const { toast } = useToast();
   const { t, lang } = useI18n();
 
+  // Mutations
   const createGuest = useMutation(api.guests.mutations.create);
-  const findMatch = useMutation(api.rooms.mutations.findOrCreatePublicMatch);
+  const findSnipeMatch = useMutation(api.rooms.mutations.findOrCreatePublicMatch);
   const createSoloRank = useMutation(api.rank.mutations.createSoloGame);
-  const queueSummary = useQuery(api.rooms.queries.getPublicQueueSummary);
+  const findRankMatch = useMutation(api.rank.mutations.findOrCreatePublicMatch);
+  const createRankDuel = useMutation(api.rank.mutations.createDuelPrivateRoom);
+
+  // Queries
+  const snipeQueueSummary = useQuery(api.rooms.queries.getPublicQueueSummary);
+  const rankQueueSummary = useQuery(api.rank.queries.getPublicQueueSummary);
   const dbStats = useQuery(api.players.queries.getStats);
 
   // Snipe state
@@ -52,10 +60,18 @@ export default function HomePage() {
   const [matchSize, setMatchSize] = useState<5 | 11>(11);
 
   // Rank state
-  const [rankTab, setRankTab] = useState<'solo' | 'duel'>('solo');
+  const [rankRounds, setRankRounds] = useState<3 | 5>(3);
 
   const [loading, setLoading] = useState(false);
   const [showNameModal, setShowNameModal] = useState(false);
+  const [pendingAction, setPendingAction] = useState<
+    | { type: 'snipe' }
+    | { type: 'rank_solo' }
+    | { type: 'rank_public' }
+    | { type: 'rank_create_duel' }
+    | null
+  >(null);
+
   const [nickname, setNickname] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('extratime_guestName') || randomName();
@@ -63,82 +79,133 @@ export default function HomePage() {
     return randomName();
   });
 
-  const waiting11 = queueSummary?.queues[poolMode]?.[11] ?? 0;
-  const waiting5 = queueSummary?.queues[poolMode]?.[5] ?? 0;
-  const waitingCurrent = matchSize === 11 ? waiting11 : waiting5;
+  const waitingSnipe11 = snipeQueueSummary?.queues[poolMode]?.[11] ?? 0;
+  const waitingSnipe5 = snipeQueueSummary?.queues[poolMode]?.[5] ?? 0;
+  const waitingSnipeCurrent = matchSize === 11 ? waitingSnipe11 : waitingSnipe5;
+  const waitingRankCurrent =
+    rankRounds === 3 ? (rankQueueSummary?.waiting3 ?? 0) : (rankQueueSummary?.waiting5 ?? 0);
+
   const playerCount = dbStats === undefined ? '...' : dbStats.totalPlayers.toLocaleString();
 
-  function openNameModal() {
+  async function ensureGuestId(): Promise<Id<'guestUsers'>> {
+    const name = nickname.trim() || randomName();
+    let guestId = localStorage.getItem('extratime_guestId');
+    if (!guestId) {
+      guestId = await createGuest({ nickname: name, avatarSeed: name });
+      localStorage.setItem('extratime_guestId', guestId);
+    }
+    localStorage.setItem('extratime_guestName', name);
+    return guestId as Id<'guestUsers'>;
+  }
+
+  function triggerActionWithName(
+    action:
+      | { type: 'snipe' }
+      | { type: 'rank_solo' }
+      | { type: 'rank_public' }
+      | { type: 'rank_create_duel' },
+  ) {
     const saved = localStorage.getItem('extratime_guestName');
-    setNickname(saved || randomName());
-    setShowNameModal(true);
-  }
-
-  async function handleLaunchSnipe() {
-    if (loading || !nickname.trim()) return;
-    setLoading(true);
-    try {
-      const userId = await createGuest({ nickname: nickname.trim(), avatarSeed: nickname.trim() });
-      localStorage.setItem('extratime_guestId', userId);
-      localStorage.setItem('extratime_guestName', nickname.trim());
-      const result = await findMatch({ userId, matchSize, poolMode });
-      router.push(`/auction/${result.roomId}`);
-    } catch (error: unknown) {
-      const err = error as { message?: string };
-      toast(err.message || 'Could not start matchmaking', 'error');
-      setLoading(false);
+    if (saved) {
+      executeAction(action);
+    } else {
+      setPendingAction(action);
+      setNickname(randomName());
+      setShowNameModal(true);
     }
   }
 
-  async function handleLaunchRank() {
+  async function executeAction(
+    action:
+      | { type: 'snipe' }
+      | { type: 'rank_solo' }
+      | { type: 'rank_public' }
+      | { type: 'rank_create_duel' },
+  ) {
     if (loading) return;
-    if (rankTab === 'duel') {
-      router.push('/rank');
-      return;
-    }
-
     setLoading(true);
+
     try {
-      let guestId = localStorage.getItem('extratime_guestId');
-      if (!guestId) {
-        const name = nickname.trim() || randomName();
-        guestId = await createGuest({ nickname: name, avatarSeed: name });
-        localStorage.setItem('extratime_guestId', guestId);
-        localStorage.setItem('extratime_guestName', name);
+      const guestId = await ensureGuestId();
+
+      if (action.type === 'snipe') {
+        const result = await findSnipeMatch({ userId: guestId, matchSize, poolMode });
+        router.push(`/auction/${result.roomId}`);
+      } else if (action.type === 'rank_solo') {
+        const result = await createSoloRank({ guestId, roundCount: rankRounds });
+        router.push(`/rank/${result.gameId}`);
+      } else if (action.type === 'rank_public') {
+        const result = await findRankMatch({ guestId, roundCount: rankRounds });
+        router.push(`/rank/${result.gameId}`);
+      } else if (action.type === 'rank_create_duel') {
+        const result = await createRankDuel({ hostId: guestId, roundCount: rankRounds });
+        router.push(`/rank/${result.gameId}`);
       }
-      const result = await createSoloRank({ guestId: guestId as Id<'guestUsers'>, roundCount: 3 });
-      router.push(`/rank/${result.gameId}`);
     } catch (error: unknown) {
       const err = error as { message?: string };
-      toast(err.message || 'Could not start rank match', 'error');
+      toast(err.message || 'Action failed. Please try again.', 'error');
       setLoading(false);
     }
   }
+
+  async function handleModalSubmit() {
+    if (!pendingAction || !nickname.trim()) return;
+    setShowNameModal(false);
+    await executeAction(pendingAction);
+  }
+
+  const poolDetailsMap: Record<PoolMode, { descEn: string; descAr: string }> = {
+    ACTIVE: {
+      descEn: 'Current top stars and 2025/2026 season performers across major leagues.',
+      descAr: 'ألمع نجوم الجيل الحالي وتشكيلات الموسم 2025/2026 في الدوريات الكبرى.',
+    },
+    GLOBAL: {
+      descEn: 'Complete worldwide verified database spanning all tiers and legendary players.',
+      descAr: 'قاعدة بيانات شاملة لجميع اللاعبين الحاليين والأساطير عبر مختلف الفئات.',
+    },
+    EPL: {
+      descEn: 'Premier League stars and English top-flight football icons only.',
+      descAr: 'نجوم الدوري الإنجليزي الممتاز وأساطير البريميرليج فقط.',
+    },
+    TOP_TEAMS: {
+      descEn: 'Elite powerhouses: Real Madrid, Man City, Bayern, Barcelona, Liverpool & Arsenal.',
+      descAr: 'كبار أندية أوروبا: ريال مدريد، السيتي، البايرن، برشلونة، ليفربول وآرسنال.',
+    },
+    ICONS: {
+      descEn: 'All-time immortals, Ballon d’Or winners, and World Cup legends.',
+      descAr: 'أساطير كرة القدم الخالدة، الفائزين بالكرة الذهبية، وأبطال كأس العالم.',
+    },
+  };
 
   const poolOptions: SegmentedOption<PoolMode>[] = [
     {
       value: 'ACTIVE',
       label: t('pools.ACTIVE.label'),
+      sublabel: t('pools.ACTIVE.sub'),
       icon: <AppIcon icon={UserCheck} size={15} weight="duotone" />,
     },
     {
       value: 'GLOBAL',
       label: t('pools.GLOBAL.label'),
+      sublabel: t('pools.GLOBAL.sub'),
       icon: <AppIcon icon={Globe} size={15} weight="duotone" />,
     },
     {
       value: 'EPL',
       label: t('pools.EPL.label'),
+      sublabel: t('pools.EPL.sub'),
       icon: <AppIcon icon={Flame} size={15} weight="duotone" />,
     },
     {
       value: 'TOP_TEAMS',
       label: t('pools.TOP_TEAMS.label'),
+      sublabel: t('pools.TOP_TEAMS.sub'),
       icon: <AppIcon icon={Star} size={15} weight="duotone" />,
     },
     {
       value: 'ICONS',
       label: t('pools.ICONS.label'),
+      sublabel: t('pools.ICONS.sub'),
       icon: <AppIcon icon={Crown} size={15} weight="duotone" />,
     },
   ];
@@ -156,18 +223,16 @@ export default function HomePage() {
     },
   ];
 
-  const rankModeOptions: SegmentedOption<'solo' | 'duel'>[] = [
+  const rankRoundOptions: SegmentedOption<3 | 5>[] = [
     {
-      value: 'solo',
-      label: lang === 'ar' ? 'لعب فردي' : 'Solo',
-      sublabel: lang === 'ar' ? '3 جولات' : '3 Rounds',
-      icon: <AppIcon icon={Play} size={15} weight="duotone" />,
+      value: 3,
+      label: lang === 'ar' ? '3 جولات' : '3 Rounds',
+      sublabel: '~2 mins',
     },
     {
-      value: 'duel',
-      label: lang === 'ar' ? 'تحدي لايف' : '1v1 Duel',
-      sublabel: lang === 'ar' ? 'رأس برأس' : 'Head to Head',
-      icon: <AppIcon icon={Users} size={15} weight="duotone" />,
+      value: 5,
+      label: lang === 'ar' ? '5 جولات' : '5 Rounds',
+      sublabel: '~4 mins',
     },
   ];
 
@@ -238,7 +303,7 @@ export default function HomePage() {
               />
             </div>
 
-            {/* Pool Selector Segmented */}
+            {/* Pool Selector Segmented with Sublabels */}
             <div className="space-y-1">
               <span className="text-steel text-[10px] font-black uppercase block">
                 {t('home.snipeCard.selectPool')}
@@ -250,6 +315,29 @@ export default function HomePage() {
                 size="sm"
               />
             </div>
+
+            {/* Inline Selected Pool Explanation Box */}
+            <div className="rounded-xl border border-white/5 bg-slate-950/60 p-2.5 space-y-1">
+              <div className="flex items-center justify-between text-[11px]">
+                <span className="font-bold text-white flex items-center gap-1">
+                  <AppIcon icon={Info} size={13} weight="duotone" className="text-lime shrink-0" />
+                  <span>{poolOptions.find((p) => p.value === poolMode)?.label}</span>
+                </span>
+                <span className="text-lime font-stats text-[10px] font-black">
+                  {waitingSnipeCurrent > 0
+                    ? `${waitingSnipeCurrent} ${lang === 'ar' ? 'في الانتظار' : 'in queue'}`
+                    : (lang === 'ar' ? 'جاهز للمطابقة' : 'Queue ready')}
+                </span>
+              </div>
+              <p className="text-[10px] text-steel leading-tight">
+                {lang === 'ar' ? poolDetailsMap[poolMode].descAr : poolDetailsMap[poolMode].descEn}
+              </p>
+              <p className="text-[9px] text-steel/60 pt-0.5">
+                {lang === 'ar'
+                  ? 'المطابقة العامة بتجمعك فقط بمدربين اختاروا نفس التشكيلة ونظام الماتش.'
+                  : 'Public matching pairs you strictly with managers on the same pool & format.'}
+              </p>
+            </div>
           </div>
 
           {/* Actions */}
@@ -258,23 +346,25 @@ export default function HomePage() {
               variant="primary"
               size="lg"
               fullWidth
-              onClick={openNameModal}
+              onClick={() => triggerActionWithName({ type: 'snipe' })}
               disabled={loading}
               leftIcon={<AppIcon icon={Sword} size={18} weight="bold" />}
               rightIcon={
-                waitingCurrent > 0 ? (
+                waitingSnipeCurrent > 0 ? (
                   <span className="font-stats rounded-full bg-slate-950/40 px-2 py-0.5 text-[10px] text-slate-950 font-black">
-                    {waitingCurrent} {t('home.snipeCard.inQueue')}
+                    {waitingSnipeCurrent} {t('home.snipeCard.inQueue')}
                   </span>
                 ) : undefined
               }
             >
-              {lang === 'ar' ? `ابدأ ماتش (${matchSize === 11 ? '11 ضد 11' : 'خماسي'})` : `Play Snipe (${matchSize}v${matchSize})`}
+              {lang === 'ar'
+                ? `ابدأ ماتش عام (${matchSize === 11 ? '11 ضد 11' : 'خماسي'})`
+                : `Play Public Snipe (${matchSize}v${matchSize})`}
             </Button>
 
             <div className="flex items-center justify-between px-1 text-xs">
               <Link
-                href="/create-room"
+                href="/create-room?mode=snipe"
                 className="text-steel flex items-center gap-1 hover:text-white transition-colors font-bold uppercase"
               >
                 <AppIcon icon={PlusCircle} size={14} weight="duotone" className="text-lime" />
@@ -319,53 +409,69 @@ export default function HomePage() {
               {t('home.rankCard.desc')}
             </p>
 
-            {/* Mode Segmented */}
+            {/* Match Length Selector */}
             <div className="space-y-1">
               <span className="text-steel text-[10px] font-black uppercase block">
-                {lang === 'ar' ? 'نوع اللعب' : 'Game Mode'}
+                {t('rank.matchLength')}
               </span>
               <SegmentedControl
-                options={rankModeOptions}
-                value={rankTab}
-                onChange={setRankTab}
+                options={rankRoundOptions}
+                value={rankRounds}
+                onChange={setRankRounds}
                 size="sm"
               />
             </div>
 
             {/* Clean Mini Preview Pill */}
             <div className="rounded-xl border border-white/5 bg-slate-950/60 p-2.5 flex items-center justify-between text-[11px] text-steel">
-              <span className="font-bold text-white">
-                {lang === 'ar' ? 'مثال: رتّب الأكثر تتويجاً بدوري الأبطال' : 'e.g. Rank by Champions League titles'}
+              <span className="font-bold text-white truncate pe-2">
+                {lang === 'ar' ? 'مثال: رتّب الأكثر تتويجاً بدوري الأبطال' : 'e.g. Rank by UCL titles'}
               </span>
-              <span className="text-amber-300 font-stats font-black">+10 pts</span>
+              <span className="text-amber-300 font-stats font-black shrink-0">+10 pts max</span>
             </div>
           </div>
 
-          {/* Actions */}
+          {/* Direct Actions: Solo & Public 1v1 Radar (No redundant redirect!) */}
           <div className="space-y-2.5 pt-2 border-t border-white/5">
-            <Button
-              variant={rankTab === 'solo' ? 'primary' : 'secondary'}
-              size="lg"
-              fullWidth
-              onClick={handleLaunchRank}
-              disabled={loading}
-              leftIcon={<AppIcon icon={rankTab === 'solo' ? Play : Users} size={18} weight="bold" />}
-            >
-              {rankTab === 'solo'
-                ? (lang === 'ar' ? 'ابدأ رتّب (فردي)' : 'Start Solo Rank')
-                : (lang === 'ar' ? 'ادخل ساحة التحدي' : 'Go to 1v1 Hub')}
-            </Button>
+            <div className="grid grid-cols-2 gap-2">
+              <Button
+                variant="primary"
+                size="md"
+                onClick={() => triggerActionWithName({ type: 'rank_solo' })}
+                disabled={loading}
+                leftIcon={<AppIcon icon={Play} size={16} weight="bold" />}
+              >
+                {lang === 'ar' ? 'لعب فردي' : 'Solo Rank'}
+              </Button>
+
+              <Button
+                variant="secondary"
+                size="md"
+                onClick={() => triggerActionWithName({ type: 'rank_public' })}
+                disabled={loading}
+                leftIcon={<AppIcon icon={Compass} size={16} weight="bold" className="text-amber-400" />}
+                rightIcon={
+                  waitingRankCurrent > 0 ? (
+                    <span className="font-stats text-[10px] text-amber-300 font-black">
+                      {waitingRankCurrent}
+                    </span>
+                  ) : undefined
+                }
+              >
+                {lang === 'ar' ? 'منافس لايف' : 'Public 1v1'}
+              </Button>
+            </div>
 
             <div className="flex items-center justify-between px-1 text-xs">
               <Link
-                href="/rank"
+                href="/rank?tab=duel"
                 className="text-steel flex items-center gap-1 hover:text-white transition-colors font-bold uppercase"
               >
                 <AppIcon icon={PlusCircle} size={14} weight="duotone" className="text-amber-400" />
                 <span>{lang === 'ar' ? 'اعمل روم خاص' : 'Create Duel'}</span>
               </Link>
               <Link
-                href="/rank"
+                href="/join-room"
                 className="text-steel flex items-center gap-1 hover:text-white transition-colors font-bold uppercase"
               >
                 <AppIcon icon={SignIn} size={14} weight="duotone" className="text-steel" />
@@ -424,6 +530,17 @@ export default function HomePage() {
             onChange={(e) => setNickname(e.target.value)}
             autoFocus
             maxLength={18}
+            rightAction={
+              <button
+                type="button"
+                onClick={() => setNickname(randomName())}
+                aria-label={t('home.nameModal.randomize')}
+                title={t('home.nameModal.randomize')}
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
+              >
+                <AppIcon icon={DiceFive} size={20} weight="duotone" />
+              </button>
+            }
           />
 
           <div className="flex items-center justify-between text-xs">
@@ -441,7 +558,7 @@ export default function HomePage() {
             variant="primary"
             size="lg"
             fullWidth
-            onClick={handleLaunchSnipe}
+            onClick={handleModalSubmit}
             disabled={loading || !nickname.trim()}
             loading={loading}
           >

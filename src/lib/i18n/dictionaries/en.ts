@@ -180,8 +180,9 @@ export const en = {
     envelopeWaitingOther: 'Your secret bid is safe. Waiting for rival manager...',
     bothEnvelopesIn: 'Both sealed envelopes are in — resolving round...',
     yourBidAmount: 'Your Secret Bid',
-    passBtn: 'Pass ($0M)',
-    lockBidBtn: 'Lock Secret Bid · ${amount}M',
+    passBtn: 'Offer $0M',
+    lockBidBtn: 'Lock Secret Offer · ${amount}M',
+    lockZeroBid: 'Lock $0M Offer',
     quickChips: {
       min: '$1M',
       quarter: '25%',

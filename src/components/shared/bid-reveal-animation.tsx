@@ -167,10 +167,10 @@ export function BidRevealAnimation({
             <>
               <div className="flex items-center justify-center gap-1.5 text-base font-black tracking-wider text-amber-300 uppercase sm:text-lg font-display">
                 <AppIcon icon={Question} size={20} weight="duotone" className="text-amber-300" />
-                Dual Pass
+                Both Offered $0M
               </div>
               <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs font-stats">
-                {bidLine(0, 0)} · Starter claims Main at $0M
+                {bidLine(0, 0)} · Round starter gets Main at $0M, other gets Sub at $0M
               </p>
             </>
           )}

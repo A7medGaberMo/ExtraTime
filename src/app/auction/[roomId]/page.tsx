@@ -16,7 +16,6 @@ import { unlockAudio, sfx } from '@/lib/sfx';
 import { getTierStyle } from '@/lib/tier-styles';
 import {
   CircleNotch,
-  X,
   Copy,
   Check,
   Crosshair,
@@ -30,6 +29,7 @@ import {
   Shield,
   Stack,
   CurrencyDollar,
+  Info,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
@@ -42,13 +42,11 @@ const BLIND_PHASE_SECONDS = 30;
 export default function AuctionPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const { guestId } = useGuestSession(true);
   const [codeCopied, setCodeCopied] = useState(false);
   const [showReveal, setShowReveal] = useState(false);
-  const [showFormation, setShowFormation] = useState(
-    () => typeof window === 'undefined' || window.innerWidth >= 768,
-  );
+  const [showFormation, setShowFormation] = useState(false);
   const prevRoundRef = useRef<number | null>(null);
   const pendingRedirectRef = useRef(false);
   const completedTriggeredRef = useRef(false);
@@ -81,7 +79,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const mutatePerk = useMutation(api.auctions.mutations.usePerk);
   const autoResolveFired = useRef(false);
 
-  const [bidAmount, setBidAmount] = useState<number>(1);
+  const [bidAmount, setBidAmount] = useState<number>(0);
   const [lockedAmount, setLockedAmount] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isActivatingPerk, setIsActivatingPerk] = useState(false);
@@ -94,13 +92,14 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     if (prev !== null && cur > prev) setShowReveal(true);
     // Reset per-round submit state when a fresh locked round starts.
     if (prev !== null && cur !== prev) {
-      setBidAmount(1);
+      const budget = state.me?.budget ?? 0;
+      setBidAmount(Math.min(1, budget));
       setLockedAmount(null);
       setError(null);
       autoResolveFired.current = false;
     }
     prevRoundRef.current = cur;
-  }, [state?.auction]);
+  }, [state?.auction, state?.me?.budget]);
 
   const handleActivatePerk = useCallback(async () => {
     if (!guestId || !roomId || isActivatingPerk || state?.me?.perkUsed) return;
@@ -198,17 +197,18 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     const half = Math.max(1, Math.round(myBudget * 0.5));
 
     const rawChips = [
+      { label: '$0M', value: 0 },
       { label: '$1M', value: 1 },
       { label: `$${quarter}M`, value: quarter },
       { label: `$${half}M`, value: half },
-      { label: t('auction.quickChips.allIn'), value: myBudget },
+      { label: `$${myBudget}M (MAX)`, value: myBudget },
     ];
 
     return rawChips.filter(
       (c, i, arr) =>
         c.value >= 0 && c.value <= myBudget && arr.findIndex((x) => x.value === c.value) === i,
     );
-  }, [myBudget, t]);
+  }, [myBudget]);
 
   /* ── Handlers ──────────────────────────────────────────────── */
   const handleLockBid = useCallback(async () => {
@@ -226,31 +226,12 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     }
   }, [isActive, guestId, myLocked, bidAmount, submitSealedBid, roomId]);
 
-  const handlePass = useCallback(async () => {
-    if (!isActive || !guestId || myLocked) return;
-    setIsSubmitting(true);
-    setError(null);
-    try {
-      await submitSealedBid({ roomId: roomId as Id<'rooms'>, userId: guestId, amount: 0 });
-      setLockedAmount(0);
-      sfx.cardDeal();
-    } catch (e: unknown) {
-      setError((e as { message?: string }).message || 'Could not pass');
-    } finally {
-      setIsSubmitting(false);
-    }
-  }, [isActive, guestId, myLocked, submitSealedBid, roomId]);
-
   const handleRevealClose = useCallback(() => {
     setShowReveal(false);
     if (pendingRedirectRef.current) {
       pendingRedirectRef.current = false;
       router.push(`/result/${roomId}`);
       return;
-    }
-    setShowFormation(true);
-    if (typeof window !== 'undefined' && window.innerWidth < 768) {
-      setTimeout(() => setShowFormation(false), 3800);
     }
   }, [router, roomId]);
 
@@ -298,77 +279,89 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   }
 
   const formationSquad = mySquad.map((slot) => ({
-    position: slot.position,
-    roundNumber: slot.roundNumber,
+    ...slot,
     player: slot.player
-      ? { name: slot.player.name, tier: slot.player.tier, imageUrl: slot.player.imageUrl }
+      ? {
+          id: slot.player._id,
+          name: slot.player.name,
+          tier: slot.player.tier as PlayerCardData['tier'],
+          position: slot.player.position,
+          club: slot.player.club,
+          nation: slot.player.nation,
+          imageUrl: slot.player.imageUrl,
+          isLegend: slot.player.isLegend,
+          kitNumber: slot.player.kitNumber,
+        }
       : null,
-    cost: slot.cost,
-    isSub: slot.isSub,
   }));
 
-  /* ── RENDER ─────────────────────────────────────────────────── */
   return (
-    <article className="animate-fade-in relative mx-auto flex max-w-2xl flex-col gap-3 sm:gap-4 px-1 pb-6 sm:px-0 select-none">
-      {/* ── CARD REVEAL OVERLAY ─────────────────────────────────────── */}
-      {state.lastCompletedRound && (
-        <BidRevealAnimation
-          isOpen={showReveal}
-          onClose={handleRevealClose}
-          lastCompletedRound={state.lastCompletedRound}
-        />
-      )}
+    <article className="mx-auto flex max-w-2xl flex-col gap-3 sm:gap-4 select-none pb-24 sm:pb-8">
+      {/* ── 0. BID REVEAL OVERLAY MODAL ─────────────────────────────── */}
+      <BidRevealAnimation
+        isOpen={showReveal}
+        onClose={handleRevealClose}
+        lastCompletedRound={state.lastCompletedRound}
+      />
 
-      {/* ── WAITING FOR OPPONENT OVERLAY ────────────────────────────── */}
-      {auction.status === 'pending' && (
-        <div className="animate-fade-in fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-slate-950/95 p-5 backdrop-blur-2xl">
-          <div className="bg-lime/10 pointer-events-none absolute top-1/2 left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[140px]" />
-          <div className="relative">
-            <div className="bg-lime/20 absolute inset-0 animate-pulse rounded-full blur-xl" />
-            <AppIcon icon={CircleNotch} size={48} weight="bold" className="text-lime relative animate-spin" />
+      {/* ── 0. WAITING LOBBY OVERLAY (WHEN WAITING FOR OPPONENT) ────── */}
+      {room.status === 'waiting' && !auction.guest && (
+        <Panel variant="highlight" className="p-6 text-center space-y-5 animate-scale-in">
+          <div className="flex h-14 w-14 mx-auto items-center justify-center rounded-2xl border border-lime/30 bg-lime/10 text-lime">
+            <AppIcon icon={Crosshair} size={32} weight="duotone" />
           </div>
-          <div className="max-w-xs space-y-2 text-center">
-            <h2 className="text-2xl font-black tracking-tight text-white uppercase font-display">
+
+          <div className="space-y-1.5">
+            <h2 className="text-2xl font-black text-white uppercase font-display">
               {t('auction.waitingOverlay.title')}
             </h2>
-            <p className="text-steel text-xs leading-relaxed font-medium">
+            <p className="text-steel text-xs font-medium max-w-md mx-auto">
               {t('auction.waitingOverlay.subtitle')}
             </p>
           </div>
-          <div className="border border-lime/30 bg-slate-900/90 flex w-full max-w-sm items-center justify-between gap-3 rounded-2xl px-5 py-4 shadow-[0_0_50px_rgba(149,232,16,0.15)] backdrop-blur-xl">
-            <div className="space-y-0.5">
-              <span className="text-steel text-[9px] font-black tracking-widest uppercase">
-                {t('lobby.roomCode')}
+
+          {/* Room Code Card */}
+          <div className="flex flex-col items-center gap-2 rounded-2xl border border-white/10 bg-slate-950/80 p-4">
+            <span className="text-steel text-[10px] font-black tracking-widest uppercase">
+              {t('joinRoom.roomCode')}
+            </span>
+            <div className="flex items-center gap-3">
+              <span className="font-stats text-lime text-3xl font-black tracking-[0.2em]">
+                {room.code}
               </span>
-              <p className="font-stats text-lime text-3xl tracking-[0.24em] font-black">{room.code}</p>
+              <button
+                type="button"
+                onClick={copyCode}
+                aria-label="Copy Room Code"
+                title="Copy Room Code"
+                className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:text-white hover:border-lime/40 transition-colors cursor-pointer"
+              >
+                <AppIcon icon={codeCopied ? Check : Copy} size={18} weight="bold" className={codeCopied ? 'text-lime' : ''} />
+              </button>
             </div>
-            <button
-              onClick={copyCode}
-              className="border border-white/10 hover:border-lime/50 text-steel hover:text-lime flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-950 shadow-md transition-all active:scale-95 cursor-pointer"
-            >
-              <AppIcon icon={codeCopied ? Check : Copy} size={20} weight="bold" className={codeCopied ? 'text-lime' : ''} />
-            </button>
           </div>
-          <button
-            onClick={async () => {
-              try {
-                await cancelRoom({ roomId: roomId as Id<'rooms'>, hostId: guestId! });
-                router.push('/');
-              } catch {}
-            }}
-            className="text-steel mt-2 text-xs font-black tracking-wider uppercase transition-colors hover:text-rose-400 cursor-pointer"
+
+          <div className="flex items-center justify-center gap-2 text-xs text-steel">
+            <AppIcon icon={CircleNotch} size={16} weight="bold" className="text-lime animate-spin" />
+            <span>{t('lobby.waitingOpponent')}</span>
+          </div>
+
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => cancelRoom({ roomId: room._id, hostId: guestId })}
           >
             {t('auction.waitingOverlay.cancelMatch')}
-          </button>
-        </div>
+          </Button>
+        </Panel>
       )}
 
-      {/* ── 1. HIGH-END SCOREBAR HEADER ─────────────────────────────── */}
-      <Panel variant="highlight" className="p-3 sm:p-4">
-        <div className="flex items-center justify-between gap-2 sm:gap-3">
-          {/* Manager budgets */}
-          <div className="flex min-w-0 flex-1 items-center gap-1.5 sm:gap-2.5">
-            <div className="border border-lime/40 bg-lime/10 flex min-w-0 flex-1 flex-col items-center justify-center rounded-xl px-2 sm:px-3 py-1.5 shadow-inner">
+      {/* ── 1. HUD & BUDGET COMPARISON BAR ───────────────────────────── */}
+      <Panel variant="subtle" className="p-3 sm:p-4">
+        <div className="flex items-center justify-between gap-2">
+          {/* Dual Budget Comparison */}
+          <div className="flex flex-1 items-center gap-2 sm:gap-3">
+            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-xl border border-lime/40 bg-lime/10 px-2 sm:px-3 py-1.5 shadow-inner">
               <span className="text-steel text-[8px] sm:text-[9px] leading-none font-black tracking-widest uppercase truncate max-w-full">
                 {t('auction.you')}
               </span>
@@ -393,7 +386,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             </div>
           </div>
 
-          {/* Autoritative Turn Timer */}
+          {/* Turn Timer */}
           <AuctionTimer
             timeLeft={timeLeft}
             maxTime={BLIND_PHASE_SECONDS}
@@ -420,12 +413,15 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       {/* ── 2. LIVE TACTICAL FORMATION DISPLAY ──────────────────────── */}
       <Panel variant="default" className="transition-all">
         <button
+          type="button"
           onClick={() => setShowFormation(!showFormation)}
           className="text-steel flex w-full items-center justify-between bg-gradient-to-r from-white/5 to-transparent px-4 py-3 text-xs font-black tracking-wider uppercase transition-colors hover:text-white cursor-pointer"
         >
           <span className="flex items-center gap-2">
-            <AppIcon icon={Stack} size={16} weight="duotone" className="text-lime animate-pulse" />
-            <span>{t('auction.squadFormation')} · {t('auction.signedCount', { count: mySquad.filter((s) => s.player).length, total: totalRounds })}</span>
+            <AppIcon icon={Stack} size={16} weight="duotone" className="text-lime" />
+            <span>
+              {t('auction.squadFormation')} · {t('auction.signedCount', { count: mySquad.filter((s) => s.player).length, total: totalRounds })}
+            </span>
           </span>
           <AppIcon icon={showFormation ? CaretUp : CaretDown} size={16} weight="bold" className="text-steel" />
         </button>
@@ -549,7 +545,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
               </span>
             </div>
 
-            {/* Perk Trigger Button */}
+            {/* Perk Trigger Button with Tooltip */}
             {me?.perk && !me.perkUsed && (
               <Button
                 variant="gold"
@@ -557,6 +553,11 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 onClick={handleActivatePerk}
                 disabled={isActivatingPerk || myLocked}
                 loading={isActivatingPerk}
+                title={
+                  me.perk === 'SCOUT'
+                    ? (lang === 'ar' ? 'بيرك السكاوت: اكشف نجم الجولة القادمة' : 'Scout Perk: Reveal next round star target')
+                    : (lang === 'ar' ? 'بيرك الجاسوس: اكشف البديل السري لهذه الجولة' : 'Spy Perk: Reveal current round secret backup sub')
+                }
                 leftIcon={<AppIcon icon={me.perk === 'SCOUT' ? Binoculars : Eye} size={16} weight="bold" />}
               >
                 {t('auction.usePerk', { perk: me.perk })}
@@ -594,13 +595,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           ) : (
             <div className="space-y-4">
               {/* Quick Chip Selector */}
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
                 {quickChips.map((chip) => (
                   <button
                     key={chip.value}
                     type="button"
                     onClick={() => setBidAmount(chip.value)}
-                    className={`rounded-xl border py-2.5 px-2 text-xs font-black uppercase tracking-wider transition-all active:scale-95 cursor-pointer font-stats ${
+                    className={`rounded-xl border py-2 px-1 text-[11px] sm:text-xs font-black uppercase tracking-wider transition-all active:scale-95 cursor-pointer font-stats ${
                       bidAmount === chip.value
                         ? 'border-lime bg-lime text-slate-950 shadow-lg shadow-lime/20'
                         : 'border-white/10 bg-slate-900/90 text-white hover:bg-slate-800'
@@ -623,33 +624,36 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 </div>
               </div>
 
+              {/* Informative Rule Explainer */}
+              <div className="rounded-xl border border-white/5 bg-slate-950/60 p-2.5 flex items-center gap-2 text-[10px] text-steel">
+                <AppIcon icon={Info} size={14} weight="duotone" className="text-lime shrink-0" />
+                <span>
+                  {lang === 'ar'
+                    ? 'العرض الأعلى يفوز بالنجم ويدفع عرضه، والطرف التاني بياخد البديل ويدفع عرضه المحجوز.'
+                    : 'Higher offer signs the star for their bid. Lower bidder receives the hidden backup for their offer.'}
+                </span>
+              </div>
+
               {error && (
                 <p className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-4 py-2 text-xs font-bold text-rose-400">
                   {error}
                 </p>
               )}
 
-              {/* Action Buttons: Pass & Lock Secret Bid */}
-              <div className="grid grid-cols-[1fr_1.8fr] gap-3 pt-1">
-                <Button
-                  variant="danger"
-                  size="lg"
-                  onClick={handlePass}
-                  disabled={isSubmitting}
-                  leftIcon={<AppIcon icon={X} size={18} weight="bold" />}
-                >
-                  {t('auction.passBtn')}
-                </Button>
-
+              {/* Single Primary Action Button: Lock Offer */}
+              <div className="pt-1">
                 <Button
                   variant="primary"
                   size="lg"
+                  fullWidth
                   onClick={handleLockBid}
                   disabled={isSubmitting || bidAmount < 0 || bidAmount > myBudget}
                   loading={isSubmitting}
                   leftIcon={<AppIcon icon={LockKey} size={18} weight="fill" />}
                 >
-                  {t('auction.lockBidBtn', { amount: bidAmount })}
+                  {bidAmount === 0
+                    ? t('auction.lockZeroBid')
+                    : t('auction.lockBidBtn', { amount: bidAmount })}
                 </Button>
               </div>
             </div>

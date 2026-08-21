@@ -182,8 +182,9 @@ export const ar: TranslationDictionary = {
     envelopeWaitingOther: 'عرضك السري في أمان. مستنيين الخصم يثبّت عرضه...',
     bothEnvelopesIn: 'عروض الاتنين وصلت — بنكشف النتيجة...',
     yourBidAmount: 'عرضك السري',
-    passBtn: 'عدّي ($0M)',
-    lockBidBtn: 'ثبّت العرض · ${amount}M',
+    passBtn: 'عرض $0M',
+    lockBidBtn: 'ثبّت العرض السري · ${amount}M',
+    lockZeroBid: 'ثبّت عرض $0M (بدون مزايدة)',
     quickChips: {
       min: '$1M',
       quarter: '25%',

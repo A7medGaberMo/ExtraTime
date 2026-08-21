@@ -30,7 +30,7 @@ import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
 export default function RankHubPage() {
   const router = useRouter();
   const { toast } = useToast();
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
 
   const createGuest = useMutation(api.guests.mutations.create);
   const createSolo = useMutation(api.rank.mutations.createSoloGame);
@@ -218,13 +218,21 @@ export default function RankHubPage() {
           <div className="space-y-4 pt-1 animate-fade-in">
             <div className="p-3.5 rounded-2xl bg-slate-950/80 border border-white/10 flex items-center justify-between">
               <div className="space-y-0.5">
-                <span className="text-[10px] text-steel font-black uppercase block">Radar</span>
-                <p className="text-xs text-white font-medium">Auto-pair with live manager</p>
+                <span className="text-[10px] text-steel font-black uppercase block">
+                  {lang === 'ar' ? 'رادار المطابقة السريعة' : 'Radar Matchmaking'}
+                </span>
+                <p className="text-xs text-white font-medium">
+                  {lang === 'ar'
+                    ? `مطابقة فورية مع منافس لايف اختار نفس المدة (${roundCount} جولات).`
+                    : `Auto-pairs with a live manager on the same match length (${roundCount} rounds).`}
+                </p>
               </div>
               <StatPill
                 variant="lime"
                 size="sm"
-                label={t('rank.inQueueStats', { count: queueStats?.waitingCount ?? 0 })}
+                label={t('rank.inQueueStats', {
+                  count: roundCount === 3 ? (queueStats?.waiting3 ?? 0) : (queueStats?.waiting5 ?? 0),
+                })}
               />
             </div>
 
@@ -237,7 +245,7 @@ export default function RankHubPage() {
               loading={loading}
               leftIcon={<AppIcon icon={Sword} size={20} weight="bold" />}
             >
-              {t('rank.findQuick')}
+              {lang === 'ar' ? `ابحث عن منافس لايف (${roundCount} جولات)` : `Find 1v1 Opponent (${roundCount} Rounds)`}
             </Button>
           </div>
         )}
@@ -271,6 +279,7 @@ export default function RankHubPage() {
                   value={joinCode}
                   onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
                   leftIcon={<AppIcon icon={Key} size={18} weight="duotone" />}
+                  aria-label={t('rank.joinCodePlaceholder')}
                 />
               </div>
               <Button

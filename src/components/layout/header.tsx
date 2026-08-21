@@ -85,7 +85,7 @@ export function Header() {
   ];
 
   return (
-    <header className="border-border/60 bg-slate-950/80 sticky top-0 z-50 w-full border-b backdrop-blur-2xl select-none">
+    <header className="border-border/60 bg-slate-950/80 sticky top-0 z-50 w-full border-b backdrop-blur-2xl select-none" dir="ltr">
       <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-3 sm:px-6">
         {/* Brand Logo - Fixed & Symmetric */}
         <Link

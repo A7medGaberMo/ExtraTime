@@ -105,10 +105,8 @@ async function resolveSealedRoundCore(
       cost: winningPrice,
     });
 
-    const guestCost = wasTieLottery ? guestBid : 0;
-    if (wasTieLottery) {
-      guest.budget -= guestCost;
-    }
+    const guestCost = guestBid;
+    guest.budget -= guestCost;
     guest.squad.push({
       roundNumber: auction.currentRound,
       position: round.position,
@@ -126,10 +124,8 @@ async function resolveSealedRoundCore(
       cost: winningPrice,
     });
 
-    const hostCost = wasTieLottery ? hostBid : 0;
-    if (wasTieLottery) {
-      host.budget -= hostCost;
-    }
+    const hostCost = hostBid;
+    host.budget -= hostCost;
     host.squad.push({
       roundNumber: auction.currentRound,
       position: round.position,

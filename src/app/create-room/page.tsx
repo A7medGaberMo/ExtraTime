@@ -246,12 +246,14 @@ function CreateRoomContent() {
               onChange={(e) => setNickname(e.target.value)}
               maxLength={20}
               placeholder="Manager name"
+              aria-label={t('createRoom.managerHandle')}
               rightAction={
                 <button
                   type="button"
                   onClick={() => setNickname(randomName())}
+                  aria-label={t('home.nameModal.randomize')}
+                  title={t('home.nameModal.randomize')}
                   className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
-                  title="Randomize"
                 >
                   <AppIcon icon={DiceFive} size={20} weight="duotone" />
                 </button>
@@ -303,31 +305,45 @@ function CreateRoomContent() {
             </div>
 
             {/* Visibility */}
-            <div className="grid grid-cols-2 gap-2 pt-1">
-              <button
-                type="button"
-                onClick={() => setIsPublic(false)}
-                className={`flex items-center justify-center gap-2 rounded-xl border py-2.5 text-xs font-black uppercase tracking-wider transition-all cursor-pointer min-h-[44px] ${
-                  !isPublic
-                    ? 'border-lime/60 bg-lime/10 text-lime shadow-inner'
-                    : 'text-steel border-white/10 bg-slate-950/80 hover:text-white'
-                }`}
-              >
-                <AppIcon icon={Lock} size={16} weight="duotone" />
-                <span>{t('createRoom.privateCode')}</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => setIsPublic(true)}
-                className={`flex items-center justify-center gap-2 rounded-xl border py-2.5 text-xs font-black uppercase tracking-wider transition-all cursor-pointer min-h-[44px] ${
-                  isPublic
-                    ? 'border-lime/60 bg-lime/10 text-lime shadow-inner'
-                    : 'text-steel border-white/10 bg-slate-950/80 hover:text-white'
-                }`}
-              >
-                <AppIcon icon={Globe} size={16} weight="duotone" />
-                <span>{t('createRoom.publicArena')}</span>
-              </button>
+            <div className="space-y-1.5">
+              <label className="text-steel text-[10px] font-black tracking-widest uppercase block px-1">
+                {t('createRoom.visibility')}
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setIsPublic(false)}
+                  className={`flex items-center justify-center gap-2 rounded-xl border py-2.5 text-xs font-black uppercase tracking-wider transition-all cursor-pointer min-h-[44px] ${
+                    !isPublic
+                      ? 'border-lime/60 bg-lime/10 text-lime shadow-inner'
+                      : 'text-steel border-white/10 bg-slate-950/80 hover:text-white'
+                  }`}
+                >
+                  <AppIcon icon={Lock} size={16} weight="duotone" />
+                  <span>{t('createRoom.privateCode')}</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setIsPublic(true)}
+                  className={`flex items-center justify-center gap-2 rounded-xl border py-2.5 text-xs font-black uppercase tracking-wider transition-all cursor-pointer min-h-[44px] ${
+                    isPublic
+                      ? 'border-lime/60 bg-lime/10 text-lime shadow-inner'
+                      : 'text-steel border-white/10 bg-slate-950/80 hover:text-white'
+                  }`}
+                >
+                  <AppIcon icon={Globe} size={16} weight="duotone" />
+                  <span>{t('createRoom.publicArena')}</span>
+                </button>
+              </div>
+              <p className="text-[10px] text-steel px-1">
+                {isPublic
+                  ? (lang === 'ar'
+                      ? 'ينشئ غرفة عامة تظهر للمدربين الباحثين عن نفس التشكيلة والميزانية.'
+                      : 'Creates a public match available to any manager searching this pool & format.')
+                  : (lang === 'ar'
+                      ? 'ينشئ كود غرفة خاص من 6 أحرف تشاركه مع صديقك فقط.'
+                      : 'Generates a private 6-character code to share directly with a friend.')}
+              </p>
             </div>
           </div>
         )}

@@ -139,12 +139,14 @@ export default function JoinRoomPage() {
                   onChange={(e) => setNickname(e.target.value)}
                   maxLength={20}
                   placeholder="Manager name"
+                  aria-label={t('joinRoom.managerHandle')}
                   rightAction={
                     <button
                       type="button"
                       onClick={() => setNickname(randomName())}
+                      aria-label={t('home.nameModal.randomize')}
+                      title={t('home.nameModal.randomize')}
                       className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
-                      title="Randomize"
                     >
                       <AppIcon icon={DiceFive} size={20} weight="duotone" />
                     </button>
