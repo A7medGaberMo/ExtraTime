@@ -84,6 +84,15 @@ export function Header() {
     { href: '/join-room', label: t('nav.join'), icon: SignIn },
   ];
 
+  const isGameplay =
+    pathname.startsWith('/auction/') ||
+    pathname.startsWith('/room/') ||
+    (pathname.startsWith('/rank/') && pathname !== '/rank');
+
+  if (isGameplay) {
+    return null;
+  }
+
   return (
     <header className="border-border/60 bg-slate-950/80 sticky top-0 z-50 w-full border-b backdrop-blur-2xl select-none" dir="ltr">
       <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-3 sm:px-6">

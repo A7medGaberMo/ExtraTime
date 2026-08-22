@@ -7,8 +7,7 @@ import {
   Anton,
   Bebas_Neue,
   Amiri,
-  Aref_Ruqaa,
-  Alexandria,
+  Felipa,
 } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
@@ -17,6 +16,7 @@ import { I18nProvider } from '@/lib/i18n';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { MobileNav } from '@/components/layout/mobile-nav';
+import { MainWrapper } from '@/components/layout/main-wrapper';
 
 const ibmPlexSans = IBM_Plex_Sans({
   weight: ['400', '500', '600', '700'],
@@ -60,16 +60,10 @@ const amiri = Amiri({
   variable: '--font-amiri',
 });
 
-const arefRuqaa = Aref_Ruqaa({
-  weight: ['400', '700'],
-  subsets: ['arabic', 'latin'],
-  variable: '--font-aref-ruqaa',
-});
-
-const alexandria = Alexandria({
-  weight: ['400', '600', '700', '800', '900'],
-  subsets: ['arabic', 'latin'],
-  variable: '--font-alexandria',
+const felipa = Felipa({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-felipa',
 });
 
 export const viewport: Viewport = {
@@ -204,15 +198,15 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${ibmPlexSans.variable} ${ibmPlexArabic.variable} ${notoKufiArabic.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${amiri.variable} ${arefRuqaa.variable} ${alexandria.variable} bg-background text-foreground selection:bg-lime selection:text-background flex min-h-screen flex-col justify-between overflow-x-hidden font-sans antialiased`}
+        className={`${ibmPlexSans.variable} ${ibmPlexArabic.variable} ${notoKufiArabic.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${amiri.variable} ${felipa.variable} bg-background text-foreground selection:bg-lime selection:text-background flex min-h-screen flex-col justify-between overflow-x-hidden font-sans antialiased`}
       >
         <ConvexClientProvider>
           <I18nProvider>
             <ToastProvider>
               <Header />
-              <main className="animate-fade-in mx-auto w-full max-w-7xl flex-1 px-3.5 py-6 pb-24 sm:px-6 md:py-8 md:pb-8">
+              <MainWrapper>
                 {children}
-              </main>
+              </MainWrapper>
               <Footer />
               <MobileNav />
             </ToastProvider>
