@@ -12,6 +12,16 @@ export function MobileNav() {
   const pathname = usePathname();
   const { t } = useI18n();
 
+  // Hide mobile nav during active gameplay to eliminate any overlap or vertical scrolling
+  const isGameplay =
+    pathname.startsWith('/auction/') ||
+    pathname.startsWith('/room/') ||
+    (pathname.startsWith('/rank/') && pathname !== '/rank');
+
+  if (isGameplay) {
+    return null;
+  }
+
   // Exactly 4 Navigation Tabs Matching Desktop Floating Nav
   const navItems = [
     { label: t('nav.arena'), href: '/', icon: GameController },

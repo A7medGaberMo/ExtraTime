@@ -4,14 +4,26 @@ import React from 'react';
 import Image from 'next/image';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
+import { usePathname } from 'next/navigation';
 import { Database } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { useI18n } from '@/lib/i18n';
 
 export function Footer() {
+  const pathname = usePathname();
   const { t } = useI18n();
   const dbStats = useQuery(api.players.queries.getStats);
   const playerCount = dbStats === undefined ? '...' : dbStats.totalPlayers.toLocaleString();
+
+  // Hide footer during active gameplay to maximize vertical real estate
+  const isGameplay =
+    pathname.startsWith('/auction/') ||
+    pathname.startsWith('/room/') ||
+    (pathname.startsWith('/rank/') && pathname !== '/rank');
+
+  if (isGameplay) {
+    return null;
+  }
 
   return (
     <footer className="border-border/40 w-full border-t bg-slate-950/40 py-4 pb-24 backdrop-blur-md lg:pb-6">
