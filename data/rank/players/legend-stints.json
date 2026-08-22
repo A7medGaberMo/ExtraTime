@@ -1,195 +1,195 @@
 [
   {
-    "slug": "lewandowski-league-goals-by-stint",
-    "scopeType": "PLAYER_STINTS",
+    "slug": "lewandowski-bundesliga-seasons-goals",
+    "scopeType": "PER_SEASON",
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["lewandowski", "stints", "goals", "bundesliga", "laliga"],
+    "tags": ["lewandowski", "bayern", "bundesliga", "seasons", "goals"],
     "title": {
-      "en": "Rank these 5 stints of Robert Lewandowski by league goals scored",
-      "ar": "رتّب فترات روبرت ليفاندوفسكي الخمسة حسب عدد أهدافه في الدوري"
+      "en": "Rank these 5 seasons of Robert Lewandowski by Bundesliga goals scored",
+      "ar": "رتّب مواسم روبرت ليفاندوفسكي الخمسة حسب عدد أهدافه في الدوري الألماني"
     },
     "subtitle": {
-      "en": "Domestic league goals scored for each club",
-      "ar": "أهداف الدوري المحلي المسجلة مع كل فريق"
+      "en": "Bundesliga goals with Bayern Munich",
+      "ar": "أهدافه في البوندسليغا بقميص بايرن ميونخ"
     },
     "metricLabel": { "en": "Goals", "ar": "أهداف" },
     "direction": "desc",
     "answers": [
       {
-        "answerKey": "lewa_bayern",
-        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
-        "subText": { "en": "Bayern Munich (2014–22)", "ar": "بايرن ميونخ (2014–22)" },
-        "media": { "type": "player", "fallbackText": "RL9" },
-        "value": 238,
-        "valueLabel": { "en": "238 Goals", "ar": "238 هدف" },
+        "answerKey": "lewa_2021",
+        "name": { "en": "Robert Lewandowski (2020–21)", "ar": "روبرت ليفاندوفسكي (2020–21)" },
+        "subText": { "en": "Bayern Munich (Record 41 goals)", "ar": "بايرن ميونخ (الرقم القياسي 41 هدفًا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "RL9" },
+        "value": 41,
+        "valueLabel": { "en": "41 Goals", "ar": "41 هدفًا" },
         "correctRank": 1
       },
       {
-        "answerKey": "lewa_dortmund",
-        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
-        "subText": { "en": "Borussia Dortmund (2010–14)", "ar": "بوروسيا دورتموند (2010–14)" },
-        "media": { "type": "player", "fallbackText": "RL9" },
-        "value": 74,
-        "valueLabel": { "en": "74 Goals", "ar": "74 هدف" },
+        "answerKey": "lewa_2122",
+        "name": { "en": "Robert Lewandowski (2021–22)", "ar": "روبرت ليفاندوفسكي (2021–22)" },
+        "subText": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "RL9" },
+        "value": 35,
+        "valueLabel": { "en": "35 Goals", "ar": "35 هدفًا" },
         "correctRank": 2
       },
       {
-        "answerKey": "lewa_barca",
-        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
-        "subText": { "en": "Barcelona (2022–present)", "ar": "برشلونة (2022–حتى الآن)" },
-        "media": { "type": "player", "fallbackText": "RL9" },
-        "value": 68,
-        "valueLabel": { "en": "68 Goals", "ar": "68 هدف" },
+        "answerKey": "lewa_1920",
+        "name": { "en": "Robert Lewandowski (2019–20)", "ar": "روبرت ليفاندوفسكي (2019–20)" },
+        "subText": { "en": "Bayern Munich (Treble Season)", "ar": "بايرن ميونخ (موسم الثلاثية)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "RL9" },
+        "value": 34,
+        "valueLabel": { "en": "34 Goals", "ar": "34 هدفًا" },
         "correctRank": 3
       },
       {
-        "answerKey": "lewa_lech",
-        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
-        "subText": { "en": "Lech Poznań (2008–10)", "ar": "ليخ بوزنان (2008–10)" },
-        "media": { "type": "player", "fallbackText": "RL9" },
-        "value": 32,
-        "valueLabel": { "en": "32 Goals", "ar": "32 هدف" },
+        "answerKey": "lewa_1516",
+        "name": { "en": "Robert Lewandowski (2015–16)", "ar": "روبرت ليفاندوفسكي (2015–16)" },
+        "subText": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "RL9" },
+        "value": 30,
+        "valueLabel": { "en": "30 Goals", "ar": "30 هدفًا" },
         "correctRank": 4
       },
       {
-        "answerKey": "lewa_pruszkow",
-        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
-        "subText": { "en": "Znicz Pruszków (2006–08)", "ar": "زنيتش بروشكوف (2006–08)" },
-        "media": { "type": "player", "fallbackText": "RL9" },
-        "value": 21,
-        "valueLabel": { "en": "21 Goals", "ar": "21 هدف" },
+        "answerKey": "lewa_1718",
+        "name": { "en": "Robert Lewandowski (2017–18)", "ar": "روبرت ليفاندوفسكي (2017–18)" },
+        "subText": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "RL9" },
+        "value": 29,
+        "valueLabel": { "en": "29 Goals", "ar": "29 هدفًا" },
         "correctRank": 5
       }
     ]
   },
   {
-    "slug": "ibrahimovic-league-goals-by-stint",
-    "scopeType": "PLAYER_STINTS",
-    "difficulty": "VERY_HARD",
+    "slug": "mbappe-ligue1-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["zlatan", "ibrahimovic", "stints", "goals"],
+    "tags": ["mbappe", "psg", "ligue-1", "seasons", "goals"],
     "title": {
-      "en": "Rank these 5 stints of Zlatan Ibrahimović by domestic league goals scored",
-      "ar": "رتّب فترات زلاتان إبراهيموفيتش الخمسة حسب أهدافه في الدوري المحلي"
+      "en": "Rank these 5 seasons of Kylian Mbappé by Ligue 1 goals scored",
+      "ar": "رتّب مواسم كيليان مبابي الخمسة حسب عدد أهدافه في الدوري الفرنسي"
     },
     "subtitle": {
-      "en": "League goals for each club",
-      "ar": "أهداف الدوري مع كل نادٍ"
+      "en": "Ligue 1 goals with Paris Saint-Germain",
+      "ar": "أهدافه في الدوري الفرنسي بقميص باريس سان جيرمان"
     },
     "metricLabel": { "en": "Goals", "ar": "أهداف" },
     "direction": "desc",
     "answers": [
       {
-        "answerKey": "ibra_psg",
-        "name": { "en": "Zlatan Ibrahimović", "ar": "زلاتان إبراهيموفيتش" },
-        "subText": { "en": "Paris Saint-Germain (2012–16)", "ar": "باريس سان جيرمان (2012–16)" },
-        "media": { "type": "player", "fallbackText": "PSG" },
-        "value": 113,
-        "valueLabel": { "en": "113 Goals", "ar": "113 هدف" },
+        "answerKey": "km_1819",
+        "name": { "en": "Kylian Mbappé (2018–19)", "ar": "كيليان مبابي (2018–19)" },
+        "subText": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "KM7" },
+        "value": 33,
+        "valueLabel": { "en": "33 Goals", "ar": "33 هدفًا" },
         "correctRank": 1
       },
       {
-        "answerKey": "ibra_milan_total",
-        "name": { "en": "Zlatan Ibrahimović", "ar": "زلاتان إبراهيموفيتش" },
-        "subText": { "en": "AC Milan (both stints combined)", "ar": "ميلان (الفترتان معًا)" },
-        "media": { "type": "player", "fallbackText": "ACM" },
-        "value": 76,
-        "valueLabel": { "en": "76 Goals", "ar": "76 هدف" },
+        "answerKey": "km_2223",
+        "name": { "en": "Kylian Mbappé (2022–23)", "ar": "كيليان مبابي (2022–23)" },
+        "subText": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "KM7" },
+        "value": 29,
+        "valueLabel": { "en": "29 Goals", "ar": "29 هدفًا" },
         "correctRank": 2
       },
       {
-        "answerKey": "ibra_inter",
-        "name": { "en": "Zlatan Ibrahimović", "ar": "زلاتان إبراهيموفيتش" },
-        "subText": { "en": "Inter Milan (2006–09)", "ar": "إنتر ميلان (2006–09)" },
-        "media": { "type": "player", "fallbackText": "INT" },
-        "value": 57,
-        "valueLabel": { "en": "57 Goals", "ar": "57 هدف" },
+        "answerKey": "km_2122",
+        "name": { "en": "Kylian Mbappé (2021–22)", "ar": "كيليان مبابي (2021–22)" },
+        "subText": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "KM7" },
+        "value": 28,
+        "valueLabel": { "en": "28 Goals", "ar": "28 هدفًا" },
         "correctRank": 3
       },
       {
-        "answerKey": "ibra_lagalaxy",
-        "name": { "en": "Zlatan Ibrahimović", "ar": "زلاتان إبراهيموفيتش" },
-        "subText": { "en": "LA Galaxy (2018–19)", "ar": "لوس أنجلوس جالاكسي (2018–19)" },
-        "media": { "type": "player", "fallbackText": "LAG" },
-        "value": 52,
-        "valueLabel": { "en": "52 Goals", "ar": "52 هدف" },
+        "answerKey": "km_2324",
+        "name": { "en": "Kylian Mbappé (2023–24)", "ar": "كيليان مبابي (2023–24)" },
+        "subText": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "KM7" },
+        "value": 27,
+        "valueLabel": { "en": "27 Goals", "ar": "27 هدفًا" },
         "correctRank": 4
       },
       {
-        "answerKey": "ibra_ajax",
-        "name": { "en": "Zlatan Ibrahimović", "ar": "زلاتان إبراهيموفيتش" },
-        "subText": { "en": "Ajax (2001–04)", "ar": "أياكس (2001–04)" },
-        "media": { "type": "player", "fallbackText": "AJX" },
-        "value": 35,
-        "valueLabel": { "en": "35 Goals", "ar": "35 هدف" },
+        "answerKey": "km_1920",
+        "name": { "en": "Kylian Mbappé (2019–20)", "ar": "كيليان مبابي (2019–20)" },
+        "subText": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "KM7" },
+        "value": 18,
+        "valueLabel": { "en": "18 Goals", "ar": "18 هدفًا" },
         "correctRank": 5
       }
     ]
   },
   {
-    "slug": "haaland-goals-by-stint",
-    "scopeType": "PLAYER_STINTS",
+    "slug": "haaland-all-comps-seasons-goals",
+    "scopeType": "PER_SEASON",
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["haaland", "stints", "goals", "mancity", "dortmund"],
+    "tags": ["haaland", "mancity", "dortmund", "seasons", "goals"],
     "title": {
-      "en": "Rank these 5 stints of Erling Haaland by all-competition goals scored",
-      "ar": "رتّب فترات إيرلينغ هالاند الخمسة حسب إجمالي أهدافه في جميع المسابقات"
+      "en": "Rank these 5 seasons of Erling Haaland by all-competition goals scored",
+      "ar": "رتّب مواسم إيرلينغ هالاند الخمسة حسب عدد أهدافه في جميع المسابقات"
     },
     "subtitle": {
-      "en": "Total official goals scored for each senior team",
-      "ar": "إجمالي الأهداف الرسمية المسجلة مع كل فريق أول"
+      "en": "Total club goals in all official senior competitions",
+      "ar": "إجمالي أهدافه مع الأندية في جميع المسابقات الرسمية"
     },
     "metricLabel": { "en": "Goals", "ar": "أهداف" },
     "direction": "desc",
     "answers": [
       {
-        "answerKey": "eh_mancity",
-        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
-        "subText": { "en": "Manchester City (2022–present)", "ar": "مانشستر سيتي (2022–حتى الآن)" },
-        "media": { "type": "player", "fallbackText": "EH9" },
-        "value": 118,
-        "valueLabel": { "en": "118 Goals", "ar": "118 هدف" },
+        "answerKey": "eh_2223",
+        "name": { "en": "Erling Haaland (2022–23)", "ar": "إيرلينغ هالاند (2022–23)" },
+        "subText": { "en": "Manchester City (Treble Season)", "ar": "مانشستر سيتي (موسم الثلاثية)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "EH9" },
+        "value": 52,
+        "valueLabel": { "en": "52 Goals", "ar": "52 هدفًا" },
         "correctRank": 1
       },
       {
-        "answerKey": "eh_dortmund",
-        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
-        "subText": { "en": "Borussia Dortmund (2020–22)", "ar": "بوروسيا دورتموند (2020–22)" },
+        "answerKey": "eh_1920",
+        "name": { "en": "Erling Haaland (2019–20)", "ar": "إيرلينغ هالاند (2019–20)" },
+        "subText": { "en": "RB Salzburg & Dortmund", "ar": "سالزبورغ وبوروسيا دورتموند" },
         "media": { "type": "player", "fallbackText": "EH9" },
-        "value": 86,
-        "valueLabel": { "en": "86 Goals", "ar": "86 هدف" },
+        "value": 44,
+        "valueLabel": { "en": "44 Goals", "ar": "44 هدفًا" },
         "correctRank": 2
       },
       {
-        "answerKey": "eh_norway",
-        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
-        "subText": { "en": "Norway National Team", "ar": "منتخب النرويج الأول" },
-        "media": { "type": "player", "fallbackText": "NOR" },
-        "value": 38,
-        "valueLabel": { "en": "38 Goals", "ar": "38 هدف" },
+        "answerKey": "eh_2021",
+        "name": { "en": "Erling Haaland (2020–21)", "ar": "إيرلينغ هالاند (2020–21)" },
+        "subText": { "en": "Borussia Dortmund", "ar": "بوروسيا دورتموند" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/dortmund.png", "fallbackText": "EH9" },
+        "value": 41,
+        "valueLabel": { "en": "41 Goals", "ar": "41 هدفًا" },
         "correctRank": 3
       },
       {
-        "answerKey": "eh_salzburg",
-        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
-        "subText": { "en": "Red Bull Salzburg (2019–20)", "ar": "ريد بول سالزبورغ (2019–20)" },
-        "media": { "type": "player", "fallbackText": "RBS" },
-        "value": 29,
-        "valueLabel": { "en": "29 Goals", "ar": "29 هدف" },
+        "answerKey": "eh_2324",
+        "name": { "en": "Erling Haaland (2023–24)", "ar": "إيرلينغ هالاند (2023–24)" },
+        "subText": { "en": "Manchester City", "ar": "مانشستر سيتي" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "EH9" },
+        "value": 38,
+        "valueLabel": { "en": "38 Goals", "ar": "38 هدفًا" },
         "correctRank": 4
       },
       {
-        "answerKey": "eh_molde",
-        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
-        "subText": { "en": "Molde FK (2017–18)", "ar": "مولده النرويجي (2017–18)" },
-        "media": { "type": "player", "fallbackText": "MOL" },
-        "value": 20,
-        "valueLabel": { "en": "20 Goals", "ar": "20 هدف" },
+        "answerKey": "eh_2122",
+        "name": { "en": "Erling Haaland (2021–22)", "ar": "إيرلينغ هالاند (2021–22)" },
+        "subText": { "en": "Borussia Dortmund", "ar": "بوروسيا دورتموند" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/dortmund.png", "fallbackText": "EH9" },
+        "value": 29,
+        "valueLabel": { "en": "29 Goals", "ar": "29 هدفًا" },
         "correctRank": 5
       }
     ]

@@ -214,11 +214,17 @@ export const findOrCreatePublicMatch = mutation({
       .withIndex('by_public_status', (q) => q.eq('isPublic', true).eq('status', 'waiting'))
       .collect();
 
-    // Find a compatible room
+    // Find a compatible room and clean up stale ones
     for (const room of openRooms) {
+      if (room.createdAt <= now - 3 * 60 * 1000) {
+        // Auto-expire stale waiting room after 3 minutes with no rival
+        await ctx.db.patch(room._id, { status: 'abandoned' });
+        continue;
+      }
+
       const isCompatible =
         room.hostId !== args.userId &&
-        room.createdAt > now - 10 * 60 * 1000 &&
+        room.createdAt > now - 3 * 60 * 1000 &&
         room.settings?.matchSize === matchSize &&
         (room.settings?.poolMode ?? 'GLOBAL') === poolMode;
 

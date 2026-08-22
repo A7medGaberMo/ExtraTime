@@ -1,0 +1,262 @@
+[
+  {
+    "slug": "pl-team-goals-single-season",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goals", "mancity", "chelsea", "liverpool", "records"],
+    "title": {
+      "en": "Rank these 5 team-seasons by total goals scored in a Premier League campaign",
+      "ar": "رتّب مواسم الفرق الخمسة حسب عدد الأهداف المسجلة في موسم واحد بالبريميرليج"
+    },
+    "subtitle": {
+      "en": "Total goals scored in a single 38-game Premier League season",
+      "ar": "إجمالي الأهداف المسجلة في موسم واحد بالدوري الإنجليزي (38 مباراة)"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ptg_mc_1718",
+        "name": { "en": "Manchester City (2017–18)", "ar": "مانشستر سيتي (2017–18)" },
+        "subText": { "en": "Centurions Season (All-Time Record)", "ar": "موسم المئوية (الرقم القياسي التاريخي)" },
+        "media": { "type": "club", "fallbackText": "MCFC" },
+        "value": 106,
+        "valueLabel": { "en": "106 Goals", "ar": "106 أهداف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ptg_che_0910",
+        "name": { "en": "Chelsea (2009–10)", "ar": "تشيلسي (2009–10)" },
+        "subText": { "en": "Carlo Ancelotti Champions", "ar": "بطل الدوري مع كارلو أنشيلوتي" },
+        "media": { "type": "club", "fallbackText": "CFC" },
+        "value": 103,
+        "valueLabel": { "en": "103 Goals", "ar": "103 أهداف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ptg_mc_1314",
+        "name": { "en": "Manchester City (2013–14)", "ar": "مانشستر سيتي (2013–14)" },
+        "subText": { "en": "Manuel Pellegrini Champions", "ar": "بطل الدوري مع مانويل بيليغريني" },
+        "media": { "type": "club", "fallbackText": "MCFC" },
+        "value": 102,
+        "valueLabel": { "en": "102 Goals", "ar": "102 هدف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ptg_liv_1314",
+        "name": { "en": "Liverpool (2013–14)", "ar": "ليفربول (2013–14)" },
+        "subText": { "en": "SAS Duo: Suárez & Sturridge", "ar": "ثنائية سواريز وستوريدج" },
+        "media": { "type": "club", "fallbackText": "LFC" },
+        "value": 101,
+        "valueLabel": { "en": "101 Goals", "ar": "101 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ptg_mc_2122",
+        "name": { "en": "Manchester City (2021–22)", "ar": "مانشستر سيتي (2021–22)" },
+        "subText": { "en": "Pep Guardiola Champions", "ar": "بطل الدوري مع بيب غوارديولا" },
+        "media": { "type": "club", "fallbackText": "MCFC" },
+        "value": 99,
+        "valueLabel": { "en": "99 Goals", "ar": "99 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "consecutive-league-titles-europe",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["titles", "records", "bayern", "juventus", "lyon", "mancity"],
+    "title": {
+      "en": "Rank these 5 clubs by most consecutive domestic league titles won",
+      "ar": "رتّب الأندية الخمسة حسب أطول سلسلة تتويج متتالي بلقب الدوري المحلي"
+    },
+    "subtitle": {
+      "en": "Longest title streaks in Europe's top 5 leagues",
+      "ar": "أطول سلاسل التتويج المتتالي في الدوريات الأوروبية الخمسة الكبرى"
+    },
+    "metricLabel": { "en": "Titles in a row", "ar": "ألقاب متتالية" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "clt_bayern",
+        "name": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "subText": { "en": "Bundesliga (2012–13 to 2022–23)", "ar": "الدوري الألماني (2012–13 إلى 2022–23)" },
+        "media": { "type": "club", "fallbackText": "BAY" },
+        "value": 11,
+        "valueLabel": { "en": "11 in a row", "ar": "11 لقبًا متتاليًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "clt_juve",
+        "name": { "en": "Juventus", "ar": "يوفنتوس" },
+        "subText": { "en": "Serie A (2011–12 to 2019–20)", "ar": "الدوري الإيطالي (2011–12 إلى 2019–20)" },
+        "media": { "type": "club", "fallbackText": "JUV" },
+        "value": 9,
+        "valueLabel": { "en": "9 in a row", "ar": "9 ألقاب متتالية" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "clt_lyon",
+        "name": { "en": "Olympique Lyonnais", "ar": "أولمبيك ليون" },
+        "subText": { "en": "Ligue 1 (2001–02 to 2007–08)", "ar": "الدوري الفرنسي (2001–02 إلى 2007–08)" },
+        "media": { "type": "club", "fallbackText": "OL" },
+        "value": 7,
+        "valueLabel": { "en": "7 in a row", "ar": "7 ألقاب متتالية" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "clt_realmadrid",
+        "name": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "subText": { "en": "La Liga (La Quinta del Buitre: 1986–90)", "ar": "الدوري الإسباني (خماسية البيتشي: 1986–90)" },
+        "media": { "type": "club", "fallbackText": "RMA" },
+        "value": 5,
+        "valueLabel": { "en": "5 in a row", "ar": "5 ألقاب متتالية" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "clt_mancity",
+        "name": { "en": "Manchester City", "ar": "مانشستر سيتي" },
+        "subText": { "en": "Premier League (English Record: 2021–24)", "ar": "الدوري الإنجليزي (الرقم القياسي: 2021–24)" },
+        "media": { "type": "club", "fallbackText": "MCFC" },
+        "value": 4,
+        "valueLabel": { "en": "4 in a row", "ar": "4 ألقاب متتالية" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-most-finals-reached",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "champions-league", "real-madrid", "bayern", "liverpool", "finals"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League finals reached",
+      "ar": "رتّب الأندية الخمسة حسب عدد مرات التأهل لنهائي دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "European Cup & UCL final appearances combined",
+      "ar": "المباريات النهائية في كأس أوروبا ودوري الأبطال معًا"
+    },
+    "metricLabel": { "en": "Finals", "ar": "نهائيات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucf_real",
+        "name": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "subText": { "en": "18 Finals (15 Titles)", "ar": "18 نهائيًا (15 لقبًا)" },
+        "media": { "type": "club", "fallbackText": "RMA" },
+        "value": 18,
+        "valueLabel": { "en": "18 Finals", "ar": "18 نهائيًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucf_bayern",
+        "name": { "en": "Bayern Munich", "ar": "بايرن ميونخ" },
+        "subText": { "en": "11 Finals (6 Titles)", "ar": "11 نهائيًا (6 ألقاب)" },
+        "media": { "type": "club", "fallbackText": "BAY" },
+        "value": 11,
+        "valueLabel": { "en": "11 Finals", "ar": "11 نهائيًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucf_liverpool",
+        "name": { "en": "Liverpool", "ar": "ليفربول" },
+        "subText": { "en": "10 Finals (6 Titles)", "ar": "10 نهائيات (6 ألقاب)" },
+        "media": { "type": "club", "fallbackText": "LIV" },
+        "value": 10,
+        "valueLabel": { "en": "10 Finals", "ar": "10 نهائيات" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucf_juventus",
+        "name": { "en": "Juventus", "ar": "يوفنتوس" },
+        "subText": { "en": "9 Finals (2 Titles)", "ar": "9 نهائيات (لقبان)" },
+        "media": { "type": "club", "fallbackText": "JUV" },
+        "value": 9,
+        "valueLabel": { "en": "9 Finals", "ar": "9 نهائيات" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucf_barca",
+        "name": { "en": "Barcelona", "ar": "برشلونة" },
+        "subText": { "en": "8 Finals (5 Titles)", "ar": "8 نهائيات (5 ألقاب)" },
+        "media": { "type": "club", "fallbackText": "FCB" },
+        "value": 8,
+        "valueLabel": { "en": "8 Finals", "ar": "8 نهائيات" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "pl-fewest-goals-conceded-seasons",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "defense", "chelsea", "arsenal", "records"],
+    "title": {
+      "en": "Rank these 5 team-seasons by fewest goals conceded in the Premier League (best defense first)",
+      "ar": "رتّب مواسم الفرق الخمسة حسب أقل عدد أهداف مستقبلة في البريميرليج (الدفاع الأفضل أولاً)"
+    },
+    "subtitle": {
+      "en": "Fewest goals conceded across a full 38-game season",
+      "ar": "أقل عدد أهداف دخلت شباك الفريق طوال 38 مباراة"
+    },
+    "metricLabel": { "en": "Goals Conceded", "ar": "أهداف مستقبلة" },
+    "direction": "asc",
+    "answers": [
+      {
+        "answerKey": "fgc_che_0405",
+        "name": { "en": "Chelsea (2004–05)", "ar": "تشيلسي (2004–05)" },
+        "subText": { "en": "José Mourinho (All-Time Record)", "ar": "جوزيه مورينيو (الرقم القياسي التاريخي)" },
+        "media": { "type": "club", "fallbackText": "CFC" },
+        "value": 15,
+        "valueLabel": { "en": "15 Goals Conceded", "ar": "استقبل 15 هدفًا فقط" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fgc_ars_9899",
+        "name": { "en": "Arsenal (1998–99)", "ar": "أرسنال (1998–99)" },
+        "subText": { "en": "Arsène Wenger Defense (Seaman, Adams)", "ar": "دفاع فينغر (سيمان وآدامز)" },
+        "media": { "type": "club", "fallbackText": "AFC" },
+        "value": 17,
+        "valueLabel": { "en": "17 Goals Conceded", "ar": "استقبل 17 هدفًا فقط" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fgc_liv_1819",
+        "name": { "en": "Liverpool (2018–19)", "ar": "ليفربول (2018–19)" },
+        "subText": { "en": "Jürgen Klopp (Van Dijk & Alisson)", "ar": "يورغن كلوب (فان دايك وأليسون)" },
+        "media": { "type": "club", "fallbackText": "LFC" },
+        "value": 22,
+        "valueLabel": { "en": "22 Goals Conceded", "ar": "استقبل 22 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fgc_mc_1819",
+        "name": { "en": "Manchester City (2018–19)", "ar": "مانشستر سيتي (2018–19)" },
+        "subText": { "en": "Pep Guardiola (Domestic Treble)", "ar": "بيب غوارديولا (الثلاثية المحلية)" },
+        "media": { "type": "club", "fallbackText": "MCFC" },
+        "value": 23,
+        "valueLabel": { "en": "23 Goals Conceded", "ar": "استقبل 23 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fgc_mc_2021",
+        "name": { "en": "Manchester City (2020–21)", "ar": "مانشستر سيتي (2020–21)" },
+        "subText": { "en": "Pep Guardiola (Rúben Dias Era)", "ar": "بيب غوارديولا (حقبة روبن دياز)" },
+        "media": { "type": "club", "fallbackText": "MCFC" },
+        "value": 32,
+        "valueLabel": { "en": "32 Goals Conceded", "ar": "استقبل 32 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

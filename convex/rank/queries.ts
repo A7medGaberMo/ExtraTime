@@ -163,6 +163,7 @@ export const getGameState = query({
 export const getPublicQueueSummary = query({
   args: {},
   handler: async (ctx) => {
+    const now = Date.now();
     const waitingRooms = await ctx.db
       .query("rankGames")
       .withIndex("by_public_status", (q) =>
@@ -170,10 +171,12 @@ export const getPublicQueueSummary = query({
       )
       .collect();
 
+    const freshRooms = waitingRooms.filter((r) => r.createdAt > now - 3 * 60 * 1000);
+
     return {
-      waitingCount: waitingRooms.length,
-      waiting3: waitingRooms.filter((r) => r.roundCount === 3).length,
-      waiting5: waitingRooms.filter((r) => r.roundCount === 5).length,
+      waitingCount: freshRooms.length,
+      waiting3: freshRooms.filter((r) => r.roundCount === 3).length,
+      waiting5: freshRooms.filter((r) => r.roundCount === 5).length,
     };
   },
 });

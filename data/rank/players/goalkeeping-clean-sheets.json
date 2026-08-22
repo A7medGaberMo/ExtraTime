@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "premier-league-all-time-clean-sheets",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goalkeepers", "clean-sheets", "cech"],
+    "title": {
+      "en": "Rank these 5 goalkeepers by all-time Premier League clean sheets",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة في تاريخ البريميرليج"
+    },
+    "subtitle": {
+      "en": "Clean sheets recorded in Premier League matches",
+      "ar": "المباريات بشباك نظيفة في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "metricLabel": { "en": "Clean Sheets", "ar": "شباك نظيفة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cs_cech",
+        "name": { "en": "Petr Čech", "ar": "بيتر تشيك" },
+        "subText": { "en": "Chelsea & Arsenal", "ar": "تشيلسي وأرسنال" },
+        "media": { "type": "player", "fallbackText": "CECH" },
+        "value": 202,
+        "valueLabel": { "en": "202 Clean Sheets", "ar": "202 مباراة بشباك نظيفة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cs_james",
+        "name": { "en": "David James", "ar": "ديفيد جيمس" },
+        "subText": { "en": "Liverpool, Villa & Portsmouth", "ar": "ليفربول وفيلا وبورتسموث" },
+        "media": { "type": "player", "fallbackText": "JAM" },
+        "value": 169,
+        "valueLabel": { "en": "169 Clean Sheets", "ar": "169 مباراة بشباك نظيفة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cs_schwarzer",
+        "name": { "en": "Mark Schwarzer", "ar": "مارك شفارزر" },
+        "subText": { "en": "Middlesbrough & Fulham", "ar": "ميدلزبره وفولهام" },
+        "media": { "type": "player", "fallbackText": "SCH" },
+        "value": 151,
+        "valueLabel": { "en": "151 Clean Sheets", "ar": "151 مباراة بشباك نظيفة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cs_seaman",
+        "name": { "en": "David Seaman", "ar": "ديفيد سيمان" },
+        "subText": { "en": "Arsenal & Man City", "ar": "أرسنال ومانشستر سيتي" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "SEA" },
+        "value": 141,
+        "valueLabel": { "en": "141 Clean Sheets", "ar": "141 مباراة بشباك نظيفة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cs_martyn",
+        "name": { "en": "Nigel Martyn", "ar": "نايجل مارتن" },
+        "subText": { "en": "Crystal Palace, Leeds & Everton", "ar": "كريستال بالاس وليدز وإيفرتون" },
+        "media": { "type": "player", "fallbackText": "MAR" },
+        "value": 137,
+        "valueLabel": { "en": "137 Clean Sheets", "ar": "137 مباراة بشباك نظيفة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-clean-sheets-goalkeepers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "goalkeepers", "clean-sheets", "neuer", "casillas", "buffon"],
+    "title": {
+      "en": "Rank these 5 goalkeepers by UEFA Champions League clean sheets",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Clean sheets in UCL group stage through final",
+      "ar": "المباريات بشباك نظيفة من دور المجموعات حتى النهائي"
+    },
+    "metricLabel": { "en": "Clean Sheets", "ar": "شباك نظيفة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_cs_neuer",
+        "name": { "en": "Manuel Neuer", "ar": "مانويل نوير" },
+        "subText": { "en": "Schalke 04 & Bayern Munich", "ar": "شالكه وبايرن ميونخ" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "MN1" },
+        "value": 58,
+        "valueLabel": { "en": "58 Clean Sheets", "ar": "58 مباراة بشباك نظيفة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_cs_casillas",
+        "name": { "en": "Iker Casillas", "ar": "إيكر كاسياس" },
+        "subText": { "en": "Real Madrid & FC Porto", "ar": "ريال مدريد وبورتو" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "IK1" },
+        "value": 57,
+        "valueLabel": { "en": "57 Clean Sheets", "ar": "57 مباراة بشباك نظيفة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_cs_buffon",
+        "name": { "en": "Gianluigi Buffon", "ar": "جانلويجي بوفون" },
+        "subText": { "en": "Parma, Juventus & PSG", "ar": "بارما ويوفنتوس وباريس" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/juventus.png", "fallbackText": "GIGI" },
+        "value": 52,
+        "valueLabel": { "en": "52 Clean Sheets", "ar": "52 مباراة بشباك نظيفة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_cs_vds",
+        "name": { "en": "Edwin van der Sar", "ar": "إدوين فان دير سار" },
+        "subText": { "en": "Ajax, Juventus & Man United", "ar": "أياكس ويوفنتوس ومانشستر يونايتد" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "VDS" },
+        "value": 50,
+        "valueLabel": { "en": "50 Clean Sheets", "ar": "50 مباراة بشباك نظيفة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_cs_cech",
+        "name": { "en": "Petr Čech", "ar": "بيتر تشيك" },
+        "subText": { "en": "Sparta Prague, Chelsea & Arsenal", "ar": "سبارتا براغ وتشيلسي وأرسنال" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "CECH" },
+        "value": 49,
+        "valueLabel": { "en": "49 Clean Sheets", "ar": "49 مباراة بشباك نظيفة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "international-mens-all-time-clean-sheets",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "goalkeepers", "clean-sheets", "spain", "italy"],
+    "title": {
+      "en": "Rank these 5 legendary goalkeepers by international clean sheets",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة الدولية مع منتخباتهم"
+    },
+    "subtitle": {
+      "en": "Official senior men's international clean sheets",
+      "ar": "المباريات بشباك نظيفة في المباريات الدولية للمنتخبات الأولى"
+    },
+    "metricLabel": { "en": "Clean Sheets", "ar": "شباك نظيفة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "intl_cs_casillas",
+        "name": { "en": "Iker Casillas", "ar": "إيكر كاسياس" },
+        "subText": { "en": "Spain (167 caps)", "ar": "إسبانيا (167 مباراة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/spain.png", "fallbackText": "ESP" },
+        "value": 102,
+        "valueLabel": { "en": "102 Clean Sheets", "ar": "102 مباراة بشباك نظيفة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "intl_cs_buffon",
+        "name": { "en": "Gianluigi Buffon", "ar": "جانلويجي بوفون" },
+        "subText": { "en": "Italy (176 caps)", "ar": "إيطاليا (176 مباراة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/italy.png", "fallbackText": "ITA" },
+        "value": 77,
+        "valueLabel": { "en": "77 Clean Sheets", "ar": "77 مباراة بشباك نظيفة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "intl_cs_vds",
+        "name": { "en": "Edwin van der Sar", "ar": "إدوين فان دير سار" },
+        "subText": { "en": "Netherlands (130 caps)", "ar": "هولندا (130 مباراة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/netherlands.png", "fallbackText": "NED" },
+        "value": 72,
+        "valueLabel": { "en": "72 Clean Sheets", "ar": "72 مباراة بشباك نظيفة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "intl_cs_lloris",
+        "name": { "en": "Hugo Lloris", "ar": "هوغو لوريس" },
+        "subText": { "en": "France (145 caps)", "ar": "فرنسا (145 مباراة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/france.png", "fallbackText": "FRA" },
+        "value": 63,
+        "valueLabel": { "en": "63 Clean Sheets", "ar": "63 مباراة بشباك نظيفة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "intl_cs_zoff",
+        "name": { "en": "Dino Zoff", "ar": "دينو زوف" },
+        "subText": { "en": "Italy (112 caps)", "ar": "إيطاليا (112 مباراة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/italy.png", "fallbackText": "ITA" },
+        "value": 62,
+        "valueLabel": { "en": "62 Clean Sheets", "ar": "62 مباراة بشباك نظيفة" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

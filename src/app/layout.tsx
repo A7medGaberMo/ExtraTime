@@ -64,23 +64,17 @@ const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://extratime.app';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'ExtraTime | Live Multiplayer Football Snipe & Rank Arena',
-    template: '%s | ExtraTime Football Strategy',
+    default: 'ExtraTime | Tactical Football Arena',
+    template: '%s | ExtraTime',
   },
   description:
-    'Draft legendary football icons in real-time Snipe auctions and compete in official Rank trivia duels. Build winning 11v11 and 5v5 futsal squads with tactical Scout & Spy perks.',
+    'Tactical football strategy: snipe star players with secret bids and order legends by official records.',
   keywords: [
-    'Snipe Football Game',
-    'ExtraTime Draft Engine',
-    'Multiplayer Football Auction',
+    'ExtraTime Football',
+    'Snipe Auction',
     'Rank Football Trivia',
-    'Tactical Football Squad Builder',
+    'Tactical Squad Builder',
     'Football Player Cards',
-    'Futsal 5v5 Tactical Match',
-    'UCL Trivia Ranking',
-    'Ballon dOr Stats Game',
-    'Football Strategy Game',
-    'Live Secret Bid Auction',
   ],
   authors: [{ name: 'ExtraTime Media' }],
   creator: 'ExtraTime',
@@ -113,23 +107,23 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    title: 'ExtraTime | Live Multiplayer Football Snipe & Rank Arena',
+    title: 'ExtraTime | Tactical Football Arena',
     description:
-      'Snipe legendary icons in real-time auctions with live turn timers, tactical perks, and 11v11 / 5v5 pitch formations.',
+      'Snipe star players with secret bids and order legends by official records.',
     siteName: 'ExtraTime',
     images: [
       {
         url: '/ExtraTimeLogo.png',
         width: 1200,
         height: 630,
-        alt: 'ExtraTime Live Multiplayer Football Snipe & Rank Arena',
+        alt: 'ExtraTime Tactical Football Arena',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ExtraTime | Live Football Snipe Game',
-    description: 'Real-time secret bid auctions, tactical pitch management, and dynamic perks.',
+    title: 'ExtraTime | Tactical Football Arena',
+    description: 'Snipe star players with secret bids and order legends by official records.',
     images: ['/ExtraTimeLogo.png'],
   },
 };
@@ -169,6 +163,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" dir="ltr" className="dark overflow-x-hidden">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Felipa&family=Story+Script&display=swap"
+          rel="stylesheet"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

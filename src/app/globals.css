@@ -15,6 +15,9 @@
   --font-rajdhani: var(--font-rajdhani), sans-serif;
   --font-anton: var(--font-anton), sans-serif;
   --font-bebas: var(--font-bebas), sans-serif;
+  --font-story-script: 'Story Script', cursive;
+  --font-felipa: 'Felipa', cursive;
+  --font-amiri: 'Amiri', serif;
 
   /* Premium Core Color Mappings */
   --color-background: #03060b; /* Stadium Pitch Black */
@@ -248,6 +251,28 @@ h6 {
 }
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
+}
+
+/* Script & Luxury Typography Utilities */
+.story-script-regular,
+.font-story-script {
+  font-family: 'Story Script', cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-felipa {
+  font-family: 'Felipa', cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-signature {
+  font-family: 'Story Script', 'Felipa', cursive, sans-serif;
 }
 
 /* Reduced motion preference */

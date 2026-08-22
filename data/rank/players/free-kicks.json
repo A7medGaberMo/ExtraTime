@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "all-time-direct-free-kicks-legends",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["free-kicks", "goals", "messi", "ronaldo", "beckham", "juninho"],
+    "title": {
+      "en": "Rank these 5 legends by career direct free-kick goals scored",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم من الركلات الحرة المباشرة في مسيرتهم"
+    },
+    "subtitle": {
+      "en": "Official senior career goals directly from free-kicks",
+      "ar": "الأهداف الرسمية المباشرة من الضربات الحرة طوال المسيرة الاحترافية"
+    },
+    "metricLabel": { "en": "Free Kicks", "ar": "ركلات حرة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fk_juninho",
+        "name": { "en": "Juninho Pernambucano", "ar": "جونينيو برنامبوكانو" },
+        "subText": { "en": "Lyon & Brazil Legend", "ar": "أسطورة ليون والبرازيل" },
+        "media": { "type": "player", "fallbackText": "JUN" },
+        "value": 77,
+        "valueLabel": { "en": "77 Free Kicks", "ar": "77 ركلة حرة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fk_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Barcelona, PSG & Inter Miami", "ar": "برشلونة وباريس وإنتر ميامي" },
+        "media": { "type": "player", "fallbackText": "LM10" },
+        "value": 67,
+        "valueLabel": { "en": "67 Free Kicks", "ar": "67 ركلة حرة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fk_ronaldinho",
+        "name": { "en": "Ronaldinho Gaúcho", "ar": "رونالدينيو غاوشو" },
+        "subText": { "en": "Barcelona, Milan & Brazil", "ar": "برشلونة وميلان والبرازيل" },
+        "media": { "type": "player", "fallbackText": "R10" },
+        "value": 66,
+        "valueLabel": { "en": "66 Free Kicks", "ar": "66 ركلة حرة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fk_beckham",
+        "name": { "en": "David Beckham", "ar": "ديفيد بيكهام" },
+        "subText": { "en": "Man United, Real Madrid & England", "ar": "مانشستر يونايتد وريال مدريد وإنجلترا" },
+        "media": { "type": "player", "fallbackText": "DB7" },
+        "value": 65,
+        "valueLabel": { "en": "65 Free Kicks", "ar": "65 ركلة حرة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fk_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Man Utd, Real Madrid & Al Nassr", "ar": "مانشستر يونايتد وريال مدريد والنصر" },
+        "media": { "type": "player", "fallbackText": "CR7" },
+        "value": 64,
+        "valueLabel": { "en": "64 Free Kicks", "ar": "64 ركلة حرة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "la-liga-all-time-free-kick-scorers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["la-liga", "free-kicks", "spain", "messi", "ronaldo"],
+    "title": {
+      "en": "Rank these 5 players by direct free-kick goals scored in La Liga",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد أهدافهم من الركلات الحرة في الدوري الإسباني"
+    },
+    "subtitle": {
+      "en": "All-time direct free-kick goals in Spanish La Liga",
+      "ar": "أهداف الركلات الحرة المباشرة عبر تاريخ الليغا الإسبانية"
+    },
+    "metricLabel": { "en": "Free Kicks", "ar": "ركلات حرة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fkl_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "FC Barcelona", "ar": "برشلونة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LM10" },
+        "value": 39,
+        "valueLabel": { "en": "39 Goals", "ar": "39 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fkl_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "CR7" },
+        "value": 20,
+        "valueLabel": { "en": "20 Goals", "ar": "20 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fkl_rcarlos",
+        "name": { "en": "Roberto Carlos", "ar": "روبرتو كارلوس" },
+        "subText": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "RC3" },
+        "value": 16,
+        "valueLabel": { "en": "16 Goals", "ar": "16 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fkl_ronaldinho",
+        "name": { "en": "Ronaldinho Gaúcho", "ar": "رونالدينيو غاوشو" },
+        "subText": { "en": "FC Barcelona", "ar": "برشلونة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "R10" },
+        "value": 15,
+        "valueLabel": { "en": "15 Goals", "ar": "15 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fkl_rivaldo",
+        "name": { "en": "Rivaldo", "ar": "ريفالدو" },
+        "subText": { "en": "Deportivo & Barcelona", "ar": "ديبورتيفو وبرشلونة" },
+        "media": { "type": "player", "fallbackText": "RIV" },
+        "value": 11,
+        "valueLabel": { "en": "11 Goals", "ar": "11 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

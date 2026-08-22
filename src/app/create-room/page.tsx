@@ -49,7 +49,7 @@ function CreateRoomContent() {
   const [selectedGame, setSelectedGame] = useState<GameMode>(initialMode);
 
   // Mutations
-  const createGuest = useMutation(api.guests.mutations.create);
+  const ensureGuest = useMutation(api.guests.mutations.ensure);
   const createSnipeRoom = useMutation(api.rooms.mutations.create);
   const createRankDuel = useMutation(api.rank.mutations.createDuelPrivateRoom);
   const createRankSolo = useMutation(api.rank.mutations.createSoloGame);
@@ -77,11 +77,13 @@ function CreateRoomContent() {
 
   async function ensureGuestId(): Promise<Id<'guestUsers'>> {
     const name = nickname.trim() || randomName();
-    let guestId = localStorage.getItem('extratime_guestId');
-    if (!guestId) {
-      guestId = await createGuest({ nickname: name, avatarSeed: name });
-      localStorage.setItem('extratime_guestId', guestId);
-    }
+    const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
+    const guestId = await ensureGuest({
+      existingId: existingId ?? undefined,
+      nickname: name,
+      avatarSeed: name,
+    });
+    localStorage.setItem('extratime_guestId', guestId);
     localStorage.setItem('extratime_guestName', name);
     return guestId as Id<'guestUsers'>;
   }

@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "afcon-titles-by-nation",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afcon", "africa", "national-teams", "egypt", "titles"],
+    "title": {
+      "en": "Rank these 5 national teams by Africa Cup of Nations (AFCON) titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد مرات الفوز بكأس الأمم الإفريقية"
+    },
+    "subtitle": {
+      "en": "All-time Total AFCON championship titles",
+      "ar": "إجمالي ألقاب كأس الأمم الإفريقية عبر التاريخ"
+    },
+    "metricLabel": { "en": "Titles", "ar": "ألقاب" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afcon_egypt",
+        "name": { "en": "Egypt", "ar": "مصر" },
+        "subText": { "en": "The Pharaohs (Record Holders)", "ar": "الفراعنة (الرقم القياسي)" },
+        "media": { "type": "nation", "fallbackText": "EGY" },
+        "value": 7,
+        "valueLabel": { "en": "7 Titles", "ar": "7 ألقاب" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afcon_cameroon",
+        "name": { "en": "Cameroon", "ar": "الكاميرون" },
+        "subText": { "en": "The Indomitable Lions", "ar": "الأسود غير المروضة" },
+        "media": { "type": "nation", "fallbackText": "CMR" },
+        "value": 5,
+        "valueLabel": { "en": "5 Titles", "ar": "5 ألقاب" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afcon_ghana",
+        "name": { "en": "Ghana", "ar": "غانا" },
+        "subText": { "en": "The Black Stars", "ar": "النجوم السوداء" },
+        "media": { "type": "nation", "fallbackText": "GHA" },
+        "value": 4,
+        "valueLabel": { "en": "4 Titles", "ar": "4 ألقاب" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afcon_nigeria",
+        "name": { "en": "Nigeria", "ar": "نيجيريا" },
+        "subText": { "en": "The Super Eagles", "ar": "النسور الممتازة" },
+        "media": { "type": "nation", "fallbackText": "NGA" },
+        "value": 3,
+        "valueLabel": { "en": "3 Titles", "ar": "3 ألقاب" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afcon_algeria",
+        "name": { "en": "Algeria", "ar": "الجزائر" },
+        "subText": { "en": "The Desert Warriors", "ar": "محاربو الصحراء" },
+        "media": { "type": "nation", "fallbackText": "ALG" },
+        "value": 2,
+        "valueLabel": { "en": "2 Titles", "ar": "لقبان" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "euro-all-time-top-scorers-individual",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["euro", "uefa", "goals", "ronaldo", "platini", "griezmann"],
+    "title": {
+      "en": "Rank these 5 players by UEFA EURO tournament goals scored",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد أهدافهم في نهائيات بطولة أمم أوروبا"
+    },
+    "subtitle": {
+      "en": "EURO tournament final tournament goals only",
+      "ar": "الأهداف المسجلة في نهائيات اليورو فقط"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "eur_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Portugal (6 Tournaments)", "ar": "البرتغال (6 بطولات)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/portugal.png", "fallbackText": "CR7" },
+        "value": 14,
+        "valueLabel": { "en": "14 Goals", "ar": "14 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eur_platini",
+        "name": { "en": "Michel Platini", "ar": "ميشيل بلاتيني" },
+        "subText": { "en": "France (All 9 in EURO 1984)", "ar": "فرنسا (جميعها في يورو 1984)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/france.png", "fallbackText": "PLA" },
+        "value": 9,
+        "valueLabel": { "en": "9 Goals", "ar": "9 أهداف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eur_griezmann",
+        "name": { "en": "Antoine Griezmann", "ar": "أنطوان غريزمان" },
+        "subText": { "en": "France", "ar": "فرنسا" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/france.png", "fallbackText": "GRI" },
+        "value": 7,
+        "valueLabel": { "en": "7 Goals", "ar": "7 أهداف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eur_lukaku",
+        "name": { "en": "Romelu Lukaku", "ar": "روميلو لوكاكو" },
+        "subText": { "en": "Belgium", "ar": "بلجيكا" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/belgium.png", "fallbackText": "LUK" },
+        "value": 6,
+        "valueLabel": { "en": "6 Goals", "ar": "6 أهداف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eur_lewa",
+        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
+        "subText": { "en": "Poland", "ar": "بولندا" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/poland.png", "fallbackText": "RL9" },
+        "value": 5,
+        "valueLabel": { "en": "5 Goals", "ar": "5 أهداف" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-titles-by-nation",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-america", "conmebol", "national-teams", "argentina", "brazil"],
+    "title": {
+      "en": "Rank these 5 national teams by CONMEBOL Copa América titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد مرات الفوز بكوبا أمريكا"
+    },
+    "subtitle": {
+      "en": "All-time Copa América titles (1916 through 2024)",
+      "ar": "ألقاب كوبا أمريكا من 1916 وحتى بطولة 2024"
+    },
+    "metricLabel": { "en": "Titles", "ar": "ألقاب" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "copa_argentina",
+        "name": { "en": "Argentina", "ar": "الأرجنتين" },
+        "subText": { "en": "16 Titles (Record Champions)", "ar": "16 لقبًا (البطل التاريخي)" },
+        "media": { "type": "nation", "fallbackText": "ARG" },
+        "value": 16,
+        "valueLabel": { "en": "16 Titles", "ar": "16 لقبًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "copa_uruguay",
+        "name": { "en": "Uruguay", "ar": "أوروجواي" },
+        "subText": { "en": "15 Titles", "ar": "15 لقبًا" },
+        "media": { "type": "nation", "fallbackText": "URU" },
+        "value": 15,
+        "valueLabel": { "en": "15 Titles", "ar": "15 لقبًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "copa_brazil",
+        "name": { "en": "Brazil", "ar": "البرازيل" },
+        "subText": { "en": "9 Titles", "ar": "9 ألقاب" },
+        "media": { "type": "nation", "fallbackText": "BRA" },
+        "value": 9,
+        "valueLabel": { "en": "9 Titles", "ar": "9 ألقاب" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "copa_chile",
+        "name": { "en": "Chile", "ar": "تشيلي" },
+        "subText": { "en": "2015 & 2016 Back-to-Back", "ar": "لقبان متتاليان 2015 و2016" },
+        "media": { "type": "nation", "fallbackText": "CHI" },
+        "value": 2,
+        "valueLabel": { "en": "2 Titles", "ar": "لقبان" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "copa_colombia",
+        "name": { "en": "Colombia", "ar": "كولومبيا" },
+        "subText": { "en": "2001 Champions", "ar": "بطل نسخة 2001" },
+        "media": { "type": "nation", "fallbackText": "COL" },
+        "value": 1,
+        "valueLabel": { "en": "1 Title", "ar": "لقب واحد" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

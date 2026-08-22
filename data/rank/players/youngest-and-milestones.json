@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "youngest-ucl-goalscorers-in-days",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "youngest", "fati", "yamal", "goals", "records"],
+    "title": {
+      "en": "Rank these 5 players by youngest age when scoring their first UEFA Champions League goal (youngest first)",
+      "ar": "رتّب اللاعبين الخمسة حسب أصغر سن عند تسجيل أول هدف في دوري أبطال أوروبا (الأصغر أولاً)"
+    },
+    "subtitle": {
+      "en": "Official age in days on the date of their first Champions League goal",
+      "ar": "العمر الدقيق بالأيام عند تسجيل الهدف الأول في تاريخ البطولة"
+    },
+    "metricLabel": { "en": "Age in Days", "ar": "العمر بالأيام" },
+    "direction": "asc",
+    "answers": [
+      {
+        "answerKey": "yucl_fati",
+        "name": { "en": "Ansu Fati", "ar": "أنسو فاتي" },
+        "subText": { "en": "Barcelona (17 years, 40 days)", "ar": "برشلونة (17 سنة و40 يومًا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "FAT" },
+        "value": 6249,
+        "valueLabel": { "en": "17y 40d", "ar": "17 سنة و40 يومًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "yucl_yamal",
+        "name": { "en": "Lamine Yamal", "ar": "لامين يامال" },
+        "subText": { "en": "Barcelona (17 years, 68 days)", "ar": "برشلونة (17 سنة و68 يومًا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "YAM" },
+        "value": 6277,
+        "valueLabel": { "en": "17y 68d", "ar": "17 سنة و68 يومًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "yucl_ilenikhena",
+        "name": { "en": "George Ilenikhena", "ar": "جورج إيلينيكينا" },
+        "subText": { "en": "Royal Antwerp (17 years, 119 days)", "ar": "رويال أنتويرب (17 سنة و119 يومًا)" },
+        "media": { "type": "player", "fallbackText": "ILE" },
+        "value": 6328,
+        "valueLabel": { "en": "17y 119d", "ar": "17 سنة و119 يومًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "yucl_nusa",
+        "name": { "en": "Antonio Nusa", "ar": "أنطونيو نوسا" },
+        "subText": { "en": "Club Brugge (17 years, 149 days)", "ar": "كلوب بروج (17 سنة و149 يومًا)" },
+        "media": { "type": "player", "fallbackText": "NUS" },
+        "value": 6358,
+        "valueLabel": { "en": "17y 149d", "ar": "17 سنة و149 يومًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "yucl_ofori",
+        "name": { "en": "Peter Ofori-Quaye", "ar": "بيتر أوفوري كواي" },
+        "subText": { "en": "Olympiacos (17 years, 194 days)", "ar": "أولمبياكوس (17 سنة و194 يومًا)" },
+        "media": { "type": "player", "fallbackText": "OFO" },
+        "value": 6403,
+        "valueLabel": { "en": "17y 194d", "ar": "17 سنة و194 يومًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-all-time-penalty-goals",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "penalties", "goals", "shearer", "lampard", "kane"],
+    "title": {
+      "en": "Rank these 5 players by all-time Premier League penalty goals scored",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد الأهداف المسجلة من ضربات الجزاء في البريميرليج"
+    },
+    "subtitle": {
+      "en": "Successful penalty kicks in Premier League history",
+      "ar": "ركلات الجزاء الناجحة في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "metricLabel": { "en": "Penalties", "ar": "ركلات جزاء" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pen_shearer",
+        "name": { "en": "Alan Shearer", "ar": "ألان شيرر" },
+        "subText": { "en": "Blackburn & Newcastle (All-Time Record)", "ar": "بلاكبيرن ونيوكاسل (الرقم القياسي التاريخي)" },
+        "media": { "type": "player", "fallbackText": "SHE" },
+        "value": 56,
+        "valueLabel": { "en": "56 Penalties", "ar": "56 ركلة جزاء" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pen_lampard",
+        "name": { "en": "Frank Lampard", "ar": "فرانك لامبارد" },
+        "subText": { "en": "West Ham, Chelsea & Man City", "ar": "وست هام وتشيلسي ومان سيتي" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "LAM8" },
+        "value": 43,
+        "valueLabel": { "en": "43 Penalties", "ar": "43 ركلة جزاء" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pen_kane",
+        "name": { "en": "Harry Kane", "ar": "هاري كين" },
+        "subText": { "en": "Tottenham Hotspur", "ar": "توتنهام هوتسبير" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/tottenham.png", "fallbackText": "HK10" },
+        "value": 33,
+        "valueLabel": { "en": "33 Penalties", "ar": "33 ركلة جزاء" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pen_gerrard",
+        "name": { "en": "Steven Gerrard", "ar": "ستيفن جيرارد" },
+        "subText": { "en": "Liverpool", "ar": "ليفربول" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "SG8" },
+        "value": 32,
+        "valueLabel": { "en": "32 Penalties", "ar": "32 ركلة جزاء" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pen_noble",
+        "name": { "en": "Mark Noble", "ar": "مارك نوبل" },
+        "subText": { "en": "West Ham United (Mr. West Ham)", "ar": "وست هام يونايتد" },
+        "media": { "type": "player", "fallbackText": "NOB" },
+        "value": 28,
+        "valueLabel": { "en": "28 Penalties", "ar": "28 ركلة جزاء" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

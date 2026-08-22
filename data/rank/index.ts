@@ -4,10 +4,12 @@ import europaLeagueTitles from './clubs/europa-league-titles.json';
 import domesticTitles from './clubs/domestic-titles.json';
 import europeanRecords from './clubs/european-records.json';
 import domesticCups from './clubs/domestic-cups.json';
+import clubRecordsExtra from './clubs/club-records-extra.json';
 import worldCupEditions from './competitions/world-cup-editions.json';
 import uclSeason2526 from './competitions/ucl-season-2025-26.json';
 import europaLeague from './competitions/europa-league.json';
 import continentalCups from './competitions/continental-cups.json';
+import internationalTournaments from './competitions/international-tournaments.json';
 import worldCupRecords from './national-teams/world-cup-records.json';
 import uclPlayerRecords from './players/ucl-records.json';
 import worldCupLegends from './players/world-cup-legends.json';
@@ -22,8 +24,13 @@ import internationalCaps from './players/international-caps.json';
 import playmakersAssists from './players/playmakers-assists.json';
 import defendersAndGoalkeepers from './players/defenders-and-goalkeepers.json';
 import africanAndAsianIcons from './players/african-and-asian-icons.json';
+import freeKicks from './players/free-kicks.json';
+import goalkeepingCleanSheets from './players/goalkeeping-clean-sheets.json';
+import milestonesAndHattricks from './players/milestones-and-hattricks.json';
+import youngestAndMilestones from './players/youngest-and-milestones.json';
 import plClubSeasons from './club-seasons/premier-league-records.json';
 import uclSingleCampaigns from './player-seasons/ucl-single-campaigns.json';
+import eliteCampaigns from './player-seasons/elite-campaigns.json';
 
 export interface RankQuestionSeedItem {
   slug: string;
@@ -63,10 +70,12 @@ export const allRankQuestions: RankQuestionSeedItem[] = [
   ...(domesticTitles as RankQuestionSeedItem[]),
   ...(europeanRecords as RankQuestionSeedItem[]),
   ...(domesticCups as RankQuestionSeedItem[]),
+  ...(clubRecordsExtra as RankQuestionSeedItem[]),
   ...(worldCupEditions as RankQuestionSeedItem[]),
   ...(uclSeason2526 as RankQuestionSeedItem[]),
   ...(europaLeague as RankQuestionSeedItem[]),
   ...(continentalCups as RankQuestionSeedItem[]),
+  ...(internationalTournaments as RankQuestionSeedItem[]),
   ...(worldCupRecords as RankQuestionSeedItem[]),
   ...(uclPlayerRecords as RankQuestionSeedItem[]),
   ...(worldCupLegends as RankQuestionSeedItem[]),
@@ -81,6 +90,11 @@ export const allRankQuestions: RankQuestionSeedItem[] = [
   ...(playmakersAssists as RankQuestionSeedItem[]),
   ...(defendersAndGoalkeepers as RankQuestionSeedItem[]),
   ...(africanAndAsianIcons as RankQuestionSeedItem[]),
+  ...(freeKicks as RankQuestionSeedItem[]),
+  ...(goalkeepingCleanSheets as RankQuestionSeedItem[]),
+  ...(milestonesAndHattricks as RankQuestionSeedItem[]),
+  ...(youngestAndMilestones as RankQuestionSeedItem[]),
   ...(plClubSeasons as RankQuestionSeedItem[]),
   ...(uclSingleCampaigns as RankQuestionSeedItem[]),
+  ...(eliteCampaigns as RankQuestionSeedItem[]),
 ];

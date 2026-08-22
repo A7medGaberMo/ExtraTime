@@ -32,7 +32,7 @@ export default function RankHubPage() {
   const { toast } = useToast();
   const { t, lang } = useI18n();
 
-  const createGuest = useMutation(api.guests.mutations.create);
+  const ensureGuest = useMutation(api.guests.mutations.ensure);
   const createSolo = useMutation(api.rank.mutations.createSoloGame);
   const createDuel = useMutation(api.rank.mutations.createDuelPrivateRoom);
   const joinDuel = useMutation(api.rank.mutations.joinDuelPrivateRoom);
@@ -52,13 +52,15 @@ export default function RankHubPage() {
   const [joinCode, setJoinCode] = useState('');
 
   async function ensureGuestUser(): Promise<Id<'guestUsers'>> {
-    let guestId = localStorage.getItem('extratime_guestId');
-    if (!guestId) {
-      const name = nickname.trim() || randomName();
-      guestId = await createGuest({ nickname: name, avatarSeed: name });
-      localStorage.setItem('extratime_guestId', guestId);
-      localStorage.setItem('extratime_guestName', name);
-    }
+    const name = nickname.trim() || randomName();
+    const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
+    const guestId = await ensureGuest({
+      existingId: existingId ?? undefined,
+      nickname: name,
+      avatarSeed: name,
+    });
+    localStorage.setItem('extratime_guestId', guestId);
+    localStorage.setItem('extratime_guestName', name);
     return guestId as Id<'guestUsers'>;
   }
 

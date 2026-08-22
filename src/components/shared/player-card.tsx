@@ -251,6 +251,13 @@ export function PlayerCard({
 
             {/* 4. BOTTOM SECTION: SLEEK FLOATING GLASS PLAYER NAME BAR */}
             <div className="relative z-20 mt-auto mb-0.5 w-full">
+              {player.isLegend && (
+                <div className="pointer-events-none absolute -top-5 right-2 z-10 select-none opacity-35">
+                  <span className="story-script-regular text-amber-200 text-xs sm:text-sm tracking-wide">
+                    {displayName.split('. ').pop() || displayName}
+                  </span>
+                </div>
+              )}
               <div className="flex w-full items-center justify-center rounded-xl border border-white/30 bg-slate-950/90 px-1.5 py-1 text-center shadow-2xl backdrop-blur-xl">
                 <h3
                   className={cn(

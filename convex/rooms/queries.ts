@@ -31,7 +31,7 @@ export const getPublicQueueSummary = query({
       .withIndex('by_public_status', (q) => q.eq('isPublic', true).eq('status', 'waiting'))
       .collect();
 
-    const freshRooms = rooms.filter((room) => room.createdAt > now - 10 * 60 * 1000);
+    const freshRooms = rooms.filter((room) => room.createdAt > now - 3 * 60 * 1000);
     const queues: PublicQueueSummary = {
       GLOBAL: { 5: 0, 11: 0 },
       ACTIVE: { 5: 0, 11: 0 },

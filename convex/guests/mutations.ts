@@ -16,6 +16,35 @@ export const create = mutation({
   },
 });
 
+export const ensure = mutation({
+  args: {
+    existingId: v.optional(v.string()),
+    nickname: v.string(),
+    avatarSeed: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const existingId = args.existingId
+      ? ctx.db.normalizeId('guestUsers', args.existingId)
+      : null;
+
+    if (existingId) {
+      const existing = await ctx.db.get(existingId);
+      if (existing) {
+        await ctx.db.patch(existingId, { lastActiveAt: Date.now() });
+        return existingId;
+      }
+    }
+
+    const now = Date.now();
+    return await ctx.db.insert('guestUsers', {
+      nickname: args.nickname,
+      avatarSeed: args.avatarSeed,
+      createdAt: now,
+      lastActiveAt: now,
+    });
+  },
+});
+
 export const updateLastActive = mutation({
   args: { id: v.id('guestUsers') },
   handler: async (ctx, args) => {

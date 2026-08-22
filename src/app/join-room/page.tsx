@@ -31,7 +31,7 @@ export default function JoinRoomPage() {
   const { toast } = useToast();
   const { t, lang } = useI18n();
 
-  const createGuest = useMutation(api.guests.mutations.create);
+  const ensureGuest = useMutation(api.guests.mutations.ensure);
   const joinSnipeRoom = useMutation(api.rooms.mutations.join);
   const joinRankDuel = useMutation(api.rank.mutations.joinDuelPrivateRoom);
 
@@ -97,11 +97,13 @@ export default function JoinRoomPage() {
 
     try {
       const name = nickname.trim();
-      let guestId = localStorage.getItem('extratime_guestId');
-      if (!guestId) {
-        guestId = await createGuest({ nickname: name, avatarSeed: name });
-        localStorage.setItem('extratime_guestId', guestId);
-      }
+      const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
+      const guestId = await ensureGuest({
+        existingId: existingId ?? undefined,
+        nickname: name,
+        avatarSeed: name,
+      });
+      localStorage.setItem('extratime_guestId', guestId);
       localStorage.setItem('extratime_guestName', name);
       const validGuestId = guestId as Id<'guestUsers'>;
 

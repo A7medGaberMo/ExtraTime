@@ -9,6 +9,7 @@ import { validateQuestionBank } from "./validate";
 // ── Helpers ──────────────────────────────────────────────────────────
 
 const ROUND_DURATION_MS = 45000; // 45 seconds per round
+const FALLBACK_GUEST_NAME = "Guest Manager";
 
 function generateRankRoomCode(): string {
   const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -74,6 +75,14 @@ async function pickRandomQuestionIds(
   return selected.slice(0, count).map((q) => q._id);
 }
 
+async function getGuestProfile(ctx: GenericMutationCtx<DataModel>, guestId: Id<"guestUsers">) {
+  const guest = await ctx.db.get(guestId);
+  return {
+    nickname: guest?.nickname ?? FALLBACK_GUEST_NAME,
+    avatarSeed: guest?.avatarSeed ?? guestId,
+  };
+}
+
 // ── Mutations ────────────────────────────────────────────────────────
 
 /**
@@ -118,7 +127,18 @@ export const seedQuestionBank = mutation({
       }
     }
 
-    return { total: allRankSeedQuestions.length, inserted, updated };
+    // Clean up questions removed from seed bank
+    const validSlugs = new Set(allRankSeedQuestions.map((q) => q.slug));
+    const allDbQuestions = await ctx.db.query("rankQuestions").collect();
+    let deleted = 0;
+    for (const dbQ of allDbQuestions) {
+      if (!validSlugs.has(dbQ.slug)) {
+        await ctx.db.delete(dbQ._id);
+        deleted++;
+      }
+    }
+
+    return { total: allRankSeedQuestions.length, inserted, updated, deleted };
   },
 });
 
@@ -131,8 +151,7 @@ export const createSoloGame = mutation({
     roundCount: v.union(v.literal(3), v.literal(5)),
   },
   handler: async (ctx, args) => {
-    const guest = await ctx.db.get(args.guestId);
-    if (!guest) throw new Error("Guest user not found");
+    const guest = await getGuestProfile(ctx, args.guestId);
 
     const questionIds = await pickRandomQuestionIds(ctx, args.roundCount);
     const now = Date.now();
@@ -174,8 +193,7 @@ export const createDuelPrivateRoom = mutation({
     roundCount: v.union(v.literal(3), v.literal(5)),
   },
   handler: async (ctx, args) => {
-    const host = await ctx.db.get(args.hostId);
-    if (!host) throw new Error("Host user not found");
+    const host = await getGuestProfile(ctx, args.hostId);
 
     const now = Date.now();
     const code = generateRankRoomCode();
@@ -215,8 +233,7 @@ export const joinDuelPrivateRoom = mutation({
     code: v.string(),
   },
   handler: async (ctx, args) => {
-    const guest = await ctx.db.get(args.guestId);
-    if (!guest) throw new Error("Guest user not found");
+    const guest = await getGuestProfile(ctx, args.guestId);
 
     const cleanCode = args.code.trim().toUpperCase();
     const game = await ctx.db
@@ -268,12 +285,10 @@ export const findOrCreatePublicMatch = mutation({
     roundCount: v.union(v.literal(3), v.literal(5)),
   },
   handler: async (ctx, args) => {
-    const guest = await ctx.db.get(args.guestId);
-    if (!guest) throw new Error("Guest user not found");
-
+    const guest = await getGuestProfile(ctx, args.guestId);
     const now = Date.now();
 
-    // Look for waiting public room created in last 5 minutes
+    // Look for waiting public room created in last 3 minutes
     const openRooms = await ctx.db
       .query("rankGames")
       .withIndex("by_public_status", (q) =>
@@ -282,8 +297,14 @@ export const findOrCreatePublicMatch = mutation({
       .collect();
 
     for (const room of openRooms) {
+      if (room.createdAt <= now - 3 * 60 * 1000) {
+        // Auto-expire stale waiting rank room after 3 minutes with no rival
+        await ctx.db.patch(room._id, { status: "completed" });
+        continue;
+      }
+
       const isHost = room.participants[0]?.guestId === args.guestId;
-      const isRecent = room.createdAt > now - 5 * 60 * 1000;
+      const isRecent = room.createdAt > now - 3 * 60 * 1000;
       const matchesRound = room.roundCount === args.roundCount;
 
       if (!isHost && isRecent && matchesRound && room.participants.length === 1) {

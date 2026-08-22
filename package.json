@@ -11,6 +11,8 @@
     "format:check": "prettier --check .",
     "convex:dev": "npx convex dev",
     "seed": "node scripts/seedAll.mjs",
+    "seed:rank": "npx convex run rank/mutations:seedQuestionBank",
+    "seed:rank:prod": "npx convex run --prod rank/mutations:seedQuestionBank",
     "test": "vitest run",
     "test:watch": "vitest"
   },

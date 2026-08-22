@@ -1,7 +1,7 @@
 [
   {
     "slug": "ucl-single-season-goals-modern",
-    "scopeType": "PLAYER_STINTS",
+    "scopeType": "PER_SEASON",
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
@@ -19,12 +19,12 @@
     "answers": [
       {
         "answerKey": "ucl_ps_mbappe26",
-        "name": { "en": "Kylian Mbappé", "ar": "كيليان مبابي" },
-        "subText": { "en": "Real Madrid (2025–26)", "ar": "ريال مدريد (2025–26)" },
+        "name": { "en": "Kylian Mbappé (2025–26)", "ar": "كيليان مبابي (2025–26)" },
+        "subText": { "en": "Real Madrid", "ar": "ريال مدريد" },
         "media": {
-          "type": "stint",
-          "fallbackText": "KM",
-          "stintBadge": { "clubName": "Real Madrid", "season": "25/26" }
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "KM"
         },
         "value": 15,
         "valueLabel": { "en": "15 Goals", "ar": "15 هدفًا" },
@@ -32,12 +32,12 @@
       },
       {
         "answerKey": "ucl_ps_raphinha25",
-        "name": { "en": "Raphinha", "ar": "رافينيا" },
-        "subText": { "en": "Barcelona (2024–25)", "ar": "برشلونة (2024–25)" },
+        "name": { "en": "Raphinha (2024–25)", "ar": "رافينيا (2024–25)" },
+        "subText": { "en": "Barcelona", "ar": "برشلونة" },
         "media": {
-          "type": "stint",
-          "fallbackText": "RAP",
-          "stintBadge": { "clubName": "Barcelona", "season": "24/25" }
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "RAP"
         },
         "value": 13,
         "valueLabel": { "en": "13 Goals", "ar": "13 هدفًا" },
@@ -45,12 +45,12 @@
       },
       {
         "answerKey": "ucl_ps_haaland23",
-        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
-        "subText": { "en": "Manchester City (2022–23)", "ar": "مانشستر سيتي (2022–23)" },
+        "name": { "en": "Erling Haaland (2022–23)", "ar": "إيرلينغ هالاند (2022–23)" },
+        "subText": { "en": "Manchester City", "ar": "مانشستر سيتي" },
         "media": {
-          "type": "stint",
-          "fallbackText": "EH",
-          "stintBadge": { "clubName": "Manchester City", "season": "22/23" }
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "EH"
         },
         "value": 12,
         "valueLabel": { "en": "12 Goals", "ar": "12 هدفًا" },
@@ -58,12 +58,12 @@
       },
       {
         "answerKey": "ucl_ps_haaland21",
-        "name": { "en": "Erling Haaland", "ar": "إيرلينغ هالاند" },
-        "subText": { "en": "Borussia Dortmund (2020–21)", "ar": "بوروسيا دورتموند (2020–21)" },
+        "name": { "en": "Erling Haaland (2020–21)", "ar": "إيرلينغ هالاند (2020–21)" },
+        "subText": { "en": "Borussia Dortmund", "ar": "بوروسيا دورتموند" },
         "media": {
-          "type": "stint",
-          "fallbackText": "EH",
-          "stintBadge": { "clubName": "Borussia Dortmund", "season": "20/21" }
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "fallbackText": "EH"
         },
         "value": 10,
         "valueLabel": { "en": "10 Goals", "ar": "10 أهداف" },
@@ -71,12 +71,12 @@
       },
       {
         "answerKey": "ucl_ps_mbappe24",
-        "name": { "en": "Kylian Mbappé", "ar": "كيليان مبابي" },
-        "subText": { "en": "Paris Saint-Germain (2023–24)", "ar": "باريس سان جيرمان (2023–24)" },
+        "name": { "en": "Kylian Mbappé (2023–24)", "ar": "كيليان مبابي (2023–24)" },
+        "subText": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
         "media": {
-          "type": "stint",
-          "fallbackText": "KM",
-          "stintBadge": { "clubName": "Paris Saint-Germain", "season": "23/24" }
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/psg.png",
+          "fallbackText": "KM"
         },
         "value": 8,
         "valueLabel": { "en": "8 Goals", "ar": "8 أهداف" },
