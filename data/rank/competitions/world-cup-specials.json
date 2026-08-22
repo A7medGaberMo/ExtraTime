@@ -1,0 +1,392 @@
+[
+  {
+    "slug": "world-cup-golden-boot-goals-record",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "golden-boot", "strikers", "goals", "fontaine", "kocsis", "muller", "eusebio", "ronaldo"],
+    "title": {
+      "en": "Rank these 5 World Cup Golden Boot winners by goals scored in a single tournament",
+      "ar": "رتّب الفائزين بالحذاء الذهبي لكأس العالم الخمسة حسب عدد الأهداف المسجلة في بطولة واحدة"
+    },
+    "subtitle": {
+      "en": "Total goals scored in the tournament to win the Golden Boot",
+      "ar": "إجمالي الأهداف المسجلة في البطولة للتتويج بالحذاء الذهبي"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gb_fontaine_58",
+        "name": { "en": "Just Fontaine (1958)", "ar": "جست فونتين (1958)" },
+        "subText": { "en": "France (All-Time World Cup Tournament Record)", "ar": "فرنسا (الرقم القياسي التاريخي للبطولة في نسخة واحدة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/france.png", "fallbackText": "FON" },
+        "value": 13,
+        "valueLabel": { "en": "13 Goals", "ar": "13 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gb_kocsis_54",
+        "name": { "en": "Sándor Kocsis (1954)", "ar": "ساندور كوتشيس (1954)" },
+        "subText": { "en": "Hungary (Magical Magyars)", "ar": "المجر (الجيل الذهبي)" },
+        "media": { "type": "player", "fallbackText": "KOC" },
+        "value": 11,
+        "valueLabel": { "en": "11 Goals", "ar": "11 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gb_muller_70",
+        "name": { "en": "Gerd Müller (1970)", "ar": "غيرد مولر (1970)" },
+        "subText": { "en": "West Germany (Der Bomber)", "ar": "ألمانيا الغربية (المدفعجي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/germany.png", "fallbackText": "MUL" },
+        "value": 10,
+        "valueLabel": { "en": "10 Goals", "ar": "10 أهداف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gb_eusebio_66",
+        "name": { "en": "Eusébio (1966)", "ar": "أوزيبيو (1966)" },
+        "subText": { "en": "Portugal (The Black Panther)", "ar": "البرتغال (الفهد الأسود)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/portugal.png", "fallbackText": "EUS" },
+        "value": 9,
+        "valueLabel": { "en": "9 Goals", "ar": "9 أهداف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gb_ronaldo_02",
+        "name": { "en": "Ronaldo Nazário (2002)", "ar": "رونالدو البرازيلي (2002)" },
+        "subText": { "en": "Brazil (2 in Final vs Germany)", "ar": "البرازيل (ثنائية النهائي ضد ألمانيا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/brazil.png", "fallbackText": "R9" },
+        "value": 8,
+        "valueLabel": { "en": "8 Goals", "ar": "8 أهداف" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "fastest-world-cup-goals-seconds",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "fastest", "goals", "records", "seconds"],
+    "title": {
+      "en": "Rank these 5 lightning World Cup goals by fastest time scored (fastest first)",
+      "ar": "رتّب أسرع أهداف كأس العالم الخمسة بالثواني (الأسرع أولاً)"
+    },
+    "subtitle": {
+      "en": "Exact seconds elapsed from kickoff to the ball crossing the line",
+      "ar": "الوقت المستغرق بالثواني من صافرة البداية حتى دخول الكرة الشباك"
+    },
+    "metricLabel": { "en": "Seconds", "ar": "ثوانٍ" },
+    "direction": "asc",
+    "answers": [
+      {
+        "answerKey": "fwc_sukuro",
+        "name": { "en": "Hakan Şükür (2002)", "ar": "هاكان شوكور (2002)" },
+        "subText": { "en": "Turkey vs South Korea (All-Time Record)", "ar": "تركيا ضد كوريا الجنوبية (الرقم القياسي التاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/turkey.png", "fallbackText": "SUK" },
+        "value": 11,
+        "valueLabel": { "en": "10.8 Seconds", "ar": "10.8 ثانية" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fwc_masek",
+        "name": { "en": "Václav Mašek (1962)", "ar": "فاتسلاف ماشيك (1962)" },
+        "subText": { "en": "Czechoslovakia vs Mexico", "ar": "تشيكوسلوفاكيا ضد المكسيك" },
+        "media": { "type": "player", "fallbackText": "MAS" },
+        "value": 16,
+        "valueLabel": { "en": "16.0 Seconds", "ar": "16.0 ثانية" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fwc_lehner",
+        "name": { "en": "Ernst Lehner (1934)", "ar": "إرنست لينر (1934)" },
+        "subText": { "en": "Germany vs Austria", "ar": "ألمانيا ضد النمسا" },
+        "media": { "type": "player", "fallbackText": "LEH" },
+        "value": 25,
+        "valueLabel": { "en": "24.6 Seconds", "ar": "24.6 ثانية" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fwc_robson",
+        "name": { "en": "Bryan Robson (1982)", "ar": "براين روبسون (1982)" },
+        "subText": { "en": "England vs France", "ar": "إنجلترا ضد فرنسا" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/england.png", "fallbackText": "ROB" },
+        "value": 27,
+        "valueLabel": { "en": "27.0 Seconds", "ar": "27.0 ثانية" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fwc_dempsey",
+        "name": { "en": "Clint Dempsey (2014)", "ar": "كلينت ديمبسي (2014)" },
+        "subText": { "en": "USA vs Ghana", "ar": "أمريكا ضد غانا" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/usa.png", "fallbackText": "DEM" },
+        "value": 30,
+        "valueLabel": { "en": "30.0 Seconds", "ar": "30.0 ثانية" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-matches-played-legends",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "appearances", "messi", "matthaus", "klose", "maldini", "cr7"],
+    "title": {
+      "en": "Rank these 5 legends by career FIFA World Cup matches played",
+      "ar": "رتّب الأساطير الخمسة حسب عدد مبارياتهم في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All-time World Cup finals match appearances",
+      "ar": "إجمالي المباريات الملعوبة في نهائيات كأس العالم"
+    },
+    "metricLabel": { "en": "Matches", "ar": "مباريات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wcm_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Argentina (5 Tournaments - All-Time Record)", "ar": "الأرجنتين (5 بطولات - الرقم القياسي التاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/argentina.png", "fallbackText": "LM10" },
+        "value": 26,
+        "valueLabel": { "en": "26 Matches", "ar": "26 مباراة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcm_matthaus",
+        "name": { "en": "Lothar Matthäus", "ar": "لوثار ماتيوس" },
+        "subText": { "en": "Germany (5 Tournaments 1982–1998)", "ar": "ألمانيا (5 بطولات 1982–1998)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/germany.png", "fallbackText": "MAT" },
+        "value": 25,
+        "valueLabel": { "en": "25 Matches", "ar": "25 مباراة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcm_klose",
+        "name": { "en": "Miroslav Klose", "ar": "ميروسلاف كلوزه" },
+        "subText": { "en": "Germany (4 Tournaments - All-Time Top Scorer)", "ar": "ألمانيا (4 بطولات - الهداف التاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/germany.png", "fallbackText": "MK11" },
+        "value": 24,
+        "valueLabel": { "en": "24 Matches", "ar": "24 مباراة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcm_maldini",
+        "name": { "en": "Paolo Maldini", "ar": "باولو مالديني" },
+        "subText": { "en": "Italy (4 Tournaments 1990–2002)", "ar": "إيطاليا (4 بطولات 1990–2002)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/italy.png", "fallbackText": "MAL3" },
+        "value": 23,
+        "valueLabel": { "en": "23 Matches", "ar": "23 مباراة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcm_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "Portugal (5 Tournaments 2006–2022)", "ar": "البرتغال (5 بطولات 2006–2022)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/portugal.png", "fallbackText": "CR7" },
+        "value": 22,
+        "valueLabel": { "en": "22 Matches", "ar": "22 مباراة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-penalty-shootouts-won",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "penalties", "argentina", "germany", "brazil", "france", "england"],
+    "title": {
+      "en": "Rank these 5 nations by World Cup penalty shootout victories",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد ركلات الترجيح التي فازوا بها في كأس العالم"
+    },
+    "subtitle": {
+      "en": "Successful penalty shootouts won in FIFA World Cup history",
+      "ar": "ركلات الترجيح الناجحة في تاريخ نهائيات كأس العالم"
+    },
+    "metricLabel": { "en": "Shootout Wins", "ar": "فوز بركلات الترجيح" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pso_argentina",
+        "name": { "en": "Argentina", "ar": "الأرجنتين" },
+        "subText": { "en": "7 Shootouts (6 Wins - All-Time Record)", "ar": "خاضت 7 ركلات ترجيح (فازت بـ6 - رقم قياسي)" },
+        "media": { "type": "nation", "fallbackText": "ARG" },
+        "value": 6,
+        "valueLabel": { "en": "6 Wins", "ar": "6 انتصارات" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pso_germany",
+        "name": { "en": "Germany", "ar": "ألمانيا" },
+        "subText": { "en": "4 Shootouts (100% Win Rate: 4 Wins)", "ar": "خاضت 4 (نسبة نجاح 100%: 4 انتصارات)" },
+        "media": { "type": "nation", "fallbackText": "GER" },
+        "value": 4,
+        "valueLabel": { "en": "4 Wins", "ar": "4 انتصارات" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pso_brazil",
+        "name": { "en": "Brazil", "ar": "البرازيل" },
+        "subText": { "en": "5 Shootouts (3 Wins, 2 Losses)", "ar": "خاضت 5 (فازت بـ3 وخسرت 2)" },
+        "media": { "type": "nation", "fallbackText": "BRA" },
+        "value": 3,
+        "valueLabel": { "en": "3 Wins", "ar": "3 انتصارات" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pso_france",
+        "name": { "en": "France", "ar": "فرنسا" },
+        "subText": { "en": "5 Shootouts (2 Wins, 3 Losses)", "ar": "خاضت 5 (فازت باثنتين وخسرت 3)" },
+        "media": { "type": "nation", "fallbackText": "FRA" },
+        "value": 2,
+        "valueLabel": { "en": "2 Wins", "ar": "انتصاران" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pso_england",
+        "name": { "en": "England", "ar": "إنجلترا" },
+        "subText": { "en": "4 Shootouts (1 Win vs Colombia 2018)", "ar": "خاضت 4 (فوز واحد ضد كولومبيا 2018)" },
+        "media": { "type": "nation", "fallbackText": "ENG" },
+        "value": 1,
+        "valueLabel": { "en": "1 Win", "ar": "فوز واحد" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-tournaments-played-without-winning-title",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "nations", "mexico", "belgium", "switzerland", "chile", "scotland"],
+    "title": {
+      "en": "Rank these 5 nations by World Cup finals tournaments played without ever lifting the trophy",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد المشاركات في كأس العالم دون التتويج باللقب"
+    },
+    "subtitle": {
+      "en": "Most tournament qualifications without winning a World Cup title",
+      "ar": "أكثر المنتخبات مشاركة في نهائيات كأس العالم دون الفوز بالبطولة"
+    },
+    "metricLabel": { "en": "Tournaments", "ar": "مشاركات" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ntt_mexico",
+        "name": { "en": "Mexico", "ar": "المكسيك" },
+        "subText": { "en": "17 Tournaments (Most without title)", "ar": "17 مشاركة (الأكثر في التاريخ دون لقب)" },
+        "media": { "type": "nation", "fallbackText": "MEX" },
+        "value": 17,
+        "valueLabel": { "en": "17 Tournaments", "ar": "17 مشاركة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ntt_belgium",
+        "name": { "en": "Belgium", "ar": "بلجيكا" },
+        "subText": { "en": "14 Tournaments (Best: 3rd in 2018)", "ar": "14 مشاركة (أفضل مركز: الثالث 2018)" },
+        "media": { "type": "nation", "fallbackText": "BEL" },
+        "value": 14,
+        "valueLabel": { "en": "14 Tournaments", "ar": "14 مشاركة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ntt_swiss",
+        "name": { "en": "Switzerland", "ar": "سويسرا" },
+        "subText": { "en": "12 Tournaments (Best: Quarter-Finals)", "ar": "12 مشاركة (أفضل مركز: ربع النهائي)" },
+        "media": { "type": "nation", "fallbackText": "SUI" },
+        "value": 12,
+        "valueLabel": { "en": "12 Tournaments", "ar": "12 مشاركة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ntt_chile",
+        "name": { "en": "Chile", "ar": "تشيلي" },
+        "subText": { "en": "9 Tournaments (Best: 3rd in 1962)", "ar": "9 مشاركات (أفضل مركز: الثالث 1962)" },
+        "media": { "type": "nation", "fallbackText": "CHI" },
+        "value": 9,
+        "valueLabel": { "en": "9 Tournaments", "ar": "9 مشاركات" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ntt_scotland",
+        "name": { "en": "Scotland", "ar": "إسكتلندا" },
+        "subText": { "en": "8 Tournaments (Group Stages)", "ar": "8 مشاركات (دور المجموعات)" },
+        "media": { "type": "nation", "fallbackText": "SCO" },
+        "value": 8,
+        "valueLabel": { "en": "8 Tournaments", "ar": "8 مشاركات" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-most-goals-single-tournament-nation",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "records", "hungary", "germany", "france", "brazil"],
+    "title": {
+      "en": "Rank these 5 national teams by goals scored in a single World Cup tournament",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد الأهداف المسجلة في نسخة واحدة لكأس العالم"
+    },
+    "subtitle": {
+      "en": "Total goals scored by one nation across a single World Cup campaign",
+      "ar": "إجمالي الأهداف المسجلة لمنتخب واحد في دورة مونديالية واحدة"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wctg_hungary_54",
+        "name": { "en": "Hungary (1954)", "ar": "المجر (1954)" },
+        "subText": { "en": "Magical Magyars (All-Time Record - 5 games)", "ar": "جيل المجر الذهبي (الرقم القياسي - 5 مباريات)" },
+        "media": { "type": "nation", "fallbackText": "HUN" },
+        "value": 27,
+        "valueLabel": { "en": "27 Goals", "ar": "27 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wctg_germany_54",
+        "name": { "en": "West Germany (1954)", "ar": "ألمانيا الغربية (1954)" },
+        "subText": { "en": "Miracle of Bern (Champions)", "ar": "معجزة بيرن (أبطال العالم)" },
+        "media": { "type": "nation", "fallbackText": "GER" },
+        "value": 25,
+        "valueLabel": { "en": "25 Goals", "ar": "25 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wctg_france_58",
+        "name": { "en": "France (1958)", "ar": "فرنسا (1958)" },
+        "subText": { "en": "Just Fontaine 13 goals (3rd place)", "ar": "13 هدفًا لجست فونتين (المركز الثالث)" },
+        "media": { "type": "nation", "fallbackText": "FRA" },
+        "value": 23,
+        "valueLabel": { "en": "23 Goals", "ar": "23 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wctg_brazil_70",
+        "name": { "en": "Brazil (1970)", "ar": "البرازيل (1970)" },
+        "subText": { "en": "Pelé, Jairzinho, Tostão & Rivelino", "ar": "بيليه وجاييرزينيو وتوستاو وريفيلينو" },
+        "media": { "type": "nation", "fallbackText": "BRA" },
+        "value": 19,
+        "valueLabel": { "en": "19 Goals", "ar": "19 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wctg_germany_14",
+        "name": { "en": "Germany (2014)", "ar": "ألمانيا (2014)" },
+        "subText": { "en": "Champions (7-1 vs Brazil included)", "ar": "أبطال العالم (تشمل 7-1 ضد البرازيل)" },
+        "media": { "type": "nation", "fallbackText": "GER" },
+        "value": 18,
+        "valueLabel": { "en": "18 Goals", "ar": "18 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

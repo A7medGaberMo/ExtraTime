@@ -1,0 +1,392 @@
+[
+  {
+    "slug": "ucl-single-campaign-assists-record",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "assists", "milner", "neymar", "kdb", "dimaria", "vini"],
+    "title": {
+      "en": "Rank these 5 player campaigns by assists provided in a single UEFA Champions League season",
+      "ar": "رتّب مواسم اللاعبين الخمسة حسب عدد التمريرات الحاسمة في موسم واحد بدوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Most assists in a single Champions League tournament campaign",
+      "ar": "أكثر التمريرات الحاسمة للاعب في نسخة واحدة من دوري أبطال أوروبا"
+    },
+    "metricLabel": { "en": "Assists", "ar": "تمريرات حاسمة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "uca_milner_18",
+        "name": { "en": "James Milner (2017–18)", "ar": "جيمس ميلنر (2017–18)" },
+        "subText": { "en": "Liverpool (All-Time UCL Campaign Record)", "ar": "ليفربول (الرقم القياسي التاريخي للبطولة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MIL" },
+        "value": 9,
+        "valueLabel": { "en": "9 Assists", "ar": "9 تمريرات حاسمة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "uca_neymar_17",
+        "name": { "en": "Neymar Jr (2016–17)", "ar": "نيمار (2016–17)" },
+        "subText": { "en": "Barcelona (Remontada Season - 9 games)", "ar": "برشلونة (موسم الريمونتادا - 9 مباريات)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "NJR" },
+        "value": 8,
+        "valueLabel": { "en": "8 Assists", "ar": "8 تمريرات حاسمة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "uca_kdb_23",
+        "name": { "en": "Kevin De Bruyne (2022–23)", "ar": "كيفين دي بروين (2022–23)" },
+        "subText": { "en": "Manchester City (Treble Winners)", "ar": "مانشستر سيتي (موسم الثلاثية)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KDB" },
+        "value": 7,
+        "valueLabel": { "en": "7 Assists", "ar": "7 تمريرات حاسمة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "uca_dimaria_14",
+        "name": { "en": "Ángel Di María (2013–14)", "ar": "أنخيل دي ماريا (2013–14)" },
+        "subText": { "en": "Real Madrid (La Décima)", "ar": "ريال مدريد (العاشرة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "ADM" },
+        "value": 6,
+        "valueLabel": { "en": "6 Assists", "ar": "6 تمريرات حاسمة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "uca_vini_22",
+        "name": { "en": "Vinícius Júnior (2021–22)", "ar": "فينيسيوس جونيور (2021–22)" },
+        "subText": { "en": "Real Madrid (14th Title)", "ar": "ريال مدريد (الرابعة عشرة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "VJR" },
+        "value": 5,
+        "valueLabel": { "en": "5 Assists", "ar": "5 تمريرات حاسمة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "serie-a-all-time-assists-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["serie-a", "assists", "totti", "baggio", "candreva", "insigne", "pjanic"],
+    "title": {
+      "en": "Rank these 5 playmakers by all-time Serie A assists provided",
+      "ar": "رتّب صانعي الألعاب الخمسة حسب عدد التمريرات الحاسمة في تاريخ الدوري الإيطالي"
+    },
+    "subtitle": {
+      "en": "Official Serie A career assists",
+      "ar": "التمريرات الحاسمة المسجلة في تاريخ الدوري الإيطالي الممتاز"
+    },
+    "metricLabel": { "en": "Assists", "ar": "تمريرات حاسمة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "saa_totti",
+        "name": { "en": "Francesco Totti", "ar": "فرانشيسكو توتي" },
+        "subText": { "en": "AS Roma (All-Time Record Holder)", "ar": "روما (الأكثر صناعة للأهداف في تاريخ السيريا آ)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/roma.png", "fallbackText": "TOT10" },
+        "value": 158,
+        "valueLabel": { "en": "158 Assists", "ar": "158 تمريرة حاسمة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "saa_baggio",
+        "name": { "en": "Roberto Baggio", "ar": "روبرتو باجيو" },
+        "subText": { "en": "Fiorentina, Juventus, Milan, Bologna, Brescia", "ar": "فيورنتينا ويوفنتوس وميلان وبولونيا وبريشيا" },
+        "media": { "type": "player", "fallbackText": "BAG" },
+        "value": 119,
+        "valueLabel": { "en": "119 Assists", "ar": "119 تمريرة حاسمة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "saa_candreva",
+        "name": { "en": "Antonio Candreva", "ar": "أنطونيو كاندريفا" },
+        "subText": { "en": "Lazio, Inter, Sampdoria, Salernitana", "ar": "لاتسيو وإنتر وسامبدوريا وساليرنيتانا" },
+        "media": { "type": "player", "fallbackText": "CAN" },
+        "value": 104,
+        "valueLabel": { "en": "104 Assists", "ar": "104 تمريرات حاسمة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "saa_insigne",
+        "name": { "en": "Lorenzo Insigne", "ar": "لورينزو إنسيني" },
+        "subText": { "en": "Napoli (Il Magnifico)", "ar": "نابولي" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/napoli.png", "fallbackText": "INS" },
+        "value": 85,
+        "valueLabel": { "en": "85 Assists", "ar": "85 تمريرة حاسمة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "saa_pjanic",
+        "name": { "en": "Miralem Pjanić", "ar": "ميراليم بيانيتش" },
+        "subText": { "en": "AS Roma & Juventus", "ar": "روما ويوفنتوس" },
+        "media": { "type": "player", "fallbackText": "PJA" },
+        "value": 72,
+        "valueLabel": { "en": "72 Assists", "ar": "72 تمريرة حاسمة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "la-liga-single-season-assists-records",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["la-liga", "assists", "messi", "xavi", "ozil", "suarez", "dimaria"],
+    "title": {
+      "en": "Rank these 5 player campaigns by assists provided in a single La Liga season",
+      "ar": "رتّب مواسم اللاعبين الخمسة حسب عدد التمريرات الحاسمة في موسم واحد بالدوري الإسباني"
+    },
+    "subtitle": {
+      "en": "Most assists in a single 38-game La Liga campaign",
+      "ar": "أكثر التمريرات الحاسمة في موسم واحد من الليغا"
+    },
+    "metricLabel": { "en": "Assists", "ar": "تمريرات حاسمة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "lla_messi_20",
+        "name": { "en": "Lionel Messi (2019–20)", "ar": "ليونيل ميسي (2019–20)" },
+        "subText": { "en": "Barcelona (All-Time La Liga Record)", "ar": "برشلونة (الرقم القياسي التاريخي لليغا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LM10" },
+        "value": 21,
+        "valueLabel": { "en": "21 Assists", "ar": "21 تمريرة حاسمة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "lla_xavi_09",
+        "name": { "en": "Xavi Hernández (2008–09)", "ar": "تشافي هيرنانديز (2008–09)" },
+        "subText": { "en": "Barcelona (Pep Treble Season)", "ar": "برشلونة (موسم الثلاثية التاريخية)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "XAV6" },
+        "value": 20,
+        "valueLabel": { "en": "20 Assists", "ar": "20 تمريرة حاسمة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "lla_ozil_12",
+        "name": { "en": "Mesut Özil (2011–12)", "ar": "مسعود أوزيل (2011–12)" },
+        "subText": { "en": "Real Madrid (100 pts Centurions)", "ar": "ريال مدريد (موسم الـ100 نقطة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "OZI" },
+        "value": 17,
+        "valueLabel": { "en": "17 Assists", "ar": "17 تمريرة حاسمة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "lla_suarez_16",
+        "name": { "en": "Luis Suárez (2015–16)", "ar": "لويس سواريز (2015–16)" },
+        "subText": { "en": "Barcelona (40 Goals & 16 Assists)", "ar": "برشلونة (40 هدفًا و16 أسيست)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LS9" },
+        "value": 16,
+        "valueLabel": { "en": "16 Assists", "ar": "16 تمريرة حاسمة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "lla_dimaria_13",
+        "name": { "en": "Ángel Di María (2012–13)", "ar": "أنخيل دي ماريا (2012–13)" },
+        "subText": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "ADM" },
+        "value": 14,
+        "valueLabel": { "en": "14 Assists", "ar": "14 تمريرة حاسمة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-assists-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "assists", "pele", "messi", "littbarski", "muller", "beckham"],
+    "title": {
+      "en": "Rank these 5 icons by total assists provided in FIFA World Cup finals tournaments",
+      "ar": "رتّب الأساطير الخمسة حسب عدد التمريرات الحاسمة في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All-time World Cup finals tournament assists",
+      "ar": "إجمالي التمريرات الحاسمة في تاريخ نهائيات كأس العالم"
+    },
+    "metricLabel": { "en": "Assists", "ar": "تمريرات حاسمة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wca_pele",
+        "name": { "en": "Pelé", "ar": "بيليه" },
+        "subText": { "en": "Brazil (All-Time Record Holder - 3x Winner)", "ar": "البرازيل (الرقم القياسي التاريخي - بطل العالم 3 مرات)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/brazil.png", "fallbackText": "PELE" },
+        "value": 10,
+        "valueLabel": { "en": "10 Assists", "ar": "10 تمريرات حاسمة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wca_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Argentina (Assists in 5 different World Cups)", "ar": "الأرجنتين (صنع في 5 نسخ مختلفة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/argentina.png", "fallbackText": "LM10" },
+        "value": 8,
+        "valueLabel": { "en": "8 Assists", "ar": "8 تمريرات حاسمة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wca_littbarski",
+        "name": { "en": "Pierre Littbarski", "ar": "بيير ليتبارسكي" },
+        "subText": { "en": "West Germany (1982, 1986, 1990 Champion)", "ar": "ألمانيا الغربية (1982، 1986، بطل 1990)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/germany.png", "fallbackText": "LIT" },
+        "value": 7,
+        "valueLabel": { "en": "7 Assists", "ar": "7 تمريرات حاسمة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wca_muller",
+        "name": { "en": "Thomas Müller", "ar": "توماس مولر" },
+        "subText": { "en": "Germany (2010, 2014 Champion)", "ar": "ألمانيا (2010، بطل 2014)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/germany.png", "fallbackText": "TM13" },
+        "value": 6,
+        "valueLabel": { "en": "6 Assists", "ar": "6 تمريرات حاسمة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wca_beckham",
+        "name": { "en": "David Beckham", "ar": "ديفيد بيكهام" },
+        "subText": { "en": "England (1998, 2002, 2006)", "ar": "إنجلترا (1998، 2002، 2006)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/england.png", "fallbackText": "DB7" },
+        "value": 5,
+        "valueLabel": { "en": "5 Assists", "ar": "5 تمريرات حاسمة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ligue-1-all-time-assists-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ligue-1", "france", "assists", "payet", "dimaria", "mbappe", "verratti", "pastore"],
+    "title": {
+      "en": "Rank these 5 stars by official Ligue 1 assists provided",
+      "ar": "رتّب النجوم الخمسة حسب عدد التمريرات الحاسمة في الدوري الفرنسي"
+    },
+    "subtitle": {
+      "en": "Official Ligue 1 career assists",
+      "ar": "التمريرات الحاسمة في تاريخ الدوري الفرنسي"
+    },
+    "metricLabel": { "en": "Assists", "ar": "تمريرات حاسمة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "l1a_payet",
+        "name": { "en": "Dimitri Payet", "ar": "ديميتري باييت" },
+        "subText": { "en": "Nantes, Saint-Étienne, Lille, Marseille", "ar": "نانت وسانت إتيان وليل ومارسيليا" },
+        "media": { "type": "player", "fallbackText": "PAY" },
+        "value": 106,
+        "valueLabel": { "en": "106 Assists", "ar": "106 تمريرات حاسمة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "l1a_dimaria",
+        "name": { "en": "Ángel Di María", "ar": "أنخيل دي ماريا" },
+        "subText": { "en": "Paris Saint-Germain (Most assists for PSG)", "ar": "باريس سان جيرمان (الأكثر صناعة في تاريخ باريس)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "ADM" },
+        "value": 72,
+        "valueLabel": { "en": "72 Assists", "ar": "72 تمريرة حاسمة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "l1a_mbappe",
+        "name": { "en": "Kylian Mbappé", "ar": "كيليان مبابي" },
+        "subText": { "en": "Monaco & Paris Saint-Germain", "ar": "موناكو وباريس سان جيرمان" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "KM7" },
+        "value": 58,
+        "valueLabel": { "en": "58 Assists", "ar": "58 تمريرة حاسمة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "l1a_verratti",
+        "name": { "en": "Marco Verratti", "ar": "ماركو فيراتي" },
+        "subText": { "en": "Paris Saint-Germain (9x Champion)", "ar": "باريس سان جيرمان (بطل الدوري 9 مرات)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "VER" },
+        "value": 48,
+        "valueLabel": { "en": "48 Assists", "ar": "48 تمريرة حاسمة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "l1a_pastore",
+        "name": { "en": "Javier Pastore", "ar": "خافيير باستوري" },
+        "subText": { "en": "Paris Saint-Germain (El Flaco)", "ar": "باريس سان جيرمان" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/psg.png", "fallbackText": "PAS" },
+        "value": 39,
+        "valueLabel": { "en": "39 Assists", "ar": "39 تمريرة حاسمة" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "bundesliga-all-time-assists-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["bundesliga", "germany", "assists", "muller", "ribery", "reus", "zeroberto", "gotze"],
+    "title": {
+      "en": "Rank these 5 creators by official Bundesliga assists provided",
+      "ar": "رتّب صانعي الألعاب الخمسة حسب عدد التمريرات الحاسمة في تاريخ البوندسليغا"
+    },
+    "subtitle": {
+      "en": "Official Bundesliga career assists",
+      "ar": "التمريرات الحاسمة المسجلة في تاريخ الدوري الألماني"
+    },
+    "metricLabel": { "en": "Assists", "ar": "تمريرات حاسمة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "bla_muller",
+        "name": { "en": "Thomas Müller", "ar": "توماس مولر" },
+        "subText": { "en": "Bayern Munich (All-Time Record Holder)", "ar": "بايرن ميونخ (الأكثر صناعة في تاريخ البوندسليغا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "TM25" },
+        "value": 172,
+        "valueLabel": { "en": "172 Assists", "ar": "172 تمريرة حاسمة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "bla_ribery",
+        "name": { "en": "Franck Ribéry", "ar": "فرانك ريبيري" },
+        "subText": { "en": "Bayern Munich (9x Champion)", "ar": "بايرن ميونخ (بطل الدوري 9 مرات)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "RIB7" },
+        "value": 124,
+        "valueLabel": { "en": "124 Assists", "ar": "124 تمريرة حاسمة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "bla_reus",
+        "name": { "en": "Marco Reus", "ar": "ماركو رويس" },
+        "subText": { "en": "Mönchengladbach & Dortmund", "ar": "مونشنغلادباخ وبوروسيا دورتموند" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/dortmund.png", "fallbackText": "MR11" },
+        "value": 104,
+        "valueLabel": { "en": "104 Assists", "ar": "104 تمريرات حاسمة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "bla_zeroberto",
+        "name": { "en": "Zé Roberto", "ar": "زي روبرتو" },
+        "subText": { "en": "Leverkusen, Bayern & Hamburg", "ar": "ليفركوزن وبايرن وهامبورغ" },
+        "media": { "type": "player", "fallbackText": "ZER" },
+        "value": 88,
+        "valueLabel": { "en": "88 Assists", "ar": "88 تمريرة حاسمة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "bla_gotze",
+        "name": { "en": "Mario Götze", "ar": "ماريو غوتزه" },
+        "subText": { "en": "Dortmund, Bayern & Frankfurt", "ar": "دورتموند وبايرن وفرانكفورت" },
+        "media": { "type": "player", "fallbackText": "GOT" },
+        "value": 72,
+        "valueLabel": { "en": "72 Assists", "ar": "72 تمريرة حاسمة" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

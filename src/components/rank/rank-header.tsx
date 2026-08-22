@@ -85,23 +85,29 @@ export function RankHeader({
           )}
         </div>
 
-        {/* Duel Live Score in Header */}
-        {isDuel && opponent && (
-          <div className="flex items-center gap-2 text-[11px] font-stats">
-            <span className="text-lime font-black">
-              {user?.totalScore !== undefined && user.totalScore > 0 ? `+${user.totalScore}` : user?.totalScore ?? 0}
-            </span>
-            <span className="text-steel">:</span>
-            <span className="text-rose-400 font-black">
-              {opponent.totalScore > 0 ? `+${opponent.totalScore}` : opponent.totalScore}
-            </span>
-            {opponent.hasSubmittedCurrentRound && (
-              <span className="flex items-center text-lime text-[10px]">
-                <AppIcon icon={CheckCircle} size={12} weight="fill" />
+        {/* Score Pill in Header */}
+        <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-900 border border-white/10 text-[11px] font-stats shadow-inner">
+          {isDuel && opponent ? (
+            <>
+              <span className="text-lime font-black">
+                {user?.totalScore !== undefined && user.totalScore > 0 ? `+${user.totalScore}` : user?.totalScore ?? 0}
               </span>
-            )}
-          </div>
-        )}
+              <span className="text-steel font-bold">vs</span>
+              <span className="text-rose-400 font-black">
+                {opponent.totalScore > 0 ? `+${opponent.totalScore}` : opponent.totalScore}
+              </span>
+              {opponent.hasSubmittedCurrentRound && (
+                <span className="flex items-center text-lime text-[10px]">
+                  <AppIcon icon={CheckCircle} size={12} weight="fill" />
+                </span>
+              )}
+            </>
+          ) : (
+            <span className="text-lime font-black">
+              {user?.totalScore !== undefined && user.totalScore > 0 ? `+${user.totalScore}` : user?.totalScore ?? 0} pts
+            </span>
+          )}
+        </div>
 
         {/* Timer */}
         {deadline && (

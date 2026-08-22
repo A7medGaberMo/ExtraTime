@@ -1,6 +1,30 @@
 import { query } from "../_generated/server";
 import { v } from "convex/values";
 
+/**
+ * Seeded deterministic shuffle helper to guarantee all players in a match see the exact
+ * same scrambled initial card order, without revealing the correct rank order.
+ */
+function seededShuffle<T>(array: T[], seedStr: string): T[] {
+  let hash = 0;
+  for (let i = 0; i < seedStr.length; i++) {
+    hash = (hash << 5) - hash + seedStr.charCodeAt(i);
+    hash |= 0;
+  }
+
+  const pseudoRandom = () => {
+    hash = (hash * 9301 + 49297) % 233280;
+    return Math.abs(hash) / 233280;
+  };
+
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(pseudoRandom() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 export const getGameState = query({
   args: {
     gameId: v.id("rankGames"),
@@ -66,18 +90,20 @@ export const getGameState = query({
 
     // ── 2. ACTIVE ROUND (Cheat-Proof Sanitized DTO) ───────────────────
     if (game.status === "round_active" && rawQuestion) {
-      const shuffledAnswers = [...rawQuestion.answers]
-        .sort((a, b) => a.answerKey.localeCompare(b.answerKey))
-        .map((ans) => ({
-          answerKey: ans.answerKey,
-          name: ans.name[locale],
-          subText: ans.subText ? ans.subText[locale] : undefined,
-          media: ans.media,
-          // Value, valueLabel, and correctRank are STRIPPED
-          value: undefined,
-          valueLabel: undefined,
-          correctRank: undefined,
-        }));
+      // Deterministically scramble cards using game code, round index, and question slug
+      const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion.slug}`;
+      const scrambledCards = seededShuffle(rawQuestion.answers, roundSeed);
+
+      const sanitizedAnswers = scrambledCards.map((ans) => ({
+        answerKey: ans.answerKey,
+        name: ans.name[locale],
+        subText: ans.subText ? ans.subText[locale] : undefined,
+        media: ans.media,
+        // Value, valueLabel, and correctRank are STRIPPED
+        value: undefined,
+        valueLabel: undefined,
+        correctRank: undefined,
+      }));
 
       return {
         _id: game._id,
@@ -99,7 +125,7 @@ export const getGameState = query({
           difficulty: rawQuestion.difficulty,
           asOfDate: rawQuestion.asOfDate,
           tags: rawQuestion.tags,
-          answers: shuffledAnswers,
+          answers: sanitizedAnswers,
         },
         participants,
         currentRoundResult: null,

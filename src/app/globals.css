@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Felipa&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -17,7 +17,8 @@
   --font-anton: var(--font-anton), sans-serif;
   --font-bebas: var(--font-bebas), sans-serif;
   --font-story-script: 'Story Script', cursive, sans-serif;
-  --font-felipa: var(--font-felipa), 'Felipa', cursive, sans-serif;
+  --font-aref-ruqaa: var(--font-aref-ruqaa), 'Aref Ruqaa', serif;
+  --font-alexandria: var(--font-alexandria), 'Alexandria', sans-serif;
   --font-amiri: var(--font-amiri), 'Amiri', serif;
 
   /* Premium Core Color Mappings */
@@ -255,25 +256,32 @@ h6 {
 }
 
 /* Script & Luxury Typography Utilities */
-.story-script-regular,
-.font-story-script {
-  font-family: 'Story Script', cursive, sans-serif;
+.story-script-regular {
+  font-family: "Story Script", cursive, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.font-felipa {
-  font-family: 'Felipa', cursive, sans-serif;
+.font-story-script {
+  font-family: "Story Script", cursive, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.font-aref-ruqaa {
+  font-family: var(--font-aref-ruqaa), 'Aref Ruqaa', serif;
+}
+
+.font-alexandria {
+  font-family: var(--font-alexandria), 'Alexandria', sans-serif;
 }
 
 .font-amiri {
-  font-family: 'Amiri', serif;
+  font-family: var(--font-amiri), 'Amiri', serif;
 }
 
 .font-signature {
-  font-family: 'Story Script', 'Felipa', cursive, sans-serif;
+  font-family: 'Story Script', var(--font-aref-ruqaa), 'Amiri', cursive, sans-serif;
 }
 
 /* Reduced motion preference */

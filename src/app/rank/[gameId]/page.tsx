@@ -268,7 +268,7 @@ export default function RankArenaPage() {
     const opponentResult = roundResults.find((r) => r.guestId !== guestId);
 
     return (
-      <article className="mx-auto flex max-w-xl flex-col gap-3 sm:gap-6 px-3 py-2 sm:py-4 pb-24 sm:pb-8 select-none min-h-[calc(100dvh-5.5rem)]">
+      <article className="mx-auto flex max-w-lg flex-col h-[calc(100dvh-4.25rem)] max-h-[calc(100dvh-4.25rem)] overflow-hidden gap-2 px-3 py-2 select-none justify-between relative">
         <RankHeader
           currentRound={gameState.currentRoundIndex + 1}
           totalRounds={gameState.roundCount}

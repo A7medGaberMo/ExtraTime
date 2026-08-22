@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { CheckCircle, ArrowRight, Trophy, ShieldCheck, Medal } from '@phosphor-icons/react';
+import { CheckCircle, ArrowRight, Trophy } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { RankEntityAvatar, RankMedia } from './rank-entity-avatar';
@@ -41,7 +41,6 @@ interface RankRevealViewProps {
 
 export function RankRevealView({
   questionTitle,
-  questionSubtitle,
   answers,
   userDeltas,
   userRoundScore,
@@ -55,7 +54,6 @@ export function RankRevealView({
   const { lang, t } = useI18n();
   const deltaMap = new Map(userDeltas.map((d) => [d.answerKey, d]));
   const sortedAnswers = [...answers].sort((a, b) => a.correctRank - b.correctRank);
-  const isPerfectRound = userRoundScore === 10;
 
   const getPointsBadge = (points: number, delta: number) => {
     if (delta === 0) {
@@ -88,55 +86,38 @@ export function RankRevealView({
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto space-y-4 select-none animate-fade-in">
-      {/* Header Prompt */}
-      <div className="text-center space-y-1.5 pt-1 pb-1">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-lime/30 text-lime text-xs font-black uppercase tracking-wider">
-          <AppIcon icon={ShieldCheck} size={14} weight="duotone" />
-          <span>{lang === 'ar' ? 'كشف الترتيب الرسمي' : 'OFFICIAL REVEAL'}</span>
-        </div>
-        <h2 className="text-lg sm:text-2xl font-black text-white tracking-tight font-display">{questionTitle}</h2>
-        {questionSubtitle && (
-          <p className="text-xs text-steel font-medium max-w-lg mx-auto">{questionSubtitle}</p>
-        )}
-      </div>
-
-      {/* Perfect Round Celebration Banner */}
-      {isPerfectRound && (
-        <div className="p-3 rounded-2xl bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 border border-emerald-500/50 text-center flex items-center justify-center gap-2 text-emerald-400 font-black text-xs uppercase tracking-wider animate-bounce">
-          <AppIcon icon={Medal} size={18} weight="fill" />
-          <span>{t('rank.perfectOrder')}</span>
-        </div>
-      )}
-
-      {/* Round Score Banner */}
-      <div className="flex items-center justify-between p-4 rounded-2xl bg-slate-900/90 border border-lime/20 shadow-xl">
-        <div className="flex flex-col">
-          <span className="text-[11px] text-steel font-bold uppercase tracking-wider">
-            {t('rank.yourScore')}
-          </span>
-          <span className="text-2xl sm:text-3xl font-black text-white font-stats">
-            {userRoundScore > 0 ? `+${userRoundScore}` : userRoundScore}{' '}
-            <span className="text-xs font-semibold text-lime">pts</span>
-          </span>
-        </div>
-
-        {/* In Duel: Opponent Score Breakdown */}
-        {isDuel && opponentRoundScore !== undefined && (
-          <div className="flex flex-col items-end">
-            <span className="text-[11px] text-steel font-bold uppercase tracking-wider">
-              {opponentName ? `${opponentName}:` : t('rank.rivalScore')}
+    <div className="flex-1 flex flex-col justify-between gap-1 sm:gap-2 w-full max-w-lg mx-auto select-none overflow-hidden animate-fade-in">
+      {/* Header Prompt & Round Score Combined Strip */}
+      <div className="shrink-0 space-y-1 text-center">
+        <div className="flex items-center justify-between px-3 py-1.5 rounded-xl bg-slate-900/90 border border-lime/20 shadow-lg">
+          <div className="flex items-center gap-1.5">
+            <span className="text-[10px] sm:text-[11px] text-steel font-bold uppercase tracking-wider">
+              {t('rank.yourScore')}:
             </span>
-            <span className="text-xl sm:text-2xl font-black text-slate-300 font-stats">
-              {opponentRoundScore > 0 ? `+${opponentRoundScore}` : opponentRoundScore}{' '}
-              <span className="text-xs font-medium text-steel">pts</span>
+            <span className="text-base sm:text-xl font-black text-lime font-stats">
+              {userRoundScore > 0 ? `+${userRoundScore}` : userRoundScore} pts
             </span>
           </div>
-        )}
+
+          {isDuel && opponentRoundScore !== undefined && (
+            <div className="flex items-center gap-1.5">
+              <span className="text-[10px] sm:text-[11px] text-steel font-bold uppercase tracking-wider truncate max-w-[90px]">
+                {opponentName ? `${opponentName}:` : t('rank.rivalScore')}:
+              </span>
+              <span className="text-base sm:text-xl font-black text-slate-300 font-stats">
+                {opponentRoundScore > 0 ? `+${opponentRoundScore}` : opponentRoundScore} pts
+              </span>
+            </div>
+          )}
+        </div>
+
+        <h2 className="text-xs sm:text-base font-black text-white tracking-tight font-display line-clamp-1 px-1">
+          {questionTitle}
+        </h2>
       </div>
 
       {/* Correct Order List (Rank 1 to 5) */}
-      <div className="space-y-2">
+      <div className="flex-1 flex flex-col justify-center min-h-0 space-y-1 sm:space-y-1.5">
         {sortedAnswers.map((item) => {
           const deltaInfo = deltaMap.get(item.answerKey);
           const submittedRank = deltaInfo?.submittedRank ?? item.correctRank;
@@ -148,38 +129,34 @@ export function RankRevealView({
             <div
               key={item.answerKey}
               className={`
-                flex items-center justify-between p-2.5 sm:p-3 rounded-2xl border transition-all duration-200
+                flex items-center justify-between px-2.5 py-1 sm:py-1.5 rounded-xl border transition-all duration-200
                 ${
                   isExact
-                    ? 'bg-slate-900/95 border-emerald-500/50 shadow-md shadow-emerald-950/20'
+                    ? 'bg-slate-900/95 border-emerald-500/50 shadow-sm shadow-emerald-950/20'
                     : 'bg-slate-900/80 border-slate-800'
                 }
               `}
             >
               {/* Left Side: Correct Rank + Avatar + Text */}
-              <div className="flex items-center gap-2.5 min-w-0 pe-2">
-                <div className="w-8 h-8 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-center font-black text-sm text-lime font-stats shrink-0">
+              <div className="flex items-center gap-2 min-w-0 flex-1 pe-1.5">
+                <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-lg bg-slate-950 border border-slate-800 flex items-center justify-center font-black text-[11px] sm:text-xs text-lime font-stats shrink-0">
                   #{item.correctRank}
                 </div>
 
                 <RankEntityAvatar media={item.media} name={item.name} size="sm" />
 
-                <div className="flex flex-col min-w-0">
-                  <span className="text-xs sm:text-sm font-bold text-white tracking-wide truncate">
-                    {item.name}
-                  </span>
-                  {item.subText && (
-                    <span className="text-[10px] sm:text-[11px] text-steel font-medium truncate">
-                      {item.subText}
+                <div className="flex flex-col min-w-0 flex-1">
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-xs sm:text-sm font-black text-white truncate leading-tight">
+                      {item.name}
                     </span>
-                  )}
-                  <div className="flex items-center gap-2 text-[11px] mt-0.5">
-                    <span className="font-bold text-lime font-stats">{item.valueLabel}</span>
-                    <span className="text-slate-600">•</span>
-                    <span className="text-steel font-medium">
-                      {lang === 'ar' ? `ترتيبك: #${submittedRank}` : `You: #${submittedRank}`}
+                    <span className="font-black text-lime text-[10px] sm:text-xs font-stats">
+                      ({item.valueLabel})
                     </span>
                   </div>
+                  <span className="text-[9px] sm:text-[10px] text-steel font-medium truncate leading-none">
+                    {lang === 'ar' ? `ترتيبك: #${submittedRank}` : `You: #${submittedRank}`}
+                  </span>
                 </div>
               </div>
 
@@ -191,16 +168,17 @@ export function RankRevealView({
       </div>
 
       {/* Advance Button */}
-      <div className="pt-2">
+      <div className="shrink-0 pt-0.5 sm:pt-1">
         <Button
           variant="primary"
-          size="lg"
+          size="md"
           fullWidth
           onClick={onAdvance}
           disabled={isAdvancing}
           loading={isAdvancing}
-          leftIcon={isLastRound ? <AppIcon icon={Trophy} size={18} weight="bold" /> : undefined}
-          rightIcon={!isLastRound ? <AppIcon icon={ArrowRight} size={18} weight="bold" /> : undefined}
+          leftIcon={isLastRound ? <AppIcon icon={Trophy} size={16} weight="bold" /> : undefined}
+          rightIcon={!isLastRound ? <AppIcon icon={ArrowRight} size={16} weight="bold" /> : undefined}
+          className="min-h-[40px] sm:min-h-[46px]"
         >
           {isLastRound ? t('rank.viewFinalResults') : t('rank.nextRound')}
         </Button>

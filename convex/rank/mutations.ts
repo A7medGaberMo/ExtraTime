@@ -19,9 +19,83 @@ function generateRankRoomCode(): string {
   return `RNK-${randomPart}`;
 }
 
+/**
+ * Fisher-Yates uniform shuffle helper.
+ */
+function shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/**
+ * Classifies a question into a high-level thematic domain for maximum variety per game.
+ */
+function getThematicDomain(q: { tags?: string[]; scopeType?: string }): string {
+  const tags = new Set(q.tags || []);
+  if (
+    tags.has("world-cup") ||
+    tags.has("world-cup-2022") ||
+    tags.has("euro") ||
+    tags.has("copa-america") ||
+    tags.has("afcon") ||
+    tags.has("asian-cup") ||
+    tags.has("national-teams") ||
+    tags.has("olympics") ||
+    tags.has("concacaf")
+  ) {
+    return "internationals";
+  }
+
+  if (
+    tags.has("ucl") ||
+    tags.has("champions-league") ||
+    tags.has("europa-league") ||
+    tags.has("uel") ||
+    tags.has("uefa-super-cup") ||
+    tags.has("club-world-cup") ||
+    tags.has("treble")
+  ) {
+    return "european_and_continental";
+  }
+
+  if (
+    tags.has("premier-league") ||
+    tags.has("la-liga") ||
+    tags.has("serie-a") ||
+    tags.has("bundesliga") ||
+    tags.has("ligue-1") ||
+    tags.has("el-clasico") ||
+    tags.has("manchester-derby") ||
+    tags.has("north-london-derby") ||
+    tags.has("derby-madonnina") ||
+    tags.has("merseyside-derby") ||
+    q.scopeType === "PER_CLUB"
+  ) {
+    return "domestic_clubs_and_leagues";
+  }
+
+  if (
+    tags.has("transfers") ||
+    tags.has("fees") ||
+    tags.has("market") ||
+    tags.has("market-value") ||
+    q.scopeType === "TRANSFERS_MARKET" ||
+    q.scopeType === "PER_SEASON"
+  ) {
+    return "market_and_seasons";
+  }
+
+  return "player_legends_and_milestones";
+}
+
 async function pickRandomQuestionIds(
   ctx: GenericMutationCtx<DataModel>,
-  count: 3 | 5
+  count: 3 | 5,
+  participantGuestIds?: Id<"guestUsers">[]
 ): Promise<Id<"rankQuestions">[]> {
   const allActive = await ctx.db
     .query("rankQuestions")
@@ -34,45 +108,77 @@ async function pickRandomQuestionIds(
     );
   }
 
-  // Balanced progressive selection: try to pick diverse scopes and progression
-  const shuffled = [...allActive].sort(() => Math.random() - 0.5);
+  // 1. Gather recent question IDs to prevent duplicate/repeated questions for participants
+  const recentQuestionIds = new Set<Id<"rankQuestions">>();
+  if (participantGuestIds && participantGuestIds.length > 0) {
+    const guestIdSet = new Set(participantGuestIds);
+    // Take the 30 most recent rank games
+    const recentGames = await ctx.db.query("rankGames").order("desc").take(30);
 
-  // Group by difficulty
-  const easy = shuffled.filter((q) => q.difficulty === "EASY");
-  const medium = shuffled.filter((q) => q.difficulty === "MEDIUM");
-  const hard = shuffled.filter((q) => q.difficulty === "HARD" || q.difficulty === "VERY_HARD");
+    for (const g of recentGames) {
+      const involvesPlayer = g.participants.some((p) => guestIdSet.has(p.guestId));
+      if (involvesPlayer && g.questionIds) {
+        for (const qId of g.questionIds) {
+          recentQuestionIds.add(qId);
+        }
+      }
+    }
+  }
+
+  // 2. Candidate pool: prioritize fresh (unplayed) questions
+  let candidatePool = allActive.filter((q) => !recentQuestionIds.has(q._id));
+  if (candidatePool.length < count) {
+    // If unplayed questions run low, blend unplayed first with all active
+    candidatePool = allActive;
+  }
+
+  // 3. Two-Tier Category Shuffle:
+  // Group candidates by thematic domain
+  const domainMap = new Map<string, typeof allActive>();
+  for (const q of candidatePool) {
+    const domain = getThematicDomain(q);
+    if (!domainMap.has(domain)) {
+      domainMap.set(domain, []);
+    }
+    domainMap.get(domain)!.push(q);
+  }
+
+  // Shuffle questions within each category domain
+  for (const [domain, questions] of domainMap.entries()) {
+    domainMap.set(domain, shuffleArray(questions));
+  }
+
+  // Shuffle the order of categories
+  const domainKeys = shuffleArray(Array.from(domainMap.keys()));
 
   const selected: typeof allActive = [];
+  const selectedSet = new Set<string>();
 
-  if (count === 3) {
-    // 1 easy/medium, 1 medium, 1 hard
-    if (easy.length > 0) selected.push(easy[0]);
-    else if (medium.length > 0) selected.push(medium[0]);
-
-    const remainingMedium = medium.filter((q) => !selected.includes(q));
-    if (remainingMedium.length > 0) selected.push(remainingMedium[0]);
-    else if (shuffled.length > selected.length) selected.push(shuffled.find((q) => !selected.includes(q))!);
-
-    const remainingHard = hard.filter((q) => !selected.includes(q));
-    if (remainingHard.length > 0) selected.push(remainingHard[0]);
-    else if (shuffled.length > selected.length) selected.push(shuffled.find((q) => !selected.includes(q))!);
-  } else {
-    // 5 rounds: 1 easy, 2 medium, 2 hard/very hard
-    if (easy.length > 0) selected.push(easy[0]);
-    const remMed = medium.filter((q) => !selected.includes(q));
-    selected.push(...remMed.slice(0, 2));
-    const remHard = hard.filter((q) => !selected.includes(q));
-    selected.push(...remHard.slice(0, 2));
+  // Pass 1: Pick 1 question from distinct shuffled categories
+  for (const domain of domainKeys) {
+    if (selected.length >= count) break;
+    const bucket = domainMap.get(domain)!;
+    const item = bucket.find((q) => !selectedSet.has(q._id));
+    if (item) {
+      selected.push(item);
+      selectedSet.add(item._id);
+    }
   }
 
-  // Fallback to fill up if groups were uneven
-  while (selected.length < count) {
-    const nextQ = shuffled.find((q) => !selected.includes(q));
-    if (!nextQ) break;
-    selected.push(nextQ);
+  // Pass 2: If more questions are needed, fill from remaining candidate pool
+  if (selected.length < count) {
+    const remainingShuffled = shuffleArray(candidatePool.filter((q) => !selectedSet.has(q._id)));
+    for (const q of remainingShuffled) {
+      if (selected.length >= count) break;
+      selected.push(q);
+      selectedSet.add(q._id);
+    }
   }
 
-  return selected.slice(0, count).map((q) => q._id);
+  // Pass 3: Final round order shuffle so rounds are dynamic
+  const finalShuffledOrder = shuffleArray(selected);
+
+  return finalShuffledOrder.map((q) => q._id);
 }
 
 async function getGuestProfile(ctx: GenericMutationCtx<DataModel>, guestId: Id<"guestUsers">) {
@@ -94,14 +200,14 @@ export const seedQuestionBank = mutation({
     // Validate bank first
     validateQuestionBank(allRankSeedQuestions);
 
+    const allDbQuestions = await ctx.db.query("rankQuestions").collect();
+    const dbQuestionMap = new Map(allDbQuestions.map((q) => [q.slug, q]));
+
     let inserted = 0;
     let updated = 0;
 
     for (const q of allRankSeedQuestions) {
-      const existing = await ctx.db
-        .query("rankQuestions")
-        .filter((doc) => doc.eq(doc.field("slug"), q.slug))
-        .first();
+      const existing = dbQuestionMap.get(q.slug);
 
       const docData = {
         slug: q.slug,
@@ -129,7 +235,6 @@ export const seedQuestionBank = mutation({
 
     // Clean up questions removed from seed bank
     const validSlugs = new Set(allRankSeedQuestions.map((q) => q.slug));
-    const allDbQuestions = await ctx.db.query("rankQuestions").collect();
     let deleted = 0;
     for (const dbQ of allDbQuestions) {
       if (!validSlugs.has(dbQ.slug)) {
@@ -153,7 +258,7 @@ export const createSoloGame = mutation({
   handler: async (ctx, args) => {
     const guest = await getGuestProfile(ctx, args.guestId);
 
-    const questionIds = await pickRandomQuestionIds(ctx, args.roundCount);
+    const questionIds = await pickRandomQuestionIds(ctx, args.roundCount, [args.guestId]);
     const now = Date.now();
     const code = generateRankRoomCode();
 
@@ -248,8 +353,13 @@ export const joinDuelPrivateRoom = mutation({
     }
     if (game.participants.length >= 2) throw new Error("This room is full.");
 
-    // Pick questions and start game
-    const questionIds = await pickRandomQuestionIds(ctx, game.roundCount);
+    // Pick non-repeated questions for both players and start game
+    const hostGuestId = game.participants[0]?.guestId;
+    const questionIds = await pickRandomQuestionIds(
+      ctx,
+      game.roundCount,
+      hostGuestId ? [hostGuestId, args.guestId] : [args.guestId]
+    );
     const now = Date.now();
 
     const updatedParticipants = [
@@ -308,8 +418,13 @@ export const findOrCreatePublicMatch = mutation({
       const matchesRound = room.roundCount === args.roundCount;
 
       if (!isHost && isRecent && matchesRound && room.participants.length === 1) {
-        // Match found!
-        const questionIds = await pickRandomQuestionIds(ctx, room.roundCount);
+        // Match found! Pick non-repeated questions
+        const hostGuestId = room.participants[0]?.guestId;
+        const questionIds = await pickRandomQuestionIds(
+          ctx,
+          room.roundCount,
+          hostGuestId ? [hostGuestId, args.guestId] : [args.guestId]
+        );
         const updatedParticipants = [
           ...room.participants,
           {

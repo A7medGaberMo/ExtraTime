@@ -1,0 +1,392 @@
+[
+  {
+    "slug": "fifa-the-best-podium-appearances",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["fifa-the-best", "awards", "messi", "ronaldo", "zidane", "r9", "ronaldinho"],
+    "title": {
+      "en": "Rank these 5 legends by FIFA World Player / The Best top-3 podium finishes",
+      "ar": "رتّب الأساطير الخمسة حسب عدد مرات التواجد في المراكز الثلاثة الأولى لجائزة الأفضل من الفيفا"
+    },
+    "subtitle": {
+      "en": "FIFA World Player of the Year & The Best FIFA Men's Player podium finishes",
+      "ar": "التواجد في منصة التتويج (المراكز الثلاثة الأولى) لجائزة الفيفا لأفضل لاعب"
+    },
+    "metricLabel": { "en": "Podiums", "ar": "منصات تتويج" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ftb_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "8x Winner (17 Top-3 Podiums - All-Time Record)", "ar": "فاز بالجائزة 8 مرات (17 مرة في التوب 3 - رقم قياسي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/argentina.png", "fallbackText": "LM10" },
+        "value": 17,
+        "valueLabel": { "en": "17 Podiums", "ar": "17 منصة تتويج" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ftb_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "5x Winner (15 Top-3 Podiums)", "ar": "فاز بالجائزة 5 مرات (15 مرة في التوب 3)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/portugal.png", "fallbackText": "CR7" },
+        "value": 15,
+        "valueLabel": { "en": "15 Podiums", "ar": "15 منصة تتويج" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ftb_zidane",
+        "name": { "en": "Zinedine Zidane", "ar": "زين الدين زيدان" },
+        "subText": { "en": "3x Winner (6 Top-3 Podiums)", "ar": "فاز بالجائزة 3 مرات (6 منصات تتويج)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/france.png", "fallbackText": "ZZ" },
+        "value": 6,
+        "valueLabel": { "en": "6 Podiums", "ar": "6 منصات تتويج" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ftb_r9",
+        "name": { "en": "Ronaldo Nazário", "ar": "رونالدو البرازيلي" },
+        "subText": { "en": "3x Winner (5 Top-3 Podiums)", "ar": "فاز بالجائزة 3 مرات (5 منصات تتويج)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/brazil.png", "fallbackText": "R9" },
+        "value": 5,
+        "valueLabel": { "en": "5 Podiums", "ar": "5 منصات تتويج" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ftb_ronaldinho",
+        "name": { "en": "Ronaldinho Gaúcho", "ar": "رونالدينيو غاوشو" },
+        "subText": { "en": "2x Winner (3 Top-3 Podiums)", "ar": "فاز بالجائزة مرتين (3 منصات تتويج)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/brazil.png", "fallbackText": "R10" },
+        "value": 3,
+        "valueLabel": { "en": "3 Podiums", "ar": "3 منصات تتويج" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "golden-shoe-single-season-points-record",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["golden-shoe", "goals", "messi", "ronaldo", "lewandowski", "suarez", "haaland"],
+    "title": {
+      "en": "Rank these 5 Golden Shoe winning campaigns by total official points scored",
+      "ar": "رتّب مواسم الحذاء الذهبي الأوروبي الخمسة حسب إجمالي النقاط المحتسبة"
+    },
+    "subtitle": {
+      "en": "Official European Golden Shoe points (League goals × League coefficient factor)",
+      "ar": "نقاط الحذاء الذهبي الأوروبي (أهداف الدوري × معامل صعوبة الدوري)"
+    },
+    "metricLabel": { "en": "Points", "ar": "نقاط" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gsp_messi_12",
+        "name": { "en": "Lionel Messi (2011–12)", "ar": "ليونيل ميسي (2011–12)" },
+        "subText": { "en": "Barcelona (50 Goals × 2.0 = 100 Points - All-Time Record)", "ar": "برشلونة (50 هدفًا × 2.0 = 100 نقطة - رقم قياسي تاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LM10" },
+        "value": 100,
+        "valueLabel": { "en": "100 Points (50 Goals)", "ar": "100 نقطة (50 هدفًا)" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gsp_cr7_15",
+        "name": { "en": "Cristiano Ronaldo (2014–15)", "ar": "كريستيانو رونالدو (2014–15)" },
+        "subText": { "en": "Real Madrid (48 Goals × 2.0 = 96 Points)", "ar": "ريال مدريد (48 هدفًا × 2.0 = 96 نقطة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "CR7" },
+        "value": 96,
+        "valueLabel": { "en": "96 Points (48 Goals)", "ar": "96 نقطة (48 هدفًا)" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gsp_lewa_21",
+        "name": { "en": "Robert Lewandowski (2020–21)", "ar": "روبرت ليفاندوفسكي (2020–21)" },
+        "subText": { "en": "Bayern Munich (41 Goals × 2.0 = 82 Points)", "ar": "بايرن ميونخ (41 هدفًا × 2.0 = 82 نقطة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "RL9" },
+        "value": 82,
+        "valueLabel": { "en": "82 Points (41 Goals)", "ar": "82 نقطة (41 هدفًا)" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gsp_suarez_16",
+        "name": { "en": "Luis Suárez (2015–16)", "ar": "لويس سواريز (2015–16)" },
+        "subText": { "en": "Barcelona (40 Goals × 2.0 = 80 Points)", "ar": "برشلونة (40 هدفًا × 2.0 = 80 نقطة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LS9" },
+        "value": 80,
+        "valueLabel": { "en": "80 Points (40 Goals)", "ar": "80 نقطة (40 هدفًا)" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gsp_haaland_23",
+        "name": { "en": "Erling Haaland (2022–23)", "ar": "إيرلينغ هالاند (2022–23)" },
+        "subText": { "en": "Manchester City (36 Goals × 2.0 = 72 Points)", "ar": "مانشستر سيتي (36 هدفًا × 2.0 = 72 نقطة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "EH9" },
+        "value": 72,
+        "valueLabel": { "en": "72 Points (36 Goals)", "ar": "72 نقطة (36 هدفًا)" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "youngest-ballon-dor-winners-age-in-days",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ballon-dor", "youngest", "r9", "owen", "messi", "best", "eusebio"],
+    "title": {
+      "en": "Rank these 5 Ballon d'Or winners by youngest age when receiving their first award (youngest first)",
+      "ar": "رتّب الفائزين بالكرة الذهبية الخمسة حسب أصغر سن عند نيل أول جائزة (الأصغر أولاً)"
+    },
+    "subtitle": {
+      "en": "Age in exact days on the date of winning their first Ballon d'Or",
+      "ar": "العمر الدقيق بالأيام يوم التتويج بالكرة الذهبية الأولى"
+    },
+    "metricLabel": { "en": "Age in Days", "ar": "العمر بالأيام" },
+    "direction": "asc",
+    "answers": [
+      {
+        "answerKey": "ybd_r9",
+        "name": { "en": "Ronaldo Nazário (1997)", "ar": "رونالدو البرازيلي (1997)" },
+        "subText": { "en": "Inter Milan (21 years, 95 days - All-Time Record)", "ar": "إنتر ميلان (21 سنة و95 يومًا - الرقم القياسي التاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/inter.png", "fallbackText": "R9" },
+        "value": 7761,
+        "valueLabel": { "en": "21y 95d", "ar": "21 سنة و95 يومًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ybd_owen",
+        "name": { "en": "Michael Owen (2001)", "ar": "مايكل أوين (2001)" },
+        "subText": { "en": "Liverpool (22 years, 4 days)", "ar": "ليفربول (22 سنة و4 أيام)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "OWE" },
+        "value": 8040,
+        "valueLabel": { "en": "22y 4d", "ar": "22 سنة و4 أيام" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ybd_messi",
+        "name": { "en": "Lionel Messi (2009)", "ar": "ليونيل ميسي (2009)" },
+        "subText": { "en": "Barcelona (22 years, 160 days)", "ar": "برشلونة (22 سنة و160 يومًا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LM10" },
+        "value": 8197,
+        "valueLabel": { "en": "22y 160d", "ar": "22 سنة و160 يومًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ybd_best",
+        "name": { "en": "George Best (1968)", "ar": "جورج بيست (1968)" },
+        "subText": { "en": "Manchester United (22 years, 216 days)", "ar": "مانشستر يونايتد (22 سنة و216 يومًا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "BEST" },
+        "value": 8253,
+        "valueLabel": { "en": "22y 216d", "ar": "22 سنة و216 يومًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ybd_eusebio",
+        "name": { "en": "Eusébio (1965)", "ar": "أوزيبيو (1965)" },
+        "subText": { "en": "Benfica (23 years, 337 days)", "ar": "بنفيكا (23 سنة و337 يومًا)" },
+        "media": { "type": "player", "fallbackText": "EUS" },
+        "value": 8735,
+        "valueLabel": { "en": "23y 337d", "ar": "23 سنة و337 يومًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-2022-most-man-of-the-match-awards",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup-2022", "motm", "messi", "mbappe", "pulisic", "saka", "vini"],
+    "title": {
+      "en": "Rank these 5 stars by official Man of the Match awards won at FIFA World Cup 2022",
+      "ar": "رتّب النجوم الخمسة حسب عدد جوائز رجل المباراة في مونديال قطر 2022"
+    },
+    "subtitle": {
+      "en": "Official FIFA Budweiser Man of the Match awards at Qatar 2022",
+      "ar": "جوائز رجل المباراة الرسمية من الفيفا في كأس العالم 2022"
+    },
+    "metricLabel": { "en": "MOTM Awards", "ar": "رجل المباراة" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "motm_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "Argentina (5 Awards - Single Tournament World Record)", "ar": "الأرجنتين (5 جوائز - الرقم القياسي في نسخة واحدة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/argentina.png", "fallbackText": "LM10" },
+        "value": 5,
+        "valueLabel": { "en": "5 Awards", "ar": "5 جوائز رجل المباراة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "motm_mbappe",
+        "name": { "en": "Kylian Mbappé", "ar": "كيليان مبابي" },
+        "subText": { "en": "France (3 Awards: Australia, Denmark, Poland)", "ar": "فرنسا (3 جوائز: أستراليا، الدنمارك، بولندا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/france.png", "fallbackText": "KM7" },
+        "value": 3,
+        "valueLabel": { "en": "3 Awards", "ar": "3 جوائز رجل المباراة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "motm_pulisic",
+        "name": { "en": "Christian Pulisic", "ar": "كريستيان بوليسيتش" },
+        "subText": { "en": "USA (2 Awards: England, Iran)", "ar": "أمريكا (جائزتان: إنجلترا، إيران)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/usa.png", "fallbackText": "PUL" },
+        "value": 2,
+        "valueLabel": { "en": "2 Awards", "ar": "جائزتان رجل المباراة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "motm_saka",
+        "name": { "en": "Bukayo Saka", "ar": "بوكايو ساكا" },
+        "subText": { "en": "England (1 Award: Iran)", "ar": "إنجلترا (جائزة واحدة: إيران)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/england.png", "fallbackText": "SAK7" },
+        "value": 1,
+        "valueLabel": { "en": "1 Award", "ar": "جائزة واحدة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "motm_vini",
+        "name": { "en": "Vinícius Júnior", "ar": "فينيسيوس جونيور" },
+        "subText": { "en": "Brazil (0 MOTM Awards)", "ar": "البرازيل (0 جوائز رجل المباراة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/brazil.png", "fallbackText": "VJR" },
+        "value": 0,
+        "valueLabel": { "en": "0 Awards", "ar": "0 جوائز" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "golden-boy-award-winners-peak-market-value",
+    "scopeType": "TRANSFERS_MARKET",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["golden-boy", "market-value", "mbappe", "haaland", "pedri", "aguero", "rooney"],
+    "title": {
+      "en": "Rank these 5 Golden Boy award winners by career peak Transfermarkt market valuation (€M)",
+      "ar": "رتّب الفائزين بجائزة الفتى الذهبي حسب أعلى قيمة سوقية وصلوا إليها باليورو (€)"
+    },
+    "subtitle": {
+      "en": "Peak career Transfermarkt valuation in Millions of Euros",
+      "ar": "أعلى قيمة تسويقية وصل إليها اللاعب طوال مسيرته بملايين اليورو"
+    },
+    "metricLabel": { "en": "Peak Value (€M)", "ar": "أعلى قيمة سوقية (€)" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gbv_mbappe",
+        "name": { "en": "Kylian Mbappé (2017 Winner)", "ar": "كيليان مبابي (الفائز 2017)" },
+        "subText": { "en": "PSG (All-Time Transfermarkt Record Peak)", "ar": "باريس سان جيرمان (الرقم القياسي التاريخي)" },
+        "media": { "type": "player", "fallbackText": "KM" },
+        "value": 200,
+        "valueLabel": { "en": "€200 Million", "ar": "200 مليون يورو" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gbv_haaland",
+        "name": { "en": "Erling Haaland (2020 Winner)", "ar": "إيرلينغ هالاند (الفائز 2020)" },
+        "subText": { "en": "Manchester City", "ar": "مانشستر سيتي" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "EH9" },
+        "value": 180,
+        "valueLabel": { "en": "€180 Million", "ar": "180 مليون يورو" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gbv_pedri",
+        "name": { "en": "Pedri (2021 Winner)", "ar": "بيدري (الفائز 2021)" },
+        "subText": { "en": "FC Barcelona", "ar": "برشلونة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "PED8" },
+        "value": 100,
+        "valueLabel": { "en": "€100 Million", "ar": "100 مليون يورو" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gbv_aguero",
+        "name": { "en": "Sergio Agüero (2007 Winner)", "ar": "سيرخيو أغويرو (الفائز 2007)" },
+        "subText": { "en": "Manchester City", "ar": "مانشستر سيتي" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KUN" },
+        "value": 80,
+        "valueLabel": { "en": "€80 Million", "ar": "80 مليون يورو" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gbv_rooney",
+        "name": { "en": "Wayne Rooney (2004 Winner)", "ar": "واين روني (الفائز 2004)" },
+        "subText": { "en": "Manchester United", "ar": "مانشستر يونايتد" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "WR10" },
+        "value": 65,
+        "valueLabel": { "en": "€65 Million", "ar": "65 مليون يورو" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ballon-dor-points-record-landslide-wins",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ballon-dor", "points", "modric", "cr7", "messi", "benzema"],
+    "title": {
+      "en": "Rank these 5 Ballon d'Or winning editions by total voting points tallied",
+      "ar": "رتّب نسخ التتويج بالكرة الذهبية الخمسة حسب عدد نقاط التصويت المحصودة"
+    },
+    "subtitle": {
+      "en": "Total voting points awarded by the international jury",
+      "ar": "إجمالي نقاط تصويت الصحفيين في حفل الكرة الذهبية"
+    },
+    "metricLabel": { "en": "Points", "ar": "نقاط التصويت" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "bdp_modric_18",
+        "name": { "en": "Luka Modrić (2018)", "ar": "لوكا مودريتش (2018)" },
+        "subText": { "en": "Real Madrid & Croatia (All-Time Points Record)", "ar": "ريال مدريد وكرواتيا (الرقم القياسي التاريخي للنقاط)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "LM10" },
+        "value": 753,
+        "valueLabel": { "en": "753 Points", "ar": "753 نقطة" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "bdp_cr7_16",
+        "name": { "en": "Cristiano Ronaldo (2016)", "ar": "كريستيانو رونالدو (2016)" },
+        "subText": { "en": "Real Madrid & Portugal (UCL & EURO Double)", "ar": "ريال مدريد والبرتغال (ثنائية الأبطال واليورو)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "CR7" },
+        "value": 745,
+        "valueLabel": { "en": "745 Points", "ar": "745 نقطة" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "bdp_messi_19",
+        "name": { "en": "Lionel Messi (2019)", "ar": "ليونيل ميسي (2019)" },
+        "subText": { "en": "Barcelona (6th Ballon d'Or)", "ar": "برشلونة (الكرة الذهبية السادسة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LM10" },
+        "value": 686,
+        "valueLabel": { "en": "686 Points", "ar": "686 نقطة" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "bdp_benzema_22",
+        "name": { "en": "Karim Benzema (2022)", "ar": "كريم بنزيما (2022)" },
+        "subText": { "en": "Real Madrid (Landslide Victory - 356 pts margin)", "ar": "ريال مدريد (اكتساح بفارق 356 نقطة عن الثاني)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "value": 549,
+        "valueLabel": { "en": "549 Points", "ar": "549 نقطة" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "bdp_messi_23",
+        "name": { "en": "Lionel Messi (2023)", "ar": "ليونيل ميسي (2023)" },
+        "subText": { "en": "PSG & Inter Miami (World Cup Coronation - 8th Award)", "ar": "باريس وإنتر ميامي (تتويج المونديال - الكرة الثامنة)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/argentina.png", "fallbackText": "LM10" },
+        "value": 462,
+        "valueLabel": { "en": "462 Points", "ar": "462 نقطة" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

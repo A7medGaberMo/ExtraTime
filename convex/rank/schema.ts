@@ -63,7 +63,8 @@ export const rankQuestionsTable = defineTable({
 })
   .index("by_active", ["isActive"])
   .index("by_scope", ["isActive", "scopeType"])
-  .index("by_difficulty", ["isActive", "difficulty"]);
+  .index("by_difficulty", ["isActive", "difficulty"])
+  .index("by_slug", ["slug"]);
 
 // Participant State within an Active Game
 export const rankParticipantValidator = v.object({

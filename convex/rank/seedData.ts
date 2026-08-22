@@ -11,6 +11,7 @@ import domesticCups from "../../data/rank/clubs/domestic-cups.json";
 import clubRecordsExtra from "../../data/rank/clubs/club-records-extra.json";
 import singleClubLegends from "../../data/rank/clubs/single-club-legends.json";
 import clubBattles from "../../data/rank/clubs/club-battles.json";
+import continentalRecords from "../../data/rank/clubs/continental-and-treble-records.json";
 import worldCupEditions from "../../data/rank/competitions/world-cup-editions.json";
 import uclSeason2526 from "../../data/rank/competitions/ucl-season-2025-26.json";
 import europaLeague from "../../data/rank/competitions/europa-league.json";
@@ -18,7 +19,9 @@ import continentalCups from "../../data/rank/competitions/continental-cups.json"
 import internationalTournaments from "../../data/rank/competitions/international-tournaments.json";
 import tournamentEditions from "../../data/rank/competitions/tournament-editions.json";
 import tournamentMatchups from "../../data/rank/competitions/tournament-matchups.json";
+import worldCupSpecials from "../../data/rank/competitions/world-cup-specials.json";
 import worldCupRecords from "../../data/rank/national-teams/world-cup-records.json";
+import internationalMilestones from "../../data/rank/national-teams/international-milestones.json";
 import uclPlayerRecords from "../../data/rank/players/ucl-records.json";
 import worldCupLegends from "../../data/rank/players/world-cup-legends.json";
 import transfersAndInt from "../../data/rank/players/transfers-and-international.json";
@@ -31,16 +34,21 @@ import transferMarketRecords from "../../data/rank/players/transfer-market-recor
 import uclAppearances from "../../data/rank/players/champions-league-appearances.json";
 import internationalCaps from "../../data/rank/players/international-caps.json";
 import playmakersAssists from "../../data/rank/players/playmakers-assists.json";
+import playmakersExtra from "../../data/rank/players/playmakers-and-assists-extra.json";
 import defendersAndGoalkeepers from "../../data/rank/players/defenders-and-goalkeepers.json";
+import defensiveIcons from "../../data/rank/players/defensive-and-disciplinary-icons.json";
 import africanAndAsianIcons from "../../data/rank/players/african-and-asian-icons.json";
 import freeKicks from "../../data/rank/players/free-kicks.json";
 import goalkeepingCleanSheets from "../../data/rank/players/goalkeeping-clean-sheets.json";
 import milestonesAndHattricks from "../../data/rank/players/milestones-and-hattricks.json";
 import youngestAndMilestones from "../../data/rank/players/youngest-and-milestones.json";
 import starMatchups from "../../data/rank/players/star-matchups.json";
+import derbyKings from "../../data/rank/players/derby-and-clasico-kings.json";
+import awardsExtra from "../../data/rank/players/ballon-dor-and-individual-awards.json";
 import plClubSeasons from "../../data/rank/club-seasons/premier-league-records.json";
 import uclSingleCampaigns from "../../data/rank/player-seasons/ucl-single-campaigns.json";
 import eliteCampaigns from "../../data/rank/player-seasons/elite-campaigns.json";
+import legendaryCampaignsExtra from "../../data/rank/player-seasons/legendary-campaigns-extra.json";
 
 // Merge and deduplicate by slug
 const rawCombined: RankQuestionInput[] = [
@@ -54,6 +62,7 @@ const rawCombined: RankQuestionInput[] = [
   ...(clubRecordsExtra as RankQuestionInput[]),
   ...(singleClubLegends as RankQuestionInput[]),
   ...(clubBattles as RankQuestionInput[]),
+  ...(continentalRecords as RankQuestionInput[]),
   ...(worldCupEditions as RankQuestionInput[]),
   ...(uclSeason2526 as RankQuestionInput[]),
   ...(europaLeague as RankQuestionInput[]),
@@ -61,7 +70,9 @@ const rawCombined: RankQuestionInput[] = [
   ...(internationalTournaments as RankQuestionInput[]),
   ...(tournamentEditions as RankQuestionInput[]),
   ...(tournamentMatchups as RankQuestionInput[]),
+  ...(worldCupSpecials as RankQuestionInput[]),
   ...(worldCupRecords as RankQuestionInput[]),
+  ...(internationalMilestones as RankQuestionInput[]),
   ...(uclPlayerRecords as RankQuestionInput[]),
   ...(worldCupLegends as RankQuestionInput[]),
   ...(transfersAndInt as RankQuestionInput[]),
@@ -74,16 +85,21 @@ const rawCombined: RankQuestionInput[] = [
   ...(uclAppearances as RankQuestionInput[]),
   ...(internationalCaps as RankQuestionInput[]),
   ...(playmakersAssists as RankQuestionInput[]),
+  ...(playmakersExtra as RankQuestionInput[]),
   ...(defendersAndGoalkeepers as RankQuestionInput[]),
+  ...(defensiveIcons as RankQuestionInput[]),
   ...(africanAndAsianIcons as RankQuestionInput[]),
   ...(freeKicks as RankQuestionInput[]),
   ...(goalkeepingCleanSheets as RankQuestionInput[]),
   ...(milestonesAndHattricks as RankQuestionInput[]),
   ...(youngestAndMilestones as RankQuestionInput[]),
   ...(starMatchups as RankQuestionInput[]),
+  ...(derbyKings as RankQuestionInput[]),
+  ...(awardsExtra as RankQuestionInput[]),
   ...(plClubSeasons as RankQuestionInput[]),
   ...(uclSingleCampaigns as RankQuestionInput[]),
   ...(eliteCampaigns as RankQuestionInput[]),
+  ...(legendaryCampaignsExtra as RankQuestionInput[]),
 ];
 
 const uniqueMap = new Map<string, RankQuestionInput>();
