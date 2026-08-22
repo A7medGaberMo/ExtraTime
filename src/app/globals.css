@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Felipa&family=Story+Script&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -15,9 +16,9 @@
   --font-rajdhani: var(--font-rajdhani), sans-serif;
   --font-anton: var(--font-anton), sans-serif;
   --font-bebas: var(--font-bebas), sans-serif;
-  --font-story-script: 'Story Script', cursive;
-  --font-felipa: 'Felipa', cursive;
-  --font-amiri: 'Amiri', serif;
+  --font-story-script: 'Story Script', cursive, sans-serif;
+  --font-felipa: var(--font-felipa), 'Felipa', cursive, sans-serif;
+  --font-amiri: var(--font-amiri), 'Amiri', serif;
 
   /* Premium Core Color Mappings */
   --color-background: #03060b; /* Stadium Pitch Black */

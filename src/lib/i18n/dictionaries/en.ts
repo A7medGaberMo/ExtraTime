@@ -38,7 +38,7 @@ export const en = {
     heroBadge: 'Live Multiplayer Strategy',
     heroTitle: 'Extra',
     heroTitleHighlight: 'Time',
-    heroSubtitle: 'Tactical football strategy: snipe star players with secret bids and order legends by official records.',
+    heroSubtitle: 'Snipe stars. Rank legends. Dominate the pitch.',
     snipeCard: {
       tag: 'Flagship Mode',
       title: 'Snipe',

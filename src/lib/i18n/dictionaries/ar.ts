@@ -40,7 +40,7 @@ export const ar: TranslationDictionary = {
     heroBadge: 'تحديات كروية لايف',
     heroTitle: 'Extra',
     heroTitleHighlight: 'Time',
-    heroSubtitle: 'تكتيك كروي حقيقي: اقتنص النجوم بعروض سرية في مزادات السنايب، ورتب الأساطير بالأرقام والإحصائيات الرسمية.',
+    heroSubtitle: 'سنايب النجوم، ترتيب الأساطير، وحسم الماتش.',
     snipeCard: {
       tag: 'المود الأساسي',
       title: 'سنايب',

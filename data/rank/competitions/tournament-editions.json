@@ -1,0 +1,327 @@
+[
+  {
+    "slug": "ucl-seasons-by-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "champions-league", "seasons", "goals", "tournaments"],
+    "title": {
+      "en": "Rank these 5 UEFA Champions League seasons by total goals scored in the tournament",
+      "ar": "رتّب مواسم دوري أبطال أوروبا الخمسة حسب إجمالي الأهداف المسجلة في البطولة"
+    },
+    "subtitle": {
+      "en": "Total goals scored from group stage through final (125-match era)",
+      "ar": "إجمالي الأهداف من دور المجموعات حتى النهائي (حقبة الـ125 مباراة)"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_tot_1718",
+        "name": { "en": "2017–18 Champions League", "ar": "دوري أبطال أوروبا 2017–18" },
+        "subText": { "en": "Real Madrid Champions (3.21 goals/game)", "ar": "تتويج ريال مدريد (3.21 هدف/مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "UCL18" },
+        "value": 401,
+        "valueLabel": { "en": "401 Goals", "ar": "401 هدف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_tot_1920",
+        "name": { "en": "2019–20 Champions League", "ar": "دوري أبطال أوروبا 2019–20" },
+        "subText": { "en": "Bayern Munich Treble (119 matches played)", "ar": "ثلاثية بايرن ميونخ (لُعبت 119 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "UCL20" },
+        "value": 386,
+        "valueLabel": { "en": "386 Goals", "ar": "386 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_tot_2122",
+        "name": { "en": "2021–22 Champions League", "ar": "دوري أبطال أوروبا 2021–22" },
+        "subText": { "en": "Real Madrid 14th Title (Benzema 15 goals)", "ar": "الرابعة عشر لريال مدريد (15 هدفًا لبنزيما)" },
+        "media": { "type": "tournament", "fallbackText": "UCL22" },
+        "value": 380,
+        "valueLabel": { "en": "380 Goals", "ar": "380 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_tot_2223",
+        "name": { "en": "2022–23 Champions League", "ar": "دوري أبطال أوروبا 2022–23" },
+        "subText": { "en": "Manchester City Treble", "ar": "ثلاثية مانشستر سيتي" },
+        "media": { "type": "tournament", "fallbackText": "UCL23" },
+        "value": 372,
+        "valueLabel": { "en": "372 Goals", "ar": "372 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_tot_1819",
+        "name": { "en": "2018–19 Champions League", "ar": "دوري أبطال أوروبا 2018–19" },
+        "subText": { "en": "Liverpool Champions (Madrid Final)", "ar": "تتويج ليفربول (نهائي مدريد)" },
+        "media": { "type": "tournament", "fallbackText": "UCL19" },
+        "value": 366,
+        "valueLabel": { "en": "366 Goals", "ar": "366 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "euro-editions-by-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["euro", "uefa", "editions", "tournaments", "goals"],
+    "title": {
+      "en": "Rank these 5 UEFA EURO editions by total tournament goals scored",
+      "ar": "رتّب نسخ بطولة أمم أوروبا (اليورو) الخمسة حسب إجمالي الأهداف المسجلة"
+    },
+    "subtitle": {
+      "en": "All tournament matches included",
+      "ar": "شامل جميع مباريات البطولة في النهائيات"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "euro_tot_2020",
+        "name": { "en": "EURO 2020", "ar": "يورو 2020" },
+        "subText": { "en": "Held in 2021 (51 matches - All-Time Record)", "ar": "أقيمت 2021 (51 مباراة - الرقم القياسي)" },
+        "media": { "type": "tournament", "fallbackText": "EUR20" },
+        "value": 142,
+        "valueLabel": { "en": "142 Goals", "ar": "142 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "euro_tot_2024",
+        "name": { "en": "EURO 2024", "ar": "يورو 2024" },
+        "subText": { "en": "Germany (Spain Champions - 51 matches)", "ar": "ألمانيا (تتويج إسبانيا - 51 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "EUR24" },
+        "value": 117,
+        "valueLabel": { "en": "117 Goals", "ar": "117 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "euro_tot_2016",
+        "name": { "en": "EURO 2016", "ar": "يورو 2016" },
+        "subText": { "en": "France (First 24-team edition - 51 matches)", "ar": "فرنسا (أول نسخة بـ24 منتخبًا - 51 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "EUR16" },
+        "value": 108,
+        "valueLabel": { "en": "108 Goals", "ar": "108 أهداف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "euro_tot_2000",
+        "name": { "en": "EURO 2000", "ar": "يورو 2000" },
+        "subText": { "en": "Belgium / Netherlands (31 matches)", "ar": "بلجيكا / هولندا (31 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "EUR00" },
+        "value": 85,
+        "valueLabel": { "en": "85 Goals", "ar": "85 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "euro_tot_2004",
+        "name": { "en": "EURO 2004", "ar": "يورو 2004" },
+        "subText": { "en": "Portugal (Greece Miracle - 31 matches)", "ar": "البرتغال (معجزة اليونان - 31 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "EUR04" },
+        "value": 77,
+        "valueLabel": { "en": "77 Goals", "ar": "77 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-editions-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-america", "conmebol", "editions", "tournaments", "goals"],
+    "title": {
+      "en": "Rank these 5 Copa América editions by total tournament goals scored",
+      "ar": "رتّب نسخ كوبا أمريكا الخمسة حسب إجمالي الأهداف المسجلة في البطولة"
+    },
+    "subtitle": {
+      "en": "All tournament matches included",
+      "ar": "شامل جميع أهداف مباريات البطولة"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ca_tot_2016",
+        "name": { "en": "Copa América Centenario 2016", "ar": "كوبا أمريكا المئوية 2016" },
+        "subText": { "en": "USA (16 teams - 32 matches)", "ar": "الولايات المتحدة (16 منتخبًا - 32 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "CA16" },
+        "value": 91,
+        "valueLabel": { "en": "91 Goals", "ar": "91 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ca_tot_2007",
+        "name": { "en": "Copa América 2007", "ar": "كوبا أمريكا 2007" },
+        "subText": { "en": "Venezuela (Brazil Champions - 26 matches)", "ar": "فنزويلا (تتويج البرازيل - 26 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "CA07" },
+        "value": 86,
+        "valueLabel": { "en": "86 Goals", "ar": "86 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ca_tot_2004",
+        "name": { "en": "Copa América 2004", "ar": "كوبا أمريكا 2004" },
+        "subText": { "en": "Peru (Brazil Champions - 26 matches)", "ar": "بيرو (تتويج البرازيل - 26 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "CA04" },
+        "value": 78,
+        "valueLabel": { "en": "78 Goals", "ar": "78 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ca_tot_2024",
+        "name": { "en": "Copa América 2024", "ar": "كوبا أمريكا 2024" },
+        "subText": { "en": "USA (Argentina Champions - 32 matches)", "ar": "الولايات المتحدة (تتويج الأرجنتين - 32 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "CA24" },
+        "value": 70,
+        "valueLabel": { "en": "70 Goals", "ar": "70 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ca_tot_2019",
+        "name": { "en": "Copa América 2019", "ar": "كوبا أمريكا 2019" },
+        "subText": { "en": "Brazil (Brazil Champions - 26 matches)", "ar": "البرازيل (تتويج البرازيل - 26 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "CA19" },
+        "value": 60,
+        "valueLabel": { "en": "60 Goals", "ar": "60 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-seasons-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "seasons", "goals", "records"],
+    "title": {
+      "en": "Rank these 5 Premier League seasons by total goals scored across the league",
+      "ar": "رتّب مواسم الدوري الإنجليزي الممتاز الخمسة حسب إجمالي الأهداف المسجلة في البطولة"
+    },
+    "subtitle": {
+      "en": "Total goals scored across all 380 matches in the season",
+      "ar": "إجمالي أهداف الموسم عبر 380 مباراة"
+    },
+    "metricLabel": { "en": "Total Goals", "ar": "إجمالي الأهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pl_tot_2324",
+        "name": { "en": "2023–24 Premier League", "ar": "الدوري الإنجليزي 2023–24" },
+        "subText": { "en": "All-Time Record (3.28 goals/game)", "ar": "الرقم القياسي التاريخي (3.28 هدف/مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "PL24" },
+        "value": 1246,
+        "valueLabel": { "en": "1,246 Goals", "ar": "1,246 هدف" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pl_tot_2223",
+        "name": { "en": "2022–23 Premier League", "ar": "الدوري الإنجليزي 2022–23" },
+        "subText": { "en": "Haaland Debut Season (2.85 goals/game)", "ar": "موسم هالاند الأول (2.85 هدف/مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "PL23" },
+        "value": 1084,
+        "valueLabel": { "en": "1,084 Goals", "ar": "1,084 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pl_tot_1819",
+        "name": { "en": "2018–19 Premier League", "ar": "الدوري الإنجليزي 2018–19" },
+        "subText": { "en": "Man City 98 pts & Liverpool 97 pts", "ar": "صراع السيتي (98 نقطة) وليفربول (97 نقطة)" },
+        "media": { "type": "tournament", "fallbackText": "PL19" },
+        "value": 1072,
+        "valueLabel": { "en": "1,072 Goals", "ar": "1,072 هدف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pl_tot_1112",
+        "name": { "en": "2011–12 Premier League", "ar": "الدوري الإنجليزي 2011–12" },
+        "subText": { "en": "Aguerooooo Title Decider", "ar": "هدف أغويرو التاريخي الحاسم" },
+        "media": { "type": "tournament", "fallbackText": "PL12" },
+        "value": 1066,
+        "valueLabel": { "en": "1,066 Goals", "ar": "1,066 هدف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pl_tot_1617",
+        "name": { "en": "2016–17 Premier League", "ar": "الدوري الإنجليزي 2016–17" },
+        "subText": { "en": "Chelsea 93 pts (Antonio Conte)", "ar": "تشيلسي مع كونتي (93 نقطة)" },
+        "media": { "type": "tournament", "fallbackText": "PL17" },
+        "value": 1064,
+        "valueLabel": { "en": "1,064 Goals", "ar": "1,064 هدف" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afcon-editions-by-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afcon", "africa", "editions", "tournaments", "goals"],
+    "title": {
+      "en": "Rank these 5 Africa Cup of Nations (AFCON) editions by total goals scored",
+      "ar": "رتّب نسخ كأس الأمم الإفريقية الخمسة حسب إجمالي الأهداف المسجلة"
+    },
+    "subtitle": {
+      "en": "All tournament matches included",
+      "ar": "شامل جميع أهداف البطولة"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afcon_tot_2023",
+        "name": { "en": "AFCON 2023", "ar": "كأس أمم إفريقيا 2023" },
+        "subText": { "en": "Ivory Coast (Held in 2024 - 52 matches)", "ar": "كوت ديفوار (أقيمت 2024 - 52 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "AF23" },
+        "value": 119,
+        "valueLabel": { "en": "119 Goals", "ar": "119 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afcon_tot_2019",
+        "name": { "en": "AFCON 2019", "ar": "كأس أمم إفريقيا 2019" },
+        "subText": { "en": "Egypt (Algeria Champions - 52 matches)", "ar": "مصر (تتويج الجزائر - 52 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "AF19" },
+        "value": 102,
+        "valueLabel": { "en": "102 Goals", "ar": "102 هدف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afcon_tot_2021",
+        "name": { "en": "AFCON 2021", "ar": "كأس أمم إفريقيا 2021" },
+        "subText": { "en": "Cameroon (Senegal Champions - 52 matches)", "ar": "الكاميرون (تتويج السنغال - 52 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "AF21" },
+        "value": 100,
+        "valueLabel": { "en": "100 Goals", "ar": "100 هدف" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afcon_tot_2008",
+        "name": { "en": "AFCON 2008", "ar": "كأس أمم إفريقيا 2008" },
+        "subText": { "en": "Ghana (Egypt Champions - 32 matches)", "ar": "غانا (تتويج مصر - 32 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "AF08" },
+        "value": 99,
+        "valueLabel": { "en": "99 Goals", "ar": "99 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afcon_tot_2017",
+        "name": { "en": "AFCON 2017", "ar": "كأس أمم إفريقيا 2017" },
+        "subText": { "en": "Gabon (Cameroon Champions - 32 matches)", "ar": "الغابون (تتويج الكاميرون - 32 مباراة)" },
+        "media": { "type": "tournament", "fallbackText": "AF17" },
+        "value": 66,
+        "valueLabel": { "en": "66 Goals", "ar": "66 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

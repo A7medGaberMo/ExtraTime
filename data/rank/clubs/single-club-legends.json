@@ -1,0 +1,457 @@
+[
+  {
+    "slug": "real-madrid-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["real-madrid", "spain", "goals", "ronaldo", "benzema", "raul"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for Real Madrid (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع ريال مدريد (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for Real Madrid CF",
+      "ar": "الهدافون التاريخيون لنادي ريال مدريد في جميع المسابقات الرسمية"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "rmg_cr7",
+        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
+        "subText": { "en": "438 matches (All-Time Record)", "ar": "438 مباراة (الهداف التاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "CR7" },
+        "value": 450,
+        "valueLabel": { "en": "450 Goals", "ar": "450 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "rmg_benzema",
+        "name": { "en": "Karim Benzema", "ar": "كريم بنزيما" },
+        "subText": { "en": "648 matches", "ar": "648 مباراة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "value": 354,
+        "valueLabel": { "en": "354 Goals", "ar": "354 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "rmg_raul",
+        "name": { "en": "Raúl González", "ar": "راؤول غونزاليس" },
+        "subText": { "en": "741 matches (Most appearances)", "ar": "741 مباراة (الأكثر ظهورًا)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "RG7" },
+        "value": 323,
+        "valueLabel": { "en": "323 Goals", "ar": "323 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "rmg_distefano",
+        "name": { "en": "Alfredo Di Stéfano", "ar": "ألفريدو دي ستيفانو" },
+        "subText": { "en": "396 matches (Saeta Rubia)", "ar": "396 مباراة (السهم الأشقر)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "ADS" },
+        "value": 308,
+        "valueLabel": { "en": "308 Goals", "ar": "308 أهداف" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "rmg_santillana",
+        "name": { "en": "Santillana", "ar": "سانتيانا" },
+        "subText": { "en": "645 matches", "ar": "645 مباراة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "SAN" },
+        "value": 290,
+        "valueLabel": { "en": "290 Goals", "ar": "290 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "barcelona-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["barcelona", "spain", "goals", "messi", "suarez"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for FC Barcelona (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع برشلونة (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for FC Barcelona",
+      "ar": "الهدافون التاريخيون لنادي برشلونة في جميع المسابقات الرسمية"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fcbg_messi",
+        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
+        "subText": { "en": "778 matches (All-Time Record)", "ar": "778 مباراة (الهداف التاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LM10" },
+        "value": 672,
+        "valueLabel": { "en": "672 Goals", "ar": "672 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fcbg_cesar",
+        "name": { "en": "César Rodríguez", "ar": "سيزار رودريغيز" },
+        "subText": { "en": "356 matches (1942–1955)", "ar": "356 مباراة (1942–1955)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "CES" },
+        "value": 232,
+        "valueLabel": { "en": "232 Goals", "ar": "232 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fcbg_suarez",
+        "name": { "en": "Luis Suárez", "ar": "لويس سواريز" },
+        "subText": { "en": "283 matches (2014–2020)", "ar": "283 مباراة (2014–2020)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LS9" },
+        "value": 198,
+        "valueLabel": { "en": "198 Goals", "ar": "198 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fcbg_kubala",
+        "name": { "en": "László Kubala", "ar": "لاسلو كوبالا" },
+        "subText": { "en": "256 matches (1950–1961)", "ar": "256 مباراة (1950–1961)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "KUB" },
+        "value": 194,
+        "valueLabel": { "en": "194 Goals", "ar": "194 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fcbg_samitier",
+        "name": { "en": "Josep Samitier", "ar": "جوسيب ساميتيير" },
+        "subText": { "en": "232 matches (1919–1932)", "ar": "232 مباراة (1919–1932)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "SAM" },
+        "value": 184,
+        "valueLabel": { "en": "184 Goals", "ar": "184 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "man-united-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["man-united", "england", "goals", "rooney", "charlton", "law"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for Manchester United (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع مانشستر يونايتد (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for Manchester United",
+      "ar": "الهدافون التاريخيون لمانشستر يونايتد في جميع المسابقات الرسمية"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "mug_rooney",
+        "name": { "en": "Wayne Rooney", "ar": "واين روني" },
+        "subText": { "en": "559 matches (All-Time Record)", "ar": "559 مباراة (الهداف التاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "WR10" },
+        "value": 253,
+        "valueLabel": { "en": "253 Goals", "ar": "253 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "mug_charlton",
+        "name": { "en": "Sir Bobby Charlton", "ar": "سير بوبي تشارلتون" },
+        "subText": { "en": "758 matches", "ar": "758 مباراة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "SBC" },
+        "value": 249,
+        "valueLabel": { "en": "249 Goals", "ar": "249 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "mug_law",
+        "name": { "en": "Denis Law", "ar": "دينيس لو" },
+        "subText": { "en": "404 matches (The King)", "ar": "404 مباريات (الملك)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "LAW" },
+        "value": 237,
+        "valueLabel": { "en": "237 Goals", "ar": "237 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "mug_rowley",
+        "name": { "en": "Jack Rowley", "ar": "جاك رولي" },
+        "subText": { "en": "424 matches (1937–1955)", "ar": "424 مباراة (1937–1955)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "ROW" },
+        "value": 211,
+        "valueLabel": { "en": "211 Goals", "ar": "211 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "mug_viollet",
+        "name": { "en": "Dennis Viollet", "ar": "دينيس فيوليت" },
+        "subText": { "en": "293 matches (Busby Babe)", "ar": "293 مباراة (أبناء بازبي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "VIO" },
+        "value": 179,
+        "valueLabel": { "en": "179 Goals", "ar": "179 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "liverpool-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["liverpool", "england", "goals", "rush", "hunt", "salah"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for Liverpool (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع ليفربول (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for Liverpool FC",
+      "ar": "الهدافون التاريخيون لنادي ليفربول في جميع المسابقات الرسمية"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "lfcg_rush",
+        "name": { "en": "Ian Rush", "ar": "إيان راش" },
+        "subText": { "en": "660 matches (All-Time Record)", "ar": "660 مباراة (الهداف التاريخي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "RUSH" },
+        "value": 346,
+        "valueLabel": { "en": "346 Goals", "ar": "346 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "lfcg_hunt",
+        "name": { "en": "Roger Hunt", "ar": "روجر هانت" },
+        "subText": { "en": "492 matches (1958–1969)", "ar": "492 مباراة (1958–1969)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "HUNT" },
+        "value": 285,
+        "valueLabel": { "en": "285 Goals", "ar": "285 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "lfcg_hodgson",
+        "name": { "en": "Gordon Hodgson", "ar": "غوردون هودجسون" },
+        "subText": { "en": "377 matches (1925–1936)", "ar": "377 مباراة (1925–1936)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "HOD" },
+        "value": 241,
+        "valueLabel": { "en": "241 Goals", "ar": "241 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "lfcg_salah",
+        "name": { "en": "Mohamed Salah", "ar": "محمد صلاح" },
+        "subText": { "en": "Modern Era Record Scorer", "ar": "الهداف التاريخي للحقبة الحديثة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MO11" },
+        "value": 221,
+        "valueLabel": { "en": "221 Goals", "ar": "221 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "lfcg_liddell",
+        "name": { "en": "Billy Liddell", "ar": "بيلي ليدل" },
+        "subText": { "en": "534 matches (1938–1961)", "ar": "534 مباراة (1938–1961)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "LID" },
+        "value": 215,
+        "valueLabel": { "en": "215 Goals", "ar": "215 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "arsenal-premier-league-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["arsenal", "premier-league", "goals", "henry", "wright", "vanpersie"],
+    "title": {
+      "en": "Rank these 5 icons by Premier League goals scored for Arsenal",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم في البريميرليج بقميص أرسنال"
+    },
+    "subtitle": {
+      "en": "Premier League era goals for Arsenal FC only",
+      "ar": "أهداف حقبة الدوري الإنجليزي الممتاز مع أرسنال فقط"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afcg_henry",
+        "name": { "en": "Thierry Henry", "ar": "تييري هنري" },
+        "subText": { "en": "258 matches (King Henry)", "ar": "258 مباراة (الملك هنري)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "TH14" },
+        "value": 175,
+        "valueLabel": { "en": "175 Goals", "ar": "175 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afcg_wright",
+        "name": { "en": "Ian Wright", "ar": "إيان رايت" },
+        "subText": { "en": "191 matches (PL Era)", "ar": "191 مباراة (حقبة البريميرليج)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "WRI" },
+        "value": 104,
+        "valueLabel": { "en": "104 Goals", "ar": "104 أهداف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afcg_vanpersie",
+        "name": { "en": "Robin van Persie", "ar": "روبن فان بيرسي" },
+        "subText": { "en": "194 matches", "ar": "194 مباراة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "RVP" },
+        "value": 96,
+        "valueLabel": { "en": "96 Goals", "ar": "96 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afcg_bergkamp",
+        "name": { "en": "Dennis Bergkamp", "ar": "دينيس بيركامب" },
+        "subText": { "en": "315 matches (The Iceman)", "ar": "315 مباراة (رجل الجليد)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "DB10" },
+        "value": 87,
+        "valueLabel": { "en": "87 Goals", "ar": "87 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afcg_giroud",
+        "name": { "en": "Olivier Giroud", "ar": "أوليفييه جيرو" },
+        "subText": { "en": "180 matches", "ar": "180 مباراة" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "GIR" },
+        "value": 73,
+        "valueLabel": { "en": "73 Goals", "ar": "73 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "bayern-munich-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["bayern", "germany", "goals", "muller", "lewandowski"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for Bayern Munich (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع بايرن ميونخ (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for FC Bayern München",
+      "ar": "الهدافون التاريخيون لبايرن ميونخ في جميع المسابقات الرسمية"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fcbg_gmuller",
+        "name": { "en": "Gerd Müller", "ar": "غيرد مولر" },
+        "subText": { "en": "613 matches (All-Time Record)", "ar": "613 مباراة (الهداف التاريخي الأسطوري)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "GERD" },
+        "value": 563,
+        "valueLabel": { "en": "563 Goals", "ar": "563 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fcbg_lewa",
+        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
+        "subText": { "en": "375 matches (2014–2022)", "ar": "375 مباراة (2014–2022)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "RL9" },
+        "value": 344,
+        "valueLabel": { "en": "344 Goals", "ar": "344 هدفًا" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fcbg_tmuller",
+        "name": { "en": "Thomas Müller", "ar": "توماس مولر" },
+        "subText": { "en": "710+ matches (Raumdeuter)", "ar": "أكثر من 710 مباريات" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "TM25" },
+        "value": 245,
+        "valueLabel": { "en": "245 Goals", "ar": "245 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fcbg_rummenigge",
+        "name": { "en": "Karl-Heinz Rummenigge", "ar": "كارل هاينز رومينيغه" },
+        "subText": { "en": "422 matches (1974–1984)", "ar": "422 مباراة (1974–1984)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "KHR" },
+        "value": 217,
+        "valueLabel": { "en": "217 Goals", "ar": "217 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fcbg_ohlhauser",
+        "name": { "en": "Rainer Ohlhauser", "ar": "راينر أولهاوزر" },
+        "subText": { "en": "300 matches (1961–1970)", "ar": "300 مباراة (1961–1970)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/bayern.png", "fallbackText": "OHL" },
+        "value": 186,
+        "valueLabel": { "en": "186 Goals", "ar": "186 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "chelsea-premier-league-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["chelsea", "premier-league", "goals", "lampard", "drogba", "hazard"],
+    "title": {
+      "en": "Rank these 5 icons by Premier League goals scored for Chelsea",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم في البريميرليج بقميص تشيلسي"
+    },
+    "subtitle": {
+      "en": "Premier League era goals for Chelsea FC only",
+      "ar": "أهداف حقبة الدوري الإنجليزي الممتاز مع تشيلسي فقط"
+    },
+    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cfcg_lampard",
+        "name": { "en": "Frank Lampard", "ar": "فرانك لامبارد" },
+        "subText": { "en": "429 matches (Super Frank)", "ar": "429 مباراة (الهداف التاريخي لتشيلسي)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "LAM8" },
+        "value": 147,
+        "valueLabel": { "en": "147 Goals", "ar": "147 هدفًا" },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cfcg_drogba",
+        "name": { "en": "Didier Drogba", "ar": "ديدييه دروغبا" },
+        "subText": { "en": "254 matches (The King of Finals)", "ar": "254 مباراة (ملك النهائيات)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "DD11" },
+        "value": 104,
+        "valueLabel": { "en": "104 Goals", "ar": "104 أهداف" },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cfcg_hazard",
+        "name": { "en": "Eden Hazard", "ar": "إيدين هازارد" },
+        "subText": { "en": "245 matches (2x PL Champion)", "ar": "245 مباراة (بطل البريميرليج مرتين)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "EH10" },
+        "value": 85,
+        "valueLabel": { "en": "85 Goals", "ar": "85 هدفًا" },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cfcg_hasselbaink",
+        "name": { "en": "Jimmy Floyd Hasselbaink", "ar": "جيمي فلويد هاسلبانك" },
+        "subText": { "en": "136 matches (2000–2004)", "ar": "136 مباراة (2000–2004)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "JFH" },
+        "value": 69,
+        "valueLabel": { "en": "69 Goals", "ar": "69 هدفًا" },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cfcg_zola",
+        "name": { "en": "Gianfranco Zola", "ar": "جانفرانكو زولا" },
+        "subText": { "en": "229 matches (The Little Magician)", "ar": "229 مباراة (الساحر الصغير)" },
+        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "ZOL" },
+        "value": 59,
+        "valueLabel": { "en": "59 Goals", "ar": "59 هدفًا" },
+        "correctRank": 5
+      }
+    ]
+  }
+]

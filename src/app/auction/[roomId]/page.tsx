@@ -449,9 +449,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         />
 
         {/* Target Strip */}
-        <div className="relative z-10 mb-4 flex items-center justify-between gap-2">
+        <div className="relative z-10 mb-2 sm:mb-4 flex items-center justify-between gap-2">
           <div
-            className="inline-flex items-center gap-2 rounded-xl border px-3 py-1 text-xs font-black tracking-wider uppercase shadow-lg backdrop-blur-md"
+            className="inline-flex items-center gap-1.5 sm:gap-2 rounded-xl border px-2.5 py-0.5 sm:px-3 sm:py-1 text-[11px] sm:text-xs font-black tracking-wider uppercase shadow-lg backdrop-blur-md"
             style={{
               color: tierColor,
               backgroundColor: `${tierColor}15`,
@@ -471,17 +471,22 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         </div>
 
         {/* Player Card Showcase */}
-        <div className="relative z-10 flex justify-center py-1">
+        <div className="relative z-10 flex justify-center py-0.5 sm:py-1">
           {playerData ? (
             <div
-              className="animate-scale-in origin-center drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]"
+              className="animate-scale-in origin-center drop-shadow-[0_15px_30px_rgba(0,0,0,0.85)]"
               key={`${auction.currentRound}-${playerData.id}`}
             >
-              <PlayerCard player={playerData} size="md" />
+              <div className="block sm:hidden">
+                <PlayerCard player={playerData} size="sm" />
+              </div>
+              <div className="hidden sm:block">
+                <PlayerCard player={playerData} size="md" />
+              </div>
             </div>
           ) : (
-            <div className="flex h-[260px] w-48 animate-pulse flex-col items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-900/80 sm:h-[280px] sm:w-52">
-              <AppIcon icon={CircleNotch} size={28} weight="bold" className="text-lime animate-spin" />
+            <div className="flex h-[200px] w-36 animate-pulse flex-col items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-900/80 sm:h-[280px] sm:w-52">
+              <AppIcon icon={CircleNotch} size={24} weight="bold" className="text-lime animate-spin" />
               <span className="text-steel text-[10px] font-black tracking-widest uppercase">
                 {t('auction.hydrating')}
               </span>

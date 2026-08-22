@@ -6,6 +6,8 @@ import {
   Rajdhani,
   Anton,
   Bebas_Neue,
+  Amiri,
+  Felipa,
 } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
@@ -49,6 +51,18 @@ const bebas = Bebas_Neue({
   weight: ['400'],
   subsets: ['latin'],
   variable: '--font-bebas',
+});
+
+const amiri = Amiri({
+  weight: ['400', '700'],
+  subsets: ['arabic', 'latin'],
+  variable: '--font-amiri',
+});
+
+const felipa = Felipa({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-felipa',
 });
 
 export const viewport: Viewport = {
@@ -176,7 +190,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body
-        className={`${ibmPlexSans.variable} ${ibmPlexArabic.variable} ${notoKufiArabic.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} bg-background text-foreground selection:bg-lime selection:text-background flex min-h-screen flex-col justify-between overflow-x-hidden font-sans antialiased`}
+        className={`${ibmPlexSans.variable} ${ibmPlexArabic.variable} ${notoKufiArabic.variable} ${rajdhani.variable} ${anton.variable} ${bebas.variable} ${amiri.variable} ${felipa.variable} bg-background text-foreground selection:bg-lime selection:text-background flex min-h-screen flex-col justify-between overflow-x-hidden font-sans antialiased`}
       >
         <ConvexClientProvider>
           <I18nProvider>
