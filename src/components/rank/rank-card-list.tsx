@@ -128,24 +128,24 @@ export function RankCardList({
         : `Lowest (${metricLabel}) at #1`;
 
   return (
-    <div className="flex-1 flex flex-col justify-between gap-1.5 sm:gap-3 w-full max-w-lg mx-auto select-none overflow-hidden">
-      {/* Question Heading Strip */}
-      <div className="text-center space-y-0.5 sm:space-y-1 shrink-0 px-1">
-        <h2 className="text-xs sm:text-base md:text-lg font-black text-white leading-tight font-display line-clamp-2">
+    <div className="flex-1 flex flex-col justify-between w-full max-w-lg mx-auto select-none overflow-hidden min-h-0 gap-1 sm:gap-2">
+      {/* ── QUESTION HEADING & DIRECTION BADGE STRIP ─────────────────────── */}
+      <div className="text-center shrink-0 space-y-1 px-1">
+        <h2 className="text-sm sm:text-base md:text-lg font-black text-white leading-snug font-display line-clamp-2">
           {questionTitle}
         </h2>
-        <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-slate-900 border border-lime/20 text-[10px] sm:text-[11px] font-bold text-lime">
+        <div className="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-lime/10 border border-lime/30 text-[11px] sm:text-xs font-black text-lime shadow-sm">
           <span>{directionHelperText}</span>
         </div>
       </div>
 
-      {/* ── 5 REORDER CARDS (Single Viewport Optimized with Ultra-Smooth Spring) ── */}
-      <div className="flex-1 flex flex-col justify-center min-h-0">
+      {/* ── 5 REORDER CARDS (Zero-Scroll Adaptive Heights & Zero Spoilers) ─ */}
+      <div className="flex-1 flex flex-col justify-evenly min-h-0 py-0.5">
         <Reorder.Group
           axis="y"
           values={currentOrder}
           onReorder={hasSubmitted ? () => {} : onOrderChange}
-          className="space-y-1 sm:space-y-1.5 touch-manipulation w-full"
+          className="flex-1 flex flex-col justify-between gap-1.5 sm:gap-2 touch-manipulation w-full min-h-0"
         >
           {currentOrder.map((key, index) => {
             const item = itemMap.get(key);
@@ -162,9 +162,9 @@ export function RankCardList({
                 layout
                 transition={{
                   type: 'spring',
-                  stiffness: 380,
-                  damping: 26,
-                  mass: 0.8,
+                  stiffness: 400,
+                  damping: 28,
+                  mass: 0.7,
                 }}
                 whileDrag={{
                   scale: 1.02,
@@ -173,22 +173,22 @@ export function RankCardList({
                   cursor: 'grabbing',
                 }}
                 className={`
-                  relative flex items-center justify-between px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl sm:rounded-2xl border transition-colors duration-150
+                  relative flex items-center justify-between px-3 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl border transition-all duration-150
                   ${
                     hasSubmitted
-                      ? 'bg-slate-900/50 border-white/5 cursor-not-allowed opacity-85'
+                      ? 'bg-slate-900/60 border-white/5 cursor-not-allowed opacity-85'
                       : isSelected
-                        ? 'bg-slate-900 border-lime ring-2 ring-lime/60 shadow-[0_0_15px_rgba(149,232,16,0.25)]'
-                        : 'bg-slate-900/90 border-white/10 hover:border-lime/40 cursor-grab active:cursor-grabbing shadow-sm'
+                        ? 'bg-slate-900 border-lime ring-2 ring-lime/70 shadow-[0_0_15px_rgba(149,232,16,0.25)]'
+                        : 'bg-slate-900/95 border-white/10 hover:border-lime/40 cursor-grab active:cursor-grabbing shadow-sm'
                   }
                 `}
                 onClick={() => handleCardClick(key)}
               >
-                {/* Left: Position Number & Avatar & Name */}
-                <div className="flex items-center gap-2 sm:gap-2.5 min-w-0 flex-1">
+                {/* Left: Position Rank Number + Entity Avatar + Clear Entity Name */}
+                <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
                   <div
                     className={`
-                      w-5 h-5 sm:w-6 sm:h-6 rounded-lg font-stats font-black text-[11px] sm:text-xs flex items-center justify-center shrink-0 border
+                      w-6 h-6 sm:w-7 sm:h-7 rounded-lg font-stats font-black text-xs sm:text-sm flex items-center justify-center shrink-0 border
                       ${
                         rankPosition === 1
                           ? 'bg-lime text-slate-950 border-lime shadow-sm shadow-lime/30'
@@ -203,31 +203,27 @@ export function RankCardList({
 
                   <RankEntityAvatar media={item.media} name={item.name} size="sm" />
 
+                  {/* Entity Name ONLY - Zero Spoilers, Zero Subtext during Active Playing */}
                   <div className="min-w-0 flex-1">
-                    <span className="text-xs sm:text-sm font-black text-white truncate block leading-tight">
+                    <span className="text-xs sm:text-sm md:text-base font-bold text-white tracking-wide truncate block leading-tight">
                       {item.name}
                     </span>
-                    {item.subText && (
-                      <span className="text-[9px] sm:text-[10px] text-steel truncate block leading-none pt-0.5">
-                        {item.subText}
-                      </span>
-                    )}
                   </div>
                 </div>
 
-                {/* Right: Quick Micro Up/Down Arrows + Drag Handle */}
+                {/* Right: Quick Micro Up/Down Arrows + Drag Grip */}
                 {!hasSubmitted && (
-                  <div className="flex items-center gap-0.5 sm:gap-1 shrink-0 ps-1.5">
+                  <div className="flex items-center gap-1 shrink-0 ps-1.5">
                     {/* Move Up Button */}
                     <button
                       type="button"
                       onClick={(e) => handleMoveUp(index, e)}
                       disabled={index === 0}
-                      className="p-1 rounded-lg text-steel hover:text-white hover:bg-white/10 disabled:opacity-20 disabled:hover:bg-transparent transition-colors cursor-pointer"
+                      className="p-1 sm:p-1.5 rounded-lg text-steel hover:text-white hover:bg-white/10 disabled:opacity-20 disabled:hover:bg-transparent transition-colors cursor-pointer"
                       title="Move Up"
                       aria-label="Move Up"
                     >
-                      <AppIcon icon={CaretUp} size={13} weight="bold" />
+                      <AppIcon icon={CaretUp} size={15} weight="bold" />
                     </button>
 
                     {/* Move Down Button */}
@@ -235,11 +231,11 @@ export function RankCardList({
                       type="button"
                       onClick={(e) => handleMoveDown(index, e)}
                       disabled={index === currentOrder.length - 1}
-                      className="p-1 rounded-lg text-steel hover:text-white hover:bg-white/10 disabled:opacity-20 disabled:hover:bg-transparent transition-colors cursor-pointer"
+                      className="p-1 sm:p-1.5 rounded-lg text-steel hover:text-white hover:bg-white/10 disabled:opacity-20 disabled:hover:bg-transparent transition-colors cursor-pointer"
                       title="Move Down"
                       aria-label="Move Down"
                     >
-                      <AppIcon icon={CaretDown} size={13} weight="bold" />
+                      <AppIcon icon={CaretDown} size={15} weight="bold" />
                     </button>
 
                     {/* Drag Grip Handle */}
@@ -247,7 +243,7 @@ export function RankCardList({
                       className="p-1 text-steel/60 hover:text-lime cursor-grab select-none"
                       style={{ touchAction: 'none' }}
                     >
-                      <AppIcon icon={DotsSixVertical} size={16} weight="bold" />
+                      <AppIcon icon={DotsSixVertical} size={18} weight="bold" />
                     </div>
                   </div>
                 )}
@@ -257,8 +253,8 @@ export function RankCardList({
         </Reorder.Group>
       </div>
 
-      {/* ── SUBMIT ACTION BUTTON (Docked Cleanly) ───────────────────────── */}
-      <div className="shrink-0 pt-0.5 sm:pt-1">
+      {/* ── SUBMIT / LOCK ACTION BUTTON (Permanently Visible at Bottom) ──── */}
+      <div className="shrink-0 pt-1 pb-1">
         <Button
           variant={hasSubmitted ? 'secondary' : 'primary'}
           size="md"
@@ -267,7 +263,7 @@ export function RankCardList({
           disabled={isSubmitting || hasSubmitted}
           loading={isSubmitting}
           leftIcon={hasSubmitted ? <AppIcon icon={CheckCircle} size={16} weight="fill" /> : undefined}
-          className="min-h-[40px] sm:min-h-[46px]"
+          className="min-h-[42px] sm:min-h-[46px] text-xs sm:text-sm font-black shadow-lg shadow-lime/10"
         >
           {hasSubmitted
             ? (lang === 'ar' ? 'تم تثبيت الترتيب ✓' : 'Ranking Locked ✓')

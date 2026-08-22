@@ -268,7 +268,7 @@ export default function RankArenaPage() {
     const opponentResult = roundResults.find((r) => r.guestId !== guestId);
 
     return (
-      <article className="mx-auto flex max-w-lg flex-col h-[calc(100dvh-4.25rem)] max-h-[calc(100dvh-4.25rem)] overflow-hidden gap-2 px-3 py-2 select-none justify-between relative">
+      <article className="mx-auto flex max-w-lg w-full flex-col h-[100dvh] max-h-[100dvh] overflow-hidden gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 select-none justify-between relative">
         <RankHeader
           currentRound={gameState.currentRoundIndex + 1}
           totalRounds={gameState.roundCount}
@@ -297,7 +297,7 @@ export default function RankArenaPage() {
 
   // ── 4. ACTIVE ROUND GAMEPLAY ───────────────────────────────────────
   return (
-    <article className="mx-auto flex max-w-lg flex-col h-[calc(100dvh-3.75rem)] max-h-[calc(100dvh-3.75rem)] overflow-hidden gap-1.5 sm:gap-2 px-1 sm:px-3 py-1 select-none justify-between relative">
+    <article className="mx-auto flex max-w-lg w-full flex-col h-[100dvh] max-h-[100dvh] overflow-hidden gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 select-none justify-between relative">
       <RankHeader
         currentRound={gameState.currentRoundIndex + 1}
         totalRounds={gameState.roundCount}
