@@ -27,6 +27,7 @@ export interface CardDeltaResult {
 
 interface RankRevealViewProps {
   questionTitle: string;
+  questionSubtitle?: string;
   answers: RevealAnswerItem[];
   userDeltas: CardDeltaResult[];
   userRoundScore: number;
@@ -70,6 +71,7 @@ function getPointsBadge(points: number, delta: number) {
 
 export function RankRevealView({
   questionTitle,
+  questionSubtitle,
   answers,
   userDeltas,
   userRoundScore,
@@ -85,9 +87,9 @@ export function RankRevealView({
   const sortedAnswers = [...answers].sort((a, b) => a.correctRank - b.correctRank);
 
   return (
-    <div className="w-full max-w-[420px] mx-auto select-none flex flex-col gap-3 sm:gap-4 py-1 px-1 animate-fade-in">
+    <div className="w-full max-w-md mx-auto select-none flex flex-col gap-2.5 sm:gap-3.5 py-1 animate-fade-in">
       {/* ── HEADER SCORE SUMMARY STRIP & FULL QUESTION TITLE ───────────── */}
-      <div className="text-center shrink-0 space-y-2 px-1">
+      <div className="text-center shrink-0 space-y-1.5 px-2">
         <div className="flex items-center justify-between px-3.5 py-1.5 rounded-2xl bg-slate-900/90 border border-white/10 shadow-sm backdrop-blur-md">
           <div className="flex items-center gap-1.5 font-stats">
             <span className="text-xs text-steel font-semibold uppercase tracking-wider">
@@ -111,13 +113,17 @@ export function RankRevealView({
         </div>
 
         {/* Full Question Title */}
-        <h2 className="text-[17px] sm:text-[19px] font-bold leading-snug tracking-tight text-white font-display">
+        <h2 className="text-base sm:text-lg font-bold leading-snug tracking-tight text-white font-display">
           {questionTitle}
         </h2>
+        {questionSubtitle && (
+          <p className="text-xs text-steel font-medium">{questionSubtitle}</p>
+        )}
       </div>
 
+
       {/* ── CORRECT ORDER LIST (Apple Frosted Glass Rows) ─── */}
-      <div className="flex flex-col gap-2 sm:gap-2.5 w-full">
+      <div className="flex flex-col gap-2 w-full">
         {sortedAnswers.map((item) => {
           const deltaInfo = deltaMap.get(item.answerKey);
           const submittedRank = deltaInfo?.submittedRank ?? item.correctRank;
@@ -131,7 +137,7 @@ export function RankRevealView({
             <div
               key={item.answerKey}
               className={`
-                flex items-center justify-between px-3.5 sm:px-4 py-2.5 rounded-2xl border transition-all
+                flex items-center justify-between px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl border w-full transition-all
                 ${
                   isExact
                     ? 'border-lime/40 bg-slate-900/95 shadow-sm shadow-lime/5'
@@ -142,11 +148,11 @@ export function RankRevealView({
               `}
             >
               {/* Left Side: Correct Rank + Avatar + Text Details */}
-              <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1 pe-2">
+              <div className="flex items-center gap-2 sm:gap-2.5 min-w-0 flex-1 pe-1.5">
                 {/* Rank Number Badge */}
                 <div
                   className={`
-                    flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-xs font-bold font-display-number
+                    flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-xl text-xs font-bold font-display-number
                     ${
                       isTop
                         ? 'bg-lime text-slate-950 shadow-sm'
@@ -158,18 +164,18 @@ export function RankRevealView({
                 </div>
 
                 {/* Avatar with rich media */}
-                <div className="shrink-0">
+                <div className="shrink-0 mx-1 sm:mx-1.5">
                   <RankEntityAvatar media={item.media} name={mainName || item.name} size="md" />
                 </div>
 
                 {/* Name, Season Tag, Metric Value, and Guess Comparison */}
                 <div className="flex flex-col min-w-0 flex-1 justify-center">
                   <div className="flex items-center gap-1.5 min-w-0 flex-wrap">
-                    <span className="text-sm font-semibold text-white truncate leading-tight">
+                    <span className="text-xs sm:text-sm font-semibold text-white truncate leading-tight">
                       {mainName}
                     </span>
                     {tag && (
-                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-lime font-stats text-[11px] font-semibold leading-none">
+                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-lime font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
                         {tag}
                       </span>
                     )}
@@ -177,7 +183,7 @@ export function RankRevealView({
                       ({item.valueLabel})
                     </span>
                   </div>
-                  <div className="flex items-center gap-1 text-xs text-steel font-normal truncate leading-none pt-0.5">
+                  <div className="flex items-center gap-1 text-[11px] sm:text-xs text-steel font-normal truncate leading-none pt-0.5">
                     {item.subText && <span>{item.subText} • </span>}
                     <span>
                       {lang === 'ar'
@@ -196,12 +202,12 @@ export function RankRevealView({
       </div>
 
       {/* ── ADVANCE ACTION BUTTON ─────────── */}
-      <div className="shrink-0 pt-1 pb-2">
+      <div className="shrink-0 pt-0.5 pb-1">
         <button
           type="button"
           onClick={onAdvance}
           disabled={isAdvancing}
-          className="btn-haptic flex h-12 w-full items-center justify-center gap-2 rounded-2xl text-sm font-bold text-slate-950 bg-lime shadow-sm transition-all active:scale-[0.98] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
+          className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-lime shadow-sm transition-all active:scale-[0.98] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
         >
           {isLastRound ? (
             <>

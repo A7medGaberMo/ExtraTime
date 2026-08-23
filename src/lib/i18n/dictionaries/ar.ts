@@ -4,7 +4,8 @@ export const ar: TranslationDictionary = {
   common: {
     appName: 'إكسترا تايم',
     tagline: 'ملعب التكتيك ومزادات الكورة',
-    heroDesc: 'اقتنص نجوم الكورة بعروض سرية في مزادات السنايب، ورتب أساطير وتاريخ اللعبة بأرقامها الرسمية. ابنِ فرقتك بإدارة الميزانية وبيركات التجسس والسكاوتنج.',
+    heroDesc:
+      'اقتنص نجوم الكورة بعروض سرية في مزادات السنايب، ورتب أساطير وتاريخ اللعبة بأرقامها الرسمية. ابنِ فرقتك بإدارة الميزانية وبيركات التجسس والسكاوتنج.',
     loading: 'ثواني بنحمّل...',
     cancel: 'إلغاء',
     back: 'رجوع',
@@ -227,8 +228,10 @@ export const ar: TranslationDictionary = {
     joinDuelBtn: 'ادخل',
     roundStarting: 'الجولة {round} هتبدأ خلال {sec}ث',
     skipCountdown: 'تخطي العداد',
-    submitRanking: 'ثبّت ترتيبي',
+    submitRanking: 'تثبيت الترتيب',
     submitting: 'بنثبت الترتيب...',
+    submit: 'تأكيد وتثبيت الترتيب',
+    locked: 'تم تثبيت الترتيب',
     nextRound: 'الجولة اللي بعدها',
     viewFinalResults: 'شوف النتيجة النهائية',
     perfectOrder: 'ترتيب مثالي 100%! +10 نقط',

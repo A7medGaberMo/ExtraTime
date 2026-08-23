@@ -420,27 +420,20 @@ export default function HomePage() {
             onChange={(e) => setNickname(e.target.value)}
             autoFocus
             maxLength={18}
-            rightAction={
+            rightIcon={
               <button
                 type="button"
                 onClick={() => setNickname(randomName())}
                 aria-label={t('home.nameModal.randomize')}
                 title={t('home.nameModal.randomize')}
-                className="btn-haptic flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-slate-900 text-steel transition-colors hover:border-lime/40 hover:text-lime active:scale-95"
+                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-slate-900 text-steel transition-colors hover:border-lime/40 hover:text-lime"
               >
-                <AppIcon icon={DiceFive} size={20} weight="duotone" />
+                <AppIcon icon={DiceFive} size={18} weight="duotone" />
               </button>
             }
           />
 
-          <div className="flex items-center justify-between">
-            <button
-              type="button"
-              onClick={() => setNickname(randomName())}
-              className="cursor-pointer text-xs font-semibold text-steel transition-colors hover:text-lime"
-            >
-              {t('home.nameModal.randomize')}
-            </button>
+          <div className="flex items-center justify-end px-1">
             <span className="font-stats text-xs text-muted">{nickname.length}/18</span>
           </div>
 

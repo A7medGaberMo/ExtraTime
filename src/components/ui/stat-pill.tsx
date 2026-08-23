@@ -22,22 +22,22 @@ export function StatPill({
   ...props
 }: StatPillProps) {
   const variantStyles = {
-    lime: 'border-lime/40 bg-lime/10 text-lime',
-    amber: 'border-amber-400/40 bg-amber-400/10 text-amber-300',
-    sky: 'border-sky-400/40 bg-sky-400/10 text-sky-300',
-    rose: 'border-rose-500/40 bg-rose-500/10 text-rose-400',
+    lime: 'border-lime/30 bg-lime/10 text-lime',
+    amber: 'border-amber-400/30 bg-amber-400/10 text-amber-300',
+    sky: 'border-sky-400/30 bg-sky-400/10 text-sky-300',
+    rose: 'border-rose-500/30 bg-rose-500/10 text-rose-400',
     muted: 'border-white/10 bg-slate-900/80 text-steel',
   }[variant];
 
   const sizeStyles = {
-    sm: 'gap-1 rounded-lg px-2.5 py-0.5 text-micro',
-    md: 'gap-1.5 rounded-full px-3.5 py-1 text-xs',
+    sm: 'gap-1 rounded-lg px-2 py-0.5 text-xs',
+    md: 'gap-1.5 rounded-full px-3 py-1 text-xs',
   }[size];
 
   return (
     <div
       className={cn(
-        'inline-flex items-center border font-semibold backdrop-blur-md',
+        'inline-flex items-center border font-semibold',
         variantStyles,
         sizeStyles,
         className,
@@ -51,3 +51,4 @@ export function StatPill({
     </div>
   );
 }
+

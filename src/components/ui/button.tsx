@@ -6,14 +6,14 @@ import { CircleNotch } from '@phosphor-icons/react';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-150 select-none disabled:pointer-events-none disabled:opacity-40',
+  'inline-flex cursor-pointer items-center justify-center gap-2 rounded-2xl font-semibold transition-all duration-150 select-none disabled:pointer-events-none disabled:opacity-40 btn-haptic',
   {
     variants: {
       variant: {
         primary:
-          'bg-gradient-to-r from-lime via-vivid to-lime text-slate-950 shadow-lift shadow-lime/20 hover:brightness-105 active:scale-[0.98]',
+          'bg-lime text-slate-950 shadow-sm hover:brightness-105 active:scale-[0.98]',
         secondary:
-          'border border-white/10 bg-slate-900 text-white shadow-sm hover:border-white/20 hover:bg-slate-800 active:scale-[0.98]',
+          'border border-white/10 bg-slate-900/90 text-white shadow-sm hover:border-white/20 hover:bg-slate-850 active:scale-[0.98]',
         outline:
           'border border-white/15 bg-transparent text-slate-200 hover:border-lime/50 hover:bg-white/5 active:scale-[0.98]',
         ghost:
@@ -21,13 +21,13 @@ const buttonVariants = cva(
         danger:
           'border border-rose-500/40 bg-rose-500/15 text-rose-400 hover:bg-rose-500/25 active:scale-[0.98]',
         gold:
-          'bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-lift shadow-amber-400/20 hover:brightness-105 active:scale-[0.98]',
+          'bg-amber-400 text-slate-950 shadow-sm hover:brightness-105 active:scale-[0.98]',
       },
       size: {
-        sm: 'h-11 px-4 text-xs min-h-[44px]',
-        md: 'h-12 px-5 text-sm min-h-[48px]',
-        lg: 'h-14 px-7 text-base min-h-[56px]',
-        icon: 'h-11 w-11 shrink-0 p-0 min-h-[44px] min-w-[44px]',
+        sm: 'h-10 px-3.5 text-xs min-h-[40px]',
+        md: 'h-11 sm:h-12 px-4 sm:px-5 text-xs sm:text-sm min-h-[44px]',
+        lg: 'h-13 px-6 text-sm sm:text-base min-h-[52px]',
+        icon: 'h-10 w-10 shrink-0 p-0 min-h-[40px] min-w-[40px]',
       },
       fullWidth: {
         true: 'w-full',
@@ -70,7 +70,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         disabled={disabled || loading}
-        className={cn(buttonVariants({ variant, size, fullWidth, className }), 'btn-haptic')}
+        className={cn(buttonVariants({ variant, size, fullWidth, className }))}
         {...props}
       >
         {loading ? (
@@ -86,3 +86,4 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 Button.displayName = 'Button';
+

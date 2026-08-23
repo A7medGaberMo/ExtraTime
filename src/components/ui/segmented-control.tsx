@@ -39,7 +39,7 @@ export function SegmentedControl<T extends string | number>({
   return (
     <div
       className={cn(
-        'grid gap-1.5 rounded-2xl border border-white/10 bg-slate-950/80 p-1.5 backdrop-blur-md',
+        'grid gap-1 rounded-2xl border border-white/8 bg-slate-950/80 p-1 backdrop-blur-md',
         colsClass,
         className,
       )}
@@ -52,28 +52,28 @@ export function SegmentedControl<T extends string | number>({
             type="button"
             onClick={() => onChange(option.value)}
             className={cn(
-              'flex flex-col items-center justify-center rounded-xl border text-center transition-all duration-150 active:scale-95 cursor-pointer min-h-[44px]',
-              size === 'sm' && 'p-2 text-xs',
-              size === 'md' && 'p-2.5 sm:p-3 text-xs sm:text-sm',
-              size === 'lg' && 'p-3.5 text-sm sm:text-base font-black',
+              'btn-haptic flex flex-col items-center justify-center rounded-xl border text-center transition-all duration-150 cursor-pointer min-h-[40px]',
+              size === 'sm' && 'p-1.5 text-xs',
+              size === 'md' && 'p-2 sm:p-2.5 text-xs sm:text-sm',
+              size === 'lg' && 'p-3 text-sm sm:text-base font-bold',
               selected
-                ? 'border-lime/60 bg-lime text-slate-950 font-black shadow-lg shadow-lime/20'
+                ? 'border-lime/40 bg-lime text-slate-950 font-bold shadow-sm'
                 : 'border-transparent text-steel hover:bg-white/5 hover:text-white',
             )}
           >
             {option.icon && (
-              <span className={cn('mb-1', selected ? 'text-slate-950' : 'text-steel')}>
+              <span className={cn('mb-0.5', selected ? 'text-slate-950' : 'text-steel')}>
                 {option.icon}
               </span>
             )}
-            <span className="w-full truncate font-black tracking-wider uppercase">
+            <span className="w-full truncate font-bold tracking-tight">
               {option.label}
             </span>
             {option.sublabel && (
               <span
                 className={cn(
                   'w-full truncate text-[10px] font-medium tracking-normal mt-0.5',
-                  selected ? 'text-slate-900 font-bold' : 'text-muted',
+                  selected ? 'text-slate-900 font-semibold' : 'text-muted',
                 )}
               >
                 {option.sublabel}
@@ -85,3 +85,4 @@ export function SegmentedControl<T extends string | number>({
     </div>
   );
 }
+

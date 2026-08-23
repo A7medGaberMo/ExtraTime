@@ -283,7 +283,7 @@ export default function RankArenaPage() {
     const opponentResult = roundResults.find((r) => r.guestId !== guestId);
 
     return (
-      <article className="mx-auto flex max-w-[400px] w-full flex-col gap-2.5 sm:gap-3 px-2 select-none relative">
+      <article className="mx-auto flex max-w-md w-full flex-col gap-2 sm:gap-3 px-3 select-none relative items-center justify-center">
         <RankHeader
           currentRound={gameState.currentRoundIndex + 1}
           totalRounds={gameState.roundCount}
@@ -295,7 +295,6 @@ export default function RankArenaPage() {
 
         <RankRevealView
           questionTitle={gameState.question.title}
-          questionSubtitle={gameState.question.subtitle}
           answers={gameState.question.answers || []}
           userDeltas={userResult?.cardDeltas || []}
           userRoundScore={userResult?.roundScore ?? 0}
@@ -312,7 +311,7 @@ export default function RankArenaPage() {
 
   // ── 4. ACTIVE ROUND GAMEPLAY ───────────────────────────────────────
   return (
-    <article className="mx-auto flex max-w-[400px] w-full flex-col gap-2.5 sm:gap-3 px-2 select-none relative">
+    <article className="mx-auto flex max-w-md w-full flex-col gap-2 sm:gap-3 px-3 select-none relative items-center justify-center">
       <RankHeader
         currentRound={gameState.currentRoundIndex + 1}
         totalRounds={gameState.roundCount}
@@ -358,12 +357,8 @@ export default function RankArenaPage() {
       {gameState.question && (
         <RankCardList
           questionTitle={gameState.question.title}
-          questionSubtitle={gameState.question.subtitle}
           metricLabel={gameState.question.metricLabel}
           direction={gameState.question.direction}
-          tags={gameState.question.tags}
-          scopeType={gameState.question.scopeType}
-          asOfDate={gameState.question.asOfDate}
           items={gameState.question.answers || []}
           currentOrder={currentOrder}
           onOrderChange={(order) => setCustomOrder(order)}

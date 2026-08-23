@@ -1,8 +1,9 @@
 export const en = {
   common: {
     appName: 'ExtraTime',
-    tagline: 'The Premier Football Strategy Arena',
-    heroDesc: 'Outsmart rivals in tactical Snipe auctions and official Rank trivia battles. Build your dream squad with live budget management and tactical perks.',
+    tagline: 'Football Strategy & Secret Bids Arena',
+    heroDesc:
+      'Draft stars with secret sealed bids in Snipe auctions and order football legends by official records. Build your squad with budget management, spy perks, and scout intel.',
     loading: 'Loading...',
     cancel: 'Cancel',
     back: 'Back',
@@ -10,8 +11,8 @@ export const en = {
     save: 'Save',
     copy: 'Copy',
     copied: 'Copied!',
-    vs: 'VS',
-    or: 'OR',
+    vs: 'vs',
+    or: 'or',
     rounds: 'Rounds',
     round: 'Round',
     active: 'Active',
@@ -225,8 +226,10 @@ export const en = {
     joinDuelBtn: 'Join',
     roundStarting: 'Round {round} Starting in {sec}s',
     skipCountdown: 'Skip Countdown',
-    submitRanking: 'Lock My Ranking',
+    submitRanking: 'Lock In Ranking',
     submitting: 'Locking Order...',
+    submit: 'Lock In Ranking',
+    locked: 'Ranking Locked',
     nextRound: 'Next Round',
     viewFinalResults: 'View Final Results',
     perfectOrder: 'PERFECT ORDER! +10 PTS',
@@ -249,12 +252,12 @@ export const en = {
     loadingCards: 'Loading Cards...',
   },
   results: {
-    title: 'Snipe Match Result',
-    subtitle: 'Tactical simulation resolved — sealed bids concluded.',
-    victory: 'VICTORY!',
+    title: 'Match Outcome',
+    subtitle: 'Tactical simulation and secret bids resolved.',
+    victory: 'VICTORY 🏆',
     defeat: 'DEFEAT',
-    draw: 'TACTICAL DRAW',
-    hostTitle: 'Host',
+    draw: 'STALEMATE DRAW',
+    hostTitle: 'Host Manager',
     guestTitle: 'Challenger',
     rematch: 'Play Rematch',
     packs: 'Cards',
@@ -273,3 +276,4 @@ type DeepString<T> = {
 };
 
 export type TranslationDictionary = DeepString<typeof en>;
+

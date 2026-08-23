@@ -6,75 +6,63 @@ import { cn } from '@/lib/utils';
 export interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   badge?: string;
-  leftIcon?: React.ReactNode;
-  rightAction?: React.ReactNode;
+  hint?: string;
   error?: string;
-  containerClassName?: string;
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
+  rightAction?: React.ReactNode;
 }
 
 export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
-  (
-    {
-      className,
-      label,
-      badge,
-      leftIcon,
-      rightAction,
-      error,
-      containerClassName,
-      disabled,
-      ...props
-    },
-    ref,
-  ) => {
+  ({ className, label, badge, hint, error, leftIcon, rightIcon, rightAction, ...props }, ref) => {
+    const badgeText = badge || hint;
+    const actionElement = rightAction || rightIcon;
+
     return (
-      <div className={cn('space-y-1.5 w-full', containerClassName)}>
-        {(label || badge) && (
-          <div className="flex items-center justify-between gap-2 px-1">
+      <div className="w-full space-y-1.5 text-start">
+        {(label || badgeText) && (
+          <div className="flex items-center justify-between">
             {label && (
-              <label className="text-steel text-[10px] font-black tracking-widest uppercase">
+              <label className="text-steel text-xs font-semibold tracking-wide">
                 {label}
               </label>
             )}
-            {badge && (
-              <span className="text-lime text-[10px] font-black tracking-widest uppercase">
-                {badge}
+            {badgeText && (
+              <span className="text-lime text-xs font-semibold tracking-wide">
+                {badgeText}
               </span>
             )}
           </div>
         )}
 
-        <div className="relative flex items-center gap-2">
+        <div className="relative flex items-center">
           {leftIcon && (
-            <div className="pointer-events-none absolute start-3.5 top-1/2 -translate-y-1/2 text-steel">
+            <span className="text-steel pointer-events-none absolute left-3.5 flex items-center">
               {leftIcon}
-            </div>
+            </span>
           )}
 
           <input
             ref={ref}
-            disabled={disabled}
             className={cn(
-              'h-12 w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 text-sm sm:text-base font-bold text-white placeholder:text-steel/60 transition-all outline-none focus:border-lime/70 focus:ring-2 focus:ring-lime/20 disabled:opacity-40 min-h-[48px]',
-              leftIcon && 'ps-11',
-              rightAction && 'pe-14',
-              error && 'border-rose-500/50 focus:border-rose-500 focus:ring-rose-500/20',
+              'h-11 sm:h-12 w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 text-xs sm:text-sm font-semibold text-white placeholder:text-steel/50 transition-all duration-150 focus:border-lime/50 focus:bg-slate-900/90 focus:outline-none backdrop-blur-md',
+              leftIcon && 'pl-10',
+              actionElement && 'pr-10',
+              error && 'border-rose-500/50 focus:border-rose-500',
               className,
             )}
             {...props}
           />
 
-          {rightAction && (
-            <div className="absolute end-1.5 top-1/2 -translate-y-1/2 flex items-center">
-              {rightAction}
-            </div>
+          {actionElement && (
+            <span className="text-steel absolute right-2 flex items-center">
+              {actionElement}
+            </span>
           )}
         </div>
 
         {error && (
-          <p className="text-rose-400 text-xs font-semibold px-1 animate-slide-down">
-            {error}
-          </p>
+          <p className="text-rose-400 text-xs font-medium pl-1">{error}</p>
         )}
       </div>
     );
