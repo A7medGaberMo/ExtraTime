@@ -124,8 +124,8 @@ export function Header() {
   ];
 
   return (
-    <header className="fixed top-2.5 inset-x-0 z-50 flex justify-center pointer-events-none select-none px-3" dir="ltr">
-      <div ref={notchRef} className="pointer-events-auto">
+    <header className="fixed top-[max(0.625rem,env(safe-area-inset-top,0.625rem))] inset-x-0 z-50 flex justify-center pointer-events-none select-none px-2 sm:px-3 w-full" dir="ltr">
+      <div ref={notchRef} className="pointer-events-auto max-w-[calc(100vw-1rem)] flex justify-center">
         <AnimatePresence initial={false} mode="wait">
           {!isOpen ? (
             /* ── Collapsed Dynamic Island Capsule ── */
@@ -136,14 +136,14 @@ export function Header() {
               exit={{ opacity: 0, y: -10, scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 450, damping: 30 }}
               className={cn(
-                'flex items-center gap-1.5 sm:gap-2.5 rounded-full border border-white/10 bg-slate-950/90 px-3 sm:px-4 py-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-all',
+                'flex items-center gap-1 sm:gap-2 rounded-full border border-white/10 bg-slate-950/90 px-2.5 sm:px-4 py-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-all max-w-[calc(100vw-1rem)]',
                 isGameplay ? 'hover:border-lime/40 cursor-pointer' : '',
               )}
             >
               {/* Brand Logo & Name */}
               <Link
                 href="/"
-                className="flex items-center gap-2 group transition-opacity hover:opacity-90 shrink-0"
+                className="flex items-center gap-1.5 sm:gap-2 group transition-opacity hover:opacity-90 shrink-0"
               >
                 <div className="relative flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40 group-hover:scale-105 transition-transform">
                   <Image
@@ -155,7 +155,7 @@ export function Header() {
                     priority
                   />
                 </div>
-                <span className="font-stats font-bold text-[13px] text-white tracking-wider">
+                <span className="font-stats font-bold text-xs sm:text-[13px] text-white tracking-wider">
                   Extra<span className="text-lime">Time</span>
                 </span>
               </Link>
@@ -212,7 +212,7 @@ export function Header() {
                 <button
                   type="button"
                   onClick={handleToggleSound}
-                  className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
+                  className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
                   title={muted ? t('common.soundMuted') : t('common.soundOn')}
                   aria-label={muted ? t('common.soundMuted') : t('common.soundOn')}
                 >
@@ -228,7 +228,7 @@ export function Header() {
                 <button
                   type="button"
                   onClick={toggleLang}
-                  className="btn-haptic flex h-8 items-center gap-1 rounded-full px-2.5 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
+                  className="btn-haptic flex h-7.5 sm:h-8 items-center gap-1 rounded-full px-2 sm:px-2.5 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
                   title={t('common.language')}
                 >
                   <AppIcon icon={Translate} size={13} weight="bold" />
@@ -239,7 +239,7 @@ export function Header() {
                 <button
                   type="button"
                   onClick={() => setIsOpen(true)}
-                  className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
+                  className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
                   title="Expand Navigation Island"
                 >
                   <AppIcon icon={CaretDown} size={13} weight="bold" />
@@ -254,7 +254,7 @@ export function Header() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -16, scale: 0.92 }}
               transition={{ type: 'spring', stiffness: 450, damping: 30 }}
-              className="w-[340px] sm:w-[390px] rounded-3xl border border-white/12 bg-slate-950/98 p-4 shadow-[0_24px_56px_rgba(0,0,0,0.85)] backdrop-blur-2xl"
+              className="w-[calc(100vw-1.5rem)] max-w-[390px] rounded-3xl border border-white/12 bg-slate-950/98 p-3.5 sm:p-4 shadow-[0_24px_56px_rgba(0,0,0,0.85)] backdrop-blur-2xl"
             >
               {/* Header inside Island */}
               <div className="flex items-center justify-between border-b border-white/[0.08] pb-2.5 mb-2.5">
@@ -363,7 +363,7 @@ export function Header() {
               )}
 
               {/* Quick Navigation 4-Box Grid */}
-              <div className="grid grid-cols-4 gap-1.5">
+              <div className="grid grid-cols-4 gap-1 sm:gap-1.5">
                 {navLinks.map((item) => {
                   const IconComp = item.icon;
                   return (
@@ -371,10 +371,10 @@ export function Header() {
                       key={item.href}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className="btn-haptic flex flex-col items-center justify-center gap-1 rounded-2xl border border-white/[0.06] bg-slate-900/80 py-2.5 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
+                      className="btn-haptic flex flex-col items-center justify-center gap-1 rounded-2xl border border-white/[0.06] bg-slate-900/80 py-2 sm:py-2.5 px-0.5 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
                     >
                       <AppIcon icon={IconComp} size={17} weight="bold" className="text-steel group-hover:text-lime transition-colors" />
-                      <span className="text-[11px] font-semibold tracking-tight">{item.label}</span>
+                      <span className="text-[10px] sm:text-[11px] font-semibold tracking-tight truncate max-w-full">{item.label}</span>
                     </Link>
                   );
                 })}

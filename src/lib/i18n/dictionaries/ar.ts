@@ -211,6 +211,7 @@ export const ar: TranslationDictionary = {
   rank: {
     hubTitle: 'تحدي رتّب',
     hubSubtitle: 'رتب 5 أندية أو أساطير أو بطولات حسب الأرقام والإحصائيات الرسمية.',
+    hubBadge: 'أرقام وإحصائيات رسمية',
     soloTab: 'لعب فردي',
     quickTab: 'ماتش سريع 1v1',
     duelTab: 'روم خاصة 1v1',

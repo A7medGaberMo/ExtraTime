@@ -22,6 +22,7 @@ import {
   Compass,
   Sword,
   CircleNotch,
+  PlusCircle,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
@@ -88,7 +89,6 @@ function CreateRoomContent() {
     localStorage.setItem('extratime_guestName', name);
     return res.guestId as Id<'guestUsers'>;
   }
-
 
   async function handleCreateMatch() {
     if (loading || !nickname.trim()) return;
@@ -223,6 +223,14 @@ function CreateRoomContent() {
         selectedGame === 'snipe'
           ? (lang === 'ar' ? 'حدد قواعد مزاد السنايب وابدأ التحدي.' : 'Configure Snipe auction rules and launch.')
           : (lang === 'ar' ? 'اختار نظام تحدي رتّب وابدأ اللعب.' : 'Configure Rank trivia challenge and start.')
+      }
+      badge={
+        <StatPill
+          variant="lime"
+          size="sm"
+          icon={<AppIcon icon={PlusCircle} size={14} weight="duotone" />}
+          label={lang === 'ar' ? 'غرفة مخصصة' : 'Custom Lobby'}
+        />
       }
       backUrl="/"
       maxWidth="2xl"

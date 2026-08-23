@@ -190,7 +190,7 @@ export default function RankHubPage() {
           variant="lime"
           size="sm"
           icon={<AppIcon icon={Ranking} size={14} weight="duotone" />}
-          label="Official Records & Trivia"
+          label={t('rank.hubBadge')}
         />
       }
       maxWidth="2xl"

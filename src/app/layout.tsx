@@ -33,6 +33,8 @@ const barlowCondensed = Barlow_Condensed({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
   viewportFit: 'cover',
 };
 
@@ -157,7 +159,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="bg-background text-foreground selection:bg-lime selection:text-background flex min-h-screen flex-col justify-between overflow-x-hidden font-sans antialiased"
+        className="bg-background text-foreground selection:bg-lime selection:text-background flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-sans antialiased"
       >
         <ConvexClientProvider>
           <I18nProvider>

@@ -52,10 +52,10 @@ export function SegmentedControl<T extends string | number>({
             type="button"
             onClick={() => onChange(option.value)}
             className={cn(
-              'btn-haptic flex flex-col items-center justify-center rounded-xl border text-center transition-all duration-150 cursor-pointer min-h-[40px]',
-              size === 'sm' && 'p-1.5 text-xs',
-              size === 'md' && 'p-2 sm:p-2.5 text-xs sm:text-sm',
-              size === 'lg' && 'p-3 text-sm sm:text-base font-bold',
+              'btn-haptic flex flex-col items-center justify-center rounded-xl border text-center transition-all duration-150 cursor-pointer min-h-[38px] sm:min-h-[40px]',
+              size === 'sm' && 'p-1 sm:p-1.5 text-[11px] sm:text-xs',
+              size === 'md' && 'p-1.5 sm:p-2.5 text-xs sm:text-sm',
+              size === 'lg' && 'p-2 sm:p-3 text-sm sm:text-base font-bold',
               selected
                 ? 'border-lime/40 bg-lime text-slate-950 font-bold shadow-sm'
                 : 'border-transparent text-steel hover:bg-white/5 hover:text-white',
@@ -66,13 +66,13 @@ export function SegmentedControl<T extends string | number>({
                 {option.icon}
               </span>
             )}
-            <span className="w-full truncate font-bold tracking-tight">
+            <span className="w-full truncate font-bold tracking-tight text-[10px] sm:text-xs">
               {option.label}
             </span>
             {option.sublabel && (
               <span
                 className={cn(
-                  'w-full truncate text-[10px] font-medium tracking-normal mt-0.5',
+                  'w-full truncate text-[9px] sm:text-[10px] font-medium tracking-normal mt-0.5',
                   selected ? 'text-slate-900 font-semibold' : 'text-muted',
                 )}
               >

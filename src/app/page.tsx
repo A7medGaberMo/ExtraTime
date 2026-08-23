@@ -176,10 +176,10 @@ export default function HomePage() {
   const selectedPoolLabel = poolOptions.find((p) => p.value === poolMode)?.label;
 
   return (
-    <article className="animate-fade-in mx-auto flex w-full max-w-4xl select-none flex-col items-center gap-5 px-3 py-3 sm:gap-7 sm:py-6">
+    <article className="animate-fade-in mx-auto flex w-full max-w-4xl select-none flex-col items-center gap-4 sm:gap-7 py-2 sm:py-6 overflow-x-clip">
       {/* ── HERO ──────────────────────────────────────────────────────── */}
-      <header className="relative w-full space-y-2 pt-1 text-center">
-        <div className="pointer-events-none absolute top-1/2 left-1/2 h-[200px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-lime/10 via-sky-500/10 to-amber-500/10 blur-[100px]" />
+      <header className="relative w-full space-y-2 pt-1 text-center overflow-hidden">
+        <div className="pointer-events-none absolute top-1/2 left-1/2 h-[180px] sm:h-[200px] w-[320px] sm:w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-lime/10 via-sky-500/10 to-amber-500/10 blur-[80px] sm:blur-[100px]" />
 
         <div className="relative space-y-1.5">
           <StatPill
@@ -199,256 +199,254 @@ export default function HomePage() {
 
       {/* ── ACTIVE MATCH RECONNECTION BANNER ──────────────────────────── */}
       <ActiveMatchBanner />
-
-      {/* ── FLAGSHIP CARDS ───────────────────────────────────────────── */}
-      <section className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-        {/* ── CARD 1: SNIPE ── */}
-        <Panel variant="highlight" className="group relative flex flex-col justify-between gap-5 overflow-hidden p-5 sm:p-6">
-          <div className="space-y-4">
-            <div className="flex items-center justify-between gap-3">
-              <div className="flex items-center gap-3">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-lime/40 bg-lime/10 text-lime">
-                  <AppIcon icon={Crosshair} size={24} weight="duotone" />
-                </div>
-                <div className="min-w-0">
-                  <h2 className="font-display text-xl font-bold tracking-tight text-white sm:text-2xl">
-                    {t('home.snipeCard.title')}
-                  </h2>
-                  <span className="text-xs font-semibold text-lime">
-                    {t('home.snipeCard.subtitle')}
-                  </span>
-                </div>
-              </div>
-              <StatPill variant="lime" size="sm" className="shrink-0">
-                {matchSize === 11 ? '11v11' : '5v5'}
-              </StatPill>
+  <section className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+    {/* ── CARD 1: SNIPE ── */}
+    <Panel variant="highlight" className="group relative flex flex-col justify-between gap-5 overflow-hidden p-5 sm:p-6">
+      <div className="space-y-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-lime/40 bg-lime/10 text-lime">
+              <AppIcon icon={Crosshair} size={24} weight="duotone" />
             </div>
-
-            <p className="text-xs font-medium leading-relaxed text-steel">
-              {t('home.snipeCard.desc')}
-            </p>
-
-            <div className="space-y-1.5">
-              <span className="block text-micro font-semibold uppercase tracking-wider text-steel">
-                {t('createRoom.matchSize')}
+            <div className="min-w-0">
+              <h2 className="font-display text-xl font-bold tracking-tight text-white sm:text-2xl">
+                {t('home.snipeCard.title')}
+              </h2>
+              <span className="text-xs font-semibold text-lime">
+                {t('home.snipeCard.subtitle')}
               </span>
-              <SegmentedControl options={matchSizeOptions} value={matchSize} onChange={setMatchSize} size="sm" />
-            </div>
-
-            <div className="space-y-1.5">
-              <span className="block text-micro font-semibold uppercase tracking-wider text-steel">
-                {t('home.snipeCard.selectPool')}
-              </span>
-              <SegmentedControl options={poolOptions} value={poolMode} onChange={setPoolMode} size="sm" />
-            </div>
-
-            {/* Live queue status — one line, no essay */}
-            <p className="flex items-center justify-between rounded-md border border-white/5 bg-slate-950/60 px-3 py-2 text-xs">
-              <span className="truncate font-semibold text-white">{selectedPoolLabel}</span>
-              {waitingSnipeCurrent > 0 ? (
-                <span className="ms-2 shrink-0 font-stats text-lime">
-                  {waitingSnipeCurrent} {t('home.snipeCard.inQueue')}
-                </span>
-              ) : (
-                <span className="ms-2 shrink-0 font-medium text-steel">{t('home.snipeCard.queueReady')}</span>
-              )}
-            </p>
-          </div>
-
-          <div className="space-y-2.5 border-t border-white/5 pt-4">
-            <Button
-              variant="primary"
-              size="lg"
-              fullWidth
-              onClick={() => triggerActionWithName({ type: 'snipe' })}
-              disabled={loading}
-              leftIcon={<AppIcon icon={Sword} size={18} weight="bold" />}
-              rightIcon={
-                waitingSnipeCurrent > 0 ? (
-                  <span className="rounded-full bg-slate-950/40 px-2 py-0.5 font-stats text-micro text-slate-950">
-                    {waitingSnipeCurrent}
-                  </span>
-                ) : undefined
-              }
-            >
-              {lang === 'ar'
-                ? `ماتش عام (${matchSize === 11 ? '11 ضد 11' : 'خماسي'})`
-                : `Play Public (${matchSize}v${matchSize})`}
-            </Button>
-
-            <div className="flex items-center justify-between px-1">
-              <Link
-                href="/create-room?mode=snipe"
-                className="flex items-center gap-1.5 text-xs font-semibold text-steel transition-colors hover:text-lime"
-              >
-                <AppIcon icon={PlusCircle} size={14} weight="duotone" />
-                <span>{t('home.snipeCard.createCustom')}</span>
-              </Link>
-              <Link
-                href="/join-room"
-                className="flex items-center gap-1.5 text-xs font-semibold text-steel transition-colors hover:text-lime"
-              >
-                <AppIcon icon={SignIn} size={14} weight="duotone" />
-                <span>{t('home.snipeCard.joinWithCode')}</span>
-              </Link>
             </div>
           </div>
-        </Panel>
-
-        {/* ── CARD 2: RANK ── */}
-        <Panel variant="highlight" className="group relative flex flex-col justify-between gap-5 overflow-hidden p-5 sm:p-6">
-          <div className="space-y-4">
-            <div className="flex items-center justify-between gap-3">
-              <div className="flex items-center gap-3">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-amber-400/40 bg-amber-400/10 text-amber-400">
-                  <AppIcon icon={Ranking} size={24} weight="duotone" />
-                </div>
-                <div className="min-w-0">
-                  <h2 className="font-display text-xl font-bold tracking-tight text-white sm:text-2xl">
-                    {t('home.rankCard.title')}
-                  </h2>
-                  <span className="text-xs font-semibold text-amber-400">
-                    {t('home.rankCard.subtitle')}
-                  </span>
-                </div>
-              </div>
-              <StatPill variant="amber" size="sm" className="shrink-0">
-                {rankRounds === 3 ? '3R · 45s' : '5R · 45s'}
-              </StatPill>
-            </div>
-
-            <p className="text-xs font-medium leading-relaxed text-steel">
-              {t('home.rankCard.desc')}
-            </p>
-
-            <div className="space-y-1.5">
-              <span className="block text-micro font-semibold uppercase tracking-wider text-steel">
-                {t('rank.matchLength')}
-              </span>
-              <SegmentedControl options={rankRoundOptions} value={rankRounds} onChange={setRankRounds} size="sm" />
-            </div>
-          </div>
-
-          <div className="space-y-2.5 border-t border-white/5 pt-4">
-            <div className="grid grid-cols-2 gap-2">
-              <Button
-                variant="primary"
-                onClick={() => triggerActionWithName({ type: 'rank_solo' })}
-                disabled={loading}
-                leftIcon={<AppIcon icon={Play} size={16} weight="bold" />}
-              >
-                {t('home.rankCard.playSolo')}
-              </Button>
-
-              <Button
-                variant="secondary"
-                onClick={() => triggerActionWithName({ type: 'rank_public' })}
-                disabled={loading}
-                leftIcon={<AppIcon icon={Compass} size={16} weight="bold" className="text-amber-400" />}
-                rightIcon={
-                  waitingRankCurrent > 0 ? (
-                    <span className="font-stats text-micro text-amber-300">{waitingRankCurrent}</span>
-                  ) : undefined
-                }
-              >
-                {t('rank.quickTab')}
-              </Button>
-            </div>
-
-            <div className="flex items-center justify-between px-1">
-              <Link
-                href="/rank?tab=duel"
-                className="flex items-center gap-1.5 text-xs font-semibold text-steel transition-colors hover:text-amber-300"
-              >
-                <AppIcon icon={PlusCircle} size={14} weight="duotone" className="text-amber-400" />
-                <span>{t('home.rankCard.createDuelLink')}</span>
-              </Link>
-              <Link
-                href="/join-room"
-                className="flex items-center gap-1.5 text-xs font-semibold text-steel transition-colors hover:text-lime"
-              >
-                <AppIcon icon={SignIn} size={14} weight="duotone" />
-                <span>{t('home.snipeCard.joinWithCode')}</span>
-              </Link>
-            </div>
-          </div>
-        </Panel>
-      </section>
-
-      {/* ── SECONDARY BAR ────────────────────────────────────────────── */}
-      <section className="grid w-full max-w-4xl grid-cols-2 gap-3">
-        <Link
-          href="/packs"
-          className="group flex cursor-pointer items-center gap-3 rounded-xl border border-white/10 bg-slate-950/60 p-3.5 transition-colors hover:border-lime/40 hover:bg-slate-900"
-        >
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-lime/20 bg-lime/10 text-lime transition-transform group-hover:scale-105">
-            <AppIcon icon={Cards} size={18} weight="duotone" />
-          </div>
-          <div className="min-w-0">
-            <h3 className="truncate text-sm font-bold text-white">{t('home.packsBanner.title')}</h3>
-            <p className="truncate text-micro text-steel">{t('home.packsBanner.subtitle')}</p>
-          </div>
-        </Link>
-
-        <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-slate-950/60 p-3.5">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-sky-500/20 bg-sky-500/10 text-sky-400">
-            <AppIcon icon={Database} size={18} weight="duotone" />
-          </div>
-          <div className="min-w-0">
-            <h3 className="truncate text-sm font-bold text-white">
-              <span className="font-stats">{playerCount}</span>{' '}
-              {lang === 'ar' ? 'لاعب' : 'Players'}
-            </h3>
-            <p className="truncate text-micro text-steel">{t('home.databaseStat.subtitle')}</p>
-          </div>
+          <StatPill variant="lime" size="sm" className="shrink-0">
+            {matchSize === 11 ? '11v11' : '5v5'}
+          </StatPill>
         </div>
-      </section>
 
-      {/* ── MANAGER NAME MODAL ───────────────────────────────────────── */}
-      <ModalShell
-        isOpen={showNameModal}
-        onClose={() => setShowNameModal(false)}
-        title={t('home.nameModal.title')}
-        subtitle={t('home.nameModal.subtitle')}
-        maxWidth="md"
-      >
-        <div className="space-y-4 pt-1">
-          <TextInput
-            label={t('home.nameModal.label')}
-            placeholder={t('home.nameModal.placeholder')}
-            value={nickname}
-            onChange={(e) => setNickname(e.target.value)}
-            autoFocus
-            maxLength={18}
-            rightIcon={
-              <button
-                type="button"
-                onClick={() => setNickname(randomName())}
-                aria-label={t('home.nameModal.randomize')}
-                title={t('home.nameModal.randomize')}
-                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-slate-900 text-steel transition-colors hover:border-lime/40 hover:text-lime"
-              >
-                <AppIcon icon={DiceFive} size={18} weight="duotone" />
-              </button>
-            }
-          />
+        <p className="text-xs font-medium leading-relaxed text-steel">
+          {t('home.snipeCard.desc')}
+        </p>
 
-          <div className="flex items-center justify-end px-1">
-            <span className="font-stats text-xs text-muted">{nickname.length}/18</span>
+        <div className="space-y-1.5">
+          <span className="block text-micro font-semibold uppercase tracking-wider text-steel">
+            {t('createRoom.matchSize')}
+          </span>
+          <SegmentedControl options={matchSizeOptions} value={matchSize} onChange={setMatchSize} size="sm" />
+        </div>
+
+        <div className="space-y-1.5">
+          <span className="block text-micro font-semibold uppercase tracking-wider text-steel">
+            {t('home.snipeCard.selectPool')}
+          </span>
+          <SegmentedControl options={poolOptions} value={poolMode} onChange={setPoolMode} size="sm" />
+        </div>
+
+        {/* Live queue status — one line, no essay */}
+        <p className="flex items-center justify-between rounded-md border border-white/5 bg-slate-950/60 px-3 py-2 text-xs">
+          <span className="truncate font-semibold text-white">{selectedPoolLabel}</span>
+          {waitingSnipeCurrent > 0 ? (
+            <span className="ms-2 shrink-0 font-stats text-lime">
+              {waitingSnipeCurrent} {t('home.snipeCard.inQueue')}
+            </span>
+          ) : (
+            <span className="ms-2 shrink-0 font-medium text-steel">{t('home.snipeCard.queueReady')}</span>
+          )}
+        </p>
+      </div>
+
+      <div className="space-y-2.5 border-t border-white/5 pt-4">
+        <Button
+          variant="primary"
+          size="lg"
+          fullWidth
+          onClick={() => triggerActionWithName({ type: 'snipe' })}
+          disabled={loading}
+          leftIcon={<AppIcon icon={Sword} size={18} weight="bold" />}
+          rightIcon={
+            waitingSnipeCurrent > 0 ? (
+              <span className="rounded-full bg-slate-950/40 px-2 py-0.5 font-stats text-micro text-slate-950">
+                {waitingSnipeCurrent}
+              </span>
+            ) : undefined
+          }
+        >
+          {lang === 'ar'
+            ? `ماتش عام (${matchSize === 11 ? '11 ضد 11' : 'خماسي'})`
+            : `Play Public (${matchSize}v${matchSize})`}
+        </Button>
+
+        <div className="flex items-center justify-between px-1">
+          <Link
+            href="/create-room?mode=snipe"
+            className="flex items-center gap-1.5 text-xs font-semibold text-steel transition-colors hover:text-lime"
+          >
+            <AppIcon icon={PlusCircle} size={14} weight="duotone" />
+            <span>{t('home.snipeCard.createCustom')}</span>
+          </Link>
+          <Link
+            href="/join-room"
+            className="flex items-center gap-1.5 text-xs font-semibold text-steel transition-colors hover:text-lime"
+          >
+            <AppIcon icon={SignIn} size={14} weight="duotone" />
+            <span>{t('home.snipeCard.joinWithCode')}</span>
+          </Link>
+        </div>
+      </div>
+    </Panel>
+
+    {/* ── CARD 2: RANK ── */}
+    <Panel variant="highlight" className="group relative flex flex-col justify-between gap-5 overflow-hidden p-5 sm:p-6">
+      <div className="space-y-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-amber-400/40 bg-amber-400/10 text-amber-400">
+              <AppIcon icon={Ranking} size={24} weight="duotone" />
+            </div>
+            <div className="min-w-0">
+              <h2 className="font-display text-xl font-bold tracking-tight text-white sm:text-2xl">
+                {t('home.rankCard.title')}
+              </h2>
+              <span className="text-xs font-semibold text-amber-400">
+                {t('home.rankCard.subtitle')}
+              </span>
+            </div>
           </div>
+          <StatPill variant="amber" size="sm" className="shrink-0">
+            {rankRounds === 3 ? '3R · 45s' : '5R · 45s'}
+          </StatPill>
+        </div>
 
+        <p className="text-xs font-medium leading-relaxed text-steel">
+          {t('home.rankCard.desc')}
+        </p>
+
+        <div className="space-y-1.5">
+          <span className="block text-micro font-semibold uppercase tracking-wider text-steel">
+            {t('rank.matchLength')}
+          </span>
+          <SegmentedControl options={rankRoundOptions} value={rankRounds} onChange={setRankRounds} size="sm" />
+        </div>
+      </div>
+
+      <div className="space-y-2.5 border-t border-white/5 pt-4">
+        <div className="grid grid-cols-2 gap-2">
           <Button
             variant="primary"
-            size="lg"
-            fullWidth
-            onClick={handleModalSubmit}
-            disabled={loading || !nickname.trim()}
-            loading={loading}
+            onClick={() => triggerActionWithName({ type: 'rank_solo' })}
+            disabled={loading}
+            leftIcon={<AppIcon icon={Play} size={16} weight="bold" />}
           >
-            {loading ? t('home.nameModal.finding') : t('common.confirm')}
+            {t('home.rankCard.playSolo')}
+          </Button>
+
+          <Button
+            variant="secondary"
+            onClick={() => triggerActionWithName({ type: 'rank_public' })}
+            disabled={loading}
+            leftIcon={<AppIcon icon={Compass} size={16} weight="bold" className="text-amber-400" />}
+            rightIcon={
+              waitingRankCurrent > 0 ? (
+                <span className="font-stats text-micro text-amber-300">{waitingRankCurrent}</span>
+              ) : undefined
+            }
+          >
+            {t('rank.quickTab')}
           </Button>
         </div>
-      </ModalShell>
-    </article>
+
+        <div className="flex items-center justify-between px-1">
+          <Link
+            href="/rank?tab=duel"
+            className="flex items-center gap-1.5 text-xs font-semibold text-steel transition-colors hover:text-amber-300"
+          >
+            <AppIcon icon={PlusCircle} size={14} weight="duotone" className="text-amber-400" />
+            <span>{t('home.rankCard.createDuelLink')}</span>
+          </Link>
+          <Link
+            href="/join-room"
+            className="flex items-center gap-1.5 text-xs font-semibold text-steel transition-colors hover:text-lime"
+          >
+            <AppIcon icon={SignIn} size={14} weight="duotone" />
+            <span>{t('home.snipeCard.joinWithCode')}</span>
+          </Link>
+        </div>
+      </div>
+    </Panel>
+  </section>
+
+  {/* ── SECONDARY BAR ────────────────────────────────────────────── */ }
+  <section className="grid w-full max-w-4xl grid-cols-2 gap-3">
+    <Link
+      href="/packs"
+      className="group flex cursor-pointer items-center gap-3 rounded-xl border border-white/10 bg-slate-950/60 p-3.5 transition-colors hover:border-lime/40 hover:bg-slate-900"
+    >
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-lime/20 bg-lime/10 text-lime transition-transform group-hover:scale-105">
+        <AppIcon icon={Cards} size={18} weight="duotone" />
+      </div>
+      <div className="min-w-0">
+        <h3 className="truncate text-sm font-bold text-white">{t('home.packsBanner.title')}</h3>
+        <p className="truncate text-micro text-steel">{t('home.packsBanner.subtitle')}</p>
+      </div>
+    </Link>
+
+    <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-slate-950/60 p-3.5">
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-sky-500/20 bg-sky-500/10 text-sky-400">
+        <AppIcon icon={Database} size={18} weight="duotone" />
+      </div>
+      <div className="min-w-0">
+        <h3 className="truncate text-sm font-bold text-white">
+          <span className="font-stats">{playerCount}</span>{' '}
+          {lang === 'ar' ? 'لاعب' : 'Players'}
+        </h3>
+        <p className="truncate text-micro text-steel">{t('home.databaseStat.subtitle')}</p>
+      </div>
+    </div>
+  </section>
+
+  {/* ── MANAGER NAME MODAL ───────────────────────────────────────── */ }
+  <ModalShell
+    isOpen={showNameModal}
+    onClose={() => setShowNameModal(false)}
+    title={t('home.nameModal.title')}
+    subtitle={t('home.nameModal.subtitle')}
+    maxWidth="md"
+  >
+    <div className="space-y-4 pt-1">
+      <TextInput
+        label={t('home.nameModal.label')}
+        placeholder={t('home.nameModal.placeholder')}
+        value={nickname}
+        onChange={(e) => setNickname(e.target.value)}
+        autoFocus
+        maxLength={18}
+        rightIcon={
+          <button
+            type="button"
+            onClick={() => setNickname(randomName())}
+            aria-label={t('home.nameModal.randomize')}
+            title={t('home.nameModal.randomize')}
+            className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-slate-900 text-steel transition-colors hover:border-lime/40 hover:text-lime"
+          >
+            <AppIcon icon={DiceFive} size={18} weight="duotone" />
+          </button>
+        }
+      />
+
+      <div className="flex items-center justify-end px-1">
+        <span className="font-stats text-xs text-muted">{nickname.length}/18</span>
+      </div>
+
+      <Button
+        variant="primary"
+        size="lg"
+        fullWidth
+        onClick={handleModalSubmit}
+        disabled={loading || !nickname.trim()}
+        loading={loading}
+      >
+        {loading ? t('home.nameModal.finding') : t('common.confirm')}
+      </Button>
+    </div>
+  </ModalShell>
+    </article >
   );
 }

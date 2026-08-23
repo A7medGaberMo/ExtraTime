@@ -15,10 +15,10 @@ export function MainWrapper({ children }: { children: React.ReactNode }) {
   return (
     <main
       className={cn(
-        'animate-fade-in mx-auto w-full',
+        'animate-fade-in mx-auto w-full max-w-full overflow-x-clip flex flex-col items-center',
         isGameplay
-          ? 'h-[100dvh] max-h-[100dvh] overflow-hidden flex flex-col justify-center items-center px-2 py-1 sm:px-4 sm:py-2'
-          : 'flex-1 max-w-7xl px-3.5 pt-16 pb-12 sm:px-6 sm:pt-20 sm:pb-16',
+          ? 'h-[100dvh] max-h-[100dvh] overflow-y-auto overflow-x-hidden justify-start sm:justify-center px-2 py-1 sm:px-4 sm:py-2'
+          : 'flex-1 max-w-5xl px-3 sm:px-6 pt-16 pb-12 sm:pt-20 sm:pb-16 justify-start',
       )}
     >
       {children}

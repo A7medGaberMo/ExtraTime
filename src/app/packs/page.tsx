@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import {
@@ -9,12 +9,14 @@ import {
   Shuffle,
   X,
   ArrowCounterClockwise,
+  Cards,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { PageShell } from '@/components/ui/page-shell';
 import { Panel } from '@/components/ui/panel';
 import { TextInput } from '@/components/ui/text-input';
+import { StatPill } from '@/components/ui/stat-pill';
 import { CardDetailModal } from '@/components/packs/card-detail-modal';
 import { PlayerCard } from '@/components/shared/player-card';
 import { TierBadge } from '@/components/shared/tier-badge';
@@ -143,7 +145,7 @@ function pickCardsForPack(pack: PackDef, allPlayers: PlayerCardData[]): PlayerCa
 }
 
 export default function PacksPage() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 40 });
   const [shuffleSeed, setShuffleSeed] = useState(0);
 
@@ -235,6 +237,14 @@ export default function PacksPage() {
     <PageShell
       title={t('packs.title')}
       subtitle={t('packs.subtitle')}
+      badge={
+        <StatPill
+          variant="lime"
+          size="sm"
+          icon={<AppIcon icon={Cards} size={14} weight="duotone" />}
+          label={lang === 'ar' ? 'سوق الباكات والبطاقات' : 'Card Packs & Vault'}
+        />
+      }
       backUrl="/"
       maxWidth="5xl"
     >
@@ -249,9 +259,8 @@ export default function PacksPage() {
               <Panel
                 key={pack.id}
                 variant={isSelected ? 'highlight' : 'default'}
-                className={`p-4 sm:p-5 flex flex-col justify-between gap-4 transition-all duration-200 hover:-translate-y-1 ${
-                  isSelected ? 'border-lime ring-2 ring-lime/50' : ''
-                }`}
+                className={`p-4 sm:p-5 flex flex-col justify-between gap-4 transition-all duration-200 hover:-translate-y-1 ${isSelected ? 'border-lime ring-2 ring-lime/50' : ''
+                  }`}
                 style={{
                   borderColor: `${style.accent}50`,
                   boxShadow: `0 14px 28px rgba(0,0,0,0.4), 0 0 16px ${style.glow}`,

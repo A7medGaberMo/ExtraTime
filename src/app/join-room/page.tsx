@@ -137,6 +137,14 @@ export default function JoinRoomPage() {
     <PageShell
       title={lang === 'ar' ? 'ادخل ماتش بالكود' : 'Join Match'}
       subtitle={lang === 'ar' ? 'ادخل كود الغرفة المكون من 6 رموز لأي لعبة (سنايب أو رتّب).' : 'Enter 6-character code for Snipe or Rank duel.'}
+      badge={
+        <StatPill
+          variant="lime"
+          size="sm"
+          icon={<AppIcon icon={Key} size={14} weight="duotone" />}
+          label={lang === 'ar' ? 'دخول سريع' : 'Direct Join'}
+        />
+      }
       backUrl="/"
       maxWidth="xl"
     >

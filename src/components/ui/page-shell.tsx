@@ -42,22 +42,22 @@ export function PageShell({
   return (
     <article
       className={cn(
-        'animate-fade-in relative mx-auto flex w-full flex-col gap-4 sm:gap-6 px-1 sm:px-0',
+        'animate-fade-in relative mx-auto flex w-full flex-col gap-4 sm:gap-6 px-1 sm:px-0 overflow-x-clip items-center',
         maxWidthClass,
         className,
       )}
     >
       {hasAmbientLight && (
-        <div className="from-lime/10 pointer-events-none absolute -top-12 left-1/2 h-[260px] w-[500px] -translate-x-1/2 rounded-full bg-gradient-to-r via-sky-500/10 to-amber-500/10 blur-[130px]" />
+        <div className="from-lime/10 pointer-events-none absolute -top-12 left-1/2 h-[200px] sm:h-[260px] w-[320px] sm:w-[500px] -translate-x-1/2 rounded-full bg-gradient-to-r via-sky-500/10 to-amber-500/10 blur-[90px] sm:blur-[130px]" />
       )}
 
-      {(title || backUrl) && (
-        <header className="relative z-10 flex flex-col gap-1.5 pt-1">
+      {(title || backUrl || badge) && (
+        <header className="relative z-10 flex w-full flex-col items-center text-center gap-2 pt-1">
           {backUrl && (
-            <div>
+            <div className="w-full flex justify-start">
               <Link
                 href={backUrl}
-                className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-steel hover:text-white transition-colors mb-2"
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1 text-xs font-semibold text-steel hover:border-lime/40 hover:text-white transition-all mb-1"
               >
                 <AppIcon icon={ArrowLeft} size={14} weight="bold" />
                 <span>{t('common.back')}</span>
@@ -65,23 +65,23 @@ export function PageShell({
             </div>
           )}
 
-          {badge && <div className="mb-0.5">{badge}</div>}
+          {badge && <div className="flex justify-center">{badge}</div>}
 
           {title && (
-            <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-white uppercase font-display leading-tight">
+            <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-white uppercase font-display leading-tight text-center">
               {title}
             </h1>
           )}
 
           {subtitle && (
-            <p className="text-steel text-xs sm:text-sm font-medium leading-relaxed max-w-xl">
+            <p className="text-steel text-xs sm:text-sm font-medium leading-relaxed max-w-xl text-center mx-auto">
               {subtitle}
             </p>
           )}
         </header>
       )}
 
-      <div className="relative z-10 space-y-4">{children}</div>
+      <div className="relative z-10 w-full space-y-4">{children}</div>
     </article>
   );
 }

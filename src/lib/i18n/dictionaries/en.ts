@@ -209,6 +209,7 @@ export const en = {
   rank: {
     hubTitle: 'Rank Mode',
     hubSubtitle: 'Order 5 clubs, superstars, historic seasons, and tournament records by accurate official metrics.',
+    hubBadge: 'Official Records & Trivia',
     soloTab: 'Solo Sprint',
     quickTab: 'Quick 1v1',
     duelTab: 'Private 1v1',
