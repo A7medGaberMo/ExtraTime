@@ -43,8 +43,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const { roomId } = use(params);
   const router = useRouter();
   const { t, lang } = useI18n();
-  const { guestId } = useGuestSession(true);
+  const { guestId, sessionToken } = useGuestSession(true);
   const [codeCopied, setCodeCopied] = useState(false);
+
   const [showReveal, setShowReveal] = useState(false);
   const [showFormation, setShowFormation] = useState(false);
   const prevRoundRef = useRef<number | null>(null);
@@ -106,13 +107,17 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setIsActivatingPerk(true);
     setError(null);
     try {
-      await mutatePerk({ roomId: roomId as Id<'rooms'>, userId: guestId });
+      await mutatePerk({ 
+        roomId: roomId as Id<'rooms'>, 
+        userId: guestId,
+        sessionToken: sessionToken ?? undefined
+      });
     } catch (e: unknown) {
       setError((e as { message?: string }).message || 'Could not activate perk');
     } finally {
       setIsActivatingPerk(false);
     }
-  }, [mutatePerk, guestId, isActivatingPerk, roomId, state?.me?.perkUsed]);
+  }, [mutatePerk, guestId, sessionToken, isActivatingPerk, roomId, state?.me?.perkUsed]);
 
   // ── Blind phase 30s countdown (sealed lockbox deadline) ──
   const [timeLeft, setTimeLeft] = useState(0);
@@ -138,12 +143,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       resolveSealedRound({
         roomId: roomId as Id<'rooms'>,
         userId: guestId,
+        sessionToken: sessionToken ?? undefined,
       }).catch(() => {
         autoResolveFired.current = false;
       });
     }
     if (timeLeft > 0) autoResolveFired.current = false;
-  }, [timeLeft, deadline, state, isSubmitting, resolveSealedRound, roomId, guestId]);
+  }, [timeLeft, deadline, state, isSubmitting, resolveSealedRound, roomId, guestId, sessionToken]);
 
   /* ── Derived ───────────────────────────────────────────────── */
   const auction = state?.auction;
@@ -157,8 +163,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const mySquad = state?.mySquad ?? [];
 
   const isActive = auction?.status === 'active';
-  const isHost = state?.isHost ?? true;
+  const isHost = Boolean(state?.isHost);
   const myBudget = me?.budget ?? 0;
+
   const currentPosition =
     auction?.rounds && auction?.currentRound
       ? (auction.rounds[auction.currentRound - 1]?.position ?? '-')
@@ -216,7 +223,12 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setIsSubmitting(true);
     setError(null);
     try {
-      await submitSealedBid({ roomId: roomId as Id<'rooms'>, userId: guestId, amount: bidAmount });
+      await submitSealedBid({
+        roomId: roomId as Id<'rooms'>,
+        userId: guestId,
+        sessionToken: sessionToken ?? undefined,
+        amount: bidAmount,
+      });
       setLockedAmount(bidAmount);
       sfx.cardDeal();
     } catch (e: unknown) {
@@ -224,7 +236,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     } finally {
       setIsSubmitting(false);
     }
-  }, [isActive, guestId, myLocked, bidAmount, submitSealedBid, roomId]);
+  }, [isActive, guestId, sessionToken, myLocked, bidAmount, submitSealedBid, roomId]);
+
 
   const handleRevealClose = useCallback(() => {
     setShowReveal(false);

@@ -92,7 +92,20 @@ export const en = {
       submit: 'Start Snipe Match',
       finding: 'Finding Match...',
     },
+    activeMatch: {
+      badge: 'Live Match Active',
+      snipeTitle: 'Snipe Auction Duel',
+      rankTitle: 'Rank Challenge Duel',
+      waitingRival: 'Waiting for opponent to join...',
+      inProgress: 'Match in progress — your turn is active!',
+      roundProgress: 'Round {current} / {total}',
+      resume: 'Resume Match',
+      leave: 'Leave & Delete',
+      abandonConfirm: 'Are you sure you want to abandon and delete this match?',
+      abandonSuccess: 'Match abandoned and removed from queue.',
+    },
   },
+
   pools: {
     ACTIVE: { label: 'Active', sub: 'Current stars' },
     GLOBAL: { label: 'Global', sub: 'All + Icons' },

@@ -38,7 +38,8 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
 
   const room = state?.room;
   const auction = state?.auction;
-  const isHost = state?.isHost ?? true;
+  const isHost = Boolean(state?.isHost);
+
 
   useEffect(() => {
     if (auction?.status === 'active' || room?.status === 'in_progress') {

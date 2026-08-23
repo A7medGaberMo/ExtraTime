@@ -1,10 +1,11 @@
-import { mutation } from '../_generated/server';
+import { internalMutation } from '../_generated/server';
 import { Id } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { tierValidator, LEAGUE_COUNTRY, type Tier } from '../lib/constants';
 
 /**
  * Seeder mutations for populating clubs, nations, players, and stats into Convex.
+ * Locked down as internal mutations so they cannot be invoked via the public client API.
  */
 
 function inferCountry(league: string, playerNation: string): string {
@@ -45,9 +46,9 @@ const playerArg = v.object({
 });
 
 /**
- * Clear a table in batches.
+ * Clear a table in batches (Internal only).
  */
-export const clearTableBatch = mutation({
+export const clearTableBatch = internalMutation({
   args: {
     tableName: v.string(),
     batchSize: v.optional(v.number()),
@@ -67,9 +68,9 @@ export const clearTableBatch = mutation({
 });
 
 /**
- * Seed clubs batch.
+ * Seed clubs batch (Internal only).
  */
-export const seedClubsBatch = mutation({
+export const seedClubsBatch = internalMutation({
   args: {
     clubs: v.array(clubItemArg),
   },
@@ -93,9 +94,9 @@ export const seedClubsBatch = mutation({
 });
 
 /**
- * Seed nations batch.
+ * Seed nations batch (Internal only).
  */
-export const seedNationsBatch = mutation({
+export const seedNationsBatch = internalMutation({
   args: {
     nations: v.array(nationItemArg),
   },
@@ -119,9 +120,10 @@ export const seedNationsBatch = mutation({
 });
 
 /**
- * seedPlayersBatch — accurately inserts players linked to club & nation.
+ * seedPlayersBatch — accurately inserts players linked to club & nation (Internal only).
  */
-export const upsertPlayersBatch = mutation({
+export const upsertPlayersBatch = internalMutation({
+
   args: {
     players: v.array(playerArg),
   },

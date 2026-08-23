@@ -46,7 +46,8 @@ export default function RankArenaPage() {
   const router = useRouter();
   const { toast } = useToast();
   const { lang, t } = useI18n();
-  const { guestId } = useGuestSession();
+  const { guestId, sessionToken } = useGuestSession();
+
 
   const gameId = params.gameId as Id<'rankGames'>;
 
@@ -132,12 +133,14 @@ export default function RankArenaPage() {
       await submitRoundMutation({
         gameId,
         guestId,
+        sessionToken: sessionToken ?? undefined,
         submittedOrder: currentOrder,
       });
     } catch (err: unknown) {
       const e = err as { message?: string };
       toast(e.message || 'Failed to submit ranking', 'error');
     } finally {
+
       setIsSubmitting(false);
     }
   }
@@ -188,10 +191,16 @@ export default function RankArenaPage() {
               variant="lime"
               size="sm"
               icon={<AppIcon icon={Users} size={14} weight="duotone" />}
-              label="Waiting for Opponent"
+              label={lang === 'ar' ? 'في انتظار المنافس' : 'Waiting for Opponent'}
             />
-            <h2 className="text-2xl sm:text-3xl font-black text-white uppercase font-display">1v1 Duel Lobby</h2>
-            <p className="text-xs text-steel">Share this code with your rival to start the match:</p>
+            <h2 className="text-2xl sm:text-3xl font-black text-white uppercase font-display">
+              {lang === 'ar' ? 'غرفة المواجهة 1 ضد 1' : '1v1 Duel Lobby'}
+            </h2>
+            <p className="text-xs text-steel">
+              {lang === 'ar'
+                ? 'شارك هذا الكود مع منافسك لبدء المواجهة:'
+                : 'Share this code with your rival to start the match:'}
+            </p>
           </div>
 
           {/* Room Code Card */}
@@ -211,7 +220,7 @@ export default function RankArenaPage() {
 
           <div className="flex items-center justify-center gap-2 text-xs text-lime font-black uppercase animate-pulse">
             <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin" />
-            <span>Waiting for rival to connect...</span>
+            <span>{lang === 'ar' ? 'في انتظار دخول المنافس...' : 'Waiting for rival to connect...'}</span>
           </div>
         </Panel>
 
@@ -221,11 +230,12 @@ export default function RankArenaPage() {
           className="text-xs text-steel hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer font-black uppercase tracking-wider"
         >
           <AppIcon icon={ArrowLeft} size={14} weight="bold" />
-          <span>Cancel and return to Rank Hub</span>
+          <span>{lang === 'ar' ? 'إلغاء والعودة لمركز الرانك' : 'Cancel and return to Rank Hub'}</span>
         </button>
       </article>
     );
   }
+
 
   // ── 2. FINAL COMPLETED RESULT SCREEN ──────────────────────────────
   if (gameState.status === 'completed') {
@@ -268,7 +278,7 @@ export default function RankArenaPage() {
     const opponentResult = roundResults.find((r) => r.guestId !== guestId);
 
     return (
-      <article className="mx-auto flex max-w-lg w-full flex-col h-[100dvh] max-h-[100dvh] overflow-hidden gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 select-none justify-between relative">
+      <article className="mx-auto flex max-w-[400px] w-full flex-col gap-2.5 sm:gap-3 px-2 select-none relative">
         <RankHeader
           currentRound={gameState.currentRoundIndex + 1}
           totalRounds={gameState.roundCount}
@@ -297,7 +307,7 @@ export default function RankArenaPage() {
 
   // ── 4. ACTIVE ROUND GAMEPLAY ───────────────────────────────────────
   return (
-    <article className="mx-auto flex max-w-lg w-full flex-col h-[100dvh] max-h-[100dvh] overflow-hidden gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 select-none justify-between relative">
+    <article className="mx-auto flex max-w-[400px] w-full flex-col gap-2.5 sm:gap-3 px-2 select-none relative">
       <RankHeader
         currentRound={gameState.currentRoundIndex + 1}
         totalRounds={gameState.roundCount}

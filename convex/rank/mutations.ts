@@ -1,12 +1,15 @@
-import { mutation } from "../_generated/server";
+import { mutation, internalMutation } from "../_generated/server";
 import { v } from "convex/values";
 import { Id, DataModel } from "../_generated/dataModel";
 import { GenericMutationCtx } from "convex/server";
 import { scoreRoundSubmission } from "./scoring";
 import { allRankSeedQuestions } from "./seedData";
 import { validateQuestionBank } from "./validate";
+import { verifyGuestSession } from "../lib/auth";
 
 // ── Helpers ──────────────────────────────────────────────────────────
+
+
 
 const ROUND_DURATION_MS = 45000; // 45 seconds per round
 const FALLBACK_GUEST_NAME = "Guest Manager";
@@ -192,10 +195,11 @@ async function getGuestProfile(ctx: GenericMutationCtx<DataModel>, guestId: Id<"
 // ── Mutations ────────────────────────────────────────────────────────
 
 /**
- * Seeds or updates the verified question bank in Convex.
+ * Seeds or updates the verified question bank in Convex (Internal only).
  */
-export const seedQuestionBank = mutation({
+export const seedQuestionBank = internalMutation({
   args: {},
+
   handler: async (ctx) => {
     // Validate bank first
     validateQuestionBank(allRankSeedQuestions);
@@ -253,9 +257,11 @@ export const seedQuestionBank = mutation({
 export const createSoloGame = mutation({
   args: {
     guestId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
     roundCount: v.union(v.literal(3), v.literal(5)),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const guest = await getGuestProfile(ctx, args.guestId);
 
     const questionIds = await pickRandomQuestionIds(ctx, args.roundCount, [args.guestId]);
@@ -295,9 +301,11 @@ export const createSoloGame = mutation({
 export const createDuelPrivateRoom = mutation({
   args: {
     hostId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
     roundCount: v.union(v.literal(3), v.literal(5)),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.hostId, args.sessionToken);
     const host = await getGuestProfile(ctx, args.hostId);
 
     const now = Date.now();
@@ -335,9 +343,11 @@ export const createDuelPrivateRoom = mutation({
 export const joinDuelPrivateRoom = mutation({
   args: {
     guestId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
     code: v.string(),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const guest = await getGuestProfile(ctx, args.guestId);
 
     const cleanCode = args.code.trim().toUpperCase();
@@ -347,11 +357,12 @@ export const joinDuelPrivateRoom = mutation({
       .first();
 
     if (!game) throw new Error("Room not found. Please check the code.");
-    if (game.status !== "waiting") throw new Error("This room is already in progress or completed.");
     if (game.participants.some((p) => p.guestId === args.guestId)) {
-      return { gameId: game._id }; // Already in room
+      return { gameId: game._id }; // Already in room - allow seamless rejoin
     }
+    if (game.status !== "waiting") throw new Error("This room is already in progress or completed.");
     if (game.participants.length >= 2) throw new Error("This room is full.");
+
 
     // Pick non-repeated questions for both players and start game
     const hostGuestId = game.participants[0]?.guestId;
@@ -392,9 +403,11 @@ export const joinDuelPrivateRoom = mutation({
 export const findOrCreatePublicMatch = mutation({
   args: {
     guestId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
     roundCount: v.union(v.literal(3), v.literal(5)),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const guest = await getGuestProfile(ctx, args.guestId);
     const now = Date.now();
 
@@ -405,6 +418,14 @@ export const findOrCreatePublicMatch = mutation({
         q.eq("isPublic", true).eq("status", "waiting").eq("mode", "duel_public")
       )
       .collect();
+
+    // Prevent duplicate queue rooms by same host
+    const existingHostGame = openRooms.find(
+      (r) => r.participants[0]?.guestId === args.guestId && r.roundCount === args.roundCount,
+    );
+    if (existingHostGame) {
+      return { gameId: existingHostGame._id, matched: false };
+    }
 
     for (const room of openRooms) {
       if (room.createdAt <= now - 3 * 60 * 1000) {
@@ -484,12 +505,15 @@ export const submitRound = mutation({
   args: {
     gameId: v.id("rankGames"),
     guestId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
     submittedOrder: v.array(v.string()), // 5 answerKeys
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
     if (!game) throw new Error("Game not found");
     if (game.status !== "round_active") throw new Error("Round is not active for submission");
+
 
     const pIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
     if (pIndex === -1) throw new Error("Player not in this game");
@@ -614,9 +638,12 @@ export const advanceRound = mutation({
   handler: async (ctx, args) => {
     const game = await ctx.db.get(args.gameId);
     if (!game) throw new Error("Game not found");
-    if (game.status !== "round_reveal") throw new Error("Game is not in reveal state");
+    if (game.status !== "round_reveal") {
+      return { status: game.status, alreadyAdvanced: true };
+    }
 
     const nextRoundIndex = game.currentRoundIndex + 1;
+
     const isGameOver = nextRoundIndex >= game.roundCount;
     const now = Date.now();
 

@@ -94,7 +94,20 @@ export const ar: TranslationDictionary = {
       submit: 'ابدأ ماتش سنايب',
       finding: 'بندورلك على منافس...',
     },
+    activeMatch: {
+      badge: 'مباراة جارية حالياً',
+      snipeTitle: 'مزاد سنايب السري',
+      rankTitle: 'تحدي رتّب الكروي',
+      waitingRival: 'في انتظار انضمام المنافس...',
+      inProgress: 'الماتش شغال — دورك ومشاركتك مستمرة!',
+      roundProgress: 'الجولة {current} من {total}',
+      resume: 'عودة للمباراة',
+      leave: 'مغادرة وحذف',
+      abandonConfirm: 'هل أنت متأكد من مغادرة وحذف هذا الماتش؟',
+      abandonSuccess: 'تمت المغادرة وإلغاء الماتش من قائمة الانتظار.',
+    },
   },
+
   pools: {
     ACTIVE: { label: 'نجوم حاليين', sub: 'الجيل الحالي' },
     GLOBAL: { label: 'شامل', sub: 'الكل + الأساطير' },

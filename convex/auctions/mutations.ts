@@ -3,8 +3,10 @@ import { Id, DataModel, Doc } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { isSealedBidMode } from './sealedView';
+import { verifyGuestSession } from '../lib/auth';
 
 // ── Helpers ────────────────────────────────────────────────
+
 async function getAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<'rooms'>) {
   const auction = await ctx.db
     .query('auctions')
@@ -126,9 +128,11 @@ export const placeBid = mutation({
   args: {
     roomId: v.id('rooms'),
     userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
     amount: v.number(),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
     const auction = await getAuction(ctx, args.roomId);
     assertLegacyTurnBiddingAllowed(auction);
 
@@ -136,6 +140,7 @@ export const placeBid = mutation({
     if (auction.currentBidding.activeTurnUserId !== args.userId) {
       throw new Error('It is not your turn');
     }
+
 
     // Server-side turn expiry check
     validateTurnExpiry(auction.currentBidding.turnExpiresAt);
@@ -179,8 +184,10 @@ export const pass = mutation({
   args: {
     roomId: v.id('rooms'),
     userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
     const auction = await getAuction(ctx, args.roomId);
     assertLegacyTurnBiddingAllowed(auction);
     if (!auction.guest) throw new Error('Waiting for opponent');
@@ -229,7 +236,9 @@ async function executePerk(
   ctx: GenericMutationCtx<DataModel>,
   roomId: Id<'rooms'>,
   userId: Id<'guestUsers'>,
+  sessionToken?: string,
 ) {
+  await verifyGuestSession(ctx, userId, sessionToken);
   const auction = await getAuction(ctx, roomId);
 
   const isHost = auction.host.userId === userId;
@@ -320,9 +329,10 @@ export const usePerk = mutation({
   args: {
     roomId: v.id('rooms'),
     userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    return executePerk(ctx, args.roomId, args.userId);
+    return executePerk(ctx, args.roomId, args.userId, args.sessionToken);
   },
 });
 
@@ -330,8 +340,10 @@ export const activatePerk = mutation({
   args: {
     roomId: v.id('rooms'),
     userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    return executePerk(ctx, args.roomId, args.userId);
+    return executePerk(ctx, args.roomId, args.userId, args.sessionToken);
   },
 });
+

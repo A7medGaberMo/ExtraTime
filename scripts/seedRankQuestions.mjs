@@ -4,13 +4,15 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 
 const isProd = process.argv.includes('--prod');
-const defaultProdUrl = 'https://wary-pig-127.convex.cloud';
-const url = process.env.CONVEX_URL || (isProd ? (process.env.NEXT_PUBLIC_CONVEX_PROD_URL || defaultProdUrl) : process.env.NEXT_PUBLIC_CONVEX_URL);
+const url =
+  process.env.CONVEX_URL ||
+  (isProd ? process.env.NEXT_PUBLIC_CONVEX_PROD_URL : process.env.NEXT_PUBLIC_CONVEX_URL);
 
 if (!url) {
   console.error('❌ Missing Convex URL in environment variables or arguments.');
   process.exit(1);
 }
+
 
 const client = new ConvexHttpClient(url);
 console.log(`⚡ Seeding Rank Game Questions to Convex [${isProd ? 'PRODUCTION' : 'DEVELOPMENT'}]...`);

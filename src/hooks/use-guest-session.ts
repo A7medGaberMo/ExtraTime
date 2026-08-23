@@ -19,6 +19,15 @@ function getSnapshot() {
   }
 }
 
+function getTokenSnapshot() {
+  if (typeof window === 'undefined') return null;
+  try {
+    return localStorage.getItem('extratime_sessionToken');
+  } catch {
+    return null;
+  }
+}
+
 function getServerSnapshot() {
   return null;
 }
@@ -26,6 +35,7 @@ function getServerSnapshot() {
 export function useGuestSession(redirectToHomeIfMissing = false) {
   const router = useRouter();
   const rawId = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const sessionToken = useSyncExternalStore(subscribe, getTokenSnapshot, getServerSnapshot);
   const guestId = (rawId as Id<'guestUsers'> | null) ?? null;
 
   useEffect(() => {
@@ -37,14 +47,18 @@ export function useGuestSession(redirectToHomeIfMissing = false) {
     }
   }, [redirectToHomeIfMissing, router]);
 
-  const saveGuestId = useCallback((id: Id<'guestUsers'>) => {
+  const saveGuestSession = useCallback((id: Id<'guestUsers'>, token?: string) => {
     try {
       localStorage.setItem('extratime_guestId', id);
+      if (token) {
+        localStorage.setItem('extratime_sessionToken', token);
+      }
       window.dispatchEvent(new Event('storage'));
     } catch {
       // storage unavailable
     }
   }, []);
 
-  return { guestId, saveGuestId };
+  return { guestId, sessionToken, saveGuestSession, saveGuestId: (id: Id<'guestUsers'>) => saveGuestSession(id) };
 }
+

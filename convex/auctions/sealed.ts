@@ -4,8 +4,10 @@ import { v } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { hashSeed, mulberry32 } from '../../src/core/simulation/match-simulator';
 import { isAuctionParticipant } from './sealedView';
+import { verifyGuestSession } from '../lib/auth';
 
 // ── Helpers ──────────────────────────────────────────────────────
+
 
 async function getActiveAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<'rooms'>) {
   const auction = await ctx.db
@@ -212,9 +214,11 @@ export const submitSealedBid = mutation({
   args: {
     roomId: v.id('rooms'),
     userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
     amount: v.number(),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
     const auction = await getActiveAuction(ctx, args.roomId);
 
     const isHost = auction.host.userId === args.userId;
@@ -275,9 +279,12 @@ export const resolveSealedRound = mutation({
   args: {
     roomId: v.id('rooms'),
     userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
     const auction = await getActiveAuction(ctx, args.roomId);
+
 
     if (!isAuctionParticipant(auction, args.userId)) {
       throw new Error('Only auction participants can resolve the round');

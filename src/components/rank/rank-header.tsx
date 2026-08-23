@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Ranking, Clock, Sword, CheckCircle } from '@phosphor-icons/react';
-import { AppIcon } from '@/components/ui/app-icon';
+import { Trophy, Clock, Sword, CheckCircle2 } from 'lucide-react';
 import { useI18n } from '@/lib/i18n';
 
 interface ParticipantInfo {
@@ -57,73 +56,72 @@ export function RankHeader({
   const opponent = participants?.find((p) => p.guestId !== currentGuestId);
   const user = participants?.find((p) => p.guestId === currentGuestId);
 
-  const timerColor =
-    secondsRemaining <= 10
-      ? 'text-rose-400 border-rose-500/50 bg-rose-950/40 animate-pulse shadow-[0_0_12px_rgba(244,63,94,0.3)]'
-      : secondsRemaining <= 20
-        ? 'text-amber-400 border-amber-500/50 bg-amber-950/30'
-        : 'text-lime border-lime/40 bg-lime/10 shadow-[0_0_10px_rgba(149,232,16,0.15)]';
-
   const progressPercentage = (currentRound / totalRounds) * 100;
 
-  return (
-    <header className="w-full space-y-1.5 shrink-0 select-none">
-      {/* Top HUD: Mode/Round + Score + Timer */}
-      <div className="flex items-center justify-between gap-2">
-        <div className="flex items-center gap-1.5">
-          <span className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-900 border border-lime/30 text-lime text-[11px] font-black tracking-tight uppercase shadow-sm font-stats">
-            <AppIcon icon={isDuel ? Sword : Ranking} size={13} weight="duotone" className="text-lime" />
-            <span>
-              {t('common.round')} {currentRound}/{totalRounds}
-            </span>
-          </span>
+  const timerColor =
+    secondsRemaining <= 10
+      ? 'text-rose-400 border-rose-500/40 bg-rose-950/40 animate-pulse'
+      : secondsRemaining <= 20
+        ? 'text-amber-400 border-amber-500/30 bg-amber-950/20'
+        : 'text-lime border-white/[0.06] bg-[#141416]';
 
-          {scopeType && (
-            <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-slate-900 border border-white/10 text-steel text-[10px] font-bold">
-              {scopeType.replace('_', ' ')}
-            </span>
+  return (
+    <header className="w-full shrink-0 select-none space-y-2 pt-8 sm:pt-9">
+      {/* 3 Top Status Pills */}
+      <div className="flex items-center justify-between gap-2">
+        {/* Round Pill */}
+        <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/[0.06] bg-[#141416] text-[12.5px] font-semibold text-[#98989D] whitespace-nowrap shadow-sm">
+          {isDuel ? (
+            <Sword size={14} className="text-lime" strokeWidth={2.25} />
+          ) : (
+            <Trophy size={14} className="text-lime" strokeWidth={2.25} />
           )}
+          <span className="font-stats font-bold uppercase tracking-wide text-white">
+            {t('common.round')} {currentRound}/{totalRounds}
+          </span>
         </div>
 
-        {/* Score Pill in Header */}
-        <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-900 border border-white/10 text-[11px] font-stats shadow-inner">
+        {/* Score Pill */}
+        <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/[0.06] bg-[#141416] text-[12.5px] font-semibold text-[#98989D] whitespace-nowrap shadow-sm">
           {isDuel && opponent ? (
-            <>
-              <span className="text-lime font-black">
+            <div className="flex items-center gap-1 font-stats text-[12px]">
+              <span className="font-bold text-lime">
                 {user?.totalScore !== undefined && user.totalScore > 0 ? `+${user.totalScore}` : user?.totalScore ?? 0}
               </span>
               <span className="text-steel font-bold">vs</span>
-              <span className="text-rose-400 font-black">
+              <span className="font-bold text-rose-400">
                 {opponent.totalScore > 0 ? `+${opponent.totalScore}` : opponent.totalScore}
               </span>
               {opponent.hasSubmittedCurrentRound && (
-                <span className="flex items-center text-lime text-[10px]">
-                  <AppIcon icon={CheckCircle} size={12} weight="fill" />
-                </span>
+                <CheckCircle2 size={12} className="text-lime inline-block" strokeWidth={2.5} />
               )}
-            </>
+            </div>
           ) : (
-            <span className="text-lime font-black">
+            <span className="font-stats font-bold text-white">
               {user?.totalScore !== undefined && user.totalScore > 0 ? `+${user.totalScore}` : user?.totalScore ?? 0} pts
             </span>
           )}
         </div>
 
-        {/* Timer */}
-        {deadline && (
+        {/* Timer Pill */}
+        {deadline ? (
           <div
-            className={`flex items-center gap-1 px-2.5 py-0.5 rounded-full border text-[11px] font-stats font-black transition-all duration-300 ${timerColor}`}
+            className={`flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border text-[12.5px] font-semibold transition-all duration-300 whitespace-nowrap shadow-sm ${timerColor}`}
           >
-            <AppIcon icon={Clock} size={13} weight="duotone" />
-            <span>{secondsRemaining}s</span>
+            <Clock size={14} className={secondsRemaining <= 10 ? 'text-rose-400' : 'text-lime'} strokeWidth={2.25} />
+            <span className="font-stats font-bold">{secondsRemaining}s</span>
+          </div>
+        ) : (
+          <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/[0.06] bg-[#141416] text-[12.5px] font-semibold text-[#98989D] whitespace-nowrap">
+            <span className="text-[11px] font-bold text-steel uppercase">{scopeType?.replace('_', ' ') || 'RANK'}</span>
           </div>
         )}
       </div>
 
-      {/* Progress Bar */}
-      <div className="w-full h-1 rounded-full bg-slate-900 border border-white/5 overflow-hidden">
+      {/* Progress Track */}
+      <div className="h-1 w-full rounded-full bg-white/[0.08] overflow-hidden">
         <div
-          className="h-full bg-gradient-to-r from-lime via-vivid to-lime transition-all duration-500 rounded-full shadow-[0_0_8px_rgba(149,232,16,0.5)]"
+          className="h-full rounded-full bg-lime transition-all duration-500 shadow-[0_0_8px_rgba(149,232,16,0.4)]"
           style={{ width: `${progressPercentage}%` }}
         />
       </div>

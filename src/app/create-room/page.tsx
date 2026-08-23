@@ -33,6 +33,7 @@ import { UserIdentity } from '@/components/ui/user-identity';
 import { StatPill } from '@/components/ui/stat-pill';
 import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
+import { useGuestNickname } from '@/hooks/use-guest-nickname';
 
 type GameMode = 'snipe' | 'rank';
 type MatchSize = 5 | 11;
@@ -56,12 +57,7 @@ function CreateRoomContent() {
   const findRankPublic = useMutation(api.rank.mutations.findOrCreatePublicMatch);
   const queueStats = useQuery(api.rank.queries.getPublicQueueSummary);
 
-  const [nickname, setNickname] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('extratime_guestName') || randomName();
-    }
-    return randomName();
-  });
+  const [nickname, setNickname] = useGuestNickname();
 
   // Snipe options
   const [matchSize, setMatchSize] = useState<MatchSize>(11);
@@ -78,15 +74,21 @@ function CreateRoomContent() {
   async function ensureGuestId(): Promise<Id<'guestUsers'>> {
     const name = nickname.trim() || randomName();
     const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
-    const guestId = await ensureGuest({
+    const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
+    const res = await ensureGuest({
       existingId: existingId ?? undefined,
+      sessionToken,
       nickname: name,
       avatarSeed: name,
     });
-    localStorage.setItem('extratime_guestId', guestId);
+    localStorage.setItem('extratime_guestId', res.guestId);
+    if (res.sessionToken) {
+      localStorage.setItem('extratime_sessionToken', res.sessionToken);
+    }
     localStorage.setItem('extratime_guestName', name);
-    return guestId as Id<'guestUsers'>;
+    return res.guestId as Id<'guestUsers'>;
   }
+
 
   async function handleCreateMatch() {
     if (loading || !nickname.trim()) return;

@@ -61,3 +61,101 @@ export const getPublicQueueSummary = query({
     };
   },
 });
+
+export const getUserActiveMatch = query({
+  args: { guestId: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    if (!args.guestId) return null;
+    const guestId = ctx.db.normalizeId('guestUsers', args.guestId);
+    if (!guestId) return null;
+
+    const now = Date.now();
+    const maxAgeMs = 45 * 60 * 1000; // 45 minutes limit for active game retention
+
+    // 1. Check Snipe / Auction rooms directly with compound indexes (O(1))
+    const candidateRooms = await Promise.all([
+      ctx.db
+        .query('rooms')
+        .withIndex('by_host_status', (q) => q.eq('hostId', guestId).eq('status', 'in_progress'))
+        .first(),
+      ctx.db
+        .query('rooms')
+        .withIndex('by_host_status', (q) => q.eq('hostId', guestId).eq('status', 'waiting'))
+        .first(),
+      ctx.db
+        .query('rooms')
+        .withIndex('by_host_status', (q) => q.eq('hostId', guestId).eq('status', 'ready'))
+        .first(),
+      ctx.db
+        .query('rooms')
+        .withIndex('by_guest_status', (q) => q.eq('guestId', guestId).eq('status', 'in_progress'))
+        .first(),
+      ctx.db
+        .query('rooms')
+        .withIndex('by_guest_status', (q) => q.eq('guestId', guestId).eq('status', 'ready'))
+        .first(),
+    ]);
+
+    const activeRoom = candidateRooms.find((r) => r !== null && r.createdAt > now - maxAgeMs);
+    if (activeRoom) {
+      const auction = await ctx.db
+        .query('auctions')
+        .withIndex('by_room', (q) => q.eq('roomId', activeRoom._id))
+        .first();
+
+      if (!auction || auction.status !== 'completed') {
+        return {
+          type: 'snipe' as const,
+          id: activeRoom._id,
+          code: activeRoom.code,
+          status: activeRoom.status,
+          matchSize: (activeRoom.settings?.matchSize ?? 11) as 5 | 11,
+          poolMode: (activeRoom.settings?.poolMode ?? 'GLOBAL') as PoolMode,
+          isHost: activeRoom.hostId === guestId,
+          currentRound: auction?.currentRound ?? 1,
+          totalRounds: activeRoom.settings?.matchSize ?? 11,
+          createdAt: activeRoom.createdAt,
+        };
+      }
+    }
+
+    // 2. Check Rank duel / solo games (indexed by status)
+    const [roundActiveGames, roundRevealGames, waitingGames] = await Promise.all([
+      ctx.db
+        .query('rankGames')
+        .withIndex('by_status', (q) => q.eq('status', 'round_active'))
+        .take(25),
+      ctx.db
+        .query('rankGames')
+        .withIndex('by_status', (q) => q.eq('status', 'round_reveal'))
+        .take(25),
+      ctx.db
+        .query('rankGames')
+        .withIndex('by_status', (q) => q.eq('status', 'waiting'))
+        .take(25),
+    ]);
+
+    const candidateRankGames = [...roundActiveGames, ...roundRevealGames, ...waitingGames];
+    for (const game of candidateRankGames) {
+      if (game.createdAt < now - maxAgeMs) continue;
+      const isParticipant = game.participants?.some((p) => p.guestId === guestId);
+      if (isParticipant) {
+        return {
+          type: 'rank' as const,
+          id: game._id,
+          code: game.code,
+          status: game.status,
+          mode: game.mode,
+          roundCount: game.roundCount,
+          currentRound: (game.currentRoundIndex ?? 0) + 1,
+          isHost: game.participants[0]?.guestId === guestId,
+          createdAt: game.createdAt,
+        };
+      }
+    }
+
+    return null;
+  },
+});
+
+

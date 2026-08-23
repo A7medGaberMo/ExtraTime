@@ -99,8 +99,12 @@ export const getState = query({
     const mainPlayer = currentRound ? await hydratePlayer(ctx, currentRound.mainPlayerId) : null;
 
     const isHost = auction.host.userId === args.userId;
-    const me = isHost ? auction.host : auction.guest;
-    const opponent = isHost ? auction.guest : auction.host;
+    const isGuest = auction.guest?.userId === args.userId;
+    const isParticipant = isHost || isGuest;
+
+    const me = isParticipant ? (isHost ? auction.host : auction.guest) : null;
+    const opponent = isParticipant ? (isHost ? auction.guest : auction.host) : null;
+
 
     // ── Perk-revealed data ──
     // If SPY perk was used IN THIS ROUND → spy on the hidden sub player

@@ -1,26 +1,33 @@
 'use client';
 
-import React, { useSyncExternalStore, useCallback } from 'react';
+import React, { useState, useSyncExternalStore, useCallback, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
-  GameController,
-  Cards,
+  House,
+  Trophy,
   PlusCircle,
-  SignIn,
-  SpeakerHigh,
-  SpeakerSlash,
-  Translate,
-} from '@phosphor-icons/react';
-import { AppIcon } from '@/components/ui/app-icon';
-import { UserIdentity } from '@/components/ui/user-identity';
+  Volume2,
+  VolumeX,
+  Languages,
+  X,
+  ChevronDown,
+  User,
+  LogIn,
+} from 'lucide-react';
+import { useQuery } from 'convex/react';
+import { api } from '../../../convex/_generated/api';
+import { useGuestSession } from '@/hooks/use-guest-session';
 import { useI18n } from '@/lib/i18n';
 import { sfx } from '@/lib/sfx';
 import { cn } from '@/lib/utils';
+import { Cards } from '@phosphor-icons/react';
+
 
 function subscribeSound(cb: () => void) {
-  if (typeof window === 'undefined') return () => {};
+  if (typeof window === 'undefined') return () => { };
   window.addEventListener('storage', cb);
   window.addEventListener('extratime_sfx_change', cb);
   return () => {
@@ -38,7 +45,7 @@ function getServerSoundMutedSnapshot() {
 }
 
 function subscribeGuest(cb: () => void) {
-  if (typeof window === 'undefined') return () => {};
+  if (typeof window === 'undefined') return () => { };
   window.addEventListener('storage', cb);
   return () => window.removeEventListener('storage', cb);
 }
@@ -59,6 +66,15 @@ function getServerGuestNameSnapshot() {
 export function Header() {
   const pathname = usePathname();
   const { lang, toggleLang, t } = useI18n();
+  const [isOpen, setIsOpen] = useState(false);
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  const notchRef = useRef<HTMLDivElement>(null);
+
+  // Close island automatically on route changes during render
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
+    setIsOpen(false);
+  }
 
   const muted = useSyncExternalStore(
     subscribeSound,
@@ -71,114 +87,337 @@ export function Header() {
     getServerGuestNameSnapshot,
   );
 
+  const { guestId } = useGuestSession(false);
+  const activeMatch = useQuery(
+    api.rooms.queries.getUserActiveMatch,
+    guestId ? { guestId } : 'skip',
+  );
+
+  const isInCurrentActiveMatch = activeMatch ? pathname.includes(activeMatch.id) : false;
+  const showActivePill = activeMatch && !isInCurrentActiveMatch;
+
   const handleToggleSound = useCallback(() => {
     sfx.toggleMute();
     window.dispatchEvent(new Event('extratime_sfx_change'));
   }, []);
 
-  // 4 Primary Navigation Items
-  const navLinks = [
-    { href: '/', label: t('nav.arena'), icon: GameController },
-    { href: '/packs', label: t('nav.packs'), icon: Cards },
-    { href: '/create-room', label: t('nav.create'), icon: PlusCircle },
-    { href: '/join-room', label: t('nav.join'), icon: SignIn },
-  ];
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (notchRef.current && !notchRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [isOpen]);
 
   const isGameplay =
     pathname.startsWith('/auction/') ||
     pathname.startsWith('/room/') ||
     (pathname.startsWith('/rank/') && pathname !== '/rank');
 
-  if (isGameplay) {
-    return null;
-  }
+  const navLinks = [
+    { href: '/', label: t('nav.arena'), icon: House },
+    { href: '/rank', label: t('nav.rank'), icon: Trophy },
+    { href: '/packs', label: t('nav.packs'), icon: Cards },
+    { href: '/create-room', label: t('nav.create'), icon: PlusCircle },
+  ];
 
   return (
-    <header className="border-border/60 bg-slate-950/80 sticky top-0 z-50 w-full border-b backdrop-blur-2xl select-none" dir="ltr">
-      <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-3 sm:px-6">
-        {/* Brand Logo - Fixed & Symmetric */}
-        <Link
-          href="/"
-          className="group flex items-center gap-2.5 transition-opacity hover:opacity-90 shrink-0"
-        >
-          <div className="shadow-lime/10 ring-lime/20 relative flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-slate-900 shadow-md ring-1 transition-transform group-hover:scale-105">
-            <Image
-              src="/ETIcon.png"
-              alt="ExtraTime Logo"
-              fill
-              className="object-contain p-0.5"
-              sizes="40px"
-              priority
-            />
-          </div>
-          <span className="text-lg sm:text-xl font-black tracking-wider text-white font-stats">
-            Extra<span className="text-lime">Time</span>
-          </span>
-        </Link>
-
-        {/* Center: Apple-style Minimal Desktop Floating Nav (4 clean items) */}
-        <nav className="hidden md:flex items-center gap-1 rounded-full border border-white/10 bg-slate-900/70 p-1 backdrop-blur-md">
-          {navLinks.map((item) => {
-            const isActive = pathname === item.href;
-            const IconComp = item.icon;
-            return (
+    <header className="fixed top-2.5 inset-x-0 z-50 flex justify-center pointer-events-none select-none px-3" dir="ltr">
+      <div ref={notchRef} className="pointer-events-auto">
+        <AnimatePresence initial={false} mode="wait">
+          {!isOpen ? (
+            /* ── Collapsed Dynamic Island Capsule ── */
+            <motion.div
+              key="collapsed-notch"
+              initial={{ opacity: 0, y: -10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 450, damping: 30 }}
+              className={cn(
+                'flex items-center gap-1.5 sm:gap-2.5 rounded-full border border-white/[0.08] bg-[#141416]/95 px-3 sm:px-4 py-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.75),0_0_16px_rgba(149,232,16,0.12)] backdrop-blur-2xl transition-all',
+                isGameplay ? 'hover:border-lime/40 cursor-pointer' : '',
+              )}
+            >
+              {/* Brand Logo & Name */}
               <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  'flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-black transition-all',
-                  isActive
-                    ? 'bg-lime text-slate-950 shadow-sm'
-                    : 'text-steel hover:bg-white/5 hover:text-white',
-                )}
+                href="/"
+                className="flex items-center gap-2 group transition-opacity hover:opacity-90 shrink-0"
               >
-                <AppIcon icon={IconComp} size={15} weight={isActive ? 'fill' : 'bold'} />
-                <span>{item.label}</span>
+                <div className="relative flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40 group-hover:scale-105 transition-transform">
+                  <Image
+                    src="/ETIcon.png"
+                    alt="ExtraTime Icon"
+                    fill
+                    className="object-contain p-0.5"
+                    sizes="20px"
+                    priority
+                  />
+                </div>
+                <span className="font-stats font-bold text-[13px] text-white tracking-wider">
+                  Extra<span className="text-lime">Time</span>
+                </span>
               </Link>
-            );
-          })}
-        </nav>
 
-        {/* Right Actions: Sound + Language + Manager Badge */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
-          {/* Sound Toggle */}
-          <button
-            type="button"
-            onClick={handleToggleSound}
-            className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900/60 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
-            title={muted ? t('common.soundMuted') : t('common.soundOn')}
-            aria-label={muted ? t('common.soundMuted') : t('common.soundOn')}
-          >
-            <AppIcon
-              icon={muted ? SpeakerSlash : SpeakerHigh}
-              size={17}
-              weight="bold"
-              className={muted ? 'text-rose-400' : 'text-lime'}
-            />
-          </button>
+              {/* Desktop Center Nav Tabs (Visible on non-gameplay pages) */}
+              {!isGameplay && (
+                <nav className="hidden md:flex items-center gap-0.5 rounded-full bg-white/[0.04] border border-white/[0.06] p-0.5 ml-1 mr-1">
+                  {navLinks.map((item) => {
+                    const isActive = pathname === item.href;
+                    const IconComp = item.icon;
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className={cn(
+                          'flex items-center gap-1.5 rounded-full px-3 py-1 text-[11.5px] font-bold transition-all',
+                          isActive
+                            ? 'bg-lime text-slate-950 shadow-sm'
+                            : 'text-steel hover:bg-white/5 hover:text-white',
+                        )}
+                      >
+                        <IconComp size={13} strokeWidth={isActive ? 2.5 : 2} />
+                        <span>{item.label}</span>
+                      </Link>
+                    );
+                  })}
+                </nav>
+              )}
 
-          {/* Language Switcher */}
-          <button
-            type="button"
-            onClick={toggleLang}
-            className="flex h-9 sm:h-10 items-center gap-1 px-2.5 sm:px-3 rounded-xl border border-white/10 bg-slate-900/60 text-xs font-black uppercase text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
-            title={t('common.language')}
-          >
-            <AppIcon icon={Translate} size={15} weight="bold" />
-            <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
-          </button>
+              {/* Live Match Notch Dot / Pill */}
+              {showActivePill && (
+                <Link
+                  href={
+                    activeMatch.type === 'snipe'
+                      ? `/auction/${activeMatch.id}`
+                      : `/rank/${activeMatch.id}`
+                  }
+                  className="flex items-center gap-1.5 rounded-full bg-lime/15 border border-lime/40 px-2 sm:px-2.5 py-0.5 text-lime hover:bg-lime/25 transition-all shadow-[0_0_12px_rgba(149,232,16,0.3)] animate-pulse shrink-0 cursor-pointer"
+                  title="Resume live match"
+                >
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-lime" />
+                  </span>
+                  <span className="font-stats text-[10.5px] font-black uppercase tracking-wider">
+                    {lang === 'ar' ? 'الماتش لايف' : 'LIVE'}
+                  </span>
+                </Link>
+              )}
 
-          {/* Manager Identity Badge */}
-          {guestName && (
-            <div className="hidden lg:block">
-              <UserIdentity
-                nickname={guestName}
-                size="sm"
-                className="rounded-xl border border-white/10 bg-slate-900/60 px-2.5 py-1"
-              />
-            </div>
+              {/* Right Fast Action Pills */}
+              <div className="flex items-center gap-1 shrink-0 ml-0.5">
+
+                {/* Sound Toggle */}
+                <button
+                  type="button"
+                  onClick={handleToggleSound}
+                  className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
+                  title={muted ? t('common.soundMuted') : t('common.soundOn')}
+                  aria-label={muted ? t('common.soundMuted') : t('common.soundOn')}
+                >
+                  {muted ? (
+                    <VolumeX size={13} className="text-rose-400" />
+                  ) : (
+                    <Volume2 size={13} className="text-lime" />
+                  )}
+                </button>
+
+                {/* Language Switcher */}
+                <button
+                  type="button"
+                  onClick={toggleLang}
+                  className="flex h-7 items-center gap-1 px-2 rounded-full border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
+                  title={t('common.language')}
+                >
+                  <Languages size={12} />
+                  <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
+                </button>
+
+                {/* Menu Expander / Arrow */}
+                <button
+                  type="button"
+                  onClick={() => setIsOpen(true)}
+                  className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
+                  title="Expand Navigation Island"
+                >
+                  <ChevronDown size={13} strokeWidth={2.5} />
+                </button>
+              </div>
+            </motion.div>
+          ) : (
+            /* ── Expanded Island Control Center ── */
+            <motion.div
+              key="expanded-island"
+              initial={{ opacity: 0, y: -16, scale: 0.92 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -16, scale: 0.92 }}
+              transition={{ type: 'spring', stiffness: 450, damping: 30 }}
+              className="w-[340px] sm:w-[390px] rounded-[24px] border border-white/[0.12] bg-[#141416]/98 p-3.5 shadow-[0_20px_48px_rgba(0,0,0,0.92),0_0_28px_rgba(149,232,16,0.18)] backdrop-blur-2xl"
+            >
+              {/* Header inside Island */}
+              <div className="flex items-center justify-between border-b border-white/[0.08] pb-2.5 mb-2.5">
+                <Link
+                  href="/"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center gap-2 group"
+                >
+                  <div className="relative flex h-6 w-6 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40">
+                    <Image
+                      src="/ETIcon.png"
+                      alt="ExtraTime Icon"
+                      fill
+                      className="object-contain p-0.5"
+                      sizes="24px"
+                    />
+                  </div>
+                  <span className="font-stats font-bold text-[13px] text-white tracking-wider">
+                    Extra<span className="text-lime">Time</span>
+                  </span>
+                </Link>
+
+                <div className="flex items-center gap-1.5">
+                  {/* Sound Toggle */}
+                  <button
+                    type="button"
+                    onClick={handleToggleSound}
+                    className="flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer"
+                    title={muted ? t('common.soundMuted') : t('common.soundOn')}
+                  >
+                    {muted ? (
+                      <VolumeX size={14} className="text-rose-400" />
+                    ) : (
+                      <Volume2 size={14} className="text-lime" />
+                    )}
+                  </button>
+
+                  {/* Language Toggle */}
+                  <button
+                    type="button"
+                    onClick={toggleLang}
+                    className="flex h-7 items-center gap-1 px-2.5 rounded-lg border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:text-white transition-colors cursor-pointer font-stats"
+                    title={t('common.language')}
+                  >
+                    <Languages size={13} />
+                    <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
+                  </button>
+
+                  {/* Close Button */}
+                  <button
+                    type="button"
+                    onClick={() => setIsOpen(false)}
+                    className="flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer ml-0.5"
+                    title="Close"
+                  >
+                    <X size={14} />
+                  </button>
+                </div>
+              </div>
+
+              {/* Guest Manager Handle Tag if available */}
+              {guestName && (
+                <div className="flex items-center justify-between rounded-xl bg-white/[0.03] border border-white/[0.06] px-3 py-1.5 mb-2.5">
+                  <div className="flex items-center gap-1.5 text-steel text-xs font-bold font-stats">
+                    <User size={13} className="text-lime" />
+                    <span className="text-white truncate max-w-[160px]">{guestName}</span>
+                  </div>
+                  <span className="text-[10px] text-lime font-bold uppercase tracking-wider font-stats">
+                    Manager
+                  </span>
+                </div>
+              )}
+
+              {/* Active Match Card inside Expanded Island */}
+              {showActivePill && (
+                <Link
+                  href={
+                    activeMatch.type === 'snipe'
+                      ? `/auction/${activeMatch.id}`
+                      : `/rank/${activeMatch.id}`
+                  }
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-between rounded-xl bg-gradient-to-r from-lime/15 via-slate-900/90 to-emerald-950/40 border border-lime/40 p-2.5 mb-2.5 group hover:border-lime transition-all cursor-pointer shadow-md"
+                >
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <span className="relative flex h-2.5 w-2.5 shrink-0">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-lime" />
+                    </span>
+                    <div className="min-w-0">
+                      <div className="text-[11.5px] font-black text-white uppercase font-display truncate">
+                        {activeMatch.type === 'snipe' ? 'Snipe Match' : 'Rank Duel'} ({activeMatch.code})
+                      </div>
+                      <div className="text-[10px] text-lime font-bold truncate">
+                        {activeMatch.status === 'waiting'
+                          ? (lang === 'ar' ? 'في انتظار المنافس...' : 'Waiting for rival...')
+                          : (lang === 'ar' ? 'الماتش جاري الآن — اضغط للمتابعة' : 'Match in progress — Tap to resume')}
+                      </div>
+                    </div>
+                  </div>
+                  <span className="rounded-lg bg-lime px-2.5 py-1 text-[10.5px] font-black text-slate-950 uppercase shadow-sm shrink-0">
+                    {lang === 'ar' ? 'دخول' : 'Resume'}
+                  </span>
+                </Link>
+              )}
+
+              {/* Quick Navigation 4-Box Grid */}
+
+              <div className="grid grid-cols-4 gap-1.5">
+                <Link
+                  href="/"
+                  onClick={() => setIsOpen(false)}
+                  className="flex flex-col items-center justify-center gap-1 rounded-xl border border-white/[0.06] bg-[#1a1a1e] py-2 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
+                >
+                  <House size={16} className="text-steel group-hover:text-lime transition-colors" />
+                  <span className="text-[10.5px] font-bold tracking-tight">{t('nav.arena')}</span>
+                </Link>
+
+                <Link
+                  href="/rank"
+                  onClick={() => setIsOpen(false)}
+                  className="flex flex-col items-center justify-center gap-1 rounded-xl border border-white/[0.06] bg-[#1a1a1e] py-2 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
+                >
+                  <Trophy size={16} className="text-steel group-hover:text-lime transition-colors" />
+                  <span className="text-[10.5px] font-bold tracking-tight">{t('nav.rank')}</span>
+                </Link>
+
+                <Link
+                  href="/packs"
+                  onClick={() => setIsOpen(false)}
+                  className="flex flex-col items-center justify-center gap-1 rounded-xl border border-white/[0.06] bg-[#1a1a1e] py-2 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
+                >
+                  <Cards size={16} className="text-steel group-hover:text-lime transition-colors" />
+                  <span className="text-[10.5px] font-bold tracking-tight">{t('nav.packs')}</span>
+                </Link>
+
+                <Link
+                  href="/create-room"
+                  onClick={() => setIsOpen(false)}
+                  className="flex flex-col items-center justify-center gap-1 rounded-xl border border-white/[0.06] bg-[#1a1a1e] py-2 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
+                >
+                  <PlusCircle size={16} className="text-steel group-hover:text-lime transition-colors" />
+                  <span className="text-[10.5px] font-bold tracking-tight">{t('nav.create')}</span>
+                </Link>
+              </div>
+
+              {/* Join with code quick link */}
+              <div className="mt-2.5 pt-2 border-t border-white/[0.06]">
+                <Link
+                  href="/join-room"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-1.5 w-full py-1.5 rounded-xl border border-white/[0.06] bg-white/[0.02] text-steel hover:text-lime hover:border-lime/30 text-xs font-bold transition-all cursor-pointer font-stats uppercase"
+                >
+                  <LogIn size={13} />
+                  <span>{t('nav.join')} (Room Code)</span>
+                </Link>
+              </div>
+            </motion.div>
           )}
-        </div>
+        </AnimatePresence>
       </div>
     </header>
   );

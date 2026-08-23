@@ -18,6 +18,7 @@ import type * as clubs_mutations from "../clubs/mutations.js";
 import type * as clubs_queries from "../clubs/queries.js";
 import type * as guests_mutations from "../guests/mutations.js";
 import type * as guests_queries from "../guests/queries.js";
+import type * as lib_auth from "../lib/auth.js";
 import type * as lib_constants from "../lib/constants.js";
 import type * as matches_mutations from "../matches/mutations.js";
 import type * as matches_queries from "../matches/queries.js";
@@ -53,6 +54,7 @@ declare const fullApi: ApiFromModules<{
   "clubs/queries": typeof clubs_queries;
   "guests/mutations": typeof guests_mutations;
   "guests/queries": typeof guests_queries;
+  "lib/auth": typeof lib_auth;
   "lib/constants": typeof lib_constants;
   "matches/mutations": typeof matches_mutations;
   "matches/queries": typeof matches_queries;

@@ -1,10 +1,13 @@
-import { mutation } from '../_generated/server';
+import { mutation, internalMutation } from '../_generated/server';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { generateDraftRounds } from '../auctions/draftEngine';
 import { getRandomFormation, MatchSize } from '../auctions/formations';
 import { type PoolMode } from '../lib/constants';
+import { verifyGuestSession } from '../lib/auth';
+
+
 
 // ── Helpers ────────────────────────────────────────────────
 
@@ -183,28 +186,39 @@ export const join = mutation({
     if (!room) throw new Error('Room not found');
     const guest = await ctx.db.get(args.guestId);
     if (!guest) throw new Error('Guest not found');
-    if (room.guestId) throw new Error('Room is full');
-    if (room.status !== 'waiting') throw new Error('Room is not open');
-    if (room.hostId === args.guestId) throw new Error('You cannot join your own room');
 
     const auction = await ctx.db
       .query('auctions')
       .withIndex('by_room', (q) => q.eq('roomId', args.roomId))
       .first();
+
+    // Allow seamless rejoin for existing host or guest
+    if (room.hostId === args.guestId || room.guestId === args.guestId) {
+      return {
+        roomId: args.roomId,
+        activeTurnUserId: auction?.currentBidding.activeTurnUserId ?? room.hostId,
+      };
+    }
+
+    if (room.guestId) throw new Error('Room is full');
+    if (room.status !== 'waiting') throw new Error('Room is not open');
     if (!auction) throw new Error('Auction not found for room');
 
     const activeTurnUserId = await joinAuction(ctx, args.roomId, args.guestId, auction);
     return { roomId: args.roomId, activeTurnUserId };
+
   },
 });
 
 export const findOrCreatePublicMatch = mutation({
   args: {
     userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
     matchSize: v.optional(v.union(v.literal(5), v.literal(11))),
     poolMode: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
     const matchSize: MatchSize = args.matchSize ?? 11;
     const poolMode = (args.poolMode ?? 'GLOBAL') as PoolMode;
     const now = Date.now();
@@ -213,6 +227,18 @@ export const findOrCreatePublicMatch = mutation({
       .query('rooms')
       .withIndex('by_public_status', (q) => q.eq('isPublic', true).eq('status', 'waiting'))
       .collect();
+
+    // Check if player already has an open waiting room (prevents spam and room landfills)
+    const existingHostRoom = openRooms.find(
+      (r) =>
+        r.hostId === args.userId &&
+        r.createdAt > now - 3 * 60 * 1000 &&
+        r.settings?.matchSize === matchSize &&
+        (r.settings?.poolMode ?? 'GLOBAL') === poolMode,
+    );
+    if (existingHostRoom) {
+      return { roomId: existingHostRoom._id, code: existingHostRoom.code, matched: false };
+    }
 
     // Find a compatible room and clean up stale ones
     for (const room of openRooms) {
@@ -252,28 +278,14 @@ export const findOrCreatePublicMatch = mutation({
   },
 });
 
-export const updateStatus = mutation({
-  args: {
-    roomId: v.id('rooms'),
-    status: v.union(
-      v.literal('waiting'),
-      v.literal('ready'),
-      v.literal('in_progress'),
-      v.literal('completed'),
-      v.literal('abandoned'),
-    ),
-  },
-  handler: async (ctx, args) => {
-    await ctx.db.patch(args.roomId, { status: args.status });
-  },
-});
-
 export const cancel = mutation({
   args: {
     roomId: v.id('rooms'),
     hostId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.hostId, args.sessionToken);
     const room = await ctx.db.get(args.roomId);
     if (!room) throw new Error('Room not found');
     if (room.hostId !== args.hostId) throw new Error('Only room host can cancel');
@@ -292,3 +304,119 @@ export const cancel = mutation({
     return { success: true };
   },
 });
+
+export const abandonUserActiveMatch = mutation({
+  args: {
+    guestId: v.string(),
+    sessionToken: v.optional(v.string()),
+    matchType: v.union(v.literal('snipe'), v.literal('rank')),
+    matchId: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const guestId = ctx.db.normalizeId('guestUsers', args.guestId);
+    if (!guestId) return { success: false, reason: 'Invalid guest user ID' };
+    await verifyGuestSession(ctx, guestId, args.sessionToken);
+
+    const now = Date.now();
+
+
+    if (args.matchType === 'snipe') {
+      const roomId = ctx.db.normalizeId('rooms', args.matchId);
+      if (!roomId) return { success: false, reason: 'Invalid room ID' };
+      const room = await ctx.db.get(roomId);
+      if (!room) return { success: false, reason: 'Room not found' };
+
+      const isHost = room.hostId === guestId;
+      const isGuest = room.guestId === guestId;
+      if (!isHost && !isGuest) {
+        throw new Error('Not authorized to abandon this match');
+      }
+
+      await ctx.db.patch(room._id, { status: 'abandoned' });
+
+      const auction = await ctx.db
+        .query('auctions')
+        .withIndex('by_room', (q) => q.eq('roomId', room._id))
+        .first();
+
+      if (auction) {
+        await ctx.db.patch(auction._id, { status: 'completed' });
+      }
+
+      return { success: true };
+    }
+
+    if (args.matchType === 'rank') {
+      const gameId = ctx.db.normalizeId('rankGames', args.matchId);
+      if (!gameId) return { success: false, reason: 'Invalid game ID' };
+      const game = await ctx.db.get(gameId);
+      if (!game) return { success: false, reason: 'Game not found' };
+
+      const isParticipant = game.participants.some((p) => p.guestId === guestId);
+      if (!isParticipant) {
+        throw new Error('Not authorized to abandon this game');
+      }
+
+      if (game.status === 'waiting' || game.mode === 'solo') {
+        await ctx.db.patch(game._id, {
+          status: 'abandoned',
+          completedAt: now,
+        });
+      } else {
+        const remaining = game.participants.find((p) => p.guestId !== guestId);
+        await ctx.db.patch(game._id, {
+          status: 'abandoned',
+          winnerId: remaining?.guestId,
+          completedAt: now,
+        });
+      }
+
+      return { success: true };
+    }
+
+
+    return { success: false };
+  },
+});
+
+export const cleanupStalePublicQueues = internalMutation({
+  args: {},
+
+  handler: async (ctx) => {
+    const now = Date.now();
+    const staleThreshold = now - 3 * 60 * 1000;
+
+    // 1. Clean stale waiting snipe rooms
+    const staleRooms = await ctx.db
+      .query('rooms')
+      .withIndex('by_public_status', (q) => q.eq('isPublic', true).eq('status', 'waiting'))
+      .collect();
+
+    let cleanedRooms = 0;
+    for (const room of staleRooms) {
+      if (room.createdAt <= staleThreshold) {
+        await ctx.db.patch(room._id, { status: 'abandoned' });
+        cleanedRooms++;
+      }
+    }
+
+    // 2. Clean stale waiting rank games
+    const staleRankGames = await ctx.db
+      .query('rankGames')
+      .withIndex('by_public_status', (q) =>
+        q.eq('isPublic', true).eq('status', 'waiting').eq('mode', 'duel_public'),
+      )
+      .collect();
+
+    let cleanedRank = 0;
+    for (const game of staleRankGames) {
+      if (game.createdAt <= staleThreshold) {
+        await ctx.db.patch(game._id, { status: 'abandoned' });
+        cleanedRank++;
+      }
+    }
+
+    return { cleanedRooms, cleanedRank };
+  },
+});
+

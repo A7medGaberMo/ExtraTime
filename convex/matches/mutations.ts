@@ -152,19 +152,3 @@ export const runSimulation = mutation({
   },
 });
 
-export const updateResult = mutation({
-  args: {
-    matchId: v.id('matches'),
-    hostScore: v.number(),
-    guestScore: v.number(),
-    winnerId: v.optional(v.id('guestUsers')),
-  },
-  handler: async (ctx, args) => {
-    await ctx.db.patch(args.matchId, {
-      score: { host: args.hostScore, guest: args.guestScore },
-      winnerId: args.winnerId,
-      status: 'completed',
-      completedAt: Date.now(),
-    });
-  },
-});

@@ -25,6 +25,7 @@ import { UserIdentity } from '@/components/ui/user-identity';
 import { StatPill } from '@/components/ui/stat-pill';
 import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
+import { useGuestNickname } from '@/hooks/use-guest-nickname';
 
 export default function JoinRoomPage() {
   const router = useRouter();
@@ -35,13 +36,9 @@ export default function JoinRoomPage() {
   const joinSnipeRoom = useMutation(api.rooms.mutations.join);
   const joinRankDuel = useMutation(api.rank.mutations.joinDuelPrivateRoom);
 
-  const [nickname, setNickname] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('extratime_guestName') || randomName();
-    }
-    return randomName();
-  });
+  const [nickname, setNickname] = useGuestNickname();
   const [roomCode, setRoomCode] = useState('');
+
   const [loading, setLoading] = useState(false);
 
   const normalizedCode = roomCode
@@ -98,14 +95,20 @@ export default function JoinRoomPage() {
     try {
       const name = nickname.trim();
       const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
-      const guestId = await ensureGuest({
+      const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
+      const res = await ensureGuest({
         existingId: existingId ?? undefined,
+        sessionToken,
         nickname: name,
         avatarSeed: name,
       });
-      localStorage.setItem('extratime_guestId', guestId);
+      localStorage.setItem('extratime_guestId', res.guestId);
+      if (res.sessionToken) {
+        localStorage.setItem('extratime_sessionToken', res.sessionToken);
+      }
       localStorage.setItem('extratime_guestName', name);
-      const validGuestId = guestId as Id<'guestUsers'>;
+      const validGuestId = res.guestId as Id<'guestUsers'>;
+
 
       if (isSnipe && snipeRoom) {
         const result = await joinSnipeRoom({ roomId: snipeRoom._id, guestId: validGuestId });

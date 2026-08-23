@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
+
+
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useMutation, useQuery } from 'convex/react';
@@ -33,8 +35,10 @@ import { SegmentedControl, type SegmentedOption } from '@/components/ui/segmente
 import { StatPill } from '@/components/ui/stat-pill';
 import { ModalShell } from '@/components/ui/modal-shell';
 import { TextInput } from '@/components/ui/text-input';
+import { ActiveMatchBanner } from '@/components/shared/active-match-banner';
 import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
+import { useGuestNickname } from '@/hooks/use-guest-nickname';
 
 type PoolMode = 'GLOBAL' | 'ACTIVE' | 'EPL' | 'TOP_TEAMS' | 'ICONS';
 
@@ -72,12 +76,7 @@ export default function HomePage() {
     | null
   >(null);
 
-  const [nickname, setNickname] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('extratime_guestName') || randomName();
-    }
-    return randomName();
-  });
+  const [nickname, setNickname] = useGuestNickname();
 
   const waitingSnipe11 = snipeQueueSummary?.queues[poolMode]?.[11] ?? 0;
   const waitingSnipe5 = snipeQueueSummary?.queues[poolMode]?.[5] ?? 0;
@@ -90,15 +89,21 @@ export default function HomePage() {
   async function ensureGuestId(): Promise<Id<'guestUsers'>> {
     const name = nickname.trim() || randomName();
     const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
-    const guestId = await ensureGuest({
+    const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
+    const res = await ensureGuest({
       existingId: existingId ?? undefined,
+      sessionToken,
       nickname: name,
       avatarSeed: name,
     });
-    localStorage.setItem('extratime_guestId', guestId);
+    localStorage.setItem('extratime_guestId', res.guestId);
+    if (res.sessionToken) {
+      localStorage.setItem('extratime_sessionToken', res.sessionToken);
+    }
     localStorage.setItem('extratime_guestName', name);
-    return guestId as Id<'guestUsers'>;
+    return res.guestId as Id<'guestUsers'>;
   }
+
 
   function triggerActionWithName(
     action:
@@ -129,21 +134,23 @@ export default function HomePage() {
 
     try {
       const guestId = await ensureGuestId();
+      const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
 
       if (action.type === 'snipe') {
-        const result = await findSnipeMatch({ userId: guestId, matchSize, poolMode });
+        const result = await findSnipeMatch({ userId: guestId, sessionToken, matchSize, poolMode });
         router.push(`/auction/${result.roomId}`);
       } else if (action.type === 'rank_solo') {
-        const result = await createSoloRank({ guestId, roundCount: rankRounds });
+        const result = await createSoloRank({ guestId, sessionToken, roundCount: rankRounds });
         router.push(`/rank/${result.gameId}`);
       } else if (action.type === 'rank_public') {
-        const result = await findRankMatch({ guestId, roundCount: rankRounds });
+        const result = await findRankMatch({ guestId, sessionToken, roundCount: rankRounds });
         router.push(`/rank/${result.gameId}`);
       } else if (action.type === 'rank_create_duel') {
-        const result = await createRankDuel({ hostId: guestId, roundCount: rankRounds });
+        const result = await createRankDuel({ hostId: guestId, sessionToken, roundCount: rankRounds });
         router.push(`/rank/${result.gameId}`);
       }
     } catch (error: unknown) {
+
       const err = error as { message?: string };
       toast(err.message || 'Action failed. Please try again.', 'error');
       setLoading(false);
@@ -261,6 +268,9 @@ export default function HomePage() {
           </p>
         </div>
       </header>
+
+      {/* ── ACTIVE MATCH RECONNECTION BANNER ──────────────────────────── */}
+      <ActiveMatchBanner />
 
       {/* ── 2 FLAGSHIP CARDS: SNIPE & RANK (Minimal Apple Aesthetic) ───── */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">

@@ -1,25 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  /* Font Family Mappings */
+  /* ═══════════════════════════════════════════════════════════════════════
+     FONT FAMILY MAPPINGS — Pure System / Built-In Fonts Only
+     San Francisco (Apple) · Segoe UI (Windows) · Roboto (Android)
+     Geeza Pro / Tahoma (Arabic) · SF Mono / Cascadia (Monospace)
+     ═══════════════════════════════════════════════════════════════════════ */
+
   --font-sans:
-    var(--font-ibm-sans), var(--font-ibm-arabic), ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-arabic: var(--font-ibm-arabic), var(--font-noto-arabic), sans-serif;
-  --font-display: var(--font-ibm-sans), var(--font-ibm-arabic), sans-serif;
-  --font-display-arabic: var(--font-noto-arabic), var(--font-ibm-arabic), sans-serif;
-  --font-mono: var(--font-rajdhani), ui-monospace, monospace;
-  --font-stat: var(--font-rajdhani), var(--font-bebas), ui-monospace, sans-serif;
-  --font-ibm-sans: var(--font-ibm-sans), sans-serif;
-  --font-ibm-arabic: var(--font-ibm-arabic), sans-serif;
-  --font-noto-arabic: var(--font-noto-arabic), sans-serif;
-  --font-rajdhani: var(--font-rajdhani), sans-serif;
-  --font-anton: var(--font-anton), sans-serif;
-  --font-bebas: var(--font-bebas), sans-serif;
-  --font-story-script: 'Story Script', cursive, sans-serif;
-  --font-aref-ruqaa: var(--font-aref-ruqaa), 'Aref Ruqaa', serif;
-  --font-alexandria: var(--font-alexandria), 'Alexandria', sans-serif;
-  --font-amiri: var(--font-amiri), 'Amiri', serif;
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --font-arabic:
+    "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", "SF Arabic",
+    system-ui, sans-serif;
+
+  --font-display:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
+  --font-display-arabic:
+    "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
+
+  --font-mono:
+    ui-monospace, "SF Mono", "Cascadia Code", "Segoe UI Mono",
+    Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --font-stat:
+    ui-monospace, "SF Mono", "Cascadia Code", "Segoe UI Mono",
+    Menlo, Consolas, monospace;
 
   /* Premium Core Color Mappings */
   --color-background: #03060b; /* Stadium Pitch Black */
@@ -72,12 +82,15 @@ body {
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-/* RTL Typography & Spacing Handling */
+/* ═══════════════════════════════════════════════════════════════════════
+   RTL / Arabic Typography — Geeza Pro + Segoe UI + Tahoma
+   ═══════════════════════════════════════════════════════════════════════ */
 html[dir='rtl'],
 .rtl {
-  font-family: var(--font-ibm-arabic), var(--font-noto-arabic), sans-serif;
+  font-family: "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", "SF Arabic", system-ui, sans-serif;
   letter-spacing: normal !important;
 }
 
@@ -88,9 +101,10 @@ html[dir='rtl'] h4,
 html[dir='rtl'] h5,
 html[dir='rtl'] h6,
 html[dir='rtl'] .font-display {
-  font-family: var(--font-noto-arabic), var(--font-ibm-arabic), sans-serif;
+  font-family: "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
   letter-spacing: normal !important;
-  line-height: 1.35;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 html[dir='rtl'] p,
@@ -101,31 +115,33 @@ html[dir='rtl'] input {
 }
 
 html[dir='rtl'] .font-stats {
-  font-family: var(--font-stat), sans-serif;
+  font-family: var(--font-stat);
   letter-spacing: 0.04em !important;
   font-variant-numeric: tabular-nums;
 }
 
-/* Headings font overrides (LTR) */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-display), sans-serif;
-  letter-spacing: -0.015em;
+/* ═══════════════════════════════════════════════════════════════════════
+   LTR Headings — System UI (San Francisco / Segoe UI / Roboto)
+   ═══════════════════════════════════════════════════════════════════════ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  font-weight: 700;
 }
 
-/* Centralized Sporty Numbers, Timers, Prices & Stats */
+/* ═══════════════════════════════════════════════════════════════════════
+   Sporty Numbers, Timers, Prices & Stats — Monospace Tabular Nums
+   ═══════════════════════════════════════════════════════════════════════ */
 .font-stats {
-  font-family: var(--font-stat), sans-serif;
+  font-family: var(--font-stat);
   font-weight: 700;
   letter-spacing: 0.05em;
   font-variant-numeric: tabular-nums;
 }
 
-/* Smooth customized scrollbars */
+/* ═══════════════════════════════════════════════════════════════════════
+   Scrollbars
+   ═══════════════════════════════════════════════════════════════════════ */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -255,35 +271,6 @@ h6 {
   display: none;
 }
 
-/* Script & Luxury Typography Utilities */
-.story-script-regular {
-  font-family: "Story Script", cursive, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.font-story-script {
-  font-family: "Story Script", cursive, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.font-aref-ruqaa {
-  font-family: var(--font-aref-ruqaa), 'Aref Ruqaa', serif;
-}
-
-.font-alexandria {
-  font-family: var(--font-alexandria), 'Alexandria', sans-serif;
-}
-
-.font-amiri {
-  font-family: var(--font-amiri), 'Amiri', serif;
-}
-
-.font-signature {
-  font-family: 'Story Script', var(--font-aref-ruqaa), 'Amiri', cursive, sans-serif;
-}
-
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -295,3 +282,4 @@ h6 {
     scroll-behavior: auto !important;
   }
 }
+

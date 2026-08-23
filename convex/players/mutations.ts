@@ -1,4 +1,4 @@
-import { mutation } from '../_generated/server';
+import { mutation, internalMutation } from '../_generated/server';
 import { Doc } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { tierValidator } from '../lib/constants';
@@ -32,7 +32,7 @@ export const create = mutation({
   },
 });
 
-export const bulkUpdatePlayerImages = mutation({
+export const bulkUpdatePlayerImages = internalMutation({
   args: {
     updates: v.array(
       v.object({
@@ -70,12 +70,13 @@ export const bulkUpdatePlayerImages = mutation({
 });
 
 /**
- * Deduplicate player records in Convex.
+ * Deduplicate player records in Convex (Internal only).
  * Finds duplicated player rows, preserves the best record (with valid image / apiId / details),
  * and removes redundant duplicates.
  */
-export const deduplicatePlayers = mutation({
+export const deduplicatePlayers = internalMutation({
   args: {},
+
   handler: async (ctx) => {
     const allPlayers = await ctx.db.query('players').collect();
     const groups = new Map<string, Doc<'players'>[]>();

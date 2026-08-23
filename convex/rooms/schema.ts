@@ -22,4 +22,7 @@ export const roomsTable = defineTable({
   .index('by_code', ['code'])
   .index('by_status', ['status'])
   .index('by_host', ['hostId'])
+  .index('by_host_status', ['hostId', 'status'])
+  .index('by_guest_status', ['guestId', 'status'])
   .index('by_public_status', ['isPublic', 'status']);
+

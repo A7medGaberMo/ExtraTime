@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+
 import { useRouter } from 'next/navigation';
 import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
@@ -16,6 +17,7 @@ import {
   ShieldCheck,
   ArrowsDownUp,
   Key,
+  DiceFive,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
@@ -24,8 +26,11 @@ import { Panel } from '@/components/ui/panel';
 import { SegmentedControl, type SegmentedOption } from '@/components/ui/segmented-control';
 import { StatPill } from '@/components/ui/stat-pill';
 import { TextInput } from '@/components/ui/text-input';
+import { ModalShell } from '@/components/ui/modal-shell';
+import { UserIdentity } from '@/components/ui/user-identity';
 import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
+import { useGuestNickname } from '@/hooks/use-guest-nickname';
 
 export default function RankHubPage() {
   const router = useRouter();
@@ -39,12 +44,17 @@ export default function RankHubPage() {
   const findPublicMatch = useMutation(api.rank.mutations.findOrCreatePublicMatch);
   const queueStats = useQuery(api.rank.queries.getPublicQueueSummary);
 
-  const [nickname] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('extratime_guestName') || randomName();
-    }
-    return randomName();
-  });
+  const [nickname, setNickname] = useGuestNickname();
+
+
+  const [showNameModal, setShowNameModal] = useState(false);
+  const [pendingAction, setPendingAction] = useState<
+    | { type: 'solo' }
+    | { type: 'quick' }
+    | { type: 'duel_create' }
+    | { type: 'duel_join'; code: string }
+    | null
+  >(null);
 
   const [roundCount, setRoundCount] = useState<3 | 5>(3);
   const [loading, setLoading] = useState(false);
@@ -53,71 +63,91 @@ export default function RankHubPage() {
 
   async function ensureGuestUser(): Promise<Id<'guestUsers'>> {
     const name = nickname.trim() || randomName();
-    const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
-    const guestId = await ensureGuest({
+    const existingId =
+      typeof window !== 'undefined'
+        ? (localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null)
+        : null;
+    const sessionToken =
+      typeof window !== 'undefined'
+        ? localStorage.getItem('extratime_sessionToken') || undefined
+        : undefined;
+    const res = await ensureGuest({
       existingId: existingId ?? undefined,
+      sessionToken,
       nickname: name,
       avatarSeed: name,
     });
-    localStorage.setItem('extratime_guestId', guestId);
-    localStorage.setItem('extratime_guestName', name);
-    return guestId as Id<'guestUsers'>;
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('extratime_guestId', res.guestId);
+      if (res.sessionToken) {
+        localStorage.setItem('extratime_sessionToken', res.sessionToken);
+      }
+      localStorage.setItem('extratime_guestName', name);
+    }
+    return res.guestId as Id<'guestUsers'>;
   }
 
-  async function handleStartSolo() {
+
+  function triggerActionWithName(
+    action:
+      | { type: 'solo' }
+      | { type: 'quick' }
+      | { type: 'duel_create' }
+      | { type: 'duel_join'; code: string },
+  ) {
+    const saved =
+      typeof window !== 'undefined' ? localStorage.getItem('extratime_guestName') : null;
+    if (saved) {
+      executeAction(action);
+    } else {
+      setPendingAction(action);
+      setNickname(randomName());
+      setShowNameModal(true);
+    }
+  }
+
+  async function executeAction(
+    action:
+      | { type: 'solo' }
+      | { type: 'quick' }
+      | { type: 'duel_create' }
+      | { type: 'duel_join'; code: string },
+  ) {
     if (loading) return;
     setLoading(true);
+
     try {
       const guestId = await ensureGuestUser();
-      const result = await createSolo({ guestId, roundCount });
-      router.push(`/rank/${result.gameId}`);
+      const sessionToken =
+        typeof window !== 'undefined'
+          ? localStorage.getItem('extratime_sessionToken') || undefined
+          : undefined;
+
+      if (action.type === 'solo') {
+        const result = await createSolo({ guestId, sessionToken, roundCount });
+        router.push(`/rank/${result.gameId}`);
+      } else if (action.type === 'quick') {
+        const result = await findPublicMatch({ guestId, sessionToken, roundCount });
+        router.push(`/rank/${result.gameId}`);
+      } else if (action.type === 'duel_create') {
+        const result = await createDuel({ hostId: guestId, sessionToken, roundCount });
+        router.push(`/rank/${result.gameId}`);
+      } else if (action.type === 'duel_join') {
+        const result = await joinDuel({ guestId, sessionToken, code: action.code });
+        router.push(`/rank/${result.gameId}`);
+      }
     } catch (err: unknown) {
+
       const e = err as { message?: string };
-      toast(e.message || 'Failed to start solo game', 'error');
+      toast(e.message || 'Action failed', 'error');
       setLoading(false);
     }
   }
 
-  async function handleCreatePrivateDuel() {
-    if (loading) return;
-    setLoading(true);
-    try {
-      const guestId = await ensureGuestUser();
-      const result = await createDuel({ hostId: guestId, roundCount });
-      router.push(`/rank/${result.gameId}`);
-    } catch (err: unknown) {
-      const e = err as { message?: string };
-      toast(e.message || 'Failed to create duel room', 'error');
-      setLoading(false);
-    }
-  }
-
-  async function handleJoinPrivateDuel() {
-    if (loading || !joinCode.trim()) return;
-    setLoading(true);
-    try {
-      const guestId = await ensureGuestUser();
-      const result = await joinDuel({ guestId, code: joinCode.trim() });
-      router.push(`/rank/${result.gameId}`);
-    } catch (err: unknown) {
-      const e = err as { message?: string };
-      toast(e.message || 'Could not join room', 'error');
-      setLoading(false);
-    }
-  }
-
-  async function handleQuickMatch() {
-    if (loading) return;
-    setLoading(true);
-    try {
-      const guestId = await ensureGuestUser();
-      const result = await findPublicMatch({ guestId, roundCount });
-      router.push(`/rank/${result.gameId}`);
-    } catch (err: unknown) {
-      const e = err as { message?: string };
-      toast(e.message || 'Matchmaking failed', 'error');
-      setLoading(false);
-    }
+  async function handleModalSubmit() {
+    if (!pendingAction || !nickname.trim()) return;
+    setShowNameModal(false);
+    await executeAction(pendingAction);
   }
 
   const tabOptions: SegmentedOption<'solo' | 'quick' | 'duel'>[] = [
@@ -167,6 +197,32 @@ export default function RankHubPage() {
     >
       {/* ── 1. MODE SELECTOR CARD ────────────────────────────────────── */}
       <Panel variant="highlight" className="p-4 sm:p-6 space-y-5">
+        {/* Manager Identity Header Bar */}
+        <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/80 p-3">
+          <div className="flex items-center gap-2.5 min-w-0">
+            <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
+            <div className="min-w-0">
+              <span className="text-[10px] text-steel font-black uppercase tracking-wider block">
+                {t('joinRoom.managerHandle')}
+              </span>
+              <span className="text-xs sm:text-sm font-bold text-white truncate block">
+                {nickname}
+              </span>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              setPendingAction(null);
+              setShowNameModal(true);
+            }}
+            className="flex items-center gap-1.5 rounded-xl border border-white/10 bg-slate-900 px-3 py-1.5 text-xs font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
+          >
+            <AppIcon icon={DiceFive} size={14} weight="duotone" className="text-lime" />
+            <span>{lang === 'ar' ? 'تغيير' : 'Change'}</span>
+          </button>
+        </div>
+
         {/* Mode Tabs */}
         <SegmentedControl
           options={tabOptions}
@@ -205,7 +261,7 @@ export default function RankHubPage() {
               variant="primary"
               size="lg"
               fullWidth
-              onClick={handleStartSolo}
+              onClick={() => triggerActionWithName({ type: 'solo' })}
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Play} size={20} weight="bold" />}
@@ -242,7 +298,7 @@ export default function RankHubPage() {
               variant="primary"
               size="lg"
               fullWidth
-              onClick={handleQuickMatch}
+              onClick={() => triggerActionWithName({ type: 'quick' })}
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Sword} size={20} weight="bold" />}
@@ -259,7 +315,7 @@ export default function RankHubPage() {
               variant="primary"
               size="lg"
               fullWidth
-              onClick={handleCreatePrivateDuel}
+              onClick={() => triggerActionWithName({ type: 'duel_create' })}
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Users} size={20} weight="bold" />}
@@ -287,7 +343,9 @@ export default function RankHubPage() {
               <Button
                 variant="secondary"
                 size="md"
-                onClick={handleJoinPrivateDuel}
+                onClick={() =>
+                  triggerActionWithName({ type: 'duel_join', code: joinCode.trim() })
+                }
                 disabled={loading || !joinCode.trim()}
               >
                 {t('rank.joinDuelBtn')}
@@ -323,6 +381,59 @@ export default function RankHubPage() {
           <p className="text-[10px] text-steel font-medium truncate">Drag & drop order</p>
         </Panel>
       </section>
+
+      {/* ── 3. MANAGER NAME ENTRY MODAL ──────────────────────────────── */}
+      <ModalShell
+        isOpen={showNameModal}
+        onClose={() => setShowNameModal(false)}
+        title={t('home.nameModal.title')}
+        subtitle={t('home.nameModal.subtitle')}
+        maxWidth="md"
+      >
+        <div className="space-y-4 pt-1">
+          <TextInput
+            label={t('home.nameModal.label')}
+            placeholder={t('home.nameModal.placeholder')}
+            value={nickname}
+            onChange={(e) => setNickname(e.target.value)}
+            autoFocus
+            maxLength={18}
+            rightAction={
+              <button
+                type="button"
+                onClick={() => setNickname(randomName())}
+                aria-label={t('home.nameModal.randomize')}
+                title={t('home.nameModal.randomize')}
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
+              >
+                <AppIcon icon={DiceFive} size={20} weight="duotone" />
+              </button>
+            }
+          />
+
+          <div className="flex items-center justify-between text-xs">
+            <button
+              type="button"
+              onClick={() => setNickname(randomName())}
+              className="text-steel hover:text-lime underline transition-colors cursor-pointer font-bold uppercase"
+            >
+              {t('home.nameModal.randomize')}
+            </button>
+            <span className="text-steel/50 font-stats">{nickname.length}/18</span>
+          </div>
+
+          <Button
+            variant="primary"
+            size="lg"
+            fullWidth
+            onClick={handleModalSubmit}
+            disabled={loading || !nickname.trim()}
+            loading={loading}
+          >
+            {loading ? t('home.nameModal.finding') : t('home.nameModal.submit')}
+          </Button>
+        </div>
+      </ModalShell>
     </PageShell>
   );
 }

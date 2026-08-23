@@ -3,13 +3,14 @@
 import React, { useState } from 'react';
 import { Reorder } from 'framer-motion';
 import {
-  DotsSixVertical,
-  CheckCircle,
-  CaretUp,
-  CaretDown,
-} from '@phosphor-icons/react';
-import { AppIcon } from '@/components/ui/app-icon';
-import { Button } from '@/components/ui/button';
+  ChevronUp,
+  ChevronDown,
+  GripVertical,
+  ArrowDownWideNarrow,
+  ArrowUpNarrowWide,
+  Check,
+  Loader2,
+} from 'lucide-react';
 import { RankEntityAvatar, RankMedia } from './rank-entity-avatar';
 import { useI18n } from '@/lib/i18n';
 
@@ -47,7 +48,16 @@ interface RankCardListProps {
   onOrderChange: (newOrder: string[]) => void;
   onSubmit: () => void;
   isSubmitting: boolean;
-  hasSubmitted: boolean;
+  hasSubmitted?: boolean;
+}
+
+function parseEntityName(rawName: string) {
+  if (!rawName) return { mainName: '', tag: null };
+  const match = rawName.match(/^(.+?)\s*[\(\[]([^\)\]]+)[\)\]]$/);
+  if (match) {
+    return { mainName: match[1].trim(), tag: match[2].trim() };
+  }
+  return { mainName: rawName.trim(), tag: null };
 }
 
 export function RankCardList({
@@ -59,191 +69,199 @@ export function RankCardList({
   onOrderChange,
   onSubmit,
   isSubmitting,
-  hasSubmitted,
+  hasSubmitted = false,
 }: RankCardListProps) {
   const { lang, t } = useI18n();
-  const [selectedKeyForSwap, setSelectedKeyForSwap] = useState<string | null>(null);
+  const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
-  const itemMap = React.useMemo(() => {
-    const map = new Map<string, (typeof items)[0]>();
-    items.forEach((item) => map.set(item.answerKey, item));
-    return map;
-  }, [items]);
+  const itemMap = new Map(items.map((i) => [i.answerKey, i]));
 
-  function handleCardClick(clickedKey: string) {
+  const handleMoveUp = (index: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (index === 0 || hasSubmitted) return;
+    const next = [...currentOrder];
+    const temp = next[index];
+    next[index] = next[index - 1];
+    next[index - 1] = temp;
+    onOrderChange(next);
+  };
+
+  const handleMoveDown = (index: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (index === currentOrder.length - 1 || hasSubmitted) return;
+    const next = [...currentOrder];
+    const temp = next[index];
+    next[index] = next[index + 1];
+    next[index + 1] = temp;
+    onOrderChange(next);
+  };
+
+  const handleCardClick = (key: string) => {
     if (hasSubmitted) return;
-
-    if (!selectedKeyForSwap) {
-      setSelectedKeyForSwap(clickedKey);
-      return;
+    if (selectedKey === null) {
+      setSelectedKey(key);
+    } else if (selectedKey === key) {
+      setSelectedKey(null);
+    } else {
+      const idx1 = currentOrder.indexOf(selectedKey);
+      const idx2 = currentOrder.indexOf(key);
+      if (idx1 !== -1 && idx2 !== -1) {
+        const next = [...currentOrder];
+        const temp = next[idx1];
+        next[idx1] = next[idx2];
+        next[idx2] = temp;
+        onOrderChange(next);
+      }
+      setSelectedKey(null);
     }
+  };
 
-    if (selectedKeyForSwap === clickedKey) {
-      setSelectedKeyForSwap(null);
-      return;
-    }
-
-    const indexA = currentOrder.indexOf(selectedKeyForSwap);
-    const indexB = currentOrder.indexOf(clickedKey);
-
-    if (indexA !== -1 && indexB !== -1) {
-      const newOrder = [...currentOrder];
-      newOrder[indexA] = clickedKey;
-      newOrder[indexB] = selectedKeyForSwap;
-      onOrderChange(newOrder);
-    }
-
-    setSelectedKeyForSwap(null);
-  }
-
-  function handleMoveUp(index: number, e: React.MouseEvent) {
-    e.stopPropagation();
-    if (hasSubmitted || index <= 0) return;
-    const newOrder = [...currentOrder];
-    const temp = newOrder[index - 1];
-    newOrder[index - 1] = newOrder[index];
-    newOrder[index] = temp;
-    onOrderChange(newOrder);
-    setSelectedKeyForSwap(null);
-  }
-
-  function handleMoveDown(index: number, e: React.MouseEvent) {
-    e.stopPropagation();
-    if (hasSubmitted || index >= currentOrder.length - 1) return;
-    const newOrder = [...currentOrder];
-    const temp = newOrder[index + 1];
-    newOrder[index + 1] = newOrder[index];
-    newOrder[index] = temp;
-    onOrderChange(newOrder);
-    setSelectedKeyForSwap(null);
-  }
+  const cleanMetricLabel = metricLabel.replace(/[()]/g, '').trim();
 
   const directionHelperText =
     direction === 'desc'
       ? lang === 'ar'
-        ? `الأكثر (${metricLabel}) في #1`
-        : `Highest (${metricLabel}) at #1`
+        ? `الأعلى (${cleanMetricLabel}) في #1`
+        : `Highest (${cleanMetricLabel}) at #1`
       : lang === 'ar'
-        ? `الأقل (${metricLabel}) في #1`
-        : `Lowest (${metricLabel}) at #1`;
+        ? `الأقل (${cleanMetricLabel}) في #1`
+        : `Lowest (${cleanMetricLabel}) at #1`;
+
+  const DirectionIcon = direction === 'desc' ? ArrowDownWideNarrow : ArrowUpNarrowWide;
 
   return (
-    <div className="flex-1 flex flex-col justify-between w-full max-w-lg mx-auto select-none overflow-hidden min-h-0 gap-1 sm:gap-2">
-      {/* ── QUESTION HEADING & DIRECTION BADGE STRIP ─────────────────────── */}
-      <div className="text-center shrink-0 space-y-1 px-1">
-        <h2 className="text-sm sm:text-base md:text-lg font-black text-white leading-snug font-display line-clamp-2">
+    <div className="w-full max-w-[400px] mx-auto select-none flex flex-col gap-3 sm:gap-4 py-1 px-1">
+      {/* ── QUESTION HEADING & DIRECTION SUBTITLE CHIP ─────────────────────── */}
+      <div className="text-center shrink-0 space-y-2 px-1">
+        <h1 className="text-[17px] sm:text-[20px] font-bold leading-[1.3] tracking-[-0.01em] text-[#F5F5F7] font-display">
           {questionTitle}
-        </h2>
-        <div className="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-lime/10 border border-lime/30 text-[11px] sm:text-xs font-black text-lime shadow-sm">
-          <span>{directionHelperText}</span>
+        </h1>
+
+        {/* Subtitle chip */}
+        <div className="flex justify-center">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.06] bg-[#141416] px-3.5 py-1 text-[12px] font-medium text-lime shadow-sm">
+            <DirectionIcon size={13} strokeWidth={2.5} />
+            <span>{directionHelperText}</span>
+          </div>
         </div>
       </div>
 
-      {/* ── 5 REORDER CARDS (Zero-Scroll Adaptive Heights & Zero Spoilers) ─ */}
-      <div className="flex-1 flex flex-col justify-evenly min-h-0 py-0.5">
+      {/* ── 5 REORDER CARDS (Tight Elegant Spacing, Zero Stretch) ─ */}
+      <div
+        className={`transition-opacity duration-300 ${
+          hasSubmitted ? 'opacity-60 pointer-events-none' : ''
+        }`}
+      >
         <Reorder.Group
           axis="y"
           values={currentOrder}
-          onReorder={hasSubmitted ? () => {} : onOrderChange}
-          className="flex-1 flex flex-col justify-between gap-1.5 sm:gap-2 touch-manipulation w-full min-h-0"
+          onReorder={onOrderChange}
+          className="flex flex-col gap-2 sm:gap-2.5 w-full"
+          style={{ touchAction: 'none' }}
         >
           {currentOrder.map((key, index) => {
             const item = itemMap.get(key);
             if (!item) return null;
 
-            const isSelected = selectedKeyForSwap === key;
+            const isSelected = selectedKey === key;
             const rankPosition = index + 1;
+            const isTop = rankPosition === 1;
+            const { mainName, tag } = parseEntityName(item.name);
 
             return (
               <Reorder.Item
                 key={key}
                 value={key}
-                dragListener={!hasSubmitted}
-                layout
+                layout="position"
                 transition={{
                   type: 'spring',
-                  stiffness: 400,
-                  damping: 28,
-                  mass: 0.7,
-                }}
-                whileDrag={{
-                  scale: 1.02,
-                  boxShadow: '0 12px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(149, 232, 16, 0.3)',
-                  zIndex: 50,
-                  cursor: 'grabbing',
+                  stiffness: 550,
+                  damping: 32,
+                  mass: 0.5,
                 }}
                 className={`
-                  relative flex items-center justify-between px-3 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl border transition-all duration-150
+                  relative flex items-center justify-between
+                  px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-[18px] sm:rounded-[20px] border
+                  transition-colors select-none cursor-grab active:cursor-grabbing
                   ${
-                    hasSubmitted
-                      ? 'bg-slate-900/60 border-white/5 cursor-not-allowed opacity-85'
-                      : isSelected
-                        ? 'bg-slate-900 border-lime ring-2 ring-lime/70 shadow-[0_0_15px_rgba(149,232,16,0.25)]'
-                        : 'bg-slate-900/95 border-white/10 hover:border-lime/40 cursor-grab active:cursor-grabbing shadow-sm'
+                    isSelected
+                      ? 'border-lime bg-[#1a1f14] shadow-[0_0_18px_rgba(198,255,74,0.35)]'
+                      : ''
                   }
                 `}
+                style={{
+                  background: isSelected ? '#161c12' : '#141416',
+                  borderColor: isSelected
+                    ? '#C6FF4A'
+                    : isTop
+                      ? 'rgba(198,255,74,0.32)'
+                      : 'rgba(255,255,255,0.06)',
+                  boxShadow: isTop && !isSelected
+                    ? '0 0 0 1px rgba(198,255,74,0.08), 0 10px 24px -8px rgba(198,255,74,0.2)'
+                    : 'none',
+                  touchAction: 'none',
+                  WebkitUserSelect: 'none',
+                }}
                 onClick={() => handleCardClick(key)}
               >
-                {/* Left: Position Rank Number + Entity Avatar + Clear Entity Name */}
-                <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
-                  <div
-                    className={`
-                      w-6 h-6 sm:w-7 sm:h-7 rounded-lg font-stats font-black text-xs sm:text-sm flex items-center justify-center shrink-0 border
-                      ${
-                        rankPosition === 1
-                          ? 'bg-lime text-slate-950 border-lime shadow-sm shadow-lime/30'
-                          : rankPosition === 5
-                            ? 'bg-slate-950 text-steel border-white/10'
-                            : 'bg-slate-950 text-white border-white/10'
-                      }
-                    `}
-                  >
-                    {rankPosition}
-                  </div>
-
-                  <RankEntityAvatar media={item.media} name={item.name} size="sm" />
-
-                  {/* Entity Name ONLY - Zero Spoilers, Zero Subtext during Active Playing */}
-                  <div className="min-w-0 flex-1">
-                    <span className="text-xs sm:text-sm md:text-base font-bold text-white tracking-wide truncate block leading-tight">
-                      {item.name}
-                    </span>
-                  </div>
+                {/* Rank Badge */}
+                <div
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[10px] text-[14px] font-bold font-stats transition-colors pointer-events-none"
+                  style={{
+                    background: isTop ? '#C6FF4A' : '#26262A',
+                    color: isTop ? '#0A0A0B' : '#98989D',
+                  }}
+                >
+                  {rankPosition}
                 </div>
 
-                {/* Right: Quick Micro Up/Down Arrows + Drag Grip */}
+                {/* Avatar */}
+                <div className="pointer-events-none shrink-0 ms-2.5 me-2.5">
+                  <RankEntityAvatar media={item.media} name={mainName || item.name} size="md" />
+                </div>
+
+                {/* Name, Season Tag & SubText */}
+                <div className="min-w-0 flex-1 pointer-events-none flex flex-col justify-center">
+                  <div className="flex items-center gap-1.5 min-w-0 flex-wrap">
+                    <span className="truncate text-[13.5px] sm:text-[14.5px] font-bold text-[#F5F5F7] leading-tight">
+                      {mainName}
+                    </span>
+                    {tag && (
+                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/[0.08] border border-white/10 text-lime font-stats text-[11px] font-bold leading-none">
+                        {tag}
+                      </span>
+                    )}
+                  </div>
+                  {item.subText && (
+                    <p className="truncate text-[11px] sm:text-[11.5px] text-[#8893a4] font-medium leading-tight pt-0.5">
+                      {item.subText}
+                    </p>
+                  )}
+                </div>
+
+                {/* Controls */}
                 {!hasSubmitted && (
-                  <div className="flex items-center gap-1 shrink-0 ps-1.5">
-                    {/* Move Up Button */}
+                  <div className="flex items-center gap-0.5 shrink-0 ps-1">
                     <button
                       type="button"
                       onClick={(e) => handleMoveUp(index, e)}
                       disabled={index === 0}
-                      className="p-1 sm:p-1.5 rounded-lg text-steel hover:text-white hover:bg-white/10 disabled:opacity-20 disabled:hover:bg-transparent transition-colors cursor-pointer"
-                      title="Move Up"
-                      aria-label="Move Up"
+                      className="flex h-8 w-8 items-center justify-center rounded-lg text-[#616166] transition-all hover:bg-white/[0.06] hover:text-white active:scale-90 disabled:opacity-20 disabled:pointer-events-none cursor-pointer"
+                      aria-label="Move up"
                     >
-                      <AppIcon icon={CaretUp} size={15} weight="bold" />
+                      <ChevronUp size={17} strokeWidth={2.25} />
                     </button>
-
-                    {/* Move Down Button */}
                     <button
                       type="button"
                       onClick={(e) => handleMoveDown(index, e)}
                       disabled={index === currentOrder.length - 1}
-                      className="p-1 sm:p-1.5 rounded-lg text-steel hover:text-white hover:bg-white/10 disabled:opacity-20 disabled:hover:bg-transparent transition-colors cursor-pointer"
-                      title="Move Down"
-                      aria-label="Move Down"
+                      className="flex h-8 w-8 items-center justify-center rounded-lg text-[#616166] transition-all hover:bg-white/[0.06] hover:text-white active:scale-90 disabled:opacity-20 disabled:pointer-events-none cursor-pointer"
+                      aria-label="Move down"
                     >
-                      <AppIcon icon={CaretDown} size={15} weight="bold" />
+                      <ChevronDown size={17} strokeWidth={2.25} />
                     </button>
-
-                    {/* Drag Grip Handle */}
-                    <div
-                      className="p-1 text-steel/60 hover:text-lime cursor-grab select-none"
-                      style={{ touchAction: 'none' }}
-                    >
-                      <AppIcon icon={DotsSixVertical} size={18} weight="bold" />
+                    <div className="flex h-8 w-7 items-center justify-center text-[#424246] hover:text-white/80 cursor-grab active:cursor-grabbing">
+                      <GripVertical size={16} strokeWidth={2} />
                     </div>
                   </div>
                 )}
@@ -253,24 +271,25 @@ export function RankCardList({
         </Reorder.Group>
       </div>
 
-      {/* ── SUBMIT / LOCK ACTION BUTTON (Permanently Visible at Bottom) ──── */}
-      <div className="shrink-0 pt-1 pb-1">
-        <Button
-          variant={hasSubmitted ? 'secondary' : 'primary'}
-          size="md"
-          fullWidth
+      {/* ── SUBMIT BUTTON ─────────────────── */}
+      <div className="shrink-0 pt-1 pb-2">
+        <button
+          type="button"
           onClick={onSubmit}
           disabled={isSubmitting || hasSubmitted}
-          loading={isSubmitting}
-          leftIcon={hasSubmitted ? <AppIcon icon={CheckCircle} size={16} weight="fill" /> : undefined}
-          className="min-h-[42px] sm:min-h-[46px] text-xs sm:text-sm font-black shadow-lg shadow-lime/10"
+          className="flex h-[50px] sm:h-[52px] w-full items-center justify-center gap-2 rounded-[18px] text-[15px] sm:text-[16px] font-bold tracking-tight text-[#0A0A0B] bg-lime transition-all active:scale-[0.98] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase shadow-[0_10px_28px_-6px_rgba(198,255,74,0.32)]"
         >
-          {hasSubmitted
-            ? (lang === 'ar' ? 'تم تثبيت الترتيب ✓' : 'Ranking Locked ✓')
-            : isSubmitting
-              ? t('rank.submitting')
-              : t('rank.submitRanking')}
-        </Button>
+          {isSubmitting ? (
+            <Loader2 className="animate-spin" size={20} />
+          ) : hasSubmitted ? (
+            <>
+              <Check size={20} strokeWidth={3} />
+              <span>{t('rank.locked')}</span>
+            </>
+          ) : (
+            <span>{t('rank.submit')}</span>
+          )}
+        </button>
       </div>
     </div>
   );
