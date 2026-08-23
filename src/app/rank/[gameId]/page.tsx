@@ -146,10 +146,14 @@ export default function RankArenaPage() {
   }
 
   async function handleAdvance() {
-    if (isAdvancing) return;
+    if (isAdvancing || !guestId) return;
     setIsAdvancing(true);
     try {
-      await advanceRoundMutation({ gameId });
+      await advanceRoundMutation({
+        gameId,
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
     } catch (err: unknown) {
       const e = err as { message?: string };
       toast(e.message || 'Failed to advance', 'error');
@@ -163,6 +167,7 @@ export default function RankArenaPage() {
     try {
       const result = await createSoloMutation({
         guestId,
+        sessionToken: sessionToken ?? undefined,
         roundCount: (gameState.roundCount || 3) as 3 | 5,
       });
       router.push(`/rank/${result.gameId}`);

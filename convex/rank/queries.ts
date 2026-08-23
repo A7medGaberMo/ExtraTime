@@ -232,11 +232,18 @@ export const getBankStats = query({
 export const getByCode = query({
   args: { code: v.string() },
   handler: async (ctx, args) => {
-    const cleanCode = args.code.trim().toUpperCase();
-    const game = await ctx.db
+    const cleanCode = args.code.replace(/[^A-Z0-9]/gi, "").toUpperCase().slice(0, 6);
+    const rawCode = args.code.trim().toUpperCase();
+    let game = await ctx.db
       .query("rankGames")
       .withIndex("by_code", (q) => q.eq("code", cleanCode))
       .first();
+    if (!game && rawCode !== cleanCode) {
+      game = await ctx.db
+        .query("rankGames")
+        .withIndex("by_code", (q) => q.eq("code", rawCode))
+        .first();
+    }
 
     if (!game) return null;
     return {
@@ -251,4 +258,3 @@ export const getByCode = query({
     };
   },
 });
-

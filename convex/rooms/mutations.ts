@@ -157,12 +157,14 @@ async function joinAuction(
 export const create = mutation({
   args: {
     hostId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
     matchSize: v.optional(v.union(v.literal(5), v.literal(11))),
     startingBudget: v.optional(v.number()),
     isPublic: v.optional(v.boolean()),
     poolMode: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.hostId, args.sessionToken);
     const matchSize: MatchSize = args.matchSize ?? 11;
     const startingBudget = args.startingBudget ?? 100;
     const poolMode = (args.poolMode ?? 'GLOBAL') as PoolMode;
@@ -180,8 +182,10 @@ export const join = mutation({
   args: {
     roomId: v.id('rooms'),
     guestId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const room = await ctx.db.get(args.roomId);
     if (!room) throw new Error('Room not found');
     const guest = await ctx.db.get(args.guestId);
@@ -419,4 +423,3 @@ export const cleanupStalePublicQueues = internalMutation({
     return { cleanedRooms, cleanedRank };
   },
 });
-

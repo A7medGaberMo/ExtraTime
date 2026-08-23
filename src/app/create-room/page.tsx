@@ -96,10 +96,12 @@ function CreateRoomContent() {
 
     try {
       const guestId = await ensureGuestId();
+      const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
 
       if (selectedGame === 'snipe') {
         const room = await createSnipeRoom({
           hostId: guestId,
+          sessionToken,
           matchSize,
           startingBudget,
           isPublic,
@@ -109,13 +111,13 @@ function CreateRoomContent() {
       } else {
         // Rank match
         if (rankType === 'duel') {
-          const result = await createRankDuel({ hostId: guestId, roundCount });
+          const result = await createRankDuel({ hostId: guestId, sessionToken, roundCount });
           router.push(`/rank/${result.gameId}`);
         } else if (rankType === 'quick') {
-          const result = await findRankPublic({ guestId, roundCount });
+          const result = await findRankPublic({ guestId, sessionToken, roundCount });
           router.push(`/rank/${result.gameId}`);
         } else {
-          const result = await createRankSolo({ guestId, roundCount });
+          const result = await createRankSolo({ guestId, sessionToken, roundCount });
           router.push(`/rank/${result.gameId}`);
         }
       }

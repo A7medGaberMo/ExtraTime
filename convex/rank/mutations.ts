@@ -16,10 +16,25 @@ const FALLBACK_GUEST_NAME = "Guest Manager";
 
 function generateRankRoomCode(): string {
   const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-  const randomPart = Array.from({ length: 4 }, () =>
+  return Array.from({ length: 6 }, () =>
     chars[Math.floor(Math.random() * chars.length)]
   ).join("");
-  return `RNK-${randomPart}`;
+}
+
+async function generateUniqueRankRoomCode(ctx: GenericMutationCtx<DataModel>): Promise<string> {
+  for (let attempt = 0; attempt < 8; attempt++) {
+    const code = generateRankRoomCode();
+    const existing = await ctx.db
+      .query("rankGames")
+      .withIndex("by_code", (q) => q.eq("code", code))
+      .first();
+    if (!existing) return code;
+  }
+  throw new Error("Could not generate a unique rank room code");
+}
+
+function normalizeRankRoomCode(code: string): string {
+  return code.replace(/[^A-Z0-9]/gi, "").toUpperCase().slice(0, 6);
 }
 
 /**
@@ -266,7 +281,7 @@ export const createSoloGame = mutation({
 
     const questionIds = await pickRandomQuestionIds(ctx, args.roundCount, [args.guestId]);
     const now = Date.now();
-    const code = generateRankRoomCode();
+    const code = await generateUniqueRankRoomCode(ctx);
 
     const gameId = await ctx.db.insert("rankGames", {
       code,
@@ -309,7 +324,7 @@ export const createDuelPrivateRoom = mutation({
     const host = await getGuestProfile(ctx, args.hostId);
 
     const now = Date.now();
-    const code = generateRankRoomCode();
+    const code = await generateUniqueRankRoomCode(ctx);
 
     const gameId = await ctx.db.insert("rankGames", {
       code,
@@ -350,11 +365,18 @@ export const joinDuelPrivateRoom = mutation({
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const guest = await getGuestProfile(ctx, args.guestId);
 
-    const cleanCode = args.code.trim().toUpperCase();
-    const game = await ctx.db
+    const cleanCode = normalizeRankRoomCode(args.code);
+    const rawCode = args.code.trim().toUpperCase();
+    let game = await ctx.db
       .query("rankGames")
       .withIndex("by_code", (q) => q.eq("code", cleanCode))
       .first();
+    if (!game && rawCode !== cleanCode) {
+      game = await ctx.db
+        .query("rankGames")
+        .withIndex("by_code", (q) => q.eq("code", rawCode))
+        .first();
+    }
 
     if (!game) throw new Error("Room not found. Please check the code.");
     if (game.participants.some((p) => p.guestId === args.guestId)) {
@@ -471,7 +493,7 @@ export const findOrCreatePublicMatch = mutation({
     }
 
     // No open room found, create waiting lobby
-    const code = generateRankRoomCode();
+    const code = await generateUniqueRankRoomCode(ctx);
     const gameId = await ctx.db.insert("rankGames", {
       code,
       mode: "duel_public",
@@ -634,10 +656,16 @@ export const submitRound = mutation({
 export const advanceRound = mutation({
   args: {
     gameId: v.id("rankGames"),
+    guestId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
     if (!game) throw new Error("Game not found");
+    if (!game.participants.some((p) => p.guestId === args.guestId)) {
+      throw new Error("Player not in this game");
+    }
     if (game.status !== "round_reveal") {
       return { status: game.status, alreadyAdvanced: true };
     }

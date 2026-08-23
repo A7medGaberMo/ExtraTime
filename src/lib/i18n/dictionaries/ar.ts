@@ -58,6 +58,7 @@ export const ar: TranslationDictionary = {
       createCustom: 'اعمل ماتش بروم خاص',
       joinWithCode: 'ادخل بالكود',
       inQueue: 'في الانتظار',
+      queueReady: 'جاهز للمطابقة',
     },
     rankCard: {
       tag: 'مود الترتيب',
@@ -74,6 +75,7 @@ export const ar: TranslationDictionary = {
       duels1v1Sub: 'مواجهات رأس برأس لايف',
       playSolo: 'لعب فردي',
       playDuel: 'تحدي 1 ضد 1 لايف',
+      createDuelLink: 'اعمل روم خاص',
     },
     databaseStat: {
       title: 'قاعدة بيانات اللعيبة',
@@ -221,7 +223,7 @@ export const ar: TranslationDictionary = {
     inQueueStats: '{count} في الطابور',
     createPrivateDuel: 'اعمل كود روم خاص',
     orJoinWithCode: 'أو ادخل بكود روم',
-    joinCodePlaceholder: 'RNK-XXXX',
+    joinCodePlaceholder: 'X7K9M2',
     joinDuelBtn: 'ادخل',
     roundStarting: 'الجولة {round} هتبدأ خلال {sec}ث',
     skipCountdown: 'تخطي العداد',

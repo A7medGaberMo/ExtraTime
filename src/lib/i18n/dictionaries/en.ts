@@ -56,6 +56,7 @@ export const en = {
       createCustom: 'Create Custom Match',
       joinWithCode: 'Join with Code',
       inQueue: 'in queue',
+      queueReady: 'Queue ready',
     },
     rankCard: {
       tag: 'New Arena',
@@ -72,6 +73,7 @@ export const en = {
       duels1v1Sub: 'Head-to-head live battles',
       playSolo: 'Play Solo Sprint',
       playDuel: '1v1 Duel Lobby',
+      createDuelLink: 'Create Duel',
     },
     databaseStat: {
       title: 'Live Player Database',
@@ -219,7 +221,7 @@ export const en = {
     inQueueStats: '{count} in Queue',
     createPrivateDuel: 'Create Private Room Code',
     orJoinWithCode: 'OR JOIN WITH CODE',
-    joinCodePlaceholder: 'RNK-XXXX',
+    joinCodePlaceholder: 'X7K9M2',
     joinDuelBtn: 'Join',
     roundStarting: 'Round {round} Starting in {sec}s',
     skipCountdown: 'Skip Countdown',

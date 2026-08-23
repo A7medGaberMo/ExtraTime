@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { Inter, IBM_Plex_Sans_Arabic } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
 import { ToastProvider } from '@/components/shared/toast';
@@ -7,11 +8,23 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { MainWrapper } from '@/components/layout/main-wrapper';
 
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const plexArabic = IBM_Plex_Sans_Arabic({
+  subsets: ['arabic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-plex-arabic',
+  display: 'swap',
+});
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   viewportFit: 'cover',
 };
 
@@ -124,7 +137,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="ltr" className="dark">
+    <html
+      lang="en"
+      dir="ltr"
+      className={`dark ${inter.variable} ${plexArabic.variable}`}
+    >
       <head>
         <script
           type="application/ld+json"

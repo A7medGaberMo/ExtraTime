@@ -1,54 +1,49 @@
 @import 'tailwindcss';
 
 @theme {
-  /* ═══════════════════════════════════════════════════════════════════════
-     FONT FAMILY MAPPINGS — Pure System / Built-In Fonts Only
-     San Francisco (Apple) · Segoe UI (Windows) · Roboto (Android)
-     Geeza Pro / Tahoma (Arabic) · SF Mono / Cascadia (Monospace)
-     ═══════════════════════════════════════════════════════════════════════ */
-
+  /* ═══════════════════════════════════════════════════════════════════
+     TYPOGRAPHY — one brand face per script, loaded via next/font.
+     Latin: Inter · Arabic: IBM Plex Sans Arabic. Weights: 400–700 only.
+     ═══════════════════════════════════════════════════════════════════ */
   --font-sans:
-    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-  --font-arabic:
-    "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", "SF Arabic",
-    system-ui, sans-serif;
-
-  --font-display:
-    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
 
-  --font-display-arabic:
-    "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
+  --font-arabic:
+    var(--font-plex-arabic), "Segoe UI", Tahoma, "Noto Sans Arabic",
+    system-ui, sans-serif;
+
+  /* Display shares the brand face — hierarchy comes from size/weight, not family. */
+  --font-display: var(--font-sans);
+  --font-display-arabic: var(--font-arabic);
 
   --font-mono:
-    ui-monospace, "SF Mono", "Cascadia Code", "Segoe UI Mono",
-    Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
 
-  --font-stat:
-    ui-monospace, "SF Mono", "Cascadia Code", "Segoe UI Mono",
-    Menlo, Consolas, monospace;
+  /* Numerics: proportional with tabular figures — aligned without terminal vibes. */
+  --font-stat: var(--font-inter), var(--font-plex-arabic), system-ui, sans-serif;
 
-  /* Premium Core Color Mappings */
-  --color-background: #03060b; /* Stadium Pitch Black */
-  --color-foreground: #f8f9fa; /* Off White */
-  --color-card: #0c1017; /* Dark charcoal surface */
-  --color-card-elevated: #131923; /* Elevated surface */
-  --color-border: #1c2331; /* Graphite border */
+  /* Type ramp floor: 10px is the absolute minimum (legal/micro labels). */
+  --text-micro: 0.625rem;
+  --text-micro--line-height: 1rem;
+
+  /* ═══════════════════ COLOR SYSTEM ═══════════════════ */
+  --color-background: #03060b; /* Stadium pitch black */
+  --color-foreground: #f8f9fa;
+  --color-card: #0c1017;
+  --color-card-elevated: #131923;
+  --color-border: #1c2331;
   --color-border-subtle: #141b27;
 
-  --color-lime: #95e810; /* Electric Lime */
-  --color-vivid: #72d410; /* Vivid Pitch Green */
-  --color-bold-green: #52b916; /* Deep Green */
-  --color-steel: #8893a4; /* Steel Slate */
-  --color-muted: #596579; /* Muted Slate */
-  --color-gold: #eab308; /* Premium Gold */
-  --color-sky: #0ea5e9; /* Tactical Intel Sky */
-  --color-rose: #f43f5e; /* Opponent / Error Rose */
+  --color-lime: #95e810; /* The one and only brand lime */
+  --color-vivid: #72d410;
+  --color-bold-green: #52b916;
+  --color-steel: #8893a4;
+  --color-muted: #596579;
+  --color-gold: #eab308;
+  --color-sky: #0ea5e9;
+  --color-rose: #f43f5e;
 
-  /* Distinct Tier Colors */
   --color-tier-icon: #d4af37;
   --color-tier-hero: #10b981;
   --color-tier-ultimate: #0ea5e9;
@@ -58,7 +53,6 @@
   --color-tier-silver: #cbd5e1;
   --color-tier-bronze: #c97a3a;
 
-  /* Standard Tailwind color overrides */
   --color-slate-950: #03060b;
   --color-slate-900: #0c1017;
   --color-slate-850: #101620;
@@ -69,6 +63,19 @@
   --color-slate-300: #cbd5e1;
   --color-slate-200: #e2e8f0;
   --color-slate-100: #f8f9fa;
+
+  /* ═══════════════════ ELEVATION ═══════════════════ */
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-float: 0 20px 50px rgba(0, 0, 0, 0.65);
+  --shadow-lift: 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-glow-lime: 0 0 24px rgba(149, 232, 16, 0.16);
+
+  /* Radius scale — five answers, not eleven. */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
 }
 
 :root {
@@ -85,153 +92,99 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   RTL / Arabic Typography — Geeza Pro + Segoe UI + Tahoma
-   ═══════════════════════════════════════════════════════════════════════ */
-html[dir='rtl'],
-.rtl {
-  font-family: "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", "SF Arabic", system-ui, sans-serif;
-  letter-spacing: normal !important;
+/* ═══════════════════ FOCUS — keyboard users get a visible ring ═══════════════════ */
+:focus-visible {
+  outline: 2px solid var(--color-lime);
+  outline-offset: 2px;
+}
+
+/* Numerics: tabular alignment without monospace. Timers, scores, budgets. */
+.font-stats {
+  font-family: var(--font-stat);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: -0.01em;
+}
+
+/* ═══════════════════ ARABIC / RTL TYPOGRAPHY ═══════════════════
+   Arabic script is cursive: letter-spacing breaks joining, uppercase is
+   meaningless. Neutralize at the cascade level — no per-component hacks. */
+html[dir='rtl'] body {
+  font-family: var(--font-arabic);
+}
+
+html[dir='rtl'] * {
+  letter-spacing: normal;
+}
+
+html[dir='rtl'] .uppercase,
+html[dir='rtl'] .font-stats {
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 html[dir='rtl'] h1,
 html[dir='rtl'] h2,
 html[dir='rtl'] h3,
-html[dir='rtl'] h4,
-html[dir='rtl'] h5,
-html[dir='rtl'] h6,
-html[dir='rtl'] .font-display {
-  font-family: "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
-  letter-spacing: normal !important;
-  line-height: 1.4;
-  font-weight: 700;
+html[dir='rtl'] h4 {
+  line-height: 1.35;
 }
 
-html[dir='rtl'] p,
-html[dir='rtl'] span,
-html[dir='rtl'] button,
-html[dir='rtl'] input {
-  letter-spacing: normal !important;
-}
-
-html[dir='rtl'] .font-stats {
-  font-family: var(--font-stat);
-  letter-spacing: 0.04em !important;
-  font-variant-numeric: tabular-nums;
-}
-
-/* ═══════════════════════════════════════════════════════════════════════
-   LTR Headings — System UI (San Francisco / Segoe UI / Roboto)
-   ═══════════════════════════════════════════════════════════════════════ */
-h1, h2, h3, h4, h5, h6 {
+/* ═══════════════════ DISPLAY HEADINGS ═══════════════════ */
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
-  font-weight: 700;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   Sporty Numbers, Timers, Prices & Stats — Monospace Tabular Nums
-   ═══════════════════════════════════════════════════════════════════════ */
-.font-stats {
-  font-family: var(--font-stat);
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  font-variant-numeric: tabular-nums;
-}
-
-/* ═══════════════════════════════════════════════════════════════════════
-   Scrollbars
-   ═══════════════════════════════════════════════════════════════════════ */
+/* ═══════════════════ SCROLLBARS ═══════════════════ */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #03060b;
+  background: var(--color-background);
 }
 ::-webkit-scrollbar-thumb {
-  background: #1c2331;
+  background: var(--color-border);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #95e810;
+  background: var(--color-muted);
 }
 
-/* ========================================================================= */
-/* BASE ANIMATIONS                                                           */
-/* ========================================================================= */
-
+/* ═══════════════════ MOTION PRIMITIVES ═══════════════════ */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
 @keyframes slideUp {
-  from {
-    transform: translateY(16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
-
 @keyframes slideDown {
-  from {
-    transform: translateY(-16px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(-16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
-
 @keyframes scaleIn {
-  from {
-    transform: scale(0.96);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(0.96); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
-
 @keyframes pulseLimeGlow {
-  0% {
-    box-shadow: 0 0 0 0 rgba(149, 232, 16, 0.4);
-  }
-  70% {
-    box-shadow: 0 0 0 10px rgba(149, 232, 16, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(149, 232, 16, 0);
-  }
+  0% { box-shadow: 0 0 0 0 rgba(149, 232, 16, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(149, 232, 16, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(149, 232, 16, 0); }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.25s ease-out forwards;
-}
-.animate-slide-up {
-  animation: slideUp 0.35s ease-out forwards;
-}
-.animate-slide-down {
-  animation: slideDown 0.35s ease-out forwards;
-}
-.animate-scale-in {
-  animation: scaleIn 0.25s ease-out forwards;
-}
-.animate-pulse-glow {
-  animation: pulseLimeGlow 2s infinite;
-}
+.animate-fade-in { animation: fadeIn 0.25s ease-out forwards; }
+.animate-slide-up { animation: slideUp 0.35s ease-out forwards; }
+.animate-slide-down { animation: slideDown 0.35s ease-out forwards; }
+.animate-scale-in { animation: scaleIn 0.25s ease-out forwards; }
+.animate-pulse-glow { animation: pulseLimeGlow 2s infinite; }
 
-/* Button & UI Haptics */
+/* Press haptic — one shared personality for every tappable surface. */
 .btn-haptic {
   transition:
     transform 0.12s cubic-bezier(0.4, 0, 0.2, 1),
@@ -242,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.97);
 }
 
+/* ═══════════════════ SURFACES ═══════════════════ */
 .glass-card {
   background: rgba(12, 16, 23, 0.85);
   backdrop-filter: blur(16px);
@@ -271,7 +225,6 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-/* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   *,
   ::before,
@@ -282,4 +235,3 @@ h1, h2, h3, h4, h5, h6 {
     scroll-behavior: auto !important;
   }
 }
-

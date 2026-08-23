@@ -108,13 +108,22 @@ export default function JoinRoomPage() {
       }
       localStorage.setItem('extratime_guestName', name);
       const validGuestId = res.guestId as Id<'guestUsers'>;
+      const validSessionToken = res.sessionToken ?? sessionToken;
 
 
       if (isSnipe && snipeRoom) {
-        const result = await joinSnipeRoom({ roomId: snipeRoom._id, guestId: validGuestId });
+        const result = await joinSnipeRoom({
+          roomId: snipeRoom._id,
+          guestId: validGuestId,
+          sessionToken: validSessionToken,
+        });
         router.push(`/auction/${result.roomId}`);
       } else if (isRank && rankRoom) {
-        const result = await joinRankDuel({ guestId: validGuestId, code: normalizedCode });
+        const result = await joinRankDuel({
+          guestId: validGuestId,
+          sessionToken: validSessionToken,
+          code: normalizedCode,
+        });
         router.push(`/rank/${result.gameId}`);
       }
     } catch (error: unknown) {

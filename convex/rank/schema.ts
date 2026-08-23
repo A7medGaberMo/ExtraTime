@@ -82,7 +82,7 @@ export const rankParticipantValidator = v.object({
 
 // Game Session Table
 export const rankGamesTable = defineTable({
-  code: v.string(), // "RNK-8921"
+  code: v.string(), // 6-character join code, e.g. "A7K9M2"
   mode: v.union(
     v.literal("solo"),
     v.literal("duel_private"),
