@@ -49,8 +49,7 @@ export default function HomePage() {
   const router = useRouter();
   const { toast } = useToast();
   const { t, lang } = useI18n();
-  const { ensureGuestId, sessionToken } = useGuestSession();
-  const authToken = sessionToken ?? undefined;
+  const { ensureGuestId } = useGuestSession();
 
   // Mutations
   const findSnipeMatch = useMutation(api.rooms.mutations.findOrCreatePublicMatch);
@@ -102,25 +101,43 @@ export default function HomePage() {
 
     try {
       const guestId = await ensureGuestId(nickname.trim() || randomName());
+      const actionSessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
 
       switch (action.type) {
         case 'snipe': {
-          const result = await findSnipeMatch({ userId: guestId, sessionToken, matchSize, poolMode });
+          const result = await findSnipeMatch({
+            userId: guestId,
+            sessionToken: actionSessionToken,
+            matchSize,
+            poolMode,
+          });
           router.push(`/auction/${result.roomId}`);
           break;
         }
         case 'rank_solo': {
-          const result = await createSoloRank({ guestId, sessionToken, roundCount: rankRounds });
+          const result = await createSoloRank({
+            guestId,
+            sessionToken: actionSessionToken,
+            roundCount: rankRounds,
+          });
           router.push(`/rank/${result.gameId}`);
           break;
         }
         case 'rank_public': {
-          const result = await findRankMatch({ guestId, sessionToken, roundCount: rankRounds });
+          const result = await findRankMatch({
+            guestId,
+            sessionToken: actionSessionToken,
+            roundCount: rankRounds,
+          });
           router.push(`/rank/${result.gameId}`);
           break;
         }
         case 'rank_create_duel': {
-          const result = await createRankDuel({ hostId: guestId, sessionToken, roundCount: rankRounds });
+          const result = await createRankDuel({
+            hostId: guestId,
+            sessionToken: actionSessionToken,
+            roundCount: rankRounds,
+          });
           router.push(`/rank/${result.gameId}`);
           break;
         }
