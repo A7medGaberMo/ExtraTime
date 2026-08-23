@@ -5,7 +5,13 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["haaland", "mancity", "dortmund", "goals", "seasons"],
+    "tags": [
+      "haaland",
+      "mancity",
+      "dortmund",
+      "goals",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 Erling Haaland single-season campaigns by total official goals scored (all comps)",
       "ar": "رتّب مواسم إيرلينغ هالاند الخمسة حسب إجمالي الأهداف المسجلة في جميع المسابقات"
@@ -14,52 +20,119 @@
       "en": "Club goals in all official competitions per season",
       "ar": "إجمالي الأهداف الرسمية مع الأندية في كل موسم"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ehl_2223",
-        "name": { "en": "2022–23 (Manchester City)", "ar": "2022–23 (مانشستر سيتي)" },
-        "subText": { "en": "Treble Season (53 games - Premier League Record 36 goals)", "ar": "موسم الثلاثية (53 مباراة - الرقم القياسي للبريميرليج 36 هدفًا)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "EH9" },
+        "name": {
+          "en": "2022–23 (Manchester City)",
+          "ar": "2022–23 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Treble Season",
+          "ar": "موسم الثلاثية"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "EH9"
+        },
         "value": 52,
-        "valueLabel": { "en": "52 Goals", "ar": "52 هدفًا" },
+        "valueLabel": {
+          "en": "52 Goals",
+          "ar": "52 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ehl_1920",
-        "name": { "en": "2019–20 (Salzburg & Dortmund)", "ar": "2019–20 (سالزبورغ وبوروسيا دورتموند)" },
-        "subText": { "en": "Breakthrough season (40 games across 2 clubs)", "ar": "موسم الانفجار التهديفي (40 مباراة مع ناديين)" },
-        "media": { "type": "player", "fallbackText": "EH" },
+        "name": {
+          "en": "2019–20 (Salzburg & Dortmund)",
+          "ar": "2019–20 (سالزبورغ وبوروسيا دورتموند)"
+        },
+        "subText": {
+          "en": "Breakthrough season (40 games across 2 clubs)",
+          "ar": "موسم الانفجار التهديفي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EH"
+        },
         "value": 44,
-        "valueLabel": { "en": "44 Goals", "ar": "44 هدفًا" },
+        "valueLabel": {
+          "en": "44 Goals",
+          "ar": "44 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ehl_2021",
-        "name": { "en": "2020–21 (Borussia Dortmund)", "ar": "2020–21 (بوروسيا دورتموند)" },
-        "subText": { "en": "DFB-Pokal Winner (41 games)", "ar": "بطل كأس ألمانيا (41 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/dortmund.png", "fallbackText": "EH9" },
+        "name": {
+          "en": "2020–21 (Borussia Dortmund)",
+          "ar": "2020–21 (بوروسيا دورتموند)"
+        },
+        "subText": {
+          "en": "DFB-Pokal Winner",
+          "ar": "بطل كأس ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "fallbackText": "EH9"
+        },
         "value": 41,
-        "valueLabel": { "en": "41 Goals", "ar": "41 هدفًا" },
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ehl_2324",
-        "name": { "en": "2023–24 (Manchester City)", "ar": "2023–24 (مانشستر سيتي)" },
-        "subText": { "en": "Premier League Champions (45 games)", "ar": "بطل الدوري الإنجليزي (45 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "EH9" },
+        "name": {
+          "en": "2023–24 (Manchester City)",
+          "ar": "2023–24 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Premier League Champions (45 games)",
+          "ar": "بطل الدوري الإنجليزي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "EH9"
+        },
         "value": 38,
-        "valueLabel": { "en": "38 Goals", "ar": "38 هدفًا" },
+        "valueLabel": {
+          "en": "38 Goals",
+          "ar": "38 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ehl_2122",
-        "name": { "en": "2021–22 (Borussia Dortmund)", "ar": "2021–22 (بوروسيا دورتموند)" },
-        "subText": { "en": "Final BVB Campaign (30 games)", "ar": "الموسم الأخير مع دورتموند (30 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/dortmund.png", "fallbackText": "EH9" },
+        "name": {
+          "en": "2021–22 (Borussia Dortmund)",
+          "ar": "2021–22 (بوروسيا دورتموند)"
+        },
+        "subText": {
+          "en": "Final BVB Campaign (30 games)",
+          "ar": "الموسم الأخير مع دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "fallbackText": "EH9"
+        },
         "value": 29,
-        "valueLabel": { "en": "29 Goals", "ar": "29 هدفًا" },
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +143,12 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["vinicius", "real-madrid", "goals", "seasons"],
+    "tags": [
+      "vinicius",
+      "real-madrid",
+      "goals",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 Vinícius Júnior seasons at Real Madrid by all-competition goals scored",
       "ar": "رتّب مواسم فينيسيوس جونيور الخمسة مع ريال مدريد حسب عدد الأهداف في جميع المسابقات"
@@ -79,52 +157,120 @@
       "en": "Official goals for Real Madrid per campaign",
       "ar": "الأهداف الرسمية بقميص ريال مدريد في كل موسم"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "vng_2324",
-        "name": { "en": "2023–24 Season", "ar": "موسم 2023–24" },
-        "subText": { "en": "La Liga & UCL Double (Wembley Final Goal - 39 games)", "ar": "ثنائية الليغا ودوري الأبطال (هدف نهائي ويمبلي - 39 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "VJR" },
+        "name": {
+          "en": "2023–24 Season",
+          "ar": "موسم 2023–24"
+        },
+        "subText": {
+          "en": "La Liga & UCL Double (Wembley Final Goal)",
+          "ar": "ثنائية الليغا ودوري الأبطال (هدف نهائي ويمبلي - 39 مباراة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "VJR"
+        },
         "value": 24,
-        "valueLabel": { "en": "24 Goals", "ar": "24 هدفًا" },
+        "valueLabel": {
+          "en": "24 Goals",
+          "ar": "24 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "vng_2223",
-        "name": { "en": "2022–23 Season", "ar": "موسم 2022–23" },
-        "subText": { "en": "Copa del Rey Champions (55 games)", "ar": "بطل كأس ملك إسبانيا (55 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "VJR" },
+        "name": {
+          "en": "2022–23 Season",
+          "ar": "موسم 2022–23"
+        },
+        "subText": {
+          "en": "Copa del Rey Champions",
+          "ar": "بطل كأس ملك إسبانيا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "VJR"
+        },
         "value": 23,
-        "valueLabel": { "en": "23 Goals", "ar": "23 هدفًا" },
+        "valueLabel": {
+          "en": "23 Goals",
+          "ar": "23 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "vng_2122",
-        "name": { "en": "2021–22 Season", "ar": "موسم 2021–22" },
-        "subText": { "en": "Breakthrough season (Paris Final Winner - 52 games)", "ar": "موسم الانفجار (هدف الفوز بنهائي باريس - 52 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "VJR" },
+        "name": {
+          "en": "2021–22 Season",
+          "ar": "موسم 2021–22"
+        },
+        "subText": {
+          "en": "Breakthrough season (Paris Final Winner)",
+          "ar": "موسم الانفجار (هدف الفوز بنهائي باريس - 52 مباراة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "VJR"
+        },
         "value": 22,
-        "valueLabel": { "en": "22 Goals", "ar": "22 هدفًا" },
+        "valueLabel": {
+          "en": "22 Goals",
+          "ar": "22 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "vng_2021",
-        "name": { "en": "2020–21 Season", "ar": "موسم 2020–21" },
-        "subText": { "en": "Zidane Era (49 games)", "ar": "حقبة زيدان (49 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "VJR" },
+        "name": {
+          "en": "2020–21 Season",
+          "ar": "موسم 2020–21"
+        },
+        "subText": {
+          "en": "Zidane Era (49 games)",
+          "ar": "حقبة زيدان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "VJR"
+        },
         "value": 6,
-        "valueLabel": { "en": "6 Goals", "ar": "6 أهداف" },
+        "valueLabel": {
+          "en": "6 Goals",
+          "ar": "6 أهداف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "vng_1920",
-        "name": { "en": "2019–20 Season", "ar": "موسم 2019–20" },
-        "subText": { "en": "La Liga Champions (38 games)", "ar": "بطل الدوري الإسباني (38 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "VJR" },
+        "name": {
+          "en": "2019–20 Season",
+          "ar": "موسم 2019–20"
+        },
+        "subText": {
+          "en": "La Liga Champions (38 games)",
+          "ar": "بطل الدوري الإسباني"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "VJR"
+        },
         "value": 5,
-        "valueLabel": { "en": "5 Goals", "ar": "5 أهداف" },
+        "valueLabel": {
+          "en": "5 Goals",
+          "ar": "5 أهداف"
+        },
         "correctRank": 5
       }
     ]
@@ -135,7 +281,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["bellingham", "real-madrid", "dortmund", "goals", "seasons"],
+    "tags": [
+      "bellingham",
+      "real-madrid",
+      "dortmund",
+      "goals",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 Jude Bellingham seasons by domestic league goals scored",
       "ar": "رتّب مواسم جود بيلينغهام الخمسة حسب عدد الأهداف المسجلة في الدوري المحلي"
@@ -144,52 +296,119 @@
       "en": "Domestic league goals scored per season (La Liga, Bundesliga, Championship)",
       "ar": "الأهداف المسجلة في مسابقة الدوري المحلي بكل موسم"
     },
-    "metricLabel": { "en": "League Goals", "ar": "أهداف الدوري" },
+    "metricLabel": {
+      "en": "League Goals",
+      "ar": "أهداف الدوري"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "jbl_2324",
-        "name": { "en": "2023–24 (Real Madrid - La Liga)", "ar": "2023–24 (ريال مدريد - الدوري الإسباني)" },
-        "subText": { "en": "Debut Season (28 league games - Pichichi Contender)", "ar": "الموسم الأول (28 مباراة في الليغا - منافس على البيتشيتشي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "JB5" },
+        "name": {
+          "en": "2023–24 (Real Madrid - La Liga)",
+          "ar": "2023–24 (ريال مدريد - الدوري الإسباني)"
+        },
+        "subText": {
+          "en": "Debut Season (28 league games - Pichichi Contender)",
+          "ar": "الموسم الأول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "JB5"
+        },
         "value": 19,
-        "valueLabel": { "en": "19 League Goals", "ar": "19 هدفًا في الليغا" },
+        "valueLabel": {
+          "en": "19 League Goals",
+          "ar": "19 هدفًا في الليغا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "jbl_2223",
-        "name": { "en": "2022–23 (Dortmund - Bundesliga)", "ar": "2022–23 (بوروسيا دورتموند - الدوري الألماني)" },
-        "subText": { "en": "Bundesliga Player of the Season (31 league games)", "ar": "أفضل لاعب في البوندسليغا (31 مباراة في الدوري)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/dortmund.png", "fallbackText": "JB22" },
+        "name": {
+          "en": "2022–23 (Dortmund - Bundesliga)",
+          "ar": "2022–23 (بوروسيا دورتموند - الدوري الألماني)"
+        },
+        "subText": {
+          "en": "Bundesliga Player of the Season (31 league games)",
+          "ar": "أفضل لاعب في البوندسليغا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "fallbackText": "JB22"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 League Goals", "ar": "8 أهداف في البوندسليغا" },
+        "valueLabel": {
+          "en": "8 League Goals",
+          "ar": "8 أهداف في البوندسليغا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "jbl_1920",
-        "name": { "en": "2019–20 (Birmingham - Championship)", "ar": "2019–20 (برمنغهام سيتي - التشامبيونشيب)" },
-        "subText": { "en": "16-year-old prodigy (41 league games)", "ar": "في سن الـ16 عامًا (41 مباراة في دوري الدرجة الأولى)" },
-        "media": { "type": "player", "fallbackText": "JB" },
+        "name": {
+          "en": "2019–20 (Birmingham - Championship)",
+          "ar": "2019–20 (برمنغهام سيتي - التشامبيونشيب)"
+        },
+        "subText": {
+          "en": "16-year-old prodigy (41 league games)",
+          "ar": "في سن الـ16 عامًا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JB"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 League Goals", "ar": "4 أهداف في التشامبيونشيب" },
+        "valueLabel": {
+          "en": "4 League Goals",
+          "ar": "4 أهداف في التشامبيونشيب"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "jbl_2122",
-        "name": { "en": "2021–22 (Dortmund - Bundesliga)", "ar": "2021–22 (بوروسيا دورتموند - الدوري الألماني)" },
-        "subText": { "en": "32 league games", "ar": "32 مباراة في الدوري الألماني" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/dortmund.png", "fallbackText": "JB22" },
+        "name": {
+          "en": "2021–22 (Dortmund - Bundesliga)",
+          "ar": "2021–22 (بوروسيا دورتموند - الدوري الألماني)"
+        },
+        "subText": {
+          "en": "32 league games",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "fallbackText": "JB22"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 League Goals", "ar": "3 أهداف في البوندسليغا" },
+        "valueLabel": {
+          "en": "3 League Goals",
+          "ar": "3 أهداف في البوندسليغا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "jbl_2021",
-        "name": { "en": "2020–21 (Dortmund - Bundesliga)", "ar": "2020–21 (بوروسيا دورتموند - الدوري الألماني)" },
-        "subText": { "en": "Bundesliga debut campaign (29 league games)", "ar": "الموسم الأول في ألمانيا (29 مباراة بالدوري)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/dortmund.png", "fallbackText": "JB22" },
+        "name": {
+          "en": "2020–21 (Dortmund - Bundesliga)",
+          "ar": "2020–21 (بوروسيا دورتموند - الدوري الألماني)"
+        },
+        "subText": {
+          "en": "Bundesliga debut campaign (29 league games)",
+          "ar": "الموسم الأول في ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "fallbackText": "JB22"
+        },
         "value": 1,
-        "valueLabel": { "en": "1 League Goal", "ar": "هدف واحد في البوندسليغا" },
+        "valueLabel": {
+          "en": "1 League Goal",
+          "ar": "هدف واحد في البوندسليغا"
+        },
         "correctRank": 5
       }
     ]
@@ -200,7 +419,13 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["saka", "arsenal", "premier-league", "goals", "seasons"],
+    "tags": [
+      "saka",
+      "arsenal",
+      "premier-league",
+      "goals",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 Bukayo Saka Arsenal seasons by all-competition goals scored",
       "ar": "رتّب مواسم بوكايو ساكا الخمسة مع أرسنال حسب عدد الأهداف في جميع المسابقات"
@@ -209,52 +434,120 @@
       "en": "Official goals for Arsenal FC in all competitions per season",
       "ar": "الأهداف الرسمية بقميص أرسنال في كل موسم"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "skg_2324",
-        "name": { "en": "2023–24 Season", "ar": "موسم 2023–24" },
-        "subText": { "en": "Career-best scoring tally (47 games)", "ar": "الموسم التهديفي الأفضل في مسيرته (47 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "SAK7" },
+        "name": {
+          "en": "2023–24 Season",
+          "ar": "موسم 2023–24"
+        },
+        "subText": {
+          "en": "Career-best scoring tally",
+          "ar": "الموسم التهديفي الأفضل في مسيرته"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "fallbackText": "SAK7"
+        },
         "value": 20,
-        "valueLabel": { "en": "20 Goals", "ar": "20 هدفًا" },
+        "valueLabel": {
+          "en": "20 Goals",
+          "ar": "20 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "skg_2223",
-        "name": { "en": "2022–23 Season", "ar": "موسم 2022–23" },
-        "subText": { "en": "Title Challenge Campaign (48 games)", "ar": "موسم المنافسة على اللقب (48 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "SAK7" },
+        "name": {
+          "en": "2022–23 Season",
+          "ar": "موسم 2022–23"
+        },
+        "subText": {
+          "en": "Title Challenge Campaign",
+          "ar": "موسم المنافسة على اللقب"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "fallbackText": "SAK7"
+        },
         "value": 15,
-        "valueLabel": { "en": "15 Goals", "ar": "15 هدفًا" },
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "skg_2122",
-        "name": { "en": "2021–22 Season", "ar": "موسم 2021–22" },
-        "subText": { "en": "Arsenal Top Scorer (43 games)", "ar": "هداف أرسنال في الموسم (43 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "SAK7" },
+        "name": {
+          "en": "2021–22 Season",
+          "ar": "موسم 2021–22"
+        },
+        "subText": {
+          "en": "Arsenal Top Scorer (43 games)",
+          "ar": "هداف أرسنال في الموسم"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "fallbackText": "SAK7"
+        },
         "value": 12,
-        "valueLabel": { "en": "12 Goals", "ar": "12 هدفًا" },
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "skg_2021",
-        "name": { "en": "2020–21 Season", "ar": "موسم 2020–21" },
-        "subText": { "en": "Arsenal Player of the Season (46 games)", "ar": "لاعب الموسم في أرسنال (46 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "SAK7" },
+        "name": {
+          "en": "2020–21 Season",
+          "ar": "موسم 2020–21"
+        },
+        "subText": {
+          "en": "Arsenal Player of the Season (46 games)",
+          "ar": "لاعب الموسم في أرسنال"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "fallbackText": "SAK7"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Goals", "ar": "7 أهداف" },
+        "valueLabel": {
+          "en": "7 Goals",
+          "ar": "7 أهداف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "skg_1920",
-        "name": { "en": "2019–20 Season", "ar": "موسم 2019–20" },
-        "subText": { "en": "Breakthrough season & FA Cup Winner (38 games)", "ar": "الموسم الأول وبطل كأس الاتحاد (38 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "SAK" },
+        "name": {
+          "en": "2019–20 Season",
+          "ar": "موسم 2019–20"
+        },
+        "subText": {
+          "en": "Breakthrough season & FA Cup Winner (38 games)",
+          "ar": "الموسم الأول وبطل كأس الاتحاد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "fallbackText": "SAK"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Goals", "ar": "4 أهداف" },
+        "valueLabel": {
+          "en": "4 Goals",
+          "ar": "4 أهداف"
+        },
         "correctRank": 5
       }
     ]
@@ -265,7 +558,13 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["foden", "mancity", "premier-league", "goals", "seasons"],
+    "tags": [
+      "foden",
+      "mancity",
+      "premier-league",
+      "goals",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 Phil Foden Manchester City seasons by all-competition goals scored",
       "ar": "رتّب مواسم فيل فودين الخمسة مع مانشستر سيتي حسب عدد الأهداف في جميع المسابقات"
@@ -274,52 +573,120 @@
       "en": "Official goals for Manchester City in all competitions per season",
       "ar": "الأهداف الرسمية بقميص مانشستر سيتي في كل موسم"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "fdg_2324",
-        "name": { "en": "2023–24 Season", "ar": "موسم 2023–24" },
-        "subText": { "en": "PL Player of the Season (53 games - Career Best 27 goals)", "ar": "لاعب الموسم في البريميرليج (53 مباراة - الأفضل بـ27 هدفًا)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "FOD" },
+        "name": {
+          "en": "2023–24 Season",
+          "ar": "موسم 2023–24"
+        },
+        "subText": {
+          "en": "PL Player of the Season",
+          "ar": "لاعب الموسم في البريميرليج"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "FOD"
+        },
         "value": 27,
-        "valueLabel": { "en": "27 Goals", "ar": "27 هدفًا" },
+        "valueLabel": {
+          "en": "27 Goals",
+          "ar": "27 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "fdg_2021",
-        "name": { "en": "2020–21 Season", "ar": "موسم 2020–21" },
-        "subText": { "en": "PFA Young Player of the Year (50 games)", "ar": "أفضل لاعب شاب في إنجلترا (50 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "FOD" },
+        "name": {
+          "en": "2020–21 Season",
+          "ar": "موسم 2020–21"
+        },
+        "subText": {
+          "en": "PFA Young Player of the Year (50 games)",
+          "ar": "أفضل لاعب شاب في إنجلترا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "FOD"
+        },
         "value": 16,
-        "valueLabel": { "en": "16 Goals", "ar": "16 هدفًا" },
+        "valueLabel": {
+          "en": "16 Goals",
+          "ar": "16 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "fdg_2223",
-        "name": { "en": "2022–23 Season", "ar": "موسم 2022–23" },
-        "subText": { "en": "Treble Winning Campaign (48 games)", "ar": "موسم الثلاثية التاريخية (48 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "FOD" },
+        "name": {
+          "en": "2022–23 Season",
+          "ar": "موسم 2022–23"
+        },
+        "subText": {
+          "en": "Treble Winning Campaign",
+          "ar": "موسم الثلاثية التاريخية"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "FOD"
+        },
         "value": 15,
-        "valueLabel": { "en": "15 Goals", "ar": "15 هدفًا" },
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "fdg_2122",
-        "name": { "en": "2021–22 Season", "ar": "موسم 2021–22" },
-        "subText": { "en": "Premier League Champions (45 games)", "ar": "بطل الدوري الإنجليزي (45 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "FOD" },
+        "name": {
+          "en": "2021–22 Season",
+          "ar": "موسم 2021–22"
+        },
+        "subText": {
+          "en": "Premier League Champions (45 games)",
+          "ar": "بطل الدوري الإنجليزي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "FOD"
+        },
         "value": 14,
-        "valueLabel": { "en": "14 Goals", "ar": "14 هدفًا" },
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "fdg_1920",
-        "name": { "en": "2019–20 Season", "ar": "موسم 2019–20" },
-        "subText": { "en": "Breakthrough season (38 games)", "ar": "موسم التثبيت في التشكيل الأساسي (38 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "FOD" },
+        "name": {
+          "en": "2019–20 Season",
+          "ar": "موسم 2019–20"
+        },
+        "subText": {
+          "en": "Breakthrough season (38 games)",
+          "ar": "موسم التثبيت في التشكيل الأساسي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "FOD"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Goals", "ar": "8 أهداف" },
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
         "correctRank": 5
       }
     ]
@@ -330,7 +697,12 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["rodri", "mancity", "appearances", "seasons"],
+    "tags": [
+      "rodri",
+      "mancity",
+      "appearances",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 Rodri seasons at Manchester City by all-competition appearances played",
       "ar": "رتّب مواسم رودري الخمسة مع مانشستر سيتي حسب عدد المباريات الملعوبة في جميع المسابقات"
@@ -339,52 +711,120 @@
       "en": "Total official appearances for Manchester City per campaign",
       "ar": "إجمالي المباريات الرسمية بقميص مانشستر سيتي في كل موسم"
     },
-    "metricLabel": { "en": "Matches", "ar": "مباريات" },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "rda_2223",
-        "name": { "en": "2022–23 Season", "ar": "موسم 2022–23" },
-        "subText": { "en": "Treble Engine (Istanbul Final Match-Winner)", "ar": "محرك الثلاثية (صاحب هدف الفوز بنهائي إسطنبول)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "ROD" },
+        "name": {
+          "en": "2022–23 Season",
+          "ar": "موسم 2022–23"
+        },
+        "subText": {
+          "en": "Treble Engine (Istanbul Final Match-Winner)",
+          "ar": "محرك الثلاثية (صاحب هدف الفوز بنهائي إسطنبول)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "ROD"
+        },
         "value": 56,
-        "valueLabel": { "en": "56 Matches", "ar": "56 مباراة" },
+        "valueLabel": {
+          "en": "56 Matches",
+          "ar": "56 مباراة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "rda_2021",
-        "name": { "en": "2020–21 Season", "ar": "موسم 2020–21" },
-        "subText": { "en": "Premier League & League Cup Double", "ar": "ثنائية الدوري وكأس الرابطة" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "ROD" },
+        "name": {
+          "en": "2020–21 Season",
+          "ar": "موسم 2020–21"
+        },
+        "subText": {
+          "en": "Premier League & League Cup Double",
+          "ar": "ثنائية الدوري وكأس الرابطة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "ROD"
+        },
         "value": 53,
-        "valueLabel": { "en": "53 Matches", "ar": "53 مباراة" },
+        "valueLabel": {
+          "en": "53 Matches",
+          "ar": "53 مباراة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "rda_1920",
-        "name": { "en": "2019–20 Season", "ar": "موسم 2019–20" },
-        "subText": { "en": "Debut Season from Atlético Madrid", "ar": "الموسم الأول قادمًا من أتلتيكو مدريد" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "ROD" },
+        "name": {
+          "en": "2019–20 Season",
+          "ar": "موسم 2019–20"
+        },
+        "subText": {
+          "en": "Debut Season from Atlético Madrid",
+          "ar": "الموسم الأول قادمًا من أتلتيكو مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "ROD"
+        },
         "value": 52,
-        "valueLabel": { "en": "52 Matches", "ar": "52 مباراة" },
+        "valueLabel": {
+          "en": "52 Matches",
+          "ar": "52 مباراة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "rda_2324",
-        "name": { "en": "2023–24 Season", "ar": "موسم 2023–24" },
-        "subText": { "en": "Ballon d'Or Winning Year (74-game unbeaten streak)", "ar": "عام التتويج بالكرة الذهبية (سلسلة 74 مباراة دون هزيمة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "ROD" },
+        "name": {
+          "en": "2023–24 Season",
+          "ar": "موسم 2023–24"
+        },
+        "subText": {
+          "en": "Ballon d'Or Winning Year (74-game unbeaten streak)",
+          "ar": "عام التتويج بالكرة الذهبية (سلسلة 74 مباراة دون هزيمة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "ROD"
+        },
         "value": 50,
-        "valueLabel": { "en": "50 Matches", "ar": "50 مباراة" },
+        "valueLabel": {
+          "en": "50 Matches",
+          "ar": "50 مباراة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "rda_2122",
-        "name": { "en": "2021–22 Season", "ar": "موسم 2021–22" },
-        "subText": { "en": "Premier League Champions (93 pts)", "ar": "بطل الدوري الإنجليزي (93 نقطة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "ROD" },
+        "name": {
+          "en": "2021–22 Season",
+          "ar": "موسم 2021–22"
+        },
+        "subText": {
+          "en": "Premier League Champions",
+          "ar": "بطل الدوري الإنجليزي (93 نقطة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "ROD"
+        },
         "value": 46,
-        "valueLabel": { "en": "46 Matches", "ar": "46 مباراة" },
+        "valueLabel": {
+          "en": "46 Matches",
+          "ar": "46 مباراة"
+        },
         "correctRank": 5
       }
     ]
@@ -395,7 +835,14 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["palmer", "chelsea", "mancity", "premier-league", "goals", "seasons"],
+    "tags": [
+      "palmer",
+      "chelsea",
+      "mancity",
+      "premier-league",
+      "goals",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 Cole Palmer seasons by all-competition goals scored",
       "ar": "رتّب مواسم كول بالمر الخمسة حسب عدد الأهداف المسجلة في جميع المسابقات"
@@ -404,52 +851,120 @@
       "en": "Official senior club goals per campaign (Chelsea & Manchester City)",
       "ar": "الأهداف الرسمية مع الفريق الأول في كل موسم (تشيلسي ومان سيتي)"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "plm_2324",
-        "name": { "en": "2023–24 (Chelsea)", "ar": "2023–24 (تشيلسي)" },
-        "subText": { "en": "PFA Young Player of the Year (48 games - 22 PL goals)", "ar": "أفضل لاعب شاب في إنجلترا (48 مباراة - 22 هدفًا بالدوري)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "CP20" },
+        "name": {
+          "en": "2023–24 (Chelsea)",
+          "ar": "2023–24 (تشيلسي)"
+        },
+        "subText": {
+          "en": "PFA Young Player of the Year",
+          "ar": "أفضل لاعب شاب في إنجلترا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/chelsea.png",
+          "fallbackText": "CP20"
+        },
         "value": 25,
-        "valueLabel": { "en": "25 Goals", "ar": "25 هدفًا" },
+        "valueLabel": {
+          "en": "25 Goals",
+          "ar": "25 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "plm_2425",
-        "name": { "en": "2024–25 (Chelsea)", "ar": "2024–25 (تشيلسي)" },
-        "subText": { "en": "Key talisman (Four goals in first half vs Brighton)", "ar": "نجم الفريق الأول (سوبر هاتريك في شوط واحد ضد برايتون)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "CP20" },
+        "name": {
+          "en": "2024–25 (Chelsea)",
+          "ar": "2024–25 (تشيلسي)"
+        },
+        "subText": {
+          "en": "Key talisman",
+          "ar": "نجم الفريق الأول (سوبر هاتريك في شوط واحد ضد برايتون)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/chelsea.png",
+          "fallbackText": "CP20"
+        },
         "value": 15,
-        "valueLabel": { "en": "15 Goals", "ar": "15 هدفًا" },
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "plm_2122",
-        "name": { "en": "2021–22 (Manchester City)", "ar": "2021–22 (مانشستر سيتي)" },
-        "subText": { "en": "Scored in UCL, FA Cup & EFL Cup (11 games)", "ar": "سجل في الأبطال وكأس الاتحاد وكأس الرابطة (11 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "CP" },
+        "name": {
+          "en": "2021–22 (Manchester City)",
+          "ar": "2021–22 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Scored in UCL, FA Cup & EFL Cup (11 games)",
+          "ar": "سجل في الأبطال وكأس الاتحاد وكأس الرابطة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "CP"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Goals", "ar": "3 أهداف" },
+        "valueLabel": {
+          "en": "3 Goals",
+          "ar": "3 أهداف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "plm_2223",
-        "name": { "en": "2022–23 (Manchester City)", "ar": "2022–23 (مانشستر سيتي)" },
-        "subText": { "en": "Treble squad member (25 games)", "ar": "عضو فريق الثلاثية (25 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "CP" },
+        "name": {
+          "en": "2022–23 (Manchester City)",
+          "ar": "2022–23 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Treble squad member (25 games)",
+          "ar": "عضو فريق الثلاثية"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "CP"
+        },
         "value": 1,
-        "valueLabel": { "en": "1 Goal", "ar": "هدف واحد" },
+        "valueLabel": {
+          "en": "1 Goal",
+          "ar": "هدف واحد"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "plm_2021",
-        "name": { "en": "2020–21 (Manchester City)", "ar": "2020–21 (مانشستر سيتي)" },
-        "subText": { "en": "Senior professional debut season (2 games)", "ar": "موسم الظهور الأول مع الفريق الأول (مباراتان)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "CP" },
+        "name": {
+          "en": "2020–21 (Manchester City)",
+          "ar": "2020–21 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Senior professional debut season (2 games)",
+          "ar": "موسم الظهور الأول مع الفريق الأول (مباراتان)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "CP"
+        },
         "value": 0,
-        "valueLabel": { "en": "0 Goals", "ar": "0 أهداف" },
+        "valueLabel": {
+          "en": "0 Goals",
+          "ar": "0 أهداف"
+        },
         "correctRank": 5
       }
     ]

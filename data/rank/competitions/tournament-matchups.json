@@ -5,7 +5,15 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["world-cup", "nations", "spain", "england", "netherlands", "uruguay", "portugal"],
+    "tags": [
+      "world-cup",
+      "nations",
+      "spain",
+      "england",
+      "netherlands",
+      "uruguay",
+      "portugal"
+    ],
     "title": {
       "en": "Rank these 5 traditional football nations by all-time FIFA World Cup goals scored",
       "ar": "رتّب المنتخبات الخمسة حسب إجمالي أهدافها في تاريخ نهائيات كأس العالم"
@@ -14,52 +22,115 @@
       "en": "All-time World Cup tournament goals scored",
       "ar": "إجمالي الأهداف المسجلة في تاريخ كأس العالم"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "wc_g_spain",
-        "name": { "en": "Spain", "ar": "إسبانيا" },
-        "subText": { "en": "World Champions 2010", "ar": "بطل العالم 2010" },
-        "media": { "type": "nation", "fallbackText": "ESP" },
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "subText": {
+          "en": "World Champions 2010",
+          "ar": "بطل العالم 2010"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP"
+        },
         "value": 105,
-        "valueLabel": { "en": "105 Goals", "ar": "105 أهداف" },
+        "valueLabel": {
+          "en": "105 Goals",
+          "ar": "105 أهداف"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "wc_g_england",
-        "name": { "en": "England", "ar": "إنجلترا" },
-        "subText": { "en": "World Champions 1966", "ar": "بطل العالم 1966" },
-        "media": { "type": "nation", "fallbackText": "ENG" },
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "subText": {
+          "en": "World Champions 1966",
+          "ar": "بطل العالم 1966"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG"
+        },
         "value": 104,
-        "valueLabel": { "en": "104 Goals", "ar": "104 أهداف" },
+        "valueLabel": {
+          "en": "104 Goals",
+          "ar": "104 أهداف"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "wc_g_ned",
-        "name": { "en": "Netherlands", "ar": "هولندا" },
-        "subText": { "en": "3x World Cup Finalists", "ar": "وصيف كأس العالم 3 مرات" },
-        "media": { "type": "nation", "fallbackText": "NED" },
+        "name": {
+          "en": "Netherlands",
+          "ar": "هولندا"
+        },
+        "subText": {
+          "en": "3x World Cup Finalists",
+          "ar": "وصيف كأس العالم 3 مرات"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NED"
+        },
         "value": 96,
-        "valueLabel": { "en": "96 Goals", "ar": "96 هدفًا" },
+        "valueLabel": {
+          "en": "96 Goals",
+          "ar": "96 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "wc_g_uru",
-        "name": { "en": "Uruguay", "ar": "الأوروغواي" },
-        "subText": { "en": "2x World Champions (1930, 1950)", "ar": "بطل العالم مرتين (1930، 1950)" },
-        "media": { "type": "nation", "fallbackText": "URU" },
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروغواي"
+        },
+        "subText": {
+          "en": "2x World Champions (1930, 1950)",
+          "ar": "بطل العالم مرتين (1930، 1950)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU"
+        },
         "value": 89,
-        "valueLabel": { "en": "89 Goals", "ar": "89 هدفًا" },
+        "valueLabel": {
+          "en": "89 Goals",
+          "ar": "89 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "wc_g_por",
-        "name": { "en": "Portugal", "ar": "البرتغال" },
-        "subText": { "en": "3rd place 1966, 4th place 2006", "ar": "برونزية 1966، المركز الرابع 2006" },
-        "media": { "type": "nation", "fallbackText": "POR" },
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "subText": {
+          "en": "3rd place 1966, 4th place 2006",
+          "ar": "برونزية 1966، المركز الرابع 2006"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR"
+        },
         "value": 61,
-        "valueLabel": { "en": "61 Goals", "ar": "61 هدفًا" },
+        "valueLabel": {
+          "en": "61 Goals",
+          "ar": "61 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +141,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["euro", "uefa", "nations", "germany", "spain", "italy", "portugal"],
+    "tags": [
+      "euro",
+      "uefa",
+      "nations",
+      "germany",
+      "spain",
+      "italy",
+      "portugal"
+    ],
     "title": {
       "en": "Rank these 5 European nations by total UEFA EURO tournament matches played",
       "ar": "رتّب المنتخبات الخمسة حسب إجمالي المباريات الملعوبة في تاريخ اليورو"
@@ -79,52 +158,115 @@
       "en": "Matches played in UEFA European Championship finals",
       "ar": "عدد المباريات في نهائيات كأس أمم أوروبا عبر التاريخ"
     },
-    "metricLabel": { "en": "Matches", "ar": "مباريات" },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "eur_m_ger",
-        "name": { "en": "Germany", "ar": "ألمانيا" },
-        "subText": { "en": "3x Champions (14 Tournaments)", "ar": "بطل أوروبا 3 مرات (14 مشاركة)" },
-        "media": { "type": "nation", "fallbackText": "GER" },
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "subText": {
+          "en": "3x Champions (14 Tournaments)",
+          "ar": "بطل أوروبا 3 مرات (14 مشاركة)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER"
+        },
         "value": 58,
-        "valueLabel": { "en": "58 Matches", "ar": "58 مباراة" },
+        "valueLabel": {
+          "en": "58 Matches",
+          "ar": "58 مباراة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "eur_m_esp",
-        "name": { "en": "Spain", "ar": "إسبانيا" },
-        "subText": { "en": "4x Champions (Record)", "ar": "بطل أوروبا 4 مرات (الرقم القياسي)" },
-        "media": { "type": "nation", "fallbackText": "ESP" },
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "subText": {
+          "en": "4x Champions (Record)",
+          "ar": "بطل أوروبا 4 مرات (الرقم القياسي)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP"
+        },
         "value": 53,
-        "valueLabel": { "en": "53 Matches", "ar": "53 مباراة" },
+        "valueLabel": {
+          "en": "53 Matches",
+          "ar": "53 مباراة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "eur_m_ita",
-        "name": { "en": "Italy", "ar": "إيطاليا" },
-        "subText": { "en": "2x Champions (1968, 2020)", "ar": "بطل أوروبا مرتين (1968، 2020)" },
-        "media": { "type": "nation", "fallbackText": "ITA" },
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "subText": {
+          "en": "2x Champions (1968, 2020)",
+          "ar": "بطل أوروبا مرتين (1968، 2020)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA"
+        },
         "value": 49,
-        "valueLabel": { "en": "49 Matches", "ar": "49 مباراة" },
+        "valueLabel": {
+          "en": "49 Matches",
+          "ar": "49 مباراة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "eur_m_por",
-        "name": { "en": "Portugal", "ar": "البرتغال" },
-        "subText": { "en": "Champions 2016", "ar": "بطل أوروبا 2016" },
-        "media": { "type": "nation", "fallbackText": "POR" },
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "subText": {
+          "en": "Champions 2016",
+          "ar": "بطل أوروبا 2016"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR"
+        },
         "value": 44,
-        "valueLabel": { "en": "44 Matches", "ar": "44 مباراة" },
+        "valueLabel": {
+          "en": "44 Matches",
+          "ar": "44 مباراة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "eur_m_cze",
-        "name": { "en": "Czech Republic", "ar": "التشيك" },
-        "subText": { "en": "Champions 1976, Finalists 1996", "ar": "بطل 1976، وصيف 1996" },
-        "media": { "type": "nation", "fallbackText": "CZE" },
+        "name": {
+          "en": "Czech Republic",
+          "ar": "التشيك"
+        },
+        "subText": {
+          "en": "Champions 1976, Finalists 1996",
+          "ar": "بطل 1976، وصيف 1996"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CZE"
+        },
         "value": 37,
-        "valueLabel": { "en": "37 Matches", "ar": "37 مباراة" },
+        "valueLabel": {
+          "en": "37 Matches",
+          "ar": "37 مباراة"
+        },
         "correctRank": 5
       }
     ]
@@ -135,7 +277,16 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["copa-america", "conmebol", "wins", "argentina", "uruguay", "brazil", "paraguay", "chile"],
+    "tags": [
+      "copa-america",
+      "conmebol",
+      "wins",
+      "argentina",
+      "uruguay",
+      "brazil",
+      "paraguay",
+      "chile"
+    ],
     "title": {
       "en": "Rank these 5 South American nations by all-time Copa América match wins",
       "ar": "رتّب المنتخبات الخمسة حسب عدد الانتصارات في تاريخ بطولة كوبا أمريكا"
@@ -144,52 +295,115 @@
       "en": "Official match victories in Copa América tournament history",
       "ar": "إجمالي المباريات التي فاز بها المنتخب في تاريخ كوبا أمريكا"
     },
-    "metricLabel": { "en": "Wins", "ar": "انتصارات" },
+    "metricLabel": {
+      "en": "Wins",
+      "ar": "انتصارات"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ca_w_arg",
-        "name": { "en": "Argentina", "ar": "الأرجنتين" },
-        "subText": { "en": "16x Champions (All-Time Record)", "ar": "بطل كوبا أمريكا 16 مرة (رقم قياسي)" },
-        "media": { "type": "nation", "fallbackText": "ARG" },
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "16x Champions",
+          "ar": "بطل كوبا أمريكا 16 مرة (رقم قياسي)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG"
+        },
         "value": 132,
-        "valueLabel": { "en": "132 Wins", "ar": "132 فوزًا" },
+        "valueLabel": {
+          "en": "132 Wins",
+          "ar": "132 فوزًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ca_w_uru",
-        "name": { "en": "Uruguay", "ar": "الأوروغواي" },
-        "subText": { "en": "15x Champions", "ar": "بطل كوبا أمريكا 15 مرة" },
-        "media": { "type": "nation", "fallbackText": "URU" },
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروغواي"
+        },
+        "subText": {
+          "en": "15x Champions",
+          "ar": "بطل كوبا أمريكا 15 مرة"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU"
+        },
         "value": 115,
-        "valueLabel": { "en": "115 Wins", "ar": "115 فوزًا" },
+        "valueLabel": {
+          "en": "115 Wins",
+          "ar": "115 فوزًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ca_w_bra",
-        "name": { "en": "Brazil", "ar": "البرازيل" },
-        "subText": { "en": "9x Champions", "ar": "بطل كوبا أمريكا 9 مرات" },
-        "media": { "type": "nation", "fallbackText": "BRA" },
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "9x Champions",
+          "ar": "بطل كوبا أمريكا 9 مرات"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA"
+        },
         "value": 109,
-        "valueLabel": { "en": "109 Wins", "ar": "109 انتصارات" },
+        "valueLabel": {
+          "en": "109 Wins",
+          "ar": "109 انتصارات"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ca_w_par",
-        "name": { "en": "Paraguay", "ar": "باراغواي" },
-        "subText": { "en": "2x Champions (1953, 1979)", "ar": "بطل كوبا أمريكا مرتين (1953، 1979)" },
-        "media": { "type": "nation", "fallbackText": "PAR" },
+        "name": {
+          "en": "Paraguay",
+          "ar": "باراغواي"
+        },
+        "subText": {
+          "en": "2x Champions (1953, 1979)",
+          "ar": "بطل كوبا أمريكا مرتين (1953، 1979)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "PAR"
+        },
         "value": 71,
-        "valueLabel": { "en": "71 Wins", "ar": "71 فوزًا" },
+        "valueLabel": {
+          "en": "71 Wins",
+          "ar": "71 فوزًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ca_w_chi",
-        "name": { "en": "Chile", "ar": "تشيلي" },
-        "subText": { "en": "2x Champions (2015, 2016)", "ar": "بطل كوبا أمريكا مرتين (2015، 2016)" },
-        "media": { "type": "nation", "fallbackText": "CHI" },
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "subText": {
+          "en": "2x Champions (2015, 2016)",
+          "ar": "بطل كوبا أمريكا مرتين (2015، 2016)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI"
+        },
         "value": 67,
-        "valueLabel": { "en": "67 Wins", "ar": "67 فوزًا" },
+        "valueLabel": {
+          "en": "67 Wins",
+          "ar": "67 فوزًا"
+        },
         "correctRank": 5
       }
     ]
@@ -200,7 +414,16 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ucl", "defenders", "appearances", "ramos", "maldini", "carlos", "puyol", "alves"],
+    "tags": [
+      "ucl",
+      "defenders",
+      "appearances",
+      "ramos",
+      "maldini",
+      "carlos",
+      "puyol",
+      "alves"
+    ],
     "title": {
       "en": "Rank these 5 legendary defenders by UEFA Champions League appearances",
       "ar": "رتّب المدافعين الأساطير الخمسة حسب عدد مبارياتهم في دوري أبطال أوروبا"
@@ -209,52 +432,119 @@
       "en": "UCL & European Cup matches (group stage to final)",
       "ar": "مباريات دوري الأبطال وكأس أوروبا من دور المجموعات حتى النهائي"
     },
-    "metricLabel": { "en": "Matches", "ar": "مباريات" },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "defm_ramos",
-        "name": { "en": "Sergio Ramos", "ar": "سيرخيو راموس" },
-        "subText": { "en": "Real Madrid, PSG & Sevilla (4x Winner)", "ar": "ريال مدريد وباريس وإشبيلية (بطل 4 مرات)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "SR4" },
+        "name": {
+          "en": "Sergio Ramos",
+          "ar": "سيرخيو راموس"
+        },
+        "subText": {
+          "en": "Real Madrid, PSG & Sevilla (4x Winner)",
+          "ar": "ريال مدريد وباريس وإشبيلية (بطل 4 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "SR4"
+        },
         "value": 142,
-        "valueLabel": { "en": "142 Matches", "ar": "142 مباراة" },
+        "valueLabel": {
+          "en": "142 Matches",
+          "ar": "142 مباراة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "defm_maldini",
-        "name": { "en": "Paolo Maldini", "ar": "باولو مالديني" },
-        "subText": { "en": "AC Milan (5x European Champion)", "ar": "ميلان (بطل أوروبا 5 مرات)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/milan.png", "fallbackText": "MAL3" },
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "AC Milan (5x European Champion)",
+          "ar": "ميلان (بطل أوروبا 5 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/milan.png",
+          "fallbackText": "MAL3"
+        },
         "value": 135,
-        "valueLabel": { "en": "135 Matches", "ar": "135 مباراة" },
+        "valueLabel": {
+          "en": "135 Matches",
+          "ar": "135 مباراة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "defm_carlos",
-        "name": { "en": "Roberto Carlos", "ar": "روبرتو كارلوس" },
-        "subText": { "en": "Real Madrid & Fenerbahçe (3x Winner)", "ar": "ريال مدريد وفنربخشة (بطل 3 مرات)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "RC3" },
+        "name": {
+          "en": "Roberto Carlos",
+          "ar": "روبرتو كارلوس"
+        },
+        "subText": {
+          "en": "Real Madrid & Fenerbahçe (3x Winner)",
+          "ar": "ريال مدريد وفنربخشة (بطل 3 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "RC3"
+        },
         "value": 120,
-        "valueLabel": { "en": "120 Matches", "ar": "120 مباراة" },
+        "valueLabel": {
+          "en": "120 Matches",
+          "ar": "120 مباراة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "defm_puyol",
-        "name": { "en": "Carles Puyol", "ar": "كارليس بويول" },
-        "subText": { "en": "FC Barcelona (3x Winner - El Capitán)", "ar": "برشلونة (بطل 3 مرات - القائد)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "PUY" },
+        "name": {
+          "en": "Carles Puyol",
+          "ar": "كارليس بويول"
+        },
+        "subText": {
+          "en": "FC Barcelona (3x Winner - El Capitán)",
+          "ar": "برشلونة (بطل 3 مرات - القائد)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "PUY"
+        },
         "value": 115,
-        "valueLabel": { "en": "115 Matches", "ar": "115 مباراة" },
+        "valueLabel": {
+          "en": "115 Matches",
+          "ar": "115 مباراة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "defm_alves",
-        "name": { "en": "Dani Alves", "ar": "داني ألفيس" },
-        "subText": { "en": "Sevilla, Barca, Juventus & PSG (3x Winner)", "ar": "إشبيلية وبرشلونة ويوفي وباريس (بطل 3 مرات)" },
-        "media": { "type": "player", "fallbackText": "ALV" },
+        "name": {
+          "en": "Dani Alves",
+          "ar": "داني ألفيس"
+        },
+        "subText": {
+          "en": "Sevilla, Barca, Juventus & PSG (3x Winner)",
+          "ar": "إشبيلية وبرشلونة ويوفي وباريس (بطل 3 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ALV"
+        },
         "value": 111,
-        "valueLabel": { "en": "111 Matches", "ar": "111 مباراة" },
+        "valueLabel": {
+          "en": "111 Matches",
+          "ar": "111 مباراة"
+        },
         "correctRank": 5
       }
     ]

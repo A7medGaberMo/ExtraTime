@@ -9,22 +9,23 @@ import {
   House,
   Trophy,
   PlusCircle,
-  Volume2,
-  VolumeX,
-  Languages,
+  SpeakerHigh,
+  SpeakerSimpleSlash,
+  Translate,
   X,
-  ChevronDown,
+  CaretDown,
   User,
-  LogIn,
-} from 'lucide-react';
+  SignIn,
+  Cards,
+} from '@phosphor-icons/react';
+import { AppIcon } from '@/components/ui/app-icon';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { useGuestSession } from '@/hooks/use-guest-session';
+import { useIsGameplay } from '@/hooks/use-is-gameplay';
 import { useI18n } from '@/lib/i18n';
 import { sfx } from '@/lib/sfx';
 import { cn } from '@/lib/utils';
-import { Cards } from '@phosphor-icons/react';
-
 
 function subscribeSound(cb: () => void) {
   if (typeof window === 'undefined') return () => { };
@@ -69,6 +70,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [prevPathname, setPrevPathname] = useState(pathname);
   const notchRef = useRef<HTMLDivElement>(null);
+  const isGameplay = useIsGameplay();
 
   // Close island automatically on route changes during render
   if (prevPathname !== pathname) {
@@ -114,11 +116,6 @@ export function Header() {
     }
   }, [isOpen]);
 
-  const isGameplay =
-    pathname.startsWith('/auction/') ||
-    pathname.startsWith('/room/') ||
-    (pathname.startsWith('/rank/') && pathname !== '/rank');
-
   const navLinks = [
     { href: '/', label: t('nav.arena'), icon: House },
     { href: '/rank', label: t('nav.rank'), icon: Trophy },
@@ -131,7 +128,7 @@ export function Header() {
       <div ref={notchRef} className="pointer-events-auto">
         <AnimatePresence initial={false} mode="wait">
           {!isOpen ? (
-            /* â”€â”€ Collapsed Dynamic Island Capsule â”€â”€ */
+            /* ── Collapsed Dynamic Island Capsule ── */
             <motion.div
               key="collapsed-notch"
               initial={{ opacity: 0, y: -10, scale: 0.95 }}
@@ -139,7 +136,7 @@ export function Header() {
               exit={{ opacity: 0, y: -10, scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 450, damping: 30 }}
               className={cn(
-                'flex items-center gap-1.5 sm:gap-2.5 rounded-full border border-white/[0.08] bg-[#141416]/95 px-3 sm:px-4 py-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.75),0_0_16px_rgba(149,232,16,0.12)] backdrop-blur-2xl transition-all',
+                'flex items-center gap-1.5 sm:gap-2.5 rounded-full border border-white/10 bg-slate-950/90 px-3 sm:px-4 py-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-all',
                 isGameplay ? 'hover:border-lime/40 cursor-pointer' : '',
               )}
             >
@@ -163,7 +160,7 @@ export function Header() {
                 </span>
               </Link>
 
-              {/* Desktop Center Nav Tabs (Visible on non-gameplay pages) */}
+              {/* Desktop Center Nav Tabs */}
               {!isGameplay && (
                 <nav className="hidden md:flex items-center gap-0.5 rounded-full bg-white/[0.04] border border-white/[0.06] p-0.5 ml-1 mr-1">
                   {navLinks.map((item) => {
@@ -180,7 +177,7 @@ export function Header() {
                             : 'text-steel hover:bg-white/5 hover:text-white',
                         )}
                       >
-                        <IconComp size={13} strokeWidth={isActive ? 2.5 : 2} />
+                        <AppIcon icon={IconComp} size={13} weight={isActive ? 'fill' : 'bold'} />
                         <span>{item.label}</span>
                       </Link>
                     );
@@ -204,60 +201,60 @@ export function Header() {
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-lime" />
                   </span>
                   <span className="font-stats text-xs font-bold">
-                    {lang === 'ar' ? 'Ø§Ù„Ù…Ø§ØªØ´ Ù„Ø§ÙŠÙ' : 'LIVE'}
+                    {lang === 'ar' ? 'الماتش لايف' : 'LIVE'}
                   </span>
                 </Link>
               )}
 
               {/* Right Fast Action Pills */}
               <div className="flex items-center gap-1 shrink-0 ml-0.5">
-
                 {/* Sound Toggle */}
                 <button
                   type="button"
                   onClick={handleToggleSound}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
+                  className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
                   title={muted ? t('common.soundMuted') : t('common.soundOn')}
                   aria-label={muted ? t('common.soundMuted') : t('common.soundOn')}
                 >
-                  {muted ? (
-                    <VolumeX size={13} className="text-rose-400" />
-                  ) : (
-                    <Volume2 size={13} className="text-lime" />
-                  )}
+                  <AppIcon
+                    icon={muted ? SpeakerSimpleSlash : SpeakerHigh}
+                    size={14}
+                    weight="bold"
+                    className={muted ? 'text-rose-400' : 'text-lime'}
+                  />
                 </button>
 
                 {/* Language Switcher */}
                 <button
                   type="button"
                   onClick={toggleLang}
-                  className="flex h-8 items-center gap-1 rounded-full px-2 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
+                  className="btn-haptic flex h-8 items-center gap-1 rounded-full px-2.5 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
                   title={t('common.language')}
                 >
-                  <Languages size={12} />
-                  <span>{lang === 'en' ? 'Ø¹Ø±Ø¨ÙŠ' : 'EN'}</span>
+                  <AppIcon icon={Translate} size={13} weight="bold" />
+                  <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
                 </button>
 
                 {/* Menu Expander / Arrow */}
                 <button
                   type="button"
                   onClick={() => setIsOpen(true)}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
+                  className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
                   title="Expand Navigation Island"
                 >
-                  <ChevronDown size={13} strokeWidth={2.5} />
+                  <AppIcon icon={CaretDown} size={13} weight="bold" />
                 </button>
               </div>
             </motion.div>
           ) : (
-            /* â”€â”€ Expanded Island Control Center â”€â”€ */
+            /* ── Expanded Island Control Center ── */
             <motion.div
               key="expanded-island"
               initial={{ opacity: 0, y: -16, scale: 0.92 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -16, scale: 0.92 }}
               transition={{ type: 'spring', stiffness: 450, damping: 30 }}
-              className="w-[340px] sm:w-[390px] rounded-[24px] border border-white/[0.12] bg-[#141416]/98 p-3.5 shadow-[0_20px_48px_rgba(0,0,0,0.92),0_0_28px_rgba(149,232,16,0.18)] backdrop-blur-2xl"
+              className="w-[340px] sm:w-[390px] rounded-3xl border border-white/12 bg-slate-950/98 p-4 shadow-[0_24px_56px_rgba(0,0,0,0.85)] backdrop-blur-2xl"
             >
               {/* Header inside Island */}
               <div className="flex items-center justify-between border-b border-white/[0.08] pb-2.5 mb-2.5">
@@ -285,24 +282,25 @@ export function Header() {
                   <button
                     type="button"
                     onClick={handleToggleSound}
-                    className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer"
+                    className="btn-haptic flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer"
                     title={muted ? t('common.soundMuted') : t('common.soundOn')}
                   >
-                    {muted ? (
-                      <VolumeX size={14} className="text-rose-400" />
-                    ) : (
-                      <Volume2 size={14} className="text-lime" />
-                    )}
+                    <AppIcon
+                      icon={muted ? SpeakerSimpleSlash : SpeakerHigh}
+                      size={14}
+                      weight="bold"
+                      className={muted ? 'text-rose-400' : 'text-lime'}
+                    />
                   </button>
 
                   {/* Language Toggle */}
                   <button
                     type="button"
                     onClick={toggleLang}
-                    className="flex h-8 items-center gap-1 rounded-lg px-2.5 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:text-white transition-colors cursor-pointer font-stats"
+                    className="btn-haptic flex h-8 items-center gap-1 rounded-lg px-2.5 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:text-white transition-colors cursor-pointer font-stats"
                     title={t('common.language')}
                   >
-                    <Languages size={13} />
+                    <AppIcon icon={Translate} size={13} weight="bold" />
                     <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
                   </button>
 
@@ -310,22 +308,22 @@ export function Header() {
                   <button
                     type="button"
                     onClick={() => setIsOpen(false)}
-                    className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer ml-0.5"
+                    className="btn-haptic flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer ml-0.5"
                     title="Close"
                   >
-                    <X size={14} />
+                    <AppIcon icon={X} size={14} weight="bold" />
                   </button>
                 </div>
               </div>
 
-              {/* Guest Manager Handle Tag if available */}
+              {/* Guest Manager Handle Tag */}
               {guestName && (
                 <div className="flex items-center justify-between rounded-xl bg-white/[0.03] border border-white/[0.06] px-3 py-1.5 mb-2.5">
-                  <div className="flex items-center gap-1.5 text-steel text-xs font-bold font-stats">
-                    <User size={13} className="text-lime" />
+                  <div className="flex items-center gap-1.5 text-steel text-xs font-semibold font-stats">
+                    <AppIcon icon={User} size={13} weight="bold" className="text-lime" />
                     <span className="text-white truncate max-w-[160px]">{guestName}</span>
                   </div>
-                  <span className="font-stats text-micro font-bold text-lime">
+                  <span className="font-stats text-[11px] font-semibold text-lime">
                     Manager
                   </span>
                 </div>
@@ -340,7 +338,7 @@ export function Header() {
                       : `/rank/${activeMatch.id}`
                   }
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-between rounded-xl bg-gradient-to-r from-lime/15 via-slate-900/90 to-emerald-950/40 border border-lime/40 p-2.5 mb-2.5 group hover:border-lime transition-all cursor-pointer shadow-md"
+                  className="flex items-center justify-between rounded-2xl bg-slate-900/90 border border-lime/40 p-3 mb-2.5 group hover:border-lime transition-all cursor-pointer shadow-md"
                 >
                   <div className="flex items-center gap-2.5 min-w-0">
                     <span className="relative flex h-2.5 w-2.5 shrink-0">
@@ -351,58 +349,35 @@ export function Header() {
                       <div className="truncate text-xs font-bold text-white">
                         {activeMatch.type === 'snipe' ? 'Snipe Match' : 'Rank Duel'} ({activeMatch.code})
                       </div>
-                      <div className="truncate text-micro font-semibold text-lime">
+                      <div className="truncate text-[11px] font-semibold text-lime">
                         {activeMatch.status === 'waiting'
                           ? (lang === 'ar' ? 'في انتظار المنافس...' : 'Waiting for rival...')
                           : (lang === 'ar' ? 'الماتش جاري الآن — اضغط للمتابعة' : 'Match in progress — Tap to resume')}
                       </div>
                     </div>
                   </div>
-                  <span className="shrink-0 rounded-lg bg-lime px-2.5 py-1 text-micro font-bold text-slate-950">
+                  <span className="shrink-0 rounded-lg bg-lime px-2.5 py-1 text-[11px] font-bold text-slate-950">
                     {lang === 'ar' ? 'دخول' : 'Resume'}
                   </span>
                 </Link>
               )}
 
-
               {/* Quick Navigation 4-Box Grid */}
-
               <div className="grid grid-cols-4 gap-1.5">
-                <Link
-                  href="/"
-                  onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center justify-center gap-1 rounded-xl border border-white/[0.06] bg-[#1a1a1e] py-2 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
-                >
-                  <House size={16} className="text-steel group-hover:text-lime transition-colors" />
-                  <span className="text-[10.5px] font-bold tracking-tight">{t('nav.arena')}</span>
-                </Link>
-
-                <Link
-                  href="/rank"
-                  onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center justify-center gap-1 rounded-xl border border-white/[0.06] bg-[#1a1a1e] py-2 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
-                >
-                  <Trophy size={16} className="text-steel group-hover:text-lime transition-colors" />
-                  <span className="text-[10.5px] font-bold tracking-tight">{t('nav.rank')}</span>
-                </Link>
-
-                <Link
-                  href="/packs"
-                  onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center justify-center gap-1 rounded-xl border border-white/[0.06] bg-[#1a1a1e] py-2 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
-                >
-                  <Cards size={16} className="text-steel group-hover:text-lime transition-colors" />
-                  <span className="text-[10.5px] font-bold tracking-tight">{t('nav.packs')}</span>
-                </Link>
-
-                <Link
-                  href="/create-room"
-                  onClick={() => setIsOpen(false)}
-                  className="flex flex-col items-center justify-center gap-1 rounded-xl border border-white/[0.06] bg-[#1a1a1e] py-2 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
-                >
-                  <PlusCircle size={16} className="text-steel group-hover:text-lime transition-colors" />
-                  <span className="text-[10.5px] font-bold tracking-tight">{t('nav.create')}</span>
-                </Link>
+                {navLinks.map((item) => {
+                  const IconComp = item.icon;
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setIsOpen(false)}
+                      className="btn-haptic flex flex-col items-center justify-center gap-1 rounded-2xl border border-white/[0.06] bg-slate-900/80 py-2.5 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
+                    >
+                      <AppIcon icon={IconComp} size={17} weight="bold" className="text-steel group-hover:text-lime transition-colors" />
+                      <span className="text-[11px] font-semibold tracking-tight">{item.label}</span>
+                    </Link>
+                  );
+                })}
               </div>
 
               {/* Join with code quick link */}
@@ -410,9 +385,9 @@ export function Header() {
                 <Link
                   href="/join-room"
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-center gap-1.5 w-full py-1.5 rounded-xl border border-white/[0.06] bg-white/[0.02] text-steel hover:text-lime hover:border-lime/30 text-xs font-semibold transition-colors cursor-pointer"
+                  className="btn-haptic flex items-center justify-center gap-1.5 w-full py-2 rounded-xl border border-white/[0.06] bg-white/[0.02] text-steel hover:text-lime hover:border-lime/30 text-xs font-semibold transition-colors cursor-pointer"
                 >
-                  <LogIn size={13} />
+                  <AppIcon icon={SignIn} size={14} weight="bold" />
                   <span>{t('nav.join')} (Room Code)</span>
                 </Link>
               </div>
@@ -423,4 +398,3 @@ export function Header() {
     </header>
   );
 }
-

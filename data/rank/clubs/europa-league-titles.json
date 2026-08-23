@@ -5,7 +5,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["europa-league", "uel", "titles", "trap", "clubs"],
+    "tags": [
+      "europa-league",
+      "uel",
+      "titles",
+      "trap",
+      "clubs"
+    ],
     "title": {
       "en": "Rank these 5 clubs by UEFA Cup / Europa League titles won",
       "ar": "رتّب الأندية الخمسة حسب عدد ألقاب الدوري الأوروبي (وكأس الاتحاد الأوروبي)"
@@ -14,52 +20,115 @@
       "en": "All editions from 1971 through 2026",
       "ar": "شامل جميع نسخ البطولة من 1971 وحتى 2026"
     },
-    "metricLabel": { "en": "Titles", "ar": "ألقاب" },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "uel_t_sevilla",
-        "name": { "en": "Sevilla", "ar": "إشبيلية" },
-        "subText": { "en": "Record 7-time winners", "ar": "البطل التاريخي (7 ألقاب)" },
-        "media": { "type": "club", "fallbackText": "SEV" },
+        "name": {
+          "en": "Sevilla",
+          "ar": "إشبيلية"
+        },
+        "subText": {
+          "en": "Record 7-time winners",
+          "ar": "البطل التاريخي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "SEV"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Titles", "ar": "7 ألقاب" },
+        "valueLabel": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "uel_t_atletico",
-        "name": { "en": "Atlético Madrid", "ar": "أتلتيكو مدريد" },
-        "subText": { "en": "2010, 2012, 2018", "ar": "2010، 2012، 2018" },
-        "media": { "type": "club", "fallbackText": "ATM" },
+        "name": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "subText": {
+          "en": "2010, 2012, 2018",
+          "ar": "2010، 2012، 2018"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ATM"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Titles", "ar": "3 ألقاب" },
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "uel_t_chelsea",
-        "name": { "en": "Chelsea", "ar": "تشيلسي" },
-        "subText": { "en": "2013, 2019", "ar": "2013، 2019" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "subText": {
+          "en": "2013, 2019",
+          "ar": "2013، 2019"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Titles", "ar": "لقبان" },
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "uel_t_manutd",
-        "name": { "en": "Manchester United", "ar": "مانشستر يونايتد" },
-        "subText": { "en": "2017 Champions", "ar": "بطل 2017" },
-        "media": { "type": "club", "fallbackText": "MU" },
+        "name": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "subText": {
+          "en": "2017 Champions",
+          "ar": "بطل 2017"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MU"
+        },
         "value": 1,
-        "valueLabel": { "en": "1 Title", "ar": "لقب واحد" },
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "uel_t_arsenal",
-        "name": { "en": "Arsenal", "ar": "أرسنال" },
-        "subText": { "en": "Runner-up 2000, 2019", "ar": "وصيف 2000، 2019" },
-        "media": { "type": "club", "fallbackText": "ARS" },
+        "name": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "subText": {
+          "en": "Runner-up 2000, 2019",
+          "ar": "وصيف 2000، 2019"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ARS"
+        },
         "value": 0,
-        "valueLabel": { "en": "0 Titles", "ar": "0 ألقاب" },
+        "valueLabel": {
+          "en": "0 Titles",
+          "ar": "0 ألقاب"
+        },
         "correctRank": 5
       }
     ]

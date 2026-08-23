@@ -2,80 +2,98 @@
 
 @theme {
   /* ═══════════════════════════════════════════════════════════════════
-     TYPOGRAPHY — one brand face per script, loaded via next/font.
-     Latin: Inter · Arabic: IBM Plex Sans Arabic. Weights: 400–700 only.
+     TYPOGRAPHY — Apple HIG Font Stack & Type Ramp
+     Latin: SF Pro / Inter · Arabic: IBM Plex Sans Arabic.
+     Weights: 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold).
      ═══════════════════════════════════════════════════════════════════ */
   --font-sans:
-    var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
+    var(--font-inter), system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
   --font-arabic:
-    var(--font-plex-arabic), "Segoe UI", Tahoma, "Noto Sans Arabic",
-    system-ui, sans-serif;
+    var(--font-plex-arabic), -apple-system, 'SF Pro Arabic', 'Segoe UI',
+    Tahoma, 'Noto Sans Arabic', system-ui, sans-serif;
 
-  /* Display shares the brand face — hierarchy comes from size/weight, not family. */
-  --font-display: var(--font-sans);
+  --font-display:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
+    var(--font-inter), system-ui, sans-serif;
   --font-display-arabic: var(--font-arabic);
 
   --font-mono:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
 
-  /* Numerics: proportional with tabular figures — aligned without terminal vibes. */
-  --font-stat: var(--font-inter), var(--font-plex-arabic), system-ui, sans-serif;
+  /* Tabular Numerics: Lining numbers with fixed column width for scores/timers */
+  --font-stat:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-inter),
+    system-ui, sans-serif;
 
-  /* Type ramp floor: 10px is the absolute minimum (legal/micro labels). */
-  --text-micro: 0.625rem;
-  --text-micro--line-height: 1rem;
+  /* FUT Card: DIN Condensed-style for authentic Ultimate Team card typography */
+  --font-card:
+    var(--font-barlow-condensed), 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
+
+  /* Apple Type Scale */
+  --text-caption2: 0.6875rem; /* 11px */
+  --text-caption1: 0.75rem;   /* 12px */
+  --text-footnote: 0.8125rem; /* 13px */
+  --text-subhead: 0.9375rem;  /* 15px */
+  --text-body: 1.0625rem;     /* 17px */
+  --text-title3: 1.25rem;     /* 20px */
+  --text-title2: 1.375rem;    /* 22px */
+  --text-title1: 1.75rem;     /* 28px */
+  --text-largetitle: 2.125rem;/* 34px */
 
   /* ═══════════════════ COLOR SYSTEM ═══════════════════ */
-  --color-background: #03060b; /* Stadium pitch black */
-  --color-foreground: #f8f9fa;
-  --color-card: #0c1017;
-  --color-card-elevated: #131923;
-  --color-border: #1c2331;
-  --color-border-subtle: #141b27;
+  --color-background: #06090e; /* Deep obsidian stadium pitch */
+  --color-foreground: #f5f5f7; /* Apple primary text */
+  --color-card: #0f141d;
+  --color-card-elevated: #161c27;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-subtle: rgba(255, 255, 255, 0.04);
+  --color-border-hover: rgba(255, 255, 255, 0.16);
 
-  --color-lime: #95e810; /* The one and only brand lime */
-  --color-vivid: #72d410;
-  --color-bold-green: #52b916;
-  --color-steel: #8893a4;
-  --color-muted: #596579;
-  --color-gold: #eab308;
-  --color-sky: #0ea5e9;
-  --color-rose: #f43f5e;
+  /* Primary Accent — Refined Apple Vibrant Green */
+  --color-lime: #8ee000;
+  --color-vivid: #78cf00;
+  --color-bold-green: #30d158;
+  --color-steel: #8e95a2;
+  --color-muted: #636b7b;
+  --color-gold: #e5b323;
+  --color-sky: #0a84ff;
+  --color-rose: #ff375f;
 
-  --color-tier-icon: #d4af37;
-  --color-tier-hero: #10b981;
-  --color-tier-ultimate: #0ea5e9;
-  --color-tier-master: #a855f7;
-  --color-tier-elite: #e11d48;
-  --color-tier-gold: #eab308;
-  --color-tier-silver: #cbd5e1;
-  --color-tier-bronze: #c97a3a;
+  /* Tier Palettes */
+  --color-tier-icon: #e5c058;
+  --color-tier-hero: #30d158;
+  --color-tier-ultimate: #0a84ff;
+  --color-tier-master: #bf5af2;
+  --color-tier-elite: #ff375f;
+  --color-tier-gold: #ffd60a;
+  --color-tier-silver: #d1d1d6;
+  --color-tier-bronze: #ac6d46;
 
-  --color-slate-950: #03060b;
-  --color-slate-900: #0c1017;
-  --color-slate-850: #101620;
-  --color-slate-800: #1a2230;
-  --color-slate-700: #2d3748;
-  --color-slate-500: #8893a4;
-  --color-slate-400: #a0aec0;
-  --color-slate-300: #cbd5e1;
-  --color-slate-200: #e2e8f0;
-  --color-slate-100: #f8f9fa;
+  --color-slate-950: #06090e;
+  --color-slate-900: #0e131c;
+  --color-slate-850: #131924;
+  --color-slate-800: #1b2332;
+  --color-slate-700: #2d384c;
+  --color-slate-500: #8e95a2;
+  --color-slate-400: #a1a9b7;
+  --color-slate-300: #d1d5db;
+  --color-slate-200: #e5e7eb;
+  --color-slate-100: #f5f5f7;
 
-  /* ═══════════════════ ELEVATION ═══════════════════ */
-  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.45);
-  --shadow-float: 0 20px 50px rgba(0, 0, 0, 0.65);
-  --shadow-lift: 0 4px 14px rgba(0, 0, 0, 0.35);
-  --shadow-glow-lime: 0 0 24px rgba(149, 232, 16, 0.16);
+  /* ═══════════════════ ELEVATION & MATERIALS ═══════════════════ */
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --shadow-float: 0 20px 48px -12px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  --shadow-lift: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-glow-lime: 0 0 20px rgba(142, 224, 0, 0.18);
 
-  /* Radius scale — five answers, not eleven. */
-  --radius-sm: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.25rem;
-  --radius-2xl: 1.5rem;
+  /* Radius Scale */
+  --radius-sm: 0.5rem;   /* 8px */
+  --radius-md: 0.75rem;  /* 12px */
+  --radius-lg: 1rem;     /* 16px */
+  --radius-xl: 1.25rem;  /* 20px */
+  --radius-2xl: 1.5rem;  /* 24px */
 }
 
 :root {
@@ -92,13 +110,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* ═══════════════════ FOCUS — keyboard users get a visible ring ═══════════════════ */
+/* ═══════════════════ FOCUS — Accessible Ring ═══════════════════ */
 :focus-visible {
   outline: 2px solid var(--color-lime);
   outline-offset: 2px;
 }
 
-/* Numerics: tabular alignment without monospace. Timers, scores, budgets. */
+/* Tabular figures for stats, scores, prices & timers */
 .font-stats {
   font-family: var(--font-stat);
   font-weight: 600;
@@ -106,15 +124,35 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* ═══════════════════ ARABIC / RTL TYPOGRAPHY ═══════════════════
-   Arabic script is cursive: letter-spacing breaks joining, uppercase is
-   meaningless. Neutralize at the cascade level — no per-component hacks. */
+.font-display-number {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: -0.025em;
+}
+
+/* ═══════════════════ FUT CARD TYPOGRAPHY ═══════════════════ */
+/* DIN Condensed-style — authentic EA FC / Ultimate Team card type */
+.font-card {
+  font-family: var(--font-card);
+  font-weight: 600;
+  font-stretch: condensed;
+}
+
+.font-card-num {
+  font-family: var(--font-card);
+  font-weight: 700;
+  font-variant-numeric: lining-nums;
+  letter-spacing: -0.01em;
+}
+
+/* ═══════════════════ ARABIC / RTL TYPOGRAPHY ═══════════════════ */
 html[dir='rtl'] body {
   font-family: var(--font-arabic);
 }
 
 html[dir='rtl'] * {
-  letter-spacing: normal;
+  letter-spacing: normal !important;
 }
 
 html[dir='rtl'] .uppercase,
@@ -136,23 +174,24 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
+  font-weight: 700;
 }
 
 /* ═══════════════════ SCROLLBARS ═══════════════════ */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-background);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-muted);
+  background: rgba(255, 255, 255, 0.22);
 }
 
 /* ═══════════════════ MOTION PRIMITIVES ═══════════════════ */
@@ -161,60 +200,59 @@ h4 {
   to { opacity: 1; }
 }
 @keyframes slideUp {
-  from { transform: translateY(16px); opacity: 0; }
+  from { transform: translateY(12px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
 @keyframes slideDown {
-  from { transform: translateY(-16px); opacity: 0; }
+  from { transform: translateY(-12px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
 @keyframes scaleIn {
-  from { transform: scale(0.96); opacity: 0; }
+  from { transform: scale(0.97); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
 @keyframes pulseLimeGlow {
-  0% { box-shadow: 0 0 0 0 rgba(149, 232, 16, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(149, 232, 16, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(149, 232, 16, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(142, 224, 0, 0.35); }
+  70% { box-shadow: 0 0 0 8px rgba(142, 224, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(142, 224, 0, 0); }
 }
 
-.animate-fade-in { animation: fadeIn 0.25s ease-out forwards; }
-.animate-slide-up { animation: slideUp 0.35s ease-out forwards; }
-.animate-slide-down { animation: slideDown 0.35s ease-out forwards; }
-.animate-scale-in { animation: scaleIn 0.25s ease-out forwards; }
+.animate-fade-in { animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-slide-up { animation: slideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-slide-down { animation: slideDown 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-scale-in { animation: scaleIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 .animate-pulse-glow { animation: pulseLimeGlow 2s infinite; }
 
-/* Press haptic — one shared personality for every tappable surface. */
+/* Apple-style Tactile Press Interaction */
 .btn-haptic {
   transition:
-    transform 0.12s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.12s cubic-bezier(0.4, 0, 0.2, 1),
-    filter 0.12s ease;
+    transform 0.15s cubic-bezier(0.2, 0.9, 0.4, 1),
+    filter 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
 }
 .btn-haptic:active {
   transform: scale(0.97);
 }
 
-/* ═══════════════════ SURFACES ═══════════════════ */
+/* ═══════════════════ APPLE FROSTED GLASS SURFACES ═══════════════════ */
 .glass-card {
-  background: rgba(12, 16, 23, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(28, 35, 49, 0.7);
+  background: rgba(15, 20, 29, 0.78);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-panel-elevated {
-  background: rgba(19, 25, 35, 0.9);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(46, 56, 76, 0.6);
+  background: rgba(22, 28, 39, 0.86);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.6);
 }
 
 .gradient-text-lime {
-  background: linear-gradient(135deg, #95e810 0%, #72d410 50%, #52b916 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-lime);
 }
 
 .scrollbar-hidden {

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, IBM_Plex_Sans_Arabic } from 'next/font/google';
+import { Inter, IBM_Plex_Sans_Arabic, Barlow_Condensed } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
 import { ToastProvider } from '@/components/shared/toast';
@@ -19,6 +19,14 @@ const plexArabic = IBM_Plex_Sans_Arabic({
   subsets: ['arabic'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-plex-arabic',
+  display: 'swap',
+});
+
+// DIN-style condensed — authentic FUT/EA FC card typography
+const barlowCondensed = Barlow_Condensed({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-barlow-condensed',
   display: 'swap',
 });
 
@@ -140,7 +148,7 @@ export default function RootLayout({
     <html
       lang="en"
       dir="ltr"
-      className={`dark ${inter.variable} ${plexArabic.variable}`}
+      className={`dark ${inter.variable} ${plexArabic.variable} ${barlowCondensed.variable}`}
     >
       <head>
         <script

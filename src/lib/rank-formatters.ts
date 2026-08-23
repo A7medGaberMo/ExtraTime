@@ -132,3 +132,16 @@ export function getCategoryBadgeInfo(
     style: minimalStyle,
   };
 }
+
+/**
+ * Parses raw entity name with potential bracketed season/context tags:
+ * e.g., "Cristiano Ronaldo (2007/08)" -> { mainName: "Cristiano Ronaldo", tag: "2007/08" }
+ */
+export function parseEntityName(rawName: string): { mainName: string; tag: string | null } {
+  if (!rawName) return { mainName: '', tag: null };
+  const match = rawName.match(/^(.+?)\s*[\(\[]([^\)\]]+)[\)\]]$/);
+  if (match) {
+    return { mainName: match[1].trim(), tag: match[2].trim() };
+  }
+  return { mainName: rawName.trim(), tag: null };
+}

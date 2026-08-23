@@ -4,23 +4,18 @@ import React from 'react';
 import Image from 'next/image';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
-import { usePathname } from 'next/navigation';
 import { Database } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
+import { useIsGameplay } from '@/hooks/use-is-gameplay';
 import { useI18n } from '@/lib/i18n';
 
 export function Footer() {
-  const pathname = usePathname();
+  const isGameplay = useIsGameplay();
   const { t } = useI18n();
   const dbStats = useQuery(api.players.queries.getStats);
   const playerCount = dbStats === undefined ? '...' : dbStats.totalPlayers.toLocaleString();
 
   // Hide footer during active gameplay to maximize vertical real estate
-  const isGameplay =
-    pathname.startsWith('/auction/') ||
-    pathname.startsWith('/room/') ||
-    (pathname.startsWith('/rank/') && pathname !== '/rank');
-
   if (isGameplay) {
     return null;
   }
@@ -38,17 +33,18 @@ export function Footer() {
               sizes="24px"
             />
           </div>
-          <span className="text-steel text-sm font-black tracking-wider font-stats">
-            Extra<span className="text-lime">Time</span>
+          <span className="text-steel text-sm font-semibold tracking-wider font-stats">
+            Extra<span className="text-lime font-bold">Time</span>
           </span>
         </div>
 
         <div className="text-steel inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-3.5 py-1 text-xs font-medium shadow-inner">
-          <AppIcon icon={Database} size={14} weight="duotone" className="text-lime" />
+          <AppIcon icon={Database} size={14} weight="bold" className="text-lime" />
           <span>{t('home.databaseStat.title')}:</span>
-          <span className="font-stats font-black text-white">{playerCount}</span>
+          <span className="font-stats font-bold text-white">{playerCount}</span>
         </div>
       </div>
     </footer>
   );
 }
+

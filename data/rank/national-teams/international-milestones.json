@@ -5,7 +5,16 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["national-teams", "unbeaten", "records", "italy", "argentina", "spain", "france", "colombia"],
+    "tags": [
+      "national-teams",
+      "unbeaten",
+      "records",
+      "italy",
+      "argentina",
+      "spain",
+      "france",
+      "colombia"
+    ],
     "title": {
       "en": "Rank these 5 national teams by longest unbeaten match streak in international football history",
       "ar": "رتّب المنتخبات الخمسة حسب أطول سلسلة مباريات متتالية دون هزيمة في تاريخ كرة القدم الدولية"
@@ -14,52 +23,115 @@
       "en": "Consecutive international matches without defeat",
       "ar": "المباريات الدولية المتتالية دون خسارة للمنتخب الأول"
     },
-    "metricLabel": { "en": "Unbeaten Matches", "ar": "مباريات دون هزيمة" },
+    "metricLabel": {
+      "en": "Unbeaten Matches",
+      "ar": "مباريات دون هزيمة"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "unbi_italy",
-        "name": { "en": "Italy (2018–2021)", "ar": "إيطاليا (2018–2021)" },
-        "subText": { "en": "Roberto Mancini (All-Time World Record)", "ar": "روبرتو مانشيني (الرقم القياسي العالمي التاريخي)" },
-        "media": { "type": "nation", "fallbackText": "ITA" },
+        "name": {
+          "en": "Italy (2018–2021)",
+          "ar": "إيطاليا (2018–2021)"
+        },
+        "subText": {
+          "en": "Roberto Mancini",
+          "ar": "روبرتو مانشيني (الرقم القياسي العالمي التاريخي)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA"
+        },
         "value": 37,
-        "valueLabel": { "en": "37 Matches", "ar": "37 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "37 Matches",
+          "ar": "37 مباراة دون هزيمة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "unbi_argentina",
-        "name": { "en": "Argentina (2019–2022)", "ar": "الأرجنتين (2019–2022)" },
-        "subText": { "en": "Lionel Scaloni (La Scaloneta)", "ar": "ليونيل سكالوني (لا سكالونيتا)" },
-        "media": { "type": "nation", "fallbackText": "ARG" },
+        "name": {
+          "en": "Argentina (2019–2022)",
+          "ar": "الأرجنتين (2019–2022)"
+        },
+        "subText": {
+          "en": "Lionel Scaloni (La Scaloneta)",
+          "ar": "ليونيل سكالوني (لا سكالونيتا)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG"
+        },
         "value": 36,
-        "valueLabel": { "en": "36 Matches", "ar": "36 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "36 Matches",
+          "ar": "36 مباراة دون هزيمة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "unbi_spain",
-        "name": { "en": "Spain (2006–2009)", "ar": "إسبانيا (2006–2009)" },
-        "subText": { "en": "Luis Aragonés & Vicente del Bosque", "ar": "لويس أراغونيس وفيثينتي ديل بوسكي" },
-        "media": { "type": "nation", "fallbackText": "ESP" },
+        "name": {
+          "en": "Spain (2006–2009)",
+          "ar": "إسبانيا (2006–2009)"
+        },
+        "subText": {
+          "en": "Luis Aragonés & Vicente del Bosque",
+          "ar": "لويس أراغونيس وفيثينتي ديل بوسكي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP"
+        },
         "value": 35,
-        "valueLabel": { "en": "35 Matches", "ar": "35 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "35 Matches",
+          "ar": "35 مباراة دون هزيمة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "unbi_france",
-        "name": { "en": "France (1994–1999)", "ar": "فرنسا (1994–1999)" },
-        "subText": { "en": "Aimé Jacquet (1998 World Cup Era)", "ar": "إيميه جاكيه (جيل بطل مونديال 1998)" },
-        "media": { "type": "nation", "fallbackText": "FRA" },
+        "name": {
+          "en": "France (1994–1999)",
+          "ar": "فرنسا (1994–1999)"
+        },
+        "subText": {
+          "en": "Aimé Jacquet (1998 World Cup Era)",
+          "ar": "إيميه جاكيه (جيل بطل مونديال 1998)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA"
+        },
         "value": 30,
-        "valueLabel": { "en": "30 Matches", "ar": "30 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "30 Matches",
+          "ar": "30 مباراة دون هزيمة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "unbi_colombia",
-        "name": { "en": "Colombia (2022–2024)", "ar": "كولومبيا (2022–2024)" },
-        "subText": { "en": "Néstor Lorenzo (2024 Copa Finalists)", "ar": "نيستور لورينزو (وصيف كوبا أمريكا 2024)" },
-        "media": { "type": "nation", "fallbackText": "COL" },
+        "name": {
+          "en": "Colombia (2022–2024)",
+          "ar": "كولومبيا (2022–2024)"
+        },
+        "subText": {
+          "en": "Néstor Lorenzo (2024 Copa Finalists)",
+          "ar": "نيستور لورينزو (وصيف كوبا أمريكا 2024)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "COL"
+        },
         "value": 28,
-        "valueLabel": { "en": "28 Matches", "ar": "28 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "28 Matches",
+          "ar": "28 مباراة دون هزيمة"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +142,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["olympics", "medals", "brazil", "spain", "argentina", "nigeria", "germany"],
+    "tags": [
+      "olympics",
+      "medals",
+      "brazil",
+      "spain",
+      "argentina",
+      "nigeria",
+      "germany"
+    ],
     "title": {
       "en": "Rank these 5 nations by total Olympic Men's Football tournament medals won (Gold, Silver, Bronze)",
       "ar": "رتّب المنتخبات الخمسة حسب إجمالي الميداليات الأولمبية في كرة القدم للرجال (ذهب، فضة، برونز)"
@@ -79,52 +159,115 @@
       "en": "Total Olympic podium medals in Men's Football history",
       "ar": "مجموع الميداليات الأولمبية في تاريخ منافسات كرة القدم للرجال"
     },
-    "metricLabel": { "en": "Medals", "ar": "ميداليات" },
+    "metricLabel": {
+      "en": "Medals",
+      "ar": "ميداليات"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "olb_brazil",
-        "name": { "en": "Brazil", "ar": "البرازيل" },
-        "subText": { "en": "2 Gold, 3 Silver, 2 Bronze (All-Time Record)", "ar": "2 ذهب، 3 فضة، 2 برونز (الرقم القياسي التاريخي)" },
-        "media": { "type": "nation", "fallbackText": "BRA" },
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "2 Gold, 3 Silver, 2 Bronze",
+          "ar": "2 ذهب، 3 فضة، 2 برونز (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Medals", "ar": "7 ميداليات أولمبية" },
+        "valueLabel": {
+          "en": "7 Medals",
+          "ar": "7 ميداليات أولمبية"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "olb_spain",
-        "name": { "en": "Spain", "ar": "إسبانيا" },
-        "subText": { "en": "2 Gold (1992, 2024), 3 Silver", "ar": "2 ذهب (1992، 2024)، 3 فضة" },
-        "media": { "type": "nation", "fallbackText": "ESP" },
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "subText": {
+          "en": "2 Gold (1992, 2024), 3 Silver",
+          "ar": "2 ذهب (1992، 2024)، 3 فضة"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP"
+        },
         "value": 5,
-        "valueLabel": { "en": "5 Medals", "ar": "5 ميداليات أولمبية" },
+        "valueLabel": {
+          "en": "5 Medals",
+          "ar": "5 ميداليات أولمبية"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "olb_argentina",
-        "name": { "en": "Argentina", "ar": "الأرجنتين" },
-        "subText": { "en": "2 Gold (2004, 2008), 2 Silver", "ar": "2 ذهب (2004، 2008)، 2 فضة" },
-        "media": { "type": "nation", "fallbackText": "ARG" },
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "2 Gold (2004, 2008), 2 Silver",
+          "ar": "2 ذهب (2004، 2008)، 2 فضة"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Medals", "ar": "4 ميداليات أولمبية" },
+        "valueLabel": {
+          "en": "4 Medals",
+          "ar": "4 ميداليات أولمبية"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "olb_nigeria",
-        "name": { "en": "Nigeria", "ar": "نيجيريا" },
-        "subText": { "en": "1 Gold (1996), 1 Silver (2008), 1 Bronze (2016)", "ar": "1 ذهب (1996)، 1 فضة (2008)، 1 برونز (2016)" },
-        "media": { "type": "nation", "fallbackText": "NGA" },
+        "name": {
+          "en": "Nigeria",
+          "ar": "نيجيريا"
+        },
+        "subText": {
+          "en": "1 Gold (1996), 1 Silver (2008), 1 Bronze (2016)",
+          "ar": "1 ذهب (1996)، 1 فضة (2008)، 1 برونز (2016)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NGA"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Medals", "ar": "3 ميداليات أولمبية" },
+        "valueLabel": {
+          "en": "3 Medals",
+          "ar": "3 ميداليات أولمبية"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "olb_germany",
-        "name": { "en": "Germany", "ar": "ألمانيا" },
-        "subText": { "en": "1 Silver (2016), 1 Bronze (1988)", "ar": "1 فضة (2016)، 1 برونز (1988)" },
-        "media": { "type": "nation", "fallbackText": "GER" },
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "subText": {
+          "en": "1 Silver (2016), 1 Bronze (1988)",
+          "ar": "1 فضة (2016)، 1 برونز (1988)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Medals", "ar": "ميداليتان أولمبيتان" },
+        "valueLabel": {
+          "en": "2 Medals",
+          "ar": "ميداليتان أولمبيتان"
+        },
         "correctRank": 5
       }
     ]
@@ -135,7 +278,16 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["afc", "asia", "asian-cup", "japan", "saudi", "qatar", "australia", "jordan"],
+    "tags": [
+      "afc",
+      "asia",
+      "asian-cup",
+      "japan",
+      "saudi",
+      "qatar",
+      "australia",
+      "jordan"
+    ],
     "title": {
       "en": "Rank these 5 Asian nations by AFC Asian Cup titles won",
       "ar": "رتّب المنتخبات الآسيوية الخمسة حسب عدد ألقاب كأس أمم آسيا"
@@ -144,52 +296,115 @@
       "en": "Official AFC Asian Cup championships won",
       "ar": "بطولات كأس أمم آسيا عبر التاريخ"
     },
-    "metricLabel": { "en": "Titles", "ar": "ألقاب" },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "afc_japan",
-        "name": { "en": "Japan", "ar": "اليابان" },
-        "subText": { "en": "4 Titles (1992, 2000, 2004, 2011 - All-Time Record)", "ar": "4 ألقاب (1992، 2000، 2004، 2011 - رقم قياسي)" },
-        "media": { "type": "nation", "fallbackText": "JPN" },
+        "name": {
+          "en": "Japan",
+          "ar": "اليابان"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "JPN"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Titles", "ar": "4 ألقاب" },
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "afc_saudi",
-        "name": { "en": "Saudi Arabia", "ar": "المملكة العربية السعودية" },
-        "subText": { "en": "3 Titles (1984, 1988, 1996)", "ar": "3 ألقاب (1984، 1988، 1996)" },
-        "media": { "type": "nation", "fallbackText": "KSA" },
+        "name": {
+          "en": "Saudi Arabia",
+          "ar": "المملكة العربية السعودية"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "KSA"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Titles", "ar": "3 ألقاب" },
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "afc_qatar",
-        "name": { "en": "Qatar", "ar": "قطر" },
-        "subText": { "en": "2 Titles (Back-to-back: 2019, 2023)", "ar": "لقبان (تتويجان متتاليان: 2019، 2023)" },
-        "media": { "type": "nation", "fallbackText": "QAT" },
+        "name": {
+          "en": "Qatar",
+          "ar": "قطر"
+        },
+        "subText": {
+          "en": "",
+          "ar": "لقبان (تتويجان متتاليان: 2019، 2023)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "QAT"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Titles", "ar": "لقبان" },
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "afc_australia",
-        "name": { "en": "Australia", "ar": "أستراليا" },
-        "subText": { "en": "1 Title (2015 Champions)", "ar": "لقب واحد (بطل نسخة 2015)" },
-        "media": { "type": "nation", "fallbackText": "AUS" },
+        "name": {
+          "en": "Australia",
+          "ar": "أستراليا"
+        },
+        "subText": {
+          "en": "1 Title (2015 Champions)",
+          "ar": "لقب واحد (بطل نسخة 2015)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "AUS"
+        },
         "value": 1,
-        "valueLabel": { "en": "1 Title", "ar": "لقب واحد" },
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "afc_jordan",
-        "name": { "en": "Jordan", "ar": "الأردن" },
-        "subText": { "en": "0 Titles (Historic 2023 Finalists)", "ar": "0 ألقاب (وصيف نسخة 2023 التاريخية)" },
-        "media": { "type": "nation", "fallbackText": "JOR" },
+        "name": {
+          "en": "Jordan",
+          "ar": "الأردن"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "JOR"
+        },
         "value": 0,
-        "valueLabel": { "en": "0 Titles", "ar": "0 ألقاب" },
+        "valueLabel": {
+          "en": "0 Titles",
+          "ar": "0 ألقاب"
+        },
         "correctRank": 5
       }
     ]
@@ -200,7 +415,15 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["concacaf", "gold-cup", "mexico", "usa", "costa-rica", "canada", "honduras"],
+    "tags": [
+      "concacaf",
+      "gold-cup",
+      "mexico",
+      "usa",
+      "costa-rica",
+      "canada",
+      "honduras"
+    ],
     "title": {
       "en": "Rank these 5 North and Central American nations by total CONCACAF senior titles won",
       "ar": "رتّب منتخبات الكونكاكاف الخمسة حسب عدد ألقاب بطولة أمريكا الشمالية والوسطى (الكأس الذهبية)"
@@ -209,52 +432,115 @@
       "en": "Combined CONCACAF Championship (1963–1989) & Gold Cup (1991–present)",
       "ar": "إجمالي بطولات كأس الكونكاكاف والكأس الذهبية مجتمعة"
     },
-    "metricLabel": { "en": "Titles", "ar": "ألقاب" },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "con_mexico",
-        "name": { "en": "Mexico", "ar": "المكسيك" },
-        "subText": { "en": "12 Titles (9 Gold Cups, 3 CONCACAF Champs - Record)", "ar": "12 لقبًا (9 كؤوس ذهبية، 3 بطولة كونكاكاف - رقم قياسي)" },
-        "media": { "type": "nation", "fallbackText": "MEX" },
+        "name": {
+          "en": "Mexico",
+          "ar": "المكسيك"
+        },
+        "subText": {
+          "en": "",
+          "ar": "12 لقبًا (9 كؤوس ذهبية، 3 بطولة كونكاكاف - رقم قياسي)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "MEX"
+        },
         "value": 12,
-        "valueLabel": { "en": "12 Titles", "ar": "12 لقبًا" },
+        "valueLabel": {
+          "en": "12 Titles",
+          "ar": "12 لقبًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "con_usa",
-        "name": { "en": "United States", "ar": "الولايات المتحدة الأمريكية" },
-        "subText": { "en": "7 Titles (1991, 2002, 2005, 2007, 2013, 2017, 2021)", "ar": "7 ألقاب للكأس الذهبية" },
-        "media": { "type": "nation", "fallbackText": "USA" },
+        "name": {
+          "en": "United States",
+          "ar": "الولايات المتحدة الأمريكية"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "USA"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Titles", "ar": "7 ألقاب" },
+        "valueLabel": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "con_costarica",
-        "name": { "en": "Costa Rica", "ar": "كوستاريكا" },
-        "subText": { "en": "3 Titles (1963, 1969, 1989)", "ar": "3 ألقاب (1963، 1969، 1989)" },
-        "media": { "type": "nation", "fallbackText": "CRC" },
+        "name": {
+          "en": "Costa Rica",
+          "ar": "كوستاريكا"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CRC"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Titles", "ar": "3 ألقاب" },
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "con_canada",
-        "name": { "en": "Canada", "ar": "كندا" },
-        "subText": { "en": "2 Titles (1985, 2000 Gold Cup)", "ar": "لقبان (1985، 2000)" },
-        "media": { "type": "nation", "fallbackText": "CAN" },
+        "name": {
+          "en": "Canada",
+          "ar": "كندا"
+        },
+        "subText": {
+          "en": "",
+          "ar": "لقبان (1985، 2000)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CAN"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Titles", "ar": "لقبان" },
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "con_honduras",
-        "name": { "en": "Honduras", "ar": "هندوراس" },
-        "subText": { "en": "1 Title (1981 Champions)", "ar": "لقب واحد (بطل 1981)" },
-        "media": { "type": "nation", "fallbackText": "HON" },
+        "name": {
+          "en": "Honduras",
+          "ar": "هندوراس"
+        },
+        "subText": {
+          "en": "1 Title (1981 Champions)",
+          "ar": "لقب واحد (بطل 1981)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "HON"
+        },
         "value": 1,
-        "valueLabel": { "en": "1 Title", "ar": "لقب واحد" },
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
         "correctRank": 5
       }
     ]
@@ -265,7 +551,16 @@
     "difficulty": "VERY_HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["world-cup", "coaches", "managers", "schon", "parreira", "scolari", "zagallo", "deschamps"],
+    "tags": [
+      "world-cup",
+      "coaches",
+      "managers",
+      "schon",
+      "parreira",
+      "scolari",
+      "zagallo",
+      "deschamps"
+    ],
     "title": {
       "en": "Rank these 5 legendary managers by total FIFA World Cup matches coached",
       "ar": "رتّب المدربين الأساطير الخمسة حسب عدد المباريات التي قادوها من دكة البدلاء في كأس العالم"
@@ -274,52 +569,115 @@
       "en": "Total matches as head coach in FIFA World Cup finals",
       "ar": "إجمالي المباريات كمدير فني في نهائيات كأس العالم"
     },
-    "metricLabel": { "en": "Matches Coached", "ar": "مباريات تدريبية" },
+    "metricLabel": {
+      "en": "Matches Coached",
+      "ar": "مباريات تدريبية"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "wcc_schon",
-        "name": { "en": "Helmut Schön", "ar": "هيلموت شون" },
-        "subText": { "en": "West Germany (4 Tournaments 1966–1978 - All-Time Record)", "ar": "ألمانيا الغربية (4 بطولات 1966–1978 - رقم قياسي)" },
-        "media": { "type": "custom", "fallbackText": "SCH" },
+        "name": {
+          "en": "Helmut Schön",
+          "ar": "هيلموت شون"
+        },
+        "subText": {
+          "en": "West Germany (4 Tournaments 1966–1978 - All-Time Record)",
+          "ar": "ألمانيا الغربية"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "SCH"
+        },
         "value": 25,
-        "valueLabel": { "en": "25 Matches", "ar": "25 مباراة" },
+        "valueLabel": {
+          "en": "25 Matches",
+          "ar": "25 مباراة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "wcc_parreira",
-        "name": { "en": "Carlos Alberto Parreira", "ar": "كارلوس ألبرتو بيريرا" },
-        "subText": { "en": "Kuwait, UAE, Brazil, Saudi Arabia, South Africa (6 World Cups)", "ar": "الكويت والإمارات والبرازيل والسعودية وجنوب إفريقيا (6 مونديالات)" },
-        "media": { "type": "custom", "fallbackText": "CAP" },
+        "name": {
+          "en": "Carlos Alberto Parreira",
+          "ar": "كارلوس ألبرتو بيريرا"
+        },
+        "subText": {
+          "en": "Kuwait, UAE, Brazil, Saudi Arabia, South Africa (6 World Cups)",
+          "ar": "الكويت والإمارات والبرازيل والسعودية وجنوب إفريقيا (6 مونديالات)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "CAP"
+        },
         "value": 24,
-        "valueLabel": { "en": "24 Matches", "ar": "24 مباراة" },
+        "valueLabel": {
+          "en": "24 Matches",
+          "ar": "24 مباراة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "wcc_scolari",
-        "name": { "en": "Luiz Felipe Scolari", "ar": "لويس فيليبي سكولاري" },
-        "subText": { "en": "Brazil (2002, 2014) & Portugal (2006)", "ar": "البرازيل (2002، 2014) والبرتغال (2006)" },
-        "media": { "type": "custom", "fallbackText": "LFS" },
+        "name": {
+          "en": "Luiz Felipe Scolari",
+          "ar": "لويس فيليبي سكولاري"
+        },
+        "subText": {
+          "en": "Brazil (2002, 2014) & Portugal (2006)",
+          "ar": "البرازيل (2002، 2014) والبرتغال (2006)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "LFS"
+        },
         "value": 21,
-        "valueLabel": { "en": "21 Matches", "ar": "21 مباراة" },
+        "valueLabel": {
+          "en": "21 Matches",
+          "ar": "21 مباراة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "wcc_zagallo",
-        "name": { "en": "Mário Zagallo", "ar": "ماريو زاغالو" },
-        "subText": { "en": "Brazil (1970, 1974, 1998)", "ar": "البرازيل (1970، 1974، 1998)" },
-        "media": { "type": "custom", "fallbackText": "ZAG" },
+        "name": {
+          "en": "Mário Zagallo",
+          "ar": "ماريو زاغالو"
+        },
+        "subText": {
+          "en": "Brazil (1970, 1974, 1998)",
+          "ar": "البرازيل (1970، 1974، 1998)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "ZAG"
+        },
         "value": 20,
-        "valueLabel": { "en": "20 Matches", "ar": "20 مباراة" },
+        "valueLabel": {
+          "en": "20 Matches",
+          "ar": "20 مباراة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "wcc_deschamps",
-        "name": { "en": "Didier Deschamps", "ar": "ديدييه ديشان" },
-        "subText": { "en": "France (2014, 2018 Champion, 2022 Finalist)", "ar": "فرنسا (2014، بطل 2018، وصيف 2022)" },
-        "media": { "type": "custom", "fallbackText": "DD" },
+        "name": {
+          "en": "Didier Deschamps",
+          "ar": "ديدييه ديشان"
+        },
+        "subText": {
+          "en": "France (2014, 2018 Champion, 2022 Finalist)",
+          "ar": "فرنسا (2014، بطل 2018، وصيف 2022)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "DD"
+        },
         "value": 19,
-        "valueLabel": { "en": "19 Matches", "ar": "19 مباراة" },
+        "valueLabel": {
+          "en": "19 Matches",
+          "ar": "19 مباراة"
+        },
         "correctRank": 5
       }
     ]
@@ -330,7 +688,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["world-cup", "red-cards", "brazil", "argentina", "uruguay", "italy", "portugal"],
+    "tags": [
+      "world-cup",
+      "red-cards",
+      "brazil",
+      "argentina",
+      "uruguay",
+      "italy",
+      "portugal"
+    ],
     "title": {
       "en": "Rank these 5 national teams by career FIFA World Cup red cards received",
       "ar": "رتّب المنتخبات الخمسة حسب عدد البطاقات الحمراء في تاريخ نهائيات كأس العالم"
@@ -339,52 +705,115 @@
       "en": "Total dismissals in FIFA World Cup finals history",
       "ar": "إجمالي حالات الطرد والبطاقات الحمراء في تاريخ كأس العالم"
     },
-    "metricLabel": { "en": "Red Cards", "ar": "بطاقات حمراء" },
+    "metricLabel": {
+      "en": "Red Cards",
+      "ar": "بطاقات حمراء"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "wcr_brazil",
-        "name": { "en": "Brazil", "ar": "البرازيل" },
-        "subText": { "en": "11 Red Cards (All-Time Record Holder)", "ar": "11 بطاقة حمراء (الرقم القياسي في تاريخ المونديال)" },
-        "media": { "type": "nation", "fallbackText": "BRA" },
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "",
+          "ar": "11 بطاقة حمراء (الرقم القياسي في تاريخ المونديال)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA"
+        },
         "value": 11,
-        "valueLabel": { "en": "11 Red Cards", "ar": "11 بطاقة حمراء" },
+        "valueLabel": {
+          "en": "11 Red Cards",
+          "ar": "11 بطاقة حمراء"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "wcr_argentina",
-        "name": { "en": "Argentina", "ar": "الأرجنتين" },
-        "subText": { "en": "10 Red Cards", "ar": "10 بطاقات حمراء" },
-        "media": { "type": "nation", "fallbackText": "ARG" },
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG"
+        },
         "value": 10,
-        "valueLabel": { "en": "10 Red Cards", "ar": "10 بطاقات حمراء" },
+        "valueLabel": {
+          "en": "10 Red Cards",
+          "ar": "10 بطاقات حمراء"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "wcr_uruguay",
-        "name": { "en": "Uruguay", "ar": "الأوروغواي" },
-        "subText": { "en": "9 Red Cards", "ar": "9 بطاقات حمراء" },
-        "media": { "type": "nation", "fallbackText": "URU" },
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروغواي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU"
+        },
         "value": 9,
-        "valueLabel": { "en": "9 Red Cards", "ar": "9 بطاقات حمراء" },
+        "valueLabel": {
+          "en": "9 Red Cards",
+          "ar": "9 بطاقات حمراء"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "wcr_italy",
-        "name": { "en": "Italy", "ar": "إيطاليا" },
-        "subText": { "en": "8 Red Cards", "ar": "8 بطاقات حمراء" },
-        "media": { "type": "nation", "fallbackText": "ITA" },
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Red Cards", "ar": "8 بطاقات حمراء" },
+        "valueLabel": {
+          "en": "8 Red Cards",
+          "ar": "8 بطاقات حمراء"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "wcr_portugal",
-        "name": { "en": "Portugal", "ar": "البرتغال" },
-        "subText": { "en": "6 Red Cards (Battle of Nuremberg included)", "ar": "6 بطاقات حمراء (تشمل معركة نورمبرغ 2006)" },
-        "media": { "type": "nation", "fallbackText": "POR" },
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR"
+        },
         "value": 6,
-        "valueLabel": { "en": "6 Red Cards", "ar": "6 بطاقات حمراء" },
+        "valueLabel": {
+          "en": "6 Red Cards",
+          "ar": "6 بطاقات حمراء"
+        },
         "correctRank": 5
       }
     ]
@@ -395,7 +824,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["copa-america", "goals", "argentina", "brazil", "uruguay", "chile", "paraguay"],
+    "tags": [
+      "copa-america",
+      "goals",
+      "argentina",
+      "brazil",
+      "uruguay",
+      "chile",
+      "paraguay"
+    ],
     "title": {
       "en": "Rank these 5 South American nations by all-time Copa América goals scored",
       "ar": "رتّب المنتخبات الخمسة حسب إجمالي الأهداف المسجلة في تاريخ بطولة كوبا أمريكا"
@@ -404,52 +841,115 @@
       "en": "Total goals scored in Copa América tournament history",
       "ar": "إجمالي الأهداف في تاريخ كوبا أمريكا"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "cag_argentina",
-        "name": { "en": "Argentina", "ar": "الأرجنتين" },
-        "subText": { "en": "483 Goals (All-Time Record Holder)", "ar": "483 هدفًا (الرقم القياسي التاريخي)" },
-        "media": { "type": "nation", "fallbackText": "ARG" },
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG"
+        },
         "value": 483,
-        "valueLabel": { "en": "483 Goals", "ar": "483 هدفًا" },
+        "valueLabel": {
+          "en": "483 Goals",
+          "ar": "483 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "cag_brazil",
-        "name": { "en": "Brazil", "ar": "البرازيل" },
-        "subText": { "en": "435 Goals", "ar": "435 هدفًا" },
-        "media": { "type": "nation", "fallbackText": "BRA" },
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA"
+        },
         "value": 435,
-        "valueLabel": { "en": "435 Goals", "ar": "435 هدفًا" },
+        "valueLabel": {
+          "en": "435 Goals",
+          "ar": "435 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "cag_uruguay",
-        "name": { "en": "Uruguay", "ar": "الأوروغواي" },
-        "subText": { "en": "418 Goals", "ar": "418 هدفًا" },
-        "media": { "type": "nation", "fallbackText": "URU" },
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروغواي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU"
+        },
         "value": 418,
-        "valueLabel": { "en": "418 Goals", "ar": "418 هدفًا" },
+        "valueLabel": {
+          "en": "418 Goals",
+          "ar": "418 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "cag_chile",
-        "name": { "en": "Chile", "ar": "تشيلي" },
-        "subText": { "en": "291 Goals", "ar": "291 هدفًا" },
-        "media": { "type": "nation", "fallbackText": "CHI" },
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI"
+        },
         "value": 291,
-        "valueLabel": { "en": "291 Goals", "ar": "291 هدفًا" },
+        "valueLabel": {
+          "en": "291 Goals",
+          "ar": "291 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "cag_paraguay",
-        "name": { "en": "Paraguay", "ar": "باراغواي" },
-        "subText": { "en": "267 Goals", "ar": "267 هدفًا" },
-        "media": { "type": "nation", "fallbackText": "PAR" },
+        "name": {
+          "en": "Paraguay",
+          "ar": "باراغواي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "PAR"
+        },
         "value": 267,
-        "valueLabel": { "en": "267 Goals", "ar": "267 هدفًا" },
+        "valueLabel": {
+          "en": "267 Goals",
+          "ar": "267 هدفًا"
+        },
         "correctRank": 5
       }
     ]

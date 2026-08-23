@@ -94,18 +94,27 @@ export const getGameState = query({
       const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion.slug}`;
       const scrambledCards = seededShuffle(rawQuestion.answers, roundSeed);
 
-      const sanitizedAnswers = scrambledCards.map((ans) => ({
-        answerKey: ans.answerKey,
-        name: ans.name[locale],
-        subText: ans.subText ? ans.subText[locale] : undefined,
-        media: ans.media,
-        // Value, valueLabel, and correctRank are STRIPPED
-        value: undefined,
-        valueLabel: undefined,
-        correctRank: undefined,
-      }));
+      const sanitizedAnswers = scrambledCards.map((ans) => {
+        let cleanSubText = ans.subText ? ans.subText[locale] : undefined;
+        if (cleanSubText) {
+          // Defense-in-depth: strip any leading numbers or naked stat counts during active guessing
+          cleanSubText = cleanSubText.replace(/^\d+.*$/g, '').trim() || undefined;
+        }
+
+        return {
+          answerKey: ans.answerKey,
+          name: ans.name[locale],
+          subText: cleanSubText,
+          media: ans.media,
+          // Value, valueLabel, and correctRank are STRIPPED
+          value: undefined,
+          valueLabel: undefined,
+          correctRank: undefined,
+        };
+      });
 
       return {
+
         _id: game._id,
         code: game.code,
         mode: game.mode,

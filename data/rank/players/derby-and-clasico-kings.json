@@ -5,7 +5,16 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["el-clasico", "spain", "real-madrid", "barcelona", "messi", "ronaldo", "benzema", "raul"],
+    "tags": [
+      "el-clasico",
+      "spain",
+      "real-madrid",
+      "barcelona",
+      "messi",
+      "ronaldo",
+      "benzema",
+      "raul"
+    ],
     "title": {
       "en": "Rank these 5 legends by official goals scored in El Clásico matches",
       "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية في مباريات الكلاسيكو"
@@ -14,52 +23,120 @@
       "en": "Real Madrid vs FC Barcelona all-time official matches",
       "ar": "إجمالي الأهداف في جميع مواجهات الكلاسيكو الرسمية"
     },
-    "metricLabel": { "en": "Clásico Goals", "ar": "أهداف الكلاسيكو" },
+    "metricLabel": {
+      "en": "Clásico Goals",
+      "ar": "أهداف الكلاسيكو"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ecg_messi",
-        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
-        "subText": { "en": "Barcelona (45 matches - All-Time Record)", "ar": "برشلونة (45 مباراة - الهداف التاريخي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LM10" },
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "LM10"
+        },
         "value": 26,
-        "valueLabel": { "en": "26 Goals", "ar": "26 هدفًا" },
+        "valueLabel": {
+          "en": "26 Goals",
+          "ar": "26 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ecg_cr7",
-        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
-        "subText": { "en": "Real Madrid (30 matches)", "ar": "ريال مدريد (30 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "CR7" },
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "CR7"
+        },
         "value": 18,
-        "valueLabel": { "en": "18 Goals", "ar": "18 هدفًا" },
+        "valueLabel": {
+          "en": "18 Goals",
+          "ar": "18 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ecg_benzema",
-        "name": { "en": "Karim Benzema", "ar": "كريم بنزيما" },
-        "subText": { "en": "Real Madrid (43 matches)", "ar": "ريال مدريد (43 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "KB9"
+        },
         "value": 16,
-        "valueLabel": { "en": "16 Goals", "ar": "16 هدفًا" },
+        "valueLabel": {
+          "en": "16 Goals",
+          "ar": "16 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ecg_raul",
-        "name": { "en": "Raúl González", "ar": "راؤول غونزاليس" },
-        "subText": { "en": "Real Madrid (37 matches)", "ar": "ريال مدريد (37 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "RG7" },
+        "name": {
+          "en": "Raúl González",
+          "ar": "راؤول غونزاليس"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "RG7"
+        },
         "value": 15,
-        "valueLabel": { "en": "15 Goals", "ar": "15 هدفًا" },
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ecg_cesar",
-        "name": { "en": "César Rodríguez", "ar": "سيزار رودريغيز" },
-        "subText": { "en": "Barcelona (28 matches)", "ar": "برشلونة (28 مباراة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "CES" },
+        "name": {
+          "en": "César Rodríguez",
+          "ar": "سيزار رودريغيز"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "CES"
+        },
         "value": 14,
-        "valueLabel": { "en": "14 Goals", "ar": "14 هدفًا" },
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +147,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["manchester-derby", "man-united", "man-city", "rooney", "aguero", "scholes", "rashford"],
+    "tags": [
+      "manchester-derby",
+      "man-united",
+      "man-city",
+      "rooney",
+      "aguero",
+      "scholes",
+      "rashford"
+    ],
     "title": {
       "en": "Rank these 5 stars by all-time goals scored in the Manchester Derby",
       "ar": "رتّب النجوم الخمسة حسب عدد أهدافهم في ديربي مانشستر"
@@ -79,52 +164,120 @@
       "en": "Official Manchester United vs Manchester City matches",
       "ar": "الأهداف في جميع مباريات ديربي مانشستر الرسمية"
     },
-    "metricLabel": { "en": "Derby Goals", "ar": "أهداف الديربي" },
+    "metricLabel": {
+      "en": "Derby Goals",
+      "ar": "أهداف الديربي"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "mdg_rooney",
-        "name": { "en": "Wayne Rooney", "ar": "واين روني" },
-        "subText": { "en": "Manchester United (All-Time Record)", "ar": "مانشستر يونايتد (الهداف التاريخي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "WR10" },
+        "name": {
+          "en": "Wayne Rooney",
+          "ar": "واين روني"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-utd.png",
+          "fallbackText": "WR10"
+        },
         "value": 11,
-        "valueLabel": { "en": "11 Goals", "ar": "11 هدفًا" },
+        "valueLabel": {
+          "en": "11 Goals",
+          "ar": "11 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "mdg_aguero",
-        "name": { "en": "Sergio Agüero", "ar": "سيرخيو أغويرو" },
-        "subText": { "en": "Manchester City (Most goals for City)", "ar": "مانشستر سيتي (الهداف التاريخي للسيتي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KUN" },
+        "name": {
+          "en": "Sergio Agüero",
+          "ar": "سيرخيو أغويرو"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "KUN"
+        },
         "value": 9,
-        "valueLabel": { "en": "9 Goals", "ar": "9 أهداف" },
+        "valueLabel": {
+          "en": "9 Goals",
+          "ar": "9 أهداف"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "mdg_bell",
-        "name": { "en": "Colin Bell", "ar": "كولن بيل" },
-        "subText": { "en": "Manchester City (The King of the Kippax)", "ar": "مانشستر سيتي (ملك الكيباكس)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "BEL" },
+        "name": {
+          "en": "Colin Bell",
+          "ar": "كولن بيل"
+        },
+        "subText": {
+          "en": "Manchester City (The King of the Kippax)",
+          "ar": "مانشستر سيتي (ملك الكيباكس)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "BEL"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Goals", "ar": "8 أهداف" },
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "mdg_scholes",
-        "name": { "en": "Paul Scholes", "ar": "بول سكولز" },
-        "subText": { "en": "Manchester United (The Ginger Prince)", "ar": "مانشستر يونايتد (الأمير الأشقر)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "SCH" },
+        "name": {
+          "en": "Paul Scholes",
+          "ar": "بول سكولز"
+        },
+        "subText": {
+          "en": "Manchester United (The Ginger Prince)",
+          "ar": "مانشستر يونايتد (الأمير الأشقر)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-utd.png",
+          "fallbackText": "SCH"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Goals", "ar": "7 أهداف" },
+        "valueLabel": {
+          "en": "7 Goals",
+          "ar": "7 أهداف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "mdg_rashford",
-        "name": { "en": "Marcus Rashford", "ar": "ماركوس راشفورد" },
-        "subText": { "en": "Manchester United (Modern Era)", "ar": "مانشستر يونايتد (الحقبة الحديثة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "MR10" },
+        "name": {
+          "en": "Marcus Rashford",
+          "ar": "ماركوس راشفورد"
+        },
+        "subText": {
+          "en": "Manchester United (Modern Era)",
+          "ar": "مانشستر يونايتد (الحقبة الحديثة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-utd.png",
+          "fallbackText": "MR10"
+        },
         "value": 6,
-        "valueLabel": { "en": "6 Goals", "ar": "6 أهداف" },
+        "valueLabel": {
+          "en": "6 Goals",
+          "ar": "6 أهداف"
+        },
         "correctRank": 5
       }
     ]
@@ -135,7 +288,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["derby-madonnina", "ac-milan", "inter", "shevchenko", "meazza", "nordahl", "ibrahimovic"],
+    "tags": [
+      "derby-madonnina",
+      "ac-milan",
+      "inter",
+      "shevchenko",
+      "meazza",
+      "nordahl",
+      "ibrahimovic"
+    ],
     "title": {
       "en": "Rank these 5 legends by official goals scored in the Milan Derby (Derby della Madonnina)",
       "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم في ديربي الغضب (ميلان ضد الإنتر)"
@@ -144,52 +305,118 @@
       "en": "All-time official goals in Derby della Madonnina",
       "ar": "إجمالي الأهداف الرسمية في تاريخ ديربي ميلانو"
     },
-    "metricLabel": { "en": "Derby Goals", "ar": "أهداف الديربي" },
+    "metricLabel": {
+      "en": "Derby Goals",
+      "ar": "أهداف الديربي"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "mil_sheva",
-        "name": { "en": "Andriy Shevchenko", "ar": "أندري شيفشينكو" },
-        "subText": { "en": "AC Milan (All-Time Record Holder)", "ar": "ميلان (الهداف التاريخي للديربي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/milan.png", "fallbackText": "SHE7" },
+        "name": {
+          "en": "Andriy Shevchenko",
+          "ar": "أندري شيفشينكو"
+        },
+        "subText": {
+          "en": "AC Milan",
+          "ar": "ميلان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/milan.png",
+          "fallbackText": "SHE7"
+        },
         "value": 14,
-        "valueLabel": { "en": "14 Goals", "ar": "14 هدفًا" },
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "mil_meazza",
-        "name": { "en": "Giuseppe Meazza", "ar": "جوزيبي مياتزا" },
-        "subText": { "en": "Inter Milan (12) & AC Milan (1)", "ar": "إنتر ميلان (12) وميلان (1)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/inter.png", "fallbackText": "MEA" },
+        "name": {
+          "en": "Giuseppe Meazza",
+          "ar": "جوزيبي مياتزا"
+        },
+        "subText": {
+          "en": "Inter Milan (12) & AC Milan (1)",
+          "ar": "إنتر ميلان (12) وميلان (1)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/inter.png",
+          "fallbackText": "MEA"
+        },
         "value": 13,
-        "valueLabel": { "en": "13 Goals", "ar": "13 هدفًا" },
+        "valueLabel": {
+          "en": "13 Goals",
+          "ar": "13 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "mil_nordahl",
-        "name": { "en": "Gunnar Nordahl", "ar": "غونار نوردال" },
-        "subText": { "en": "AC Milan (Gre-No-Li trio)", "ar": "ميلان (ثلاثي غرينولي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/milan.png", "fallbackText": "NOR" },
+        "name": {
+          "en": "Gunnar Nordahl",
+          "ar": "غونار نوردال"
+        },
+        "subText": {
+          "en": "AC Milan (Gre-No-Li trio)",
+          "ar": "ميلان (ثلاثي غرينولي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/milan.png",
+          "fallbackText": "NOR"
+        },
         "value": 11,
-        "valueLabel": { "en": "11 Goals", "ar": "11 هدفًا" },
+        "valueLabel": {
+          "en": "11 Goals",
+          "ar": "11 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "mil_zlatan",
-        "name": { "en": "Zlatan Ibrahimović", "ar": "زلاتان إبراهيموفيتش" },
-        "subText": { "en": "AC Milan (8) & Inter Milan (2)", "ar": "ميلان (8) وإنتر ميلان (2)" },
-        "media": { "type": "player", "fallbackText": "IBRA" },
+        "name": {
+          "en": "Zlatan Ibrahimović",
+          "ar": "زلاتان إبراهيموفيتش"
+        },
+        "subText": {
+          "en": "AC Milan (8) & Inter Milan (2)",
+          "ar": "ميلان (8) وإنتر ميلان (2)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "IBRA"
+        },
         "value": 10,
-        "valueLabel": { "en": "10 Goals", "ar": "10 أهداف" },
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "mil_candiani",
-        "name": { "en": "Enrico Candiani", "ar": "إنريكو كاندياني" },
-        "subText": { "en": "Inter Milan (7) & AC Milan (2)", "ar": "إنتر ميلان (7) وميلان (2)" },
-        "media": { "type": "player", "fallbackText": "CAN" },
+        "name": {
+          "en": "Enrico Candiani",
+          "ar": "إنريكو كاندياني"
+        },
+        "subText": {
+          "en": "Inter Milan (7) & AC Milan (2)",
+          "ar": "إنتر ميلان (7) وميلان (2)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CAN"
+        },
         "value": 9,
-        "valueLabel": { "en": "9 Goals", "ar": "9 أهداف" },
+        "valueLabel": {
+          "en": "9 Goals",
+          "ar": "9 أهداف"
+        },
         "correctRank": 5
       }
     ]
@@ -200,7 +427,16 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["north-london-derby", "arsenal", "tottenham", "kane", "adebayor", "pires", "son", "henry"],
+    "tags": [
+      "north-london-derby",
+      "arsenal",
+      "tottenham",
+      "kane",
+      "adebayor",
+      "pires",
+      "son",
+      "henry"
+    ],
     "title": {
       "en": "Rank these 5 stars by all-time goals scored in the North London Derby",
       "ar": "رتّب النجوم الخمسة حسب عدد أهدافهم في ديربي شمال لندن"
@@ -209,52 +445,119 @@
       "en": "Arsenal vs Tottenham Hotspur official matches",
       "ar": "المباريات الرسمية بين أرسنال وتوتنهام هوتسبير"
     },
-    "metricLabel": { "en": "Derby Goals", "ar": "أهداف الديربي" },
+    "metricLabel": {
+      "en": "Derby Goals",
+      "ar": "أهداف الديربي"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "nld_kane",
-        "name": { "en": "Harry Kane", "ar": "هاري كين" },
-        "subText": { "en": "Tottenham Hotspur (All-Time Record)", "ar": "توتنهام (الهداف التاريخي لديربي شمال لندن)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/tottenham.png", "fallbackText": "HK10" },
+        "name": {
+          "en": "Harry Kane",
+          "ar": "هاري كين"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur",
+          "ar": "توتنهام"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/tottenham.png",
+          "fallbackText": "HK10"
+        },
         "value": 14,
-        "valueLabel": { "en": "14 Goals", "ar": "14 هدفًا" },
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "nld_adebayor",
-        "name": { "en": "Emmanuel Adebayor", "ar": "إيمانويل أديبايور" },
-        "subText": { "en": "Arsenal (8) & Tottenham (2)", "ar": "أرسنال (8) وتوتنهام (2)" },
-        "media": { "type": "player", "fallbackText": "ADE" },
+        "name": {
+          "en": "Emmanuel Adebayor",
+          "ar": "إيمانويل أديبايور"
+        },
+        "subText": {
+          "en": "Arsenal (8) & Tottenham (2)",
+          "ar": "أرسنال (8) وتوتنهام (2)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ADE"
+        },
         "value": 10,
-        "valueLabel": { "en": "10 Goals", "ar": "10 أهداف" },
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "nld_pires",
-        "name": { "en": "Robert Pires", "ar": "روبير بيريز" },
-        "subText": { "en": "Arsenal (The Spurs Slayer)", "ar": "أرسنال (قاهر السبيرز)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "PIR" },
+        "name": {
+          "en": "Robert Pires",
+          "ar": "روبير بيريز"
+        },
+        "subText": {
+          "en": "Arsenal (The Spurs Slayer)",
+          "ar": "أرسنال (قاهر السبيرز)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "fallbackText": "PIR"
+        },
         "value": 9,
-        "valueLabel": { "en": "9 Goals", "ar": "9 أهداف" },
+        "valueLabel": {
+          "en": "9 Goals",
+          "ar": "9 أهداف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "nld_son",
-        "name": { "en": "Son Heung-min", "ar": "سون هيونغ مين" },
-        "subText": { "en": "Tottenham Hotspur", "ar": "توتنهام هوتسبير" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/tottenham.png", "fallbackText": "SON" },
+        "name": {
+          "en": "Son Heung-min",
+          "ar": "سون هيونغ مين"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur",
+          "ar": "توتنهام هوتسبير"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/tottenham.png",
+          "fallbackText": "SON"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Goals", "ar": "8 أهداف" },
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "nld_henry",
-        "name": { "en": "Thierry Henry", "ar": "تييري هنري" },
-        "subText": { "en": "Arsenal (King Henry)", "ar": "أرسنال (الملك هنري)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "TH14" },
+        "name": {
+          "en": "Thierry Henry",
+          "ar": "تييري هنري"
+        },
+        "subText": {
+          "en": "Arsenal (King Henry)",
+          "ar": "أرسنال (الملك هنري)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "fallbackText": "TH14"
+        },
         "value": 5,
-        "valueLabel": { "en": "5 Goals", "ar": "5 أهداف" },
+        "valueLabel": {
+          "en": "5 Goals",
+          "ar": "5 أهداف"
+        },
         "correctRank": 5
       }
     ]
@@ -265,7 +568,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["el-clasico", "appearances", "busquets", "messi", "benzema", "gento", "pique"],
+    "tags": [
+      "el-clasico",
+      "appearances",
+      "busquets",
+      "messi",
+      "benzema",
+      "gento",
+      "pique"
+    ],
     "title": {
       "en": "Rank these 5 legends by career El Clásico appearances",
       "ar": "رتّب الأساطير الخمسة حسب عدد مبارياتهم في الكلاسيكو"
@@ -274,52 +585,120 @@
       "en": "All-time official Real Madrid vs FC Barcelona appearances",
       "ar": "المباريات الرسمية في تاريخ مواجهات ريال مدريد وبرشلونة"
     },
-    "metricLabel": { "en": "Matches", "ar": "مباريات" },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "eca_busquets",
-        "name": { "en": "Sergio Busquets", "ar": "سيرخيو بوسكيتس" },
-        "subText": { "en": "Barcelona (All-Time Record Holder)", "ar": "برشلونة (الأكثر مشاركة في تاريخ الكلاسيكو)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "BUS" },
+        "name": {
+          "en": "Sergio Busquets",
+          "ar": "سيرخيو بوسكيتس"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة (الأكثر مشاركة في تاريخ الكلاسيكو)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "BUS"
+        },
         "value": 48,
-        "valueLabel": { "en": "48 Matches", "ar": "48 مباراة" },
+        "valueLabel": {
+          "en": "48 Matches",
+          "ar": "48 مباراة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "eca_messi",
-        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
-        "subText": { "en": "Barcelona (2004–2021)", "ar": "برشلونة (2004–2021)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LM10" },
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Barcelona (2004–2021)",
+          "ar": "برشلونة (2004–2021)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "LM10"
+        },
         "value": 45,
-        "valueLabel": { "en": "45 Matches", "ar": "45 مباراة" },
+        "valueLabel": {
+          "en": "45 Matches",
+          "ar": "45 مباراة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "eca_benzema",
-        "name": { "en": "Karim Benzema", "ar": "كريم بنزيما" },
-        "subText": { "en": "Real Madrid (2009–2023)", "ar": "ريال مدريد (2009–2023)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "subText": {
+          "en": "Real Madrid (2009–2023)",
+          "ar": "ريال مدريد (2009–2023)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "KB9"
+        },
         "value": 43,
-        "valueLabel": { "en": "43 Matches", "ar": "43 مباراة" },
+        "valueLabel": {
+          "en": "43 Matches",
+          "ar": "43 مباراة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "eca_gento",
-        "name": { "en": "Paco Gento", "ar": "باكو خينتو" },
-        "subText": { "en": "Real Madrid (1953–1971)", "ar": "ريال مدريد (1953–1971)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "GEN" },
+        "name": {
+          "en": "Paco Gento",
+          "ar": "باكو خينتو"
+        },
+        "subText": {
+          "en": "Real Madrid (1953–1971)",
+          "ar": "ريال مدريد (1953–1971)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "GEN"
+        },
         "value": 42,
-        "valueLabel": { "en": "42 Matches", "ar": "42 مباراة" },
+        "valueLabel": {
+          "en": "42 Matches",
+          "ar": "42 مباراة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "eca_pique",
-        "name": { "en": "Gerard Piqué", "ar": "جيرارد بيكيه" },
-        "subText": { "en": "Barcelona (2008–2022)", "ar": "برشلونة (2008–2022)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "PIQ" },
+        "name": {
+          "en": "Gerard Piqué",
+          "ar": "جيرارد بيكيه"
+        },
+        "subText": {
+          "en": "Barcelona (2008–2022)",
+          "ar": "برشلونة (2008–2022)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "PIQ"
+        },
         "value": 40,
-        "valueLabel": { "en": "40 Matches", "ar": "40 مباراة" },
+        "valueLabel": {
+          "en": "40 Matches",
+          "ar": "40 مباراة"
+        },
         "correctRank": 5
       }
     ]
@@ -330,7 +709,16 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["merseyside-derby", "liverpool", "everton", "rush", "dean", "gerrard", "salah", "fowler"],
+    "tags": [
+      "merseyside-derby",
+      "liverpool",
+      "everton",
+      "rush",
+      "dean",
+      "gerrard",
+      "salah",
+      "fowler"
+    ],
     "title": {
       "en": "Rank these 5 icons by official goals scored in the Merseyside Derby",
       "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم في ديربي الميرسيسايد"
@@ -339,52 +727,119 @@
       "en": "Liverpool vs Everton all-time official matches",
       "ar": "إجمالي الأهداف في تاريخ مواجهات ليفربول وإيفرتون"
     },
-    "metricLabel": { "en": "Derby Goals", "ar": "أهداف الديربي" },
+    "metricLabel": {
+      "en": "Derby Goals",
+      "ar": "أهداف الديربي"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "mer_rush",
-        "name": { "en": "Ian Rush", "ar": "إيان راش" },
-        "subText": { "en": "Liverpool (All-Time Record Holder)", "ar": "ليفربول (الهداف التاريخي لديربي الميرسيسايد)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "RUSH" },
+        "name": {
+          "en": "Ian Rush",
+          "ar": "إيان راش"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "RUSH"
+        },
         "value": 25,
-        "valueLabel": { "en": "25 Goals", "ar": "25 هدفًا" },
+        "valueLabel": {
+          "en": "25 Goals",
+          "ar": "25 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "mer_dean",
-        "name": { "en": "Dixie Dean", "ar": "ديكسي دين" },
-        "subText": { "en": "Everton (Most goals for Everton)", "ar": "إيفرتون (الهداف التاريخي لإيفرتون)" },
-        "media": { "type": "player", "fallbackText": "DEAN" },
+        "name": {
+          "en": "Dixie Dean",
+          "ar": "ديكسي دين"
+        },
+        "subText": {
+          "en": "Everton",
+          "ar": "إيفرتون"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DEAN"
+        },
         "value": 19,
-        "valueLabel": { "en": "19 Goals", "ar": "19 هدفًا" },
+        "valueLabel": {
+          "en": "19 Goals",
+          "ar": "19 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "mer_gerrard",
-        "name": { "en": "Steven Gerrard", "ar": "ستيفن جيرارد" },
-        "subText": { "en": "Liverpool (Captain Fantastic)", "ar": "ليفربول (القائد التاريخي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "SG8" },
+        "name": {
+          "en": "Steven Gerrard",
+          "ar": "ستيفن جيرارد"
+        },
+        "subText": {
+          "en": "Liverpool (Captain Fantastic)",
+          "ar": "ليفربول (القائد التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "SG8"
+        },
         "value": 10,
-        "valueLabel": { "en": "10 Goals", "ar": "10 أهداف" },
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "mer_salah",
-        "name": { "en": "Mohamed Salah", "ar": "محمد صلاح" },
-        "subText": { "en": "Liverpool (Modern Era)", "ar": "ليفربول (الحقبة الحديثة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MO11" },
+        "name": {
+          "en": "Mohamed Salah",
+          "ar": "محمد صلاح"
+        },
+        "subText": {
+          "en": "Liverpool (Modern Era)",
+          "ar": "ليفربول (الحقبة الحديثة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "MO11"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Goals", "ar": "7 أهداف" },
+        "valueLabel": {
+          "en": "7 Goals",
+          "ar": "7 أهداف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "mer_fowler",
-        "name": { "en": "Robbie Fowler", "ar": "روبي فاولر" },
-        "subText": { "en": "Liverpool (God)", "ar": "ليفربول" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "FOW" },
+        "name": {
+          "en": "Robbie Fowler",
+          "ar": "روبي فاولر"
+        },
+        "subText": {
+          "en": "Liverpool (God)",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "FOW"
+        },
         "value": 6,
-        "valueLabel": { "en": "6 Goals", "ar": "6 أهداف" },
+        "valueLabel": {
+          "en": "6 Goals",
+          "ar": "6 أهداف"
+        },
         "correctRank": 5
       }
     ]

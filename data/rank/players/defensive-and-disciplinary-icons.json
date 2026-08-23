@@ -5,7 +5,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["premier-league", "fouls", "barry", "davies", "fellaini", "scholes", "milner"],
+    "tags": [
+      "premier-league",
+      "fouls",
+      "barry",
+      "davies",
+      "fellaini",
+      "scholes",
+      "milner"
+    ],
     "title": {
       "en": "Rank these 5 Premier League veterans by career fouls committed",
       "ar": "رتّب اللاعبين الخمسة حسب عدد الأخطاء المرتكبة في تاريخ البريميرليج"
@@ -14,52 +22,117 @@
       "en": "Official Premier League career fouls committed",
       "ar": "إجمالي المخالفات والأخطاء المرتكبة في تاريخ الدوري الإنجليزي الممتاز"
     },
-    "metricLabel": { "en": "Fouls", "ar": "أخطاء" },
+    "metricLabel": {
+      "en": "Fouls",
+      "ar": "أخطاء"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "fl_barry",
-        "name": { "en": "Gareth Barry", "ar": "غاريث باري" },
-        "subText": { "en": "Aston Villa, City, Everton, WBA (All-Time Record)", "ar": "أستون فيلا والسيتي وإيفرتون (الرقم القياسي التاريخي)" },
-        "media": { "type": "player", "fallbackText": "GB" },
+        "name": {
+          "en": "Gareth Barry",
+          "ar": "غاريث باري"
+        },
+        "subText": {
+          "en": "Aston Villa, City, Everton, WBA",
+          "ar": "أستون فيلا والسيتي وإيفرتون (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GB"
+        },
         "value": 633,
-        "valueLabel": { "en": "633 Fouls", "ar": "633 خطأً" },
+        "valueLabel": {
+          "en": "633 Fouls",
+          "ar": "633 خطأً"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "fl_davies",
-        "name": { "en": "Kevin Davies", "ar": "كيفن ديفيز" },
-        "subText": { "en": "Southampton, Blackburn & Bolton", "ar": "ساوثهامبتون وبلاكبيرن وبولتون" },
-        "media": { "type": "player", "fallbackText": "KD" },
+        "name": {
+          "en": "Kevin Davies",
+          "ar": "كيفن ديفيز"
+        },
+        "subText": {
+          "en": "Southampton, Blackburn & Bolton",
+          "ar": "ساوثهامبتون وبلاكبيرن وبولتون"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KD"
+        },
         "value": 605,
-        "valueLabel": { "en": "605 Fouls", "ar": "605 أخطاء" },
+        "valueLabel": {
+          "en": "605 Fouls",
+          "ar": "605 أخطاء"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "fl_fellaini",
-        "name": { "en": "Marouane Fellaini", "ar": "مروان فيلايني" },
-        "subText": { "en": "Everton & Manchester United", "ar": "إيفرتون ومانشستر يونايتد" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "FEL" },
+        "name": {
+          "en": "Marouane Fellaini",
+          "ar": "مروان فيلايني"
+        },
+        "subText": {
+          "en": "Everton & Manchester United",
+          "ar": "إيفرتون ومانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-utd.png",
+          "fallbackText": "FEL"
+        },
         "value": 558,
-        "valueLabel": { "en": "558 Fouls", "ar": "558 خطأً" },
+        "valueLabel": {
+          "en": "558 Fouls",
+          "ar": "558 خطأً"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "fl_scholes",
-        "name": { "en": "Paul Scholes", "ar": "بول سكولز" },
-        "subText": { "en": "Manchester United (Tackle Master)", "ar": "مانشستر يونايتد" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "SCH" },
+        "name": {
+          "en": "Paul Scholes",
+          "ar": "بول سكولز"
+        },
+        "subText": {
+          "en": "Manchester United (Tackle Master)",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-utd.png",
+          "fallbackText": "SCH"
+        },
         "value": 466,
-        "valueLabel": { "en": "466 Fouls", "ar": "466 خطأً" },
+        "valueLabel": {
+          "en": "466 Fouls",
+          "ar": "466 خطأً"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "fl_milner",
-        "name": { "en": "James Milner", "ar": "جيمس ميلنر" },
-        "subText": { "en": "Leeds, Villa, City, Liverpool, Brighton", "ar": "ليدز وفيلا والسيتي وليفربول وبرايتون" },
-        "media": { "type": "player", "fallbackText": "MIL" },
+        "name": {
+          "en": "James Milner",
+          "ar": "جيمس ميلنر"
+        },
+        "subText": {
+          "en": "Leeds, Villa, City, Liverpool, Brighton",
+          "ar": "ليدز وفيلا والسيتي وليفربول وبرايتون"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MIL"
+        },
         "value": 441,
-        "valueLabel": { "en": "441 Fouls", "ar": "441 خطأً" },
+        "valueLabel": {
+          "en": "441 Fouls",
+          "ar": "441 خطأً"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +143,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["premier-league", "own-goals", "dunne", "carragher", "jagielka", "evans", "kompany"],
+    "tags": [
+      "premier-league",
+      "own-goals",
+      "dunne",
+      "carragher",
+      "jagielka",
+      "evans",
+      "kompany"
+    ],
     "title": {
       "en": "Rank these 5 defenders by Premier League career own goals scored",
       "ar": "رتّب المدافعين الخمسة حسب عدد الأهداف العكسية المسجلة في مرماهم بالبريميرليج"
@@ -79,52 +160,118 @@
       "en": "Official own goals scored in Premier League history",
       "ar": "الأهداف الذاتية في الشباك بالدوري الإنجليزي الممتاز"
     },
-    "metricLabel": { "en": "Own Goals", "ar": "أهداف عكسية" },
+    "metricLabel": {
+      "en": "Own Goals",
+      "ar": "أهداف عكسية"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "og_dunne",
-        "name": { "en": "Richard Dunne", "ar": "ريتشارد دان" },
-        "subText": { "en": "Everton, Man City, Villa, QPR (All-Time Record)", "ar": "إيفرتون ومان سيتي وفيلا (الرقم القياسي التاريخي)" },
-        "media": { "type": "player", "fallbackText": "DUN" },
+        "name": {
+          "en": "Richard Dunne",
+          "ar": "ريتشارد دان"
+        },
+        "subText": {
+          "en": "Everton, Man City, Villa, QPR",
+          "ar": "إيفرتون ومان سيتي وفيلا (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DUN"
+        },
         "value": 10,
-        "valueLabel": { "en": "10 Own Goals", "ar": "10 أهداف ذاتية" },
+        "valueLabel": {
+          "en": "10 Own Goals",
+          "ar": "10 أهداف ذاتية"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "og_carragher",
-        "name": { "en": "Jamie Carragher", "ar": "جيمي كاراغر" },
-        "subText": { "en": "Liverpool (508 PL games)", "ar": "ليفربول (508 مباريات)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "CAR23" },
+        "name": {
+          "en": "Jamie Carragher",
+          "ar": "جيمي كاراغر"
+        },
+        "subText": {
+          "en": "Liverpool (508 PL games)",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "CAR23"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Own Goals", "ar": "7 أهداف ذاتية" },
+        "valueLabel": {
+          "en": "7 Own Goals",
+          "ar": "7 أهداف ذاتية"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "og_jagielka",
-        "name": { "en": "Phil Jagielka", "ar": "فيل جاغيلكا" },
-        "subText": { "en": "Sheffield United & Everton", "ar": "شيفيلد يونايتد وإيفرتون" },
-        "media": { "type": "player", "fallbackText": "JAG" },
+        "name": {
+          "en": "Phil Jagielka",
+          "ar": "فيل جاغيلكا"
+        },
+        "subText": {
+          "en": "Sheffield United & Everton",
+          "ar": "شيفيلد يونايتد وإيفرتون"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JAG"
+        },
         "value": 6,
-        "valueLabel": { "en": "6 Own Goals", "ar": "6 أهداف ذاتية" },
+        "valueLabel": {
+          "en": "6 Own Goals",
+          "ar": "6 أهداف ذاتية"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "og_evans",
-        "name": { "en": "Jonny Evans", "ar": "جوني إيفانز" },
-        "subText": { "en": "Man United, Sunderland, WBA, Leicester", "ar": "مان يونايتد وسندرلاند ووست بروم وليستر" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "EVA" },
+        "name": {
+          "en": "Jonny Evans",
+          "ar": "جوني إيفانز"
+        },
+        "subText": {
+          "en": "Man United, Sunderland, WBA, Leicester",
+          "ar": "مان يونايتد وسندرلاند ووست بروم وليستر"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-utd.png",
+          "fallbackText": "EVA"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Own Goals", "ar": "4 أهداف ذاتية" },
+        "valueLabel": {
+          "en": "4 Own Goals",
+          "ar": "4 أهداف ذاتية"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "og_kompany",
-        "name": { "en": "Vincent Kompany", "ar": "فينسنت كومباني" },
-        "subText": { "en": "Manchester City (4x PL Champion)", "ar": "مانشستر سيتي (بطل الدوري 4 مرات)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KOM4" },
+        "name": {
+          "en": "Vincent Kompany",
+          "ar": "فينسنت كومباني"
+        },
+        "subText": {
+          "en": "Manchester City (4x PL Champion)",
+          "ar": "مانشستر سيتي (بطل الدوري 4 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "KOM4"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Own Goals", "ar": "3 أهداف ذاتية" },
+        "valueLabel": {
+          "en": "3 Own Goals",
+          "ar": "3 أهداف ذاتية"
+        },
         "correctRank": 5
       }
     ]
@@ -135,7 +282,17 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["premier-league", "goalkeepers", "penalties", "saves", "james", "sorensen", "schwarzer", "gomes", "mignolet"],
+    "tags": [
+      "premier-league",
+      "goalkeepers",
+      "penalties",
+      "saves",
+      "james",
+      "sorensen",
+      "schwarzer",
+      "gomes",
+      "mignolet"
+    ],
     "title": {
       "en": "Rank these 5 goalkeepers by Premier League penalty kicks saved",
       "ar": "رتّب حراس المرمى الخمسة حسب عدد ركلات الجزاء المتصدى لها بالبريميرليج"
@@ -144,52 +301,116 @@
       "en": "Official penalties saved in Premier League matches",
       "ar": "ركلات الجزاء التي تصدى لها الحارس في الدوري الإنجليزي الممتاز"
     },
-    "metricLabel": { "en": "Penalty Saves", "ar": "تصديات لضربات جزاء" },
+    "metricLabel": {
+      "en": "Penalty Saves",
+      "ar": "تصديات لضربات جزاء"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "psv_james",
-        "name": { "en": "David James", "ar": "ديفيد جيمس" },
-        "subText": { "en": "Liverpool, Villa, West Ham, City, Portsmouth", "ar": "ليفربول وفيلا ووست هام والسيتي وبورتسموث" },
-        "media": { "type": "player", "fallbackText": "DJ1" },
+        "name": {
+          "en": "David James",
+          "ar": "ديفيد جيمس"
+        },
+        "subText": {
+          "en": "Liverpool, Villa, West Ham, City, Portsmouth",
+          "ar": "ليفربول وفيلا ووست هام والسيتي وبورتسموث"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DJ1"
+        },
         "value": 13,
-        "valueLabel": { "en": "13 Penalties Saved", "ar": "13 تصديًا لركلة جزاء" },
+        "valueLabel": {
+          "en": "13 Penalties Saved",
+          "ar": "13 تصديًا لركلة جزاء"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "psv_sorensen",
-        "name": { "en": "Thomas Sørensen", "ar": "توماس سورنسن" },
-        "subText": { "en": "Sunderland, Aston Villa, Stoke City", "ar": "سندرلاند وأستون فيلا وستوك سيتي" },
-        "media": { "type": "player", "fallbackText": "SOR" },
+        "name": {
+          "en": "Thomas Sørensen",
+          "ar": "توماس سورنسن"
+        },
+        "subText": {
+          "en": "Sunderland, Aston Villa, Stoke City",
+          "ar": "سندرلاند وأستون فيلا وستوك سيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SOR"
+        },
         "value": 12,
-        "valueLabel": { "en": "12 Penalties Saved", "ar": "12 تصديًا لركلة جزاء" },
+        "valueLabel": {
+          "en": "12 Penalties Saved",
+          "ar": "12 تصديًا لركلة جزاء"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "psv_schwarzer",
-        "name": { "en": "Mark Schwarzer", "ar": "مارك شفارزر" },
-        "subText": { "en": "Middlesbrough, Fulham, Chelsea, Leicester", "ar": "ميدلزبره وفولهام وتشيلسي وليستر" },
-        "media": { "type": "player", "fallbackText": "SCH" },
+        "name": {
+          "en": "Mark Schwarzer",
+          "ar": "مارك شفارزر"
+        },
+        "subText": {
+          "en": "Middlesbrough, Fulham, Chelsea, Leicester",
+          "ar": "ميدلزبره وفولهام وتشيلسي وليستر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SCH"
+        },
         "value": 10,
-        "valueLabel": { "en": "10 Penalties Saved", "ar": "10 تصديات لركلات جزاء" },
+        "valueLabel": {
+          "en": "10 Penalties Saved",
+          "ar": "10 تصديات لركلات جزاء"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "psv_gomes",
-        "name": { "en": "Heurelho Gomes", "ar": "هوريلهو غوميز" },
-        "subText": { "en": "Tottenham Hotspur & Watford", "ar": "توتنهام هوتسبير وواتفورد" },
-        "media": { "type": "player", "fallbackText": "GOM" },
+        "name": {
+          "en": "Heurelho Gomes",
+          "ar": "هوريلهو غوميز"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur & Watford",
+          "ar": "توتنهام هوتسبير وواتفورد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GOM"
+        },
         "value": 9,
-        "valueLabel": { "en": "9 Penalties Saved", "ar": "9 تصديات لركلات جزاء" },
+        "valueLabel": {
+          "en": "9 Penalties Saved",
+          "ar": "9 تصديات لركلات جزاء"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "psv_mignolet",
-        "name": { "en": "Simon Mignolet", "ar": "سيمون مينيوليه" },
-        "subText": { "en": "Sunderland & Liverpool", "ar": "سندرلاند وليفربول" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MIG" },
+        "name": {
+          "en": "Simon Mignolet",
+          "ar": "سيمون مينيوليه"
+        },
+        "subText": {
+          "en": "Sunderland & Liverpool",
+          "ar": "سندرلاند وليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "MIG"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Penalties Saved", "ar": "8 تصديات لركلات جزاء" },
+        "valueLabel": {
+          "en": "8 Penalties Saved",
+          "ar": "8 تصديات لركلات جزاء"
+        },
         "correctRank": 5
       }
     ]
@@ -200,7 +421,16 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["serie-a", "goalkeepers", "clean-sheets", "buffon", "handanovic", "zoff", "pagliuca", "peruzzi"],
+    "tags": [
+      "serie-a",
+      "goalkeepers",
+      "clean-sheets",
+      "buffon",
+      "handanovic",
+      "zoff",
+      "pagliuca",
+      "peruzzi"
+    ],
     "title": {
       "en": "Rank these 5 Italian league legends by all-time Serie A clean sheets",
       "ar": "رتّب حراس المرمى الأساطير الخمسة حسب عدد الشباك النظيفة في تاريخ الدوري الإيطالي"
@@ -209,52 +439,118 @@
       "en": "Official Serie A clean sheets kept",
       "ar": "إجمالي المباريات بشباك نظيفة (كلين شيت) في تاريخ السيريا آ"
     },
-    "metricLabel": { "en": "Clean Sheets", "ar": "شباك نظيفة" },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "sac_buffon",
-        "name": { "en": "Gianluigi Buffon", "ar": "جانلويجي بوفون" },
-        "subText": { "en": "Parma & Juventus (All-Time Record Holder)", "ar": "بارما ويوفنتوس (الرقم القياسي التاريخي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/juventus.png", "fallbackText": "GIGI" },
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "subText": {
+          "en": "Parma & Juventus",
+          "ar": "بارما ويوفنتوس (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/juventus.png",
+          "fallbackText": "GIGI"
+        },
         "value": 299,
-        "valueLabel": { "en": "299 Clean Sheets", "ar": "299 مباراة بشباك نظيفة" },
+        "valueLabel": {
+          "en": "299 Clean Sheets",
+          "ar": "299 مباراة بشباك نظيفة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "sac_handanovic",
-        "name": { "en": "Samir Handanović", "ar": "سمير هاندانوفيتش" },
-        "subText": { "en": "Udinese & Inter Milan", "ar": "أودينيزي وإنتر ميلان" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/inter.png", "fallbackText": "HAN1" },
+        "name": {
+          "en": "Samir Handanović",
+          "ar": "سمير هاندانوفيتش"
+        },
+        "subText": {
+          "en": "Udinese & Inter Milan",
+          "ar": "أودينيزي وإنتر ميلان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/inter.png",
+          "fallbackText": "HAN1"
+        },
         "value": 180,
-        "valueLabel": { "en": "180 Clean Sheets", "ar": "180 مباراة بشباك نظيفة" },
+        "valueLabel": {
+          "en": "180 Clean Sheets",
+          "ar": "180 مباراة بشباك نظيفة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "sac_zoff",
-        "name": { "en": "Dino Zoff", "ar": "دينو زوف" },
-        "subText": { "en": "Udinese, Mantova, Napoli & Juventus", "ar": "أودينيزي ومانتوفا ونابولي ويوفنتوس" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/juventus.png", "fallbackText": "ZOF" },
+        "name": {
+          "en": "Dino Zoff",
+          "ar": "دينو زوف"
+        },
+        "subText": {
+          "en": "Udinese, Mantova, Napoli & Juventus",
+          "ar": "أودينيزي ومانتوفا ونابولي ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/juventus.png",
+          "fallbackText": "ZOF"
+        },
         "value": 167,
-        "valueLabel": { "en": "167 Clean Sheets", "ar": "167 مباراة بشباك نظيفة" },
+        "valueLabel": {
+          "en": "167 Clean Sheets",
+          "ar": "167 مباراة بشباك نظيفة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "sac_pagliuca",
-        "name": { "en": "Gianluca Pagliuca", "ar": "جانلوكا باليوكا" },
-        "subText": { "en": "Sampdoria, Inter Milan, Bologna, Ascoli", "ar": "سامبدوريا وإنتر ميلان وبولونيا وأسكولي" },
-        "media": { "type": "player", "fallbackText": "PAG" },
+        "name": {
+          "en": "Gianluca Pagliuca",
+          "ar": "جانلوكا باليوكا"
+        },
+        "subText": {
+          "en": "Sampdoria, Inter Milan, Bologna, Ascoli",
+          "ar": "سامبدوريا وإنتر ميلان وبولونيا وأسكولي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PAG"
+        },
         "value": 153,
-        "valueLabel": { "en": "153 Clean Sheets", "ar": "153 مباراة بشباك نظيفة" },
+        "valueLabel": {
+          "en": "153 Clean Sheets",
+          "ar": "153 مباراة بشباك نظيفة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "sac_peruzzi",
-        "name": { "en": "Angelo Peruzzi", "ar": "أنجيلو بيروتزي" },
-        "subText": { "en": "Roma, Verona, Juventus, Inter & Lazio", "ar": "روما وهيلاس فيرونا ويوفنتوس وإنتر ولاتسيو" },
-        "media": { "type": "player", "fallbackText": "PER" },
+        "name": {
+          "en": "Angelo Peruzzi",
+          "ar": "أنجيلو بيروتزي"
+        },
+        "subText": {
+          "en": "Roma, Verona, Juventus, Inter & Lazio",
+          "ar": "روما وهيلاس فيرونا ويوفنتوس وإنتر ولاتسيو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PER"
+        },
         "value": 135,
-        "valueLabel": { "en": "135 Clean Sheets", "ar": "135 مباراة بشباك نظيفة" },
+        "valueLabel": {
+          "en": "135 Clean Sheets",
+          "ar": "135 مباراة بشباك نظيفة"
+        },
         "correctRank": 5
       }
     ]
@@ -265,7 +561,17 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ucl", "goalkeepers", "penalties", "saves", "casillas", "cech", "oblak", "courtois", "alisson"],
+    "tags": [
+      "ucl",
+      "goalkeepers",
+      "penalties",
+      "saves",
+      "casillas",
+      "cech",
+      "oblak",
+      "courtois",
+      "alisson"
+    ],
     "title": {
       "en": "Rank these 5 goalkeepers by UEFA Champions League penalties saved (excluding shootouts)",
       "ar": "رتّب حراس المرمى الخمسة حسب عدد ركلات الجزاء المتصدى لها في دوري أبطال أوروبا"
@@ -274,52 +580,120 @@
       "en": "Regular and extra-time penalty kicks saved in UCL matches",
       "ar": "ركلات الجزاء المتصدى لها أثناء المباريات (دون ركلات الترجيح)"
     },
-    "metricLabel": { "en": "Penalty Saves", "ar": "تصديات لضربات جزاء" },
+    "metricLabel": {
+      "en": "Penalty Saves",
+      "ar": "تصديات لضربات جزاء"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ucp_casillas",
-        "name": { "en": "Iker Casillas", "ar": "إيكر كاسياس" },
-        "subText": { "en": "Real Madrid & Porto (All-Time Record Holder)", "ar": "ريال مدريد وبورتو (الرقم القياسي التاريخي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "IK1" },
+        "name": {
+          "en": "Iker Casillas",
+          "ar": "إيكر كاسياس"
+        },
+        "subText": {
+          "en": "Real Madrid & Porto",
+          "ar": "ريال مدريد وبورتو (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "IK1"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Penalties Saved", "ar": "7 تصديات لركلات جزاء" },
+        "valueLabel": {
+          "en": "7 Penalties Saved",
+          "ar": "7 تصديات لركلات جزاء"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ucp_cech",
-        "name": { "en": "Petr Čech", "ar": "بيتر تشيك" },
-        "subText": { "en": "Chelsea & Arsenal (2012 Final Hero)", "ar": "تشيلسي وأرسنال (بطل نهائي 2012)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "CECH" },
+        "name": {
+          "en": "Petr Čech",
+          "ar": "بيتر تشيك"
+        },
+        "subText": {
+          "en": "Chelsea & Arsenal (2012 Final Hero)",
+          "ar": "تشيلسي وأرسنال (بطل نهائي 2012)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/chelsea.png",
+          "fallbackText": "CECH"
+        },
         "value": 5,
-        "valueLabel": { "en": "5 Penalties Saved", "ar": "5 تصديات لركلات جزاء" },
+        "valueLabel": {
+          "en": "5 Penalties Saved",
+          "ar": "5 تصديات لركلات جزاء"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ucp_oblak",
-        "name": { "en": "Jan Oblak", "ar": "يان أوبلاك" },
-        "subText": { "en": "Atlético Madrid", "ar": "أتلتيكو مدريد" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/atletico.png", "fallbackText": "OBL" },
+        "name": {
+          "en": "Jan Oblak",
+          "ar": "يان أوبلاك"
+        },
+        "subText": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/atletico.png",
+          "fallbackText": "OBL"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Penalties Saved", "ar": "4 تصديات لركلات جزاء" },
+        "valueLabel": {
+          "en": "4 Penalties Saved",
+          "ar": "4 تصديات لركلات جزاء"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ucp_courtois",
-        "name": { "en": "Thibaut Courtois", "ar": "تيبو كورتوا" },
-        "subText": { "en": "Atlético, Chelsea & Real Madrid", "ar": "أتلتيكو وتشيلسي وريال مدريد" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "TC1" },
+        "name": {
+          "en": "Thibaut Courtois",
+          "ar": "تيبو كورتوا"
+        },
+        "subText": {
+          "en": "Atlético, Chelsea & Real Madrid",
+          "ar": "أتلتيكو وتشيلسي وريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "TC1"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Penalties Saved", "ar": "3 تصديات لركلات جزاء" },
+        "valueLabel": {
+          "en": "3 Penalties Saved",
+          "ar": "3 تصديات لركلات جزاء"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ucp_alisson",
-        "name": { "en": "Alisson Becker", "ar": "أليسون بيكر" },
-        "subText": { "en": "AS Roma & Liverpool", "ar": "روما وليفربول" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "ALI1" },
+        "name": {
+          "en": "Alisson Becker",
+          "ar": "أليسون بيكر"
+        },
+        "subText": {
+          "en": "AS Roma & Liverpool",
+          "ar": "روما وليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "ALI1"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Penalties Saved", "ar": "تصديان لركلتي جزاء" },
+        "valueLabel": {
+          "en": "2 Penalties Saved",
+          "ar": "تصديان لركلتي جزاء"
+        },
         "correctRank": 5
       }
     ]
@@ -330,7 +704,15 @@
     "difficulty": "VERY_HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["goalkeepers", "goals", "ceni", "chilavert", "campos", "vegas", "higuita"],
+    "tags": [
+      "goalkeepers",
+      "goals",
+      "ceni",
+      "chilavert",
+      "campos",
+      "vegas",
+      "higuita"
+    ],
     "title": {
       "en": "Rank these 5 iconic goalscoring goalkeepers by career official goals scored",
       "ar": "رتّب حراس المرمى الهدافين الخمسة حسب عدد الأهداف المسجلة في مسيرتهم الاحترافية"
@@ -339,52 +721,115 @@
       "en": "Total career official goals scored by goalkeepers (free kicks & penalties)",
       "ar": "إجمالي الأهداف الرسمية المسجلة لحراس المرمى (ضربات حرة وجزاء ولعب مفتوح)"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "gkg_ceni",
-        "name": { "en": "Rogério Ceni", "ar": "روجيريو سيني" },
-        "subText": { "en": "São Paulo (All-Time World Record)", "ar": "ساو باولو (الرقم القياسي العالمي التاريخي)" },
-        "media": { "type": "player", "fallbackText": "CEN" },
+        "name": {
+          "en": "Rogério Ceni",
+          "ar": "روجيريو سيني"
+        },
+        "subText": {
+          "en": "São Paulo",
+          "ar": "ساو باولو (الرقم القياسي العالمي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CEN"
+        },
         "value": 131,
-        "valueLabel": { "en": "131 Goals", "ar": "131 هدفًا" },
+        "valueLabel": {
+          "en": "131 Goals",
+          "ar": "131 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "gkg_chilavert",
-        "name": { "en": "José Luis Chilavert", "ar": "خوسيه لويس تشيلافيرت" },
-        "subText": { "en": "Vélez Sársfield, Strasbourg & Paraguay", "ar": "فيليز سارسفيلد وستراسبورغ والباراغواي" },
-        "media": { "type": "player", "fallbackText": "CHI" },
+        "name": {
+          "en": "José Luis Chilavert",
+          "ar": "خوسيه لويس تشيلافيرت"
+        },
+        "subText": {
+          "en": "Vélez Sársfield, Strasbourg & Paraguay",
+          "ar": "فيليز سارسفيلد وستراسبورغ والباراغواي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CHI"
+        },
         "value": 67,
-        "valueLabel": { "en": "67 Goals", "ar": "67 هدفًا" },
+        "valueLabel": {
+          "en": "67 Goals",
+          "ar": "67 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "gkg_campos",
-        "name": { "en": "Jorge Campos", "ar": "خورخي كامبوس" },
-        "subText": { "en": "Pumas, Atlante, LA Galaxy & Mexico", "ar": "بوماس وأتلانتي وجالاكسي والمكسيك" },
-        "media": { "type": "player", "fallbackText": "CAM" },
+        "name": {
+          "en": "Jorge Campos",
+          "ar": "خورخي كامبوس"
+        },
+        "subText": {
+          "en": "Pumas, Atlante, LA Galaxy & Mexico",
+          "ar": "بوماس وأتلانتي وجالاكسي والمكسيك"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CAM"
+        },
         "value": 46,
-        "valueLabel": { "en": "46 Goals", "ar": "46 هدفًا" },
+        "valueLabel": {
+          "en": "46 Goals",
+          "ar": "46 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "gkg_vegas",
-        "name": { "en": "Johnny Vegas", "ar": "جوني فيغاس" },
-        "subText": { "en": "Sport Boys, Melgar & Peru", "ar": "سبورت بويز وميلغار والبيرو" },
-        "media": { "type": "player", "fallbackText": "VEG" },
+        "name": {
+          "en": "Johnny Vegas",
+          "ar": "جوني فيغاس"
+        },
+        "subText": {
+          "en": "Sport Boys, Melgar & Peru",
+          "ar": "سبورت بويز وميلغار والبيرو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VEG"
+        },
         "value": 45,
-        "valueLabel": { "en": "45 Goals", "ar": "45 هدفًا" },
+        "valueLabel": {
+          "en": "45 Goals",
+          "ar": "45 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "gkg_higuita",
-        "name": { "en": "René Higuita", "ar": "رينيه هيغيتا" },
-        "subText": { "en": "Atlético Nacional, Valladolid & Colombia (El Loco)", "ar": "أتلتيكو ناسيونال وبلد الوليد وكولومبيا (المجنون)" },
-        "media": { "type": "player", "fallbackText": "HIG" },
+        "name": {
+          "en": "René Higuita",
+          "ar": "رينيه هيغيتا"
+        },
+        "subText": {
+          "en": "Atlético Nacional, Valladolid & Colombia (El Loco)",
+          "ar": "أتلتيكو ناسيونال وبلد الوليد وكولومبيا (المجنون)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "HIG"
+        },
         "value": 43,
-        "valueLabel": { "en": "43 Goals", "ar": "43 هدفًا" },
+        "valueLabel": {
+          "en": "43 Goals",
+          "ar": "43 هدفًا"
+        },
         "correctRank": 5
       }
     ]

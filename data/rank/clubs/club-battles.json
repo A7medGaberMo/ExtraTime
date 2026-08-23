@@ -5,7 +5,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["real-madrid", "spain", "goals", "puskas", "sanchez", "gento", "bale"],
+    "tags": [
+      "real-madrid",
+      "spain",
+      "goals",
+      "puskas",
+      "sanchez",
+      "gento",
+      "bale"
+    ],
     "title": {
       "en": "Rank these 5 iconic forwards by all-competition goals scored for Real Madrid",
       "ar": "رتّب المهاجمين الخمسة حسب عدد أهدافهم في جميع المسابقات مع ريال مدريد"
@@ -14,52 +22,120 @@
       "en": "Total official goals representing Real Madrid CF",
       "ar": "إجمالي الأهداف الرسمية بقميص ريال مدريد"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "rml_puskas",
-        "name": { "en": "Ferenc Puskás", "ar": "فيرينتس بوشكاش" },
-        "subText": { "en": "262 matches (The Galloping Major)", "ar": "262 مباراة (المدفعجي الهنغاري)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "PUS" },
+        "name": {
+          "en": "Ferenc Puskás",
+          "ar": "فيرينتس بوشكاش"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "PUS"
+        },
         "value": 242,
-        "valueLabel": { "en": "242 Goals", "ar": "242 هدفًا" },
+        "valueLabel": {
+          "en": "242 Goals",
+          "ar": "242 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "rml_sanchez",
-        "name": { "en": "Hugo Sánchez", "ar": "هوغو سانشيز" },
-        "subText": { "en": "282 matches (5x Pichichi)", "ar": "282 مباراة (هداف الليغا 5 مرات)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "HUG" },
+        "name": {
+          "en": "Hugo Sánchez",
+          "ar": "هوغو سانشيز"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "HUG"
+        },
         "value": 208,
-        "valueLabel": { "en": "208 Goals", "ar": "208 أهداف" },
+        "valueLabel": {
+          "en": "208 Goals",
+          "ar": "208 أهداف"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "rml_gento",
-        "name": { "en": "Paco Gento", "ar": "باكو خينتو" },
-        "subText": { "en": "600 matches (6x European Cup Winner)", "ar": "600 مباراة (بطل كأس أوروبا 6 مرات)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "GEN" },
+        "name": {
+          "en": "Paco Gento",
+          "ar": "باكو خينتو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "GEN"
+        },
         "value": 182,
-        "valueLabel": { "en": "182 Goals", "ar": "182 هدفًا" },
+        "valueLabel": {
+          "en": "182 Goals",
+          "ar": "182 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "rml_butragueno",
-        "name": { "en": "Emilio Butragueño", "ar": "إيميليو بوتراغينيو" },
-        "subText": { "en": "463 matches (El Buitre)", "ar": "463 مباراة (النسر)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "BUI" },
+        "name": {
+          "en": "Emilio Butragueño",
+          "ar": "إيميليو بوتراغينيو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "BUI"
+        },
         "value": 171,
-        "valueLabel": { "en": "171 Goals", "ar": "171 هدفًا" },
+        "valueLabel": {
+          "en": "171 Goals",
+          "ar": "171 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "rml_bale",
-        "name": { "en": "Gareth Bale", "ar": "غاريث بيل" },
-        "subText": { "en": "258 matches (5x UCL Winner)", "ar": "258 مباراة (بطل الأبطال 5 مرات)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "GB11" },
+        "name": {
+          "en": "Gareth Bale",
+          "ar": "غاريث بيل"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "GB11"
+        },
         "value": 106,
-        "valueLabel": { "en": "106 Goals", "ar": "106 أهداف" },
+        "valueLabel": {
+          "en": "106 Goals",
+          "ar": "106 أهداف"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +146,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["barcelona", "spain", "goals", "rivaldo", "neymar", "ronaldinho", "pedro"],
+    "tags": [
+      "barcelona",
+      "spain",
+      "goals",
+      "rivaldo",
+      "neymar",
+      "ronaldinho",
+      "pedro"
+    ],
     "title": {
       "en": "Rank these 5 modern Barcelona stars by official all-competition goals for the club",
       "ar": "رتّب نجوم برشلونة الخمسة حسب عدد أهدافهم الرسمية مع النادي (جميع المسابقات)"
@@ -79,52 +163,120 @@
       "en": "Goals scored in official matches for FC Barcelona",
       "ar": "الأهداف الرسمية المسجلة بقميص نادي برشلونة"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "bca_rivaldo",
-        "name": { "en": "Rivaldo", "ar": "ريفالدو" },
-        "subText": { "en": "235 matches (Ballon d'Or 1999)", "ar": "235 مباراة (الكرة الذهبية 1999)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "RIV" },
+        "name": {
+          "en": "Rivaldo",
+          "ar": "ريفالدو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "RIV"
+        },
         "value": 130,
-        "valueLabel": { "en": "130 Goals", "ar": "130 هدفًا" },
+        "valueLabel": {
+          "en": "130 Goals",
+          "ar": "130 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "bca_kluivert",
-        "name": { "en": "Patrick Kluivert", "ar": "باتريك كلايفرت" },
-        "subText": { "en": "257 matches (1998–2004)", "ar": "257 مباراة (1998–2004)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "KLU" },
+        "name": {
+          "en": "Patrick Kluivert",
+          "ar": "باتريك كلايفرت"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "KLU"
+        },
         "value": 122,
-        "valueLabel": { "en": "122 Goals", "ar": "122 هدفًا" },
+        "valueLabel": {
+          "en": "122 Goals",
+          "ar": "122 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "bca_neymar",
-        "name": { "en": "Neymar Jr", "ar": "نيمار" },
-        "subText": { "en": "186 matches (MSN Treble Trio)", "ar": "186 مباراة (ثلاثي الـMSN)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "NJR" },
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "NJR"
+        },
         "value": 105,
-        "valueLabel": { "en": "105 Goals", "ar": "105 أهداف" },
+        "valueLabel": {
+          "en": "105 Goals",
+          "ar": "105 أهداف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "bca_pedro",
-        "name": { "en": "Pedro Rodríguez", "ar": "بيدرو رودريغيز" },
-        "subText": { "en": "321 matches (Sextuple Hero)", "ar": "321 مباراة (بطل السداسية)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "PED" },
+        "name": {
+          "en": "Pedro Rodríguez",
+          "ar": "بيدرو رودريغيز"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "PED"
+        },
         "value": 99,
-        "valueLabel": { "en": "99 Goals", "ar": "99 هدفًا" },
+        "valueLabel": {
+          "en": "99 Goals",
+          "ar": "99 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "bca_ronaldinho",
-        "name": { "en": "Ronaldinho Gaúcho", "ar": "رونالدينيو غاوشو" },
-        "subText": { "en": "207 matches (Ballon d'Or 2005)", "ar": "207 مباريات (الكرة الذهبية 2005)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "R10" },
+        "name": {
+          "en": "Ronaldinho Gaúcho",
+          "ar": "رونالدينيو غاوشو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "R10"
+        },
         "value": 94,
-        "valueLabel": { "en": "94 Goals", "ar": "94 هدفًا" },
+        "valueLabel": {
+          "en": "94 Goals",
+          "ar": "94 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -135,7 +287,15 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["trophies", "europe", "liverpool", "chelsea", "man-united", "tottenham", "west-ham"],
+    "tags": [
+      "trophies",
+      "europe",
+      "liverpool",
+      "chelsea",
+      "man-united",
+      "tottenham",
+      "west-ham"
+    ],
     "title": {
       "en": "Rank these 5 English clubs by major UEFA European trophies won",
       "ar": "رتّب الأندية الإنجليزية الخمسة حسب عدد الألقاب الأوروبية الكبرى (يويفا)"
@@ -144,52 +304,115 @@
       "en": "Champions League, Europa League/UEFA Cup, Cup Winners Cup & Super Cup",
       "ar": "دوري الأبطال والدوري الأوروبي وكأس الكؤوس وكأس السوبر"
     },
-    "metricLabel": { "en": "European Cups", "ar": "كؤوس أوروبية" },
+    "metricLabel": {
+      "en": "European Cups",
+      "ar": "كؤوس أوروبية"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "eut_liverpool",
-        "name": { "en": "Liverpool", "ar": "ليفربول" },
-        "subText": { "en": "6 UCL, 3 UEL, 4 Super Cups", "ar": "6 أبطال، 3 يوروباليج، 4 سوبر" },
-        "media": { "type": "club", "fallbackText": "LIV" },
+        "name": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "subText": {
+          "en": "6 UCL, 3 UEL, 4 Super Cups",
+          "ar": "6 أبطال، 3 يوروباليج، 4 سوبر"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV"
+        },
         "value": 13,
-        "valueLabel": { "en": "13 Trophies", "ar": "13 لقبًا أوروبيًا" },
+        "valueLabel": {
+          "en": "13 Trophies",
+          "ar": "13 لقبًا أوروبيًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "eut_chelsea",
-        "name": { "en": "Chelsea", "ar": "تشيلسي" },
-        "subText": { "en": "2 UCL, 2 UEL, 2 CWC, 2 Super Cups", "ar": "2 أبطال، 2 يوروباليج، 2 كؤوس، 2 سوبر" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "subText": {
+          "en": "2 UCL, 2 UEL, 2 CWC, 2 Super Cups",
+          "ar": "2 أبطال، 2 يوروباليج، 2 كؤوس، 2 سوبر"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Trophies", "ar": "8 ألقاب أوروبية" },
+        "valueLabel": {
+          "en": "8 Trophies",
+          "ar": "8 ألقاب أوروبية"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "eut_manu",
-        "name": { "en": "Manchester United", "ar": "مانشستر يونايتد" },
-        "subText": { "en": "3 UCL, 1 UEL, 1 CWC, 1 Super Cup", "ar": "3 أبطال، 1 يوروباليج، 1 كؤوس، 1 سوبر" },
-        "media": { "type": "club", "fallbackText": "MU" },
+        "name": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "subText": {
+          "en": "3 UCL, 1 UEL, 1 CWC, 1 Super Cup",
+          "ar": "3 أبطال، 1 يوروباليج، 1 كؤوس، 1 سوبر"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MU"
+        },
         "value": 6,
-        "valueLabel": { "en": "6 Trophies", "ar": "6 ألقاب أوروبية" },
+        "valueLabel": {
+          "en": "6 Trophies",
+          "ar": "6 ألقاب أوروبية"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "eut_spurs",
-        "name": { "en": "Tottenham Hotspur", "ar": "توتنهام هوتسبير" },
-        "subText": { "en": "2 UEFA Cups, 1 Cup Winners Cup", "ar": "2 كأس الاتحاد، 1 كأس الكؤوس" },
-        "media": { "type": "club", "fallbackText": "TOT" },
+        "name": {
+          "en": "Tottenham Hotspur",
+          "ar": "توتنهام هوتسبير"
+        },
+        "subText": {
+          "en": "2 UEFA Cups, 1 Cup Winners Cup",
+          "ar": "2 كأس الاتحاد، 1 كأس الكؤوس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "TOT"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Trophies", "ar": "3 ألقاب أوروبية" },
+        "valueLabel": {
+          "en": "3 Trophies",
+          "ar": "3 ألقاب أوروبية"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "eut_westham",
-        "name": { "en": "West Ham United", "ar": "وست هام يونايتد" },
-        "subText": { "en": "1 Cup Winners Cup, 1 Conference League", "ar": "1 كأس الكؤوس (1965)، 1 المؤتمر (2023)" },
-        "media": { "type": "club", "fallbackText": "WHU" },
+        "name": {
+          "en": "West Ham United",
+          "ar": "وست هام يونايتد"
+        },
+        "subText": {
+          "en": "1 Cup Winners Cup, 1 Conference League",
+          "ar": "1 كأس الكؤوس (1965)، 1 المؤتمر (2023)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "WHU"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Trophies", "ar": "لقبان أوروبيان" },
+        "valueLabel": {
+          "en": "2 Trophies",
+          "ar": "لقبان أوروبيان"
+        },
         "correctRank": 5
       }
     ]
@@ -200,7 +423,16 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["transfers", "premier-league", "records", "enzo", "rice", "grealish", "pogba", "vandijk"],
+    "tags": [
+      "transfers",
+      "premier-league",
+      "records",
+      "enzo",
+      "rice",
+      "grealish",
+      "pogba",
+      "vandijk"
+    ],
     "title": {
       "en": "Rank these 5 club-record Premier League signings by transfer fee in Euros (€)",
       "ar": "رتّب الصفقات القياسية لأندية البريميرليج الخمسة حسب قيمة الانتقال باليورو (€)"
@@ -209,52 +441,120 @@
       "en": "Record single-player acquisition fee for each club",
       "ar": "الصفقة القياسية الأغلى في تاريخ كل نادٍ باليورو"
     },
-    "metricLabel": { "en": "Fee (€M)", "ar": "قيمة الصفقة (€)" },
+    "metricLabel": {
+      "en": "Fee (€M)",
+      "ar": "قيمة الصفقة (€)"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "rec_che_enzo",
-        "name": { "en": "Enzo Fernández (Chelsea)", "ar": "إنزو فيرنانديز (تشيلسي)" },
-        "subText": { "en": "Benfica → Chelsea (2023)", "ar": "من بنفيكا إلى تشيلسي (2023)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/chelsea.png", "fallbackText": "EF8" },
+        "name": {
+          "en": "Enzo Fernández (Chelsea)",
+          "ar": "إنزو فيرنانديز (تشيلسي)"
+        },
+        "subText": {
+          "en": "Benfica → Chelsea (2023)",
+          "ar": "من بنفيكا إلى تشيلسي (2023)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/chelsea.png",
+          "fallbackText": "EF8"
+        },
         "value": 121,
-        "valueLabel": { "en": "€121 Million", "ar": "121 مليون يورو" },
+        "valueLabel": {
+          "en": "€121 Million",
+          "ar": "121 مليون يورو"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "rec_mc_grealish",
-        "name": { "en": "Jack Grealish (Man City)", "ar": "جاك جريليش (مانشستر سيتي)" },
-        "subText": { "en": "Aston Villa → Man City (2021)", "ar": "من أستون فيلا إلى مان سيتي (2021)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "JG10" },
+        "name": {
+          "en": "Jack Grealish (Man City)",
+          "ar": "جاك جريليش (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Aston Villa → Man City (2021)",
+          "ar": "من أستون فيلا إلى مان سيتي (2021)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "JG10"
+        },
         "value": 117.5,
-        "valueLabel": { "en": "€117.5 Million", "ar": "117.5 مليون يورو" },
+        "valueLabel": {
+          "en": "€117.5 Million",
+          "ar": "117.5 مليون يورو"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "rec_ars_rice",
-        "name": { "en": "Declan Rice (Arsenal)", "ar": "ديكلان رايس (أرسنال)" },
-        "subText": { "en": "West Ham → Arsenal (2023)", "ar": "من وست هام إلى أرسنال (2023)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/arsenal.png", "fallbackText": "DR41" },
+        "name": {
+          "en": "Declan Rice (Arsenal)",
+          "ar": "ديكلان رايس (أرسنال)"
+        },
+        "subText": {
+          "en": "West Ham → Arsenal (2023)",
+          "ar": "من وست هام إلى أرسنال (2023)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "fallbackText": "DR41"
+        },
         "value": 116,
-        "valueLabel": { "en": "€116 Million", "ar": "116 مليون يورو" },
+        "valueLabel": {
+          "en": "€116 Million",
+          "ar": "116 مليون يورو"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "rec_mu_pogba",
-        "name": { "en": "Paul Pogba (Man United)", "ar": "بول بوغبا (مانشستر يونايتد)" },
-        "subText": { "en": "Juventus → Man United (2016)", "ar": "من يوفنتوس إلى مان يونايتد (2016)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-utd.png", "fallbackText": "PP6" },
+        "name": {
+          "en": "Paul Pogba (Man United)",
+          "ar": "بول بوغبا (مانشستر يونايتد)"
+        },
+        "subText": {
+          "en": "Juventus → Man United (2016)",
+          "ar": "من يوفنتوس إلى مان يونايتد (2016)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-utd.png",
+          "fallbackText": "PP6"
+        },
         "value": 105,
-        "valueLabel": { "en": "€105 Million", "ar": "105 مليون يورو" },
+        "valueLabel": {
+          "en": "€105 Million",
+          "ar": "105 مليون يورو"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "rec_liv_vandijk",
-        "name": { "en": "Virgil van Dijk (Liverpool)", "ar": "فيرجيل فان دايك (ليفربول)" },
-        "subText": { "en": "Southampton → Liverpool (2018)", "ar": "من ساوثهامبتون إلى ليفربول (2018)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "VVD" },
+        "name": {
+          "en": "Virgil van Dijk (Liverpool)",
+          "ar": "فيرجيل فان دايك (ليفربول)"
+        },
+        "subText": {
+          "en": "Southampton → Liverpool (2018)",
+          "ar": "من ساوثهامبتون إلى ليفربول (2018)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "VVD"
+        },
         "value": 84.6,
-        "valueLabel": { "en": "€84.6 Million", "ar": "84.6 مليون يورو" },
+        "valueLabel": {
+          "en": "€84.6 Million",
+          "ar": "84.6 مليون يورو"
+        },
         "correctRank": 5
       }
     ]

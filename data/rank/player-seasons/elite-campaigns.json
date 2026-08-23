@@ -5,7 +5,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["salah", "liverpool", "premier-league", "seasons", "goals"],
+    "tags": [
+      "salah",
+      "liverpool",
+      "premier-league",
+      "seasons",
+      "goals"
+    ],
     "title": {
       "en": "Rank these 5 seasons of Mohamed Salah by Premier League goals scored",
       "ar": "رتّب مواسم محمد صلاح الخمسة حسب عدد أهدافه في الدوري الإنجليزي الممتاز"
@@ -14,52 +20,120 @@
       "en": "Premier League goals with Liverpool",
       "ar": "أهدافه في الدوري الإنجليزي بقميص ليفربول"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ms_1718",
-        "name": { "en": "Mohamed Salah (2017–18)", "ar": "محمد صلاح (2017–18)" },
-        "subText": { "en": "Liverpool (Record 32 goals)", "ar": "ليفربول (الرقم القياسي 32 هدفًا)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MO11" },
+        "name": {
+          "en": "Mohamed Salah (2017–18)",
+          "ar": "محمد صلاح (2017–18)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول (الرقم القياسي 32 هدفًا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "MO11"
+        },
         "value": 32,
-        "valueLabel": { "en": "32 Goals", "ar": "32 هدفًا" },
+        "valueLabel": {
+          "en": "32 Goals",
+          "ar": "32 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ms_2122",
-        "name": { "en": "Mohamed Salah (2021–22)", "ar": "محمد صلاح (2021–22)" },
-        "subText": { "en": "Liverpool (Golden Boot & Playmaker)", "ar": "ليفربول (الحذاء الذهبي وأفضل صانع)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MO11" },
+        "name": {
+          "en": "Mohamed Salah (2021–22)",
+          "ar": "محمد صلاح (2021–22)"
+        },
+        "subText": {
+          "en": "Liverpool (Golden Boot & Playmaker)",
+          "ar": "ليفربول (الحذاء الذهبي وأفضل صانع)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "MO11"
+        },
         "value": 23,
-        "valueLabel": { "en": "23 Goals", "ar": "23 هدفًا" },
+        "valueLabel": {
+          "en": "23 Goals",
+          "ar": "23 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ms_1819",
-        "name": { "en": "Mohamed Salah (2018–19)", "ar": "محمد صلاح (2018–19)" },
-        "subText": { "en": "Liverpool (Golden Boot)", "ar": "ليفربول (الحذاء الذهبي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MO11" },
+        "name": {
+          "en": "Mohamed Salah (2018–19)",
+          "ar": "محمد صلاح (2018–19)"
+        },
+        "subText": {
+          "en": "Liverpool (Golden Boot)",
+          "ar": "ليفربول (الحذاء الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "MO11"
+        },
         "value": 22,
-        "valueLabel": { "en": "22 Goals", "ar": "22 هدفًا" },
+        "valueLabel": {
+          "en": "22 Goals",
+          "ar": "22 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ms_1920",
-        "name": { "en": "Mohamed Salah (2019–20)", "ar": "محمد صلاح (2019–20)" },
-        "subText": { "en": "Liverpool (Title Winning Season)", "ar": "ليفربول (موسم التتويج باللقب)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MO11" },
+        "name": {
+          "en": "Mohamed Salah (2019–20)",
+          "ar": "محمد صلاح (2019–20)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول (موسم التتويج باللقب)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "MO11"
+        },
         "value": 19,
-        "valueLabel": { "en": "19 Goals", "ar": "19 هدفًا" },
+        "valueLabel": {
+          "en": "19 Goals",
+          "ar": "19 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ms_2324",
-        "name": { "en": "Mohamed Salah (2023–24)", "ar": "محمد صلاح (2023–24)" },
-        "subText": { "en": "Liverpool", "ar": "ليفربول" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "MO11" },
+        "name": {
+          "en": "Mohamed Salah (2023–24)",
+          "ar": "محمد صلاح (2023–24)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "MO11"
+        },
         "value": 18,
-        "valueLabel": { "en": "18 Goals", "ar": "18 هدفًا" },
+        "valueLabel": {
+          "en": "18 Goals",
+          "ar": "18 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +144,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["kane", "tottenham", "premier-league", "seasons", "goals"],
+    "tags": [
+      "kane",
+      "tottenham",
+      "premier-league",
+      "seasons",
+      "goals"
+    ],
     "title": {
       "en": "Rank these 5 seasons of Harry Kane by Premier League goals scored",
       "ar": "رتّب مواسم هاري كين الخمسة حسب عدد أهدافه في الدوري الإنجليزي الممتاز"
@@ -79,52 +159,120 @@
       "en": "Premier League goals with Tottenham Hotspur",
       "ar": "أهدافه في الدوري الإنجليزي بقميص توتنهام هوتسبير"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "hk_2223",
-        "name": { "en": "Harry Kane (2022–23)", "ar": "هاري كين (2022–23)" },
-        "subText": { "en": "Tottenham Hotspur", "ar": "توتنهام هوتسبير" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/tottenham.png", "fallbackText": "HK10" },
+        "name": {
+          "en": "Harry Kane (2022–23)",
+          "ar": "هاري كين (2022–23)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur",
+          "ar": "توتنهام هوتسبير"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/tottenham.png",
+          "fallbackText": "HK10"
+        },
         "value": 30,
-        "valueLabel": { "en": "30 Goals", "ar": "30 هدفًا" },
+        "valueLabel": {
+          "en": "30 Goals",
+          "ar": "30 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "hk_1617",
-        "name": { "en": "Harry Kane (2016–17)", "ar": "هاري كين (2016–17)" },
-        "subText": { "en": "Tottenham Hotspur (Golden Boot)", "ar": "توتنهام هوتسبير (الحذاء الذهبي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/tottenham.png", "fallbackText": "HK10" },
+        "name": {
+          "en": "Harry Kane (2016–17)",
+          "ar": "هاري كين (2016–17)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur (Golden Boot)",
+          "ar": "توتنهام هوتسبير (الحذاء الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/tottenham.png",
+          "fallbackText": "HK10"
+        },
         "value": 29,
-        "valueLabel": { "en": "29 Goals", "ar": "29 هدفًا" },
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "hk_1516",
-        "name": { "en": "Harry Kane (2015–16)", "ar": "هاري كين (2015–16)" },
-        "subText": { "en": "Tottenham Hotspur (Golden Boot)", "ar": "توتنهام هوتسبير (الحذاء الذهبي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/tottenham.png", "fallbackText": "HK10" },
+        "name": {
+          "en": "Harry Kane (2015–16)",
+          "ar": "هاري كين (2015–16)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur (Golden Boot)",
+          "ar": "توتنهام هوتسبير (الحذاء الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/tottenham.png",
+          "fallbackText": "HK10"
+        },
         "value": 25,
-        "valueLabel": { "en": "25 Goals", "ar": "25 هدفًا" },
+        "valueLabel": {
+          "en": "25 Goals",
+          "ar": "25 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "hk_2021",
-        "name": { "en": "Harry Kane (2020–21)", "ar": "هاري كين (2020–21)" },
-        "subText": { "en": "Tottenham Hotspur (Golden Boot & Playmaker)", "ar": "توتنهام هوتسبير (الحذاء الذهبي وصانع الألعاب)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/tottenham.png", "fallbackText": "HK10" },
+        "name": {
+          "en": "Harry Kane (2020–21)",
+          "ar": "هاري كين (2020–21)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur (Golden Boot & Playmaker)",
+          "ar": "توتنهام هوتسبير (الحذاء الذهبي وصانع الألعاب)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/tottenham.png",
+          "fallbackText": "HK10"
+        },
         "value": 23,
-        "valueLabel": { "en": "23 Goals", "ar": "23 هدفًا" },
+        "valueLabel": {
+          "en": "23 Goals",
+          "ar": "23 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "hk_1415",
-        "name": { "en": "Harry Kane (2014–15)", "ar": "هاري كين (2014–15)" },
-        "subText": { "en": "Tottenham Hotspur (Breakout Season)", "ar": "توتنهام هوتسبير (موسم الانطلاقة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/tottenham.png", "fallbackText": "HK10" },
+        "name": {
+          "en": "Harry Kane (2014–15)",
+          "ar": "هاري كين (2014–15)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur (Breakout Season)",
+          "ar": "توتنهام هوتسبير (موسم الانطلاقة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/tottenham.png",
+          "fallbackText": "HK10"
+        },
         "value": 21,
-        "valueLabel": { "en": "21 Goals", "ar": "21 هدفًا" },
+        "valueLabel": {
+          "en": "21 Goals",
+          "ar": "21 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -135,7 +283,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["kdb", "mancity", "premier-league", "assists", "seasons"],
+    "tags": [
+      "kdb",
+      "mancity",
+      "premier-league",
+      "assists",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 seasons of Kevin De Bruyne by Premier League assists provided",
       "ar": "رتّب مواسم كيفين دي بروين الخمسة حسب عدد تمريراته الحاسمة في البريميرليج"
@@ -144,52 +298,120 @@
       "en": "Premier League assists with Manchester City",
       "ar": "التمريرات الحاسمة في الدوري الإنجليزي مع مانشستر سيتي"
     },
-    "metricLabel": { "en": "Assists", "ar": "تمريرات حاسمة" },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "kdb_1920",
-        "name": { "en": "Kevin De Bruyne (2019–20)", "ar": "كيفين دي بروين (2019–20)" },
-        "subText": { "en": "Manchester City (Record 20 assists)", "ar": "مانشستر سيتي (الرقم القياسي 20 أسيست)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KDB" },
+        "name": {
+          "en": "Kevin De Bruyne (2019–20)",
+          "ar": "كيفين دي بروين (2019–20)"
+        },
+        "subText": {
+          "en": "Manchester City ()",
+          "ar": "مانشستر سيتي (الرقم القياسي 20 أسيست)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "KDB"
+        },
         "value": 20,
-        "valueLabel": { "en": "20 Assists", "ar": "20 تمريرة حاسمة" },
+        "valueLabel": {
+          "en": "20 Assists",
+          "ar": "20 تمريرة حاسمة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "kdb_1617",
-        "name": { "en": "Kevin De Bruyne (2016–17)", "ar": "كيفين دي بروين (2016–17)" },
-        "subText": { "en": "Manchester City", "ar": "مانشستر سيتي" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KDB" },
+        "name": {
+          "en": "Kevin De Bruyne (2016–17)",
+          "ar": "كيفين دي بروين (2016–17)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "KDB"
+        },
         "value": 18,
-        "valueLabel": { "en": "18 Assists", "ar": "18 تمريرة حاسمة" },
+        "valueLabel": {
+          "en": "18 Assists",
+          "ar": "18 تمريرة حاسمة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "kdb_2223",
-        "name": { "en": "Kevin De Bruyne (2022–23)", "ar": "كيفين دي بروين (2022–23)" },
-        "subText": { "en": "Manchester City (Treble Season)", "ar": "مانشستر سيتي (موسم الثلاثية)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KDB" },
+        "name": {
+          "en": "Kevin De Bruyne (2022–23)",
+          "ar": "كيفين دي بروين (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City (Treble Season)",
+          "ar": "مانشستر سيتي (موسم الثلاثية)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "KDB"
+        },
         "value": 16,
-        "valueLabel": { "en": "16 Assists", "ar": "16 تمريرة حاسمة" },
+        "valueLabel": {
+          "en": "16 Assists",
+          "ar": "16 تمريرة حاسمة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "kdb_2021",
-        "name": { "en": "Kevin De Bruyne (2020–21)", "ar": "كيفين دي بروين (2020–21)" },
-        "subText": { "en": "Manchester City", "ar": "مانشستر سيتي" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KDB" },
+        "name": {
+          "en": "Kevin De Bruyne (2020–21)",
+          "ar": "كيفين دي بروين (2020–21)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "KDB"
+        },
         "value": 12,
-        "valueLabel": { "en": "12 Assists", "ar": "12 تمريرة حاسمة" },
+        "valueLabel": {
+          "en": "12 Assists",
+          "ar": "12 تمريرة حاسمة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "kdb_2324",
-        "name": { "en": "Kevin De Bruyne (2023–24)", "ar": "كيفين دي بروين (2023–24)" },
-        "subText": { "en": "Manchester City (In only 18 games)", "ar": "مانشستر سيتي (خلال 18 مباراة فقط)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/man-city.png", "fallbackText": "KDB" },
+        "name": {
+          "en": "Kevin De Bruyne (2023–24)",
+          "ar": "كيفين دي بروين (2023–24)"
+        },
+        "subText": {
+          "en": "Manchester City (In only 18 games)",
+          "ar": "مانشستر سيتي (خلال 18 مباراة فقط)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/man-city.png",
+          "fallbackText": "KDB"
+        },
         "value": 10,
-        "valueLabel": { "en": "10 Assists", "ar": "10 تمريرات حاسمة" },
+        "valueLabel": {
+          "en": "10 Assists",
+          "ar": "10 تمريرات حاسمة"
+        },
         "correctRank": 5
       }
     ]
@@ -200,7 +422,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["benzema", "real-madrid", "seasons", "goals", "ballon-dor"],
+    "tags": [
+      "benzema",
+      "real-madrid",
+      "seasons",
+      "goals",
+      "ballon-dor"
+    ],
     "title": {
       "en": "Rank these 5 seasons of Karim Benzema by all-competition goals scored",
       "ar": "رتّب مواسم كريم بنزيما الخمسة حسب إجمالي أهدافه في جميع المسابقات"
@@ -209,52 +437,120 @@
       "en": "Total senior club goals with Real Madrid",
       "ar": "إجمالي الأهداف الرسمية بقميص ريال مدريد"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "kb_2122",
-        "name": { "en": "Karim Benzema (2021–22)", "ar": "كريم بنزيما (2021–22)" },
-        "subText": { "en": "Real Madrid (Ballon d'Or Season)", "ar": "ريال مدريد (موسم الكرة الذهبية)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema (2021–22)",
+          "ar": "كريم بنزيما (2021–22)"
+        },
+        "subText": {
+          "en": "Real Madrid (Ballon d'Or Season)",
+          "ar": "ريال مدريد (موسم الكرة الذهبية)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "KB9"
+        },
         "value": 44,
-        "valueLabel": { "en": "44 Goals", "ar": "44 هدفًا" },
+        "valueLabel": {
+          "en": "44 Goals",
+          "ar": "44 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "kb_1112",
-        "name": { "en": "Karim Benzema (2011–12)", "ar": "كريم بنزيما (2011–12)" },
-        "subText": { "en": "Real Madrid (100 Points League)", "ar": "ريال مدريد (دوري الـ100 نقطة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema (2011–12)",
+          "ar": "كريم بنزيما (2011–12)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد (دوري الـ100 نقطة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "KB9"
+        },
         "value": 32,
-        "valueLabel": { "en": "32 Goals", "ar": "32 هدفًا" },
+        "valueLabel": {
+          "en": "32 Goals",
+          "ar": "32 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "kb_2223",
-        "name": { "en": "Karim Benzema (2022–23)", "ar": "كريم بنزيما (2022–23)" },
-        "subText": { "en": "Real Madrid (Final Madrid Season)", "ar": "ريال مدريد (موسمه الأخير في مدريد)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema (2022–23)",
+          "ar": "كريم بنزيما (2022–23)"
+        },
+        "subText": {
+          "en": "Real Madrid (Final Madrid Season)",
+          "ar": "ريال مدريد (موسمه الأخير في مدريد)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "KB9"
+        },
         "value": 31,
-        "valueLabel": { "en": "31 Goals", "ar": "31 هدفًا" },
+        "valueLabel": {
+          "en": "31 Goals",
+          "ar": "31 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "kb_1819",
-        "name": { "en": "Karim Benzema (2018–19)", "ar": "كريم بنزيما (2018–19)" },
-        "subText": { "en": "Real Madrid", "ar": "ريال مدريد" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema (2018–19)",
+          "ar": "كريم بنزيما (2018–19)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "KB9"
+        },
         "value": 30,
-        "valueLabel": { "en": "30 Goals", "ar": "30 هدفًا" },
+        "valueLabel": {
+          "en": "30 Goals",
+          "ar": "30 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "kb_1516",
-        "name": { "en": "Karim Benzema (2015–16)", "ar": "كريم بنزيما (2015–16)" },
-        "subText": { "en": "Real Madrid (Undecima UCL)", "ar": "ريال مدريد (الحادية عشرة)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/real-madrid.png", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema (2015–16)",
+          "ar": "كريم بنزيما (2015–16)"
+        },
+        "subText": {
+          "en": "Real Madrid (Undecima UCL)",
+          "ar": "ريال مدريد (الحادية عشرة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "fallbackText": "KB9"
+        },
         "value": 28,
-        "valueLabel": { "en": "28 Goals", "ar": "28 هدفًا" },
+        "valueLabel": {
+          "en": "28 Goals",
+          "ar": "28 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -265,7 +561,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["suarez", "barcelona", "liverpool", "goals", "seasons"],
+    "tags": [
+      "suarez",
+      "barcelona",
+      "liverpool",
+      "goals",
+      "seasons"
+    ],
     "title": {
       "en": "Rank these 5 domestic league seasons of Luis Suárez by goals scored",
       "ar": "رتّب مواسم لويس سواريز الخمسة في الدوريات حسب عدد أهدافه المسجلة"
@@ -274,52 +576,120 @@
       "en": "Domestic league goals in top European leagues",
       "ar": "أهداف الدوريات الأوروبية الكبرى في موسم واحد"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ls_1516",
-        "name": { "en": "Luis Suárez (2015–16)", "ar": "لويس سواريز (2015–16)" },
-        "subText": { "en": "Barcelona (La Liga & Golden Shoe)", "ar": "برشلونة (الليغا والحذاء الذهبي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LS9" },
+        "name": {
+          "en": "Luis Suárez (2015–16)",
+          "ar": "لويس سواريز (2015–16)"
+        },
+        "subText": {
+          "en": "Barcelona (La Liga & Golden Shoe)",
+          "ar": "برشلونة (الليغا والحذاء الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "LS9"
+        },
         "value": 40,
-        "valueLabel": { "en": "40 Goals", "ar": "40 هدفًا" },
+        "valueLabel": {
+          "en": "40 Goals",
+          "ar": "40 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ls_1314",
-        "name": { "en": "Luis Suárez (2013–14)", "ar": "لويس سواريز (2013–14)" },
-        "subText": { "en": "Liverpool (Premier League & Golden Shoe)", "ar": "ليفربول (البريميرليج والحذاء الذهبي)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/liverpool.png", "fallbackText": "LS9" },
+        "name": {
+          "en": "Luis Suárez (2013–14)",
+          "ar": "لويس سواريز (2013–14)"
+        },
+        "subText": {
+          "en": "Liverpool (Premier League & Golden Shoe)",
+          "ar": "ليفربول (البريميرليج والحذاء الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "fallbackText": "LS9"
+        },
         "value": 31,
-        "valueLabel": { "en": "31 Goals", "ar": "31 هدفًا" },
+        "valueLabel": {
+          "en": "31 Goals",
+          "ar": "31 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ls_1617",
-        "name": { "en": "Luis Suárez (2016–17)", "ar": "لويس سواريز (2016–17)" },
-        "subText": { "en": "Barcelona (La Liga)", "ar": "برشلونة (الليغا)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LS9" },
+        "name": {
+          "en": "Luis Suárez (2016–17)",
+          "ar": "لويس سواريز (2016–17)"
+        },
+        "subText": {
+          "en": "Barcelona (La Liga)",
+          "ar": "برشلونة (الليغا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "LS9"
+        },
         "value": 29,
-        "valueLabel": { "en": "29 Goals", "ar": "29 هدفًا" },
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ls_1718",
-        "name": { "en": "Luis Suárez (2017–18)", "ar": "لويس سواريز (2017–18)" },
-        "subText": { "en": "Barcelona (La Liga Champions)", "ar": "برشلونة (بطل الليغا)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/barcelona.png", "fallbackText": "LS9" },
+        "name": {
+          "en": "Luis Suárez (2017–18)",
+          "ar": "لويس سواريز (2017–18)"
+        },
+        "subText": {
+          "en": "Barcelona (La Liga Champions)",
+          "ar": "برشلونة (بطل الليغا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "fallbackText": "LS9"
+        },
         "value": 25,
-        "valueLabel": { "en": "25 Goals", "ar": "25 هدفًا" },
+        "valueLabel": {
+          "en": "25 Goals",
+          "ar": "25 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ls_2021",
-        "name": { "en": "Luis Suárez (2020–21)", "ar": "لويس سواريز (2020–21)" },
-        "subText": { "en": "Atlético Madrid (La Liga Champions)", "ar": "أتلتيكو مدريد (بطل الليغا)" },
-        "media": { "type": "player", "secondaryBadgeUrl": "/badges/atletico.png", "fallbackText": "LS9" },
+        "name": {
+          "en": "Luis Suárez (2020–21)",
+          "ar": "لويس سواريز (2020–21)"
+        },
+        "subText": {
+          "en": "Atlético Madrid (La Liga Champions)",
+          "ar": "أتلتيكو مدريد (بطل الليغا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "/badges/atletico.png",
+          "fallbackText": "LS9"
+        },
         "value": 21,
-        "valueLabel": { "en": "21 Goals", "ar": "21 هدفًا" },
+        "valueLabel": {
+          "en": "21 Goals",
+          "ar": "21 هدفًا"
+        },
         "correctRank": 5
       }
     ]

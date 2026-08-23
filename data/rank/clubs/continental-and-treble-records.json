@@ -5,7 +5,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["treble", "goals", "barcelona", "bayern", "mancity", "inter", "records"],
+    "tags": [
+      "treble",
+      "goals",
+      "barcelona",
+      "bayern",
+      "mancity",
+      "inter",
+      "records"
+    ],
     "title": {
       "en": "Rank these 5 European Treble-winning seasons by total goals scored in all competitions",
       "ar": "رتّب مواسم الثلاثية التاريخية الخمسة حسب إجمالي الأهداف المسجلة في جميع المسابقات"
@@ -14,52 +22,115 @@
       "en": "League, Domestic Cup & Champions League winning campaigns",
       "ar": "مواسم التتويج بالدوري والكأس ودوري أبطال أوروبا معًا"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "trb_barca_15",
-        "name": { "en": "FC Barcelona (2014–15)", "ar": "برشلونة (2014–15)" },
-        "subText": { "en": "MSN Trio: Messi, Suárez, Neymar (All-Time Treble Record)", "ar": "ثلاثي الـMSN: ميسي وسواريز ونيمار (الرقم القياسي التاريخي)" },
-        "media": { "type": "club", "fallbackText": "FCB" },
+        "name": {
+          "en": "FC Barcelona (2014–15)",
+          "ar": "برشلونة (2014–15)"
+        },
+        "subText": {
+          "en": "MSN Trio: Messi, Suárez, Neymar",
+          "ar": "ثلاثي الـMSN: ميسي وسواريز ونيمار (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB"
+        },
         "value": 175,
-        "valueLabel": { "en": "175 Goals", "ar": "175 هدفًا" },
+        "valueLabel": {
+          "en": "175 Goals",
+          "ar": "175 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "trb_bayern_20",
-        "name": { "en": "Bayern Munich (2019–20)", "ar": "بايرن ميونخ (2019–20)" },
-        "subText": { "en": "Hans-Dieter Flick (Sextuple Year - 52 games)", "ar": "هانز فليك (موسم السداسية - 52 مباراة فقط)" },
-        "media": { "type": "club", "fallbackText": "BAY" },
+        "name": {
+          "en": "Bayern Munich (2019–20)",
+          "ar": "بايرن ميونخ (2019–20)"
+        },
+        "subText": {
+          "en": "Hans-Dieter Flick (Sextuple Year - 52 games)",
+          "ar": "هانز فليك (موسم السداسية - 52 مباراة فقط)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY"
+        },
         "value": 159,
-        "valueLabel": { "en": "159 Goals", "ar": "159 هدفًا" },
+        "valueLabel": {
+          "en": "159 Goals",
+          "ar": "159 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "trb_barca_09",
-        "name": { "en": "FC Barcelona (2008–09)", "ar": "برشلونة (2008–09)" },
-        "subText": { "en": "Pep Guardiola (First Sextuple in History)", "ar": "بيب غوارديولا (أول سداسية في تاريخ كرة القدم)" },
-        "media": { "type": "club", "fallbackText": "FCB" },
+        "name": {
+          "en": "FC Barcelona (2008–09)",
+          "ar": "برشلونة (2008–09)"
+        },
+        "subText": {
+          "en": "Pep Guardiola (First Sextuple in History)",
+          "ar": "بيب غوارديولا (أول سداسية في تاريخ كرة القدم)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB"
+        },
         "value": 158,
-        "valueLabel": { "en": "158 Goals", "ar": "158 هدفًا" },
+        "valueLabel": {
+          "en": "158 Goals",
+          "ar": "158 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "trb_city_23",
-        "name": { "en": "Manchester City (2022–23)", "ar": "مانشستر سيتي (2022–23)" },
-        "subText": { "en": "Pep Guardiola (Haaland 52 goals)", "ar": "بيب غوارديولا (52 هدفًا لإيرلينغ هالاند)" },
-        "media": { "type": "club", "fallbackText": "MCFC" },
+        "name": {
+          "en": "Manchester City (2022–23)",
+          "ar": "مانشستر سيتي (2022–23)"
+        },
+        "subText": {
+          "en": "Pep Guardiola (Haaland 52 goals)",
+          "ar": "بيب غوارديولا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCFC"
+        },
         "value": 151,
-        "valueLabel": { "en": "151 Goals", "ar": "151 هدفًا" },
+        "valueLabel": {
+          "en": "151 Goals",
+          "ar": "151 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "trb_inter_10",
-        "name": { "en": "Inter Milan (2009–10)", "ar": "إنتر ميلان (2009–10)" },
-        "subText": { "en": "José Mourinho (Milito, Sneijder, Eto'o)", "ar": "جوزيه مورينيو (ميليتو وسنايدر وإيتو)" },
-        "media": { "type": "club", "fallbackText": "INT" },
+        "name": {
+          "en": "Inter Milan (2009–10)",
+          "ar": "إنتر ميلان (2009–10)"
+        },
+        "subText": {
+          "en": "José Mourinho (Milito, Sneijder, Eto'o)",
+          "ar": "جوزيه مورينيو (ميليتو وسنايدر وإيتو)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "INT"
+        },
         "value": 99,
-        "valueLabel": { "en": "99 Goals", "ar": "99 هدفًا" },
+        "valueLabel": {
+          "en": "99 Goals",
+          "ar": "99 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +141,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ucl", "goals", "barcelona", "bayern", "real-madrid", "liverpool", "psg"],
+    "tags": [
+      "ucl",
+      "goals",
+      "barcelona",
+      "bayern",
+      "real-madrid",
+      "liverpool",
+      "psg"
+    ],
     "title": {
       "en": "Rank these 5 team campaigns by total goals scored in a single Champions League season",
       "ar": "رتّب مواسم الفرق الخمسة حسب عدد الأهداف المسجلة في نسخة واحدة بدوري أبطال أوروبا"
@@ -79,52 +158,115 @@
       "en": "Total goals scored from group stage through final",
       "ar": "إجمالي الأهداف المسجلة من دور المجموعات حتى النهائي"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ucg_barca_00",
-        "name": { "en": "FC Barcelona (1999–00)", "ar": "برشلونة (1999–00)" },
-        "subText": { "en": "16 matches played (All-Time Record)", "ar": "لعب الفريق 16 مباراة (الرقم القياسي التاريخي)" },
-        "media": { "type": "club", "fallbackText": "FCB" },
+        "name": {
+          "en": "FC Barcelona (1999–00)",
+          "ar": "برشلونة (1999–00)"
+        },
+        "subText": {
+          "en": "",
+          "ar": "لعب الفريق 16 مباراة (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB"
+        },
         "value": 45,
-        "valueLabel": { "en": "45 Goals", "ar": "45 هدفًا" },
+        "valueLabel": {
+          "en": "45 Goals",
+          "ar": "45 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ucg_bayern_20",
-        "name": { "en": "Bayern Munich (2019–20)", "ar": "بايرن ميونخ (2019–20)" },
-        "subText": { "en": "11 matches only (3.91 goals/match - Record Ratio)", "ar": "11 مباراة فقط (3.91 هدف/مباراة - أعلى معدل في التاريخ)" },
-        "media": { "type": "club", "fallbackText": "BAY" },
+        "name": {
+          "en": "Bayern Munich (2019–20)",
+          "ar": "بايرن ميونخ (2019–20)"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY"
+        },
         "value": 43,
-        "valueLabel": { "en": "43 Goals", "ar": "43 هدفًا" },
+        "valueLabel": {
+          "en": "43 Goals",
+          "ar": "43 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ucg_real_14",
-        "name": { "en": "Real Madrid (2013–14)", "ar": "ريال مدريد (2013–14)" },
-        "subText": { "en": "La Décima (Cristiano Ronaldo 17 goals)", "ar": "العاشرة (17 هدفًا لكريستيانو رونالدو)" },
-        "media": { "type": "club", "fallbackText": "RMA" },
+        "name": {
+          "en": "Real Madrid (2013–14)",
+          "ar": "ريال مدريد (2013–14)"
+        },
+        "subText": {
+          "en": "La Décima (Cristiano Ronaldo 17 goals)",
+          "ar": "العاشرة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA"
+        },
         "value": 41,
-        "valueLabel": { "en": "41 Goals", "ar": "41 هدفًا" },
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ucg_liv_18",
-        "name": { "en": "Liverpool (2017–18)", "ar": "ليفربول (2017–18)" },
-        "subText": { "en": "Salah, Mané & Firmino (10 goals each)", "ar": "صلاح وماني وفيرمينو (10 أهداف لكل منهم)" },
-        "media": { "type": "club", "fallbackText": "LIV" },
+        "name": {
+          "en": "Liverpool (2017–18)",
+          "ar": "ليفربول (2017–18)"
+        },
+        "subText": {
+          "en": "Salah, Mané & Firmino",
+          "ar": "صلاح وماني وفيرمينو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV"
+        },
         "value": 40,
-        "valueLabel": { "en": "40 Goals", "ar": "40 هدفًا" },
+        "valueLabel": {
+          "en": "40 Goals",
+          "ar": "40 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ucg_psg_18",
-        "name": { "en": "Paris Saint-Germain (2017–18)", "ar": "باريس سان جيرمان (2017–18)" },
-        "subText": { "en": "25 group stage goals record", "ar": "الرقم القياسي في دور المجموعات (25 هدفًا)" },
-        "media": { "type": "club", "fallbackText": "PSG" },
+        "name": {
+          "en": "Paris Saint-Germain (2017–18)",
+          "ar": "باريس سان جيرمان (2017–18)"
+        },
+        "subText": {
+          "en": "25 group stage goals record",
+          "ar": "الرقم القياسي في دور المجموعات"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "PSG"
+        },
         "value": 27,
-        "valueLabel": { "en": "27 Goals", "ar": "27 هدفًا" },
+        "valueLabel": {
+          "en": "27 Goals",
+          "ar": "27 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -135,7 +277,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["unbeaten", "records", "milan", "bayern", "arsenal", "barcelona", "leverkusen"],
+    "tags": [
+      "unbeaten",
+      "records",
+      "milan",
+      "bayern",
+      "arsenal",
+      "barcelona",
+      "leverkusen"
+    ],
     "title": {
       "en": "Rank these 5 clubs by longest unbeaten match streak in Europe's top 5 domestic leagues",
       "ar": "رتّب الأندية الخمسة حسب أطول سلسلة مباريات دون هزيمة في الدوريات الأوروبية الخمسة الكبرى"
@@ -144,52 +294,115 @@
       "en": "Consecutive domestic league matches without defeat",
       "ar": "المباريات المتتالية دون خسارة في الدوري المحلي"
     },
-    "metricLabel": { "en": "Unbeaten Matches", "ar": "مباريات دون هزيمة" },
+    "metricLabel": {
+      "en": "Unbeaten Matches",
+      "ar": "مباريات دون هزيمة"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "unb_milan",
-        "name": { "en": "AC Milan (1991–1993)", "ar": "ميلان (1991–1993)" },
-        "subText": { "en": "Fabio Capello (All-Time Top 5 League Record)", "ar": "فابيو كابيلو (الرقم القياسي التاريخي للدوريات الكبرى)" },
-        "media": { "type": "club", "fallbackText": "MIL" },
+        "name": {
+          "en": "AC Milan (1991–1993)",
+          "ar": "ميلان (1991–1993)"
+        },
+        "subText": {
+          "en": "Fabio Capello",
+          "ar": "فابيو كابيلو (الرقم القياسي التاريخي للدوريات الكبرى)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MIL"
+        },
         "value": 58,
-        "valueLabel": { "en": "58 Matches", "ar": "58 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "58 Matches",
+          "ar": "58 مباراة دون هزيمة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "unb_bayern",
-        "name": { "en": "Bayern Munich (2012–2014)", "ar": "بايرن ميونخ (2012–2014)" },
-        "subText": { "en": "Jupp Heynckes & Pep Guardiola", "ar": "يوب هاينكس وبيب غوارديولا" },
-        "media": { "type": "club", "fallbackText": "BAY" },
+        "name": {
+          "en": "Bayern Munich (2012–2014)",
+          "ar": "بايرن ميونخ (2012–2014)"
+        },
+        "subText": {
+          "en": "Jupp Heynckes & Pep Guardiola",
+          "ar": "يوب هاينكس وبيب غوارديولا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY"
+        },
         "value": 53,
-        "valueLabel": { "en": "53 Matches", "ar": "53 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "53 Matches",
+          "ar": "53 مباراة دون هزيمة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "unb_arsenal",
-        "name": { "en": "Arsenal (2003–2004)", "ar": "أرسنال (2003–2004)" },
-        "subText": { "en": "Arsène Wenger (The Invincibles)", "ar": "أرسين فينغر (جيل اللاهزيمة التاريخي)" },
-        "media": { "type": "club", "fallbackText": "ARS" },
+        "name": {
+          "en": "Arsenal (2003–2004)",
+          "ar": "أرسنال (2003–2004)"
+        },
+        "subText": {
+          "en": "Arsène Wenger (The Invincibles)",
+          "ar": "أرسين فينغر (جيل اللاهزيمة التاريخي)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ARS"
+        },
         "value": 49,
-        "valueLabel": { "en": "49 Matches", "ar": "49 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "49 Matches",
+          "ar": "49 مباراة دون هزيمة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "unb_barca",
-        "name": { "en": "FC Barcelona (2017–2018)", "ar": "برشلونة (2017–2018)" },
-        "subText": { "en": "Luis Enrique & Ernesto Valverde", "ar": "لويس إنريكي وإرنستو فالفيردي" },
-        "media": { "type": "club", "fallbackText": "FCB" },
+        "name": {
+          "en": "FC Barcelona (2017–2018)",
+          "ar": "برشلونة (2017–2018)"
+        },
+        "subText": {
+          "en": "Luis Enrique & Ernesto Valverde",
+          "ar": "لويس إنريكي وإرنستو فالفيردي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB"
+        },
         "value": 43,
-        "valueLabel": { "en": "43 Matches", "ar": "43 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "43 Matches",
+          "ar": "43 مباراة دون هزيمة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "unb_leverkusen",
-        "name": { "en": "Bayer Leverkusen (2023–2024)", "ar": "باير ليفركوزن (2023–2024)" },
-        "subText": { "en": "Xabi Alonso (First Unbeaten Bundesliga Season)", "ar": "تشابي ألونسو (أول بطل دون هزيمة في تاريخ البوندسليغا)" },
-        "media": { "type": "club", "fallbackText": "B04" },
+        "name": {
+          "en": "Bayer Leverkusen (2023–2024)",
+          "ar": "باير ليفركوزن (2023–2024)"
+        },
+        "subText": {
+          "en": "Xabi Alonso (First Unbeaten Bundesliga Season)",
+          "ar": "تشابي ألونسو (أول بطل دون هزيمة في تاريخ البوندسليغا)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "B04"
+        },
         "value": 34,
-        "valueLabel": { "en": "34 Matches", "ar": "34 مباراة دون هزيمة" },
+        "valueLabel": {
+          "en": "34 Matches",
+          "ar": "34 مباراة دون هزيمة"
+        },
         "correctRank": 5
       }
     ]
@@ -200,7 +413,15 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["uefa-super-cup", "trophies", "real-madrid", "barcelona", "liverpool", "atletico", "chelsea"],
+    "tags": [
+      "uefa-super-cup",
+      "trophies",
+      "real-madrid",
+      "barcelona",
+      "liverpool",
+      "atletico",
+      "chelsea"
+    ],
     "title": {
       "en": "Rank these 5 clubs by UEFA Super Cup titles won",
       "ar": "رتّب الأندية الخمسة حسب عدد ألقاب كأس السوبر الأوروبي"
@@ -209,52 +430,115 @@
       "en": "Official UEFA Super Cup trophies won",
       "ar": "بطولات كأس السوبر الأوروبي عبر التاريخ"
     },
-    "metricLabel": { "en": "Super Cups", "ar": "كؤوس سوبر" },
+    "metricLabel": {
+      "en": "Super Cups",
+      "ar": "كؤوس سوبر"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "usc_real",
-        "name": { "en": "Real Madrid", "ar": "ريال مدريد" },
-        "subText": { "en": "6 Titles (All-Time Record Holder)", "ar": "6 ألقاب (الرقم القياسي التاريخي)" },
-        "media": { "type": "club", "fallbackText": "RMA" },
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA"
+        },
         "value": 6,
-        "valueLabel": { "en": "6 Titles", "ar": "6 ألقاب" },
+        "valueLabel": {
+          "en": "6 Titles",
+          "ar": "6 ألقاب"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "usc_barca",
-        "name": { "en": "FC Barcelona", "ar": "برشلونة" },
-        "subText": { "en": "5 Titles (1992, 1997, 2009, 2011, 2015)", "ar": "5 ألقاب (1992، 1997، 2009، 2011، 2015)" },
-        "media": { "type": "club", "fallbackText": "FCB" },
+        "name": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB"
+        },
         "value": 5,
-        "valueLabel": { "en": "5 Titles", "ar": "5 ألقاب" },
+        "valueLabel": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "usc_liverpool",
-        "name": { "en": "Liverpool", "ar": "ليفربول" },
-        "subText": { "en": "4 Titles (1977, 2001, 2005, 2019)", "ar": "4 ألقاب (1977، 2001، 2005، 2019)" },
-        "media": { "type": "club", "fallbackText": "LIV" },
+        "name": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Titles", "ar": "4 ألقاب" },
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "usc_atletico",
-        "name": { "en": "Atlético Madrid", "ar": "أتلتيكو مدريد" },
-        "subText": { "en": "3 Titles (100% Win Rate: 2010, 2012, 2018)", "ar": "3 ألقاب (نسبة فوز 100%: 2010، 2012، 2018)" },
-        "media": { "type": "club", "fallbackText": "ATM" },
+        "name": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ATM"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Titles", "ar": "3 ألقاب" },
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "usc_chelsea",
-        "name": { "en": "Chelsea", "ar": "تشيلسي" },
-        "subText": { "en": "2 Titles (1998, 2021)", "ar": "لقبان (1998، 2021)" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "subText": {
+          "en": "",
+          "ar": "لقبان (1998، 2021)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Titles", "ar": "لقبان" },
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
         "correctRank": 5
       }
     ]
@@ -265,7 +549,15 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["club-world-cup", "intercontinental", "real-madrid", "milan", "barcelona", "corinthians", "chelsea"],
+    "tags": [
+      "club-world-cup",
+      "intercontinental",
+      "real-madrid",
+      "milan",
+      "barcelona",
+      "corinthians",
+      "chelsea"
+    ],
     "title": {
       "en": "Rank these 5 clubs by official World Champion titles won (Club World Cup + Intercontinental Cup)",
       "ar": "رتّب الأندية الخمسة حسب عدد ألقاب بطل العالم (كأس العالم للأندية وكأس الإنتركونتيننتال معًا)"
@@ -274,52 +566,115 @@
       "en": "Combined Intercontinental Cup (1960–2004) & FIFA Club World Cup (2000–present)",
       "ar": "مجموع بطولات كأس العالم للأندية وكأس الإنتركونتيننتال"
     },
-    "metricLabel": { "en": "World Titles", "ar": "ألقاب عالمية" },
+    "metricLabel": {
+      "en": "World Titles",
+      "ar": "ألقاب عالمية"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "cwt_real",
-        "name": { "en": "Real Madrid", "ar": "ريال مدريد" },
-        "subText": { "en": "8 Titles (3 Intercontinental + 5 CWC - All-Time Record)", "ar": "8 ألقاب (3 إنتركونتيننتال + 5 مونديال أندية - رقم قياسي)" },
-        "media": { "type": "club", "fallbackText": "RMA" },
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Titles", "ar": "8 ألقاب عالمية" },
+        "valueLabel": {
+          "en": "8 Titles",
+          "ar": "8 ألقاب عالمية"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "cwt_milan",
-        "name": { "en": "AC Milan", "ar": "ميلان" },
-        "subText": { "en": "4 Titles (3 Intercontinental + 1 CWC)", "ar": "4 ألقاب (3 إنتركونتيننتال + 1 مونديال أندية)" },
-        "media": { "type": "club", "fallbackText": "MIL" },
+        "name": {
+          "en": "AC Milan",
+          "ar": "ميلان"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MIL"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Titles", "ar": "4 ألقاب عالمية" },
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب عالمية"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "cwt_barca",
-        "name": { "en": "FC Barcelona", "ar": "برشلونة" },
-        "subText": { "en": "3 Titles (2009, 2011, 2015 CWC)", "ar": "3 ألقاب (2009، 2011، 2015 في مونديال الأندية)" },
-        "media": { "type": "club", "fallbackText": "FCB" },
+        "name": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Titles", "ar": "3 ألقاب عالمية" },
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب عالمية"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "cwt_corinthians",
-        "name": { "en": "Corinthians", "ar": "كورينثيانز" },
-        "subText": { "en": "2 Titles (2000, 2012 CWC - Only non-European multi-winner)", "ar": "لقبان (2000، 2012 - النادي اللاتيني الوحيد المتوج مرتين)" },
-        "media": { "type": "club", "fallbackText": "COR" },
+        "name": {
+          "en": "Corinthians",
+          "ar": "كورينثيانز"
+        },
+        "subText": {
+          "en": "",
+          "ar": "لقبان (2000، 2012 - النادي اللاتيني الوحيد المتوج مرتين)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "COR"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Titles", "ar": "لقبان عالميان" },
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان عالميان"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "cwt_chelsea",
-        "name": { "en": "Chelsea", "ar": "تشيلسي" },
-        "subText": { "en": "1 Title (2021 CWC)", "ar": "لقب واحد (مونديال الأندية 2021)" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "subText": {
+          "en": "1 Title (2021 CWC)",
+          "ar": "لقب واحد (مونديال الأندية 2021)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE"
+        },
         "value": 1,
-        "valueLabel": { "en": "1 Title", "ar": "لقب عالمي واحد" },
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب عالمي واحد"
+        },
         "correctRank": 5
       }
     ]
@@ -330,7 +685,16 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["league-cup", "efl", "trophies", "liverpool", "psg", "mancity", "man-united", "chelsea"],
+    "tags": [
+      "league-cup",
+      "efl",
+      "trophies",
+      "liverpool",
+      "psg",
+      "mancity",
+      "man-united",
+      "chelsea"
+    ],
     "title": {
       "en": "Rank these 5 clubs by domestic League Cup trophies won (EFL Cup / Coupe de la Ligue)",
       "ar": "رتّب الأندية الخمسة حسب عدد ألقاب كأس الرابطة المحلية (كأس كاراباو / كأس الرابطة الفرنسية)"
@@ -339,52 +703,115 @@
       "en": "Official domestic league cup tournament victories",
       "ar": "إجمالي بطولات كأس الرابطة المحلية"
     },
-    "metricLabel": { "en": "League Cups", "ar": "كؤوس الرابطة" },
+    "metricLabel": {
+      "en": "League Cups",
+      "ar": "كؤوس الرابطة"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "dlc_liverpool",
-        "name": { "en": "Liverpool", "ar": "ليفربول" },
-        "subText": { "en": "10 EFL Cups (All-Time English Record)", "ar": "10 كؤوس رابطة إنجليزية (الرقم القياسي التاريخي)" },
-        "media": { "type": "club", "fallbackText": "LIV" },
+        "name": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "subText": {
+          "en": "10 EFL Cups",
+          "ar": "10 كؤوس رابطة إنجليزية (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV"
+        },
         "value": 10,
-        "valueLabel": { "en": "10 League Cups", "ar": "10 كؤوس رابطة" },
+        "valueLabel": {
+          "en": "10 League Cups",
+          "ar": "10 كؤوس رابطة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "dlc_psg",
-        "name": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
-        "subText": { "en": "9 Coupe de la Ligue (All-Time French Record)", "ar": "9 كؤوس رابطة فرنسية (الرقم القياسي الفرنسي)" },
-        "media": { "type": "club", "fallbackText": "PSG" },
+        "name": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "subText": {
+          "en": "9 Coupe de la Ligue",
+          "ar": "9 كؤوس رابطة فرنسية (الرقم القياسي الفرنسي)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "PSG"
+        },
         "value": 9,
-        "valueLabel": { "en": "9 League Cups", "ar": "9 كؤوس رابطة" },
+        "valueLabel": {
+          "en": "9 League Cups",
+          "ar": "9 كؤوس رابطة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "dlc_mancity",
-        "name": { "en": "Manchester City", "ar": "مانشستر سيتي" },
-        "subText": { "en": "8 EFL Cups (4 in a row: 2018–2021)", "ar": "8 كؤوس رابطة (4 ألقاب متتالية 2018–2021)" },
-        "media": { "type": "club", "fallbackText": "MCFC" },
+        "name": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "subText": {
+          "en": "8 EFL Cups (4 in a row: 2018–2021)",
+          "ar": "8 كؤوس رابطة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCFC"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 League Cups", "ar": "8 كؤوس رابطة" },
+        "valueLabel": {
+          "en": "8 League Cups",
+          "ar": "8 كؤوس رابطة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "dlc_manu",
-        "name": { "en": "Manchester United", "ar": "مانشستر يونايتد" },
-        "subText": { "en": "6 EFL Cups (1992, 2006, 2009, 2010, 2017, 2023)", "ar": "6 كؤوس رابطة إنجليزية" },
-        "media": { "type": "club", "fallbackText": "MU" },
+        "name": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "subText": {
+          "en": "6 EFL Cups (1992, 2006, 2009, 2010, 2017, 2023)",
+          "ar": "6 كؤوس رابطة إنجليزية"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MU"
+        },
         "value": 6,
-        "valueLabel": { "en": "6 League Cups", "ar": "6 كؤوس رابطة" },
+        "valueLabel": {
+          "en": "6 League Cups",
+          "ar": "6 كؤوس رابطة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "dlc_chelsea",
-        "name": { "en": "Chelsea", "ar": "تشيلسي" },
-        "subText": { "en": "5 EFL Cups (1965, 1998, 2005, 2007, 2015)", "ar": "5 كؤوس رابطة إنجليزية" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "subText": {
+          "en": "5 EFL Cups (1965, 1998, 2005, 2007, 2015)",
+          "ar": "5 كؤوس رابطة إنجليزية"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE"
+        },
         "value": 5,
-        "valueLabel": { "en": "5 League Cups", "ar": "5 كؤوس رابطة" },
+        "valueLabel": {
+          "en": "5 League Cups",
+          "ar": "5 كؤوس رابطة"
+        },
         "correctRank": 5
       }
     ]
