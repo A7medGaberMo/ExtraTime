@@ -131,7 +131,7 @@ export function Header() {
       <div ref={notchRef} className="pointer-events-auto">
         <AnimatePresence initial={false} mode="wait">
           {!isOpen ? (
-            /* ── Collapsed Dynamic Island Capsule ── */
+            /* â”€â”€ Collapsed Dynamic Island Capsule â”€â”€ */
             <motion.div
               key="collapsed-notch"
               initial={{ opacity: 0, y: -10, scale: 0.95 }}
@@ -174,7 +174,7 @@ export function Header() {
                         key={item.href}
                         href={item.href}
                         className={cn(
-                          'flex items-center gap-1.5 rounded-full px-3 py-1 text-[11.5px] font-bold transition-all',
+                          'flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold transition-colors',
                           isActive
                             ? 'bg-lime text-slate-950 shadow-sm'
                             : 'text-steel hover:bg-white/5 hover:text-white',
@@ -196,15 +196,15 @@ export function Header() {
                       ? `/auction/${activeMatch.id}`
                       : `/rank/${activeMatch.id}`
                   }
-                  className="flex items-center gap-1.5 rounded-full bg-lime/15 border border-lime/40 px-2 sm:px-2.5 py-0.5 text-lime hover:bg-lime/25 transition-all shadow-[0_0_12px_rgba(149,232,16,0.3)] animate-pulse shrink-0 cursor-pointer"
+                  className="flex items-center gap-1.5 rounded-full border border-lime/40 bg-lime/15 px-2 py-0.5 text-lime shadow-glow-lime transition-all animate-pulse shrink-0 cursor-pointer sm:px-2.5 hover:bg-lime/25"
                   title="Resume live match"
                 >
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-lime" />
                   </span>
-                  <span className="font-stats text-[10.5px] font-black uppercase tracking-wider">
-                    {lang === 'ar' ? 'الماتش لايف' : 'LIVE'}
+                  <span className="font-stats text-xs font-bold">
+                    {lang === 'ar' ? 'Ø§Ù„Ù…Ø§ØªØ´ Ù„Ø§ÙŠÙ' : 'LIVE'}
                   </span>
                 </Link>
               )}
@@ -216,7 +216,7 @@ export function Header() {
                 <button
                   type="button"
                   onClick={handleToggleSound}
-                  className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
                   title={muted ? t('common.soundMuted') : t('common.soundOn')}
                   aria-label={muted ? t('common.soundMuted') : t('common.soundOn')}
                 >
@@ -231,18 +231,18 @@ export function Header() {
                 <button
                   type="button"
                   onClick={toggleLang}
-                  className="flex h-7 items-center gap-1 px-2 rounded-full border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
+                  className="flex h-8 items-center gap-1 rounded-full px-2 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
                   title={t('common.language')}
                 >
                   <Languages size={12} />
-                  <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
+                  <span>{lang === 'en' ? 'Ø¹Ø±Ø¨ÙŠ' : 'EN'}</span>
                 </button>
 
                 {/* Menu Expander / Arrow */}
                 <button
                   type="button"
                   onClick={() => setIsOpen(true)}
-                  className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
                   title="Expand Navigation Island"
                 >
                   <ChevronDown size={13} strokeWidth={2.5} />
@@ -250,7 +250,7 @@ export function Header() {
               </div>
             </motion.div>
           ) : (
-            /* ── Expanded Island Control Center ── */
+            /* â”€â”€ Expanded Island Control Center â”€â”€ */
             <motion.div
               key="expanded-island"
               initial={{ opacity: 0, y: -16, scale: 0.92 }}
@@ -285,7 +285,7 @@ export function Header() {
                   <button
                     type="button"
                     onClick={handleToggleSound}
-                    className="flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer"
+                    className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer"
                     title={muted ? t('common.soundMuted') : t('common.soundOn')}
                   >
                     {muted ? (
@@ -299,7 +299,7 @@ export function Header() {
                   <button
                     type="button"
                     onClick={toggleLang}
-                    className="flex h-7 items-center gap-1 px-2.5 rounded-lg border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:text-white transition-colors cursor-pointer font-stats"
+                    className="flex h-8 items-center gap-1 rounded-lg px-2.5 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:text-white transition-colors cursor-pointer font-stats"
                     title={t('common.language')}
                   >
                     <Languages size={13} />
@@ -310,7 +310,7 @@ export function Header() {
                   <button
                     type="button"
                     onClick={() => setIsOpen(false)}
-                    className="flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer ml-0.5"
+                    className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors cursor-pointer ml-0.5"
                     title="Close"
                   >
                     <X size={14} />
@@ -325,7 +325,7 @@ export function Header() {
                     <User size={13} className="text-lime" />
                     <span className="text-white truncate max-w-[160px]">{guestName}</span>
                   </div>
-                  <span className="text-[10px] text-lime font-bold uppercase tracking-wider font-stats">
+                  <span className="font-stats text-micro font-bold text-lime">
                     Manager
                   </span>
                 </div>
@@ -348,21 +348,22 @@ export function Header() {
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-lime" />
                     </span>
                     <div className="min-w-0">
-                      <div className="text-[11.5px] font-black text-white uppercase font-display truncate">
+                      <div className="truncate text-xs font-bold text-white">
                         {activeMatch.type === 'snipe' ? 'Snipe Match' : 'Rank Duel'} ({activeMatch.code})
                       </div>
-                      <div className="text-[10px] text-lime font-bold truncate">
+                      <div className="truncate text-micro font-semibold text-lime">
                         {activeMatch.status === 'waiting'
                           ? (lang === 'ar' ? 'في انتظار المنافس...' : 'Waiting for rival...')
                           : (lang === 'ar' ? 'الماتش جاري الآن — اضغط للمتابعة' : 'Match in progress — Tap to resume')}
                       </div>
                     </div>
                   </div>
-                  <span className="rounded-lg bg-lime px-2.5 py-1 text-[10.5px] font-black text-slate-950 uppercase shadow-sm shrink-0">
+                  <span className="shrink-0 rounded-lg bg-lime px-2.5 py-1 text-micro font-bold text-slate-950">
                     {lang === 'ar' ? 'دخول' : 'Resume'}
                   </span>
                 </Link>
               )}
+
 
               {/* Quick Navigation 4-Box Grid */}
 
@@ -409,7 +410,7 @@ export function Header() {
                 <Link
                   href="/join-room"
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-center gap-1.5 w-full py-1.5 rounded-xl border border-white/[0.06] bg-white/[0.02] text-steel hover:text-lime hover:border-lime/30 text-xs font-bold transition-all cursor-pointer font-stats uppercase"
+                  className="flex items-center justify-center gap-1.5 w-full py-1.5 rounded-xl border border-white/[0.06] bg-white/[0.02] text-steel hover:text-lime hover:border-lime/30 text-xs font-semibold transition-colors cursor-pointer"
                 >
                   <LogIn size={13} />
                   <span>{t('nav.join')} (Room Code)</span>
@@ -422,3 +423,4 @@ export function Header() {
     </header>
   );
 }
+

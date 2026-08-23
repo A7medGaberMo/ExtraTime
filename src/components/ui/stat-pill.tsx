@@ -30,14 +30,14 @@ export function StatPill({
   }[variant];
 
   const sizeStyles = {
-    sm: 'px-2.5 py-0.5 text-[10px] gap-1 rounded-lg',
-    md: 'px-3.5 py-1 text-xs gap-1.5 rounded-full',
+    sm: 'gap-1 rounded-lg px-2.5 py-0.5 text-micro',
+    md: 'gap-1.5 rounded-full px-3.5 py-1 text-xs',
   }[size];
 
   return (
     <div
       className={cn(
-        'inline-flex items-center border font-black uppercase tracking-wider shadow-sm backdrop-blur-md',
+        'inline-flex items-center border font-semibold backdrop-blur-md',
         variantStyles,
         sizeStyles,
         className,
