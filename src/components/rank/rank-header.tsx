@@ -67,7 +67,7 @@ export function RankHeader({
         : 'text-lime border-white/10 bg-slate-900/90';
 
   return (
-    <header className="w-full shrink-0 select-none space-y-2 pt-8 sm:pt-9">
+    <header className="w-full shrink-0 select-none space-y-2 pt-1.5 sm:pt-2">
       {/* 3 Top Status Pills */}
       <div className="flex items-center justify-between gap-2">
         {/* Round Pill */}
