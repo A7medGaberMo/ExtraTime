@@ -1,6 +1,6 @@
 [
   {
-    "slug": "afcon-titles-by-nation",
+    "slug": "afcon-all-time-trophies-ranking",
     "scopeType": "ALL_TIME",
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
@@ -274,7 +274,7 @@
     ]
   },
   {
-    "slug": "copa-america-titles-by-nation",
+    "slug": "copa-america-all-time-titles",
     "scopeType": "ALL_TIME",
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
@@ -307,8 +307,8 @@
           "ar": "الأرجنتين"
         },
         "subText": {
-          "en": "",
-          "ar": "16 لقبًا (البطل التاريخي)"
+          "en": "All-Time Record Winners",
+          "ar": "البطل التاريخي للمسابقة"
         },
         "media": {
           "type": "nation",
@@ -328,8 +328,8 @@
           "ar": "أوروجواي"
         },
         "subText": {
-          "en": "",
-          "ar": "15 لقبًا"
+          "en": "First Edition Champions (1916)",
+          "ar": "بطل أول نسخة (1916)"
         },
         "media": {
           "type": "nation",
@@ -370,8 +370,8 @@
           "ar": "تشيلي"
         },
         "subText": {
-          "en": "2015 & 2016 Back-to-Back",
-          "ar": "لقبان متتاليان 2015 و2016"
+          "en": "Back-to-Back Champions (2015 & 2016)",
+          "ar": "تتويجان متتاليان (2015 و2016)"
         },
         "media": {
           "type": "nation",

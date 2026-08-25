@@ -455,8 +455,8 @@
           "ar": "الأرجنتين"
         },
         "subText": {
-          "en": "7 Shootouts",
-          "ar": "خاضت 7 ركلات ترجيح (فازت بـ6 - رقم قياسي)"
+          "en": "7 Total Shootouts Played",
+          "ar": "خاضت 7 ركلات ترجيح في المونديال"
         },
         "media": {
           "type": "nation",
@@ -476,8 +476,8 @@
           "ar": "ألمانيا"
         },
         "subText": {
-          "en": "4 Shootouts (100% Win Rate: 4 Wins)",
-          "ar": "خاضت 4 (نسبة نجاح 100%: 4 انتصارات)"
+          "en": "100% Shootout Success Rate",
+          "ar": "نسبة نجاح 100% بركلات الترجيح"
         },
         "media": {
           "type": "nation",
@@ -497,8 +497,8 @@
           "ar": "البرازيل"
         },
         "subText": {
-          "en": "5 Shootouts",
-          "ar": "خاضت 5 (فازت بـ3 وخسرت 2)"
+          "en": "5 Total Shootouts Played",
+          "ar": "خاضت 5 ركلات ترجيح في المونديال"
         },
         "media": {
           "type": "nation",
@@ -518,8 +518,8 @@
           "ar": "فرنسا"
         },
         "subText": {
-          "en": "5 Shootouts",
-          "ar": "خاضت 5 (فازت باثنتين وخسرت 3)"
+          "en": "5 Total Shootouts Played",
+          "ar": "خاضت 5 ركلات ترجيح في المونديال"
         },
         "media": {
           "type": "nation",
@@ -539,8 +539,8 @@
           "ar": "إنجلترا"
         },
         "subText": {
-          "en": "4 Shootouts (1 Win vs Colombia 2018)",
-          "ar": "خاضت 4 (فوز واحد ضد كولومبيا 2018)"
+          "en": "4 Total Shootouts Played",
+          "ar": "خاضت 4 ركلات ترجيح في المونديال"
         },
         "media": {
           "type": "nation",
@@ -591,8 +591,8 @@
           "ar": "المكسيك"
         },
         "subText": {
-          "en": "17 Tournaments (Most without title)",
-          "ar": ""
+          "en": "Most Qualifications Without Title",
+          "ar": "الأكثر وصولاً للنهائيات دون تتويج"
         },
         "media": {
           "type": "nation",
@@ -612,8 +612,8 @@
           "ar": "بلجيكا"
         },
         "subText": {
-          "en": "14 Tournaments (Best: 3rd in 2018)",
-          "ar": ""
+          "en": "Best: 3rd Place in 2018",
+          "ar": "أفضل مركز: المركز الثالث 2018"
         },
         "media": {
           "type": "nation",
@@ -633,8 +633,8 @@
           "ar": "سويسرا"
         },
         "subText": {
-          "en": "12 Tournaments (Best: Quarter-Finals)",
-          "ar": ""
+          "en": "Best: Quarter-Finals",
+          "ar": "أفضل مركز: ربع النهائي"
         },
         "media": {
           "type": "nation",
@@ -654,8 +654,8 @@
           "ar": "تشيلي"
         },
         "subText": {
-          "en": "9 Tournaments (Best: 3rd in 1962)",
-          "ar": ""
+          "en": "Best: 3rd Place in 1962",
+          "ar": "أفضل مركز: المركز الثالث 1962"
         },
         "media": {
           "type": "nation",
@@ -675,8 +675,8 @@
           "ar": "إسكتلندا"
         },
         "subText": {
-          "en": "8 Tournaments (Group Stages)",
-          "ar": ""
+          "en": "Group Stage Exits",
+          "ar": "ودّعت دائمًا من دور المجموعات"
         },
         "media": {
           "type": "nation",

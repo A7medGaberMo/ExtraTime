@@ -1,0 +1,539 @@
+[
+  {
+    "slug": "fastest-premier-league-hattricks-minutes",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "premier-league",
+      "hattricks",
+      "fastest",
+      "records",
+      "mane"
+    ],
+    "title": {
+      "en": "Rank these 5 fastest hat-tricks in Premier League history (fastest time first)",
+      "ar": "رتّب أسرع 5 ثلاثيات (هاتريك) في تاريخ الدوري الإنجليزي الممتاز (الأسرع أولاً)"
+    },
+    "subtitle": {
+      "en": "Time elapsed between first and third goal",
+      "ar": "الوقت المستغرق بين الهدفين الأول والثالث"
+    },
+    "metricLabel": {
+      "en": "Time",
+      "ar": "الوقت"
+    },
+    "direction": "asc",
+    "answers": [
+      {
+        "answerKey": "fht_mane",
+        "name": {
+          "en": "Sadio Mané (2015)",
+          "ar": "ساديو ماني (2015)"
+        },
+        "subText": {
+          "en": "Southampton vs Aston Villa",
+          "ar": "ساوثهامبتون ضد أستون فيلا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MAN"
+        },
+        "value": 176,
+        "valueLabel": {
+          "en": "2 min 56 sec",
+          "ar": "دقيقتان و56 ثانية"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fht_fowler",
+        "name": {
+          "en": "Robbie Fowler (1994)",
+          "ar": "روبي فاولر (1994)"
+        },
+        "subText": {
+          "en": "Liverpool vs Arsenal",
+          "ar": "ليفربول ضد أرسنال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "FOW"
+        },
+        "value": 273,
+        "valueLabel": {
+          "en": "4 min 33 sec",
+          "ar": "4 دقائق و33 ثانية"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fht_defoe",
+        "name": {
+          "en": "Jermain Defoe (2009)",
+          "ar": "جيرمين ديفو (2009)"
+        },
+        "subText": {
+          "en": "Tottenham vs Wigan",
+          "ar": "توتنهام ضد ويغان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DEF"
+        },
+        "value": 420,
+        "valueLabel": {
+          "en": "7 min 00 sec",
+          "ar": "7 دقائق"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fht_agbonlahor",
+        "name": {
+          "en": "Gabriel Agbonlahor (2008)",
+          "ar": "غابرييل أجبونلاهور (2008)"
+        },
+        "subText": {
+          "en": "Aston Villa vs Man City",
+          "ar": "أستون فيلا ضد مان سيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "AGB"
+        },
+        "value": 432,
+        "valueLabel": {
+          "en": "7 min 12 sec",
+          "ar": "7 دقائق و12 ثانية"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fht_marshall",
+        "name": {
+          "en": "Ian Marshall (1996)",
+          "ar": "إيان مارشال (1996)"
+        },
+        "subText": {
+          "en": "Leicester vs Derby County",
+          "ar": "ليستر سيتي ضد ديربي كاونتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MAR"
+        },
+        "value": 540,
+        "valueLabel": {
+          "en": "9 min 00 sec",
+          "ar": "9 دقائق"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-career-assists",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "champions-league",
+      "assists",
+      "playmakers",
+      "records"
+    ],
+    "title": {
+      "en": "Rank these 5 legends by career UEFA Champions League assists provided",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب إجمالي التمريرات الحاسمة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "UEFA official Champions League career assist tally",
+      "ar": "إجمالي التمريرات الحاسمة الرسمية في تاريخ المسابقة"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_ast_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Man United, Real Madrid & Juventus",
+          "ar": "مانشستر يونايتد، ريال مدريد ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7"
+        },
+        "value": 42,
+        "valueLabel": {
+          "en": "42 Assists",
+          "ar": "42 تمريرة حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_ast_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "FC Barcelona & PSG",
+          "ar": "برشلونة وباريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10"
+        },
+        "value": 40,
+        "valueLabel": {
+          "en": "40 Assists",
+          "ar": "40 تمريرة حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_ast_dimaria",
+        "name": {
+          "en": "Ángel Di María",
+          "ar": "أنخيل دي ماريا"
+        },
+        "subText": {
+          "en": "Real Madrid, PSG, Benfica & Juventus",
+          "ar": "ريال مدريد، سان جيرمان، بنفيكا ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ADM"
+        },
+        "value": 39,
+        "valueLabel": {
+          "en": "39 Assists",
+          "ar": "39 تمريرة حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_ast_neymar",
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار دا سيلفا"
+        },
+        "subText": {
+          "en": "FC Barcelona & PSG",
+          "ar": "برشلونة وباريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "NJR"
+        },
+        "value": 33,
+        "valueLabel": {
+          "en": "33 Assists",
+          "ar": "33 تمريرة حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_ast_giggs",
+        "name": {
+          "en": "Ryan Giggs",
+          "ar": "رايان غيغز"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GIG"
+        },
+        "value": 31,
+        "valueLabel": {
+          "en": "31 Assists",
+          "ar": "31 تمريرة حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "youngest-ballon-dor-winners-age",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ballon-dor",
+      "youngest",
+      "records",
+      "awards",
+      "r9"
+    ],
+    "title": {
+      "en": "Rank these 5 icons by age when winning their first Ballon d'Or (youngest first)",
+      "ar": "رتّب هؤلاء النجوم الخمسة حسب أعمارهم عند التتويج بأول كرة ذهبية (الأصغر أولاً)"
+    },
+    "subtitle": {
+      "en": "Exact age on date of first Ballon d'Or triumph",
+      "ar": "العمر الدقيق عند التتويج بالجائزة لأول مرة"
+    },
+    "metricLabel": {
+      "en": "Age",
+      "ar": "العمر"
+    },
+    "direction": "asc",
+    "answers": [
+      {
+        "answerKey": "ybd_r9",
+        "name": {
+          "en": "Ronaldo Nazário (1997)",
+          "ar": "رونالدو البرازيلي (1997)"
+        },
+        "subText": {
+          "en": "Inter Milan & Barcelona",
+          "ar": "إنتر ميلان وبرشلونة"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "R9"
+        },
+        "value": 21.26,
+        "valueLabel": {
+          "en": "21y 95d",
+          "ar": "21 عامًا و95 يومًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ybd_owen",
+        "name": {
+          "en": "Michael Owen (2001)",
+          "ar": "مايكل أوين (2001)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "OWE"
+        },
+        "value": 22.01,
+        "valueLabel": {
+          "en": "22y 4d",
+          "ar": "22 عامًا و4 أيام"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ybd_messi",
+        "name": {
+          "en": "Lionel Messi (2009)",
+          "ar": "ليونيل ميسي (2009)"
+        },
+        "subText": {
+          "en": "FC Barcelona (Sextuple Year)",
+          "ar": "برشلونة (عام السداسية التاريخية)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10"
+        },
+        "value": 22.44,
+        "valueLabel": {
+          "en": "22y 160d",
+          "ar": "22 عامًا و160 يومًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ybd_best",
+        "name": {
+          "en": "George Best (1968)",
+          "ar": "جورج بيست (1968)"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "BES"
+        },
+        "value": 22.59,
+        "valueLabel": {
+          "en": "22y 215d",
+          "ar": "22 عامًا و215 يومًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ybd_blokhin",
+        "name": {
+          "en": "Oleg Blokhin (1975)",
+          "ar": "أوليغ بلوخين (1975)"
+        },
+        "subText": {
+          "en": "Dynamo Kyiv",
+          "ar": "دينامو كييف"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "BLO"
+        },
+        "value": 23.15,
+        "valueLabel": {
+          "en": "23y 55d",
+          "ar": "23 عامًا و55 يومًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "oldest-ucl-goalscorers-age",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "oldest",
+      "goalscorers",
+      "pepe",
+      "totti",
+      "records"
+    ],
+    "title": {
+      "en": "Rank these 5 veterans by age when scoring in the UEFA Champions League (oldest first)",
+      "ar": "رتّب هؤلاء النجوم الخمسة حسب أعمارهم عند التسجيل في دوري أبطال أوروبا (الأكبر سنًا أولاً)"
+    },
+    "subtitle": {
+      "en": "Oldest verified goalscorers in Champions League history",
+      "ar": "أكبر المسجلين سنًا في تاريخ دوري الأبطال"
+    },
+    "metricLabel": {
+      "en": "Age",
+      "ar": "العمر"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "oug_pepe",
+        "name": {
+          "en": "Pepe (2023)",
+          "ar": "بيبي (2023)"
+        },
+        "subText": {
+          "en": "FC Porto vs Shakhtar Donetsk",
+          "ar": "بورتو ضد شاختار دونيتسك"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PEP"
+        },
+        "value": 40.7,
+        "valueLabel": {
+          "en": "40y 254d",
+          "ar": "40 عامًا و254 يومًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "oug_totti",
+        "name": {
+          "en": "Francesco Totti (2014)",
+          "ar": "فرانشيسكو توتي (2014)"
+        },
+        "subText": {
+          "en": "AS Roma vs CSKA Moscow",
+          "ar": "روما ضد سسكا موسكو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TOT"
+        },
+        "value": 38.16,
+        "valueLabel": {
+          "en": "38y 59d",
+          "ar": "38 عامًا و59 يومًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "oug_giggs",
+        "name": {
+          "en": "Ryan Giggs (2011)",
+          "ar": "رايان غيغز (2011)"
+        },
+        "subText": {
+          "en": "Manchester United vs Benfica",
+          "ar": "مانشستر يونايتد ضد بنفيكا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GIG"
+        },
+        "value": 37.79,
+        "valueLabel": {
+          "en": "37y 290d",
+          "ar": "37 عامًا و290 يومًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "oug_inzaghi",
+        "name": {
+          "en": "Filippo Inzaghi (2010)",
+          "ar": "فيليبو إنزاغي (2010)"
+        },
+        "subText": {
+          "en": "AC Milan vs Real Madrid",
+          "ar": "ميلان ضد ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "INZ"
+        },
+        "value": 37.24,
+        "valueLabel": {
+          "en": "37y 86d",
+          "ar": "37 عامًا و86 يومًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "oug_zanetti",
+        "name": {
+          "en": "Javier Zanetti (2010)",
+          "ar": "خافيير زانيتي (2010)"
+        },
+        "subText": {
+          "en": "Inter Milan vs Tottenham",
+          "ar": "إنتر ميلان ضد توتنهام"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ZAN"
+        },
+        "value": 37.19,
+        "valueLabel": {
+          "en": "37y 71d",
+          "ar": "37 عامًا و71 يومًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  }
+]
