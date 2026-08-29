@@ -14,6 +14,7 @@ import type { PlayerCardData } from '@/types/player';
 import { useGuestSession } from '@/hooks/use-guest-session';
 import { unlockAudio, sfx } from '@/lib/sfx';
 import { getTierStyle } from '@/lib/tier-styles';
+import { useToast } from '@/components/shared/toast';
 import {
   CircleNotch,
   Copy,
@@ -28,8 +29,8 @@ import {
   CurrencyDollar,
   Info,
   X,
-  DeviceMobile,
   Stack,
+  WarningCircle,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
@@ -39,15 +40,40 @@ import { useI18n } from '@/lib/i18n';
 
 const BLIND_PHASE_SECONDS = 30;
 
+function sanitizeConvexError(error: unknown, lang: 'en' | 'ar'): string {
+  if (!error) return lang === 'ar' ? 'حدث خطأ غير متوقع' : 'An unexpected error occurred';
+  const msg = typeof error === 'object' && error !== null && 'message' in error
+    ? String((error as { message: unknown }).message)
+    : String(error);
+
+  // Clean Convex metadata tags
+  const clean = msg.replace(/^\[CONVEX[^\]]*\]\s*/i, '').replace(/Server Error:\s*/i, '').trim();
+
+  if (clean.includes('already locked') || clean.includes('already submitted')) {
+    return lang === 'ar' ? 'تم قفل العرض بالفعل لهذه الجولة' : 'Bid is already locked for this round';
+  }
+  if (clean.includes('insufficient') || clean.includes('budget')) {
+    return lang === 'ar' ? 'الميزانية غير كافية لهذا العرض' : 'Insufficient budget for this bid';
+  }
+  if (clean.includes('expired') || clean.includes('completed')) {
+    return lang === 'ar' ? 'انتهت هذه الجولة بالفعل' : 'This round has already resolved';
+  }
+  if (clean.includes('perk') && clean.includes('used')) {
+    return lang === 'ar' ? 'تم تفعيل البيرك بالفعل في هذه المباراة' : 'Perk has already been used in this match';
+  }
+  return clean || (lang === 'ar' ? 'تعذر إتمام العملية، يرجى المحاولة ثانية' : 'Operation failed, please try again');
+}
+
 export default function AuctionPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
   const { t, lang } = useI18n();
+  const { toast } = useToast();
   const { guestId, sessionToken } = useGuestSession(true);
   const [codeCopied, setCodeCopied] = useState(false);
 
   const [showReveal, setShowReveal] = useState(false);
-  const [showMobilePitchModal, setShowMobilePitchModal] = useState(false);
+  const [mobileView, setMobileView] = useState<'bidding' | 'pitch'>('bidding');
   const prevRoundRef = useRef<number | null>(null);
   const pendingRedirectRef = useRef(false);
   const completedTriggeredRef = useRef(false);
@@ -96,7 +122,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     if (!state?.auction) return;
     const cur = state.auction.currentRound;
     const prev = prevRoundRef.current;
-    if (prev !== null && cur > prev) setShowReveal(true);
+    if (prev !== null && cur > prev) {
+      setShowReveal(true);
+    }
     // Reset per-round submit state when a fresh locked round starts.
     if (prev !== null && cur !== prev) {
       const budget = state.me?.budget ?? 0;
@@ -118,12 +146,15 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         userId: guestId,
         sessionToken: sessionToken ?? undefined,
       });
+      toast(lang === 'ar' ? 'تم تفعيل البيرك بنجاح!' : 'Perk activated!', 'success');
     } catch (e: unknown) {
-      setError((e as { message?: string }).message || 'Could not activate perk');
+      const friendlyMsg = sanitizeConvexError(e, lang);
+      setError(friendlyMsg);
+      toast(friendlyMsg, 'error');
     } finally {
       setIsActivatingPerk(false);
     }
-  }, [mutatePerk, guestId, sessionToken, isActivatingPerk, roomId, state?.me?.perkUsed]);
+  }, [mutatePerk, guestId, sessionToken, isActivatingPerk, roomId, state?.me?.perkUsed, toast, lang]);
 
   // ── Blind phase 30s countdown (sealed lockbox deadline) ──
   const [timeLeft, setTimeLeft] = useState(0);
@@ -150,8 +181,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         roomId: roomId as Id<'rooms'>,
         userId: guestId,
         sessionToken: sessionToken ?? undefined,
-      }).catch(() => {
+      }).catch((err) => {
         autoResolveFired.current = false;
+        console.warn('Auto resolve notice:', err);
       });
     }
     if (timeLeft > 0) autoResolveFired.current = false;
@@ -237,12 +269,15 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       });
       setLockedAmount(bidAmount);
       sfx.cardDeal();
+      toast(lang === 'ar' ? `تم قفل عرضك: $${bidAmount}M` : `Offer locked: $${bidAmount}M`, 'success');
     } catch (e: unknown) {
-      setError((e as { message?: string }).message || 'Bid failed');
+      const friendlyMsg = sanitizeConvexError(e, lang);
+      setError(friendlyMsg);
+      toast(friendlyMsg, 'error');
     } finally {
       setIsSubmitting(false);
     }
-  }, [isActive, guestId, sessionToken, myLocked, bidAmount, submitSealedBid, roomId]);
+  }, [isActive, guestId, sessionToken, myLocked, bidAmount, submitSealedBid, roomId, toast, lang]);
 
   const handleRevealClose = useCallback(() => {
     setShowReveal(false);
@@ -257,8 +292,20 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     if (!room?.code) return;
     navigator.clipboard.writeText(room.code).then(() => {
       setCodeCopied(true);
+      toast(lang === 'ar' ? 'تم نسخ كود الغرفة!' : 'Room code copied!', 'success');
       setTimeout(() => setCodeCopied(false), 2000);
     });
+  };
+
+  const handleCancelRoom = async () => {
+    if (!room?._id || !guestId) return;
+    try {
+      await cancelRoom({ roomId: room._id, hostId: guestId });
+      toast(lang === 'ar' ? 'تم إلغاء المباراة' : 'Match cancelled', 'info');
+      router.push('/');
+    } catch (e: unknown) {
+      toast(sanitizeConvexError(e, lang), 'error');
+    }
   };
 
   useEffect(() => {
@@ -288,6 +335,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         <Panel variant="highlight" className="max-w-sm p-6 text-center space-y-4">
           <AppIcon icon={Crosshair} size={36} weight="duotone" className="text-steel mx-auto" />
           <h2 className="text-lg font-black text-white uppercase">Match Not Found</h2>
+          <p className="text-xs text-steel">This match session may have ended or expired.</p>
           <Button variant="primary" size="md" fullWidth onClick={() => router.push('/')}>
             {t('results.home')}
           </Button>
@@ -367,7 +415,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => cancelRoom({ roomId: room._id, hostId: guestId })}
+            onClick={handleCancelRoom}
           >
             {t('auction.waitingOverlay.cancelMatch')}
           </Button>
@@ -428,72 +476,100 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         </div>
       </Panel>
 
-      {/* ── 2. MOBILE INTERACTIVE SQUAD FORMATION STRIP (SOLVES MOBILE DUAL DISPLAY) ── */}
+      {/* ── 2. MOBILE VIEW SWITCHER (Always Display Pitch / Switch Fluidly) ── */}
       <div className="block lg:hidden">
-        <div className="rounded-2xl border border-white/10 bg-slate-950/90 p-2 shadow-lg backdrop-blur-xl">
-          <div className="flex items-center justify-between px-1 mb-1.5">
-            <div className="flex items-center gap-1.5">
-              <AppIcon icon={Stack} size={14} weight="duotone" className="text-lime" />
-              <span className="text-[10px] font-black text-white uppercase tracking-wider font-stats">
-                {t('auction.squadFormation')} ({mySquad.filter((s) => s.player).length}/{totalRounds})
-              </span>
+        <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl border border-white/10 bg-slate-950/90 shadow-md backdrop-blur-xl mb-1">
+          <button
+            type="button"
+            onClick={() => setMobileView('bidding')}
+            className={`btn-haptic flex items-center justify-center gap-1.5 py-2 px-2 rounded-xl text-xs font-extrabold uppercase font-stats transition-all cursor-pointer ${
+              mobileView === 'bidding'
+                ? 'bg-lime text-slate-950 shadow-glow-lime'
+                : 'text-steel hover:text-white bg-transparent'
+            }`}
+          >
+            <AppIcon icon={Lightning} size={14} weight="bold" />
+            <span>{lang === 'ar' ? 'مرحلة المزايدة' : 'Bidding Arena'}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setMobileView('pitch')}
+            className={`btn-haptic flex items-center justify-center gap-1.5 py-2 px-2 rounded-xl text-xs font-extrabold uppercase font-stats transition-all cursor-pointer ${
+              mobileView === 'pitch'
+                ? 'bg-lime text-slate-950 shadow-glow-lime'
+                : 'text-steel hover:text-white bg-transparent'
+            }`}
+          >
+            <AppIcon icon={Stack} size={14} weight="bold" />
+            <span>{lang === 'ar' ? 'ملعب التشكيلة' : 'Tactical Pitch'}</span>
+          </button>
+        </div>
+
+        {/* Real-time Lineup Strip in Bidding View */}
+        {mobileView === 'bidding' && (
+          <div className="rounded-2xl border border-white/10 bg-slate-950/90 p-2 shadow-lg backdrop-blur-xl animate-fade-in mb-1">
+            <div className="flex items-center justify-between px-1 mb-1.5">
+              <div className="flex items-center gap-1.5">
+                <AppIcon icon={Stack} size={14} weight="duotone" className="text-lime" />
+                <span className="text-[10px] font-black text-white uppercase tracking-wider font-stats">
+                  {t('auction.squadFormation')} ({mySquad.filter((s) => s.player).length}/{totalRounds})
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setMobileView('pitch')}
+                className="btn-haptic flex items-center gap-1 rounded-lg border border-lime/30 bg-lime/10 px-2 py-0.5 text-[9px] font-bold text-lime hover:bg-lime/20 transition-all font-stats cursor-pointer"
+              >
+                <span>{lang === 'ar' ? 'عرض الملعب الكامل 🏟️' : 'Full Pitch 🏟️'}</span>
+              </button>
             </div>
 
-            {/* Expand Pitch Modal Trigger for Mobile */}
-            <button
-              type="button"
-              onClick={() => setShowMobilePitchModal(true)}
-              className="btn-haptic flex items-center gap-1 rounded-lg border border-lime/30 bg-lime/10 px-2 py-0.5 text-[9px] font-bold text-lime hover:bg-lime/20 transition-all font-stats cursor-pointer"
-            >
-              <AppIcon icon={DeviceMobile} size={11} weight="bold" />
-              <span>{lang === 'ar' ? 'عرض الملعب 3D' : '3D Pitch'}</span>
-            </button>
-          </div>
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-hidden">
+              {auction.rounds.map((round) => {
+                const isCurrent = round.roundNumber === auction.currentRound;
+                const signedSlot = mySquad.find((s) => s.roundNumber === round.roundNumber && s.player);
+                const player = signedSlot?.player;
 
-          {/* Horizontal Scrollable Lineup Strip with real-time bidding highlight */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-hidden">
-            {auction.rounds.map((round) => {
-              const isCurrent = round.roundNumber === auction.currentRound;
-              const signedSlot = mySquad.find((s) => s.roundNumber === round.roundNumber && s.player);
-              const player = signedSlot?.player;
-
-              return (
-                <div
-                  key={`slot-${round.roundNumber}-${round.position}`}
-                  className={`btn-haptic flex shrink-0 items-center gap-1 rounded-xl px-2 py-1 border transition-all text-xs font-stats ${
-                    isCurrent
-                      ? 'border-lime bg-lime/20 text-lime ring-1 ring-lime shadow-glow-lime animate-pulse'
-                      : player
-                        ? 'border-white/15 bg-slate-900/90 text-white'
-                        : 'border-white/5 bg-slate-950/60 text-steel/50'
-                  }`}
-                >
-                  <span className={`font-black text-[9px] uppercase ${isCurrent ? 'text-lime' : 'text-steel'}`}>
-                    {round.position}
-                  </span>
-                  {player ? (
-                    <span className="text-[10px] font-bold text-white max-w-[55px] truncate">
-                      {player.name.split(' ').pop()}
+                return (
+                  <div
+                    key={`slot-${round.roundNumber}-${round.position}`}
+                    className={`btn-haptic flex shrink-0 items-center gap-1 rounded-xl px-2 py-1 border transition-all text-xs font-stats ${
+                      isCurrent
+                        ? 'border-lime bg-lime/20 text-lime ring-1 ring-lime shadow-glow-lime animate-pulse'
+                        : player
+                          ? 'border-white/15 bg-slate-900/90 text-white'
+                          : 'border-white/5 bg-slate-950/60 text-steel/50'
+                    }`}
+                  >
+                    <span className={`font-black text-[9px] uppercase ${isCurrent ? 'text-lime' : 'text-steel'}`}>
+                      {round.position}
                     </span>
-                  ) : isCurrent ? (
-                    <span className="text-[9px] font-black text-lime uppercase">BIDDING</span>
-                  ) : (
-                    <span className="text-[8px] text-steel/40">—</span>
-                  )}
-                  {signedSlot?.cost !== undefined && signedSlot.cost > 0 && (
-                    <span className="text-[8px] text-lime font-bold">${signedSlot.cost}M</span>
-                  )}
-                </div>
-              );
-            })}
+                    {player ? (
+                      <span className="text-[10px] font-bold text-white max-w-[55px] truncate">
+                        {player.name.split(' ').pop()}
+                      </span>
+                    ) : isCurrent ? (
+                      <span className="text-[9px] font-black text-lime uppercase">BIDDING</span>
+                    ) : (
+                      <span className="text-[8px] text-steel/40">—</span>
+                    )}
+                    {signedSlot?.cost !== undefined && signedSlot.cost > 0 && (
+                      <span className="text-[8px] text-lime font-bold">${signedSlot.cost}M</span>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
-      {/* ── 3. MAIN BATTLE STATION (2-COLUMN ON DESKTOP, STACKED ON MOBILE) ── */}
+      {/* ── 3. MAIN BATTLE STATION (2-COLUMN ON DESKTOP, SWITCHABLE ON MOBILE) ── */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4 items-start">
-        {/* ── DESKTOP LEFT COLUMN: FULL TACTICAL PITCH ── */}
-        <div className="hidden lg:block lg:col-span-5 space-y-3">
+        {/* ── DESKTOP LEFT COLUMN / MOBILE PITCH VIEW: FULL TACTICAL PITCH ── */}
+        <div className={`${mobileView === 'pitch' ? 'block' : 'hidden'} lg:block lg:col-span-5 space-y-3 animate-fade-in`}>
           <TacticalPitch
             formation={auction.formation}
             matchSize={(auction.matchSize as 5 | 11) || 11}
@@ -503,10 +579,32 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             totalRounds={totalRounds}
             compact={true}
           />
+
+          {/* Quick Pitch Action Bar for Mobile in Pitch View */}
+          <div className="block lg:hidden">
+            <Panel variant="highlight" className="p-3 space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-steel">
+                  {lang === 'ar' ? 'المركز المطلوب الآن:' : 'Current Target:'}{' '}
+                  <span className="text-lime font-black font-stats">{currentPosition}</span>
+                </span>
+                <span className="text-sm font-black text-white font-stats">${bidAmount}M</span>
+              </div>
+              <Button
+                variant="primary"
+                size="md"
+                fullWidth
+                onClick={() => setMobileView('bidding')}
+                leftIcon={<AppIcon icon={Lightning} size={16} weight="bold" />}
+              >
+                {lang === 'ar' ? 'تعديل وقفل العرض في المزاد' : 'Open Bid Controls & Lock'}
+              </Button>
+            </Panel>
+          </div>
         </div>
 
-        {/* ── RIGHT COLUMN: TARGET STAGE & SEALED VAULT ── */}
-        <div className="lg:col-span-7 flex flex-col gap-3">
+        {/* ── RIGHT COLUMN / MOBILE BIDDING VIEW: TARGET STAGE & SEALED VAULT ── */}
+        <div className={`${mobileView === 'bidding' ? 'flex' : 'hidden'} lg:flex lg:col-span-7 flex-col gap-3 animate-fade-in`}>
           {/* PLAYER CARD STAGE */}
           <Panel variant="elevated" className="p-4 sm:p-5 text-center relative overflow-hidden">
             {/* Stage Lighting */}
@@ -707,9 +805,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                   </div>
 
                   {error && (
-                    <p className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-3 py-2 text-xs font-bold text-rose-400">
-                      {error}
-                    </p>
+                    <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-3 py-2 text-xs font-bold text-rose-400 flex items-center gap-2">
+                      <AppIcon icon={WarningCircle} size={16} weight="fill" className="shrink-0 text-rose-400" />
+                      <span>{error}</span>
+                    </div>
                   )}
 
                   {/* Single Primary Action Button: Lock Offer */}
@@ -734,39 +833,6 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           )}
         </div>
       </div>
-
-      {/* ── MOBILE FULL PITCH POPUP MODAL (When requested on mobile) ── */}
-      {showMobilePitchModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 p-3 backdrop-blur-xl animate-fade-in lg:hidden">
-          <div className="relative w-full max-w-lg rounded-3xl border border-white/15 bg-slate-950 p-4 shadow-[0_24px_70px_rgba(0,0,0,0.9)] max-h-[90vh] overflow-y-auto">
-            <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
-              <div className="flex items-center gap-2">
-                <AppIcon icon={Stack} size={18} weight="bold" className="text-lime" />
-                <h3 className="text-sm font-extrabold text-white uppercase font-stats">
-                  {t('auction.squadFormation')} · {auction.formation}
-                </h3>
-              </div>
-              <button
-                type="button"
-                onClick={() => setShowMobilePitchModal(false)}
-                className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white cursor-pointer"
-              >
-                <AppIcon icon={X} size={16} weight="bold" />
-              </button>
-            </div>
-
-            <TacticalPitch
-              formation={auction.formation}
-              matchSize={(auction.matchSize as 5 | 11) || 11}
-              squad={formationSquad}
-              rounds={auction.rounds}
-              currentRound={auction.currentRound}
-              totalRounds={totalRounds}
-              compact={false}
-            />
-          </div>
-        </div>
-      )}
     </article>
   );
 }

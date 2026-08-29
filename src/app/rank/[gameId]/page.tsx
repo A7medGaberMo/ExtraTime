@@ -44,6 +44,22 @@ interface RankAnswerItem {
   valueLabel?: { en: string; ar: string } | string;
 }
 
+function sanitizeConvexError(error: unknown, lang: 'en' | 'ar'): string {
+  if (!error) return lang === 'ar' ? 'حدث خطأ غير متوقع' : 'An unexpected error occurred';
+  const msg = typeof error === 'object' && error !== null && 'message' in error
+    ? String((error as { message: unknown }).message)
+    : String(error);
+
+  const clean = msg.replace(/^\[CONVEX[^\]]*\]\s*/i, '').replace(/Server Error:\s*/i, '').trim();
+  if (clean.includes('already submitted')) {
+    return lang === 'ar' ? 'تم تقديم ترتيبك لهذه الجولة بالفعل' : 'Your ranking was already submitted';
+  }
+  if (clean.includes('expired') || clean.includes('completed')) {
+    return lang === 'ar' ? 'انتهت هذه الجولة بالفعل' : 'This round has ended';
+  }
+  return clean || (lang === 'ar' ? 'تعذر إتمام العملية' : 'Operation failed');
+}
+
 export default function RankArenaPage() {
   const params = useParams();
   const router = useRouter();
@@ -109,8 +125,7 @@ export default function RankArenaPage() {
         submittedOrder: orderToSubmit,
       });
     } catch (err: unknown) {
-      const e = err as { message?: string };
-      toast(e.message || 'Failed to submit ranking', 'error');
+      toast(sanitizeConvexError(err, lang), 'error');
     } finally {
       setIsSubmitting(false);
     }
@@ -126,8 +141,7 @@ export default function RankArenaPage() {
         sessionToken: sessionToken ?? undefined,
       });
     } catch (err: unknown) {
-      const e = err as { message?: string };
-      toast(e.message || 'Failed to advance', 'error');
+      toast(sanitizeConvexError(err, lang), 'error');
     } finally {
       setIsAdvancing(false);
     }
@@ -168,8 +182,7 @@ export default function RankArenaPage() {
         router.push(`/rank/${result.gameId}`);
       }
     } catch (err: unknown) {
-      const e = err as { message?: string };
-      toast(e.message || 'Failed to create new game', 'error');
+      toast(sanitizeConvexError(err, lang), 'error');
     }
   }
 

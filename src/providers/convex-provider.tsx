@@ -63,6 +63,8 @@ export function ConvexClientProvider({ children }: { children: ReactNode }) {
     <ClerkProvider
       dynamic
       publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+      signInUrl="/sign-in"
+      signUpUrl="/sign-up"
       appearance={{
         variables: {
           colorPrimary: '#84cc16',
@@ -71,18 +73,26 @@ export function ConvexClientProvider({ children }: { children: ReactNode }) {
         },
         elements: {
           card: 'border border-white/12 shadow-[0_24px_60px_rgba(0,0,0,0.9)] backdrop-blur-2xl bg-slate-950/95 rounded-3xl p-6 sm:p-8',
-          headerTitle: 'font-stats font-extrabold text-white text-lg',
-          headerSubtitle: 'text-xs text-slate-400',
-          formButtonPrimary: 'bg-lime text-slate-950 font-stats font-bold rounded-2xl hover:bg-lime/90 shadow-glow-lime transition-all py-3',
+          headerTitle: 'font-stats font-extrabold text-white text-lg tracking-tight',
+          headerSubtitle: 'text-xs text-slate-400 font-sans',
+          formButtonPrimary: 'bg-lime text-slate-950 font-stats font-bold rounded-2xl hover:bg-lime/90 shadow-glow-lime transition-all py-3 cursor-pointer text-sm uppercase tracking-wider',
           formFieldInput: 'bg-slate-900/90 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:border-lime focus:ring-1 focus:ring-lime transition-all text-sm',
           formFieldLabel: 'font-stats text-xs font-bold text-slate-300 uppercase tracking-wider',
-          socialButtonsBlockButton: 'border border-white/10 bg-slate-900/80 hover:bg-slate-800 text-white rounded-2xl transition-all',
+          socialButtonsBlockButton: 'border border-white/10 bg-slate-900/80 hover:bg-slate-800 hover:border-lime/30 text-white rounded-2xl transition-all cursor-pointer py-2.5',
           socialButtonsBlockButtonText: 'font-stats text-xs font-bold text-white',
-          footerActionLink: 'text-lime hover:text-lime/80 font-bold font-stats text-xs',
+          dividerRow: 'my-4',
+          dividerText: 'text-xs text-slate-500 uppercase tracking-widest font-stats',
+          dividerLine: 'bg-white/10',
+          footerActionLink: 'text-lime hover:text-lime/80 font-bold font-stats text-xs transition-colors',
           footerActionText: 'text-xs text-slate-400',
           identityPreviewText: 'text-xs text-slate-300 font-stats',
-          identityPreviewEditButton: 'text-lime hover:underline font-stats text-xs',
+          identityPreviewEditButton: 'text-lime hover:underline font-stats text-xs font-bold',
+          formFieldErrorText: 'text-xs text-rose-400 font-stats mt-1',
+          formFieldSuccessText: 'text-xs text-lime font-stats mt-1',
+          alert: 'rounded-2xl border border-rose-500/30 bg-rose-500/10 p-3 text-xs text-rose-300',
+          alertText: 'text-xs text-rose-300',
           modalBackdrop: 'backdrop-blur-xl bg-slate-950/80',
+          userButtonPopoverCard: 'border border-white/12 bg-slate-950/98 rounded-3xl shadow-[0_24px_56px_rgba(0,0,0,0.85)] p-2 backdrop-blur-2xl',
         },
       }}
     >
