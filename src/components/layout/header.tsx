@@ -445,15 +445,14 @@ export function Header() {
                       </div>
                     </div>
                   </div>
-                  <SignInButton mode="modal">
-                    <button
-                      type="button"
-                      onClick={() => setIsOpen(false)}
-                      className="btn-haptic shrink-0 rounded-xl bg-lime px-3 py-1.5 text-xs font-bold text-slate-950 hover:bg-lime/90 transition-colors shadow-glow-lime cursor-pointer font-stats"
-                    >
-                      {t('auth.signIn')}
-                    </button>
-                  </SignInButton>
+                  <Link
+                    href="/sign-in"
+                    onClick={() => setIsOpen(false)}
+                    className="btn-haptic inline-flex items-center gap-1.5 shrink-0 rounded-xl bg-lime px-3 py-1.5 text-xs font-bold text-slate-950 hover:bg-lime/90 transition-colors shadow-glow-lime cursor-pointer font-stats"
+                  >
+                    <AppIcon icon={SignIn} size={14} weight="bold" />
+                    <span>{t('auth.signIn')}</span>
+                  </Link>
                 </div>
               )}
 

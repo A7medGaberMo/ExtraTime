@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../../../convex/_generated/api';
@@ -16,9 +17,10 @@ import {
   PaintBrush,
   Shield,
   MagnifyingGlass,
+  SignIn,
 } from '@phosphor-icons/react';
 import { useToast } from '@/components/shared/toast';
-import { useUser, SignInButton } from '@clerk/nextjs';
+import { useUser } from '@clerk/nextjs';
 import {
   CHARACTER_PERSONAS,
   parseAvatarSeed,
@@ -439,14 +441,13 @@ export default function ProfileSettingsPage() {
             ? 'يرجى تسجيل الدخول لتعديل هويتك وبيانات ملفك الشخصي.'
             : 'Please sign in to customize your profile and tactical identity.'}
         </p>
-        <SignInButton mode="modal">
-          <button
-            type="button"
-            className="btn-haptic inline-flex items-center gap-2 rounded-2xl bg-lime px-6 py-2.5 text-xs font-bold text-slate-950 font-stats shadow-glow-lime cursor-pointer"
-          >
-            <span>{t('auth.signIn')}</span>
-          </button>
-        </SignInButton>
+        <Link
+          href="/sign-in"
+          className="btn-haptic inline-flex items-center gap-2 rounded-2xl bg-lime px-6 py-2.5 text-xs font-bold text-slate-950 font-stats shadow-glow-lime cursor-pointer"
+        >
+          <AppIcon icon={SignIn} size={16} weight="bold" />
+          <span>{t('auth.signIn')}</span>
+        </Link>
       </div>
     );
   }
