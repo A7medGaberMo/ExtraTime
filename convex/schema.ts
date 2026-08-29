@@ -8,15 +8,17 @@ import { matchesTable } from './matches/schema';
 import { guestsTable } from './guests/schema';
 import { rankQuestionsTable, rankGamesTable } from './rank/schema';
 
-export default defineSchema({
-  players: playersTable,
-  clubs: clubsTable,
-  nations: nationsTable,
-  rooms: roomsTable,
-  auctions: auctionsTable,
-  matches: matchesTable,
-  guestUsers: guestsTable,
-  rankQuestions: rankQuestionsTable,
-  rankGames: rankGamesTable,
-});
-
+export default defineSchema(
+  {
+    players: playersTable,
+    clubs: clubsTable,
+    nations: nationsTable,
+    rooms: roomsTable,
+    auctions: auctionsTable,
+    matches: matchesTable,
+    guestUsers: guestsTable,
+    rankQuestions: rankQuestionsTable,
+    rankGames: rankGamesTable,
+  },
+  { schemaValidation: false }
+);
