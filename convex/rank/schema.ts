@@ -69,6 +69,7 @@ export const rankQuestionsTable = defineTable({
 // Participant State within an Active Game
 export const rankParticipantValidator = v.object({
   guestId: v.id("guestUsers"),
+  userId: v.optional(v.id("users")), // Authenticated platform user ID (optional)
   name: v.string(),
   avatarSeed: v.string(),
   totalScore: v.number(),
@@ -89,6 +90,7 @@ export const rankGamesTable = defineTable({
     v.literal("duel_public")
   ),
   isPublic: v.optional(v.boolean()),
+  leagueId: v.optional(v.id("leagues")), // Context if launched from a league
   status: v.union(
     v.literal("waiting"),
     v.literal("round_active"),
@@ -115,6 +117,7 @@ export const rankGamesTable = defineTable({
       results: v.array(
         v.object({
           guestId: v.id("guestUsers"),
+          userId: v.optional(v.id("users")),
           submittedOrder: v.array(v.string()),
           roundScore: v.number(),
           secondsRemaining: v.number(),
@@ -138,4 +141,5 @@ export const rankGamesTable = defineTable({
 })
   .index("by_code", ["code"])
   .index("by_status", ["status"])
-  .index("by_public_status", ["isPublic", "status", "mode"]);
+  .index("by_public_status", ["isPublic", "status", "mode"])
+  .index("by_league", ["leagueId"]);

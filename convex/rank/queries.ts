@@ -1,25 +1,23 @@
 import { query } from "../_generated/server";
 import { v } from "convex/values";
+import { isGuestOwner } from "../lib/auth";
 
 /**
  * Seeded deterministic shuffle helper to guarantee all players in a match see the exact
  * same scrambled initial card order, without revealing the correct rank order.
  */
 function seededShuffle<T>(array: T[], seedStr: string): T[] {
-  let hash = 0;
+  let seed = 0;
   for (let i = 0; i < seedStr.length; i++) {
-    hash = (hash << 5) - hash + seedStr.charCodeAt(i);
-    hash |= 0;
+    seed = (seed * 31 + seedStr.charCodeAt(i)) >>> 0;
   }
-
-  const pseudoRandom = () => {
-    hash = (hash * 9301 + 49297) % 233280;
-    return Math.abs(hash) / 233280;
+  const rng = () => {
+    seed = (seed * 1664525 + 1013904223) >>> 0;
+    return (seed >>> 0) / 4294967296;
   };
-
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(pseudoRandom() * (i + 1));
+    const j = Math.floor(rng() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
@@ -29,12 +27,14 @@ export const getGameState = query({
   args: {
     gameId: v.id("rankGames"),
     guestId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
     locale: v.optional(v.union(v.literal("en"), v.literal("ar"))),
   },
   handler: async (ctx, args) => {
     const game = await ctx.db.get(args.gameId);
     if (!game) return null;
 
+    const isCallerOwner = await isGuestOwner(ctx, args.guestId, args.sessionToken);
     const locale = args.locale ?? "en";
     const currentQId = game.questionIds[game.currentRoundIndex];
     const rawQuestion = currentQId ? await ctx.db.get(currentQId) : null;
@@ -46,13 +46,26 @@ export const getGameState = query({
     const isHost = game.participants[0]?.guestId === args.guestId;
 
     // Helper to sanitize participant for client view
-    const formatParticipant = (p: typeof game.participants[0]) => {
-      const isSelf = p.guestId === args.guestId;
+    const formatParticipant = async (p: typeof game.participants[0]) => {
+      const isSelf = p.guestId === args.guestId && isCallerOwner;
       const isRevealOrDone = game.status === "round_reveal" || game.status === "completed";
+
+      let resolvedName = p.name;
+      let resolvedAvatar = p.avatarSeed;
+      if (p.userId) {
+        const u = await ctx.db.get(p.userId);
+        if (u?.displayName) resolvedName = u.displayName;
+        if (u?.avatarSeed) resolvedAvatar = u.avatarSeed;
+      } else if (p.guestId) {
+        const g = await ctx.db.get(p.guestId);
+        if (g?.nickname) resolvedName = g.nickname;
+        if (g?.avatarSeed) resolvedAvatar = g.avatarSeed;
+      }
+
       return {
         guestId: p.guestId,
-        name: p.name,
-        avatarSeed: p.avatarSeed,
+        name: resolvedName,
+        avatarSeed: resolvedAvatar,
         totalScore: p.totalScore,
         roundScores: p.roundScores,
         hasSubmittedCurrentRound: p.hasSubmittedCurrentRound,
@@ -63,7 +76,7 @@ export const getGameState = query({
       };
     };
 
-    const participants = game.participants.map(formatParticipant);
+    const participants = await Promise.all(game.participants.map(formatParticipant));
 
     // ── 1. WAITING LOBBY ──────────────────────────────────────────────
     if (game.status === "waiting") {

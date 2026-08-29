@@ -1,6 +1,9 @@
 'use client';
 
 import { useState, useSyncExternalStore, useCallback } from 'react';
+import { useUser } from '@clerk/nextjs';
+import { useQuery } from 'convex/react';
+import { api } from '../../convex/_generated/api';
 
 function subscribe(cb: () => void) {
   if (typeof window === 'undefined') return () => {};
@@ -22,14 +25,25 @@ function getServerSnapshot() {
 }
 
 /**
- * Hydration-safe guest nickname state that syncs with localStorage on client
- * while allowing full user editing and randomization without cascading renders.
+ * Identity Hook: Returns authenticated user displayName when signed in.
+ * Only falls back to guest storage and custom guest nickname when signed out.
  */
 export function useGuestNickname(defaultFallback = 'Guest') {
+  const { isSignedIn, user } = useUser();
+  const viewer = useQuery(api.users.queries.viewer);
+
   const storedName = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   const [localName, setLocalName] = useState<string | null>(null);
 
-  const nickname = localName !== null ? localName : (storedName || defaultFallback);
+  const authenticatedName =
+    viewer?.displayName || user?.fullName || user?.firstName || user?.username;
+
+  // When signed in, prioritize authenticated display name over guest random names
+  const nickname = isSignedIn && authenticatedName
+    ? authenticatedName
+    : localName !== null
+      ? localName
+      : (storedName || defaultFallback);
 
   const setNickname = useCallback((name: string) => {
     setLocalName(name);

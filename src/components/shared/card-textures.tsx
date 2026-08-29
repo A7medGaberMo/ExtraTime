@@ -1,15 +1,15 @@
 'use client';
 
 import React from 'react';
-import { Tier } from '@/types/player';
+import type { Tier } from '@/types/player';
 
 export function CardBackgroundTexture({ tier }: { tier: Tier }) {
   switch (tier) {
     case 'ICON':
-      // Marble veins & Guilloche Gold (opacity 4%)
+      // Marble veins & Guilloche Gold
       return (
         <svg
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-4"
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
         >
           <pattern id="tex-icon-marble" width="100" height="100" patternUnits="userSpaceOnUse">
@@ -43,10 +43,10 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
       );
 
     case 'HERO':
-      // Emerald starburst & heroic shield lines (opacity 4%)
+      // Emerald starburst & heroic shield lines
       return (
         <svg
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-4"
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
         >
           <pattern id="tex-hero-shield" width="60" height="60" patternUnits="userSpaceOnUse">
@@ -68,10 +68,10 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
       );
 
     case 'MASTER':
-      // Crystal geometry (hexagonal faceted lattice, opacity 4%)
+      // Crystal geometry (hexagonal faceted lattice)
       return (
         <svg
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-4"
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
         >
           <pattern id="tex-master-crystal" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -89,10 +89,10 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
       );
 
     case 'ULTIMATE':
-      // Sapphire facets (opacity 4%)
+      // Sapphire facets
       return (
         <svg
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-4"
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
         >
           <pattern id="tex-ultimate-sapphire" width="45" height="45" patternUnits="userSpaceOnUse">
@@ -109,29 +109,30 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
       );
 
     case 'ELITE':
-      // Technical polygons (opacity 4%)
+      // Ruby geometric facets & angular lines
       return (
         <svg
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-4"
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <pattern id="tex-elite-poly" width="30" height="30" patternUnits="userSpaceOnUse">
+          <pattern id="tex-elite-ruby" width="36" height="36" patternUnits="userSpaceOnUse">
             <path
-              d="M 0 0 L 30 15 L 0 30 Z M 30 0 L 30 30 L 0 15 Z"
+              d="M 0 0 L 36 18 L 0 36 Z M 36 0 L 36 36 L 0 18 Z"
               fill="none"
-              stroke="#93C5FD"
+              stroke="#FFB0BA"
               strokeWidth="0.5"
             />
+            <line x1="18" y1="0" x2="18" y2="36" stroke="#E05870" strokeWidth="0.4" />
           </pattern>
-          <rect width="100%" height="100%" fill="url(#tex-elite-poly)" />
+          <rect width="100%" height="100%" fill="url(#tex-elite-ruby)" />
         </svg>
       );
 
     case 'GOLD':
-      // Luxury engraving (fine metallic guilloche curves, opacity 4%)
+      // Luxury engraving (fine metallic guilloche curves)
       return (
         <svg
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-4"
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
         >
           <pattern id="tex-gold-engrave" width="50" height="50" patternUnits="userSpaceOnUse">
@@ -151,14 +152,14 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
       );
 
     case 'SILVER':
-      // Brushed aluminum grain (horizontal micro hairline steel, opacity 4%)
+      // Brushed aluminum grain (horizontal micro hairline steel)
       return (
         <svg
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-4"
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
         >
           <pattern id="tex-silver-brushed" width="80" height="10" patternUnits="userSpaceOnUse">
-            <line x1="0" y1="2" x2="80" y2="2" stroke="#F8FAFC" strokeWidth="0.4" />
+            <line x1="0" y1="2" x2="80" y2="2" stroke="#F8FBFF" strokeWidth="0.4" />
             <line x1="0" y1="6" x2="80" y2="6" stroke="#64748B" strokeWidth="0.4" />
           </pattern>
           <rect width="100%" height="100%" fill="url(#tex-silver-brushed)" />
@@ -167,10 +168,10 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
 
     case 'BRONZE':
     default:
-      // Hammered copper (opacity 4%)
+      // Hammered copper
       return (
         <svg
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-4"
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
         >
           <pattern id="tex-bronze-hammered" width="20" height="20" patternUnits="userSpaceOnUse">

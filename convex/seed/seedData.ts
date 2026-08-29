@@ -1,4 +1,4 @@
-import { internalMutation } from '../_generated/server';
+import { mutation, internalMutation } from '../_generated/server';
 import { Id } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { tierValidator, LEAGUE_COUNTRY, type Tier } from '../lib/constants';
@@ -105,7 +105,7 @@ export const seedNationsBatch = internalMutation({
     for (const n of args.nations) {
       const existing = await ctx.db
         .query('nations')
-        .filter((q) => q.eq(q.field('name'), n.name))
+        .withIndex('by_name', (q) => q.eq('name', n.name))
         .first();
 
       if (existing) {
@@ -120,10 +120,9 @@ export const seedNationsBatch = internalMutation({
 });
 
 /**
- * seedPlayersBatch — accurately inserts players linked to club & nation (Internal only).
+ * seedPlayersBatch — accurately inserts players linked to club & nation.
  */
-export const upsertPlayersBatch = internalMutation({
-
+export const upsertPlayersBatch = mutation({
   args: {
     players: v.array(playerArg),
   },

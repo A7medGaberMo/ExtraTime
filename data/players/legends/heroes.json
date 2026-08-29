@@ -1,5 +1,16 @@
 [
   {
+    "apiId": "758",
+    "name": "Gareth Bale",
+    "position": "RW/LW/ST",
+    "club": "Real Madrid",
+    "nation": "Wales",
+    "tier": "HERO",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://media.api-sports.io/football/players/758.png"
+  },
+  {
     "apiId": "hero_1",
     "name": "Eden Hazard",
     "position": "LW/CAM",

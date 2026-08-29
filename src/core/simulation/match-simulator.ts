@@ -616,22 +616,31 @@ export function simulateTacticalMatch(
       kickOne(kick++, 'guest', guestShooters[round % guestShooters.length] ?? guestSquad[0]);
     }
 
-    // Sudden death until the first split decision (capped at 14 extra kicks)
+    // Sudden death until the first split decision (capped at 15 extra rounds = 30 kicks)
     let sudden = 0;
-    while (pkScore.host === pkScore.guest && sudden < 7) {
-      const hShot = kickOne(kick++, 'host', hostShooters[5 + sudden] ?? hostShooters[0]);
-      const gShot = kickOne(kick++, 'guest', guestShooters[5 + sudden] ?? guestShooters[0]);
+    while (pkScore.host === pkScore.guest && sudden < 15) {
+      const hShooter = hostShooters[(5 + sudden) % hostShooters.length] ?? hostSquad[0];
+      const gShooter = guestShooters[(5 + sudden) % guestShooters.length] ?? guestSquad[0];
+      const hShot = kickOne(kick++, 'host', hShooter);
+      const gShot = kickOne(kick++, 'guest', gShooter);
       if (hShot !== gShot) break;
       sudden++;
+    }
+
+    // Golden penalty kick if still tied after sudden death
+    if (pkScore.host === pkScore.guest) {
+      if (rng() >= 0.5) {
+        pkScore.host++;
+      } else {
+        pkScore.guest++;
+      }
     }
 
     shootoutScore = { host: pkScore.host, guest: pkScore.guest };
     timeline.push(...shootoutEvents);
 
-    if (pkScore.host !== pkScore.guest) {
-      winnerId =
-        pkScore.host > pkScore.guest ? (options.hostUserId ?? null) : (options.guestUserId ?? null);
-    }
+    winnerId =
+      pkScore.host > pkScore.guest ? (options.hostUserId ?? null) : (options.guestUserId ?? null);
   } else {
     winnerId =
       score.host > score.guest ? (options.hostUserId ?? null) : (options.guestUserId ?? null);

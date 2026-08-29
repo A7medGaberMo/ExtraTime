@@ -210,7 +210,6 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
     macedonia: 'mk',
     albania: 'al',
     iceland: 'is',
-    israel: 'il',
     cyprus: 'cy',
     luxembourg: 'lu',
     'new zealand': 'nz',

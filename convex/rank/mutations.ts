@@ -6,6 +6,8 @@ import { scoreRoundSubmission } from "./scoring";
 import { allRankSeedQuestions } from "./seedData";
 import { validateQuestionBank } from "./validate";
 import { verifyGuestSession } from "../lib/auth";
+import { getCurrentUser } from "../lib/identity";
+import { scoreLeagueRankDuel } from "../leagues/scoring";
 
 // ── Helpers ──────────────────────────────────────────────────────────
 
@@ -110,7 +112,7 @@ function getThematicDomain(q: { tags?: string[]; scopeType?: string }): string {
   return "player_legends_and_milestones";
 }
 
-async function pickRandomQuestionIds(
+export async function pickRandomQuestionIds(
   ctx: GenericMutationCtx<DataModel>,
   count: 3 | 5,
   participantGuestIds?: Id<"guestUsers">[]
@@ -277,11 +279,15 @@ export const createSoloGame = mutation({
   },
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const currentUser = await getCurrentUser(ctx);
     const guest = await getGuestProfile(ctx, args.guestId);
 
     const questionIds = await pickRandomQuestionIds(ctx, args.roundCount, [args.guestId]);
     const now = Date.now();
     const code = await generateUniqueRankRoomCode(ctx);
+
+    const playerName = currentUser?.displayName || currentUser?.username || guest.nickname;
+    const playerAvatar = currentUser?.avatarSeed || guest.avatarSeed;
 
     const gameId = await ctx.db.insert("rankGames", {
       code,
@@ -295,8 +301,9 @@ export const createSoloGame = mutation({
       participants: [
         {
           guestId: args.guestId,
-          name: guest.nickname,
-          avatarSeed: guest.avatarSeed,
+          userId: currentUser?._id,
+          name: playerName,
+          avatarSeed: playerAvatar,
           totalScore: 0,
           roundScores: [],
           hasSubmittedCurrentRound: false,
@@ -321,10 +328,14 @@ export const createDuelPrivateRoom = mutation({
   },
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.hostId, args.sessionToken);
+    const currentUser = await getCurrentUser(ctx);
     const host = await getGuestProfile(ctx, args.hostId);
 
     const now = Date.now();
     const code = await generateUniqueRankRoomCode(ctx);
+
+    const hostName = currentUser?.displayName || currentUser?.username || host.nickname;
+    const hostAvatar = currentUser?.avatarSeed || host.avatarSeed;
 
     const gameId = await ctx.db.insert("rankGames", {
       code,
@@ -337,8 +348,9 @@ export const createDuelPrivateRoom = mutation({
       participants: [
         {
           guestId: args.hostId,
-          name: host.nickname,
-          avatarSeed: host.avatarSeed,
+          userId: currentUser?._id,
+          name: hostName,
+          avatarSeed: hostAvatar,
           totalScore: 0,
           roundScores: [],
           hasSubmittedCurrentRound: false,
@@ -363,6 +375,7 @@ export const joinDuelPrivateRoom = mutation({
   },
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const currentUser = await getCurrentUser(ctx);
     const guest = await getGuestProfile(ctx, args.guestId);
 
     const cleanCode = normalizeRankRoomCode(args.code);
@@ -395,12 +408,16 @@ export const joinDuelPrivateRoom = mutation({
     );
     const now = Date.now();
 
+    const joinerName = currentUser?.displayName || currentUser?.username || guest.nickname;
+    const joinerAvatar = currentUser?.avatarSeed || guest.avatarSeed;
+
     const updatedParticipants = [
       ...game.participants,
       {
         guestId: args.guestId,
-        name: guest.nickname,
-        avatarSeed: guest.avatarSeed,
+        userId: currentUser?._id,
+        name: joinerName,
+        avatarSeed: joinerAvatar,
         totalScore: 0,
         roundScores: [],
         hasSubmittedCurrentRound: false,
@@ -430,8 +447,12 @@ export const findOrCreatePublicMatch = mutation({
   },
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const currentUser = await getCurrentUser(ctx);
     const guest = await getGuestProfile(ctx, args.guestId);
     const now = Date.now();
+
+    const playerName = currentUser?.displayName || currentUser?.username || guest.nickname;
+    const playerAvatar = currentUser?.avatarSeed || guest.avatarSeed;
 
     // Look for waiting public room created in last 3 minutes
     const openRooms = await ctx.db
@@ -472,8 +493,9 @@ export const findOrCreatePublicMatch = mutation({
           ...room.participants,
           {
             guestId: args.guestId,
-            name: guest.nickname,
-            avatarSeed: guest.avatarSeed,
+            userId: currentUser?._id,
+            name: playerName,
+            avatarSeed: playerAvatar,
             totalScore: 0,
             roundScores: [],
             hasSubmittedCurrentRound: false,
@@ -505,8 +527,9 @@ export const findOrCreatePublicMatch = mutation({
       participants: [
         {
           guestId: args.guestId,
-          name: guest.nickname,
-          avatarSeed: guest.avatarSeed,
+          userId: currentUser?._id,
+          name: playerName,
+          avatarSeed: playerAvatar,
           totalScore: 0,
           roundScores: [],
           hasSubmittedCurrentRound: false,
@@ -716,6 +739,42 @@ export const advanceRound = mutation({
         winnerId,
         completedAt: now,
       });
+
+      // ── Platform Match Attribution & League Scoring Hook ──
+      const p1 = game.participants[0];
+      const p2 = game.participants[1];
+      const hasSignedInPlayer = p1?.userId || p2?.userId;
+
+      if (hasSignedInPlayer) {
+        const winnerParticipant = winnerId ? game.participants.find((p) => p.guestId === winnerId) : undefined;
+        const isDraw = !winnerId && game.participants.length > 1;
+
+        await ctx.db.insert("gameResults", {
+          gameType: "rank",
+          context: game.leagueId ? "league" : "casual",
+          leagueId: game.leagueId,
+          player1UserId: p1?.userId,
+          player2UserId: p2?.userId,
+          player1GuestId: p1.guestId,
+          player2GuestId: p2?.guestId,
+          player1Score: p1.totalScore,
+          player2Score: p2?.totalScore,
+          winnerUserId: winnerParticipant?.userId,
+          isDraw,
+          summary: `${p1.totalScore} pts${p2 ? ` vs ${p2.totalScore} pts` : ""}`,
+          completedAt: now,
+        });
+      }
+
+      if (game.leagueId) {
+        await scoreLeagueRankDuel(ctx, {
+          rankGameId: game._id,
+          hostScore: p1.totalScore,
+          guestScore: p2 ? p2.totalScore : 0,
+          hostUserId: p1.userId,
+          guestUserId: p2?.userId,
+        });
+      }
 
       return { status: "completed", winnerId };
     } else {

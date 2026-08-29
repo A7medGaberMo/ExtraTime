@@ -40,8 +40,32 @@ export function toPublicAuction(auction: Doc<'auctions'>) {
       }
     : undefined;
 
+  const isCompleted = auction.status === 'completed';
+  const curRound = auction.currentRound;
+
+  // Sanitize rounds: protect against DevTools cheating by hiding unrevealed sub-players and future stars
+  const sanitizedRounds = (auction.rounds ?? []).map((r) => {
+    if (isCompleted || r.roundNumber < curRound) {
+      return r;
+    }
+    if (r.roundNumber === curRound) {
+      return {
+        ...r,
+        // Secret sub-card is stripped; only revealed in query getState if SPY perk was used
+        subPlayerId: undefined as unknown as Id<'players'>,
+      };
+    }
+    // Future rounds: only expose position and roundNumber
+    return {
+      ...r,
+      mainPlayerId: undefined as unknown as Id<'players'>,
+      subPlayerId: undefined as unknown as Id<'players'>,
+    };
+  });
+
   return {
     ...auction,
+    rounds: sanitizedRounds,
     sealedBids: redactedSealedBids,
   };
 }

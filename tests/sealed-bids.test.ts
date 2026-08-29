@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { hashSeed, mulberry32 } from '../src/core/simulation/match-simulator';
+import { Doc, Id } from '../convex/_generated/dataModel';
 
 interface SquadSlot {
   roundNumber: number;
@@ -282,5 +283,67 @@ describe('Sealed Bid Resolver & Budget Fair Rules', () => {
     expect(result.guest.budget).toBe(0);
     expect(result.host.budget).toBeGreaterThanOrEqual(0);
     expect(result.guest.budget).toBeGreaterThanOrEqual(0);
+  });
+
+  it('redacts unrevealed sub-players and future round main players in toPublicAuction', async () => {
+    const { toPublicAuction } = await import('../convex/auctions/sealedView');
+    const mockAuction: Doc<'auctions'> = {
+      _id: 'auc_1' as Id<'auctions'>,
+      _creationTime: 12345,
+      roomId: 'room_1' as Id<'rooms'>,
+      formation: '4-3-3',
+      matchSize: 11,
+      startingBudget: 100,
+      poolMode: 'GLOBAL',
+      currentRound: 2,
+      status: 'active',
+      currentBidding: {
+        highestBid: 0,
+        turnExpiresAt: 12345,
+      },
+      host: {
+        userId: 'u_1' as Id<'guestUsers'>,
+        budget: 100,
+        perk: 'SCOUT',
+        perkUsed: false,
+        squad: [],
+      },
+      guest: {
+        userId: 'u_2' as Id<'guestUsers'>,
+        budget: 100,
+        perk: 'SPY',
+        perkUsed: false,
+        squad: [],
+      },
+      sealedBids: {
+        host: { amount: 30, submittedAt: 100 },
+        guest: { amount: 25, submittedAt: 105 },
+      },
+      rounds: [
+        { roundNumber: 1, position: 'GK', mainPlayerId: 'p_gk' as Id<'players'>, subPlayerId: 'p_gk_sub' as Id<'players'> },
+        { roundNumber: 2, position: 'CB', mainPlayerId: 'p_cb' as Id<'players'>, subPlayerId: 'p_cb_sub' as Id<'players'> },
+        { roundNumber: 3, position: 'ST', mainPlayerId: 'p_st' as Id<'players'>, subPlayerId: 'p_st_sub' as Id<'players'> },
+      ],
+      createdAt: 100,
+    };
+
+    const publicView = toPublicAuction(mockAuction);
+
+    // Sealed bids are redacted to boolean locked flags (amounts stripped)
+    expect(publicView.sealedBids?.host?.locked).toBe(true);
+    expect(publicView.sealedBids?.host?.timestamp).toBe(100);
+
+    // Round 1 (completed/past): remains unredacted
+    expect(publicView.rounds[0].mainPlayerId).toBe('p_gk');
+    expect(publicView.rounds[0].subPlayerId).toBe('p_gk_sub');
+
+    // Round 2 (current active round): mainPlayerId is visible, subPlayerId is stripped!
+    expect(publicView.rounds[1].mainPlayerId).toBe('p_cb');
+    expect(publicView.rounds[1].subPlayerId).toBeUndefined();
+
+    // Round 3 (future round): both mainPlayerId and subPlayerId are stripped!
+    expect(publicView.rounds[2].position).toBe('ST');
+    expect(publicView.rounds[2].mainPlayerId).toBeUndefined();
+    expect(publicView.rounds[2].subPlayerId).toBeUndefined();
   });
 });

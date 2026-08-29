@@ -7,6 +7,7 @@ import { I18nProvider } from '@/lib/i18n';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { MainWrapper } from '@/components/layout/main-wrapper';
+import { IncomingInviteListener } from '@/components/shared/incoming-invite-listener';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -33,8 +34,6 @@ const barlowCondensed = Barlow_Condensed({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   viewportFit: 'cover',
 };
 
@@ -168,6 +167,7 @@ export default function RootLayout({
               <MainWrapper>
                 {children}
               </MainWrapper>
+              <IncomingInviteListener />
               <Footer />
             </ToastProvider>
           </I18nProvider>

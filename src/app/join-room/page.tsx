@@ -4,7 +4,6 @@ import React, { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
-import { Id } from '../../../convex/_generated/dataModel';
 import { useToast } from '@/components/shared/toast';
 import {
   Key,
@@ -14,29 +13,26 @@ import {
   CircleNotch,
   Crosshair,
   Ranking,
-  DiceFive,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { PageShell } from '@/components/ui/page-shell';
 import { Panel } from '@/components/ui/panel';
-import { TextInput } from '@/components/ui/text-input';
-import { UserIdentity } from '@/components/ui/user-identity';
 import { StatPill } from '@/components/ui/stat-pill';
 import { useI18n } from '@/lib/i18n';
-import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
 import { useGuestNickname } from '@/hooks/use-guest-nickname';
+import { useGuestSession } from '@/hooks/use-guest-session';
 
 export default function JoinRoomPage() {
   const router = useRouter();
   const { toast } = useToast();
   const { t, lang } = useI18n();
+  const { ensureGuestId, sessionToken } = useGuestSession();
 
-  const ensureGuest = useMutation(api.guests.mutations.ensure);
   const joinSnipeRoom = useMutation(api.rooms.mutations.join);
   const joinRankDuel = useMutation(api.rank.mutations.joinDuelPrivateRoom);
 
-  const [nickname, setNickname] = useGuestNickname();
+  const [nickname] = useGuestNickname();
   const [roomCode, setRoomCode] = useState('');
 
   const [loading, setLoading] = useState(false);
@@ -93,35 +89,20 @@ export default function JoinRoomPage() {
     setLoading(true);
 
     try {
-      const name = nickname.trim();
-      const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
-      const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
-      const res = await ensureGuest({
-        existingId: existingId ?? undefined,
-        sessionToken,
-        nickname: name,
-        avatarSeed: name,
-      });
-      localStorage.setItem('extratime_guestId', res.guestId);
-      if (res.sessionToken) {
-        localStorage.setItem('extratime_sessionToken', res.sessionToken);
-      }
-      localStorage.setItem('extratime_guestName', name);
-      const validGuestId = res.guestId as Id<'guestUsers'>;
-      const validSessionToken = res.sessionToken ?? sessionToken;
-
+      const guestId = await ensureGuestId(nickname.trim());
+      const currentSessionToken = sessionToken || (typeof window !== 'undefined' ? localStorage.getItem('extratime_sessionToken') || undefined : undefined);
 
       if (isSnipe && snipeRoom) {
         const result = await joinSnipeRoom({
           roomId: snipeRoom._id,
-          guestId: validGuestId,
-          sessionToken: validSessionToken,
+          guestId,
+          sessionToken: currentSessionToken,
         });
         router.push(`/auction/${result.roomId}`);
       } else if (isRank && rankRoom) {
         const result = await joinRankDuel({
-          guestId: validGuestId,
-          sessionToken: validSessionToken,
+          guestId,
+          sessionToken: currentSessionToken,
           code: normalizedCode,
         });
         router.push(`/rank/${result.gameId}`);
@@ -150,34 +131,6 @@ export default function JoinRoomPage() {
     >
       <form onSubmit={handleJoin}>
         <Panel variant="highlight" className="p-4 sm:p-6 space-y-5">
-          {/* Manager Handle Input */}
-          <div className="space-y-2">
-            <div className="flex items-center gap-3">
-              <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
-              <div className="flex-1 min-w-0">
-                <TextInput
-                  label={t('joinRoom.managerHandle')}
-                  value={nickname}
-                  onChange={(e) => setNickname(e.target.value)}
-                  maxLength={20}
-                  placeholder="Manager name"
-                  aria-label={t('joinRoom.managerHandle')}
-                  rightAction={
-                    <button
-                      type="button"
-                      onClick={() => setNickname(randomName())}
-                      aria-label={t('home.nameModal.randomize')}
-                      title={t('home.nameModal.randomize')}
-                      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
-                    >
-                      <AppIcon icon={DiceFive} size={20} weight="duotone" />
-                    </button>
-                  }
-                />
-              </div>
-            </div>
-          </div>
-
           {/* Big Room Code Input */}
           <div className="space-y-1.5">
             <label className="text-steel text-[10px] font-black tracking-widest uppercase block px-1">

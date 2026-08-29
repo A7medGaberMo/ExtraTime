@@ -6,43 +6,14 @@ import { generateDraftRounds } from '../auctions/draftEngine';
 import { getRandomFormation, MatchSize } from '../auctions/formations';
 import { type PoolMode } from '../lib/constants';
 import { verifyGuestSession } from '../lib/auth';
-
-
+import { getCurrentUser } from '../lib/identity';
+import { generateUniqueRoomCode, randomPerk, generateRoomSeed } from '../lib/codeGen';
 
 // ── Helpers ────────────────────────────────────────────────
 
-function generateRoomCode(): string {
-  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-  return Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
-}
-
-async function generateUniqueRoomCode(ctx: GenericMutationCtx<DataModel>): Promise<string> {
-  for (let attempt = 0; attempt < 8; attempt++) {
-    const code = generateRoomCode();
-    const existing = await ctx.db
-      .query('rooms')
-      .withIndex('by_code', (q) => q.eq('code', code))
-      .first();
-    if (!existing) return code;
-  }
-  throw new Error('Could not generate a unique room code');
-}
-
-function randomPerk(): 'SCOUT' | 'SPY' {
-  return Math.random() < 0.5 ? 'SCOUT' : 'SPY';
-}
-
-/** Deterministic room seed — drives tie lotteries + the match simulation. */
-function generateRoomSeed(): string {
-  const rand =
-    Math.random().toString(36).slice(2) +
-    Date.now().toString(36) +
-    Math.random().toString(36).slice(2);
-  return rand.slice(0, 16);
-}
-
 interface CreateRoomArgs {
   hostId: Id<'guestUsers'>;
+  hostUserId?: Id<'users'>;
   matchSize: MatchSize;
   startingBudget: number;
   isPublic: boolean;
@@ -60,6 +31,7 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
   const roomId = await ctx.db.insert('rooms', {
     code,
     hostId: args.hostId,
+    hostUserId: args.hostUserId,
     gameType: 'HIDDEN_BID',
     status: 'waiting',
     isPublic: args.isPublic,
@@ -112,6 +84,7 @@ async function joinAuction(
   roomId: Id<'rooms'>,
   guestId: Id<'guestUsers'>,
   auction: Doc<'auctions'>,
+  guestUserId?: Id<'users'>,
 ) {
   const room = await ctx.db.get(roomId);
   if (!room || room.guestId || room.status !== 'waiting') {
@@ -124,6 +97,7 @@ async function joinAuction(
 
   await ctx.db.patch(roomId, {
     guestId: guestId,
+    guestUserId: guestUserId || room.guestUserId,
     status: 'in_progress',
   });
 
@@ -165,11 +139,13 @@ export const create = mutation({
   },
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.hostId, args.sessionToken);
+    const currentUser = await getCurrentUser(ctx);
     const matchSize: MatchSize = args.matchSize ?? 11;
     const startingBudget = args.startingBudget ?? 100;
     const poolMode = (args.poolMode ?? 'GLOBAL') as PoolMode;
     return await createWaitingRoom(ctx, {
       hostId: args.hostId,
+      hostUserId: currentUser?._id,
       matchSize,
       startingBudget,
       isPublic: args.isPublic ?? false,
@@ -186,6 +162,7 @@ export const join = mutation({
   },
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const currentUser = await getCurrentUser(ctx);
     const room = await ctx.db.get(args.roomId);
     if (!room) throw new Error('Room not found');
     const guest = await ctx.db.get(args.guestId);
@@ -208,7 +185,7 @@ export const join = mutation({
     if (room.status !== 'waiting') throw new Error('Room is not open');
     if (!auction) throw new Error('Auction not found for room');
 
-    const activeTurnUserId = await joinAuction(ctx, args.roomId, args.guestId, auction);
+    const activeTurnUserId = await joinAuction(ctx, args.roomId, args.guestId, auction, currentUser?._id);
     return { roomId: args.roomId, activeTurnUserId };
 
   },
@@ -223,6 +200,7 @@ export const findOrCreatePublicMatch = mutation({
   },
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.userId, args.sessionToken);
+    const currentUser = await getCurrentUser(ctx);
     const matchSize: MatchSize = args.matchSize ?? 11;
     const poolMode = (args.poolMode ?? 'GLOBAL') as PoolMode;
     const now = Date.now();
@@ -236,44 +214,42 @@ export const findOrCreatePublicMatch = mutation({
     const existingHostRoom = openRooms.find(
       (r) =>
         r.hostId === args.userId &&
-        r.createdAt > now - 3 * 60 * 1000 &&
-        r.settings?.matchSize === matchSize &&
-        (r.settings?.poolMode ?? 'GLOBAL') === poolMode,
+        r.settings.matchSize === matchSize &&
+        r.settings.poolMode === poolMode,
     );
     if (existingHostRoom) {
       return { roomId: existingHostRoom._id, code: existingHostRoom.code, matched: false };
     }
 
-    // Find a compatible room and clean up stale ones
     for (const room of openRooms) {
-      if (room.createdAt <= now - 3 * 60 * 1000) {
-        // Auto-expire stale waiting room after 3 minutes with no rival
+      if (room.createdAt <= now - 5 * 60 * 1000) {
+        // Auto-expire stale waiting room after 5 minutes with no rival
         await ctx.db.patch(room._id, { status: 'abandoned' });
         continue;
       }
 
-      const isCompatible =
-        room.hostId !== args.userId &&
-        room.createdAt > now - 3 * 60 * 1000 &&
-        room.settings?.matchSize === matchSize &&
-        (room.settings?.poolMode ?? 'GLOBAL') === poolMode;
+      const isHost = room.hostId === args.userId;
+      const isRecent = room.createdAt > now - 5 * 60 * 1000;
+      const matchesSize = room.settings.matchSize === matchSize;
+      const matchesPool = room.settings.poolMode === poolMode;
 
-      if (!isCompatible) continue;
+      if (!isHost && isRecent && matchesSize && matchesPool && !room.guestId) {
+        const auction = await ctx.db
+          .query('auctions')
+          .withIndex('by_room', (q) => q.eq('roomId', room._id))
+          .first();
 
-      const auction = await ctx.db
-        .query('auctions')
-        .withIndex('by_room', (q) => q.eq('roomId', room._id))
-        .first();
-
-      if (auction) {
-        await joinAuction(ctx, room._id, args.userId, auction);
-        return { roomId: room._id, code: room.code, matched: true };
+        if (auction && auction.status === 'pending') {
+          const activeTurnUserId = await joinAuction(ctx, room._id, args.userId, auction, currentUser?._id);
+          return { roomId: room._id, code: room.code, matched: true, activeTurnUserId };
+        }
       }
     }
 
     // No compatible room found — create a new one
     return await createWaitingRoom(ctx, {
       hostId: args.userId,
+      hostUserId: currentUser?._id,
       matchSize,
       startingBudget: 100,
       isPublic: true,

@@ -70,18 +70,23 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   const { roomId } = use(params);
   const router = useRouter();
   const { t } = useI18n();
-  const { guestId } = useGuestSession(true);
+  const { guestId, sessionToken } = useGuestSession(true);
   const roomIdTyped = roomId as Id<'rooms'>;
 
   const state = useQuery(
     api.auctions.queries.getState,
-    guestId && roomId ? { roomId: roomIdTyped, userId: guestId } : 'skip',
+    guestId && roomId ? { roomId: roomIdTyped, userId: guestId, sessionToken: sessionToken || undefined } : 'skip',
   );
   const match = useQuery(api.matches.queries.getByRoom, roomId ? { roomId: roomIdTyped } : 'skip');
+  const room = useQuery(api.rooms.queries.getById, roomId ? { id: roomIdTyped } : 'skip');
 
   const runSimulation = useMutation(api.matches.mutations.runSimulation);
+  const createSnipeRoom = useMutation(api.rooms.mutations.create);
+  const sendMatchInviteMutation = useMutation(api.invites.mutations.sendMatchInvite);
+
   const triggeredRef = useRef(false);
   const [audioReady, setAudioReady] = useState(false);
+  const [isRematching, setIsRematching] = useState(false);
 
   const viewerIsHost = state?.isHost ?? true;
 
@@ -92,18 +97,19 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
     if (viewerIsHost) {
       triggeredRef.current = true;
-      void runSimulation({ roomId: roomIdTyped, userId: guestId }).catch(console.error);
+      void runSimulation({ roomId: roomIdTyped, userId: guestId, sessionToken: sessionToken || undefined }).catch(console.error);
     } else {
       const timer = setTimeout(() => {
         const currentMat = match as HydratedMatch | null | undefined;
         if (!triggeredRef.current && currentMat && !currentMat.simulation) {
           triggeredRef.current = true;
-          void runSimulation({ roomId: roomIdTyped, userId: guestId }).catch(console.error);
+          void runSimulation({ roomId: roomIdTyped, userId: guestId, sessionToken: sessionToken || undefined }).catch(console.error);
         }
       }, 2000);
       return () => clearTimeout(timer);
     }
-  }, [match, guestId, roomId, roomIdTyped, runSimulation, viewerIsHost]);
+  }, [match, guestId, roomId, roomIdTyped, runSimulation, sessionToken, viewerIsHost]);
+
 
   useEffect(() => {
     if (audioReady) unlockAudio();
@@ -147,7 +153,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
   const viewerName = viewerIsHost ? state?.hostName : state?.guestName;
   const opponentName = viewerIsHost ? state?.guestName : state?.hostName;
-  const myName = viewerName ? `You (${viewerName})` : 'You';
+  const myName = viewerName ? `${viewerName} (You)` : 'You';
   const rivalName = opponentName ?? 'Rival';
 
   const viewerWon =
@@ -194,6 +200,37 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     );
   }
 
+  const handleRematch = async () => {
+    if (!guestId || isRematching) return;
+    setIsRematching(true);
+    try {
+      const res = await createSnipeRoom({
+        hostId: guestId,
+        sessionToken: sessionToken || undefined,
+        matchSize: matchSize,
+        startingBudget: 100,
+        isPublic: false,
+        poolMode: 'ACTIVE',
+      });
+
+      const oppUserId = viewerIsHost ? room?.guestUserId : room?.hostUserId;
+      if (oppUserId) {
+        sendMatchInviteMutation({
+          recipientUserId: oppUserId as Id<'users'>,
+          matchType: 'snipe',
+          roomCode: res.code,
+          targetId: res.roomId,
+        }).catch(() => {});
+      }
+
+      router.push(`/room/${res.roomId}`);
+    } catch {
+      router.push('/create-room');
+    } finally {
+      setIsRematching(false);
+    }
+  };
+
   return (
     <PageShell
       title={t('results.title')}
@@ -236,10 +273,11 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
         <Button
           variant="primary"
           size="md"
-          onClick={() => router.push('/create-room')}
+          disabled={isRematching}
+          onClick={handleRematch}
           leftIcon={<AppIcon icon={ArrowCounterClockwise} size={16} weight="bold" />}
         >
-          {t('results.rematch')}
+          {isRematching ? '...' : t('results.rematch')}
         </Button>
 
         <Button

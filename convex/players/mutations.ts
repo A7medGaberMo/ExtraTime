@@ -1,9 +1,9 @@
-import { mutation, internalMutation } from '../_generated/server';
+import { internalMutation } from '../_generated/server';
 import { Doc } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { tierValidator } from '../lib/constants';
 
-export const create = mutation({
+export const create = internalMutation({
   args: {
     name: v.string(),
     position: v.string(),
@@ -142,5 +142,29 @@ export const deduplicatePlayers = internalMutation({
       deletedCount,
       uniquePlayersRemaining: allPlayers.length - deletedCount,
     };
+  },
+});
+
+export const cleanupBlacklistedPlayers = internalMutation({
+  args: {},
+  handler: async (ctx) => {
+    const isrNations = await ctx.db
+      .query('nations')
+      .filter((q) => q.eq(q.field('name'), 'Israel'))
+      .collect();
+    const isrNationIds = new Set(isrNations.map((n) => n._id));
+
+    const players = await ctx.db.query('players').collect();
+    let deleted = 0;
+    for (const p of players) {
+      if (isrNationIds.has(p.nationId) || p.apiId === '329715') {
+        await ctx.db.delete(p._id);
+        deleted++;
+      }
+    }
+    for (const n of isrNations) {
+      await ctx.db.delete(n._id);
+    }
+    return { deleted };
   },
 });

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Crown, ShieldCheck } from '@phosphor-icons/react';
 import { AppIcon } from './app-icon';
 import { cn } from '@/lib/utils';
+import { parseAvatarSeed, getMonogramInitial } from '@/lib/avatars';
 
 export interface UserIdentityProps extends React.HTMLAttributes<HTMLDivElement> {
   nickname: string;
@@ -18,26 +19,6 @@ export interface UserIdentityProps extends React.HTMLAttributes<HTMLDivElement> 
   isHost?: boolean;
   isWinner?: boolean;
   className?: string;
-}
-
-// Generate rich consistent sport avatar colors from nickname seed
-function getAvatarColors(seed: string): { bg: string; border: string; text: string } {
-  const palettes = [
-    { bg: 'from-lime/30 to-slate-900', border: 'border-lime/50', text: 'text-lime' },
-    { bg: 'from-sky-500/30 to-slate-900', border: 'border-sky-400/50', text: 'text-sky-300' },
-    { bg: 'from-amber-500/30 to-slate-900', border: 'border-amber-400/50', text: 'text-amber-300' },
-    { bg: 'from-purple-500/30 to-slate-900', border: 'border-purple-400/50', text: 'text-purple-300' },
-    { bg: 'from-rose-500/30 to-slate-900', border: 'border-rose-400/50', text: 'text-rose-300' },
-    { bg: 'from-emerald-500/30 to-slate-900', border: 'border-emerald-400/50', text: 'text-emerald-300' },
-  ];
-
-  let hash = 0;
-  for (let i = 0; i < seed.length; i++) {
-    hash = (hash << 5) - hash + seed.charCodeAt(i);
-    hash |= 0;
-  }
-  const index = Math.abs(hash) % palettes.length;
-  return palettes[index];
 }
 
 export function UserIdentity({
@@ -55,24 +36,29 @@ export function UserIdentity({
   ...props
 }: UserIdentityProps) {
   const seed = avatarSeed || nickname || 'manager';
-  const colors = getAvatarColors(seed);
-  const initial = (nickname || 'M').trim().charAt(0).toUpperCase();
+  const parsed = parseAvatarSeed(seed);
+  const meta = parsed.meta;
+  const monogram = getMonogramInitial(nickname, 2);
+  const finalImage = imageUrl || parsed.avatarUrl;
 
   const sizeMap = {
     sm: {
       avatar: 'h-8 w-8 text-xs',
       name: 'text-xs',
       sub: 'text-[10px]',
+      imgSize: 28,
     },
     md: {
-      avatar: 'h-11 w-11 text-base',
+      avatar: 'h-11 w-11 text-sm',
       name: 'text-sm sm:text-base',
       sub: 'text-xs',
+      imgSize: 38,
     },
     lg: {
-      avatar: 'h-16 w-16 text-2xl',
+      avatar: 'h-16 w-16 text-xl',
       name: 'text-lg sm:text-xl',
       sub: 'text-xs sm:text-sm',
+      imgSize: 56,
     },
   }[size];
 
@@ -86,23 +72,27 @@ export function UserIdentity({
       <div className="relative shrink-0">
         <div
           className={cn(
-            'flex items-center justify-center rounded-2xl border bg-gradient-to-b shadow-lg font-stats font-black select-none overflow-hidden',
-            colors.border,
-            colors.bg,
-            colors.text,
+            'flex items-center justify-center rounded-2xl border bg-gradient-to-br shadow-lg font-stats font-black select-none overflow-hidden backdrop-blur-md transition-all p-1',
+            meta.border,
+            meta.gradient,
+            meta.text,
+            meta.glow,
             sizeMap.avatar,
           )}
         >
-          {imageUrl ? (
-            <Image
-              src={imageUrl}
-              alt={nickname}
-              width={64}
-              height={64}
-              className="h-full w-full object-cover"
-            />
+          {finalImage ? (
+            <div className="relative h-full w-full flex items-center justify-center">
+              <Image
+                src={finalImage}
+                alt={nickname}
+                width={sizeMap.imgSize}
+                height={sizeMap.imgSize}
+                className="max-h-full max-w-full object-contain p-0.5"
+                unoptimized
+              />
+            </div>
           ) : (
-            <span>{initial}</span>
+            <span className="tracking-tight">{monogram}</span>
           )}
         </div>
 

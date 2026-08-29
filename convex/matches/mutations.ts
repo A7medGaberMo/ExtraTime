@@ -4,6 +4,8 @@ import { v } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { simulateTacticalMatch, SimPlayer } from '../../src/core/simulation/match-simulator';
 import { isAuctionParticipant } from '../auctions/sealedView';
+import { scoreLeagueSnipeMatch } from '../leagues/scoring';
+import { verifyGuestSession } from '../lib/auth';
 
 // ── Helpers ──────────────────────────────────────────────────────
 
@@ -80,8 +82,13 @@ async function hydrateMains(
 export const createFromAuction = mutation({
   args: {
     roomId: v.id('rooms'),
+    userId: v.optional(v.id('guestUsers')),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    if (args.userId) {
+      await verifyGuestSession(ctx, args.userId, args.sessionToken);
+    }
     const auction = await getCompletedAuction(ctx, args.roomId);
     const match = await ensureMatch(ctx, auction, args.roomId);
     return match._id;
@@ -99,8 +106,10 @@ export const runSimulation = mutation({
   args: {
     roomId: v.id('rooms'),
     userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
     const auction = await getCompletedAuction(ctx, args.roomId);
 
     if (!isAuctionParticipant(auction, args.userId)) {
@@ -148,7 +157,57 @@ export const runSimulation = mutation({
       completedAt: Date.now(),
     });
 
+    // ── Platform Match Attribution & League Scoring Hook ──
+    const room = await ctx.db.get(args.roomId);
+    if (room) {
+      // If there was a shootout or decisive winner, match is not a draw
+      const isDraw = !simulation.winnerId && simulation.score.host === simulation.score.guest;
+      const winnerUserId = simulation.winnerId
+        ? (simulation.winnerId === auction.host.userId ? room.hostUserId : room.guestUserId)
+        : simulation.score.host > simulation.score.guest
+        ? room.hostUserId
+        : simulation.score.guest > simulation.score.host
+        ? room.guestUserId
+        : undefined;
+
+      // Only record history if at least one signed-in player was in this match
+      if (room.hostUserId || room.guestUserId) {
+        const pkSuffix = simulation.isShootout && simulation.shootoutScore
+          ? ` (PK ${simulation.shootoutScore.host}-${simulation.shootoutScore.guest})`
+          : '';
+        await ctx.db.insert('gameResults', {
+          gameType: 'snipe',
+          context: room.leagueId ? 'league' : 'casual',
+          leagueId: room.leagueId,
+          player1UserId: room.hostUserId,
+          player2UserId: room.guestUserId,
+          player1GuestId: room.hostId,
+          player2GuestId: room.guestId,
+          player1Score: simulation.score.host,
+          player2Score: simulation.score.guest,
+          winnerUserId,
+          isDraw,
+          summary: `${simulation.score.host} - ${simulation.score.guest}${pkSuffix}`,
+          completedAt: Date.now(),
+        });
+      }
+
+      // If launched from a league, score league standings
+      if (room.leagueId) {
+        await scoreLeagueSnipeMatch(ctx, {
+          roomId: room._id,
+          hostScore: simulation.score.host,
+          guestScore: simulation.score.guest,
+          hostUserId: room.hostUserId,
+          guestUserId: room.guestUserId,
+          winnerUserId,
+          isDraw,
+        });
+      }
+    }
+
     return { matchId: match._id, simulation, cached: false };
   },
 });
+
 

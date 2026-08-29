@@ -15,6 +15,7 @@ import {
   Clock,
   ArrowRight,
   SlidersHorizontal,
+  ShareNetwork,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
@@ -23,29 +24,39 @@ import { Panel } from '@/components/ui/panel';
 import { StatPill } from '@/components/ui/stat-pill';
 import { UserIdentity } from '@/components/ui/user-identity';
 import { useI18n } from '@/lib/i18n';
+import { InviteModal } from '@/components/shared/invite-modal';
 
 export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [copied, setCopied] = useState(false);
-  const { guestId } = useGuestSession();
+  const [showInviteModal, setShowInviteModal] = useState(false);
+  const { guestId, sessionToken } = useGuestSession();
 
   const state = useQuery(
     api.auctions.queries.getState,
-    guestId && roomId ? { roomId: roomId as Id<'rooms'>, userId: guestId } : 'skip',
+    guestId && roomId ? { roomId: roomId as Id<'rooms'>, userId: guestId, sessionToken: sessionToken || undefined } : 'skip',
   );
 
-  const room = state?.room;
+  const roomDoc = useQuery(
+    api.rooms.queries.getById,
+    roomId ? { id: roomId as Id<'rooms'> } : 'skip',
+  );
+
+  const room = state?.room || roomDoc;
   const auction = state?.auction;
   const isHost = Boolean(state?.isHost);
 
-
   useEffect(() => {
-    if (auction?.status === 'active' || room?.status === 'in_progress') {
+    if (
+      auction?.status === 'active' ||
+      room?.status === 'in_progress' ||
+      roomDoc?.status === 'in_progress'
+    ) {
       router.push(`/auction/${roomId}`);
     }
-  }, [auction?.status, room?.status, roomId, router]);
+  }, [auction?.status, room?.status, roomDoc?.status, roomId, router]);
 
   const copyCode = () => {
     if (!room?.code) return;
@@ -76,14 +87,25 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
           </p>
         </div>
 
-        <Button
-          variant="secondary"
-          size="md"
-          onClick={copyCode}
-          leftIcon={<AppIcon icon={copied ? Check : Copy} size={18} weight="bold" className={copied ? 'text-lime' : ''} />}
-        >
-          {copied ? t('common.copied') : t('common.copy')}
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button
+            variant="secondary"
+            size="md"
+            onClick={copyCode}
+            leftIcon={<AppIcon icon={copied ? Check : Copy} size={18} weight="bold" className={copied ? 'text-lime' : ''} />}
+          >
+            {copied ? t('common.copied') : t('common.copy')}
+          </Button>
+
+          <Button
+            variant="primary"
+            size="md"
+            onClick={() => setShowInviteModal(true)}
+            leftIcon={<AppIcon icon={ShareNetwork} size={18} weight="bold" />}
+          >
+            {lang === 'ar' ? 'دعوة صديق' : 'Invite'}
+          </Button>
+        </div>
       </div>
 
       {/* ── 2. QUICK STATS SUMMARY ───────────────────────────────────── */}
@@ -205,6 +227,16 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
           </Button>
         </aside>
       </div>
+
+      {showInviteModal && (
+        <InviteModal
+          isOpen={showInviteModal}
+          onClose={() => setShowInviteModal(false)}
+          title="ExtraTime Snipe Match"
+          code={roomCode}
+          type="room"
+        />
+      )}
     </PageShell>
   );
 }

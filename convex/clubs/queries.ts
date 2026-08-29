@@ -41,3 +41,20 @@ export const getAvailablePools = query({
     return [...presetPools, ...dynamicPools];
   },
 });
+
+export const searchClubs = query({
+  args: { search: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    const clubs = await ctx.db.query('clubs').collect();
+    const queryStr = (args.search || '').trim().toLowerCase();
+    if (!queryStr) return clubs.slice(0, 36);
+    return clubs
+      .filter(
+        (c) =>
+          c.name.toLowerCase().includes(queryStr) ||
+          c.shortName.toLowerCase().includes(queryStr) ||
+          c.league.toLowerCase().includes(queryStr),
+      )
+      .slice(0, 36);
+  },
+});

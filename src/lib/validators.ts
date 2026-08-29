@@ -21,7 +21,6 @@ export const roomCodeSchema = z
 export const createRoomSchema = z.object({
   nickname: nicknameSchema,
   gameType: z.literal('hidden_bid'),
-  // TODO: Phase 2 — Add budget, formation, and other game settings
 });
 
 /** Join room form schema */

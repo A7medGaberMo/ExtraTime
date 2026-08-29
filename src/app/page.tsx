@@ -36,6 +36,7 @@ import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
 import { useGuestNickname } from '@/hooks/use-guest-nickname';
 import { useGuestSession } from '@/hooks/use-guest-session';
+import { useUser } from '@clerk/nextjs';
 
 type PoolMode = 'GLOBAL' | 'ACTIVE' | 'EPL' | 'TOP_TEAMS' | 'ICONS';
 
@@ -50,6 +51,8 @@ export default function HomePage() {
   const { toast } = useToast();
   const { t, lang } = useI18n();
   const { ensureGuestId } = useGuestSession();
+  const { isSignedIn, user } = useUser();
+  const viewer = useQuery(api.users.queries.viewer);
 
   // Mutations
   const findSnipeMatch = useMutation(api.rooms.mutations.findOrCreatePublicMatch);
@@ -84,10 +87,18 @@ export default function HomePage() {
 
   const playerCount = dbStats === undefined ? '…' : dbStats.totalPlayers.toLocaleString();
 
+  const authenticatedName =
+    viewer?.displayName || user?.fullName || user?.firstName || user?.username;
+
   function triggerActionWithName(action: HomeAction) {
+    if (isSignedIn && authenticatedName) {
+      executeAction(action, authenticatedName);
+      return;
+    }
+
     const saved = localStorage.getItem('extratime_guestName');
     if (saved) {
-      executeAction(action);
+      executeAction(action, saved);
     } else {
       setPendingAction(action);
       setNickname(randomName());
@@ -95,12 +106,13 @@ export default function HomePage() {
     }
   }
 
-  async function executeAction(action: HomeAction) {
+  async function executeAction(action: HomeAction, overrideName?: string) {
     if (loading) return;
     setLoading(true);
 
     try {
-      const guestId = await ensureGuestId(nickname.trim() || randomName());
+      const finalName = (overrideName || authenticatedName || nickname).trim() || randomName();
+      const guestId = await ensureGuestId(finalName);
       const actionSessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
 
       switch (action.type) {

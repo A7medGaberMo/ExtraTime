@@ -4,7 +4,6 @@ import React, { Suspense, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
-import { Id } from '../../../convex/_generated/dataModel';
 import { useToast } from '@/components/shared/toast';
 import {
   Globe,
@@ -16,7 +15,6 @@ import {
   Flame,
   Star,
   Crown,
-  DiceFive,
   Ranking,
   Play,
   Compass,
@@ -28,13 +26,11 @@ import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { PageShell } from '@/components/ui/page-shell';
 import { Panel } from '@/components/ui/panel';
-import { TextInput } from '@/components/ui/text-input';
 import { SegmentedControl, type SegmentedOption } from '@/components/ui/segmented-control';
-import { UserIdentity } from '@/components/ui/user-identity';
 import { StatPill } from '@/components/ui/stat-pill';
 import { useI18n } from '@/lib/i18n';
-import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
 import { useGuestNickname } from '@/hooks/use-guest-nickname';
+import { useGuestSession } from '@/hooks/use-guest-session';
 
 type GameMode = 'snipe' | 'rank';
 type MatchSize = 5 | 11;
@@ -46,19 +42,19 @@ function CreateRoomContent() {
   const searchParams = useSearchParams();
   const { toast } = useToast();
   const { t, lang } = useI18n();
+  const { ensureGuestId, sessionToken } = useGuestSession();
 
   const initialMode = searchParams.get('mode') === 'rank' ? 'rank' : 'snipe';
   const [selectedGame, setSelectedGame] = useState<GameMode>(initialMode);
 
   // Mutations
-  const ensureGuest = useMutation(api.guests.mutations.ensure);
   const createSnipeRoom = useMutation(api.rooms.mutations.create);
   const createRankDuel = useMutation(api.rank.mutations.createDuelPrivateRoom);
   const createRankSolo = useMutation(api.rank.mutations.createSoloGame);
   const findRankPublic = useMutation(api.rank.mutations.findOrCreatePublicMatch);
   const queueStats = useQuery(api.rank.queries.getPublicQueueSummary);
 
-  const [nickname, setNickname] = useGuestNickname();
+  const [nickname] = useGuestNickname();
 
   // Snipe options
   const [matchSize, setMatchSize] = useState<MatchSize>(11);
@@ -72,36 +68,22 @@ function CreateRoomContent() {
 
   const [loading, setLoading] = useState(false);
 
-  async function ensureGuestId(): Promise<Id<'guestUsers'>> {
-    const name = nickname.trim() || randomName();
-    const existingId = localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null;
-    const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
-    const res = await ensureGuest({
-      existingId: existingId ?? undefined,
-      sessionToken,
-      nickname: name,
-      avatarSeed: name,
-    });
-    localStorage.setItem('extratime_guestId', res.guestId);
-    if (res.sessionToken) {
-      localStorage.setItem('extratime_sessionToken', res.sessionToken);
-    }
-    localStorage.setItem('extratime_guestName', name);
-    return res.guestId as Id<'guestUsers'>;
-  }
-
   async function handleCreateMatch() {
     if (loading || !nickname.trim()) return;
     setLoading(true);
 
     try {
-      const guestId = await ensureGuestId();
-      const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
+      const guestId = await ensureGuestId(nickname.trim());
+      const currentSessionToken =
+        sessionToken ||
+        (typeof window !== 'undefined'
+          ? localStorage.getItem('extratime_sessionToken') || undefined
+          : undefined);
 
       if (selectedGame === 'snipe') {
         const room = await createSnipeRoom({
           hostId: guestId,
-          sessionToken,
+          sessionToken: currentSessionToken,
           matchSize,
           startingBudget,
           isPublic,
@@ -111,13 +93,25 @@ function CreateRoomContent() {
       } else {
         // Rank match
         if (rankType === 'duel') {
-          const result = await createRankDuel({ hostId: guestId, sessionToken, roundCount });
+          const result = await createRankDuel({
+            hostId: guestId,
+            sessionToken: currentSessionToken,
+            roundCount,
+          });
           router.push(`/rank/${result.gameId}`);
         } else if (rankType === 'quick') {
-          const result = await findRankPublic({ guestId, sessionToken, roundCount });
+          const result = await findRankPublic({
+            guestId,
+            sessionToken: currentSessionToken,
+            roundCount,
+          });
           router.push(`/rank/${result.gameId}`);
         } else {
-          const result = await createRankSolo({ guestId, sessionToken, roundCount });
+          const result = await createRankSolo({
+            guestId,
+            sessionToken: currentSessionToken,
+            roundCount,
+          });
           router.push(`/rank/${result.gameId}`);
         }
       }
@@ -247,33 +241,6 @@ function CreateRoomContent() {
             onChange={setSelectedGame}
             size="lg"
           />
-        </div>
-
-        {/* Manager Handle Input */}
-        <div className="flex items-center gap-3 pt-1">
-          <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
-          <div className="flex-1 min-w-0">
-            <TextInput
-              label={t('createRoom.managerHandle')}
-              badge={t('createRoom.autoGenerated')}
-              value={nickname}
-              onChange={(e) => setNickname(e.target.value)}
-              maxLength={20}
-              placeholder="Manager name"
-              aria-label={t('createRoom.managerHandle')}
-              rightAction={
-                <button
-                  type="button"
-                  onClick={() => setNickname(randomName())}
-                  aria-label={t('home.nameModal.randomize')}
-                  title={t('home.nameModal.randomize')}
-                  className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
-                >
-                  <AppIcon icon={DiceFive} size={20} weight="duotone" />
-                </button>
-              }
-            />
-          </div>
         </div>
 
         {/* ── SNIPE CONFIGURATION ── */}

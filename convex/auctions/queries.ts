@@ -1,8 +1,9 @@
 import { query } from '../_generated/server';
-import { Id, DataModel } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { GenericQueryCtx } from 'convex/server';
+import { DataModel, Id } from '../_generated/dataModel';
 import { toPublicAuction } from './sealedView';
+import { isGuestOwner } from '../lib/auth';
 
 // ── Hydration Helpers ──────────────────────────────────────
 
@@ -86,7 +87,11 @@ export const getByRoom = query({
 });
 
 export const getState = query({
-  args: { roomId: v.id('rooms'), userId: v.id('guestUsers') },
+  args: {
+    roomId: v.id('rooms'),
+    userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
   handler: async (ctx, args) => {
     const room = await ctx.db.get(args.roomId);
     const auction = await ctx.db
@@ -95,6 +100,8 @@ export const getState = query({
       .first();
     if (!room || !auction) return null;
 
+    const isOwner = await isGuestOwner(ctx, args.userId, args.sessionToken);
+
     const currentRound = auction.rounds[auction.currentRound - 1] ?? null;
     const mainPlayer = currentRound ? await hydratePlayer(ctx, currentRound.mainPlayerId) : null;
 
@@ -102,7 +109,7 @@ export const getState = query({
     const isGuest = auction.guest?.userId === args.userId;
     const isParticipant = isHost || isGuest;
 
-    const me = isParticipant ? (isHost ? auction.host : auction.guest) : null;
+    const me = isParticipant && isOwner ? (isHost ? auction.host : auction.guest) : null;
     const opponent = isParticipant ? (isHost ? auction.guest : auction.host) : null;
 
 
@@ -217,9 +224,19 @@ export const getState = query({
       }
     }
 
-    // Fetch user nicknames for display
-    const hostUser = await ctx.db.get(auction.host.userId);
-    const guestUser = auction.guest?.userId ? await ctx.db.get(auction.guest.userId) : null;
+    // Fetch user nicknames/display names for display
+    const hostGuest = await ctx.db.get(auction.host.userId);
+    const guestGuest = auction.guest?.userId ? await ctx.db.get(auction.guest.userId) : null;
+    let resolvedHostName = hostGuest?.nickname ?? 'Host';
+    if (room.hostUserId) {
+      const u = await ctx.db.get(room.hostUserId);
+      if (u?.displayName) resolvedHostName = u.displayName;
+    }
+    let resolvedGuestName = guestGuest?.nickname ?? 'Opponent';
+    if (room.guestUserId) {
+      const u = await ctx.db.get(room.guestUserId);
+      if (u?.displayName) resolvedGuestName = u.displayName;
+    }
 
     return {
       room,
@@ -236,8 +253,8 @@ export const getState = query({
       me,
       opponent,
       isHost,
-      hostName: hostUser?.nickname ?? 'Host',
-      guestName: guestUser?.nickname ?? 'Opponent',
+      hostName: resolvedHostName,
+      guestName: resolvedGuestName,
     };
   },
 });

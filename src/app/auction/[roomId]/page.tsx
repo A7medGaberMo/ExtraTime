@@ -55,7 +55,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   const state = useQuery(
     api.auctions.queries.getState,
-    guestId && roomId ? { roomId: roomId as Id<'rooms'>, userId: guestId } : 'skip',
+    guestId && roomId ? { roomId: roomId as Id<'rooms'>, userId: guestId, sessionToken: sessionToken || undefined } : 'skip',
   );
 
   // Detect auction completion → show final round reveal before redirect

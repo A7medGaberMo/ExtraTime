@@ -979,15 +979,15 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Juninho_Pernambucano.JPG/330px-Juninho_Pernambucano.JPG"
   },
   {
-    "apiId": "icon_90",
+    "apiId": "758",
     "name": "Gareth Bale",
-    "position": "RW/ST",
+    "position": "RW/LW/ST",
     "club": "Real Madrid",
     "nation": "Wales",
-    "tier": "ICON",
+    "tier": "HERO",
     "isLegend": true,
     "kitNumber": 11,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/2022_FIFA_World_Cup_United_States_1%E2%80%931_Wales_-_%2832%29_%28cropped%29.jpg/330px-2022_FIFA_World_Cup_United_States_1%E2%80%931_Wales_-_%2832%29_%28cropped%29.jpg"
+    "imageUrl": "https://media.api-sports.io/football/players/758.png"
   },
   {
     "apiId": "icon_91",

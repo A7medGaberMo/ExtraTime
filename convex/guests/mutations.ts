@@ -1,6 +1,7 @@
 import { mutation } from '../_generated/server';
 import { v } from 'convex/values';
 import { generateSessionToken } from '../lib/auth';
+import { getCurrentUser } from '../lib/identity';
 
 export const create = mutation({
   args: {
@@ -8,10 +9,15 @@ export const create = mutation({
     avatarSeed: v.string(),
   },
   handler: async (ctx, args) => {
+    const user = await getCurrentUser(ctx);
+    const finalNickname = user?.displayName || user?.username || args.nickname;
+    const finalAvatarSeed = user?.avatarSeed || args.avatarSeed;
+
     const now = Date.now();
     const sessionToken = generateSessionToken();
     const guestId = await ctx.db.insert('guestUsers', {
-      ...args,
+      nickname: finalNickname,
+      avatarSeed: finalAvatarSeed,
       sessionToken,
       createdAt: now,
       lastActiveAt: now,
@@ -28,6 +34,10 @@ export const ensure = mutation({
     avatarSeed: v.string(),
   },
   handler: async (ctx, args) => {
+    const user = await getCurrentUser(ctx);
+    const finalNickname = user?.displayName || user?.username || args.nickname;
+    const finalAvatarSeed = user?.avatarSeed || args.avatarSeed;
+
     const existingId = args.existingId
       ? ctx.db.normalizeId('guestUsers', args.existingId)
       : null;
@@ -38,18 +48,18 @@ export const ensure = mutation({
       if (existing && existing.sessionToken && existing.sessionToken === args.sessionToken) {
         await ctx.db.patch(existingId, {
           lastActiveAt: Date.now(),
-          nickname: args.nickname.trim().slice(0, 24) || existing.nickname,
+          nickname: finalNickname.trim().slice(0, 24) || existing.nickname,
+          avatarSeed: finalAvatarSeed || existing.avatarSeed,
         });
         return { guestId: existingId, sessionToken: existing.sessionToken };
       }
     }
 
-
     const now = Date.now();
     const sessionToken = generateSessionToken();
     const newId = await ctx.db.insert('guestUsers', {
-      nickname: args.nickname,
-      avatarSeed: args.avatarSeed,
+      nickname: finalNickname,
+      avatarSeed: finalAvatarSeed,
       sessionToken,
       createdAt: now,
       lastActiveAt: now,

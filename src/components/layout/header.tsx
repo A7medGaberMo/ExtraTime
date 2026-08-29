@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   House,
   Trophy,
-  PlusCircle,
   SpeakerHigh,
   SpeakerSimpleSlash,
   Translate,
@@ -16,16 +15,22 @@ import {
   CaretDown,
   User,
   SignIn,
+  SignOut,
   Cards,
+  Users,
+  GearSix,
+  ShieldCheck,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { useQuery } from 'convex/react';
+import { useUser, SignInButton, SignOutButton } from '@clerk/nextjs';
 import { api } from '../../../convex/_generated/api';
 import { useGuestSession } from '@/hooks/use-guest-session';
 import { useIsGameplay } from '@/hooks/use-is-gameplay';
 import { useI18n } from '@/lib/i18n';
 import { sfx } from '@/lib/sfx';
 import { cn } from '@/lib/utils';
+import { parseAvatarSeed, getMonogramInitial } from '@/lib/avatars';
 
 function subscribeSound(cb: () => void) {
   if (typeof window === 'undefined') return () => { };
@@ -90,6 +95,8 @@ export function Header() {
   );
 
   const { guestId } = useGuestSession(false);
+  const { isLoaded, isSignedIn, user } = useUser();
+  const convexViewer = useQuery(api.users.queries.viewer);
   const activeMatch = useQuery(
     api.rooms.queries.getUserActiveMatch,
     guestId ? { guestId } : 'skip',
@@ -119,8 +126,8 @@ export function Header() {
   const navLinks = [
     { href: '/', label: t('nav.arena'), icon: House },
     { href: '/rank', label: t('nav.rank'), icon: Trophy },
+    { href: '/leagues', label: t('leagues.title') || 'Leagues', icon: ShieldCheck },
     { href: '/packs', label: t('nav.packs'), icon: Cards },
-    { href: '/create-room', label: t('nav.create'), icon: PlusCircle },
   ];
 
   return (
@@ -206,13 +213,13 @@ export function Header() {
                 </Link>
               )}
 
-              {/* Right Fast Action Pills */}
-              <div className="flex items-center gap-1 shrink-0 ml-0.5">
-                {/* Sound Toggle */}
+              {/* Right Unified Action Pill */}
+              <div className="flex items-center gap-1.5 shrink-0 ml-auto sm:ml-1">
+                {/* Sound Micro Toggle (Clean, borderless) */}
                 <button
                   type="button"
                   onClick={handleToggleSound}
-                  className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
+                  className="btn-haptic flex h-7 w-7 sm:h-7.5 sm:w-7.5 items-center justify-center rounded-full text-steel hover:text-white transition-colors cursor-pointer"
                   title={muted ? t('common.soundMuted') : t('common.soundOn')}
                   aria-label={muted ? t('common.soundMuted') : t('common.soundOn')}
                 >
@@ -220,30 +227,66 @@ export function Header() {
                     icon={muted ? SpeakerSimpleSlash : SpeakerHigh}
                     size={14}
                     weight="bold"
-                    className={muted ? 'text-rose-400' : 'text-lime'}
+                    className={muted ? 'text-rose-400' : 'text-steel hover:text-lime'}
                   />
                 </button>
 
-                {/* Language Switcher */}
+                {/* Language Micro Switcher (Clean, borderless) */}
                 <button
                   type="button"
                   onClick={toggleLang}
-                  className="btn-haptic flex h-7.5 sm:h-8 items-center gap-1 rounded-full px-2 sm:px-2.5 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
+                  className="btn-haptic flex h-7 sm:h-7.5 items-center gap-1 rounded-full px-2 text-[11px] font-bold text-steel hover:text-white transition-colors cursor-pointer font-stats"
                   title={t('common.language')}
                 >
                   <AppIcon icon={Translate} size={13} weight="bold" />
-                  <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
+                  <span className="text-[10px]">{lang === 'en' ? 'عربي' : 'EN'}</span>
                 </button>
 
-                {/* Menu Expander / Arrow */}
-                <button
-                  type="button"
-                  onClick={() => setIsOpen(true)}
-                  className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
-                  title="Expand Navigation Island"
-                >
-                  <AppIcon icon={CaretDown} size={13} weight="bold" />
-                </button>
+                {/* Minimal Dynamic Island User / Avatar Trigger */}
+                {!isLoaded ? (
+                  <div className="flex h-7 w-7 items-center justify-center rounded-full">
+                    <div className="h-3.5 w-3.5 animate-spin rounded-full border border-lime border-t-transparent" />
+                  </div>
+                ) : (
+                  (() => {
+                    const avatarSeed = convexViewer?.avatarSeed || 'persona-tactician';
+                    const parsedUserAvatar = parseAvatarSeed(avatarSeed);
+                    const userDisplayName = convexViewer?.displayName || user?.fullName || user?.firstName || user?.username || guestName || 'Manager';
+
+                    return (
+                      <button
+                        type="button"
+                        onClick={() => setIsOpen(true)}
+                        className="btn-haptic flex h-7 sm:h-8 items-center gap-1.5 rounded-full border border-white/10 bg-white/5 hover:border-lime/40 px-1.5 sm:px-2.5 text-white hover:bg-white/10 transition-all cursor-pointer font-stats group"
+                        title={userDisplayName}
+                      >
+                        <div className={cn(
+                          'relative flex h-5.5 w-5.5 sm:h-6 sm:w-6 shrink-0 items-center justify-center rounded-full border font-black text-[10px] bg-gradient-to-br overflow-hidden shadow-sm transition-transform group-hover:scale-105',
+                          parsedUserAvatar.meta.gradient,
+                          parsedUserAvatar.meta.border,
+                          parsedUserAvatar.meta.text,
+                        )}>
+                          {parsedUserAvatar.avatarUrl ? (
+                            <Image
+                              src={parsedUserAvatar.avatarUrl}
+                              alt="Avatar"
+                              width={22}
+                              height={22}
+                              className="max-h-full max-w-full object-contain p-0.5"
+                              unoptimized
+                            />
+                          ) : (
+                            getMonogramInitial(userDisplayName, 1)
+                          )}
+                        </div>
+                        <span className="text-[11px] font-bold text-white max-w-[60px] sm:max-w-[85px] truncate hidden xs:inline">
+                          {userDisplayName.split(' ')[0]}
+                        </span>
+                        <AppIcon icon={CaretDown} size={11} weight="bold" className="text-steel group-hover:text-lime transition-colors" />
+                      </button>
+                    );
+                  })()
+                )}
               </div>
             </motion.div>
           ) : (
@@ -316,16 +359,111 @@ export function Header() {
                 </div>
               </div>
 
-              {/* Guest Manager Handle Tag */}
-              {guestName && (
-                <div className="flex items-center justify-between rounded-xl bg-white/[0.03] border border-white/[0.06] px-3 py-1.5 mb-2.5">
-                  <div className="flex items-center gap-1.5 text-steel text-xs font-semibold font-stats">
-                    <AppIcon icon={User} size={13} weight="bold" className="text-lime" />
-                    <span className="text-white truncate max-w-[160px]">{guestName}</span>
+              {/* ── User Auth & Profile Card ── */}
+              {!isLoaded ? (
+                <div className="flex items-center justify-center rounded-2xl bg-white/[0.03] border border-white/[0.06] p-4 mb-2.5">
+                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-lime border-t-transparent" />
+                </div>
+              ) : isSignedIn ? (
+                <div className="rounded-2xl bg-white/[0.04] border border-white/[0.08] p-2.5 mb-2.5">
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={convexViewer?.username ? `/profile/${convexViewer.username}` : `/settings/profile`}
+                      onClick={() => setIsOpen(false)}
+                      className="flex items-center gap-2 min-w-0 group"
+                    >
+                      {(() => {
+                        const parsedUserAvatar = parseAvatarSeed(convexViewer?.avatarSeed);
+                        return (
+                          <div className={cn('relative flex h-8 w-8 shrink-0 items-center justify-center rounded-2xl border font-black text-xs font-stats bg-gradient-to-br overflow-hidden p-0.5', parsedUserAvatar.meta.gradient, parsedUserAvatar.meta.border, parsedUserAvatar.meta.text)}>
+                            {parsedUserAvatar.avatarUrl ? (
+                              <Image
+                                src={parsedUserAvatar.avatarUrl}
+                                alt="Avatar"
+                                width={28}
+                                height={28}
+                                className="max-h-full max-w-full object-contain"
+                                unoptimized
+                              />
+                            ) : (
+                              getMonogramInitial(convexViewer?.displayName || user?.fullName || user?.firstName || user?.username || 'ET', 2)
+                            )}
+                          </div>
+                        );
+                      })()}
+                      <div className="min-w-0">
+                        <div className="truncate text-xs font-bold text-white group-hover:text-lime transition-colors font-stats">
+                          {convexViewer?.displayName || user?.fullName || user?.username || 'Tactical Manager'}
+                        </div>
+                        <div className="truncate text-[10px] text-steel font-stats">
+                          @{convexViewer?.username || user?.username || 'manager'}
+                        </div>
+                      </div>
+                    </Link>
+                    <div className="flex items-center gap-1 shrink-0">
+                      <Link
+                        href="/settings/profile"
+                        onClick={() => setIsOpen(false)}
+                        className="btn-haptic flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-steel hover:text-white transition-colors"
+                        title={t('profile.editProfile')}
+                      >
+                        <AppIcon icon={GearSix} size={14} weight="bold" />
+                      </Link>
+                      <SignOutButton>
+                        <button
+                          type="button"
+                          className="btn-haptic flex h-7 w-7 items-center justify-center rounded-lg border border-rose-500/20 bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 transition-colors cursor-pointer"
+                          title={t('auth.signOut')}
+                        >
+                          <AppIcon icon={SignOut} size={14} weight="bold" />
+                        </button>
+                      </SignOutButton>
+                    </div>
                   </div>
-                  <span className="font-stats text-[11px] font-semibold text-lime">
-                    Manager
-                  </span>
+
+                  {/* Quick Social & Leagues Links */}
+                  <div className="grid grid-cols-2 gap-1.5 mt-2 pt-2 border-t border-white/[0.06]">
+                    <Link
+                      href="/friends"
+                      onClick={() => setIsOpen(false)}
+                      className="btn-haptic flex items-center justify-center gap-1.5 py-1.5 rounded-xl border border-white/[0.06] bg-slate-900/60 text-steel hover:text-white hover:border-lime/30 text-[11px] font-semibold transition-colors"
+                    >
+                      <AppIcon icon={Users} size={13} weight="bold" className="text-lime" />
+                      <span>{t('friends.title')}</span>
+                    </Link>
+                    <Link
+                      href="/leagues"
+                      onClick={() => setIsOpen(false)}
+                      className="btn-haptic flex items-center justify-center gap-1.5 py-1.5 rounded-xl border border-white/[0.06] bg-slate-900/60 text-steel hover:text-white hover:border-lime/30 text-[11px] font-semibold transition-colors"
+                    >
+                      <AppIcon icon={ShieldCheck} size={13} weight="bold" className="text-lime" />
+                      <span>{t('leagues.title')}</span>
+                    </Link>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex items-center justify-between rounded-2xl bg-white/[0.03] border border-white/[0.06] p-2.5 mb-2.5 gap-2">
+                  <div className="flex items-center gap-2 min-w-0">
+                    <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/5 border border-white/10 text-steel">
+                      <AppIcon icon={User} size={13} weight="bold" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="truncate text-xs font-semibold text-white">
+                        {guestName || t('user.guest')}
+                      </div>
+                      <div className="text-[10px] text-steel">
+                        {lang === 'ar' ? 'وضع الزائر' : 'Guest Mode'}
+                      </div>
+                    </div>
+                  </div>
+                  <SignInButton mode="modal">
+                    <button
+                      type="button"
+                      className="btn-haptic shrink-0 rounded-xl bg-lime px-3 py-1.5 text-xs font-bold text-slate-950 hover:bg-lime/90 transition-colors shadow-glow-lime cursor-pointer font-stats"
+                    >
+                      {t('auth.signIn')}
+                    </button>
+                  </SignInButton>
                 </div>
               )}
 

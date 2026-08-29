@@ -143,44 +143,47 @@ export const getPackPools = query({
 });
 
 /**
- * Pack statistics query: returns counts per tier and overall database size.
+ * Pack statistics query: returns availability overview across card tiers.
  */
 export const getPacksOverview = query({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    sampleLimit: v.optional(v.number()),
+  },
+  handler: async (ctx, args) => {
+    const limit = Math.min(args.sampleLimit ?? 50, 100);
     const [icons, heroes, ultimates, masters, elites, golds, silvers, bronzes] = await Promise.all([
       ctx.db
         .query('players')
         .withIndex('by_tier', (q) => q.eq('tier', 'ICON'))
-        .take(500),
+        .take(limit),
       ctx.db
         .query('players')
         .withIndex('by_tier', (q) => q.eq('tier', 'HERO'))
-        .take(500),
+        .take(limit),
       ctx.db
         .query('players')
         .withIndex('by_tier', (q) => q.eq('tier', 'ULTIMATE'))
-        .take(500),
+        .take(limit),
       ctx.db
         .query('players')
         .withIndex('by_tier', (q) => q.eq('tier', 'MASTER'))
-        .take(500),
+        .take(limit),
       ctx.db
         .query('players')
         .withIndex('by_tier', (q) => q.eq('tier', 'ELITE'))
-        .take(500),
+        .take(limit),
       ctx.db
         .query('players')
         .withIndex('by_tier', (q) => q.eq('tier', 'GOLD'))
-        .take(500),
+        .take(limit),
       ctx.db
         .query('players')
         .withIndex('by_tier', (q) => q.eq('tier', 'SILVER'))
-        .take(500),
+        .take(limit),
       ctx.db
         .query('players')
         .withIndex('by_tier', (q) => q.eq('tier', 'BRONZE'))
-        .take(500),
+        .take(limit),
     ]);
 
     return {
@@ -194,6 +197,10 @@ export const getPacksOverview = query({
         SILVER: silvers.length,
         BRONZE: bronzes.length,
       },
+      hasSufficientPool:
+        icons.length > 0 &&
+        heroes.length > 0 &&
+        golds.length > 0,
       total:
         icons.length +
         heroes.length +
@@ -206,3 +213,4 @@ export const getPacksOverview = query({
     };
   },
 });
+

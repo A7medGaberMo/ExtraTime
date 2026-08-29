@@ -18,15 +18,18 @@ import {
   Users,
   ArrowLeft,
   Clock,
+  ShareNetwork,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { Panel } from '@/components/ui/panel';
 import { StatPill } from '@/components/ui/stat-pill';
 import { useI18n } from '@/lib/i18n';
+import { InviteModal } from '@/components/shared/invite-modal';
 
 interface RankParticipant {
   guestId: Id<'guestUsers'>;
+  userId?: Id<'users'>;
   name: string;
   avatarSeed: string;
   totalScore: number;
@@ -48,54 +51,23 @@ export default function RankArenaPage() {
   const { lang, t } = useI18n();
   const { guestId, sessionToken } = useGuestSession();
 
-
   const gameId = params.gameId as Id<'rankGames'>;
 
   const gameState = useQuery(
     api.rank.queries.getGameState,
-    guestId ? { gameId, guestId, locale: lang } : 'skip',
+    guestId ? { gameId, guestId, sessionToken: sessionToken || undefined, locale: lang } : 'skip',
   );
 
   const submitRoundMutation = useMutation(api.rank.mutations.submitRound);
   const advanceRoundMutation = useMutation(api.rank.mutations.advanceRound);
   const createSoloMutation = useMutation(api.rank.mutations.createSoloGame);
+  const createDuelMutation = useMutation(api.rank.mutations.createDuelPrivateRoom);
+  const sendMatchInviteMutation = useMutation(api.invites.mutations.sendMatchInvite);
 
-  const [customOrder, setCustomOrder] = useState<string[] | null>(null);
-  const [syncedRound, setSyncedRound] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isAdvancing, setIsAdvancing] = useState(false);
   const [copied, setCopied] = useState(false);
-
-  // Pre-round 3-second reveal state
-  const [introSecondsLeft, setIntroSecondsLeft] = useState<number | null>(null);
-
-  // Calculate default order from gameState
-  const defaultOrder = React.useMemo(() => {
-    if (gameState?.question?.answers) {
-      return (gameState.question.answers as RankAnswerItem[]).map((a) => a.answerKey);
-    }
-    return [];
-  }, [gameState?.question?.answers]);
-
-  // Synchronize when round changes
-  if (gameState && gameState.currentRoundIndex !== syncedRound) {
-    setSyncedRound(gameState.currentRoundIndex);
-    setCustomOrder(null);
-    setIntroSecondsLeft(3);
-  }
-
-  const currentOrder = customOrder ?? defaultOrder;
-
-  // Intro reveal countdown timer
-  useEffect(() => {
-    if (introSecondsLeft === null || introSecondsLeft <= 0) return;
-
-    const timer = setTimeout(() => {
-      setIntroSecondsLeft((prev) => (prev !== null && prev > 1 ? prev - 1 : null));
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, [introSecondsLeft]);
+  const [showInviteModal, setShowInviteModal] = useState(false);
 
   if (!guestId || gameState === undefined) {
     return (
@@ -126,7 +98,7 @@ export default function RankArenaPage() {
   const opponentParticipant = participants.find((p) => p.guestId !== guestId);
   const hasSubmitted = userParticipant?.hasSubmittedCurrentRound ?? false;
 
-  async function handleSubmitRanking() {
+  async function handleSubmitRanking(orderToSubmit: string[]) {
     if (isSubmitting || hasSubmitted || !guestId) return;
     setIsSubmitting(true);
     try {
@@ -134,13 +106,12 @@ export default function RankArenaPage() {
         gameId,
         guestId,
         sessionToken: sessionToken ?? undefined,
-        submittedOrder: currentOrder,
+        submittedOrder: orderToSubmit,
       });
     } catch (err: unknown) {
       const e = err as { message?: string };
       toast(e.message || 'Failed to submit ranking', 'error');
     } finally {
-
       setIsSubmitting(false);
     }
   }
@@ -165,12 +136,37 @@ export default function RankArenaPage() {
   async function handlePlayAgain() {
     if (!guestId || !gameState) return;
     try {
-      const result = await createSoloMutation({
-        guestId,
-        sessionToken: sessionToken ?? undefined,
-        roundCount: (gameState.roundCount || 3) as 3 | 5,
-      });
-      router.push(`/rank/${result.gameId}`);
+      if (isDuel) {
+        const result = await createDuelMutation({
+          hostId: guestId,
+          sessionToken: sessionToken ?? undefined,
+          roundCount: (gameState.roundCount || 3) as 3 | 5,
+        });
+
+        if (opponentParticipant?.userId) {
+          sendMatchInviteMutation({
+            recipientUserId: opponentParticipant.userId as Id<'users'>,
+            matchType: 'rank',
+            roomCode: result.code,
+            targetId: result.gameId,
+          }).catch(() => {});
+          toast(
+            lang === 'ar'
+              ? `تم إرسال دعوة مباراة ثأرية إلى ${opponentParticipant.name}!`
+              : `Rematch invite sent to ${opponentParticipant.name}!`,
+            'info',
+          );
+        }
+
+        router.push(`/rank/${result.gameId}`);
+      } else {
+        const result = await createSoloMutation({
+          guestId,
+          sessionToken: sessionToken ?? undefined,
+          roundCount: (gameState.roundCount || 3) as 3 | 5,
+        });
+        router.push(`/rank/${result.gameId}`);
+      }
     } catch (err: unknown) {
       const e = err as { message?: string };
       toast(e.message || 'Failed to create new game', 'error');
@@ -209,18 +205,28 @@ export default function RankArenaPage() {
           </div>
 
           {/* Room Code Card */}
-          <div className="p-4 rounded-2xl bg-slate-950 border border-lime/30 flex items-center justify-between">
+          <div className="p-4 rounded-2xl bg-slate-950 border border-lime/30 flex flex-col sm:flex-row items-center justify-between gap-3">
             <span className="text-2xl sm:text-3xl font-stats font-black text-white tracking-[0.24em] pl-2">
               {gameState.code}
             </span>
-            <Button
-              variant="primary"
-              size="sm"
-              onClick={handleCopyCode}
-              leftIcon={<AppIcon icon={copied ? Check : Copy} size={16} weight="bold" />}
-            >
-              {copied ? t('common.copied') : t('common.copy')}
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={handleCopyCode}
+                leftIcon={<AppIcon icon={copied ? Check : Copy} size={16} weight="bold" />}
+              >
+                {copied ? t('common.copied') : t('common.copy')}
+              </Button>
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={() => setShowInviteModal(true)}
+                leftIcon={<AppIcon icon={ShareNetwork} size={16} weight="bold" />}
+              >
+                {lang === 'ar' ? 'دعوة صديق' : 'Invite'}
+              </Button>
+            </div>
           </div>
 
           <div className="flex items-center justify-center gap-2 text-xs text-lime font-black uppercase animate-pulse">
@@ -237,6 +243,16 @@ export default function RankArenaPage() {
           <AppIcon icon={ArrowLeft} size={14} weight="bold" />
           <span>{lang === 'ar' ? 'إلغاء والعودة لمركز الرانك' : 'Cancel and return to Rank Hub'}</span>
         </button>
+
+        {showInviteModal && gameState.code && (
+          <InviteModal
+            isOpen={showInviteModal}
+            onClose={() => setShowInviteModal(false)}
+            title="ExtraTime 1v1 Rank Duel"
+            code={gameState.code}
+            type="duel"
+          />
+        )}
       </article>
     );
   }
@@ -311,12 +327,68 @@ export default function RankArenaPage() {
 
   // ── 4. ACTIVE ROUND GAMEPLAY ───────────────────────────────────────
   return (
+    <ActiveRoundView
+      key={gameState.currentRoundIndex}
+      gameState={gameState}
+      guestId={guestId}
+      isDuel={isDuel}
+      hasSubmitted={hasSubmitted}
+      isSubmitting={isSubmitting}
+      onSubmit={handleSubmitRanking}
+    />
+  );
+}
+
+type GameState = NonNullable<ReturnType<typeof useQuery<typeof api.rank.queries.getGameState>>>;
+
+interface ActiveRoundViewProps {
+  gameState: GameState;
+  guestId: Id<'guestUsers'>;
+  isDuel: boolean;
+  hasSubmitted: boolean;
+  isSubmitting: boolean;
+  onSubmit: (order: string[]) => void;
+}
+
+function ActiveRoundView({
+  gameState,
+  guestId,
+  isDuel,
+  hasSubmitted,
+  isSubmitting,
+  onSubmit,
+}: ActiveRoundViewProps) {
+  const { t } = useI18n();
+  const [introSecondsLeft, setIntroSecondsLeft] = useState<number | null>(3);
+
+  const defaultOrder = React.useMemo(() => {
+    if (gameState?.question?.answers) {
+      return (gameState.question.answers as RankAnswerItem[]).map((a) => a.answerKey);
+    }
+    return [];
+  }, [gameState?.question?.answers]);
+
+  const [customOrder, setCustomOrder] = useState<string[] | null>(null);
+  const currentOrder = customOrder ?? defaultOrder;
+
+  // 3-second countdown timer for active round
+  useEffect(() => {
+    if (introSecondsLeft === null || introSecondsLeft <= 0) return;
+
+    const timer = setTimeout(() => {
+      setIntroSecondsLeft((prev) => (prev !== null && prev > 1 ? prev - 1 : null));
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [introSecondsLeft]);
+
+  return (
     <article className="mx-auto flex max-w-md w-full flex-col gap-2 sm:gap-3 px-3 select-none relative items-center justify-center">
       <RankHeader
         currentRound={gameState.currentRoundIndex + 1}
         totalRounds={gameState.roundCount}
         deadline={gameState.roundDeadline}
-        onTimeExpired={handleSubmitRanking}
+        onTimeExpired={() => onSubmit(currentOrder)}
         scopeType={gameState.question?.scopeType}
         isDuel={isDuel}
         participants={gameState.participants}
@@ -362,7 +434,7 @@ export default function RankArenaPage() {
           items={gameState.question.answers || []}
           currentOrder={currentOrder}
           onOrderChange={(order) => setCustomOrder(order)}
-          onSubmit={handleSubmitRanking}
+          onSubmit={() => onSubmit(currentOrder)}
           isSubmitting={isSubmitting}
           hasSubmitted={hasSubmitted}
         />
