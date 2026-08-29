@@ -21,15 +21,15 @@ import {
   Crosshair,
   Eye,
   Binoculars,
-  CaretDown,
-  CaretUp,
   Lightning,
   Lock,
   LockKey,
   Shield,
-  Stack,
   CurrencyDollar,
   Info,
+  X,
+  DeviceMobile,
+  Stack,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
@@ -47,7 +47,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const [codeCopied, setCodeCopied] = useState(false);
 
   const [showReveal, setShowReveal] = useState(false);
-  const [showFormation, setShowFormation] = useState(false);
+  const [showMobilePitchModal, setShowMobilePitchModal] = useState(false);
   const prevRoundRef = useRef<number | null>(null);
   const pendingRedirectRef = useRef(false);
   const completedTriggeredRef = useRef(false);
@@ -55,7 +55,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   const state = useQuery(
     api.auctions.queries.getState,
-    guestId && roomId ? { roomId: roomId as Id<'rooms'>, userId: guestId, sessionToken: sessionToken || undefined } : 'skip',
+    guestId && roomId
+      ? {
+          roomId: roomId as Id<'rooms'>,
+          userId: guestId,
+          sessionToken: sessionToken || undefined,
+        }
+      : 'skip',
   );
 
   // Detect auction completion → show final round reveal before redirect
@@ -107,10 +113,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setIsActivatingPerk(true);
     setError(null);
     try {
-      await mutatePerk({ 
-        roomId: roomId as Id<'rooms'>, 
+      await mutatePerk({
+        roomId: roomId as Id<'rooms'>,
         userId: guestId,
-        sessionToken: sessionToken ?? undefined
+        sessionToken: sessionToken ?? undefined,
       });
     } catch (e: unknown) {
       setError((e as { message?: string }).message || 'Could not activate perk');
@@ -171,7 +177,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       ? (auction.rounds[auction.currentRound - 1]?.position ?? '-')
       : '-';
   const totalRounds = auction?.rounds?.length ?? 11;
-  const tierColor = mainPlayer?.tier ? getTierStyle(mainPlayer.tier).highlight : '#95E810';
+  const tierColor = mainPlayer?.tier ? getTierStyle(mainPlayer.tier).highlight : '#8ee000';
 
   // ── Sealed lockbox state ──
   const sealedHost = auction?.sealedBids?.host ?? null;
@@ -237,7 +243,6 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       setIsSubmitting(false);
     }
   }, [isActive, guestId, sessionToken, myLocked, bidAmount, submitSealedBid, roomId]);
-
 
   const handleRevealClose = useCallback(() => {
     setShowReveal(false);
@@ -309,7 +314,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   }));
 
   return (
-    <article className="mx-auto flex max-w-2xl flex-col gap-3 sm:gap-4 select-none pb-24 sm:pb-8">
+    <article className="mx-auto flex max-w-5xl flex-col gap-3 select-none pb-24 sm:pb-8">
       {/* ── 0. BID REVEAL OVERLAY MODAL ─────────────────────────────── */}
       <BidRevealAnimation
         isOpen={showReveal}
@@ -319,8 +324,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
       {/* ── 0. WAITING LOBBY OVERLAY (WHEN WAITING FOR OPPONENT) ────── */}
       {room.status === 'waiting' && !auction.guest && (
-        <Panel variant="highlight" className="p-6 text-center space-y-5 animate-scale-in">
-          <div className="flex h-14 w-14 mx-auto items-center justify-center rounded-2xl border border-lime/30 bg-lime/10 text-lime">
+        <Panel variant="highlight" className="p-6 text-center space-y-5 animate-scale-in max-w-xl mx-auto">
+          <div className="flex h-14 w-14 mx-auto items-center justify-center rounded-2xl border border-lime/30 bg-lime/10 text-lime shadow-glow-lime">
             <AppIcon icon={Crosshair} size={32} weight="duotone" />
           </div>
 
@@ -347,7 +352,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 onClick={copyCode}
                 aria-label="Copy Room Code"
                 title="Copy Room Code"
-                className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:text-white hover:border-lime/40 transition-colors cursor-pointer"
+                className="btn-haptic flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:text-white hover:border-lime/40 transition-colors cursor-pointer"
               >
                 <AppIcon icon={codeCopied ? Check : Copy} size={18} weight="bold" className={codeCopied ? 'text-lime' : ''} />
               </button>
@@ -374,7 +379,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         <div className="flex items-center justify-between gap-2">
           {/* Dual Budget Comparison */}
           <div className="flex flex-1 items-center gap-2 sm:gap-3">
-            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-xl border border-lime/40 bg-lime/10 px-2 sm:px-3 py-1.5 shadow-inner">
+            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-2xl border border-lime/40 bg-lime/10 px-2 sm:px-3 py-1.5 shadow-inner">
               <span className="text-steel text-[8px] sm:text-[9px] leading-none font-black tracking-widest uppercase truncate max-w-full">
                 {t('auction.you')}
               </span>
@@ -389,7 +394,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
               </span>
             </div>
 
-            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-xl border border-rose-500/40 bg-rose-500/10 px-2 sm:px-3 py-1.5 shadow-inner">
+            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-2xl border border-rose-500/40 bg-rose-500/10 px-2 sm:px-3 py-1.5 shadow-inner">
               <span className="text-steel text-[8px] sm:text-[9px] leading-none font-black tracking-widest uppercase truncate max-w-full">
                 {t('auction.rival')}
               </span>
@@ -409,38 +414,347 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           />
         </div>
 
-        {/* Progress Bar */}
-        <div className="mt-3 flex items-center gap-2.5">
+        {/* Progress Bar & Scheme Tag */}
+        <div className="mt-2.5 flex items-center gap-2.5">
           <div className="h-2 flex-1 overflow-hidden rounded-full border border-white/5 bg-slate-950 p-0.5">
             <div
-              className="from-lime/50 via-lime to-vivid h-full rounded-full bg-gradient-to-r shadow-[0_0_10px_rgba(149,232,16,0.6)] transition-all duration-500"
+              className="from-lime/50 via-lime to-vivid h-full rounded-full bg-gradient-to-r shadow-[0_0_10px_rgba(142,224,0,0.6)] transition-all duration-500"
               style={{ width: `${((auction.currentRound - 1) / totalRounds) * 100}%` }}
             />
           </div>
-          <span className="text-steel rounded-lg border border-white/5 bg-slate-900/80 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase font-stats">
+          <span className="text-steel rounded-xl border border-white/5 bg-slate-900/80 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase font-stats">
             {t('common.round')} {auction.currentRound}/{totalRounds} · <span className="text-lime">{auction.formation}</span>
           </span>
         </div>
       </Panel>
 
-      {/* ── 2. LIVE TACTICAL FORMATION DISPLAY ──────────────────────── */}
-      <Panel variant="default" className="transition-all">
-        <button
-          type="button"
-          onClick={() => setShowFormation(!showFormation)}
-          className="text-steel flex w-full items-center justify-between bg-gradient-to-r from-white/5 to-transparent px-4 py-3 text-xs font-black tracking-wider uppercase transition-colors hover:text-white cursor-pointer"
-        >
-          <span className="flex items-center gap-2">
-            <AppIcon icon={Stack} size={16} weight="duotone" className="text-lime" />
-            <span>
-              {t('auction.squadFormation')} · {t('auction.signedCount', { count: mySquad.filter((s) => s.player).length, total: totalRounds })}
-            </span>
-          </span>
-          <AppIcon icon={showFormation ? CaretUp : CaretDown} size={16} weight="bold" className="text-steel" />
-        </button>
+      {/* ── 2. MOBILE INTERACTIVE SQUAD FORMATION STRIP (SOLVES MOBILE DUAL DISPLAY) ── */}
+      <div className="block lg:hidden">
+        <div className="rounded-2xl border border-white/10 bg-slate-950/90 p-2 shadow-lg backdrop-blur-xl">
+          <div className="flex items-center justify-between px-1 mb-1.5">
+            <div className="flex items-center gap-1.5">
+              <AppIcon icon={Stack} size={14} weight="duotone" className="text-lime" />
+              <span className="text-[10px] font-black text-white uppercase tracking-wider font-stats">
+                {t('auction.squadFormation')} ({mySquad.filter((s) => s.player).length}/{totalRounds})
+              </span>
+            </div>
 
-        {showFormation && (
-          <div className="animate-slide-down px-2 pb-3">
+            {/* Expand Pitch Modal Trigger for Mobile */}
+            <button
+              type="button"
+              onClick={() => setShowMobilePitchModal(true)}
+              className="btn-haptic flex items-center gap-1 rounded-lg border border-lime/30 bg-lime/10 px-2 py-0.5 text-[9px] font-bold text-lime hover:bg-lime/20 transition-all font-stats cursor-pointer"
+            >
+              <AppIcon icon={DeviceMobile} size={11} weight="bold" />
+              <span>{lang === 'ar' ? 'عرض الملعب 3D' : '3D Pitch'}</span>
+            </button>
+          </div>
+
+          {/* Horizontal Scrollable Lineup Strip with real-time bidding highlight */}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-hidden">
+            {auction.rounds.map((round) => {
+              const isCurrent = round.roundNumber === auction.currentRound;
+              const signedSlot = mySquad.find((s) => s.roundNumber === round.roundNumber && s.player);
+              const player = signedSlot?.player;
+
+              return (
+                <div
+                  key={`slot-${round.roundNumber}-${round.position}`}
+                  className={`btn-haptic flex shrink-0 items-center gap-1 rounded-xl px-2 py-1 border transition-all text-xs font-stats ${
+                    isCurrent
+                      ? 'border-lime bg-lime/20 text-lime ring-1 ring-lime shadow-glow-lime animate-pulse'
+                      : player
+                        ? 'border-white/15 bg-slate-900/90 text-white'
+                        : 'border-white/5 bg-slate-950/60 text-steel/50'
+                  }`}
+                >
+                  <span className={`font-black text-[9px] uppercase ${isCurrent ? 'text-lime' : 'text-steel'}`}>
+                    {round.position}
+                  </span>
+                  {player ? (
+                    <span className="text-[10px] font-bold text-white max-w-[55px] truncate">
+                      {player.name.split(' ').pop()}
+                    </span>
+                  ) : isCurrent ? (
+                    <span className="text-[9px] font-black text-lime uppercase">BIDDING</span>
+                  ) : (
+                    <span className="text-[8px] text-steel/40">—</span>
+                  )}
+                  {signedSlot?.cost !== undefined && signedSlot.cost > 0 && (
+                    <span className="text-[8px] text-lime font-bold">${signedSlot.cost}M</span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* ── 3. MAIN BATTLE STATION (2-COLUMN ON DESKTOP, STACKED ON MOBILE) ── */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4 items-start">
+        {/* ── DESKTOP LEFT COLUMN: FULL TACTICAL PITCH ── */}
+        <div className="hidden lg:block lg:col-span-5 space-y-3">
+          <TacticalPitch
+            formation={auction.formation}
+            matchSize={(auction.matchSize as 5 | 11) || 11}
+            squad={formationSquad}
+            rounds={auction.rounds}
+            currentRound={auction.currentRound}
+            totalRounds={totalRounds}
+            compact={true}
+          />
+        </div>
+
+        {/* ── RIGHT COLUMN: TARGET STAGE & SEALED VAULT ── */}
+        <div className="lg:col-span-7 flex flex-col gap-3">
+          {/* PLAYER CARD STAGE */}
+          <Panel variant="elevated" className="p-4 sm:p-5 text-center relative overflow-hidden">
+            {/* Stage Lighting */}
+            <div
+              className="pointer-events-none absolute top-1/2 left-1/2 h-[200px] w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-[90px] transition-all duration-700"
+              style={{ backgroundColor: tierColor }}
+            />
+
+            {/* Target Strip */}
+            <div className="relative z-10 mb-2 sm:mb-3 flex items-center justify-between gap-2">
+              <div
+                className="inline-flex items-center gap-1.5 rounded-xl border px-2.5 py-0.5 text-[11px] font-black tracking-wider uppercase shadow-lg backdrop-blur-md"
+                style={{
+                  color: tierColor,
+                  backgroundColor: `${tierColor}15`,
+                  borderColor: `${tierColor}50`,
+                }}
+              >
+                <AppIcon icon={Shield} size={14} weight="duotone" style={{ color: tierColor }} />
+                <span>{currentPosition} · {t('auction.targetPlayer', { tier: mainPlayer?.tier || '' })}</span>
+              </div>
+
+              <StatPill
+                variant={opponentLocked ? 'lime' : 'muted'}
+                size="sm"
+                label={opponentLocked ? t('auction.rivalLocked') : t('auction.rivalThinking')}
+                className={opponentLocked ? 'animate-pulse' : ''}
+              />
+            </div>
+
+            {/* Player Card Showcase */}
+            <div className="relative z-10 flex justify-center py-0.5">
+              {playerData ? (
+                <div
+                  className="animate-scale-in origin-center drop-shadow-[0_15px_30px_rgba(0,0,0,0.85)]"
+                  key={`${auction.currentRound}-${playerData.id}`}
+                >
+                  <div className="block sm:hidden">
+                    <PlayerCard player={playerData} size="sm" />
+                  </div>
+                  <div className="hidden sm:block">
+                    <PlayerCard player={playerData} size="md" />
+                  </div>
+                </div>
+              ) : (
+                <div className="flex h-[200px] w-36 animate-pulse flex-col items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-900/80 sm:h-[280px] sm:w-52">
+                  <AppIcon icon={CircleNotch} size={24} weight="bold" className="text-lime animate-spin" />
+                  <span className="text-steel text-[10px] font-black tracking-widest uppercase">
+                    {t('auction.hydrating')}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {/* Perk Intel Banner */}
+            {me?.perkUsed && me?.perkUsedRound === auction.currentRound && (
+              <div className="relative z-10 mt-3 flex items-center gap-2.5 rounded-2xl border border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-amber-500/10 to-transparent p-2.5 shadow-xl backdrop-blur-md text-start">
+                <div className="rounded-xl border border-amber-400/30 bg-amber-400/10 p-1.5 text-amber-300">
+                  <AppIcon icon={Lightning} size={16} weight="fill" />
+                </div>
+                <div className="min-w-0 flex-1 text-xs">
+                  {me.perk === 'SPY' && revealedSubPlayer && (
+                    <p className="font-medium text-white">
+                      {t('auction.spyIntel', {
+                        name: revealedSubPlayer.name,
+                        tier: revealedSubPlayer.tier,
+                        pos: revealedSubPlayer.position,
+                      })}
+                    </p>
+                  )}
+                  {me.perk === 'SCOUT' && revealedNextMainPlayer && (
+                    <p className="font-medium text-white">
+                      {t('auction.scoutIntel', {
+                        name: revealedNextMainPlayer.name,
+                        pos: nextRoundInfo?.position || '',
+                      })}
+                    </p>
+                  )}
+                </div>
+              </div>
+            )}
+          </Panel>
+
+          {/* SEALED BID VAULT */}
+          {isActive && (
+            <Panel
+              variant={myLocked ? 'highlight' : 'elevated'}
+              className="p-4 sm:p-5 space-y-3.5"
+            >
+              {/* Status Header */}
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2">
+                  <div
+                    className={`rounded-xl border p-1.5 ${
+                      myLocked ? 'border-lime/40 bg-lime/10 text-lime' : 'border-white/10 bg-slate-900 text-steel'
+                    }`}
+                  >
+                    <AppIcon icon={myLocked ? LockKey : Lock} size={16} weight={myLocked ? 'fill' : 'bold'} />
+                  </div>
+                  <span className={`text-xs font-black uppercase tracking-wider ${bothLocked ? 'text-amber-300' : myLocked ? 'text-lime' : 'text-white'}`}>
+                    {bothLocked
+                      ? t('auction.bothSealed')
+                      : myLocked
+                        ? displayedLockedAmount != null
+                          ? t('auction.mySealedAmount', { amount: displayedLockedAmount })
+                          : t('auction.mySealed')
+                        : t('auction.vaultTitle')}
+                  </span>
+                </div>
+
+                {/* Perk Trigger Button with Tooltip */}
+                {me?.perk && !me.perkUsed && (
+                  <Button
+                    variant="gold"
+                    size="sm"
+                    onClick={handleActivatePerk}
+                    disabled={isActivatingPerk || myLocked}
+                    loading={isActivatingPerk}
+                    title={
+                      me.perk === 'SCOUT'
+                        ? (lang === 'ar' ? 'بيرك السكاوت: اكشف نجم الجولة القادمة' : 'Scout Perk: Reveal next round star target')
+                        : (lang === 'ar' ? 'بيرك الجاسوس: اكشف البديل السري لهذه الجولة' : 'Spy Perk: Reveal current round secret backup sub')
+                    }
+                    leftIcon={<AppIcon icon={me.perk === 'SCOUT' ? Binoculars : Eye} size={15} weight="bold" />}
+                  >
+                    {t('auction.usePerk', { perk: me.perk })}
+                  </Button>
+                )}
+
+                {me?.perk && me.perkUsed && (
+                  <StatPill
+                    variant="muted"
+                    size="sm"
+                    label={t('auction.perkActivated', { perk: me.perk })}
+                  />
+                )}
+              </div>
+
+              {/* Locked or Interactive Bidding Stage */}
+              {myLocked ? (
+                <div className="animate-fade-in space-y-2 py-3 text-center">
+                  <StatPill
+                    variant="lime"
+                    size="md"
+                    icon={<AppIcon icon={Check} size={16} weight="bold" />}
+                    label={
+                      lockedAmount != null
+                        ? t('auction.envelopeLockedBadge', { amount: lockedAmount })
+                        : t('auction.mySealed')
+                    }
+                  />
+                  <p className="text-steel text-xs font-medium max-w-md mx-auto">
+                    {opponentLocked
+                      ? t('auction.bothEnvelopesIn')
+                      : t('auction.envelopeWaitingOther')}
+                  </p>
+                </div>
+              ) : (
+                <div className="space-y-3.5">
+                  {/* Quick Chip Selector */}
+                  <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
+                    {quickChips.map((chip) => (
+                      <button
+                        key={chip.value}
+                        type="button"
+                        onClick={() => setBidAmount(chip.value)}
+                        className={`rounded-xl border py-2 px-1 text-[11px] sm:text-xs font-black uppercase tracking-wider transition-all active:scale-95 cursor-pointer font-stats ${
+                          bidAmount === chip.value
+                            ? 'border-lime bg-lime text-slate-950 shadow-lg shadow-lime/20'
+                            : 'border-white/10 bg-slate-900/90 text-white hover:bg-slate-800'
+                        }`}
+                      >
+                        {chip.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Slider Track */}
+                  <div className="space-y-1.5 pt-0.5">
+                    <BidSlider value={bidAmount} min={0} max={myBudget} onChange={setBidAmount} />
+                    <div className="flex items-center justify-between px-1">
+                      <span className="text-steel flex items-center gap-1.5 text-xs font-black tracking-wider uppercase">
+                        <AppIcon icon={CurrencyDollar} size={15} weight="bold" className="text-lime" />
+                        <span>{t('auction.yourBidAmount')}</span>
+                      </span>
+                      <span className="font-stats text-lime text-2xl font-black">${bidAmount}M</span>
+                    </div>
+                  </div>
+
+                  {/* Informative Rule Explainer */}
+                  <div className="rounded-xl border border-white/5 bg-slate-950/60 p-2 flex items-center gap-2 text-[10px] text-steel">
+                    <AppIcon icon={Info} size={14} weight="duotone" className="text-lime shrink-0" />
+                    <span>
+                      {lang === 'ar'
+                        ? 'العرض الأعلى يفوز بالنجم ويدفع عرضه، والطرف التاني بياخد البديل ويدفع عرضه المحجوز.'
+                        : 'Higher offer signs the star for their bid. Lower bidder receives the hidden backup for their offer.'}
+                    </span>
+                  </div>
+
+                  {error && (
+                    <p className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-3 py-2 text-xs font-bold text-rose-400">
+                      {error}
+                    </p>
+                  )}
+
+                  {/* Single Primary Action Button: Lock Offer */}
+                  <div className="pt-0.5">
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      fullWidth
+                      onClick={handleLockBid}
+                      disabled={isSubmitting || bidAmount < 0 || bidAmount > myBudget}
+                      loading={isSubmitting}
+                      leftIcon={<AppIcon icon={LockKey} size={18} weight="fill" />}
+                    >
+                      {bidAmount === 0
+                        ? t('auction.lockZeroBid')
+                        : t('auction.lockBidBtn', { amount: bidAmount })}
+                    </Button>
+                  </div>
+                </div>
+              )}
+            </Panel>
+          )}
+        </div>
+      </div>
+
+      {/* ── MOBILE FULL PITCH POPUP MODAL (When requested on mobile) ── */}
+      {showMobilePitchModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 p-3 backdrop-blur-xl animate-fade-in lg:hidden">
+          <div className="relative w-full max-w-lg rounded-3xl border border-white/15 bg-slate-950 p-4 shadow-[0_24px_70px_rgba(0,0,0,0.9)] max-h-[90vh] overflow-y-auto">
+            <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
+              <div className="flex items-center gap-2">
+                <AppIcon icon={Stack} size={18} weight="bold" className="text-lime" />
+                <h3 className="text-sm font-extrabold text-white uppercase font-stats">
+                  {t('auction.squadFormation')} · {auction.formation}
+                </h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowMobilePitchModal(false)}
+                className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white cursor-pointer"
+              >
+                <AppIcon icon={X} size={16} weight="bold" />
+              </button>
+            </div>
+
             <TacticalPitch
               formation={auction.formation}
               matchSize={(auction.matchSize as 5 | 11) || 11}
@@ -448,235 +762,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
               rounds={auction.rounds}
               currentRound={auction.currentRound}
               totalRounds={totalRounds}
+              compact={false}
             />
           </div>
-        )}
-      </Panel>
-
-      {/* ── 3. HIGH-END PLAYER CARD STAGE ───────────────────────────── */}
-      <Panel variant="elevated" className="p-4 sm:p-6 text-center">
-        {/* Stage Lighting */}
-        <div
-          className="pointer-events-none absolute top-1/2 left-1/2 h-[220px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-[100px] transition-all duration-700"
-          style={{ backgroundColor: tierColor }}
-        />
-
-        {/* Target Strip */}
-        <div className="relative z-10 mb-2 sm:mb-4 flex items-center justify-between gap-2">
-          <div
-            className="inline-flex items-center gap-1.5 sm:gap-2 rounded-xl border px-2.5 py-0.5 sm:px-3 sm:py-1 text-[11px] sm:text-xs font-black tracking-wider uppercase shadow-lg backdrop-blur-md"
-            style={{
-              color: tierColor,
-              backgroundColor: `${tierColor}15`,
-              borderColor: `${tierColor}50`,
-            }}
-          >
-            <AppIcon icon={Shield} size={14} weight="duotone" style={{ color: tierColor }} />
-            <span>{currentPosition} · {t('auction.targetPlayer', { tier: mainPlayer?.tier || '' })}</span>
-          </div>
-
-          <StatPill
-            variant={opponentLocked ? 'lime' : 'muted'}
-            size="sm"
-            label={opponentLocked ? t('auction.rivalLocked') : t('auction.rivalThinking')}
-            className={opponentLocked ? 'animate-pulse' : ''}
-          />
         </div>
-
-        {/* Player Card Showcase */}
-        <div className="relative z-10 flex justify-center py-0.5 sm:py-1">
-          {playerData ? (
-            <div
-              className="animate-scale-in origin-center drop-shadow-[0_15px_30px_rgba(0,0,0,0.85)]"
-              key={`${auction.currentRound}-${playerData.id}`}
-            >
-              <div className="block sm:hidden">
-                <PlayerCard player={playerData} size="sm" />
-              </div>
-              <div className="hidden sm:block">
-                <PlayerCard player={playerData} size="md" />
-              </div>
-            </div>
-          ) : (
-            <div className="flex h-[200px] w-36 animate-pulse flex-col items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-900/80 sm:h-[280px] sm:w-52">
-              <AppIcon icon={CircleNotch} size={24} weight="bold" className="text-lime animate-spin" />
-              <span className="text-steel text-[10px] font-black tracking-widest uppercase">
-                {t('auction.hydrating')}
-              </span>
-            </div>
-          )}
-        </div>
-
-        {/* Perk Intel Banner */}
-        {me?.perkUsed && me?.perkUsedRound === auction.currentRound && (
-          <div className="relative z-10 mt-4 flex items-center gap-3 rounded-2xl border border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-amber-500/10 to-transparent p-3 shadow-xl backdrop-blur-md text-start">
-            <div className="rounded-xl border border-amber-400/30 bg-amber-400/10 p-2 text-amber-300">
-              <AppIcon icon={Lightning} size={18} weight="fill" />
-            </div>
-            <div className="min-w-0 flex-1 text-xs">
-              {me.perk === 'SPY' && revealedSubPlayer && (
-                <p className="font-medium text-white">
-                  {t('auction.spyIntel', {
-                    name: revealedSubPlayer.name,
-                    tier: revealedSubPlayer.tier,
-                    pos: revealedSubPlayer.position,
-                  })}
-                </p>
-              )}
-              {me.perk === 'SCOUT' && revealedNextMainPlayer && (
-                <p className="font-medium text-white">
-                  {t('auction.scoutIntel', {
-                    name: revealedNextMainPlayer.name,
-                    pos: nextRoundInfo?.position || '',
-                  })}
-                </p>
-              )}
-            </div>
-          </div>
-        )}
-      </Panel>
-
-      {/* ── 4. LUXURY SEALED BID VAULT ───────────────────────────────── */}
-      {isActive && (
-        <Panel
-          variant={myLocked ? 'highlight' : 'elevated'}
-          className="p-4 sm:p-6 space-y-4"
-        >
-          {/* Status Header */}
-          <div className="flex items-center justify-between gap-2">
-            <div className="flex items-center gap-2">
-              <div
-                className={`rounded-xl border p-2 ${
-                  myLocked ? 'border-lime/40 bg-lime/10 text-lime' : 'border-white/10 bg-slate-900 text-steel'
-                }`}
-              >
-                <AppIcon icon={myLocked ? LockKey : Lock} size={18} weight={myLocked ? 'fill' : 'bold'} />
-              </div>
-              <span className={`text-xs font-black uppercase tracking-wider ${bothLocked ? 'text-amber-300' : myLocked ? 'text-lime' : 'text-white'}`}>
-                {bothLocked
-                  ? t('auction.bothSealed')
-                  : myLocked
-                    ? displayedLockedAmount != null
-                      ? t('auction.mySealedAmount', { amount: displayedLockedAmount })
-                      : t('auction.mySealed')
-                    : t('auction.vaultTitle')}
-              </span>
-            </div>
-
-            {/* Perk Trigger Button with Tooltip */}
-            {me?.perk && !me.perkUsed && (
-              <Button
-                variant="gold"
-                size="sm"
-                onClick={handleActivatePerk}
-                disabled={isActivatingPerk || myLocked}
-                loading={isActivatingPerk}
-                title={
-                  me.perk === 'SCOUT'
-                    ? (lang === 'ar' ? 'بيرك السكاوت: اكشف نجم الجولة القادمة' : 'Scout Perk: Reveal next round star target')
-                    : (lang === 'ar' ? 'بيرك الجاسوس: اكشف البديل السري لهذه الجولة' : 'Spy Perk: Reveal current round secret backup sub')
-                }
-                leftIcon={<AppIcon icon={me.perk === 'SCOUT' ? Binoculars : Eye} size={16} weight="bold" />}
-              >
-                {t('auction.usePerk', { perk: me.perk })}
-              </Button>
-            )}
-
-            {me?.perk && me.perkUsed && (
-              <StatPill
-                variant="muted"
-                size="sm"
-                label={t('auction.perkActivated', { perk: me.perk })}
-              />
-            )}
-          </div>
-
-          {/* Locked or Interactive Bidding Stage */}
-          {myLocked ? (
-            <div className="animate-fade-in space-y-2 py-4 text-center">
-              <StatPill
-                variant="lime"
-                size="md"
-                icon={<AppIcon icon={Check} size={16} weight="bold" />}
-                label={
-                  lockedAmount != null
-                    ? t('auction.envelopeLockedBadge', { amount: lockedAmount })
-                    : t('auction.mySealed')
-                }
-              />
-              <p className="text-steel text-xs font-medium max-w-md mx-auto">
-                {opponentLocked
-                  ? t('auction.bothEnvelopesIn')
-                  : t('auction.envelopeWaitingOther')}
-              </p>
-            </div>
-          ) : (
-            <div className="space-y-4">
-              {/* Quick Chip Selector */}
-              <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
-                {quickChips.map((chip) => (
-                  <button
-                    key={chip.value}
-                    type="button"
-                    onClick={() => setBidAmount(chip.value)}
-                    className={`rounded-xl border py-2 px-1 text-[11px] sm:text-xs font-black uppercase tracking-wider transition-all active:scale-95 cursor-pointer font-stats ${
-                      bidAmount === chip.value
-                        ? 'border-lime bg-lime text-slate-950 shadow-lg shadow-lime/20'
-                        : 'border-white/10 bg-slate-900/90 text-white hover:bg-slate-800'
-                    }`}
-                  >
-                    {chip.label}
-                  </button>
-                ))}
-              </div>
-
-              {/* Slider Track */}
-              <div className="space-y-2 pt-1">
-                <BidSlider value={bidAmount} min={0} max={myBudget} onChange={setBidAmount} />
-                <div className="flex items-center justify-between px-1">
-                  <span className="text-steel flex items-center gap-1.5 text-xs font-black tracking-wider uppercase">
-                    <AppIcon icon={CurrencyDollar} size={16} weight="bold" className="text-lime" />
-                    <span>{t('auction.yourBidAmount')}</span>
-                  </span>
-                  <span className="font-stats text-lime text-2xl font-black">${bidAmount}M</span>
-                </div>
-              </div>
-
-              {/* Informative Rule Explainer */}
-              <div className="rounded-xl border border-white/5 bg-slate-950/60 p-2.5 flex items-center gap-2 text-[10px] text-steel">
-                <AppIcon icon={Info} size={14} weight="duotone" className="text-lime shrink-0" />
-                <span>
-                  {lang === 'ar'
-                    ? 'العرض الأعلى يفوز بالنجم ويدفع عرضه، والطرف التاني بياخد البديل ويدفع عرضه المحجوز.'
-                    : 'Higher offer signs the star for their bid. Lower bidder receives the hidden backup for their offer.'}
-                </span>
-              </div>
-
-              {error && (
-                <p className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-4 py-2 text-xs font-bold text-rose-400">
-                  {error}
-                </p>
-              )}
-
-              {/* Single Primary Action Button: Lock Offer */}
-              <div className="pt-1">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  fullWidth
-                  onClick={handleLockBid}
-                  disabled={isSubmitting || bidAmount < 0 || bidAmount > myBudget}
-                  loading={isSubmitting}
-                  leftIcon={<AppIcon icon={LockKey} size={18} weight="fill" />}
-                >
-                  {bidAmount === 0
-                    ? t('auction.lockZeroBid')
-                    : t('auction.lockBidBtn', { amount: bidAmount })}
-                </Button>
-              </div>
-            </div>
-          )}
-        </Panel>
       )}
     </article>
   );

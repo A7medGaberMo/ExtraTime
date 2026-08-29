@@ -19,10 +19,9 @@ export function MobileNav() {
     return null;
   }
 
-  // 4 Core Pillars Matching Desktop Header
+  // 3 Core Pillars Matching Header Navigation
   const navItems = [
     { label: t('nav.arena') || 'Arena', href: '/', icon: House },
-    { label: t('nav.rank') || 'Rank', href: '/rank', icon: Trophy },
     { label: t('leagues.title') || 'Leagues', href: '/leagues', icon: ShieldCheck },
     { label: t('nav.packs') || 'Packs', href: '/packs', icon: Cards },
   ];

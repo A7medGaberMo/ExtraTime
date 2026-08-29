@@ -8,9 +8,12 @@ import {
   CheckCircle,
   ShieldCheck,
   Check,
+  Trophy,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
+import { Panel } from '@/components/ui/panel';
+import { StatPill } from '@/components/ui/stat-pill';
 import { useToast } from '@/components/shared/toast';
 import { useI18n } from '@/lib/i18n';
 
@@ -80,106 +83,96 @@ export function RankDuelResult({
       return lang === 'ar' ? 'النتيجة النهائية' : 'FINAL RESULT';
     }
     if (isWinner) {
-      return lang === 'ar' ? '🏆 انتصار تكتيكي!' : '🏆 VICTORY';
+      return lang === 'ar' ? 'انتصار تكتيكي' : 'TACTICAL VICTORY';
     }
     if (isDraw) {
-      return lang === 'ar' ? '🤝 تعادل قوي!' : '🤝 DRAW';
+      return lang === 'ar' ? 'تعادل تكتيكي' : 'HONORABLE DRAW';
     }
-    return lang === 'ar' ? 'هزيمة' : 'DEFEAT';
+    return lang === 'ar' ? 'هزيمة تكتيكية' : 'TACTICAL DEFEAT';
   };
 
   return (
     <div className="w-full max-w-lg mx-auto space-y-4 select-none animate-fade-in py-2">
       {/* Top Status Header */}
-      <div className="text-center space-y-1.5">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-lime/30 text-lime text-xs font-black uppercase tracking-wider">
-          <AppIcon icon={ShieldCheck} size={14} weight="duotone" />
-          <span>{lang === 'ar' ? 'صافرة النهاية' : 'MATCH COMPLETE'}</span>
-        </div>
+      <div className="text-center space-y-2">
+        <StatPill
+          variant={isWinner ? 'lime' : isDraw ? 'amber' : 'muted'}
+          size="sm"
+          icon={<AppIcon icon={isWinner ? Trophy : ShieldCheck} size={14} weight="duotone" />}
+          label={lang === 'ar' ? 'صافرة النهاية' : 'MATCH COMPLETE'}
+        />
 
-        <h1 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight font-display">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight font-display">
           {getHeaderTitle()}
         </h1>
       </div>
 
       {/* Score Cards (Duel vs Solo) */}
       {isDuel && opponent ? (
-        <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
+        <div className="grid grid-cols-2 gap-3">
           {/* User Card */}
-          <div
-            className={`
-              p-4 rounded-2xl border flex flex-col items-center justify-between text-center relative
-              ${
-                isWinner
-                  ? 'bg-slate-900 border-lime shadow-lg shadow-lime/10'
-                  : 'bg-slate-900/80 border-slate-800'
-              }
-            `}
+          <Panel
+            variant={isWinner ? 'highlight' : 'default'}
+            className="p-4 flex flex-col items-center justify-between text-center relative"
           >
             {isWinner && (
-              <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-lime/20 text-lime text-[9px] font-black border border-lime/40">
+              <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-lime/20 text-lime text-[9px] font-black border border-lime/40 uppercase font-stats">
                 WINNER
               </div>
             )}
-            <span className="text-[11px] font-bold text-steel uppercase tracking-wider">
+            <span className="text-[10px] font-extrabold text-steel uppercase tracking-wider font-stats">
               {lang === 'ar' ? 'أنت' : 'YOU'}
             </span>
-            <span className="text-sm font-black text-white truncate max-w-[120px]">{user.name}</span>
+            <span className="text-sm font-extrabold text-white truncate max-w-[120px] font-stats">{user.name}</span>
 
             <div className="my-2">
-              <span className="text-3xl font-black text-white font-stats">
+              <span className="text-3xl sm:text-4xl font-extrabold text-white font-stats">
                 {user.totalScore > 0 ? `+${user.totalScore}` : user.totalScore}
               </span>
-              <span className="text-[10px] text-lime font-bold block">pts</span>
+              <span className="text-[10px] text-lime font-bold block uppercase font-stats">pts</span>
             </div>
-          </div>
+          </Panel>
 
           {/* Opponent Card */}
-          <div
-            className={`
-              p-4 rounded-2xl border flex flex-col items-center justify-between text-center relative
-              ${
-                isDefeat
-                  ? 'bg-slate-900 border-lime shadow-lg shadow-lime/10'
-                  : 'bg-slate-900/80 border-slate-800'
-              }
-            `}
+          <Panel
+            variant={isDefeat ? 'highlight' : 'default'}
+            className="p-4 flex flex-col items-center justify-between text-center relative"
           >
             {isDefeat && (
-              <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-lime/20 text-lime text-[9px] font-black border border-lime/40">
+              <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-lime/20 text-lime text-[9px] font-black border border-lime/40 uppercase font-stats">
                 WINNER
               </div>
             )}
-            <span className="text-[11px] font-bold text-steel uppercase tracking-wider">
-              {lang === 'ar' ? 'الخصم' : 'RIVAL'}
+            <span className="text-[10px] font-extrabold text-steel uppercase tracking-wider font-stats">
+              {lang === 'ar' ? 'المنافس' : 'RIVAL'}
             </span>
-            <span className="text-sm font-black text-white truncate max-w-[120px]">{opponent.name}</span>
+            <span className="text-sm font-extrabold text-white truncate max-w-[120px] font-stats">{opponent.name}</span>
 
             <div className="my-2">
-              <span className="text-3xl font-black text-slate-300 font-stats">
+              <span className="text-3xl sm:text-4xl font-extrabold text-slate-300 font-stats">
                 {opponent.totalScore > 0 ? `+${opponent.totalScore}` : opponent.totalScore}
               </span>
-              <span className="text-[10px] text-steel font-bold block">pts</span>
+              <span className="text-[10px] text-steel font-bold block uppercase font-stats">pts</span>
             </div>
-          </div>
+          </Panel>
         </div>
       ) : (
         /* Solo Score Display */
-        <div className="p-6 rounded-2xl bg-slate-900/90 border border-white/10 text-center space-y-1">
-          <span className="text-[11px] font-bold text-steel uppercase tracking-wider">
+        <Panel variant="highlight" className="p-6 text-center space-y-1">
+          <span className="text-[11px] font-extrabold text-steel uppercase tracking-wider font-stats">
             {lang === 'ar' ? 'إجمالي النقاط' : 'TOTAL SCORE'}
           </span>
-          <div className="text-4xl sm:text-5xl font-black text-white font-stats">
+          <div className="text-4xl sm:text-5xl font-extrabold text-white font-stats">
             {user.totalScore > 0 ? `+${user.totalScore}` : user.totalScore}
-            <span className="text-base text-steel font-semibold font-sans"> / {maxPossibleScore} pts</span>
+            <span className="text-base text-steel font-semibold font-stats"> / {maxPossibleScore} pts</span>
           </div>
-        </div>
+        </Panel>
       )}
 
       {/* Round-by-Round Breakdown */}
-      <div className="p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-2">
-        <span className="text-[11px] font-black text-steel uppercase tracking-wider block">
-          {lang === 'ar' ? 'تفاصيل الجولات' : 'ROUNDS'}
+      <Panel variant="subtle" className="p-4 space-y-2">
+        <span className="text-[10px] font-black text-steel uppercase tracking-wider block font-stats">
+          {lang === 'ar' ? 'تفاصيل الجولات' : 'ROUNDS BREAKDOWN'}
         </span>
 
         <div className="space-y-1.5">
@@ -191,26 +184,26 @@ export function RankDuelResult({
             return (
               <div
                 key={index}
-                className="flex items-center justify-between p-2 rounded-xl bg-slate-950/60 border border-slate-800/80 text-xs font-semibold"
+                className="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/80 border border-white/[0.06] text-xs font-semibold"
               >
                 <div className="flex items-center gap-2">
                   <span className="text-steel font-stats font-black">R{roundNum}</span>
                   {isPerfect && (
-                    <span className="px-1.5 py-0.5 rounded bg-emerald-950/80 text-emerald-400 text-[10px] font-black border border-emerald-500/40 flex items-center gap-0.5">
+                    <span className="px-1.5 py-0.5 rounded-md bg-emerald-950/80 text-emerald-400 text-[10px] font-black border border-emerald-500/40 flex items-center gap-0.5 font-stats">
                       <AppIcon icon={CheckCircle} size={12} weight="fill" /> 10/10
                     </span>
                   )}
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <span className="font-black text-lime font-stats">
+                <div className="flex items-center gap-3 font-stats">
+                  <span className="font-bold text-lime">
                     {score > 0 ? `+${score}` : score} pts
                   </span>
 
                   {isDuel && oppScore !== undefined && (
                     <>
-                      <span className="text-steel font-bold">vs</span>
-                      <span className="font-bold text-steel font-stats">
+                      <span className="text-steel font-medium">vs</span>
+                      <span className="font-bold text-steel">
                         {oppScore > 0 ? `+${oppScore}` : oppScore} pts
                       </span>
                     </>
@@ -220,7 +213,7 @@ export function RankDuelResult({
             );
           })}
         </div>
-      </div>
+      </Panel>
 
       {/* Action Buttons */}
       <div className="space-y-2 pt-1">

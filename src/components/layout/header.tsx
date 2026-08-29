@@ -23,7 +23,7 @@ import {
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { useQuery } from 'convex/react';
-import { useUser, SignInButton, SignOutButton } from '@clerk/nextjs';
+import { useUser, useClerk, SignOutButton, SignInButton } from '@clerk/nextjs';
 import { api } from '../../../convex/_generated/api';
 import { useGuestSession } from '@/hooks/use-guest-session';
 import { useIsGameplay } from '@/hooks/use-is-gameplay';
@@ -96,6 +96,7 @@ export function Header() {
 
   const { guestId } = useGuestSession(false);
   const { isLoaded, isSignedIn, user } = useUser();
+  const { openSignIn } = useClerk();
   const convexViewer = useQuery(api.users.queries.viewer);
   const activeMatch = useQuery(
     api.rooms.queries.getUserActiveMatch,
@@ -125,7 +126,6 @@ export function Header() {
 
   const navLinks = [
     { href: '/', label: t('nav.arena'), icon: House },
-    { href: '/rank', label: t('nav.rank'), icon: Trophy },
     { href: '/leagues', label: t('leagues.title') || 'Leagues', icon: ShieldCheck },
     { href: '/packs', label: t('nav.packs'), icon: Cards },
   ];
@@ -448,6 +448,7 @@ export function Header() {
                   <SignInButton mode="modal">
                     <button
                       type="button"
+                      onClick={() => setIsOpen(false)}
                       className="btn-haptic shrink-0 rounded-xl bg-lime px-3 py-1.5 text-xs font-bold text-slate-950 hover:bg-lime/90 transition-colors shadow-glow-lime cursor-pointer font-stats"
                     >
                       {t('auth.signIn')}
@@ -489,9 +490,14 @@ export function Header() {
                 </Link>
               )}
 
-              {/* Quick Navigation 4-Box Grid */}
+              {/* Quick Navigation Grid */}
               <div className="grid grid-cols-4 gap-1 sm:gap-1.5">
-                {navLinks.map((item) => {
+                {[
+                  { href: '/', label: t('nav.arena'), icon: House },
+                  { href: '/rank', label: t('nav.rank'), icon: Trophy },
+                  { href: '/leagues', label: t('leagues.title') || 'Leagues', icon: ShieldCheck },
+                  { href: '/packs', label: t('nav.packs'), icon: Cards },
+                ].map((item) => {
                   const IconComp = item.icon;
                   return (
                     <Link

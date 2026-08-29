@@ -182,7 +182,7 @@ function WinnerBanner({
     <div
       className={`relative overflow-hidden rounded-2xl border p-4 text-center shadow-2xl backdrop-blur-xl ${
         viewerWon
-          ? 'border-lime/40 from-lime/10 via-slate-950 to-slate-950 bg-gradient-to-b shadow-[0_0_50px_rgba(149,232,16,0.15)]'
+          ? 'border-lime/40 from-lime/10 via-slate-950 to-slate-950 bg-gradient-to-b shadow-[0_0_50px_rgba(142,224,0,0.18)]'
           : draw
             ? 'via-slate-950 to-slate-950 border-amber-400/30 bg-gradient-to-b from-amber-400/10'
             : 'via-slate-950 to-slate-950 border-rose-400/30 bg-gradient-to-b from-rose-500/10 shadow-[0_0_50px_rgba(244,63,94,0.12)]'
