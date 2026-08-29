@@ -242,50 +242,44 @@ export function Header() {
                   <span className="text-[10px]">{lang === 'en' ? 'عربي' : 'EN'}</span>
                 </button>
 
-                {/* Minimal Dynamic Island User / Avatar Trigger */}
-                {!isLoaded ? (
-                  <div className="flex h-7 w-7 items-center justify-center rounded-full">
-                    <div className="h-3.5 w-3.5 animate-spin rounded-full border border-lime border-t-transparent" />
-                  </div>
-                ) : (
-                  (() => {
-                    const parsedUserAvatar = parseAvatarSeed(convexViewer?.avatarSeed, user?.imageUrl);
-                    const userDisplayName = convexViewer?.displayName || user?.fullName || user?.firstName || user?.username || guestName || 'Manager';
+                {/* Minimal Dynamic Island User / Avatar Trigger (Always Instant & Non-Blocking) */}
+                {(() => {
+                  const parsedUserAvatar = parseAvatarSeed(convexViewer?.avatarSeed, user?.imageUrl);
+                  const userDisplayName = convexViewer?.displayName || user?.fullName || user?.firstName || user?.username || guestName || (lang === 'ar' ? 'ضيف' : 'Guest');
 
-                    return (
-                      <button
-                        type="button"
-                        onClick={() => setIsOpen(true)}
-                        className="btn-haptic flex h-7 sm:h-8 items-center gap-1.5 rounded-full border border-white/10 bg-white/5 hover:border-lime/40 px-1.5 sm:px-2.5 text-white hover:bg-white/10 transition-all cursor-pointer font-stats group"
-                        title={userDisplayName}
-                      >
-                        <div className={cn(
-                          'relative flex h-5.5 w-5.5 sm:h-6 sm:w-6 shrink-0 items-center justify-center rounded-full border font-black text-[10px] bg-gradient-to-br overflow-hidden shadow-sm transition-transform group-hover:scale-105',
-                          parsedUserAvatar.meta.gradient,
-                          parsedUserAvatar.meta.border,
-                          parsedUserAvatar.meta.text,
-                        )}>
-                          {parsedUserAvatar.avatarUrl ? (
-                            <Image
-                              src={parsedUserAvatar.avatarUrl}
-                              alt="Avatar"
-                              width={22}
-                              height={22}
-                              className="max-h-full max-w-full object-contain p-0.5"
-                              unoptimized
-                            />
-                          ) : (
-                            getMonogramInitial(userDisplayName, 1)
-                          )}
-                        </div>
-                        <span className="text-[11px] font-bold text-white max-w-[60px] sm:max-w-[85px] truncate hidden xs:inline">
-                          {userDisplayName.split(' ')[0]}
-                        </span>
-                        <AppIcon icon={CaretDown} size={11} weight="bold" className="text-steel group-hover:text-lime transition-colors" />
-                      </button>
-                    );
-                  })()
-                )}
+                  return (
+                    <button
+                      type="button"
+                      onClick={() => setIsOpen(true)}
+                      className="btn-haptic flex h-7 sm:h-8 items-center gap-1.5 rounded-full border border-white/10 bg-white/5 hover:border-lime/40 px-1.5 sm:px-2.5 text-white hover:bg-white/10 transition-all cursor-pointer font-stats group"
+                      title={userDisplayName}
+                    >
+                      <div className={cn(
+                        'relative flex h-5.5 w-5.5 sm:h-6 sm:w-6 shrink-0 items-center justify-center rounded-full border font-black text-[10px] bg-gradient-to-br overflow-hidden shadow-sm transition-transform group-hover:scale-105',
+                        parsedUserAvatar.meta.gradient,
+                        parsedUserAvatar.meta.border,
+                        parsedUserAvatar.meta.text,
+                      )}>
+                        {parsedUserAvatar.avatarUrl ? (
+                          <Image
+                            src={parsedUserAvatar.avatarUrl}
+                            alt="Avatar"
+                            width={22}
+                            height={22}
+                            className="max-h-full max-w-full object-contain p-0.5"
+                            unoptimized
+                          />
+                        ) : (
+                          getMonogramInitial(userDisplayName, 1)
+                        )}
+                      </div>
+                      <span className="text-[11px] font-bold text-white max-w-[60px] sm:max-w-[85px] truncate hidden xs:inline">
+                        {userDisplayName.split(' ')[0]}
+                      </span>
+                      <AppIcon icon={CaretDown} size={11} weight="bold" className="text-steel group-hover:text-lime transition-colors" />
+                    </button>
+                  );
+                })()}
               </div>
             </motion.div>
           ) : (
@@ -359,11 +353,7 @@ export function Header() {
               </div>
 
               {/* ── User Auth & Profile Card ── */}
-              {!isLoaded ? (
-                <div className="flex items-center justify-center rounded-2xl bg-white/[0.03] border border-white/[0.06] p-4 mb-2.5">
-                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-lime border-t-transparent" />
-                </div>
-              ) : isSignedIn ? (
+              {isSignedIn ? (
                 <div className="rounded-2xl bg-white/[0.04] border border-white/[0.08] p-2.5 mb-2.5">
                   <div className="flex items-center justify-between">
                     <Link
