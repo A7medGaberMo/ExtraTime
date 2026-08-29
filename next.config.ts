@@ -27,7 +27,7 @@ const securityHeaders = [
   },
   {
     key: 'Content-Security-Policy',
-    value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.clerk.accounts.dev https://challenges.cloudflare.com; connect-src 'self' https://*.convex.cloud wss://*.convex.cloud http://localhost:* ws://localhost:* https://*.clerk.accounts.dev https://clerk.*.com; img-src 'self' data: blob: https://media.api-sports.io https://*.api-sports.io https://flagcdn.com https://api.dicebear.com https://raw.githubusercontent.com https://img.clerk.com https://upload.wikimedia.org https://*.wikimedia.org https://*.wikipedia.org https://commons.wikimedia.org; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; frame-src 'self' https://challenges.cloudflare.com;",
+    value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.clerk.accounts.dev https://challenges.cloudflare.com; connect-src 'self' https://*.convex.cloud wss://*.convex.cloud http://localhost:* ws://localhost:* https://*.clerk.accounts.dev https://clerk.*.com; img-src 'self' data: blob: https://media.api-sports.io https://*.api-sports.io https://flagcdn.com https://api.dicebear.com https://raw.githubusercontent.com https://img.clerk.com https://lh3.googleusercontent.com https://*.googleusercontent.com https://upload.wikimedia.org https://*.wikimedia.org https://*.wikipedia.org https://commons.wikimedia.org; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; frame-src 'self' https://challenges.cloudflare.com;",
   },
 ];
 
@@ -71,6 +71,14 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'img.clerk.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.googleusercontent.com',
       },
     ],
   },

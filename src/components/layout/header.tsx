@@ -249,8 +249,7 @@ export function Header() {
                   </div>
                 ) : (
                   (() => {
-                    const avatarSeed = convexViewer?.avatarSeed || 'persona-tactician';
-                    const parsedUserAvatar = parseAvatarSeed(avatarSeed);
+                    const parsedUserAvatar = parseAvatarSeed(convexViewer?.avatarSeed, user?.imageUrl);
                     const userDisplayName = convexViewer?.displayName || user?.fullName || user?.firstName || user?.username || guestName || 'Manager';
 
                     return (
@@ -373,7 +372,7 @@ export function Header() {
                       className="flex items-center gap-2 min-w-0 group"
                     >
                       {(() => {
-                        const parsedUserAvatar = parseAvatarSeed(convexViewer?.avatarSeed);
+                        const parsedUserAvatar = parseAvatarSeed(convexViewer?.avatarSeed, user?.imageUrl);
                         return (
                           <div className={cn('relative flex h-8 w-8 shrink-0 items-center justify-center rounded-2xl border font-black text-xs font-stats bg-gradient-to-br overflow-hidden p-0.5', parsedUserAvatar.meta.gradient, parsedUserAvatar.meta.border, parsedUserAvatar.meta.text)}>
                             {parsedUserAvatar.avatarUrl ? (

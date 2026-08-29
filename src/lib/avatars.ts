@@ -280,14 +280,25 @@ export interface ParsedAvatar {
   meta: AvatarPreset;
 }
 
-export function parseAvatarSeed(seed?: string): ParsedAvatar {
-  if (!seed) {
+export function parseAvatarSeed(seed?: string, fallbackUrl?: string): ParsedAvatar {
+  const target = seed || fallbackUrl;
+  if (!target) {
     return { isClub: false, isPersona: false, meta: AVATAR_PRESETS[0] };
   }
 
-  // Character Persona Check
-  if (seed.startsWith('persona-')) {
-    const persona = PERSONA_MAP.get(seed);
+  // Direct Image URL (Google / Gmail / Clerk profile picture or SVG data URI)
+  if (target.startsWith('http://') || target.startsWith('https://') || target.startsWith('data:')) {
+    return {
+      isClub: false,
+      isPersona: false,
+      avatarUrl: target,
+      meta: getAvatarMeta(target),
+    };
+  }
+
+  // Character Persona / Tactical Emblem Check
+  if (target.startsWith('persona-')) {
+    const persona = PERSONA_MAP.get(target);
     if (persona) {
       return {
         isClub: false,
@@ -300,8 +311,8 @@ export function parseAvatarSeed(seed?: string): ParsedAvatar {
   }
 
   // Club Crest Check
-  if (seed.startsWith('club:')) {
-    const raw = seed.slice(5);
+  if (target.startsWith('club:')) {
+    const raw = target.slice(5);
     const [clubName, logoUrl] = raw.split('::');
     return {
       isClub: true,
@@ -313,10 +324,20 @@ export function parseAvatarSeed(seed?: string): ParsedAvatar {
     };
   }
 
+  // Fallback to Google / Clerk photo if available
+  if (fallbackUrl && (fallbackUrl.startsWith('http://') || fallbackUrl.startsWith('https://'))) {
+    return {
+      isClub: false,
+      isPersona: false,
+      avatarUrl: fallbackUrl,
+      meta: getAvatarMeta(target),
+    };
+  }
+
   return {
     isClub: false,
     isPersona: false,
-    meta: getAvatarMeta(seed),
+    meta: getAvatarMeta(target),
   };
 }
 

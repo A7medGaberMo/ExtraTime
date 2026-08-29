@@ -99,7 +99,8 @@ function ProfileEditorForm({ viewer }: { viewer: ViewerDoc }) {
     }
   };
 
-  const parsedAvatar = parseAvatarSeed(avatarSeed);
+  const { user } = useUser();
+  const parsedAvatar = parseAvatarSeed(avatarSeed, user?.imageUrl);
   const activeMeta = parsedAvatar.meta;
   const monogram = getMonogramInitial(displayName || 'Manager', 2);
 
@@ -118,16 +119,16 @@ function ProfileEditorForm({ viewer }: { viewer: ViewerDoc }) {
       <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/90 p-5 sm:p-6 shadow-2xl backdrop-blur-2xl mb-6">
         <div className="flex items-center gap-4">
           <div
-            className={`relative flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${activeMeta.gradient} border ${activeMeta.border} font-black text-xl font-stats ${activeMeta.text} ${activeMeta.glow} transition-all p-1.5 overflow-hidden`}
+            className={`relative flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${activeMeta.gradient} border ${activeMeta.border} font-black text-xl font-stats ${activeMeta.text} ${activeMeta.glow} transition-all p-1 overflow-hidden`}
           >
             {parsedAvatar.avatarUrl ? (
-              <div className="relative h-full w-full flex items-center justify-center">
+              <div className="relative h-full w-full flex items-center justify-center rounded-xl overflow-hidden">
                 <Image
                   src={parsedAvatar.avatarUrl}
                   alt={displayName || 'Avatar'}
-                  width={56}
-                  height={56}
-                  className="max-h-full max-w-full object-contain"
+                  width={64}
+                  height={64}
+                  className="max-h-full max-w-full object-contain rounded-xl"
                   unoptimized
                 />
               </div>
@@ -156,7 +157,7 @@ function ProfileEditorForm({ viewer }: { viewer: ViewerDoc }) {
               {t('profile.editProfile')}
             </h1>
             <p className="text-xs text-steel">
-              {lang === 'ar' ? 'تخصيص الهوية والشعار التكتيكي' : 'Customize identity & tactical avatar'}
+              {lang === 'ar' ? 'تخصيص الهوية والشعار التكتيكي' : 'Customize identity & profile picture'}
             </p>
           </div>
         </div>
@@ -169,7 +170,46 @@ function ProfileEditorForm({ viewer }: { viewer: ViewerDoc }) {
         )}
 
         <form onSubmit={handleSave} className="space-y-6">
-          {/* Avatar Mode Tabs: Personas vs Clubs vs Minimal */}
+          {/* Google Photo Quick Selector */}
+          {user?.imageUrl && (
+            <div className="flex items-center justify-between p-3 rounded-2xl border border-white/10 bg-slate-900/60 backdrop-blur-md">
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="relative h-9 w-9 shrink-0 rounded-full overflow-hidden border border-lime/40 ring-2 ring-lime/20">
+                  <Image
+                    src={user.imageUrl}
+                    alt="Google Account"
+                    width={36}
+                    height={36}
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-xs font-bold text-white block font-stats">
+                    {lang === 'ar' ? 'صورة حسابك (Google / Gmail)' : 'Google / Gmail Account Photo'}
+                  </span>
+                  <span className="text-[11px] text-steel truncate block">
+                    {user.primaryEmailAddress?.emailAddress}
+                  </span>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setAvatarSeed(user.imageUrl)}
+                className={`btn-haptic shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold font-stats transition-all cursor-pointer ml-2 ${
+                  avatarSeed === user.imageUrl
+                    ? 'bg-lime text-slate-950 shadow-glow-lime'
+                    : 'border border-white/15 bg-white/5 text-white hover:border-lime/40'
+                }`}
+              >
+                {avatarSeed === user.imageUrl
+                  ? (lang === 'ar' ? 'مختارة حالياً' : 'Active')
+                  : (lang === 'ar' ? 'استخدام صورتي' : 'Use Photo')}
+              </button>
+            </div>
+          )}
+
+          {/* Avatar Mode Tabs: Tactical Badges vs Clubs */}
           <div>
             <div className="flex items-center justify-between mb-3">
               <label className="flex items-center gap-1.5 text-xs font-bold text-steel font-stats uppercase tracking-wider">

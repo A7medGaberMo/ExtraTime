@@ -118,18 +118,18 @@ export default function PublicProfilePage({
       <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/90 p-6 sm:p-8 shadow-2xl backdrop-blur-2xl mb-6">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
           <div className="flex items-center gap-4 min-w-0">
-            {/* Avatar Seed Monogram or Club Logo */}
+            {/* Avatar Seed Monogram, Google Photo, or Club Logo */}
             <div
-              className={`relative flex h-16 w-16 sm:h-20 sm:w-20 shrink-0 items-center justify-center rounded-3xl bg-gradient-to-br ${avatarMeta.gradient} border ${avatarMeta.border} font-black text-xl sm:text-2xl font-stats ${avatarMeta.text} ${avatarMeta.glow} shadow-lg transition-all p-2`}
+              className={`relative flex h-16 w-16 sm:h-20 sm:w-20 shrink-0 items-center justify-center rounded-3xl bg-gradient-to-br ${avatarMeta.gradient} border ${avatarMeta.border} font-black text-xl sm:text-2xl font-stats ${avatarMeta.text} ${avatarMeta.glow} shadow-lg transition-all p-1.5 overflow-hidden`}
             >
-              {parsedAvatar.isClub && parsedAvatar.clubLogoUrl ? (
-                <div className="relative h-full w-full flex items-center justify-center">
+              {parsedAvatar.avatarUrl ? (
+                <div className="relative h-full w-full flex items-center justify-center rounded-2xl overflow-hidden">
                   <Image
-                    src={parsedAvatar.clubLogoUrl}
-                    alt={parsedAvatar.clubName || 'Club'}
-                    width={56}
-                    height={56}
-                    className="max-h-full max-w-full object-contain"
+                    src={parsedAvatar.avatarUrl}
+                    alt={userProfile.displayName || 'Avatar'}
+                    width={64}
+                    height={64}
+                    className="max-h-full max-w-full object-contain rounded-2xl"
                     unoptimized
                   />
                 </div>
