@@ -19,17 +19,21 @@ interface CardDetailModalProps {
 export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: CardDetailModalProps) {
   // Deduplicate cards list by unique player ID
   const uniqueCards = useMemo(() => {
-    if (!cardsList || cardsList.length === 0) return card ? [card] : [];
+    const list = cardsList && cardsList.length > 0 ? cardsList : card ? [card] : [];
     const map = new Map<string, PlayerCardData>();
-    for (const c of cardsList) {
+    for (const c of list) {
       if (c && c.id) map.set(c.id, c);
+    }
+    if (card && card.id && !map.has(card.id)) {
+      map.set(card.id, card);
     }
     return Array.from(map.values());
   }, [cardsList, card]);
 
-  const currentIndex = card ? uniqueCards.findIndex((c) => c.id === card.id) : -1;
+  const rawIndex = card ? uniqueCards.findIndex((c) => c.id === card.id) : -1;
+  const currentIndex = rawIndex >= 0 ? rawIndex : 0;
   const hasPrev = currentIndex > 0;
-  const hasNext = currentIndex >= 0 && currentIndex < uniqueCards.length - 1;
+  const hasNext = currentIndex < uniqueCards.length - 1;
 
   const touchStartX = useRef<number | null>(null);
 

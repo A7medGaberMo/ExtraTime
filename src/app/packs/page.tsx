@@ -158,7 +158,7 @@ function pickCardsForPack(pack: PackDefinition, allPlayers: PlayerCardData[]): P
 
 export default function PacksPage() {
   const { t, lang } = useI18n();
-  const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 50 });
+  const rawData = useQuery(api.packs.queries.getPackPools, {});
 
   // Pack Opening State
   const [openingPack, setOpeningPack] = useState<PackDefinition | null>(null);
@@ -284,18 +284,18 @@ export default function PacksPage() {
             const displayName =
               lang === 'ar'
                 ? pack.id === 'pantheon-pack'
-                  ? 'بانثيون النخبة الكبرى'
+                  ? 'حزمة بانثيون الأساطير'
                   : pack.id === 'icon-pack'
-                    ? 'ملوك الأيقونات'
-                    : 'أبطال النخبة'
+                    ? 'حزمة ملوك الأيقونات'
+                    : 'حزمة أبطال النخبة'
                 : pack.name;
 
             const displaySubtitle =
               lang === 'ar'
                 ? pack.id === 'pantheon-pack'
-                  ? 'أيقونات، أبطال، ألتميت وماستر (بدون إيليت)'
+                  ? 'تشمل حصرياً بطاقات: أيقونة، بطل، ألتميت وماستر'
                   : pack.id === 'icon-pack'
-                    ? 'أساطير وأبطال كرة القدم التاريخيون'
+                    ? 'أساطير كرة القدم التاريخية والأبطال الخالدون'
                     : 'حصرياً: نجوم ألتميت وماستر فقط'
                 : pack.subtitle;
 

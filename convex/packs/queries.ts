@@ -62,46 +62,37 @@ export const getPackPools = query({
     samplePerTier: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
-    const sampleSize = args.samplePerTier ?? 50;
+    const sampleSize = args.samplePerTier;
 
     const [icons, heroes, ultimates, masters, elites, golds, silvers, bronzes, legends] =
       await Promise.all([
-        ctx.db
-          .query('players')
-          .withIndex('by_tier', (q) => q.eq('tier', 'ICON'))
-          .take(sampleSize),
-        ctx.db
-          .query('players')
-          .withIndex('by_tier', (q) => q.eq('tier', 'HERO'))
-          .take(sampleSize),
-        ctx.db
-          .query('players')
-          .withIndex('by_tier', (q) => q.eq('tier', 'ULTIMATE'))
-          .take(sampleSize),
-        ctx.db
-          .query('players')
-          .withIndex('by_tier', (q) => q.eq('tier', 'MASTER'))
-          .take(sampleSize),
-        ctx.db
-          .query('players')
-          .withIndex('by_tier', (q) => q.eq('tier', 'ELITE'))
-          .take(sampleSize),
-        ctx.db
-          .query('players')
-          .withIndex('by_tier', (q) => q.eq('tier', 'GOLD'))
-          .take(sampleSize),
-        ctx.db
-          .query('players')
-          .withIndex('by_tier', (q) => q.eq('tier', 'SILVER'))
-          .take(sampleSize),
-        ctx.db
-          .query('players')
-          .withIndex('by_tier', (q) => q.eq('tier', 'BRONZE'))
-          .take(sampleSize),
-        ctx.db
-          .query('players')
-          .withIndex('by_legend', (q) => q.eq('isLegend', true))
-          .take(sampleSize),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ICON')).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ICON')).collect(),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'HERO')).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'HERO')).collect(),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ULTIMATE')).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ULTIMATE')).collect(),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'MASTER')).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'MASTER')).collect(),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ELITE')).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ELITE')).collect(),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'GOLD')).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'GOLD')).collect(),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'SILVER')).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'SILVER')).collect(),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'BRONZE')).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'BRONZE')).collect(),
+        sampleSize
+          ? ctx.db.query('players').withIndex('by_legend', (q) => q.eq('isLegend', true)).take(sampleSize)
+          : ctx.db.query('players').withIndex('by_legend', (q) => q.eq('isLegend', true)).collect(),
       ]);
 
     const allDocs = [

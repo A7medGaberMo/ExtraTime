@@ -12,7 +12,7 @@ import {
   Cards,
   Flame,
   SquaresFour,
-  Sparkle,
+  Globe,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { PlayerCard } from '@/components/shared/player-card';
@@ -57,7 +57,6 @@ export function FifaPackOpening({
   // Order cards so the top walkout player is saved for the grand 5th finale!
   const orderedCards = React.useMemo(() => {
     if (!cards || cards.length === 0) return [];
-    // Sort ascending by tier/rating so the best card is index 4 (last walkout)
     return [...cards].sort((a, b) => {
       const tierRankA = TIER_ORDER.indexOf(a.tier);
       const tierRankB = TIER_ORDER.indexOf(b.tier);
@@ -71,16 +70,23 @@ export function FifaPackOpening({
   const [subStage, setSubStage] = useState<RevealSubStage>('NATION');
   const [isCleanRecordMode, setIsCleanRecordMode] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const autoAdvanceRef = useRef<NodeJS.Timeout | null>(null);
 
   const currentCard = orderedCards[currentCardIndex] || orderedCards[0];
   const isTopWalkout = currentCardIndex === orderedCards.length - 1;
   const currentTierStyle = getTierStyle(currentCard?.tier || pack.featuredTier);
 
+  // Clear all pending timeouts safely
+  const clearAllTimers = useCallback(() => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+    if (autoAdvanceRef.current) clearTimeout(autoAdvanceRef.current);
+  }, []);
+
   // Safely cleanup timers on unmount or close
   const handleSafeClose = useCallback(() => {
-    if (timerRef.current) clearTimeout(timerRef.current);
+    clearAllTimers();
     onClose();
-  }, [onClose]);
+  }, [clearAllTimers, onClose]);
 
   // Global ESC key listener for instant close/back
   useEffect(() => {
@@ -93,24 +99,24 @@ export function FifaPackOpening({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [handleSafeClose]);
 
-  // Sequence controller for each card's clues (Nation -> Position -> Club -> Walkout)
+  // Sequence controller for each card's clues (Nation -> Position -> Club -> Walkout -> Auto Advance)
   const startCardRevealSequence = useCallback((cardIdx: number) => {
-    if (timerRef.current) clearTimeout(timerRef.current);
+    clearAllTimers();
     setCurrentCardIndex(cardIdx);
     setSubStage('NATION');
     sfx.walkoutTease(1);
 
-    // 1. Nation (1.1s) -> Position
+    // 1. Nation Clue (1.0s) -> Position
     timerRef.current = setTimeout(() => {
       setSubStage('POSITION');
       sfx.walkoutTease(2);
 
-      // 2. Position (1.1s) -> Club
+      // 2. Position Clue (1.0s) -> Club
       timerRef.current = setTimeout(() => {
         setSubStage('CLUB');
         sfx.walkoutTease(3);
 
-        // 3. Club (1.2s) -> Card Slam
+        // 3. Club Clue (1.1s) -> Card Walkout Slam
         timerRef.current = setTimeout(() => {
           setSubStage('WALKOUT');
           const targetCard = orderedCards[cardIdx];
@@ -127,10 +133,22 @@ export function FifaPackOpening({
           } else {
             sfx.tierReveal();
           }
-        }, 1200);
-      }, 1100);
-    }, 1100);
-  }, [orderedCards]);
+
+          // 4. Hands-free Auto-Advance to next card after ~2.2s
+          autoAdvanceRef.current = setTimeout(() => {
+            if (cardIdx < orderedCards.length - 1) {
+              sfx.cardDeal();
+              startCardRevealSequence(cardIdx + 1);
+            } else {
+              sfx.cardDeal();
+              setMainStage('OVERVIEW');
+            }
+          }, cardIdx === orderedCards.length - 1 ? 2600 : 2200);
+
+        }, 1100);
+      }, 1000);
+    }, 1000);
+  }, [orderedCards, clearAllTimers]);
 
   // Pack Unboxing Initializer
   useEffect(() => {
@@ -143,50 +161,60 @@ export function FifaPackOpening({
     }, 900);
 
     return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
+      clearAllTimers();
     };
-  }, [startCardRevealSequence]);
+  }, [startCardRevealSequence, clearAllTimers]);
 
-  // Advance to Next Card Reveal or Final Overview
+  // Manual Advance to Next Card Reveal or Final Overview
   const handleProceedNext = () => {
+    clearAllTimers();
     if (currentCardIndex < orderedCards.length - 1) {
       sfx.cardDeal();
       startCardRevealSequence(currentCardIndex + 1);
     } else {
-      if (timerRef.current) clearTimeout(timerRef.current);
       sfx.cardDeal();
       setMainStage('OVERVIEW');
     }
   };
 
-  // Skip Directly to Overview (Reveal All 5)
+  // Skip Directly to Overview (Reveal All 5 Dominoes)
   const handleRevealAllOverview = () => {
-    if (timerRef.current) clearTimeout(timerRef.current);
+    clearAllTimers();
     sfx.cardDeal();
     setMainStage('OVERVIEW');
   };
 
   // Skip current card's teaser straight to walkout
   const handleInstantWalkout = () => {
-    if (timerRef.current) clearTimeout(timerRef.current);
+    clearAllTimers();
     setSubStage('WALKOUT');
     sfx.tierReveal();
+
+    autoAdvanceRef.current = setTimeout(() => {
+      if (currentCardIndex < orderedCards.length - 1) {
+        sfx.cardDeal();
+        startCardRevealSequence(currentCardIndex + 1);
+      } else {
+        sfx.cardDeal();
+        setMainStage('OVERVIEW');
+      }
+    }, currentCardIndex === orderedCards.length - 1 ? 2600 : 2200);
   };
 
   const packDisplayName =
     lang === 'ar'
       ? pack.id === 'pantheon-pack'
-        ? 'بانثيون النخبة الكبرى'
+        ? 'حزمة بانثيون الأساطير'
         : pack.id === 'icon-pack'
-          ? 'ملوك الأيقونات'
-          : 'أبطال النخبة'
+          ? 'حزمة ملوك الأيقونات'
+          : 'حزمة أبطال النخبة'
       : pack.name;
 
   return (
     <div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-slate-950/98 select-none overflow-hidden backdrop-blur-3xl"
+      className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-[#030712] select-none overflow-hidden"
       style={{
-        background: `radial-gradient(circle at 50% 30%, ${currentTierStyle.shadow}90 0%, #030712 70%, #010409 100%)`,
+        background: `radial-gradient(circle at 50% 25%, ${currentTierStyle.shadow}55 0%, #030712 65%, #010409 100%)`,
       }}
       dir="ltr"
     >
@@ -204,7 +232,7 @@ export function FifaPackOpening({
               <button
                 type="button"
                 onClick={handleSafeClose}
-                className="group flex items-center gap-1.5 rounded-full border border-white/20 bg-slate-900/90 px-3.5 py-1.5 text-xs font-bold text-white shadow-2xl hover:border-lime/50 hover:bg-slate-800 transition-all cursor-pointer active:scale-95 shrink-0 ring-1 ring-white/10"
+                className="group flex items-center gap-1.5 rounded-full border border-white/25 bg-slate-900 px-3.5 py-1.5 text-xs font-bold text-white shadow-2xl hover:border-lime hover:bg-slate-800 transition-all cursor-pointer active:scale-95 shrink-0 ring-1 ring-white/10"
                 title={t('packs.closeAndBack')}
               >
                 <AppIcon
@@ -216,9 +244,9 @@ export function FifaPackOpening({
                 <span className="text-xs font-black tracking-tight">{t('packs.closeAndBack')}</span>
               </button>
 
-              <div className="hidden md:flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1.5 backdrop-blur-xl shadow-lg">
+              <div className="hidden md:flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/90 px-3 py-1.5 backdrop-blur-xl shadow-lg">
                 <ETLogo variant="card-badge" size={15} />
-                <span className="font-stats text-xs font-bold tracking-wider text-white uppercase truncate max-w-[140px]">
+                <span className="font-stats text-xs font-bold tracking-wider text-white uppercase truncate max-w-[160px]">
                   {packDisplayName}
                 </span>
               </div>
@@ -226,7 +254,7 @@ export function FifaPackOpening({
 
             {/* Center: 5-Card Progression Pip Indicator */}
             {mainStage === 'CARD_REVEAL' && (
-              <div className="flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-900/80 px-3 py-1 backdrop-blur-xl shadow-md">
+              <div className="flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-900/90 px-3 py-1 backdrop-blur-xl shadow-md">
                 <span className="text-[10px] font-black text-steel uppercase pr-1 font-stats">
                   {lang === 'ar' ? `بطاقة ${currentCardIndex + 1} من 5` : `Card ${currentCardIndex + 1} of 5`}
                 </span>
@@ -297,14 +325,14 @@ export function FifaPackOpening({
         </button>
       )}
 
-      {/* ── AMBIENT STADIUM SPOTLIGHT ── */}
+      {/* ── AMBIENT STADIUM LIGHTING SPOTLIGHT ── */}
       <div
         className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[380px] w-[380px] sm:h-[650px] sm:w-[650px] rounded-full blur-[130px] opacity-25"
         style={{ backgroundColor: currentTierStyle.primary }}
       />
 
-      {/* ── CENTER STAGE CONTAINER (FC STYLE IMMERSIVE FLOW) ── */}
-      <main className="relative z-20 my-auto flex w-full max-w-xl flex-1 flex-col items-center justify-center p-2 sm:p-4 text-center overflow-y-auto scrollbar-none max-h-[calc(100dvh-4.5rem)]">
+      {/* ── CENTER STAGE CONTAINER ── */}
+      <main className="relative z-20 my-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center p-2 sm:p-4 text-center overflow-y-auto scrollbar-none max-h-[calc(100dvh-4.5rem)]">
         <AnimatePresence mode="wait">
           {/* ─────────────────────────────────────────────────────────── */}
           {/* 1. STAGE: PACK UNBOXING & TEAR */}
@@ -365,8 +393,8 @@ export function FifaPackOpening({
           {/* 2. STAGE: FULL FC CARD-BY-CARD CINEMATIC REVEAL FLOW */}
           {/* ─────────────────────────────────────────────────────────── */}
           {mainStage === 'CARD_REVEAL' && currentCard && (
-            <div className="w-full flex flex-col items-center justify-center">
-              {/* ── 2A. CLUE: NATION REVEAL ── */}
+            <div className="w-full max-w-xl flex flex-col items-center justify-center">
+              {/* ── 2A. CLUE: NATION REVEAL (Clean — No Sparkles) ── */}
               {subStage === 'NATION' && (
                 <motion.div
                   key={`nation-${currentCardIndex}`}
@@ -377,7 +405,7 @@ export function FifaPackOpening({
                   className="flex flex-col items-center gap-3 py-3"
                 >
                   <div className="flex items-center gap-1.5 text-[10.5px] font-black tracking-[0.25em] text-steel uppercase">
-                    <AppIcon icon={Sparkle} size={12} weight="fill" className="text-lime" />
+                    <AppIcon icon={Globe} size={13} weight="bold" className="text-lime" />
                     <span>{t('packs.nation')}</span>
                   </div>
 
@@ -530,7 +558,7 @@ export function FifaPackOpening({
                     </div>
                   </div>
 
-                  {/* Reveal Next Card Action Button */}
+                  {/* Reveal Next Card / View Deck Action Button */}
                   <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
                     <motion.button
                       initial={{ opacity: 0, y: 15 }}
@@ -558,39 +586,47 @@ export function FifaPackOpening({
           )}
 
           {/* ─────────────────────────────────────────────────────────── */}
-          {/* 3. STAGE: FINAL 5-CARD STADIUM OVERVIEW */}
+          {/* 3. STAGE: FINAL 5-CARD DOMINO OVERVIEW */}
           {/* ─────────────────────────────────────────────────────────── */}
           {mainStage === 'OVERVIEW' && (
             <motion.div
               key="stage-overview"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3 }}
-              className="flex w-full max-w-4xl flex-col items-center gap-3 sm:gap-4 py-1"
+              transition={{ duration: 0.35 }}
+              className="flex w-full max-w-4xl flex-col items-center gap-3 sm:gap-5 py-1"
             >
+              {/* Header Title */}
               <div className="flex items-center gap-2">
-                <span className="text-lime text-[11px] font-black tracking-widest uppercase font-stats">
+                <span className="text-lime text-xs sm:text-sm font-black tracking-widest uppercase font-stats">
                   {packDisplayName} · 5 {lang === 'ar' ? 'بطاقات' : 'CARDS'}
                 </span>
               </div>
 
-              {/* Clean 5-Card Stadium Display */}
-              <div className="flex flex-nowrap items-center justify-start sm:justify-center gap-2.5 sm:gap-3.5 w-full max-w-full overflow-x-auto py-2 px-1 scrollbar-none snap-x snap-mandatory">
+              {/* 5-Card Domino Cascading Grid (Responsive on Mobile & Desktop) */}
+              <div className="grid grid-cols-5 gap-1.5 sm:gap-3.5 w-full max-w-3xl mx-auto py-2 items-center justify-items-center">
                 {orderedCards.map((player, idx) => (
                   <motion.div
-                    key={`pack-overview-${player.id}-${idx}`}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.06 }}
+                    key={`pack-domino-${player.id}-${idx}`}
+                    initial={{ opacity: 0, y: 40, rotateZ: (idx - 2) * 2, scale: 0.85 }}
+                    animate={{ opacity: 1, y: 0, rotateZ: 0, scale: 1 }}
+                    transition={{
+                      type: 'spring',
+                      stiffness: 340,
+                      damping: 24,
+                      delay: idx * 0.1,
+                    }}
                     onClick={() => {
                       sfx.cardFlip();
                       onInspectCard(player);
                     }}
-                    className="shrink-0 snap-center cursor-pointer transition-transform hover:scale-105 active:scale-95"
+                    className="w-full flex justify-center cursor-pointer transition-transform duration-200 hover:scale-105 hover:-translate-y-1.5 active:scale-95"
                   >
-                    <div className="block sm:hidden">
+                    {/* Mobile: xs card scaled to container */}
+                    <div className="block sm:hidden w-full max-w-[68px]">
                       <PlayerCard player={player} size="xs" />
                     </div>
+                    {/* Desktop: sm card */}
                     <div className="hidden sm:block">
                       <PlayerCard player={player} size="sm" />
                     </div>
@@ -599,7 +635,7 @@ export function FifaPackOpening({
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+              <div className="flex flex-wrap items-center justify-center gap-2.5 pt-2">
                 <button
                   type="button"
                   onClick={() => {
@@ -608,16 +644,16 @@ export function FifaPackOpening({
                     setCurrentCardIndex(0);
                     setMainStage('UNBOXING');
                   }}
-                  className="flex items-center gap-1.5 rounded-2xl bg-lime px-5 py-2.5 text-xs font-black tracking-widest text-slate-950 uppercase shadow-lg hover:bg-lime/90 transition-all cursor-pointer active:scale-95"
+                  className="flex items-center gap-2 rounded-2xl bg-lime px-6 py-2.5 text-xs font-black tracking-widest text-slate-950 uppercase shadow-lg hover:bg-lime/90 transition-all cursor-pointer active:scale-95"
                 >
-                  <AppIcon icon={ArrowCounterClockwise} size={14} weight="bold" />
+                  <AppIcon icon={ArrowCounterClockwise} size={15} weight="bold" />
                   <span>{t('packs.again')}</span>
                 </button>
 
                 <button
                   type="button"
                   onClick={handleSafeClose}
-                  className="flex items-center gap-1.5 rounded-2xl border border-white/15 bg-white/5 px-5 py-2.5 text-xs font-bold text-white hover:border-white/30 transition-all cursor-pointer active:scale-95"
+                  className="flex items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/90 px-6 py-2.5 text-xs font-bold text-white hover:border-white/40 hover:bg-slate-800 transition-all cursor-pointer active:scale-95 shadow-md"
                 >
                   <span>{t('packs.backToVault')}</span>
                 </button>

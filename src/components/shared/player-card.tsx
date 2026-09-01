@@ -291,14 +291,9 @@ export function PlayerCard({
                   )}
                   style={{
                     color: isLightCard ? tierStyle.ink : '#FFFFFF',
-                    background: isLightCard
-                      ? `linear-gradient(180deg, #181208 0%, ${tierStyle.accent} 100%)`
-                      : `linear-gradient(180deg, #FFFFFF 30%, ${tierStyle.highlight} 100%)`,
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    filter: isLightCard
-                      ? 'drop-shadow(0 1px 0 rgba(255,255,255,0.6))'
-                      : 'drop-shadow(0 2px 4px rgba(0,0,0,0.9))',
+                    textShadow: isLightCard
+                      ? '0 1px 0 rgba(255,255,255,0.8)'
+                      : `0 2px 5px rgba(0,0,0,0.95), 0 0 10px ${tierStyle.glow}`,
                   }}
                 >
                   {rating}
@@ -430,14 +425,9 @@ export function PlayerCard({
                   )}
                   style={{
                     color: isLightCard ? tierStyle.ink : '#FFFFFF',
-                    background: isLightCard
-                      ? `linear-gradient(180deg, #181208 0%, #2A1F10 100%)`
-                      : `linear-gradient(180deg, #FFFFFF 20%, #FFFFFF 65%, ${tierStyle.highlight} 100%)`,
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    filter: isLightCard
-                      ? 'drop-shadow(0 1px 0 rgba(255,255,255,0.75))'
-                      : 'drop-shadow(0 2px 4px rgba(0,0,0,0.95))',
+                    textShadow: isLightCard
+                      ? '0 1px 0 rgba(255,255,255,0.75)'
+                      : '0 2px 4px rgba(0,0,0,0.95)',
                   }}
                 >
                   {displayName}
