@@ -1,0 +1,6354 @@
+[
+  {
+    "slug": "euro-editions-by-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["euro", "uefa", "editions", "tournaments", "goals"],
+    "title": {
+      "en": "Rank these 5 UEFA EURO editions by total tournament goals scored",
+      "ar": "رتّب نسخ بطولة أمم أوروبا (اليورو) الخمسة حسب إجمالي الأهداف المسجلة"
+    },
+    "subtitle": {
+      "en": "All tournament matches included",
+      "ar": "شامل جميع مباريات البطولة في النهائيات"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "euro_tot_2020",
+        "name": {
+          "en": "EURO 2020",
+          "ar": "يورو 2020"
+        },
+        "subText": {
+          "en": "Held in 2021",
+          "ar": "أقيمت 2021"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "EUR20"
+        },
+        "value": 142,
+        "valueLabel": {
+          "en": "142 Goals",
+          "ar": "142 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "euro_tot_2024",
+        "name": {
+          "en": "EURO 2024",
+          "ar": "يورو 2024"
+        },
+        "subText": {
+          "en": "Germany (Spain Champions)",
+          "ar": "ألمانيا (تتويج إسبانيا)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "EUR24"
+        },
+        "value": 117,
+        "valueLabel": {
+          "en": "117 Goals",
+          "ar": "117 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "euro_tot_2016",
+        "name": {
+          "en": "EURO 2016",
+          "ar": "يورو 2016"
+        },
+        "subText": {
+          "en": "France (First 24-team edition)",
+          "ar": "فرنسا (أول نسخة بـ24 منتخبًا)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "EUR16"
+        },
+        "value": 108,
+        "valueLabel": {
+          "en": "108 Goals",
+          "ar": "108 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "euro_tot_2000",
+        "name": {
+          "en": "EURO 2000",
+          "ar": "يورو 2000"
+        },
+        "subText": {
+          "en": "Belgium / Netherlands",
+          "ar": "بلجيكا / هولندا"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "EUR00"
+        },
+        "value": 85,
+        "valueLabel": {
+          "en": "85 Goals",
+          "ar": "85 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "euro_tot_2004",
+        "name": {
+          "en": "EURO 2004",
+          "ar": "يورو 2004"
+        },
+        "subText": {
+          "en": "Portugal (Greece Miracle)",
+          "ar": "البرتغال (معجزة اليونان)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "EUR04"
+        },
+        "value": 77,
+        "valueLabel": {
+          "en": "77 Goals",
+          "ar": "77 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-editions-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-america", "conmebol", "editions", "tournaments", "goals"],
+    "title": {
+      "en": "Rank these 5 Copa América editions by total tournament goals scored",
+      "ar": "رتّب نسخ كوبا أمريكا الخمسة حسب إجمالي الأهداف المسجلة في البطولة"
+    },
+    "subtitle": {
+      "en": "All tournament matches included",
+      "ar": "شامل جميع أهداف مباريات البطولة"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ca_tot_2016",
+        "name": {
+          "en": "Copa América Centenario 2016",
+          "ar": "كوبا أمريكا المئوية 2016"
+        },
+        "subText": {
+          "en": "USA (Chile Champions)",
+          "ar": "الولايات المتحدة (تتويج تشيلي)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "CA16"
+        },
+        "value": 91,
+        "valueLabel": {
+          "en": "91 Goals",
+          "ar": "91 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ca_tot_2007",
+        "name": {
+          "en": "Copa América 2007",
+          "ar": "كوبا أمريكا 2007"
+        },
+        "subText": {
+          "en": "Venezuela (Brazil Champions)",
+          "ar": "فنزويلا (تتويج البرازيل)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "CA07"
+        },
+        "value": 86,
+        "valueLabel": {
+          "en": "86 Goals",
+          "ar": "86 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ca_tot_2004",
+        "name": {
+          "en": "Copa América 2004",
+          "ar": "كوبا أمريكا 2004"
+        },
+        "subText": {
+          "en": "Peru (Brazil Champions)",
+          "ar": "بيرو (تتويج البرازيل)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "CA04"
+        },
+        "value": 78,
+        "valueLabel": {
+          "en": "78 Goals",
+          "ar": "78 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ca_tot_2024",
+        "name": {
+          "en": "Copa América 2024",
+          "ar": "كوبا أمريكا 2024"
+        },
+        "subText": {
+          "en": "USA (Argentina Champions)",
+          "ar": "الولايات المتحدة (تتويج الأرجنتين)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "CA24"
+        },
+        "value": 70,
+        "valueLabel": {
+          "en": "70 Goals",
+          "ar": "70 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ca_tot_2019",
+        "name": {
+          "en": "Copa América 2019",
+          "ar": "كوبا أمريكا 2019"
+        },
+        "subText": {
+          "en": "Brazil (Brazil Champions)",
+          "ar": "البرازيل (تتويج البرازيل)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "CA19"
+        },
+        "value": 60,
+        "valueLabel": {
+          "en": "60 Goals",
+          "ar": "60 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afcon-editions-by-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afcon", "africa", "editions", "tournaments", "goals"],
+    "title": {
+      "en": "Rank these 5 Africa Cup of Nations (AFCON) editions by total goals scored",
+      "ar": "رتّب نسخ كأس الأمم الإفريقية الخمسة حسب إجمالي الأهداف المسجلة"
+    },
+    "subtitle": {
+      "en": "All tournament matches included",
+      "ar": "شامل جميع أهداف البطولة"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afcon_tot_2023",
+        "name": {
+          "en": "AFCON 2023",
+          "ar": "كأس أمم إفريقيا 2023"
+        },
+        "subText": {
+          "en": "Ivory Coast (Held in 2024)",
+          "ar": "كوت ديفوار (أقيمت 2024)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "AF23"
+        },
+        "value": 119,
+        "valueLabel": {
+          "en": "119 Goals",
+          "ar": "119 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afcon_tot_2019",
+        "name": {
+          "en": "AFCON 2019",
+          "ar": "كأس أمم إفريقيا 2019"
+        },
+        "subText": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "AF19"
+        },
+        "value": 102,
+        "valueLabel": {
+          "en": "102 Goals",
+          "ar": "102 هدف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afcon_tot_2021",
+        "name": {
+          "en": "AFCON 2021",
+          "ar": "كأس أمم إفريقيا 2021"
+        },
+        "subText": {
+          "en": "Cameroon",
+          "ar": "الكاميرون"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "AF21"
+        },
+        "value": 100,
+        "valueLabel": {
+          "en": "100 Goals",
+          "ar": "100 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afcon_tot_2008",
+        "name": {
+          "en": "AFCON 2008",
+          "ar": "كأس أمم إفريقيا 2008"
+        },
+        "subText": {
+          "en": "Ghana",
+          "ar": "غانا"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "AF08"
+        },
+        "value": 99,
+        "valueLabel": {
+          "en": "99 Goals",
+          "ar": "99 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afcon_tot_2017",
+        "name": {
+          "en": "AFCON 2017",
+          "ar": "كأس أمم إفريقيا 2017"
+        },
+        "subText": {
+          "en": "Gabon",
+          "ar": "الغابون"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "AF17"
+        },
+        "value": 66,
+        "valueLabel": {
+          "en": "66 Goals",
+          "ar": "66 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-total-goals-modern-era",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "tournaments", "goals", "modern"],
+    "title": {
+      "en": "Rank these 5 World Cups by total goals scored",
+      "ar": "رتّب نسخ كأس العالم الخمسة حسب إجمالي الأهداف المسجلة"
+    },
+    "subtitle": {
+      "en": "All tournament matches included",
+      "ar": "شامل جميع أهداف البطولة في النهائيات"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_goals_2026",
+        "name": {
+          "en": "2026 World Cup",
+          "ar": "كأس العالم 2026"
+        },
+        "subText": {
+          "en": "USA / Mexico / Canada",
+          "ar": "أمريكا / المكسيك / كندا"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "2026"
+        },
+        "value": 308,
+        "valueLabel": {
+          "en": "308 Goals",
+          "ar": "308 أهداف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_goals_2022",
+        "name": {
+          "en": "2022 World Cup",
+          "ar": "كأس العالم 2022"
+        },
+        "subText": {
+          "en": "Qatar",
+          "ar": "قطر"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "2022"
+        },
+        "value": 172,
+        "valueLabel": {
+          "en": "172 Goals",
+          "ar": "172 هدف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_goals_2014",
+        "name": {
+          "en": "2014 World Cup",
+          "ar": "كأس العالم 2014"
+        },
+        "subText": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "2014"
+        },
+        "value": 171,
+        "valueLabel": {
+          "en": "171 Goals",
+          "ar": "171 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_goals_2018",
+        "name": {
+          "en": "2018 World Cup",
+          "ar": "كأس العالم 2018"
+        },
+        "subText": {
+          "en": "Russia",
+          "ar": "روسيا"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "2018"
+        },
+        "value": 169,
+        "valueLabel": {
+          "en": "169 Goals",
+          "ar": "169 هدف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_goals_2002",
+        "name": {
+          "en": "2002 World Cup",
+          "ar": "كأس العالم 2002"
+        },
+        "subText": {
+          "en": "Korea / Japan",
+          "ar": "كوريا / اليابان"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "2002"
+        },
+        "value": 161,
+        "valueLabel": {
+          "en": "161 Goals",
+          "ar": "161 هدف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-goals-24-team-era",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "tournaments", "history", "goals"],
+    "title": {
+      "en": "Rank these 5 classic World Cups by total goals scored",
+      "ar": "رتّب نسخ كأس العالم الكلاسيكية حسب إجمالي الأهداف"
+    },
+    "subtitle": {
+      "en": "Tournaments between 1954 and 1994",
+      "ar": "البطولات بين عامي 1954 و1994"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_goals_1982",
+        "name": {
+          "en": "1982 World Cup",
+          "ar": "كأس العالم 1982"
+        },
+        "subText": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "1982"
+        },
+        "value": 146,
+        "valueLabel": {
+          "en": "146 Goals",
+          "ar": "146 هدف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_goals_1994",
+        "name": {
+          "en": "1994 World Cup",
+          "ar": "كأس العالم 1994"
+        },
+        "subText": {
+          "en": "USA",
+          "ar": "أمريكا"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "1994"
+        },
+        "value": 141,
+        "valueLabel": {
+          "en": "141 Goals",
+          "ar": "141 هدف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_goals_1954",
+        "name": {
+          "en": "1954 World Cup",
+          "ar": "كأس العالم 1954"
+        },
+        "subText": {
+          "en": "Switzerland",
+          "ar": "سويسرا"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "1954"
+        },
+        "value": 140,
+        "valueLabel": {
+          "en": "140 Goals",
+          "ar": "140 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_goals_1986",
+        "name": {
+          "en": "1986 World Cup",
+          "ar": "كأس العالم 1986"
+        },
+        "subText": {
+          "en": "Mexico",
+          "ar": "المكسيك"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "1986"
+        },
+        "value": 132,
+        "valueLabel": {
+          "en": "132 Goals",
+          "ar": "132 هدف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_goals_1990",
+        "name": {
+          "en": "1990 World Cup",
+          "ar": "كأس العالم 1990"
+        },
+        "subText": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "1990"
+        },
+        "value": 115,
+        "valueLabel": {
+          "en": "115 Goals",
+          "ar": "115 هدف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-average-goals-per-match",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "averages", "goals-per-match"],
+    "title": {
+      "en": "Rank these 5 World Cups by average goals per match",
+      "ar": "رتّب نسخ كأس العالم الخمسة حسب معدل الأهداف لكل مباراة"
+    },
+    "subtitle": {
+      "en": "Average goals per match across the tournament",
+      "ar": "معدل الأهداف في المباراة عبر جميع مباريات البطولة"
+    },
+    "metricLabel": {
+      "en": "Goals/Match",
+      "ar": "هدف/مباراة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_avg_1954",
+        "name": {
+          "en": "1954 Switzerland",
+          "ar": "سويسرا 1954"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "1954"
+        },
+        "value": 538,
+        "valueLabel": {
+          "en": "5.38 Goals/Match",
+          "ar": "5.38 هدف/مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_avg_1958",
+        "name": {
+          "en": "1958 Sweden",
+          "ar": "السويد 1958"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "1958"
+        },
+        "value": 360,
+        "valueLabel": {
+          "en": "3.60 Goals/Match",
+          "ar": "3.60 هدف/مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_avg_1970",
+        "name": {
+          "en": "1970 Mexico",
+          "ar": "المكسيك 1970"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "1970"
+        },
+        "value": 297,
+        "valueLabel": {
+          "en": "2.97 Goals/Match",
+          "ar": "2.97 هدف/مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_avg_2022",
+        "name": {
+          "en": "2022 Qatar",
+          "ar": "قطر 2022"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "2022"
+        },
+        "value": 269,
+        "valueLabel": {
+          "en": "2.69 Goals/Match",
+          "ar": "2.69 هدف/مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_avg_2006",
+        "name": {
+          "en": "2006 Germany",
+          "ar": "ألمانيا 2006"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "2006"
+        },
+        "value": 230,
+        "valueLabel": {
+          "en": "2.30 Goals/Match",
+          "ar": "2.30 هدف/مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-golden-boot-goals-record",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "golden-boot", "strikers", "goals", "fontaine", "kocsis", "muller", "eusebio", "ronaldo"],
+    "title": {
+      "en": "Rank these 5 World Cup Golden Boot winners by goals scored in a single tournament",
+      "ar": "رتّب الفائزين بالحذاء الذهبي لكأس العالم الخمسة حسب عدد الأهداف المسجلة في بطولة واحدة"
+    },
+    "subtitle": {
+      "en": "Total goals scored in the tournament to win the Golden Boot",
+      "ar": "إجمالي الأهداف المسجلة في البطولة للتتويج بالحذاء الذهبي"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gb_fontaine_58",
+        "name": {
+          "en": "Just Fontaine (1958)",
+          "ar": "جست فونتين (1958)"
+        },
+        "subText": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "FON",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Just_Fontaine_1958.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Goals",
+          "ar": "13 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gb_kocsis_54",
+        "name": {
+          "en": "Sándor Kocsis (1954)",
+          "ar": "ساندور كوتشيس (1954)"
+        },
+        "subText": {
+          "en": "Hungary (Magical Magyars)",
+          "ar": "المجر (الجيل الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KOC",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/S%C3%A1ndor_Kocsis_1954.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/hu.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Goals",
+          "ar": "11 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gb_muller_70",
+        "name": {
+          "en": "Gerd Müller (1970)",
+          "ar": "غيرد مولر (1970)"
+        },
+        "subText": {
+          "en": "West Germany (Der Bomber)",
+          "ar": "ألمانيا الغربية (المدفعجي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MUL",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gb_eusebio_66",
+        "name": {
+          "en": "Eusébio (1966)",
+          "ar": "أوزيبيو (1966)"
+        },
+        "subText": {
+          "en": "Portugal (The Black Panther)",
+          "ar": "البرتغال (الفهد الأسود)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EUS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Eus%C3%A9bio_1966.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Goals",
+          "ar": "9 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gb_ronaldo_02",
+        "name": {
+          "en": "Ronaldo Nazário (2002)",
+          "ar": "رونالدو البرازيلي (2002)"
+        },
+        "subText": {
+          "en": "Brazil (vs Germany (Final))",
+          "ar": "البرازيل (ضد ألمانيا (النهائي))"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-most-goals-single-tournament-nation",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "records", "hungary", "germany", "france", "brazil"],
+    "title": {
+      "en": "Rank these 5 national teams by goals scored in a single World Cup tournament",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد الأهداف المسجلة في نسخة واحدة لكأس العالم"
+    },
+    "subtitle": {
+      "en": "Total goals scored by one nation across a single World Cup campaign",
+      "ar": "إجمالي الأهداف المسجلة لمنتخب واحد في دورة مونديالية واحدة"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wctg_hungary_54",
+        "name": {
+          "en": "Hungary (1954)",
+          "ar": "المجر (1954)"
+        },
+        "subText": {
+          "en": "Magical Magyars",
+          "ar": "جيل المجر الذهبي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "HUN",
+          "primaryUrl": "https://flagcdn.com/w160/hu.png"
+        },
+        "value": 27,
+        "valueLabel": {
+          "en": "27 Goals",
+          "ar": "27 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wctg_germany_54",
+        "name": {
+          "en": "West Germany (1954)",
+          "ar": "ألمانيا الغربية (1954)"
+        },
+        "subText": {
+          "en": "Miracle of Bern (Champions)",
+          "ar": "معجزة بيرن (أبطال العالم)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Goals",
+          "ar": "25 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wctg_france_58",
+        "name": {
+          "en": "France (1958)",
+          "ar": "فرنسا (1958)"
+        },
+        "subText": {
+          "en": "Sweden 1958",
+          "ar": "السويد 1958"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Goals",
+          "ar": "23 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wctg_brazil_70",
+        "name": {
+          "en": "Brazil (1970)",
+          "ar": "البرازيل (1970)"
+        },
+        "subText": {
+          "en": "Pelé, Jairzinho, Tostão & Rivelino",
+          "ar": "بيليه وجاييرزينيو وتوستاو وريفيلينو"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Goals",
+          "ar": "19 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wctg_germany_14",
+        "name": {
+          "en": "Germany (2014)",
+          "ar": "ألمانيا (2014)"
+        },
+        "subText": {
+          "en": "Champions (7-1 vs Brazil included)",
+          "ar": "أبطال العالم (تشمل 7-1 ضد البرازيل)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Goals",
+          "ar": "18 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-single-tournament-goals-legends",
+    "scopeType": "PER_COMPETITION",
+    "title": {
+      "en": "Rank these 5 legends by goals scored in a single FIFA World Cup tournament edition",
+      "ar": "رتّب الأساطير الخمسة حسب عدد الأهداف المسجلة في نسخة واحدة من كأس العالم"
+    },
+    "subtitle": {
+      "en": "All-time single-tournament World Cup scoring records",
+      "ar": "أعلى حصيلة تهديفية للاعب في بطولة واحدة من كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "scoring-records", "fontaine", "kocsis", "muller", "ronaldo"],
+    "answers": [
+      {
+        "answerKey": "wcs_fontaine_1958",
+        "name": {
+          "en": "Just Fontaine (1958)",
+          "ar": "جوست فونتين (1958)"
+        },
+        "subText": {
+          "en": "France (All-time World Cup record)",
+          "ar": "فرنسا (الرقم القياسي التاريخي للمونديال)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JF9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Just_Fontaine_1958.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Goals",
+          "ar": "13 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcs_kocsis_1954",
+        "name": {
+          "en": "Sándor Kocsis (1954)",
+          "ar": "ساندور كوتشيس (1954)"
+        },
+        "subText": {
+          "en": "Hungary",
+          "ar": "المجر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SK8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/S%C3%A1ndor_Kocsis_1954.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/hu.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Goals",
+          "ar": "11 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcs_muller_1970",
+        "name": {
+          "en": "Gerd Müller (1970)",
+          "ar": "غيرد مولر (1970)"
+        },
+        "subText": {
+          "en": "West Germany",
+          "ar": "ألمانيا الغربية"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GM9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcs_eusebio_1966",
+        "name": {
+          "en": "Eusébio (1966)",
+          "ar": "أوزيبيو (1966)"
+        },
+        "subText": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EUS10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Eus%C3%A9bio_1966.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Goals",
+          "ar": "9 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcs_r9_2002",
+        "name": {
+          "en": "Ronaldo Nazário (2002)",
+          "ar": "رونالدو الظاهرة (2002)"
+        },
+        "subText": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-top-scorers-historical",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by all-time FIFA World Cup finals goals scored",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي أهدافهم في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All-time tournament finals goals (1930 through 2026)",
+      "ar": "الأهداف المسجلة في النهائيات من 1930 حتى 2026"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "legends", "goals", "klose", "ronaldo", "pele"],
+    "answers": [
+      {
+        "answerKey": "wcg_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Goals",
+          "ar": "16 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcg_r9",
+        "name": {
+          "en": "Ronaldo Nazário",
+          "ar": "رونالدو الظاهرة"
+        },
+        "subText": {
+          "en": "Brazil (1998–2006)",
+          "ar": "البرازيل (1998–2006)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcg_muller_gerd",
+        "name": {
+          "en": "Gerd Müller",
+          "ar": "غيرد مولر"
+        },
+        "subText": {
+          "en": "West Germany (1970–1974)",
+          "ar": "ألمانيا الغربية (1970–1974)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GM9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcg_fontaine",
+        "name": {
+          "en": "Just Fontaine",
+          "ar": "جوست فونتين"
+        },
+        "subText": {
+          "en": "France (1958)",
+          "ar": "فرنسا (1958)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JF9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Just_Fontaine_1958.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Goals",
+          "ar": "13 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcg_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "subText": {
+          "en": "Brazil (1958–1970)",
+          "ar": "البرازيل (1958–1970)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PELE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "international-goals-history",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "goals", "ronaldo", "messi", "legends"],
+    "title": {
+      "en": "Rank these 5 icons by official international senior goals",
+      "ar": "رتّب الأساطير الخمسة حسب عدد الأهداف الدولية الرسمية مع المنتخب الأول"
+    },
+    "subtitle": {
+      "en": "Official FIFA international 'A' matches, as of Aug 2026",
+      "ar": "المباريات الدولية الرسمية المعتمدة من الفيفا حتى أغسطس 2026"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "int_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 133,
+        "valueLabel": {
+          "en": "133 Goals",
+          "ar": "133 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "int_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 112,
+        "valueLabel": {
+          "en": "112 Goals",
+          "ar": "112 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "int_daei",
+        "name": {
+          "en": "Ali Daei",
+          "ar": "علي دائي"
+        },
+        "subText": {
+          "en": "Iran",
+          "ar": "إيران"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "IRN",
+          "primaryUrl": "https://flagcdn.com/w80/ir.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ir.png"
+        },
+        "value": 108,
+        "valueLabel": {
+          "en": "108 Goals",
+          "ar": "108 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "int_chhetri",
+        "name": {
+          "en": "Sunil Chhetri",
+          "ar": "سونيل تشيتري"
+        },
+        "subText": {
+          "en": "India",
+          "ar": "الهند"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "IND",
+          "primaryUrl": "https://flagcdn.com/w80/in.png"
+        },
+        "value": 94,
+        "valueLabel": {
+          "en": "94 Goals",
+          "ar": "94 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "int_lewa",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "subText": {
+          "en": "Poland",
+          "ar": "بولندا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POL",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pl.png"
+        },
+        "value": 84,
+        "valueLabel": {
+          "en": "84 Goals",
+          "ar": "84 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afcon-titles-by-nation",
+    "scopeType": "ALL_TIME",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afcon", "africa", "national-teams", "titles"],
+    "title": {
+      "en": "Rank these 5 African giants by Africa Cup of Nations (AFCON) titles won",
+      "ar": "رتّب عمالقة أفريقيا الخمسة حسب عدد ألقاب كأس الأمم الأفريقية"
+    },
+    "subtitle": {
+      "en": "From tournament inception in 1957 through 2026",
+      "ar": "من أول نسخة عام 1957 وحتى 2026"
+    },
+    "metricLabel": {
+      "en": "AFCON Titles",
+      "ar": "ألقاب أفريقية"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afc_egypt",
+        "name": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "EGY",
+          "primaryUrl": "https://flagcdn.com/w80/eg.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afc_cameroon",
+        "name": {
+          "en": "Cameroon",
+          "ar": "الكاميرون"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CMR",
+          "primaryUrl": "https://flagcdn.com/w80/cm.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afc_ghana",
+        "name": {
+          "en": "Ghana",
+          "ar": "غانا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GHA",
+          "primaryUrl": "https://flagcdn.com/w80/gh.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afc_nigeria",
+        "name": {
+          "en": "Nigeria",
+          "ar": "نيجيريا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NGA",
+          "primaryUrl": "https://flagcdn.com/w80/ng.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afc_algeria",
+        "name": {
+          "en": "Algeria",
+          "ar": "الجزائر"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ALG",
+          "primaryUrl": "https://flagcdn.com/w80/dz.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "uefa-euro-titles-by-nation",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["euro", "uefa", "national-teams", "titles", "europe"],
+    "title": {
+      "en": "Rank these 5 European nations by UEFA European Championship titles won",
+      "ar": "رتّب المنتخبات الأوروبية الخمسة حسب عدد ألقاب كأس أمم أوروبا (اليورو)"
+    },
+    "subtitle": {
+      "en": "From 1960 through Euro 2024",
+      "ar": "من أول نسخة 1960 وحتى يورو 2024"
+    },
+    "metricLabel": {
+      "en": "Euro Titles",
+      "ar": "ألقاب يورو"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "eur_spain",
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eur_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eur_france",
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eur_portugal",
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eur_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Titles",
+          "ar": "0 ألقاب"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-titles-by-nation",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-america", "south-america", "national-teams", "titles"],
+    "title": {
+      "en": "Rank these 5 South American nations by Copa América titles won",
+      "ar": "رتّب منتخبات أمريكا الجنوبية الخمسة حسب عدد ألقاب كوبا أمريكا"
+    },
+    "subtitle": {
+      "en": "From 1916 through 2024",
+      "ar": "من أول نسخة 1916 وحتى 2024"
+    },
+    "metricLabel": {
+      "en": "Copa Titles",
+      "ar": "ألقاب كوبا"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "copa_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Titles",
+          "ar": "16 لقب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "copa_uruguay",
+        "name": {
+          "en": "Uruguay",
+          "ar": "أوروجواي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Titles",
+          "ar": "15 لقب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "copa_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Titles",
+          "ar": "9 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "copa_chile",
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "copa_colombia",
+        "name": {
+          "en": "Colombia",
+          "ar": "كولومبيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "COL",
+          "primaryUrl": "https://flagcdn.com/w80/co.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afcon-all-time-trophies-ranking",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afcon", "africa", "national-teams", "egypt", "titles"],
+    "title": {
+      "en": "Rank these 5 national teams by Africa Cup of Nations (AFCON) titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد مرات الفوز بكأس الأمم الإفريقية"
+    },
+    "subtitle": {
+      "en": "All-time Total AFCON championship titles",
+      "ar": "إجمالي ألقاب كأس الأمم الإفريقية عبر التاريخ"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afcon_egypt",
+        "name": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "subText": {
+          "en": "The Pharaohs",
+          "ar": "الفراعنة"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "EGY",
+          "primaryUrl": "https://flagcdn.com/w80/eg.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afcon_cameroon",
+        "name": {
+          "en": "Cameroon",
+          "ar": "الكاميرون"
+        },
+        "subText": {
+          "en": "The Indomitable Lions",
+          "ar": "الأسود غير المروضة"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CMR",
+          "primaryUrl": "https://flagcdn.com/w80/cm.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afcon_ghana",
+        "name": {
+          "en": "Ghana",
+          "ar": "غانا"
+        },
+        "subText": {
+          "en": "The Black Stars",
+          "ar": "النجوم السوداء"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GHA",
+          "primaryUrl": "https://flagcdn.com/w80/gh.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afcon_nigeria",
+        "name": {
+          "en": "Nigeria",
+          "ar": "نيجيريا"
+        },
+        "subText": {
+          "en": "The Super Eagles",
+          "ar": "النسور الممتازة"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NGA",
+          "primaryUrl": "https://flagcdn.com/w80/ng.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afcon_algeria",
+        "name": {
+          "en": "Algeria",
+          "ar": "الجزائر"
+        },
+        "subText": {
+          "en": "The Desert Warriors",
+          "ar": "محاربو الصحراء"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ALG",
+          "primaryUrl": "https://flagcdn.com/w80/dz.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "euro-all-time-top-scorers-individual",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["euro", "uefa", "goals", "ronaldo", "platini", "griezmann"],
+    "title": {
+      "en": "Rank these 5 players by UEFA EURO tournament goals scored",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد أهدافهم في نهائيات بطولة أمم أوروبا"
+    },
+    "subtitle": {
+      "en": "EURO tournament final tournament goals only",
+      "ar": "الأهداف المسجلة في نهائيات اليورو فقط"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "eur_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (6 Tournaments)",
+          "ar": "البرتغال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eur_platini",
+        "name": {
+          "en": "Michel Platini",
+          "ar": "ميشيل بلاتيني"
+        },
+        "subText": {
+          "en": "France (All 9 in EURO 1984)",
+          "ar": "فرنسا (جميعها في يورو 1984)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PLA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Michel_Platini_1984.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Goals",
+          "ar": "9 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eur_griezmann",
+        "name": {
+          "en": "Antoine Griezmann",
+          "ar": "أنطوان غريزمان"
+        },
+        "subText": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GRI",
+          "primaryUrl": "https://media.api-sports.io/football/players/56.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Goals",
+          "ar": "7 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eur_lukaku",
+        "name": {
+          "en": "Romelu Lukaku",
+          "ar": "روميلو لوكاكو"
+        },
+        "subText": {
+          "en": "Belgium",
+          "ar": "بلجيكا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LUK",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/be.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Goals",
+          "ar": "6 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eur_lewa",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "subText": {
+          "en": "Poland",
+          "ar": "بولندا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pl.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Goals",
+          "ar": "5 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-all-time-titles",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-america", "conmebol", "national-teams", "argentina", "brazil"],
+    "title": {
+      "en": "Rank these 5 national teams by CONMEBOL Copa América titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد مرات الفوز بكوبا أمريكا"
+    },
+    "subtitle": {
+      "en": "All-time Copa América titles (1916 through 2024)",
+      "ar": "ألقاب كوبا أمريكا من 1916 وحتى بطولة 2024"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "copa_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "CONMEBOL",
+          "ar": "كونميبول"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Titles",
+          "ar": "16 لقبًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "copa_uruguay",
+        "name": {
+          "en": "Uruguay",
+          "ar": "أوروجواي"
+        },
+        "subText": {
+          "en": "First Edition Champions (1916)",
+          "ar": "بطل أول نسخة (1916)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Titles",
+          "ar": "15 لقبًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "copa_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Titles",
+          "ar": "9 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "copa_chile",
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "subText": {
+          "en": "Back-to-Back Champions (2015 & 2016)",
+          "ar": "تتويجان متتاليان (2015 و2016)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "copa_colombia",
+        "name": {
+          "en": "Colombia",
+          "ar": "كولومبيا"
+        },
+        "subText": {
+          "en": "2001 Champions",
+          "ar": "بطل نسخة 2001"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "COL",
+          "primaryUrl": "https://flagcdn.com/w80/co.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-goals-european-and-south-american-heavyweights",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "nations", "spain", "england", "netherlands", "uruguay", "portugal"],
+    "title": {
+      "en": "Rank these 5 traditional football nations by all-time FIFA World Cup goals scored",
+      "ar": "رتّب المنتخبات الخمسة حسب إجمالي أهدافها في تاريخ نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All-time World Cup tournament goals scored",
+      "ar": "إجمالي الأهداف المسجلة في تاريخ كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_g_spain",
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "subText": {
+          "en": "World Champions 2010",
+          "ar": "بطل العالم 2010"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
+        },
+        "value": 105,
+        "valueLabel": {
+          "en": "105 Goals",
+          "ar": "105 أهداف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_g_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "subText": {
+          "en": "World Champions 1966",
+          "ar": "بطل العالم 1966"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 104,
+        "valueLabel": {
+          "en": "104 Goals",
+          "ar": "104 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_g_ned",
+        "name": {
+          "en": "Netherlands",
+          "ar": "هولندا"
+        },
+        "subText": {
+          "en": "3x World Cup Finalists",
+          "ar": "وصيف كأس العالم 3 مرات"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NED",
+          "primaryUrl": "https://flagcdn.com/w80/nl.png"
+        },
+        "value": 96,
+        "valueLabel": {
+          "en": "96 Goals",
+          "ar": "96 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_g_uru",
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروغواي"
+        },
+        "subText": {
+          "en": "2x World Champions (1930, 1950)",
+          "ar": "بطل العالم مرتين (1930، 1950)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
+        },
+        "value": 89,
+        "valueLabel": {
+          "en": "89 Goals",
+          "ar": "89 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_g_por",
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "subText": {
+          "en": "3rd place 1966, 4th place 2006",
+          "ar": "برونزية 1966، المركز الرابع 2006"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
+        },
+        "value": 61,
+        "valueLabel": {
+          "en": "61 Goals",
+          "ar": "61 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "euro-all-time-matches-played-nations",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["euro", "uefa", "nations", "germany", "spain", "italy", "portugal"],
+    "title": {
+      "en": "Rank these 5 European nations by total UEFA EURO tournament matches played",
+      "ar": "رتّب المنتخبات الخمسة حسب إجمالي المباريات الملعوبة في تاريخ اليورو"
+    },
+    "subtitle": {
+      "en": "Matches played in UEFA European Championship finals",
+      "ar": "عدد المباريات في نهائيات كأس أمم أوروبا عبر التاريخ"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "eur_m_ger",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "subText": {
+          "en": "3x Champions (14 Tournaments)",
+          "ar": "بطل أوروبا 3 مرات (14 مشاركة)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 58,
+        "valueLabel": {
+          "en": "58 Matches",
+          "ar": "58 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eur_m_esp",
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "subText": {
+          "en": "4x Champions",
+          "ar": "بطل أوروبا 4 مرات"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
+        },
+        "value": 53,
+        "valueLabel": {
+          "en": "53 Matches",
+          "ar": "53 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eur_m_ita",
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "subText": {
+          "en": "2x Champions (1968, 2020)",
+          "ar": "بطل أوروبا مرتين (1968، 2020)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://flagcdn.com/w80/it.png"
+        },
+        "value": 49,
+        "valueLabel": {
+          "en": "49 Matches",
+          "ar": "49 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eur_m_por",
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "subText": {
+          "en": "Champions 2016",
+          "ar": "بطل أوروبا 2016"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
+        },
+        "value": 44,
+        "valueLabel": {
+          "en": "44 Matches",
+          "ar": "44 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eur_m_cze",
+        "name": {
+          "en": "Czech Republic",
+          "ar": "التشيك"
+        },
+        "subText": {
+          "en": "Champions 1976, Finalists 1996",
+          "ar": "بطل 1976، وصيف 1996"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CZE"
+        },
+        "value": 37,
+        "valueLabel": {
+          "en": "37 Matches",
+          "ar": "37 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-all-time-match-wins",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-america", "conmebol", "wins", "argentina", "uruguay", "brazil", "paraguay", "chile"],
+    "title": {
+      "en": "Rank these 5 South American nations by all-time Copa América match wins",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد الانتصارات في تاريخ بطولة كوبا أمريكا"
+    },
+    "subtitle": {
+      "en": "Official match victories in Copa América tournament history",
+      "ar": "إجمالي المباريات التي فاز بها المنتخب في تاريخ كوبا أمريكا"
+    },
+    "metricLabel": {
+      "en": "Wins",
+      "ar": "انتصارات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ca_w_arg",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 132,
+        "valueLabel": {
+          "en": "132 Wins",
+          "ar": "132 فوزًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ca_w_uru",
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروغواي"
+        },
+        "subText": {
+          "en": "15x Champions",
+          "ar": "بطل كوبا أمريكا 15 مرة"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
+        },
+        "value": 115,
+        "valueLabel": {
+          "en": "115 Wins",
+          "ar": "115 فوزًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ca_w_bra",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "9x Champions",
+          "ar": "بطل كوبا أمريكا 9 مرات"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 109,
+        "valueLabel": {
+          "en": "109 Wins",
+          "ar": "109 انتصارات"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ca_w_par",
+        "name": {
+          "en": "Paraguay",
+          "ar": "باراغواي"
+        },
+        "subText": {
+          "en": "2x Champions (1953, 1979)",
+          "ar": "بطل كوبا أمريكا مرتين (1953، 1979)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "PAR",
+          "primaryUrl": "https://flagcdn.com/w80/py.png"
+        },
+        "value": 71,
+        "valueLabel": {
+          "en": "71 Wins",
+          "ar": "71 فوزًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ca_w_chi",
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "subText": {
+          "en": "2x Champions (2015, 2016)",
+          "ar": "بطل كوبا أمريكا مرتين (2015، 2016)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
+        },
+        "value": 67,
+        "valueLabel": {
+          "en": "67 Wins",
+          "ar": "67 فوزًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-runner-up-finishes-nations",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 national teams by FIFA World Cup runner-up (2nd place) finishes",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد مرات الحصول على المركز الثاني (وصيف كأس العالم)"
+    },
+    "subtitle": {
+      "en": "World Cup finals runner-up finishes from 1930 through 2026",
+      "ar": "مرات التواجد كوصيف للبطولة في تاريخ كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Runners-up",
+      "ar": "مرات وصافة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "national-teams", "germany", "netherlands", "france"],
+    "answers": [
+      {
+        "answerKey": "wcr_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "subText": {
+          "en": "1966, 1982, 1986, 2002",
+          "ar": "1966، 1982، 1986، 2002"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Times Runner-up",
+          "ar": "4 مرات وصيف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcr_netherlands",
+        "name": {
+          "en": "Netherlands",
+          "ar": "هولندا"
+        },
+        "subText": {
+          "en": "1974, 1978, 2010",
+          "ar": "1974، 1978، 2010"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NED",
+          "primaryUrl": "https://flagcdn.com/w80/nl.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Times Runner-up",
+          "ar": "3 مرات وصيف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcr_france",
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "subText": {
+          "en": "2006, 2022",
+          "ar": "2006، 2022"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Times Runner-up",
+          "ar": "مرتان وصيف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcr_croatia",
+        "name": {
+          "en": "Croatia",
+          "ar": "كرواتيا"
+        },
+        "subText": {
+          "en": "2018",
+          "ar": "2018"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CRO",
+          "primaryUrl": "https://flagcdn.com/w80/hr.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Time Runner-up",
+          "ar": "مرة واحدة وصيف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcr_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "subText": {
+          "en": "Never runner-up (Won in 1966)",
+          "ar": "لم تخسر أي نهائي (فازت بـ 1966)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Times Runner-up",
+          "ar": "0 وصافة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "uefa-euro-titles-national-teams-records",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 national teams by UEFA European Championship titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد ألقاب كأس أمم أوروبا (اليورو)"
+    },
+    "subtitle": {
+      "en": "UEFA EURO titles from 1960 through EURO 2024",
+      "ar": "ألقاب بطولة أمم أوروبا من 1960 حتى 2024"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["euro", "uefa", "spain", "germany", "italy"],
+    "answers": [
+      {
+        "answerKey": "eut_spain",
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "subText": {
+          "en": "1964, 2008, 2012, 2024",
+          "ar": "1964، 2008، 2012، 2024"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eut_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "subText": {
+          "en": "1972, 1980, 1996",
+          "ar": "1972، 1980، 1996"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eut_italy",
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "subText": {
+          "en": "1968, 2020",
+          "ar": "1968، 2020"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://flagcdn.com/w80/it.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eut_portugal",
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "subText": {
+          "en": "2016",
+          "ar": "2016"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eut_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "subText": {
+          "en": "Runners-up in 2020 & 2024",
+          "ar": "وصيف نسختي 2020 و2024"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Titles",
+          "ar": "0 ألقاب"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-titles-national-teams-all-time",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 South American national teams by CONMEBOL Copa América titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد ألقاب كوبا أمريكا"
+    },
+    "subtitle": {
+      "en": "South American championship from 1916 to present",
+      "ar": "أقدم بطولة قارية للمنتخبات في العالم"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-america", "conmebol", "argentina", "uruguay", "brazil"],
+    "answers": [
+      {
+        "answerKey": "cat_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Titles",
+          "ar": "16 لقبًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cat_uruguay",
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروجواي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Titles",
+          "ar": "15 لقبًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cat_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Titles",
+          "ar": "9 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cat_chile",
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cat_colombia",
+        "name": {
+          "en": "Colombia",
+          "ar": "كولومبيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "COL",
+          "primaryUrl": "https://flagcdn.com/w80/co.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afcon-titles-national-teams-records",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 African national teams by Africa Cup of Nations (AFCON) titles won",
+      "ar": "رتّب المنتخبات الإفريقية الخمسة حسب عدد ألقاب كأس أمم إفريقيا (كان)"
+    },
+    "subtitle": {
+      "en": "CAF Africa Cup of Nations history (1957 to present)",
+      "ar": "السجل التاريخي لبطولة كأس الأمم الإفريقية"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afcon", "caf", "egypt", "cameroon", "ghana", "nigeria"],
+    "answers": [
+      {
+        "answerKey": "afc_egypt",
+        "name": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "subText": {
+          "en": "1957, 1959, 1986, 1998, 2006, 2008, 2010",
+          "ar": "1957، 1959، 1986، 1998، 2006، 2008، 2010"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "EGY",
+          "primaryUrl": "https://flagcdn.com/w80/eg.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afc_cameroon",
+        "name": {
+          "en": "Cameroon",
+          "ar": "الكاميرون"
+        },
+        "subText": {
+          "en": "1984, 1988, 2000, 2002, 2017",
+          "ar": "1984، 1988، 2000، 2002، 2017"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CMR",
+          "primaryUrl": "https://flagcdn.com/w80/cm.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afc_ghana",
+        "name": {
+          "en": "Ghana",
+          "ar": "غانا"
+        },
+        "subText": {
+          "en": "1963, 1965, 1978, 1982",
+          "ar": "1963، 1965، 1978، 1982"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GHA",
+          "primaryUrl": "https://flagcdn.com/w80/gh.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afc_nigeria",
+        "name": {
+          "en": "Nigeria",
+          "ar": "نيجيريا"
+        },
+        "subText": {
+          "en": "1980, 1994, 2013",
+          "ar": "1980، 1994، 2013"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NGA",
+          "primaryUrl": "https://flagcdn.com/w80/ng.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afc_algeria",
+        "name": {
+          "en": "Algeria",
+          "ar": "الجزائر"
+        },
+        "subText": {
+          "en": "1990, 2019",
+          "ar": "1990، 2019"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ALG",
+          "primaryUrl": "https://flagcdn.com/w80/dz.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afc-asian-cup-titles-national-teams",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 Asian national teams by AFC Asian Cup titles won",
+      "ar": "رتّب المنتخبات الآسيوية الخمسة حسب عدد ألقاب كأس آسيا"
+    },
+    "subtitle": {
+      "en": "AFC Asian Cup champions (1956 to present)",
+      "ar": "السجل التاريخي لبطولة كأس آسيا للمنتخبات"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["asian-cup", "afc", "japan", "saudi-arabia", "south-korea"],
+    "answers": [
+      {
+        "answerKey": "act_japan",
+        "name": {
+          "en": "Japan",
+          "ar": "اليابان"
+        },
+        "subText": {
+          "en": "1992, 2000, 2004, 2011",
+          "ar": "1992، 2000، 2004، 2011"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "JPN",
+          "primaryUrl": "https://flagcdn.com/w80/jp.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "act_saudi",
+        "name": {
+          "en": "Saudi Arabia",
+          "ar": "السعودية"
+        },
+        "subText": {
+          "en": "1984, 1988, 1996",
+          "ar": "1984، 1988، 1996"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "KSA",
+          "primaryUrl": "https://flagcdn.com/w80/sa.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "act_korea",
+        "name": {
+          "en": "South Korea",
+          "ar": "كوريا الجنوبية"
+        },
+        "subText": {
+          "en": "1956, 1960",
+          "ar": "1956، 1960"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "KOR",
+          "primaryUrl": "https://flagcdn.com/w80/kr.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "act_australia",
+        "name": {
+          "en": "Australia",
+          "ar": "أستراليا"
+        },
+        "subText": {
+          "en": "2015",
+          "ar": "2015"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "AUS",
+          "primaryUrl": "https://flagcdn.com/w80/au.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "act_china",
+        "name": {
+          "en": "China",
+          "ar": "الصين"
+        },
+        "subText": {
+          "en": "Runners-up in 1984 & 2004",
+          "ar": "وصيف نسختي 1984 و2004"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHN",
+          "primaryUrl": "https://flagcdn.com/w80/cn.png"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Titles",
+          "ar": "0 ألقاب"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-tournament-appearances-nations",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 national teams by total FIFA World Cup tournament appearances",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد مرات التأهل والمشاركة في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "From 1930 through 2026 World Cup editions",
+      "ar": "من أول نسخة عام 1930 وحتى نسخة 2026"
+    },
+    "metricLabel": {
+      "en": "Tournaments",
+      "ar": "بطولات"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "appearances", "brazil", "germany", "argentina"],
+    "answers": [
+      {
+        "answerKey": "wca_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "Only nation to play every edition",
+          "ar": "المنتخب الوحيد الحاضر في كل النسخ"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Editions",
+          "ar": "23 مشاركة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wca_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Editions",
+          "ar": "21 مشاركة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wca_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Editions",
+          "ar": "19 مشاركة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wca_italy",
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://flagcdn.com/w80/it.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Editions",
+          "ar": "18 مشاركة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wca_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Editions",
+          "ar": "17 مشاركة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "uefa-euro-appearances-players-history",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by total matches played in UEFA EURO finals history",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات الملعوبة في نهائيات كأس أمم أوروبا (اليورو)"
+    },
+    "subtitle": {
+      "en": "UEFA European Championship finals matches (1960–2024)",
+      "ar": "مباريات نهائيات اليورو من 1960 حتى 2024"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["euro", "appearances", "cr7", "pepe", "neuer", "kroos"],
+    "answers": [
+      {
+        "answerKey": "eum_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (6 Tournaments: 2004–2024)",
+          "ar": "البرتغال (6 نسخ: 2004–2024)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30 Matches",
+          "ar": "30 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eum_pepe",
+        "name": {
+          "en": "Pepe",
+          "ar": "بيبي"
+        },
+        "subText": {
+          "en": "Portugal (2008–2024)",
+          "ar": "البرتغال (2008–2024)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PEP3",
+          "primaryUrl": "https://media.api-sports.io/football/players/742.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Matches",
+          "ar": "23 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eum_neuer",
+        "name": {
+          "en": "Manuel Neuer",
+          "ar": "مانويل نوير"
+        },
+        "subText": {
+          "en": "Germany (2012–2024)",
+          "ar": "ألمانيا (2012–2024)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MN1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Manuel_Neuer_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Matches",
+          "ar": "20 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eum_kroos",
+        "name": {
+          "en": "Toni Kroos",
+          "ar": "توني كروس"
+        },
+        "subText": {
+          "en": "Germany (2012–2024)",
+          "ar": "ألمانيا (2012–2024)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TK8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Toni_Kroos_Real_Madrid_2021.jpg/330px-Toni_Kroos_Real_Madrid_2021.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Matches",
+          "ar": "19 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eum_buffon",
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "subText": {
+          "en": "Italy (2004–2016)",
+          "ar": "إيطاليا (2004–2016)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GIGI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/it.png"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Matches",
+          "ar": "17 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-highest-scoring-single-matches",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legendary FIFA World Cup fixtures by total goals scored",
+      "ar": "رتّب المباريات التاريخية الخمس في كأس العالم حسب إجمالي الأهداف المسجلة"
+    },
+    "subtitle": {
+      "en": "Highest-scoring single matches in World Cup history",
+      "ar": "المباريات الأكثر غزارة تهديفية في تاريخ المونديال"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "high-scoring", "matches", "history"],
+    "answers": [
+      {
+        "answerKey": "hsm_aut_sui_1954",
+        "name": {
+          "en": "Austria 7–5 Switzerland (1954)",
+          "ar": "النمسا 7–5 سويسرا (1954)"
+        },
+        "subText": {
+          "en": "Quarter-finals (12 goals total)",
+          "ar": "ربع النهائي (12 هدفًا)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "AUT-SUI"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "hsm_bra_pol_1938",
+        "name": {
+          "en": "Brazil 6–5 Poland (1938)",
+          "ar": "البرازيل 6–5 بولندا (1938)"
+        },
+        "subText": {
+          "en": "Round of 16 (11 goals total)",
+          "ar": "دور الـ16 (11 هدفًا)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "BRA-POL"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Goals",
+          "ar": "11 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "hsm_fra_par_1958",
+        "name": {
+          "en": "France 7–3 Paraguay (1958)",
+          "ar": "فرنسا 7–3 باراغواي (1958)"
+        },
+        "subText": {
+          "en": "Group Stage (10 goals total)",
+          "ar": "دور المجموعات (10 أهداف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "FRA-PAR"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "hsm_yug_zai_1974",
+        "name": {
+          "en": "Yugoslavia 9–0 Zaire (1974)",
+          "ar": "يوغوسلافيا 9–0 زائير (1974)"
+        },
+        "subText": {
+          "en": "Group Stage (9 goals total)",
+          "ar": "دور المجموعات (9 أهداف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "YUG-ZAI"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Goals",
+          "ar": "9 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "hsm_ger_bra_2014",
+        "name": {
+          "en": "Germany 7–1 Brazil (2014)",
+          "ar": "ألمانيا 7–1 البرازيل (2014)"
+        },
+        "subText": {
+          "en": "Semi-finals (8 goals total)",
+          "ar": "نصف النهائي (8 أهداف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "GER-BRA"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-yellow-cards-single-match-records",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 volatile World Cup matches by total yellow cards shown",
+      "ar": "رتّب المباريات الخمس في كأس العالم حسب عدد البطاقات الصفراء المشهرة"
+    },
+    "subtitle": {
+      "en": "Most ill-tempered clashes in FIFA World Cup history",
+      "ar": "أكثر المباريات شراسة وتوترًا بالبطاقات في تاريخ المونديال"
+    },
+    "metricLabel": {
+      "en": "Yellow Cards",
+      "ar": "بطاقات صفراء"
+    },
+    "direction": "desc",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "disciplinary", "yellow-cards", "cards"],
+    "answers": [
+      {
+        "answerKey": "ycr_ned_arg_2022",
+        "name": {
+          "en": "Netherlands vs Argentina (2022)",
+          "ar": "هولندا ضد الأرجنتين (2022)"
+        },
+        "subText": {
+          "en": "Battle of Lusail (Antonio Mateu Lahoz)",
+          "ar": "معركة لوسيل (الحكم ماتيو لاهوز)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "NED-ARG",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/us.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Yellow Cards",
+          "ar": "18 بطاقة صفراء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ycr_por_ned_2006",
+        "name": {
+          "en": "Portugal vs Netherlands (2006)",
+          "ar": "البرتغال ضد هولندا (2006)"
+        },
+        "subText": {
+          "en": "Battle of Nuremberg (Valentin Ivanov)",
+          "ar": "معركة نورمبرغ (الحكم فالنتين إيفانوف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "POR-NED"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Yellow Cards",
+          "ar": "16 بطاقة صفراء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ycr_cmr_ger_2002",
+        "name": {
+          "en": "Cameroon vs Germany (2002)",
+          "ar": "الكاميرون ضد ألمانيا (2002)"
+        },
+        "subText": {
+          "en": "Group Stage (Antonio López Nieto)",
+          "ar": "دور المجموعات (أنطونيو لوبيز نييتو)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "CMR-GER"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Yellow Cards",
+          "ar": "14 بطاقة صفراء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ycr_sen_uru_2002",
+        "name": {
+          "en": "Senegal vs Uruguay (2002)",
+          "ar": "السنغال ضد الأوروجواي (2002)"
+        },
+        "subText": {
+          "en": "Group Stage (Jan Wegereef)",
+          "ar": "دور المجموعات (يان فيغيريف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "SEN-URU"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Yellow Cards",
+          "ar": "12 بطاقة صفراء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ycr_arg_eng_1998",
+        "name": {
+          "en": "Argentina vs England (1998)",
+          "ar": "الأرجنتين ضد إنجلترا (1998)"
+        },
+        "subText": {
+          "en": "Round of 16 (Kim Milton Nielsen)",
+          "ar": "دور الـ16 (كيم ميلتون نيلسن)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "ARG-ENG"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Yellow Cards",
+          "ar": "8 بطاقات صفراء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "fastest-world-cup-goals-seconds",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "fastest", "goals", "records", "seconds"],
+    "title": {
+      "en": "Rank these 5 lightning World Cup goals by fastest time scored (fastest first)",
+      "ar": "رتّب أسرع أهداف كأس العالم الخمسة بالثواني (الأسرع أولاً)"
+    },
+    "subtitle": {
+      "en": "Exact seconds elapsed from kickoff to the ball crossing the line",
+      "ar": "الوقت المستغرق بالثواني من صافرة البداية حتى دخول الكرة الشباك"
+    },
+    "metricLabel": {
+      "en": "Seconds",
+      "ar": "ثوانٍ"
+    },
+    "direction": "asc",
+    "answers": [
+      {
+        "answerKey": "fwc_sukuro",
+        "name": {
+          "en": "Hakan Şükür (2002)",
+          "ar": "هاكان شوكور (2002)"
+        },
+        "subText": {
+          "en": "Turkey vs South Korea",
+          "ar": "تركيا ضد كوريا الجنوبية"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SUK",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hakan.jpg/330px-Hakan.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/kr.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "10.8 Seconds",
+          "ar": "10.8 ثانية"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fwc_masek",
+        "name": {
+          "en": "Václav Mašek (1962)",
+          "ar": "فاتسلاف ماشيك (1962)"
+        },
+        "subText": {
+          "en": "Czechoslovakia vs Mexico",
+          "ar": "تشيكوسلوفاكيا ضد المكسيك"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MAS",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/mx.png"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16.0 Seconds",
+          "ar": "16.0 ثانية"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fwc_lehner",
+        "name": {
+          "en": "Ernst Lehner (1934)",
+          "ar": "إرنست لينر (1934)"
+        },
+        "subText": {
+          "en": "Germany vs Austria",
+          "ar": "ألمانيا ضد النمسا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LEH",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "24.6 Seconds",
+          "ar": "24.6 ثانية"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fwc_robson",
+        "name": {
+          "en": "Bryan Robson (1982)",
+          "ar": "براين روبسون (1982)"
+        },
+        "subText": {
+          "en": "England vs France",
+          "ar": "إنجلترا ضد فرنسا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ROB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Bryan_Robson_2011.jpg/330px-Bryan_Robson_2011.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 27,
+        "valueLabel": {
+          "en": "27.0 Seconds",
+          "ar": "27.0 ثانية"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fwc_dempsey",
+        "name": {
+          "en": "Clint Dempsey (2014)",
+          "ar": "كلينت ديمبسي (2014)"
+        },
+        "subText": {
+          "en": "USA vs Ghana",
+          "ar": "أمريكا ضد غانا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DEM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg/330px-Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/gh.png"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30.0 Seconds",
+          "ar": "30.0 ثانية"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-matches-played-legends",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "appearances", "messi", "matthaus", "klose", "maldini", "cr7"],
+    "title": {
+      "en": "Rank these 5 legends by career FIFA World Cup matches played",
+      "ar": "رتّب الأساطير الخمسة حسب عدد مبارياتهم في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All-time World Cup finals match appearances",
+      "ar": "إجمالي المباريات الملعوبة في نهائيات كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wcm_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina (2006–2022)",
+          "ar": "الأرجنتين (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 26,
+        "valueLabel": {
+          "en": "26 Matches",
+          "ar": "26 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcm_matthaus",
+        "name": {
+          "en": "Lothar Matthäus",
+          "ar": "لوثار ماتيوس"
+        },
+        "subText": {
+          "en": "Germany (5 Tournaments 1982–1998)",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MAT",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lothar_Matth%C3%A4us_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Matches",
+          "ar": "25 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcm_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 24,
+        "valueLabel": {
+          "en": "24 Matches",
+          "ar": "24 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcm_maldini",
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "Italy (4 Tournaments 1990–2002)",
+          "ar": "إيطاليا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MAL3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/it.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Matches",
+          "ar": "23 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcm_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (5 Tournaments 2006–2022)",
+          "ar": "البرتغال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22 Matches",
+          "ar": "22 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-tournaments-played-without-winning-title",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "nations", "mexico", "belgium", "switzerland", "chile", "scotland"],
+    "title": {
+      "en": "Rank these 5 nations by World Cup finals tournaments played without ever lifting the trophy",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد المشاركات في كأس العالم دون التتويج باللقب"
+    },
+    "subtitle": {
+      "en": "Most tournament qualifications without winning a World Cup title",
+      "ar": "أكثر المنتخبات مشاركة في نهائيات كأس العالم دون الفوز بالبطولة"
+    },
+    "metricLabel": {
+      "en": "Tournaments",
+      "ar": "مشاركات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ntt_mexico",
+        "name": {
+          "en": "Mexico",
+          "ar": "المكسيك"
+        },
+        "subText": {
+          "en": "Most Qualifications Without Title",
+          "ar": "الأكثر وصولاً للنهائيات دون تتويج"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "MEX",
+          "primaryUrl": "https://flagcdn.com/w80/mx.png"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Tournaments",
+          "ar": "17 مشاركة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ntt_belgium",
+        "name": {
+          "en": "Belgium",
+          "ar": "بلجيكا"
+        },
+        "subText": {
+          "en": "Best: 3rd Place in 2018",
+          "ar": "أفضل مركز: المركز الثالث 2018"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BEL",
+          "primaryUrl": "https://flagcdn.com/w80/be.png"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Tournaments",
+          "ar": "14 مشاركة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ntt_swiss",
+        "name": {
+          "en": "Switzerland",
+          "ar": "سويسرا"
+        },
+        "subText": {
+          "en": "Best: Quarter-Finals",
+          "ar": "أفضل مركز: ربع النهائي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "SUI",
+          "primaryUrl": "https://flagcdn.com/w80/ch.png"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Tournaments",
+          "ar": "12 مشاركة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ntt_chile",
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "subText": {
+          "en": "Best: 3rd Place in 1962",
+          "ar": "أفضل مركز: المركز الثالث 1962"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Tournaments",
+          "ar": "9 مشاركات"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ntt_scotland",
+        "name": {
+          "en": "Scotland",
+          "ar": "إسكتلندا"
+        },
+        "subText": {
+          "en": "Group Stage Exits",
+          "ar": "ودّعت دائمًا من دور المجموعات"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "SCO"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Tournaments",
+          "ar": "8 مشاركات"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "longest-unbeaten-streaks-international",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "unbeaten", "records", "italy", "argentina", "spain", "france", "colombia"],
+    "title": {
+      "en": "Rank these 5 national teams by longest unbeaten match streak in international football history",
+      "ar": "رتّب المنتخبات الخمسة حسب أطول سلسلة مباريات متتالية دون هزيمة في تاريخ كرة القدم الدولية"
+    },
+    "subtitle": {
+      "en": "Consecutive international matches without defeat",
+      "ar": "المباريات الدولية المتتالية دون خسارة للمنتخب الأول"
+    },
+    "metricLabel": {
+      "en": "Unbeaten Matches",
+      "ar": "مباريات دون هزيمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "unbi_italy",
+        "name": {
+          "en": "Italy (2018–2021)",
+          "ar": "إيطاليا (2018–2021)"
+        },
+        "subText": {
+          "en": "Roberto Mancini",
+          "ar": "روبرتو مانشيني"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://flagcdn.com/w80/it.png"
+        },
+        "value": 37,
+        "valueLabel": {
+          "en": "37 Matches",
+          "ar": "37 مباراة دون هزيمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "unbi_argentina",
+        "name": {
+          "en": "Argentina (2019–2022)",
+          "ar": "الأرجنتين (2019–2022)"
+        },
+        "subText": {
+          "en": "Lionel Scaloni (La Scaloneta)",
+          "ar": "ليونيل سكالوني (لا سكالونيتا)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 36,
+        "valueLabel": {
+          "en": "36 Matches",
+          "ar": "36 مباراة دون هزيمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "unbi_spain",
+        "name": {
+          "en": "Spain (2006–2009)",
+          "ar": "إسبانيا (2006–2009)"
+        },
+        "subText": {
+          "en": "Luis Aragonés & Vicente del Bosque",
+          "ar": "لويس أراغونيس وفيثينتي ديل بوسكي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
+        },
+        "value": 35,
+        "valueLabel": {
+          "en": "35 Matches",
+          "ar": "35 مباراة دون هزيمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "unbi_france",
+        "name": {
+          "en": "France (1994–1999)",
+          "ar": "فرنسا (1994–1999)"
+        },
+        "subText": {
+          "en": "Aimé Jacquet (1998 World Cup Era)",
+          "ar": "إيميه جاكيه (جيل بطل مونديال 1998)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30 Matches",
+          "ar": "30 مباراة دون هزيمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "unbi_colombia",
+        "name": {
+          "en": "Colombia (2022–2024)",
+          "ar": "كولومبيا (2022–2024)"
+        },
+        "subText": {
+          "en": "Néstor Lorenzo (2024 Copa Finalists)",
+          "ar": "نيستور لورينزو (وصيف كوبا أمريكا 2024)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "COL",
+          "primaryUrl": "https://flagcdn.com/w80/co.png"
+        },
+        "value": 28,
+        "valueLabel": {
+          "en": "28 Matches",
+          "ar": "28 مباراة دون هزيمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afc-asian-cup-all-time-titles",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afc", "asia", "asian-cup", "japan", "saudi", "qatar", "australia", "jordan"],
+    "title": {
+      "en": "Rank these 5 Asian nations by AFC Asian Cup titles won",
+      "ar": "رتّب المنتخبات الآسيوية الخمسة حسب عدد ألقاب كأس أمم آسيا"
+    },
+    "subtitle": {
+      "en": "Official AFC Asian Cup championships won",
+      "ar": "بطولات كأس أمم آسيا عبر التاريخ"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afc_japan",
+        "name": {
+          "en": "Japan",
+          "ar": "اليابان"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "JPN",
+          "primaryUrl": "https://flagcdn.com/w80/jp.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afc_saudi",
+        "name": {
+          "en": "Saudi Arabia",
+          "ar": "المملكة العربية السعودية"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "KSA",
+          "primaryUrl": "https://flagcdn.com/w80/sa.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afc_qatar",
+        "name": {
+          "en": "Qatar",
+          "ar": "قطر"
+        },
+        "subText": {
+          "en": "",
+          "ar": "تتويجان متتاليان (2019، 2023)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "QAT",
+          "primaryUrl": "https://flagcdn.com/w80/qa.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afc_australia",
+        "name": {
+          "en": "Australia",
+          "ar": "أستراليا"
+        },
+        "subText": {
+          "en": "Champions in 2015",
+          "ar": "بطل نسخة 2015"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "AUS",
+          "primaryUrl": "https://flagcdn.com/w80/au.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afc_jordan",
+        "name": {
+          "en": "Jordan",
+          "ar": "الأردن"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "JOR"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Titles",
+          "ar": "0 ألقاب"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-matches-coached",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "coaches", "managers", "schon", "parreira", "scolari", "zagallo", "deschamps"],
+    "title": {
+      "en": "Rank these 5 legendary managers by total FIFA World Cup matches coached",
+      "ar": "رتّب المدربين الأساطير الخمسة حسب عدد المباريات التي قادوها من دكة البدلاء في كأس العالم"
+    },
+    "subtitle": {
+      "en": "Total matches as head coach in FIFA World Cup finals",
+      "ar": "إجمالي المباريات كمدير فني في نهائيات كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Matches Coached",
+      "ar": "مباريات تدريبية"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wcc_schon",
+        "name": {
+          "en": "Helmut Schön",
+          "ar": "هيلموت شون"
+        },
+        "subText": {
+          "en": "West Germany (1966–1978)",
+          "ar": "ألمانيا الغربية (1966–1978)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "SCH",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Matches",
+          "ar": "25 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcc_parreira",
+        "name": {
+          "en": "Carlos Alberto Parreira",
+          "ar": "كارلوس ألبرتو بيريرا"
+        },
+        "subText": {
+          "en": "Kuwait, UAE, Brazil, Saudi Arabia, South Africa (6 World Cups)",
+          "ar": "الكويت والإمارات والبرازيل والسعودية وجنوب إفريقيا (6 مونديالات)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "CAP",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 24,
+        "valueLabel": {
+          "en": "24 Matches",
+          "ar": "24 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcc_scolari",
+        "name": {
+          "en": "Luiz Felipe Scolari",
+          "ar": "لويس فيليبي سكولاري"
+        },
+        "subText": {
+          "en": "Brazil (2002, 2014) & Portugal (2006)",
+          "ar": "البرازيل (2002، 2014) والبرتغال (2006)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "LFS",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Matches",
+          "ar": "21 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcc_zagallo",
+        "name": {
+          "en": "Mário Zagallo",
+          "ar": "ماريو زاغالو"
+        },
+        "subText": {
+          "en": "Brazil (1970, 1974, 1998)",
+          "ar": "البرازيل (1970، 1974، 1998)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "ZAG",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Matches",
+          "ar": "20 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcc_deschamps",
+        "name": {
+          "en": "Didier Deschamps",
+          "ar": "ديدييه ديشان"
+        },
+        "subText": {
+          "en": "France (2014, 2018 Champion, 2022 Finalist)",
+          "ar": "فرنسا (2014، بطل 2018، وصيف 2022)"
+        },
+        "media": {
+          "type": "custom",
+          "fallbackText": "DD",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Matches",
+          "ar": "19 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-red-cards-nations",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "red-cards", "brazil", "argentina", "uruguay", "italy", "portugal"],
+    "title": {
+      "en": "Rank these 5 national teams by career FIFA World Cup red cards received",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد البطاقات الحمراء في تاريخ نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "Total dismissals in FIFA World Cup finals history",
+      "ar": "إجمالي حالات الطرد والبطاقات الحمراء في تاريخ كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Red Cards",
+      "ar": "بطاقات حمراء"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wcr_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "",
+          "ar": "11 بطاقة حمراء"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Red Cards",
+          "ar": "11 بطاقة حمراء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcr_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Red Cards",
+          "ar": "10 بطاقات حمراء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcr_uruguay",
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروغواي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Red Cards",
+          "ar": "9 بطاقات حمراء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcr_italy",
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://flagcdn.com/w80/it.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Red Cards",
+          "ar": "8 بطاقات حمراء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcr_portugal",
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Red Cards",
+          "ar": "6 بطاقات حمراء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-all-time-goals-scored-nations",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["copa-america", "goals", "argentina", "brazil", "uruguay", "chile", "paraguay"],
+    "title": {
+      "en": "Rank these 5 South American nations by all-time Copa América goals scored",
+      "ar": "رتّب المنتخبات الخمسة حسب إجمالي الأهداف المسجلة في تاريخ بطولة كوبا أمريكا"
+    },
+    "subtitle": {
+      "en": "Total goals scored in Copa América tournament history",
+      "ar": "إجمالي الأهداف في تاريخ كوبا أمريكا"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cag_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 483,
+        "valueLabel": {
+          "en": "483 Goals",
+          "ar": "483 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cag_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 435,
+        "valueLabel": {
+          "en": "435 Goals",
+          "ar": "435 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cag_uruguay",
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروغواي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
+        },
+        "value": 418,
+        "valueLabel": {
+          "en": "418 Goals",
+          "ar": "418 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cag_chile",
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
+        },
+        "value": 291,
+        "valueLabel": {
+          "en": "291 Goals",
+          "ar": "291 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cag_paraguay",
+        "name": {
+          "en": "Paraguay",
+          "ar": "باراغواي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "PAR",
+          "primaryUrl": "https://flagcdn.com/w80/py.png"
+        },
+        "value": 267,
+        "valueLabel": {
+          "en": "267 Goals",
+          "ar": "267 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-titles-all-time",
+    "scopeType": "ALL_TIME",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "world-cup", "titles"],
+    "title": {
+      "en": "Rank these 5 national teams by FIFA World Cup titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد ألقاب كأس العالم"
+    },
+    "subtitle": {
+      "en": "From 1930 through 2026 tournaments",
+      "ar": "من 1930 وحتى بطولة 2026"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_t_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_t_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_t_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_t_france",
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_t_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-wins-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "world-cup", "wins"],
+    "title": {
+      "en": "Rank these 5 national teams by FIFA World Cup matches won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد الانتصارات في كأس العالم"
+    },
+    "subtitle": {
+      "en": "Total matches won in World Cup finals history",
+      "ar": "إجمالي المباريات التي فاز بها المنتخب في النهائيات حتى 2026"
+    },
+    "metricLabel": {
+      "en": "Wins",
+      "ar": "انتصارات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_w_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 79,
+        "valueLabel": {
+          "en": "79 Wins",
+          "ar": "79 فوز"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_w_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 70,
+        "valueLabel": {
+          "en": "70 Wins",
+          "ar": "70 فوز"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_w_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 54,
+        "valueLabel": {
+          "en": "54 Wins",
+          "ar": "54 فوز"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_w_france",
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
+        },
+        "value": 45,
+        "valueLabel": {
+          "en": "45 Wins",
+          "ar": "45 فوز"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_w_netherlands",
+        "name": {
+          "en": "Netherlands",
+          "ar": "هولندا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NED",
+          "primaryUrl": "https://flagcdn.com/w80/nl.png"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Wins",
+          "ar": "32 فوز"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-goals-scored",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "world-cup", "goals"],
+    "title": {
+      "en": "Rank these 5 national teams by total FIFA World Cup goals scored",
+      "ar": "رتّب المنتخبات الخمسة حسب إجمالي الأهداف المسجلة في كأس العالم"
+    },
+    "subtitle": {
+      "en": "Finals tournament goals from 1930 through 2026",
+      "ar": "شامل أهداف نهائيات كأس العالم من 1930 حتى 2026"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_g_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 247,
+        "valueLabel": {
+          "en": "247 Goals",
+          "ar": "247 هدف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_g_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 232,
+        "valueLabel": {
+          "en": "232 Goals",
+          "ar": "232 هدف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_g_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 155,
+        "valueLabel": {
+          "en": "155 Goals",
+          "ar": "155 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_g_france",
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
+        },
+        "value": 145,
+        "valueLabel": {
+          "en": "145 Goals",
+          "ar": "145 هدف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_g_spain",
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
+        },
+        "value": 105,
+        "valueLabel": {
+          "en": "105 Goals",
+          "ar": "105 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afcon-all-time-top-scorers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["afcon", "africa", "goals", "eto", "hassan"],
+    "title": {
+      "en": "Rank these 5 African legends by all-time Africa Cup of Nations (AFCON) goals",
+      "ar": "رتّب أساطير أفريقيا الخمسة حسب إجمالي أهدافهم في تاريخ كأس الأمم الأفريقية"
+    },
+    "subtitle": {
+      "en": "AFCON finals tournaments goals in history",
+      "ar": "الأهداف في نهائيات أمم أفريقيا عبر التاريخ"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afg_etoo",
+        "name": {
+          "en": "Samuel Eto'o",
+          "ar": "صامويل إيتو"
+        },
+        "subText": {
+          "en": "Cameroon",
+          "ar": "الكاميرون"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SE9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sammuel_Eto%27o_Fils_02.jpg/330px-Sammuel_Eto%27o_Fils_02.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/cm.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Goals",
+          "ar": "18 هدف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afg_pokou",
+        "name": {
+          "en": "Laurent Pokou",
+          "ar": "لوران بوكو"
+        },
+        "subText": {
+          "en": "Ivory Coast",
+          "ar": "ساحل العاج"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LP",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Laurent_Pokou_1970.jpg/330px-Laurent_Pokou_1970.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ci.png"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afg_yekini",
+        "name": {
+          "en": "Rashidi Yekini",
+          "ar": "رشيدي يقيني"
+        },
+        "subText": {
+          "en": "Nigeria",
+          "ar": "نيجيريا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RY9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Rashidi_Yekini_1994.jpg/330px-Rashidi_Yekini_1994.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ng.png"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Goals",
+          "ar": "13 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afg_hassan",
+        "name": {
+          "en": "Hassan El-Shazly",
+          "ar": "حسن الشاذلي"
+        },
+        "subText": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "HS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Hassan_El-Shazly.jpg/330px-Hassan_El-Shazly.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/eg.png"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afg_drogba",
+        "name": {
+          "en": "Didier Drogba",
+          "ar": "ديدييه دروغبا"
+        },
+        "subText": {
+          "en": "Ivory Coast",
+          "ar": "ساحل العاج"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DD11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Didier_Drogba_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ci.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Goals",
+          "ar": "11 هدف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "most-international-caps-all-time",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["international", "caps", "national-teams", "cr7", "messi"],
+    "title": {
+      "en": "Rank these 5 legends by official senior international caps earned",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات الدولية الرسمية مع المنتخب الأول"
+    },
+    "subtitle": {
+      "en": "Official FIFA international caps in history",
+      "ar": "المباريات الدولية المعتمدة من فيفا عبر التاريخ"
+    },
+    "metricLabel": {
+      "en": "Caps",
+      "ar": "مباريات دولية"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cap_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 216,
+        "valueLabel": {
+          "en": "216 Caps",
+          "ar": "216 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cap_mutawa",
+        "name": {
+          "en": "Bader Al-Mutawa",
+          "ar": "بدر المطوع"
+        },
+        "subText": {
+          "en": "Kuwait",
+          "ar": "الكويت"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "KUW",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bader_Al-Mutawa_2019.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/kw.png"
+        },
+        "value": 196,
+        "valueLabel": {
+          "en": "196 Caps",
+          "ar": "196 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cap_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 190,
+        "valueLabel": {
+          "en": "190 Caps",
+          "ar": "190 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cap_hassan",
+        "name": {
+          "en": "Ahmed Hassan",
+          "ar": "أحمد حسن"
+        },
+        "subText": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "EGY",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Ahmed_Hassan_2010.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/eg.png"
+        },
+        "value": 184,
+        "valueLabel": {
+          "en": "184 Caps",
+          "ar": "184 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cap_ramos",
+        "name": {
+          "en": "Sergio Ramos",
+          "ar": "سيرجيو راموس"
+        },
+        "subText": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/es.png"
+        },
+        "value": 180,
+        "valueLabel": {
+          "en": "180 Caps",
+          "ar": "180 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-matches-played-by-player",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "matches", "players", "messi", "matthaus"],
+    "title": {
+      "en": "Rank these 5 legends by total FIFA World Cup finals matches played",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات التي خاضوها في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "From group stage to final in tournament history",
+      "ar": "في نهائيات المونديال عبر التاريخ"
+    },
+    "metricLabel": {
+      "en": "WC Matches",
+      "ar": "مباريات مونديالية"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wcm_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina (2006–2022)",
+          "ar": "الأرجنتين (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 26,
+        "valueLabel": {
+          "en": "26 Matches",
+          "ar": "26 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcm_matthaus",
+        "name": {
+          "en": "Lothar Matthäus",
+          "ar": "لوثار ماتيوس"
+        },
+        "subText": {
+          "en": "Germany (1982–1998)",
+          "ar": "ألمانيا (1982–1998)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lothar_Matth%C3%A4us_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Matches",
+          "ar": "25 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcm_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 24,
+        "valueLabel": {
+          "en": "24 Matches",
+          "ar": "24 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcm_maldini",
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "Italy (1990–2002)",
+          "ar": "إيطاليا (1990–2002)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PM3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/it.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Matches",
+          "ar": "23 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcm_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (2006–2022)",
+          "ar": "البرتغال (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22 Matches",
+          "ar": "22 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-appearances-players",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by total FIFA World Cup matches played",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات الملعوبة في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All tournament finals matches played (1930 through 2026)",
+      "ar": "إجمالي المباريات في نهائيات كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "appearances", "messi", "matthaus", "klose", "maldini"],
+    "answers": [
+      {
+        "answerKey": "wcm_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina (2006–2022)",
+          "ar": "الأرجنتين (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 26,
+        "valueLabel": {
+          "en": "26 Matches",
+          "ar": "26 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcm_matthaus",
+        "name": {
+          "en": "Lothar Matthäus",
+          "ar": "لوتار ماتيوس"
+        },
+        "subText": {
+          "en": "Germany (1982–1998)",
+          "ar": "ألمانيا (1982–1998)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lothar_Matth%C3%A4us_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Matches",
+          "ar": "25 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcm_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 24,
+        "valueLabel": {
+          "en": "24 Matches",
+          "ar": "24 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcm_maldini",
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "Italy (1990–2002)",
+          "ar": "إيطاليا (1990–2002)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PM3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/it.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Matches",
+          "ar": "23 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcm_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (2006–2022)",
+          "ar": "البرتغال (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22 Matches",
+          "ar": "22 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-minutes-played-legends",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by total minutes played in FIFA World Cup history",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي الدقائق الملعوبة في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "Official match minutes including extra time",
+      "ar": "دقائق اللعب الرسمية شاملة الأوقات الإضافية"
+    },
+    "metricLabel": {
+      "en": "Minutes",
+      "ar": "دقائق"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "minutes", "messi", "maldini", "matthaus"],
+    "answers": [
+      {
+        "answerKey": "min_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina (2006–2022)",
+          "ar": "الأرجنتين (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 2314,
+        "valueLabel": {
+          "en": "2,314 Mins",
+          "ar": "2,314 دقيقة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "min_maldini",
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "Italy (1990–2002)",
+          "ar": "إيطاليا (1990–2002)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PM3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/it.png"
+        },
+        "value": 2217,
+        "valueLabel": {
+          "en": "2,217 Mins",
+          "ar": "2,217 دقيقة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "min_matthaus",
+        "name": {
+          "en": "Lothar Matthäus",
+          "ar": "لوتار ماتيوس"
+        },
+        "subText": {
+          "en": "Germany (1982–1998)",
+          "ar": "ألمانيا (1982–1998)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lothar_Matth%C3%A4us_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 2045,
+        "valueLabel": {
+          "en": "2,045 Mins",
+          "ar": "2,045 دقيقة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "min_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 1803,
+        "valueLabel": {
+          "en": "1,803 Mins",
+          "ar": "1,803 دقيقة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "min_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (2006–2022)",
+          "ar": "البرتغال (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+        },
+        "value": 1764,
+        "valueLabel": {
+          "en": "1,764 Mins",
+          "ar": "1,764 دقيقة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-goals-active-stars-mix",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "goals", "mbappe", "muller", "kane", "james", "lukaku"],
+    "title": {
+      "en": "Rank these 5 stars by total FIFA World Cup finals goals scored",
+      "ar": "رتّب النجوم الخمسة حسب عدد أهدافهم في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "Career goals in FIFA World Cup tournaments",
+      "ar": "الأهداف المسجلة في بطولات كأس العالم طوال المسيرة"
+    },
+    "metricLabel": {
+      "en": "World Cup Goals",
+      "ar": "أهداف كأس العالم"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_mbappe",
+        "name": {
+          "en": "Kylian Mbappé",
+          "ar": "كيليان مبابي"
+        },
+        "subText": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_muller",
+        "name": {
+          "en": "Thomas Müller",
+          "ar": "توماس مولر"
+        },
+        "subText": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TM13",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_kane",
+        "name": {
+          "en": "Harry Kane",
+          "ar": "هاري كين"
+        },
+        "subText": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "HK9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/gb-eng.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_james",
+        "name": {
+          "en": "James Rodríguez",
+          "ar": "خاميس رودريغيز"
+        },
+        "subText": {
+          "en": "Colombia",
+          "ar": "كولومبيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JR10",
+          "primaryUrl": "https://media.api-sports.io/football/players/44.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/co.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Goals",
+          "ar": "6 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_lukaku",
+        "name": {
+          "en": "Romelu Lukaku",
+          "ar": "روميلو لوكاكو"
+        },
+        "subText": {
+          "en": "Belgium (2014, 2018, 2022)",
+          "ar": "بلجيكا (2014، 2018، 2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LUK",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/be.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Goals",
+          "ar": "5 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "international-caps-legendary-midfielders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "caps", "modric", "eriksen", "iniesta", "kroos", "kdb"],
+    "title": {
+      "en": "Rank these 5 iconic playmakers by senior international appearances (caps)",
+      "ar": "رتّب صانعي الألعاب الخمسة حسب عدد مبارياتهم الدولية مع منتخباتهم"
+    },
+    "subtitle": {
+      "en": "Official senior international caps",
+      "ar": "المباريات الدولية الرسمية مع المنتخب الأول"
+    },
+    "metricLabel": {
+      "en": "Caps",
+      "ar": "مباريات دولية"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cap_modric",
+        "name": {
+          "en": "Luka Modrić",
+          "ar": "لوكا مودريتش"
+        },
+        "subText": {
+          "en": "Croatia",
+          "ar": "كرواتيا (عميد لاعبي كرواتيا)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Luka_Modri%C4%87_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/hr.png"
+        },
+        "value": 178,
+        "valueLabel": {
+          "en": "178 Caps",
+          "ar": "178 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cap_eriksen",
+        "name": {
+          "en": "Christian Eriksen",
+          "ar": "كريستيان إريكسن"
+        },
+        "subText": {
+          "en": "Denmark",
+          "ar": "الدنمارك"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ERI",
+          "primaryUrl": "https://media.api-sports.io/football/players/174.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/dk.png"
+        },
+        "value": 134,
+        "valueLabel": {
+          "en": "134 Caps",
+          "ar": "134 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cap_iniesta",
+        "name": {
+          "en": "Andrés Iniesta",
+          "ar": "أندريس إنييستا"
+        },
+        "subText": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "INI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Andr%C3%A9s_Iniesta.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/es.png"
+        },
+        "value": 131,
+        "valueLabel": {
+          "en": "131 Caps",
+          "ar": "131 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cap_kroos",
+        "name": {
+          "en": "Toni Kroos",
+          "ar": "توني كروس"
+        },
+        "subText": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TK8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Toni_Kroos_Real_Madrid_2021.jpg/330px-Toni_Kroos_Real_Madrid_2021.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 114,
+        "valueLabel": {
+          "en": "114 Caps",
+          "ar": "114 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cap_kdb",
+        "name": {
+          "en": "Kevin De Bruyne",
+          "ar": "كيفين دي بروين"
+        },
+        "subText": {
+          "en": "Belgium",
+          "ar": "بلجيكا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/be.png"
+        },
+        "value": 105,
+        "valueLabel": {
+          "en": "105 Caps",
+          "ar": "105 مباريات"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-top-scorers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "goals", "messi", "mbappe", "klose", "ronaldo"],
+    "title": {
+      "en": "Rank these 5 icons by FIFA World Cup goals scored",
+      "ar": "رتّب الأساطير الخمسة حسب عدد الأهداف في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All finals tournament goals through 2026",
+      "ar": "شامل جميع الأهداف في نهائيات كأس العالم حتى بطولة 2026"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_scr_mbappe",
+        "name": {
+          "en": "Kylian Mbappé",
+          "ar": "كيليان مبابي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22 Goals",
+          "ar": "22 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_scr_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Goals",
+          "ar": "21 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_scr_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Goals",
+          "ar": "16 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_scr_r9",
+        "name": {
+          "en": "Ronaldo Nazário",
+          "ar": "رونالدو نازاريو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_scr_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PEL",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-appearances",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "appearances", "longevity"],
+    "title": {
+      "en": "Rank these 5 players by FIFA World Cup matches played",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد المباريات الملعوبة في كأس العالم"
+    },
+    "subtitle": {
+      "en": "Total World Cup tournament appearances through 2026",
+      "ar": "إجمالي المباريات في نهائيات كأس العالم حتى بطولة 2026"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wc_app_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 34,
+        "valueLabel": {
+          "en": "34 Matches",
+          "ar": "34 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wc_app_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 27,
+        "valueLabel": {
+          "en": "27 Matches",
+          "ar": "27 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wc_app_matthaus",
+        "name": {
+          "en": "Lothar Matthäus",
+          "ar": "لوتار ماتيوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lothar_Matth%C3%A4us_2014.jpg"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Matches",
+          "ar": "25 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wc_app_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg"
+        },
+        "value": 24,
+        "valueLabel": {
+          "en": "24 Matches",
+          "ar": "24 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wc_app_cafu",
+        "name": {
+          "en": "Cafu",
+          "ar": "كافو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CAF",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cafu_-_26.02.2026_-_Cerim%C3%B4nia_de_apresenta%C3%A7%C3%A3o_das_ta%C3%A7as_da_Copa_do_Mundo_de_2026.jpg/330px-Cafu_-_26.02.2026_-_Cerim%C3%B4nia_de_apresenta%C3%A7%C3%A3o_das_ta%C3%A7as_da_Copa_do_Mundo_de_2026.jpg"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Matches",
+          "ar": "20 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  }
+]

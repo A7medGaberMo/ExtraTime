@@ -1,0 +1,1219 @@
+[
+  {
+    "slug": "ucl-all-time-career-assists",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "champions-league", "assists", "playmakers", "records"],
+    "title": {
+      "en": "Rank these 5 legends by career UEFA Champions League assists provided",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب إجمالي التمريرات الحاسمة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "UEFA official Champions League career assist tally",
+      "ar": "إجمالي التمريرات الحاسمة الرسمية في تاريخ المسابقة"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_ast_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Man United, Real Madrid & Juventus",
+          "ar": "مانشستر يونايتد، ريال مدريد ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 42,
+        "valueLabel": {
+          "en": "42 Assists",
+          "ar": "42 تمريرة حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_ast_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "FC Barcelona & PSG",
+          "ar": "برشلونة وباريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 40,
+        "valueLabel": {
+          "en": "40 Assists",
+          "ar": "40 تمريرة حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_ast_dimaria",
+        "name": {
+          "en": "Ángel Di María",
+          "ar": "أنخيل دي ماريا"
+        },
+        "subText": {
+          "en": "Real Madrid, PSG, Benfica & Juventus",
+          "ar": "ريال مدريد، سان جيرمان، بنفيكا ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ADM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 39,
+        "valueLabel": {
+          "en": "39 Assists",
+          "ar": "39 تمريرة حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_ast_neymar",
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار دا سيلفا"
+        },
+        "subText": {
+          "en": "FC Barcelona & PSG",
+          "ar": "برشلونة وباريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 33,
+        "valueLabel": {
+          "en": "33 Assists",
+          "ar": "33 تمريرة حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_ast_giggs",
+        "name": {
+          "en": "Ryan Giggs",
+          "ar": "رايان غيغز"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GIG",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ryan_Giggs_2013.jpg/330px-Ryan_Giggs_2013.jpg"
+        },
+        "value": 31,
+        "valueLabel": {
+          "en": "31 Assists",
+          "ar": "31 تمريرة حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-playmakers-assists-all-time",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 playmakers by all-time FIFA World Cup assists provided",
+      "ar": "رتّب صناع اللعب الخمسة حسب عدد التمريرات الحاسمة في تاريخ نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "Official assists in World Cup finals tournaments",
+      "ar": "التمريرات الحاسمة في نهائيات المونديال"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "assists", "pele", "messi", "playmakers"],
+    "answers": [
+      {
+        "answerKey": "wca_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "subText": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PELE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Assists",
+          "ar": "10 تمريرات"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wca_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Assists",
+          "ar": "8 تمريرات"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wca_littbarski",
+        "name": {
+          "en": "Pierre Littbarski",
+          "ar": "بيير ليتبارسكي"
+        },
+        "subText": {
+          "en": "West Germany",
+          "ar": "ألمانيا الغربية"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PL7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Pierre_Littbarski_1982.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Assists",
+          "ar": "7 تمريرات"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wca_muller",
+        "name": {
+          "en": "Thomas Müller",
+          "ar": "توماس مولر"
+        },
+        "subText": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Assists",
+          "ar": "6 تمريرات"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wca_beckham",
+        "name": {
+          "en": "David Beckham",
+          "ar": "ديفيد بيكهام"
+        },
+        "subText": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DB7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/David_Beckham_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/gb-eng.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Assists",
+          "ar": "5 تمريرات"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "serie-a-all-time-assists-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["serie-a", "assists", "totti", "baggio", "candreva", "insigne", "pjanic"],
+    "title": {
+      "en": "Rank these 5 playmakers by all-time Serie A assists provided",
+      "ar": "رتّب صانعي الألعاب الخمسة حسب عدد التمريرات الحاسمة في تاريخ الدوري الإيطالي"
+    },
+    "subtitle": {
+      "en": "Official Serie A career assists",
+      "ar": "التمريرات الحاسمة المسجلة في تاريخ الدوري الإيطالي الممتاز"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "saa_totti",
+        "name": {
+          "en": "Francesco Totti",
+          "ar": "فرانشيسكو توتي"
+        },
+        "subText": {
+          "en": "AS Roma",
+          "ar": "روما"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/497.png",
+          "fallbackText": "TOT10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
+        },
+        "value": 158,
+        "valueLabel": {
+          "en": "158 Assists",
+          "ar": "158 تمريرة حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "saa_baggio",
+        "name": {
+          "en": "Roberto Baggio",
+          "ar": "روبرتو باجيو"
+        },
+        "subText": {
+          "en": "Fiorentina, Juventus, Milan, Bologna, Brescia",
+          "ar": "فيورنتينا ويوفنتوس وميلان وبولونيا وبريشيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "BAG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/%D8%B1%D9%88%D8%A8%D8%B1%D8%AA%D9%88_%D8%A8%D8%A7%D8%AC%D9%88_%28cropped%29.jpg/330px-%D8%B1%D9%88%D8%A8%D8%B1%D8%AA%D9%88_%D8%A8%D8%A7%D8%AC%D9%88_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 119,
+        "valueLabel": {
+          "en": "119 Assists",
+          "ar": "119 تمريرة حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "saa_candreva",
+        "name": {
+          "en": "Antonio Candreva",
+          "ar": "أنطونيو كاندريفا"
+        },
+        "subText": {
+          "en": "Lazio, Inter, Sampdoria, Salernitana",
+          "ar": "لاتسيو وإنتر وسامبدوريا وساليرنيتانا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CAN",
+          "primaryUrl": "https://media.api-sports.io/football/players/544679.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/505.png"
+        },
+        "value": 104,
+        "valueLabel": {
+          "en": "104 Assists",
+          "ar": "104 تمريرات حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "saa_insigne",
+        "name": {
+          "en": "Lorenzo Insigne",
+          "ar": "لورينزو إنسيني"
+        },
+        "subText": {
+          "en": "Napoli (Il Magnifico)",
+          "ar": "نابولي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/492.png",
+          "fallbackText": "INS",
+          "primaryUrl": "https://media.api-sports.io/football/players/2034.png"
+        },
+        "value": 85,
+        "valueLabel": {
+          "en": "85 Assists",
+          "ar": "85 تمريرة حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "saa_pjanic",
+        "name": {
+          "en": "Miralem Pjanić",
+          "ar": "ميراليم بيانيتش"
+        },
+        "subText": {
+          "en": "AS Roma & Juventus",
+          "ar": "روما ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PJA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Miralem_Pjani%C4%87_2025.jpg/330px-Miralem_Pjani%C4%87_2025.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 72,
+        "valueLabel": {
+          "en": "72 Assists",
+          "ar": "72 تمريرة حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-assists-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "assists", "pele", "messi", "littbarski", "muller", "beckham"],
+    "title": {
+      "en": "Rank these 5 icons by total assists provided in FIFA World Cup finals tournaments",
+      "ar": "رتّب الأساطير الخمسة حسب عدد التمريرات الحاسمة في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All-time World Cup finals tournament assists",
+      "ar": "إجمالي التمريرات الحاسمة في تاريخ نهائيات كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "wca_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "subText": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PELE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/br.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Assists",
+          "ar": "10 تمريرات حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wca_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Assists",
+          "ar": "8 تمريرات حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wca_littbarski",
+        "name": {
+          "en": "Pierre Littbarski",
+          "ar": "بيير ليتبارسكي"
+        },
+        "subText": {
+          "en": "West Germany (1982, 1986, 1990 Champion)",
+          "ar": "ألمانيا الغربية"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LIT",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Pierre_Littbarski_1982.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Assists",
+          "ar": "7 تمريرات حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wca_muller",
+        "name": {
+          "en": "Thomas Müller",
+          "ar": "توماس مولر"
+        },
+        "subText": {
+          "en": "Germany (2010, 2014 Champion)",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TM13",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/de.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Assists",
+          "ar": "6 تمريرات حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wca_beckham",
+        "name": {
+          "en": "David Beckham",
+          "ar": "ديفيد بيكهام"
+        },
+        "subText": {
+          "en": "England (1998, 2002, 2006)",
+          "ar": "إنجلترا (1998، 2002، 2006)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DB7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/David_Beckham_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/gb-eng.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Assists",
+          "ar": "5 تمريرات حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ligue-1-all-time-assists-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ligue-1", "france", "assists", "payet", "dimaria", "mbappe", "verratti", "pastore"],
+    "title": {
+      "en": "Rank these 5 stars by official Ligue 1 assists provided",
+      "ar": "رتّب النجوم الخمسة حسب عدد التمريرات الحاسمة في الدوري الفرنسي"
+    },
+    "subtitle": {
+      "en": "Official Ligue 1 career assists",
+      "ar": "التمريرات الحاسمة في تاريخ الدوري الفرنسي"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "l1a_payet",
+        "name": {
+          "en": "Dimitri Payet",
+          "ar": "ديميتري باييت"
+        },
+        "subText": {
+          "en": "Nantes, Saint-Étienne, Lille, Marseille",
+          "ar": "نانت وسانت إتيان وليل ومارسيليا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PAY",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/81.png",
+          "primaryUrl": "https://media.api-sports.io/football/players/2273.png"
+        },
+        "value": 106,
+        "valueLabel": {
+          "en": "106 Assists",
+          "ar": "106 تمريرات حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "l1a_dimaria",
+        "name": {
+          "en": "Ángel Di María",
+          "ar": "أنخيل دي ماريا"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان (الأكثر صناعة في تاريخ باريس)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "ADM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg"
+        },
+        "value": 72,
+        "valueLabel": {
+          "en": "72 Assists",
+          "ar": "72 تمريرة حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "l1a_mbappe",
+        "name": {
+          "en": "Kylian Mbappé",
+          "ar": "كيليان مبابي"
+        },
+        "subText": {
+          "en": "Monaco & Paris Saint-Germain",
+          "ar": "موناكو وباريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 58,
+        "valueLabel": {
+          "en": "58 Assists",
+          "ar": "58 تمريرة حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "l1a_verratti",
+        "name": {
+          "en": "Marco Verratti",
+          "ar": "ماركو فيراتي"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "VER",
+          "primaryUrl": "https://media.api-sports.io/football/players/253.png"
+        },
+        "value": 48,
+        "valueLabel": {
+          "en": "48 Assists",
+          "ar": "48 تمريرة حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "l1a_pastore",
+        "name": {
+          "en": "Javier Pastore",
+          "ar": "خافيير باستوري"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain (El Flaco)",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "PAS",
+          "primaryUrl": "https://media.api-sports.io/football/players/258.png"
+        },
+        "value": 39,
+        "valueLabel": {
+          "en": "39 Assists",
+          "ar": "39 تمريرة حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "bundesliga-all-time-assists-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["bundesliga", "germany", "assists", "muller", "ribery", "reus", "zeroberto", "gotze"],
+    "title": {
+      "en": "Rank these 5 creators by official Bundesliga assists provided",
+      "ar": "رتّب صانعي الألعاب الخمسة حسب عدد التمريرات الحاسمة في تاريخ البوندسليغا"
+    },
+    "subtitle": {
+      "en": "Official Bundesliga career assists",
+      "ar": "التمريرات الحاسمة المسجلة في تاريخ الدوري الألماني"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "bla_muller",
+        "name": {
+          "en": "Thomas Müller",
+          "ar": "توماس مولر"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ (الأكثر صناعة في تاريخ البوندسليغا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
+        },
+        "value": 172,
+        "valueLabel": {
+          "en": "172 Assists",
+          "ar": "172 تمريرة حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "bla_ribery",
+        "name": {
+          "en": "Franck Ribéry",
+          "ar": "فرانك ريبيري"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RIB7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Franck_Ribery_2019_%28cropped%29.jpg/330px-Franck_Ribery_2019_%28cropped%29.jpg"
+        },
+        "value": 124,
+        "valueLabel": {
+          "en": "124 Assists",
+          "ar": "124 تمريرة حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "bla_reus",
+        "name": {
+          "en": "Marco Reus",
+          "ar": "ماركو رويس"
+        },
+        "subText": {
+          "en": "Mönchengladbach & Dortmund",
+          "ar": "مونشنغلادباخ وبوروسيا دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "MR11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Marco_Reus_2018.jpg/330px-Marco_Reus_2018.jpg"
+        },
+        "value": 104,
+        "valueLabel": {
+          "en": "104 Assists",
+          "ar": "104 تمريرات حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "bla_zeroberto",
+        "name": {
+          "en": "Zé Roberto",
+          "ar": "زي روبرتو"
+        },
+        "subText": {
+          "en": "Leverkusen, Bayern & Hamburg",
+          "ar": "ليفركوزن وبايرن وهامبورغ"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ZER",
+          "primaryUrl": "https://media.api-sports.io/football/players/465184.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 88,
+        "valueLabel": {
+          "en": "88 Assists",
+          "ar": "88 تمريرة حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "bla_gotze",
+        "name": {
+          "en": "Mario Götze",
+          "ar": "ماريو غوتزه"
+        },
+        "subText": {
+          "en": "Dortmund, Bayern & Frankfurt",
+          "ar": "دورتموند وبايرن وفرانكفورت"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GOT",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "primaryUrl": "https://media.api-sports.io/football/players/378.png"
+        },
+        "value": 72,
+        "valueLabel": {
+          "en": "72 Assists",
+          "ar": "72 تمريرة حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-all-time-assists",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "assists", "playmakers", "kdb", "giggs"],
+    "title": {
+      "en": "Rank these 5 Premier League playmakers by all-time assists provided",
+      "ar": "رتّب صُنّاع اللعب الخمسة حسب إجمالي التمريرات الحاسمة (الاسيست) في تاريخ البريميرليج"
+    },
+    "subtitle": {
+      "en": "Official Premier League assists era (1992–present)",
+      "ar": "إجمالي التمريرات الحاسمة في البريميرليج (1992–حتى الآن)"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ast_giggs",
+        "name": {
+          "en": "Ryan Giggs",
+          "ar": "ريان غيغز"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RG11",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ryan_Giggs_2013.jpg/330px-Ryan_Giggs_2013.jpg"
+        },
+        "value": 162,
+        "valueLabel": {
+          "en": "162 Assists",
+          "ar": "162 تمريرة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ast_kdb",
+        "name": {
+          "en": "Kevin De Bruyne",
+          "ar": "كيفين دي بروين"
+        },
+        "subText": {
+          "en": "Chelsea / Man City",
+          "ar": "تشيلسي / مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 118,
+        "valueLabel": {
+          "en": "118 Assists",
+          "ar": "118 تمريرة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ast_fabregas",
+        "name": {
+          "en": "Cesc Fàbregas",
+          "ar": "سيسك فابريغاس"
+        },
+        "subText": {
+          "en": "Arsenal / Chelsea",
+          "ar": "أرسنال / تشيلسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CF4",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cesc_F%C3%A0bregas_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 111,
+        "valueLabel": {
+          "en": "111 Assists",
+          "ar": "111 تمريرة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ast_rooney",
+        "name": {
+          "en": "Wayne Rooney",
+          "ar": "واين روني"
+        },
+        "subText": {
+          "en": "Everton / Man United",
+          "ar": "إيفرتون / مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "WR10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Wayne_Rooney_2020.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
+        "value": 103,
+        "valueLabel": {
+          "en": "103 Assists",
+          "ar": "103 تمريرات"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ast_lampard",
+        "name": {
+          "en": "Frank Lampard",
+          "ar": "فرانك لامبارد"
+        },
+        "subText": {
+          "en": "West Ham / Chelsea / Man City",
+          "ar": "وست هام / تشيلسي / السيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "FL8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Frank_Lampard_2019.jpg/330px-Frank_Lampard_2019.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 102,
+        "valueLabel": {
+          "en": "102 Assists",
+          "ar": "102 تمريرة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-assists-playmakers-tier",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "assists", "silva", "gerrard", "milner", "beckham", "eriksen"],
+    "title": {
+      "en": "Rank these 5 Premier League creators by career assists provided",
+      "ar": "رتّب صانعي الألعاب الخمسة حسب عدد تمريراتهم الحاسمة في تاريخ البريميرليج"
+    },
+    "subtitle": {
+      "en": "Official Premier League career assists",
+      "ar": "التمريرات الحاسمة المسجلة في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "metricLabel": {
+      "en": "PL Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pla_silva",
+        "name": {
+          "en": "David Silva",
+          "ar": "دافيد سيلفا"
+        },
+        "subText": {
+          "en": "Manchester City (El Mago)",
+          "ar": "مانشستر سيتي (الساحر)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "DS21",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/David_Silva_2017.jpg/330px-David_Silva_2017.jpg"
+        },
+        "value": 93,
+        "valueLabel": {
+          "en": "93 Assists",
+          "ar": "93 تمريرة حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pla_gerrard",
+        "name": {
+          "en": "Steven Gerrard",
+          "ar": "ستيفن جيرارد"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "SG8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Steven_Gerrard_2018.jpg/330px-Steven_Gerrard_2018.jpg"
+        },
+        "value": 92,
+        "valueLabel": {
+          "en": "92 Assists",
+          "ar": "92 تمريرة حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pla_milner",
+        "name": {
+          "en": "James Milner",
+          "ar": "جيمس ميلنر"
+        },
+        "subText": {
+          "en": "Leeds, Villa, City, Liverpool, Brighton",
+          "ar": "ليدز وفيلا والسيتي وليفربول وبرايتون"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MIL",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "primaryUrl": "https://media.api-sports.io/football/players/290.png"
+        },
+        "value": 89,
+        "valueLabel": {
+          "en": "89 Assists",
+          "ar": "89 تمريرة حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pla_beckham",
+        "name": {
+          "en": "David Beckham",
+          "ar": "ديفيد بيكهام"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "DB7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/David_Beckham_2018.jpg"
+        },
+        "value": 80,
+        "valueLabel": {
+          "en": "80 Assists",
+          "ar": "80 تمريرة حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pla_eriksen",
+        "name": {
+          "en": "Christian Eriksen",
+          "ar": "كريستيان إريكسن"
+        },
+        "subText": {
+          "en": "Tottenham, Brentford & Man United",
+          "ar": "توتنهام وبرينتفورد ومان يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "ERI",
+          "primaryUrl": "https://media.api-sports.io/football/players/174.png"
+        },
+        "value": 76,
+        "valueLabel": {
+          "en": "76 Assists",
+          "ar": "76 تمريرة حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-assists-staircase",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "assists", "playmakers"],
+    "title": {
+      "en": "Rank these 5 playmakers by Champions League assists",
+      "ar": "رتّب صُنّاع اللعب الخمسة حسب عدد التمريرات الحاسمة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Ultra-tight 1-assist margins across Champions League royalty",
+      "ar": "فروقات دقيقة جدًا بتمريرة واحدة بين نجوم دوري الأبطال حتى 2025–26"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_ast_neymar",
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg"
+        },
+        "value": 33,
+        "valueLabel": {
+          "en": "33 Assists",
+          "ar": "33 تمريرة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_ast_vini",
+        "name": {
+          "en": "Vinícius Júnior",
+          "ar": "فينيسيوس جونيور"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Vinicius_Junior_2021.jpg"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Assists",
+          "ar": "32 تمريرة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_ast_kdb",
+        "name": {
+          "en": "Kevin De Bruyne",
+          "ar": "كيفين دي بروين"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
+        },
+        "value": 31,
+        "valueLabel": {
+          "en": "31 Assists",
+          "ar": "31 تمريرة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_ast_xavi",
+        "name": {
+          "en": "Xavi Hernández",
+          "ar": "تشافي هيرنانديز"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "XAV",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Xavi_Hernandez_2011.jpg"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30 Assists",
+          "ar": "30 تمريرة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_ast_benzema",
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Assists",
+          "ar": "29 تمريرة"
+        },
+        "correctRank": 5
+      }
+    ]
+  }
+]

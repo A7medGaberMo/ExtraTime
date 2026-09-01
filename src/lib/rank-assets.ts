@@ -19,6 +19,20 @@ export interface EntityVisualProfile {
 // ─────────────────────────────────────────────────────────────────────────────
 export const PLAYER_VISUALS: Record<string, EntityVisualProfile> = {
   // Global Superstars & Legends
+  "Philippe Coutinho": {
+    primaryColor: "#004D98",
+    secondaryColor: "#A50044",
+    accentColor: "#EDBB00",
+    initials: "PC14",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Philippe_Coutinho_2018.jpg/330px-Philippe_Coutinho_2018.jpg",
+  },
+  "Toni Kroos": {
+    primaryColor: "#FFFFFF",
+    secondaryColor: "#00529F",
+    accentColor: "#FEBE10",
+    initials: "TK8",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Toni_Kroos_Real_Madrid_2021.jpg/330px-Toni_Kroos_Real_Madrid_2021.jpg",
+  },
   "Lionel Messi": {
     primaryColor: "#75AADB",
     secondaryColor: "#FFFFFF",

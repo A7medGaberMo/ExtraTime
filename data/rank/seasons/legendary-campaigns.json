@@ -1,0 +1,5550 @@
+[
+  {
+    "slug": "pl-century-points-seasons",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "points", "records", "champions"],
+    "title": {
+      "en": "Rank these 5 Premier League seasons by total points won",
+      "ar": "رتّب مواسم البريميرليج الخمسة حسب عدد النقاط المحصودة"
+    },
+    "subtitle": {
+      "en": "Premier League era points tally (38-game season)",
+      "ar": "إجمالي النقاط في موسم واحد (38 جولة)"
+    },
+    "metricLabel": {
+      "en": "Points",
+      "ar": "نقاط"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pl_pts_mcfc18",
+        "name": {
+          "en": "Manchester City 2017–18",
+          "ar": "مانشستر سيتي 2017–18"
+        },
+        "subText": {
+          "en": "Pep Guardiola",
+          "ar": "بيب غوارديولا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 100,
+        "valueLabel": {
+          "en": "100 Points",
+          "ar": "100 نقطة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pl_pts_lfc20",
+        "name": {
+          "en": "Liverpool 2019–20",
+          "ar": "ليفربول 2019–20"
+        },
+        "subText": {
+          "en": "Jürgen Klopp",
+          "ar": "يورغن كلوب"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 99,
+        "valueLabel": {
+          "en": "99 Points",
+          "ar": "99 نقطة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pl_pts_mcfc19",
+        "name": {
+          "en": "Manchester City 2018–19",
+          "ar": "مانشستر سيتي 2018–19"
+        },
+        "subText": {
+          "en": "Treble Campaign",
+          "ar": "موسم الثلاثية"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 98,
+        "valueLabel": {
+          "en": "98 Points",
+          "ar": "98 نقطة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pl_pts_cfc05",
+        "name": {
+          "en": "Chelsea 2004–05",
+          "ar": "تشيلسي 2004–05"
+        },
+        "subText": {
+          "en": "Jose Mourinho debut title",
+          "ar": "مورينيو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 95,
+        "valueLabel": {
+          "en": "95 Points",
+          "ar": "95 نقطة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pl_pts_cfc17",
+        "name": {
+          "en": "Chelsea 2016–17",
+          "ar": "تشيلسي 2016–17"
+        },
+        "subText": {
+          "en": "Antonio Conte",
+          "ar": "كونتي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 93,
+        "valueLabel": {
+          "en": "93 Points",
+          "ar": "93 نقطة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "pl-highest-scoring-seasons",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goals", "scoring-records"],
+    "title": {
+      "en": "Rank these 5 Premier League club-seasons by goals scored",
+      "ar": "رتّب مواسم البريميرليج الخمسة حسب عدد الأهداف المسجلة في الدوري"
+    },
+    "subtitle": {
+      "en": "Most prolific league campaigns in Premier League history",
+      "ar": "أعلى المواسم تهديفيًا في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pl_gl_mcfc18",
+        "name": {
+          "en": "Manchester City 2017–18",
+          "ar": "مانشستر سيتي 2017–18"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 106,
+        "valueLabel": {
+          "en": "106 Goals",
+          "ar": "106 أهداف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pl_gl_cfc10",
+        "name": {
+          "en": "Chelsea 2009–10",
+          "ar": "تشيلسي 2009–10"
+        },
+        "subText": {
+          "en": "Carlo Ancelotti champion",
+          "ar": "بطل الدوري (أنشيلوتي)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 103,
+        "valueLabel": {
+          "en": "103 Goals",
+          "ar": "103 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pl_gl_mcfc20",
+        "name": {
+          "en": "Manchester City 2019–20",
+          "ar": "مانشستر سيتي 2019–20"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 102,
+        "valueLabel": {
+          "en": "102 Goals",
+          "ar": "102 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pl_gl_mcfc19",
+        "name": {
+          "en": "Manchester City 2018–19",
+          "ar": "مانشستر سيتي 2018–19"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 95,
+        "valueLabel": {
+          "en": "95 Goals",
+          "ar": "95 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pl_gl_lfc22",
+        "name": {
+          "en": "Liverpool 2021–22",
+          "ar": "ليفربول 2021–22"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 94,
+        "valueLabel": {
+          "en": "94 Goals",
+          "ar": "94 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "pl-greatest-goal-difference-seasons",
+    "scopeType": "PER_SEASON",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goal-difference", "defense", "offense"],
+    "title": {
+      "en": "Rank these 5 Premier League club-seasons by goal difference",
+      "ar": "رتّب مواسم البريميرليج الخمسة حسب فارق الأهداف (+/-)"
+    },
+    "subtitle": {
+      "en": "Highest single-season goal differences in Premier League history",
+      "ar": "أعلى فارق أهداف مسجل في موسم واحد بالبريميرليج"
+    },
+    "metricLabel": {
+      "en": "Goal Difference",
+      "ar": "فارق الأهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pl_gd_mcfc18",
+        "name": {
+          "en": "Manchester City 2017–18",
+          "ar": "مانشستر سيتي 2017–18"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 79,
+        "valueLabel": {
+          "en": "+79 GD",
+          "ar": "+79 فارق أهداف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pl_gd_mcfc19",
+        "name": {
+          "en": "Manchester City 2018–19",
+          "ar": "مانشستر سيتي 2018–19"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 72,
+        "valueLabel": {
+          "en": "+72 GD",
+          "ar": "+72 فارق أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pl_gd_cfc10",
+        "name": {
+          "en": "Chelsea 2009–10",
+          "ar": "تشيلسي 2009–10"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 71,
+        "valueLabel": {
+          "en": "+71 GD",
+          "ar": "+71 فارق أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pl_gd_lfc22",
+        "name": {
+          "en": "Liverpool 2021–22",
+          "ar": "ليفربول 2021–22"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 68,
+        "valueLabel": {
+          "en": "+68 GD",
+          "ar": "+68 فارق أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pl_gd_lfc19",
+        "name": {
+          "en": "Liverpool 2018–19",
+          "ar": "ليفربول 2018–19"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 67,
+        "valueLabel": {
+          "en": "+67 GD",
+          "ar": "+67 فارق أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "pl-team-goals-single-season",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goals", "mancity", "chelsea", "liverpool", "records"],
+    "title": {
+      "en": "Rank these 5 team-seasons by total goals scored in a Premier League campaign",
+      "ar": "رتّب مواسم الفرق الخمسة حسب عدد الأهداف المسجلة في موسم واحد بالبريميرليج"
+    },
+    "subtitle": {
+      "en": "Total goals scored in a single 38-game Premier League season",
+      "ar": "إجمالي الأهداف المسجلة في موسم واحد بالدوري الإنجليزي (38 مباراة)"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ptg_mc_1718",
+        "name": {
+          "en": "Manchester City (2017–18)",
+          "ar": "مانشستر سيتي (2017–18)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 106,
+        "valueLabel": {
+          "en": "106 Goals",
+          "ar": "106 أهداف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ptg_che_0910",
+        "name": {
+          "en": "Chelsea (2009–10)",
+          "ar": "تشيلسي (2009–10)"
+        },
+        "subText": {
+          "en": "Carlo Ancelotti Champions",
+          "ar": "بطل الدوري مع كارلو أنشيلوتي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 103,
+        "valueLabel": {
+          "en": "103 Goals",
+          "ar": "103 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ptg_mc_1314",
+        "name": {
+          "en": "Manchester City (2013–14)",
+          "ar": "مانشستر سيتي (2013–14)"
+        },
+        "subText": {
+          "en": "Manuel Pellegrini Champions",
+          "ar": "بطل الدوري مع مانويل بيليغريني"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 102,
+        "valueLabel": {
+          "en": "102 Goals",
+          "ar": "102 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ptg_liv_1314",
+        "name": {
+          "en": "Liverpool (2013–14)",
+          "ar": "ليفربول (2013–14)"
+        },
+        "subText": {
+          "en": "SAS Duo: Suárez & Sturridge",
+          "ar": "ثنائية سواريز وستوريدج"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 101,
+        "valueLabel": {
+          "en": "101 Goals",
+          "ar": "101 هدف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ptg_mc_2122",
+        "name": {
+          "en": "Manchester City (2021–22)",
+          "ar": "مانشستر سيتي (2021–22)"
+        },
+        "subText": {
+          "en": "Pep Guardiola Champions",
+          "ar": "بطل الدوري مع بيب غوارديولا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 99,
+        "valueLabel": {
+          "en": "99 Goals",
+          "ar": "99 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "pl-fewest-goals-conceded-seasons",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "defense", "chelsea", "arsenal", "records"],
+    "title": {
+      "en": "Rank these 5 team-seasons by fewest goals conceded in the Premier League (best defense first)",
+      "ar": "رتّب مواسم الفرق الخمسة حسب أقل عدد أهداف مستقبلة في البريميرليج (الدفاع الأفضل أولاً)"
+    },
+    "subtitle": {
+      "en": "Fewest goals conceded across a full 38-game season",
+      "ar": "أقل عدد أهداف دخلت شباك الفريق طوال 38 مباراة"
+    },
+    "metricLabel": {
+      "en": "Goals Conceded",
+      "ar": "أهداف مستقبلة"
+    },
+    "direction": "asc",
+    "answers": [
+      {
+        "answerKey": "fgc_che_0405",
+        "name": {
+          "en": "Chelsea (2004–05)",
+          "ar": "تشيلسي (2004–05)"
+        },
+        "subText": {
+          "en": "José Mourinho",
+          "ar": "جوزيه مورينيو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals Conceded",
+          "ar": "استقبل 15 هدفًا فقط"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fgc_ars_9899",
+        "name": {
+          "en": "Arsenal (1998–99)",
+          "ar": "أرسنال (1998–99)"
+        },
+        "subText": {
+          "en": "Arsène Wenger Defense (Seaman, Adams)",
+          "ar": "دفاع فينغر (سيمان وآدامز)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "AFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Goals Conceded",
+          "ar": "استقبل 17 هدفًا فقط"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fgc_liv_1819",
+        "name": {
+          "en": "Liverpool (2018–19)",
+          "ar": "ليفربول (2018–19)"
+        },
+        "subText": {
+          "en": "Jürgen Klopp (Van Dijk & Alisson)",
+          "ar": "يورغن كلوب (فان دايك وأليسون)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22 Goals Conceded",
+          "ar": "استقبل 22 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fgc_mc_1819",
+        "name": {
+          "en": "Manchester City (2018–19)",
+          "ar": "مانشستر سيتي (2018–19)"
+        },
+        "subText": {
+          "en": "Pep Guardiola (Domestic Treble)",
+          "ar": "بيب غوارديولا (الثلاثية المحلية)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Goals Conceded",
+          "ar": "استقبل 23 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fgc_mc_2021",
+        "name": {
+          "en": "Manchester City (2020–21)",
+          "ar": "مانشستر سيتي (2020–21)"
+        },
+        "subText": {
+          "en": "Pep Guardiola (Rúben Dias Era)",
+          "ar": "بيب غوارديولا (حقبة روبن دياز)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Goals Conceded",
+          "ar": "استقبل 32 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "european-treble-winners-total-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["treble", "goals", "barcelona", "bayern", "mancity", "inter", "records"],
+    "title": {
+      "en": "Rank these 5 European Treble-winning seasons by total goals scored in all competitions",
+      "ar": "رتّب مواسم الثلاثية التاريخية الخمسة حسب إجمالي الأهداف المسجلة في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "League, Domestic Cup & Champions League winning campaigns",
+      "ar": "مواسم التتويج بالدوري والكأس ودوري أبطال أوروبا معًا"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "trb_barca_15",
+        "name": {
+          "en": "FC Barcelona (2014–15)",
+          "ar": "برشلونة (2014–15)"
+        },
+        "subText": {
+          "en": "MSN Trio: Messi, Suárez, Neymar",
+          "ar": "ثلاثي الـMSN"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 175,
+        "valueLabel": {
+          "en": "175 Goals",
+          "ar": "175 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "trb_bayern_20",
+        "name": {
+          "en": "Bayern Munich (2019–20)",
+          "ar": "بايرن ميونخ (2019–20)"
+        },
+        "subText": {
+          "en": "Hans-Dieter Flick",
+          "ar": "هانز فليك"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 159,
+        "valueLabel": {
+          "en": "159 Goals",
+          "ar": "159 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "trb_barca_09",
+        "name": {
+          "en": "FC Barcelona (2008–09)",
+          "ar": "برشلونة (2008–09)"
+        },
+        "subText": {
+          "en": "Pep Guardiola (First Sextuple in History)",
+          "ar": "بيب غوارديولا (أول سداسية في تاريخ كرة القدم)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 158,
+        "valueLabel": {
+          "en": "158 Goals",
+          "ar": "158 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "trb_city_23",
+        "name": {
+          "en": "Manchester City (2022–23)",
+          "ar": "مانشستر سيتي (2022–23)"
+        },
+        "subText": {
+          "en": "Pep Guardiola",
+          "ar": "بيب غوارديولا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 151,
+        "valueLabel": {
+          "en": "151 Goals",
+          "ar": "151 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "trb_inter_10",
+        "name": {
+          "en": "Inter Milan (2009–10)",
+          "ar": "إنتر ميلان (2009–10)"
+        },
+        "subText": {
+          "en": "José Mourinho (Milito, Sneijder, Eto'o)",
+          "ar": "جوزيه مورينيو (ميليتو وسنايدر وإيتو)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "INT",
+          "primaryUrl": "https://media.api-sports.io/football/teams/505.png"
+        },
+        "value": 99,
+        "valueLabel": {
+          "en": "99 Goals",
+          "ar": "99 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "champions-league-most-goals-single-campaign",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "goals", "barcelona", "bayern", "real-madrid", "liverpool", "psg"],
+    "title": {
+      "en": "Rank these 5 team campaigns by total goals scored in a single Champions League season",
+      "ar": "رتّب مواسم الفرق الخمسة حسب عدد الأهداف المسجلة في نسخة واحدة بدوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Total goals scored from group stage through final",
+      "ar": "إجمالي الأهداف المسجلة من دور المجموعات حتى النهائي"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucg_barca_00",
+        "name": {
+          "en": "FC Barcelona (1999–00)",
+          "ar": "برشلونة (1999–00)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 45,
+        "valueLabel": {
+          "en": "45 Goals",
+          "ar": "45 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucg_bayern_20",
+        "name": {
+          "en": "Bayern Munich (2019–20)",
+          "ar": "بايرن ميونخ (2019–20)"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 43,
+        "valueLabel": {
+          "en": "43 Goals",
+          "ar": "43 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucg_real_14",
+        "name": {
+          "en": "Real Madrid (2013–14)",
+          "ar": "ريال مدريد (2013–14)"
+        },
+        "subText": {
+          "en": "La Décima",
+          "ar": "العاشرة (La Décima)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 41,
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucg_liv_18",
+        "name": {
+          "en": "Liverpool (2017–18)",
+          "ar": "ليفربول (2017–18)"
+        },
+        "subText": {
+          "en": "Salah, Mané & Firmino",
+          "ar": "صلاح وماني وفيرمينو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 40,
+        "valueLabel": {
+          "en": "40 Goals",
+          "ar": "40 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucg_psg_18",
+        "name": {
+          "en": "Paris Saint-Germain (2017–18)",
+          "ar": "باريس سان جيرمان (2017–18)"
+        },
+        "subText": {
+          "en": "Group Stage Campaign",
+          "ar": "دور المجموعات"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "PSG",
+          "primaryUrl": "https://media.api-sports.io/football/teams/85.png"
+        },
+        "value": 27,
+        "valueLabel": {
+          "en": "27 Goals",
+          "ar": "27 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-highest-scoring-club-seasons",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 club-seasons by total goals scored in a single Premier League campaign",
+      "ar": "رتّب مواسم الأندية الخمسة حسب عدد الأهداف المسجلة في موسم واحد بالدوري الإنجليزي الممتاز"
+    },
+    "subtitle": {
+      "en": "38-match Premier League seasons",
+      "ar": "مواسم البريميرليج المكونة من 38 مباراة"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goals", "mancity", "chelsea", "liverpool", "manu"],
+    "answers": [
+      {
+        "answerKey": "plsc_mancity_1718",
+        "name": {
+          "en": "Manchester City (2017–18)",
+          "ar": "مانشستر سيتي (2017–18)"
+        },
+        "subText": {
+          "en": "Centurions Season",
+          "ar": "موسم المئة نقطة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MCI",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 106,
+        "valueLabel": {
+          "en": "106 Goals",
+          "ar": "106 أهداف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "plsc_chelsea_0910",
+        "name": {
+          "en": "Chelsea (2009–10)",
+          "ar": "تشيلسي (2009–10)"
+        },
+        "subText": {
+          "en": "Carlo Ancelotti",
+          "ar": "كارلو أنشيلوتي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 103,
+        "valueLabel": {
+          "en": "103 Goals",
+          "ar": "103 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "plsc_liv_1314",
+        "name": {
+          "en": "Liverpool (2013–14)",
+          "ar": "ليفربول (2013–14)"
+        },
+        "subText": {
+          "en": "Suárez & Sturridge Era",
+          "ar": "حقبة سواريز وستوريدج"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 101,
+        "valueLabel": {
+          "en": "101 Goals",
+          "ar": "101 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "plsc_manu_9900",
+        "name": {
+          "en": "Manchester United (1999–00)",
+          "ar": "مانشستر يونايتد (1999–00)"
+        },
+        "subText": {
+          "en": "Sir Alex Ferguson",
+          "ar": "السير أليكس فيرغسون"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MUN",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
+        "value": 97,
+        "valueLabel": {
+          "en": "97 Goals",
+          "ar": "97 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "plsc_arsenal_0405",
+        "name": {
+          "en": "Arsenal (2004–05)",
+          "ar": "أرسنال (2004–05)"
+        },
+        "subText": {
+          "en": "Arsène Wenger",
+          "ar": "أرسين فينجر"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ARS",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "value": 87,
+        "valueLabel": {
+          "en": "87 Goals",
+          "ar": "87 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-team-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "goals", "teams"],
+    "title": {
+      "en": "Rank these 5 clubs by goals scored in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب الأهداف المسجلة في دوري أبطال أوروبا 2025–26"
+    },
+    "subtitle": {
+      "en": "All matches of the 2025–26 UEFA Champions League season",
+      "ar": "شامل جميع مباريات موسم 2025–26 بدوري الأبطال"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_g_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 43,
+        "valueLabel": {
+          "en": "43 Goals",
+          "ar": "43 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_g_atletico",
+        "name": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ATM",
+          "primaryUrl": "https://media.api-sports.io/football/teams/530.png"
+        },
+        "value": 35,
+        "valueLabel": {
+          "en": "35 Goals",
+          "ar": "35 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_g_real",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 33,
+        "valueLabel": {
+          "en": "33 Goals",
+          "ar": "33 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_g_barca",
+        "name": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Goals",
+          "ar": "32 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_g_arsenal",
+        "name": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ARS",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30 Goals",
+          "ar": "30 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-average-possession",
+    "scopeType": "PER_SEASON",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "possession", "tactics"],
+    "title": {
+      "en": "Rank these 5 clubs by average possession in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب متوسط الاستحواذ في دوري أبطال أوروبا 2025–26"
+    },
+    "subtitle": {
+      "en": "Average ball possession percentage during the campaign",
+      "ar": "متوسط نسبة الاستحواذ على الكرة خلال مباريات البطولة"
+    },
+    "metricLabel": {
+      "en": "Possession",
+      "ar": "استحواذ"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_pos_psg",
+        "name": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "PSG",
+          "primaryUrl": "https://media.api-sports.io/football/teams/85.png"
+        },
+        "value": 610,
+        "valueLabel": {
+          "en": "61.0% Possession",
+          "ar": "61.0% استحواذ"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_pos_barca",
+        "name": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 606,
+        "valueLabel": {
+          "en": "60.6% Possession",
+          "ar": "60.6% استحواذ"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_pos_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 582,
+        "valueLabel": {
+          "en": "58.2% Possession",
+          "ar": "58.2% استحواذ"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_pos_mancity",
+        "name": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 580,
+        "valueLabel": {
+          "en": "58.0% Possession",
+          "ar": "58.0% استحواذ"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_pos_inter",
+        "name": {
+          "en": "Inter Milan",
+          "ar": "إنتر ميلان"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "INT",
+          "primaryUrl": "https://media.api-sports.io/football/teams/505.png"
+        },
+        "value": 558,
+        "valueLabel": {
+          "en": "55.8% Possession",
+          "ar": "55.8% استحواذ"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-passing-accuracy",
+    "scopeType": "PER_SEASON",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "passing", "accuracy"],
+    "title": {
+      "en": "Rank these 5 clubs by passing accuracy in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب دقة التمرير في دوري أبطال أوروبا 2025–26"
+    },
+    "subtitle": {
+      "en": "Extremely close 2% margin between European pass masters",
+      "ar": "فروقات دقيقة جدًا بين أفضل أندية أوروبا في دقة التمرير"
+    },
+    "metricLabel": {
+      "en": "Passing Accuracy",
+      "ar": "دقة التمرير"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_pass_mancity",
+        "name": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 912,
+        "valueLabel": {
+          "en": "91.2% Accuracy",
+          "ar": "91.2% دقة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_pass_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 897,
+        "valueLabel": {
+          "en": "89.7% Accuracy",
+          "ar": "89.7% دقة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_pass_psg",
+        "name": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "PSG",
+          "primaryUrl": "https://media.api-sports.io/football/teams/85.png"
+        },
+        "value": 895,
+        "valueLabel": {
+          "en": "89.5% Accuracy",
+          "ar": "89.5% دقة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_pass_chelsea",
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 891,
+        "valueLabel": {
+          "en": "89.1% Accuracy",
+          "ar": "89.1% دقة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_pass_barca",
+        "name": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 888,
+        "valueLabel": {
+          "en": "88.8% Accuracy",
+          "ar": "88.8% دقة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-team-tackles",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "tackles", "defense"],
+    "title": {
+      "en": "Rank these 5 clubs by tackles made in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب التدخلات الناجحة (التاكلينج) في دوري الأبطال 2025–26"
+    },
+    "subtitle": {
+      "en": "Total successful tackles across the 2025–26 tournament",
+      "ar": "إجمالي التدخلات الدفاعية طوال منافسات البطولة لموسم 2025–26"
+    },
+    "metricLabel": {
+      "en": "Tackles",
+      "ar": "تدخلات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_tck_real",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 261,
+        "valueLabel": {
+          "en": "261 Tackles",
+          "ar": "261 تدخلًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_tck_psg",
+        "name": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "PSG",
+          "primaryUrl": "https://media.api-sports.io/football/teams/85.png"
+        },
+        "value": 225,
+        "valueLabel": {
+          "en": "225 Tackles",
+          "ar": "225 تدخلًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_tck_gala",
+        "name": {
+          "en": "Galatasaray",
+          "ar": "غلطة سراي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "GAL",
+          "primaryUrl": "https://media.api-sports.io/football/teams/645.png"
+        },
+        "value": 209,
+        "valueLabel": {
+          "en": "209 Tackles",
+          "ar": "209 تدخلات"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_tck_juve",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 178,
+        "valueLabel": {
+          "en": "178 Tackles",
+          "ar": "178 تدخلًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_tck_arsenal",
+        "name": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ARS",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "value": 177,
+        "valueLabel": {
+          "en": "177 Tackles",
+          "ar": "177 تدخلًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-2025-26-goalkeeper-saves",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "2025-26", "goalkeepers", "saves"],
+    "title": {
+      "en": "Rank these 5 clubs by saves made in the 2025–26 Champions League",
+      "ar": "رتّب الأندية الخمسة حسب عدد التصديات لحراس المرمى في دوري الأبطال 2025–26"
+    },
+    "subtitle": {
+      "en": "Total goalkeeper saves across the 2025–26 European campaign",
+      "ar": "إجمالي تصديات الحراس طوال مشوار البطولة لموسم 2025–26"
+    },
+    "metricLabel": {
+      "en": "Saves",
+      "ar": "تصديات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl26_sv_real",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 73,
+        "valueLabel": {
+          "en": "73 Saves",
+          "ar": "73 تصديًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl26_sv_bodo",
+        "name": {
+          "en": "Bodø/Glimt",
+          "ar": "بودو/غليمت"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BOD"
+        },
+        "value": 68,
+        "valueLabel": {
+          "en": "68 Saves",
+          "ar": "68 تصديًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl26_sv_atletico",
+        "name": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ATM",
+          "primaryUrl": "https://media.api-sports.io/football/teams/530.png"
+        },
+        "value": 58,
+        "valueLabel": {
+          "en": "58 Saves",
+          "ar": "58 تصديًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl26_sv_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 52,
+        "valueLabel": {
+          "en": "52 Saves",
+          "ar": "52 تصديًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl26_sv_gala",
+        "name": {
+          "en": "Galatasaray",
+          "ar": "غلطة سراي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "GAL",
+          "primaryUrl": "https://media.api-sports.io/football/teams/645.png"
+        },
+        "value": 48,
+        "valueLabel": {
+          "en": "48 Saves",
+          "ar": "48 تصديًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "salah-pl-goals-by-season",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["salah", "liverpool", "premier-league", "seasons", "goals"],
+    "title": {
+      "en": "Rank these 5 seasons of Mohamed Salah by Premier League goals scored",
+      "ar": "رتّب مواسم محمد صلاح الخمسة حسب عدد أهدافه في الدوري الإنجليزي الممتاز"
+    },
+    "subtitle": {
+      "en": "Premier League goals with Liverpool",
+      "ar": "أهدافه في الدوري الإنجليزي بقميص ليفربول"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ms_1718",
+        "name": {
+          "en": "Mohamed Salah (2017–18)",
+          "ar": "محمد صلاح (2017–18)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Goals",
+          "ar": "32 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ms_2122",
+        "name": {
+          "en": "Mohamed Salah (2021–22)",
+          "ar": "محمد صلاح (2021–22)"
+        },
+        "subText": {
+          "en": "Liverpool (Golden Boot & Playmaker)",
+          "ar": "ليفربول (الحذاء الذهبي وأفضل صانع)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Goals",
+          "ar": "23 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ms_1819",
+        "name": {
+          "en": "Mohamed Salah (2018–19)",
+          "ar": "محمد صلاح (2018–19)"
+        },
+        "subText": {
+          "en": "Liverpool (Golden Boot)",
+          "ar": "ليفربول (الحذاء الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22 Goals",
+          "ar": "22 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ms_1920",
+        "name": {
+          "en": "Mohamed Salah (2019–20)",
+          "ar": "محمد صلاح (2019–20)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول (موسم التتويج باللقب)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Goals",
+          "ar": "19 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ms_2324",
+        "name": {
+          "en": "Mohamed Salah (2023–24)",
+          "ar": "محمد صلاح (2023–24)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Goals",
+          "ar": "18 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "kane-pl-goals-by-season",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["kane", "tottenham", "premier-league", "seasons", "goals"],
+    "title": {
+      "en": "Rank these 5 seasons of Harry Kane by Premier League goals scored",
+      "ar": "رتّب مواسم هاري كين الخمسة حسب عدد أهدافه في الدوري الإنجليزي الممتاز"
+    },
+    "subtitle": {
+      "en": "Premier League goals with Tottenham Hotspur",
+      "ar": "أهدافه في الدوري الإنجليزي بقميص توتنهام هوتسبير"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "hk_2223",
+        "name": {
+          "en": "Harry Kane (2022–23)",
+          "ar": "هاري كين (2022–23)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur",
+          "ar": "توتنهام هوتسبير"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30 Goals",
+          "ar": "30 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "hk_1617",
+        "name": {
+          "en": "Harry Kane (2016–17)",
+          "ar": "هاري كين (2016–17)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur (Golden Boot)",
+          "ar": "توتنهام هوتسبير (الحذاء الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "hk_1516",
+        "name": {
+          "en": "Harry Kane (2015–16)",
+          "ar": "هاري كين (2015–16)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur (Golden Boot)",
+          "ar": "توتنهام هوتسبير (الحذاء الذهبي)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Goals",
+          "ar": "25 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "hk_2021",
+        "name": {
+          "en": "Harry Kane (2020–21)",
+          "ar": "هاري كين (2020–21)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur (Golden Boot & Playmaker)",
+          "ar": "توتنهام هوتسبير (الحذاء الذهبي وصانع الألعاب)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Goals",
+          "ar": "23 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "hk_1415",
+        "name": {
+          "en": "Harry Kane (2014–15)",
+          "ar": "هاري كين (2014–15)"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur (Breakout Season)",
+          "ar": "توتنهام هوتسبير (موسم الانطلاقة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Goals",
+          "ar": "21 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "kdb-pl-assists-by-season",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["kdb", "mancity", "premier-league", "assists", "seasons"],
+    "title": {
+      "en": "Rank these 5 seasons of Kevin De Bruyne by Premier League assists provided",
+      "ar": "رتّب مواسم كيفين دي بروين الخمسة حسب عدد تمريراته الحاسمة في البريميرليج"
+    },
+    "subtitle": {
+      "en": "Premier League assists with Manchester City",
+      "ar": "التمريرات الحاسمة في الدوري الإنجليزي مع مانشستر سيتي"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "kdb_1920",
+        "name": {
+          "en": "Kevin De Bruyne (2019–20)",
+          "ar": "كيفين دي بروين (2019–20)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Assists",
+          "ar": "20 تمريرة حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "kdb_1617",
+        "name": {
+          "en": "Kevin De Bruyne (2016–17)",
+          "ar": "كيفين دي بروين (2016–17)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Assists",
+          "ar": "18 تمريرة حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "kdb_2223",
+        "name": {
+          "en": "Kevin De Bruyne (2022–23)",
+          "ar": "كيفين دي بروين (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City (Treble Season)",
+          "ar": "مانشستر سيتي (موسم الثلاثية)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Assists",
+          "ar": "16 تمريرة حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "kdb_2021",
+        "name": {
+          "en": "Kevin De Bruyne (2020–21)",
+          "ar": "كيفين دي بروين (2020–21)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Assists",
+          "ar": "12 تمريرة حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "kdb_2324",
+        "name": {
+          "en": "Kevin De Bruyne (2023–24)",
+          "ar": "كيفين دي بروين (2023–24)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Assists",
+          "ar": "10 تمريرات حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "benzema-real-madrid-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["benzema", "real-madrid", "seasons", "goals", "ballon-dor"],
+    "title": {
+      "en": "Rank these 5 seasons of Karim Benzema by all-competition goals scored",
+      "ar": "رتّب مواسم كريم بنزيما الخمسة حسب إجمالي أهدافه في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "Total senior club goals with Real Madrid",
+      "ar": "إجمالي الأهداف الرسمية بقميص ريال مدريد"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "kb_2122",
+        "name": {
+          "en": "Karim Benzema (2021–22)",
+          "ar": "كريم بنزيما (2021–22)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد (موسم الكرة الذهبية)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
+        "value": 44,
+        "valueLabel": {
+          "en": "44 Goals",
+          "ar": "44 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "kb_1112",
+        "name": {
+          "en": "Karim Benzema (2011–12)",
+          "ar": "كريم بنزيما (2011–12)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Goals",
+          "ar": "32 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "kb_2223",
+        "name": {
+          "en": "Karim Benzema (2022–23)",
+          "ar": "كريم بنزيما (2022–23)"
+        },
+        "subText": {
+          "en": "Real Madrid (Final Madrid Season)",
+          "ar": "ريال مدريد (موسمه الأخير في مدريد)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
+        "value": 31,
+        "valueLabel": {
+          "en": "31 Goals",
+          "ar": "31 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "kb_1819",
+        "name": {
+          "en": "Karim Benzema (2018–19)",
+          "ar": "كريم بنزيما (2018–19)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30 Goals",
+          "ar": "30 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "kb_1516",
+        "name": {
+          "en": "Karim Benzema (2015–16)",
+          "ar": "كريم بنزيما (2015–16)"
+        },
+        "subText": {
+          "en": "Real Madrid (Undecima UCL)",
+          "ar": "ريال مدريد (الحادية عشرة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
+        "value": 28,
+        "valueLabel": {
+          "en": "28 Goals",
+          "ar": "28 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "suarez-league-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["suarez", "barcelona", "liverpool", "goals", "seasons"],
+    "title": {
+      "en": "Rank these 5 domestic league seasons of Luis Suárez by goals scored",
+      "ar": "رتّب مواسم لويس سواريز الخمسة في الدوريات حسب عدد أهدافه المسجلة"
+    },
+    "subtitle": {
+      "en": "Domestic league goals in top European leagues",
+      "ar": "أهداف الدوريات الأوروبية الكبرى في موسم واحد"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ls_1516",
+        "name": {
+          "en": "Luis Suárez (2015–16)",
+          "ar": "لويس سواريز (2015–16)"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
+        },
+        "value": 40,
+        "valueLabel": {
+          "en": "40 Goals",
+          "ar": "40 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ls_1314",
+        "name": {
+          "en": "Luis Suárez (2013–14)",
+          "ar": "لويس سواريز (2013–14)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
+        },
+        "value": 31,
+        "valueLabel": {
+          "en": "31 Goals",
+          "ar": "31 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ls_1617",
+        "name": {
+          "en": "Luis Suárez (2016–17)",
+          "ar": "لويس سواريز (2016–17)"
+        },
+        "subText": {
+          "en": "Barcelona (La Liga)",
+          "ar": "برشلونة (الليغا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ls_1718",
+        "name": {
+          "en": "Luis Suárez (2017–18)",
+          "ar": "لويس سواريز (2017–18)"
+        },
+        "subText": {
+          "en": "Barcelona (La Liga Champions)",
+          "ar": "برشلونة (بطل الليغا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Goals",
+          "ar": "25 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ls_2021",
+        "name": {
+          "en": "Luis Suárez (2020–21)",
+          "ar": "لويس سواريز (2020–21)"
+        },
+        "subText": {
+          "en": "Atlético Madrid (La Liga Champions)",
+          "ar": "أتلتيكو مدريد (بطل الليغا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Goals",
+          "ar": "21 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-most-assists-single-season",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 master playmakers by assists provided in a single Premier League season",
+      "ar": "رتّب صناع اللعب الخمسة حسب عدد التمريرات الحاسمة في موسم واحد بالدوري الإنجليزي الممتاز"
+    },
+    "subtitle": {
+      "en": "Premier League single-season assist records",
+      "ar": "الأرقام القياسية للتمريرات الحاسمة في موسم واحد بالبريميرليج"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "assists", "henry", "ozil", "fabregas", "debruyne", "hazard"],
+    "answers": [
+      {
+        "answerKey": "pas_henry_0203",
+        "name": {
+          "en": "Thierry Henry (2002–03)",
+          "ar": "تيري هنري (2002–03)"
+        },
+        "subText": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TH14",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Thierry_Henry_August_2008.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Assists",
+          "ar": "20 تمريرة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pas_ozil_1516",
+        "name": {
+          "en": "Mesut Özil (2015–16)",
+          "ar": "مسعود أوزيل (2015–16)"
+        },
+        "subText": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Mesut_%C3%96zil_at_Baku_before_2019_UEFA_Europe_League_Final.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Assists",
+          "ar": "19 تمريرة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pas_fabregas_1415",
+        "name": {
+          "en": "Cesc Fàbregas (2014–15)",
+          "ar": "سيسك فابريغاس (2014–15)"
+        },
+        "subText": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CF4",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cesc_F%C3%A0bregas_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Assists",
+          "ar": "18 تمريرة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pas_kdb_2223",
+        "name": {
+          "en": "Kevin De Bruyne (2022–23)",
+          "ar": "كيفين دي بروين (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Assists",
+          "ar": "16 تمريرة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pas_hazard_1819",
+        "name": {
+          "en": "Eden Hazard (2018–19)",
+          "ar": "إيدين هازارد (2018–19)"
+        },
+        "subText": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EH10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Eden_Hazard_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Assists",
+          "ar": "15 تمريرة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-goals-single-campaign-masterpieces",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 player campaigns by goals scored in a single UEFA Champions League season",
+      "ar": "رتّب مواسم اللاعبين الخمسة حسب عدد الأهداف في نسخة واحدة من دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Individual scoring campaigns in a single UCL season",
+      "ar": "أفضل المواسم التهديفية الفردية في دوري أبطال أوروبا"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "seasons", "cr7", "benzema", "messi"],
+    "answers": [
+      {
+        "answerKey": "ucg_cr7_1314",
+        "name": {
+          "en": "Cristiano Ronaldo (2013–14)",
+          "ar": "كريستيانو رونالدو (2013–14)"
+        },
+        "subText": {
+          "en": "Real Madrid (All-time UCL record)",
+          "ar": "ريال مدريد (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Goals",
+          "ar": "17 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucg_benzema_2122",
+        "name": {
+          "en": "Karim Benzema (2021–22)",
+          "ar": "كريم بنزيما (2021–22)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucg_messi_1112",
+        "name": {
+          "en": "Lionel Messi (2011–12)",
+          "ar": "ليونيل ميسي (2011–12)"
+        },
+        "subText": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucg_ruud_0203",
+        "name": {
+          "en": "Ruud van Nistelrooy (2002–03)",
+          "ar": "رود فان نيستلروي (2002–03)"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RVN10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Ruud_van_Nistelrooy_2010.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucg_haller_2122",
+        "name": {
+          "en": "Sébastien Haller (2021–22)",
+          "ar": "سيباستيان هالير (2021–22)"
+        },
+        "subText": {
+          "en": "Ajax",
+          "ar": "أياكس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SH9",
+          "primaryUrl": "https://media.api-sports.io/football/players/219.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/194.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Goals",
+          "ar": "11 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-goalkeepers-clean-sheets-season",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 goalkeepers by clean sheets in a single Premier League season",
+      "ar": "رتّب الحراس الخمسة حسب عدد الشباك النظيفة (كلين شيت) في موسم واحد بالبريميرليج"
+    },
+    "subtitle": {
+      "en": "Premier League Golden Glove single-season clean sheet records",
+      "ar": "الأرقام القياسية للشباك النظيفة في موسم واحد بالدوري الإنجليزي الممتاز"
+    },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goalkeepers", "clean-sheets", "cech", "vandersar"],
+    "answers": [
+      {
+        "answerKey": "pcs_cech_0405",
+        "name": {
+          "en": "Petr Čech (2004–05)",
+          "ar": "بيتر تشيك (2004–05)"
+        },
+        "subText": {
+          "en": "Chelsea (All-time PL record)",
+          "ar": "تشيلسي (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PC1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 24,
+        "valueLabel": {
+          "en": "24 Clean Sheets",
+          "ar": "24 كلين شيت"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pcs_sar_0809",
+        "name": {
+          "en": "Edwin van der Sar (2008–09)",
+          "ar": "أدوين فان در سار (2008–09)"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VDS1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Edwin_van_der_Sar_2011.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Clean Sheets",
+          "ar": "21 كلين شيت"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pcs_reina_0506",
+        "name": {
+          "en": "Pepe Reina (2005–06)",
+          "ar": "بيبي رينا (2005–06)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PR25",
+          "primaryUrl": "https://media.api-sports.io/football/players/18928.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Clean Sheets",
+          "ar": "20 كلين شيت"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pcs_seaman_9394",
+        "name": {
+          "en": "David Seaman (1993–94)",
+          "ar": "ديفيد سيمان (1993–94)"
+        },
+        "subText": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DS1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/David_Seaman_2011.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Clean Sheets",
+          "ar": "19 كلين شيت"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pcs_hart_1011",
+        "name": {
+          "en": "Joe Hart (2010–11)",
+          "ar": "جو هارت (2010–11)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JH25",
+          "primaryUrl": "https://media.api-sports.io/football/players/18859.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Clean Sheets",
+          "ar": "18 كلين شيت"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "la-liga-most-assists-single-season-playmakers",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 seasons by assists provided in a single La Liga campaign",
+      "ar": "رتّب المواسم الخمسة حسب عدد التمريرات الحاسمة في موسم واحد بالدوري الإسباني (الليغا)"
+    },
+    "subtitle": {
+      "en": "Spanish Primera División single-season assist records",
+      "ar": "الأرقام القياسية للتمريرات الحاسمة في موسم واحد بالدوري الإسباني"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["la-liga", "assists", "messi", "xavi", "ozil", "suarez"],
+    "answers": [
+      {
+        "answerKey": "las_messi_1920",
+        "name": {
+          "en": "Lionel Messi (2019–20)",
+          "ar": "ليونيل ميسي (2019–20)"
+        },
+        "subText": {
+          "en": "FC Barcelona (All-time La Liga record)",
+          "ar": "برشلونة (الرقم القياسي التاريخي لليغا)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Assists",
+          "ar": "21 تمريرة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "las_xavi_0809",
+        "name": {
+          "en": "Xavi Hernández (2008–09)",
+          "ar": "تشافي هيرنانديز (2008–09)"
+        },
+        "subText": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "X6",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Xavi_Hernandez_2011.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Assists",
+          "ar": "20 تمريرة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "las_ozil_1112",
+        "name": {
+          "en": "Mesut Özil (2011–12)",
+          "ar": "مسعود أوزيل (2011–12)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MO10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Mesut_%C3%96zil_at_Baku_before_2019_UEFA_Europe_League_Final.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Assists",
+          "ar": "17 تمريرة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "las_suarez_1516",
+        "name": {
+          "en": "Luis Suárez (2015–16)",
+          "ar": "لويس سواريز (2015–16)"
+        },
+        "subText": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Assists",
+          "ar": "16 تمريرة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "las_sarabia_1819",
+        "name": {
+          "en": "Pablo Sarabia (2018–19)",
+          "ar": "بابلو سارابيا (2018–19)"
+        },
+        "subText": {
+          "en": "Sevilla FC",
+          "ar": "إشبيلية"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PS17",
+          "primaryUrl": "https://media.api-sports.io/football/players/18919.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Assists",
+          "ar": "13 تمريرة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "serie-a-goals-single-season-records",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 strikers by goals scored in a single Serie A season",
+      "ar": "رتّب المهاجمين الخمسة حسب عدد الأهداف في موسم واحد بالدوري الإيطالي (سيري آ)"
+    },
+    "subtitle": {
+      "en": "Italian Serie A top scoring individual campaigns",
+      "ar": "أفضل المواسم التهديفية الفردية في تاريخ الدوري الإيطالي"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["serie-a", "goals", "higuain", "cr7", "osimhen"],
+    "answers": [
+      {
+        "answerKey": "sag_higuain_1516",
+        "name": {
+          "en": "Gonzalo Higuaín (2015–16)",
+          "ar": "غونزالو هيغواين (2015–16)"
+        },
+        "subText": {
+          "en": "Napoli (All-time Serie A record)",
+          "ar": "نابولي (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Gonzalo_Higua%C3%ADn_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/492.png"
+        },
+        "value": 36,
+        "valueLabel": {
+          "en": "36 Goals",
+          "ar": "36 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "sag_nordahl_4950",
+        "name": {
+          "en": "Gunnar Nordahl (1949–50)",
+          "ar": "غونار نوردال (1949–50)"
+        },
+        "subText": {
+          "en": "AC Milan",
+          "ar": "ميلان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GN9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Gunnar_Nordahl_1950.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png"
+        },
+        "value": 35,
+        "valueLabel": {
+          "en": "35 Goals",
+          "ar": "35 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "sag_angelillo_5859",
+        "name": {
+          "en": "Antonio Angelillo (1958–59)",
+          "ar": "أنطونيو أنجيليلو (1958–59)"
+        },
+        "subText": {
+          "en": "Inter Milan",
+          "ar": "إنتر ميلان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "AA9",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/505.png"
+        },
+        "value": 33,
+        "valueLabel": {
+          "en": "33 Goals",
+          "ar": "33 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "sag_cr7_1920",
+        "name": {
+          "en": "Cristiano Ronaldo (2019–20)",
+          "ar": "كريستيانو رونالدو (2019–20)"
+        },
+        "subText": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 31,
+        "valueLabel": {
+          "en": "31 Goals",
+          "ar": "31 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "sag_osimhen_2223",
+        "name": {
+          "en": "Victor Osimhen (2022–23)",
+          "ar": "فيكتور أوسيمين (2022–23)"
+        },
+        "subText": {
+          "en": "Napoli",
+          "ar": "نابولي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VO9",
+          "primaryUrl": "https://media.api-sports.io/football/players/19088.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/492.png"
+        },
+        "value": 26,
+        "valueLabel": {
+          "en": "26 Goals",
+          "ar": "26 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "bundesliga-goals-single-season-strikers",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 strikers by goals scored in a single Bundesliga season",
+      "ar": "رتّب المهاجمين الخمسة حسب عدد الأهداف في موسم واحد بالدوري الألماني (البوندسليغا)"
+    },
+    "subtitle": {
+      "en": "German Bundesliga single-season scoring records",
+      "ar": "أعلى المواسم التهديفية في تاريخ البوندسليغا"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["bundesliga", "goals", "lewandowski", "muller", "kane"],
+    "answers": [
+      {
+        "answerKey": "bgs_lewa_2021",
+        "name": {
+          "en": "Robert Lewandowski (2020–21)",
+          "ar": "روبرت ليفاندوفسكي (2020–21)"
+        },
+        "subText": {
+          "en": "Bayern Munich (All-time Bundesliga record)",
+          "ar": "بايرن ميونخ (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 41,
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "bgs_muller_7172",
+        "name": {
+          "en": "Gerd Müller (1971–72)",
+          "ar": "غيرد مولر (1971–72)"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GM9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 40,
+        "valueLabel": {
+          "en": "40 Goals",
+          "ar": "40 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "bgs_kane_2324",
+        "name": {
+          "en": "Harry Kane (2023–24)",
+          "ar": "هاري كين (2023–24)"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "HK9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 36,
+        "valueLabel": {
+          "en": "36 Goals",
+          "ar": "36 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "bgs_auba_1617",
+        "name": {
+          "en": "Pierre-Emerick Aubameyang (2016–17)",
+          "ar": "بيير إيميريك أوباميانغ (2016–17)"
+        },
+        "subText": {
+          "en": "Borussia Dortmund",
+          "ar": "بوروسيا دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PEA17",
+          "primaryUrl": "https://media.api-sports.io/football/players/244.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png"
+        },
+        "value": 31,
+        "valueLabel": {
+          "en": "31 Goals",
+          "ar": "31 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "bgs_huntelaar_1112",
+        "name": {
+          "en": "Klaas-Jan Huntelaar (2011–12)",
+          "ar": "كلاس يان هونتيلار (2011–12)"
+        },
+        "subText": {
+          "en": "Schalke 04",
+          "ar": "شالكه"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KJH25",
+          "primaryUrl": "https://media.api-sports.io/football/players/548.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/174.png"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ligue-1-goals-single-season-records",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 strikers by goals scored in a single Ligue 1 season",
+      "ar": "رتّب المهاجمين الخمسة حسب عدد الأهداف في موسم واحد بالدوري الفرنسي (ليغ 1)"
+    },
+    "subtitle": {
+      "en": "French Ligue 1 single-season goalscoring records",
+      "ar": "أعلى المواسم التهديفية في تاريخ الدوري الفرنسي"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ligue-1", "goals", "ibrahimovic", "mbappe", "cavani"],
+    "answers": [
+      {
+        "answerKey": "l1g_skoblar_7071",
+        "name": {
+          "en": "Josip Skoblar (1970–71)",
+          "ar": "يوسيب سكوبلار (1970–71)"
+        },
+        "subText": {
+          "en": "Olympique Marseille (All-time Ligue 1 record)",
+          "ar": "أولمبيك مارسيليا (الرقم القياسي التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JS11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Josip_Skoblar_1971.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/81.png"
+        },
+        "value": 44,
+        "valueLabel": {
+          "en": "44 Goals",
+          "ar": "44 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "l1g_keita_7071",
+        "name": {
+          "en": "Salif Keïta (1970–71)",
+          "ar": "ساليف كيتا (1970–71)"
+        },
+        "subText": {
+          "en": "AS Saint-Étienne",
+          "ar": "سانت إتيان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SK9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Salif_Ke%C3%AFta_1971.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/1063.png"
+        },
+        "value": 42,
+        "valueLabel": {
+          "en": "42 Goals",
+          "ar": "42 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "l1g_ibra_1516",
+        "name": {
+          "en": "Zlatan Ibrahimović (2015–16)",
+          "ar": "زلاتان إبراهيموفيتش (2015–16)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "IBRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Zlatan_Ibrahimovi%C4%87_June_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+        },
+        "value": 38,
+        "valueLabel": {
+          "en": "38 Goals",
+          "ar": "38 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "l1g_cavani_1617",
+        "name": {
+          "en": "Edinson Cavani (2016–17)",
+          "ar": "إدينسون كافاني (2016–17)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EC9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Edinson_Cavani_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+        },
+        "value": 35,
+        "valueLabel": {
+          "en": "35 Goals",
+          "ar": "35 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "l1g_mbappe_1819",
+        "name": {
+          "en": "Kylian Mbappé (2018–19)",
+          "ar": "كيليان مبابي (2018–19)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+        },
+        "value": 33,
+        "valueLabel": {
+          "en": "33 Goals",
+          "ar": "33 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "haaland-career-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["haaland", "mancity", "dortmund", "goals", "seasons"],
+    "title": {
+      "en": "Rank these 5 Erling Haaland single-season campaigns by total official goals scored (all comps)",
+      "ar": "رتّب مواسم إيرلينغ هالاند الخمسة حسب إجمالي الأهداف المسجلة في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "Club goals in all official competitions per season",
+      "ar": "إجمالي الأهداف الرسمية مع الأندية في كل موسم"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ehl_2223",
+        "name": {
+          "en": "2022–23 (Manchester City)",
+          "ar": "2022–23 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Treble Season",
+          "ar": "موسم الثلاثية"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9"
+        },
+        "value": 52,
+        "valueLabel": {
+          "en": "52 Goals",
+          "ar": "52 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ehl_1920",
+        "name": {
+          "en": "2019–20 (Salzburg & Dortmund)",
+          "ar": "2019–20 (سالزبورغ وبوروسيا دورتموند)"
+        },
+        "subText": {
+          "en": "Breakthrough season (40 games across 2 clubs)",
+          "ar": "موسم الانفجار التهديفي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EH"
+        },
+        "value": 44,
+        "valueLabel": {
+          "en": "44 Goals",
+          "ar": "44 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ehl_2021",
+        "name": {
+          "en": "2020–21 (Borussia Dortmund)",
+          "ar": "2020–21 (بوروسيا دورتموند)"
+        },
+        "subText": {
+          "en": "Borussia Dortmund",
+          "ar": "بوروسيا دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "EH9"
+        },
+        "value": 41,
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ehl_2324",
+        "name": {
+          "en": "2023–24 (Manchester City)",
+          "ar": "2023–24 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Premier League Champions (45 games)",
+          "ar": "بطل الدوري الإنجليزي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9"
+        },
+        "value": 38,
+        "valueLabel": {
+          "en": "38 Goals",
+          "ar": "38 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ehl_2122",
+        "name": {
+          "en": "2021–22 (Borussia Dortmund)",
+          "ar": "2021–22 (بوروسيا دورتموند)"
+        },
+        "subText": {
+          "en": "Final BVB Campaign (30 games)",
+          "ar": "الموسم الأخير مع دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "EH9"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "vinicius-real-madrid-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["vinicius", "real-madrid", "goals", "seasons"],
+    "title": {
+      "en": "Rank these 5 Vinícius Júnior seasons at Real Madrid by all-competition goals scored",
+      "ar": "رتّب مواسم فينيسيوس جونيور الخمسة مع ريال مدريد حسب عدد الأهداف في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "Official goals for Real Madrid per campaign",
+      "ar": "الأهداف الرسمية بقميص ريال مدريد في كل موسم"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "vng_2324",
+        "name": {
+          "en": "2023–24 Season",
+          "ar": "موسم 2023–24"
+        },
+        "subText": {
+          "en": "La Liga & UCL Double",
+          "ar": "ثنائية الليغا ودوري الأبطال"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "VJR"
+        },
+        "value": 24,
+        "valueLabel": {
+          "en": "24 Goals",
+          "ar": "24 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "vng_2223",
+        "name": {
+          "en": "2022–23 Season",
+          "ar": "موسم 2022–23"
+        },
+        "subText": {
+          "en": "Copa del Rey Champions",
+          "ar": "بطل كأس ملك إسبانيا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "VJR"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Goals",
+          "ar": "23 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "vng_2122",
+        "name": {
+          "en": "2021–22 Season",
+          "ar": "موسم 2021–22"
+        },
+        "subText": {
+          "en": "Breakthrough season",
+          "ar": "موسم التتويج بدوري الأبطال"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "VJR"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22 Goals",
+          "ar": "22 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "vng_2021",
+        "name": {
+          "en": "2020–21 Season",
+          "ar": "موسم 2020–21"
+        },
+        "subText": {
+          "en": "Zidane Era (49 games)",
+          "ar": "حقبة زيدان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "VJR"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Goals",
+          "ar": "6 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "vng_1920",
+        "name": {
+          "en": "2019–20 Season",
+          "ar": "موسم 2019–20"
+        },
+        "subText": {
+          "en": "La Liga Champions (38 games)",
+          "ar": "بطل الدوري الإسباني"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "VJR"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Goals",
+          "ar": "5 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "bellingham-career-seasons-league-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["bellingham", "real-madrid", "dortmund", "goals", "seasons"],
+    "title": {
+      "en": "Rank these 5 Jude Bellingham seasons by domestic league goals scored",
+      "ar": "رتّب مواسم جود بيلينغهام الخمسة حسب عدد الأهداف المسجلة في الدوري المحلي"
+    },
+    "subtitle": {
+      "en": "Domestic league goals scored per season (La Liga, Bundesliga, Championship)",
+      "ar": "الأهداف المسجلة في مسابقة الدوري المحلي بكل موسم"
+    },
+    "metricLabel": {
+      "en": "League Goals",
+      "ar": "أهداف الدوري"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "jbl_2324",
+        "name": {
+          "en": "2023–24 (Real Madrid - La Liga)",
+          "ar": "2023–24 (ريال مدريد - الدوري الإسباني)"
+        },
+        "subText": {
+          "en": "Debut Season (28 league games - Pichichi Contender)",
+          "ar": "الموسم الأول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "JB5"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 League Goals",
+          "ar": "19 هدفًا في الليغا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "jbl_2223",
+        "name": {
+          "en": "2022–23 (Dortmund - Bundesliga)",
+          "ar": "2022–23 (بوروسيا دورتموند - الدوري الألماني)"
+        },
+        "subText": {
+          "en": "Bundesliga Player of the Season (31 league games)",
+          "ar": "أفضل لاعب في البوندسليغا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "JB22"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 League Goals",
+          "ar": "8 أهداف في البوندسليغا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "jbl_1920",
+        "name": {
+          "en": "2019–20 (Birmingham - Championship)",
+          "ar": "2019–20 (برمنغهام سيتي - التشامبيونشيب)"
+        },
+        "subText": {
+          "en": "16-year-old prodigy (41 league games)",
+          "ar": "في سن الـ16 عامًا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JB"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 League Goals",
+          "ar": "4 أهداف في التشامبيونشيب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "jbl_2122",
+        "name": {
+          "en": "2021–22 (Dortmund - Bundesliga)",
+          "ar": "2021–22 (بوروسيا دورتموند - الدوري الألماني)"
+        },
+        "subText": {
+          "en": "32 league games",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "JB22"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 League Goals",
+          "ar": "3 أهداف في البوندسليغا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "jbl_2021",
+        "name": {
+          "en": "2020–21 (Dortmund - Bundesliga)",
+          "ar": "2020–21 (بوروسيا دورتموند - الدوري الألماني)"
+        },
+        "subText": {
+          "en": "Bundesliga debut campaign (29 league games)",
+          "ar": "الموسم الأول في ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "JB22"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 League Goal",
+          "ar": "هدف واحد في البوندسليغا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "bukayo-saka-arsenal-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["saka", "arsenal", "premier-league", "goals", "seasons"],
+    "title": {
+      "en": "Rank these 5 Bukayo Saka Arsenal seasons by all-competition goals scored",
+      "ar": "رتّب مواسم بوكايو ساكا الخمسة مع أرسنال حسب عدد الأهداف في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "Official goals for Arsenal FC in all competitions per season",
+      "ar": "الأهداف الرسمية بقميص أرسنال في كل موسم"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "skg_2324",
+        "name": {
+          "en": "2023–24 Season",
+          "ar": "موسم 2023–24"
+        },
+        "subText": {
+          "en": "Career-best scoring tally",
+          "ar": "الموسم التهديفي الأفضل في مسيرته"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "SAK7"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Goals",
+          "ar": "20 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "skg_2223",
+        "name": {
+          "en": "2022–23 Season",
+          "ar": "موسم 2022–23"
+        },
+        "subText": {
+          "en": "Title Challenge Campaign",
+          "ar": "موسم المنافسة على اللقب"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "SAK7"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "skg_2122",
+        "name": {
+          "en": "2021–22 Season",
+          "ar": "موسم 2021–22"
+        },
+        "subText": {
+          "en": "Arsenal Top Scorer (43 games)",
+          "ar": "هداف أرسنال في الموسم"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "SAK7"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "skg_2021",
+        "name": {
+          "en": "2020–21 Season",
+          "ar": "موسم 2020–21"
+        },
+        "subText": {
+          "en": "Arsenal Player of the Season (46 games)",
+          "ar": "لاعب الموسم في أرسنال"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "SAK7"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Goals",
+          "ar": "7 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "skg_1920",
+        "name": {
+          "en": "2019–20 Season",
+          "ar": "موسم 2019–20"
+        },
+        "subText": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "SAK"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Goals",
+          "ar": "4 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "phil-foden-mancity-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["foden", "mancity", "premier-league", "goals", "seasons"],
+    "title": {
+      "en": "Rank these 5 Phil Foden Manchester City seasons by all-competition goals scored",
+      "ar": "رتّب مواسم فيل فودين الخمسة مع مانشستر سيتي حسب عدد الأهداف في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "Official goals for Manchester City in all competitions per season",
+      "ar": "الأهداف الرسمية بقميص مانشستر سيتي في كل موسم"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fdg_2324",
+        "name": {
+          "en": "2023–24 Season",
+          "ar": "موسم 2023–24"
+        },
+        "subText": {
+          "en": "PL Player of the Season",
+          "ar": "لاعب الموسم في البريميرليج"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "FOD"
+        },
+        "value": 27,
+        "valueLabel": {
+          "en": "27 Goals",
+          "ar": "27 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fdg_2021",
+        "name": {
+          "en": "2020–21 Season",
+          "ar": "موسم 2020–21"
+        },
+        "subText": {
+          "en": "Chelsea (50 games)",
+          "ar": "أفضل لاعب شاب في إنجلترا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "FOD"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Goals",
+          "ar": "16 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fdg_2223",
+        "name": {
+          "en": "2022–23 Season",
+          "ar": "موسم 2022–23"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "FOD"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fdg_2122",
+        "name": {
+          "en": "2021–22 Season",
+          "ar": "موسم 2021–22"
+        },
+        "subText": {
+          "en": "Premier League Champions (45 games)",
+          "ar": "بطل الدوري الإنجليزي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "FOD"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fdg_1920",
+        "name": {
+          "en": "2019–20 Season",
+          "ar": "موسم 2019–20"
+        },
+        "subText": {
+          "en": "Breakthrough season (38 games)",
+          "ar": "موسم التثبيت في التشكيل الأساسي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "FOD"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "rodri-mancity-appearances-per-season",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["rodri", "mancity", "appearances", "seasons"],
+    "title": {
+      "en": "Rank these 5 Rodri seasons at Manchester City by all-competition appearances played",
+      "ar": "رتّب مواسم رودري الخمسة مع مانشستر سيتي حسب عدد المباريات الملعوبة في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "Total official appearances for Manchester City per campaign",
+      "ar": "إجمالي المباريات الرسمية بقميص مانشستر سيتي في كل موسم"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "rda_2223",
+        "name": {
+          "en": "2022–23 Season",
+          "ar": "موسم 2022–23"
+        },
+        "subText": {
+          "en": "Treble Campaign",
+          "ar": "موسم الثلاثية"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "ROD"
+        },
+        "value": 56,
+        "valueLabel": {
+          "en": "56 Matches",
+          "ar": "56 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "rda_2021",
+        "name": {
+          "en": "2020–21 Season",
+          "ar": "موسم 2020–21"
+        },
+        "subText": {
+          "en": "Premier League & League Cup Double",
+          "ar": "ثنائية الدوري وكأس الرابطة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "ROD"
+        },
+        "value": 53,
+        "valueLabel": {
+          "en": "53 Matches",
+          "ar": "53 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "rda_1920",
+        "name": {
+          "en": "2019–20 Season",
+          "ar": "موسم 2019–20"
+        },
+        "subText": {
+          "en": "Debut Season from Atlético Madrid",
+          "ar": "الموسم الأول قادمًا من أتلتيكو مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png",
+          "fallbackText": "ROD"
+        },
+        "value": 52,
+        "valueLabel": {
+          "en": "52 Matches",
+          "ar": "52 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "rda_2324",
+        "name": {
+          "en": "2023–24 Season",
+          "ar": "موسم 2023–24"
+        },
+        "subText": {
+          "en": "Ballon d'Or Year",
+          "ar": "عام الكرة الذهبية"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "ROD"
+        },
+        "value": 50,
+        "valueLabel": {
+          "en": "50 Matches",
+          "ar": "50 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "rda_2122",
+        "name": {
+          "en": "2021–22 Season",
+          "ar": "موسم 2021–22"
+        },
+        "subText": {
+          "en": "Premier League Champions",
+          "ar": "الدوري الإنجليزي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "ROD"
+        },
+        "value": 46,
+        "valueLabel": {
+          "en": "46 Matches",
+          "ar": "46 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "cole-palmer-career-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["palmer", "chelsea", "mancity", "premier-league", "goals", "seasons"],
+    "title": {
+      "en": "Rank these 5 Cole Palmer seasons by all-competition goals scored",
+      "ar": "رتّب مواسم كول بالمر الخمسة حسب عدد الأهداف المسجلة في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "Official senior club goals per campaign (Chelsea & Manchester City)",
+      "ar": "الأهداف الرسمية مع الفريق الأول في كل موسم (تشيلسي ومان سيتي)"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "plm_2324",
+        "name": {
+          "en": "2023–24 (Chelsea)",
+          "ar": "2023–24 (تشيلسي)"
+        },
+        "subText": {
+          "en": "Chelsea",
+          "ar": "أفضل لاعب شاب في إنجلترا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "CP20"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Goals",
+          "ar": "25 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "plm_2425",
+        "name": {
+          "en": "2024–25 (Chelsea)",
+          "ar": "2024–25 (تشيلسي)"
+        },
+        "subText": {
+          "en": "Key talisman",
+          "ar": "نجم الفريق الأول (سوبر هاتريك في شوط واحد ضد برايتون)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "CP20"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "plm_2122",
+        "name": {
+          "en": "2021–22 (Manchester City)",
+          "ar": "2021–22 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Scored in UCL, FA Cup & EFL Cup (11 games)",
+          "ar": "سجل في الأبطال وكأس الاتحاد وكأس الرابطة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "CP"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Goals",
+          "ar": "3 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "plm_2223",
+        "name": {
+          "en": "2022–23 (Manchester City)",
+          "ar": "2022–23 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Treble squad member (25 games)",
+          "ar": "عضو فريق الثلاثية"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "CP"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Goal",
+          "ar": "هدف واحد"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "plm_2021",
+        "name": {
+          "en": "2020–21 (Manchester City)",
+          "ar": "2020–21 (مانشستر سيتي)"
+        },
+        "subText": {
+          "en": "Senior professional debut season (2 games)",
+          "ar": "موسم الظهور الأول مع الفريق الأول (مباراتان)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "CP"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Goals",
+          "ar": "0 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-single-season-goals-modern",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "player-seasons", "goals", "modern-stars"],
+    "title": {
+      "en": "Rank these 5 player-seasons by Champions League goals scored",
+      "ar": "رتّب مواسم اللاعبين الخمسة حسب عدد الأهداف في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Goals scored in that specific Champions League campaign",
+      "ar": "الأهداف المسجلة في تلك النسخة المحددة من دوري أبطال أوروبا"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_ps_mbappe26",
+        "name": {
+          "en": "Kylian Mbappé (2025–26)",
+          "ar": "كيليان مبابي (2025–26)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_ps_raphinha25",
+        "name": {
+          "en": "Raphinha (2024–25)",
+          "ar": "رافينيا (2024–25)"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "RAP",
+          "primaryUrl": "https://media.api-sports.io/football/players/1496.png"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Goals",
+          "ar": "13 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_ps_haaland23",
+        "name": {
+          "en": "Erling Haaland (2022–23)",
+          "ar": "إيرلينغ هالاند (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_ps_haaland21",
+        "name": {
+          "en": "Erling Haaland (2020–21)",
+          "ar": "إيرلينغ هالاند (2020–21)"
+        },
+        "subText": {
+          "en": "Borussia Dortmund",
+          "ar": "بوروسيا دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "EH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_ps_mbappe24",
+        "name": {
+          "en": "Kylian Mbappé (2023–24)",
+          "ar": "كيليان مبابي (2023–24)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "golden-shoe-single-season-points-record",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["golden-shoe", "goals", "messi", "ronaldo", "lewandowski", "suarez", "haaland"],
+    "title": {
+      "en": "Rank these 5 Golden Shoe winning campaigns by total official points scored",
+      "ar": "رتّب مواسم الحذاء الذهبي الأوروبي الخمسة حسب إجمالي النقاط المحتسبة"
+    },
+    "subtitle": {
+      "en": "Official European Golden Shoe points (League goals × League coefficient factor)",
+      "ar": "نقاط الحذاء الذهبي الأوروبي (أهداف الدوري × معامل صعوبة الدوري)"
+    },
+    "metricLabel": {
+      "en": "Points",
+      "ar": "نقاط"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gsp_messi_12",
+        "name": {
+          "en": "Lionel Messi (2011–12)",
+          "ar": "ليونيل ميسي (2011–12)"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 100,
+        "valueLabel": {
+          "en": "100 Points (50 Goals)",
+          "ar": "100 نقطة (50 هدفًا)"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gsp_cr7_15",
+        "name": {
+          "en": "Cristiano Ronaldo (2014–15)",
+          "ar": "كريستيانو رونالدو (2014–15)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 96,
+        "valueLabel": {
+          "en": "96 Points (48 Goals)",
+          "ar": "96 نقطة (48 هدفًا)"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gsp_lewa_21",
+        "name": {
+          "en": "Robert Lewandowski (2020–21)",
+          "ar": "روبرت ليفاندوفسكي (2020–21)"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 82,
+        "valueLabel": {
+          "en": "82 Points (41 Goals)",
+          "ar": "82 نقطة (41 هدفًا)"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gsp_suarez_16",
+        "name": {
+          "en": "Luis Suárez (2015–16)",
+          "ar": "لويس سواريز (2015–16)"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
+        },
+        "value": 80,
+        "valueLabel": {
+          "en": "80 Points (40 Goals)",
+          "ar": "80 نقطة (40 هدفًا)"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gsp_haaland_23",
+        "name": {
+          "en": "Erling Haaland (2022–23)",
+          "ar": "إيرلينغ هالاند (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+        },
+        "value": 72,
+        "valueLabel": {
+          "en": "72 Points (36 Goals)",
+          "ar": "72 نقطة (36 هدفًا)"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "golden-shoe-single-season-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["golden-shoe", "players", "goals", "messi", "ronaldo"],
+    "title": {
+      "en": "Rank these 5 Golden Shoe winning campaigns by domestic league goals",
+      "ar": "رتّب مواسم الفوز بالحذاء الذهبي الخمسة حسب عدد أهداف الدوري المحلي"
+    },
+    "subtitle": {
+      "en": "Top domestic league goals in a single European season",
+      "ar": "أعلى عدد أهداف في الدوري المحلي بموسم أوروبي واحد"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gs_messi_1112",
+        "name": {
+          "en": "Lionel Messi (2011–12)",
+          "ar": "ليونيل ميسي (2011–12)"
+        },
+        "subText": {
+          "en": "Barcelona • La Liga",
+          "ar": "برشلونة • الدوري الإسباني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 50,
+        "valueLabel": {
+          "en": "50 Goals",
+          "ar": "50 هدف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gs_cr7_1415",
+        "name": {
+          "en": "Cristiano Ronaldo (2014–15)",
+          "ar": "كريستيانو رونالدو (2014–15)"
+        },
+        "subText": {
+          "en": "Real Madrid • La Liga",
+          "ar": "ريال مدريد • الدوري الإسباني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 48,
+        "valueLabel": {
+          "en": "48 Goals",
+          "ar": "48 هدف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gs_lewa_2021",
+        "name": {
+          "en": "Robert Lewandowski (2020–21)",
+          "ar": "روبرت ليفاندوفسكي (2020–21)"
+        },
+        "subText": {
+          "en": "Bayern Munich • Bundesliga",
+          "ar": "بايرن ميونخ • الدوري الألماني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 41,
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gs_suarez_1516",
+        "name": {
+          "en": "Luis Suárez (2015–16)",
+          "ar": "لويس سواريز (2015–16)"
+        },
+        "subText": {
+          "en": "Barcelona • La Liga",
+          "ar": "برشلونة • الدوري الإسباني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 40,
+        "valueLabel": {
+          "en": "40 Goals",
+          "ar": "40 هدف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gs_haaland_2223",
+        "name": {
+          "en": "Erling Haaland (2022–23)",
+          "ar": "إيرلينغ هالاند (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City • Premier League",
+          "ar": "مانشستر سيتي • البريميرليج"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 36,
+        "valueLabel": {
+          "en": "36 Goals",
+          "ar": "36 هدف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "lewandowski-bundesliga-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["lewandowski", "bayern", "bundesliga", "seasons", "goals"],
+    "title": {
+      "en": "Rank these 5 seasons of Robert Lewandowski by Bundesliga goals scored",
+      "ar": "رتّب مواسم روبرت ليفاندوفسكي الخمسة حسب عدد أهدافه في الدوري الألماني"
+    },
+    "subtitle": {
+      "en": "Bundesliga goals with Bayern Munich",
+      "ar": "أهدافه في البوندسليغا بقميص بايرن ميونخ"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "lewa_2021",
+        "name": {
+          "en": "Robert Lewandowski (2020–21)",
+          "ar": "روبرت ليفاندوفسكي (2020–21)"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 41,
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "lewa_2122",
+        "name": {
+          "en": "Robert Lewandowski (2021–22)",
+          "ar": "روبرت ليفاندوفسكي (2021–22)"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 35,
+        "valueLabel": {
+          "en": "35 Goals",
+          "ar": "35 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "lewa_1920",
+        "name": {
+          "en": "Robert Lewandowski (2019–20)",
+          "ar": "روبرت ليفاندوفسكي (2019–20)"
+        },
+        "subText": {
+          "en": "Bayern Munich (Treble Season)",
+          "ar": "بايرن ميونخ (موسم الثلاثية)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 34,
+        "valueLabel": {
+          "en": "34 Goals",
+          "ar": "34 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "lewa_1516",
+        "name": {
+          "en": "Robert Lewandowski (2015–16)",
+          "ar": "روبرت ليفاندوفسكي (2015–16)"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30 Goals",
+          "ar": "30 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "lewa_1718",
+        "name": {
+          "en": "Robert Lewandowski (2017–18)",
+          "ar": "روبرت ليفاندوفسكي (2017–18)"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "mbappe-ligue1-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["mbappe", "psg", "ligue-1", "seasons", "goals"],
+    "title": {
+      "en": "Rank these 5 seasons of Kylian Mbappé by Ligue 1 goals scored",
+      "ar": "رتّب مواسم كيليان مبابي الخمسة حسب عدد أهدافه في الدوري الفرنسي"
+    },
+    "subtitle": {
+      "en": "Ligue 1 goals with Paris Saint-Germain",
+      "ar": "أهدافه في الدوري الفرنسي بقميص باريس سان جيرمان"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "km_1819",
+        "name": {
+          "en": "Kylian Mbappé (2018–19)",
+          "ar": "كيليان مبابي (2018–19)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 33,
+        "valueLabel": {
+          "en": "33 Goals",
+          "ar": "33 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "km_2223",
+        "name": {
+          "en": "Kylian Mbappé (2022–23)",
+          "ar": "كيليان مبابي (2022–23)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "km_2122",
+        "name": {
+          "en": "Kylian Mbappé (2021–22)",
+          "ar": "كيليان مبابي (2021–22)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 28,
+        "valueLabel": {
+          "en": "28 Goals",
+          "ar": "28 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "km_2324",
+        "name": {
+          "en": "Kylian Mbappé (2023–24)",
+          "ar": "كيليان مبابي (2023–24)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 27,
+        "valueLabel": {
+          "en": "27 Goals",
+          "ar": "27 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "km_1920",
+        "name": {
+          "en": "Kylian Mbappé (2019–20)",
+          "ar": "كيليان مبابي (2019–20)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Goals",
+          "ar": "18 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "haaland-all-comps-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["haaland", "mancity", "dortmund", "seasons", "goals"],
+    "title": {
+      "en": "Rank these 5 seasons of Erling Haaland by all-competition goals scored",
+      "ar": "رتّب مواسم إيرلينغ هالاند الخمسة حسب عدد أهدافه في جميع المسابقات"
+    },
+    "subtitle": {
+      "en": "Total club goals in all official senior competitions",
+      "ar": "إجمالي أهدافه مع الأندية في جميع المسابقات الرسمية"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "eh_2223",
+        "name": {
+          "en": "Erling Haaland (2022–23)",
+          "ar": "إيرلينغ هالاند (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City (Treble Season)",
+          "ar": "مانشستر سيتي (موسم الثلاثية)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+        },
+        "value": 52,
+        "valueLabel": {
+          "en": "52 Goals",
+          "ar": "52 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eh_1920",
+        "name": {
+          "en": "Erling Haaland (2019–20)",
+          "ar": "إيرلينغ هالاند (2019–20)"
+        },
+        "subText": {
+          "en": "RB Salzburg & Dortmund",
+          "ar": "سالزبورغ وبوروسيا دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png"
+        },
+        "value": 44,
+        "valueLabel": {
+          "en": "44 Goals",
+          "ar": "44 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eh_2021",
+        "name": {
+          "en": "Erling Haaland (2020–21)",
+          "ar": "إيرلينغ هالاند (2020–21)"
+        },
+        "subText": {
+          "en": "Borussia Dortmund",
+          "ar": "بوروسيا دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+        },
+        "value": 41,
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eh_2324",
+        "name": {
+          "en": "Erling Haaland (2023–24)",
+          "ar": "إيرلينغ هالاند (2023–24)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+        },
+        "value": 38,
+        "valueLabel": {
+          "en": "38 Goals",
+          "ar": "38 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eh_2122",
+        "name": {
+          "en": "Erling Haaland (2021–22)",
+          "ar": "إيرلينغ هالاند (2021–22)"
+        },
+        "subText": {
+          "en": "Borussia Dortmund",
+          "ar": "بوروسيا دورتموند"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Goals",
+          "ar": "29 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "most-official-goals-calendar-year",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these legendary calendar years by most official goals scored",
+      "ar": "رتّب السنوات التقويمية الخمس للأساطير حسب عدد الأهداف الرسمية المسجلة"
+    },
+    "subtitle": {
+      "en": "Club and senior national team goals in a single calendar year",
+      "ar": "شامل جميع الأهداف الرسمية للنادي والمنتخب في عام ميلادي واحد"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["calendar-year", "records", "messi", "muller", "pele", "ronaldo"],
+    "answers": [
+      {
+        "answerKey": "cyg_messi_2012",
+        "name": {
+          "en": "Lionel Messi (2012)",
+          "ar": "ليونيل ميسي (2012)"
+        },
+        "subText": {
+          "en": "Barcelona & Argentina",
+          "ar": "برشلونة والأرجنتين"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 91,
+        "valueLabel": {
+          "en": "91 Goals",
+          "ar": "91 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cyg_muller_1972",
+        "name": {
+          "en": "Gerd Müller (1972)",
+          "ar": "غيرد مولر (1972)"
+        },
+        "subText": {
+          "en": "Bayern Munich & West Germany",
+          "ar": "بايرن ميونخ وألمانيا الغربية"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GM9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 85,
+        "valueLabel": {
+          "en": "85 Goals",
+          "ar": "85 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cyg_pele_1958",
+        "name": {
+          "en": "Pelé (1958)",
+          "ar": "بيليه (1958)"
+        },
+        "subText": {
+          "en": "Santos FC & Brazil",
+          "ar": "سانتوس والبرازيل"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PELE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/128.png"
+        },
+        "value": 75,
+        "valueLabel": {
+          "en": "75 Goals",
+          "ar": "75 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cyg_romario_2000",
+        "name": {
+          "en": "Romário (2000)",
+          "ar": "روماريو (2000)"
+        },
+        "subText": {
+          "en": "Vasco da Gama & Brazil",
+          "ar": "فاسكو دا جاما والبرازيل"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ROM11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rom%C3%A1rio_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/133.png"
+        },
+        "value": 72,
+        "valueLabel": {
+          "en": "72 Goals",
+          "ar": "72 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cyg_cr7_2013",
+        "name": {
+          "en": "Cristiano Ronaldo (2013)",
+          "ar": "كريستيانو رونالدو (2013)"
+        },
+        "subText": {
+          "en": "Real Madrid & Portugal",
+          "ar": "ريال مدريد والبرتغال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 69,
+        "valueLabel": {
+          "en": "69 Goals",
+          "ar": "69 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "european-golden-boot-record-seasons-goals",
+    "scopeType": "PER_SEASON",
+    "title": {
+      "en": "Rank these 5 Golden Boot winning campaigns by league goals scored",
+      "ar": "رتّب مواسم الفوز بالحذاء الذهبي الأوروبي الخمسة حسب عدد الأهداف في الدوري"
+    },
+    "subtitle": {
+      "en": "European Golden Shoe winner seasons in top European leagues",
+      "ar": "مواسم التتويج بالحذاء الذهبي الأوروبي في الدوريات الكبرى"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["golden-boot", "seasons", "messi", "ronaldo", "lewandowski"],
+    "answers": [
+      {
+        "answerKey": "gbs_messi_1112",
+        "name": {
+          "en": "Lionel Messi (2011–12)",
+          "ar": "ليونيل ميسي (2011–12)"
+        },
+        "subText": {
+          "en": "Barcelona • La Liga",
+          "ar": "برشلونة • الدوري الإسباني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 50,
+        "valueLabel": {
+          "en": "50 Goals",
+          "ar": "50 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gbs_cr7_1415",
+        "name": {
+          "en": "Cristiano Ronaldo (2014–15)",
+          "ar": "كريستيانو رونالدو (2014–15)"
+        },
+        "subText": {
+          "en": "Real Madrid • La Liga",
+          "ar": "ريال مدريد • الدوري الإسباني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 48,
+        "valueLabel": {
+          "en": "48 Goals",
+          "ar": "48 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gbs_lewa_2021",
+        "name": {
+          "en": "Robert Lewandowski (2020–21)",
+          "ar": "روبرت ليفاندوفسكي (2020–21)"
+        },
+        "subText": {
+          "en": "Bayern Munich • Bundesliga",
+          "ar": "بايرن ميونخ • الدوري الألماني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 41,
+        "valueLabel": {
+          "en": "41 Goals",
+          "ar": "41 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gbs_suarez_1516",
+        "name": {
+          "en": "Luis Suárez (2015–16)",
+          "ar": "لويس سواريز (2015–16)"
+        },
+        "subText": {
+          "en": "Barcelona • La Liga",
+          "ar": "برشلونة • الدوري الإسباني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 40,
+        "valueLabel": {
+          "en": "40 Goals",
+          "ar": "40 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gbs_haaland_2223",
+        "name": {
+          "en": "Erling Haaland (2022–23)",
+          "ar": "إيرلينج هالاند (2022–23)"
+        },
+        "subText": {
+          "en": "Man City • Premier League",
+          "ar": "مانشستر سيتي • الدوري الإنجليزي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
+        "value": 36,
+        "valueLabel": {
+          "en": "36 Goals",
+          "ar": "36 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-single-campaign-assists-record",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "assists", "milner", "neymar", "kdb", "dimaria", "vini"],
+    "title": {
+      "en": "Rank these 5 player campaigns by assists provided in a single UEFA Champions League season",
+      "ar": "رتّب مواسم اللاعبين الخمسة حسب عدد التمريرات الحاسمة في موسم واحد بدوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Most assists in a single Champions League tournament campaign",
+      "ar": "أكثر التمريرات الحاسمة للاعب في نسخة واحدة من دوري أبطال أوروبا"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "uca_milner_18",
+        "name": {
+          "en": "James Milner (2017–18)",
+          "ar": "جيمس ميلنر (2017–18)"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MIL",
+          "primaryUrl": "https://media.api-sports.io/football/players/290.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Assists",
+          "ar": "9 تمريرات حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "uca_neymar_17",
+        "name": {
+          "en": "Neymar Jr (2016–17)",
+          "ar": "نيمار (2016–17)"
+        },
+        "subText": {
+          "en": "Barcelona(Remontada Season)",
+          "ar": "برشلونة (موسم الريمونتادا)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Assists",
+          "ar": "8 تمريرات حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "uca_kdb_23",
+        "name": {
+          "en": "Kevin De Bruyne (2022–23)",
+          "ar": "كيفين دي بروين (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي (موسم الثلاثية)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Assists",
+          "ar": "7 تمريرات حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "uca_dimaria_14",
+        "name": {
+          "en": "Ángel Di María (2013–14)",
+          "ar": "أنخيل دي ماريا (2013–14)"
+        },
+        "subText": {
+          "en": "Real Madrid (La Décima)",
+          "ar": "ريال مدريد (العاشرة (La Décima))"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "ADM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Assists",
+          "ar": "6 تمريرات حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "uca_vini_22",
+        "name": {
+          "en": "Vinícius Júnior (2021–22)",
+          "ar": "فينيسيوس جونيور (2021–22)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد (الرابعة عشرة)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "VJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Vinicius_Junior_2021.jpg"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Assists",
+          "ar": "5 تمريرات حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "la-liga-single-season-assists-records",
+    "scopeType": "PER_SEASON",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["la-liga", "assists", "messi", "xavi", "ozil", "suarez", "dimaria"],
+    "title": {
+      "en": "Rank these 5 player campaigns by assists provided in a single La Liga season",
+      "ar": "رتّب مواسم اللاعبين الخمسة حسب عدد التمريرات الحاسمة في موسم واحد بالدوري الإسباني"
+    },
+    "subtitle": {
+      "en": "Most assists in a single 38-game La Liga campaign",
+      "ar": "أكثر التمريرات الحاسمة في موسم واحد من الليغا"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "lla_messi_20",
+        "name": {
+          "en": "Lionel Messi (2019–20)",
+          "ar": "ليونيل ميسي (2019–20)"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Assists",
+          "ar": "21 تمريرة حاسمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "lla_xavi_09",
+        "name": {
+          "en": "Xavi Hernández (2008–09)",
+          "ar": "تشافي هيرنانديز (2008–09)"
+        },
+        "subText": {
+          "en": "Barcelona (Pep Treble Season)",
+          "ar": "برشلونة (موسم الثلاثية التاريخية)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "XAV6",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Xavi_Hernandez_2011.jpg"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Assists",
+          "ar": "20 تمريرة حاسمة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "lla_ozil_12",
+        "name": {
+          "en": "Mesut Özil (2011–12)",
+          "ar": "مسعود أوزيل (2011–12)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "OZI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Mesut_%C3%96zil_at_Baku_before_2019_UEFA_Europe_League_Final.jpg"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Assists",
+          "ar": "17 تمريرة حاسمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "lla_suarez_16",
+        "name": {
+          "en": "Luis Suárez (2015–16)",
+          "ar": "لويس سواريز (2015–16)"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Assists",
+          "ar": "16 تمريرة حاسمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "lla_dimaria_13",
+        "name": {
+          "en": "Ángel Di María (2012–13)",
+          "ar": "أنخيل دي ماريا (2012–13)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "ADM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Assists",
+          "ar": "14 تمريرة حاسمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  }
+]

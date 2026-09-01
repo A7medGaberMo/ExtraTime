@@ -33,11 +33,11 @@ import type { PlayerCardData, Tier } from '@/types/player';
 const PACK_CASES: PackDefinition[] = [
   {
     id: 'pantheon-pack',
-    name: 'Pantheon 5-Star',
-    subtitle: 'Icon, Hero, Ultimate, Master & Elite',
+    name: 'Pantheon Royalty',
+    subtitle: 'Icon, Hero, Ultimate & Master Titans',
     featuredTier: 'ICON',
-    guaranteed: ['ICON', 'HERO', 'ULTIMATE', 'MASTER', 'ELITE'],
-    eligibleTiers: ['ICON', 'HERO', 'ULTIMATE', 'MASTER', 'ELITE'],
+    guaranteed: ['ICON', 'HERO', 'ULTIMATE', 'MASTER'],
+    eligibleTiers: ['ICON', 'HERO', 'ULTIMATE', 'MASTER'], // Strictly no Elite
   },
   {
     id: 'icon-pack',
@@ -284,7 +284,7 @@ export default function PacksPage() {
             const displayName =
               lang === 'ar'
                 ? pack.id === 'pantheon-pack'
-                  ? 'بانثيون النجوم 5★'
+                  ? 'بانثيون النخبة الكبرى'
                   : pack.id === 'icon-pack'
                     ? 'ملوك الأيقونات'
                     : 'أبطال النخبة'
@@ -293,7 +293,7 @@ export default function PacksPage() {
             const displaySubtitle =
               lang === 'ar'
                 ? pack.id === 'pantheon-pack'
-                  ? 'أيقونات، أبطال، ألتميت، ماستر وإيليت'
+                  ? 'أيقونات، أبطال، ألتميت وماستر (بدون إيليت)'
                   : pack.id === 'icon-pack'
                     ? 'أساطير وأبطال كرة القدم التاريخيون'
                     : 'حصرياً: نجوم ألتميت وماستر فقط'

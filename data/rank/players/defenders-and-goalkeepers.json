@@ -1,16 +1,511 @@
 [
   {
+    "slug": "ucl-career-matches-legendary-defenders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "defenders", "appearances", "ramos", "maldini", "carlos", "puyol", "alves"],
+    "title": {
+      "en": "Rank these 5 legendary defenders by UEFA Champions League appearances",
+      "ar": "رتّب المدافعين الأساطير الخمسة حسب عدد مبارياتهم في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "UCL & European Cup matches (group stage to final)",
+      "ar": "مباريات دوري الأبطال وكأس أوروبا من دور المجموعات حتى النهائي"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "defm_ramos",
+        "name": {
+          "en": "Sergio Ramos",
+          "ar": "سيرخيو راموس"
+        },
+        "subText": {
+          "en": "Real Madrid, PSG & Sevilla",
+          "ar": "ريال مدريد وباريس وإشبيلية (بطل 4 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "SR4",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Sergio_Ramos_2018.jpg"
+        },
+        "value": 142,
+        "valueLabel": {
+          "en": "142 Matches",
+          "ar": "142 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "defm_maldini",
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "AC Milan (5x European Champion)",
+          "ar": "ميلان (بطل أوروبا 5 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png",
+          "fallbackText": "MAL3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg"
+        },
+        "value": 135,
+        "valueLabel": {
+          "en": "135 Matches",
+          "ar": "135 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "defm_carlos",
+        "name": {
+          "en": "Roberto Carlos",
+          "ar": "روبرتو كارلوس"
+        },
+        "subText": {
+          "en": "Real Madrid & Fenerbahçe",
+          "ar": "ريال مدريد وفنربخشة (بطل 3 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "RC3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Roberto_Carlos_2018.jpg"
+        },
+        "value": 120,
+        "valueLabel": {
+          "en": "120 Matches",
+          "ar": "120 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "defm_puyol",
+        "name": {
+          "en": "Carles Puyol",
+          "ar": "كارليس بويول"
+        },
+        "subText": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "PUY",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Premios_Goya_2020_-_Carles_Pujol.jpg/330px-Premios_Goya_2020_-_Carles_Pujol.jpg"
+        },
+        "value": 115,
+        "valueLabel": {
+          "en": "115 Matches",
+          "ar": "115 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "defm_alves",
+        "name": {
+          "en": "Dani Alves",
+          "ar": "داني ألفيس"
+        },
+        "subText": {
+          "en": "Sevilla, Barca, Juventus & PSG",
+          "ar": "إشبيلية وبرشلونة ويوفي وباريس (بطل 3 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ALV",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dani_Alves_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 111,
+        "valueLabel": {
+          "en": "111 Matches",
+          "ar": "111 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-most-penalties-awarded-editions",
+    "scopeType": "PER_COMPETITION",
+    "title": {
+      "en": "Rank these 5 FIFA World Cup editions by most penalty kicks awarded",
+      "ar": "رتّب نسخ كأس العالم الخمسة حسب عدد ركلات الجزاء المحتسبة في البطولة"
+    },
+    "subtitle": {
+      "en": "Total penalty kicks awarded during tournament play",
+      "ar": "إجمالي ركلات الجزاء المحتسبة في وقت المباريات"
+    },
+    "metricLabel": {
+      "en": "Penalties",
+      "ar": "ركلات جزاء"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "penalties", "var", "tournaments"],
+    "answers": [
+      {
+        "answerKey": "wcp_2018",
+        "name": {
+          "en": "2018 World Cup (Russia)",
+          "ar": "كأس العالم 2018 (روسيا)"
+        },
+        "subText": {
+          "en": "First World Cup with VAR technology",
+          "ar": "أول مونديال بتقنية الفيديو المساعد (VAR)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC18"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Penalties",
+          "ar": "29 ركلة جزاء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcp_2022",
+        "name": {
+          "en": "2022 World Cup (Qatar)",
+          "ar": "كأس العالم 2022 (قطر)"
+        },
+        "subText": {
+          "en": "Qatar 2022",
+          "ar": "مونديال قطر 2022"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC22"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Penalties",
+          "ar": "23 ركلة جزاء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcp_2002",
+        "name": {
+          "en": "2002 World Cup (Korea/Japan)",
+          "ar": "كأس العالم 2002 (كوريا واليابان)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC02"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Penalties",
+          "ar": "18 ركلة جزاء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcp_1990",
+        "name": {
+          "en": "1990 World Cup (Italy)",
+          "ar": "كأس العالم 1990 (إيطاليا)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC90"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Penalties",
+          "ar": "16 ركلة جزاء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcp_2014",
+        "name": {
+          "en": "2014 World Cup (Brazil)",
+          "ar": "كأس العالم 2014 (البرازيل)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC14"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Penalties",
+          "ar": "13 ركلة جزاء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-penalty-shootouts-won",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["world-cup", "penalties", "argentina", "germany", "brazil", "france", "england"],
+    "title": {
+      "en": "Rank these 5 nations by World Cup penalty shootout victories",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد ركلات الترجيح التي فازوا بها في كأس العالم"
+    },
+    "subtitle": {
+      "en": "Successful penalty shootouts won in FIFA World Cup history",
+      "ar": "ركلات الترجيح الناجحة في تاريخ نهائيات كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Shootout Wins",
+      "ar": "فوز بركلات الترجيح"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pso_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "subText": {
+          "en": "7 Total Shootouts Played",
+          "ar": "خاضت 7 ركلات ترجيح في المونديال"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Wins",
+          "ar": "6 انتصارات"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pso_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "subText": {
+          "en": "100% Shootout Success Rate",
+          "ar": "نسبة نجاح 100% بركلات الترجيح"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Wins",
+          "ar": "4 انتصارات"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pso_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "5 Total Shootouts Played",
+          "ar": "خاضت 5 ركلات ترجيح في المونديال"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Wins",
+          "ar": "3 انتصارات"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pso_france",
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "subText": {
+          "en": "5 Total Shootouts Played",
+          "ar": "خاضت 5 ركلات ترجيح في المونديال"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Wins",
+          "ar": "انتصاران"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pso_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "subText": {
+          "en": "4 Total Shootouts Played",
+          "ar": "خاضت 4 ركلات ترجيح في المونديال"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Win",
+          "ar": "فوز واحد"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-penalty-goals-all-time-leaders",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 goalscorers by UEFA Champions League penalty goals scored",
+      "ar": "رتّب الهدافين الخمسة حسب عدد أهداف ركلات الجزاء في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Penalties scored in UCL matches (excluding shootouts)",
+      "ar": "ركلات الجزاء المسجلة أثناء مباريات دوري الأبطال"
+    },
+    "metricLabel": {
+      "en": "Penalty Goals",
+      "ar": "أهداف جزاء"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "penalties", "cr7", "messi", "lewandowski"],
+    "answers": [
+      {
+        "answerKey": "ucp_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Penalty Goals",
+          "ar": "19 هدفًا من جزاء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucp_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Penalty Goals",
+          "ar": "18 هدفًا من جزاء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucp_lewa",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Penalty Goals",
+          "ar": "16 هدفًا من جزاء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucp_ruud",
+        "name": {
+          "en": "Ruud van Nistelrooy",
+          "ar": "رود فان نيستلروي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RVN10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Ruud_van_Nistelrooy_2010.jpg"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Penalty Goals",
+          "ar": "11 هدفًا من جزاء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucp_mbappe",
+        "name": {
+          "en": "Kylian Mbappé",
+          "ar": "كيليان مبابي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Penalty Goals",
+          "ar": "9 أهداف من جزاء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
     "slug": "premier-league-all-time-clean-sheets",
     "scopeType": "ALL_TIME",
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": [
-      "premier-league",
-      "goalkeepers",
-      "clean-sheets",
-      "cech"
-    ],
+    "tags": ["premier-league", "goalkeepers", "clean-sheets", "cech"],
     "title": {
       "en": "Rank these 5 legendary goalkeepers by Premier League clean sheets kept",
       "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة (الكلين شيت) في تاريخ البريميرليج"
@@ -84,7 +579,8 @@
         "media": {
           "type": "player",
           "fallbackText": "MS1",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Mark_Schwarzer_2013.jpg/330px-Mark_Schwarzer_2013.jpg"
         },
         "value": 151,
         "valueLabel": {
@@ -136,6 +632,1497 @@
         "valueLabel": {
           "en": "132 Clean Sheets",
           "ar": "132 كلين شيت"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-all-time-penalty-saves",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goalkeepers", "penalties", "saves", "james", "sorensen", "schwarzer", "gomes", "mignolet"],
+    "title": {
+      "en": "Rank these 5 goalkeepers by Premier League penalty kicks saved",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد ركلات الجزاء المتصدى لها بالبريميرليج"
+    },
+    "subtitle": {
+      "en": "Official penalties saved in Premier League matches",
+      "ar": "ركلات الجزاء التي تصدى لها الحارس في الدوري الإنجليزي الممتاز"
+    },
+    "metricLabel": {
+      "en": "Penalty Saves",
+      "ar": "تصديات لضربات جزاء"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "psv_james",
+        "name": {
+          "en": "David James",
+          "ar": "ديفيد جيمس"
+        },
+        "subText": {
+          "en": "Liverpool, Villa, West Ham, City, Portsmouth",
+          "ar": "ليفربول وفيلا ووست هام والسيتي وبورتسموث"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DJ1",
+          "primaryUrl": "https://media.api-sports.io/football/players/10105.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Penalties Saved",
+          "ar": "13 تصديًا لركلة جزاء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "psv_sorensen",
+        "name": {
+          "en": "Thomas Sørensen",
+          "ar": "توماس سورنسن"
+        },
+        "subText": {
+          "en": "Sunderland, Aston Villa, Stoke City",
+          "ar": "سندرلاند وأستون فيلا وستوك سيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SOR",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/66.png"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Penalties Saved",
+          "ar": "12 تصديًا لركلة جزاء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "psv_schwarzer",
+        "name": {
+          "en": "Mark Schwarzer",
+          "ar": "مارك شفارزر"
+        },
+        "subText": {
+          "en": "Middlesbrough, Fulham, Chelsea, Leicester",
+          "ar": "ميدلزبره وفولهام وتشيلسي وليستر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SCH",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Mark_Schwarzer_2013.jpg/330px-Mark_Schwarzer_2013.jpg"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Penalties Saved",
+          "ar": "10 تصديات لركلات جزاء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "psv_gomes",
+        "name": {
+          "en": "Heurelho Gomes",
+          "ar": "هوريلهو غوميز"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur & Watford",
+          "ar": "توتنهام هوتسبير وواتفورد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GOM",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "primaryUrl": "https://media.api-sports.io/football/players/18857.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Penalties Saved",
+          "ar": "9 تصديات لركلات جزاء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "psv_mignolet",
+        "name": {
+          "en": "Simon Mignolet",
+          "ar": "سيمون مينيوليه"
+        },
+        "subText": {
+          "en": "Sunderland & Liverpool",
+          "ar": "سندرلاند وليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MIG",
+          "primaryUrl": "https://media.api-sports.io/football/players/282.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Penalties Saved",
+          "ar": "8 تصديات لركلات جزاء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "serie-a-all-time-clean-sheets-goalkeepers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["serie-a", "goalkeepers", "clean-sheets", "buffon", "handanovic", "zoff", "pagliuca", "peruzzi"],
+    "title": {
+      "en": "Rank these 5 Italian league legends by all-time Serie A clean sheets",
+      "ar": "رتّب حراس المرمى الأساطير الخمسة حسب عدد الشباك النظيفة في تاريخ الدوري الإيطالي"
+    },
+    "subtitle": {
+      "en": "Official Serie A clean sheets kept",
+      "ar": "إجمالي المباريات بشباك نظيفة (كلين شيت) في تاريخ السيريا آ"
+    },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "sac_buffon",
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "subText": {
+          "en": "Parma & Juventus",
+          "ar": "بارما ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
+          "fallbackText": "GIGI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg"
+        },
+        "value": 299,
+        "valueLabel": {
+          "en": "299 Clean Sheets",
+          "ar": "299 مباراة بشباك نظيفة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "sac_handanovic",
+        "name": {
+          "en": "Samir Handanović",
+          "ar": "سمير هاندانوفيتش"
+        },
+        "subText": {
+          "en": "Udinese & Inter Milan",
+          "ar": "أودينيزي وإنتر ميلان"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png",
+          "fallbackText": "HAN1",
+          "primaryUrl": "https://media.api-sports.io/football/players/1144.png"
+        },
+        "value": 180,
+        "valueLabel": {
+          "en": "180 Clean Sheets",
+          "ar": "180 مباراة بشباك نظيفة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "sac_zoff",
+        "name": {
+          "en": "Dino Zoff",
+          "ar": "دينو زوف"
+        },
+        "subText": {
+          "en": "Udinese, Mantova, Napoli & Juventus",
+          "ar": "أودينيزي ومانتوفا ونابولي ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
+          "fallbackText": "ZOF",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Dino_Zoff_%281974%29.jpg/330px-Dino_Zoff_%281974%29.jpg"
+        },
+        "value": 167,
+        "valueLabel": {
+          "en": "167 Clean Sheets",
+          "ar": "167 مباراة بشباك نظيفة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "sac_pagliuca",
+        "name": {
+          "en": "Gianluca Pagliuca",
+          "ar": "جانلوكا باليوكا"
+        },
+        "subText": {
+          "en": "Sampdoria, Inter Milan, Bologna, Ascoli",
+          "ar": "سامبدوريا وإنتر ميلان وبولونيا وأسكولي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PAG",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gianluca_Pagliuca_1994.jpg/330px-Gianluca_Pagliuca_1994.jpg"
+        },
+        "value": 153,
+        "valueLabel": {
+          "en": "153 Clean Sheets",
+          "ar": "153 مباراة بشباك نظيفة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "sac_peruzzi",
+        "name": {
+          "en": "Angelo Peruzzi",
+          "ar": "أنجيلو بيروتزي"
+        },
+        "subText": {
+          "en": "Roma, Verona, Juventus, Inter & Lazio",
+          "ar": "روما وهيلاس فيرونا ويوفنتوس وإنتر ولاتسيو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PER",
+          "primaryUrl": "https://media.api-sports.io/football/players/288055.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 135,
+        "valueLabel": {
+          "en": "135 Clean Sheets",
+          "ar": "135 مباراة بشباك نظيفة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-most-penalty-saves-goalkeepers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "goalkeepers", "penalties", "saves", "casillas", "cech", "oblak", "courtois", "alisson"],
+    "title": {
+      "en": "Rank these 5 goalkeepers by UEFA Champions League penalties saved (excluding shootouts)",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد ركلات الجزاء المتصدى لها في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Regular and extra-time penalty kicks saved in UCL matches",
+      "ar": "ركلات الجزاء المتصدى لها أثناء المباريات (دون ركلات الترجيح)"
+    },
+    "metricLabel": {
+      "en": "Penalty Saves",
+      "ar": "تصديات لضربات جزاء"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucp_casillas",
+        "name": {
+          "en": "Iker Casillas",
+          "ar": "إيكر كاسياس"
+        },
+        "subText": {
+          "en": "Real Madrid & Porto",
+          "ar": "ريال مدريد وبورتو"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "IK1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Penalties Saved",
+          "ar": "7 تصديات لركلات جزاء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucp_cech",
+        "name": {
+          "en": "Petr Čech",
+          "ar": "بيتر تشيك"
+        },
+        "subText": {
+          "en": "Chelsea & Arsenal (2012 Final Hero)",
+          "ar": "تشيلسي وأرسنال (بطل نهائي 2012)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "CECH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Penalties Saved",
+          "ar": "5 تصديات لركلات جزاء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucp_oblak",
+        "name": {
+          "en": "Jan Oblak",
+          "ar": "يان أوبلاك"
+        },
+        "subText": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png",
+          "fallbackText": "OBL",
+          "primaryUrl": "https://media.api-sports.io/football/players/1429.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Penalties Saved",
+          "ar": "4 تصديات لركلات جزاء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucp_courtois",
+        "name": {
+          "en": "Thibaut Courtois",
+          "ar": "تيبو كورتوا"
+        },
+        "subText": {
+          "en": "Atlético, Chelsea & Real Madrid",
+          "ar": "أتلتيكو وتشيلسي وريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "TC1",
+          "primaryUrl": "https://media.api-sports.io/football/players/730.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Penalties Saved",
+          "ar": "3 تصديات لركلات جزاء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucp_alisson",
+        "name": {
+          "en": "Alisson Becker",
+          "ar": "أليسون بيكر"
+        },
+        "subText": {
+          "en": "AS Roma & Liverpool",
+          "ar": "روما وليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "ALI1",
+          "primaryUrl": "https://media.api-sports.io/football/players/280.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Penalties Saved",
+          "ar": "تصديان لركلتي جزاء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "goalkeepers-all-time-career-goals",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["goalkeepers", "goals", "ceni", "chilavert", "campos", "vegas", "higuita"],
+    "title": {
+      "en": "Rank these 5 iconic goalscoring goalkeepers by career official goals scored",
+      "ar": "رتّب حراس المرمى الهدافين الخمسة حسب عدد الأهداف المسجلة في مسيرتهم الاحترافية"
+    },
+    "subtitle": {
+      "en": "Total career official goals scored by goalkeepers (free kicks & penalties)",
+      "ar": "إجمالي الأهداف الرسمية المسجلة لحراس المرمى (ضربات حرة وجزاء ولعب مفتوح)"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "gkg_ceni",
+        "name": {
+          "en": "Rogério Ceni",
+          "ar": "روجيريو سيني"
+        },
+        "subText": {
+          "en": "São Paulo",
+          "ar": "ساو باولو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CEN",
+          "primaryUrl": "https://media.api-sports.io/football/players/576652.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/126.png"
+        },
+        "value": 131,
+        "valueLabel": {
+          "en": "131 Goals",
+          "ar": "131 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "gkg_chilavert",
+        "name": {
+          "en": "José Luis Chilavert",
+          "ar": "خوسيه لويس تشيلافيرت"
+        },
+        "subText": {
+          "en": "Vélez Sársfield, Strasbourg & Paraguay",
+          "ar": "فيليز سارسفيلد وستراسبورغ والباراغواي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CHI",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/95.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Jos%C3%A9_Luis_Chilavert_1998.jpg/330px-Jos%C3%A9_Luis_Chilavert_1998.jpg"
+        },
+        "value": 67,
+        "valueLabel": {
+          "en": "67 Goals",
+          "ar": "67 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "gkg_campos",
+        "name": {
+          "en": "Jorge Campos",
+          "ar": "خورخي كامبوس"
+        },
+        "subText": {
+          "en": "Pumas, Atlante, LA Galaxy & Mexico",
+          "ar": "بوماس وأتلانتي وجالاكسي والمكسيك"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CAM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Jorge_Campos_in_2016.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/1605.png"
+        },
+        "value": 46,
+        "valueLabel": {
+          "en": "46 Goals",
+          "ar": "46 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "gkg_vegas",
+        "name": {
+          "en": "Johnny Vegas",
+          "ar": "جوني فيغاس"
+        },
+        "subText": {
+          "en": "Sport Boys, Melgar & Peru",
+          "ar": "سبورت بويز وميلغار والبيرو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VEG",
+          "primaryUrl": "https://media.api-sports.io/football/players/70366.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/pe.png"
+        },
+        "value": 45,
+        "valueLabel": {
+          "en": "45 Goals",
+          "ar": "45 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "gkg_higuita",
+        "name": {
+          "en": "René Higuita",
+          "ar": "رينيه هيغيتا"
+        },
+        "subText": {
+          "en": "Atlético Nacional, Valladolid & Colombia (El Loco)",
+          "ar": "أتلتيكو ناسيونال وبلد الوليد وكولومبيا (المجنون)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "HIG",
+          "primaryUrl": "https://media.api-sports.io/football/players/10163.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png"
+        },
+        "value": 43,
+        "valueLabel": {
+          "en": "43 Goals",
+          "ar": "43 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "pl-goalkeepers-all-time-clean-sheets",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "goalkeepers", "clean-sheets", "cech"],
+    "title": {
+      "en": "Rank these 5 goalkeepers by all-time Premier League clean sheets",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة في تاريخ البريميرليج"
+    },
+    "subtitle": {
+      "en": "Clean sheets recorded in Premier League matches",
+      "ar": "المباريات بشباك نظيفة في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cs_cech",
+        "name": {
+          "en": "Petr Čech",
+          "ar": "بيتر تشيك"
+        },
+        "subText": {
+          "en": "Chelsea & Arsenal",
+          "ar": "تشيلسي وأرسنال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CECH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 202,
+        "valueLabel": {
+          "en": "202 Clean Sheets",
+          "ar": "202 مباراة بشباك نظيفة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cs_james",
+        "name": {
+          "en": "David James",
+          "ar": "ديفيد جيمس"
+        },
+        "subText": {
+          "en": "Liverpool, Villa & Portsmouth",
+          "ar": "ليفربول وفيلا وبورتسموث"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JAM",
+          "primaryUrl": "https://media.api-sports.io/football/players/10105.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 169,
+        "valueLabel": {
+          "en": "169 Clean Sheets",
+          "ar": "169 مباراة بشباك نظيفة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cs_schwarzer",
+        "name": {
+          "en": "Mark Schwarzer",
+          "ar": "مارك شفارزر"
+        },
+        "subText": {
+          "en": "Middlesbrough & Fulham",
+          "ar": "ميدلزبره وفولهام"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SCH",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/36.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Mark_Schwarzer_2013.jpg/330px-Mark_Schwarzer_2013.jpg"
+        },
+        "value": 151,
+        "valueLabel": {
+          "en": "151 Clean Sheets",
+          "ar": "151 مباراة بشباك نظيفة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cs_seaman",
+        "name": {
+          "en": "David Seaman",
+          "ar": "ديفيد سيمان"
+        },
+        "subText": {
+          "en": "Arsenal & Man City",
+          "ar": "أرسنال ومانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "SEA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/David_Seaman_2011.jpg"
+        },
+        "value": 141,
+        "valueLabel": {
+          "en": "141 Clean Sheets",
+          "ar": "141 مباراة بشباك نظيفة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cs_martyn",
+        "name": {
+          "en": "Nigel Martyn",
+          "ar": "نايجل مارتن"
+        },
+        "subText": {
+          "en": "Crystal Palace, Leeds & Everton",
+          "ar": "كريستال بالاس وليدز وإيفرتون"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MAR",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/45.png"
+        },
+        "value": 137,
+        "valueLabel": {
+          "en": "137 Clean Sheets",
+          "ar": "137 مباراة بشباك نظيفة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-clean-sheets-goalkeepers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "goalkeepers", "clean-sheets", "neuer", "casillas", "buffon"],
+    "title": {
+      "en": "Rank these 5 goalkeepers by UEFA Champions League clean sheets",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Clean sheets in UCL group stage through final",
+      "ar": "المباريات بشباك نظيفة من دور المجموعات حتى النهائي"
+    },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_cs_neuer",
+        "name": {
+          "en": "Manuel Neuer",
+          "ar": "مانويل نوير"
+        },
+        "subText": {
+          "en": "Schalke 04 & Bayern Munich",
+          "ar": "شالكه وبايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "MN1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Manuel_Neuer_2018.jpg"
+        },
+        "value": 58,
+        "valueLabel": {
+          "en": "58 Clean Sheets",
+          "ar": "58 مباراة بشباك نظيفة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_cs_casillas",
+        "name": {
+          "en": "Iker Casillas",
+          "ar": "إيكر كاسياس"
+        },
+        "subText": {
+          "en": "Real Madrid & FC Porto",
+          "ar": "ريال مدريد وبورتو"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "IK1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg"
+        },
+        "value": 57,
+        "valueLabel": {
+          "en": "57 Clean Sheets",
+          "ar": "57 مباراة بشباك نظيفة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_cs_buffon",
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "subText": {
+          "en": "Parma, Juventus & PSG",
+          "ar": "بارما ويوفنتوس وباريس"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
+          "fallbackText": "GIGI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg"
+        },
+        "value": 52,
+        "valueLabel": {
+          "en": "52 Clean Sheets",
+          "ar": "52 مباراة بشباك نظيفة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_cs_vds",
+        "name": {
+          "en": "Edwin van der Sar",
+          "ar": "إدوين فان دير سار"
+        },
+        "subText": {
+          "en": "Ajax, Juventus & Man United",
+          "ar": "أياكس ويوفنتوس ومانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "VDS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Edwin_van_der_Sar_2011.jpg"
+        },
+        "value": 50,
+        "valueLabel": {
+          "en": "50 Clean Sheets",
+          "ar": "50 مباراة بشباك نظيفة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_cs_cech",
+        "name": {
+          "en": "Petr Čech",
+          "ar": "بيتر تشيك"
+        },
+        "subText": {
+          "en": "Sparta Prague, Chelsea & Arsenal",
+          "ar": "سبارتا براغ وتشيلسي وأرسنال"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "CECH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg"
+        },
+        "value": 49,
+        "valueLabel": {
+          "en": "49 Clean Sheets",
+          "ar": "49 مباراة بشباك نظيفة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "international-mens-all-time-clean-sheets",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["national-teams", "goalkeepers", "clean-sheets", "spain", "italy"],
+    "title": {
+      "en": "Rank these 5 legendary goalkeepers by international clean sheets",
+      "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة الدولية مع منتخباتهم"
+    },
+    "subtitle": {
+      "en": "Official senior men's international clean sheets",
+      "ar": "المباريات بشباك نظيفة في المباريات الدولية للمنتخبات الأولى"
+    },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "intl_cs_casillas",
+        "name": {
+          "en": "Iker Casillas",
+          "ar": "إيكر كاسياس"
+        },
+        "subText": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/es.png"
+        },
+        "value": 102,
+        "valueLabel": {
+          "en": "102 Clean Sheets",
+          "ar": "102 مباراة بشباك نظيفة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "intl_cs_buffon",
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "subText": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/it.png"
+        },
+        "value": 77,
+        "valueLabel": {
+          "en": "77 Clean Sheets",
+          "ar": "77 مباراة بشباك نظيفة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "intl_cs_vds",
+        "name": {
+          "en": "Edwin van der Sar",
+          "ar": "إدوين فان دير سار"
+        },
+        "subText": {
+          "en": "Netherlands",
+          "ar": "هولندا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "NED",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Edwin_van_der_Sar_2011.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/nl.png"
+        },
+        "value": 72,
+        "valueLabel": {
+          "en": "72 Clean Sheets",
+          "ar": "72 مباراة بشباك نظيفة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "intl_cs_lloris",
+        "name": {
+          "en": "Hugo Lloris",
+          "ar": "هوغو لوريس"
+        },
+        "subText": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://media.api-sports.io/football/players/54093.png",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/fr.png"
+        },
+        "value": 63,
+        "valueLabel": {
+          "en": "63 Clean Sheets",
+          "ar": "63 مباراة بشباك نظيفة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "intl_cs_zoff",
+        "name": {
+          "en": "Dino Zoff",
+          "ar": "دينو زوف"
+        },
+        "subText": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Dino_Zoff_%281974%29.jpg/330px-Dino_Zoff_%281974%29.jpg",
+          "secondaryBadgeUrl": "https://flagcdn.com/w160/it.png"
+        },
+        "value": 62,
+        "valueLabel": {
+          "en": "62 Clean Sheets",
+          "ar": "62 مباراة بشباك نظيفة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-clean-sheets-goalkeepers-all-time",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 iconic goalkeepers by UEFA Champions League clean sheets kept",
+      "ar": "رتّب الحراس الأساطير الخمسة حسب عدد الشباك النظيفة (كلين شيت) في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Group stage to Final clean sheets",
+      "ar": "من دور المجموعات حتى النهائي"
+    },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "goalkeepers", "clean-sheets", "neuer", "casillas", "buffon"],
+    "answers": [
+      {
+        "answerKey": "ucs_neuer",
+        "name": {
+          "en": "Manuel Neuer",
+          "ar": "مانويل نوير"
+        },
+        "subText": {
+          "en": "Schalke & Bayern Munich",
+          "ar": "شالكه وبايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MN1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Manuel_Neuer_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 58,
+        "valueLabel": {
+          "en": "58 Clean Sheets",
+          "ar": "58 كلين شيت"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucs_casillas",
+        "name": {
+          "en": "Iker Casillas",
+          "ar": "إيكر كاسياس"
+        },
+        "subText": {
+          "en": "Real Madrid & Porto",
+          "ar": "ريال مدريد وبورتو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "IK1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 57,
+        "valueLabel": {
+          "en": "57 Clean Sheets",
+          "ar": "57 كلين شيت"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucs_buffon",
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "subText": {
+          "en": "Parma, Juventus & PSG",
+          "ar": "بارما، يوفنتوس وباريس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GIGI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 52,
+        "valueLabel": {
+          "en": "52 Clean Sheets",
+          "ar": "52 كلين شيت"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucs_sar",
+        "name": {
+          "en": "Edwin van der Sar",
+          "ar": "أدوين فان در سار"
+        },
+        "subText": {
+          "en": "Ajax, Juventus & Man United",
+          "ar": "أياكس، يوفنتوس ومان يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VDS1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Edwin_van_der_Sar_2011.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
+        "value": 50,
+        "valueLabel": {
+          "en": "50 Clean Sheets",
+          "ar": "50 كلين شيت"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucs_cech",
+        "name": {
+          "en": "Petr Čech",
+          "ar": "بيتر تشيك"
+        },
+        "subText": {
+          "en": "Sparta Prague, Chelsea & Arsenal",
+          "ar": "سبارتا براغ، تشيلسي وأرسنال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PC1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 49,
+        "valueLabel": {
+          "en": "49 Clean Sheets",
+          "ar": "49 كلين شيت"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "career-red-cards-famous-enforcers",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["cards", "defenders", "ramos", "pepe", "keane", "red-cards"],
+    "title": {
+      "en": "Rank these 5 famous enforcers by career official red cards received",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد البطاقات الحمراء في مسيرتهم الاحترافية"
+    },
+    "subtitle": {
+      "en": "Total direct red and second-yellow dismissals in senior club & country",
+      "ar": "إجمالي البطاقات الحمراء وحالات الطرد مع الأندية والمنتخبات"
+    },
+    "metricLabel": {
+      "en": "Red Cards",
+      "ar": "بطاقات حمراء"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "rc_ramos",
+        "name": {
+          "en": "Sergio Ramos",
+          "ar": "سيرخيو راموس"
+        },
+        "subText": {
+          "en": "Sevilla, Real Madrid, PSG & Spain",
+          "ar": "إشبيلية وريال مدريد وباريس وإسبانيا"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "SR4",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Sergio_Ramos_2018.jpg"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Red Cards",
+          "ar": "29 بطاقة حمراء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "rc_davids",
+        "name": {
+          "en": "Edgar Davids",
+          "ar": "إدغار دافيدز"
+        },
+        "subText": {
+          "en": "Ajax, Juventus, Inter & Netherlands (The Pitbull)",
+          "ar": "أياكس ويوفنتوس وإنتر وهولندا (البيتبول)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DAV",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Edgar_Davids_%28cropped%29.jpg/330px-Edgar_Davids_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Red Cards",
+          "ar": "25 بطاقة حمراء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "rc_pepe",
+        "name": {
+          "en": "Pepe (Képler Laveran)",
+          "ar": "بيبي (كيبلر لافيران)"
+        },
+        "subText": {
+          "en": "Porto, Real Madrid, Besiktas & Portugal",
+          "ar": "بورتو وريال مدريد وبشكتاش والبرتغال"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "PEP3",
+          "primaryUrl": "https://media.api-sports.io/football/players/742.png"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Red Cards",
+          "ar": "17 بطاقة حمراء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "rc_zlatan",
+        "name": {
+          "en": "Zlatan Ibrahimović",
+          "ar": "زلاتان إبراهيموفيتش"
+        },
+        "subText": {
+          "en": "Ajax, Juve, Inter, Barca, Milan, PSG, Galaxy",
+          "ar": "أياكس ويوفي وإنتر وبرشلونة وميلان وباريس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "IBRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Zlatan_Ibrahimovi%C4%87_June_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Red Cards",
+          "ar": "15 بطاقة حمراء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "rc_keane",
+        "name": {
+          "en": "Roy Keane",
+          "ar": "روي كين"
+        },
+        "subText": {
+          "en": "Nottingham Forest, Man United & Celtic",
+          "ar": "نوتنغهام فورست ومان يونايتد وسلتيك"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "KEA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Roy_keane_2014.jpg/330px-Roy_keane_2014.jpg"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Red Cards",
+          "ar": "14 بطاقة حمراء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-penalties-scored",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "penalties", "strikers"],
+    "title": {
+      "en": "Rank these 5 players by Champions League penalties scored",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد ركلات الجزاء المسجلة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Shootout penalties excluded, tournament matches only",
+      "ar": "ركلات الجزاء أثناء المباريات فقط (باستثناء ركلات الترجيح)"
+    },
+    "metricLabel": {
+      "en": "Penalties",
+      "ar": "ركلات جزاء"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_pen_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Penalties",
+          "ar": "19 ركلة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_pen_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Penalties",
+          "ar": "18 ركلة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_pen_kane",
+        "name": {
+          "en": "Harry Kane",
+          "ar": "هاري كين"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "HK",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Penalties",
+          "ar": "15 ركلة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_pen_rvn",
+        "name": {
+          "en": "Ruud van Nistelrooy",
+          "ar": "رود فان نيستلروي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RVN",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Ruud_van_Nistelrooy_2010.jpg"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Penalties",
+          "ar": "11 ركلة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_pen_haaland",
+        "name": {
+          "en": "Erling Haaland",
+          "ar": "إيرلينغ هالاند"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Penalties",
+          "ar": "9 ركلات"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "premier-league-all-time-penalty-goals",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["premier-league", "penalties", "goals", "shearer", "lampard", "kane"],
+    "title": {
+      "en": "Rank these 5 players by all-time Premier League penalty goals scored",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد الأهداف المسجلة من ضربات الجزاء في البريميرليج"
+    },
+    "subtitle": {
+      "en": "Successful penalty kicks in Premier League history",
+      "ar": "ركلات الجزاء الناجحة في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "metricLabel": {
+      "en": "Penalties",
+      "ar": "ركلات جزاء"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "pen_shearer",
+        "name": {
+          "en": "Alan Shearer",
+          "ar": "ألان شيرر"
+        },
+        "subText": {
+          "en": "Blackburn & Newcastle",
+          "ar": "بلاكبيرن ونيوكاسل"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SHE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Alan_Shearer_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/34.png"
+        },
+        "value": 56,
+        "valueLabel": {
+          "en": "56 Penalties",
+          "ar": "56 ركلة جزاء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "pen_lampard",
+        "name": {
+          "en": "Frank Lampard",
+          "ar": "فرانك لامبارد"
+        },
+        "subText": {
+          "en": "West Ham, Chelsea & Man City",
+          "ar": "وست هام وتشيلسي ومان سيتي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "LAM8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Frank_Lampard_2019.jpg/330px-Frank_Lampard_2019.jpg"
+        },
+        "value": 43,
+        "valueLabel": {
+          "en": "43 Penalties",
+          "ar": "43 ركلة جزاء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "pen_kane",
+        "name": {
+          "en": "Harry Kane",
+          "ar": "هاري كين"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur",
+          "ar": "توتنهام هوتسبير"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
+        },
+        "value": 33,
+        "valueLabel": {
+          "en": "33 Penalties",
+          "ar": "33 ركلة جزاء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "pen_gerrard",
+        "name": {
+          "en": "Steven Gerrard",
+          "ar": "ستيفن جيرارد"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "SG8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Steven_Gerrard_2018.jpg/330px-Steven_Gerrard_2018.jpg"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Penalties",
+          "ar": "32 ركلة جزاء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "pen_noble",
+        "name": {
+          "en": "Mark Noble",
+          "ar": "مارك نوبل"
+        },
+        "subText": {
+          "en": "West Ham United (Mr. West Ham)",
+          "ar": "وست هام يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "NOB",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/48.png",
+          "primaryUrl": "https://media.api-sports.io/football/players/293.png"
+        },
+        "value": 28,
+        "valueLabel": {
+          "en": "28 Penalties",
+          "ar": "28 ركلة جزاء"
         },
         "correctRank": 5
       }

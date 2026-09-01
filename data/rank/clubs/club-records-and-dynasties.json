@@ -1,0 +1,2730 @@
+[
+  {
+    "slug": "ucl-seasons-by-total-goals",
+    "scopeType": "PER_COMPETITION",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "champions-league", "seasons", "goals", "tournaments"],
+    "title": {
+      "en": "Rank these 5 UEFA Champions League seasons by total goals scored in the tournament",
+      "ar": "رتّب مواسم دوري أبطال أوروبا الخمسة حسب إجمالي الأهداف المسجلة في البطولة"
+    },
+    "subtitle": {
+      "en": "Total goals scored from group stage through final (125-match era)",
+      "ar": "إجمالي الأهداف من دور المجموعات حتى النهائي (حقبة الـ125 مباراة)"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_tot_1718",
+        "name": {
+          "en": "2017–18 Champions League",
+          "ar": "دوري أبطال أوروبا 2017–18"
+        },
+        "subText": {
+          "en": "Real Madrid Champions",
+          "ar": "تتويج ريال مدريد"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "UCL18"
+        },
+        "value": 401,
+        "valueLabel": {
+          "en": "401 Goals",
+          "ar": "401 هدف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_tot_1920",
+        "name": {
+          "en": "2019–20 Champions League",
+          "ar": "دوري أبطال أوروبا 2019–20"
+        },
+        "subText": {
+          "en": "Bayern Munich Treble",
+          "ar": "ثلاثية بايرن ميونخ"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "UCL20"
+        },
+        "value": 386,
+        "valueLabel": {
+          "en": "386 Goals",
+          "ar": "386 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_tot_2122",
+        "name": {
+          "en": "2021–22 Champions League",
+          "ar": "دوري أبطال أوروبا 2021–22"
+        },
+        "subText": {
+          "en": "Real Madrid (14th Title)",
+          "ar": "الرابعة عشر لريال مدريد"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "UCL22"
+        },
+        "value": 380,
+        "valueLabel": {
+          "en": "380 Goals",
+          "ar": "380 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_tot_2223",
+        "name": {
+          "en": "2022–23 Champions League",
+          "ar": "دوري أبطال أوروبا 2022–23"
+        },
+        "subText": {
+          "en": "Manchester City Treble",
+          "ar": "ثلاثية مانشستر سيتي"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "UCL23"
+        },
+        "value": 372,
+        "valueLabel": {
+          "en": "372 Goals",
+          "ar": "372 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_tot_1819",
+        "name": {
+          "en": "2018–19 Champions League",
+          "ar": "دوري أبطال أوروبا 2018–19"
+        },
+        "subText": {
+          "en": "Liverpool Champions (Madrid Final)",
+          "ar": "تتويج ليفربول (نهائي مدريد)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "UCL19"
+        },
+        "value": 366,
+        "valueLabel": {
+          "en": "366 Goals",
+          "ar": "366 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "arsenal-premier-league-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["arsenal", "premier-league", "goals", "henry", "wright", "vanpersie"],
+    "title": {
+      "en": "Rank these 5 icons by Premier League goals scored for Arsenal",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم في البريميرليج بقميص أرسنال"
+    },
+    "subtitle": {
+      "en": "Premier League era goals for Arsenal FC only",
+      "ar": "أهداف حقبة الدوري الإنجليزي الممتاز مع أرسنال فقط"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "afcg_henry",
+        "name": {
+          "en": "Thierry Henry",
+          "ar": "تييري هنري"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "TH14",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Thierry_Henry_August_2008.jpg"
+        },
+        "value": 175,
+        "valueLabel": {
+          "en": "175 Goals",
+          "ar": "175 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afcg_wright",
+        "name": {
+          "en": "Ian Wright",
+          "ar": "إيان رايت"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "WRI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg/330px-Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg"
+        },
+        "value": 104,
+        "valueLabel": {
+          "en": "104 Goals",
+          "ar": "104 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afcg_vanpersie",
+        "name": {
+          "en": "Robin van Persie",
+          "ar": "روبن فان بيرسي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "RVP",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Loco-Fener_%2810%29.jpg/330px-Loco-Fener_%2810%29.jpg"
+        },
+        "value": 96,
+        "valueLabel": {
+          "en": "96 Goals",
+          "ar": "96 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afcg_bergkamp",
+        "name": {
+          "en": "Dennis Bergkamp",
+          "ar": "دينيس بيركامب"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "DB10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Dennis_Bergkamp_2014_%28cropped%29.jpg"
+        },
+        "value": 87,
+        "valueLabel": {
+          "en": "87 Goals",
+          "ar": "87 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afcg_giroud",
+        "name": {
+          "en": "Olivier Giroud",
+          "ar": "أوليفييه جيرو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "GIR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Olivier_Giroud_December_2024.png"
+        },
+        "value": 73,
+        "valueLabel": {
+          "en": "73 Goals",
+          "ar": "73 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "chelsea-premier-league-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["chelsea", "premier-league", "goals", "lampard", "drogba", "hazard"],
+    "title": {
+      "en": "Rank these 5 icons by Premier League goals scored for Chelsea",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم في البريميرليج بقميص تشيلسي"
+    },
+    "subtitle": {
+      "en": "Premier League era goals for Chelsea FC only",
+      "ar": "أهداف حقبة الدوري الإنجليزي الممتاز مع تشيلسي فقط"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "cfcg_lampard",
+        "name": {
+          "en": "Frank Lampard",
+          "ar": "فرانك لامبارد"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "LAM8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Frank_Lampard_2019.jpg/330px-Frank_Lampard_2019.jpg"
+        },
+        "value": 147,
+        "valueLabel": {
+          "en": "147 Goals",
+          "ar": "147 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cfcg_drogba",
+        "name": {
+          "en": "Didier Drogba",
+          "ar": "ديدييه دروغبا"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "DD11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Didier_Drogba_2014.jpg"
+        },
+        "value": 104,
+        "valueLabel": {
+          "en": "104 Goals",
+          "ar": "104 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cfcg_hazard",
+        "name": {
+          "en": "Eden Hazard",
+          "ar": "إيدين هازارد"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "EH10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Eden_Hazard_2018.jpg"
+        },
+        "value": 85,
+        "valueLabel": {
+          "en": "85 Goals",
+          "ar": "85 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cfcg_hasselbaink",
+        "name": {
+          "en": "Jimmy Floyd Hasselbaink",
+          "ar": "جيمي فلويد هاسلبانك"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "JFH"
+        },
+        "value": 69,
+        "valueLabel": {
+          "en": "69 Goals",
+          "ar": "69 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cfcg_zola",
+        "name": {
+          "en": "Gianfranco Zola",
+          "ar": "جانفرانكو زولا"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "ZOL",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Zola_2018_%28cropped%29.jpg/330px-Zola_2018_%28cropped%29.jpg"
+        },
+        "value": 59,
+        "valueLabel": {
+          "en": "59 Goals",
+          "ar": "59 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "real-madrid-legendary-forwards-goals",
+    "scopeType": "PER_CLUB",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["real-madrid", "spain", "goals", "puskas", "sanchez", "gento", "bale"],
+    "title": {
+      "en": "Rank these 5 iconic forwards by all-competition goals scored for Real Madrid",
+      "ar": "رتّب المهاجمين الخمسة حسب عدد أهدافهم في جميع المسابقات مع ريال مدريد"
+    },
+    "subtitle": {
+      "en": "Total official goals representing Real Madrid CF",
+      "ar": "إجمالي الأهداف الرسمية بقميص ريال مدريد"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "rml_puskas",
+        "name": {
+          "en": "Ferenc Puskás",
+          "ar": "فيرينتس بوشكاش"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "PUS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Ferenc_Pusk%C3%A1s_1960.jpg"
+        },
+        "value": 242,
+        "valueLabel": {
+          "en": "242 Goals",
+          "ar": "242 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "rml_sanchez",
+        "name": {
+          "en": "Hugo Sánchez",
+          "ar": "هوغو سانشيز"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "HUG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Hugo_S%C3%A1nchez_2017.jpg"
+        },
+        "value": 208,
+        "valueLabel": {
+          "en": "208 Goals",
+          "ar": "208 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "rml_gento",
+        "name": {
+          "en": "Paco Gento",
+          "ar": "باكو خينتو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "GEN",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Francisco_Gento_1960.jpg/330px-Francisco_Gento_1960.jpg"
+        },
+        "value": 182,
+        "valueLabel": {
+          "en": "182 Goals",
+          "ar": "182 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "rml_butragueno",
+        "name": {
+          "en": "Emilio Butragueño",
+          "ar": "إيميليو بوتراغينيو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "BUI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Emilio_Butrague%C3%B1o_2018.jpg/330px-Emilio_Butrague%C3%B1o_2018.jpg"
+        },
+        "value": 171,
+        "valueLabel": {
+          "en": "171 Goals",
+          "ar": "171 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "rml_bale",
+        "name": {
+          "en": "Gareth Bale",
+          "ar": "غاريث بيل"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "GB11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Gareth_Bale_2018.jpg"
+        },
+        "value": 106,
+        "valueLabel": {
+          "en": "106 Goals",
+          "ar": "106 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "barcelona-modern-attackers-goals",
+    "scopeType": "PER_CLUB",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["barcelona", "spain", "goals", "rivaldo", "neymar", "ronaldinho", "pedro"],
+    "title": {
+      "en": "Rank these 5 modern Barcelona stars by official all-competition goals for the club",
+      "ar": "رتّب نجوم برشلونة الخمسة حسب عدد أهدافهم الرسمية مع النادي (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "Goals scored in official matches for FC Barcelona",
+      "ar": "الأهداف الرسمية المسجلة بقميص نادي برشلونة"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "bca_rivaldo",
+        "name": {
+          "en": "Rivaldo",
+          "ar": "ريفالدو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "RIV",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Rivaldo_2014.jpg"
+        },
+        "value": 130,
+        "valueLabel": {
+          "en": "130 Goals",
+          "ar": "130 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "bca_kluivert",
+        "name": {
+          "en": "Patrick Kluivert",
+          "ar": "باتريك كلايفرت"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "KLU",
+          "primaryUrl": "https://media.api-sports.io/football/players/1841.png"
+        },
+        "value": 122,
+        "valueLabel": {
+          "en": "122 Goals",
+          "ar": "122 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "bca_neymar",
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg"
+        },
+        "value": 105,
+        "valueLabel": {
+          "en": "105 Goals",
+          "ar": "105 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "bca_pedro",
+        "name": {
+          "en": "Pedro Rodríguez",
+          "ar": "بيدرو رودريغيز"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "PED",
+          "primaryUrl": "https://media.api-sports.io/football/players/44.png"
+        },
+        "value": 99,
+        "valueLabel": {
+          "en": "99 Goals",
+          "ar": "99 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "bca_ronaldinho",
+        "name": {
+          "en": "Ronaldinho Gaúcho",
+          "ar": "رونالدينيو غاوشو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "R10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ronaldinho_in_2019.jpg"
+        },
+        "value": 94,
+        "valueLabel": {
+          "en": "94 Goals",
+          "ar": "94 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "real-madrid-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["real-madrid", "spain", "goals", "ronaldo", "benzema", "raul"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for Real Madrid (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع ريال مدريد (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for Real Madrid CF",
+      "ar": "الهدافون التاريخيون لنادي ريال مدريد في جميع المسابقات الرسمية"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "rmg_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 450,
+        "valueLabel": {
+          "en": "450 Goals",
+          "ar": "450 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "rmg_benzema",
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
+        "value": 354,
+        "valueLabel": {
+          "en": "354 Goals",
+          "ar": "354 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "rmg_raul",
+        "name": {
+          "en": "Raúl González",
+          "ar": "راؤول غونزاليس"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "RG7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Ra%C3%BAl_Gonz%C3%A1lez_2013.jpg"
+        },
+        "value": 323,
+        "valueLabel": {
+          "en": "323 Goals",
+          "ar": "323 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "rmg_distefano",
+        "name": {
+          "en": "Alfredo Di Stéfano",
+          "ar": "ألفريدو دي ستيفانو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "ADS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Di_stefano_argentina_%28cropped%29.jpg/330px-Di_stefano_argentina_%28cropped%29.jpg"
+        },
+        "value": 308,
+        "valueLabel": {
+          "en": "308 Goals",
+          "ar": "308 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "rmg_santillana",
+        "name": {
+          "en": "Santillana",
+          "ar": "سانتيانا"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "SAN",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Santillana_1982.jpg/330px-Santillana_1982.jpg"
+        },
+        "value": 290,
+        "valueLabel": {
+          "en": "290 Goals",
+          "ar": "290 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "barcelona-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["barcelona", "spain", "goals", "messi", "suarez"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for FC Barcelona (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع برشلونة (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for FC Barcelona",
+      "ar": "الهدافون التاريخيون لنادي برشلونة في جميع المسابقات الرسمية"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fcbg_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 672,
+        "valueLabel": {
+          "en": "672 Goals",
+          "ar": "672 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fcbg_cesar",
+        "name": {
+          "en": "César Rodríguez",
+          "ar": "سيزار رودريغيز"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "CES",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/C%C3%A9sar_Rodr%C3%ADguez_%C3%81lvarez.jpg"
+        },
+        "value": 232,
+        "valueLabel": {
+          "en": "232 Goals",
+          "ar": "232 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fcbg_suarez",
+        "name": {
+          "en": "Luis Suárez",
+          "ar": "لويس سواريز"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
+        },
+        "value": 198,
+        "valueLabel": {
+          "en": "198 Goals",
+          "ar": "198 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fcbg_kubala",
+        "name": {
+          "en": "László Kubala",
+          "ar": "لاسلو كوبالا"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "KUB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ladislao_Kubala_1954.jpg/330px-Ladislao_Kubala_1954.jpg"
+        },
+        "value": 194,
+        "valueLabel": {
+          "en": "194 Goals",
+          "ar": "194 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fcbg_samitier",
+        "name": {
+          "en": "Josep Samitier",
+          "ar": "جوسيب ساميتيير"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "SAM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Josep_Samitier_1920.jpg/330px-Josep_Samitier_1920.jpg"
+        },
+        "value": 184,
+        "valueLabel": {
+          "en": "184 Goals",
+          "ar": "184 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "man-united-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["man-united", "england", "goals", "rooney", "charlton", "law"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for Manchester United (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع مانشستر يونايتد (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for Manchester United",
+      "ar": "الهدافون التاريخيون لمانشستر يونايتد في جميع المسابقات الرسمية"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "mug_rooney",
+        "name": {
+          "en": "Wayne Rooney",
+          "ar": "واين روني"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "WR10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Wayne_Rooney_2020.jpg"
+        },
+        "value": 253,
+        "valueLabel": {
+          "en": "253 Goals",
+          "ar": "253 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "mug_charlton",
+        "name": {
+          "en": "Sir Bobby Charlton",
+          "ar": "سير بوبي تشارلتون"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SBC",
+          "primaryUrl": "https://media.api-sports.io/football/players/49888.png"
+        },
+        "value": 249,
+        "valueLabel": {
+          "en": "249 Goals",
+          "ar": "249 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "mug_law",
+        "name": {
+          "en": "Denis Law",
+          "ar": "دينيس لو"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LAW",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Denis_Law_1968.jpg/330px-Denis_Law_1968.jpg"
+        },
+        "value": 237,
+        "valueLabel": {
+          "en": "237 Goals",
+          "ar": "237 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "mug_rowley",
+        "name": {
+          "en": "Jack Rowley",
+          "ar": "جاك رولي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ROW",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Jack_Rowley_1948.jpg/330px-Jack_Rowley_1948.jpg"
+        },
+        "value": 211,
+        "valueLabel": {
+          "en": "211 Goals",
+          "ar": "211 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "mug_viollet",
+        "name": {
+          "en": "Dennis Viollet",
+          "ar": "دينيس فيوليت"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VIO",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dennis_Viollet_1957.jpg/330px-Dennis_Viollet_1957.jpg"
+        },
+        "value": 179,
+        "valueLabel": {
+          "en": "179 Goals",
+          "ar": "179 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "liverpool-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["liverpool", "england", "goals", "rush", "hunt", "salah"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for Liverpool (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع ليفربول (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for Liverpool FC",
+      "ar": "الهدافون التاريخيون لنادي ليفربول في جميع المسابقات الرسمية"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "lfcg_rush",
+        "name": {
+          "en": "Ian Rush",
+          "ar": "إيان راش"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "RUSH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Ian_Rush_in_Singapore.jpg"
+        },
+        "value": 346,
+        "valueLabel": {
+          "en": "346 Goals",
+          "ar": "346 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "lfcg_hunt",
+        "name": {
+          "en": "Roger Hunt",
+          "ar": "روجر هانت"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "HUNT",
+          "primaryUrl": "https://media.api-sports.io/football/players/576652.png"
+        },
+        "value": 285,
+        "valueLabel": {
+          "en": "285 Goals",
+          "ar": "285 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "lfcg_hodgson",
+        "name": {
+          "en": "Gordon Hodgson",
+          "ar": "غوردون هودجسون"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "HOD",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Gordon_Hodgson_1930.jpg/330px-Gordon_Hodgson_1930.jpg"
+        },
+        "value": 241,
+        "valueLabel": {
+          "en": "241 Goals",
+          "ar": "241 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "lfcg_salah",
+        "name": {
+          "en": "Mohamed Salah",
+          "ar": "محمد صلاح"
+        },
+        "subText": {
+          "en": "Premier League",
+          "ar": "الدوري الإنجليزي"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
+        },
+        "value": 221,
+        "valueLabel": {
+          "en": "221 Goals",
+          "ar": "221 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "lfcg_liddell",
+        "name": {
+          "en": "Billy Liddell",
+          "ar": "بيلي ليدل"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "LID",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Billy_Liddell_1950.jpg/330px-Billy_Liddell_1950.jpg"
+        },
+        "value": 215,
+        "valueLabel": {
+          "en": "215 Goals",
+          "ar": "215 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "bayern-munich-all-time-top-scorers",
+    "scopeType": "PER_CLUB",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["bayern", "germany", "goals", "muller", "lewandowski"],
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for Bayern Munich (all comps)",
+      "ar": "رتّب الأساطير الخمسة حسب عدد أهدافهم الرسمية مع بايرن ميونخ (جميع المسابقات)"
+    },
+    "subtitle": {
+      "en": "All-time top goalscorers for FC Bayern München",
+      "ar": "الهدافون التاريخيون لبايرن ميونخ في جميع المسابقات الرسمية"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fcbg_gmuller",
+        "name": {
+          "en": "Gerd Müller",
+          "ar": "غيرد مولر"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "GERD",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg"
+        },
+        "value": 563,
+        "valueLabel": {
+          "en": "563 Goals",
+          "ar": "563 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fcbg_lewa",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 344,
+        "valueLabel": {
+          "en": "344 Goals",
+          "ar": "344 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fcbg_tmuller",
+        "name": {
+          "en": "Thomas Müller",
+          "ar": "توماس مولر"
+        },
+        "subText": {
+          "en": "Raumdeuter",
+          "ar": "مساحات (Raumdeuter)"
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
+        },
+        "value": 245,
+        "valueLabel": {
+          "en": "245 Goals",
+          "ar": "245 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fcbg_rummenigge",
+        "name": {
+          "en": "Karl-Heinz Rummenigge",
+          "ar": "كارل هاينز رومينيغه"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "KHR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/2015-02-06_Rummenigge_0370_%28cropped%29.JPG/330px-2015-02-06_Rummenigge_0370_%28cropped%29.JPG"
+        },
+        "value": 217,
+        "valueLabel": {
+          "en": "217 Goals",
+          "ar": "217 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fcbg_ohlhauser",
+        "name": {
+          "en": "Rainer Ohlhauser",
+          "ar": "راينر أولهاوزر"
+        },
+        "subText": {
+          "en": "",
+          "ar": ""
+        },
+        "media": {
+          "type": "player",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "OHL"
+        },
+        "value": 186,
+        "valueLabel": {
+          "en": "186 Goals",
+          "ar": "186 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-goals-conceded-records",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "goals-conceded", "defense"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League goals conceded",
+      "ar": "رتّب الأندية الخمسة حسب عدد الأهداف التي استقبلتها شباكها في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "All-time European Cup & Champions League fixtures, through 2025–26",
+      "ar": "إجمالي الأهداف المستقبلة في تاريخ المسابقة حتى 2025–26"
+    },
+    "metricLabel": {
+      "en": "Goals Conceded",
+      "ar": "أهداف مستقبلة"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_gc_juve",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 329,
+        "valueLabel": {
+          "en": "329 Goals",
+          "ar": "329 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_gc_dynamo",
+        "name": {
+          "en": "Dynamo Kyiv",
+          "ar": "دينامو كييف"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "DYN"
+        },
+        "value": 324,
+        "valueLabel": {
+          "en": "324 Goals",
+          "ar": "324 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_gc_gala",
+        "name": {
+          "en": "Galatasaray",
+          "ar": "غلطة سراي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "GAL",
+          "primaryUrl": "https://media.api-sports.io/football/teams/645.png"
+        },
+        "value": 321,
+        "valueLabel": {
+          "en": "321 Goals",
+          "ar": "321 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_gc_anderlecht",
+        "name": {
+          "en": "Anderlecht",
+          "ar": "أندرلخت"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "AND",
+          "primaryUrl": "https://media.api-sports.io/football/teams/554.png"
+        },
+        "value": 320,
+        "valueLabel": {
+          "en": "320 Goals",
+          "ar": "320 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_gc_porto",
+        "name": {
+          "en": "Porto",
+          "ar": "بورتو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "POR",
+          "primaryUrl": "https://media.api-sports.io/football/teams/212.png"
+        },
+        "value": 312,
+        "valueLabel": {
+          "en": "312 Goals",
+          "ar": "312 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-matches-played-second-tier-giants",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "matches"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League matches played",
+      "ar": "رتّب الأندية الخمسة حسب عدد المباريات الملعوبة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "From 1955–56 through the end of 2025–26",
+      "ar": "من موسم 1955–56 وحتى نهاية موسم 2025–26"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_mp_ajax",
+        "name": {
+          "en": "Ajax",
+          "ar": "أياكس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "AJX",
+          "primaryUrl": "https://media.api-sports.io/football/teams/194.png"
+        },
+        "value": 255,
+        "valueLabel": {
+          "en": "255 Matches",
+          "ar": "255 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_mp_inter",
+        "name": {
+          "en": "Inter Milan",
+          "ar": "إنتر ميلان"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "INT",
+          "primaryUrl": "https://media.api-sports.io/football/teams/505.png"
+        },
+        "value": 238,
+        "valueLabel": {
+          "en": "238 Matches",
+          "ar": "238 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_mp_psv",
+        "name": {
+          "en": "PSV Eindhoven",
+          "ar": "بي إس في آيندهوفن"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "PSV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/197.png"
+        },
+        "value": 219,
+        "valueLabel": {
+          "en": "219 Matches",
+          "ar": "219 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_mp_chelsea",
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 211,
+        "valueLabel": {
+          "en": "211 Matches",
+          "ar": "211 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_mp_bvb",
+        "name": {
+          "en": "Borussia Dortmund",
+          "ar": "بوروسيا دورتموند"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BVB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/165.png"
+        },
+        "value": 207,
+        "valueLabel": {
+          "en": "207 Matches",
+          "ar": "207 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-goals-tight-margin-leaders",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "goals", "tight-margin"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League goals scored",
+      "ar": "رتّب الأندية الخمسة حسب عدد الأهداف المسجلة في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Tight statistical margin across European royalty",
+      "ar": "فروقات تهديفية دقيقة جدًا بين كبار أوروبا حتى 2025–26"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_gl_liv",
+        "name": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 514,
+        "valueLabel": {
+          "en": "514 Goals",
+          "ar": "514 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_gl_juve",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 510,
+        "valueLabel": {
+          "en": "510 Goals",
+          "ar": "510 أهداف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_gl_milan",
+        "name": {
+          "en": "AC Milan",
+          "ar": "ميلان"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ACM",
+          "primaryUrl": "https://media.api-sports.io/football/teams/489.png"
+        },
+        "value": 455,
+        "valueLabel": {
+          "en": "455 Goals",
+          "ar": "455 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_gl_arsenal",
+        "name": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ARS",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png"
+        },
+        "value": 412,
+        "valueLabel": {
+          "en": "412 Goals",
+          "ar": "412 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_gl_porto",
+        "name": {
+          "en": "Porto",
+          "ar": "بورتو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "POR",
+          "primaryUrl": "https://media.api-sports.io/football/teams/212.png"
+        },
+        "value": 411,
+        "valueLabel": {
+          "en": "411 Goals",
+          "ar": "411 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-titles-clubs-all-time",
+    "scopeType": "ALL_TIME",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "clubs", "trophies"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League titles won",
+      "ar": "رتّب الأندية الخمسة حسب عدد ألقاب دوري أبطال أوروبا (وكأس أوروبا)"
+    },
+    "subtitle": {
+      "en": "European Cup & Champions League eras combined (1955–2026)",
+      "ar": "شامل حقبة كأس أوروبا ودوري الأبطال معًا (1955–2026)"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_rma",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Titles",
+          "ar": "15 لقب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_milan",
+        "name": {
+          "en": "AC Milan",
+          "ar": "ميلان"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "ACM",
+          "primaryUrl": "https://media.api-sports.io/football/teams/489.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Titles",
+          "ar": "6 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_barca",
+        "name": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_ajax",
+        "name": {
+          "en": "Ajax",
+          "ar": "أياكس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "AJX",
+          "primaryUrl": "https://media.api-sports.io/football/teams/194.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-editions-participated-set-1",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "history", "editions"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League editions participated in",
+      "ar": "رتّب الأندية الخمسة حسب عدد النسخ التي شاركت فيها بدوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Total tournament seasons participated, through 2025–26",
+      "ar": "إجمالي المواسم التي ظهر فيها النادي بالبطولة حتى 2025–26"
+    },
+    "metricLabel": {
+      "en": "Editions",
+      "ar": "نسخ"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_ed_rma",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 44,
+        "valueLabel": {
+          "en": "44 Editions",
+          "ar": "44 نسخة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_ed_benfica",
+        "name": {
+          "en": "Benfica",
+          "ar": "بنفيكا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BEN",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png"
+        },
+        "value": 42,
+        "valueLabel": {
+          "en": "42 Editions",
+          "ar": "42 نسخة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_ed_ajax",
+        "name": {
+          "en": "Ajax",
+          "ar": "أياكس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "AJX",
+          "primaryUrl": "https://media.api-sports.io/football/teams/194.png"
+        },
+        "value": 36,
+        "valueLabel": {
+          "en": "36 Editions",
+          "ar": "36 نسخة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_ed_dynamo",
+        "name": {
+          "en": "Dynamo Kyiv",
+          "ar": "دينامو كييف"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "DYN"
+        },
+        "value": 35,
+        "valueLabel": {
+          "en": "35 Editions",
+          "ar": "35 نسخة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_ed_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 34,
+        "valueLabel": {
+          "en": "34 Editions",
+          "ar": "34 نسخة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-matches-played-giants",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "matches"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League matches played (Group B)",
+      "ar": "رتّب الأندية الخمسة حسب عدد المباريات الملعوبة في دوري أبطال أوروبا (المجموعة الثانية)"
+    },
+    "subtitle": {
+      "en": "All official European Cup & Champions League fixtures",
+      "ar": "شامل جميع مباريات البطولة الرسمية حتى 2025–26"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_mp_rma",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 517,
+        "valueLabel": {
+          "en": "517 Matches",
+          "ar": "517 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_mp_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 422,
+        "valueLabel": {
+          "en": "422 Matches",
+          "ar": "422 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_mp_barca",
+        "name": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 375,
+        "valueLabel": {
+          "en": "375 Matches",
+          "ar": "375 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_mp_juve",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 321,
+        "valueLabel": {
+          "en": "321 Matches",
+          "ar": "321 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_mp_manu",
+        "name": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MU",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
+        "value": 299,
+        "valueLabel": {
+          "en": "299 Matches",
+          "ar": "299 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-goals-scored",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "goals"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League goals scored (Group B)",
+      "ar": "رتّب الأندية الخمسة حسب عدد الأهداف المسجلة في دوري أبطال أوروبا (المجموعة الثانية)"
+    },
+    "subtitle": {
+      "en": "All-time total tournament goals, through 2025–26",
+      "ar": "إجمالي الأهداف في تاريخ البطولة حتى 2025–26"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_gs_rma",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 1137,
+        "valueLabel": {
+          "en": "1,137 Goals",
+          "ar": "1,137 هدف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_gs_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 899,
+        "valueLabel": {
+          "en": "899 Goals",
+          "ar": "899 هدف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_gs_barca",
+        "name": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 762,
+        "valueLabel": {
+          "en": "762 Goals",
+          "ar": "762 هدف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_gs_manu",
+        "name": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MU",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
+        "value": 545,
+        "valueLabel": {
+          "en": "545 Goals",
+          "ar": "545 هدف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_gs_benfica",
+        "name": {
+          "en": "Benfica",
+          "ar": "بنفيكا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BEN",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png"
+        },
+        "value": 516,
+        "valueLabel": {
+          "en": "516 Goals",
+          "ar": "516 هدف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-red-cards",
+    "scopeType": "ALL_TIME",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "discipline", "red-cards"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League red cards received",
+      "ar": "رتّب الأندية الخمسة حسب عدد البطاقات الحمراء في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Total red cards in tournament history, through 2025–26",
+      "ar": "إجمالي البطاقات الحمراء في تاريخ المسابقة حتى 2025–26"
+    },
+    "metricLabel": {
+      "en": "Red Cards",
+      "ar": "بطاقات حمراء"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_rc_juve",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Red Cards",
+          "ar": "32 بطاقة حمراء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_rc_rma",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 31,
+        "valueLabel": {
+          "en": "31 Red Cards",
+          "ar": "31 بطاقة حمراء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_rc_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Red Cards",
+          "ar": "29 بطاقة حمراء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_rc_porto",
+        "name": {
+          "en": "Porto",
+          "ar": "بورتو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "POR",
+          "primaryUrl": "https://media.api-sports.io/football/teams/212.png"
+        },
+        "value": 26,
+        "valueLabel": {
+          "en": "26 Red Cards",
+          "ar": "26 بطاقة حمراء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_rc_benfica",
+        "name": {
+          "en": "Benfica",
+          "ar": "بنفيكا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BEN",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Red Cards",
+          "ar": "25 بطاقة حمراء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-all-time-defeats",
+    "scopeType": "ALL_TIME",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["champions-league", "ucl", "defeats"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League defeats suffered",
+      "ar": "رتّب الأندية الخمسة حسب عدد الهزائم في تاريخ دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Most losses in European Cup & Champions League history",
+      "ar": "الأندية الأكثر تعرضاً للهزائم في تاريخ المسابقة حتى 2025–26"
+    },
+    "metricLabel": {
+      "en": "Defeats",
+      "ar": "هزائم"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucl_def_rma",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 121,
+        "valueLabel": {
+          "en": "121 Defeats",
+          "ar": "121 هزيمة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucl_def_benfica",
+        "name": {
+          "en": "Benfica",
+          "ar": "بنفيكا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BEN",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png"
+        },
+        "value": 107,
+        "valueLabel": {
+          "en": "107 Defeats",
+          "ar": "107 هزائم"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucl_def_dynamo",
+        "name": {
+          "en": "Dynamo Kyiv",
+          "ar": "دينامو كييف"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "DYN"
+        },
+        "value": 98,
+        "valueLabel": {
+          "en": "98 Defeats",
+          "ar": "98 هزيمة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucl_def_porto",
+        "name": {
+          "en": "Porto",
+          "ar": "بورتو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "POR",
+          "primaryUrl": "https://media.api-sports.io/football/teams/212.png"
+        },
+        "value": 90,
+        "valueLabel": {
+          "en": "90 Defeats",
+          "ar": "90 هزيمة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucl_def_gala",
+        "name": {
+          "en": "Galatasaray",
+          "ar": "غلطة سراي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "GAL",
+          "primaryUrl": "https://media.api-sports.io/football/teams/645.png"
+        },
+        "value": 89,
+        "valueLabel": {
+          "en": "89 Defeats",
+          "ar": "89 هزيمة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-most-finals-reached",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "champions-league", "real-madrid", "bayern", "liverpool", "finals"],
+    "title": {
+      "en": "Rank these 5 clubs by European Cup / Champions League finals reached",
+      "ar": "رتّب الأندية الخمسة حسب عدد مرات التأهل لنهائي دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "European Cup & UCL final appearances combined",
+      "ar": "المباريات النهائية في كأس أوروبا ودوري الأبطال معًا"
+    },
+    "metricLabel": {
+      "en": "Finals",
+      "ar": "نهائيات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "ucf_real",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Finals",
+          "ar": "18 نهائيًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucf_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "subText": {
+          "en": "11 Finals",
+          "ar": "11 نهائيًا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Finals",
+          "ar": "11 نهائيًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucf_liverpool",
+        "name": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "subText": {
+          "en": "10 Finals",
+          "ar": "10 نهائيات"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Finals",
+          "ar": "10 نهائيات"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucf_juventus",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Finals",
+          "ar": "9 نهائيات"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucf_barca",
+        "name": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "subText": {
+          "en": "8 Finals",
+          "ar": "8 نهائيات"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Finals",
+          "ar": "8 نهائيات"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-finals-reached-by-club",
+    "scopeType": "ALL_TIME",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "champions-league", "finals", "clubs", "europe"],
+    "title": {
+      "en": "Rank these 5 European giants by European Cup / Champions League finals reached",
+      "ar": "رتّب عمالقة أوروبا الخمسة حسب عدد مرات الوصول لنهائي دوري أبطال أوروبا (وكأس أوروبا)"
+    },
+    "subtitle": {
+      "en": "European Cup & Champions League eras combined (1955–2026)",
+      "ar": "شامل حقبة كأس أوروبا ودوري الأبطال معًا (1955–2026)"
+    },
+    "metricLabel": {
+      "en": "Finals",
+      "ar": "نهائيات"
+    },
+    "direction": "desc",
+    "answers": [
+      {
+        "answerKey": "fin_rma",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Finals",
+          "ar": "18 نهائي"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "fin_bayern",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Finals",
+          "ar": "11 نهائي"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "fin_liverpool",
+        "name": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Finals",
+          "ar": "10 نهائيات"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "fin_juve",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Finals",
+          "ar": "9 نهائيات"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "fin_barca",
+        "name": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Finals",
+          "ar": "8 نهائيات"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-knockout-stage-goals-all-time",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 players by UEFA Champions League knockout stage goals scored",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد أهدافهم في الأدوار الإقصائية لدوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Round of 16 to Final goals only",
+      "ar": "من دور الـ16 حتى النهائي فقط"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": ["ucl", "knockout", "champions-league", "goals"],
+    "answers": [
+      {
+        "answerKey": "ukg_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 67,
+        "valueLabel": {
+          "en": "67 Goals",
+          "ar": "67 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ukg_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 49,
+        "valueLabel": {
+          "en": "49 Goals",
+          "ar": "49 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ukg_benzema",
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
+        "value": 34,
+        "valueLabel": {
+          "en": "34 Goals",
+          "ar": "34 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ukg_lewa",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 32,
+        "valueLabel": {
+          "en": "32 Goals",
+          "ar": "32 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ukg_muller",
+        "name": {
+          "en": "Thomas Müller",
+          "ar": "توماس مولر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
+        },
+        "value": 26,
+        "valueLabel": {
+          "en": "26 Goals",
+          "ar": "26 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  }
+]
