@@ -12,7 +12,6 @@ import {
   Crown,
   Trophy,
   Flame,
-  SlidersHorizontal,
   ArrowsClockwise,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
@@ -24,8 +23,7 @@ import { StatPill } from '@/components/ui/stat-pill';
 import { CardDetailModal } from '@/components/packs/card-detail-modal';
 import { FifaPackOpening, type PackDefinition } from '@/components/packs/fifa-pack-opening';
 import { PlayerCard } from '@/components/shared/player-card';
-import { getTierStyle, TIER_ORDER } from '@/lib/tier-styles';
-import { getEffectiveRating } from '@/lib/rating-utils';
+import { TIER_ORDER } from '@/lib/tier-styles';
 import { sfx } from '@/lib/sfx';
 import { useI18n } from '@/lib/i18n';
 import type { PlayerCardData, Tier } from '@/types/player';
@@ -59,19 +57,8 @@ const PACK_CASES: PackDefinition[] = [
   },
 ];
 
-const SPOTLIGHT_COUNT = 5; // Exactly 5 cards per showcase
+const SPOTLIGHT_MAX_COUNT = 5; // 5 on desktop, 3 on mobile
 const AUTO_ROTATE_INTERVAL_SECONDS = 300; // 5 minutes (300 seconds)
-
-type PositionGroup = 'ALL' | 'FWD' | 'MID' | 'DEF' | 'GK';
-type SortOption = 'RANDOM' | 'RATING_DESC' | 'RATING_ASC' | 'NAME_ASC';
-
-const POSITION_MAP: Record<PositionGroup, string[]> = {
-  ALL: [],
-  FWD: ['ST', 'CF', 'LW', 'RW'],
-  MID: ['CAM', 'CM', 'CDM', 'LM', 'RM'],
-  DEF: ['CB', 'LB', 'RB', 'LWB', 'RWB'],
-  GK: ['GK'],
-};
 
 function seededShuffle<T>(items: T[], seed: number): T[] {
   const copy = [...items];
@@ -178,11 +165,8 @@ export default function PacksPage() {
   const [openedCards, setOpenedCards] = useState<PlayerCardData[]>([]);
   const [inspectedCard, setInspectedCard] = useState<PlayerCardData | null>(null);
 
-  // Vault Filtering & Spotlight State
-  const [selectedTier, setSelectedTier] = useState<string>('ALL');
-  const [selectedPositionGroup, setSelectedPositionGroup] = useState<PositionGroup>('ALL');
+  // Vault Spotlight Search & Rotation State
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortOption, setSortOption] = useState<SortOption>('RANDOM');
   const [rotationSeed, setRotationSeed] = useState(() => Date.now());
   const [secondsRemaining, setSecondsRemaining] = useState(AUTO_ROTATE_INTERVAL_SECONDS);
 
@@ -216,63 +200,30 @@ export default function PacksPage() {
     return () => clearInterval(timer);
   }, []);
 
-  // Filtered Candidate Pool
+  // Filtered Candidate Pool (Fast in-memory search)
   const filteredPlayers = useMemo(() => {
     if (players.length === 0) return [];
+    if (!searchQuery.trim()) return players;
 
-    let pool = [...players];
+    const q = searchQuery.toLowerCase().trim();
+    return players.filter(
+      (p) =>
+        p.name.toLowerCase().includes(q) ||
+        p.club.toLowerCase().includes(q) ||
+        p.nation.toLowerCase().includes(q) ||
+        p.position.toLowerCase().includes(q) ||
+        p.tier.toLowerCase().includes(q),
+    );
+  }, [players, searchQuery]);
 
-    // 1. Tier Filter
-    if (selectedTier !== 'ALL') {
-      pool = pool.filter((p) => p.tier === selectedTier);
-    }
-
-    // 2. Position Group Filter
-    if (selectedPositionGroup !== 'ALL') {
-      const allowed = POSITION_MAP[selectedPositionGroup];
-      pool = pool.filter((p) => {
-        const pPos = p.position.toUpperCase();
-        return allowed.some((target) => pPos.includes(target));
-      });
-    }
-
-    // 3. Search Query Filter
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
-      pool = pool.filter(
-        (p) =>
-          p.name.toLowerCase().includes(q) ||
-          p.club.toLowerCase().includes(q) ||
-          p.nation.toLowerCase().includes(q) ||
-          p.position.toLowerCase().includes(q),
-      );
-    }
-
-    return pool;
-  }, [players, selectedTier, selectedPositionGroup, searchQuery]);
-
-  // Active 5-Card Random Spotlight (Auto refreshed every 5 minutes or on manual roll)
+  // Active Spotlight Pool (5 players on desktop, 3 players on mobile)
   const spotlightCards = useMemo(() => {
     if (filteredPlayers.length === 0) return [];
-    if (filteredPlayers.length <= SPOTLIGHT_COUNT) return filteredPlayers;
+    if (filteredPlayers.length <= SPOTLIGHT_MAX_COUNT) return filteredPlayers;
 
-    if (sortOption === 'RATING_DESC') {
-      return [...filteredPlayers]
-        .sort((a, b) => getEffectiveRating(b) - getEffectiveRating(a))
-        .slice(0, SPOTLIGHT_COUNT);
-    }
-    if (sortOption === 'RATING_ASC') {
-      return [...filteredPlayers]
-        .sort((a, b) => getEffectiveRating(a) - getEffectiveRating(b))
-        .slice(0, SPOTLIGHT_COUNT);
-    }
-    if (sortOption === 'NAME_ASC') {
-      return [...filteredPlayers].sort((a, b) => a.name.localeCompare(b.name)).slice(0, SPOTLIGHT_COUNT);
-    }
-
-    // Default: completely random 5 players using rotation seed
-    return seededShuffle(filteredPlayers, rotationSeed).slice(0, SPOTLIGHT_COUNT);
-  }, [filteredPlayers, rotationSeed, sortOption]);
+    // Seeded random 5 players from matching candidate pool
+    return seededShuffle(filteredPlayers, rotationSeed).slice(0, SPOTLIGHT_MAX_COUNT);
+  }, [filteredPlayers, rotationSeed]);
 
   // Manual Instant Shuffle
   const handleManualShuffle = useCallback(() => {
@@ -395,10 +346,10 @@ export default function PacksPage() {
         </div>
       </section>
 
-      {/* ── 2. CARD VAULT SPOTLIGHT (AUTO 5-BY-5 EVERY 5 MINS & RANDOM) ──── */}
+      {/* ── 2. CARD VAULT SPOTLIGHT (3 ON MOBILE, 5 ON DESKTOP & INSTANT SEARCH) ── */}
       <section className="space-y-4 pt-4">
         {/* Dynamic Status & Search Header */}
-        <header className="flex flex-wrap items-center justify-between gap-3 px-1">
+        <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1">
           <div className="flex items-center gap-2.5">
             <AppIcon icon={Trophy} size={18} weight="duotone" className="text-lime" />
             <div>
@@ -412,15 +363,15 @@ export default function PacksPage() {
                 </span>
                 <span>
                   {lang === 'ar'
-                    ? `تحديث تلقائي لـ 5 بطاقات كل 5 دقائق • متبقي ${formattedCountdown}`
-                    : `Auto-cycles 5 cards every 5 mins • Refresh in ${formattedCountdown}`}
+                    ? `تحديث تلقائي كل 5 دقائق • متبقي ${formattedCountdown}`
+                    : `Auto-cycles every 5 mins • Refresh in ${formattedCountdown}`}
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2">
-            <div className="w-44 sm:w-56">
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            <div className="flex-1 sm:w-64">
               <TextInput
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -459,124 +410,44 @@ export default function PacksPage() {
           />
         </div>
 
-        {/* ── Classifications Bar: Position Groups & Sorting ── */}
-        <div className="flex flex-wrap items-center justify-between gap-2.5 rounded-2xl border border-white/10 bg-slate-900/40 p-2.5 backdrop-blur-xl">
-          {/* Position Group Tabs */}
-          <div className="flex flex-wrap items-center gap-1">
-            {(['ALL', 'FWD', 'MID', 'DEF', 'GK'] as PositionGroup[]).map((group) => {
-              const isActive = selectedPositionGroup === group;
-              const labels: Record<PositionGroup, string> = {
-                ALL: t('packs.allPositions'),
-                FWD: t('packs.attackers'),
-                MID: t('packs.midfielders'),
-                DEF: t('packs.defenders'),
-                GK: t('packs.goalkeepers'),
-              };
-
-              return (
-                <button
-                  key={group}
-                  type="button"
-                  onClick={() => {
-                    sfx.unlock();
-                    sfx.cardDeal();
-                    setSelectedPositionGroup(group);
-                  }}
-                  className={`cursor-pointer rounded-xl px-2.5 py-1 text-xs font-bold transition-all ${
-                    isActive
-                      ? 'bg-lime text-slate-950 shadow-md font-black'
-                      : 'text-steel hover:bg-white/5 hover:text-white'
-                  }`}
-                >
-                  {labels[group]}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Sort Selector */}
-          <div className="flex items-center gap-1.5 text-xs text-steel">
-            <AppIcon icon={SlidersHorizontal} size={13} weight="bold" className="text-lime" />
-            <select
-              value={sortOption}
-              onChange={(e) => {
-                setSortOption(e.target.value as SortOption);
-              }}
-              className="rounded-xl border border-white/10 bg-slate-950/80 px-2.5 py-1 text-xs font-bold text-white outline-none hover:border-white/25 cursor-pointer"
-            >
-              <option value="RANDOM">🎲 {lang === 'ar' ? 'عرض عشوائي لـ 5 كروت' : 'Random 5 Spotlight'}</option>
-              <option value="RATING_DESC">{t('packs.sortRatingHigh')}</option>
-              <option value="RATING_ASC">{t('packs.sortRatingLow')}</option>
-              <option value="NAME_ASC">{t('packs.sortName')}</option>
-            </select>
-          </div>
-        </div>
-
-        {/* ── Tier Filter Tabs ── */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-          <button
-            type="button"
-            onClick={() => setSelectedTier('ALL')}
-            className={`cursor-pointer rounded-full border px-3 py-1 font-card text-[10px] font-black uppercase tracking-wider transition-all shrink-0 ${
-              selectedTier === 'ALL'
-                ? 'border-lime bg-lime/15 text-lime shadow-[0_0_12px_rgba(149,232,16,0.25)]'
-                : 'border-white/10 bg-slate-950/70 text-steel hover:border-white/20 hover:text-white'
-            }`}
-          >
-            {t('packs.allTiers')}
-          </button>
-          {TIER_ORDER.map((tier) => {
-            const style = getTierStyle(tier);
-            const isSelected = selectedTier === tier;
-
-            return (
-              <button
-                key={tier}
-                type="button"
-                onClick={() => setSelectedTier(tier)}
-                className={`cursor-pointer rounded-full border px-2.5 py-1 font-card text-[10px] font-black uppercase tracking-wider transition-all shrink-0 ${
-                  isSelected
-                    ? 'shadow-md ring-1'
-                    : 'border-white/10 bg-slate-950/70 text-steel hover:border-white/20 hover:text-white'
-                }`}
-                style={
-                  isSelected
-                    ? {
-                        borderColor: style.accent,
-                        color: style.highlight,
-                        backgroundColor: `${style.shadow}90`,
-                        boxShadow: `0 0 10px ${style.glow}`,
-                      }
-                    : undefined
-                }
-              >
-                {tier}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* ── 5-PLAYER SINGLE SPOTLIGHT LINE DISPLAY ── */}
+        {/* ── RESPONSIVE SPOTLIGHT SHOWCASE (3 ON MOBILE, 5 ON DESKTOP) ── */}
         {spotlightCards.length > 0 ? (
-          <div className="flex flex-nowrap items-center justify-start sm:justify-center gap-2.5 sm:gap-4 w-full max-w-full overflow-x-auto py-3 px-1 scrollbar-none snap-x snap-mandatory">
-            {spotlightCards.map((player, index) => (
-              <div
-                key={`spotlight-card-${player.id}-${index}-${rotationSeed}`}
-                onClick={() => {
-                  sfx.cardDeal();
-                  setInspectedCard(player);
-                }}
-                className="shrink-0 snap-center animate-scale-in cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95"
-                style={{ animationDelay: `${index * 45}ms` }}
-              >
-                <div className="block sm:hidden">
-                  <PlayerCard player={player} size="xs" />
+          <div>
+            {/* MOBILE LAYOUT: Exactly 3 cards side-by-side, scaled to fit perfectly */}
+            <div className="grid grid-cols-3 gap-2 w-full max-w-sm mx-auto py-2 items-center justify-items-center sm:hidden">
+              {spotlightCards.slice(0, 3).map((player, index) => (
+                <div
+                  key={`spotlight-mobile-${player.id}-${index}-${rotationSeed}`}
+                  onClick={() => {
+                    sfx.cardDeal();
+                    setInspectedCard(player);
+                  }}
+                  className="w-full flex justify-center cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95 animate-scale-in"
+                  style={{ animationDelay: `${index * 60}ms` }}
+                >
+                  <div className="w-full max-w-[108px]">
+                    <PlayerCard player={player} size="xs" />
+                  </div>
                 </div>
-                <div className="hidden sm:block">
+              ))}
+            </div>
+
+            {/* DESKTOP LAYOUT: All 5 cards centered in a row */}
+            <div className="hidden sm:grid sm:grid-cols-5 gap-3 md:gap-4 w-full max-w-4xl mx-auto py-2 items-center justify-items-center">
+              {spotlightCards.slice(0, 5).map((player, index) => (
+                <div
+                  key={`spotlight-desktop-${player.id}-${index}-${rotationSeed}`}
+                  onClick={() => {
+                    sfx.cardDeal();
+                    setInspectedCard(player);
+                  }}
+                  className="w-full flex justify-center cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95 animate-scale-in"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
                   <PlayerCard player={player} size="sm" />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         ) : (
           <Panel variant="subtle" className="p-8 text-center">
