@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useEffect, useMemo, useRef } from 'react';
+import React, { useSyncExternalStore, useEffect, useMemo, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { X, CaretLeft, CaretRight } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { PlayerCard } from '@/components/shared/player-card';
@@ -16,7 +17,11 @@ interface CardDetailModalProps {
   onSelectCard?: (card: PlayerCardData) => void;
 }
 
+const emptySubscribe = () => () => {};
+
 export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: CardDetailModalProps) {
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
+
   // Deduplicate cards list by unique player ID
   const uniqueCards = useMemo(() => {
     const list = cardsList && cardsList.length > 0 ? cardsList : card ? [card] : [];
@@ -54,7 +59,7 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [currentIndex, hasNext, hasPrev, onClose, onSelectCard, uniqueCards]);
 
-  if (!card) return null;
+  if (!card || !mounted) return null;
   const tierStyle = getTierStyle(card.tier);
 
   const handlePrev = (e?: React.MouseEvent) => {
@@ -87,9 +92,9 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
     }
   };
 
-  return (
+  const modalContent = (
     <div
-      className="animate-fade-in fixed inset-0 z-50 flex items-center justify-center bg-slate-950/88 p-3 backdrop-blur-xl sm:p-4 select-none"
+      className="animate-fade-in fixed inset-0 z-[10000] flex items-center justify-center bg-slate-950/85 p-3 backdrop-blur-2xl sm:p-4 select-none"
       onClick={onClose}
       id="modal-card-inspection"
       role="dialog"
@@ -97,10 +102,10 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
       aria-label="Player Card Inspection"
     >
       <div
-        className="animate-scale-in relative my-auto flex max-h-[90vh] w-full max-w-[320px] flex-col items-center gap-3 overflow-hidden rounded-3xl border border-white/15 bg-slate-900/90 p-4 shadow-[0_24px_50px_rgba(0,0,0,0.85)] backdrop-blur-2xl sm:max-w-sm sm:p-5"
+        className="animate-scale-in relative my-auto flex max-h-[92dvh] w-full max-w-[300px] xs:max-w-[320px] sm:max-w-sm flex-col items-center gap-2.5 xs:gap-3 overflow-hidden rounded-3xl border border-white/20 bg-slate-900/95 p-3.5 xs:p-4 shadow-[0_24px_60px_rgba(0,0,0,0.85)] backdrop-blur-2xl sm:p-5"
         style={{
-          boxShadow: `0 24px 60px rgba(0,0,0,0.85), 0 0 36px ${tierStyle.glow}`,
-          borderColor: `${tierStyle.accent}45`,
+          boxShadow: `0 24px 60px rgba(0,0,0,0.85), 0 0 40px ${tierStyle.glow}, inset 0 1px 0 0 rgba(255,255,255,0.15)`,
+          borderColor: `${tierStyle.accent}60`,
         }}
         onClick={(e) => e.stopPropagation()}
         onTouchStart={handleTouchStart}
@@ -109,61 +114,61 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
         {/* Top Header: Telemetry pill, Counter, Close button */}
         <div className="flex w-full items-center justify-between pb-0.5">
           <div
-            className="flex items-center gap-1.5 rounded-full border bg-slate-950/80 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase shadow-sm"
+            className="flex items-center gap-1.5 rounded-full border bg-slate-950/85 px-2.5 xs:px-3 py-1 text-[10px] xs:text-[10.5px] font-bold tracking-widest uppercase shadow-sm font-stats"
             style={{ borderColor: `${tierStyle.accent}60`, color: tierStyle.highlight }}
           >
             <ETLogo variant="card-badge" size={13} />
             <span>{card.tier} VAULT</span>
           </div>
 
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1.5 xs:gap-2">
             {uniqueCards.length > 1 && (
-              <span className="text-steel font-stats text-[10px] font-black tracking-wider">
+              <span className="text-steel font-stats text-[10.5px] xs:text-[11px] font-bold tracking-wider">
                 {currentIndex + 1} / {uniqueCards.length}
               </span>
             )}
             <button
               onClick={onClose}
-              className="text-steel hover:border-lime/40 flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-slate-950 transition-colors hover:text-white"
+              className="btn-haptic text-steel hover:border-lime/40 flex h-7 w-7 xs:h-7.5 xs:w-7.5 cursor-pointer items-center justify-center rounded-full border border-white/12 bg-slate-950/90 transition-colors hover:text-white"
               id="btn-close-card-modal"
               aria-label="Close"
             >
-              <AppIcon icon={X} size={14} weight="bold" />
+              <AppIcon icon={X} size={13} weight="bold" />
             </button>
           </div>
         </div>
 
         {/* 3D Holographic Card View with Next/Prev Arrow Triggers */}
-        <div className="relative my-1 flex w-full items-center justify-center">
+        <div className="relative my-0.5 xs:my-1 flex w-full items-center justify-center">
           {hasPrev && (
             <button
               onClick={handlePrev}
-              className="absolute top-1/2 -left-2 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/85 p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 active:scale-95 sm:-left-3"
+              className="btn-haptic absolute top-1/2 -left-2 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/90 p-1.5 xs:p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 hover:border-lime/40 active:scale-95 sm:-left-3"
               aria-label="Previous Card"
             >
-              <AppIcon icon={CaretLeft} size={16} weight="bold" />
+              <AppIcon icon={CaretLeft} size={15} weight="bold" />
             </button>
           )}
 
-          <div className="scale-95 transition-transform duration-200 sm:scale-100">
+          <div className="scale-[0.88] xs:scale-95 sm:scale-100 transition-transform duration-200">
             <PlayerCard player={card} size="md" />
           </div>
 
           {hasNext && (
             <button
               onClick={handleNext}
-              className="absolute top-1/2 -right-2 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/85 p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 active:scale-95 sm:-right-3"
+              className="btn-haptic absolute top-1/2 -right-2 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/90 p-1.5 xs:p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 hover:border-lime/40 active:scale-95 sm:-right-3"
               aria-label="Next Card"
             >
-              <AppIcon icon={CaretRight} size={16} weight="bold" />
+              <AppIcon icon={CaretRight} size={15} weight="bold" />
             </button>
           )}
         </div>
 
-        {/* Minimalist Apple Action Bar */}
+        {/* Minimalist Action Bar */}
         <button
           onClick={onClose}
-          className="bg-lime hover:bg-vivid mt-1 w-full cursor-pointer rounded-2xl py-2.5 text-xs font-black tracking-widest text-slate-950 uppercase shadow-lg transition-all active:scale-95"
+          className="btn-haptic bg-lime hover:bg-vivid mt-1 w-full cursor-pointer rounded-2xl py-2.5 text-xs font-bold tracking-widest text-slate-950 uppercase shadow-[0_10px_25px_rgba(142,224,0,0.3)] transition-all active:scale-95"
           id="btn-done-modal"
         >
           Done
@@ -171,4 +176,6 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 }

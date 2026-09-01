@@ -24,6 +24,8 @@ export interface TacticalPitchViewProps {
   guestSquad: PitchSquadPlayer[];
   hostName: string;
   guestName: string;
+  viewerIsHost?: boolean;
+  defaultTab?: 'host' | 'guest';
   hostColor?: string;
   guestColor?: string;
 }
@@ -52,10 +54,13 @@ export function TacticalPitchView({
   guestSquad,
   hostName,
   guestName,
+  viewerIsHost = true,
+  defaultTab,
   hostColor = '#95E810',
   guestColor = '#F43F5E',
 }: TacticalPitchViewProps) {
-  const [tab, setTab] = useState<'host' | 'guest'>('host');
+  const initialTab = defaultTab ?? (viewerIsHost ? 'host' : 'guest');
+  const [tab, setTab] = useState<'host' | 'guest'>(initialTab);
   const squad = tab === 'host' ? hostSquad : guestSquad;
   const rawTeamName = tab === 'host' ? hostName : guestName;
   const cleanTeamName = rawTeamName.replace(/^You \((.*)\)$/i, '$1');
@@ -63,22 +68,28 @@ export function TacticalPitchView({
 
   return (
     <div className="space-y-3">
-      <div className="inline-flex w-full rounded-lg border border-white/5 bg-slate-950 p-1">
+      <div className="inline-flex w-full rounded-xl border border-white/10 bg-slate-950/90 p-1 backdrop-blur-xl shadow-inner">
         <button
+          type="button"
           onClick={() => setTab('host')}
-          className={`flex-1 rounded-md py-2 text-[10px] font-black tracking-wider uppercase transition-all duration-200 ${
-            tab === 'host' ? 'bg-lime text-slate-950 shadow-md' : 'text-steel hover:text-white'
+          className={`flex-1 rounded-lg py-2 px-2 text-[10px] sm:text-xs font-black tracking-wider uppercase transition-all duration-200 cursor-pointer font-stats ${
+            tab === 'host'
+              ? 'bg-lime text-slate-950 shadow-md shadow-lime/20 font-bold'
+              : 'text-steel hover:text-white'
           }`}
         >
-          {hostName}
+          {hostName} {viewerIsHost ? '(YOU)' : ''}
         </button>
         <button
+          type="button"
           onClick={() => setTab('guest')}
-          className={`flex-1 rounded-md py-2 text-[10px] font-black tracking-wider uppercase transition-all duration-200 ${
-            tab === 'guest' ? 'bg-rose-500 text-white shadow-md' : 'text-steel hover:text-white'
+          className={`flex-1 rounded-lg py-2 px-2 text-[10px] sm:text-xs font-black tracking-wider uppercase transition-all duration-200 cursor-pointer font-stats ${
+            tab === 'guest'
+              ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20 font-bold'
+              : 'text-steel hover:text-white'
           }`}
         >
-          {guestName}
+          {guestName} {!viewerIsHost ? '(YOU)' : ''}
         </button>
       </div>
       <TacticalPitch
@@ -91,6 +102,7 @@ export function TacticalPitchView({
         title={`${cleanTeamName}'s Lineup`}
         accentColor={accent}
         badgeLabel={tab === 'host' ? 'HOME SQUAD' : 'AWAY SQUAD'}
+        compact={true}
       />
     </div>
   );

@@ -340,27 +340,28 @@ export function TacticalPitch({
 
   return (
     <div
-      className={`relative flex w-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-slate-950/85 shadow-2xl backdrop-blur-md select-none ${compact ? 'p-3' : 'p-4 md:p-6'}`}
+      className={`relative flex w-full flex-col justify-between overflow-hidden rounded-3xl border border-white/12 bg-slate-950/90 shadow-[0_20px_50px_rgba(0,0,0,0.85),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl select-none ${compact ? 'p-2 sm:p-3' : 'p-3.5 sm:p-4 md:p-6'}`}
     >
       {/* Pitch Header */}
-      <div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-3">
+      <div className={`flex flex-wrap items-center justify-between gap-2 border-b border-white/10 ${compact ? 'mb-2 pb-1.5' : 'mb-2.5 pb-2.5'}`}>
         <div className="flex items-center gap-2">
-          <AppIcon icon={Shield} size={18} weight="duotone" className="text-lime animate-pulse" />
-          <h3 className="text-xs font-black tracking-wider text-white uppercase font-display sm:text-sm">
+          <AppIcon icon={Shield} size={compact ? 16 : 18} weight="duotone" className="text-lime animate-pulse" />
+          <h3 className={`font-black tracking-wider text-white uppercase font-display ${compact ? 'text-[11px] sm:text-xs' : 'text-xs sm:text-sm'}`}>
             {title} — <span className="text-lime">{formation}</span>
           </h3>
         </div>
 
         <div className="flex items-center gap-2">
           <button
+            type="button"
             onClick={() => setIs3DView(!is3DView)}
-            className="hover:border-lime/40 text-steel flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900 px-2.5 py-1 text-[9px] font-black tracking-wider uppercase shadow-sm transition-all hover:text-white sm:text-[10px] cursor-pointer"
+            className={`btn-haptic hover:border-lime/40 text-steel flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900/90 font-black tracking-wider uppercase shadow-sm transition-all hover:text-white cursor-pointer backdrop-blur-xl ${compact ? 'px-2.5 py-0.5 text-[8.5px] sm:text-[9.5px]' : 'px-3 py-1 text-[9px] sm:text-[10px]'}`}
           >
-            <AppIcon icon={Stack} size={14} weight="duotone" className="text-lime" />
-            <span>{is3DView ? '3D Pitch' : '2D Pitch'}</span>
+            <AppIcon icon={Stack} size={compact ? 12 : 14} weight="duotone" className="text-lime" />
+            <span>{is3DView ? '3D Stadium' : '2D Pitch'}</span>
           </button>
           {badgeLabel && (
-            <span className="border-lime/20 bg-lime/5 text-lime rounded-full border px-2.5 py-1 text-[9px] font-black tracking-widest uppercase sm:text-[10px]">
+            <span className={`border-lime/30 bg-lime/10 text-lime rounded-full border font-black tracking-widest uppercase shadow-sm ${compact ? 'px-2 py-0.5 text-[8px] sm:text-[9px]' : 'px-2.5 py-1 text-[9px] sm:text-[10px]'}`}>
               {badgeLabel}
             </span>
           )}
@@ -369,8 +370,8 @@ export function TacticalPitch({
 
       {/* Stadium Pitch Container */}
       <div
-        className="border-lime/20 relative w-full overflow-hidden rounded-xl border bg-gradient-to-b from-[#06200f] via-[#0b3319] to-[#04170b] shadow-[0_0_30px_rgba(0,0,0,0.6)]"
-        style={{ paddingBottom: is5 ? '85%' : '100%' }}
+        className="relative w-full overflow-hidden rounded-2xl border border-lime/30 bg-gradient-to-b from-[#06200f] via-[#0b3319] to-[#04170b] shadow-[0_0_40px_rgba(0,0,0,0.7)]"
+        style={{ paddingBottom: compact ? (is5 ? '64%' : '72%') : (is5 ? '82%' : '96%') }}
       >
         <div
           className={`absolute inset-0 transition-transform duration-700 ${is3DView ? 'origin-bottom [transform:perspective(800px)_rotateX(20deg)_scale(0.95)] transform' : ''}`}
@@ -397,8 +398,8 @@ export function TacticalPitch({
             const hasPlayer = Boolean(slot?.player);
             const player = slot?.player;
             const tierColor = player?.tier ? getTierStyle(player.tier).highlight : '#95E810';
-            const nodeSize = is5 ? 46 : 38;
-            const emptySize = is5 ? 42 : 34;
+            const nodeSize = compact ? (is5 ? 36 : 30) : (is5 ? 46 : 38);
+            const emptySize = compact ? (is5 ? 32 : 26) : (is5 ? 42 : 34);
 
             return (
               <motion.div

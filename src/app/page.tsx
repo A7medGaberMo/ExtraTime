@@ -373,31 +373,31 @@ export default function HomePage() {
     </Panel>
   </section>
 
-  {/* ── SECONDARY BAR ────────────────────────────────────────────── */ }
+  {/* ── SECONDARY BAR ────────────────────────────────────────────── */}
   <section className="grid w-full max-w-4xl grid-cols-2 gap-3">
     <Link
       href="/packs"
-      className="group flex cursor-pointer items-center gap-3 rounded-xl border border-white/10 bg-slate-950/60 p-3.5 transition-colors hover:border-lime/40 hover:bg-slate-900"
+      className="btn-haptic group flex cursor-pointer items-center gap-3 rounded-2xl border border-white/[0.12] bg-slate-950/70 p-4 shadow-[0_8px_24px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl transition-all hover:border-lime/40 hover:bg-slate-900/90"
     >
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-lime/20 bg-lime/10 text-lime transition-transform group-hover:scale-105">
-        <AppIcon icon={Cards} size={18} weight="duotone" />
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-lime/30 bg-lime/10 text-lime transition-transform group-hover:scale-105 shadow-inner">
+        <AppIcon icon={Cards} size={20} weight="duotone" />
       </div>
       <div className="min-w-0">
         <h3 className="truncate text-sm font-bold text-white">{t('home.packsBanner.title')}</h3>
-        <p className="truncate text-micro text-steel">{t('home.packsBanner.subtitle')}</p>
+        <p className="truncate text-xs font-medium text-steel">{t('home.packsBanner.subtitle')}</p>
       </div>
     </Link>
 
-    <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-slate-950/60 p-3.5">
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-sky-500/20 bg-sky-500/10 text-sky-400">
-        <AppIcon icon={Database} size={18} weight="duotone" />
+    <div className="flex items-center gap-3 rounded-2xl border border-white/[0.12] bg-slate-950/70 p-4 shadow-[0_8px_24px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-sky-500/30 bg-sky-500/10 text-sky-400 shadow-inner">
+        <AppIcon icon={Database} size={20} weight="duotone" />
       </div>
       <div className="min-w-0">
         <h3 className="truncate text-sm font-bold text-white">
           <span className="font-stats">{playerCount}</span>{' '}
           {lang === 'ar' ? 'لاعب' : 'Players'}
         </h3>
-        <p className="truncate text-micro text-steel">{t('home.databaseStat.subtitle')}</p>
+        <p className="truncate text-xs font-medium text-steel">{t('home.databaseStat.subtitle')}</p>
       </div>
     </div>
   </section>

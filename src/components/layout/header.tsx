@@ -2,12 +2,10 @@
 
 import React, { useState, useSyncExternalStore, useCallback, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   House,
-  Trophy,
   PlusCircle,
   SpeakerHigh,
   SpeakerSimpleSlash,
@@ -24,6 +22,7 @@ import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { useGuestSession } from '@/hooks/use-guest-session';
 import { useIsGameplay } from '@/hooks/use-is-gameplay';
+import { useOverlayActive } from '@/lib/overlay-state';
 import { useI18n } from '@/lib/i18n';
 import { sfx } from '@/lib/sfx';
 import { cn } from '@/lib/utils';
@@ -72,6 +71,7 @@ export function Header() {
   const [prevPathname, setPrevPathname] = useState(pathname);
   const notchRef = useRef<HTMLDivElement>(null);
   const isGameplay = useIsGameplay();
+  const isOverlayActive = useOverlayActive();
 
   // Close island automatically on route changes during render
   if (prevPathname !== pathname) {
@@ -104,7 +104,6 @@ export function Header() {
     window.dispatchEvent(new Event('extratime_sfx_change'));
   }, []);
 
-
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (notchRef.current && !notchRef.current.contains(event.target as Node)) {
@@ -119,10 +118,13 @@ export function Header() {
 
   const navLinks = [
     { href: '/', label: t('nav.arena'), icon: House },
-    { href: '/rank', label: t('nav.rank'), icon: Trophy },
     { href: '/packs', label: t('nav.packs'), icon: Cards },
     { href: '/create-room', label: t('nav.create'), icon: PlusCircle },
   ];
+
+  if (isOverlayActive) {
+    return null;
+  }
 
   return (
     <header className="fixed top-[max(0.625rem,env(safe-area-inset-top,0.625rem))] inset-x-0 z-50 flex justify-center pointer-events-none select-none px-2 sm:px-3 w-full" dir="ltr">
@@ -358,8 +360,8 @@ export function Header() {
                 </Link>
               )}
 
-              {/* Quick Navigation 4-Box Grid */}
-              <div className="grid grid-cols-4 gap-1 sm:gap-1.5">
+              {/* Quick Navigation 3-Box Grid */}
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
                 {navLinks.map((item) => {
                   const IconComp = item.icon;
                   return (

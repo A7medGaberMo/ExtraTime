@@ -71,7 +71,7 @@ export function RankHeader({
       {/* 3 Top Status Pills */}
       <div className="flex items-center justify-between gap-2">
         {/* Round Pill */}
-        <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/10 bg-slate-900/90 text-xs font-semibold text-slate-300 whitespace-nowrap shadow-sm backdrop-blur-md">
+        <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/12 bg-slate-900/85 px-3 py-1.5 text-xs font-semibold text-slate-300 whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
           <AppIcon
             icon={isDuel ? Sword : Trophy}
             size={14}
@@ -84,7 +84,7 @@ export function RankHeader({
         </div>
 
         {/* Score Pill */}
-        <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/10 bg-slate-900/90 text-xs font-semibold text-slate-300 whitespace-nowrap shadow-sm backdrop-blur-md">
+        <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/12 bg-slate-900/85 px-3 py-1.5 text-xs font-semibold text-slate-300 whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
           {isDuel && opponent ? (
             <div className="flex items-center gap-1.5 font-stats text-xs">
               <span className="font-bold text-lime">
@@ -108,7 +108,7 @@ export function RankHeader({
         {/* Timer Pill */}
         {deadline ? (
           <div
-            className={`flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border text-xs font-semibold transition-all duration-300 whitespace-nowrap shadow-sm backdrop-blur-md ${timerColor}`}
+            className={`flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border text-xs font-semibold transition-all duration-300 whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.3)] backdrop-blur-xl ${timerColor}`}
           >
             <AppIcon
               icon={Clock}
@@ -119,16 +119,16 @@ export function RankHeader({
             <span className="font-stats font-bold">{secondsRemaining}s</span>
           </div>
         ) : (
-          <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/10 bg-slate-900/90 text-xs font-semibold text-steel whitespace-nowrap backdrop-blur-md">
+          <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/12 bg-slate-900/85 text-xs font-semibold text-steel whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
             <span className="text-[11px] font-bold text-steel uppercase">{scopeType?.replace('_', ' ') || 'RANK'}</span>
           </div>
         )}
       </div>
 
-      {/* Progress Track */}
-      <div className="h-1 w-full rounded-full bg-white/10 overflow-hidden">
+      {/* Progress Track (Apple Sunken Track) */}
+      <div className="h-1.5 w-full rounded-full bg-slate-950/80 border border-white/5 overflow-hidden shadow-inner">
         <div
-          className="h-full rounded-full bg-lime transition-all duration-500 shadow-[0_0_8px_rgba(142,224,0,0.4)]"
+          className="h-full rounded-full bg-lime transition-all duration-500 shadow-[0_0_10px_rgba(142,224,0,0.5)]"
           style={{ width: `${progressPercentage}%` }}
         />
       </div>

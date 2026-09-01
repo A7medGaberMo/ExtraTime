@@ -60,15 +60,15 @@ export function BidSlider({ value, min, max, onChange, className }: BidSliderPro
     <div className={cn('relative touch-none pt-8 pb-5 select-none', className)}>
       {/* Value label above thumb */}
       <div
-        className="pointer-events-none absolute top-1 transition-all duration-100"
+        className="pointer-events-none absolute top-0 transition-all duration-100"
         style={{ left: `${pct}%`, transform: 'translateX(-50%)' }}
       >
         <span
           className={cn(
-            'font-stats inline-block rounded-md px-2 py-0.5 text-xs transition-all',
+            'font-stats inline-flex items-center rounded-full px-3 py-0.5 text-xs font-bold transition-all backdrop-blur-xl',
             isDragging
-              ? 'bg-lime text-background shadow-lime/30 scale-110 shadow-lg'
-              : 'bg-card border-border text-lime border',
+              ? 'bg-lime text-slate-950 shadow-[0_0_20px_rgba(142,224,0,0.45),inset_0_1px_0_0_rgba(255,255,255,0.35)] scale-110'
+              : 'border border-white/15 bg-slate-900/95 text-lime shadow-[0_6px_16px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.1)]',
           )}
         >
           ${value}M
@@ -92,30 +92,30 @@ export function BidSlider({ value, min, max, onChange, className }: BidSliderPro
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        className="focus:ring-lime relative flex h-10 cursor-grab items-center rounded-lg focus:ring-1 focus:outline-none active:cursor-grabbing"
+        className="focus:ring-lime relative flex h-10 cursor-grab items-center rounded-2xl focus:ring-1 focus:outline-none active:cursor-grabbing"
       >
-        {/* Rail bg */}
-        <div className="bg-border/60 absolute inset-x-0 h-2 rounded-full" />
+        {/* Rail bg (Sunken Glass Track) */}
+        <div className="absolute inset-x-0 h-2.5 rounded-full bg-slate-950/90 border border-white/10 shadow-inner" />
         {/* Filled rail */}
         <div
-          className="from-lime/70 to-lime absolute left-0 h-2 rounded-full bg-gradient-to-r transition-all"
+          className="absolute left-0 h-2.5 rounded-full bg-gradient-to-r from-lime/80 to-lime shadow-[0_0_12px_rgba(142,224,0,0.5)] transition-all"
           style={{ width: `${pct}%` }}
         />
-        {/* Thumb */}
+        {/* Thumb (Apple Specular Disc) */}
         <div
           className={cn(
-            'border-lime bg-card absolute -ml-3.5 h-7 w-7 rounded-full border-2 transition-shadow duration-200',
+            'absolute -ml-3.5 h-7 w-7 rounded-full border-2 border-lime bg-slate-900 transition-all duration-150 flex items-center justify-center',
             isDragging
-              ? 'scale-110 shadow-[0_0_20px_rgba(149,232,16,0.5)]'
-              : 'shadow-[0_0_10px_rgba(149,232,16,0.2)]',
+              ? 'scale-115 shadow-[0_0_24px_rgba(142,224,0,0.65),inset_0_1px_0_0_rgba(255,255,255,0.4)]'
+              : 'shadow-[0_4px_16px_rgba(0,0,0,0.7),0_0_12px_rgba(142,224,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.25)]',
           )}
           style={{ left: `${pct}%` }}
         >
-          <div className="bg-lime absolute inset-1.5 rounded-full" />
+          <div className="bg-lime h-2.5 w-2.5 rounded-full shadow-[0_0_6px_rgba(142,224,0,0.8)]" />
         </div>
         {/* Min/Max labels */}
-        <div className="text-steel font-stats absolute -bottom-5 left-0 text-[10px]">${min}M</div>
-        <div className="text-steel font-stats absolute right-0 -bottom-5 text-[10px]">${max}M</div>
+        <div className="text-steel font-stats absolute -bottom-5 left-0 text-[10px] font-bold">${min}M</div>
+        <div className="text-steel font-stats absolute right-0 -bottom-5 text-[10px] font-bold">${max}M</div>
       </div>
     </div>
   );

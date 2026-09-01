@@ -19,10 +19,14 @@ export function Panel({
   ...props
 }: PanelProps) {
   const variantStyles = {
-    default: 'border-white/10 bg-slate-900/90 shadow-xl backdrop-blur-xl',
-    elevated: 'border-white/15 bg-slate-900/95 shadow-2xl backdrop-blur-2xl',
-    highlight: 'border-white/12 bg-slate-900/95 shadow-xl backdrop-blur-2xl',
-    subtle: 'border-white/6 bg-slate-950/70 shadow-md backdrop-blur-md',
+    default:
+      'border-white/[0.12] bg-slate-900/85 shadow-[0_16px_36px_rgba(0,0,0,0.65),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl',
+    elevated:
+      'border-white/[0.16] bg-slate-900/92 shadow-[0_24px_56px_rgba(0,0,0,0.75),inset_0_1px_0_0_rgba(255,255,255,0.15)] backdrop-blur-3xl',
+    highlight:
+      'border-white/[0.14] bg-slate-900/90 shadow-[0_20px_48px_rgba(0,0,0,0.7),inset_0_1px_0_0_rgba(255,255,255,0.14)] backdrop-blur-2xl',
+    subtle:
+      'border-white/[0.08] bg-slate-950/70 shadow-[0_8px_20px_rgba(0,0,0,0.45),inset_0_1px_0_0_rgba(255,255,255,0.06)] backdrop-blur-xl',
   }[variant];
 
   return (

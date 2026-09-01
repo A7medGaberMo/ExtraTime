@@ -295,9 +295,10 @@ export const resolveSealedRound = mutation({
     if (!alreadyResolved) {
       const bothLocked = Boolean(auction.sealedBids?.host && auction.sealedBids?.guest);
       const deadline = auction.bidDeadline ?? 0;
-      const expired = deadline > 0 && Date.now() >= deadline;
+      // Allow a 1.5s tolerance for clock drift between client and server
+      const expired = deadline > 0 && Date.now() >= deadline - 1500;
       if (!bothLocked && !expired) {
-        throw new Error('Blind phase still active — waiting for both sealed bids');
+        return { resolved: false, reason: 'waiting_for_bids' };
       }
     }
 

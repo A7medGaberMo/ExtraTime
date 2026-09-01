@@ -90,7 +90,7 @@ export function RankRevealView({
     <div className="w-full max-w-md mx-auto select-none flex flex-col gap-2.5 sm:gap-3.5 py-1 animate-fade-in">
       {/* ── HEADER SCORE SUMMARY STRIP & FULL QUESTION TITLE ───────────── */}
       <div className="text-center shrink-0 space-y-1.5 px-2">
-        <div className="flex items-center justify-between px-3.5 py-1.5 rounded-2xl bg-slate-900/90 border border-white/10 shadow-sm backdrop-blur-md">
+        <div className="flex items-center justify-between px-3.5 py-2 rounded-2xl bg-slate-900/90 border border-white/12 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
           <div className="flex items-center gap-1.5 font-stats">
             <span className="text-xs text-steel font-semibold uppercase tracking-wider">
               {t('rank.yourScore')}:
@@ -137,13 +137,13 @@ export function RankRevealView({
             <div
               key={item.answerKey}
               className={`
-                flex items-center justify-between px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl border w-full transition-all
+                flex items-center justify-between px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl border w-full transition-all backdrop-blur-xl
                 ${
                   isExact
-                    ? 'border-lime/40 bg-slate-900/95 shadow-sm shadow-lime/5'
+                    ? 'border-lime/45 bg-slate-900/95 shadow-[0_4px_16px_rgba(142,224,0,0.12),inset_0_1px_0_0_rgba(255,255,255,0.1)]'
                     : isTop
-                      ? 'border-white/15 bg-slate-900/90'
-                      : 'border-white/8 bg-slate-900/80'
+                      ? 'border-white/15 bg-slate-900/90 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)]'
+                      : 'border-white/[0.12] bg-slate-900/85 shadow-[0_4px_16px_rgba(0,0,0,0.35),inset_0_1px_0_0_rgba(255,255,255,0.06)]'
                 }
               `}
             >
@@ -152,11 +152,11 @@ export function RankRevealView({
                 {/* Rank Number Badge */}
                 <div
                   className={`
-                    flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-xl text-xs font-bold font-display-number
+                    flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-xl text-xs font-bold font-display-number shadow-sm
                     ${
                       isTop
-                        ? 'bg-lime text-slate-950 shadow-sm'
-                        : 'bg-slate-800 text-slate-300'
+                        ? 'bg-lime text-slate-950 shadow-[0_2px_8px_rgba(142,224,0,0.3)]'
+                        : 'bg-slate-800/90 text-slate-300 border border-white/5'
                     }
                   `}
                 >
@@ -207,7 +207,7 @@ export function RankRevealView({
           type="button"
           onClick={onAdvance}
           disabled={isAdvancing}
-          className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-lime shadow-sm transition-all active:scale-[0.98] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
+          className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-lime shadow-[0_8px_20px_rgba(142,224,0,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
         >
           {isLastRound ? (
             <>

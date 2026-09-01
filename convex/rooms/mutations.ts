@@ -230,7 +230,7 @@ export const findOrCreatePublicMatch = mutation({
     const openRooms = await ctx.db
       .query('rooms')
       .withIndex('by_public_status', (q) => q.eq('isPublic', true).eq('status', 'waiting'))
-      .collect();
+      .take(50);
 
     // Check if player already has an open waiting room (prevents spam and room landfills)
     const existingHostRoom = openRooms.find(

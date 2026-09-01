@@ -2,6 +2,7 @@
 
 import React, { use, useEffect, useState, useCallback, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../../../convex/_generated/api';
 import { Id } from '../../../../convex/_generated/dataModel';
@@ -27,7 +28,6 @@ import {
   Lock,
   LockKey,
   Shield,
-  Stack,
   CurrencyDollar,
   Info,
 } from '@phosphor-icons/react';
@@ -45,9 +45,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const { t, lang } = useI18n();
   const { guestId, sessionToken } = useGuestSession(true);
   const [codeCopied, setCodeCopied] = useState(false);
+  const [isPitchOpen, setIsPitchOpen] = useState(true);
 
   const [showReveal, setShowReveal] = useState(false);
-  const [showFormation, setShowFormation] = useState(false);
   const prevRoundRef = useRef<number | null>(null);
   const pendingRedirectRef = useRef(false);
   const completedTriggeredRef = useRef(false);
@@ -68,7 +68,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         setShowReveal(true);
         pendingRedirectRef.current = true;
       } else if (!state?.lastCompletedRound) {
-        const timer = setTimeout(() => router.push(`/result/${roomId}`), 1500);
+        const timer = setTimeout(() => router.replace(`/result/${roomId}`), 1500);
         return () => clearTimeout(timer);
       }
     }
@@ -135,9 +135,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   // Auto-resolve when the blind phase expires without both locks.
   useEffect(() => {
-    if (!state || !state.auction || state.auction.status !== 'active') return;
-    if (!deadline) return;
-    const isExpired = timeLeft === 0 && Date.now() >= deadline - 500;
+    if (!state || !state.auction || state.auction.status !== 'active' || !deadline) return;
+    const isExpired = timeLeft === 0 && Date.now() >= deadline + 300;
     if (isExpired && !autoResolveFired.current && !isSubmitting && guestId) {
       autoResolveFired.current = true;
       resolveSealedRound({
@@ -160,7 +159,26 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const revealedSubPlayer = state?.revealedSubPlayer;
   const revealedNextMainPlayer = state?.revealedNextMainPlayer;
   const nextRoundInfo = state?.nextRoundInfo;
-  const mySquad = state?.mySquad ?? [];
+  const rawMySquad = state?.mySquad;
+  const mySquad = useMemo(() => rawMySquad ?? [], [rawMySquad]);
+
+  const formationSquad = mySquad.map((slot) => ({
+    ...slot,
+    player: slot.player
+      ? {
+          id: slot.player._id,
+          name: slot.player.name,
+          tier: slot.player.tier as PlayerCardData['tier'],
+          position: slot.player.position,
+          club: slot.player.club,
+          nation: slot.player.nation,
+          imageUrl: slot.player.imageUrl,
+          isLegend: slot.player.isLegend,
+          kitNumber: slot.player.kitNumber,
+          rating: slot.player.rating,
+        }
+      : null,
+  }));
 
   const isActive = auction?.status === 'active';
   const isHost = Boolean(state?.isHost);
@@ -244,7 +262,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     setShowReveal(false);
     if (pendingRedirectRef.current) {
       pendingRedirectRef.current = false;
-      router.push(`/result/${roomId}`);
+      router.replace(`/result/${roomId}`);
       return;
     }
   }, [router, roomId]);
@@ -292,26 +310,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     );
   }
 
-  const formationSquad = mySquad.map((slot) => ({
-    ...slot,
-    player: slot.player
-      ? {
-          id: slot.player._id,
-          name: slot.player.name,
-          tier: slot.player.tier as PlayerCardData['tier'],
-          position: slot.player.position,
-          club: slot.player.club,
-          nation: slot.player.nation,
-          imageUrl: slot.player.imageUrl,
-          isLegend: slot.player.isLegend,
-          kitNumber: slot.player.kitNumber,
-          rating: slot.player.rating,
-        }
-      : null,
-  }));
-
   return (
-    <article className="mx-auto flex max-w-2xl flex-col gap-3 sm:gap-4 select-none pb-24 sm:pb-8">
+    <article className="mx-auto flex max-w-xl flex-col gap-2 select-none pb-4 sm:pb-2">
       {/* ── 0. BID REVEAL OVERLAY MODAL ─────────────────────────────── */}
       <BidRevealAnimation
         isOpen={showReveal}
@@ -321,13 +321,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
       {/* ── 0. WAITING LOBBY OVERLAY (WHEN WAITING FOR OPPONENT) ────── */}
       {room.status === 'waiting' && !auction.guest && (
-        <Panel variant="highlight" className="p-6 text-center space-y-5 animate-scale-in">
-          <div className="flex h-14 w-14 mx-auto items-center justify-center rounded-2xl border border-lime/30 bg-lime/10 text-lime">
-            <AppIcon icon={Crosshair} size={32} weight="duotone" />
+        <Panel variant="highlight" className="p-5 text-center space-y-4 animate-scale-in">
+          <div className="flex h-12 w-12 mx-auto items-center justify-center rounded-2xl border border-lime/30 bg-lime/10 text-lime">
+            <AppIcon icon={Crosshair} size={28} weight="duotone" />
           </div>
 
-          <div className="space-y-1.5">
-            <h2 className="text-2xl font-black text-white uppercase font-display">
+          <div className="space-y-1">
+            <h2 className="text-xl font-black text-white uppercase font-display">
               {t('auction.waitingOverlay.title')}
             </h2>
             <p className="text-steel text-xs font-medium max-w-md mx-auto">
@@ -336,12 +336,12 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           </div>
 
           {/* Room Code Card */}
-          <div className="flex flex-col items-center gap-2 rounded-2xl border border-white/10 bg-slate-950/80 p-4">
-            <span className="text-steel text-[10px] font-black tracking-widest uppercase">
+          <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/10 bg-slate-950/80 p-3">
+            <span className="text-steel text-[9px] font-black tracking-widest uppercase">
               {t('joinRoom.roomCode')}
             </span>
-            <div className="flex items-center gap-3">
-              <span className="font-stats text-lime text-3xl font-black tracking-[0.2em]">
+            <div className="flex items-center gap-2.5">
+              <span className="font-stats text-lime text-2xl font-black tracking-[0.2em]">
                 {room.code}
               </span>
               <button
@@ -349,53 +349,59 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 onClick={copyCode}
                 aria-label="Copy Room Code"
                 title="Copy Room Code"
-                className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:text-white hover:border-lime/40 transition-colors cursor-pointer"
+                className="flex h-8 w-8 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:text-white hover:border-lime/40 transition-colors cursor-pointer"
               >
-                <AppIcon icon={codeCopied ? Check : Copy} size={18} weight="bold" className={codeCopied ? 'text-lime' : ''} />
+                <AppIcon icon={codeCopied ? Check : Copy} size={16} weight="bold" className={codeCopied ? 'text-lime' : ''} />
               </button>
             </div>
           </div>
 
           <div className="flex items-center justify-center gap-2 text-xs text-steel">
-            <AppIcon icon={CircleNotch} size={16} weight="bold" className="text-lime animate-spin" />
+            <AppIcon icon={CircleNotch} size={15} weight="bold" className="text-lime animate-spin" />
             <span>{t('lobby.waitingOpponent')}</span>
           </div>
 
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => cancelRoom({ roomId: room._id, hostId: guestId })}
+            onClick={() =>
+              cancelRoom({
+                roomId: room._id,
+                hostId: guestId,
+                sessionToken: sessionToken ?? undefined,
+              })
+            }
           >
             {t('auction.waitingOverlay.cancelMatch')}
           </Button>
         </Panel>
       )}
 
-      {/* ── 1. HUD & BUDGET COMPARISON BAR ───────────────────────────── */}
-      <Panel variant="subtle" className="p-3 sm:p-4">
+      {/* ── 1. HUD & BUDGET COMPARISON BAR (TOP) ─────────────────────── */}
+      <Panel variant="subtle" className="p-2 sm:p-2.5">
         <div className="flex items-center justify-between gap-2">
           {/* Dual Budget Comparison */}
-          <div className="flex flex-1 items-center gap-2 sm:gap-3">
-            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-xl border border-lime/40 bg-lime/10 px-2 sm:px-3 py-1.5 shadow-inner">
-              <span className="text-steel text-[8px] sm:text-[9px] leading-none font-black tracking-widest uppercase truncate max-w-full">
+          <div className="flex flex-1 items-center gap-1.5 sm:gap-2">
+            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-xl border border-lime/40 bg-lime/10 px-2 py-0.5 shadow-inner">
+              <span className="text-steel text-[8px] leading-none font-black tracking-widest uppercase truncate max-w-full">
                 {t('auction.you')}
               </span>
-              <span className="font-stats text-lime text-base sm:text-lg leading-tight font-black">
+              <span className="font-stats text-lime text-sm sm:text-base leading-tight font-black">
                 ${myBudget}M
               </span>
             </div>
 
-            <div className="flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-slate-900 shadow-md">
-              <span className="text-steel text-[9px] font-black uppercase font-stats">
+            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-white/10 bg-slate-900 shadow-md">
+              <span className="text-steel text-[8px] font-black uppercase font-stats">
                 {t('common.vs')}
               </span>
             </div>
 
-            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-xl border border-rose-500/40 bg-rose-500/10 px-2 sm:px-3 py-1.5 shadow-inner">
-              <span className="text-steel text-[8px] sm:text-[9px] leading-none font-black tracking-widest uppercase truncate max-w-full">
+            <div className="flex min-w-0 flex-1 flex-col items-center justify-center rounded-xl border border-rose-500/40 bg-rose-500/10 px-2 py-0.5 shadow-inner">
+              <span className="text-steel text-[8px] leading-none font-black tracking-widest uppercase truncate max-w-full">
                 {t('auction.rival')}
               </span>
-              <span className="font-stats text-rose-400 text-base sm:text-lg leading-tight font-black">
+              <span className="font-stats text-rose-400 text-sm sm:text-base leading-tight font-black">
                 ${opponent?.budget ?? 0}M
               </span>
             </div>
@@ -406,103 +412,88 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             timeLeft={timeLeft}
             maxTime={BLIND_PHASE_SECONDS}
             isActive={isActive}
-            size={44}
+            size={36}
             showBoost={isActivatingPerk}
           />
         </div>
 
         {/* Progress Bar */}
-        <div className="mt-3 flex items-center gap-2.5">
-          <div className="h-2 flex-1 overflow-hidden rounded-full border border-white/5 bg-slate-950 p-0.5">
+        <div className="mt-1.5 flex items-center gap-2">
+          <div className="h-1 flex-1 overflow-hidden rounded-full border border-white/5 bg-slate-950 p-0.5">
             <div
-              className="from-lime/50 via-lime to-vivid h-full rounded-full bg-gradient-to-r shadow-[0_0_10px_rgba(149,232,16,0.6)] transition-all duration-500"
+              className="from-lime/50 via-lime to-vivid h-full rounded-full bg-gradient-to-r shadow-[0_0_8px_rgba(149,232,16,0.6)] transition-all duration-500"
               style={{ width: `${((auction.currentRound - 1) / totalRounds) * 100}%` }}
             />
           </div>
-          <span className="text-steel rounded-lg border border-white/5 bg-slate-900/80 px-2.5 py-1 text-[10px] font-black tracking-widest uppercase font-stats">
+          <span className="text-steel rounded-md border border-white/5 bg-slate-900/80 px-1.5 py-0.5 text-[9px] font-black tracking-widest uppercase font-stats">
             {t('common.round')} {auction.currentRound}/{totalRounds} · <span className="text-lime">{auction.formation}</span>
           </span>
         </div>
       </Panel>
 
-      {/* ── 2. LIVE TACTICAL FORMATION DISPLAY ──────────────────────── */}
-      <Panel variant="default" className="transition-all">
-        <button
-          type="button"
-          onClick={() => setShowFormation(!showFormation)}
-          className="text-steel flex w-full items-center justify-between bg-gradient-to-r from-white/5 to-transparent px-4 py-3 text-xs font-black tracking-wider uppercase transition-colors hover:text-white cursor-pointer"
-        >
-          <span className="flex items-center gap-2">
-            <AppIcon icon={Stack} size={16} weight="duotone" className="text-lime" />
-            <span>
-              {t('auction.squadFormation')} · {t('auction.signedCount', { count: mySquad.filter((s) => s.player).length, total: totalRounds })}
-            </span>
-          </span>
-          <AppIcon icon={showFormation ? CaretUp : CaretDown} size={16} weight="bold" className="text-steel" />
-        </button>
-
-        {showFormation && (
-          <div className="animate-slide-down px-2 pb-3">
-            <TacticalPitch
-              formation={auction.formation}
-              matchSize={(auction.matchSize as 5 | 11) || 11}
-              squad={formationSquad}
-              rounds={auction.rounds}
-              currentRound={auction.currentRound}
-              totalRounds={totalRounds}
-            />
-          </div>
-        )}
-      </Panel>
-
-      {/* ── 3. HIGH-END PLAYER CARD STAGE ───────────────────────────── */}
-      <Panel variant="elevated" className="p-4 sm:p-6 text-center">
+      {/* ── 2. TOP TARGET PLAYER CARD STAGE ─────────────────────────── */}
+      <Panel variant="elevated" className="p-2 sm:p-2.5 text-center relative overflow-hidden">
         {/* Stage Lighting */}
         <div
-          className="pointer-events-none absolute top-1/2 left-1/2 h-[220px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-[100px] transition-all duration-700"
+          className="pointer-events-none absolute top-1/2 left-1/2 h-[140px] w-[220px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20 blur-[70px] transition-all duration-700"
           style={{ backgroundColor: tierColor }}
         />
 
         {/* Target Strip */}
-        <div className="relative z-10 mb-2 sm:mb-4 flex items-center justify-between gap-2">
+        <div className="relative z-10 mb-1.5 flex items-center justify-between gap-1.5">
           <div
-            className="inline-flex items-center gap-1.5 sm:gap-2 rounded-xl border px-2.5 py-0.5 sm:px-3 sm:py-1 text-[11px] sm:text-xs font-black tracking-wider uppercase shadow-lg backdrop-blur-md"
+            className="inline-flex items-center gap-1 rounded-lg border px-2 py-0.5 text-[10px] sm:text-[11px] font-black tracking-wider uppercase shadow-sm backdrop-blur-md"
             style={{
               color: tierColor,
               backgroundColor: `${tierColor}15`,
               borderColor: `${tierColor}50`,
             }}
           >
-            <AppIcon icon={Shield} size={14} weight="duotone" style={{ color: tierColor }} />
+            <AppIcon icon={Shield} size={12} weight="duotone" style={{ color: tierColor }} />
             <span>{currentPosition} · {t('auction.targetPlayer', { tier: mainPlayer?.tier || '' })}</span>
           </div>
 
-          <StatPill
-            variant={opponentLocked ? 'lime' : 'muted'}
-            size="sm"
-            label={opponentLocked ? t('auction.rivalLocked') : t('auction.rivalThinking')}
-            className={opponentLocked ? 'animate-pulse' : ''}
-          />
+          {/* Perk Trigger Button (Apple Frosted Glass Pill) & Rival Pill */}
+          <div className="flex items-center gap-1.5">
+            {me?.perk && !me.perkUsed && (
+              <button
+                type="button"
+                onClick={handleActivatePerk}
+                disabled={isActivatingPerk || myLocked}
+                className="btn-haptic inline-flex items-center gap-1 rounded-full border border-amber-400/35 bg-amber-400/10 hover:bg-amber-400/20 active:scale-95 px-2.5 py-0.5 text-[10.5px] font-black text-amber-300 uppercase tracking-wider backdrop-blur-xl shadow-[0_2px_8px_rgba(245,158,11,0.12)] transition-all cursor-pointer disabled:opacity-50 disabled:pointer-events-none font-stats"
+                title={
+                  me.perk === 'SCOUT'
+                    ? (lang === 'ar' ? 'بيرك السكاوت: اكشف نجم الجولة القادمة' : 'Scout Perk: Reveal next round star target')
+                    : (lang === 'ar' ? 'بيرك الجاسوس: اكشف البديل السري لهذه الجولة' : 'Spy Perk: Reveal current round secret backup sub')
+                }
+              >
+                <AppIcon icon={me.perk === 'SCOUT' ? Binoculars : Eye} size={13} weight="fill" className="text-amber-300" />
+                <span>{t('auction.usePerk', { perk: me.perk })}</span>
+              </button>
+            )}
+
+            <StatPill
+              variant={opponentLocked ? 'lime' : 'muted'}
+              size="sm"
+              label={opponentLocked ? t('auction.rivalLocked') : t('auction.rivalThinking')}
+              className={opponentLocked ? 'animate-pulse' : ''}
+            />
+          </div>
         </div>
 
         {/* Player Card Showcase */}
-        <div className="relative z-10 flex justify-center py-0.5 sm:py-1">
+        <div className="relative z-10 flex justify-center py-0.5">
           {playerData ? (
             <div
-              className="animate-scale-in origin-center drop-shadow-[0_15px_30px_rgba(0,0,0,0.85)]"
+              className="animate-scale-in origin-center drop-shadow-[0_8px_16px_rgba(0,0,0,0.8)]"
               key={`${auction.currentRound}-${playerData.id}`}
             >
-              <div className="block sm:hidden">
-                <PlayerCard player={playerData} size="sm" />
-              </div>
-              <div className="hidden sm:block">
-                <PlayerCard player={playerData} size="md" />
-              </div>
+              <PlayerCard player={playerData} size="sm" />
             </div>
           ) : (
-            <div className="flex h-[200px] w-36 animate-pulse flex-col items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-900/80 sm:h-[280px] sm:w-52">
-              <AppIcon icon={CircleNotch} size={24} weight="bold" className="text-lime animate-spin" />
-              <span className="text-steel text-[10px] font-black tracking-widest uppercase">
+            <div className="flex h-[180px] w-32 animate-pulse flex-col items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-900/80">
+              <AppIcon icon={CircleNotch} size={18} weight="bold" className="text-lime animate-spin" />
+              <span className="text-steel text-[8.5px] font-black tracking-widest uppercase">
                 {t('auction.hydrating')}
               </span>
             </div>
@@ -511,11 +502,11 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
         {/* Perk Intel Banner */}
         {me?.perkUsed && me?.perkUsedRound === auction.currentRound && (
-          <div className="relative z-10 mt-4 flex items-center gap-3 rounded-2xl border border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-amber-500/10 to-transparent p-3 shadow-xl backdrop-blur-md text-start">
-            <div className="rounded-xl border border-amber-400/30 bg-amber-400/10 p-2 text-amber-300">
-              <AppIcon icon={Lightning} size={18} weight="fill" />
+          <div className="relative z-10 mt-1.5 flex items-center gap-2 rounded-xl border border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-amber-500/10 to-transparent p-2 shadow-lg backdrop-blur-md text-start">
+            <div className="rounded-lg border border-amber-400/30 bg-amber-400/10 p-1 text-amber-300 shrink-0">
+              <AppIcon icon={Lightning} size={14} weight="fill" />
             </div>
-            <div className="min-w-0 flex-1 text-xs">
+            <div className="min-w-0 flex-1 text-[10.5px]">
               {me.perk === 'SPY' && revealedSubPlayer && (
                 <p className="font-medium text-white">
                   {t('auction.spyIntel', {
@@ -538,23 +529,23 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         )}
       </Panel>
 
-      {/* ── 4. LUXURY SEALED BID VAULT ───────────────────────────────── */}
+      {/* ── 3. MIDDLE SEALED BIDDING VAULT ──────────────────────────── */}
       {isActive && (
         <Panel
           variant={myLocked ? 'highlight' : 'elevated'}
-          className="p-4 sm:p-6 space-y-4"
+          className="p-2.5 sm:p-3 space-y-2"
         >
           {/* Status Header */}
-          <div className="flex items-center justify-between gap-2">
-            <div className="flex items-center gap-2">
+          <div className="flex items-center justify-between gap-1.5">
+            <div className="flex items-center gap-1.5">
               <div
-                className={`rounded-xl border p-2 ${
+                className={`rounded-lg border p-1 ${
                   myLocked ? 'border-lime/40 bg-lime/10 text-lime' : 'border-white/10 bg-slate-900 text-steel'
                 }`}
               >
-                <AppIcon icon={myLocked ? LockKey : Lock} size={18} weight={myLocked ? 'fill' : 'bold'} />
+                <AppIcon icon={myLocked ? LockKey : Lock} size={14} weight={myLocked ? 'fill' : 'bold'} />
               </div>
-              <span className={`text-xs font-black uppercase tracking-wider ${bothLocked ? 'text-amber-300' : myLocked ? 'text-lime' : 'text-white'}`}>
+              <span className={`text-[11px] font-black uppercase tracking-wider ${bothLocked ? 'text-amber-300' : myLocked ? 'text-lime' : 'text-white'}`}>
                 {bothLocked
                   ? t('auction.bothSealed')
                   : myLocked
@@ -564,66 +555,39 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                     : t('auction.vaultTitle')}
               </span>
             </div>
-
-            {/* Perk Trigger Button with Tooltip */}
-            {me?.perk && !me.perkUsed && (
-              <Button
-                variant="gold"
-                size="sm"
-                onClick={handleActivatePerk}
-                disabled={isActivatingPerk || myLocked}
-                loading={isActivatingPerk}
-                title={
-                  me.perk === 'SCOUT'
-                    ? (lang === 'ar' ? 'بيرك السكاوت: اكشف نجم الجولة القادمة' : 'Scout Perk: Reveal next round star target')
-                    : (lang === 'ar' ? 'بيرك الجاسوس: اكشف البديل السري لهذه الجولة' : 'Spy Perk: Reveal current round secret backup sub')
-                }
-                leftIcon={<AppIcon icon={me.perk === 'SCOUT' ? Binoculars : Eye} size={16} weight="bold" />}
-              >
-                {t('auction.usePerk', { perk: me.perk })}
-              </Button>
-            )}
-
-            {me?.perk && me.perkUsed && (
-              <StatPill
-                variant="muted"
-                size="sm"
-                label={t('auction.perkActivated', { perk: me.perk })}
-              />
-            )}
           </div>
 
           {/* Locked or Interactive Bidding Stage */}
           {myLocked ? (
-            <div className="animate-fade-in space-y-2 py-4 text-center">
+            <div className="animate-fade-in space-y-1 py-1.5 text-center">
               <StatPill
                 variant="lime"
                 size="md"
-                icon={<AppIcon icon={Check} size={16} weight="bold" />}
+                icon={<AppIcon icon={Check} size={15} weight="bold" />}
                 label={
                   lockedAmount != null
                     ? t('auction.envelopeLockedBadge', { amount: lockedAmount })
                     : t('auction.mySealed')
                 }
               />
-              <p className="text-steel text-xs font-medium max-w-md mx-auto">
+              <p className="text-steel text-[11px] font-medium max-w-md mx-auto">
                 {opponentLocked
                   ? t('auction.bothEnvelopesIn')
                   : t('auction.envelopeWaitingOther')}
               </p>
             </div>
           ) : (
-            <div className="space-y-4">
+            <div className="space-y-2">
               {/* Quick Chip Selector */}
-              <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
+              <div className="grid grid-cols-5 gap-1">
                 {quickChips.map((chip) => (
                   <button
                     key={chip.value}
                     type="button"
                     onClick={() => setBidAmount(chip.value)}
-                    className={`rounded-xl border py-2 px-1 text-[11px] sm:text-xs font-black uppercase tracking-wider transition-all active:scale-95 cursor-pointer font-stats ${
+                    className={`rounded-lg border py-1 px-0.5 text-[10.5px] sm:text-[11px] font-black uppercase tracking-wider transition-all active:scale-95 cursor-pointer font-stats ${
                       bidAmount === chip.value
-                        ? 'border-lime bg-lime text-slate-950 shadow-lg shadow-lime/20'
+                        ? 'border-lime bg-lime text-slate-950 shadow-md shadow-lime/20'
                         : 'border-white/10 bg-slate-900/90 text-white hover:bg-slate-800'
                     }`}
                   >
@@ -633,43 +597,33 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
               </div>
 
               {/* Slider Track */}
-              <div className="space-y-2 pt-1">
+              <div className="space-y-0.5">
                 <BidSlider value={bidAmount} min={0} max={myBudget} onChange={setBidAmount} />
-                <div className="flex items-center justify-between px-1">
-                  <span className="text-steel flex items-center gap-1.5 text-xs font-black tracking-wider uppercase">
-                    <AppIcon icon={CurrencyDollar} size={16} weight="bold" className="text-lime" />
+                <div className="flex items-center justify-between px-0.5 pt-0.5">
+                  <span className="text-steel flex items-center gap-1 text-[11px] font-black tracking-wider uppercase">
+                    <AppIcon icon={CurrencyDollar} size={14} weight="bold" className="text-lime" />
                     <span>{t('auction.yourBidAmount')}</span>
                   </span>
-                  <span className="font-stats text-lime text-2xl font-black">${bidAmount}M</span>
+                  <span className="font-stats text-lime text-lg font-black">${bidAmount}M</span>
                 </div>
               </div>
 
-              {/* Informative Rule Explainer */}
-              <div className="rounded-xl border border-white/5 bg-slate-950/60 p-2.5 flex items-center gap-2 text-[10px] text-steel">
-                <AppIcon icon={Info} size={14} weight="duotone" className="text-lime shrink-0" />
-                <span>
-                  {lang === 'ar'
-                    ? 'العرض الأعلى يفوز بالنجم ويدفع عرضه، والطرف التاني بياخد البديل ويدفع عرضه المحجوز.'
-                    : 'Higher offer signs the star for their bid. Lower bidder receives the hidden backup for their offer.'}
-                </span>
-              </div>
-
               {error && (
-                <p className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-4 py-2 text-xs font-bold text-rose-400">
+                <p className="rounded-lg border border-rose-500/30 bg-rose-500/10 px-2.5 py-1 text-[11px] font-bold text-rose-400">
                   {error}
                 </p>
               )}
 
               {/* Single Primary Action Button: Lock Offer */}
-              <div className="pt-1">
+              <div>
                 <Button
                   variant="primary"
-                  size="lg"
+                  size="md"
                   fullWidth
                   onClick={handleLockBid}
                   disabled={isSubmitting || bidAmount < 0 || bidAmount > myBudget}
                   loading={isSubmitting}
-                  leftIcon={<AppIcon icon={LockKey} size={18} weight="fill" />}
+                  leftIcon={<AppIcon icon={LockKey} size={16} weight="fill" />}
                 >
                   {bidAmount === 0
                     ? t('auction.lockZeroBid')
@@ -680,6 +634,66 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           )}
         </Panel>
       )}
+
+      {/* ── 4. BOTTOM COLLAPSIBLE TACTICAL PITCH (APPLE THEME) ─────────── */}
+      <div className="w-full overflow-hidden rounded-2xl border border-white/10 bg-slate-950/80 shadow-[0_8px_30px_rgba(0,0,0,0.6)] backdrop-blur-2xl transition-all">
+        {/* Apple Capsule Collapsible Header */}
+        <button
+          type="button"
+          onClick={() => setIsPitchOpen(!isPitchOpen)}
+          className="btn-haptic flex w-full items-center justify-between px-3.5 py-2.5 sm:px-4 sm:py-3 transition-colors hover:bg-white/[0.03] cursor-pointer"
+        >
+          <div className="flex items-center gap-2 min-w-0">
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg border border-lime/30 bg-lime/10 text-lime shrink-0">
+              <AppIcon icon={Shield} size={15} weight="duotone" />
+            </div>
+            <div className="flex items-center gap-1.5 truncate">
+              <span className="text-xs font-black tracking-wider text-white uppercase font-display">
+                {auction.formation} Scheme
+              </span>
+              <span className="rounded-full border border-lime/30 bg-lime/10 px-2 py-0.5 text-[8.5px] font-black text-lime uppercase font-stats">
+                {mySquad.filter((s) => s.player).length}/{totalRounds} Signed
+              </span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-1.5 shrink-0">
+            <span className="text-[10px] font-bold text-steel font-stats hidden sm:inline">
+              {isPitchOpen ? (lang === 'ar' ? 'إخفاء الملعب' : 'Hide Pitch') : (lang === 'ar' ? 'عرض الملعب' : 'Show Pitch')}
+            </span>
+            <div className="flex h-6 w-6 items-center justify-center rounded-full border border-white/10 bg-slate-900 text-steel">
+              <AppIcon icon={isPitchOpen ? CaretUp : CaretDown} size={13} weight="bold" />
+            </div>
+          </div>
+        </button>
+
+        {/* Collapsible Pitch Body */}
+        <AnimatePresence initial={false}>
+          {isPitchOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="overflow-hidden border-t border-white/10"
+            >
+              <div className="p-2 sm:p-3">
+                <TacticalPitch
+                  formation={auction.formation}
+                  matchSize={(auction.matchSize as 5 | 11) || 11}
+                  squad={formationSquad}
+                  rounds={auction.rounds}
+                  currentRound={auction.currentRound}
+                  totalRounds={totalRounds}
+                  title={t('auction.squadFormation')}
+                  badgeLabel={`${mySquad.filter((s) => s.player).length}/${totalRounds} Signed`}
+                  compact={true}
+                />
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </article>
   );
 }

@@ -91,16 +91,9 @@ export function BidRevealAnimation({
   const opponentBid = lastCompletedRound.opponentBid;
   const wasTieLottery = lastCompletedRound.wasTieLottery ?? false;
 
-  const bidLine = (me: number | null | undefined, rival: number | null | undefined): string => {
-    const parts: string[] = [];
-    if (me !== undefined && me !== null) parts.push(`You sealed $${me}M`);
-    if (rival !== undefined && rival !== null) parts.push(`Rival sealed $${rival}M`);
-    return parts.join(' · ');
-  };
-
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-slate-950/98 p-3 backdrop-blur-2xl transition-all duration-300 sm:p-4 select-none ${
+      className={`fixed inset-0 z-[85] flex items-center justify-center bg-slate-950/98 p-3 backdrop-blur-2xl transition-all duration-300 sm:p-4 select-none ${
         stage === 'exit' ? 'pointer-events-none scale-95 opacity-0' : 'scale-100 opacity-100'
       }`}
       onClick={() => {
@@ -108,146 +101,189 @@ export function BidRevealAnimation({
         setTimeout(() => onCloseRef.current(), 280);
       }}
     >
-      <div className="bg-lime/12 pointer-events-none absolute top-1/2 left-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[130px] sm:h-[480px] sm:w-[480px]" />
+      {/* Dynamic Ambient Glow */}
+      <div
+        className={`pointer-events-none absolute top-1/2 left-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[140px] sm:h-[500px] sm:w-[500px] ${
+          winnerIsMe ? 'bg-lime/20' : 'bg-rose-500/20'
+        }`}
+      />
 
       <div
-        className="animate-scale-in relative flex max-h-[96vh] w-full max-w-lg flex-col items-center gap-4 overflow-y-auto rounded-2xl border border-white/10 bg-slate-900/90 p-4 shadow-[0_0_60px_rgba(0,0,0,0.85)] backdrop-blur-md sm:p-6"
+        className="animate-scale-in relative flex max-h-[96vh] w-full max-w-xl flex-col items-center gap-3 overflow-y-auto rounded-3xl border border-white/18 bg-slate-900/95 p-4 shadow-[0_24px_60px_rgba(0,0,0,0.85),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl sm:p-6"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Close Button */}
         <button
           onClick={() => {
             setStage('exit');
             setTimeout(() => onCloseRef.current(), 280);
           }}
-          className="text-steel absolute top-3 right-3 z-20 rounded-full border border-white/10 bg-slate-950/80 p-1.5 transition-all hover:text-white cursor-pointer"
+          className="btn-haptic text-steel absolute top-3.5 right-3.5 z-20 rounded-full border border-white/12 bg-slate-950/85 p-1.5 transition-all hover:text-white hover:border-lime/40 cursor-pointer"
+          title="Close"
         >
-          <AppIcon icon={X} size={16} weight="bold" />
+          <AppIcon icon={X} size={15} weight="bold" />
         </button>
 
-        {/* Round + Position */}
-        <div className="z-10 flex flex-col items-center pt-1 text-center">
-          <div className="text-steel inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-950/80 px-3 py-1 text-[10px] font-black tracking-widest uppercase shadow-inner font-stats">
-            <AppIcon icon={Sword} size={14} weight="duotone" className="text-lime" />R{roundNumber} · {position}
+        {/* ── TOP BADGE & OUTCOME HEADER ── */}
+        <div className="z-10 flex flex-col items-center pt-0.5 text-center space-y-1">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-950/85 px-3 py-1 text-[11px] font-black tracking-widest uppercase shadow-inner font-stats text-steel">
+            <AppIcon icon={Sword} size={14} weight="duotone" className="text-lime" />
+            <span>ROUND {roundNumber} · {position} SHOWDOWN</span>
           </div>
-        </div>
 
-        {/* Status */}
-        <div className="z-10 space-y-1.5 text-center">
-          {winnerIsMe ? (
-            <>
-              <div className="text-lime flex animate-pulse items-center justify-center gap-1.5 text-base font-black tracking-wider uppercase sm:text-lg font-display">
-                <AppIcon icon={Trophy} size={20} weight="duotone" className="text-lime animate-bounce" />
-                You Won {yourPlayer?.name}!
+          <div className="flex items-center justify-center gap-2 pt-0.5">
+            {winnerIsMe ? (
+              <div className="flex items-center gap-1.5 text-lime text-base sm:text-lg font-black uppercase font-display tracking-wider animate-pulse">
+                <AppIcon icon={Trophy} size={20} weight="fill" className="text-lime" />
+                <span>YOU WON STAR TARGET!</span>
               </div>
-              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs font-stats">
-                {bidLine(myBid ?? winningBid, opponentBid)}
-                {winningBid > 0 && <span className="text-lime"> · Paid ${winningBid}M</span>}
-              </p>
-              <p className="text-steel/60 text-[9px] font-semibold tracking-wide uppercase font-stats">
-                Rival got <span className="text-rose-400">{rivalPlayer?.name}</span> as secret sub
-                (${rivalCost}M)
-              </p>
-            </>
-          ) : winningBid > 0 ? (
-            <>
-              <div className="flex items-center justify-center gap-1.5 text-base font-black tracking-wider text-rose-400 uppercase sm:text-lg font-display">
-                <AppIcon icon={ShieldCheck} size={20} weight="duotone" className="text-rose-400" />
-                Rival Won {rivalPlayer?.name}!
+            ) : winningBid > 0 ? (
+              <div className="flex items-center gap-1.5 text-rose-400 text-base sm:text-lg font-black uppercase font-display tracking-wider">
+                <AppIcon icon={ShieldCheck} size={20} weight="fill" className="text-rose-400" />
+                <span>RIVAL SIGNED STAR TARGET</span>
               </div>
-              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs font-stats">
-                {bidLine(myBid ?? 0, opponentBid ?? winningBid)}
-                {winningBid > 0 && <span className="text-rose-400"> · Paid ${winningBid}M</span>}
-              </p>
-              <p className="text-steel/60 text-[9px] font-semibold tracking-wide uppercase font-stats">
-                You received <span className="text-lime">{yourPlayer?.name}</span> as secret sub ($
-                {yourCost}M)
-              </p>
-            </>
-          ) : (
-            <>
-              <div className="flex items-center justify-center gap-1.5 text-base font-black tracking-wider text-amber-300 uppercase sm:text-lg font-display">
-                <AppIcon icon={Question} size={20} weight="duotone" className="text-amber-300" />
-                Both Offered $0M
+            ) : (
+              <div className="flex items-center gap-1.5 text-amber-300 text-base sm:text-lg font-black uppercase font-display tracking-wider">
+                <AppIcon icon={Question} size={20} weight="bold" className="text-amber-300" />
+                <span>BOTH BID $0M</span>
               </div>
-              <p className="text-steel text-[10px] font-bold tracking-wide uppercase sm:text-xs font-stats">
-                {bidLine(0, 0)} · Round starter gets Main at $0M, other gets Sub at $0M
-              </p>
-            </>
-          )}
+            )}
+          </div>
+
           {wasTieLottery && (
-            <p className="animate-pulse text-[9px] font-black tracking-widest text-amber-300 uppercase font-stats">
-              🪙 Equal sealed bids — room-seed lot draw resolved it!
-            </p>
+            <span className="rounded-full bg-amber-400/15 border border-amber-400/30 px-2.5 py-0.5 text-[9.5px] font-bold text-amber-300 uppercase font-stats">
+              🪙 Equal Bids — Decided by Tie Lottery Draw
+            </span>
           )}
         </div>
 
-        {/* Horizontal card comparison */}
-        <div className="relative z-10 flex h-[200px] w-full items-center justify-center py-2 sm:h-[240px]">
-          {/* RIVAL card (behind, smaller) */}
+        {/* ── 2-COLUMN SHOWDOWN TABLE: [ YOU ] vs [ RIVAL ] ── */}
+        <div className="z-10 grid grid-cols-2 gap-2.5 sm:gap-4 w-full pt-1">
+          {/* ── LEFT COLUMN: YOU ── */}
           <div
-            className={`absolute flex transform flex-col items-center gap-1 transition-all delay-100 duration-700 ${
-              stage === 'show'
-                ? 'translate-x-14 translate-y-0 scale-[0.68] opacity-70 sm:translate-x-16'
-                : 'translate-y-4 scale-[0.6] opacity-0'
-            } z-10`}
+            className={`flex flex-col items-center justify-between rounded-2xl border p-2.5 sm:p-3.5 transition-all ${
+              winnerIsMe
+                ? 'border-lime/50 bg-lime/[0.07] shadow-[0_8px_24px_rgba(142,224,0,0.15),inset_0_1px_0_0_rgba(255,255,255,0.1)]'
+                : 'border-white/12 bg-slate-950/70 shadow-inner'
+            }`}
           >
-            <span className="rounded-full border border-rose-500/20 bg-rose-500/10 px-2 py-0.5 text-[9px] font-black tracking-widest text-rose-400 uppercase shadow-sm font-stats">
-              Rival: {opponentPick?.isSub ? 'Sub' : 'Main'}
-            </span>
-            <div className="relative">
-              {rivalPlayer ? (
-                <>
-                  <PlayerCard player={rivalPlayer} size="sm" />
-                  <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded-full border border-rose-500/30 bg-slate-950 px-2 py-0.5 text-[8px] font-black whitespace-nowrap text-rose-300 uppercase shadow-md font-stats">
-                    ${rivalCost}M
+            {/* Header Tag */}
+            <div className="flex flex-col items-center gap-1 mb-2 w-full text-center">
+              <div className="flex items-center justify-between w-full px-1">
+                <span className="font-display text-xs sm:text-sm font-black tracking-wider text-white uppercase">
+                  YOU
+                </span>
+                {myBid !== undefined && myBid !== null && (
+                  <span className="rounded-full border border-lime/40 bg-lime/15 px-2 py-0.5 text-[9px] font-black text-lime uppercase font-stats">
+                    ${myBid}M BID
+                  </span>
+                )}
+              </div>
+              <div
+                className={`w-full text-center py-0.5 rounded-md text-[9px] font-black uppercase tracking-widest font-stats ${
+                  !myPick?.isSub
+                    ? 'bg-lime text-slate-950 font-bold shadow-sm'
+                    : 'bg-slate-800 text-steel border border-white/10'
+                }`}
+              >
+                {!myPick?.isSub ? '⭐ STAR TARGET' : '🛡️ BACKUP SUB'}
+              </div>
+            </div>
+
+            {/* Card Display */}
+            <div className="py-1 flex justify-center w-full">
+              {yourPlayer ? (
+                <div className="transition-transform hover:scale-105">
+                  <div className="block sm:hidden scale-[0.88] origin-center -my-2">
+                    <PlayerCard player={yourPlayer} size="sm" />
                   </div>
-                </>
+                  <div className="hidden sm:block">
+                    <PlayerCard player={yourPlayer} size="sm" />
+                  </div>
+                </div>
               ) : (
-                <div className="text-steel flex h-32 w-24 items-center justify-center rounded-xl border border-white/5 bg-slate-950 text-[9px]">
-                  —
+                <div className="flex h-36 w-28 items-center justify-center rounded-xl border border-white/10 bg-slate-950 text-xs text-steel">
+                  No Player
                 </div>
               )}
             </div>
+
+            {/* Cost Pill Under Card */}
+            <div className="mt-2 text-center w-full pt-1.5 border-t border-white/[0.08]">
+              <span className="text-[10px] sm:text-[11px] font-bold text-steel font-stats block">
+                Cost: <span className="text-lime font-black">${yourCost}M</span>
+              </span>
+            </div>
           </div>
 
-          {/* YOUR card (front, larger) */}
+          {/* ── RIGHT COLUMN: RIVAL ── */}
           <div
-            className={`absolute flex transform flex-col items-center gap-1 transition-all duration-700 ${
-              stage === 'show'
-                ? '-translate-x-14 translate-y-0 scale-[0.88] opacity-100 sm:-translate-x-16'
-                : 'translate-y-4 scale-[0.8] opacity-0'
-            } z-20`}
+            className={`flex flex-col items-center justify-between rounded-2xl border p-2.5 sm:p-3.5 transition-all ${
+              !winnerIsMe && winningBid > 0
+                ? 'border-rose-500/50 bg-rose-500/[0.07] shadow-[0_8px_24px_rgba(244,63,94,0.15),inset_0_1px_0_0_rgba(255,255,255,0.1)]'
+                : 'border-white/12 bg-slate-950/70 shadow-inner'
+            }`}
           >
-            <span className="text-lime bg-lime/10 border-lime/30 rounded-full border px-2 py-0.5 text-[10px] font-black tracking-widest uppercase shadow-sm font-stats">
-              You: {myPick?.isSub ? 'Sub' : 'Main'}
-            </span>
-            <div className="relative">
-              {yourPlayer ? (
-                <>
-                  <PlayerCard player={yourPlayer} size="sm" />
-                  <div className="bg-lime border-lime absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded-full border px-2.5 py-0.5 text-[9px] font-black whitespace-nowrap text-slate-950 uppercase shadow-lg font-stats">
-                    ${yourCost}M
+            {/* Header Tag */}
+            <div className="flex flex-col items-center gap-1 mb-2 w-full text-center">
+              <div className="flex items-center justify-between w-full px-1">
+                <span className="font-display text-xs sm:text-sm font-black tracking-wider text-steel uppercase">
+                  RIVAL
+                </span>
+                {opponentBid !== undefined && opponentBid !== null && (
+                  <span className="rounded-full border border-rose-500/40 bg-rose-500/15 px-2 py-0.5 text-[9px] font-black text-rose-300 uppercase font-stats">
+                    ${opponentBid}M BID
+                  </span>
+                )}
+              </div>
+              <div
+                className={`w-full text-center py-0.5 rounded-md text-[9px] font-black uppercase tracking-widest font-stats ${
+                  !opponentPick?.isSub
+                    ? 'bg-rose-500 text-white font-bold shadow-sm'
+                    : 'bg-slate-800 text-steel border border-white/10'
+                }`}
+              >
+                {!opponentPick?.isSub ? '⭐ STAR TARGET' : '🛡️ BACKUP SUB'}
+              </div>
+            </div>
+
+            {/* Card Display */}
+            <div className="py-1 flex justify-center w-full">
+              {rivalPlayer ? (
+                <div className="transition-transform hover:scale-105">
+                  <div className="block sm:hidden scale-[0.88] origin-center -my-2">
+                    <PlayerCard player={rivalPlayer} size="sm" />
                   </div>
-                </>
+                  <div className="hidden sm:block">
+                    <PlayerCard player={rivalPlayer} size="sm" />
+                  </div>
+                </div>
               ) : (
-                <div className="text-steel flex h-36 w-28 items-center justify-center rounded-xl border border-white/5 bg-slate-950 text-[9px]">
-                  —
+                <div className="flex h-36 w-28 items-center justify-center rounded-xl border border-white/10 bg-slate-950 text-xs text-steel">
+                  No Player
                 </div>
               )}
+            </div>
+
+            {/* Cost Pill Under Card */}
+            <div className="mt-2 text-center w-full pt-1.5 border-t border-white/[0.08]">
+              <span className="text-[10px] sm:text-[11px] font-bold text-steel font-stats block">
+                Cost: <span className="text-rose-400 font-black">${rivalCost}M</span>
+              </span>
             </div>
           </div>
         </div>
 
-        {/* Countdown */}
-        <div className="z-10 flex w-full max-w-[180px] flex-col items-center gap-1.5">
-          <div className="h-1 w-full overflow-hidden rounded-full border border-white/10 bg-slate-950">
+        {/* ── AUTO DISMISS PROGRESS TIMER ── */}
+        <div className="z-10 flex w-full max-w-[200px] flex-col items-center gap-1 pt-1">
+          <div className="h-1.5 w-full overflow-hidden rounded-full border border-white/10 bg-slate-950 shadow-inner">
             <div
-              className="bg-lime h-full rounded-full transition-[width] duration-100 ease-linear"
+              className="bg-lime h-full rounded-full transition-[width] duration-100 ease-linear shadow-[0_0_8px_rgba(142,224,0,0.6)]"
               style={{ width: `${Math.max(0, 100 - progressPct)}%` }}
             />
           </div>
-          <span className="text-steel/40 text-[7px] font-black tracking-widest uppercase font-stats">
-            Next round
+          <span className="text-steel/60 text-[8px] font-bold tracking-widest uppercase font-stats">
+            Next round starting...
           </span>
         </div>
       </div>

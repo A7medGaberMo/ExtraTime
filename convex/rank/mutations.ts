@@ -1,4 +1,4 @@
-import { mutation, internalMutation } from "../_generated/server";
+import { mutation } from "../_generated/server";
 import { v } from "convex/values";
 import { Id, DataModel } from "../_generated/dataModel";
 import { GenericMutationCtx } from "convex/server";
@@ -439,7 +439,7 @@ export const findOrCreatePublicMatch = mutation({
       .withIndex("by_public_status", (q) =>
         q.eq("isPublic", true).eq("status", "waiting").eq("mode", "duel_public")
       )
-      .collect();
+      .take(50);
 
     // Prevent duplicate queue rooms by same host
     const existingHostGame = openRooms.find(

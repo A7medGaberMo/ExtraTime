@@ -108,16 +108,16 @@ export function RankDuelResult({
           {/* User Card */}
           <div
             className={`
-              p-4 rounded-2xl border flex flex-col items-center justify-between text-center relative
+              p-4 rounded-3xl border flex flex-col items-center justify-between text-center relative backdrop-blur-2xl transition-all
               ${
                 isWinner
-                  ? 'bg-slate-900 border-lime shadow-lg shadow-lime/10'
-                  : 'bg-slate-900/80 border-slate-800'
+                  ? 'bg-slate-900/95 border-lime/50 shadow-[0_16px_36px_rgba(0,0,0,0.65),0_0_24px_rgba(142,224,0,0.2),inset_0_1px_0_0_rgba(255,255,255,0.15)]'
+                  : 'bg-slate-900/85 border-white/[0.12] shadow-[0_12px_28px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.08)]'
               }
             `}
           >
             {isWinner && (
-              <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-lime/20 text-lime text-[9px] font-black border border-lime/40">
+              <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-lime/20 text-lime text-[9px] font-black border border-lime/40 shadow-sm">
                 WINNER
               </div>
             )}
@@ -137,16 +137,16 @@ export function RankDuelResult({
           {/* Opponent Card */}
           <div
             className={`
-              p-4 rounded-2xl border flex flex-col items-center justify-between text-center relative
+              p-4 rounded-3xl border flex flex-col items-center justify-between text-center relative backdrop-blur-2xl transition-all
               ${
                 isDefeat
-                  ? 'bg-slate-900 border-lime shadow-lg shadow-lime/10'
-                  : 'bg-slate-900/80 border-slate-800'
+                  ? 'bg-slate-900/95 border-lime/50 shadow-[0_16px_36px_rgba(0,0,0,0.65),0_0_24px_rgba(142,224,0,0.2),inset_0_1px_0_0_rgba(255,255,255,0.15)]'
+                  : 'bg-slate-900/85 border-white/[0.12] shadow-[0_12px_28px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.08)]'
               }
             `}
           >
             {isDefeat && (
-              <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-lime/20 text-lime text-[9px] font-black border border-lime/40">
+              <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-lime/20 text-lime text-[9px] font-black border border-lime/40 shadow-sm">
                 WINNER
               </div>
             )}
@@ -165,7 +165,7 @@ export function RankDuelResult({
         </div>
       ) : (
         /* Solo Score Display */
-        <div className="p-6 rounded-2xl bg-slate-900/90 border border-white/10 text-center space-y-1">
+        <div className="p-6 rounded-3xl bg-slate-900/90 border border-white/12 shadow-[0_16px_36px_rgba(0,0,0,0.65),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl text-center space-y-1">
           <span className="text-[11px] font-bold text-steel uppercase tracking-wider">
             {lang === 'ar' ? 'إجمالي النقاط' : 'TOTAL SCORE'}
           </span>
@@ -177,8 +177,8 @@ export function RankDuelResult({
       )}
 
       {/* Round-by-Round Breakdown */}
-      <div className="p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-2">
-        <span className="text-[11px] font-black text-steel uppercase tracking-wider block">
+      <div className="p-3.5 rounded-3xl bg-slate-900/85 border border-white/[0.12] shadow-[0_12px_28px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-2xl space-y-2">
+        <span className="text-[11px] font-black text-steel uppercase tracking-wider block px-1">
           {lang === 'ar' ? 'تفاصيل الجولات' : 'ROUNDS'}
         </span>
 
@@ -191,12 +191,12 @@ export function RankDuelResult({
             return (
               <div
                 key={index}
-                className="flex items-center justify-between p-2 rounded-xl bg-slate-950/60 border border-slate-800/80 text-xs font-semibold"
+                className="flex items-center justify-between p-2.5 rounded-2xl bg-slate-950/70 border border-white/[0.08] text-xs font-semibold"
               >
                 <div className="flex items-center gap-2">
                   <span className="text-steel font-stats font-black">R{roundNum}</span>
                   {isPerfect && (
-                    <span className="px-1.5 py-0.5 rounded bg-emerald-950/80 text-emerald-400 text-[10px] font-black border border-emerald-500/40 flex items-center gap-0.5">
+                    <span className="px-2 py-0.5 rounded-full bg-emerald-950/80 text-emerald-400 text-[10px] font-black border border-emerald-500/40 flex items-center gap-0.5 shadow-sm">
                       <AppIcon icon={CheckCircle} size={12} weight="fill" /> 10/10
                     </span>
                   )}

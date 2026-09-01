@@ -11,17 +11,17 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          'bg-lime text-slate-950 shadow-sm hover:brightness-105 active:scale-[0.98]',
+          'bg-lime text-slate-950 shadow-[0_8px_20px_rgba(142,224,0,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] hover:brightness-105 active:scale-[0.97]',
         secondary:
-          'border border-white/10 bg-slate-900/90 text-white shadow-sm hover:border-white/20 hover:bg-slate-850 active:scale-[0.98]',
+          'border border-white/12 bg-slate-900/90 text-white shadow-[0_8px_20px_rgba(0,0,0,0.45),inset_0_1px_0_0_rgba(255,255,255,0.1)] hover:border-white/20 hover:bg-slate-850 active:scale-[0.97]',
         outline:
-          'border border-white/15 bg-transparent text-slate-200 hover:border-lime/50 hover:bg-white/5 active:scale-[0.98]',
+          'border border-white/15 bg-transparent text-slate-200 hover:border-lime/50 hover:bg-white/5 active:scale-[0.97]',
         ghost:
-          'bg-transparent text-steel hover:bg-white/5 hover:text-white active:scale-[0.98]',
+          'bg-transparent text-steel hover:bg-white/5 hover:text-white active:scale-[0.97]',
         danger:
-          'border border-rose-500/40 bg-rose-500/15 text-rose-400 hover:bg-rose-500/25 active:scale-[0.98]',
+          'border border-rose-500/40 bg-rose-500/15 text-rose-400 hover:bg-rose-500/25 active:scale-[0.97]',
         gold:
-          'bg-amber-400 text-slate-950 shadow-sm hover:brightness-105 active:scale-[0.98]',
+          'bg-amber-400 text-slate-950 shadow-[0_8px_20px_rgba(251,191,36,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] hover:brightness-105 active:scale-[0.97]',
       },
       size: {
         sm: 'h-10 px-3.5 text-xs min-h-[40px]',

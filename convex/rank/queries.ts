@@ -204,7 +204,7 @@ export const getPublicQueueSummary = query({
       .withIndex("by_public_status", (q) =>
         q.eq("isPublic", true).eq("status", "waiting").eq("mode", "duel_public")
       )
-      .collect();
+      .take(100);
 
     const freshRooms = waitingRooms.filter((r) => r.createdAt > now - 3 * 60 * 1000);
 
@@ -222,7 +222,7 @@ export const getBankStats = query({
     const questions = await ctx.db
       .query("rankQuestions")
       .withIndex("by_active", (q) => q.eq("isActive", true))
-      .collect();
+      .take(500);
 
     return {
       totalQuestions: questions.length,

@@ -59,6 +59,38 @@ const PACK_CASES: PackDefinition[] = [
 
 const SPOTLIGHT_MAX_COUNT = 5; // 5 on desktop, 3 on mobile
 const AUTO_ROTATE_INTERVAL_SECONDS = 300; // 5 minutes (300 seconds)
+const DAILY_PACK_TOKENS = 5;
+
+function getTodayKey() {
+  return new Date().toISOString().split('T')[0];
+}
+
+function getStoredDailyTokens(): number {
+  if (typeof window === 'undefined') return DAILY_PACK_TOKENS;
+  try {
+    const storedDate = localStorage.getItem('extratime_packTokens_date');
+    const today = getTodayKey();
+    if (storedDate !== today) {
+      localStorage.setItem('extratime_packTokens_date', today);
+      localStorage.setItem('extratime_packTokens_count', String(DAILY_PACK_TOKENS));
+      return DAILY_PACK_TOKENS;
+    }
+    const count = localStorage.getItem('extratime_packTokens_count');
+    return count !== null ? Number(count) : DAILY_PACK_TOKENS;
+  } catch {
+    return DAILY_PACK_TOKENS;
+  }
+}
+
+function setStoredDailyTokens(count: number) {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem('extratime_packTokens_date', getTodayKey());
+    localStorage.setItem('extratime_packTokens_count', String(Math.max(0, count)));
+  } catch {
+    // ignore
+  }
+}
 
 function seededShuffle<T>(items: T[], seed: number): T[] {
   const copy = [...items];
@@ -158,12 +190,13 @@ function pickCardsForPack(pack: PackDefinition, allPlayers: PlayerCardData[]): P
 
 export default function PacksPage() {
   const { t, lang } = useI18n();
-  const rawData = useQuery(api.packs.queries.getPackPools, {});
+  const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 50 });
 
   // Pack Opening State
   const [openingPack, setOpeningPack] = useState<PackDefinition | null>(null);
   const [openedCards, setOpenedCards] = useState<PlayerCardData[]>([]);
   const [inspectedCard, setInspectedCard] = useState<PlayerCardData | null>(null);
+  const [dailyTokens, setDailyTokens] = useState(() => getStoredDailyTokens());
 
   // Vault Spotlight Search & Rotation State
   const [searchQuery, setSearchQuery] = useState('');
@@ -239,6 +272,11 @@ export default function PacksPage() {
     const picked = pickCardsForPack(pack, players);
     setOpenedCards(picked);
     setOpeningPack(pack);
+    if (dailyTokens > 0) {
+      const next = dailyTokens - 1;
+      setDailyTokens(next);
+      setStoredDailyTokens(next);
+    }
   }
 
   // Format countdown mm:ss
@@ -252,22 +290,34 @@ export default function PacksPage() {
       title={t('packs.title')}
       subtitle={t('packs.subtitle')}
       badge={
-        <StatPill
-          variant="lime"
-          size="sm"
-          icon={<AppIcon icon={Cards} size={14} weight="duotone" />}
-          label={lang === 'ar' ? 'حزم وبطاقات اللاعبين' : 'Card Vault & Packs'}
-        />
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <StatPill
+            variant="lime"
+            size="sm"
+            icon={<AppIcon icon={Cards} size={14} weight="duotone" />}
+            label={lang === 'ar' ? 'حزم وبطاقات اللاعبين' : 'Card Vault & Packs'}
+          />
+          <StatPill
+            variant="amber"
+            size="sm"
+            icon={<AppIcon icon={Lightning} size={13} weight="fill" />}
+            label={
+              lang === 'ar'
+                ? `${dailyTokens} توكن فتح يومي`
+                : `${dailyTokens} Daily Pack Tokens`
+            }
+          />
+        </div>
       }
       backUrl="/"
       maxWidth="5xl"
     >
       {/* ── 1. PACK CASES: SLEEK SHOWCASE ───────────────────────────────── */}
-      <section className="space-y-3.5">
+      <section className="space-y-3.5 w-full">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
             <AppIcon icon={Lightning} size={16} weight="fill" className="text-lime" />
-            <h2 className="font-display text-sm font-black tracking-wider text-white uppercase sm:text-base">
+            <h2 className="font-display text-sm font-bold tracking-wider text-white uppercase sm:text-base">
               {t('packs.availablePacks')}
             </h2>
           </div>
@@ -302,30 +352,30 @@ export default function PacksPage() {
             return (
               <div
                 key={pack.id}
-                className={`relative flex flex-col justify-between gap-3.5 rounded-3xl border p-4.5 backdrop-blur-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
+                className={`relative flex flex-col justify-between gap-4 rounded-3xl border p-5 backdrop-blur-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
                   isFirst
-                    ? 'border-amber-400/30 bg-gradient-to-b from-amber-500/10 via-slate-950/90 to-slate-950/95 shadow-[0_16px_36px_rgba(0,0,0,0.7)] hover:border-amber-400/50'
+                    ? 'border-amber-400/35 bg-gradient-to-b from-amber-500/12 via-slate-950/90 to-slate-950/95 shadow-[0_16px_36px_rgba(0,0,0,0.7),inset_0_1px_0_0_rgba(251,191,36,0.2)] hover:border-amber-400/60'
                     : isSecond
-                      ? 'border-cyan-400/25 bg-gradient-to-b from-cyan-500/10 via-slate-950/90 to-slate-950/95 shadow-[0_14px_32px_rgba(0,0,0,0.6)] hover:border-cyan-400/40'
-                      : 'border-purple-400/25 bg-gradient-to-b from-purple-500/10 via-slate-950/90 to-slate-950/95 hover:border-purple-400/40 shadow-[0_12px_28px_rgba(0,0,0,0.5)]'
+                      ? 'border-cyan-400/30 bg-gradient-to-b from-cyan-500/12 via-slate-950/90 to-slate-950/95 shadow-[0_14px_32px_rgba(0,0,0,0.6),inset_0_1px_0_0_rgba(34,211,238,0.2)] hover:border-cyan-400/50'
+                      : 'border-purple-400/30 bg-gradient-to-b from-purple-500/12 via-slate-950/90 to-slate-950/95 shadow-[0_12px_28px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(192,132,252,0.2)] hover:border-purple-400/50'
                 }`}
               >
                 <div className="space-y-1.5">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-display text-base font-black tracking-tight text-white uppercase">
+                    <h3 className="font-display text-base font-bold tracking-tight text-white uppercase">
                       {displayName}
                     </h3>
-                    <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white/5 border border-white/10">
+                    <div className="flex h-7 w-7 items-center justify-center rounded-full bg-white/[0.06] border border-white/10 shadow-inner">
                       <AppIcon
                         icon={isFirst ? Crown : isSecond ? Trophy : Flame}
-                        size={12}
+                        size={14}
                         weight="fill"
                         className={isFirst ? 'text-amber-400' : isSecond ? 'text-cyan-300' : 'text-purple-400'}
                       />
                     </div>
                   </div>
 
-                  <p className="text-steel text-xs font-medium leading-snug">
+                  <p className="text-steel text-xs font-medium leading-relaxed">
                     {displaySubtitle}
                   </p>
                 </div>
@@ -347,13 +397,13 @@ export default function PacksPage() {
       </section>
 
       {/* ── 2. CARD VAULT SPOTLIGHT (3 ON MOBILE, 5 ON DESKTOP & INSTANT SEARCH) ── */}
-      <section className="space-y-4 pt-4">
+      <section className="space-y-4 pt-4 w-full">
         {/* Dynamic Status & Search Header */}
         <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1">
           <div className="flex items-center gap-2.5">
             <AppIcon icon={Trophy} size={18} weight="duotone" className="text-lime" />
             <div>
-              <h3 className="font-display text-sm font-black tracking-tight text-white uppercase sm:text-base">
+              <h3 className="font-display text-sm font-bold tracking-tight text-white uppercase sm:text-base">
                 {t('packs.vaultSpotlight')}
               </h3>
               <div className="flex items-center gap-1.5 text-[11px] text-steel font-stats">
@@ -405,7 +455,7 @@ export default function PacksPage() {
         {/* ── Auto-Rotation Progress Bar ── */}
         <div className="relative w-full h-1.5 overflow-hidden rounded-full bg-white/[0.06] border border-white/[0.08]">
           <div
-            className="h-full bg-gradient-to-r from-lime/80 via-lime to-emerald-400 transition-all duration-1000 ease-linear rounded-full shadow-[0_0_8px_rgba(149,232,16,0.5)]"
+            className="h-full bg-gradient-to-r from-lime/80 via-lime to-emerald-400 transition-all duration-1000 ease-linear rounded-full shadow-[0_0_8px_rgba(142,224,0,0.5)]"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
@@ -451,7 +501,7 @@ export default function PacksPage() {
           </div>
         ) : (
           <Panel variant="subtle" className="p-8 text-center">
-            <p className="text-steel text-xs font-black tracking-widest uppercase">
+            <p className="text-steel text-xs font-bold tracking-widest uppercase font-stats">
               {rawData === undefined ? t('packs.loadingCards') : t('packs.noCards')}
             </p>
           </Panel>

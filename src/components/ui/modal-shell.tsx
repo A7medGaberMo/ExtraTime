@@ -49,12 +49,12 @@ export function ModalShell({
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/85 p-3.5 backdrop-blur-md animate-fade-in"
+      className="fixed inset-0 z-[75] flex items-center justify-center bg-slate-950/85 p-3.5 backdrop-blur-2xl animate-fade-in select-none"
       onClick={onClose}
     >
       <div
         className={cn(
-          'relative w-full overflow-hidden rounded-3xl border border-white/20 bg-slate-900/95 p-5 sm:p-7 shadow-2xl backdrop-blur-2xl animate-scale-in',
+          'relative w-full overflow-hidden rounded-3xl border border-white/18 bg-slate-900/95 p-5 sm:p-7 shadow-[0_24px_60px_rgba(0,0,0,0.85),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl animate-scale-in',
           maxWidthClass,
           className,
         )}
@@ -64,10 +64,10 @@ export function ModalShell({
           <button
             type="button"
             onClick={onClose}
-            className="absolute top-4 end-4 z-10 flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-950/80 text-steel transition-all hover:border-lime/40 hover:text-white cursor-pointer"
+            className="btn-haptic absolute top-4 end-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/12 bg-slate-950/85 text-steel transition-all hover:border-lime/40 hover:text-white cursor-pointer"
             aria-label="Close"
           >
-            <X size={18} weight="bold" />
+            <X size={16} weight="bold" />
           </button>
         )}
 

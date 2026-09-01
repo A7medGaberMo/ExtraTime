@@ -39,7 +39,7 @@ export function SegmentedControl<T extends string | number>({
   return (
     <div
       className={cn(
-        'grid gap-1 rounded-2xl border border-white/8 bg-slate-950/80 p-1 backdrop-blur-md',
+        'grid gap-1 rounded-2xl border border-white/10 bg-slate-950/80 p-1 backdrop-blur-xl shadow-inner',
         colsClass,
         className,
       )}
@@ -57,7 +57,7 @@ export function SegmentedControl<T extends string | number>({
               size === 'md' && 'p-1.5 sm:p-2.5 text-xs sm:text-sm',
               size === 'lg' && 'p-2 sm:p-3 text-sm sm:text-base font-bold',
               selected
-                ? 'border-lime/40 bg-lime text-slate-950 font-bold shadow-sm'
+                ? 'border-lime/40 bg-lime text-slate-950 font-bold shadow-[0_4px_12px_rgba(142,224,0,0.25),inset_0_1px_0_0_rgba(255,255,255,0.3)]'
                 : 'border-transparent text-steel hover:bg-white/5 hover:text-white',
             )}
           >

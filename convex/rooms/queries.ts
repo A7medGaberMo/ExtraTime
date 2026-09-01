@@ -29,7 +29,7 @@ export const getPublicQueueSummary = query({
     const rooms = await ctx.db
       .query('rooms')
       .withIndex('by_public_status', (q) => q.eq('isPublic', true).eq('status', 'waiting'))
-      .collect();
+      .take(100);
 
     const freshRooms = rooms.filter((room) => room.createdAt > now - 3 * 60 * 1000);
     const queues: PublicQueueSummary = {
@@ -124,15 +124,15 @@ export const getUserActiveMatch = query({
       ctx.db
         .query('rankGames')
         .withIndex('by_status', (q) => q.eq('status', 'round_active'))
-        .take(25),
+        .take(10),
       ctx.db
         .query('rankGames')
         .withIndex('by_status', (q) => q.eq('status', 'round_reveal'))
-        .take(25),
+        .take(10),
       ctx.db
         .query('rankGames')
         .withIndex('by_status', (q) => q.eq('status', 'waiting'))
-        .take(25),
+        .take(10),
     ]);
 
     const candidateRankGames = [...roundActiveGames, ...roundRevealGames, ...waitingGames];

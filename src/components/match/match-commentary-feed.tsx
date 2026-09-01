@@ -1,36 +1,15 @@
 'use client';
 
 import type { MatchSimulationResult } from '@/core/simulation/simulation.interface';
-import {
-  Flag,
-  SoccerBall,
-  Shield,
-  Crosshair,
-  Warning,
-  Octagon,
-  Pause,
-  CheckCircle,
-} from '@phosphor-icons/react';
+import { SoccerBall, ShieldCheck } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 
 export interface MatchCommentaryFeedProps {
-  simulation: Pick<MatchSimulationResult, 'timeline'>;
+  simulation: Pick<MatchSimulationResult, 'timeline' | 'score' | 'isShootout' | 'shootoutScore'>;
   hostName: string;
   guestName: string;
   revealedCount?: number;
 }
-
-const EVENT_META: Record<string, { icon: typeof Flag; className: string }> = {
-  KICKOFF: { icon: Flag, className: 'text-lime' },
-  GOAL: { icon: SoccerBall, className: 'text-lime' },
-  SAVE: { icon: Shield, className: 'text-sky-400' },
-  CROSSBAR: { icon: Crosshair, className: 'text-amber-300' },
-  YELLOW_CARD: { icon: Warning, className: 'text-amber-400' },
-  RED_CARD: { icon: Octagon, className: 'text-rose-500' },
-  HALF_TIME: { icon: Pause, className: 'text-steel' },
-  FULL_TIME: { icon: CheckCircle, className: 'text-steel' },
-  PENALTY_SHOOTOUT: { icon: Crosshair, className: 'text-amber-300' },
-};
 
 export function MatchCommentaryFeed({
   simulation,
@@ -38,74 +17,97 @@ export function MatchCommentaryFeed({
   guestName,
   revealedCount = Infinity,
 }: MatchCommentaryFeedProps) {
-  const events = simulation.timeline.slice(0, revealedCount);
+  // Filter timeline strictly to goals and decisive penalties only
+  const allGoalEvents = simulation.timeline.filter(
+    (e) => e.type === 'GOAL' || e.type === 'PENALTY_SHOOTOUT',
+  );
+  const events = allGoalEvents.slice(0, revealedCount);
   const teamLabel = (team: 'host' | 'guest') => (team === 'host' ? hostName : guestName);
 
   return (
-    <div className="bg-slate-950/85 rounded-2xl border border-white/10 p-4 shadow-xl backdrop-blur-xl select-none">
-      <div className="mb-3 flex items-center justify-between">
-        <span className="text-steel text-[10px] font-black tracking-widest uppercase">
-          Commentary Ticker
-        </span>
-        <span className="text-steel/50 text-[9px] font-bold tracking-widest uppercase font-stats">
-          {simulation.timeline.length} events
+    <div className="bg-slate-950/85 rounded-2xl border border-white/10 p-3.5 sm:p-4 shadow-xl backdrop-blur-xl select-none">
+      <div className="mb-2.5 flex items-center justify-between border-b border-white/[0.08] pb-2">
+        <div className="flex items-center gap-1.5">
+          <AppIcon icon={SoccerBall} size={15} weight="duotone" className="text-lime" />
+          <span className="text-white text-[11px] font-black tracking-widest uppercase font-display">
+            Match Goals Timeline
+          </span>
+        </div>
+        <span className="text-steel/60 text-[9px] font-bold tracking-widest uppercase font-stats">
+          {events.length} {events.length === 1 ? 'Goal' : 'Goals'}
         </span>
       </div>
 
-      <div className="relative max-h-[340px] space-y-1 overflow-y-auto pe-1">
-        {events.map((event) => {
-          const meta = EVENT_META[event.type] ?? { icon: SoccerBall, className: 'text-steel' };
-          const IconComp = meta.icon;
-          const isGoal = event.type === 'GOAL';
-          return (
-            <div
-              key={event.id}
-              className={`flex items-start gap-2.5 rounded-xl px-2.5 py-1.5 text-xs transition-all duration-500 ${
-                isGoal
-                  ? event.team === 'host'
-                    ? 'bg-lime/5'
-                    : 'bg-rose-500/5'
-                  : 'hover:bg-white/[0.03]'
-              }`}
-            >
-              <span
-                className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border ${
-                  isGoal
-                    ? event.team === 'host'
-                      ? 'border-lime/30 bg-lime/10'
-                      : 'border-rose-500/30 bg-rose-500/10'
-                    : 'border-white/10 bg-slate-900'
+      {events.length === 0 ? (
+        <div className="py-4 text-center">
+          <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-slate-900/60 px-3 py-1.5 text-xs text-steel">
+            <AppIcon icon={ShieldCheck} size={16} weight="duotone" className="text-lime" />
+            <span className="font-stats text-[10px] font-bold uppercase tracking-wider">
+              Defensive Masterclass · Clean Sheet Duel
+            </span>
+          </div>
+        </div>
+      ) : (
+        <div className="space-y-2 py-1">
+          {events.map((event) => {
+            const isHost = event.team === 'host';
+            const scorerName = event.player?.name || 'Scorer';
+            const assistName = event.assistPlayer?.name;
+
+            return (
+              <div
+                key={event.id}
+                className={`flex items-center gap-2 rounded-xl p-2 transition-all ${
+                  isHost
+                    ? 'border border-lime/30 bg-lime/[0.06] justify-start'
+                    : 'border border-rose-500/30 bg-rose-500/[0.06] justify-end flex-row-reverse'
                 }`}
               >
-                <AppIcon
-                  icon={IconComp}
-                  size={14}
-                  weight="duotone"
-                  className={isGoal ? (event.team === 'host' ? 'text-lime' : 'text-rose-400') : meta.className}
-                />
-              </span>
-              <div className="min-w-0 flex-1">
-                <div className="flex items-baseline gap-1.5">
-                  <span className="font-stats text-steel shrink-0 text-[11px] font-black">
-                    {event.minute}&apos;
-                  </span>
-                  <span
-                    className={`shrink-0 text-[9px] font-black tracking-wider uppercase ${isGoal ? (event.team === 'host' ? 'text-lime' : 'text-rose-400') : 'text-steel/60'}`}
-                  >
-                    {isGoal ? `⚽ ${teamLabel(event.team)}` : event.type.replace('_', ' ')}
-                  </span>
-                  <span className="font-stats text-steel/70 ms-auto shrink-0 text-[10px] font-black">
-                    {event.scoreSnapshot.host}-{event.scoreSnapshot.guest}
-                  </span>
+                {/* Minute Badge */}
+                <span
+                  className={`flex h-6 min-w-[28px] items-center justify-center rounded-lg px-1.5 text-[10px] font-black font-stats ${
+                    isHost ? 'bg-lime text-slate-950 shadow-sm' : 'bg-rose-500 text-white shadow-sm'
+                  }`}
+                >
+                  {event.minute}&apos;
+                </span>
+
+                {/* Scorer & Team Info */}
+                <div className={`flex flex-col min-w-0 ${isHost ? 'text-start' : 'text-end'}`}>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-xs font-black text-white truncate max-w-[140px] sm:max-w-[180px]">
+                      ⚽ {scorerName}
+                    </span>
+                    <span
+                      className={`text-[8.5px] font-black tracking-wider uppercase font-stats ${
+                        isHost ? 'text-lime' : 'text-rose-300'
+                      }`}
+                    >
+                      ({teamLabel(event.team)})
+                    </span>
+                  </div>
+                  {assistName && (
+                    <span className="text-[9.5px] text-steel font-medium truncate">
+                      Assist: {assistName}
+                    </span>
+                  )}
                 </div>
-                <p className="mt-0.5 text-[11px] leading-snug font-medium text-white/85">
-                  {event.description}
-                </p>
+
+                {/* Score Snapshot Pill */}
+                <div
+                  className={`ms-auto shrink-0 rounded-lg border px-2 py-0.5 text-[10px] font-black font-stats ${
+                    isHost
+                      ? 'border-lime/30 bg-slate-950 text-lime'
+                      : 'border-rose-500/30 bg-slate-950 text-rose-400'
+                  }`}
+                >
+                  {event.scoreSnapshot.host} - {event.scoreSnapshot.guest}
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

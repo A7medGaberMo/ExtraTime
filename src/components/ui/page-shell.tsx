@@ -57,7 +57,7 @@ export function PageShell({
             <div className="w-full flex justify-start">
               <Link
                 href={backUrl}
-                className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1 text-xs font-semibold text-steel hover:border-lime/40 hover:text-white transition-all mb-1"
+                className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-slate-900/85 px-3.5 py-1 text-xs font-semibold text-steel shadow-[0_4px_12px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl hover:border-lime/40 hover:text-white transition-all mb-1 cursor-pointer"
               >
                 <AppIcon icon={ArrowLeft} size={14} weight="bold" />
                 <span>{t('common.back')}</span>

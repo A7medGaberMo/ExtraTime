@@ -84,27 +84,6 @@ export function PlayerCard({
   size = 'md',
   ...props
 }: PlayerCardProps) {
-  const [tilt, setTilt] = useState({ x: 0, y: 0 });
-  const [glarePos, setGlarePos] = useState({ x: 50, y: 50 });
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
-    setTilt({ x: (y / rect.height) * -10, y: (x / rect.width) * 10 });
-    setGlarePos({
-      x: Math.round(((e.clientX - rect.left) / rect.width) * 100),
-      y: Math.round(((e.clientY - rect.top) / rect.height) * 100),
-    });
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-    setTilt({ x: 0, y: 0 });
-    setGlarePos({ x: 50, y: 50 });
-  };
-
   const tier = (player?.tier as Tier) || 'SILVER';
   const tierStyle = getTierStyle(tier);
   const isLightCard = tier === 'ICON';
@@ -115,14 +94,6 @@ export function PlayerCard({
   const rating = getEffectiveRating(player);
   const displayName = formatDisplayName(playerName);
   const mainPosition = formatMainPosition(player?.position || 'ST');
-
-  const cardTransform = isHovered
-    ? `perspective(1000px) translateY(-8px) scale(1.03) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`
-    : `perspective(1000px) translateY(0px) scale(1) rotateX(0deg) rotateY(0deg)`;
-
-  const cardFilter = isHovered
-    ? `drop-shadow(0 22px 36px rgba(0,0,0,0.85)) drop-shadow(0 0 24px ${tierStyle.glow})`
-    : `drop-shadow(0 12px 24px rgba(0,0,0,0.75)) drop-shadow(0 0 14px ${tierStyle.glow})`;
 
   // Scaled dimensions with Apple subpixel balance
   const scaleMap = {
@@ -200,32 +171,25 @@ export function PlayerCard({
   const chamferClip = 'polygon(8% 0%, 92% 0%, 100% 5%, 100% 95%, 92% 100%, 8% 100%, 0% 95%, 0% 5%)';
 
   return (
-    <div className="group flex flex-col items-center" dir="ltr">
+    <div className="flex flex-col items-center" dir="ltr">
       {/* Outer Card Shell with Chamfered Metallic Frame */}
       <div
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
         tabIndex={props.onClick ? 0 : undefined}
         role={props.onClick ? 'button' : undefined}
         onKeyDown={(e) => {
           if ((e.key === 'Enter' || e.key === ' ') && props.onClick) {
             e.preventDefault();
-            (props.onClick as any)(e);
+            props.onClick(e as unknown as React.MouseEvent<HTMLDivElement>);
           }
         }}
         className={cn(
-          'relative flex cursor-pointer flex-col items-center text-left select-none outline-none focus-visible:ring-2 focus-visible:ring-lime/70',
+          'relative flex flex-col items-center text-left select-none outline-none focus-visible:ring-2 focus-visible:ring-lime/70',
+          props.onClick ? 'cursor-pointer' : '',
           scaleMap.card,
           className,
         )}
         style={{
-          transform: cardTransform,
-          filter: cardFilter,
-          transition: isHovered
-            ? 'transform 0.12s ease-out, filter 0.3s ease-out'
-            : 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.45s ease-out',
-          willChange: 'transform, filter',
+          filter: `drop-shadow(0 10px 20px rgba(0,0,0,0.75)) drop-shadow(0 0 12px ${tierStyle.glow})`,
         }}
         {...props}
       >
@@ -266,20 +230,6 @@ export function PlayerCard({
               style={{ clipPath: chamferClip }}
             />
 
-            {/* Layer 5: Dynamic Specular Sheen on Hover */}
-            {isHovered && (
-              <div
-                className="pointer-events-none absolute inset-0 z-30 transition-opacity duration-300"
-                style={{
-                  background: `radial-gradient(circle at ${glarePos.x}% ${glarePos.y}%, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0.06) 35%, transparent 65%)`,
-                  mixBlendMode: 'overlay',
-                }}
-              />
-            )}
-
-            {/* Layer 6: Light Sweep on Hover */}
-            <div className="pointer-events-none absolute -inset-full top-0 z-30 block h-full w-1/2 -translate-x-[120%] -skew-x-[20deg] bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-[320%]" />
-
             {/* 1. TOP HEADER: OVERALL RATING (LEFT) & ET LOGO (RIGHT) */}
             <div className={cn('relative z-20 flex w-full items-start justify-between', scaleMap.header)}>
               {/* TOP LEFT: Overall Rating */}
@@ -304,7 +254,7 @@ export function PlayerCard({
               <div className="flex shrink-0 flex-col items-center">
                 <div
                   className={cn(
-                    'flex items-center justify-center rounded-full border shadow-md backdrop-blur-md transition-transform duration-300 group-hover:scale-105',
+                    'flex items-center justify-center rounded-full border shadow-md backdrop-blur-md',
                     scaleMap.etBadge,
                   )}
                   style={{
@@ -327,12 +277,12 @@ export function PlayerCard({
             <div className="pointer-events-none relative z-10 flex w-full shrink-0 items-center justify-center">
               <div
                 className={cn(
-                  'relative flex items-center justify-center rounded-full shadow-xl transition-transform duration-300 group-hover:scale-105',
+                  'relative flex items-center justify-center rounded-full shadow-xl',
                   scaleMap.avatarRing,
                 )}
                 style={{
                   background: `conic-gradient(from 180deg, ${tierStyle.highlight}, ${tierStyle.accent}, ${tierStyle.primary}, ${tierStyle.highlight})`,
-                  boxShadow: `0 0 24px ${tierStyle.glow}, 0 0 42px rgba(0,0,0,0.55)`,
+                  boxShadow: `0 0 20px ${tierStyle.glow}, 0 0 36px rgba(0,0,0,0.55)`,
                 }}
               >
                 <div className="relative h-full w-full overflow-hidden rounded-full border border-white/25 bg-slate-950/70">
@@ -342,8 +292,6 @@ export function PlayerCard({
                     alt={player?.name}
                     name={player?.name}
                     variant={silhouetteVariant}
-                    imgClassName="transition-transform duration-300 group-hover:scale-105"
-                    silhouetteClassName="transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </div>
@@ -358,7 +306,7 @@ export function PlayerCard({
                 )}
                 style={{
                   borderColor: `${tierStyle.accent}55`,
-                  boxShadow: `0 0 12px ${tierStyle.glow}`,
+                  boxShadow: `0 0 10px ${tierStyle.glow}`,
                 }}
               >
                 {/* NATION FLAG */}
@@ -376,7 +324,7 @@ export function PlayerCard({
                 {/* POSITION BADGE */}
                 <span
                   className={cn(
-                    'flex shrink-0 items-center justify-center rounded border border-white/15 bg-white/10 leading-none text-white uppercase',
+                    'flex shrink-0 items-center justify-center rounded border border-white/15 bg-white/10 leading-none text-white uppercase font-stats',
                     scaleMap.posBadge,
                   )}
                 >
@@ -420,7 +368,7 @@ export function PlayerCard({
 
                 <h3
                   className={cn(
-                    'font-display relative z-10 w-full truncate px-1 text-center font-black uppercase',
+                    'font-display relative z-10 w-full truncate px-1 text-center font-black uppercase tracking-wider',
                     getDynamicNameSizeClass(displayName, size),
                   )}
                   style={{
@@ -438,7 +386,7 @@ export function PlayerCard({
               <div className={cn('flex w-full items-center justify-center', scaleMap.tierContainer)}>
                 <div
                   className={cn(
-                    'font-card relative inline-flex max-w-full items-center justify-center rounded-full border font-black uppercase transition-all',
+                    'font-card relative inline-flex max-w-full items-center justify-center rounded-full border font-black uppercase',
                     scaleMap.tierBadge,
                   )}
                   style={{
