@@ -14,6 +14,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10152.png",
       "kitNumber": 12
@@ -25,6 +26,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/80367.png",
       "kitNumber": 17
@@ -36,6 +38,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668274.png",
       "kitNumber": 62
@@ -47,6 +50,7 @@
       "club": "Botafogo",
       "nation": "Ecuador",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/410134.png",
       "kitNumber": null
@@ -58,6 +62,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/378.png",
       "kitNumber": 13
@@ -69,6 +74,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8661.png",
       "kitNumber": 2
@@ -80,6 +86,7 @@
       "club": "Botafogo",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/297687.png",
       "kitNumber": 4
@@ -91,6 +98,7 @@
       "club": "Botafogo",
       "nation": "Venezuela",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2440.png",
       "kitNumber": 5
@@ -102,6 +110,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/652.png",
       "kitNumber": 21
@@ -113,6 +122,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/283837.png",
       "kitNumber": 27
@@ -124,6 +134,7 @@
       "club": "Botafogo",
       "nation": "Paraguay",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/265954.png",
       "kitNumber": 33
@@ -135,6 +146,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10016.png",
       "kitNumber": 29
@@ -146,6 +158,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/426627.png",
       "kitNumber": 3
@@ -157,6 +170,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/454519.png",
       "kitNumber": 26
@@ -168,6 +182,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/561346.png",
       "kitNumber": 6
@@ -179,6 +194,7 @@
       "club": "Botafogo",
       "nation": "Mexico",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/414428.png",
       "kitNumber": null
@@ -190,6 +206,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/613321.png",
       "kitNumber": 42
@@ -201,6 +218,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544705.png",
       "kitNumber": 16
@@ -212,6 +230,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544707.png",
       "kitNumber": 34
@@ -223,6 +242,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668275.png",
       "kitNumber": 63
@@ -234,6 +254,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326.png",
       "kitNumber": 25
@@ -245,6 +266,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/275170.png",
       "kitNumber": 8
@@ -256,6 +278,7 @@
       "club": "Botafogo",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51581.png",
       "kitNumber": 23
@@ -267,6 +290,7 @@
       "club": "Botafogo",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237186.png",
       "kitNumber": null
@@ -278,6 +302,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10387.png",
       "kitNumber": 88
@@ -289,6 +314,7 @@
       "club": "Botafogo",
       "nation": "Angola",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237165.png",
       "kitNumber": 91
@@ -300,6 +326,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/505409.png",
       "kitNumber": 75
@@ -311,6 +338,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609493.png",
       "kitNumber": 18
@@ -322,6 +350,7 @@
       "club": "Botafogo",
       "nation": "Argentina",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/410843.png",
       "kitNumber": 14
@@ -333,6 +362,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403670.png",
       "kitNumber": null
@@ -344,6 +374,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/506276.png",
       "kitNumber": 10
@@ -355,6 +386,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668276.png",
       "kitNumber": 38
@@ -366,6 +398,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609481.png",
       "kitNumber": 20
@@ -377,6 +410,7 @@
       "club": "Botafogo",
       "nation": "Argentina",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/455130.png",
       "kitNumber": null
@@ -388,6 +422,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/661112.png",
       "kitNumber": 19
@@ -399,6 +434,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/463987.png",
       "kitNumber": 15
@@ -410,6 +446,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10432.png",
       "kitNumber": 7
@@ -421,6 +458,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9938.png",
       "kitNumber": null
@@ -432,6 +470,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/305821.png",
       "kitNumber": 11
@@ -443,6 +482,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/553.png",
       "kitNumber": null
@@ -454,6 +494,7 @@
       "club": "Botafogo",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/308798.png",
       "kitNumber": 77
@@ -465,6 +506,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/614621.png",
       "kitNumber": 9
@@ -476,6 +518,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544681.png",
       "kitNumber": 37
@@ -487,6 +530,7 @@
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413140.png",
       "kitNumber": 59

@@ -19,6 +19,7 @@ import {
   Cards,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
+import { ETLogo } from '@/components/shared/et-logo';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { useGuestSession } from '@/hooks/use-guest-session';
@@ -145,14 +146,11 @@ export function Header() {
                 href="/"
                 className="flex items-center gap-1.5 sm:gap-2 group transition-opacity hover:opacity-90 shrink-0"
               >
-                <div className="relative flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40 group-hover:scale-105 transition-transform">
-                  <Image
-                    src="/ETIcon.png"
-                    alt="ExtraTime Icon"
-                    fill
-                    className="object-contain p-0.5"
-                    sizes="20px"
-                    priority
+                <div className="relative flex h-5.5 w-5.5 sm:h-6 sm:w-6 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40 bg-slate-900/90 shadow-[0_0_10px_rgba(149,232,16,0.3)] group-hover:scale-105 transition-transform p-0.5">
+                  <ETLogo
+                    variant="card-badge"
+                    size={16}
+                    className="drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]"
                   />
                 </div>
                 <span className="font-stats font-bold text-xs sm:text-[13px] text-white tracking-wider">
@@ -263,13 +261,11 @@ export function Header() {
                   onClick={() => setIsOpen(false)}
                   className="flex items-center gap-2 group"
                 >
-                  <div className="relative flex h-6 w-6 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40">
-                    <Image
-                      src="/ETIcon.png"
-                      alt="ExtraTime Icon"
-                      fill
-                      className="object-contain p-0.5"
-                      sizes="24px"
+                  <div className="relative flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40 bg-slate-900/90 shadow-[0_0_12px_rgba(149,232,16,0.35)] p-0.5 group-hover:scale-105 transition-transform">
+                    <ETLogo
+                      variant="card-badge"
+                      size={18}
+                      className="drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]"
                     />
                   </div>
                   <span className="font-stats font-bold text-[13px] text-white tracking-wider">

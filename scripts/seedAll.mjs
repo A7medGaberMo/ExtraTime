@@ -5,14 +5,14 @@ import dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.local' });
 
-const url = process.env.NEXT_PUBLIC_CONVEX_URL;
-if (!url) {
-  console.error('❌ Missing NEXT_PUBLIC_CONVEX_URL in .env.local');
-  process.exit(1);
-}
+const isProd = process.argv.includes('--prod');
+const shouldClean = process.argv.includes('--clean') || process.argv.includes('--fresh') || true;
+const prodUrl = 'https://wary-pig-127.convex.cloud';
+const devUrl = process.env.NEXT_PUBLIC_CONVEX_URL || 'https://shocking-woodpecker-506.convex.cloud';
+const url = isProd ? prodUrl : devUrl;
 
 const client = new ConvexHttpClient(url);
-console.log('⚡ Convex Database Sync — Players & Tiers Only');
+console.log(`⚡ Convex Database Complete Sync [${isProd ? 'PRODUCTION' : 'DEVELOPMENT'}]`);
 console.log('🔗 Connecting to Convex at:', url);
 
 function getAllFiles(dirPath, arrayOfFiles = []) {
@@ -29,8 +29,31 @@ function getAllFiles(dirPath, arrayOfFiles = []) {
   return arrayOfFiles;
 }
 
-async function seedPlayersAndTiers() {
+async function cleanTable(tableName) {
+  process.stdout.write(`🧹 Cleaning table '${tableName}'... `);
+  let totalDeleted = 0;
+  while (true) {
+    const res = await client.mutation('seed/seedData:clearTableBatch', {
+      tableName,
+      batchSize: 300,
+    });
+    totalDeleted += res.deleted;
+    if (!res.hasMore || res.deleted === 0) break;
+  }
+  console.log(`deleted ${totalDeleted} records.`);
+}
+
+async function seedAllToConvex() {
   const startTime = Date.now();
+
+  // 1. Truncate all tables to guarantee fresh 1:1 clean parity
+  if (shouldClean) {
+    console.log('\n🧹 Truncating players, clubs, and nations for fresh 1:1 parity...');
+    await cleanTable('players');
+    await cleanTable('clubs');
+    await cleanTable('nations');
+  }
+
   const activeFiles = getAllFiles('data/players/active');
   const legendFiles = getAllFiles('data/players/legends');
 
@@ -41,7 +64,7 @@ async function seedPlayersAndTiers() {
   const allPlayers = [];
   const seenApiIds = new Set();
 
-  // 1. Active Squads
+  // 2. Active Squads (140 files)
   for (const file of activeFiles) {
     try {
       const content = JSON.parse(fs.readFileSync(file, 'utf-8'));
@@ -68,6 +91,7 @@ async function seedPlayersAndTiers() {
             typeof p.kitNumber === 'number' && Number.isInteger(p.kitNumber)
               ? p.kitNumber
               : undefined,
+          rating: typeof p.rating === 'number' ? p.rating : undefined,
           clubLogo: club.logo || undefined,
           clubApiId: club.apiId ? String(club.apiId) : undefined,
         });
@@ -77,8 +101,10 @@ async function seedPlayersAndTiers() {
     }
   }
 
-  // 2. Legends (Icons & Heroes)
+  // 3. Legends (Icons & Heroes)
   for (const file of legendFiles) {
+    if (path.basename(file) === 'legends.json') continue;
+
     try {
       const content = JSON.parse(fs.readFileSync(file, 'utf-8'));
       const list = Array.isArray(content) ? content : content.players || [];
@@ -103,6 +129,7 @@ async function seedPlayersAndTiers() {
             typeof p.kitNumber === 'number' && Number.isInteger(p.kitNumber)
               ? p.kitNumber
               : undefined,
+          rating: typeof p.rating === 'number' ? p.rating : undefined,
           clubLogo: p.clubLogo || undefined,
           clubApiId: undefined,
         });
@@ -112,14 +139,16 @@ async function seedPlayersAndTiers() {
     }
   }
 
-  console.log(`✅ Loaded ${allPlayers.length} total players (tiers & metadata).`);
-  console.log('🚀 Syncing batches to Convex Cloud...');
+  console.log(`✅ Loaded ${allPlayers.length} total players with ratings & tiers.`);
+  console.log('🚀 Pushing batches to Convex DB...');
 
-  const BATCH_SIZE = 100;
+  const BATCH_SIZE = 80;
+  let successCount = 0;
   for (let i = 0; i < allPlayers.length; i += BATCH_SIZE) {
     const batch = allPlayers.slice(i, i + BATCH_SIZE);
     try {
-      await client.mutation('seed/seedData:upsertPlayersBatch', { players: batch });
+      const res = await client.mutation('seed/seedData:upsertPlayersBatch', { players: batch });
+      successCount += res?.count ?? batch.length;
       process.stdout.write(
         `\r[${Math.min(i + BATCH_SIZE, allPlayers.length)} / ${allPlayers.length}] players synced...`,
       );
@@ -129,15 +158,24 @@ async function seedPlayersAndTiers() {
   }
 
   console.log(
-    `\n🎉 Player tiers and squad edits synced in ${((Date.now() - startTime) / 1000).toFixed(1)}s!`,
+    `\n🎉 All players, tiers & calibrated ratings synced in ${((Date.now() - startTime) / 1000).toFixed(1)}s!`,
   );
+
+  // 4. Seed verified Rank Question Bank
+  console.log('\n🧩 Seeding Rank Question Bank...');
+  try {
+    const qRes = await client.mutation('rank/mutations:seedQuestionBank', {});
+    console.log(`✅ Synced ${qRes.total} rank questions (Inserted: ${qRes.inserted}, Updated: ${qRes.updated}, Cleaned: ${qRes.deleted}).`);
+  } catch (err) {
+    console.error('❌ Error syncing rank questions:', err.message);
+  }
 
   try {
     const stats = await client.query('players/queries:getStats', {});
-    console.log('📊 Updated DB Stats:', stats);
+    console.log('\n📊 Updated Convex DB Stats:', stats);
   } catch (e) {
-    // ignore
+    console.error('Failed to get stats:', e.message);
   }
 }
 
-seedPlayersAndTiers().catch(console.error);
+seedAllToConvex().catch(console.error);

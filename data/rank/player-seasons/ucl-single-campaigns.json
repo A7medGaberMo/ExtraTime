@@ -5,7 +5,12 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ucl", "player-seasons", "goals", "modern-stars"],
+    "tags": [
+      "ucl",
+      "player-seasons",
+      "goals",
+      "modern-stars"
+    ],
     "title": {
       "en": "Rank these 5 player-seasons by Champions League goals scored",
       "ar": "رتّب مواسم اللاعبين الخمسة حسب عدد الأهداف في دوري أبطال أوروبا"
@@ -14,72 +19,125 @@
       "en": "Goals scored in that specific Champions League campaign",
       "ar": "الأهداف المسجلة في تلك النسخة المحددة من دوري أبطال أوروبا"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ucl_ps_mbappe26",
-        "name": { "en": "Kylian Mbappé (2025–26)", "ar": "كيليان مبابي (2025–26)" },
-        "subText": { "en": "Real Madrid", "ar": "ريال مدريد" },
+        "name": {
+          "en": "Kylian Mbappé (2025–26)",
+          "ar": "كيليان مبابي (2025–26)"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KM"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 15,
-        "valueLabel": { "en": "15 Goals", "ar": "15 هدفًا" },
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ucl_ps_raphinha25",
-        "name": { "en": "Raphinha (2024–25)", "ar": "رافينيا (2024–25)" },
-        "subText": { "en": "Barcelona", "ar": "برشلونة" },
+        "name": {
+          "en": "Raphinha (2024–25)",
+          "ar": "رافينيا (2024–25)"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "RAP"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "RAP",
+          "primaryUrl": "https://media.api-sports.io/football/players/1496.png"
         },
         "value": 13,
-        "valueLabel": { "en": "13 Goals", "ar": "13 هدفًا" },
+        "valueLabel": {
+          "en": "13 Goals",
+          "ar": "13 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ucl_ps_haaland23",
-        "name": { "en": "Erling Haaland (2022–23)", "ar": "إيرلينغ هالاند (2022–23)" },
-        "subText": { "en": "Manchester City", "ar": "مانشستر سيتي" },
+        "name": {
+          "en": "Erling Haaland (2022–23)",
+          "ar": "إيرلينغ هالاند (2022–23)"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "EH"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 12,
-        "valueLabel": { "en": "12 Goals", "ar": "12 هدفًا" },
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ucl_ps_haaland21",
-        "name": { "en": "Erling Haaland (2020–21)", "ar": "إيرلينغ هالاند (2020–21)" },
-        "subText": { "en": "Borussia Dortmund", "ar": "بوروسيا دورتموند" },
+        "name": {
+          "en": "Erling Haaland (2020–21)",
+          "ar": "إيرلينغ هالاند (2020–21)"
+        },
+        "subText": {
+          "en": "Borussia Dortmund",
+          "ar": "بوروسيا دورتموند"
+        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
-          "fallbackText": "EH"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "EH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 10,
-        "valueLabel": { "en": "10 Goals", "ar": "10 أهداف" },
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ucl_ps_mbappe24",
-        "name": { "en": "Kylian Mbappé (2023–24)", "ar": "كيليان مبابي (2023–24)" },
-        "subText": { "en": "Paris Saint-Germain", "ar": "باريس سان جيرمان" },
+        "name": {
+          "en": "Kylian Mbappé (2023–24)",
+          "ar": "كيليان مبابي (2023–24)"
+        },
+        "subText": {
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
+        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
-          "fallbackText": "KM"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 8,
-        "valueLabel": { "en": "8 Goals", "ar": "8 أهداف" },
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
         "correctRank": 5
       }
     ]

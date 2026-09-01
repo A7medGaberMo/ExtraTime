@@ -39,6 +39,32 @@ export const tierValidator = v.union(
   v.literal('BRONZE'),
 );
 
+export const TIER_RATING_RANGES: Record<Tier, [number, number]> = {
+  ICON: [96, 99],
+  ULTIMATE: [91, 95],
+  HERO: [88, 93],
+  MASTER: [86, 90],
+  ELITE: [81, 85],
+  GOLD: [74, 80],
+  SILVER: [64, 73],
+  BRONZE: [50, 63],
+};
+
+/**
+ * Computes a deterministic default rating for a tier if none is explicitly seeded.
+ */
+export function getDefaultRatingForTier(tier: Tier, seedStr: string = ''): number {
+  const [min, max] = TIER_RATING_RANGES[tier] ?? [70, 75];
+  if (min === max) return min;
+  let hash = 0;
+  for (let i = 0; i < seedStr.length; i++) {
+    hash = (hash << 5) - hash + seedStr.charCodeAt(i);
+    hash |= 0;
+  }
+  const offset = Math.abs(hash) % (max - min + 1);
+  return min + offset;
+}
+
 // ── Position System ────────────────────────────────────────
 export type Position =
   | 'GK'

@@ -14,6 +14,7 @@
       "club": "Werder Bremen",
       "nation": "Austria",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7525.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Werder Bremen",
       "nation": "Estonia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/169295.png",
       "kitNumber": 13
@@ -36,6 +38,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25519.png",
       "kitNumber": 25
@@ -47,6 +50,7 @@
       "club": "Werder Bremen",
       "nation": "Austria",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25314.png",
       "kitNumber": 32
@@ -58,6 +62,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2916.png",
       "kitNumber": 4
@@ -69,6 +74,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25011.png",
       "kitNumber": 5
@@ -80,6 +86,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26319.png",
       "kitNumber": 27
@@ -91,6 +98,7 @@
       "club": "Werder Bremen",
       "nation": "Belgium",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8673.png",
       "kitNumber": 2
@@ -102,6 +110,7 @@
       "club": "Werder Bremen",
       "nation": "Argentina",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/289460.png",
       "kitNumber": 22
@@ -113,6 +122,7 @@
       "club": "Werder Bremen",
       "nation": "Mali",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/440147.png",
       "kitNumber": 31
@@ -124,6 +134,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/444984.png",
       "kitNumber": 33
@@ -135,6 +146,7 @@
       "club": "Werder Bremen",
       "nation": "Poland",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/270836.png",
       "kitNumber": 66
@@ -146,6 +158,7 @@
       "club": "Werder Bremen",
       "nation": "Denmark",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15592.png",
       "kitNumber": 6
@@ -157,6 +170,7 @@
       "club": "Werder Bremen",
       "nation": "Belgium",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38798.png",
       "kitNumber": 14
@@ -168,6 +182,7 @@
       "club": "Werder Bremen",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/193720.png",
       "kitNumber": 80
@@ -179,6 +194,7 @@
       "club": "Werder Bremen",
       "nation": "Poland",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/323507.png",
       "kitNumber": 40
@@ -190,6 +206,7 @@
       "club": "Werder Bremen",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/331004.png",
       "kitNumber": 41
@@ -201,6 +218,7 @@
       "club": "Werder Bremen",
       "nation": "Croatia",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/448468.png",
       "kitNumber": 24
@@ -212,6 +230,7 @@
       "club": "Werder Bremen",
       "nation": "Turkey",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585661.png",
       "kitNumber": 10
@@ -223,6 +242,7 @@
       "club": "Werder Bremen",
       "nation": "Belgium",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/346866.png",
       "kitNumber": 7
@@ -234,6 +254,7 @@
       "club": "Werder Bremen",
       "nation": "Turkey",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202526.png",
       "kitNumber": 45
@@ -245,6 +266,7 @@
       "club": "Werder Bremen",
       "nation": "Austria",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7073.png",
       "kitNumber": 17
@@ -256,6 +278,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/177807.png",
       "kitNumber": 11
@@ -267,6 +290,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/334334.png",
       "kitNumber": 9
@@ -278,6 +302,7 @@
       "club": "Werder Bremen",
       "nation": "Switzerland",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/48497.png",
       "kitNumber": 42
@@ -289,6 +314,7 @@
       "club": "Werder Bremen",
       "nation": "Poland",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/3013.png",
       "kitNumber": 43
@@ -300,6 +326,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/623771.png",
       "kitNumber": 44
@@ -311,6 +338,7 @@
       "club": "Werder Bremen",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/561838.png",
       "kitNumber": 29
@@ -322,6 +350,7 @@
       "club": "Werder Bremen",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584356.png",
       "kitNumber": 45

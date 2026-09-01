@@ -37,7 +37,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "CECH"
+          "fallbackText": "CECH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 202,
         "valueLabel": {
@@ -58,7 +60,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "JAM"
+          "fallbackText": "JAM",
+          "primaryUrl": "https://media.api-sports.io/football/players/10105.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 169,
         "valueLabel": {
@@ -79,7 +83,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "SCH"
+          "fallbackText": "SCH",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/36.png"
         },
         "value": 151,
         "valueLabel": {
@@ -100,8 +105,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
-          "fallbackText": "SEA"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "SEA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/David_Seaman_2011.jpg"
         },
         "value": 141,
         "valueLabel": {
@@ -122,7 +128,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "MAR"
+          "fallbackText": "MAR",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/45.png"
         },
         "value": 137,
         "valueLabel": {
@@ -173,8 +180,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "MN1"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "MN1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Manuel_Neuer_2018.jpg"
         },
         "value": 58,
         "valueLabel": {
@@ -195,8 +203,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "IK1"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "IK1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg"
         },
         "value": 57,
         "valueLabel": {
@@ -217,8 +226,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/juventus.png",
-          "fallbackText": "GIGI"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
+          "fallbackText": "GIGI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg"
         },
         "value": 52,
         "valueLabel": {
@@ -239,8 +249,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "VDS"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "VDS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Edwin_van_der_Sar_2011.jpg"
         },
         "value": 50,
         "valueLabel": {
@@ -261,8 +272,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "CECH"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "CECH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg"
         },
         "value": 49,
         "valueLabel": {
@@ -312,8 +324,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/spain.png",
-          "fallbackText": "ESP"
+          "fallbackText": "ESP",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg"
         },
         "value": 102,
         "valueLabel": {
@@ -334,8 +346,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/italy.png",
-          "fallbackText": "ITA"
+          "fallbackText": "ITA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg"
         },
         "value": 77,
         "valueLabel": {
@@ -356,8 +368,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/netherlands.png",
-          "fallbackText": "NED"
+          "fallbackText": "NED",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Edwin_van_der_Sar_2011.jpg"
         },
         "value": 72,
         "valueLabel": {
@@ -378,8 +390,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/france.png",
-          "fallbackText": "FRA"
+          "fallbackText": "FRA",
+          "primaryUrl": "https://media.api-sports.io/football/players/54093.png"
         },
         "value": 63,
         "valueLabel": {
@@ -400,8 +412,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/italy.png",
-          "fallbackText": "ITA"
+          "fallbackText": "ITA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Dino_Zoff_%281974%29.jpg/330px-Dino_Zoff_%281974%29.jpg"
         },
         "value": 62,
         "valueLabel": {

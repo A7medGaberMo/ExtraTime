@@ -38,7 +38,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "EH9"
         },
         "value": 52,
@@ -76,12 +76,12 @@
           "ar": "2020–21 (بوروسيا دورتموند)"
         },
         "subText": {
-          "en": "DFB-Pokal Winner",
-          "ar": "بطل كأس ألمانيا"
+          "en": "Borussia Dortmund",
+          "ar": "بوروسيا دورتموند"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
           "fallbackText": "EH9"
         },
         "value": 41,
@@ -103,7 +103,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "EH9"
         },
         "value": 38,
@@ -125,7 +125,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
           "fallbackText": "EH9"
         },
         "value": 29,
@@ -170,12 +170,12 @@
           "ar": "موسم 2023–24"
         },
         "subText": {
-          "en": "La Liga & UCL Double (Wembley Final Goal)",
-          "ar": "ثنائية الليغا ودوري الأبطال (هدف نهائي ويمبلي - 39 مباراة)"
+          "en": "La Liga & UCL Double",
+          "ar": "ثنائية الليغا ودوري الأبطال"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "VJR"
         },
         "value": 24,
@@ -197,7 +197,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "VJR"
         },
         "value": 23,
@@ -214,12 +214,12 @@
           "ar": "موسم 2021–22"
         },
         "subText": {
-          "en": "Breakthrough season (Paris Final Winner)",
-          "ar": "موسم الانفجار (هدف الفوز بنهائي باريس - 52 مباراة)"
+          "en": "Breakthrough season",
+          "ar": "موسم التتويج بدوري الأبطال"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "VJR"
         },
         "value": 22,
@@ -241,7 +241,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "VJR"
         },
         "value": 6,
@@ -263,7 +263,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "VJR"
         },
         "value": 5,
@@ -314,7 +314,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "JB5"
         },
         "value": 19,
@@ -336,7 +336,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
           "fallbackText": "JB22"
         },
         "value": 8,
@@ -379,7 +379,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
           "fallbackText": "JB22"
         },
         "value": 3,
@@ -401,7 +401,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
           "fallbackText": "JB22"
         },
         "value": 1,
@@ -452,7 +452,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "SAK7"
         },
         "value": 20,
@@ -474,7 +474,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "SAK7"
         },
         "value": 15,
@@ -496,7 +496,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "SAK7"
         },
         "value": 12,
@@ -518,7 +518,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "SAK7"
         },
         "value": 7,
@@ -535,12 +535,12 @@
           "ar": "موسم 2019–20"
         },
         "subText": {
-          "en": "Breakthrough season & FA Cup Winner (38 games)",
-          "ar": "الموسم الأول وبطل كأس الاتحاد"
+          "en": "Arsenal",
+          "ar": "أرسنال"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "SAK"
         },
         "value": 4,
@@ -591,7 +591,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "FOD"
         },
         "value": 27,
@@ -608,12 +608,12 @@
           "ar": "موسم 2020–21"
         },
         "subText": {
-          "en": "PFA Young Player of the Year (50 games)",
+          "en": "Chelsea (50 games)",
           "ar": "أفضل لاعب شاب في إنجلترا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "FOD"
         },
         "value": 16,
@@ -630,12 +630,12 @@
           "ar": "موسم 2022–23"
         },
         "subText": {
-          "en": "Treble Winning Campaign",
-          "ar": "موسم الثلاثية التاريخية"
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "FOD"
         },
         "value": 15,
@@ -657,7 +657,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "FOD"
         },
         "value": 14,
@@ -679,7 +679,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "FOD"
         },
         "value": 8,
@@ -724,12 +724,12 @@
           "ar": "موسم 2022–23"
         },
         "subText": {
-          "en": "Treble Engine (Istanbul Final Match-Winner)",
-          "ar": "محرك الثلاثية (صاحب هدف الفوز بنهائي إسطنبول)"
+          "en": "Treble Campaign",
+          "ar": "موسم الثلاثية"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "ROD"
         },
         "value": 56,
@@ -751,7 +751,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "ROD"
         },
         "value": 53,
@@ -773,7 +773,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png",
           "fallbackText": "ROD"
         },
         "value": 52,
@@ -790,12 +790,12 @@
           "ar": "موسم 2023–24"
         },
         "subText": {
-          "en": "Ballon d'Or Winning Year (74-game unbeaten streak)",
-          "ar": "عام التتويج بالكرة الذهبية (سلسلة 74 مباراة دون هزيمة)"
+          "en": "Ballon d'Or Year",
+          "ar": "عام الكرة الذهبية"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "ROD"
         },
         "value": 50,
@@ -813,11 +813,11 @@
         },
         "subText": {
           "en": "Premier League Champions",
-          "ar": "بطل الدوري الإنجليزي (93 نقطة)"
+          "ar": "الدوري الإنجليزي"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "ROD"
         },
         "value": 46,
@@ -864,12 +864,12 @@
           "ar": "2023–24 (تشيلسي)"
         },
         "subText": {
-          "en": "PFA Young Player of the Year",
+          "en": "Chelsea",
           "ar": "أفضل لاعب شاب في إنجلترا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "CP20"
         },
         "value": 25,
@@ -891,7 +891,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "CP20"
         },
         "value": 15,
@@ -913,7 +913,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "CP"
         },
         "value": 3,
@@ -935,7 +935,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "CP"
         },
         "value": 1,
@@ -957,7 +957,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "CP"
         },
         "value": 0,

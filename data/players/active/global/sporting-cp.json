@@ -14,6 +14,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46672.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18755.png",
       "kitNumber": 12
@@ -36,6 +38,7 @@
       "club": "Sporting CP",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/330296.png",
       "kitNumber": 41
@@ -47,6 +50,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361417.png",
       "kitNumber": 99
@@ -58,6 +62,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/265595.png",
       "kitNumber": 25
@@ -69,6 +74,7 @@
       "club": "Sporting CP",
       "nation": "Belgium",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304228.png",
       "kitNumber": 6
@@ -80,6 +86,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/262845.png",
       "kitNumber": 72
@@ -91,6 +98,7 @@
       "club": "Sporting CP",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341700.png",
       "kitNumber": 22
@@ -102,6 +110,7 @@
       "club": "Sporting CP",
       "nation": "Greece",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135839.png",
       "kitNumber": 13
@@ -113,6 +122,7 @@
       "club": "Sporting CP",
       "nation": "Senegal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/446827.png",
       "kitNumber": 55
@@ -124,6 +134,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/490740.png",
       "kitNumber": 70
@@ -135,6 +146,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/505249.png",
       "kitNumber": 50
@@ -146,6 +158,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18748.png",
       "kitNumber": 8
@@ -157,6 +170,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41892.png",
       "kitNumber": 23
@@ -168,6 +182,7 @@
       "club": "Sporting CP",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/108563.png",
       "kitNumber": 17
@@ -179,6 +194,7 @@
       "club": "Sporting CP",
       "nation": "Georgia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/119795.png",
       "kitNumber": 14
@@ -190,6 +206,7 @@
       "club": "Sporting CP",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286084.png",
       "kitNumber": 5
@@ -201,6 +218,7 @@
       "club": "Sporting CP",
       "nation": "Denmark",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341822.png",
       "kitNumber": 4
@@ -212,6 +230,7 @@
       "club": "Sporting CP",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/279802.png",
       "kitNumber": 21
@@ -223,6 +242,7 @@
       "club": "Sporting CP",
       "nation": "Ivory Coast",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/331046.png",
       "kitNumber": 77
@@ -234,6 +254,7 @@
       "club": "Sporting CP",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/417653.png",
       "kitNumber": 28
@@ -245,6 +266,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449626.png",
       "kitNumber": 73
@@ -256,6 +278,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/490759.png",
       "kitNumber": 58
@@ -267,6 +290,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/400509.png",
       "kitNumber": 52
@@ -278,6 +302,7 @@
       "club": "Sporting CP",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51776.png",
       "kitNumber": 20
@@ -289,6 +314,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41194.png",
       "kitNumber": 11
@@ -300,6 +326,7 @@
       "club": "Sporting CP",
       "nation": "Mozambique",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/154839.png",
       "kitNumber": 10
@@ -311,6 +338,7 @@
       "club": "Sporting CP",
       "nation": "Greece",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26965.png",
       "kitNumber": 7
@@ -322,6 +350,7 @@
       "club": "Sporting CP",
       "nation": "Australia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/338014.png",
       "kitNumber": 66
@@ -333,6 +362,7 @@
       "club": "Sporting CP",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/404574.png",
       "kitNumber": 31
@@ -344,6 +374,7 @@
       "club": "Sporting CP",
       "nation": "Colombia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47237.png",
       "kitNumber": 97
@@ -355,6 +386,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/385674.png",
       "kitNumber": 78
@@ -366,6 +398,7 @@
       "club": "Sporting CP",
       "nation": "Ivory Coast",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/567965.png",
       "kitNumber": 57
@@ -377,6 +410,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386820.png",
       "kitNumber": 9
@@ -388,6 +422,7 @@
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449624.png",
       "kitNumber": 82

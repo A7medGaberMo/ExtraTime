@@ -38,12 +38,12 @@
         },
         "subText": {
           "en": "France",
-          "ar": "فرنسا (الرقم القياسي التاريخي للبطولة في نسخة واحدة)"
+          "ar": "فرنسا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/france.png",
-          "fallbackText": "FON"
+          "fallbackText": "FON",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Just_Fontaine_1958.jpg"
         },
         "value": 13,
         "valueLabel": {
@@ -64,7 +64,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "KOC"
+          "fallbackText": "KOC",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/S%C3%A1ndor_Kocsis_1954.jpg"
         },
         "value": 11,
         "valueLabel": {
@@ -85,8 +86,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/germany.png",
-          "fallbackText": "MUL"
+          "fallbackText": "MUL",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg"
         },
         "value": 10,
         "valueLabel": {
@@ -107,8 +108,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/portugal.png",
-          "fallbackText": "EUS"
+          "fallbackText": "EUS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Eus%C3%A9bio_1966.jpg"
         },
         "value": 9,
         "valueLabel": {
@@ -124,13 +125,13 @@
           "ar": "رونالدو البرازيلي (2002)"
         },
         "subText": {
-          "en": "Brazil (2 in Final vs Germany)",
-          "ar": "البرازيل (ثنائية النهائي ضد ألمانيا)"
+          "en": "Brazil (vs Germany (Final))",
+          "ar": "البرازيل (ضد ألمانيا (النهائي))"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/brazil.png",
-          "fallbackText": "R9"
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg"
         },
         "value": 8,
         "valueLabel": {
@@ -176,12 +177,12 @@
         },
         "subText": {
           "en": "Turkey vs South Korea",
-          "ar": "تركيا ضد كوريا الجنوبية (الرقم القياسي التاريخي)"
+          "ar": "تركيا ضد كوريا الجنوبية"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/turkey.png",
-          "fallbackText": "SUK"
+          "fallbackText": "SUK",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hakan.jpg/330px-Hakan.jpg"
         },
         "value": 11,
         "valueLabel": {
@@ -244,7 +245,6 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/england.png",
           "fallbackText": "ROB"
         },
         "value": 27,
@@ -266,8 +266,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/usa.png",
-          "fallbackText": "DEM"
+          "fallbackText": "DEM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg/330px-Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg"
         },
         "value": 30,
         "valueLabel": {
@@ -314,13 +314,13 @@
           "ar": "ليونيل ميسي"
         },
         "subText": {
-          "en": "Argentina (5 Tournaments - All-Time Record)",
-          "ar": "الأرجنتين"
+          "en": "Argentina (2006–2022)",
+          "ar": "الأرجنتين (2006–2022)"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/argentina.png",
-          "fallbackText": "LM10"
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 26,
         "valueLabel": {
@@ -341,8 +341,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/germany.png",
-          "fallbackText": "MAT"
+          "fallbackText": "MAT",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lothar_Matth%C3%A4us_2014.jpg"
         },
         "value": 25,
         "valueLabel": {
@@ -358,13 +358,13 @@
           "ar": "ميروسلاف كلوزه"
         },
         "subText": {
-          "en": "Germany (4 Tournaments - All-Time Top Scorer)",
-          "ar": "ألمانيا"
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/germany.png",
-          "fallbackText": "MK11"
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg"
         },
         "value": 24,
         "valueLabel": {
@@ -385,8 +385,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/italy.png",
-          "fallbackText": "MAL3"
+          "fallbackText": "MAL3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg"
         },
         "value": 23,
         "valueLabel": {
@@ -407,8 +407,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/portugal.png",
-          "fallbackText": "CR7"
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
         },
         "value": 22,
         "valueLabel": {
@@ -460,7 +460,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ARG"
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
         },
         "value": 6,
         "valueLabel": {
@@ -481,7 +482,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "GER"
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
         },
         "value": 4,
         "valueLabel": {
@@ -502,7 +504,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "BRA"
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
         },
         "value": 3,
         "valueLabel": {
@@ -523,7 +526,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "FRA"
+          "fallbackText": "FRA",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png"
         },
         "value": 2,
         "valueLabel": {
@@ -544,7 +548,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ENG"
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
         },
         "value": 1,
         "valueLabel": {
@@ -596,7 +601,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "MEX"
+          "fallbackText": "MEX",
+          "primaryUrl": "https://flagcdn.com/w80/mx.png"
         },
         "value": 17,
         "valueLabel": {
@@ -617,7 +623,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "BEL"
+          "fallbackText": "BEL",
+          "primaryUrl": "https://flagcdn.com/w80/be.png"
         },
         "value": 14,
         "valueLabel": {
@@ -638,7 +645,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "SUI"
+          "fallbackText": "SUI",
+          "primaryUrl": "https://flagcdn.com/w80/ch.png"
         },
         "value": 12,
         "valueLabel": {
@@ -659,7 +667,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "CHI"
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
         },
         "value": 9,
         "valueLabel": {
@@ -727,11 +736,12 @@
         },
         "subText": {
           "en": "Magical Magyars",
-          "ar": "جيل المجر الذهبي (الرقم القياسي - 5 مباريات)"
+          "ar": "جيل المجر الذهبي"
         },
         "media": {
           "type": "nation",
-          "fallbackText": "HUN"
+          "fallbackText": "HUN",
+          "primaryUrl": "https://flagcdn.com/w80/hu.png"
         },
         "value": 27,
         "valueLabel": {
@@ -752,7 +762,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "GER"
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
         },
         "value": 25,
         "valueLabel": {
@@ -768,12 +779,13 @@
           "ar": "فرنسا (1958)"
         },
         "subText": {
-          "en": "Just Fontaine 13 goals (3rd place)",
-          "ar": ""
+          "en": "Sweden 1958",
+          "ar": "السويد 1958"
         },
         "media": {
           "type": "nation",
-          "fallbackText": "FRA"
+          "fallbackText": "FRA",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png"
         },
         "value": 23,
         "valueLabel": {
@@ -794,7 +806,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "BRA"
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
         },
         "value": 19,
         "valueLabel": {
@@ -815,7 +828,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "GER"
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
         },
         "value": 18,
         "valueLabel": {

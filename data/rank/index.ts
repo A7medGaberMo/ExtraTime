@@ -5,10 +5,12 @@ import domesticTitles from './clubs/domestic-titles.json';
 import europeanRecords from './clubs/european-records.json';
 import domesticCups from './clubs/domestic-cups.json';
 import clubRecordsExtra from './clubs/club-records-extra.json';
+import recordsAndDynasties from './clubs/records-and-dynasties.json';
 import singleClubLegends from './clubs/single-club-legends.json';
 import clubBattles from './clubs/club-battles.json';
 import continentalRecords from './clubs/continental-and-treble-records.json';
 import worldCupEditions from './competitions/world-cup-editions.json';
+import worldCupAndEuros from './competitions/world-cup-and-euros.json';
 import uclSeason2526 from './competitions/ucl-season-2025-26.json';
 import europaLeague from './competitions/europa-league.json';
 import continentalCups from './competitions/continental-cups.json';
@@ -19,18 +21,23 @@ import worldCupSpecials from './competitions/world-cup-specials.json';
 import worldCupRecords from './national-teams/world-cup-records.json';
 import internationalMilestones from './national-teams/international-milestones.json';
 import uclPlayerRecords from './players/ucl-records.json';
+import championsLeagueKings from './players/champions-league-kings.json';
 import worldCupLegends from './players/world-cup-legends.json';
 import transfersAndInt from './players/transfers-and-international.json';
 import ballonDor from './players/ballon-dor.json';
 import goldenShoe from './players/golden-shoe.json';
 import legendStints from './players/legend-stints.json';
+import legendsAndIcons from './players/legends-and-icons.json';
+import modernSuperstars from './players/modern-superstars.json';
 import allTimeTopScorers from './players/all-time-top-scorers.json';
 import transferRecords from './players/transfer-records.json';
 import transferMarketRecords from './players/transfer-market-records.json';
+import transferMarketTitans from './players/transfer-market-titans.json';
 import uclAppearances from './players/champions-league-appearances.json';
 import internationalCaps from './players/international-caps.json';
 import playmakersAssists from './players/playmakers-assists.json';
 import playmakersExtra from './players/playmakers-and-assists-extra.json';
+import creativeMilestones from './players/creative-milestones.json';
 import defendersAndGoalkeepers from './players/defenders-and-goalkeepers.json';
 import defensiveIcons from './players/defensive-and-disciplinary-icons.json';
 import africanAndAsianIcons from './players/african-and-asian-icons.json';
@@ -44,6 +51,7 @@ import awardsExtra from './players/ballon-dor-and-individual-awards.json';
 import plClubSeasons from './club-seasons/premier-league-records.json';
 import uclSingleCampaigns from './player-seasons/ucl-single-campaigns.json';
 import eliteCampaigns from './player-seasons/elite-campaigns.json';
+import individualMasterpieces from './player-seasons/individual-masterpieces.json';
 import legendaryCampaignsExtra from './player-seasons/legendary-campaigns-extra.json';
 
 export interface RankQuestionSeedItem {
@@ -85,10 +93,12 @@ export const allRankQuestions: RankQuestionSeedItem[] = [
   ...(europeanRecords as RankQuestionSeedItem[]),
   ...(domesticCups as RankQuestionSeedItem[]),
   ...(clubRecordsExtra as RankQuestionSeedItem[]),
+  ...(recordsAndDynasties as RankQuestionSeedItem[]),
   ...(singleClubLegends as RankQuestionSeedItem[]),
   ...(clubBattles as RankQuestionSeedItem[]),
   ...(continentalRecords as RankQuestionSeedItem[]),
   ...(worldCupEditions as RankQuestionSeedItem[]),
+  ...(worldCupAndEuros as RankQuestionSeedItem[]),
   ...(uclSeason2526 as RankQuestionSeedItem[]),
   ...(europaLeague as RankQuestionSeedItem[]),
   ...(continentalCups as RankQuestionSeedItem[]),
@@ -99,18 +109,23 @@ export const allRankQuestions: RankQuestionSeedItem[] = [
   ...(worldCupRecords as RankQuestionSeedItem[]),
   ...(internationalMilestones as RankQuestionSeedItem[]),
   ...(uclPlayerRecords as RankQuestionSeedItem[]),
+  ...(championsLeagueKings as RankQuestionSeedItem[]),
   ...(worldCupLegends as RankQuestionSeedItem[]),
   ...(transfersAndInt as RankQuestionSeedItem[]),
   ...(ballonDor as RankQuestionSeedItem[]),
   ...(goldenShoe as RankQuestionSeedItem[]),
   ...(legendStints as RankQuestionSeedItem[]),
+  ...(legendsAndIcons as RankQuestionSeedItem[]),
+  ...(modernSuperstars as RankQuestionSeedItem[]),
   ...(allTimeTopScorers as RankQuestionSeedItem[]),
   ...(transferRecords as RankQuestionSeedItem[]),
   ...(transferMarketRecords as RankQuestionSeedItem[]),
+  ...(transferMarketTitans as RankQuestionSeedItem[]),
   ...(uclAppearances as RankQuestionSeedItem[]),
   ...(internationalCaps as RankQuestionSeedItem[]),
   ...(playmakersAssists as RankQuestionSeedItem[]),
   ...(playmakersExtra as RankQuestionSeedItem[]),
+  ...(creativeMilestones as RankQuestionSeedItem[]),
   ...(defendersAndGoalkeepers as RankQuestionSeedItem[]),
   ...(defensiveIcons as RankQuestionSeedItem[]),
   ...(africanAndAsianIcons as RankQuestionSeedItem[]),
@@ -124,5 +139,6 @@ export const allRankQuestions: RankQuestionSeedItem[] = [
   ...(plClubSeasons as RankQuestionSeedItem[]),
   ...(uclSingleCampaigns as RankQuestionSeedItem[]),
   ...(eliteCampaigns as RankQuestionSeedItem[]),
+  ...(individualMasterpieces as RankQuestionSeedItem[]),
   ...(legendaryCampaignsExtra as RankQuestionSeedItem[]),
 ];

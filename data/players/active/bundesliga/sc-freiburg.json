@@ -14,6 +14,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178768.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25905.png",
       "kitNumber": 21
@@ -36,6 +38,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329578.png",
       "kitNumber": 30
@@ -47,6 +50,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25904.png",
       "kitNumber": 24
@@ -58,6 +62,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2915.png",
       "kitNumber": 28
@@ -69,6 +74,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26236.png",
       "kitNumber": 40
@@ -80,6 +86,7 @@
       "club": "SC Freiburg",
       "nation": "Austria",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26240.png",
       "kitNumber": 3
@@ -91,6 +98,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26239.png",
       "kitNumber": 17
@@ -102,6 +110,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15874.png",
       "kitNumber": 5
@@ -113,6 +122,7 @@
       "club": "SC Freiburg",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/191160.png",
       "kitNumber": 33
@@ -124,6 +134,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202919.png",
       "kitNumber": 37
@@ -135,6 +146,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178769.png",
       "kitNumber": 29
@@ -146,6 +158,7 @@
       "club": "SC Freiburg",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/353142.png",
       "kitNumber": 41
@@ -157,6 +170,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361393.png",
       "kitNumber": 43
@@ -168,6 +182,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/574674.png",
       "kitNumber": 65
@@ -179,6 +194,7 @@
       "club": "SC Freiburg",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26248.png",
       "kitNumber": 32
@@ -190,6 +206,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25313.png",
       "kitNumber": 19
@@ -201,6 +218,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2917.png",
       "kitNumber": 8
@@ -212,6 +230,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163022.png",
       "kitNumber": 6
@@ -223,6 +242,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26250.png",
       "kitNumber": 27
@@ -234,6 +254,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178709.png",
       "kitNumber": 42
@@ -245,6 +266,7 @@
       "club": "SC Freiburg",
       "nation": "Japan",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/33805.png",
       "kitNumber": 44
@@ -256,6 +278,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584890.png",
       "kitNumber": 69
@@ -267,6 +290,7 @@
       "club": "SC Freiburg",
       "nation": "Croatia",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202696.png",
       "kitNumber": 31
@@ -278,6 +302,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26255.png",
       "kitNumber": 9
@@ -289,6 +314,7 @@
       "club": "SC Freiburg",
       "nation": "Japan",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/199143.png",
       "kitNumber": 14
@@ -300,6 +326,7 @@
       "club": "SC Freiburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286710.png",
       "kitNumber": 7
@@ -311,6 +338,7 @@
       "club": "SC Freiburg",
       "nation": "Japan",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/375930.png",
       "kitNumber": 46
@@ -322,6 +350,7 @@
       "club": "SC Freiburg",
       "nation": "Ivory Coast",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/431149.png",
       "kitNumber": 22
@@ -333,6 +362,7 @@
       "club": "SC Freiburg",
       "nation": "Croatia",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/406094.png",
       "kitNumber": 18

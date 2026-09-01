@@ -1,0 +1,1328 @@
+[
+  {
+    "slug": "world-cup-runner-up-finishes-nations",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 national teams by FIFA World Cup runner-up (2nd place) finishes",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد مرات الحصول على المركز الثاني (وصيف كأس العالم)"
+    },
+    "subtitle": {
+      "en": "World Cup finals runner-up finishes from 1930 through 2026",
+      "ar": "مرات التواجد كوصيف للبطولة في تاريخ كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Runners-up",
+      "ar": "مرات وصافة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "national-teams",
+      "germany",
+      "netherlands",
+      "france"
+    ],
+    "answers": [
+      {
+        "answerKey": "wcr_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "subText": {
+          "en": "1966, 1982, 1986, 2002",
+          "ar": "1966، 1982، 1986، 2002"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Times Runner-up",
+          "ar": "4 مرات وصيف"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcr_netherlands",
+        "name": {
+          "en": "Netherlands",
+          "ar": "هولندا"
+        },
+        "subText": {
+          "en": "1974, 1978, 2010",
+          "ar": "1974، 1978، 2010"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NED",
+          "primaryUrl": "https://flagcdn.com/w80/nl.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Times Runner-up",
+          "ar": "3 مرات وصيف"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcr_france",
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "subText": {
+          "en": "2006, 2022",
+          "ar": "2006، 2022"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Times Runner-up",
+          "ar": "مرتان وصيف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcr_croatia",
+        "name": {
+          "en": "Croatia",
+          "ar": "كرواتيا"
+        },
+        "subText": {
+          "en": "2018",
+          "ar": "2018"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CRO",
+          "primaryUrl": "https://flagcdn.com/w80/hr.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Time Runner-up",
+          "ar": "مرة واحدة وصيف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcr_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "subText": {
+          "en": "Never runner-up (Won in 1966)",
+          "ar": "لم تخسر أي نهائي (فازت بـ 1966)"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Times Runner-up",
+          "ar": "0 وصافة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "uefa-euro-titles-national-teams-records",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 national teams by UEFA European Championship titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد ألقاب كأس أمم أوروبا (اليورو)"
+    },
+    "subtitle": {
+      "en": "UEFA EURO titles from 1960 through EURO 2024",
+      "ar": "ألقاب بطولة أمم أوروبا من 1960 حتى 2024"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "euro",
+      "uefa",
+      "spain",
+      "germany",
+      "italy"
+    ],
+    "answers": [
+      {
+        "answerKey": "eut_spain",
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "subText": {
+          "en": "1964, 2008, 2012, 2024",
+          "ar": "1964، 2008، 2012، 2024"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eut_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "subText": {
+          "en": "1972, 1980, 1996",
+          "ar": "1972، 1980، 1996"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eut_italy",
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "subText": {
+          "en": "1968, 2020",
+          "ar": "1968، 2020"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://flagcdn.com/w80/it.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eut_portugal",
+        "name": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "subText": {
+          "en": "2016",
+          "ar": "2016"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eut_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "subText": {
+          "en": "Runners-up in 2020 & 2024",
+          "ar": "وصيف نسختي 2020 و2024"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Titles",
+          "ar": "0 ألقاب"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "copa-america-titles-national-teams-all-time",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 South American national teams by CONMEBOL Copa América titles won",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد ألقاب كوبا أمريكا"
+    },
+    "subtitle": {
+      "en": "South American championship from 1916 to present",
+      "ar": "أقدم بطولة قارية للمنتخبات في العالم"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "copa-america",
+      "conmebol",
+      "argentina",
+      "uruguay",
+      "brazil"
+    ],
+    "answers": [
+      {
+        "answerKey": "cat_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Titles",
+          "ar": "16 لقبًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cat_uruguay",
+        "name": {
+          "en": "Uruguay",
+          "ar": "الأوروجواي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Titles",
+          "ar": "15 لقبًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cat_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Titles",
+          "ar": "9 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cat_chile",
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cat_colombia",
+        "name": {
+          "en": "Colombia",
+          "ar": "كولومبيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "COL",
+          "primaryUrl": "https://flagcdn.com/w80/co.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afcon-titles-national-teams-records",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 African national teams by Africa Cup of Nations (AFCON) titles won",
+      "ar": "رتّب المنتخبات الإفريقية الخمسة حسب عدد ألقاب كأس أمم إفريقيا (كان)"
+    },
+    "subtitle": {
+      "en": "CAF Africa Cup of Nations history (1957 to present)",
+      "ar": "السجل التاريخي لبطولة كأس الأمم الإفريقية"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "afcon",
+      "caf",
+      "egypt",
+      "cameroon",
+      "ghana",
+      "nigeria"
+    ],
+    "answers": [
+      {
+        "answerKey": "afc_egypt",
+        "name": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "subText": {
+          "en": "1957, 1959, 1986, 1998, 2006, 2008, 2010",
+          "ar": "1957، 1959، 1986، 1998، 2006، 2008، 2010"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "EGY",
+          "primaryUrl": "https://flagcdn.com/w80/eg.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "afc_cameroon",
+        "name": {
+          "en": "Cameroon",
+          "ar": "الكاميرون"
+        },
+        "subText": {
+          "en": "1984, 1988, 2000, 2002, 2017",
+          "ar": "1984، 1988، 2000، 2002، 2017"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CMR",
+          "primaryUrl": "https://flagcdn.com/w80/cm.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "afc_ghana",
+        "name": {
+          "en": "Ghana",
+          "ar": "غانا"
+        },
+        "subText": {
+          "en": "1963, 1965, 1978, 1982",
+          "ar": "1963، 1965، 1978، 1982"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GHA",
+          "primaryUrl": "https://flagcdn.com/w80/gh.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "afc_nigeria",
+        "name": {
+          "en": "Nigeria",
+          "ar": "نيجيريا"
+        },
+        "subText": {
+          "en": "1980, 1994, 2013",
+          "ar": "1980، 1994، 2013"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "NGA",
+          "primaryUrl": "https://flagcdn.com/w80/ng.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "afc_algeria",
+        "name": {
+          "en": "Algeria",
+          "ar": "الجزائر"
+        },
+        "subText": {
+          "en": "1990, 2019",
+          "ar": "1990، 2019"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ALG",
+          "primaryUrl": "https://flagcdn.com/w80/dz.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "afc-asian-cup-titles-national-teams",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 Asian national teams by AFC Asian Cup titles won",
+      "ar": "رتّب المنتخبات الآسيوية الخمسة حسب عدد ألقاب كأس آسيا"
+    },
+    "subtitle": {
+      "en": "AFC Asian Cup champions (1956 to present)",
+      "ar": "السجل التاريخي لبطولة كأس آسيا للمنتخبات"
+    },
+    "metricLabel": {
+      "en": "Titles",
+      "ar": "ألقاب"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "asian-cup",
+      "afc",
+      "japan",
+      "saudi-arabia",
+      "south-korea"
+    ],
+    "answers": [
+      {
+        "answerKey": "act_japan",
+        "name": {
+          "en": "Japan",
+          "ar": "اليابان"
+        },
+        "subText": {
+          "en": "1992, 2000, 2004, 2011",
+          "ar": "1992، 2000، 2004، 2011"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "JPN",
+          "primaryUrl": "https://flagcdn.com/w80/jp.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "act_saudi",
+        "name": {
+          "en": "Saudi Arabia",
+          "ar": "السعودية"
+        },
+        "subText": {
+          "en": "1984, 1988, 1996",
+          "ar": "1984، 1988، 1996"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "KSA",
+          "primaryUrl": "https://flagcdn.com/w80/sa.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "act_korea",
+        "name": {
+          "en": "South Korea",
+          "ar": "كوريا الجنوبية"
+        },
+        "subText": {
+          "en": "1956, 1960",
+          "ar": "1956، 1960"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "KOR",
+          "primaryUrl": "https://flagcdn.com/w80/kr.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "act_australia",
+        "name": {
+          "en": "Australia",
+          "ar": "أستراليا"
+        },
+        "subText": {
+          "en": "2015",
+          "ar": "2015"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "AUS",
+          "primaryUrl": "https://flagcdn.com/w80/au.png"
+        },
+        "value": 1,
+        "valueLabel": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "act_china",
+        "name": {
+          "en": "China",
+          "ar": "الصين"
+        },
+        "subText": {
+          "en": "Runners-up in 1984 & 2004",
+          "ar": "وصيف نسختي 1984 و2004"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CHN",
+          "primaryUrl": "https://flagcdn.com/w80/cn.png"
+        },
+        "value": 0,
+        "valueLabel": {
+          "en": "0 Titles",
+          "ar": "0 ألقاب"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-tournament-appearances-nations",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 national teams by total FIFA World Cup tournament appearances",
+      "ar": "رتّب المنتخبات الخمسة حسب عدد مرات التأهل والمشاركة في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "From 1930 through 2026 World Cup editions",
+      "ar": "من أول نسخة عام 1930 وحتى نسخة 2026"
+    },
+    "metricLabel": {
+      "en": "Tournaments",
+      "ar": "بطولات"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "appearances",
+      "brazil",
+      "germany",
+      "argentina"
+    ],
+    "answers": [
+      {
+        "answerKey": "wca_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "subText": {
+          "en": "Only nation to play every edition",
+          "ar": "المنتخب الوحيد الحاضر في كل النسخ"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Editions",
+          "ar": "23 مشاركة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wca_germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
+        },
+        "value": 21,
+        "valueLabel": {
+          "en": "21 Editions",
+          "ar": "21 مشاركة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wca_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Editions",
+          "ar": "19 مشاركة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wca_italy",
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ITA",
+          "primaryUrl": "https://flagcdn.com/w80/it.png"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Editions",
+          "ar": "18 مشاركة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wca_england",
+        "name": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Editions",
+          "ar": "17 مشاركة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "uefa-euro-appearances-players-history",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by total matches played in UEFA EURO finals history",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات الملعوبة في نهائيات كأس أمم أوروبا (اليورو)"
+    },
+    "subtitle": {
+      "en": "UEFA European Championship finals matches (1960–2024)",
+      "ar": "مباريات نهائيات اليورو من 1960 حتى 2024"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "euro",
+      "appearances",
+      "cr7",
+      "pepe",
+      "neuer",
+      "kroos"
+    ],
+    "answers": [
+      {
+        "answerKey": "eum_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (6 Tournaments: 2004–2024)",
+          "ar": "البرتغال (6 نسخ: 2004–2024)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 30,
+        "valueLabel": {
+          "en": "30 Matches",
+          "ar": "30 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "eum_pepe",
+        "name": {
+          "en": "Pepe",
+          "ar": "بيبي"
+        },
+        "subText": {
+          "en": "Portugal (2008–2024)",
+          "ar": "البرتغال (2008–2024)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PEP3",
+          "primaryUrl": "https://media.api-sports.io/football/players/742.png"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Matches",
+          "ar": "23 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "eum_neuer",
+        "name": {
+          "en": "Manuel Neuer",
+          "ar": "مانويل نوير"
+        },
+        "subText": {
+          "en": "Germany (2012–2024)",
+          "ar": "ألمانيا (2012–2024)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MN1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Manuel_Neuer_2018.jpg"
+        },
+        "value": 20,
+        "valueLabel": {
+          "en": "20 Matches",
+          "ar": "20 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "eum_kroos",
+        "name": {
+          "en": "Toni Kroos",
+          "ar": "توني كروس"
+        },
+        "subText": {
+          "en": "Germany (2012–2024)",
+          "ar": "ألمانيا (2012–2024)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TK8",
+          "primaryUrl": "https://media.api-sports.io/football/players/738.png"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Matches",
+          "ar": "19 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "eum_buffon",
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "subText": {
+          "en": "Italy (2004–2016)",
+          "ar": "إيطاليا (2004–2016)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GIGI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg"
+        },
+        "value": 17,
+        "valueLabel": {
+          "en": "17 Matches",
+          "ar": "17 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-most-penalties-awarded-editions",
+    "scopeType": "PER_COMPETITION",
+    "title": {
+      "en": "Rank these 5 FIFA World Cup editions by most penalty kicks awarded",
+      "ar": "رتّب نسخ كأس العالم الخمسة حسب عدد ركلات الجزاء المحتسبة في البطولة"
+    },
+    "subtitle": {
+      "en": "Total penalty kicks awarded during tournament play",
+      "ar": "إجمالي ركلات الجزاء المحتسبة في وقت المباريات"
+    },
+    "metricLabel": {
+      "en": "Penalties",
+      "ar": "ركلات جزاء"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "penalties",
+      "var",
+      "tournaments"
+    ],
+    "answers": [
+      {
+        "answerKey": "wcp_2018",
+        "name": {
+          "en": "2018 World Cup (Russia)",
+          "ar": "كأس العالم 2018 (روسيا)"
+        },
+        "subText": {
+          "en": "First World Cup with VAR technology",
+          "ar": "أول مونديال بتقنية الفيديو المساعد (VAR)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC18"
+        },
+        "value": 29,
+        "valueLabel": {
+          "en": "29 Penalties",
+          "ar": "29 ركلة جزاء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcp_2022",
+        "name": {
+          "en": "2022 World Cup (Qatar)",
+          "ar": "كأس العالم 2022 (قطر)"
+        },
+        "subText": {
+          "en": "Qatar 2022",
+          "ar": "مونديال قطر 2022"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC22"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Penalties",
+          "ar": "23 ركلة جزاء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcp_2002",
+        "name": {
+          "en": "2002 World Cup (Korea/Japan)",
+          "ar": "كأس العالم 2002 (كوريا واليابان)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC02"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Penalties",
+          "ar": "18 ركلة جزاء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcp_1990",
+        "name": {
+          "en": "1990 World Cup (Italy)",
+          "ar": "كأس العالم 1990 (إيطاليا)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC90"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Penalties",
+          "ar": "16 ركلة جزاء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcp_2014",
+        "name": {
+          "en": "2014 World Cup (Brazil)",
+          "ar": "كأس العالم 2014 (البرازيل)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "WC14"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Penalties",
+          "ar": "13 ركلة جزاء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-highest-scoring-single-matches",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legendary FIFA World Cup fixtures by total goals scored",
+      "ar": "رتّب المباريات التاريخية الخمس في كأس العالم حسب إجمالي الأهداف المسجلة"
+    },
+    "subtitle": {
+      "en": "Highest-scoring single matches in World Cup history",
+      "ar": "المباريات الأكثر غزارة تهديفية في تاريخ المونديال"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "high-scoring",
+      "matches",
+      "history"
+    ],
+    "answers": [
+      {
+        "answerKey": "hsm_aut_sui_1954",
+        "name": {
+          "en": "Austria 7–5 Switzerland (1954)",
+          "ar": "النمسا 7–5 سويسرا (1954)"
+        },
+        "subText": {
+          "en": "Quarter-finals (12 goals total)",
+          "ar": "ربع النهائي (12 هدفًا)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "AUT-SUI"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "hsm_bra_pol_1938",
+        "name": {
+          "en": "Brazil 6–5 Poland (1938)",
+          "ar": "البرازيل 6–5 بولندا (1938)"
+        },
+        "subText": {
+          "en": "Round of 16 (11 goals total)",
+          "ar": "دور الـ16 (11 هدفًا)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "BRA-POL"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Goals",
+          "ar": "11 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "hsm_fra_par_1958",
+        "name": {
+          "en": "France 7–3 Paraguay (1958)",
+          "ar": "فرنسا 7–3 باراغواي (1958)"
+        },
+        "subText": {
+          "en": "Group Stage (10 goals total)",
+          "ar": "دور المجموعات (10 أهداف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "FRA-PAR"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Goals",
+          "ar": "10 أهداف"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "hsm_yug_zai_1974",
+        "name": {
+          "en": "Yugoslavia 9–0 Zaire (1974)",
+          "ar": "يوغوسلافيا 9–0 زائير (1974)"
+        },
+        "subText": {
+          "en": "Group Stage (9 goals total)",
+          "ar": "دور المجموعات (9 أهداف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "YUG-ZAI"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Goals",
+          "ar": "9 أهداف"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "hsm_ger_bra_2014",
+        "name": {
+          "en": "Germany 7–1 Brazil (2014)",
+          "ar": "ألمانيا 7–1 البرازيل (2014)"
+        },
+        "subText": {
+          "en": "Semi-finals (8 goals total)",
+          "ar": "نصف النهائي (8 أهداف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "GER-BRA"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Goals",
+          "ar": "8 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-yellow-cards-single-match-records",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 volatile World Cup matches by total yellow cards shown",
+      "ar": "رتّب المباريات الخمس في كأس العالم حسب عدد البطاقات الصفراء المشهرة"
+    },
+    "subtitle": {
+      "en": "Most ill-tempered clashes in FIFA World Cup history",
+      "ar": "أكثر المباريات شراسة وتوترًا بالبطاقات في تاريخ المونديال"
+    },
+    "metricLabel": {
+      "en": "Yellow Cards",
+      "ar": "بطاقات صفراء"
+    },
+    "direction": "desc",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "disciplinary",
+      "yellow-cards",
+      "cards"
+    ],
+    "answers": [
+      {
+        "answerKey": "ycr_ned_arg_2022",
+        "name": {
+          "en": "Netherlands vs Argentina (2022)",
+          "ar": "هولندا ضد الأرجنتين (2022)"
+        },
+        "subText": {
+          "en": "Battle of Lusail (Antonio Mateu Lahoz)",
+          "ar": "معركة لوسيل (الحكم ماتيو لاهوز)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "NED-ARG"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Yellow Cards",
+          "ar": "18 بطاقة صفراء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ycr_por_ned_2006",
+        "name": {
+          "en": "Portugal vs Netherlands (2006)",
+          "ar": "البرتغال ضد هولندا (2006)"
+        },
+        "subText": {
+          "en": "Battle of Nuremberg (Valentin Ivanov)",
+          "ar": "معركة نورمبرغ (الحكم فالنتين إيفانوف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "POR-NED"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Yellow Cards",
+          "ar": "16 بطاقة صفراء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ycr_cmr_ger_2002",
+        "name": {
+          "en": "Cameroon vs Germany (2002)",
+          "ar": "الكاميرون ضد ألمانيا (2002)"
+        },
+        "subText": {
+          "en": "Group Stage (Antonio López Nieto)",
+          "ar": "دور المجموعات (أنطونيو لوبيز نييتو)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "CMR-GER"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Yellow Cards",
+          "ar": "14 بطاقة صفراء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ycr_sen_uru_2002",
+        "name": {
+          "en": "Senegal vs Uruguay (2002)",
+          "ar": "السنغال ضد الأوروجواي (2002)"
+        },
+        "subText": {
+          "en": "Group Stage (Jan Wegereef)",
+          "ar": "دور المجموعات (يان فيغيريف)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "SEN-URU"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Yellow Cards",
+          "ar": "12 بطاقة صفراء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ycr_arg_eng_1998",
+        "name": {
+          "en": "Argentina vs England (1998)",
+          "ar": "الأرجنتين ضد إنجلترا (1998)"
+        },
+        "subText": {
+          "en": "Round of 16 (Kim Milton Nielsen)",
+          "ar": "دور الـ16 (كيم ميلتون نيلسن)"
+        },
+        "media": {
+          "type": "tournament",
+          "fallbackText": "ARG-ENG"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Yellow Cards",
+          "ar": "8 بطاقات صفراء"
+        },
+        "correctRank": 5
+      }
+    ]
+  }
+]

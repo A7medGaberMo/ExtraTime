@@ -14,6 +14,7 @@
       "club": "Lazio",
       "nation": "Greece",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26644.png",
       "kitNumber": 29
@@ -25,6 +26,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/63934.png",
       "kitNumber": 55
@@ -36,6 +38,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/431413.png",
       "kitNumber": 40
@@ -47,6 +50,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557183.png",
       "kitNumber": 22
@@ -58,6 +62,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/616196.png",
       "kitNumber": 99
@@ -69,6 +74,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/616197.png",
       "kitNumber": 72
@@ -80,6 +86,7 @@
       "club": "Lazio",
       "nation": "Portugal",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41577.png",
       "kitNumber": 17
@@ -91,6 +98,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1632.png",
       "kitNumber": 13
@@ -102,6 +110,7 @@
       "club": "Lazio",
       "nation": "Montenegro",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1844.png",
       "kitNumber": 77
@@ -113,6 +122,7 @@
       "club": "Lazio",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1775.png",
       "kitNumber": 2
@@ -124,6 +134,7 @@
       "club": "Lazio",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1841.png",
       "kitNumber": 4
@@ -135,6 +146,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30554.png",
       "kitNumber": 3
@@ -146,6 +158,7 @@
       "club": "Lazio",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1702.png",
       "kitNumber": 24
@@ -157,6 +170,7 @@
       "club": "Lazio",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37117.png",
       "kitNumber": 5
@@ -168,6 +182,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342651.png",
       "kitNumber": 41
@@ -179,6 +194,7 @@
       "club": "Lazio",
       "nation": "Denmark",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/350857.png",
       "kitNumber": 25
@@ -190,6 +206,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544574.png",
       "kitNumber": 42
@@ -201,6 +218,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30937.png",
       "kitNumber": 10
@@ -212,6 +230,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30784.png",
       "kitNumber": 6
@@ -223,6 +242,7 @@
       "club": "Lazio",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/333116.png",
       "kitNumber": 21
@@ -234,6 +254,7 @@
       "club": "Lazio",
       "nation": "Nigeria",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/144740.png",
       "kitNumber": 7
@@ -245,6 +266,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30866.png",
       "kitNumber": 43
@@ -256,6 +278,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1852.png",
       "kitNumber": 32
@@ -267,6 +290,7 @@
       "club": "Lazio",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38749.png",
       "kitNumber": 44
@@ -278,6 +302,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/483662.png",
       "kitNumber": 71
@@ -289,6 +314,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568028.png",
       "kitNumber": 45
@@ -300,6 +326,7 @@
       "club": "Lazio",
       "nation": "Senegal",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22015.png",
       "kitNumber": 19
@@ -311,6 +338,7 @@
       "club": "Lazio",
       "nation": "Denmark",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135519.png",
       "kitNumber": 18
@@ -322,6 +350,7 @@
       "club": "Lazio",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/133729.png",
       "kitNumber": 14
@@ -333,6 +362,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286474.png",
       "kitNumber": 46
@@ -344,6 +374,7 @@
       "club": "Lazio",
       "nation": "Serbia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/301763.png",
       "kitNumber": 20
@@ -355,6 +386,7 @@
       "club": "Lazio",
       "nation": "Poland",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/405241.png",
       "kitNumber": 28
@@ -366,6 +398,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/180764.png",
       "kitNumber": 9
@@ -377,6 +410,7 @@
       "club": "Lazio",
       "nation": "Portugal",
       "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/436193.png",
       "kitNumber": 47
@@ -388,6 +422,7 @@
       "club": "Lazio",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/436244.png",
       "kitNumber": 63

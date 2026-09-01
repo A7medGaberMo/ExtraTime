@@ -40,7 +40,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ESP"
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
         },
         "value": 105,
         "valueLabel": {
@@ -61,7 +62,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ENG"
+          "fallbackText": "ENG",
+          "primaryUrl": "https://flagcdn.com/w80/gb-eng.png"
         },
         "value": 104,
         "valueLabel": {
@@ -82,7 +84,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "NED"
+          "fallbackText": "NED",
+          "primaryUrl": "https://flagcdn.com/w80/nl.png"
         },
         "value": 96,
         "valueLabel": {
@@ -103,7 +106,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "URU"
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
         },
         "value": 89,
         "valueLabel": {
@@ -124,7 +128,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "POR"
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
         },
         "value": 61,
         "valueLabel": {
@@ -176,7 +181,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "GER"
+          "fallbackText": "GER",
+          "primaryUrl": "https://flagcdn.com/w80/de.png"
         },
         "value": 58,
         "valueLabel": {
@@ -192,12 +198,13 @@
           "ar": "إسبانيا"
         },
         "subText": {
-          "en": "4x Champions (Record)",
-          "ar": "بطل أوروبا 4 مرات (الرقم القياسي)"
+          "en": "4x Champions",
+          "ar": "بطل أوروبا 4 مرات"
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ESP"
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
         },
         "value": 53,
         "valueLabel": {
@@ -218,7 +225,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ITA"
+          "fallbackText": "ITA",
+          "primaryUrl": "https://flagcdn.com/w80/it.png"
         },
         "value": 49,
         "valueLabel": {
@@ -239,7 +247,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "POR"
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
         },
         "value": 44,
         "valueLabel": {
@@ -308,12 +317,13 @@
           "ar": "الأرجنتين"
         },
         "subText": {
-          "en": "16x Champions",
-          "ar": "بطل كوبا أمريكا 16 مرة (رقم قياسي)"
+          "en": "Argentina",
+          "ar": "الأرجنتين"
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ARG"
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
         },
         "value": 132,
         "valueLabel": {
@@ -334,7 +344,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "URU"
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
         },
         "value": 115,
         "valueLabel": {
@@ -355,7 +366,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "BRA"
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
         },
         "value": 109,
         "valueLabel": {
@@ -376,7 +388,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "PAR"
+          "fallbackText": "PAR",
+          "primaryUrl": "https://flagcdn.com/w80/py.png"
         },
         "value": 71,
         "valueLabel": {
@@ -397,7 +410,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "CHI"
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
         },
         "value": 67,
         "valueLabel": {
@@ -445,13 +459,14 @@
           "ar": "سيرخيو راموس"
         },
         "subText": {
-          "en": "Real Madrid, PSG & Sevilla (4x Winner)",
+          "en": "Real Madrid, PSG & Sevilla",
           "ar": "ريال مدريد وباريس وإشبيلية (بطل 4 مرات)"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "SR4"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "SR4",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Sergio_Ramos_2018.jpg"
         },
         "value": 142,
         "valueLabel": {
@@ -472,8 +487,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/milan.png",
-          "fallbackText": "MAL3"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png",
+          "fallbackText": "MAL3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg"
         },
         "value": 135,
         "valueLabel": {
@@ -489,13 +505,14 @@
           "ar": "روبرتو كارلوس"
         },
         "subText": {
-          "en": "Real Madrid & Fenerbahçe (3x Winner)",
+          "en": "Real Madrid & Fenerbahçe",
           "ar": "ريال مدريد وفنربخشة (بطل 3 مرات)"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "RC3"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "RC3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Roberto_Carlos_2018.jpg"
         },
         "value": 120,
         "valueLabel": {
@@ -511,13 +528,14 @@
           "ar": "كارليس بويول"
         },
         "subText": {
-          "en": "FC Barcelona (3x Winner - El Capitán)",
-          "ar": "برشلونة (بطل 3 مرات - القائد)"
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "PUY"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "PUY",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Premios_Goya_2020_-_Carles_Pujol.jpg/330px-Premios_Goya_2020_-_Carles_Pujol.jpg"
         },
         "value": 115,
         "valueLabel": {
@@ -533,12 +551,14 @@
           "ar": "داني ألفيس"
         },
         "subText": {
-          "en": "Sevilla, Barca, Juventus & PSG (3x Winner)",
+          "en": "Sevilla, Barca, Juventus & PSG",
           "ar": "إشبيلية وبرشلونة ويوفي وباريس (بطل 3 مرات)"
         },
         "media": {
           "type": "player",
-          "fallbackText": "ALV"
+          "fallbackText": "ALV",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dani_Alves_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
         },
         "value": 111,
         "valueLabel": {

@@ -14,6 +14,7 @@
       "club": "Al-Ahli",
       "nation": "Senegal",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2986.png",
       "kitNumber": 16
@@ -25,6 +26,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/310827.png",
       "kitNumber": 1
@@ -36,6 +38,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/432778.png",
       "kitNumber": 62
@@ -47,6 +50,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576231.png",
       "kitNumber": 72
@@ -58,6 +62,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/642081.png",
       "kitNumber": 22
@@ -69,6 +74,7 @@
       "club": "Al-Ahli",
       "nation": "Turkey",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30521.png",
       "kitNumber": 28
@@ -80,6 +86,7 @@
       "club": "Al-Ahli",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30424.png",
       "kitNumber": 3
@@ -91,6 +98,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44367.png",
       "kitNumber": 27
@@ -102,6 +110,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383175.png",
       "kitNumber": 2
@@ -113,6 +122,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280501.png",
       "kitNumber": 31
@@ -124,6 +134,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542829.png",
       "kitNumber": 46
@@ -135,6 +146,7 @@
       "club": "Al-Ahli",
       "nation": "Belgium",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/346895.png",
       "kitNumber": 32
@@ -146,6 +158,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/369413.png",
       "kitNumber": 5
@@ -157,6 +170,7 @@
       "club": "Al-Ahli",
       "nation": "Gambia",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/513019.png",
       "kitNumber": 25
@@ -168,6 +182,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610449.png",
       "kitNumber": 23
@@ -179,6 +194,7 @@
       "club": "Al-Ahli",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162887.png",
       "kitNumber": 10
@@ -190,6 +206,7 @@
       "club": "Al-Ahli",
       "nation": "Armenia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/43565.png",
       "kitNumber": 8
@@ -201,6 +218,7 @@
       "club": "Al-Ahli",
       "nation": "Kuwait",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576271.png",
       "kitNumber": 11
@@ -212,6 +230,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/432033.png",
       "kitNumber": 6
@@ -223,6 +242,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/269172.png",
       "kitNumber": 30
@@ -234,6 +254,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/578970.png",
       "kitNumber": 66
@@ -245,6 +266,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/432031.png",
       "kitNumber": 29
@@ -256,6 +278,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/312652.png",
       "kitNumber": 47
@@ -267,6 +290,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668435.png",
       "kitNumber": null
@@ -278,6 +302,7 @@
       "club": "Al-Ahli",
       "nation": "Cameroon",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343351.png",
       "kitNumber": null
@@ -289,6 +314,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606189.png",
       "kitNumber": null
@@ -300,6 +326,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630220.png",
       "kitNumber": 40
@@ -311,6 +338,7 @@
       "club": "Al-Ahli",
       "nation": "Algeria",
       "tier": "MASTER",
+      "rating": 89,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/635.png",
       "kitNumber": 7
@@ -322,6 +350,7 @@
       "club": "Al-Ahli",
       "nation": "England",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19974.png",
       "kitNumber": 17
@@ -333,6 +362,7 @@
       "club": "Al-Ahli",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41197.png",
       "kitNumber": 13
@@ -344,6 +374,7 @@
       "club": "Al-Ahli",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41112.png",
       "kitNumber": 77
@@ -355,6 +386,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44324.png",
       "kitNumber": 9
@@ -366,6 +398,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/301526.png",
       "kitNumber": 15
@@ -377,6 +410,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668436.png",
       "kitNumber": null
@@ -388,6 +422,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/648447.png",
       "kitNumber": 49
@@ -399,6 +434,7 @@
       "club": "Al-Ahli",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606196.png",
       "kitNumber": null
@@ -410,6 +446,7 @@
       "club": "Al-Ahli",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/352372.png",
       "kitNumber": 20
@@ -421,6 +458,7 @@
       "club": "Al-Ahli",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/414395.png",
       "kitNumber": 78

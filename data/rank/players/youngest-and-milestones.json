@@ -34,13 +34,14 @@
           "ar": "أنسو فاتي"
         },
         "subText": {
-          "en": "Barcelona (17 years, 40 days)",
-          "ar": "برشلونة (17 سنة و40 يومًا)"
+          "en": "Barcelona",
+          "ar": "برشلونة"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "FAT"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "FAT",
+          "primaryUrl": "https://media.api-sports.io/football/players/127814.png"
         },
         "value": 6249,
         "valueLabel": {
@@ -56,13 +57,14 @@
           "ar": "لامين يامال"
         },
         "subText": {
-          "en": "Barcelona (17 years, 68 days)",
-          "ar": "برشلونة (17 سنة و68 يومًا)"
+          "en": "Barcelona",
+          "ar": "برشلونة"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "YAM"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "YAM",
+          "primaryUrl": "https://media.api-sports.io/football/players/388480.png"
         },
         "value": 6277,
         "valueLabel": {
@@ -78,8 +80,8 @@
           "ar": "جورج إيلينيكينا"
         },
         "subText": {
-          "en": "Royal Antwerp (17 years, 119 days)",
-          "ar": "رويال أنتويرب (17 سنة و119 يومًا)"
+          "en": "Royal Antwerp",
+          "ar": "رويال أنتويرب"
         },
         "media": {
           "type": "player",
@@ -99,12 +101,14 @@
           "ar": "أنطونيو نوسا"
         },
         "subText": {
-          "en": "Club Brugge (17 years, 149 days)",
-          "ar": "كلوب بروج (17 سنة و149 يومًا)"
+          "en": "Club Brugge",
+          "ar": "كلوب بروج"
         },
         "media": {
           "type": "player",
-          "fallbackText": "NUS"
+          "fallbackText": "NUS",
+          "primaryUrl": "https://media.api-sports.io/football/players/313885.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/569.png"
         },
         "value": 6358,
         "valueLabel": {
@@ -120,12 +124,13 @@
           "ar": "بيتر أوفوري كواي"
         },
         "subText": {
-          "en": "Olympiacos (17 years, 194 days)",
-          "ar": "أولمبياكوس (17 سنة و194 يومًا)"
+          "en": "Olympiacos",
+          "ar": "أولمبياكوس"
         },
         "media": {
           "type": "player",
-          "fallbackText": "OFO"
+          "fallbackText": "OFO",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/553.png"
         },
         "value": 6403,
         "valueLabel": {
@@ -172,11 +177,13 @@
         },
         "subText": {
           "en": "Blackburn & Newcastle",
-          "ar": "بلاكبيرن ونيوكاسل (الرقم القياسي التاريخي)"
+          "ar": "بلاكبيرن ونيوكاسل"
         },
         "media": {
           "type": "player",
-          "fallbackText": "SHE"
+          "fallbackText": "SHE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Alan_Shearer_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/34.png"
         },
         "value": 56,
         "valueLabel": {
@@ -197,8 +204,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "LAM8"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "LAM8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Frank_Lampard_2019.jpg/330px-Frank_Lampard_2019.jpg"
         },
         "value": 43,
         "valueLabel": {
@@ -219,8 +227,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/tottenham.png",
-          "fallbackText": "HK10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
         },
         "value": 33,
         "valueLabel": {
@@ -241,8 +250,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "SG8"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "SG8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Steven_Gerrard_2018.jpg/330px-Steven_Gerrard_2018.jpg"
         },
         "value": 32,
         "valueLabel": {
@@ -263,7 +273,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "NOB"
+          "fallbackText": "NOB",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/48.png"
         },
         "value": 28,
         "valueLabel": {

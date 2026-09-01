@@ -42,6 +42,7 @@ async function hydratePlayers(ctx: GenericQueryCtx<DataModel>, players: Doc<'pla
       kitNumber: p.kitNumber,
       imageUrl: p.imageUrl,
       seasonYear: p.seasonYear,
+      rating: p.rating,
       club: club?.name ?? 'World Football Club',
       clubLogo: club?.logo ?? '',
       nation: nation?.name ?? 'International',

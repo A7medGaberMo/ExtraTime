@@ -13,9 +13,10 @@ interface ClubCrestProps {
   clubName: string;
   clubLogoUrl?: string;
   className?: string;
+  imgClassName?: string;
 }
 
-export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestProps) {
+export function ClubCrestBadge({ clubName, clubLogoUrl, className, imgClassName }: ClubCrestProps) {
   const [error, setError] = useState(false);
 
   const cleanName = clubName?.trim() || '';
@@ -35,7 +36,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
     return (
       <div
         className={cn(
-          'relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-amber-400/50 bg-slate-950/80 p-1 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105 md:h-8 md:w-8',
+          'relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-amber-400/50 bg-slate-950/80 p-0.5 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
           className,
         )}
         title="Global Icons & Legends"
@@ -44,7 +45,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
         <img
           src="/logos/et-logo-metallic-gold.svg"
           alt="Icon Team"
-          className="h-full w-full object-contain drop-shadow-[0_0_6px_rgba(212,175,55,0.7)] filter"
+          className={cn('h-full w-full max-h-full max-w-full object-contain drop-shadow-[0_0_6px_rgba(212,175,55,0.7)] filter', imgClassName)}
         />
       </div>
     );
@@ -68,7 +69,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
   return (
     <div
       className={cn(
-        'relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/25 bg-slate-950/70 p-1 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105 md:h-8 md:w-8',
+        'relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/25 bg-slate-950/70 p-0.5 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
         className,
       )}
       title={clubName}
@@ -80,7 +81,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className }: ClubCrestPr
           alt={clubName}
           referrerPolicy="no-referrer"
           onError={() => setError(true)}
-          className="h-full w-full object-contain drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] filter"
+          className={cn('h-full w-full max-h-full max-w-full object-contain drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] filter', imgClassName)}
         />
       ) : (
         <div className="flex items-center justify-center text-[9px] font-black tracking-tighter text-white/80 uppercase">
@@ -95,9 +96,10 @@ interface CountryFlagProps {
   nationName: string;
   flagUrl?: string;
   className?: string;
+  imgClassName?: string;
 }
 
-export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlagProps) {
+export function CountryFlagBadge({ nationName, flagUrl, className, imgClassName }: CountryFlagProps) {
   const [error, setError] = useState(false);
 
   // Flag ISO codes map for Flagcdn
@@ -235,16 +237,46 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
     kuwait: 'kw',
     bahrain: 'bh',
     palestine: 'ps',
+    'united states of america': 'us',
+    'great britain': 'gb',
+    uk: 'gb',
+    eng: 'gb-eng',
+    fra: 'fr',
+    esp: 'es',
+    bra: 'br',
+    arg: 'ar',
+    ger: 'de',
+    ita: 'it',
+    por: 'pt',
+    ned: 'nl',
+    cro: 'hr',
+    bel: 'be',
+    sui: 'ch',
+    aut: 'at',
+    nor: 'no',
+    den: 'dk',
+    swe: 'se',
+    pol: 'pl',
+    uru: 'uy',
+    col: 'co',
+    mex: 'mx',
+    mar: 'ma',
+    egy: 'eg',
+    sen: 'sn',
+    nga: 'ng',
+    ksa: 'sa',
+    kor: 'kr',
+    jpn: 'jp',
   };
 
   const cleanNation = (nationName || '').trim().toLowerCase();
   const iso = countryIso[cleanNation];
-  const logoSrc = flagUrl || (iso ? `https://flagcdn.com/w40/${iso}.png` : null);
+  const logoSrc = flagUrl || (iso ? `https://flagcdn.com/w160/${iso}.png` : null);
 
   return (
     <div
       className={cn(
-        'relative flex h-5 w-7 shrink-0 items-center justify-center overflow-hidden rounded-md border border-white/25 bg-slate-950/70 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105 md:h-5 md:w-8',
+        'relative flex h-5 w-7 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-white/25 bg-slate-950/70 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
         className,
       )}
       title={nationName}
@@ -256,7 +288,7 @@ export function CountryFlagBadge({ nationName, flagUrl, className }: CountryFlag
           alt={nationName}
           referrerPolicy="no-referrer"
           onError={() => setError(true)}
-          className="h-full w-full object-cover drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] filter"
+          className={cn('h-full w-full object-cover drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] filter', imgClassName)}
         />
       ) : (
         <AppIcon icon={Flag} size={12} weight="duotone" className="text-white/80" />

@@ -14,6 +14,7 @@
       "club": "Lecce",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/56459.png",
       "kitNumber": 30
@@ -25,6 +26,7 @@
       "club": "Lecce",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/495.png",
       "kitNumber": 1
@@ -36,6 +38,7 @@
       "club": "Lecce",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/628513.png",
       "kitNumber": 95
@@ -47,6 +50,7 @@
       "club": "Lecce",
       "nation": "Bulgaria",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/446138.png",
       "kitNumber": 40
@@ -58,6 +62,7 @@
       "club": "Lecce",
       "nation": "Finland",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/156619.png",
       "kitNumber": 32
@@ -69,6 +74,7 @@
       "club": "Lecce",
       "nation": "Angola",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/291589.png",
       "kitNumber": 4
@@ -80,6 +86,7 @@
       "club": "Lecce",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31543.png",
       "kitNumber": 25
@@ -91,6 +98,7 @@
       "club": "Lecce",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/23253.png",
       "kitNumber": 18
@@ -102,6 +110,7 @@
       "club": "Lecce",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203219.png",
       "kitNumber": 5
@@ -113,6 +122,7 @@
       "club": "Lecce",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161702.png",
       "kitNumber": 17
@@ -124,6 +134,7 @@
       "club": "Lecce",
       "nation": "Ireland",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19738.png",
       "kitNumber": 3
@@ -135,6 +146,7 @@
       "club": "Lecce",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280431.png",
       "kitNumber": 8
@@ -146,6 +158,7 @@
       "club": "Lecce",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/458543.png",
       "kitNumber": 13
@@ -157,6 +170,7 @@
       "club": "Lecce",
       "nation": "Portugal",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/455316.png",
       "kitNumber": 44
@@ -168,6 +182,7 @@
       "club": "Lecce",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/558590.png",
       "kitNumber": 70
@@ -179,6 +194,7 @@
       "club": "Lecce",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/56560.png",
       "kitNumber": 41
@@ -190,6 +206,7 @@
       "club": "Lecce",
       "nation": "Mali",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1748.png",
       "kitNumber": 29
@@ -201,6 +218,7 @@
       "club": "Lecce",
       "nation": "Netherlands",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387537.png",
       "kitNumber": 28
@@ -212,6 +230,7 @@
       "club": "Lecce",
       "nation": "Bosnia and Herzegovina",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340179.png",
       "kitNumber": 80
@@ -223,6 +242,7 @@
       "club": "Lecce",
       "nation": "Denmark",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/589739.png",
       "kitNumber": 7
@@ -234,6 +254,7 @@
       "club": "Lecce",
       "nation": "Senegal",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/334925.png",
       "kitNumber": 79
@@ -245,6 +266,7 @@
       "club": "Lecce",
       "nation": "Zambia",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/118956.png",
       "kitNumber": 19
@@ -256,6 +278,7 @@
       "club": "Lecce",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6662.png",
       "kitNumber": 50
@@ -267,6 +290,7 @@
       "club": "Lecce",
       "nation": "Serbia",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/264122.png",
       "kitNumber": 9
@@ -278,6 +302,7 @@
       "club": "Lecce",
       "nation": "Romania",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327763.png",
       "kitNumber": 42
@@ -289,6 +314,7 @@
       "club": "Lecce",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/589789.png",
       "kitNumber": 43

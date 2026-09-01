@@ -34,14 +34,10 @@
           "en": "Lionel Messi",
           "ar": "ليونيل ميسي"
         },
-        "subText": {
-          "en": "8x Winner",
-          "ar": "تُوّج بالجائزة 8 مرات"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/argentina.png",
-          "fallbackText": "LM10"
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 17,
         "valueLabel": {
@@ -56,14 +52,10 @@
           "en": "Cristiano Ronaldo",
           "ar": "كريستيانو رونالدو"
         },
-        "subText": {
-          "en": "5x Winner",
-          "ar": "تُوّج بالجائزة 5 مرات"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/portugal.png",
-          "fallbackText": "CR7"
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
         },
         "value": 15,
         "valueLabel": {
@@ -78,14 +70,10 @@
           "en": "Zinedine Zidane",
           "ar": "زين الدين زيدان"
         },
-        "subText": {
-          "en": "3x Winner",
-          "ar": "تُوّج بالجائزة 3 مرات"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/france.png",
-          "fallbackText": "ZZ"
+          "fallbackText": "ZZ",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg"
         },
         "value": 6,
         "valueLabel": {
@@ -100,14 +88,10 @@
           "en": "Ronaldo Nazário",
           "ar": "رونالدو البرازيلي"
         },
-        "subText": {
-          "en": "3x Winner",
-          "ar": "تُوّج بالجائزة 3 مرات"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/brazil.png",
-          "fallbackText": "R9"
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg"
         },
         "value": 5,
         "valueLabel": {
@@ -122,14 +106,10 @@
           "en": "Ronaldinho Gaúcho",
           "ar": "رونالدينيو غاوشو"
         },
-        "subText": {
-          "en": "2x Winner",
-          "ar": "تُوّج بالجائزة مرتين"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/brazil.png",
-          "fallbackText": "R10"
+          "fallbackText": "R10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sports_Festival_2025_-_4_%28cropped%29.jpg/330px-Sports_Festival_2025_-_4_%28cropped%29.jpg"
         },
         "value": 3,
         "valueLabel": {
@@ -181,8 +161,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LM10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 100,
         "valueLabel": {
@@ -203,8 +184,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "CR7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
         },
         "value": 96,
         "valueLabel": {
@@ -225,8 +207,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "RL9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 82,
         "valueLabel": {
@@ -247,8 +230,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LS9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
         },
         "value": 80,
         "valueLabel": {
@@ -269,8 +253,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "EH9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 72,
         "valueLabel": {
@@ -317,13 +302,14 @@
           "ar": "رونالدو البرازيلي (1997)"
         },
         "subText": {
-          "en": "Inter Milan (21 years, 95 days - All-Time Record)",
-          "ar": "إنتر ميلان (21 سنة و95 يومًا - الرقم القياسي التاريخي)"
+          "en": "Inter Milan",
+          "ar": "إنتر ميلان"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/inter.png",
-          "fallbackText": "R9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/505.png",
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg"
         },
         "value": 7761,
         "valueLabel": {
@@ -339,13 +325,14 @@
           "ar": "مايكل أوين (2001)"
         },
         "subText": {
-          "en": "Liverpool (22 years, 4 days)",
-          "ar": "ليفربول (22 سنة و4 أيام)"
+          "en": "Liverpool",
+          "ar": "ليفربول"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "OWE"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "OWE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Michael_Owen_2013.jpg"
         },
         "value": 8040,
         "valueLabel": {
@@ -361,13 +348,14 @@
           "ar": "ليونيل ميسي (2009)"
         },
         "subText": {
-          "en": "Barcelona (22 years, 160 days)",
-          "ar": "برشلونة (22 سنة و160 يومًا)"
+          "en": "Barcelona",
+          "ar": "برشلونة"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LM10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 8197,
         "valueLabel": {
@@ -383,13 +371,14 @@
           "ar": "جورج بيست (1968)"
         },
         "subText": {
-          "en": "Manchester United (22 years, 216 days)",
-          "ar": "مانشستر يونايتد (22 سنة و216 يومًا)"
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "BEST"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "BEST",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/George_Best_1976.jpg"
         },
         "value": 8253,
         "valueLabel": {
@@ -405,12 +394,14 @@
           "ar": "أوزيبيو (1965)"
         },
         "subText": {
-          "en": "Benfica (23 years, 337 days)",
-          "ar": "بنفيكا (23 سنة و337 يومًا)"
+          "en": "Benfica",
+          "ar": "بنفيكا"
         },
         "media": {
           "type": "player",
-          "fallbackText": "EUS"
+          "fallbackText": "EUS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Eus%C3%A9bio_1966.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/211.png"
         },
         "value": 8735,
         "valueLabel": {
@@ -457,13 +448,13 @@
           "ar": "ليونيل ميسي"
         },
         "subText": {
-          "en": "Argentina (5 Awards - Single Tournament World Record)",
-          "ar": "الأرجنتين (5 جوائز - الرقم القياسي في نسخة واحدة)"
+          "en": "Argentina",
+          "ar": "الأرجنتين"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/argentina.png",
-          "fallbackText": "LM10"
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 5,
         "valueLabel": {
@@ -484,8 +475,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/france.png",
-          "fallbackText": "KM7"
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 3,
         "valueLabel": {
@@ -506,7 +497,6 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/usa.png",
           "fallbackText": "PUL"
         },
         "value": 2,
@@ -528,7 +518,6 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/england.png",
           "fallbackText": "SAK7"
         },
         "value": 1,
@@ -545,13 +534,13 @@
           "ar": "فينيسيوس جونيور"
         },
         "subText": {
-          "en": "Brazil (0 MOTM Awards)",
-          "ar": "البرازيل (0 جوائز رجل المباراة)"
+          "en": "Brazil",
+          "ar": "البرازيل"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/brazil.png",
-          "fallbackText": "VJR"
+          "fallbackText": "VJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Vinicius_Junior_2021.jpg"
         },
         "value": 0,
         "valueLabel": {
@@ -599,11 +588,13 @@
         },
         "subText": {
           "en": "PSG",
-          "ar": "باريس سان جيرمان (الرقم القياسي التاريخي)"
+          "ar": "باريس سان جيرمان"
         },
         "media": {
           "type": "player",
-          "fallbackText": "KM"
+          "fallbackText": "KM",
+          "primaryUrl": "https://media.api-sports.io/football/players/278.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
         },
         "value": 200,
         "valueLabel": {
@@ -624,8 +615,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "EH9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://media.api-sports.io/football/players/589367.png"
         },
         "value": 180,
         "valueLabel": {
@@ -646,8 +638,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "PED8"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "PED8",
+          "primaryUrl": "https://media.api-sports.io/football/players/133609.png"
         },
         "value": 100,
         "valueLabel": {
@@ -668,8 +661,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "KUN"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KUN",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ag%C3%BCero_in_2018.jpg/330px-Ag%C3%BCero_in_2018.jpg"
         },
         "value": 80,
         "valueLabel": {
@@ -690,8 +684,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "WR10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "WR10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wayne_Rooney_%2850121495731%29_%28cropped%29.jpg/330px-Wayne_Rooney_%2850121495731%29_%28cropped%29.jpg"
         },
         "value": 65,
         "valueLabel": {
@@ -738,12 +733,13 @@
         },
         "subText": {
           "en": "Real Madrid & Croatia",
-          "ar": "ريال مدريد وكرواتيا (الرقم القياسي التاريخي للنقاط)"
+          "ar": "ريال مدريد وكرواتيا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "LM10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Luka_Modri%C4%87_2018.jpg"
         },
         "value": 753,
         "valueLabel": {
@@ -764,8 +760,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "CR7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
         },
         "value": 745,
         "valueLabel": {
@@ -781,13 +778,14 @@
           "ar": "ليونيل ميسي (2019)"
         },
         "subText": {
-          "en": "Barcelona (6th Ballon d'Or)",
-          "ar": "برشلونة (الكرة الذهبية السادسة)"
+          "en": "Barcelona",
+          "ar": "برشلونة"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LM10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 686,
         "valueLabel": {
@@ -803,13 +801,14 @@
           "ar": "كريم بنزيما (2022)"
         },
         "subText": {
-          "en": "Real Madrid (Landslide Victory )",
-          "ar": "ريال مدريد (اكتساح بفارق 356 نقطة عن الثاني)"
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KB9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
         },
         "value": 549,
         "valueLabel": {
@@ -830,8 +829,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/argentina.png",
-          "fallbackText": "LM10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/505.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 462,
         "valueLabel": {

@@ -96,6 +96,13 @@ export const PLAYER_VISUALS: Record<string, EntityVisualProfile> = {
     initials: "LM10",
     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Luka_Modri%C4%87_2018.jpg",
   },
+  "Antoine Griezmann": {
+    primaryColor: "#CB3524",
+    secondaryColor: "#1B325F",
+    accentColor: "#FFFFFF",
+    initials: "AG7",
+    imageUrl: "https://media.api-sports.io/football/players/56.png",
+  },
   "Harry Kane": {
     primaryColor: "#CE1124",
     secondaryColor: "#FFFFFF",
@@ -668,6 +675,9 @@ const ENTITY_ALIASES: Record<string, string> = {
   "إبراهيموفيتش": "Zlatan Ibrahimović",
   "لوكا مودريتش": "Luka Modrić",
   "مودريتش": "Luka Modrić",
+  "أنطوان جريزمان": "Antoine Griezmann",
+  "جريزمان": "Antoine Griezmann",
+  "انطوان جريزمان": "Antoine Griezmann",
   "هاري كين": "Harry Kane",
   "تيري هنري": "Thierry Henry",
   "هنري": "Thierry Henry",

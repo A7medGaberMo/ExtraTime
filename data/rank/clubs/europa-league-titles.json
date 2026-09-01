@@ -33,12 +33,13 @@
           "ar": "إشبيلية"
         },
         "subText": {
-          "en": "Record 7-time winners",
-          "ar": "البطل التاريخي"
+          "en": "La Liga",
+          "ar": "الدوري الإسباني"
         },
         "media": {
           "type": "club",
-          "fallbackText": "SEV"
+          "fallbackText": "SEV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/536.png"
         },
         "value": 7,
         "valueLabel": {
@@ -59,7 +60,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "ATM"
+          "fallbackText": "ATM",
+          "primaryUrl": "https://media.api-sports.io/football/teams/530.png"
         },
         "value": 3,
         "valueLabel": {
@@ -80,7 +82,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "CHE"
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 2,
         "valueLabel": {
@@ -101,7 +104,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "MU"
+          "fallbackText": "MU",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png"
         },
         "value": 1,
         "valueLabel": {
@@ -122,7 +126,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "ARS"
+          "fallbackText": "ARS",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png"
         },
         "value": 0,
         "valueLabel": {

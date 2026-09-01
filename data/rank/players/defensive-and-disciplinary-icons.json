@@ -36,11 +36,12 @@
         },
         "subText": {
           "en": "Aston Villa, City, Everton, WBA",
-          "ar": "أستون فيلا والسيتي وإيفرتون (الرقم القياسي التاريخي)"
+          "ar": "أستون فيلا والسيتي وإيفرتون"
         },
         "media": {
           "type": "player",
-          "fallbackText": "GB"
+          "fallbackText": "GB",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/66.png"
         },
         "value": 633,
         "valueLabel": {
@@ -61,7 +62,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "KD"
+          "fallbackText": "KD",
+          "primaryUrl": "https://media.api-sports.io/football/players/237819.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/41.png"
         },
         "value": 605,
         "valueLabel": {
@@ -82,8 +85,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "FEL"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "FEL",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Marouane_Fellaini_2018.jpg/330px-Marouane_Fellaini_2018.jpg"
         },
         "value": 558,
         "valueLabel": {
@@ -104,8 +108,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "SCH"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "SCH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/P_Scholes.jpg/330px-P_Scholes.jpg"
         },
         "value": 466,
         "valueLabel": {
@@ -126,7 +131,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "MIL"
+          "fallbackText": "MIL",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 441,
         "valueLabel": {
@@ -174,11 +180,12 @@
         },
         "subText": {
           "en": "Everton, Man City, Villa, QPR",
-          "ar": "إيفرتون ومان سيتي وفيلا (الرقم القياسي التاريخي)"
+          "ar": "إيفرتون ومان سيتي وفيلا"
         },
         "media": {
           "type": "player",
-          "fallbackText": "DUN"
+          "fallbackText": "DUN",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 10,
         "valueLabel": {
@@ -199,8 +206,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "CAR23"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "CAR23",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Football_against_poverty_2014_-_Jamie_Carragher_%28cropped%29.jpg/330px-Football_against_poverty_2014_-_Jamie_Carragher_%28cropped%29.jpg"
         },
         "value": 7,
         "valueLabel": {
@@ -221,7 +229,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "JAG"
+          "fallbackText": "JAG",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/45.png"
         },
         "value": 6,
         "valueLabel": {
@@ -242,8 +251,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "EVA"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "EVA",
+          "primaryUrl": "https://media.api-sports.io/football/players/18740.png"
         },
         "value": 4,
         "valueLabel": {
@@ -259,13 +269,14 @@
           "ar": "فينسنت كومباني"
         },
         "subText": {
-          "en": "Manchester City (4x PL Champion)",
-          "ar": "مانشستر سيتي (بطل الدوري 4 مرات)"
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "KOM4"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KOM4",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Kompany_Bayern_Munich_%28cropped%29.jpg/330px-Vincent_Kompany_Bayern_Munich_%28cropped%29.jpg"
         },
         "value": 3,
         "valueLabel": {
@@ -319,7 +330,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "DJ1"
+          "fallbackText": "DJ1",
+          "primaryUrl": "https://media.api-sports.io/football/players/10105.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 13,
         "valueLabel": {
@@ -340,7 +353,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "SOR"
+          "fallbackText": "SOR",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/66.png"
         },
         "value": 12,
         "valueLabel": {
@@ -361,7 +375,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "SCH"
+          "fallbackText": "SCH",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 10,
         "valueLabel": {
@@ -382,7 +397,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "GOM"
+          "fallbackText": "GOM",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png"
         },
         "value": 9,
         "valueLabel": {
@@ -403,7 +419,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "MIG"
         },
         "value": 8,
@@ -453,12 +469,13 @@
         },
         "subText": {
           "en": "Parma & Juventus",
-          "ar": "بارما ويوفنتوس (الرقم القياسي التاريخي)"
+          "ar": "بارما ويوفنتوس"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/juventus.png",
-          "fallbackText": "GIGI"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
+          "fallbackText": "GIGI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg"
         },
         "value": 299,
         "valueLabel": {
@@ -479,7 +496,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/inter.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png",
           "fallbackText": "HAN1"
         },
         "value": 180,
@@ -501,8 +518,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/juventus.png",
-          "fallbackText": "ZOF"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
+          "fallbackText": "ZOF",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Dino_Zoff_%281974%29.jpg/330px-Dino_Zoff_%281974%29.jpg"
         },
         "value": 167,
         "valueLabel": {
@@ -523,7 +541,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "PAG"
+          "fallbackText": "PAG",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png"
         },
         "value": 153,
         "valueLabel": {
@@ -544,7 +563,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "PER"
+          "fallbackText": "PER",
+          "primaryUrl": "https://media.api-sports.io/football/players/288055.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
         },
         "value": 135,
         "valueLabel": {
@@ -594,12 +615,13 @@
         },
         "subText": {
           "en": "Real Madrid & Porto",
-          "ar": "ريال مدريد وبورتو (الرقم القياسي التاريخي)"
+          "ar": "ريال مدريد وبورتو"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "IK1"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "IK1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg"
         },
         "value": 7,
         "valueLabel": {
@@ -620,8 +642,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "CECH"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "CECH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg"
         },
         "value": 5,
         "valueLabel": {
@@ -642,7 +665,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/atletico.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png",
           "fallbackText": "OBL"
         },
         "value": 4,
@@ -664,8 +687,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "TC1"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "TC1",
+          "primaryUrl": "https://media.api-sports.io/football/players/730.png"
         },
         "value": 3,
         "valueLabel": {
@@ -686,8 +710,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "ALI1"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "ALI1",
+          "primaryUrl": "https://media.api-sports.io/football/players/280.png"
         },
         "value": 2,
         "valueLabel": {
@@ -735,11 +760,13 @@
         },
         "subText": {
           "en": "São Paulo",
-          "ar": "ساو باولو (الرقم القياسي العالمي التاريخي)"
+          "ar": "ساو باولو"
         },
         "media": {
           "type": "player",
-          "fallbackText": "CEN"
+          "fallbackText": "CEN",
+          "primaryUrl": "https://media.api-sports.io/football/players/576652.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/126.png"
         },
         "value": 131,
         "valueLabel": {
@@ -760,7 +787,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "CHI"
+          "fallbackText": "CHI",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/95.png"
         },
         "value": 67,
         "valueLabel": {
@@ -781,7 +809,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "CAM"
+          "fallbackText": "CAM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Jorge_Campos_in_2016.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/1605.png"
         },
         "value": 46,
         "valueLabel": {
@@ -802,7 +832,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "VEG"
+          "fallbackText": "VEG",
+          "primaryUrl": "https://media.api-sports.io/football/players/70366.png"
         },
         "value": 45,
         "valueLabel": {
@@ -823,7 +854,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "HIG"
+          "fallbackText": "HIG",
+          "primaryUrl": "https://media.api-sports.io/football/players/10163.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png"
         },
         "value": 43,
         "valueLabel": {

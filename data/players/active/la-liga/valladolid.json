@@ -14,6 +14,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/309917.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/602558.png",
       "kitNumber": 26
@@ -36,6 +38,7 @@
       "club": "Valladolid",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20946.png",
       "kitNumber": 2
@@ -47,6 +50,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/298064.png",
       "kitNumber": 4
@@ -58,6 +62,7 @@
       "club": "Valladolid",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/390438.png",
       "kitNumber": 23
@@ -69,6 +74,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/197196.png",
       "kitNumber": 5
@@ -80,6 +86,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/354142.png",
       "kitNumber": 27
@@ -91,6 +98,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/661803.png",
       "kitNumber": 35
@@ -102,6 +110,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181463.png",
       "kitNumber": 8
@@ -113,6 +122,7 @@
       "club": "Valladolid",
       "nation": "Croatia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/14341.png",
       "kitNumber": 24
@@ -124,6 +134,7 @@
       "club": "Valladolid",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/191422.png",
       "kitNumber": 6
@@ -135,6 +146,7 @@
       "club": "Valladolid",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20641.png",
       "kitNumber": 21
@@ -146,6 +158,7 @@
       "club": "Valladolid",
       "nation": "Paraguay",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/307565.png",
       "kitNumber": 18
@@ -157,6 +170,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/351131.png",
       "kitNumber": 16
@@ -168,6 +182,7 @@
       "club": "Valladolid",
       "nation": "Uruguay",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195510.png",
       "kitNumber": 19
@@ -179,6 +194,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/285422.png",
       "kitNumber": 15
@@ -190,6 +206,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/506254.png",
       "kitNumber": 28
@@ -201,6 +218,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412083.png",
       "kitNumber": 37
@@ -212,6 +230,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162028.png",
       "kitNumber": 9
@@ -223,6 +242,7 @@
       "club": "Valladolid",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/122233.png",
       "kitNumber": 10
@@ -234,6 +254,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46824.png",
       "kitNumber": 14
@@ -245,6 +266,7 @@
       "club": "Valladolid",
       "nation": "Croatia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/292219.png",
       "kitNumber": 17
@@ -256,6 +278,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336554.png",
       "kitNumber": 11
@@ -267,6 +290,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/179183.png",
       "kitNumber": 12
@@ -278,6 +302,7 @@
       "club": "Valladolid",
       "nation": "Senegal",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/104793.png",
       "kitNumber": 7
@@ -289,6 +314,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/57296.png",
       "kitNumber": 25
@@ -300,6 +326,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/445025.png",
       "kitNumber": 30
@@ -311,6 +338,7 @@
       "club": "Valladolid",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37647.png",
       "kitNumber": 22
@@ -322,6 +350,7 @@
       "club": "Valladolid",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419629.png",
       "kitNumber": 29
@@ -333,6 +362,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/575371.png",
       "kitNumber": 38
@@ -344,6 +374,7 @@
       "club": "Valladolid",
       "nation": "Nigeria",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/586418.png",
       "kitNumber": 40
@@ -355,6 +386,7 @@
       "club": "Valladolid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/405722.png",
       "kitNumber": 32

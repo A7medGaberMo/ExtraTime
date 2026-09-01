@@ -14,6 +14,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30731.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Cagliari",
       "nation": "Serbia",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31601.png",
       "kitNumber": 22
@@ -36,6 +38,7 @@
       "club": "Cagliari",
       "nation": "Albania",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/3737.png",
       "kitNumber": 12
@@ -47,6 +50,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135863.png",
       "kitNumber": 24
@@ -58,6 +62,7 @@
       "club": "Cagliari",
       "nation": "Colombia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2484.png",
       "kitNumber": 26
@@ -69,6 +74,7 @@
       "club": "Cagliari",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383026.png",
       "kitNumber": 3
@@ -80,6 +86,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/200.png",
       "kitNumber": 28
@@ -91,6 +98,7 @@
       "club": "Cagliari",
       "nation": "Slovakia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/321744.png",
       "kitNumber": 33
@@ -102,6 +110,7 @@
       "club": "Cagliari",
       "nation": "Poland",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/40392.png",
       "kitNumber": 4
@@ -113,6 +122,7 @@
       "club": "Cagliari",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41964.png",
       "kitNumber": 32
@@ -124,6 +134,7 @@
       "club": "Cagliari",
       "nation": "Uruguay",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415155.png",
       "kitNumber": 15
@@ -135,6 +146,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/438208.png",
       "kitNumber": 13
@@ -146,6 +158,7 @@
       "club": "Cagliari",
       "nation": "England",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182.png",
       "kitNumber": 8
@@ -157,6 +170,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340700.png",
       "kitNumber": 40
@@ -168,6 +182,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/309388.png",
       "kitNumber": 41
@@ -179,6 +194,7 @@
       "club": "Cagliari",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30505.png",
       "kitNumber": 42
@@ -190,6 +206,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31734.png",
       "kitNumber": 17
@@ -201,6 +218,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30561.png",
       "kitNumber": 14
@@ -212,6 +230,7 @@
       "club": "Cagliari",
       "nation": "Uruguay",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/404523.png",
       "kitNumber": 20
@@ -223,6 +242,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329550.png",
       "kitNumber": 43
@@ -234,6 +254,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/570129.png",
       "kitNumber": 44
@@ -245,6 +266,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/468711.png",
       "kitNumber": 36
@@ -256,6 +278,7 @@
       "club": "Cagliari",
       "nation": "Zambia",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/417892.png",
       "kitNumber": 27
@@ -267,6 +290,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626674.png",
       "kitNumber": 45
@@ -278,6 +302,7 @@
       "club": "Cagliari",
       "nation": "Netherlands",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419627.png",
       "kitNumber": 18
@@ -289,6 +314,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/394183.png",
       "kitNumber": 60
@@ -300,6 +326,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626706.png",
       "kitNumber": 46
@@ -311,6 +338,7 @@
       "club": "Cagliari",
       "nation": "Bulgaria",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341307.png",
       "kitNumber": 38
@@ -322,6 +350,7 @@
       "club": "Cagliari",
       "nation": "Angola",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/140831.png",
       "kitNumber": 47
@@ -333,6 +362,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/215.png",
       "kitNumber": 94
@@ -344,6 +374,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31499.png",
       "kitNumber": 29
@@ -355,6 +386,7 @@
       "club": "Cagliari",
       "nation": "Zambia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/408540.png",
       "kitNumber": 7
@@ -366,6 +398,7 @@
       "club": "Cagliari",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/558647.png",
       "kitNumber": 77
@@ -377,6 +410,7 @@
       "club": "Cagliari",
       "nation": "Senegal",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626704.png",
       "kitNumber": 31
@@ -388,6 +422,7 @@
       "club": "Cagliari",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584116.png",
       "kitNumber": 37

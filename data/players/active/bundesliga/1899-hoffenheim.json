@@ -14,6 +14,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/702.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163066.png",
       "kitNumber": 37
@@ -36,6 +38,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Czech Republic",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1231.png",
       "kitNumber": 34
@@ -47,6 +50,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Turkey",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26300.png",
       "kitNumber": 5
@@ -58,6 +62,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18964.png",
       "kitNumber": 13
@@ -69,6 +74,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Czech Republic",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162964.png",
       "kitNumber": 2
@@ -80,6 +86,7 @@
       "club": "1899 Hoffenheim",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127631.png",
       "kitNumber": 15
@@ -91,6 +98,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304686.png",
       "kitNumber": 40
@@ -102,6 +110,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Switzerland",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278453.png",
       "kitNumber": 21
@@ -113,6 +122,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/408853.png",
       "kitNumber": 39
@@ -124,6 +134,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387306.png",
       "kitNumber": 25
@@ -135,6 +146,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Austria",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/126642.png",
       "kitNumber": 41
@@ -146,6 +158,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Austria",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7327.png",
       "kitNumber": 22
@@ -157,6 +170,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37153.png",
       "kitNumber": 18
@@ -168,6 +182,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Switzerland",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/390586.png",
       "kitNumber": 7
@@ -179,6 +194,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Belgium",
       "tier": "BRONZE",
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/453903.png",
       "kitNumber": 74
@@ -190,6 +206,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202976.png",
       "kitNumber": 6
@@ -201,6 +218,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/418888.png",
       "kitNumber": 42
@@ -212,6 +230,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Austria",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340089.png",
       "kitNumber": 14
@@ -223,6 +242,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Croatia",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/726.png",
       "kitNumber": 27
@@ -234,6 +254,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Czech Republic",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/66019.png",
       "kitNumber": 23
@@ -245,6 +266,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203040.png",
       "kitNumber": 19
@@ -256,6 +278,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Kosovo",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202501.png",
       "kitNumber": 11
@@ -267,6 +290,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387973.png",
       "kitNumber": 33
@@ -278,6 +302,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/460151.png",
       "kitNumber": 43
@@ -289,6 +314,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/650520.png",
       "kitNumber": 29
@@ -300,6 +326,7 @@
       "club": "1899 Hoffenheim",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/381537.png",
       "kitNumber": 44

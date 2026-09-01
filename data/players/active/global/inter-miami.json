@@ -14,6 +14,7 @@
       "club": "Inter Miami",
       "nation": "Canada",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51148.png",
       "kitNumber": 97
@@ -25,6 +26,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50847.png",
       "kitNumber": 13
@@ -36,6 +38,7 @@
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/196737.png",
       "kitNumber": 34
@@ -47,6 +50,7 @@
       "club": "Inter Miami",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/739.png",
       "kitNumber": 3
@@ -58,6 +62,7 @@
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6401.png",
       "kitNumber": 4
@@ -69,6 +74,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/282407.png",
       "kitNumber": 32
@@ -80,6 +86,7 @@
       "club": "Inter Miami",
       "nation": "Uruguay",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/67896.png",
       "kitNumber": 37
@@ -91,6 +98,7 @@
       "club": "Inter Miami",
       "nation": "Jamaica",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/216493.png",
       "kitNumber": 17
@@ -102,6 +110,7 @@
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/306705.png",
       "kitNumber": 2
@@ -113,6 +122,7 @@
       "club": "Inter Miami",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/305799.png",
       "kitNumber": 16
@@ -124,6 +134,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/513293.png",
       "kitNumber": 76
@@ -135,6 +146,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542212.png",
       "kitNumber": 70
@@ -146,6 +158,7 @@
       "club": "Inter Miami",
       "nation": "Ecuador",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/663850.png",
       "kitNumber": 15
@@ -156,7 +169,8 @@
       "position": "CDM/CM",
       "club": "Inter Miami",
       "nation": "Spain",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
+      "rating": 92,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/144.png",
       "kitNumber": 5
@@ -168,6 +182,7 @@
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2472.png",
       "kitNumber": 7
@@ -178,7 +193,8 @@
       "position": "CDM/CM",
       "club": "Inter Miami",
       "nation": "Brazil",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
+      "rating": 91,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/747.png",
       "kitNumber": 18
@@ -190,6 +206,7 @@
       "club": "Inter Miami",
       "nation": "Paraguay",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129886.png",
       "kitNumber": 22
@@ -201,6 +218,7 @@
       "club": "Inter Miami",
       "nation": "England",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/455386.png",
       "kitNumber": 42
@@ -212,6 +230,7 @@
       "club": "Inter Miami",
       "nation": "Honduras",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/325063.png",
       "kitNumber": 41
@@ -223,6 +242,7 @@
       "club": "Inter Miami",
       "nation": "Venezuela",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/144303.png",
       "kitNumber": 8
@@ -234,6 +254,7 @@
       "club": "Inter Miami",
       "nation": "Mexico",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415026.png",
       "kitNumber": 48
@@ -245,6 +266,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/422792.png",
       "kitNumber": 20
@@ -256,6 +278,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542116.png",
       "kitNumber": 59
@@ -267,6 +290,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542272.png",
       "kitNumber": 88
@@ -278,6 +302,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542297.png",
       "kitNumber": 55
@@ -289,6 +314,7 @@
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "ULTIMATE",
+      "rating": 95,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/154.png",
       "kitNumber": 10
@@ -300,6 +326,7 @@
       "club": "Inter Miami",
       "nation": "Uruguay",
       "tier": "ULTIMATE",
+      "rating": 92,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/157.png",
       "kitNumber": 9
@@ -311,6 +338,7 @@
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304383.png",
       "kitNumber": 21
@@ -322,6 +350,7 @@
       "club": "Inter Miami",
       "nation": "Mexico",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6485.png",
       "kitNumber": 19
@@ -333,6 +362,7 @@
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/462860.png",
       "kitNumber": 56
@@ -344,6 +374,7 @@
       "club": "Inter Miami",
       "nation": "Mexico",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542051.png",
       "kitNumber": 52
@@ -355,6 +386,7 @@
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/475582.png",
       "kitNumber": 24

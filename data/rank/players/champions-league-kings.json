@@ -1,0 +1,844 @@
+[
+  {
+    "slug": "ucl-all-time-appearances-players-history",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by total UEFA Champions League matches played",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات الملعوبة في تاريخ دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "UCL proper appearances (group stage to final)",
+      "ar": "المباريات الملعوبة في دوري الأبطال من دور المجموعات حتى النهائي"
+    },
+    "metricLabel": {
+      "en": "Appearances",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "appearances",
+      "cr7",
+      "casillas",
+      "messi",
+      "benzema",
+      "xavi"
+    ],
+    "answers": [
+      {
+        "answerKey": "ucm_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Man United, Real Madrid & Juventus",
+          "ar": "مان يونايتد، ريال مدريد ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 183,
+        "valueLabel": {
+          "en": "183 Matches",
+          "ar": "183 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucm_casillas",
+        "name": {
+          "en": "Iker Casillas",
+          "ar": "إيكر كاسياس"
+        },
+        "subText": {
+          "en": "Real Madrid & Porto",
+          "ar": "ريال مدريد وبورتو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "IK1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 177,
+        "valueLabel": {
+          "en": "177 Matches",
+          "ar": "177 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucm_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Barcelona & PSG",
+          "ar": "برشلونة وباريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 163,
+        "valueLabel": {
+          "en": "163 Matches",
+          "ar": "163 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucm_benzema",
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "subText": {
+          "en": "Lyon & Real Madrid",
+          "ar": "ليون وريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 152,
+        "valueLabel": {
+          "en": "152 Matches",
+          "ar": "152 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucm_xavi",
+        "name": {
+          "en": "Xavi Hernández",
+          "ar": "تشافي هيرنانديز"
+        },
+        "subText": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "X6",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Xavi_Hernandez_2011.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 151,
+        "valueLabel": {
+          "en": "151 Matches",
+          "ar": "151 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-penalty-goals-all-time-leaders",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 goalscorers by UEFA Champions League penalty goals scored",
+      "ar": "رتّب الهدافين الخمسة حسب عدد أهداف ركلات الجزاء في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Penalties scored in UCL matches (excluding shootouts)",
+      "ar": "ركلات الجزاء المسجلة أثناء مباريات دوري الأبطال"
+    },
+    "metricLabel": {
+      "en": "Penalty Goals",
+      "ar": "أهداف جزاء"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "penalties",
+      "cr7",
+      "messi",
+      "lewandowski"
+    ],
+    "answers": [
+      {
+        "answerKey": "ucp_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 19,
+        "valueLabel": {
+          "en": "19 Penalty Goals",
+          "ar": "19 هدفًا من جزاء"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucp_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 18,
+        "valueLabel": {
+          "en": "18 Penalty Goals",
+          "ar": "18 هدفًا من جزاء"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucp_lewa",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Penalty Goals",
+          "ar": "16 هدفًا من جزاء"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucp_ruud",
+        "name": {
+          "en": "Ruud van Nistelrooy",
+          "ar": "رود فان نيستلروي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RVN10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Ruud_van_Nistelrooy_2010.jpg"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Penalty Goals",
+          "ar": "11 هدفًا من جزاء"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucp_mbappe",
+        "name": {
+          "en": "Kylian Mbappé",
+          "ar": "كيليان مبابي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+        },
+        "value": 9,
+        "valueLabel": {
+          "en": "9 Penalty Goals",
+          "ar": "9 أهداف من جزاء"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-direct-free-kick-goals-masters",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by direct free-kick goals in UEFA Champions League history",
+      "ar": "رتّب الأساطير الخمسة حسب عدد الأهداف من ركلات حرة مباشرة في تاريخ دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Direct free kicks scored in UCL proper",
+      "ar": "الأهداف المباشرة من ركلات حرة في دوري أبطال أوروبا"
+    },
+    "metricLabel": {
+      "en": "Free Kicks",
+      "ar": "ركلات حرة"
+    },
+    "direction": "desc",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "free-kicks",
+      "cr7",
+      "delpiero",
+      "juninho",
+      "rivaldo",
+      "robertocarlos"
+    ],
+    "answers": [
+      {
+        "answerKey": "ufk_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Man United & Real Madrid",
+          "ar": "مان يونايتد وريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Free Kicks",
+          "ar": "12 ركلة حرة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ufk_delpiero",
+        "name": {
+          "en": "Alessandro Del Piero",
+          "ar": "أليساندرو ديل بييرو"
+        },
+        "subText": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ADP10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Alessandro_Del_Piero_2008.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 11,
+        "valueLabel": {
+          "en": "11 Free Kicks",
+          "ar": "11 ركلة حرة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ufk_juninho",
+        "name": {
+          "en": "Juninho Pernambucano",
+          "ar": "جونينيو برنامبوكانو"
+        },
+        "subText": {
+          "en": "Olympique Lyon",
+          "ar": "أولمبيك ليون"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JP8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Juninho_Pernambucano_2008.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/80.png"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Free Kicks",
+          "ar": "10 ركلات حرة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ufk_rivaldo",
+        "name": {
+          "en": "Rivaldo",
+          "ar": "ريفالدو"
+        },
+        "subText": {
+          "en": "Barcelona, Milan & Olympiacos",
+          "ar": "برشلونة، ميلان وأولمبياكوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RIV10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Rivaldo_2014.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Free Kicks",
+          "ar": "8 ركلات حرة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ufk_rcarlos",
+        "name": {
+          "en": "Roberto Carlos",
+          "ar": "روبرتو كارلوس"
+        },
+        "subText": {
+          "en": "Real Madrid & Fenerbahçe",
+          "ar": "ريال مدريد وفنربخشة"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RC3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Roberto_Carlos_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Free Kicks",
+          "ar": "7 ركلات حرة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-group-stage-goals-all-time-leaders",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 strikers by UEFA Champions League group stage goals scored",
+      "ar": "رتّب المهاجمين الخمسة حسب عدد أهدافهم في دور المجموعات بدوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Group stage goals in UCL history",
+      "ar": "الأهداف المسجلة في مرحلة المجموعات لدوري أبطال أوروبا"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "group-stage",
+      "messi",
+      "ronaldo",
+      "lewandowski"
+    ],
+    "answers": [
+      {
+        "answerKey": "ugg_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Barcelona & PSG",
+          "ar": "برشلونة وباريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 80,
+        "valueLabel": {
+          "en": "80 Goals",
+          "ar": "80 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ugg_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Man United, Real Madrid & Juventus",
+          "ar": "مان يونايتد، ريال مدريد ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 73,
+        "valueLabel": {
+          "en": "73 Goals",
+          "ar": "73 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ugg_lewa",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "subText": {
+          "en": "Dortmund, Bayern & Barcelona",
+          "ar": "دورتموند، بايرن وبرشلونة"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 63,
+        "valueLabel": {
+          "en": "63 Goals",
+          "ar": "63 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ugg_benzema",
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "subText": {
+          "en": "Lyon & Real Madrid",
+          "ar": "ليون وريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 56,
+        "valueLabel": {
+          "en": "56 Goals",
+          "ar": "56 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ugg_raul",
+        "name": {
+          "en": "Raúl González",
+          "ar": "راؤول غونزاليس"
+        },
+        "subText": {
+          "en": "Real Madrid & Schalke",
+          "ar": "ريال مدريد وشالكه"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RG7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Ra%C3%BAl_Gonz%C3%A1lez_2013.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 53,
+        "valueLabel": {
+          "en": "53 Goals",
+          "ar": "53 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-different-clubs-scored-for-journeymen",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 stars by number of different clubs scored for in UEFA Champions League history",
+      "ar": "رتّب النجوم الخمسة حسب عدد الأندية المختلفة التي سجلوا بقمصانها في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Scored in UCL proper for multiple clubs",
+      "ar": "التسجيل في دوري أبطال أوروبا مع أندية مختلفة"
+    },
+    "metricLabel": {
+      "en": "Clubs",
+      "ar": "أندية"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "clubs",
+      "ibrahimovic",
+      "morata",
+      "etoo"
+    ],
+    "answers": [
+      {
+        "answerKey": "udc_ibra",
+        "name": {
+          "en": "Zlatan Ibrahimović",
+          "ar": "زلاتان إبراهيموفيتش"
+        },
+        "subText": {
+          "en": "Ajax, Juve, Inter, Barca, Milan, PSG",
+          "ar": "أياكس، يوفي، إنتر، بارسا، ميلان، باريس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "IBRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Zlatan_Ibrahimovi%C4%87_June_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Clubs",
+          "ar": "6 أندية"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "udc_morata",
+        "name": {
+          "en": "Álvaro Morata",
+          "ar": "ألفارو موراتا"
+        },
+        "subText": {
+          "en": "Real Madrid, Juve, Chelsea, Atlético, Milan",
+          "ar": "ريال مدريد، يوفي، تشيلسي، أتلتيكو، ميلان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "AM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/%C3%81lvaro_Morata_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Clubs",
+          "ar": "5 أندية"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "udc_etoo",
+        "name": {
+          "en": "Samuel Eto'o",
+          "ar": "صامويل إيتو"
+        },
+        "subText": {
+          "en": "Mallorca, Barcelona, Inter, Chelsea",
+          "ar": "مايوركا، برشلونة، إنتر، تشيلسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SE9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sammuel_Eto%27o_Fils_02.jpg/330px-Sammuel_Eto%27o_Fils_02.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 4,
+        "valueLabel": {
+          "en": "4 Clubs",
+          "ar": "4 أندية"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "udc_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Man United, Real Madrid, Juventus",
+          "ar": "مان يونايتد، ريال مدريد، يوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 3,
+        "valueLabel": {
+          "en": "3 Clubs",
+          "ar": "3 أندية"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "udc_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "FC Barcelona, PSG",
+          "ar": "برشلونة، باريس سان جيرمان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 2,
+        "valueLabel": {
+          "en": "2 Clubs",
+          "ar": "ناديان"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-youngest-goalscorers-history",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 prodigies by age when scoring their first UEFA Champions League goal (Youngest first)",
+      "ar": "رتّب المواهب الشابة الخمس حسب العمر عند تسجيل أول هدف في دوري أبطال أوروبا (من الأصغر للأكبر)"
+    },
+    "subtitle": {
+      "en": "Age in days on the date of their first UCL goal",
+      "ar": "العمر بالأيام في يوم تسجيل أول هدف بدوري الأبطال"
+    },
+    "metricLabel": {
+      "en": "Days of Age",
+      "ar": "أيام العمر"
+    },
+    "direction": "asc",
+    "difficulty": "VERY_HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "youngest",
+      "fati",
+      "yamal",
+      "prodigies"
+    ],
+    "answers": [
+      {
+        "answerKey": "uyg_fati",
+        "name": {
+          "en": "Ansu Fati (2019)",
+          "ar": "أنسو فاتي (2019)"
+        },
+        "subText": {
+          "en": "17y 40d (Inter 1–2 Barcelona)",
+          "ar": "17 سنة و40 يومًا (ضد إنتر ميلان)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "AF10",
+          "primaryUrl": "https://media.api-sports.io/football/players/127814.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 6249,
+        "valueLabel": {
+          "en": "17y 40d (6,249 days)",
+          "ar": "17 سنة و40 يومًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "uyg_yamal",
+        "name": {
+          "en": "Lamine Yamal (2024)",
+          "ar": "لامين يامال (2024)"
+        },
+        "subText": {
+          "en": "17y 68d (Monaco 2–1 Barcelona)",
+          "ar": "17 سنة و68 يومًا (ضد موناكو)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LY19",
+          "primaryUrl": "https://media.api-sports.io/football/players/388480.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
+        "value": 6277,
+        "valueLabel": {
+          "en": "17y 68d (6,277 days)",
+          "ar": "17 سنة و68 يومًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "uyg_nusa",
+        "name": {
+          "en": "Antonio Nusa (2022)",
+          "ar": "أنتونيو نوسا (2022)"
+        },
+        "subText": {
+          "en": "17y 149d (Porto 0–4 Club Brugge)",
+          "ar": "17 سنة و149 يومًا (ضد بورتو)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "AN7",
+          "primaryUrl": "https://media.api-sports.io/football/players/313885.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/212.png"
+        },
+        "value": 6358,
+        "valueLabel": {
+          "en": "17y 149d (6,358 days)",
+          "ar": "17 سنة و149 يومًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "uyg_ofori",
+        "name": {
+          "en": "Peter Ofori-Quaye (1997)",
+          "ar": "بيتر أوفوري كواي (1997)"
+        },
+        "subText": {
+          "en": "17y 195d (Rosenborg 5–1 Olympiacos)",
+          "ar": "17 سنة و195 يومًا (ضد روزنبورغ)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "POQ",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/553.png"
+        },
+        "value": 6404,
+        "valueLabel": {
+          "en": "17y 195d (6,404 days)",
+          "ar": "17 سنة و195 يومًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "uyg_kovacic",
+        "name": {
+          "en": "Mateo Kovačić (2011)",
+          "ar": "ماتيو كوفاسيتش (2011)"
+        },
+        "subText": {
+          "en": "17y 215d (Dinamo Zagreb 1–7 Lyon)",
+          "ar": "17 سنة و215 يومًا (ضد ليون)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK8",
+          "primaryUrl": "https://media.api-sports.io/football/players/2291.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/80.png"
+        },
+        "value": 6424,
+        "valueLabel": {
+          "en": "17y 215d (6,424 days)",
+          "ar": "17 سنة و215 يومًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  }
+]

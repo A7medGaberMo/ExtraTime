@@ -14,6 +14,7 @@
       "club": "Union Berlin",
       "nation": "Denmark",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1798.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127471.png",
       "kitNumber": 25
@@ -36,6 +38,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/262815.png",
       "kitNumber": 31
@@ -47,6 +50,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668541.png",
       "kitNumber": 12
@@ -58,6 +62,7 @@
       "club": "Union Berlin",
       "nation": "Croatia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/14330.png",
       "kitNumber": 18
@@ -69,6 +74,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/324957.png",
       "kitNumber": 15
@@ -80,6 +86,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128853.png",
       "kitNumber": 39
@@ -91,6 +98,7 @@
       "club": "Union Berlin",
       "nation": "Austria",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288206.png",
       "kitNumber": 14
@@ -102,6 +110,7 @@
       "club": "Union Berlin",
       "nation": "Austria",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24848.png",
       "kitNumber": 28
@@ -113,6 +122,7 @@
       "club": "Union Berlin",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/270.png",
       "kitNumber": 34
@@ -124,6 +134,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24839.png",
       "kitNumber": 5
@@ -135,6 +146,7 @@
       "club": "Union Berlin",
       "nation": "Guinea",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585741.png",
       "kitNumber": 2
@@ -146,6 +158,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413294.png",
       "kitNumber": 3
@@ -157,6 +170,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412847.png",
       "kitNumber": 40
@@ -168,6 +182,7 @@
       "club": "Union Berlin",
       "nation": "South Korea",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/512.png",
       "kitNumber": 11
@@ -179,6 +194,7 @@
       "club": "Union Berlin",
       "nation": "Hungary",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30785.png",
       "kitNumber": 13
@@ -190,6 +206,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26249.png",
       "kitNumber": 19
@@ -201,6 +218,7 @@
       "club": "Union Berlin",
       "nation": "Denmark",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1298.png",
       "kitNumber": 24
@@ -212,6 +230,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327831.png",
       "kitNumber": 6
@@ -223,6 +242,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585682.png",
       "kitNumber": 41
@@ -234,6 +254,7 @@
       "club": "Union Berlin",
       "nation": "Cameroon",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668543.png",
       "kitNumber": 42
@@ -245,6 +266,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668544.png",
       "kitNumber": 43
@@ -256,6 +278,7 @@
       "club": "Union Berlin",
       "nation": "Croatia",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/619702.png",
       "kitNumber": 26
@@ -267,6 +290,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668546.png",
       "kitNumber": 27
@@ -278,6 +302,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24910.png",
       "kitNumber": 21
@@ -289,6 +314,7 @@
       "club": "Union Berlin",
       "nation": "Serbia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/45892.png",
       "kitNumber": 23
@@ -300,6 +326,7 @@
       "club": "Union Berlin",
       "nation": "Croatia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/292218.png",
       "kitNumber": 20
@@ -311,6 +338,7 @@
       "club": "Union Berlin",
       "nation": "Scotland",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1124.png",
       "kitNumber": 7
@@ -322,6 +350,7 @@
       "club": "Union Berlin",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/430354.png",
       "kitNumber": 9
@@ -333,6 +362,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380873.png",
       "kitNumber": 10
@@ -344,6 +374,7 @@
       "club": "Union Berlin",
       "nation": "Ukraine",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/440136.png",
       "kitNumber": 30
@@ -355,6 +386,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/621185.png",
       "kitNumber": 32
@@ -366,6 +398,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/592161.png",
       "kitNumber": 22
@@ -377,6 +410,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/655116.png",
       "kitNumber": 49
@@ -388,6 +422,7 @@
       "club": "Union Berlin",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668547.png",
       "kitNumber": 35

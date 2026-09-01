@@ -36,11 +36,12 @@
         },
         "subText": {
           "en": "MSN Trio: Messi, Suárez, Neymar",
-          "ar": "ثلاثي الـMSN: ميسي وسواريز ونيمار (الرقم القياسي التاريخي)"
+          "ar": "ثلاثي الـMSN"
         },
         "media": {
           "type": "club",
-          "fallbackText": "FCB"
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 175,
         "valueLabel": {
@@ -56,12 +57,13 @@
           "ar": "بايرن ميونخ (2019–20)"
         },
         "subText": {
-          "en": "Hans-Dieter Flick (Sextuple Year - 52 games)",
-          "ar": "هانز فليك (موسم السداسية - 52 مباراة فقط)"
+          "en": "Hans-Dieter Flick",
+          "ar": "هانز فليك"
         },
         "media": {
           "type": "club",
-          "fallbackText": "BAY"
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
         },
         "value": 159,
         "valueLabel": {
@@ -82,7 +84,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "FCB"
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 158,
         "valueLabel": {
@@ -98,12 +101,13 @@
           "ar": "مانشستر سيتي (2022–23)"
         },
         "subText": {
-          "en": "Pep Guardiola (Haaland 52 goals)",
+          "en": "Pep Guardiola",
           "ar": "بيب غوارديولا"
         },
         "media": {
           "type": "club",
-          "fallbackText": "MCFC"
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 151,
         "valueLabel": {
@@ -124,7 +128,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "INT"
+          "fallbackText": "INT",
+          "primaryUrl": "https://media.api-sports.io/football/teams/505.png"
         },
         "value": 99,
         "valueLabel": {
@@ -170,13 +175,10 @@
           "en": "FC Barcelona (1999–00)",
           "ar": "برشلونة (1999–00)"
         },
-        "subText": {
-          "en": "",
-          "ar": "لعب الفريق 16 مباراة (الرقم القياسي التاريخي)"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "FCB"
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 45,
         "valueLabel": {
@@ -197,7 +199,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "BAY"
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
         },
         "value": 43,
         "valueLabel": {
@@ -213,12 +216,13 @@
           "ar": "ريال مدريد (2013–14)"
         },
         "subText": {
-          "en": "La Décima (Cristiano Ronaldo 17 goals)",
-          "ar": "العاشرة"
+          "en": "La Décima",
+          "ar": "العاشرة (La Décima)"
         },
         "media": {
           "type": "club",
-          "fallbackText": "RMA"
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
         },
         "value": 41,
         "valueLabel": {
@@ -239,7 +243,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "LIV"
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 40,
         "valueLabel": {
@@ -255,12 +260,13 @@
           "ar": "باريس سان جيرمان (2017–18)"
         },
         "subText": {
-          "en": "25 group stage goals record",
-          "ar": "الرقم القياسي في دور المجموعات"
+          "en": "Group Stage Campaign",
+          "ar": "دور المجموعات"
         },
         "media": {
           "type": "club",
-          "fallbackText": "PSG"
+          "fallbackText": "PSG",
+          "primaryUrl": "https://media.api-sports.io/football/teams/85.png"
         },
         "value": 27,
         "valueLabel": {
@@ -308,11 +314,12 @@
         },
         "subText": {
           "en": "Fabio Capello",
-          "ar": "فابيو كابيلو (الرقم القياسي التاريخي للدوريات الكبرى)"
+          "ar": "فابيو كابيلو"
         },
         "media": {
           "type": "club",
-          "fallbackText": "MIL"
+          "fallbackText": "MIL",
+          "primaryUrl": "https://media.api-sports.io/football/teams/489.png"
         },
         "value": 58,
         "valueLabel": {
@@ -333,7 +340,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "BAY"
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
         },
         "value": 53,
         "valueLabel": {
@@ -354,7 +362,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "ARS"
+          "fallbackText": "ARS",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png"
         },
         "value": 49,
         "valueLabel": {
@@ -375,7 +384,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "FCB"
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 43,
         "valueLabel": {
@@ -396,7 +406,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "B04"
+          "fallbackText": "B04",
+          "primaryUrl": "https://media.api-sports.io/football/teams/168.png"
         },
         "value": 34,
         "valueLabel": {
@@ -448,7 +459,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "RMA"
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
         },
         "value": 6,
         "valueLabel": {
@@ -469,7 +481,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "FCB"
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 5,
         "valueLabel": {
@@ -490,7 +503,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "LIV"
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 4,
         "valueLabel": {
@@ -511,7 +525,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "ATM"
+          "fallbackText": "ATM",
+          "primaryUrl": "https://media.api-sports.io/football/teams/530.png"
         },
         "value": 3,
         "valueLabel": {
@@ -526,13 +541,10 @@
           "en": "Chelsea",
           "ar": "تشيلسي"
         },
-        "subText": {
-          "en": "",
-          "ar": "لقبان (1998، 2021)"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "CHE"
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 2,
         "valueLabel": {
@@ -584,7 +596,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "RMA"
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
         },
         "value": 8,
         "valueLabel": {
@@ -605,7 +618,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "MIL"
+          "fallbackText": "MIL",
+          "primaryUrl": "https://media.api-sports.io/football/teams/489.png"
         },
         "value": 4,
         "valueLabel": {
@@ -626,7 +640,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "FCB"
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 3,
         "valueLabel": {
@@ -642,12 +657,13 @@
           "ar": "كورينثيانز"
         },
         "subText": {
-          "en": "Only Non-European Club with Multiple Titles",
-          "ar": "النادي اللاتيني الوحيد المتوج بأكثر من لقب"
+          "en": "CONMEBOL",
+          "ar": "كونميبول"
         },
         "media": {
           "type": "club",
-          "fallbackText": "COR"
+          "fallbackText": "COR",
+          "primaryUrl": "https://media.api-sports.io/football/teams/131.png"
         },
         "value": 2,
         "valueLabel": {
@@ -668,7 +684,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "CHE"
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 1,
         "valueLabel": {
@@ -716,12 +733,13 @@
           "ar": "ليفربول"
         },
         "subText": {
-          "en": "EFL Cup Record Winners",
-          "ar": "البطل التاريخي لكأس الرابطة الإنجليزية"
+          "en": "EFL Cup",
+          "ar": "كأس الرابطة"
         },
         "media": {
           "type": "club",
-          "fallbackText": "LIV"
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 10,
         "valueLabel": {
@@ -737,12 +755,13 @@
           "ar": "باريس سان جيرمان"
         },
         "subText": {
-          "en": "Coupe de la Ligue Record Winners",
-          "ar": "البطل التاريخي لكأس الرابطة الفرنسية"
+          "en": "Coupe de la Ligue",
+          "ar": "كأس الرابطة"
         },
         "media": {
           "type": "club",
-          "fallbackText": "PSG"
+          "fallbackText": "PSG",
+          "primaryUrl": "https://media.api-sports.io/football/teams/85.png"
         },
         "value": 9,
         "valueLabel": {
@@ -757,13 +776,10 @@
           "en": "Manchester City",
           "ar": "مانشستر سيتي"
         },
-        "subText": {
-          "en": "4 Consecutive Titles (2018–2021)",
-          "ar": "4 ألقاب متتالية (2018–2021)"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "MCFC"
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 8,
         "valueLabel": {
@@ -778,13 +794,10 @@
           "en": "Manchester United",
           "ar": "مانشستر يونايتد"
         },
-        "subText": {
-          "en": "First Title in 1992, Latest in 2023",
-          "ar": "أول ألقابهم في 1992 وآخرها 2023"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "MU"
+          "fallbackText": "MU",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png"
         },
         "value": 6,
         "valueLabel": {
@@ -799,13 +812,10 @@
           "en": "Chelsea",
           "ar": "تشيلسي"
         },
-        "subText": {
-          "en": "First Title in 1965",
-          "ar": "أول ألقابهم في 1965"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "CHE"
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 5,
         "valueLabel": {

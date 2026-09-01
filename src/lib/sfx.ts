@@ -218,6 +218,35 @@ export function tierReveal(): void {
   noiseBurst(0, 0.12, 0.1, c, 3500);
 }
 
+/** 🌟 Progressive walkout tease step sound (nation, position, club). */
+export function walkoutTease(step: 1 | 2 | 3): void {
+  const c = getCtx();
+  if (!c) return;
+  if (step === 1) {
+    // Nation reveal: deep ambient sub-swell + pulse
+    tone(90, 0, 0.45, 'sine', 0.35, c, { endFreq: 140, attack: 0.02 });
+    noiseBurst(0, 0.15, 0.12, c, 1200);
+  } else if (step === 2) {
+    // Position reveal: higher harmonic riser + snap
+    tone(140, 0, 0.4, 'triangle', 0.28, c, { endFreq: 280, attack: 0.01 });
+    tone(280, 0.02, 0.35, 'sine', 0.15, c, { endFreq: 420, attack: 0.01 });
+    noiseBurst(0, 0.1, 0.15, c, 2200);
+  } else {
+    // Club reveal: high tension sweep before drop
+    tone(220, 0, 0.5, 'sine', 0.3, c, { endFreq: 580, attack: 0.01 });
+    tone(440, 0.05, 0.45, 'triangle', 0.18, c, { endFreq: 880, attack: 0.01 });
+    noiseBurst(0, 0.18, 0.22, c, 3800);
+  }
+}
+
+/** 📦 Low bass pack unseal pulse */
+export function packShake(): void {
+  const c = getCtx();
+  if (!c) return;
+  tone(80, 0, 0.18, 'sine', 0.3, c, { endFreq: 45, attack: 0.005 });
+  noiseBurst(0, 0.08, 0.15, c, 900);
+}
+
 /** 🌟 Legendary walkout stinger (dramatic cinematic chord sequence). */
 export function walkoutStinger(): void {
   const c = getCtx();
@@ -247,6 +276,8 @@ export const sfx = {
   victory: victoryFanfare,
   runnerUp: runnerUpTone,
   packRip: packRip,
+  packShake: packShake,
+  walkoutTease: walkoutTease,
   cardDeal: cardDeal,
   cardFlip: cardFlip,
   tierReveal: tierReveal,

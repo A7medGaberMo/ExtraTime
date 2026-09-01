@@ -14,6 +14,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2036.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46987.png",
       "kitNumber": 13
@@ -36,6 +38,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129657.png",
       "kitNumber": 15
@@ -47,6 +50,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46709.png",
       "kitNumber": 16
@@ -58,6 +62,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47253.png",
       "kitNumber": 5
@@ -69,6 +74,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47391.png",
       "kitNumber": 7
@@ -80,6 +86,7 @@
       "club": "Leganes",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336706.png",
       "kitNumber": 2
@@ -91,6 +98,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/119231.png",
       "kitNumber": 4
@@ -102,6 +110,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/337955.png",
       "kitNumber": 6
@@ -113,6 +122,7 @@
       "club": "Leganes",
       "nation": "Uruguay",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/352928.png",
       "kitNumber": 22
@@ -124,6 +134,7 @@
       "club": "Leganes",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/507345.png",
       "kitNumber": 27
@@ -135,6 +146,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585715.png",
       "kitNumber": 37
@@ -146,6 +158,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/651174.png",
       "kitNumber": 46
@@ -157,6 +170,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584253.png",
       "kitNumber": 32
@@ -168,6 +182,7 @@
       "club": "Leganes",
       "nation": "Senegal",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585717.png",
       "kitNumber": 38
@@ -179,6 +194,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/506488.png",
       "kitNumber": 28
@@ -190,6 +206,7 @@
       "club": "Leganes",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174937.png",
       "kitNumber": 8
@@ -201,6 +218,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/310196.png",
       "kitNumber": 11
@@ -212,6 +230,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47321.png",
       "kitNumber": 14
@@ -223,6 +242,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47576.png",
       "kitNumber": 40
@@ -234,6 +254,7 @@
       "club": "Leganes",
       "nation": "Guinea",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/324.png",
       "kitNumber": 24
@@ -245,6 +266,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181867.png",
       "kitNumber": 18
@@ -256,6 +278,7 @@
       "club": "Leganes",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/272695.png",
       "kitNumber": 20
@@ -267,6 +290,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/388032.png",
       "kitNumber": 26
@@ -278,6 +302,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46849.png",
       "kitNumber": 25
@@ -289,6 +314,7 @@
       "club": "Leganes",
       "nation": "Senegal",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/651068.png",
       "kitNumber": 47
@@ -300,6 +326,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/629326.png",
       "kitNumber": 43
@@ -311,6 +338,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585718.png",
       "kitNumber": 36
@@ -322,6 +350,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626217.png",
       "kitNumber": 42
@@ -333,6 +362,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/599138.png",
       "kitNumber": 48
@@ -344,6 +374,7 @@
       "club": "Leganes",
       "nation": "Zambia",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/571910.png",
       "kitNumber": 33
@@ -355,6 +386,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327622.png",
       "kitNumber": 17
@@ -366,6 +398,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182668.png",
       "kitNumber": 23
@@ -377,6 +410,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/290479.png",
       "kitNumber": 21
@@ -388,6 +422,7 @@
       "club": "Leganes",
       "nation": "Denmark",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/445669.png",
       "kitNumber": 29
@@ -399,6 +434,7 @@
       "club": "Leganes",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/651175.png",
       "kitNumber": 45

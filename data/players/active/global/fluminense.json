@@ -14,6 +14,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10080.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/180866.png",
       "kitNumber": 27
@@ -36,6 +38,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10079.png",
       "kitNumber": 98
@@ -47,6 +50,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667869.png",
       "kitNumber": null
@@ -58,6 +62,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/259.png",
       "kitNumber": 3
@@ -69,6 +74,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2038.png",
       "kitNumber": 13
@@ -80,6 +86,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9874.png",
       "kitNumber": 23
@@ -91,6 +98,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10267.png",
       "kitNumber": 2
@@ -102,6 +110,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9872.png",
       "kitNumber": 21
@@ -113,6 +122,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10163.png",
       "kitNumber": 6
@@ -124,6 +134,7 @@
       "club": "Fluminense",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6337.png",
       "kitNumber": 22
@@ -135,6 +146,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10017.png",
       "kitNumber": 4
@@ -146,6 +158,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/282692.png",
       "kitNumber": 44
@@ -157,6 +170,7 @@
       "club": "Fluminense",
       "nation": "Colombia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/13715.png",
       "kitNumber": 29
@@ -168,6 +182,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443088.png",
       "kitNumber": 46
@@ -179,6 +194,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/519811.png",
       "kitNumber": 36
@@ -190,6 +206,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10311.png",
       "kitNumber": 10
@@ -201,6 +218,7 @@
       "club": "Fluminense",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50763.png",
       "kitNumber": 32
@@ -212,6 +230,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280245.png",
       "kitNumber": 8
@@ -223,6 +242,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1262.png",
       "kitNumber": 94
@@ -234,6 +254,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10501.png",
       "kitNumber": 25
@@ -245,6 +266,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/266267.png",
       "kitNumber": 35
@@ -256,6 +278,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10396.png",
       "kitNumber": 16
@@ -267,6 +290,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667326.png",
       "kitNumber": null
@@ -278,6 +302,7 @@
       "club": "Fluminense",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/13523.png",
       "kitNumber": 14
@@ -289,6 +314,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/12705.png",
       "kitNumber": 7
@@ -300,6 +326,7 @@
       "club": "Fluminense",
       "nation": "Venezuela",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2454.png",
       "kitNumber": 30
@@ -311,6 +338,7 @@
       "club": "Fluminense",
       "nation": "Venezuela",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51214.png",
       "kitNumber": 11
@@ -322,6 +350,7 @@
       "club": "Fluminense",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51603.png",
       "kitNumber": 17
@@ -333,6 +362,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/297522.png",
       "kitNumber": 9
@@ -344,6 +374,7 @@
       "club": "Fluminense",
       "nation": "Colombia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/70849.png",
       "kitNumber": 90
@@ -355,6 +386,7 @@
       "club": "Fluminense",
       "nation": "Honduras",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/304048.png",
       "kitNumber": 19
@@ -366,6 +398,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/502726.png",
       "kitNumber": 28
@@ -377,6 +410,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/519809.png",
       "kitNumber": 39
@@ -388,6 +422,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/634370.png",
       "kitNumber": 15
@@ -399,6 +434,7 @@
       "club": "Fluminense",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568706.png",
       "kitNumber": 34

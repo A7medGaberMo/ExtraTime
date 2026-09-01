@@ -14,6 +14,7 @@
       "club": "Como",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8574.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Como",
       "nation": "Sweden",
       "tier": "BRONZE",
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/193328.png",
       "kitNumber": 21
@@ -36,6 +38,7 @@
       "club": "Como",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/197448.png",
       "kitNumber": 2
@@ -47,6 +50,7 @@
       "club": "Como",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/32034.png",
       "kitNumber": 22
@@ -58,6 +62,7 @@
       "club": "Como",
       "nation": "England",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19720.png",
       "kitNumber": 23
@@ -69,6 +74,7 @@
       "club": "Como",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336560.png",
       "kitNumber": 3
@@ -80,6 +86,7 @@
       "club": "Como",
       "nation": "Belgium",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129119.png",
       "kitNumber": 77
@@ -91,6 +98,7 @@
       "club": "Como",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26301.png",
       "kitNumber": 2
@@ -102,6 +110,7 @@
       "club": "Como",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31073.png",
       "kitNumber": 5
@@ -113,6 +122,7 @@
       "club": "Como",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441244.png",
       "kitNumber": 44
@@ -124,6 +134,7 @@
       "club": "Como",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/309792.png",
       "kitNumber": 6
@@ -135,6 +146,7 @@
       "club": "Como",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386305.png",
       "kitNumber": 14
@@ -146,6 +158,7 @@
       "club": "Como",
       "nation": "Croatia",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/14266.png",
       "kitNumber": 28
@@ -157,6 +170,7 @@
       "club": "Como",
       "nation": "Argentina",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/350037.png",
       "kitNumber": 10
@@ -168,6 +182,7 @@
       "club": "Como",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/659.png",
       "kitNumber": 40
@@ -179,6 +194,7 @@
       "club": "Como",
       "nation": "Croatia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/295026.png",
       "kitNumber": 20
@@ -190,6 +206,7 @@
       "club": "Como",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288699.png",
       "kitNumber": 23
@@ -201,6 +218,7 @@
       "club": "Como",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47085.png",
       "kitNumber": 41
@@ -212,6 +230,7 @@
       "club": "Como",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162266.png",
       "kitNumber": 33
@@ -223,6 +242,7 @@
       "club": "Como",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/410396.png",
       "kitNumber": 42
@@ -234,6 +254,7 @@
       "club": "Como",
       "nation": "Sweden",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/459029.png",
       "kitNumber": 15
@@ -245,6 +266,7 @@
       "club": "Como",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443162.png",
       "kitNumber": 17
@@ -256,6 +278,7 @@
       "club": "Como",
       "nation": "Hungary",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/476862.png",
       "kitNumber": 13
@@ -267,6 +290,7 @@
       "club": "Como",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/662278.png",
       "kitNumber": 49
@@ -278,6 +302,7 @@
       "club": "Como",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/59.png",
       "kitNumber": 7
@@ -289,6 +314,7 @@
       "club": "Como",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/400948.png",
       "kitNumber": 38
@@ -300,6 +326,7 @@
       "club": "Como",
       "nation": "Greece",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26845.png",
       "kitNumber": 11
@@ -311,6 +338,7 @@
       "club": "Como",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38753.png",
       "kitNumber": 19
@@ -322,6 +350,7 @@
       "club": "Como",
       "nation": "Gambia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/263699.png",
       "kitNumber": 43
@@ -333,6 +362,7 @@
       "club": "Como",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/106257.png",
       "kitNumber": 9
@@ -344,6 +374,7 @@
       "club": "Como",
       "nation": "Ghana",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/354533.png",
       "kitNumber": 45
@@ -355,6 +386,7 @@
       "club": "Como",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/567667.png",
       "kitNumber": 58

@@ -14,6 +14,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "ULTIMATE",
+      "rating": 94,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/497.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203376.png",
       "kitNumber": 40
@@ -36,6 +38,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/498.png",
       "kitNumber": 26
@@ -47,6 +50,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/432595.png",
       "kitNumber": 35
@@ -58,6 +62,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568316.png",
       "kitNumber": 37
@@ -69,6 +74,7 @@
       "club": "Bayern München",
       "nation": "Canada",
       "tier": "ELITE",
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/509.png",
       "kitNumber": 19
@@ -80,6 +86,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/972.png",
       "kitNumber": 4
@@ -91,6 +98,7 @@
       "club": "Bayern München",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1149.png",
       "kitNumber": 2
@@ -102,6 +110,7 @@
       "club": "Bayern München",
       "nation": "South Korea",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2897.png",
       "kitNumber": 3
@@ -113,6 +122,7 @@
       "club": "Bayern München",
       "nation": "Croatia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/125171.png",
       "kitNumber": 44
@@ -124,6 +134,7 @@
       "club": "Bayern München",
       "nation": "Japan",
       "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/32893.png",
       "kitNumber": 21
@@ -135,6 +146,7 @@
       "club": "Bayern München",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2195.png",
       "kitNumber": 23
@@ -146,6 +158,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280074.png",
       "kitNumber": 41
@@ -157,6 +170,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/524214.png",
       "kitNumber": 30
@@ -168,6 +182,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610483.png",
       "kitNumber": 42
@@ -179,6 +194,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/628356.png",
       "kitNumber": 43
@@ -190,6 +206,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "MASTER",
+      "rating": 89,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181812.png",
       "kitNumber": 10
@@ -201,6 +218,7 @@
       "club": "Bayern München",
       "nation": "France",
       "tier": "ULTIMATE",
+      "rating": 91,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19617.png",
       "kitNumber": 17
@@ -212,6 +230,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "MASTER",
+      "rating": 88,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/502.png",
       "kitNumber": 6
@@ -223,6 +242,7 @@
       "club": "Bayern München",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41104.png",
       "kitNumber": 16
@@ -234,6 +254,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328033.png",
       "kitNumber": 45
@@ -245,6 +266,7 @@
       "club": "Bayern München",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161897.png",
       "kitNumber": 34
@@ -256,6 +278,7 @@
       "club": "Bayern München",
       "nation": "Austria",
       "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1157.png",
       "kitNumber": 27
@@ -267,6 +290,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/325975.png",
       "kitNumber": 8
@@ -278,6 +302,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327897.png",
       "kitNumber": 20
@@ -289,6 +314,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568042.png",
       "kitNumber": 49
@@ -300,6 +326,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/414474.png",
       "kitNumber": 96
@@ -311,6 +338,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449689.png",
       "kitNumber": 47
@@ -322,6 +350,7 @@
       "club": "Bayern München",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568043.png",
       "kitNumber": 31
@@ -333,6 +362,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 59,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/494131.png",
       "kitNumber": 46
@@ -344,6 +374,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/496738.png",
       "kitNumber": 36
@@ -355,6 +386,7 @@
       "club": "Bayern München",
       "nation": "Kosovo",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/648615.png",
       "kitNumber": 38
@@ -366,6 +398,7 @@
       "club": "Bayern München",
       "nation": "England",
       "tier": "ULTIMATE",
+      "rating": 93,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/184.png",
       "kitNumber": 9
@@ -377,6 +410,7 @@
       "club": "Bayern München",
       "nation": "Colombia",
       "tier": "MASTER",
+      "rating": 90,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2489.png",
       "kitNumber": 14
@@ -388,6 +422,7 @@
       "club": "Bayern München",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/510.png",
       "kitNumber": 7
@@ -399,6 +434,7 @@
       "club": "Bayern München",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/657672.png",
       "kitNumber": 33

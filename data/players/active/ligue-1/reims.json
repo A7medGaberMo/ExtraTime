@@ -14,6 +14,7 @@
       "club": "Reims",
       "nation": "Switzerland",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/272159.png",
       "kitNumber": 27
@@ -25,6 +26,7 @@
       "club": "Reims",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280429.png",
       "kitNumber": 40
@@ -36,6 +38,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21755.png",
       "kitNumber": 16
@@ -47,6 +50,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326157.png",
       "kitNumber": 60
@@ -58,6 +62,7 @@
       "club": "Reims",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47530.png",
       "kitNumber": 18
@@ -69,6 +74,7 @@
       "club": "Reims",
       "nation": "Kenya",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/71545.png",
       "kitNumber": 2
@@ -80,6 +86,7 @@
       "club": "Reims",
       "nation": "Mali",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/302868.png",
       "kitNumber": 41
@@ -91,6 +98,7 @@
       "club": "Reims",
       "nation": "Ivory Coast",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/291999.png",
       "kitNumber": 20
@@ -102,6 +110,7 @@
       "club": "Reims",
       "nation": "Cameroon",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/303118.png",
       "kitNumber": 22
@@ -113,6 +122,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667809.png",
       "kitNumber": 30
@@ -124,6 +134,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419915.png",
       "kitNumber": 28
@@ -135,6 +146,7 @@
       "club": "Reims",
       "nation": "Moldova",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/407463.png",
       "kitNumber": 39
@@ -146,6 +158,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606063.png",
       "kitNumber": 56
@@ -157,6 +170,7 @@
       "club": "Reims",
       "nation": "Kenya",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/571687.png",
       "kitNumber": 45
@@ -168,6 +182,7 @@
       "club": "Reims",
       "nation": "Nigeria",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/628215.png",
       "kitNumber": 13
@@ -179,6 +194,7 @@
       "club": "Reims",
       "nation": "Ivory Coast",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/156992.png",
       "kitNumber": 24
@@ -190,6 +206,7 @@
       "club": "Reims",
       "nation": "Ivory Coast",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/384489.png",
       "kitNumber": 8
@@ -201,6 +218,7 @@
       "club": "Reims",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162768.png",
       "kitNumber": 6
@@ -212,6 +230,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667811.png",
       "kitNumber": 33
@@ -223,6 +242,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/639074.png",
       "kitNumber": 19
@@ -234,6 +254,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/293297.png",
       "kitNumber": 42
@@ -245,6 +266,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/418190.png",
       "kitNumber": 87
@@ -256,6 +278,7 @@
       "club": "Reims",
       "nation": "Japan",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/33321.png",
       "kitNumber": 17
@@ -267,6 +290,7 @@
       "club": "Reims",
       "nation": "Denmark",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1300.png",
       "kitNumber": 9
@@ -278,6 +302,7 @@
       "club": "Reims",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37442.png",
       "kitNumber": 34
@@ -289,6 +314,7 @@
       "club": "Reims",
       "nation": "United States",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2219.png",
       "kitNumber": 29
@@ -300,6 +326,7 @@
       "club": "Reims",
       "nation": "Senegal",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/144319.png",
       "kitNumber": 43
@@ -311,6 +338,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584167.png",
       "kitNumber": 44
@@ -322,6 +350,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584168.png",
       "kitNumber": 46
@@ -333,6 +362,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/570585.png",
       "kitNumber": 47
@@ -344,6 +374,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/494535.png",
       "kitNumber": 85
@@ -355,6 +386,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/608108.png",
       "kitNumber": 32
@@ -366,6 +398,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/485820.png",
       "kitNumber": 48
@@ -377,6 +410,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/639075.png",
       "kitNumber": 76
@@ -388,6 +422,7 @@
       "club": "Reims",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667812.png",
       "kitNumber": 70

@@ -14,6 +14,7 @@
       "club": "Beşiktaş",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/399.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50104.png",
       "kitNumber": 80
@@ -36,6 +38,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/275090.png",
       "kitNumber": 99
@@ -47,6 +50,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544926.png",
       "kitNumber": 96
@@ -58,6 +62,7 @@
       "club": "Beşiktaş",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1479.png",
       "kitNumber": 35
@@ -69,6 +74,7 @@
       "club": "Beşiktaş",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25406.png",
       "kitNumber": 14
@@ -80,6 +86,7 @@
       "club": "Beşiktaş",
       "nation": "Panama",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2973.png",
       "kitNumber": 62
@@ -91,6 +98,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1987.png",
       "kitNumber": 33
@@ -102,6 +110,7 @@
       "club": "Beşiktaş",
       "nation": "Ivory Coast",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135068.png",
       "kitNumber": 12
@@ -113,6 +122,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50046.png",
       "kitNumber": 53
@@ -124,6 +134,7 @@
       "club": "Beşiktaş",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/394663.png",
       "kitNumber": 22
@@ -135,6 +146,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667581.png",
       "kitNumber": 65
@@ -146,6 +158,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/550896.png",
       "kitNumber": 51
@@ -157,6 +170,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544790.png",
       "kitNumber": 58
@@ -168,6 +182,7 @@
       "club": "Beşiktaş",
       "nation": "Nigeria",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18786.png",
       "kitNumber": 4
@@ -179,6 +194,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37155.png",
       "kitNumber": 10
@@ -190,6 +206,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24807.png",
       "kitNumber": 6
@@ -201,6 +218,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1998.png",
       "kitNumber": 8
@@ -212,6 +230,7 @@
       "club": "Beşiktaş",
       "nation": "Bosnia and Herzegovina",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50006.png",
       "kitNumber": 5
@@ -223,6 +242,7 @@
       "club": "Beşiktaş",
       "nation": "Benin",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/316904.png",
       "kitNumber": 15
@@ -234,6 +254,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361397.png",
       "kitNumber": null
@@ -245,6 +266,7 @@
       "club": "Beşiktaş",
       "nation": "Belgium",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1946.png",
       "kitNumber": 19
@@ -256,6 +278,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336567.png",
       "kitNumber": 90
@@ -267,6 +290,7 @@
       "club": "Beşiktaş",
       "nation": "Kosovo",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25324.png",
       "kitNumber": 7
@@ -278,6 +302,7 @@
       "club": "Beşiktaş",
       "nation": "Czech Republic",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/549.png",
       "kitNumber": 18
@@ -289,6 +314,7 @@
       "club": "Beşiktaş",
       "nation": "South Korea",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/34710.png",
       "kitNumber": 9
@@ -300,6 +326,7 @@
       "club": "Beşiktaş",
       "nation": "Ivory Coast",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/333137.png",
       "kitNumber": 11
@@ -311,6 +338,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/436179.png",
       "kitNumber": 23
@@ -322,6 +350,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/446824.png",
       "kitNumber": 29
@@ -333,6 +362,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630520.png",
       "kitNumber": 70
@@ -344,6 +374,7 @@
       "club": "Beşiktaş",
       "nation": "Turkey",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/633057.png",
       "kitNumber": 81

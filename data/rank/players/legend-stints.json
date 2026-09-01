@@ -34,12 +34,13 @@
         },
         "subText": {
           "en": "Bayern Munich",
-          "ar": "بايرن ميونخ (الرقم القياسي 41 هدفًا)"
+          "ar": "بايرن ميونخ"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "RL9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 41,
         "valueLabel": {
@@ -60,8 +61,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "RL9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 35,
         "valueLabel": {
@@ -82,8 +84,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "RL9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 34,
         "valueLabel": {
@@ -104,8 +107,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "RL9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 30,
         "valueLabel": {
@@ -126,8 +130,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "RL9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 29,
         "valueLabel": {
@@ -177,8 +182,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
-          "fallbackText": "KM7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 33,
         "valueLabel": {
@@ -199,8 +205,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
-          "fallbackText": "KM7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 29,
         "valueLabel": {
@@ -221,8 +228,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
-          "fallbackText": "KM7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 28,
         "valueLabel": {
@@ -243,8 +251,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
-          "fallbackText": "KM7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 27,
         "valueLabel": {
@@ -265,8 +274,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
-          "fallbackText": "KM7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 18,
         "valueLabel": {
@@ -316,8 +326,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "EH9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 52,
         "valueLabel": {
@@ -338,7 +349,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "EH9"
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png"
         },
         "value": 44,
         "valueLabel": {
@@ -359,8 +372,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
-          "fallbackText": "EH9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 41,
         "valueLabel": {
@@ -381,8 +395,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "EH9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 38,
         "valueLabel": {
@@ -403,8 +418,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
-          "fallbackText": "EH9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 29,
         "valueLabel": {

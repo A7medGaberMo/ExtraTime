@@ -6,6 +6,7 @@ import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { Database } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
+import { ETLogo } from '@/components/shared/et-logo';
 import { useIsGameplay } from '@/hooks/use-is-gameplay';
 import { useI18n } from '@/lib/i18n';
 
@@ -24,14 +25,8 @@ export function Footer() {
     <footer className="border-border/40 w-full border-t bg-slate-950/40 py-4 pb-24 backdrop-blur-md lg:pb-6">
       <div className="container mx-auto flex flex-col items-center justify-center gap-3 px-4 text-center sm:flex-row md:gap-6">
         <div className="flex items-center gap-2.5">
-          <div className="ring-lime/30 relative flex h-6 w-6 items-center justify-center overflow-hidden rounded-lg bg-slate-950 shadow-sm ring-1">
-            <Image
-              src="/ETIcon.png"
-              alt="ExtraTime Logo"
-              fill
-              className="object-contain p-0.5"
-              sizes="24px"
-            />
+          <div className="ring-lime/40 relative flex h-6 w-6 items-center justify-center overflow-hidden rounded-full bg-slate-900 shadow-sm ring-1 p-0.5">
+            <ETLogo variant="card-badge" size={16} />
           </div>
           <span className="text-steel text-sm font-semibold tracking-wider font-stats">
             Extra<span className="text-lime font-bold">Time</span>

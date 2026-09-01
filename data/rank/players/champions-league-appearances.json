@@ -5,7 +5,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ucl", "appearances", "players", "cr7", "casillas"],
+    "tags": [
+      "ucl",
+      "appearances",
+      "players",
+      "cr7",
+      "casillas"
+    ],
     "title": {
       "en": "Rank these 5 icons by total UEFA Champions League appearances",
       "ar": "رتّب أساطير دوري أبطال أوروبا الخمسة حسب إجمالي المباريات التي خاضوها في البطولة"
@@ -14,47 +20,100 @@
       "en": "Group stage to final matches (excluding qualifiers)",
       "ar": "من دور المجموعات حتى النهائي (مع استبعاد الأدوار التمهيدية)"
     },
-    "metricLabel": { "en": "Matches", "ar": "مباريات" },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "app_cr7",
-        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
-        "media": { "type": "player", "fallbackText": "CR7" },
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
         "value": 183,
-        "valueLabel": { "en": "183 Apps", "ar": "183 مباراة" },
+        "valueLabel": {
+          "en": "183 Apps",
+          "ar": "183 مباراة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "app_casillas",
-        "name": { "en": "Iker Casillas", "ar": "إيكر كاسياس" },
-        "media": { "type": "player", "fallbackText": "IK1" },
+        "name": {
+          "en": "Iker Casillas",
+          "ar": "إيكر كاسياس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "IK1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg"
+        },
         "value": 177,
-        "valueLabel": { "en": "177 Apps", "ar": "177 مباراة" },
+        "valueLabel": {
+          "en": "177 Apps",
+          "ar": "177 مباراة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "app_messi",
-        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
-        "media": { "type": "player", "fallbackText": "LM10" },
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
         "value": 163,
-        "valueLabel": { "en": "163 Apps", "ar": "163 مباراة" },
+        "valueLabel": {
+          "en": "163 Apps",
+          "ar": "163 مباراة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "app_benzema",
-        "name": { "en": "Karim Benzema", "ar": "كريم بنزيما" },
-        "media": { "type": "player", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
         "value": 152,
-        "valueLabel": { "en": "152 Apps", "ar": "152 مباراة" },
+        "valueLabel": {
+          "en": "152 Apps",
+          "ar": "152 مباراة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "app_xavi",
-        "name": { "en": "Xavi Hernández", "ar": "تشافي هيرنانديز" },
-        "media": { "type": "player", "fallbackText": "X6" },
+        "name": {
+          "en": "Xavi Hernández",
+          "ar": "تشافي هيرنانديز"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "X6",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Xavi_Hernandez_2011.jpg"
+        },
         "value": 151,
-        "valueLabel": { "en": "151 Apps", "ar": "151 مباراة" },
+        "valueLabel": {
+          "en": "151 Apps",
+          "ar": "151 مباراة"
+        },
         "correctRank": 5
       }
     ]
@@ -65,7 +124,12 @@
     "difficulty": "VERY_HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ucl", "knockout", "goals", "players"],
+    "tags": [
+      "ucl",
+      "knockout",
+      "goals",
+      "players"
+    ],
     "title": {
       "en": "Rank these 5 stars by UEFA Champions League knockout stage goals scored",
       "ar": "رتّب النجوم الخمسة حسب عدد أهدافهم في الأدوار الإقصائية لدوري أبطال أوروبا"
@@ -74,47 +138,100 @@
       "en": "Goals scored in Round of 16, Quarter-finals, Semi-finals, and Finals",
       "ar": "الأهداف المسجلة في ثمن النهائي، ربع النهائي، نصف النهائي، والنهائي"
     },
-    "metricLabel": { "en": "KO Goals", "ar": "أهداف إقصائية" },
+    "metricLabel": {
+      "en": "KO Goals",
+      "ar": "أهداف إقصائية"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ko_cr7",
-        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
-        "media": { "type": "player", "fallbackText": "CR7" },
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
         "value": 67,
-        "valueLabel": { "en": "67 Goals", "ar": "67 هدف" },
+        "valueLabel": {
+          "en": "67 Goals",
+          "ar": "67 هدف"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ko_messi",
-        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
-        "media": { "type": "player", "fallbackText": "LM10" },
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
         "value": 49,
-        "valueLabel": { "en": "49 Goals", "ar": "49 هدف" },
+        "valueLabel": {
+          "en": "49 Goals",
+          "ar": "49 هدف"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ko_benzema",
-        "name": { "en": "Karim Benzema", "ar": "كريم بنزيما" },
-        "media": { "type": "player", "fallbackText": "KB9" },
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
+        },
         "value": 34,
-        "valueLabel": { "en": "34 Goals", "ar": "34 هدف" },
+        "valueLabel": {
+          "en": "34 Goals",
+          "ar": "34 هدف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ko_lewa",
-        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
-        "media": { "type": "player", "fallbackText": "RL9" },
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
+        },
         "value": 32,
-        "valueLabel": { "en": "32 Goals", "ar": "32 هدف" },
+        "valueLabel": {
+          "en": "32 Goals",
+          "ar": "32 هدف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ko_muller",
-        "name": { "en": "Thomas Müller", "ar": "توماس مولر" },
-        "media": { "type": "player", "fallbackText": "TM25" },
+        "name": {
+          "en": "Thomas Müller",
+          "ar": "توماس مولر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
+        },
         "value": 26,
-        "valueLabel": { "en": "26 Goals", "ar": "26 هدف" },
+        "valueLabel": {
+          "en": "26 Goals",
+          "ar": "26 هدف"
+        },
         "correctRank": 5
       }
     ]

@@ -14,6 +14,7 @@
       "club": "Barcelona",
       "nation": "Poland",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/851.png",
       "kitNumber": 25
@@ -25,6 +26,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 88,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182718.png",
       "kitNumber": 13
@@ -36,6 +38,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/543468.png",
       "kitNumber": 33
@@ -47,6 +50,7 @@
       "club": "Barcelona",
       "nation": "France",
       "tier": "MASTER",
+      "rating": 87,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1257.png",
       "kitNumber": 23
@@ -58,6 +62,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/396623.png",
       "kitNumber": 2
@@ -69,6 +74,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161928.png",
       "kitNumber": 3
@@ -80,6 +86,7 @@
       "club": "Barcelona",
       "nation": "Denmark",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2282.png",
       "kitNumber": 15
@@ -91,6 +98,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/619.png",
       "kitNumber": 24
@@ -102,6 +110,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181701.png",
       "kitNumber": 35
@@ -113,6 +122,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/433395.png",
       "kitNumber": 36
@@ -124,6 +134,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568001.png",
       "kitNumber": 42
@@ -135,6 +146,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/491250.png",
       "kitNumber": 26
@@ -146,6 +158,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "ULTIMATE",
+      "rating": 91,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44.png",
       "kitNumber": 16
@@ -156,7 +169,8 @@
       "position": "CM/CAM",
       "club": "Barcelona",
       "nation": "Spain",
-      "tier": "MASTER",
+      "tier": "ULTIMATE",
+      "rating": 92,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/133609.png",
       "kitNumber": 8
@@ -168,6 +182,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 87,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1323.png",
       "kitNumber": 20
@@ -179,6 +194,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/296667.png",
       "kitNumber": 6
@@ -190,6 +206,7 @@
       "club": "Barcelona",
       "nation": "Netherlands",
       "tier": "MASTER",
+      "rating": 87,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/538.png",
       "kitNumber": 21
@@ -201,6 +218,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329728.png",
       "kitNumber": 17
@@ -212,6 +230,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340626.png",
       "kitNumber": 16
@@ -223,6 +242,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/433396.png",
       "kitNumber": 22
@@ -234,6 +254,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/491086.png",
       "kitNumber": 43
@@ -245,6 +266,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "ULTIMATE",
+      "rating": 93,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386828.png",
       "kitNumber": 10
@@ -256,6 +278,7 @@
       "club": "Barcelona",
       "nation": "Brazil",
       "tier": "ULTIMATE",
+      "rating": 91,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1496.png",
       "kitNumber": 11
@@ -267,6 +290,7 @@
       "club": "Barcelona",
       "nation": "England",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138787.png",
       "kitNumber": 10
@@ -278,6 +302,7 @@
       "club": "Barcelona",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7334.png",
       "kitNumber": 27
@@ -289,6 +314,7 @@
       "club": "Barcelona",
       "nation": "Egypt",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/550547.png",
       "kitNumber": 39
@@ -300,6 +326,7 @@
       "club": "Barcelona",
       "nation": "Sweden",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/338958.png",
       "kitNumber": 28
@@ -311,6 +338,7 @@
       "club": "Barcelona",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 59,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/579244.png",
       "kitNumber": 41

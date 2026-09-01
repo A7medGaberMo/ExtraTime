@@ -5,7 +5,12 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["premier-league", "points", "records", "champions"],
+    "tags": [
+      "premier-league",
+      "points",
+      "records",
+      "champions"
+    ],
     "title": {
       "en": "Rank these 5 Premier League seasons by total points won",
       "ar": "رتّب مواسم البريميرليج الخمسة حسب عدد النقاط المحصودة"
@@ -14,52 +19,120 @@
       "en": "Premier League era points tally (38-game season)",
       "ar": "إجمالي النقاط في موسم واحد (38 جولة)"
     },
-    "metricLabel": { "en": "Points", "ar": "نقاط" },
+    "metricLabel": {
+      "en": "Points",
+      "ar": "نقاط"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "pl_pts_mcfc18",
-        "name": { "en": "Manchester City 2017–18", "ar": "مانشستر سيتي 2017–18" },
-        "subText": { "en": "The Centurions (Pep Guardiola)", "ar": "موسم المئة نقطة (بيب غوارديولا)" },
-        "media": { "type": "club", "fallbackText": "MC" },
+        "name": {
+          "en": "Manchester City 2017–18",
+          "ar": "مانشستر سيتي 2017–18"
+        },
+        "subText": {
+          "en": "Pep Guardiola",
+          "ar": "بيب غوارديولا"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 100,
-        "valueLabel": { "en": "100 Points", "ar": "100 نقطة" },
+        "valueLabel": {
+          "en": "100 Points",
+          "ar": "100 نقطة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "pl_pts_lfc20",
-        "name": { "en": "Liverpool 2019–20", "ar": "ليفربول 2019–20" },
-        "subText": { "en": "Title Winners (Jürgen Klopp)", "ar": "أبطال الدوري (يورغن كلوب)" },
-        "media": { "type": "club", "fallbackText": "LIV" },
+        "name": {
+          "en": "Liverpool 2019–20",
+          "ar": "ليفربول 2019–20"
+        },
+        "subText": {
+          "en": "Jürgen Klopp",
+          "ar": "يورغن كلوب"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
         "value": 99,
-        "valueLabel": { "en": "99 Points", "ar": "99 نقطة" },
+        "valueLabel": {
+          "en": "99 Points",
+          "ar": "99 نقطة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "pl_pts_mcfc19",
-        "name": { "en": "Manchester City 2018–19", "ar": "مانشستر سيتي 2018–19" },
-        "subText": { "en": "Domestic Treble Winners", "ar": "أبطال الثلاثية المحلية" },
-        "media": { "type": "club", "fallbackText": "MC" },
+        "name": {
+          "en": "Manchester City 2018–19",
+          "ar": "مانشستر سيتي 2018–19"
+        },
+        "subText": {
+          "en": "Treble Campaign",
+          "ar": "موسم الثلاثية"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 98,
-        "valueLabel": { "en": "98 Points", "ar": "98 نقطة" },
+        "valueLabel": {
+          "en": "98 Points",
+          "ar": "98 نقطة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "pl_pts_cfc05",
-        "name": { "en": "Chelsea 2004–05", "ar": "تشيلسي 2004–05" },
-        "subText": { "en": "Jose Mourinho debut title (15 conceded)", "ar": "موسم الـ15 هدفًا (مورينيو)" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea 2004–05",
+          "ar": "تشيلسي 2004–05"
+        },
+        "subText": {
+          "en": "Jose Mourinho debut title",
+          "ar": "مورينيو"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
         "value": 95,
-        "valueLabel": { "en": "95 Points", "ar": "95 نقطة" },
+        "valueLabel": {
+          "en": "95 Points",
+          "ar": "95 نقطة"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "pl_pts_cfc17",
-        "name": { "en": "Chelsea 2016–17", "ar": "تشيلسي 2016–17" },
-        "subText": { "en": "Antonio Conte 30 wins", "ar": "موسم الـ30 فوزًا (كونتي)" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea 2016–17",
+          "ar": "تشيلسي 2016–17"
+        },
+        "subText": {
+          "en": "Antonio Conte",
+          "ar": "كونتي"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
         "value": 93,
-        "valueLabel": { "en": "93 Points", "ar": "93 نقطة" },
+        "valueLabel": {
+          "en": "93 Points",
+          "ar": "93 نقطة"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +143,11 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["premier-league", "goals", "scoring-records"],
+    "tags": [
+      "premier-league",
+      "goals",
+      "scoring-records"
+    ],
     "title": {
       "en": "Rank these 5 Premier League club-seasons by goals scored",
       "ar": "رتّب مواسم البريميرليج الخمسة حسب عدد الأهداف المسجلة في الدوري"
@@ -79,48 +156,104 @@
       "en": "Most prolific league campaigns in Premier League history",
       "ar": "أعلى المواسم تهديفيًا في تاريخ الدوري الإنجليزي الممتاز"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "pl_gl_mcfc18",
-        "name": { "en": "Manchester City 2017–18", "ar": "مانشستر سيتي 2017–18" },
-        "media": { "type": "club", "fallbackText": "MC" },
+        "name": {
+          "en": "Manchester City 2017–18",
+          "ar": "مانشستر سيتي 2017–18"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 106,
-        "valueLabel": { "en": "106 Goals", "ar": "106 أهداف" },
+        "valueLabel": {
+          "en": "106 Goals",
+          "ar": "106 أهداف"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "pl_gl_cfc10",
-        "name": { "en": "Chelsea 2009–10", "ar": "تشيلسي 2009–10" },
-        "subText": { "en": "Carlo Ancelotti champion", "ar": "بطل الدوري (أنشيلوتي)" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea 2009–10",
+          "ar": "تشيلسي 2009–10"
+        },
+        "subText": {
+          "en": "Carlo Ancelotti champion",
+          "ar": "بطل الدوري (أنشيلوتي)"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
         "value": 103,
-        "valueLabel": { "en": "103 Goals", "ar": "103 أهداف" },
+        "valueLabel": {
+          "en": "103 Goals",
+          "ar": "103 أهداف"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "pl_gl_mcfc20",
-        "name": { "en": "Manchester City 2019–20", "ar": "مانشستر سيتي 2019–20" },
-        "media": { "type": "club", "fallbackText": "MC" },
+        "name": {
+          "en": "Manchester City 2019–20",
+          "ar": "مانشستر سيتي 2019–20"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 102,
-        "valueLabel": { "en": "102 Goals", "ar": "102 هدف" },
+        "valueLabel": {
+          "en": "102 Goals",
+          "ar": "102 هدف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "pl_gl_mcfc19",
-        "name": { "en": "Manchester City 2018–19", "ar": "مانشستر سيتي 2018–19" },
-        "media": { "type": "club", "fallbackText": "MC" },
+        "name": {
+          "en": "Manchester City 2018–19",
+          "ar": "مانشستر سيتي 2018–19"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 95,
-        "valueLabel": { "en": "95 Goals", "ar": "95 هدفًا" },
+        "valueLabel": {
+          "en": "95 Goals",
+          "ar": "95 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "pl_gl_lfc22",
-        "name": { "en": "Liverpool 2021–22", "ar": "ليفربول 2021–22" },
-        "media": { "type": "club", "fallbackText": "LIV" },
+        "name": {
+          "en": "Liverpool 2021–22",
+          "ar": "ليفربول 2021–22"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
         "value": 94,
-        "valueLabel": { "en": "94 Goals", "ar": "94 هدفًا" },
+        "valueLabel": {
+          "en": "94 Goals",
+          "ar": "94 هدفًا"
+        },
         "correctRank": 5
       }
     ]
@@ -131,7 +264,12 @@
     "difficulty": "VERY_HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["premier-league", "goal-difference", "defense", "offense"],
+    "tags": [
+      "premier-league",
+      "goal-difference",
+      "defense",
+      "offense"
+    ],
     "title": {
       "en": "Rank these 5 Premier League club-seasons by goal difference",
       "ar": "رتّب مواسم البريميرليج الخمسة حسب فارق الأهداف (+/-)"
@@ -140,47 +278,100 @@
       "en": "Highest single-season goal differences in Premier League history",
       "ar": "أعلى فارق أهداف مسجل في موسم واحد بالبريميرليج"
     },
-    "metricLabel": { "en": "Goal Difference", "ar": "فارق الأهداف" },
+    "metricLabel": {
+      "en": "Goal Difference",
+      "ar": "فارق الأهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "pl_gd_mcfc18",
-        "name": { "en": "Manchester City 2017–18", "ar": "مانشستر سيتي 2017–18" },
-        "media": { "type": "club", "fallbackText": "MC" },
+        "name": {
+          "en": "Manchester City 2017–18",
+          "ar": "مانشستر سيتي 2017–18"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 79,
-        "valueLabel": { "en": "+79 GD", "ar": "+79 فارق أهداف" },
+        "valueLabel": {
+          "en": "+79 GD",
+          "ar": "+79 فارق أهداف"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "pl_gd_mcfc19",
-        "name": { "en": "Manchester City 2018–19", "ar": "مانشستر سيتي 2018–19" },
-        "media": { "type": "club", "fallbackText": "MC" },
+        "name": {
+          "en": "Manchester City 2018–19",
+          "ar": "مانشستر سيتي 2018–19"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "MC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 72,
-        "valueLabel": { "en": "+72 GD", "ar": "+72 فارق أهداف" },
+        "valueLabel": {
+          "en": "+72 GD",
+          "ar": "+72 فارق أهداف"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "pl_gd_cfc10",
-        "name": { "en": "Chelsea 2009–10", "ar": "تشيلسي 2009–10" },
-        "media": { "type": "club", "fallbackText": "CHE" },
+        "name": {
+          "en": "Chelsea 2009–10",
+          "ar": "تشيلسي 2009–10"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
         "value": 71,
-        "valueLabel": { "en": "+71 GD", "ar": "+71 فارق أهداف" },
+        "valueLabel": {
+          "en": "+71 GD",
+          "ar": "+71 فارق أهداف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "pl_gd_lfc22",
-        "name": { "en": "Liverpool 2021–22", "ar": "ليفربول 2021–22" },
-        "media": { "type": "club", "fallbackText": "LIV" },
+        "name": {
+          "en": "Liverpool 2021–22",
+          "ar": "ليفربول 2021–22"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
         "value": 68,
-        "valueLabel": { "en": "+68 GD", "ar": "+68 فارق أهداف" },
+        "valueLabel": {
+          "en": "+68 GD",
+          "ar": "+68 فارق أهداف"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "pl_gd_lfc19",
-        "name": { "en": "Liverpool 2018–19", "ar": "ليفربول 2018–19" },
-        "media": { "type": "club", "fallbackText": "LIV" },
+        "name": {
+          "en": "Liverpool 2018–19",
+          "ar": "ليفربول 2018–19"
+        },
+        "media": {
+          "type": "club",
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
+        },
         "value": 67,
-        "valueLabel": { "en": "+67 GD", "ar": "+67 فارق أهداف" },
+        "valueLabel": {
+          "en": "+67 GD",
+          "ar": "+67 فارق أهداف"
+        },
         "correctRank": 5
       }
     ]

@@ -5,7 +5,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["premier-league", "assists", "playmakers", "kdb", "giggs"],
+    "tags": [
+      "premier-league",
+      "assists",
+      "playmakers",
+      "kdb",
+      "giggs"
+    ],
     "title": {
       "en": "Rank these 5 Premier League playmakers by all-time assists provided",
       "ar": "رتّب صُنّاع اللعب الخمسة حسب إجمالي التمريرات الحاسمة (الاسيست) في تاريخ البريميرليج"
@@ -14,52 +20,124 @@
       "en": "Official Premier League assists era (1992–present)",
       "ar": "إجمالي التمريرات الحاسمة في البريميرليج (1992–حتى الآن)"
     },
-    "metricLabel": { "en": "Assists", "ar": "تمريرات حاسمة" },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "ast_giggs",
-        "name": { "en": "Ryan Giggs", "ar": "ريان غيغز" },
-        "subText": { "en": "Manchester United", "ar": "مانشستر يونايتد" },
-        "media": { "type": "player", "fallbackText": "RG11" },
+        "name": {
+          "en": "Ryan Giggs",
+          "ar": "ريان غيغز"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RG11",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
         "value": 162,
-        "valueLabel": { "en": "162 Assists", "ar": "162 تمريرة" },
+        "valueLabel": {
+          "en": "162 Assists",
+          "ar": "162 تمريرة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "ast_kdb",
-        "name": { "en": "Kevin De Bruyne", "ar": "كيفين دي بروين" },
-        "subText": { "en": "Chelsea / Man City", "ar": "تشيلسي / مانشستر سيتي" },
-        "media": { "type": "player", "fallbackText": "KDB" },
+        "name": {
+          "en": "Kevin De Bruyne",
+          "ar": "كيفين دي بروين"
+        },
+        "subText": {
+          "en": "Chelsea / Man City",
+          "ar": "تشيلسي / مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 118,
-        "valueLabel": { "en": "118 Assists", "ar": "118 تمريرة" },
+        "valueLabel": {
+          "en": "118 Assists",
+          "ar": "118 تمريرة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "ast_fabregas",
-        "name": { "en": "Cesc Fàbregas", "ar": "سيسك فابريغاس" },
-        "subText": { "en": "Arsenal / Chelsea", "ar": "أرسنال / تشيلسي" },
-        "media": { "type": "player", "fallbackText": "CF4" },
+        "name": {
+          "en": "Cesc Fàbregas",
+          "ar": "سيسك فابريغاس"
+        },
+        "subText": {
+          "en": "Arsenal / Chelsea",
+          "ar": "أرسنال / تشيلسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CF4",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cesc_F%C3%A0bregas_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
         "value": 111,
-        "valueLabel": { "en": "111 Assists", "ar": "111 تمريرة" },
+        "valueLabel": {
+          "en": "111 Assists",
+          "ar": "111 تمريرة"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "ast_rooney",
-        "name": { "en": "Wayne Rooney", "ar": "واين روني" },
-        "subText": { "en": "Everton / Man United", "ar": "إيفرتون / مانشستر يونايتد" },
-        "media": { "type": "player", "fallbackText": "WR10" },
+        "name": {
+          "en": "Wayne Rooney",
+          "ar": "واين روني"
+        },
+        "subText": {
+          "en": "Everton / Man United",
+          "ar": "إيفرتون / مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "WR10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Wayne_Rooney_2020.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
         "value": 103,
-        "valueLabel": { "en": "103 Assists", "ar": "103 تمريرات" },
+        "valueLabel": {
+          "en": "103 Assists",
+          "ar": "103 تمريرات"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "ast_lampard",
-        "name": { "en": "Frank Lampard", "ar": "فرانك لامبارد" },
-        "subText": { "en": "West Ham / Chelsea / Man City", "ar": "وست هام / تشيلسي / السيتي" },
-        "media": { "type": "player", "fallbackText": "FL8" },
+        "name": {
+          "en": "Frank Lampard",
+          "ar": "فرانك لامبارد"
+        },
+        "subText": {
+          "en": "West Ham / Chelsea / Man City",
+          "ar": "وست هام / تشيلسي / السيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "FL8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Frank_Lampard_2019.jpg/330px-Frank_Lampard_2019.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 102,
-        "valueLabel": { "en": "102 Assists", "ar": "102 تمريرة" },
+        "valueLabel": {
+          "en": "102 Assists",
+          "ar": "102 تمريرة"
+        },
         "correctRank": 5
       }
     ]

@@ -5,7 +5,13 @@
     "difficulty": "EASY",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ballon-dor", "players", "awards", "messi", "ronaldo"],
+    "tags": [
+      "ballon-dor",
+      "players",
+      "awards",
+      "messi",
+      "ronaldo"
+    ],
     "title": {
       "en": "Rank these 5 legends by Ballon d'Or awards won",
       "ar": "رتّب الأساطير الخمسة حسب عدد مرات الفوز بالكرة الذهبية"
@@ -14,47 +20,100 @@
       "en": "Men's Ballon d'Or awards in history",
       "ar": "جوائز الكرة الذهبية للرجال عبر التاريخ"
     },
-    "metricLabel": { "en": "Ballon d'Or", "ar": "كرات ذهبية" },
+    "metricLabel": {
+      "en": "Ballon d'Or",
+      "ar": "كرات ذهبية"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "bdo_messi",
-        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
-        "media": { "type": "player", "fallbackText": "LM10" },
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Awards", "ar": "8 كرات ذهبية" },
+        "valueLabel": {
+          "en": "8 Awards",
+          "ar": "8 كرات ذهبية"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "bdo_cr7",
-        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
-        "media": { "type": "player", "fallbackText": "CR7" },
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
         "value": 5,
-        "valueLabel": { "en": "5 Awards", "ar": "5 كرات ذهبية" },
+        "valueLabel": {
+          "en": "5 Awards",
+          "ar": "5 كرات ذهبية"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "bdo_platini",
-        "name": { "en": "Michel Platini", "ar": "ميشيل بلاتيني" },
-        "media": { "type": "player", "fallbackText": "MP" },
+        "name": {
+          "en": "Michel Platini",
+          "ar": "ميشيل بلاتيني"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MP",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Michel_Platini_1984.jpg"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Awards", "ar": "3 كرات ذهبية" },
+        "valueLabel": {
+          "en": "3 Awards",
+          "ar": "3 كرات ذهبية"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "bdo_r9",
-        "name": { "en": "Ronaldo Nazário", "ar": "رونالدو البرازيلي" },
-        "media": { "type": "player", "fallbackText": "R9" },
+        "name": {
+          "en": "Ronaldo Nazário",
+          "ar": "رونالدو البرازيلي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Awards", "ar": "كرتان ذهبيتان" },
+        "valueLabel": {
+          "en": "2 Awards",
+          "ar": "كرتان ذهبيتان"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "bdo_zidane",
-        "name": { "en": "Zinedine Zidane", "ar": "زين الدين زيدان" },
-        "media": { "type": "player", "fallbackText": "ZZ" },
+        "name": {
+          "en": "Zinedine Zidane",
+          "ar": "زين الدين زيدان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ZZ",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg"
+        },
         "value": 1,
-        "valueLabel": { "en": "1 Award", "ar": "كرة ذهبية واحدة" },
+        "valueLabel": {
+          "en": "1 Award",
+          "ar": "كرة ذهبية واحدة"
+        },
         "correctRank": 5
       }
     ]
@@ -65,7 +124,11 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ballon-dor", "podiums", "awards"],
+    "tags": [
+      "ballon-dor",
+      "podiums",
+      "awards"
+    ],
     "title": {
       "en": "Rank these 5 players by Ballon d'Or top-3 podium finishes",
       "ar": "رتّب اللاعبين الخمسة حسب عدد مرات التواجد في المراكز الثلاثة الأولى للكرة الذهبية"
@@ -74,47 +137,100 @@
       "en": "1st, 2nd, or 3rd place finishes combined",
       "ar": "إجمالي مرات التواجد بالمركز الأول أو الثاني أو الثالث"
     },
-    "metricLabel": { "en": "Podiums", "ar": "منصات تتويج" },
+    "metricLabel": {
+      "en": "Podiums",
+      "ar": "منصات تتويج"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "pod_messi",
-        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
-        "media": { "type": "player", "fallbackText": "LM10" },
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
         "value": 14,
-        "valueLabel": { "en": "14 Podiums", "ar": "14 منصة" },
+        "valueLabel": {
+          "en": "14 Podiums",
+          "ar": "14 منصة"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "pod_cr7",
-        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
-        "media": { "type": "player", "fallbackText": "CR7" },
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
         "value": 12,
-        "valueLabel": { "en": "12 Podiums", "ar": "12 منصة" },
+        "valueLabel": {
+          "en": "12 Podiums",
+          "ar": "12 منصة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "pod_cruyff",
-        "name": { "en": "Johan Cruyff", "ar": "يوهان كرويف" },
-        "media": { "type": "player", "fallbackText": "JC" },
+        "name": {
+          "en": "Johan Cruyff",
+          "ar": "يوهان كرويف"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JC",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Johan_Cruyff_1974c.jpg"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Podiums", "ar": "4 منصات" },
+        "valueLabel": {
+          "en": "4 Podiums",
+          "ar": "4 منصات"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "pod_zidane",
-        "name": { "en": "Zinedine Zidane", "ar": "زين الدين زيدان" },
-        "media": { "type": "player", "fallbackText": "ZZ" },
+        "name": {
+          "en": "Zinedine Zidane",
+          "ar": "زين الدين زيدان"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ZZ",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg"
+        },
         "value": 3,
-        "valueLabel": { "en": "3 Podiums", "ar": "3 منصات" },
+        "valueLabel": {
+          "en": "3 Podiums",
+          "ar": "3 منصات"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "pod_neymar",
-        "name": { "en": "Neymar Jr", "ar": "نيمار" },
-        "media": { "type": "player", "fallbackText": "NJR" },
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg"
+        },
         "value": 2,
-        "valueLabel": { "en": "2 Podiums", "ar": "منصتان" },
+        "valueLabel": {
+          "en": "2 Podiums",
+          "ar": "منصتان"
+        },
         "correctRank": 5
       }
     ]
@@ -125,7 +241,11 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ballon-dor", "nations", "awards"],
+    "tags": [
+      "ballon-dor",
+      "nations",
+      "awards"
+    ],
     "title": {
       "en": "Rank these 5 nations by total Ballon d'Or trophies won by their players",
       "ar": "رتّب الدول الخمسة حسب إجمالي كرات الكرة الذهبية التي فاز بها لاعبوها"
@@ -134,47 +254,100 @@
       "en": "Men's Ballon d'Or awards by nationality",
       "ar": "جوائز الكرة الذهبية للرجال حسب جنسية اللاعبين"
     },
-    "metricLabel": { "en": "Trophies", "ar": "جوائز" },
+    "metricLabel": {
+      "en": "Trophies",
+      "ar": "جوائز"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "bdo_nat_arg",
-        "name": { "en": "Argentina", "ar": "الأرجنتين" },
-        "media": { "type": "nation", "fallbackText": "ARG" },
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
         "value": 8,
-        "valueLabel": { "en": "8 Trophies", "ar": "8 كرات" },
+        "valueLabel": {
+          "en": "8 Trophies",
+          "ar": "8 كرات"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "bdo_nat_fra",
-        "name": { "en": "France", "ar": "فرنسا" },
-        "media": { "type": "nation", "fallbackText": "FRA" },
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "FRA",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png"
+        },
         "value": 7,
-        "valueLabel": { "en": "7 Trophies", "ar": "7 كرات" },
+        "valueLabel": {
+          "en": "7 Trophies",
+          "ar": "7 كرات"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "bdo_nat_bra",
-        "name": { "en": "Brazil", "ar": "البرازيل" },
-        "media": { "type": "nation", "fallbackText": "BRA" },
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
+        },
         "value": 5,
-        "valueLabel": { "en": "5 Trophies", "ar": "5 كرات" },
+        "valueLabel": {
+          "en": "5 Trophies",
+          "ar": "5 كرات"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "bdo_nat_esp",
-        "name": { "en": "Spain", "ar": "إسبانيا" },
-        "media": { "type": "nation", "fallbackText": "ESP" },
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ESP",
+          "primaryUrl": "https://flagcdn.com/w80/es.png"
+        },
         "value": 4,
-        "valueLabel": { "en": "4 Trophies", "ar": "4 كرات" },
+        "valueLabel": {
+          "en": "4 Trophies",
+          "ar": "4 كرات"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "bdo_nat_cro",
-        "name": { "en": "Croatia", "ar": "كرواتيا" },
-        "media": { "type": "nation", "fallbackText": "CRO" },
+        "name": {
+          "en": "Croatia",
+          "ar": "كرواتيا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "CRO",
+          "primaryUrl": "https://flagcdn.com/w80/hr.png"
+        },
         "value": 1,
-        "valueLabel": { "en": "1 Trophy", "ar": "كرة واحدة" },
+        "valueLabel": {
+          "en": "1 Trophy",
+          "ar": "كرة واحدة"
+        },
         "correctRank": 5
       }
     ]
@@ -185,7 +358,11 @@
     "difficulty": "VERY_HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["ballon-dor", "records", "age"],
+    "tags": [
+      "ballon-dor",
+      "records",
+      "age"
+    ],
     "title": {
       "en": "Rank these 5 legends by their age when winning their first Ballon d'Or",
       "ar": "رتّب الأساطير الخمسة حسب العمر الأصغر عند الفوز بأول كرة ذهبية"
@@ -194,47 +371,100 @@
       "en": "Rank from youngest to oldest (in exact years)",
       "ar": "رتّب من الأصغر سنًا (بالسنوات) في المركز 1 إلى الأكبر في المركز 5"
     },
-    "metricLabel": { "en": "Age", "ar": "العمر" },
+    "metricLabel": {
+      "en": "Age",
+      "ar": "العمر"
+    },
     "direction": "asc",
     "answers": [
       {
         "answerKey": "age_r9",
-        "name": { "en": "Ronaldo Nazário (1997)", "ar": "رونالدو البرازيلي (1997)" },
-        "media": { "type": "player", "fallbackText": "R9" },
+        "name": {
+          "en": "Ronaldo Nazário (1997)",
+          "ar": "رونالدو البرازيلي (1997)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg"
+        },
         "value": 21.2,
-        "valueLabel": { "en": "21y 3m", "ar": "21 سنة و3 أشهر" },
+        "valueLabel": {
+          "en": "21y 3m",
+          "ar": "21 سنة و3 أشهر"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "age_owen",
-        "name": { "en": "Michael Owen (2001)", "ar": "مايكل أوين (2001)" },
-        "media": { "type": "player", "fallbackText": "MO" },
-        "value": 22.0,
-        "valueLabel": { "en": "22y 0m", "ar": "22 سنة" },
+        "name": {
+          "en": "Michael Owen (2001)",
+          "ar": "مايكل أوين (2001)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MO",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Michael_Owen_2013.jpg"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22y 0m",
+          "ar": "22 سنة"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "age_messi",
-        "name": { "en": "Lionel Messi (2009)", "ar": "ليونيل ميسي (2009)" },
-        "media": { "type": "player", "fallbackText": "LM10" },
+        "name": {
+          "en": "Lionel Messi (2009)",
+          "ar": "ليونيل ميسي (2009)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
         "value": 22.4,
-        "valueLabel": { "en": "22y 5m", "ar": "22 سنة و5 أشهر" },
+        "valueLabel": {
+          "en": "22y 5m",
+          "ar": "22 سنة و5 أشهر"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "age_cr7",
-        "name": { "en": "Cristiano Ronaldo (2008)", "ar": "كريستيانو رونالدو (2008)" },
-        "media": { "type": "player", "fallbackText": "CR7" },
+        "name": {
+          "en": "Cristiano Ronaldo (2008)",
+          "ar": "كريستيانو رونالدو (2008)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
         "value": 23.8,
-        "valueLabel": { "en": "23y 10m", "ar": "23 سنة و10 أشهر" },
+        "valueLabel": {
+          "en": "23y 10m",
+          "ar": "23 سنة و10 أشهر"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "age_kaka",
-        "name": { "en": "Kaká (2007)", "ar": "كاكا (2007)" },
-        "media": { "type": "player", "fallbackText": "KAKA" },
+        "name": {
+          "en": "Kaká (2007)",
+          "ar": "كاكا (2007)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KAKA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Kak%C3%A1_2010.jpg"
+        },
         "value": 25.6,
-        "valueLabel": { "en": "25y 7m", "ar": "25 سنة و7 أشهر" },
+        "valueLabel": {
+          "en": "25y 7m",
+          "ar": "25 سنة و7 أشهر"
+        },
         "correctRank": 5
       }
     ]

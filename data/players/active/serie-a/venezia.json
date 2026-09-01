@@ -14,6 +14,7 @@
       "club": "Venezia",
       "nation": "Serbia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162445.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31565.png",
       "kitNumber": 23
@@ -36,6 +38,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557120.png",
       "kitNumber": 40
@@ -47,6 +50,7 @@
       "club": "Venezia",
       "nation": "Portugal",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1482.png",
       "kitNumber": 12
@@ -58,6 +62,7 @@
       "club": "Venezia",
       "nation": "Suriname",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37144.png",
       "kitNumber": 5
@@ -69,6 +74,7 @@
       "club": "Venezia",
       "nation": "Croatia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26095.png",
       "kitNumber": 33
@@ -80,6 +86,7 @@
       "club": "Venezia",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/375321.png",
       "kitNumber": 20
@@ -91,6 +98,7 @@
       "club": "Venezia",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/373825.png",
       "kitNumber": 3
@@ -102,6 +110,7 @@
       "club": "Venezia",
       "nation": "Ivory Coast",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/401569.png",
       "kitNumber": 48
@@ -113,6 +122,7 @@
       "club": "Venezia",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610145.png",
       "kitNumber": 36
@@ -124,6 +134,7 @@
       "club": "Venezia",
       "nation": "United States",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51266.png",
       "kitNumber": 6
@@ -135,6 +146,7 @@
       "club": "Venezia",
       "nation": "Ecuador",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25414.png",
       "kitNumber": 10
@@ -146,6 +158,7 @@
       "club": "Venezia",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/265448.png",
       "kitNumber": 44
@@ -157,6 +170,7 @@
       "club": "Venezia",
       "nation": "Ghana",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30532.png",
       "kitNumber": 32
@@ -168,6 +182,7 @@
       "club": "Venezia",
       "nation": "Croatia",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1266.png",
       "kitNumber": 26
@@ -179,6 +194,7 @@
       "club": "Venezia",
       "nation": "Norway",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/39286.png",
       "kitNumber": 41
@@ -190,6 +206,7 @@
       "club": "Venezia",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/107153.png",
       "kitNumber": 71
@@ -201,6 +218,7 @@
       "club": "Venezia",
       "nation": "Croatia",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/14704.png",
       "kitNumber": 4
@@ -212,6 +230,7 @@
       "club": "Venezia",
       "nation": "Iceland",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/28744.png",
       "kitNumber": 14
@@ -223,6 +242,7 @@
       "club": "Venezia",
       "nation": "Iceland",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/28700.png",
       "kitNumber": 19
@@ -234,6 +254,7 @@
       "club": "Venezia",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/275394.png",
       "kitNumber": 18
@@ -245,6 +266,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30551.png",
       "kitNumber": 24
@@ -256,6 +278,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342025.png",
       "kitNumber": 28
@@ -267,6 +290,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/56390.png",
       "kitNumber": 16
@@ -278,6 +302,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/513179.png",
       "kitNumber": 42
@@ -289,6 +314,7 @@
       "club": "Venezia",
       "nation": "Senegal",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415517.png",
       "kitNumber": 43
@@ -300,6 +326,7 @@
       "club": "Venezia",
       "nation": "Nigeria",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/364511.png",
       "kitNumber": 90
@@ -311,6 +338,7 @@
       "club": "Venezia",
       "nation": "Nigeria",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/57446.png",
       "kitNumber": 9
@@ -322,6 +350,7 @@
       "club": "Venezia",
       "nation": "Kosovo",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/318546.png",
       "kitNumber": 11
@@ -333,6 +362,7 @@
       "club": "Venezia",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/185533.png",
       "kitNumber": 80
@@ -344,6 +374,7 @@
       "club": "Venezia",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26438.png",
       "kitNumber": 29
@@ -355,6 +386,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/266185.png",
       "kitNumber": 21
@@ -366,6 +398,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/212.png",
       "kitNumber": 45
@@ -377,6 +410,7 @@
       "club": "Venezia",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/425255.png",
       "kitNumber": 56

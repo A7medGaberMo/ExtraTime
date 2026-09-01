@@ -14,6 +14,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47427.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Celta Vigo",
       "nation": "Romania",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30765.png",
       "kitNumber": 13
@@ -36,6 +38,7 @@
       "club": "Celta Vigo",
       "nation": "Turkey",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50132.png",
       "kitNumber": 1
@@ -47,6 +50,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286623.png",
       "kitNumber": 25
@@ -58,6 +62,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2278.png",
       "kitNumber": 20
@@ -69,6 +74,7 @@
       "club": "Celta Vigo",
       "nation": "Sweden",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47988.png",
       "kitNumber": 2
@@ -80,6 +86,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286559.png",
       "kitNumber": 24
@@ -91,6 +98,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/384135.png",
       "kitNumber": 32
@@ -102,6 +110,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/157988.png",
       "kitNumber": 5
@@ -113,6 +122,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182661.png",
       "kitNumber": 16
@@ -124,6 +134,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/179955.png",
       "kitNumber": 17
@@ -135,6 +146,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329722.png",
       "kitNumber": 29
@@ -146,6 +158,7 @@
       "club": "Celta Vigo",
       "nation": "Senegal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437776.png",
       "kitNumber": 32
@@ -157,6 +170,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/561022.png",
       "kitNumber": 18
@@ -168,6 +182,7 @@
       "club": "Celta Vigo",
       "nation": "Guinea",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162123.png",
       "kitNumber": 6
@@ -179,6 +194,7 @@
       "club": "Celta Vigo",
       "nation": "Uruguay",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/211.png",
       "kitNumber": 15
@@ -190,6 +206,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182638.png",
       "kitNumber": 12
@@ -201,6 +218,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161875.png",
       "kitNumber": 28
@@ -212,6 +230,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/333502.png",
       "kitNumber": 31
@@ -223,6 +242,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/481678.png",
       "kitNumber": 8
@@ -234,6 +254,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560930.png",
       "kitNumber": 26
@@ -245,6 +266,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/554286.png",
       "kitNumber": 30
@@ -256,6 +278,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47445.png",
       "kitNumber": 10
@@ -267,6 +290,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47348.png",
       "kitNumber": 7
@@ -278,6 +302,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/122734.png",
       "kitNumber": 9
@@ -289,6 +314,7 @@
       "club": "Celta Vigo",
       "nation": "Sweden",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/269163.png",
       "kitNumber": 19
@@ -300,6 +326,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329720.png",
       "kitNumber": 23
@@ -311,6 +338,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/320517.png",
       "kitNumber": 38
@@ -322,6 +350,7 @@
       "club": "Celta Vigo",
       "nation": "Norway",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/351913.png",
       "kitNumber": 39
@@ -333,6 +362,7 @@
       "club": "Celta Vigo",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/554287.png",
       "kitNumber": 11
@@ -344,6 +374,7 @@
       "club": "Celta Vigo",
       "nation": "Ghana",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560931.png",
       "kitNumber": 37

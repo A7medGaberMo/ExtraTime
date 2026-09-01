@@ -33,12 +33,13 @@
           "ar": "مصر"
         },
         "subText": {
-          "en": "The Pharaohs (Record Holders)",
-          "ar": "الفراعنة (الرقم القياسي)"
+          "en": "The Pharaohs",
+          "ar": "الفراعنة"
         },
         "media": {
           "type": "nation",
-          "fallbackText": "EGY"
+          "fallbackText": "EGY",
+          "primaryUrl": "https://flagcdn.com/w80/eg.png"
         },
         "value": 7,
         "valueLabel": {
@@ -59,7 +60,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "CMR"
+          "fallbackText": "CMR",
+          "primaryUrl": "https://flagcdn.com/w80/cm.png"
         },
         "value": 5,
         "valueLabel": {
@@ -80,7 +82,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "GHA"
+          "fallbackText": "GHA",
+          "primaryUrl": "https://flagcdn.com/w80/gh.png"
         },
         "value": 4,
         "valueLabel": {
@@ -101,7 +104,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "NGA"
+          "fallbackText": "NGA",
+          "primaryUrl": "https://flagcdn.com/w80/ng.png"
         },
         "value": 3,
         "valueLabel": {
@@ -122,7 +126,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ALG"
+          "fallbackText": "ALG",
+          "primaryUrl": "https://flagcdn.com/w80/dz.png"
         },
         "value": 2,
         "valueLabel": {
@@ -173,8 +178,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/portugal.png",
-          "fallbackText": "CR7"
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
         },
         "value": 14,
         "valueLabel": {
@@ -195,8 +200,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/france.png",
-          "fallbackText": "PLA"
+          "fallbackText": "PLA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Michel_Platini_1984.jpg"
         },
         "value": 9,
         "valueLabel": {
@@ -217,8 +222,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/france.png",
-          "fallbackText": "GRI"
+          "fallbackText": "GRI",
+          "primaryUrl": "https://media.api-sports.io/football/players/56.png"
         },
         "value": 7,
         "valueLabel": {
@@ -239,8 +244,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/belgium.png",
-          "fallbackText": "LUK"
+          "fallbackText": "LUK",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg"
         },
         "value": 6,
         "valueLabel": {
@@ -261,8 +266,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/poland.png",
-          "fallbackText": "RL9"
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 5,
         "valueLabel": {
@@ -307,12 +312,13 @@
           "ar": "الأرجنتين"
         },
         "subText": {
-          "en": "All-Time Record Winners",
-          "ar": "البطل التاريخي للمسابقة"
+          "en": "CONMEBOL",
+          "ar": "كونميبول"
         },
         "media": {
           "type": "nation",
-          "fallbackText": "ARG"
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
         },
         "value": 16,
         "valueLabel": {
@@ -333,7 +339,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "URU"
+          "fallbackText": "URU",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png"
         },
         "value": 15,
         "valueLabel": {
@@ -354,7 +361,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "BRA"
+          "fallbackText": "BRA",
+          "primaryUrl": "https://flagcdn.com/w80/br.png"
         },
         "value": 9,
         "valueLabel": {
@@ -375,7 +383,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "CHI"
+          "fallbackText": "CHI",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png"
         },
         "value": 2,
         "valueLabel": {
@@ -396,7 +405,8 @@
         },
         "media": {
           "type": "nation",
-          "fallbackText": "COL"
+          "fallbackText": "COL",
+          "primaryUrl": "https://flagcdn.com/w80/co.png"
         },
         "value": 1,
         "valueLabel": {

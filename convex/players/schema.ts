@@ -21,8 +21,10 @@ export const playersTable = defineTable({
   apiId: v.optional(v.string()),
   imageUrl: v.optional(v.string()),
   kitNumber: v.optional(v.number()),
+  rating: v.optional(v.number()),
 })
   .index('by_tier', ['tier'])
+  .index('by_rating', ['rating'])
   .index('by_position', ['position'])
   .index('by_club', ['clubId'])
   .index('by_nation', ['nationId'])

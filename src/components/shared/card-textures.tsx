@@ -25,18 +25,10 @@ export function CardBackgroundTexture({ tier }: { tier: Tier }) {
               stroke="#D4AF37"
               strokeWidth="0.6"
             />
-            <text
-              x="50"
-              y="55"
-              fontSize="8"
-              fontFamily="sans-serif"
-              fontWeight="900"
-              fill="#D4AF37"
-              opacity="0.3"
-              textAnchor="middle"
-            >
-              ET
-            </text>
+            <g transform="translate(42, 45) scale(0.08)" fill="#D4AF37" opacity="0.35">
+              <path d="M 45 40 L 115 40 L 105 68 L 65 68 L 59 86 L 95 86 L 85 114 L 49 114 L 41 138 L 85 138 L 75 166 L 5 166 Z" />
+              <path d="M 85 40 L 190 40 L 180 68 L 148 68 L 114 166 L 82 166 L 116 68 L 75 68 Z" />
+            </g>
           </pattern>
           <rect width="100%" height="100%" fill="url(#tex-icon-marble)" />
         </svg>

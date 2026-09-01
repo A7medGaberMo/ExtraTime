@@ -5,7 +5,12 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["premier-league", "goalkeepers", "clean-sheets", "cech"],
+    "tags": [
+      "premier-league",
+      "goalkeepers",
+      "clean-sheets",
+      "cech"
+    ],
     "title": {
       "en": "Rank these 5 legendary goalkeepers by Premier League clean sheets kept",
       "ar": "رتّب حراس المرمى الخمسة حسب عدد الشباك النظيفة (الكلين شيت) في تاريخ البريميرليج"
@@ -14,52 +19,124 @@
       "en": "Premier League era (1992–present)",
       "ar": "حقبة الدوري الإنجليزي الممتاز (1992–حتى الآن)"
     },
-    "metricLabel": { "en": "Clean Sheets", "ar": "شباك نظيفة" },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "cs_cech",
-        "name": { "en": "Petr Čech", "ar": "بيتر تشيك" },
-        "subText": { "en": "Chelsea / Arsenal", "ar": "تشيلسي / أرسنال" },
-        "media": { "type": "player", "fallbackText": "PC1" },
+        "name": {
+          "en": "Petr Čech",
+          "ar": "بيتر تشيك"
+        },
+        "subText": {
+          "en": "Chelsea / Arsenal",
+          "ar": "تشيلسي / أرسنال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PC1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
         "value": 202,
-        "valueLabel": { "en": "202 Clean Sheets", "ar": "202 كلين شيت" },
+        "valueLabel": {
+          "en": "202 Clean Sheets",
+          "ar": "202 كلين شيت"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "cs_james",
-        "name": { "en": "David James", "ar": "ديفيد جيمس" },
-        "subText": { "en": "Liverpool / Aston Villa / Man City / Portsmouth", "ar": "ليفربول / أستون فيلا / بورتسموث" },
-        "media": { "type": "player", "fallbackText": "DJ1" },
+        "name": {
+          "en": "David James",
+          "ar": "ديفيد جيمس"
+        },
+        "subText": {
+          "en": "Liverpool / Aston Villa / Man City / Portsmouth",
+          "ar": "ليفربول / أستون فيلا / بورتسموث"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DJ1",
+          "primaryUrl": "https://media.api-sports.io/football/players/10105.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 169,
-        "valueLabel": { "en": "169 Clean Sheets", "ar": "169 كلين شيت" },
+        "valueLabel": {
+          "en": "169 Clean Sheets",
+          "ar": "169 كلين شيت"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "cs_schwarzer",
-        "name": { "en": "Mark Schwarzer", "ar": "مارك شوارزر" },
-        "subText": { "en": "Middlesbrough / Fulham / Chelsea / Leicester", "ar": "ميدلزبره / فولهام / تشيلسي" },
-        "media": { "type": "player", "fallbackText": "MS1" },
+        "name": {
+          "en": "Mark Schwarzer",
+          "ar": "مارك شوارزر"
+        },
+        "subText": {
+          "en": "Middlesbrough / Fulham / Chelsea / Leicester",
+          "ar": "ميدلزبره / فولهام / تشيلسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MS1",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
         "value": 151,
-        "valueLabel": { "en": "151 Clean Sheets", "ar": "151 كلين شيت" },
+        "valueLabel": {
+          "en": "151 Clean Sheets",
+          "ar": "151 كلين شيت"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "cs_seaman",
-        "name": { "en": "David Seaman", "ar": "ديفيد سيمان" },
-        "subText": { "en": "Arsenal / Man City", "ar": "أرسنال / مانشستر سيتي" },
-        "media": { "type": "player", "fallbackText": "DS1" },
+        "name": {
+          "en": "David Seaman",
+          "ar": "ديفيد سيمان"
+        },
+        "subText": {
+          "en": "Arsenal / Man City",
+          "ar": "أرسنال / مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DS1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/David_Seaman_2011.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+        },
         "value": 141,
-        "valueLabel": { "en": "141 Clean Sheets", "ar": "141 كلين شيت" },
+        "valueLabel": {
+          "en": "141 Clean Sheets",
+          "ar": "141 كلين شيت"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "cs_vds",
-        "name": { "en": "Edwin van der Sar", "ar": "إدوين فان دير سار" },
-        "subText": { "en": "Fulham / Manchester United", "ar": "فولهام / مانشستر يونايتد" },
-        "media": { "type": "player", "fallbackText": "VDS1" },
+        "name": {
+          "en": "Edwin van der Sar",
+          "ar": "إدوين فان دير سار"
+        },
+        "subText": {
+          "en": "Fulham / Manchester United",
+          "ar": "فولهام / مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VDS1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Edwin_van_der_Sar_2011.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
         "value": 132,
-        "valueLabel": { "en": "132 Clean Sheets", "ar": "132 كلين شيت" },
+        "valueLabel": {
+          "en": "132 Clean Sheets",
+          "ar": "132 كلين شيت"
+        },
         "correctRank": 5
       }
     ]

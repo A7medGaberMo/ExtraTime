@@ -14,6 +14,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9979.png",
       "kitNumber": 34
@@ -25,6 +26,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31007.png",
       "kitNumber": 77
@@ -36,6 +38,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/321454.png",
       "kitNumber": 1
@@ -47,6 +50,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/653531.png",
       "kitNumber": 67
@@ -58,6 +62,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606900.png",
       "kitNumber": null
@@ -69,6 +74,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9991.png",
       "kitNumber": 4
@@ -80,6 +86,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/71.png",
       "kitNumber": 14
@@ -91,6 +98,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9917.png",
       "kitNumber": 12
@@ -102,6 +110,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9949.png",
       "kitNumber": 18
@@ -113,6 +122,7 @@
       "club": "Santos",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6637.png",
       "kitNumber": 31
@@ -124,6 +134,7 @@
       "club": "Santos",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5872.png",
       "kitNumber": 98
@@ -135,6 +146,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/522702.png",
       "kitNumber": 42
@@ -146,6 +158,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/527683.png",
       "kitNumber": 26
@@ -157,6 +170,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609540.png",
       "kitNumber": 3
@@ -168,6 +182,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/507379.png",
       "kitNumber": null
@@ -179,6 +194,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10173.png",
       "kitNumber": 15
@@ -190,6 +206,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195111.png",
       "kitNumber": 25
@@ -201,6 +218,7 @@
       "club": "Santos",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6052.png",
       "kitNumber": 22
@@ -212,6 +230,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10492.png",
       "kitNumber": 16
@@ -223,6 +242,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/32901.png",
       "kitNumber": 5
@@ -234,6 +254,7 @@
       "club": "Santos",
       "nation": "Bolivia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/345756.png",
       "kitNumber": 30
@@ -245,6 +266,7 @@
       "club": "Santos",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30568.png",
       "kitNumber": 28
@@ -256,6 +278,7 @@
       "club": "Santos",
       "nation": "Paraguay",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/119128.png",
       "kitNumber": 17
@@ -267,6 +290,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609523.png",
       "kitNumber": 81
@@ -278,6 +302,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/506275.png",
       "kitNumber": 8
@@ -289,6 +314,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/506480.png",
       "kitNumber": 48
@@ -300,6 +326,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/474261.png",
       "kitNumber": 11
@@ -311,6 +338,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/632455.png",
       "kitNumber": 20
@@ -322,6 +350,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ULTIMATE",
+      "rating": 94,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/276.png",
       "kitNumber": 10
@@ -333,6 +362,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10174.png",
       "kitNumber": 9
@@ -344,6 +374,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10143.png",
       "kitNumber": null
@@ -355,6 +386,7 @@
       "club": "Santos",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/119485.png",
       "kitNumber": 32
@@ -366,6 +398,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/153454.png",
       "kitNumber": 21
@@ -377,6 +410,7 @@
       "club": "Santos",
       "nation": "Ukraine",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/197500.png",
       "kitNumber": 7
@@ -388,6 +422,7 @@
       "club": "Santos",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609619.png",
       "kitNumber": 27
@@ -399,6 +434,7 @@
       "club": "Santos",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609501.png",
       "kitNumber": 57

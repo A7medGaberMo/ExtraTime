@@ -1,0 +1,1374 @@
+[
+  {
+    "slug": "world-cup-all-time-top-scorers-historical",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by all-time FIFA World Cup finals goals scored",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي أهدافهم في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All-time tournament finals goals (1930 through 2026)",
+      "ar": "الأهداف المسجلة في النهائيات من 1930 حتى 2026"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "EASY",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "legends",
+      "goals",
+      "klose",
+      "ronaldo",
+      "pele"
+    ],
+    "answers": [
+      {
+        "answerKey": "wcg_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg"
+        },
+        "value": 16,
+        "valueLabel": {
+          "en": "16 Goals",
+          "ar": "16 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcg_r9",
+        "name": {
+          "en": "Ronaldo Nazário",
+          "ar": "رونالدو الظاهرة"
+        },
+        "subText": {
+          "en": "Brazil (1998–2006)",
+          "ar": "البرازيل (1998–2006)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg"
+        },
+        "value": 15,
+        "valueLabel": {
+          "en": "15 Goals",
+          "ar": "15 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcg_muller_gerd",
+        "name": {
+          "en": "Gerd Müller",
+          "ar": "غيرد مولر"
+        },
+        "subText": {
+          "en": "West Germany (1970–1974)",
+          "ar": "ألمانيا الغربية (1970–1974)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GM9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg"
+        },
+        "value": 14,
+        "valueLabel": {
+          "en": "14 Goals",
+          "ar": "14 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcg_fontaine",
+        "name": {
+          "en": "Just Fontaine",
+          "ar": "جوست فونتين"
+        },
+        "subText": {
+          "en": "France (1958)",
+          "ar": "فرنسا (1958)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JF9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Just_Fontaine_1958.jpg"
+        },
+        "value": 13,
+        "valueLabel": {
+          "en": "13 Goals",
+          "ar": "13 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcg_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "subText": {
+          "en": "Brazil (1958–1970)",
+          "ar": "البرازيل (1958–1970)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PELE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg"
+        },
+        "value": 12,
+        "valueLabel": {
+          "en": "12 Goals",
+          "ar": "12 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "most-official-career-goals-fifa-rsssf",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by official senior career goals scored",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي الأهداف الرسمية المسجلة في مسيرتهم الكروية"
+    },
+    "subtitle": {
+      "en": "Official senior club and country goals recognized by RSSSF/FIFA",
+      "ar": "الأهداف الرسمية المعتمدة مع الأندية الأولى والمنتخبات"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "career-goals",
+      "cr7",
+      "messi",
+      "pele",
+      "romario",
+      "puskas"
+    ],
+    "answers": [
+      {
+        "answerKey": "ocg_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 924,
+        "valueLabel": {
+          "en": "924 Goals",
+          "ar": "924 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ocg_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 850,
+        "valueLabel": {
+          "en": "850 Goals",
+          "ar": "850 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ocg_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PELE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg"
+        },
+        "value": 762,
+        "valueLabel": {
+          "en": "762 Goals",
+          "ar": "762 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ocg_romario",
+        "name": {
+          "en": "Romário",
+          "ar": "روماريو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ROM11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rom%C3%A1rio_2018.jpg"
+        },
+        "value": 755,
+        "valueLabel": {
+          "en": "755 Goals",
+          "ar": "755 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ocg_puskas",
+        "name": {
+          "en": "Ferenc Puskás",
+          "ar": "فيرينتس بوشكاش"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "FP10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Ferenc_Pusk%C3%A1s_1960.jpg"
+        },
+        "value": 729,
+        "valueLabel": {
+          "en": "729 Goals",
+          "ar": "729 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "most-trophies-won-in-football-history",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 players by total senior official trophies won in football history",
+      "ar": "رتّب اللاعبين الخمسة حسب إجمالي عدد البطولات والألقاب الرسمية في مسيرتهم"
+    },
+    "subtitle": {
+      "en": "Official senior club and country trophies combined",
+      "ar": "إجمالي الألقاب الرسمية للأندية والمنتخبات الأولى"
+    },
+    "metricLabel": {
+      "en": "Trophies",
+      "ar": "بطولات"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "trophies",
+      "messi",
+      "dani-alves",
+      "iniesta",
+      "pique"
+    ],
+    "answers": [
+      {
+        "answerKey": "tro_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 46,
+        "valueLabel": {
+          "en": "46 Trophies",
+          "ar": "46 بطولة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "tro_alves",
+        "name": {
+          "en": "Dani Alves",
+          "ar": "داني ألفيس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DA2",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dani_Alves_2018.jpg"
+        },
+        "value": 43,
+        "valueLabel": {
+          "en": "43 Trophies",
+          "ar": "43 بطولة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "tro_ashour",
+        "name": {
+          "en": "Hossam Ashour",
+          "ar": "حسام عاشور"
+        },
+        "subText": {
+          "en": "Al Ahly & Egypt",
+          "ar": "الأهلي ومصر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "HA25",
+          "primaryUrl": "https://media.api-sports.io/football/players/1030.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/1030.png"
+        },
+        "value": 39,
+        "valueLabel": {
+          "en": "39 Trophies",
+          "ar": "39 بطولة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "tro_iniesta",
+        "name": {
+          "en": "Andrés Iniesta",
+          "ar": "أندريس إنييستا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "AI8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Andr%C3%A9s_Iniesta.jpg"
+        },
+        "value": 38,
+        "valueLabel": {
+          "en": "38 Trophies",
+          "ar": "38 بطولة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "tro_pique",
+        "name": {
+          "en": "Gerard Piqué",
+          "ar": "جيرارد بيكيه"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GP3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Gerard_Piqu%C3%A9_2018.jpg"
+        },
+        "value": 37,
+        "valueLabel": {
+          "en": "37 Trophies",
+          "ar": "37 بطولة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "most-international-caps-mens-football-history",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 players by official senior international caps won",
+      "ar": "رتّب اللاعبين الخمسة حسب عدد المباريات الدولية الرسمية مع منتخباتهم الوطنية"
+    },
+    "subtitle": {
+      "en": "FIFA recognized senior international appearances",
+      "ar": "المباريات الدولية المعتمدة من الاتحاد الدولي (فيفا)"
+    },
+    "metricLabel": {
+      "en": "Caps",
+      "ar": "مباريات دولية"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "international-caps",
+      "cr7",
+      "messi",
+      "caps"
+    ],
+    "answers": [
+      {
+        "answerKey": "cap_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 217,
+        "valueLabel": {
+          "en": "217 Caps",
+          "ar": "217 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "cap_mutawa",
+        "name": {
+          "en": "Bader Al-Mutawa",
+          "ar": "بدر المطوع"
+        },
+        "subText": {
+          "en": "Kuwait",
+          "ar": "الكويت"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "BM17",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bader_Al-Mutawa_2019.jpg"
+        },
+        "value": 196,
+        "valueLabel": {
+          "en": "196 Caps",
+          "ar": "196 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "cap_ann",
+        "name": {
+          "en": "Soh Chin Ann",
+          "ar": "سوه تشين آن"
+        },
+        "subText": {
+          "en": "Malaysia",
+          "ar": "ماليزيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SCA"
+        },
+        "value": 195,
+        "valueLabel": {
+          "en": "195 Caps",
+          "ar": "195 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "cap_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 191,
+        "valueLabel": {
+          "en": "191 Caps",
+          "ar": "191 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "cap_hassan",
+        "name": {
+          "en": "Ahmed Hassan",
+          "ar": "أحمد حسن"
+        },
+        "subText": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "AH17",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Ahmed_Hassan_2010.jpg"
+        },
+        "value": 184,
+        "valueLabel": {
+          "en": "184 Caps",
+          "ar": "184 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-appearances-players",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by total FIFA World Cup matches played",
+      "ar": "رتّب الأساطير الخمسة حسب عدد المباريات الملعوبة في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "All tournament finals matches played (1930 through 2026)",
+      "ar": "إجمالي المباريات في نهائيات كأس العالم"
+    },
+    "metricLabel": {
+      "en": "Matches",
+      "ar": "مباريات"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "appearances",
+      "messi",
+      "matthaus",
+      "klose",
+      "maldini"
+    ],
+    "answers": [
+      {
+        "answerKey": "wcm_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina (2006–2022)",
+          "ar": "الأرجنتين (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 26,
+        "valueLabel": {
+          "en": "26 Matches",
+          "ar": "26 مباراة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wcm_matthaus",
+        "name": {
+          "en": "Lothar Matthäus",
+          "ar": "لوتار ماتيوس"
+        },
+        "subText": {
+          "en": "Germany (1982–1998)",
+          "ar": "ألمانيا (1982–1998)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lothar_Matth%C3%A4us_2014.jpg"
+        },
+        "value": 25,
+        "valueLabel": {
+          "en": "25 Matches",
+          "ar": "25 مباراة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wcm_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg"
+        },
+        "value": 24,
+        "valueLabel": {
+          "en": "24 Matches",
+          "ar": "24 مباراة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wcm_maldini",
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "Italy (1990–2002)",
+          "ar": "إيطاليا (1990–2002)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PM3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg"
+        },
+        "value": 23,
+        "valueLabel": {
+          "en": "23 Matches",
+          "ar": "23 مباراة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wcm_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (2006–2022)",
+          "ar": "البرتغال (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 22,
+        "valueLabel": {
+          "en": "22 Matches",
+          "ar": "22 مباراة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "ucl-clean-sheets-goalkeepers-all-time",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 iconic goalkeepers by UEFA Champions League clean sheets kept",
+      "ar": "رتّب الحراس الأساطير الخمسة حسب عدد الشباك النظيفة (كلين شيت) في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "Group stage to Final clean sheets",
+      "ar": "من دور المجموعات حتى النهائي"
+    },
+    "metricLabel": {
+      "en": "Clean Sheets",
+      "ar": "شباك نظيفة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "ucl",
+      "goalkeepers",
+      "clean-sheets",
+      "neuer",
+      "casillas",
+      "buffon"
+    ],
+    "answers": [
+      {
+        "answerKey": "ucs_neuer",
+        "name": {
+          "en": "Manuel Neuer",
+          "ar": "مانويل نوير"
+        },
+        "subText": {
+          "en": "Schalke & Bayern Munich",
+          "ar": "شالكه وبايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MN1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Manuel_Neuer_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 58,
+        "valueLabel": {
+          "en": "58 Clean Sheets",
+          "ar": "58 كلين شيت"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "ucs_casillas",
+        "name": {
+          "en": "Iker Casillas",
+          "ar": "إيكر كاسياس"
+        },
+        "subText": {
+          "en": "Real Madrid & Porto",
+          "ar": "ريال مدريد وبورتو"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "IK1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
+        "value": 57,
+        "valueLabel": {
+          "en": "57 Clean Sheets",
+          "ar": "57 كلين شيت"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "ucs_buffon",
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "subText": {
+          "en": "Parma, Juventus & PSG",
+          "ar": "بارما، يوفنتوس وباريس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GIGI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 52,
+        "valueLabel": {
+          "en": "52 Clean Sheets",
+          "ar": "52 كلين شيت"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "ucs_sar",
+        "name": {
+          "en": "Edwin van der Sar",
+          "ar": "أدوين فان در سار"
+        },
+        "subText": {
+          "en": "Ajax, Juventus & Man United",
+          "ar": "أياكس، يوفنتوس ومان يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "VDS1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Edwin_van_der_Sar_2011.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+        },
+        "value": 50,
+        "valueLabel": {
+          "en": "50 Clean Sheets",
+          "ar": "50 كلين شيت"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "ucs_cech",
+        "name": {
+          "en": "Petr Čech",
+          "ar": "بيتر تشيك"
+        },
+        "subText": {
+          "en": "Sparta Prague, Chelsea & Arsenal",
+          "ar": "سبارتا براغ، تشيلسي وأرسنال"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PC1",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Petr_Cech_2015.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+        },
+        "value": 49,
+        "valueLabel": {
+          "en": "49 Clean Sheets",
+          "ar": "49 كلين شيت"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-playmakers-assists-all-time",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 playmakers by all-time FIFA World Cup assists provided",
+      "ar": "رتّب صناع اللعب الخمسة حسب عدد التمريرات الحاسمة في تاريخ نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "Official assists in World Cup finals tournaments",
+      "ar": "التمريرات الحاسمة في نهائيات المونديال"
+    },
+    "metricLabel": {
+      "en": "Assists",
+      "ar": "تمريرات حاسمة"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "assists",
+      "pele",
+      "messi",
+      "playmakers"
+    ],
+    "answers": [
+      {
+        "answerKey": "wca_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "subText": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PELE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg"
+        },
+        "value": 10,
+        "valueLabel": {
+          "en": "10 Assists",
+          "ar": "10 تمريرات"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "wca_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 8,
+        "valueLabel": {
+          "en": "8 Assists",
+          "ar": "8 تمريرات"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "wca_littbarski",
+        "name": {
+          "en": "Pierre Littbarski",
+          "ar": "بيير ليتبارسكي"
+        },
+        "subText": {
+          "en": "West Germany",
+          "ar": "ألمانيا الغربية"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PL7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Pierre_Littbarski_1982.jpg"
+        },
+        "value": 7,
+        "valueLabel": {
+          "en": "7 Assists",
+          "ar": "7 تمريرات"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "wca_muller",
+        "name": {
+          "en": "Thomas Müller",
+          "ar": "توماس مولر"
+        },
+        "subText": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
+        },
+        "value": 6,
+        "valueLabel": {
+          "en": "6 Assists",
+          "ar": "6 تمريرات"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "wca_beckham",
+        "name": {
+          "en": "David Beckham",
+          "ar": "ديفيد بيكهام"
+        },
+        "subText": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "DB7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/David_Beckham_2018.jpg"
+        },
+        "value": 5,
+        "valueLabel": {
+          "en": "5 Assists",
+          "ar": "5 تمريرات"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "world-cup-all-time-minutes-played-legends",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by total minutes played in FIFA World Cup history",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي الدقائق الملعوبة في نهائيات كأس العالم"
+    },
+    "subtitle": {
+      "en": "Official match minutes including extra time",
+      "ar": "دقائق اللعب الرسمية شاملة الأوقات الإضافية"
+    },
+    "metricLabel": {
+      "en": "Minutes",
+      "ar": "دقائق"
+    },
+    "direction": "desc",
+    "difficulty": "HARD",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "world-cup",
+      "minutes",
+      "messi",
+      "maldini",
+      "matthaus"
+    ],
+    "answers": [
+      {
+        "answerKey": "min_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina (2006–2022)",
+          "ar": "الأرجنتين (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+        },
+        "value": 2314,
+        "valueLabel": {
+          "en": "2,314 Mins",
+          "ar": "2,314 دقيقة"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "min_maldini",
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "Italy (1990–2002)",
+          "ar": "إيطاليا (1990–2002)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PM3",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Paolo_Maldini_2008.jpg"
+        },
+        "value": 2217,
+        "valueLabel": {
+          "en": "2,217 Mins",
+          "ar": "2,217 دقيقة"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "min_matthaus",
+        "name": {
+          "en": "Lothar Matthäus",
+          "ar": "لوتار ماتيوس"
+        },
+        "subText": {
+          "en": "Germany (1982–1998)",
+          "ar": "ألمانيا (1982–1998)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lothar_Matth%C3%A4us_2014.jpg"
+        },
+        "value": 2045,
+        "valueLabel": {
+          "en": "2,045 Mins",
+          "ar": "2,045 دقيقة"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "min_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany (2002–2014)",
+          "ar": "ألمانيا (2002–2014)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MK11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg"
+        },
+        "value": 1803,
+        "valueLabel": {
+          "en": "1,803 Mins",
+          "ar": "1,803 دقيقة"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "min_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (2006–2022)",
+          "ar": "البرتغال (2006–2022)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+        },
+        "value": 1764,
+        "valueLabel": {
+          "en": "1,764 Mins",
+          "ar": "1,764 دقيقة"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "serie-a-all-time-top-scorers-historical",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by all-time Serie A goals scored",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي أهدافهم التاريخية في الدوري الإيطالي (سيري آ)"
+    },
+    "subtitle": {
+      "en": "Italian top-flight all-time top scorers",
+      "ar": "الهدافون التاريخيون للدوري الإيطالي الدرجة الأولى"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "serie-a",
+      "goals",
+      "totti",
+      "piola",
+      "italy"
+    ],
+    "answers": [
+      {
+        "answerKey": "sag_piola",
+        "name": {
+          "en": "Silvio Piola",
+          "ar": "سيلفيو بيولا"
+        },
+        "subText": {
+          "en": "Pro Vercelli, Lazio, Juventus & Novara",
+          "ar": "لاتسيو، يوفنتوس ونوفارا"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "SP9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Silvio_Piola_1938.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 274,
+        "valueLabel": {
+          "en": "274 Goals",
+          "ar": "274 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "sag_totti",
+        "name": {
+          "en": "Francesco Totti",
+          "ar": "فرانشيسكو توتي"
+        },
+        "subText": {
+          "en": "AS Roma",
+          "ar": "روما"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "FT10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/497.png"
+        },
+        "value": 250,
+        "valueLabel": {
+          "en": "250 Goals",
+          "ar": "250 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "sag_nordahl",
+        "name": {
+          "en": "Gunnar Nordahl",
+          "ar": "غونار نوردال"
+        },
+        "subText": {
+          "en": "AC Milan & AS Roma",
+          "ar": "ميلان وروما"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GN9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Gunnar_Nordahl_1950.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png"
+        },
+        "value": 225,
+        "valueLabel": {
+          "en": "225 Goals",
+          "ar": "225 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "sag_meazza",
+        "name": {
+          "en": "Giuseppe Meazza",
+          "ar": "جوزيبي مياتزا"
+        },
+        "subText": {
+          "en": "Inter Milan, Milan & Juventus",
+          "ar": "إنتر ميلان، ميلان ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GM9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Giuseppe_Meazza_1934.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+        },
+        "value": 216,
+        "valueLabel": {
+          "en": "216 Goals",
+          "ar": "216 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "sag_dinatale",
+        "name": {
+          "en": "Antonio Di Natale",
+          "ar": "أنطونيو دي ناتالي"
+        },
+        "subText": {
+          "en": "Empoli & Udinese",
+          "ar": "إمبولي وأودينيزي"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "ADN10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Antonio_Di_Natale_2012.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/511.png"
+        },
+        "value": 209,
+        "valueLabel": {
+          "en": "209 Goals",
+          "ar": "209 أهداف"
+        },
+        "correctRank": 5
+      }
+    ]
+  },
+  {
+    "slug": "bundesliga-all-time-top-scorers-historical",
+    "scopeType": "ALL_TIME",
+    "title": {
+      "en": "Rank these 5 legends by all-time German Bundesliga goals scored",
+      "ar": "رتّب الأساطير الخمسة حسب إجمالي أهدافهم التاريخية في الدوري الألماني (البوندسليغا)"
+    },
+    "subtitle": {
+      "en": "German Bundesliga all-time top scorers",
+      "ar": "الهدافون التاريخيون للبوندسليغا الألمانية"
+    },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
+    "direction": "desc",
+    "difficulty": "MEDIUM",
+    "asOfDate": "2026-08",
+    "isActive": true,
+    "tags": [
+      "bundesliga",
+      "goals",
+      "muller",
+      "lewandowski",
+      "germany"
+    ],
+    "answers": [
+      {
+        "answerKey": "blg_muller",
+        "name": {
+          "en": "Gerd Müller",
+          "ar": "غيرد مولر"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "GM9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 365,
+        "valueLabel": {
+          "en": "365 Goals",
+          "ar": "365 هدفًا"
+        },
+        "correctRank": 1
+      },
+      {
+        "answerKey": "blg_lewa",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "subText": {
+          "en": "Borussia Dortmund & Bayern Munich",
+          "ar": "بوروسيا دورتموند وبايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "value": 312,
+        "valueLabel": {
+          "en": "312 Goals",
+          "ar": "312 هدفًا"
+        },
+        "correctRank": 2
+      },
+      {
+        "answerKey": "blg_fischer",
+        "name": {
+          "en": "Klaus Fischer",
+          "ar": "كلاوس فيشر"
+        },
+        "subText": {
+          "en": "1860 Munich, Schalke, Köln & Bochum",
+          "ar": "شالكه، كولن وبوخوم"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KF9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Klaus_Fischer_1978.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/192.png"
+        },
+        "value": 268,
+        "valueLabel": {
+          "en": "268 Goals",
+          "ar": "268 هدفًا"
+        },
+        "correctRank": 3
+      },
+      {
+        "answerKey": "blg_heynckes",
+        "name": {
+          "en": "Jupp Heynckes",
+          "ar": "يوب هاينكس"
+        },
+        "subText": {
+          "en": "Borussia Mönchengladbach & Hannover",
+          "ar": "بوروسيا مونشنغلادباخ وهانوفر"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JH11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Jupp_Heynckes_2013.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/163.png"
+        },
+        "value": 220,
+        "valueLabel": {
+          "en": "220 Goals",
+          "ar": "220 هدفًا"
+        },
+        "correctRank": 4
+      },
+      {
+        "answerKey": "blg_burgsmuller",
+        "name": {
+          "en": "Manfred Burgsmüller",
+          "ar": "مانفريد بورغسمولر"
+        },
+        "subText": {
+          "en": "Dortmund, Nürnberg & Werder Bremen",
+          "ar": "دورتموند وفيردر بريمن"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "MB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Manfred_Burgsm%C3%BCller_1986.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png"
+        },
+        "value": 213,
+        "valueLabel": {
+          "en": "213 Goals",
+          "ar": "213 هدفًا"
+        },
+        "correctRank": 5
+      }
+    ]
+  }
+]

@@ -38,7 +38,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "MAN"
+          "fallbackText": "MAN",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sadio_Man%C3%A9_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/66.png"
         },
         "value": 176,
         "valueLabel": {
@@ -59,7 +61,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "FOW"
+          "fallbackText": "FOW",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Fowler%2C_Robbie.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 273,
         "valueLabel": {
@@ -80,7 +84,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "DEF"
+          "fallbackText": "DEF",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Jermain-Defoe_%28cropped%29.jpg/330px-Jermain-Defoe_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png"
         },
         "value": 420,
         "valueLabel": {
@@ -101,7 +107,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "AGB"
+          "fallbackText": "AGB",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 432,
         "valueLabel": {
@@ -122,7 +129,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "MAR"
+          "fallbackText": "MAR",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/46.png"
         },
         "value": 540,
         "valueLabel": {
@@ -172,7 +180,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "CR7"
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
         },
         "value": 42,
         "valueLabel": {
@@ -193,7 +203,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "LM10"
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 40,
         "valueLabel": {
@@ -214,7 +226,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "ADM"
+          "fallbackText": "ADM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
         },
         "value": 39,
         "valueLabel": {
@@ -235,7 +249,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "NJR"
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 33,
         "valueLabel": {
@@ -256,7 +272,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "GIG"
+          "fallbackText": "GIG",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
         },
         "value": 31,
         "valueLabel": {
@@ -306,7 +323,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "R9"
+          "fallbackText": "R9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 21.26,
         "valueLabel": {
@@ -327,7 +346,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "OWE"
+          "fallbackText": "OWE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Michael_Owen_2013.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 22.01,
         "valueLabel": {
@@ -343,12 +364,14 @@
           "ar": "ليونيل ميسي (2009)"
         },
         "subText": {
-          "en": "FC Barcelona (Sextuple Year)",
-          "ar": "برشلونة (عام السداسية التاريخية)"
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
         },
         "media": {
           "type": "player",
-          "fallbackText": "LM10"
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 22.44,
         "valueLabel": {
@@ -369,7 +392,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "BES"
+          "fallbackText": "BES",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/George_Best_1976.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
         },
         "value": 22.59,
         "valueLabel": {
@@ -390,7 +415,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "BLO"
+          "fallbackText": "BLO",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Oleg_Blokhin2013.jpg/330px-Oleg_Blokhin2013.jpg"
         },
         "value": 23.15,
         "valueLabel": {
@@ -441,7 +467,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "PEP"
+          "fallbackText": "PEP",
+          "primaryUrl": "https://media.api-sports.io/football/players/742.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/212.png"
         },
         "value": 40.7,
         "valueLabel": {
@@ -462,7 +490,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "TOT"
+          "fallbackText": "TOT",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/497.png"
         },
         "value": 38.16,
         "valueLabel": {
@@ -483,7 +513,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "GIG"
+          "fallbackText": "GIG",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
         },
         "value": 37.79,
         "valueLabel": {
@@ -504,7 +535,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "INZ"
+          "fallbackText": "INZ",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Filippo_Inzaghi.jpg/330px-Filippo_Inzaghi.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
         },
         "value": 37.24,
         "valueLabel": {
@@ -525,7 +558,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "ZAN"
+          "fallbackText": "ZAN",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Metalist-Inter_%282%29.jpg/330px-Metalist-Inter_%282%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png"
         },
         "value": 37.19,
         "valueLabel": {

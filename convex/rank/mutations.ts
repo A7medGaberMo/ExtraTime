@@ -210,9 +210,9 @@ async function getGuestProfile(ctx: GenericMutationCtx<DataModel>, guestId: Id<"
 // ── Mutations ────────────────────────────────────────────────────────
 
 /**
- * Seeds or updates the verified question bank in Convex (Internal only).
+ * Seeds or updates the verified question bank in Convex.
  */
-export const seedQuestionBank = internalMutation({
+export const seedQuestionBank = mutation({
   args: {},
 
   handler: async (ctx) => {

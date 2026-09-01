@@ -194,6 +194,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         imageUrl: mainPlayer.imageUrl,
         isLegend: mainPlayer.isLegend,
         kitNumber: mainPlayer.kitNumber,
+        rating: mainPlayer.rating,
       }
     : null;
 
@@ -304,6 +305,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           imageUrl: slot.player.imageUrl,
           isLegend: slot.player.isLegend,
           kitNumber: slot.player.kitNumber,
+          rating: slot.player.rating,
         }
       : null,
   }));

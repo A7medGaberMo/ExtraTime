@@ -188,7 +188,7 @@ export const initialRankQuestions: RankQuestionInput[] = [
       {
         answerKey: "cs_bayern_1920",
         name: { en: "Bayern Munich (2019–20)", ar: "بايرن ميونخ (2019–20)" },
-        subText: { en: "Bundesliga (34 games)", ar: "الدوري الألماني (34 مباراة)" },
+        subText: { en: "Bundesliga", ar: "الدوري الألماني" },
         media: { type: "club", fallbackText: "BAY" },
         value: 82,
         valueLabel: { en: "82 Points", ar: "82 نقطة" },
@@ -930,7 +930,7 @@ export const initialRankQuestions: RankQuestionInput[] = [
       {
         answerKey: "cps_mancity_1718",
         name: { en: "Man City (2017–18)", ar: "مانشستر سيتي (2017–18)" },
-        subText: { en: "Premier League (Centurions)", ar: "البريميرليج (المئوية)" },
+        subText: { en: "Premier League", ar: "البريميرليج" },
         media: { type: "club", fallbackText: "MC" },
         value: 100,
         valueLabel: { en: "100 Points", ar: "100 نقطة" },

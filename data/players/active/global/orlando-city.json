@@ -14,6 +14,7 @@
       "club": "Orlando City SC",
       "nation": "Jamaica",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50725.png",
       "kitNumber": 18
@@ -25,6 +26,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/351567.png",
       "kitNumber": 31
@@ -36,6 +38,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/364116.png",
       "kitNumber": 76
@@ -47,6 +50,7 @@
       "club": "Orlando City SC",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50738.png",
       "kitNumber": 27
@@ -58,6 +62,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/102524.png",
       "kitNumber": 26
@@ -69,6 +74,7 @@
       "club": "Orlando City SC",
       "nation": "Cameroon",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50734.png",
       "kitNumber": 15
@@ -80,6 +86,7 @@
       "club": "Orlando City SC",
       "nation": "Norway",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/64339.png",
       "kitNumber": 5
@@ -91,6 +98,7 @@
       "club": "Orlando City SC",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/474752.png",
       "kitNumber": 2
@@ -102,6 +110,7 @@
       "club": "Orlando City SC",
       "nation": "Gabon",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/406867.png",
       "kitNumber": 20
@@ -113,6 +122,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/428007.png",
       "kitNumber": 44
@@ -124,6 +134,7 @@
       "club": "Orlando City SC",
       "nation": "Venezuela",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/409142.png",
       "kitNumber": 38
@@ -135,6 +146,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/540925.png",
       "kitNumber": 66
@@ -146,6 +158,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/362085.png",
       "kitNumber": 39
@@ -157,6 +170,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50740.png",
       "kitNumber": 11
@@ -168,6 +182,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/265882.png",
       "kitNumber": 33
@@ -179,6 +194,7 @@
       "club": "Orlando City SC",
       "nation": "Haiti",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/338367.png",
       "kitNumber": 21
@@ -190,6 +206,7 @@
       "club": "Orlando City SC",
       "nation": "Venezuela",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/52709.png",
       "kitNumber": 8
@@ -201,6 +218,7 @@
       "club": "Orlando City SC",
       "nation": "Serbia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/263510.png",
       "kitNumber": 4
@@ -212,6 +230,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/153506.png",
       "kitNumber": 19
@@ -223,6 +242,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/351568.png",
       "kitNumber": 16
@@ -234,6 +254,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/71743.png",
       "kitNumber": 14
@@ -245,6 +266,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/462853.png",
       "kitNumber": 6
@@ -256,19 +278,21 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542032.png",
       "kitNumber": 47
     },
     {
-      "apiId": 1884,
-      "name": "A. Griezmann",
+      "apiId": 56,
+      "name": "Antoine Griezmann",
       "position": "ST/CAM",
       "club": "Orlando City SC",
       "nation": "France",
       "tier": "ULTIMATE",
+      "rating": 91,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1884.png",
+      "imageUrl": "https://media.api-sports.io/football/players/56.png",
       "kitNumber": 7
     },
     {
@@ -278,6 +302,7 @@
       "club": "Orlando City SC",
       "nation": "Uruguay",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/321839.png",
       "kitNumber": 9
@@ -289,6 +314,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/199406.png",
       "kitNumber": 10
@@ -300,6 +326,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/301465.png",
       "kitNumber": 28
@@ -311,6 +338,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/512951.png",
       "kitNumber": 37
@@ -322,6 +350,7 @@
       "club": "Orlando City SC",
       "nation": "Togo",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/508068.png",
       "kitNumber": 23
@@ -333,6 +362,7 @@
       "club": "Orlando City SC",
       "nation": "Switzerland",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542233.png",
       "kitNumber": 51
@@ -344,6 +374,7 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/434048.png",
       "kitNumber": 55

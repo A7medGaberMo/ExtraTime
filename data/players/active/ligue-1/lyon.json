@@ -14,6 +14,7 @@
       "club": "Lyon",
       "nation": "Slovakia",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/61142.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20762.png",
       "kitNumber": 40
@@ -36,6 +38,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/392671.png",
       "kitNumber": 20
@@ -47,6 +50,7 @@
       "club": "Lyon",
       "nation": "Ivory Coast",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/438694.png",
       "kitNumber": 30
@@ -58,6 +62,7 @@
       "club": "Lyon",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/529.png",
       "kitNumber": 3
@@ -69,6 +74,7 @@
       "club": "Lyon",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9700.png",
       "kitNumber": 16
@@ -80,6 +86,7 @@
       "club": "Lyon",
       "nation": "England",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1456.png",
       "kitNumber": 98
@@ -91,6 +98,7 @@
       "club": "Lyon",
       "nation": "Angola",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/68.png",
       "kitNumber": 22
@@ -102,6 +110,7 @@
       "club": "Lyon",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/193293.png",
       "kitNumber": 21
@@ -113,6 +122,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/493026.png",
       "kitNumber": 85
@@ -124,6 +134,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/645969.png",
       "kitNumber": 34
@@ -135,6 +146,7 @@
       "club": "Lyon",
       "nation": "Czech Republic",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/66387.png",
       "kitNumber": 10
@@ -146,6 +158,7 @@
       "club": "Lyon",
       "nation": "United States",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/80752.png",
       "kitNumber": 6
@@ -157,6 +170,7 @@
       "club": "Lyon",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412049.png",
       "kitNumber": 29
@@ -168,6 +182,7 @@
       "club": "Lyon",
       "nation": "Denmark",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162189.png",
       "kitNumber": 18
@@ -179,6 +194,7 @@
       "club": "Lyon",
       "nation": "England",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162590.png",
       "kitNumber": 23
@@ -190,6 +206,7 @@
       "club": "Lyon",
       "nation": "Denmark",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361352.png",
       "kitNumber": 99
@@ -201,6 +218,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585333.png",
       "kitNumber": 46
@@ -212,6 +230,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/623922.png",
       "kitNumber": 84
@@ -223,6 +242,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/519664.png",
       "kitNumber": 44
@@ -234,6 +254,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/438692.png",
       "kitNumber": 39
@@ -245,6 +266,7 @@
       "club": "Lyon",
       "nation": "Belgium",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361348.png",
       "kitNumber": 11
@@ -256,6 +278,7 @@
       "club": "Lyon",
       "nation": "Belgium",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/368230.png",
       "kitNumber": 41
@@ -267,6 +290,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/471106.png",
       "kitNumber": 14
@@ -278,6 +302,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/405237.png",
       "kitNumber": 32
@@ -289,6 +314,7 @@
       "club": "Lyon",
       "nation": "England",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/409794.png",
       "kitNumber": 42
@@ -300,6 +326,7 @@
       "club": "Lyon",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/497617.png",
       "kitNumber": 45

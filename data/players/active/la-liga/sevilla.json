@@ -14,6 +14,7 @@
       "club": "Sevilla",
       "nation": "Greece",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/290686.png",
       "kitNumber": 13
@@ -36,6 +38,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/308346.png",
       "kitNumber": 31
@@ -47,6 +50,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/195923.png",
       "kitNumber": 2
@@ -58,6 +62,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/297311.png",
       "kitNumber": 4
@@ -69,6 +74,7 @@
       "club": "Sevilla",
       "nation": "Portugal",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41208.png",
       "kitNumber": 15
@@ -80,6 +86,7 @@
       "club": "Sevilla",
       "nation": "Chile",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/11421.png",
       "kitNumber": 12
@@ -91,6 +98,7 @@
       "club": "Sevilla",
       "nation": "Senegal",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174927.png",
       "kitNumber": 93
@@ -102,6 +110,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/338902.png",
       "kitNumber": 32
@@ -113,6 +122,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341453.png",
       "kitNumber": 36
@@ -124,6 +134,7 @@
       "club": "Sevilla",
       "nation": "Colombia",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/79258.png",
       "kitNumber": 28
@@ -135,6 +146,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546857.png",
       "kitNumber": 34
@@ -146,6 +158,7 @@
       "club": "Sevilla",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21004.png",
       "kitNumber": 18
@@ -157,6 +170,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/104821.png",
       "kitNumber": 17
@@ -168,6 +182,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/331607.png",
       "kitNumber": 28
@@ -179,6 +194,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/119742.png",
       "kitNumber": 25
@@ -190,6 +206,7 @@
       "club": "Sevilla",
       "nation": "Chile",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/48471.png",
       "kitNumber": 11
@@ -201,6 +218,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443593.png",
       "kitNumber": 35
@@ -212,6 +230,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546882.png",
       "kitNumber": 27
@@ -223,6 +242,7 @@
       "club": "Sevilla",
       "nation": "Argentina",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/321658.png",
       "kitNumber": 37
@@ -234,6 +254,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/185398.png",
       "kitNumber": 7
@@ -245,6 +266,7 @@
       "club": "Sevilla",
       "nation": "Nigeria",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/39121.png",
       "kitNumber": 21
@@ -256,6 +278,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162126.png",
       "kitNumber": 14
@@ -267,6 +290,7 @@
       "club": "Sevilla",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546798.png",
       "kitNumber": 38

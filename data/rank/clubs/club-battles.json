@@ -40,8 +40,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "PUS"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "PUS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Ferenc_Pusk%C3%A1s_1960.jpg"
         },
         "value": 242,
         "valueLabel": {
@@ -62,8 +63,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "HUG"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "HUG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Hugo_S%C3%A1nchez_2017.jpg"
         },
         "value": 208,
         "valueLabel": {
@@ -84,7 +86,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "GEN"
         },
         "value": 182,
@@ -106,7 +108,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "BUI"
         },
         "value": 171,
@@ -128,8 +130,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "GB11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "GB11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Gareth_Bale_2018.jpg"
         },
         "value": 106,
         "valueLabel": {
@@ -181,8 +184,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "RIV"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "RIV",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Rivaldo_2014.jpg"
         },
         "value": 130,
         "valueLabel": {
@@ -203,8 +207,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "KLU"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "KLU",
+          "primaryUrl": "https://media.api-sports.io/football/players/1841.png"
         },
         "value": 122,
         "valueLabel": {
@@ -225,8 +230,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "NJR"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg"
         },
         "value": 105,
         "valueLabel": {
@@ -247,8 +253,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "PED"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "PED",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg/330px-Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg"
         },
         "value": 99,
         "valueLabel": {
@@ -269,8 +276,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "R10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "R10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sports_Festival_2025_-_4_%28cropped%29.jpg/330px-Sports_Festival_2025_-_4_%28cropped%29.jpg"
         },
         "value": 94,
         "valueLabel": {
@@ -322,7 +330,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "LIV"
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 13,
         "valueLabel": {
@@ -343,7 +352,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "CHE"
+          "fallbackText": "CHE",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 8,
         "valueLabel": {
@@ -364,7 +374,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "MU"
+          "fallbackText": "MU",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png"
         },
         "value": 6,
         "valueLabel": {
@@ -379,13 +390,10 @@
           "en": "Tottenham Hotspur",
           "ar": "توتنهام هوتسبير"
         },
-        "subText": {
-          "en": "2 UEFA Cups, 1 Cup Winners Cup",
-          "ar": "2 كأس الاتحاد، 1 كأس الكؤوس"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "TOT"
+          "fallbackText": "TOT",
+          "primaryUrl": "https://media.api-sports.io/football/teams/47.png"
         },
         "value": 3,
         "valueLabel": {
@@ -400,13 +408,10 @@
           "en": "West Ham United",
           "ar": "وست هام يونايتد"
         },
-        "subText": {
-          "en": "1 Cup Winners Cup, 1 Conference League",
-          "ar": "1 كأس الكؤوس (1965)، 1 المؤتمر (2023)"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "WHU"
+          "fallbackText": "WHU",
+          "primaryUrl": "https://media.api-sports.io/football/teams/48.png"
         },
         "value": 2,
         "valueLabel": {
@@ -459,8 +464,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "EF8"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "EF8",
+          "primaryUrl": "https://media.api-sports.io/football/players/6008.png"
         },
         "value": 121,
         "valueLabel": {
@@ -481,8 +487,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "JG10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "JG10",
+          "primaryUrl": "https://media.api-sports.io/football/players/19187.png"
         },
         "value": 117.5,
         "valueLabel": {
@@ -503,8 +510,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
-          "fallbackText": "DR41"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "DR41",
+          "primaryUrl": "https://media.api-sports.io/football/players/292.png"
         },
         "value": 116,
         "valueLabel": {
@@ -525,8 +533,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "PP6"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "PP6",
+          "primaryUrl": "https://media.api-sports.io/football/players/479721.png"
         },
         "value": 105,
         "valueLabel": {
@@ -547,8 +556,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "VVD"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "VVD",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Virgil_van_Dijk_2021.jpg"
         },
         "value": 84.6,
         "valueLabel": {

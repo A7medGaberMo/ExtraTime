@@ -36,11 +36,11 @@
         },
         "subText": {
           "en": "Liverpool",
-          "ar": "ليفربول (الرقم القياسي التاريخي للبطولة)"
+          "ar": "ليفربول"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "MIL"
         },
         "value": 9,
@@ -57,13 +57,14 @@
           "ar": "نيمار (2016–17)"
         },
         "subText": {
-          "en": "Barcelona (Remontada Season - 9 games)",
-          "ar": "برشلونة (موسم الريمونتادا - 9 مباريات)"
+          "en": "Barcelona(Remontada Season)",
+          "ar": "برشلونة (موسم الريمونتادا)"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "NJR"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg"
         },
         "value": 8,
         "valueLabel": {
@@ -79,13 +80,14 @@
           "ar": "كيفين دي بروين (2022–23)"
         },
         "subText": {
-          "en": "Manchester City (Treble Winners)",
+          "en": "Manchester City",
           "ar": "مانشستر سيتي (موسم الثلاثية)"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "KDB"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
         },
         "value": 7,
         "valueLabel": {
@@ -102,12 +104,13 @@
         },
         "subText": {
           "en": "Real Madrid (La Décima)",
-          "ar": "ريال مدريد (العاشرة)"
+          "ar": "ريال مدريد (العاشرة (La Décima))"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "ADM"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "ADM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg"
         },
         "value": 6,
         "valueLabel": {
@@ -128,8 +131,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "VJR"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "VJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Vinicius_Junior_2021.jpg"
         },
         "value": 5,
         "valueLabel": {
@@ -177,12 +181,13 @@
         },
         "subText": {
           "en": "AS Roma",
-          "ar": "روما (الأكثر صناعة للأهداف في تاريخ السيريا آ)"
+          "ar": "روما"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/roma.png",
-          "fallbackText": "TOT10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/497.png",
+          "fallbackText": "TOT10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg"
         },
         "value": 158,
         "valueLabel": {
@@ -203,7 +208,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "BAG"
+          "fallbackText": "BAG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/%D8%B1%D9%88%D8%A8%D8%B1%D8%AA%D9%88_%D8%A8%D8%A7%D8%AC%D9%88_%28cropped%29.jpg/330px-%D8%B1%D9%88%D8%A8%D8%B1%D8%AA%D9%88_%D8%A8%D8%A7%D8%AC%D9%88_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
         },
         "value": 119,
         "valueLabel": {
@@ -224,7 +231,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "CAN"
+          "fallbackText": "CAN",
+          "primaryUrl": "https://media.api-sports.io/football/players/544679.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/505.png"
         },
         "value": 104,
         "valueLabel": {
@@ -245,7 +254,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/napoli.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/492.png",
           "fallbackText": "INS"
         },
         "value": 85,
@@ -267,7 +276,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "PJA"
+          "fallbackText": "PJA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Miralem_Pjani%C4%87_2025.jpg/330px-Miralem_Pjani%C4%87_2025.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
         },
         "value": 72,
         "valueLabel": {
@@ -315,12 +326,13 @@
         },
         "subText": {
           "en": "Barcelona",
-          "ar": "برشلونة (الرقم القياسي التاريخي لليغا)"
+          "ar": "برشلونة"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LM10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 21,
         "valueLabel": {
@@ -341,8 +353,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "XAV6"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "XAV6",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Xavi_Hernandez_2011.jpg"
         },
         "value": 20,
         "valueLabel": {
@@ -358,13 +371,14 @@
           "ar": "مسعود أوزيل (2011–12)"
         },
         "subText": {
-          "en": "Real Madrid (Centurions)",
-          "ar": "ريال مدريد(موسم المئوية)"
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "OZI"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "OZI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Mesut_%C3%96zil_at_Baku_before_2019_UEFA_Europe_League_Final.jpg"
         },
         "value": 17,
         "valueLabel": {
@@ -385,8 +399,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LS9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
         },
         "value": 16,
         "valueLabel": {
@@ -407,8 +422,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "ADM"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "ADM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg"
         },
         "value": 14,
         "valueLabel": {
@@ -456,12 +472,12 @@
         },
         "subText": {
           "en": "Brazil",
-          "ar": "البرازيل (الرقم القياسي التاريخي - بطل العالم 3 مرات)"
+          "ar": "البرازيل"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/brazil.png",
-          "fallbackText": "PELE"
+          "fallbackText": "PELE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg"
         },
         "value": 10,
         "valueLabel": {
@@ -478,12 +494,12 @@
         },
         "subText": {
           "en": "Argentina",
-          "ar": "الأرجنتين (صنع في 5 نسخ مختلفة)"
+          "ar": "الأرجنتين"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/argentina.png",
-          "fallbackText": "LM10"
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 8,
         "valueLabel": {
@@ -500,12 +516,12 @@
         },
         "subText": {
           "en": "West Germany (1982, 1986, 1990 Champion)",
-          "ar": "ألمانيا الغربية (1982، 1986، بطل 1990)"
+          "ar": "ألمانيا الغربية"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/germany.png",
-          "fallbackText": "LIT"
+          "fallbackText": "LIT",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Pierre_Littbarski_1982.jpg"
         },
         "value": 7,
         "valueLabel": {
@@ -522,12 +538,12 @@
         },
         "subText": {
           "en": "Germany (2010, 2014 Champion)",
-          "ar": "ألمانيا (2010، بطل 2014)"
+          "ar": "ألمانيا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/germany.png",
-          "fallbackText": "TM13"
+          "fallbackText": "TM13",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
         },
         "value": 6,
         "valueLabel": {
@@ -548,8 +564,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/england.png",
-          "fallbackText": "DB7"
+          "fallbackText": "DB7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/David_Beckham_2018.jpg"
         },
         "value": 5,
         "valueLabel": {
@@ -602,7 +618,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "PAY"
+          "fallbackText": "PAY",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/81.png"
         },
         "value": 106,
         "valueLabel": {
@@ -623,8 +640,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
-          "fallbackText": "ADM"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "ADM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg"
         },
         "value": 72,
         "valueLabel": {
@@ -645,8 +663,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
-          "fallbackText": "KM7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 58,
         "valueLabel": {
@@ -662,12 +681,12 @@
           "ar": "ماركو فيراتي"
         },
         "subText": {
-          "en": "Paris Saint-Germain (9x Champion)",
-          "ar": "باريس سان جيرمان (بطل الدوري 9 مرات)"
+          "en": "Paris Saint-Germain",
+          "ar": "باريس سان جيرمان"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
           "fallbackText": "VER"
         },
         "value": 48,
@@ -689,7 +708,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/psg.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png",
           "fallbackText": "PAS"
         },
         "value": 39,
@@ -743,8 +762,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "TM25"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
         },
         "value": 172,
         "valueLabel": {
@@ -760,13 +780,14 @@
           "ar": "فرانك ريبيري"
         },
         "subText": {
-          "en": "Bayern Munich (9x Champion)",
-          "ar": "بايرن ميونخ (بطل الدوري 9 مرات)"
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "RIB7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RIB7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Franck_Ribery_2019_%28cropped%29.jpg/330px-Franck_Ribery_2019_%28cropped%29.jpg"
         },
         "value": 124,
         "valueLabel": {
@@ -787,8 +808,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/dortmund.png",
-          "fallbackText": "MR11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/165.png",
+          "fallbackText": "MR11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ole_Gunnar_Solskjaer_Trondheim2011-1_crop.jpg/330px-Ole_Gunnar_Solskjaer_Trondheim2011-1_crop.jpg"
         },
         "value": 104,
         "valueLabel": {
@@ -809,7 +831,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "ZER"
+          "fallbackText": "ZER",
+          "primaryUrl": "https://media.api-sports.io/football/players/465184.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
         },
         "value": 88,
         "valueLabel": {
@@ -830,7 +854,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "GOT"
+          "fallbackText": "GOT",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
         },
         "value": 72,
         "valueLabel": {

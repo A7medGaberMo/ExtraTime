@@ -5,7 +5,12 @@
     "difficulty": "MEDIUM",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["transfers", "market", "records", "money"],
+    "tags": [
+      "transfers",
+      "market",
+      "records",
+      "money"
+    ],
     "title": {
       "en": "Rank these 5 blockbusters by initial transfer fee paid (€)",
       "ar": "رتّب الصفقات الخمسة حسب قيمة الانتقال الأساسية باليورو (€)"
@@ -14,52 +19,125 @@
       "en": "Guaranteed initial fee in Euros, excluding variable add-ons",
       "ar": "قيمة الصفقة الثابتة المضمونة باليورو (دون احتساب الحوافز المتغيرة)"
     },
-    "metricLabel": { "en": "Transfer Fee", "ar": "قيمة الصفقة" },
+    "metricLabel": {
+      "en": "Transfer Fee",
+      "ar": "قيمة الصفقة"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "trf_neymar_psg",
-        "name": { "en": "Neymar Jr", "ar": "نيمار" },
-        "subText": { "en": "Barcelona → PSG (2017)", "ar": "برشلونة ← باريس سان جيرمان (2017)" },
-        "media": { "type": "player", "fallbackText": "NJR" },
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار"
+        },
+        "subText": {
+          "en": "Barcelona → PSG (2017)",
+          "ar": "برشلونة ← باريس سان جيرمان (2017)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "NJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
         "value": 222,
-        "valueLabel": { "en": "€222 Million", "ar": "222 مليون يورو" },
+        "valueLabel": {
+          "en": "€222 Million",
+          "ar": "222 مليون يورو"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "trf_mbappe_psg",
-        "name": { "en": "Kylian Mbappé", "ar": "كيليان مبابي" },
-        "subText": { "en": "Monaco → PSG (2018)", "ar": "موناكو ← باريس سان جيرمان (2018)" },
-        "media": { "type": "player", "fallbackText": "KM" },
+        "name": {
+          "en": "Kylian Mbappé",
+          "ar": "كيليان مبابي"
+        },
+        "subText": {
+          "en": "Monaco → PSG (2018)",
+          "ar": "موناكو ← باريس سان جيرمان (2018)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "KM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+        },
         "value": 180,
-        "valueLabel": { "en": "€180 Million", "ar": "180 مليون يورو" },
+        "valueLabel": {
+          "en": "€180 Million",
+          "ar": "180 مليون يورو"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "trf_coutinho_barca",
-        "name": { "en": "Philippe Coutinho", "ar": "فيليب كوتينيو" },
-        "subText": { "en": "Liverpool → Barcelona (2018)", "ar": "ليفربول ← برشلونة (2018)" },
-        "media": { "type": "player", "fallbackText": "PC" },
+        "name": {
+          "en": "Philippe Coutinho",
+          "ar": "فيليب كوتينيو"
+        },
+        "subText": {
+          "en": "Liverpool → Barcelona (2018)",
+          "ar": "ليفربول ← برشلونة (2018)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "PC",
+          "primaryUrl": "https://media.api-sports.io/football/players/153.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+        },
         "value": 135,
-        "valueLabel": { "en": "€135 Million", "ar": "135 مليون يورو" },
+        "valueLabel": {
+          "en": "€135 Million",
+          "ar": "135 مليون يورو"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "trf_bellingham_real",
-        "name": { "en": "Jude Bellingham", "ar": "جود بيلينغهام" },
-        "subText": { "en": "Dortmund → Real Madrid (2023)", "ar": "دورتموند ← ريال مدريد (2023)" },
-        "media": { "type": "player", "fallbackText": "JB" },
+        "name": {
+          "en": "Jude Bellingham",
+          "ar": "جود بيلينغهام"
+        },
+        "subText": {
+          "en": "Dortmund → Real Madrid (2023)",
+          "ar": "دورتموند ← ريال مدريد (2023)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "JB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jude_Bellingham_2023.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
         "value": 103,
-        "valueLabel": { "en": "€103 Million", "ar": "103 مليون يورو" },
+        "valueLabel": {
+          "en": "€103 Million",
+          "ar": "103 مليون يورو"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "trf_cr7_real",
-        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
-        "subText": { "en": "Man United → Real Madrid (2009)", "ar": "مان يونايتد ← ريال مدريد (2009)" },
-        "media": { "type": "player", "fallbackText": "CR7" },
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Man United → Real Madrid (2009)",
+          "ar": "مان يونايتد ← ريال مدريد (2009)"
+        },
+        "media": {
+          "type": "player",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+        },
         "value": 94,
-        "valueLabel": { "en": "€94 Million", "ar": "94 مليون يورو" },
+        "valueLabel": {
+          "en": "€94 Million",
+          "ar": "94 مليون يورو"
+        },
         "correctRank": 5
       }
     ]
@@ -70,7 +148,13 @@
     "difficulty": "HARD",
     "asOfDate": "2026-08",
     "isActive": true,
-    "tags": ["national-teams", "goals", "ronaldo", "messi", "legends"],
+    "tags": [
+      "national-teams",
+      "goals",
+      "ronaldo",
+      "messi",
+      "legends"
+    ],
     "title": {
       "en": "Rank these 5 icons by official international senior goals",
       "ar": "رتّب الأساطير الخمسة حسب عدد الأهداف الدولية الرسمية مع المنتخب الأول"
@@ -79,52 +163,120 @@
       "en": "Official FIFA international 'A' matches, as of Aug 2026",
       "ar": "المباريات الدولية الرسمية المعتمدة من الفيفا حتى أغسطس 2026"
     },
-    "metricLabel": { "en": "Goals", "ar": "أهداف" },
+    "metricLabel": {
+      "en": "Goals",
+      "ar": "أهداف"
+    },
     "direction": "desc",
     "answers": [
       {
         "answerKey": "int_cr7",
-        "name": { "en": "Cristiano Ronaldo", "ar": "كريستيانو رونالدو" },
-        "subText": { "en": "Portugal", "ar": "البرتغال" },
-        "media": { "type": "nation", "fallbackText": "POR" },
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POR",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png"
+        },
         "value": 133,
-        "valueLabel": { "en": "133 Goals", "ar": "133 هدفًا" },
+        "valueLabel": {
+          "en": "133 Goals",
+          "ar": "133 هدفًا"
+        },
         "correctRank": 1
       },
       {
         "answerKey": "int_messi",
-        "name": { "en": "Lionel Messi", "ar": "ليونيل ميسي" },
-        "subText": { "en": "Argentina", "ar": "الأرجنتين" },
-        "media": { "type": "nation", "fallbackText": "ARG" },
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "ARG",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png"
+        },
         "value": 112,
-        "valueLabel": { "en": "112 Goals", "ar": "112 هدفًا" },
+        "valueLabel": {
+          "en": "112 Goals",
+          "ar": "112 هدفًا"
+        },
         "correctRank": 2
       },
       {
         "answerKey": "int_daei",
-        "name": { "en": "Ali Daei", "ar": "علي دائي" },
-        "subText": { "en": "Iran", "ar": "إيران" },
-        "media": { "type": "nation", "fallbackText": "IRN" },
+        "name": {
+          "en": "Ali Daei",
+          "ar": "علي دائي"
+        },
+        "subText": {
+          "en": "Iran",
+          "ar": "إيران"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "IRN",
+          "primaryUrl": "https://flagcdn.com/w80/ir.png"
+        },
         "value": 108,
-        "valueLabel": { "en": "108 Goals", "ar": "108 أهداف" },
+        "valueLabel": {
+          "en": "108 Goals",
+          "ar": "108 أهداف"
+        },
         "correctRank": 3
       },
       {
         "answerKey": "int_chhetri",
-        "name": { "en": "Sunil Chhetri", "ar": "سونيل تشيتري" },
-        "subText": { "en": "India", "ar": "الهند" },
-        "media": { "type": "nation", "fallbackText": "IND" },
+        "name": {
+          "en": "Sunil Chhetri",
+          "ar": "سونيل تشيتري"
+        },
+        "subText": {
+          "en": "India",
+          "ar": "الهند"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "IND",
+          "primaryUrl": "https://flagcdn.com/w80/in.png"
+        },
         "value": 94,
-        "valueLabel": { "en": "94 Goals", "ar": "94 هدفًا" },
+        "valueLabel": {
+          "en": "94 Goals",
+          "ar": "94 هدفًا"
+        },
         "correctRank": 4
       },
       {
         "answerKey": "int_lewa",
-        "name": { "en": "Robert Lewandowski", "ar": "روبرت ليفاندوفسكي" },
-        "subText": { "en": "Poland", "ar": "بولندا" },
-        "media": { "type": "nation", "fallbackText": "POL" },
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "subText": {
+          "en": "Poland",
+          "ar": "بولندا"
+        },
+        "media": {
+          "type": "nation",
+          "fallbackText": "POL",
+          "primaryUrl": "https://flagcdn.com/w80/pl.png"
+        },
         "value": 84,
-        "valueLabel": { "en": "84 Goals", "ar": "84 هدفًا" },
+        "valueLabel": {
+          "en": "84 Goals",
+          "ar": "84 هدفًا"
+        },
         "correctRank": 5
       }
     ]

@@ -33,13 +33,10 @@
           "en": "Manchester City (2017–18)",
           "ar": "مانشستر سيتي (2017–18)"
         },
-        "subText": {
-          "en": "Centurions Season",
-          "ar": "موسم المئوية (الرقم القياسي التاريخي)"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "MCFC"
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 106,
         "valueLabel": {
@@ -60,7 +57,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "CFC"
+          "fallbackText": "CFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 103,
         "valueLabel": {
@@ -81,7 +79,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "MCFC"
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 102,
         "valueLabel": {
@@ -102,7 +101,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "LFC"
+          "fallbackText": "LFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 101,
         "valueLabel": {
@@ -123,7 +123,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "MCFC"
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 99,
         "valueLabel": {
@@ -174,7 +175,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "BAY"
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
         },
         "value": 11,
         "valueLabel": {
@@ -195,7 +197,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "JUV"
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
         },
         "value": 9,
         "valueLabel": {
@@ -216,7 +219,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "OL"
+          "fallbackText": "OL",
+          "primaryUrl": "https://media.api-sports.io/football/teams/80.png"
         },
         "value": 7,
         "valueLabel": {
@@ -237,7 +241,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "RMA"
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
         },
         "value": 5,
         "valueLabel": {
@@ -253,12 +258,13 @@
           "ar": "مانشستر سيتي"
         },
         "subText": {
-          "en": "Premier League (English Record: 2021–24)",
-          "ar": "الدوري الإنجليزي (الرقم القياسي: 2021–24)"
+          "en": "Premier League",
+          "ar": "الدوري الإنجليزي"
         },
         "media": {
           "type": "club",
-          "fallbackText": "MCFC"
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 4,
         "valueLabel": {
@@ -303,13 +309,10 @@
           "en": "Real Madrid",
           "ar": "ريال مدريد"
         },
-        "subText": {
-          "en": "18 Finals",
-          "ar": "18 نهائيًا (15 لقبًا)"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "RMA"
+          "fallbackText": "RMA",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png"
         },
         "value": 18,
         "valueLabel": {
@@ -330,7 +333,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "BAY"
+          "fallbackText": "BAY",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png"
         },
         "value": 11,
         "valueLabel": {
@@ -351,7 +355,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "LIV"
+          "fallbackText": "LIV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 10,
         "valueLabel": {
@@ -366,13 +371,10 @@
           "en": "Juventus",
           "ar": "يوفنتوس"
         },
-        "subText": {
-          "en": "9 Finals",
-          "ar": "9 نهائيات (لقبان)"
-        },
         "media": {
           "type": "club",
-          "fallbackText": "JUV"
+          "fallbackText": "JUV",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png"
         },
         "value": 9,
         "valueLabel": {
@@ -393,7 +395,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "FCB"
+          "fallbackText": "FCB",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 8,
         "valueLabel": {
@@ -439,11 +442,12 @@
         },
         "subText": {
           "en": "José Mourinho",
-          "ar": "جوزيه مورينيو (الرقم القياسي التاريخي)"
+          "ar": "جوزيه مورينيو"
         },
         "media": {
           "type": "club",
-          "fallbackText": "CFC"
+          "fallbackText": "CFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png"
         },
         "value": 15,
         "valueLabel": {
@@ -464,7 +468,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "AFC"
+          "fallbackText": "AFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png"
         },
         "value": 17,
         "valueLabel": {
@@ -485,7 +490,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "LFC"
+          "fallbackText": "LFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 22,
         "valueLabel": {
@@ -506,7 +512,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "MCFC"
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 23,
         "valueLabel": {
@@ -527,7 +534,8 @@
         },
         "media": {
           "type": "club",
-          "fallbackText": "MCFC"
+          "fallbackText": "MCFC",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png"
         },
         "value": 32,
         "valueLabel": {

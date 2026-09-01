@@ -14,6 +14,7 @@
       "club": "Atletico Madrid",
       "nation": "Slovenia",
       "tier": "MASTER",
+      "rating": 90,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/29.png",
       "kitNumber": 13
@@ -25,6 +26,7 @@
       "club": "Atletico Madrid",
       "nation": "Argentina",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2465.png",
       "kitNumber": 1
@@ -36,6 +38,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/393198.png",
       "kitNumber": 33
@@ -47,6 +50,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/646997.png",
       "kitNumber": 51
@@ -58,6 +62,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 59,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/189997.png",
       "kitNumber": 31
@@ -69,6 +74,7 @@
       "club": "Atletico Madrid",
       "nation": "Argentina",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30776.png",
       "kitNumber": 17
@@ -80,6 +86,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47301.png",
       "kitNumber": 24
@@ -91,6 +98,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/563.png",
       "kitNumber": 20
@@ -102,6 +110,7 @@
       "club": "Atletico Madrid",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31.png",
       "kitNumber": 2
@@ -113,6 +122,7 @@
       "club": "Atletico Madrid",
       "nation": "Slovakia",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30399.png",
       "kitNumber": 17
@@ -124,6 +134,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/295793.png",
       "kitNumber": 18
@@ -135,6 +146,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162012.png",
       "kitNumber": 3
@@ -146,6 +158,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 59,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336685.png",
       "kitNumber": 4
@@ -157,6 +170,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386870.png",
       "kitNumber": 28
@@ -168,6 +182,7 @@
       "club": "Atletico Madrid",
       "nation": "Serbia",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/428799.png",
       "kitNumber": 45
@@ -179,19 +194,21 @@
       "club": "Atletico Madrid",
       "nation": "Argentina",
       "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441280.png",
       "kitNumber": 12
     },
     {
-      "apiId": 758,
+      "apiId": 753,
       "name": "Marcos Llorente",
       "position": "RB/CM",
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/758.png",
+      "imageUrl": "https://media.api-sports.io/football/players/753.png",
       "kitNumber": 14
     },
     {
@@ -201,6 +218,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182219.png",
       "kitNumber": 10
@@ -212,6 +230,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50.png",
       "kitNumber": 6
@@ -223,6 +242,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336594.png",
       "kitNumber": 8
@@ -234,6 +254,7 @@
       "club": "Atletico Madrid",
       "nation": "Denmark",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7712.png",
       "kitNumber": 42
@@ -245,6 +266,7 @@
       "club": "Atletico Madrid",
       "nation": "South Korea",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/927.png",
       "kitNumber": 21
@@ -256,6 +278,7 @@
       "club": "Atletico Madrid",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/133185.png",
       "kitNumber": 5
@@ -267,6 +290,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341371.png",
       "kitNumber": 34
@@ -278,6 +302,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/303378.png",
       "kitNumber": 36
@@ -289,6 +314,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/548704.png",
       "kitNumber": 44
@@ -300,6 +326,7 @@
       "club": "Atletico Madrid",
       "nation": "Ghana",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/548867.png",
       "kitNumber": 27
@@ -311,6 +338,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/313383.png",
       "kitNumber": 37
@@ -322,6 +350,7 @@
       "club": "Atletico Madrid",
       "nation": "Argentina",
       "tier": "ULTIMATE",
+      "rating": 91,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6009.png",
       "kitNumber": 19
@@ -333,6 +362,7 @@
       "club": "Atletico Madrid",
       "nation": "Nigeria",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18767.png",
       "kitNumber": 22
@@ -344,6 +374,7 @@
       "club": "Atletico Madrid",
       "nation": "Norway",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8492.png",
       "kitNumber": 9
@@ -355,6 +386,7 @@
       "club": "Atletico Madrid",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/323935.png",
       "kitNumber": 22
@@ -366,6 +398,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443668.png",
       "kitNumber": 38
@@ -377,6 +410,7 @@
       "club": "Atletico Madrid",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/548706.png",
       "kitNumber": 39

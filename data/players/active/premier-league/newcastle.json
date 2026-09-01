@@ -14,6 +14,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18911.png",
       "kitNumber": 22
@@ -25,6 +26,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20355.png",
       "kitNumber": 32
@@ -36,6 +38,7 @@
       "club": "Newcastle",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329640.png",
       "kitNumber": 29
@@ -47,6 +50,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284374.png",
       "kitNumber": 31
@@ -58,6 +62,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158694.png",
       "kitNumber": 21
@@ -69,6 +74,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284492.png",
       "kitNumber": 3
@@ -80,6 +86,7 @@
       "club": "Newcastle",
       "nation": "Netherlands",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38734.png",
       "kitNumber": 4
@@ -91,6 +98,7 @@
       "club": "Newcastle",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163189.png",
       "kitNumber": 12
@@ -102,6 +110,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18961.png",
       "kitNumber": 33
@@ -113,6 +122,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/337934.png",
       "kitNumber": 51
@@ -124,6 +134,7 @@
       "club": "Newcastle",
       "nation": "Brazil",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/723.png",
       "kitNumber": 7
@@ -135,6 +146,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1463.png",
       "kitNumber": 28
@@ -146,6 +158,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328105.png",
       "kitNumber": 67
@@ -157,6 +170,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19163.png",
       "kitNumber": 23
@@ -168,6 +182,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19192.png",
       "kitNumber": 41
@@ -179,6 +194,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/394165.png",
       "kitNumber": 62
@@ -190,6 +206,7 @@
       "club": "Newcastle",
       "nation": "South Korea",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/423714.png",
       "kitNumber": 11
@@ -201,6 +218,7 @@
       "club": "Newcastle",
       "nation": "Netherlands",
       "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/469321.png",
       "kitNumber": 14
@@ -212,6 +230,7 @@
       "club": "Newcastle",
       "nation": "Ivory Coast",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387643.png",
       "kitNumber": 30
@@ -223,6 +242,7 @@
       "club": "Newcastle",
       "nation": "England",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18778.png",
       "kitNumber": 15
@@ -234,6 +254,7 @@
       "club": "Newcastle",
       "nation": "Sweden",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/153430.png",
       "kitNumber": 20
@@ -245,6 +266,7 @@
       "club": "Newcastle",
       "nation": "DR Congo",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20649.png",
       "kitNumber": 9
@@ -256,6 +278,7 @@
       "club": "Newcastle",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158054.png",
       "kitNumber": 27
@@ -267,6 +290,7 @@
       "club": "Newcastle",
       "nation": "Denmark",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/315237.png",
       "kitNumber": 18

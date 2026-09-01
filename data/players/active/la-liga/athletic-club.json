@@ -14,6 +14,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47270.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Athletic Club",
       "nation": "Mexico",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/312468.png",
       "kitNumber": 27
@@ -36,6 +38,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437637.png",
       "kitNumber": 35
@@ -47,6 +50,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47278.png",
       "kitNumber": 3
@@ -58,6 +62,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/622.png",
       "kitNumber": 14
@@ -69,6 +74,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47271.png",
       "kitNumber": 5
@@ -80,6 +86,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/183849.png",
       "kitNumber": 4
@@ -91,6 +98,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47273.png",
       "kitNumber": 17
@@ -102,6 +110,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47299.png",
       "kitNumber": 2
@@ -113,6 +122,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182181.png",
       "kitNumber": 12
@@ -124,6 +134,7 @@
       "club": "Athletic Club",
       "nation": "Senegal",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/336998.png",
       "kitNumber": 19
@@ -135,6 +146,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/332305.png",
       "kitNumber": 28
@@ -146,6 +158,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/313025.png",
       "kitNumber": 29
@@ -157,6 +170,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/407677.png",
       "kitNumber": 36
@@ -168,6 +182,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/332309.png",
       "kitNumber": 30
@@ -179,6 +194,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128398.png",
       "kitNumber": 8
@@ -190,6 +206,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182617.png",
       "kitNumber": 24
@@ -201,6 +218,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47007.png",
       "kitNumber": 16
@@ -212,6 +230,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47418.png",
       "kitNumber": 6
@@ -223,6 +242,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383780.png",
       "kitNumber": 18
@@ -234,6 +254,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/84086.png",
       "kitNumber": 23
@@ -245,6 +266,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437643.png",
       "kitNumber": 31
@@ -256,6 +278,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 59,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/332307.png",
       "kitNumber": 32
@@ -267,6 +290,7 @@
       "club": "Athletic Club",
       "nation": "Nigeria",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560981.png",
       "kitNumber": 40
@@ -278,6 +302,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568156.png",
       "kitNumber": 33
@@ -289,6 +314,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 87,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/183799.png",
       "kitNumber": 10
@@ -300,6 +326,7 @@
       "club": "Athletic Club",
       "nation": "Ghana",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47294.png",
       "kitNumber": 9
@@ -311,6 +338,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47291.png",
       "kitNumber": 11
@@ -322,6 +350,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30510.png",
       "kitNumber": 7
@@ -333,6 +362,7 @@
       "club": "Athletic Club",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/287680.png",
       "kitNumber": 21
@@ -344,6 +374,7 @@
       "club": "Athletic Club",
       "nation": "Guinea-Bissau",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/190489.png",
       "kitNumber": 15
@@ -355,6 +386,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286593.png",
       "kitNumber": 22
@@ -366,6 +398,7 @@
       "club": "Athletic Club",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/560954.png",
       "kitNumber": 34

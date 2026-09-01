@@ -14,6 +14,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21248.png",
       "kitNumber": 30
@@ -25,6 +26,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/348052.png",
       "kitNumber": 50
@@ -36,6 +38,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667330.png",
       "kitNumber": 40
@@ -47,6 +50,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/274267.png",
       "kitNumber": 2
@@ -58,6 +62,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20546.png",
       "kitNumber": 5
@@ -69,6 +74,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22247.png",
       "kitNumber": 77
@@ -80,6 +86,7 @@
       "club": "Stade Brestois 29",
       "nation": "Ivory Coast",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/422595.png",
       "kitNumber": 12
@@ -91,6 +98,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/369556.png",
       "kitNumber": 3
@@ -102,6 +110,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/498791.png",
       "kitNumber": 71
@@ -113,6 +122,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669878.png",
       "kitNumber": 35
@@ -124,6 +134,7 @@
       "club": "Stade Brestois 29",
       "nation": "Mali",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326068.png",
       "kitNumber": 23
@@ -135,6 +146,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128287.png",
       "kitNumber": 13
@@ -146,6 +158,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20558.png",
       "kitNumber": 8
@@ -157,6 +170,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/664.png",
       "kitNumber": 24
@@ -168,6 +182,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449153.png",
       "kitNumber": 33
@@ -179,6 +194,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2214.png",
       "kitNumber": 10
@@ -190,6 +206,7 @@
       "club": "Stade Brestois 29",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22264.png",
       "kitNumber": 19
@@ -201,6 +218,7 @@
       "club": "Stade Brestois 29",
       "nation": "Guinea-Bissau",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41323.png",
       "kitNumber": 17
@@ -212,6 +230,7 @@
       "club": "Stade Brestois 29",
       "nation": "Senegal",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/375990.png",
       "kitNumber": 99
@@ -223,6 +242,7 @@
       "club": "Stade Brestois 29",
       "nation": "Mali",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/554352.png",
       "kitNumber": 21

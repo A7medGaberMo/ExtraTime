@@ -34,12 +34,13 @@
         },
         "subText": {
           "en": "Liverpool",
-          "ar": "ليفربول (الرقم القياسي 32 هدفًا)"
+          "ar": "ليفربول"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "MO11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
         },
         "value": 32,
         "valueLabel": {
@@ -60,8 +61,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "MO11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
         },
         "value": 23,
         "valueLabel": {
@@ -82,8 +84,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "MO11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
         },
         "value": 22,
         "valueLabel": {
@@ -104,8 +107,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "MO11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
         },
         "value": 19,
         "valueLabel": {
@@ -126,8 +130,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "MO11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
         },
         "value": 18,
         "valueLabel": {
@@ -177,8 +182,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/tottenham.png",
-          "fallbackText": "HK10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
         },
         "value": 30,
         "valueLabel": {
@@ -199,8 +205,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/tottenham.png",
-          "fallbackText": "HK10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
         },
         "value": 29,
         "valueLabel": {
@@ -221,8 +228,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/tottenham.png",
-          "fallbackText": "HK10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
         },
         "value": 25,
         "valueLabel": {
@@ -243,8 +251,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/tottenham.png",
-          "fallbackText": "HK10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
         },
         "value": 23,
         "valueLabel": {
@@ -265,8 +274,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/tottenham.png",
-          "fallbackText": "HK10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "HK10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
         },
         "value": 21,
         "valueLabel": {
@@ -311,13 +321,14 @@
           "ar": "كيفين دي بروين (2019–20)"
         },
         "subText": {
-          "en": "Manchester City (Equaled All-Time Record)",
-          "ar": "مانشستر سيتي (معادلة الرقم القياسي التاريخي)"
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "KDB"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
         },
         "value": 20,
         "valueLabel": {
@@ -338,8 +349,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "KDB"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
         },
         "value": 18,
         "valueLabel": {
@@ -360,8 +372,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "KDB"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
         },
         "value": 16,
         "valueLabel": {
@@ -382,8 +395,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "KDB"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
         },
         "value": 12,
         "valueLabel": {
@@ -399,13 +413,14 @@
           "ar": "كيفين دي بروين (2023–24)"
         },
         "subText": {
-          "en": "Manchester City (In only 18 games)",
-          "ar": "مانشستر سيتي (خلال 18 مباراة فقط)"
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "KDB"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
         },
         "value": 10,
         "valueLabel": {
@@ -450,13 +465,14 @@
           "ar": "كريم بنزيما (2021–22)"
         },
         "subText": {
-          "en": "Real Madrid (Ballon d'Or Season)",
+          "en": "Real Madrid",
           "ar": "ريال مدريد (موسم الكرة الذهبية)"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KB9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
         },
         "value": 44,
         "valueLabel": {
@@ -473,12 +489,13 @@
         },
         "subText": {
           "en": "Real Madrid",
-          "ar": "ريال مدريد (دوري الـ100 نقطة)"
+          "ar": "ريال مدريد"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KB9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
         },
         "value": 32,
         "valueLabel": {
@@ -499,8 +516,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KB9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
         },
         "value": 31,
         "valueLabel": {
@@ -521,8 +539,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KB9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
         },
         "value": 30,
         "valueLabel": {
@@ -543,8 +562,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KB9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
         },
         "value": 28,
         "valueLabel": {
@@ -589,13 +609,14 @@
           "ar": "لويس سواريز (2015–16)"
         },
         "subText": {
-          "en": "Barcelona (La Liga & Golden Shoe)",
-          "ar": "برشلونة (الليغا والحذاء الذهبي)"
+          "en": "Barcelona",
+          "ar": "برشلونة"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LS9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
         },
         "value": 40,
         "valueLabel": {
@@ -611,13 +632,14 @@
           "ar": "لويس سواريز (2013–14)"
         },
         "subText": {
-          "en": "Liverpool (Premier League & Golden Shoe)",
-          "ar": "ليفربول (البريميرليج والحذاء الذهبي)"
+          "en": "Liverpool",
+          "ar": "ليفربول"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "LS9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
         },
         "value": 31,
         "valueLabel": {
@@ -638,8 +660,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LS9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
         },
         "value": 29,
         "valueLabel": {
@@ -660,8 +683,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LS9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
         },
         "value": 25,
         "valueLabel": {
@@ -682,8 +706,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/atletico.png",
-          "fallbackText": "LS9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
         },
         "value": 21,
         "valueLabel": {

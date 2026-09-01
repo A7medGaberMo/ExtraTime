@@ -14,6 +14,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25903.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "FC Augsburg",
       "nation": "Croatia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/14553.png",
       "kitNumber": 22
@@ -36,6 +38,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/659290.png",
       "kitNumber": 48
@@ -47,6 +50,7 @@
       "club": "FC Augsburg",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25290.png",
       "kitNumber": 6
@@ -58,6 +62,7 @@
       "club": "FC Augsburg",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163039.png",
       "kitNumber": 5
@@ -69,6 +74,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26242.png",
       "kitNumber": 31
@@ -80,6 +86,7 @@
       "club": "FC Augsburg",
       "nation": "Denmark",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15901.png",
       "kitNumber": 3
@@ -91,6 +98,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26.png",
       "kitNumber": 27
@@ -102,6 +110,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178403.png",
       "kitNumber": 2
@@ -113,6 +122,7 @@
       "club": "FC Augsburg",
       "nation": "United States",
       "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413065.png",
       "kitNumber": 40
@@ -124,6 +134,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669879.png",
       "kitNumber": 12
@@ -135,6 +146,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585671.png",
       "kitNumber": 37
@@ -146,6 +158,7 @@
       "club": "FC Augsburg",
       "nation": "Switzerland",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163032.png",
       "kitNumber": 32
@@ -157,6 +170,7 @@
       "club": "FC Augsburg",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20634.png",
       "kitNumber": 20
@@ -168,6 +182,7 @@
       "club": "FC Augsburg",
       "nation": "Croatia",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/14395.png",
       "kitNumber": 17
@@ -179,6 +194,7 @@
       "club": "FC Augsburg",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/110.png",
       "kitNumber": 4
@@ -190,6 +206,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178093.png",
       "kitNumber": 14
@@ -201,6 +218,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/348888.png",
       "kitNumber": 36
@@ -212,6 +230,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/143831.png",
       "kitNumber": 19
@@ -223,6 +242,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/353143.png",
       "kitNumber": 16
@@ -234,6 +254,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/479269.png",
       "kitNumber": 23
@@ -245,6 +266,7 @@
       "club": "FC Augsburg",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343159.png",
       "kitNumber": 8
@@ -256,6 +278,7 @@
       "club": "FC Augsburg",
       "nation": "Austria",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25297.png",
       "kitNumber": 38
@@ -267,6 +290,7 @@
       "club": "FC Augsburg",
       "nation": "Portugal",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341641.png",
       "kitNumber": 9
@@ -278,6 +302,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/279993.png",
       "kitNumber": 30
@@ -289,6 +314,7 @@
       "club": "FC Augsburg",
       "nation": "Germany",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/499495.png",
       "kitNumber": 39

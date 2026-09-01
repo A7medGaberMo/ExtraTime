@@ -14,6 +14,7 @@
       "club": "Valencia",
       "nation": "North Macedonia",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47527.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/913.png",
       "kitNumber": 13
@@ -36,6 +38,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/401983.png",
       "kitNumber": 28
@@ -47,6 +50,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/918.png",
       "kitNumber": 14
@@ -58,6 +62,7 @@
       "club": "Valencia",
       "nation": "Guinea",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/916.png",
       "kitNumber": 4
@@ -69,6 +74,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/333672.png",
       "kitNumber": 5
@@ -80,6 +86,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181582.png",
       "kitNumber": 3
@@ -91,6 +98,7 @@
       "club": "Valencia",
       "nation": "Guadeloupe",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47251.png",
       "kitNumber": 20
@@ -102,6 +110,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162175.png",
       "kitNumber": 21
@@ -113,6 +122,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/442188.png",
       "kitNumber": 24
@@ -124,6 +134,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/36884.png",
       "kitNumber": 16
@@ -135,6 +146,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/315701.png",
       "kitNumber": 26
@@ -146,6 +158,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/623732.png",
       "kitNumber": 40
@@ -157,6 +170,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/641317.png",
       "kitNumber": 42
@@ -168,6 +182,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/417560.png",
       "kitNumber": 36
@@ -179,6 +194,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/584165.png",
       "kitNumber": 32
@@ -190,6 +206,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/315699.png",
       "kitNumber": 8
@@ -201,6 +218,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47463.png",
       "kitNumber": 18
@@ -212,6 +230,7 @@
       "club": "Valencia",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41157.png",
       "kitNumber": 10
@@ -223,6 +242,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2476.png",
       "kitNumber": 2
@@ -234,6 +254,7 @@
       "club": "Valencia",
       "nation": "Mali",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/4458.png",
       "kitNumber": 23
@@ -245,6 +266,7 @@
       "club": "Valencia",
       "nation": "Switzerland",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/48465.png",
       "kitNumber": 15
@@ -256,6 +278,7 @@
       "club": "Valencia",
       "nation": "Japan",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542861.png",
       "kitNumber": 25
@@ -267,6 +290,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47264.png",
       "kitNumber": 9
@@ -278,6 +302,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46933.png",
       "kitNumber": 11
@@ -289,6 +314,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1708.png",
       "kitNumber": 19
@@ -300,6 +326,7 @@
       "club": "Valencia",
       "nation": "Nigeria",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31406.png",
       "kitNumber": 6
@@ -311,6 +338,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/439578.png",
       "kitNumber": 27
@@ -322,6 +350,7 @@
       "club": "Valencia",
       "nation": "Spain",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/406045.png",
       "kitNumber": 37

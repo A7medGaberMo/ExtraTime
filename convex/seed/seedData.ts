@@ -1,11 +1,10 @@
-import { internalMutation } from '../_generated/server';
+import { mutation } from '../_generated/server';
 import { Id } from '../_generated/dataModel';
 import { v } from 'convex/values';
-import { tierValidator, LEAGUE_COUNTRY, type Tier } from '../lib/constants';
+import { tierValidator, LEAGUE_COUNTRY, getDefaultRatingForTier, type Tier } from '../lib/constants';
 
 /**
  * Seeder mutations for populating clubs, nations, players, and stats into Convex.
- * Locked down as internal mutations so they cannot be invoked via the public client API.
  */
 
 function inferCountry(league: string, playerNation: string): string {
@@ -41,14 +40,15 @@ const playerArg = v.object({
   apiId: v.optional(v.string()),
   imageUrl: v.optional(v.string()),
   kitNumber: v.optional(v.number()),
+  rating: v.optional(v.number()),
   clubLogo: v.optional(v.string()),
   clubApiId: v.optional(v.string()),
 });
 
 /**
- * Clear a table in batches (Internal only).
+ * Clear a table in batches.
  */
-export const clearTableBatch = internalMutation({
+export const clearTableBatch = mutation({
   args: {
     tableName: v.string(),
     batchSize: v.optional(v.number()),
@@ -68,9 +68,9 @@ export const clearTableBatch = internalMutation({
 });
 
 /**
- * Seed clubs batch (Internal only).
+ * Seed clubs batch.
  */
-export const seedClubsBatch = internalMutation({
+export const seedClubsBatch = mutation({
   args: {
     clubs: v.array(clubItemArg),
   },
@@ -94,9 +94,9 @@ export const seedClubsBatch = internalMutation({
 });
 
 /**
- * Seed nations batch (Internal only).
+ * Seed nations batch.
  */
-export const seedNationsBatch = internalMutation({
+export const seedNationsBatch = mutation({
   args: {
     nations: v.array(nationItemArg),
   },
@@ -120,10 +120,9 @@ export const seedNationsBatch = internalMutation({
 });
 
 /**
- * seedPlayersBatch — accurately inserts players linked to club & nation (Internal only).
+ * upsertPlayersBatch — accurately inserts or patches players linked to club & nation.
  */
-export const upsertPlayersBatch = internalMutation({
-
+export const upsertPlayersBatch = mutation({
   args: {
     players: v.array(playerArg),
   },
@@ -178,12 +177,20 @@ export const upsertPlayersBatch = internalMutation({
       const clubId = clubMap.get(p.club)!;
       const nationId = nationMap.get(p.nation)!;
 
-      // Unique match strictly by apiId
+      // Unique match strictly by apiId first, then by club & name
       let existing = null;
       if (p.apiId) {
         existing = await ctx.db
           .query('players')
           .withIndex('by_apiId', (q) => q.eq('apiId', p.apiId))
+          .first();
+      }
+
+      if (!existing) {
+        existing = await ctx.db
+          .query('players')
+          .withIndex('by_club', (q) => q.eq('clubId', clubId))
+          .filter((q) => q.eq(q.field('name'), p.name))
           .first();
       }
 
@@ -198,6 +205,7 @@ export const upsertPlayersBatch = internalMutation({
         apiId: p.apiId,
         imageUrl: p.imageUrl,
         kitNumber: p.kitNumber,
+        rating: p.rating ?? getDefaultRatingForTier(p.tier as Tier, p.name),
       };
 
       if (existing) {

@@ -14,6 +14,7 @@
       "club": "Al-Qadsiah",
       "nation": "Belgium",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2918.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44449.png",
       "kitNumber": 28
@@ -36,6 +38,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44528.png",
       "kitNumber": 50
@@ -47,6 +50,7 @@
       "club": "Al-Qadsiah",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/735.png",
       "kitNumber": 6
@@ -58,6 +62,7 @@
       "club": "Al-Qadsiah",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51449.png",
       "kitNumber": 17
@@ -69,6 +74,7 @@
       "club": "Al-Qadsiah",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127803.png",
       "kitNumber": 16
@@ -80,6 +86,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44331.png",
       "kitNumber": 12
@@ -91,6 +98,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44337.png",
       "kitNumber": 23
@@ -102,6 +110,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403087.png",
       "kitNumber": 2
@@ -113,6 +122,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44656.png",
       "kitNumber": 24
@@ -124,6 +134,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/543059.png",
       "kitNumber": 4
@@ -135,6 +146,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/653529.png",
       "kitNumber": 13
@@ -146,6 +158,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/636444.png",
       "kitNumber": 35
@@ -157,6 +170,7 @@
       "club": "Al-Qadsiah",
       "nation": "Portugal",
       "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380.png",
       "kitNumber": 25
@@ -168,6 +182,7 @@
       "club": "Al-Qadsiah",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2614.png",
       "kitNumber": null
@@ -179,6 +194,7 @@
       "club": "Al-Qadsiah",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19.png",
       "kitNumber": 5
@@ -190,6 +206,7 @@
       "club": "Al-Qadsiah",
       "nation": "Switzerland",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/48642.png",
       "kitNumber": 88
@@ -201,6 +218,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/306380.png",
       "kitNumber": 10
@@ -212,6 +230,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44374.png",
       "kitNumber": 7
@@ -223,6 +242,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328403.png",
       "kitNumber": 15
@@ -234,6 +254,7 @@
       "club": "Al-Qadsiah",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/389602.png",
       "kitNumber": 30
@@ -245,6 +266,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2632.png",
       "kitNumber": 11
@@ -256,6 +278,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44581.png",
       "kitNumber": 40
@@ -267,6 +290,7 @@
       "club": "Al-Qadsiah",
       "nation": "Ghana",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/411800.png",
       "kitNumber": null
@@ -278,6 +302,7 @@
       "club": "Al-Qadsiah",
       "nation": "Portugal",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576295.png",
       "kitNumber": 80
@@ -289,6 +314,7 @@
       "club": "Al-Qadsiah",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415049.png",
       "kitNumber": 20
@@ -300,6 +326,7 @@
       "club": "Al-Qadsiah",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/531443.png",
       "kitNumber": 27
@@ -311,6 +338,7 @@
       "club": "Al-Qadsiah",
       "nation": "Spain",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/459041.png",
       "kitNumber": 8
@@ -322,6 +350,7 @@
       "club": "Al-Qadsiah",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/6420.png",
       "kitNumber": 32
@@ -333,6 +362,7 @@
       "club": "Al-Qadsiah",
       "nation": "Mexico",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/35532.png",
       "kitNumber": 33
@@ -344,6 +374,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44322.png",
       "kitNumber": 9
@@ -355,6 +386,7 @@
       "club": "Al-Qadsiah",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/268087.png",
       "kitNumber": 19
@@ -366,6 +398,7 @@
       "club": "Al-Qadsiah",
       "nation": "Ghana",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/508881.png",
       "kitNumber": 22
@@ -377,6 +410,7 @@
       "club": "Al-Qadsiah",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576165.png",
       "kitNumber": 99
@@ -388,6 +422,7 @@
       "club": "Al-Qadsiah",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/635802.png",
       "kitNumber": 77

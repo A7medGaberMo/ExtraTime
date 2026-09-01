@@ -40,8 +40,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/tottenham.png",
-          "fallbackText": "SON"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/47.png",
+          "fallbackText": "SON",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Son_Heung-min_2018.jpg"
         },
         "value": 120,
         "valueLabel": {
@@ -62,8 +63,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "MANE"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MANE",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sadio_Man%C3%A9_2018.jpg"
         },
         "value": 111,
         "valueLabel": {
@@ -79,13 +81,14 @@
           "ar": "إيدين هازارد"
         },
         "subText": {
-          "en": "Chelsea (2x PL Champion)",
-          "ar": "تشيلسي (بطل الدوري مرتين)"
+          "en": "Chelsea",
+          "ar": "تشيلسي"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "EH10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "EH10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Eden_Hazard_2018.jpg"
         },
         "value": 85,
         "valueLabel": {
@@ -106,8 +109,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "RM26"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "RM26",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Riyad_Mahrez_2018.jpg"
         },
         "value": 82,
         "valueLabel": {
@@ -128,7 +132,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "ZAH"
+          "fallbackText": "ZAH",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
         },
         "value": 68,
         "valueLabel": {
@@ -175,13 +180,14 @@
           "ar": "توماس مولر"
         },
         "subText": {
-          "en": "Bayern Munich (2x UCL Winner)",
-          "ar": "بايرن ميونخ (بطل الأبطال مرتين)"
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "TM25"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
         },
         "value": 54,
         "valueLabel": {
@@ -202,8 +208,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "MO11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
         },
         "value": 44,
         "valueLabel": {
@@ -224,8 +231,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "EH9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 41,
         "valueLabel": {
@@ -246,8 +254,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/atletico.png",
-          "fallbackText": "GRI"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png",
+          "fallbackText": "GRI",
+          "primaryUrl": "https://media.api-sports.io/football/players/56.png"
         },
         "value": 37,
         "valueLabel": {
@@ -268,7 +277,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "LS9"
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
         },
         "value": 27,
         "valueLabel": {
@@ -315,13 +326,13 @@
           "ar": "كيليان مبابي"
         },
         "subText": {
-          "en": "France (4 in 2018, 8 in 2022)",
-          "ar": "فرنسا (4 في 2018، 8 في 2022)"
+          "en": "France",
+          "ar": "فرنسا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/france.png",
-          "fallbackText": "KM7"
+          "fallbackText": "KM7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 12,
         "valueLabel": {
@@ -342,8 +353,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/germany.png",
-          "fallbackText": "TM13"
+          "fallbackText": "TM13",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
         },
         "value": 10,
         "valueLabel": {
@@ -359,13 +370,13 @@
           "ar": "هاري كين"
         },
         "subText": {
-          "en": "England (6 in 2018, 2 in 2022)",
-          "ar": "إنجلترا (6 في 2018، 2 في 2022)"
+          "en": "England",
+          "ar": "إنجلترا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/england.png",
-          "fallbackText": "HK9"
+          "fallbackText": "HK9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
         },
         "value": 8,
         "valueLabel": {
@@ -381,13 +392,13 @@
           "ar": "خاميس رودريغيز"
         },
         "subText": {
-          "en": "Colombia (2014 Golden Boot)",
-          "ar": "كولومبيا (هداف مونديال 2014)"
+          "en": "Colombia",
+          "ar": "كولومبيا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/colombia.png",
-          "fallbackText": "JR10"
+          "fallbackText": "JR10",
+          "primaryUrl": "https://media.api-sports.io/football/players/51581.png"
         },
         "value": 6,
         "valueLabel": {
@@ -408,8 +419,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/belgium.png",
-          "fallbackText": "LUK"
+          "fallbackText": "LUK",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg"
         },
         "value": 5,
         "valueLabel": {
@@ -461,8 +472,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/croatia.png",
-          "fallbackText": "LM10"
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Luka_Modri%C4%87_2018.jpg"
         },
         "value": 178,
         "valueLabel": {
@@ -483,7 +494,6 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/denmark.png",
           "fallbackText": "ERI"
         },
         "value": 134,
@@ -500,13 +510,13 @@
           "ar": "أندريس إنييستا"
         },
         "subText": {
-          "en": "Spain (World Cup Winner 2010)",
-          "ar": "إسبانيا (بطل العالم 2010)"
+          "en": "Spain",
+          "ar": "إسبانيا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/spain.png",
-          "fallbackText": "INI"
+          "fallbackText": "INI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Andr%C3%A9s_Iniesta.jpg"
         },
         "value": 131,
         "valueLabel": {
@@ -522,13 +532,13 @@
           "ar": "توني كروس"
         },
         "subText": {
-          "en": "Germany (World Cup Winner 2014)",
-          "ar": "ألمانيا (بطل العالم 2014)"
+          "en": "Germany",
+          "ar": "ألمانيا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/germany.png",
-          "fallbackText": "TK8"
+          "fallbackText": "TK8",
+          "primaryUrl": "https://media.api-sports.io/football/players/738.png"
         },
         "value": 114,
         "valueLabel": {
@@ -544,13 +554,13 @@
           "ar": "كيفين دي بروين"
         },
         "subText": {
-          "en": "Belgium (Century Cap Centurion)",
-          "ar": "بلجيكا (نادي المئة)"
+          "en": "Belgium",
+          "ar": "بلجيكا"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/belgium.png",
-          "fallbackText": "KDB"
+          "fallbackText": "KDB",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg"
         },
         "value": 105,
         "valueLabel": {
@@ -602,8 +612,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "DS21"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "DS21",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/David_Silva_2017.jpg/330px-David_Silva_2017.jpg"
         },
         "value": 93,
         "valueLabel": {
@@ -624,8 +635,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "SG8"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "SG8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Steven_Gerrard_2018.jpg/330px-Steven_Gerrard_2018.jpg"
         },
         "value": 92,
         "valueLabel": {
@@ -646,7 +658,8 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "MIL"
+          "fallbackText": "MIL",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
         },
         "value": 89,
         "valueLabel": {
@@ -667,8 +680,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "DB7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "DB7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/David_Beckham_2018.jpg"
         },
         "value": 80,
         "valueLabel": {
@@ -689,7 +703,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
           "fallbackText": "ERI"
         },
         "value": 76,
@@ -741,8 +755,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "SR4"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "SR4",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Sergio_Ramos_2018.jpg"
         },
         "value": 29,
         "valueLabel": {
@@ -763,7 +778,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "DAV"
+          "fallbackText": "DAV",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Edgar_Davids_%28cropped%29.jpg/330px-Edgar_Davids_%28cropped%29.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
         },
         "value": 25,
         "valueLabel": {
@@ -784,8 +801,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "PEP3"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "PEP3",
+          "primaryUrl": "https://media.api-sports.io/football/players/541877.png"
         },
         "value": 17,
         "valueLabel": {
@@ -806,7 +824,9 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "IBRA"
+          "fallbackText": "IBRA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Zlatan_Ibrahimovi%C4%87_June_2018.jpg",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/489.png"
         },
         "value": 15,
         "valueLabel": {
@@ -827,8 +847,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "KEA"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "KEA",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Roy_keane_2014.jpg/330px-Roy_keane_2014.jpg"
         },
         "value": 14,
         "valueLabel": {
@@ -881,8 +902,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "RL9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 32,
         "valueLabel": {
@@ -903,8 +925,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "TM25"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
         },
         "value": 26,
         "valueLabel": {
@@ -925,8 +948,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KM"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KM",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
         },
         "value": 20,
         "valueLabel": {
@@ -947,8 +971,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-city.png",
-          "fallbackText": "EH9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "EH9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
         },
         "value": 14,
         "valueLabel": {
@@ -964,13 +989,14 @@
           "ar": "فينيسيوس جونيور"
         },
         "subText": {
-          "en": "Real Madrid (2x UCL Final Scorer)",
-          "ar": "ريال مدريد (سجل في نهائيين)"
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "VJR"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "VJR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Vinicius_Junior_2021.jpg"
         },
         "value": 11,
         "valueLabel": {

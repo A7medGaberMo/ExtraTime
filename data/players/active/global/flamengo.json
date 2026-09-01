@@ -14,6 +14,7 @@
       "club": "Flamengo",
       "nation": "Argentina",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/11756.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/80528.png",
       "kitNumber": 42
@@ -36,6 +38,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/372083.png",
       "kitNumber": 49
@@ -47,6 +50,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/618.png",
       "kitNumber": 13
@@ -58,6 +62,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/860.png",
       "kitNumber": 26
@@ -69,6 +74,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1566.png",
       "kitNumber": 22
@@ -80,6 +86,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9458.png",
       "kitNumber": 3
@@ -91,6 +98,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10124.png",
       "kitNumber": 4
@@ -102,6 +110,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1771.png",
       "kitNumber": 6
@@ -113,6 +122,7 @@
       "club": "Flamengo",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1290.png",
       "kitNumber": 2
@@ -124,6 +134,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9909.png",
       "kitNumber": 44
@@ -135,6 +146,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403299.png",
       "kitNumber": 51
@@ -146,6 +158,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/634767.png",
       "kitNumber": 87
@@ -157,6 +170,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/512740.png",
       "kitNumber": 77
@@ -168,6 +182,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449253.png",
       "kitNumber": 61
@@ -179,6 +194,7 @@
       "club": "Flamengo",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2612.png",
       "kitNumber": 10
@@ -190,6 +206,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1646.png",
       "kitNumber": 20
@@ -201,6 +218,7 @@
       "club": "Flamengo",
       "nation": "Uruguay",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5995.png",
       "kitNumber": 18
@@ -212,6 +230,7 @@
       "club": "Flamengo",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2289.png",
       "kitNumber": 21
@@ -223,6 +242,7 @@
       "club": "Flamengo",
       "nation": "Spain",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/48.png",
       "kitNumber": 8
@@ -234,6 +254,7 @@
       "club": "Flamengo",
       "nation": "Chile",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2560.png",
       "kitNumber": 5
@@ -245,6 +266,7 @@
       "club": "Flamengo",
       "nation": "Colombia",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5994.png",
       "kitNumber": 15
@@ -256,6 +278,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403300.png",
       "kitNumber": 99
@@ -267,6 +290,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/332654.png",
       "kitNumber": 52
@@ -278,6 +302,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/407958.png",
       "kitNumber": 60
@@ -289,6 +314,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/454555.png",
       "kitNumber": 47
@@ -300,6 +326,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544685.png",
       "kitNumber": 79
@@ -311,6 +338,7 @@
       "club": "Flamengo",
       "nation": "Argentina",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/644618.png",
       "kitNumber": 75
@@ -322,6 +350,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/505531.png",
       "kitNumber": null
@@ -333,6 +362,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10321.png",
       "kitNumber": 9
@@ -344,6 +374,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/126936.png",
       "kitNumber": 16
@@ -355,6 +386,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10180.png",
       "kitNumber": 27
@@ -366,6 +398,7 @@
       "club": "Flamengo",
       "nation": "Ecuador",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/16369.png",
       "kitNumber": 19
@@ -377,6 +410,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2414.png",
       "kitNumber": 11
@@ -388,6 +422,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22238.png",
       "kitNumber": 7
@@ -399,6 +434,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/589367.png",
       "kitNumber": 59
@@ -410,6 +446,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/586025.png",
       "kitNumber": 81
@@ -421,6 +458,7 @@
       "club": "Flamengo",
       "nation": "Brazil",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/405160.png",
       "kitNumber": 64

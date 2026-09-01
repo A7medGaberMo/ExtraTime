@@ -14,6 +14,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8469.png",
       "kitNumber": 26
@@ -25,6 +26,7 @@
       "club": "RSC Anderlecht",
       "nation": "Germany",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/106792.png",
       "kitNumber": 32
@@ -36,6 +38,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/626145.png",
       "kitNumber": 33
@@ -47,6 +50,7 @@
       "club": "RSC Anderlecht",
       "nation": "Sweden",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2852.png",
       "kitNumber": 6
@@ -58,6 +62,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127418.png",
       "kitNumber": 54
@@ -69,6 +74,7 @@
       "club": "RSC Anderlecht",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/84081.png",
       "kitNumber": 4
@@ -80,6 +86,7 @@
       "club": "RSC Anderlecht",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/401367.png",
       "kitNumber": 79
@@ -91,6 +98,7 @@
       "club": "RSC Anderlecht",
       "nation": "Denmark",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/315615.png",
       "kitNumber": 3
@@ -102,6 +110,7 @@
       "club": "RSC Anderlecht",
       "nation": "Senegal",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/175415.png",
       "kitNumber": 5
@@ -113,6 +122,7 @@
       "club": "RSC Anderlecht",
       "nation": "France",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/157146.png",
       "kitNumber": 27
@@ -124,6 +134,7 @@
       "club": "RSC Anderlecht",
       "nation": "Guinea",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/579385.png",
       "kitNumber": 2
@@ -135,6 +146,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/481515.png",
       "kitNumber": 62
@@ -146,6 +158,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/551252.png",
       "kitNumber": 64
@@ -157,6 +170,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/296455.png",
       "kitNumber": 29
@@ -168,6 +182,7 @@
       "club": "RSC Anderlecht",
       "nation": "Canada",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/294824.png",
       "kitNumber": 13
@@ -179,6 +194,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127417.png",
       "kitNumber": 55
@@ -190,6 +206,7 @@
       "club": "RSC Anderlecht",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38745.png",
       "kitNumber": 24
@@ -201,6 +218,7 @@
       "club": "RSC Anderlecht",
       "nation": "Senegal",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/371839.png",
       "kitNumber": 7
@@ -212,6 +230,7 @@
       "club": "RSC Anderlecht",
       "nation": "Czech Republic",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327641.png",
       "kitNumber": 18
@@ -223,6 +242,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/655011.png",
       "kitNumber": 53
@@ -234,6 +254,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/650475.png",
       "kitNumber": 68
@@ -245,6 +266,7 @@
       "club": "RSC Anderlecht",
       "nation": "Cameroon",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546763.png",
       "kitNumber": 61
@@ -256,6 +278,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/400844.png",
       "kitNumber": 83
@@ -267,6 +290,7 @@
       "club": "RSC Anderlecht",
       "nation": "Ukraine",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/107303.png",
       "kitNumber": 14
@@ -278,6 +302,7 @@
       "club": "RSC Anderlecht",
       "nation": "Mexico",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/36111.png",
       "kitNumber": 21
@@ -289,6 +314,7 @@
       "club": "RSC Anderlecht",
       "nation": "Finland",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15906.png",
       "kitNumber": 11
@@ -300,6 +326,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129126.png",
       "kitNumber": 91
@@ -311,6 +338,7 @@
       "club": "RSC Anderlecht",
       "nation": "Serbia",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544636.png",
       "kitNumber": 9
@@ -322,6 +350,7 @@
       "club": "RSC Anderlecht",
       "nation": "Belgium",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/482300.png",
       "kitNumber": 49
@@ -333,6 +362,7 @@
       "club": "RSC Anderlecht",
       "nation": "Ivory Coast",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/471432.png",
       "kitNumber": 22

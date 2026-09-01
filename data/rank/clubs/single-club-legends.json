@@ -39,8 +39,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "CR7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "CR7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
         },
         "value": 450,
         "valueLabel": {
@@ -61,8 +62,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "KB9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "KB9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg"
         },
         "value": 354,
         "valueLabel": {
@@ -83,8 +85,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "RG7"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "RG7",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Ra%C3%BAl_Gonz%C3%A1lez_2013.jpg"
         },
         "value": 323,
         "valueLabel": {
@@ -105,8 +108,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
-          "fallbackText": "ADS"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "ADS",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Di_stefano_argentina_%28cropped%29.jpg/330px-Di_stefano_argentina_%28cropped%29.jpg"
         },
         "value": 308,
         "valueLabel": {
@@ -127,7 +131,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/real-madrid.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "SAN"
         },
         "value": 290,
@@ -178,8 +182,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LM10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LM10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
         },
         "value": 672,
         "valueLabel": {
@@ -200,8 +205,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "CES"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "CES",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/C%C3%A9sar_Rodr%C3%ADguez_%C3%81lvarez.jpg"
         },
         "value": 232,
         "valueLabel": {
@@ -222,8 +228,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
-          "fallbackText": "LS9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "LS9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg"
         },
         "value": 198,
         "valueLabel": {
@@ -244,7 +251,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "KUB"
         },
         "value": 194,
@@ -266,7 +273,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/barcelona.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "SAM"
         },
         "value": 184,
@@ -318,8 +325,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "WR10"
+          "fallbackText": "WR10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Wayne_Rooney_2020.jpg"
         },
         "value": 253,
         "valueLabel": {
@@ -340,8 +347,8 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
-          "fallbackText": "SBC"
+          "fallbackText": "SBC",
+          "primaryUrl": "https://media.api-sports.io/football/players/49888.png"
         },
         "value": 249,
         "valueLabel": {
@@ -362,7 +369,6 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
           "fallbackText": "LAW"
         },
         "value": 237,
@@ -384,7 +390,6 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
           "fallbackText": "ROW"
         },
         "value": 211,
@@ -406,7 +411,6 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/man-utd.png",
           "fallbackText": "VIO"
         },
         "value": 179,
@@ -458,8 +462,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "RUSH"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "RUSH",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Ian_Rush_in_Singapore.jpg"
         },
         "value": 346,
         "valueLabel": {
@@ -480,8 +485,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "HUNT"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "HUNT",
+          "primaryUrl": "https://media.api-sports.io/football/players/576652.png"
         },
         "value": 285,
         "valueLabel": {
@@ -502,7 +508,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "HOD"
         },
         "value": 241,
@@ -519,13 +525,14 @@
           "ar": "محمد صلاح"
         },
         "subText": {
-          "en": "Modern Era Record Scorer",
-          "ar": "الهداف التاريخي للحقبة الحديثة"
+          "en": "Premier League",
+          "ar": "الدوري الإنجليزي"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
-          "fallbackText": "MO11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "MO11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg"
         },
         "value": 221,
         "valueLabel": {
@@ -546,7 +553,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/liverpool.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "LID"
         },
         "value": 215,
@@ -598,8 +605,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
-          "fallbackText": "TH14"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "TH14",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Thierry_Henry_August_2008.jpg"
         },
         "value": 175,
         "valueLabel": {
@@ -620,8 +628,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
-          "fallbackText": "WRI"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "WRI",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg/330px-Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg"
         },
         "value": 104,
         "valueLabel": {
@@ -642,8 +651,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
-          "fallbackText": "RVP"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "RVP",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Loco-Fener_%2810%29.jpg/330px-Loco-Fener_%2810%29.jpg"
         },
         "value": 96,
         "valueLabel": {
@@ -664,8 +674,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
-          "fallbackText": "DB10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "DB10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Dennis_Bergkamp_2014_%28cropped%29.jpg"
         },
         "value": 87,
         "valueLabel": {
@@ -686,8 +697,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/arsenal.png",
-          "fallbackText": "GIR"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "GIR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Olivier_Giroud_December_2024.png"
         },
         "value": 73,
         "valueLabel": {
@@ -737,8 +749,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "GERD"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "GERD",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg"
         },
         "value": 563,
         "valueLabel": {
@@ -759,8 +772,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "RL9"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "RL9",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28all-oev__190436%29_%28cropped%29.jpg"
         },
         "value": 344,
         "valueLabel": {
@@ -776,13 +790,14 @@
           "ar": "توماس مولر"
         },
         "subText": {
-          "en": "710+ matches (Raumdeuter)",
-          "ar": "أكثر من 710 مباريات"
+          "en": "Raumdeuter",
+          "ar": "مساحات (Raumdeuter)"
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "TM25"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "TM25",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png"
         },
         "value": 245,
         "valueLabel": {
@@ -803,8 +818,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
-          "fallbackText": "KHR"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "KHR",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/2015-02-06_Rummenigge_0370_%28cropped%29.JPG/330px-2015-02-06_Rummenigge_0370_%28cropped%29.JPG"
         },
         "value": 217,
         "valueLabel": {
@@ -825,7 +841,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/bayern.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "OHL"
         },
         "value": 186,
@@ -877,8 +893,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "LAM8"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "LAM8",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Frank_Lampard_2019.jpg/330px-Frank_Lampard_2019.jpg"
         },
         "value": 147,
         "valueLabel": {
@@ -899,8 +916,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "DD11"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "DD11",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Didier_Drogba_2014.jpg"
         },
         "value": 104,
         "valueLabel": {
@@ -921,8 +939,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "EH10"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "EH10",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Eden_Hazard_2018.jpg"
         },
         "value": 85,
         "valueLabel": {
@@ -943,7 +962,7 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "JFH"
         },
         "value": 69,
@@ -965,8 +984,9 @@
         },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "/badges/chelsea.png",
-          "fallbackText": "ZOL"
+          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "ZOL",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Zola_2018_%28cropped%29.jpg/330px-Zola_2018_%28cropped%29.jpg"
         },
         "value": 59,
         "valueLabel": {

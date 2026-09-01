@@ -110,8 +110,8 @@ export function ETLogo({
       fillT = '#95E810';
       break;
     case 'card-badge':
-      fillE = 'url(#et-silver-grad-cmp)';
-      fillT = 'url(#et-gold-grad-cmp)';
+      fillE = '#FFFFFF';
+      fillT = '#95E810';
       break;
     case 'favicon':
       fillE = '#FFFFFF';

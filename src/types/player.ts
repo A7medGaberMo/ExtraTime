@@ -21,4 +21,5 @@ export interface PlayerCardData {
   imageUrl?: string;
   isLegend?: boolean;
   kitNumber?: number;
+  rating?: number;
 }

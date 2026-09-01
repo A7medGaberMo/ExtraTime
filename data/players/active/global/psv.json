@@ -14,6 +14,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37818.png",
       "kitNumber": 1
@@ -25,6 +26,7 @@
       "club": "PSV Eindhoven",
       "nation": "Czech Republic",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138804.png",
       "kitNumber": 32
@@ -36,6 +38,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/371523.png",
       "kitNumber": 51
@@ -47,6 +50,7 @@
       "club": "PSV Eindhoven",
       "nation": "USA",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38735.png",
       "kitNumber": 8
@@ -58,6 +62,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342054.png",
       "kitNumber": 6
@@ -69,6 +74,7 @@
       "club": "PSV Eindhoven",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/191233.png",
       "kitNumber": 25
@@ -80,6 +86,7 @@
       "club": "PSV Eindhoven",
       "nation": "Brazil",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/233.png",
       "kitNumber": 17
@@ -91,6 +98,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/228.png",
       "kitNumber": 4
@@ -102,6 +110,7 @@
       "club": "PSV Eindhoven",
       "nation": "Spain",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/361385.png",
       "kitNumber": 3
@@ -113,6 +122,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/474551.png",
       "kitNumber": 38
@@ -124,6 +134,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37749.png",
       "kitNumber": 23
@@ -135,6 +146,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37890.png",
       "kitNumber": 22
@@ -146,6 +158,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/36905.png",
       "kitNumber": 20
@@ -157,6 +170,7 @@
       "club": "PSV Eindhoven",
       "nation": "Germany",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327895.png",
       "kitNumber": 10
@@ -168,6 +182,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37438.png",
       "kitNumber": 21
@@ -179,6 +194,7 @@
       "club": "PSV Eindhoven",
       "nation": "Belgium",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/439829.png",
       "kitNumber": 52
@@ -190,6 +206,7 @@
       "club": "PSV Eindhoven",
       "nation": "France",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/474550.png",
       "kitNumber": 31
@@ -201,6 +218,7 @@
       "club": "PSV Eindhoven",
       "nation": "Czech Republic",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/453712.png",
       "kitNumber": 56
@@ -212,6 +230,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/434623.png",
       "kitNumber": 35
@@ -223,6 +242,7 @@
       "club": "PSV Eindhoven",
       "nation": "Croatia",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/207.png",
       "kitNumber": 5
@@ -234,6 +254,7 @@
       "club": "PSV Eindhoven",
       "nation": "Romania",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/43036.png",
       "kitNumber": 27
@@ -245,6 +266,7 @@
       "club": "PSV Eindhoven",
       "nation": "USA",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/73868.png",
       "kitNumber": 9
@@ -256,6 +278,7 @@
       "club": "PSV Eindhoven",
       "nation": "France",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25646.png",
       "kitNumber": 14
@@ -267,6 +290,7 @@
       "club": "PSV Eindhoven",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/272543.png",
       "kitNumber": 11
@@ -278,6 +302,7 @@
       "club": "PSV Eindhoven",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610507.png",
       "kitNumber": 37
@@ -289,6 +314,7 @@
       "club": "PSV Eindhoven",
       "nation": "Morocco",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441265.png",
       "kitNumber": 7
@@ -300,6 +326,7 @@
       "club": "PSV Eindhoven",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/365018.png",
       "kitNumber": null
@@ -311,6 +338,7 @@
       "club": "PSV Eindhoven",
       "nation": "USA",
       "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329409.png",
       "kitNumber": 19
@@ -322,6 +350,7 @@
       "club": "PSV Eindhoven",
       "nation": "England",
       "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/502417.png",
       "kitNumber": null

@@ -14,6 +14,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30417.png",
       "kitNumber": 29
@@ -25,6 +26,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31069.png",
       "kitNumber": 57
@@ -36,6 +38,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/350078.png",
       "kitNumber": 95
@@ -47,6 +50,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/392279.png",
       "kitNumber": 1
@@ -58,6 +62,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30419.png",
       "kitNumber": 31
@@ -69,6 +74,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/289761.png",
       "kitNumber": 42
@@ -80,6 +86,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/91422.png",
       "kitNumber": 16
@@ -91,6 +98,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2286.png",
       "kitNumber": 77
@@ -102,6 +110,7 @@
       "club": "Atalanta",
       "nation": "Sweden",
       "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/137976.png",
       "kitNumber": 4
@@ -113,6 +122,7 @@
       "club": "Atalanta",
       "nation": "Bosnia and Herzegovina",
       "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1442.png",
       "kitNumber": 23
@@ -124,6 +134,7 @@
       "club": "Atalanta",
       "nation": "Ivory Coast",
       "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/48119.png",
       "kitNumber": 3
@@ -135,6 +146,7 @@
       "club": "Atalanta",
       "nation": "Albania",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30421.png",
       "kitNumber": 19
@@ -146,6 +158,7 @@
       "club": "Atalanta",
       "nation": "Netherlands",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/530.png",
       "kitNumber": 5
@@ -157,6 +170,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/264857.png",
       "kitNumber": 47
@@ -168,6 +182,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/453906.png",
       "kitNumber": 69
@@ -179,6 +194,7 @@
       "club": "Atalanta",
       "nation": "Slovenia",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/400530.png",
       "kitNumber": 40
@@ -190,6 +206,7 @@
       "club": "Atalanta",
       "nation": "Brazil",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10097.png",
       "kitNumber": 13
@@ -201,6 +218,7 @@
       "club": "Atalanta",
       "nation": "Belgium",
       "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/147859.png",
       "kitNumber": 17
@@ -212,6 +230,7 @@
       "club": "Atalanta",
       "nation": "Serbia",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178749.png",
       "kitNumber": 10
@@ -223,6 +242,7 @@
       "club": "Atalanta",
       "nation": "Croatia",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2763.png",
       "kitNumber": 8
@@ -234,6 +254,7 @@
       "club": "Atalanta",
       "nation": "Netherlands",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30432.png",
       "kitNumber": 15
@@ -245,6 +266,7 @@
       "club": "Atalanta",
       "nation": "Poland",
       "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203474.png",
       "kitNumber": 59
@@ -256,6 +278,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/134926.png",
       "kitNumber": 27
@@ -267,6 +290,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/325.png",
       "kitNumber": 41
@@ -278,6 +302,7 @@
       "club": "Atalanta",
       "nation": "Ghana",
       "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/353609.png",
       "kitNumber": 25
@@ -289,6 +314,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419423.png",
       "kitNumber": 7
@@ -300,6 +326,7 @@
       "club": "Atalanta",
       "nation": "Croatia",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412893.png",
       "kitNumber": 43
@@ -311,6 +338,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/553341.png",
       "kitNumber": 44
@@ -322,6 +350,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30544.png",
       "kitNumber": 9
@@ -333,6 +362,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30543.png",
       "kitNumber": 18
@@ -344,6 +374,7 @@
       "club": "Atalanta",
       "nation": "Montenegro",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/66817.png",
       "kitNumber": 90
@@ -355,6 +386,7 @@
       "club": "Atalanta",
       "nation": "Ghana",
       "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/199837.png",
       "kitNumber": 45
@@ -366,6 +398,7 @@
       "club": "Atalanta",
       "nation": "Mali",
       "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/194750.png",
       "kitNumber": 46
@@ -377,6 +410,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443501.png",
       "kitNumber": 11
@@ -388,6 +422,7 @@
       "club": "Atalanta",
       "nation": "Italy",
       "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383017.png",
       "kitNumber": 48

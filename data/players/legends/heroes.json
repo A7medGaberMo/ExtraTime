@@ -6,6 +6,7 @@
     "club": "Chelsea",
     "nation": "Belgium",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Eden_Hazard_at_Baku_before_2019_UEFA_Europe_League_Final.jpg/330px-Eden_Hazard_at_Baku_before_2019_UEFA_Europe_League_Final.jpg"
@@ -17,6 +18,7 @@
     "club": "Juventus",
     "nation": "Italy",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 3,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Chiellini_Mancini_Gravina_Mattarella_2021_%28Giorgio_Chiellini%29.jpg/330px-Chiellini_Mancini_Gravina_Mattarella_2021_%28Giorgio_Chiellini%29.jpg"
@@ -28,6 +30,7 @@
     "club": "Real Madrid",
     "nation": "Germany",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mesut_%C3%96zil_at_Baku_before_2019_UEFA_Europe_League_Final.jpg/330px-Mesut_%C3%96zil_at_Baku_before_2019_UEFA_Europe_League_Final.jpg"
@@ -39,6 +42,7 @@
     "club": "Atlético Madrid",
     "nation": "Uruguay",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 2,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Diego_God%C3%ADn_2018_%28cropped%29.jpg/330px-Diego_God%C3%ADn_2018_%28cropped%29.jpg"
@@ -50,6 +54,7 @@
     "club": "Juventus",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Gonzalo_Higua%C3%ADn_2019.jpg"
@@ -61,6 +66,7 @@
     "club": "Juventus",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Carlos_Tevez_with_Argentina_November_2014_%28cropped%29.jpg/330px-Carlos_Tevez_with_Argentina_November_2014_%28cropped%29.jpg"
@@ -72,6 +78,7 @@
     "club": "SSC Napoli",
     "nation": "Slovakia",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 17,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Hamsik_2016.jpg/330px-Hamsik_2016.jpg"
@@ -83,6 +90,7 @@
     "club": "Juventus",
     "nation": "Italy",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 19,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/20150616_-_Portugal_-_Italie_-_Gen%C3%A8ve_-_Leonardo_Bonucci_%28cropped_2%29.jpg/330px-20150616_-_Portugal_-_Italie_-_Gen%C3%A8ve_-_Leonardo_Bonucci_%28cropped_2%29.jpg"
@@ -94,6 +102,7 @@
     "club": "FC Barcelona",
     "nation": "Chile",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Claudio_Bravo_Footballteam_of_Chile_-_Spain_vs._Chile%2C_10th_September_2013_%28cropped%29.jpg/330px-Claudio_Bravo_Footballteam_of_Chile_-_Spain_vs._Chile%2C_10th_September_2013_%28cropped%29.jpg"
@@ -105,6 +114,7 @@
     "club": "Sevilla FC",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 15,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Jes%C3%BAs_Navas.jpg/330px-Jes%C3%BAs_Navas.jpg"
@@ -116,6 +126,7 @@
     "club": "Borussia Dortmund",
     "nation": "Germany",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 15,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/2023-08-12_TSV_Schott_Mainz_gegen_Borussia_Dortmund_%28DFB-Pokal_2023-24%29_by_Sandro_Halank%E2%80%93103.jpg/330px-2023-08-12_TSV_Schott_Mainz_gegen_Borussia_Dortmund_%28DFB-Pokal_2023-24%29_by_Sandro_Halank%E2%80%93103.jpg"
@@ -127,6 +138,7 @@
     "club": "Real Madrid",
     "nation": "Costa Rica",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Keylor_Navas_2018_%28cropped%29.jpg/330px-Keylor_Navas_2018_%28cropped%29.jpg"
@@ -138,6 +150,7 @@
     "club": "AC Milan",
     "nation": "France",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Olivier_Giroud_December_2024.png"
@@ -149,6 +162,7 @@
     "club": "Real Madrid",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 11,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NIG-ARG_%285%29.jpg/330px-NIG-ARG_%285%29.jpg"
@@ -160,6 +174,7 @@
     "club": "Chelsea",
     "nation": "Brazil",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 6,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Thiago_Silva_850_1582.jpg/330px-20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Thiago_Silva_850_1582.jpg"
@@ -171,6 +186,7 @@
     "club": "Arsenal",
     "nation": "Germany",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Lukas_Podolski_2023.jpg/330px-Lukas_Podolski_2023.jpg"
@@ -182,6 +198,7 @@
     "club": "Manchester United",
     "nation": "Portugal",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 17,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/New_Zealand-Portugal_Nani.jpg/330px-New_Zealand-Portugal_Nani.jpg"
@@ -193,6 +210,7 @@
     "club": "Manchester United",
     "nation": "Belgium",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 27,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Marouane_Fellaini_2018.jpg/330px-Marouane_Fellaini_2018.jpg"
@@ -204,6 +222,7 @@
     "club": "FC Barcelona",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 14,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Javier_Mascherano_NE_Revolution_Inter_Miami_7.9.25-040_%28cropped%29.jpg/330px-Javier_Mascherano_NE_Revolution_Inter_Miami_7.9.25-040_%28cropped%29.jpg"
@@ -215,6 +234,7 @@
     "club": "Chelsea",
     "nation": "Ghana",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 5,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Chelsea_Legends_1_Inter_Forever_4_%2828453496098%29_%28cropped%29.jpg/330px-Chelsea_Legends_1_Inter_Forever_4_%2828453496098%29_%28cropped%29.jpg"
@@ -226,6 +246,7 @@
     "club": "Manchester United",
     "nation": "South Korea",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 13,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Park_Ji-sung_G20_Seoul_Summit_Ambassador_%28cropped%29.jpg/330px-Park_Ji-sung_G20_Seoul_Summit_Ambassador_%28cropped%29.jpg"
@@ -237,6 +258,7 @@
     "club": "Manchester City",
     "nation": "Ivory Coast",
     "tier": "HERO",
+    "rating": 92,
     "isLegend": true,
     "kitNumber": 42,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Yaya_Tour%C3%A9_%28cropped%29.jpg/330px-Yaya_Tour%C3%A9_%28cropped%29.jpg"
@@ -248,6 +270,7 @@
     "club": "Juventus",
     "nation": "Croatia",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 17,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Mario_Mand%C5%BEuki%C4%87_in_2018.jpg/330px-Mario_Mand%C5%BEuki%C4%87_in_2018.jpg"
@@ -259,6 +282,7 @@
     "club": "Liverpool",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Fernando_Torres_2017.jpg"
@@ -270,6 +294,7 @@
     "club": "Atlético Madrid",
     "nation": "Uruguay",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 7,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/U10_Diego_Forl%C3%A1n_7524.jpg/330px-U10_Diego_Forl%C3%A1n_7524.jpg"
@@ -281,6 +306,7 @@
     "club": "Bolton Wanderers",
     "nation": "Nigeria",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Match_legends_2017_CC_%285%29.jpg/330px-Match_legends_2017_CC_%285%29.jpg"
@@ -292,6 +318,7 @@
     "club": "Celtic",
     "nation": "Japan",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 25,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Shunsuke2_20080622.png/330px-Shunsuke2_20080622.png"
@@ -303,6 +330,7 @@
     "club": "Inter Milan",
     "nation": "Netherlands",
     "tier": "HERO",
+    "rating": 92,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Wesley_Sneijder_at_Sports_Festival_2025.jpg/330px-Wesley_Sneijder_at_Sports_Festival_2025.jpg"
@@ -314,6 +342,7 @@
     "club": "Manchester City",
     "nation": "Belgium",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 4,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Kompany_Bayern_Munich_%28cropped%29.jpg/330px-Vincent_Kompany_Bayern_Munich_%28cropped%29.jpg"
@@ -325,6 +354,7 @@
     "club": "AS Roma",
     "nation": "Japan",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 7,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Hidetoshi_Nakata_in_Okinawa.jpg/330px-Hidetoshi_Nakata_in_Okinawa.jpg"
@@ -336,6 +366,7 @@
     "club": "Liverpool",
     "nation": "England",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 23,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Football_against_poverty_2014_-_Jamie_Carragher_%28cropped%29.jpg/330px-Football_against_poverty_2014_-_Jamie_Carragher_%28cropped%29.jpg"
@@ -347,6 +378,7 @@
     "club": "Liverpool",
     "nation": "England",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Fowler%2C_Robbie.jpg"
@@ -358,6 +390,7 @@
     "club": "Tottenham Hotspur",
     "nation": "England",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Teddy_Sheringham_-_53492983124_%28original%29.jpg/330px-Teddy_Sheringham_-_53492983124_%28original%29.jpg"
@@ -369,6 +402,7 @@
     "club": "Chelsea",
     "nation": "France",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 13,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/William_Gallas_2018_%282%29.jpg/330px-William_Gallas_2018_%282%29.jpg"
@@ -380,6 +414,7 @@
     "club": "FC Porto",
     "nation": "Portugal",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Deco_com_o_Fluminense_em_2013_%28cropped%29.jpg/330px-Deco_com_o_Fluminense_em_2013_%28cropped%29.jpg"
@@ -391,6 +426,7 @@
     "club": "Arsenal",
     "nation": "Germany",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Jens_Lehmann_-_2019202184453_2019-07-21_Champions_for_Charity_-_3017_-_B70I3052_%28cropped%29.jpg/330px-Jens_Lehmann_-_2019202184453_2019-07-21_Champions_for_Charity_-_3017_-_B70I3052_%28cropped%29.jpg"
@@ -402,6 +438,7 @@
     "club": "Manchester United",
     "nation": "France",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Fabien_Barthez_at_OM.jpg/330px-Fabien_Barthez_at_OM.jpg"
@@ -413,6 +450,7 @@
     "club": "Chelsea",
     "nation": "France",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 39,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Nicolas_Anelka_4720.jpg"
@@ -424,6 +462,7 @@
     "club": "Liverpool",
     "nation": "France",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Djibril_Ciss%C3%A9_1.jpg/330px-Djibril_Ciss%C3%A9_1.jpg"
@@ -435,6 +474,7 @@
     "club": "Atlético Madrid",
     "nation": "Colombia",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Radamel_Falcao_Garc%C3%ADa_en_Millonarios.jpg/330px-Radamel_Falcao_Garc%C3%ADa_en_Millonarios.jpg"
@@ -446,6 +486,7 @@
     "club": "Juventus",
     "nation": "Italy",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 15,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Andrea_Barzagli_BGR-ITA_2012.jpg/330px-Andrea_Barzagli_BGR-ITA_2012.jpg"
@@ -457,6 +498,7 @@
     "club": "Juventus",
     "nation": "Bosnia and Herzegovina",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 5,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Miralem_Pjani%C4%87_2025.jpg/330px-Miralem_Pjani%C4%87_2025.jpg"
@@ -468,6 +510,7 @@
     "club": "AC Milan",
     "nation": "Ghana",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Prince_Boateng_%28cropped%29.jpg"
@@ -479,6 +522,7 @@
     "club": "Arsenal",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 19,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Santi_Cazorla%2C_2012-08-18_%28cropped%29.jpg/330px-Santi_Cazorla%2C_2012-08-18_%28cropped%29.jpg"
@@ -490,6 +534,7 @@
     "club": "Arsenal",
     "nation": "Chile",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 7,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Alexis_S%C3%A1nchez_2017.jpg/330px-Alexis_S%C3%A1nchez_2017.jpg"
@@ -501,6 +546,7 @@
     "club": "FC Barcelona",
     "nation": "Croatia",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 4,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Ivan_Rakiti%C4%87_2020_%28cropped%29.jpg"
@@ -512,6 +558,7 @@
     "club": "Manchester United",
     "nation": "Bulgaria",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dimitar_Berbatov_-_53689576017.jpg/330px-Dimitar_Berbatov_-_53689576017.jpg"
@@ -523,6 +570,7 @@
     "club": "Tottenham Hotspur",
     "nation": "England",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 18,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Jermain-Defoe_%28cropped%29.jpg/330px-Jermain-Defoe_%28cropped%29.jpg"
@@ -534,6 +582,7 @@
     "club": "FC Barcelona",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 17,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg/330px-Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg"
@@ -545,6 +594,7 @@
     "club": "Chelsea",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Juan_Mata_Melbourne_Victory_Signing_Press_Conference_%28cropped%29.png/330px-Juan_Mata_Melbourne_Victory_Signing_Press_Conference_%28cropped%29.png"
@@ -556,6 +606,7 @@
     "club": "Paris Saint-Germain",
     "nation": "France",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 14,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Matuidi_PSG.jpg/330px-Matuidi_PSG.jpg"
@@ -567,6 +618,7 @@
     "club": "Real Madrid",
     "nation": "Germany",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 6,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sami_Khedira_-_Juventus_%28cropped%29.jpg"
@@ -578,6 +630,7 @@
     "club": "Liverpool",
     "nation": "Netherlands",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 18,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Dirk_Kuyt_Fenerbah%C3%A7e_20260805_%281%29_%28cropped%29.JPG/330px-Dirk_Kuyt_Fenerbah%C3%A7e_20260805_%281%29_%28cropped%29.JPG"
@@ -589,6 +642,7 @@
     "club": "Everton",
     "nation": "Australia",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 17,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Tim_Cahill_%2853557484101%29.jpg/330px-Tim_Cahill_%2853557484101%29.jpg"
@@ -600,6 +654,7 @@
     "club": "LA Galaxy",
     "nation": "United States",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/NC_Courage_vs_SD_Wave_%28Oct_2024%29_045.jpg/330px-NC_Courage_vs_SD_Wave_%28Oct_2024%29_045.jpg"
@@ -611,6 +666,7 @@
     "club": "Fulham",
     "nation": "United States",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 23,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg/330px-Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg"
@@ -622,6 +678,7 @@
     "club": "Juventus",
     "nation": "Italy",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 8,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/FC_Zenit_Saint_Petersburg_vs._Juventus%2C_20_October_2021_32_-_Claudio_Marchisio_%28cropped%29.jpg/330px-FC_Zenit_Saint_Petersburg_vs._Juventus%2C_20_October_2021_32_-_Claudio_Marchisio_%28cropped%29.jpg"
@@ -633,6 +690,7 @@
     "club": "Udinese",
     "nation": "Italy",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Antonio_di_natale.JPG"
@@ -644,6 +702,7 @@
     "club": "Chelsea",
     "nation": "England",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Joe_Cole2023.jpeg/330px-Joe_Cole2023.jpeg"
@@ -655,6 +714,7 @@
     "club": "Stoke City",
     "nation": "England",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 25,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Chelsea_3_Stoke_0_%2813677350585%29_-_Peter_Crouch_%28cropped%29.jpg/330px-Chelsea_3_Stoke_0_%2813677350585%29_-_Peter_Crouch_%28cropped%29.jpg"
@@ -666,6 +726,7 @@
     "club": "Tottenham Hotspur",
     "nation": "England",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 26,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ledley_King.jpg"
@@ -677,6 +738,7 @@
     "club": "Manchester United",
     "nation": "Norway",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 20,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ole_Gunnar_Solskjaer_Trondheim2011-1_crop.jpg/330px-Ole_Gunnar_Solskjaer_Trondheim2011-1_crop.jpg"
@@ -688,6 +750,7 @@
     "club": "Manchester United",
     "nation": "Trinidad and Tobago",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 19,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dwight_Yorke_in_Chennai.jpg/330px-Dwight_Yorke_in_Chennai.jpg"
@@ -699,6 +762,7 @@
     "club": "Manchester United",
     "nation": "England",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Andy_Cole_in_2014.jpg/330px-Andy_Cole_in_2014.jpg"
@@ -710,6 +774,7 @@
     "club": "Arsenal",
     "nation": "England",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 8,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg/330px-Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg"
@@ -721,6 +786,7 @@
     "club": "Arsenal",
     "nation": "England",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 6,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tony_Adams_2017_portrait_%28cropped%29.jpg/330px-Tony_Adams_2017_portrait_%28cropped%29.jpg"
@@ -732,6 +798,7 @@
     "club": "Manchester City",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 5,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hertha_BSC_vs._West_Ham_United_20190731_%28127%29.jpg/330px-Hertha_BSC_vs._West_Ham_United_20190731_%28127%29.jpg"
@@ -743,6 +810,7 @@
     "club": "Real Madrid",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 14,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/JM_Guti.jpg/330px-JM_Guti.jpg"
@@ -754,6 +822,7 @@
     "club": "Real Madrid",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 2,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/M%C3%ADchel_Salgado_2018.jpg/330px-M%C3%ADchel_Salgado_2018.jpg"
@@ -765,6 +834,7 @@
     "club": "Inter Milan",
     "nation": "Colombia",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 2,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ivan_Cordoba_-_Inter_Mailand_%281%29.jpg/330px-Ivan_Cordoba_-_Inter_Mailand_%281%29.jpg"
@@ -776,6 +846,7 @@
     "club": "Inter Milan",
     "nation": "Italy",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 23,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Marco_Materazzi_2020.jpg/330px-Marco_Materazzi_2020.jpg"
@@ -787,6 +858,7 @@
     "club": "Inter Milan",
     "nation": "Serbia",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 5,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Dejan_Stankovi%C4%87_in_2025.jpg/330px-Dejan_Stankovi%C4%87_in_2025.jpg"
@@ -798,6 +870,7 @@
     "club": "Inter Milan",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 19,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Esteban_Cambiasso_FC_Internazionale.jpg/330px-Esteban_Cambiasso_FC_Internazionale.jpg"
@@ -809,6 +882,7 @@
     "club": "Inter Milan",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 25,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Walter_Samuel_FC_Internazionale.jpg/330px-Walter_Samuel_FC_Internazionale.jpg"
@@ -820,6 +894,7 @@
     "club": "Borussia Dortmund",
     "nation": "Poland",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 16,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Jakub_B%C5%82aszczykowski_2019.jpg"
@@ -831,6 +906,7 @@
     "club": "Borussia Dortmund",
     "nation": "Poland",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 26,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%C5%81ukasz_Piszczek_2020.jpg/330px-%C5%81ukasz_Piszczek_2020.jpg"
@@ -842,6 +918,7 @@
     "club": "Werder Bremen",
     "nation": "Peru",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 14,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Pizarro_training_FC_Bayern_%28cropped%29.jpg/330px-Pizarro_training_FC_Bayern_%28cropped%29.jpg"
@@ -853,6 +930,7 @@
     "club": "Bayern Munich",
     "nation": "Brazil",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Giovane_%C3%89lber_Champions_for_Charity_2022_%28cropped%29.jpg/330px-Giovane_%C3%89lber_Champions_for_Charity_2022_%28cropped%29.jpg"
@@ -864,6 +942,7 @@
     "club": "Bayern Munich",
     "nation": "Netherlands",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Roy_Makaay_001.jpg/330px-Roy_Makaay_001.jpg"
@@ -875,6 +954,7 @@
     "club": "Bayern Munich",
     "nation": "France",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 3,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bixente_Lizarazu_%28cropped%29.jpg/330px-Bixente_Lizarazu_%28cropped%29.jpg"
@@ -886,6 +966,7 @@
     "club": "Liverpool",
     "nation": "Finland",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 4,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Sami_Hyypia_2012_%28cropped%29.jpg"
@@ -897,6 +978,7 @@
     "club": "Liverpool",
     "nation": "Norway",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 6,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/John_Arne_Riise_-_53492829703.jpg/330px-John_Arne_Riise_-_53492829703.jpg"
@@ -908,6 +990,7 @@
     "club": "Borussia Dortmund",
     "nation": "Czech Republic",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jan_Koller_2019.jpg/330px-Jan_Koller_2019.jpg"
@@ -919,6 +1002,7 @@
     "club": "SS Lazio",
     "nation": "Czech Republic",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 8,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Karel_Poborsk%C3%BD_%282012%29.jpg/330px-Karel_Poborsk%C3%BD_%282012%29.jpg"
@@ -930,6 +1014,7 @@
     "club": "Galatasaray",
     "nation": "Turkey",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hakan.jpg/330px-Hakan.jpg"
@@ -941,6 +1026,7 @@
     "club": "Villarreal CF",
     "nation": "Turkey",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 15,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/AUT_vs._TUR_2016-03-29_%28186%29.jpg/330px-AUT_vs._TUR_2016-03-29_%28186%29.jpg"
@@ -952,6 +1038,7 @@
     "club": "Fenerbahçe",
     "nation": "Turkey",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Rustu_Recber_2010.jpg/330px-Rustu_Recber_2010.jpg"
@@ -963,6 +1050,7 @@
     "club": "Rennes",
     "nation": "Ghana",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 3,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Asamoah_Gyan_%282014%29.jpg/330px-Asamoah_Gyan_%282014%29.jpg"
@@ -974,6 +1062,7 @@
     "club": "Coventry City",
     "nation": "Morocco",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mustapha_Hadji.jpg/330px-Mustapha_Hadji.jpg"
@@ -985,6 +1074,7 @@
     "club": "Al-Hilal",
     "nation": "Saudi Arabia",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sami09.JPG/330px-Sami09.JPG"
@@ -996,6 +1086,7 @@
     "club": "Al-Shabab",
     "nation": "Saudi Arabia",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Saeed_Al-Owairan_at_the_2025_RSFF.jpg"
@@ -1007,6 +1098,7 @@
     "club": "Bayern Munich",
     "nation": "Iran",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Ali_Daei%2C_Saipa_vs._Al-Rayyan_pre-match_conference.jpg/330px-Ali_Daei%2C_Saipa_vs._Al-Rayyan_pre-match_conference.jpg"
@@ -1018,6 +1110,7 @@
     "club": "Hamburger SV",
     "nation": "Iran",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 2,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Mehdi_Mahdavikia_02_%28cropped%29.jpg"
@@ -1029,6 +1122,7 @@
     "club": "AC Milan",
     "nation": "Japan",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Keisuke_Honda_2018_%28cropped%29_%28cropped%29.jpg/330px-Keisuke_Honda_2018_%28cropped%29_%28cropped%29.jpg"
@@ -1040,6 +1134,7 @@
     "club": "Borussia Dortmund",
     "nation": "Japan",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 23,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Shinji_Kagawa_2018_%28cropped%29.jpg/330px-Shinji_Kagawa_2018_%28cropped%29.jpg"
@@ -1051,6 +1146,7 @@
     "club": "Perugia",
     "nation": "South Korea",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 19,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ahn_Jung-hwan_in_November_2021.png/330px-Ahn_Jung-hwan_in_November_2021.png"
@@ -1062,6 +1158,7 @@
     "club": "Everton",
     "nation": "United States",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 24,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Tim_Howard_2023.jpg/330px-Tim_Howard_2023.jpg"
@@ -1073,6 +1170,7 @@
     "club": "Inter Milan",
     "nation": "Chile",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 18,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Iv%C3%A1n_Zamorano.jpg/330px-Iv%C3%A1n_Zamorano.jpg"
@@ -1084,6 +1182,7 @@
     "club": "SS Lazio",
     "nation": "Chile",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 11,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Marcelo_Salas_2015.jpg"
@@ -1095,6 +1194,7 @@
     "club": "Inter Milan",
     "nation": "Uruguay",
     "tier": "HERO",
+    "rating": 89,
     "isLegend": true,
     "kitNumber": 20,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%C3%81lvaro_Chino_Recoba_120520-1175-jikatu_%28cropped%29.jpg/330px-%C3%81lvaro_Chino_Recoba_120520-1175-jikatu_%28cropped%29.jpg"
@@ -1106,6 +1206,7 @@
     "club": "FC Barcelona",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 7,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Javier_Saviola_-_S.L._Benfica_player.jpg/330px-Javier_Saviola_-_S.L._Benfica_player.jpg"
@@ -1117,6 +1218,7 @@
     "club": "Inter Milan",
     "nation": "Argentina",
     "tier": "HERO",
+    "rating": 91,
     "isLegend": true,
     "kitNumber": 22,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Diego_Milito_%2822677058983%29_%28cropped%29.jpg/330px-Diego_Milito_%2822677058983%29_%28cropped%29.jpg"
@@ -1128,6 +1230,7 @@
     "club": "Marseille",
     "nation": "Ghana",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Abedi_Pele_2007.jpg"
@@ -1139,6 +1242,7 @@
     "club": "Paris Saint-Germain",
     "nation": "France",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 14,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/David_Ginola_Deauville_2014_2.jpg/330px-David_Ginola_Deauville_2014_2.jpg"
@@ -1150,6 +1254,7 @@
     "club": "Juventus",
     "nation": "Italy",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Gianluca_Vialli.jpg/330px-Gianluca_Vialli.jpg"
@@ -1161,6 +1266,7 @@
     "club": "Real Madrid",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 90,
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Fernando_Morientes_-_53822470816.jpg/330px-Fernando_Morientes_-_53822470816.jpg"
@@ -1172,6 +1278,7 @@
     "club": "Villarreal CF",
     "nation": "Spain",
     "tier": "HERO",
+    "rating": 88,
     "isLegend": true,
     "kitNumber": 11,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Joan_Capdevila_2013_Catalonia.jpg/330px-Joan_Capdevila_2013_Catalonia.jpg"
@@ -1185,7 +1292,8 @@
     "isLegend": true,
     "kitNumber": 8,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/1_steve_mcmanaman_2017_%28cropped%29.jpg/330px-1_steve_mcmanaman_2017_%28cropped%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 89
   },
   {
     "apiId": "hero_109",
@@ -1196,7 +1304,8 @@
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2013_Robbie_Keane_%28cropped%29.jpg/330px-2013_Robbie_Keane_%28cropped%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_110",
@@ -1207,7 +1316,8 @@
     "isLegend": true,
     "kitNumber": 25,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/1_nwankwo_kanu_2017_%28edited%29.jpg/330px-1_nwankwo_kanu_2017_%28edited%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_111",
@@ -1218,7 +1328,8 @@
     "isLegend": true,
     "kitNumber": 8,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Ludovic_GIULY_-_AS_Monaco_%28cropped%29.jpg/330px-Ludovic_GIULY_-_AS_Monaco_%28cropped%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_112",
@@ -1229,7 +1340,8 @@
     "isLegend": true,
     "kitNumber": 14,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/KL_2018_%2816%29.jpg/330px-KL_2018_%2816%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_113",
@@ -1240,7 +1352,8 @@
     "isLegend": true,
     "kitNumber": 11,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Tomas_Brolin.jpg/330px-Tomas_Brolin.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_114",
@@ -1251,7 +1364,8 @@
     "isLegend": true,
     "kitNumber": 18,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/10._Tag_der_Legenden_2014_55.JPG/330px-10._Tag_der_Legenden_2014_55.JPG",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_115",
@@ -1262,7 +1376,8 @@
     "isLegend": true,
     "kitNumber": 11,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/W%C5%82odzimierz_Smolarek_by_S%C5%82awek.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_116",
@@ -1273,7 +1388,8 @@
     "isLegend": true,
     "kitNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Jorge_Campos_in_2016.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_117",
@@ -1284,7 +1400,8 @@
     "isLegend": true,
     "kitNumber": 7,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Chelsea_1_Man_City_1_%2816413207122%29.jpg/330px-Chelsea_1_Man_City_1_%2816413207122%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_118",
@@ -1295,7 +1412,8 @@
     "isLegend": true,
     "kitNumber": 1,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Jerzy_Dudek_%28cropped%29.jpg/330px-Jerzy_Dudek_%28cropped%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_119",
@@ -1306,7 +1424,8 @@
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Paulo_Wanchope_%28cropped%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_120",
@@ -1317,7 +1436,8 @@
     "isLegend": true,
     "kitNumber": 10,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Cuauht%C3%A9moc_Blanco_MORELOS_%28cropped%29.jpg/330px-Cuauht%C3%A9moc_Blanco_MORELOS_%28cropped%29.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 88
   },
   {
     "apiId": "hero_121",
@@ -1328,7 +1448,8 @@
     "isLegend": true,
     "kitNumber": 11,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Zbigniew_Boniek_2015.jpg/330px-Zbigniew_Boniek_2015.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 90
   },
   {
     "apiId": "hero_122",
@@ -1339,7 +1460,8 @@
     "isLegend": true,
     "kitNumber": 2,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ciro_Ferrara.jpg/330px-Ciro_Ferrara.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 89
   },
   {
     "apiId": "hero_123",
@@ -1350,7 +1472,8 @@
     "isLegend": true,
     "kitNumber": 2,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Giuseppe_Bergomi.jpg/330px-Giuseppe_Bergomi.jpg",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 90
   },
   {
     "apiId": "hero_124",
@@ -1361,6 +1484,19 @@
     "isLegend": true,
     "kitNumber": 9,
     "imageUrl": "https://media.api-sports.io/football/players/274.png",
-    "tier": "HERO"
+    "tier": "HERO",
+    "rating": 91
+  },
+  {
+    "apiId": "hero_125",
+    "name": "Gareth Bale",
+    "position": "RW/LW/ST",
+    "club": "Real Madrid",
+    "nation": "Wales",
+    "isLegend": true,
+    "kitNumber": 11,
+    "imageUrl": "https://media.api-sports.io/football/players/758.png",
+    "tier": "HERO",
+    "rating": 92
   }
 ]
