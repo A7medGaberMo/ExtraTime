@@ -10,9 +10,9 @@ import {
   X,
   Cards,
   Crown,
-  Sparkle,
-  SlidersHorizontal,
   Trophy,
+  Flame,
+  SlidersHorizontal,
   ArrowsClockwise,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
@@ -55,7 +55,7 @@ const PACK_CASES: PackDefinition[] = [
     subtitle: 'Ultimate & Master Active Titans',
     featuredTier: 'ULTIMATE',
     guaranteed: ['ULTIMATE', 'MASTER'],
-    eligibleTiers: ['ULTIMATE', 'MASTER', 'ELITE', 'GOLD'],
+    eligibleTiers: ['ULTIMATE', 'MASTER'], // Strictly Ultimate and Master only
   },
 ];
 
@@ -129,7 +129,7 @@ function pickCardsForPack(pack: PackDefinition, allPlayers: PlayerCardData[]): P
     }
   }
 
-  // 2. Remaining picks from eligible pool
+  // 2. Remaining picks strictly from eligible pool
   const eligiblePool = seededShuffle(
     allPlayers.filter((p) => pack.eligibleTiers.includes(p.tier) && !used.has(p.id)),
     seed + 137,
@@ -141,16 +141,28 @@ function pickCardsForPack(pack: PackDefinition, allPlayers: PlayerCardData[]): P
     used.add(player.id);
   }
 
-  // 3. Fallback if pool is exhausted
+  // 3. Fallback strictly within eligible pool if available
   if (selected.length < 5) {
-    const fallbackPool = seededShuffle(
-      allPlayers.filter((p) => !used.has(p.id)),
+    const eligibleFallback = seededShuffle(
+      allPlayers.filter((p) => pack.eligibleTiers.includes(p.tier)),
       seed + 251,
     );
-    for (const player of fallbackPool) {
+    for (const player of eligibleFallback) {
       if (selected.length >= 5) break;
-      selected.push(player);
-      used.add(player.id);
+      if (!selected.some((s) => s.id === player.id)) {
+        selected.push(player);
+      }
+    }
+  }
+
+  // 4. Ultimate safety fallback (only if pool has fewer than 5 unique players)
+  if (selected.length < 5) {
+    const ultimateFallback = seededShuffle(allPlayers, seed + 331);
+    for (const player of ultimateFallback) {
+      if (selected.length >= 5) break;
+      if (!selected.some((s) => s.id === player.id)) {
+        selected.push(player);
+      }
     }
   }
 
@@ -293,23 +305,23 @@ export default function PacksPage() {
           variant="lime"
           size="sm"
           icon={<AppIcon icon={Cards} size={14} weight="duotone" />}
-          label={lang === 'ar' ? 'سوق الباقات وخزينة الكروت' : 'Card Vault & Packs'}
+          label={lang === 'ar' ? 'حزم وبطاقات اللاعبين' : 'Card Vault & Packs'}
         />
       }
       backUrl="/"
       maxWidth="5xl"
     >
-      {/* ── 1. PACK CASES: SLEEK APPLE-GRADE SHOWCASE ───────────────────── */}
+      {/* ── 1. PACK CASES: SLEEK SHOWCASE ───────────────────────────────── */}
       <section className="space-y-3.5">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
             <AppIcon icon={Lightning} size={16} weight="fill" className="text-lime" />
             <h2 className="font-display text-sm font-black tracking-wider text-white uppercase sm:text-base">
-              {lang === 'ar' ? 'الباقات المتوفرة' : 'Available Packs'}
+              {t('packs.availablePacks')}
             </h2>
           </div>
           <span className="text-[11px] font-bold text-steel font-stats">
-            {PACK_CASES.length} {lang === 'ar' ? 'باقات' : 'Packs'}
+            {PACK_CASES.length} {t('packs.packCount', { count: PACK_CASES.length })}
           </span>
         </div>
 
@@ -317,6 +329,24 @@ export default function PacksPage() {
           {PACK_CASES.map((pack, idx) => {
             const isFirst = idx === 0;
             const isSecond = idx === 1;
+
+            const displayName =
+              lang === 'ar'
+                ? pack.id === 'pantheon-pack'
+                  ? 'بانثيون النجوم 5★'
+                  : pack.id === 'icon-pack'
+                    ? 'ملوك الأيقونات'
+                    : 'أبطال النخبة'
+                : pack.name;
+
+            const displaySubtitle =
+              lang === 'ar'
+                ? pack.id === 'pantheon-pack'
+                  ? 'أيقونات، أبطال، ألتميت، ماستر وإيليت'
+                  : pack.id === 'icon-pack'
+                    ? 'أساطير وأبطال كرة القدم التاريخيون'
+                    : 'حصرياً: نجوم ألتميت وماستر فقط'
+                : pack.subtitle;
 
             return (
               <div
@@ -326,26 +356,26 @@ export default function PacksPage() {
                     ? 'border-amber-400/30 bg-gradient-to-b from-amber-500/10 via-slate-950/90 to-slate-950/95 shadow-[0_16px_36px_rgba(0,0,0,0.7)] hover:border-amber-400/50'
                     : isSecond
                       ? 'border-cyan-400/25 bg-gradient-to-b from-cyan-500/10 via-slate-950/90 to-slate-950/95 shadow-[0_14px_32px_rgba(0,0,0,0.6)] hover:border-cyan-400/40'
-                      : 'border-white/10 bg-slate-900/60 hover:border-white/25 shadow-[0_12px_28px_rgba(0,0,0,0.5)]'
+                      : 'border-purple-400/25 bg-gradient-to-b from-purple-500/10 via-slate-950/90 to-slate-950/95 hover:border-purple-400/40 shadow-[0_12px_28px_rgba(0,0,0,0.5)]'
                 }`}
               >
                 <div className="space-y-1.5">
                   <div className="flex items-center justify-between">
                     <h3 className="font-display text-base font-black tracking-tight text-white uppercase">
-                      {pack.name}
+                      {displayName}
                     </h3>
                     <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white/5 border border-white/10">
                       <AppIcon
-                        icon={isFirst ? Crown : isSecond ? Trophy : Sparkle}
+                        icon={isFirst ? Crown : isSecond ? Trophy : Flame}
                         size={12}
                         weight="fill"
-                        className={isFirst ? 'text-amber-400' : isSecond ? 'text-cyan-300' : 'text-lime'}
+                        className={isFirst ? 'text-amber-400' : isSecond ? 'text-cyan-300' : 'text-purple-400'}
                       />
                     </div>
                   </div>
 
                   <p className="text-steel text-xs font-medium leading-snug">
-                    {pack.subtitle}
+                    {displaySubtitle}
                   </p>
                 </div>
 
@@ -367,13 +397,13 @@ export default function PacksPage() {
 
       {/* ── 2. CARD VAULT SPOTLIGHT (AUTO 5-BY-5 EVERY 5 MINS & RANDOM) ──── */}
       <section className="space-y-4 pt-4">
-        {/* Dynamic Island Status & Search Header */}
+        {/* Dynamic Status & Search Header */}
         <header className="flex flex-wrap items-center justify-between gap-3 px-1">
           <div className="flex items-center gap-2.5">
             <AppIcon icon={Trophy} size={18} weight="duotone" className="text-lime" />
             <div>
               <h3 className="font-display text-sm font-black tracking-tight text-white uppercase sm:text-base">
-                {lang === 'ar' ? 'خزينة البطاقات — عرض الـ 5 كروت' : 'Card Vault Spotlight'}
+                {t('packs.vaultSpotlight')}
               </h3>
               <div className="flex items-center gap-1.5 text-[11px] text-steel font-stats">
                 <span className="relative flex h-2 w-2">
@@ -382,7 +412,7 @@ export default function PacksPage() {
                 </span>
                 <span>
                   {lang === 'ar'
-                    ? `تحديث تلقائي كل 5 دقائق • متبقي ${formattedCountdown}`
+                    ? `تحديث تلقائي لـ 5 بطاقات كل 5 دقائق • متبقي ${formattedCountdown}`
                     : `Auto-cycles 5 cards every 5 mins • Refresh in ${formattedCountdown}`}
                 </span>
               </div>
@@ -416,12 +446,12 @@ export default function PacksPage() {
               onClick={handleManualShuffle}
               leftIcon={<AppIcon icon={Shuffle} size={14} weight="bold" className="text-lime" />}
             >
-              {lang === 'ar' ? 'سحب عشوائي' : 'Roll 5'}
+              {t('packs.rollRandom')}
             </Button>
           </div>
         </header>
 
-        {/* ── Apple-Grade Auto-Rotation Progress Bar ── */}
+        {/* ── Auto-Rotation Progress Bar ── */}
         <div className="relative w-full h-1.5 overflow-hidden rounded-full bg-white/[0.06] border border-white/[0.08]">
           <div
             className="h-full bg-gradient-to-r from-lime/80 via-lime to-emerald-400 transition-all duration-1000 ease-linear rounded-full shadow-[0_0_8px_rgba(149,232,16,0.5)]"
@@ -474,7 +504,7 @@ export default function PacksPage() {
               }}
               className="rounded-xl border border-white/10 bg-slate-950/80 px-2.5 py-1 text-xs font-bold text-white outline-none hover:border-white/25 cursor-pointer"
             >
-              <option value="RANDOM">🎲 Random 5 Spotlight</option>
+              <option value="RANDOM">🎲 {lang === 'ar' ? 'عرض عشوائي لـ 5 كروت' : 'Random 5 Spotlight'}</option>
               <option value="RATING_DESC">{t('packs.sortRatingHigh')}</option>
               <option value="RATING_ASC">{t('packs.sortRatingLow')}</option>
               <option value="NAME_ASC">{t('packs.sortName')}</option>
@@ -560,14 +590,12 @@ export default function PacksPage() {
         <div className="flex items-center justify-center gap-2 pt-1 text-center text-xs text-steel/80">
           <AppIcon icon={ArrowsClockwise} size={13} weight="bold" className="text-lime" />
           <span>
-            {lang === 'ar'
-              ? 'يتم تدوير 5 بطاقات عشوائية تلقائياً كل 5 دقائق بدون استهلاك لباقات الإنترنت أو ضغط على الخادم.'
-              : 'Spotlight rotates 5 random players every 5 minutes seamlessly with zero server bandwidth load.'}
+            {t('packs.autoCycleNotice')}
           </span>
         </div>
       </section>
 
-      {/* ── 3. CINEMATIC FIFA-STYLE WALKOUT PACK OPENING OVERLAY ───────── */}
+      {/* ── 3. CINEMATIC WALKOUT PACK OPENING OVERLAY ─────────────────── */}
       {openingPack && openedCards.length > 0 && (
         <FifaPackOpening
           pack={openingPack}
@@ -584,7 +612,7 @@ export default function PacksPage() {
         />
       )}
 
-      {/* ── 4. APPLE-GRADE CARD DETAIL INSPECTION MODAL ────────────────── */}
+      {/* ── 4. CARD DETAIL INSPECTION MODAL ────────────────────────────── */}
       {inspectedCard && (
         <CardDetailModal
           card={inspectedCard}

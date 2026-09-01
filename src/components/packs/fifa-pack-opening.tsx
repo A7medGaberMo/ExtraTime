@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   CaretRight,
@@ -66,6 +66,23 @@ export function FifaPackOpening({
   const [activeCardIndex, setActiveCardIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Safely cleanup timers on unmount or close
+  const handleSafeClose = useCallback(() => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+    onClose();
+  }, [onClose]);
+
+  // Global ESC key listener for instant close/back
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleSafeClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleSafeClose]);
 
   // Find the highest rated / top tier walkout card
   const topCard = React.useMemo(() => {
@@ -147,7 +164,6 @@ export function FifaPackOpening({
           sfx.cardDeal();
           return prev + 1;
         } else {
-          // Reached end of pack
           return prev;
         }
       });
@@ -183,6 +199,15 @@ export function FifaPackOpening({
     }
   };
 
+  const packDisplayName =
+    lang === 'ar'
+      ? pack.id === 'pantheon-pack'
+        ? 'بانثيون النجوم 5★'
+        : pack.id === 'icon-pack'
+          ? 'ملوك الأيقونات'
+          : 'أبطال النخبة'
+      : pack.name;
+
   return (
     <div
       className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-slate-950/98 select-none overflow-hidden backdrop-blur-3xl"
@@ -200,13 +225,27 @@ export function FifaPackOpening({
             exit={{ opacity: 0, y: -20 }}
             className="relative z-30 flex w-full max-w-5xl items-center justify-between p-3 sm:p-5"
           >
-            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1.5 backdrop-blur-xl shadow-lg">
-              <ETLogo variant="card-badge" size={16} />
-              <span className="font-stats text-xs font-bold tracking-wider text-white uppercase">
-                {pack.name}
-              </span>
+            {/* Left: Pack Badge & Close / Back Button */}
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={handleSafeClose}
+                className="flex items-center gap-1.5 rounded-full border border-white/20 bg-slate-900/90 px-3.5 py-1.5 text-xs font-bold text-white shadow-xl hover:border-lime/40 hover:bg-slate-800 transition-all cursor-pointer active:scale-95"
+                title={t('packs.closeAndBack')}
+              >
+                <AppIcon icon={X} size={14} weight="bold" />
+                <span className="hidden xs:inline sm:inline">{t('packs.closeAndBack')}</span>
+              </button>
+
+              <div className="hidden sm:flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1.5 backdrop-blur-xl shadow-lg">
+                <ETLogo variant="card-badge" size={16} />
+                <span className="font-stats text-xs font-bold tracking-wider text-white uppercase">
+                  {packDisplayName}
+                </span>
+              </div>
             </div>
 
+            {/* Right Action Tools */}
             <div className="flex items-center gap-2">
               {stage !== 'SLIDER' && stage !== 'OVERVIEW' && (
                 <button
@@ -214,7 +253,7 @@ export function FifaPackOpening({
                   onClick={handleSkipToSlider}
                   className="flex items-center gap-1 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-bold text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
                 >
-                  <span>{lang === 'ar' ? 'تخطي' : 'Skip'}</span>
+                  <span>{t('packs.skip')}</span>
                   <AppIcon icon={CaretRight} size={13} weight="bold" />
                 </button>
               )}
@@ -228,10 +267,10 @@ export function FifaPackOpening({
                     setStage('OVERVIEW');
                   }}
                   className="flex items-center gap-1.5 rounded-full border border-lime/40 bg-lime/15 px-3 py-1.5 text-xs font-bold text-lime shadow-[0_0_12px_rgba(149,232,16,0.3)] hover:bg-lime/25 transition-all cursor-pointer"
-                  title="Display All Cards"
+                  title="Display All 5 Cards"
                 >
                   <AppIcon icon={SquaresFour} size={14} weight="bold" />
-                  <span>{lang === 'ar' ? 'عرض الكل (5)' : 'Reveal All 5'}</span>
+                  <span>{t('packs.revealAll')}</span>
                 </button>
               )}
 
@@ -243,7 +282,7 @@ export function FifaPackOpening({
                   title="Slider View"
                 >
                   <AppIcon icon={Cards} size={14} weight="bold" />
-                  <span className="hidden sm:inline">{lang === 'ar' ? 'سلايدر' : 'Slider'}</span>
+                  <span className="hidden sm:inline">{t('packs.stepByStep')}</span>
                 </button>
               )}
 
@@ -254,15 +293,6 @@ export function FifaPackOpening({
                 title={lang === 'ar' ? 'وضع تسجيل الشاشة النظيف' : 'Record Mode (Clean Framing)'}
               >
                 <AppIcon icon={CornersOut} size={15} weight="bold" />
-              </button>
-
-              <button
-                type="button"
-                onClick={onClose}
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
-                title="Close"
-              >
-                <AppIcon icon={X} size={15} weight="bold" />
               </button>
             </div>
           </motion.header>
@@ -287,7 +317,7 @@ export function FifaPackOpening({
         style={{ backgroundColor: tierStyle.primary }}
       />
 
-      {/* ── CENTER STAGE CONTAINER (Optimized for Mobile Portrait & Recording) ── */}
+      {/* ── CENTER STAGE CONTAINER ── */}
       <main className="relative z-20 my-auto flex w-full max-w-lg flex-1 flex-col items-center justify-center p-3 sm:p-5 text-center">
         <AnimatePresence mode="wait">
           {/* ─────────────────────────────────────────────────────────── */}
@@ -322,7 +352,7 @@ export function FifaPackOpening({
                     <AppIcon icon={Cards} size={28} weight="duotone" className="text-white" />
                   </div>
                   <h3 className="font-display text-base font-black tracking-wider text-white uppercase">
-                    {pack.name}
+                    {packDisplayName}
                   </h3>
                   <span
                     className="rounded-full px-2.5 py-0.5 text-[8.5px] font-black tracking-widest uppercase border"
@@ -332,13 +362,13 @@ export function FifaPackOpening({
                       backgroundColor: `${tierStyle.shadow}80`,
                     }}
                   >
-                    5 PLAYERS
+                    5 {lang === 'ar' ? 'بطاقات' : 'PLAYERS'}
                   </span>
                 </div>
 
                 <div className="w-full border-t border-dashed border-white/30 pt-2 text-center">
                   <span className="font-stats text-[9.5px] font-black tracking-widest text-lime uppercase animate-bounce inline-block">
-                    {lang === 'ar' ? 'جاري فتح الباقة...' : 'OPENING PACK...'}
+                    {t('packs.openingPack')}
                   </span>
                 </div>
               </div>
@@ -358,7 +388,7 @@ export function FifaPackOpening({
               className="flex flex-col items-center gap-3.5"
             >
               <div className="text-[10.5px] font-black tracking-[0.3em] text-steel uppercase">
-                {lang === 'ar' ? 'الجنسية' : 'NATION'}
+                {t('packs.nation')}
               </div>
 
               <div
@@ -397,7 +427,7 @@ export function FifaPackOpening({
               <div className="flex items-center gap-2">
                 <CountryFlagBadge nationName={topCard.nation} className="h-4 w-6 rounded-sm" />
                 <span className="text-[10.5px] font-black tracking-[0.3em] text-steel uppercase">
-                  {topCard.nation} · {lang === 'ar' ? 'المركز' : 'POSITION'}
+                  {topCard.nation} · {t('packs.position')}
                 </span>
               </div>
 
@@ -441,7 +471,7 @@ export function FifaPackOpening({
               <div className="flex items-center gap-2">
                 <CountryFlagBadge nationName={topCard.nation} className="h-4 w-6 rounded-sm" />
                 <span className="text-[10.5px] font-black tracking-widest text-lime uppercase">
-                  {topCard.position.split('/')[0]} · {lang === 'ar' ? 'النادي' : 'CLUB'}
+                  {topCard.position.split('/')[0]} · {t('packs.club')}
                 </span>
               </div>
 
@@ -496,7 +526,7 @@ export function FifaPackOpening({
                   <AppIcon icon={Flame} size={15} weight="fill" />
                 )}
                 <span>
-                  {topCard.tier} {isWalkoutTier ? 'WALKOUT' : 'PULL'}
+                  {topCard.tier} {t('packs.walkout')}
                 </span>
               </motion.div>
 
@@ -521,7 +551,7 @@ export function FifaPackOpening({
                   className="flex items-center gap-2 rounded-2xl bg-lime px-6 py-2.5 text-xs font-black tracking-widest text-slate-950 uppercase shadow-[0_10px_25px_rgba(149,232,16,0.35)] hover:bg-lime/90 transition-all cursor-pointer active:scale-95"
                 >
                   <AppIcon icon={SquaresFour} size={15} weight="bold" />
-                  <span>{lang === 'ar' ? 'عرض الـ 5 بطاقات معاً' : 'Reveal All 5 Cards'}</span>
+                  <span>{t('packs.revealAll')}</span>
                 </motion.button>
 
                 <motion.button
@@ -532,7 +562,7 @@ export function FifaPackOpening({
                   onClick={handleWalkoutProceed}
                   className="flex items-center gap-1.5 rounded-2xl border border-white/15 bg-white/5 px-4 py-2.5 text-xs font-bold text-steel hover:text-white hover:border-white/30 transition-all cursor-pointer active:scale-95"
                 >
-                  <span>{lang === 'ar' ? 'استعراض 1 بواحدة' : 'Step 1-by-1'}</span>
+                  <span>{t('packs.stepByStep')}</span>
                   <AppIcon icon={CaretRight} size={13} weight="bold" />
                 </motion.button>
               </div>
@@ -540,7 +570,7 @@ export function FifaPackOpening({
           )}
 
           {/* ─────────────────────────────────────────────────────────── */}
-          {/* 6. STAGE: CARD-BY-CARD AUTO SLIDER (REVEALS 1 BY 1 FULL SIZE) */}
+          {/* 6. STAGE: CARD-BY-CARD STEPPER (REVEALS EACH CARD WITH CLUES) */}
           {/* ─────────────────────────────────────────────────────────── */}
           {stage === 'SLIDER' && currentSliderCard && (
             <motion.div
@@ -549,50 +579,80 @@ export function FifaPackOpening({
               animate={{ opacity: 1, scale: 1, x: 0 }}
               exit={{ opacity: 0, scale: 0.85, x: -30 }}
               transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-              className="flex w-full flex-col items-center gap-3"
+              className="flex w-full flex-col items-center gap-2.5"
             >
-              {/* Top Slider Progress Stepper Pills */}
-              <div className="flex items-center gap-1.5 pb-1">
+              {/* 5-Card Teaser Strip Bar (Interactive Clues Preview) */}
+              <div className="flex items-center justify-center gap-1.5 pb-0.5">
                 {cards.map((c, i) => {
                   const isCurrent = i === activeCardIndex;
-                  const isPast = i < activeCardIndex;
                   const cStyle = getTierStyle(c.tier);
 
                   return (
                     <button
-                      key={`pill-${c.id}-${i}`}
+                      key={`strip-${c.id}-${i}`}
                       type="button"
                       onClick={() => {
                         sfx.cardFlip();
                         setActiveCardIndex(i);
                       }}
-                      className={`h-2 rounded-full transition-all cursor-pointer ${
+                      className={`flex items-center gap-1 rounded-xl px-2 py-1 border transition-all cursor-pointer ${
                         isCurrent
-                          ? 'w-7 shadow-md'
-                          : isPast
-                            ? 'w-2.5 bg-white/40'
-                            : 'w-2 bg-white/15'
+                          ? 'border-lime bg-lime/15 shadow-md ring-1 ring-lime/40'
+                          : 'border-white/10 bg-slate-900/60 opacity-60 hover:opacity-100 hover:border-white/20'
                       }`}
-                      style={
-                        isCurrent
-                          ? {
-                              backgroundColor: cStyle.highlight,
-                              boxShadow: `0 0 8px ${cStyle.glow}`,
-                            }
-                          : undefined
-                      }
-                      title={`Card ${i + 1} (${c.name})`}
-                    />
+                      title={`${c.name} (${c.tier})`}
+                    >
+                      <CountryFlagBadge nationName={c.nation} className="h-3 w-4 rounded-xs border-0" />
+                      <span
+                        className="text-[9px] font-black font-card-num"
+                        style={{ color: cStyle.highlight }}
+                      >
+                        {c.position.split('/')[0]}
+                      </span>
+                      <ClubCrestBadge clubName={c.club} className="h-3.5 w-3.5 rounded-full border-0 bg-transparent" />
+                    </button>
                   );
                 })}
               </div>
 
-              {/* Card Number Pill */}
-              <span className="text-[10px] font-black tracking-widest text-steel uppercase">
-                {lang === 'ar'
-                  ? `بطاقة ${activeCardIndex + 1} من ${cards.length}`
-                  : `Card ${activeCardIndex + 1} of ${cards.length}`}
-              </span>
+              {/* Dynamic 3-Badge Clues Bar for the Current Card */}
+              <motion.div
+                initial={{ opacity: 0, y: -6 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="flex items-center gap-2 rounded-2xl border border-white/10 bg-slate-900/80 px-3.5 py-1 backdrop-blur-xl shadow-lg"
+              >
+                {/* 1. Nation */}
+                <div className="flex items-center gap-1">
+                  <CountryFlagBadge nationName={currentSliderCard.nation} className="h-3.5 w-5 rounded-xs" />
+                  <span className="text-[10px] font-bold text-white max-w-[70px] truncate">
+                    {currentSliderCard.nation}
+                  </span>
+                </div>
+
+                <span className="text-white/20 text-xs">•</span>
+
+                {/* 2. Position */}
+                <div
+                  className="rounded-md px-1.5 py-0.5 text-[10px] font-black font-card-num border"
+                  style={{
+                    borderColor: tierStyle.accent,
+                    backgroundColor: `${tierStyle.shadow}70`,
+                    color: tierStyle.highlight,
+                  }}
+                >
+                  {currentSliderCard.position}
+                </div>
+
+                <span className="text-white/20 text-xs">•</span>
+
+                {/* 3. Club */}
+                <div className="flex items-center gap-1">
+                  <ClubCrestBadge clubName={currentSliderCard.club} className="h-4 w-4 rounded-full border-0 bg-transparent" />
+                  <span className="text-[10px] font-bold text-white max-w-[80px] truncate">
+                    {currentSliderCard.club}
+                  </span>
+                </div>
+              </motion.div>
 
               {/* Full Size Center Stage Card */}
               <div
@@ -603,7 +663,7 @@ export function FifaPackOpening({
               </div>
 
               {/* Slider Controls Bar */}
-              <div className="flex items-center justify-center gap-2 pt-1">
+              <div className="flex items-center justify-center gap-2 pt-0.5">
                 {/* Prev Button */}
                 <button
                   type="button"
@@ -641,7 +701,7 @@ export function FifaPackOpening({
                     onClick={handleNextCard}
                     className="flex h-9 items-center gap-1 rounded-xl bg-lime px-4 text-xs font-black tracking-wider text-slate-950 uppercase shadow-md hover:bg-lime/90 transition-all cursor-pointer"
                   >
-                    <span>{lang === 'ar' ? 'التالي' : 'Next'}</span>
+                    <span>{t('packs.next')}</span>
                     <AppIcon icon={CaretRight} size={14} weight="bold" />
                   </button>
                 ) : (
@@ -650,7 +710,7 @@ export function FifaPackOpening({
                     onClick={() => setStage('OVERVIEW')}
                     className="flex h-9 items-center gap-1 rounded-xl bg-lime px-4 text-xs font-black tracking-wider text-slate-950 uppercase shadow-md hover:bg-lime/90 transition-all cursor-pointer"
                   >
-                    <span>{lang === 'ar' ? 'عرض الكل' : 'View All'}</span>
+                    <span>{t('packs.revealAll')}</span>
                     <AppIcon icon={SquaresFour} size={14} weight="bold" />
                   </button>
                 )}
@@ -671,7 +731,7 @@ export function FifaPackOpening({
             >
               <div className="flex items-center gap-2">
                 <span className="text-lime text-[11px] font-black tracking-widest uppercase">
-                  {pack.name} All 5 Cards
+                  {packDisplayName} · {t('packs.cardsCount', { count: 5 })}
                 </span>
               </div>
 
@@ -717,10 +777,10 @@ export function FifaPackOpening({
 
                 <button
                   type="button"
-                  onClick={onClose}
+                  onClick={handleSafeClose}
                   className="flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-5 py-2.5 text-xs font-bold text-white hover:border-white/30 transition-all cursor-pointer active:scale-95"
                 >
-                  <span>{lang === 'ar' ? 'العودة للخزينة' : 'Back to Vault'}</span>
+                  <span>{t('packs.backToVault')}</span>
                 </button>
               </div>
             </motion.div>
