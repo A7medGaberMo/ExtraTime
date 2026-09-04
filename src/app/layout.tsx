@@ -6,6 +6,7 @@ import { ToastProvider } from '@/components/shared/toast';
 import { I18nProvider } from '@/lib/i18n';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { MobileNav } from '@/components/layout/mobile-nav';
 import { MainWrapper } from '@/components/layout/main-wrapper';
 
 const inter = Inter({
@@ -169,6 +170,7 @@ export default function RootLayout({
                 {children}
               </MainWrapper>
               <Footer />
+              <MobileNav />
             </ToastProvider>
           </I18nProvider>
         </ConvexClientProvider>

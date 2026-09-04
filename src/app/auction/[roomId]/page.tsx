@@ -29,7 +29,6 @@ import {
   LockKey,
   Shield,
   CurrencyDollar,
-  Info,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';

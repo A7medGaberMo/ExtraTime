@@ -15,6 +15,7 @@ import {
   User,
   SignIn,
   Cards,
+  Ranking,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { ETLogo } from '@/components/shared/et-logo';
@@ -118,6 +119,7 @@ export function Header() {
 
   const navLinks = [
     { href: '/', label: t('nav.arena'), icon: House },
+    { href: '/rank', label: t('nav.rank'), icon: Ranking },
     { href: '/packs', label: t('nav.packs'), icon: Cards },
     { href: '/create-room', label: t('nav.create'), icon: PlusCircle },
   ];
@@ -360,8 +362,8 @@ export function Header() {
                 </Link>
               )}
 
-              {/* Quick Navigation 3-Box Grid */}
-              <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
+              {/* Quick Navigation 4-Box Grid */}
+              <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
                 {navLinks.map((item) => {
                   const IconComp = item.icon;
                   return (

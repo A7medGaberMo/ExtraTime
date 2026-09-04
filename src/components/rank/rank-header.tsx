@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Trophy, Clock, Sword, CheckCircle } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { useI18n } from '@/lib/i18n';
+import { sfx } from '@/lib/sfx';
 
 interface ParticipantInfo {
   guestId: string;
@@ -37,6 +38,7 @@ export function RankHeader({
 }: RankHeaderProps) {
   const { t } = useI18n();
   const [secondsRemaining, setSecondsRemaining] = useState<number>(45);
+  const prevTickSec = useRef<number | null>(null);
 
   useEffect(() => {
     if (!deadline) return;
@@ -44,6 +46,13 @@ export function RankHeader({
     const interval = setInterval(() => {
       const remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
       setSecondsRemaining(remaining);
+
+      // Sound and haptic tick on low time
+      if (remaining <= 5 && remaining > 0 && remaining !== prevTickSec.current) {
+        prevTickSec.current = remaining;
+        sfx.tick(true);
+        sfx.haptic('light');
+      }
 
       if (remaining === 0) {
         clearInterval(interval);

@@ -267,6 +267,85 @@ export function walkoutStinger(): void {
   });
 }
 
+/** ⏱️ High-tension timer tick (urgent = higher pitch) */
+export function timerTick(urgent = false): void {
+  const c = getCtx();
+  if (!c) return;
+  const freq = urgent ? 1200 : 750;
+  tone(freq, 0, 0.035, 'sine', urgent ? 0.22 : 0.12, c, { endFreq: freq * 0.7, attack: 0.002 });
+}
+
+/** 🔘 Tactile micro button click */
+export function tapClick(): void {
+  const c = getCtx();
+  if (!c) return;
+  tone(1400, 0, 0.025, 'triangle', 0.08, c, { endFreq: 900, attack: 0.001 });
+}
+
+/** 🔒 Metallic vault / lock-in sound */
+export function lockSound(): void {
+  const c = getCtx();
+  if (!c) return;
+  tone(520, 0, 0.14, 'square', 0.18, c, { endFreq: 160, attack: 0.003 });
+  tone(260, 0.02, 0.16, 'sine', 0.25, c, { endFreq: 90, attack: 0.005 });
+  noiseBurst(0, 0.06, 0.15, c, 1600);
+}
+
+/** 🔄 Card swap or slide swoosh */
+export function swapSound(): void {
+  const c = getCtx();
+  if (!c) return;
+  tone(320, 0, 0.07, 'sine', 0.12, c, { endFreq: 580, attack: 0.005 });
+  noiseBurst(0, 0.05, 0.08, c, 2200);
+}
+
+/** 🎯 Round bonus / high score chime */
+export function roundBonusChime(): void {
+  const c = getCtx();
+  if (!c) return;
+  const notes = [523.25, 659.25, 783.99, 1046.5]; // C5 E5 G5 C6
+  notes.forEach((freq, idx) => {
+    tone(freq, idx * 0.06, 0.35, 'triangle', 0.16, c, { attack: 0.004 });
+  });
+}
+
+/** 📳 Mobile Hardware Haptic Feedback (vibration) */
+export function triggerHaptic(
+  type: 'light' | 'medium' | 'heavy' | 'success' | 'warning' | 'error' | number = 'light',
+): void {
+  if (typeof window === 'undefined' || typeof navigator === 'undefined' || !('vibrate' in navigator)) {
+    return;
+  }
+  try {
+    if (typeof type === 'number') {
+      navigator.vibrate(type);
+      return;
+    }
+    switch (type) {
+      case 'light':
+        navigator.vibrate(10);
+        break;
+      case 'medium':
+        navigator.vibrate(22);
+        break;
+      case 'heavy':
+        navigator.vibrate(36);
+        break;
+      case 'success':
+        navigator.vibrate([15, 30, 20]);
+        break;
+      case 'warning':
+        navigator.vibrate([25, 35, 25]);
+        break;
+      case 'error':
+        navigator.vibrate([35, 45, 35, 45]);
+        break;
+    }
+  } catch {
+    // ignore if blocked by browser policy
+  }
+}
+
 export const sfx = {
   unlock: unlockAudio,
   kickoff: kickoffWhistle,
@@ -282,7 +361,14 @@ export const sfx = {
   cardFlip: cardFlip,
   tierReveal: tierReveal,
   walkout: walkoutStinger,
+  tick: timerTick,
+  tap: tapClick,
+  lock: lockSound,
+  swap: swapSound,
+  roundBonus: roundBonusChime,
+  haptic: triggerHaptic,
   isMuted: isAudioMuted,
   setMuted: setAudioMuted,
   toggleMute: toggleAudioMuted,
 };
+

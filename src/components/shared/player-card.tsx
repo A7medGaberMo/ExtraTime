@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { cn } from '@/lib/utils';
 import type { PlayerCardData, Tier } from '@/types/player';
 import { getTierStyle } from '@/lib/tier-styles';

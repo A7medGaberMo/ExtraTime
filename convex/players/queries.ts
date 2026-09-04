@@ -145,9 +145,9 @@ export const getByPosition = query({
       matchedMap.set(String(p._id), p);
     }
 
-    // 2. Fetch records and match multi-position slash strings (e.g., "ST/LW")
-    const allCandidates = await ctx.db.query('players').collect();
-    for (const player of allCandidates) {
+    // 2. Fetch candidates with bound to match multi-position slash strings (e.g., "ST/LW")
+    const candidates = await ctx.db.query('players').take(300);
+    for (const player of candidates) {
       if (matchedMap.size >= limit) break;
       if (matchedMap.has(String(player._id))) continue;
 

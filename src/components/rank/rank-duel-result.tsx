@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   ArrowCounterClockwise,
   ShareNetwork,
@@ -13,6 +13,8 @@ import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/shared/toast';
 import { useI18n } from '@/lib/i18n';
+import { sfx } from '@/lib/sfx';
+import { Confetti } from '@/components/shared/confetti';
 
 interface ParticipantSummary {
   guestId: string;
@@ -54,12 +56,26 @@ export function RankDuelResult({
   const { lang } = useI18n();
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
+  const playedSfxRef = useRef(false);
 
   const isWinner = isDuel && winnerId === user.guestId;
   const isDraw = isDuel && !winnerId && opponent && user.totalScore === opponent.totalScore;
   const isDefeat = isDuel && winnerId && winnerId !== user.guestId;
-
   const maxPossibleScore = roundCount * 10;
+  const isSoloHigh = !isDuel && user.totalScore >= maxPossibleScore * 0.7;
+  const shouldCelebrate = isWinner || isSoloHigh;
+
+  useEffect(() => {
+    if (playedSfxRef.current) return;
+    playedSfxRef.current = true;
+    if (shouldCelebrate) {
+      sfx.victory();
+      sfx.haptic('success');
+    } else if (isDefeat) {
+      sfx.runnerUp();
+      sfx.haptic('warning');
+    }
+  }, [shouldCelebrate, isDefeat]);
 
   function handleShare() {
     const text =
@@ -89,7 +105,8 @@ export function RankDuelResult({
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto space-y-4 select-none animate-fade-in py-2">
+    <div className="w-full max-w-lg mx-auto space-y-4 select-none animate-fade-in py-2 relative">
+      <Confetti active={shouldCelebrate} />
       {/* Top Status Header */}
       <div className="text-center space-y-1.5">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-lime/30 text-lime text-xs font-black uppercase tracking-wider">

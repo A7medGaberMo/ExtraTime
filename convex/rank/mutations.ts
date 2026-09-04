@@ -1,6 +1,6 @@
 import { mutation } from "../_generated/server";
 import { v } from "convex/values";
-import { Id, DataModel } from "../_generated/dataModel";
+import { Id, DataModel, Doc } from "../_generated/dataModel";
 import { GenericMutationCtx } from "convex/server";
 import { scoreRoundSubmission } from "./scoring";
 import { allRankSeedQuestions } from "./seedData";
@@ -47,6 +47,70 @@ function shuffleArray<T>(array: T[]): T[] {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
+}
+
+/**
+ * Deterministic pseudo-random shuffle to replicate canonical round card order.
+ */
+function seededShuffle<T>(array: T[], seedStr: string): T[] {
+  let hash = 0;
+  for (let i = 0; i < seedStr.length; i++) {
+    hash = (hash << 5) - hash + seedStr.charCodeAt(i);
+    hash |= 0;
+  }
+
+  const pseudoRandom = () => {
+    hash = (hash * 9301 + 49297) % 233280;
+    return Math.abs(hash) / 233280;
+  };
+
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(pseudoRandom() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function resolveRoundToReveal(
+  rawQuestion: Doc<"rankQuestions">,
+  participants: Doc<"rankGames">["participants"],
+  roundIndex: number,
+  existingHistory: Doc<"rankGames">["roundHistory"]
+) {
+  const sortedCanonical = [...rawQuestion.answers].sort((a, b) =>
+    rawQuestion.direction === "desc" ? b.value - a.value : a.value - b.value
+  );
+  const resolvedOrder = sortedCanonical.map((a) => a.answerKey);
+
+  const roundSubmissionResults = participants.map((p) => {
+    const pScore = scoreRoundSubmission(
+      p.submittedOrder || resolvedOrder,
+      rawQuestion.answers,
+      rawQuestion.direction,
+      p.secondsRemainingOnSubmit ?? 0
+    );
+
+    return {
+      guestId: p.guestId,
+      submittedOrder: p.submittedOrder || [],
+      roundScore: pScore.roundScore,
+      secondsRemaining: p.secondsRemainingOnSubmit ?? 0,
+      cardDeltas: pScore.cardDeltas,
+    };
+  });
+
+  const newHistoryEntry = {
+    roundIndex,
+    questionId: rawQuestion._id,
+    resolvedOrder,
+    results: roundSubmissionResults,
+  };
+
+  return {
+    resolvedOrder,
+    updatedHistory: [...existingHistory, newHistoryEntry],
+  };
 }
 
 /**
@@ -593,52 +657,54 @@ export const submitRound = mutation({
     const newParticipants = [...game.participants];
     newParticipants[pIndex] = updatedParticipant;
 
-    // Check if ALL participants in this game have submitted
-    const allSubmitted = newParticipants.every((p) => p.hasSubmittedCurrentRound);
+    const isDeadlinePassed = deadline > 0 && now >= deadline - 1000;
+    let finalParticipants = newParticipants;
 
-    if (allSubmitted) {
-      // Build canonical correct order
-      const sortedCanonical = [...rawQuestion.answers].sort((a, b) =>
-        rawQuestion.direction === "desc" ? b.value - a.value : a.value - b.value
-      );
-      const resolvedOrder = sortedCanonical.map((a) => a.answerKey);
+    // If deadline passed, auto-complete any remaining unsubmitted participant so the round resolves
+    if (isDeadlinePassed && !newParticipants.every((p) => p.hasSubmittedCurrentRound)) {
+      const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion.slug}`;
+      const initialScrambled = seededShuffle(rawQuestion.answers, roundSeed).map((a) => a.answerKey);
 
-      // Build round history results for all players
-      const roundSubmissionResults = newParticipants.map((p) => {
-        const pScore = scoreRoundSubmission(
-          p.submittedOrder || resolvedOrder,
+      finalParticipants = newParticipants.map((p) => {
+        if (p.hasSubmittedCurrentRound) return p;
+        const unrankedScore = scoreRoundSubmission(
+          initialScrambled,
           rawQuestion.answers,
           rawQuestion.direction,
-          p.secondsRemainingOnSubmit ?? 0
+          0
         );
-
         return {
-          guestId: p.guestId,
-          submittedOrder: p.submittedOrder || [],
-          roundScore: pScore.roundScore,
-          secondsRemaining: p.secondsRemainingOnSubmit ?? 0,
-          cardDeltas: pScore.cardDeltas,
+          ...p,
+          hasSubmittedCurrentRound: true,
+          submittedOrder: initialScrambled,
+          submittedAt: now,
+          secondsRemainingOnSubmit: 0,
+          roundScores: [...p.roundScores, unrankedScore.roundScore],
+          totalScore: p.totalScore + unrankedScore.roundScore,
         };
       });
+    }
 
-      const newHistoryEntry = {
-        roundIndex: game.currentRoundIndex,
-        questionId: rawQuestion._id,
-        resolvedOrder,
-        results: roundSubmissionResults,
-      };
+    // Check if ALL participants in this game have submitted
+    const allSubmitted = finalParticipants.every((p) => p.hasSubmittedCurrentRound);
 
-      const updatedHistory = [...game.roundHistory, newHistoryEntry];
+    if (allSubmitted) {
+      const { updatedHistory } = resolveRoundToReveal(
+        rawQuestion,
+        finalParticipants,
+        game.currentRoundIndex,
+        game.roundHistory
+      );
 
       await ctx.db.patch(game._id, {
         status: "round_reveal",
-        participants: newParticipants,
+        participants: finalParticipants,
         roundHistory: updatedHistory,
       });
     } else {
       // Still waiting for other player in duel
       await ctx.db.patch(game._id, {
-        participants: newParticipants,
+        participants: finalParticipants,
       });
     }
 
@@ -647,6 +713,124 @@ export const submitRound = mutation({
       roundScore: scoreResult.roundScore,
       allSubmitted,
     };
+  },
+});
+
+/**
+ * Authoritatively resolves an expired active round if the 45s round deadline
+ * has elapsed. Any participant who hasn't submitted receives the default unranked
+ * card order with 0 seconds remaining so the match never hangs or gets stuck.
+ */
+export const resolveExpiredRound = mutation({
+  args: {
+    gameId: v.id("rankGames"),
+    guestId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const game = await ctx.db.get(args.gameId);
+    if (!game) throw new Error("Game not found");
+    if (game.status !== "round_active") {
+      return { status: game.status, alreadyResolved: true };
+    }
+    const isParticipant = game.participants.some((p) => p.guestId === args.guestId);
+    if (!isParticipant) throw new Error("Player not in this game");
+
+    const now = Date.now();
+    const deadline = game.roundDeadline ?? 0;
+    const expired = deadline > 0 && now >= deadline - 1500;
+    const allSubmitted = game.participants.every((p) => p.hasSubmittedCurrentRound);
+
+    if (!expired && !allSubmitted) {
+      return { resolved: false, reason: "waiting_for_timer_or_bids" };
+    }
+
+    const currentQId = game.questionIds[game.currentRoundIndex];
+    const rawQuestion = await ctx.db.get(currentQId);
+    if (!rawQuestion) throw new Error("Question not found");
+
+    const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion.slug}`;
+    const initialScrambled = seededShuffle(rawQuestion.answers, roundSeed).map((a) => a.answerKey);
+
+    // Auto-complete any unsubmitted participant
+    const finalParticipants = game.participants.map((p) => {
+      if (p.hasSubmittedCurrentRound) return p;
+      const unrankedScore = scoreRoundSubmission(
+        initialScrambled,
+        rawQuestion.answers,
+        rawQuestion.direction,
+        0
+      );
+      return {
+        ...p,
+        hasSubmittedCurrentRound: true,
+        submittedOrder: initialScrambled,
+        submittedAt: now,
+        secondsRemainingOnSubmit: 0,
+        roundScores: [...p.roundScores, unrankedScore.roundScore],
+        totalScore: p.totalScore + unrankedScore.roundScore,
+      };
+    });
+
+    const { updatedHistory } = resolveRoundToReveal(
+      rawQuestion,
+      finalParticipants,
+      game.currentRoundIndex,
+      game.roundHistory
+    );
+
+    await ctx.db.patch(game._id, {
+      status: "round_reveal",
+      participants: finalParticipants,
+      roundHistory: updatedHistory,
+    });
+
+    return { resolved: true, status: "round_reveal" };
+  },
+});
+
+/**
+ * Gracefully abandons or forfeits a rank game.
+ * If in waiting lobby -> room status becomes 'abandoned'.
+ * If in active or reveal -> crowns opponent as winner and completes match.
+ */
+export const abandonGame = mutation({
+  args: {
+    gameId: v.id("rankGames"),
+    guestId: v.id("guestUsers"),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const game = await ctx.db.get(args.gameId);
+    if (!game) throw new Error("Game not found");
+    const isParticipant = game.participants.some((p) => p.guestId === args.guestId);
+    if (!isParticipant) throw new Error("Player not in this game");
+
+    if (game.status === "completed" || game.status === "abandoned") {
+      return { status: game.status };
+    }
+
+    if (game.status === "waiting") {
+      await ctx.db.patch(game._id, {
+        status: "abandoned",
+        completedAt: Date.now(),
+      });
+      return { status: "abandoned" };
+    }
+
+    // Active or Reveal in duel -> opponent wins by forfeit
+    const opponent = game.participants.find((p) => p.guestId !== args.guestId);
+    const winnerId = opponent ? opponent.guestId : undefined;
+
+    await ctx.db.patch(game._id, {
+      status: "completed",
+      winnerId,
+      completedAt: Date.now(),
+    });
+
+    return { status: "completed", winnerId };
   },
 });
 

@@ -55,24 +55,27 @@ async function hydrateMains(
   ctx: GenericMutationCtx<DataModel>,
   squad: Array<{ playerId: Id<'players'> }>,
 ): Promise<SimPlayer[]> {
-  const result: SimPlayer[] = [];
-  for (const slot of squad) {
-    const player = await ctx.db.get(slot.playerId);
-    if (!player) continue;
-    const [club, nation] = await Promise.all([
-      ctx.db.get(player.clubId),
-      ctx.db.get(player.nationId),
-    ]);
-    result.push({
-      id: player._id,
-      name: player.name,
-      tier: player.tier,
-      position: player.position,
-      club: club?.name ?? '',
-      nation: nation?.name ?? '',
-    });
-  }
-  return result;
+  if (!squad.length) return [];
+  const playerDocs = await Promise.all(squad.map((slot) => ctx.db.get(slot.playerId)));
+  const validPlayers = playerDocs.filter((p): p is NonNullable<typeof p> => p !== null);
+
+  const hydrated = await Promise.all(
+    validPlayers.map(async (player) => {
+      const [club, nation] = await Promise.all([
+        ctx.db.get(player.clubId),
+        ctx.db.get(player.nationId),
+      ]);
+      return {
+        id: player._id,
+        name: player.name,
+        tier: player.tier,
+        position: player.position,
+        club: club?.name ?? '',
+        nation: nation?.name ?? '',
+      };
+    }),
+  );
+  return hydrated;
 }
 
 // ── Mutations ────────────────────────────────────────────────────

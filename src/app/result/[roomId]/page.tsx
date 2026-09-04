@@ -9,7 +9,8 @@ import { ScoreHub } from '@/components/match/score-hub';
 import type { PitchSquadPlayer } from '@/components/match/tactical-pitch-view';
 import type { MatchSimulationResult } from '@/core/simulation/simulation.interface';
 import { useGuestSession } from '@/hooks/use-guest-session';
-import { unlockAudio } from '@/lib/sfx';
+import { unlockAudio, sfx } from '@/lib/sfx';
+import { Confetti } from '@/components/shared/confetti';
 import {
   CircleNotch,
   ArrowCounterClockwise,
@@ -160,6 +161,19 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   const formation = state?.auction?.formation ?? '4-3-3';
   const matchSize = ((state?.auction?.matchSize ?? 11) as 5 | 11) || 11;
 
+  const celebratedRef = useRef(false);
+
+  useEffect(() => {
+    if (simulation && viewerWon === true && !celebratedRef.current) {
+      celebratedRef.current = true;
+      sfx.victory();
+      sfx.haptic('success');
+    } else if (simulation && viewerWon === false && !celebratedRef.current) {
+      celebratedRef.current = true;
+      sfx.runnerUp();
+    }
+  }, [simulation, viewerWon]);
+
   if (!guestId || state === undefined || match === undefined) {
     return (
       <div className="flex min-h-[60vh] items-center justify-center">
@@ -201,6 +215,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
       backUrl="/"
       maxWidth="2xl"
     >
+      <Confetti active={viewerWon === true} />
       {/* Sound Toggle Floating Button */}
       <button
         type="button"

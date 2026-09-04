@@ -1,11 +1,13 @@
 'use client';
 
-import React from 'react';
-import { ArrowRight, Trophy, Check } from '@phosphor-icons/react';
+import React, { useEffect, useRef } from 'react';
+import { ArrowRight, Trophy, Check, Sparkle } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { RankEntityAvatar, RankMedia } from './rank-entity-avatar';
 import { parseEntityName } from '@/lib/rank-formatters';
 import { useI18n } from '@/lib/i18n';
+import { sfx } from '@/lib/sfx';
+import { Confetti } from '@/components/shared/confetti';
 
 export interface RevealAnswerItem {
   answerKey: string;
@@ -85,9 +87,31 @@ export function RankRevealView({
   const { lang, t } = useI18n();
   const deltaMap = new Map(userDeltas.map((d) => [d.answerKey, d]));
   const sortedAnswers = [...answers].sort((a, b) => a.correctRank - b.correctRank);
+  const playedSoundRef = useRef(false);
+
+  useEffect(() => {
+    if (playedSoundRef.current) return;
+    playedSoundRef.current = true;
+    if (userRoundScore >= 8) {
+      sfx.roundBonus();
+      sfx.haptic('success');
+    } else {
+      sfx.cardDeal();
+      sfx.haptic('light');
+    }
+  }, [userRoundScore]);
+
+  const handleAdvanceClick = () => {
+    sfx.tap();
+    sfx.haptic('light');
+    onAdvance();
+  };
 
   return (
-    <div className="w-full max-w-md mx-auto select-none flex flex-col gap-2.5 sm:gap-3.5 py-1 animate-fade-in">
+    <div className="w-full max-w-md mx-auto select-none flex flex-col gap-2.5 sm:gap-3.5 py-1 animate-fade-in relative">
+      {/* 10/10 Perfect Round Celebration Confetti */}
+      {userRoundScore === 10 && <Confetti active={true} duration={3200} />}
+
       {/* ── HEADER SCORE SUMMARY STRIP & FULL QUESTION TITLE ───────────── */}
       <div className="text-center shrink-0 space-y-1.5 px-2">
         <div className="flex items-center justify-between px-3.5 py-2 rounded-2xl bg-slate-900/90 border border-white/12 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
@@ -95,8 +119,11 @@ export function RankRevealView({
             <span className="text-xs text-steel font-semibold uppercase tracking-wider">
               {t('rank.yourScore')}:
             </span>
-            <span className="text-sm font-bold text-lime">
+            <span className="text-sm font-bold text-lime flex items-center gap-1">
               {userRoundScore > 0 ? `+${userRoundScore}` : userRoundScore} pts
+              {userRoundScore === 10 && (
+                <AppIcon icon={Sparkle} size={14} weight="fill" className="text-amber-400 animate-pulse" />
+              )}
             </span>
           </div>
 
@@ -205,7 +232,7 @@ export function RankRevealView({
       <div className="shrink-0 pt-0.5 pb-1">
         <button
           type="button"
-          onClick={onAdvance}
+          onClick={handleAdvanceClick}
           disabled={isAdvancing}
           className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-lime shadow-[0_8px_20px_rgba(142,224,0,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
         >

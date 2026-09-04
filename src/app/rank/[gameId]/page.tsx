@@ -59,9 +59,11 @@ export default function RankArenaPage() {
   const submitRoundMutation = useMutation(api.rank.mutations.submitRound);
   const advanceRoundMutation = useMutation(api.rank.mutations.advanceRound);
   const createSoloMutation = useMutation(api.rank.mutations.createSoloGame);
+  const resolveExpiredMutation = useMutation(api.rank.mutations.resolveExpiredRound);
+  const abandonGameMutation = useMutation(api.rank.mutations.abandonGame);
 
   const [customOrder, setCustomOrder] = useState<string[] | null>(null);
-  const [syncedRound, setSyncedRound] = useState<number | null>(null);
+  const [prevRound, setPrevRound] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isAdvancing, setIsAdvancing] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -77,9 +79,9 @@ export default function RankArenaPage() {
     return [];
   }, [gameState?.question?.answers]);
 
-  // Synchronize when round changes
-  if (gameState && gameState.currentRoundIndex !== syncedRound) {
-    setSyncedRound(gameState.currentRoundIndex);
+  // Synchronize when round changes without cascading renders (official React pattern)
+  if (gameState && gameState.currentRoundIndex !== prevRound) {
+    setPrevRound(gameState.currentRoundIndex);
     setCustomOrder(null);
     setIntroSecondsLeft(3);
   }
@@ -96,6 +98,34 @@ export default function RankArenaPage() {
 
     return () => clearTimeout(timer);
   }, [introSecondsLeft]);
+
+  // Authoritative fallback: auto-resolve expired round when deadline has passed
+  useEffect(() => {
+    if (
+      !gameState ||
+      gameState.status !== 'round_active' ||
+      !gameState.roundDeadline ||
+      !guestId
+    ) {
+      return;
+    }
+
+    const checkExpired = () => {
+      const isExpired = Date.now() >= (gameState.roundDeadline ?? 0) + 1200;
+      if (isExpired && !isSubmitting) {
+        resolveExpiredMutation({
+          gameId,
+          guestId,
+          sessionToken: sessionToken ?? undefined,
+        }).catch(() => {
+          // ignore error if already resolving
+        });
+      }
+    };
+
+    const interval = setInterval(checkExpired, 1000);
+    return () => clearInterval(interval);
+  }, [gameState, gameId, guestId, sessionToken, isSubmitting, resolveExpiredMutation]);
 
   if (!guestId || gameState === undefined) {
     return (
@@ -186,6 +216,20 @@ export default function RankArenaPage() {
     }
   }
 
+  async function handleAbandon() {
+    if (!guestId) return;
+    try {
+      await abandonGameMutation({
+        gameId,
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      router.push('/rank');
+    } catch {
+      router.push('/rank');
+    }
+  }
+
   // ── 1. WAITING LOBBY (Duel Mode) ──────────────────────────────────
   if (gameState.status === 'waiting') {
     return (
@@ -231,7 +275,7 @@ export default function RankArenaPage() {
 
         <button
           type="button"
-          onClick={() => router.push('/rank')}
+          onClick={handleAbandon}
           className="text-xs text-steel hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer font-black uppercase tracking-wider"
         >
           <AppIcon icon={ArrowLeft} size={14} weight="bold" />
