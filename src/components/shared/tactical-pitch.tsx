@@ -1,10 +1,12 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Shield, Stack, Question } from '@phosphor-icons/react';
+import React, { useMemo } from 'react';
+import { motion } from 'framer-motion';
+import { Plus, Check } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { PlayerImage } from './player-image';
+import { formatDisplayName } from './player-card';
+import { cn } from '@/lib/utils';
 import { getTierStyle } from '@/lib/tier-styles';
 
 /* ── Types ─────────────────────────────────────────────────── */
@@ -12,6 +14,7 @@ export interface TacticalSquadSlot {
   position: string;
   roundNumber?: number;
   player?: {
+    id?: string;
     name: string;
     tier?: string;
     imageUrl?: string;
@@ -19,6 +22,8 @@ export interface TacticalSquadSlot {
     nation?: string;
     isLegend?: boolean;
     kitNumber?: number;
+    rating?: number;
+    position?: string;
   } | null;
   cost?: number;
   isSub?: boolean;
@@ -29,9 +34,9 @@ export interface TacticalRound {
   position: string;
 }
 
-interface TacticalPitchProps {
+export interface TacticalPitchProps {
   formation: string;
-  matchSize: 5 | 11;
+  matchSize?: 5 | 11;
   squad: TacticalSquadSlot[];
   rounds?: TacticalRound[];
   currentRound?: number;
@@ -40,541 +45,481 @@ interface TacticalPitchProps {
   accentColor?: string;
   badgeLabel?: string;
   compact?: boolean;
+  fillContainer?: boolean;
+  scale?: number;
+  activePosition?: string;
+  onSelectSlot?: (position: string, slotIndex: number) => void;
+  className?: string;
 }
 
-/* ── Tier Priority (stronger players are placed first) ────── */
-const TIER_PRIORITY: Record<string, number> = {
-  ICON: 8,
-  HERO: 7,
-  ULTIMATE: 6,
-  MASTER: 5,
-  ELITE: 4,
-  GOLD: 3,
-  SILVER: 2,
-  BRONZE: 1,
-};
-
-/* ── Coordinates ───────────────────────────────────────────── */
 type Coord = { pos: string; x: number; y: number };
 
-const C11: Record<string, Coord[]> = {
+/* ── Broadcast Coordinates (Attackers Top 15%, GK Bottom 84%) ─ */
+const FORMATION_11_COORDS: Record<string, Coord[]> = {
   '4-3-3': [
-    { pos: 'GK', x: 50, y: 12 },
-    { pos: 'LB', x: 16, y: 28 },
-    { pos: 'CB', x: 38, y: 26 },
-    { pos: 'CB', x: 62, y: 26 },
-    { pos: 'RB', x: 84, y: 28 },
-    { pos: 'CDM', x: 50, y: 44 },
-    { pos: 'CM', x: 32, y: 58 },
-    { pos: 'CAM', x: 68, y: 58 },
-    { pos: 'LW', x: 18, y: 82 },
-    { pos: 'ST', x: 50, y: 86 },
-    { pos: 'RW', x: 82, y: 82 },
+    { pos: 'ST', x: 50, y: 13 },
+    { pos: 'LW', x: 18, y: 20 },
+    { pos: 'RW', x: 82, y: 20 },
+    { pos: 'CAM', x: 50, y: 35 },
+    { pos: 'CM', x: 28, y: 50 },
+    { pos: 'CM', x: 72, y: 50 },
+    { pos: 'LB', x: 16, y: 68 },
+    { pos: 'CB', x: 37, y: 70 },
+    { pos: 'CB', x: 63, y: 70 },
+    { pos: 'RB', x: 84, y: 68 },
+    { pos: 'GK', x: 50, y: 87 },
   ],
   '4-2-3-1': [
-    { pos: 'GK', x: 50, y: 12 },
-    { pos: 'LB', x: 16, y: 28 },
-    { pos: 'CB', x: 38, y: 26 },
-    { pos: 'CB', x: 62, y: 26 },
-    { pos: 'RB', x: 84, y: 28 },
-    { pos: 'CDM', x: 36, y: 44 },
-    { pos: 'CDM', x: 64, y: 44 },
-    { pos: 'CAM', x: 50, y: 64 },
-    { pos: 'LW', x: 20, y: 70 },
-    { pos: 'RW', x: 80, y: 70 },
-    { pos: 'ST', x: 50, y: 88 },
-  ],
-  '3-5-2': [
-    { pos: 'GK', x: 50, y: 12 },
-    { pos: 'CB', x: 24, y: 26 },
-    { pos: 'CB', x: 50, y: 24 },
-    { pos: 'CB', x: 76, y: 26 },
-    { pos: 'LM', x: 14, y: 54 },
-    { pos: 'RM', x: 86, y: 54 },
-    { pos: 'CDM', x: 50, y: 42 },
-    { pos: 'CM', x: 38, y: 50 },
-    { pos: 'CM', x: 62, y: 50 },
-    { pos: 'ST', x: 36, y: 84 },
-    { pos: 'CF', x: 64, y: 84 },
+    { pos: 'ST', x: 50, y: 13 },
+    { pos: 'CAM', x: 50, y: 33 },
+    { pos: 'LM', x: 18, y: 35 },
+    { pos: 'RM', x: 82, y: 35 },
+    { pos: 'CDM', x: 33, y: 51 },
+    { pos: 'CDM', x: 67, y: 51 },
+    { pos: 'LB', x: 16, y: 68 },
+    { pos: 'CB', x: 37, y: 70 },
+    { pos: 'CB', x: 63, y: 70 },
+    { pos: 'RB', x: 84, y: 68 },
+    { pos: 'GK', x: 50, y: 87 },
   ],
   '4-4-2': [
-    { pos: 'GK', x: 50, y: 12 },
-    { pos: 'LB', x: 16, y: 28 },
-    { pos: 'CB', x: 38, y: 26 },
-    { pos: 'CB', x: 62, y: 26 },
-    { pos: 'RB', x: 84, y: 28 },
-    { pos: 'LW', x: 18, y: 56 },
-    { pos: 'CM', x: 38, y: 54 },
-    { pos: 'CM', x: 62, y: 54 },
-    { pos: 'RW', x: 82, y: 56 },
-    { pos: 'ST', x: 36, y: 86 },
-    { pos: 'ST', x: 64, y: 86 },
+    { pos: 'ST', x: 35, y: 13 },
+    { pos: 'CF', x: 65, y: 13 },
+    { pos: 'LM', x: 17, y: 38 },
+    { pos: 'RM', x: 83, y: 38 },
+    { pos: 'CM', x: 37, y: 49 },
+    { pos: 'CM', x: 63, y: 49 },
+    { pos: 'LB', x: 16, y: 68 },
+    { pos: 'CB', x: 37, y: 70 },
+    { pos: 'CB', x: 63, y: 70 },
+    { pos: 'RB', x: 84, y: 68 },
+    { pos: 'GK', x: 50, y: 87 },
+  ],
+  '3-5-2': [
+    { pos: 'ST', x: 35, y: 13 },
+    { pos: 'ST', x: 65, y: 13 },
+    { pos: 'CAM', x: 50, y: 32 },
+    { pos: 'LM', x: 16, y: 45 },
+    { pos: 'RM', x: 84, y: 45 },
+    { pos: 'CDM', x: 36, y: 53 },
+    { pos: 'CM', x: 64, y: 53 },
+    { pos: 'CB', x: 24, y: 70 },
+    { pos: 'CB', x: 50, y: 70 },
+    { pos: 'CB', x: 76, y: 70 },
+    { pos: 'GK', x: 50, y: 87 },
+  ],
+  '4-1-2-1-2': [
+    { pos: 'ST', x: 35, y: 13 },
+    { pos: 'CF', x: 65, y: 13 },
+    { pos: 'CAM', x: 50, y: 31 },
+    { pos: 'CM', x: 24, y: 46 },
+    { pos: 'CM', x: 76, y: 46 },
+    { pos: 'CDM', x: 50, y: 59 },
+    { pos: 'LB', x: 16, y: 68 },
+    { pos: 'CB', x: 37, y: 71 },
+    { pos: 'CB', x: 63, y: 71 },
+    { pos: 'RB', x: 84, y: 68 },
+    { pos: 'GK', x: 50, y: 87 },
   ],
 };
 
-const C5: Record<string, Coord[]> = {
+const FORMATION_5_COORDS: Record<string, Coord[]> = {
   '1-2-1': [
-    { pos: 'GK', x: 50, y: 14 },
-    { pos: 'CB', x: 50, y: 36 },
-    { pos: 'CM', x: 28, y: 58 },
-    { pos: 'CAM', x: 72, y: 58 },
-    { pos: 'ST', x: 50, y: 84 },
+    { pos: 'ATT', x: 50, y: 18 },
+    { pos: 'MID', x: 28, y: 45 },
+    { pos: 'MID', x: 72, y: 45 },
+    { pos: 'DEF', x: 50, y: 66 },
+    { pos: 'GK', x: 50, y: 84 },
   ],
   '2-1-1': [
-    { pos: 'GK', x: 50, y: 14 },
-    { pos: 'CB', x: 32, y: 36 },
-    { pos: 'CB', x: 68, y: 36 },
-    { pos: 'CM', x: 50, y: 58 },
-    { pos: 'ST', x: 50, y: 84 },
+    { pos: 'ATT', x: 50, y: 18 },
+    { pos: 'MID', x: 50, y: 45 },
+    { pos: 'DEF', x: 32, y: 66 },
+    { pos: 'DEF', x: 68, y: 66 },
+    { pos: 'GK', x: 50, y: 84 },
   ],
   '1-1-2': [
-    { pos: 'GK', x: 50, y: 14 },
-    { pos: 'CB', x: 50, y: 36 },
-    { pos: 'CM', x: 50, y: 56 },
-    { pos: 'ST', x: 34, y: 82 },
-    { pos: 'CF', x: 66, y: 82 },
+    { pos: 'ATT', x: 32, y: 18 },
+    { pos: 'ATT', x: 68, y: 18 },
+    { pos: 'MID', x: 50, y: 45 },
+    { pos: 'DEF', x: 50, y: 66 },
+    { pos: 'GK', x: 50, y: 84 },
   ],
 };
 
-/* ── Close Match Groups for Position Alignment ───────────── */
-const CLOSE_GROUPS: Record<string, string[]> = {
-  GK: ['GK'],
-  CB: ['CB'],
-  LB: ['LB', 'LWB'],
-  RB: ['RB', 'RWB'],
-  LWB: ['LWB', 'LB'],
-  RWB: ['RWB', 'RB'],
-  CDM: ['CDM', 'CM'],
-  CM: ['CM', 'CDM', 'CAM'],
-  CAM: ['CAM', 'CM'],
-  LM: ['LM', 'LW'],
-  RM: ['RM', 'RW'],
-  LW: ['LW', 'LM'],
-  RW: ['RW', 'RM'],
-  ST: ['ST', 'CF'],
-  CF: ['CF', 'ST'],
+// Tactical connection lines between slot indices for standard formations
+const TACTICAL_LINKS: Record<string, Array<[number, number]>> = {
+  '4-3-3': [
+    [0, 1], [0, 2], [0, 3],
+    [1, 4], [2, 5], [3, 4], [3, 5],
+    [4, 6], [4, 7], [5, 8], [5, 9],
+    [6, 7], [7, 8], [8, 9],
+    [7, 10], [8, 10],
+  ],
+  '4-2-3-1': [
+    [0, 1], [1, 2], [1, 3],
+    [2, 4], [3, 5], [4, 5],
+    [4, 6], [4, 7], [5, 8], [5, 9],
+    [6, 7], [7, 8], [8, 9],
+    [7, 10], [8, 10],
+  ],
+  '4-4-2': [
+    [0, 1], [0, 2], [1, 3],
+    [0, 4], [1, 5], [4, 5],
+    [2, 4], [3, 5], [2, 6], [3, 9],
+    [4, 7], [5, 8], [6, 7], [7, 8], [8, 9],
+    [7, 10], [8, 10],
+  ],
+  '3-5-2': [
+    [0, 1], [0, 2], [1, 2],
+    [2, 3], [2, 4], [2, 5], [2, 6],
+    [3, 5], [4, 6], [5, 6],
+    [5, 7], [5, 8], [6, 8], [6, 9],
+    [7, 8], [8, 9], [7, 10], [8, 10], [9, 10],
+  ],
+  '4-1-2-1-2': [
+    [0, 1], [0, 2], [1, 2],
+    [2, 3], [2, 4], [3, 5], [4, 5],
+    [3, 6], [4, 9], [5, 7], [5, 8],
+    [6, 7], [7, 8], [8, 9], [7, 10], [8, 10],
+  ],
+  '1-2-1': [
+    [0, 1], [0, 2], [1, 3], [2, 3], [3, 4],
+  ],
+  '2-1-1': [
+    [0, 1], [1, 2], [1, 3], [2, 4], [3, 4],
+  ],
+  '1-1-2': [
+    [0, 1], [0, 2], [1, 2], [2, 3], [3, 4],
+  ],
 };
 
-/* ── Position Compatibility Rules ── */
-const POSITION_VARIANTS: Partial<Record<string, string[]>> = {
-  LB: ['LWB'],
-  LWB: ['LB'],
-  RB: ['RWB'],
-  RWB: ['RB'],
-  ST: ['CF'],
-  CF: ['ST'],
-  LW: ['LM'],
-  LM: ['LW'],
-  RW: ['RM'],
-  RM: ['RW'],
-  CM: ['CDM', 'CAM'],
-  CDM: ['CM', 'CAM'],
-  CAM: ['CM', 'CDM'],
-};
-
-export function normalizePosition(pos: string): string {
-  return pos.trim().toUpperCase().split('/')[0];
-}
-
-export function isPosCompatible(playerPos: string, slotPos: string): boolean {
-  const normP = normalizePosition(playerPos);
-  const normS = normalizePosition(slotPos);
-
-  if (normP === normS) return true;
-  const allowed = POSITION_VARIANTS[normS];
-  return Boolean(allowed?.includes(normP));
-}
-
-function findBestCoordinateIndex(
-  targetPos: string,
-  coords: Coord[],
-  usedCoords: Set<number>,
-): number {
-  const normTarget = normalizePosition(targetPos);
-
-  let found = coords.findIndex(
-    (c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === normTarget,
-  );
-  if (found !== -1) return found;
-
-  const allowed = POSITION_VARIANTS[normTarget] || [];
-  for (const fallback of allowed) {
-    found = coords.findIndex(
-      (c, idx) => !usedCoords.has(idx) && normalizePosition(c.pos) === fallback,
-    );
-    if (found !== -1) return found;
-  }
-
-  return -1;
-}
-
-/* ── Component ────────────────────────────────────────────── */
 export function TacticalPitch({
   formation,
-  matchSize,
+  matchSize = 11,
   squad,
   rounds,
   currentRound,
-  totalRounds = 11,
-  title = 'Squad Lineup',
+  totalRounds,
+  title,
+  accentColor = '#95E810',
   badgeLabel,
   compact = false,
+  fillContainer = false,
+  scale,
+  activePosition,
+  onSelectSlot,
+  className,
 }: TacticalPitchProps) {
-  const [is3DView, setIs3DView] = useState(!compact);
+  // Select coordinates based on matchSize & formation
+  const coords = useMemo(() => {
+    if (matchSize === 5) {
+      return FORMATION_5_COORDS[formation] || FORMATION_5_COORDS['1-2-1'];
+    }
+    return FORMATION_11_COORDS[formation] || FORMATION_11_COORDS['4-3-3'];
+  }, [formation, matchSize]);
 
-  const coordsMap = matchSize === 5 ? C5 : C11;
-  const coords = coordsMap[formation] || coordsMap[matchSize === 5 ? '1-2-1' : '4-3-3'];
-  const is5 = matchSize === 5;
+  // Links for connecting dashed lines
+  const links = useMemo(() => {
+    return TACTICAL_LINKS[formation] || [];
+  }, [formation]);
 
-  const isDraftMode = Boolean(rounds && currentRound !== undefined);
+  // Match squad players to formation slots with comprehensive fallback
+  const mappedSlots = useMemo(() => {
+    const assignedPlayers = new Set<string>();
+    const usedSquadIndices = new Set<number>();
 
-  // ── Mapping Logic ────────────────────────────────────────
-  const { onField, substitutes } = useMemo(() => {
-    const placedIndices = new Map<number, TacticalSquadSlot>();
-    const assignedSquadSlotIdxs = new Set<number>();
+    const DEF_POS = new Set(['CB', 'LB', 'RB', 'LWB', 'RWB', 'DEF']);
+    const MID_POS = new Set(['CDM', 'CM', 'CAM', 'LM', 'RM', 'MID']);
+    const ATT_POS = new Set(['ST', 'CF', 'LW', 'RW', 'LF', 'RF', 'ATT']);
 
-    const sortedSquad = [...squad].map((slot, originalIdx) => ({
-      slot,
-      originalIdx,
-      weight: TIER_PRIORITY[slot.player?.tier ?? ''] ?? 1,
-    }));
-    sortedSquad.sort((a, b) => {
-      if (a.slot.isSub && !b.slot.isSub) return 1;
-      if (!a.slot.isSub && b.slot.isSub) return -1;
-      return b.weight - a.weight;
-    });
-
-    const takeForCoord = (slotPos: string): TacticalSquadSlot | null => {
-      const normSlot = normalizePosition(slotPos);
-      const pools = [normSlot];
-      const variants = POSITION_VARIANTS[normSlot] || [];
-      const close = CLOSE_GROUPS[normSlot] || [];
-      const lookup = (pos: string) =>
-        sortedSquad.findIndex(
-          (item) =>
-            !assignedSquadSlotIdxs.has(item.originalIdx) &&
-            normalizePosition(item.slot.position) === pos,
-        );
-
-      for (const pos of [...pools, ...variants, ...close]) {
-        const found = lookup(pos);
-        if (found !== -1) {
-          const item = sortedSquad[found];
-          assignedSquadSlotIdxs.add(item.originalIdx);
-          return item.slot;
-        }
-      }
-      const fallback = sortedSquad.find((item) => !assignedSquadSlotIdxs.has(item.originalIdx));
-      if (fallback) {
-        assignedSquadSlotIdxs.add(fallback.originalIdx);
-        return fallback.slot;
-      }
-      return null;
+    const getSector = (pos?: string): 'GK' | 'DEF' | 'MID' | 'ATT' | 'OTHER' => {
+      if (!pos) return 'OTHER';
+      const clean = pos.toUpperCase();
+      if (clean === 'GK') return 'GK';
+      if (DEF_POS.has(clean)) return 'DEF';
+      if (MID_POS.has(clean)) return 'MID';
+      if (ATT_POS.has(clean)) return 'ATT';
+      return 'OTHER';
     };
 
-    if (isDraftMode && rounds) {
-      const roundToCoord = new Map<number, number>();
-      const usedCoordsForRounds = new Set<number>();
-
-      for (const round of rounds) {
-        const coordIdx = findBestCoordinateIndex(round.position, coords, usedCoordsForRounds);
-        if (coordIdx !== -1) {
-          roundToCoord.set(round.roundNumber, coordIdx);
-          usedCoordsForRounds.add(coordIdx);
-        }
+    // First pass: exact position matches
+    const result: Array<{
+      slotIndex: number;
+      expectedPos: string;
+      slot: TacticalSquadSlot;
+    }> = coords.map((c, idx) => {
+      // 1. Direct index match if position matches
+      const directMatch = squad[idx];
+      if (
+        directMatch?.player &&
+        (directMatch.position === c.pos || directMatch.player.position === c.pos) &&
+        !assignedPlayers.has(directMatch.player.name)
+      ) {
+        assignedPlayers.add(directMatch.player.name);
+        usedSquadIndices.add(idx);
+        return {
+          slotIndex: idx,
+          expectedPos: c.pos,
+          slot: directMatch,
+        };
       }
 
-      squad.forEach((slot, sIdx) => {
-        if (!slot.roundNumber) return;
-        const coordIdx = roundToCoord.get(slot.roundNumber);
-        if (coordIdx !== undefined && coordIdx !== -1) {
-          placedIndices.set(coordIdx, slot);
-          assignedSquadSlotIdxs.add(sIdx);
-        }
-      });
-
-      coords.forEach((coord, ci) => {
-        if (placedIndices.has(ci)) return;
-        const hasRound = Array.from(roundToCoord.values()).includes(ci);
-        if (hasRound) return;
-        const slot = takeForCoord(coord.pos);
-        if (slot) placedIndices.set(ci, slot);
-      });
-
-      const onFieldData = coords.map((coord, ci) => {
-        const slot = placedIndices.get(ci);
-        const matchedRound = rounds.find((r) => roundToCoord.get(r.roundNumber) === ci);
-
+      // 2. Find any squad player with exact position
+      const exactIndex = squad.findIndex(
+        (s, sIdx) =>
+          !usedSquadIndices.has(sIdx) &&
+          s.player &&
+          (s.position === c.pos || s.player.position === c.pos),
+      );
+      if (exactIndex !== -1) {
+        const found = squad[exactIndex];
+        assignedPlayers.add(found.player!.name);
+        usedSquadIndices.add(exactIndex);
         return {
-          coord,
-          slot: slot || null,
-          isCurrentSlot: matchedRound?.roundNumber === currentRound,
-          isFutureSlot: matchedRound ? matchedRound.roundNumber > (currentRound || 0) : false,
+          slotIndex: idx,
+          expectedPos: c.pos,
+          slot: found,
         };
-      });
+      }
 
-      const substitutesData = squad.filter((_, sIdx) => !assignedSquadSlotIdxs.has(sIdx));
-
-      return { onField: onFieldData, substitutes: substitutesData };
-    }
-
-    coords.forEach((coord, ci) => {
-      const slot = takeForCoord(coord.pos);
-      if (slot) placedIndices.set(ci, slot);
-    });
-
-    const onFieldData = coords.map((coord, ci) => {
-      const slot = placedIndices.get(ci);
       return {
-        coord,
-        slot: slot || null,
-        isCurrentSlot: false,
-        isFutureSlot: false,
+        slotIndex: idx,
+        expectedPos: c.pos,
+        slot: { position: c.pos },
       };
     });
 
-    const substitutesData = squad.filter((_, sIdx) => !assignedSquadSlotIdxs.has(sIdx));
+    // Second pass: sector/group matches (e.g. CDM to CAM/CM, CF to ST, etc.)
+    result.forEach((item, idx) => {
+      if (item.slot.player) return; // already assigned
+      const targetSector = getSector(item.expectedPos);
 
-    return { onField: onFieldData, substitutes: substitutesData };
-  }, [squad, rounds, currentRound, coords, isDraftMode]);
+      const sectorIndex = squad.findIndex(
+        (s, sIdx) =>
+          !usedSquadIndices.has(sIdx) &&
+          s.player &&
+          (getSector(s.position) === targetSector || getSector(s.player.position) === targetSector),
+      );
+
+      if (sectorIndex !== -1) {
+        const found = squad[sectorIndex];
+        assignedPlayers.add(found.player!.name);
+        usedSquadIndices.add(sectorIndex);
+        result[idx] = {
+          ...item,
+          slot: found,
+        };
+      }
+    });
+
+    // Third pass: assign ANY remaining unassigned squad players (e.g. 11th round pick) to remaining empty slots
+    result.forEach((item, idx) => {
+      if (item.slot.player) return;
+
+      const anyIndex = squad.findIndex(
+        (s, sIdx) => !usedSquadIndices.has(sIdx) && s.player,
+      );
+
+      if (anyIndex !== -1) {
+        const found = squad[anyIndex];
+        assignedPlayers.add(found.player!.name);
+        usedSquadIndices.add(anyIndex);
+        result[idx] = {
+          ...item,
+          slot: found,
+        };
+      }
+    });
+
+    return result;
+  }, [coords, squad]);
 
   return (
     <div
-      className={`relative flex w-full flex-col justify-between overflow-hidden rounded-3xl border border-white/12 bg-slate-950/90 shadow-[0_20px_50px_rgba(0,0,0,0.85),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl select-none ${compact ? 'p-2 sm:p-3' : 'p-3.5 sm:p-4 md:p-6'}`}
+      className={cn(
+        'relative mx-auto w-full select-none flex flex-col items-center justify-center',
+        className,
+      )}
     >
-      {/* Pitch Header */}
-      <div className={`flex flex-wrap items-center justify-between gap-2 border-b border-white/10 ${compact ? 'mb-2 pb-1.5' : 'mb-2.5 pb-2.5'}`}>
-        <div className="flex items-center gap-2">
-          <AppIcon icon={Shield} size={compact ? 16 : 18} weight="duotone" className="text-lime animate-pulse" />
-          <h3 className={`font-black tracking-wider text-white uppercase font-display ${compact ? 'text-[11px] sm:text-xs' : 'text-xs sm:text-sm'}`}>
-            {title} — <span className="text-lime">{formation}</span>
-          </h3>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={() => setIs3DView(!is3DView)}
-            className={`btn-haptic hover:border-lime/40 text-steel flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900/90 font-black tracking-wider uppercase shadow-sm transition-all hover:text-white cursor-pointer backdrop-blur-xl ${compact ? 'px-2.5 py-0.5 text-[8.5px] sm:text-[9.5px]' : 'px-3 py-1 text-[9px] sm:text-[10px]'}`}
-          >
-            <AppIcon icon={Stack} size={compact ? 12 : 14} weight="duotone" className="text-lime" />
-            <span>{is3DView ? '3D Stadium' : '2D Pitch'}</span>
-          </button>
-          {badgeLabel && (
-            <span className={`border-lime/30 bg-lime/10 text-lime rounded-full border font-black tracking-widest uppercase shadow-sm ${compact ? 'px-2 py-0.5 text-[8px] sm:text-[9px]' : 'px-2.5 py-1 text-[9px] sm:text-[10px]'}`}>
-              {badgeLabel}
-            </span>
-          )}
-        </div>
-      </div>
-
-      {/* Stadium Pitch Container */}
+      {/* ── THE PITCH BOARD CONTAINER ──────────────────────────── */}
       <div
-        className="relative w-full overflow-hidden rounded-2xl border border-lime/30 bg-gradient-to-b from-[#06200f] via-[#0b3319] to-[#04170b] shadow-[0_0_40px_rgba(0,0,0,0.7)]"
-        style={{ paddingBottom: compact ? (is5 ? '64%' : '72%') : (is5 ? '82%' : '96%') }}
+        style={scale ? { transform: `scale(${scale})`, transformOrigin: 'top center' } : undefined}
+        className={cn(
+          'relative aspect-[3/3.85] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-emerald-500/20 bg-gradient-to-b from-[#031c13] via-[#02140d] to-[#010b07] p-1.5 sm:p-2.5 shadow-[0_12px_36px_rgba(0,0,0,0.85),inset_0_1px_1px_0_rgba(255,255,255,0.1)]',
+          fillContainer
+            ? 'max-w-full h-full'
+            : compact
+              ? 'max-w-[250px] sm:max-w-[295px]'
+              : 'max-w-[275px] sm:max-w-[325px] md:max-w-[350px]',
+        )}
       >
-        <div
-          className={`absolute inset-0 transition-transform duration-700 ${is3DView ? 'origin-bottom [transform:perspective(800px)_rotateX(20deg)_scale(0.95)] transform' : ''}`}
-        >
-          <div className="pointer-events-none absolute inset-0 bg-[repeating-linear-gradient(0deg,#ffffff_0px,#ffffff_1px,transparent_1px,transparent_36px)] opacity-15" />
+        {/* Subtle Pitch Grass Turf Glow */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.12)_0%,transparent_75%)]" />
 
-          <svg
-            className="absolute inset-0 h-full w-full fill-none stroke-white/20 stroke-[1.2]"
-            preserveAspectRatio="none"
-            viewBox="0 0 100 100"
-          >
-            <rect x="3" y="3" width="94" height="94" rx="1.5" />
-            <line x1="3" y1="50" x2="97" y2="50" />
-            <circle cx="50" cy="50" r="12" />
-            <circle cx="50" cy="50" r="0.8" fill="#ffffff" />
-            <rect x="26" y="78" width="48" height="19" />
-            <rect x="36" y="88" width="28" height="9" />
-            <rect x="26" y="3" width="48" height="19" />
-            <rect x="36" y="3" width="28" height="9" />
-          </svg>
+        {/* Specular White Field Markings (Center Circle, Penalty Boxes, Halfway Line) */}
+        <div className="pointer-events-none absolute inset-0">
+          {/* Outer Border */}
+          <div className="absolute inset-2 sm:inset-3 rounded-xl border border-white/[0.08]" />
 
-          {/* Formation Nodes */}
-          {onField.map(({ coord, slot, isCurrentSlot, isFutureSlot }, idx) => {
-            const hasPlayer = Boolean(slot?.player);
-            const player = slot?.player;
-            const tierColor = player?.tier ? getTierStyle(player.tier).highlight : '#95E810';
-            const nodeSize = compact ? (is5 ? 36 : 30) : (is5 ? 46 : 38);
-            const emptySize = compact ? (is5 ? 32 : 26) : (is5 ? 42 : 34);
+          {/* Halfway Line */}
+          <div className="absolute top-1/2 left-2 right-2 sm:left-3 sm:right-3 h-[1px] bg-white/[0.08]" />
+
+          {/* Center Circle & Spot */}
+          <div className="absolute top-1/2 left-1/2 h-16 w-16 sm:h-22 sm:w-22 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.08]" />
+          <div className="absolute top-1/2 left-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/25" />
+
+          {/* Top Penalty Box (Opponent Box) */}
+          <div className="absolute top-2 sm:top-3 left-1/2 h-14 sm:h-18 w-32 sm:w-42 -translate-x-1/2 rounded-b-xl border-b border-x border-white/[0.08]" />
+          <div className="absolute top-2 sm:top-3 left-1/2 h-6 sm:h-8 w-16 sm:w-20 -translate-x-1/2 rounded-b-lg border-b border-x border-white/[0.06]" />
+
+          {/* Bottom Penalty Box (Our GK Box) */}
+          <div className="absolute bottom-2 sm:bottom-3 left-1/2 h-14 sm:h-18 w-32 sm:w-42 -translate-x-1/2 rounded-t-xl border-t border-x border-white/[0.08]" />
+          <div className="absolute bottom-2 sm:bottom-3 left-1/2 h-6 sm:h-8 w-16 sm:w-20 -translate-x-1/2 rounded-t-lg border-t border-x border-white/[0.06]" />
+        </div>
+
+        {/* ── SVG TACTICAL DASHED CONNECTION LINKS ───────────────── */}
+        <svg className="pointer-events-none absolute inset-0 h-full w-full" style={{ zIndex: 5 }}>
+          {links.map(([fromIdx, toIdx], lIdx) => {
+            const coordFrom = coords[fromIdx];
+            const coordTo = coords[toIdx];
+            if (!coordFrom || !coordTo) return null;
 
             return (
-              <motion.div
-                key={`${coord.pos}-${idx}`}
-                className="absolute z-10 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center"
-                style={{ left: `${coord.x}%`, top: `${100 - coord.y}%` }}
-                initial={{ y: 15, opacity: 0, scale: 0.8 }}
-                animate={{ y: 0, opacity: 1, scale: 1 }}
-                transition={{ delay: idx * 0.04, duration: 0.4, ease: 'easeOut' }}
-              >
-                <AnimatePresence mode="wait">
-                  {hasPlayer && player ? (
-                    <motion.div
-                      key="filled"
-                      className="flex flex-col items-center"
-                      initial={{ scale: 0, rotate: -15 }}
-                      animate={{ scale: 1, rotate: 0 }}
-                      transition={{ type: 'spring', stiffness: 260, damping: 18 }}
-                    >
-                      <div
-                        className="relative flex items-center justify-center rounded-xl border-2 bg-slate-950 shadow-lg"
-                        style={{
-                          width: nodeSize,
-                          height: nodeSize,
-                          borderColor: tierColor,
-                          boxShadow: `0 0 16px ${tierColor}45`,
-                        }}
-                      >
-                        <PlayerImage
-                          src={player.imageUrl}
-                          alt={player.name}
-                          name={player.name}
-                          className="rounded-[10px]"
-                          imgClassName="rounded-[10px]"
-                          fallbackClassName="rounded-[10px]"
-                        />
-
-                        {/* Position indicator */}
-                        <span
-                          className="py-0.2 absolute -top-1.5 -left-1.5 rounded border px-1.5 text-[7px] font-black uppercase shadow-md"
-                          style={{
-                            backgroundColor: '#090d16',
-                            color: tierColor,
-                            borderColor: `${tierColor}80`,
-                          }}
-                        >
-                          {slot?.position || coord.pos}
-                        </span>
-
-                        {/* Sub badge indicator */}
-                        {slot?.isSub && (
-                          <span className="absolute -top-1.5 -right-1.5 rounded border border-amber-300 bg-amber-500 px-1 text-[6px] font-black text-slate-950 uppercase">
-                            SUB
-                          </span>
-                        )}
-                      </div>
-
-                      {/* Name & price badge */}
-                      <div
-                        className="mt-0.5 flex max-w-[70px] items-center gap-0.5 truncate rounded border px-1 py-0.5 text-center text-[7px] font-black uppercase backdrop-blur-md sm:max-w-[85px] sm:text-[8px]"
-                        style={{
-                          backgroundColor: 'rgba(9,13,22,0.92)',
-                          borderColor: `${tierColor}40`,
-                          color: '#fff',
-                        }}
-                      >
-                        <span className="truncate">{player.name?.split(' ').pop()}</span>
-                        {slot?.cost !== undefined && slot.cost > 0 && (
-                          <span className="text-lime shrink-0 text-[7px] font-stats">${slot.cost}M</span>
-                        )}
-                      </div>
-                    </motion.div>
-                  ) : isCurrentSlot ? (
-                    <motion.div
-                      key="active"
-                      className="flex flex-col items-center"
-                      initial={{ scale: 0.7 }}
-                      animate={{ scale: 1 }}
-                      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                    >
-                      <div
-                        className="border-lime bg-lime/10 animate-active-ring flex animate-pulse items-center justify-center rounded-xl border-2 border-dashed"
-                        style={{ width: nodeSize, height: nodeSize }}
-                      >
-                        <span className="text-lime text-[9px] font-black uppercase sm:text-xs">
-                          {coord.pos}
-                        </span>
-                      </div>
-                      <div className="py-0.2 text-lime bg-lime/10 border-lime/40 mt-0.5 rounded border px-1 text-[6px] font-black uppercase">
-                        BIDDING
-                      </div>
-                    </motion.div>
-                  ) : (
-                    <motion.div
-                      key="empty"
-                      className="flex flex-col items-center"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: isFutureSlot ? 0.35 : 0.6 }}
-                    >
-                      <div
-                        className="flex animate-pulse items-center justify-center rounded-xl border border-dashed border-white/20 bg-black/40"
-                        style={{ width: emptySize, height: emptySize }}
-                      >
-                        <span className="text-steel/60 text-[8px] font-black uppercase sm:text-[9px]">
-                          {coord.pos}
-                        </span>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+              <line
+                key={`link-${lIdx}`}
+                x1={`${coordFrom.x}%`}
+                y1={`${coordFrom.y}%`}
+                x2={`${coordTo.x}%`}
+                y2={`${coordTo.y}%`}
+                stroke="rgba(255, 255, 255, 0.12)"
+                strokeWidth="1.2"
+                strokeDasharray="3 3"
+                strokeLinecap="round"
+                className="transition-all duration-300"
+              />
             );
           })}
-        </div>
-      </div>
+        </svg>
 
-      {/* Substitutes Bench Area */}
-      {substitutes.length > 0 && (
-        <div className="mt-3 space-y-2 rounded-xl border border-white/5 bg-slate-900/60 p-3">
-          <h4 className="text-steel flex items-center gap-1.5 text-[9px] font-black tracking-wider uppercase sm:text-[10px]">
-            <AppIcon icon={Question} size={14} weight="duotone" className="text-amber-500" />
-            Substitutes & Backups ({substitutes.length})
-          </h4>
-          <div className="flex flex-wrap gap-2">
-            {substitutes.map((sub, sIdx) => {
-              const subTierColor = sub.player?.tier
-                ? getTierStyle(sub.player.tier).highlight
-                : '#95E810';
-              return (
-                <div
-                  key={sIdx}
-                  className="flex items-center gap-2 rounded-lg border border-white/10 bg-slate-950/80 p-1.5 shadow-sm"
-                  style={{ borderColor: `${subTierColor}30` }}
+        {/* ── PITCH FORMATION SLOTS ──────────────────────────────── */}
+        {mappedSlots.map(({ slotIndex, expectedPos, slot }) => {
+          const coord = coords[slotIndex];
+          if (!coord) return null;
+
+          const player = slot?.player;
+          const hasPlayer = Boolean(player);
+          const cost = slot?.cost;
+
+          // Check if this slot is currently being auctioned
+          const isTargetActive =
+            !hasPlayer &&
+            (activePosition === expectedPos ||
+              (rounds && currentRound && rounds[currentRound - 1]?.position === expectedPos));
+
+          const displayName = player ? formatDisplayName(player.name) : '';
+          const tierStyle = player?.tier ? getTierStyle(player.tier) : null;
+
+          return (
+            <div
+              key={`slot-${slotIndex}`}
+              style={{ left: `${coord.x}%`, top: `${coord.y}%` }}
+              className="absolute -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center select-none"
+            >
+              {hasPlayer && player ? (
+                /* ── SIGNED SLOT: AVATAR + NAME + PRICE PILL ─────── */
+                <motion.div
+                  initial={{ scale: 0.85, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ type: 'spring', stiffness: 450, damping: 25 }}
+                  onClick={() => onSelectSlot?.(expectedPos, slotIndex)}
+                  className="group relative flex flex-col items-center justify-between rounded-xl sm:rounded-2xl border border-white/20 bg-slate-950/90 p-1 shadow-[0_4px_16px_rgba(0,0,0,0.7)] backdrop-blur-xl w-[44px] h-[64px] sm:w-[54px] sm:h-[76px] transition-all hover:scale-105 cursor-pointer"
+                  style={{
+                    borderColor: tierStyle ? `${tierStyle.accent}60` : 'rgba(255,255,255,0.2)',
+                    boxShadow: tierStyle ? `0 0 12px ${tierStyle.glow}` : undefined,
+                  }}
+                  title={`${player.name} (${expectedPos}) - ${cost !== undefined ? `$${cost}M` : player.rating ? `${player.rating} OVR` : ''}`}
                 >
-                  <div
-                    className="flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded border bg-slate-900"
-                    style={{ borderColor: subTierColor }}
-                  >
+                  {/* Top Avatar Ring */}
+                  <div className="relative flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-white/20 bg-slate-900 shadow-sm mt-0.5">
                     <PlayerImage
-                      src={sub.player?.imageUrl}
-                      alt={sub.player?.name}
-                      name={sub.player?.name}
-                      className="rounded"
-                      imgClassName="rounded"
+                      imageUrl={player.imageUrl}
+                      name={player.name}
+                      tier={player.tier}
+                      size={32}
                     />
-                  </div>
-                  <div className="flex min-w-0 flex-col pe-1">
-                    <span className="max-w-[80px] truncate text-[9px] leading-tight font-black text-white">
-                      {sub.player?.name?.split(' ').pop()}
+                    {/* Position Mini-Badge */}
+                    <span className="absolute bottom-0 right-0 rounded-full bg-slate-950/95 px-1 text-[5px] sm:text-[6px] font-black uppercase text-steel font-stats border border-white/20 leading-none">
+                      {expectedPos}
                     </span>
-                    <div className="flex items-center gap-1">
-                      <span className="text-steel rounded bg-white/5 px-1 text-[7px] font-bold uppercase">
-                        {sub.position}
-                      </span>
-                      {sub.cost !== undefined && sub.cost > 0 && (
-                        <span className="text-lime text-[7px] font-black font-stats">${sub.cost}M</span>
-                      )}
-                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
 
-      {/* Bottom Summary Bar */}
-      <div className="mt-2 flex items-center justify-between rounded-lg border border-white/5 bg-slate-950/60 px-2 py-1.5 text-[9px] font-black tracking-widest uppercase sm:text-[10px]">
-        <span className="text-steel">
-          <span className="text-lime">{formation}</span> Scheme
-        </span>
-        <span className="text-steel font-stats">
-          <span className="text-white">{squad.filter((s) => s.player).length}</span>/{totalRounds}{' '}
-          Signed
-        </span>
+                  {/* Player Name */}
+                  <span className="font-card font-extrabold uppercase text-[7px] sm:text-[8.5px] text-white truncate max-w-full text-center leading-none tracking-tight px-0.5 drop-shadow-sm">
+                    {displayName}
+                  </span>
+
+                  {/* Transfer Price Badge (or Rating if no price) */}
+                  <div className="flex w-full items-center justify-center">
+                    {cost !== undefined ? (
+                      <span className="font-stats font-black text-lime bg-lime/15 border border-lime/40 px-1.5 py-[1px] rounded-full text-[6.5px] sm:text-[8px] leading-none shadow-[0_0_6px_rgba(149,232,16,0.3)]">
+                        ${cost}M
+                      </span>
+                    ) : player.rating ? (
+                      <span className="font-stats font-black text-amber-400 bg-amber-400/15 border border-amber-400/40 px-1.5 py-[1px] rounded-full text-[6.5px] sm:text-[8px] leading-none">
+                        {player.rating}
+                      </span>
+                    ) : (
+                      <span className="font-stats font-black text-steel bg-white/10 px-1 rounded text-[6px] leading-none">
+                        <AppIcon icon={Check} size={8} weight="bold" />
+                      </span>
+                    )}
+                  </div>
+                </motion.div>
+              ) : (
+                /* ── EMPTY / ACTIVE TARGET SLOT (FROSTED SHIELD) ─── */
+                <motion.div
+                  whileHover={{ scale: 1.06 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => onSelectSlot?.(expectedPos, slotIndex)}
+                  className={cn(
+                    'group relative flex flex-col items-center justify-center rounded-xl sm:rounded-2xl transition-all w-[44px] h-[64px] sm:w-[54px] sm:h-[76px] select-none cursor-pointer',
+                    isTargetActive
+                      ? 'border-2 border-lime bg-lime/15 text-lime shadow-[0_0_20px_rgba(149,232,16,0.7),inset_0_1px_0_0_rgba(255,255,255,0.3)] scale-105 z-20 animate-pulse'
+                      : 'border border-dashed border-white/15 bg-slate-950/60 text-steel hover:border-lime/50 hover:bg-slate-900/80 hover:text-white backdrop-blur-md z-10',
+                  )}
+                  title={isTargetActive ? `Current Target: ${expectedPos}` : `Empty ${expectedPos}`}
+                >
+                  {isTargetActive ? (
+                    <div className="flex flex-col items-center gap-1 p-1 text-center">
+                      <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-lime/25 text-lime animate-bounce border border-lime/50">
+                        <AppIcon icon={Plus} size={14} weight="bold" />
+                      </span>
+                      <span className="text-[7.5px] sm:text-[9px] font-black tracking-wider text-lime uppercase drop-shadow-sm font-stats">
+                        {expectedPos}
+                      </span>
+                      <span className="text-[5.5px] sm:text-[6.5px] font-black uppercase tracking-widest text-lime/80 leading-none">
+                        LIVE
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="flex flex-col items-center gap-1 p-1 text-center">
+                      <AppIcon
+                        icon={Plus}
+                        size={13}
+                        weight="bold"
+                        className="opacity-50 group-hover:opacity-100 transition-opacity"
+                      />
+                      <span className="text-[7px] sm:text-[8.5px] font-extrabold tracking-wider uppercase text-steel group-hover:text-lime transition-colors font-stats">
+                        {expectedPos}
+                      </span>
+                    </div>
+                  )}
+                </motion.div>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import type { GameType, IMatchSimulatorStrategy } from '@/core/simulation/simulation.interface';
 import { TacticalMatchSimulatorStrategy } from '@/core/simulation/strategies/tactical-match-simulator';
+import { ClassicDraftMatchSimulatorStrategy } from '@/core/simulation/strategies/classic-draft-match-simulator';
 
 /**
  * Registry of deterministic match simulator strategies.
@@ -13,6 +14,7 @@ export class MatchSimulatorRegistry {
 
   private constructor() {
     this.registerStrategy(new TacticalMatchSimulatorStrategy());
+    this.registerStrategy(new ClassicDraftMatchSimulatorStrategy());
   }
 
   public static getInstance(): MatchSimulatorRegistry {

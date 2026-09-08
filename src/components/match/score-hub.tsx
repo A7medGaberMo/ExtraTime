@@ -111,6 +111,7 @@ export function ScoreHub({
   }, [events, phase, viewerWon]);
 
   const isSimulating = phase === 'simulating';
+  const [activeTab, setActiveTab] = useState<'overview' | 'events' | 'tactics'>('overview');
 
   return (
     <div className="space-y-3 select-none">
@@ -124,41 +125,104 @@ export function ScoreHub({
       />
 
       {isSimulating ? (
-        <div className="animate-fade-in flex items-center justify-center gap-2 py-1">
-          <AppIcon icon={CircleNotch} size={16} weight="bold" className="text-lime animate-spin" />
-          <p className="text-steel text-[10px] font-black tracking-[0.25em] uppercase font-stats">
-            Simulating Matchday...
-          </p>
-        </div>
-      ) : (
-        <WinnerBanner
-          hostName={hostName}
-          guestName={guestName}
-          simulation={simulation}
-          viewerWon={viewerWon ?? null}
-        />
-      )}
+        <div className="space-y-3">
+          <div className="animate-fade-in flex items-center justify-center gap-2 py-2">
+            <AppIcon icon={CircleNotch} size={16} weight="bold" className="text-lime animate-spin" />
+            <p className="text-steel text-[10px] font-black tracking-[0.25em] uppercase font-stats">
+              Simulating Matchday Action...
+            </p>
+          </div>
 
-      <MatchCommentaryFeed
-        simulation={simulation}
-        hostName={hostName}
-        guestName={guestName}
-        revealedCount={revealedCount}
-      />
-
-      {!isSimulating && (
-        <div className="animate-fade-in space-y-3">
-          <MatchupMeters simulation={simulation} hostName={hostName} guestName={guestName} />
-
-          <TacticalPitchView
-            formation={formation}
-            matchSize={matchSize}
-            hostSquad={hostSquad}
-            guestSquad={guestSquad}
+          <MatchCommentaryFeed
+            simulation={simulation}
             hostName={hostName}
             guestName={guestName}
-            viewerIsHost={viewerIsHost}
+            revealedCount={revealedCount}
           />
+        </div>
+      ) : (
+        <div className="space-y-3 animate-fade-in">
+          {/* Apple Segmented Bar for Matchday Results */}
+          <div className="flex items-center justify-center">
+            <div className="inline-flex rounded-2xl border border-white/12 bg-slate-950/80 p-1 backdrop-blur-xl shadow-inner">
+              <button
+                type="button"
+                onClick={() => setActiveTab('overview')}
+                className={`btn-haptic rounded-xl px-4 py-1.5 text-xs font-black uppercase tracking-wider font-stats transition-all cursor-pointer ${
+                  activeTab === 'overview'
+                    ? 'bg-lime text-slate-950 shadow-md shadow-lime/20'
+                    : 'text-steel hover:text-white'
+                }`}
+              >
+                Overview
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveTab('events')}
+                className={`btn-haptic rounded-xl px-4 py-1.5 text-xs font-black uppercase tracking-wider font-stats transition-all cursor-pointer ${
+                  activeTab === 'events'
+                    ? 'bg-lime text-slate-950 shadow-md shadow-lime/20'
+                    : 'text-steel hover:text-white'
+                }`}
+              >
+                Goals & Events
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveTab('tactics')}
+                className={`btn-haptic rounded-xl px-4 py-1.5 text-xs font-black uppercase tracking-wider font-stats transition-all cursor-pointer ${
+                  activeTab === 'tactics'
+                    ? 'bg-lime text-slate-950 shadow-md shadow-lime/20'
+                    : 'text-steel hover:text-white'
+                }`}
+              >
+                Tactical Pitch
+              </button>
+            </div>
+          </div>
+
+          {/* TAB PANELS (ZERO-SCROLL VIEWPORT ADAPTIVE) */}
+          <div className="max-h-[48vh] sm:max-h-[52vh] overflow-y-auto scrollbar-none pr-0.5">
+            {/* TAB 1: OVERVIEW */}
+            {activeTab === 'overview' && (
+              <div className="space-y-2.5 animate-fade-in">
+                <WinnerBanner
+                  hostName={hostName}
+                  guestName={guestName}
+                  simulation={simulation}
+                  viewerWon={viewerWon ?? null}
+                />
+                <MatchupMeters simulation={simulation} hostName={hostName} guestName={guestName} />
+              </div>
+            )}
+
+            {/* TAB 2: EVENTS */}
+            {activeTab === 'events' && (
+              <div className="animate-fade-in">
+                <MatchCommentaryFeed
+                  simulation={simulation}
+                  hostName={hostName}
+                  guestName={guestName}
+                  revealedCount={revealedCount}
+                />
+              </div>
+            )}
+
+            {/* TAB 3: TACTICS */}
+            {activeTab === 'tactics' && (
+              <div className="animate-fade-in">
+                <TacticalPitchView
+                  formation={formation}
+                  matchSize={matchSize}
+                  hostSquad={hostSquad}
+                  guestSquad={guestSquad}
+                  hostName={hostName}
+                  guestName={guestName}
+                  viewerIsHost={viewerIsHost}
+                />
+              </div>
+            )}
+          </div>
         </div>
       )}
     </div>
@@ -182,51 +246,55 @@ function WinnerBanner({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-2xl border p-4 text-center shadow-2xl backdrop-blur-xl ${
+      className={`relative overflow-hidden rounded-2xl border p-2.5 sm:p-3 shadow-lg backdrop-blur-xl flex items-center justify-between gap-3 select-none ${
         viewerWon
-          ? 'border-lime/40 from-lime/10 via-slate-950 to-slate-950 bg-gradient-to-b shadow-[0_0_50px_rgba(149,232,16,0.15)]'
+          ? 'border-lime/40 from-lime/15 via-slate-950/90 to-slate-950 bg-gradient-to-r shadow-[0_0_24px_rgba(149,232,16,0.12)]'
           : draw
-            ? 'via-slate-950 to-slate-950 border-amber-400/30 bg-gradient-to-b from-amber-400/10'
-            : 'via-slate-950 to-slate-950 border-rose-400/30 bg-gradient-to-b from-rose-500/10 shadow-[0_0_50px_rgba(244,63,94,0.12)]'
+            ? 'via-slate-950/90 to-slate-950 border-amber-400/30 bg-gradient-to-r from-amber-400/15'
+            : 'via-slate-950/90 to-slate-950 border-rose-400/30 bg-gradient-to-r from-rose-500/15 shadow-[0_0_24px_rgba(244,63,94,0.1)]'
       }`}
     >
-      <div className="pointer-events-none absolute inset-x-10 top-0 h-28 rounded-full bg-white/5 blur-3xl" />
-      <div className="relative space-y-1.5">
+      <div className="flex items-center gap-2.5 min-w-0">
         <div
-          className={`mx-auto flex h-10 w-10 items-center justify-center rounded-xl border shadow-xl ${
+          className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border shadow-sm ${
             viewerWon
-              ? 'border-lime/50 shadow-lime/15 bg-slate-950'
-              : 'border-white/10 bg-slate-950'
+              ? 'border-lime/50 shadow-lime/20 bg-lime/10 text-lime'
+              : draw
+                ? 'border-amber-400/40 bg-amber-400/10 text-amber-300'
+                : 'border-rose-400/40 bg-rose-500/10 text-rose-400'
           }`}
         >
           {viewerWon ? (
-            <AppIcon icon={Trophy} size={20} weight="duotone" className="text-lime animate-bounce" />
+            <AppIcon icon={Trophy} size={18} weight="fill" />
           ) : (
-            <AppIcon icon={Sword} size={20} weight="duotone" className="text-steel" />
+            <AppIcon icon={Sword} size={18} weight="bold" />
           )}
         </div>
-        <span
-          className={`inline-flex rounded-full border px-3 py-0.5 text-[9px] font-black tracking-widest uppercase font-stats ${
-            viewerWon
-              ? 'border-lime/30 bg-lime/10 text-lime'
-              : draw
-                ? 'border-amber-400/30 bg-amber-400/10 text-amber-300'
-                : 'border-rose-500/30 bg-rose-500/10 text-rose-400'
-          }`}
-        >
-          {draw ? 'Deadlock' : viewerWon ? 'Victorious Manager' : 'Runner-Up'}
-        </span>
-        <h2 className="text-lg font-black tracking-tight text-white uppercase font-display sm:text-xl">
-          {viewerWon ? 'You Win The Battle!' : draw ? 'A Stalemate Duel!' : `${winnerLabel} Won`}
-        </h2>
-        <p className="text-steel mx-auto max-w-sm text-[11px] leading-relaxed font-medium">
-          {draw
-            ? `Deadlock — ${simulation.shootoutScore ? `penalties split ${simulation.shootoutScore.host}-${simulation.shootoutScore.guest}.` : 'no goals separated them.'}`
-            : simulation.isShootout && simulation.shootoutScore
-              ? `${winnerLabel} won on penalties (${simulation.shootoutScore.host}-${simulation.shootoutScore.guest}).`
-              : `Match simulator rated ${winnerLabel} higher.`}
-        </p>
+        <div className="min-w-0">
+          <h2 className="text-xs sm:text-sm font-black tracking-tight text-white uppercase font-display truncate">
+            {viewerWon ? 'You Win The Battle!' : draw ? 'Stalemate Duel' : `${winnerLabel} Won`}
+          </h2>
+          <p className="text-steel text-[10px] sm:text-[10.5px] font-medium truncate">
+            {draw
+              ? 'Deadlock — perfectly balanced squads.'
+              : simulation.isShootout && simulation.shootoutScore
+                ? `Decided on penalties (${simulation.shootoutScore.host}-${simulation.shootoutScore.guest})`
+                : `${winnerLabel} edged the tactical rating.`}
+          </p>
+        </div>
       </div>
+
+      <span
+        className={`shrink-0 rounded-full border px-2.5 py-0.5 text-[8.5px] sm:text-[9px] font-black tracking-widest uppercase font-stats ${
+          viewerWon
+            ? 'border-lime/40 bg-lime/15 text-lime'
+            : draw
+              ? 'border-amber-400/40 bg-amber-400/15 text-amber-300'
+              : 'border-rose-500/40 bg-rose-500/15 text-rose-400'
+        }`}
+      >
+        {draw ? 'Deadlock' : viewerWon ? 'Winner' : 'Runner-Up'}
+      </span>
     </div>
   );
 }

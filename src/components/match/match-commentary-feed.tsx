@@ -75,8 +75,14 @@ export function MatchCommentaryFeed({
                 {/* Scorer & Team Info */}
                 <div className={`flex flex-col min-w-0 ${isHost ? 'text-start' : 'text-end'}`}>
                   <div className="flex items-center gap-1.5">
+                    <AppIcon
+                      icon={SoccerBall}
+                      size={12}
+                      weight="fill"
+                      className={isHost ? 'text-lime shrink-0' : 'text-rose-400 shrink-0'}
+                    />
                     <span className="text-xs font-black text-white truncate max-w-[140px] sm:max-w-[180px]">
-                      ⚽ {scorerName}
+                      {scorerName}
                     </span>
                     <span
                       className={`text-[8.5px] font-black tracking-wider uppercase font-stats ${

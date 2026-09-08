@@ -239,12 +239,21 @@ export const submitSealedBid = mutation({
     const sealedBids: SealedBidsShape = { ...(auction.sealedBids ?? {}) };
     const myKey = isHost ? 'host' : 'guest';
     const mySealed = sealedBids[myKey];
-    if (mySealed) throw new Error('Your sealed bid is already locked ✉️');
+    if (mySealed) {
+      return { resolved: false, alreadyLocked: true, roundNumber: auction.currentRound };
+    }
 
-    // Blind phase guard — the envelope is sealed at the deadline.
+    // Check if this round was already resolved by the timer or opponent
+    const history = auction.roundHistory ?? [];
+    const alreadyResolved = history.some((h) => h.roundNumber === auction.currentRound);
+    if (alreadyResolved || auction.status !== 'active') {
+      return { resolved: true, expired: true, roundNumber: auction.currentRound };
+    }
+
+    // If past deadline with a grace window, resolve gracefully
     const deadline = auction.bidDeadline ?? 0;
-    if (deadline > 0 && Date.now() > deadline + 2000) {
-      throw new Error('Blind bid phase has expired');
+    if (deadline > 0 && Date.now() > deadline + 6000) {
+      return { resolved: true, expired: true, roundNumber: auction.currentRound };
     }
 
     sealedBids[myKey] = { amount: args.amount, submittedAt: Date.now() };

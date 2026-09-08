@@ -187,7 +187,7 @@ export default function RankHubPage() {
       subtitle={t('rank.hubSubtitle')}
       badge={
         <StatPill
-          variant="lime"
+          variant="amber"
           size="sm"
           icon={<AppIcon icon={Ranking} size={14} weight="duotone" />}
           label={t('rank.hubBadge')}
@@ -195,17 +195,20 @@ export default function RankHubPage() {
       }
       maxWidth="2xl"
     >
-      {/* ── 1. MODE SELECTOR CARD ────────────────────────────────────── */}
-      <Panel variant="highlight" className="p-4 sm:p-6 space-y-5">
-        {/* Manager Identity Header Bar */}
-        <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/80 p-3">
-          <div className="flex items-center gap-2.5 min-w-0">
+      {/* ── 1. MODE SELECTOR CARD: APPLE GLASS ELEVATED ────────────────────────────────────── */}
+      <div className="apple-glass-elevated relative rounded-3xl p-5 sm:p-7 border border-white/18 shadow-[0_24px_50px_rgba(0,0,0,0.7)] backdrop-blur-3xl space-y-6">
+        {/* Ambient Top Glow */}
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-40 w-72 rounded-full bg-amber-400/10 blur-3xl" />
+
+        {/* Manager Identity Header Bar — Apple Dynamic Island Pill */}
+        <div className="relative flex items-center justify-between rounded-2xl border border-white/12 bg-white/[0.05] p-3 shadow-inner">
+          <div className="flex items-center gap-3 min-w-0">
             <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
             <div className="min-w-0">
-              <span className="text-[10px] text-steel font-black uppercase tracking-wider block">
+              <span className="text-[10px] text-slate-400 font-extrabold uppercase tracking-wider block">
                 {t('joinRoom.managerHandle')}
               </span>
-              <span className="text-xs sm:text-sm font-bold text-white truncate block">
+              <span className="text-xs sm:text-sm font-extrabold text-white truncate block">
                 {nickname}
               </span>
             </div>
@@ -216,24 +219,26 @@ export default function RankHubPage() {
               setPendingAction(null);
               setShowNameModal(true);
             }}
-            className="flex items-center gap-1.5 rounded-xl border border-white/10 bg-slate-900 px-3 py-1.5 text-xs font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
+            className="btn-haptic flex items-center gap-1.5 rounded-xl border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-bold text-slate-300 hover:border-amber-400/50 hover:text-white transition-all cursor-pointer shadow-sm"
           >
-            <AppIcon icon={DiceFive} size={14} weight="duotone" className="text-lime" />
+            <AppIcon icon={DiceFive} size={15} weight="bold" className="text-amber-400" />
             <span>{lang === 'ar' ? 'تغيير' : 'Change'}</span>
           </button>
         </div>
 
         {/* Mode Tabs */}
-        <SegmentedControl
-          options={tabOptions}
-          value={activeTab}
-          onChange={setActiveTab}
-          size="md"
-        />
+        <div className="relative">
+          <SegmentedControl
+            options={tabOptions}
+            value={activeTab}
+            onChange={setActiveTab}
+            size="md"
+          />
+        </div>
 
         {/* Round Count Selector */}
-        <div className="space-y-1.5">
-          <label className="text-steel text-[10px] font-black tracking-widest uppercase block px-1">
+        <div className="relative space-y-1.5">
+          <label className="text-slate-400 text-[10px] font-extrabold tracking-widest uppercase block px-1">
             {t('rank.matchLength')}
           </label>
           <SegmentedControl
@@ -246,13 +251,13 @@ export default function RankHubPage() {
 
         {/* ── TAB 1: SOLO PLAY ──────────────────────────────────────── */}
         {activeTab === 'solo' && (
-          <div className="space-y-4 pt-1 animate-fade-in">
-            <div className="p-3.5 rounded-2xl bg-slate-950/80 border border-white/10 space-y-1 text-xs">
+          <div className="relative space-y-4 pt-1 animate-fade-in">
+            <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 space-y-1 text-xs shadow-inner">
               <div className="flex items-center gap-2 font-black text-white uppercase">
-                <AppIcon icon={ShieldCheck} size={16} weight="duotone" className="text-lime" />
+                <AppIcon icon={ShieldCheck} size={17} weight="fill" className="text-amber-400" />
                 <span>{t('rank.scoringRuleTitle')}</span>
               </div>
-              <p className="text-steel text-[11px] leading-relaxed">
+              <p className="text-slate-300 text-xs leading-relaxed">
                 {t('rank.scoringRuleDesc')}
               </p>
             </div>
@@ -265,6 +270,7 @@ export default function RankHubPage() {
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Play} size={20} weight="bold" />}
+              className="bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 font-black shadow-lg shadow-amber-400/25 rounded-2xl"
             >
               {t('rank.startSolo', { rounds: roundCount })}
             </Button>
@@ -273,10 +279,10 @@ export default function RankHubPage() {
 
         {/* ── TAB 2: QUICK MATCH ────────────────────────────────────── */}
         {activeTab === 'quick' && (
-          <div className="space-y-4 pt-1 animate-fade-in">
-            <div className="p-3.5 rounded-2xl bg-slate-950/80 border border-white/10 flex items-center justify-between">
+          <div className="relative space-y-4 pt-1 animate-fade-in">
+            <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-between shadow-inner">
               <div className="space-y-0.5">
-                <span className="text-[10px] text-steel font-black uppercase block">
+                <span className="text-[10px] text-slate-400 font-black uppercase block">
                   {lang === 'ar' ? 'رادار المطابقة السريعة' : 'Radar Matchmaking'}
                 </span>
                 <p className="text-xs text-white font-medium">
@@ -286,7 +292,7 @@ export default function RankHubPage() {
                 </p>
               </div>
               <StatPill
-                variant="lime"
+                variant="amber"
                 size="sm"
                 label={t('rank.inQueueStats', {
                   count: roundCount === 3 ? (queueStats?.waiting3 ?? 0) : (queueStats?.waiting5 ?? 0),
@@ -302,6 +308,7 @@ export default function RankHubPage() {
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Sword} size={20} weight="bold" />}
+              className="bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 font-black shadow-lg shadow-amber-400/25 rounded-2xl"
             >
               {lang === 'ar' ? `ابحث عن منافس لايف (${roundCount} جولات)` : `Find 1v1 Opponent (${roundCount} Rounds)`}
             </Button>
@@ -310,7 +317,7 @@ export default function RankHubPage() {
 
         {/* ── TAB 3: PRIVATE DUEL ───────────────────────────────────── */}
         {activeTab === 'duel' && (
-          <div className="space-y-4 pt-1 animate-fade-in">
+          <div className="relative space-y-4 pt-1 animate-fade-in">
             <Button
               variant="primary"
               size="lg"
@@ -319,11 +326,12 @@ export default function RankHubPage() {
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Users} size={20} weight="bold" />}
+              className="bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 font-black shadow-lg shadow-amber-400/25 rounded-2xl"
             >
               {t('rank.createPrivateDuel')}
             </Button>
 
-            <div className="flex items-center gap-3 text-[10px] text-steel font-black uppercase">
+            <div className="flex items-center gap-3 text-[10px] text-slate-400 font-black uppercase">
               <div className="h-px bg-white/10 flex-1" />
               <span>{t('rank.orJoinWithCode')}</span>
               <div className="h-px bg-white/10 flex-1" />
@@ -336,7 +344,7 @@ export default function RankHubPage() {
                   placeholder={t('rank.joinCodePlaceholder')}
                   value={joinCode}
                   onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
-                  leftIcon={<AppIcon icon={Key} size={18} weight="duotone" />}
+                  leftIcon={<AppIcon icon={Key} size={18} weight="bold" />}
                   aria-label={t('rank.joinCodePlaceholder')}
                 />
               </div>
@@ -347,39 +355,40 @@ export default function RankHubPage() {
                   triggerActionWithName({ type: 'duel_join', code: joinCode.trim() })
                 }
                 disabled={loading || !joinCode.trim()}
+                className="apple-glass-card rounded-xl font-black"
               >
                 {t('rank.joinDuelBtn')}
               </Button>
             </div>
           </div>
         )}
-      </Panel>
+      </div>
 
-      {/* ── 2. RULES SUMMARY CARDS ───────────────────────────────────── */}
-      <section className="grid grid-cols-3 gap-2.5 sm:gap-3">
-        <Panel variant="subtle" className="p-3 text-center sm:text-start space-y-0.5">
+      {/* ── 2. RULES SUMMARY CARDS: APPLE WATCH COMPLICATION TILES ─────── */}
+      <section className="grid grid-cols-3 gap-2.5 sm:gap-3.5">
+        <div className="apple-glass-card rounded-2xl p-3.5 sm:p-4 text-center sm:text-start space-y-1 border border-white/12 shadow-md backdrop-blur-xl">
           <div className="flex items-center justify-center sm:justify-start gap-1.5 text-lime font-black text-xs">
-            <AppIcon icon={Clock} size={14} weight="duotone" />
+            <AppIcon icon={Clock} size={15} weight="fill" />
             <span>45s Timer</span>
           </div>
-          <p className="text-[10px] text-steel font-medium truncate">Fast live rounds</p>
-        </Panel>
+          <p className="text-[11px] text-slate-400 font-medium truncate">Fast live rounds</p>
+        </div>
 
-        <Panel variant="subtle" className="p-3 text-center sm:text-start space-y-0.5">
+        <div className="apple-glass-card rounded-2xl p-3.5 sm:p-4 text-center sm:text-start space-y-1 border border-white/12 shadow-md backdrop-blur-xl">
           <div className="flex items-center justify-center sm:justify-start gap-1.5 text-emerald-400 font-black text-xs">
-            <AppIcon icon={ShieldCheck} size={14} weight="duotone" />
+            <AppIcon icon={ShieldCheck} size={15} weight="fill" />
             <span>+2 to -2</span>
           </div>
-          <p className="text-[10px] text-steel font-medium truncate">Distance scoring</p>
-        </Panel>
+          <p className="text-[11px] text-slate-400 font-medium truncate">Distance scoring</p>
+        </div>
 
-        <Panel variant="subtle" className="p-3 text-center sm:text-start space-y-0.5">
+        <div className="apple-glass-card rounded-2xl p-3.5 sm:p-4 text-center sm:text-start space-y-1 border border-white/12 shadow-md backdrop-blur-xl">
           <div className="flex items-center justify-center sm:justify-start gap-1.5 text-amber-300 font-black text-xs">
-            <AppIcon icon={ArrowsDownUp} size={14} weight="duotone" />
+            <AppIcon icon={ArrowsDownUp} size={15} weight="bold" />
             <span>5 Cards</span>
           </div>
-          <p className="text-[10px] text-steel font-medium truncate">Drag & drop order</p>
-        </Panel>
+          <p className="text-[11px] text-slate-400 font-medium truncate">Drag & drop order</p>
+        </div>
       </section>
 
       {/* ── 3. MANAGER NAME ENTRY MODAL ──────────────────────────────── */}

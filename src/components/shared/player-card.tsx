@@ -13,35 +13,50 @@ import { ETLogo } from './et-logo';
 /**
  * Display only the primary position if multi-positional (e.g. "ST/CF" -> "ST").
  */
-function formatMainPosition(pos: string): string {
+export function formatMainPosition(pos: string): string {
   if (!pos) return 'ST';
   return pos.split('/')[0].trim().toUpperCase();
 }
 
 /**
  * Format long player names cleanly for jersey/card display.
+ * e.g., "Mohamed Salah" -> "M. SALAH"
  * e.g., "Cristiano Ronaldo" -> "C. RONALDO"
  * e.g., "Kevin De Bruyne" -> "DE BRUYNE"
- * e.g., "Trent Alexander-Arnold" -> "A.-ARNOLD"
+ * e.g., "Trent Alexander-Arnold" -> "ALEXANDER-ARNOLD"
  */
-function formatDisplayName(fullName: string): string {
+export function formatDisplayName(fullName: string): string {
   if (!fullName) return '';
   const trimmed = fullName.trim().toUpperCase();
-  if (trimmed.length <= 13) return trimmed;
+  if (trimmed.length <= 10) return trimmed;
 
   const parts = trimmed.split(' ').filter(Boolean);
   if (parts.length > 1) {
-    // Handle compound prefixes (e.g., DE BRUYNE, VAN DIJK, DI MARIA)
     const prefixes = ['DE', 'VAN', 'VON', 'DI', 'DA', 'DEL', 'SAN', 'ST.', 'AL', 'EL', 'LA'];
+
+    // Handle 2-part compound surnames (e.g. "Van Dijk" -> "VAN DIJK", "De Bruyne" -> "DE BRUYNE")
+    if (parts.length === 2 && prefixes.includes(parts[0])) {
+      return `${parts[0]} ${parts[1]}`;
+    }
+
+    // Handle suffix-bearing names (e.g. "Vinicius Junior" -> "VINI JR.")
+    const last = parts[parts.length - 1];
+    if (last === 'JUNIOR' || last === 'JR' || last === 'JR.') {
+      const first = parts[0];
+      if (first === 'VINICIUS') return 'VINI JR.';
+      return `${first} JR.`;
+    }
+
+    // Handle compound prefixes (e.g., DE BRUYNE, VAN DIJK, DI MARIA)
     if (parts.length >= 3 && prefixes.includes(parts[parts.length - 2])) {
       const compoundLastName = `${parts[parts.length - 2]} ${parts[parts.length - 1]}`;
-      if (compoundLastName.length <= 13) {
+      if (compoundLastName.length <= 12) {
         return compoundLastName;
       }
     }
 
     const lastName = parts[parts.length - 1];
-    if (lastName.length <= 11) {
+    if (lastName.length <= 10) {
       const firstNameInitial = parts[0][0];
       return `${firstNameInitial}. ${lastName}`;
     }
@@ -50,32 +65,42 @@ function formatDisplayName(fullName: string): string {
   return trimmed;
 }
 
-function getDynamicNameSizeClass(displayName: string, size: 'xs' | 'sm' | 'md' | 'lg'): string {
+export function getDynamicNameSizeClass(displayName: string, size: 'pitch' | 'draft' | 'xs' | 'sm' | 'md' | 'lg'): string {
   const len = displayName.length;
+  if (size === 'pitch') {
+    if (len > 12) return 'text-[6px] sm:text-[7.5px] tracking-tighter leading-none';
+    if (len > 8) return 'text-[7px] sm:text-[8.5px] tracking-tight leading-none';
+    return 'text-[7.5px] sm:text-[9px] tracking-tight leading-none';
+  }
+  if (size === 'draft') {
+    if (len > 12) return 'text-[6.5px] xs:text-[7.5px] sm:text-[9px] md:text-[10.5px] lg:text-xs xl:text-[13px] tracking-tight leading-none';
+    if (len > 8) return 'text-[7.5px] xs:text-[8.5px] sm:text-[10px] md:text-xs lg:text-[13px] xl:text-[14.5px] tracking-tight leading-none';
+    return 'text-[8.5px] xs:text-[9.5px] sm:text-[11px] md:text-[13px] lg:text-sm xl:text-base tracking-tight leading-none';
+  }
   if (size === 'xs') {
-    if (len > 13) return 'text-[6.5px] tracking-tighter';
-    if (len > 10) return 'text-[7.5px] tracking-tight';
-    return 'text-[8.5px] tracking-tight';
+    if (len > 13) return 'text-[7.5px] sm:text-[8.5px] tracking-tighter leading-none';
+    if (len > 10) return 'text-[8.5px] sm:text-[10px] tracking-tight leading-none';
+    return 'text-[9.5px] sm:text-xs tracking-tight leading-none';
   }
   if (size === 'sm') {
-    if (len > 13) return 'text-[8.5px] tracking-tight';
-    if (len > 10) return 'text-[9.5px] tracking-tight';
-    return 'text-[11px] tracking-normal';
+    if (len > 13) return 'text-[9px] sm:text-[10px] tracking-tight leading-none';
+    if (len > 10) return 'text-[10px] sm:text-[11.5px] tracking-tight leading-none';
+    return 'text-xs sm:text-[13px] tracking-normal leading-none';
   }
   if (size === 'md') {
-    if (len > 13) return 'text-[10px] sm:text-xs tracking-tight';
-    if (len > 10) return 'text-xs sm:text-sm tracking-tight';
-    return 'text-xs sm:text-[15px] tracking-normal';
+    if (len > 13) return 'text-xs sm:text-sm tracking-tight leading-none';
+    if (len > 10) return 'text-xs sm:text-[15px] tracking-tight leading-none';
+    return 'text-sm sm:text-base tracking-normal leading-none';
   }
   // size === 'lg'
-  if (len > 13) return 'text-sm tracking-tight';
-  if (len > 10) return 'text-base tracking-normal';
-  return 'text-lg tracking-normal';
+  if (len > 13) return 'text-sm tracking-tight leading-none';
+  if (len > 10) return 'text-base tracking-normal leading-none';
+  return 'text-lg tracking-normal leading-none';
 }
 
 interface PlayerCardProps extends React.HTMLAttributes<HTMLDivElement> {
   player: PlayerCardData;
-  size?: 'xs' | 'sm' | 'md' | 'lg';
+  size?: 'pitch' | 'draft' | 'xs' | 'sm' | 'md' | 'lg';
 }
 
 export function PlayerCard({
@@ -97,6 +122,40 @@ export function PlayerCard({
 
   // Scaled dimensions with Apple subpixel balance
   const scaleMap = {
+    pitch: {
+      card: 'w-[46px] h-[70px] sm:w-[56px] sm:h-[84px] md:w-[62px] md:h-[94px]',
+      framePad: 'p-[1px] sm:p-[1.5px]',
+      inner: 'p-0.5 sm:p-1',
+      header: 'h-2.5 sm:h-3.5',
+      num: 'text-[10px] sm:text-[14px] font-black font-card-num',
+      etBadge: 'h-2.5 w-2.5 p-0.5 sm:h-3 sm:w-3',
+      etLogoSize: 7,
+      avatarRing: 'mt-0.5 h-[26px] w-[26px] sm:h-[34px] sm:w-[34px] p-[1px]',
+      infoPill: 'mt-0.5 h-2.5 px-0.5 gap-0.5 text-[4.5px] sm:h-3 sm:px-1 sm:gap-1 sm:text-[6px]',
+      flag: 'h-1.5 w-2.5 sm:h-2 sm:w-3',
+      club: 'h-2 w-2 sm:h-2.5 sm:w-2.5',
+      posBadge: 'h-2 min-w-2.5 px-0.5 text-[4.5px] sm:text-[6px] font-black',
+      nameWrap: 'h-3 sm:h-4 px-0.5 flex items-center justify-center',
+      tierContainer: 'hidden',
+      tierBadge: 'px-1 py-0 text-[4px] sm:text-[5px] tracking-[0.1em]',
+    },
+    draft: {
+      card: 'w-[64px] h-[98px] xs:w-[70px] xs:h-[108px] sm:w-[102px] sm:h-[156px] md:w-[124px] md:h-[190px] lg:w-[148px] lg:h-[226px] xl:w-[164px] xl:h-[250px]',
+      framePad: 'p-[1px] xs:p-[1.2px] sm:p-[1.5px] md:p-[2px]',
+      inner: 'p-1 xs:p-1 sm:p-1.5 md:p-2',
+      header: 'h-3 xs:h-3.5 sm:h-4.5 md:h-6 lg:h-7 xl:h-8',
+      num: 'text-[12px] xs:text-[14px] sm:text-[18px] md:text-[24px] lg:text-[28px] xl:text-[32px] font-black font-card-num',
+      etBadge: 'h-3 w-3 xs:h-3.5 xs:w-3.5 sm:h-4.5 sm:w-4.5 md:h-6 md:w-6 lg:h-7 lg:w-7 p-0.5',
+      etLogoSize: 10,
+      avatarRing: 'mt-0.5 h-[34px] w-[34px] xs:h-[38px] xs:w-[38px] sm:h-[54px] sm:w-[54px] md:h-[68px] md:w-[68px] lg:h-[82px] lg:w-[82px] xl:h-[94px] xl:w-[94px] p-[1.2px] sm:p-[1.5px] md:p-[2px]',
+      infoPill: 'mt-0.5 h-3 xs:h-3.5 sm:h-4.5 md:h-5.5 lg:h-6.5 px-1 xs:px-1.5 sm:px-2 gap-0.5 xs:gap-1 sm:gap-1.5 text-[5.5px] xs:text-[6.5px] sm:text-[8px] md:text-[9.5px] lg:text-xs',
+      flag: 'h-2 w-3 xs:h-2.5 xs:w-3.5 sm:h-3 sm:w-4.5 md:h-3.5 md:w-5.5 lg:h-4 lg:w-6',
+      club: 'h-2.5 w-2.5 xs:h-3 xs:w-3 sm:h-3.5 sm:w-3.5 md:h-4.5 md:w-4.5 lg:h-5 lg:w-5',
+      posBadge: 'h-2.5 min-w-3 xs:h-3 xs:min-w-3.5 sm:h-3.5 sm:min-w-5 md:h-4 md:min-w-6 lg:h-4.5 lg:min-w-7 px-0.5 sm:px-1 text-[5.5px] xs:text-[6.5px] sm:text-[8px] md:text-[9px] lg:text-[10px] font-black',
+      nameWrap: 'py-0.5 px-0.5 xs:px-1 sm:py-1 sm:px-1.5 md:py-1.5 md:px-2',
+      tierContainer: 'pt-0.5 pb-0 hidden sm:block',
+      tierBadge: 'px-1 sm:px-2 md:px-2.5 py-0 sm:py-0.5 text-[5px] sm:text-[7px] md:text-[8px] lg:text-[9px] tracking-[0.16em]',
+    },
     xs: {
       card: 'w-24 h-[148px] sm:w-28 sm:h-[174px]',
       framePad: 'p-[1.5px]',
@@ -176,6 +235,7 @@ export function PlayerCard({
       <div
         tabIndex={props.onClick ? 0 : undefined}
         role={props.onClick ? 'button' : undefined}
+        aria-label={props['aria-label'] || (props.onClick ? `${displayName}, ${mainPosition}, rating ${rating}, ${tierStyle.name}` : undefined)}
         onKeyDown={(e) => {
           if ((e.key === 'Enter' || e.key === ' ') && props.onClick) {
             e.preventDefault();
@@ -343,7 +403,7 @@ export function PlayerCard({
                 )}
                 style={{
                   borderColor: isLightCard ? `${tierStyle.accent}80` : `${tierStyle.accent}60`,
-                  borderRadius: '999px 999px 12px 12px',
+                  borderRadius: (size === 'pitch' || size === 'draft') ? '5px 5px 4px 4px' : '999px 999px 12px 12px',
                   background: isLightCard
                     ? 'linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(246,239,226,0.92) 100%)'
                     : 'linear-gradient(180deg, rgba(12,18,30,0.92) 0%, rgba(2,5,12,0.96) 100%)',
@@ -368,7 +428,8 @@ export function PlayerCard({
 
                 <h3
                   className={cn(
-                    'font-display relative z-10 w-full truncate px-1 text-center font-black uppercase tracking-wider',
+                    'font-card font-extrabold relative z-10 w-full max-w-full truncate text-center uppercase',
+                    (size === 'pitch' || size === 'draft') ? 'px-0.5' : 'px-1',
                     getDynamicNameSizeClass(displayName, size),
                   )}
                   style={{
@@ -418,8 +479,10 @@ export function PlayerCard({
   );
 }
 
-export function PlayerCardSkeleton({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
+export function PlayerCardSkeleton({ size = 'md' }: { size?: 'pitch' | 'xs' | 'sm' | 'md' | 'lg' }) {
   const scaleMap = {
+    pitch: 'w-[54px] h-[82px] sm:w-[68px] sm:h-[104px]',
+    xs: 'w-24 h-[148px] sm:w-28 sm:h-[174px]',
     sm: 'w-36 h-[220px]',
     md: 'w-36 h-[220px] sm:w-48 sm:h-[295px]',
     lg: 'w-60 h-[370px]',

@@ -317,7 +317,7 @@ export function FifaPackOpening({
                   <span className="inline sm:hidden">{lang === 'ar' ? 'إغلاق' : 'Back'}</span>
                   <span className="hidden sm:inline">{t('packs.closeAndBack')}</span>
                 </span>
-                <span className="hidden md:inline-block rounded bg-white/10 px-1.5 py-0.2 text-[9px] font-mono text-steel">
+                <span className="hidden md:inline-block rounded bg-white/10 px-1.5 py-0.5 text-[9px] font-mono text-steel">
                   ESC
                 </span>
               </button>

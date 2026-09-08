@@ -119,10 +119,10 @@ export function RankRevealView({
             <span className="text-xs text-steel font-semibold uppercase tracking-wider">
               {t('rank.yourScore')}:
             </span>
-            <span className="text-sm font-bold text-lime flex items-center gap-1">
+            <span className="text-sm font-bold text-amber-300 flex items-center gap-1">
               {userRoundScore > 0 ? `+${userRoundScore}` : userRoundScore} pts
               {userRoundScore === 10 && (
-                <AppIcon icon={Sparkle} size={14} weight="fill" className="text-amber-400 animate-pulse" />
+                <AppIcon icon={Sparkle} size={15} weight="fill" className="text-amber-400 animate-pulse" />
               )}
             </span>
           </div>
@@ -167,7 +167,7 @@ export function RankRevealView({
                 flex items-center justify-between px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl border w-full transition-all backdrop-blur-xl
                 ${
                   isExact
-                    ? 'border-lime/45 bg-slate-900/95 shadow-[0_4px_16px_rgba(142,224,0,0.12),inset_0_1px_0_0_rgba(255,255,255,0.1)]'
+                    ? 'border-amber-400/50 bg-slate-900/95 shadow-[0_4px_16px_rgba(245,158,11,0.12),inset_0_1px_0_0_rgba(255,255,255,0.1)]'
                     : isTop
                       ? 'border-white/15 bg-slate-900/90 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)]'
                       : 'border-white/[0.12] bg-slate-900/85 shadow-[0_4px_16px_rgba(0,0,0,0.35),inset_0_1px_0_0_rgba(255,255,255,0.06)]'
@@ -182,7 +182,7 @@ export function RankRevealView({
                     flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-xl text-xs font-bold font-display-number shadow-sm
                     ${
                       isTop
-                        ? 'bg-lime text-slate-950 shadow-[0_2px_8px_rgba(142,224,0,0.3)]'
+                        ? 'bg-gradient-to-br from-amber-400 to-yellow-300 text-slate-950 shadow-[0_2px_8px_rgba(245,158,11,0.35)]'
                         : 'bg-slate-800/90 text-slate-300 border border-white/5'
                     }
                   `}
@@ -202,11 +202,11 @@ export function RankRevealView({
                       {mainName}
                     </span>
                     {tag && (
-                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-lime font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
+                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-amber-300 font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
                         {tag}
                       </span>
                     )}
-                    <span className="font-semibold text-lime text-xs font-stats shrink-0">
+                    <span className="font-semibold text-amber-300 text-xs font-stats shrink-0">
                       ({item.valueLabel})
                     </span>
                   </div>
@@ -234,7 +234,7 @@ export function RankRevealView({
           type="button"
           onClick={handleAdvanceClick}
           disabled={isAdvancing}
-          className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-lime shadow-[0_8px_20px_rgba(142,224,0,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
+          className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 to-yellow-300 shadow-[0_8px_20px_rgba(245,158,11,0.3),inset_0_1px_0_0_rgba(255,255,255,0.35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
         >
           {isLastRound ? (
             <>

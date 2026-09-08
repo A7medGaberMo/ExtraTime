@@ -15,6 +15,7 @@ export interface PitchSquadPlayer {
   kitNumber?: number;
   isSub?: boolean;
   rating?: number;
+  cost?: number;
 }
 
 export interface TacticalPitchViewProps {
@@ -33,7 +34,9 @@ export interface TacticalPitchViewProps {
 function toSlots(squad: PitchSquadPlayer[]): TacticalSquadSlot[] {
   return squad.map((p) => ({
     position: p.position,
+    cost: p.cost,
     player: {
+      id: p.playerId,
       name: p.name,
       tier: p.tier,
       imageUrl: p.imageUrl,
@@ -41,6 +44,7 @@ function toSlots(squad: PitchSquadPlayer[]): TacticalSquadSlot[] {
       nation: p.nation,
       isLegend: p.isLegend,
       kitNumber: p.kitNumber,
+      rating: p.rating,
     },
     isSub: p.isSub,
   }));
@@ -102,7 +106,8 @@ export function TacticalPitchView({
         title={`${cleanTeamName}'s Lineup`}
         accentColor={accent}
         badgeLabel={tab === 'host' ? 'HOME SQUAD' : 'AWAY SQUAD'}
-        compact={true}
+        compact={false}
+        className="w-full max-w-[340px] sm:max-w-[400px]"
       />
     </div>
   );

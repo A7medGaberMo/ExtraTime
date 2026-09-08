@@ -13,6 +13,7 @@ import { Button } from '@/components/ui/button';
 import {
   Crosshair,
   Ranking,
+  Lightning,
   Play,
   Trash,
   Clock,
@@ -40,13 +41,21 @@ export function ActiveMatchBanner() {
 
   const isSnipe = activeMatch.type === 'snipe';
   const isRank = activeMatch.type === 'rank';
+  const isDraft = activeMatch.type === 'draft';
   const isWaiting = activeMatch.status === 'waiting';
 
-  const title = isSnipe ? t('home.activeMatch.snipeTitle') : t('home.activeMatch.rankTitle');
+  const title = isSnipe
+    ? t('home.activeMatch.snipeTitle')
+    : isRank
+      ? t('home.activeMatch.rankTitle')
+      : 'Extra Draft';
 
   let subtitle = '';
   if (isWaiting) {
     subtitle = t('home.activeMatch.waitingRival');
+  } else if (isDraft) {
+    const slotIdx = (activeMatch as any).currentSlotIndex ?? 0;
+    subtitle = `Pick ${Math.min(14, slotIdx + 1)}/14 · Draft Arena`;
   } else if (isRank && activeMatch.currentRound && activeMatch.roundCount) {
     subtitle = t('home.activeMatch.roundProgress')
       .replace('{current}', String(activeMatch.currentRound))
@@ -65,6 +74,8 @@ export function ActiveMatchBanner() {
       router.push(`/auction/${activeMatch.id}`);
     } else if (isRank) {
       router.push(`/rank/${activeMatch.id}`);
+    } else if (isDraft) {
+      router.push(`/draft/${activeMatch.id}`);
     }
   }
 
@@ -104,7 +115,7 @@ export function ActiveMatchBanner() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
               <span className="relative inline-flex rounded-full h-3 w-3 bg-lime" />
             </span>
-            <AppIcon icon={isSnipe ? Crosshair : Ranking} size={22} weight="duotone" />
+            <AppIcon icon={isSnipe ? Crosshair : isRank ? Ranking : Lightning} size={22} weight="duotone" />
           </div>
 
           <div className="min-w-0 flex-1">

@@ -16,6 +16,8 @@ import {
   SignIn,
   Cards,
   Ranking,
+  Lightning,
+  Crosshair,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { ETLogo } from '@/components/shared/et-logo';
@@ -119,18 +121,45 @@ export function Header() {
 
   const navLinks = [
     { href: '/', label: t('nav.arena'), icon: House },
-    { href: '/rank', label: t('nav.rank'), icon: Ranking },
     { href: '/packs', label: t('nav.packs'), icon: Cards },
     { href: '/create-room', label: t('nav.create'), icon: PlusCircle },
+    { href: '/join-room', label: t('nav.join'), icon: SignIn },
   ];
 
-  if (isOverlayActive) {
+  const gameChannels = [
+    {
+      id: 'snipe',
+      label: lang === 'ar' ? 'سنايب' : 'Snipe',
+      href: '/create-room?mode=snipe',
+      icon: Crosshair,
+      color: 'lime',
+      isActive: pathname === '/' || pathname.includes('mode=snipe') || pathname.startsWith('/auction'),
+    },
+    {
+      id: 'rank',
+      label: lang === 'ar' ? 'رتّب' : 'Rank',
+      href: '/rank',
+      icon: Ranking,
+      color: 'amber',
+      isActive: pathname.startsWith('/rank') || pathname.includes('mode=rank'),
+    },
+    {
+      id: 'draft',
+      label: lang === 'ar' ? 'اكسترا درافت' : 'Extra Draft',
+      href: '/draft',
+      icon: Lightning,
+      color: 'cyan',
+      isActive: pathname.startsWith('/draft'),
+    },
+  ];
+
+  if (isOverlayActive || isGameplay) {
     return null;
   }
 
   return (
     <header className="fixed top-[max(0.625rem,env(safe-area-inset-top,0.625rem))] inset-x-0 z-50 flex justify-center pointer-events-none select-none px-2 sm:px-3 w-full" dir="ltr">
-      <div ref={notchRef} className="pointer-events-auto max-w-[calc(100vw-1rem)] flex justify-center">
+      <div ref={notchRef} className="pointer-events-auto max-w-[calc(100vw-1rem)] flex flex-col items-center">
         <AnimatePresence initial={false} mode="wait">
           {!isOpen ? (
             /* ── Collapsed Dynamic Island Capsule ── */
@@ -193,7 +222,9 @@ export function Header() {
                   href={
                     activeMatch.type === 'snipe'
                       ? `/auction/${activeMatch.id}`
-                      : `/rank/${activeMatch.id}`
+                      : activeMatch.type === 'rank'
+                        ? `/rank/${activeMatch.id}`
+                        : `/draft/${activeMatch.id}`
                   }
                   className="flex items-center gap-1.5 rounded-full border border-lime/40 bg-lime/15 px-2 py-0.5 text-lime shadow-glow-lime transition-all animate-pulse shrink-0 cursor-pointer sm:px-2.5 hover:bg-lime/25"
                   title="Resume live match"
@@ -362,9 +393,51 @@ export function Header() {
                 </Link>
               )}
 
-              {/* Quick Navigation 4-Box Grid */}
-              <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
-                {navLinks.map((item) => {
+              {/* 3 Main Games Grid in Expanded Island */}
+              <div className="space-y-1 mb-2.5">
+                <div className="text-[10px] font-black uppercase tracking-wider text-steel px-1">
+                  {lang === 'ar' ? 'ألعاب إكسترا تايم الرئيسية' : 'Main Match Arenas'}
+                </div>
+                <div className="grid grid-cols-3 gap-1.5">
+                  {gameChannels.map((game) => {
+                    const IconComp = game.icon;
+                    return (
+                      <Link
+                        key={game.id}
+                        href={game.href}
+                        onClick={() => setIsOpen(false)}
+                        className={cn(
+                          'btn-haptic flex flex-col items-center justify-center gap-1 rounded-2xl border p-2 text-center transition-all cursor-pointer group',
+                          game.color === 'lime'
+                            ? 'border-lime/30 bg-lime/10 hover:border-lime hover:bg-lime/20'
+                            : game.color === 'amber'
+                              ? 'border-amber-400/30 bg-amber-400/10 hover:border-amber-400 hover:bg-amber-400/20'
+                              : 'border-cyan-400/30 bg-cyan-400/10 hover:border-cyan-400 hover:bg-cyan-400/20',
+                        )}
+                      >
+                        <AppIcon
+                          icon={IconComp}
+                          size={18}
+                          weight="bold"
+                          className={
+                            game.color === 'lime'
+                              ? 'text-lime'
+                              : game.color === 'amber'
+                                ? 'text-amber-400'
+                                : 'text-cyan-400'
+                          }
+                        />
+                        <span className="text-xs font-bold text-white tracking-tight">{game.label}</span>
+                        <span className="text-[9px] text-steel">Create & Join</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Quick Navigation 3-Box Grid */}
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
+                {navLinks.slice(1).map((item) => {
                   const IconComp = item.icon;
                   return (
                     <Link

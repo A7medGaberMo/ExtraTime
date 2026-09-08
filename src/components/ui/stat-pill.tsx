@@ -4,7 +4,7 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 
 export interface StatPillProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: 'lime' | 'amber' | 'sky' | 'rose' | 'muted';
+  variant?: 'lime' | 'amber' | 'sky' | 'rose' | 'muted' | 'cyan';
   size?: 'sm' | 'md';
   icon?: React.ReactNode;
   label?: string;
@@ -25,6 +25,7 @@ export function StatPill({
     lime: 'border-lime/35 bg-lime/10 text-lime shadow-[inset_0_1px_0_0_rgba(142,224,0,0.2)]',
     amber: 'border-amber-400/35 bg-amber-400/10 text-amber-300 shadow-[inset_0_1px_0_0_rgba(251,191,36,0.2)]',
     sky: 'border-sky-400/35 bg-sky-400/10 text-sky-300 shadow-[inset_0_1px_0_0_rgba(56,189,248,0.2)]',
+    cyan: 'border-cyan-400/35 bg-cyan-400/10 text-cyan-300 shadow-[inset_0_1px_0_0_rgba(0,240,255,0.2)]',
     rose: 'border-rose-500/35 bg-rose-500/10 text-rose-400 shadow-[inset_0_1px_0_0_rgba(244,63,94,0.2)]',
     muted: 'border-white/12 bg-slate-900/80 text-steel shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)]',
   }[variant];

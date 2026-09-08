@@ -1,0 +1,709 @@
+[
+  {
+    "name": "Premier League",
+    "country": "England",
+    "leagueId": 39,
+    "teams": [
+      {
+        "name": "Arsenal",
+        "id": 42,
+        "slug": "arsenal",
+        "logo": "https://media.api-sports.io/football/teams/42.png",
+        "endpoint": "/players/squads?team=42"
+      },
+      {
+        "name": "Aston Villa",
+        "id": 66,
+        "slug": "aston-villa",
+        "logo": "https://media.api-sports.io/football/teams/66.png",
+        "endpoint": "/players/squads?team=66"
+      },
+      {
+        "name": "Bournemouth",
+        "id": 35,
+        "slug": "bournemouth",
+        "logo": "https://media.api-sports.io/football/teams/35.png",
+        "endpoint": "/players/squads?team=35"
+      },
+      {
+        "name": "Brentford",
+        "id": 55,
+        "slug": "brentford",
+        "logo": "https://media.api-sports.io/football/teams/55.png",
+        "endpoint": "/players/squads?team=55"
+      },
+      {
+        "name": "Brighton & Hove Albion",
+        "id": 51,
+        "slug": "brighton",
+        "logo": "https://media.api-sports.io/football/teams/51.png",
+        "endpoint": "/players/squads?team=51"
+      },
+      {
+        "name": "Chelsea",
+        "id": 49,
+        "slug": "chelsea",
+        "logo": "https://media.api-sports.io/football/teams/49.png",
+        "endpoint": "/players/squads?team=49"
+      },
+      {
+        "name": "Crystal Palace",
+        "id": 52,
+        "slug": "crystal-palace",
+        "logo": "https://media.api-sports.io/football/teams/52.png",
+        "endpoint": "/players/squads?team=52"
+      },
+      {
+        "name": "Everton",
+        "id": 45,
+        "slug": "everton",
+        "logo": "https://media.api-sports.io/football/teams/45.png",
+        "endpoint": "/players/squads?team=45"
+      },
+      {
+        "name": "Fulham",
+        "id": 36,
+        "slug": "fulham",
+        "logo": "https://media.api-sports.io/football/teams/36.png",
+        "endpoint": "/players/squads?team=36"
+      },
+      {
+        "name": "Ipswich Town",
+        "id": 57,
+        "slug": "ipswich",
+        "logo": "https://media.api-sports.io/football/teams/57.png",
+        "endpoint": "/players/squads?team=57"
+      },
+      {
+        "name": "Leicester City",
+        "id": 46,
+        "slug": "leicester",
+        "logo": "https://media.api-sports.io/football/teams/46.png",
+        "endpoint": "/players/squads?team=46"
+      },
+      {
+        "name": "Liverpool",
+        "id": 40,
+        "slug": "liverpool",
+        "logo": "https://media.api-sports.io/football/teams/40.png",
+        "endpoint": "/players/squads?team=40"
+      },
+      {
+        "name": "Manchester City",
+        "id": 50,
+        "slug": "manchester-city",
+        "logo": "https://media.api-sports.io/football/teams/50.png",
+        "endpoint": "/players/squads?team=50"
+      },
+      {
+        "name": "Manchester United",
+        "id": 33,
+        "slug": "manchester-united",
+        "logo": "https://media.api-sports.io/football/teams/33.png",
+        "endpoint": "/players/squads?team=33"
+      },
+      {
+        "name": "Newcastle United",
+        "id": 34,
+        "slug": "newcastle",
+        "logo": "https://media.api-sports.io/football/teams/34.png",
+        "endpoint": "/players/squads?team=34"
+      },
+      {
+        "name": "Nottingham Forest",
+        "id": 65,
+        "slug": "nottingham-forest",
+        "logo": "https://media.api-sports.io/football/teams/65.png",
+        "endpoint": "/players/squads?team=65"
+      },
+      {
+        "name": "Southampton",
+        "id": 41,
+        "slug": "southampton",
+        "logo": "https://media.api-sports.io/football/teams/41.png",
+        "endpoint": "/players/squads?team=41"
+      },
+      {
+        "name": "Tottenham Hotspur",
+        "id": 47,
+        "slug": "tottenham",
+        "logo": "https://media.api-sports.io/football/teams/47.png",
+        "endpoint": "/players/squads?team=47"
+      },
+      {
+        "name": "West Ham United",
+        "id": 48,
+        "slug": "west-ham",
+        "logo": "https://media.api-sports.io/football/teams/48.png",
+        "endpoint": "/players/squads?team=48"
+      },
+      {
+        "name": "Wolverhampton Wanderers",
+        "id": 39,
+        "slug": "wolves",
+        "logo": "https://media.api-sports.io/football/teams/39.png",
+        "endpoint": "/players/squads?team=39"
+      }
+    ]
+  },
+  {
+    "name": "La Liga",
+    "country": "Spain",
+    "leagueId": 140,
+    "teams": [
+      {
+        "name": "Athletic Club",
+        "id": 531,
+        "slug": "athletic-club",
+        "logo": "https://media.api-sports.io/football/teams/531.png",
+        "endpoint": "/players/squads?team=531"
+      },
+      {
+        "name": "Atlético Madrid",
+        "id": 530,
+        "slug": "atletico-madrid",
+        "logo": "https://media.api-sports.io/football/teams/530.png",
+        "endpoint": "/players/squads?team=530"
+      },
+      {
+        "name": "FC Barcelona",
+        "id": 529,
+        "slug": "barcelona",
+        "logo": "https://media.api-sports.io/football/teams/529.png",
+        "endpoint": "/players/squads?team=529"
+      },
+      {
+        "name": "Celta Vigo",
+        "id": 538,
+        "slug": "celta-vigo",
+        "logo": "https://media.api-sports.io/football/teams/538.png",
+        "endpoint": "/players/squads?team=538"
+      },
+      {
+        "name": "Deportivo Alavés",
+        "id": 542,
+        "slug": "alaves",
+        "logo": "https://media.api-sports.io/football/teams/542.png",
+        "endpoint": "/players/squads?team=542"
+      },
+      {
+        "name": "RCD Espanyol",
+        "id": 540,
+        "slug": "espanyol",
+        "logo": "https://media.api-sports.io/football/teams/540.png",
+        "endpoint": "/players/squads?team=540"
+      },
+      {
+        "name": "Getafe CF",
+        "id": 546,
+        "slug": "getafe",
+        "logo": "https://media.api-sports.io/football/teams/546.png",
+        "endpoint": "/players/squads?team=546"
+      },
+      {
+        "name": "Girona FC",
+        "id": 547,
+        "slug": "girona",
+        "logo": "https://media.api-sports.io/football/teams/547.png",
+        "endpoint": "/players/squads?team=547"
+      },
+      {
+        "name": "UD Las Palmas",
+        "id": 534,
+        "slug": "las-palmas",
+        "logo": "https://media.api-sports.io/football/teams/534.png",
+        "endpoint": "/players/squads?team=534"
+      },
+      {
+        "name": "CD Leganés",
+        "id": 537,
+        "slug": "leganes",
+        "logo": "https://media.api-sports.io/football/teams/537.png",
+        "endpoint": "/players/squads?team=537"
+      },
+      {
+        "name": "RCD Mallorca",
+        "id": 798,
+        "slug": "mallorca",
+        "logo": "https://media.api-sports.io/football/teams/798.png",
+        "endpoint": "/players/squads?team=798"
+      },
+      {
+        "name": "CA Osasuna",
+        "id": 727,
+        "slug": "osasuna",
+        "logo": "https://media.api-sports.io/football/teams/727.png",
+        "endpoint": "/players/squads?team=727"
+      },
+      {
+        "name": "Rayo Vallecano",
+        "id": 728,
+        "slug": "rayo-vallecano",
+        "logo": "https://media.api-sports.io/football/teams/728.png",
+        "endpoint": "/players/squads?team=728"
+      },
+      {
+        "name": "Real Betis",
+        "id": 543,
+        "slug": "real-betis",
+        "logo": "https://media.api-sports.io/football/teams/543.png",
+        "endpoint": "/players/squads?team=543"
+      },
+      {
+        "name": "Real Madrid",
+        "id": 541,
+        "slug": "real-madrid",
+        "logo": "https://media.api-sports.io/football/teams/541.png",
+        "endpoint": "/players/squads?team=541"
+      },
+      {
+        "name": "Real Sociedad",
+        "id": 548,
+        "slug": "real-sociedad",
+        "logo": "https://media.api-sports.io/football/teams/548.png",
+        "endpoint": "/players/squads?team=548"
+      },
+      {
+        "name": "Real Valladolid",
+        "id": 720,
+        "slug": "real-valladolid",
+        "logo": "https://media.api-sports.io/football/teams/720.png",
+        "endpoint": "/players/squads?team=720"
+      },
+      {
+        "name": "Sevilla FC",
+        "id": 536,
+        "slug": "sevilla",
+        "logo": "https://media.api-sports.io/football/teams/536.png",
+        "endpoint": "/players/squads?team=536"
+      },
+      {
+        "name": "Valencia CF",
+        "id": 532,
+        "slug": "valencia",
+        "logo": "https://media.api-sports.io/football/teams/532.png",
+        "endpoint": "/players/squads?team=532"
+      },
+      {
+        "name": "Villarreal CF",
+        "id": 533,
+        "slug": "villarreal",
+        "logo": "https://media.api-sports.io/football/teams/533.png",
+        "endpoint": "/players/squads?team=533"
+      }
+    ]
+  },
+  {
+    "name": "Serie A",
+    "country": "Italy",
+    "leagueId": 135,
+    "teams": [
+      {
+        "name": "AC Milan",
+        "id": 489,
+        "slug": "ac-milan",
+        "logo": "https://media.api-sports.io/football/teams/489.png",
+        "endpoint": "/players/squads?team=489"
+      },
+      {
+        "name": "Atalanta",
+        "id": 499,
+        "slug": "atalanta",
+        "logo": "https://media.api-sports.io/football/teams/499.png",
+        "endpoint": "/players/squads?team=499"
+      },
+      {
+        "name": "Bologna",
+        "id": 500,
+        "slug": "bologna",
+        "logo": "https://media.api-sports.io/football/teams/500.png",
+        "endpoint": "/players/squads?team=500"
+      },
+      {
+        "name": "Cagliari",
+        "id": 490,
+        "slug": "cagliari",
+        "logo": "https://media.api-sports.io/football/teams/490.png",
+        "endpoint": "/players/squads?team=490"
+      },
+      {
+        "name": "Como",
+        "id": 895,
+        "slug": "como",
+        "logo": "https://media.api-sports.io/football/teams/895.png",
+        "endpoint": "/players/squads?team=895"
+      },
+      {
+        "name": "Empoli",
+        "id": 511,
+        "slug": "empoli",
+        "logo": "https://media.api-sports.io/football/teams/511.png",
+        "endpoint": "/players/squads?team=511"
+      },
+      {
+        "name": "Fiorentina",
+        "id": 502,
+        "slug": "fiorentina",
+        "logo": "https://media.api-sports.io/football/teams/502.png",
+        "endpoint": "/players/squads?team=502"
+      },
+      {
+        "name": "Genoa",
+        "id": 495,
+        "slug": "genoa",
+        "logo": "https://media.api-sports.io/football/teams/495.png",
+        "endpoint": "/players/squads?team=495"
+      },
+      {
+        "name": "Hellas Verona",
+        "id": 504,
+        "slug": "hellas-verona",
+        "logo": "https://media.api-sports.io/football/teams/504.png",
+        "endpoint": "/players/squads?team=504"
+      },
+      {
+        "name": "Inter Milan",
+        "id": 505,
+        "slug": "inter",
+        "logo": "https://media.api-sports.io/football/teams/505.png",
+        "endpoint": "/players/squads?team=505"
+      },
+      {
+        "name": "Juventus",
+        "id": 496,
+        "slug": "juventus",
+        "logo": "https://media.api-sports.io/football/teams/496.png",
+        "endpoint": "/players/squads?team=496"
+      },
+      {
+        "name": "Lazio",
+        "id": 487,
+        "slug": "lazio",
+        "logo": "https://media.api-sports.io/football/teams/487.png",
+        "endpoint": "/players/squads?team=487"
+      },
+      {
+        "name": "Lecce",
+        "id": 867,
+        "slug": "lecce",
+        "logo": "https://media.api-sports.io/football/teams/867.png",
+        "endpoint": "/players/squads?team=867"
+      },
+      {
+        "name": "Monza",
+        "id": 1579,
+        "slug": "monza",
+        "logo": "https://media.api-sports.io/football/teams/1579.png",
+        "endpoint": "/players/squads?team=1579"
+      },
+      {
+        "name": "Napoli",
+        "id": 492,
+        "slug": "napoli",
+        "logo": "https://media.api-sports.io/football/teams/492.png",
+        "endpoint": "/players/squads?team=492"
+      },
+      {
+        "name": "Parma",
+        "id": 523,
+        "slug": "parma",
+        "logo": "https://media.api-sports.io/football/teams/523.png",
+        "endpoint": "/players/squads?team=523"
+      },
+      {
+        "name": "AS Roma",
+        "id": 497,
+        "slug": "as-roma",
+        "logo": "https://media.api-sports.io/football/teams/497.png",
+        "endpoint": "/players/squads?team=497"
+      },
+      {
+        "name": "Torino",
+        "id": 503,
+        "slug": "torino",
+        "logo": "https://media.api-sports.io/football/teams/503.png",
+        "endpoint": "/players/squads?team=503"
+      },
+      {
+        "name": "Udinese",
+        "id": 494,
+        "slug": "udinese",
+        "logo": "https://media.api-sports.io/football/teams/494.png",
+        "endpoint": "/players/squads?team=494"
+      },
+      {
+        "name": "Venezia",
+        "id": 517,
+        "slug": "venezia",
+        "logo": "https://media.api-sports.io/football/teams/517.png",
+        "endpoint": "/players/squads?team=517"
+      }
+    ]
+  },
+  {
+    "name": "Bundesliga",
+    "country": "Germany",
+    "leagueId": 78,
+    "teams": [
+      {
+        "name": "FC Augsburg",
+        "id": 170,
+        "slug": "fc-augsburg",
+        "logo": "https://media.api-sports.io/football/teams/170.png",
+        "endpoint": "/players/squads?team=170"
+      },
+      {
+        "name": "Bayer Leverkusen",
+        "id": 168,
+        "slug": "bayer-leverkusen",
+        "logo": "https://media.api-sports.io/football/teams/168.png",
+        "endpoint": "/players/squads?team=168"
+      },
+      {
+        "name": "Bayern München",
+        "id": 157,
+        "slug": "bayern-munchen",
+        "logo": "https://media.api-sports.io/football/teams/157.png",
+        "endpoint": "/players/squads?team=157"
+      },
+      {
+        "name": "VfL Bochum",
+        "id": 176,
+        "slug": "vfl-bochum",
+        "logo": "https://media.api-sports.io/football/teams/176.png",
+        "endpoint": "/players/squads?team=176"
+      },
+      {
+        "name": "Borussia Dortmund",
+        "id": 165,
+        "slug": "borussia-dortmund",
+        "logo": "https://media.api-sports.io/football/teams/165.png",
+        "endpoint": "/players/squads?team=165"
+      },
+      {
+        "name": "Borussia Mönchengladbach",
+        "id": 163,
+        "slug": "borussia-monchengladbach",
+        "logo": "https://media.api-sports.io/football/teams/163.png",
+        "endpoint": "/players/squads?team=163"
+      },
+      {
+        "name": "Eintracht Frankfurt",
+        "id": 169,
+        "slug": "eintracht-frankfurt",
+        "logo": "https://media.api-sports.io/football/teams/169.png",
+        "endpoint": "/players/squads?team=169"
+      },
+      {
+        "name": "SC Freiburg",
+        "id": 160,
+        "slug": "sc-freiburg",
+        "logo": "https://media.api-sports.io/football/teams/160.png",
+        "endpoint": "/players/squads?team=160"
+      },
+      {
+        "name": "1. FC Heidenheim",
+        "id": 180,
+        "slug": "1-fc-heidenheim",
+        "logo": "https://media.api-sports.io/football/teams/180.png",
+        "endpoint": "/players/squads?team=180"
+      },
+      {
+        "name": "TSG Hoffenheim",
+        "id": 167,
+        "slug": "1899-hoffenheim",
+        "logo": "https://media.api-sports.io/football/teams/167.png",
+        "endpoint": "/players/squads?team=167"
+      },
+      {
+        "name": "Holstein Kiel",
+        "id": 191,
+        "slug": "holstein-kiel",
+        "logo": "https://media.api-sports.io/football/teams/191.png",
+        "endpoint": "/players/squads?team=191"
+      },
+      {
+        "name": "RB Leipzig",
+        "id": 173,
+        "slug": "rb-leipzig",
+        "logo": "https://media.api-sports.io/football/teams/173.png",
+        "endpoint": "/players/squads?team=173"
+      },
+      {
+        "name": "FSV Mainz 05",
+        "id": 164,
+        "slug": "fsv-mainz-05",
+        "logo": "https://media.api-sports.io/football/teams/164.png",
+        "endpoint": "/players/squads?team=164"
+      },
+      {
+        "name": "FC St. Pauli",
+        "id": 186,
+        "slug": "fc-st-pauli",
+        "logo": "https://media.api-sports.io/football/teams/186.png",
+        "endpoint": "/players/squads?team=186"
+      },
+      {
+        "name": "VfB Stuttgart",
+        "id": 172,
+        "slug": "vfb-stuttgart",
+        "logo": "https://media.api-sports.io/football/teams/172.png",
+        "endpoint": "/players/squads?team=172"
+      },
+      {
+        "name": "Union Berlin",
+        "id": 182,
+        "slug": "union-berlin",
+        "logo": "https://media.api-sports.io/football/teams/182.png",
+        "endpoint": "/players/squads?team=182"
+      },
+      {
+        "name": "Werder Bremen",
+        "id": 162,
+        "slug": "werder-bremen",
+        "logo": "https://media.api-sports.io/football/teams/162.png",
+        "endpoint": "/players/squads?team=162"
+      },
+      {
+        "name": "VfL Wolfsburg",
+        "id": 161,
+        "slug": "vfl-wolfsburg",
+        "logo": "https://media.api-sports.io/football/teams/161.png",
+        "endpoint": "/players/squads?team=161"
+      }
+    ]
+  },
+  {
+    "name": "Ligue 1",
+    "country": "France",
+    "leagueId": 61,
+    "teams": [
+      {
+        "name": "Angers SCO",
+        "id": 77,
+        "slug": "angers",
+        "logo": "https://media.api-sports.io/football/teams/77.png",
+        "endpoint": "/players/squads?team=77"
+      },
+      {
+        "name": "AJ Auxerre",
+        "id": 108,
+        "slug": "auxerre",
+        "logo": "https://media.api-sports.io/football/teams/108.png",
+        "endpoint": "/players/squads?team=108"
+      },
+      {
+        "name": "Stade Brestois 29",
+        "id": 106,
+        "slug": "stade-brestois-29",
+        "logo": "https://media.api-sports.io/football/teams/106.png",
+        "endpoint": "/players/squads?team=106"
+      },
+      {
+        "name": "Le Havre AC",
+        "id": 111,
+        "slug": "le-havre",
+        "logo": "https://media.api-sports.io/football/teams/111.png",
+        "endpoint": "/players/squads?team=111"
+      },
+      {
+        "name": "RC Lens",
+        "id": 116,
+        "slug": "lens",
+        "logo": "https://media.api-sports.io/football/teams/116.png",
+        "endpoint": "/players/squads?team=116"
+      },
+      {
+        "name": "LOSC Lille",
+        "id": 79,
+        "slug": "lille",
+        "logo": "https://media.api-sports.io/football/teams/79.png",
+        "endpoint": "/players/squads?team=79"
+      },
+      {
+        "name": "Olympique Lyonnais",
+        "id": 80,
+        "slug": "lyon",
+        "logo": "https://media.api-sports.io/football/teams/80.png",
+        "endpoint": "/players/squads?team=80"
+      },
+      {
+        "name": "Olympique de Marseille",
+        "id": 81,
+        "slug": "marseille",
+        "logo": "https://media.api-sports.io/football/teams/81.png",
+        "endpoint": "/players/squads?team=81"
+      },
+      {
+        "name": "AS Monaco",
+        "id": 91,
+        "slug": "monaco",
+        "logo": "https://media.api-sports.io/football/teams/91.png",
+        "endpoint": "/players/squads?team=91"
+      },
+      {
+        "name": "Montpellier HSC",
+        "id": 82,
+        "slug": "montpellier",
+        "logo": "https://media.api-sports.io/football/teams/82.png",
+        "endpoint": "/players/squads?team=82"
+      },
+      {
+        "name": "FC Nantes",
+        "id": 83,
+        "slug": "nantes",
+        "logo": "https://media.api-sports.io/football/teams/83.png",
+        "endpoint": "/players/squads?team=83"
+      },
+      {
+        "name": "OGC Nice",
+        "id": 84,
+        "slug": "nice",
+        "logo": "https://media.api-sports.io/football/teams/84.png",
+        "endpoint": "/players/squads?team=84"
+      },
+      {
+        "name": "Paris Saint-Germain",
+        "id": 85,
+        "slug": "paris-saint-germain",
+        "logo": "https://media.api-sports.io/football/teams/85.png",
+        "endpoint": "/players/squads?team=85"
+      },
+      {
+        "name": "Stade de Reims",
+        "id": 93,
+        "slug": "reims",
+        "logo": "https://media.api-sports.io/football/teams/93.png",
+        "endpoint": "/players/squads?team=93"
+      },
+      {
+        "name": "Stade Rennais FC",
+        "id": 94,
+        "slug": "rennes",
+        "logo": "https://media.api-sports.io/football/teams/94.png",
+        "endpoint": "/players/squads?team=94"
+      },
+      {
+        "name": "AS Saint-Étienne",
+        "id": 1063,
+        "slug": "saint-etienne",
+        "logo": "https://media.api-sports.io/football/teams/1063.png",
+        "endpoint": "/players/squads?team=1063"
+      },
+      {
+        "name": "RC Strasbourg Alsace",
+        "id": 95,
+        "slug": "strasbourg",
+        "logo": "https://media.api-sports.io/football/teams/95.png",
+        "endpoint": "/players/squads?team=95"
+      },
+      {
+        "name": "Toulouse FC",
+        "id": 96,
+        "slug": "toulouse",
+        "logo": "https://media.api-sports.io/football/teams/96.png",
+        "endpoint": "/players/squads?team=96"
+      }
+    ]
+  }
+]

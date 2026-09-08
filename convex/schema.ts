@@ -7,6 +7,7 @@ import { auctionsTable } from './auctions/schema';
 import { matchesTable } from './matches/schema';
 import { guestsTable } from './guests/schema';
 import { rankQuestionsTable, rankGamesTable } from './rank/schema';
+import { draftGamesTable } from './draft/schema';
 
 export default defineSchema(
   {
@@ -19,6 +20,7 @@ export default defineSchema(
     guestUsers: guestsTable,
     rankQuestions: rankQuestionsTable,
     rankGames: rankGamesTable,
+    draftGames: draftGamesTable,
   },
   { schemaValidation: false }
 );

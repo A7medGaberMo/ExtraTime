@@ -78,7 +78,7 @@ export interface SimSynergyBreakdown {
 export interface SimMatchResult {
   matchId: string;
   roomId: string;
-  gameType: 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout';
+  gameType: 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout' | 'classic_draft';
   seed: string;
   score: { host: number; guest: number };
   winnerId: string | null; // null on draw

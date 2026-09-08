@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useMemo, type ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 import { X, CheckCircle, WarningCircle, Warning, Info } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
@@ -13,8 +13,15 @@ interface Toast {
   variant: ToastVariant;
 }
 
+export type ToastFn = ((message: string, variant?: ToastVariant) => void) & {
+  success: (message: string) => void;
+  error: (message: string) => void;
+  warning: (message: string) => void;
+  info: (message: string) => void;
+};
+
 interface ToastContextValue {
-  toast: (message: string, variant?: ToastVariant) => void;
+  toast: ToastFn;
   dismiss: (id: string) => void;
 }
 
@@ -41,7 +48,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   }, []);
 
-  const toast = useCallback(
+  const toastBase = useCallback(
     (message: string, variant: ToastVariant = 'info') => {
       const id = Math.random().toString(36).slice(2, 9);
       setToasts((prev) => [...prev, { id, message, variant }]);
@@ -49,6 +56,15 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     },
     [dismiss],
   );
+
+  const toast = useMemo(() => {
+    const fn = ((message: string, variant?: ToastVariant) => toastBase(message, variant)) as ToastFn;
+    fn.success = (msg: string) => toastBase(msg, 'success');
+    fn.error = (msg: string) => toastBase(msg, 'error');
+    fn.warning = (msg: string) => toastBase(msg, 'warning');
+    fn.info = (msg: string) => toastBase(msg, 'info');
+    return fn;
+  }, [toastBase]);
 
   return (
     <ToastContext.Provider value={{ toast, dismiss }}>

@@ -85,6 +85,11 @@ export const GAME_TYPE_CONFIG: Record<
     description: 'High-stakes penalty kicks to decide the winner.',
     icon: '⚽',
   },
+  classic_draft: {
+    label: 'Extra Draft',
+    description: '14-pick tactical draft duel. Formations, chemistry links, and live match showdown.',
+    icon: '⚡',
+  },
 };
 
 // ---------------------------------------------------------------------------

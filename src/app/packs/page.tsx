@@ -312,21 +312,23 @@ export default function PacksPage() {
       backUrl="/"
       maxWidth="5xl"
     >
-      {/* ── 1. PACK CASES: SLEEK SHOWCASE ───────────────────────────────── */}
-      <section className="space-y-3.5 w-full">
+      {/* ── 1. PACK CASES: SLEEK APPLE KEYNOTE SHOWCASE ───────────────────────────────── */}
+      <section className="space-y-4 w-full">
         <div className="flex items-center justify-between px-1">
-          <div className="flex items-center gap-2">
-            <AppIcon icon={Lightning} size={16} weight="fill" className="text-lime" />
-            <h2 className="font-display text-sm font-bold tracking-wider text-white uppercase sm:text-base">
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-7 w-7 items-center justify-center rounded-xl border border-lime/50 bg-lime/15 text-lime shadow-[0_0_12px_rgba(202,255,0,0.3)]">
+              <AppIcon icon={Lightning} size={15} weight="fill" />
+            </span>
+            <h2 className="font-display text-sm sm:text-base font-extrabold tracking-wide text-white uppercase">
               {t('packs.availablePacks')}
             </h2>
           </div>
-          <span className="text-[11px] font-bold text-steel font-stats">
+          <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-micro sm:text-xs font-bold text-slate-400 font-stats">
             {PACK_CASES.length} {t('packs.packCount', { count: PACK_CASES.length })}
           </span>
         </div>
 
-        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           {PACK_CASES.map((pack, idx) => {
             const isFirst = idx === 0;
             const isSecond = idx === 1;
@@ -352,61 +354,95 @@ export default function PacksPage() {
             return (
               <div
                 key={pack.id}
-                className={`relative flex flex-col justify-between gap-4 rounded-3xl border p-5 backdrop-blur-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
+                className={`apple-glass-card group relative flex flex-col justify-between gap-5 rounded-3xl border p-5 sm:p-6 backdrop-blur-3xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_50px_rgba(0,0,0,0.7)] ${
                   isFirst
-                    ? 'border-amber-400/35 bg-gradient-to-b from-amber-500/12 via-slate-950/90 to-slate-950/95 shadow-[0_16px_36px_rgba(0,0,0,0.7),inset_0_1px_0_0_rgba(251,191,36,0.2)] hover:border-amber-400/60'
+                    ? 'border-amber-400/40 hover:border-amber-400/70 shadow-[0_16px_40px_rgba(245,158,11,0.15)]'
                     : isSecond
-                      ? 'border-cyan-400/30 bg-gradient-to-b from-cyan-500/12 via-slate-950/90 to-slate-950/95 shadow-[0_14px_32px_rgba(0,0,0,0.6),inset_0_1px_0_0_rgba(34,211,238,0.2)] hover:border-cyan-400/50'
-                      : 'border-purple-400/30 bg-gradient-to-b from-purple-500/12 via-slate-950/90 to-slate-950/95 shadow-[0_12px_28px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(192,132,252,0.2)] hover:border-purple-400/50'
+                      ? 'border-cyan-400/35 hover:border-cyan-400/65 shadow-[0_16px_40px_rgba(0,240,255,0.15)]'
+                      : 'border-purple-400/35 hover:border-purple-400/65 shadow-[0_16px_40px_rgba(168,85,247,0.15)]'
                 }`}
               >
-                <div className="space-y-1.5">
+                {/* Ambient Specular Glow */}
+                <div
+                  className={`pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 h-32 w-32 rounded-full blur-3xl opacity-50 ${
+                    isFirst ? 'bg-amber-400/25' : isSecond ? 'bg-cyan-400/25' : 'bg-purple-400/25'
+                  }`}
+                />
+
+                <div className="relative space-y-2">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-display text-base font-bold tracking-tight text-white uppercase">
+                    <h3 className="font-display text-base sm:text-lg font-black tracking-tight text-white uppercase">
                       {displayName}
                     </h3>
-                    <div className="flex h-7 w-7 items-center justify-center rounded-full bg-white/[0.06] border border-white/10 shadow-inner">
+                    <div
+                      className={`flex h-8 w-8 items-center justify-center rounded-xl border shadow-sm ${
+                        isFirst
+                          ? 'border-amber-400/50 bg-amber-400/15 text-amber-300'
+                          : isSecond
+                            ? 'border-cyan-400/50 bg-cyan-400/15 text-cyan-300'
+                            : 'border-purple-400/50 bg-purple-400/15 text-purple-300'
+                      }`}
+                    >
                       <AppIcon
                         icon={isFirst ? Crown : isSecond ? Trophy : Flame}
-                        size={14}
+                        size={16}
                         weight="fill"
-                        className={isFirst ? 'text-amber-400' : isSecond ? 'text-cyan-300' : 'text-purple-400'}
                       />
                     </div>
                   </div>
 
-                  <p className="text-steel text-xs font-medium leading-relaxed">
+                  <p className="text-slate-300 text-xs font-medium leading-relaxed">
                     {displaySubtitle}
                   </p>
+
+                  <div className="pt-1">
+                    <span className="inline-flex items-center gap-1 rounded-full border border-white/12 bg-white/5 px-2.5 py-0.5 text-[10px] font-bold text-slate-300">
+                      ★ {pack.guaranteed.join(' · ')}
+                    </span>
+                  </div>
                 </div>
 
-                <Button
-                  variant={isFirst ? 'primary' : 'secondary'}
-                  size="sm"
-                  fullWidth
-                  onClick={() => handleOpenPack(pack)}
-                  disabled={players.length === 0}
-                  leftIcon={<AppIcon icon={Lightning} size={14} weight="fill" />}
-                >
-                  {t('packs.openCase')}
-                </Button>
+                <div className="relative pt-2">
+                  <Button
+                    variant={isFirst ? 'primary' : 'secondary'}
+                    size="md"
+                    fullWidth
+                    onClick={() => handleOpenPack(pack)}
+                    disabled={players.length === 0}
+                    leftIcon={<AppIcon icon={Lightning} size={15} weight="fill" />}
+                    className={`rounded-2xl font-black ${
+                      isFirst
+                        ? 'bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 shadow-md shadow-amber-400/25'
+                        : isSecond
+                          ? 'apple-glass-card border-cyan-400/40 text-cyan-300 hover:border-cyan-400/70 hover:text-white'
+                          : 'apple-glass-card border-purple-400/40 text-purple-300 hover:border-purple-400/70 hover:text-white'
+                    }`}
+                  >
+                    {t('packs.openCase')}
+                  </Button>
+                </div>
               </div>
             );
           })}
         </div>
       </section>
 
-      {/* ── 2. CARD VAULT SPOTLIGHT (3 ON MOBILE, 5 ON DESKTOP & INSTANT SEARCH) ── */}
-      <section className="space-y-4 pt-4 w-full">
+      {/* ── 2. CARD VAULT SPOTLIGHT (APPLE HIG SHOWCASE) ─────────────────── */}
+      <section className="apple-glass-card relative space-y-4 rounded-3xl p-4 sm:p-6 border border-white/15 shadow-[0_24px_50px_rgba(0,0,0,0.65)] backdrop-blur-3xl w-full">
+        {/* Ambient Vault Lighting */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-44 rounded-3xl bg-[radial-gradient(ellipse_at_top,rgba(202,255,0,0.08),transparent_70%)]" />
+
         {/* Dynamic Status & Search Header */}
-        <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1">
-          <div className="flex items-center gap-2.5">
-            <AppIcon icon={Trophy} size={18} weight="duotone" className="text-lime" />
+        <header className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1">
+          <div className="flex items-center gap-3">
+            <span className="flex h-8 w-8 items-center justify-center rounded-xl border border-lime/50 bg-lime/15 text-lime shadow-[0_0_12px_rgba(202,255,0,0.25)]">
+              <AppIcon icon={Trophy} size={18} weight="fill" />
+            </span>
             <div>
-              <h3 className="font-display text-sm font-bold tracking-tight text-white uppercase sm:text-base">
+              <h3 className="font-display text-sm sm:text-base font-extrabold tracking-tight text-white uppercase">
                 {t('packs.vaultSpotlight')}
               </h3>
-              <div className="flex items-center gap-1.5 text-[11px] text-steel font-stats">
+              <div className="flex items-center gap-2 text-micro sm:text-xs text-slate-400 font-stats">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-lime" />
@@ -421,7 +457,7 @@ export default function PacksPage() {
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto">
-            <div className="flex-1 sm:w-64">
+            <div className="flex-1 sm:w-72">
               <TextInput
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -432,7 +468,7 @@ export default function PacksPage() {
                     <button
                       type="button"
                       onClick={() => setSearchQuery('')}
-                      className="text-steel hover:text-white p-1 cursor-pointer"
+                      className="text-slate-400 hover:text-white p-1 cursor-pointer"
                     >
                       <AppIcon icon={X} size={13} weight="bold" />
                     </button>
@@ -446,6 +482,7 @@ export default function PacksPage() {
               size="sm"
               onClick={handleManualShuffle}
               leftIcon={<AppIcon icon={Shuffle} size={14} weight="bold" className="text-lime" />}
+              className="apple-glass-card rounded-xl border-white/15 hover:border-lime/50 font-bold"
             >
               {t('packs.rollRandom')}
             </Button>
@@ -453,18 +490,18 @@ export default function PacksPage() {
         </header>
 
         {/* ── Auto-Rotation Progress Bar ── */}
-        <div className="relative w-full h-1.5 overflow-hidden rounded-full bg-white/[0.06] border border-white/[0.08]">
+        <div className="relative w-full h-1.5 overflow-hidden rounded-full bg-white/[0.08] border border-white/[0.1]">
           <div
-            className="h-full bg-gradient-to-r from-lime/80 via-lime to-emerald-400 transition-all duration-1000 ease-linear rounded-full shadow-[0_0_8px_rgba(142,224,0,0.5)]"
+            className="h-full bg-gradient-to-r from-lime/70 via-lime to-emerald-400 transition-all duration-1000 ease-linear rounded-full shadow-[0_0_10px_rgba(202,255,0,0.6)]"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
 
         {/* ── RESPONSIVE SPOTLIGHT SHOWCASE (3 ON MOBILE, 5 ON DESKTOP) ── */}
         {spotlightCards.length > 0 ? (
-          <div>
+          <div className="relative pt-1">
             {/* MOBILE LAYOUT: Exactly 3 cards side-by-side, scaled to fit perfectly */}
-            <div className="grid grid-cols-3 gap-2 w-full max-w-sm mx-auto py-2 items-center justify-items-center sm:hidden">
+            <div className="grid grid-cols-3 gap-2.5 w-full max-w-sm mx-auto py-2 items-center justify-items-center sm:hidden">
               {spotlightCards.slice(0, 3).map((player, index) => (
                 <div
                   key={`spotlight-mobile-${player.id}-${index}-${rotationSeed}`}
@@ -500,15 +537,15 @@ export default function PacksPage() {
             </div>
           </div>
         ) : (
-          <Panel variant="subtle" className="p-8 text-center">
-            <p className="text-steel text-xs font-bold tracking-widest uppercase font-stats">
+          <div className="apple-glass-card rounded-2xl p-8 text-center border border-white/10">
+            <p className="text-slate-400 text-xs font-bold tracking-widest uppercase font-stats">
               {rawData === undefined ? t('packs.loadingCards') : t('packs.noCards')}
             </p>
-          </Panel>
+          </div>
         )}
 
         {/* ── Subtitle helper tag ── */}
-        <div className="flex items-center justify-center gap-2 pt-1 text-center text-xs text-steel/80">
+        <div className="flex items-center justify-center gap-2 pt-1 text-center text-micro sm:text-xs text-slate-400">
           <AppIcon icon={ArrowsClockwise} size={13} weight="bold" className="text-lime" />
           <span>
             {t('packs.autoCycleNotice')}

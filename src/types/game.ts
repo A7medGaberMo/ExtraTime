@@ -1,7 +1,7 @@
 /**
  * Game type identifiers for parallel game modes.
  */
-export type GameType = 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout';
+export type GameType = 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout' | 'classic_draft';
 
 /** Base configuration for any game mode */
 export interface GameConfig {
@@ -58,6 +58,19 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     accentColor: '#F59E0B',
     isAvailable: false,
     routePrefix: '/shootout',
+  },
+  classic_draft: {
+    type: 'classic_draft',
+    label: 'Extra Draft',
+    badgeLabel: '⚡ EXTRA DRAFT',
+    description:
+      'Pick formations, captain superstars, draft your Starting XI slot-by-slot, and duel squads.',
+    minPlayers: 1,
+    maxPlayers: 2,
+    icon: 'Lightning',
+    accentColor: '#00F0FF',
+    isAvailable: true,
+    routePrefix: '/draft',
   },
 };
 

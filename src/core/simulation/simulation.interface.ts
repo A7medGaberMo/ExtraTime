@@ -1,6 +1,7 @@
 import type { PlayerCardData } from '@/types/player';
+import type { GameType } from '@/types/game';
 
-export type GameType = 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout';
+export type { GameType };
 
 export type TimelineEventType =
   | 'KICKOFF'
@@ -99,3 +100,9 @@ export interface IMatchSimulatorStrategy {
     seed: string,
   ): MatchSimulationResult;
 }
+
+// Aliases for compatibility with simulation strategies
+export type SimTimelineEvent = MatchTimelineEvent;
+export type SimPlayerRating = PlayerPerformanceRating;
+export type SimSectorAnalysis = SectorAnalysis;
+export type SimSynergyBreakdown = SynergyBreakdown;

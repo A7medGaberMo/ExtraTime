@@ -1,6 +1,7 @@
 import type { IGameEngineStrategy } from '@/core/engine/game-engine.interface';
 import type { GameType } from '@/types/game';
 import { HiddenBidEngine } from './strategies/hidden-bid-engine';
+import { ClassicDraftEngine } from './strategies/classic-draft-engine';
 
 export class GameModeRegistry {
   private static instance: GameModeRegistry;
@@ -8,6 +9,7 @@ export class GameModeRegistry {
 
   private constructor() {
     this.registerStrategy(new HiddenBidEngine());
+    this.registerStrategy(new ClassicDraftEngine());
   }
 
   public static getInstance(): GameModeRegistry {

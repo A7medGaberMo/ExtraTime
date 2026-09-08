@@ -11,6 +11,7 @@ export function useIsGameplay(): boolean {
   return (
     pathname.startsWith('/auction/') ||
     pathname.startsWith('/room/') ||
-    (pathname.startsWith('/rank/') && pathname !== '/rank')
+    (pathname.startsWith('/rank/') && pathname !== '/rank') ||
+    (pathname.startsWith('/draft/') && pathname !== '/draft')
   );
 }

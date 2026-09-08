@@ -138,22 +138,37 @@ export default function JoinRoomPage() {
       title={lang === 'ar' ? 'ادخل ماتش بالكود' : 'Join Match'}
       subtitle={lang === 'ar' ? 'ادخل كود الغرفة المكون من 6 رموز لأي لعبة (سنايب أو رتّب).' : 'Enter 6-character code for Snipe or Rank duel.'}
       badge={
-        <StatPill
-          variant="lime"
-          size="sm"
-          icon={<AppIcon icon={Key} size={14} weight="duotone" />}
-          label={lang === 'ar' ? 'دخول سريع' : 'Direct Join'}
-        />
+        <div className="inline-flex items-center gap-1.5 rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-xs font-semibold text-lime shadow-[0_0_15px_rgba(149,232,16,0.2)] backdrop-blur-xl">
+          <AppIcon icon={Key} size={14} weight="duotone" />
+          <span className="font-stats tracking-wider uppercase text-[11px] font-bold">
+            {lang === 'ar' ? 'دخول سريع' : 'Direct Join'}
+          </span>
+        </div>
       }
       backUrl="/"
       maxWidth="xl"
     >
-      <form onSubmit={handleJoin}>
-        <Panel variant="highlight" className="p-4 sm:p-6 space-y-5">
-          {/* Manager Handle Input */}
-          <div className="space-y-2">
+      <form onSubmit={handleJoin} className="relative">
+        {/* Ambient Top Glow Mesh */}
+        <div
+          className={`pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 h-[220px] w-[90%] max-w-md rounded-full blur-[90px] opacity-25 transition-colors duration-700 ${
+            canJoin ? (isSnipe ? 'bg-lime' : 'bg-amber-400') : 'bg-lime'
+          }`}
+        />
+
+        <div className="apple-glass-elevated relative z-10 p-5 sm:p-7 space-y-6">
+          {/* Manager Handle Input inside Apple Glass Cell */}
+          <div className="apple-glass-card rounded-2xl p-3.5 sm:p-4 border border-white/10 space-y-3">
+            <div className="text-[10px] font-black tracking-widest uppercase text-steel px-1 font-stats">
+              {lang === 'ar' ? 'هوية المدرب' : 'Manager Identity'}
+            </div>
             <div className="flex items-center gap-3">
-              <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
+              <div className="relative shrink-0">
+                <UserIdentity nickname={nickname} size="md" showAvatarOnly />
+                <span className="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-lime text-[9px] font-black text-slate-950 font-stats ring-2 ring-slate-950">
+                  ★
+                </span>
+              </div>
               <div className="flex-1 min-w-0">
                 <TextInput
                   label={t('joinRoom.managerHandle')}
@@ -168,7 +183,7 @@ export default function JoinRoomPage() {
                       onClick={() => setNickname(randomName())}
                       aria-label={t('home.nameModal.randomize')}
                       title={t('home.nameModal.randomize')}
-                      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
+                      className="btn-haptic flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-steel hover:border-lime/50 hover:text-lime hover:bg-lime/10 transition-all cursor-pointer shadow-sm"
                     >
                       <AppIcon icon={DiceFive} size={20} weight="duotone" />
                     </button>
@@ -178,13 +193,19 @@ export default function JoinRoomPage() {
             </div>
           </div>
 
-          {/* Big Room Code Input */}
-          <div className="space-y-1.5">
-            <label className="text-steel text-[10px] font-black tracking-widest uppercase block px-1">
-              {t('joinRoom.roomCode')}
-            </label>
+          {/* Apple Keynote Room Code Pin Card */}
+          <div className="apple-glass-card rounded-2xl p-4 sm:p-5 border border-white/10 space-y-3">
+            <div className="flex items-center justify-between px-1">
+              <label className="text-steel text-[10px] font-black tracking-widest uppercase font-stats">
+                {t('joinRoom.roomCode')}
+              </label>
+              <span className="text-[10px] font-mono text-steel/80 font-bold">
+                {normalizedCode.length}/6
+              </span>
+            </div>
+
             <div className="relative">
-              <div className="pointer-events-none absolute start-4 top-1/2 -translate-y-1/2 text-lime">
+              <div className="pointer-events-none absolute start-4 top-1/2 -translate-y-1/2 text-lime/80">
                 <AppIcon icon={Key} size={24} weight="duotone" />
               </div>
               <input
@@ -198,25 +219,56 @@ export default function JoinRoomPage() {
                   )
                 }
                 maxLength={6}
-                className="font-stats text-lime placeholder:text-steel/30 focus:border-lime/70 focus:ring-lime/20 w-full rounded-2xl border border-white/10 bg-slate-950 py-3.5 px-12 text-center text-3xl sm:text-4xl tracking-[0.24em] uppercase transition-all outline-none focus:ring-2 min-h-[56px]"
+                className="font-stats text-lime placeholder:text-steel/20 focus:border-lime/70 focus:ring-lime/25 w-full rounded-2xl border border-white/15 bg-slate-950/90 py-4 px-12 text-center text-3xl sm:text-4xl tracking-[0.28em] font-black uppercase transition-all outline-none focus:ring-2 min-h-[64px] shadow-inner"
                 placeholder="X7K9M2"
                 autoComplete="off"
                 inputMode="text"
                 autoFocus
               />
             </div>
+
+            {/* 6 Visual Slot Indicators */}
+            <div className="flex items-center justify-center gap-2 pt-1" dir="ltr">
+              {[0, 1, 2, 3, 4, 5].map((index) => {
+                const char = normalizedCode[index];
+                return (
+                  <div
+                    key={index}
+                    className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl border font-stats font-black text-base sm:text-lg transition-all ${
+                      char
+                        ? 'border-lime/50 bg-lime/15 text-lime shadow-[0_0_10px_rgba(149,232,16,0.2)]'
+                        : 'border-white/10 bg-white/[0.02] text-steel/30'
+                    }`}
+                  >
+                    {char || '·'}
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
-          {/* Status Verification Card with Mode Recognition */}
+          {/* Status Verification Card with Apple Pill */}
           <div
-            className={`flex items-start justify-between rounded-2xl border p-3.5 sm:p-4 transition-all ${
-              canJoin ? 'border-lime/40 bg-lime/10' : 'border-white/10 bg-slate-950/80'
+            className={`apple-glass-card flex items-start justify-between rounded-2xl border p-4 transition-all ${
+              canJoin
+                ? isSnipe
+                  ? 'border-lime/40 bg-lime/10 shadow-[0_4px_20px_rgba(149,232,16,0.12)]'
+                  : 'border-amber-400/40 bg-amber-400/10 shadow-[0_4px_20px_rgba(245,158,11,0.12)]'
+                : 'border-white/10 bg-slate-900/60'
             }`}
           >
             <div className="flex items-start gap-3 min-w-0">
               <div className="mt-0.5 shrink-0">{statusIcon}</div>
               <div className="min-w-0">
-                <p className={`text-sm font-black ${canJoin ? 'text-lime' : 'text-white'}`}>
+                <p
+                  className={`text-sm font-black font-stats tracking-wide ${
+                    canJoin
+                      ? isSnipe
+                        ? 'text-lime'
+                        : 'text-amber-300'
+                      : 'text-white'
+                  }`}
+                >
                   {statusText}
                 </p>
                 <p className="text-steel mt-0.5 text-xs font-medium leading-relaxed">
@@ -234,14 +286,18 @@ export default function JoinRoomPage() {
             </div>
 
             {canJoin && (
-              <StatPill variant={isSnipe ? 'lime' : 'amber'} size="sm" className="shrink-0">
+              <StatPill
+                variant={isSnipe ? 'lime' : 'amber'}
+                size="sm"
+                className="shrink-0 shadow-sm"
+              >
                 <AppIcon icon={isSnipe ? Crosshair : Ranking} size={14} weight="duotone" className="me-1" />
                 <span>{isSnipe ? 'Snipe' : 'Rank 1v1'}</span>
               </StatPill>
             )}
           </div>
 
-          {/* Submit Action */}
+          {/* Tactile Cupertino Submit Action */}
           <Button
             type="submit"
             variant="primary"
@@ -249,7 +305,19 @@ export default function JoinRoomPage() {
             fullWidth
             disabled={!canJoin || loading || !nickname.trim()}
             loading={loading}
-            leftIcon={<AppIcon icon={isRank ? Ranking : Crosshair} size={20} weight="bold" />}
+            leftIcon={
+              <AppIcon
+                icon={isRank ? Ranking : Crosshair}
+                size={20}
+                weight="bold"
+                className="text-slate-950"
+              />
+            }
+            className={`shadow-[0_8px_24px_rgba(149,232,16,0.25)] ${
+              isRank
+                ? '!bg-gradient-to-r !from-amber-400 !to-yellow-300 !text-slate-950 !border-amber-300 shadow-[0_8px_24px_rgba(245,158,11,0.25)]'
+                : ''
+            }`}
           >
             {loading
               ? t('joinRoom.joining')
@@ -257,7 +325,7 @@ export default function JoinRoomPage() {
                 ? (lang === 'ar' ? 'ادخل تحدي رتّب' : 'Enter Rank Duel')
                 : (lang === 'ar' ? 'ادخل ماتش سنايب' : 'Enter Snipe Match')}
           </Button>
-        </Panel>
+        </div>
       </form>
     </PageShell>
   );

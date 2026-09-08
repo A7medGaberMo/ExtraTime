@@ -313,7 +313,7 @@ export const abandonUserActiveMatch = mutation({
   args: {
     guestId: v.string(),
     sessionToken: v.optional(v.string()),
-    matchType: v.union(v.literal('snipe'), v.literal('rank')),
+    matchType: v.union(v.literal('snipe'), v.literal('rank'), v.literal('draft')),
     matchId: v.string(),
   },
   handler: async (ctx, args) => {
@@ -352,6 +352,34 @@ export const abandonUserActiveMatch = mutation({
 
     if (args.matchType === 'rank') {
       const gameId = ctx.db.normalizeId('rankGames', args.matchId);
+      if (!gameId) return { success: false, reason: 'Invalid game ID' };
+      const game = await ctx.db.get(gameId);
+      if (!game) return { success: false, reason: 'Game not found' };
+
+      const isParticipant = game.participants.some((p) => p.guestId === guestId);
+      if (!isParticipant) {
+        throw new Error('Not authorized to abandon this game');
+      }
+
+      if (game.status === 'waiting' || game.mode === 'solo') {
+        await ctx.db.patch(game._id, {
+          status: 'abandoned',
+          completedAt: now,
+        });
+      } else {
+        const remaining = game.participants.find((p) => p.guestId !== guestId);
+        await ctx.db.patch(game._id, {
+          status: 'abandoned',
+          winnerId: remaining?.guestId,
+          completedAt: now,
+        });
+      }
+
+      return { success: true };
+    }
+
+    if (args.matchType === 'draft') {
+      const gameId = ctx.db.normalizeId('draftGames', args.matchId);
       if (!gameId) return { success: false, reason: 'Invalid game ID' };
       const game = await ctx.db.get(gameId);
       if (!game) return { success: false, reason: 'Game not found' };

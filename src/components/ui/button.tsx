@@ -22,6 +22,8 @@ const buttonVariants = cva(
           'border border-rose-500/40 bg-rose-500/15 text-rose-400 hover:bg-rose-500/25 active:scale-[0.97]',
         gold:
           'bg-amber-400 text-slate-950 shadow-[0_8px_20px_rgba(251,191,36,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] hover:brightness-105 active:scale-[0.97]',
+        cyan:
+          'bg-cyan-400 text-slate-950 shadow-[0_8px_20px_rgba(0,240,255,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] hover:brightness-105 active:scale-[0.97]',
       },
       size: {
         sm: 'h-10 px-3.5 text-xs min-h-[40px]',

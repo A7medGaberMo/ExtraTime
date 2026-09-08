@@ -54,16 +54,19 @@ interface HydratedMatch {
 interface SquadSlot {
   position: string;
   isSub?: boolean;
+  cost?: number;
   playerId: string;
   player?: {
     _id: string;
     name: string;
     tier?: string;
+    position?: string;
     imageUrl?: string;
     club?: string;
     nation?: string;
     isLegend?: boolean;
     kitNumber?: number;
+    rating?: number;
   };
 }
 
@@ -114,37 +117,133 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
   const hostSquad = useMemo<PitchSquadPlayer[]>(() => {
     const raw = viewerIsHost ? state?.mySquad : state?.opponentSquad;
-    if (!raw) return [];
-    return (raw as unknown as SquadSlot[]).map((slot) => ({
-      playerId: slot.player?._id ?? slot.playerId,
-      name: slot.player?.name ?? '',
-      tier: slot.player?.tier ?? 'GOLD',
-      position: slot.position,
-      imageUrl: slot.player?.imageUrl,
-      club: slot.player?.club,
-      nation: slot.player?.nation,
-      isLegend: slot.player?.isLegend,
-      kitNumber: slot.player?.kitNumber,
-      isSub: slot.isSub,
-    }));
-  }, [state?.mySquad, state?.opponentSquad, viewerIsHost]);
+    const details = viewerIsHost
+      ? (match as HydratedMatch | null)?.hostSquadDetails
+      : (match as HydratedMatch | null)?.guestSquadDetails;
+
+    if (raw && raw.length >= (state?.auction?.rounds?.length ?? 11)) {
+      return (raw as unknown as SquadSlot[]).map((slot) => ({
+        playerId: slot.player?._id ?? (slot.player as any)?.id ?? slot.playerId,
+        name: slot.player?.name ?? '',
+        tier: slot.player?.tier ?? 'GOLD',
+        position: slot.position || slot.player?.position || 'ST',
+        imageUrl: slot.player?.imageUrl,
+        club: slot.player?.club,
+        nation: slot.player?.nation,
+        isLegend: slot.player?.isLegend,
+        kitNumber: slot.player?.kitNumber,
+        isSub: slot.isSub,
+        rating: slot.player?.rating,
+        cost: slot.cost,
+      }));
+    }
+
+    if (details && details.length > 0) {
+      return details.filter(Boolean).map((p) => {
+        const matchingRaw = (raw as unknown as SquadSlot[] | undefined)?.find(
+          (s) => s.playerId === p._id || s.player?._id === p._id || (s.player as any)?.id === p._id,
+        );
+        return {
+          playerId: p._id,
+          name: p.name,
+          tier: p.tier,
+          position: matchingRaw?.position || p.position || 'ST',
+          imageUrl: p.imageUrl,
+          club: p.club,
+          nation: p.nation,
+          isLegend: p.isLegend,
+          kitNumber: p.kitNumber,
+          isSub: matchingRaw?.isSub ?? false,
+          rating: (p as any).rating,
+          cost: matchingRaw?.cost,
+        };
+      });
+    }
+
+    if (raw && raw.length > 0) {
+      return (raw as unknown as SquadSlot[]).map((slot) => ({
+        playerId: slot.player?._id ?? (slot.player as any)?.id ?? slot.playerId,
+        name: slot.player?.name ?? '',
+        tier: slot.player?.tier ?? 'GOLD',
+        position: slot.position || slot.player?.position || 'ST',
+        imageUrl: slot.player?.imageUrl,
+        club: slot.player?.club,
+        nation: slot.player?.nation,
+        isLegend: slot.player?.isLegend,
+        kitNumber: slot.player?.kitNumber,
+        isSub: slot.isSub,
+        rating: slot.player?.rating,
+        cost: slot.cost,
+      }));
+    }
+
+    return [];
+  }, [state?.mySquad, state?.opponentSquad, state?.auction?.rounds?.length, viewerIsHost, match]);
 
   const guestSquad = useMemo<PitchSquadPlayer[]>(() => {
     const raw = viewerIsHost ? state?.opponentSquad : state?.mySquad;
-    if (!raw) return [];
-    return (raw as unknown as SquadSlot[]).map((slot) => ({
-      playerId: slot.player?._id ?? slot.playerId,
-      name: slot.player?.name ?? '',
-      tier: slot.player?.tier ?? 'GOLD',
-      position: slot.position,
-      imageUrl: slot.player?.imageUrl,
-      club: slot.player?.club,
-      nation: slot.player?.nation,
-      isLegend: slot.player?.isLegend,
-      kitNumber: slot.player?.kitNumber,
-      isSub: slot.isSub,
-    }));
-  }, [state?.mySquad, state?.opponentSquad, viewerIsHost]);
+    const details = viewerIsHost
+      ? (match as HydratedMatch | null)?.guestSquadDetails
+      : (match as HydratedMatch | null)?.hostSquadDetails;
+
+    if (raw && raw.length >= (state?.auction?.rounds?.length ?? 11)) {
+      return (raw as unknown as SquadSlot[]).map((slot) => ({
+        playerId: slot.player?._id ?? (slot.player as any)?.id ?? slot.playerId,
+        name: slot.player?.name ?? '',
+        tier: slot.player?.tier ?? 'GOLD',
+        position: slot.position || slot.player?.position || 'ST',
+        imageUrl: slot.player?.imageUrl,
+        club: slot.player?.club,
+        nation: slot.player?.nation,
+        isLegend: slot.player?.isLegend,
+        kitNumber: slot.player?.kitNumber,
+        isSub: slot.isSub,
+        rating: slot.player?.rating,
+        cost: slot.cost,
+      }));
+    }
+
+    if (details && details.length > 0) {
+      return details.filter(Boolean).map((p) => {
+        const matchingRaw = (raw as unknown as SquadSlot[] | undefined)?.find(
+          (s) => s.playerId === p._id || s.player?._id === p._id || (s.player as any)?.id === p._id,
+        );
+        return {
+          playerId: p._id,
+          name: p.name,
+          tier: p.tier,
+          position: matchingRaw?.position || p.position || 'ST',
+          imageUrl: p.imageUrl,
+          club: p.club,
+          nation: p.nation,
+          isLegend: p.isLegend,
+          kitNumber: p.kitNumber,
+          isSub: matchingRaw?.isSub ?? false,
+          rating: (p as any).rating,
+          cost: matchingRaw?.cost,
+        };
+      });
+    }
+
+    if (raw && raw.length > 0) {
+      return (raw as unknown as SquadSlot[]).map((slot) => ({
+        playerId: slot.player?._id ?? (slot.player as any)?.id ?? slot.playerId,
+        name: slot.player?.name ?? '',
+        tier: slot.player?.tier ?? 'GOLD',
+        position: slot.position || slot.player?.position || 'ST',
+        imageUrl: slot.player?.imageUrl,
+        club: slot.player?.club,
+        nation: slot.player?.nation,
+        isLegend: slot.player?.isLegend,
+        kitNumber: slot.player?.kitNumber,
+        isSub: slot.isSub,
+        rating: slot.player?.rating,
+        cost: slot.cost,
+      }));
+    }
+
+    return [];
+  }, [state?.mySquad, state?.opponentSquad, state?.auction?.rounds?.length, viewerIsHost, match]);
 
   const viewerName = viewerIsHost ? state?.hostName : state?.guestName;
   const opponentName = viewerIsHost ? state?.guestName : state?.hostName;
@@ -176,83 +275,127 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
   if (!guestId || state === undefined || match === undefined) {
     return (
-      <div className="flex min-h-[60vh] items-center justify-center">
-        <div className="animate-fade-in flex flex-col items-center gap-3">
-          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-lime animate-spin" />
-          <p className="text-steel text-xs font-black tracking-widest uppercase font-stats">
-            {t('common.loading')}
-          </p>
+      <PageShell title={t('results.title')} subtitle={t('results.subtitle')} backUrl="/" maxWidth="md">
+        <div className="flex min-h-[40vh] items-center justify-center">
+          <div className="apple-glass-elevated p-8 rounded-3xl flex flex-col items-center gap-3 border border-white/10 shadow-2xl">
+            <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-lime animate-spin" />
+            <p className="text-steel text-xs font-black tracking-widest uppercase font-stats">
+              {t('common.loading')}
+            </p>
+          </div>
         </div>
-      </div>
+      </PageShell>
     );
   }
 
   if (!match || !simulation) {
     return (
-      <div className="animate-fade-in mx-auto flex min-h-[60vh] max-w-md flex-col items-center justify-center gap-4 px-3 text-center">
-        <Panel variant="highlight" className="p-8 w-full space-y-4 text-center">
-          <div className="relative mx-auto w-12 h-12 flex items-center justify-center">
-            <div className="bg-lime/25 absolute inset-0 rounded-full blur-xl animate-pulse" />
-            <AppIcon icon={CircleNotch} size={40} weight="bold" className="text-lime relative animate-spin" />
+      <PageShell title={t('results.title')} subtitle={t('results.subtitle')} backUrl="/" maxWidth="md">
+        <div className="animate-fade-in mx-auto flex min-h-[40vh] w-full flex-col items-center justify-center gap-4 px-3 text-center">
+          <div className="apple-glass-elevated p-8 sm:p-10 w-full space-y-5 text-center border border-lime/30 shadow-[0_16px_50px_rgba(149,232,16,0.15)]">
+            <div className="relative mx-auto w-16 h-16 flex items-center justify-center">
+              <div className="bg-lime/25 absolute inset-0 rounded-full blur-xl animate-pulse" />
+              <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-lime/40 bg-lime/10 text-lime shadow-[0_0_20px_rgba(149,232,16,0.2)]">
+                <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-lime animate-spin" />
+              </div>
+            </div>
+            <div className="space-y-1.5">
+              <h2 className="text-xl font-black tracking-tight text-white uppercase font-display">
+                Resolving Matchday
+              </h2>
+              <p className="text-steel text-xs font-medium leading-relaxed max-w-sm mx-auto">
+                Both squads are locked in. The tactical engine is resolving the matchday...
+              </p>
+            </div>
           </div>
-          <div className="space-y-1">
-            <h2 className="text-lg font-black tracking-tight text-white uppercase font-display">
-              Resolving Matchday
-            </h2>
-            <p className="text-steel text-xs font-medium leading-relaxed">
-              Both squads are locked in. The tactical engine is resolving the matchday...
-            </p>
-          </div>
-        </Panel>
-      </div>
+        </div>
+      </PageShell>
     );
   }
 
   return (
-    <PageShell
-      title={t('results.title')}
-      subtitle={t('results.subtitle')}
-      backUrl="/"
-      maxWidth="2xl"
-    >
-      <Confetti active={viewerWon === true} />
-      {/* Sound Toggle Floating Button */}
-      <button
-        type="button"
-        onClick={() => {
-          setAudioReady(!audioReady);
-          unlockAudio();
-        }}
-        className={`fixed end-5 bottom-5 z-40 flex h-12 w-12 items-center justify-center rounded-2xl border shadow-xl backdrop-blur-xl transition-all cursor-pointer ${
-          audioReady
-            ? 'border-lime/40 bg-lime/20 text-lime shadow-lime/20'
-            : 'border-white/15 bg-slate-900/90 text-steel hover:text-white'
+    <article className="mx-auto flex h-[100dvh] max-h-[100dvh] w-full max-w-3xl flex-col justify-between overflow-hidden select-none p-2 sm:p-3 relative">
+      {/* Ambient Top Glow Mesh based on match outcome */}
+      <div
+        className={`pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 h-[220px] w-[90%] max-w-2xl rounded-full blur-[100px] opacity-25 transition-colors duration-700 ${
+          viewerWon === true ? 'bg-lime' : viewerWon === false ? 'bg-amber-400' : 'bg-cyan-400'
         }`}
-        title="Toggle matchday audio"
-      >
-        <AppIcon icon={audioReady ? SpeakerHigh : SpeakerSlash} size={20} weight="bold" />
-      </button>
-
-      {/* Main ScoreHub */}
-      <ScoreHub
-        simulation={simulation}
-        hostName={viewerIsHost ? myName : rivalName}
-        guestName={viewerIsHost ? rivalName : myName}
-        viewerWon={viewerWon}
-        viewerIsHost={viewerIsHost}
-        hostSquad={hostSquad}
-        guestSquad={guestSquad}
-        formation={formation}
-        matchSize={matchSize}
       />
 
-      {/* Action Buttons: Rematch, Packs, Home */}
-      <div className="grid grid-cols-3 gap-2.5 pt-2">
+      <Confetti active={viewerWon === true} />
+
+      {/* ── 1. SLEEK TOP HUD BAR (ZERO SCROLL HEADER) ─────────── */}
+      <header className="relative z-20 flex w-full items-center justify-between gap-2 shrink-0 py-0.5">
+        <button
+          type="button"
+          onClick={() => router.push('/')}
+          className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-950/80 px-3 py-1 text-xs font-bold text-steel hover:text-white transition-all cursor-pointer shadow-sm backdrop-blur-md"
+        >
+          <AppIcon icon={House} size={14} weight="bold" />
+          <span>{t('results.home')}</span>
+        </button>
+
+        {/* Outcome Pill */}
+        <div
+          className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold backdrop-blur-xl shadow-lg ${
+            viewerWon === true
+              ? 'border-lime/40 bg-lime/15 text-lime shadow-[0_0_20px_rgba(149,232,16,0.25)]'
+              : viewerWon === false
+                ? 'border-amber-400/40 bg-amber-400/15 text-amber-300 shadow-[0_0_20px_rgba(245,158,11,0.2)]'
+                : 'border-white/20 bg-white/10 text-white'
+          }`}
+        >
+          <span className="font-stats tracking-wider uppercase text-[11px] font-black">
+            {viewerWon === true
+              ? '★ VICTORY CONFIRMED'
+              : viewerWon === false
+                ? 'RUNNER-UP'
+                : 'MATCHDAY COMPLETED'}
+          </span>
+        </div>
+
+        {/* Audio Toggle */}
+        <button
+          type="button"
+          onClick={() => {
+            setAudioReady(!audioReady);
+            unlockAudio();
+          }}
+          className={`btn-haptic flex h-8 w-8 items-center justify-center rounded-full border shadow-sm backdrop-blur-md transition-all cursor-pointer ${
+            audioReady
+              ? 'border-lime/50 bg-lime/20 text-lime shadow-[0_0_12px_rgba(149,232,16,0.3)] ring-1 ring-lime/40'
+              : 'border-white/15 bg-slate-900/90 text-steel hover:text-white'
+          }`}
+          title="Toggle matchday audio"
+          aria-label="Toggle matchday audio"
+        >
+          <AppIcon icon={audioReady ? SpeakerHigh : SpeakerSlash} size={16} weight="bold" />
+        </button>
+      </header>
+
+      {/* ── 2. MAIN SCOREHUB STAGE (FLEX-1 ZERO SCROLL) ─────────── */}
+      <div className="flex-1 min-h-0 flex flex-col justify-center overflow-hidden py-1 relative z-10">
+        <ScoreHub
+          simulation={simulation}
+          hostName={viewerIsHost ? myName : rivalName}
+          guestName={viewerIsHost ? rivalName : myName}
+          viewerWon={viewerWon}
+          viewerIsHost={viewerIsHost}
+          hostSquad={hostSquad}
+          guestSquad={guestSquad}
+          formation={formation}
+          matchSize={matchSize}
+        />
+      </div>
+
+      {/* ── 3. BOTTOM ACTION BAR ─────────────────────────────────── */}
+      <footer className="grid grid-cols-3 gap-2 shrink-0 pt-1 relative z-10">
         <Button
           variant="primary"
           size="md"
           onClick={() => router.push('/create-room')}
-          leftIcon={<AppIcon icon={ArrowCounterClockwise} size={16} weight="bold" />}
+          leftIcon={<AppIcon icon={ArrowCounterClockwise} size={16} weight="bold" className="text-slate-950" />}
+          className="shadow-[0_8px_20px_rgba(149,232,16,0.2)]"
         >
           {t('results.rematch')}
         </Button>
@@ -261,7 +404,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           variant="gold"
           size="md"
           onClick={() => router.push('/packs')}
-          leftIcon={<AppIcon icon={Cards} size={16} weight="bold" />}
+          leftIcon={<AppIcon icon={Cards} size={16} weight="bold" className="text-slate-950" />}
+          className="shadow-[0_8px_20px_rgba(245,158,11,0.2)]"
         >
           {t('results.packs')}
         </Button>
@@ -271,10 +415,11 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           size="md"
           onClick={() => router.push('/')}
           leftIcon={<AppIcon icon={House} size={16} weight="bold" />}
+          className="btn-haptic border-white/15 bg-white/5 hover:border-white/30 active:scale-95 shadow-md"
         >
           {t('results.home')}
         </Button>
-      </div>
-    </PageShell>
+      </footer>
+    </article>
   );
 }

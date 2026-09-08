@@ -154,6 +154,51 @@ export const getUserActiveMatch = query({
       }
     }
 
+    // 3. Check Draft duel / solo games
+    const [draftWaiting, draftFormation, draftDrafting, draftSwapping] = await Promise.all([
+      ctx.db
+        .query('draftGames')
+        .withIndex('by_status', (q) => q.eq('status', 'waiting'))
+        .take(10),
+      ctx.db
+        .query('draftGames')
+        .withIndex('by_status', (q) => q.eq('status', 'formation'))
+        .take(10),
+      ctx.db
+        .query('draftGames')
+        .withIndex('by_status', (q) => q.eq('status', 'drafting'))
+        .take(10),
+      ctx.db
+        .query('draftGames')
+        .withIndex('by_status', (q) => q.eq('status', 'swapping'))
+        .take(10),
+    ]);
+
+    const candidateDraftGames = [
+      ...draftWaiting,
+      ...draftFormation,
+      ...draftDrafting,
+      ...draftSwapping,
+    ];
+    for (const game of candidateDraftGames) {
+      if (game.createdAt < now - maxAgeMs) continue;
+      const isParticipant = game.participants?.some((p) => p.guestId === guestId);
+      if (isParticipant) {
+        const p = game.participants.find((p) => p.guestId === guestId);
+        return {
+          type: 'draft' as const,
+          id: game._id,
+          code: game.code,
+          status: game.status,
+          mode: game.mode,
+          currentSlotIndex: p?.currentSlotIndex ?? 0,
+          totalPicks: 14,
+          isHost: game.participants[0]?.guestId === guestId,
+          createdAt: game.createdAt,
+        };
+      }
+    }
+
     return null;
   },
 });
