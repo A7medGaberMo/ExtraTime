@@ -605,7 +605,7 @@ function CreateRoomContent() {
               : selectedGame === 'snipe'
                 ? (lang === 'ar' ? 'ابدأ ماتش سنايب' : 'Launch Snipe Match')
                 : selectedGame === 'rank'
-                  ? (lang === 'ar' ? 'ابدأ تحدي رتّب' : 'Launch Rank Challenge')
+                  ? (lang === 'ar' ? 'ابدأ ماتش رتّب' : 'Launch Rank Match')
                   : (lang === 'ar' ? 'ابدأ ماتش درافت' : 'Launch Draft Session')}
           </Button>
         </div>

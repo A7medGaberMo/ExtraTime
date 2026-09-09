@@ -14,6 +14,7 @@ import {
   CircleNotch,
   Crosshair,
   Ranking,
+  Lightning,
   DiceFive,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
@@ -35,6 +36,7 @@ export default function JoinRoomPage() {
   const ensureGuest = useMutation(api.guests.mutations.ensure);
   const joinSnipeRoom = useMutation(api.rooms.mutations.join);
   const joinRankDuel = useMutation(api.rank.mutations.joinDuelPrivateRoom);
+  const joinDraftRoom = useMutation(api.draft.mutations.joinDraftByCode);
 
   const [nickname, setNickname] = useGuestNickname();
   const [roomCode, setRoomCode] = useState('');
@@ -46,7 +48,7 @@ export default function JoinRoomPage() {
     .slice(0, 6)
     .toUpperCase();
 
-  // Query both Snipe and Rank rooms by code
+  // Query Snipe, Rank, and Draft rooms by code
   const snipeRoom = useQuery(
     api.rooms.queries.getByCode,
     normalizedCode.length === 6 ? { code: normalizedCode } : 'skip',
@@ -57,11 +59,21 @@ export default function JoinRoomPage() {
     normalizedCode.length === 6 ? { code: normalizedCode } : 'skip',
   );
 
+  const draftRoom = useQuery(
+    api.draft.queries.getByCode,
+    normalizedCode.length === 6 ? { code: normalizedCode } : 'skip',
+  );
+
   const isSnipe = Boolean(snipeRoom && snipeRoom.status === 'waiting' && !snipeRoom.guestId);
   const isRank = Boolean(rankRoom && rankRoom.status === 'waiting' && !rankRoom.isFull);
-  const canJoin = isSnipe || isRank;
+  const isDraft = Boolean(draftRoom && draftRoom.status === 'waiting' && !draftRoom.isFull);
+  const canJoin = isSnipe || isRank || isDraft;
 
-  const isChecking = normalizedCode.length === 6 && (snipeRoom === undefined && rankRoom === undefined);
+  const isChecking =
+    normalizedCode.length === 6 &&
+    snipeRoom === undefined &&
+    rankRoom === undefined &&
+    draftRoom === undefined;
 
   const statusIcon =
     normalizedCode.length < 6 ? (
@@ -69,7 +81,7 @@ export default function JoinRoomPage() {
     ) : isChecking ? (
       <AppIcon icon={CircleNotch} size={18} weight="bold" className="text-lime animate-spin" />
     ) : canJoin ? (
-      <AppIcon icon={CheckCircle} size={18} weight="fill" className="text-lime" />
+      <AppIcon icon={CheckCircle} size={18} weight="fill" className={isDraft ? 'text-cyan-400' : 'text-lime'} />
     ) : (
       <AppIcon icon={XCircle} size={18} weight="fill" className="text-rose-400" />
     );
@@ -82,8 +94,10 @@ export default function JoinRoomPage() {
         : canJoin
           ? isSnipe
             ? (lang === 'ar' ? 'تم العثور على ماتش سنايب!' : 'Snipe Match Found!')
-            : (lang === 'ar' ? 'تم العثور على تحدي رتّب 1v1!' : 'Rank 1v1 Duel Found!')
-          : (snipeRoom || rankRoom)
+            : isRank
+              ? (lang === 'ar' ? 'تم العثور على تحدي رتّب 1v1!' : 'Rank 1v1 Duel Found!')
+              : (lang === 'ar' ? 'تم العثور على درافت ديربي 1v1!' : 'Pro Draft 1v1 Duel Found!')
+          : (snipeRoom || rankRoom || draftRoom)
             ? t('joinRoom.roomFull')
             : t('joinRoom.roomNotFound');
 
@@ -110,7 +124,6 @@ export default function JoinRoomPage() {
       const validGuestId = res.guestId as Id<'guestUsers'>;
       const validSessionToken = res.sessionToken ?? sessionToken;
 
-
       if (isSnipe && snipeRoom) {
         const result = await joinSnipeRoom({
           roomId: snipeRoom._id,
@@ -125,6 +138,13 @@ export default function JoinRoomPage() {
           code: normalizedCode,
         });
         router.push(`/rank/${result.gameId}`);
+      } else if (isDraft && draftRoom) {
+        const result = await joinDraftRoom({
+          guestId: validGuestId,
+          sessionToken: validSessionToken,
+          code: normalizedCode,
+        });
+        router.push(`/draft/${result.gameId}`);
       }
     } catch (error: unknown) {
       const err = error as { message?: string };
@@ -136,7 +156,11 @@ export default function JoinRoomPage() {
   return (
     <PageShell
       title={lang === 'ar' ? 'ادخل ماتش بالكود' : 'Join Match'}
-      subtitle={lang === 'ar' ? 'ادخل كود الغرفة المكون من 6 رموز لأي لعبة (سنايب أو رتّب).' : 'Enter 6-character code for Snipe or Rank duel.'}
+      subtitle={
+        lang === 'ar'
+          ? 'ادخل كود الغرفة المكون من 6 رموز لأي لعبة (سنايب، رتّب، أو درافت).'
+          : 'Enter 6-character code for Snipe, Rank, or Draft.'
+      }
       badge={
         <div className="inline-flex items-center gap-1.5 rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-xs font-semibold text-lime shadow-[0_0_15px_rgba(149,232,16,0.2)] backdrop-blur-xl">
           <AppIcon icon={Key} size={14} weight="duotone" />
@@ -253,7 +277,9 @@ export default function JoinRoomPage() {
               canJoin
                 ? isSnipe
                   ? 'border-lime/40 bg-lime/10 shadow-[0_4px_20px_rgba(149,232,16,0.12)]'
-                  : 'border-amber-400/40 bg-amber-400/10 shadow-[0_4px_20px_rgba(245,158,11,0.12)]'
+                  : isRank
+                    ? 'border-amber-400/40 bg-amber-400/10 shadow-[0_4px_20px_rgba(245,158,11,0.12)]'
+                    : 'border-cyan-400/40 bg-cyan-400/10 shadow-[0_4px_20px_rgba(0,240,255,0.15)]'
                 : 'border-white/10 bg-slate-900/60'
             }`}
           >
@@ -265,7 +291,9 @@ export default function JoinRoomPage() {
                     canJoin
                       ? isSnipe
                         ? 'text-lime'
-                        : 'text-amber-300'
+                        : isRank
+                          ? 'text-amber-300'
+                          : 'text-cyan-300'
                       : 'text-white'
                   }`}
                 >
@@ -277,9 +305,13 @@ export default function JoinRoomPage() {
                       ? (lang === 'ar'
                           ? `ماتش سنايب (${snipeRoom?.settings.matchSize || 11} ضد ${snipeRoom?.settings.matchSize || 11}) • $${snipeRoom?.settings.startingBudget || 100}M`
                           : `Snipe Match (${snipeRoom?.settings.matchSize || 11}v${snipeRoom?.settings.matchSize || 11}) • $${snipeRoom?.settings.startingBudget || 100}M Budget`)
-                      : (lang === 'ar'
-                          ? `المضيف: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} جولات`
-                          : `Host: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} Rounds`)
+                      : isRank
+                        ? (lang === 'ar'
+                            ? `المضيف: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} جولات`
+                            : `Host: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} Rounds`)
+                        : (lang === 'ar'
+                            ? `المضيف: ${draftRoom?.hostName || 'Manager'} • ديربي 14 اختيار وتناغم 33`
+                            : `Host: ${draftRoom?.hostName || 'Manager'} • 14 Picks · 33 Chem Duel`)
                     : t('joinRoom.statusSubtext')}
                 </p>
               </div>
@@ -287,12 +319,12 @@ export default function JoinRoomPage() {
 
             {canJoin && (
               <StatPill
-                variant={isSnipe ? 'lime' : 'amber'}
+                variant={isSnipe ? 'lime' : isRank ? 'amber' : 'cyan'}
                 size="sm"
                 className="shrink-0 shadow-sm"
               >
-                <AppIcon icon={isSnipe ? Crosshair : Ranking} size={14} weight="duotone" className="me-1" />
-                <span>{isSnipe ? 'Snipe' : 'Rank 1v1'}</span>
+                <AppIcon icon={isSnipe ? Crosshair : isRank ? Ranking : Lightning} size={14} weight="duotone" className="me-1" />
+                <span>{isSnipe ? 'Snipe' : isRank ? 'Rank 1v1' : 'Pro Draft'}</span>
               </StatPill>
             )}
           </div>
@@ -307,7 +339,7 @@ export default function JoinRoomPage() {
             loading={loading}
             leftIcon={
               <AppIcon
-                icon={isRank ? Ranking : Crosshair}
+                icon={isRank ? Ranking : isDraft ? Lightning : Crosshair}
                 size={20}
                 weight="bold"
                 className="text-slate-950"
@@ -316,14 +348,18 @@ export default function JoinRoomPage() {
             className={`shadow-[0_8px_24px_rgba(149,232,16,0.25)] ${
               isRank
                 ? '!bg-gradient-to-r !from-amber-400 !to-yellow-300 !text-slate-950 !border-amber-300 shadow-[0_8px_24px_rgba(245,158,11,0.25)]'
-                : ''
+                : isDraft
+                  ? '!bg-gradient-to-r !from-cyan-400 !to-cyan-300 !text-slate-950 !border-cyan-300 shadow-[0_8px_24px_rgba(0,240,255,0.25)]'
+                  : ''
             }`}
           >
             {loading
               ? t('joinRoom.joining')
               : isRank
                 ? (lang === 'ar' ? 'ادخل تحدي رتّب' : 'Enter Rank Duel')
-                : (lang === 'ar' ? 'ادخل ماتش سنايب' : 'Enter Snipe Match')}
+                : isDraft
+                  ? (lang === 'ar' ? 'ادخل ديربي الدرفت' : 'Enter Draft Duel')
+                  : (lang === 'ar' ? 'ادخل ماتش سنايب' : 'Enter Snipe Match')}
           </Button>
         </div>
       </form>

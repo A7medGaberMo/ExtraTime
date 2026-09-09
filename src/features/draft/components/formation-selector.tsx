@@ -42,7 +42,7 @@ export function FormationSelector({
       </div>
 
       {/* Apple Glass Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 pt-1">
+      <div className="flex gap-2.5 pt-1 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-1 -mx-1 px-1">
         {options.map((key) => {
           const info = DRAFT_FORMATIONS[key];
           if (!info) return null;
@@ -61,7 +61,7 @@ export function FormationSelector({
                 sfx.lock();
                 onSelectFormation(key);
               }}
-              className={`btn-haptic relative flex flex-col items-center justify-between rounded-2xl p-3.5 text-center transition-all cursor-pointer select-none outline-none ${
+              className={`btn-haptic relative flex flex-col items-center justify-between rounded-2xl p-3.5 text-center transition-all cursor-pointer select-none outline-none shrink-0 min-w-[6rem] flex-1 snap-center ${
                 isSelected
                   ? 'border-2 border-cyan-400 bg-cyan-950/50 text-white shadow-[0_0_24px_rgba(0,240,255,0.4),inset_0_1px_0_0_rgba(255,255,255,0.25)] ring-1 ring-cyan-300'
                   : 'apple-glass-card text-slate-300 hover:border-white/25 hover:text-white'
@@ -73,7 +73,7 @@ export function FormationSelector({
                 </span>
               )}
 
-              <span className="font-display text-xl font-black tracking-wide text-white">
+              <span dir="ltr" className="font-display text-xl font-black tracking-wide text-white whitespace-nowrap">
                 {key}
               </span>
 

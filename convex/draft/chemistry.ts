@@ -24,7 +24,7 @@ export interface ChemistryCalculationResult {
 // Position Category Variants (Authentic FC / FUT realistic nearest positions)
 const POSITION_VARIANTS: Record<string, string[]> = {
   GK: ['GK'],
-  CB: ['CB', 'CDM '],
+  CB: ['CB', 'CDM'],
   LB: ['LB', 'LWB'],
   LWB: ['LWB', 'LB', 'LM'],
   RB: ['RB', 'RWB'],

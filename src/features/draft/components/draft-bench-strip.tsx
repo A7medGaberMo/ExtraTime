@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowsDownUp, Plus, Lightning } from '@phosphor-icons/react';
+import { ArrowsDownUp, Plus } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { useI18n } from '@/lib/i18n';
 import { getTierStyle } from '@/lib/tier-styles';
@@ -33,7 +33,7 @@ export function DraftBenchStrip({
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center rounded-lg border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 shadow-sm">
-            <AppIcon icon={Lightning} size={13} weight="fill" />
+            <AppIcon icon={ArrowsDownUp} size={13} weight="bold" />
           </span>
           <span className="text-xs font-bold uppercase tracking-wider text-white">
             {t('draft.superSubBench')}

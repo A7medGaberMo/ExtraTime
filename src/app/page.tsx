@@ -207,22 +207,24 @@ export default function HomePage() {
         <div className="apple-glass-card group relative flex flex-col md:flex-row md:items-center justify-between gap-5 overflow-hidden rounded-3xl p-5 sm:p-6 md:p-7 border border-lime/30 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-3xl hover:border-lime/60 transition-all duration-300">
           <div className="pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full bg-lime/10 blur-3xl group-hover:scale-125 transition-transform duration-500" />
 
+          {/* Top Corner Mode Spec Badge */}
+          <div className="absolute top-4 end-4 sm:top-5 sm:end-6 z-10 pointer-events-none">
+            <span className="inline-flex items-center rounded-full border border-lime/40 bg-lime/10 px-2.5 py-0.5 text-[11px] sm:text-xs font-black text-lime font-stats shadow-sm backdrop-blur-md">
+              11v11 / 5v5
+            </span>
+          </div>
+
           {/* Left / Info column */}
           <div className="relative flex-1 min-w-0 space-y-3">
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-3.5">
+              <div className="flex items-center gap-3.5 pe-20 sm:pe-0">
                 <div className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl border border-lime/50 bg-lime/15 text-lime shadow-[0_0_20px_rgba(202,255,0,0.25)]">
                   <AppIcon icon={Crosshair} size={28} weight="fill" />
                 </div>
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2">
-                    <h2 className="font-display text-xl sm:text-2xl font-black tracking-tight text-white">
-                      {t('home.snipeCard.title')}
-                    </h2>
-                    <span className="inline-flex items-center rounded-full border border-lime/40 bg-lime/10 px-2.5 py-0.5 text-xs font-black text-lime font-stats shadow-sm">
-                      11v11 / 5v5
-                    </span>
-                  </div>
+                  <h2 className="font-display text-xl sm:text-2xl font-black tracking-tight text-white">
+                    {t('home.snipeCard.title')}
+                  </h2>
                   <span className="text-xs sm:text-sm font-bold text-lime">
                     {t('home.snipeCard.subtitle')}
                   </span>
@@ -236,7 +238,7 @@ export default function HomePage() {
 
             {/* Badges / Status row */}
             <div className="flex flex-wrap items-center gap-2 pt-0.5">
-              <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-slate-950/70 px-3 py-1.5 text-xs shadow-inner">
+              <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-slate-950/70 px-2.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs shadow-inner whitespace-nowrap shrink-0">
                 <span className="font-semibold text-white">Sealed Bids Match</span>
                 <span className="text-slate-600">·</span>
                 {waitingSnipeCurrent > 0 ? (
@@ -248,8 +250,8 @@ export default function HomePage() {
                 )}
               </div>
 
-              <div className="inline-flex items-center gap-2 rounded-xl border border-lime/25 bg-lime/[0.06] px-3 py-1.5 text-xs text-slate-300 font-stats">
-                <span className="font-black text-lime uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 rounded-xl border border-lime/25 bg-lime/[0.06] px-2.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs text-slate-300 font-stats whitespace-nowrap max-w-full overflow-hidden">
+                <span className="font-black text-lime uppercase tracking-wider shrink-0">
                   {lang === 'ar' ? 'الإعداد العام:' : 'Public Match:'}
                 </span>
                 <span className="truncate text-slate-300">
@@ -305,22 +307,24 @@ export default function HomePage() {
         <div className="apple-glass-card group relative flex flex-col md:flex-row md:items-center justify-between gap-5 overflow-hidden rounded-3xl p-5 sm:p-6 md:p-7 border border-amber-400/30 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-3xl hover:border-amber-400/60 transition-all duration-300">
           <div className="pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full bg-amber-400/10 blur-3xl group-hover:scale-125 transition-transform duration-500" />
 
+          {/* Top Corner Mode Spec Badge */}
+          <div className="absolute top-4 end-4 sm:top-5 sm:end-6 z-10 pointer-events-none">
+            <span className="inline-flex items-center rounded-full border border-amber-400/40 bg-amber-400/10 px-2.5 py-0.5 text-[11px] sm:text-xs font-black text-amber-300 font-stats shadow-sm backdrop-blur-md">
+              {lang === 'ar' ? '45 ثانية · +10 نقاط' : '45s Rounds · +10 Max PTS'}
+            </span>
+          </div>
+
           {/* Left / Info column */}
           <div className="relative flex-1 min-w-0 space-y-3">
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-3.5">
+              <div className="flex items-center gap-3.5 pe-24 sm:pe-0">
                 <div className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl border border-amber-400/50 bg-amber-400/15 text-amber-300 shadow-[0_0_20px_rgba(245,158,11,0.25)]">
                   <AppIcon icon={Ranking} size={28} weight="fill" />
                 </div>
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2">
-                    <h2 className="font-display text-xl sm:text-2xl font-black tracking-tight text-white">
-                      {t('home.rankCard.title')}
-                    </h2>
-                    <span className="inline-flex items-center rounded-full border border-amber-400/40 bg-amber-400/10 px-2.5 py-0.5 text-xs font-black text-amber-300 font-stats shadow-sm">
-                      45s Rounds · +10 Max PTS
-                    </span>
-                  </div>
+                  <h2 className="font-display text-xl sm:text-2xl font-black tracking-tight text-white">
+                    {t('home.rankCard.title')}
+                  </h2>
                   <span className="text-xs sm:text-sm font-bold text-amber-400">
                     {t('home.rankCard.subtitle')}
                   </span>
@@ -334,7 +338,7 @@ export default function HomePage() {
 
             {/* Badges / Status row */}
             <div className="flex flex-wrap items-center gap-2 pt-0.5">
-              <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-slate-950/70 px-3 py-1.5 text-xs shadow-inner">
+              <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-slate-950/70 px-2.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs shadow-inner whitespace-nowrap shrink-0">
                 <span className="font-semibold text-white">Live Trivia Radar</span>
                 <span className="text-slate-600">·</span>
                 {waitingRankCurrent > 0 ? (
@@ -346,11 +350,11 @@ export default function HomePage() {
                 )}
               </div>
 
-              <div className="inline-flex items-center gap-2 rounded-xl border border-amber-400/25 bg-amber-400/[0.06] px-3 py-1.5 text-xs text-slate-300 font-stats">
-                <span className="font-black text-amber-400 uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 rounded-xl border border-amber-400/25 bg-amber-400/[0.06] px-2.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs text-slate-300 font-stats whitespace-nowrap max-w-full overflow-hidden">
+                <span className="font-black text-amber-400 uppercase tracking-wider shrink-0">
                   {lang === 'ar' ? 'نظام الحساب:' : 'Distance Scoring:'}
                 </span>
-                <span className="text-slate-300">
+                <span className="truncate text-slate-300">
                   {lang === 'ar' ? 'دقة القياس (+2 إلى -2) · 3 أو 5 جولات' : 'Official Metrics (+2 to -2) · 3 or 5 Rounds'}
                 </span>
               </div>
@@ -365,7 +369,7 @@ export default function HomePage() {
                 onClick={() => triggerActionWithName({ type: 'rank_solo' })}
                 disabled={loading}
                 leftIcon={<AppIcon icon={Play} size={16} weight="bold" className="text-slate-950" />}
-                className="bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 font-black hover:brightness-110 rounded-2xl shadow-md shadow-amber-400/20 h-12 text-xs sm:text-sm whitespace-nowrap"
+                className="bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 font-black hover:brightness-110 rounded-2xl shadow-md shadow-amber-400/20 h-12 text-xs sm:text-sm whitespace-nowrap !px-2.5 sm:!px-4"
               >
                 {t('home.rankCard.playSolo')}
               </Button>
@@ -375,7 +379,7 @@ export default function HomePage() {
                 onClick={() => triggerActionWithName({ type: 'rank_public' })}
                 disabled={loading}
                 leftIcon={<AppIcon icon={Compass} size={16} weight="bold" className="text-amber-400" />}
-                className="apple-glass-card border-amber-400/30 hover:border-amber-400/60 rounded-2xl font-bold h-12 text-xs sm:text-sm whitespace-nowrap"
+                className="apple-glass-card border-amber-400/30 hover:border-amber-400/60 rounded-2xl font-bold h-12 text-xs sm:text-sm whitespace-nowrap !px-2.5 sm:!px-4"
                 rightIcon={
                   waitingRankCurrent > 0 ? (
                     <span className="font-stats text-micro text-amber-300 font-black">{waitingRankCurrent}</span>
@@ -409,22 +413,24 @@ export default function HomePage() {
         <div className="apple-glass-card group relative flex flex-col md:flex-row md:items-center justify-between gap-5 overflow-hidden rounded-3xl p-5 sm:p-6 md:p-7 border border-cyan-400/30 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-3xl hover:border-cyan-400/60 transition-all duration-300">
           <div className="pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full bg-cyan-400/10 blur-3xl group-hover:scale-125 transition-transform duration-500" />
 
+          {/* Top Corner Mode Spec Badge */}
+          <div className="absolute top-4 end-4 sm:top-5 sm:end-6 z-10 pointer-events-none">
+            <span className="inline-flex items-center rounded-full border border-cyan-400/40 bg-cyan-400/10 px-2.5 py-0.5 text-[11px] sm:text-xs font-black text-cyan-300 font-stats shadow-sm backdrop-blur-md">
+              {lang === 'ar' ? '14 اختيار · تناغم 33' : '14 Picks · 33 Chem'}
+            </span>
+          </div>
+
           {/* Left / Info column */}
           <div className="relative flex-1 min-w-0 space-y-3">
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-3.5">
+              <div className="flex items-center gap-3.5 pe-24 sm:pe-0">
                 <div className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl border border-cyan-400/50 bg-cyan-400/15 text-cyan-300 shadow-[0_0_20px_rgba(0,240,255,0.25)]">
                   <AppIcon icon={Lightning} size={28} weight="fill" />
                 </div>
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2">
-                    <h2 className="font-display text-xl sm:text-2xl font-black tracking-tight text-white">
-                      {t('home.draftCard.title')}
-                    </h2>
-                    <span className="inline-flex items-center rounded-full border border-cyan-400/40 bg-cyan-400/10 px-2.5 py-0.5 text-xs font-black text-cyan-300 font-stats shadow-sm">
-                      14 Picks · 33 Chem
-                    </span>
-                  </div>
+                  <h2 className="font-display text-xl sm:text-2xl font-black tracking-tight text-white">
+                    {t('home.draftCard.title')}
+                  </h2>
                   <span className="text-xs sm:text-sm font-bold text-cyan-400">
                     {t('home.draftCard.subtitle')}
                   </span>
@@ -438,7 +444,7 @@ export default function HomePage() {
 
             {/* Badges / Status row */}
             <div className="flex flex-wrap items-center gap-2 pt-0.5">
-              <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-slate-950/70 px-3 py-1.5 text-xs shadow-inner">
+              <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-slate-950/70 px-2.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs shadow-inner whitespace-nowrap shrink-0">
                 <span className="font-semibold text-white">Engine 3 · Pro Squad</span>
                 <span className="text-slate-600">·</span>
                 {waitingDraftCurrent > 0 ? (
@@ -450,11 +456,11 @@ export default function HomePage() {
                 )}
               </div>
 
-              <div className="inline-flex items-center gap-2 rounded-xl border border-cyan-400/25 bg-cyan-400/[0.06] px-3 py-1.5 text-xs text-slate-300 font-stats">
-                <span className="font-black text-cyan-300 uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 rounded-xl border border-cyan-400/25 bg-cyan-400/[0.06] px-2.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs text-slate-300 font-stats whitespace-nowrap max-w-full overflow-hidden">
+                <span className="font-black text-cyan-300 uppercase tracking-wider shrink-0">
                   {lang === 'ar' ? 'الأطوار:' : 'Game Modes:'}
                 </span>
-                <span className="text-slate-300">
+                <span className="truncate text-slate-300">
                   {lang === 'ar' ? 'تحديات فردية + كويست الحظ · ديربي 1v1' : 'Solo Quests + Lucky Dice · 1v1 Duel Showdown'}
                 </span>
               </div>
@@ -469,7 +475,7 @@ export default function HomePage() {
                 onClick={() => triggerActionWithName({ type: 'draft_solo' })}
                 disabled={loading}
                 leftIcon={<AppIcon icon={Play} size={16} weight="bold" className="text-slate-950" />}
-                className="bg-gradient-to-b from-cyan-400 to-cyan-500 text-slate-950 font-black hover:brightness-110 rounded-2xl shadow-md shadow-cyan-400/25 h-12 text-xs sm:text-sm whitespace-nowrap"
+                className="bg-gradient-to-b from-cyan-400 to-cyan-500 text-slate-950 font-black hover:brightness-110 rounded-2xl shadow-md shadow-cyan-400/25 h-12 text-xs sm:text-sm whitespace-nowrap !px-2.5 sm:!px-4"
               >
                 {t('home.draftCard.playSolo')}
               </Button>
@@ -479,7 +485,7 @@ export default function HomePage() {
                 onClick={() => triggerActionWithName({ type: 'draft_public' })}
                 disabled={loading}
                 leftIcon={<AppIcon icon={Compass} size={16} weight="bold" className="text-cyan-400" />}
-                className="apple-glass-card border-cyan-400/30 hover:border-cyan-400/60 rounded-2xl font-bold h-12 text-xs sm:text-sm whitespace-nowrap"
+                className="apple-glass-card border-cyan-400/30 hover:border-cyan-400/60 rounded-2xl font-bold h-12 text-xs sm:text-sm whitespace-nowrap !px-2.5 sm:!px-4"
                 rightIcon={
                   waitingDraftCurrent > 0 ? (
                     <span className="font-stats text-micro text-cyan-300 font-black">{waitingDraftCurrent}</span>

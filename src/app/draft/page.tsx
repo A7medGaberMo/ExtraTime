@@ -237,17 +237,18 @@ function DraftHubContent() {
           </div>
         </div>
 
-        {/* Formation quick picker segmented capsules */}
-        <div className="flex items-center gap-1.5 overflow-x-auto max-w-full pb-0.5 sm:pb-0">
+        {/* Formation quick picker segmented capsules - guaranteed unbreakable on mobile */}
+        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto max-w-full w-full sm:w-auto pb-1 sm:pb-0 scrollbar-hide no-scrollbar -mx-1 px-1 sm:mx-0 sm:px-0">
           {FORMATION_OPTIONS.map((f) => (
             <button
               key={f}
               type="button"
+              dir="ltr"
               onClick={() => {
                 sfx.tap();
                 setSelectedFormation(f);
               }}
-              className={`btn-haptic rounded-xl px-3 py-1.5 text-xs font-black transition-all cursor-pointer ${selectedFormation === f
+              className={`btn-haptic shrink-0 whitespace-nowrap rounded-xl px-3 sm:px-3.5 py-1.5 text-xs font-black font-stats tracking-wider transition-all cursor-pointer select-none ${selectedFormation === f
                   ? 'bg-gradient-to-b from-cyan-400 to-cyan-500 text-slate-950 shadow-md shadow-cyan-400/25 ring-1 ring-white/40'
                   : 'bg-white/[0.05] border border-white/8 text-slate-400 hover:text-white hover:bg-white/[0.1]'
                 }`}

@@ -66,7 +66,7 @@ export function DraftChallengeResultModal({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.92, y: 20 }}
           transition={{ type: 'spring', stiffness: 450, damping: 30 }}
-          className="apple-glass-elevated relative w-full max-w-lg overflow-hidden rounded-3xl p-5 sm:p-7 shadow-[0_30px_70px_rgba(0,0,0,0.85)] text-center space-y-4 sm:space-y-5 border border-white/20"
+          className="apple-glass-elevated relative w-full max-w-lg max-h-[92dvh] overflow-y-auto scrollbar-none rounded-3xl p-4 sm:p-7 shadow-[0_30px_70px_rgba(0,0,0,0.85)] text-center space-y-4 sm:space-y-5 border border-white/20"
         >
           {/* Top Bar Navigation (Review Pitch, Hub Link, Close) */}
           <div className="relative z-20 flex items-center justify-between pb-2 border-b border-white/10">

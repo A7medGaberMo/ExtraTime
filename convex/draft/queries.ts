@@ -177,3 +177,28 @@ export const getSoloLeaderboard = query({
     return soloScores;
   },
 });
+
+export const getByCode = query({
+  args: {
+    code: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const game = await ctx.db
+      .query('draftGames')
+      .withIndex('by_code', (q) => q.eq('code', args.code))
+      .first();
+
+    if (!game) return null;
+
+    const host = game.participants[0];
+    return {
+      gameId: game._id,
+      code: game.code,
+      status: game.status,
+      isFull: game.participants.length >= 2,
+      participantCount: game.participants.length,
+      mode: game.mode,
+      hostName: host?.name ?? 'Manager',
+    };
+  },
+});

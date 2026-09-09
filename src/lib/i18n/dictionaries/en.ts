@@ -61,7 +61,7 @@ export const en = {
     },
     rankCard: {
       tag: 'New Arena',
-      title: 'Rank Challenge',
+      title: 'Rank',
       subtitle: 'Trivia & Hierarchy Duel',
       desc: 'Order 5 clubs, superstars, historic seasons, and tournament records by accurate official metrics in 45-second rounds.',
       previewTitle: 'Preview: UCL Titles Ranking',

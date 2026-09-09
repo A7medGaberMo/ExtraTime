@@ -91,13 +91,21 @@ export async function generateCandidatesForSlot(
   const allPlayers = await ctx.db.query('players').collect();
   const unused = allPlayers.filter((p) => !usedPlayerIds.has(String(p._id)));
 
-  // Slot 0 (Captain) & Slots >= 11 (Bench): Completely random from all unused players (0 bias)
-  if (
-    slotIndex === 0 ||
-    targetPosition === 'CAPTAIN' ||
-    slotIndex >= 11 ||
-    targetPosition === 'BENCH'
-  ) {
+  // Slot 0 (Captain): Always ICON tier players
+  if (slotIndex === 0 || targetPosition === 'CAPTAIN') {
+    const icons = shuffleArray(unused.filter((p) => p.tier === 'ICON'));
+    if (icons.length >= 5) return icons.slice(0, 5).map((c) => c._id);
+    // Backfill with HERO if not enough ICONs
+    const heroes = shuffleArray(unused.filter((p) => p.tier === 'HERO' && !icons.some((ic) => ic._id === p._id)));
+    const captainPool = [...icons, ...heroes].slice(0, 5);
+    if (captainPool.length >= 5) return captainPool.map((c) => c._id);
+    // Last resort: pad with any remaining unused
+    const rest = shuffleArray(unused.filter((p) => !captainPool.some((cp) => cp._id === p._id)));
+    return [...captainPool, ...rest].slice(0, 5).map((c) => c._id);
+  }
+
+  // Bench (Slots >= 11): Completely random from all unused players (0 bias)
+  if (slotIndex >= 11 || targetPosition === 'BENCH') {
     const candidates = shuffleArray(unused).slice(0, 5);
     return candidates.map((c) => c._id);
   }

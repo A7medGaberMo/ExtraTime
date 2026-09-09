@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PlayerCard } from '@/components/shared/player-card';
 import { AppIcon } from '@/components/ui/app-icon';
-import { Crown, Lightning, Sparkle } from '@phosphor-icons/react';
+import { Crown, Lightning, ArrowsDownUp } from '@phosphor-icons/react';
 import { useI18n } from '@/lib/i18n';
 import { sfx } from '@/lib/sfx';
 import type { EnrichedPlayerCard, EnrichedStarterSlot } from '../types/draft';
@@ -114,9 +114,9 @@ export function DraftPickOverlay({
             }`}
           >
             <AppIcon
-              icon={isCaptainRound ? Crown : isSuperSub ? Sparkle : Lightning}
+              icon={isCaptainRound ? Crown : isSuperSub ? ArrowsDownUp : Lightning}
               size={16}
-              weight="fill"
+              weight={isSuperSub ? 'bold' : 'fill'}
             />
           </span>
 
