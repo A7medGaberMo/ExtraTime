@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Plus, ArrowsClockwise, Lightning } from '@phosphor-icons/react';
 import { useI18n } from '@/lib/i18n';
@@ -21,9 +20,7 @@ interface DraftPitchBoardProps {
   selectedSlotIndex: number | null;
   onSelectSlot?: (slotIndex: number) => void;
   onSwapStarters?: (slotIndexA: number, slotIndexB: number) => void;
-  onSelectTargetSlot?: (slotIndex: number) => void;
   isSwappingPhase?: boolean;
-  isDraftingPhase?: boolean;
 }
 
 interface Coord {
@@ -107,33 +104,23 @@ export function DraftPitchBoard({
   selectedSlotIndex,
   onSelectSlot,
   onSwapStarters,
-  onSelectTargetSlot,
   isSwappingPhase = false,
-  isDraftingPhase = false,
 }: DraftPitchBoardProps) {
   const { t } = useI18n();
   const coords = FORMATION_COORDS[formation] || FORMATION_COORDS['4-3-3'];
   const links = FORMATION_LINKS[formation] || [];
 
   const handleSlotClick = (idx: number, hasPlayer: boolean) => {
-    if (hasPlayer) {
-      if (isSwappingPhase) {
-        if (selectedSlotIndex === null) {
-          onSelectSlot?.(idx);
-        } else if (selectedSlotIndex === idx) {
-          onSelectSlot?.(idx);
-        } else {
-          onSwapStarters?.(selectedSlotIndex, idx);
-        }
-      } else {
-        // Outside swapping phase, toggle selection
+    if (!hasPlayer) return;
+    if (isSwappingPhase) {
+      if (selectedSlotIndex === null || selectedSlotIndex === idx) {
         onSelectSlot?.(idx);
+      } else {
+        onSwapStarters?.(selectedSlotIndex, idx);
       }
     } else {
-      // Empty slot clicked during drafting: allow free position choice!
-      if (isDraftingPhase) {
-        onSelectTargetSlot?.(idx);
-      }
+      // Outside swapping phase, toggle selection
+      onSelectSlot?.(idx);
     }
   };
 
@@ -258,24 +245,19 @@ export function DraftPitchBoard({
                   onClick={() => handleSlotClick(idx, true)}
                 />
               ) : (
-                /* ── UNFILLED CLICKABLE TARGET SLOT (Apple Glass Docking Bay) ── */
-                <motion.button
-                  type="button"
-                  whileHover={{ scale: 1.08 }}
-                  whileTap={{ scale: 0.94 }}
-                  onClick={() => handleSlotClick(idx, false)}
+                /* ── UNFILLED DRAFT SLOT (Apple Glass Docking Bay) ── */
+                <div
                   aria-label={`Draft slot for position ${slot?.position || 'POS'}`}
-                  className={`btn-haptic group relative flex flex-col items-center cursor-pointer select-none outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-2xl transition-all ${
-                    isSlotActive ? 'scale-105 z-20' : 'opacity-90 hover:opacity-100 z-10'
+                  className={`group relative flex flex-col items-center select-none outline-none rounded-2xl transition-all ${
+                    isSlotActive ? 'scale-105 z-20' : 'opacity-85 z-10'
                   }`}
-                  title={`Tap to draft ${slot?.position || 'POS'}`}
                 >
                   {/* Apple Glass Docking Bay */}
                   <div
                     className={`relative flex flex-col items-center justify-center rounded-xl sm:rounded-2xl transition-all w-[46px] h-[70px] sm:w-[56px] sm:h-[84px] md:w-[62px] md:h-[94px] ${
                       isSlotActive
                         ? 'border-2 border-cyan-400 bg-cyan-950/80 text-cyan-300 shadow-[0_0_24px_rgba(0,240,255,0.7),inset_0_1px_0_0_rgba(255,255,255,0.35)] ring-1 ring-cyan-300'
-                        : 'border border-white/15 bg-white/[0.05] text-slate-400 hover:border-cyan-400/60 hover:bg-white/[0.1] hover:text-white backdrop-blur-md shadow-inner'
+                        : 'border border-white/15 bg-white/[0.05] text-slate-400 backdrop-blur-md shadow-inner'
                     }`}
                   >
                     {isSlotActive ? (
@@ -289,16 +271,16 @@ export function DraftPitchBoard({
                       </div>
                     ) : (
                       <div className="flex flex-col items-center gap-1 p-1">
-                        <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-white/[0.06] border border-white/10 group-hover:bg-cyan-400/10 group-hover:border-cyan-400/30 transition-all">
-                          <AppIcon icon={Plus} size={14} weight="bold" className="opacity-70 group-hover:opacity-100 group-hover:text-cyan-300 transition-opacity" />
+                        <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-white/[0.06] border border-white/10">
+                          <AppIcon icon={Plus} size={14} weight="bold" className="opacity-40 text-slate-500" />
                         </span>
-                        <span className="text-[9px] sm:text-[10px] font-extrabold tracking-tight uppercase text-slate-400 group-hover:text-cyan-300 transition-colors">
+                        <span className="text-[9px] sm:text-[10px] font-extrabold tracking-tight uppercase text-slate-500">
                           {slot?.position || 'POS'}
                         </span>
                       </div>
                     )}
                   </div>
-                </motion.button>
+                </div>
               )}
             </div>
           );

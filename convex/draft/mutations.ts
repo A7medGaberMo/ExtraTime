@@ -556,12 +556,8 @@ async function executePickForParticipant(
       matchingSlot.isCaptain = true;
     }
   } else if (currentSlot >= 1 && currentSlot <= 10) {
-    // Picks 1..10: Fill the targeted slot or next natural unfilled slot (moves from GK forward!)
-    const targetSlot =
-      participant.targetSlotIndex !== undefined
-        ? updatedStarters.find((s: any) => s.slotIndex === participant.targetSlotIndex && !s.playerId) ??
-          getNextNaturalDraftSlot(updatedStarters)
-        : getNextNaturalDraftSlot(updatedStarters);
+    // Picks 1..10: Fill the next natural unfilled slot (moves from GK forward!)
+    const targetSlot = getNextNaturalDraftSlot(updatedStarters);
     if (targetSlot) {
       targetSlot.playerId = playerId;
     }
@@ -801,63 +797,18 @@ export const swapStarters = mutation({
 });
 
 /**
- * Allows the player to click any unfilled pitch slot to choose which position to draft next
+ * Deprecated: Draft slots are strictly drafted once per turn in natural EA FC order.
+ * Rerolling or changing candidate cards mid-turn is disabled.
  */
 export const changeTargetDraftSlot = mutation({
   args: {
     gameId: v.id('draftGames'),
     guestId: v.id('guestUsers'),
     sessionToken: v.optional(v.string()),
-    targetSlotIndex: v.number(), // 0 to 10
+    targetSlotIndex: v.number(),
   },
-  handler: async (ctx, args) => {
-    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
-    const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
-
-    const pIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
-    if (pIndex === -1) throw new Error('Participant not in game');
-
-    const participant = game.participants[pIndex];
-    if (participant.currentSlotIndex >= 11) {
-      throw new Error('Starting XI picks are already complete');
-    }
-
-    const targetSlot = participant.startingXI.find((s) => s.slotIndex === args.targetSlotIndex);
-    if (!targetSlot || targetSlot.playerId) {
-      throw new Error('Selected slot is already filled or invalid');
-    }
-
-    // Generate fresh candidate cards matching the chosen target slot position
-    const usedPlayerIds = new Set<string>();
-    for (const s of participant.startingXI) if (s.playerId) usedPlayerIds.add(String(s.playerId));
-    for (const b of participant.bench) if (b.playerId) usedPlayerIds.add(String(b.playerId));
-
-    const newCandidates = await generateCandidatesForSlot(
-      ctx,
-      participant.currentSlotIndex,
-      targetSlot.position,
-      usedPlayerIds,
-    );
-
-    const updatedParticipant = {
-      ...participant,
-      targetSlotIndex: args.targetSlotIndex,
-      currentCandidateIds: newCandidates,
-    };
-
-    const newParticipants = [...game.participants];
-    newParticipants[pIndex] = updatedParticipant;
-
-    await ctx.db.patch(game._id, {
-      participants: newParticipants,
-    });
-
-    return {
-      success: true,
-      targetSlotIndex: args.targetSlotIndex,
-      targetPosition: targetSlot.position,
-    };
+  handler: async () => {
+    return { success: false };
   },
 });
 

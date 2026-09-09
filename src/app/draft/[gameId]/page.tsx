@@ -45,7 +45,6 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
   const makeDraftPick = useMutation(api.draft.mutations.makeDraftPick);
   const swapPlayers = useMutation(api.draft.mutations.swapSquadPlayers);
   const swapStarters = useMutation(api.draft.mutations.swapStarters);
-  const changeTargetDraftSlot = useMutation(api.draft.mutations.changeTargetDraftSlot);
   const finishDraft = useMutation(api.draft.mutations.finishDraft);
   const simulateBoss = useMutation(api.draft.mutations.simulateBossMatch);
   const autoPickExpired = useMutation(api.draft.mutations.autoPickExpiredTurn);
@@ -203,26 +202,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
     }
   };
 
-  // 6. Free Position Targeting (click any empty pitch slot to draft that position next)
-  const handleSelectTargetSlot = async (slotIndex: number) => {
-    if (!participant || actionLoading || isCaptainRound || currentPickIndex > 10) return;
-    setActionLoading(true);
-    try {
-      await changeTargetDraftSlot({
-        gameId,
-        guestId: participant.guestId as Id<'guestUsers'>,
-        sessionToken,
-        targetSlotIndex: slotIndex,
-      });
-      sfx.tap();
-    } catch (err: any) {
-      toast(err.message || 'Failed to change drafting slot', 'error');
-    } finally {
-      setActionLoading(false);
-    }
-  };
-
-  // 7. Finish Drafting & Mark Ready / Check Challenge
+  // 6. Finish Drafting & Mark Ready / Check Challenge
   const handleFinishDraft = async () => {
     if (!participant || actionLoading) return;
     setActionLoading(true);
@@ -240,7 +220,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
     }
   };
 
-  // 8. Boss Match
+  // 7. Boss Match
   const handlePlayBossMatch = async () => {
     if (!participant || actionLoading) return;
     setActionLoading(true);
@@ -257,7 +237,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
     }
   };
 
-  // Active target slot and pick index
+  // Active target slot and pick index (natural EA FC progression)
   const currentPickIndex = participant?.currentSlotIndex ?? 0;
   const isCaptainRound = currentPickIndex === 0;
 
@@ -265,16 +245,11 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
   const nextUnfilledStarter = getNextNaturalDraftSlot(participant?.startingXI ?? []);
   const activePitchSlotIndex = isCaptainRound
     ? -1
-    : (participant?.targetSlotIndex ?? nextUnfilledStarter?.slotIndex ?? -1);
+    : (nextUnfilledStarter?.slotIndex ?? -1);
 
   let activeTargetPosition = 'CAPTAIN';
   if (!isCaptainRound && currentPickIndex <= 10) {
-    if (participant?.targetSlotIndex !== undefined) {
-      const targetedSlot = participant.startingXI.find((s) => s.slotIndex === participant.targetSlotIndex);
-      activeTargetPosition = targetedSlot?.position ?? 'GK';
-    } else {
-      activeTargetPosition = nextUnfilledStarter?.position ?? 'GK';
-    }
+    activeTargetPosition = nextUnfilledStarter?.position ?? 'GK';
   } else if (currentPickIndex >= 11) {
     activeTargetPosition = 'SUPER-SUB';
   }
@@ -396,9 +371,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
               setSelectedStarterSlotIndex(selectedStarterSlotIndex === idx ? null : idx);
             }}
             onSwapStarters={handleSwapStarters}
-            onSelectTargetSlot={handleSelectTargetSlot}
             isSwappingPhase={isSwappingPhase}
-            isDraftingPhase={!isSwappingPhase && currentPickIndex > 0 && currentPickIndex <= 10}
           />
 
           {/* 3. Bottom Dock: Candidate Cards OR Bench Subs */}
