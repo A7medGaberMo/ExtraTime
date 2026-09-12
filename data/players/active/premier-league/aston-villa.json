@@ -8,18 +8,6 @@
   },
   "players": [
     {
-      "apiId": 19599,
-      "name": "E. Martínez",
-      "position": "GK",
-      "club": "Aston Villa",
-      "nation": "Argentina",
-      "tier": "MASTER",
-      "rating": 88,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19599.png",
-      "kitNumber": 23
-    },
-    {
       "apiId": 36878,
       "name": "M. Bizot",
       "position": "GK",
@@ -32,6 +20,18 @@
       "kitNumber": 40
     },
     {
+      "apiId": 199578,
+      "name": "Z. Suzuki",
+      "position": "GK",
+      "club": "Aston Villa",
+      "nation": "Japan",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/199578.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 284390,
       "name": "J. Wright",
       "position": "GK",
@@ -41,91 +41,7 @@
       "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284390.png",
-      "kitNumber": 64
-    },
-    {
-      "apiId": 46815,
-      "name": "Pau Torres",
-      "position": "CB",
-      "club": "Aston Villa",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 84,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46815.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 19354,
-      "name": "E. Konsa",
-      "position": "CB/RB",
-      "club": "Aston Villa",
-      "nation": "England",
-      "tier": "ELITE",
-      "rating": 83,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19354.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 138816,
-      "name": "I. Maatsen",
-      "position": "LB/LM",
-      "club": "Aston Villa",
-      "nation": "Netherlands",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/138816.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 19298,
-      "name": "M. Cash",
-      "position": "RB",
-      "club": "Aston Villa",
-      "nation": "Poland",
-      "tier": "GOLD",
-      "rating": 79,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19298.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 889,
-      "name": "V. Lindelöf",
-      "position": "CB",
-      "club": "Aston Villa",
-      "nation": "Sweden",
-      "tier": "GOLD",
-      "rating": 78,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/889.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 19179,
-      "name": "T. Mings",
-      "position": "CB",
-      "club": "Aston Villa",
-      "nation": "England",
-      "tier": "GOLD",
-      "rating": 77,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19179.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 342320,
-      "name": "K. Nedeljković",
-      "position": "RB",
-      "club": "Aston Villa",
-      "nation": "Serbia",
-      "tier": "SILVER",
-      "rating": 71,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/342320.png",
-      "kitNumber": 19
+      "kitNumber": 42
     },
     {
       "apiId": 284457,
@@ -140,6 +56,18 @@
       "kitNumber": 26
     },
     {
+      "apiId": 19298,
+      "name": "M. Cash",
+      "position": "RB",
+      "club": "Aston Villa",
+      "nation": "Poland",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19298.png",
+      "kitNumber": 2
+    },
+    {
       "apiId": 478441,
       "name": "M. Cissé",
       "position": "CB",
@@ -152,52 +80,88 @@
       "kitNumber": 48
     },
     {
-      "apiId": 546703,
-      "name": "T. Rowe",
+      "apiId": 144729,
+      "name": "T. Harwood-Bellis",
       "position": "CB",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/546703.png",
-      "kitNumber": 52
-    },
-    {
-      "apiId": 19191,
-      "name": "J. McGinn",
-      "position": "CM/CAM",
-      "club": "Aston Villa",
-      "nation": "Scotland",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19191.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 195103,
-      "name": "João Gomes",
-      "position": "CM/CDM",
-      "club": "Aston Villa",
-      "nation": "Brazil",
       "tier": "ELITE",
       "rating": 81,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195103.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/144729.png",
+      "kitNumber": 6
     },
     {
-      "apiId": 162714,
-      "name": "Amadou Onana",
-      "position": "CDM/CM",
+      "apiId": 889,
+      "name": "V. Lindelöf",
+      "position": "CB",
       "club": "Aston Villa",
-      "nation": "Belgium",
-      "tier": "MASTER",
-      "rating": 86,
+      "nation": "Sweden",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162714.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/889.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 138816,
+      "name": "I. Maatsen",
+      "position": "LB/LM",
+      "club": "Aston Villa",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138816.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 19179,
+      "name": "T. Mings",
+      "position": "CB",
+      "club": "Aston Villa",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 77,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19179.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 162012,
+      "name": "M. Ruggeri",
+      "position": "LB/CB",
+      "club": "Aston Villa",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162012.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 46815,
+      "name": "Pau Torres",
+      "position": "CB",
+      "club": "Aston Villa",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "rating": 84,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/46815.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 18846,
+      "name": "A. Wan-Bissaka",
+      "position": "RB",
+      "club": "Aston Villa",
+      "nation": "England",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18846.png",
+      "kitNumber": 29
     },
     {
       "apiId": 2287,
@@ -212,6 +176,18 @@
       "kitNumber": 6
     },
     {
+      "apiId": 434180,
+      "name": "Aidan Borland",
+      "position": "CM",
+      "club": "Aston Villa",
+      "nation": "Scotland",
+      "tier": "BRONZE",
+      "rating": 60,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/434180.png",
+      "kitNumber": 16
+    },
+    {
       "apiId": 19071,
       "name": "E. Buendía",
       "position": "CAM/RW",
@@ -224,42 +200,6 @@
       "kitNumber": 10
     },
     {
-      "apiId": 434180,
-      "name": "Aidan Borland",
-      "position": "CM",
-      "club": "Aston Villa",
-      "nation": "Scotland",
-      "tier": "BRONZE",
-      "rating": 60,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/434180.png",
-      "kitNumber": 25
-    },
-    {
-      "apiId": 380715,
-      "name": "B. Broggio",
-      "position": "CM",
-      "club": "Aston Villa",
-      "nation": "England",
-      "tier": "BRONZE",
-      "rating": 59,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/380715.png",
-      "kitNumber": 50
-    },
-    {
-      "apiId": 453101,
-      "name": "B. Burrows",
-      "position": "CM",
-      "club": "Aston Villa",
-      "nation": "England",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/453101.png",
-      "kitNumber": 83
-    },
-    {
       "apiId": 416250,
       "name": "T. Carroll",
       "position": "CM",
@@ -269,7 +209,19 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/416250.png",
-      "kitNumber": 51
+      "kitNumber": 12
+    },
+    {
+      "apiId": 661146,
+      "name": "Theodore Carroll",
+      "position": "CM",
+      "club": "Aston Villa",
+      "nation": "England",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/661146.png",
+      "kitNumber": 71
     },
     {
       "apiId": 412084,
@@ -281,7 +233,19 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412084.png",
-      "kitNumber": 53
+      "kitNumber": 4
+    },
+    {
+      "apiId": 511,
+      "name": "L. Goretzka",
+      "position": "CM",
+      "club": "Aston Villa",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/511.png",
+      "kitNumber": 8
     },
     {
       "apiId": 364566,
@@ -293,7 +257,7 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/364566.png",
-      "kitNumber": 54
+      "kitNumber": 53
     },
     {
       "apiId": 360268,
@@ -305,7 +269,43 @@
       "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/360268.png",
-      "kitNumber": 18
+      "kitNumber": 6
+    },
+    {
+      "apiId": 195103,
+      "name": "João Gomes",
+      "position": "CM/CDM",
+      "club": "Aston Villa",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195103.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 1904,
+      "name": "B. Kamara",
+      "position": "CM",
+      "club": "Aston Villa",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1904.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 357247,
+      "name": "L. Lynch",
+      "position": "CM",
+      "club": "Aston Villa",
+      "nation": "England",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/357247.png",
+      "kitNumber": 20
     },
     {
       "apiId": 406244,
@@ -320,40 +320,28 @@
       "kitNumber": 44
     },
     {
-      "apiId": 19366,
-      "name": "O. Watkins",
-      "position": "ST/LW",
+      "apiId": 19191,
+      "name": "J.  McGinn",
+      "position": "CM/CAM",
       "club": "Aston Villa",
-      "nation": "England",
+      "nation": "Scotland",
+      "tier": "ELITE",
+      "rating": 82,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19191.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 162714,
+      "name": "A. Onana",
+      "position": "CDM/CM",
+      "club": "Aston Villa",
+      "nation": "Belgium",
       "tier": "MASTER",
       "rating": 86,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19366.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 284324,
-      "name": "A. Garnacho",
-      "position": "LW/RW",
-      "club": "Aston Villa",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284324.png",
-      "kitNumber": 49
-    },
-    {
-      "apiId": 983,
-      "name": "L. Bailey",
-      "position": "RW/RM",
-      "club": "Aston Villa",
-      "nation": "Jamaica",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/983.png",
-      "kitNumber": 31
+      "imageUrl": "https://media.api-sports.io/football/players/162714.png",
+      "kitNumber": 24
     },
     {
       "apiId": 19194,
@@ -365,7 +353,7 @@
       "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19194.png",
-      "kitNumber": 9
+      "kitNumber": 18
     },
     {
       "apiId": 464004,
@@ -380,6 +368,30 @@
       "kitNumber": 47
     },
     {
+      "apiId": 284324,
+      "name": "A. Garnacho",
+      "position": "LW/RW",
+      "club": "Aston Villa",
+      "nation": "Argentina",
+      "tier": "ELITE",
+      "rating": 82,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284324.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 283058,
+      "name": "N. Jackson",
+      "position": "ST",
+      "club": "Aston Villa",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/283058.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 514519,
       "name": "Brian Madjo",
       "position": "ST",
@@ -389,19 +401,31 @@
       "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/514519.png",
-      "kitNumber": 55
+      "kitNumber": 39
     },
     {
-      "apiId": 553848,
+      "apiId": 446249,
+      "name": "I. Mbaye",
+      "position": "ST/RW",
+      "club": "Aston Villa",
+      "nation": "France",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/446249.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 408124,
       "name": "T. Mulley",
       "position": "ST",
       "club": "Aston Villa",
       "nation": "England",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/553848.png",
-      "kitNumber": 56
+      "imageUrl": "https://media.api-sports.io/football/players/408124.png",
+      "kitNumber": 7
     }
   ]
 }

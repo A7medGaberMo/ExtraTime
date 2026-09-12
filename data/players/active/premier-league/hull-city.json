@@ -92,18 +92,6 @@
       "kitNumber": 2
     },
     {
-      "apiId": 153411,
-      "name": "C. Drameh",
-      "position": "CB",
-      "club": "Hull City",
-      "nation": "Unknown",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/153411.png",
-      "kitNumber": 18
-    },
-    {
       "apiId": 19093,
       "name": "J. Egan",
       "position": "CB",
@@ -152,18 +140,6 @@
       "kitNumber": 4
     },
     {
-      "apiId": 129713,
-      "name": "M. Jacob",
-      "position": "CB",
-      "club": "Hull City",
-      "nation": "Unknown",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129713.png",
-      "kitNumber": 16
-    },
-    {
       "apiId": 19242,
       "name": "P. McNair",
       "position": "CB",
@@ -188,16 +164,16 @@
       "kitNumber": 32
     },
     {
-      "apiId": 581989,
-      "name": "C. Okike",
-      "position": "CB",
+      "apiId": 284570,
+      "name": "B. Norton-Cuffy",
+      "position": "RB/RWB",
       "club": "Hull City",
-      "nation": "Unknown",
+      "nation": "England",
       "tier": "GOLD",
       "rating": 75,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/581989.png",
-      "kitNumber": 39
+      "imageUrl": "https://media.api-sports.io/football/players/284570.png",
+      "kitNumber": 18
     },
     {
       "apiId": 18941,
@@ -272,6 +248,18 @@
       "kitNumber": 14
     },
     {
+      "apiId": 284500,
+      "name": "T. Iroegbunam",
+      "position": "CM/CDM",
+      "club": "Hull City",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 76,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/284500.png",
+      "kitNumber": 42
+    },
+    {
       "apiId": 162991,
       "name": "E. Matazo",
       "position": "CM",
@@ -294,6 +282,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/32960.png",
       "kitNumber": 5
+    },
+    {
+      "apiId": 392514,
+      "name": "C. Mouzakitis",
+      "position": "CM",
+      "club": "Hull City",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/392514.png",
+      "kitNumber": 36
     },
     {
       "apiId": 49883,
@@ -341,7 +341,7 @@
       "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/338046.png",
-      "kitNumber": 18
+      "kitNumber": 20
     },
     {
       "apiId": 1186,
@@ -354,6 +354,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1186.png",
       "kitNumber": 30
+    },
+    {
+      "apiId": 380873,
+      "name": "Ilyas  Ansah",
+      "position": "ST/LW",
+      "club": "Hull City",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "rating": 70,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/380873.png",
+      "kitNumber": 10
     },
     {
       "apiId": 299923,
@@ -370,11 +382,11 @@
     {
       "apiId": 274312,
       "name": "M. Cho",
-      "position": "ST",
+      "position": "RW/ST",
       "club": "Hull City",
-      "nation": "Unknown",
+      "nation": "France",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/274312.png",
       "kitNumber": 50
@@ -401,7 +413,7 @@
       "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19569.png",
-      "kitNumber": 21
+      "kitNumber": 11
     },
     {
       "apiId": 19337,
@@ -416,18 +428,6 @@
       "kitNumber": 9
     },
     {
-      "apiId": 44798,
-      "name": "L. Millar",
-      "position": "ST",
-      "club": "Hull City",
-      "nation": "Unknown",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44798.png",
-      "kitNumber": 7
-    },
-    {
       "apiId": 366630,
       "name": "T. Sellars-Fleming",
       "position": "ST",
@@ -437,7 +437,31 @@
       "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/366630.png",
-      "kitNumber": 41
+      "kitNumber": 16
+    },
+    {
+      "apiId": 18599,
+      "name": "S. Thomas",
+      "position": "CM",
+      "club": "Hull City",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18599.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 435482,
+      "name": "R. Vaz",
+      "position": "ST",
+      "club": "Hull City",
+      "nation": "Italy",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/435482.png",
+      "kitNumber": 47
     }
   ]
 }

@@ -3,20 +3,32 @@
     "apiId": 548,
     "name": "Real Sociedad",
     "logo": "https://media.api-sports.io/football/teams/548.png",
-    "league": "la-liga",
+    "league": "La Liga",
     "leagueId": 140
   },
   "players": [
     {
-      "apiId": 47269,
-      "name": "Álex Remiro",
+      "apiId": 431160,
+      "name": "T. Folgado",
       "position": "GK",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 84,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47269.png",
+      "imageUrl": "https://media.api-sports.io/football/players/431160.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 337843,
+      "name": "Aitor Fraga",
+      "position": "GK",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/337843.png",
       "kitNumber": 1
     },
     {
@@ -32,76 +44,16 @@
       "kitNumber": 13
     },
     {
-      "apiId": 337843,
-      "name": "Aitor Fraga",
+      "apiId": 47269,
+      "name": "Álex Remiro",
       "position": "GK",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/337843.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 431160,
-      "name": "T. Folgado",
-      "position": "GK",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/431160.png",
-      "kitNumber": 41
-    },
-    {
-      "apiId": 47314,
-      "name": "Zubeldia",
-      "position": "CB/RB",
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "ELITE",
-      "rating": 81,
+      "rating": 84,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47314.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 182546,
-      "name": "Jon Pacheco",
-      "position": "CB",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 78,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182546.png",
-      "kitNumber": 20
-    },
-    {
-      "apiId": 47303,
-      "name": "Aihen Muñoz",
-      "position": "LB",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 77,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47303.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 182636,
-      "name": "Javi López",
-      "position": "LB/CB",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 76,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182636.png",
-      "kitNumber": 27
+      "imageUrl": "https://media.api-sports.io/football/players/47269.png",
+      "kitNumber": 1
     },
     {
       "apiId": 199044,
@@ -116,18 +68,6 @@
       "kitNumber": 2
     },
     {
-      "apiId": 737,
-      "name": "Odriozola",
-      "position": "RB",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/737.png",
-      "kitNumber": 16
-    },
-    {
       "apiId": 349063,
       "name": "Luken Beitia",
       "position": "CB",
@@ -137,55 +77,19 @@
       "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/349063.png",
-      "kitNumber": 4
+      "kitNumber": 34
     },
     {
-      "apiId": 405073,
-      "name": "Jon Martín",
+      "apiId": 386859,
+      "name": "Héctor Fort",
       "position": "CB",
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 72,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/405073.png",
-      "kitNumber": 31
-    },
-    {
-      "apiId": 410841,
-      "name": "K. Kita",
-      "position": "CB",
-      "club": "Real Sociedad",
-      "nation": "Japan",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/410841.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 387139,
-      "name": "J. Ochieng",
-      "position": "CB",
-      "club": "Real Sociedad",
-      "nation": "Kenya",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/387139.png",
-      "kitNumber": 34
-    },
-    {
-      "apiId": 381599,
-      "name": "Rupérez",
-      "position": "CB",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/381599.png",
-      "kitNumber": 33
+      "imageUrl": "https://media.api-sports.io/football/players/386859.png",
+      "kitNumber": 22
     },
     {
       "apiId": 23,
@@ -200,16 +104,148 @@
       "kitNumber": 17
     },
     {
-      "apiId": 7332,
-      "name": "L. Sučić",
-      "position": "CM/CAM",
+      "apiId": 410841,
+      "name": "K. Kita",
+      "position": "CB",
       "club": "Real Sociedad",
-      "nation": "Croatia",
+      "nation": "Japan",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/410841.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 405073,
+      "name": "Jon Martín",
+      "position": "CB",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "rating": 70,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/405073.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 47303,
+      "name": "Aihen Muñoz",
+      "position": "LB",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 77,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47303.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 182546,
+      "name": "Jon Pacheco",
+      "position": "CB",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182546.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 381599,
+      "name": "Rupérez",
+      "position": "CB",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/381599.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 276184,
+      "name": "M. Sarr",
+      "position": "CB",
+      "club": "Real Sociedad",
+      "nation": "France",
+      "tier": "GOLD",
+      "rating": 76,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/276184.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 47314,
+      "name": "Zubeldia",
+      "position": "CB/RB",
+      "club": "Real Sociedad",
+      "nation": "Spain",
       "tier": "ELITE",
       "rating": 81,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/7332.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/47314.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 469672,
+      "name": "Ibai Aguirre",
+      "position": "CM",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/469672.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 287654,
+      "name": "Jon Gorrotxategi",
+      "position": "CM",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "SILVER",
+      "rating": 71,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/287654.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 2449,
+      "name": "Y. Herrera",
+      "position": "CM/CDM",
+      "club": "Real Sociedad",
+      "nation": "Venezuela",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2449.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 353634,
+      "name": "A. Lebarbier",
+      "position": "CM",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/353634.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 290106,
+      "name": "Pablo Marín",
+      "position": "CAM/CM",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/290106.png",
+      "kitNumber": 15
     },
     {
       "apiId": 930,
@@ -224,16 +260,16 @@
       "kitNumber": 18
     },
     {
-      "apiId": 268960,
-      "name": "A. Zakharyan",
-      "position": "CAM/CM",
+      "apiId": 7332,
+      "name": "L. Sučić",
+      "position": "CM/CAM",
       "club": "Real Sociedad",
-      "nation": "Russia",
-      "tier": "GOLD",
-      "rating": 77,
+      "nation": "Croatia",
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/268960.png",
-      "kitNumber": 21
+      "imageUrl": "https://media.api-sports.io/football/players/7332.png",
+      "kitNumber": 24
     },
     {
       "apiId": 183744,
@@ -248,64 +284,16 @@
       "kitNumber": 8
     },
     {
-      "apiId": 2449,
-      "name": "Y. Herrera",
-      "position": "CM/CDM",
-      "club": "Real Sociedad",
-      "nation": "Venezuela",
-      "tier": "GOLD",
-      "rating": 79,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2449.png",
-      "kitNumber": 12
-    },
-    {
-      "apiId": 290106,
-      "name": "Pablo Marín",
+      "apiId": 268960,
+      "name": "A. Zakharyan",
       "position": "CAM/CM",
       "club": "Real Sociedad",
-      "nation": "Spain",
+      "nation": "Russia",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 77,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/290106.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 287654,
-      "name": "Jon Gorrotxategi",
-      "position": "CM",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 71,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/287654.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 288384,
-      "name": "Mikel Goti",
-      "position": "CM",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 70,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/288384.png",
-      "kitNumber": 25
-    },
-    {
-      "apiId": 469672,
-      "name": "Ibai Aguirre",
-      "position": "CM",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/469672.png",
-      "kitNumber": 35
+      "imageUrl": "https://media.api-sports.io/football/players/268960.png",
+      "kitNumber": 23
     },
     {
       "apiId": 445881,
@@ -317,31 +305,7 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/445881.png",
-      "kitNumber": 36
-    },
-    {
-      "apiId": 47323,
-      "name": "Mikel Oyarzabal",
-      "position": "LW/ST",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "MASTER",
-      "rating": 86,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47323.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 32862,
-      "name": "T. Kubo",
-      "position": "RW/CAM",
-      "club": "Real Sociedad",
-      "nation": "Japan",
-      "tier": "MASTER",
-      "rating": 86,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/32862.png",
-      "kitNumber": 14
+      "kitNumber": 17
     },
     {
       "apiId": 47317,
@@ -353,6 +317,30 @@
       "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47317.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 403561,
+      "name": "Gorka Carrera",
+      "position": "ST",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/403561.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 412738,
+      "name": "Dani Díaz",
+      "position": "ST",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/412738.png",
       "kitNumber": 7
     },
     {
@@ -368,6 +356,42 @@
       "kitNumber": 11
     },
     {
+      "apiId": 32862,
+      "name": "T. Kubo",
+      "position": "RW/CAM",
+      "club": "Real Sociedad",
+      "nation": "Japan",
+      "tier": "MASTER",
+      "rating": 86,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/32862.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 449063,
+      "name": "Alex Garcia",
+      "position": "ST",
+      "club": "Real Sociedad",
+      "nation": "Spain",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/449063.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 387139,
+      "name": "J. Ochieng",
+      "position": "CB",
+      "club": "Real Sociedad",
+      "nation": "Kenya",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/387139.png",
+      "kitNumber": 12
+    },
+    {
       "apiId": 61774,
       "name": "O. Óskarsson",
       "position": "ST",
@@ -380,52 +404,16 @@
       "kitNumber": 9
     },
     {
-      "apiId": 183748,
-      "name": "Jon Karrikaburu",
-      "position": "ST",
+      "apiId": 47323,
+      "name": "Mikel Oyarzabal",
+      "position": "LW/ST",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/183748.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 403561,
-      "name": "Gorka Carrera",
-      "position": "ST",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/403561.png",
-      "kitNumber": 38
-    },
-    {
-      "apiId": 412738,
-      "name": "Dani Díaz",
-      "position": "ST",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/412738.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 449063,
-      "name": "Alex Garcia",
-      "position": "ST",
-      "club": "Real Sociedad",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/449063.png",
-      "kitNumber": 39
+      "imageUrl": "https://media.api-sports.io/football/players/47323.png",
+      "kitNumber": 10
     }
   ]
 }

@@ -20,18 +20,6 @@
       "kitNumber": 25
     },
     {
-      "apiId": 47899,
-      "name": "O. Dovin",
-      "position": "GK",
-      "club": "Coventry City",
-      "nation": "Unknown",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47899.png",
-      "kitNumber": 1
-    },
-    {
       "apiId": 278088,
       "name": "C. Rushworth",
       "position": "GK",
@@ -104,18 +92,6 @@
       "kitNumber": 20
     },
     {
-      "apiId": 18202,
-      "name": "L. Kitching",
-      "position": "CB",
-      "club": "Coventry City",
-      "nation": "Unknown",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18202.png",
-      "kitNumber": 15
-    },
-    {
       "apiId": 382358,
       "name": "S. Mfuni",
       "position": "CB",
@@ -132,9 +108,9 @@
       "name": "E. Pinnock",
       "position": "CB",
       "club": "Coventry City",
-      "nation": "Unknown",
-      "tier": "GOLD",
-      "rating": 75,
+      "nation": "Jamaica",
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19789.png",
       "kitNumber": 2
@@ -308,28 +284,28 @@
       "kitNumber": 14
     },
     {
-      "apiId": 153626,
-      "name": "R. Borges Rodrigues",
-      "position": "ST",
-      "club": "Coventry City",
-      "nation": "Unknown",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/153626.png",
-      "kitNumber": 21
-    },
-    {
       "apiId": 421875,
       "name": "S. Cherif",
       "position": "ST",
       "club": "Coventry City",
-      "nation": "Unknown",
-      "tier": "GOLD",
-      "rating": 75,
+      "nation": "Turkey",
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/421875.png",
       "kitNumber": 49
+    },
+    {
+      "apiId": 84128,
+      "name": "Y. Gboho",
+      "position": "LW/CAM/ST",
+      "club": "Coventry City",
+      "nation": "France",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/84128.png",
+      "kitNumber": 10
     },
     {
       "apiId": 18404,

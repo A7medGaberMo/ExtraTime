@@ -3,10 +3,22 @@
     "apiId": 173,
     "name": "RB Leipzig",
     "logo": "https://media.api-sports.io/football/teams/173.png",
-    "league": "bundesliga",
+    "league": "Bundesliga",
     "leagueId": 78
   },
   "players": [
+    {
+      "apiId": 19172,
+      "name": "Ø. Nyland",
+      "position": "GK",
+      "club": "RB Leipzig",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19172.png",
+      "kitNumber": 1
+    },
     {
       "apiId": 1924,
       "name": "M. Vandevoordt",
@@ -32,40 +44,28 @@
       "kitNumber": 25
     },
     {
-      "apiId": 162761,
-      "name": "C. Lukeba",
+      "apiId": 179400,
+      "name": "M. Estève",
       "position": "CB",
       "club": "RB Leipzig",
       "nation": "France",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162761.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/179400.png",
+      "kitNumber": 3
     },
     {
-      "apiId": 1148,
-      "name": "W. Orbán",
-      "position": "CB",
-      "club": "RB Leipzig",
-      "nation": "Hungary",
-      "tier": "ELITE",
-      "rating": 83,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1148.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 25158,
-      "name": "D. Raum",
-      "position": "LB/LWB/LM",
+      "apiId": 355167,
+      "name": "Max Finkgräfe",
+      "position": "LB/LWB",
       "club": "RB Leipzig",
       "nation": "Germany",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25158.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/355167.png",
+      "kitNumber": 35
     },
     {
       "apiId": 98,
@@ -92,52 +92,28 @@
       "kitNumber": 16
     },
     {
-      "apiId": 179400,
-      "name": "M. Estève",
+      "apiId": 442929,
+      "name": "A. Koné",
+      "position": "CB",
+      "club": "RB Leipzig",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/442929.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 162761,
+      "name": "C. Lukeba",
       "position": "CB",
       "club": "RB Leipzig",
       "nation": "France",
-      "tier": "GOLD",
-      "rating": 76,
+      "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/179400.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 268571,
-      "name": "E. Bitshiabu",
-      "position": "CB/LB",
-      "club": "RB Leipzig",
-      "nation": "France",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/268571.png",
-      "kitNumber": 40
-    },
-    {
-      "apiId": 355167,
-      "name": "Max Finkgräfe",
-      "position": "LB/LWB",
-      "club": "RB Leipzig",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 72,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/355167.png",
-      "kitNumber": 35
-    },
-    {
-      "apiId": 388894,
-      "name": "Joyeux Masanka Bungi",
-      "position": "LB",
-      "club": "RB Leipzig",
-      "nation": "Belgium",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/388894.png",
-      "kitNumber": 41
+      "imageUrl": "https://media.api-sports.io/football/players/162761.png",
+      "kitNumber": 23
     },
     {
       "apiId": 601134,
@@ -148,20 +124,43 @@
       "tier": "BRONZE",
       "rating": 58,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/601134.png",
-      "kitNumber": 42
+      "imageUrl": "https://media.api-sports.io/football/players/601134.png"
     },
     {
-      "apiId": 715,
-      "name": "C. Baumgartner",
-      "position": "CAM/CM/LM",
+      "apiId": 1148,
+      "name": "W. Orbán",
+      "position": "CB",
       "club": "RB Leipzig",
-      "nation": "Austria",
+      "nation": "Hungary",
       "tier": "ELITE",
-      "rating": 81,
+      "rating": 83,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/715.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/1148.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 25158,
+      "name": "D. Raum",
+      "position": "LB/LWB/LM",
+      "club": "RB Leipzig",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "rating": 82,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25158.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 441231,
+      "name": "L. Voufack",
+      "position": "CB",
+      "club": "RB Leipzig",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/441231.png",
+      "kitNumber": 48
     },
     {
       "apiId": 25917,
@@ -176,28 +175,40 @@
       "kitNumber": 17
     },
     {
-      "apiId": 340154,
-      "name": "A. Vermeeren",
-      "position": "CM/CDM",
+      "apiId": 715,
+      "name": "C. Baumgartner",
+      "position": "CAM/CM/LM",
       "club": "RB Leipzig",
-      "nation": "Belgium",
+      "nation": "Austria",
       "tier": "ELITE",
       "rating": 81,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/340154.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/715.png",
+      "kitNumber": 14
     },
     {
-      "apiId": 7328,
-      "name": "N. Seiwald",
-      "position": "CDM/CM",
+      "apiId": 277003,
+      "name": "N. El Aynaoui",
+      "position": "CM",
       "club": "RB Leipzig",
-      "nation": "Austria",
-      "tier": "GOLD",
-      "rating": 78,
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/7328.png",
-      "kitNumber": 13
+      "imageUrl": "https://media.api-sports.io/football/players/277003.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 398192,
+      "name": "A. MaksimoviÄ",
+      "position": "CAM/CM",
+      "club": "RB Leipzig",
+      "nation": "Serbia",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/398192.png",
+      "kitNumber": 30
     },
     {
       "apiId": 380978,
@@ -221,19 +232,7 @@
       "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203007.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 398192,
-      "name": "A. Maksimović",
-      "position": "CAM/CM",
-      "club": "RB Leipzig",
-      "nation": "Serbia",
-      "tier": "SILVER",
-      "rating": 72,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/398192.png",
-      "kitNumber": 33
+      "kitNumber": 20
     },
     {
       "apiId": 371025,
@@ -248,6 +247,18 @@
       "kitNumber": 77
     },
     {
+      "apiId": 7328,
+      "name": "N. Seiwald",
+      "position": "CDM/CM",
+      "club": "RB Leipzig",
+      "nation": "Austria",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7328.png",
+      "kitNumber": 13
+    },
+    {
       "apiId": 290549,
       "name": "J. Bakayoko",
       "position": "RW/RM",
@@ -257,42 +268,6 @@
       "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/290549.png",
-      "kitNumber": 9
-    },
-    {
-      "apiId": 314511,
-      "name": "A. Nusa",
-      "position": "LW/RW",
-      "club": "RB Leipzig",
-      "nation": "Norway",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/314511.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 328225,
-      "name": "B. Gruda",
-      "position": "RW/CAM",
-      "club": "RB Leipzig",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 76,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/328225.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 419916,
-      "name": "C. Harder",
-      "position": "ST",
-      "club": "RB Leipzig",
-      "nation": "Denmark",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/419916.png",
       "kitNumber": 11
     },
     {
@@ -317,7 +292,31 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383665.png",
-      "kitNumber": 43
+      "kitNumber": 27
+    },
+    {
+      "apiId": 328225,
+      "name": "B. Gruda",
+      "position": "RW/CAM",
+      "club": "RB Leipzig",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 76,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/328225.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 392270,
+      "name": "Marc Guiu",
+      "position": "ST",
+      "club": "RB Leipzig",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/392270.png",
+      "kitNumber": 9
     },
     {
       "apiId": 570742,
@@ -332,6 +331,30 @@
       "kitNumber": 45
     },
     {
+      "apiId": 269,
+      "name": "C. Nkunku",
+      "position": "ST/CAM",
+      "club": "RB Leipzig",
+      "nation": "France",
+      "tier": "MASTER",
+      "rating": 86,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/269.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 314511,
+      "name": "A. Nusa",
+      "position": "LW/RW",
+      "club": "RB Leipzig",
+      "nation": "Norway",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/314511.png",
+      "kitNumber": 7
+    },
+    {
       "apiId": 326102,
       "name": "Rômulo",
       "position": "ST",
@@ -341,19 +364,7 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326102.png",
-      "kitNumber": 44
-    },
-    {
-      "apiId": 453722,
-      "name": "A. Thomas",
-      "position": "ST",
-      "club": "RB Leipzig",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/453722.png",
-      "kitNumber": 46
+      "kitNumber": 40
     }
   ]
 }

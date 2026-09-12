@@ -8,6 +8,42 @@
   },
   "players": [
     {
+      "apiId": 19312,
+      "name": "S. Benda",
+      "position": "GK",
+      "club": "Nottingham Forest",
+      "nation": "England",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19312.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 329358,
+      "name": "Aaron Bott",
+      "position": "GK",
+      "club": "Nottingham Forest",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/329358.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 70366,
+      "name": "John",
+      "position": "GK",
+      "club": "Nottingham Forest",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/70366.png",
+      "kitNumber": 12
+    },
+    {
       "apiId": 2919,
       "name": "M. Sels",
       "position": "GK",
@@ -20,18 +56,6 @@
       "kitNumber": 26
     },
     {
-      "apiId": 70366,
-      "name": "John",
-      "position": "GK",
-      "club": "Nottingham Forest",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/70366.png",
-      "kitNumber": 13
-    },
-    {
       "apiId": 357238,
       "name": "Keehan Willows",
       "position": "GK",
@@ -41,31 +65,7 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/357238.png",
-      "kitNumber": 67
-    },
-    {
-      "apiId": 363695,
-      "name": "Murillo",
-      "position": "CB",
-      "club": "Nottingham Forest",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 83,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/363695.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 2817,
-      "name": "N. Milenković",
-      "position": "CB",
-      "club": "Nottingham Forest",
-      "nation": "Serbia",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2817.png",
-      "kitNumber": 31
+      "kitNumber": 1
     },
     {
       "apiId": 2771,
@@ -80,42 +80,6 @@
       "kitNumber": 34
     },
     {
-      "apiId": 138780,
-      "name": "N. Williams",
-      "position": "RB/LB",
-      "club": "Nottingham Forest",
-      "nation": "Wales",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/138780.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 67943,
-      "name": "Morato",
-      "position": "CB",
-      "club": "Nottingham Forest",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 77,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/67943.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 163069,
-      "name": "L. Netz",
-      "position": "LB",
-      "club": "Nottingham Forest",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 76,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/163069.png",
-      "kitNumber": 15
-    },
-    {
       "apiId": 362711,
       "name": "Jair",
       "position": "CB",
@@ -128,40 +92,64 @@
       "kitNumber": 23
     },
     {
-      "apiId": 430835,
-      "name": "Tyler Bindon",
+      "apiId": 354753,
+      "name": "O. Diomande",
       "position": "CB",
       "club": "Nottingham Forest",
-      "nation": "USA",
+      "nation": "England",
       "tier": "GOLD",
-      "rating": 74,
+      "rating": 79,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/430835.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/354753.png",
+      "kitNumber": 2
     },
     {
-      "apiId": 19610,
-      "name": "O. Richards",
+      "apiId": 2817,
+      "name": "N. Milenković",
+      "position": "CB",
+      "club": "Nottingham Forest",
+      "nation": "Serbia",
+      "tier": "ELITE",
+      "rating": 82,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2817.png",
+      "kitNumber": 31
+    },
+    {
+      "apiId": 13736,
+      "name": "D. Muñoz",
+      "position": "RB/RM",
+      "club": "Nottingham Forest",
+      "nation": "Colombia",
+      "tier": "MASTER",
+      "rating": 86,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/13736.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 363695,
+      "name": "Murillo",
+      "position": "CB",
+      "club": "Nottingham Forest",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "rating": 83,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/363695.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 163069,
+      "name": "L. Netz",
       "position": "LB",
       "club": "Nottingham Forest",
-      "nation": "England",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/19610.png",
-      "kitNumber": 77
-    },
-    {
-      "apiId": 329357,
-      "name": "Z. Abbott",
-      "position": "CB",
-      "club": "Nottingham Forest",
-      "nation": "England",
-      "tier": "BRONZE",
-      "rating": 59,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/329357.png",
-      "kitNumber": 44
+      "imageUrl": "https://media.api-sports.io/football/players/163069.png",
+      "kitNumber": 25
     },
     {
       "apiId": 380663,
@@ -173,7 +161,7 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380663.png",
-      "kitNumber": 61
+      "kitNumber": 2
     },
     {
       "apiId": 329345,
@@ -185,7 +173,31 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329345.png",
-      "kitNumber": 42
+      "kitNumber": 26
+    },
+    {
+      "apiId": 138780,
+      "name": "N. Williams",
+      "position": "RB/LB",
+      "club": "Nottingham Forest",
+      "nation": "Wales",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/138780.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 6056,
+      "name": "N. Domínguez",
+      "position": "CM/CDM",
+      "club": "Nottingham Forest",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6056.png",
+      "kitNumber": 8
     },
     {
       "apiId": 18746,
@@ -212,6 +224,30 @@
       "kitNumber": 7
     },
     {
+      "apiId": 158697,
+      "name": "J. McAtee",
+      "position": "CAM/CM",
+      "club": "Nottingham Forest",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 76,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/158697.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 444508,
+      "name": "G. McDonnell",
+      "position": "CM",
+      "club": "Nottingham Forest",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/444508.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 22149,
       "name": "I. Sangaré",
       "position": "CDM/CM",
@@ -221,43 +257,7 @@
       "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22149.png",
-      "kitNumber": 40
-    },
-    {
-      "apiId": 48648,
-      "name": "D. Ndoye",
-      "position": "RW/LW",
-      "club": "Nottingham Forest",
-      "nation": "Switzerland",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/48648.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 284428,
-      "name": "O. Hutchinson",
-      "position": "RW/CAM",
-      "club": "Nottingham Forest",
-      "nation": "Jamaica",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/284428.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 6056,
-      "name": "N. Domínguez",
-      "position": "CM/CDM",
-      "club": "Nottingham Forest",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "rating": 78,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6056.png",
-      "kitNumber": 16
+      "kitNumber": 6
     },
     {
       "apiId": 1095,
@@ -269,7 +269,19 @@
       "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1095.png",
-      "kitNumber": 24
+      "kitNumber": 21
+    },
+    {
+      "apiId": 353968,
+      "name": "A. Whitehall",
+      "position": "CM",
+      "club": "Nottingham Forest",
+      "nation": "England",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/353968.png",
+      "kitNumber": 8
     },
     {
       "apiId": 19305,
@@ -284,51 +296,39 @@
       "kitNumber": 22
     },
     {
-      "apiId": 158697,
-      "name": "J. McAtee",
-      "position": "CAM/CM",
+      "apiId": 383771,
+      "name": "Z. Blake",
+      "position": "ST",
       "club": "Nottingham Forest",
       "nation": "England",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/383771.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 161948,
+      "name": "L. Delap",
+      "position": "ST",
+      "club": "Nottingham Forest",
+      "nation": "England",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161948.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 9366,
+      "name": "Igor Jesus",
+      "position": "ST",
+      "club": "Nottingham Forest",
+      "nation": "Brazil",
       "tier": "GOLD",
       "rating": 76,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/158697.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 551288,
-      "name": "G. McDonnell",
-      "position": "CM",
-      "club": "Nottingham Forest",
-      "nation": "Ireland",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/551288.png",
-      "kitNumber": 60
-    },
-    {
-      "apiId": 353968,
-      "name": "A. Whitehall",
-      "position": "CM",
-      "club": "Nottingham Forest",
-      "nation": "England",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/353968.png",
-      "kitNumber": 51
-    },
-    {
-      "apiId": 18931,
-      "name": "C. Wood",
-      "position": "ST",
-      "club": "Nottingham Forest",
-      "nation": "New Zealand",
-      "tier": "MASTER",
-      "rating": 86,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18931.png",
+      "imageUrl": "https://media.api-sports.io/football/players/9366.png",
       "kitNumber": 11
     },
     {
@@ -341,55 +341,31 @@
       "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/147831.png",
-      "kitNumber": 25
+      "kitNumber": 15
     },
     {
-      "apiId": 9366,
-      "name": "Igor Jesus",
-      "position": "ST",
-      "club": "Nottingham Forest",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 76,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9366.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 129695,
-      "name": "D. Bakwa",
+      "apiId": 48648,
+      "name": "D. Ndoye",
       "position": "RW/LW",
       "club": "Nottingham Forest",
-      "nation": "France",
-      "tier": "GOLD",
-      "rating": 75,
+      "nation": "Switzerland",
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129695.png",
-      "kitNumber": 29
+      "imageUrl": "https://media.api-sports.io/football/players/48648.png",
+      "kitNumber": 14
     },
     {
-      "apiId": 498864,
-      "name": "L. Sillah",
+      "apiId": 18931,
+      "name": "C. Wood",
       "position": "ST",
       "club": "Nottingham Forest",
-      "nation": "Gambia",
-      "tier": "BRONZE",
-      "rating": 58,
+      "nation": "New Zealand",
+      "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/498864.png",
-      "kitNumber": 45
-    },
-    {
-      "apiId": 383771,
-      "name": "Z. Blake",
-      "position": "ST",
-      "club": "Nottingham Forest",
-      "nation": "England",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/383771.png",
-      "kitNumber": 41
+      "imageUrl": "https://media.api-sports.io/football/players/18931.png",
+      "kitNumber": 9
     }
   ]
 }

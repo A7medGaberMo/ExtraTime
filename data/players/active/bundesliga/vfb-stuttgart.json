@@ -3,7 +3,7 @@
     "apiId": 172,
     "name": "VfB Stuttgart",
     "logo": "https://media.api-sports.io/football/teams/172.png",
-    "league": "bundesliga",
+    "league": "Bundesliga",
     "leagueId": 78
   },
   "players": [
@@ -20,18 +20,6 @@
       "kitNumber": 1
     },
     {
-      "apiId": 327993,
-      "name": "D. Seimen",
-      "position": "GK",
-      "club": "VfB Stuttgart",
-      "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/327993.png",
-      "kitNumber": 41
-    },
-    {
       "apiId": 178217,
       "name": "S. Drljača",
       "position": "GK",
@@ -41,7 +29,7 @@
       "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178217.png",
-      "kitNumber": 40
+      "kitNumber": 41
     },
     {
       "apiId": 25142,
@@ -56,40 +44,16 @@
       "kitNumber": 33
     },
     {
-      "apiId": 25342,
-      "name": "M. Mittelstädt",
-      "position": "LB/LWB",
+      "apiId": 327993,
+      "name": "D. Seimen",
+      "position": "GK",
       "club": "VfB Stuttgart",
       "nation": "Germany",
-      "tier": "ELITE",
-      "rating": 83,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25342.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 38112,
-      "name": "J. Chabot",
-      "position": "CB",
-      "club": "VfB Stuttgart",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 78,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/38112.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 24868,
-      "name": "J. Vagnoman",
-      "position": "RB/RWB",
-      "club": "VfB Stuttgart",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 77,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/24868.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/327993.png",
+      "kitNumber": 41
     },
     {
       "apiId": 323449,
@@ -116,16 +80,16 @@
       "kitNumber": 22
     },
     {
-      "apiId": 13,
-      "name": "D. Zagadou",
+      "apiId": 38112,
+      "name": "J. Chabot",
       "position": "CB",
       "club": "VfB Stuttgart",
-      "nation": "France",
+      "nation": "Germany",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/13.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/38112.png",
+      "kitNumber": 24
     },
     {
       "apiId": 135883,
@@ -138,6 +102,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135883.png",
       "kitNumber": 3
+    },
+    {
+      "apiId": 420353,
+      "name": "Maximilian Tobias Herwerth",
+      "position": "CB",
+      "club": "VfB Stuttgart",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/420353.png",
+      "kitNumber": 4
     },
     {
       "apiId": 349344,
@@ -164,40 +140,64 @@
       "kitNumber": 29
     },
     {
-      "apiId": 24806,
-      "name": "N. Nartey",
-      "position": "CM/LB",
+      "apiId": 388894,
+      "name": "Joyeux Masanka Bungi",
+      "position": "LB",
       "club": "VfB Stuttgart",
-      "nation": "Denmark",
-      "tier": "SILVER",
-      "rating": 71,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/24806.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 420353,
-      "name": "Maximilian Tobias Herwerth",
-      "position": "CB",
-      "club": "VfB Stuttgart",
-      "nation": "Germany",
+      "nation": "Belgium",
       "tier": "BRONZE",
       "rating": 58,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/420353.png",
-      "kitNumber": 42
+      "imageUrl": "https://media.api-sports.io/football/players/388894.png",
+      "kitNumber": 24
     },
     {
-      "apiId": 137210,
-      "name": "A. Stiller",
-      "position": "CM/CDM",
+      "apiId": 25342,
+      "name": "M. Mittelstädt",
+      "position": "LB/LWB",
       "club": "VfB Stuttgart",
       "nation": "Germany",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/137210.png",
-      "kitNumber": 6
+      "imageUrl": "https://media.api-sports.io/football/players/25342.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 48481,
+      "name": "L. Stergiou",
+      "position": "CB",
+      "club": "VfB Stuttgart",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/48481.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 24868,
+      "name": "J. Vagnoman",
+      "position": "RB/RWB",
+      "club": "VfB Stuttgart",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 77,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24868.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 13,
+      "name": "D. Zagadou",
+      "position": "CB",
+      "club": "VfB Stuttgart",
+      "nation": "France",
+      "tier": "GOLD",
+      "rating": 76,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/13.png",
+      "kitNumber": 23
     },
     {
       "apiId": 340573,
@@ -212,18 +212,6 @@
       "kitNumber": 11
     },
     {
-      "apiId": 334879,
-      "name": "B. Bouanani",
-      "position": "RW/RM",
-      "club": "VfB Stuttgart",
-      "nation": "Algeria",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/334879.png",
-      "kitNumber": 27
-    },
-    {
       "apiId": 24963,
       "name": "A. Karazor",
       "position": "CDM/CM",
@@ -234,6 +222,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24963.png",
       "kitNumber": 16
+    },
+    {
+      "apiId": 24806,
+      "name": "N. Nartey",
+      "position": "CM/LB",
+      "club": "VfB Stuttgart",
+      "nation": "Denmark",
+      "tier": "SILVER",
+      "rating": 71,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/24806.png",
+      "kitNumber": 28
     },
     {
       "apiId": 24854,
@@ -248,66 +248,6 @@
       "kitNumber": 21
     },
     {
-      "apiId": 388871,
-      "name": "José María Andrés Baixauli",
-      "position": "CDM",
-      "club": "VfB Stuttgart",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 69,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/388871.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 478610,
-      "name": "M. Catovic",
-      "position": "CM",
-      "club": "VfB Stuttgart",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/478610.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 398194,
-      "name": "L. Jovanović",
-      "position": "CM",
-      "club": "VfB Stuttgart",
-      "nation": "Serbia",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/398194.png",
-      "kitNumber": 45
-    },
-    {
-      "apiId": 394665,
-      "name": "Jarzinho Malanga",
-      "position": "RW/LW",
-      "club": "VfB Stuttgart",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "rating": 62,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/394665.png",
-      "kitNumber": 43
-    },
-    {
-      "apiId": 535099,
-      "name": "L. Penna",
-      "position": "CM",
-      "club": "VfB Stuttgart",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/535099.png",
-      "kitNumber": 44
-    },
-    {
       "apiId": 535120,
       "name": "Y. Spalt",
       "position": "CM",
@@ -317,19 +257,31 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/535120.png",
-      "kitNumber": 46
+      "kitNumber": 47
     },
     {
-      "apiId": 26475,
-      "name": "D. Undav",
-      "position": "ST/CF/CAM",
+      "apiId": 137210,
+      "name": "A. Stiller",
+      "position": "CM/CDM",
       "club": "VfB Stuttgart",
       "nation": "Germany",
       "tier": "MASTER",
       "rating": 86,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26475.png",
-      "kitNumber": 26
+      "imageUrl": "https://media.api-sports.io/football/players/137210.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 350799,
+      "name": "Jeremy Arévalo",
+      "position": "ST",
+      "club": "VfB Stuttgart",
+      "nation": "Ecuador",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/350799.png",
+      "kitNumber": 32
     },
     {
       "apiId": 46930,
@@ -368,28 +320,28 @@
       "kitNumber": 18
     },
     {
-      "apiId": 265363,
-      "name": "Tiago Tomás",
-      "position": "ST/LW/RW",
-      "club": "VfB Stuttgart",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "rating": 76,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/265363.png",
-      "kitNumber": 47
-    },
-    {
-      "apiId": 371911,
-      "name": "J. Milošević",
+      "apiId": 385031,
+      "name": "J. Majchrzak",
       "position": "ST",
       "club": "VfB Stuttgart",
-      "nation": "Serbia",
+      "nation": "Germany",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 72,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/371911.png",
-      "kitNumber": 19
+      "imageUrl": "https://media.api-sports.io/football/players/385031.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 394665,
+      "name": "Jarzinho Ataide Adriano de Nascimento Malanga",
+      "position": "RW/LW",
+      "club": "VfB Stuttgart",
+      "nation": "Germany",
+      "tier": "BRONZE",
+      "rating": 62,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/394665.png",
+      "kitNumber": 43
     },
     {
       "apiId": 342188,
@@ -404,16 +356,52 @@
       "kitNumber": 17
     },
     {
-      "apiId": 350799,
-      "name": "Jeremy Arévalo",
-      "position": "ST",
+      "apiId": 535099,
+      "name": "L. Penna",
+      "position": "CM",
       "club": "VfB Stuttgart",
-      "nation": "Ecuador",
+      "nation": "Germany",
       "tier": "BRONZE",
       "rating": 58,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/350799.png",
-      "kitNumber": 32
+      "imageUrl": "https://media.api-sports.io/football/players/535099.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 342163,
+      "name": "L. Sauer",
+      "position": "ST",
+      "club": "VfB Stuttgart",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/342163.png",
+      "kitNumber": 44
+    },
+    {
+      "apiId": 265363,
+      "name": "Tiago Tomás",
+      "position": "ST/LW/RW",
+      "club": "VfB Stuttgart",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "rating": 76,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/265363.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 26475,
+      "name": "D. Undav",
+      "position": "ST/CF/CAM",
+      "club": "VfB Stuttgart",
+      "nation": "Germany",
+      "tier": "MASTER",
+      "rating": 86,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26475.png",
+      "kitNumber": 26
     },
     {
       "apiId": 546701,
@@ -425,7 +413,7 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/546701.png",
-      "kitNumber": 48
+      "kitNumber": 9
     }
   ]
 }

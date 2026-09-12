@@ -3,22 +3,10 @@
     "apiId": 168,
     "name": "Bayer Leverkusen",
     "logo": "https://media.api-sports.io/football/teams/168.png",
-    "league": "bundesliga",
+    "league": "Bundesliga",
     "leagueId": 78
   },
   "players": [
-    {
-      "apiId": 26232,
-      "name": "M. Flekken",
-      "position": "GK",
-      "club": "Bayer Leverkusen",
-      "nation": "Netherlands",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26232.png",
-      "kitNumber": 1
-    },
     {
       "apiId": 37246,
       "name": "J. Blaswich",
@@ -30,6 +18,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37246.png",
       "kitNumber": 28
+    },
+    {
+      "apiId": 26232,
+      "name": "M. Flekken",
+      "position": "GK",
+      "club": "Bayer Leverkusen",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26232.png",
+      "kitNumber": 1
     },
     {
       "apiId": 25168,
@@ -56,30 +56,6 @@
       "kitNumber": 12
     },
     {
-      "apiId": 41150,
-      "name": "E. Tapsoba",
-      "position": "CB",
-      "club": "Bayer Leverkusen",
-      "nation": "Burkina Faso",
-      "tier": "MASTER",
-      "rating": 86,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41150.png",
-      "kitNumber": 40
-    },
-    {
-      "apiId": 182705,
-      "name": "Miguel Gutiérrez",
-      "position": "LB/LM",
-      "club": "Bayer Leverkusen",
-      "nation": "Spain",
-      "tier": "MASTER",
-      "rating": 86,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182705.png",
-      "kitNumber": 3
-    },
-    {
       "apiId": 174918,
       "name": "L. Badé",
       "position": "CB",
@@ -92,40 +68,52 @@
       "kitNumber": 5
     },
     {
-      "apiId": 158698,
-      "name": "J. Quansah",
-      "position": "CB",
+      "apiId": 161747,
+      "name": "G. Doué",
+      "position": "RB/RWB",
       "club": "Bayer Leverkusen",
-      "nation": "England",
+      "nation": "Ivory Coast",
       "tier": "GOLD",
       "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/158698.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/161747.png",
+      "kitNumber": 22
     },
     {
-      "apiId": 343316,
-      "name": "J. Belocian",
+      "apiId": 162032,
+      "name": "Miguel Gutiérrez",
+      "position": "CB",
+      "club": "Bayer Leverkusen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162032.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 486523,
+      "name": "B. Hawighorst",
+      "position": "CB",
+      "club": "Bayer Leverkusen",
+      "nation": "Germany",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/486523.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 6231,
+      "name": "F. Medina",
       "position": "CB/LB",
       "club": "Bayer Leverkusen",
-      "nation": "France",
+      "nation": "Argentina",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 80,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/343316.png",
-      "kitNumber": 44
-    },
-    {
-      "apiId": 352375,
-      "name": "Arthur",
-      "position": "RB/RWB",
-      "club": "Bayer Leverkusen",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/352375.png",
-      "kitNumber": 13
+      "imageUrl": "https://media.api-sports.io/football/players/6231.png",
+      "kitNumber": 2
     },
     {
       "apiId": 280091,
@@ -140,28 +128,40 @@
       "kitNumber": 15
     },
     {
-      "apiId": 456187,
-      "name": "Luca Erlein",
+      "apiId": 158698,
+      "name": "J. Quansah",
       "position": "CB",
       "club": "Bayer Leverkusen",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "rating": 58,
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/456187.png",
-      "kitNumber": 24
+      "imageUrl": "https://media.api-sports.io/football/players/158698.png",
+      "kitNumber": 4
     },
     {
-      "apiId": 6002,
-      "name": "E. Palacios",
-      "position": "CM/CDM",
+      "apiId": 41150,
+      "name": "E. Tapsoba",
+      "position": "CB",
       "club": "Bayer Leverkusen",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 85,
+      "nation": "Burkina Faso",
+      "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6002.png",
-      "kitNumber": 25
+      "imageUrl": "https://media.api-sports.io/football/players/41150.png",
+      "kitNumber": 12
+    },
+    {
+      "apiId": 757,
+      "name": "Lucas Vázquez",
+      "position": "RB/RWB",
+      "club": "Bayer Leverkusen",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/757.png",
+      "kitNumber": 17
     },
     {
       "apiId": 24903,
@@ -174,90 +174,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24903.png",
       "kitNumber": 8
-    },
-    {
-      "apiId": 47516,
-      "name": "Aleix García",
-      "position": "CM/CDM",
-      "club": "Bayer Leverkusen",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 83,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47516.png",
-      "kitNumber": 41
-    },
-    {
-      "apiId": 380587,
-      "name": "I. Maza",
-      "position": "CAM/CM",
-      "club": "Bayer Leverkusen",
-      "nation": "Algeria",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/380587.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 25635,
-      "name": "J. Hofmann",
-      "position": "CAM/RW",
-      "club": "Bayer Leverkusen",
-      "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 80,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25635.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 231029,
-      "name": "N. Tella",
-      "position": "RM/RW/RWB",
-      "club": "Bayer Leverkusen",
-      "nation": "Nigeria",
-      "tier": "GOLD",
-      "rating": 78,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/231029.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 162037,
-      "name": "M. Tillman",
-      "position": "CAM/CM",
-      "club": "Bayer Leverkusen",
-      "nation": "United States",
-      "tier": "GOLD",
-      "rating": 79,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/162037.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 237087,
-      "name": "E. Fernández",
-      "position": "CM/CDM",
-      "club": "Bayer Leverkusen",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "rating": 77,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/237087.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 298006,
-      "name": "N. Mbamba",
-      "position": "CDM/CM",
-      "club": "Bayer Leverkusen",
-      "nation": "Belgium",
-      "tier": "SILVER",
-      "rating": 71,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/298006.png",
-      "kitNumber": 17
     },
     {
       "apiId": 444961,
@@ -293,7 +209,43 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/503467.png",
-      "kitNumber": 43
+      "kitNumber": 23
+    },
+    {
+      "apiId": 237087,
+      "name": "E. Fernández",
+      "position": "CM/CDM",
+      "club": "Bayer Leverkusen",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "rating": 77,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/237087.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 47516,
+      "name": "Aleix García",
+      "position": "CM/CDM",
+      "club": "Bayer Leverkusen",
+      "nation": "Spain",
+      "tier": "ELITE",
+      "rating": 83,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47516.png",
+      "kitNumber": 24
+    },
+    {
+      "apiId": 25635,
+      "name": "J. Hofmann",
+      "position": "CAM/RW",
+      "club": "Bayer Leverkusen",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 80,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25635.png",
+      "kitNumber": 7
     },
     {
       "apiId": 568387,
@@ -305,19 +257,66 @@
       "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568387.png",
-      "kitNumber": 45
+      "kitNumber": 30
     },
     {
-      "apiId": 491103,
-      "name": "A. Tape",
-      "position": "CM",
+      "apiId": 380587,
+      "name": "I. Maza",
+      "position": "CAM/CM",
+      "club": "Bayer Leverkusen",
+      "nation": "Algeria",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/380587.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 231029,
+      "name": "N. Tella",
+      "position": "RM/RW/RWB",
+      "club": "Bayer Leverkusen",
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/231029.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 162037,
+      "name": "M. Tillman",
+      "position": "CAM/CM",
+      "club": "Bayer Leverkusen",
+      "nation": "United States",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/162037.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 343320,
+      "name": "E. Ben Seghir",
+      "position": "LW/CAM",
+      "club": "Bayer Leverkusen",
+      "nation": "Morocco",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/343320.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 606223,
+      "name": "N. Bomba",
+      "position": "ST",
       "club": "Bayer Leverkusen",
       "nation": "Germany",
       "tier": "BRONZE",
       "rating": 58,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/491103.png",
-      "kitNumber": 16
+      "imageUrl": "https://media.api-sports.io/football/players/606223.png"
     },
     {
       "apiId": 39071,
@@ -332,52 +331,40 @@
       "kitNumber": 22
     },
     {
-      "apiId": 343320,
-      "name": "E. Ben Seghir",
-      "position": "LW/CAM",
-      "club": "Bayer Leverkusen",
-      "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/343320.png",
-      "kitNumber": 47
-    },
-    {
-      "apiId": 794,
-      "name": "P. Schick",
+      "apiId": 462209,
+      "name": "A. Damjanović",
       "position": "ST",
       "club": "Bayer Leverkusen",
-      "nation": "Czech Republic",
-      "tier": "ELITE",
-      "rating": 82,
+      "nation": "Serbia",
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/794.png",
-      "kitNumber": 48
+      "imageUrl": "https://media.api-sports.io/football/players/462209.png",
+      "kitNumber": 9
     },
     {
-      "apiId": 663,
-      "name": "M. Terrier",
-      "position": "LW/ST/SS",
+      "apiId": 277,
+      "name": "M. Diaby",
+      "position": "RW/RM/LW",
       "club": "Bayer Leverkusen",
       "nation": "France",
-      "tier": "GOLD",
-      "rating": 80,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/663.png",
-      "kitNumber": 11
+      "imageUrl": "https://media.api-sports.io/football/players/277.png",
+      "kitNumber": 19
     },
     {
-      "apiId": 312840,
-      "name": "E. Poku",
-      "position": "RW/LW",
+      "apiId": 505295,
+      "name": "Christian Kofane",
+      "position": "ST",
       "club": "Bayer Leverkusen",
-      "nation": "Netherlands",
-      "tier": "GOLD",
-      "rating": 76,
+      "nation": "Cameroon",
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/312840.png",
-      "kitNumber": 19
+      "imageUrl": "https://media.api-sports.io/football/players/505295.png",
+      "kitNumber": 35
     },
     {
       "apiId": 345388,
@@ -392,52 +379,28 @@
       "kitNumber": 9
     },
     {
-      "apiId": 389035,
-      "name": "Farid Alfa-Ruprecht",
-      "position": "RW",
-      "club": "Bayer Leverkusen",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/389035.png",
-      "kitNumber": 29
-    },
-    {
-      "apiId": 606223,
-      "name": "N. Bomba",
+      "apiId": 794,
+      "name": "P. Schick",
       "position": "ST",
       "club": "Bayer Leverkusen",
-      "nation": "Germany",
-      "tier": "BRONZE",
-      "rating": 58,
+      "nation": "Czech Republic",
+      "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/606223.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/794.png",
+      "kitNumber": 14
     },
     {
-      "apiId": 462209,
-      "name": "A. Damjanović",
-      "position": "ST",
+      "apiId": 663,
+      "name": "M. Terrier",
+      "position": "LW/ST/SS",
       "club": "Bayer Leverkusen",
-      "nation": "Serbia",
-      "tier": "BRONZE",
-      "rating": 58,
+      "nation": "France",
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/462209.png",
-      "kitNumber": 49
-    },
-    {
-      "apiId": 505295,
-      "name": "Christian Kofane",
-      "position": "ST",
-      "club": "Bayer Leverkusen",
-      "nation": "Cameroon",
-      "tier": "BRONZE",
-      "rating": 58,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/505295.png",
-      "kitNumber": 35
+      "imageUrl": "https://media.api-sports.io/football/players/663.png",
+      "kitNumber": 11
     }
   ]
 }
