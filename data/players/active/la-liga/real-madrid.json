@@ -437,18 +437,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/762.png",
       "kitNumber": 7
-    },
-    {
-      "apiId": 441497,
-      "name": "Daniel Yañez",
-      "position": "ST",
-      "club": "Real Madrid",
-      "nation": "Spain",
-      "tier": "BRONZE",
-      "rating": 60,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/441497.png",
-      "kitNumber": 7
     }
   ]
 }
