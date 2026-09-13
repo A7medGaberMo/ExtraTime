@@ -38,7 +38,7 @@
       "club": "AC Milan",
       "nation": "Italy",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30394.png",
       "kitNumber": 1
@@ -50,7 +50,7 @@
       "club": "AC Milan",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386298.png",
       "kitNumber": 96
@@ -74,7 +74,7 @@
       "club": "AC Milan",
       "nation": "Belgium",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162141.png",
       "kitNumber": 5
@@ -86,7 +86,7 @@
       "club": "AC Milan",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/467860.png",
       "kitNumber": 13
@@ -97,8 +97,8 @@
       "position": "LB",
       "club": "AC Milan",
       "nation": "Ecuador",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46731.png",
       "kitNumber": 2
@@ -110,7 +110,7 @@
       "club": "AC Milan",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/56473.png",
       "kitNumber": 46
@@ -122,7 +122,7 @@
       "club": "AC Milan",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162952.png",
       "kitNumber": 34
@@ -133,8 +133,8 @@
       "position": "CB",
       "club": "AC Milan",
       "nation": "Serbia",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/45826.png",
       "kitNumber": 31
@@ -145,8 +145,8 @@
       "position": "CB",
       "club": "AC Milan",
       "nation": "England",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19209.png",
       "kitNumber": 23
@@ -193,8 +193,8 @@
       "position": "CM",
       "club": "AC Milan",
       "nation": "Switzerland",
-      "tier": "SILVER",
-      "rating": 73,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/264705.png",
       "kitNumber": 30
@@ -205,8 +205,8 @@
       "position": "CAM/CM",
       "club": "AC Milan",
       "nation": "England",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2292.png",
       "kitNumber": 8
@@ -230,7 +230,7 @@
       "club": "AC Milan",
       "nation": "Portugal",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/335056.png",
       "kitNumber": 22
@@ -242,7 +242,7 @@
       "club": "AC Milan",
       "nation": "USA",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162106.png",
       "kitNumber": 80
@@ -253,8 +253,8 @@
       "position": "CM",
       "club": "AC Milan",
       "nation": "France",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/272.png",
       "kitNumber": 12
@@ -278,7 +278,7 @@
       "club": "AC Milan",
       "nation": "Italy",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/448968.png",
       "kitNumber": 44
@@ -290,7 +290,7 @@
       "club": "AC Milan",
       "nation": "Italy",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/264472.png",
       "kitNumber": 42
@@ -325,8 +325,8 @@
       "position": "ST",
       "club": "AC Milan",
       "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 75,
+      "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/436260.png",
       "kitNumber": 73
@@ -337,8 +337,8 @@
       "position": "RW/RM",
       "club": "AC Milan",
       "nation": "Nigeria",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1696.png",
       "kitNumber": 21
@@ -361,8 +361,8 @@
       "position": "RW/CAM",
       "club": "AC Milan",
       "nation": "Jamaica",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/284428.png",
       "kitNumber": 20
@@ -386,7 +386,7 @@
       "club": "AC Milan",
       "nation": "Portugal",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41585.png",
       "kitNumber": 9

@@ -14,7 +14,7 @@
       "club": "Racing Club de Lens",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/646.png",
       "kitNumber": 16
@@ -26,7 +26,7 @@
       "club": "Racing Club de Lens",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/497661.png",
       "kitNumber": 60
@@ -49,8 +49,8 @@
       "position": "RB/RWB",
       "club": "Racing Club de Lens",
       "nation": "Saudi Arabia",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44594.png",
       "kitNumber": 23
@@ -74,7 +74,7 @@
       "club": "Racing Club de Lens",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/441264.png",
       "kitNumber": 32
@@ -86,19 +86,19 @@
       "club": "Racing Club de Lens",
       "nation": "Austria",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/322984.png",
       "kitNumber": 6
     },
     {
       "apiId": 395589,
-      "name": "N. Äelik",
+      "name": "N. Čelik",
       "position": "CB",
       "club": "Racing Club de Lens",
       "nation": "Bosnia and Herzegovina",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/395589.png",
       "kitNumber": 4
@@ -109,8 +109,8 @@
       "position": "CB",
       "club": "Racing Club de Lens",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/369500.png",
       "kitNumber": 25
@@ -121,8 +121,8 @@
       "position": "CB",
       "club": "Racing Club de Lens",
       "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21635.png",
       "kitNumber": 24
@@ -133,8 +133,8 @@
       "position": "CB",
       "club": "Racing Club de Lens",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668701.png"
     },
@@ -145,7 +145,7 @@
       "club": "Racing Club de Lens",
       "nation": "Poland",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178708.png",
       "kitNumber": 3
@@ -156,8 +156,8 @@
       "position": "CB",
       "club": "Racing Club de Lens",
       "nation": "Mali",
-      "tier": "GOLD",
-      "rating": 75,
+      "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437139.png",
       "kitNumber": 31
@@ -168,8 +168,8 @@
       "position": "CB",
       "club": "Racing Club de Lens",
       "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138.png",
       "kitNumber": 20
@@ -193,7 +193,7 @@
       "club": "Racing Club de Lens",
       "nation": "Montenegro",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/394950.png",
       "kitNumber": 5
@@ -205,7 +205,7 @@
       "club": "Racing Club de Lens",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25634.png",
       "kitNumber": 27
@@ -217,7 +217,7 @@
       "club": "Racing Club de Lens",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668702.png"
     },
@@ -227,8 +227,8 @@
       "position": "CM/CDM",
       "club": "Racing Club de Lens",
       "nation": "Mali",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1153.png",
       "kitNumber": 21
@@ -240,7 +240,7 @@
       "club": "Racing Club de Lens",
       "nation": "Belgium",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2929.png",
       "kitNumber": 9
@@ -252,7 +252,7 @@
       "club": "Racing Club de Lens",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669863.png",
       "kitNumber": 38
@@ -264,7 +264,7 @@
       "club": "Racing Club de Lens",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/660571.png",
       "kitNumber": 38
@@ -274,9 +274,9 @@
       "name": "Y. Titraoui",
       "position": "CM",
       "club": "Racing Club de Lens",
-      "nation": "France",
+      "nation": "Algeria",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327599.png",
       "kitNumber": 8
@@ -298,9 +298,9 @@
       "name": "F. Ivanović",
       "position": "ST",
       "club": "Racing Club de Lens",
-      "nation": "Serbia",
+      "nation": "Croatia",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202951.png",
       "kitNumber": 29
@@ -312,7 +312,7 @@
       "club": "Racing Club de Lens",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161620.png",
       "kitNumber": 28
@@ -324,7 +324,7 @@
       "club": "Racing Club de Lens",
       "nation": "Senegal",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/277191.png",
       "kitNumber": 19
@@ -359,8 +359,8 @@
       "position": "RW/CAM",
       "club": "Racing Club de Lens",
       "nation": "France",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1922.png",
       "kitNumber": 10

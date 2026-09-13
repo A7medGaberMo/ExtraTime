@@ -14,7 +14,7 @@
       "club": "Venezia FC",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31565.png",
       "kitNumber": 23
@@ -26,7 +26,7 @@
       "club": "Venezia FC",
       "nation": "Italy",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30611.png",
       "kitNumber": 96
@@ -38,7 +38,7 @@
       "club": "Venezia FC",
       "nation": "Italy",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/557120.png",
       "kitNumber": 28
@@ -86,7 +86,7 @@
       "club": "Venezia FC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610145.png",
       "kitNumber": 95
@@ -96,9 +96,9 @@
       "name": "R. Halhal",
       "position": "CB",
       "club": "Venezia FC",
-      "nation": "Italy",
+      "nation": "Morocco",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326183.png",
       "kitNumber": 25
@@ -110,7 +110,7 @@
       "club": "Venezia FC",
       "nation": "Suriname",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37144.png",
       "kitNumber": 5
@@ -120,9 +120,9 @@
       "name": "Juan Jesus",
       "position": "CB",
       "club": "Venezia FC",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/774.png",
       "kitNumber": 15
@@ -132,9 +132,9 @@
       "name": "C. Ligue",
       "position": "CB",
       "club": "Venezia FC",
-      "nation": "Italy",
+      "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340127.png",
       "kitNumber": 20
@@ -157,8 +157,8 @@
       "position": "CB",
       "club": "Venezia FC",
       "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "SILVER",
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/466346.png",
       "kitNumber": 2
@@ -168,9 +168,9 @@
       "name": "M. Moreno",
       "position": "CB",
       "club": "Venezia FC",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "nation": "Spain",
+      "tier": "SILVER",
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/421807.png",
       "kitNumber": 2
@@ -218,7 +218,7 @@
       "club": "Venezia FC",
       "nation": "Croatia",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1266.png",
       "kitNumber": 26
@@ -230,7 +230,7 @@
       "club": "Venezia FC",
       "nation": "Italy",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/513179.png",
       "kitNumber": 36
@@ -241,8 +241,8 @@
       "position": "CM/CAM",
       "club": "Venezia FC",
       "nation": "United States",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/51266.png",
       "kitNumber": 6
@@ -254,7 +254,7 @@
       "club": "Venezia FC",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342025.png",
       "kitNumber": 30
@@ -266,7 +266,7 @@
       "club": "Venezia FC",
       "nation": "Ghana",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30532.png",
       "kitNumber": 32
@@ -278,7 +278,7 @@
       "club": "Venezia FC",
       "nation": "Senegal",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415517.png",
       "kitNumber": 8
@@ -290,7 +290,7 @@
       "club": "Venezia FC",
       "nation": "Croatia",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/14704.png",
       "kitNumber": 4
@@ -314,7 +314,7 @@
       "club": "Venezia FC",
       "nation": "Iceland",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/28744.png",
       "kitNumber": 21
@@ -326,7 +326,7 @@
       "club": "Venezia FC",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162010.png",
       "kitNumber": 55
@@ -337,8 +337,8 @@
       "position": "CM",
       "club": "Venezia FC",
       "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 73,
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/107153.png",
       "kitNumber": 71
@@ -346,11 +346,11 @@
     {
       "apiId": 1014,
       "name": "S. Sohm",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Venezia FC",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Switzerland",
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1014.png",
       "kitNumber": 19
@@ -361,8 +361,8 @@
       "position": "RW/LW/CAM",
       "club": "Venezia FC",
       "nation": "Ecuador",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25414.png",
       "kitNumber": 10
@@ -386,7 +386,7 @@
       "club": "Venezia FC",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/212.png",
       "kitNumber": 9
@@ -394,11 +394,11 @@
     {
       "apiId": 445973,
       "name": "Toni Fernández",
-      "position": "CM",
+      "position": "CAM/RW",
       "club": "Venezia FC",
-      "nation": "Italy",
+      "nation": "Spain",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/445973.png",
       "kitNumber": 77
@@ -422,7 +422,7 @@
       "club": "Venezia FC",
       "nation": "Italy",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/425255.png",
       "kitNumber": 56
@@ -433,8 +433,8 @@
       "position": "ST",
       "club": "Venezia FC",
       "nation": "Kosovo",
-      "tier": "SILVER",
-      "rating": 73,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/318546.png",
       "kitNumber": 7

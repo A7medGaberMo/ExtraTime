@@ -14,7 +14,7 @@
       "club": "Bayer Leverkusen",
       "nation": "Germany",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37246.png",
       "kitNumber": 28
@@ -25,8 +25,8 @@
       "position": "GK",
       "club": "Bayer Leverkusen",
       "nation": "Netherlands",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26232.png",
       "kitNumber": 1
@@ -38,7 +38,7 @@
       "club": "Bayer Leverkusen",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25168.png",
       "kitNumber": 36
@@ -61,8 +61,8 @@
       "position": "CB",
       "club": "Bayer Leverkusen",
       "nation": "France",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174918.png",
       "kitNumber": 5
@@ -74,7 +74,7 @@
       "club": "Bayer Leverkusen",
       "nation": "Ivory Coast",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161747.png",
       "kitNumber": 22
@@ -85,8 +85,8 @@
       "position": "CB",
       "club": "Bayer Leverkusen",
       "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162032.png",
       "kitNumber": 3
@@ -97,8 +97,8 @@
       "position": "CB",
       "club": "Bayer Leverkusen",
       "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/486523.png",
       "kitNumber": 29
@@ -122,7 +122,7 @@
       "club": "Bayer Leverkusen",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280091.png",
       "kitNumber": 15
@@ -145,8 +145,8 @@
       "position": "CB",
       "club": "Bayer Leverkusen",
       "nation": "Burkina Faso",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41150.png",
       "kitNumber": 12
@@ -157,8 +157,8 @@
       "position": "RB/RWB",
       "club": "Bayer Leverkusen",
       "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/757.png",
       "kitNumber": 17
@@ -170,7 +170,7 @@
       "club": "Bayer Leverkusen",
       "nation": "Germany",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24903.png",
       "kitNumber": 8
@@ -218,7 +218,7 @@
       "club": "Bayer Leverkusen",
       "nation": "Argentina",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237087.png",
       "kitNumber": 6
@@ -265,8 +265,8 @@
       "position": "CAM/CM",
       "club": "Bayer Leverkusen",
       "nation": "Algeria",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380587.png",
       "kitNumber": 30
@@ -301,8 +301,8 @@
       "position": "LW/CAM",
       "club": "Bayer Leverkusen",
       "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343320.png",
       "kitNumber": 17
@@ -324,8 +324,8 @@
       "position": "ST",
       "club": "Bayer Leverkusen",
       "nation": "Nigeria",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/39071.png",
       "kitNumber": 22
@@ -349,7 +349,7 @@
       "club": "Bayer Leverkusen",
       "nation": "France",
       "tier": "ELITE",
-      "rating": 84,
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/277.png",
       "kitNumber": 19
@@ -373,7 +373,7 @@
       "club": "Bayer Leverkusen",
       "nation": "Portugal",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/345388.png",
       "kitNumber": 9

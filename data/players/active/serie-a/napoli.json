@@ -14,7 +14,7 @@
       "club": "SSC Napoli",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/32172.png",
       "kitNumber": 14
@@ -26,7 +26,7 @@
       "club": "SSC Napoli",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/312.png",
       "kitNumber": 1
@@ -50,7 +50,7 @@
       "club": "SSC Napoli",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/95.png",
       "kitNumber": 5
@@ -74,7 +74,7 @@
       "club": "SSC Napoli",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 84,
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31226.png",
       "kitNumber": 4
@@ -85,8 +85,8 @@
       "position": "RB/CB",
       "club": "SSC Napoli",
       "nation": "Italy",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31042.png",
       "kitNumber": 22
@@ -98,7 +98,7 @@
       "club": "SSC Napoli",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/388547.png",
       "kitNumber": 35
@@ -108,9 +108,9 @@
       "name": "Rafa Marín",
       "position": "CB",
       "club": "SSC Napoli",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237066.png",
       "kitNumber": 16
@@ -121,8 +121,8 @@
       "position": "LB/CB",
       "club": "SSC Napoli",
       "nation": "Uruguay",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47254.png",
       "kitNumber": 17
@@ -134,7 +134,7 @@
       "club": "SSC Napoli",
       "nation": "Kosovo",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1314.png",
       "kitNumber": 13
@@ -145,8 +145,8 @@
       "position": "LB/LM",
       "club": "SSC Napoli",
       "nation": "Italy",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/862.png",
       "kitNumber": 37
@@ -182,7 +182,7 @@
       "club": "SSC Napoli",
       "nation": "Belgium",
       "tier": "ULTIMATE",
-      "rating": 92,
+      "rating": 91,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/629.png",
       "kitNumber": 11
@@ -193,8 +193,8 @@
       "position": "CB",
       "club": "SSC Napoli",
       "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/348532.png",
       "kitNumber": 2
@@ -205,8 +205,8 @@
       "position": "CM/CDM",
       "club": "SSC Napoli",
       "nation": "Scotland",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/130423.png",
       "kitNumber": 6
@@ -218,7 +218,7 @@
       "club": "SSC Napoli",
       "nation": "Slovakia",
       "tier": "ELITE",
-      "rating": 84,
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47439.png",
       "kitNumber": 68
@@ -229,8 +229,8 @@
       "position": "CM/CAM",
       "club": "SSC Napoli",
       "nation": "Scotland",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/903.png",
       "kitNumber": 8
@@ -242,7 +242,7 @@
       "club": "SSC Napoli",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/347395.png",
       "kitNumber": 26
@@ -254,7 +254,7 @@
       "club": "SSC Napoli",
       "nation": "Brazil",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/310943.png",
       "kitNumber": 27
@@ -262,11 +262,11 @@
     {
       "apiId": 552,
       "name": "David Neres",
-      "position": "ST",
+      "position": "RW/LW",
       "club": "SSC Napoli",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/552.png",
       "kitNumber": 7
@@ -278,7 +278,7 @@
       "club": "SSC Napoli",
       "nation": "Brazil",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/312615.png",
       "kitNumber": 23
@@ -289,8 +289,8 @@
       "position": "ST",
       "club": "SSC Napoli",
       "nation": "Denmark",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288006.png",
       "kitNumber": 19
@@ -298,11 +298,11 @@
     {
       "apiId": 544,
       "name": "N. Lang",
-      "position": "ST",
+      "position": "LW/ST",
       "club": "SSC Napoli",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Netherlands",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544.png",
       "kitNumber": 70
@@ -314,7 +314,7 @@
       "club": "SSC Napoli",
       "nation": "Italy",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/199089.png",
       "kitNumber": 20
@@ -326,7 +326,7 @@
       "club": "SSC Napoli",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/219.png",
       "kitNumber": 21

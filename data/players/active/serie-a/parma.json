@@ -26,7 +26,7 @@
       "club": "Parma Calcio",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/335117.png",
       "kitNumber": 30
@@ -38,7 +38,7 @@
       "club": "Parma Calcio",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30392.png",
       "kitNumber": 22
@@ -50,7 +50,7 @@
       "club": "Parma Calcio",
       "nation": "Italy",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/637969.png",
       "kitNumber": 75
@@ -62,7 +62,7 @@
       "club": "Parma Calcio",
       "nation": "Switzerland",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/499380.png",
       "kitNumber": 27
@@ -74,7 +74,7 @@
       "club": "Parma Calcio",
       "nation": "Argentina",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286473.png",
       "kitNumber": 29
@@ -96,9 +96,9 @@
       "name": "Diego Carlos",
       "position": "CB",
       "club": "Parma Calcio",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21090.png",
       "kitNumber": 34
@@ -110,19 +110,19 @@
       "club": "Parma Calcio",
       "nation": "Slovenia",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576948.png",
       "kitNumber": 72
     },
     {
       "apiId": 203483,
-      "name": "A. N&apos;Diaye",
+      "name": "A. N'Diaye",
       "position": "CB",
       "club": "Parma Calcio",
       "nation": "Senegal",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203483.png",
       "kitNumber": 3
@@ -132,9 +132,9 @@
       "name": "Karlo Pajsar",
       "position": "CB",
       "club": "Parma Calcio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "nation": "Croatia",
+      "tier": "SILVER",
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/595812.png",
       "kitNumber": 4
@@ -146,7 +146,7 @@
       "club": "Parma Calcio",
       "nation": "Italy",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/428237.png",
       "kitNumber": 37
@@ -181,8 +181,8 @@
       "position": "CB",
       "club": "Parma Calcio",
       "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "SILVER",
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/552810.png",
       "kitNumber": 5
@@ -206,7 +206,7 @@
       "club": "Parma Calcio",
       "nation": "Spain",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/628.png",
       "kitNumber": 10
@@ -218,7 +218,7 @@
       "club": "Parma Calcio",
       "nation": "United States",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/362061.png",
       "kitNumber": 8
@@ -230,7 +230,7 @@
       "club": "Parma Calcio",
       "nation": "Italy",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/322630.png",
       "kitNumber": 80
@@ -252,9 +252,9 @@
       "name": "Abdou Konate",
       "position": "CM",
       "club": "Parma Calcio",
-      "nation": "Italy",
+      "nation": "Ivory Coast",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/595817.png",
       "kitNumber": 47
@@ -278,7 +278,7 @@
       "club": "Parma Calcio",
       "nation": "Argentina",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/362752.png",
       "kitNumber": 32
@@ -290,7 +290,7 @@
       "club": "Parma Calcio",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/472572.png",
       "kitNumber": 25
@@ -298,11 +298,11 @@
     {
       "apiId": 432610,
       "name": "Ousmane Diallo",
-      "position": "ST",
+      "position": "LW/RW",
       "club": "Parma Calcio",
-      "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "nation": "Spain",
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/432610.png",
       "kitNumber": 7
@@ -314,7 +314,7 @@
       "club": "Parma Calcio",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/301924.png",
       "kitNumber": 23
@@ -324,9 +324,9 @@
       "name": "M. Frigan",
       "position": "ST",
       "club": "Parma Calcio",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Croatia",
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/292543.png",
       "kitNumber": 20
@@ -338,7 +338,7 @@
       "club": "Parma Calcio",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/483670.png",
       "kitNumber": 76
@@ -346,11 +346,11 @@
     {
       "apiId": 194905,
       "name": "D. Romero",
-      "position": "ST",
+      "position": "ST/RW",
       "club": "Parma Calcio",
-      "nation": "Italy",
+      "nation": "Dominican Republic",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/194905.png",
       "kitNumber": 9

@@ -14,7 +14,7 @@
       "club": "Chelsea FC",
       "nation": "Argentina",
       "tier": "MASTER",
-      "rating": 88,
+      "rating": 87,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19599.png",
       "kitNumber": 1
@@ -26,7 +26,7 @@
       "club": "Chelsea FC",
       "nation": "England",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340151.png",
       "kitNumber": 39
@@ -49,8 +49,8 @@
       "position": "GK",
       "club": "Chelsea FC",
       "nation": "USA",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/64167.png",
       "kitNumber": 44
@@ -61,8 +61,8 @@
       "position": "CB/RB",
       "club": "Chelsea FC",
       "nation": "England",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/366735.png",
       "kitNumber": 34
@@ -97,7 +97,7 @@
       "club": "Chelsea FC",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/181734.png",
       "kitNumber": 29
@@ -108,8 +108,8 @@
       "position": "CB/LB",
       "club": "Chelsea FC",
       "nation": "England",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/152953.png",
       "kitNumber": 6
@@ -129,11 +129,11 @@
     {
       "apiId": 161907,
       "name": "M. Gusto",
-      "position": "CM",
+      "position": "RB/RWB",
       "club": "Chelsea FC",
-      "nation": "England",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "France",
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161907.png",
       "kitNumber": 27
@@ -144,8 +144,8 @@
       "position": "CB/LB",
       "club": "Chelsea FC",
       "nation": "Netherlands",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341642.png",
       "kitNumber": 21
@@ -180,8 +180,8 @@
       "position": "CB",
       "club": "Chelsea FC",
       "nation": "Italy",
-      "tier": "BRONZE",
-      "rating": 62,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383018.png",
       "kitNumber": 2
@@ -192,8 +192,8 @@
       "position": "LB/LM/CM",
       "club": "Chelsea FC",
       "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/319572.png",
       "kitNumber": 4
@@ -217,7 +217,7 @@
       "club": "Chelsea FC",
       "nation": "England",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/496411.png",
       "kitNumber": 72
@@ -228,8 +228,8 @@
       "position": "CDM/CM",
       "club": "Chelsea FC",
       "nation": "England",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/292.png",
       "kitNumber": 14
@@ -240,8 +240,8 @@
       "position": "CDM/CM",
       "club": "Chelsea FC",
       "nation": "Belgium",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/282125.png",
       "kitNumber": 45
@@ -265,7 +265,7 @@
       "club": "Chelsea FC",
       "nation": "England",
       "tier": "ELITE",
-      "rating": 81,
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19170.png",
       "kitNumber": 17
@@ -277,7 +277,7 @@
       "club": "Chelsea FC",
       "nation": "England",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/586131.png",
       "kitNumber": 31
@@ -313,7 +313,7 @@
       "club": "Chelsea FC",
       "nation": "England",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286894.png",
       "kitNumber": 11

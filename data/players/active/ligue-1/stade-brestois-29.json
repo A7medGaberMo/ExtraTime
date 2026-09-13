@@ -14,7 +14,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/158587.png",
       "kitNumber": 49
@@ -24,9 +24,9 @@
       "name": "M. Patouillet",
       "position": "GK",
       "club": "Stade Brest 29",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "nation": "France",
+      "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/198389.png",
       "kitNumber": 30
@@ -38,7 +38,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/667330.png"
     },
@@ -47,9 +47,9 @@
       "name": "E. Selvik",
       "position": "GK",
       "club": "Stade Brest 29",
-      "nation": "France",
+      "nation": "Norway",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/39082.png",
       "kitNumber": 1
@@ -61,7 +61,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/369556.png",
       "kitNumber": 18
@@ -85,7 +85,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22247.png",
       "kitNumber": 70
@@ -97,7 +97,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/498791.png",
       "kitNumber": 71
@@ -133,7 +133,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/675531.png",
       "kitNumber": 34
@@ -145,7 +145,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669878.png"
     },
@@ -156,7 +156,7 @@
       "club": "Stade Brest 29",
       "nation": "Ivory Coast",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/422595.png",
       "kitNumber": 20
@@ -164,11 +164,11 @@
     {
       "apiId": 329209,
       "name": "A. Camblan",
-      "position": "CM",
+      "position": "RW/LW",
       "club": "Stade Brest 29",
       "nation": "France",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/329209.png",
       "kitNumber": 11
@@ -188,11 +188,11 @@
     {
       "apiId": 302915,
       "name": "M. Diambou",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Stade Brest 29",
-      "nation": "France",
+      "nation": "Mali",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/302915.png",
       "kitNumber": 6
@@ -203,8 +203,8 @@
       "position": "CAM/CM",
       "club": "Stade Brest 29",
       "nation": "Mali",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326068.png",
       "kitNumber": 23
@@ -228,7 +228,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449153.png",
       "kitNumber": 3
@@ -238,9 +238,9 @@
       "name": "J. Nonge Boende",
       "position": "CM",
       "club": "Stade Brest 29",
-      "nation": "France",
-      "tier": "GOLD",
-      "rating": 79,
+      "nation": "Belgium",
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340078.png",
       "kitNumber": 7
@@ -288,7 +288,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/430816.png",
       "kitNumber": 11
@@ -300,7 +300,7 @@
       "club": "Stade Brest 29",
       "nation": "Mali",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/554352.png",
       "kitNumber": 21
@@ -311,8 +311,8 @@
       "position": "CM",
       "club": "Stade Brest 29",
       "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/629781.png",
       "kitNumber": 32
@@ -324,7 +324,7 @@
       "club": "Stade Brest 29",
       "nation": "Senegal",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/375990.png",
       "kitNumber": 9
@@ -336,7 +336,7 @@
       "club": "Stade Brest 29",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/531403.png",
       "kitNumber": 39
@@ -347,8 +347,8 @@
       "position": "ST",
       "club": "Stade Brest 29",
       "nation": "France",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327697.png",
       "kitNumber": 10

@@ -26,7 +26,7 @@
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/337843.png",
       "kitNumber": 1
@@ -37,8 +37,8 @@
       "position": "GK",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/189832.png",
       "kitNumber": 13
@@ -50,7 +50,7 @@
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "ELITE",
-      "rating": 84,
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47269.png",
       "kitNumber": 1
@@ -60,7 +60,7 @@
       "name": "J. Aramburu",
       "position": "RB/CB",
       "club": "Real Sociedad",
-      "nation": "Spain",
+      "nation": "Venezuela",
       "tier": "GOLD",
       "rating": 76,
       "isLegend": false,
@@ -74,7 +74,7 @@
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/349063.png",
       "kitNumber": 34
@@ -82,7 +82,7 @@
     {
       "apiId": 386859,
       "name": "Héctor Fort",
-      "position": "CB",
+      "position": "RB/LB",
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "SILVER",
@@ -97,8 +97,8 @@
       "position": "LM/LB/CAM",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/23.png",
       "kitNumber": 17
@@ -122,7 +122,7 @@
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/405073.png",
       "kitNumber": 6
@@ -146,7 +146,7 @@
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182546.png",
       "kitNumber": 16
@@ -170,7 +170,7 @@
       "club": "Real Sociedad",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/276184.png",
       "kitNumber": 19
@@ -206,7 +206,7 @@
       "club": "Real Sociedad",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/287654.png",
       "kitNumber": 4
@@ -218,7 +218,7 @@
       "club": "Real Sociedad",
       "nation": "Venezuela",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2449.png",
       "kitNumber": 21
@@ -229,8 +229,8 @@
       "position": "CM",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/353634.png",
       "kitNumber": 6
@@ -241,8 +241,8 @@
       "position": "CAM/CM",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 75,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/290106.png",
       "kitNumber": 15
@@ -253,8 +253,8 @@
       "position": "CM/CAM",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/930.png",
       "kitNumber": 18
@@ -265,8 +265,8 @@
       "position": "CM/CAM",
       "club": "Real Sociedad",
       "nation": "Croatia",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7332.png",
       "kitNumber": 24
@@ -290,7 +290,7 @@
       "club": "Real Sociedad",
       "nation": "Russia",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/268960.png",
       "kitNumber": 23
@@ -313,8 +313,8 @@
       "position": "LW/RW",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47317.png",
       "kitNumber": 7
@@ -349,8 +349,8 @@
       "position": "LW/ST",
       "club": "Real Sociedad",
       "nation": "Portugal",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/925.png",
       "kitNumber": 11
@@ -361,8 +361,8 @@
       "position": "RW/CAM",
       "club": "Real Sociedad",
       "nation": "Japan",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/32862.png",
       "kitNumber": 14
@@ -398,7 +398,7 @@
       "club": "Real Sociedad",
       "nation": "Iceland",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/61774.png",
       "kitNumber": 9
@@ -409,8 +409,8 @@
       "position": "LW/ST",
       "club": "Real Sociedad",
       "nation": "Spain",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47323.png",
       "kitNumber": 10

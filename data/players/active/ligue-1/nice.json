@@ -13,8 +13,8 @@
       "position": "GK",
       "club": "OGC Nice",
       "nation": "Algeria",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/175171.png",
       "kitNumber": 77
@@ -25,8 +25,8 @@
       "position": "GK",
       "club": "OGC Nice",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20566.png",
       "kitNumber": 23
@@ -38,7 +38,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/671514.png"
     },
@@ -48,8 +48,8 @@
       "position": "CB",
       "club": "OGC Nice",
       "nation": "Egypt",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/196343.png",
       "kitNumber": 5
@@ -60,8 +60,8 @@
       "position": "LB/LWB",
       "club": "OGC Nice",
       "nation": "Tunisia",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/49583.png",
       "kitNumber": 2
@@ -73,7 +73,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/407017.png",
       "kitNumber": 64
@@ -97,7 +97,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/417914.png",
       "kitNumber": 84
@@ -109,7 +109,7 @@
       "club": "OGC Nice",
       "nation": "Congo",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/611321.png",
       "kitNumber": 36
@@ -121,7 +121,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/313937.png",
       "kitNumber": 33
@@ -133,7 +133,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/156490.png",
       "kitNumber": 27
@@ -145,7 +145,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/671608.png"
     },
@@ -180,7 +180,7 @@
       "club": "OGC Nice",
       "nation": "Algeria",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/4399.png",
       "kitNumber": 6
@@ -192,7 +192,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/670540.png",
       "kitNumber": 38
@@ -204,7 +204,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/444561.png",
       "kitNumber": 22
@@ -216,7 +216,7 @@
       "club": "OGC Nice",
       "nation": "Mali",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/504157.png",
       "kitNumber": 39
@@ -228,7 +228,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668718.png"
     },
@@ -239,7 +239,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668717.png",
       "kitNumber": 35
@@ -251,7 +251,7 @@
       "club": "OGC Nice",
       "nation": "Burundi",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/3099.png",
       "kitNumber": 55
@@ -259,11 +259,11 @@
     {
       "apiId": 22148,
       "name": "N. Ngoumou",
-      "position": "ST",
+      "position": "RW/LW",
       "club": "OGC Nice",
       "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22148.png",
       "kitNumber": 29
@@ -275,7 +275,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/442866.png",
       "kitNumber": 87
@@ -295,11 +295,11 @@
     {
       "apiId": 20,
       "name": "A. Witsel",
-      "position": "CM",
+      "position": "CB/CDM",
       "club": "OGC Nice",
-      "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20.png",
       "kitNumber": 28
@@ -310,8 +310,8 @@
       "position": "ST/LW/RW",
       "club": "OGC Nice",
       "nation": "Algeria",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/200139.png",
       "kitNumber": 9
@@ -323,7 +323,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/603533.png",
       "kitNumber": 38
@@ -335,7 +335,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/362470.png",
       "kitNumber": 44
@@ -345,7 +345,7 @@
       "name": "S. Diop",
       "position": "LW/CAM",
       "club": "OGC Nice",
-      "nation": "France",
+      "nation": "Morocco",
       "tier": "GOLD",
       "rating": 77,
       "isLegend": false,
@@ -358,8 +358,8 @@
       "position": "CAM/RW/LW",
       "club": "OGC Nice",
       "nation": "France",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20529.png",
       "kitNumber": 7
@@ -371,7 +371,7 @@
       "club": "OGC Nice",
       "nation": "Sweden",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/105154.png",
       "kitNumber": 21
@@ -383,7 +383,7 @@
       "club": "OGC Nice",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/677811.png",
       "kitNumber": 41

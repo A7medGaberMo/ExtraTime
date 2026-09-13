@@ -14,7 +14,7 @@
       "club": "ACF Fiorentina",
       "nation": "Denmark",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15843.png",
       "kitNumber": 53
@@ -26,7 +26,7 @@
       "club": "ACF Fiorentina",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31352.png",
       "kitNumber": 19
@@ -37,8 +37,8 @@
       "position": "GK",
       "club": "ACF Fiorentina",
       "nation": "Spain",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/882.png",
       "kitNumber": 43
@@ -49,8 +49,8 @@
       "position": "RB/RWB",
       "club": "ACF Fiorentina",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41144.png",
       "kitNumber": 2
@@ -61,8 +61,8 @@
       "position": "CB",
       "club": "ACF Fiorentina",
       "nation": "Romania",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162498.png",
       "kitNumber": 3
@@ -73,8 +73,8 @@
       "position": "RB/LB",
       "club": "ACF Fiorentina",
       "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 75,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/330437.png",
       "kitNumber": 20
@@ -82,11 +82,11 @@
     {
       "apiId": 41734,
       "name": "João Mário",
-      "position": "CB",
+      "position": "RB/RM",
       "club": "ACF Fiorentina",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41734.png",
       "kitNumber": 17
@@ -133,8 +133,8 @@
       "position": "CB",
       "club": "ACF Fiorentina",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/490779.png",
       "kitNumber": 21
@@ -158,7 +158,7 @@
       "club": "ACF Fiorentina",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/347644.png",
       "kitNumber": 14
@@ -193,8 +193,8 @@
       "position": "CM",
       "club": "ACF Fiorentina",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/876.png",
       "kitNumber": 44
@@ -218,7 +218,7 @@
       "club": "ACF Fiorentina",
       "nation": "Italy",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/311083.png",
       "kitNumber": 27
@@ -242,7 +242,7 @@
       "club": "ACF Fiorentina",
       "nation": "Portugal",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/125743.png",
       "kitNumber": 23
@@ -253,8 +253,8 @@
       "position": "ST",
       "club": "ACF Fiorentina",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/639656.png",
       "kitNumber": 70
@@ -262,11 +262,11 @@
     {
       "apiId": 162128,
       "name": "W. Gnonto",
-      "position": "ST",
+      "position": "LW/RW/ST",
       "club": "ACF Fiorentina",
-      "nation": "Unknown",
+      "nation": "Italy",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162128.png",
       "kitNumber": 29
@@ -277,8 +277,8 @@
       "position": "CAM/RW",
       "club": "ACF Fiorentina",
       "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449249.png",
       "kitNumber": 30
@@ -289,8 +289,8 @@
       "position": "ST",
       "club": "ACF Fiorentina",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610532.png",
       "kitNumber": 72
@@ -302,7 +302,7 @@
       "club": "ACF Fiorentina",
       "nation": "Sweden",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/383006.png",
       "kitNumber": 25
@@ -314,7 +314,7 @@
       "club": "ACF Fiorentina",
       "nation": "Argentina",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/292172.png",
       "kitNumber": 32

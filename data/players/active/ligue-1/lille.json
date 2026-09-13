@@ -26,7 +26,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/70852.png",
       "kitNumber": 12
@@ -38,7 +38,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/628379.png",
       "kitNumber": 60
@@ -62,7 +62,7 @@
       "club": "Lille OSC",
       "nation": "Brazil",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/142691.png",
       "kitNumber": 4
@@ -73,8 +73,8 @@
       "position": "CB",
       "club": "Lille OSC",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/486136.png",
       "kitNumber": 26
@@ -86,7 +86,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669877.png"
     },
@@ -97,7 +97,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/671921.png"
     },
@@ -107,8 +107,8 @@
       "position": "CB",
       "club": "Lille OSC",
       "nation": "Belgium",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/312964.png",
       "kitNumber": 3
@@ -132,7 +132,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20600.png",
       "kitNumber": 15
@@ -156,7 +156,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/562615.png",
       "kitNumber": 33
@@ -167,8 +167,8 @@
       "position": "CB",
       "club": "Lille OSC",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/394211.png",
       "kitNumber": 2
@@ -180,7 +180,7 @@
       "club": "Lille OSC",
       "nation": "Indonesia",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37151.png",
       "kitNumber": 24
@@ -192,7 +192,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2204.png",
       "kitNumber": 21
@@ -203,11 +203,23 @@
       "position": "CM/CDM",
       "club": "Lille OSC",
       "nation": "Algeria",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/409.png",
       "kitNumber": 6
+    },
+    {
+      "apiId": 438688,
+      "name": "A. Bouaddi",
+      "position": "CM/CDM",
+      "club": "Lille OSC",
+      "nation": "France",
+      "tier": "GOLD",
+      "rating": 80,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/438688.png",
+      "kitNumber": 32
     },
     {
       "apiId": 630699,
@@ -216,7 +228,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630699.png",
       "kitNumber": 42
@@ -228,7 +240,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/668708.png",
       "kitNumber": 4
@@ -238,9 +250,9 @@
       "name": "M. Kjærgaard",
       "position": "CM",
       "club": "Lille OSC",
-      "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Denmark",
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/115587.png",
       "kitNumber": 14
@@ -252,7 +264,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386287.png",
       "kitNumber": 8
@@ -276,7 +288,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/129695.png",
       "kitNumber": 7
@@ -287,8 +299,8 @@
       "position": "ST",
       "club": "Lille OSC",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/487381.png",
       "kitNumber": 35
@@ -300,7 +312,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2295.png",
       "kitNumber": 9
@@ -347,8 +359,8 @@
       "position": "LW/LM",
       "club": "Lille OSC",
       "nation": "Norway",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/99576.png",
       "kitNumber": 11
@@ -359,8 +371,8 @@
       "position": "ST",
       "club": "Lille OSC",
       "nation": "Japan",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/72155.png",
       "kitNumber": 18
@@ -372,7 +384,7 @@
       "club": "Lille OSC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630702.png",
       "kitNumber": 41

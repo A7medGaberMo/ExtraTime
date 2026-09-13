@@ -14,7 +14,7 @@
       "club": "Lazio Rome",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/63934.png",
       "kitNumber": 55
@@ -25,8 +25,8 @@
       "position": "GK",
       "club": "Lazio Rome",
       "nation": "Greece",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26644.png",
       "kitNumber": 35
@@ -61,8 +61,8 @@
       "position": "GK",
       "club": "Lazio Rome",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/408625.png",
       "kitNumber": 47
@@ -73,8 +73,8 @@
       "position": "CB",
       "club": "Lazio Rome",
       "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/407916.png",
       "kitNumber": 3
@@ -85,8 +85,8 @@
       "position": "CB",
       "club": "Lazio Rome",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/616198.png",
       "kitNumber": 33
@@ -110,7 +110,7 @@
       "club": "Lazio Rome",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/342651.png",
       "kitNumber": 15
@@ -122,7 +122,7 @@
       "club": "Lazio Rome",
       "nation": "Montenegro",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1844.png",
       "kitNumber": 77
@@ -181,8 +181,8 @@
       "position": "CB",
       "club": "Lazio Rome",
       "nation": "Croatia",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/14701.png",
       "kitNumber": 37
@@ -193,8 +193,8 @@
       "position": "LB/LWB",
       "club": "Lazio Rome",
       "nation": "Portugal",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41577.png",
       "kitNumber": 17
@@ -205,8 +205,8 @@
       "position": "CM",
       "club": "Lazio Rome",
       "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/333116.png",
       "kitNumber": 21
@@ -230,7 +230,7 @@
       "club": "Lazio Rome",
       "nation": "Nigeria",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/144740.png",
       "kitNumber": 7
@@ -254,7 +254,7 @@
       "club": "Lazio Rome",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31173.png",
       "kitNumber": 16
@@ -277,8 +277,8 @@
       "position": "CM",
       "club": "Lazio Rome",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/616206.png",
       "kitNumber": 16
@@ -302,7 +302,7 @@
       "club": "Lazio Rome",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30784.png",
       "kitNumber": 6
@@ -325,8 +325,8 @@
       "position": "LW/LM",
       "club": "Lazio Rome",
       "nation": "Italy",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30937.png",
       "kitNumber": 10
@@ -350,7 +350,7 @@
       "club": "Lazio Rome",
       "nation": "Iceland",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2799.png",
       "kitNumber": 80
@@ -386,7 +386,7 @@
       "club": "Lazio Rome",
       "nation": "Italy",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31094.png",
       "kitNumber": 9
@@ -398,7 +398,7 @@
       "club": "Lazio Rome",
       "nation": "Poland",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/405241.png",
       "kitNumber": 28

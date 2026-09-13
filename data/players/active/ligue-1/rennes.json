@@ -13,8 +13,8 @@
       "position": "GK",
       "club": "Stade Rennais FC",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/562237.png",
       "kitNumber": 80
@@ -26,7 +26,7 @@
       "club": "Stade Rennais FC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/601332.png",
       "kitNumber": 60
@@ -38,7 +38,7 @@
       "club": "Stade Rennais FC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21995.png",
       "kitNumber": 16
@@ -61,8 +61,8 @@
       "position": "CB",
       "club": "Stade Rennais FC",
       "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/417830.png",
       "kitNumber": 48
@@ -85,8 +85,8 @@
       "position": "RWB/RM",
       "club": "Stade Rennais FC",
       "nation": "Poland",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/3007.png",
       "kitNumber": 95
@@ -98,7 +98,7 @@
       "club": "Stade Rennais FC",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/272460.png",
       "kitNumber": 26
@@ -110,7 +110,7 @@
       "club": "Stade Rennais FC",
       "nation": "Cameroon",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/438281.png",
       "kitNumber": 18
@@ -121,8 +121,8 @@
       "position": "CB",
       "club": "Stade Rennais FC",
       "nation": "Portugal",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/400525.png",
       "kitNumber": 5
@@ -170,7 +170,7 @@
       "club": "Stade Rennais FC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/653231.png",
       "kitNumber": 67
@@ -182,7 +182,7 @@
       "club": "Stade Rennais FC",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24147.png",
       "kitNumber": 45
@@ -193,8 +193,8 @@
       "position": "CM",
       "club": "Stade Rennais FC",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343792.png",
       "kitNumber": 6
@@ -206,7 +206,7 @@
       "club": "Stade Rennais FC",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/21102.png",
       "kitNumber": 21
@@ -217,8 +217,8 @@
       "position": "CAM/CM/RW",
       "club": "Stade Rennais FC",
       "nation": "Poland",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/40403.png",
       "kitNumber": 17
@@ -254,7 +254,7 @@
       "club": "Stade Rennais FC",
       "nation": "Senegal",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22015.png",
       "kitNumber": 22
@@ -265,8 +265,8 @@
       "position": "ST",
       "club": "Stade Rennais FC",
       "nation": "Gabon",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/456765.png",
       "kitNumber": 65
@@ -278,7 +278,7 @@
       "club": "Stade Rennais FC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/625629.png",
       "kitNumber": 35
@@ -302,7 +302,7 @@
       "club": "Stade Rennais FC",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/349799.png",
       "kitNumber": 12
@@ -337,8 +337,8 @@
       "position": "RW/ST/LW",
       "club": "Stade Rennais FC",
       "nation": "Jordan",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/15286.png",
       "kitNumber": 11

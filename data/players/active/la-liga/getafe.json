@@ -49,8 +49,8 @@
       "position": "GK",
       "club": "Getafe CF",
       "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47247.png",
       "kitNumber": 13
@@ -61,8 +61,8 @@
       "position": "CB",
       "club": "Getafe CF",
       "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/46813.png",
       "kitNumber": 5
@@ -74,7 +74,7 @@
       "club": "Getafe CF",
       "nation": "Uruguay",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/316516.png",
       "kitNumber": 15
@@ -86,7 +86,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/591933.png",
       "kitNumber": 29
@@ -98,7 +98,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/471478.png",
       "kitNumber": 3
@@ -109,8 +109,8 @@
       "position": "CB/RB",
       "club": "Getafe CF",
       "nation": "Togo",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47250.png",
       "kitNumber": 2
@@ -122,7 +122,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/388013.png",
       "kitNumber": 21
@@ -134,7 +134,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/18794.png",
       "kitNumber": 17
@@ -146,7 +146,7 @@
       "club": "Getafe CF",
       "nation": "Colombia",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/64268.png",
       "kitNumber": 22
@@ -170,7 +170,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/180927.png",
       "kitNumber": 24
@@ -180,9 +180,9 @@
       "name": "S. Sazonov",
       "position": "CB",
       "club": "Getafe CF",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 79,
+      "nation": "Georgia",
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/268728.png",
       "kitNumber": 4
@@ -206,7 +206,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/465838.png",
       "kitNumber": 28
@@ -218,7 +218,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162249.png",
       "kitNumber": 16
@@ -226,11 +226,11 @@
     {
       "apiId": 1489,
       "name": "N. Gudelj",
-      "position": "CB",
+      "position": "CB/CDM",
       "club": "Getafe CF",
-      "nation": "Spain",
+      "nation": "Serbia",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1489.png",
       "kitNumber": 8
@@ -241,8 +241,8 @@
       "position": "CM",
       "club": "Getafe CF",
       "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/671625.png",
       "kitNumber": 33
@@ -253,8 +253,8 @@
       "position": "CM",
       "club": "Getafe CF",
       "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/575281.png",
       "kitNumber": 30
@@ -276,8 +276,8 @@
       "position": "CM/CDM",
       "club": "Getafe CF",
       "nation": "Belgium",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24882.png",
       "kitNumber": 23
@@ -288,8 +288,8 @@
       "position": "CDM/CM",
       "club": "Getafe CF",
       "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343205.png",
       "kitNumber": 6
@@ -313,7 +313,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/187987.png",
       "kitNumber": 11
@@ -321,11 +321,11 @@
     {
       "apiId": 403554,
       "name": "Christantus Uche",
-      "position": "CM",
+      "position": "CM/ST",
       "club": "Getafe CF",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403554.png",
       "kitNumber": 12
@@ -349,7 +349,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/671518.png",
       "kitNumber": 27
@@ -361,7 +361,7 @@
       "club": "Getafe CF",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/333369.png",
       "kitNumber": 32
@@ -372,8 +372,8 @@
       "position": "ST",
       "club": "Getafe CF",
       "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47472.png",
       "kitNumber": 9
@@ -397,7 +397,7 @@
       "club": "Getafe CF",
       "nation": "Turkey",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47499.png",
       "kitNumber": 19

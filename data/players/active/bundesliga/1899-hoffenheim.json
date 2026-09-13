@@ -14,7 +14,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Germany",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/702.png",
       "kitNumber": 1
@@ -25,8 +25,8 @@
       "position": "GK",
       "club": "TSG Hoffenheim",
       "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288097.png",
       "kitNumber": 1
@@ -38,7 +38,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/163066.png",
       "kitNumber": 37
@@ -49,8 +49,8 @@
       "position": "CB",
       "club": "TSG Hoffenheim",
       "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/637696.png",
       "kitNumber": 2
@@ -86,7 +86,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Czech Republic",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1231.png",
       "kitNumber": 34
@@ -122,7 +122,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Switzerland",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278453.png",
       "kitNumber": 21
@@ -134,7 +134,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Czech Republic",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162964.png",
       "kitNumber": 2
@@ -146,7 +146,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Turkey",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26300.png",
       "kitNumber": 5
@@ -170,7 +170,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/33067.png",
       "kitNumber": 46
@@ -182,7 +182,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Netherlands",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/408853.png",
       "kitNumber": 39
@@ -193,8 +193,8 @@
       "position": "CB",
       "club": "TSG Hoffenheim",
       "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/468966.png",
       "kitNumber": 13
@@ -218,7 +218,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Netherlands",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37153.png",
       "kitNumber": 18
@@ -229,8 +229,8 @@
       "position": "CDM/CM",
       "club": "TSG Hoffenheim",
       "nation": "Belgium",
-      "tier": "BRONZE",
-      "rating": 63,
+      "tier": "SILVER",
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/453903.png",
       "kitNumber": 17
@@ -241,8 +241,8 @@
       "position": "CM",
       "club": "TSG Hoffenheim",
       "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/455332.png",
       "kitNumber": 16
@@ -253,8 +253,8 @@
       "position": "CM",
       "club": "TSG Hoffenheim",
       "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412708.png",
       "kitNumber": 23
@@ -278,7 +278,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Austria",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 62,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340089.png",
       "kitNumber": 28
@@ -290,7 +290,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Austria",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/7327.png",
       "kitNumber": 22
@@ -301,8 +301,8 @@
       "position": "RM/RW/CAM",
       "club": "TSG Hoffenheim",
       "nation": "Austria",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/126642.png",
       "kitNumber": 8
@@ -326,7 +326,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Kosovo",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/202501.png",
       "kitNumber": 11
@@ -338,7 +338,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/279905.png",
       "kitNumber": 20
@@ -350,7 +350,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/362564.png",
       "kitNumber": 14
@@ -361,8 +361,8 @@
       "position": "ST/CAM/LW",
       "club": "TSG Hoffenheim",
       "nation": "Czech Republic",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/66019.png",
       "kitNumber": 10
@@ -373,8 +373,8 @@
       "position": "ST/CAM/CF",
       "club": "TSG Hoffenheim",
       "nation": "Croatia",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/726.png",
       "kitNumber": 27
@@ -386,7 +386,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Germany",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203040.png",
       "kitNumber": 19
@@ -398,7 +398,7 @@
       "club": "TSG Hoffenheim",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/387973.png",
       "kitNumber": 9
@@ -420,8 +420,8 @@
       "position": "ST",
       "club": "TSG Hoffenheim",
       "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "BRONZE",
+      "rating": 58,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/548529.png",
       "kitNumber": 10

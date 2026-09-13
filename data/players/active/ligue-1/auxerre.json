@@ -14,7 +14,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/134264.png",
       "kitNumber": 23
@@ -26,7 +26,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/614174.png",
       "kitNumber": 37
@@ -38,7 +38,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8657.png",
       "kitNumber": 1
@@ -62,7 +62,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/674510.png"
     },
@@ -73,7 +73,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669875.png",
       "kitNumber": 45
@@ -84,8 +84,8 @@
       "position": "CB",
       "club": "AJ Auxerre",
       "nation": "Ivory Coast",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162466.png",
       "kitNumber": 20
@@ -109,7 +109,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/496787.png",
       "kitNumber": 35
@@ -121,7 +121,7 @@
       "club": "AJ Auxerre",
       "nation": "Congo",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412926.png",
       "kitNumber": 15
@@ -133,7 +133,7 @@
       "club": "AJ Auxerre",
       "nation": "Switzerland",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/115588.png",
       "kitNumber": 24
@@ -157,7 +157,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/371950.png",
       "kitNumber": 46
@@ -192,8 +192,8 @@
       "position": "CB",
       "club": "AJ Auxerre",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/402542.png",
       "kitNumber": 13
@@ -205,7 +205,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/193953.png",
       "kitNumber": 27
@@ -215,9 +215,9 @@
       "name": "A. Tuanzebe",
       "position": "CB",
       "club": "AJ Auxerre",
-      "nation": "France",
+      "nation": "DR Congo",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19182.png",
       "kitNumber": 6
@@ -229,7 +229,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568137.png",
       "kitNumber": 15
@@ -265,7 +265,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/468459.png",
       "kitNumber": 36
@@ -277,7 +277,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/629378.png",
       "kitNumber": 34
@@ -288,8 +288,8 @@
       "position": "CDM/CM",
       "club": "AJ Auxerre",
       "nation": "Senegal",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30748.png",
       "kitNumber": 18
@@ -297,11 +297,11 @@
     {
       "apiId": 278232,
       "name": "P. Ekwah",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "AJ Auxerre",
       "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/278232.png",
       "kitNumber": 17
@@ -309,11 +309,11 @@
     {
       "apiId": 84082,
       "name": "R. Faivre",
-      "position": "CM",
+      "position": "CAM/RW/CM",
       "club": "AJ Auxerre",
       "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/84082.png",
       "kitNumber": 21
@@ -325,7 +325,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/604390.png"
     },
@@ -335,8 +335,8 @@
       "position": "ST",
       "club": "AJ Auxerre",
       "nation": "England",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/137302.png",
       "kitNumber": 9
@@ -348,7 +348,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/669876.png"
     },
@@ -359,7 +359,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/174915.png",
       "kitNumber": 7
@@ -371,7 +371,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/627298.png",
       "kitNumber": 44
@@ -383,7 +383,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326073.png",
       "kitNumber": 3
@@ -395,7 +395,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/435514.png",
       "kitNumber": 32
@@ -406,8 +406,8 @@
       "position": "ST/SS",
       "club": "AJ Auxerre",
       "nation": "England",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/19625.png",
       "kitNumber": 10
@@ -419,7 +419,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/381123.png",
       "kitNumber": 31
@@ -431,7 +431,7 @@
       "club": "AJ Auxerre",
       "nation": "China",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/511151.png",
       "kitNumber": 11
@@ -443,7 +443,7 @@
       "club": "AJ Auxerre",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/613216.png",
       "kitNumber": 41
@@ -455,7 +455,7 @@
       "club": "AJ Auxerre",
       "nation": "Ivory Coast",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/490095.png",
       "kitNumber": 77

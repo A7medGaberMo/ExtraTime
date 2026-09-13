@@ -13,8 +13,8 @@
       "position": "GK",
       "club": "Espanyol Barcelona",
       "nation": "Serbia",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2813.png",
       "kitNumber": 13
@@ -72,9 +72,9 @@
       "name": "V. Drkušić",
       "position": "CB",
       "club": "Espanyol Barcelona",
-      "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Slovenia",
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/36983.png",
       "kitNumber": 16
@@ -85,8 +85,8 @@
       "position": "RB/CB",
       "club": "Espanyol Barcelona",
       "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286601.png",
       "kitNumber": 23
@@ -98,7 +98,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47299.png",
       "kitNumber": 2
@@ -110,7 +110,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Netherlands",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/375915.png",
       "kitNumber": 3
@@ -122,7 +122,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 67,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/450716.png",
       "kitNumber": 21
@@ -134,7 +134,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585288.png",
       "kitNumber": 32
@@ -146,7 +146,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47277.png",
       "kitNumber": 14
@@ -182,7 +182,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286038.png",
       "kitNumber": 22
@@ -205,8 +205,8 @@
       "position": "CDM/CM",
       "club": "Espanyol Barcelona",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/415089.png",
       "kitNumber": 20
@@ -230,7 +230,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/183699.png",
       "kitNumber": 4
@@ -254,7 +254,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/127426.png",
       "kitNumber": 10
@@ -275,9 +275,9 @@
       "name": "T. Dolan",
       "position": "RW/ST",
       "club": "Espanyol Barcelona",
-      "nation": "Ireland",
+      "nation": "England",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/273732.png",
       "kitNumber": 24
@@ -289,7 +289,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/312990.png",
       "kitNumber": 9
@@ -313,7 +313,7 @@
       "club": "Espanyol Barcelona",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47396.png",
       "kitNumber": 19
@@ -324,8 +324,8 @@
       "position": "RW/RM",
       "club": "Espanyol Barcelona",
       "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/182674.png",
       "kitNumber": 17
@@ -345,11 +345,11 @@
     {
       "apiId": 286639,
       "name": "Bryan Zaragoza",
-      "position": "ST",
+      "position": "ST/LW",
       "club": "Espanyol Barcelona",
       "nation": "Spain",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/286639.png",
       "kitNumber": 15

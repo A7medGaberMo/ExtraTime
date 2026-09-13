@@ -14,7 +14,7 @@
       "club": "Atalanta BC",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30417.png",
       "kitNumber": 29
@@ -37,8 +37,8 @@
       "position": "GK",
       "club": "Atalanta BC",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/558758.png",
       "kitNumber": 22
@@ -49,8 +49,8 @@
       "position": "GK",
       "club": "Atalanta BC",
       "nation": "Italy",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30419.png",
       "kitNumber": 31
@@ -61,8 +61,8 @@
       "position": "GK",
       "club": "Atalanta BC",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 73,
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/31069.png",
       "kitNumber": 57
@@ -98,7 +98,7 @@
       "club": "Atalanta BC",
       "nation": "Ivory Coast",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/48119.png",
       "kitNumber": 3
@@ -110,7 +110,7 @@
       "club": "Atalanta BC",
       "nation": "Denmark",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/281495.png",
       "kitNumber": 31
@@ -129,7 +129,7 @@
     },
     {
       "apiId": 400530,
-      "name": "R. ObriÄ",
+      "name": "R. ObriÄ‡",
       "position": "CB",
       "club": "Atalanta BC",
       "nation": "Slovenia",
@@ -145,8 +145,8 @@
       "position": "CB",
       "club": "Atalanta BC",
       "nation": "Italy",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/289761.png",
       "kitNumber": 42
@@ -157,8 +157,8 @@
       "position": "RB/LB/RM",
       "club": "Atalanta BC",
       "nation": "Italy",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2286.png",
       "kitNumber": 77
@@ -170,7 +170,7 @@
       "club": "Atalanta BC",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/91422.png",
       "kitNumber": 16
@@ -182,7 +182,7 @@
       "club": "Atalanta BC",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/264857.png",
       "kitNumber": 47
@@ -193,8 +193,8 @@
       "position": "CAM/ST/RW",
       "club": "Atalanta BC",
       "nation": "Belgium",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/147859.png",
       "kitNumber": 17
@@ -205,8 +205,8 @@
       "position": "CM/CDM",
       "club": "Atalanta BC",
       "nation": "Brazil",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10097.png",
       "kitNumber": 13
@@ -214,11 +214,11 @@
     {
       "apiId": 1358,
       "name": "E. Elmas",
-      "position": "ST",
+      "position": "CAM/CM",
       "club": "Atalanta BC",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "North Macedonia",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1358.png",
       "kitNumber": 99
@@ -230,7 +230,7 @@
       "club": "Atalanta BC",
       "nation": "Italy",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/325.png",
       "kitNumber": 70
@@ -241,8 +241,8 @@
       "position": "CM",
       "club": "Atalanta BC",
       "nation": "Italy",
-      "tier": "GOLD",
-      "rating": 79,
+      "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/484411.png",
       "kitNumber": 2
@@ -250,11 +250,11 @@
     {
       "apiId": 1642,
       "name": "F. Kessié",
-      "position": "CM",
+      "position": "CM/CDM",
       "club": "Atalanta BC",
-      "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Ivory Coast",
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1642.png",
       "kitNumber": 19
@@ -278,7 +278,7 @@
       "club": "Atalanta BC",
       "nation": "Italy",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419423.png",
       "kitNumber": 7
@@ -289,8 +289,8 @@
       "position": "CM/CAM",
       "club": "Atalanta BC",
       "nation": "Croatia",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2763.png",
       "kitNumber": 8
@@ -301,8 +301,8 @@
       "position": "CAM/CM",
       "club": "Atalanta BC",
       "nation": "Serbia",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178749.png",
       "kitNumber": 10
@@ -313,8 +313,8 @@
       "position": "CM",
       "club": "Atalanta BC",
       "nation": "Italy",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/485609.png",
       "kitNumber": 21
@@ -326,7 +326,7 @@
       "club": "Atalanta BC",
       "nation": "Poland",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/203474.png",
       "kitNumber": 59
@@ -338,7 +338,7 @@
       "club": "Atalanta BC",
       "nation": "Montenegro",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/66817.png",
       "kitNumber": 90
@@ -349,8 +349,8 @@
       "position": "ST/CAM",
       "club": "Atalanta BC",
       "nation": "Italy",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30543.png",
       "kitNumber": 18
@@ -374,7 +374,7 @@
       "club": "Atalanta BC",
       "nation": "Italy",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/30544.png",
       "kitNumber": 9

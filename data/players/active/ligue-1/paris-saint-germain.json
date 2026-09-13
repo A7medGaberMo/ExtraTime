@@ -26,7 +26,7 @@
       "club": "Paris Saint-Germain",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/659070.png",
       "kitNumber": 80
@@ -38,7 +38,7 @@
       "club": "Paris Saint-Germain",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606062.png",
       "kitNumber": 16
@@ -50,7 +50,7 @@
       "club": "Paris Saint-Germain",
       "nation": "Russia",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2068.png",
       "kitNumber": 39
@@ -62,7 +62,7 @@
       "club": "Paris Saint-Germain",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/491107.png",
       "kitNumber": 70
@@ -74,7 +74,7 @@
       "club": "Paris Saint-Germain",
       "nation": "Brazil",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/307835.png",
       "kitNumber": 4
@@ -86,7 +86,7 @@
       "club": "Paris Saint-Germain",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/491108.png",
       "kitNumber": 42
@@ -121,8 +121,8 @@
       "position": "CB/LB",
       "club": "Paris Saint-Germain",
       "nation": "France",
-      "tier": "GOLD",
-      "rating": 80,
+      "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/33.png",
       "kitNumber": 21
@@ -134,7 +134,7 @@
       "club": "Paris Saint-Germain",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568268.png",
       "kitNumber": 54
@@ -145,8 +145,8 @@
       "position": "CB",
       "club": "Paris Saint-Germain",
       "nation": "Brazil",
-      "tier": "ULTIMATE",
-      "rating": 91,
+      "tier": "MASTER",
+      "rating": 90,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/257.png",
       "kitNumber": 5
@@ -157,8 +157,8 @@
       "position": "LB/LWB",
       "club": "Paris Saint-Germain",
       "nation": "Portugal",
-      "tier": "ULTIMATE",
-      "rating": 91,
+      "tier": "MASTER",
+      "rating": 88,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/263482.png",
       "kitNumber": 25
@@ -169,8 +169,8 @@
       "position": "CB",
       "club": "Paris Saint-Germain",
       "nation": "Ecuador",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/16367.png",
       "kitNumber": 51
@@ -182,7 +182,7 @@
       "club": "Paris Saint-Germain",
       "nation": "Ukraine",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161671.png",
       "kitNumber": 6
@@ -193,8 +193,8 @@
       "position": "CM",
       "club": "Paris Saint-Germain",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/491087.png",
       "kitNumber": 27
@@ -205,8 +205,8 @@
       "position": "CAM/CM",
       "club": "Paris Saint-Germain",
       "nation": "France",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/409216.png",
       "kitNumber": 24
@@ -218,7 +218,7 @@
       "club": "Paris Saint-Germain",
       "nation": "Portugal",
       "tier": "MASTER",
-      "rating": 89,
+      "rating": 87,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/335051.png",
       "kitNumber": 87
@@ -241,8 +241,8 @@
       "position": "CM/CDM/CAM",
       "club": "Paris Saint-Germain",
       "nation": "Portugal",
-      "tier": "ULTIMATE",
-      "rating": 91,
+      "tier": "MASTER",
+      "rating": 90,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128384.png",
       "kitNumber": 17
@@ -265,8 +265,8 @@
       "position": "CAM/RW/RM",
       "club": "Paris Saint-Germain",
       "nation": "France",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/274300.png",
       "kitNumber": 11
@@ -278,7 +278,7 @@
       "club": "Paris Saint-Germain",
       "nation": "France",
       "tier": "ULTIMATE",
-      "rating": 92,
+      "rating": 91,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/153.png",
       "kitNumber": 10
@@ -290,7 +290,7 @@
       "club": "Paris Saint-Germain",
       "nation": "France",
       "tier": "MASTER",
-      "rating": 86,
+      "rating": 87,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/343027.png",
       "kitNumber": 14
@@ -298,11 +298,11 @@
     {
       "apiId": 340153,
       "name": "M. Godts",
-      "position": "ST",
+      "position": "LW/ST",
       "club": "Paris Saint-Germain",
-      "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340153.png",
       "kitNumber": 22
@@ -326,7 +326,7 @@
       "club": "Paris Saint-Germain",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/471107.png",
       "kitNumber": 47
@@ -338,7 +338,7 @@
       "club": "Paris Saint-Germain",
       "nation": "Spain",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/931.png",
       "kitNumber": 9

@@ -14,7 +14,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/90829.png",
       "kitNumber": 33
@@ -38,7 +38,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/178405.png",
       "kitNumber": 23
@@ -50,7 +50,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25627.png",
       "kitNumber": 21
@@ -85,8 +85,8 @@
       "position": "CB",
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585708.png"
     },
@@ -120,8 +120,8 @@
       "position": "CB/CDM",
       "club": "Borussia Mönchengladbach",
       "nation": "Japan",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38114.png",
       "kitNumber": 6
@@ -133,7 +133,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Ukraine",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/125418.png",
       "kitNumber": 26
@@ -169,7 +169,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/327646.png",
       "kitNumber": 26
@@ -193,7 +193,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Sweden",
       "tier": "BRONZE",
-      "rating": 61,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/335095.png",
       "kitNumber": 38
@@ -205,7 +205,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/280358.png",
       "kitNumber": 17
@@ -241,7 +241,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25638.png",
       "kitNumber": 10
@@ -252,8 +252,8 @@
       "position": "CM",
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/621893.png",
       "kitNumber": 34
@@ -265,7 +265,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24969.png",
       "kitNumber": 16
@@ -277,7 +277,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Austria",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/25461.png",
       "kitNumber": 7
@@ -300,8 +300,8 @@
       "position": "ST",
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "BRONZE",
+      "rating": 60,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/585705.png",
       "kitNumber": 39
@@ -336,8 +336,8 @@
       "position": "RW/RM",
       "club": "Borussia Mönchengladbach",
       "nation": "France",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20784.png",
       "kitNumber": 9
@@ -348,8 +348,8 @@
       "position": "ST",
       "club": "Borussia Mönchengladbach",
       "nation": "Germany",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/26256.png",
       "kitNumber": 11
@@ -372,8 +372,8 @@
       "position": "ST",
       "club": "Borussia Mönchengladbach",
       "nation": "Sweden",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47895.png",
       "kitNumber": 3
@@ -385,7 +385,7 @@
       "club": "Borussia Mönchengladbach",
       "nation": "Japan",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/106851.png",
       "kitNumber": 18

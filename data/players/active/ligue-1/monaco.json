@@ -14,7 +14,7 @@
       "club": "AS Monaco",
       "nation": "Finland",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 82,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/963.png",
       "kitNumber": 1
@@ -38,7 +38,7 @@
       "club": "AS Monaco",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/440070.png",
       "kitNumber": 40
@@ -74,7 +74,7 @@
       "club": "AS Monaco",
       "nation": "Portugal",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/294722.png",
       "kitNumber": 20
@@ -86,7 +86,7 @@
       "club": "AS Monaco",
       "nation": "Senegal",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/428084.png",
       "kitNumber": 72
@@ -97,8 +97,8 @@
       "position": "RB/CB",
       "club": "AS Monaco",
       "nation": "Netherlands",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 79,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/231.png",
       "kitNumber": 4
@@ -122,7 +122,7 @@
       "club": "AS Monaco",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/568479.png",
       "kitNumber": 41
@@ -134,7 +134,7 @@
       "club": "AS Monaco",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/671701.png",
       "kitNumber": 47
@@ -145,8 +145,8 @@
       "position": "CM",
       "club": "AS Monaco",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/543470.png",
       "kitNumber": 19
@@ -169,8 +169,8 @@
       "position": "CM",
       "club": "AS Monaco",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419035.png",
       "kitNumber": 28
@@ -193,8 +193,8 @@
       "position": "CAM/LM/LW",
       "club": "AS Monaco",
       "nation": "Russia",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/109.png",
       "kitNumber": 10
@@ -206,7 +206,7 @@
       "club": "AS Monaco",
       "nation": "Belgium",
       "tier": "SILVER",
-      "rating": 71,
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/340152.png",
       "kitNumber": 17
@@ -214,11 +214,11 @@
     {
       "apiId": 449676,
       "name": "S. Nibombé",
-      "position": "CM/CB",
+      "position": "CB/CDM",
       "club": "AS Monaco",
       "nation": "Belgium",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449676.png",
       "kitNumber": 44
@@ -230,7 +230,7 @@
       "club": "AS Monaco",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/671702.png",
       "kitNumber": 46
@@ -242,7 +242,7 @@
       "club": "AS Monaco",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/488264.png",
       "kitNumber": 49
@@ -254,7 +254,7 @@
       "club": "AS Monaco",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/483126.png",
       "kitNumber": 8
@@ -266,7 +266,7 @@
       "club": "AS Monaco",
       "nation": "Switzerland",
       "tier": "ELITE",
-      "rating": 83,
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2810.png",
       "kitNumber": 6
@@ -277,8 +277,8 @@
       "position": "ST/LW",
       "club": "AS Monaco",
       "nation": "France",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/161622.png",
       "kitNumber": 11
@@ -289,8 +289,8 @@
       "position": "ST/CF",
       "club": "AS Monaco",
       "nation": "United States",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 80,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/138835.png",
       "kitNumber": 9
@@ -313,8 +313,8 @@
       "position": "ST/LW",
       "club": "AS Monaco",
       "nation": "Germany",
-      "tier": "GOLD",
-      "rating": 75,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/386276.png",
       "kitNumber": 29
@@ -326,7 +326,7 @@
       "club": "AS Monaco",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/462278.png",
       "kitNumber": 7
@@ -338,7 +338,7 @@
       "club": "AS Monaco",
       "nation": "Spain",
       "tier": "GOLD",
-      "rating": 78,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/135775.png",
       "kitNumber": 31
@@ -350,7 +350,7 @@
       "club": "AS Monaco",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/610562.png",
       "kitNumber": 42

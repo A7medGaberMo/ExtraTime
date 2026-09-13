@@ -13,8 +13,8 @@
       "position": "GK",
       "club": "Le Havre AC",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/395808.png",
       "kitNumber": 50
@@ -25,8 +25,8 @@
       "position": "GK",
       "club": "Le Havre AC",
       "nation": "France",
-      "tier": "SILVER",
-      "rating": 72,
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/20706.png",
       "kitNumber": 93
@@ -37,8 +37,8 @@
       "position": "GK",
       "club": "Le Havre AC",
       "nation": "Congo",
-      "tier": "SILVER",
-      "rating": 71,
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24012.png",
       "kitNumber": 77
@@ -49,8 +49,8 @@
       "position": "GK",
       "club": "Le Havre AC",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/515772.png",
       "kitNumber": 16
@@ -62,7 +62,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/670668.png"
     },
@@ -73,7 +73,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/355955.png",
       "kitNumber": 33
@@ -85,7 +85,7 @@
       "club": "Le Havre AC",
       "nation": "Denmark",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341234.png",
       "kitNumber": 12
@@ -93,11 +93,11 @@
     {
       "apiId": 162067,
       "name": "T. Pembélé",
-      "position": "CM",
+      "position": "RB/CB",
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/162067.png",
       "kitNumber": 32
@@ -109,7 +109,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/41238.png",
       "kitNumber": 23
@@ -132,8 +132,8 @@
       "position": "CB/LB",
       "club": "Le Havre AC",
       "nation": "Algeria",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/8777.png",
       "kitNumber": 5
@@ -145,7 +145,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/513415.png",
       "kitNumber": 29
@@ -156,8 +156,8 @@
       "position": "CM",
       "club": "Le Havre AC",
       "nation": "France",
-      "tier": "BRONZE",
-      "rating": 58,
+      "tier": "SILVER",
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/314232.png",
       "kitNumber": 21
@@ -181,7 +181,7 @@
       "club": "Le Havre AC",
       "nation": "Mali",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/471290.png",
       "kitNumber": 39
@@ -205,7 +205,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/670669.png"
     },
@@ -216,7 +216,7 @@
       "club": "Le Havre AC",
       "nation": "Congo",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/460805.png",
       "kitNumber": 78
@@ -240,7 +240,7 @@
       "club": "Le Havre AC",
       "nation": "Senegal",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/128342.png",
       "kitNumber": 14
@@ -251,8 +251,8 @@
       "position": "CM/CDM",
       "club": "Le Havre AC",
       "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/314231.png",
       "kitNumber": 7
@@ -264,7 +264,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630731.png",
       "kitNumber": 37
@@ -276,7 +276,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/451961.png",
       "kitNumber": 24
@@ -287,8 +287,8 @@
       "position": "ST",
       "club": "Le Havre AC",
       "nation": "Algeria",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630733.png",
       "kitNumber": 33
@@ -300,7 +300,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/443579.png",
       "kitNumber": 38
@@ -310,9 +310,9 @@
       "name": "J. Maja",
       "position": "ST",
       "club": "Le Havre AC",
-      "nation": "France",
+      "nation": "Nigeria",
       "tier": "GOLD",
-      "rating": 79,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1279.png",
       "kitNumber": 9
@@ -323,8 +323,8 @@
       "position": "ST/LW",
       "club": "Le Havre AC",
       "nation": "Switzerland",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/961.png",
       "kitNumber": 10
@@ -336,7 +336,7 @@
       "club": "Le Havre AC",
       "nation": "Japan",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/273142.png",
       "kitNumber": 17
@@ -348,7 +348,7 @@
       "club": "Le Havre AC",
       "nation": "Japan",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/508070.png",
       "kitNumber": 30
@@ -360,7 +360,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/673857.png",
       "kitNumber": 20
@@ -372,7 +372,7 @@
       "club": "Le Havre AC",
       "nation": "Tanzania",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1945.png",
       "kitNumber": 25
@@ -384,7 +384,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "SILVER",
-      "rating": 72,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/419584.png",
       "kitNumber": 19
@@ -396,7 +396,7 @@
       "club": "Le Havre AC",
       "nation": "France",
       "tier": "BRONZE",
-      "rating": 58,
+      "rating": 63,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/437349.png",
       "kitNumber": 27
