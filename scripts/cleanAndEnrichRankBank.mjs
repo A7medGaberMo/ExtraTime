@@ -166,6 +166,46 @@ const MANUAL_ALIASES = {
   "ian marshall": "https://media.api-sports.io/football/teams/46.png",
   "enrico candiani": "https://media.api-sports.io/football/teams/505.png",
   "antonio angelillo": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Antonio_Angelillo.jpg",
+  "gerardo bedoya": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gerardo_Bedoya.jpg/330px-Gerardo_Bedoya.jpg",
+  "felipe melo": "https://media.api-sports.io/football/players/10323.png",
+  "mario balotelli": "https://media.api-sports.io/football/players/1908.png",
+  "rogerio ceni": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rog%C3%A9rio_Ceni_2015.jpg/330px-Rog%C3%A9rio_Ceni_2015.jpg",
+  "jose luis chilavert": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Jose_Luis_Chilavert.jpg/330px-Jose_Luis_Chilavert.jpg",
+  "jorge campos": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Jorge_Campos_2018.jpg/330px-Jorge_Campos_2018.jpg",
+  "rene higuita": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rene_Higuita_2012.jpg/330px-Rene_Higuita_2012.jpg",
+  "hans-jorg butt": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Hans-J%C3%B6rg_Butt_2010.jpg/330px-Hans-J%C3%B6rg_Butt_2010.jpg",
+  "hans jorg butt": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Hans-J%C3%B6rg_Butt_2010.jpg/330px-Hans-J%C3%B6rg_Butt_2010.jpg",
+  "robbie fowler": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Robbie_Fowler_2012.jpg/330px-Robbie_Fowler_2012.jpg",
+  "jermain defoe": "https://media.api-sports.io/football/players/18920.png",
+  "gabriel agbonlahor": "https://media.api-sports.io/football/players/19139.png",
+  "ian wright": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ian_Wright_2018.jpg/330px-Ian_Wright_2018.jpg",
+  "juninho pernambucano": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Juninho_Pernambucano_2012.jpg/330px-Juninho_Pernambucano_2012.jpg",
+  "roberto carlos": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roberto_carlos_2011.jpg/330px-Roberto_carlos_2011.jpg",
+  "joao felix": "https://media.api-sports.io/football/players/153.png",
+  "matthijs de ligt": "https://media.api-sports.io/football/players/538.png",
+  "anthony martial": "https://media.api-sports.io/football/players/901.png",
+  "sir alex ferguson": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sir_Alex_Ferguson_2013.jpg/330px-Sir_Alex_Ferguson_2013.jpg",
+  "pep guardiola": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pep_Guardiola_2017.jpg/330px-Pep_Guardiola_2017.jpg",
+  "carlo ancelotti": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Carlo_Ancelotti_2016.jpg/330px-Carlo_Ancelotti_2016.jpg",
+  "jose mourinho": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Jos%C3%A9_Mourinho_2018.jpg/330px-Jos%C3%A9_Mourinho_2018.jpg",
+  "jurgen klopp": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/J%C3%BCrgen_Klopp%2C_Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_05.jpg/330px-J%C3%BCrgen_Klopp%2C_Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_05.jpg",
+  "nicolas anelka": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Nicolas_Anelka_2011.jpg/330px-Nicolas_Anelka_2011.jpg",
+  "fernando morientes": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Fernando_Morientes_2017.jpg/330px-Fernando_Morientes_2017.jpg",
+  "john terry": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/John_Terry_2015.jpg/330px-John_Terry_2015.jpg",
+  "david unsworth": "https://media.api-sports.io/football/teams/45.png",
+  "leighton baines": "https://media.api-sports.io/football/players/18790.png",
+  "ian harte": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ian_Harte.jpg/330px-Ian_Harte.jpg",
+  "gary cahill": "https://media.api-sports.io/football/players/18844.png",
+  "kepa arrizabalaga": "https://media.api-sports.io/football/players/2280.png",
+  "ederson": "https://media.api-sports.io/football/players/617.png",
+  "didier drogba": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Didier_Drogba_%282019%29_%28cropped2%29.jpg/330px-Didier_Drogba_%282019%29_%28cropped2%29.jpg",
+  "emmanuel adebayor": "https://media.api-sports.io/football/players/2283.png",
+  "yakubu": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Yakubu_Aiyegbeni.jpg/330px-Yakubu_Aiyegbeni.jpg",
+  "gerd muller": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
+  "ian rush": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ian_Rush_2011.jpg/330px-Ian_Rush_2011.jpg",
+  "manuel rosas": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Manuel_Rosas.jpg/330px-Manuel_Rosas.jpg",
+  "michael owen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michael_Owen_2013.jpg/330px-Michael_Owen_2013.jpg",
+  "ruud van nistelrooy": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ruud_van_Nistelrooy_2012.jpg/330px-Ruud_van_Nistelrooy_2012.jpg",
 
   // Clubs
   "real madrid": "https://media.api-sports.io/football/teams/541.png",
@@ -230,6 +270,7 @@ const NATION_FLAGS = {
   "united states": "https://flagcdn.com/w80/us.png",
   "usa": "https://flagcdn.com/w80/us.png",
   "egypt": "https://flagcdn.com/w80/eg.png",
+  "jordan": "https://flagcdn.com/w80/jo.png",
   "morocco": "https://flagcdn.com/w80/ma.png",
   "algeria": "https://flagcdn.com/w80/dz.png",
   "senegal": "https://flagcdn.com/w80/sn.png",
@@ -301,8 +342,8 @@ function resolveImageUrl(answer, questionTitleEn = '') {
   const cleanSub = normalizeKey(subTextEn);
   const cleanTitle = normalizeKey(questionTitleEn);
 
-  // A. Check Nations first if type is nation or name is in nation map
-  if (type === 'nation') {
+  // A. Check Nations first if type is nation/flag or name is in nation map
+  if (type === 'nation' || type === 'flag') {
     for (const [nat, url] of Object.entries(NATION_FLAGS)) {
       if (cleanName === normalizeKey(nat) || cleanName.includes(normalizeKey(nat))) {
         return url;

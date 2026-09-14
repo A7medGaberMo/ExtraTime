@@ -317,5 +317,623 @@
       "en": "FIFA recognized senior international appearances",
       "ar": "المباريات الدولية المعتمدة من الاتحاد الدولي (فيفا)"
     }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legends by total FIFA World Cup goals scored",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب عدد الأهداف المسجلة في كأس العالم"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "wc_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2016209185719_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0149_-_DV3P4742_mod.jpg/330px-2016209185719_2016-07-27_Champions_for_Charity_-_Sven_-_1D_X_-_0149_-_DV3P4742_mod.jpg",
+          "fallbackText": "MK"
+        },
+        "stat": {
+          "en": "16 Goals",
+          "ar": "16 هدفاً"
+        }
+      },
+      {
+        "answerKey": "wc_r9",
+        "name": {
+          "en": "Ronaldo Nazário",
+          "ar": "رونالدو البرازيلي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
+          "fallbackText": "R9"
+        },
+        "stat": {
+          "en": "15 Goals",
+          "ar": "15 هدفاً"
+        }
+      },
+      {
+        "answerKey": "wc_muller",
+        "name": {
+          "en": "Gerd Müller",
+          "ar": "غيرد مولر"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
+          "fallbackText": "GM"
+        },
+        "stat": {
+          "en": "14 Goals",
+          "ar": "14 هدفاً"
+        }
+      },
+      {
+        "answerKey": "wc_fontaine",
+        "name": {
+          "en": "Just Fontaine",
+          "ar": "جاست فونتين"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Just_Fontaine_en_1958.jpg/330px-Just_Fontaine_en_1958.jpg",
+          "fallbackText": "JF"
+        },
+        "stat": {
+          "en": "13 Goals",
+          "ar": "13 هدفاً"
+        }
+      },
+      {
+        "answerKey": "wc_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg",
+          "fallbackText": "PEL"
+        },
+        "stat": {
+          "en": "12 Goals",
+          "ar": "12 هدفاً"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Men’s FIFA World Cup tournaments all-time",
+      "ar": "بطولات كأس العالم للرجال عبر التاريخ"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legends by total Ballon d’Or awards won",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب عدد جوائز الكرة الذهبية (فرانس فوتبول)"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "bdo_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM"
+        },
+        "stat": {
+          "en": "8 Awards",
+          "ar": "8 كرات ذهبية"
+        }
+      },
+      {
+        "answerKey": "bdo_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
+        },
+        "stat": {
+          "en": "5 Awards",
+          "ar": "5 كرات ذهبية"
+        }
+      },
+      {
+        "answerKey": "bdo_platini",
+        "name": {
+          "en": "Michel Platini",
+          "ar": "ميشيل بلاتيني"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Michel_Platini_2010_%28cropped%29.jpg",
+          "fallbackText": "MP"
+        },
+        "stat": {
+          "en": "3 Awards",
+          "ar": "3 كرات ذهبية"
+        }
+      },
+      {
+        "answerKey": "bdo_beckenbauer",
+        "name": {
+          "en": "Franz Beckenbauer",
+          "ar": "فرانز بيكنباور"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Franz_Beckenbauer_%281975%29.jpg/330px-Franz_Beckenbauer_%281975%29.jpg",
+          "fallbackText": "FB"
+        },
+        "stat": {
+          "en": "2 Awards",
+          "ar": "كرتان ذهبيتان"
+        }
+      },
+      {
+        "answerKey": "bdo_zidane",
+        "name": {
+          "en": "Zinedine Zidane",
+          "ar": "زين الدين زيدان"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/330px-Zinedine_Zidane_by_Tasnim_03.jpg",
+          "fallbackText": "ZZ"
+        },
+        "stat": {
+          "en": "1 Award",
+          "ar": "كرة ذهبية واحدة"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Official France Football Ballon d’Or records",
+      "ar": "سجلات مجلة فرانس فوتبول الرسمية للكرة الذهبية"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 stars by official international goals scored for their national teams",
+      "ar": "رتّب هؤلاء النجوم الخمسة حسب إجمالي أهدافهم الدولية مع منتخباتهم الوطنية"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "int_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
+        },
+        "stat": {
+          "en": "135 Goals",
+          "ar": "135 هدفاً"
+        },
+        "subText": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        }
+      },
+      {
+        "answerKey": "int_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM"
+        },
+        "stat": {
+          "en": "112 Goals",
+          "ar": "112 هدفاً"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        }
+      },
+      {
+        "answerKey": "int_daei",
+        "name": {
+          "en": "Ali Daei",
+          "ar": "علي دائي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Ali_Daei%2C_Saipa_vs._Al-Rayyan_pre-match_conference.jpg/330px-Ali_Daei%2C_Saipa_vs._Al-Rayyan_pre-match_conference.jpg",
+          "fallbackText": "AD"
+        },
+        "stat": {
+          "en": "108 Goals",
+          "ar": "108 أهداف"
+        },
+        "subText": {
+          "en": "Iran",
+          "ar": "إيران"
+        }
+      },
+      {
+        "answerKey": "int_puskas",
+        "name": {
+          "en": "Ferenc Puskás",
+          "ar": "فيرينتس بوشكاش"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Ferenc_Puskas_en_1965.jpg",
+          "fallbackText": "FP"
+        },
+        "stat": {
+          "en": "84 Goals",
+          "ar": "84 هدفاً"
+        },
+        "subText": {
+          "en": "Hungary",
+          "ar": "المجر"
+        }
+      },
+      {
+        "answerKey": "int_neymar",
+        "name": {
+          "en": "Neymar",
+          "ar": "نيمار دا سيلفا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
+          "fallbackText": "NJR"
+        },
+        "stat": {
+          "en": "79 Goals",
+          "ar": "79 هدفاً"
+        },
+        "subText": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Senior international competitive and friendly matches",
+      "ar": "المباريات الدولية الرسمية والودية المعتمدة للمنتخبات الأولى"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 superstars by total UEFA Champions League goals scored",
+      "ar": "رتّب هؤلاء النجوم الخمسة حسب إجمالي الأهداف المسجلة في دوري أبطال أوروبا"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "ucl_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
+        },
+        "stat": {
+          "en": "140 Goals",
+          "ar": "140 هدفاً"
+        }
+      },
+      {
+        "answerKey": "ucl_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM"
+        },
+        "stat": {
+          "en": "129 Goals",
+          "ar": "129 هدفاً"
+        }
+      },
+      {
+        "answerKey": "ucl_lewy",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/521.png",
+          "fallbackText": "RL"
+        },
+        "stat": {
+          "en": "101 Goals",
+          "ar": "101 هدفاً"
+        }
+      },
+      {
+        "answerKey": "ucl_benzema",
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/759.png",
+          "fallbackText": "KB"
+        },
+        "stat": {
+          "en": "90 Goals",
+          "ar": "90 هدفاً"
+        }
+      },
+      {
+        "answerKey": "ucl_raul",
+        "name": {
+          "en": "Raúl González",
+          "ar": "راؤول غونزاليس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/291713.png",
+          "fallbackText": "RG"
+        },
+        "stat": {
+          "en": "71 Goals",
+          "ar": "71 هدفاً"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Group stage to final matches included",
+      "ar": "شامل جميع الأدوار من دور المجموعات حتى المباراة النهائية"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legends by official goals scored in El Clásico history",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب عدد الأهداف المسجلة في تاريخ الكلاسيكو (ريال مدريد ضد برشلونة)"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "clasico_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM"
+        },
+        "stat": {
+          "en": "26 Goals",
+          "ar": "26 هدفاً"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        }
+      },
+      {
+        "answerKey": "clasico_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
+        },
+        "stat": {
+          "en": "18 Goals",
+          "ar": "18 هدفاً"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        }
+      },
+      {
+        "answerKey": "clasico_benzema",
+        "name": {
+          "en": "Karim Benzema",
+          "ar": "كريم بنزيما"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/759.png",
+          "fallbackText": "KB"
+        },
+        "stat": {
+          "en": "16 Goals",
+          "ar": "16 هدفاً"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        }
+      },
+      {
+        "answerKey": "clasico_raul",
+        "name": {
+          "en": "Raúl González",
+          "ar": "راؤول غونزاليس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/291713.png",
+          "fallbackText": "RG"
+        },
+        "stat": {
+          "en": "15 Goals",
+          "ar": "15 هدفاً"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        }
+      },
+      {
+        "answerKey": "clasico_cesar",
+        "name": {
+          "en": "César Rodríguez",
+          "ar": "سيزار رودريغيز"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg/330px-Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg",
+          "fallbackText": "CR"
+        },
+        "stat": {
+          "en": "14 Goals",
+          "ar": "14 هدفاً"
+        },
+        "subText": {
+          "en": "Barcelona",
+          "ar": "برشلونة"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Real Madrid vs Barcelona official matches",
+      "ar": "المباريات الرسمية بين ريال مدريد وبرشلونة عبر التاريخ"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these legendary icons by official career goals scored for a SINGLE club",
+      "ar": "رتب هؤلاء الأساطير حسب عدد الأهداف الرسمية المسجلة لنادٍ واحد في مسيرتهم"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "lionel-messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM"
+        },
+        "stat": {
+          "en": "672 goals (World Record)",
+          "ar": "672 هدفاً (رقم قياسي عالمي)"
+        },
+        "subText": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        }
+      },
+      {
+        "answerKey": "pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg",
+          "fallbackText": "PEL"
+        },
+        "stat": {
+          "en": "643 goals",
+          "ar": "643 هدفاً رسمياً"
+        },
+        "subText": {
+          "en": "Santos FC",
+          "ar": "سانتوس"
+        }
+      },
+      {
+        "answerKey": "gerd-muller",
+        "name": {
+          "en": "Gerd Müller",
+          "ar": "غيرد مولر"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
+          "fallbackText": "GM"
+        },
+        "stat": {
+          "en": "563 goals",
+          "ar": "563 هدفاً"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        }
+      },
+      {
+        "answerKey": "cristiano-ronaldo",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR"
+        },
+        "stat": {
+          "en": "450 goals",
+          "ar": "450 هدفاً"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        }
+      },
+      {
+        "answerKey": "ian-rush",
+        "name": {
+          "en": "Ian Rush",
+          "ar": "إيان راش"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ian_Rush_2011.jpg/330px-Ian_Rush_2011.jpg",
+          "fallbackText": "IR"
+        },
+        "stat": {
+          "en": "346 goals",
+          "ar": "346 هدفاً"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "The greatest one-club loyalty and record goal tallies",
+      "ar": "أعلى حصيلة أهداف مسجلة لقميص نادٍ واحد في تاريخ كرة القدم"
+    }
   }
 ]

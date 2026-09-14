@@ -14,6 +14,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/39.png",
           "fallbackText": "PL24"
         },
         "stat": {
@@ -33,6 +34,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/players/1100.png",
           "fallbackText": "PL23"
         },
         "stat": {
@@ -52,6 +54,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "PL19"
         },
         "stat": {
@@ -71,6 +74,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/39.png",
           "fallbackText": "PL12"
         },
         "stat": {
@@ -90,6 +94,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "PL17"
         },
         "stat": {
@@ -182,7 +187,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/1460.png",
+          "primaryUrl": "https://media.api-sports.io/football/players/1468.png",
           "fallbackText": "SAK7"
         },
         "stat": {
@@ -1625,7 +1630,7 @@
         },
         "media": {
           "type": "club",
-          "primaryUrl": "https://media.api-sports.io/football/teams/257.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/77.png",
           "fallbackText": "RAN"
         },
         "stat": {
@@ -2970,6 +2975,7 @@
         },
         "media": {
           "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/cr.png",
           "fallbackText": "CRC"
         },
         "stat": {
@@ -2985,6 +2991,7 @@
         },
         "media": {
           "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/ca.png",
           "fallbackText": "CAN"
         },
         "stat": {
@@ -3004,6 +3011,7 @@
         },
         "media": {
           "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/hn.png",
           "fallbackText": "HON"
         },
         "stat": {
@@ -3169,7 +3177,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK9"
         },
         "stat": {
@@ -3468,7 +3476,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
           "fallbackText": "R9"
         },
         "stat": {
@@ -3488,7 +3496,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Michael_Owen_2013.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "OWE"
         },
         "stat": {
@@ -3508,7 +3516,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "LM10"
         },
         "stat": {
@@ -3528,7 +3536,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/George_Best_1976.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/George_best_1976.jpg/330px-George_best_1976.jpg",
           "fallbackText": "BEST"
         },
         "stat": {
@@ -3548,7 +3556,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Eus%C3%A9bio_1966.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Eusebio_en_1973.jpg/330px-Eusebio_en_1973.jpg",
           "fallbackText": "EUS"
         },
         "stat": {
@@ -3581,7 +3589,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Luka_Modri%C4%87_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "LM10"
         },
         "stat": {
@@ -3601,7 +3609,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "CR7"
         },
         "stat": {
@@ -3621,7 +3629,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "LM10"
         },
         "stat": {
@@ -3641,7 +3649,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Karim_Benzema_wearing_Real_Madrid_home_kit_2021-2022.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "KB9"
         },
         "stat": {
@@ -3661,7 +3669,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/9568.png",
           "fallbackText": "LM10"
         },
         "stat": {
@@ -3896,7 +3904,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -3973,7 +3981,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
           "fallbackText": "R9"
         },
         "stat": {
@@ -3989,7 +3997,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Michael_Owen_2013.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michael_Owen_2013.jpg/330px-Michael_Owen_2013.jpg",
           "fallbackText": "MO"
         },
         "stat": {
@@ -4037,7 +4045,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Kak%C3%A1_2010.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Kak%C3%A1_visited_Stadium_St._Petersburg.jpg/330px-Kak%C3%A1_visited_Stadium_St._Petersburg.jpg",
           "fallbackText": "KAKA"
         },
         "stat": {
@@ -4405,7 +4413,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Juninho_Pernambucano.JPG/330px-Juninho_Pernambucano.JPG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Juninho_Pernambucano_2012.jpg/330px-Juninho_Pernambucano_2012.jpg",
           "fallbackText": "JP8"
         },
         "stat": {
@@ -4445,7 +4453,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/LS3_1288_%2853332367864%29_%28cropped%29.jpg/330px-LS3_1288_%2853332367864%29_%28cropped%29.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roberto_carlos_2011.jpg/330px-Roberto_carlos_2011.jpg",
           "fallbackText": "RC3"
         },
         "stat": {
@@ -4704,7 +4712,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/127814.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "AF10"
         },
         "stat": {
@@ -4724,7 +4732,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/388480.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "LY19"
         },
         "stat": {
@@ -4744,7 +4752,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/313885.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/569.png",
           "fallbackText": "AN7"
         },
         "stat": {
@@ -4817,7 +4825,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sadio_Man%C3%A9_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/66.png",
           "fallbackText": "MAN"
         },
         "stat": {
@@ -4837,7 +4845,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Fowler%2C_Robbie.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Robbie_Fowler_2012.jpg/330px-Robbie_Fowler_2012.jpg",
           "fallbackText": "FOW"
         },
         "stat": {
@@ -4857,7 +4865,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Jermain-Defoe_%28cropped%29.jpg/330px-Jermain-Defoe_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/47.png",
           "fallbackText": "DEF"
         },
         "stat": {
@@ -4877,7 +4885,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/18850.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/66.png",
           "fallbackText": "AGB"
         },
         "stat": {
@@ -4897,6 +4905,7 @@
         },
         "media": {
           "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/teams/46.png",
           "fallbackText": "MAR"
         },
         "stat": {
@@ -4929,7 +4938,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
           "fallbackText": "R9"
         },
         "stat": {
@@ -4949,7 +4958,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Michael_Owen_2013.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "OWE"
         },
         "stat": {
@@ -4969,7 +4978,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "LM10"
         },
         "stat": {
@@ -4989,7 +4998,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/George_Best_1976.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/George_best_1976.jpg/330px-George_best_1976.jpg",
           "fallbackText": "BES"
         },
         "stat": {
@@ -5042,7 +5051,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/742.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/212.png",
           "fallbackText": "PEP"
         },
         "stat": {
@@ -5062,7 +5071,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/497.png",
           "fallbackText": "TOT"
         },
         "stat": {
@@ -5082,7 +5091,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ryan_Giggs_2013.jpg/330px-Ryan_Giggs_2013.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png",
           "fallbackText": "GIG"
         },
         "stat": {
@@ -5102,7 +5111,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Filippo_Inzaghi.jpg/330px-Filippo_Inzaghi.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "INZ"
         },
         "stat": {
@@ -5122,7 +5131,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Metalist-Inter_%282%29.jpg/330px-Metalist-Inter_%282%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/47.png",
           "fallbackText": "ZAN"
         },
         "stat": {
@@ -5687,6 +5696,7 @@
         },
         "media": {
           "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/teams/505.png",
           "fallbackText": "CAN"
         },
         "stat": {
@@ -5719,7 +5729,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK10"
         },
         "stat": {
@@ -5739,7 +5749,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/287592.png",
+          "primaryUrl": "https://media.api-sports.io/football/players/2283.png",
           "fallbackText": "ADE"
         },
         "stat": {
@@ -5945,7 +5955,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Ian_Rush_in_Singapore.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ian_Rush_2011.jpg/330px-Ian_Rush_2011.jpg",
           "fallbackText": "RUSH"
         },
         "stat": {
@@ -6025,7 +6035,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Fowler%2C_Robbie.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Robbie_Fowler_2012.jpg/330px-Robbie_Fowler_2012.jpg",
           "fallbackText": "FOW"
         },
         "stat": {
@@ -6058,7 +6068,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Juninho_Pernambucano.JPG/330px-Juninho_Pernambucano.JPG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Juninho_Pernambucano_2012.jpg/330px-Juninho_Pernambucano_2012.jpg",
           "fallbackText": "JUN"
         },
         "stat": {
@@ -6211,7 +6221,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/LS3_1288_%2853332367864%29_%28cropped%29.jpg/330px-LS3_1288_%2853332367864%29_%28cropped%29.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roberto_carlos_2011.jpg/330px-Roberto_carlos_2011.jpg",
           "fallbackText": "RC3"
         },
         "stat": {
@@ -6332,7 +6342,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK9"
         },
         "stat": {
@@ -6680,7 +6690,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gerd_M%C3%BCller_c1973_%28cropped%29.jpg/330px-Gerd_M%C3%BCller_c1973_%28cropped%29.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
           "fallbackText": "GM9"
         },
         "stat": {
@@ -6853,7 +6863,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/154.png",
           "fallbackText": "LS9"
         },
         "stat": {
@@ -6873,7 +6883,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK9"
         },
         "stat": {
@@ -6906,7 +6916,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gerd_M%C3%BCller_c1973_%28cropped%29.jpg/330px-Gerd_M%C3%BCller_c1973_%28cropped%29.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
           "fallbackText": "GERD"
         },
         "stat": {
@@ -7039,7 +7049,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK9"
         },
         "stat": {
@@ -7132,7 +7142,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Juninho_Pernambucano.JPG/330px-Juninho_Pernambucano.JPG",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Juninho_Pernambucano_2012.jpg/330px-Juninho_Pernambucano_2012.jpg",
           "fallbackText": "JP8"
         },
         "stat": {
@@ -7519,7 +7529,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/154.png",
           "fallbackText": "LS9"
         },
         "stat": {
@@ -7535,7 +7545,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK9"
         },
         "stat": {
@@ -7564,7 +7574,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
           "fallbackText": "R9"
         },
         "stat": {
@@ -7584,7 +7594,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Michael_Owen_2013.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michael_Owen_2013.jpg/330px-Michael_Owen_2013.jpg",
           "fallbackText": "MO10"
         },
         "stat": {
@@ -7624,7 +7634,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/George_Best_1976.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/George_best_1976.jpg/330px-George_best_1976.jpg",
           "fallbackText": "GB7"
         },
         "stat": {
@@ -7870,7 +7880,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/154.png",
           "fallbackText": "LS9"
         },
         "stat": {
@@ -8205,6 +8215,285 @@
     "subtitle": {
       "en": "Official age in days on the date of their first Champions League goal",
       "ar": "العمر الدقيق بالأيام عند تسجيل الهدف الأول في تاريخ البطولة"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these football hardmen by official career RED cards received",
+      "ar": "رتب هؤلاء اللاعبين المشاغبين حسب عدد البطاقات الحمراء في مسيرتهم"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "gerardo-bedoya",
+        "name": {
+          "en": "Gerardo Bedoya",
+          "ar": "جيراردو بيدويا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gerardo_Bedoya.jpg/330px-Gerardo_Bedoya.jpg",
+          "fallbackText": "GB"
+        },
+        "stat": {
+          "en": "46 red cards (World Record)",
+          "ar": "46 بطاقة حمراء (رقم قياسي عالمي)"
+        }
+      },
+      {
+        "answerKey": "sergio-ramos",
+        "name": {
+          "en": "Sergio Ramos",
+          "ar": "سيرخيو راموس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sergio_Ramos_2018.jpg/330px-Sergio_Ramos_2018.jpg",
+          "fallbackText": "SR"
+        },
+        "stat": {
+          "en": "29 red cards",
+          "ar": "29 بطاقة حمراء"
+        }
+      },
+      {
+        "answerKey": "felipe-melo",
+        "name": {
+          "en": "Felipe Melo",
+          "ar": "فيليبي ميلو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/10323.png",
+          "fallbackText": "FM"
+        },
+        "stat": {
+          "en": "20 red cards",
+          "ar": "20 بطاقة حمراء"
+        }
+      },
+      {
+        "answerKey": "zlatan-ibrahimovic",
+        "name": {
+          "en": "Zlatan Ibrahimović",
+          "ar": "زلاتان إبراهيموفيتش"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Zlatan_Ibrahimovi%C4%87_nyc.jpg/330px-Zlatan_Ibrahimovi%C4%87_nyc.jpg",
+          "fallbackText": "ZI"
+        },
+        "stat": {
+          "en": "15 red cards",
+          "ar": "15 بطاقة حمراء"
+        }
+      },
+      {
+        "answerKey": "mario-balotelli",
+        "name": {
+          "en": "Mario Balotelli",
+          "ar": "ماريو بالوتيلي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/1908.png",
+          "fallbackText": "MB"
+        },
+        "stat": {
+          "en": "14 red cards",
+          "ar": "14 بطاقة حمراء"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "From the ultimate card magnet to the most disciplined among them",
+      "ar": "من الأكثر حصولاً على البطاقات الحمراء إلى الأقل"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these stars by the number of different clubs they represented in the UEFA Champions League",
+      "ar": "رتب هؤلاء النجوم حسب عدد الأندية المختلفة التي مثلوها في دوري أبطال أوروبا"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "zlatan-ibrahimovic",
+        "name": {
+          "en": "Zlatan Ibrahimović",
+          "ar": "زلاتان إبراهيموفيتش"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Zlatan_Ibrahimovi%C4%87_nyc.jpg/330px-Zlatan_Ibrahimovi%C4%87_nyc.jpg",
+          "fallbackText": "ZI"
+        },
+        "stat": {
+          "en": "7 different clubs",
+          "ar": "7 أندية مختلفة"
+        }
+      },
+      {
+        "answerKey": "nicolas-anelka",
+        "name": {
+          "en": "Nicolas Anelka",
+          "ar": "نيكولا أنيلكا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Nicolas_Anelka_2011.jpg/330px-Nicolas_Anelka_2011.jpg",
+          "fallbackText": "NA"
+        },
+        "stat": {
+          "en": "6 different clubs",
+          "ar": "6 أندية مختلفة"
+        }
+      },
+      {
+        "answerKey": "fernando-morientes",
+        "name": {
+          "en": "Fernando Morientes",
+          "ar": "فيرناندو موريانتس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Fernando_Morientes_2017.jpg/330px-Fernando_Morientes_2017.jpg",
+          "fallbackText": "FM"
+        },
+        "stat": {
+          "en": "5 different clubs",
+          "ar": "5 أندية مختلفة"
+        }
+      },
+      {
+        "answerKey": "cristiano-ronaldo",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR"
+        },
+        "stat": {
+          "en": "3 different clubs",
+          "ar": "3 أندية مختلفة"
+        }
+      },
+      {
+        "answerKey": "lionel-messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM"
+        },
+        "stat": {
+          "en": "2 different clubs",
+          "ar": "ناديان فقط"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "From the ultimate Champions League journeyman to loyalists",
+      "ar": "من الرحالة الأكثر تمثيلاً للأندية في دوري الأبطال إلى الأقل تنقلاً"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these African superstars by total goals scored in Premier League history",
+      "ar": "رتب هؤلاء النجوم الأفارقة حسب عدد الأهداف المسجلة في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "mohamed-salah",
+        "name": {
+          "en": "Mohamed Salah",
+          "ar": "محمد صلاح"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/306.png",
+          "fallbackText": "MS"
+        },
+        "stat": {
+          "en": "165+ goals (African PL Record)",
+          "ar": "165+ هدفاً (الهداف التاريخي للأفارقة)"
+        }
+      },
+      {
+        "answerKey": "sadio-mane",
+        "name": {
+          "en": "Sadio Mané",
+          "ar": "ساديو ماني"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sadio_Man%C3%A9_2018.jpg",
+          "fallbackText": "SM"
+        },
+        "stat": {
+          "en": "111 goals",
+          "ar": "111 هدفاً"
+        }
+      },
+      {
+        "answerKey": "didier-drogba",
+        "name": {
+          "en": "Didier Drogba",
+          "ar": "ديدييه دروغبا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Didier_Drogba_%282019%29_%28cropped2%29.jpg/330px-Didier_Drogba_%282019%29_%28cropped2%29.jpg",
+          "fallbackText": "DD"
+        },
+        "stat": {
+          "en": "104 goals",
+          "ar": "104 أهداف"
+        }
+      },
+      {
+        "answerKey": "emmanuel-adebayor",
+        "name": {
+          "en": "Emmanuel Adebayor",
+          "ar": "إيمانويل أديبايور"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/2283.png",
+          "fallbackText": "EA"
+        },
+        "stat": {
+          "en": "97 goals",
+          "ar": "97 هدفاً"
+        }
+      },
+      {
+        "answerKey": "yakubu",
+        "name": {
+          "en": "Yakubu",
+          "ar": "ياكوبو أييغبيني"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Yakubu_Aiyegbeni.jpg/330px-Yakubu_Aiyegbeni.jpg",
+          "fallbackText": "YAK"
+        },
+        "stat": {
+          "en": "95 goals",
+          "ar": "95 هدفاً"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "From Egypt, Senegal, Ivory Coast, Togo, and Nigeria",
+      "ar": "أساطير القارة السمراء الذين كتبوا التاريخ في البريميرليج"
     }
   }
 ]

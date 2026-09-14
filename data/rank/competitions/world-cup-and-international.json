@@ -14,6 +14,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/4.png",
           "fallbackText": "EUR20"
         },
         "stat": {
@@ -33,6 +34,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/de.png",
           "fallbackText": "EUR24"
         },
         "stat": {
@@ -52,6 +54,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "EUR16"
         },
         "stat": {
@@ -71,6 +74,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/nl.png",
           "fallbackText": "EUR00"
         },
         "stat": {
@@ -90,6 +94,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png",
           "fallbackText": "EUR04"
         },
         "stat": {
@@ -122,6 +127,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/9.png",
           "fallbackText": "CA16"
         },
         "stat": {
@@ -141,6 +147,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/br.png",
           "fallbackText": "CA07"
         },
         "stat": {
@@ -160,6 +167,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/br.png",
           "fallbackText": "CA04"
         },
         "stat": {
@@ -179,6 +187,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png",
           "fallbackText": "CA24"
         },
         "stat": {
@@ -198,6 +207,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/br.png",
           "fallbackText": "CA19"
         },
         "stat": {
@@ -230,6 +240,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/ci.png",
           "fallbackText": "AF23"
         },
         "stat": {
@@ -249,6 +260,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/eg.png",
           "fallbackText": "AF19"
         },
         "stat": {
@@ -268,6 +280,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/cm.png",
           "fallbackText": "AF21"
         },
         "stat": {
@@ -287,6 +300,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/gh.png",
           "fallbackText": "AF08"
         },
         "stat": {
@@ -306,6 +320,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/6.png",
           "fallbackText": "AF17"
         },
         "stat": {
@@ -338,6 +353,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "2026"
         },
         "stat": {
@@ -357,6 +373,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "2022"
         },
         "stat": {
@@ -376,6 +393,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/br.png",
           "fallbackText": "2014"
         },
         "stat": {
@@ -395,6 +413,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "2018"
         },
         "stat": {
@@ -414,6 +433,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/jp.png",
           "fallbackText": "2002"
         },
         "stat": {
@@ -446,6 +466,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "1982"
         },
         "stat": {
@@ -465,6 +486,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "1994"
         },
         "stat": {
@@ -484,6 +506,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "1954"
         },
         "stat": {
@@ -503,6 +526,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "1986"
         },
         "stat": {
@@ -522,6 +546,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "1990"
         },
         "stat": {
@@ -554,6 +579,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "1954"
         },
         "stat": {
@@ -569,6 +595,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "1958"
         },
         "stat": {
@@ -584,6 +611,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "1970"
         },
         "stat": {
@@ -599,6 +627,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "2022"
         },
         "stat": {
@@ -614,6 +643,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/de.png",
           "fallbackText": "2006"
         },
         "stat": {
@@ -642,7 +672,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Just_Fontaine_1958.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Just_Fontaine_en_1958.jpg/330px-Just_Fontaine_en_1958.jpg",
           "fallbackText": "FON"
         },
         "stat": {
@@ -662,7 +692,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/S%C3%A1ndor_Kocsis_1954.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kocsis_S%C3%A1ndor_Fortepan_261526.jpg/330px-Kocsis_S%C3%A1ndor_Fortepan_261526.jpg",
           "fallbackText": "KOC"
         },
         "stat": {
@@ -682,7 +712,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
           "fallbackText": "MUL"
         },
         "stat": {
@@ -702,7 +732,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Eus%C3%A9bio_1966.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Eusebio_en_1973.jpg/330px-Eusebio_en_1973.jpg",
           "fallbackText": "EUS"
         },
         "stat": {
@@ -722,7 +752,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
           "fallbackText": "R9"
         },
         "stat": {
@@ -755,7 +785,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://flagcdn.com/w160/hu.png",
+          "primaryUrl": "https://flagcdn.com/w80/hu.png",
           "fallbackText": "HUN"
         },
         "stat": {
@@ -775,7 +805,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://flagcdn.com/w160/de.png",
+          "primaryUrl": "https://flagcdn.com/w80/de.png",
           "fallbackText": "GER"
         },
         "stat": {
@@ -795,7 +825,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://flagcdn.com/w160/fr.png",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -815,7 +845,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://flagcdn.com/w160/br.png",
+          "primaryUrl": "https://flagcdn.com/w80/br.png",
           "fallbackText": "BRA"
         },
         "stat": {
@@ -835,7 +865,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://flagcdn.com/w160/de.png",
+          "primaryUrl": "https://flagcdn.com/w80/de.png",
           "fallbackText": "GER"
         },
         "stat": {
@@ -868,7 +898,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Just_Fontaine_1958.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Just_Fontaine_en_1958.jpg/330px-Just_Fontaine_en_1958.jpg",
           "fallbackText": "JF9"
         },
         "stat": {
@@ -888,7 +918,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/S%C3%A1ndor_Kocsis_1954.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kocsis_S%C3%A1ndor_Fortepan_261526.jpg/330px-Kocsis_S%C3%A1ndor_Fortepan_261526.jpg",
           "fallbackText": "SK8"
         },
         "stat": {
@@ -908,7 +938,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
           "fallbackText": "GM9"
         },
         "stat": {
@@ -928,7 +958,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Eus%C3%A9bio_1966.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Eusebio_en_1973.jpg/330px-Eusebio_en_1973.jpg",
           "fallbackText": "EUS10"
         },
         "stat": {
@@ -948,7 +978,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ronaldo_Naz%C3%A1rio_2018.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
           "fallbackText": "R9"
         },
         "stat": {
@@ -1021,7 +1051,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gerd_M%C3%BCller_c1973_%28cropped%29.jpg/330px-Gerd_M%C3%BCller_c1973_%28cropped%29.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
           "fallbackText": "GM9"
         },
         "stat": {
@@ -1332,7 +1362,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -2014,6 +2044,7 @@
         },
         "media": {
           "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/cz.png",
           "fallbackText": "CZE"
         },
         "stat": {
@@ -2199,7 +2230,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -2861,7 +2892,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Toni_Kroos_Real_Madrid_2021.jpg/330px-Toni_Kroos_Real_Madrid_2021.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/738.png",
           "fallbackText": "TK8"
         },
         "stat": {
@@ -2914,6 +2945,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "AUT-SUI"
         },
         "stat": {
@@ -2933,6 +2965,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "BRA-POL"
         },
         "stat": {
@@ -2952,6 +2985,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "FRA-PAR"
         },
         "stat": {
@@ -2971,6 +3005,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "YUG-ZAI"
         },
         "stat": {
@@ -2990,6 +3025,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/br.png",
           "fallbackText": "GER-BRA"
         },
         "stat": {
@@ -3022,6 +3058,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png",
           "fallbackText": "NED-ARG"
         },
         "stat": {
@@ -3041,6 +3078,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/pt.png",
           "fallbackText": "POR-NED"
         },
         "stat": {
@@ -3060,6 +3098,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/de.png",
           "fallbackText": "CMR-GER"
         },
         "stat": {
@@ -3079,6 +3118,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png",
           "fallbackText": "SEN-URU"
         },
         "stat": {
@@ -3098,6 +3138,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "ARG-ENG"
         },
         "stat": {
@@ -3130,7 +3171,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hakan.jpg/330px-Hakan.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/kr.png",
           "fallbackText": "SUK"
         },
         "stat": {
@@ -3150,6 +3191,7 @@
         },
         "media": {
           "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "MAS"
         },
         "stat": {
@@ -3169,6 +3211,7 @@
         },
         "media": {
           "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "LEH"
         },
         "stat": {
@@ -3208,7 +3251,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg/330px-Clint_Dempsey_%2826347615912%29_%28cropped%29.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/gh.png",
           "fallbackText": "DEM"
         },
         "stat": {
@@ -3434,6 +3477,7 @@
         },
         "media": {
           "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/gb-sct.png",
           "fallbackText": "SCO"
         },
         "stat": {
@@ -3526,7 +3570,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -3647,6 +3691,7 @@
         },
         "media": {
           "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/jo.png",
           "fallbackText": "JOR"
         },
         "stat": {
@@ -3675,6 +3720,7 @@
         },
         "media": {
           "type": "custom",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "SCH"
         },
         "stat": {
@@ -3694,6 +3740,7 @@
         },
         "media": {
           "type": "custom",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "CAP"
         },
         "stat": {
@@ -3713,6 +3760,7 @@
         },
         "media": {
           "type": "custom",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "LFS"
         },
         "stat": {
@@ -3732,6 +3780,7 @@
         },
         "media": {
           "type": "custom",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "ZAG"
         },
         "stat": {
@@ -3751,6 +3800,7 @@
         },
         "media": {
           "type": "custom",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "DD"
         },
         "stat": {
@@ -4017,7 +4067,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -4110,7 +4160,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -4203,7 +4253,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -4853,7 +4903,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK9"
         },
         "stat": {
@@ -4986,7 +5036,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Toni_Kroos_Real_Madrid_2021.jpg/330px-Toni_Kroos_Real_Madrid_2021.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/738.png",
           "fallbackText": "TK8"
         },
         "stat": {
@@ -5208,6 +5258,624 @@
     "subtitle": {
       "en": "Total World Cup tournament appearances through 2026",
       "ar": "إجمالي المباريات في نهائيات كأس العالم حتى بطولة 2026"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 South American nations by total Copa América titles won",
+      "ar": "رتّب هذه المنتخبات اللاتينية الخمسة حسب عدد مرات التتويج بلقب كوبا أمريكا"
+    },
+    "category": "competitions",
+    "answers": [
+      {
+        "answerKey": "ca_argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png",
+          "fallbackText": "ARG"
+        },
+        "stat": {
+          "en": "16 Titles",
+          "ar": "16 لقباً"
+        }
+      },
+      {
+        "answerKey": "ca_uruguay",
+        "name": {
+          "en": "Uruguay",
+          "ar": "أوروغواي"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png",
+          "fallbackText": "URU"
+        },
+        "stat": {
+          "en": "15 Titles",
+          "ar": "15 لقباً"
+        }
+      },
+      {
+        "answerKey": "ca_brazil",
+        "name": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/br.png",
+          "fallbackText": "BRA"
+        },
+        "stat": {
+          "en": "9 Titles",
+          "ar": "9 ألقاب"
+        }
+      },
+      {
+        "answerKey": "ca_chile",
+        "name": {
+          "en": "Chile",
+          "ar": "تشيلي"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/cl.png",
+          "fallbackText": "CHI"
+        },
+        "stat": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        }
+      },
+      {
+        "answerKey": "ca_colombia",
+        "name": {
+          "en": "Colombia",
+          "ar": "كولومبيا"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/co.png",
+          "fallbackText": "COL"
+        },
+        "stat": {
+          "en": "1 Title",
+          "ar": "لقب واحد"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "CONMEBOL Copa América all-time history",
+      "ar": "تاريخ بطولة كوبا أمريكا لأمريكا الجنوبية عبر التاريخ"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 African nations by total AFCON titles won",
+      "ar": "رتّب هذه المنتخبات الأفريقية الخمسة حسب عدد مرات الفوز بكأس الأمم الأفريقية"
+    },
+    "category": "competitions",
+    "answers": [
+      {
+        "answerKey": "afcon_egypt",
+        "name": {
+          "en": "Egypt",
+          "ar": "مصر"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/eg.png",
+          "fallbackText": "EGY"
+        },
+        "stat": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        }
+      },
+      {
+        "answerKey": "afcon_cameroon",
+        "name": {
+          "en": "Cameroon",
+          "ar": "الكاميرون"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/cm.png",
+          "fallbackText": "CMR"
+        },
+        "stat": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        }
+      },
+      {
+        "answerKey": "afcon_ghana",
+        "name": {
+          "en": "Ghana",
+          "ar": "غانا"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/gh.png",
+          "fallbackText": "GHA"
+        },
+        "stat": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        }
+      },
+      {
+        "answerKey": "afcon_nigeria",
+        "name": {
+          "en": "Nigeria",
+          "ar": "نيجيريا"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/ng.png",
+          "fallbackText": "NGA"
+        },
+        "stat": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        }
+      },
+      {
+        "answerKey": "afcon_algeria",
+        "name": {
+          "en": "Algeria",
+          "ar": "الجزائر"
+        },
+        "media": {
+          "type": "nation",
+          "primaryUrl": "https://flagcdn.com/w80/dz.png",
+          "fallbackText": "ALG"
+        },
+        "stat": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "CAF Africa Cup of Nations history",
+      "ar": "تاريخ بطولة كأس الأمم الأفريقية"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these Premier League hat-tricks from FASTEST to slowest time taken",
+      "ar": "رتب أسرع ثلاثيات (هاتريك) في تاريخ الدوري الإنجليزي الممتاز حسب سرعة التسجيل"
+    },
+    "category": "competitions",
+    "answers": [
+      {
+        "answerKey": "sadio-mane",
+        "name": {
+          "en": "Sadio Mané",
+          "ar": "ساديو ماني"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Sadio_Man%C3%A9_2018.jpg",
+          "fallbackText": "SM"
+        },
+        "stat": {
+          "en": "2 min 56 sec (PL Record)",
+          "ar": "دقيقتان و56 ثانية (رقم قياسي)"
+        },
+        "subText": {
+          "en": "Southampton vs Aston Villa (2015)",
+          "ar": "ساوثهامبتون ضد أستون فيلا (2015)"
+        }
+      },
+      {
+        "answerKey": "robbie-fowler",
+        "name": {
+          "en": "Robbie Fowler",
+          "ar": "روبي فاولر"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Robbie_Fowler_2012.jpg/330px-Robbie_Fowler_2012.jpg",
+          "fallbackText": "RF"
+        },
+        "stat": {
+          "en": "4 min 33 sec",
+          "ar": "4 دقائق و33 ثانية"
+        },
+        "subText": {
+          "en": "Liverpool vs Arsenal (1994)",
+          "ar": "ليفربول ضد أرسنال (1994)"
+        }
+      },
+      {
+        "answerKey": "jermain-defoe",
+        "name": {
+          "en": "Jermain Defoe",
+          "ar": "جيرمين ديفو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/18920.png",
+          "fallbackText": "JD"
+        },
+        "stat": {
+          "en": "7 min 00 sec",
+          "ar": "7 دقائق"
+        },
+        "subText": {
+          "en": "Tottenham vs Wigan (2009)",
+          "ar": "توتنهام ضد ويغان (2009)"
+        }
+      },
+      {
+        "answerKey": "gabriel-agbonlahor",
+        "name": {
+          "en": "Gabriel Agbonlahor",
+          "ar": "جابرييل أجبونلاهور"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/19139.png",
+          "fallbackText": "GA"
+        },
+        "stat": {
+          "en": "7 min 10 sec",
+          "ar": "7 دقائق و10 ثوانٍ"
+        },
+        "subText": {
+          "en": "Aston Villa vs Man City (2008)",
+          "ar": "أستون فيلا ضد مان سيتي (2008)"
+        }
+      },
+      {
+        "answerKey": "ian-wright",
+        "name": {
+          "en": "Ian Wright",
+          "ar": "إيان رايت"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ian_Wright_2018.jpg/330px-Ian_Wright_2018.jpg",
+          "fallbackText": "IW"
+        },
+        "stat": {
+          "en": "9 min 00 sec",
+          "ar": "9 دقائق"
+        },
+        "subText": {
+          "en": "Arsenal vs Ipswich (1995)",
+          "ar": "أرسنال ضد إبسويتش (1995)"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Time elapsed between the first and third goal scored",
+      "ar": "الوقت المستغرق بين الهدف الأول والثالث"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these teenage prodigies by how YOUNG they were when scoring their first FIFA World Cup goal",
+      "ar": "رتب هؤلاء النجوم حسب أصغرهم سناً عند تسجيل أول هدف في تاريخ كأس العالم"
+    },
+    "category": "competitions",
+    "answers": [
+      {
+        "answerKey": "pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg",
+          "fallbackText": "PEL"
+        },
+        "stat": {
+          "en": "17y 239d (Youngest in History)",
+          "ar": "17 عاماً و239 يوماً (الأصغر تاريخياً)"
+        },
+        "subText": {
+          "en": "Brazil vs Wales (1958)",
+          "ar": "البرازيل ضد ويلز (1958)"
+        }
+      },
+      {
+        "answerKey": "manuel-rosas",
+        "name": {
+          "en": "Manuel Rosas",
+          "ar": "مانويل روساس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Manuel_Rosas.jpg/330px-Manuel_Rosas.jpg",
+          "fallbackText": "MR"
+        },
+        "stat": {
+          "en": "18y 93d",
+          "ar": "18 عاماً و93 يوماً"
+        },
+        "subText": {
+          "en": "Mexico vs Argentina (1930)",
+          "ar": "المكسيك ضد الأرجنتين (1930)"
+        }
+      },
+      {
+        "answerKey": "michael-owen",
+        "name": {
+          "en": "Michael Owen",
+          "ar": "مايكل أوين"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michael_Owen_2013.jpg/330px-Michael_Owen_2013.jpg",
+          "fallbackText": "MO"
+        },
+        "stat": {
+          "en": "18y 190d",
+          "ar": "18 عاماً و190 يوماً"
+        },
+        "subText": {
+          "en": "England vs Romania (1998)",
+          "ar": "إنجلترا ضد رومانيا (1998)"
+        }
+      },
+      {
+        "answerKey": "lionel-messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM"
+        },
+        "stat": {
+          "en": "18y 357d",
+          "ar": "18 عاماً و357 يوماً"
+        },
+        "subText": {
+          "en": "Argentina vs Serbia (2006)",
+          "ar": "الأرجنتين ضد صربيا (2006)"
+        }
+      },
+      {
+        "answerKey": "kylian-mbappe",
+        "name": {
+          "en": "Kylian Mbappé",
+          "ar": "كيليان مبابي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/278.png",
+          "fallbackText": "KM"
+        },
+        "stat": {
+          "en": "19y 183d",
+          "ar": "19 عاماً و183 يوماً"
+        },
+        "subText": {
+          "en": "France vs Peru (2018)",
+          "ar": "فرنسا ضد بيرو (2018)"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "From youngest age to oldest at the time of their debut World Cup goal",
+      "ar": "من الأصغر عمراً إلى الأكبر عند تسجيل الهدف المونديالي الأول"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these lethal strikers by the number of seasons they finished as top goalscorer in the UEFA Champions League",
+      "ar": "رتب هؤلاء الهدافين حسب عدد المواسم التي توجوا فيها هدافاً لدوري أبطال أوروبا"
+    },
+    "category": "competitions",
+    "answers": [
+      {
+        "answerKey": "cristiano-ronaldo",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR"
+        },
+        "stat": {
+          "en": "7 seasons (UCL Record)",
+          "ar": "7 مواسم (رقم قياسي تاريخي)"
+        }
+      },
+      {
+        "answerKey": "lionel-messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM"
+        },
+        "stat": {
+          "en": "6 seasons",
+          "ar": "6 مواسم"
+        }
+      },
+      {
+        "answerKey": "gerd-muller",
+        "name": {
+          "en": "Gerd Müller",
+          "ar": "غيرد مولر"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gerd_M%C3%BCller_1974.jpg/330px-Gerd_M%C3%BCller_1974.jpg",
+          "fallbackText": "GM"
+        },
+        "stat": {
+          "en": "4 seasons",
+          "ar": "4 مواسم"
+        }
+      },
+      {
+        "answerKey": "ruud-van-nistelrooy",
+        "name": {
+          "en": "Ruud van Nistelrooy",
+          "ar": "رود فان نيستلروي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ruud_van_Nistelrooy_2012.jpg/330px-Ruud_van_Nistelrooy_2012.jpg",
+          "fallbackText": "RV"
+        },
+        "stat": {
+          "en": "3 seasons",
+          "ar": "3 مواسم"
+        }
+      },
+      {
+        "answerKey": "erling-haaland",
+        "name": {
+          "en": "Erling Haaland",
+          "ar": "إيرلينغ هالاند"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/1100.png",
+          "fallbackText": "EH"
+        },
+        "stat": {
+          "en": "2 seasons",
+          "ar": "موسمان"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Seasons finishing as the outright or joint UEFA Champions League / European Cup top scorer",
+      "ar": "عدد المواسم التي تصدروا فيها قائمة هدافي دوري الأبطال"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these national teams by their all-time longest consecutive UNBEATEN match streak",
+      "ar": "رتب هذه المنتخبات الوطنية حسب أطول سلسلة مباريات متتالية دون هزيمة في تاريخها"
+    },
+    "category": "competitions",
+    "answers": [
+      {
+        "answerKey": "italy",
+        "name": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "media": {
+          "type": "flag",
+          "primaryUrl": "https://flagcdn.com/w80/it.png",
+          "fallbackText": "ITA"
+        },
+        "stat": {
+          "en": "37 matches (World Record)",
+          "ar": "37 مباراة (رقم قياسي عالمي)"
+        },
+        "subText": {
+          "en": "2018–2021 (Roberto Mancini)",
+          "ar": "2018–2021 (روبرتو مانشيني)"
+        }
+      },
+      {
+        "answerKey": "argentina",
+        "name": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "flag",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png",
+          "fallbackText": "ARG"
+        },
+        "stat": {
+          "en": "36 matches",
+          "ar": "36 مباراة"
+        },
+        "subText": {
+          "en": "2019–2022 (Lionel Scaloni)",
+          "ar": "2019–2022 (ليونيل سكالوني)"
+        }
+      },
+      {
+        "answerKey": "spain",
+        "name": {
+          "en": "Spain",
+          "ar": "إسبانيا"
+        },
+        "media": {
+          "type": "flag",
+          "primaryUrl": "https://flagcdn.com/w80/es.png",
+          "fallbackText": "SPA"
+        },
+        "stat": {
+          "en": "35 matches",
+          "ar": "35 مباراة"
+        },
+        "subText": {
+          "en": "2007–2009 (Golden Generation)",
+          "ar": "2007–2009 (الجيل الذهبي)"
+        }
+      },
+      {
+        "answerKey": "france",
+        "name": {
+          "en": "France",
+          "ar": "فرنسا"
+        },
+        "media": {
+          "type": "flag",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
+          "fallbackText": "FRA"
+        },
+        "stat": {
+          "en": "30 matches",
+          "ar": "30 مباراة"
+        },
+        "subText": {
+          "en": "1994–1996 (Aimé Jacquet)",
+          "ar": "1994–1996 (إيمي جاكيه)"
+        }
+      },
+      {
+        "answerKey": "germany",
+        "name": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "flag",
+          "primaryUrl": "https://flagcdn.com/w80/de.png",
+          "fallbackText": "GER"
+        },
+        "stat": {
+          "en": "23 matches",
+          "ar": "23 مباراة"
+        },
+        "subText": {
+          "en": "1978–1980 (Jupp Derwall)",
+          "ar": "1978–1980 (يوب درفال)"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Official international matches undefeated in all competitions",
+      "ar": "أطول سلاسل اللاهزيمة الرسمية في تاريخ المنتخبات"
     }
   }
 ]

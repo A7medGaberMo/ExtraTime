@@ -995,5 +995,211 @@
       "en": "Ultra-tight 1-assist margins across Champions League royalty",
       "ar": "فروقات دقيقة جدًا بتمريرة واحدة بين نجوم دوري الأبطال حتى 2025–26"
     }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 playmakers by all-time Premier League assists provided",
+      "ar": "رتّب هؤلاء صناع اللعب الخمسة حسب إجمالي التمريرات الحاسمة في تاريخ البريميرليج"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "ast_giggs",
+        "name": {
+          "en": "Ryan Giggs",
+          "ar": "رايان غيغز"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "RG"
+        },
+        "stat": {
+          "en": "162 Assists",
+          "ar": "162 تمريرة حاسمة"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        }
+      },
+      {
+        "answerKey": "ast_kdb",
+        "name": {
+          "en": "Kevin De Bruyne",
+          "ar": "كيفين دي بروين"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/629.png",
+          "fallbackText": "KDB"
+        },
+        "stat": {
+          "en": "114 Assists",
+          "ar": "114 تمريرة حاسمة"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        }
+      },
+      {
+        "answerKey": "ast_fabregas",
+        "name": {
+          "en": "Cesc Fàbregas",
+          "ar": "سيسك فابريغاس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/2023_-_Cesc_Fabregas_%28cropped%29.jpg/330px-2023_-_Cesc_Fabregas_%28cropped%29.jpg",
+          "fallbackText": "CF"
+        },
+        "stat": {
+          "en": "111 Assists",
+          "ar": "111 تمريرة حاسمة"
+        },
+        "subText": {
+          "en": "Arsenal / Chelsea",
+          "ar": "أرسنال / تشيلسي"
+        }
+      },
+      {
+        "answerKey": "ast_rooney",
+        "name": {
+          "en": "Wayne Rooney",
+          "ar": "واين روني"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wayne_Rooney_%2850121495731%29_%28cropped%29.jpg/330px-Wayne_Rooney_%2850121495731%29_%28cropped%29.jpg",
+          "fallbackText": "WR"
+        },
+        "stat": {
+          "en": "103 Assists",
+          "ar": "103 تمريرات حاسمة"
+        },
+        "subText": {
+          "en": "Everton / Man United",
+          "ar": "إيفرتون / مانشستر يونايتد"
+        }
+      },
+      {
+        "answerKey": "ast_lampard",
+        "name": {
+          "en": "Frank Lampard",
+          "ar": "فرانك لامبارد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Frank_Lampard_2019.jpg/330px-Frank_Lampard_2019.jpg",
+          "fallbackText": "FL"
+        },
+        "stat": {
+          "en": "102 Assists",
+          "ar": "102 تمريرة حاسمة"
+        },
+        "subText": {
+          "en": "Chelsea / Man City",
+          "ar": "تشيلسي / مانشستر سيتي"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Premier League official all-time playmaking records",
+      "ar": "أرقام التمريرات الحاسمة الرسمية في تاريخ الدوري الإنجليزي الممتاز"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these set-piece wizards by career DIRECT FREE-KICK goals scored",
+      "ar": "رتب هؤلاء السحرة حسب عدد الأهداف المسجلة من ركلات حرة مباشرة في مسيرتهم"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "juninho-pernambucano",
+        "name": {
+          "en": "Juninho Pernambucano",
+          "ar": "جونينيو برنامبوكانو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Juninho_Pernambucano_2012.jpg/330px-Juninho_Pernambucano_2012.jpg",
+          "fallbackText": "JP"
+        },
+        "stat": {
+          "en": "77 free-kick goals (Record)",
+          "ar": "77 هدفاً من ضربة حرة (رقم قياسي)"
+        }
+      },
+      {
+        "answerKey": "pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg",
+          "fallbackText": "PEL"
+        },
+        "stat": {
+          "en": "70 free-kick goals",
+          "ar": "70 هدفاً من ضربة حرة"
+        }
+      },
+      {
+        "answerKey": "ronaldinho",
+        "name": {
+          "en": "Ronaldinho",
+          "ar": "رونالدينيو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ronaldinho_Ga%C3%BAcho_em_2019.jpg/330px-Ronaldinho_Ga%C3%BAcho_em_2019.jpg",
+          "fallbackText": "RON"
+        },
+        "stat": {
+          "en": "66 free-kick goals",
+          "ar": "66 هدفاً من ضربة حرة"
+        }
+      },
+      {
+        "answerKey": "cristiano-ronaldo",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR"
+        },
+        "stat": {
+          "en": "64 free-kick goals",
+          "ar": "64 هدفاً من ضربة حرة"
+        }
+      },
+      {
+        "answerKey": "roberto-carlos",
+        "name": {
+          "en": "Roberto Carlos",
+          "ar": "روبرتو كارلوس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roberto_carlos_2011.jpg/330px-Roberto_carlos_2011.jpg",
+          "fallbackText": "RC"
+        },
+        "stat": {
+          "en": "49 free-kick goals",
+          "ar": "49 هدفاً من ضربة حرة"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Official career direct free-kick goals for club and country",
+      "ar": "الأهداف الرسمية المسجلة مباشرة من ضربات حرة للأندية والمنتخبات"
+    }
   }
 ]

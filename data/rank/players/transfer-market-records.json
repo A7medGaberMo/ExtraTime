@@ -127,7 +127,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/278.png",
           "fallbackText": "KM"
         },
         "stat": {
@@ -147,7 +147,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "EH9"
         },
         "stat": {
@@ -167,7 +167,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/133609.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "PED8"
         },
         "stat": {
@@ -187,7 +187,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Sergio_Ag%C3%BCero_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "KUN"
         },
         "stat": {
@@ -207,7 +207,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Wayne_Rooney_2020.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
           "fallbackText": "WR10"
         },
         "stat": {
@@ -240,7 +240,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/18959.png",
+          "primaryUrl": "https://media.api-sports.io/football/players/2280.png",
           "fallbackText": "KEP"
         },
         "stat": {
@@ -466,7 +466,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "CR7"
         },
         "stat": {
@@ -486,7 +486,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Gonzalo_Higua%C3%ADn_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png",
           "fallbackText": "HIG"
         },
         "stat": {
@@ -506,7 +506,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/538.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png",
           "fallbackText": "MDL"
         },
         "stat": {
@@ -526,7 +526,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/505.png",
           "fallbackText": "LUK"
         },
         "stat": {
@@ -546,7 +546,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/19088.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/79.png",
           "fallbackText": "OSI"
         },
         "stat": {
@@ -579,7 +579,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "HK9"
         },
         "stat": {
@@ -599,7 +599,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/644880.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "LUC"
         },
         "stat": {
@@ -619,7 +619,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/538.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "MDL"
         },
         "stat": {
@@ -639,7 +639,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/2897.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "KMJ"
         },
         "stat": {
@@ -659,7 +659,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/629.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "SANE"
         },
         "stat": {
@@ -805,7 +805,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "NJR"
         },
         "stat": {
@@ -825,7 +825,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/91.png",
           "fallbackText": "KM7"
         },
         "stat": {
@@ -845,7 +845,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Philippe_Coutinho_2018.jpg/330px-Philippe_Coutinho_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "PC10"
         },
         "stat": {
@@ -865,7 +865,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/1243.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png",
           "fallbackText": "JF7"
         },
         "stat": {
@@ -885,7 +885,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/6008.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png",
           "fallbackText": "EF8"
         },
         "stat": {
@@ -918,7 +918,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/6008.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png",
           "fallbackText": "EF8"
         },
         "stat": {
@@ -938,7 +938,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/19187.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/66.png",
           "fallbackText": "JG10"
         },
         "stat": {
@@ -958,7 +958,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/292.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "DR41"
         },
         "stat": {
@@ -978,7 +978,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "RL9"
         },
         "stat": {
@@ -998,7 +998,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/882.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png",
           "fallbackText": "PP6"
         },
         "stat": {
@@ -1257,7 +1257,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/18959.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/531.png",
           "fallbackText": "KA1"
         },
         "stat": {
@@ -1277,7 +1277,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/280.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/497.png",
           "fallbackText": "AB1"
         },
         "stat": {
@@ -1297,7 +1297,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png",
           "fallbackText": "GIGI"
         },
         "stat": {
@@ -1317,7 +1317,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/532.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/505.png",
           "fallbackText": "AO24"
         },
         "stat": {
@@ -1337,7 +1337,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/617.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png",
           "fallbackText": "EM31"
         },
         "stat": {
@@ -1370,7 +1370,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/129033.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/173.png",
           "fallbackText": "JG24"
         },
         "stat": {
@@ -1390,7 +1390,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/2934.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/46.png",
           "fallbackText": "HM5"
         },
         "stat": {
@@ -1410,7 +1410,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/538.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png",
           "fallbackText": "MDL4"
         },
         "stat": {
@@ -1430,7 +1430,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Virgil_van_Dijk_2021.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "VVD4"
         },
         "stat": {
@@ -1450,7 +1450,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/1458.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "WF33"
         },
         "stat": {
@@ -1483,7 +1483,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/19187.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/66.png",
           "fallbackText": "JG10"
         },
         "stat": {
@@ -1503,7 +1503,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/292.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "DR41"
         },
         "stat": {
@@ -1523,7 +1523,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jude_Bellingham_2023.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "JB5"
         },
         "stat": {
@@ -1543,7 +1543,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Gareth_Bale_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "GB11"
         },
         "stat": {
@@ -1563,7 +1563,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "HK9"
         },
         "stat": {
@@ -1596,7 +1596,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "NJR"
         },
         "stat": {
@@ -1616,7 +1616,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Philippe_Coutinho_2018.jpg/330px-Philippe_Coutinho_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "PC10"
         },
         "stat": {
@@ -1636,7 +1636,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/6008.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png",
           "fallbackText": "EF8"
         },
         "stat": {
@@ -1656,7 +1656,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/162859.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/51.png",
           "fallbackText": "MC25"
         },
         "stat": {
@@ -1676,7 +1676,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Gonzalo_Higua%C3%ADn_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png",
           "fallbackText": "GH9"
         },
         "stat": {
@@ -1709,7 +1709,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "NJR"
         },
         "stat": {
@@ -1729,7 +1729,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/91.png",
           "fallbackText": "KM7"
         },
         "stat": {
@@ -1749,7 +1749,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Philippe_Coutinho_2018.jpg/330px-Philippe_Coutinho_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "PC10"
         },
         "stat": {
@@ -1769,7 +1769,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/1243.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png",
           "fallbackText": "JF7"
         },
         "stat": {
@@ -1789,7 +1789,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/292.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "DR41"
         },
         "stat": {
@@ -1822,7 +1822,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/162859.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/51.png",
           "fallbackText": "MC25"
         },
         "stat": {
@@ -1842,7 +1842,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/6008.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/211.png",
           "fallbackText": "EF8"
         },
         "stat": {
@@ -1862,7 +1862,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/292.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "DR41"
         },
         "stat": {
@@ -1882,7 +1882,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/19187.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/66.png",
           "fallbackText": "JG10"
         },
         "stat": {
@@ -1902,7 +1902,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "RL9"
         },
         "stat": {
@@ -2031,6 +2031,232 @@
     "subtitle": {
       "en": "Guaranteed initial fee in Euros, excluding variable add-ons",
       "ar": "قيمة الصفقة الثابتة المضمونة باليورو (دون احتساب الحوافز المتغيرة)"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these wonderkids by their transfer fee when signed as a teenager (Under 20)",
+      "ar": "رتب هؤلاء المواهب حسب قيمة صفقة انتقالهم عندما كانوا في سن المراهقة (تحت 20 عاماً)"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "kylian-mbappe",
+        "name": {
+          "en": "Kylian Mbappé",
+          "ar": "كيليان مبابي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/278.png",
+          "fallbackText": "KM"
+        },
+        "stat": {
+          "en": "€180 Million (Teen Record)",
+          "ar": "180 مليون يورو (رقم قياسي للمراهقين)"
+        },
+        "subText": {
+          "en": "Monaco to PSG (Age 19)",
+          "ar": "من موناكو إلى باريس سان جيرمان (عمر 19)"
+        }
+      },
+      {
+        "answerKey": "joao-felix",
+        "name": {
+          "en": "João Félix",
+          "ar": "جواو فيليكس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/153.png",
+          "fallbackText": "JF"
+        },
+        "stat": {
+          "en": "€127.2 Million",
+          "ar": "127.2 مليون يورو"
+        },
+        "subText": {
+          "en": "Benfica to Atlético Madrid (Age 19)",
+          "ar": "من بنفيكا إلى أتلتيكو مدريد (عمر 19)"
+        }
+      },
+      {
+        "answerKey": "matthijs-de-ligt",
+        "name": {
+          "en": "Matthijs de Ligt",
+          "ar": "ماتيس دي ليخت"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/538.png",
+          "fallbackText": "MD"
+        },
+        "stat": {
+          "en": "€85.5 Million",
+          "ar": "85.5 مليون يورو"
+        },
+        "subText": {
+          "en": "Ajax to Juventus (Age 19)",
+          "ar": "من أياكس إلى يوفنتوس (عمر 19)"
+        }
+      },
+      {
+        "answerKey": "anthony-martial",
+        "name": {
+          "en": "Anthony Martial",
+          "ar": "أنتوني مارسيال"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/901.png",
+          "fallbackText": "AM"
+        },
+        "stat": {
+          "en": "€60 Million",
+          "ar": "60 مليون يورو"
+        },
+        "subText": {
+          "en": "Monaco to Manchester United (Age 19)",
+          "ar": "من موناكو إلى مانشستر يونايتد (عمر 19)"
+        }
+      },
+      {
+        "answerKey": "vinicius-junior",
+        "name": {
+          "en": "Vinícius Júnior",
+          "ar": "فينيسيوس جونيور"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/50134.png",
+          "fallbackText": "VJ"
+        },
+        "stat": {
+          "en": "€45 Million",
+          "ar": "45 مليون يورو"
+        },
+        "subText": {
+          "en": "Flamengo to Real Madrid (Age 18)",
+          "ar": "من فلامنغو إلى ريال مدريد (عمر 18)"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Highest initial transfer fees paid for teenagers in football history",
+      "ar": "أعلى رسوم انتقال مدفوعة للاعبين مراهقين في تاريخ كرة القدم"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these shot-stoppers by their record transfer fees paid",
+      "ar": "رتب حراس المرمى هؤلاء حسب قيمة صفقات انتقالهم القياسية"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "kepa-arrizabalaga",
+        "name": {
+          "en": "Kepa Arrizabalaga",
+          "ar": "كيبا أريزابالاغا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/2280.png",
+          "fallbackText": "KA"
+        },
+        "stat": {
+          "en": "€80 Million (GK Record)",
+          "ar": "80 مليون يورو (رقم قياسي للحراس)"
+        },
+        "subText": {
+          "en": "Athletic Bilbao to Chelsea (2018)",
+          "ar": "من أتلتيك بيلباو إلى تشيلسي (2018)"
+        }
+      },
+      {
+        "answerKey": "alisson-becker",
+        "name": {
+          "en": "Alisson Becker",
+          "ar": "أليسون بيكر"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/280.png",
+          "fallbackText": "AB"
+        },
+        "stat": {
+          "en": "€62.5 Million",
+          "ar": "62.5 مليون يورو"
+        },
+        "subText": {
+          "en": "Roma to Liverpool (2018)",
+          "ar": "من روما إلى ليفربول (2018)"
+        }
+      },
+      {
+        "answerKey": "gianluigi-buffon",
+        "name": {
+          "en": "Gianluigi Buffon",
+          "ar": "جانلويجي بوفون"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gianluigi_Buffon_2017.jpg/330px-Gianluigi_Buffon_2017.jpg",
+          "fallbackText": "GB"
+        },
+        "stat": {
+          "en": "€52.8 Million",
+          "ar": "52.8 مليون يورو"
+        },
+        "subText": {
+          "en": "Parma to Juventus (2001)",
+          "ar": "من بارما إلى يوفنتوس (2001)"
+        }
+      },
+      {
+        "answerKey": "ederson",
+        "name": {
+          "en": "Ederson",
+          "ar": "إيدرسون"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/617.png",
+          "fallbackText": "EDE"
+        },
+        "stat": {
+          "en": "€40 Million",
+          "ar": "40 مليون يورو"
+        },
+        "subText": {
+          "en": "Benfica to Manchester City (2017)",
+          "ar": "من بنفيكا إلى مانشستر سيتي (2017)"
+        }
+      },
+      {
+        "answerKey": "thibaut-courtois",
+        "name": {
+          "en": "Thibaut Courtois",
+          "ar": "تيبو كورتوا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/733.png",
+          "fallbackText": "TC"
+        },
+        "stat": {
+          "en": "€35 Million",
+          "ar": "35 مليون يورو"
+        },
+        "subText": {
+          "en": "Chelsea to Real Madrid (2018)",
+          "ar": "من تشيلسي إلى ريال مدريد (2018)"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "The most expensive goalkeepers in world football history",
+      "ar": "أغلى صفقات انتقال حراس المرمى في تاريخ الساحرة المستديرة"
     }
   }
 ]

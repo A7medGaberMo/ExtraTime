@@ -14,6 +14,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "UCL18"
         },
         "stat": {
@@ -33,6 +34,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "UCL20"
         },
         "stat": {
@@ -52,6 +54,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "UCL22"
         },
         "stat": {
@@ -71,6 +74,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png",
           "fallbackText": "UCL23"
         },
         "stat": {
@@ -90,6 +94,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "UCL19"
         },
         "stat": {
@@ -122,7 +127,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Thierry_Henry_%2851649035951%29_%28cropped%29.jpg/330px-Thierry_Henry_%2851649035951%29_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "TH14"
         },
         "stat": {
@@ -138,7 +143,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg/330px-Ian_Wright_at_SXSW_London_June_2025_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "WRI"
         },
         "stat": {
@@ -154,7 +159,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Loco-Fener_%2810%29.jpg/330px-Loco-Fener_%2810%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "RVP"
         },
         "stat": {
@@ -170,7 +175,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Dennis_Bergkamp_2014_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "DB10"
         },
         "stat": {
@@ -186,7 +191,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Olivier_Giroud_December_2024.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
           "fallbackText": "GIR"
         },
         "stat": {
@@ -215,7 +220,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Frank_Lampard_2019.jpg/330px-Frank_Lampard_2019.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "LAM8"
         },
         "stat": {
@@ -231,7 +236,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Didier_Drogba_%282019%29_%28cropped2%29.jpg/330px-Didier_Drogba_%282019%29_%28cropped2%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "DD11"
         },
         "stat": {
@@ -247,7 +252,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Eden_Hazard_at_Baku_before_2019_UEFA_Europe_League_Final.jpg/330px-Eden_Hazard_at_Baku_before_2019_UEFA_Europe_League_Final.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "EH10"
         },
         "stat": {
@@ -263,6 +268,7 @@
         },
         "media": {
           "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "JFH"
         },
         "stat": {
@@ -278,7 +284,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Zola_2018_%28cropped%29.jpg/330px-Zola_2018_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
           "fallbackText": "ZOL"
         },
         "stat": {
@@ -307,7 +313,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Ferenc_Puskas_en_1965.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "PUS"
         },
         "stat": {
@@ -323,7 +329,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Huguito.jpg/330px-Huguito.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "HUG"
         },
         "stat": {
@@ -339,7 +345,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Francisco_Gento_1960.jpg/330px-Francisco_Gento_1960.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "GEN"
         },
         "stat": {
@@ -355,7 +361,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Emilio_Butrague%C3%B1o_2018.jpg/330px-Emilio_Butrague%C3%B1o_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "BUI"
         },
         "stat": {
@@ -371,7 +377,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/758.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "GB11"
         },
         "stat": {
@@ -400,7 +406,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Rivaldo.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "RIV"
         },
         "stat": {
@@ -416,7 +422,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/193293.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "KLU"
         },
         "stat": {
@@ -432,7 +438,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "NJR"
         },
         "stat": {
@@ -448,7 +454,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg/330px-Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "PED"
         },
         "stat": {
@@ -464,7 +470,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ronaldinho_in_2019.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "R10"
         },
         "stat": {
@@ -493,7 +499,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "CR7"
         },
         "stat": {
@@ -509,7 +515,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/759.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "KB9"
         },
         "stat": {
@@ -525,7 +531,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/291713.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "RG7"
         },
         "stat": {
@@ -541,7 +547,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Di_stefano_argentina_%28cropped%29.jpg/330px-Di_stefano_argentina_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "ADS"
         },
         "stat": {
@@ -557,7 +563,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Santillana_1982.jpg/330px-Santillana_1982.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
           "fallbackText": "SAN"
         },
         "stat": {
@@ -586,7 +592,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "LM10"
         },
         "stat": {
@@ -602,7 +608,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg/330px-Bar%C3%A7a_-_Napoli_-_20140806_-_Pedro_Rodriguez_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "CES"
         },
         "stat": {
@@ -618,7 +624,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Luis_Suarez_2018.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "LS9"
         },
         "stat": {
@@ -634,7 +640,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kubala.jpg/330px-Kubala.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "KUB"
         },
         "stat": {
@@ -650,7 +656,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Josep_Samitier_1920.jpg/330px-Josep_Samitier_1920.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
           "fallbackText": "SAM"
         },
         "stat": {
@@ -679,7 +685,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wayne_Rooney_%2850121495731%29_%28cropped%29.jpg/330px-Wayne_Rooney_%2850121495731%29_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
           "fallbackText": "WR10"
         },
         "stat": {
@@ -695,7 +701,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/LondonHouseAmsterdam1966_Bobby_Charlton.jpg/330px-LondonHouseAmsterdam1966_Bobby_Charlton.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
           "fallbackText": "SBC"
         },
         "stat": {
@@ -711,7 +717,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Denis_Law_1968.jpg/330px-Denis_Law_1968.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
           "fallbackText": "LAW"
         },
         "stat": {
@@ -727,7 +733,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Jack_Rowley_1948.jpg/330px-Jack_Rowley_1948.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
           "fallbackText": "ROW"
         },
         "stat": {
@@ -743,7 +749,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dennis_Viollet_1957.jpg/330px-Dennis_Viollet_1957.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
           "fallbackText": "VIO"
         },
         "stat": {
@@ -772,7 +778,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Ian_Rush_in_Singapore.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "RUSH"
         },
         "stat": {
@@ -788,7 +794,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/576652.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "HUNT"
         },
         "stat": {
@@ -804,7 +810,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Gordon_Hodgson_1930.jpg/330px-Gordon_Hodgson_1930.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "HOD"
         },
         "stat": {
@@ -820,7 +826,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/306.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "MO11"
         },
         "stat": {
@@ -840,7 +846,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Billy_Liddell_1950.jpg/330px-Billy_Liddell_1950.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
           "fallbackText": "LID"
         },
         "stat": {
@@ -869,7 +875,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gerd_M%C3%BCller_c1973_%28cropped%29.jpg/330px-Gerd_M%C3%BCller_c1973_%28cropped%29.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "GERD"
         },
         "stat": {
@@ -885,7 +891,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/521.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "RL9"
         },
         "stat": {
@@ -901,7 +907,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/522.png",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "TM25"
         },
         "stat": {
@@ -921,7 +927,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/2015-02-06_Rummenigge_0370_%28cropped%29.JPG/330px-2015-02-06_Rummenigge_0370_%28cropped%29.JPG",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "KHR"
         },
         "stat": {
@@ -937,6 +943,7 @@
         },
         "media": {
           "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
           "fallbackText": "OHL"
         },
         "stat": {
@@ -981,6 +988,7 @@
         },
         "media": {
           "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/585.png",
           "fallbackText": "DYN"
         },
         "stat": {
@@ -1384,6 +1392,7 @@
         },
         "media": {
           "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/585.png",
           "fallbackText": "DYN"
         },
         "stat": {
@@ -1739,6 +1748,7 @@
         },
         "media": {
           "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/585.png",
           "fallbackText": "DYN"
         },
         "stat": {
@@ -2073,6 +2083,212 @@
     "subtitle": {
       "en": "Round of 16 to Final goals only",
       "ar": "من دور الـ16 حتى النهائي فقط"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 South American clubs by Copa Libertadores titles won",
+      "ar": "رتّب هذه الأندية اللاتينية الخمسة حسب عدد ألقاب كوبا ليبرتادوريس"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "lib_independiente",
+        "name": {
+          "en": "Independiente",
+          "ar": "إنديبندينتي"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://flagcdn.com/w80/ar.png",
+          "fallbackText": "IND"
+        },
+        "stat": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        }
+      },
+      {
+        "answerKey": "lib_boca",
+        "name": {
+          "en": "Boca Juniors",
+          "ar": "بوكا جونيورز"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/451.png",
+          "fallbackText": "BOC"
+        },
+        "stat": {
+          "en": "6 Titles",
+          "ar": "6 ألقاب"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        }
+      },
+      {
+        "answerKey": "lib_penarol",
+        "name": {
+          "en": "Peñarol",
+          "ar": "بينارول"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://flagcdn.com/w80/uy.png",
+          "fallbackText": "PEN"
+        },
+        "stat": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
+        "subText": {
+          "en": "Uruguay",
+          "ar": "أوروغواي"
+        }
+      },
+      {
+        "answerKey": "lib_river",
+        "name": {
+          "en": "River Plate",
+          "ar": "ريفر بليت"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/435.png",
+          "fallbackText": "RIV"
+        },
+        "stat": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        }
+      },
+      {
+        "answerKey": "lib_santos",
+        "name": {
+          "en": "Santos FC",
+          "ar": "سانتوس"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/128.png",
+          "fallbackText": "SAN"
+        },
+        "stat": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "subText": {
+          "en": "Brazil",
+          "ar": "البرازيل"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "CONMEBOL Copa Libertadores history",
+      "ar": "تاريخ بطولة كوبا ليبرتادوريس لأندية أمريكا الجنوبية"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these European giants by total UEFA Champions League / European Cup finals LOST",
+      "ar": "رتب هذه الأندية الأوروبية الكبرى حسب عدد النهائيات الخاسرة في دوري أبطال أوروبا"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "juventus",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png",
+          "fallbackText": "JUV"
+        },
+        "stat": {
+          "en": "7 finals lost (Record)",
+          "ar": "7 نهائيات خاسرة (رقم قياسي)"
+        }
+      },
+      {
+        "answerKey": "bayern-munich",
+        "name": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/157.png",
+          "fallbackText": "BM"
+        },
+        "stat": {
+          "en": "5 finals lost",
+          "ar": "5 نهائيات خاسرة"
+        }
+      },
+      {
+        "answerKey": "ac-milan",
+        "name": {
+          "en": "AC Milan",
+          "ar": "إيه سي ميلان"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/489.png",
+          "fallbackText": "AM"
+        },
+        "stat": {
+          "en": "4 finals lost",
+          "ar": "4 نهائيات خاسرة"
+        }
+      },
+      {
+        "answerKey": "atletico-madrid",
+        "name": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/530.png",
+          "fallbackText": "AM"
+        },
+        "stat": {
+          "en": "3 finals lost",
+          "ar": "3 نهائيات خاسرة"
+        }
+      },
+      {
+        "answerKey": "manchester-united",
+        "name": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "MU"
+        },
+        "stat": {
+          "en": "2 finals lost",
+          "ar": "نهائيان خاسران"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "The kings of heartbreak on European football’s biggest stage",
+      "ar": "الأندية الأكثر وصولاً لنهائي دوري الأبطال دون التتويج به"
     }
   }
 ]

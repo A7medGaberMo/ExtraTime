@@ -54,7 +54,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/LS3_1288_%2853332367864%29_%28cropped%29.jpg/330px-LS3_1288_%2853332367864%29_%28cropped%29.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roberto_carlos_2011.jpg/330px-Roberto_carlos_2011.jpg",
           "fallbackText": "RC3"
         },
         "stat": {
@@ -127,6 +127,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "WC18"
         },
         "stat": {
@@ -146,6 +147,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "WC22"
         },
         "stat": {
@@ -165,6 +167,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/jp.png",
           "fallbackText": "WC02"
         },
         "stat": {
@@ -180,6 +183,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/1.png",
           "fallbackText": "WC90"
         },
         "stat": {
@@ -195,6 +199,7 @@
         },
         "media": {
           "type": "tournament",
+          "primaryUrl": "https://flagcdn.com/w80/br.png",
           "fallbackText": "WC14"
         },
         "stat": {
@@ -283,7 +288,7 @@
         },
         "media": {
           "type": "nation",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Francesco_Totti_2017.jpg",
+          "primaryUrl": "https://flagcdn.com/w80/fr.png",
           "fallbackText": "FRA"
         },
         "stat": {
@@ -384,7 +389,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ruud_van_Nistelrooy_2017.jpg/330px-Ruud_van_Nistelrooy_2017.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ruud_van_Nistelrooy_2012.jpg/330px-Ruud_van_Nistelrooy_2012.jpg",
           "fallbackText": "RVN10"
         },
         "stat": {
@@ -881,7 +886,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/576652.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rog%C3%A9rio_Ceni_2015.jpg/330px-Rog%C3%A9rio_Ceni_2015.jpg",
           "fallbackText": "CEN"
         },
         "stat": {
@@ -901,7 +906,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Jos%C3%A9_Luis_Chilavert_1998.jpg/330px-Jos%C3%A9_Luis_Chilavert_1998.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Jose_Luis_Chilavert.jpg/330px-Jose_Luis_Chilavert.jpg",
           "fallbackText": "CHI"
         },
         "stat": {
@@ -921,7 +926,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Jorge_Campos_in_2016.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Jorge_Campos_2018.jpg/330px-Jorge_Campos_2018.jpg",
           "fallbackText": "CAM"
         },
         "stat": {
@@ -961,7 +966,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://media.api-sports.io/football/players/10163.png",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rene_Higuita_2012.jpg/330px-Rene_Higuita_2012.jpg",
           "fallbackText": "HIG"
         },
         "stat": {
@@ -1074,6 +1079,7 @@
         },
         "media": {
           "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/leagues/39.png",
           "fallbackText": "MAR"
         },
         "stat": {
@@ -1590,7 +1596,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK"
         },
         "stat": {
@@ -1606,7 +1612,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ruud_van_Nistelrooy_2017.jpg/330px-Ruud_van_Nistelrooy_2017.jpg",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ruud_van_Nistelrooy_2012.jpg/330px-Ruud_van_Nistelrooy_2012.jpg",
           "fallbackText": "RVN"
         },
         "stat": {
@@ -1691,7 +1697,7 @@
         },
         "media": {
           "type": "player",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "primaryUrl": "https://media.api-sports.io/football/players/184.png",
           "fallbackText": "HK10"
         },
         "stat": {
@@ -1747,6 +1753,285 @@
     "subtitle": {
       "en": "Successful penalty kicks in Premier League history",
       "ar": "ركلات الجزاء الناجحة في تاريخ الدوري الإنجليزي الممتاز"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 goalkeepers by total clean sheets kept in Premier League history",
+      "ar": "رتّب حراس المرمى الخمسة حسب إجمالي الشباك النظيفة (كلين شيت) في تاريخ البريميرليج"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "cs_cech",
+        "name": {
+          "en": "Petr Čech",
+          "ar": "بيتر تشيك"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Arsenal_players_training_before_2019_UEFA_Europa_League_final_07_%28cropped%29.jpg",
+          "fallbackText": "PC"
+        },
+        "stat": {
+          "en": "202 Clean Sheets",
+          "ar": "202 مباراة بشباك نظيفة"
+        }
+      },
+      {
+        "answerKey": "cs_james",
+        "name": {
+          "en": "David James",
+          "ar": "ديفيد جيمس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/19329.png",
+          "fallbackText": "DJ"
+        },
+        "stat": {
+          "en": "169 Clean Sheets",
+          "ar": "169 مباراة بشباك نظيفة"
+        }
+      },
+      {
+        "answerKey": "cs_schwarzer",
+        "name": {
+          "en": "Mark Schwarzer",
+          "ar": "مارك شوارزر"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/teams/48.png",
+          "fallbackText": "MS"
+        },
+        "stat": {
+          "en": "151 Clean Sheets",
+          "ar": "151 مباراة بشباك نظيفة"
+        }
+      },
+      {
+        "answerKey": "cs_seaman",
+        "name": {
+          "en": "David Seaman",
+          "ar": "ديفيد سيمان"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/David_Seaman_2011.jpg",
+          "fallbackText": "DS"
+        },
+        "stat": {
+          "en": "141 Clean Sheets",
+          "ar": "141 مباراة بشباك نظيفة"
+        }
+      },
+      {
+        "answerKey": "cs_martyn",
+        "name": {
+          "en": "Nigel Martyn",
+          "ar": "نايجل مارتن"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/teams/45.png",
+          "fallbackText": "NM"
+        },
+        "stat": {
+          "en": "137 Clean Sheets",
+          "ar": "137 مباراة بشباك نظيفة"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Premier League era (1992 to present)",
+      "ar": "حقبة الدوري الإنجليزي الممتاز من 1992 حتى الآن"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these iconic goalkeepers by total career GOALS scored",
+      "ar": "رتب هؤلاء الحراس الأساطير حسب عدد الأهداف المسجلة في مسيرتهم"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "rogerio-ceni",
+        "name": {
+          "en": "Rogério Ceni",
+          "ar": "روجيريو سيني"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rog%C3%A9rio_Ceni_2015.jpg/330px-Rog%C3%A9rio_Ceni_2015.jpg",
+          "fallbackText": "RC"
+        },
+        "stat": {
+          "en": "131 goals (World Record)",
+          "ar": "131 هدفاً (رقم قياسي عالمي)"
+        }
+      },
+      {
+        "answerKey": "jose-luis-chilavert",
+        "name": {
+          "en": "José Luis Chilavert",
+          "ar": "خوسيه لويس تشيلافيرت"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Jose_Luis_Chilavert.jpg/330px-Jose_Luis_Chilavert.jpg",
+          "fallbackText": "JL"
+        },
+        "stat": {
+          "en": "67 goals",
+          "ar": "67 هدفاً"
+        }
+      },
+      {
+        "answerKey": "jorge-campos",
+        "name": {
+          "en": "Jorge Campos",
+          "ar": "خورخي كامبوس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Jorge_Campos_2018.jpg/330px-Jorge_Campos_2018.jpg",
+          "fallbackText": "JC"
+        },
+        "stat": {
+          "en": "46 goals",
+          "ar": "46 هدفاً"
+        }
+      },
+      {
+        "answerKey": "rene-higuita",
+        "name": {
+          "en": "René Higuita",
+          "ar": "رينيه هيجيتا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rene_Higuita_2012.jpg/330px-Rene_Higuita_2012.jpg",
+          "fallbackText": "RH"
+        },
+        "stat": {
+          "en": "43 goals",
+          "ar": "43 هدفاً"
+        }
+      },
+      {
+        "answerKey": "hans-jorg-butt",
+        "name": {
+          "en": "Hans-Jörg Butt",
+          "ar": "هانز يورغ بوت"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Hans-J%C3%B6rg_Butt_2010.jpg/330px-Hans-J%C3%B6rg_Butt_2010.jpg",
+          "fallbackText": "HB"
+        },
+        "stat": {
+          "en": "32 goals",
+          "ar": "32 هدفاً"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Goalkeepers who mastered penalties, free-kicks, and open-play goals",
+      "ar": "حراس اشتهروا بتسجيل الأهداف من ركلات جزاء وحرة وألعاب هوائية"
+    }
+  },
+  {
+    "title": {
+      "en": "Rank these defenders by total career Premier League goals scored",
+      "ar": "رتب هؤلاء المدافعين حسب عدد الأهداف المسجلة في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "john-terry",
+        "name": {
+          "en": "John Terry",
+          "ar": "جون تيري"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/John_Terry_2015.jpg/330px-John_Terry_2015.jpg",
+          "fallbackText": "JT"
+        },
+        "stat": {
+          "en": "41 goals (PL Defender Record)",
+          "ar": "41 هدفاً (رقم قياسي للمدافعين)"
+        }
+      },
+      {
+        "answerKey": "david-unsworth",
+        "name": {
+          "en": "David Unsworth",
+          "ar": "ديفيد أونسورث"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/teams/45.png",
+          "fallbackText": "DU"
+        },
+        "stat": {
+          "en": "38 goals",
+          "ar": "38 هدفاً"
+        }
+      },
+      {
+        "answerKey": "leighton-baines",
+        "name": {
+          "en": "Leighton Baines",
+          "ar": "ليتون باينز"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/18790.png",
+          "fallbackText": "LB"
+        },
+        "stat": {
+          "en": "32 goals",
+          "ar": "32 هدفاً"
+        }
+      },
+      {
+        "answerKey": "ian-harte",
+        "name": {
+          "en": "Ian Harte",
+          "ar": "إيان هارت"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ian_Harte.jpg/330px-Ian_Harte.jpg",
+          "fallbackText": "IH"
+        },
+        "stat": {
+          "en": "28 goals",
+          "ar": "28 هدفاً"
+        }
+      },
+      {
+        "answerKey": "gary-cahill",
+        "name": {
+          "en": "Gary Cahill",
+          "ar": "غاري كاهيل"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://media.api-sports.io/football/players/18844.png",
+          "fallbackText": "GC"
+        },
+        "stat": {
+          "en": "27 goals",
+          "ar": "27 هدفاً"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Defenders with a deadly eye for goal from open play and set-pieces",
+      "ar": "مدافعون امتلكوا حساً تهديفياً عالياً في البريميرليج"
     }
   }
 ]
