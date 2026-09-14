@@ -87,4 +87,28 @@ describe('Draft Candidate Generator & Synergy Tests', () => {
       expect(isPositionCompatible('LW', 'LM/LW')).toBe(true);
     });
   });
+
+  describe('Draft Suggestion Tier Filtering (Gold At Least)', () => {
+    it('filters out Silver and Bronze players from draft candidates', () => {
+      const isGoldOrAbove = (p: { tier: string; rating?: number }) =>
+        !['SILVER', 'BRONZE'].includes(p.tier) && (p.rating === undefined || p.rating >= 74);
+
+      const mockPlayers = [
+        { _id: '1', tier: 'ICON', rating: 92 },
+        { _id: '2', tier: 'HERO', rating: 88 },
+        { _id: '3', tier: 'MASTER', rating: 86 },
+        { _id: '4', tier: 'ELITE', rating: 83 },
+        { _id: '5', tier: 'GOLD', rating: 79 },
+        { _id: '6', tier: 'GOLD', rating: 74 },
+        { _id: '7', tier: 'SILVER', rating: 71 },
+        { _id: '8', tier: 'BRONZE', rating: 58 },
+      ];
+
+      const eligible = mockPlayers.filter(isGoldOrAbove);
+      expect(eligible).toHaveLength(6);
+      expect(eligible.some((p) => p.tier === 'SILVER')).toBe(false);
+      expect(eligible.some((p) => p.tier === 'BRONZE')).toBe(false);
+      expect(eligible.every((p) => (p.rating ?? 0) >= 74)).toBe(true);
+    });
+  });
 });

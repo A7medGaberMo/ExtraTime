@@ -78,16 +78,12 @@ function resolveRoundToReveal(
   roundIndex: number,
   existingHistory: Doc<"rankGames">["roundHistory"]
 ) {
-  const sortedCanonical = [...rawQuestion.answers].sort((a, b) =>
-    rawQuestion.direction === "desc" ? b.value - a.value : a.value - b.value
-  );
-  const resolvedOrder = sortedCanonical.map((a) => a.answerKey);
+  const resolvedOrder = rawQuestion.answers.map((a) => a.answerKey);
 
   const roundSubmissionResults = participants.map((p) => {
     const pScore = scoreRoundSubmission(
       p.submittedOrder || resolvedOrder,
       rawQuestion.answers,
-      rawQuestion.direction,
       p.secondsRemainingOnSubmit ?? 0
     );
 
@@ -111,67 +107,6 @@ function resolveRoundToReveal(
     resolvedOrder,
     updatedHistory: [...existingHistory, newHistoryEntry],
   };
-}
-
-/**
- * Classifies a question into a high-level thematic domain for maximum variety per game.
- */
-function getThematicDomain(q: { tags?: string[]; scopeType?: string }): string {
-  const tags = new Set(q.tags || []);
-  if (
-    tags.has("world-cup") ||
-    tags.has("world-cup-2022") ||
-    tags.has("euro") ||
-    tags.has("copa-america") ||
-    tags.has("afcon") ||
-    tags.has("asian-cup") ||
-    tags.has("national-teams") ||
-    tags.has("olympics") ||
-    tags.has("concacaf")
-  ) {
-    return "internationals";
-  }
-
-  if (
-    tags.has("ucl") ||
-    tags.has("champions-league") ||
-    tags.has("europa-league") ||
-    tags.has("uel") ||
-    tags.has("uefa-super-cup") ||
-    tags.has("club-world-cup") ||
-    tags.has("treble")
-  ) {
-    return "european_and_continental";
-  }
-
-  if (
-    tags.has("premier-league") ||
-    tags.has("la-liga") ||
-    tags.has("serie-a") ||
-    tags.has("bundesliga") ||
-    tags.has("ligue-1") ||
-    tags.has("el-clasico") ||
-    tags.has("manchester-derby") ||
-    tags.has("north-london-derby") ||
-    tags.has("derby-madonnina") ||
-    tags.has("merseyside-derby") ||
-    q.scopeType === "PER_CLUB"
-  ) {
-    return "domestic_clubs_and_leagues";
-  }
-
-  if (
-    tags.has("transfers") ||
-    tags.has("fees") ||
-    tags.has("market") ||
-    tags.has("market-value") ||
-    q.scopeType === "TRANSFERS_MARKET" ||
-    q.scopeType === "PER_SEASON"
-  ) {
-    return "market_and_seasons";
-  }
-
-  return "player_legends_and_milestones";
 }
 
 async function pickRandomQuestionIds(
@@ -214,20 +149,20 @@ async function pickRandomQuestionIds(
     candidatePool = allActive;
   }
 
-  // 3. Two-Tier Category Shuffle:
-  // Group candidates by thematic domain
+  // 3. Category Shuffle:
+  // Group candidates by category to maximize variety across rounds
   const domainMap = new Map<string, typeof allActive>();
   for (const q of candidatePool) {
-    const domain = getThematicDomain(q);
-    if (!domainMap.has(domain)) {
-      domainMap.set(domain, []);
+    const cat = q.category || "general";
+    if (!domainMap.has(cat)) {
+      domainMap.set(cat, []);
     }
-    domainMap.get(domain)!.push(q);
+    domainMap.get(cat)!.push(q);
   }
 
   // Shuffle questions within each category domain
-  for (const [domain, questions] of domainMap.entries()) {
-    domainMap.set(domain, shuffleArray(questions));
+  for (const [cat, questions] of domainMap.entries()) {
+    domainMap.set(cat, shuffleArray(questions));
   }
 
   // Shuffle the order of categories
@@ -274,6 +209,20 @@ async function getGuestProfile(ctx: GenericMutationCtx<DataModel>, guestId: Id<"
 // ── Mutations ────────────────────────────────────────────────────────
 
 /**
+ * Completely purges all rank questions from Convex.
+ */
+export const clearQuestionBank = mutation({
+  args: {},
+  handler: async (ctx) => {
+    const allDbQuestions = await ctx.db.query("rankQuestions").collect();
+    for (const q of allDbQuestions) {
+      await ctx.db.delete(q._id);
+    }
+    return { deleted: allDbQuestions.length };
+  },
+});
+
+/**
  * Seeds or updates the verified question bank in Convex.
  */
 export const seedQuestionBank = mutation({
@@ -284,26 +233,21 @@ export const seedQuestionBank = mutation({
     validateQuestionBank(allRankSeedQuestions);
 
     const allDbQuestions = await ctx.db.query("rankQuestions").collect();
-    const dbQuestionMap = new Map(allDbQuestions.map((q) => [q.slug, q]));
+    const dbQuestionMap = new Map(allDbQuestions.map((q) => [q.title.en.trim().toLowerCase(), q]));
 
     let inserted = 0;
     let updated = 0;
 
     for (const q of allRankSeedQuestions) {
-      const existing = dbQuestionMap.get(q.slug);
+      const titleKey = q.title.en.trim().toLowerCase();
+      const existing = dbQuestionMap.get(titleKey);
 
       const docData = {
-        slug: q.slug,
-        scopeType: q.scopeType,
         title: q.title,
         subtitle: q.subtitle,
-        metricLabel: q.metricLabel,
-        direction: q.direction,
-        difficulty: q.difficulty,
+        category: q.category,
         answers: q.answers,
-        asOfDate: q.asOfDate,
-        isActive: q.isActive,
-        tags: q.tags,
+        isActive: q.isActive ?? true,
         createdAt: Date.now(),
       };
 
@@ -317,10 +261,10 @@ export const seedQuestionBank = mutation({
     }
 
     // Clean up questions removed from seed bank
-    const validSlugs = new Set(allRankSeedQuestions.map((q) => q.slug));
+    const validTitles = new Set(allRankSeedQuestions.map((q) => q.title.en.trim().toLowerCase()));
     let deleted = 0;
     for (const dbQ of allDbQuestions) {
-      if (!validSlugs.has(dbQ.slug)) {
+      if (!validTitles.has(dbQ.title.en.trim().toLowerCase())) {
         await ctx.db.delete(dbQ._id);
         deleted++;
       }
@@ -636,7 +580,6 @@ export const submitRound = mutation({
     const scoreResult = scoreRoundSubmission(
       args.submittedOrder,
       rawQuestion.answers,
-      rawQuestion.direction,
       secondsRemaining
     );
 
@@ -662,7 +605,7 @@ export const submitRound = mutation({
 
     // If deadline passed, auto-complete any remaining unsubmitted participant so the round resolves
     if (isDeadlinePassed && !newParticipants.every((p) => p.hasSubmittedCurrentRound)) {
-      const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion.slug}`;
+      const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion._id}`;
       const initialScrambled = seededShuffle(rawQuestion.answers, roundSeed).map((a) => a.answerKey);
 
       finalParticipants = newParticipants.map((p) => {
@@ -670,7 +613,6 @@ export const submitRound = mutation({
         const unrankedScore = scoreRoundSubmission(
           initialScrambled,
           rawQuestion.answers,
-          rawQuestion.direction,
           0
         );
         return {
@@ -750,7 +692,7 @@ export const resolveExpiredRound = mutation({
     const rawQuestion = await ctx.db.get(currentQId);
     if (!rawQuestion) throw new Error("Question not found");
 
-    const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion.slug}`;
+    const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion._id}`;
     const initialScrambled = seededShuffle(rawQuestion.answers, roundSeed).map((a) => a.answerKey);
 
     // Auto-complete any unsubmitted participant
@@ -759,7 +701,6 @@ export const resolveExpiredRound = mutation({
       const unrankedScore = scoreRoundSubmission(
         initialScrambled,
         rawQuestion.answers,
-        rawQuestion.direction,
         0
       );
       return {

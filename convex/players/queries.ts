@@ -180,3 +180,82 @@ export const getStats = query({
     };
   },
 });
+
+/**
+ * Full-database player search query.
+ * Searches across name, club, nation, position, and tier with accent/diacritics normalization.
+ */
+export const searchPlayers = query({
+  args: {
+    query: v.string(),
+    tier: v.optional(v.string()),
+    position: v.optional(v.string()),
+    limit: v.optional(v.number()),
+  },
+  handler: async (ctx, args) => {
+    const raw = args.query.trim();
+    if (!raw && !args.tier && !args.position) return [];
+
+    const limit = Math.min(args.limit ?? 40, 80);
+
+    const norm = (s: string) =>
+      (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+    const q = norm(raw);
+
+    const [allPlayers, allClubs, allNations] = await Promise.all([
+      ctx.db.query('players').collect(),
+      ctx.db.query('clubs').collect(),
+      ctx.db.query('nations').collect(),
+    ]);
+
+    const clubMap = new Map<string, string>();
+    for (const c of allClubs) clubMap.set(String(c._id), norm(c.name));
+
+    const nationMap = new Map<string, string>();
+    for (const n of allNations) nationMap.set(String(n._id), norm(n.name));
+
+    const matches: Doc<'players'>[] = [];
+    for (const p of allPlayers) {
+      if (matches.length >= limit) break;
+
+      // Tier filter
+      if (args.tier && args.tier !== 'ALL' && p.tier !== args.tier) {
+        continue;
+      }
+
+      // Position category filter
+      if (args.position && args.position !== 'ALL') {
+        const pPos = p.position.toUpperCase();
+        if (args.position === 'FWD' && !['ST', 'CF', 'LW', 'RW', 'SS'].some((pos) => pPos.includes(pos))) continue;
+        if (args.position === 'MID' && !['CM', 'CAM', 'CDM', 'LM', 'RM'].some((pos) => pPos.includes(pos))) continue;
+        if (args.position === 'DEF' && !['CB', 'LB', 'RB', 'LWB', 'RWB', 'SW'].some((pos) => pPos.includes(pos))) continue;
+        if (args.position === 'GK' && !pPos.includes('GK')) continue;
+      }
+
+      // Text query match
+      if (q) {
+        const pName = norm(p.name);
+        const pPos = norm(p.position);
+        const pTier = norm(p.tier);
+        const cName = p.clubId ? (clubMap.get(String(p.clubId)) ?? '') : '';
+        const nName = p.nationId ? (nationMap.get(String(p.nationId)) ?? '') : '';
+
+        const matched =
+          pName.includes(q) ||
+          cName.includes(q) ||
+          nName.includes(q) ||
+          pPos.includes(q) ||
+          pTier.includes(q);
+
+        if (!matched) continue;
+      }
+
+      matches.push(p);
+    }
+
+    // Sort by rating descending (highest stars first)
+    matches.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
+
+    return hydratePlayers(ctx, matches);
+  },
+});

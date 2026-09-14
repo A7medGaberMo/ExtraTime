@@ -1,24 +1,10 @@
 [
   {
-    "slug": "big-five-premier-league-club-record-signings",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "MEDIUM",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "premier-league", "records", "enzo", "rice", "grealish", "pogba", "vandijk"],
     "title": {
       "en": "Rank these 5 club-record Premier League signings by transfer fee in Euros (€)",
       "ar": "رتّب الصفقات القياسية لأندية البريميرليج الخمسة حسب قيمة الانتقال باليورو (€)"
     },
-    "subtitle": {
-      "en": "Record single-player acquisition fee for each club",
-      "ar": "الصفقة القياسية الأغلى في تاريخ كل نادٍ باليورو"
-    },
-    "metricLabel": {
-      "en": "Fee (€M)",
-      "ar": "قيمة الصفقة (€)"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "rec_che_enzo",
@@ -26,22 +12,19 @@
           "en": "Enzo Fernández (Chelsea)",
           "ar": "إنزو فيرنانديز (تشيلسي)"
         },
-        "subText": {
-          "en": "Benfica → Chelsea (2023)",
-          "ar": "من بنفيكا إلى تشيلسي (2023)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
-          "fallbackText": "EF8",
-          "primaryUrl": "https://media.api-sports.io/football/players/6008.png"
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "EF8"
         },
-        "value": 121,
-        "valueLabel": {
+        "stat": {
           "en": "€121 Million",
           "ar": "121 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Benfica → Chelsea (2023)",
+          "ar": "من بنفيكا إلى تشيلسي (2023)"
+        }
       },
       {
         "answerKey": "rec_mc_grealish",
@@ -49,22 +32,19 @@
           "en": "Jack Grealish (Man City)",
           "ar": "جاك جريليش (مانشستر سيتي)"
         },
-        "subText": {
-          "en": "Aston Villa → Man City (2021)",
-          "ar": "من أستون فيلا إلى مان سيتي (2021)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
-          "fallbackText": "JG10",
-          "primaryUrl": "https://media.api-sports.io/football/players/19187.png"
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "JG10"
         },
-        "value": 117.5,
-        "valueLabel": {
+        "stat": {
           "en": "€117.5 Million",
           "ar": "117.5 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Aston Villa → Man City (2021)",
+          "ar": "من أستون فيلا إلى مان سيتي (2021)"
+        }
       },
       {
         "answerKey": "rec_ars_rice",
@@ -72,22 +52,19 @@
           "en": "Declan Rice (Arsenal)",
           "ar": "ديكلان رايس (أرسنال)"
         },
-        "subText": {
-          "en": "West Ham → Arsenal (2023)",
-          "ar": "من وست هام إلى أرسنال (2023)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png",
-          "fallbackText": "DR41",
-          "primaryUrl": "https://media.api-sports.io/football/players/292.png"
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "DR41"
         },
-        "value": 116,
-        "valueLabel": {
+        "stat": {
           "en": "€116 Million",
           "ar": "116 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "West Ham → Arsenal (2023)",
+          "ar": "من وست هام إلى أرسنال (2023)"
+        }
       },
       {
         "answerKey": "rec_mu_pogba",
@@ -95,22 +72,19 @@
           "en": "Paul Pogba (Man United)",
           "ar": "بول بوغبا (مانشستر يونايتد)"
         },
-        "subText": {
-          "en": "Juventus → Man United (2016)",
-          "ar": "من يوفنتوس إلى مان يونايتد (2016)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
-          "fallbackText": "PP6",
-          "primaryUrl": "https://media.api-sports.io/football/players/882.png"
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "PP6"
         },
-        "value": 105,
-        "valueLabel": {
+        "stat": {
           "en": "€105 Million",
           "ar": "105 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Juventus → Man United (2016)",
+          "ar": "من يوفنتوس إلى مان يونايتد (2016)"
+        }
       },
       {
         "answerKey": "rec_liv_vandijk",
@@ -118,45 +92,32 @@
           "en": "Virgil van Dijk (Liverpool)",
           "ar": "فيرجيل فان دايك (ليفربول)"
         },
-        "subText": {
-          "en": "Southampton → Liverpool (2018)",
-          "ar": "من ساوثهامبتون إلى ليفربول (2018)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
-          "fallbackText": "VVD",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Virgil_van_Dijk_2021.jpg"
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "VVD"
         },
-        "value": 84.6,
-        "valueLabel": {
+        "stat": {
           "en": "€84.6 Million",
           "ar": "84.6 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Southampton → Liverpool (2018)",
+          "ar": "من ساوثهامبتون إلى ليفربول (2018)"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Record single-player acquisition fee for each club",
+      "ar": "الصفقة القياسية الأغلى في تاريخ كل نادٍ باليورو"
+    }
   },
   {
-    "slug": "golden-boy-award-winners-peak-market-value",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "MEDIUM",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["golden-boy", "market-value", "mbappe", "haaland", "pedri", "aguero", "rooney"],
     "title": {
       "en": "Rank these 5 Golden Boy award winners by career peak Transfermarkt market valuation (€M)",
       "ar": "رتّب الفائزين بجائزة الفتى الذهبي حسب أعلى قيمة سوقية وصلوا إليها باليورو (€)"
     },
-    "subtitle": {
-      "en": "Peak career Transfermarkt valuation in Millions of Euros",
-      "ar": "أعلى قيمة تسويقية وصل إليها اللاعب طوال مسيرته بملايين اليورو"
-    },
-    "metricLabel": {
-      "en": "Peak Value (€M)",
-      "ar": "أعلى قيمة سوقية (€)"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "gbv_mbappe",
@@ -164,22 +125,19 @@
           "en": "Kylian Mbappé (2017 Winner)",
           "ar": "كيليان مبابي (الفائز 2017)"
         },
-        "subText": {
-          "en": "PSG",
-          "ar": "باريس سان جيرمان"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "KM",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+          "fallbackText": "KM"
         },
-        "value": 200,
-        "valueLabel": {
+        "stat": {
           "en": "€200 Million",
           "ar": "200 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "PSG",
+          "ar": "باريس سان جيرمان"
+        }
       },
       {
         "answerKey": "gbv_haaland",
@@ -187,22 +145,19 @@
           "en": "Erling Haaland (2020 Winner)",
           "ar": "إيرلينغ هالاند (الفائز 2020)"
         },
-        "subText": {
-          "en": "Manchester City",
-          "ar": "مانشستر سيتي"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
-          "fallbackText": "EH9",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg",
+          "fallbackText": "EH9"
         },
-        "value": 180,
-        "valueLabel": {
+        "stat": {
           "en": "€180 Million",
           "ar": "180 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        }
       },
       {
         "answerKey": "gbv_pedri",
@@ -210,22 +165,19 @@
           "en": "Pedri (2021 Winner)",
           "ar": "بيدري (الفائز 2021)"
         },
-        "subText": {
-          "en": "FC Barcelona",
-          "ar": "برشلونة"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png",
-          "fallbackText": "PED8",
-          "primaryUrl": "https://media.api-sports.io/football/players/133609.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/133609.png",
+          "fallbackText": "PED8"
         },
-        "value": 100,
-        "valueLabel": {
+        "stat": {
           "en": "€100 Million",
           "ar": "100 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        }
       },
       {
         "answerKey": "gbv_aguero",
@@ -233,22 +185,19 @@
           "en": "Sergio Agüero (2007 Winner)",
           "ar": "سيرخيو أغويرو (الفائز 2007)"
         },
-        "subText": {
-          "en": "Manchester City",
-          "ar": "مانشستر سيتي"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
-          "fallbackText": "KUN",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Sergio_Ag%C3%BCero_2018.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Sergio_Ag%C3%BCero_2018.jpg",
+          "fallbackText": "KUN"
         },
-        "value": 80,
-        "valueLabel": {
+        "stat": {
           "en": "€80 Million",
           "ar": "80 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        }
       },
       {
         "answerKey": "gbv_rooney",
@@ -256,45 +205,32 @@
           "en": "Wayne Rooney (2004 Winner)",
           "ar": "واين روني (الفائز 2004)"
         },
-        "subText": {
-          "en": "Manchester United",
-          "ar": "مانشستر يونايتد"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
-          "fallbackText": "WR10",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Wayne_Rooney_2020.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Wayne_Rooney_2020.jpg",
+          "fallbackText": "WR10"
         },
-        "value": 65,
-        "valueLabel": {
+        "stat": {
           "en": "€65 Million",
           "ar": "65 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Peak career Transfermarkt valuation in Millions of Euros",
+      "ar": "أعلى قيمة تسويقية وصل إليها اللاعب طوال مسيرته بملايين اليورو"
+    }
   },
   {
-    "slug": "most-expensive-goalkeeper-transfers",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "goalkeepers", "fees", "records", "chelsea", "liverpool"],
     "title": {
       "en": "Rank these 5 goalkeepers by transfer fee paid in Euros (€)",
       "ar": "رتّب حراس المرمى الخمسة حسب قيمة صفقة انتقالهم باليورو (€)"
     },
-    "subtitle": {
-      "en": "Initial base transfer fee in Millions of Euros",
-      "ar": "قيمة الصفقة الأساسية بملايين اليورو"
-    },
-    "metricLabel": {
-      "en": "Fee (€M)",
-      "ar": "قيمة الصفقة (€)"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "gk_kepa",
@@ -302,22 +238,19 @@
           "en": "Kepa Arrizabalaga",
           "ar": "كيبا أريزابالاغا"
         },
-        "subText": {
-          "en": "Athletic Bilbao → Chelsea (2018)",
-          "ar": "أتلتيك بيلباو إلى تشيلسي (2018)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png",
-          "fallbackText": "KEP",
-          "primaryUrl": "https://media.api-sports.io/football/players/18959.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/18959.png",
+          "fallbackText": "KEP"
         },
-        "value": 80,
-        "valueLabel": {
+        "stat": {
           "en": "€80 Million",
           "ar": "80 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Athletic Bilbao → Chelsea (2018)",
+          "ar": "أتلتيك بيلباو إلى تشيلسي (2018)"
+        }
       },
       {
         "answerKey": "gk_alisson",
@@ -325,22 +258,19 @@
           "en": "Alisson Becker",
           "ar": "أليسون بيكر"
         },
-        "subText": {
-          "en": "AS Roma → Liverpool (2018)",
-          "ar": "روما إلى ليفربول (2018)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
-          "fallbackText": "ALI",
-          "primaryUrl": "https://media.api-sports.io/football/players/280.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/280.png",
+          "fallbackText": "ALI"
         },
-        "value": 62.5,
-        "valueLabel": {
+        "stat": {
           "en": "€62.5 Million",
           "ar": "62.5 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "AS Roma → Liverpool (2018)",
+          "ar": "روما إلى ليفربول (2018)"
+        }
       },
       {
         "answerKey": "gk_buffon",
@@ -348,22 +278,19 @@
           "en": "Gianluigi Buffon",
           "ar": "جانلويجي بوفون"
         },
-        "subText": {
-          "en": "Parma → Juventus (2001)",
-          "ar": "بارما إلى يوفنتوس (2001)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
-          "fallbackText": "GIGI",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gianluigi_Buffon_2017.jpg/330px-Gianluigi_Buffon_2017.jpg",
+          "fallbackText": "GIGI"
         },
-        "value": 52.8,
-        "valueLabel": {
+        "stat": {
           "en": "€52.8 Million",
           "ar": "52.8 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Parma → Juventus (2001)",
+          "ar": "بارما إلى يوفنتوس (2001)"
+        }
       },
       {
         "answerKey": "gk_onana",
@@ -371,22 +298,19 @@
           "en": "André Onana",
           "ar": "أندريه أونانا"
         },
-        "subText": {
-          "en": "Inter Milan → Man United (2023)",
-          "ar": "إنتر ميلان إلى مانشستر يونايتد (2023)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
-          "fallbackText": "ONA",
-          "primaryUrl": "https://media.api-sports.io/football/players/532.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/526.png",
+          "fallbackText": "ONA"
         },
-        "value": 50.2,
-        "valueLabel": {
+        "stat": {
           "en": "€50.2 Million",
           "ar": "50.2 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Inter Milan → Man United (2023)",
+          "ar": "إنتر ميلان إلى مانشستر يونايتد (2023)"
+        }
       },
       {
         "answerKey": "gk_ederson",
@@ -394,45 +318,32 @@
           "en": "Ederson Moraes",
           "ar": "إيدرسون مورايس"
         },
-        "subText": {
-          "en": "Benfica → Man City (2017)",
-          "ar": "بنفيكا إلى مانشستر سيتي (2017)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
-          "fallbackText": "EDE",
-          "primaryUrl": "https://media.api-sports.io/football/players/617.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/412083.png",
+          "fallbackText": "EDE"
         },
-        "value": 40,
-        "valueLabel": {
+        "stat": {
           "en": "€40 Million",
           "ar": "40 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Benfica → Man City (2017)",
+          "ar": "بنفيكا إلى مانشستر سيتي (2017)"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Initial base transfer fee in Millions of Euros",
+      "ar": "قيمة الصفقة الأساسية بملايين اليورو"
+    }
   },
   {
-    "slug": "most-expensive-defender-transfers",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "defenders", "fees", "gvardiol", "maguire", "vandijk"],
     "title": {
       "en": "Rank these 5 defenders by transfer fee paid in Euros (€)",
       "ar": "رتّب المدافعين الخمسة حسب قيمة صفقة انتقالهم باليورو (€)"
     },
-    "subtitle": {
-      "en": "Initial transfer fee in Millions of Euros",
-      "ar": "قيمة الصفقة الأساسية بملايين اليورو"
-    },
-    "metricLabel": {
-      "en": "Fee (€M)",
-      "ar": "قيمة الصفقة (€)"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "def_gvardiol",
@@ -440,22 +351,19 @@
           "en": "Joško Gvardiol",
           "ar": "يوشكو غفارديول"
         },
-        "subText": {
-          "en": "RB Leipzig → Man City (2023)",
-          "ar": "لايبزيغ إلى مانشستر سيتي (2023)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
-          "fallbackText": "GVA",
-          "primaryUrl": "https://media.api-sports.io/football/players/129033.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/129033.png",
+          "fallbackText": "GVA"
         },
-        "value": 90,
-        "valueLabel": {
+        "stat": {
           "en": "€90 Million",
           "ar": "90 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "RB Leipzig → Man City (2023)",
+          "ar": "لايبزيغ إلى مانشستر سيتي (2023)"
+        }
       },
       {
         "answerKey": "def_maguire",
@@ -463,22 +371,19 @@
           "en": "Harry Maguire",
           "ar": "هاري ماغواير"
         },
-        "subText": {
-          "en": "Leicester → Man United (2019)",
-          "ar": "ليستر إلى مانشستر يونايتد (2019)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
-          "fallbackText": "MAG",
-          "primaryUrl": "https://media.api-sports.io/football/players/2934.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/2935.png",
+          "fallbackText": "MAG"
         },
-        "value": 87,
-        "valueLabel": {
+        "stat": {
           "en": "€87 Million",
           "ar": "87 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Leicester → Man United (2019)",
+          "ar": "ليستر إلى مانشستر يونايتد (2019)"
+        }
       },
       {
         "answerKey": "def_deligt",
@@ -486,22 +391,19 @@
           "en": "Matthijs de Ligt",
           "ar": "ماتيس دي ليخت"
         },
-        "subText": {
-          "en": "Ajax → Juventus (2019)",
-          "ar": "أياكس إلى يوفنتوس (2019)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
-          "fallbackText": "MDL",
-          "primaryUrl": "https://media.api-sports.io/football/players/538.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/538.png",
+          "fallbackText": "MDL"
         },
-        "value": 85.5,
-        "valueLabel": {
+        "stat": {
           "en": "€85.5 Million",
           "ar": "85.5 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Ajax → Juventus (2019)",
+          "ar": "أياكس إلى يوفنتوس (2019)"
+        }
       },
       {
         "answerKey": "def_vandijk",
@@ -509,22 +411,19 @@
           "en": "Virgil van Dijk",
           "ar": "فيرجيل فان دايك"
         },
-        "subText": {
-          "en": "Southampton → Liverpool (2018)",
-          "ar": "ساوثهامبتون إلى ليفربول (2018)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png",
-          "fallbackText": "VVD",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Virgil_van_Dijk_2021.jpg"
+          "primaryUrl": "https://media.api-sports.io/football/players/290.png",
+          "fallbackText": "VVD"
         },
-        "value": 84.6,
-        "valueLabel": {
+        "stat": {
           "en": "€84.6 Million",
           "ar": "84.6 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Southampton → Liverpool (2018)",
+          "ar": "ساوثهامبتون إلى ليفربول (2018)"
+        }
       },
       {
         "answerKey": "def_lucas",
@@ -532,45 +431,32 @@
           "en": "Lucas Hernández",
           "ar": "لوكاس هيرنانديز"
         },
-        "subText": {
-          "en": "Atlético Madrid → Bayern (2019)",
-          "ar": "أتلتيكو إلى بايرن ميونخ (2019)"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
-          "fallbackText": "LUC",
-          "primaryUrl": "https://media.api-sports.io/football/players/644880.png"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Luis_Matador_Hernandez.jpg",
+          "fallbackText": "LUC"
         },
-        "value": 80,
-        "valueLabel": {
+        "stat": {
           "en": "€80 Million",
           "ar": "80 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Atlético Madrid → Bayern (2019)",
+          "ar": "أتلتيكو إلى بايرن ميونخ (2019)"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Initial transfer fee in Millions of Euros",
+      "ar": "قيمة الصفقة الأساسية بملايين اليورو"
+    }
   },
   {
-    "slug": "serie-a-record-signings",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "MEDIUM",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "serie-a", "italy", "ronaldo", "higuain", "lukaku"],
     "title": {
       "en": "Rank these 5 Serie A incoming transfers by initial fee paid (€)",
       "ar": "رتّب صفقات الشراء في الدوري الإيطالي حسب قيمة الانتقال باليورو (€)"
     },
-    "subtitle": {
-      "en": "Record transfer fees paid by Italian clubs",
-      "ar": "أعلى صفقات التعاقد في تاريخ الأندية الإيطالية"
-    },
-    "metricLabel": {
-      "en": "Fee (€M)",
-      "ar": "قيمة الصفقة (€)"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "sa_trf_cr7",
@@ -578,22 +464,19 @@
           "en": "Cristiano Ronaldo (2018)",
           "ar": "كريستيانو رونالدو (2018)"
         },
-        "subText": {
-          "en": "Real Madrid → Juventus",
-          "ar": "من ريال مدريد إلى يوفنتوس"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png",
-          "fallbackText": "CR7",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
         },
-        "value": 117,
-        "valueLabel": {
+        "stat": {
           "en": "€117 Million",
           "ar": "117 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Real Madrid → Juventus",
+          "ar": "من ريال مدريد إلى يوفنتوس"
+        }
       },
       {
         "answerKey": "sa_trf_higuain",
@@ -601,22 +484,19 @@
           "en": "Gonzalo Higuaín (2016)",
           "ar": "غونزالو هيغواين (2016)"
         },
-        "subText": {
-          "en": "Napoli → Juventus",
-          "ar": "من نابولي إلى يوفنتوس"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
-          "fallbackText": "HIG",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Gonzalo_Higua%C3%ADn_2018.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Gonzalo_Higua%C3%ADn_2018.jpg",
+          "fallbackText": "HIG"
         },
-        "value": 90,
-        "valueLabel": {
+        "stat": {
           "en": "€90 Million",
           "ar": "90 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Napoli → Juventus",
+          "ar": "من نابولي إلى يوفنتوس"
+        }
       },
       {
         "answerKey": "sa_trf_deligt",
@@ -624,22 +504,19 @@
           "en": "Matthijs de Ligt (2019)",
           "ar": "ماتيس دي ليخت (2019)"
         },
-        "subText": {
-          "en": "Ajax → Juventus",
-          "ar": "من أياكس إلى يوفنتوس"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png",
-          "fallbackText": "MDL",
-          "primaryUrl": "https://media.api-sports.io/football/players/538.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/538.png",
+          "fallbackText": "MDL"
         },
-        "value": 85.5,
-        "valueLabel": {
+        "stat": {
           "en": "€85.5 Million",
           "ar": "85.5 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Ajax → Juventus",
+          "ar": "من أياكس إلى يوفنتوس"
+        }
       },
       {
         "answerKey": "sa_trf_lukaku",
@@ -647,22 +524,19 @@
           "en": "Romelu Lukaku (2019)",
           "ar": "روميلو لوكاكو (2019)"
         },
-        "subText": {
-          "en": "Man United → Inter Milan",
-          "ar": "من مان يونايتد إلى إنتر ميلان"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png",
-          "fallbackText": "LUK",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
+          "fallbackText": "LUK"
         },
-        "value": 74,
-        "valueLabel": {
+        "stat": {
           "en": "€74 Million",
           "ar": "74 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Man United → Inter Milan",
+          "ar": "من مان يونايتد إلى إنتر ميلان"
+        }
       },
       {
         "answerKey": "sa_trf_osimhen",
@@ -670,45 +544,32 @@
           "en": "Victor Osimhen (2020)",
           "ar": "فيكتور أوسيمين (2020)"
         },
-        "subText": {
-          "en": "Lille → Napoli",
-          "ar": "من ليل إلى نابولي"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/492.png",
-          "fallbackText": "OSI",
-          "primaryUrl": "https://media.api-sports.io/football/players/19088.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/19088.png",
+          "fallbackText": "OSI"
         },
-        "value": 70,
-        "valueLabel": {
+        "stat": {
           "en": "€70 Million",
           "ar": "70 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Lille → Napoli",
+          "ar": "من ليل إلى نابولي"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Record transfer fees paid by Italian clubs",
+      "ar": "أعلى صفقات التعاقد في تاريخ الأندية الإيطالية"
+    }
   },
   {
-    "slug": "bundesliga-record-signings",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "MEDIUM",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "bundesliga", "germany", "bayern", "kane"],
     "title": {
       "en": "Rank these 5 Bundesliga incoming transfers by initial fee paid (€)",
       "ar": "رتّب صفقات الشراء في الدوري الألماني حسب قيمة الانتقال باليورو (€)"
     },
-    "subtitle": {
-      "en": "Record transfer fees paid by German clubs",
-      "ar": "أعلى صفقات الشراء في تاريخ الدوري الألماني"
-    },
-    "metricLabel": {
-      "en": "Fee (€M)",
-      "ar": "قيمة الصفقة (€)"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "bl_trf_kane",
@@ -716,22 +577,19 @@
           "en": "Harry Kane (2023)",
           "ar": "هاري كين (2023)"
         },
-        "subText": {
-          "en": "Tottenham → Bayern Munich",
-          "ar": "من توتنهام إلى بايرن ميونخ"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
-          "fallbackText": "HK9",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
+          "fallbackText": "HK9"
         },
-        "value": 95,
-        "valueLabel": {
+        "stat": {
           "en": "€95 Million",
           "ar": "95 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Tottenham → Bayern Munich",
+          "ar": "من توتنهام إلى بايرن ميونخ"
+        }
       },
       {
         "answerKey": "bl_trf_lucas",
@@ -739,22 +597,19 @@
           "en": "Lucas Hernández (2019)",
           "ar": "لوكاس هيرنانديز (2019)"
         },
-        "subText": {
-          "en": "Atlético Madrid → Bayern Munich",
-          "ar": "من أتلتيكو إلى بايرن ميونخ"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
-          "fallbackText": "LUC",
-          "primaryUrl": "https://media.api-sports.io/football/players/644880.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/644880.png",
+          "fallbackText": "LUC"
         },
-        "value": 80,
-        "valueLabel": {
+        "stat": {
           "en": "€80 Million",
           "ar": "80 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Atlético Madrid → Bayern Munich",
+          "ar": "من أتلتيكو إلى بايرن ميونخ"
+        }
       },
       {
         "answerKey": "bl_trf_deligt",
@@ -762,22 +617,19 @@
           "en": "Matthijs de Ligt (2022)",
           "ar": "ماتيس دي ليخت (2022)"
         },
-        "subText": {
-          "en": "Juventus → Bayern Munich",
-          "ar": "من يوفنتوس إلى بايرن ميونخ"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
-          "fallbackText": "MDL",
-          "primaryUrl": "https://media.api-sports.io/football/players/538.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/538.png",
+          "fallbackText": "MDL"
         },
-        "value": 67,
-        "valueLabel": {
+        "stat": {
           "en": "€67 Million",
           "ar": "67 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Juventus → Bayern Munich",
+          "ar": "من يوفنتوس إلى بايرن ميونخ"
+        }
       },
       {
         "answerKey": "bl_trf_kim",
@@ -785,22 +637,19 @@
           "en": "Kim Min-jae (2023)",
           "ar": "كيم مين جاي (2023)"
         },
-        "subText": {
-          "en": "Napoli → Bayern Munich",
-          "ar": "من نابولي إلى بايرن ميونخ"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png",
-          "fallbackText": "KMJ",
-          "primaryUrl": "https://media.api-sports.io/football/players/2897.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/2897.png",
+          "fallbackText": "KMJ"
         },
-        "value": 50,
-        "valueLabel": {
+        "stat": {
           "en": "€50 Million",
           "ar": "50 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Napoli → Bayern Munich",
+          "ar": "من نابولي إلى بايرن ميونخ"
+        }
       },
       {
         "answerKey": "bl_trf_sane",
@@ -808,45 +657,32 @@
           "en": "Leroy Sané (2020)",
           "ar": "ليروي ساني (2020)"
         },
-        "subText": {
-          "en": "Man City → Bayern Munich",
-          "ar": "من مان سيتي إلى بايرن ميونخ"
-        },
         "media": {
           "type": "player",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png",
-          "fallbackText": "SANE",
-          "primaryUrl": "https://media.api-sports.io/football/players/629.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/629.png",
+          "fallbackText": "SANE"
         },
-        "value": 49,
-        "valueLabel": {
+        "stat": {
           "en": "€49 Million",
           "ar": "49 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Man City → Bayern Munich",
+          "ar": "من مان سيتي إلى بايرن ميونخ"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Record transfer fees paid by German clubs",
+      "ar": "أعلى صفقات الشراء في تاريخ الدوري الألماني"
+    }
   },
   {
-    "slug": "highest-cumulative-career-transfer-fees",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "career", "money", "neymar", "lukaku", "ronaldo"],
     "title": {
       "en": "Rank these 5 players by total cumulative transfer fees generated in their career",
       "ar": "رتّب اللاعبين الخمسة حسب إجمالي مبالغ انتقالاتهم التراكمية طوال مسيرتهم"
     },
-    "subtitle": {
-      "en": "Total combined fees generated across all career moves (€M)",
-      "ar": "مجموع رسوم الانتقالات في جميع صفقات اللاعب عبر مسيرته (€)"
-    },
-    "metricLabel": {
-      "en": "Total Fees (€M)",
-      "ar": "إجمالي الصفقات (€)"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "cum_neymar",
@@ -854,22 +690,19 @@
           "en": "Neymar Jr",
           "ar": "نيمار"
         },
-        "subText": {
-          "en": "Santos → Barca → PSG → Al Hilal",
-          "ar": "سانتوس ← برشلونة ← باريس ← الهلال"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "NJR",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+          "fallbackText": "NJR"
         },
-        "value": 400,
-        "valueLabel": {
+        "stat": {
           "en": "€400 Million",
           "ar": "400 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Santos → Barca → PSG → Al Hilal",
+          "ar": "سانتوس ← برشلونة ← باريس ← الهلال"
+        }
       },
       {
         "answerKey": "cum_lukaku",
@@ -877,22 +710,19 @@
           "en": "Romelu Lukaku",
           "ar": "روميلو لوكاكو"
         },
-        "subText": {
-          "en": "Chelsea, Everton, Man Utd, Inter, Napoli",
-          "ar": "تشيلسي وإيفرتون والمان وإنتر ونابولي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "LUK",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "LUK"
         },
-        "value": 339,
-        "valueLabel": {
+        "stat": {
           "en": "€339 Million",
           "ar": "339 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Chelsea, Everton, Man Utd, Inter, Napoli",
+          "ar": "تشيلسي وإيفرتون والمان وإنتر ونابولي"
+        }
       },
       {
         "answerKey": "cum_cr7",
@@ -900,22 +730,19 @@
           "en": "Cristiano Ronaldo",
           "ar": "كريستيانو رونالدو"
         },
-        "subText": {
-          "en": "Sporting, Man Utd, Real Madrid, Juventus",
-          "ar": "سبورتينغ والمان وريال مدريد ويوفنتوس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "CR7",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "fallbackText": "CR7"
         },
-        "value": 247,
-        "valueLabel": {
+        "stat": {
           "en": "€247 Million",
           "ar": "247 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Sporting, Man Utd, Real Madrid, Juventus",
+          "ar": "سبورتينغ والمان وريال مدريد ويوفنتوس"
+        }
       },
       {
         "answerKey": "cum_dembele",
@@ -923,22 +750,19 @@
           "en": "Ousmane Dembélé",
           "ar": "عثمان ديمبيلي"
         },
-        "subText": {
-          "en": "Rennes → Dortmund → Barca → PSG",
-          "ar": "رين ← دورتموند ← برشلونة ← باريس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "DEM",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Ousmane_Demb%C3%A9l%C3%A9_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "DEM"
         },
-        "value": 220,
-        "valueLabel": {
+        "stat": {
           "en": "€220 Million",
           "ar": "220 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Rennes → Dortmund → Barca → PSG",
+          "ar": "رين ← دورتموند ← برشلونة ← باريس"
+        }
       },
       {
         "answerKey": "cum_morata",
@@ -946,45 +770,32 @@
           "en": "Álvaro Morata",
           "ar": "ألفارو موراتا"
         },
-        "subText": {
-          "en": "Real Madrid, Juventus, Chelsea, Atleti, Milan",
-          "ar": "ريال مدريد ويوفنتوس وتشيلسي وأتلتيكو وميلان"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "MOR",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/%C3%81lvaro_Morata_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/59.png",
+          "fallbackText": "MOR"
         },
-        "value": 189,
-        "valueLabel": {
+        "stat": {
           "en": "€189 Million",
           "ar": "189 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Real Madrid, Juventus, Chelsea, Atleti, Milan",
+          "ar": "ريال مدريد ويوفنتوس وتشيلسي وأتلتيكو وميلان"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Total combined fees generated across all career moves (€M)",
+      "ar": "مجموع رسوم الانتقالات في جميع صفقات اللاعب عبر مسيرته (€)"
+    }
   },
   {
-    "slug": "all-time-most-expensive-world-transfers",
-    "scopeType": "TRANSFERS_MARKET",
     "title": {
       "en": "Rank these 5 blockbuster moves by transfer fee (€ Millions)",
       "ar": "رتّب الصفقات الخمس القياسية حسب قيمة الانتقال (بالملايين يورو)"
     },
-    "subtitle": {
-      "en": "Initial transfer fee in Millions of Euros",
-      "ar": "قيمة الصفقة الأساسية بملايين اليورو"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
-    "difficulty": "EASY",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "records", "neyman", "mbappe", "coutinho"],
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "trf_neymar_psg",
@@ -992,22 +803,19 @@
           "en": "Neymar Jr (2017)",
           "ar": "نيمار (2017)"
         },
-        "subText": {
-          "en": "Barcelona ➔ PSG",
-          "ar": "برشلونة ➔ باريس سان جيرمان"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "NJR",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "NJR"
         },
-        "value": 222,
-        "valueLabel": {
+        "stat": {
           "en": "€222 Million",
           "ar": "222 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Barcelona ➔ PSG",
+          "ar": "برشلونة ➔ باريس سان جيرمان"
+        }
       },
       {
         "answerKey": "trf_mbappe_psg",
@@ -1015,22 +823,19 @@
           "en": "Kylian Mbappé (2018)",
           "ar": "كيليان مبابي (2018)"
         },
-        "subText": {
-          "en": "Monaco ➔ PSG",
-          "ar": "موناكو ➔ باريس سان جيرمان"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "KM7",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+          "fallbackText": "KM7"
         },
-        "value": 180,
-        "valueLabel": {
+        "stat": {
           "en": "€180 Million",
           "ar": "180 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Monaco ➔ PSG",
+          "ar": "موناكو ➔ باريس سان جيرمان"
+        }
       },
       {
         "answerKey": "trf_coutinho_barca",
@@ -1038,22 +843,19 @@
           "en": "Philippe Coutinho (2018)",
           "ar": "فيليب كوتينيو (2018)"
         },
-        "subText": {
-          "en": "Liverpool ➔ Barcelona",
-          "ar": "ليفربول ➔ برشلونة"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "PC10",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Philippe_Coutinho_2018.jpg/330px-Philippe_Coutinho_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "PC10"
         },
-        "value": 135,
-        "valueLabel": {
+        "stat": {
           "en": "€135 Million",
           "ar": "135 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Liverpool ➔ Barcelona",
+          "ar": "ليفربول ➔ برشلونة"
+        }
       },
       {
         "answerKey": "trf_felix_atleti",
@@ -1061,22 +863,19 @@
           "en": "João Félix (2019)",
           "ar": "جواو فيليكس (2019)"
         },
-        "subText": {
-          "en": "Benfica ➔ Atlético Madrid",
-          "ar": "بنفيكا ➔ أتلتيكو مدريد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JF7",
           "primaryUrl": "https://media.api-sports.io/football/players/1243.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png"
+          "fallbackText": "JF7"
         },
-        "value": 127,
-        "valueLabel": {
+        "stat": {
           "en": "€127 Million",
           "ar": "127 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Benfica ➔ Atlético Madrid",
+          "ar": "بنفيكا ➔ أتلتيكو مدريد"
+        }
       },
       {
         "answerKey": "trf_enzo_chelsea",
@@ -1084,45 +883,32 @@
           "en": "Enzo Fernández (2023)",
           "ar": "إنزو فيرنانديز (2023)"
         },
-        "subText": {
-          "en": "Benfica ➔ Chelsea",
-          "ar": "بنفيكا ➔ تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "EF8",
           "primaryUrl": "https://media.api-sports.io/football/players/6008.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "EF8"
         },
-        "value": 121,
-        "valueLabel": {
+        "stat": {
           "en": "€121 Million",
           "ar": "121 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Benfica ➔ Chelsea",
+          "ar": "بنفيكا ➔ تشيلسي"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Initial transfer fee in Millions of Euros",
+      "ar": "قيمة الصفقة الأساسية بملايين اليورو"
+    }
   },
   {
-    "slug": "premier-league-most-expensive-arrivals",
-    "scopeType": "TRANSFERS_MARKET",
     "title": {
       "en": "Rank these 5 Premier League signings by transfer fee (€ Millions)",
       "ar": "رتّب صفقات الدوري الإنجليزي الممتاز الخمس حسب قيمة الانتقال (بالملايين يورو)"
     },
-    "subtitle": {
-      "en": "All-time record Premier League arrivals",
-      "ar": "الصفقات الأغلى في تاريخ الدوري الإنجليزي الممتاز"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
-    "difficulty": "MEDIUM",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["premier-league", "transfers", "chelsea", "mancity", "arsenal"],
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "plt_enzo",
@@ -1130,22 +916,19 @@
           "en": "Enzo Fernández (2023)",
           "ar": "إنزو فيرنانديز (2023)"
         },
-        "subText": {
-          "en": "Benfica ➔ Chelsea",
-          "ar": "بنفيكا ➔ تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "EF8",
           "primaryUrl": "https://media.api-sports.io/football/players/6008.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "EF8"
         },
-        "value": 121,
-        "valueLabel": {
+        "stat": {
           "en": "€121 Million",
           "ar": "121 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Benfica ➔ Chelsea",
+          "ar": "بنفيكا ➔ تشيلسي"
+        }
       },
       {
         "answerKey": "plt_grealish",
@@ -1153,22 +936,19 @@
           "en": "Jack Grealish (2021)",
           "ar": "جاك غريليش (2021)"
         },
-        "subText": {
-          "en": "Aston Villa ➔ Man City",
-          "ar": "أستون فيلا ➔ مانشستر سيتي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JG10",
           "primaryUrl": "https://media.api-sports.io/football/players/19187.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+          "fallbackText": "JG10"
         },
-        "value": 117,
-        "valueLabel": {
+        "stat": {
           "en": "€117 Million",
           "ar": "117 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Aston Villa ➔ Man City",
+          "ar": "أستون فيلا ➔ مانشستر سيتي"
+        }
       },
       {
         "answerKey": "plt_rice",
@@ -1176,22 +956,19 @@
           "en": "Declan Rice (2023)",
           "ar": "ديكلان رايس (2023)"
         },
-        "subText": {
-          "en": "West Ham ➔ Arsenal",
-          "ar": "وست هام ➔ أرسنال"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "DR41",
           "primaryUrl": "https://media.api-sports.io/football/players/292.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png"
+          "fallbackText": "DR41"
         },
-        "value": 116,
-        "valueLabel": {
+        "stat": {
           "en": "€116 Million",
           "ar": "116 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "West Ham ➔ Arsenal",
+          "ar": "وست هام ➔ أرسنال"
+        }
       },
       {
         "answerKey": "plt_lukaku",
@@ -1199,22 +976,19 @@
           "en": "Romelu Lukaku (2021)",
           "ar": "روميلو لوكاكو (2021)"
         },
-        "subText": {
-          "en": "Inter Milan ➔ Chelsea",
-          "ar": "إنتر ميلان ➔ تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "RL9",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "RL9"
         },
-        "value": 113,
-        "valueLabel": {
+        "stat": {
           "en": "€113 Million",
           "ar": "113 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Inter Milan ➔ Chelsea",
+          "ar": "إنتر ميلان ➔ تشيلسي"
+        }
       },
       {
         "answerKey": "plt_pogba",
@@ -1222,45 +996,32 @@
           "en": "Paul Pogba (2016)",
           "ar": "بول بوغبا (2016)"
         },
-        "subText": {
-          "en": "Juventus ➔ Man United",
-          "ar": "يوفنتوس ➔ مانشستر يونايتد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "PP6",
           "primaryUrl": "https://media.api-sports.io/football/players/882.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+          "fallbackText": "PP6"
         },
-        "value": 105,
-        "valueLabel": {
+        "stat": {
           "en": "€105 Million",
           "ar": "105 ملايين يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Juventus ➔ Man United",
+          "ar": "يوفنتوس ➔ مانشستر يونايتد"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "All-time record Premier League arrivals",
+      "ar": "الصفقات الأغلى في تاريخ الدوري الإنجليزي الممتاز"
+    }
   },
   {
-    "slug": "teenage-wonderkids-record-transfers",
-    "scopeType": "TRANSFERS_MARKET",
     "title": {
       "en": "Rank these 5 teenage signings (Under-20) by transfer fee (€ Millions)",
       "ar": "رتّب صفقات المواهب الشابة (تحت 20 عامًا) حسب قيمة الانتقال (بالملايين يورو)"
     },
-    "subtitle": {
-      "en": "Record transfer fees paid for teenage footballers",
-      "ar": "أعلى قيم انتقالات دُفعت للاعبين تحت سن العشرين"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["teenagers", "wonderkids", "mbappe", "felix", "bellingham"],
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "tng_mbappe",
@@ -1268,22 +1029,19 @@
           "en": "Kylian Mbappé (19 yo)",
           "ar": "كيليان مبابي (19 عامًا)"
         },
-        "subText": {
-          "en": "Monaco ➔ PSG (2018)",
-          "ar": "موناكو ➔ باريس سان جيرمان"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "KM7",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+          "fallbackText": "KM7"
         },
-        "value": 180,
-        "valueLabel": {
+        "stat": {
           "en": "€180 Million",
           "ar": "180 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Monaco ➔ PSG (2018)",
+          "ar": "موناكو ➔ باريس سان جيرمان"
+        }
       },
       {
         "answerKey": "tng_felix",
@@ -1291,22 +1049,19 @@
           "en": "João Félix (19 yo)",
           "ar": "جواو فيليكس (19 عامًا)"
         },
-        "subText": {
-          "en": "Benfica ➔ Atlético Madrid (2019)",
-          "ar": "بنفيكا ➔ أتلتيكو مدريد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JF7",
           "primaryUrl": "https://media.api-sports.io/football/players/1243.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png"
+          "fallbackText": "JF7"
         },
-        "value": 127,
-        "valueLabel": {
+        "stat": {
           "en": "€127 Million",
           "ar": "127 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Benfica ➔ Atlético Madrid (2019)",
+          "ar": "بنفيكا ➔ أتلتيكو مدريد"
+        }
       },
       {
         "answerKey": "tng_bellingham",
@@ -1314,22 +1069,19 @@
           "en": "Jude Bellingham (19 yo)",
           "ar": "جود بيلينجهام (19 عامًا)"
         },
-        "subText": {
-          "en": "Dortmund ➔ Real Madrid (2023)",
-          "ar": "دورتموند ➔ ريال مدريد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JB5",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jude_Bellingham_2023.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "fallbackText": "JB5"
         },
-        "value": 103,
-        "valueLabel": {
+        "stat": {
           "en": "€103 Million",
           "ar": "103 ملايين يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Dortmund ➔ Real Madrid (2023)",
+          "ar": "دورتموند ➔ ريال مدريد"
+        }
       },
       {
         "answerKey": "tng_deligt",
@@ -1337,22 +1089,19 @@
           "en": "Matthijs de Ligt (19 yo)",
           "ar": "ماتيس دي ليخت (19 عامًا)"
         },
-        "subText": {
-          "en": "Ajax ➔ Juventus (2019)",
-          "ar": "أياكس ➔ يوفنتوس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "MDL4",
           "primaryUrl": "https://media.api-sports.io/football/players/538.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+          "fallbackText": "MDL4"
         },
-        "value": 85,
-        "valueLabel": {
+        "stat": {
           "en": "€85 Million",
           "ar": "85 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Ajax ➔ Juventus (2019)",
+          "ar": "أياكس ➔ يوفنتوس"
+        }
       },
       {
         "answerKey": "tng_martial",
@@ -1360,45 +1109,32 @@
           "en": "Anthony Martial (19 yo)",
           "ar": "أنتوني مارسيال (19 عامًا)"
         },
-        "subText": {
-          "en": "Monaco ➔ Man United (2015)",
-          "ar": "موناكو ➔ مانشستر يونايتد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "AM9",
           "primaryUrl": "https://media.api-sports.io/football/players/902.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+          "fallbackText": "AM9"
         },
-        "value": 60,
-        "valueLabel": {
+        "stat": {
           "en": "€60 Million",
           "ar": "60 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Monaco ➔ Man United (2015)",
+          "ar": "موناكو ➔ مانشستر يونايتد"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Record transfer fees paid for teenage footballers",
+      "ar": "أعلى قيم انتقالات دُفعت للاعبين تحت سن العشرين"
+    }
   },
   {
-    "slug": "cumulative-career-transfer-fees-players",
-    "scopeType": "ALL_TIME",
     "title": {
       "en": "Rank these 5 players by total cumulative career transfer fees generated (€ Millions)",
       "ar": "رتّب اللاعبين الخمسة حسب إجمالي الأموال المدفوعة في صفقات انتقالهم طوال مسيرتهم"
     },
-    "subtitle": {
-      "en": "Sum total of all transfer fees across entire career",
-      "ar": "مجموع رسوم الانتقالات المدفوعة في كافة محطات المسيرة"
-    },
-    "metricLabel": {
-      "en": "Total Fees",
-      "ar": "إجمالي الرسوم"
-    },
-    "direction": "desc",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "cumulative", "neymar", "lukaku", "cr7"],
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "ctf_neymar",
@@ -1406,22 +1142,19 @@
           "en": "Neymar Jr",
           "ar": "نيمار"
         },
-        "subText": {
-          "en": "Santos ➔ Barca ➔ PSG ➔ Al Hilal",
-          "ar": "سانتوس ➔ برشلونة ➔ باريس ➔ الهلال"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "NJR",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+          "fallbackText": "NJR"
         },
-        "value": 400,
-        "valueLabel": {
+        "stat": {
           "en": "€400 Million",
           "ar": "400 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Santos ➔ Barca ➔ PSG ➔ Al Hilal",
+          "ar": "سانتوس ➔ برشلونة ➔ باريس ➔ الهلال"
+        }
       },
       {
         "answerKey": "ctf_lukaku",
@@ -1429,22 +1162,19 @@
           "en": "Romelu Lukaku",
           "ar": "روميلو لوكاكو"
         },
-        "subText": {
-          "en": "Anderlecht ➔ Chelsea ➔ Everton ➔ Man Utd ➔ Inter ➔ Napoli",
-          "ar": "أندرلخت ➔ تشيلسي ➔ إيفرتون ➔ مان يونايتد ➔ إنتر ➔ نابولي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "RL9",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "RL9"
         },
-        "value": 369,
-        "valueLabel": {
+        "stat": {
           "en": "€369 Million",
           "ar": "369 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Anderlecht ➔ Chelsea ➔ Everton ➔ Man Utd ➔ Inter ➔ Napoli",
+          "ar": "أندرلخت ➔ تشيلسي ➔ إيفرتون ➔ مان يونايتد ➔ إنتر ➔ نابولي"
+        }
       },
       {
         "answerKey": "ctf_cr7",
@@ -1452,22 +1182,19 @@
           "en": "Cristiano Ronaldo",
           "ar": "كريستيانو رونالدو"
         },
-        "subText": {
-          "en": "Sporting ➔ Man Utd ➔ Real Madrid ➔ Juventus",
-          "ar": "سبورتينغ ➔ مان يونايتد ➔ ريال مدريد ➔ يوفنتوس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "CR7",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "fallbackText": "CR7"
         },
-        "value": 247,
-        "valueLabel": {
+        "stat": {
           "en": "€247 Million",
           "ar": "247 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Sporting ➔ Man Utd ➔ Real Madrid ➔ Juventus",
+          "ar": "سبورتينغ ➔ مان يونايتد ➔ ريال مدريد ➔ يوفنتوس"
+        }
       },
       {
         "answerKey": "ctf_dembele",
@@ -1475,22 +1202,19 @@
           "en": "Ousmane Dembélé",
           "ar": "عثمان ديمبيلي"
         },
-        "subText": {
-          "en": "Rennes ➔ Dortmund ➔ Barcelona ➔ PSG",
-          "ar": "رين ➔ دورتموند ➔ برشلونة ➔ باريس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "OD7",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Ousmane_Demb%C3%A9l%C3%A9_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "OD7"
         },
-        "value": 220,
-        "valueLabel": {
+        "stat": {
           "en": "€220 Million",
           "ar": "220 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Rennes ➔ Dortmund ➔ Barcelona ➔ PSG",
+          "ar": "رين ➔ دورتموند ➔ برشلونة ➔ باريس"
+        }
       },
       {
         "answerKey": "ctf_morata",
@@ -1498,45 +1222,32 @@
           "en": "Álvaro Morata",
           "ar": "ألفارو موراتا"
         },
-        "subText": {
-          "en": "Real Madrid ➔ Juventus ➔ Chelsea ➔ Atlético ➔ Milan",
-          "ar": "ريال مدريد ➔ يوفنتوس ➔ تشيلسي ➔ أتلتيكو ➔ ميلان"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "AM7",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/%C3%81lvaro_Morata_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/59.png",
+          "fallbackText": "AM7"
         },
-        "value": 208,
-        "valueLabel": {
+        "stat": {
           "en": "€208 Million",
           "ar": "208 ملايين يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Real Madrid ➔ Juventus ➔ Chelsea ➔ Atlético ➔ Milan",
+          "ar": "ريال مدريد ➔ يوفنتوس ➔ تشيلسي ➔ أتلتيكو ➔ ميلان"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Sum total of all transfer fees across entire career",
+      "ar": "مجموع رسوم الانتقالات المدفوعة في كافة محطات المسيرة"
+    }
   },
   {
-    "slug": "goalkeeper-record-transfers-all-time",
-    "scopeType": "TRANSFERS_MARKET",
     "title": {
       "en": "Rank these 5 goalkeepers by historic transfer fee (€ Millions)",
       "ar": "رتّب حراس المرمى الخمسة حسب قيمة الانتقال التاريخية (بالملايين يورو)"
     },
-    "subtitle": {
-      "en": "Most expensive goalkeeper transfers in football history",
-      "ar": "أغلى صفقات حراس المرمى في تاريخ كرة القدم"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["goalkeepers", "transfers", "kepa", "alisson", "buffon"],
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "gkt_kepa",
@@ -1544,22 +1255,19 @@
           "en": "Kepa Arrizabalaga (2018)",
           "ar": "كيبا أريزابالاغا (2018)"
         },
-        "subText": {
-          "en": "Athletic Bilbao ➔ Chelsea",
-          "ar": "أتلتيك بيلباو ➔ تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "KA1",
           "primaryUrl": "https://media.api-sports.io/football/players/18959.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "KA1"
         },
-        "value": 80,
-        "valueLabel": {
+        "stat": {
           "en": "€80 Million",
           "ar": "80 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Athletic Bilbao ➔ Chelsea",
+          "ar": "أتلتيك بيلباو ➔ تشيلسي"
+        }
       },
       {
         "answerKey": "gkt_alisson",
@@ -1567,22 +1275,19 @@
           "en": "Alisson Becker (2018)",
           "ar": "أليسون بيكر (2018)"
         },
-        "subText": {
-          "en": "AS Roma ➔ Liverpool",
-          "ar": "روما ➔ ليفربول"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "AB1",
           "primaryUrl": "https://media.api-sports.io/football/players/280.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
+          "fallbackText": "AB1"
         },
-        "value": 62,
-        "valueLabel": {
+        "stat": {
           "en": "€62 Million",
           "ar": "62 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "AS Roma ➔ Liverpool",
+          "ar": "روما ➔ ليفربول"
+        }
       },
       {
         "answerKey": "gkt_buffon",
@@ -1590,22 +1295,19 @@
           "en": "Gianluigi Buffon (2001)",
           "ar": "جانلويجي بوفون (2001)"
         },
-        "subText": {
-          "en": "Parma ➔ Juventus",
-          "ar": "بارما ➔ يوفنتوس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "GIGI",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+          "fallbackText": "GIGI"
         },
-        "value": 52,
-        "valueLabel": {
+        "stat": {
           "en": "€52 Million",
           "ar": "52 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Parma ➔ Juventus",
+          "ar": "بارما ➔ يوفنتوس"
+        }
       },
       {
         "answerKey": "gkt_onana",
@@ -1613,22 +1315,19 @@
           "en": "André Onana (2023)",
           "ar": "أندريه أونانا (2023)"
         },
-        "subText": {
-          "en": "Inter Milan ➔ Man United",
-          "ar": "إنتر ميلان ➔ مانشستر يونايتد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "AO24",
           "primaryUrl": "https://media.api-sports.io/football/players/532.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+          "fallbackText": "AO24"
         },
-        "value": 50,
-        "valueLabel": {
+        "stat": {
           "en": "€50 Million",
           "ar": "50 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Inter Milan ➔ Man United",
+          "ar": "إنتر ميلان ➔ مانشستر يونايتد"
+        }
       },
       {
         "answerKey": "gkt_ederson",
@@ -1636,45 +1335,32 @@
           "en": "Ederson Moraes (2017)",
           "ar": "إيدرسون مورايس (2017)"
         },
-        "subText": {
-          "en": "Benfica ➔ Man City",
-          "ar": "بنفيكا ➔ مانشستر سيتي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "EM31",
           "primaryUrl": "https://media.api-sports.io/football/players/617.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+          "fallbackText": "EM31"
         },
-        "value": 40,
-        "valueLabel": {
+        "stat": {
           "en": "€40 Million",
           "ar": "40 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Benfica ➔ Man City",
+          "ar": "بنفيكا ➔ مانشستر سيتي"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Most expensive goalkeeper transfers in football history",
+      "ar": "أغلى صفقات حراس المرمى في تاريخ كرة القدم"
+    }
   },
   {
-    "slug": "defender-record-transfers-all-time",
-    "scopeType": "TRANSFERS_MARKET",
     "title": {
       "en": "Rank these 5 defenders by historic transfer fee (€ Millions)",
       "ar": "رتّب المدافعين الخمسة حسب قيمة الانتقال التاريخية (بالملايين يورو)"
     },
-    "subtitle": {
-      "en": "Most expensive defender signings in football history",
-      "ar": "أغلى صفقات المدافعين في تاريخ كرة القدم"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["defenders", "transfers", "gvardiol", "maguire", "vandijk"],
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "dft_gvardiol",
@@ -1682,22 +1368,19 @@
           "en": "Joško Gvardiol (2023)",
           "ar": "يوشكو غفارديول (2023)"
         },
-        "subText": {
-          "en": "RB Leipzig ➔ Man City",
-          "ar": "لايبزيج ➔ مانشستر سيتي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JG24",
           "primaryUrl": "https://media.api-sports.io/football/players/129033.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+          "fallbackText": "JG24"
         },
-        "value": 90,
-        "valueLabel": {
+        "stat": {
           "en": "€90 Million",
           "ar": "90 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "RB Leipzig ➔ Man City",
+          "ar": "لايبزيج ➔ مانشستر سيتي"
+        }
       },
       {
         "answerKey": "dft_maguire",
@@ -1705,22 +1388,19 @@
           "en": "Harry Maguire (2019)",
           "ar": "هاري ماغواير (2019)"
         },
-        "subText": {
-          "en": "Leicester City ➔ Man United",
-          "ar": "ليستر سيتي ➔ مانشستر يونايتد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "HM5",
           "primaryUrl": "https://media.api-sports.io/football/players/2934.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/33.png"
+          "fallbackText": "HM5"
         },
-        "value": 87,
-        "valueLabel": {
+        "stat": {
           "en": "€87 Million",
           "ar": "87 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Leicester City ➔ Man United",
+          "ar": "ليستر سيتي ➔ مانشستر يونايتد"
+        }
       },
       {
         "answerKey": "dft_deligt",
@@ -1728,22 +1408,19 @@
           "en": "Matthijs de Ligt (2019)",
           "ar": "ماتيس دي ليخت (2019)"
         },
-        "subText": {
-          "en": "Ajax ➔ Juventus",
-          "ar": "أياكس ➔ يوفنتوس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "MDL4",
           "primaryUrl": "https://media.api-sports.io/football/players/538.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+          "fallbackText": "MDL4"
         },
-        "value": 85,
-        "valueLabel": {
+        "stat": {
           "en": "€85 Million",
           "ar": "85 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Ajax ➔ Juventus",
+          "ar": "أياكس ➔ يوفنتوس"
+        }
       },
       {
         "answerKey": "dft_vandijk",
@@ -1751,22 +1428,19 @@
           "en": "Virgil van Dijk (2018)",
           "ar": "فيرجيل فان دايك (2018)"
         },
-        "subText": {
-          "en": "Southampton ➔ Liverpool",
-          "ar": "ساوثهامبتون ➔ ليفربول"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "VVD4",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Virgil_van_Dijk_2021.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/40.png"
+          "fallbackText": "VVD4"
         },
-        "value": 84,
-        "valueLabel": {
+        "stat": {
           "en": "€84 Million",
           "ar": "84 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Southampton ➔ Liverpool",
+          "ar": "ساوثهامبتون ➔ ليفربول"
+        }
       },
       {
         "answerKey": "dft_fofana",
@@ -1774,45 +1448,32 @@
           "en": "Wesley Fofana (2022)",
           "ar": "ويسلي فوفانا (2022)"
         },
-        "subText": {
-          "en": "Leicester City ➔ Chelsea",
-          "ar": "ليستر سيتي ➔ تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "WF33",
           "primaryUrl": "https://media.api-sports.io/football/players/1458.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "WF33"
         },
-        "value": 80,
-        "valueLabel": {
+        "stat": {
           "en": "€80 Million",
           "ar": "80 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Leicester City ➔ Chelsea",
+          "ar": "ليستر سيتي ➔ تشيلسي"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Most expensive defender signings in football history",
+      "ar": "أغلى صفقات المدافعين في تاريخ كرة القدم"
+    }
   },
   {
-    "slug": "british-players-record-transfers",
-    "scopeType": "TRANSFERS_MARKET",
     "title": {
       "en": "Rank these 5 British players by transfer fee (€ Millions)",
       "ar": "رتّب اللاعبين البريطانيين الخمسة حسب قيمة الانتقال (بالملايين يورو)"
     },
-    "subtitle": {
-      "en": "Most expensive British transfers in history",
-      "ar": "أغلى صفقات اللاعبين البريطانيين في التاريخ"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["british", "transfers", "grealish", "rice", "bellingham", "kane", "bale"],
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "brt_grealish",
@@ -1820,22 +1481,19 @@
           "en": "Jack Grealish (2021)",
           "ar": "جاك غريليش (2021)"
         },
-        "subText": {
-          "en": "Aston Villa ➔ Man City",
-          "ar": "أستون فيلا ➔ مانشستر سيتي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JG10",
           "primaryUrl": "https://media.api-sports.io/football/players/19187.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+          "fallbackText": "JG10"
         },
-        "value": 117,
-        "valueLabel": {
+        "stat": {
           "en": "€117 Million",
           "ar": "117 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Aston Villa ➔ Man City",
+          "ar": "أستون فيلا ➔ مانشستر سيتي"
+        }
       },
       {
         "answerKey": "brt_rice",
@@ -1843,22 +1501,19 @@
           "en": "Declan Rice (2023)",
           "ar": "ديكلان رايس (2023)"
         },
-        "subText": {
-          "en": "West Ham ➔ Arsenal",
-          "ar": "وست هام ➔ أرسنال"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "DR41",
           "primaryUrl": "https://media.api-sports.io/football/players/292.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png"
+          "fallbackText": "DR41"
         },
-        "value": 116,
-        "valueLabel": {
+        "stat": {
           "en": "€116 Million",
           "ar": "116 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "West Ham ➔ Arsenal",
+          "ar": "وست هام ➔ أرسنال"
+        }
       },
       {
         "answerKey": "brt_bellingham",
@@ -1866,22 +1521,19 @@
           "en": "Jude Bellingham (2023)",
           "ar": "جود بيلينجهام (2023)"
         },
-        "subText": {
-          "en": "Dortmund ➔ Real Madrid",
-          "ar": "دورتموند ➔ ريال مدريد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JB5",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jude_Bellingham_2023.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "fallbackText": "JB5"
         },
-        "value": 103,
-        "valueLabel": {
+        "stat": {
           "en": "€103 Million",
           "ar": "103 ملايين يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Dortmund ➔ Real Madrid",
+          "ar": "دورتموند ➔ ريال مدريد"
+        }
       },
       {
         "answerKey": "brt_bale",
@@ -1889,22 +1541,19 @@
           "en": "Gareth Bale (2013)",
           "ar": "غاريث بيل (2013)"
         },
-        "subText": {
-          "en": "Tottenham ➔ Real Madrid",
-          "ar": "توتنهام ➔ ريال مدريد"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "GB11",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Gareth_Bale_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "fallbackText": "GB11"
         },
-        "value": 101,
-        "valueLabel": {
+        "stat": {
           "en": "€101 Million",
           "ar": "101 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Tottenham ➔ Real Madrid",
+          "ar": "توتنهام ➔ ريال مدريد"
+        }
       },
       {
         "answerKey": "brt_kane",
@@ -1912,45 +1561,32 @@
           "en": "Harry Kane (2023)",
           "ar": "هاري كين (2023)"
         },
-        "subText": {
-          "en": "Tottenham ➔ Bayern Munich",
-          "ar": "توتنهام ➔ بايرن ميونخ"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "HK9",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_20181.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/157.png"
+          "fallbackText": "HK9"
         },
-        "value": 95,
-        "valueLabel": {
+        "stat": {
           "en": "€95 Million",
           "ar": "95 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Tottenham ➔ Bayern Munich",
+          "ar": "توتنهام ➔ بايرن ميونخ"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Most expensive British transfers in history",
+      "ar": "أغلى صفقات اللاعبين البريطانيين في التاريخ"
+    }
   },
   {
-    "slug": "south-american-stars-record-transfers",
-    "scopeType": "TRANSFERS_MARKET",
     "title": {
       "en": "Rank these 5 South American players by historic transfer fee (€ Millions)",
       "ar": "رتّب نجوم أمريكا الجنوبية الخمسة حسب قيمة الانتقال التاريخية (بالملايين يورو)"
     },
-    "subtitle": {
-      "en": "Highest transfer fees paid for South American footballers",
-      "ar": "أعلى صفقات الانتقال للاعبي أمريكا الجنوبية"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["south-america", "transfers", "neymar", "coutinho", "enzo", "caicedo"],
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "sat_neymar",
@@ -1958,22 +1594,19 @@
           "en": "Neymar Jr (2017)",
           "ar": "نيمار (2017)"
         },
-        "subText": {
-          "en": "Barcelona ➔ PSG",
-          "ar": "برشلونة ➔ باريس سان جيرمان"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "NJR",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "NJR"
         },
-        "value": 222,
-        "valueLabel": {
+        "stat": {
           "en": "€222 Million",
           "ar": "222 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Barcelona ➔ PSG",
+          "ar": "برشلونة ➔ باريس سان جيرمان"
+        }
       },
       {
         "answerKey": "sat_coutinho",
@@ -1981,22 +1614,19 @@
           "en": "Philippe Coutinho (2018)",
           "ar": "فيليب كوتينيو (2018)"
         },
-        "subText": {
-          "en": "Liverpool ➔ Barcelona",
-          "ar": "ليفربول ➔ برشلونة"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "PC10",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Philippe_Coutinho_2018.jpg/330px-Philippe_Coutinho_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "PC10"
         },
-        "value": 135,
-        "valueLabel": {
+        "stat": {
           "en": "€135 Million",
           "ar": "135 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Liverpool ➔ Barcelona",
+          "ar": "ليفربول ➔ برشلونة"
+        }
       },
       {
         "answerKey": "sat_enzo",
@@ -2004,22 +1634,19 @@
           "en": "Enzo Fernández (2023)",
           "ar": "إنزو فيرنانديز (2023)"
         },
-        "subText": {
-          "en": "Benfica ➔ Chelsea",
-          "ar": "بنفيكا ➔ تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "EF8",
           "primaryUrl": "https://media.api-sports.io/football/players/6008.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "EF8"
         },
-        "value": 121,
-        "valueLabel": {
+        "stat": {
           "en": "€121 Million",
           "ar": "121 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Benfica ➔ Chelsea",
+          "ar": "بنفيكا ➔ تشيلسي"
+        }
       },
       {
         "answerKey": "sat_caicedo",
@@ -2027,22 +1654,19 @@
           "en": "Moisés Caicedo (2023)",
           "ar": "مويسيس كايسيدو (2023)"
         },
-        "subText": {
-          "en": "Brighton ➔ Chelsea",
-          "ar": "برايتون ➔ تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "MC25",
           "primaryUrl": "https://media.api-sports.io/football/players/162859.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "MC25"
         },
-        "value": 116,
-        "valueLabel": {
+        "stat": {
           "en": "€116 Million",
           "ar": "116 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Brighton ➔ Chelsea",
+          "ar": "برايتون ➔ تشيلسي"
+        }
       },
       {
         "answerKey": "sat_higuain",
@@ -2050,45 +1674,32 @@
           "en": "Gonzalo Higuaín (2016)",
           "ar": "غونزالو هيغواين (2016)"
         },
-        "subText": {
-          "en": "Napoli ➔ Juventus",
-          "ar": "نابولي ➔ يوفنتوس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "GH9",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Gonzalo_Higua%C3%ADn_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/496.png"
+          "fallbackText": "GH9"
         },
-        "value": 90,
-        "valueLabel": {
+        "stat": {
           "en": "€90 Million",
           "ar": "90 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Napoli ➔ Juventus",
+          "ar": "نابولي ➔ يوفنتوس"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Highest transfer fees paid for South American footballers",
+      "ar": "أعلى صفقات الانتقال للاعبي أمريكا الجنوبية"
+    }
   },
   {
-    "slug": "world-record-transfer-fees",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "EASY",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "fees", "money", "neymar", "mbappe"],
     "title": {
       "en": "Rank these 5 blockbuster transfers by transfer fee in Euros (€)",
       "ar": "رتّب الصفقات التاريخية الخمسة حسب قيمة الانتقال باليورو (€)"
     },
-    "subtitle": {
-      "en": "Base initial transfer fee in Millions of Euros",
-      "ar": "قيمة الصفقة الأساسية بملايين اليورو"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "tf_neymar",
@@ -2096,22 +1707,19 @@
           "en": "Neymar Jr (2017)",
           "ar": "نيمار (2017)"
         },
-        "subText": {
-          "en": "Barcelona → PSG",
-          "ar": "من برشلونة إلى باريس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "NJR",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "NJR"
         },
-        "value": 222,
-        "valueLabel": {
+        "stat": {
           "en": "€222M",
           "ar": "222 مليون €"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Barcelona → PSG",
+          "ar": "من برشلونة إلى باريس"
+        }
       },
       {
         "answerKey": "tf_mbappe",
@@ -2119,22 +1727,19 @@
           "en": "Kylian Mbappé (2018)",
           "ar": "كيليان مبابي (2018)"
         },
-        "subText": {
-          "en": "Monaco → PSG",
-          "ar": "من موناكو إلى باريس"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "KM7",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+          "fallbackText": "KM7"
         },
-        "value": 180,
-        "valueLabel": {
+        "stat": {
           "en": "€180M",
           "ar": "180 مليون €"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Monaco → PSG",
+          "ar": "من موناكو إلى باريس"
+        }
       },
       {
         "answerKey": "tf_coutinho",
@@ -2142,22 +1747,19 @@
           "en": "Philippe Coutinho (2018)",
           "ar": "فيليبي كوتينيو (2018)"
         },
-        "subText": {
-          "en": "Liverpool → Barcelona",
-          "ar": "من ليفربول إلى برشلونة"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "PC10",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Philippe_Coutinho_2018.jpg/330px-Philippe_Coutinho_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "PC10"
         },
-        "value": 135,
-        "valueLabel": {
+        "stat": {
           "en": "€135M",
           "ar": "135 مليون €"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Liverpool → Barcelona",
+          "ar": "من ليفربول إلى برشلونة"
+        }
       },
       {
         "answerKey": "tf_joao",
@@ -2165,22 +1767,19 @@
           "en": "João Félix (2019)",
           "ar": "جواو فيليكس (2019)"
         },
-        "subText": {
-          "en": "Benfica → Atlético Madrid",
-          "ar": "من بنفيكا إلى أتلتيكو"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JF7",
           "primaryUrl": "https://media.api-sports.io/football/players/1243.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/530.png"
+          "fallbackText": "JF7"
         },
-        "value": 127,
-        "valueLabel": {
+        "stat": {
           "en": "€127M",
           "ar": "127 مليون €"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Benfica → Atlético Madrid",
+          "ar": "من بنفيكا إلى أتلتيكو"
+        }
       },
       {
         "answerKey": "tf_rice",
@@ -2188,45 +1787,32 @@
           "en": "Declan Rice (2023)",
           "ar": "ديكلان رايس (2023)"
         },
-        "subText": {
-          "en": "West Ham → Arsenal",
-          "ar": "من وست هام إلى أرسنال"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "DR41",
           "primaryUrl": "https://media.api-sports.io/football/players/292.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png"
+          "fallbackText": "DR41"
         },
-        "value": 116,
-        "valueLabel": {
+        "stat": {
           "en": "€116M",
           "ar": "116 مليون €"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "West Ham → Arsenal",
+          "ar": "من وست هام إلى أرسنال"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Base initial transfer fee in Millions of Euros",
+      "ar": "قيمة الصفقة الأساسية بملايين اليورو"
+    }
   },
   {
-    "slug": "premier-league-record-signings",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "MEDIUM",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["premier-league", "transfers", "fees", "chelsea", "mancity"],
     "title": {
       "en": "Rank these 5 Premier League arrivals by transfer fee in Pounds (£)",
       "ar": "رتّب تعاقدات البريميرليج الخمسة حسب قيمة الصفقة بالجنيه الإسترليني (£)"
     },
-    "subtitle": {
-      "en": "Initial transfer fee in Millions of Pounds (£)",
-      "ar": "قيمة الصفقة الأساسية بملايين الجنيهات الإسترلينية"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "plf_caicedo",
@@ -2234,22 +1820,19 @@
           "en": "Moisés Caicedo (2023)",
           "ar": "مويسيس كايسيدو (2023)"
         },
-        "subText": {
-          "en": "Brighton → Chelsea",
-          "ar": "من برايتون إلى تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "MC25",
           "primaryUrl": "https://media.api-sports.io/football/players/162859.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "MC25"
         },
-        "value": 115,
-        "valueLabel": {
+        "stat": {
           "en": "£115M",
           "ar": "115 مليون £"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Brighton → Chelsea",
+          "ar": "من برايتون إلى تشيلسي"
+        }
       },
       {
         "answerKey": "plf_enzo",
@@ -2257,22 +1840,19 @@
           "en": "Enzo Fernández (2023)",
           "ar": "إنزو فيرنانديز (2023)"
         },
-        "subText": {
-          "en": "Benfica → Chelsea",
-          "ar": "من بنفيكا إلى تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "EF8",
           "primaryUrl": "https://media.api-sports.io/football/players/6008.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "EF8"
         },
-        "value": 107,
-        "valueLabel": {
+        "stat": {
           "en": "£107M",
           "ar": "107 مليون £"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Benfica → Chelsea",
+          "ar": "من بنفيكا إلى تشيلسي"
+        }
       },
       {
         "answerKey": "plf_rice",
@@ -2280,22 +1860,19 @@
           "en": "Declan Rice (2023)",
           "ar": "ديكلان رايس (2023)"
         },
-        "subText": {
-          "en": "West Ham → Arsenal",
-          "ar": "من وست هام إلى أرسنال"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "DR41",
           "primaryUrl": "https://media.api-sports.io/football/players/292.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/42.png"
+          "fallbackText": "DR41"
         },
-        "value": 105,
-        "valueLabel": {
+        "stat": {
           "en": "£105M",
           "ar": "105 مليون £"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "West Ham → Arsenal",
+          "ar": "من وست هام إلى أرسنال"
+        }
       },
       {
         "answerKey": "plf_grealish",
@@ -2303,22 +1880,19 @@
           "en": "Jack Grealish (2021)",
           "ar": "جاك جريليش (2021)"
         },
-        "subText": {
-          "en": "Aston Villa → Man City",
-          "ar": "من أستون فيلا إلى مانشستر سيتي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JG10",
           "primaryUrl": "https://media.api-sports.io/football/players/19187.png",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/50.png"
+          "fallbackText": "JG10"
         },
-        "value": 100,
-        "valueLabel": {
+        "stat": {
           "en": "£100M",
           "ar": "100 مليون £"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Aston Villa → Man City",
+          "ar": "من أستون فيلا إلى مانشستر سيتي"
+        }
       },
       {
         "answerKey": "plf_lukaku",
@@ -2326,45 +1900,32 @@
           "en": "Romelu Lukaku (2021)",
           "ar": "روميلو لوكاكو (2021)"
         },
-        "subText": {
-          "en": "Inter Milan → Chelsea",
-          "ar": "من إنتر إلى تشيلسي"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "RL9",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Romelu_Lukaku_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/49.png"
+          "fallbackText": "RL9"
         },
-        "value": 97.5,
-        "valueLabel": {
+        "stat": {
           "en": "£97.5M",
           "ar": "97.5 مليون £"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Inter Milan → Chelsea",
+          "ar": "من إنتر إلى تشيلسي"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Initial transfer fee in Millions of Pounds (£)",
+      "ar": "قيمة الصفقة الأساسية بملايين الجنيهات الإسترلينية"
+    }
   },
   {
-    "slug": "record-transfer-fees-all-time",
-    "scopeType": "TRANSFERS_MARKET",
-    "difficulty": "MEDIUM",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["transfers", "market", "records", "money"],
     "title": {
       "en": "Rank these 5 blockbusters by initial transfer fee paid (€)",
       "ar": "رتّب الصفقات الخمسة حسب قيمة الانتقال الأساسية باليورو (€)"
     },
-    "subtitle": {
-      "en": "Guaranteed initial fee in Euros, excluding variable add-ons",
-      "ar": "قيمة الصفقة الثابتة المضمونة باليورو (دون احتساب الحوافز المتغيرة)"
-    },
-    "metricLabel": {
-      "en": "Transfer Fee",
-      "ar": "قيمة الصفقة"
-    },
-    "direction": "desc",
+    "category": "transfers",
     "answers": [
       {
         "answerKey": "trf_neymar_psg",
@@ -2372,22 +1933,19 @@
           "en": "Neymar Jr",
           "ar": "نيمار"
         },
-        "subText": {
-          "en": "Barcelona → PSG (2017)",
-          "ar": "برشلونة ← باريس سان جيرمان (2017)"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "NJR",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "NJR"
         },
-        "value": 222,
-        "valueLabel": {
+        "stat": {
           "en": "€222 Million",
           "ar": "222 مليون يورو"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Barcelona → PSG (2017)",
+          "ar": "برشلونة ← باريس سان جيرمان (2017)"
+        }
       },
       {
         "answerKey": "trf_mbappe_psg",
@@ -2395,22 +1953,19 @@
           "en": "Kylian Mbappé",
           "ar": "كيليان مبابي"
         },
-        "subText": {
-          "en": "Monaco → PSG (2018)",
-          "ar": "موناكو ← باريس سان جيرمان (2018)"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "KM",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/85.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/278.png",
+          "fallbackText": "KM"
         },
-        "value": 180,
-        "valueLabel": {
+        "stat": {
           "en": "€180 Million",
           "ar": "180 مليون يورو"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Monaco → PSG (2018)",
+          "ar": "موناكو ← باريس سان جيرمان (2018)"
+        }
       },
       {
         "answerKey": "trf_coutinho_barca",
@@ -2418,22 +1973,19 @@
           "en": "Philippe Coutinho",
           "ar": "فيليب كوتينيو"
         },
-        "subText": {
-          "en": "Liverpool → Barcelona (2018)",
-          "ar": "ليفربول ← برشلونة (2018)"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "PC",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Philippe_Coutinho_2018.jpg/330px-Philippe_Coutinho_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/529.png"
+          "fallbackText": "PC"
         },
-        "value": 135,
-        "valueLabel": {
+        "stat": {
           "en": "€135 Million",
           "ar": "135 مليون يورو"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Liverpool → Barcelona (2018)",
+          "ar": "ليفربول ← برشلونة (2018)"
+        }
       },
       {
         "answerKey": "trf_bellingham_real",
@@ -2441,22 +1993,19 @@
           "en": "Jude Bellingham",
           "ar": "جود بيلينغهام"
         },
-        "subText": {
-          "en": "Dortmund → Real Madrid (2023)",
-          "ar": "دورتموند ← ريال مدريد (2023)"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JB",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jude_Bellingham_2023.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/157052.png",
+          "fallbackText": "JB"
         },
-        "value": 103,
-        "valueLabel": {
+        "stat": {
           "en": "€103 Million",
           "ar": "103 مليون يورو"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Dortmund → Real Madrid (2023)",
+          "ar": "دورتموند ← ريال مدريد (2023)"
+        }
       },
       {
         "answerKey": "trf_cr7_real",
@@ -2464,23 +2013,24 @@
           "en": "Cristiano Ronaldo",
           "ar": "كريستيانو رونالدو"
         },
-        "subText": {
-          "en": "Man United → Real Madrid (2009)",
-          "ar": "مان يونايتد ← ريال مدريد (2009)"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "CR7",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
-          "secondaryBadgeUrl": "https://media.api-sports.io/football/teams/541.png"
+          "fallbackText": "CR7"
         },
-        "value": 94,
-        "valueLabel": {
+        "stat": {
           "en": "€94 Million",
           "ar": "94 مليون يورو"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Man United → Real Madrid (2009)",
+          "ar": "مان يونايتد ← ريال مدريد (2009)"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Guaranteed initial fee in Euros, excluding variable add-ons",
+      "ar": "قيمة الصفقة الثابتة المضمونة باليورو (دون احتساب الحوافز المتغيرة)"
+    }
   }
 ]

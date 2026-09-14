@@ -19,6 +19,7 @@ interface RankHeaderProps {
   totalRounds: number;
   deadline?: number;
   onTimeExpired?: () => void;
+  category?: string;
   scopeType?: string;
   isDuel?: boolean;
   participants?: ParticipantInfo[];
@@ -31,6 +32,7 @@ export function RankHeader({
   totalRounds,
   deadline,
   onTimeExpired,
+  category,
   scopeType,
   isDuel,
   participants,
@@ -129,7 +131,7 @@ export function RankHeader({
           </div>
         ) : (
           <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/12 bg-slate-900/85 text-xs font-semibold text-steel whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
-            <span className="text-[11px] font-bold text-steel uppercase">{scopeType?.replace('_', ' ') || 'RANK'}</span>
+            <span className="text-[11px] font-bold text-steel uppercase">{category?.replace('_', ' ') || scopeType?.replace('_', ' ') || 'RANK'}</span>
           </div>
         )}
       </div>

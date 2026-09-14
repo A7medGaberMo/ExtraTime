@@ -7,19 +7,20 @@ describe('Rank Question Bank Invariants', () => {
     expect(allRankSeedQuestions.length).toBeGreaterThanOrEqual(200);
   });
 
-  it('should have unique slugs for all questions in bank', () => {
-    const slugs = new Set<string>();
+  it('should have unique titles for all questions in bank', () => {
+    const titles = new Set<string>();
     for (const q of allRankSeedQuestions) {
-      expect(slugs.has(q.slug)).toBe(false);
-      slugs.add(q.slug);
+      const key = q.title.en.trim().toLowerCase();
+      expect(titles.has(key)).toBe(false);
+      titles.add(key);
     }
   });
 
-  it('should strictly satisfy all validation invariants (5 answers, monotonic, no ties, bilingual)', () => {
+  it('should strictly satisfy all validation invariants (5 answers, bilingual, valid stats)', () => {
     for (const q of allRankSeedQuestions) {
       const res = validateRankQuestion(q);
       if (!res.valid) {
-        throw new Error(`Validation failed for "${q.slug}": ${res.error}`);
+        throw new Error(`Validation failed for "${q.title.en}": ${res.error}`);
       }
       expect(res.valid).toBe(true);
     }

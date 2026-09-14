@@ -1,24 +1,10 @@
 [
   {
-    "slug": "ballon-dor-podium-finishes-all-time",
-    "scopeType": "ALL_TIME",
     "title": {
       "en": "Rank these 5 legends by career Ballon d'Or podium finishes (Top 3)",
       "ar": "رتّب الأساطير الخمسة حسب عدد مرات الوصول لمنصة التتويج بالكرة الذهبية (المراكز الثلاثة الأولى)"
     },
-    "subtitle": {
-      "en": "Total top 3 finishes (1st, 2nd, or 3rd place)",
-      "ar": "إجمالي مرات التواجد في المراكز الثلاثة الأولى"
-    },
-    "metricLabel": {
-      "en": "Podiums",
-      "ar": "منصات تتويج"
-    },
-    "direction": "desc",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["ballon-dor", "individual-awards", "messi", "ronaldo", "legends"],
+    "category": "players",
     "answers": [
       {
         "answerKey": "bop_messi",
@@ -26,21 +12,19 @@
           "en": "Lionel Messi",
           "ar": "ليونيل ميسي"
         },
-        "subText": {
-          "en": "8 Wins, 5 Runners-up, 1 Third",
-          "ar": "8 كرات، 5 وصافة، 1 ثالث"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "LM10",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM10"
         },
-        "value": 14,
-        "valueLabel": {
+        "stat": {
           "en": "14 Podiums",
           "ar": "14 منصة"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "8 Wins, 5 Runners-up, 1 Third",
+          "ar": "8 كرات، 5 وصافة، 1 ثالث"
+        }
       },
       {
         "answerKey": "bop_cr7",
@@ -48,21 +32,19 @@
           "en": "Cristiano Ronaldo",
           "ar": "كريستيانو رونالدو"
         },
-        "subText": {
-          "en": "5 Wins, 6 Runners-up, 1 Third",
-          "ar": "5 كرات، 6 وصافة، 1 ثالث"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "CR7",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
         },
-        "value": 12,
-        "valueLabel": {
+        "stat": {
           "en": "12 Podiums",
           "ar": "12 منصة"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "5 Wins, 6 Runners-up, 1 Third",
+          "ar": "5 كرات، 6 وصافة، 1 ثالث"
+        }
       },
       {
         "answerKey": "bop_platini",
@@ -70,21 +52,19 @@
           "en": "Michel Platini",
           "ar": "ميشيل بلاتيني"
         },
-        "subText": {
-          "en": "3 Wins, 2 Thirds",
-          "ar": "3 كرات، 2 ثالث"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "MP10",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Michel_Platini_1984.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Michel_Platini_2010_%28cropped%29.jpg",
+          "fallbackText": "MP10"
         },
-        "value": 5,
-        "valueLabel": {
+        "stat": {
           "en": "5 Podiums",
           "ar": "5 منصات"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "3 Wins, 2 Thirds",
+          "ar": "3 كرات، 2 ثالث"
+        }
       },
       {
         "answerKey": "bop_cruyff",
@@ -92,21 +72,19 @@
           "en": "Johan Cruyff",
           "ar": "يوهان كرويف"
         },
-        "subText": {
-          "en": "3 Wins, 1 Third",
-          "ar": "3 كرات، 1 ثالث"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "JC14",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Johan_Cruijff_1974_%28cropped%29.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Johan_Cruijff_%281974%29.jpg/330px-Johan_Cruijff_%281974%29.jpg",
+          "fallbackText": "JC14"
         },
-        "value": 4,
-        "valueLabel": {
+        "stat": {
           "en": "4 Podiums",
           "ar": "4 منصات"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "3 Wins, 1 Third",
+          "ar": "3 كرات، 1 ثالث"
+        }
       },
       {
         "answerKey": "bop_zidane",
@@ -114,44 +92,32 @@
           "en": "Zinedine Zidane",
           "ar": "زين الدين زيدان"
         },
-        "subText": {
-          "en": "1 Win, 1 Runner-up, 1 Third",
-          "ar": "1 كرة، 1 وصافة، 1 ثالث"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "ZZ",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/330px-Zinedine_Zidane_by_Tasnim_03.jpg",
+          "fallbackText": "ZZ"
         },
-        "value": 3,
-        "valueLabel": {
+        "stat": {
           "en": "3 Podiums",
           "ar": "3 منصات"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "1 Win, 1 Runner-up, 1 Third",
+          "ar": "1 كرة، 1 وصافة، 1 ثالث"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Total top 3 finishes (1st, 2nd, or 3rd place)",
+      "ar": "إجمالي مرات التواجد في المراكز الثلاثة الأولى"
+    }
   },
   {
-    "slug": "ucl-minutes-played-legends",
-    "scopeType": "ALL_TIME",
-    "difficulty": "VERY_HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["ucl", "minutes", "legends", "longevity"],
     "title": {
       "en": "Rank these 5 legends by total Champions League minutes played",
       "ar": "رتّب الأساطير الخمسة حسب إجمالي الدقائق الملعوبة في دوري أبطال أوروبا"
     },
-    "subtitle": {
-      "en": "Official UEFA Champions League minutes played, through 2025–26",
-      "ar": "إجمالي الدقائق الرسمية في تاريخ دوري الأبطال حتى 2025–26"
-    },
-    "metricLabel": {
-      "en": "Minutes",
-      "ar": "دقائق"
-    },
-    "direction": "desc",
+    "category": "players",
     "answers": [
       {
         "answerKey": "ucl_min_casillas",
@@ -161,15 +127,13 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "IK1",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Iker_Casillas_2018.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Iker_Casillas_2015.jpg/330px-Iker_Casillas_2015.jpg",
+          "fallbackText": "IK1"
         },
-        "value": 16267,
-        "valueLabel": {
+        "stat": {
           "en": "16,267 Mins",
           "ar": "16,267 دقيقة"
-        },
-        "correctRank": 1
+        }
       },
       {
         "answerKey": "ucl_min_cr7",
@@ -179,15 +143,13 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "CR7",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
         },
-        "value": 16189,
-        "valueLabel": {
+        "stat": {
           "en": "16,189 Mins",
           "ar": "16,189 دقيقة"
-        },
-        "correctRank": 2
+        }
       },
       {
         "answerKey": "ucl_min_neuer",
@@ -197,15 +159,13 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "MN1",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Manuel_Neuer_2018.jpg"
+          "primaryUrl": "https://media.api-sports.io/football/players/497.png",
+          "fallbackText": "MN1"
         },
-        "value": 14743,
-        "valueLabel": {
+        "stat": {
           "en": "14,743 Mins",
           "ar": "14,743 دقيقة"
-        },
-        "correctRank": 3
+        }
       },
       {
         "answerKey": "ucl_min_ramos",
@@ -215,15 +175,13 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "SR4",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Sergio_Ramos_2018.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sergio_Ramos_2018.jpg/330px-Sergio_Ramos_2018.jpg",
+          "fallbackText": "SR4"
         },
-        "value": 12571,
-        "valueLabel": {
+        "stat": {
           "en": "12,571 Mins",
           "ar": "12,571 دقيقة"
-        },
-        "correctRank": 4
+        }
       },
       {
         "answerKey": "ucl_min_buffon",
@@ -233,38 +191,26 @@
         },
         "media": {
           "type": "player",
-          "fallbackText": "GB1",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gianluigi_Buffon_%2831818228963%29_%28cropped%29.jpg"
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gianluigi_Buffon_2017.jpg/330px-Gianluigi_Buffon_2017.jpg",
+          "fallbackText": "GB1"
         },
-        "value": 12000,
-        "valueLabel": {
+        "stat": {
           "en": "12,000 Mins",
           "ar": "12,000 دقيقة"
-        },
-        "correctRank": 5
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "Official UEFA Champions League minutes played, through 2025–26",
+      "ar": "إجمالي الدقائق الرسمية في تاريخ دوري الأبطال حتى 2025–26"
+    }
   },
   {
-    "slug": "most-international-caps-mens-football-history",
-    "scopeType": "ALL_TIME",
     "title": {
       "en": "Rank these 5 players by official senior international caps won",
       "ar": "رتّب اللاعبين الخمسة حسب عدد المباريات الدولية الرسمية مع منتخباتهم الوطنية"
     },
-    "subtitle": {
-      "en": "FIFA recognized senior international appearances",
-      "ar": "المباريات الدولية المعتمدة من الاتحاد الدولي (فيفا)"
-    },
-    "metricLabel": {
-      "en": "Caps",
-      "ar": "مباريات دولية"
-    },
-    "direction": "desc",
-    "difficulty": "HARD",
-    "asOfDate": "2026-08",
-    "isActive": true,
-    "tags": ["international-caps", "cr7", "messi", "caps"],
+    "category": "players",
     "answers": [
       {
         "answerKey": "cap_cr7",
@@ -272,22 +218,19 @@
           "en": "Cristiano Ronaldo",
           "ar": "كريستيانو رونالدو"
         },
-        "subText": {
-          "en": "Portugal",
-          "ar": "البرتغال"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "CR7",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
-          "secondaryBadgeUrl": "https://flagcdn.com/w160/pt.png"
+          "fallbackText": "CR7"
         },
-        "value": 217,
-        "valueLabel": {
+        "stat": {
           "en": "217 Caps",
           "ar": "217 مباراة"
         },
-        "correctRank": 1
+        "subText": {
+          "en": "Portugal",
+          "ar": "البرتغال"
+        }
       },
       {
         "answerKey": "cap_mutawa",
@@ -295,22 +238,19 @@
           "en": "Bader Al-Mutawa",
           "ar": "بدر المطوع"
         },
-        "subText": {
-          "en": "Kuwait",
-          "ar": "الكويت"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "BM17",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bader_Al-Mutawa_2019.jpg",
-          "secondaryBadgeUrl": "https://flagcdn.com/w160/kw.png"
+          "fallbackText": "BM17"
         },
-        "value": 196,
-        "valueLabel": {
+        "stat": {
           "en": "196 Caps",
           "ar": "196 مباراة"
         },
-        "correctRank": 2
+        "subText": {
+          "en": "Kuwait",
+          "ar": "الكويت"
+        }
       },
       {
         "answerKey": "cap_ann",
@@ -318,22 +258,19 @@
           "en": "Soh Chin Ann",
           "ar": "سوه تشين آن"
         },
-        "subText": {
-          "en": "Malaysia",
-          "ar": "ماليزيا"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "SCA",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Soh_Chin_Aun_1972.jpg/330px-Soh_Chin_Aun_1972.jpg",
-          "secondaryBadgeUrl": "https://flagcdn.com/w160/my.png"
+          "fallbackText": "SCA"
         },
-        "value": 195,
-        "valueLabel": {
+        "stat": {
           "en": "195 Caps",
           "ar": "195 مباراة"
         },
-        "correctRank": 3
+        "subText": {
+          "en": "Malaysia",
+          "ar": "ماليزيا"
+        }
       },
       {
         "answerKey": "cap_messi",
@@ -341,22 +278,19 @@
           "en": "Lionel Messi",
           "ar": "ليونيل ميسي"
         },
-        "subText": {
-          "en": "Argentina",
-          "ar": "الأرجنتين"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "LM10",
           "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
-          "secondaryBadgeUrl": "https://flagcdn.com/w160/ar.png"
+          "fallbackText": "LM10"
         },
-        "value": 191,
-        "valueLabel": {
+        "stat": {
           "en": "191 Caps",
           "ar": "191 مباراة"
         },
-        "correctRank": 4
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        }
       },
       {
         "answerKey": "cap_hassan",
@@ -364,23 +298,24 @@
           "en": "Ahmed Hassan",
           "ar": "أحمد حسن"
         },
-        "subText": {
-          "en": "Egypt",
-          "ar": "مصر"
-        },
         "media": {
           "type": "player",
-          "fallbackText": "AH17",
-          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Ahmed_Hassan_2010.jpg",
-          "secondaryBadgeUrl": "https://flagcdn.com/w160/eg.png"
+          "primaryUrl": "https://media.api-sports.io/football/players/482305.png",
+          "fallbackText": "AH17"
         },
-        "value": 184,
-        "valueLabel": {
+        "stat": {
           "en": "184 Caps",
           "ar": "184 مباراة"
         },
-        "correctRank": 5
+        "subText": {
+          "en": "Egypt",
+          "ar": "مصر"
+        }
       }
-    ]
+    ],
+    "subtitle": {
+      "en": "FIFA recognized senior international appearances",
+      "ar": "المباريات الدولية المعتمدة من الاتحاد الدولي (فيفا)"
+    }
   }
 ]

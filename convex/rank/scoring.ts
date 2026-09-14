@@ -21,17 +21,11 @@ export interface RoundScoreResult {
  */
 export function scoreRoundSubmission(
   submittedOrder: string[], // Array of 5 answerKeys
-  answers: Array<{ answerKey: string; value: number }>,
-  direction: "desc" | "asc",
+  canonicalAnswers: Array<{ answerKey: string }>, // In 1st to 5th rank order
   secondsRemaining: number
 ): RoundScoreResult {
-  // 1. Sort canonical answers strictly by value according to direction
-  const sorted = [...answers].sort((a, b) =>
-    direction === "desc" ? b.value - a.value : a.value - b.value
-  );
-
   const actualRankMap = new Map<string, number>();
-  sorted.forEach((item, index) => {
+  canonicalAnswers.forEach((item, index) => {
     actualRankMap.set(item.answerKey, index + 1);
   });
 

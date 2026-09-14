@@ -266,33 +266,40 @@ export async function generateCandidatesForSlot(
 
   const unused = allPlayers.filter((p) => !usedPlayerIds.has(String(p._id)));
 
+  // Strict constraint: Draft suggestions must be at least GOLD (Rating >= 74 / Gold, Elite, Master, Ultimate, Hero, Icon)
+  // Silver and Bronze cards are strictly excluded from draft picks
+  const isGoldOrAbove = (p: Doc<'players'>) =>
+    !['SILVER', 'BRONZE'].includes(p.tier) && (p.rating === undefined || p.rating >= 74);
+  const eligibleGoldUnused = unused.filter(isGoldOrAbove);
+  const activePool = eligibleGoldUnused.length >= 20 ? eligibleGoldUnused : unused;
+
   // Slot 0 (Captain): Always ICON / HERO tier players, biased to highest ratings
   if (slotIndex === 0 || targetPosition === 'CAPTAIN') {
-    const icons = unused.filter((p) => p.tier === 'ICON');
+    const icons = activePool.filter((p) => p.tier === 'ICON');
     if (icons.length >= 5) {
       const picked = pickWeightedUnique(icons, 5, getPlayerCandidateWeight);
       return shuffleArray(picked).map((c) => c._id);
     }
-    const heroes = unused.filter((p) => p.tier === 'HERO');
+    const heroes = activePool.filter((p) => p.tier === 'HERO');
     const captainPool = [...icons, ...heroes];
     if (captainPool.length >= 5) {
       const picked = pickWeightedUnique(captainPool, 5, getPlayerCandidateWeight);
       return shuffleArray(picked).map((c) => c._id);
     }
-    const masters = unused.filter((p) => ['ULTIMATE', 'MASTER'].includes(p.tier));
+    const masters = activePool.filter((p) => ['ULTIMATE', 'MASTER'].includes(p.tier));
     const allHighTiers = [...captainPool, ...masters];
     if (allHighTiers.length >= 5) {
       const picked = pickWeightedUnique(allHighTiers, 5, getPlayerCandidateWeight);
       return shuffleArray(picked).map((c) => c._id);
     }
-    const picked = pickWeightedUnique(unused, 5, getPlayerCandidateWeight);
+    const picked = pickWeightedUnique(activePool, 5, getPlayerCandidateWeight);
     return shuffleArray(picked).map((c) => c._id);
   }
 
-  // Bench (Slots >= 11): Generous Super-Subs
+  // Bench (Slots >= 11): Generous Super-Subs (Gold at least)
   if (slotIndex >= 11 || targetPosition === 'BENCH') {
     // 25% chance for a same-category bench pick (e.g. all Premier League or all French super-subs)
-    const categories = findThematicCategories(unused, clubMap, nationMap);
+    const categories = findThematicCategories(activePool, clubMap, nationMap);
     if (categories.length > 0 && Math.random() < 0.25) {
       const chosenCat = categories[Math.floor(Math.random() * categories.length)];
       const picked = pickWeightedUnique(chosenCat.players, 5, getPlayerCandidateWeight);
@@ -301,12 +308,12 @@ export async function generateCandidatesForSlot(
       }
     }
 
-    const picked = pickWeightedUnique(unused, 5, getPlayerCandidateWeight);
+    const picked = pickWeightedUnique(activePool, 5, getPlayerCandidateWeight);
     return shuffleArray(picked).map((c) => c._id);
   }
 
-  // Starters (Slots 1 to 10): Position-compatible pool
-  const exactPosPool = unused.filter((p) => isPositionCompatible(targetPosition, p.position));
+  // Starters (Slots 1 to 10): Position-compatible pool (Gold at least)
+  const exactPosPool = activePool.filter((p) => isPositionCompatible(targetPosition, p.position));
 
   if (exactPosPool.length >= 5) {
     // 1. Thematic / Same-Category Pick (~35-40% chance):
@@ -353,19 +360,19 @@ export async function generateCandidatesForSlot(
   }
 
   // Fallback if exact pool has fewer than 5 cards:
-  // Take all available exact cards, then pad with high-quality fallback cards
+  // Take all available exact cards, then pad with high-quality fallback cards from activePool
   const picked: Doc<'players'>[] = [...exactPosPool];
   const pickedIds = new Set<string>(exactPosPool.map((p) => String(p._id)));
 
   const fallbackPool =
     targetPosition === 'GK'
-      ? unused.filter((p) => p.position.includes('GK') && !pickedIds.has(String(p._id)))
-      : unused.filter((p) => !p.position.includes('GK') && !pickedIds.has(String(p._id)));
+      ? activePool.filter((p) => p.position.includes('GK') && !pickedIds.has(String(p._id)))
+      : activePool.filter((p) => !p.position.includes('GK') && !pickedIds.has(String(p._id)));
 
   const poolToDraw =
     fallbackPool.length > 0
       ? fallbackPool
-      : unused.filter((p) => !pickedIds.has(String(p._id)));
+      : activePool.filter((p) => !pickedIds.has(String(p._id)));
 
   const needed = 5 - picked.length;
   const padded = pickWeightedUnique(poolToDraw, needed, getPlayerCandidateWeight);

@@ -90,8 +90,8 @@ export const getGameState = query({
 
     // ── 2. ACTIVE ROUND (Cheat-Proof Sanitized DTO) ───────────────────
     if (game.status === "round_active" && rawQuestion) {
-      // Deterministically scramble cards using game code, round index, and question slug
-      const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion.slug}`;
+      // Deterministically scramble cards using game code, round index, and question ID
+      const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion._id}`;
       const scrambledCards = seededShuffle(rawQuestion.answers, roundSeed);
 
       const sanitizedAnswers = scrambledCards.map((ans) => {
@@ -106,10 +106,6 @@ export const getGameState = query({
           name: ans.name[locale],
           subText: cleanSubText,
           media: ans.media,
-          // Value, valueLabel, and correctRank are STRIPPED
-          value: undefined,
-          valueLabel: undefined,
-          correctRank: undefined,
         };
       });
 
@@ -125,15 +121,9 @@ export const getGameState = query({
         roundStartedAt: game.roundStartedAt,
         roundDeadline: game.roundDeadline,
         question: {
-          slug: rawQuestion.slug,
-          scopeType: rawQuestion.scopeType,
           title: rawQuestion.title[locale],
           subtitle: rawQuestion.subtitle ? rawQuestion.subtitle[locale] : undefined,
-          metricLabel: rawQuestion.metricLabel[locale],
-          direction: rawQuestion.direction,
-          difficulty: rawQuestion.difficulty,
-          asOfDate: rawQuestion.asOfDate,
-          tags: rawQuestion.tags,
+          category: rawQuestion.category,
           answers: sanitizedAnswers,
         },
         participants,
@@ -152,23 +142,16 @@ export const getGameState = query({
 
     if (rawQuestion) {
       localizedQuestion = {
-        slug: rawQuestion.slug,
-        scopeType: rawQuestion.scopeType,
         title: rawQuestion.title[locale],
         subtitle: rawQuestion.subtitle ? rawQuestion.subtitle[locale] : undefined,
-        metricLabel: rawQuestion.metricLabel[locale],
-        direction: rawQuestion.direction,
-        difficulty: rawQuestion.difficulty,
-        asOfDate: rawQuestion.asOfDate,
-        tags: rawQuestion.tags,
-        answers: rawQuestion.answers.map((ans) => ({
+        category: rawQuestion.category,
+        answers: rawQuestion.answers.map((ans, idx) => ({
           answerKey: ans.answerKey,
           name: ans.name[locale],
           subText: ans.subText ? ans.subText[locale] : undefined,
           media: ans.media,
-          value: ans.value,
-          valueLabel: ans.valueLabel[locale],
-          correctRank: ans.correctRank,
+          stat: ans.stat[locale],
+          correctRank: idx + 1,
         })),
       };
     }
@@ -224,16 +207,15 @@ export const getBankStats = query({
       .withIndex("by_active", (q) => q.eq("isActive", true))
       .take(500);
 
+    const byCategory: Record<string, number> = {};
+    for (const q of questions) {
+      const cat = q.category || "general";
+      byCategory[cat] = (byCategory[cat] || 0) + 1;
+    }
+
     return {
       totalQuestions: questions.length,
-      byScope: {
-        ALL_TIME: questions.filter((q) => q.scopeType === "ALL_TIME").length,
-        PER_SEASON: questions.filter((q) => q.scopeType === "PER_SEASON").length,
-        PER_CLUB: questions.filter((q) => q.scopeType === "PER_CLUB").length,
-        PER_COMPETITION: questions.filter((q) => q.scopeType === "PER_COMPETITION").length,
-        PLAYER_STINTS: questions.filter((q) => q.scopeType === "PLAYER_STINTS").length,
-        TRANSFERS_MARKET: questions.filter((q) => q.scopeType === "TRANSFERS_MARKET").length,
-      },
+      byCategory,
     };
   },
 });

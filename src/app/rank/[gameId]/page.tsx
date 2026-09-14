@@ -339,7 +339,7 @@ export default function RankArenaPage() {
         <RankHeader
           currentRound={gameState.currentRoundIndex + 1}
           totalRounds={gameState.roundCount}
-          scopeType={gameState.question.scopeType}
+          category={gameState.question?.category}
           isDuel={isDuel}
           participants={gameState.participants}
           currentGuestId={guestId}
@@ -369,7 +369,7 @@ export default function RankArenaPage() {
         totalRounds={gameState.roundCount}
         deadline={gameState.roundDeadline}
         onTimeExpired={handleSubmitRanking}
-        scopeType={gameState.question?.scopeType}
+        category={gameState.question?.category}
         isDuel={isDuel}
         participants={gameState.participants}
         currentGuestId={guestId}
@@ -413,8 +413,6 @@ export default function RankArenaPage() {
       {gameState.question && (
         <RankCardList
           questionTitle={gameState.question.title}
-          metricLabel={gameState.question.metricLabel}
-          direction={gameState.question.direction}
           items={gameState.question.answers || []}
           currentOrder={currentOrder}
           onOrderChange={(order) => setCustomOrder(order)}

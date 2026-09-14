@@ -14,8 +14,9 @@ export interface RevealAnswerItem {
   name: string;
   subText?: string;
   media: RankMedia;
-  value: number;
-  valueLabel: string;
+  stat?: string;
+  value?: number;
+  valueLabel?: string;
   correctRank: number;
 }
 
@@ -207,7 +208,7 @@ export function RankRevealView({
                       </span>
                     )}
                     <span className="font-semibold text-amber-300 text-xs font-stats shrink-0">
-                      ({item.valueLabel})
+                      ({item.stat || item.valueLabel})
                     </span>
                   </div>
                   <div className="flex items-center gap-1 text-[11px] sm:text-xs text-steel font-normal truncate leading-none pt-0.5">

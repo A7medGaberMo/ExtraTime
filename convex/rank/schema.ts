@@ -25,46 +25,24 @@ export const rankAnswerMediaValidator = v.object({
 
 // Single Answer Item
 export const rankAnswerItemValidator = v.object({
-  answerKey: v.string(), // e.g. "ans_manu", "ans_cr7_real"
+  answerKey: v.string(), // e.g. "manu", "cr7"
   name: v.object({ en: v.string(), ar: v.string() }),
   subText: v.optional(v.object({ en: v.string(), ar: v.string() })), // e.g. "Real Madrid (2009–18)"
   media: rankAnswerMediaValidator,
-  value: v.number(), // Sortable numeric value
-  valueLabel: v.object({ en: v.string(), ar: v.string() }), // e.g. "13 Titles" / "13 لقب"
-  correctRank: v.number(), // 1 to 5
+  stat: v.object({ en: v.string(), ar: v.string() }), // e.g. "13 Titles" / "13 لقب"
 });
 
 // Question Table
 export const rankQuestionsTable = defineTable({
-  slug: v.string(),
-  scopeType: v.union(
-    v.literal("ALL_TIME"),
-    v.literal("PER_SEASON"),
-    v.literal("PER_CLUB"),
-    v.literal("PER_COMPETITION"),
-    v.literal("PLAYER_STINTS"),
-    v.literal("TRANSFERS_MARKET")
-  ),
   title: v.object({ en: v.string(), ar: v.string() }),
   subtitle: v.optional(v.object({ en: v.string(), ar: v.string() })),
-  metricLabel: v.object({ en: v.string(), ar: v.string() }),
-  direction: v.union(v.literal("desc"), v.literal("asc")),
-  difficulty: v.union(
-    v.literal("EASY"),
-    v.literal("MEDIUM"),
-    v.literal("HARD"),
-    v.literal("VERY_HARD")
-  ),
-  answers: v.array(rankAnswerItemValidator), // Exactly 5 distinct items
-  asOfDate: v.string(), // e.g. "2026-08"
+  category: v.optional(v.string()), // e.g. "clubs", "players", "competitions", "transfers", "seasons"
+  answers: v.array(rankAnswerItemValidator), // Exactly 5 items in canonical Rank 1 -> 5 order
   isActive: v.boolean(),
-  tags: v.array(v.string()),
   createdAt: v.number(),
 })
   .index("by_active", ["isActive"])
-  .index("by_scope", ["isActive", "scopeType"])
-  .index("by_difficulty", ["isActive", "difficulty"])
-  .index("by_slug", ["slug"]);
+  .index("by_category", ["isActive", "category"]);
 
 // Participant State within an Active Game
 export const rankParticipantValidator = v.object({

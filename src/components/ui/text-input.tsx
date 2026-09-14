@@ -37,7 +37,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
 
         <div className="relative flex items-center">
           {leftIcon && (
-            <span className="text-steel pointer-events-none absolute left-3.5 flex items-center">
+            <span className="text-steel pointer-events-none absolute start-3.5 flex items-center">
               {leftIcon}
             </span>
           )}
@@ -46,8 +46,8 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
             ref={ref}
             className={cn(
               'h-11 sm:h-12 w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 text-xs sm:text-sm font-semibold text-white placeholder:text-steel/50 transition-all duration-150 focus:border-lime/50 focus:bg-slate-900/90 focus:outline-none backdrop-blur-md',
-              leftIcon && 'pl-10',
-              actionElement && 'pr-10',
+              leftIcon && 'ps-10',
+              actionElement && 'pe-10',
               error && 'border-rose-500/50 focus:border-rose-500',
               className,
             )}
@@ -55,14 +55,14 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
           />
 
           {actionElement && (
-            <span className="text-steel absolute right-2 flex items-center">
+            <span className="text-steel absolute end-2 flex items-center">
               {actionElement}
             </span>
           )}
         </div>
 
         {error && (
-          <p className="text-rose-400 text-xs font-medium pl-1">{error}</p>
+          <p className="text-rose-400 text-xs font-medium ps-1">{error}</p>
         )}
       </div>
     );

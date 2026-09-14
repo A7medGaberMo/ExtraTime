@@ -8,16 +8,10 @@ import worldCupAndInternational from './competitions/world-cup-and-international
 import legendaryCampaigns from './seasons/legendary-campaigns.json';
 
 export interface RankQuestionSeedItem {
-  slug: string;
-  scopeType: 'ALL_TIME' | 'PER_SEASON' | 'PER_CLUB' | 'PER_COMPETITION' | 'PLAYER_STINTS' | 'TRANSFERS_MARKET';
-  difficulty: 'EASY' | 'MEDIUM' | 'HARD' | 'VERY_HARD';
-  asOfDate: string;
-  isActive: boolean;
-  tags: string[];
   title: { en: string; ar: string };
   subtitle?: { en: string; ar: string };
-  metricLabel: { en: string; ar: string };
-  direction: 'asc' | 'desc';
+  category?: 'clubs' | 'players' | 'competitions' | 'transfers' | 'seasons' | string;
+  isActive?: boolean;
   answers: {
     answerKey: string;
     name: { en: string; ar: string };
@@ -27,14 +21,13 @@ export interface RankQuestionSeedItem {
       fallbackText?: string;
       primaryUrl?: string;
       secondaryBadgeUrl?: string;
+      entityId?: string;
       stintBadge?: {
         clubName: string;
         season?: string;
       };
     };
-    value: number;
-    valueLabel: { en: string; ar: string };
-    correctRank: number;
+    stat: { en: string; ar: string };
   }[];
 }
 

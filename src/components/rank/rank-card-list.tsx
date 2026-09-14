@@ -27,8 +27,8 @@ export interface RankCardItem {
 
 interface RankCardListProps {
   questionTitle: string;
-  metricLabel: string;
-  direction: 'asc' | 'desc';
+  metricLabel?: string;
+  direction?: 'asc' | 'desc';
   items: Array<{
     answerKey: string;
     name: string;
@@ -116,16 +116,19 @@ export function RankCardList({
     }
   };
 
-  const cleanMetricLabel = metricLabel.replace(/[()]/g, '').trim();
+  const cleanMetricLabel = metricLabel ? metricLabel.replace(/[()]/g, '').trim() : '';
 
-  const directionHelperText =
-    direction === 'desc'
+  const directionHelperText = cleanMetricLabel
+    ? direction === 'asc'
       ? lang === 'ar'
+        ? `الأقل (${cleanMetricLabel}) في #1`
+        : `Lowest (${cleanMetricLabel}) at #1`
+      : lang === 'ar'
         ? `الأعلى (${cleanMetricLabel}) في #1`
         : `Highest (${cleanMetricLabel}) at #1`
-      : lang === 'ar'
-        ? `الأقل (${cleanMetricLabel}) في #1`
-        : `Lowest (${cleanMetricLabel}) at #1`;
+    : lang === 'ar'
+      ? 'الترتيب من #1 إلى #5'
+      : 'Rank from #1 to #5';
 
   const handleSubmit = () => {
     if (isSubmitting || hasSubmitted) return;

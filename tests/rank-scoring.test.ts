@@ -6,16 +6,16 @@ import { Id } from "../convex/_generated/dataModel";
 
 describe("Rank Game Scoring Engine", () => {
   const sampleAnswers = [
-    { answerKey: "ans_1", value: 100 },
-    { answerKey: "ans_2", value: 80 },
-    { answerKey: "ans_3", value: 60 },
-    { answerKey: "ans_4", value: 40 },
-    { answerKey: "ans_5", value: 20 },
+    { answerKey: "ans_1" },
+    { answerKey: "ans_2" },
+    { answerKey: "ans_3" },
+    { answerKey: "ans_4" },
+    { answerKey: "ans_5" },
   ];
 
   it("should return +10 for perfect exact ordering", () => {
     const submitted = ["ans_1", "ans_2", "ans_3", "ans_4", "ans_5"];
-    const result = scoreRoundSubmission(submitted, sampleAnswers, "desc", 30);
+    const result = scoreRoundSubmission(submitted, sampleAnswers, 30);
 
     expect(result.roundScore).toBe(10);
     expect(result.perfectCount).toBe(5);
@@ -25,21 +25,13 @@ describe("Rank Game Scoring Engine", () => {
 
   it("should return -2 for reversed ordering with distance penalty", () => {
     const submitted = ["ans_5", "ans_4", "ans_3", "ans_2", "ans_1"];
-    const result = scoreRoundSubmission(submitted, sampleAnswers, "desc", 10);
+    const result = scoreRoundSubmission(submitted, sampleAnswers, 10);
     expect(result.roundScore).toBe(-2);
-  });
-
-  it("should correctly handle ascending direction", () => {
-    const submitted = ["ans_5", "ans_4", "ans_3", "ans_2", "ans_1"];
-    const result = scoreRoundSubmission(submitted, sampleAnswers, "asc", 20);
-
-    expect(result.roundScore).toBe(10);
-    expect(result.isPerfect).toBe(true);
   });
 
   it("should calculate adjacent off-by-1 offsets (+1 pt)", () => {
     const submitted = ["ans_2", "ans_1", "ans_3", "ans_4", "ans_5"];
-    const result = scoreRoundSubmission(submitted, sampleAnswers, "desc", 25);
+    const result = scoreRoundSubmission(submitted, sampleAnswers, 25);
 
     expect(result.roundScore).toBe(8);
     expect(result.perfectCount).toBe(3);
@@ -103,64 +95,46 @@ describe("Rank Question Validation Pipeline", () => {
     expect(() => validateQuestionBank(allRankSeedQuestions)).not.toThrow();
   });
 
-  it("should reject question with duplicate values (ties)", () => {
+  it("should reject question with duplicate answer keys", () => {
     const invalidQuestion = {
-      slug: "invalid-ties",
-      scopeType: "ALL_TIME" as const,
       title: { en: "Test", ar: "اختبار" },
-      subtitle: { en: "Test", ar: "اختبار" },
-      metricLabel: { en: "Trophy", ar: "كأس" },
-      direction: "desc" as const,
-      difficulty: "EASY" as const,
-      asOfDate: "2026-08",
-      isActive: true,
-      tags: ["test"],
+      category: "clubs",
       answers: [
         {
           answerKey: "a1",
           name: { en: "A1", ar: "أ1" },
           media: { type: "club" as const },
-          value: 10,
-          valueLabel: { en: "10", ar: "10" },
-          correctRank: 1,
+          stat: { en: "10", ar: "10" },
         },
         {
-          answerKey: "a2",
+          answerKey: "a1", // DUPLICATE KEY!
           name: { en: "A2", ar: "أ2" },
           media: { type: "club" as const },
-          value: 10, // TIE!
-          valueLabel: { en: "10", ar: "10" },
-          correctRank: 2,
+          stat: { en: "8", ar: "8" },
         },
         {
           answerKey: "a3",
           name: { en: "A3", ar: "أ3" },
           media: { type: "club" as const },
-          value: 5,
-          valueLabel: { en: "5", ar: "5" },
-          correctRank: 3,
+          stat: { en: "6", ar: "6" },
         },
         {
           answerKey: "a4",
           name: { en: "A4", ar: "أ4" },
           media: { type: "club" as const },
-          value: 3,
-          valueLabel: { en: "3", ar: "3" },
-          correctRank: 4,
+          stat: { en: "4", ar: "4" },
         },
         {
           answerKey: "a5",
           name: { en: "A5", ar: "أ5" },
           media: { type: "club" as const },
-          value: 1,
-          valueLabel: { en: "1", ar: "1" },
-          correctRank: 5,
+          stat: { en: "2", ar: "2" },
         },
       ],
     };
 
     const check = validateRankQuestion(invalidQuestion);
     expect(check.valid).toBe(false);
-    expect(check.error).toContain("Invariant Violation: Found duplicate values");
+    expect(check.error).toContain("Duplicate answer keys detected");
   });
 });

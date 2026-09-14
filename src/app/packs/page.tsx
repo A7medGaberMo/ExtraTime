@@ -188,6 +188,15 @@ function pickCardsForPack(pack: PackDefinition, allPlayers: PlayerCardData[]): P
   return seededShuffle(selected, seed + 101).slice(0, 5);
 }
 
+function useDebounce<T>(value: T, delay: number): T {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+  useEffect(() => {
+    const handler = setTimeout(() => setDebouncedValue(value), delay);
+    return () => clearTimeout(handler);
+  }, [value, delay]);
+  return debouncedValue;
+}
+
 export default function PacksPage() {
   const { t, lang } = useI18n();
   const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 50 });
@@ -200,8 +209,17 @@ export default function PacksPage() {
 
   // Vault Spotlight Search & Rotation State
   const [searchQuery, setSearchQuery] = useState('');
+  const debouncedSearchQuery = useDebounce(searchQuery, 250);
   const [rotationSeed, setRotationSeed] = useState(() => Date.now());
   const [secondsRemaining, setSecondsRemaining] = useState(AUTO_ROTATE_INTERVAL_SECONDS);
+
+  // Full database search from Convex
+  const serverSearchResults = useQuery(
+    api.players.queries.searchPlayers,
+    debouncedSearchQuery.trim().length >= 2
+      ? { query: debouncedSearchQuery.trim(), limit: 40 }
+      : 'skip',
+  );
 
   // Deduplicated in-memory players collection (cached client-side)
   const players = useMemo(() => {
@@ -233,7 +251,7 @@ export default function PacksPage() {
     return () => clearInterval(timer);
   }, []);
 
-  // Filtered Candidate Pool (Fast in-memory search)
+  // Filtered Candidate Pool (Fast in-memory search fallback)
   const filteredPlayers = useMemo(() => {
     if (players.length === 0) return [];
     if (!searchQuery.trim()) return players;
@@ -249,14 +267,36 @@ export default function PacksPage() {
     );
   }, [players, searchQuery]);
 
-  // Active Spotlight Pool (5 players on desktop, 3 players on mobile)
-  const spotlightCards = useMemo(() => {
-    if (filteredPlayers.length === 0) return [];
-    if (filteredPlayers.length <= SPOTLIGHT_MAX_COUNT) return filteredPlayers;
+  // Combined scouted search cards (Prioritizes server full-database results)
+  const scoutedCards: PlayerCardData[] = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    if (serverSearchResults && serverSearchResults.length > 0) {
+      const map = new Map<string, PlayerCardData>();
+      for (const p of serverSearchResults) {
+        map.set(String(p._id), {
+          id: String(p._id),
+          name: p.name,
+          position: p.position,
+          tier: p.tier as Tier,
+          club: p.club,
+          nation: p.nation,
+          imageUrl: p.imageUrl,
+          isLegend: p.isLegend ?? false,
+          kitNumber: p.kitNumber,
+          rating: p.rating,
+        });
+      }
+      return Array.from(map.values());
+    }
+    return filteredPlayers;
+  }, [searchQuery, serverSearchResults, filteredPlayers]);
 
-    // Seeded random 5 players from matching candidate pool
-    return seededShuffle(filteredPlayers, rotationSeed).slice(0, SPOTLIGHT_MAX_COUNT);
-  }, [filteredPlayers, rotationSeed]);
+  // Active Spotlight Pool (5 players on desktop, 3 players on mobile) when not searching
+  const spotlightCards = useMemo(() => {
+    if (players.length === 0) return [];
+    // Seeded random 5 players from rotating candidate pool
+    return seededShuffle(players, rotationSeed).slice(0, SPOTLIGHT_MAX_COUNT);
+  }, [players, rotationSeed]);
 
   // Manual Instant Shuffle
   const handleManualShuffle = useCallback(() => {
@@ -489,16 +529,66 @@ export default function PacksPage() {
           </div>
         </header>
 
-        {/* ── Auto-Rotation Progress Bar ── */}
-        <div className="relative w-full h-1.5 overflow-hidden rounded-full bg-white/[0.08] border border-white/[0.1]">
-          <div
-            className="h-full bg-gradient-to-r from-lime/70 via-lime to-emerald-400 transition-all duration-1000 ease-linear rounded-full shadow-[0_0_10px_rgba(202,255,0,0.6)]"
-            style={{ width: `${progressPercent}%` }}
-          />
-        </div>
+        {/* ── Auto-Rotation Progress Bar (Visible only when not actively searching) ── */}
+        {!searchQuery.trim() && (
+          <div className="relative w-full h-1.5 overflow-hidden rounded-full bg-white/[0.08] border border-white/[0.1]">
+            <div
+              className="h-full bg-gradient-to-r from-lime/70 via-lime to-emerald-400 transition-all duration-1000 ease-linear rounded-full shadow-[0_0_10px_rgba(202,255,0,0.6)]"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
+        )}
 
-        {/* ── RESPONSIVE SPOTLIGHT SHOWCASE (3 ON MOBILE, 5 ON DESKTOP) ── */}
-        {spotlightCards.length > 0 ? (
+        {/* ── SEARCH RESULTS OR SPOTLIGHT SHOWCASE ── */}
+        {searchQuery.trim() ? (
+          <div className="space-y-3 pt-1">
+            <div className="flex items-center justify-between px-1">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-white font-stats">
+                  {lang === 'ar' ? 'نتائج الاستكشاف' : 'Scouted Players'}
+                </span>
+                <span className="rounded-full bg-lime/15 border border-lime/30 px-2 py-0.5 text-[10px] font-black text-lime font-stats">
+                  {scoutedCards.length}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                className="text-xs text-slate-400 hover:text-white cursor-pointer font-semibold underline underline-offset-4"
+              >
+                {lang === 'ar' ? 'إلغاء البحث' : 'Clear Search'}
+              </button>
+            </div>
+
+            {scoutedCards.length > 0 ? (
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 max-h-[580px] overflow-y-auto p-1 scrollbar-thin">
+                {scoutedCards.map((player, index) => (
+                  <div
+                    key={`scout-${player.id}-${index}`}
+                    onClick={() => {
+                      sfx.cardDeal();
+                      setInspectedCard(player);
+                    }}
+                    className="flex justify-center cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95 animate-fade-in"
+                  >
+                    <PlayerCard player={player} size="sm" />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="apple-glass-card rounded-2xl p-8 text-center border border-white/10 space-y-2">
+                <p className="text-white text-sm font-bold">
+                  {lang === 'ar' ? `لم نجد لاعبين يطابقون "${searchQuery}"` : `No players found matching "${searchQuery}"`}
+                </p>
+                <p className="text-slate-400 text-xs">
+                  {lang === 'ar'
+                    ? 'جرب البحث باسم اللاعب أو النادي (مثل ريال مدريد، الأهلي، الزمالك) أو الدولة'
+                    : 'Try scouting by player name, club (e.g. Real Madrid, Al Ahly, Zamalek), or nation.'}
+                </p>
+              </div>
+            )}
+          </div>
+        ) : spotlightCards.length > 0 ? (
           <div className="relative pt-1">
             {/* MOBILE LAYOUT: Exactly 3 cards side-by-side, scaled to fit perfectly */}
             <div className="grid grid-cols-3 gap-2.5 w-full max-w-sm mx-auto py-2 items-center justify-items-center sm:hidden">
@@ -574,7 +664,7 @@ export default function PacksPage() {
       {inspectedCard && (
         <CardDetailModal
           card={inspectedCard}
-          cardsList={filteredPlayers.length > 0 ? filteredPlayers : players}
+          cardsList={searchQuery.trim() ? scoutedCards : players}
           onSelectCard={(c) => setInspectedCard(c)}
           onClose={() => setInspectedCard(null)}
         />
