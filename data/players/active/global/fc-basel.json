@@ -8,16 +8,39 @@
   },
   "players": [
     {
+      "apiId": 674637,
+      "name": "Yanis Emch",
+      "position": "GK",
+      "club": "FC Basel 1893",
+      "nation": "Switzerland",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/674637.png"
+    },
+    {
       "apiId": 2801,
       "name": "J. Omlin",
       "position": "GK",
       "club": "FC Basel 1893",
       "nation": "Switzerland",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2801.png",
       "kitNumber": 1
+    },
+    {
+      "apiId": 594897,
+      "name": "Renato Widmer DâAutilia",
+      "position": "GK",
+      "club": "FC Basel 1893",
+      "nation": "Switzerland",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/594897.png",
+      "kitNumber": 49
     },
     {
       "apiId": 48445,
@@ -32,90 +55,6 @@
       "kitNumber": 13
     },
     {
-      "apiId": 598001,
-      "name": "B. Hoch",
-      "position": "GK",
-      "club": "FC Basel 1893",
-      "nation": "Switzerland",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/598001.png",
-      "kitNumber": 48
-    },
-    {
-      "apiId": 594897,
-      "name": "Renato Widmer Dâ€™Autilia",
-      "position": "GK",
-      "club": "FC Basel 1893",
-      "nation": "Switzerland",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/594897.png",
-      "kitNumber": 49
-    },
-    {
-      "apiId": 125715,
-      "name": "F. Daniliuc",
-      "position": "CB/RB",
-      "club": "FC Basel 1893",
-      "nation": "Austria",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/125715.png",
-      "kitNumber": 24
-    },
-    {
-      "apiId": 999,
-      "name": "B. Omeragić",
-      "position": "CB/RB",
-      "club": "FC Basel 1893",
-      "nation": "Switzerland",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/999.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 225104,
-      "name": "K. Tsunemoto",
-      "position": "RB",
-      "club": "FC Basel 1893",
-      "nation": "Japan",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/225104.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 1011,
-      "name": "K. Rüegg",
-      "position": "RB/RWB",
-      "club": "FC Basel 1893",
-      "nation": "Switzerland",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1011.png",
-      "kitNumber": 27
-    },
-    {
-      "apiId": 48606,
-      "name": "N. Vouilloz",
-      "position": "CB/RB",
-      "club": "FC Basel 1893",
-      "nation": "Switzerland",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/48606.png",
-      "kitNumber": 3
-    },
-    {
       "apiId": 328464,
       "name": "M. Cissé",
       "position": "CB",
@@ -126,6 +65,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/328464.png",
       "kitNumber": 29
+    },
+    {
+      "apiId": 125715,
+      "name": "F. Daniliuc",
+      "position": "CB",
+      "club": "FC Basel 1893",
+      "nation": "Austria",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/125715.png",
+      "kitNumber": 24
     },
     {
       "apiId": 449590,
@@ -140,16 +91,40 @@
       "kitNumber": 44
     },
     {
-      "apiId": 443734,
-      "name": "E. Senaya",
+      "apiId": 999,
+      "name": "B. Omeragić",
+      "position": "CB",
+      "club": "FC Basel 1893",
+      "nation": "Switzerland",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/999.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 1011,
+      "name": "K. Rüegg",
       "position": "RB",
       "club": "FC Basel 1893",
-      "nation": "Togo",
-      "tier": "SILVER",
-      "rating": 68,
+      "nation": "Switzerland",
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/443734.png",
-      "kitNumber": 42
+      "imageUrl": "https://media.api-sports.io/football/players/1011.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 225104,
+      "name": "K. Tsunemoto",
+      "position": "RB",
+      "club": "FC Basel 1893",
+      "nation": "Japan",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/225104.png",
+      "kitNumber": 6
     },
     {
       "apiId": 511026,
@@ -164,52 +139,39 @@
       "kitNumber": 55
     },
     {
-      "apiId": 307,
-      "name": "X. Shaqiri",
-      "position": "RW/CAM/LW",
+      "apiId": 48606,
+      "name": "N. Vouilloz",
+      "position": "CB",
       "club": "FC Basel 1893",
       "nation": "Switzerland",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/307.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 20833,
-      "name": "L. Leroy",
-      "position": "CM/CDM",
-      "club": "FC Basel 1893",
-      "nation": "France",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/20833.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 305816,
-      "name": "Metinho",
-      "position": "CM",
-      "club": "FC Basel 1893",
-      "nation": "Brazil",
       "tier": "GOLD",
       "rating": 74,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/305816.png",
-      "kitNumber": 5
+      "imageUrl": "https://media.api-sports.io/football/players/48606.png",
+      "kitNumber": 3
     },
     {
-      "apiId": 342482,
-      "name": "G. Sigua",
+      "apiId": 674638,
+      "name": "Leon White",
+      "position": "CB",
+      "club": "FC Basel 1893",
+      "nation": "Switzerland",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/674638.png"
+    },
+    {
+      "apiId": 559264,
+      "name": "V. Adjei",
       "position": "CM",
       "club": "FC Basel 1893",
-      "nation": "Georgia",
-      "tier": "GOLD",
-      "rating": 74,
+      "nation": "Switzerland",
+      "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/342482.png",
-      "kitNumber": 38
+      "imageUrl": "https://media.api-sports.io/football/players/559264.png",
+      "kitNumber": 27
     },
     {
       "apiId": 445489,
@@ -224,6 +186,18 @@
       "kitNumber": 14
     },
     {
+      "apiId": 657946,
+      "name": "J. Doucoure",
+      "position": "CM",
+      "club": "FC Basel 1893",
+      "nation": "Switzerland",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/657946.png",
+      "kitNumber": 41
+    },
+    {
       "apiId": 403633,
       "name": "J. Harder",
       "position": "CM",
@@ -233,7 +207,31 @@
       "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/403633.png",
-      "kitNumber": null
+      "kitNumber": 44
+    },
+    {
+      "apiId": 305816,
+      "name": "Metinho",
+      "position": "CM",
+      "club": "FC Basel 1893",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/305816.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 307,
+      "name": "X. Shaqiri",
+      "position": "RW",
+      "club": "FC Basel 1893",
+      "nation": "Switzerland",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/307.png",
+      "kitNumber": 10
     },
     {
       "apiId": 338950,
@@ -248,76 +246,16 @@
       "kitNumber": 8
     },
     {
-      "apiId": 375000,
-      "name": "I. Salah",
-      "position": "LW/RW",
-      "club": "FC Basel 1893",
-      "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/375000.png",
-      "kitNumber": 77
-    },
-    {
-      "apiId": 73879,
-      "name": "P. Otele",
-      "position": "LW/RW/ST",
-      "club": "FC Basel 1893",
-      "nation": "Nigeria",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/73879.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 2812,
-      "name": "A. Ajeti",
-      "position": "ST",
-      "club": "FC Basel 1893",
-      "nation": "Switzerland",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2812.png",
-      "kitNumber": 23
-    },
-    {
       "apiId": 788,
       "name": "Ž. Celar",
       "position": "ST",
       "club": "FC Basel 1893",
       "nation": "Slovenia",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/788.png",
       "kitNumber": 9
-    },
-    {
-      "apiId": 167659,
-      "name": "K. Olaigbe",
-      "position": "LW/ST",
-      "club": "FC Basel 1893",
-      "nation": "Belgium",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/167659.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 349947,
-      "name": "A. Malouda",
-      "position": "RW/LW",
-      "club": "FC Basel 1893",
-      "nation": "France",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/349947.png",
-      "kitNumber": 17
     },
     {
       "apiId": 561885,
@@ -332,28 +270,52 @@
       "kitNumber": 37
     },
     {
-      "apiId": 561962,
+      "apiId": 349947,
+      "name": "A. Malouda",
+      "position": "RW",
+      "club": "FC Basel 1893",
+      "nation": "France",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/349947.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 167659,
+      "name": "K. Olaigbe",
+      "position": "LW",
+      "club": "FC Basel 1893",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/167659.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 73879,
+      "name": "P. Otele",
+      "position": "LW",
+      "club": "FC Basel 1893",
+      "nation": "Nigeria",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/73879.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 486294,
       "name": "A. Sow",
       "position": "ST",
       "club": "FC Basel 1893",
       "nation": "Switzerland",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/561962.png",
+      "imageUrl": "https://media.api-sports.io/football/players/486294.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 457771,
-      "name": "Kaio Eduardo",
-      "position": "ST",
-      "club": "FC Basel 1893",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/457771.png",
-      "kitNumber": 46
     }
   ]
 }

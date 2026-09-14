@@ -14,7 +14,7 @@
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/193288.png",
       "kitNumber": 1
@@ -26,7 +26,7 @@
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 64,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/607030.png",
       "kitNumber": 53
@@ -50,7 +50,7 @@
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44475.png",
       "kitNumber": 5
@@ -62,7 +62,7 @@
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44309.png",
       "kitNumber": 2
@@ -73,8 +73,8 @@
       "position": "LB",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 75,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/350381.png",
       "kitNumber": 83
@@ -85,8 +85,8 @@
       "position": "LB/LM",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/296940.png",
       "kitNumber": 6
@@ -97,8 +97,8 @@
       "position": "CB",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44260.png",
       "kitNumber": 4
@@ -110,7 +110,7 @@
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 65,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/456019.png",
       "kitNumber": 70
@@ -122,7 +122,7 @@
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/134995.png",
       "kitNumber": 12
@@ -133,8 +133,8 @@
       "position": "CB",
       "club": "Al-Nassr",
       "nation": "Spain",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2670.png",
       "kitNumber": 26
@@ -146,7 +146,7 @@
       "club": "Al-Nassr",
       "nation": "France",
       "tier": "ELITE",
-      "rating": 82,
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/22250.png",
       "kitNumber": 3
@@ -169,11 +169,23 @@
       "position": "CM",
       "club": "Al-Nassr",
       "nation": "Iraq",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "SILVER",
+      "rating": 70,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/420243.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 565734,
+      "name": "R. Al Ghamdi",
+      "position": "CM",
+      "club": "Al-Nassr",
+      "nation": "Saudi Arabia",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/565734.png",
+      "kitNumber": 56
     },
     {
       "apiId": 44509,
@@ -193,8 +205,8 @@
       "position": "CM",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/635839.png",
       "kitNumber": 18
@@ -206,7 +218,7 @@
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 76,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44315.png",
       "kitNumber": 17
@@ -224,13 +236,25 @@
       "kitNumber": 14
     },
     {
+      "apiId": 190485,
+      "name": "Samú Costa",
+      "position": "CDM/CM",
+      "club": "Al-Nassr",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/190485.png",
+      "kitNumber": 11
+    },
+    {
       "apiId": 44382,
       "name": "Abdullah Al Hamdan",
       "position": "ST",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44382.png",
       "kitNumber": 9
@@ -241,8 +265,8 @@
       "position": "RW/RM",
       "club": "Al-Nassr",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/288055.png",
       "kitNumber": 20
@@ -253,11 +277,23 @@
       "position": "LW/RW",
       "club": "Al-Nassr",
       "nation": "France",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/508.png",
       "kitNumber": 21
+    },
+    {
+      "apiId": 457124,
+      "name": "Saad Haqawi",
+      "position": "ST",
+      "club": "Al-Nassr",
+      "nation": "Saudi Arabia",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/457124.png",
+      "kitNumber": 60
     },
     {
       "apiId": 583,
@@ -265,8 +301,8 @@
       "position": "ST/CAM/LW",
       "club": "Al-Nassr",
       "nation": "Portugal",
-      "tier": "MASTER",
-      "rating": 86,
+      "tier": "ELITE",
+      "rating": 83,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/583.png",
       "kitNumber": 79
@@ -289,8 +325,8 @@
       "position": "ST",
       "club": "Al-Nassr",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/193289.png",
       "kitNumber": 16

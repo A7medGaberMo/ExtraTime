@@ -8,16 +8,16 @@
   },
   "players": [
     {
-      "apiId": 667,
-      "name": "Memphis Depay",
-      "position": "ST/LW",
+      "apiId": 415084,
+      "name": "Felipe Longo",
+      "position": "GK",
       "club": "Corinthians",
-      "nation": "Netherlands",
-      "tier": "MASTER",
-      "rating": 86,
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/667.png",
-      "kitNumber": 94
+      "imageUrl": "https://media.api-sports.io/football/players/415084.png",
+      "kitNumber": 40
     },
     {
       "apiId": 123759,
@@ -25,8 +25,8 @@
       "position": "GK",
       "club": "Corinthians",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/123759.png",
       "kitNumber": 1
@@ -44,64 +44,16 @@
       "kitNumber": 51
     },
     {
-      "apiId": 415084,
-      "name": "Felipe Longo",
-      "position": "GK",
-      "club": "Corinthians",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/415084.png",
-      "kitNumber": 40
-    },
-    {
-      "apiId": 915,
-      "name": "Gabriel Paulista",
-      "position": "CB",
-      "club": "Corinthians",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/915.png",
-      "kitNumber": 3
-    },
-    {
       "apiId": 1085,
       "name": "André Ramalho",
       "position": "CB",
       "club": "Corinthians",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1085.png",
       "kitNumber": 5
-    },
-    {
-      "apiId": 10161,
-      "name": "Matheuzinho",
-      "position": "RB",
-      "club": "Corinthians",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10161.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 9742,
-      "name": "Matheus Bidu",
-      "position": "LB/LWB",
-      "club": "Corinthians",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9742.png",
-      "kitNumber": 21
     },
     {
       "apiId": 5987,
@@ -109,11 +61,23 @@
       "position": "LB",
       "club": "Corinthians",
       "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/5987.png",
       "kitNumber": 26
+    },
+    {
+      "apiId": 915,
+      "name": "Gabriel Paulista",
+      "position": "CB",
+      "club": "Corinthians",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/915.png",
+      "kitNumber": 3
     },
     {
       "apiId": 9992,
@@ -121,23 +85,11 @@
       "position": "CB",
       "club": "Corinthians",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9992.png",
       "kitNumber": 13
-    },
-    {
-      "apiId": 182025,
-      "name": "P. Milans",
-      "position": "RB",
-      "club": "Corinthians",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/182025.png",
-      "kitNumber": 20
     },
     {
       "apiId": 54093,
@@ -173,7 +125,7 @@
       "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/544700.png",
-      "kitNumber": null
+      "kitNumber": 13
     },
     {
       "apiId": 570402,
@@ -188,100 +140,63 @@
       "kitNumber": 55
     },
     {
-      "apiId": 5794,
-      "name": "R. Garro",
-      "position": "CAM/CM",
-      "club": "Corinthians",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 83,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5794.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 871,
-      "name": "Matheus Pereira",
-      "position": "CAM/RW",
+      "apiId": 9742,
+      "name": "Matheus Bidu",
+      "position": "LB",
       "club": "Corinthians",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/871.png",
-      "kitNumber": 23
+      "imageUrl": "https://media.api-sports.io/football/players/9742.png",
+      "kitNumber": 21
     },
     {
-      "apiId": 2426,
-      "name": "A. Carrillo",
-      "position": "RW/RM/CM",
-      "club": "Corinthians",
-      "nation": "Peru",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2426.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 543,
-      "name": "Z. Labyad",
-      "position": "CAM/RW",
-      "club": "Corinthians",
-      "nation": "Morocco",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/543.png",
-      "kitNumber": 52
-    },
-    {
-      "apiId": 900,
-      "name": "J. Lingard",
-      "position": "CAM/LW",
-      "club": "Corinthians",
-      "nation": "England",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/900.png",
-      "kitNumber": 77
-    },
-    {
-      "apiId": 160436,
-      "name": "Raniele",
-      "position": "CDM/CM",
+      "apiId": 10161,
+      "name": "Matheuzinho",
+      "position": "RB",
       "club": "Corinthians",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/160436.png",
-      "kitNumber": 14
+      "imageUrl": "https://media.api-sports.io/football/players/10161.png",
+      "kitNumber": 2
+    },
+    {
+      "apiId": 182025,
+      "name": "P. Milans",
+      "position": "RB",
+      "club": "Corinthians",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/182025.png",
+      "kitNumber": 20
+    },
+    {
+      "apiId": 675980,
+      "name": "Santos Ribeiro Silva Caua",
+      "position": "CB",
+      "club": "Corinthians",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/675980.png"
     },
     {
       "apiId": 10067,
       "name": "Alex Santana",
-      "position": "CM/CDM",
+      "position": "CM",
       "club": "Corinthians",
       "nation": "Brazil",
       "tier": "GOLD",
       "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10067.png",
-      "kitNumber": 80
-    },
-    {
-      "apiId": 9577,
-      "name": "Charles",
-      "position": "CM",
-      "club": "Corinthians",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9577.png",
-      "kitNumber": 35
+      "kitNumber": 63
     },
     {
       "apiId": 10319,
@@ -317,7 +232,7 @@
       "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/414353.png",
-      "kitNumber": 7
+      "kitNumber": 54
     },
     {
       "apiId": 363693,
@@ -329,7 +244,103 @@
       "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/363693.png",
-      "kitNumber": null
+      "kitNumber": 7
+    },
+    {
+      "apiId": 9577,
+      "name": "Charles",
+      "position": "CM",
+      "club": "Corinthians",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9577.png",
+      "kitNumber": 35
+    },
+    {
+      "apiId": 5794,
+      "name": "R. Garro",
+      "position": "CAM",
+      "club": "Corinthians",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/5794.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 543,
+      "name": "Z. Labyad",
+      "position": "CAM",
+      "club": "Corinthians",
+      "nation": "Morocco",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/543.png",
+      "kitNumber": 52
+    },
+    {
+      "apiId": 900,
+      "name": "J. Lingard",
+      "position": "CAM",
+      "club": "Corinthians",
+      "nation": "England",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/900.png",
+      "kitNumber": 77
+    },
+    {
+      "apiId": 871,
+      "name": "Matheus Pereira",
+      "position": "CAM",
+      "club": "Corinthians",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/871.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 160436,
+      "name": "Raniele",
+      "position": "CDM",
+      "club": "Corinthians",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/160436.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 2426,
+      "name": "A. Carrillo",
+      "position": "RW",
+      "club": "Corinthians",
+      "nation": "Peru",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2426.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 667,
+      "name": "M. Depay",
+      "position": "ST",
+      "club": "Corinthians",
+      "nation": "Netherlands",
+      "tier": "ELITE",
+      "rating": 83,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/667.png",
+      "kitNumber": 10
     },
     {
       "apiId": 463975,
@@ -344,21 +355,21 @@
       "kitNumber": 61
     },
     {
-      "apiId": 10007,
-      "name": "Yuri Alberto",
+      "apiId": 463979,
+      "name": "Guilherme Inácio",
       "position": "ST",
       "club": "Corinthians",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10007.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/463979.png",
+      "kitNumber": 56
     },
     {
       "apiId": 380435,
       "name": "Kaio César",
-      "position": "RW/LW",
+      "position": "RW",
       "club": "Corinthians",
       "nation": "Brazil",
       "tier": "GOLD",
@@ -366,30 +377,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/380435.png",
       "kitNumber": 37
-    },
-    {
-      "apiId": 10177,
-      "name": "Vitinho",
-      "position": "LW/RW",
-      "club": "Corinthians",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10177.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 9329,
-      "name": "Pedro Raul",
-      "position": "ST",
-      "club": "Corinthians",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9329.png",
-      "kitNumber": null
     },
     {
       "apiId": 415090,
@@ -404,16 +391,16 @@
       "kitNumber": 31
     },
     {
-      "apiId": 463979,
-      "name": "Guilherme Inácio",
+      "apiId": 662884,
+      "name": "Luiz Fernando",
       "position": "ST",
       "club": "Corinthians",
       "nation": "Brazil",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/463979.png",
-      "kitNumber": 56
+      "imageUrl": "https://media.api-sports.io/football/players/662884.png",
+      "kitNumber": 64
     },
     {
       "apiId": 609581,
@@ -426,6 +413,42 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609581.png",
       "kitNumber": 18
+    },
+    {
+      "apiId": 9329,
+      "name": "Pedro Raul",
+      "position": "ST",
+      "club": "Corinthians",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9329.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 10177,
+      "name": "Vitinho",
+      "position": "LW",
+      "club": "Corinthians",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10177.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 10007,
+      "name": "Yuri Alberto",
+      "position": "ST",
+      "club": "Corinthians",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10007.png",
+      "kitNumber": 9
     }
   ]
 }

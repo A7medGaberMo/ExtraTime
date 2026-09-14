@@ -13,8 +13,8 @@
       "position": "GK",
       "club": "Orlando City SC",
       "nation": "Jamaica",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50725.png",
       "kitNumber": 18
@@ -44,21 +44,9 @@
       "kitNumber": 76
     },
     {
-      "apiId": 50738,
-      "name": "K. Wagner",
-      "position": "LB",
-      "club": "Orlando City SC",
-      "nation": "Germany",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/50738.png",
-      "kitNumber": 27
-    },
-    {
       "apiId": 102524,
       "name": "N. Harriel",
-      "position": "RB/CB",
+      "position": "RB",
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
@@ -68,8 +56,20 @@
       "kitNumber": 26
     },
     {
+      "apiId": 474752,
+      "name": "G. Martínez",
+      "position": "CB",
+      "club": "Orlando City SC",
+      "nation": "Argentina",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/474752.png",
+      "kitNumber": 2
+    },
+    {
       "apiId": 50734,
-      "name": "O. Mbaïzo",
+      "name": "O. Mbaïzo",
       "position": "RB",
       "club": "Orlando City SC",
       "nation": "Cameroon",
@@ -78,30 +78,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/50734.png",
       "kitNumber": 15
-    },
-    {
-      "apiId": 64339,
-      "name": "J. Sery Larsen",
-      "position": "CB",
-      "club": "Orlando City SC",
-      "nation": "Norway",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/64339.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 474752,
-      "name": "G. Martínez",
-      "position": "CB",
-      "club": "Orlando City SC",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/474752.png",
-      "kitNumber": 2
     },
     {
       "apiId": 406867,
@@ -140,6 +116,18 @@
       "kitNumber": 38
     },
     {
+      "apiId": 64339,
+      "name": "J. Sery Larsen",
+      "position": "CB",
+      "club": "Orlando City SC",
+      "nation": "Norway",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/64339.png",
+      "kitNumber": 5
+    },
+    {
       "apiId": 540925,
       "name": "F. Sundstrom",
       "position": "CB",
@@ -150,6 +138,30 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/540925.png",
       "kitNumber": 66
+    },
+    {
+      "apiId": 312168,
+      "name": "R. Uzcátegui",
+      "position": "CB",
+      "club": "Orlando City SC",
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/312168.png",
+      "kitNumber": 40
+    },
+    {
+      "apiId": 50738,
+      "name": "K. Wagner",
+      "position": "LB",
+      "club": "Orlando City SC",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50738.png",
+      "kitNumber": 27
     },
     {
       "apiId": 362085,
@@ -166,7 +178,7 @@
     {
       "apiId": 50740,
       "name": "A. Bedoya",
-      "position": "CM/RM",
+      "position": "CM",
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
@@ -176,21 +188,33 @@
       "kitNumber": 11
     },
     {
-      "apiId": 265882,
-      "name": "Q. Sullivan",
-      "position": "CAM/RW/CM",
+      "apiId": 351568,
+      "name": "B. Bender",
+      "position": "CAM",
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/265882.png",
-      "kitNumber": 33
+      "imageUrl": "https://media.api-sports.io/football/players/351568.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 52709,
+      "name": "J. Bueno",
+      "position": "CM",
+      "club": "Orlando City SC",
+      "nation": "Venezuela",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/52709.png",
+      "kitNumber": 8
     },
     {
       "apiId": 338367,
       "name": "D. Jean-Jacques",
-      "position": "CDM/CM",
+      "position": "CDM",
       "club": "Orlando City SC",
       "nation": "Haiti",
       "tier": "GOLD",
@@ -200,16 +224,16 @@
       "kitNumber": 21
     },
     {
-      "apiId": 52709,
-      "name": "J. Bueno",
-      "position": "CM/CDM",
+      "apiId": 542032,
+      "name": "K. LeBlanc",
+      "position": "CM",
       "club": "Orlando City SC",
-      "nation": "Venezuela",
-      "tier": "GOLD",
-      "rating": 74,
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/52709.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/542032.png",
+      "kitNumber": 47
     },
     {
       "apiId": 263510,
@@ -224,33 +248,9 @@
       "kitNumber": 4
     },
     {
-      "apiId": 153506,
-      "name": "I. Vassilev",
-      "position": "CM/CAM",
-      "club": "Orlando City SC",
-      "nation": "USA",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/153506.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 351568,
-      "name": "B. Bender",
-      "position": "CAM/CM",
-      "club": "Orlando City SC",
-      "nation": "USA",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/351568.png",
-      "kitNumber": 16
-    },
-    {
       "apiId": 71743,
       "name": "J. Rafanello",
-      "position": "CAM/ST",
+      "position": "CAM",
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
@@ -266,34 +266,46 @@
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 72,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/462853.png",
       "kitNumber": 6
     },
     {
-      "apiId": 542032,
-      "name": "K. LeBlanc",
-      "position": "CM",
+      "apiId": 265882,
+      "name": "Q. Sullivan",
+      "position": "CAM",
       "club": "Orlando City SC",
       "nation": "USA",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/265882.png",
+      "kitNumber": 33
+    },
+    {
+      "apiId": 508068,
+      "name": "E. Alladoh",
+      "position": "ST",
+      "club": "Orlando City SC",
+      "nation": "Togo",
       "tier": "SILVER",
       "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/542032.png",
-      "kitNumber": 47
+      "imageUrl": "https://media.api-sports.io/football/players/508068.png",
+      "kitNumber": 23
     },
     {
-      "apiId": 56,
-      "name": "Antoine Griezmann",
-      "position": "ST/CAM",
+      "apiId": 301465,
+      "name": "A. Anello",
+      "position": "LW",
       "club": "Orlando City SC",
-      "nation": "France",
-      "tier": "ULTIMATE",
-      "rating": 91,
+      "nation": "USA",
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/56.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/301465.png",
+      "kitNumber": 28
     },
     {
       "apiId": 321839,
@@ -310,7 +322,7 @@
     {
       "apiId": 199406,
       "name": "M. Iloski",
-      "position": "ST/LW",
+      "position": "ST",
       "club": "Orlando City SC",
       "nation": "USA",
       "tier": "GOLD",
@@ -318,42 +330,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/199406.png",
       "kitNumber": 10
-    },
-    {
-      "apiId": 301465,
-      "name": "A. Anello",
-      "position": "LW/RW",
-      "club": "Orlando City SC",
-      "nation": "USA",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/301465.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 512951,
-      "name": "Stas Kornzeniowski",
-      "position": "ST",
-      "club": "Orlando City SC",
-      "nation": "USA",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/512951.png",
-      "kitNumber": 37
-    },
-    {
-      "apiId": 508068,
-      "name": "E. Alladoh",
-      "position": "ST",
-      "club": "Orlando City SC",
-      "nation": "Togo",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/508068.png",
-      "kitNumber": 23
     },
     {
       "apiId": 542233,
@@ -368,16 +344,16 @@
       "kitNumber": 51
     },
     {
-      "apiId": 434048,
-      "name": "Sal Olivas",
-      "position": "ST",
+      "apiId": 153506,
+      "name": "I. Vassilev",
+      "position": "CM",
       "club": "Orlando City SC",
       "nation": "USA",
-      "tier": "SILVER",
-      "rating": 68,
+      "tier": "GOLD",
+      "rating": 74,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/434048.png",
-      "kitNumber": 55
+      "imageUrl": "https://media.api-sports.io/football/players/153506.png",
+      "kitNumber": 19
     }
   ]
 }

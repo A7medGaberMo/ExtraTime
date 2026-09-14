@@ -8,6 +8,18 @@
   },
   "players": [
     {
+      "apiId": 668274,
+      "name": "Cleber",
+      "position": "GK",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/668274.png",
+      "kitNumber": 62
+    },
+    {
       "apiId": 10152,
       "name": "Gabriel Batista",
       "position": "GK",
@@ -18,6 +30,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10152.png",
       "kitNumber": 12
+    },
+    {
+      "apiId": 458374,
+      "name": "Rhyan",
+      "position": "GK",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/458374.png",
+      "kitNumber": 32
     },
     {
       "apiId": 80367,
@@ -32,64 +56,28 @@
       "kitNumber": 17
     },
     {
-      "apiId": 668274,
-      "name": "Cleber",
-      "position": "GK",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/668274.png",
-      "kitNumber": 62
-    },
-    {
-      "apiId": 410134,
-      "name": "C. Loor",
-      "position": "GK",
-      "club": "Botafogo",
-      "nation": "Ecuador",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/410134.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 378,
       "name": "Alex Telles",
-      "position": "LB/LWB",
+      "position": "LB",
       "club": "Botafogo",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/378.png",
       "kitNumber": 13
     },
     {
-      "apiId": 8661,
-      "name": "Vitinho",
-      "position": "RB/RWB",
+      "apiId": 454519,
+      "name": "Anthony",
+      "position": "CB",
       "club": "Botafogo",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/8661.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 297687,
-      "name": "M. Ponte",
-      "position": "RB",
-      "club": "Botafogo",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/297687.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/454519.png",
+      "kitNumber": 26
     },
     {
       "apiId": 2440,
@@ -97,35 +85,83 @@
       "position": "CB",
       "club": "Botafogo",
       "nation": "Venezuela",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2440.png",
       "kitNumber": 5
     },
     {
-      "apiId": 652,
-      "name": "Marçal",
-      "position": "LB/CB",
+      "apiId": 561346,
+      "name": "Gabriel Abdias",
+      "position": "CB",
       "club": "Botafogo",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/561346.png",
+      "kitNumber": 36
+    },
+    {
+      "apiId": 414428,
+      "name": "J. Hernández",
+      "position": "CB",
+      "club": "Botafogo",
+      "nation": "Mexico",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/414428.png",
+      "kitNumber": 17
+    },
+    {
+      "apiId": 505409,
+      "name": "Huguinho",
+      "position": "CM",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/505409.png",
+      "kitNumber": 75
+    },
+    {
+      "apiId": 613321,
+      "name": "Kadu Santos",
+      "position": "CB",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/613321.png",
+      "kitNumber": 42
+    },
+    {
+      "apiId": 652,
+      "name": "Marçal",
+      "position": "LB",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/652.png",
       "kitNumber": 21
     },
     {
-      "apiId": 283837,
-      "name": "Caio Roque",
-      "position": "LB",
+      "apiId": 544705,
+      "name": "Marquinhos",
+      "position": "CB",
       "club": "Botafogo",
       "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/283837.png",
-      "kitNumber": 27
+      "imageUrl": "https://media.api-sports.io/football/players/544705.png",
+      "kitNumber": 16
     },
     {
       "apiId": 265954,
@@ -152,6 +188,30 @@
       "kitNumber": 29
     },
     {
+      "apiId": 297687,
+      "name": "M. Ponte",
+      "position": "RB",
+      "club": "Botafogo",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/297687.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 8661,
+      "name": "Vitinho",
+      "position": "RB",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/8661.png",
+      "kitNumber": 2
+    },
+    {
       "apiId": 426627,
       "name": "Ythallo",
       "position": "CB",
@@ -162,78 +222,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/426627.png",
       "kitNumber": 3
-    },
-    {
-      "apiId": 454519,
-      "name": "Anthony",
-      "position": "CB",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/454519.png",
-      "kitNumber": 26
-    },
-    {
-      "apiId": 561346,
-      "name": "Gabriel Abdias",
-      "position": "CB",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/561346.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 414428,
-      "name": "J. Hernández",
-      "position": "CB",
-      "club": "Botafogo",
-      "nation": "Mexico",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/414428.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 613321,
-      "name": "Kadu Santos",
-      "position": "CB",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/613321.png",
-      "kitNumber": 42
-    },
-    {
-      "apiId": 544705,
-      "name": "Marquinhos",
-      "position": "CB",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/544705.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 544707,
-      "name": "G. Justino",
-      "position": "CB",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/544707.png",
-      "kitNumber": 34
     },
     {
       "apiId": 668275,
@@ -250,67 +238,19 @@
     {
       "apiId": 326,
       "name": "Allan",
-      "position": "CDM/CM",
+      "position": "CDM",
       "club": "Botafogo",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326.png",
       "kitNumber": 25
     },
     {
-      "apiId": 275170,
-      "name": "Danilo Santos",
-      "position": "CDM/CM",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/275170.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 51581,
-      "name": "S. Rodríguez",
-      "position": "CAM/LW",
-      "club": "Botafogo",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51581.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 237186,
-      "name": "C. Medina",
-      "position": "CM/CAM",
-      "club": "Botafogo",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/237186.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 10387,
-      "name": "Edenílson",
-      "position": "CM/RM",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10387.png",
-      "kitNumber": 88
-    },
-    {
       "apiId": 237165,
       "name": "Domingos Andrade",
-      "position": "CDM/CM",
+      "position": "CDM",
       "club": "Botafogo",
       "nation": "Angola",
       "tier": "GOLD",
@@ -318,18 +258,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/237165.png",
       "kitNumber": 91
-    },
-    {
-      "apiId": 505409,
-      "name": "Huguinho",
-      "position": "CM",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/505409.png",
-      "kitNumber": 75
     },
     {
       "apiId": 609493,
@@ -356,18 +284,6 @@
       "kitNumber": 14
     },
     {
-      "apiId": 403670,
-      "name": "Bernardo Valim",
-      "position": "CM",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 69,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/403670.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 506276,
       "name": "Caio Valle",
       "position": "CM",
@@ -378,6 +294,30 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/506276.png",
       "kitNumber": 10
+    },
+    {
+      "apiId": 275170,
+      "name": "Danilo Santos",
+      "position": "CDM",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/275170.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 10387,
+      "name": "Edenílson",
+      "position": "CM",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10387.png",
+      "kitNumber": 88
     },
     {
       "apiId": 668276,
@@ -392,16 +332,28 @@
       "kitNumber": 38
     },
     {
-      "apiId": 609481,
-      "name": "Miguel Caldas",
-      "position": "CM",
+      "apiId": 544707,
+      "name": "G. Justino",
+      "position": "CB",
       "club": "Botafogo",
       "nation": "Brazil",
       "tier": "SILVER",
       "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/609481.png",
-      "kitNumber": 20
+      "imageUrl": "https://media.api-sports.io/football/players/544707.png",
+      "kitNumber": 34
+    },
+    {
+      "apiId": 237186,
+      "name": "C. Medina",
+      "position": "CM",
+      "club": "Botafogo",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/237186.png",
+      "kitNumber": 6
     },
     {
       "apiId": 455130,
@@ -413,19 +365,19 @@
       "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/455130.png",
-      "kitNumber": null
+      "kitNumber": 10
     },
     {
-      "apiId": 661112,
-      "name": "Davi Nery",
-      "position": "CM",
+      "apiId": 51581,
+      "name": "S. Rodríguez",
+      "position": "CAM",
       "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/661112.png",
-      "kitNumber": 19
+      "imageUrl": "https://media.api-sports.io/football/players/51581.png",
+      "kitNumber": 8
     },
     {
       "apiId": 463987,
@@ -440,64 +392,16 @@
       "kitNumber": 15
     },
     {
-      "apiId": 10432,
-      "name": "Júnior Santos",
-      "position": "RW/ST",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10432.png",
-      "kitNumber": 7
-    },
-    {
       "apiId": 9938,
       "name": "Arthur Cabral",
       "position": "ST",
       "club": "Botafogo",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9938.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 305821,
-      "name": "Matheus Martins",
-      "position": "LW/RW",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/305821.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 553,
-      "name": "Danilo",
-      "position": "ST",
-      "club": "Botafogo",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/553.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 308798,
-      "name": "L. Villalba",
-      "position": "CB/LB",
-      "club": "Botafogo",
-      "nation": "Argentina",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/308798.png",
-      "kitNumber": 77
+      "kitNumber": 19
     },
     {
       "apiId": 614621,
@@ -524,6 +428,30 @@
       "kitNumber": 37
     },
     {
+      "apiId": 553,
+      "name": "Danilo",
+      "position": "RB",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/553.png",
+      "kitNumber": 90
+    },
+    {
+      "apiId": 10432,
+      "name": "Júnior Santos",
+      "position": "RW",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10432.png",
+      "kitNumber": 7
+    },
+    {
       "apiId": 413140,
       "name": "Kauan Toledo",
       "position": "ST",
@@ -534,6 +462,30 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413140.png",
       "kitNumber": 59
+    },
+    {
+      "apiId": 390,
+      "name": "Tiquinho Soares",
+      "position": "ST",
+      "club": "Botafogo",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/390.png",
+      "kitNumber": 29
+    },
+    {
+      "apiId": 308798,
+      "name": "L. Villalba",
+      "position": "CB",
+      "club": "Botafogo",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/308798.png",
+      "kitNumber": 77
     }
   ]
 }

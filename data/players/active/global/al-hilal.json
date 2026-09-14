@@ -13,8 +13,8 @@
       "position": "GK",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576269.png",
       "kitNumber": 35
@@ -26,7 +26,7 @@
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44411.png",
       "kitNumber": 33
@@ -37,8 +37,8 @@
       "position": "GK",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/543009.png",
       "kitNumber": 17
@@ -48,24 +48,12 @@
       "name": "Y. Bounou",
       "position": "GK",
       "club": "Al-Hilal",
-      "nation": "Spain",
-      "tier": "GOLD",
-      "rating": 80,
+      "nation": "Morocco",
+      "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2701.png",
       "kitNumber": 37
-    },
-    {
-      "apiId": 198389,
-      "name": "M. Patouillet",
-      "position": "GK",
-      "club": "Al-Hilal",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/198389.png",
-      "kitNumber": 25
     },
     {
       "apiId": 412703,
@@ -74,22 +62,10 @@
       "club": "Al-Hilal",
       "nation": "Turkey",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412703.png",
       "kitNumber": 4
-    },
-    {
-      "apiId": 44332,
-      "name": "Ali Al Bulayhi",
-      "position": "CB",
-      "club": "Al-Hilal",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 76,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/44332.png",
-      "kitNumber": 3
     },
     {
       "apiId": 576285,
@@ -98,7 +74,7 @@
       "club": "Al-Hilal",
       "nation": "Iraq",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/576285.png",
       "kitNumber": 55
@@ -106,7 +82,7 @@
     {
       "apiId": 202381,
       "name": "Moteb Al Harbi",
-      "position": "CB",
+      "position": "LB",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
@@ -122,7 +98,7 @@
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/586636.png",
       "kitNumber": 44
@@ -134,31 +110,19 @@
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/630310.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 286354,
-      "name": "Hamad Turki Al Tuhayfan",
-      "position": "CB",
-      "club": "Al-Hilal",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/286354.png",
-      "kitNumber": 88
+      "kitNumber": 37
     },
     {
       "apiId": 47300,
       "name": "T. Hernández",
-      "position": "CB",
+      "position": "LB/LWB",
       "club": "Al-Hilal",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "rating": 75,
+      "nation": "France",
+      "tier": "MASTER",
+      "rating": 88,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/47300.png",
       "kitNumber": 19
@@ -169,11 +133,11 @@
       "position": "CB",
       "club": "Al-Hilal",
       "nation": "Senegal",
-      "tier": "GOLD",
-      "rating": 80,
+      "tier": "ELITE",
+      "rating": 84,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/318.png",
-      "kitNumber": null
+      "kitNumber": 3
     },
     {
       "apiId": 44507,
@@ -194,43 +158,31 @@
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44362.png",
       "kitNumber": 87
     },
     {
-      "apiId": 623862,
-      "name": "R. Al-Ghamdi",
+      "apiId": 350374,
+      "name": "Abdullah Al Anazi",
       "position": "CM",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 68,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/623862.png",
-      "kitNumber": 31
-    },
-    {
-      "apiId": 576181,
-      "name": "M. Al-Zaid",
-      "position": "CM",
-      "club": "Al-Hilal",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/576181.png",
-      "kitNumber": 39
+      "imageUrl": "https://media.api-sports.io/football/players/350374.png",
+      "kitNumber": 93
     },
     {
       "apiId": 44339,
       "name": "Nasser Al Dawsari",
-      "position": "CM",
+      "position": "CM/LB",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 75,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44339.png",
       "kitNumber": 6
@@ -238,7 +190,7 @@
     {
       "apiId": 44340,
       "name": "Salem Al Dawsari",
-      "position": "CM",
+      "position": "LW/LM",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "ELITE",
@@ -253,8 +205,8 @@
       "position": "CB",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 71,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44370.png",
       "kitNumber": 77
@@ -265,23 +217,11 @@
       "position": "CM",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/442343.png",
       "kitNumber": 18
-    },
-    {
-      "apiId": 584515,
-      "name": "A. Al Zaid",
-      "position": "CM",
-      "club": "Al-Hilal",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/584515.png",
-      "kitNumber": 32
     },
     {
       "apiId": 334582,
@@ -289,8 +229,8 @@
       "position": "CM",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/334582.png",
       "kitNumber": 96
@@ -301,8 +241,8 @@
       "position": "CM",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/44349.png",
       "kitNumber": 28
@@ -313,8 +253,8 @@
       "position": "CB",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 69,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/326984.png",
       "kitNumber": 2
@@ -322,11 +262,11 @@
     {
       "apiId": 1856,
       "name": "S. Milinković-Savić",
-      "position": "CM",
+      "position": "CM/CAM",
       "club": "Al-Hilal",
       "nation": "Serbia",
-      "tier": "ELITE",
-      "rating": 84,
+      "tier": "MASTER",
+      "rating": 86,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/1856.png",
       "kitNumber": 22
@@ -334,26 +274,14 @@
     {
       "apiId": 2676,
       "name": "Rúben Neves",
-      "position": "CM",
+      "position": "CDM/CM",
       "club": "Al-Hilal",
       "nation": "Portugal",
       "tier": "ELITE",
-      "rating": 84,
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2676.png",
       "kitNumber": 8
-    },
-    {
-      "apiId": 759,
-      "name": "K. Benzema",
-      "position": "ST/CF",
-      "club": "Al-Hilal",
-      "nation": "France",
-      "tier": "ULTIMATE",
-      "rating": 91,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/759.png",
-      "kitNumber": 9
     },
     {
       "apiId": 412711,
@@ -362,7 +290,7 @@
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/412711.png",
       "kitNumber": 70
@@ -374,46 +302,34 @@
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606188.png",
       "kitNumber": 72
     },
     {
-      "apiId": 653229,
-      "name": "A. Jarmosh",
-      "position": "ST",
+      "apiId": 2639,
+      "name": "Sultan Mandash",
+      "position": "RW/ST",
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/653229.png",
-      "kitNumber": 41
-    },
-    {
-      "apiId": 156,
-      "name": "Malcom",
-      "position": "LW/RW",
-      "club": "Al-Hilal",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/156.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 2639,
-      "name": "Sultan Mandash",
-      "position": "ST",
-      "club": "Al-Hilal",
-      "nation": "Saudi Arabia",
-      "tier": "GOLD",
-      "rating": 74,
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2639.png",
       "kitNumber": 27
+    },
+    {
+      "apiId": 127769,
+      "name": "Gabriel Martinelli",
+      "position": "LW/ST",
+      "club": "Al-Hilal",
+      "nation": "Brazil",
+      "tier": "ELITE",
+      "rating": 84,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/127769.png",
+      "kitNumber": 7
     },
     {
       "apiId": 449662,
@@ -422,22 +338,10 @@
       "club": "Al-Hilal",
       "nation": "Saudi Arabia",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 67,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449662.png",
       "kitNumber": 75
-    },
-    {
-      "apiId": 51617,
-      "name": "D. Núñez",
-      "position": "ST/LW",
-      "club": "Al-Hilal",
-      "nation": "Uruguay",
-      "tier": "MASTER",
-      "rating": 86,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51617.png",
-      "kitNumber": 7
     },
     {
       "apiId": 37724,
@@ -450,6 +354,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/37724.png",
       "kitNumber": 38
+    },
+    {
+      "apiId": 19366,
+      "name": "O. Watkins",
+      "position": "ST",
+      "club": "Al-Hilal",
+      "nation": "England",
+      "tier": "MASTER",
+      "rating": 86,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/19366.png",
+      "kitNumber": 11
     }
   ]
 }

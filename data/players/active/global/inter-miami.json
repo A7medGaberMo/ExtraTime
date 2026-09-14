@@ -8,18 +8,6 @@
   },
   "players": [
     {
-      "apiId": 51148,
-      "name": "D. St. Clair",
-      "position": "GK",
-      "club": "Inter Miami",
-      "nation": "Canada",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51148.png",
-      "kitNumber": 97
-    },
-    {
       "apiId": 50847,
       "name": "L. Barraza",
       "position": "GK",
@@ -44,33 +32,33 @@
       "kitNumber": 34
     },
     {
-      "apiId": 739,
-      "name": "Reguilón",
-      "position": "LB/LWB",
+      "apiId": 51148,
+      "name": "D. St. Clair",
+      "position": "GK",
       "club": "Inter Miami",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/739.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 6401,
-      "name": "F. Mura",
-      "position": "RB/RWB",
-      "club": "Inter Miami",
-      "nation": "Argentina",
+      "nation": "Canada",
       "tier": "GOLD",
       "rating": 75,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6401.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/51148.png",
+      "kitNumber": 97
+    },
+    {
+      "apiId": 513293,
+      "name": "Ezequiel Abadia-Reda",
+      "position": "CB",
+      "club": "Inter Miami",
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 69,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/513293.png",
+      "kitNumber": 76
     },
     {
       "apiId": 282407,
       "name": "N. Allen",
-      "position": "CB/LB",
+      "position": "CB",
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "GOLD",
@@ -94,7 +82,7 @@
     {
       "apiId": 216493,
       "name": "I. Fray",
-      "position": "CB/RB",
+      "position": "CB",
       "club": "Inter Miami",
       "nation": "Jamaica",
       "tier": "GOLD",
@@ -106,7 +94,7 @@
     {
       "apiId": 306705,
       "name": "G. Luján",
-      "position": "CB/RB",
+      "position": "CB",
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "GOLD",
@@ -128,16 +116,28 @@
       "kitNumber": 16
     },
     {
-      "apiId": 513293,
-      "name": "Ezequiel Abadia-Reda",
-      "position": "CB",
+      "apiId": 6401,
+      "name": "F. Mura",
+      "position": "RB",
       "club": "Inter Miami",
-      "nation": "USA",
-      "tier": "SILVER",
-      "rating": 69,
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/513293.png",
-      "kitNumber": 76
+      "imageUrl": "https://media.api-sports.io/football/players/6401.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 739,
+      "name": "Reguilón",
+      "position": "LB",
+      "club": "Inter Miami",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/739.png",
+      "kitNumber": 3
     },
     {
       "apiId": 542212,
@@ -152,6 +152,30 @@
       "kitNumber": 70
     },
     {
+      "apiId": 129886,
+      "name": "D. Ayala",
+      "position": "CDM",
+      "club": "Inter Miami",
+      "nation": "Paraguay",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/129886.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 455386,
+      "name": "Y. Bright",
+      "position": "CM",
+      "club": "Inter Miami",
+      "nation": "England",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/455386.png",
+      "kitNumber": 42
+    },
+    {
       "apiId": 663850,
       "name": "F. Caicedo",
       "position": "CB",
@@ -164,100 +188,16 @@
       "kitNumber": 15
     },
     {
-      "apiId": 144,
-      "name": "Sergio Busquets",
-      "position": "CDM/CM",
-      "club": "Inter Miami",
-      "nation": "Spain",
-      "tier": "ULTIMATE",
-      "rating": 92,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/144.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 2472,
-      "name": "R. De Paul",
-      "position": "CM/CAM",
-      "club": "Inter Miami",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 84,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2472.png",
-      "kitNumber": 7
-    },
-    {
       "apiId": 747,
       "name": "Casemiro",
-      "position": "CDM/CM",
+      "position": "CDM",
       "club": "Inter Miami",
       "nation": "Brazil",
-      "tier": "ULTIMATE",
-      "rating": 91,
+      "tier": "ELITE",
+      "rating": 85,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/747.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 129886,
-      "name": "D. Ayala",
-      "position": "CDM/CM",
-      "club": "Inter Miami",
-      "nation": "Paraguay",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/129886.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 455386,
-      "name": "Y. Bright",
-      "position": "CM/CDM",
-      "club": "Inter Miami",
-      "nation": "England",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/455386.png",
-      "kitNumber": 42
-    },
-    {
-      "apiId": 325063,
-      "name": "D. Ruíz",
-      "position": "CM/CAM",
-      "club": "Inter Miami",
-      "nation": "Honduras",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/325063.png",
-      "kitNumber": 41
-    },
-    {
-      "apiId": 144303,
-      "name": "T. Segovia",
-      "position": "CAM/CM",
-      "club": "Inter Miami",
-      "nation": "Venezuela",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/144303.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 415026,
-      "name": "M. Acevedo",
-      "position": "CM",
-      "club": "Inter Miami",
-      "nation": "Mexico",
-      "tier": "SILVER",
-      "rating": 69,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/415026.png",
-      "kitNumber": 48
+      "kitNumber": 5
     },
     {
       "apiId": 422792,
@@ -284,6 +224,18 @@
       "kitNumber": 59
     },
     {
+      "apiId": 144303,
+      "name": "T. Segovia",
+      "position": "CAM",
+      "club": "Inter Miami",
+      "nation": "Venezuela",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/144303.png",
+      "kitNumber": 8
+    },
+    {
       "apiId": 542272,
       "name": "A. Shaw",
       "position": "CM",
@@ -296,45 +248,33 @@
       "kitNumber": 88
     },
     {
-      "apiId": 542297,
-      "name": "I. Urkidi",
+      "apiId": 462868,
+      "name": "Ian Urkidi",
       "position": "CM",
       "club": "Inter Miami",
       "nation": "USA",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/542297.png",
+      "imageUrl": "https://media.api-sports.io/football/players/462868.png",
       "kitNumber": 55
     },
     {
-      "apiId": 154,
-      "name": "L. Messi",
-      "position": "RW/CF/CAM",
-      "club": "Inter Miami",
-      "nation": "Argentina",
-      "tier": "ULTIMATE",
-      "rating": 95,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/154.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 157,
-      "name": "L. Suárez",
-      "position": "ST",
+      "apiId": 2472,
+      "name": "R. De Paul",
+      "position": "CM",
       "club": "Inter Miami",
       "nation": "Uruguay",
-      "tier": "ULTIMATE",
-      "rating": 92,
+      "tier": "ELITE",
+      "rating": 81,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/157.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/2472.png",
+      "kitNumber": 7
     },
     {
       "apiId": 304383,
       "name": "T. Allende",
-      "position": "RW/LW/ST",
+      "position": "RW",
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "GOLD",
@@ -356,6 +296,42 @@
       "kitNumber": 19
     },
     {
+      "apiId": 410345,
+      "name": "L. Delinois",
+      "position": "ST",
+      "club": "Inter Miami",
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/410345.png",
+      "kitNumber": 54
+    },
+    {
+      "apiId": 516815,
+      "name": "Ramon Riquelme",
+      "position": "ST",
+      "club": "Inter Miami",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/516815.png",
+      "kitNumber": 37
+    },
+    {
+      "apiId": 154,
+      "name": "L. Messi",
+      "position": "RW",
+      "club": "Inter Miami",
+      "nation": "Argentina",
+      "tier": "ULTIMATE",
+      "rating": 95,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/154.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 462860,
       "name": "Daniel Pinter",
       "position": "ST",
@@ -368,28 +344,40 @@
       "kitNumber": 56
     },
     {
-      "apiId": 542051,
+      "apiId": 514004,
       "name": "D. Rey",
       "position": "ST",
       "club": "Inter Miami",
-      "nation": "Mexico",
+      "nation": "USA",
       "tier": "SILVER",
-      "rating": 69,
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/542051.png",
+      "imageUrl": "https://media.api-sports.io/football/players/514004.png",
       "kitNumber": 52
     },
     {
       "apiId": 475582,
       "name": "Mateo Silvetti",
-      "position": "ST/RW",
+      "position": "ST",
       "club": "Inter Miami",
       "nation": "Argentina",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 66,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/475582.png",
       "kitNumber": 24
+    },
+    {
+      "apiId": 157,
+      "name": "L. Suárez",
+      "position": "ST",
+      "club": "Inter Miami",
+      "nation": "Uruguay",
+      "tier": "ELITE",
+      "rating": 84,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/157.png",
+      "kitNumber": 9
     }
   ]
 }

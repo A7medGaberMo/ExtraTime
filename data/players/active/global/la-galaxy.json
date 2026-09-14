@@ -8,16 +8,16 @@
   },
   "players": [
     {
-      "apiId": 45794,
-      "name": "N. Mićović",
+      "apiId": 644879,
+      "name": "S. Conlon",
       "position": "GK",
       "club": "LA Galaxy",
-      "nation": "Serbia",
-      "tier": "GOLD",
-      "rating": 75,
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/45794.png",
-      "kitNumber": 1
+      "imageUrl": "https://media.api-sports.io/football/players/644879.png",
+      "kitNumber": 41
     },
     {
       "apiId": 51166,
@@ -32,6 +32,18 @@
       "kitNumber": 12
     },
     {
+      "apiId": 45794,
+      "name": "N. Mićović",
+      "position": "GK",
+      "club": "LA Galaxy",
+      "nation": "Serbia",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/45794.png",
+      "kitNumber": 1
+    },
+    {
       "apiId": 24787,
       "name": "B. Scott",
       "position": "GK",
@@ -42,30 +54,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/24787.png",
       "kitNumber": 31
-    },
-    {
-      "apiId": 18944,
-      "name": "M. Yoshida",
-      "position": "CB",
-      "club": "LA Galaxy",
-      "nation": "Japan",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18944.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 33144,
-      "name": "M. Yamane",
-      "position": "RB",
-      "club": "LA Galaxy",
-      "nation": "Japan",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/33144.png",
-      "kitNumber": 2
     },
     {
       "apiId": 196739,
@@ -80,18 +68,6 @@
       "kitNumber": 3
     },
     {
-      "apiId": 39327,
-      "name": "J. Glesnes",
-      "position": "CB",
-      "club": "LA Galaxy",
-      "nation": "Norway",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/39327.png",
-      "kitNumber": 5
-    },
-    {
       "apiId": 325807,
       "name": "C. Garcés",
       "position": "CB",
@@ -104,40 +80,52 @@
       "kitNumber": 25
     },
     {
-      "apiId": 51126,
-      "name": "J. Nelson",
-      "position": "LB",
-      "club": "LA Galaxy",
-      "nation": "USA",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51126.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 407239,
-      "name": "C. Rindov",
+      "apiId": 39327,
+      "name": "J. Glesnes",
       "position": "CB",
       "club": "LA Galaxy",
+      "nation": "Norway",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39327.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 50857,
+      "name": "J. Haak",
+      "position": "CDM",
+      "club": "LA Galaxy",
       "nation": "USA",
       "tier": "GOLD",
       "rating": 74,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/407239.png",
-      "kitNumber": 20
+      "imageUrl": "https://media.api-sports.io/football/players/50857.png",
+      "kitNumber": 15
     },
     {
-      "apiId": 644880,
+      "apiId": 265739,
       "name": "S. Hernandez",
       "position": "CB",
       "club": "LA Galaxy",
-      "nation": "Mexico",
-      "tier": "GOLD",
-      "rating": 74,
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/644880.png",
+      "imageUrl": "https://media.api-sports.io/football/players/265739.png",
       "kitNumber": 60
+    },
+    {
+      "apiId": 133194,
+      "name": "Calegari",
+      "position": "CB",
+      "club": "LA Galaxy",
+      "nation": "USA",
+      "tier": "GOLD",
+      "rating": 77,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/133194.png",
+      "kitNumber": 2
     },
     {
       "apiId": 460356,
@@ -152,6 +140,18 @@
       "kitNumber": 26
     },
     {
+      "apiId": 51126,
+      "name": "J. Nelson",
+      "position": "LB",
+      "club": "LA Galaxy",
+      "nation": "USA",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/51126.png",
+      "kitNumber": 14
+    },
+    {
       "apiId": 541877,
       "name": "Pepe",
       "position": "CB",
@@ -164,76 +164,52 @@
       "kitNumber": 64
     },
     {
-      "apiId": 25,
-      "name": "M. Reus",
-      "position": "CAM/LW/RW",
-      "club": "LA Galaxy",
-      "nation": "Germany",
-      "tier": "MASTER",
-      "rating": 86,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/25.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 137,
-      "name": "Sergi Roberto",
-      "position": "CM/RB",
-      "club": "LA Galaxy",
-      "nation": "Spain",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/137.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 50857,
-      "name": "J. Haak",
-      "position": "CDM/CM",
+      "apiId": 407239,
+      "name": "C. Rindov",
+      "position": "CB",
       "club": "LA Galaxy",
       "nation": "USA",
       "tier": "GOLD",
       "rating": 74,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/50857.png",
-      "kitNumber": 15
+      "imageUrl": "https://media.api-sports.io/football/players/407239.png",
+      "kitNumber": 20
     },
     {
-      "apiId": 26311,
-      "name": "E. Thommy",
-      "position": "CAM/CM",
+      "apiId": 18944,
+      "name": "M. Yoshida",
+      "position": "CB",
       "club": "LA Galaxy",
-      "nation": "Germany",
+      "nation": "Japan",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26311.png",
-      "kitNumber": 27
+      "imageUrl": "https://media.api-sports.io/football/players/18944.png",
+      "kitNumber": 4
     },
     {
-      "apiId": 456688,
-      "name": "L. Sanabria",
-      "position": "CM",
-      "club": "LA Galaxy",
-      "nation": "Paraguay",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/456688.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 102689,
-      "name": "E. Wynder",
+      "apiId": 641994,
+      "name": "T. Elgersma",
       "position": "CM",
       "club": "LA Galaxy",
       "nation": "USA",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/102689.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/641994.png",
+      "kitNumber": 76
+    },
+    {
+      "apiId": 506557,
+      "name": "V. Garcia",
+      "position": "CM",
+      "club": "LA Galaxy",
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/506557.png",
+      "kitNumber": 45
     },
     {
       "apiId": 102702,
@@ -260,30 +236,6 @@
       "kitNumber": 16
     },
     {
-      "apiId": 641994,
-      "name": "T. Elgersma",
-      "position": "CM",
-      "club": "LA Galaxy",
-      "nation": "USA",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/641994.png",
-      "kitNumber": 76
-    },
-    {
-      "apiId": 39364,
-      "name": "R. Taylor",
-      "position": "LM/LW",
-      "club": "LA Galaxy",
-      "nation": "Finland",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/39364.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 542504,
       "name": "B. Phan",
       "position": "CM",
@@ -294,66 +246,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/542504.png",
       "kitNumber": 90
-    },
-    {
-      "apiId": 541880,
-      "name": "D. Vanney",
-      "position": "CM",
-      "club": "LA Galaxy",
-      "nation": "USA",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/541880.png",
-      "kitNumber": 96
-    },
-    {
-      "apiId": 248,
-      "name": "H. Lozano",
-      "position": "RW/LW",
-      "club": "LA Galaxy",
-      "nation": "Mexico",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/248.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 33253,
-      "name": "K. Furuhashi",
-      "position": "ST",
-      "club": "LA Galaxy",
-      "nation": "Japan",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/33253.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 1944,
-      "name": "J. Paintsil",
-      "position": "RW/LW/ST",
-      "club": "LA Galaxy",
-      "nation": "Ghana",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/1944.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 7539,
-      "name": "João Klauss",
-      "position": "ST",
-      "club": "LA Galaxy",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/7539.png",
-      "kitNumber": 99
     },
     {
       "apiId": 413207,
@@ -368,6 +260,138 @@
       "kitNumber": 24
     },
     {
+      "apiId": 25,
+      "name": "M. Reus",
+      "position": "CAM",
+      "club": "LA Galaxy",
+      "nation": "Germany",
+      "tier": "ELITE",
+      "rating": 83,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/25.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 137,
+      "name": "Sergi Roberto",
+      "position": "CM",
+      "club": "LA Galaxy",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/137.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 456688,
+      "name": "L. Sanabria",
+      "position": "CM",
+      "club": "LA Galaxy",
+      "nation": "Paraguay",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/456688.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 26311,
+      "name": "E. Thommy",
+      "position": "CAM",
+      "club": "LA Galaxy",
+      "nation": "Germany",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26311.png",
+      "kitNumber": 27
+    },
+    {
+      "apiId": 477311,
+      "name": "Dylan Vanney",
+      "position": "CM",
+      "club": "LA Galaxy",
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/477311.png",
+      "kitNumber": 88
+    },
+    {
+      "apiId": 542351,
+      "name": "M. Vanney",
+      "position": "CM",
+      "club": "LA Galaxy",
+      "nation": "USA",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/542351.png",
+      "kitNumber": 88
+    },
+    {
+      "apiId": 102689,
+      "name": "E. Wynder",
+      "position": "CM",
+      "club": "LA Galaxy",
+      "nation": "USA",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/102689.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 33253,
+      "name": "K. Furuhashi",
+      "position": "ST",
+      "club": "LA Galaxy",
+      "nation": "Japan",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/33253.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 7539,
+      "name": "João Klauss",
+      "position": "ST",
+      "club": "LA Galaxy",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/7539.png",
+      "kitNumber": 99
+    },
+    {
+      "apiId": 248,
+      "name": "H. Lozano",
+      "position": "RW",
+      "club": "LA Galaxy",
+      "nation": "Mexico",
+      "tier": "ELITE",
+      "rating": 81,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/248.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 1944,
+      "name": "J. Paintsil",
+      "position": "RW",
+      "club": "LA Galaxy",
+      "nation": "Ghana",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/1944.png",
+      "kitNumber": 28
+    },
+    {
       "apiId": 413208,
       "name": "J. Placias",
       "position": "ST",
@@ -378,6 +402,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/413208.png",
       "kitNumber": 57
+    },
+    {
+      "apiId": 39364,
+      "name": "R. Taylor",
+      "position": "LM",
+      "club": "LA Galaxy",
+      "nation": "Finland",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/39364.png",
+      "kitNumber": 21
     }
   ]
 }

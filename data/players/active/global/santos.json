@@ -8,30 +8,6 @@
   },
   "players": [
     {
-      "apiId": 9979,
-      "name": "João Paulo",
-      "position": "GK",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9979.png",
-      "kitNumber": 34
-    },
-    {
-      "apiId": 31007,
-      "name": "Gabriel Brazão",
-      "position": "GK",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/31007.png",
-      "kitNumber": 77
-    },
-    {
       "apiId": 321454,
       "name": "Diógenes",
       "position": "GK",
@@ -44,16 +20,16 @@
       "kitNumber": 1
     },
     {
-      "apiId": 653531,
-      "name": "Rodrigo Falcao",
+      "apiId": 31007,
+      "name": "Gabriel Brazão",
       "position": "GK",
       "club": "Santos",
       "nation": "Brazil",
       "tier": "GOLD",
-      "rating": 74,
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/653531.png",
-      "kitNumber": 67
+      "imageUrl": "https://media.api-sports.io/football/players/31007.png",
+      "kitNumber": 77
     },
     {
       "apiId": 606900,
@@ -65,55 +41,31 @@
       "rating": 68,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/606900.png",
-      "kitNumber": null
+      "kitNumber": 1
     },
     {
-      "apiId": 9991,
-      "name": "Lucas Veríssimo",
-      "position": "CB",
+      "apiId": 9979,
+      "name": "João Paulo",
+      "position": "GK",
       "club": "Santos",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9991.png",
-      "kitNumber": 4
+      "imageUrl": "https://media.api-sports.io/football/players/9979.png",
+      "kitNumber": 34
     },
     {
-      "apiId": 71,
-      "name": "Luan Peres",
-      "position": "CB/LB",
+      "apiId": 653531,
+      "name": "Rodrigo Falcao",
+      "position": "GK",
       "club": "Santos",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/71.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 9917,
-      "name": "Mayke",
-      "position": "RB/RWB",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9917.png",
-      "kitNumber": 12
-    },
-    {
-      "apiId": 9949,
-      "name": "Igor Vinicius",
-      "position": "RB",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9949.png",
-      "kitNumber": 18
+      "imageUrl": "https://media.api-sports.io/football/players/653531.png",
+      "kitNumber": 67
     },
     {
       "apiId": 6637,
@@ -128,16 +80,16 @@
       "kitNumber": 31
     },
     {
-      "apiId": 5872,
-      "name": "A. Frías",
-      "position": "CB",
+      "apiId": 9949,
+      "name": "Igor Vinicius",
+      "position": "RB",
       "club": "Santos",
-      "nation": "Argentina",
+      "nation": "Brazil",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5872.png",
-      "kitNumber": 98
+      "imageUrl": "https://media.api-sports.io/football/players/9949.png",
+      "kitNumber": 18
     },
     {
       "apiId": 522702,
@@ -164,124 +116,28 @@
       "kitNumber": 26
     },
     {
-      "apiId": 609540,
-      "name": "Rafael Gonzaga",
+      "apiId": 71,
+      "name": "Luan Peres",
       "position": "CB",
       "club": "Santos",
       "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/609540.png",
-      "kitNumber": 3
-    },
-    {
-      "apiId": 507379,
-      "name": "Vinicius Lira",
-      "position": "CB",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/507379.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 10173,
-      "name": "Willian Arão",
-      "position": "CDM/CM",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10173.png",
-      "kitNumber": 15
-    },
-    {
-      "apiId": 195111,
-      "name": "Gabriel Menino",
-      "position": "CM/RB",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/195111.png",
-      "kitNumber": 25
-    },
-    {
-      "apiId": 6052,
-      "name": "Á. Barreal",
-      "position": "LM/LW/CM",
-      "club": "Santos",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6052.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 10492,
-      "name": "Thaciano",
-      "position": "CM/CAM",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10492.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 32901,
-      "name": "João Schmidt",
-      "position": "CDM/CM",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/32901.png",
-      "kitNumber": 5
-    },
-    {
-      "apiId": 345756,
-      "name": "M. Terceros",
-      "position": "CAM/RW",
-      "club": "Santos",
-      "nation": "Bolivia",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/345756.png",
-      "kitNumber": 30
-    },
-    {
-      "apiId": 30568,
-      "name": "C. Oliva",
-      "position": "CDM/CM",
-      "club": "Santos",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30568.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 119128,
-      "name": "G. Caballero",
-      "position": "RW/RM",
-      "club": "Santos",
-      "nation": "Paraguay",
       "tier": "GOLD",
-      "rating": 74,
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/119128.png",
-      "kitNumber": 17
+      "imageUrl": "https://media.api-sports.io/football/players/71.png",
+      "kitNumber": 14
+    },
+    {
+      "apiId": 9991,
+      "name": "Lucas Veríssimo",
+      "position": "CB",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9991.png",
+      "kitNumber": 4
     },
     {
       "apiId": 609523,
@@ -296,6 +152,54 @@
       "kitNumber": 81
     },
     {
+      "apiId": 609540,
+      "name": "Rafael Gonzaga",
+      "position": "CB",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/609540.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 10157,
+      "name": "Rodinei",
+      "position": "RB",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10157.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 507379,
+      "name": "Vinicius Lira",
+      "position": "CB",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/507379.png",
+      "kitNumber": 3
+    },
+    {
+      "apiId": 150,
+      "name": "Arthur",
+      "position": "CM",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 77,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/150.png",
+      "kitNumber": 6
+    },
+    {
       "apiId": 506275,
       "name": "Gabriel Bontempo",
       "position": "CM",
@@ -306,6 +210,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/506275.png",
       "kitNumber": 8
+    },
+    {
+      "apiId": 195111,
+      "name": "Gabriel Menino",
+      "position": "CM",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/195111.png",
+      "kitNumber": 25
     },
     {
       "apiId": 506480,
@@ -320,6 +236,30 @@
       "kitNumber": 48
     },
     {
+      "apiId": 32901,
+      "name": "João Schmidt",
+      "position": "CDM",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/32901.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 50532,
+      "name": "Lima",
+      "position": "CM",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/50532.png",
+      "kitNumber": 45
+    },
+    {
       "apiId": 474261,
       "name": "Mateus Xavier",
       "position": "CM",
@@ -330,6 +270,42 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/474261.png",
       "kitNumber": 11
+    },
+    {
+      "apiId": 345756,
+      "name": "M. Terceros",
+      "position": "CAM",
+      "club": "Santos",
+      "nation": "Bolivia",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/345756.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 30568,
+      "name": "C. Oliva",
+      "position": "CDM",
+      "club": "Santos",
+      "nation": "Uruguay",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30568.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 631334,
+      "name": "Pedro Assis",
+      "position": "CM",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/631334.png",
+      "kitNumber": 39
     },
     {
       "apiId": 632455,
@@ -344,76 +320,52 @@
       "kitNumber": 20
     },
     {
-      "apiId": 276,
-      "name": "Neymar",
-      "position": "LW/CAM/ST",
+      "apiId": 10492,
+      "name": "Thaciano",
+      "position": "CM",
       "club": "Santos",
       "nation": "Brazil",
-      "tier": "ULTIMATE",
-      "rating": 94,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/276.png",
-      "kitNumber": 10
+      "imageUrl": "https://media.api-sports.io/football/players/10492.png",
+      "kitNumber": 16
     },
     {
-      "apiId": 10174,
-      "name": "Gabriel Barbosa",
-      "position": "ST",
+      "apiId": 10173,
+      "name": "Willian Arão",
+      "position": "CDM",
       "club": "Santos",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 83,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10174.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/10173.png",
+      "kitNumber": 15
     },
     {
-      "apiId": 10143,
-      "name": "Rony",
-      "position": "ST/RW",
-      "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10143.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 119485,
-      "name": "B. Rollheiser",
-      "position": "RW/CAM",
+      "apiId": 6052,
+      "name": "Á. Barreal",
+      "position": "LM",
       "club": "Santos",
       "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/119485.png",
-      "kitNumber": 32
+      "imageUrl": "https://media.api-sports.io/football/players/6052.png",
+      "kitNumber": 22
     },
     {
-      "apiId": 153454,
-      "name": "Moisés",
-      "position": "LW/ST",
+      "apiId": 119128,
+      "name": "G. Caballero",
+      "position": "RW",
       "club": "Santos",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/153454.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 197500,
-      "name": "Nikita Solodchenko",
-      "position": "ST",
-      "club": "Santos",
-      "nation": "Ukraine",
+      "nation": "Paraguay",
       "tier": "GOLD",
       "rating": 74,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/197500.png",
-      "kitNumber": 7
+      "imageUrl": "https://media.api-sports.io/football/players/119128.png",
+      "kitNumber": 17
     },
     {
       "apiId": 609619,
@@ -428,6 +380,30 @@
       "kitNumber": 27
     },
     {
+      "apiId": 10174,
+      "name": "Gabriel Barbosa",
+      "position": "ST",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10174.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 153454,
+      "name": "Moisés",
+      "position": "LW",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/153454.png",
+      "kitNumber": 21
+    },
+    {
       "apiId": 609501,
       "name": "Nadson",
       "position": "ST",
@@ -438,6 +414,42 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609501.png",
       "kitNumber": 57
+    },
+    {
+      "apiId": 276,
+      "name": "Neymar",
+      "position": "LW",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "ULTIMATE",
+      "rating": 94,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/276.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 119485,
+      "name": "B. Rollheiser",
+      "position": "RW",
+      "club": "Santos",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/119485.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 10143,
+      "name": "Rony",
+      "position": "ST",
+      "club": "Santos",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10143.png",
+      "kitNumber": 11
     }
   ]
 }

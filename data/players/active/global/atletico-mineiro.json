@@ -13,8 +13,8 @@
       "position": "GK",
       "club": "Atlético Mineiro",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/9978.png",
       "kitNumber": 22
@@ -32,15 +32,15 @@
       "kitNumber": 1
     },
     {
-      "apiId": 565711,
+      "apiId": 449252,
       "name": "Pedro Cobra",
       "position": "GK",
       "club": "Atlético Mineiro",
       "nation": "Brazil",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 72,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/565711.png",
+      "imageUrl": "https://media.api-sports.io/football/players/449252.png",
       "kitNumber": 46
     },
     {
@@ -56,88 +56,16 @@
       "kitNumber": 31
     },
     {
-      "apiId": 10122,
-      "name": "Renan Lodi",
-      "position": "LB/LWB",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10122.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 30476,
-      "name": "Lyanco",
-      "position": "CB",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30476.png",
-      "kitNumber": 13
-    },
-    {
-      "apiId": 2583,
-      "name": "A. Preciado",
-      "position": "RB/RWB",
-      "club": "Atlético Mineiro",
-      "nation": "Ecuador",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2583.png",
-      "kitNumber": 23
-    },
-    {
       "apiId": 10160,
       "name": "Léo Duarte",
       "position": "CB",
       "club": "Atlético Mineiro",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/10160.png",
       "kitNumber": 5
-    },
-    {
-      "apiId": 30398,
-      "name": "Vitor Hugo",
-      "position": "CB",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/30398.png",
-      "kitNumber": 14
-    },
-    {
-      "apiId": 152857,
-      "name": "Ruan Tressoldi",
-      "position": "CB",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/152857.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 197450,
-      "name": "Natanael",
-      "position": "RB",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/197450.png",
-      "kitNumber": 2
     },
     {
       "apiId": 615190,
@@ -152,6 +80,42 @@
       "kitNumber": 32
     },
     {
+      "apiId": 10122,
+      "name": "Renan Lodi",
+      "position": "LB",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/10122.png",
+      "kitNumber": 6
+    },
+    {
+      "apiId": 30476,
+      "name": "Lyanco",
+      "position": "CB",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/30476.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 197450,
+      "name": "Natanael",
+      "position": "RB",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/197450.png",
+      "kitNumber": 2
+    },
+    {
       "apiId": 609544,
       "name": "K. Pascini",
       "position": "CB",
@@ -164,16 +128,40 @@
       "kitNumber": 36
     },
     {
-      "apiId": 404640,
-      "name": "I. Román",
+      "apiId": 675445,
+      "name": "Pedro Lemos",
       "position": "CB",
       "club": "Atlético Mineiro",
-      "nation": "Chile",
+      "nation": "Brazil",
       "tier": "SILVER",
-      "rating": 70,
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/404640.png",
-      "kitNumber": 3
+      "imageUrl": "https://media.api-sports.io/football/players/675445.png",
+      "kitNumber": 53
+    },
+    {
+      "apiId": 2583,
+      "name": "A. Preciado",
+      "position": "RB",
+      "club": "Atlético Mineiro",
+      "nation": "Ecuador",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2583.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 152857,
+      "name": "Ruan Tressoldi",
+      "position": "CB",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/152857.png",
+      "kitNumber": 4
     },
     {
       "apiId": 633527,
@@ -200,124 +188,40 @@
       "kitNumber": 40
     },
     {
-      "apiId": 9926,
-      "name": "Gustavo Scarpa",
-      "position": "CAM/RW",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9926.png",
-      "kitNumber": 10
-    },
-    {
-      "apiId": 18761,
-      "name": "Bernard",
-      "position": "LW/CAM",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18761.png",
-      "kitNumber": 11
-    },
-    {
-      "apiId": 16360,
-      "name": "A. Franco",
-      "position": "CM/CDM",
-      "club": "Atlético Mineiro",
-      "nation": "Ecuador",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/16360.png",
-      "kitNumber": 21
-    },
-    {
-      "apiId": 687,
-      "name": "Maycon",
-      "position": "CM/CDM",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/687.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 9967,
-      "name": "Igor Gomes",
-      "position": "CAM/CM",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9967.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 10166,
-      "name": "Reinier",
-      "position": "CAM/ST",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/10166.png",
-      "kitNumber": 19
-    },
-    {
-      "apiId": 363323,
-      "name": "Alexsander",
-      "position": "CM/CDM",
-      "club": "Atlético Mineiro",
-      "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/363323.png",
-      "kitNumber": null
-    },
-    {
-      "apiId": 6031,
-      "name": "T. Cuello",
-      "position": "LW/LM",
-      "club": "Atlético Mineiro",
-      "nation": "Argentina",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/6031.png",
-      "kitNumber": 28
-    },
-    {
-      "apiId": 352371,
-      "name": "Victor Hugo",
-      "position": "CM/CAM",
+      "apiId": 30398,
+      "name": "Vitor Hugo",
+      "position": "CB",
       "club": "Atlético Mineiro",
       "nation": "Brazil",
       "tier": "GOLD",
       "rating": 75,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/352371.png",
-      "kitNumber": 30
+      "imageUrl": "https://media.api-sports.io/football/players/30398.png",
+      "kitNumber": 14
     },
     {
-      "apiId": 415069,
-      "name": "Patrick Silva",
+      "apiId": 363323,
+      "name": "Alexsander",
       "position": "CM",
       "club": "Atlético Mineiro",
       "nation": "Brazil",
       "tier": "GOLD",
-      "rating": 74,
+      "rating": 75,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/415069.png",
-      "kitNumber": 20
+      "imageUrl": "https://media.api-sports.io/football/players/363323.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 289592,
+      "name": "K. Castaño",
+      "position": "CM",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "SILVER",
+      "rating": 72,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/289592.png",
+      "kitNumber": 15
     },
     {
       "apiId": 615196,
@@ -344,6 +248,42 @@
       "kitNumber": 58
     },
     {
+      "apiId": 16360,
+      "name": "A. Franco",
+      "position": "CM",
+      "club": "Atlético Mineiro",
+      "nation": "Ecuador",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/16360.png",
+      "kitNumber": 21
+    },
+    {
+      "apiId": 905,
+      "name": "Fred",
+      "position": "CM",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/905.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 9926,
+      "name": "Gustavo Scarpa",
+      "position": "CAM",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9926.png",
+      "kitNumber": 10
+    },
+    {
       "apiId": 570399,
       "name": "Gutte",
       "position": "CM",
@@ -354,6 +294,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/570399.png",
       "kitNumber": 48
+    },
+    {
+      "apiId": 9967,
+      "name": "Igor Gomes",
+      "position": "CAM",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9967.png",
+      "kitNumber": 17
     },
     {
       "apiId": 629376,
@@ -368,6 +320,30 @@
       "kitNumber": 35
     },
     {
+      "apiId": 687,
+      "name": "Maycon",
+      "position": "CM",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/687.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 415069,
+      "name": "Patrick Silva",
+      "position": "CM",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/415069.png",
+      "kitNumber": 20
+    },
+    {
       "apiId": 414544,
       "name": "T. Pérez",
       "position": "CM",
@@ -380,28 +356,40 @@
       "kitNumber": 25
     },
     {
-      "apiId": 9939,
-      "name": "Dudu",
-      "position": "RW/LW/ST",
+      "apiId": 10166,
+      "name": "Reinier",
+      "position": "CAM",
       "club": "Atlético Mineiro",
       "nation": "Brazil",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/9939.png",
-      "kitNumber": 92
+      "imageUrl": "https://media.api-sports.io/football/players/10166.png",
+      "kitNumber": 19
     },
     {
-      "apiId": 5923,
-      "name": "M. Cassierra",
-      "position": "ST",
+      "apiId": 352371,
+      "name": "Victor Hugo",
+      "position": "CM",
       "club": "Atlético Mineiro",
-      "nation": "Colombia",
-      "tier": "ELITE",
-      "rating": 81,
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 75,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/5923.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/352371.png",
+      "kitNumber": 30
+    },
+    {
+      "apiId": 18761,
+      "name": "Bernard",
+      "position": "LW",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18761.png",
+      "kitNumber": 11
     },
     {
       "apiId": 197513,
@@ -409,23 +397,23 @@
       "position": "ST",
       "club": "Atlético Mineiro",
       "nation": "Uruguay",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/197513.png",
       "kitNumber": 18
     },
     {
-      "apiId": 280695,
-      "name": "A. Minda",
-      "position": "LW/RW",
+      "apiId": 5923,
+      "name": "M. Cassierra",
+      "position": "ST",
       "club": "Atlético Mineiro",
-      "nation": "Ecuador",
-      "tier": "ELITE",
-      "rating": 81,
+      "nation": "Colombia",
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/280695.png",
-      "kitNumber": 27
+      "imageUrl": "https://media.api-sports.io/football/players/5923.png",
+      "kitNumber": 9
     },
     {
       "apiId": 609519,
@@ -438,6 +426,42 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/609519.png",
       "kitNumber": 29
+    },
+    {
+      "apiId": 6031,
+      "name": "T. Cuello",
+      "position": "LW",
+      "club": "Atlético Mineiro",
+      "nation": "Argentina",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/6031.png",
+      "kitNumber": 28
+    },
+    {
+      "apiId": 9939,
+      "name": "Dudu",
+      "position": "RW",
+      "club": "Atlético Mineiro",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/9939.png",
+      "kitNumber": 92
+    },
+    {
+      "apiId": 280695,
+      "name": "A. Minda",
+      "position": "LW",
+      "club": "Atlético Mineiro",
+      "nation": "Ecuador",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/280695.png",
+      "kitNumber": 27
     },
     {
       "apiId": 659457,

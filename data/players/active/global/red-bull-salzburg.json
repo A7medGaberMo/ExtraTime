@@ -4,9 +4,32 @@
     "name": "Red Bull Salzburg",
     "logo": "https://media.api-sports.io/football/teams/572.png",
     "league": "Bundesliga",
-    "leagueId": 181
+    "leagueId": 218
   },
   "players": [
+    {
+      "apiId": 2158,
+      "name": "H. Bushchan",
+      "position": "GK",
+      "club": "Red Bull Salzburg",
+      "nation": "Austria",
+      "tier": "GOLD",
+      "rating": 77,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2158.png",
+      "kitNumber": 1
+    },
+    {
+      "apiId": 638033,
+      "name": "B. Manko",
+      "position": "GK",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/638033.png"
+    },
     {
       "apiId": 154864,
       "name": "R. Neshcheret",
@@ -32,18 +55,6 @@
       "kitNumber": 43
     },
     {
-      "apiId": 638033,
-      "name": "B. Manko",
-      "position": "GK",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/638033.png",
-      "kitNumber": null
-    },
-    {
       "apiId": 395549,
       "name": "V. Surkis",
       "position": "GK",
@@ -54,90 +65,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/395549.png",
       "kitNumber": 71
-    },
-    {
-      "apiId": 2167,
-      "name": "D. Popov",
-      "position": "CB",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2167.png",
-      "kitNumber": 4
-    },
-    {
-      "apiId": 2164,
-      "name": "T. Kędziora",
-      "position": "CB/RB",
-      "club": "Red Bull Salzburg",
-      "nation": "Poland",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2164.png",
-      "kitNumber": 94
-    },
-    {
-      "apiId": 63434,
-      "name": "O. Tymchyk",
-      "position": "RB/RWB",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/63434.png",
-      "kitNumber": 18
-    },
-    {
-      "apiId": 161686,
-      "name": "K. Vivcharenko",
-      "position": "LB/LWB",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161686.png",
-      "kitNumber": 2
-    },
-    {
-      "apiId": 63564,
-      "name": "V. Dubinchak",
-      "position": "LB",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/63564.png",
-      "kitNumber": 44
-    },
-    {
-      "apiId": 385027,
-      "name": "T. Mykhavko",
-      "position": "CB",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/385027.png",
-      "kitNumber": 32
-    },
-    {
-      "apiId": 208391,
-      "name": "O. Sych",
-      "position": "RB",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/208391.png",
-      "kitNumber": 5
     },
     {
       "apiId": 162227,
@@ -152,28 +79,16 @@
       "kitNumber": 40
     },
     {
-      "apiId": 340624,
-      "name": "N. Malysh",
-      "position": "RB/CB",
+      "apiId": 63564,
+      "name": "V. Dubinchak",
+      "position": "LB",
       "club": "Red Bull Salzburg",
       "nation": "Ukraine",
       "tier": "GOLD",
-      "rating": 74,
+      "rating": 75,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/340624.png",
-      "kitNumber": 23
-    },
-    {
-      "apiId": 339416,
-      "name": "A. Thiare",
-      "position": "CB",
-      "club": "Red Bull Salzburg",
-      "nation": "Senegal",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/339416.png",
-      "kitNumber": 66
+      "imageUrl": "https://media.api-sports.io/football/players/63564.png",
+      "kitNumber": 44
     },
     {
       "apiId": 626400,
@@ -188,6 +103,18 @@
       "kitNumber": 90
     },
     {
+      "apiId": 2164,
+      "name": "T. Kędziora",
+      "position": "CB",
+      "club": "Red Bull Salzburg",
+      "nation": "Poland",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2164.png",
+      "kitNumber": 94
+    },
+    {
       "apiId": 635788,
       "name": "M. Korobov",
       "position": "CB",
@@ -198,6 +125,90 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/635788.png",
       "kitNumber": 13
+    },
+    {
+      "apiId": 340624,
+      "name": "N. Malysh",
+      "position": "RB",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/340624.png",
+      "kitNumber": 23
+    },
+    {
+      "apiId": 385027,
+      "name": "T. Mykhavko",
+      "position": "CB",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/385027.png",
+      "kitNumber": 32
+    },
+    {
+      "apiId": 2167,
+      "name": "D. Popov",
+      "position": "CB",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2167.png",
+      "kitNumber": 4
+    },
+    {
+      "apiId": 208391,
+      "name": "O. Sych",
+      "position": "RB",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/208391.png",
+      "kitNumber": 5
+    },
+    {
+      "apiId": 339416,
+      "name": "A. Thiare",
+      "position": "CB",
+      "club": "Red Bull Salzburg",
+      "nation": "Senegal",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/339416.png",
+      "kitNumber": 66
+    },
+    {
+      "apiId": 63434,
+      "name": "O. Tymchyk",
+      "position": "RB",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/63434.png",
+      "kitNumber": 18
+    },
+    {
+      "apiId": 161686,
+      "name": "K. Vivcharenko",
+      "position": "LB",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161686.png",
+      "kitNumber": 2
     },
     {
       "apiId": 395573,
@@ -212,25 +223,13 @@
       "kitNumber": 34
     },
     {
-      "apiId": 2177,
-      "name": "M. Shaparenko",
-      "position": "CM/CAM",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/2177.png",
-      "kitNumber": 10
-    },
-    {
       "apiId": 283566,
       "name": "V. Brazhko",
-      "position": "CDM/CM",
+      "position": "CDM",
       "club": "Red Bull Salzburg",
       "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/283566.png",
       "kitNumber": 6
@@ -238,43 +237,31 @@
     {
       "apiId": 2172,
       "name": "V. Buyalskyi",
-      "position": "CAM/CM",
+      "position": "CAM",
       "club": "Red Bull Salzburg",
       "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/2172.png",
       "kitNumber": 29
     },
     {
-      "apiId": 63420,
-      "name": "O. Pikhalyonok",
-      "position": "CM/CAM",
+      "apiId": 415051,
+      "name": "Gustavo Prado",
+      "position": "CM",
       "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 81,
+      "nation": "Austria",
+      "tier": "SILVER",
+      "rating": 72,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/63420.png",
-      "kitNumber": 8
-    },
-    {
-      "apiId": 63452,
-      "name": "V. Kabaev",
-      "position": "LW/LM",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/63452.png",
-      "kitNumber": 22
+      "imageUrl": "https://media.api-sports.io/football/players/415051.png",
+      "kitNumber": 30
     },
     {
       "apiId": 38725,
       "name": "J. Lonwijk",
-      "position": "CM/CAM",
+      "position": "CM",
       "club": "Red Bull Salzburg",
       "nation": "Suriname",
       "tier": "GOLD",
@@ -282,30 +269,6 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/38725.png",
       "kitNumber": 21
-    },
-    {
-      "apiId": 161570,
-      "name": "M. Mykhaylenko",
-      "position": "CM",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/161570.png",
-      "kitNumber": 91
-    },
-    {
-      "apiId": 63637,
-      "name": "V. Rubchynskyi",
-      "position": "CM",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/63637.png",
-      "kitNumber": 15
     },
     {
       "apiId": 652731,
@@ -318,6 +281,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/652731.png",
       "kitNumber": 14
+    },
+    {
+      "apiId": 161570,
+      "name": "M. Mykhaylenko",
+      "position": "CM",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/161570.png",
+      "kitNumber": 91
     },
     {
       "apiId": 545291,
@@ -344,52 +319,52 @@
       "kitNumber": 80
     },
     {
-      "apiId": 460435,
-      "name": "S. Ogundana",
-      "position": "LW/RW",
-      "club": "Red Bull Salzburg",
-      "nation": "Nigeria",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/460435.png",
-      "kitNumber": 16
-    },
-    {
-      "apiId": 545348,
-      "name": "B. Redushko",
+      "apiId": 63420,
+      "name": "O. Pikhalyonok",
       "position": "CM",
       "club": "Red Bull Salzburg",
       "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/63420.png",
+      "kitNumber": 8
+    },
+    {
+      "apiId": 63637,
+      "name": "V. Rubchynskyi",
+      "position": "CM",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/63637.png",
+      "kitNumber": 15
+    },
+    {
+      "apiId": 2177,
+      "name": "M. Shaparenko",
+      "position": "CM",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/2177.png",
+      "kitNumber": 10
+    },
+    {
+      "apiId": 546652,
+      "name": "K. Bah",
+      "position": "ST",
+      "club": "Red Bull Salzburg",
+      "nation": "Austria",
       "tier": "SILVER",
-      "rating": 68,
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/545348.png",
-      "kitNumber": 70
-    },
-    {
-      "apiId": 18834,
-      "name": "A. Yarmolenko",
-      "position": "RW/RM/ST",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 82,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18834.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 198391,
-      "name": "N. Voloshyn",
-      "position": "RW/LW",
-      "club": "Red Bull Salzburg",
-      "nation": "Ukraine",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/198391.png",
-      "kitNumber": 9
+      "imageUrl": "https://media.api-sports.io/football/players/546652.png",
+      "kitNumber": 42
     },
     {
       "apiId": 95105,
@@ -404,28 +379,16 @@
       "kitNumber": 39
     },
     {
-      "apiId": 295777,
-      "name": "Vladislav Blănuță",
-      "position": "ST",
-      "club": "Red Bull Salzburg",
-      "nation": "Moldova",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/295777.png",
-      "kitNumber": 77
-    },
-    {
-      "apiId": 395550,
-      "name": "M. Ponomarenko",
-      "position": "ST",
+      "apiId": 63452,
+      "name": "V. Kabaev",
+      "position": "LW",
       "club": "Red Bull Salzburg",
       "nation": "Ukraine",
       "tier": "GOLD",
-      "rating": 74,
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/395550.png",
-      "kitNumber": 11
+      "imageUrl": "https://media.api-sports.io/football/players/63452.png",
+      "kitNumber": 22
     },
     {
       "apiId": 545362,
@@ -450,6 +413,66 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/567805.png",
       "kitNumber": 99
+    },
+    {
+      "apiId": 460435,
+      "name": "S. Ogundana",
+      "position": "LW",
+      "club": "Red Bull Salzburg",
+      "nation": "Nigeria",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/460435.png",
+      "kitNumber": 16
+    },
+    {
+      "apiId": 395550,
+      "name": "M. Ponomarenko",
+      "position": "ST",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/395550.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 545348,
+      "name": "B. Redushko",
+      "position": "CM",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/545348.png",
+      "kitNumber": 70
+    },
+    {
+      "apiId": 198391,
+      "name": "N. Voloshyn",
+      "position": "RW",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/198391.png",
+      "kitNumber": 9
+    },
+    {
+      "apiId": 18834,
+      "name": "A. Yarmolenko",
+      "position": "RW",
+      "club": "Red Bull Salzburg",
+      "nation": "Ukraine",
+      "tier": "GOLD",
+      "rating": 78,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/18834.png",
+      "kitNumber": 7
     }
   ]
 }

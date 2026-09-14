@@ -8,30 +8,6 @@
   },
   "players": [
     {
-      "apiId": 46672,
-      "name": "Rui Silva",
-      "position": "GK",
-      "club": "Sporting CP",
-      "nation": "Portugal",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/46672.png",
-      "kitNumber": 1
-    },
-    {
-      "apiId": 18755,
-      "name": "João Virgínia",
-      "position": "GK",
-      "club": "Sporting CP",
-      "nation": "Portugal",
-      "tier": "GOLD",
-      "rating": 74,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18755.png",
-      "kitNumber": 12
-    },
-    {
       "apiId": 330296,
       "name": "Diego Callai",
       "position": "GK",
@@ -42,6 +18,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/330296.png",
       "kitNumber": 41
+    },
+    {
+      "apiId": 348897,
+      "name": "Kaique",
+      "position": "GK",
+      "club": "Sporting CP",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/348897.png",
+      "kitNumber": 30
     },
     {
       "apiId": 361417,
@@ -56,64 +44,28 @@
       "kitNumber": 99
     },
     {
-      "apiId": 265595,
-      "name": "Gonçalo Inácio",
-      "position": "CB",
-      "club": "Sporting CP",
-      "nation": "Portugal",
-      "tier": "MASTER",
-      "rating": 86,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/265595.png",
-      "kitNumber": 25
-    },
-    {
-      "apiId": 304228,
-      "name": "Z. Debast",
-      "position": "CB",
-      "club": "Sporting CP",
-      "nation": "Belgium",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/304228.png",
-      "kitNumber": 6
-    },
-    {
-      "apiId": 262845,
-      "name": "Eduardo Quaresma",
-      "position": "CB",
+      "apiId": 46672,
+      "name": "Rui Silva",
+      "position": "GK",
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "GOLD",
-      "rating": 77,
+      "rating": 79,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/262845.png",
-      "kitNumber": 72
+      "imageUrl": "https://media.api-sports.io/football/players/46672.png",
+      "kitNumber": 1
     },
     {
-      "apiId": 341700,
-      "name": "Iván Fresneda",
-      "position": "RB/RWB",
+      "apiId": 51776,
+      "name": "M. Araújo",
+      "position": "LWB",
       "club": "Sporting CP",
-      "nation": "Spain",
+      "nation": "Uruguay",
       "tier": "GOLD",
-      "rating": 76,
+      "rating": 79,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/341700.png",
-      "kitNumber": 22
-    },
-    {
-      "apiId": 135839,
-      "name": "G. Vagiannidis",
-      "position": "RB",
-      "club": "Sporting CP",
-      "nation": "Greece",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/135839.png",
-      "kitNumber": 13
+      "imageUrl": "https://media.api-sports.io/football/players/51776.png",
+      "kitNumber": 20
     },
     {
       "apiId": 446827,
@@ -140,6 +92,18 @@
       "kitNumber": 70
     },
     {
+      "apiId": 304228,
+      "name": "Z. Debast",
+      "position": "CB",
+      "club": "Sporting CP",
+      "nation": "Belgium",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/304228.png",
+      "kitNumber": 6
+    },
+    {
       "apiId": 505249,
       "name": "Rodrigo Dias",
       "position": "CB",
@@ -152,57 +116,93 @@
       "kitNumber": 50
     },
     {
-      "apiId": 18748,
-      "name": "Pote",
-      "position": "CAM/LW/CM",
+      "apiId": 341700,
+      "name": "Iván Fresneda",
+      "position": "RB",
+      "club": "Sporting CP",
+      "nation": "Spain",
+      "tier": "GOLD",
+      "rating": 76,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/341700.png",
+      "kitNumber": 22
+    },
+    {
+      "apiId": 585717,
+      "name": "D. Gueye",
+      "position": "CB",
+      "club": "Sporting CP",
+      "nation": "Senegal",
+      "tier": "BRONZE",
+      "rating": 58,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/585717.png",
+      "kitNumber": 38
+    },
+    {
+      "apiId": 265595,
+      "name": "Gonçalo Inácio",
+      "position": "CB",
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "ELITE",
       "rating": 83,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/18748.png",
-      "kitNumber": 8
+      "imageUrl": "https://media.api-sports.io/football/players/265595.png",
+      "kitNumber": 25
     },
     {
-      "apiId": 41892,
-      "name": "Daniel Bragança",
-      "position": "CM/CDM",
+      "apiId": 262845,
+      "name": "Eduardo Quaresma",
+      "position": "CB",
       "club": "Sporting CP",
       "nation": "Portugal",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 77,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41892.png",
+      "imageUrl": "https://media.api-sports.io/football/players/262845.png",
+      "kitNumber": 72
+    },
+    {
+      "apiId": 41194,
+      "name": "Nuno Santos",
+      "position": "LWB",
+      "club": "Sporting CP",
+      "nation": "Portugal",
+      "tier": "GOLD",
+      "rating": 80,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/41194.png",
+      "kitNumber": 11
+    },
+    {
+      "apiId": 135839,
+      "name": "G. Vagiannidis",
+      "position": "RB",
+      "club": "Sporting CP",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/135839.png",
+      "kitNumber": 13
+    },
+    {
+      "apiId": 515985,
+      "name": "M. Zekri",
+      "position": "CB",
+      "club": "Sporting CP",
+      "nation": "Portugal",
+      "tier": "SILVER",
+      "rating": 66,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/515985.png",
       "kitNumber": 23
-    },
-    {
-      "apiId": 108563,
-      "name": "R. Zalazar",
-      "position": "CM/CAM",
-      "club": "Sporting CP",
-      "nation": "Uruguay",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/108563.png",
-      "kitNumber": 17
-    },
-    {
-      "apiId": 119795,
-      "name": "G. Kochorashvili",
-      "position": "CM/CDM",
-      "club": "Sporting CP",
-      "nation": "Georgia",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/119795.png",
-      "kitNumber": 14
     },
     {
       "apiId": 286084,
       "name": "Sergi Altimira",
-      "position": "CM/CDM",
+      "position": "CM",
       "club": "Sporting CP",
       "nation": "Spain",
       "tier": "GOLD",
@@ -218,22 +218,10 @@
       "club": "Sporting CP",
       "nation": "Denmark",
       "tier": "GOLD",
-      "rating": 75,
+      "rating": 74,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/341822.png",
       "kitNumber": 4
-    },
-    {
-      "apiId": 279802,
-      "name": "Pedro Lima",
-      "position": "RB/RWB",
-      "club": "Sporting CP",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/279802.png",
-      "kitNumber": 21
     },
     {
       "apiId": 331046,
@@ -241,23 +229,11 @@
       "position": "CM",
       "club": "Sporting CP",
       "nation": "Ivory Coast",
-      "tier": "GOLD",
-      "rating": 74,
+      "tier": "SILVER",
+      "rating": 73,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/331046.png",
       "kitNumber": 77
-    },
-    {
-      "apiId": 417653,
-      "name": "J. Derry",
-      "position": "CM",
-      "club": "Sporting CP",
-      "nation": "Netherlands",
-      "tier": "SILVER",
-      "rating": 68,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/417653.png",
-      "kitNumber": 28
     },
     {
       "apiId": 449626,
@@ -284,6 +260,18 @@
       "kitNumber": 58
     },
     {
+      "apiId": 279802,
+      "name": "Pedro Lima",
+      "position": "RB",
+      "club": "Sporting CP",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 74,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/279802.png",
+      "kitNumber": 21
+    },
+    {
       "apiId": 400509,
       "name": "João Simões",
       "position": "CM",
@@ -296,93 +284,45 @@
       "kitNumber": 52
     },
     {
-      "apiId": 51776,
-      "name": "M. Araújo",
-      "position": "LWB/LM/LW",
+      "apiId": 108563,
+      "name": "R. Zalazar",
+      "position": "CM",
       "club": "Sporting CP",
       "nation": "Uruguay",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/51776.png",
-      "kitNumber": 20
+      "imageUrl": "https://media.api-sports.io/football/players/108563.png",
+      "kitNumber": 17
     },
     {
-      "apiId": 41194,
-      "name": "Nuno Santos",
-      "position": "LWB/LM/LW",
+      "apiId": 554494,
+      "name": "Bidu",
+      "position": "ST",
       "club": "Sporting CP",
       "nation": "Portugal",
-      "tier": "ELITE",
-      "rating": 82,
+      "tier": "SILVER",
+      "rating": 66,
       "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/41194.png",
-      "kitNumber": 11
+      "imageUrl": "https://media.api-sports.io/football/players/554494.png",
+      "kitNumber": 88
     },
     {
       "apiId": 154839,
       "name": "Geny Catamo",
-      "position": "RWB/RW/RM",
+      "position": "RM",
       "club": "Sporting CP",
       "nation": "Mozambique",
-      "tier": "ELITE",
-      "rating": 81,
+      "tier": "GOLD",
+      "rating": 78,
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/154839.png",
       "kitNumber": 10
     },
     {
-      "apiId": 26965,
-      "name": "F. Ioannidis",
-      "position": "ST",
-      "club": "Sporting CP",
-      "nation": "Greece",
-      "tier": "ELITE",
-      "rating": 81,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/26965.png",
-      "kitNumber": 7
-    },
-    {
-      "apiId": 338014,
-      "name": "N. Irankunda",
-      "position": "RW/ST",
-      "club": "Sporting CP",
-      "nation": "Australia",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/338014.png",
-      "kitNumber": 66
-    },
-    {
-      "apiId": 404574,
-      "name": "Luis Guilherme",
-      "position": "RW/CAM",
-      "club": "Sporting CP",
-      "nation": "Brazil",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/404574.png",
-      "kitNumber": 31
-    },
-    {
-      "apiId": 47237,
-      "name": "L. Suárez",
-      "position": "ST",
-      "club": "Sporting CP",
-      "nation": "Colombia",
-      "tier": "GOLD",
-      "rating": 75,
-      "isLegend": false,
-      "imageUrl": "https://media.api-sports.io/football/players/47237.png",
-      "kitNumber": 97
-    },
-    {
       "apiId": 385674,
       "name": "Mauro Couto",
-      "position": "LW/RW",
+      "position": "LW",
       "club": "Sporting CP",
       "nation": "Portugal",
       "tier": "SILVER",
@@ -390,6 +330,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/385674.png",
       "kitNumber": 78
+    },
+    {
+      "apiId": 417653,
+      "name": "J. Derry",
+      "position": "CM",
+      "club": "Sporting CP",
+      "nation": "Netherlands",
+      "tier": "SILVER",
+      "rating": 68,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/417653.png",
+      "kitNumber": 28
     },
     {
       "apiId": 567965,
@@ -402,6 +354,42 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/567965.png",
       "kitNumber": 57
+    },
+    {
+      "apiId": 26965,
+      "name": "F. Ioannidis",
+      "position": "ST",
+      "club": "Sporting CP",
+      "nation": "Greece",
+      "tier": "GOLD",
+      "rating": 79,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/26965.png",
+      "kitNumber": 7
+    },
+    {
+      "apiId": 338014,
+      "name": "N. Irankunda",
+      "position": "RW",
+      "club": "Sporting CP",
+      "nation": "Australia",
+      "tier": "SILVER",
+      "rating": 73,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/338014.png",
+      "kitNumber": 19
+    },
+    {
+      "apiId": 404574,
+      "name": "Luis Guilherme",
+      "position": "RW",
+      "club": "Sporting CP",
+      "nation": "Brazil",
+      "tier": "GOLD",
+      "rating": 75,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/404574.png",
+      "kitNumber": 31
     },
     {
       "apiId": 386820,
@@ -426,6 +414,18 @@
       "isLegend": false,
       "imageUrl": "https://media.api-sports.io/football/players/449624.png",
       "kitNumber": 82
+    },
+    {
+      "apiId": 47237,
+      "name": "L. Suárez",
+      "position": "ST",
+      "club": "Sporting CP",
+      "nation": "Colombia",
+      "tier": "GOLD",
+      "rating": 77,
+      "isLegend": false,
+      "imageUrl": "https://media.api-sports.io/football/players/47237.png",
+      "kitNumber": 97
     }
   ]
 }
