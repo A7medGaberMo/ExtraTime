@@ -200,10 +200,6 @@ export function TacticalPitch({
   squad,
   rounds,
   currentRound,
-  totalRounds,
-  title,
-  accentColor = '#95E810',
-  badgeLabel,
   compact = false,
   fillContainer = false,
   scale,
@@ -346,7 +342,7 @@ export function TacticalPitch({
       <div
         style={scale ? { transform: `scale(${scale})`, transformOrigin: 'top center' } : undefined}
         className={cn(
-          'relative aspect-[3/3.85] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-emerald-500/20 bg-gradient-to-b from-[#031c13] via-[#02140d] to-[#010b07] p-1.5 sm:p-2.5 shadow-[0_12px_36px_rgba(0,0,0,0.85),inset_0_1px_1px_0_rgba(255,255,255,0.1)]',
+          'relative aspect-[3/3.85] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-gold/25 bg-gradient-to-b from-[#080d16] via-[#05080e] to-[#020306] p-1.5 sm:p-2.5 shadow-[0_12px_36px_rgba(0,0,0,0.85),inset_0_1px_1px_0_rgba(255,255,255,0.1)]',
           fillContainer
             ? 'max-w-full h-full'
             : compact
@@ -354,8 +350,8 @@ export function TacticalPitch({
               : 'max-w-[275px] sm:max-w-[325px] md:max-w-[350px]',
         )}
       >
-        {/* Subtle Pitch Grass Turf Glow */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.12)_0%,transparent_75%)]" />
+        {/* Subtle Pitch Gold Stadium Turf Glow */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(229,184,66,0.08)_0%,transparent_75%)]" />
 
         {/* Specular White Field Markings (Center Circle, Penalty Boxes, Halfway Line) */}
         <div className="pointer-events-none absolute inset-0">
@@ -455,14 +451,14 @@ export function TacticalPitch({
                   </div>
 
                   {/* Player Name */}
-                  <span className="font-card font-extrabold uppercase text-[7px] sm:text-[8.5px] text-white truncate max-w-full text-center leading-none tracking-tight px-0.5 drop-shadow-sm">
+                  <span className="font-card font-extrabold uppercase text-[7px] sm:text-[8.5px] text-white truncate whitespace-nowrap overflow-hidden text-ellipsis block max-w-full text-center leading-none tracking-tight px-0.5 drop-shadow-sm">
                     {displayName}
                   </span>
 
                   {/* Transfer Price Badge (or Rating if no price) */}
                   <div className="flex w-full items-center justify-center">
                     {cost !== undefined ? (
-                      <span className="font-stats font-black text-lime bg-lime/15 border border-lime/40 px-1.5 py-[1px] rounded-full text-[6.5px] sm:text-[8px] leading-none shadow-[0_0_6px_rgba(149,232,16,0.3)]">
+                      <span className="font-stats font-black text-gold bg-gold/15 border border-gold/40 px-1.5 py-[1px] rounded-full text-[6.5px] sm:text-[8px] leading-none shadow-[0_0_6px_rgba(229,184,66,0.3)]">
                         ${cost}M
                       </span>
                     ) : player.rating ? (
@@ -485,20 +481,20 @@ export function TacticalPitch({
                   className={cn(
                     'group relative flex flex-col items-center justify-center rounded-xl sm:rounded-2xl transition-all w-[44px] h-[64px] sm:w-[54px] sm:h-[76px] select-none cursor-pointer',
                     isTargetActive
-                      ? 'border-2 border-lime bg-lime/15 text-lime shadow-[0_0_20px_rgba(149,232,16,0.7),inset_0_1px_0_0_rgba(255,255,255,0.3)] scale-105 z-20 animate-pulse'
-                      : 'border border-dashed border-white/15 bg-slate-950/60 text-steel hover:border-lime/50 hover:bg-slate-900/80 hover:text-white backdrop-blur-md z-10',
+                      ? 'border-2 border-gold bg-gold/15 text-gold shadow-[0_0_20px_rgba(229,184,66,0.7),inset_0_1px_0_0_rgba(255,255,255,0.3)] scale-105 z-20 animate-pulse'
+                      : 'border border-dashed border-white/15 bg-slate-950/60 text-steel hover:border-gold/50 hover:bg-slate-900/80 hover:text-white backdrop-blur-md z-10',
                   )}
                   title={isTargetActive ? `Current Target: ${expectedPos}` : `Empty ${expectedPos}`}
                 >
                   {isTargetActive ? (
                     <div className="flex flex-col items-center gap-1 p-1 text-center">
-                      <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-lime/25 text-lime animate-bounce border border-lime/50">
+                      <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-gold/25 text-gold animate-bounce border border-gold/50">
                         <AppIcon icon={Plus} size={14} weight="bold" />
                       </span>
-                      <span className="text-[7.5px] sm:text-[9px] font-black tracking-wider text-lime uppercase drop-shadow-sm font-stats">
+                      <span className="text-[7.5px] sm:text-[9px] font-black tracking-wider text-gold uppercase drop-shadow-sm font-stats">
                         {expectedPos}
                       </span>
-                      <span className="text-[5.5px] sm:text-[6.5px] font-black uppercase tracking-widest text-lime/80 leading-none">
+                      <span className="text-[5.5px] sm:text-[6.5px] font-black uppercase tracking-widest text-gold/80 leading-none">
                         LIVE
                       </span>
                     </div>
@@ -510,7 +506,7 @@ export function TacticalPitch({
                         weight="bold"
                         className="opacity-50 group-hover:opacity-100 transition-opacity"
                       />
-                      <span className="text-[7px] sm:text-[8.5px] font-extrabold tracking-wider uppercase text-steel group-hover:text-lime transition-colors font-stats">
+                      <span className="text-[7px] sm:text-[8.5px] font-extrabold tracking-wider uppercase text-steel group-hover:text-gold transition-colors font-stats">
                         {expectedPos}
                       </span>
                     </div>

@@ -68,34 +68,34 @@ export function formatDisplayName(fullName: string): string {
 export function getDynamicNameSizeClass(displayName: string, size: 'pitch' | 'draft' | 'xs' | 'sm' | 'md' | 'lg'): string {
   const len = displayName.length;
   if (size === 'pitch') {
-    if (len > 12) return 'text-[6px] sm:text-[7.5px] tracking-tighter leading-none';
-    if (len > 8) return 'text-[7px] sm:text-[8.5px] tracking-tight leading-none';
-    return 'text-[7.5px] sm:text-[9px] tracking-tight leading-none';
+    if (len > 12) return 'text-[4.5px] sm:text-[6px] tracking-tighter leading-none whitespace-nowrap';
+    if (len > 8) return 'text-[5px] sm:text-[7px] tracking-tight leading-none whitespace-nowrap';
+    return 'text-[6px] sm:text-[7.5px] tracking-tight leading-none whitespace-nowrap';
   }
   if (size === 'draft') {
-    if (len > 12) return 'text-[6.5px] xs:text-[7.5px] sm:text-[9px] md:text-[10.5px] lg:text-xs xl:text-[13px] tracking-tight leading-none';
-    if (len > 8) return 'text-[7.5px] xs:text-[8.5px] sm:text-[10px] md:text-xs lg:text-[13px] xl:text-[14.5px] tracking-tight leading-none';
-    return 'text-[8.5px] xs:text-[9.5px] sm:text-[11px] md:text-[13px] lg:text-sm xl:text-base tracking-tight leading-none';
+    if (len > 12) return 'text-[4.5px] xs:text-[5px] sm:text-[7px] md:text-[8.5px] lg:text-[10px] xl:text-[11px] tracking-tighter leading-none whitespace-nowrap';
+    if (len > 8) return 'text-[5px] xs:text-[5.5px] sm:text-[7.5px] md:text-[9px] lg:text-[10.5px] xl:text-[11.5px] tracking-tight leading-none whitespace-nowrap';
+    return 'text-[5.5px] xs:text-[6.5px] sm:text-[8.5px] md:text-[10px] lg:text-[11px] xl:text-[12px] tracking-tight leading-none whitespace-nowrap';
   }
   if (size === 'xs') {
-    if (len > 13) return 'text-[7.5px] sm:text-[8.5px] tracking-tighter leading-none';
-    if (len > 10) return 'text-[8.5px] sm:text-[10px] tracking-tight leading-none';
-    return 'text-[9.5px] sm:text-xs tracking-tight leading-none';
+    if (len > 13) return 'text-[7px] sm:text-[8px] tracking-tighter leading-none whitespace-nowrap';
+    if (len > 10) return 'text-[8px] sm:text-[9px] tracking-tight leading-none whitespace-nowrap';
+    return 'text-[9px] sm:text-[10.5px] tracking-tight leading-none whitespace-nowrap';
   }
   if (size === 'sm') {
-    if (len > 13) return 'text-[9px] sm:text-[10px] tracking-tight leading-none';
-    if (len > 10) return 'text-[10px] sm:text-[11.5px] tracking-tight leading-none';
-    return 'text-xs sm:text-[13px] tracking-normal leading-none';
+    if (len > 13) return 'text-[8.5px] sm:text-[9.5px] tracking-tight leading-none whitespace-nowrap';
+    if (len > 10) return 'text-[9.5px] sm:text-[11px] tracking-tight leading-none whitespace-nowrap';
+    return 'text-[11px] sm:text-xs tracking-normal leading-none whitespace-nowrap';
   }
   if (size === 'md') {
-    if (len > 13) return 'text-xs sm:text-sm tracking-tight leading-none';
-    if (len > 10) return 'text-xs sm:text-[15px] tracking-tight leading-none';
-    return 'text-sm sm:text-base tracking-normal leading-none';
+    if (len > 13) return 'text-xs sm:text-sm tracking-tight leading-none whitespace-nowrap';
+    if (len > 10) return 'text-xs sm:text-[15px] tracking-tight leading-none whitespace-nowrap';
+    return 'text-sm sm:text-base tracking-normal leading-none whitespace-nowrap';
   }
   // size === 'lg'
-  if (len > 13) return 'text-sm tracking-tight leading-none';
-  if (len > 10) return 'text-base tracking-normal leading-none';
-  return 'text-lg tracking-normal leading-none';
+  if (len > 13) return 'text-sm tracking-tight leading-none whitespace-nowrap';
+  if (len > 10) return 'text-base tracking-normal leading-none whitespace-nowrap';
+  return 'text-lg tracking-normal leading-none whitespace-nowrap';
 }
 
 interface PlayerCardProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -135,7 +135,7 @@ export function PlayerCard({
       flag: 'h-1.5 w-2.5 sm:h-2 sm:w-3',
       club: 'h-2 w-2 sm:h-2.5 sm:w-2.5',
       posBadge: 'h-2 min-w-2.5 px-0.5 text-[4.5px] sm:text-[6px] font-black',
-      nameWrap: 'h-3 sm:h-4 px-0.5 flex items-center justify-center',
+      nameWrap: 'h-3 sm:h-4 px-0.5 flex items-center justify-center overflow-hidden',
       tierContainer: 'hidden',
       tierBadge: 'px-1 py-0 text-[4px] sm:text-[5px] tracking-[0.1em]',
     },
@@ -152,7 +152,7 @@ export function PlayerCard({
       flag: 'h-2 w-3 xs:h-2.5 xs:w-3.5 sm:h-3 sm:w-4.5 md:h-3.5 md:w-5.5 lg:h-4 lg:w-6',
       club: 'h-2.5 w-2.5 xs:h-3 xs:w-3 sm:h-3.5 sm:w-3.5 md:h-4.5 md:w-4.5 lg:h-5 lg:w-5',
       posBadge: 'h-2.5 min-w-3 xs:h-3 xs:min-w-3.5 sm:h-3.5 sm:min-w-5 md:h-4 md:min-w-6 lg:h-4.5 lg:min-w-7 px-0.5 sm:px-1 text-[5.5px] xs:text-[6.5px] sm:text-[8px] md:text-[9px] lg:text-[10px] font-black',
-      nameWrap: 'py-0.5 px-0.5 xs:px-1 sm:py-1 sm:px-1.5 md:py-1.5 md:px-2',
+      nameWrap: 'h-3.5 xs:h-4 sm:h-5 md:h-6 px-0.5 xs:px-1 sm:px-1.5 flex items-center justify-center overflow-hidden',
       tierContainer: 'pt-0.5 pb-0 hidden sm:block',
       tierBadge: 'px-1 sm:px-2 md:px-2.5 py-0 sm:py-0.5 text-[5px] sm:text-[7px] md:text-[8px] lg:text-[9px] tracking-[0.16em]',
     },
@@ -196,7 +196,7 @@ export function PlayerCard({
       inner: 'p-2 sm:p-3',
       header: 'h-7 sm:h-9',
       num: 'text-[28px] sm:text-[38px] font-black font-card-num',
-      etBadge: 'h-6 w-6 p-0.5 sm:h-7.5 sm:w-7.5 sm:p-1',
+      etBadge: 'h-6 w-6 p-0.5 sm:h-7 sm:w-7 sm:p-1',
       etLogoSize: 18,
       avatarRing: 'mt-1 h-[78px] w-[78px] p-[2px] sm:mt-2 sm:h-[110px] sm:w-[110px] sm:p-[2.5px]',
       infoPill: 'mt-1.5 h-6 px-2 gap-1.5 text-[8.5px] sm:mt-2 sm:h-7 sm:px-2.5 sm:gap-2 sm:text-xs',
@@ -243,7 +243,7 @@ export function PlayerCard({
           }
         }}
         className={cn(
-          'relative flex flex-col items-center text-left select-none outline-none focus-visible:ring-2 focus-visible:ring-lime/70',
+          'relative flex flex-col items-center text-start select-none outline-none focus-visible:ring-2 focus-visible:ring-gold/70',
           props.onClick ? 'cursor-pointer' : '',
           scaleMap.card,
           className,
@@ -428,7 +428,7 @@ export function PlayerCard({
 
                 <h3
                   className={cn(
-                    'font-card font-extrabold relative z-10 w-full max-w-full truncate text-center uppercase',
+                    'font-card font-extrabold relative z-10 w-full max-w-full truncate text-center uppercase whitespace-nowrap overflow-hidden text-ellipsis block leading-none',
                     (size === 'pitch' || size === 'draft') ? 'px-0.5' : 'px-1',
                     getDynamicNameSizeClass(displayName, size),
                   )}

@@ -17,17 +17,26 @@ export const create = mutation({
     kitNumber: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    const [club, nation] = await Promise.all([
+      ctx.db.get(args.clubId),
+      ctx.db.get(args.nationId),
+    ]);
+    if (!club || !nation) throw new Error("Invalid club or nation");
+
     return await ctx.db.insert('players', {
       name: args.name,
       position: args.position,
       clubId: args.clubId,
       nationId: args.nationId,
+      clubName: club.name,
+      nationName: nation.name,
       tier: args.tier,
       isLegend: args.isLegend,
       seasonYear: args.seasonYear,
       apiId: args.apiId,
       imageUrl: args.imageUrl,
       kitNumber: args.kitNumber,
+      randomKey: Math.random(),
     });
   },
 });
@@ -141,6 +150,37 @@ export const deduplicatePlayers = internalMutation({
       duplicatesFound,
       deletedCount,
       uniquePlayersRemaining: allPlayers.length - deletedCount,
+    };
+  },
+});
+
+export const backfillPlayerIdentityFields = internalMutation({
+  args: {},
+  handler: async (ctx) => {
+    const players = await ctx.db.query('players').collect();
+    let updated = 0;
+    
+    for (const p of players) {
+      if (!p.clubName || !p.nationName) {
+        const [club, nation] = await Promise.all([
+          ctx.db.get(p.clubId),
+          ctx.db.get(p.nationId)
+        ]);
+        
+        await ctx.db.patch(p._id, {
+          clubName: club?.name ?? "Unknown Club",
+          nationName: nation?.name ?? "Unknown Nation",
+        });
+        updated++;
+        
+        if (updated >= 100) break; // Limit batch size to avoid timeout
+      }
+    }
+    
+    return { 
+      success: true, 
+      updatedCount: updated, 
+      hasMore: updated >= 100 
     };
   },
 });

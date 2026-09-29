@@ -1,10 +1,12 @@
-import { mutation } from '../_generated/server';
+import { mutation, internalMutation } from '../_generated/server';
+import { internal } from '../_generated/api';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { hashSeed, mulberry32 } from '../../src/core/simulation/match-simulator';
 import { isAuctionParticipant } from './sealedView';
 import { verifyGuestSession } from '../lib/auth';
+import { buildSquadSnapshot } from '../matches/helpers';
 
 // ── Helpers ──────────────────────────────────────────────────────
 
@@ -68,11 +70,26 @@ async function resolveSealedRoundCore(
     };
   }
 
-  const hostBid = auction.sealedBids?.host?.amount ?? 0;
-  const guestBid = auction.sealedBids?.guest?.amount ?? 0;
+  let hostBid = auction.sealedBids?.host?.amount;
+  if (hostBid === undefined) {
+    hostBid = (auction.host.passesUsed ?? 0) >= 1 && auction.host.budget > 0 ? 1 : 0;
+  }
+
+  let guestBid = auction.sealedBids?.guest?.amount;
+  if (guestBid === undefined) {
+    guestBid = (auction.guest!.passesUsed ?? 0) >= 1 && auction.guest!.budget > 0 ? 1 : 0;
+  }
 
   const host = { ...auction.host, squad: [...auction.host.squad] };
   const guest = { ...auction.guest!, squad: [...auction.guest!.squad] };
+
+  // Track passes used (bidding $0M with budget > 0)
+  if (hostBid === 0 && host.budget > 0) {
+    host.passesUsed = (host.passesUsed ?? 0) + 1;
+  }
+  if (guestBid === 0 && guest.budget > 0) {
+    guest.passesUsed = (guest.passesUsed ?? 0) + 1;
+  }
 
   let winnerUserId: Id<'guestUsers'> | undefined;
   let winningPrice = 0;
@@ -107,14 +124,13 @@ async function resolveSealedRoundCore(
       cost: winningPrice,
     });
 
-    const guestCost = guestBid;
-    guest.budget -= guestCost;
+    // Loser receives Sub-Card at $0M (guest.budget is NOT deducted)
     guest.squad.push({
       roundNumber: auction.currentRound,
       position: round.position,
       playerId: round.subPlayerId,
       isSub: true,
-      cost: guestCost,
+      cost: 0,
     });
   } else {
     guest.budget -= winningPrice;
@@ -126,14 +142,13 @@ async function resolveSealedRoundCore(
       cost: winningPrice,
     });
 
-    const hostCost = hostBid;
-    host.budget -= hostCost;
+    // Loser receives Sub-Card at $0M (host.budget is NOT deducted)
     host.squad.push({
       roundNumber: auction.currentRound,
       position: round.position,
       playerId: round.subPlayerId,
       isSub: true,
-      cost: hostCost,
+      cost: 0,
     });
   }
 
@@ -149,6 +164,7 @@ async function resolveSealedRoundCore(
 
   const completed = auction.currentRound >= auction.rounds.length;
   const nextRoundNum = auction.currentRound + 1;
+  const nextDeadline = Date.now() + 30000;
 
   await ctx.db.patch(auction._id, {
     status: completed ? 'completed' : 'active',
@@ -156,7 +172,8 @@ async function resolveSealedRoundCore(
     host,
     guest,
     sealedBids: {},
-    bidDeadline: completed ? undefined : Date.now() + 30000,
+    frozenEffect: undefined,
+    bidDeadline: completed ? undefined : nextDeadline,
     roundHistory: history,
     currentBidding: {
       highestBid: 0,
@@ -166,10 +183,18 @@ async function resolveSealedRoundCore(
         : starterIsHost(nextRoundNum)
           ? host.userId
           : guest.userId,
-      turnExpiresAt: Date.now() + 30000,
+      turnExpiresAt: nextDeadline,
       firstPassUserId: undefined,
     },
   });
+
+  if (!completed) {
+    await ctx.scheduler.runAt(
+      nextDeadline + 500,
+      internal.auctions.sealed.authoritativeExpireRound,
+      { roomId, expectedRound: nextRoundNum },
+    );
+  }
 
   if (completed) {
     await ctx.db.patch(roomId, { status: 'completed' });
@@ -179,10 +204,18 @@ async function resolveSealedRoundCore(
       .withIndex('by_room', (q) => q.eq('roomId', roomId))
       .first();
     if (!existing) {
+      const hostSquadIds = host.squad.map((s) => s.playerId);
+      const guestSquadIds = guest.squad.map((s) => s.playerId);
+      
+      const hostSquadSnapshot = await buildSquadSnapshot(ctx, hostSquadIds);
+      const guestSquadSnapshot = await buildSquadSnapshot(ctx, guestSquadIds);
+
       await ctx.db.insert('matches', {
         roomId,
-        hostSquad: host.squad.map((s) => s.playerId),
-        guestSquad: guest.squad.map((s) => s.playerId),
+        hostSquad: hostSquadIds,
+        guestSquad: guestSquadIds,
+        hostSquadSnapshot,
+        guestSquadSnapshot,
         score: { host: 0, guest: 0 },
         status: 'pending',
         seed: auction.seed,
@@ -230,6 +263,29 @@ export const submitSealedBid = mutation({
     }
     if (args.amount > me.budget) {
       throw new Error(`Insufficient budget. You have $${me.budget}M`);
+    }
+
+    // Freeze check: if active in this round against this player, cap maximum bid
+    if (
+      auction.frozenEffect &&
+      auction.frozenEffect.roundNumber === auction.currentRound &&
+      auction.frozenEffect.targetUserId === args.userId
+    ) {
+      if (args.amount > auction.frozenEffect.maxBid) {
+        throw new Error(
+          `You are FROZEN by your opponent! Your maximum bid this round is capped at $${auction.frozenEffect.maxBid}M.`,
+        );
+      }
+    }
+
+    // Pass ($0M) check: only 1 Pass allowed per match (unless player has $0M budget)
+    if (args.amount === 0) {
+      const passesUsed = me.passesUsed ?? 0;
+      if (me.budget > 0 && passesUsed >= 1) {
+        throw new Error(
+          'You have already used your 1 free Pass ($0M bid) this match. Minimum bid is $1M.',
+        );
+      }
     }
 
     type SealedBidsShape = {
@@ -304,8 +360,8 @@ export const resolveSealedRound = mutation({
     if (!alreadyResolved) {
       const bothLocked = Boolean(auction.sealedBids?.host && auction.sealedBids?.guest);
       const deadline = auction.bidDeadline ?? 0;
-      // Allow a 1.5s tolerance for clock drift between client and server
-      const expired = deadline > 0 && Date.now() >= deadline - 1500;
+      // Allow a 2.5s tolerance for clock drift between client and server
+      const expired = deadline > 0 && Date.now() >= deadline - 2500;
       if (!bothLocked && !expired) {
         return { resolved: false, reason: 'waiting_for_bids' };
       }
@@ -315,3 +371,30 @@ export const resolveSealedRound = mutation({
     return { resolved: true, ...resolution };
   },
 });
+
+/**
+ * Server-authoritative fallback scheduled at round deadline.
+ * If clients are suspended, closed, or slow, this mutation guarantees
+ * that the round advances and missing bids are forfeited / defaulted to pass.
+ */
+export const authoritativeExpireRound = internalMutation({
+  args: {
+    roomId: v.id('rooms'),
+    expectedRound: v.number(),
+  },
+  handler: async (ctx, args) => {
+    const auction = await ctx.db
+      .query('auctions')
+      .withIndex('by_room', (q) => q.eq('roomId', args.roomId))
+      .first();
+    if (!auction || auction.status !== 'active') return;
+    if (auction.currentRound !== args.expectedRound) return;
+
+    const history = auction.roundHistory ?? [];
+    const alreadyResolved = history.some((h) => h.roundNumber === args.expectedRound);
+    if (alreadyResolved) return;
+
+    await resolveSealedRoundCore(ctx, args.roomId, auction);
+  },
+});
+

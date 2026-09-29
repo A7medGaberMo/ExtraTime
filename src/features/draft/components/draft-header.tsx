@@ -37,9 +37,10 @@ export function DraftHeader({
   const [secondsRemaining, setSecondsRemaining] = useState<number | null>(null);
   const [isMuted, setIsMuted] = useState(sfx.isMuted());
 
+  const isTurnActive = Boolean(participant.turnExpiresAt && participant.currentSlotIndex < 14);
+
   useEffect(() => {
-    if (!participant.turnExpiresAt || participant.currentSlotIndex >= 14) {
-      setSecondsRemaining(null);
+    if (!isTurnActive) {
       return;
     }
 
@@ -59,8 +60,11 @@ export function DraftHeader({
       }
     }, 500);
 
-    return () => clearInterval(interval);
-  }, [participant.turnExpiresAt, participant.currentSlotIndex, onTimeExpired]);
+    return () => {
+      clearInterval(interval);
+      setSecondsRemaining(null);
+    };
+  }, [isTurnActive, participant.turnExpiresAt, onTimeExpired]);
 
   const isUrgent = secondsRemaining !== null && secondsRemaining <= 5;
 
@@ -73,7 +77,7 @@ export function DraftHeader({
             <button
               type="button"
               onClick={onLeave}
-              className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-slate-300 hover:text-rose-400 hover:border-rose-500/40 hover:bg-rose-500/10 transition-all shadow-sm cursor-pointer"
+              className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-slate-200 hover:text-rose-400 hover:border-rose-500/40 hover:bg-rose-500/10 transition-all shadow-sm cursor-pointer"
               title={t('draft.leaveDraft')}
               aria-label={t('draft.leaveDraft')}
             >
@@ -82,7 +86,7 @@ export function DraftHeader({
           ) : (
             <Link
               href="/draft"
-              className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-slate-300 hover:text-white hover:bg-white/[0.12] transition-all shadow-sm"
+              className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-slate-200 hover:text-white hover:bg-white/[0.12] transition-all shadow-sm"
               title={t('draft.leaveDraft')}
               aria-label={t('draft.leaveDraft')}
             >
@@ -90,8 +94,8 @@ export function DraftHeader({
             </Link>
           )}
           <div className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-white tracking-wide">
-            <span className="hidden sm:inline text-slate-400 font-medium">{t('draft.draftHub')}</span>
-            <span className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-2.5 py-0.5 font-stats text-cyan-300 font-extrabold text-xs">
+            <span className="hidden sm:inline text-steel font-medium">{t('draft.draftHub')}</span>
+            <span className="rounded-full border border-gold/30 bg-gold/10 px-2.5 py-0.5 font-stats text-gold font-bold text-xs tabular-nums">
               {code}
             </span>
           </div>
@@ -101,9 +105,9 @@ export function DraftHeader({
         <div className="apple-segmented-bar flex items-center gap-2 sm:gap-3 px-3 py-1 rounded-full shadow-inner shrink-0">
           {/* Rating */}
           <div className="flex items-center gap-1.5">
-            <AppIcon icon={Star} size={13} weight="fill" className="text-amber-400" />
-            <span className="text-[9px] uppercase font-bold tracking-wider text-slate-400">{t('draft.ovrLabel')}</span>
-            <span className="font-stats text-xs sm:text-sm font-black text-white" dir="ltr">
+            <AppIcon icon={Star} size={13} weight="fill" className="text-gold" />
+            <span className="text-[9px] uppercase font-bold tracking-wider text-steel">{t('draft.ovrLabel')}</span>
+            <span className="font-stats text-xs sm:text-sm font-black text-white tabular-nums" dir="ltr">
               {participant.squadRating || '--'}
             </span>
           </div>
@@ -112,11 +116,11 @@ export function DraftHeader({
 
           {/* Chemistry */}
           <div className="flex items-center gap-1.5">
-            <AppIcon icon={ShieldCheck} size={13} weight="fill" className="text-cyan-400" />
-            <span className="text-[9px] uppercase font-bold tracking-wider text-slate-400">{t('draft.chemLabel')}</span>
-            <span className="font-stats text-xs sm:text-sm font-black text-cyan-400" dir="ltr">
+            <AppIcon icon={ShieldCheck} size={13} weight="fill" className="text-emerald-400" />
+            <span className="text-[9px] uppercase font-bold tracking-wider text-steel">{t('draft.chemLabel')}</span>
+            <span className="font-stats text-xs sm:text-sm font-black text-emerald-400 tabular-nums" dir="ltr">
               {participant.chemistryScore}
-              <span className="text-[10px] text-slate-500 font-normal">/33</span>
+              <span className="text-[10px] text-steel font-normal">/33</span>
             </span>
           </div>
 
@@ -124,9 +128,9 @@ export function DraftHeader({
           {is1v1 && opponent && (
             <>
               <span className="text-white/15 text-xs">|</span>
-              <span className="font-stats text-micro text-slate-400 truncate max-w-[110px]" title={opponent.name}>
+              <span className="font-stats text-micro text-steel truncate max-w-[110px]" title={opponent.name}>
                 {opponent.name}:{' '}
-                <strong className="text-cyan-300">
+                <strong className="text-gold tabular-nums">
                   {opponent.isReady ? 'Locked' : `${Math.min(11, opponent.currentSlotIndex)}/11`}
                 </strong>
               </span>
@@ -141,18 +145,18 @@ export function DraftHeader({
               className={`flex items-center gap-1 rounded-full border px-2 sm:px-2.5 py-0.5 transition-all shadow-sm ${
                 isUrgent
                   ? 'border-red-400/60 bg-red-950/60 text-red-400 shadow-[0_0_14px_rgba(248,113,113,0.6)] animate-pulse'
-                  : 'border-cyan-400/40 bg-cyan-950/40 text-cyan-300'
+                  : 'border-gold/40 bg-gold/10 text-gold-light'
               }`}
             >
-              <AppIcon icon={Clock} size={13} weight="duotone" />
-              <span className="font-stats text-xs font-black">{secondsRemaining}s</span>
+              <AppIcon icon={Clock} size={13} weight="bold" />
+              <span className="font-stats text-xs font-black tabular-nums">{secondsRemaining}s</span>
             </div>
           )}
 
           <button
             type="button"
             onClick={() => setIsMuted(sfx.toggleMute())}
-            className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-slate-300 hover:text-white hover:bg-white/[0.12] transition-all shadow-sm cursor-pointer"
+            className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-slate-200 hover:text-white hover:bg-white/[0.12] transition-all shadow-sm cursor-pointer"
             title={isMuted ? t('draft.unmute') : t('draft.mute')}
             aria-label={isMuted ? t('draft.unmute') : t('draft.mute')}
           >
@@ -162,7 +166,7 @@ export function DraftHeader({
           <button
             type="button"
             onClick={toggleLang}
-            className="btn-haptic flex h-7.5 sm:h-8 items-center gap-1 rounded-full border border-white/15 bg-white/[0.06] px-2.5 text-[11px] font-bold text-slate-300 hover:text-white hover:bg-white/[0.12] transition-all cursor-pointer font-stats shadow-sm"
+            className="btn-haptic flex h-8 items-center gap-1 rounded-full border border-white/15 bg-white/[0.06] px-2.5 text-[11px] font-bold text-slate-200 hover:text-white hover:bg-white/[0.12] transition-all cursor-pointer font-stats shadow-sm"
             title={lang === 'en' ? 'تغيير للعربية' : 'Switch to English'}
           >
             <AppIcon icon={Translate} size={13} weight="bold" />

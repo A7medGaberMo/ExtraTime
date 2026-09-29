@@ -1,6 +1,6 @@
 import { mutation } from '../_generated/server';
 import { v } from 'convex/values';
-import { DataModel, Id } from '../_generated/dataModel';
+import { DataModel, Id, Doc } from '../_generated/dataModel';
 import { GenericMutationCtx } from 'convex/server';
 import { verifyGuestSession } from '../lib/auth';
 import {
@@ -187,6 +187,7 @@ export const createSoloDraft = mutation({
     const gameId = await ctx.db.insert('draftGames', {
       code,
       mode: 'solo',
+      player1Id: args.guestId,
       challengeType: args.challengeType ?? 'high_chemistry',
       status: initialStatus,
       participants: [
@@ -236,6 +237,7 @@ export const createDuelPrivateRoom = mutation({
       code,
       mode: 'duel_private',
       isPublic: false,
+      player1Id: args.hostId,
       status: 'waiting',
       participants: [
         {
@@ -321,6 +323,7 @@ export const joinDraftByCode = mutation({
 
     await ctx.db.patch(game._id, {
       status: 'formation',
+      player2Id: args.guestId,
       participants: updatedParticipants,
     });
 
@@ -385,6 +388,7 @@ export const findOrCreatePublicMatch = mutation({
 
       await ctx.db.patch(room._id, {
         status: 'formation',
+        player2Id: args.guestId,
         participants: updatedParticipants,
       });
 
@@ -397,6 +401,7 @@ export const findOrCreatePublicMatch = mutation({
       code,
       mode: 'duel_public',
       isPublic: true,
+      player1Id: args.guestId,
       status: 'waiting',
       participants: [
         {
@@ -534,22 +539,22 @@ export const makeDraftPick = mutation({
  */
 async function executePickForParticipant(
   ctx: GenericMutationCtx<DataModel>,
-  game: any,
+  game: Doc<'draftGames'>,
   pIndex: number,
   playerId: Id<'players'>,
 ) {
   const participant = game.participants[pIndex];
   const currentSlot = participant.currentSlotIndex;
-  const updatedStarters = participant.startingXI.map((s: any) => ({ ...s }));
-  const updatedBench = participant.bench.map((b: any) => ({ ...b }));
+  const updatedStarters = participant.startingXI.map((s) => ({ ...s }));
+  const updatedBench = participant.bench.map((b) => ({ ...b }));
 
   if (currentSlot === 0) {
     // Pick 0: Captain Superstar Pick
     const pickedDoc = await ctx.db.get(playerId);
     const matchingSlot =
       updatedStarters.find(
-        (s: any) => !s.playerId && isPositionCompatible(s.position, pickedDoc?.position),
-      ) ?? updatedStarters.find((s: any) => !s.playerId);
+        (s) => !s.playerId && isPositionCompatible(s.position, pickedDoc?.position),
+      ) ?? updatedStarters.find((s) => !s.playerId);
 
     if (matchingSlot) {
       matchingSlot.playerId = playerId;
@@ -625,7 +630,7 @@ async function executePickForParticipant(
   newParticipants[pIndex] = updatedParticipant;
 
   // Check if both players have finished all 14 picks
-  const allFinishedDrafting = newParticipants.every((p: any) => p.currentSlotIndex >= 14);
+  const allFinishedDrafting = newParticipants.every((p) => p.currentSlotIndex >= 14);
   const nextGameStatus = allFinishedDrafting ? 'swapping' : game.status;
 
   await ctx.db.patch(game._id, {
@@ -851,7 +856,7 @@ export const finishDraft = mutation({
           return {
             id: p ? String(p._id) : slot.position,
             name: p?.name ?? slot.position,
-            tier: (p?.tier as any) ?? 'GOLD',
+            tier: (p?.tier as DraftSimPlayer['tier']) ?? 'GOLD',
             position: slot.position,
             club: c?.name ?? '',
             nation: n?.name ?? '',
@@ -1153,7 +1158,7 @@ export const finishDraft = mutation({
         return {
           id: p ? String(p._id) : slot.position,
           name: p?.name ?? slot.position,
-          tier: (p?.tier as any) ?? 'GOLD',
+          tier: (p?.tier as DraftSimPlayer['tier']) ?? 'GOLD',
           position: slot.position,
           club: c?.name ?? '',
           nation: n?.name ?? '',
@@ -1249,7 +1254,7 @@ export const simulateBossMatch = mutation({
       hostSquad.push({
         id: p ? String(p._id) : slot.position,
         name: p?.name ?? slot.position,
-        tier: (p?.tier as any) ?? 'GOLD',
+        tier: (p?.tier as DraftSimPlayer['tier']) ?? 'GOLD',
         position: slot.position,
         club: c?.name ?? '',
         nation: n?.name ?? '',
@@ -1313,5 +1318,196 @@ export const simulateBossMatch = mutation({
     });
 
     return showdownResult;
+  },
+});
+
+// ── Rematch Invitation System (1v1 Duels) ──────────────────────────
+
+/**
+ * Request a rematch after a completed Draft duel.
+ * Creates a new private duel room with status: 'waiting', links it via
+ * rematchGameId, and alerts the opponent reactively.
+ */
+export const requestDraftRematch = mutation({
+  args: {
+    completedGameId: v.id('draftGames'),
+    guestId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const game = await ctx.db.get(args.completedGameId);
+    if (!game) throw new Error('Game not found');
+
+    const isParticipant = game.participants.some((p) => p.guestId === args.guestId);
+    if (!isParticipant) throw new Error('Not a participant in this game');
+
+    // Check if rematch already exists
+    const existingRematchId = (game as Record<string, unknown>).rematchGameId as Id<'draftGames'> | undefined;
+    if (existingRematchId) {
+      const existingRematch = await ctx.db.get(existingRematchId);
+      if (existingRematch && existingRematch.status === 'waiting') {
+        if (existingRematch.participants[0]?.guestId === args.guestId) {
+          return { rematchGameId: existingRematch._id, alreadyExists: true };
+        }
+        // Created by opponent -> auto-accept!
+        const guest = await getGuest(ctx, args.guestId);
+        const updatedParticipants = [
+          ...existingRematch.participants,
+          {
+            guestId: args.guestId,
+            name: guest.nickname,
+            avatarSeed: guest.avatarSeed,
+            formationOptions: getAvailableFormationOptions(),
+            currentSlotIndex: 0,
+            currentCandidateIds: [],
+            startingXI: [],
+            bench: [
+              { benchIndex: 0, playerId: undefined },
+              { benchIndex: 1, playerId: undefined },
+              { benchIndex: 2, playerId: undefined },
+            ],
+            squadRating: 0,
+            chemistryScore: 0,
+            totalDraftScore: 0,
+            isReady: false,
+          },
+        ];
+        await ctx.db.patch(existingRematch._id, {
+          status: 'formation',
+          participants: updatedParticipants,
+        });
+        return { rematchGameId: existingRematch._id, autoAccepted: true };
+      }
+    }
+
+    const host = await getGuest(ctx, args.guestId);
+    const code = await generateUniqueDraftCode(ctx);
+    const now = Date.now();
+
+    const newGameId = await ctx.db.insert('draftGames', {
+      code,
+      mode: 'duel_private',
+      isPublic: false,
+      player1Id: args.guestId,
+      status: 'waiting',
+      participants: [
+        {
+          guestId: args.guestId,
+          name: host.nickname,
+          avatarSeed: host.avatarSeed,
+          formationOptions: getAvailableFormationOptions(),
+          currentSlotIndex: 0,
+          currentCandidateIds: [],
+          startingXI: [],
+          bench: [
+            { benchIndex: 0, playerId: undefined },
+            { benchIndex: 1, playerId: undefined },
+            { benchIndex: 2, playerId: undefined },
+          ],
+          squadRating: 0,
+          chemistryScore: 0,
+          totalDraftScore: 0,
+          isReady: false,
+        },
+      ],
+      createdAt: now,
+    });
+
+    await ctx.db.patch(game._id, {
+      rematchGameId: newGameId,
+      rematchInviterId: args.guestId,
+    } as Record<string, unknown>);
+
+    await ctx.db.patch(newGameId, {
+      rematchFromGameId: game._id,
+      rematchInviterId: args.guestId,
+    } as Record<string, unknown>);
+
+    return { rematchGameId: newGameId };
+  },
+});
+
+/**
+ * Invitee accepts the Draft rematch invite. Starts game in 'formation' stage.
+ */
+export const acceptDraftRematch = mutation({
+  args: {
+    completedGameId: v.id('draftGames'),
+    guestId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const game = await ctx.db.get(args.completedGameId);
+    if (!game) throw new Error('Game not found');
+
+    const rematchGameId = (game as Record<string, unknown>).rematchGameId as Id<'draftGames'> | undefined;
+    if (!rematchGameId) throw new Error('No rematch invitation found');
+
+    const rematchGame = await ctx.db.get(rematchGameId);
+    if (!rematchGame) throw new Error('Rematch room not found');
+
+    if (rematchGame.status === 'formation' || rematchGame.status === 'drafting') {
+      return { rematchGameId: rematchGame._id };
+    }
+    if (rematchGame.status !== 'waiting') {
+      throw new Error('Rematch invitation is no longer active');
+    }
+
+    const guest = await getGuest(ctx, args.guestId);
+    const updatedParticipants = [
+      ...rematchGame.participants,
+      {
+        guestId: args.guestId,
+        name: guest.nickname,
+        avatarSeed: guest.avatarSeed,
+        formationOptions: getAvailableFormationOptions(),
+        currentSlotIndex: 0,
+        currentCandidateIds: [],
+        startingXI: [],
+        bench: [
+          { benchIndex: 0, playerId: undefined },
+          { benchIndex: 1, playerId: undefined },
+          { benchIndex: 2, playerId: undefined },
+        ],
+        squadRating: 0,
+        chemistryScore: 0,
+        totalDraftScore: 0,
+        isReady: false,
+      },
+    ];
+
+    await ctx.db.patch(rematchGame._id, {
+      status: 'formation',
+      participants: updatedParticipants,
+    });
+
+    return { rematchGameId: rematchGame._id };
+  },
+});
+
+/**
+ * Invitee declines Draft rematch invite. Cancels the waiting room.
+ */
+export const declineDraftRematch = mutation({
+  args: {
+    completedGameId: v.id('draftGames'),
+    guestId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const game = await ctx.db.get(args.completedGameId);
+    if (!game) return { success: false };
+
+    const rematchGameId = (game as Record<string, unknown>).rematchGameId as Id<'draftGames'> | undefined;
+    if (rematchGameId) {
+      const rematchGame = await ctx.db.get(rematchGameId);
+      if (rematchGame && rematchGame.status === 'waiting') {
+        await ctx.db.patch(rematchGameId, { status: 'abandoned' });
+      }
+    }
+    return { success: true };
   },
 });

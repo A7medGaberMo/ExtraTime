@@ -524,9 +524,9 @@ export class ClassicDraftMatchSimulatorStrategy implements IMatchSimulatorStrate
       position: p.position,
       club: p.club,
       nation: p.nation,
-      league: (p as any).league ?? undefined,
+      league: p.league ?? undefined,
       rating: p.rating,
-      isCaptain: (p as any).isCaptain !== undefined ? (p as any).isCaptain : idx === 0,
+      isCaptain: p.isCaptain !== undefined ? p.isCaptain : idx === 0,
     });
 
     return simulatePureDraftMatch(

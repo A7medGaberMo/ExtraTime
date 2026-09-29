@@ -12,7 +12,8 @@ import {
   House,
   X,
   Sword,
-  ShareNetwork,
+  Ranking,
+  Vault,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
@@ -86,7 +87,7 @@ export function DraftChallengeResultModal({
             <div className="flex items-center gap-2">
               <Link
                 href="/draft"
-                className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-cyan-400/30 bg-cyan-950/40 px-3 py-1 text-xs font-bold text-cyan-300 hover:text-white transition-colors shadow-sm"
+                className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-bold text-gold hover:text-white transition-colors shadow-sm"
                 title="Draft Hub"
                 aria-label="Draft Hub"
               >
@@ -110,7 +111,7 @@ export function DraftChallengeResultModal({
           {/* Ambient Frosted Glow */}
           <div
             className={`pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 h-48 w-80 rounded-full blur-3xl opacity-30 ${
-              passed ? 'bg-emerald-400' : 'bg-rose-500'
+              passed ? 'bg-gold' : 'bg-rose-500'
             }`}
           />
 
@@ -118,13 +119,13 @@ export function DraftChallengeResultModal({
           <div className="relative mx-auto flex h-20 w-20 items-center justify-center">
             <div
               className={`absolute inset-0 rounded-2xl blur-lg transition-all ${
-                passed ? 'bg-emerald-400/40 animate-pulse' : 'bg-rose-500/30'
+                passed ? 'bg-gold/40 animate-pulse' : 'bg-rose-500/30'
               }`}
             />
             <div
               className={`relative flex h-18 w-18 items-center justify-center rounded-2xl border shadow-xl ${
                 passed
-                  ? 'border-emerald-400/60 bg-gradient-to-tr from-emerald-500 via-teal-400 to-emerald-400 text-slate-950 shadow-[0_0_35px_rgba(52,211,153,0.6)]'
+                  ? 'border-gold/60 bg-gradient-to-tr from-gold via-yellow-300 to-gold-dark text-slate-950 shadow-[0_0_35px_rgba(229,184,66,0.6)]'
                   : 'border-rose-500/60 bg-gradient-to-tr from-rose-600 to-rose-400 text-white shadow-[0_0_24px_rgba(244,63,94,0.5)]'
               }`}
             >
@@ -135,12 +136,12 @@ export function DraftChallengeResultModal({
           {/* Header Title */}
           <div className="space-y-1.5">
             <div className="flex items-center justify-center gap-1.5 text-micro font-black uppercase tracking-widest text-slate-400">
-              <AppIcon icon={passed ? Trophy : XCircle} size={13} weight="fill" className={passed ? 'text-emerald-400' : 'text-rose-400'} />
+              <AppIcon icon={passed ? Trophy : XCircle} size={13} weight="fill" className={passed ? 'text-gold' : 'text-rose-400'} />
               <span>{title}</span>
             </div>
             <h2 className="font-display text-2xl sm:text-3xl font-black tracking-tight text-white">
               {passed ? (
-                <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-emerald-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-gold via-yellow-200 to-gold bg-clip-text text-transparent">
                   CHALLENGE PASSED!
                 </span>
               ) : (
@@ -155,15 +156,15 @@ export function DraftChallengeResultModal({
           </div>
 
           {/* Reward Pill — Apple Gold Medal Style */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.06] px-4 py-1.5 shadow-inner backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 shadow-inner backdrop-blur-md">
             <span className="text-micro font-bold text-slate-400 uppercase tracking-wider">REWARD:</span>
-            <span className={`font-stats text-sm font-black ${passed ? 'text-amber-400' : 'text-slate-400'}`}>
+            <span className={`font-stats text-sm font-black ${passed ? 'text-gold' : 'text-slate-400'}`}>
               +{rewardXp} XP
             </span>
           </div>
 
           {/* Requirement Verification Checklist — Apple Settings Style Rows */}
-          <div className="space-y-2 rounded-2xl border border-white/10 bg-black/25 p-3 sm:p-4 text-left backdrop-blur-md shadow-inner">
+          <div className="space-y-2 rounded-2xl border border-white/10 bg-black/25 p-3 sm:p-4 text-start backdrop-blur-md shadow-inner">
             <span className="block text-micro font-black uppercase tracking-wider text-slate-400 mb-2">
               Requirements Breakdown
             </span>
@@ -173,7 +174,7 @@ export function DraftChallengeResultModal({
                 key={req.id}
                 className={`flex items-center justify-between rounded-xl border p-2.5 transition-all ${
                   req.met
-                    ? 'border-emerald-500/30 bg-emerald-500/10 text-white'
+                    ? 'border-gold/30 bg-gold/10 text-white'
                     : 'border-rose-500/30 bg-rose-500/10 text-slate-300'
                 }`}
               >
@@ -182,7 +183,7 @@ export function DraftChallengeResultModal({
                     icon={req.met ? CheckCircle : XCircle}
                     size={20}
                     weight="fill"
-                    className={`shrink-0 ${req.met ? 'text-emerald-400' : 'text-rose-400'}`}
+                    className={`shrink-0 ${req.met ? 'text-gold' : 'text-rose-400'}`}
                   />
                   <div>
                     <span className="block text-xs font-bold text-white leading-tight">
@@ -194,10 +195,10 @@ export function DraftChallengeResultModal({
                   </div>
                 </div>
 
-                <div className="text-right">
+                <div className="text-end">
                   <span
                     className={`font-stats text-xs sm:text-sm font-black ${
-                      req.met ? 'text-emerald-400' : 'text-rose-400'
+                      req.met ? 'text-gold' : 'text-rose-400'
                     }`}
                   >
                     {req.actual}
@@ -213,12 +214,12 @@ export function DraftChallengeResultModal({
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-2.5 pt-2">
             <Button
-              variant="primary"
+              variant="gold"
               size="lg"
               fullWidth
               onClick={onPlayAgain}
-              leftIcon={<AppIcon icon={ArrowCounterClockwise} size={18} weight="bold" />}
-              className="bg-gradient-to-b from-cyan-400 to-cyan-500 text-slate-950 font-bold hover:brightness-110 shadow-lg shadow-cyan-400/25 rounded-xl py-3"
+              leftIcon={<AppIcon icon={ArrowCounterClockwise} size={18} weight="bold" className="text-slate-950" />}
+              className="font-bold text-slate-950 shadow-lg shadow-gold/25 rounded-xl py-3"
             >
               {passed ? 'Start Another Challenge' : 'Retry Challenge'}
             </Button>
@@ -231,18 +232,36 @@ export function DraftChallengeResultModal({
                 disabled={bossLoading}
                 onClick={onPlayBossMatch}
                 leftIcon={<AppIcon icon={Sword} size={18} weight="bold" />}
-                className="border-purple-400/40 bg-purple-400/10 text-purple-300 hover:bg-purple-950/40 rounded-xl py-3 font-bold"
+                className="border-white/15 bg-white/5 hover:border-gold/40 text-white rounded-xl py-3 font-bold"
               >
                 {bossLoading ? 'Simulating...' : 'Bonus: Match vs Boss XI'}
               </Button>
             )}
           </div>
 
+          {/* Cross-Game Promo Links */}
+          <div className="flex items-center justify-center gap-2 pt-1">
+            <Link
+              href="/rank"
+              className="btn-haptic flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 text-gold hover:border-gold/50 text-[11px] font-semibold transition-all shadow-sm"
+            >
+              <AppIcon icon={Ranking} size={13} weight="bold" />
+              <span>Rank 45s</span>
+            </Link>
+            <Link
+              href="/bank"
+              className="btn-haptic flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/10 text-gold hover:border-gold/50 text-[11px] font-semibold transition-all shadow-sm"
+            >
+              <AppIcon icon={Vault} size={13} weight="bold" />
+              <span>Bank It 90s</span>
+            </Link>
+          </div>
+
           {onClose && (
             <button
               type="button"
               onClick={onClose}
-              className="text-micro font-bold text-slate-400 hover:text-white transition-colors underline pt-1 cursor-pointer"
+              className="text-micro font-bold text-slate-400 hover:text-white transition-colors underline pt-0.5 cursor-pointer"
             >
               Review My Drafted Pitch
             </button>

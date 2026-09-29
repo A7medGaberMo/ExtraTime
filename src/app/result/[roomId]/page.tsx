@@ -1,6 +1,6 @@
 'use client';
 
-import React, { use, useEffect, useMemo, useRef, useState } from 'react';
+import React, { use, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../../../convex/_generated/api';
@@ -11,6 +11,7 @@ import type { MatchSimulationResult } from '@/core/simulation/simulation.interfa
 import { useGuestSession } from '@/hooks/use-guest-session';
 import { unlockAudio, sfx } from '@/lib/sfx';
 import { Confetti } from '@/components/shared/confetti';
+import { useToast } from '@/components/shared/toast';
 import {
   CircleNotch,
   ArrowCounterClockwise,
@@ -18,11 +19,13 @@ import {
   House,
   SpeakerHigh,
   SpeakerSlash,
+  UserPlus,
+  X,
+  CheckCircle,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { PageShell } from '@/components/ui/page-shell';
-import { Panel } from '@/components/ui/panel';
 import { useI18n } from '@/lib/i18n';
 
 interface HydratedMatch {
@@ -37,6 +40,7 @@ interface HydratedMatch {
     kitNumber?: number;
     club?: string;
     nation?: string;
+    rating?: number;
   }>;
   guestSquadDetails?: Array<{
     _id: string;
@@ -48,6 +52,7 @@ interface HydratedMatch {
     kitNumber?: number;
     club?: string;
     nation?: string;
+    rating?: number;
   }>;
 }
 
@@ -57,7 +62,8 @@ interface SquadSlot {
   cost?: number;
   playerId: string;
   player?: {
-    _id: string;
+    _id?: string;
+    id?: string;
     name: string;
     tier?: string;
     position?: string;
@@ -73,8 +79,9 @@ interface SquadSlot {
 export default function ResultsPage({ params }: { params: Promise<{ roomId: string }> }) {
   const { roomId } = use(params);
   const router = useRouter();
-  const { t } = useI18n();
-  const { guestId } = useGuestSession(true);
+  const { t, lang } = useI18n();
+  const { toast } = useToast();
+  const { guestId, sessionToken } = useGuestSession(true);
   const roomIdTyped = roomId as Id<'rooms'>;
 
   const state = useQuery(
@@ -83,11 +90,84 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   );
   const match = useQuery(api.matches.queries.getByRoom, roomId ? { roomId: roomIdTyped } : 'skip');
 
+  // ── Rematch invitation system ──
+  const rematchState = useQuery(
+    api.rooms.queries.getRematchState,
+    guestId && roomId ? { roomId: roomIdTyped, userId: guestId } : 'skip',
+  );
+  const requestRematch = useMutation(api.rooms.mutations.requestSnipeRematch);
+  const acceptRematch = useMutation(api.rooms.mutations.acceptRematchInvite);
+  const declineRematch = useMutation(api.rooms.mutations.declineRematchInvite);
+  const [isRematchLoading, setIsRematchLoading] = useState(false);
+
   const runSimulation = useMutation(api.matches.mutations.runSimulation);
   const triggeredRef = useRef(false);
   const [audioReady, setAudioReady] = useState(false);
 
   const viewerIsHost = state?.isHost ?? true;
+
+  // Auto-redirect when rematch is accepted
+  useEffect(() => {
+    if (rematchState?.status === 'accepted' && rematchState.rematchRoomId) {
+      router.push(`/auction/${rematchState.rematchRoomId}`);
+    }
+  }, [rematchState?.status, rematchState?.rematchRoomId, router]);
+
+  const handleRequestRematch = useCallback(async () => {
+    if (!guestId || isRematchLoading) return;
+    setIsRematchLoading(true);
+    try {
+      const result = await requestRematch({
+        completedRoomId: roomIdTyped,
+        userId: guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      if ((result as Record<string, unknown>).autoAccepted) {
+        router.push(`/auction/${result.rematchRoomId}`);
+      }
+    } catch (err: unknown) {
+      const e = err as { message?: string };
+      toast(e.message || (lang === 'ar' ? 'فشل طلب الريماتش' : 'Failed to request rematch'), 'error');
+    } finally {
+      setIsRematchLoading(false);
+    }
+  }, [guestId, isRematchLoading, requestRematch, roomIdTyped, sessionToken, router, toast, lang]);
+
+  const handleAcceptRematch = useCallback(async () => {
+    if (!guestId || !rematchState?.rematchRoomId || isRematchLoading) return;
+    setIsRematchLoading(true);
+    try {
+      await acceptRematch({
+        rematchRoomId: rematchState.rematchRoomId,
+        userId: guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      router.push(`/auction/${rematchState.rematchRoomId}`);
+    } catch (err: unknown) {
+      const e = err as { message?: string };
+      toast(e.message || (lang === 'ar' ? 'فشل قبول الريماتش' : 'Failed to accept rematch'), 'error');
+    } finally {
+      setIsRematchLoading(false);
+    }
+  }, [guestId, rematchState, isRematchLoading, acceptRematch, sessionToken, router, toast, lang]);
+
+  const handleDeclineRematch = useCallback(async () => {
+    if (!guestId || !rematchState?.rematchRoomId || isRematchLoading) return;
+    setIsRematchLoading(true);
+    try {
+      await declineRematch({
+        rematchRoomId: rematchState.rematchRoomId,
+        userId: guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      toast(lang === 'ar' ? 'تم رفض الريماتش' : 'Rematch declined', 'info');
+    } catch (err: unknown) {
+      const e = err as { message?: string };
+      toast(e.message || (lang === 'ar' ? 'خطأ' : 'Error'), 'error');
+    } finally {
+      setIsRematchLoading(false);
+    }
+  }, [guestId, rematchState, isRematchLoading, declineRematch, sessionToken, toast, lang]);
 
   useEffect(() => {
     const mat = match as HydratedMatch | null | undefined;
@@ -123,7 +203,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
     if (raw && raw.length >= (state?.auction?.rounds?.length ?? 11)) {
       return (raw as unknown as SquadSlot[]).map((slot) => ({
-        playerId: slot.player?._id ?? (slot.player as any)?.id ?? slot.playerId,
+        playerId: slot.player?._id ?? slot.player?.id ?? slot.playerId,
         name: slot.player?.name ?? '',
         tier: slot.player?.tier ?? 'GOLD',
         position: slot.position || slot.player?.position || 'ST',
@@ -141,7 +221,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     if (details && details.length > 0) {
       return details.filter(Boolean).map((p) => {
         const matchingRaw = (raw as unknown as SquadSlot[] | undefined)?.find(
-          (s) => s.playerId === p._id || s.player?._id === p._id || (s.player as any)?.id === p._id,
+          (s) => s.playerId === p._id || s.player?._id === p._id || s.player?.id === p._id,
         );
         return {
           playerId: p._id,
@@ -154,7 +234,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           isLegend: p.isLegend,
           kitNumber: p.kitNumber,
           isSub: matchingRaw?.isSub ?? false,
-          rating: (p as any).rating,
+          rating: p.rating,
           cost: matchingRaw?.cost,
         };
       });
@@ -162,7 +242,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
     if (raw && raw.length > 0) {
       return (raw as unknown as SquadSlot[]).map((slot) => ({
-        playerId: slot.player?._id ?? (slot.player as any)?.id ?? slot.playerId,
+        playerId: slot.player?._id ?? slot.player?.id ?? slot.playerId,
         name: slot.player?.name ?? '',
         tier: slot.player?.tier ?? 'GOLD',
         position: slot.position || slot.player?.position || 'ST',
@@ -188,7 +268,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
     if (raw && raw.length >= (state?.auction?.rounds?.length ?? 11)) {
       return (raw as unknown as SquadSlot[]).map((slot) => ({
-        playerId: slot.player?._id ?? (slot.player as any)?.id ?? slot.playerId,
+        playerId: slot.player?._id ?? slot.player?.id ?? slot.playerId,
         name: slot.player?.name ?? '',
         tier: slot.player?.tier ?? 'GOLD',
         position: slot.position || slot.player?.position || 'ST',
@@ -206,7 +286,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     if (details && details.length > 0) {
       return details.filter(Boolean).map((p) => {
         const matchingRaw = (raw as unknown as SquadSlot[] | undefined)?.find(
-          (s) => s.playerId === p._id || s.player?._id === p._id || (s.player as any)?.id === p._id,
+          (s) => s.playerId === p._id || s.player?._id === p._id || s.player?.id === p._id,
         );
         return {
           playerId: p._id,
@@ -219,7 +299,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           isLegend: p.isLegend,
           kitNumber: p.kitNumber,
           isSub: matchingRaw?.isSub ?? false,
-          rating: (p as any).rating,
+          rating: p.rating,
           cost: matchingRaw?.cost,
         };
       });
@@ -227,7 +307,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
     if (raw && raw.length > 0) {
       return (raw as unknown as SquadSlot[]).map((slot) => ({
-        playerId: slot.player?._id ?? (slot.player as any)?.id ?? slot.playerId,
+        playerId: slot.player?._id ?? slot.player?.id ?? slot.playerId,
         name: slot.player?.name ?? '',
         tier: slot.player?.tier ?? 'GOLD',
         position: slot.position || slot.player?.position || 'ST',
@@ -278,7 +358,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
       <PageShell title={t('results.title')} subtitle={t('results.subtitle')} backUrl="/" maxWidth="md">
         <div className="flex min-h-[40vh] items-center justify-center">
           <div className="apple-glass-elevated p-8 rounded-3xl flex flex-col items-center gap-3 border border-white/10 shadow-2xl">
-            <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-lime animate-spin" />
+            <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
             <p className="text-steel text-xs font-black tracking-widest uppercase font-stats">
               {t('common.loading')}
             </p>
@@ -292,11 +372,11 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     return (
       <PageShell title={t('results.title')} subtitle={t('results.subtitle')} backUrl="/" maxWidth="md">
         <div className="animate-fade-in mx-auto flex min-h-[40vh] w-full flex-col items-center justify-center gap-4 px-3 text-center">
-          <div className="apple-glass-elevated p-8 sm:p-10 w-full space-y-5 text-center border border-lime/30 shadow-[0_16px_50px_rgba(149,232,16,0.15)]">
+          <div className="apple-glass-elevated p-8 sm:p-10 w-full space-y-5 text-center border border-gold/30 shadow-[0_16px_50px_rgba(229,184,66,0.15)]">
             <div className="relative mx-auto w-16 h-16 flex items-center justify-center">
-              <div className="bg-lime/25 absolute inset-0 rounded-full blur-xl animate-pulse" />
-              <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-lime/40 bg-lime/10 text-lime shadow-[0_0_20px_rgba(149,232,16,0.2)]">
-                <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-lime animate-spin" />
+              <div className="bg-gold/25 absolute inset-0 rounded-full blur-xl animate-pulse" />
+              <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-gold/40 bg-gold/10 text-gold shadow-[0_0_20px_rgba(229,184,66,0.2)]">
+                <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
               </div>
             </div>
             <div className="space-y-1.5">
@@ -314,11 +394,11 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   }
 
   return (
-    <article className="mx-auto flex h-[100dvh] max-h-[100dvh] w-full max-w-3xl flex-col justify-between overflow-hidden select-none p-2 sm:p-3 relative">
+    <article className="mx-auto flex h-[100dvh] max-h-[100dvh] w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl flex-col justify-between overflow-hidden select-none p-2 sm:p-3 lg:p-4 relative">
       {/* Ambient Top Glow Mesh based on match outcome */}
       <div
         className={`pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 h-[220px] w-[90%] max-w-2xl rounded-full blur-[100px] opacity-25 transition-colors duration-700 ${
-          viewerWon === true ? 'bg-lime' : viewerWon === false ? 'bg-amber-400' : 'bg-cyan-400'
+          viewerWon === true ? 'bg-gold' : viewerWon === false ? 'bg-gold-dark' : 'bg-gold/40'
         }`}
       />
 
@@ -339,9 +419,9 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
         <div
           className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold backdrop-blur-xl shadow-lg ${
             viewerWon === true
-              ? 'border-lime/40 bg-lime/15 text-lime shadow-[0_0_20px_rgba(149,232,16,0.25)]'
+              ? 'border-gold/40 bg-gold/15 text-gold shadow-[0_0_20px_rgba(229,184,66,0.25)]'
               : viewerWon === false
-                ? 'border-amber-400/40 bg-amber-400/15 text-amber-300 shadow-[0_0_20px_rgba(245,158,11,0.2)]'
+                ? 'border-gold/30 bg-gold/10 text-gold-light shadow-[0_0_16px_rgba(229,184,66,0.15)]'
                 : 'border-white/20 bg-white/10 text-white'
           }`}
         >
@@ -363,7 +443,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           }}
           className={`btn-haptic flex h-8 w-8 items-center justify-center rounded-full border shadow-sm backdrop-blur-md transition-all cursor-pointer ${
             audioReady
-              ? 'border-lime/50 bg-lime/20 text-lime shadow-[0_0_12px_rgba(149,232,16,0.3)] ring-1 ring-lime/40'
+              ? 'border-gold/50 bg-gold/20 text-gold shadow-[0_0_12px_rgba(229,184,66,0.3)] ring-1 ring-gold/40'
               : 'border-white/15 bg-slate-900/90 text-steel hover:text-white'
           }`}
           title="Toggle matchday audio"
@@ -388,24 +468,116 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
         />
       </div>
 
+      {/* ── INCOMING REMATCH INVITE OVERLAY ─────────────────────── */}
+      {rematchState?.status === 'pending' && !rematchState.iAmInviter && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md animate-fade-in">
+          <div className="apple-glass-elevated relative w-[90%] max-w-sm rounded-3xl p-6 border border-gold/30 shadow-[0_24px_60px_rgba(229,184,66,0.2)] space-y-5 text-center">
+            {/* Ambient glow */}
+            <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-32 w-48 rounded-full bg-gold/20 blur-3xl" />
+
+            <div className="relative space-y-2">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/50 bg-gold/15 px-3 py-1 shadow-sm">
+                <AppIcon icon={UserPlus} size={14} weight="fill" className="text-gold" />
+                <span className="text-[11px] font-black uppercase tracking-wider text-gold">
+                  {lang === 'ar' ? 'دعوة ريماتش' : 'Rematch Invite'}
+                </span>
+              </div>
+              <h3 className="text-xl font-black text-white uppercase font-display tracking-tight">
+                {lang === 'ar'
+                  ? `${rematchState.inviterName} عايز يلعب تاني!`
+                  : `${rematchState.inviterName} wants a rematch!`}
+              </h3>
+              <p className="text-xs text-slate-300">
+                {lang === 'ar'
+                  ? 'هل تقبل التحدي من جديد؟'
+                  : 'Accept the challenge for another round?'}
+              </p>
+            </div>
+
+            <div className="flex gap-3">
+              <Button
+                variant="gold"
+                size="md"
+                onClick={handleAcceptRematch}
+                disabled={isRematchLoading}
+                leftIcon={<AppIcon icon={CheckCircle} size={16} weight="bold" className="text-slate-950" />}
+                className="flex-1 shadow-[0_8px_20px_rgba(229,184,66,0.3)] font-bold text-slate-950"
+              >
+                {isRematchLoading
+                  ? <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-slate-950" />
+                  : (lang === 'ar' ? 'قبول' : 'Accept')}
+              </Button>
+              <Button
+                variant="secondary"
+                size="md"
+                onClick={handleDeclineRematch}
+                disabled={isRematchLoading}
+                leftIcon={<AppIcon icon={X} size={14} weight="bold" className="text-rose-400" />}
+                className="flex-1 border-rose-500/30 bg-rose-500/10 hover:border-rose-500/50 text-rose-300 shadow-md font-semibold"
+              >
+                {lang === 'ar' ? 'رفض' : 'Decline'}
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* ── 3. BOTTOM ACTION BAR ─────────────────────────────────── */}
       <footer className="grid grid-cols-3 gap-2 shrink-0 pt-1 relative z-10">
-        <Button
-          variant="primary"
-          size="md"
-          onClick={() => router.push('/create-room')}
-          leftIcon={<AppIcon icon={ArrowCounterClockwise} size={16} weight="bold" className="text-slate-950" />}
-          className="shadow-[0_8px_20px_rgba(149,232,16,0.2)]"
-        >
-          {t('results.rematch')}
-        </Button>
+        {/* Dynamic Rematch Button */}
+        {rematchState?.status === 'pending' && rematchState.iAmInviter ? (
+          <Button
+            variant="secondary"
+            size="md"
+            disabled
+            leftIcon={<AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-gold" />}
+            className="border-gold/30 bg-gold/10 text-gold shadow-md font-bold cursor-wait"
+          >
+            {lang === 'ar' ? 'في الانتظار...' : 'Waiting...'}
+          </Button>
+        ) : rematchState?.status === 'declined' ? (
+          <Button
+            variant="secondary"
+            size="md"
+            disabled
+            leftIcon={<AppIcon icon={X} size={14} weight="bold" className="text-rose-400" />}
+            className="border-rose-500/30 bg-rose-500/10 text-rose-300 shadow-md font-bold"
+          >
+            {lang === 'ar' ? 'تم الرفض' : 'Declined'}
+          </Button>
+        ) : rematchState?.status === 'accepted' ? (
+          <Button
+            variant="gold"
+            size="md"
+            disabled
+            leftIcon={<AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-slate-950" />}
+            className="shadow-[0_8px_20px_rgba(229,184,66,0.25)] font-bold text-slate-950"
+          >
+            {lang === 'ar' ? 'جاري التحويل...' : 'Joining...'}
+          </Button>
+        ) : (
+          <Button
+            variant="gold"
+            size="md"
+            onClick={handleRequestRematch}
+            disabled={isRematchLoading}
+            leftIcon={
+              isRematchLoading
+                ? <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-slate-950" />
+                : <AppIcon icon={ArrowCounterClockwise} size={16} weight="bold" className="text-slate-950" />
+            }
+            className="shadow-[0_8px_20px_rgba(229,184,66,0.25)] font-bold text-slate-950"
+          >
+            {t('results.rematch')}
+          </Button>
+        )}
 
         <Button
-          variant="gold"
+          variant="secondary"
           size="md"
           onClick={() => router.push('/packs')}
-          leftIcon={<AppIcon icon={Cards} size={16} weight="bold" className="text-slate-950" />}
-          className="shadow-[0_8px_20px_rgba(245,158,11,0.2)]"
+          leftIcon={<AppIcon icon={Cards} size={16} weight="bold" className="text-gold" />}
+          className="btn-haptic border-white/15 bg-white/5 hover:border-gold/40 text-white shadow-md font-semibold"
         >
           {t('results.packs')}
         </Button>

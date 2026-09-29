@@ -129,7 +129,7 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
             )}
             <button
               onClick={onClose}
-              className="btn-haptic text-steel hover:border-lime/40 flex h-7 w-7 xs:h-7.5 xs:w-7.5 cursor-pointer items-center justify-center rounded-full border border-white/12 bg-slate-950/90 transition-colors hover:text-white"
+              className="btn-haptic text-steel hover:border-gold/40 flex h-7 w-7 sm:h-8 sm:w-8 cursor-pointer items-center justify-center rounded-full border border-white/12 bg-slate-950/90 transition-colors hover:text-white"
               id="btn-close-card-modal"
               aria-label="Close"
             >
@@ -143,7 +143,7 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
           {hasPrev && (
             <button
               onClick={handlePrev}
-              className="btn-haptic absolute top-1/2 -left-2 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/90 p-1.5 xs:p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 hover:border-lime/40 active:scale-95 sm:-left-3"
+              className="btn-haptic absolute top-1/2 -left-2 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/90 p-1.5 xs:p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 hover:border-gold/40 active:scale-95 sm:-left-3"
               aria-label="Previous Card"
             >
               <AppIcon icon={CaretLeft} size={15} weight="bold" />
@@ -157,7 +157,7 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
           {hasNext && (
             <button
               onClick={handleNext}
-              className="btn-haptic absolute top-1/2 -right-2 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/90 p-1.5 xs:p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 hover:border-lime/40 active:scale-95 sm:-right-3"
+              className="btn-haptic absolute top-1/2 -right-2 z-30 -translate-y-1/2 cursor-pointer rounded-full border border-white/20 bg-slate-950/90 p-1.5 xs:p-2 text-white shadow-xl backdrop-blur-md transition-all hover:scale-110 hover:border-gold/40 active:scale-95 sm:-right-3"
               aria-label="Next Card"
             >
               <AppIcon icon={CaretRight} size={15} weight="bold" />
@@ -168,7 +168,7 @@ export function CardDetailModal({ card, onClose, cardsList, onSelectCard }: Card
         {/* Minimalist Action Bar */}
         <button
           onClick={onClose}
-          className="btn-haptic bg-lime hover:bg-vivid mt-1 w-full cursor-pointer rounded-2xl py-2.5 text-xs font-bold tracking-widest text-slate-950 uppercase shadow-[0_10px_25px_rgba(142,224,0,0.3)] transition-all active:scale-95"
+          className="btn-haptic bg-gold hover:brightness-110 mt-1 w-full cursor-pointer rounded-2xl py-2.5 text-xs font-bold tracking-widest text-slate-950 uppercase shadow-[0_10px_25px_rgba(229,184,66,0.3)] transition-all active:scale-95"
           id="btn-done-modal"
         >
           Done

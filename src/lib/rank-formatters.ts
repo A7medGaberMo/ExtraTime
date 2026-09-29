@@ -75,7 +75,7 @@ export function getCategoryBadgeInfo(
   if (combined.includes("premier-league") || combined.includes("premier league") || combined.includes("pl")) {
     return {
       label: locale === "ar" ? "البريميرليج" : "PREMIER LEAGUE",
-      style: "border-lime/30 bg-slate-900/90 text-slate-200",
+      style: "border-gold/30 bg-slate-900/90 text-slate-200",
     };
   }
   if (combined.includes("la-liga") || combined.includes("laliga") || combined.includes("la liga")) {
@@ -117,13 +117,13 @@ export function getCategoryBadgeInfo(
   if (combined.includes("transfers") || combined.includes("transfer")) {
     return {
       label: locale === "ar" ? "سوق الانتقالات" : "TRANSFERS",
-      style: "border-lime/30 bg-slate-900/90 text-lime",
+      style: "border-gold/30 bg-slate-900/90 text-gold",
     };
   }
   if (scopeType === "PLAYER_STINTS") {
     return {
       label: locale === "ar" ? "فترات النجوم" : "PLAYER STINTS",
-      style: "border-lime/30 bg-slate-900/90 text-lime",
+      style: "border-gold/30 bg-slate-900/90 text-gold",
     };
   }
 

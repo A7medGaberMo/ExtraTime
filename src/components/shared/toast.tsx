@@ -13,7 +13,16 @@ interface Toast {
   variant: ToastVariant;
 }
 
-export type ToastFn = ((message: string, variant?: ToastVariant) => void) & {
+export type ToastArg =
+  | string
+  | {
+      title?: string;
+      message?: string;
+      type?: ToastVariant;
+      variant?: ToastVariant;
+    };
+
+export type ToastFn = ((arg: ToastArg, variant?: ToastVariant) => void) & {
   success: (message: string) => void;
   error: (message: string) => void;
   warning: (message: string) => void;
@@ -28,14 +37,14 @@ interface ToastContextValue {
 const ToastContext = createContext<ToastContextValue | null>(null);
 
 const variantStyles: Record<ToastVariant, string> = {
-  success: 'border-lime/40 bg-lime/10 shadow-[0_0_20px_rgba(149,232,16,0.15)]',
+  success: 'border-gold/40 bg-gold/10 shadow-[0_0_20px_rgba(229,184,66,0.15)]',
   error: 'border-rose-500/40 bg-rose-500/10 shadow-[0_0_20px_rgba(244,63,94,0.15)]',
   warning: 'border-amber-500/40 bg-amber-500/10 shadow-[0_0_20px_rgba(245,158,11,0.15)]',
   info: 'border-sky-500/40 bg-sky-500/10 shadow-[0_0_20px_rgba(14,165,233,0.15)]',
 };
 
 const variantIcons: Record<ToastVariant, ReactNode> = {
-  success: <AppIcon icon={CheckCircle} size={20} weight="fill" className="text-lime shrink-0" />,
+  success: <AppIcon icon={CheckCircle} size={20} weight="fill" className="text-gold shrink-0" />,
   error: <AppIcon icon={WarningCircle} size={20} weight="fill" className="text-rose-400 shrink-0" />,
   warning: <AppIcon icon={Warning} size={20} weight="fill" className="text-amber-400 shrink-0" />,
   info: <AppIcon icon={Info} size={20} weight="fill" className="text-sky-400 shrink-0" />,
@@ -49,21 +58,35 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const toastBase = useCallback(
-    (message: string, variant: ToastVariant = 'info') => {
+    (arg: ToastArg, variant: ToastVariant = 'info') => {
+      let finalMsg = '';
+      let finalVariant = variant;
+
+      if (typeof arg === 'string') {
+        finalMsg = arg;
+      } else if (arg && typeof arg === 'object') {
+        const title = arg.title ? `${arg.title}: ` : '';
+        finalMsg = `${title}${arg.message ?? ''}`.trim() || 'Notification';
+        finalVariant = arg.variant || arg.type || variant;
+      }
+
       const id = Math.random().toString(36).slice(2, 9);
-      setToasts((prev) => [...prev, { id, message, variant }]);
+      setToasts((prev) => [...prev, { id, message: finalMsg, variant: finalVariant }]);
       setTimeout(() => dismiss(id), 4000);
     },
     [dismiss],
   );
 
-  const toast = useMemo(() => {
-    const fn = ((message: string, variant?: ToastVariant) => toastBase(message, variant)) as ToastFn;
-    fn.success = (msg: string) => toastBase(msg, 'success');
-    fn.error = (msg: string) => toastBase(msg, 'error');
-    fn.warning = (msg: string) => toastBase(msg, 'warning');
-    fn.info = (msg: string) => toastBase(msg, 'info');
-    return fn;
+  const toast = useMemo<ToastFn>(() => {
+    return Object.assign(
+      (arg: ToastArg, variant?: ToastVariant) => toastBase(arg, variant),
+      {
+        success: (msg: string) => toastBase(msg, 'success'),
+        error: (msg: string) => toastBase(msg, 'error'),
+        warning: (msg: string) => toastBase(msg, 'warning'),
+        info: (msg: string) => toastBase(msg, 'info'),
+      },
+    );
   }, [toastBase]);
 
   return (

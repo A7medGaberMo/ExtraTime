@@ -55,7 +55,7 @@ export function AuctionTimer({
               ? 'bg-amber-500'
               : boostActive
                 ? 'bg-amber-400 opacity-80'
-                : 'bg-lime',
+                : 'bg-gold',
         )}
       />
 
@@ -77,7 +77,7 @@ export function AuctionTimer({
           strokeLinecap="round"
           className="fill-transparent transition-all duration-500 ease-out"
           stroke={
-            isCritical ? '#F43F5E' : isUrgent ? '#F59E0B' : boostActive ? '#FBBF24' : '#95E810'
+            isCritical ? '#F43F5E' : isUrgent ? '#F59E0B' : boostActive ? '#FBBF24' : '#E5B842'
           }
         />
       </svg>
@@ -89,7 +89,7 @@ export function AuctionTimer({
             isCritical && 'scale-110 animate-pulse text-rose-400',
             isUrgent && !isCritical && 'text-amber-400',
             boostActive && 'scale-110 text-amber-300',
-            !isUrgent && !boostActive && 'text-lime',
+            !isUrgent && !boostActive && 'text-gold',
             !isActive && 'text-steel',
           )}
         >

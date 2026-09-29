@@ -24,11 +24,12 @@ interface Particle {
 }
 
 const PALETTE = [
-  '#8ee000', // Lime
-  '#ffd60a', // Gold
+  '#E5B842', // Monaco Signature Gold
+  '#ffd60a', // Bright Gold
+  '#F5D77F', // Champagne Gold
   '#0a84ff', // Sky
   '#ff375f', // Rose
-  '#30d158', // Green
+  '#D4A833', // Deep Antique Gold
   '#bf5af2', // Master Violet
   '#ffffff', // White sparkle
 ];

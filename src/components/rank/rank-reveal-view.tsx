@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight, Trophy, Check, Sparkle } from '@phosphor-icons/react';
+import { ArrowRight, Trophy, Check, Star } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { RankEntityAvatar, RankMedia } from './rank-entity-avatar';
 import { parseEntityName } from '@/lib/rank-formatters';
@@ -43,22 +43,22 @@ interface RankRevealViewProps {
 }
 
 function getPointsBadge(points: number, delta: number) {
-  if (delta === 0) {
+  if (points === 2 || delta === 0) {
     return (
-      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-lime/15 border border-lime/30 text-lime text-xs font-semibold font-stats shadow-sm shrink-0">
+      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-emerald-500/15 border border-emerald-400/40 text-emerald-400 text-xs font-semibold font-stats shadow-sm shrink-0">
         <AppIcon icon={Check} size={12} weight="bold" />
         <span>+2 pts</span>
       </div>
     );
   }
-  if (delta === 1) {
+  if (points === 1 || delta === 1) {
     return (
       <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs font-semibold font-stats shrink-0">
         <span>+1 pt</span>
       </div>
     );
   }
-  if (delta === 2) {
+  if (points === 0 || delta === 2) {
     return (
       <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/10 text-steel text-xs font-medium font-stats shrink-0">
         <span>0 pts</span>
@@ -66,8 +66,8 @@ function getPointsBadge(points: number, delta: number) {
     );
   }
   return (
-    <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-rose-500/15 border border-rose-500/30 text-rose-400 text-xs font-semibold font-stats shrink-0">
-      <span>{points > 0 ? `+${points}` : points} pts</span>
+    <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-rose-500/15 border border-rose-500/35 text-rose-400 text-xs font-semibold font-stats shadow-sm shrink-0">
+      <span>{points < 0 ? points : -Math.abs(points)} pts</span>
     </div>
   );
 }
@@ -123,7 +123,7 @@ export function RankRevealView({
             <span className="text-sm font-bold text-amber-300 flex items-center gap-1">
               {userRoundScore > 0 ? `+${userRoundScore}` : userRoundScore} pts
               {userRoundScore === 10 && (
-                <AppIcon icon={Sparkle} size={15} weight="fill" className="text-amber-400 animate-pulse" />
+                <AppIcon icon={Star} size={15} weight="fill" className="text-amber-400 animate-pulse" />
               )}
             </span>
           </div>
@@ -157,23 +157,27 @@ export function RankRevealView({
           const submittedRank = deltaInfo?.submittedRank ?? item.correctRank;
           const points = deltaInfo?.points ?? 0;
           const delta = deltaInfo?.delta ?? 0;
-          const isExact = delta === 0;
+          const isExact = delta === 0 || points === 2;
+          const isPositiveOne = delta === 1 || points === 1;
+          const isNegative = points < 0 || delta >= 3;
           const isTop = item.correctRank === 1;
           const { mainName, tag } = parseEntityName(item.name);
+
+          let rowBorderClass = 'border-white/[0.12] bg-slate-900/85 shadow-[0_4px_16px_rgba(0,0,0,0.35),inset_0_1px_0_0_rgba(255,255,255,0.06)]';
+          if (isExact) {
+            rowBorderClass = 'border-emerald-500/50 bg-slate-900/95 shadow-[0_4px_16px_rgba(16,185,129,0.14),inset_0_1px_0_0_rgba(255,255,255,0.1)]';
+          } else if (isPositiveOne) {
+            rowBorderClass = 'border-amber-400/40 bg-slate-900/90 shadow-[0_4px_16px_rgba(245,158,11,0.1),inset_0_1px_0_0_rgba(255,255,255,0.08)]';
+          } else if (isNegative) {
+            rowBorderClass = 'border-rose-500/35 bg-slate-900/90 shadow-[0_4px_16px_rgba(244,63,94,0.1),inset_0_1px_0_0_rgba(255,255,255,0.06)]';
+          } else if (isTop) {
+            rowBorderClass = 'border-white/15 bg-slate-900/90 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)]';
+          }
 
           return (
             <div
               key={item.answerKey}
-              className={`
-                flex items-center justify-between px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl border w-full transition-all backdrop-blur-xl
-                ${
-                  isExact
-                    ? 'border-amber-400/50 bg-slate-900/95 shadow-[0_4px_16px_rgba(245,158,11,0.12),inset_0_1px_0_0_rgba(255,255,255,0.1)]'
-                    : isTop
-                      ? 'border-white/15 bg-slate-900/90 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)]'
-                      : 'border-white/[0.12] bg-slate-900/85 shadow-[0_4px_16px_rgba(0,0,0,0.35),inset_0_1px_0_0_rgba(255,255,255,0.06)]'
-                }
-              `}
+              className={`flex items-center justify-between px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl border w-full transition-all backdrop-blur-xl ${rowBorderClass}`}
             >
               {/* Left Side: Correct Rank + Avatar + Text Details */}
               <div className="flex items-center gap-2 sm:gap-2.5 min-w-0 flex-1 pe-1.5">
@@ -214,10 +218,13 @@ export function RankRevealView({
                   <div className="flex items-center gap-1 text-[11px] sm:text-xs text-steel font-normal truncate leading-none pt-0.5">
                     {item.subText && <span>{item.subText} • </span>}
                     <span>
-                      {lang === 'ar'
-                        ? `ترتيبك: #${submittedRank}${isExact ? ' (مطابق ✓)' : ''}`
-                        : `You guessed: #${submittedRank}${isExact ? ' (Exact ✓)' : ''}`}
+                      {lang === 'ar' ? `ترتيبك: #${submittedRank}` : `You guessed: #${submittedRank}`}
                     </span>
+                    {isExact && (
+                      <span className="text-emerald-400 font-semibold">
+                        {lang === 'ar' ? ' (مطابق ✓)' : ' (Exact ✓)'}
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>

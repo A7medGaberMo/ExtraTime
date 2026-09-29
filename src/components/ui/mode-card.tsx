@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 
 export interface ModeCardProps extends React.HTMLAttributes<HTMLDivElement> {
   tag?: string;
-  tagVariant?: 'lime' | 'amber' | 'sky';
+  tagVariant?: 'gold' | 'lime' | 'amber' | 'sky';
   icon: React.ReactNode;
   title: string;
   subtitle?: string;
@@ -21,7 +21,7 @@ export interface ModeCardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function ModeCard({
   tag,
-  tagVariant = 'lime',
+  tagVariant = 'gold',
   icon,
   title,
   subtitle,
@@ -46,12 +46,12 @@ export function ModeCard({
         {/* Header Strip */}
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3.5 min-w-0">
-            <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-2xl border border-lime/40 bg-lime/10 text-lime shadow-sm">
+            <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-2xl border border-gold/40 bg-gold/10 text-gold shadow-sm">
               {icon}
             </div>
             <div className="min-w-0">
               {subtitle && (
-                <span className="text-lime text-xs font-semibold tracking-wide uppercase block truncate">
+                <span className="text-gold text-xs font-semibold tracking-wide uppercase block truncate">
                   {subtitle}
                 </span>
               )}

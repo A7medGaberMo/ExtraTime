@@ -253,7 +253,7 @@ export function getPositionDraftPriority(pos: string): number {
   return 11;
 }
 
-export function getNextNaturalDraftSlot<T extends { position: string; player?: any }>(
+export function getNextNaturalDraftSlot<T extends { position: string; player?: unknown }>(
   starters: T[],
 ): T | undefined {
   const unfilled = starters.filter((s) => !s.player);

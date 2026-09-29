@@ -28,7 +28,7 @@ export function MatchCommentaryFeed({
     <div className="bg-slate-950/85 rounded-2xl border border-white/10 p-3.5 sm:p-4 shadow-xl backdrop-blur-xl select-none">
       <div className="mb-2.5 flex items-center justify-between border-b border-white/[0.08] pb-2">
         <div className="flex items-center gap-1.5">
-          <AppIcon icon={SoccerBall} size={15} weight="duotone" className="text-lime" />
+          <AppIcon icon={SoccerBall} size={15} weight="duotone" className="text-gold" />
           <span className="text-white text-[11px] font-black tracking-widest uppercase font-display">
             Match Goals Timeline
           </span>
@@ -41,7 +41,7 @@ export function MatchCommentaryFeed({
       {events.length === 0 ? (
         <div className="py-4 text-center">
           <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-slate-900/60 px-3 py-1.5 text-xs text-steel">
-            <AppIcon icon={ShieldCheck} size={16} weight="duotone" className="text-lime" />
+            <AppIcon icon={ShieldCheck} size={16} weight="duotone" className="text-gold" />
             <span className="font-stats text-[10px] font-bold uppercase tracking-wider">
               Defensive Masterclass · Clean Sheet Duel
             </span>
@@ -59,14 +59,14 @@ export function MatchCommentaryFeed({
                 key={event.id}
                 className={`flex items-center gap-2 rounded-xl p-2 transition-all ${
                   isHost
-                    ? 'border border-lime/30 bg-lime/[0.06] justify-start'
+                    ? 'border border-gold/30 bg-gold/[0.06] justify-start'
                     : 'border border-rose-500/30 bg-rose-500/[0.06] justify-end flex-row-reverse'
                 }`}
               >
                 {/* Minute Badge */}
                 <span
                   className={`flex h-6 min-w-[28px] items-center justify-center rounded-lg px-1.5 text-[10px] font-black font-stats ${
-                    isHost ? 'bg-lime text-slate-950 shadow-sm' : 'bg-rose-500 text-white shadow-sm'
+                    isHost ? 'bg-gold text-slate-950 shadow-sm' : 'bg-rose-500 text-white shadow-sm'
                   }`}
                 >
                   {event.minute}&apos;
@@ -79,14 +79,14 @@ export function MatchCommentaryFeed({
                       icon={SoccerBall}
                       size={12}
                       weight="fill"
-                      className={isHost ? 'text-lime shrink-0' : 'text-rose-400 shrink-0'}
+                      className={isHost ? 'text-gold shrink-0' : 'text-rose-400 shrink-0'}
                     />
                     <span className="text-xs font-black text-white truncate max-w-[140px] sm:max-w-[180px]">
                       {scorerName}
                     </span>
                     <span
                       className={`text-[8.5px] font-black tracking-wider uppercase font-stats ${
-                        isHost ? 'text-lime' : 'text-rose-300'
+                        isHost ? 'text-gold' : 'text-rose-300'
                       }`}
                     >
                       ({teamLabel(event.team)})
@@ -103,7 +103,7 @@ export function MatchCommentaryFeed({
                 <div
                   className={`ms-auto shrink-0 rounded-lg border px-2 py-0.5 text-[10px] font-black font-stats ${
                     isHost
-                      ? 'border-lime/30 bg-slate-950 text-lime'
+                      ? 'border-gold/30 bg-slate-950 text-gold'
                       : 'border-rose-500/30 bg-slate-950 text-rose-400'
                   }`}
                 >

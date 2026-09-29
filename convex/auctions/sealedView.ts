@@ -40,8 +40,18 @@ export function toPublicAuction(auction: Doc<'auctions'>) {
       }
     : undefined;
 
+  const { rounds, ...safeAuction } = auction;
+
+  // Provide structural data for the UI pitch, without leaking future players
+  const safeRounds = rounds.map(r => ({
+    roundNumber: r.roundNumber,
+    position: r.position,
+  }));
+
   return {
-    ...auction,
+    ...safeAuction,
+    rounds: safeRounds,
+    totalRounds: rounds.length,
     sealedBids: redactedSealedBids,
   };
 }

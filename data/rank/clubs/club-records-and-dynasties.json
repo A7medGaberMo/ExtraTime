@@ -2290,5 +2290,796 @@
       "en": "The kings of heartbreak on European football’s biggest stage",
       "ar": "الأندية الأكثر وصولاً لنهائي دوري الأبطال دون التتويج به"
     }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 iconic managers by total Premier League matches won",
+      "ar": "رتّب هؤلاء المدربين الخمسة حسب عدد المباريات التي فازوا بها في الدوري الإنجليزي الممتاز"
+    },
+    "subtitle": {
+      "en": "All-time Premier League managerial wins",
+      "ar": "أكثر المدربين تحقيقاً للانتصارات في الدوري الإنجليزي الممتاز"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "pl_mgr_ferguson",
+        "name": {
+          "en": "Sir Alex Ferguson",
+          "ar": "السير أليكس فيرغسون"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Alex_Ferguson_2012.jpg/330px-Alex_Ferguson_2012.jpg",
+          "fallbackText": "SAF"
+        },
+        "stat": {
+          "en": "528 Wins",
+          "ar": "528 فوزاً"
+        }
+      },
+      {
+        "answerKey": "pl_mgr_wenger",
+        "name": {
+          "en": "Arsène Wenger",
+          "ar": "أرسين فينغر"
+        },
+        "subText": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ars%C3%A8ne_Wenger_2015.jpg/330px-Ars%C3%A8ne_Wenger_2015.jpg",
+          "fallbackText": "AW"
+        },
+        "stat": {
+          "en": "476 Wins",
+          "ar": "476 فوزاً"
+        }
+      },
+      {
+        "answerKey": "pl_mgr_moyes",
+        "name": {
+          "en": "David Moyes",
+          "ar": "ديفيد مويس"
+        },
+        "subText": {
+          "en": "Everton, Man United & West Ham",
+          "ar": "إيفرتون، يونايتد ووست هام"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/David_Moyes_2023.jpg/330px-David_Moyes_2023.jpg",
+          "fallbackText": "DM"
+        },
+        "stat": {
+          "en": "271 Wins",
+          "ar": "271 فوزاً"
+        }
+      },
+      {
+        "answerKey": "pl_mgr_mourinho",
+        "name": {
+          "en": "José Mourinho",
+          "ar": "جوزيه مورينيو"
+        },
+        "subText": {
+          "en": "Chelsea, Man United & Tottenham",
+          "ar": "تشيلسي، يونايتد وتوتنهام"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Jos%C3%A9_Mourinho_2018.jpg/330px-Jos%C3%A9_Mourinho_2018.jpg",
+          "fallbackText": "JM"
+        },
+        "stat": {
+          "en": "217 Wins",
+          "ar": "217 فوزاً"
+        }
+      },
+      {
+        "answerKey": "pl_mgr_klopp",
+        "name": {
+          "en": "Jürgen Klopp",
+          "ar": "يورغن كلوب"
+        },
+        "subText": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/J%C3%BCrgen_Klopp_2019.jpg/330px-J%C3%BCrgen_Klopp_2019.jpg",
+          "fallbackText": "JK"
+        },
+        "stat": {
+          "en": "209 Wins",
+          "ar": "209 انتصارات"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 European clubs by total UEFA Super Cup titles won",
+      "ar": "رتّب هذه الأندية الأوروبية الخمسة حسب عدد ألقاب كأس السوبر الأوروبي"
+    },
+    "subtitle": {
+      "en": "Most UEFA Super Cup victories in history",
+      "ar": "أكثر الأندية تتويجاً بكأس السوبر الأوروبي"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "usc_realmadrid",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "subText": {
+          "en": "Record 6 Super Cups",
+          "ar": "الرقم القياسي بـ 6 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "RMA"
+        },
+        "stat": {
+          "en": "6 Titles",
+          "ar": "6 ألقاب"
+        }
+      },
+      {
+        "answerKey": "usc_barcelona",
+        "name": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "subText": {
+          "en": "5 Super Cups",
+          "ar": "5 ألقاب سوبر"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "FCB"
+        },
+        "stat": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        }
+      },
+      {
+        "answerKey": "usc_liverpool",
+        "name": {
+          "en": "Liverpool",
+          "ar": "ليفربول"
+        },
+        "subText": {
+          "en": "4 Super Cups",
+          "ar": "4 ألقاب سوبر"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/40.png",
+          "fallbackText": "LIV"
+        },
+        "stat": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        }
+      },
+      {
+        "answerKey": "usc_atletico",
+        "name": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "subText": {
+          "en": "3 Super Cups",
+          "ar": "3 ألقاب سوبر"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/530.png",
+          "fallbackText": "ATM"
+        },
+        "stat": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        }
+      },
+      {
+        "answerKey": "usc_chelsea",
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "subText": {
+          "en": "2 Super Cups",
+          "ar": "لقبان في السوبر"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "CHE"
+        },
+        "stat": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 English clubs by total FA Cup titles won",
+      "ar": "رتّب هذه الأندية الإنجليزية الخمسة حسب عدد ألقاب كأس الاتحاد الإنجليزي (FA Cup)"
+    },
+    "subtitle": {
+      "en": "Most prestigious cup competition in English football",
+      "ar": "أعرق بطولة كؤوس في تاريخ كرة القدم"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "facup_arsenal",
+        "name": {
+          "en": "Arsenal",
+          "ar": "أرسنال"
+        },
+        "subText": {
+          "en": "Record 14 FA Cups",
+          "ar": "الرقم القياسي بـ 14 لقباً"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/42.png",
+          "fallbackText": "ARS"
+        },
+        "stat": {
+          "en": "14 Titles",
+          "ar": "14 لقباً"
+        }
+      },
+      {
+        "answerKey": "facup_manutd",
+        "name": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "subText": {
+          "en": "13 FA Cups (Latest 2024)",
+          "ar": "13 لقباً (آخرها 2024)"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/33.png",
+          "fallbackText": "MUN"
+        },
+        "stat": {
+          "en": "13 Titles",
+          "ar": "13 لقباً"
+        }
+      },
+      {
+        "answerKey": "facup_chelsea",
+        "name": {
+          "en": "Chelsea",
+          "ar": "تشيلسي"
+        },
+        "subText": {
+          "en": "8 FA Cups",
+          "ar": "8 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/49.png",
+          "fallbackText": "CHE"
+        },
+        "stat": {
+          "en": "8 Titles",
+          "ar": "8 ألقاب"
+        }
+      },
+      {
+        "answerKey": "facup_mancity",
+        "name": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "subText": {
+          "en": "7 FA Cups",
+          "ar": "7 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/50.png",
+          "fallbackText": "MCI"
+        },
+        "stat": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        }
+      },
+      {
+        "answerKey": "facup_newcastle",
+        "name": {
+          "en": "Newcastle United",
+          "ar": "نيوكاسل يونايتد"
+        },
+        "subText": {
+          "en": "6 FA Cups",
+          "ar": "6 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/34.png",
+          "fallbackText": "NEW"
+        },
+        "stat": {
+          "en": "6 Titles",
+          "ar": "6 ألقاب"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 Italian clubs by total Serie A (Scudetto) titles won",
+      "ar": "رتّب هذه الأندية الإيطالية الخمسة حسب عدد ألقاب الدوري الإيطالي (السكوديتو)"
+    },
+    "subtitle": {
+      "en": "All-time Serie A champions",
+      "ar": "أبطال الدوري الإيطالي عبر التاريخ"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "scudetto_juve",
+        "name": {
+          "en": "Juventus",
+          "ar": "يوفنتوس"
+        },
+        "subText": {
+          "en": "Record 36 Scudetti",
+          "ar": "الرقم القياسي بـ 36 لقباً"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/496.png",
+          "fallbackText": "JUV"
+        },
+        "stat": {
+          "en": "36 Titles",
+          "ar": "36 لقباً"
+        }
+      },
+      {
+        "answerKey": "scudetto_inter",
+        "name": {
+          "en": "Inter Milan",
+          "ar": "إنتر ميلان"
+        },
+        "subText": {
+          "en": "20 Scudetti (Second Star)",
+          "ar": "20 لقباً (النجمة الثانية)"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/505.png",
+          "fallbackText": "INT"
+        },
+        "stat": {
+          "en": "20 Titles",
+          "ar": "20 لقباً"
+        }
+      },
+      {
+        "answerKey": "scudetto_milan",
+        "name": {
+          "en": "AC Milan",
+          "ar": "ميلان"
+        },
+        "subText": {
+          "en": "19 Scudetti",
+          "ar": "19 لقباً"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/489.png",
+          "fallbackText": "ACM"
+        },
+        "stat": {
+          "en": "19 Titles",
+          "ar": "19 لقباً"
+        }
+      },
+      {
+        "answerKey": "scudetto_genoa",
+        "name": {
+          "en": "Genoa",
+          "ar": "جنوى"
+        },
+        "subText": {
+          "en": "9 Scudetti",
+          "ar": "9 ألقاب تاريخية"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/495.png",
+          "fallbackText": "GEN"
+        },
+        "stat": {
+          "en": "9 Titles",
+          "ar": "9 ألقاب"
+        }
+      },
+      {
+        "answerKey": "scudetto_torino",
+        "name": {
+          "en": "Torino",
+          "ar": "تورينو"
+        },
+        "subText": {
+          "en": "7 Scudetti (Il Grande Torino)",
+          "ar": "7 ألقاب تاريخية"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/503.png",
+          "fallbackText": "TOR"
+        },
+        "stat": {
+          "en": "7 Titles",
+          "ar": "7 ألقاب"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 Spanish clubs by total Copa del Rey titles won",
+      "ar": "رتّب هذه الأندية الإسبانية الخمسة حسب عدد ألقاب كأس ملك إسبانيا"
+    },
+    "subtitle": {
+      "en": "All-time Copa del Rey trophy winners",
+      "ar": "أكثر الأندية تتويجاً بكأس ملك إسبانيا"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "copa_barca",
+        "name": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "subText": {
+          "en": "Record 31 Copas",
+          "ar": "الرقم القياسي بـ 31 لقباً"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/529.png",
+          "fallbackText": "FCB"
+        },
+        "stat": {
+          "en": "31 Titles",
+          "ar": "31 لقباً"
+        }
+      },
+      {
+        "answerKey": "copa_athletic",
+        "name": {
+          "en": "Athletic Club",
+          "ar": "أتلتيك بيلباو"
+        },
+        "subText": {
+          "en": "24 Copas (Latest 2024)",
+          "ar": "24 لقباً (آخرها 2024)"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/531.png",
+          "fallbackText": "ATH"
+        },
+        "stat": {
+          "en": "24 Titles",
+          "ar": "24 لقباً"
+        }
+      },
+      {
+        "answerKey": "copa_realmadrid",
+        "name": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "subText": {
+          "en": "20 Copas",
+          "ar": "20 لقباً"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/541.png",
+          "fallbackText": "RMA"
+        },
+        "stat": {
+          "en": "20 Titles",
+          "ar": "20 لقباً"
+        }
+      },
+      {
+        "answerKey": "copa_atletico",
+        "name": {
+          "en": "Atlético Madrid",
+          "ar": "أتلتيكو مدريد"
+        },
+        "subText": {
+          "en": "10 Copas",
+          "ar": "10 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/530.png",
+          "fallbackText": "ATM"
+        },
+        "stat": {
+          "en": "10 Titles",
+          "ar": "10 ألقاب"
+        }
+      },
+      {
+        "answerKey": "copa_valencia",
+        "name": {
+          "en": "Valencia",
+          "ar": "فالنسيا"
+        },
+        "subText": {
+          "en": "8 Copas",
+          "ar": "8 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/532.png",
+          "fallbackText": "VAL"
+        },
+        "stat": {
+          "en": "8 Titles",
+          "ar": "8 ألقاب"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legendary managers by total UEFA Champions League matches managed",
+      "ar": "رتّب هؤلاء المدربين الخمسة حسب عدد المباريات التي أداروها في دوري أبطال أوروبا"
+    },
+    "subtitle": {
+      "en": "All-time UEFA Champions League managerial appearances",
+      "ar": "أكثر المدربين قيادة للمباريات في دوري أبطال أوروبا"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "ucl_mgr_ancelotti",
+        "name": {
+          "en": "Carlo Ancelotti",
+          "ar": "كارلو أنشيلوتي"
+        },
+        "subText": {
+          "en": "Milan, Real Madrid, Chelsea, Bayern, PSG",
+          "ar": "ميلان، ريال مدريد، تشيلسي، بايرن، باريس"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Carlo_Ancelotti_2019.jpg/330px-Carlo_Ancelotti_2019.jpg",
+          "fallbackText": "CA"
+        },
+        "stat": {
+          "en": "204 Matches",
+          "ar": "204 مباريات"
+        }
+      },
+      {
+        "answerKey": "ucl_mgr_ferguson",
+        "name": {
+          "en": "Sir Alex Ferguson",
+          "ar": "السير أليكس فيرغسون"
+        },
+        "subText": {
+          "en": "Manchester United",
+          "ar": "مانشستر يونايتد"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Alex_Ferguson_2012.jpg/330px-Alex_Ferguson_2012.jpg",
+          "fallbackText": "SAF"
+        },
+        "stat": {
+          "en": "190 Matches",
+          "ar": "190 مباراة"
+        }
+      },
+      {
+        "answerKey": "ucl_mgr_wenger",
+        "name": {
+          "en": "Arsène Wenger",
+          "ar": "أرسين فينغر"
+        },
+        "subText": {
+          "en": "Arsenal & Monaco",
+          "ar": "أرسنال وموناكو"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ars%C3%A8ne_Wenger_2015.jpg/330px-Ars%C3%A8ne_Wenger_2015.jpg",
+          "fallbackText": "AW"
+        },
+        "stat": {
+          "en": "184 Matches",
+          "ar": "184 مباراة"
+        }
+      },
+      {
+        "answerKey": "ucl_mgr_pep",
+        "name": {
+          "en": "Pep Guardiola",
+          "ar": "بيب غوارديولا"
+        },
+        "subText": {
+          "en": "Barcelona, Bayern & Man City",
+          "ar": "برشلونة، بايرن ومانشستر سيتي"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Pep_2017_%28cropped%29.jpg/330px-Pep_2017_%28cropped%29.jpg",
+          "fallbackText": "PG"
+        },
+        "stat": {
+          "en": "171 Matches",
+          "ar": "171 مباراة"
+        }
+      },
+      {
+        "answerKey": "ucl_mgr_mourinho",
+        "name": {
+          "en": "José Mourinho",
+          "ar": "جوزيه مورينيو"
+        },
+        "subText": {
+          "en": "Porto, Chelsea, Inter, Real, Man United, Spurs",
+          "ar": "بورتو، تشيلسي، إنتر، ريال مدريد"
+        },
+        "media": {
+          "type": "custom",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Jos%C3%A9_Mourinho_2018.jpg/330px-Jos%C3%A9_Mourinho_2018.jpg",
+          "fallbackText": "JM"
+        },
+        "stat": {
+          "en": "151 Matches",
+          "ar": "151 مباراة"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 African giants by total CAF Champions League titles won",
+      "ar": "رتّب كبار أندية أفريقيا الخمسة حسب عدد ألقاب دوري أبطال أفريقيا"
+    },
+    "subtitle": {
+      "en": "Most successful clubs in African club football history",
+      "ar": "أكثر الأندية تتويجاً بدوري أبطال أفريقيا عبر التاريخ"
+    },
+    "category": "clubs",
+    "answers": [
+      {
+        "answerKey": "cafcl_alahly",
+        "name": {
+          "en": "Al Ahly SC",
+          "ar": "الأهلي المصري"
+        },
+        "subText": {
+          "en": "Record 12 Titles (Latest 2024)",
+          "ar": "الرقم القياسي بـ 12 لقباً (آخرها 2024)"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/1577.png",
+          "fallbackText": "AHL"
+        },
+        "stat": {
+          "en": "12 Titles",
+          "ar": "12 لقباً"
+        }
+      },
+      {
+        "answerKey": "cafcl_zamalek",
+        "name": {
+          "en": "Zamalek SC",
+          "ar": "الزمالك"
+        },
+        "subText": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/1040.png",
+          "fallbackText": "ZAM"
+        },
+        "stat": {
+          "en": "5 Titles",
+          "ar": "5 ألقاب"
+        }
+      },
+      {
+        "answerKey": "cafcl_esperance",
+        "name": {
+          "en": "Espérance de Tunis",
+          "ar": "الترجي التونسي"
+        },
+        "subText": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/1041.png",
+          "fallbackText": "EST"
+        },
+        "stat": {
+          "en": "4 Titles",
+          "ar": "4 ألقاب"
+        }
+      },
+      {
+        "answerKey": "cafcl_raja",
+        "name": {
+          "en": "Raja Casablanca",
+          "ar": "الرجاء الرياضي"
+        },
+        "subText": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/1029.png",
+          "fallbackText": "RCA"
+        },
+        "stat": {
+          "en": "3 Titles",
+          "ar": "3 ألقاب"
+        }
+      },
+      {
+        "answerKey": "cafcl_essetif",
+        "name": {
+          "en": "ES Sétif",
+          "ar": "وفاق سطيف"
+        },
+        "subText": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        },
+        "media": {
+          "type": "club",
+          "primaryUrl": "https://media.api-sports.io/football/teams/1038.png",
+          "fallbackText": "ESS"
+        },
+        "stat": {
+          "en": "2 Titles",
+          "ar": "لقبان"
+        }
+      }
+    ]
   }
 ]

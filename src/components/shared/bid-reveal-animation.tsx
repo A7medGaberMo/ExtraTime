@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { PlayerCard } from '@/components/shared/player-card';
 import type { PlayerCardData } from '@/types/player';
-import { Sword, Trophy, ShieldCheck, Question, X, ArrowRight } from '@phosphor-icons/react';
+import { Sword, X, ArrowRight } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 
 export interface LastCompletedRoundInfo {
@@ -54,8 +54,6 @@ export function BidRevealAnimation({
 
   useEffect(() => {
     if (isOpen) {
-      setStage('enter');
-      setProgressPct(0);
       const enterTimer = setTimeout(() => setStage('show'), 40);
 
       const progressStart = Date.now();
@@ -75,6 +73,8 @@ export function BidRevealAnimation({
         clearTimeout(enterTimer);
         clearTimeout(dismissTimer);
         clearInterval(progressInterval);
+        setStage('enter');
+        setProgressPct(0);
       };
     }
   }, [isOpen]);
@@ -109,7 +109,7 @@ export function BidRevealAnimation({
       <div
         className={`pointer-events-none absolute top-1/2 left-1/2 h-[280px] w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[120px] transition-colors duration-500 sm:h-[460px] sm:w-[460px] ${
           winnerIsMe
-            ? 'bg-lime/25'
+            ? 'bg-gold/25'
             : winningBid > 0
               ? 'bg-rose-500/20'
               : 'bg-amber-400/20'
@@ -123,7 +123,7 @@ export function BidRevealAnimation({
         {/* Top Dismiss Button */}
         <button
           onClick={handleManualClose}
-          className="btn-haptic absolute top-3 right-3 z-20 flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-slate-950/80 text-steel transition-all hover:border-lime/40 hover:text-white cursor-pointer active:scale-90"
+          className="btn-haptic absolute top-3 right-3 z-20 flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-slate-950/80 text-steel transition-all hover:border-gold/40 hover:text-white cursor-pointer active:scale-90"
           title="Skip Reveal"
           aria-label="Skip Reveal"
         >
@@ -133,13 +133,13 @@ export function BidRevealAnimation({
         {/* ── MINIMAL APPLE KEYNOTE HEADER ── */}
         <header className="z-10 flex flex-col items-center pt-1 text-center space-y-1">
           <div className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-0.5 text-[10px] font-black tracking-widest uppercase font-stats text-steel">
-            <AppIcon icon={Sword} size={12} weight="duotone" className="text-lime" />
+            <AppIcon icon={Sword} size={12} weight="duotone" className="text-gold" />
             <span>Round {roundNumber} · {position}</span>
           </div>
 
           <h2 className="text-sm sm:text-base font-black uppercase font-display tracking-wide pt-0.5">
             {winnerIsMe ? (
-              <span className="text-lime">You Won The Star Target</span>
+              <span className="text-gold">You Won The Star Target</span>
             ) : winningBid > 0 ? (
               <span className="text-rose-400">Rival Won The Star Target</span>
             ) : (
@@ -160,7 +160,7 @@ export function BidRevealAnimation({
           <div
             className={`flex flex-col items-center justify-between rounded-2xl border p-2 sm:p-3 transition-all ${
               winnerIsMe
-                ? 'border-lime/40 bg-lime/[0.06] shadow-[0_4px_20px_rgba(202,255,0,0.12)]'
+                ? 'border-gold/40 bg-gold/[0.06] shadow-[0_4px_20px_rgba(229,184,66,0.12)]'
                 : 'border-white/10 bg-slate-950/60'
             }`}
           >
@@ -169,7 +169,7 @@ export function BidRevealAnimation({
                 You
               </span>
               <span className={`text-[9.5px] font-black uppercase px-2 py-0.5 rounded-full border ${
-                winnerIsMe ? 'border-lime/40 bg-lime/15 text-lime' : 'border-white/10 bg-white/5 text-steel'
+                winnerIsMe ? 'border-gold/40 bg-gold/15 text-gold' : 'border-white/10 bg-white/5 text-steel'
               }`}>
                 ${myBid ?? 0}M Bid
               </span>
@@ -240,7 +240,7 @@ export function BidRevealAnimation({
           <div className="flex-1 flex flex-col gap-1">
             <div className="h-1 w-full overflow-hidden rounded-full bg-slate-950 border border-white/10">
               <div
-                className="h-full rounded-full bg-lime transition-[width] duration-75 ease-linear"
+                className="h-full rounded-full bg-gold transition-[width] duration-75 ease-linear"
                 style={{ width: `${Math.max(0, 100 - progressPct)}%` }}
               />
             </div>

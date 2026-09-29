@@ -18,9 +18,10 @@ import {
   Ranking,
   Lightning,
   Crosshair,
+  Vault,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
-import { ETLogo } from '@/components/shared/et-logo';
+import Image from 'next/image';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { useGuestSession } from '@/hooks/use-guest-session';
@@ -132,7 +133,7 @@ export function Header() {
       label: lang === 'ar' ? 'سنايب' : 'Snipe',
       href: '/create-room?mode=snipe',
       icon: Crosshair,
-      color: 'lime',
+      color: 'gold',
       isActive: pathname === '/' || pathname.includes('mode=snipe') || pathname.startsWith('/auction'),
     },
     {
@@ -140,7 +141,7 @@ export function Header() {
       label: lang === 'ar' ? 'رتّب' : 'Rank',
       href: '/rank',
       icon: Ranking,
-      color: 'amber',
+      color: 'gold',
       isActive: pathname.startsWith('/rank') || pathname.includes('mode=rank'),
     },
     {
@@ -148,8 +149,16 @@ export function Header() {
       label: lang === 'ar' ? 'اكسترا درافت' : 'Extra Draft',
       href: '/draft',
       icon: Lightning,
-      color: 'cyan',
+      color: 'gold',
       isActive: pathname.startsWith('/draft'),
+    },
+    {
+      id: 'bank',
+      label: lang === 'ar' ? 'بَنِّك' : 'Bank It',
+      href: '/bank',
+      icon: Vault,
+      color: 'gold',
+      isActive: pathname.startsWith('/bank'),
     },
   ];
 
@@ -158,7 +167,7 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-[max(0.625rem,env(safe-area-inset-top,0.625rem))] inset-x-0 z-50 flex justify-center pointer-events-none select-none px-2 sm:px-3 w-full" dir="ltr">
+    <header className="fixed top-[max(0.375rem,env(safe-area-inset-top,0.375rem))] inset-x-0 z-50 flex justify-center pointer-events-none select-none px-2 sm:px-3 w-full" dir="ltr">
       <div ref={notchRef} className="pointer-events-auto max-w-[calc(100vw-1rem)] flex flex-col items-center">
         <AnimatePresence initial={false} mode="wait">
           {!isOpen ? (
@@ -170,30 +179,32 @@ export function Header() {
               exit={{ opacity: 0, y: -10, scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 450, damping: 30 }}
               className={cn(
-                'flex items-center gap-1 sm:gap-2 rounded-full border border-white/10 bg-slate-950/90 px-2.5 sm:px-4 py-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-all max-w-[calc(100vw-1rem)]',
-                isGameplay ? 'hover:border-lime/40 cursor-pointer' : '',
+                'flex items-center gap-1 sm:gap-1.5 rounded-full border border-white/10 bg-slate-950/92 px-1.5 sm:px-2.5 py-0.5 shadow-[0_8px_24px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-all max-w-[calc(100vw-1rem)]',
+                isGameplay ? 'hover:border-gold/40 cursor-pointer' : '',
               )}
             >
               {/* Brand Logo & Name */}
               <Link
                 href="/"
-                className="flex items-center gap-1.5 sm:gap-2 group transition-opacity hover:opacity-90 shrink-0"
+                className="flex items-center gap-1.5 group transition-opacity hover:opacity-90 shrink-0"
               >
-                <div className="relative flex h-5.5 w-5.5 sm:h-6 sm:w-6 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40 bg-slate-900/90 shadow-[0_0_10px_rgba(149,232,16,0.3)] group-hover:scale-105 transition-transform p-0.5">
-                  <ETLogo
-                    variant="card-badge"
-                    size={16}
-                    className="drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]"
+                <div className="relative flex h-4.5 w-4.5 sm:h-5 sm:w-5 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold/40 bg-slate-900/90 shadow-[0_0_8px_rgba(229,184,66,0.3)] group-hover:scale-105 transition-transform p-0.5">
+                  <Image
+                    src="/ETIcon.png"
+                    alt="ExtraTime"
+                    width={18}
+                    height={18}
+                    className="rounded-full object-cover shrink-0"
                   />
                 </div>
-                <span className="font-stats font-bold text-xs sm:text-[13px] text-white tracking-wider">
-                  Extra<span className="text-lime">Time</span>
+                <span className="font-stats font-bold text-[11.5px] sm:text-xs text-white tracking-wider">
+                  Extra<span className="text-gold">Time</span>
                 </span>
               </Link>
 
               {/* Desktop Center Nav Tabs */}
               {!isGameplay && (
-                <nav className="hidden md:flex items-center gap-0.5 rounded-full bg-white/[0.04] border border-white/[0.06] p-0.5 ml-1 mr-1">
+                <nav className="hidden md:flex items-center gap-0.5 rounded-full bg-white/[0.04] border border-white/[0.06] p-0.5 ml-0.5 mr-0.5">
                   {navLinks.map((item) => {
                     const isActive = pathname === item.href;
                     const IconComp = item.icon;
@@ -202,13 +213,13 @@ export function Header() {
                         key={item.href}
                         href={item.href}
                         className={cn(
-                          'flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold transition-colors',
+                          'flex items-center gap-1 rounded-full px-2 py-0.5 text-[10.5px] font-semibold transition-colors',
                           isActive
-                            ? 'bg-lime text-slate-950 shadow-sm'
+                            ? 'bg-gold text-slate-950 font-bold shadow-sm'
                             : 'text-steel hover:bg-white/5 hover:text-white',
                         )}
                       >
-                        <AppIcon icon={IconComp} size={13} weight={isActive ? 'fill' : 'bold'} />
+                        <AppIcon icon={IconComp} size={11} weight={isActive ? 'fill' : 'bold'} />
                         <span>{item.label}</span>
                       </Link>
                     );
@@ -224,36 +235,38 @@ export function Header() {
                       ? `/auction/${activeMatch.id}`
                       : activeMatch.type === 'rank'
                         ? `/rank/${activeMatch.id}`
-                        : `/draft/${activeMatch.id}`
+                        : activeMatch.type === 'draft'
+                          ? `/draft/${activeMatch.id}`
+                          : `/bank/${activeMatch.id}`
                   }
-                  className="flex items-center gap-1.5 rounded-full border border-lime/40 bg-lime/15 px-2 py-0.5 text-lime shadow-glow-lime transition-all animate-pulse shrink-0 cursor-pointer sm:px-2.5 hover:bg-lime/25"
+                  className="flex items-center gap-1 rounded-full border border-gold/40 bg-gold/15 px-1.5 py-0.5 text-gold shadow-[0_0_8px_rgba(229,184,66,0.35)] transition-all animate-pulse shrink-0 cursor-pointer sm:px-2 hover:bg-gold/25"
                   title="Resume live match"
                 >
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-lime" />
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-gold" />
                   </span>
-                  <span className="font-stats text-xs font-bold">
+                  <span className="font-stats text-[10px] font-bold">
                     {lang === 'ar' ? 'الماتش لايف' : 'LIVE'}
                   </span>
                 </Link>
               )}
 
               {/* Right Fast Action Pills */}
-              <div className="flex items-center gap-1 shrink-0 ml-0.5">
+              <div className="flex items-center gap-0.5 sm:gap-1 shrink-0 ml-0.5">
                 {/* Sound Toggle */}
                 <button
                   type="button"
                   onClick={handleToggleSound}
-                  className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer"
+                  className="btn-haptic flex h-6 w-6 sm:h-6.5 sm:w-6.5 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:border-gold/40 hover:text-white transition-all cursor-pointer"
                   title={muted ? t('common.soundMuted') : t('common.soundOn')}
                   aria-label={muted ? t('common.soundMuted') : t('common.soundOn')}
                 >
                   <AppIcon
                     icon={muted ? SpeakerSimpleSlash : SpeakerHigh}
-                    size={14}
+                    size={12}
                     weight="bold"
-                    className={muted ? 'text-rose-400' : 'text-lime'}
+                    className={muted ? 'text-rose-400' : 'text-gold'}
                   />
                 </button>
 
@@ -261,10 +274,10 @@ export function Header() {
                 <button
                   type="button"
                   onClick={toggleLang}
-                  className="btn-haptic flex h-7.5 sm:h-8 items-center gap-1 rounded-full px-2 sm:px-2.5 border border-white/10 bg-white/5 text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats"
+                  className="btn-haptic flex h-6 sm:h-6.5 items-center gap-0.5 rounded-full px-1.5 border border-white/10 bg-white/5 text-[9.5px] font-bold text-steel hover:border-gold/40 hover:text-white transition-all cursor-pointer font-stats"
                   title={t('common.language')}
                 >
-                  <AppIcon icon={Translate} size={13} weight="bold" />
+                  <AppIcon icon={Translate} size={11} weight="bold" />
                   <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
                 </button>
 
@@ -272,10 +285,10 @@ export function Header() {
                 <button
                   type="button"
                   onClick={() => setIsOpen(true)}
-                  className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-lime/40 transition-all cursor-pointer"
+                  className="btn-haptic md:hidden flex h-6 w-6 sm:h-6.5 sm:w-6.5 items-center justify-center rounded-full border border-white/10 bg-white/5 text-steel hover:text-white hover:border-gold/40 transition-all cursor-pointer"
                   title="Expand Navigation Island"
                 >
-                  <AppIcon icon={CaretDown} size={13} weight="bold" />
+                  <AppIcon icon={CaretDown} size={11} weight="bold" />
                 </button>
               </div>
             </motion.div>
@@ -296,15 +309,17 @@ export function Header() {
                   onClick={() => setIsOpen(false)}
                   className="flex items-center gap-2 group"
                 >
-                  <div className="relative flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-lime/40 bg-slate-900/90 shadow-[0_0_12px_rgba(149,232,16,0.35)] p-0.5 group-hover:scale-105 transition-transform">
-                    <ETLogo
-                      variant="card-badge"
-                      size={18}
-                      className="drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]"
+                  <div className="relative flex h-6.5 w-6.5 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold/40 bg-slate-900/90 shadow-[0_0_10px_rgba(229,184,66,0.35)] p-0.5 group-hover:scale-105 transition-transform">
+                    <Image
+                      src="/ETIcon.png"
+                      alt="ExtraTime"
+                      width={24}
+                      height={24}
+                      className="rounded-full object-cover shrink-0"
                     />
                   </div>
                   <span className="font-stats font-bold text-[13px] text-white tracking-wider">
-                    Extra<span className="text-lime">Time</span>
+                    Extra<span className="text-gold">Time</span>
                   </span>
                 </Link>
 
@@ -320,7 +335,7 @@ export function Header() {
                       icon={muted ? SpeakerSimpleSlash : SpeakerHigh}
                       size={14}
                       weight="bold"
-                      className={muted ? 'text-rose-400' : 'text-lime'}
+                      className={muted ? 'text-rose-400' : 'text-gold'}
                     />
                   </button>
 
@@ -351,10 +366,10 @@ export function Header() {
               {guestName && (
                 <div className="flex items-center justify-between rounded-xl bg-white/[0.03] border border-white/[0.06] px-3 py-1.5 mb-2.5">
                   <div className="flex items-center gap-1.5 text-steel text-xs font-semibold font-stats">
-                    <AppIcon icon={User} size={13} weight="bold" className="text-lime" />
+                    <AppIcon icon={User} size={13} weight="bold" className="text-gold" />
                     <span className="text-white truncate max-w-[160px]">{guestName}</span>
                   </div>
-                  <span className="font-stats text-[11px] font-semibold text-lime">
+                  <span className="font-stats text-[11px] font-semibold text-gold">
                     Manager
                   </span>
                 </div>
@@ -366,39 +381,50 @@ export function Header() {
                   href={
                     activeMatch.type === 'snipe'
                       ? `/auction/${activeMatch.id}`
-                      : `/rank/${activeMatch.id}`
+                      : activeMatch.type === 'rank'
+                        ? `/rank/${activeMatch.id}`
+                        : activeMatch.type === 'draft'
+                          ? `/draft/${activeMatch.id}`
+                          : `/bank/${activeMatch.id}`
                   }
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-between rounded-2xl bg-slate-900/90 border border-lime/40 p-3 mb-2.5 group hover:border-lime transition-all cursor-pointer shadow-md"
+                  className="flex items-center justify-between rounded-2xl bg-slate-900/90 border border-gold/40 p-3 mb-2.5 group hover:border-gold transition-all cursor-pointer shadow-md"
                 >
                   <div className="flex items-center gap-2.5 min-w-0">
                     <span className="relative flex h-2.5 w-2.5 shrink-0">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
-                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-lime" />
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-gold" />
                     </span>
                     <div className="min-w-0">
                       <div className="truncate text-xs font-bold text-white">
-                        {activeMatch.type === 'snipe' ? 'Snipe Match' : 'Rank Duel'} ({activeMatch.code})
+                        {activeMatch.type === 'snipe'
+                          ? 'Snipe Match'
+                          : activeMatch.type === 'rank'
+                            ? 'Rank Duel'
+                            : activeMatch.type === 'draft'
+                              ? 'Draft Duel'
+                              : 'Bank It Duel'}{' '}
+                        ({activeMatch.code})
                       </div>
-                      <div className="truncate text-[11px] font-semibold text-lime">
+                      <div className="truncate text-[11px] font-semibold text-gold-light">
                         {activeMatch.status === 'waiting'
                           ? (lang === 'ar' ? 'في انتظار المنافس...' : 'Waiting for rival...')
                           : (lang === 'ar' ? 'الماتش جاري الآن — اضغط للمتابعة' : 'Match in progress — Tap to resume')}
                       </div>
                     </div>
                   </div>
-                  <span className="shrink-0 rounded-lg bg-lime px-2.5 py-1 text-[11px] font-bold text-slate-950">
+                  <span className="shrink-0 rounded-lg bg-gold px-2.5 py-1 text-[11px] font-bold text-slate-950">
                     {lang === 'ar' ? 'دخول' : 'Resume'}
                   </span>
                 </Link>
               )}
 
-              {/* 3 Main Games Grid in Expanded Island */}
+              {/* 4 Main Games Grid in Expanded Island */}
               <div className="space-y-1 mb-2.5">
                 <div className="text-[10px] font-black uppercase tracking-wider text-steel px-1">
                   {lang === 'ar' ? 'ألعاب إكسترا تايم الرئيسية' : 'Main Match Arenas'}
                 </div>
-                <div className="grid grid-cols-3 gap-1.5">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
                   {gameChannels.map((game) => {
                     const IconComp = game.icon;
                     return (
@@ -406,29 +432,16 @@ export function Header() {
                         key={game.id}
                         href={game.href}
                         onClick={() => setIsOpen(false)}
-                        className={cn(
-                          'btn-haptic flex flex-col items-center justify-center gap-1 rounded-2xl border p-2 text-center transition-all cursor-pointer group',
-                          game.color === 'lime'
-                            ? 'border-lime/30 bg-lime/10 hover:border-lime hover:bg-lime/20'
-                            : game.color === 'amber'
-                              ? 'border-amber-400/30 bg-amber-400/10 hover:border-amber-400 hover:bg-amber-400/20'
-                              : 'border-cyan-400/30 bg-cyan-400/10 hover:border-cyan-400 hover:bg-cyan-400/20',
-                        )}
+                        className="btn-haptic flex flex-col items-center justify-center gap-1 rounded-2xl border border-gold/30 bg-gold/10 hover:border-gold hover:bg-gold/20 p-2 text-center transition-all cursor-pointer group"
                       >
                         <AppIcon
                           icon={IconComp}
                           size={18}
                           weight="bold"
-                          className={
-                            game.color === 'lime'
-                              ? 'text-lime'
-                              : game.color === 'amber'
-                                ? 'text-amber-400'
-                                : 'text-cyan-400'
-                          }
+                          className="text-gold"
                         />
                         <span className="text-xs font-bold text-white tracking-tight">{game.label}</span>
-                        <span className="text-[9px] text-steel">Create & Join</span>
+                        <span className="text-[9px] text-steel">{lang === 'ar' ? 'دخول ولعب' : 'Create & Play'}</span>
                       </Link>
                     );
                   })}
@@ -444,9 +457,9 @@ export function Header() {
                       key={item.href}
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className="btn-haptic flex flex-col items-center justify-center gap-1 rounded-2xl border border-white/[0.06] bg-slate-900/80 py-2 sm:py-2.5 px-0.5 text-center text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer group"
+                      className="btn-haptic flex flex-col items-center justify-center gap-1 rounded-2xl border border-white/[0.06] bg-slate-900/80 py-2 sm:py-2.5 px-0.5 text-center text-steel hover:border-gold/40 hover:text-white transition-all cursor-pointer group"
                     >
-                      <AppIcon icon={IconComp} size={17} weight="bold" className="text-steel group-hover:text-lime transition-colors" />
+                      <AppIcon icon={IconComp} size={17} weight="bold" className="text-steel group-hover:text-gold transition-colors" />
                       <span className="text-[10px] sm:text-[11px] font-semibold tracking-tight truncate max-w-full">{item.label}</span>
                     </Link>
                   );
@@ -458,7 +471,7 @@ export function Header() {
                 <Link
                   href="/join-room"
                   onClick={() => setIsOpen(false)}
-                  className="btn-haptic flex items-center justify-center gap-1.5 w-full py-2 rounded-xl border border-white/[0.06] bg-white/[0.02] text-steel hover:text-lime hover:border-lime/30 text-xs font-semibold transition-colors cursor-pointer"
+                  className="btn-haptic flex items-center justify-center gap-1.5 w-full py-2 rounded-xl border border-white/[0.06] bg-white/[0.02] text-steel hover:text-gold hover:border-gold/30 text-xs font-semibold transition-colors cursor-pointer"
                 >
                   <AppIcon icon={SignIn} size={14} weight="bold" />
                   <span>{t('nav.join')} (Room Code)</span>

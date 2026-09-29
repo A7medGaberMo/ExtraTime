@@ -1,4 +1,5 @@
 import { query } from "../_generated/server";
+import { Id } from "../_generated/dataModel";
 import { v } from "convex/values";
 
 /**
@@ -249,3 +250,59 @@ export const getByCode = query({
     };
   },
 });
+
+export const getRematchState = query({
+  args: {
+    gameId: v.id("rankGames"),
+    guestId: v.id("guestUsers"),
+  },
+  handler: async (ctx, args) => {
+    const game = await ctx.db.get(args.gameId);
+    if (!game) return { status: 'none' as const };
+
+    const rematchGameId = (game as Record<string, unknown>).rematchGameId as Id<"rankGames"> | undefined;
+    if (!rematchGameId) return { status: 'none' as const };
+
+    const rematchGame = await ctx.db.get(rematchGameId);
+    if (!rematchGame) return { status: 'none' as const };
+
+    const inviterId = (game as Record<string, unknown>).rematchInviterId as Id<"guestUsers"> | undefined;
+    const iAmInviter = inviterId === args.guestId;
+
+    let inviterName = 'Opponent';
+    if (inviterId) {
+      const inviterUser = await ctx.db.get(inviterId);
+      if (inviterUser?.nickname) inviterName = inviterUser.nickname;
+    }
+
+    if (rematchGame.status === 'round_active' || rematchGame.status === 'round_reveal') {
+      return {
+        status: 'accepted' as const,
+        rematchGameId: rematchGame._id,
+        iAmInviter,
+        inviterName,
+      };
+    }
+
+    if (rematchGame.status === 'abandoned') {
+      return {
+        status: 'declined' as const,
+        rematchGameId: rematchGame._id,
+        iAmInviter,
+        inviterName,
+      };
+    }
+
+    if (rematchGame.status === 'waiting') {
+      return {
+        status: 'pending' as const,
+        rematchGameId: rematchGame._id,
+        iAmInviter,
+        inviterName,
+      };
+    }
+
+    return { status: 'none' as const };
+  },
+});
+

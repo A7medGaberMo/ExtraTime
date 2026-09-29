@@ -63,7 +63,7 @@ export function RankEntityAvatar({ media, name, size = 'md' }: RankEntityAvatarP
       case 'stint':
       case 'player':
       default:
-        return 'bg-[#18181b] border-white/10 text-lime';
+        return 'bg-[#18181b] border-white/10 text-gold';
     }
   };
 
@@ -78,7 +78,7 @@ export function RankEntityAvatar({ media, name, size = 'md' }: RankEntityAvatarP
       case 'stint':
       case 'player':
       default:
-        return <AppIcon icon={User} size={iconSizes} weight="duotone" className="text-lime" />;
+        return <AppIcon icon={User} size={iconSizes} weight="duotone" className="text-gold" />;
     }
   };
 

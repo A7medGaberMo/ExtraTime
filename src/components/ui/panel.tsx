@@ -43,7 +43,7 @@ export function Panel({
       {...props}
     >
       {hasAmbientLight && (
-        <div className="bg-lime/5 pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full blur-3xl" />
+        <div className="bg-gold/5 pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full blur-3xl" />
       )}
       {children}
     </div>

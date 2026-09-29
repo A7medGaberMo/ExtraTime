@@ -1,5 +1,5 @@
 import { GenericMutationCtx } from 'convex/server';
-import { Id, DataModel } from '../_generated/dataModel';
+import { Id, DataModel, Doc } from '../_generated/dataModel';
 import { getFormationPositions, MatchSize } from './formations';
 import {
   type Position,
@@ -31,10 +31,10 @@ interface PoolPlayer {
 }
 
 // ── Utilities ──────────────────────────────────────────────
-function weightedPick<T>(items: T[], weights: number[]): T {
+function weightedPick<T>(items: T[], weights: number[], random: () => number): T {
   const total = weights.reduce((sum, w) => sum + w, 0);
-  if (total === 0) return items[Math.floor(Math.random() * items.length)];
-  let roll = Math.random() * total;
+  if (total === 0) return items[Math.floor(random() * items.length)];
+  let roll = random() * total;
   for (let i = 0; i < items.length; i++) {
     roll -= weights[i];
     if (roll <= 0) return items[i];
@@ -109,7 +109,7 @@ function positionFitScore(playerPosition: string, slot: Position): number {
 
   const allowed = variants[slot];
   if (allowed && pPositions.some((p) => allowed.includes(p as Position))) {
-    return 80;
+    return 20; // 20 vs 100 means exact match overwhelmingly dominates (90%+)
   }
 
   // 4. Return 0 for all other cross-position mismatches
@@ -126,18 +126,19 @@ interface ScoringContext {
 function scoreCandidate(player: PoolPlayer, slot: Position, ctx: ScoringContext): number {
   let score = 0;
 
-  // 1. Position fit (0–100, heavily weighted to preserve categories)
+  // 1. Position fit (0–100, heavily weighted x8 so exact match dominates 90%+)
   const posFit = positionFitScore(player.position, slot);
   if (posFit === 0) return 0; // Strictly exclude positionally incompatible candidates
-  score += posFit * 3;
+  score += posFit * 8; // Exact match gives +800 pts vs +160 for variant
 
   // 2. High Tier preference for overall quality, balanced across upper tiers
   const rank = tierRank(player.tier);
-  score += Math.max(0, (6 - rank) * 12);
+  score += Math.max(0, (6 - rank) * 10);
 
   // 3. Tier budget bonus — favor tiers we still need for target ratio
   const remaining = ctx.tierBudget.get(player.tier) ?? 0;
-  if (remaining > 0) score += 25;
+  if (remaining > 0) score += 20;
+
 
   // 4. Club diversity penalty
   const clubCount = ctx.usedClubs.get(player.clubId) ?? 0;
@@ -150,33 +151,6 @@ function scoreCandidate(player: PoolPlayer, slot: Position, ctx: ScoringContext)
   return Math.max(1, score);
 }
 
-const TOP_CLUB_NAMES = new Set([
-  'Real Madrid',
-  'Barcelona',
-  'Barca',
-  'Atlético Madrid',
-  'Atletico Madrid',
-  'Manchester City',
-  'Man City',
-  'Arsenal',
-  'Liverpool',
-  'Manchester United',
-  'Man Utd',
-  'Chelsea',
-  'Tottenham',
-  'Bayern Munich',
-  'Bayern',
-  'Borussia Dortmund',
-  'Dortmund',
-  'Paris Saint-Germain',
-  'PSG',
-  'AC Milan',
-  'Inter Milan',
-  'Inter',
-  'Juventus',
-  'Juve',
-  'Napoli',
-]);
 
 // ── Tier Distribution Planning ─────────────────────────────
 // Enforces 80% to 85% Elite & Above (ICON, HERO, ULTIMATE, MASTER, ELITE) and 15% to 20% Gold/Lower
@@ -222,6 +196,7 @@ function selectSmartPair(
   used: Set<string>,
   slot: Position,
   scoringCtx: ScoringContext,
+  random: () => number,
 ): [PoolPlayer, PoolPlayer] {
   const unused = pool.filter((p) => !used.has(String(p._id)));
   if (unused.length < 2) {
@@ -277,12 +252,12 @@ function selectSmartPair(
 
   // Pick first candidate weighted by score
   const c1Weights = topCandidates.map((c) => c.score);
-  const playerA = weightedPick(topCandidates, c1Weights).player;
+  const playerA = weightedPick(topCandidates, c1Weights, random).player;
 
   // Remaining candidates excluding playerA
   const subPool = topCandidates.filter((c) => c.player._id !== playerA._id);
   const c2Weights = subPool.map((c) => c.score);
-  const playerB = weightedPick(subPool, c2Weights).player;
+  const playerB = weightedPick(subPool, c2Weights, random).player;
 
   const rankA = tierRank(playerA.tier); // lower number = higher tier
   const rankB = tierRank(playerB.tier);
@@ -291,7 +266,7 @@ function selectSmartPair(
   let sub: PoolPlayer;
 
   // Media Agency Dynamic Pairing Decision Roll
-  const roll = Math.random();
+  const roll = random();
 
   if (roll < 0.3) {
     // 🌟 JACKPOT_SUB_SURPRISE (~30%): Sub gets the higher tier player!
@@ -305,7 +280,7 @@ function selectSmartPair(
       main = playerA;
     } else {
       // Equal tier: randomly assign
-      if (Math.random() < 0.5) {
+      if (random() < 0.5) {
         main = playerA;
         sub = playerB;
       } else {
@@ -322,12 +297,12 @@ function selectSmartPair(
     );
 
     if (sameTierCandidate) {
-      const isAFirst = Math.random() < 0.5;
+      const isAFirst = random() < 0.5;
       main = isAFirst ? playerA : sameTierCandidate;
       sub = isAFirst ? sameTierCandidate : playerA;
     } else {
       // 50/50 assignment of selected pair
-      const isAFirst = Math.random() < 0.5;
+      const isAFirst = random() < 0.5;
       main = isAFirst ? playerA : playerB;
       sub = isAFirst ? playerB : playerA;
     }
@@ -346,7 +321,7 @@ function selectSmartPair(
   }
 
   // 15% Random Chaos Flip for maximum surprise factor among friends
-  if (Math.random() < 0.15) {
+  if (random() < 0.15) {
     const temp = main;
     main = sub;
     sub = temp;
@@ -397,17 +372,152 @@ function assignMysteryRounds(rounds: DraftRound[], pool: PoolPlayer[]): DraftRou
   }));
 }
 
+export function getPRNG(seedStr: string): () => number {
+  let hash = 0;
+  for (let i = 0; i < seedStr.length; i++) {
+    hash = Math.imul(31, hash) + seedStr.charCodeAt(i) | 0;
+  }
+  let seed = hash >>> 0;
+  return function() {
+    seed = (seed * 9301 + 49297) % 233280;
+    return seed / 233280;
+  };
+}
+
+function getCursor(seed: string, roundNumber: number, position: string, poolMode: string): number {
+  const seedStr = `${seed}_${roundNumber}_${position}_${poolMode}`;
+  let hash = 0;
+  for (let i = 0; i < seedStr.length; i++) {
+    hash = Math.imul(31, hash) + seedStr.charCodeAt(i) | 0;
+  }
+  return (hash >>> 0) / 4294967296;
+}
+
+async function fetchCandidatesForMode(
+  ctx: GenericMutationCtx<DataModel>,
+  poolMode: PlayerPoolMode,
+  formationPositions: Position[],
+  seed: string,
+  random: () => number,
+): Promise<{ players: Doc<'players'>[]; clubById: Map<Id<'clubs'>, Doc<'clubs'>> }> {
+  let players: Doc<'players'>[] = [];
+
+  // Query directly by required formation positions using a random cursor
+  const posQueries = formationPositions.map(async (pos, idx) => {
+    const roundNumber = idx + 1;
+    const cursor = getCursor(seed, roundNumber, pos, poolMode);
+    
+    let slice = await ctx.db.query('players').withIndex('by_position_random', (q) => q.eq('position', pos).gte('randomKey', cursor)).take(15);
+    
+    if (slice.length < 15) {
+      const wrap = await ctx.db.query('players').withIndex('by_position_random', (q) => q.eq('position', pos)).take(15 - slice.length);
+      slice = [...slice, ...wrap];
+    }
+    
+    // Shuffle locally
+    return slice.sort(() => random() - 0.5);
+  });
+  
+  const posBatches = await Promise.all(posQueries);
+  let posCandidates = posBatches.flat();
+
+  if (poolMode === 'ICONS') {
+    posCandidates = posCandidates.filter((p) => p.isLegend || p.tier === 'ICON' || p.tier === 'HERO');
+    if (posCandidates.length < formationPositions.length * 2) {
+      const iconCursor = getCursor(seed, 999, 'ICON', poolMode);
+      const heroCursor = getCursor(seed, 998, 'HERO', poolMode);
+      
+      const [iconSlice, heroSlice] = await Promise.all([
+        ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'ICON').gte('randomKey', iconCursor)).take(35),
+        ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'HERO').gte('randomKey', heroCursor)).take(35),
+      ]);
+      
+      let icons = iconSlice;
+      if (icons.length < 35) {
+        const wrap = await ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'ICON')).take(35 - icons.length);
+        icons = [...icons, ...wrap];
+      }
+      
+      let heroes = heroSlice;
+      if (heroes.length < 35) {
+        const wrap = await ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'HERO')).take(35 - heroes.length);
+        heroes = [...heroes, ...wrap];
+      }
+      
+      posCandidates = [...posCandidates, ...icons.sort(() => random() - 0.5), ...heroes.sort(() => random() - 0.5)];
+    }
+  } else if (poolMode === 'ACTIVE') {
+    posCandidates = posCandidates.filter((p) => !p.isLegend && p.tier !== 'ICON' && p.tier !== 'HERO');
+  } else if (poolMode === 'EPL') {
+    const eplClubs = await ctx.db
+      .query('clubs')
+      .withIndex('by_league', (q) => q.eq('league', 'Premier League'))
+      .take(25);
+    const clubIdsSet = new Set(eplClubs.map((c) => String(c._id)));
+    posCandidates = posCandidates.filter(
+      (p) => clubIdsSet.has(String(p.clubId)) && !p.isLegend && p.tier !== 'ICON' && p.tier !== 'HERO'
+    );
+  } else if (poolMode === 'EGYPT') {
+    const egyptClubs = await ctx.db
+      .query('clubs')
+      .withIndex('by_league', (q) => q.eq('league', 'Egyptian Premier League'))
+      .take(25);
+    const clubIdsSet = new Set(egyptClubs.map((c) => String(c._id)));
+    posCandidates = posCandidates.filter(
+      (p) => clubIdsSet.has(String(p.clubId)) && !p.isLegend && p.tier !== 'ICON' && p.tier !== 'HERO'
+    );
+  }
+
+  // Fallback cushion if any position needs padding
+  if (posCandidates.length < formationPositions.length * 2) {
+    const cushionCursor = getCursor(seed, 997, 'GOLD', poolMode);
+    let cushion = await ctx.db
+      .query('players')
+      .withIndex('by_tier_random', (q) => q.eq('tier', 'GOLD').gte('randomKey', cushionCursor))
+      .take(25);
+      
+    if (cushion.length < 25) {
+      const wrap = await ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'GOLD')).take(25 - cushion.length);
+      cushion = [...cushion, ...wrap];
+    }
+    
+    posCandidates = [...posCandidates, ...cushion.sort(() => random() - 0.5)];
+  }
+
+  players = posCandidates;
+
+  // Deduplicate candidate pool
+  const pMap = new Map<string, Doc<'players'>>();
+  for (const p of players) {
+    pMap.set(String(p._id), p);
+  }
+  const uniquePlayers = Array.from(pMap.values());
+
+  // Batch hydrate only the unique clubs needed for these candidate players
+  const clubIds = Array.from(new Set(uniquePlayers.map((p) => p.clubId).filter(Boolean))) as Id<'clubs'>[];
+  const clubDocs = await Promise.all(clubIds.map((id) => ctx.db.get(id)));
+
+  const clubById = new Map<Id<'clubs'>, Doc<'clubs'>>();
+  for (const c of clubDocs) {
+    if (c) clubById.set(c._id, c);
+  }
+
+  return { players: uniquePlayers, clubById };
+}
+
 // ── Main Entry Point ───────────────────────────────────────
 export async function generateDraftRounds(
   ctx: GenericMutationCtx<DataModel>,
   formation: string,
   matchSize: MatchSize,
   poolMode: PlayerPoolMode,
+  seed: string,
 ): Promise<DraftRound[]> {
+  const random = getPRNG(seed);
   const formationPositions = getFormationPositions(formation, matchSize);
-  const allPlayers = await ctx.db.query('players').collect();
-  const clubs = await ctx.db.query('clubs').collect();
-  const clubById = new Map(clubs.map((c) => [c._id, c]));
+  const { players: allPlayers, clubById } = await fetchCandidatesForMode(ctx, poolMode, formationPositions, seed, random);
+
+
 
   // Filter player pool by mode
   const filtered: PoolPlayer[] = allPlayers
@@ -425,11 +535,10 @@ export async function generateDraftRounds(
           player.tier !== 'HERO'
         );
       }
-      if (poolMode === 'TOP_TEAMS') {
-        // Active top-club players only — no legends/icons
-        const clubName = clubById.get(player.clubId)?.name ?? '';
+      if (poolMode === 'EGYPT') {
+        // Active Egyptian League players only — no legends/icons
         return (
-          TOP_CLUB_NAMES.has(clubName) &&
+          clubById.get(player.clubId)?.league === 'Egyptian Premier League' &&
           !player.isLegend &&
           player.tier !== 'ICON' &&
           player.tier !== 'HERO'
@@ -488,7 +597,7 @@ export async function generateDraftRounds(
   const rawRounds: Array<DraftRound & { sortIndex: number }> = [];
   for (const { position, origIdx } of positionsByScarcity) {
     const scoringCtx: ScoringContext = { usedClubs, usedNations, tierBudget };
-    const [main, sub] = selectSmartPair(pool, used, position, scoringCtx);
+    const [main, sub] = selectSmartPair(pool, used, position, scoringCtx, random);
 
     used.add(String(main._id));
     used.add(String(sub._id));

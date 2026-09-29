@@ -138,16 +138,16 @@ export function RankCardList({
   };
 
   return (
-    <div className="w-full max-w-md mx-auto select-none flex flex-col gap-2 sm:gap-3 py-1">
+    <div className="w-full max-w-md mx-auto select-none flex flex-col gap-1.5 sm:gap-2 py-0.5">
       {/* ── QUESTION HEADING & DIRECTION PILL ─────────────────────── */}
-      <div className="text-center shrink-0 space-y-1.5 px-2">
+      <div className="text-center shrink-0 space-y-1 px-2">
         <h1 className="text-base sm:text-lg font-bold leading-snug tracking-tight text-white font-display">
           {questionTitle}
         </h1>
 
         {/* Status Chip & Tap Guide */}
         <div className="flex flex-wrap items-center justify-center gap-1.5">
-          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900/90 px-3 py-0.5 text-xs font-semibold text-lime shadow-sm backdrop-blur-md">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900/90 px-3 py-0.5 text-xs font-semibold text-gold shadow-sm backdrop-blur-md">
             <AppIcon
               icon={direction === 'desc' ? SortDescending : SortAscending}
               size={13}
@@ -157,7 +157,7 @@ export function RankCardList({
           </div>
 
           {selectedKey && !hasSubmitted && (
-            <div className="animate-fade-in inline-flex items-center gap-1 rounded-full border border-amber-400/40 bg-amber-400/15 px-2.5 py-0.5 text-[11px] font-bold text-amber-300">
+            <div className="animate-fade-in inline-flex items-center gap-1 rounded-full border border-gold/40 bg-gold/15 px-2.5 py-0.5 text-[11px] font-bold text-gold">
               <AppIcon icon={ArrowsDownUp} size={12} weight="bold" />
               <span>{lang === 'ar' ? 'اضغط لاعب آخر للتبديل' : 'Tap another card to swap'}</span>
             </div>
@@ -175,7 +175,7 @@ export function RankCardList({
           axis="y"
           values={currentOrder}
           onReorder={onOrderChange}
-          className="flex flex-col gap-2 w-full touch-pan-y"
+          className="flex flex-col gap-1.5 w-full touch-pan-y"
           style={{ touchAction: 'pan-y' }}
         >
           {currentOrder.map((key, index) => {
@@ -200,13 +200,13 @@ export function RankCardList({
                 }}
                 className={`
                   relative flex items-center justify-between
-                  px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl border w-full
+                  px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl border w-full
                   transition-all select-none cursor-grab active:cursor-grabbing backdrop-blur-xl
                   ${
                     isSelected
-                      ? 'border-lime bg-slate-900 ring-2 ring-lime/40 shadow-[0_0_24px_rgba(142,224,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.2)] scale-[1.01]'
+                      ? 'border-gold bg-slate-900 ring-2 ring-gold/40 shadow-[0_0_24px_rgba(229,184,66,0.3),inset_0_1px_0_0_rgba(255,255,255,0.2)] scale-[1.01]'
                       : isTop
-                        ? 'border-lime/45 bg-slate-900/95 shadow-[0_4px_16px_rgba(142,224,0,0.15),inset_0_1px_0_0_rgba(255,255,255,0.12)]'
+                        ? 'border-gold/45 bg-slate-900/95 shadow-[0_4px_16px_rgba(229,184,66,0.15),inset_0_1px_0_0_rgba(255,255,255,0.12)]'
                         : 'border-white/[0.12] bg-slate-900/85 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)] hover:border-white/20'
                   }
                 `}
@@ -222,7 +222,7 @@ export function RankCardList({
                     flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-xl text-xs font-bold font-display-number transition-colors pointer-events-none shadow-sm
                     ${
                       isTop
-                        ? 'bg-lime text-slate-950 shadow-[0_2px_8px_rgba(142,224,0,0.3)]'
+                        ? 'bg-gold text-slate-950 shadow-[0_2px_8px_rgba(229,184,66,0.3)]'
                         : 'bg-slate-800/90 text-slate-300 border border-white/5'
                     }
                   `}
@@ -242,7 +242,7 @@ export function RankCardList({
                       {mainName}
                     </span>
                     {tag && (
-                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-lime font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
+                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-gold font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
                         {tag}
                       </span>
                     )}
@@ -295,7 +295,7 @@ export function RankCardList({
           type="button"
           onClick={handleSubmit}
           disabled={isSubmitting || hasSubmitted}
-          className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-lime shadow-[0_8px_20px_rgba(142,224,0,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
+          className="btn-haptic flex h-10 sm:h-11 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-gold shadow-[0_8px_20px_rgba(229,184,66,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
         >
           {isSubmitting ? (
             <CircleNotch className="animate-spin text-slate-950" size={18} />

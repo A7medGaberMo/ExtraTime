@@ -206,6 +206,7 @@ export const upsertPlayersBatch = mutation({
         imageUrl: p.imageUrl,
         kitNumber: p.kitNumber,
         rating: p.rating ?? getDefaultRatingForTier(p.tier as Tier, p.name),
+        randomKey: Math.random(),
       };
 
       if (existing) {

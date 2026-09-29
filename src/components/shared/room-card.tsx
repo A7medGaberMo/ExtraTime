@@ -17,12 +17,12 @@ export function RoomCard({ room, className, ...props }: RoomCardProps) {
   return (
     <div
       className={cn(
-        'group border-white/10 bg-slate-950/80 hover:border-lime/40 hover:shadow-lime/5 relative cursor-pointer overflow-hidden rounded-2xl border p-5 transition-all duration-300 hover:bg-slate-900 hover:shadow-lg select-none',
+        'group border-white/10 bg-slate-950/80 hover:border-gold/40 hover:shadow-gold/5 relative cursor-pointer overflow-hidden rounded-2xl border p-5 transition-all duration-300 hover:bg-slate-900 hover:shadow-lg select-none',
         className,
       )}
       {...props}
     >
-      <div className="from-lime/0 absolute inset-0 bg-gradient-to-br to-transparent opacity-0 transition-opacity group-hover:opacity-5" />
+      <div className="from-gold/0 absolute inset-0 bg-gradient-to-br to-transparent opacity-0 transition-opacity group-hover:opacity-5" />
 
       <div className="relative mb-3 flex items-start justify-between">
         <div>
@@ -36,7 +36,7 @@ export function RoomCard({ room, className, ...props }: RoomCardProps) {
           className={cn(
             'inline-flex items-center rounded-full px-2.5 py-0.5 text-[10px] font-black tracking-wider uppercase',
             statusConfig.color,
-            room.status === 'waiting' && 'bg-lime/10',
+            room.status === 'waiting' && 'bg-gold/10',
             room.status === 'in_progress' && 'bg-amber-500/10',
             room.status === 'completed' && 'bg-slate-500/10',
           )}

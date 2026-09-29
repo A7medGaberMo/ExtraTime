@@ -304,14 +304,14 @@ export function FifaPackOpening({
               <button
                 type="button"
                 onClick={handleSafeClose}
-                className="btn-haptic group flex items-center gap-1 sm:gap-2 rounded-full border border-white/15 bg-slate-900/90 px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-xs font-semibold text-white shadow-[0_8px_20px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl hover:border-lime/50 hover:bg-slate-800 transition-all cursor-pointer"
+                className="btn-haptic group flex items-center gap-1 sm:gap-2 rounded-full border border-white/15 bg-slate-900/90 px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-xs font-semibold text-white shadow-[0_8px_20px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl hover:border-gold/50 hover:bg-slate-800 transition-all cursor-pointer"
                 title={`${t('packs.closeAndBack')} (ESC)`}
               >
                 <AppIcon
                   icon={X}
                   size={13}
                   weight="bold"
-                  className="text-steel group-hover:text-lime transition-colors"
+                  className="text-steel group-hover:text-gold transition-colors"
                 />
                 <span className="font-stats font-bold text-[11px] sm:text-xs tracking-tight">
                   <span className="inline sm:hidden">{lang === 'ar' ? 'إغلاق' : 'Back'}</span>
@@ -349,9 +349,9 @@ export function FifaPackOpening({
                       key={`pip-${idx}`}
                       className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
                         idx === currentCardIndex
-                          ? 'w-3.5 sm:w-5 bg-lime shadow-[0_0_12px_rgba(142,224,0,0.9)]'
+                          ? 'w-3.5 sm:w-5 bg-gold shadow-[0_0_12px_rgba(229,184,66,0.9)]'
                           : idx < currentCardIndex
-                            ? 'w-1.5 sm:w-2 bg-lime/60'
+                            ? 'w-1.5 sm:w-2 bg-gold/60'
                             : 'w-1.5 sm:w-2 bg-white/20'
                       }`}
                     />
@@ -361,7 +361,7 @@ export function FifaPackOpening({
             ) : (
               <div className="flex items-center gap-1.5 sm:gap-2 rounded-full border border-white/10 bg-slate-900/80 px-2.5 sm:px-3.5 py-1 sm:py-1.5 backdrop-blur-xl shadow-sm">
                 <ETLogo variant="card-badge" size={13} />
-                <span className="font-stats text-[10.5px] sm:text-xs font-bold tracking-wider text-lime uppercase">
+                <span className="font-stats text-[10.5px] sm:text-xs font-bold tracking-wider text-gold uppercase">
                   {mainStage === 'UNBOXING' ? t('packs.openingPack') : '5/5 SQUAD'}
                 </span>
               </div>
@@ -373,14 +373,14 @@ export function FifaPackOpening({
               <button
                 type="button"
                 onClick={handleToggleSound}
-                className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/12 bg-slate-900/90 text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer shadow-sm"
+                className="btn-haptic flex h-8 w-8 items-center justify-center rounded-full border border-white/12 bg-slate-900/90 text-steel hover:border-gold/40 hover:text-white transition-all cursor-pointer shadow-sm"
                 title={muted ? t('common.soundMuted') : t('common.soundOn')}
               >
                 <AppIcon
                   icon={muted ? SpeakerSimpleSlash : SpeakerHigh}
                   size={13}
                   weight="bold"
-                  className={muted ? 'text-rose-400' : 'text-lime'}
+                  className={muted ? 'text-rose-400' : 'text-gold'}
                 />
               </button>
 
@@ -388,7 +388,7 @@ export function FifaPackOpening({
               <button
                 type="button"
                 onClick={toggleLang}
-                className="btn-haptic flex h-7.5 sm:h-8 items-center gap-1 rounded-full px-2 sm:px-2.5 border border-white/12 bg-slate-900/90 text-[10px] sm:text-[11px] font-bold text-steel hover:border-lime/40 hover:text-white transition-all cursor-pointer font-stats shadow-sm"
+                className="btn-haptic flex h-8 items-center gap-1 rounded-full px-2.5 border border-white/12 bg-slate-900/90 text-[10px] sm:text-[11px] font-bold text-steel hover:border-gold/40 hover:text-white transition-all cursor-pointer font-stats shadow-sm"
                 title={t('common.language')}
               >
                 <AppIcon icon={Translate} size={12} weight="bold" />
@@ -400,7 +400,7 @@ export function FifaPackOpening({
                 <button
                   type="button"
                   onClick={handleInstantWalkout}
-                  className="btn-haptic flex items-center gap-1 rounded-full border border-white/15 bg-white/[0.07] px-2 sm:px-3 py-1 sm:py-1.5 text-[10.5px] sm:text-xs font-semibold text-steel hover:text-white hover:border-lime/40 hover:bg-white/[0.12] transition-all cursor-pointer"
+                  className="btn-haptic flex items-center gap-1 rounded-full border border-white/15 bg-white/[0.07] px-2 sm:px-3 py-1 sm:py-1.5 text-[10.5px] sm:text-xs font-semibold text-steel hover:text-white hover:border-gold/40 hover:bg-white/[0.12] transition-all cursor-pointer"
                 >
                   <span>{t('packs.skip')}</span>
                   <AppIcon icon={CaretRight} size={11} weight="bold" />
@@ -412,7 +412,7 @@ export function FifaPackOpening({
                 <button
                   type="button"
                   onClick={handleRevealAllOverview}
-                  className="btn-haptic flex items-center gap-1 sm:gap-1.5 rounded-full border border-lime/40 bg-lime/15 px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-[10.5px] sm:text-xs font-bold text-lime shadow-[0_0_16px_rgba(142,224,0,0.25)] hover:bg-lime/25 transition-all cursor-pointer"
+                  className="btn-haptic flex items-center gap-1 sm:gap-1.5 rounded-full border border-gold/40 bg-gold/15 px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-[10.5px] sm:text-xs font-bold text-gold shadow-[0_0_16px_rgba(229,184,66,0.25)] hover:bg-gold/25 transition-all cursor-pointer"
                   title="Reveal All 5 Cards"
                 >
                   <AppIcon icon={SquaresFour} size={13} weight="bold" />
@@ -511,7 +511,7 @@ export function FifaPackOpening({
                 </div>
 
                 <div className="w-full border-t border-dashed border-white/30 pt-1.5 sm:pt-2 text-center">
-                  <span className="font-stats text-[9px] sm:text-[9.5px] font-bold tracking-widest text-lime uppercase animate-bounce inline-block">
+                  <span className="font-stats text-[9px] sm:text-[9.5px] font-bold tracking-widest text-gold uppercase animate-bounce inline-block">
                     {t('packs.openingPack')}
                   </span>
                 </div>
@@ -536,7 +536,7 @@ export function FifaPackOpening({
                   onClick={handleInstantWalkout}
                 >
                   <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold tracking-[0.2em] text-steel uppercase font-stats">
-                    <AppIcon icon={Globe} size={13} weight="bold" className="text-lime" />
+                    <AppIcon icon={Globe} size={13} weight="bold" className="text-gold" />
                     <span>{t('packs.nation')}</span>
                   </div>
 
@@ -617,7 +617,7 @@ export function FifaPackOpening({
                 >
                   <div className="flex items-center gap-1.5 sm:gap-2">
                     <CountryFlagBadge nationName={currentCard.nation} className="h-3.5 w-5 sm:h-4 sm:w-6 rounded-xs" />
-                    <span className="text-[10px] sm:text-[11px] font-bold tracking-widest text-lime uppercase font-stats">
+                    <span className="text-[10px] sm:text-[11px] font-bold tracking-widest text-gold uppercase font-stats">
                       {currentCard.position.split('/')[0]} · {t('packs.club')}
                     </span>
                   </div>
@@ -699,7 +699,7 @@ export function FifaPackOpening({
                       transition={{ delay: 0.25 }}
                       type="button"
                       onClick={handleProceedNext}
-                      className="btn-haptic flex items-center gap-1.5 sm:gap-2 rounded-2xl bg-lime px-4 sm:px-6 py-2 sm:py-2.5 text-xs font-bold tracking-widest text-slate-950 uppercase shadow-[0_10px_25px_rgba(142,224,0,0.35)] hover:bg-vivid transition-all cursor-pointer"
+                      className="btn-haptic flex items-center gap-1.5 sm:gap-2 rounded-2xl bg-gold px-4 sm:px-6 py-2 sm:py-2.5 text-xs font-bold tracking-widest text-slate-950 uppercase shadow-[0_10px_25px_rgba(229,184,66,0.35)] hover:brightness-110 transition-all cursor-pointer"
                     >
                       <span>
                         {currentCardIndex < orderedCards.length - 1
@@ -731,7 +731,7 @@ export function FifaPackOpening({
             >
               {/* Header Title */}
               <div className="flex items-center gap-2">
-                <span className="text-lime text-xs sm:text-sm font-bold tracking-widest uppercase font-stats">
+                <span className="text-gold text-xs sm:text-sm font-bold tracking-widest uppercase font-stats">
                   {packDisplayName} · 5 {lang === 'ar' ? 'بطاقات' : 'CARDS'}
                 </span>
               </div>
@@ -777,7 +777,7 @@ export function FifaPackOpening({
                     setCurrentCardIndex(0);
                     setMainStage('UNBOXING');
                   }}
-                  className="btn-haptic flex items-center gap-1.5 sm:gap-2 rounded-2xl bg-lime px-4 sm:px-6 py-2 sm:py-2.5 text-xs font-bold tracking-widest text-slate-950 uppercase shadow-lg hover:bg-vivid transition-all cursor-pointer"
+                  className="btn-haptic flex items-center gap-1.5 sm:gap-2 rounded-2xl bg-gold px-4 sm:px-6 py-2 sm:py-2.5 text-xs font-bold tracking-widest text-slate-950 uppercase shadow-lg hover:brightness-110 transition-all cursor-pointer"
                 >
                   <AppIcon icon={ArrowCounterClockwise} size={14} weight="bold" />
                   <span>{t('packs.again')}</span>

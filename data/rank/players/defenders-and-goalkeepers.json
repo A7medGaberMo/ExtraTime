@@ -2033,5 +2033,231 @@
       "en": "Defenders with a deadly eye for goal from open play and set-pieces",
       "ar": "مدافعون امتلكوا حساً تهديفياً عالياً في البريميرليج"
     }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legendary defenders by all-time senior international caps earned",
+      "ar": "رتّب هؤلاء المدافعين الأساطير الخمسة حسب عدد المباريات الدولية الرسمية (المشاركات)"
+    },
+    "subtitle": {
+      "en": "Most-capped defenders in international football history",
+      "ar": "أكثر المدافعين خوضاً للمباريات الدولية عبر التاريخ"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "caps_def_ramos",
+        "name": {
+          "en": "Sergio Ramos",
+          "ar": "سيرخيو راموس"
+        },
+        "subText": {
+          "en": "Spain (2010 World Cup & 2x EURO)",
+          "ar": "إسبانيا (بطل العالم وبطل أوروبا مرتين)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sergio_Ramos_2018.jpg/330px-Sergio_Ramos_2018.jpg",
+          "fallbackText": "SR4"
+        },
+        "stat": {
+          "en": "180 Caps",
+          "ar": "180 مباراة"
+        }
+      },
+      {
+        "answerKey": "caps_def_godin",
+        "name": {
+          "en": "Diego Godín",
+          "ar": "دييغو غودين"
+        },
+        "subText": {
+          "en": "Uruguay",
+          "ar": "أوروغواي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Diego_God%C3%ADn_2018.jpg/330px-Diego_God%C3%ADn_2018.jpg",
+          "fallbackText": "DG2"
+        },
+        "stat": {
+          "en": "161 Caps",
+          "ar": "161 مباراة"
+        }
+      },
+      {
+        "answerKey": "caps_def_cafu",
+        "name": {
+          "en": "Cafu",
+          "ar": "كافو"
+        },
+        "subText": {
+          "en": "Brazil (2x World Champion)",
+          "ar": "البرازيل (بطل العالم مرتين)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cafu_2017.jpg/330px-Cafu_2017.jpg",
+          "fallbackText": "CAF"
+        },
+        "stat": {
+          "en": "142 Caps",
+          "ar": "142 مباراة"
+        }
+      },
+      {
+        "answerKey": "caps_def_cannavaro",
+        "name": {
+          "en": "Fabio Cannavaro",
+          "ar": "فابيو كانافارو"
+        },
+        "subText": {
+          "en": "Italy (2006 World Champion)",
+          "ar": "إيطاليا (بطل العالم 2006)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Fabio_Cannavaro_2015.jpg/330px-Fabio_Cannavaro_2015.jpg",
+          "fallbackText": "FC5"
+        },
+        "stat": {
+          "en": "136 Caps",
+          "ar": "136 مباراة"
+        }
+      },
+      {
+        "answerKey": "caps_def_maldini",
+        "name": {
+          "en": "Paolo Maldini",
+          "ar": "باولو مالديني"
+        },
+        "subText": {
+          "en": "Italy",
+          "ar": "إيطاليا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Paolo_Maldini_2012.jpg/330px-Paolo_Maldini_2012.jpg",
+          "fallbackText": "PM3"
+        },
+        "stat": {
+          "en": "126 Caps",
+          "ar": "126 مباراة"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 iconic defenders by career official goals scored",
+      "ar": "رتّب هؤلاء المدافعين الأساطير الخمسة حسب إجمالي الأهداف الرسمية في مسيرتهم"
+    },
+    "subtitle": {
+      "en": "Highest scoring defenders in world football history",
+      "ar": "أكثر المدافعين تسجيلاً للأهداف في تاريخ كرة القدم"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "goal_def_koeman",
+        "name": {
+          "en": "Ronald Koeman",
+          "ar": "رونالد كومان"
+        },
+        "subText": {
+          "en": "Ajax, PSV & Barcelona (All-time record)",
+          "ar": "أياكس، أيندهوفن وبرشلونة (رقم قياسي تاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ronald_Koeman_2019.jpg/330px-Ronald_Koeman_2019.jpg",
+          "fallbackText": "RK4"
+        },
+        "stat": {
+          "en": "253 Goals",
+          "ar": "253 هدفاً"
+        }
+      },
+      {
+        "answerKey": "goal_def_passarella",
+        "name": {
+          "en": "Daniel Passarella",
+          "ar": "دانييل باساريلا"
+        },
+        "subText": {
+          "en": "River Plate, Fiorentina & Argentina",
+          "ar": "ريفر بليت، فيورنتينا والأرجنتين"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Daniel_Passarella_1978.jpg/330px-Daniel_Passarella_1978.jpg",
+          "fallbackText": "DP"
+        },
+        "stat": {
+          "en": "175 Goals",
+          "ar": "175 هدفاً"
+        }
+      },
+      {
+        "answerKey": "goal_def_hierro",
+        "name": {
+          "en": "Fernando Hierro",
+          "ar": "فيرناندو هييرو"
+        },
+        "subText": {
+          "en": "Real Madrid & Spain",
+          "ar": "ريال مدريد وإسبانيا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Fernando_Hierro_2018.jpg/330px-Fernando_Hierro_2018.jpg",
+          "fallbackText": "FH4"
+        },
+        "stat": {
+          "en": "163 Goals",
+          "ar": "163 هدفاً"
+        }
+      },
+      {
+        "answerKey": "goal_def_blanc",
+        "name": {
+          "en": "Laurent Blanc",
+          "ar": "لوران بلان"
+        },
+        "subText": {
+          "en": "Montpellier, Inter, Man United & France",
+          "ar": "مونبلييه، إنتر، مانشستر يونايتد وفرنسا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Laurent_Blanc_2015.jpg/330px-Laurent_Blanc_2015.jpg",
+          "fallbackText": "LB"
+        },
+        "stat": {
+          "en": "153 Goals",
+          "ar": "153 هدفاً"
+        }
+      },
+      {
+        "answerKey": "goal_def_ramos",
+        "name": {
+          "en": "Sergio Ramos",
+          "ar": "سيرخيو راموس"
+        },
+        "subText": {
+          "en": "Sevilla, Real Madrid, PSG & Spain",
+          "ar": "إشبيلية، ريال مدريد، باريس وإسبانيا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sergio_Ramos_2018.jpg/330px-Sergio_Ramos_2018.jpg",
+          "fallbackText": "SR4"
+        },
+        "stat": {
+          "en": "140 Goals",
+          "ar": "140 هدفاً"
+        }
+      }
+    ]
   }
 ]

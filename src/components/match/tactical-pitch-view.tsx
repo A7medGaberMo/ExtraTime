@@ -60,7 +60,7 @@ export function TacticalPitchView({
   guestName,
   viewerIsHost = true,
   defaultTab,
-  hostColor = '#95E810',
+  hostColor = '#E5B842',
   guestColor = '#F43F5E',
 }: TacticalPitchViewProps) {
   const initialTab = defaultTab ?? (viewerIsHost ? 'host' : 'guest');
@@ -78,7 +78,7 @@ export function TacticalPitchView({
           onClick={() => setTab('host')}
           className={`flex-1 rounded-lg py-2 px-2 text-[10px] sm:text-xs font-black tracking-wider uppercase transition-all duration-200 cursor-pointer font-stats ${
             tab === 'host'
-              ? 'bg-lime text-slate-950 shadow-md shadow-lime/20 font-bold'
+              ? 'bg-gold text-slate-950 shadow-md shadow-gold/25 font-bold'
               : 'text-steel hover:text-white'
           }`}
         >

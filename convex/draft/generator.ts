@@ -62,7 +62,7 @@ export function getPositionDraftPriority(pos: string): number {
   return 11;
 }
 
-export function getNextNaturalDraftSlot<T extends { position: string; playerId?: any }>(
+export function getNextNaturalDraftSlot<T extends { position: string; playerId?: unknown }>(
   starters: T[],
 ): T | undefined {
   const unfilled = starters.filter((s) => !s.playerId);
@@ -124,7 +124,7 @@ export function getPlayerCandidateWeight(player: Doc<'players'>): number {
 /**
  * Samples `count` distinct items from `pool` without replacement, weighted by `weightFn`.
  */
-export function pickWeightedUnique<T extends { _id: any }>(
+export function pickWeightedUnique<T extends { _id: unknown }>(
   pool: T[],
   count: number,
   weightFn: (item: T) => number,
@@ -252,19 +252,77 @@ export async function generateCandidatesForSlot(
   targetPosition: string, // "CAPTAIN" or formation slot like "GK", "CB", "ST"
   usedPlayerIds: Set<string>,
 ): Promise<Id<'players'>[]> {
-  const [allPlayers, allClubs, allNations] = await Promise.all([
-    ctx.db.query('players').collect(),
-    ctx.db.query('clubs').collect(),
-    ctx.db.query('nations').collect(),
+  let rawCandidates: Doc<'players'>[] = [];
+
+  if (slotIndex === 0 || targetPosition === 'CAPTAIN') {
+    // Captain: Sample ICON, HERO, MASTER, ULTIMATE players directly via tier indexes
+    const [icons, heroes, ultimates, masters] = await Promise.all([
+      ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ICON')).take(30),
+      ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'HERO')).take(30),
+      ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ULTIMATE')).take(20),
+      ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'MASTER')).take(20),
+    ]);
+    rawCandidates = [...icons, ...heroes, ...ultimates, ...masters];
+  } else if (slotIndex >= 11 || targetPosition === 'BENCH') {
+    // Bench: Sample Gold, Elite, Master
+    const [golds, elites, masters] = await Promise.all([
+      ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'GOLD')).take(40),
+      ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'ELITE')).take(30),
+      ctx.db.query('players').withIndex('by_tier', (q) => q.eq('tier', 'MASTER')).take(20),
+    ]);
+    rawCandidates = [...golds, ...elites, ...masters];
+  } else {
+    // Starters: Fetch players for the target position and common variants
+    const target = targetPosition.trim().toUpperCase();
+    const variants = target === 'GK' ? ['GK'] : [target, ...(target.includes('/') ? target.split('/') : [])];
+
+    const posQueries = variants.map((pos) =>
+      ctx.db.query('players').withIndex('by_position', (q) => q.eq('position', pos)).take(35)
+    );
+    const posResults = await Promise.all(posQueries);
+    rawCandidates = posResults.flat();
+
+    // Fallback if positional index yields too few candidates
+    if (rawCandidates.length < 15) {
+      const fallbackGolds = await ctx.db
+        .query('players')
+        .withIndex('by_tier', (q) => q.eq('tier', 'GOLD'))
+        .take(30);
+      rawCandidates = [...rawCandidates, ...fallbackGolds];
+    }
+  }
+
+  // Deduplicate candidate pool
+  const candidateMap = new Map<string, Doc<'players'>>();
+  for (const c of rawCandidates) {
+    candidateMap.set(String(c._id), c);
+  }
+  const uniqueCandidates = Array.from(candidateMap.values());
+
+  // Batch hydrate only the unique clubs & nations required for these candidates
+  const candidateClubIds = new Set<Id<'clubs'>>();
+  const candidateNationIds = new Set<Id<'nations'>>();
+  for (const p of uniqueCandidates) {
+    if (p.clubId) candidateClubIds.add(p.clubId);
+    if (p.nationId) candidateNationIds.add(p.nationId);
+  }
+
+  const [clubDocs, nationDocs] = await Promise.all([
+    Promise.all([...candidateClubIds].map((id) => ctx.db.get(id))),
+    Promise.all([...candidateNationIds].map((id) => ctx.db.get(id))),
   ]);
 
   const clubMap = new Map<string, Doc<'clubs'>>();
-  for (const c of allClubs) clubMap.set(String(c._id), c);
+  for (const c of clubDocs) {
+    if (c) clubMap.set(String(c._id), c);
+  }
 
   const nationMap = new Map<string, Doc<'nations'>>();
-  for (const n of allNations) nationMap.set(String(n._id), n);
+  for (const n of nationDocs) {
+    if (n) nationMap.set(String(n._id), n);
+  }
 
-  const unused = allPlayers.filter((p) => !usedPlayerIds.has(String(p._id)));
+  const unused = uniqueCandidates.filter((p) => !usedPlayerIds.has(String(p._id)));
 
   // Strict constraint: Draft suggestions must be at least GOLD (Rating >= 74 / Gold, Elite, Master, Ultimate, Hero, Icon)
   // Silver and Bronze cards are strictly excluded from draft picks
@@ -272,6 +330,7 @@ export async function generateCandidatesForSlot(
     !['SILVER', 'BRONZE'].includes(p.tier) && (p.rating === undefined || p.rating >= 74);
   const eligibleGoldUnused = unused.filter(isGoldOrAbove);
   const activePool = eligibleGoldUnused.length >= 20 ? eligibleGoldUnused : unused;
+
 
   // Slot 0 (Captain): Always ICON / HERO tier players, biased to highest ratings
   if (slotIndex === 0 || targetPosition === 'CAPTAIN') {

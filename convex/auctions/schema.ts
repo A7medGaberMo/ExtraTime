@@ -48,9 +48,10 @@ export const auctionsTable = defineTable({
   host: v.object({
     userId: v.id('guestUsers'),
     budget: v.number(),
-    perk: v.union(v.literal('SCOUT'), v.literal('SPY')),
+    perk: v.union(v.literal('SCOUT'), v.literal('SPY'), v.literal('FREEZE')),
     perkUsed: v.boolean(),
     perkUsedRound: v.optional(v.number()),
+    passesUsed: v.optional(v.number()),
     squad: v.array(
       v.object({
         roundNumber: v.optional(v.number()),
@@ -65,9 +66,10 @@ export const auctionsTable = defineTable({
     v.object({
       userId: v.id('guestUsers'),
       budget: v.number(),
-      perk: v.union(v.literal('SCOUT'), v.literal('SPY')),
+      perk: v.union(v.literal('SCOUT'), v.literal('SPY'), v.literal('FREEZE')),
       perkUsed: v.boolean(),
       perkUsedRound: v.optional(v.number()),
+      passesUsed: v.optional(v.number()),
       squad: v.array(
         v.object({
           roundNumber: v.optional(v.number()),
@@ -89,6 +91,14 @@ export const auctionsTable = defineTable({
   ),
   /** Timestamp by which both sealed bids must be in (30s blind phase). */
   bidDeadline: v.optional(v.number()),
+  /** Freeze effect active for the current round (target user capped at maxBid). */
+  frozenEffect: v.optional(
+    v.object({
+      targetUserId: v.id('guestUsers'),
+      roundNumber: v.number(),
+      maxBid: v.number(),
+    }),
+  ),
   /** Permanent per-round resolution record for reveal overlays. */
   roundHistory: v.optional(v.array(roundHistoryEntryValidator)),
   createdAt: v.number(),

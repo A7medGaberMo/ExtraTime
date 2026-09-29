@@ -15,12 +15,12 @@ import {
   Crosshair,
   Ranking,
   Lightning,
-  DiceFive,
+  Shuffle,
+  Vault,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { PageShell } from '@/components/ui/page-shell';
-import { Panel } from '@/components/ui/panel';
 import { TextInput } from '@/components/ui/text-input';
 import { UserIdentity } from '@/components/ui/user-identity';
 import { StatPill } from '@/components/ui/stat-pill';
@@ -37,10 +37,10 @@ export default function JoinRoomPage() {
   const joinSnipeRoom = useMutation(api.rooms.mutations.join);
   const joinRankDuel = useMutation(api.rank.mutations.joinDuelPrivateRoom);
   const joinDraftRoom = useMutation(api.draft.mutations.joinDraftByCode);
+  const joinBankRoom = useMutation(api.bank.mutations.joinDuelPrivateRoom);
 
   const [nickname, setNickname] = useGuestNickname();
   const [roomCode, setRoomCode] = useState('');
-
   const [loading, setLoading] = useState(false);
 
   const normalizedCode = roomCode
@@ -48,7 +48,6 @@ export default function JoinRoomPage() {
     .slice(0, 6)
     .toUpperCase();
 
-  // Query Snipe, Rank, and Draft rooms by code
   const snipeRoom = useQuery(
     api.rooms.queries.getByCode,
     normalizedCode.length === 6 ? { code: normalizedCode } : 'skip',
@@ -64,24 +63,31 @@ export default function JoinRoomPage() {
     normalizedCode.length === 6 ? { code: normalizedCode } : 'skip',
   );
 
+  const bankRoom = useQuery(
+    api.bank.queries.getByCode,
+    normalizedCode.length === 6 ? { code: normalizedCode } : 'skip',
+  );
+
   const isSnipe = Boolean(snipeRoom && snipeRoom.status === 'waiting' && !snipeRoom.guestId);
   const isRank = Boolean(rankRoom && rankRoom.status === 'waiting' && !rankRoom.isFull);
   const isDraft = Boolean(draftRoom && draftRoom.status === 'waiting' && !draftRoom.isFull);
-  const canJoin = isSnipe || isRank || isDraft;
+  const isBank = Boolean(bankRoom && bankRoom.status === 'waiting' && !bankRoom.isFull);
+  const canJoin = isSnipe || isRank || isDraft || isBank;
 
   const isChecking =
     normalizedCode.length === 6 &&
     snipeRoom === undefined &&
     rankRoom === undefined &&
-    draftRoom === undefined;
+    draftRoom === undefined &&
+    bankRoom === undefined;
 
   const statusIcon =
     normalizedCode.length < 6 ? (
       <AppIcon icon={MagnifyingGlass} size={18} weight="bold" className="text-steel" />
     ) : isChecking ? (
-      <AppIcon icon={CircleNotch} size={18} weight="bold" className="text-lime animate-spin" />
+      <AppIcon icon={CircleNotch} size={18} weight="bold" className="text-gold animate-spin" />
     ) : canJoin ? (
-      <AppIcon icon={CheckCircle} size={18} weight="fill" className={isDraft ? 'text-cyan-400' : 'text-lime'} />
+      <AppIcon icon={CheckCircle} size={18} weight="fill" className="text-emerald-400" />
     ) : (
       <AppIcon icon={XCircle} size={18} weight="fill" className="text-rose-400" />
     );
@@ -96,8 +102,10 @@ export default function JoinRoomPage() {
             ? (lang === 'ar' ? 'تم العثور على ماتش سنايب!' : 'Snipe Match Found!')
             : isRank
               ? (lang === 'ar' ? 'تم العثور على تحدي رتّب 1v1!' : 'Rank 1v1 Duel Found!')
-              : (lang === 'ar' ? 'تم العثور على درافت ديربي 1v1!' : 'Pro Draft 1v1 Duel Found!')
-          : (snipeRoom || rankRoom || draftRoom)
+              : isDraft
+                ? (lang === 'ar' ? 'تم العثور على درافت ديربي 1v1!' : 'Pro Draft 1v1 Duel Found!')
+                : (lang === 'ar' ? 'تم العثور على مواجهة بَنِّك 1v1!' : 'Bank It 1v1 Duel Found!')
+          : snipeRoom || rankRoom || draftRoom || bankRoom
             ? t('joinRoom.roomFull')
             : t('joinRoom.roomNotFound');
 
@@ -145,6 +153,13 @@ export default function JoinRoomPage() {
           code: normalizedCode,
         });
         router.push(`/draft/${result.gameId}`);
+      } else if (isBank && bankRoom) {
+        const result = await joinBankRoom({
+          guestId: validGuestId,
+          sessionToken: validSessionToken,
+          code: normalizedCode,
+        });
+        router.push(`/bank/${result.gameId}`);
       }
     } catch (error: unknown) {
       const err = error as { message?: string };
@@ -158,44 +173,31 @@ export default function JoinRoomPage() {
       title={lang === 'ar' ? 'ادخل ماتش بالكود' : 'Join Match'}
       subtitle={
         lang === 'ar'
-          ? 'ادخل كود الغرفة المكون من 6 رموز لأي لعبة (سنايب، رتّب، أو درافت).'
-          : 'Enter 6-character code for Snipe, Rank, or Draft.'
+          ? 'ادخل كود الغرفة المكون من 6 رموز لأي لعبة (سنايب، رتّب، درافت، أو بَنِّك).'
+          : 'Enter 6-character code for Snipe, Rank, Draft, or Bank It.'
       }
       badge={
-        <div className="inline-flex items-center gap-1.5 rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-xs font-semibold text-lime shadow-[0_0_15px_rgba(149,232,16,0.2)] backdrop-blur-xl">
-          <AppIcon icon={Key} size={14} weight="duotone" />
+        <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold-light shadow-sm backdrop-blur-xl">
+          <AppIcon icon={Key} size={13} weight="fill" className="text-gold" />
           <span className="font-stats tracking-wider uppercase text-[11px] font-bold">
-            {lang === 'ar' ? 'دخول سريع' : 'Direct Join'}
+            {lang === 'ar' ? 'دخول فوري' : 'Direct Room Access'}
           </span>
         </div>
       }
       backUrl="/"
-      maxWidth="xl"
+      maxWidth="md"
     >
       <form onSubmit={handleJoin} className="relative">
-        {/* Ambient Top Glow Mesh */}
-        <div
-          className={`pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 h-[220px] w-[90%] max-w-md rounded-full blur-[90px] opacity-25 transition-colors duration-700 ${
-            canJoin ? (isSnipe ? 'bg-lime' : 'bg-amber-400') : 'bg-lime'
-          }`}
-        />
-
-        <div className="apple-glass-elevated relative z-10 p-5 sm:p-7 space-y-6">
-          {/* Manager Handle Input inside Apple Glass Cell */}
-          <div className="apple-glass-card rounded-2xl p-3.5 sm:p-4 border border-white/10 space-y-3">
-            <div className="text-[10px] font-black tracking-widest uppercase text-steel px-1 font-stats">
+        <div className="luxury-glass-elevated relative z-10 p-3 sm:p-4 space-y-2.5 sm:space-y-3 rounded-3xl border border-gold/15 shadow-xl">
+          {/* Manager Handle Input */}
+          <div className="luxury-glass rounded-2xl p-2 sm:p-2.5 border border-white/8 space-y-1.5">
+            <span className="text-[10px] font-bold tracking-widest uppercase text-steel block px-1 font-stats">
               {lang === 'ar' ? 'هوية المدرب' : 'Manager Identity'}
-            </div>
+            </span>
             <div className="flex items-center gap-3">
-              <div className="relative shrink-0">
-                <UserIdentity nickname={nickname} size="md" showAvatarOnly />
-                <span className="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-lime text-[9px] font-black text-slate-950 font-stats ring-2 ring-slate-950">
-                  ★
-                </span>
-              </div>
+              <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
               <div className="flex-1 min-w-0">
                 <TextInput
-                  label={t('joinRoom.managerHandle')}
                   value={nickname}
                   onChange={(e) => setNickname(e.target.value)}
                   maxLength={20}
@@ -207,9 +209,9 @@ export default function JoinRoomPage() {
                       onClick={() => setNickname(randomName())}
                       aria-label={t('home.nameModal.randomize')}
                       title={t('home.nameModal.randomize')}
-                      className="btn-haptic flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-steel hover:border-lime/50 hover:text-lime hover:bg-lime/10 transition-all cursor-pointer shadow-sm"
+                      className="btn-haptic flex h-9 w-9 items-center justify-center rounded-xl border border-white/12 bg-white/5 text-steel hover:text-white transition-all cursor-pointer"
                     >
-                      <AppIcon icon={DiceFive} size={20} weight="duotone" />
+                      <AppIcon icon={Shuffle} size={16} weight="bold" />
                     </button>
                   }
                 />
@@ -217,21 +219,18 @@ export default function JoinRoomPage() {
             </div>
           </div>
 
-          {/* Apple Keynote Room Code Pin Card */}
-          <div className="apple-glass-card rounded-2xl p-4 sm:p-5 border border-white/10 space-y-3">
+          {/* 6-Character Room Code Card */}
+          <div className="luxury-glass rounded-2xl p-3 sm:p-3.5 border border-white/8 space-y-2.5">
             <div className="flex items-center justify-between px-1">
-              <label className="text-steel text-[10px] font-black tracking-widest uppercase font-stats">
+              <label className="text-steel text-[10px] font-bold tracking-widest uppercase font-stats">
                 {t('joinRoom.roomCode')}
               </label>
-              <span className="text-[10px] font-mono text-steel/80 font-bold">
+              <span className="text-[10px] font-mono text-steel font-bold">
                 {normalizedCode.length}/6
               </span>
             </div>
 
             <div className="relative">
-              <div className="pointer-events-none absolute start-4 top-1/2 -translate-y-1/2 text-lime/80">
-                <AppIcon icon={Key} size={24} weight="duotone" />
-              </div>
               <input
                 value={roomCode}
                 onChange={(e) =>
@@ -243,7 +242,7 @@ export default function JoinRoomPage() {
                   )
                 }
                 maxLength={6}
-                className="font-stats text-lime placeholder:text-steel/20 focus:border-lime/70 focus:ring-lime/25 w-full rounded-2xl border border-white/15 bg-slate-950/90 py-4 px-12 text-center text-3xl sm:text-4xl tracking-[0.28em] font-black uppercase transition-all outline-none focus:ring-2 min-h-[64px] shadow-inner"
+                className="font-stats text-gold placeholder:text-steel/20 focus:border-gold/70 focus:ring-gold/25 w-full rounded-2xl border border-white/12 bg-slate-950/80 py-3.5 px-4 text-center text-2xl sm:text-3xl tracking-[0.24em] font-bold uppercase transition-all outline-none focus:ring-2 shadow-inner"
                 placeholder="X7K9M2"
                 autoComplete="off"
                 inputMode="text"
@@ -251,17 +250,17 @@ export default function JoinRoomPage() {
               />
             </div>
 
-            {/* 6 Visual Slot Indicators */}
-            <div className="flex items-center justify-center gap-2 pt-1" dir="ltr">
+            {/* Visual Slots */}
+            <div className="flex items-center justify-center gap-1.5 sm:gap-2 pt-0.5" dir="ltr">
               {[0, 1, 2, 3, 4, 5].map((index) => {
                 const char = normalizedCode[index];
                 return (
                   <div
                     key={index}
-                    className={`flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl border font-stats font-black text-base sm:text-lg transition-all ${
+                    className={`flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-xl border font-stats font-bold text-sm sm:text-base transition-all ${
                       char
-                        ? 'border-lime/50 bg-lime/15 text-lime shadow-[0_0_10px_rgba(149,232,16,0.2)]'
-                        : 'border-white/10 bg-white/[0.02] text-steel/30'
+                        ? 'border-gold/40 bg-gold/15 text-gold shadow-sm'
+                        : 'border-white/8 bg-white/[0.02] text-steel/30'
                     }`}
                   >
                     {char || '·'}
@@ -271,47 +270,41 @@ export default function JoinRoomPage() {
             </div>
           </div>
 
-          {/* Status Verification Card with Apple Pill */}
+          {/* Status Verification Card */}
           <div
-            className={`apple-glass-card flex items-start justify-between rounded-2xl border p-4 transition-all ${
+            className={`luxury-glass flex items-start justify-between rounded-2xl border p-3.5 transition-all ${
               canJoin
-                ? isSnipe
-                  ? 'border-lime/40 bg-lime/10 shadow-[0_4px_20px_rgba(149,232,16,0.12)]'
-                  : isRank
-                    ? 'border-amber-400/40 bg-amber-400/10 shadow-[0_4px_20px_rgba(245,158,11,0.12)]'
-                    : 'border-cyan-400/40 bg-cyan-400/10 shadow-[0_4px_20px_rgba(0,240,255,0.15)]'
-                : 'border-white/10 bg-slate-900/60'
+                ? 'border-gold/30 bg-gold/5'
+                : 'border-white/8 bg-white/[0.02]'
             }`}
           >
             <div className="flex items-start gap-3 min-w-0">
               <div className="mt-0.5 shrink-0">{statusIcon}</div>
               <div className="min-w-0">
                 <p
-                  className={`text-sm font-black font-stats tracking-wide ${
-                    canJoin
-                      ? isSnipe
-                        ? 'text-lime'
-                        : isRank
-                          ? 'text-amber-300'
-                          : 'text-cyan-300'
-                      : 'text-white'
+                  className={`text-xs sm:text-sm font-bold font-stats tracking-wide ${
+                    canJoin ? 'text-white' : 'text-slate-300'
                   }`}
                 >
                   {statusText}
                 </p>
-                <p className="text-steel mt-0.5 text-xs font-medium leading-relaxed">
+                <p className="text-steel mt-0.5 text-[11px] font-normal leading-relaxed">
                   {canJoin
                     ? isSnipe
-                      ? (lang === 'ar'
-                          ? `ماتش سنايب (${snipeRoom?.settings.matchSize || 11} ضد ${snipeRoom?.settings.matchSize || 11}) • $${snipeRoom?.settings.startingBudget || 100}M`
-                          : `Snipe Match (${snipeRoom?.settings.matchSize || 11}v${snipeRoom?.settings.matchSize || 11}) • $${snipeRoom?.settings.startingBudget || 100}M Budget`)
+                      ? lang === 'ar'
+                        ? `ماتش سنايب (${snipeRoom?.settings.matchSize || 11} ضد ${snipeRoom?.settings.matchSize || 11}) • ميزانية $${snipeRoom?.settings.startingBudget || 100}M`
+                        : `Snipe (${snipeRoom?.settings.matchSize || 11}v${snipeRoom?.settings.matchSize || 11}) • $${snipeRoom?.settings.startingBudget || 100}M`
                       : isRank
-                        ? (lang === 'ar'
-                            ? `المضيف: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} جولات`
-                            : `Host: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} Rounds`)
-                        : (lang === 'ar'
-                            ? `المضيف: ${draftRoom?.hostName || 'Manager'} • ديربي 14 اختيار وتناغم 33`
-                            : `Host: ${draftRoom?.hostName || 'Manager'} • 14 Picks · 33 Chem Duel`)
+                        ? lang === 'ar'
+                          ? `المضيف: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} جولات`
+                          : `Host: ${rankRoom?.hostName || 'Manager'} • ${rankRoom?.roundCount} Rounds`
+                        : isDraft
+                          ? lang === 'ar'
+                            ? `المضيف: ${draftRoom?.hostName || 'Manager'} • درافت 14 اختيار`
+                            : `Host: ${draftRoom?.hostName || 'Manager'} • 14 Picks Derby`
+                          : lang === 'ar'
+                            ? `المضيف: ${bankRoom?.hostName || 'Manager'} • 12 سؤالاً في صالة بَنِّك`
+                            : `Host: ${bankRoom?.hostName || 'Manager'} • 12 Questions Duel`
                     : t('joinRoom.statusSubtext')}
                 </p>
               </div>
@@ -319,47 +312,44 @@ export default function JoinRoomPage() {
 
             {canJoin && (
               <StatPill
-                variant={isSnipe ? 'lime' : isRank ? 'amber' : 'cyan'}
+                variant="gold"
                 size="sm"
-                className="shrink-0 shadow-sm"
+                className="shrink-0"
               >
-                <AppIcon icon={isSnipe ? Crosshair : isRank ? Ranking : Lightning} size={14} weight="duotone" className="me-1" />
-                <span>{isSnipe ? 'Snipe' : isRank ? 'Rank 1v1' : 'Pro Draft'}</span>
+                <AppIcon
+                  icon={isSnipe ? Crosshair : isRank ? Ranking : isDraft ? Lightning : Vault}
+                  size={13}
+                  weight="duotone"
+                  className="me-1"
+                />
+                <span>
+                  {lang === 'ar'
+                    ? (isSnipe ? 'سنايب' : isRank ? 'رتّب' : isDraft ? 'درافت' : 'بَنِّك')
+                    : (isSnipe ? 'Snipe' : isRank ? 'Rank' : isDraft ? 'Draft' : 'Bank')}
+                </span>
               </StatPill>
             )}
           </div>
 
-          {/* Tactile Cupertino Submit Action */}
+          {/* Submit Action */}
           <Button
             type="submit"
-            variant="primary"
+            variant="gold"
             size="lg"
             fullWidth
             disabled={!canJoin || loading || !nickname.trim()}
             loading={loading}
-            leftIcon={
-              <AppIcon
-                icon={isRank ? Ranking : isDraft ? Lightning : Crosshair}
-                size={20}
-                weight="bold"
-                className="text-slate-950"
-              />
-            }
-            className={`shadow-[0_8px_24px_rgba(149,232,16,0.25)] ${
-              isRank
-                ? '!bg-gradient-to-r !from-amber-400 !to-yellow-300 !text-slate-950 !border-amber-300 shadow-[0_8px_24px_rgba(245,158,11,0.25)]'
-                : isDraft
-                  ? '!bg-gradient-to-r !from-cyan-400 !to-cyan-300 !text-slate-950 !border-cyan-300 shadow-[0_8px_24px_rgba(0,240,255,0.25)]'
-                  : ''
-            }`}
+            className="rounded-2xl font-bold h-12 text-sm"
           >
             {loading
               ? t('joinRoom.joining')
               : isRank
                 ? (lang === 'ar' ? 'ادخل تحدي رتّب' : 'Enter Rank Duel')
                 : isDraft
-                  ? (lang === 'ar' ? 'ادخل ديربي الدرفت' : 'Enter Draft Duel')
-                  : (lang === 'ar' ? 'ادخل ماتش سنايب' : 'Enter Snipe Match')}
+                  ? (lang === 'ar' ? 'ادخل ديربي الدرافت' : 'Enter Draft Duel')
+                  : isBank
+                    ? (lang === 'ar' ? 'ادخل مواجهة بَنِّك' : 'Enter Bank Duel')
+                    : (lang === 'ar' ? 'ادخل ماتش سنايب' : 'Enter Snipe Match')}
           </Button>
         </div>
       </form>

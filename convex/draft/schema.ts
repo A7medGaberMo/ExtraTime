@@ -101,6 +101,8 @@ export const draftGamesTable = defineTable({
   challengeType: v.optional(v.string()),
   challengeEvaluation: v.optional(draftChallengeEvaluationValidator),
   isPublic: v.optional(v.boolean()),
+  player1Id: v.id('guestUsers'),
+  player2Id: v.optional(v.id('guestUsers')),
   status: v.union(
     v.literal('waiting'),
     v.literal('formation'),
@@ -118,4 +120,6 @@ export const draftGamesTable = defineTable({
 })
   .index('by_code', ['code'])
   .index('by_status', ['status'])
-  .index('by_public_status', ['isPublic', 'status', 'mode']);
+  .index('by_public_status', ['isPublic', 'status', 'mode'])
+  .index('by_player1', ['player1Id'])
+  .index('by_player2', ['player2Id']);

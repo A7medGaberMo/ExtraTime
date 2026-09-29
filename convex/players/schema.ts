@@ -6,6 +6,8 @@ export const playersTable = defineTable({
   position: v.string(), // Supports FC-style multi-position values like "CDM/CM" or "LW/ST".
   clubId: v.id('clubs'),
   nationId: v.id('nations'),
+  clubName: v.optional(v.string()),
+  nationName: v.optional(v.string()),
   tier: v.union(
     v.literal('ICON'),
     v.literal('HERO'),
@@ -22,6 +24,7 @@ export const playersTable = defineTable({
   imageUrl: v.optional(v.string()),
   kitNumber: v.optional(v.number()),
   rating: v.optional(v.number()),
+  randomKey: v.optional(v.number()),
 })
   .index('by_tier', ['tier'])
   .index('by_rating', ['rating'])
@@ -35,4 +38,11 @@ export const playersTable = defineTable({
   .index('by_club_tier', ['clubId', 'tier'])
   .index('by_nation_tier', ['nationId', 'tier'])
   .index('by_legend_tier', ['isLegend', 'tier'])
-  .index('by_tier_season', ['tier', 'seasonYear']);
+  .index('by_tier_season', ['tier', 'seasonYear'])
+  .index('by_random', ['randomKey'])
+  .index('by_tier_random', ['tier', 'randomKey'])
+  .index('by_position_random', ['position', 'randomKey'])
+  .searchIndex('search_name', {
+    searchField: 'name',
+    filterFields: ['tier', 'position'],
+  });

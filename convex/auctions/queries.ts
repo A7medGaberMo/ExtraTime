@@ -221,6 +221,21 @@ export const getState = query({
     const hostUser = await ctx.db.get(auction.host.userId);
     const guestUser = auction.guest?.userId ? await ctx.db.get(auction.guest.userId) : null;
 
+    const isFrozen = Boolean(
+      auction.frozenEffect &&
+        auction.frozenEffect.roundNumber === auction.currentRound &&
+        auction.frozenEffect.targetUserId === args.userId,
+    );
+
+    const opponentFrozen = Boolean(
+      auction.frozenEffect &&
+        auction.frozenEffect.roundNumber === auction.currentRound &&
+        opponent &&
+        auction.frozenEffect.targetUserId === opponent.userId,
+    );
+
+    const freezeMaxBid = auction.frozenEffect?.maxBid ?? 15;
+
     return {
       room,
       // Never leak sealed bid amounts before round resolution.
@@ -236,6 +251,9 @@ export const getState = query({
       me,
       opponent,
       isHost,
+      isFrozen,
+      opponentFrozen,
+      freezeMaxBid,
       hostName: hostUser?.nickname ?? 'Host',
       guestName: guestUser?.nickname ?? 'Opponent',
     };

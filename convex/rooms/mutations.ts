@@ -1,4 +1,5 @@
 import { mutation, internalMutation } from '../_generated/server';
+import { internal } from '../_generated/api';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
@@ -28,8 +29,9 @@ async function generateUniqueRoomCode(ctx: GenericMutationCtx<DataModel>): Promi
   throw new Error('Could not generate a unique room code');
 }
 
-function randomPerk(): 'SCOUT' | 'SPY' {
-  return Math.random() < 0.5 ? 'SCOUT' : 'SPY';
+function randomPerk(): 'SCOUT' | 'SPY' | 'FREEZE' {
+  const perks = ['SCOUT', 'SPY', 'FREEZE'] as const;
+  return perks[Math.floor(Math.random() * perks.length)];
 }
 
 /** Deterministic room seed — drives tie lotteries + the match simulation. */
@@ -50,12 +52,12 @@ interface CreateRoomArgs {
 }
 
 async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: CreateRoomArgs) {
+  const seed = generateRoomSeed();
   const formation = getRandomFormation(args.matchSize);
-  const rounds = await generateDraftRounds(ctx, formation, args.matchSize, args.poolMode);
+  const rounds = await generateDraftRounds(ctx, formation, args.matchSize, args.poolMode, seed);
   const hostPerk = randomPerk();
   const code = await generateUniqueRoomCode(ctx);
   const now = Date.now();
-  const seed = generateRoomSeed();
 
   const roomId = await ctx.db.insert('rooms', {
     code,
@@ -97,6 +99,7 @@ async function createWaitingRoom(ctx: GenericMutationCtx<DataModel>, args: Creat
       budget: args.startingBudget,
       perk: hostPerk,
       perkUsed: false,
+      passesUsed: 0,
       squad: [],
     },
     createdAt: now,
@@ -135,6 +138,7 @@ async function joinAuction(
       budget: auction.startingBudget,
       perk: guestPerk,
       perkUsed: false,
+      passesUsed: 0,
       squad: [],
     },
     sealedBids: {},
@@ -148,6 +152,12 @@ async function joinAuction(
       firstPassUserId: undefined,
     },
   });
+
+  await ctx.scheduler.runAt(
+    now + 30500,
+    internal.auctions.sealed.authoritativeExpireRound,
+    { roomId, expectedRound: 1 },
+  );
 
   return activeTurnUserId;
 }
@@ -313,7 +323,12 @@ export const abandonUserActiveMatch = mutation({
   args: {
     guestId: v.string(),
     sessionToken: v.optional(v.string()),
-    matchType: v.union(v.literal('snipe'), v.literal('rank'), v.literal('draft')),
+    matchType: v.union(
+      v.literal('snipe'),
+      v.literal('rank'),
+      v.literal('draft'),
+      v.literal('bank'),
+    ),
     matchId: v.string(),
   },
   handler: async (ctx, args) => {
@@ -406,8 +421,184 @@ export const abandonUserActiveMatch = mutation({
       return { success: true };
     }
 
+    if (args.matchType === 'bank') {
+      const gameId = ctx.db.normalizeId('bankGames', args.matchId);
+      if (!gameId) return { success: false, reason: 'Invalid game ID' };
+      const game = await ctx.db.get(gameId);
+      if (!game) return { success: false, reason: 'Game not found' };
+
+      const isParticipant = game.participants.some((p) => p.guestId === guestId);
+      if (!isParticipant) {
+        throw new Error('Not authorized to abandon this game');
+      }
+
+      if (game.status === 'waiting' || game.mode === 'solo') {
+        await ctx.db.patch(game._id, {
+          status: 'abandoned',
+          completedAt: now,
+        });
+      } else {
+        const remaining = game.participants.find((p) => p.guestId !== guestId);
+        await ctx.db.patch(game._id, {
+          status: 'abandoned',
+          winnerId: remaining?.guestId,
+          completedAt: now,
+        });
+      }
+
+      return { success: true };
+    }
 
     return { success: false };
+  },
+});
+
+// ── Snipe Rematch Invitation System ────────────────────────
+
+/**
+ * Request a rematch after a completed snipe match.
+ * Creates a new waiting room with the same settings and links it to the
+ * completed room via `rematchRoomId`. The opponent can see this invite
+ * reactively and choose to accept or decline.
+ */
+export const requestSnipeRematch = mutation({
+  args: {
+    completedRoomId: v.id('rooms'),
+    userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
+
+    const room = await ctx.db.get(args.completedRoomId);
+    if (!room) throw new Error('Room not found');
+
+    const isHost = room.hostId === args.userId;
+    const isGuest = room.guestId === args.userId;
+    if (!isHost && !isGuest) throw new Error('Not a participant');
+
+    // Check if room is completed
+    if (room.status !== 'completed') {
+      throw new Error('Can only rematch a completed match');
+    }
+
+    // Check if a rematch room already exists (prevents spam / double-clicks)
+    const existingRematch = (room as Record<string, unknown>).rematchRoomId
+      ? await ctx.db.get((room as Record<string, unknown>).rematchRoomId as Id<'rooms'>)
+      : null;
+
+    if (existingRematch && existingRematch.status === 'waiting') {
+      // If the rematch was created by the SAME user, just return it (idempotent)
+      if (existingRematch.hostId === args.userId) {
+        return {
+          rematchRoomId: existingRematch._id,
+          code: existingRematch.code,
+          alreadyExists: true,
+        };
+      }
+      // If it was created by the OPPONENT, auto-accept (both clicked rematch)
+      const auction = await ctx.db
+        .query('auctions')
+        .withIndex('by_room', (q) => q.eq('roomId', existingRematch._id))
+        .first();
+      if (auction) {
+        await joinAuction(ctx, existingRematch._id, args.userId, auction);
+        return {
+          rematchRoomId: existingRematch._id,
+          code: existingRematch.code,
+          autoAccepted: true,
+        };
+      }
+    }
+
+    // Create the new rematch room with same settings
+    const matchSize: MatchSize = (room.settings?.matchSize ?? 11) as MatchSize;
+    const poolMode = (room.settings?.poolMode ?? 'GLOBAL') as PoolMode;
+    const startingBudget = room.settings?.startingBudget ?? 100;
+
+    const result = await createWaitingRoom(ctx, {
+      hostId: args.userId,
+      matchSize,
+      startingBudget,
+      isPublic: false,
+      poolMode,
+    });
+
+    // Link rematch to completed room (both directions)
+    await ctx.db.patch(args.completedRoomId, {
+      rematchRoomId: result.roomId,
+    } as Record<string, unknown>);
+
+    await ctx.db.patch(result.roomId, {
+      rematchFromRoomId: args.completedRoomId,
+      rematchInviterId: args.userId,
+    } as Record<string, unknown>);
+
+    return {
+      rematchRoomId: result.roomId,
+      code: result.code,
+      alreadyExists: false,
+    };
+  },
+});
+
+/**
+ * Accept a rematch invitation — joins the waiting rematch room.
+ */
+export const acceptRematchInvite = mutation({
+  args: {
+    rematchRoomId: v.id('rooms'),
+    userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
+
+    const room = await ctx.db.get(args.rematchRoomId);
+    if (!room) throw new Error('Rematch room not found');
+    if (room.status !== 'waiting') throw new Error('Rematch is no longer available');
+    if (room.hostId === args.userId) throw new Error('Cannot accept your own invite');
+
+    const auction = await ctx.db
+      .query('auctions')
+      .withIndex('by_room', (q) => q.eq('roomId', args.rematchRoomId))
+      .first();
+    if (!auction) throw new Error('Auction not found for rematch room');
+
+    await joinAuction(ctx, args.rematchRoomId, args.userId, auction);
+
+    return { success: true, rematchRoomId: args.rematchRoomId };
+  },
+});
+
+/**
+ * Decline a rematch invitation — abandons the waiting rematch room.
+ */
+export const declineRematchInvite = mutation({
+  args: {
+    rematchRoomId: v.id('rooms'),
+    userId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.userId, args.sessionToken);
+
+    const room = await ctx.db.get(args.rematchRoomId);
+    if (!room) throw new Error('Rematch room not found');
+    if (room.status !== 'waiting') return { success: true }; // Already resolved
+
+    // Only the invited player (non-host) or the inviter can cancel
+    await ctx.db.patch(args.rematchRoomId, { status: 'abandoned' });
+
+    const auction = await ctx.db
+      .query('auctions')
+      .withIndex('by_room', (q) => q.eq('roomId', args.rematchRoomId))
+      .first();
+    if (auction) {
+      await ctx.db.patch(auction._id, { status: 'completed' });
+    }
+
+    return { success: true };
   },
 });
 

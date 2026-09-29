@@ -22,4 +22,6 @@ export interface PlayerCardData {
   isLegend?: boolean;
   kitNumber?: number;
   rating?: number;
+  league?: string;
+  isCaptain?: boolean;
 }

@@ -315,7 +315,38 @@ async function executePerk(
     };
   }
 
-  if (me.perk === 'FREEZE' || me.perk === 'SHIELD') {
+  if (me.perk === 'FREEZE') {
+    // FREEZE: Caps opponent's max bid in this round to $15M
+    const frozenEffect = {
+      targetUserId: opponent.userId,
+      roundNumber: auction.currentRound,
+      maxBid: 15,
+    };
+
+    // If opponent has already submitted a sealed bid higher than 15, clamp it
+    const sealedBids = { ...(auction.sealedBids ?? {}) };
+    const oppKey = isHost ? 'guest' : 'host';
+    const oppBid = sealedBids[oppKey];
+    if (oppBid && oppBid.amount > 15) {
+      sealedBids[oppKey] = {
+        amount: 15,
+        submittedAt: oppBid.submittedAt,
+      };
+    }
+
+    await ctx.db.patch(auction._id, {
+      frozenEffect,
+      sealedBids,
+    });
+
+    return {
+      perk: 'FREEZE' as const,
+      targetUserId: opponent.userId,
+      maxBid: 15,
+    };
+  }
+
+  if (me.perk === 'SHIELD') {
     return {
       perk: me.perk,
       active: true,

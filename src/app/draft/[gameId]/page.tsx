@@ -40,6 +40,19 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
   // Convex Query
   const game = useQuery(api.draft.queries.getDraftGame, { gameId });
 
+  const rematchState = useQuery(
+    api.draft.queries.getRematchState,
+    guestId && (game?.mode === 'duel_private' || game?.mode === 'duel_public') && (game?.status === 'completed' || game?.status === 'showdown')
+      ? { gameId, guestId }
+      : 'skip'
+  );
+
+  useEffect(() => {
+    if (rematchState?.status === 'accepted' && rematchState.rematchGameId) {
+      router.push(`/draft/${rematchState.rematchGameId}`);
+    }
+  }, [rematchState?.status, rematchState?.rematchGameId, router]);
+
   // Convex Mutations
   const selectFormation = useMutation(api.draft.mutations.selectFormation);
   const makeDraftPick = useMutation(api.draft.mutations.makeDraftPick);
@@ -49,6 +62,9 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
   const simulateBoss = useMutation(api.draft.mutations.simulateBossMatch);
   const autoPickExpired = useMutation(api.draft.mutations.autoPickExpiredTurn);
   const abandonMatch = useMutation(api.rooms.mutations.abandonUserActiveMatch);
+  const requestDraftRematch = useMutation(api.draft.mutations.requestDraftRematch);
+  const acceptDraftRematch = useMutation(api.draft.mutations.acceptDraftRematch);
+  const declineDraftRematch = useMutation(api.draft.mutations.declineDraftRematch);
 
   // Local state
   const [selectedStarterSlotIndex, setSelectedStarterSlotIndex] = useState<number | null>(null);
@@ -56,6 +72,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
   const [copied, setCopied] = useState(false);
   const [dismissedResults, setDismissedResults] = useState(false);
   const [isLeaving, setIsLeaving] = useState(false);
+  const [isRematching, setIsRematching] = useState(false);
 
   // Detect abandonment
   useEffect(() => {
@@ -111,8 +128,9 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
         formation,
       });
       sfx.lock();
-    } catch (err: any) {
-      toast(err.message || 'Failed to select formation', 'error');
+    } catch (err: unknown) {
+      const error = err as { message?: string };
+      toast(error.message || 'Failed to select formation', 'error');
     } finally {
       setActionLoading(false);
     }
@@ -130,8 +148,9 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
           sessionToken,
           playerId: playerId as Id<'players'>,
         });
-      } catch (err: any) {
-        toast(err.message || 'Failed to pick card', 'error');
+      } catch (err: unknown) {
+        const error = err as { message?: string };
+        toast(error.message || 'Failed to pick card', 'error');
       } finally {
         setActionLoading(false);
       }
@@ -144,7 +163,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
     if (participant?.currentCandidates && participant.currentCandidates.length > 0 && !actionLoading) {
       handlePickCard(participant.currentCandidates[0].id);
     }
-  }, [participant?.currentCandidates, actionLoading, handlePickCard]);
+  }, [participant, actionLoading, handlePickCard]);
 
   // 3b. Watchdog for 1v1 opponent timeout: nudges auto-pick if opponent disconnected
   useEffect(() => {
@@ -174,8 +193,9 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
         benchIndex,
       });
       setSelectedStarterSlotIndex(null);
-    } catch (err: any) {
-      toast(err.message || 'Failed to swap players', 'error');
+    } catch (err: unknown) {
+      const error = err as { message?: string };
+      toast(error.message || 'Failed to swap players', 'error');
     } finally {
       setActionLoading(false);
     }
@@ -195,8 +215,9 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
       });
       setSelectedStarterSlotIndex(null);
       sfx.tap();
-    } catch (err: any) {
-      toast(err.message || 'Failed to swap starters', 'error');
+    } catch (err: unknown) {
+      const error = err as { message?: string };
+      toast(error.message || 'Failed to swap starters', 'error');
     } finally {
       setActionLoading(false);
     }
@@ -213,14 +234,67 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
         sessionToken,
       });
       sfx.kickoff();
-    } catch (err: any) {
-      toast(err.message || 'Failed to finish draft', 'error');
+    } catch (err: unknown) {
+      const error = err as { message?: string };
+      toast(error.message || 'Failed to finish draft', 'error');
     } finally {
       setActionLoading(false);
     }
   };
 
   // 7. Boss Match
+  const handleRequestRematch = async () => {
+    if (!guestId || !is1v1 || isRematching) return;
+    setIsRematching(true);
+    try {
+      await requestDraftRematch({
+        completedGameId: gameId,
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      toast(lang === 'ar' ? 'تم إرسال دعوة إعادة الماتش' : 'Rematch invitation sent', 'info');
+    } catch (err: unknown) {
+      const e = err as { message?: string };
+      toast(e.message || 'Failed to request rematch', 'error');
+    } finally {
+      setIsRematching(false);
+    }
+  };
+
+  const handleAcceptRematch = async () => {
+    if (!guestId || !is1v1 || isRematching) return;
+    setIsRematching(true);
+    try {
+      const res = await acceptDraftRematch({
+        completedGameId: gameId,
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      if (res?.rematchGameId) {
+        router.push(`/draft/${res.rematchGameId}`);
+      }
+    } catch (err: unknown) {
+      const e = err as { message?: string };
+      toast(e.message || 'Failed to accept rematch', 'error');
+    } finally {
+      setIsRematching(false);
+    }
+  };
+
+  const handleDeclineRematch = async () => {
+    if (!guestId || !is1v1) return;
+    try {
+      await declineDraftRematch({
+        completedGameId: gameId,
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      toast(lang === 'ar' ? 'تم رفض طلب الإعادة' : 'Rematch declined', 'info');
+    } catch {
+      // silent
+    }
+  };
+
   const handlePlayBossMatch = async () => {
     if (!participant || actionLoading) return;
     setActionLoading(true);
@@ -230,8 +304,9 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
         guestId: participant.guestId as Id<'guestUsers'>,
         sessionToken,
       });
-    } catch (err: any) {
-      toast(err.message || 'Failed to start boss match', 'error');
+    } catch (err: unknown) {
+      const error = err as { message?: string };
+      toast(error.message || 'Failed to start boss match', 'error');
     } finally {
       setActionLoading(false);
     }
@@ -259,7 +334,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
     return (
       <div className="flex min-h-[60vh] items-center justify-center">
         <div className="flex flex-col items-center gap-3">
-          <div className="h-8 w-8 animate-spin rounded-full border-2 border-cyan-400 border-t-transparent" />
+          <div className="h-8 w-8 animate-spin rounded-full border-2 border-gold border-t-transparent" />
           <span className="text-xs font-semibold uppercase tracking-wider text-steel">
             {t('draft.enteringArena')}
           </span>
@@ -287,9 +362,9 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
         <section aria-label="Waiting Room" className="apple-glass-elevated w-full max-w-md my-auto rounded-3xl p-6 sm:p-8 text-center space-y-6 shadow-2xl">
           {/* Concentric Apple Radar Waves */}
           <div className="relative mx-auto flex h-20 w-20 items-center justify-center">
-            <span className="absolute inset-0 rounded-full bg-cyan-400/10 animate-ping" />
-            <span className="absolute -inset-2 rounded-full border border-cyan-400/20" />
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-cyan-400/40 bg-gradient-to-b from-cyan-400/20 to-cyan-500/10 text-cyan-300 shadow-[0_0_30px_rgba(0,240,255,0.25)]">
+            <span className="absolute inset-0 rounded-full bg-gold/10 animate-ping" />
+            <span className="absolute -inset-2 rounded-full border border-gold/20" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/40 bg-gradient-to-b from-gold/20 to-gold/10 text-gold shadow-[0_0_30px_rgba(229,184,66,0.25)]">
               <AppIcon icon={Users} size={32} weight="duotone" />
             </div>
           </div>
@@ -311,7 +386,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
             <button
               type="button"
               onClick={handleCopyCode}
-              className="btn-haptic flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-b from-cyan-400 to-cyan-500 text-slate-950 font-bold hover:brightness-110 transition-all shadow-md shadow-cyan-400/25 cursor-pointer"
+              className="btn-haptic flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-b from-gold to-gold-dark text-slate-950 font-bold hover:brightness-110 transition-all shadow-md shadow-gold/25 cursor-pointer"
               title="Copy Room Code"
             >
               <AppIcon icon={copied ? Check : Copy} size={19} weight="bold" />
@@ -319,7 +394,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
           </div>
 
           <div className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1 text-micro font-medium text-slate-300">
-            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34D399]" />
+            <span className="h-2 w-2 rounded-full bg-gold shadow-[0_0_8px_#e5b842]" />
             <span>{t('draft.roomActiveNotice')}</span>
           </div>
 
@@ -389,8 +464,8 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
           ) : isSwappingPhase && game.status !== 'showdown' && game.status !== 'completed' ? (
             <div className="space-y-1 sm:space-y-1.5 shrink-0">
               {/* Ready / Finish button banner — Apple Dynamic Island style */}
-              <div className="apple-glass-card flex items-center justify-between gap-2 rounded-2xl px-3.5 py-2 sm:py-2.5 shadow-lg border border-cyan-400/30">
-                <div className="text-left leading-tight">
+              <div className="apple-glass-card flex items-center justify-between gap-2 rounded-2xl px-3.5 py-2 sm:py-2.5 shadow-lg border border-gold/30">
+                <div className="text-start leading-tight">
                   <span className="block text-xs sm:text-sm font-black text-white tracking-wide">
                     {t('draft.squadComplete')}
                   </span>
@@ -400,12 +475,12 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
                 </div>
 
                 <Button
-                  variant="primary"
+                  variant="gold"
                   size="sm"
                   onClick={handleFinishDraft}
                   disabled={actionLoading || participant.isReady}
                   leftIcon={<AppIcon icon={participant.isReady ? Check : Sword} size={15} weight="bold" />}
-                  className="bg-gradient-to-b from-cyan-400 to-cyan-500 text-slate-950 font-black hover:brightness-110 shrink-0 rounded-xl shadow-md shadow-cyan-400/25 px-4"
+                  className="text-slate-950 font-black hover:brightness-110 shrink-0 rounded-xl shadow-md shadow-gold/25 px-4"
                 >
                   {participant.isReady ? t('draft.evaluating') : is1v1 ? t('draft.lockSquad') : t('draft.checkChallenge')}
                 </Button>
@@ -461,6 +536,11 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
           onPlayAgain={() => router.push('/draft')}
           onClose={() => setDismissedResults(true)}
           bossLoading={actionLoading}
+          rematchState={rematchState}
+          onRequestRematch={handleRequestRematch}
+          onAcceptRematch={handleAcceptRematch}
+          onDeclineRematch={handleDeclineRematch}
+          isRematching={isRematching}
         />
       )}
 

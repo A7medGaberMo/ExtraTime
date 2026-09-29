@@ -1,6 +1,20 @@
 import { defineTable } from 'convex/server';
 import { v } from 'convex/values';
 
+export const matchSquadPlayerValidator = v.object({
+  playerId: v.id("players"),
+  name: v.string(),
+  position: v.string(),
+  tier: v.string(),
+  club: v.string(),
+  nation: v.string(),
+  imageUrl: v.optional(v.string()),
+  isLegend: v.boolean(),
+  kitNumber: v.optional(v.number()),
+  rating: v.optional(v.number()),
+  cost: v.optional(v.number()),
+});
+
 export const simulationTimelineEventValidator = v.object({
   id: v.string(),
   minute: v.number(),
@@ -92,6 +106,8 @@ export const matchesTable = defineTable({
   roomId: v.id('rooms'),
   hostSquad: v.array(v.id('players')),
   guestSquad: v.array(v.id('players')),
+  hostSquadSnapshot: v.optional(v.array(matchSquadPlayerValidator)),
+  guestSquadSnapshot: v.optional(v.array(matchSquadPlayerValidator)),
   winnerId: v.optional(v.id('guestUsers')),
   score: v.object({
     host: v.number(),

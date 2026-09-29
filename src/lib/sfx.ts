@@ -309,6 +309,25 @@ export function roundBonusChime(): void {
   });
 }
 
+/** 🏦 Bank It gold coin cascade chime */
+export function bankChime(): void {
+  const c = getCtx();
+  if (!c) return;
+  // Shimmering gold coin chord: E5, G#5, B5, E6, G#6
+  const coins = [659.25, 830.61, 987.77, 1318.5, 1661.2];
+  coins.forEach((freq, idx) => {
+    tone(freq, idx * 0.045, 0.28, 'sine', 0.22, c, { attack: 0.002, endFreq: freq * 1.02 });
+  });
+}
+
+/** 📉 Streak loss wipeout sound */
+export function streakLoss(): void {
+  const c = getCtx();
+  if (!c) return;
+  tone(380, 0, 0.25, 'sawtooth', 0.2, c, { endFreq: 110, attack: 0.01 });
+  noiseBurst(0.04, 0.18, 0.14, c, 800);
+}
+
 /** 📳 Mobile Hardware Haptic Feedback (vibration) */
 export function triggerHaptic(
   type: 'light' | 'medium' | 'heavy' | 'success' | 'warning' | 'error' | number = 'light',
@@ -366,6 +385,8 @@ export const sfx = {
   lock: lockSound,
   swap: swapSound,
   roundBonus: roundBonusChime,
+  bank: bankChime,
+  wipeout: streakLoss,
   haptic: triggerHaptic,
   isMuted: isAudioMuted,
   setMuted: setAudioMuted,

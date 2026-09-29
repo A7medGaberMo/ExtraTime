@@ -152,7 +152,7 @@ export function calculateSquadChemistry(
     if (!s.playerId) continue;
 
     const inPos = inPositionMap.get(s.slotIndex);
-    let baseOvr = computeBaseRating(s);
+    const baseOvr = computeBaseRating(s);
 
     if (!inPos) {
       // Out of position gets 0 chemistry and -3 rating penalty

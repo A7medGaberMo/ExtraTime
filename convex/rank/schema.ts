@@ -40,9 +40,12 @@ export const rankQuestionsTable = defineTable({
   answers: v.array(rankAnswerItemValidator), // Exactly 5 items in canonical Rank 1 -> 5 order
   isActive: v.boolean(),
   createdAt: v.number(),
+  randomKey: v.optional(v.number()),
 })
   .index("by_active", ["isActive"])
-  .index("by_category", ["isActive", "category"]);
+  .index("by_active_random", ["isActive", "randomKey"])
+  .index("by_category", ["isActive", "category"])
+  .index("by_category_random", ["isActive", "category", "randomKey"]);
 
 // Participant State within an Active Game
 export const rankParticipantValidator = v.object({
@@ -67,6 +70,8 @@ export const rankGamesTable = defineTable({
     v.literal("duel_public")
   ),
   isPublic: v.optional(v.boolean()),
+  player1Id: v.id("guestUsers"),
+  player2Id: v.optional(v.id("guestUsers")),
   status: v.union(
     v.literal("waiting"),
     v.literal("round_active"),
@@ -116,4 +121,6 @@ export const rankGamesTable = defineTable({
 })
   .index("by_code", ["code"])
   .index("by_status", ["status"])
-  .index("by_public_status", ["isPublic", "status", "mode"]);
+  .index("by_public_status", ["isPublic", "status", "mode"])
+  .index("by_player1", ["player1Id"])
+  .index("by_player2", ["player2Id"]);

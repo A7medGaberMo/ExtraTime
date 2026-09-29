@@ -44,27 +44,27 @@ export function MatchScoreboard({
 
   return (
     <div className="bg-slate-950/85 relative overflow-hidden rounded-2xl border border-white/10 p-4 shadow-2xl backdrop-blur-xl sm:p-5 select-none">
-      <div className="bg-lime/8 pointer-events-none absolute inset-x-0 -top-16 h-32 blur-3xl" />
+      <div className="bg-gold/8 pointer-events-none absolute inset-x-0 -top-16 h-32 blur-3xl" />
 
       <div className="relative flex items-center justify-between gap-3">
         {/* HOST */}
         <div className="flex min-w-0 flex-1 flex-col items-center gap-1.5">
           <span
             className={`truncate text-[10px] font-black tracking-widest uppercase sm:text-xs font-display ${
-              winner === 'host' ? 'text-lime' : 'text-steel'
+              winner === 'host' ? 'text-gold' : 'text-steel'
             }`}
           >
             {hostName}
           </span>
           <span
             className={`font-stats text-3xl leading-none sm:text-4xl font-black ${
-              winner === 'host' ? 'text-lime' : 'text-white/90'
+              winner === 'host' ? 'text-gold' : 'text-white/90'
             }`}
           >
             {score.host}
           </span>
           {winner === 'host' && !isSimulating && (
-            <span className="border-lime/30 bg-lime/10 text-lime flex items-center gap-1 rounded-full border px-2 py-0.5 text-[8px] font-black tracking-widest uppercase">
+            <span className="border-gold/30 bg-gold/10 text-gold flex items-center gap-1 rounded-full border px-2 py-0.5 text-[8px] font-black tracking-widest uppercase">
               <AppIcon icon={Trophy} size={10} weight="fill" /> WINNER
             </span>
           )}
@@ -75,11 +75,11 @@ export function MatchScoreboard({
           <span
             className={`flex items-center gap-1.5 rounded-full border px-3 py-1 text-[9px] font-black tracking-widest uppercase font-stats sm:text-[10px] ${
               isSimulating
-                ? 'border-lime/40 bg-lime/10 text-lime'
+                ? 'border-gold/40 bg-gold/10 text-gold'
                 : 'text-steel border-white/10 bg-slate-900'
             }`}
           >
-            {isSimulating && <AppIcon icon={CircleNotch} size={12} weight="bold" className="animate-spin text-lime" />}
+            {isSimulating && <AppIcon icon={CircleNotch} size={12} weight="bold" className="animate-spin text-gold" />}
             {minuteLabel(minute)}
           </span>
           <span className="text-steel/50 text-[9px] font-black tracking-widest uppercase">

@@ -51,7 +51,34 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className, imgClassName 
     );
   }
 
-  // Retrieve logo from clubLogoUrl or dictionary
+const CLUB_ALIASES: Record<string, string> = {
+  bayern: 'https://media.api-sports.io/football/teams/157.png',
+  bayernmunich: 'https://media.api-sports.io/football/teams/157.png',
+  fcbayern: 'https://media.api-sports.io/football/teams/157.png',
+  fcbayernmunchen: 'https://media.api-sports.io/football/teams/157.png',
+  realmadrid: 'https://media.api-sports.io/football/teams/541.png',
+  madrid: 'https://media.api-sports.io/football/teams/541.png',
+  barcelona: 'https://media.api-sports.io/football/teams/529.png',
+  barca: 'https://media.api-sports.io/football/teams/529.png',
+  fcbarcelona: 'https://media.api-sports.io/football/teams/529.png',
+  mancity: 'https://media.api-sports.io/football/teams/50.png',
+  manchestercity: 'https://media.api-sports.io/football/teams/50.png',
+  liverpool: 'https://media.api-sports.io/football/teams/40.png',
+  arsenal: 'https://media.api-sports.io/football/teams/42.png',
+  chelsea: 'https://media.api-sports.io/football/teams/49.png',
+  manunited: 'https://media.api-sports.io/football/teams/33.png',
+  manchesterunited: 'https://media.api-sports.io/football/teams/33.png',
+  psg: 'https://media.api-sports.io/football/teams/85.png',
+  juventus: 'https://media.api-sports.io/football/teams/496.png',
+  acmilan: 'https://media.api-sports.io/football/teams/489.png',
+  milan: 'https://media.api-sports.io/football/teams/489.png',
+  inter: 'https://media.api-sports.io/football/teams/505.png',
+  intermilan: 'https://media.api-sports.io/football/teams/505.png',
+  dortmund: 'https://media.api-sports.io/football/teams/165.png',
+  bvb: 'https://media.api-sports.io/football/teams/165.png',
+};
+
+// Retrieve logo from clubLogoUrl or dictionary
   let logoSrc = clubLogoUrl;
   if (
     !logoSrc ||
@@ -62,7 +89,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className, imgClassName 
     logoSrc = clubLogos[cleanName];
     if (!logoSrc) {
       const normKey = cleanName.toLowerCase().replace(/[^a-z0-9]/g, '');
-      logoSrc = clubLogos[normKey];
+      logoSrc = CLUB_ALIASES[normKey] || clubLogos[normKey];
     }
   }
 

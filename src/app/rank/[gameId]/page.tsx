@@ -22,7 +22,6 @@ import {
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { Panel } from '@/components/ui/panel';
-import { StatPill } from '@/components/ui/stat-pill';
 import { useI18n } from '@/lib/i18n';
 
 interface RankParticipant {
@@ -41,6 +40,10 @@ interface RankAnswerItem {
   valueLabel?: { en: string; ar: string } | string;
 }
 
+const INTRO_COUNTDOWN_SECONDS = 3;
+const SERVER_GRACE_PERIOD_MS = 1200;
+const CODE_COPIED_RESET_MS = 2500;
+
 export default function RankArenaPage() {
   const params = useParams();
   const router = useRouter();
@@ -56,9 +59,28 @@ export default function RankArenaPage() {
     guestId ? { gameId, guestId, locale: lang } : 'skip',
   );
 
+  const isDuel = Boolean(gameState?.mode === 'duel_private' || gameState?.mode === 'duel_public');
+
+  const rematchState = useQuery(
+    api.rank.queries.getRematchState,
+    guestId && isDuel && gameState?.status === 'completed'
+      ? { gameId, guestId }
+      : 'skip',
+  );
+
+  useEffect(() => {
+    if (rematchState?.status === 'accepted' && rematchState.rematchGameId) {
+      router.push(`/rank/${rematchState.rematchGameId}`);
+    }
+  }, [rematchState?.status, rematchState?.rematchGameId, router]);
+
   const submitRoundMutation = useMutation(api.rank.mutations.submitRound);
   const advanceRoundMutation = useMutation(api.rank.mutations.advanceRound);
   const createSoloMutation = useMutation(api.rank.mutations.createSoloGame);
+  const requestRankRematch = useMutation(api.rank.mutations.requestRankRematch);
+  const acceptRankRematch = useMutation(api.rank.mutations.acceptRankRematch);
+  const declineRankRematch = useMutation(api.rank.mutations.declineRankRematch);
+  const [isRematching, setIsRematching] = useState(false);
   const resolveExpiredMutation = useMutation(api.rank.mutations.resolveExpiredRound);
   const abandonGameMutation = useMutation(api.rank.mutations.abandonGame);
 
@@ -83,7 +105,7 @@ export default function RankArenaPage() {
   if (gameState && gameState.currentRoundIndex !== prevRound) {
     setPrevRound(gameState.currentRoundIndex);
     setCustomOrder(null);
-    setIntroSecondsLeft(3);
+    setIntroSecondsLeft(INTRO_COUNTDOWN_SECONDS);
   }
 
   const currentOrder = customOrder ?? defaultOrder;
@@ -111,7 +133,7 @@ export default function RankArenaPage() {
     }
 
     const checkExpired = () => {
-      const isExpired = Date.now() >= (gameState.roundDeadline ?? 0) + 1200;
+      const isExpired = Date.now() >= (gameState.roundDeadline ?? 0) + SERVER_GRACE_PERIOD_MS;
       if (isExpired && !isSubmitting) {
         resolveExpiredMutation({
           gameId,
@@ -130,7 +152,7 @@ export default function RankArenaPage() {
   if (!guestId || gameState === undefined) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center gap-3">
-        <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-lime animate-spin" />
+        <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
         <span className="text-xs font-black uppercase text-steel font-stats">{t('common.loading')}</span>
       </div>
     );
@@ -150,7 +172,7 @@ export default function RankArenaPage() {
     );
   }
 
-  const isDuel = gameState.mode === 'duel_private' || gameState.mode === 'duel_public';
+  // isDuel already derived above
   const participants = (gameState.participants as RankParticipant[]) || [];
   const userParticipant = participants.find((p) => p.guestId === guestId);
   const opponentParticipant = participants.find((p) => p.guestId !== guestId);
@@ -207,12 +229,64 @@ export default function RankArenaPage() {
     }
   }
 
+  const handleRequestRematch = async () => {
+    if (!guestId || !isDuel || isRematching) return;
+    setIsRematching(true);
+    try {
+      await requestRankRematch({
+        completedGameId: gameId,
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      toast(lang === 'ar' ? 'تم إرسال دعوة إعادة الماتش للمنافس' : 'Rematch invitation sent to opponent', 'info');
+    } catch (err: unknown) {
+      const e = err as { message?: string };
+      toast(e.message || 'Failed to request rematch', 'error');
+    } finally {
+      setIsRematching(false);
+    }
+  };
+
+  const handleAcceptRematch = async () => {
+    if (!guestId || !isDuel || isRematching) return;
+    setIsRematching(true);
+    try {
+      const res = await acceptRankRematch({
+        completedGameId: gameId,
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      if (res?.rematchGameId) {
+        router.push(`/rank/${res.rematchGameId}`);
+      }
+    } catch (err: unknown) {
+      const e = err as { message?: string };
+      toast(e.message || 'Failed to accept rematch', 'error');
+    } finally {
+      setIsRematching(false);
+    }
+  };
+
+  const handleDeclineRematch = async () => {
+    if (!guestId || !isDuel) return;
+    try {
+      await declineRankRematch({
+        completedGameId: gameId,
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+      });
+      toast(lang === 'ar' ? 'تم رفض طلب الإعادة' : 'Rematch declined', 'info');
+    } catch {
+      // silent
+    }
+  };
+
   function handleCopyCode() {
     if (gameState?.code && navigator.clipboard) {
       navigator.clipboard.writeText(gameState.code);
       setCopied(true);
       toast('Room code copied to clipboard!', 'success');
-      setTimeout(() => setCopied(false), 2500);
+      setTimeout(() => setCopied(false), CODE_COPIED_RESET_MS);
     }
   }
 
@@ -321,9 +395,13 @@ export default function RankArenaPage() {
         opponent={opponentSummary}
         winnerId={gameState.winnerId}
         roundCount={gameState.roundCount}
-        roundHistory={gameState.roundHistory || []}
         onPlayAgain={handlePlayAgain}
         onGoHome={() => router.push('/rank')}
+        rematchState={rematchState}
+        onRequestRematch={handleRequestRematch}
+        onAcceptRematch={handleAcceptRematch}
+        onDeclineRematch={handleDeclineRematch}
+        isRematching={isRematching}
       />
     );
   }
@@ -335,7 +413,7 @@ export default function RankArenaPage() {
     const opponentResult = roundResults.find((r) => r.guestId !== guestId);
 
     return (
-      <article className="mx-auto flex max-w-md w-full flex-col gap-2 sm:gap-3 px-3 select-none relative items-center justify-center">
+      <article className="mx-auto flex max-w-md lg:max-w-lg xl:max-w-xl w-full flex-col gap-2 sm:gap-3 px-3 select-none relative items-center justify-center">
         <RankHeader
           currentRound={gameState.currentRoundIndex + 1}
           totalRounds={gameState.roundCount}
@@ -363,7 +441,7 @@ export default function RankArenaPage() {
 
   // ── 4. ACTIVE ROUND GAMEPLAY ───────────────────────────────────────
   return (
-    <article className="mx-auto flex max-w-md w-full flex-col gap-2 sm:gap-3 px-3 select-none relative items-center justify-center">
+    <article className="mx-auto flex max-w-md lg:max-w-lg xl:max-w-xl w-full flex-col gap-2 sm:gap-3 px-2 sm:px-3 py-1 sm:py-2 select-none relative items-center">
       <RankHeader
         currentRound={gameState.currentRoundIndex + 1}
         totalRounds={gameState.roundCount}

@@ -42,7 +42,7 @@ export function ETLogo({
   const transform = displayWordmark ? 'translate(100, 35)' : 'translate(0, 0)';
 
   let fillE = '#FFFFFF';
-  let fillT = 'url(#et-lime-grad-cmp)';
+  let fillT = 'url(#et-gold-grad-cmp)';
   let bg = 'none';
   let stroke = 'none';
   let filter = '';
@@ -51,7 +51,7 @@ export function ETLogo({
   switch (variant) {
     case 'primary':
       fillE = '#FFFFFF';
-      fillT = 'url(#et-lime-grad-cmp)';
+      fillT = 'url(#et-gold-grad-cmp)';
       break;
     case 'monochrome-white':
       fillE = '#FFFFFF';
@@ -75,12 +75,12 @@ export function ETLogo({
       break;
     case 'embossed':
       fillE = '#E2E8F0';
-      fillT = '#95E810';
+      fillT = '#E5B842';
       filter = 'url(#et-emboss-cmp)';
       break;
     case 'debossed':
       fillE = '#64748B';
-      fillT = '#32521E';
+      fillT = '#99751D';
       break;
     case 'glass':
       fillE = 'url(#et-glass-grad-cmp)';
@@ -94,11 +94,11 @@ export function ETLogo({
     case 'minimal-outline':
       fillE = 'none';
       fillT = 'none';
-      stroke = '#95E810';
+      stroke = '#E5B842';
       break;
     case 'icon-only':
       fillE = '#FFFFFF';
-      fillT = 'url(#et-lime-grad-cmp)';
+      fillT = 'url(#et-gold-grad-cmp)';
       break;
     case 'watermark':
       fillE = '#FFFFFF';
@@ -107,15 +107,15 @@ export function ETLogo({
       break;
     case 'micro-16px':
       fillE = '#FFFFFF';
-      fillT = '#95E810';
+      fillT = '#E5B842';
       break;
     case 'card-badge':
       fillE = '#FFFFFF';
-      fillT = '#95E810';
+      fillT = '#E5B842';
       break;
     case 'favicon':
       fillE = '#FFFFFF';
-      fillT = '#95E810';
+      fillT = '#E5B842';
       bg = '#02050A';
       break;
   }
@@ -141,9 +141,9 @@ export function ETLogo({
           <stop offset="100%" stopColor="#059669" />
         </linearGradient>
         <linearGradient id="et-lime-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#B8F036" />
-          <stop offset="50%" stopColor="#95E810" />
-          <stop offset="100%" stopColor="#65B307" />
+          <stop offset="0%" stopColor="#FFF7CC" />
+          <stop offset="50%" stopColor="#E5B842" />
+          <stop offset="100%" stopColor="#99751D" />
         </linearGradient>
         <linearGradient id="et-silver-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#FFFFFF" />

@@ -4,7 +4,8 @@ import { Id, DataModel, Doc } from "../_generated/dataModel";
 import { GenericMutationCtx } from "convex/server";
 import { scoreRoundSubmission } from "./scoring";
 import { allRankSeedQuestions } from "./seedData";
-import { validateQuestionBank } from "./validate";
+import { validateQuestionBank, validateRankQuestion } from "./validate";
+import { rankAnswerMediaValidator } from "./schema";
 import { verifyGuestSession } from "../lib/auth";
 
 // ── Helpers ──────────────────────────────────────────────────────────
@@ -114,10 +115,19 @@ async function pickRandomQuestionIds(
   count: 3 | 5,
   participantGuestIds?: Id<"guestUsers">[]
 ): Promise<Id<"rankQuestions">[]> {
-  const allActive = await ctx.db
+  const r = Math.random();
+  let allActive = await ctx.db
     .query("rankQuestions")
-    .withIndex("by_active", (q) => q.eq("isActive", true))
-    .collect();
+    .withIndex("by_active_random", (q) => q.eq("isActive", true).gte("randomKey", r))
+    .take(35);
+
+  if (allActive.length < 35) {
+    const wrapAround = await ctx.db
+      .query("rankQuestions")
+      .withIndex("by_active_random", (q) => q.eq("isActive", true).lt("randomKey", r))
+      .take(35 - allActive.length);
+    allActive = [...allActive, ...wrapAround];
+  }
 
   if (allActive.length < count) {
     throw new Error(
@@ -125,18 +135,19 @@ async function pickRandomQuestionIds(
     );
   }
 
+
   // 1. Gather recent question IDs to prevent duplicate/repeated questions for participants
   const recentQuestionIds = new Set<Id<"rankQuestions">>();
   if (participantGuestIds && participantGuestIds.length > 0) {
-    const guestIdSet = new Set(participantGuestIds);
-    // Take the 30 most recent rank games
-    const recentGames = await ctx.db.query("rankGames").order("desc").take(30);
+    for (const guestId of participantGuestIds) {
+      const history = await ctx.db
+        .query("guestQuestionHistory")
+        .withIndex("by_guest", (q) => q.eq("guestId", guestId))
+        .first();
 
-    for (const g of recentGames) {
-      const involvesPlayer = g.participants.some((p) => guestIdSet.has(p.guestId));
-      if (involvesPlayer && g.questionIds) {
-        for (const qId of g.questionIds) {
-          recentQuestionIds.add(qId);
+      if (history?.rankSeenIds) {
+        for (const id of history.rankSeenIds) {
+          recentQuestionIds.add(id);
         }
       }
     }
@@ -194,8 +205,33 @@ async function pickRandomQuestionIds(
 
   // Pass 3: Final round order shuffle so rounds are dynamic
   const finalShuffledOrder = shuffleArray(selected);
+  const selectedIds = finalShuffledOrder.map((q) => q._id);
 
-  return finalShuffledOrder.map((q) => q._id);
+  // Update history
+  if (participantGuestIds && participantGuestIds.length > 0) {
+    for (const guestId of participantGuestIds) {
+      const history = await ctx.db
+        .query("guestQuestionHistory")
+        .withIndex("by_guest", (q) => q.eq("guestId", guestId))
+        .first();
+
+      const currentSeen = history?.rankSeenIds || [];
+      const merged = Array.from(new Set([...selectedIds, ...currentSeen]));
+      const trimmed = merged.slice(0, 50);
+
+      if (history) {
+        await ctx.db.patch(history._id, { rankSeenIds: trimmed });
+      } else {
+        await ctx.db.insert("guestQuestionHistory", {
+          guestId,
+          bankSeenIds: [],
+          rankSeenIds: trimmed,
+        });
+      }
+    }
+  }
+
+  return selectedIds;
 }
 
 async function getGuestProfile(ctx: GenericMutationCtx<DataModel>, guestId: Id<"guestUsers">) {
@@ -249,6 +285,7 @@ export const seedQuestionBank = mutation({
         answers: q.answers,
         isActive: q.isActive ?? true,
         createdAt: Date.now(),
+        randomKey: Math.random(),
       };
 
       if (existing) {
@@ -275,6 +312,74 @@ export const seedQuestionBank = mutation({
 });
 
 /**
+ * Seeds ONLY NEW rank questions without updating or deleting existing records.
+ */
+export const seedNewRankQuestionsOnly = mutation({
+  args: {
+    questions: v.optional(
+      v.array(
+        v.object({
+          title: v.object({ en: v.string(), ar: v.string() }),
+          subtitle: v.optional(v.object({ en: v.string(), ar: v.string() })),
+          category: v.optional(v.string()),
+          answers: v.array(
+            v.object({
+              answerKey: v.string(),
+              name: v.object({ en: v.string(), ar: v.string() }),
+              subText: v.optional(v.object({ en: v.string(), ar: v.string() })),
+              media: rankAnswerMediaValidator,
+              stat: v.object({ en: v.string(), ar: v.string() }),
+            })
+          ),
+          isActive: v.optional(v.boolean()),
+        })
+      )
+    ),
+  },
+
+  handler: async (ctx, args) => {
+    const listToSeed = args.questions ?? allRankSeedQuestions;
+    const allDbQuestions = await ctx.db.query("rankQuestions").collect();
+    const existingTitleSet = new Set(
+      allDbQuestions.map((q) => q.title.en.trim().toLowerCase())
+    );
+
+    let inserted = 0;
+    let skipped = 0;
+
+    for (const q of listToSeed) {
+      const titleKey = q.title.en.trim().toLowerCase();
+      if (existingTitleSet.has(titleKey)) {
+        skipped++;
+        continue;
+      }
+
+      const check = validateRankQuestion(q);
+      if (!check.valid) {
+        throw new Error(check.error);
+      }
+
+      const docData = {
+        title: q.title,
+        subtitle: q.subtitle,
+        category: q.category,
+        answers: q.answers,
+        isActive: q.isActive ?? true,
+        createdAt: Date.now(),
+        randomKey: Math.random(),
+      };
+
+      await ctx.db.insert("rankQuestions", docData);
+      existingTitleSet.add(titleKey);
+      inserted++;
+    }
+
+    // Explicitly guarantee no deletions of existing database records
+    return { totalReceived: listToSeed.length, inserted, skipped };
+  },
+});
+
+/**
  * Creates an instant Solo game session.
  */
 export const createSoloGame = mutation({
@@ -294,6 +399,7 @@ export const createSoloGame = mutation({
     const gameId = await ctx.db.insert("rankGames", {
       code,
       mode: "solo",
+      player1Id: args.guestId,
       status: "round_active",
       roundCount: args.roundCount,
       currentRoundIndex: 0,
@@ -338,6 +444,7 @@ export const createDuelPrivateRoom = mutation({
       code,
       mode: "duel_private",
       isPublic: false,
+      player1Id: args.hostId,
       status: "waiting",
       roundCount: args.roundCount,
       currentRoundIndex: 0,
@@ -417,6 +524,7 @@ export const joinDuelPrivateRoom = mutation({
 
     await ctx.db.patch(game._id, {
       status: "round_active",
+      player2Id: args.guestId,
       questionIds,
       roundStartedAt: now,
       roundDeadline: now + ROUND_DURATION_MS,
@@ -490,6 +598,7 @@ export const findOrCreatePublicMatch = mutation({
 
         await ctx.db.patch(room._id, {
           status: "round_active",
+          player2Id: args.guestId,
           questionIds,
           roundStartedAt: now,
           roundDeadline: now + ROUND_DURATION_MS,
@@ -506,6 +615,7 @@ export const findOrCreatePublicMatch = mutation({
       code,
       mode: "duel_public",
       isPublic: true,
+      player1Id: args.guestId,
       status: "waiting",
       roundCount: args.roundCount,
       currentRoundIndex: 0,
@@ -865,3 +975,190 @@ export const advanceRound = mutation({
     }
   },
 });
+
+// ── Rematch Invitation System (1v1 Duels) ──────────────────────────
+
+/**
+ * Request a rematch after a completed Rank duel.
+ * Creates a new private duel room with the same roundCount, links it via
+ * `rematchGameId`, and alerts the opponent reactively.
+ */
+export const requestRankRematch = mutation({
+  args: {
+    completedGameId: v.id('rankGames'),
+    guestId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const game = await ctx.db.get(args.completedGameId);
+    if (!game) throw new Error('Game not found');
+
+    const isParticipant = game.participants.some((p) => p.guestId === args.guestId);
+    if (!isParticipant) throw new Error('Not a participant in this game');
+
+    // Check if a rematch was already created
+    const existingRematchId = (game as Record<string, unknown>).rematchGameId as Id<'rankGames'> | undefined;
+    if (existingRematchId) {
+      const existingRematch = await ctx.db.get(existingRematchId);
+      if (existingRematch && existingRematch.status === 'waiting') {
+        if (existingRematch.participants[0]?.guestId === args.guestId) {
+          return { rematchGameId: existingRematch._id, alreadyExists: true };
+        }
+        // Both clicked rematch -> auto-accept
+        const guest = await getGuestProfile(ctx, args.guestId);
+        const hostGuestId = existingRematch.participants[0]?.guestId;
+        const questionIds = await pickRandomQuestionIds(
+          ctx,
+          existingRematch.roundCount,
+          hostGuestId ? [hostGuestId, args.guestId] : [args.guestId],
+        );
+        const now = Date.now();
+        const updatedParticipants = [
+          ...existingRematch.participants,
+          {
+            guestId: args.guestId,
+            name: guest.nickname,
+            avatarSeed: guest.avatarSeed,
+            totalScore: 0,
+            roundScores: [],
+            hasSubmittedCurrentRound: false,
+          },
+        ];
+        await ctx.db.patch(existingRematch._id, {
+          status: 'round_active',
+          questionIds,
+          roundStartedAt: now,
+          roundDeadline: now + ROUND_DURATION_MS,
+          participants: updatedParticipants,
+        });
+        return { rematchGameId: existingRematch._id, autoAccepted: true };
+      }
+    }
+
+    // Create new waiting rematch room
+    const host = await getGuestProfile(ctx, args.guestId);
+    const now = Date.now();
+    const code = await generateUniqueRankRoomCode(ctx);
+
+    const newGameId = await ctx.db.insert('rankGames', {
+      code,
+      mode: 'duel_private',
+      isPublic: false,
+      player1Id: args.guestId,
+      status: 'waiting',
+      roundCount: game.roundCount,
+      currentRoundIndex: 0,
+      questionIds: [],
+      participants: [
+        {
+          guestId: args.guestId,
+          name: host.nickname,
+          avatarSeed: host.avatarSeed,
+          totalScore: 0,
+          roundScores: [],
+          hasSubmittedCurrentRound: false,
+        },
+      ],
+      roundHistory: [],
+      createdAt: now,
+    });
+
+    await ctx.db.patch(game._id, {
+      rematchGameId: newGameId,
+      rematchInviterId: args.guestId,
+    } as Record<string, unknown>);
+
+    await ctx.db.patch(newGameId, {
+      rematchFromGameId: game._id,
+      rematchInviterId: args.guestId,
+    } as Record<string, unknown>);
+
+    return { rematchGameId: newGameId };
+  },
+});
+
+/**
+ * Invitee accepts the rematch invite. Starts the game in round 1.
+ */
+export const acceptRankRematch = mutation({
+  args: {
+    completedGameId: v.id('rankGames'),
+    guestId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const game = await ctx.db.get(args.completedGameId);
+    if (!game) throw new Error('Game not found');
+
+    const rematchGameId = (game as Record<string, unknown>).rematchGameId as Id<'rankGames'> | undefined;
+    if (!rematchGameId) throw new Error('No rematch invitation found');
+
+    const rematchGame = await ctx.db.get(rematchGameId);
+    if (!rematchGame) throw new Error('Rematch room not found');
+
+    if (rematchGame.status === 'round_active') {
+      return { rematchGameId: rematchGame._id };
+    }
+    if (rematchGame.status !== 'waiting') {
+      throw new Error('Rematch invitation is no longer active');
+    }
+
+    const guest = await getGuestProfile(ctx, args.guestId);
+    const hostGuestId = rematchGame.participants[0]?.guestId;
+    const questionIds = await pickRandomQuestionIds(
+      ctx,
+      rematchGame.roundCount,
+      hostGuestId ? [hostGuestId, args.guestId] : [args.guestId],
+    );
+    const now = Date.now();
+    const updatedParticipants = [
+      ...rematchGame.participants,
+      {
+        guestId: args.guestId,
+        name: guest.nickname,
+        avatarSeed: guest.avatarSeed,
+        totalScore: 0,
+        roundScores: [],
+        hasSubmittedCurrentRound: false,
+      },
+    ];
+
+    await ctx.db.patch(rematchGame._id, {
+      status: 'round_active',
+      questionIds,
+      roundStartedAt: now,
+      roundDeadline: now + ROUND_DURATION_MS,
+      participants: updatedParticipants,
+    });
+
+    return { rematchGameId: rematchGame._id };
+  },
+});
+
+/**
+ * Invitee declines the rematch invite. Cancels the waiting room.
+ */
+export const declineRankRematch = mutation({
+  args: {
+    completedGameId: v.id('rankGames'),
+    guestId: v.id('guestUsers'),
+    sessionToken: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
+    const game = await ctx.db.get(args.completedGameId);
+    if (!game) return { success: false };
+
+    const rematchGameId = (game as Record<string, unknown>).rematchGameId as Id<'rankGames'> | undefined;
+    if (rematchGameId) {
+      const rematchGame = await ctx.db.get(rematchGameId);
+      if (rematchGame && rematchGame.status === 'waiting') {
+        await ctx.db.patch(rematchGameId, { status: 'abandoned' });
+      }
+    }
+    return { success: true };
+  },
+});
+

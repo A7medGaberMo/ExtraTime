@@ -75,7 +75,7 @@ export function RankHeader({
       ? 'text-rose-400 border-rose-500/40 bg-rose-950/30'
       : secondsRemaining <= 20
         ? 'text-amber-400 border-amber-500/30 bg-amber-950/20'
-        : 'text-lime border-white/10 bg-slate-900/90';
+        : 'text-gold border-white/10 bg-slate-900/90';
 
   return (
     <header className="w-full shrink-0 select-none space-y-2 pt-1.5 sm:pt-2">
@@ -87,7 +87,7 @@ export function RankHeader({
             icon={isDuel ? Sword : Trophy}
             size={14}
             weight="bold"
-            className="text-lime"
+            className="text-gold"
           />
           <span className="font-stats font-bold uppercase tracking-wide text-white">
             {t('common.round')} {currentRound}/{totalRounds}
@@ -98,7 +98,7 @@ export function RankHeader({
         <div className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-full border border-white/12 bg-slate-900/85 px-3 py-1.5 text-xs font-semibold text-slate-300 whitespace-nowrap shadow-[0_4px_12px_rgba(0,0,0,0.3),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
           {isDuel && opponent ? (
             <div className="flex items-center gap-1.5 font-stats text-xs">
-              <span className="font-bold text-lime">
+              <span className="font-bold text-gold">
                 {user?.totalScore !== undefined && user.totalScore > 0 ? `+${user.totalScore}` : user?.totalScore ?? 0}
               </span>
               <span className="text-steel font-medium">vs</span>
@@ -106,7 +106,7 @@ export function RankHeader({
                 {opponent.totalScore > 0 ? `+${opponent.totalScore}` : opponent.totalScore}
               </span>
               {opponent.hasSubmittedCurrentRound && (
-                <AppIcon icon={CheckCircle} size={13} weight="fill" className="text-lime inline-block" />
+                <AppIcon icon={CheckCircle} size={13} weight="fill" className="text-gold inline-block" />
               )}
             </div>
           ) : (
@@ -125,7 +125,7 @@ export function RankHeader({
               icon={Clock}
               size={14}
               weight="bold"
-              className={secondsRemaining <= 10 ? 'text-rose-400' : 'text-lime'}
+              className={secondsRemaining <= 10 ? 'text-rose-400' : 'text-gold'}
             />
             <span className="font-stats font-bold">{secondsRemaining}s</span>
           </div>
@@ -139,7 +139,7 @@ export function RankHeader({
       {/* Progress Track (Apple Sunken Track) */}
       <div className="h-1.5 w-full rounded-full bg-slate-950/80 border border-white/5 overflow-hidden shadow-inner">
         <div
-          className="h-full rounded-full bg-lime transition-all duration-500 shadow-[0_0_10px_rgba(142,224,0,0.5)]"
+          className="h-full rounded-full bg-gold transition-all duration-500 shadow-[0_0_10px_rgba(229,184,66,0.5)]"
           style={{ width: `${progressPercentage}%` }}
         />
       </div>

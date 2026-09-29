@@ -27,6 +27,15 @@ export const getByRoom = query({
       .first();
     if (!match) return null;
 
+    if (match.hostSquadSnapshot && match.guestSquadSnapshot) {
+      return {
+        ...match,
+        hostSquadDetails: match.hostSquadSnapshot,
+        guestSquadDetails: match.guestSquadSnapshot,
+      };
+    }
+
+    // Fallback for old matches
     const [hostSquad, guestSquad] = await Promise.all([
       hydratePlayerIds(ctx, match.hostSquad),
       hydratePlayerIds(ctx, match.guestSquad),

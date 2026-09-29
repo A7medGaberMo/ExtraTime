@@ -2,17 +2,14 @@
 
 import React, { use, useEffect, useState, useCallback, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../../../convex/_generated/api';
 import { Id } from '../../../../convex/_generated/dataModel';
-import { PlayerCard, formatDisplayName } from '@/components/shared/player-card';
-import { ClubCrestBadge, CountryFlagBadge } from '@/components/shared/card-badges';
+import { PlayerCard } from '@/components/shared/player-card';
 import { AuctionTimer } from '@/components/shared/auction-timer';
 import { BidSlider } from '@/components/shared/bid-slider';
 import { BidRevealAnimation } from '@/components/shared/bid-reveal-animation';
 import { TacticalPitch } from '@/components/shared/tactical-pitch';
-import { PlayerImage } from '@/components/shared/player-image';
 import type { PlayerCardData } from '@/types/player';
 import { useGuestSession } from '@/hooks/use-guest-session';
 import { unlockAudio, sfx } from '@/lib/sfx';
@@ -24,8 +21,6 @@ import {
   Crosshair,
   Eye,
   Binoculars,
-  CaretDown,
-  CaretUp,
   Lightning,
   Lock,
   LockKey,
@@ -33,10 +28,10 @@ import {
   CurrencyDollar,
   SignOut,
   WarningCircle,
+  Snowflake,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
-import { Panel } from '@/components/ui/panel';
 import { StatPill } from '@/components/ui/stat-pill';
 import { ModalShell } from '@/components/ui/modal-shell';
 import { useToast } from '@/components/shared/toast';
@@ -135,13 +130,15 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     // Reset per-round submit state when a fresh locked round starts.
     if (prev !== null && cur !== prev) {
       const budget = state.me?.budget ?? 0;
-      setBidAmount(Math.min(1, budget));
+      const passes = state.me?.passesUsed ?? 0;
+      const canP = budget === 0 || passes < 1;
+      setBidAmount(canP ? 0 : Math.min(1, budget));
       setLockedAmount(null);
       setError(null);
       autoResolveFired.current = false;
     }
     prevRoundRef.current = cur;
-  }, [state?.auction, state?.me?.budget]);
+  }, [state?.auction, state?.me?.budget, state?.me?.passesUsed]);
 
   const handleActivatePerk = useCallback(async () => {
     if (!guestId || !roomId || isActivatingPerk || state?.me?.perkUsed) return;
@@ -177,19 +174,38 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   // Auto-resolve when the blind phase expires without both locks.
   useEffect(() => {
     if (!state || !state.auction || state.auction.status !== 'active' || !deadline) return;
-    const isExpired = timeLeft === 0 && Date.now() >= deadline + 300;
-    if (isExpired && !autoResolveFired.current && !isSubmitting && guestId) {
-      autoResolveFired.current = true;
-      resolveSealedRound({
-        roomId: roomId as Id<'rooms'>,
-        userId: guestId,
-        sessionToken: sessionToken ?? undefined,
-      }).catch(() => {
-        autoResolveFired.current = false;
-      });
-    }
-    if (timeLeft > 0) autoResolveFired.current = false;
-  }, [timeLeft, deadline, state, isSubmitting, resolveSealedRound, roomId, guestId, sessionToken]);
+    const isExpired = timeLeft === 0 || Date.now() >= deadline;
+    if (!isExpired || isSubmitting || !guestId) return;
+
+    let retryTimer: NodeJS.Timeout | null = null;
+    let isCancelled = false;
+
+    const attemptResolve = async () => {
+      if (isCancelled) return;
+      try {
+        const res = await resolveSealedRound({
+          roomId: roomId as Id<'rooms'>,
+          userId: guestId,
+          sessionToken: sessionToken ?? undefined,
+        });
+        if (!res?.resolved && !isCancelled) {
+          // If server reports not resolved yet (e.g. clock sync window), retry shortly
+          retryTimer = setTimeout(attemptResolve, 800);
+        }
+      } catch {
+        if (!isCancelled) {
+          retryTimer = setTimeout(attemptResolve, 1200);
+        }
+      }
+    };
+
+    attemptResolve();
+
+    return () => {
+      isCancelled = true;
+      if (retryTimer) clearTimeout(retryTimer);
+    };
+  }, [timeLeft, deadline, state, state?.auction?.status, state?.auction?.currentRound, isSubmitting, resolveSealedRound, roomId, guestId, sessionToken]);
 
   /* ── Derived ───────────────────────────────────────────────── */
   const auction = state?.auction;
@@ -224,6 +240,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const isActive = auction?.status === 'active';
   const isHost = Boolean(state?.isHost);
   const myBudget = me?.budget ?? 0;
+  const isFrozen = Boolean(state?.isFrozen);
+  const opponentFrozen = Boolean(state?.opponentFrozen);
+  const freezeMaxBid = state?.freezeMaxBid ?? 15;
+  const passesUsed = me?.passesUsed ?? 0;
+  const canPass = myBudget === 0 || passesUsed < 1;
+  const maxAllowedBid = isFrozen ? Math.min(myBudget, freezeMaxBid) : myBudget;
+  const minAllowedBid = canPass ? 0 : Math.min(1, myBudget);
 
   const currentPosition =
     auction?.rounds && auction?.currentRound
@@ -262,26 +285,41 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   const quickChips = useMemo(() => {
     if (myBudget <= 0) return [{ label: '$0M', value: 0 }];
 
-    const quarter = Math.max(1, Math.round(myBudget * 0.25));
-    const half = Math.max(1, Math.round(myBudget * 0.5));
+    const quarter = Math.max(1, Math.round(maxAllowedBid * 0.25));
+    const half = Math.max(1, Math.round(maxAllowedBid * 0.5));
 
     const rawChips = [
-      { label: '$0M', value: 0 },
+      ...(canPass ? [{ label: '$0M', value: 0 }] : []),
       { label: '$1M', value: 1 },
       { label: `$${quarter}M`, value: quarter },
       { label: `$${half}M`, value: half },
-      { label: `$${myBudget}M (MAX)`, value: myBudget },
+      { label: `$${maxAllowedBid}M (MAX)`, value: maxAllowedBid },
     ];
 
     return rawChips.filter(
       (c, i, arr) =>
-        c.value >= 0 && c.value <= myBudget && arr.findIndex((x) => x.value === c.value) === i,
+        c.value >= minAllowedBid &&
+        c.value <= maxAllowedBid &&
+        arr.findIndex((x) => x.value === c.value) === i,
     );
-  }, [myBudget]);
+  }, [myBudget, maxAllowedBid, canPass, minAllowedBid]);
 
   /* ── Handlers ──────────────────────────────────────────────── */
   const handleLockBid = useCallback(async () => {
     if (!isActive || !guestId || myLocked) return;
+    if (bidAmount < minAllowedBid || bidAmount > maxAllowedBid) {
+      const errorMsg =
+        bidAmount < minAllowedBid
+          ? (lang === 'ar'
+              ? 'لقد استخدمت الباس بالفعل في هذا الماتش. الحد الأدنى $1M'
+              : 'You have already used your 1 free Pass this match. Minimum bid is $1M.')
+          : (lang === 'ar'
+              ? `الحد الأقصى للعرض في هذه الجولة هو $${maxAllowedBid}M`
+              : `Maximum allowed bid this round is $${maxAllowedBid}M.`);
+      setError(errorMsg);
+      toast(errorMsg, 'error');
+      return;
+    }
     setIsSubmitting(true);
     setError(null);
     try {
@@ -291,7 +329,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         sessionToken: sessionToken ?? undefined,
         amount: bidAmount,
       });
-      if ((res as any)?.expired) {
+      if ((res as Record<string, unknown> | null)?.expired) {
         toast(
           lang === 'ar'
             ? 'انتهى وقت الجولة وجارٍ حسم النتيجة...'
@@ -318,7 +356,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     } finally {
       setIsSubmitting(false);
     }
-  }, [isActive, guestId, sessionToken, myLocked, bidAmount, submitSealedBid, roomId, toast, lang]);
+  }, [isActive, guestId, sessionToken, myLocked, bidAmount, minAllowedBid, maxAllowedBid, submitSealedBid, roomId, toast, lang]);
 
   const handleRevealClose = useCallback(() => {
     setShowReveal(false);
@@ -349,7 +387,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     return (
       <div className="flex h-[100dvh] items-center justify-center">
         <div className="apple-glass-elevated p-8 rounded-3xl flex flex-col items-center gap-3 border border-white/10 shadow-2xl">
-          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-lime animate-spin" />
+          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
           <p className="text-steel text-xs font-black tracking-widest uppercase font-stats">
             {t('common.loading')}
           </p>
@@ -373,7 +411,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
   }
 
   return (
-    <article className="mx-auto flex h-[100dvh] max-h-[100dvh] w-full max-w-4xl flex-col justify-between overflow-hidden select-none p-2 sm:p-3 relative">
+    <article className="mx-auto flex h-[100dvh] max-h-[100dvh] w-full max-w-4xl lg:max-w-5xl xl:max-w-6xl flex-col justify-between overflow-hidden select-none p-2 sm:p-3 lg:p-4 relative">
       {/* ── 0. BID REVEAL OVERLAY MODAL ─────────────────────────────── */}
       <BidRevealAnimation
         isOpen={showReveal}
@@ -383,8 +421,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
       {/* ── 0. WAITING LOBBY OVERLAY (WHEN WAITING FOR OPPONENT) ────── */}
       {room.status === 'waiting' && !auction.guest && (
-        <div className="apple-glass-elevated absolute inset-2 sm:inset-4 z-40 p-6 flex flex-col items-center justify-center text-center space-y-5 rounded-3xl border border-lime/30 shadow-[0_16px_50px_rgba(149,232,16,0.15)] backdrop-blur-3xl">
-          <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-lime/40 bg-lime/10 text-lime shadow-[0_0_20px_rgba(149,232,16,0.25)]">
+        <div className="apple-glass-elevated absolute inset-2 sm:inset-4 z-40 p-6 flex flex-col items-center justify-center text-center space-y-5 rounded-3xl border border-gold/30 shadow-[0_16px_50px_rgba(229,184,66,0.15)] backdrop-blur-3xl">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-gold/40 bg-gold/10 text-gold shadow-[0_0_20px_rgba(229,184,66,0.25)]">
             <AppIcon icon={Crosshair} size={32} weight="duotone" />
           </div>
 
@@ -398,12 +436,12 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
           </div>
 
           {/* Room Code Card */}
-          <div className="apple-glass-card flex flex-col items-center gap-2 rounded-2xl border border-lime/30 bg-lime/5 p-4 max-w-xs w-full">
-            <span className="text-lime text-[10px] font-black tracking-widest uppercase font-stats">
+          <div className="apple-glass-card flex flex-col items-center gap-2 rounded-2xl border border-gold/30 bg-gold/5 p-4 max-w-xs w-full">
+            <span className="text-gold text-[10px] font-black tracking-widest uppercase font-stats">
               {t('joinRoom.roomCode')}
             </span>
             <div className="flex items-center gap-3">
-              <span className="font-stats text-lime text-3xl font-black tracking-[0.25em]">
+              <span className="font-stats text-gold text-3xl font-black tracking-[0.25em]">
                 {room.code}
               </span>
               <button
@@ -411,17 +449,17 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 onClick={copyCode}
                 aria-label="Copy Room Code"
                 title="Copy Room Code"
-                className="btn-haptic flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-steel hover:text-lime hover:border-lime/50 transition-colors cursor-pointer shadow-sm"
+                className="btn-haptic flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-steel hover:text-gold hover:border-gold/50 transition-colors cursor-pointer shadow-sm"
               >
-                <AppIcon icon={codeCopied ? Check : Copy} size={18} weight="bold" className={codeCopied ? 'text-lime' : ''} />
+                <AppIcon icon={codeCopied ? Check : Copy} size={18} weight="bold" className={codeCopied ? 'text-gold' : ''} />
               </button>
             </div>
           </div>
 
           <div className="flex items-center justify-center gap-2 text-xs text-steel font-medium font-stats">
             <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-lime" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-gold" />
             </span>
             <span>{t('lobby.waitingOpponent')}</span>
           </div>
@@ -444,11 +482,11 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
         {/* Dual Budget Badges */}
         <div className="flex items-center gap-1 sm:gap-2 min-w-0">
-          <div className="flex flex-col items-center justify-center rounded-xl border border-lime/40 bg-gradient-to-b from-lime/20 via-lime/10 to-slate-950 px-2.5 py-1 min-w-[70px] sm:min-w-[84px] shadow-[0_2px_12px_rgba(202,255,0,0.15)]">
-            <span className="text-lime text-[7.5px] leading-none font-black tracking-widest uppercase font-stats">
+          <div className="flex flex-col items-center justify-center rounded-xl border border-gold/40 bg-gradient-to-b from-gold/20 via-gold/10 to-slate-950 px-2.5 py-1 min-w-[70px] sm:min-w-[84px] shadow-[0_2px_12px_rgba(229,184,66,0.15)]">
+            <span className="text-gold text-[7.5px] leading-none font-black tracking-widest uppercase font-stats">
               {t('auction.you')}
             </span>
-            <span className="font-stats text-lime text-xs sm:text-base font-black leading-tight">
+            <span className="font-stats text-gold text-xs sm:text-base font-black leading-tight tabular-nums">
               ${myBudget}M
             </span>
           </div>
@@ -459,7 +497,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             <span className="text-rose-400 text-[7.5px] leading-none font-black tracking-widest uppercase font-stats">
               {t('auction.rival')}
             </span>
-            <span className="font-stats text-rose-400 text-xs sm:text-base font-black leading-tight">
+            <span className="font-stats text-rose-400 text-xs sm:text-base font-black leading-tight tabular-nums">
               ${opponent?.budget ?? 0}M
             </span>
           </div>
@@ -468,10 +506,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         {/* Dynamic Island: Scheme & Round Indicator */}
         <div className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-xl bg-white/[0.05] border border-white/12 shadow-inner font-stats">
           <div className="flex flex-col items-center leading-none">
-            <span className="text-slate-400 text-[7.5px] sm:text-[8px] font-bold uppercase tracking-wider">
+            <span className="text-steel text-[7.5px] sm:text-[8px] font-bold uppercase tracking-wider">
               {auction.formation} Scheme
             </span>
-            <span className="text-white text-[11px] sm:text-xs font-black tracking-wider pt-0.5">
+            <span className="text-white text-[11px] sm:text-xs font-black tracking-wider pt-0.5 tabular-nums">
               {t('common.round')} {auction.currentRound}/{totalRounds}
             </span>
           </div>
@@ -546,10 +584,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       {/* ── 2. MAIN ARENA STAGE (ZERO SCROLL VIEWPORT) ─────────────────── */}
       <div className="flex-1 flex flex-col justify-center min-h-0 py-1.5 sm:py-2">
         {/* Desktop Split Screen OR Mobile Tab Screen */}
-        <div className="w-full h-full flex flex-col lg:grid lg:grid-cols-[1fr_340px] gap-2 sm:gap-3 items-center justify-center min-h-0">
+        <div className="w-full h-full flex flex-col lg:grid lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_400px] gap-2 sm:gap-3 lg:gap-4 items-center justify-center min-h-0">
           
           {/* LEFT: AUCTION & BIDDING CONSOLE */}
-          <div className={`w-full flex-col gap-2 max-w-lg mx-auto ${activeTab === 'arena' ? 'flex' : 'hidden lg:flex'}`}>
+          <div className={`w-full flex-col gap-2 max-w-lg lg:max-w-xl mx-auto ${activeTab === 'arena' ? 'flex' : 'hidden lg:flex'}`}>
             {/* Target Player Showcase */}
             <div className="apple-glass-elevated p-2.5 sm:p-3 relative overflow-hidden space-y-2 border border-white/12 rounded-2xl">
               {/* Stage Lighting Ambient Glow */}
@@ -578,15 +616,24 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                       type="button"
                       onClick={handleActivatePerk}
                       disabled={isActivatingPerk || myLocked}
-                      className="btn-haptic inline-flex items-center gap-1 rounded-full border border-amber-400/40 bg-gradient-to-b from-amber-400/25 to-amber-400/10 hover:bg-amber-400/30 active:scale-95 px-2.5 py-0.5 text-[10px] sm:text-[11px] font-black text-amber-300 uppercase tracking-wider backdrop-blur-xl shadow-[0_2px_12px_rgba(245,158,11,0.2)] transition-all cursor-pointer disabled:opacity-50 disabled:pointer-events-none font-stats"
+                      className={`btn-haptic inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-[10px] sm:text-[11px] font-black uppercase tracking-wider backdrop-blur-xl transition-all cursor-pointer disabled:opacity-50 disabled:pointer-events-none font-stats ${
+                        me.perk === 'FREEZE'
+                          ? 'border-cyan-400/40 bg-gradient-to-b from-cyan-400/25 to-cyan-400/10 hover:bg-cyan-400/30 text-cyan-300 shadow-[0_2px_12px_rgba(6,182,212,0.25)]'
+                          : 'border-amber-400/40 bg-gradient-to-b from-amber-400/25 to-amber-400/10 hover:bg-amber-400/30 text-amber-300 shadow-[0_2px_12px_rgba(245,158,11,0.2)]'
+                      }`}
                     >
-                      <AppIcon icon={me.perk === 'SCOUT' ? Binoculars : Eye} size={13} weight="fill" className="text-amber-300" />
+                      <AppIcon
+                        icon={me.perk === 'SCOUT' ? Binoculars : me.perk === 'FREEZE' ? Snowflake : Eye}
+                        size={13}
+                        weight="fill"
+                        className={me.perk === 'FREEZE' ? 'text-cyan-300' : 'text-amber-300'}
+                      />
                       <span>{t('auction.usePerk', { perk: me.perk })}</span>
                     </button>
                   )}
 
                   <StatPill
-                    variant={opponentLocked ? 'lime' : 'muted'}
+                    variant={opponentLocked ? 'gold' : 'muted'}
                     size="sm"
                     label={opponentLocked ? t('auction.rivalLocked') : t('auction.rivalThinking')}
                     className={opponentLocked ? 'animate-pulse shadow-sm' : ''}
@@ -611,13 +658,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                   </div>
                 ) : (
                   <div className="flex h-[148px] w-24 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/80">
-                    <AppIcon icon={CircleNotch} size={24} weight="bold" className="text-lime animate-spin" />
+                    <AppIcon icon={CircleNotch} size={24} weight="bold" className="text-gold animate-spin" />
                   </div>
                 )}
 
                 {/* Sub / Backup Capsule */}
                 <div className="mt-1.5 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-950/80 px-2.5 py-0.5 text-[9.5px] sm:text-[10px] text-slate-300 font-stats shadow-inner">
-                  <span className="h-1.5 w-1.5 rounded-full bg-lime/80" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold/80" />
                   {revealedSubPlayer ? (
                     <span>
                       {t('auction.runnerUpGets')}: <strong className="text-white">{revealedSubPlayer.name}</strong> ({revealedSubPlayer.tier})
@@ -630,9 +677,21 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
               {/* Perk Intel Banner */}
               {me?.perkUsed && me?.perkUsedRound === auction.currentRound && (
-                <div className="relative z-10 mt-1 flex items-center gap-2 rounded-xl border border-amber-500/40 bg-gradient-to-r from-amber-500/20 via-amber-500/10 to-transparent p-2 shadow-lg backdrop-blur-md text-start">
-                  <div className="rounded-lg border border-amber-400/30 bg-amber-400/15 p-1 text-amber-300 shrink-0">
-                    <AppIcon icon={Lightning} size={13} weight="fill" />
+                <div
+                  className={`relative z-10 mt-1 flex items-center gap-2 rounded-xl border p-2 shadow-lg backdrop-blur-md text-start ${
+                    me.perk === 'FREEZE'
+                      ? 'border-cyan-500/40 bg-gradient-to-r from-cyan-500/20 via-cyan-500/10 to-transparent'
+                      : 'border-amber-500/40 bg-gradient-to-r from-amber-500/20 via-amber-500/10 to-transparent'
+                  }`}
+                >
+                  <div
+                    className={`rounded-lg border p-1 shrink-0 ${
+                      me.perk === 'FREEZE'
+                        ? 'border-cyan-400/30 bg-cyan-400/15 text-cyan-300'
+                        : 'border-amber-400/30 bg-amber-400/15 text-amber-300'
+                    }`}
+                  >
+                    <AppIcon icon={me.perk === 'FREEZE' ? Snowflake : Lightning} size={13} weight="fill" />
                   </div>
                   <div className="min-w-0 flex-1 text-[10.5px] font-medium text-white truncate">
                     {me.perk === 'SPY' && revealedSubPlayer && (
@@ -640,6 +699,9 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                     )}
                     {me.perk === 'SCOUT' && revealedNextMainPlayer && (
                       <span>{t('auction.scoutIntel', { name: revealedNextMainPlayer.name, pos: nextRoundInfo?.position || '' })}</span>
+                    )}
+                    {me.perk === 'FREEZE' && (
+                      <span>{t('auction.freezeIntel')}</span>
                     )}
                   </div>
                 </div>
@@ -651,7 +713,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
               <div
                 className={`apple-glass-elevated p-2.5 sm:p-3 space-y-2.5 transition-all border rounded-2xl ${
                   myLocked
-                    ? 'border-lime/40 bg-gradient-to-b from-lime/10 to-transparent shadow-[0_8px_30px_rgba(149,232,16,0.12)]'
+                    ? 'border-gold/40 bg-gradient-to-b from-gold/10 to-transparent shadow-[0_8px_30px_rgba(229,184,66,0.12)]'
                     : 'border-white/12'
                 }`}
               >
@@ -660,12 +722,12 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                   <div className="flex items-center gap-1.5">
                     <div
                       className={`rounded-xl border p-1 ${
-                        myLocked ? 'border-lime/50 bg-lime/15 text-lime shadow-[0_0_10px_rgba(149,232,16,0.2)]' : 'border-white/15 bg-white/5 text-steel'
+                        myLocked ? 'border-gold/50 bg-gold/15 text-gold shadow-[0_0_10px_rgba(229,184,66,0.2)]' : 'border-white/15 bg-white/5 text-steel'
                       }`}
                     >
                       <AppIcon icon={myLocked ? LockKey : Lock} size={14} weight={myLocked ? 'fill' : 'bold'} />
                     </div>
-                    <span className={`text-[11px] font-black uppercase tracking-wider font-stats ${bothLocked ? 'text-amber-300' : myLocked ? 'text-lime' : 'text-white'}`}>
+                    <span className={`text-[11px] font-black uppercase tracking-wider font-stats ${bothLocked ? 'text-amber-300' : myLocked ? 'text-gold' : 'text-white'}`}>
                       {bothLocked
                         ? t('auction.bothSealed')
                         : myLocked
@@ -681,7 +743,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 {myLocked ? (
                   <div className="animate-fade-in space-y-1 py-1.5 text-center">
                     <StatPill
-                      variant="lime"
+                      variant="gold"
                       size="md"
                       icon={<AppIcon icon={Check} size={15} weight="bold" />}
                       label={
@@ -689,7 +751,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                           ? t('auction.envelopeLockedBadge', { amount: lockedAmount })
                           : t('auction.mySealed')
                       }
-                      className="shadow-[0_4px_16px_rgba(149,232,16,0.2)]"
+                      className="shadow-[0_4px_16px_rgba(229,184,66,0.2)]"
                     />
                     <p className="text-steel text-[11px] font-medium max-w-md mx-auto leading-relaxed">
                       {opponentLocked
@@ -699,6 +761,34 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                   </div>
                 ) : (
                   <div className="space-y-2">
+                    {/* Frozen by Opponent Alert */}
+                    {isFrozen && (
+                      <div className="flex items-center gap-2 rounded-xl border border-cyan-400/50 bg-cyan-500/15 px-3 py-1.5 text-[11px] font-bold text-cyan-200 shadow-[0_0_15px_rgba(6,182,212,0.25)] animate-pulse">
+                        <AppIcon icon={Snowflake} size={15} weight="fill" className="text-cyan-300 shrink-0" />
+                        <span>{t('auction.frozenWarning')}</span>
+                      </div>
+                    )}
+
+                    {/* Pass Status & Quick Info */}
+                    <div className="flex items-center justify-between px-0.5">
+                      <span
+                        className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-stats border ${
+                          canPass
+                            ? 'border-emerald-400/30 bg-emerald-400/10 text-emerald-300'
+                            : 'border-white/10 bg-white/5 text-steel'
+                        }`}
+                      >
+                        <span className={`h-1.5 w-1.5 rounded-full ${canPass ? 'bg-emerald-400' : 'bg-steel'}`} />
+                        {canPass ? t('auction.passAvailable') : t('auction.passUsed')}
+                      </span>
+                      {opponentFrozen && (
+                        <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-stats border border-cyan-400/30 bg-cyan-400/10 text-cyan-300">
+                          <AppIcon icon={Snowflake} size={11} weight="fill" />
+                          <span>{t('auction.freezeIntel')}</span>
+                        </span>
+                      )}
+                    </div>
+
                     {/* Quick Chip Selector */}
                     <div className="grid grid-cols-5 gap-1">
                       {quickChips.map((chip) => (
@@ -708,7 +798,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                           onClick={() => setBidAmount(chip.value)}
                           className={`btn-haptic rounded-xl border py-1 px-0.5 text-[10px] sm:text-[10.5px] font-black uppercase tracking-wider transition-all active:scale-95 cursor-pointer font-stats ${
                             bidAmount === chip.value
-                              ? 'border-lime bg-lime text-slate-950 shadow-[0_2px_10px_rgba(149,232,16,0.3)] ring-1 ring-lime/50'
+                              ? 'border-gold bg-gold text-slate-950 shadow-[0_2px_10px_rgba(229,184,66,0.3)] ring-1 ring-gold/50'
                               : 'border-white/10 bg-white/5 text-white hover:bg-white/10'
                           }`}
                         >
@@ -719,13 +809,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
                     {/* Slider Track */}
                     <div className="space-y-0.5 px-0.5">
-                      <BidSlider value={bidAmount} min={0} max={myBudget} onChange={setBidAmount} />
+                      <BidSlider value={bidAmount} min={minAllowedBid} max={maxAllowedBid} onChange={setBidAmount} />
                       <div className="flex items-center justify-between pt-0.5">
                         <span className="text-steel flex items-center gap-1 text-[11px] font-black tracking-wider uppercase font-stats">
-                          <AppIcon icon={CurrencyDollar} size={14} weight="bold" className="text-lime" />
+                          <AppIcon icon={CurrencyDollar} size={14} weight="bold" className="text-gold" />
                           <span>{t('auction.yourBidAmount')}</span>
                         </span>
-                        <span className="font-stats text-lime text-lg font-black">${bidAmount}M</span>
+                        <span className="font-stats text-gold text-lg font-black">${bidAmount}M</span>
                       </div>
                     </div>
 
@@ -741,10 +831,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                       size="md"
                       fullWidth
                       onClick={handleLockBid}
-                      disabled={isSubmitting || bidAmount < 0 || bidAmount > myBudget}
+                      disabled={isSubmitting || bidAmount < minAllowedBid || bidAmount > maxAllowedBid}
                       loading={isSubmitting}
                       leftIcon={<AppIcon icon={LockKey} size={16} weight="fill" className="text-slate-950" />}
-                      className="shadow-[0_8px_20px_rgba(149,232,16,0.25)] min-h-[42px]"
+                      className="shadow-[0_8px_20px_rgba(229,184,66,0.25)] min-h-[42px]"
                     >
                       {bidAmount === 0
                         ? t('auction.lockZeroBid')
@@ -763,7 +853,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 <span className="text-xs font-black text-white uppercase font-display">
                   {t('auction.scheme', { formation: auction.formation })}
                 </span>
-                <span className="rounded-full border border-lime/30 bg-lime/10 px-2 py-0.5 text-[9px] font-black text-lime uppercase font-stats">
+                <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-[9px] font-black text-gold uppercase font-stats">
                   {t('auction.signedCount', { count: signedCount, total: totalRounds })}
                 </span>
               </div>
@@ -799,7 +889,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 : 'text-slate-400 hover:text-white'
             }`}
           >
-            <AppIcon icon={Crosshair} size={15} weight="bold" className={activeTab === 'arena' ? 'text-lime' : ''} />
+            <AppIcon icon={Crosshair} size={15} weight="bold" className={activeTab === 'arena' ? 'text-gold' : ''} />
             <span>{t('auction.arenaTab')}</span>
           </button>
 
@@ -815,7 +905,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 : 'text-slate-400 hover:text-white'
             }`}
           >
-            <AppIcon icon={Shield} size={15} weight="bold" className={activeTab === 'pitch' ? 'text-lime' : ''} />
+            <AppIcon icon={Shield} size={15} weight="bold" className={activeTab === 'pitch' ? 'text-gold' : ''} />
             <span>{t('auction.squadTab', { count: signedCount, total: totalRounds })}</span>
           </button>
         </div>

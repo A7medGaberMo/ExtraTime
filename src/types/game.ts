@@ -1,7 +1,12 @@
 /**
  * Game type identifiers for parallel game modes.
  */
-export type GameType = 'hidden_bid' | 'pack_opening_duel' | 'penalty_shootout' | 'classic_draft';
+export type GameType =
+  | 'hidden_bid'
+  | 'pack_opening_duel'
+  | 'penalty_shootout'
+  | 'classic_draft'
+  | 'bank_it';
 
 /** Base configuration for any game mode */
 export interface GameConfig {
@@ -30,7 +35,7 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     minPlayers: 2,
     maxPlayers: 2,
     icon: 'Crosshair',
-    accentColor: '#95E810',
+    accentColor: '#E5B842',
     isAvailable: true,
     routePrefix: '/auction',
   },
@@ -71,6 +76,19 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     accentColor: '#00F0FF',
     isAvailable: true,
     routePrefix: '/draft',
+  },
+  bank_it: {
+    type: 'bank_it',
+    label: 'Bank It',
+    badgeLabel: '🏦 BANK IT',
+    description:
+      'Double your points streak or bank it before one wrong answer wipes it out. High-stakes football trivia ladder.',
+    minPlayers: 1,
+    maxPlayers: 2,
+    icon: 'Coins',
+    accentColor: '#E5B842',
+    isAvailable: true,
+    routePrefix: '/bank',
   },
 };
 

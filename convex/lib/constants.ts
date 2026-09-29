@@ -100,14 +100,14 @@ export function lineFor(position: string): 'GK' | 'DEF' | 'MID' | 'ATT' {
 }
 
 // ── Pool Mode ──────────────────────────────────────────────
-export const POOL_MODES = ['GLOBAL', 'ACTIVE', 'EPL', 'TOP_TEAMS', 'ICONS'] as const;
+export const POOL_MODES = ['GLOBAL', 'ACTIVE', 'EPL', 'EGYPT', 'ICONS'] as const;
 export type PoolMode = (typeof POOL_MODES)[number];
 
 export const poolModeValidator = v.union(
   v.literal('GLOBAL'),
   v.literal('ACTIVE'),
   v.literal('EPL'),
-  v.literal('TOP_TEAMS'),
+  v.literal('EGYPT'),
   v.literal('ICONS'),
 );
 
@@ -136,4 +136,5 @@ export const LEAGUE_COUNTRY: Record<string, string> = {
   'Saudi Pro League': 'Saudi Arabia',
   'Belgian Pro League': 'Belgium',
   'Global Legends': 'International',
+  'Egyptian Premier League': 'Egypt',
 };

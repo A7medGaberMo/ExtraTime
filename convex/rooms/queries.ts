@@ -1,7 +1,8 @@
 import { query } from '../_generated/server';
+import { Id } from '../_generated/dataModel';
 import { v } from 'convex/values';
 
-type PoolMode = 'GLOBAL' | 'ACTIVE' | 'EPL' | 'TOP_TEAMS' | 'ICONS';
+type PoolMode = 'GLOBAL' | 'ACTIVE' | 'EPL' | 'EGYPT' | 'ICONS';
 type PublicQueueSummary = Record<PoolMode, Record<5 | 11, number>>;
 
 export const getByCode = query({
@@ -36,7 +37,7 @@ export const getPublicQueueSummary = query({
       GLOBAL: { 5: 0, 11: 0 },
       ACTIVE: { 5: 0, 11: 0 },
       EPL: { 5: 0, 11: 0 },
-      TOP_TEAMS: { 5: 0, 11: 0 },
+      EGYPT: { 5: 0, 11: 0 },
       ICONS: { 5: 0, 11: 0 },
     };
 
@@ -47,7 +48,7 @@ export const getPublicQueueSummary = query({
         (poolMode === 'GLOBAL' ||
           poolMode === 'ACTIVE' ||
           poolMode === 'EPL' ||
-          poolMode === 'TOP_TEAMS' ||
+          poolMode === 'EGYPT' ||
           poolMode === 'ICONS') &&
         (matchSize === 5 || matchSize === 11)
       ) {
@@ -199,8 +200,101 @@ export const getUserActiveMatch = query({
       }
     }
 
+    // 4. Check Bank duel / solo games using indexed player lookups
+    const [bankAsP1, bankAsP2] = await Promise.all([
+      ctx.db
+        .query('bankGames')
+        .withIndex('by_player1', (q) => q.eq('player1Id', guestId))
+        .order('desc')
+        .take(5),
+      ctx.db
+        .query('bankGames')
+        .withIndex('by_player2', (q) => q.eq('player2Id', guestId))
+        .order('desc')
+        .take(5),
+    ]);
+
+    const activeStatuses = new Set(['waiting', 'in_progress', 'round_break', 'sudden_death']);
+    const candidateBankGames = [...bankAsP1, ...bankAsP2].filter(
+      (g) => activeStatuses.has(g.status) && g.createdAt >= now - maxAgeMs
+    );
+
+    for (const game of candidateBankGames) {
+      const isParticipant = game.participants?.some((p) => p.guestId === guestId);
+      if (isParticipant) {
+        return {
+          type: 'bank' as const,
+          id: game._id,
+          code: game.code,
+          status: game.status,
+          mode: game.mode,
+          currentRound: game.currentRound,
+          isHost: game.participants[0]?.guestId === guestId,
+          createdAt: game.createdAt,
+        };
+      }
+    }
+
     return null;
   },
 });
 
+/**
+ * Reactive rematch invite state for the result page.
+ * Both players subscribe; returns null if no rematch has been requested.
+ */
+export const getRematchState = query({
+  args: {
+    roomId: v.id('rooms'),
+    userId: v.id('guestUsers'),
+  },
+  handler: async (ctx, args) => {
+    const room = await ctx.db.get(args.roomId);
+    if (!room) return null;
 
+    const rematchRoomId = (room as Record<string, unknown>).rematchRoomId;
+    if (!rematchRoomId) return { status: 'none' as const };
+
+    const rematchRoom = await ctx.db.get(rematchRoomId as Id<'rooms'>);
+    if (!rematchRoom) return { status: 'none' as const };
+
+    const inviterId = (rematchRoom as Record<string, unknown>).rematchInviterId as
+      | Id<'guestUsers'>
+      | undefined;
+    const iAmInviter = inviterId === args.userId;
+
+    // Fetch inviter's nickname for the UI
+    const inviterUser = inviterId ? await ctx.db.get(inviterId) : null;
+    const inviterName = inviterUser?.nickname ?? 'Opponent';
+
+    if (rematchRoom.status === 'waiting') {
+      return {
+        status: 'pending' as const,
+        rematchRoomId: rematchRoom._id,
+        iAmInviter,
+        inviterName,
+      };
+    }
+
+    if (rematchRoom.status === 'in_progress' || rematchRoom.status === 'ready') {
+      return {
+        status: 'accepted' as const,
+        rematchRoomId: rematchRoom._id,
+        iAmInviter,
+        inviterName,
+      };
+    }
+
+    if (rematchRoom.status === 'abandoned') {
+      return {
+        status: 'declined' as const,
+        rematchRoomId: rematchRoom._id,
+        iAmInviter,
+        inviterName,
+      };
+    }
+
+    // completed or unknown
+    return { status: 'none' as const };
+  },
+});

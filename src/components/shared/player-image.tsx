@@ -31,7 +31,6 @@ export function PlayerImage({
   alt,
   name,
   size,
-  tier,
   className,
   imgClassName,
   fallbackClassName,

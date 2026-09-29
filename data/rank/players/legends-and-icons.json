@@ -935,5 +935,1022 @@
       "en": "The greatest one-club loyalty and record goal tallies",
       "ar": "أعلى حصيلة أهداف مسجلة لقميص نادٍ واحد في تاريخ كرة القدم"
     }
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legends by all-time Premier League goals scored",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب عدد الأهداف المسجلة في تاريخ الدوري الإنجليزي الممتاز"
+    },
+    "subtitle": {
+      "en": "Premier League all-time top goalscorers",
+      "ar": "الهدافون التاريخيون للدوري الإنجليزي الممتاز"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "pl_goals_shearer",
+        "name": {
+          "en": "Alan Shearer",
+          "ar": "آلان شيرر"
+        },
+        "subText": {
+          "en": "Blackburn & Newcastle",
+          "ar": "بلاكبيرن ونيوكاسل"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Alan_Shearer_2011.jpg/330px-Alan_Shearer_2011.jpg",
+          "fallbackText": "AS9"
+        },
+        "stat": {
+          "en": "260 Goals",
+          "ar": "260 هدفاً"
+        }
+      },
+      {
+        "answerKey": "pl_goals_kane",
+        "name": {
+          "en": "Harry Kane",
+          "ar": "هاري كين"
+        },
+        "subText": {
+          "en": "Tottenham Hotspur",
+          "ar": "توتنهام هوتسبير"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Harry_Kane_2018.jpg/330px-Harry_Kane_2018.jpg",
+          "fallbackText": "HK10"
+        },
+        "stat": {
+          "en": "213 Goals",
+          "ar": "213 هدفاً"
+        }
+      },
+      {
+        "answerKey": "pl_goals_rooney",
+        "name": {
+          "en": "Wayne Rooney",
+          "ar": "واين روني"
+        },
+        "subText": {
+          "en": "Everton & Man United",
+          "ar": "إيفرتون ومانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Wayne_Rooney_2018.jpg/330px-Wayne_Rooney_2018.jpg",
+          "fallbackText": "WR10"
+        },
+        "stat": {
+          "en": "208 Goals",
+          "ar": "208 أهداف"
+        }
+      },
+      {
+        "answerKey": "pl_goals_cole",
+        "name": {
+          "en": "Andrew Cole",
+          "ar": "أندي كول"
+        },
+        "subText": {
+          "en": "Newcastle & Man United",
+          "ar": "نيوكاسل ومانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Andy_Cole_2014.jpg/330px-Andy_Cole_2014.jpg",
+          "fallbackText": "AC9"
+        },
+        "stat": {
+          "en": "187 Goals",
+          "ar": "187 هدفاً"
+        }
+      },
+      {
+        "answerKey": "pl_goals_aguero",
+        "name": {
+          "en": "Sergio Agüero",
+          "ar": "سيرخيو أغويرو"
+        },
+        "subText": {
+          "en": "Manchester City",
+          "ar": "مانشستر سيتي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sergio_Ag%C3%BCero_2018.jpg/330px-Sergio_Ag%C3%BCero_2018.jpg",
+          "fallbackText": "SA10"
+        },
+        "stat": {
+          "en": "184 Goals",
+          "ar": "184 هدفاً"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legends by official career Serie A goals scored",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب عدد الأهداف المسجلة في تاريخ الدوري الإيطالي"
+    },
+    "subtitle": {
+      "en": "Serie A all-time highest goalscorers",
+      "ar": "الهدافون التاريخيون للدوري الإيطالي"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "seriea_piola",
+        "name": {
+          "en": "Silvio Piola",
+          "ar": "سيلفيو بيولا"
+        },
+        "subText": {
+          "en": "Pro Vercelli, Lazio & Novara",
+          "ar": "برو فرتشيلي، لاتسيو ونوفارا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Silvio_Piola_1938.jpg/330px-Silvio_Piola_1938.jpg",
+          "fallbackText": "SP"
+        },
+        "stat": {
+          "en": "274 Goals",
+          "ar": "274 هدفاً"
+        }
+      },
+      {
+        "answerKey": "seriea_totti",
+        "name": {
+          "en": "Francesco Totti",
+          "ar": "فرانشيسكو توتي"
+        },
+        "subText": {
+          "en": "AS Roma",
+          "ar": "روما"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Francesco_Totti_2017.jpg/330px-Francesco_Totti_2017.jpg",
+          "fallbackText": "FT10"
+        },
+        "stat": {
+          "en": "250 Goals",
+          "ar": "250 هدفاً"
+        }
+      },
+      {
+        "answerKey": "seriea_nordahl",
+        "name": {
+          "en": "Gunnar Nordahl",
+          "ar": "غونار نوردال"
+        },
+        "subText": {
+          "en": "AC Milan & AS Roma",
+          "ar": "ميلان وروما"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Gunnar_Nordahl_1950s.jpg/330px-Gunnar_Nordahl_1950s.jpg",
+          "fallbackText": "GN"
+        },
+        "stat": {
+          "en": "225 Goals",
+          "ar": "225 هدفاً"
+        }
+      },
+      {
+        "answerKey": "seriea_meazza",
+        "name": {
+          "en": "Giuseppe Meazza",
+          "ar": "جوزيبي مياتزا"
+        },
+        "subText": {
+          "en": "Inter, Milan & Juventus",
+          "ar": "إنتر، ميلان ويوفنتوس"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Giuseppe_Meazza_1930s.jpg/330px-Giuseppe_Meazza_1930s.jpg",
+          "fallbackText": "GM"
+        },
+        "stat": {
+          "en": "216 Goals",
+          "ar": "216 هدفاً"
+        }
+      },
+      {
+        "answerKey": "seriea_dinatale",
+        "name": {
+          "en": "Antonio Di Natale",
+          "ar": "أنطونيو دي ناتالي"
+        },
+        "subText": {
+          "en": "Empoli & Udinese",
+          "ar": "إمبولي وأودينيزي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Antonio_Di_Natale_2011.jpg/330px-Antonio_Di_Natale_2011.jpg",
+          "fallbackText": "ADN"
+        },
+        "stat": {
+          "en": "209 Goals",
+          "ar": "209 أهداف"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 icons by official career La Liga goals scored",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب عدد الأهداف المسجلة في تاريخ الدوري الإسباني"
+    },
+    "subtitle": {
+      "en": "La Liga all-time highest goalscorers",
+      "ar": "الهدافون التاريخيون للدوري الإسباني (لا ليغا)"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "laliga_goals_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "FC Barcelona",
+          "ar": "برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM10"
+        },
+        "stat": {
+          "en": "474 Goals",
+          "ar": "474 هدفاً"
+        }
+      },
+      {
+        "answerKey": "laliga_goals_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
+        },
+        "stat": {
+          "en": "311 Goals",
+          "ar": "311 هدفاً"
+        }
+      },
+      {
+        "answerKey": "laliga_goals_zarra",
+        "name": {
+          "en": "Telmo Zarra",
+          "ar": "تيلمو زارا"
+        },
+        "subText": {
+          "en": "Athletic Club",
+          "ar": "أتلتيك بيلباو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Telmo_Zarra_1950.jpg/330px-Telmo_Zarra_1950.jpg",
+          "fallbackText": "TZ"
+        },
+        "stat": {
+          "en": "251 Goals",
+          "ar": "251 هدفاً"
+        }
+      },
+      {
+        "answerKey": "laliga_goals_hugosanchez",
+        "name": {
+          "en": "Hugo Sánchez",
+          "ar": "هوغو سانشيز"
+        },
+        "subText": {
+          "en": "Atlético Madrid & Real Madrid",
+          "ar": "أتلتيكو مدريد وريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Hugo_S%C3%A1nchez_2015.jpg/330px-Hugo_S%C3%A1nchez_2015.jpg",
+          "fallbackText": "HS9"
+        },
+        "stat": {
+          "en": "234 Goals",
+          "ar": "234 هدفاً"
+        }
+      },
+      {
+        "answerKey": "laliga_goals_raul",
+        "name": {
+          "en": "Raúl González",
+          "ar": "راؤول غونزاليس"
+        },
+        "subText": {
+          "en": "Real Madrid",
+          "ar": "ريال مدريد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Raul_Gonzalez_2011.jpg/330px-Raul_Gonzalez_2011.jpg",
+          "fallbackText": "R7"
+        },
+        "stat": {
+          "en": "228 Goals",
+          "ar": "228 هدفاً"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legends by official career Bundesliga goals scored",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب عدد الأهداف المسجلة في تاريخ الدوري الألماني"
+    },
+    "subtitle": {
+      "en": "Bundesliga all-time top goalscorers",
+      "ar": "الهدافون التاريخيون للدوري الألماني (بوندسليغا)"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "buli_goals_gerd",
+        "name": {
+          "en": "Gerd Müller",
+          "ar": "غيرد مولر"
+        },
+        "subText": {
+          "en": "Bayern Munich",
+          "ar": "بايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerd_M%C3%BCller_1974.jpg",
+          "fallbackText": "GM9"
+        },
+        "stat": {
+          "en": "365 Goals",
+          "ar": "365 هدفاً"
+        }
+      },
+      {
+        "answerKey": "buli_goals_lewy",
+        "name": {
+          "en": "Robert Lewandowski",
+          "ar": "روبرت ليفاندوفسكي"
+        },
+        "subText": {
+          "en": "Borussia Dortmund & Bayern Munich",
+          "ar": "دورتموند وبايرن ميونخ"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Robert_Lewandowski_2018.jpg/330px-Robert_Lewandowski_2018.jpg",
+          "fallbackText": "RL9"
+        },
+        "stat": {
+          "en": "312 Goals",
+          "ar": "312 هدفاً"
+        }
+      },
+      {
+        "answerKey": "buli_goals_fischer",
+        "name": {
+          "en": "Klaus Fischer",
+          "ar": "كلاوس فيشر"
+        },
+        "subText": {
+          "en": "Schalke 04 & Köln",
+          "ar": "شالكه وكولن"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Klaus_Fischer_1978.jpg/330px-Klaus_Fischer_1978.jpg",
+          "fallbackText": "KF"
+        },
+        "stat": {
+          "en": "268 Goals",
+          "ar": "268 هدفاً"
+        }
+      },
+      {
+        "answerKey": "buli_goals_heynckes",
+        "name": {
+          "en": "Jupp Heynckes",
+          "ar": "يوب هاينكس"
+        },
+        "subText": {
+          "en": "Borussia Mönchengladbach & Hannover",
+          "ar": "مونشنغلادباخ وهانوفر"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Jupp_Heynckes_2013.jpg/330px-Jupp_Heynckes_2013.jpg",
+          "fallbackText": "JH"
+        },
+        "stat": {
+          "en": "220 Goals",
+          "ar": "220 هدفاً"
+        }
+      },
+      {
+        "answerKey": "buli_goals_burgsmuller",
+        "name": {
+          "en": "Manfred Burgsmüller",
+          "ar": "مانفريد بورغسمولر"
+        },
+        "subText": {
+          "en": "Borussia Dortmund & Werder Bremen",
+          "ar": "دورتموند وفيردر بريمن"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Manfred_Burgsm%C3%BCller_1988.jpg/330px-Manfred_Burgsm%C3%BCller_1988.jpg",
+          "fallbackText": "MB"
+        },
+        "stat": {
+          "en": "213 Goals",
+          "ar": "213 هدفاً"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 South American icons by all-time international goals scored",
+      "ar": "رتّب هؤلاء الأساطير الخمسة من أمريكا الجنوبية حسب عدد الأهداف الدولية"
+    },
+    "subtitle": {
+      "en": "CONMEBOL top international goalscorers",
+      "ar": "الهدافون التاريخيون لمنتخبات أمريكا الجنوبية"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "conmebol_goals_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Argentina",
+          "ar": "الأرجنتين"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM10"
+        },
+        "stat": {
+          "en": "112 Goals",
+          "ar": "112 هدفاً"
+        }
+      },
+      {
+        "answerKey": "conmebol_goals_neymar",
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار جونيور"
+        },
+        "subText": {
+          "en": "Brazil (Record Top Scorer)",
+          "ar": "البرازيل (الهداف التاريخي)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg/330px-Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg",
+          "fallbackText": "NJ10"
+        },
+        "stat": {
+          "en": "79 Goals",
+          "ar": "79 هدفاً"
+        }
+      },
+      {
+        "answerKey": "conmebol_goals_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "subText": {
+          "en": "Brazil (3x World Champion)",
+          "ar": "البرازيل (بطل العالم 3 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg",
+          "fallbackText": "PEL"
+        },
+        "stat": {
+          "en": "77 Goals",
+          "ar": "77 هدفاً"
+        }
+      },
+      {
+        "answerKey": "conmebol_goals_suarez",
+        "name": {
+          "en": "Luis Suárez",
+          "ar": "لويس سواريز"
+        },
+        "subText": {
+          "en": "Uruguay",
+          "ar": "أوروغواي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Luis_Su%C3%A1rez_2018.jpg/330px-Luis_Su%C3%A1rez_2018.jpg",
+          "fallbackText": "LS9"
+        },
+        "stat": {
+          "en": "69 Goals",
+          "ar": "69 هدفاً"
+        }
+      },
+      {
+        "answerKey": "conmebol_goals_cavani",
+        "name": {
+          "en": "Edinson Cavani",
+          "ar": "إدينسون كافاني"
+        },
+        "subText": {
+          "en": "Uruguay",
+          "ar": "أوروغواي"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Edinson_Cavani_2018.jpg/330px-Edinson_Cavani_2018.jpg",
+          "fallbackText": "EC7"
+        },
+        "stat": {
+          "en": "58 Goals",
+          "ar": "58 هدفاً"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 European strikers by official senior international goals scored",
+      "ar": "رتّب هؤلاء المهاجمين الأوروبيين الخمسة حسب عدد الأهداف الدولية الرسمية"
+    },
+    "subtitle": {
+      "en": "UEFA all-time top international goalscorers",
+      "ar": "الهدافون التاريخيون لمنتخبات أوروبا"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "uefa_goals_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Portugal (World Record)",
+          "ar": "البرتغال (الرقم القياسي العالمي)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
+        },
+        "stat": {
+          "en": "135 Goals",
+          "ar": "135 هدفاً"
+        }
+      },
+      {
+        "answerKey": "uefa_goals_lukaku",
+        "name": {
+          "en": "Romelu Lukaku",
+          "ar": "روميلو لوكاكو"
+        },
+        "subText": {
+          "en": "Belgium",
+          "ar": "بلجيكا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Romelu_Lukaku_2018.jpg/330px-Romelu_Lukaku_2018.jpg",
+          "fallbackText": "RL9"
+        },
+        "stat": {
+          "en": "85 Goals",
+          "ar": "85 هدفاً"
+        }
+      },
+      {
+        "answerKey": "uefa_goals_klose",
+        "name": {
+          "en": "Miroslav Klose",
+          "ar": "ميروسلاف كلوزه"
+        },
+        "subText": {
+          "en": "Germany",
+          "ar": "ألمانيا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Miroslav_Klose_2014.jpg",
+          "fallbackText": "MK"
+        },
+        "stat": {
+          "en": "71 Goals",
+          "ar": "71 هدفاً"
+        }
+      },
+      {
+        "answerKey": "uefa_goals_kane",
+        "name": {
+          "en": "Harry Kane",
+          "ar": "هاري كين"
+        },
+        "subText": {
+          "en": "England",
+          "ar": "إنجلترا"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Harry_Kane_2018.jpg/330px-Harry_Kane_2018.jpg",
+          "fallbackText": "HK9"
+        },
+        "stat": {
+          "en": "69 Goals",
+          "ar": "69 هدفاً"
+        }
+      },
+      {
+        "answerKey": "uefa_goals_ibra",
+        "name": {
+          "en": "Zlatan Ibrahimović",
+          "ar": "زلاتان إبراهيموفيتش"
+        },
+        "subText": {
+          "en": "Sweden",
+          "ar": "السويد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Zlatan_Ibrahimovi%C3%A7_June_2018.jpg/330px-Zlatan_Ibrahimovi%C3%A7_June_2018.jpg",
+          "fallbackText": "IBRA"
+        },
+        "stat": {
+          "en": "62 Goals",
+          "ar": "62 هدفاً"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 Ballon d’Or winners by age when first winning the award (YOUNGEST first)",
+      "ar": "رتّب هؤلاء الفائزين الخمسة بالكرة الذهبية حسب عمرهم عند الفوز الأول (الأصغر سناً أولاً)"
+    },
+    "subtitle": {
+      "en": "Youngest Ballon d’Or recipients in football history",
+      "ar": "أصغر الفائزين بجائزة الكرة الذهبية في تاريخ كرة القدم"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "bdo_age_r9",
+        "name": {
+          "en": "Ronaldo Nazário",
+          "ar": "رونالدو البرازيلي"
+        },
+        "subText": {
+          "en": "Won in 1997 at Inter Milan",
+          "ar": "فاز بها عام 1997 مع إنتر ميلان"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
+          "fallbackText": "R9"
+        },
+        "stat": {
+          "en": "21y 95d",
+          "ar": "21 سنة و95 يوماً"
+        }
+      },
+      {
+        "answerKey": "bdo_age_owen",
+        "name": {
+          "en": "Michael Owen",
+          "ar": "مايكل أوين"
+        },
+        "subText": {
+          "en": "Won in 2001 at Liverpool",
+          "ar": "فاز بها عام 2001 مع ليفربول"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Michael_Owen_2014.jpg/330px-Michael_Owen_2014.jpg",
+          "fallbackText": "MO"
+        },
+        "stat": {
+          "en": "22y 4d",
+          "ar": "22 سنة و4 أيام"
+        }
+      },
+      {
+        "answerKey": "bdo_age_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "Won in 2009 at FC Barcelona",
+          "ar": "فاز بها عام 2009 مع برشلونة"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM10"
+        },
+        "stat": {
+          "en": "22y 160d",
+          "ar": "22 سنة و160 يوماً"
+        }
+      },
+      {
+        "answerKey": "bdo_age_best",
+        "name": {
+          "en": "George Best",
+          "ar": "جورج بيست"
+        },
+        "subText": {
+          "en": "Won in 1968 at Manchester United",
+          "ar": "فاز بها عام 1968 مع مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/George_Best_1968.jpg/330px-George_Best_1968.jpg",
+          "fallbackText": "GB7"
+        },
+        "stat": {
+          "en": "22y 218d",
+          "ar": "22 سنة و218 يوماً"
+        }
+      },
+      {
+        "answerKey": "bdo_age_cr7",
+        "name": {
+          "en": "Cristiano Ronaldo",
+          "ar": "كريستيانو رونالدو"
+        },
+        "subText": {
+          "en": "Won in 2008 at Manchester United",
+          "ar": "فاز بها عام 2008 مع مانشستر يونايتد"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "fallbackText": "CR7"
+        },
+        "stat": {
+          "en": "23y 301d",
+          "ar": "23 سنة و301 يوماً"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 legends by official goals scored for the Argentina national team",
+      "ar": "رتّب هؤلاء الأساطير الخمسة حسب عدد أهدافهم الرسمية مع منتخب الأرجنتين"
+    },
+    "subtitle": {
+      "en": "La Albiceleste all-time top goalscorers",
+      "ar": "الهدافون التاريخيون لمنتخب الأرجنتين"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "arg_goals_messi",
+        "name": {
+          "en": "Lionel Messi",
+          "ar": "ليونيل ميسي"
+        },
+        "subText": {
+          "en": "All-time leading scorer",
+          "ar": "الهداف التاريخي المطلق"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+          "fallbackText": "LM10"
+        },
+        "stat": {
+          "en": "112 Goals",
+          "ar": "112 هدفاً"
+        }
+      },
+      {
+        "answerKey": "arg_goals_batistuta",
+        "name": {
+          "en": "Gabriel Batistuta",
+          "ar": "غابرييل باتيستوتا"
+        },
+        "subText": {
+          "en": "Batigol",
+          "ar": "باتيغول"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Batistuta_2019.jpg/330px-Batistuta_2019.jpg",
+          "fallbackText": "GB9"
+        },
+        "stat": {
+          "en": "56 Goals",
+          "ar": "56 هدفاً"
+        }
+      },
+      {
+        "answerKey": "arg_goals_aguero",
+        "name": {
+          "en": "Sergio Agüero",
+          "ar": "سيرخيو أغويرو"
+        },
+        "subText": {
+          "en": "Kun Agüero",
+          "ar": "كون أغويرو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sergio_Ag%C3%BCero_2018.jpg/330px-Sergio_Ag%C3%BCero_2018.jpg",
+          "fallbackText": "SA"
+        },
+        "stat": {
+          "en": "41 Goals",
+          "ar": "41 هدفاً"
+        }
+      },
+      {
+        "answerKey": "arg_goals_crespo",
+        "name": {
+          "en": "Hernán Crespo",
+          "ar": "هيرنان كريسبو"
+        },
+        "subText": {
+          "en": "Valdanito",
+          "ar": "فالدانيتو"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Hernan_Crespo_2015.jpg/330px-Hernan_Crespo_2015.jpg",
+          "fallbackText": "HC9"
+        },
+        "stat": {
+          "en": "35 Goals",
+          "ar": "35 هدفاً"
+        }
+      },
+      {
+        "answerKey": "arg_goals_maradona",
+        "name": {
+          "en": "Diego Maradona",
+          "ar": "دييغو مارادونا"
+        },
+        "subText": {
+          "en": "1986 World Cup Champion",
+          "ar": "بطل كأس العالم 1986"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Argentina_celebrando_copa_%28cropped%29.jpg/330px-Argentina_celebrando_copa_%28cropped%29.jpg",
+          "fallbackText": "DM10"
+        },
+        "stat": {
+          "en": "34 Goals",
+          "ar": "34 هدفاً"
+        }
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Rank these 5 Brazilian legends by official goals scored for the Seleção",
+      "ar": "رتّب هؤلاء الأساطير البرازيليين الخمسة حسب عدد أهدافهم الرسمية مع السيليساو"
+    },
+    "subtitle": {
+      "en": "Brazil national team all-time top goalscorers",
+      "ar": "الهدافون التاريخيون لمنتخب البرازيل"
+    },
+    "category": "players",
+    "answers": [
+      {
+        "answerKey": "bra_goals_neymar",
+        "name": {
+          "en": "Neymar Jr",
+          "ar": "نيمار جونيور"
+        },
+        "subText": {
+          "en": "All-time leading scorer",
+          "ar": "الهداف التاريخي للبرازيل"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg/330px-Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg",
+          "fallbackText": "NJ10"
+        },
+        "stat": {
+          "en": "79 Goals",
+          "ar": "79 هدفاً"
+        }
+      },
+      {
+        "answerKey": "bra_goals_pele",
+        "name": {
+          "en": "Pelé",
+          "ar": "بيليه"
+        },
+        "subText": {
+          "en": "O Rei (3x World Champion)",
+          "ar": "الملك (بطل العالم 3 مرات)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg",
+          "fallbackText": "PEL"
+        },
+        "stat": {
+          "en": "77 Goals",
+          "ar": "77 هدفاً"
+        }
+      },
+      {
+        "answerKey": "bra_goals_r9",
+        "name": {
+          "en": "Ronaldo Nazário",
+          "ar": "رونالدو الظاهرة"
+        },
+        "subText": {
+          "en": "O Fenômeno (2x World Champion)",
+          "ar": "الظاهرة (بطل العالم مرتين)"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ronaldo_2018.jpg/330px-Ronaldo_2018.jpg",
+          "fallbackText": "R9"
+        },
+        "stat": {
+          "en": "62 Goals",
+          "ar": "62 هدفاً"
+        }
+      },
+      {
+        "answerKey": "bra_goals_romario",
+        "name": {
+          "en": "Romário",
+          "ar": "روماريو"
+        },
+        "subText": {
+          "en": "O Baixinho (1994 World Champion)",
+          "ar": "بطل كأس العالم 1994"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Rom%C3%A1rio_2016.jpg/330px-Rom%C3%A1rio_2016.jpg",
+          "fallbackText": "ROM"
+        },
+        "stat": {
+          "en": "55 Goals",
+          "ar": "55 هدفاً"
+        }
+      },
+      {
+        "answerKey": "bra_goals_zico",
+        "name": {
+          "en": "Zico",
+          "ar": "زيكو"
+        },
+        "subText": {
+          "en": "The White Pelé",
+          "ar": "بيليه الأبيض"
+        },
+        "media": {
+          "type": "player",
+          "primaryUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Zico_2010.jpg/330px-Zico_2010.jpg",
+          "fallbackText": "ZIC"
+        },
+        "stat": {
+          "en": "48 Goals",
+          "ar": "48 هدفاً"
+        }
+      }
+    ]
   }
 ]

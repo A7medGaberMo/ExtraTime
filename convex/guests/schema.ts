@@ -11,3 +11,12 @@ export const guestsTable = defineTable({
   .index('by_nickname', ['nickname'])
   .index('by_sessionToken', ['sessionToken']);
 
+export const guestStatsTable = defineTable({
+  guestId: v.id('guestUsers'),
+  personalBestScore: v.number(),
+  highestStreak: v.number(),
+  totalSoloGames: v.number(),
+  totalCorrect: v.number(),
+})
+  .index('by_guest', ['guestId']);
+

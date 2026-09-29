@@ -32,8 +32,6 @@ const barlowCondensed = Barlow_Condensed({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   viewportFit: 'cover',
 };
 
@@ -75,7 +73,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [{ url: '/ETIcon.png?v=2', type: 'image/png' }, { url: '/favicon.ico?v=2' }],
+    icon: [{ url: '/ETIcon.png?v=2', type: 'image/png' }],
     shortcut: '/ETIcon.png?v=2',
     apple: '/ETIcon.png?v=2',
   },
@@ -158,7 +156,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="bg-background text-foreground selection:bg-lime selection:text-background flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-sans antialiased"
+        className="bg-background text-foreground selection:bg-gold selection:text-slate-950 flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-sans antialiased"
       >
         <ConvexClientProvider>
           <I18nProvider>

@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-
 import { useRouter } from 'next/navigation';
 import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
@@ -17,12 +16,11 @@ import {
   ShieldCheck,
   ArrowsDownUp,
   Key,
-  DiceFive,
+  Shuffle,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { PageShell } from '@/components/ui/page-shell';
-import { Panel } from '@/components/ui/panel';
 import { SegmentedControl, type SegmentedOption } from '@/components/ui/segmented-control';
 import { StatPill } from '@/components/ui/stat-pill';
 import { TextInput } from '@/components/ui/text-input';
@@ -45,8 +43,6 @@ export default function RankHubPage() {
   const queueStats = useQuery(api.rank.queries.getPublicQueueSummary);
 
   const [nickname, setNickname] = useGuestNickname();
-
-
   const [showNameModal, setShowNameModal] = useState(false);
   const [pendingAction, setPendingAction] = useState<
     | { type: 'solo' }
@@ -87,7 +83,6 @@ export default function RankHubPage() {
     return res.guestId as Id<'guestUsers'>;
   }
 
-
   function triggerActionWithName(
     action:
       | { type: 'solo' }
@@ -98,7 +93,7 @@ export default function RankHubPage() {
     const saved =
       typeof window !== 'undefined' ? localStorage.getItem('extratime_guestName') : null;
     if (saved) {
-      executeAction(action);
+      void executeAction(action);
     } else {
       setPendingAction(action);
       setNickname(randomName());
@@ -137,7 +132,6 @@ export default function RankHubPage() {
         router.push(`/rank/${result.gameId}`);
       }
     } catch (err: unknown) {
-
       const e = err as { message?: string };
       toast(e.message || 'Action failed', 'error');
       setLoading(false);
@@ -154,17 +148,17 @@ export default function RankHubPage() {
     {
       value: 'solo',
       label: t('rank.soloTab'),
-      icon: <AppIcon icon={Play} size={16} weight="duotone" />,
+      icon: <AppIcon icon={Play} size={15} weight="duotone" />,
     },
     {
       value: 'quick',
       label: t('rank.quickTab'),
-      icon: <AppIcon icon={Compass} size={16} weight="duotone" />,
+      icon: <AppIcon icon={Compass} size={15} weight="duotone" />,
     },
     {
       value: 'duel',
       label: t('rank.duelTab'),
-      icon: <AppIcon icon={Sword} size={16} weight="duotone" />,
+      icon: <AppIcon icon={Sword} size={15} weight="duotone" />,
     },
   ];
 
@@ -172,12 +166,12 @@ export default function RankHubPage() {
     {
       value: 3,
       label: t('rank.rounds3'),
-      sublabel: '~2 mins',
+      sublabel: '~2 min',
     },
     {
       value: 5,
       label: t('rank.rounds5'),
-      sublabel: '~4 mins',
+      sublabel: '~4 min',
     },
   ];
 
@@ -187,28 +181,29 @@ export default function RankHubPage() {
       subtitle={t('rank.hubSubtitle')}
       badge={
         <StatPill
-          variant="amber"
+          variant="gold"
           size="sm"
-          icon={<AppIcon icon={Ranking} size={14} weight="duotone" />}
+          icon={<AppIcon icon={Ranking} size={13} weight="fill" />}
           label={t('rank.hubBadge')}
         />
       }
-      maxWidth="2xl"
+      backUrl="/"
+      maxWidth="xl"
     >
-      {/* ── 1. MODE SELECTOR CARD: APPLE GLASS ELEVATED ────────────────────────────────────── */}
-      <div className="apple-glass-elevated relative rounded-3xl p-5 sm:p-7 border border-white/18 shadow-[0_24px_50px_rgba(0,0,0,0.7)] backdrop-blur-3xl space-y-6">
-        {/* Ambient Top Glow */}
-        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-40 w-72 rounded-full bg-amber-400/10 blur-3xl" />
+      {/* ── 1. RADAR CONTROL CONSOLE ─────────────────────────────────── */}
+      <div className="luxury-glass-elevated relative rounded-3xl p-3.5 sm:p-5 border border-gold/20 shadow-[0_24px_50px_rgba(0,0,0,0.7)] backdrop-blur-3xl space-y-3 sm:space-y-3.5">
+        {/* Soft Ambient Top Glow */}
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-36 w-64 rounded-full bg-gold/10 blur-3xl" />
 
-        {/* Manager Identity Header Bar — Apple Dynamic Island Pill */}
-        <div className="relative flex items-center justify-between rounded-2xl border border-white/12 bg-white/[0.05] p-3 shadow-inner">
+        {/* Manager Handle Bar */}
+        <div className="relative flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.03] p-2 sm:p-2.5 shadow-inner">
           <div className="flex items-center gap-3 min-w-0">
             <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
             <div className="min-w-0">
-              <span className="text-[10px] text-slate-400 font-extrabold uppercase tracking-wider block">
+              <span className="text-[10px] text-steel font-bold uppercase tracking-widest block font-stats">
                 {t('joinRoom.managerHandle')}
               </span>
-              <span className="text-xs sm:text-sm font-extrabold text-white truncate block">
+              <span className="text-xs sm:text-sm font-bold text-white truncate block">
                 {nickname}
               </span>
             </div>
@@ -219,10 +214,10 @@ export default function RankHubPage() {
               setPendingAction(null);
               setShowNameModal(true);
             }}
-            className="btn-haptic flex items-center gap-1.5 rounded-xl border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-bold text-slate-300 hover:border-amber-400/50 hover:text-white transition-all cursor-pointer shadow-sm"
+            className="btn-haptic flex items-center gap-1.5 rounded-xl border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-semibold text-slate-300 hover:border-gold/50 hover:text-white transition-all cursor-pointer shadow-sm"
           >
-            <AppIcon icon={DiceFive} size={15} weight="bold" className="text-amber-400" />
-            <span>{lang === 'ar' ? 'تغيير' : 'Change'}</span>
+            <AppIcon icon={Shuffle} size={14} weight="bold" className="text-gold" />
+            <span>{lang === 'ar' ? 'تغيير' : 'Randomize'}</span>
           </button>
         </div>
 
@@ -233,12 +228,13 @@ export default function RankHubPage() {
             value={activeTab}
             onChange={setActiveTab}
             size="md"
+            activeVariant="gold"
           />
         </div>
 
         {/* Round Count Selector */}
         <div className="relative space-y-1.5">
-          <label className="text-slate-400 text-[10px] font-extrabold tracking-widest uppercase block px-1">
+          <label className="text-steel text-[10px] font-bold tracking-widest uppercase block px-1 font-stats">
             {t('rank.matchLength')}
           </label>
           <SegmentedControl
@@ -252,25 +248,25 @@ export default function RankHubPage() {
         {/* ── TAB 1: SOLO PLAY ──────────────────────────────────────── */}
         {activeTab === 'solo' && (
           <div className="relative space-y-4 pt-1 animate-fade-in">
-            <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 space-y-1 text-xs shadow-inner">
-              <div className="flex items-center gap-2 font-black text-white uppercase">
-                <AppIcon icon={ShieldCheck} size={17} weight="fill" className="text-amber-400" />
+            <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/8 space-y-1 text-xs shadow-inner">
+              <div className="flex items-center gap-2 font-bold text-white uppercase font-stats">
+                <AppIcon icon={ShieldCheck} size={16} weight="fill" className="text-gold" />
                 <span>{t('rank.scoringRuleTitle')}</span>
               </div>
-              <p className="text-slate-300 text-xs leading-relaxed">
+              <p className="text-slate-300 text-xs font-normal leading-relaxed">
                 {t('rank.scoringRuleDesc')}
               </p>
             </div>
 
             <Button
-              variant="primary"
+              variant="gold"
               size="lg"
               fullWidth
               onClick={() => triggerActionWithName({ type: 'solo' })}
               disabled={loading}
               loading={loading}
-              leftIcon={<AppIcon icon={Play} size={20} weight="bold" />}
-              className="bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 font-black shadow-lg shadow-amber-400/25 rounded-2xl"
+              leftIcon={<AppIcon icon={Play} size={18} weight="fill" />}
+              className="rounded-2xl font-bold h-12 text-sm"
             >
               {t('rank.startSolo', { rounds: roundCount })}
             </Button>
@@ -280,19 +276,19 @@ export default function RankHubPage() {
         {/* ── TAB 2: QUICK MATCH ────────────────────────────────────── */}
         {activeTab === 'quick' && (
           <div className="relative space-y-4 pt-1 animate-fade-in">
-            <div className="p-4 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-between shadow-inner">
-              <div className="space-y-0.5">
-                <span className="text-[10px] text-slate-400 font-black uppercase block">
+            <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/8 flex items-center justify-between shadow-inner">
+              <div className="space-y-0.5 min-w-0 pr-2">
+                <span className="text-[10px] text-steel font-bold uppercase block font-stats">
                   {lang === 'ar' ? 'رادار المطابقة السريعة' : 'Radar Matchmaking'}
                 </span>
-                <p className="text-xs text-white font-medium">
+                <p className="text-xs text-white font-medium truncate">
                   {lang === 'ar'
-                    ? `مطابقة فورية مع منافس لايف اختار نفس المدة (${roundCount} جولات).`
-                    : `Auto-pairs with a live manager on the same match length (${roundCount} rounds).`}
+                    ? `مطابقة فورية مع منافس لايف (${roundCount} جولات)`
+                    : `Live 1v1 matchup (${roundCount} rounds)`}
                 </p>
               </div>
               <StatPill
-                variant="amber"
+                variant="gold"
                 size="sm"
                 label={t('rank.inQueueStats', {
                   count: roundCount === 3 ? (queueStats?.waiting3 ?? 0) : (queueStats?.waiting5 ?? 0),
@@ -301,16 +297,18 @@ export default function RankHubPage() {
             </div>
 
             <Button
-              variant="primary"
+              variant="gold"
               size="lg"
               fullWidth
               onClick={() => triggerActionWithName({ type: 'quick' })}
               disabled={loading}
               loading={loading}
-              leftIcon={<AppIcon icon={Sword} size={20} weight="bold" />}
-              className="bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 font-black shadow-lg shadow-amber-400/25 rounded-2xl"
+              leftIcon={<AppIcon icon={Sword} size={18} weight="bold" />}
+              className="rounded-2xl font-bold h-12 text-sm"
             >
-              {lang === 'ar' ? `ابحث عن منافس لايف (${roundCount} جولات)` : `Find 1v1 Opponent (${roundCount} Rounds)`}
+              {lang === 'ar'
+                ? `ابحث عن منافس لايف (${roundCount} جولات)`
+                : `Find 1v1 Opponent (${roundCount} Rounds)`}
             </Button>
           </div>
         )}
@@ -319,33 +317,33 @@ export default function RankHubPage() {
         {activeTab === 'duel' && (
           <div className="relative space-y-4 pt-1 animate-fade-in">
             <Button
-              variant="primary"
+              variant="gold"
               size="lg"
               fullWidth
               onClick={() => triggerActionWithName({ type: 'duel_create' })}
               disabled={loading}
               loading={loading}
-              leftIcon={<AppIcon icon={Users} size={20} weight="bold" />}
-              className="bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 font-black shadow-lg shadow-amber-400/25 rounded-2xl"
+              leftIcon={<AppIcon icon={Users} size={18} weight="bold" />}
+              className="rounded-2xl font-bold h-12 text-sm"
             >
               {t('rank.createPrivateDuel')}
             </Button>
 
-            <div className="flex items-center gap-3 text-[10px] text-slate-400 font-black uppercase">
-              <div className="h-px bg-white/10 flex-1" />
+            <div className="flex items-center gap-3 text-[10px] text-steel font-bold uppercase font-stats">
+              <div className="h-px bg-white/8 flex-1" />
               <span>{t('rank.orJoinWithCode')}</span>
-              <div className="h-px bg-white/10 flex-1" />
+              <div className="h-px bg-white/8 flex-1" />
             </div>
 
-            {/* Join Code Input */}
             <div className="flex items-center gap-2">
               <div className="flex-1">
                 <TextInput
                   placeholder={t('rank.joinCodePlaceholder')}
                   value={joinCode}
-                  onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
-                  leftIcon={<AppIcon icon={Key} size={18} weight="bold" />}
+                  onChange={(e) => setJoinCode(e.target.value.toUpperCase().slice(0, 6))}
+                  leftIcon={<AppIcon icon={Key} size={16} weight="bold" />}
                   aria-label={t('rank.joinCodePlaceholder')}
+                  className="font-stats tracking-widest text-center uppercase"
                 />
               </div>
               <Button
@@ -354,8 +352,8 @@ export default function RankHubPage() {
                 onClick={() =>
                   triggerActionWithName({ type: 'duel_join', code: joinCode.trim() })
                 }
-                disabled={loading || !joinCode.trim()}
-                className="apple-glass-card rounded-xl font-black"
+                disabled={loading || joinCode.trim().length !== 6}
+                className="rounded-xl font-bold px-4 h-11"
               >
                 {t('rank.joinDuelBtn')}
               </Button>
@@ -364,34 +362,40 @@ export default function RankHubPage() {
         )}
       </div>
 
-      {/* ── 2. RULES SUMMARY CARDS: APPLE WATCH COMPLICATION TILES ─────── */}
-      <section className="grid grid-cols-3 gap-2.5 sm:gap-3.5">
-        <div className="apple-glass-card rounded-2xl p-3.5 sm:p-4 text-center sm:text-start space-y-1 border border-white/12 shadow-md backdrop-blur-xl">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-lime font-black text-xs">
-            <AppIcon icon={Clock} size={15} weight="fill" />
-            <span>45s Timer</span>
+      {/* ── 2. TECHNICAL SPECIFICATION TILES (APPLE LUXURY MINIMAL) ─── */}
+      <section className="grid grid-cols-3 gap-2 sm:gap-2.5 w-full">
+        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-gold/15">
+          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-gold font-bold text-xs font-stats">
+            <AppIcon icon={Clock} size={13} weight="fill" />
+            <span>{lang === 'ar' ? 'مؤقت 45 ثانية' : '45s Timer'}</span>
           </div>
-          <p className="text-[11px] text-slate-400 font-medium truncate">Fast live rounds</p>
+          <p className="text-[10px] sm:text-[10.5px] text-steel font-normal truncate">
+            {lang === 'ar' ? 'جولات حية وسريعة' : 'Fast live rounds'}
+          </p>
         </div>
 
-        <div className="apple-glass-card rounded-2xl p-3.5 sm:p-4 text-center sm:text-start space-y-1 border border-white/12 shadow-md backdrop-blur-xl">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-emerald-400 font-black text-xs">
-            <AppIcon icon={ShieldCheck} size={15} weight="fill" />
-            <span>+2 to -2</span>
+        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-gold/15">
+          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-gold font-bold text-xs font-stats">
+            <AppIcon icon={ShieldCheck} size={13} weight="fill" />
+            <span>{lang === 'ar' ? '+2 إلى -2' : '+2 to -2'}</span>
           </div>
-          <p className="text-[11px] text-slate-400 font-medium truncate">Distance scoring</p>
+          <p className="text-[10px] sm:text-[10.5px] text-steel font-normal truncate">
+            {lang === 'ar' ? 'حساب دقيق للمراكز' : 'Distance scoring'}
+          </p>
         </div>
 
-        <div className="apple-glass-card rounded-2xl p-3.5 sm:p-4 text-center sm:text-start space-y-1 border border-white/12 shadow-md backdrop-blur-xl">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-amber-300 font-black text-xs">
-            <AppIcon icon={ArrowsDownUp} size={15} weight="bold" />
-            <span>5 Cards</span>
+        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-gold/15">
+          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-gold font-bold text-xs font-stats">
+            <AppIcon icon={ArrowsDownUp} size={13} weight="bold" />
+            <span>{lang === 'ar' ? '5 بطاقات' : '5 Cards'}</span>
           </div>
-          <p className="text-[11px] text-slate-400 font-medium truncate">Drag & drop order</p>
+          <p className="text-[10px] sm:text-[10.5px] text-steel font-normal truncate">
+            {lang === 'ar' ? 'ترتيب بالسحب والإفلات' : 'Drag & drop order'}
+          </p>
         </div>
       </section>
 
-      {/* ── 3. MANAGER NAME ENTRY MODAL ──────────────────────────────── */}
+      {/* ── 4. MANAGER NAME ENTRY MODAL ──────────────────────────────── */}
       <ModalShell
         isOpen={showNameModal}
         onClose={() => setShowNameModal(false)}
@@ -407,39 +411,33 @@ export default function RankHubPage() {
             onChange={(e) => setNickname(e.target.value)}
             autoFocus
             maxLength={18}
-            rightAction={
+            rightIcon={
               <button
                 type="button"
                 onClick={() => setNickname(randomName())}
                 aria-label={t('home.nameModal.randomize')}
                 title={t('home.nameModal.randomize')}
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:border-lime/40 hover:text-lime transition-all active:scale-95 cursor-pointer"
+                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-slate-300 transition-colors hover:border-gold/50 hover:text-gold"
               >
-                <AppIcon icon={DiceFive} size={20} weight="duotone" />
+                <AppIcon icon={Shuffle} size={18} weight="bold" />
               </button>
             }
           />
 
-          <div className="flex items-center justify-between text-xs">
-            <button
-              type="button"
-              onClick={() => setNickname(randomName())}
-              className="text-steel hover:text-lime underline transition-colors cursor-pointer font-bold uppercase"
-            >
-              {t('home.nameModal.randomize')}
-            </button>
-            <span className="text-steel/50 font-stats">{nickname.length}/18</span>
+          <div className="flex items-center justify-end px-1">
+            <span className="font-stats text-xs text-steel">{nickname.length}/18</span>
           </div>
 
           <Button
-            variant="primary"
+            variant="gold"
             size="lg"
             fullWidth
             onClick={handleModalSubmit}
             disabled={loading || !nickname.trim()}
             loading={loading}
+            className="rounded-2xl"
           >
-            {loading ? t('home.nameModal.finding') : t('home.nameModal.submit')}
+            {loading ? t('home.nameModal.finding') : t('common.confirm')}
           </Button>
         </div>
       </ModalShell>

@@ -33,12 +33,12 @@ export const PERK_REGISTRY: Record<PerkId, PerkDefinition> = {
   },
   FREEZE: {
     id: 'FREEZE',
-    name: 'Clock Freeze (Coming Soon)',
+    name: 'Bid Freeze',
     badgeLabel: '❄️ FREEZE',
-    description: 'Freezes the bidding timer giving you extra decision time in critical rounds.',
+    description: 'Freezes rival bidding power — caps opponent maximum bid to $15M for this round.',
     icon: 'Snowflake',
     accentColor: '#06B6D4',
-    applicableGameTypes: ['hidden_bid'],
+    applicableGameTypes: ['hidden_bid', 'ALL'],
   },
   SHIELD: {
     id: 'SHIELD',

@@ -17,7 +17,6 @@ import {
 import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { PageShell } from '@/components/ui/page-shell';
-import { Panel } from '@/components/ui/panel';
 import { TextInput } from '@/components/ui/text-input';
 import { StatPill } from '@/components/ui/stat-pill';
 import { CardDetailModal } from '@/components/packs/card-detail-modal';
@@ -28,8 +27,6 @@ import { sfx } from '@/lib/sfx';
 import { useI18n } from '@/lib/i18n';
 import type { PlayerCardData, Tier } from '@/types/player';
 
-// ── 1. PACK DEFINITIONS (3 HIGH-END FEATURED CASES) ──────────
-
 const PACK_CASES: PackDefinition[] = [
   {
     id: 'pantheon-pack',
@@ -37,7 +34,7 @@ const PACK_CASES: PackDefinition[] = [
     subtitle: 'Icon, Hero, Ultimate & Master Titans',
     featuredTier: 'ICON',
     guaranteed: ['ICON', 'HERO', 'ULTIMATE', 'MASTER'],
-    eligibleTiers: ['ICON', 'HERO', 'ULTIMATE', 'MASTER'], // Strictly no Elite
+    eligibleTiers: ['ICON', 'HERO', 'ULTIMATE', 'MASTER'],
   },
   {
     id: 'icon-pack',
@@ -53,12 +50,12 @@ const PACK_CASES: PackDefinition[] = [
     subtitle: 'Ultimate & Master Active Titans',
     featuredTier: 'ULTIMATE',
     guaranteed: ['ULTIMATE', 'MASTER'],
-    eligibleTiers: ['ULTIMATE', 'MASTER'], // Strictly Ultimate and Master only
+    eligibleTiers: ['ULTIMATE', 'MASTER'],
   },
 ];
 
-const SPOTLIGHT_MAX_COUNT = 5; // 5 on desktop, 3 on mobile
-const AUTO_ROTATE_INTERVAL_SECONDS = 300; // 5 minutes (300 seconds)
+const SPOTLIGHT_MAX_COUNT = 5;
+const AUTO_ROTATE_INTERVAL_SECONDS = 300;
 const DAILY_PACK_TOKENS = 5;
 
 function getTodayKey() {
@@ -136,7 +133,6 @@ function pickCardsForPack(pack: PackDefinition, allPlayers: PlayerCardData[]): P
   const selected: PlayerCardData[] = [];
   const used = new Set<string>();
 
-  // 1. Guaranteed tiers
   for (const gTier of pack.guaranteed) {
     const tierPool = seededShuffle(
       allPlayers.filter((p) => p.tier === gTier && !used.has(p.id)),
@@ -148,7 +144,6 @@ function pickCardsForPack(pack: PackDefinition, allPlayers: PlayerCardData[]): P
     }
   }
 
-  // 2. Remaining picks strictly from eligible pool
   const eligiblePool = seededShuffle(
     allPlayers.filter((p) => pack.eligibleTiers.includes(p.tier) && !used.has(p.id)),
     seed + 137,
@@ -160,24 +155,12 @@ function pickCardsForPack(pack: PackDefinition, allPlayers: PlayerCardData[]): P
     used.add(player.id);
   }
 
-  // 3. Fallback strictly within eligible pool if available
   if (selected.length < 5) {
     const eligibleFallback = seededShuffle(
       allPlayers.filter((p) => pack.eligibleTiers.includes(p.tier)),
       seed + 251,
     );
     for (const player of eligibleFallback) {
-      if (selected.length >= 5) break;
-      if (!selected.some((s) => s.id === player.id)) {
-        selected.push(player);
-      }
-    }
-  }
-
-  // 4. Ultimate safety fallback (only if pool has fewer than 5 unique players)
-  if (selected.length < 5) {
-    const ultimateFallback = seededShuffle(allPlayers, seed + 331);
-    for (const player of ultimateFallback) {
       if (selected.length >= 5) break;
       if (!selected.some((s) => s.id === player.id)) {
         selected.push(player);
@@ -199,21 +182,19 @@ function useDebounce<T>(value: T, delay: number): T {
 
 export default function PacksPage() {
   const { t, lang } = useI18n();
-  const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 50 });
+  const rawData = useQuery(api.packs.queries.getPackPools, { samplePerTier: 20 });
 
-  // Pack Opening State
+
   const [openingPack, setOpeningPack] = useState<PackDefinition | null>(null);
   const [openedCards, setOpenedCards] = useState<PlayerCardData[]>([]);
   const [inspectedCard, setInspectedCard] = useState<PlayerCardData | null>(null);
   const [dailyTokens, setDailyTokens] = useState(() => getStoredDailyTokens());
 
-  // Vault Spotlight Search & Rotation State
   const [searchQuery, setSearchQuery] = useState('');
   const debouncedSearchQuery = useDebounce(searchQuery, 250);
   const [rotationSeed, setRotationSeed] = useState(() => Date.now());
   const [secondsRemaining, setSecondsRemaining] = useState(AUTO_ROTATE_INTERVAL_SECONDS);
 
-  // Full database search from Convex
   const serverSearchResults = useQuery(
     api.players.queries.searchPlayers,
     debouncedSearchQuery.trim().length >= 2
@@ -221,7 +202,6 @@ export default function PacksPage() {
       : 'skip',
   );
 
-  // Deduplicated in-memory players collection (cached client-side)
   const players = useMemo(() => {
     const loaded = rawData?.allLoaded ?? [];
     const source = loaded.length > 0 ? loaded : TIER_ORDER.flatMap((tier) => rawData?.[tier] ?? []);
@@ -235,12 +215,10 @@ export default function PacksPage() {
     return Array.from(map.values());
   }, [rawData]);
 
-  // Client-Side 5-Minute Auto-Rotation Timer (Zero backend overhead)
   useEffect(() => {
     const timer = setInterval(() => {
       setSecondsRemaining((prev) => {
         if (prev <= 1) {
-          // Trigger next random rotation
           setRotationSeed(Date.now());
           return AUTO_ROTATE_INTERVAL_SECONDS;
         }
@@ -251,7 +229,6 @@ export default function PacksPage() {
     return () => clearInterval(timer);
   }, []);
 
-  // Filtered Candidate Pool (Fast in-memory search fallback)
   const filteredPlayers = useMemo(() => {
     if (players.length === 0) return [];
     if (!searchQuery.trim()) return players;
@@ -267,7 +244,6 @@ export default function PacksPage() {
     );
   }, [players, searchQuery]);
 
-  // Combined scouted search cards (Prioritizes server full-database results)
   const scoutedCards: PlayerCardData[] = useMemo(() => {
     if (!searchQuery.trim()) return [];
     if (serverSearchResults && serverSearchResults.length > 0) {
@@ -291,14 +267,11 @@ export default function PacksPage() {
     return filteredPlayers;
   }, [searchQuery, serverSearchResults, filteredPlayers]);
 
-  // Active Spotlight Pool (5 players on desktop, 3 players on mobile) when not searching
   const spotlightCards = useMemo(() => {
     if (players.length === 0) return [];
-    // Seeded random 5 players from rotating candidate pool
     return seededShuffle(players, rotationSeed).slice(0, SPOTLIGHT_MAX_COUNT);
   }, [players, rotationSeed]);
 
-  // Manual Instant Shuffle
   const handleManualShuffle = useCallback(() => {
     sfx.unlock();
     sfx.cardDeal();
@@ -306,7 +279,6 @@ export default function PacksPage() {
     setSecondsRemaining(AUTO_ROTATE_INTERVAL_SECONDS);
   }, []);
 
-  // Handlers
   function handleOpenPack(pack: PackDefinition) {
     sfx.unlock();
     const picked = pickCardsForPack(pack, players);
@@ -319,7 +291,6 @@ export default function PacksPage() {
     }
   }
 
-  // Format countdown mm:ss
   const minutes = Math.floor(secondsRemaining / 60);
   const seconds = secondsRemaining % 60;
   const formattedCountdown = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
@@ -332,10 +303,10 @@ export default function PacksPage() {
       badge={
         <div className="flex flex-wrap items-center justify-center gap-2">
           <StatPill
-            variant="lime"
+            variant="gold"
             size="sm"
             icon={<AppIcon icon={Cards} size={14} weight="duotone" />}
-            label={lang === 'ar' ? 'حزم وبطاقات اللاعبين' : 'Card Vault & Packs'}
+            label={lang === 'ar' ? 'صالة البطاقات الرسمية' : 'Official Card Vault'}
           />
           <StatPill
             variant="amber"
@@ -344,7 +315,7 @@ export default function PacksPage() {
             label={
               lang === 'ar'
                 ? `${dailyTokens} توكن فتح يومي`
-                : `${dailyTokens} Daily Pack Tokens`
+                : `${dailyTokens} Daily Open Tokens`
             }
           />
         </div>
@@ -352,23 +323,23 @@ export default function PacksPage() {
       backUrl="/"
       maxWidth="5xl"
     >
-      {/* ── 1. PACK CASES: SLEEK APPLE KEYNOTE SHOWCASE ───────────────────────────────── */}
-      <section className="space-y-4 w-full">
+      {/* ── 1. PACK CASES SHOWROOM ────────────────────────────────────── */}
+      <section className="space-y-3.5 w-full">
         <div className="flex items-center justify-between px-1">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-7 w-7 items-center justify-center rounded-xl border border-lime/50 bg-lime/15 text-lime shadow-[0_0_12px_rgba(202,255,0,0.3)]">
+          <div className="flex items-center gap-2">
+            <span className="flex h-7 w-7 items-center justify-center rounded-xl border border-gold/40 bg-gold/10 text-gold shadow-sm">
               <AppIcon icon={Lightning} size={15} weight="fill" />
             </span>
-            <h2 className="font-display text-sm sm:text-base font-extrabold tracking-wide text-white uppercase">
+            <h2 className="font-display text-sm sm:text-base font-bold tracking-tight text-white uppercase">
               {t('packs.availablePacks')}
             </h2>
           </div>
-          <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-micro sm:text-xs font-bold text-slate-400 font-stats">
+          <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-0.5 text-xs font-semibold text-steel font-stats">
             {PACK_CASES.length} {t('packs.packCount', { count: PACK_CASES.length })}
           </span>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-3">
           {PACK_CASES.map((pack, idx) => {
             const isFirst = idx === 0;
             const isSecond = idx === 1;
@@ -376,51 +347,44 @@ export default function PacksPage() {
             const displayName =
               lang === 'ar'
                 ? pack.id === 'pantheon-pack'
-                  ? 'حزمة بانثيون الأساطير'
+                  ? 'حزمة ملوك البانثيون'
                   : pack.id === 'icon-pack'
-                    ? 'حزمة ملوك الأيقونات'
+                    ? 'حزمة أساطير الأيقونات'
                     : 'حزمة أبطال النخبة'
                 : pack.name;
 
             const displaySubtitle =
               lang === 'ar'
                 ? pack.id === 'pantheon-pack'
-                  ? 'تشمل حصرياً بطاقات: أيقونة، بطل، ألتميت وماستر'
+                  ? 'تشمل حصرياً: أيقونة، بطل، ألتميت وماستر'
                   : pack.id === 'icon-pack'
-                    ? 'أساطير كرة القدم التاريخية والأبطال الخالدون'
+                    ? 'أساطير كرة القدم التاريخية والأبطال'
                     : 'حصرياً: نجوم ألتميت وماستر فقط'
                 : pack.subtitle;
 
             return (
               <div
                 key={pack.id}
-                className={`apple-glass-card group relative flex flex-col justify-between gap-5 rounded-3xl border p-5 sm:p-6 backdrop-blur-3xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_50px_rgba(0,0,0,0.7)] ${
+                className={`luxury-glass group relative flex flex-col justify-between gap-4 rounded-3xl border p-5 backdrop-blur-3xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
                   isFirst
-                    ? 'border-amber-400/40 hover:border-amber-400/70 shadow-[0_16px_40px_rgba(245,158,11,0.15)]'
+                    ? 'border-gold/35 shadow-[0_16px_40px_rgba(229,184,66,0.12)]'
                     : isSecond
-                      ? 'border-cyan-400/35 hover:border-cyan-400/65 shadow-[0_16px_40px_rgba(0,240,255,0.15)]'
-                      : 'border-purple-400/35 hover:border-purple-400/65 shadow-[0_16px_40px_rgba(168,85,247,0.15)]'
+                      ? 'border-cyan-400/30 shadow-[0_16px_40px_rgba(56,189,248,0.12)]'
+                      : 'border-purple-400/30 shadow-[0_16px_40px_rgba(191,90,242,0.12)]'
                 }`}
               >
-                {/* Ambient Specular Glow */}
-                <div
-                  className={`pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 h-32 w-32 rounded-full blur-3xl opacity-50 ${
-                    isFirst ? 'bg-amber-400/25' : isSecond ? 'bg-cyan-400/25' : 'bg-purple-400/25'
-                  }`}
-                />
-
                 <div className="relative space-y-2">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-display text-base sm:text-lg font-black tracking-tight text-white uppercase">
+                    <h3 className="font-display text-base font-bold tracking-tight text-white uppercase">
                       {displayName}
                     </h3>
                     <div
                       className={`flex h-8 w-8 items-center justify-center rounded-xl border shadow-sm ${
                         isFirst
-                          ? 'border-amber-400/50 bg-amber-400/15 text-amber-300'
+                          ? 'border-gold/40 bg-gold/10 text-gold'
                           : isSecond
-                            ? 'border-cyan-400/50 bg-cyan-400/15 text-cyan-300'
-                            : 'border-purple-400/50 bg-purple-400/15 text-purple-300'
+                            ? 'border-cyan-400/40 bg-cyan-400/10 text-cyan-300'
+                            : 'border-purple-400/40 bg-purple-400/10 text-purple-300'
                       }`}
                     >
                       <AppIcon
@@ -431,32 +395,26 @@ export default function PacksPage() {
                     </div>
                   </div>
 
-                  <p className="text-slate-300 text-xs font-medium leading-relaxed">
+                  <p className="text-steel text-xs font-normal leading-relaxed">
                     {displaySubtitle}
                   </p>
 
-                  <div className="pt-1">
-                    <span className="inline-flex items-center gap-1 rounded-full border border-white/12 bg-white/5 px-2.5 py-0.5 text-[10px] font-bold text-slate-300">
+                  <div className="pt-0.5">
+                    <span className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-0.5 text-[10px] font-semibold text-slate-300">
                       ★ {pack.guaranteed.join(' · ')}
                     </span>
                   </div>
                 </div>
 
-                <div className="relative pt-2">
+                <div className="relative pt-1">
                   <Button
-                    variant={isFirst ? 'primary' : 'secondary'}
+                    variant={isFirst ? 'gold' : 'secondary'}
                     size="md"
                     fullWidth
                     onClick={() => handleOpenPack(pack)}
                     disabled={players.length === 0}
                     leftIcon={<AppIcon icon={Lightning} size={15} weight="fill" />}
-                    className={`rounded-2xl font-black ${
-                      isFirst
-                        ? 'bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 shadow-md shadow-amber-400/25'
-                        : isSecond
-                          ? 'apple-glass-card border-cyan-400/40 text-cyan-300 hover:border-cyan-400/70 hover:text-white'
-                          : 'apple-glass-card border-purple-400/40 text-purple-300 hover:border-purple-400/70 hover:text-white'
-                    }`}
+                    className="rounded-2xl font-bold h-11 text-xs"
                   >
                     {t('packs.openCase')}
                   </Button>
@@ -467,30 +425,27 @@ export default function PacksPage() {
         </div>
       </section>
 
-      {/* ── 2. CARD VAULT SPOTLIGHT (APPLE HIG SHOWCASE) ─────────────────── */}
-      <section className="apple-glass-card relative space-y-4 rounded-3xl p-4 sm:p-6 border border-white/15 shadow-[0_24px_50px_rgba(0,0,0,0.65)] backdrop-blur-3xl w-full">
-        {/* Ambient Vault Lighting */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-44 rounded-3xl bg-[radial-gradient(ellipse_at_top,rgba(202,255,0,0.08),transparent_70%)]" />
-
+      {/* ── 2. CARD VAULT SPOTLIGHT ──────────────────────────────────── */}
+      <section className="luxury-glass relative space-y-4 rounded-3xl p-4 sm:p-6 border border-white/8 shadow-xl backdrop-blur-3xl w-full">
         {/* Dynamic Status & Search Header */}
         <header className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1">
           <div className="flex items-center gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl border border-lime/50 bg-lime/15 text-lime shadow-[0_0_12px_rgba(202,255,0,0.25)]">
-              <AppIcon icon={Trophy} size={18} weight="fill" />
+            <span className="flex h-8 w-8 items-center justify-center rounded-xl border border-gold/40 bg-gold/10 text-gold shadow-sm">
+              <AppIcon icon={Trophy} size={17} weight="fill" />
             </span>
             <div>
-              <h3 className="font-display text-sm sm:text-base font-extrabold tracking-tight text-white uppercase">
+              <h3 className="font-display text-sm sm:text-base font-bold tracking-tight text-white uppercase">
                 {t('packs.vaultSpotlight')}
               </h3>
-              <div className="flex items-center gap-2 text-micro sm:text-xs text-slate-400 font-stats">
+              <div className="flex items-center gap-2 text-[11px] text-steel font-stats">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-lime" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
                 </span>
                 <span>
                   {lang === 'ar'
                     ? `تحديث تلقائي كل 5 دقائق • متبقي ${formattedCountdown}`
-                    : `Auto-cycles every 5 mins • Refresh in ${formattedCountdown}`}
+                    : `Auto-refresh every 5 mins • ${formattedCountdown}`}
                 </span>
               </div>
             </div>
@@ -508,7 +463,7 @@ export default function PacksPage() {
                     <button
                       type="button"
                       onClick={() => setSearchQuery('')}
-                      className="text-slate-400 hover:text-white p-1 cursor-pointer"
+                      className="text-steel hover:text-white p-1 cursor-pointer"
                     >
                       <AppIcon icon={X} size={13} weight="bold" />
                     </button>
@@ -521,47 +476,47 @@ export default function PacksPage() {
               variant="secondary"
               size="sm"
               onClick={handleManualShuffle}
-              leftIcon={<AppIcon icon={Shuffle} size={14} weight="bold" className="text-lime" />}
-              className="apple-glass-card rounded-xl border-white/15 hover:border-lime/50 font-bold"
+              leftIcon={<AppIcon icon={Shuffle} size={14} weight="bold" className="text-gold" />}
+              className="rounded-xl border-white/12 font-bold h-10 px-3"
             >
               {t('packs.rollRandom')}
             </Button>
           </div>
         </header>
 
-        {/* ── Auto-Rotation Progress Bar (Visible only when not actively searching) ── */}
+        {/* Auto-Rotation Progress Bar */}
         {!searchQuery.trim() && (
-          <div className="relative w-full h-1.5 overflow-hidden rounded-full bg-white/[0.08] border border-white/[0.1]">
+          <div className="relative w-full h-1 overflow-hidden rounded-full bg-white/[0.06]">
             <div
-              className="h-full bg-gradient-to-r from-lime/70 via-lime to-emerald-400 transition-all duration-1000 ease-linear rounded-full shadow-[0_0_10px_rgba(202,255,0,0.6)]"
+              className="h-full bg-gradient-to-r from-gold/50 via-gold to-gold-light transition-all duration-1000 ease-linear rounded-full"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
         )}
 
-        {/* ── SEARCH RESULTS OR SPOTLIGHT SHOWCASE ── */}
+        {/* Cards Showcase */}
         {searchQuery.trim() ? (
           <div className="space-y-3 pt-1">
             <div className="flex items-center justify-between px-1">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-white font-stats">
+                <span className="text-xs font-semibold text-white font-stats">
                   {lang === 'ar' ? 'نتائج الاستكشاف' : 'Scouted Players'}
                 </span>
-                <span className="rounded-full bg-lime/15 border border-lime/30 px-2 py-0.5 text-[10px] font-black text-lime font-stats">
+                <span className="rounded-full bg-gold/15 border border-gold/30 px-2 py-0.5 text-[10px] font-bold text-gold font-stats">
                   {scoutedCards.length}
                 </span>
               </div>
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
-                className="text-xs text-slate-400 hover:text-white cursor-pointer font-semibold underline underline-offset-4"
+                className="text-xs text-steel hover:text-white cursor-pointer font-medium underline underline-offset-4"
               >
                 {lang === 'ar' ? 'إلغاء البحث' : 'Clear Search'}
               </button>
             </div>
 
             {scoutedCards.length > 0 ? (
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 max-h-[580px] overflow-y-auto p-1 scrollbar-thin">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 max-h-[560px] overflow-y-auto p-1 scrollbar-hidden">
                 {scoutedCards.map((player, index) => (
                   <div
                     key={`scout-${player.id}-${index}`}
@@ -576,22 +531,22 @@ export default function PacksPage() {
                 ))}
               </div>
             ) : (
-              <div className="apple-glass-card rounded-2xl p-8 text-center border border-white/10 space-y-2">
-                <p className="text-white text-sm font-bold">
+              <div className="luxury-glass rounded-2xl p-8 text-center border border-white/8 space-y-2">
+                <p className="text-white text-sm font-semibold">
                   {lang === 'ar' ? `لم نجد لاعبين يطابقون "${searchQuery}"` : `No players found matching "${searchQuery}"`}
                 </p>
-                <p className="text-slate-400 text-xs">
+                <p className="text-steel text-xs">
                   {lang === 'ar'
-                    ? 'جرب البحث باسم اللاعب أو النادي (مثل ريال مدريد، الأهلي، الزمالك) أو الدولة'
-                    : 'Try scouting by player name, club (e.g. Real Madrid, Al Ahly, Zamalek), or nation.'}
+                    ? 'جرب البحث باسم اللاعب أو النادي أو الدولة'
+                    : 'Try scouting by player name, club, or nation.'}
                 </p>
               </div>
             )}
           </div>
         ) : spotlightCards.length > 0 ? (
           <div className="relative pt-1">
-            {/* MOBILE LAYOUT: Exactly 3 cards side-by-side, scaled to fit perfectly */}
-            <div className="grid grid-cols-3 gap-2.5 w-full max-w-sm mx-auto py-2 items-center justify-items-center sm:hidden">
+            {/* Mobile: 3 cards side-by-side */}
+            <div className="grid grid-cols-3 gap-2 w-full max-w-sm mx-auto py-2 items-center justify-items-center sm:hidden">
               {spotlightCards.slice(0, 3).map((player, index) => (
                 <div
                   key={`spotlight-mobile-${player.id}-${index}-${rotationSeed}`}
@@ -602,14 +557,14 @@ export default function PacksPage() {
                   className="w-full flex justify-center cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95 animate-scale-in"
                   style={{ animationDelay: `${index * 60}ms` }}
                 >
-                  <div className="w-full max-w-[108px]">
+                  <div className="w-full max-w-[104px]">
                     <PlayerCard player={player} size="xs" />
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* DESKTOP LAYOUT: All 5 cards centered in a row */}
+            {/* Desktop: 5 cards in a centered row */}
             <div className="hidden sm:grid sm:grid-cols-5 gap-3 md:gap-4 w-full max-w-4xl mx-auto py-2 items-center justify-items-center">
               {spotlightCards.slice(0, 5).map((player, index) => (
                 <div
@@ -627,23 +582,20 @@ export default function PacksPage() {
             </div>
           </div>
         ) : (
-          <div className="apple-glass-card rounded-2xl p-8 text-center border border-white/10">
-            <p className="text-slate-400 text-xs font-bold tracking-widest uppercase font-stats">
+          <div className="luxury-glass rounded-2xl p-8 text-center border border-white/8">
+            <p className="text-steel text-xs font-semibold tracking-widest uppercase font-stats">
               {rawData === undefined ? t('packs.loadingCards') : t('packs.noCards')}
             </p>
           </div>
         )}
 
-        {/* ── Subtitle helper tag ── */}
-        <div className="flex items-center justify-center gap-2 pt-1 text-center text-micro sm:text-xs text-slate-400">
-          <AppIcon icon={ArrowsClockwise} size={13} weight="bold" className="text-lime" />
-          <span>
-            {t('packs.autoCycleNotice')}
-          </span>
+        <div className="flex items-center justify-center gap-2 pt-1 text-center text-xs text-steel">
+          <AppIcon icon={ArrowsClockwise} size={13} weight="bold" className="text-gold" />
+          <span>{t('packs.autoCycleNotice')}</span>
         </div>
       </section>
 
-      {/* ── 3. CINEMATIC WALKOUT PACK OPENING OVERLAY ─────────────────── */}
+      {/* ── 3. CINEMATIC PACK OPENING WALKOUT OVERLAY ─────────────────── */}
       {openingPack && openedCards.length > 0 && (
         <FifaPackOpening
           pack={openingPack}

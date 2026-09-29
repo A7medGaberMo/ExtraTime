@@ -41,7 +41,7 @@ export function EmptyState({ icon, title, description, action, className }: Empt
           {isActionObject(action) ? (
             <Link
               href={action.href}
-              className="bg-lime text-background shadow-lime/20 hover:bg-vivid hover:shadow-lime/30 inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-black shadow-lg transition-all active:scale-95"
+              className="bg-gold text-slate-950 shadow-gold/20 hover:brightness-110 hover:shadow-gold/30 inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-black shadow-lg transition-all active:scale-95"
             >
               {action.label}
             </Link>

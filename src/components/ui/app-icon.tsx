@@ -32,7 +32,9 @@ export function AppIcon({
 
   // Determine if icon should be mirrored in RTL
   const iconName = (IconComponent as { displayName?: string })?.displayName || '';
+  const isCircularArrow = /CounterClockwise|Clockwise/i.test(iconName);
   const isDirectional =
+    !isCircularArrow &&
     /Arrow|Caret|Chevron|FastForward|Rewind|Skip|SignOut|SignIn|Export|ArrowSquare/i.test(iconName);
 
   const shouldFlip = flipRTL !== undefined ? flipRTL && isRTL : isDirectional && isRTL;

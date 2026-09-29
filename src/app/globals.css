@@ -2,9 +2,9 @@
 
 @theme {
   /* ═══════════════════════════════════════════════════════════════════
-     TYPOGRAPHY — Apple HIG Font Stack & Type Ramp
-     Latin: SF Pro / Inter · Arabic: IBM Plex Sans Arabic.
-     Weights: 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold).
+     TYPOGRAPHY — Apple Product & Luxury Automotive Hierarchy
+     Latin: SF Pro Display / Inter · Arabic: IBM Plex Sans Arabic.
+     Weights: 300 (Light), 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold).
      ═══════════════════════════════════════════════════════════════════ */
   --font-sans:
     -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
@@ -42,22 +42,29 @@
   --text-title1: 1.75rem;     /* 28px */
   --text-largetitle: 2.125rem;/* 34px */
 
-  /* ═══════════════════ COLOR SYSTEM ═══════════════════ */
-  --color-background: #06090e; /* Deep obsidian stadium pitch */
-  --color-foreground: #f5f5f7; /* Apple primary text */
-  --color-card: #0f141d;
-  --color-card-elevated: #161c27;
+  /* ═══════════════════ COLOR SYSTEM (CALM LUXURY) ═══════════════════ */
+  --color-background: #05070b; /* Deep obsidian arena canvas */
+  --color-foreground: #f5f5f7; /* Apple display white */
+  --color-card: #0b0f17;
+  --color-card-elevated: #111723;
   --color-border: rgba(255, 255, 255, 0.08);
   --color-border-subtle: rgba(255, 255, 255, 0.04);
   --color-border-hover: rgba(255, 255, 255, 0.16);
+  --color-border-hairline: rgba(255, 255, 255, 0.07);
 
-  /* Primary Accent — Refined Apple Vibrant Green */
-  --color-lime: #8ee000;
-  --color-vivid: #78cf00;
-  --color-bold-green: #30d158;
-  --color-steel: #8e95a2;
-  --color-muted: #636b7b;
-  --color-gold: #e5b323;
+  /* ExtraTime Signature Gold Brand Accent */
+  --color-gold: #e5b842;
+  --color-gold-light: #f5d77f;
+  --color-gold-deep: #99751d;
+  --color-gold-glow: rgba(229, 184, 66, 0.25);
+  --color-gold-border: rgba(229, 184, 66, 0.38);
+
+  /* ExtraTime Signature Gold Brand Accent (Unified Luxury Palette) */
+  --color-lime: #e5b842;
+  --color-vivid: #d4a833;
+  --color-bold-green: #e5b842;
+  --color-steel: #9da4b4; /* Elevated contrast for secondary typography */
+  --color-muted: #6b7280; /* Refined divider and subtle icon tone */
   --color-sky: #0a84ff;
   --color-rose: #ff375f;
 
@@ -71,11 +78,11 @@
   --color-tier-silver: #d1d1d6;
   --color-tier-bronze: #ac6d46;
 
-  --color-slate-950: #06090e;
-  --color-slate-900: #0e131c;
-  --color-slate-850: #131924;
-  --color-slate-800: #1b2332;
-  --color-slate-700: #2d384c;
+  --color-slate-950: #05070b;
+  --color-slate-900: #0b0f17;
+  --color-slate-850: #101520;
+  --color-slate-800: #161d2b;
+  --color-slate-700: #263143;
   --color-slate-500: #8e95a2;
   --color-slate-400: #a1a9b7;
   --color-slate-300: #d1d5db;
@@ -83,10 +90,11 @@
   --color-slate-100: #f5f5f7;
 
   /* ═══════════════════ ELEVATION & MATERIALS ═══════════════════ */
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.06);
-  --shadow-float: 0 20px 48px -12px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.08);
-  --shadow-lift: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-glow-lime: 0 0 20px rgba(142, 224, 0, 0.18);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --shadow-float: 0 24px 56px -12px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  --shadow-lift: 0 6px 18px rgba(0, 0, 0, 0.4);
+  --shadow-glow-gold: 0 0 32px rgba(229, 184, 66, 0.2);
+  --shadow-glow-lime: 0 0 24px rgba(229, 184, 66, 0.2);
 
   /* Radius Scale */
   --radius-sm: 0.5rem;   /* 8px */
@@ -94,6 +102,7 @@
   --radius-lg: 1rem;     /* 16px */
   --radius-xl: 1.25rem;  /* 20px */
   --radius-2xl: 1.5rem;  /* 24px */
+  --radius-3xl: 2rem;    /* 32px */
 }
 
 :root {
@@ -122,9 +131,9 @@ html {
   box-sizing: border-box;
 }
 
-/* ═══════════════════ FOCUS — Accessible Ring ═══════════════════ */
+/* ═══════════════════ ACCESSIBLE FOCUS RING ═══════════════════ */
 :focus-visible {
-  outline: 2px solid var(--color-lime);
+  outline: 2px solid var(--color-gold);
   outline-offset: 2px;
 }
 
@@ -144,7 +153,6 @@ html {
 }
 
 /* ═══════════════════ FUT CARD TYPOGRAPHY ═══════════════════ */
-/* DIN Condensed-style — authentic EA FC / Ultimate Team card type */
 .font-card {
   font-family: var(--font-card);
   font-weight: 600;
@@ -158,9 +166,12 @@ html {
   letter-spacing: -0.01em;
 }
 
-/* ═══════════════════ ARABIC / RTL TYPOGRAPHY ═══════════════════ */
+/* ═══════════════════ ARABIC / RTL HIGH-LEVEL TYPOGRAPHY ═══════════════════ */
 html[dir='rtl'] body {
   font-family: var(--font-arabic);
+  letter-spacing: normal !important;
+  word-spacing: normal;
+  line-height: 1.5;
 }
 
 html[dir='rtl'] * {
@@ -170,14 +181,22 @@ html[dir='rtl'] * {
 html[dir='rtl'] .uppercase,
 html[dir='rtl'] .font-stats {
   text-transform: none;
-  letter-spacing: normal;
+  letter-spacing: normal !important;
 }
 
 html[dir='rtl'] h1,
 html[dir='rtl'] h2,
 html[dir='rtl'] h3,
 html[dir='rtl'] h4 {
-  line-height: 1.35;
+  font-family: var(--font-arabic);
+  letter-spacing: 0 !important;
+  line-height: 1.38;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+html[dir='rtl'] p {
+  text-wrap: pretty;
 }
 
 /* ═══════════════════ DISPLAY HEADINGS ═══════════════════ */
@@ -186,7 +205,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  letter-spacing: -0.015em;
+  letter-spacing: -0.025em;
   font-weight: 700;
 }
 
@@ -223,110 +242,147 @@ h4 {
   from { transform: scale(0.97); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
-@keyframes pulseLimeGlow {
-  0% { box-shadow: 0 0 0 0 rgba(142, 224, 0, 0.35); }
-  70% { box-shadow: 0 0 0 8px rgba(142, 224, 0, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(142, 224, 0, 0); }
+@keyframes pulseGoldGlow {
+  0% { box-shadow: 0 0 0 0 rgba(229, 184, 66, 0.35); }
+  70% { box-shadow: 0 0 0 8px rgba(229, 184, 66, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(229, 184, 66, 0); }
 }
 
-.animate-fade-in { animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-slide-up { animation: slideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-slide-down { animation: slideDown 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-scale-in { animation: scaleIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-pulse-glow { animation: pulseLimeGlow 2s infinite; }
+.animate-fade-in { animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-slide-up { animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-slide-down { animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-scale-in { animation: scaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-pulse-gold { animation: pulseGoldGlow 2.5s infinite; }
 
-/* Apple-style Tactile Press Interaction */
+/* Tactile Haptic Press */
 .btn-haptic {
   transition:
-    transform 0.15s cubic-bezier(0.2, 0.9, 0.4, 1),
-    filter 0.15s ease,
-    background-color 0.15s ease,
-    border-color 0.15s ease;
+    transform 0.18s cubic-bezier(0.2, 0.9, 0.4, 1),
+    filter 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
 }
 .btn-haptic:active {
-  transform: scale(0.97);
+  transform: scale(0.98);
 }
 
-/* ═══════════════════ APPLE FROSTED GLASS SURFACES ═══════════════════ */
-.glass-card {
-  background: rgba(15, 20, 29, 0.78);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+/* ═══════════════════ LUXURY FROSTED GLASS SURFACES ═══════════════════ */
+.luxury-glass {
+  background: rgba(11, 15, 23, 0.72);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 16px 40px -8px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+}
+
+.luxury-glass-elevated {
+  background: rgba(16, 22, 33, 0.84);
+  backdrop-filter: blur(36px) saturate(200%);
+  -webkit-backdrop-filter: blur(36px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 24px 60px -12px rgba(0, 0, 0, 0.85),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.18);
+}
+
+.luxury-card-gold {
+  background: linear-gradient(180deg, rgba(22, 28, 40, 0.82) 0%, rgba(10, 14, 22, 0.88) 100%);
+  backdrop-filter: blur(32px) saturate(190%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%);
+  border: 1px solid rgba(229, 184, 66, 0.28);
+  box-shadow:
+    0 20px 48px -10px rgba(0, 0, 0, 0.8),
+    0 0 24px -4px rgba(229, 184, 66, 0.12),
+    inset 0 1px 0 0 rgba(245, 215, 127, 0.25);
+}
+
+.luxury-hairline {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.glass-panel-elevated {
-  background: rgba(22, 28, 39, 0.86);
-  backdrop-filter: blur(24px) saturate(190%);
-  -webkit-backdrop-filter: blur(24px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.6);
+.luxury-spotlight-gold {
+  background: radial-gradient(circle at 50% 20%, rgba(229, 184, 66, 0.14) 0%, rgba(5, 7, 11, 0) 70%);
 }
 
-/* Apple HIG Ultra-Refined Materials */
+.luxury-spotlight-top {
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.07) 0%, transparent 70%);
+}
+
+/* ═══════════════════ ZERO-SCROLL VIEWPORT SYSTEM ═══════════════════ */
+.zero-scroll-stage {
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* 3-Stop Luxury Gold Championship Button */
+.btn-gold-sheen {
+  background: linear-gradient(180deg, #F5D77F 0%, #E5B842 50%, #C99824 100%);
+  color: #05070b;
+  font-weight: 700;
+  box-shadow:
+    0 8px 24px rgba(229, 184, 66, 0.28),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.65);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-gold-sheen:hover {
+  filter: brightness(1.08);
+  box-shadow:
+    0 12px 28px rgba(229, 184, 66, 0.38),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+}
+.btn-gold-sheen:active {
+  transform: scale(0.98);
+  filter: brightness(0.98);
+}
+
+/* Backwards compatibility for existing game surfaces */
 .apple-glass-card {
-  background: rgba(13, 19, 29, 0.72);
+  background: rgba(11, 15, 23, 0.74);
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow:
-    0 12px 36px -8px rgba(0, 0, 0, 0.6),
+    0 12px 36px -8px rgba(0, 0, 0, 0.65),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.14);
 }
 
 .apple-glass-elevated {
-  background: rgba(18, 25, 38, 0.85);
+  background: rgba(16, 22, 33, 0.85);
   backdrop-filter: blur(32px) saturate(190%);
   -webkit-backdrop-filter: blur(32px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow:
-    0 24px 50px -12px rgba(0, 0, 0, 0.75),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.22);
+    0 24px 50px -12px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 }
 
 .apple-segmented-bar {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .apple-segmented-active {
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+    0 4px 14px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.24);
   color: #ffffff;
-}
-
-.apple-glow-cyan {
-  box-shadow:
-    0 0 24px -2px rgba(0, 240, 255, 0.35),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-}
-
-.apple-glow-emerald {
-  box-shadow:
-    0 0 24px -2px rgba(48, 209, 88, 0.35),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-}
-
-.apple-glow-amber {
-  box-shadow:
-    0 0 24px -2px rgba(255, 214, 10, 0.35),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-}
-
-.apple-glow-purple {
-  box-shadow:
-    0 0 24px -2px rgba(191, 90, 242, 0.35),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-}
-
-.gradient-text-lime {
-  color: var(--color-lime);
 }
 
 .scrollbar-hidden {
@@ -335,6 +391,24 @@ h4 {
 }
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+}
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spinSlow 3s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

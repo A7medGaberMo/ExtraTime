@@ -64,7 +64,7 @@ export function ModalShell({
           <button
             type="button"
             onClick={onClose}
-            className="btn-haptic absolute top-4 end-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/12 bg-slate-950/85 text-steel transition-all hover:border-lime/40 hover:text-white cursor-pointer"
+            className="btn-haptic absolute top-4 end-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/12 bg-slate-950/85 text-steel transition-all hover:border-gold/40 hover:text-white cursor-pointer"
             aria-label="Close"
           >
             <X size={16} weight="bold" />

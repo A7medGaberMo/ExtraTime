@@ -102,7 +102,7 @@ export function DraftBenchStrip({
                 </div>
 
                 <div className="min-w-0 flex-1">
-                  <span className="block truncate text-[11px] sm:text-xs font-bold text-white leading-tight">
+                  <span className="block truncate whitespace-nowrap overflow-hidden text-ellipsis text-[10.5px] sm:text-xs font-bold text-white leading-tight">
                     {player.name}
                   </span>
                   <div className="flex items-center gap-1 text-micro text-slate-400">

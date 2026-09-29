@@ -28,7 +28,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
               </label>
             )}
             {badgeText && (
-              <span className="text-lime text-xs font-semibold tracking-wide">
+              <span className="text-gold text-xs font-semibold tracking-wide">
                 {badgeText}
               </span>
             )}
@@ -45,7 +45,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
           <input
             ref={ref}
             className={cn(
-              'h-11 sm:h-12 w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 text-xs sm:text-sm font-semibold text-white placeholder:text-steel/50 transition-all duration-150 focus:border-lime/50 focus:bg-slate-900/90 focus:outline-none backdrop-blur-md',
+              'h-11 sm:h-12 w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 text-xs sm:text-sm font-semibold text-white placeholder:text-steel/50 transition-all duration-150 focus:border-gold/50 focus:bg-slate-900/90 focus:outline-none backdrop-blur-md',
               leftIcon && 'ps-10',
               actionElement && 'pe-10',
               error && 'border-rose-500/50 focus:border-rose-500',

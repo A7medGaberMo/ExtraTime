@@ -127,7 +127,7 @@ export function ScoreHub({
       {isSimulating ? (
         <div className="space-y-3">
           <div className="animate-fade-in flex items-center justify-center gap-2 py-2">
-            <AppIcon icon={CircleNotch} size={16} weight="bold" className="text-lime animate-spin" />
+            <AppIcon icon={CircleNotch} size={16} weight="bold" className="text-gold animate-spin" />
             <p className="text-steel text-[10px] font-black tracking-[0.25em] uppercase font-stats">
               Simulating Matchday Action...
             </p>
@@ -150,7 +150,7 @@ export function ScoreHub({
                 onClick={() => setActiveTab('overview')}
                 className={`btn-haptic rounded-xl px-4 py-1.5 text-xs font-black uppercase tracking-wider font-stats transition-all cursor-pointer ${
                   activeTab === 'overview'
-                    ? 'bg-lime text-slate-950 shadow-md shadow-lime/20'
+                    ? 'bg-gold text-slate-950 shadow-md shadow-gold/25 font-bold'
                     : 'text-steel hover:text-white'
                 }`}
               >
@@ -161,7 +161,7 @@ export function ScoreHub({
                 onClick={() => setActiveTab('events')}
                 className={`btn-haptic rounded-xl px-4 py-1.5 text-xs font-black uppercase tracking-wider font-stats transition-all cursor-pointer ${
                   activeTab === 'events'
-                    ? 'bg-lime text-slate-950 shadow-md shadow-lime/20'
+                    ? 'bg-gold text-slate-950 shadow-md shadow-gold/25 font-bold'
                     : 'text-steel hover:text-white'
                 }`}
               >
@@ -172,7 +172,7 @@ export function ScoreHub({
                 onClick={() => setActiveTab('tactics')}
                 className={`btn-haptic rounded-xl px-4 py-1.5 text-xs font-black uppercase tracking-wider font-stats transition-all cursor-pointer ${
                   activeTab === 'tactics'
-                    ? 'bg-lime text-slate-950 shadow-md shadow-lime/20'
+                    ? 'bg-gold text-slate-950 shadow-md shadow-gold/25 font-bold'
                     : 'text-steel hover:text-white'
                 }`}
               >
@@ -248,7 +248,7 @@ function WinnerBanner({
     <div
       className={`relative overflow-hidden rounded-2xl border p-2.5 sm:p-3 shadow-lg backdrop-blur-xl flex items-center justify-between gap-3 select-none ${
         viewerWon
-          ? 'border-lime/40 from-lime/15 via-slate-950/90 to-slate-950 bg-gradient-to-r shadow-[0_0_24px_rgba(149,232,16,0.12)]'
+          ? 'border-gold/40 from-gold/15 via-slate-950/90 to-slate-950 bg-gradient-to-r shadow-[0_0_24px_rgba(229,184,66,0.15)]'
           : draw
             ? 'via-slate-950/90 to-slate-950 border-amber-400/30 bg-gradient-to-r from-amber-400/15'
             : 'via-slate-950/90 to-slate-950 border-rose-400/30 bg-gradient-to-r from-rose-500/15 shadow-[0_0_24px_rgba(244,63,94,0.1)]'
@@ -258,7 +258,7 @@ function WinnerBanner({
         <div
           className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border shadow-sm ${
             viewerWon
-              ? 'border-lime/50 shadow-lime/20 bg-lime/10 text-lime'
+              ? 'border-gold/50 shadow-gold/20 bg-gold/10 text-gold'
               : draw
                 ? 'border-amber-400/40 bg-amber-400/10 text-amber-300'
                 : 'border-rose-400/40 bg-rose-500/10 text-rose-400'
@@ -287,7 +287,7 @@ function WinnerBanner({
       <span
         className={`shrink-0 rounded-full border px-2.5 py-0.5 text-[8.5px] sm:text-[9px] font-black tracking-widest uppercase font-stats ${
           viewerWon
-            ? 'border-lime/40 bg-lime/15 text-lime'
+            ? 'border-gold/40 bg-gold/15 text-gold'
             : draw
               ? 'border-amber-400/40 bg-amber-400/15 text-amber-300'
               : 'border-rose-500/40 bg-rose-500/15 text-rose-400'
@@ -337,7 +337,7 @@ function MatchupMeters({
     <div className="bg-slate-950/85 rounded-2xl border border-white/10 p-3.5 sm:p-4 shadow-xl backdrop-blur-xl select-none">
       <div className="mb-3 flex items-center justify-between border-b border-white/[0.08] pb-2">
         <span className="flex items-center gap-1.5 text-[11px] font-black tracking-widest text-white uppercase font-display">
-          <AppIcon icon={Lightning} size={15} weight="fill" className="text-lime" />
+          <AppIcon icon={Lightning} size={15} weight="fill" className="text-gold" />
           Tactical Deciding Factors
         </span>
         <span className="text-steel/60 text-[9px] font-bold tracking-widest uppercase font-stats">
@@ -352,7 +352,7 @@ function MatchupMeters({
           return (
             <div key={row.key} className="space-y-1">
               <div className="flex items-center justify-between px-0.5 text-[10px] font-black font-stats">
-                <span className="text-lime">{row.format(row.hostVal)}</span>
+                <span className="text-gold">{row.format(row.hostVal)}</span>
                 <span className="text-steel tracking-wider uppercase text-[9px]">
                   {row.label}
                 </span>
@@ -363,7 +363,7 @@ function MatchupMeters({
                 <div className="flex h-2.5 flex-1 overflow-hidden rounded-full border border-white/5 bg-slate-950">
                   <div className="flex-1" />
                   <div
-                    className="from-lime/50 to-lime h-full bg-gradient-to-r transition-all duration-700 rounded-full"
+                    className="from-gold/50 to-gold h-full bg-gradient-to-r transition-all duration-700 rounded-full"
                     style={{ width: `${(row.hostVal / maxVal) * 100}%` }}
                   />
                 </div>
@@ -383,12 +383,12 @@ function MatchupMeters({
 
       {/* Breakdown Summary Cards */}
       <div className="mt-3.5 grid grid-cols-2 gap-2">
-        <div className="border-lime/20 bg-lime/[0.06] rounded-xl border p-2 sm:p-2.5">
+        <div className="border-gold/20 bg-gold/[0.06] rounded-xl border p-2 sm:p-2.5">
           <p className="text-steel truncate text-[8px] font-black tracking-widest uppercase font-stats">
             {hostName} Synergy
           </p>
           <div className="mt-0.5 flex flex-col">
-            <span className="font-stats text-lime text-xs sm:text-sm font-black">
+            <span className="font-stats text-gold text-xs sm:text-sm font-black">
               +{simulation.synergy.host.totalSynergyPoints.toFixed(1)} Chem · +{simulation.synergy.host.budgetBonusPoints.toFixed(1)} Budget
             </span>
             <span className="text-steel text-[8px] font-bold font-stats pt-0.5">

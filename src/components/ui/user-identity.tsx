@@ -23,7 +23,7 @@ export interface UserIdentityProps extends React.HTMLAttributes<HTMLDivElement> 
 // Generate rich consistent sport avatar colors from nickname seed
 function getAvatarColors(seed: string): { bg: string; border: string; text: string } {
   const palettes = [
-    { bg: 'from-lime/30 to-slate-900', border: 'border-lime/50', text: 'text-lime' },
+    { bg: 'from-gold/30 to-slate-900', border: 'border-gold/50', text: 'text-gold' },
     { bg: 'from-sky-500/30 to-slate-900', border: 'border-sky-400/50', text: 'text-sky-300' },
     { bg: 'from-amber-500/30 to-slate-900', border: 'border-amber-400/50', text: 'text-amber-300' },
     { bg: 'from-purple-500/30 to-slate-900', border: 'border-purple-400/50', text: 'text-purple-300' },
@@ -117,7 +117,7 @@ export function UserIdentity({
 
         {isWinner && (
           <div
-            className="absolute -bottom-1 -end-1 flex h-4 w-4 items-center justify-center rounded-full bg-lime text-slate-950 shadow-sm"
+            className="absolute -bottom-1 -end-1 flex h-4 w-4 items-center justify-center rounded-full bg-gold text-slate-950 shadow-sm"
             title="Winner"
           >
             <AppIcon icon={ShieldCheck} size={11} weight="fill" />

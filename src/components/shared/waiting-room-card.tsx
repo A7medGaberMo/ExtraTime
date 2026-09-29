@@ -13,7 +13,7 @@ export interface WaitingRoomCardProps {
   code: string;
   title?: string;
   subtitle?: string;
-  themeColor?: 'lime' | 'amber' | 'cyan';
+  themeColor?: 'gold' | 'lime' | 'amber' | 'cyan';
   icon?: React.ReactNode;
   onCancel?: () => void;
   cancelLabel?: string;
@@ -25,7 +25,7 @@ export function WaitingRoomCard({
   code,
   title,
   subtitle,
-  themeColor = 'lime',
+  themeColor = 'gold',
   icon,
   onCancel,
   cancelLabel,
@@ -44,11 +44,17 @@ export function WaitingRoomCard({
   };
 
   const themeStyles = {
+    gold: {
+      border: 'border-gold/30',
+      bg: 'bg-gold/10',
+      text: 'text-gold',
+      glow: 'shadow-[0_0_16px_rgba(229,184,66,0.2)]',
+    },
     lime: {
-      border: 'border-lime/30',
-      bg: 'bg-lime/10',
-      text: 'text-lime',
-      glow: 'shadow-[0_0_16px_rgba(149,232,16,0.2)]',
+      border: 'border-gold/30',
+      bg: 'bg-gold/10',
+      text: 'text-gold',
+      glow: 'shadow-[0_0_16px_rgba(229,184,66,0.2)]',
     },
     amber: {
       border: 'border-amber-400/30',

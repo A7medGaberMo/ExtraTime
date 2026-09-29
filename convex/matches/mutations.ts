@@ -2,8 +2,9 @@ import { mutation } from '../_generated/server';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
 import { v } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
-import { simulateTacticalMatch, SimPlayer } from '../../src/core/simulation/match-simulator';
+import { simulateTacticalMatch, SimPlayer, SimTier } from '../../src/core/simulation/match-simulator';
 import { isAuctionParticipant } from '../auctions/sealedView';
+import { buildSquadSnapshot } from './helpers';
 
 // ── Helpers ──────────────────────────────────────────────────────
 
@@ -50,34 +51,6 @@ async function ensureMatch(
   return (await ctx.db.get(matchId))!;
 }
 
-/** Hydrate main-XI card data into the pure engine's player shape. */
-async function hydrateMains(
-  ctx: GenericMutationCtx<DataModel>,
-  squad: Array<{ playerId: Id<'players'> }>,
-): Promise<SimPlayer[]> {
-  if (!squad.length) return [];
-  const playerDocs = await Promise.all(squad.map((slot) => ctx.db.get(slot.playerId)));
-  const validPlayers = playerDocs.filter((p): p is NonNullable<typeof p> => p !== null);
-
-  const hydrated = await Promise.all(
-    validPlayers.map(async (player) => {
-      const [club, nation] = await Promise.all([
-        ctx.db.get(player.clubId),
-        ctx.db.get(player.nationId),
-      ]);
-      return {
-        id: player._id,
-        name: player.name,
-        tier: player.tier,
-        position: player.position,
-        club: club?.name ?? '',
-        nation: nation?.name ?? '',
-      };
-    }),
-  );
-  return hydrated;
-}
-
 // ── Mutations ────────────────────────────────────────────────────
 
 export const createFromAuction = mutation({
@@ -117,13 +90,34 @@ export const runSimulation = mutation({
     }
 
     const seed = auction.seed ?? `room:${args.roomId}`;
-    const hostSquad = auction.host.squad;
-    const guestSquad = auction.guest.squad;
+    let hostSquadSnapshot = match.hostSquadSnapshot;
+    let guestSquadSnapshot = match.guestSquadSnapshot;
 
-    const [hostPlayers, guestPlayers] = await Promise.all([
-      hydrateMains(ctx, hostSquad),
-      hydrateMains(ctx, guestSquad),
-    ]);
+    if (!hostSquadSnapshot || !guestSquadSnapshot) {
+      // Fallback for old matches without snapshots
+      hostSquadSnapshot = await buildSquadSnapshot(ctx, match.hostSquad);
+      guestSquadSnapshot = await buildSquadSnapshot(ctx, match.guestSquad);
+      // Backfill the document
+      await ctx.db.patch(match._id, { hostSquadSnapshot, guestSquadSnapshot });
+    }
+
+    const hostPlayers: SimPlayer[] = hostSquadSnapshot.map(p => ({
+      id: p.playerId,
+      name: p.name,
+      tier: p.tier as SimTier,
+      position: p.position,
+      club: p.club,
+      nation: p.nation,
+    }));
+    
+    const guestPlayers: SimPlayer[] = guestSquadSnapshot.map(p => ({
+      id: p.playerId,
+      name: p.name,
+      tier: p.tier as SimTier,
+      position: p.position,
+      club: p.club,
+      nation: p.nation,
+    }));
 
     const spentHost = auction.host.squad.reduce((sum, s) => sum + s.cost, 0);
     const spentGuest = auction.guest.squad.reduce((sum, s) => sum + s.cost, 0);

@@ -90,13 +90,18 @@ export const GAME_TYPE_CONFIG: Record<
     description: '14-pick tactical draft duel. Formations, chemistry links, and live match showdown.',
     icon: '⚡',
   },
+  bank_it: {
+    label: 'Bank It',
+    description: 'Double your points streak or bank it before one wrong answer wipes it out.',
+    icon: '🏦',
+  },
 };
 
 // ---------------------------------------------------------------------------
 // Room status display
 // ---------------------------------------------------------------------------
 export const ROOM_STATUS_CONFIG: Record<RoomStatus, { label: string; color: string }> = {
-  waiting: { label: 'Waiting', color: 'text-lime' },
+  waiting: { label: 'Waiting', color: 'text-gold' },
   ready: { label: 'Ready', color: 'text-blue-400' },
   in_progress: { label: 'In Progress', color: 'text-amber-400' },
   completed: { label: 'Completed', color: 'text-slate-400' },
