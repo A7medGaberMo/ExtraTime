@@ -134,90 +134,7 @@ function matchesLeague(playerLeague?: string, targetLeague?: string): boolean {
   return false;
 }
 
-/**
- * Creates an instant Solo Draft session
- */
-export const createSoloDraft = mutation({
-  args: {
-    guestId: v.id('guestUsers'),
-    sessionToken: v.optional(v.string()),
-    challengeType: v.optional(v.string()),
-    formation: v.optional(v.string()),
-  },
-  handler: async (ctx, args) => {
-    await verifyGuestSession(ctx, args.guestId, args.sessionToken);
-    const guest = await getGuest(ctx, args.guestId);
-    const code = await generateUniqueDraftCode(ctx);
-    const now = Date.now();
 
-    const formationOptions = getAvailableFormationOptions();
-    const chosenFormation = args.formation;
-
-    let startingXI: Array<{
-      slotIndex: number;
-      position: string;
-      playerId?: Id<'players'>;
-      isCaptain?: boolean;
-      chemistry?: number;
-    }> = [];
-    let initialCandidateIds: Id<'players'>[] = [];
-    let initialStatus: 'formation' | 'drafting' = 'formation';
-    let turnExpiresAt: number | undefined = undefined;
-
-    // If user provided a formation (or default), skip formation page and jump directly to drafting!
-    if (chosenFormation) {
-      const positions = getFormationSlots(chosenFormation);
-      startingXI = positions.map((pos, idx) => ({
-        slotIndex: idx,
-        position: pos,
-        playerId: undefined,
-        isCaptain: false,
-        chemistry: 0,
-      }));
-      initialCandidateIds = await generateCandidatesForSlot(
-        ctx,
-        0,
-        'CAPTAIN',
-        new Set<string>(),
-      );
-      initialStatus = 'drafting';
-      turnExpiresAt = undefined; // Solo mode: relaxed, unhurried tactical drafting
-    }
-
-    const gameId = await ctx.db.insert('draftGames', {
-      code,
-      mode: 'solo',
-      player1Id: args.guestId,
-      challengeType: args.challengeType ?? 'high_chemistry',
-      status: initialStatus,
-      participants: [
-        {
-          guestId: args.guestId,
-          name: guest.nickname,
-          avatarSeed: guest.avatarSeed,
-          formation: chosenFormation,
-          formationOptions,
-          currentSlotIndex: 0,
-          currentCandidateIds: initialCandidateIds,
-          turnExpiresAt,
-          startingXI,
-          bench: [
-            { benchIndex: 0, playerId: undefined },
-            { benchIndex: 1, playerId: undefined },
-            { benchIndex: 2, playerId: undefined },
-          ],
-          squadRating: 0,
-          chemistryScore: 0,
-          totalDraftScore: 0,
-          isReady: false,
-        },
-      ],
-      createdAt: now,
-    });
-
-    return { gameId, code };
-  },
-});
 
 /**
  * Creates a private 1v1 Draft room with a 6-character code
@@ -233,12 +150,16 @@ export const createDuelPrivateRoom = mutation({
     const code = await generateUniqueDraftCode(ctx);
     const now = Date.now();
 
+    const CURATED_CHALLENGES = ['nation_brazil', 'nation_spain', 'club_clasico', 'club_real_madrid', 'high_chemistry', 'target_rating'];
+    const challengeType = CURATED_CHALLENGES[Math.floor(Math.random() * CURATED_CHALLENGES.length)];
+
     const gameId = await ctx.db.insert('draftGames', {
       code,
       mode: 'duel_private',
       isPublic: false,
       player1Id: args.hostId,
       status: 'waiting',
+      challengeType,
       participants: [
         {
           guestId: args.hostId,
@@ -397,12 +318,17 @@ export const findOrCreatePublicMatch = mutation({
 
     // Otherwise, create new waiting lobby
     const code = await generateUniqueDraftCode(ctx);
+    
+    const CURATED_CHALLENGES = ['nation_brazil', 'nation_spain', 'club_clasico', 'club_real_madrid', 'high_chemistry', 'target_rating'];
+    const challengeType = CURATED_CHALLENGES[Math.floor(Math.random() * CURATED_CHALLENGES.length)];
+
     const gameId = await ctx.db.insert('draftGames', {
       code,
       mode: 'duel_public',
       isPublic: true,
       player1Id: args.guestId,
       status: 'waiting',
+      challengeType,
       participants: [
         {
           guestId: args.guestId,
@@ -481,12 +407,12 @@ export const selectFormation = mutation({
     const newParticipants = [...game.participants];
     newParticipants[pIndex] = updatedParticipant;
 
-    // In 1v1: transition to 'drafting' when both chosen, or in solo: immediate
+    // Transition to 'drafting' when both chosen
     const allFormationsChosen = newParticipants.every((p) => Boolean(p.formation));
-    const nextStatus = allFormationsChosen ? 'drafting' : game.status;
+    const nextStatus = (allFormationsChosen && newParticipants.length === 2) ? 'drafting' : game.status;
 
-    // Start 25s turn clocks for PvP participants when entering drafting
-    if (nextStatus === 'drafting' && game.mode !== 'solo') {
+    // Start 25s turn clocks for participants when entering drafting
+    if (nextStatus === 'drafting') {
       for (const p of newParticipants) {
         p.turnExpiresAt = now + TURN_TIMEOUT_MS;
       }
@@ -610,7 +536,7 @@ async function executePickForParticipant(
       targetPos,
       usedPlayerIds,
     );
-    nextExpiresAt = game.mode === 'solo' ? undefined : now + TURN_TIMEOUT_MS;
+    nextExpiresAt = now + TURN_TIMEOUT_MS;
   }
 
   const updatedParticipant = {
@@ -841,308 +767,6 @@ export const finishDraft = mutation({
     };
 
     const allReady = newParticipants.every((p) => p.isReady);
-
-    if (game.mode === 'solo') {
-      const participant = newParticipants[0];
-
-      // If user specifically picked 'boss_match', simulate match against boss squad
-      if (game.challengeType === 'boss_match') {
-        const toDraftPlayer = async (
-          slot: (typeof participant.startingXI)[0],
-        ): Promise<DraftSimPlayer> => {
-          const p = slot.playerId ? await ctx.db.get(slot.playerId) : null;
-          const c = p?.clubId ? await ctx.db.get(p.clubId) : null;
-          const n = p?.nationId ? await ctx.db.get(p.nationId) : null;
-          return {
-            id: p ? String(p._id) : slot.position,
-            name: p?.name ?? slot.position,
-            tier: (p?.tier as DraftSimPlayer['tier']) ?? 'GOLD',
-            position: slot.position,
-            club: c?.name ?? '',
-            nation: n?.name ?? '',
-            league: c?.league,
-            rating: p?.rating,
-            isCaptain: slot.isCaptain,
-          };
-        };
-
-        const hostSquad: DraftSimPlayer[] = [];
-        for (const s of participant.startingXI) hostSquad.push(await toDraftPlayer(s));
-
-        const bossSquad: DraftSimPlayer[] = [
-          { id: 'b1', name: 'Pelé', tier: 'ICON', position: 'ST', club: 'Santos', nation: 'Brazil', rating: 98, isCaptain: true },
-          { id: 'b2', name: 'Ronaldo Nazário', tier: 'ICON', position: 'CF', club: 'Real Madrid', nation: 'Brazil', rating: 96 },
-          { id: 'b3', name: 'Zinédine Zidane', tier: 'ICON', position: 'CAM', club: 'Real Madrid', nation: 'France', rating: 96 },
-          { id: 'b4', name: 'Ronaldinho', tier: 'ICON', position: 'LW', club: 'Barcelona', nation: 'Brazil', rating: 95 },
-          { id: 'b5', name: 'Ruud Gullit', tier: 'ICON', position: 'CM', club: 'AC Milan', nation: 'Netherlands', rating: 93 },
-          { id: 'b6', name: 'Patrick Vieira', tier: 'ICON', position: 'CDM', club: 'Arsenal', nation: 'France', rating: 91 },
-          { id: 'b7', name: 'Roberto Carlos', tier: 'ICON', position: 'LB', club: 'Real Madrid', nation: 'Brazil', rating: 91 },
-          { id: 'b8', name: 'Paolo Maldini', tier: 'ICON', position: 'CB', club: 'AC Milan', nation: 'Italy', rating: 95 },
-          { id: 'b9', name: 'Franco Baresi', tier: 'ICON', position: 'CB', club: 'AC Milan', nation: 'Italy', rating: 93 },
-          { id: 'b10', name: 'Cafu', tier: 'ICON', position: 'RB', club: 'AC Milan', nation: 'Brazil', rating: 92 },
-          { id: 'b11', name: 'Lev Yashin', tier: 'ICON', position: 'GK', club: 'Dynamo Moscow', nation: 'Russia', rating: 94 },
-        ];
-
-        const simResult = simulatePureDraftMatch(
-          String(game._id),
-          hostSquad,
-          bossSquad,
-          `${game.code}:solo:showdown`,
-        );
-
-        const winnerId = simResult.winnerId === 'host' ? participant.guestId : undefined;
-
-        const showdownResult = {
-          score: simResult.score,
-          winnerId,
-          isShootout: simResult.isShootout,
-          shootoutScore: simResult.shootoutScore,
-          sectors: {
-            host: simResult.sectors.host,
-            guest: simResult.sectors.guest,
-          },
-          timeline: simResult.timeline.map((t) => ({
-            id: t.id,
-            minute: t.minute,
-            type: t.type,
-            team: t.team,
-            playerName: t.player?.name,
-            playerTier: t.player?.tier,
-            assistName: t.assistPlayer?.name,
-            description: t.description,
-            scoreSnapshot: t.scoreSnapshot,
-          })),
-          simulatedAt: Date.now(),
-        };
-
-        await ctx.db.patch(game._id, {
-          status: 'showdown',
-          completedAt: Date.now(),
-          participants: newParticipants,
-          winnerId,
-          showdownResult,
-        });
-
-        return { status: 'showdown' };
-      }
-
-      // For all dynamic challenges (Nations, Clubs, Leagues, Hybrids, Synergy, Lucky Quests):
-      // Evaluate objectives directly without forced default squad simulation!
-      const playerDetails = await Promise.all(
-        participant.startingXI.map(async (slot) => {
-          if (!slot.playerId) return null;
-          const p = await ctx.db.get(slot.playerId);
-          if (!p) return null;
-          const club = p.clubId ? await ctx.db.get(p.clubId) : null;
-          const nation = p.nationId ? await ctx.db.get(p.nationId) : null;
-          return {
-            name: p.name,
-            clubName: club?.name ?? '',
-            nationName: nation?.name ?? '',
-            league: club?.league ?? '',
-          };
-        }),
-      );
-      const players = playerDetails.filter(Boolean);
-
-      const chType = game.challengeType || 'high_chemistry';
-      let title = 'Solo Challenge';
-      let rewardXp = 500;
-      const requirements: Array<{
-        id: string;
-        label: string;
-        target: string;
-        actual: string;
-        met: boolean;
-      }> = [];
-
-      const chem = participant.chemistryScore;
-      const rating = participant.squadRating;
-
-      if (chType.startsWith('lucky:')) {
-        const parts = chType.split(':');
-        const kind = parts[1];
-
-        if (kind === 'nation') {
-          const targetNation = parts[2] || 'Brazil';
-          const targetCount = parseInt(parts[3], 10) || 4;
-          const targetChem = parseInt(parts[4], 10) || 24;
-          rewardXp = parseInt(parts[5], 10) || 700;
-          title = `Lucky Quest: ${targetNation} Pride`;
-
-          const count = players.filter((p) => matchesNation(p?.nationName, targetNation)).length;
-          requirements.push({
-            id: 'req_1',
-            label: `${targetNation} Players in XI`,
-            target: `${targetCount}+`,
-            actual: `${count}`,
-            met: count >= targetCount,
-          });
-          requirements.push({
-            id: 'req_2',
-            label: 'Minimum Chemistry',
-            target: `${targetChem}`,
-            actual: `${chem}`,
-            met: chem >= targetChem,
-          });
-        } else if (kind === 'club') {
-          const targetClub = parts[2] || 'Real Madrid';
-          const targetCount = parseInt(parts[3], 10) || 2;
-          const targetRating = parseInt(parts[4], 10) || 84;
-          rewardXp = parseInt(parts[5], 10) || 800;
-          title = `Lucky Quest: ${targetClub} Core`;
-
-          const count = players.filter((p) => matchesClub(p?.clubName, targetClub)).length;
-          requirements.push({
-            id: 'req_1',
-            label: `${targetClub} Players in XI`,
-            target: `${targetCount}+`,
-            actual: `${count}`,
-            met: count >= targetCount,
-          });
-          requirements.push({
-            id: 'req_2',
-            label: 'Minimum Squad Rating',
-            target: `${targetRating}`,
-            actual: `${rating}`,
-            met: rating >= targetRating,
-          });
-        } else if (kind === 'league') {
-          const targetLeague = parts[2] || 'Premier League';
-          const targetCount = parseInt(parts[3], 10) || 4;
-          const targetChem = parseInt(parts[4], 10) || 25;
-          rewardXp = parseInt(parts[5], 10) || 750;
-          title = `Lucky Quest: ${targetLeague} Run`;
-
-          const count = players.filter((p) => matchesLeague(p?.league, targetLeague)).length;
-          requirements.push({
-            id: 'req_1',
-            label: `${targetLeague} Players in XI`,
-            target: `${targetCount}+`,
-            actual: `${count}`,
-            met: count >= targetCount,
-          });
-          requirements.push({
-            id: 'req_2',
-            label: 'Minimum Chemistry',
-            target: `${targetChem}`,
-            actual: `${chem}`,
-            met: chem >= targetChem,
-          });
-        }
-      } else if (chType === 'nation_brazil') {
-        title = 'Samba Magic';
-        rewardXp = 500;
-        const count = players.filter((p) => matchesNation(p?.nationName, 'Brazil')).length;
-        requirements.push({ id: 'req_1', label: 'Brazilian Players in XI', target: '4+', actual: `${count}`, met: count >= 4 });
-        requirements.push({ id: 'req_2', label: 'Minimum Chemistry', target: '24', actual: `${chem}`, met: chem >= 24 });
-      } else if (chType === 'nation_spain') {
-        title = 'La Furia Roja';
-        rewardXp = 500;
-        const count = players.filter((p) => matchesNation(p?.nationName, 'Spain')).length;
-        requirements.push({ id: 'req_1', label: 'Spanish Players in XI', target: '4+', actual: `${count}`, met: count >= 4 });
-        requirements.push({ id: 'req_2', label: 'Minimum Chemistry', target: '25', actual: `${chem}`, met: chem >= 25 });
-      } else if (chType === 'nation_england') {
-        title = 'Three Lions Core';
-        rewardXp = 500;
-        const count = players.filter((p) => matchesNation(p?.nationName, 'England')).length;
-        requirements.push({ id: 'req_1', label: 'English Players in XI', target: '4+', actual: `${count}`, met: count >= 4 });
-        requirements.push({ id: 'req_2', label: 'Minimum Chemistry', target: '24', actual: `${chem}`, met: chem >= 24 });
-      } else if (chType === 'nation_france') {
-        title = 'Les Bleus Armada';
-        rewardXp = 500;
-        const count = players.filter((p) => matchesNation(p?.nationName, 'France')).length;
-        requirements.push({ id: 'req_1', label: 'French Players in XI', target: '4+', actual: `${count}`, met: count >= 4 });
-        requirements.push({ id: 'req_2', label: 'Minimum Chemistry', target: '25', actual: `${chem}`, met: chem >= 25 });
-      } else if (chType === 'nation_argentina') {
-        title = 'Albiceleste Tango';
-        rewardXp = 650;
-        const count = players.filter((p) => matchesNation(p?.nationName, 'Argentina')).length;
-        requirements.push({ id: 'req_1', label: 'Argentinian Players in XI', target: '3+', actual: `${count}`, met: count >= 3 });
-        requirements.push({ id: 'req_2', label: 'Minimum Squad Rating', target: '84', actual: `${rating}`, met: rating >= 84 });
-      } else if (chType === 'club_clasico') {
-        title = 'El Clásico Royale';
-        rewardXp = 750;
-        const realCount = players.filter((p) => matchesClub(p?.clubName, 'Real Madrid')).length;
-        const barcaCount = players.filter((p) => matchesClub(p?.clubName, 'Barcelona')).length;
-        requirements.push({ id: 'req_1', label: 'Real Madrid Stars', target: '2+', actual: `${realCount}`, met: realCount >= 2 });
-        requirements.push({ id: 'req_2', label: 'Barcelona Stars', target: '2+', actual: `${barcaCount}`, met: barcaCount >= 2 });
-        requirements.push({ id: 'req_3', label: 'Minimum Squad Rating', target: '84', actual: `${rating}`, met: rating >= 84 });
-      } else if (chType === 'club_real_madrid') {
-        title = 'Los Blancos Dynasty';
-        rewardXp = 650;
-        const count = players.filter((p) => matchesClub(p?.clubName, 'Real Madrid')).length;
-        requirements.push({ id: 'req_1', label: 'Real Madrid Players', target: '3+', actual: `${count}`, met: count >= 3 });
-        requirements.push({ id: 'req_2', label: 'Minimum Squad Rating', target: '85', actual: `${rating}`, met: rating >= 85 });
-      } else if (chType === 'club_barcelona') {
-        title = 'Blaugrana Tiki-Taka';
-        rewardXp = 650;
-        const count = players.filter((p) => matchesClub(p?.clubName, 'Barcelona')).length;
-        requirements.push({ id: 'req_1', label: 'Barcelona Players', target: '3+', actual: `${count}`, met: count >= 3 });
-        requirements.push({ id: 'req_2', label: 'Minimum Chemistry', target: '26', actual: `${chem}`, met: chem >= 26 });
-      } else if (chType === 'club_single_core') {
-        title = 'One Club Core';
-        rewardXp = 700;
-        const clubMap: Record<string, number> = {};
-        for (const p of players) {
-          if (p?.clubName) clubMap[p.clubName] = (clubMap[p.clubName] || 0) + 1;
-        }
-        const maxFromOne = Math.max(0, ...Object.values(clubMap));
-        requirements.push({ id: 'req_1', label: 'Players from 1 Single Club', target: '4+', actual: `${maxFromOne}`, met: maxFromOne >= 4 });
-        requirements.push({ id: 'req_2', label: 'Minimum Chemistry', target: '24', actual: `${chem}`, met: chem >= 24 });
-      } else if (chType === 'league_epl') {
-        title = 'Premier League Fortress';
-        rewardXp = 600;
-        const count = players.filter((p) => matchesLeague(p?.league, 'Premier League')).length;
-        requirements.push({ id: 'req_1', label: 'Premier League Players', target: '5+', actual: `${count}`, met: count >= 5 });
-        requirements.push({ id: 'req_2', label: 'Minimum Squad Rating', target: '85', actual: `${rating}`, met: rating >= 85 });
-      } else if (chType === 'league_la_liga') {
-        title = 'La Liga Maestros';
-        rewardXp = 600;
-        const count = players.filter((p) => matchesLeague(p?.league, 'La Liga')).length;
-        requirements.push({ id: 'req_1', label: 'La Liga Players', target: '5+', actual: `${count}`, met: count >= 5 });
-        requirements.push({ id: 'req_2', label: 'Minimum Chemistry', target: '26', actual: `${chem}`, met: chem >= 26 });
-      } else if (chType === 'hybrid_3leagues') {
-        title = 'Tri-League Hybrid';
-        rewardXp = 850;
-        const leagues = new Set(players.map((p) => p?.league).filter(Boolean));
-        requirements.push({ id: 'req_1', label: 'Distinct Leagues in XI', target: '3', actual: `${leagues.size}`, met: leagues.size === 3 });
-        requirements.push({ id: 'req_2', label: 'Minimum Chemistry', target: '27', actual: `${chem}`, met: chem >= 27 });
-      } else if (chType === 'high_chemistry') {
-        title = 'Chemistry Wizard';
-        rewardXp = 650;
-        requirements.push({ id: 'req_1', label: 'Squad Chemistry', target: '30', actual: `${chem}`, met: chem >= 30 });
-      } else if (chType === 'target_rating') {
-        title = 'Galácticos 87+';
-        rewardXp = 750;
-        requirements.push({ id: 'req_1', label: 'Overall Squad Rating', target: '87', actual: `${rating}`, met: rating >= 87 });
-      } else {
-        // Default high_chemistry / lucky quest
-        title = 'Chemistry Master';
-        rewardXp = 650;
-        requirements.push({ id: 'req_1', label: 'Squad Chemistry', target: '28', actual: `${chem}`, met: chem >= 28 });
-        requirements.push({ id: 'req_2', label: 'Squad Rating', target: '82', actual: `${rating}`, met: rating >= 82 });
-      }
-
-      const passed = requirements.every((r) => r.met);
-      const challengeEvaluation = {
-        passed,
-        challengeId: chType,
-        title,
-        requirements,
-        rewardXp: passed ? rewardXp : 100,
-        completedAt: Date.now(),
-      };
-
-      await ctx.db.patch(game._id, {
-        status: 'completed',
-        completedAt: Date.now(),
-        participants: newParticipants,
-        challengeEvaluation,
-      });
-
-      return { status: 'completed', challengeEvaluation };
-    }
 
     if (allReady && newParticipants.length >= 2) {
       // 1v1 Showdown: run match simulation

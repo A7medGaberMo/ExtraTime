@@ -37,7 +37,7 @@ type GameMode = 'snipe' | 'rank' | 'draft' | 'bank';
 type MatchSize = 5 | 11;
 type PoolMode = 'GLOBAL' | 'ACTIVE' | 'EPL' | 'EGYPT' | 'ICONS';
 type RankModeType = 'duel' | 'quick' | 'solo';
-type DraftModeType = 'duel' | 'quick' | 'solo';
+type DraftModeType = 'duel' | 'quick';
 type BankModeType = 'duel' | 'quick' | 'solo';
 
 function CreateRoomContent() {
@@ -64,7 +64,7 @@ function CreateRoomContent() {
   const createRankSolo = useMutation(api.rank.mutations.createSoloGame);
   const findRankPublic = useMutation(api.rank.mutations.findOrCreatePublicMatch);
   const createDraftDuel = useMutation(api.draft.mutations.createDuelPrivateRoom);
-  const createDraftSolo = useMutation(api.draft.mutations.createSoloDraft);
+
   const findDraftPublic = useMutation(api.draft.mutations.findOrCreatePublicMatch);
   const createBankDuel = useMutation(api.bank.mutations.createDuelPrivateRoom);
   const createBankSolo = useMutation(api.bank.mutations.createSoloGame);
@@ -89,7 +89,7 @@ function CreateRoomContent() {
 
   // Draft options
   const [draftType, setDraftType] = useState<DraftModeType>('duel');
-  const [draftFormation, setDraftFormation] = useState<string>('4-3-3');
+
 
   // Bank options
   const [bankType, setBankType] = useState<BankModeType>('duel');
@@ -147,15 +147,8 @@ function CreateRoomContent() {
         if (draftType === 'duel') {
           const result = await createDraftDuel({ hostId: guestId, sessionToken });
           router.push(`/draft/${result.gameId}`);
-        } else if (draftType === 'quick') {
-          const result = await findDraftPublic({ guestId, sessionToken });
-          router.push(`/draft/${result.gameId}`);
         } else {
-          const result = await createDraftSolo({
-            guestId,
-            sessionToken,
-            formation: draftFormation,
-          });
+          const result = await findDraftPublic({ guestId, sessionToken });
           router.push(`/draft/${result.gameId}`);
         }
       } else {
@@ -251,12 +244,7 @@ function CreateRoomContent() {
     { value: 200, label: '$200M' },
   ];
 
-  const draftFormationOptions: SegmentedOption<string>[] = [
-    { value: '4-3-3', label: '4-3-3', sublabel: lang === 'ar' ? 'متوازن' : 'Balanced' },
-    { value: '4-4-2', label: '4-4-2', sublabel: lang === 'ar' ? 'كلاسيكي' : 'Classic' },
-    { value: '3-5-2', label: '3-5-2', sublabel: lang === 'ar' ? 'وسط ميدان' : 'Midfield' },
-    { value: '4-2-3-1', label: '4-2-3-1', sublabel: lang === 'ar' ? 'تكتيكي' : 'Tactical' },
-  ];
+
 
   const draftModeOptions: SegmentedOption<DraftModeType>[] = [
     {
@@ -268,11 +256,6 @@ function CreateRoomContent() {
       value: 'quick',
       label: lang === 'ar' ? 'ماتش سريع' : 'Quick Match',
       icon: <AppIcon icon={Lightning} size={14} weight="duotone" />,
-    },
-    {
-      value: 'solo',
-      label: lang === 'ar' ? 'بناء فردي' : 'Solo Squad',
-      icon: <AppIcon icon={Star} size={14} weight="duotone" />,
     },
   ];
 
@@ -583,19 +566,7 @@ function CreateRoomContent() {
               />
             </div>
 
-            {/* Formation (Full Width Separate Line) */}
-            <div className="luxury-glass rounded-xl sm:rounded-2xl p-1.5 sm:p-2 border border-white/8 space-y-0.5">
-              <label className="text-steel text-[9px] sm:text-[9.5px] font-bold tracking-widest uppercase block px-0.5 font-stats">
-                {lang === 'ar' ? 'خطة التشكيلة' : 'Formation'}
-              </label>
-              <SegmentedControl
-                options={draftFormationOptions}
-                value={draftFormation}
-                onChange={setDraftFormation}
-                size="sm"
-                activeVariant="gold"
-              />
-            </div>
+
 
             {/* Sleek Minimal Synergy Bar (Clean, Noise-Free) */}
             <div className="luxury-glass px-2.5 sm:px-3 py-1.5 rounded-xl border border-gold/20 flex items-center justify-between text-xs">

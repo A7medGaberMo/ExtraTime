@@ -95,12 +95,8 @@ export default function HomePage() {
           router.push(`/rank/${result.gameId}`);
         }
       } else if (action.mode === 'draft') {
-        if (action.variant === 'solo') {
-          router.push('/draft?tab=solo');
-        } else {
-          const result = await findDraftMatch({ guestId, sessionToken: actionSessionToken });
-          router.push(`/draft/${result.gameId}`);
-        }
+        const result = await findDraftMatch({ guestId, sessionToken: actionSessionToken });
+        router.push(`/draft/${result.gameId}`);
       } else if (action.mode === 'bank') {
         if (action.variant === 'solo') {
           const result = await createSoloBank({ guestId, sessionToken: actionSessionToken });

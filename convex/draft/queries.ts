@@ -104,34 +104,7 @@ export const getPublicQueueSummary = query({
   },
 });
 
-export const getSoloLeaderboard = query({
-  args: {},
-  handler: async (ctx) => {
-    const games = await ctx.db
-      .query('draftGames')
-      .withIndex('by_status', (q) => q.eq('status', 'completed'))
-      .take(50);
 
-    const soloScores = games
-      .filter((g) => g.mode === 'solo' && g.participants.length > 0)
-      .map((g) => {
-        const p = g.participants[0];
-        return {
-          gameId: g._id,
-          playerName: p.name,
-          formation: p.formation ?? '4-3-3',
-          squadRating: p.squadRating,
-          chemistryScore: p.chemistryScore,
-          totalDraftScore: p.totalDraftScore,
-          completedAt: g.completedAt ?? g.createdAt,
-        };
-      })
-      .sort((a, b) => b.totalDraftScore - a.totalDraftScore)
-      .slice(0, 10);
-
-    return soloScores;
-  },
-});
 
 export const getByCode = query({
   args: {

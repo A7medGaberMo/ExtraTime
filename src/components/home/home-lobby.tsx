@@ -144,7 +144,7 @@ export function HomeLobby({ queueCounts, onPlayMode, loading }: HomeLobbyProps) 
 
                 {/* Bottom Section: Actions (1v1 Duel & Solo Mode) */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4 mt-auto z-10 w-full sm:w-auto self-start">
-                   {mode.id === 'snipe' ? (
+                   {mode.id === 'snipe' || mode.id === 'draft' ? (
                      <button
                        onClick={() => onPlayMode(mode.id, 'public')}
                        disabled={loading}
