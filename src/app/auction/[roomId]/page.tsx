@@ -254,7 +254,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
       : '-';
   const totalRounds = auction?.rounds?.length ?? 11;
   const signedCount = mySquad.filter((s) => s.player).length;
-  const tierColor = mainPlayer?.tier ? getTierStyle(mainPlayer.tier).highlight : '#CAFF00';
+  const tierColor = mainPlayer?.tier ? getTierStyle(mainPlayer.tier).highlight : 'var(--et-brand)';
 
   const mainPlayerCardData: PlayerCardData | null = useMemo(() => {
     if (!mainPlayer) return null;
@@ -387,8 +387,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     return (
       <div className="flex h-[100dvh] items-center justify-center">
         <div className="apple-glass-elevated p-8 rounded-3xl flex flex-col items-center gap-3 border border-white/10 shadow-2xl">
-          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
-          <p className="text-steel text-xs font-black tracking-widest uppercase font-stats">
+          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-game-accent animate-spin" />
+          <p className="text-muted text-xs font-black tracking-widest uppercase font-stats">
             {t('common.loading')}
           </p>
         </div>
@@ -400,7 +400,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     return (
       <div className="flex h-[100dvh] items-center justify-center p-4">
         <div className="apple-glass-elevated max-w-sm w-full p-6 text-center space-y-4 rounded-3xl border border-white/15 shadow-2xl">
-          <AppIcon icon={Crosshair} size={36} weight="duotone" className="text-steel mx-auto" />
+          <AppIcon icon={Crosshair} size={36} weight="duotone" className="text-muted mx-auto" />
           <h2 className="text-lg font-black text-white uppercase font-display">Match Not Found</h2>
           <Button variant="primary" size="md" fullWidth onClick={() => router.push('/')}>
             {t('results.home')}
@@ -421,8 +421,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
       {/* ── 0. WAITING LOBBY OVERLAY (WHEN WAITING FOR OPPONENT) ────── */}
       {room.status === 'waiting' && !auction.guest && (
-        <div className="apple-glass-elevated absolute inset-2 sm:inset-4 z-40 p-6 flex flex-col items-center justify-center text-center space-y-5 rounded-3xl border border-gold/30 shadow-[0_16px_50px_rgba(229,184,66,0.15)] backdrop-blur-3xl">
-          <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-gold/40 bg-gold/10 text-gold shadow-[0_0_20px_rgba(229,184,66,0.25)]">
+        <div className="apple-glass-elevated absolute inset-2 sm:inset-4 z-40 p-6 flex flex-col items-center justify-center text-center space-y-5 rounded-3xl border border-game-accent/30 shadow-[0_16px_50px_rgba(229,184,66,0.15)] backdrop-blur-3xl">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-game-accent/40 bg-game-accent/10 text-game-accent shadow-[0_0_20px_rgba(229,184,66,0.25)]">
             <AppIcon icon={Crosshair} size={32} weight="duotone" />
           </div>
 
@@ -430,18 +430,18 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             <h2 className="text-xl sm:text-2xl font-black text-white uppercase font-display tracking-tight">
               {t('auction.waitingOverlay.title')}
             </h2>
-            <p className="text-steel text-xs font-medium max-w-md mx-auto leading-relaxed">
+            <p className="text-muted text-xs font-medium max-w-md mx-auto leading-relaxed">
               {t('auction.waitingOverlay.subtitle')}
             </p>
           </div>
 
           {/* Room Code Card */}
-          <div className="apple-glass-card flex flex-col items-center gap-2 rounded-2xl border border-gold/30 bg-gold/5 p-4 max-w-xs w-full">
-            <span className="text-gold text-[10px] font-black tracking-widest uppercase font-stats">
+          <div className="apple-glass-card flex flex-col items-center gap-2 rounded-2xl border border-game-accent/30 bg-game-accent/5 p-4 max-w-xs w-full">
+            <span className="text-game-accent text-[10px] font-black tracking-widest uppercase font-stats">
               {t('joinRoom.roomCode')}
             </span>
             <div className="flex items-center gap-3">
-              <span className="font-stats text-gold text-3xl font-black tracking-[0.25em]">
+              <span className="font-stats text-game-accent text-3xl font-black tracking-[0.25em]">
                 {room.code}
               </span>
               <button
@@ -449,17 +449,17 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 onClick={copyCode}
                 aria-label="Copy Room Code"
                 title="Copy Room Code"
-                className="btn-haptic flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-steel hover:text-gold hover:border-gold/50 transition-colors cursor-pointer shadow-sm"
+                className="btn-haptic flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-muted hover:text-game-accent hover:border-game-accent/50 transition-colors cursor-pointer shadow-sm"
               >
-                <AppIcon icon={codeCopied ? Check : Copy} size={18} weight="bold" className={codeCopied ? 'text-gold' : ''} />
+                <AppIcon icon={codeCopied ? Check : Copy} size={18} weight="bold" className={codeCopied ? 'text-game-accent' : ''} />
               </button>
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-2 text-xs text-steel font-medium font-stats">
+          <div className="flex items-center justify-center gap-2 text-xs text-muted font-medium font-stats">
             <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-gold" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-game-accent opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-game-accent" />
             </span>
             <span>{t('lobby.waitingOpponent')}</span>
           </div>
@@ -468,7 +468,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             variant="ghost"
             size="sm"
             onClick={handleExitOrCancel}
-            className="text-steel hover:text-rose-400 text-xs font-stats uppercase tracking-wider"
+            className="text-muted hover:text-rose-400 text-xs font-stats uppercase tracking-wider"
           >
             {t('auction.waitingOverlay.cancelMatch')}
           </Button>
@@ -482,16 +482,16 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
         {/* Dual Budget Badges */}
         <div className="flex items-center gap-1 sm:gap-2 min-w-0">
-          <div className="flex flex-col items-center justify-center rounded-xl border border-gold/40 bg-gradient-to-b from-gold/20 via-gold/10 to-slate-950 px-2.5 py-1 min-w-[70px] sm:min-w-[84px] shadow-[0_2px_12px_rgba(229,184,66,0.15)]">
-            <span className="text-gold text-[7.5px] leading-none font-black tracking-widest uppercase font-stats">
+          <div className="flex flex-col items-center justify-center rounded-xl border border-game-accent/40 bg-gradient-to-b from-game-accent/20 via-game-accent/10 to-slate-950 px-2.5 py-1 min-w-[70px] sm:min-w-[84px] shadow-[0_2px_12px_rgba(229,184,66,0.15)]">
+            <span className="text-game-accent text-[7.5px] leading-none font-black tracking-widest uppercase font-stats">
               {t('auction.you')}
             </span>
-            <span className="font-stats text-gold text-xs sm:text-base font-black leading-tight tabular-nums">
+            <span className="font-stats text-game-accent text-xs sm:text-base font-black leading-tight tabular-nums">
               ${myBudget}M
             </span>
           </div>
 
-          <span className="text-steel/60 text-[8px] font-black uppercase font-stats">VS</span>
+          <span className="text-muted/60 text-[8px] font-black uppercase font-stats">VS</span>
 
           <div className="flex flex-col items-center justify-center rounded-xl border border-rose-500/40 bg-gradient-to-b from-rose-500/20 via-rose-500/10 to-slate-950 px-2.5 py-1 min-w-[70px] sm:min-w-[84px] shadow-[0_2px_12px_rgba(244,63,94,0.15)]">
             <span className="text-rose-400 text-[7.5px] leading-none font-black tracking-widest uppercase font-stats">
@@ -506,7 +506,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
         {/* Dynamic Island: Scheme & Round Indicator */}
         <div className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-xl bg-white/[0.05] border border-white/12 shadow-inner font-stats">
           <div className="flex flex-col items-center leading-none">
-            <span className="text-steel text-[7.5px] sm:text-[8px] font-bold uppercase tracking-wider">
+            <span className="text-muted text-[7.5px] sm:text-[8px] font-bold uppercase tracking-wider">
               {auction.formation} Scheme
             </span>
             <span className="text-white text-[11px] sm:text-xs font-black tracking-wider pt-0.5 tabular-nums">
@@ -531,7 +531,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             onClick={() => setShowExitModal(true)}
             title="Leave or Cancel Match"
             aria-label="Leave or Cancel Match"
-            className="btn-haptic flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-slate-300 hover:text-rose-400 hover:border-rose-500/40 hover:bg-rose-500/10 transition-all cursor-pointer shadow-sm"
+            className="btn-haptic flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-foreground hover:text-rose-400 hover:border-rose-500/40 hover:bg-rose-500/10 transition-all cursor-pointer shadow-sm"
           >
             <AppIcon icon={SignOut} size={16} weight="bold" />
           </button>
@@ -553,7 +553,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             <h3 className="text-lg font-black uppercase text-white font-display">
               {lang === 'ar' ? 'مغادرة الماتش؟' : 'Leave Snipe Match?'}
             </h3>
-            <p className="text-steel text-xs font-medium leading-relaxed max-w-xs mx-auto">
+            <p className="text-muted text-xs font-medium leading-relaxed max-w-xs mx-auto">
               {lang === 'ar'
                 ? 'هل أنت متأكد من رغبتك في المغادرة؟ سيتم إلغاء الماتش والعودة إلى الساحة الرئيسية.'
                 : 'Are you sure you want to leave? Your active auction match will be cancelled.'}
@@ -602,8 +602,8 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                   className="inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-0.5 text-[10px] sm:text-[11px] font-black tracking-wider uppercase shadow-sm backdrop-blur-md font-stats"
                   style={{
                     color: tierColor,
-                    backgroundColor: `${tierColor}15`,
-                    borderColor: `${tierColor}50`,
+                    backgroundColor: `color-mix(in srgb, ${tierColor} 8%, transparent)`,
+                    borderColor: `color-mix(in srgb, ${tierColor} 31%, transparent)`,
                   }}
                 >
                   <AppIcon icon={Shield} size={13} weight="duotone" style={{ color: tierColor }} />
@@ -658,13 +658,13 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                   </div>
                 ) : (
                   <div className="flex h-[148px] w-24 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/80">
-                    <AppIcon icon={CircleNotch} size={24} weight="bold" className="text-gold animate-spin" />
+                    <AppIcon icon={CircleNotch} size={24} weight="bold" className="text-game-accent animate-spin" />
                   </div>
                 )}
 
                 {/* Sub / Backup Capsule */}
-                <div className="mt-1.5 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-950/80 px-2.5 py-0.5 text-[9.5px] sm:text-[10px] text-slate-300 font-stats shadow-inner">
-                  <span className="h-1.5 w-1.5 rounded-full bg-gold/80" />
+                <div className="mt-1.5 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-950/80 px-2.5 py-0.5 text-[9.5px] sm:text-[10px] text-foreground font-stats shadow-inner">
+                  <span className="h-1.5 w-1.5 rounded-full bg-game-accent/80" />
                   {revealedSubPlayer ? (
                     <span>
                       {t('auction.runnerUpGets')}: <strong className="text-white">{revealedSubPlayer.name}</strong> ({revealedSubPlayer.tier})
@@ -713,7 +713,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
               <div
                 className={`apple-glass-elevated p-2.5 sm:p-3 space-y-2.5 transition-all border rounded-2xl ${
                   myLocked
-                    ? 'border-gold/40 bg-gradient-to-b from-gold/10 to-transparent shadow-[0_8px_30px_rgba(229,184,66,0.12)]'
+                    ? 'border-game-accent/40 bg-gradient-to-b from-game-accent/10 to-transparent shadow-[0_8px_30px_rgba(229,184,66,0.12)]'
                     : 'border-white/12'
                 }`}
               >
@@ -722,12 +722,12 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                   <div className="flex items-center gap-1.5">
                     <div
                       className={`rounded-xl border p-1 ${
-                        myLocked ? 'border-gold/50 bg-gold/15 text-gold shadow-[0_0_10px_rgba(229,184,66,0.2)]' : 'border-white/15 bg-white/5 text-steel'
+                        myLocked ? 'border-game-accent/50 bg-game-accent/15 text-game-accent shadow-[0_0_10px_rgba(229,184,66,0.2)]' : 'border-white/15 bg-white/5 text-muted'
                       }`}
                     >
                       <AppIcon icon={myLocked ? LockKey : Lock} size={14} weight={myLocked ? 'fill' : 'bold'} />
                     </div>
-                    <span className={`text-[11px] font-black uppercase tracking-wider font-stats ${bothLocked ? 'text-amber-300' : myLocked ? 'text-gold' : 'text-white'}`}>
+                    <span className={`text-[11px] font-black uppercase tracking-wider font-stats ${bothLocked ? 'text-amber-300' : myLocked ? 'text-game-accent' : 'text-white'}`}>
                       {bothLocked
                         ? t('auction.bothSealed')
                         : myLocked
@@ -753,7 +753,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                       }
                       className="shadow-[0_4px_16px_rgba(229,184,66,0.2)]"
                     />
-                    <p className="text-steel text-[11px] font-medium max-w-md mx-auto leading-relaxed">
+                    <p className="text-muted text-[11px] font-medium max-w-md mx-auto leading-relaxed">
                       {opponentLocked
                         ? t('auction.bothEnvelopesIn')
                         : t('auction.envelopeWaitingOther')}
@@ -775,10 +775,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                         className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-stats border ${
                           canPass
                             ? 'border-emerald-400/30 bg-emerald-400/10 text-emerald-300'
-                            : 'border-white/10 bg-white/5 text-steel'
+                            : 'border-white/10 bg-white/5 text-muted'
                         }`}
                       >
-                        <span className={`h-1.5 w-1.5 rounded-full ${canPass ? 'bg-emerald-400' : 'bg-steel'}`} />
+                        <span className={`h-1.5 w-1.5 rounded-full ${canPass ? 'bg-emerald-400' : 'bg-muted'}`} />
                         {canPass ? t('auction.passAvailable') : t('auction.passUsed')}
                       </span>
                       {opponentFrozen && (
@@ -798,7 +798,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                           onClick={() => setBidAmount(chip.value)}
                           className={`btn-haptic rounded-xl border py-1 px-0.5 text-[10px] sm:text-[10.5px] font-black uppercase tracking-wider transition-all active:scale-95 cursor-pointer font-stats ${
                             bidAmount === chip.value
-                              ? 'border-gold bg-gold text-slate-950 shadow-[0_2px_10px_rgba(229,184,66,0.3)] ring-1 ring-gold/50'
+                              ? 'border-game-accent bg-game-accent text-game-on-accent shadow-[0_2px_10px_rgba(229,184,66,0.3)] ring-1 ring-game-accent/50'
                               : 'border-white/10 bg-white/5 text-white hover:bg-white/10'
                           }`}
                         >
@@ -811,11 +811,11 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                     <div className="space-y-0.5 px-0.5">
                       <BidSlider value={bidAmount} min={minAllowedBid} max={maxAllowedBid} onChange={setBidAmount} />
                       <div className="flex items-center justify-between pt-0.5">
-                        <span className="text-steel flex items-center gap-1 text-[11px] font-black tracking-wider uppercase font-stats">
-                          <AppIcon icon={CurrencyDollar} size={14} weight="bold" className="text-gold" />
+                        <span className="text-muted flex items-center gap-1 text-[11px] font-black tracking-wider uppercase font-stats">
+                          <AppIcon icon={CurrencyDollar} size={14} weight="bold" className="text-game-accent" />
                           <span>{t('auction.yourBidAmount')}</span>
                         </span>
-                        <span className="font-stats text-gold text-lg font-black">${bidAmount}M</span>
+                        <span className="font-stats text-game-accent text-lg font-black">${bidAmount}M</span>
                       </div>
                     </div>
 
@@ -833,7 +833,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                       onClick={handleLockBid}
                       disabled={isSubmitting || bidAmount < minAllowedBid || bidAmount > maxAllowedBid}
                       loading={isSubmitting}
-                      leftIcon={<AppIcon icon={LockKey} size={16} weight="fill" className="text-slate-950" />}
+                      leftIcon={<AppIcon icon={LockKey} size={16} weight="fill" className="text-game-on-accent" />}
                       className="shadow-[0_8px_20px_rgba(229,184,66,0.25)] min-h-[42px]"
                     >
                       {bidAmount === 0
@@ -853,7 +853,7 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
                 <span className="text-xs font-black text-white uppercase font-display">
                   {t('auction.scheme', { formation: auction.formation })}
                 </span>
-                <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-[9px] font-black text-gold uppercase font-stats">
+                <span className="rounded-full border border-game-accent/30 bg-game-accent/10 px-2 py-0.5 text-[9px] font-black text-game-accent uppercase font-stats">
                   {t('auction.signedCount', { count: signedCount, total: totalRounds })}
                 </span>
               </div>
@@ -886,10 +886,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             className={`btn-haptic flex-1 flex items-center justify-center gap-1.5 rounded-full py-1.5 px-3 text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'arena'
                 ? 'apple-segmented-active text-white font-black shadow-md'
-                : 'text-slate-400 hover:text-white'
+                : 'text-muted hover:text-white'
             }`}
           >
-            <AppIcon icon={Crosshair} size={15} weight="bold" className={activeTab === 'arena' ? 'text-gold' : ''} />
+            <AppIcon icon={Crosshair} size={15} weight="bold" className={activeTab === 'arena' ? 'text-game-accent' : ''} />
             <span>{t('auction.arenaTab')}</span>
           </button>
 
@@ -902,10 +902,10 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
             className={`btn-haptic flex-1 flex items-center justify-center gap-1.5 rounded-full py-1.5 px-3 text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'pitch'
                 ? 'apple-segmented-active text-white font-black shadow-md'
-                : 'text-slate-400 hover:text-white'
+                : 'text-muted hover:text-white'
             }`}
           >
-            <AppIcon icon={Shield} size={15} weight="bold" className={activeTab === 'pitch' ? 'text-gold' : ''} />
+            <AppIcon icon={Shield} size={15} weight="bold" className={activeTab === 'pitch' ? 'text-game-accent' : ''} />
             <span>{t('auction.squadTab', { count: signedCount, total: totalRounds })}</span>
           </button>
         </div>

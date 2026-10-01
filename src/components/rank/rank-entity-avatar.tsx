@@ -46,7 +46,7 @@ export function RankEntityAvatar({ media, name, size = 'md' }: RankEntityAvatarP
 
   const customBgStyle: React.CSSProperties = visual
     ? {
-        background: `linear-gradient(135deg, ${visual.primaryColor}33 0%, #141416 100%)`,
+        background: `linear-gradient(135deg, ${visual.primaryColor}33 0%, var(--et-entity-bg-2) 100%)`,
         borderColor: `${visual.primaryColor}55`,
         boxShadow: `0 2px 8px ${visual.primaryColor}20`,
       }
@@ -55,15 +55,15 @@ export function RankEntityAvatar({ media, name, size = 'md' }: RankEntityAvatarP
   const getCardDefaultTheme = () => {
     switch (media?.type) {
       case 'club':
-        return 'bg-[#18181b] border-white/10 text-white';
+        return 'bg-[var(--et-entity-bg)] border-white/10 text-white';
       case 'nation':
-        return 'bg-[#18181b] border-white/10 text-white';
+        return 'bg-[var(--et-entity-bg)] border-white/10 text-white';
       case 'tournament':
-        return 'bg-amber-950/40 border-amber-500/30 text-amber-300';
+        return 'bg-tier-gold/40 border-tier-gold/30 text-tier-gold';
       case 'stint':
       case 'player':
       default:
-        return 'bg-[#18181b] border-white/10 text-gold';
+        return 'bg-[var(--et-entity-bg)] border-white/10 text-game-accent';
     }
   };
 
@@ -72,13 +72,13 @@ export function RankEntityAvatar({ media, name, size = 'md' }: RankEntityAvatarP
       case 'club':
         return <AppIcon icon={Shield} size={iconSizes} weight="duotone" className="text-white drop-shadow" />;
       case 'nation':
-        return <AppIcon icon={Flag} size={iconSizes} weight="duotone" className="text-emerald-400" />;
+        return <AppIcon icon={Flag} size={iconSizes} weight="duotone" className="text-tier-hero" />;
       case 'tournament':
-        return <AppIcon icon={Trophy} size={iconSizes} weight="duotone" className="text-amber-400" />;
+        return <AppIcon icon={Trophy} size={iconSizes} weight="duotone" className="text-tier-gold" />;
       case 'stint':
       case 'player':
       default:
-        return <AppIcon icon={User} size={iconSizes} weight="duotone" className="text-gold" />;
+        return <AppIcon icon={User} size={iconSizes} weight="duotone" className="text-game-accent" />;
     }
   };
 
@@ -114,7 +114,7 @@ export function RankEntityAvatar({ media, name, size = 'md' }: RankEntityAvatarP
         ) : (
           <div className="flex flex-col items-center justify-center font-bold">
             {fallbackLetters ? (
-              <span className="font-stats tracking-tight font-bold text-white text-[12px] sm:text-[13px] drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
+              <span className="font-stats tracking-tight font-bold text-white text-[12px] sm:text-[13px] drop-shadow-[0_1px_2px_var(--et-shade-80)]">
                 {fallbackLetters}
               </span>
             ) : (

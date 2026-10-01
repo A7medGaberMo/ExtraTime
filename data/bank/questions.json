@@ -34277,5 +34277,5540 @@
         }
       }
     ]
+  },
+  {
+    "question": {
+      "ar": "من هو أستاذ الركلات الحرة البرازيلي الشهير بتسجيل 77 هدفاً مباشراً في مسيرته واشتهر بتسديداته الخادعة مع ليون؟",
+      "en": "Which Brazilian set-piece maestro is celebrated for scoring 77 career direct free-kick goals, especially famous for his dipping knuckleballs at Lyon?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "جونينيو برنامبوكانو",
+          "en": "Juninho Pernambucano"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "رونالدينيو",
+          "en": "Ronaldinho"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ديفيد بيكهام",
+          "en": "David Beckham"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "روبرتو كارلوس",
+          "en": "Roberto Carlos"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "records",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من صاحب أسرع هدف في تاريخ دوري أبطال أوروبا بعد 10.12 ثانية فقط ضد ريال مدريد عام 2007؟",
+      "en": "Who scored the fastest goal in UEFA Champions League history after just 10.12 seconds against Real Madrid in 2007?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كلارنس سيدورف",
+          "en": "Clarence Seedorf"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "روي ماكاي",
+          "en": "Roy Makaay"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أليساندرو ديل بييرو",
+          "en": "Alessandro Del Piero"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ألكسندر باتو",
+          "en": "Alexandre Pato"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو اللاعب الوحيد الذي فاز بدوري أبطال أوروبا مع ثلاثة أندية مختلفة؟",
+      "en": "Which footballer is the only player to have won the UEFA Champions League with three different clubs?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كريستيانو رونالدو",
+          "en": "Cristiano Ronaldo"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كلارنس سيدورف",
+          "en": "Clarence Seedorf"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "صامويل إيتو",
+          "en": "Samuel Eto'o"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ماتيو كوفاتشيتش",
+          "en": "Mateo Kovačić"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في ريمونتادا 2017 الشهيرة، أي نادٍ قلب تأخره ذهاباً 4–0 إلى فوز تاريخي 6–1 على ملعبه؟",
+      "en": "In the famous 2017 'La Remontada', which club overturned a 4–0 first-leg deficit by winning 6–1 at home?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ريال مدريد",
+          "en": "Real Madrid"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ليفربول",
+          "en": "Liverpool"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "برشلونة",
+          "en": "Barcelona"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "بايرن ميونخ",
+          "en": "Bayern Munich"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب الذي سدد ركلة الترجيح الحاسمة ليتوج تشيلسي بدوري أبطال أوروبا 2012 ضد بايرن ميونخ؟",
+      "en": "Who stepped up to score the decisive winning penalty for Chelsea in the 2012 Champions League final shootout against Bayern Munich?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ديدييه دروغبا",
+          "en": "Didier Drogba"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "فرانك لامبارد",
+          "en": "Frank Lampard"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أشلي كول",
+          "en": "Ashley Cole"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ديفيد لويز",
+          "en": "David Luiz"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من تقاسم صدارة هدافي دوري أبطال أوروبا لموسم 2023–24 مع كيليان مبابي برصيد 8 أهداف؟",
+      "en": "Who finished as the joint-top scorer in the 2023–24 UEFA Champions League alongside Kylian Mbappé with 8 goals?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "إرلينغ هالاند",
+          "en": "Erling Haaland"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "فينيسيوس جونيور",
+          "en": "Vinícius Júnior"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "هاري كين",
+          "en": "Harry Kane"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "رودريغو",
+          "en": "Rodrygo"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ برتغالي فاز بلقب دوري أبطال أوروبا عام 2004 تحت قيادة المدرب جوزيه مورينيو؟",
+      "en": "Which Portuguese club won the UEFA Champions League in 2004 under manager José Mourinho?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "بنفيكا",
+          "en": "Benfica"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "سبورتينغ لشبونة",
+          "en": "Sporting CP"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "براغا",
+          "en": "Braga"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "بورتو",
+          "en": "FC Porto"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "صنع زين الدين زيدان التاريخ بالتتويج بثلاثة ألقاب متتالية في دوري أبطال أوروبا مع ريال مدريد في أي أعوام؟",
+      "en": "Zinedine Zidane made history by winning three consecutive UEFA Champions League titles as manager of Real Madrid in which years?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "2014، 2015، 2016",
+          "en": "2014, 2015, 2016"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "2016، 2017، 2018",
+          "en": "2016, 2017, 2018"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "2015، 2016، 2017",
+          "en": "2015, 2016, 2017"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "2017، 2018، 2019",
+          "en": "2017, 2018, 2019"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في نصف نهائي دوري أبطال أوروبا 2018–19، حقق ليفربول عودة مذهلة 4–0 ضد برشلونة بفضل الركنية السريعة الشهيرة التي نفذها:",
+      "en": "In the 2018–19 Champions League semi-final, Liverpool completed a stunning 4–0 comeback against Barcelona thanks to a legendary corner taken quickly by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ترينت ألكسندر-أرنولد",
+          "en": "Trent Alexander-Arnold"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "جوردان هندرسون",
+          "en": "Jordan Henderson"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "جيمس ميلنر",
+          "en": "James Milner"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "أندرو روبرتسون",
+          "en": "Andrew Robertson"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كريستيانو رونالدو هو الهداف التاريخي لدوري أبطال أوروبا برصيد 140 هدفاً.",
+      "en": "Cristiano Ronaldo is the all-time top scorer in UEFA Champions League history with 140 goals."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "فاز ليونيل ميسي بخمسة ألقاب في دوري أبطال أوروبا مع نادي برشلونة خلال مسيرته.",
+      "en": "Lionel Messi has won 5 UEFA Champions League titles with FC Barcelona during his career."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "false",
+    "type": "tf",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "فاز ريال مدريد بأول خمس نسخ من بطولة كأس أوروبا للأندية الأبطال على التوالي بين عامي 1956 و1960.",
+      "en": "Real Madrid won the first five editions of the European Champion Clubs' Cup consecutively between 1956 and 1960."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "وصل جانلويجي بوفون إلى نهائي دوري أبطال أوروبا ثلاث مرات مع يوفنتوس (2003، 2015، 2017) لكنه خسرها جميعاً.",
+      "en": "Gianluigi Buffon reached three UEFA Champions League finals with Juventus (2003, 2015, 2017) but lost all three."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من الحارس الألماني الذي نال جائزة رجل المباراة في نهائي دوري أبطال أوروبا 2001 بعد تصديه لثلاث ركلات ترجيح لصالح بايرن ميونخ؟",
+      "en": "Which German goalkeeper was named Player of the Match in the 2001 Champions League Final after saving three penalties in the shootout for Bayern Munich?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ينس ليمان",
+          "en": "Jens Lehmann"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "مانويل نوير",
+          "en": "Manuel Neuer"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ستيفان كلوس",
+          "en": "Stefan Klos"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "أوليفر كان",
+          "en": "Oliver Kahn"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "ضد أي نادٍ سجل غاريث بيل هدفه الأكروباتي الخرافي بمقصية في نهائي دوري أبطال أوروبا 2018 في كييف؟",
+      "en": "Against which club did Gareth Bale score his sensational bicycle kick in the 2018 UEFA Champions League Final in Kyiv?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "يوفنتوس",
+          "en": "Juventus"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "أتلتيكو مدريد",
+          "en": "Atlético Madrid"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ليفربول",
+          "en": "Liverpool"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "بوروسيا دورتموند",
+          "en": "Borussia Dortmund"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كم هدفاً سجل إرلينغ هالاند في موسمه الأول القياسي والتاريخي 2022–23 بالدوري الإنجليزي الممتاز مع مانشستر سيتي؟",
+      "en": "How many goals did Erling Haaland score in his record-shattering 2022–23 Premier League debut season with Manchester City?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "32 هدفاً",
+          "en": "32 goals"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "36 هدفاً",
+          "en": "36 goals"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "38 هدفاً",
+          "en": "38 goals"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "34 هدفاً",
+          "en": "34 goals"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كم هدفاً فقط استقبلت شباك تشيلسي طوال موسم 2004–05 المكون من 38 مباراة تحت قيادة مورينيو في رقم قياسي صامد؟",
+      "en": "How many league goals did Chelsea concede across the entire 38-game 2004–05 season under José Mourinho, setting an all-time record?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "15 هدفاً",
+          "en": "15 goals"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "18 هدفاً",
+          "en": "18 goals"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "21 هدفاً",
+          "en": "21 goals"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "12 هدفاً",
+          "en": "12 goals"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب الذي صنع تمريرة الهدف التاريخي لسيرخيو أغويرو في الدقيقة 93:20 ضد كوينز بارك رينجرز ليتوج السيتي بلقب 2012؟",
+      "en": "Who assisted Sergio Agüero's iconic 93:20 title-winning goal against QPR on the final day of the 2011–12 Premier League season?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "دافيد سيلفا",
+          "en": "David Silva"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "يايا توريه",
+          "en": "Yaya Touré"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ماريو بالوتيلي",
+          "en": "Mario Balotelli"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "إدين دجيكو",
+          "en": "Edin Džeko"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أنهى آرسنال موسم الدوري الإنجليزي الممتاز 2003–04 دون أي هزيمة مسجلاً 26 فوزاً و12 تعادلاً.",
+      "en": "Arsenal completed the entire 38-match 2003–04 Premier League season undefeated with a record of 26 wins and 12 draws."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هما صانعا الألعاب اللذان يتشاركان الرقم القياسي لأكثر التمريرات الحاسمة في موسم واحد بالدوري الإنجليزي (20 أسيست)؟",
+      "en": "Which two playmakers share the all-time record for the most assists in a single Premier League season (20 assists)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "سيسك فابريغاس ومسعود أوزيل",
+          "en": "Cesc Fàbregas and Mesut Özil"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "رايان غيغز وفرانك لامبارد",
+          "en": "Ryan Giggs and Frank Lampard"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "كيفين دي بروين ودافيد سيلفا",
+          "en": "Kevin De Bruyne and David Silva"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "تييري هنري وكيفين دي بروين",
+          "en": "Thierry Henry and Kevin De Bruyne"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المدرب الإيطالي الذي قاد ليستر سيتي في معجزته الكروية للتتويج بالدوري الإنجليزي الممتاز 2015–16؟",
+      "en": "Who was the Italian manager who guided 5000–1 outsiders Leicester City to their fairytale Premier League title in 2015–16?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "أنطونيو كونتي",
+          "en": "Antonio Conte"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كلاوديو رانييري",
+          "en": "Claudio Ranieri"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "روبرتو مانشيني",
+          "en": "Roberto Mancini"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "كارلو أنشيلوتي",
+          "en": "Carlo Ancelotti"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "سجل ساديو ماني أسرع هاتريك في تاريخ الدوري الإنجليزي (خلال دقيقتين و56 ثانية) عندما كان لاعباً في أي نادٍ؟",
+      "en": "Sadio Mané scored the fastest hat-trick in Premier League history (2 minutes 56 seconds) while playing for which club?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ساوثهامبتون",
+          "en": "Southampton"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ليفربول",
+          "en": "Liverpool"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "نيوكاسل يونايتد",
+          "en": "Newcastle United"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "سالزبورغ",
+          "en": "Salzburg"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو لاعب الوسط صاحب الرقم القياسي لأكثر المشاركات في تاريخ الدوري الإنجليزي الممتاز برصيد 653 مباراة؟",
+      "en": "Which midfielder holds the all-time appearance record in Premier League history with 653 matches?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "رايان غيغز",
+          "en": "Ryan Giggs"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "فرانك لامبارد",
+          "en": "Frank Lampard"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "غاريث باري",
+          "en": "Gareth Barry"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "جيمس ميلنر",
+          "en": "James Milner"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "فاز السير أليكس فيرغسون بـ 13 لقباً في الدوري الإنجليزي الممتاز كمدرب لمانشستر يونايتد بين عامي 1993 و2013.",
+      "en": "Sir Alex Ferguson won 13 Premier League titles as manager of Manchester United between 1993 and 2013."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أصبح مانشستر سيتي أول نادٍ في تاريخ كرة القدم الإنجليزية يتوج بأربعة ألقاب دوري متتالية عام 2024.",
+      "en": "Manchester City became the first club in English top-flight history to win four consecutive league titles in 2024."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو ثاني الهدافين التاريخيين للدوري الإنجليزي الممتاز برصيد 213 هدفاً خلف آلان شيرر؟",
+      "en": "Who is the second all-time highest goalscorer in Premier League history with 213 goals, behind only Alan Shearer?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "واين روني",
+          "en": "Wayne Rooney"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "هاري كين",
+          "en": "Harry Kane"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أندي كول",
+          "en": "Andy Cole"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "سيرخيو أغويرو",
+          "en": "Sergio Agüero"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من الحارس الذي حافظ على نظافة شباكه في 202 مباراة كأعلى رقم في تاريخ الدوري الإنجليزي الممتاز؟",
+      "en": "Which goalkeeper kept an all-time record 202 clean sheets in his Premier League career?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ديفيد سيمان",
+          "en": "David Seaman"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "أدوين فان در سار",
+          "en": "Edwin van der Sar"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "بيبي رينا",
+          "en": "Pepe Reina"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "بيتر تشيك",
+          "en": "Petr Čech"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب الذي نال جائزة أفضل لاعب في الدوري الإنجليزي لموسم 2023–24 بعد تسجيله 19 هدفاً و8 تمريرات حاسمة؟",
+      "en": "Who won the Premier League Player of the Season award for the 2023–24 campaign after registering 19 goals and 8 assists?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "فيل فودين",
+          "en": "Phil Foden"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "إرلينغ هالاند",
+          "en": "Erling Haaland"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "كول بالمر",
+          "en": "Cole Palmer"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "رودري",
+          "en": "Rodri"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "حسم ليفربول لقب الدوري الإنجليزي لموسم 2019–20 قبل 7 جولات من النهاية، وهو أبكر حسم في تاريخ البطولة.",
+      "en": "Liverpool won the 2019–20 Premier League with 7 games remaining, the earliest title coronation by matches remaining in English history."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كم عدد الأهداف الإجمالي الذي سجله ليونيل ميسي في الدوري الإسباني ليصبح هدافه التاريخي الأبدي؟",
+      "en": "How many total goals did Lionel Messi score in La Liga, making him the competition's all-time top scorer?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "412 هدفاً",
+          "en": "412 goals"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "444 هدفاً",
+          "en": "444 goals"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "474 هدفاً",
+          "en": "474 goals"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "502 هدفاً",
+          "en": "502 goals"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ فاز على بلد الوليد 2–1 في الجولة الأخيرة ليتوج بلقب الدوري الإسباني لموسم 2020–21؟",
+      "en": "Which club famously defeated Real Valladolid 2–1 on the final matchday to win the 2020–21 La Liga championship?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "برشلونة",
+          "en": "Barcelona"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "أتلتيكو مدريد",
+          "en": "Atlético Madrid"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "إشبيلية",
+          "en": "Sevilla"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ريال سوسيداد",
+          "en": "Real Sociedad"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "يتمسك نادي أتلتيك بيلباو بتقليد تاريخي يقضي بالاعتماد حصرياً على اللاعبين المولودين أو المتكونين كروياً في أي إقليم؟",
+      "en": "Athletic Club Bilbao maintains a historic tradition of only fielding players born or formed in which region?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كتالونيا",
+          "en": "Catalonia"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "الأندلس",
+          "en": "Andalusia"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "غاليسيا",
+          "en": "Galicia"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "إقليم الباسك",
+          "en": "The Basque Country"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في موسم الأرقام القياسية 2011–12، توج ريال مدريد بقيادة جوزيه مورينيو باللقب بجمع كم نقطة؟",
+      "en": "In the 2011–12 'Liga de los Récords', José Mourinho's Real Madrid won the title with how many points?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "100 نقطة",
+          "en": "100 points"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "98 نقطة",
+          "en": "98 points"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "102 نقطة",
+          "en": "102 points"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "96 نقطة",
+          "en": "96 points"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المهاجم الأوكراني الذي توج بجائزة البيتشيتشي كهداف للدوري الإسباني 2023–24 برصيد 24 هدفاً مع جيرونا؟",
+      "en": "Which Ukrainian striker won the Pichichi Trophy as La Liga's top scorer in 2023–24 with 24 goals for Girona?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "أندري شيفشينكو",
+          "en": "Andriy Shevchenko"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "رومان ياريمتشوك",
+          "en": "Roman Yaremchuk"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أرتيم دوفبيك",
+          "en": "Artem Dovbyk"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "فيكتور تسيغانكوف",
+          "en": "Viktor Tsygankov"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "ريال مدريد وبرشلونة وأتلتيك بيلباو هي الأندية الثلاثة الوحيدة التي لم تهبط مطلقاً من الدوري الإسباني منذ تأسيسه عام 1929.",
+      "en": "Real Madrid, Barcelona, and Athletic Club Bilbao are the only three clubs never relegated from La Liga since its inception in 1929."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "la_liga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "سجل كريستيانو رونالدو 311 هدفاً في 292 مباراة فقط خاضها في الدوري الإسباني مع ريال مدريد.",
+      "en": "Cristiano Ronaldo scored 311 goals in just 292 La Liga appearances for Real Madrid."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "la_liga",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المدرب الذي قاد أتلتيكو مدريد للتتويج بلقب الدوري الإسباني مرتين في موسمي 2013–14 و2020–21؟",
+      "en": "Which manager has led Atlético Madrid to two La Liga championships in 2013–14 and 2020–21?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "لويس أراغونيس",
+          "en": "Luis Aragonés"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "دييغو سيميوني",
+          "en": "Diego Simeone"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "رادومير أنتيتش",
+          "en": "Radomir Antić"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "كيكي سانشيز فلوريس",
+          "en": "Quique Sánchez Flores"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من سجل هدف الفوز القاتل في الدقيقة 91 لصالح ريال مدريد ضد برشلونة في البرنابيو في أبريل 2024 ليحسم اللقب عملياً؟",
+      "en": "Who scored the dramatic 91st-minute winner for Real Madrid against Barcelona at the Santiago Bernabéu in April 2024 to virtually seal the title?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "فينيسيوس جونيور",
+          "en": "Vinícius Júnior"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "رودريغو",
+          "en": "Rodrygo"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "لوكا مودريتش",
+          "en": "Luka Modrić"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "جود بيلينغهام",
+          "en": "Jude Bellingham"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "تحت قيادة بيب غوارديولا في موسم 2008–09، أصبح برشلونة أول نادٍ إسباني يحقق الثلاثية التاريخية.",
+      "en": "Under Pep Guardiola in 2008–09, Barcelona became the first Spanish team to win the historic Treble (La Liga, Copa del Rey, Champions League)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "la_liga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ حسم لقبه العشرين في الدوري الإيطالي عام 2024 ليحصل على النجمة الذهبية الثانية على قميصه؟",
+      "en": "Which club clinched their 20th Serie A title in 2024, earning the right to wear a second permanent golden star on their badge?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ميلان",
+          "en": "AC Milan"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "يوفنتوس",
+          "en": "Juventus"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "إنتر ميلان",
+          "en": "Inter Milan"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "نابولي",
+          "en": "Napoli"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "خاض فرانشيسكو توتي 786 مباراة رسمية على مدار 25 موسماً حصرياً مع أي نادٍ إيطالي؟",
+      "en": "Francesco Totti played an astonishing 786 official matches across 25 seasons exclusively for which Italian club?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "روما",
+          "en": "AS Roma"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "لاتسيو",
+          "en": "Lazio"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "فيورنتينا",
+          "en": "Fiorentina"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "سامبدوريا",
+          "en": "Sampdoria"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كم لقباً في دوري أبطال أوروبا / كأس أوروبا توج بها باولو مالديني في مسيرته الأسطورية مع نادي ميلان؟",
+      "en": "Paolo Maldini won how many European Cup / Champions League trophies during his legendary one-club career at AC Milan?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "3 ألقاب",
+          "en": "3 titles"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "4 ألقاب",
+          "en": "4 titles"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "5 ألقاب",
+          "en": "5 titles"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "6 ألقاب",
+          "en": "6 titles"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المهاجم الإيطالي الذي عادل الرقم القياسي لأكثر الأهداف في موسم واحد بالكالتشيو برصيد 36 هدفاً مع لاتسيو موسم 2019–20؟",
+      "en": "Which Italian striker equaled the single-season Serie A scoring record with 36 goals for Lazio in the 2019–20 season?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "أندريا بيلوتي",
+          "en": "Andrea Belotti"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "تشيرو إيموبيلي",
+          "en": "Ciro Immobile"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "فابيو كوالياريلا",
+          "en": "Fabio Quagliarella"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "لوكا توني",
+          "en": "Luca Toni"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كم لقباً متتالياً في الدوري الإيطالي حققه يوفنتوس خلال فترته الذهبية المهيمنة بين عامي 2012 و2020؟",
+      "en": "How many consecutive Serie A titles did Juventus win during their dominant dynasty between 2012 and 2020?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "7 ألقاب",
+          "en": "7 titles"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "8 ألقاب",
+          "en": "8 titles"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "10 ألقاب",
+          "en": "10 titles"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "9 ألقاب",
+          "en": "9 titles"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو الهداف التاريخي الأول للدوري الإيطالي حتى يومنا هذا برصيد 274 هدفاً؟",
+      "en": "Who remains the all-time highest goalscorer in Serie A history with 274 goals?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "سيلفيو بيولا",
+          "en": "Silvio Piola"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "غونار نوردال",
+          "en": "Gunnar Nordahl"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "جوزيبي مياتزا",
+          "en": "Giuseppe Meazza"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "فرانشيسكو توتي",
+          "en": "Francesco Totti"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "hard",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "يحمل جانلويجي بوفون الرقم القياسي في الدوري الإيطالي لأطول فترة دون تلقي أهداف بشباك نظيفة لمدة 974 دقيقة متتالية عام 2016.",
+      "en": "Gianluigi Buffon holds the Serie A record for the longest run without conceding a goal, lasting 974 consecutive minutes in 2016."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "serie_a",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "حقق نادي ميلان رقماً قياسياً تاريخياً بخوض 58 مباراة متتالية دون هزيمة في الدوري الإيطالي بين 1991 و1993.",
+      "en": "AC Milan established a record 58-match unbeaten streak in Serie A between 1991 and 1993."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "serie_a",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من النجم الأرجنتيني الأسطوري الذي كان أيقونة نابولي عند تتويجه بأول لقبين للدوري الإيطالي عامي 1987 و1990؟",
+      "en": "Which iconic Argentine striker was Napoli's talisman when they won their first two historic Scudetti in 1987 and 1990?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "غابرييل باتيستوتا",
+          "en": "Gabriel Batistuta"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "دييغو مارادونا",
+          "en": "Diego Maradona"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "هيرنان كريسبو",
+          "en": "Hernán Crespo"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "كلاوديو كانيجيا",
+          "en": "Claudio Caniggia"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "إنتر ميلان هو النادي الإيطالي الوحيد الذي توج بالثلاثية القارية (الدوري والكأس ودوري الأبطال) في موسم واحد عام 2010.",
+      "en": "Inter Milan are the only club in Italy to have achieved the continental treble of Serie A, Coppa Italia, and Champions League (2010)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في سبتمبر 2015، نزل روبرت ليفاندوفسكي كبديل ضد فولفسبورغ وسجل خماسية تاريخية في غضون كم دقيقة فقط؟",
+      "en": "In September 2015, Robert Lewandowski famously came off the bench against Wolfsburg to score 5 goals in just how many minutes?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "9 دقائق",
+          "en": "9 minutes"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "12 دقيقة",
+          "en": "12 minutes"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "6 دقائق",
+          "en": "6 minutes"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "15 دقيقة",
+          "en": "15 minutes"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "bundesliga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "حطم ليفاندوفسكي رقم غيرد مولر الصامد منذ 49 عاماً في موسم 2020–21 بتسجيل كم هدفاً في الدوري الألماني؟",
+      "en": "Robert Lewandowski broke Gerd Müller's 49-year-old Bundesliga single-season record in 2020–21 by scoring how many league goals?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "39 هدفاً",
+          "en": "39 goals"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "40 هدفاً",
+          "en": "40 goals"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "41 هدفاً",
+          "en": "41 goals"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "43 هدفاً",
+          "en": "43 goals"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "bundesliga",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ فجر مفاجأة تاريخية بالتتويج بلقب البوندسليغا 1997–98 في أول موسم له مباشرة بعد صعوده من الدرجة الثانية؟",
+      "en": "Which club sensationally won the 1997–98 Bundesliga title in their very first season after being promoted from the second division?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "شتوتغارت",
+          "en": "VfB Stuttgart"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كايزرسلاوترن",
+          "en": "1. FC Kaiserslautern"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "فيردر بريمن",
+          "en": "Werder Bremen"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "فولفسبورغ",
+          "en": "VfL Wolfsburg"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "bundesliga",
+    "difficulty": "hard",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من صانع الألعاب الألماني الشاب الذي توج بجائزة أفضل لاعب في الدوري الألماني 2023–24 مع باير ليفركوزن؟",
+      "en": "Which young German attacking midfielder won the 2023–24 Bundesliga Player of the Season award for Bayer Leverkusen?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "جمال موسيالا",
+          "en": "Jamal Musiala"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كاي هافيرتز",
+          "en": "Kai Havertz"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "يوليان براندت",
+          "en": "Julian Brandt"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "فلوريان فيرتز",
+          "en": "Florian Wirtz"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "bundesliga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "فاز بايرن ميونخ بـ 11 لقباً متتالياً في الدوري الألماني بين موسمي 2012–13 و2022–23.",
+      "en": "Bayern Munich won 11 consecutive Bundesliga titles between 2012–13 and 2022–23."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "bundesliga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ ألماني يخوض مبارياته على ملعب سيغنال إيدونا بارك ويشتهر بمدرجه العالمي 'الجدار الأصفر'؟",
+      "en": "Which German club plays at the famous Signal Iduna Park and features the world-renowned 'Yellow Wall' (Südtribüne)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "بوروسيا دورتموند",
+          "en": "Borussia Dortmund"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "بوروسيا مونشنغلادباخ",
+          "en": "Borussia Mönchengladbach"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "آينتراخت فرانكفورت",
+          "en": "Eintracht Frankfurt"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "شالكه",
+          "en": "Schalke 04"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "bundesliga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب الذي توج بجائزة الكرة الذهبية كأفضل لاعب في كأس العالم 2022 في قطر؟",
+      "en": "Who won the Golden Ball as the most outstanding player of the 2022 FIFA World Cup in Qatar?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كيليان مبابي",
+          "en": "Kylian Mbappé"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "لوكا مودريتش",
+          "en": "Luka Modrić"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ليونيل ميسي",
+          "en": "Lionel Messi"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "أنطوان غريزمان",
+          "en": "Antoine Griezmann"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من الحارس الأرجنتيني الذي تصدى لفرصة راندال كولو مواني التاريخية في الدقيقة 123 من نهائي كأس العالم 2022؟",
+      "en": "Which Argentine goalkeeper made the miraculous 123rd-minute save against Randal Kolo Muani in the 2022 World Cup Final?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "فرانكو أرماني",
+          "en": "Franco Armani"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "إميليانو مارتينيز",
+          "en": "Emiliano Martínez"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "سيرخيو روميرو",
+          "en": "Sergio Romero"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "جيرونيمو رولي",
+          "en": "Gerónimo Rulli"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب الذي سجل هدفي البرازيل في الفوز 2–0 على ألمانيا في نهائي كأس العالم 2002 بيوكوهاما؟",
+      "en": "Who scored both goals in Brazil's 2–0 win over Germany in the 2002 FIFA World Cup Final in Yokohama?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "رونالدو نازاريو",
+          "en": "Ronaldo Nazário"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ريفالدو",
+          "en": "Rivaldo"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "رونالدينيو",
+          "en": "Ronaldinho"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "كافو",
+          "en": "Cafu"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المهاجم الألماني صاحب الرقم القياسي لأكثر الأهداف تسجيلاً في تاريخ كأس العالم برصيد 16 هدفاً؟",
+      "en": "Which German striker holds the all-time record for the most goals in FIFA World Cup tournaments with 16 goals?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "غيرد مولر",
+          "en": "Gerd Müller"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "يورغن كلينسمان",
+          "en": "Jürgen Klinsmann"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "توماس مولر",
+          "en": "Thomas Müller"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ميروسلاف كلوزه",
+          "en": "Miroslav Klose"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من سجل هدف الفوز التاريخي لإسبانيا في الدقيقة 116 ضد هولندا في نهائي كأس العالم 2010 بجوهانسبرغ؟",
+      "en": "Who scored the 116th-minute winning goal for Spain against the Netherlands in the 2010 FIFA World Cup Final in Johannesburg?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "تشافي هيرنانديز",
+          "en": "Xavi Hernández"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "دافيد فيا",
+          "en": "David Villa"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أندريس إنييستا",
+          "en": "Andrés Iniesta"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "فرناندو توريس",
+          "en": "Fernando Torres"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "بيليه هو اللاعب الوحيد في تاريخ كرة القدم للرجال الذي فاز بلقب كأس العالم 3 مرات (1958، 1962، 1970).",
+      "en": "Pelé is the only player in men's football history to have won three FIFA World Cup championships (1958, 1962, 1970)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "سجل المهاجم الفرنسي جوست فونتين 13 هدفاً في كأس العالم 1958، وهو أعلى رصيد للاعب في بطولة واحدة عبر التاريخ.",
+      "en": "French striker Just Fontaine scored 13 goals at the 1958 FIFA World Cup, the highest tally by any player in a single tournament."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "world_cup",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي منتخب توج بلقب يورو 2024 بعد فوزه على إنجلترا 2–1 في النهائي على الملعب الأولمبي ببرلين؟",
+      "en": "Which country won UEFA EURO 2024 by defeating England 2–1 in the final at the Olympiastadion in Berlin?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "فرنسا",
+          "en": "France"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "إسبانيا",
+          "en": "Spain"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ألمانيا",
+          "en": "Germany"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "هولندا",
+          "en": "Netherlands"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من سجل هدف التتويج للأرجنتين في الدقيقة 112 ضد كولومبيا في نهائي كوبا أمريكا 2024 في ميامي؟",
+      "en": "Who scored the 112th-minute winning goal for Argentina against Colombia in the 2024 Copa América Final in Miami?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "لاوتارو مارتينيز",
+          "en": "Lautaro Martínez"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "خوليان ألفاريز",
+          "en": "Julián Álvarez"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أنخل دي ماريا",
+          "en": "Ángel Di María"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ليونيل ميسي",
+          "en": "Lionel Messi"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي منتخب حقق معجزة تاريخية بالعودة من حافة الخروج من دور المجموعات ليتوج بكأس أمم إفريقيا 2023 على أرضه؟",
+      "en": "Which nation staged an improbable comeback from nearly exiting in the group stage to win the 2023 Africa Cup of Nations on home soil?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "نيجيريا",
+          "en": "Nigeria"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "السنغال",
+          "en": "Senegal"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ساحل العاج",
+          "en": "Ivory Coast"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "جمهورية الكونغو الديمقراطية",
+          "en": "DR Congo"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب الذي سجل الهدف التاريخي للبرتغال في الوقت الإضافي ضد فرنسا في نهائي يورو 2016؟",
+      "en": "Who scored the historic winning goal for Portugal in extra time against France in the UEFA EURO 2016 Final?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كريستيانو رونالدو",
+          "en": "Cristiano Ronaldo"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ريكاردو كواريسما",
+          "en": "Ricardo Quaresma"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ناني",
+          "en": "Nani"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "إيدير",
+          "en": "Éder"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في واحدة من كبرى مفاجآت كرة القدم، أي منتخب صدم أصحاب الأرض البرتغال وتوج بكأس أمم أوروبا 2004؟",
+      "en": "In one of football's biggest fairy tales, which massive underdog shocked hosts Portugal 1–0 to win UEFA EURO 2004?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "الدنمارك",
+          "en": "Denmark"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "اليونان",
+          "en": "Greece"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "التشيك",
+          "en": "Czech Republic"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "السويد",
+          "en": "Sweden"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "فشل منتخب إيطاليا في التأهل لكأسي العالم 2018 و2022 على الرغم من تتويجه بيورو 2020.",
+      "en": "Italy failed to qualify for both the 2018 and 2022 FIFA World Cup tournaments despite winning UEFA EURO 2020."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "international",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من الأسطورة الهولندية الذي وضع أسس 'الكرة الشاملة' كلاعب وكمدرب لفريق الأحلام في برشلونة؟",
+      "en": "Which Dutch master pioneered 'Total Football' both on the pitch and as head coach of Barcelona's Dream Team?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "رود خوليت",
+          "en": "Ruud Gullit"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ماركو فان باستن",
+          "en": "Marco van Basten"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "يوهان كرويف",
+          "en": "Johan Cruyff"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "فرانك ريكارد",
+          "en": "Frank Rijkaard"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "legends",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي ساحر برازيلي نال تحية وقوف وتصفيق لا تُنسى من جماهير ريال مدريد في سانتياغو برنابيو في نوفمبر 2005؟",
+      "en": "Which Brazilian magician received an unforgettable standing ovation from Real Madrid fans at the Santiago Bernabéu in November 2005?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "رونالدينيو",
+          "en": "Ronaldinho"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ريفالدو",
+          "en": "Rivaldo"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "روماريو",
+          "en": "Romário"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "نيمار جونيور",
+          "en": "Neymar Jr"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "legends",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من سجل الهدف الخرافي بتسديدة هوائية على الطائر من زاوية شبه مستحيلة لهولندا ضد الاتحاد السوفيتي في نهائي يورو 1988؟",
+      "en": "Who scored an impossible dipping volley from the tightest of angles for the Netherlands against USSR in the EURO 1988 Final?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "رود خوليت",
+          "en": "Ruud Gullit"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ماركو فان باستن",
+          "en": "Marco van Basten"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "رونالد كومان",
+          "en": "Ronald Koeman"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "دينيس بيركامب",
+          "en": "Dennis Bergkamp"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "legends",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي أسطورة إيطالية لُقّب بـ 'صاحب ذيل الحصان الإلهي' وتوج بالكرة الذهبية عام 1993؟",
+      "en": "Which Italian legend was famously nicknamed 'Il Divin Codino' (The Divine Ponytail) and won the Ballon d'Or in 1993?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "أليساندرو ديل بييرو",
+          "en": "Alessandro Del Piero"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "جانفرانكو زولا",
+          "en": "Gianfranco Zola"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أندريا بيرلو",
+          "en": "Andrea Pirlo"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "روبرتو باجيو",
+          "en": "Roberto Baggio"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "legends",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "حجب ميلان القميص رقم 6 نهائياً تكريماً لأي قائد أسطوري قاد دفاع الروسونيري على مدار عقدين؟",
+      "en": "AC Milan permanently retired the number 6 shirt in honor of which legendary captain who led them for two decades?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "باولو مالديني",
+          "en": "Paolo Maldini"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "أليساندرو كوستاكورتا",
+          "en": "Alessandro Costacurta"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "فرانكو باريزي",
+          "en": "Franco Baresi"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ماورو تاسوتي",
+          "en": "Mauro Tassotti"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "legends",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "الحارس السوفيتي ليف ياشين الملقب بـ 'العنكبوت الأسود' هو حارس المرمى الوحيد في التاريخ الذي فاز بالكرة الذهبية (1963).",
+      "en": "Soviet goalkeeper Lev Yashin, nicknamed 'The Black Spider', remains the only goalkeeper in history to have won the Ballon d'Or (1963)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "legends",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "خاض المهاجم الإنجليزي غاري لينيكر مسيرته الاحترافية الممتدة لـ 16 عاماً دون أن يتلقى أي بطاقة صفراء أو حمراء على الإطلاق.",
+      "en": "Former England forward Gary Lineker went through his entire 16-year professional career without receiving a single yellow or red card."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "legends",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "سجل زلاتان إبراهيموفيتش أهدافاً رسمية على مستوى الفريق الأول عبر أربعة عقود زمنية متتالية (التسعينيات، والألفينيات، والعقد الأول، والعقد الثاني من القرن 21).",
+      "en": "Zlatan Ibrahimović scored senior goals in four consecutive decades (1990s, 2000s, 2010s, and 2020s)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "legends",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كم كرة ذهبية توج بها ليونيل ميسي خلال مسيرته الأسطورية محققاً الرقم القياسي التاريخي؟",
+      "en": "How many Ballon d'Or awards has Lionel Messi won across his illustrious career, establishing an all-time record?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "7 جوائز",
+          "en": "7 awards"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "8 جوائز",
+          "en": "8 awards"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "6 جوائز",
+          "en": "6 awards"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "9 جوائز",
+          "en": "9 awards"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "awards",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو اللاعب الإفريقي الأول والوحيد الذي فاز بجائزة الكرة الذهبية المرموقة عام 1995 بقميص ميلان؟",
+      "en": "Who became the first and only African player to win the prestigious Ballon d'Or award in 1995 while starring for AC Milan?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "جورج وياه",
+          "en": "George Weah"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "صامويل إيتو",
+          "en": "Samuel Eto'o"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ديدييه دروغبا",
+          "en": "Didier Drogba"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "عبيدي بيليه",
+          "en": "Abedi Pele"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "awards",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كم هدفاً رسمياً سجل ليونيل ميسي في عام 2012 القياسي لبرشلونة والأرجنتين؟",
+      "en": "How many official goals did Lionel Messi score in the record-breaking calendar year of 2012 for Barcelona and Argentina?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "85 هدفاً",
+          "en": "85 goals"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "88 هدفاً",
+          "en": "88 goals"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "91 هدفاً",
+          "en": "91 goals"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "95 هدفاً",
+          "en": "95 goals"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "records",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "يحمل الحارس البرازيلي روجيريو سيني الرقم القياسي في موسوعة غينيس لأكثر أهداف يسجلها حارس مرمى برصيد:",
+      "en": "Brazilian goalkeeper Rogério Ceni holds the Guinness World Record for the most career goals scored by a goalkeeper with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "67 هدفاً",
+          "en": "67 goals"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "131 هدفاً",
+          "en": "131 goals"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "94 هدفاً",
+          "en": "94 goals"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "155 هدفاً",
+          "en": "155 goals"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "records",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المهاجم الإنجليزي الذي سجل في 11 مباراة متتالية في الدوري الإنجليزي خلال موسم تتويج ليستر سيتي الإعجازي 2015–16؟",
+      "en": "Which English striker scored in 11 consecutive Premier League matches during Leicester City's miraculous 2015–16 title-winning season?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "هاري كين",
+          "en": "Harry Kane"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "واين روني",
+          "en": "Wayne Rooney"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "رود فان نيستلروي",
+          "en": "Ruud van Nistelrooy"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "جيمي فاردي",
+          "en": "Jamie Vardy"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "records",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أنهى القائد الألماني المتوج بكأس العالم فيليب لام مسيرته الاحترافية بالكامل دون أن يتلقى أي بطاقة حمراء.",
+      "en": "German World Cup-winning captain Philipp Lahm completed his entire professional career without receiving a single red card."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "records",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كريستيانو رونالدو هو الهداف التاريخي الأول في تاريخ كرة القدم الدولية للرجال برصيد تجاوز 140 هدفاً مع منتخب البرتغال.",
+      "en": "Cristiano Ronaldo is the all-time leading goalscorer in men's international football history with over 140 goals for Portugal."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "records",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من النجم الإنجليزي الواعد الذي توج بجائزة الفتى الذهبي (غولدن بوي) لعام 2023 بعد انطلاقته الصاروخية مع ريال مدريد؟",
+      "en": "Which English prodigy won the 2023 Golden Boy award after an electrifying start to his career at Real Madrid?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "بوكايو ساكا",
+          "en": "Bukayo Saka"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "جود بيلينغهام",
+          "en": "Jude Bellingham"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "فيل فودين",
+          "en": "Phil Foden"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "جمال موسيالا",
+          "en": "Jamal Musiala"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "awards",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "ما هي قيمة الصفقة القياسية الأغلى في تاريخ كرة القدم التي دفعها باريس سان جيرمان لكسر عقد نيمار مع برشلونة عام 2017؟",
+      "en": "What was the world-record transfer fee paid by Paris Saint-Germain to trigger Neymar's release clause from Barcelona in 2017?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "222 مليون يورو",
+          "en": "€222 million"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "180 مليون يورو",
+          "en": "€180 million"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "250 مليون يورو",
+          "en": "€250 million"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "160 مليون يورو",
+          "en": "€160 million"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "transfers",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو المدرب الوحيد في تاريخ كرة القدم الذي فاز بلقب دوري أبطال أوروبا 5 مرات؟",
+      "en": "Who is the only head coach in football history to have won the UEFA Champions League 5 times?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "بيب غوارديولا",
+          "en": "Pep Guardiola"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "زين الدين زيدان",
+          "en": "Zinedine Zidane"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "كارلو أنشيلوتي",
+          "en": "Carlo Ancelotti"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "بوب بيزلي",
+          "en": "Bob Paisley"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "managers",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "بيب غوارديولا هو المدرب الوحيد الذي حقق الثلاثية القارية الأوروبية مع ناديين مختلفين: برشلونة (2009) ومانشستر سيتي (2023).",
+      "en": "Pep Guardiola is the only manager to win the European continental Treble with two different clubs: Barcelona (2009) and Manchester City (2023)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "managers",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "كارلو أنشيلوتي هو المدرب الأول والوحيد في التاريخ الذي فاز بلقب الدوري في جميع الدوريات الأوروبية الخمسة الكبرى.",
+      "en": "Carlo Ancelotti is the first and only manager in history to have won the league championship in all of Europe's top five leagues."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "managers",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في صيف عام 2000، من النجم البرتغالي الذي انتقل مباشرة في صفقة تاريخية مدوية ومثيرة للجدل من برشلونة إلى ريال مدريد؟",
+      "en": "In the summer of 2000, which Portuguese superstar completed a shocking and controversial direct transfer from Barcelona to Real Madrid?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "رونالدو نازاريو",
+          "en": "Ronaldo Nazário"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "لويس فيغو",
+          "en": "Luís Figo"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ديكو",
+          "en": "Deco"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "سيماو سابروسا",
+          "en": "Simão Sabrosa"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "transfers",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المدرب الفرنسي الذي تولى تدريب آرسنال لما يقارب 22 عاماً بين أكتوبر 1996 ومايو 2018؟",
+      "en": "Which French visionary managed Arsenal for nearly 22 years between October 1996 and May 2018?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "جيرار هولييه",
+          "en": "Gérard Houllier"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "لوران بلان",
+          "en": "Laurent Blanc"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ديدييه ديشان",
+          "en": "Didier Deschamps"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "أرسين فينغر",
+          "en": "Arsène Wenger"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "managers",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في نهائي دوري أبطال أوروبا 2005 ('معجزة إسطنبول')، ما هي نتيجة الشوط الأول بين ميلان وليفربول قبل ريمونتادا الريدز؟",
+      "en": "In the 2005 Champions League Final ('Miracle of Istanbul'), what was the half-time score between AC Milan and Liverpool before Liverpool's comeback?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "3–0 لصالح ميلان",
+          "en": "3–0 to AC Milan"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "2–0 لصالح ميلان",
+          "en": "2–0 to AC Milan"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "3–1 لصالح ميلان",
+          "en": "3–1 to AC Milan"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "4–0 لصالح ميلان",
+          "en": "4–0 to AC Milan"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من لاعب الوسط الفرنسي الذي توج بلقب الدوري الإنجليزي في موسمين متتاليين مع ناديين مختلفين: ليستر سيتي (2016) وتشيلسي (2017)؟",
+      "en": "Which French midfield engine won back-to-back Premier League titles with two different clubs: Leicester City (2016) and Chelsea (2017)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "بول بوغبا",
+          "en": "Paul Pogba"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "بليز ماتويدي",
+          "en": "Blaise Matuidi"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "نغولو كانتي",
+          "en": "N'Golo Kanté"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "كلود ماكيليلي",
+          "en": "Claude Makélélé"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب الذي سجل هدف التتويج في الوقت الإضافي (الدقيقة 113) لألمانيا ضد الأرجنتين في نهائي كأس العالم 2014 في ريو دي جانيرو؟",
+      "en": "Who scored the winning goal in extra time (113th minute) for Germany against Argentina in the 2014 FIFA World Cup Final in Rio de Janeiro?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "توماس مولر",
+          "en": "Thomas Müller"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ماريو غوتزه",
+          "en": "Mario Götze"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أندريه شورله",
+          "en": "André Schürrle"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "توني كروس",
+          "en": "Toni Kroos"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من صانع الألعاب الكولومبي الذي نال الحذاء الذهبي في كأس العالم 2014 بستة أهداف شملت هدفه المذهل على الطائر ضد أوروغواي؟",
+      "en": "Which Colombian playmaker won the Golden Boot at the 2014 FIFA World Cup with 6 goals, including a stunning chest-and-volley against Uruguay?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "راداميل فالكاو",
+          "en": "Radamel Falcao"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "خوان كوادرادو",
+          "en": "Juan Cuadrado"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "كارلوس باكا",
+          "en": "Carlos Bacca"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "خاميس رودريغيز",
+          "en": "James Rodríguez"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "توج ليونيل ميسي بجائزة الكرة الذهبية لأفضل لاعب في كأس العالم مرتين في مسيرته (2014 و2022).",
+      "en": "Lionel Messi won the FIFA World Cup Golden Ball award twice in his career (2014 and 2022)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من قلب الدفاع الإيطالي الذي قاد الآزوري كقائد للفوز بكأس العالم 2006 وتوج بالكرة الذهبية في نفس العام؟",
+      "en": "Which Italian center-back captained Italy to the 2006 World Cup triumph and went on to win the Ballon d'Or the same year?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "فابيو كانافارو",
+          "en": "Fabio Cannavaro"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "أليساندرو نيستا",
+          "en": "Alessandro Nesta"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ماركو ماتيراتزي",
+          "en": "Marco Materazzi"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "جانلوكا زامبروتا",
+          "en": "Gianluca Zambrotta"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "awards",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي ملعب شهير في أمريكا الجنوبية استضاف نهائيين لكأس العالم في عامي 1950 و2014؟",
+      "en": "Which famous South American stadium hosted two FIFA World Cup finals in 1950 and 2014?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "لا بومبونيرا",
+          "en": "La Bombonera"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "إستاديو مونومنتال",
+          "en": "Estadio Monumental"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ملعب ماراكانا",
+          "en": "Maracanã Stadium"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "إستاديو سينتيناريو",
+          "en": "Estadio Centenario"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في نوفمبر 2012، من اللاعب الذي سجل مقصية خلفية مزدوجة خارقة من مسافة 30 ياردة للسويد ضد إنجلترا ونال جائزة بوشكاش؟",
+      "en": "In November 2012, who scored a breathtaking 30-yard overhead bicycle kick for Sweden against England that won the FIFA Puskás Award?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "هنريك لارسون",
+          "en": "Henrik Larsson"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "زلاتان إبراهيموفيتش",
+          "en": "Zlatan Ibrahimović"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "واين روني",
+          "en": "Wayne Rooney"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "روبين فان بيرسي",
+          "en": "Robin van Persie"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "legends",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أصبح نادي برشلونة في عام 2009 أول فريق في تاريخ كرة القدم يحقق السداسية التاريخية (جميع البطولات الست الممكنة في عام ميلادي واحد).",
+      "en": "FC Barcelona in 2009 became the first club in football history to win all six available trophies ('The Sextuple') in a single calendar year."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "records",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "وفقاً لقوانين مجلس الاتحاد الدولي لكرة القدم (IFAB)، لا يمكن احتساب تسلل على اللاعب مباشرة من رمية تماس أو ركلة ركنية أو ركلة مرمى.",
+      "en": "Under the IFAB Laws of the Game, a player cannot be penalized for an offside offense directly from a throw-in, corner kick, or goal kick."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "rules",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أشهر الحكم الإنجليزي غراهام بول ثلاث بطاقات صفراء لنفس اللاعب الكرواتي في مباراة واحدة بكأس العالم 2006 قبل طرده، فمن هو؟",
+      "en": "English referee Graham Poll notoriously issued three yellow cards to which Croatian player in a single match at the 2006 FIFA World Cup?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "جوسيب سيمونيتش",
+          "en": "Josip Šimunić"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "داريو سيميتش",
+          "en": "Dario Šimić"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "روبرت كوفاتش",
+          "en": "Robert Kovač"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "إيغور تودور",
+          "en": "Igor Tudor"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "rules",
+    "difficulty": "hard",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي عملاق تركي فاز على آرسنال بركلات الترجيح في نهائي كأس الاتحاد الأوروبي 2000 ليحقق أول لقب أوروبي في تاريخ تركيا؟",
+      "en": "Which Turkish giant defeated Arsenal on penalties in the 2000 UEFA Cup Final to win Turkey's first major European trophy?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "فنربخشة",
+          "en": "Fenerbahçe"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "بشكتاش",
+          "en": "Beşiktaş"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "غلطة سراي",
+          "en": "Galatasaray"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "طرابزون سبور",
+          "en": "Trabzonspor"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من مهاجم إيفرتون الذي سجل 60 هدفاً في موسم 1927–28 في أعلى رقم تهديفي في موسم واحد بتاريخ الدوري الإنجليزي الممتاز/الدرجة الأولى؟",
+      "en": "Which Everton forward scored an astonishing 60 league goals in the 1927–28 season, the all-time record for the English top division?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "جيمي غريفز",
+          "en": "Jimmy Greaves"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ديكسي دين",
+          "en": "Dixie Dean"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "تيد دريك",
+          "en": "Ted Drake"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ستيف بلومر",
+          "en": "Steve Bloomer"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "hard",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "سجل كيليان مبابي ثلاثية (هاتريك) في نهائي كأس العالم 2022 ضد الأرجنتين، ليصبح ثاني لاعب فقط في التاريخ يسجل هاتريك في نهائي المونديال بعد جيف هيرست عام 1966.",
+      "en": "Kylian Mbappé scored a hat-trick in the 2022 FIFA World Cup Final against Argentina, becoming only the second man to do so after Geoff Hurst in 1966."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ في أمريكا الجنوبية توج بأكبر عدد من ألقاب كأس ليبرتادوريس في التاريخ (7 ألقاب)؟",
+      "en": "Which South American club has won the most Copa Libertadores titles in history (7 titles)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "بوكا جونيورز",
+          "en": "Boca Juniors"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ريفر بليت",
+          "en": "River Plate"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ساو باولو",
+          "en": "São Paulo"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "إنديبندينتي",
+          "en": "Independiente"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "توج هاري كين بالحذاء الذهبي الأوروبي لموسم 2023–24 بعد تسجيله 36 هدفاً في موسمه الأول بالدوري الألماني مع بايرن ميونخ.",
+      "en": "Harry Kane won the 2023–24 European Golden Shoe after scoring 36 league goals in his debut Bundesliga season for Bayern Munich."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "awards",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "فاز ريال مدريد بلقب دوري أبطال أوروبا 6 مرات في غضون 11 موسماً فقط بين عامي 2014 و2024.",
+      "en": "Real Madrid won the UEFA Champions League 6 times in an 11-season period between 2014 and 2024."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من كان حارس المرمى عندما فاز مانشستر يونايتد بنهائي دوري أبطال أوروبا الدرامي 1999 ضد بايرن ميونخ ليكمل الثلاثية؟",
+      "en": "Who was the goalkeeper when Manchester United dramatically won the 1999 UEFA Champions League final against Bayern Munich to complete the Treble?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "بيتر شمايكل",
+          "en": "Peter Schmeichel"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "فابيان بارتيز",
+          "en": "Fabien Barthez"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "مارك بوسنيتش",
+          "en": "Mark Bosnich"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ريموند فان در خاو",
+          "en": "Raimond van der Gouw"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو المهاجم الياباني الأسطوري المعروف بـ 'الملك كازو' الذي واصل لعب كرة القدم الاحترافية الرسمية بعد تجاوزه سن 55 عاماً؟",
+      "en": "Who is the legendary Japanese forward, known as 'King Kazu', who continued playing professional competitive football beyond age 55?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "هيديتوشي ناكاتا",
+          "en": "Hidetoshi Nakata"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كازويوشي ميورا",
+          "en": "Kazuyoshi Miura"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "كيسوكي هوندا",
+          "en": "Keisuke Honda"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "شونوسكي ناكامورا",
+          "en": "Shunsuke Nakamura"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "legends",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أصبح بيليه أصغر لاعب يسجل في نهائي كأس العالم عام 1958 في أي عمر؟",
+      "en": "Pelé became the youngest player to score in a FIFA World Cup Final in 1958 at what age?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "16 عاماً و180 يوماً",
+          "en": "16 years and 180 days"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "18 عاماً و12 يوماً",
+          "en": "18 years and 12 days"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "17 عاماً و249 يوماً",
+          "en": "17 years and 249 days"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "17 عاماً و45 يوماً",
+          "en": "17 years and 45 days"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من سجل هدف التعادل القاتل لريال مدريد في الدقيقة 93 برأسية تاريخية ضد أتلتيكو مدريد في نهائي دوري أبطال أوروبا 2014؟",
+      "en": "Which Spanish midfielder scored the stoppage-time equalizer for Real Madrid in the 93rd minute of the 2014 Champions League Final against Atlético Madrid?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "أنخل دي ماريا",
+          "en": "Ángel Di María"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كريستيانو رونالدو",
+          "en": "Cristiano Ronaldo"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "غاريث بيل",
+          "en": "Gareth Bale"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "سيرخيو راموس",
+          "en": "Sergio Ramos"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المدافع الهولندي الذي أصبح أول مدافع يتوج بجائزة أفضل لاعب في أوروبا عام 2019 بعد فوزه بدوري الأبطال مع ليفربول؟",
+      "en": "Which Dutch defender became the first defender to win UEFA Men's Player of the Year in 2019 after winning the Champions League with Liverpool?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "فيرجيل فان دايك",
+          "en": "Virgil van Dijk"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ماتيس دي ليخت",
+          "en": "Matthijs de Ligt"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ياب ستام",
+          "en": "Jaap Stam"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ستيفان دي فري",
+          "en": "Stefan de Vrij"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "awards",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب صاحب الرقم القياسي لأكبر عدد من التمريرات الحاسمة (الأسيست) في تاريخ كرة القدم الدولية للرجال؟",
+      "en": "Who holds the record for the most assists in men's international football history?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كريستيانو رونالدو",
+          "en": "Cristiano Ronaldo"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ليونيل ميسي",
+          "en": "Lionel Messi"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "نيمار جونيور",
+          "en": "Neymar Jr"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "كيفين دي بروين",
+          "en": "Kevin De Bruyne"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من الحارس الذي قاد منتخب بلاده للفوز بركلات ترجيح نهائي مونديال 2022 بعد تصديه لركلتي كومان وتشواميني؟",
+      "en": "Which goalkeeper saved penalties from Kingsley Coman and Aurélien Tchouaméni in the 2022 World Cup Final shootout?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "هوغو لوريس",
+          "en": "Hugo Lloris"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "دومينيك ليفاكوفيتش",
+          "en": "Dominik Livaković"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "إميليانو مارتينيز",
+          "en": "Emiliano Martínez"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ياسين بونو",
+          "en": "Yassine Bounou"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "صنع المغرب التاريخ في مونديال قطر 2022 عندما أصبح أول منتخب إفريقي وعربي في التاريخ يبلغ نصف نهائي كأس العالم.",
+      "en": "Morocco made history at Qatar 2022 by becoming the first African and Arab nation ever to reach the FIFA World Cup semi-finals."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من اللاعب الذي سجل هدف الفوز الوحيد في نهائي دوري أبطال أوروبا 2023 في إسطنبول ليتوج مانشستر سيتي باللقب القاري؟",
+      "en": "Who scored the only goal in the 2023 UEFA Champions League Final in Istanbul to crown Manchester City European champions?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كيفين دي بروين",
+          "en": "Kevin De Bruyne"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "رودري",
+          "en": "Rodri"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "إرلينغ هالاند",
+          "en": "Erling Haaland"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "برناردو سيلفا",
+          "en": "Bernardo Silva"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من سجل هدف تتويج تشيلسي بلقب دوري أبطال أوروبا 2021 أمام مانشستر سيتي في بورتو؟",
+      "en": "Who scored the winning goal for Chelsea against Manchester City in the 2021 UEFA Champions League Final in Porto?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كاي هافيرتز",
+          "en": "Kai Havertz"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ميسون ماونت",
+          "en": "Mason Mount"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "تيمو فيرنر",
+          "en": "Timo Werner"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "كريستيان بوليسيتش",
+          "en": "Christian Pulisic"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في نهائي دوري أبطال أوروبا 1994 بأثينا، أي نادٍ اكتسح فريق الأحلام لبرشلونة بقيادة يوهان كرويف برباعية نظيفة 4–0؟",
+      "en": "In the 1994 UEFA Champions League Final in Athens, which club stunned Johan Cruyff's Barcelona 'Dream Team' with an emphatic 4–0 victory?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "يوفنتوس",
+          "en": "Juventus"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "بايرن ميونخ",
+          "en": "Bayern Munich"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ميلان",
+          "en": "AC Milan"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "أياكس",
+          "en": "Ajax"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ إنجليزي توج بكأس أوروبا للأندية الأبطال لعامين متتاليين في 1979 و1980 تحت قيادة المدرب الأسطوري برايان كلوف؟",
+      "en": "Which English club won back-to-back European Cups in 1979 and 1980 under the legendary manager Brian Clough?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "أستون فيلا",
+          "en": "Aston Villa"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ليدز يونايتد",
+          "en": "Leeds United"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ليفربول",
+          "en": "Liverpool"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "نوتنغهام فورست",
+          "en": "Nottingham Forest"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "سجل ليونيل ميسي 4 أهداف (سوبر هاتريك) في مباراة واحدة بالأدوار الإقصائية لدوري أبطال أوروبا ضد آرسنال في كامب نو عام 2010.",
+      "en": "Lionel Messi scored 4 goals in a single Champions League knockout match against Arsenal at Camp Nou in April 2010."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "champions_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ يوغوسلافي توج بلقب كأس أوروبا للأندية الأبطال عام 1991 بعد فوزه على مارسيليا بركلات الترجيح في باري؟",
+      "en": "Which Yugoslav club won the 1991 European Cup, defeating Marseille on penalties in Bari?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "النجم الأحمر بلغراد",
+          "en": "Red Star Belgrade"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "بارتيزان بلغراد",
+          "en": "Partizan Belgrade"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "دينامو زغرب",
+          "en": "Dinamo Zagreb"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "هايدوك سبليت",
+          "en": "Hajduk Split"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "champions_league",
+    "difficulty": "hard",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من النجم الروسي الذي سجل سوبر هاتريك تاريخي (4 أهداف) لآرسنال في التعادل المثير 4–4 ضد ليفربول في أنفيلد عام 2009؟",
+      "en": "Which Russian playmaker famously scored all 4 goals for Arsenal in an unforgettable 4–4 draw against Liverpool at Anfield in 2009?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "رومان بافليوتشينكو",
+          "en": "Roman Pavlyuchenko"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "أندري أرشافين",
+          "en": "Andrey Arshavin"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ألكسندر كيرجاكوف",
+          "en": "Aleksandr Kerzhakov"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "دينيار بيلياليتدينوف",
+          "en": "Diniyar Bilyaletdinov"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ توج بلقب الدوري الإنجليزي الممتاز لموسم 1994–95 بقيادة الثنائي الهجومي التاريخي آلان شيرر وكريس سوتون؟",
+      "en": "Which club won the 1994–95 Premier League title led by the lethal strike partnership of Alan Shearer and Chris Sutton ('SAS')?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "نيوكاسل يونايتد",
+          "en": "Newcastle United"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "مانشستر يونايتد",
+          "en": "Manchester United"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "بلاكبيرن روفرز",
+          "en": "Blackburn Rovers"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ليدز يونايتد",
+          "en": "Leeds United"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "في موسم 2020–21 بالدوري الإنجليزي، حقق هاري كين إنجازاً نادراً بالفوز بالحذاء الذهبي (23 هدفاً) وجائزة صانع الألعاب (14 أسيست) معاً.",
+      "en": "In the 2020–21 Premier League season, Harry Kane achieved the rare feat of winning both the Golden Boot (23 goals) and Playmaker Award (14 assists)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو أول لاعب إفريقي في التاريخ يسجل 100 هدف في الدوري الإنجليزي الممتاز؟",
+      "en": "Who was the first African player to score 100 Premier League goals?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ديدييه دروغبا",
+          "en": "Didier Drogba"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "محمد صلاح",
+          "en": "Mohamed Salah"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ساديو ماني",
+          "en": "Sadio Mané"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ياكوبو أييغبيني",
+          "en": "Yakubu Aiyegbeni"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المدرب الذي أطلق على نفسه اللقب الشهير 'الرجل المميز' (The Special One) في أول مؤتمر صحفي له مع تشيلسي عام 2004؟",
+      "en": "Which manager famously coined the phrase 'The Special One' during his inaugural Chelsea press conference in 2004?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "أرسين فينغر",
+          "en": "Arsène Wenger"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "السير أليكس فيرغسون",
+          "en": "Sir Alex Ferguson"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "رافاييل بينيتيز",
+          "en": "Rafael Benítez"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "جوزيه مورينيو",
+          "en": "José Mourinho"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من هو الهداف التاريخي الأول لمواجهات الكلاسيكو بين ريال مدريد وبرشلونة برصيد 26 هدفاً؟",
+      "en": "Who is the all-time leading goalscorer in El Clásico history with 26 goals in official matches?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ليونيل ميسي",
+          "en": "Lionel Messi"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كريستيانو رونالدو",
+          "en": "Cristiano Ronaldo"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ألفريدو دي ستيفانو",
+          "en": "Alfredo Di Stéfano"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "راؤول غونزاليس",
+          "en": "Raúl González"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أُطلق اسم 'خماسية النسر' (La Quinta del Buitre) على جيل ريال مدريد التاريخي في الثمانينيات نسبة إلى أي مهاجم أيقوني؟",
+      "en": "Real Madrid's celebrated 1980s generation of homegrown academy stars was affectionately named after which iconic forward?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "هوغو سانشيز",
+          "en": "Hugo Sánchez"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "إيميليو بوتراغينيو",
+          "en": "Emilio Butragueño"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "سانتيانا",
+          "en": "Santillana"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ميتشيل",
+          "en": "Míchel"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "hard",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المهاجم الكولومبي الذي سجل هاتريك تاريخي لأتلتيكو مدريد ضد تشيلسي في كأس السوبر الأوروبي 2012 بموناكو؟",
+      "en": "Which Colombian striker scored a famous hat-trick in the 2012 UEFA Super Cup for Atlético Madrid against Chelsea in Monaco?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "جاكسون مارتينيز",
+          "en": "Jackson Martínez"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كارلوس باكا",
+          "en": "Carlos Bacca"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "راداميل فالكاو",
+          "en": "Radamel Falcao"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "لويس مورييل",
+          "en": "Luis Muriel"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "la_liga",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "قاد بيب غوارديولا برشلونة لتحقيق إنجاز غير مسبوق بحصد جميع الألقاب الستة الممكنة عام 2009 في أول موسم له كمدرب للفريق الأول.",
+      "en": "Pep Guardiola guided Barcelona to an unprecedented clean sweep of all 6 trophies available in 2009 during his debut season as senior manager."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "la_liga",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من المهاجم الأوكراني الذي نال الكرة الذهبية 2004 مع ميلان وسجل ركلة الترجيح الحاسمة في نهائي أبطال أوروبا 2003؟",
+      "en": "Which Ukrainian forward won the 2004 Ballon d'Or while starring for AC Milan, scoring the winning penalty in the 2003 UCL Final?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "أندري شيفشينكو",
+          "en": "Andriy Shevchenko"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "سيرهي ريبروف",
+          "en": "Serhiy Rebrov"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "أولكسندر زينتشينكو",
+          "en": "Oleksandr Zinchenko"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "أناتولي تيموشوك",
+          "en": "Anatoliy Tymoshchuk"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي ثلاثي هولندي قاد ميلان تحت إشراف أريغو ساكي للهيمنة والتتويج بكأس أوروبا مرتين متتاليتين عامي 1989 و1990؟",
+      "en": "Which Dutch trio famously propelled Arrigo Sacchi's AC Milan to consecutive European Cup triumphs in 1989 and 1990?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "كرويف، نيسكينز، ريب",
+          "en": "Cruyff, Neeskens, Rep"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "سيدورف، دافيدز، كلايفرت",
+          "en": "Seedorf, Davids, Kluivert"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "بيركامب، أوفرمارس، دي بور",
+          "en": "Bergkamp, Overmars, De Boer"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "فان باستن، خوليت، ريكارد",
+          "en": "Van Basten, Gullit, Rijkaard"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أُطلق لقب 'الظاهرة' (Il Fenomeno) على رونالدو نازاريو خلال فترته المذهلة مع أي نادٍ إيطالي في أواخر التسعينيات؟",
+      "en": "Ronaldo Nazário was nicknamed 'Il Fenomeno' during his sensational spell with which Italian club in the late 1990s?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ميلان",
+          "en": "AC Milan"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "إنتر ميلان",
+          "en": "Inter Milan"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "يوفنتوس",
+          "en": "Juventus"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "لاتسيو",
+          "en": "Lazio"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "تم تجريد يوفنتوس من لقبي دوري إيطالي وإنزاله إلى الدرجة الثانية (سيريا بي) بعد فضيحة 'كالتشوبولي' عام 2006.",
+      "en": "Juventus were stripped of two Serie A titles and relegated to Serie B following the 2006 'Calciopoli' scandal."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "serie_a",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من النجم الإيطالي الذي أهدر ركلة الترجيح الأخيرة الشهيرة في نهائي كأس العالم 1994 ضد البرازيل في باسادينا؟",
+      "en": "Which Italian star famously skied the decisive penalty in the 1994 World Cup Final shootout against Brazil in Pasadena?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "روبرتو باجيو",
+          "en": "Roberto Baggio"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "فرانكو باريزي",
+          "en": "Franco Baresi"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "دانييلي ماسارو",
+          "en": "Daniele Massaro"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "باولو مالديني",
+          "en": "Paolo Maldini"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من صاحب 'الهدف الذهبي' الشهير في الشوط الإضافي الذي منح فرنسا لقب يورو 2000 أمام إيطاليا؟",
+      "en": "Who scored the famous 'Golden Goal' in extra time for France to defeat Italy in the UEFA EURO 2000 Final?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "تييري هنري",
+          "en": "Thierry Henry"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "سيلفان ويلتورد",
+          "en": "Sylvain Wiltord"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "دافيد تريزيغيه",
+          "en": "David Trezeguet"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "زين الدين زيدان",
+          "en": "Zinedine Zidane"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "توجت الدنمارك بلقب يورو 1992 بعد استدعائها للمشاركة كبديل ليوغوسلافيا قبل أيام معدودة من انطلاق البطولة.",
+      "en": "Denmark won UEFA EURO 1992 after entering the tournament as late replacements for war-torn Yugoslavia just days before kick-off."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "international",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي دولة آسيوية استضافت البطولة صنعت التاريخ بالوصول إلى نصف نهائي كأس العالم 2002 تحت قيادة غوس هيدينك؟",
+      "en": "Which Asian co-host nation made history by reaching the semi-finals of the 2002 FIFA World Cup under Guus Hiddink?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "اليابان",
+          "en": "Japan"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "كوريا الجنوبية",
+          "en": "South Korea"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "السعودية",
+          "en": "Saudi Arabia"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "الصين",
+          "en": "China"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من القائد الذي رفع كأس العالم 1998 لفرنسا ثم قادهم كمدير فني للتتويج بمونديال 2018؟",
+      "en": "Who was the captain who lifted the 1998 FIFA World Cup trophy for France and later managed them to the 2018 title?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "لوران بلان",
+          "en": "Laurent Blanc"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "مارسيل ديسايي",
+          "en": "Marcel Desailly"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "زين الدين زيدان",
+          "en": "Zinedine Zidane"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "ديدييه ديشان",
+          "en": "Didier Deschamps"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من الحارس البرتغالي الذي تصدى لثلاث ركلات ترجيح أمام إنجلترا في ربع نهائي كأس العالم 2006؟",
+      "en": "Which Portuguese goalkeeper saved 3 penalties against England in the 2006 World Cup quarter-final shootout?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "ريكاردو",
+          "en": "Ricardo"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "فيتور بايا",
+          "en": "Vítor Baía"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "إدواردو",
+          "en": "Eduardo"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "روي باتريسيو",
+          "en": "Rui Patrício"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي عملاق مصري يحمل الرقم القياسي للتتويج بلقب دوري أبطال إفريقيا برصيد 12 لقباً؟",
+      "en": "Which Egyptian powerhouse has won the CAF Champions League title a record 12 times?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "الزمالك",
+          "en": "Zamalek SC"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "الأهلي",
+          "en": "Al Ahly SC"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "بيراميدز",
+          "en": "Pyramids FC"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "الإسماعيلي",
+          "en": "Ismaily SC"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من النجم السعودي صاحب الهدف التاريخي الرائع بتسديدة لولبية في شباك الأرجنتين في مونديال 2022؟",
+      "en": "Which Saudi Arabian superstar scored the sensational curling winner in a historic 2–1 victory against eventual champions Argentina at the 2022 World Cup?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "صالح الشهري",
+          "en": "Saleh Al-Shehri"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "فهد المولد",
+          "en": "Fahad Al-Muwallad"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "سالم الدوسري",
+          "en": "Salem Al-Dawsari"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "سلمان الفرج",
+          "en": "Salman Al-Faraj"
+        }
+      }
+    ],
+    "correctId": "c",
+    "type": "mcq",
+    "category": "world_cup",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "من الساحر الجزائري الذي توج بجائزة أفضل لاعب في إنجلترا (PFA) لموسم 2015–16 بعد قيادته ليستر سيتي للقب التاريخي؟",
+      "en": "Which Algerian magician won the PFA Players' Player of the Year in 2015–16 after guiding Leicester City to the Premier League crown?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "رياض محرز",
+          "en": "Riyad Mahrez"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "إسلام سليماني",
+          "en": "Islam Slimani"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "ياسين براهيمي",
+          "en": "Yacine Brahimi"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "سفيان فيغولي",
+          "en": "Sofiane Feghouli"
+        }
+      }
+    ],
+    "correctId": "a",
+    "type": "mcq",
+    "category": "awards",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "أي نادٍ سعودي توج بلقب دوري أبطال آسيا 4 مرات كرقم قياسي تاريخي (1991، 2000، 2019، 2021)؟",
+      "en": "Which Saudi club has won the AFC Champions League a record 4 times (1991, 2000, 2019, 2021)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "الاتحاد",
+          "en": "Al Ittihad"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "النصر",
+          "en": "Al Nassr"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "الأهلي السعودي",
+          "en": "Al Ahli"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "الهلال",
+          "en": "Al Hilal"
+        }
+      }
+    ],
+    "correctId": "d",
+    "type": "mcq",
+    "category": "international",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "توج محمد صلاح بالحذاء الذهبي كهداف للدوري الإنجليزي الممتاز 3 مرات مع ليفربول (2017–18، 2018–19، 2021–22).",
+      "en": "Mohamed Salah won the Premier League Golden Boot three times (2017–18, 2018–19, and 2021–22) with Liverpool."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "premier_league",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "هل يمكن تسجيل هدف صحيح مباشرة في شباك الخصم من ركلة البداية وفقاً لقوانين كرة القدم الرسمية (IFAB)؟",
+      "en": "Can a goal be scored directly into the opponent's net from the initial kick-off under IFAB Laws of the Game?"
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "rules",
+    "difficulty": "medium",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "لا يمكن اعتبار اللاعب متسللاً بأي حال من الأحوال طالما أنه يتواجد في نصف ملعبه الدفاعي لحظة تمرير الكرة.",
+      "en": "A player in their own defensive half can never be judged offside regardless of their position relative to the opposing defenders."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "true",
+    "type": "tf",
+    "category": "rules",
+    "difficulty": "easy",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "إذا سدد منفذ ركلة الجزاء الكرة فارتطمت بالقائم دون أن يلمسها الحارس ثم تابعها وسجل هدفاً، فما هو قرار الحكم؟",
+      "en": "If a penalty taker shoots, the ball hits the post without touching the keeper, and the taker scores from the rebound, what is the referee's decision?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ar": "احتساب الهدف",
+          "en": "Goal is awarded"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ar": "ركلة حرة غير مباشرة للخصم (لمس مزدوج)",
+          "en": "Indirect free kick to defending team (double touch)"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ar": "إعادة تنفيذ ركلة الجزاء",
+          "en": "Penalty is retaken"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ar": "إسقاط الكرة",
+          "en": "Dropped ball"
+        }
+      }
+    ],
+    "correctId": "b",
+    "type": "mcq",
+    "category": "rules",
+    "difficulty": "hard",
+    "isActive": true
+  },
+  {
+    "question": {
+      "ar": "يجوز لحارس المرمى تسجيل هدف صحيح برميه الكرة بيده مباشرة في مرمى الخصم.",
+      "en": "A goalkeeper can score a valid goal by throwing the ball directly into the opponent's goal with their hands."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": {
+          "ar": "صحيح",
+          "en": "True"
+        }
+      },
+      {
+        "id": "false",
+        "text": {
+          "ar": "خطأ",
+          "en": "False"
+        }
+      }
+    ],
+    "correctId": "false",
+    "type": "tf",
+    "category": "rules",
+    "difficulty": "medium",
+    "isActive": true
   }
 ]

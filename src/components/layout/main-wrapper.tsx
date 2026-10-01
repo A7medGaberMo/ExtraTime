@@ -20,7 +20,6 @@ export function MainWrapper({ children }: { children: React.ReactNode }) {
     pathname === '/rank' ||
     pathname === '/bank' ||
     pathname === '/draft' ||
-    pathname === '/packs' ||
     pathname === '/create-room' ||
     pathname === '/join-room';
 

@@ -54,7 +54,7 @@ export function MiniPitchCard({
       whileHover={disabled ? undefined : { scale: 1.08, y: -2 }}
       whileTap={disabled ? undefined : { scale: 0.95 }}
       transition={{ type: 'spring', stiffness: 450, damping: 28 }}
-      className={`group relative flex flex-col items-center cursor-pointer select-none outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-xl ${
+      className={`group relative flex flex-col items-center cursor-pointer select-none outline-none focus-visible:ring-2 focus-visible:ring-game-accent rounded-xl ${
         isSelected
           ? 'scale-105 z-30'
           : isSwapCandidate
@@ -65,7 +65,7 @@ export function MiniPitchCard({
     >
       {/* Captain Golden Armband / Crown — Luxury Apple Watch Gold Finish */}
       {slot.isCaptain && (
-        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 text-slate-950 font-black shadow-[0_2px_10px_rgba(245,158,11,0.8)] z-30 border border-white/60">
+        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-tr from-game-accent-light via-game-accent to-game-accent-deep text-game-on-accent font-black shadow-[0_2px_10px_var(--game-glow)] z-30 border border-white/60">
           <AppIcon icon={Crown} size={11} weight="fill" />
         </span>
       )}
@@ -74,9 +74,9 @@ export function MiniPitchCard({
       <div
         className={`relative transition-all rounded-xl ${
           isSelected
-            ? 'ring-2 ring-cyan-400 shadow-[0_0_24px_rgba(0,240,255,0.9),inset_0_1px_0_0_rgba(255,255,255,0.4)] scale-105'
+            ? 'ring-2 ring-game-accent shadow-[0_0_24px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-40)] scale-105'
             : isSwapCandidate
-              ? 'ring-2 ring-cyan-400/80 shadow-[0_0_16px_rgba(0,240,255,0.5)] animate-pulse'
+              ? 'ring-2 ring-game-accent/80 shadow-[0_0_16px_var(--game-glow)] animate-pulse'
               : ''
         }`}
       >
@@ -89,7 +89,7 @@ export function MiniPitchCard({
               key={pip}
               className={`h-1 w-1 sm:h-1.5 sm:w-1.5 rounded-full transition-all ${
                 pip <= chem
-                  ? 'bg-emerald-400 shadow-[0_0_6px_#34D399]'
+                  ? 'bg-success shadow-[0_0_6px_var(--et-success)]'
                   : 'bg-white/25'
               }`}
             />

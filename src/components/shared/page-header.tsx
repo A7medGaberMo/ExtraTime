@@ -28,7 +28,7 @@ export function PageHeader({ title, subtitle, backUrl, action, className }: Page
         {backUrl && (
           <Link
             href={backUrl}
-            className="text-steel mb-2 inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider transition-colors hover:text-white"
+            className="text-muted mb-2 inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider transition-colors hover:text-white"
           >
             <AppIcon icon={ArrowLeft} size={14} weight="bold" />
             <span>Back</span>
@@ -37,7 +37,7 @@ export function PageHeader({ title, subtitle, backUrl, action, className }: Page
         <h1 className="text-2xl font-black tracking-tight text-white uppercase font-display md:text-3xl">
           {title}
         </h1>
-        {subtitle && <p className="text-steel text-sm font-medium leading-relaxed md:text-base">{subtitle}</p>}
+        {subtitle && <p className="text-muted text-sm font-medium leading-relaxed md:text-base">{subtitle}</p>}
       </div>
       {action && <div className="flex-shrink-0">{action}</div>}
     </div>

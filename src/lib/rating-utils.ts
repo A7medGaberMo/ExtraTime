@@ -51,49 +51,49 @@ export function getRatingBadgeStyle(rating: number): {
 } {
   if (rating >= 94) {
     return {
-      color: '#FFE066',
-      glow: 'rgba(255, 215, 0, 0.65)',
-      badgeBg: 'rgba(255, 215, 0, 0.15)',
+      color: 'var(--et-tier-icon)',
+      glow: 'color-mix(in srgb, var(--et-tier-icon) 65%, transparent)',
+      badgeBg: 'color-mix(in srgb, var(--et-tier-icon) 15%, transparent)',
     };
   }
   if (rating >= 90) {
     return {
-      color: '#38BDF8',
-      glow: 'rgba(56, 189, 248, 0.55)',
-      badgeBg: 'rgba(56, 189, 248, 0.15)',
+      color: 'var(--et-tier-ultimate)',
+      glow: 'color-mix(in srgb, var(--et-tier-ultimate) 55%, transparent)',
+      badgeBg: 'color-mix(in srgb, var(--et-tier-ultimate) 15%, transparent)',
     };
   }
   if (rating >= 86) {
     return {
-      color: '#A78BFA',
-      glow: 'rgba(167, 139, 250, 0.5)',
-      badgeBg: 'rgba(167, 139, 250, 0.12)',
+      color: 'var(--et-tier-master)',
+      glow: 'color-mix(in srgb, var(--et-tier-master) 50%, transparent)',
+      badgeBg: 'color-mix(in srgb, var(--et-tier-master) 12%, transparent)',
     };
   }
   if (rating >= 81) {
     return {
-      color: '#34D399',
-      glow: 'rgba(52, 211, 153, 0.45)',
-      badgeBg: 'rgba(52, 211, 153, 0.12)',
+      color: 'var(--et-success)',
+      glow: 'color-mix(in srgb, var(--et-success) 45%, transparent)',
+      badgeBg: 'color-mix(in srgb, var(--et-success) 12%, transparent)',
     };
   }
   if (rating >= 74) {
     return {
-      color: '#FBBF24',
-      glow: 'rgba(251, 191, 36, 0.35)',
-      badgeBg: 'rgba(251, 191, 36, 0.1)',
+      color: 'var(--et-tier-gold)',
+      glow: 'color-mix(in srgb, var(--et-tier-gold) 35%, transparent)',
+      badgeBg: 'color-mix(in srgb, var(--et-tier-gold) 10%, transparent)',
     };
   }
   if (rating >= 64) {
     return {
-      color: '#CBD5E1',
-      glow: 'rgba(203, 213, 225, 0.25)',
-      badgeBg: 'rgba(203, 213, 225, 0.08)',
+      color: 'var(--et-tier-silver)',
+      glow: 'color-mix(in srgb, var(--et-tier-silver) 25%, transparent)',
+      badgeBg: 'color-mix(in srgb, var(--et-tier-silver) 8%, transparent)',
     };
   }
   return {
-    color: '#D97706',
-    glow: 'rgba(217, 119, 6, 0.25)',
-    badgeBg: 'rgba(217, 119, 6, 0.08)',
+    color: 'var(--et-tier-bronze)',
+    glow: 'color-mix(in srgb, var(--et-tier-bronze) 25%, transparent)',
+    badgeBg: 'color-mix(in srgb, var(--et-tier-bronze) 8%, transparent)',
   };
 }

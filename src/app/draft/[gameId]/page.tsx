@@ -334,8 +334,8 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
     return (
       <div className="flex min-h-[60vh] items-center justify-center">
         <div className="flex flex-col items-center gap-3">
-          <div className="h-8 w-8 animate-spin rounded-full border-2 border-gold border-t-transparent" />
-          <span className="text-xs font-semibold uppercase tracking-wider text-steel">
+          <div className="h-8 w-8 animate-spin rounded-full border-2 border-game-accent border-t-transparent" />
+          <span className="text-xs font-semibold uppercase tracking-wider text-muted">
             {t('draft.enteringArena')}
           </span>
         </div>
@@ -347,7 +347,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
     return (
       <div className="flex min-h-[60vh] flex-col items-center justify-center gap-4 text-center">
         <h2 className="text-xl font-bold text-white">{t('draft.gameNotFound')}</h2>
-        <p className="text-xs text-steel">{t('draft.gameNotFoundDesc')}</p>
+        <p className="text-xs text-muted">{t('draft.gameNotFoundDesc')}</p>
         <Button variant="primary" onClick={() => router.push('/draft')}>
           {t('draft.returnToHub')}
         </Button>
@@ -362,9 +362,9 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
         <section aria-label="Waiting Room" className="apple-glass-elevated w-full max-w-md my-auto rounded-3xl p-6 sm:p-8 text-center space-y-6 shadow-2xl">
           {/* Concentric Apple Radar Waves */}
           <div className="relative mx-auto flex h-20 w-20 items-center justify-center">
-            <span className="absolute inset-0 rounded-full bg-gold/10 animate-ping" />
-            <span className="absolute -inset-2 rounded-full border border-gold/20" />
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/40 bg-gradient-to-b from-gold/20 to-gold/10 text-gold shadow-[0_0_30px_rgba(229,184,66,0.25)]">
+            <span className="absolute inset-0 rounded-full bg-game-accent/10 animate-ping" />
+            <span className="absolute -inset-2 rounded-full border border-game-accent/20" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-game-accent/40 bg-gradient-to-b from-game-accent/20 to-game-accent/10 text-game-accent shadow-[0_0_30px_var(--game-glow)]">
               <AppIcon icon={Users} size={32} weight="duotone" />
             </div>
           </div>
@@ -373,7 +373,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
             <h2 className="font-display text-2xl sm:text-3xl font-black text-white tracking-tight">
               {t('draft.waitingRival')}
             </h2>
-            <p className="text-xs text-slate-400 max-w-xs mx-auto leading-relaxed">
+            <p className="text-xs text-muted max-w-xs mx-auto leading-relaxed">
               {t('draft.shareCodePrompt')}
             </p>
           </div>
@@ -386,15 +386,15 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
             <button
               type="button"
               onClick={handleCopyCode}
-              className="btn-haptic flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-b from-gold to-gold-dark text-slate-950 font-bold hover:brightness-110 transition-all shadow-md shadow-gold/25 cursor-pointer"
+              className="btn-haptic flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-b from-game-accent to-game-accent-deep text-game-on-accent font-bold hover:brightness-110 transition-all shadow-md shadow-game-accent/25 cursor-pointer"
               title="Copy Room Code"
             >
               <AppIcon icon={copied ? Check : Copy} size={19} weight="bold" />
             </button>
           </div>
 
-          <div className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1 text-micro font-medium text-slate-300">
-            <span className="h-2 w-2 rounded-full bg-gold shadow-[0_0_8px_#e5b842]" />
+          <div className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1 text-micro font-medium text-foreground">
+            <span className="h-2 w-2 rounded-full bg-game-accent shadow-[0_0_8px_var(--game-accent)]" />
             <span>{t('draft.roomActiveNotice')}</span>
           </div>
 
@@ -404,7 +404,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
               size="sm"
               onClick={handleLeaveDraft}
               loading={isLeaving}
-              className="text-slate-400 hover:text-rose-400 text-xs font-stats uppercase tracking-wider"
+              className="text-muted hover:text-danger text-xs font-stats uppercase tracking-wider"
             >
               {lang === 'ar' ? 'إلغاء الماتش والعودة' : 'Cancel Match & Return'}
             </Button>
@@ -464,12 +464,12 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
           ) : isSwappingPhase && game.status !== 'showdown' && game.status !== 'completed' ? (
             <div className="space-y-1 sm:space-y-1.5 shrink-0">
               {/* Ready / Finish button banner — Apple Dynamic Island style */}
-              <div className="apple-glass-card flex items-center justify-between gap-2 rounded-2xl px-3.5 py-2 sm:py-2.5 shadow-lg border border-gold/30">
+              <div className="apple-glass-card flex items-center justify-between gap-2 rounded-2xl px-3.5 py-2 sm:py-2.5 shadow-lg border border-game-accent/30">
                 <div className="text-start leading-tight">
                   <span className="block text-xs sm:text-sm font-black text-white tracking-wide">
                     {t('draft.squadComplete')}
                   </span>
-                  <span className="text-[10px] text-slate-400">
+                  <span className="text-[10px] text-muted">
                     {is1v1 ? t('draft.tunePositions') : t('draft.checkObjectives')}
                   </span>
                 </div>
@@ -480,7 +480,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
                   onClick={handleFinishDraft}
                   disabled={actionLoading || participant.isReady}
                   leftIcon={<AppIcon icon={participant.isReady ? Check : Sword} size={15} weight="bold" />}
-                  className="text-slate-950 font-black hover:brightness-110 shrink-0 rounded-xl shadow-md shadow-gold/25 px-4"
+                  className="text-game-on-accent font-black hover:brightness-110 shrink-0 rounded-xl shadow-md shadow-game-accent/25 px-4"
                 >
                   {participant.isReady ? t('draft.evaluating') : is1v1 ? t('draft.lockSquad') : t('draft.checkChallenge')}
                 </Button>
@@ -552,7 +552,7 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
             size="sm"
             onClick={() => setDismissedResults(false)}
             leftIcon={<AppIcon icon={Trophy} size={15} weight="fill" />}
-            className="bg-gradient-to-b from-cyan-400 to-cyan-500 text-slate-950 font-bold hover:brightness-110 shadow-md shadow-cyan-400/25 rounded-full px-4"
+            className="bg-gradient-to-b from-game-accent to-game-accent-deep text-game-on-accent font-bold hover:brightness-110 shadow-md shadow-game-accent/25 rounded-full px-4"
           >
             {t('draft.showResults')}
           </Button>

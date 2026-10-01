@@ -51,7 +51,7 @@ export function PageShell({
       )}
     >
       {hasAmbientLight && (
-        <div className="pointer-events-none absolute -top-14 left-1/2 h-[160px] sm:h-[220px] w-[280px] sm:w-[460px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(229,184,66,0.12)_0%,rgba(5,7,11,0)_75%)] blur-[70px]" />
+        <div className="pointer-events-none absolute -top-14 left-1/2 h-[160px] sm:h-[220px] w-[280px] sm:w-[460px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,var(--game-glow)_0%,transparent_75%)] blur-[70px]" />
       )}
 
       {(title || backUrl || badge) && (
@@ -60,7 +60,7 @@ export function PageShell({
             <div className="w-full flex justify-start">
               <Link
                 href={backUrl}
-                className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900/80 px-2.5 py-0.5 text-xs font-medium text-steel shadow-[0_4px_12px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.06)] backdrop-blur-xl hover:border-gold/40 hover:text-white transition-all cursor-pointer"
+                className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-surface/80 px-2.5 py-0.5 text-xs font-medium text-muted shadow-[0_4px_12px_var(--et-shade-40),inset_0_1px_0_0_var(--et-hi-06)] backdrop-blur-xl hover:border-game-accent/40 hover:text-foreground transition-all cursor-pointer"
               >
                 <AppIcon icon={ArrowLeft} size={13} weight="bold" className="rtl:rotate-180" />
                 <span>{t('common.back')}</span>
@@ -71,13 +71,13 @@ export function PageShell({
           {badge && <div className="flex justify-center">{badge}</div>}
 
           {title && (
-            <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold tracking-tight text-white uppercase font-display leading-tight text-center">
+            <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold tracking-tight text-foreground uppercase font-display leading-tight text-center">
               {title}
             </h1>
           )}
 
           {subtitle && (
-            <p className="text-steel text-[11px] sm:text-xs font-normal leading-relaxed max-w-md lg:max-w-lg text-center mx-auto">
+            <p className="text-muted text-[11px] sm:text-xs font-normal leading-relaxed max-w-md lg:max-w-lg text-center mx-auto">
               {subtitle}
             </p>
           )}

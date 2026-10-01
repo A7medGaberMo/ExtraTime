@@ -91,13 +91,13 @@ export function DraftPickOverlay({
   return (
     <section
       aria-label="Draft Pick Selection"
-      className="apple-glass-elevated relative w-full rounded-2xl sm:rounded-3xl p-1.5 sm:p-2 md:p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.8)] shrink-0 border border-white/18 backdrop-blur-3xl overflow-hidden"
+      className="apple-glass-elevated relative w-full rounded-2xl sm:rounded-3xl p-1.5 sm:p-2 md:p-2.5 shadow-[0_20px_50px_var(--et-shade-80)] shrink-0 border border-white/18 backdrop-blur-3xl overflow-hidden"
     >
       {/* Ambient Keynote Specular Mesh Glow for Captain Round */}
       {isCaptainRound && (
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(229,184,66,0.25),transparent_70%)]"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,var(--game-glow),transparent_70%)]"
         />
       )}
 
@@ -107,10 +107,10 @@ export function DraftPickOverlay({
           <span
             className={`flex h-7 w-7 sm:h-8 sm:w-8 md:h-8.5 md:w-8.5 items-center justify-center rounded-xl border shrink-0 transition-transform shadow-md ${
               isCaptainRound
-                ? 'border-gold/70 bg-gradient-to-br from-gold-light/35 via-gold/25 to-gold-deep/35 text-gold-light shadow-[0_0_18px_rgba(229,184,66,0.45)]'
+                ? 'border-game-accent/70 bg-gradient-to-br from-game-accent-light/35 via-game-accent/25 to-game-accent-deep/35 text-game-accent-light shadow-[0_0_18px_var(--game-glow)]'
                 : isSuperSub
-                  ? 'border-purple-400/60 bg-gradient-to-br from-purple-500/30 to-indigo-600/30 text-purple-300 shadow-[0_0_16px_rgba(168,85,247,0.4)]'
-                  : 'border-cyan-400/60 bg-gradient-to-br from-cyan-400/30 to-blue-600/30 text-cyan-300 shadow-[0_0_16px_rgba(0,240,255,0.4)]'
+                  ? 'border-tier-master/60 bg-gradient-to-br from-tier-master/30 to-tier-master/30 text-tier-master shadow-[0_0_16px_color-mix(in_srgb,var(--et-tier-master)_40%,transparent)]'
+                  : 'border-game-accent/60 bg-gradient-to-br from-game-accent/30 to-game-accent-deep/30 text-game-accent-light shadow-[0_0_16px_var(--game-glow)]'
             }`}
           >
             <AppIcon
@@ -129,7 +129,7 @@ export function DraftPickOverlay({
                   : t('draft.pickSlot', { current: (slotIndex + 1).toString(), pos: targetPosition })}
             </span>
 
-            <span className="text-[9.5px] sm:text-[11px] text-steel font-medium truncate">
+            <span className="text-[9.5px] sm:text-[11px] text-muted font-medium truncate">
               {isCaptainRound
                 ? (isRTL ? 'اختر قائد الفريق لتحديد كيمياء التشكيلة' : 'Select talisman to lead squad & build chemistry')
                 : isSuperSub
@@ -190,7 +190,7 @@ export function DraftPickOverlay({
               whileTap={disabled ? undefined : { scale: 0.95 }}
               onClick={() => handleSelect(card.id)}
               className={`group btn-haptic relative cursor-pointer transition-all flex flex-col items-center select-none outline-none shrink-0 ${
-                isCaptainRound ? 'focus-visible:ring-amber-400' : 'focus-visible:ring-cyan-400'
+                isCaptainRound ? 'focus-visible:ring-game-accent' : 'focus-visible:ring-game-accent'
               }`}
             >
               {/* Player Card (Clean & uncluttered with NO floating tags above) */}
@@ -198,15 +198,15 @@ export function DraftPickOverlay({
                 className={`relative rounded-xl transition-all duration-200 ${
                   isSelected
                     ? isCaptainRound
-                      ? 'ring-2 ring-amber-400 shadow-[0_0_28px_rgba(245,158,11,0.95)] scale-105 z-20'
-                      : 'ring-2 ring-cyan-400 shadow-[0_0_28px_rgba(0,240,255,0.95)] scale-105 z-20'
+                      ? 'ring-2 ring-game-accent shadow-[0_0_28px_var(--game-glow)] scale-105 z-20'
+                      : 'ring-2 ring-game-accent shadow-[0_0_28px_var(--game-glow)] scale-105 z-20'
                     : isCaptainRound
-                      ? 'ring-1.5 ring-amber-400/80 shadow-[0_0_18px_rgba(245,158,11,0.4)] group-hover:ring-2 group-hover:ring-amber-300 group-hover:shadow-[0_0_26px_rgba(245,158,11,0.7)]'
+                      ? 'ring-1.5 ring-game-accent/80 shadow-[0_0_18px_var(--game-glow)] group-hover:ring-2 group-hover:ring-game-accent-light group-hover:shadow-[0_0_26px_var(--game-glow)]'
                       : challengeMatch
-                        ? 'ring-1.5 ring-emerald-400/90 shadow-[0_0_18px_rgba(52,211,153,0.55)] group-hover:ring-2 group-hover:ring-emerald-300 group-hover:shadow-[0_0_24px_rgba(52,211,153,0.75)]'
+                        ? 'ring-1.5 ring-success/90 shadow-[0_0_18px_color-mix(in_srgb,var(--et-success)_55%,transparent)] group-hover:ring-2 group-hover:ring-success group-hover:shadow-[0_0_24px_color-mix(in_srgb,var(--et-success)_75%,transparent)]'
                         : hasSynergy
-                          ? 'ring-1.5 ring-cyan-400/70 shadow-[0_0_14px_rgba(0,240,255,0.4)] group-hover:ring-2 group-hover:ring-cyan-300 group-hover:shadow-[0_0_22px_rgba(0,240,255,0.65)]'
-                          : 'group-hover:ring-1.5 group-hover:ring-white/50 group-hover:shadow-[0_0_16px_rgba(255,255,255,0.25)]'
+                          ? 'ring-1.5 ring-game-accent/70 shadow-[0_0_14px_var(--game-glow)] group-hover:ring-2 group-hover:ring-game-accent-light group-hover:shadow-[0_0_22px_var(--game-glow)]'
+                          : 'group-hover:ring-1.5 group-hover:ring-white/50 group-hover:shadow-[0_0_16px_var(--et-hi-25)]'
                 }`}
               >
                 <PlayerCard player={cardData} size="draft" />

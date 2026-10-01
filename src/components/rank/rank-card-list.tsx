@@ -147,7 +147,7 @@ export function RankCardList({
 
         {/* Status Chip & Tap Guide */}
         <div className="flex flex-wrap items-center justify-center gap-1.5">
-          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-900/90 px-3 py-0.5 text-xs font-semibold text-gold shadow-sm backdrop-blur-md">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-surface/90 px-3 py-0.5 text-xs font-semibold text-game-accent shadow-sm backdrop-blur-md">
             <AppIcon
               icon={direction === 'desc' ? SortDescending : SortAscending}
               size={13}
@@ -157,7 +157,7 @@ export function RankCardList({
           </div>
 
           {selectedKey && !hasSubmitted && (
-            <div className="animate-fade-in inline-flex items-center gap-1 rounded-full border border-gold/40 bg-gold/15 px-2.5 py-0.5 text-[11px] font-bold text-gold">
+            <div className="animate-fade-in inline-flex items-center gap-1 rounded-full border border-game-accent/40 bg-game-accent/15 px-2.5 py-0.5 text-[11px] font-bold text-game-accent">
               <AppIcon icon={ArrowsDownUp} size={12} weight="bold" />
               <span>{lang === 'ar' ? 'اضغط لاعب آخر للتبديل' : 'Tap another card to swap'}</span>
             </div>
@@ -204,10 +204,10 @@ export function RankCardList({
                   transition-all select-none cursor-grab active:cursor-grabbing backdrop-blur-xl
                   ${
                     isSelected
-                      ? 'border-gold bg-slate-900 ring-2 ring-gold/40 shadow-[0_0_24px_rgba(229,184,66,0.3),inset_0_1px_0_0_rgba(255,255,255,0.2)] scale-[1.01]'
+                      ? 'border-game-accent bg-surface ring-2 ring-game-accent/40 shadow-[0_0_24px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-20)] scale-[1.01]'
                       : isTop
-                        ? 'border-gold/45 bg-slate-900/95 shadow-[0_4px_16px_rgba(229,184,66,0.15),inset_0_1px_0_0_rgba(255,255,255,0.12)]'
-                        : 'border-white/[0.12] bg-slate-900/85 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)] hover:border-white/20'
+                        ? 'border-game-accent/45 bg-surface/95 shadow-[0_4px_16px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-12)]'
+                        : 'border-white/[0.12] bg-surface/85 shadow-[0_4px_16px_var(--et-shade-40),inset_0_1px_0_0_var(--et-hi-08)] hover:border-white/20'
                   }
                 `}
                 style={{
@@ -222,8 +222,8 @@ export function RankCardList({
                     flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-xl text-xs font-bold font-display-number transition-colors pointer-events-none shadow-sm
                     ${
                       isTop
-                        ? 'bg-gold text-slate-950 shadow-[0_2px_8px_rgba(229,184,66,0.3)]'
-                        : 'bg-slate-800/90 text-slate-300 border border-white/5'
+                        ? 'bg-game-accent text-game-on-accent shadow-[0_2px_8px_var(--game-glow)]'
+                        : 'bg-surface-2/90 text-foreground border border-white/5'
                     }
                   `}
                 >
@@ -242,13 +242,13 @@ export function RankCardList({
                       {mainName}
                     </span>
                     {tag && (
-                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-gold font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
+                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-game-accent font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
                         {tag}
                       </span>
                     )}
                   </div>
                   {item.subText && (
-                    <p className="truncate text-[11px] sm:text-xs text-steel font-normal leading-tight pt-0.5">
+                    <p className="truncate text-[11px] sm:text-xs text-muted font-normal leading-tight pt-0.5">
                       {item.subText}
                     </p>
                   )}
@@ -261,7 +261,7 @@ export function RankCardList({
                       type="button"
                       onClick={(e) => handleMoveUp(index, e)}
                       disabled={index === 0}
-                      className="btn-haptic flex h-9 w-9 sm:h-8 sm:w-8 min-h-[36px] min-w-[36px] items-center justify-center rounded-xl bg-white/[0.04] border border-white/5 text-steel transition-all hover:bg-white/15 hover:text-white disabled:opacity-20 disabled:pointer-events-none cursor-pointer"
+                      className="btn-haptic flex h-9 w-9 sm:h-8 sm:w-8 min-h-[36px] min-w-[36px] items-center justify-center rounded-xl bg-white/[0.04] border border-white/5 text-muted transition-all hover:bg-white/15 hover:text-white disabled:opacity-20 disabled:pointer-events-none cursor-pointer"
                       aria-label="Move up"
                     >
                       <AppIcon icon={CaretUp} size={16} weight="bold" />
@@ -270,14 +270,14 @@ export function RankCardList({
                       type="button"
                       onClick={(e) => handleMoveDown(index, e)}
                       disabled={index === currentOrder.length - 1}
-                      className="btn-haptic flex h-9 w-9 sm:h-8 sm:w-8 min-h-[36px] min-w-[36px] items-center justify-center rounded-xl bg-white/[0.04] border border-white/5 text-steel transition-all hover:bg-white/15 hover:text-white disabled:opacity-20 disabled:pointer-events-none cursor-pointer"
+                      className="btn-haptic flex h-9 w-9 sm:h-8 sm:w-8 min-h-[36px] min-w-[36px] items-center justify-center rounded-xl bg-white/[0.04] border border-white/5 text-muted transition-all hover:bg-white/15 hover:text-white disabled:opacity-20 disabled:pointer-events-none cursor-pointer"
                       aria-label="Move down"
                     >
                       <AppIcon icon={CaretDown} size={16} weight="bold" />
                     </button>
                     <div
                       style={{ touchAction: 'none' }}
-                      className="flex h-9 w-7 sm:h-8 sm:w-7 items-center justify-center text-muted hover:text-steel cursor-grab active:cursor-grabbing"
+                      className="flex h-9 w-7 sm:h-8 sm:w-7 items-center justify-center text-muted hover:text-foreground cursor-grab active:cursor-grabbing"
                     >
                       <AppIcon icon={DotsSixVertical} size={17} weight="bold" />
                     </div>
@@ -295,10 +295,10 @@ export function RankCardList({
           type="button"
           onClick={handleSubmit}
           disabled={isSubmitting || hasSubmitted}
-          className="btn-haptic flex h-10 sm:h-11 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-gold shadow-[0_8px_20px_rgba(229,184,66,0.28),inset_0_1px_0_0_rgba(255,255,255,0.35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
+          className="btn-haptic flex h-10 sm:h-11 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-game-on-accent bg-game-accent shadow-[0_8px_20px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
         >
           {isSubmitting ? (
-            <CircleNotch className="animate-spin text-slate-950" size={18} />
+            <CircleNotch className="animate-spin text-game-on-accent" size={18} />
           ) : hasSubmitted ? (
             <>
               <AppIcon icon={Check} size={18} weight="bold" />

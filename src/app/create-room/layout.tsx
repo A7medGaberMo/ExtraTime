@@ -29,5 +29,9 @@ export const metadata: Metadata = {
 };
 
 export default function CreateRoomLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <div data-game="snipe" className="contents">
+      {children}
+    </div>
+  );
 }

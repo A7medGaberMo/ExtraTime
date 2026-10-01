@@ -15,7 +15,6 @@ import { useToast } from '@/components/shared/toast';
 import {
   CircleNotch,
   ArrowCounterClockwise,
-  Cards,
   House,
   SpeakerHigh,
   SpeakerSlash,
@@ -27,6 +26,7 @@ import { AppIcon } from '@/components/ui/app-icon';
 import { Button } from '@/components/ui/button';
 import { PageShell } from '@/components/ui/page-shell';
 import { useI18n } from '@/lib/i18n';
+import { gameIdForType } from '@/config/games';
 
 interface HydratedMatch {
   simulation?: MatchSimulationResult | null;
@@ -339,6 +339,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
 
   const formation = state?.auction?.formation ?? '4-3-3';
   const matchSize = ((state?.auction?.matchSize ?? 11) as 5 | 11) || 11;
+  const game = gameIdForType(match?.gameType);
 
   const celebratedRef = useRef(false);
 
@@ -358,8 +359,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
       <PageShell title={t('results.title')} subtitle={t('results.subtitle')} backUrl="/" maxWidth="md">
         <div className="flex min-h-[40vh] items-center justify-center">
           <div className="apple-glass-elevated p-8 rounded-3xl flex flex-col items-center gap-3 border border-white/10 shadow-2xl">
-            <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
-            <p className="text-steel text-xs font-black tracking-widest uppercase font-stats">
+            <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-game-accent animate-spin" />
+            <p className="text-muted text-xs font-black tracking-widest uppercase font-stats">
               {t('common.loading')}
             </p>
           </div>
@@ -372,18 +373,18 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
     return (
       <PageShell title={t('results.title')} subtitle={t('results.subtitle')} backUrl="/" maxWidth="md">
         <div className="animate-fade-in mx-auto flex min-h-[40vh] w-full flex-col items-center justify-center gap-4 px-3 text-center">
-          <div className="apple-glass-elevated p-8 sm:p-10 w-full space-y-5 text-center border border-gold/30 shadow-[0_16px_50px_rgba(229,184,66,0.15)]">
+          <div className="apple-glass-elevated p-8 sm:p-10 w-full space-y-5 text-center border border-game-accent/30 shadow-[0_16px_50px_var(--game-glow)]">
             <div className="relative mx-auto w-16 h-16 flex items-center justify-center">
-              <div className="bg-gold/25 absolute inset-0 rounded-full blur-xl animate-pulse" />
-              <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-gold/40 bg-gold/10 text-gold shadow-[0_0_20px_rgba(229,184,66,0.2)]">
-                <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
+              <div className="bg-game-accent/25 absolute inset-0 rounded-full blur-xl animate-pulse" />
+              <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-game-accent/40 bg-game-accent/10 text-game-accent shadow-[0_0_20px_var(--game-glow)]">
+                <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-game-accent animate-spin" />
               </div>
             </div>
             <div className="space-y-1.5">
               <h2 className="text-xl font-black tracking-tight text-white uppercase font-display">
                 Resolving Matchday
               </h2>
-              <p className="text-steel text-xs font-medium leading-relaxed max-w-sm mx-auto">
+              <p className="text-muted text-xs font-medium leading-relaxed max-w-sm mx-auto">
                 Both squads are locked in. The tactical engine is resolving the matchday...
               </p>
             </div>
@@ -394,11 +395,14 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
   }
 
   return (
-    <article className="mx-auto flex h-[100dvh] max-h-[100dvh] w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl flex-col justify-between overflow-hidden select-none p-2 sm:p-3 lg:p-4 relative">
+    <article
+      data-game={game ?? undefined}
+      className="mx-auto flex h-[100dvh] max-h-[100dvh] w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl flex-col justify-between overflow-hidden select-none p-2 sm:p-3 lg:p-4 relative"
+    >
       {/* Ambient Top Glow Mesh based on match outcome */}
       <div
         className={`pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 h-[220px] w-[90%] max-w-2xl rounded-full blur-[100px] opacity-25 transition-colors duration-700 ${
-          viewerWon === true ? 'bg-gold' : viewerWon === false ? 'bg-gold-dark' : 'bg-gold/40'
+          viewerWon === true ? 'bg-game-accent' : viewerWon === false ? 'bg-game-accent-deep' : 'bg-game-accent/40'
         }`}
       />
 
@@ -409,7 +413,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
         <button
           type="button"
           onClick={() => router.push('/')}
-          className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-slate-950/80 px-3 py-1 text-xs font-bold text-steel hover:text-white transition-all cursor-pointer shadow-sm backdrop-blur-md"
+          className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-canvas/80 px-3 py-1 text-xs font-bold text-muted hover:text-white transition-all cursor-pointer shadow-sm backdrop-blur-md"
         >
           <AppIcon icon={House} size={14} weight="bold" />
           <span>{t('results.home')}</span>
@@ -419,9 +423,9 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
         <div
           className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold backdrop-blur-xl shadow-lg ${
             viewerWon === true
-              ? 'border-gold/40 bg-gold/15 text-gold shadow-[0_0_20px_rgba(229,184,66,0.25)]'
+              ? 'border-game-accent/40 bg-game-accent/15 text-game-accent shadow-[0_0_20px_var(--game-glow)]'
               : viewerWon === false
-                ? 'border-gold/30 bg-gold/10 text-gold-light shadow-[0_0_16px_rgba(229,184,66,0.15)]'
+                ? 'border-game-accent/30 bg-game-accent/10 text-game-accent-light shadow-[0_0_16px_var(--game-glow)]'
                 : 'border-white/20 bg-white/10 text-white'
           }`}
         >
@@ -443,8 +447,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
           }}
           className={`btn-haptic flex h-8 w-8 items-center justify-center rounded-full border shadow-sm backdrop-blur-md transition-all cursor-pointer ${
             audioReady
-              ? 'border-gold/50 bg-gold/20 text-gold shadow-[0_0_12px_rgba(229,184,66,0.3)] ring-1 ring-gold/40'
-              : 'border-white/15 bg-slate-900/90 text-steel hover:text-white'
+              ? 'border-game-accent/50 bg-game-accent/20 text-game-accent shadow-[0_0_12px_var(--game-glow)] ring-1 ring-game-accent/40'
+              : 'border-white/15 bg-surface/90 text-muted hover:text-white'
           }`}
           title="Toggle matchday audio"
           aria-label="Toggle matchday audio"
@@ -471,14 +475,14 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
       {/* ── INCOMING REMATCH INVITE OVERLAY ─────────────────────── */}
       {rematchState?.status === 'pending' && !rematchState.iAmInviter && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md animate-fade-in">
-          <div className="apple-glass-elevated relative w-[90%] max-w-sm rounded-3xl p-6 border border-gold/30 shadow-[0_24px_60px_rgba(229,184,66,0.2)] space-y-5 text-center">
+          <div className="apple-glass-elevated relative w-[90%] max-w-sm rounded-3xl p-6 border border-game-accent/30 shadow-[0_24px_60px_var(--game-glow)] space-y-5 text-center">
             {/* Ambient glow */}
-            <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-32 w-48 rounded-full bg-gold/20 blur-3xl" />
+            <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-32 w-48 rounded-full bg-game-accent/20 blur-3xl" />
 
             <div className="relative space-y-2">
-              <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/50 bg-gold/15 px-3 py-1 shadow-sm">
-                <AppIcon icon={UserPlus} size={14} weight="fill" className="text-gold" />
-                <span className="text-[11px] font-black uppercase tracking-wider text-gold">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-game-accent/50 bg-game-accent/15 px-3 py-1 shadow-sm">
+                <AppIcon icon={UserPlus} size={14} weight="fill" className="text-game-accent" />
+                <span className="text-[11px] font-black uppercase tracking-wider text-game-accent">
                   {lang === 'ar' ? 'دعوة ريماتش' : 'Rematch Invite'}
                 </span>
               </div>
@@ -487,7 +491,7 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
                   ? `${rematchState.inviterName} عايز يلعب تاني!`
                   : `${rematchState.inviterName} wants a rematch!`}
               </h3>
-              <p className="text-xs text-slate-300">
+              <p className="text-xs text-foreground">
                 {lang === 'ar'
                   ? 'هل تقبل التحدي من جديد؟'
                   : 'Accept the challenge for another round?'}
@@ -500,11 +504,11 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
                 size="md"
                 onClick={handleAcceptRematch}
                 disabled={isRematchLoading}
-                leftIcon={<AppIcon icon={CheckCircle} size={16} weight="bold" className="text-slate-950" />}
-                className="flex-1 shadow-[0_8px_20px_rgba(229,184,66,0.3)] font-bold text-slate-950"
+                leftIcon={<AppIcon icon={CheckCircle} size={16} weight="bold" className="text-game-on-accent" />}
+                className="flex-1 shadow-[0_8px_20px_var(--game-glow)] font-bold text-game-on-accent"
               >
                 {isRematchLoading
-                  ? <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-slate-950" />
+                  ? <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-game-on-accent" />
                   : (lang === 'ar' ? 'قبول' : 'Accept')}
               </Button>
               <Button
@@ -512,8 +516,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
                 size="md"
                 onClick={handleDeclineRematch}
                 disabled={isRematchLoading}
-                leftIcon={<AppIcon icon={X} size={14} weight="bold" className="text-rose-400" />}
-                className="flex-1 border-rose-500/30 bg-rose-500/10 hover:border-rose-500/50 text-rose-300 shadow-md font-semibold"
+                leftIcon={<AppIcon icon={X} size={14} weight="bold" className="text-danger" />}
+                className="flex-1 border-danger/30 bg-danger/10 hover:border-danger/50 text-danger shadow-md font-semibold"
               >
                 {lang === 'ar' ? 'رفض' : 'Decline'}
               </Button>
@@ -530,8 +534,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
             variant="secondary"
             size="md"
             disabled
-            leftIcon={<AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-gold" />}
-            className="border-gold/30 bg-gold/10 text-gold shadow-md font-bold cursor-wait"
+            leftIcon={<AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-game-accent" />}
+            className="border-game-accent/30 bg-game-accent/10 text-game-accent shadow-md font-bold cursor-wait"
           >
             {lang === 'ar' ? 'في الانتظار...' : 'Waiting...'}
           </Button>
@@ -540,8 +544,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
             variant="secondary"
             size="md"
             disabled
-            leftIcon={<AppIcon icon={X} size={14} weight="bold" className="text-rose-400" />}
-            className="border-rose-500/30 bg-rose-500/10 text-rose-300 shadow-md font-bold"
+            leftIcon={<AppIcon icon={X} size={14} weight="bold" className="text-danger" />}
+            className="border-danger/30 bg-danger/10 text-danger shadow-md font-bold"
           >
             {lang === 'ar' ? 'تم الرفض' : 'Declined'}
           </Button>
@@ -550,8 +554,8 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
             variant="gold"
             size="md"
             disabled
-            leftIcon={<AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-slate-950" />}
-            className="shadow-[0_8px_20px_rgba(229,184,66,0.25)] font-bold text-slate-950"
+            leftIcon={<AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-game-on-accent" />}
+            className="shadow-[0_8px_20px_var(--game-glow)] font-bold text-game-on-accent"
           >
             {lang === 'ar' ? 'جاري التحويل...' : 'Joining...'}
           </Button>
@@ -563,24 +567,14 @@ export default function ResultsPage({ params }: { params: Promise<{ roomId: stri
             disabled={isRematchLoading}
             leftIcon={
               isRematchLoading
-                ? <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-slate-950" />
-                : <AppIcon icon={ArrowCounterClockwise} size={16} weight="bold" className="text-slate-950" />
+                ? <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-game-on-accent" />
+                : <AppIcon icon={ArrowCounterClockwise} size={16} weight="bold" className="text-game-on-accent" />
             }
-            className="shadow-[0_8px_20px_rgba(229,184,66,0.25)] font-bold text-slate-950"
+            className="shadow-[0_8px_20px_var(--game-glow)] font-bold text-game-on-accent"
           >
             {t('results.rematch')}
           </Button>
         )}
-
-        <Button
-          variant="secondary"
-          size="md"
-          onClick={() => router.push('/packs')}
-          leftIcon={<AppIcon icon={Cards} size={16} weight="bold" className="text-gold" />}
-          className="btn-haptic border-white/15 bg-white/5 hover:border-gold/40 text-white shadow-md font-semibold"
-        >
-          {t('results.packs')}
-        </Button>
 
         <Button
           variant="secondary"

@@ -181,29 +181,12 @@ export function runnerUpTone(): void {
   );
 }
 
-/** 📦 Foil pack rip / unseal tear sound with crisp burst & frequency sweep. */
-export function packRip(): void {
-  const c = getCtx();
-  if (!c) return;
-  noiseBurst(0, 0.22, 0.35, c, 3200);
-  tone(550, 0.02, 0.18, 'sine', 0.22, c, { endFreq: 180, attack: 0.005 });
-  tone(220, 0.06, 0.28, 'triangle', 0.28, c, { endFreq: 60, attack: 0.008 });
-}
-
 /** 🃏 Quick snappy card deal / whoosh sound. */
 export function cardDeal(): void {
   const c = getCtx();
   if (!c) return;
   noiseBurst(0, 0.06, 0.14, c, 1800);
   tone(380, 0, 0.08, 'sine', 0.12, c, { endFreq: 750, attack: 0.003 });
-}
-
-/** 🎴 Crisp card flip snap sound. */
-export function cardFlip(): void {
-  const c = getCtx();
-  if (!c) return;
-  tone(620, 0, 0.09, 'triangle', 0.22, c, { endFreq: 980, attack: 0.002 });
-  noiseBurst(0, 0.04, 0.16, c, 2400);
 }
 
 /** ✨ Shimmer sparkle chime for high tier reveal. */
@@ -216,55 +199,6 @@ export function tierReveal(): void {
     tone(freq * 1.5, idx * 0.04 + 0.02, 0.3, 'triangle', 0.08, c, { attack: 0.005 });
   });
   noiseBurst(0, 0.12, 0.1, c, 3500);
-}
-
-/** 🌟 Progressive walkout tease step sound (nation, position, club). */
-export function walkoutTease(step: 1 | 2 | 3): void {
-  const c = getCtx();
-  if (!c) return;
-  if (step === 1) {
-    // Nation reveal: deep ambient sub-swell + pulse
-    tone(90, 0, 0.45, 'sine', 0.35, c, { endFreq: 140, attack: 0.02 });
-    noiseBurst(0, 0.15, 0.12, c, 1200);
-  } else if (step === 2) {
-    // Position reveal: higher harmonic riser + snap
-    tone(140, 0, 0.4, 'triangle', 0.28, c, { endFreq: 280, attack: 0.01 });
-    tone(280, 0.02, 0.35, 'sine', 0.15, c, { endFreq: 420, attack: 0.01 });
-    noiseBurst(0, 0.1, 0.15, c, 2200);
-  } else {
-    // Club reveal: high tension sweep before drop
-    tone(220, 0, 0.5, 'sine', 0.3, c, { endFreq: 580, attack: 0.01 });
-    tone(440, 0.05, 0.45, 'triangle', 0.18, c, { endFreq: 880, attack: 0.01 });
-    noiseBurst(0, 0.18, 0.22, c, 3800);
-  }
-}
-
-/** 📦 Low bass pack unseal pulse */
-export function packShake(): void {
-  const c = getCtx();
-  if (!c) return;
-  tone(80, 0, 0.18, 'sine', 0.3, c, { endFreq: 45, attack: 0.005 });
-  noiseBurst(0, 0.08, 0.15, c, 900);
-}
-
-/** 🌟 Legendary walkout stinger (dramatic cinematic chord sequence). */
-export function walkoutStinger(): void {
-  const c = getCtx();
-  if (!c) return;
-  tone(80, 0, 0.8, 'sine', 0.45, c, { endFreq: 40, attack: 0.02 });
-  tone(120, 0.05, 0.6, 'sawtooth', 0.15, c, { endFreq: 60, attack: 0.02 });
-
-  const fanfare = [
-    [440.0, 0.1], // A4
-    [554.37, 0.22], // C#5
-    [659.25, 0.35], // E5
-    [880.0, 0.48], // A5
-    [1108.73, 0.62], // C#6
-  ];
-  fanfare.forEach(([freq, time]) => {
-    tone(freq, time, 0.65, 'triangle', 0.18, c, { attack: 0.008 });
-    tone(freq / 2, time + 0.01, 0.6, 'sine', 0.12, c, { attack: 0.008 });
-  });
 }
 
 /** ⏱️ High-tension timer tick (urgent = higher pitch) */
@@ -373,13 +307,8 @@ export const sfx = {
   crossbar: crossbarClang,
   victory: victoryFanfare,
   runnerUp: runnerUpTone,
-  packRip: packRip,
-  packShake: packShake,
-  walkoutTease: walkoutTease,
   cardDeal: cardDeal,
-  cardFlip: cardFlip,
   tierReveal: tierReveal,
-  walkout: walkoutStinger,
   tick: timerTick,
   tap: tapClick,
   lock: lockSound,

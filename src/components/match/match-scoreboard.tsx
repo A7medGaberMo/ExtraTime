@@ -43,28 +43,28 @@ export function MatchScoreboard({
         : null;
 
   return (
-    <div className="bg-slate-950/85 relative overflow-hidden rounded-2xl border border-white/10 p-4 shadow-2xl backdrop-blur-xl sm:p-5 select-none">
-      <div className="bg-gold/8 pointer-events-none absolute inset-x-0 -top-16 h-32 blur-3xl" />
+    <div className="bg-canvas/85 relative overflow-hidden rounded-2xl border border-white/10 p-4 shadow-2xl backdrop-blur-xl sm:p-5 select-none">
+      <div className="bg-game-accent/8 pointer-events-none absolute inset-x-0 -top-16 h-32 blur-3xl" />
 
       <div className="relative flex items-center justify-between gap-3">
         {/* HOST */}
         <div className="flex min-w-0 flex-1 flex-col items-center gap-1.5">
           <span
             className={`truncate text-[10px] font-black tracking-widest uppercase sm:text-xs font-display ${
-              winner === 'host' ? 'text-gold' : 'text-steel'
+              winner === 'host' ? 'text-game-accent' : 'text-muted'
             }`}
           >
             {hostName}
           </span>
           <span
             className={`font-stats text-3xl leading-none sm:text-4xl font-black ${
-              winner === 'host' ? 'text-gold' : 'text-white/90'
+              winner === 'host' ? 'text-game-accent' : 'text-white/90'
             }`}
           >
             {score.host}
           </span>
           {winner === 'host' && !isSimulating && (
-            <span className="border-gold/30 bg-gold/10 text-gold flex items-center gap-1 rounded-full border px-2 py-0.5 text-[8px] font-black tracking-widest uppercase">
+            <span className="border-game-accent/30 bg-game-accent/10 text-game-accent flex items-center gap-1 rounded-full border px-2 py-0.5 text-[8px] font-black tracking-widest uppercase">
               <AppIcon icon={Trophy} size={10} weight="fill" /> WINNER
             </span>
           )}
@@ -75,14 +75,14 @@ export function MatchScoreboard({
           <span
             className={`flex items-center gap-1.5 rounded-full border px-3 py-1 text-[9px] font-black tracking-widest uppercase font-stats sm:text-[10px] ${
               isSimulating
-                ? 'border-gold/40 bg-gold/10 text-gold'
-                : 'text-steel border-white/10 bg-slate-900'
+                ? 'border-game-accent/40 bg-game-accent/10 text-game-accent'
+                : 'text-muted border-white/10 bg-surface'
             }`}
           >
-            {isSimulating && <AppIcon icon={CircleNotch} size={12} weight="bold" className="animate-spin text-gold" />}
+            {isSimulating && <AppIcon icon={CircleNotch} size={12} weight="bold" className="animate-spin text-game-accent" />}
             {minuteLabel(minute)}
           </span>
-          <span className="text-steel/50 text-[9px] font-black tracking-widest uppercase">
+          <span className="text-muted/50 text-[9px] font-black tracking-widest uppercase">
             Full Time
           </span>
         </div>
@@ -91,20 +91,20 @@ export function MatchScoreboard({
         <div className="flex min-w-0 flex-1 flex-col items-center gap-1.5">
           <span
             className={`truncate text-[10px] font-black tracking-widest uppercase sm:text-xs font-display ${
-              winner === 'guest' ? 'text-rose-400' : 'text-steel'
+              winner === 'guest' ? 'text-danger' : 'text-muted'
             }`}
           >
             {guestName}
           </span>
           <span
             className={`font-stats text-3xl leading-none sm:text-4xl font-black ${
-              winner === 'guest' ? 'text-rose-400' : 'text-white/90'
+              winner === 'guest' ? 'text-danger' : 'text-white/90'
             }`}
           >
             {score.guest}
           </span>
           {winner === 'guest' && !isSimulating && (
-            <span className="flex items-center gap-1 rounded-full border border-rose-500/30 bg-rose-500/10 px-2 py-0.5 text-[8px] font-black tracking-widest text-rose-400 uppercase">
+            <span className="flex items-center gap-1 rounded-full border border-danger/30 bg-danger/10 px-2 py-0.5 text-[8px] font-black tracking-widest text-danger uppercase">
               <AppIcon icon={Trophy} size={10} weight="fill" /> WINNER
             </span>
           )}
@@ -113,7 +113,7 @@ export function MatchScoreboard({
 
       {shootoutScore && (
         <div className="relative mt-2.5 flex justify-center">
-          <span className="rounded-full border border-amber-400/25 bg-amber-400/10 px-3 py-0.5 text-[8px] font-black tracking-widest text-amber-300 uppercase font-stats">
+          <span className="rounded-full border border-warning/25 bg-warning/10 px-3 py-0.5 text-[8px] font-black tracking-widest text-warning uppercase font-stats">
             Penalties {shootoutScore.host} - {shootoutScore.guest}
           </span>
         </div>

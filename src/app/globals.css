@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import '../styles/theme.css';
 
 @theme {
   /* ═══════════════════════════════════════════════════════════════════
@@ -42,59 +43,8 @@
   --text-title1: 1.75rem;     /* 28px */
   --text-largetitle: 2.125rem;/* 34px */
 
-  /* ═══════════════════ COLOR SYSTEM (CALM LUXURY) ═══════════════════ */
-  --color-background: #05070b; /* Deep obsidian arena canvas */
-  --color-foreground: #f5f5f7; /* Apple display white */
-  --color-card: #0b0f17;
-  --color-card-elevated: #111723;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-subtle: rgba(255, 255, 255, 0.04);
-  --color-border-hover: rgba(255, 255, 255, 0.16);
-  --color-border-hairline: rgba(255, 255, 255, 0.07);
-
-  /* ExtraTime Signature Gold Brand Accent */
-  --color-gold: #e5b842;
-  --color-gold-light: #f5d77f;
-  --color-gold-deep: #99751d;
-  --color-gold-glow: rgba(229, 184, 66, 0.25);
-  --color-gold-border: rgba(229, 184, 66, 0.38);
-
-  /* ExtraTime Signature Gold Brand Accent (Unified Luxury Palette) */
-  --color-lime: #e5b842;
-  --color-vivid: #d4a833;
-  --color-bold-green: #e5b842;
-  --color-steel: #9da4b4; /* Elevated contrast for secondary typography */
-  --color-muted: #6b7280; /* Refined divider and subtle icon tone */
-  --color-sky: #0a84ff;
-  --color-rose: #ff375f;
-
-  /* Tier Palettes */
-  --color-tier-icon: #e5c058;
-  --color-tier-hero: #30d158;
-  --color-tier-ultimate: #0a84ff;
-  --color-tier-master: #bf5af2;
-  --color-tier-elite: #ff375f;
-  --color-tier-gold: #ffd60a;
-  --color-tier-silver: #d1d1d6;
-  --color-tier-bronze: #ac6d46;
-
-  --color-slate-950: #05070b;
-  --color-slate-900: #0b0f17;
-  --color-slate-850: #101520;
-  --color-slate-800: #161d2b;
-  --color-slate-700: #263143;
-  --color-slate-500: #8e95a2;
-  --color-slate-400: #a1a9b7;
-  --color-slate-300: #d1d5db;
-  --color-slate-200: #e5e7eb;
-  --color-slate-100: #f5f5f7;
-
   /* ═══════════════════ ELEVATION & MATERIALS ═══════════════════ */
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
-  --shadow-float: 0 24px 56px -12px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.08);
-  --shadow-lift: 0 6px 18px rgba(0, 0, 0, 0.4);
-  --shadow-glow-gold: 0 0 32px rgba(229, 184, 66, 0.2);
-  --shadow-glow-lime: 0 0 24px rgba(229, 184, 66, 0.2);
+  /* Elevation & materials live in src/styles/theme.css (single source of truth). */
 
   /* Radius Scale */
   --radius-sm: 0.5rem;   /* 8px */
@@ -111,8 +61,8 @@
 
 html,
 body {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
+  background-color: var(--et-canvas);
+  color: var(--et-text);
   min-height: 100%;
   width: 100%;
   max-width: 100vw;
@@ -133,7 +83,7 @@ html {
 
 /* ═══════════════════ ACCESSIBLE FOCUS RING ═══════════════════ */
 :focus-visible {
-  outline: 2px solid var(--color-gold);
+  outline: 2px solid var(--et-brand);
   outline-offset: 2px;
 }
 
@@ -218,11 +168,11 @@ h4 {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--et-scroll-thumb);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.22);
+  background: var(--et-scroll-thumb-hover);
 }
 
 /* ═══════════════════ MOTION PRIMITIVES ═══════════════════ */
@@ -242,17 +192,17 @@ h4 {
   from { transform: scale(0.97); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
-@keyframes pulseGoldGlow {
-  0% { box-shadow: 0 0 0 0 rgba(229, 184, 66, 0.35); }
-  70% { box-shadow: 0 0 0 8px rgba(229, 184, 66, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(229, 184, 66, 0); }
+@keyframes pulseAccentGlow {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 35%, transparent); }
+  70% { box-shadow: 0 0 0 8px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
 }
 
 .animate-fade-in { animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 .animate-slide-up { animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 .animate-slide-down { animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 .animate-scale-in { animation: scaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-pulse-gold { animation: pulseGoldGlow 2.5s infinite; }
+.animate-pulse-accent { animation: pulseAccentGlow 2.5s infinite; }
 
 /* Tactile Haptic Press */
 .btn-haptic {
@@ -267,122 +217,99 @@ h4 {
   transform: scale(0.98);
 }
 
-/* ═══════════════════ LUXURY FROSTED GLASS SURFACES ═══════════════════ */
+/* ═══════════════════ FROSTED GLASS SURFACES ═══════════════════
+   Every color resolves from theme.css tokens — no literals here. */
 .luxury-glass {
-  background: rgba(11, 15, 23, 0.72);
+  background: var(--et-glass-bg);
   backdrop-filter: blur(28px) saturate(190%);
   -webkit-backdrop-filter: blur(28px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--et-glass-line);
   box-shadow:
-    0 16px 40px -8px rgba(0, 0, 0, 0.7),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+    0 16px 40px -8px var(--et-shade-70),
+    inset 0 1px 0 0 var(--et-hi-12);
 }
 
 .luxury-glass-elevated {
-  background: rgba(16, 22, 33, 0.84);
+  background: var(--et-glass-bg-elevated);
   backdrop-filter: blur(36px) saturate(200%);
   -webkit-backdrop-filter: blur(36px) saturate(200%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--et-glass-line-3);
   box-shadow:
-    0 24px 60px -12px rgba(0, 0, 0, 0.85),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.18);
+    0 24px 60px -12px var(--et-shade-85),
+    inset 0 1px 0 0 var(--et-hi-18);
 }
 
-.luxury-card-gold {
-  background: linear-gradient(180deg, rgba(22, 28, 40, 0.82) 0%, rgba(10, 14, 22, 0.88) 100%);
-  backdrop-filter: blur(32px) saturate(190%);
-  -webkit-backdrop-filter: blur(32px) saturate(190%);
-  border: 1px solid rgba(229, 184, 66, 0.28);
-  box-shadow:
-    0 20px 48px -10px rgba(0, 0, 0, 0.8),
-    0 0 24px -4px rgba(229, 184, 66, 0.12),
-    inset 0 1px 0 0 rgba(245, 215, 127, 0.25);
+.luxury-spotlight-accent {
+  background: radial-gradient(
+    circle at 50% 20%,
+    color-mix(in srgb, var(--accent) 14%, transparent) 0%,
+    transparent 70%
+  );
 }
 
-.luxury-hairline {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.luxury-spotlight-gold {
-  background: radial-gradient(circle at 50% 20%, rgba(229, 184, 66, 0.14) 0%, rgba(5, 7, 11, 0) 70%);
-}
-
-.luxury-spotlight-top {
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.07) 0%, transparent 70%);
-}
-
-/* ═══════════════════ ZERO-SCROLL VIEWPORT SYSTEM ═══════════════════ */
-.zero-scroll-stage {
-  height: 100dvh;
-  max-height: 100dvh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
-
+/* ═══════════════════ TABULAR FIGURES ═══════════════════ */
 .tabular-nums {
   font-variant-numeric: tabular-nums lining-nums;
 }
 
-/* 3-Stop Luxury Gold Championship Button */
-.btn-gold-sheen {
-  background: linear-gradient(180deg, #F5D77F 0%, #E5B842 50%, #C99824 100%);
-  color: #05070b;
+/* Primary action button — 3-stop game accent gradient resolved from the
+   nearest [data-game] scope (falls back to brand outside any scope). */
+.btn-accent-sheen {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
   font-weight: 700;
   box-shadow:
-    0 8px 24px rgba(229, 184, 66, 0.28),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.65);
+    0 8px 24px var(--accent-glow),
+    inset 0 1px 0 0 var(--et-hi-65);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.btn-gold-sheen:hover {
+.btn-accent-sheen:hover {
   filter: brightness(1.08);
   box-shadow:
-    0 12px 28px rgba(229, 184, 66, 0.38),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+    0 12px 28px var(--accent-glow),
+    inset 0 1px 0 0 var(--et-hi-80);
 }
-.btn-gold-sheen:active {
+.btn-accent-sheen:active {
   transform: scale(0.98);
   filter: brightness(0.98);
 }
 
-/* Backwards compatibility for existing game surfaces */
+/* Game surfaces — token-driven, scope-aware. */
 .apple-glass-card {
-  background: rgba(11, 15, 23, 0.74);
+  background: var(--et-glass-bg-card);
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--et-glass-line-2);
   box-shadow:
-    0 12px 36px -8px rgba(0, 0, 0, 0.65),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.14);
+    0 12px 36px -8px var(--et-shade-65),
+    inset 0 1px 0 0 var(--et-hi-14);
 }
 
 .apple-glass-elevated {
-  background: rgba(16, 22, 33, 0.85);
+  background: var(--et-glass-bg-elevated-2);
   backdrop-filter: blur(32px) saturate(190%);
   -webkit-backdrop-filter: blur(32px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--et-glass-line-4);
   box-shadow:
-    0 24px 50px -12px rgba(0, 0, 0, 0.8),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    0 24px 50px -12px var(--et-shade-80),
+    inset 0 1px 0 0 var(--et-hi-20);
 }
 
 .apple-segmented-bar {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--et-seg-bg);
+  border: 1px solid var(--et-glass-line);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px var(--et-shade-30);
 }
 
 .apple-segmented-active {
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: var(--et-seg-active-bg);
+  border: 1px solid var(--et-seg-active-line);
   box-shadow:
-    0 4px 14px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.24);
-  color: #ffffff;
+    0 4px 14px var(--et-shade-40),
+    inset 0 1px 0 0 var(--et-hi-24);
+  color: var(--et-white);
 }
 
 .scrollbar-hidden {

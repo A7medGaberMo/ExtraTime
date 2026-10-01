@@ -77,17 +77,15 @@ export function SegmentedControl<T extends string | number>({
             onClick={() => onChange(option.value)}
             onKeyDown={(e) => handleKeyDown(e, index)}
             className={cn(
-              'btn-haptic flex flex-col items-center justify-center rounded-xl text-center transition-all duration-200 cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-gold/60',
+              'btn-haptic flex flex-col items-center justify-center rounded-xl text-center transition-all duration-200 cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-game-accent/60',
               size === 'sm' && 'min-h-[28px] sm:min-h-[32px] p-1 sm:p-1.5 text-[10.5px] sm:text-xs',
               size === 'md' && 'min-h-[36px] sm:min-h-[40px] p-1.5 sm:p-2 text-xs sm:text-sm',
               size === 'lg' && 'min-h-[44px] sm:min-h-[48px] p-2 sm:p-2.5 text-sm sm:text-base font-bold',
               selected
-                ? activeVariant === 'gold'
-                  ? 'border border-gold/40 bg-gradient-to-b from-[#F5D77F] via-[#E5B842] to-[#C99824] text-slate-950 font-bold shadow-[0_4px_14px_rgba(229,184,66,0.3),inset_0_1px_0_0_rgba(255,255,255,0.6)]'
-                  : activeVariant === 'lime'
-                    ? 'border border-gold/40 bg-gradient-to-b from-[#F5D77F] via-[#E5B842] to-[#C99824] text-slate-950 font-bold shadow-[0_4px_14px_rgba(229,184,66,0.3),inset_0_1px_0_0_rgba(255,255,255,0.6)]'
-                    : 'border border-white/16 bg-white/[0.14] text-white font-semibold shadow-[0_4px_14px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.22)]'
-                : 'border border-transparent text-steel hover:bg-white/[0.04] hover:text-white',
+                ? activeVariant === 'gold' || activeVariant === 'lime'
+                  ? 'border border-game-accent/40 bg-gradient-to-b from-game-accent-light via-game-accent to-game-accent-deep text-game-on-accent font-bold shadow-[0_4px_14px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-60)]'
+                  : 'border border-white/16 bg-white/[0.14] text-foreground font-semibold shadow-[0_4px_14px_var(--et-shade-40),inset_0_1px_0_0_var(--et-hi-22)]'
+                : 'border border-transparent text-muted hover:bg-white/[0.04] hover:text-foreground',
             )}
           >
             {option.icon && (
@@ -96,10 +94,10 @@ export function SegmentedControl<T extends string | number>({
                   'shrink-0',
                   size === 'sm' ? 'mb-0 sm:mb-0.5' : 'mb-0.5',
                   selected && (activeVariant === 'gold' || activeVariant === 'lime')
-                    ? 'text-slate-950'
+                    ? 'text-game-on-accent'
                     : selected
-                      ? 'text-white'
-                      : 'text-steel',
+                      ? 'text-foreground'
+                      : 'text-muted',
                 )}
               >
                 {option.icon}
@@ -113,9 +111,9 @@ export function SegmentedControl<T extends string | number>({
                 className={cn(
                   'w-full truncate text-[9px] sm:text-[10px] font-normal tracking-normal mt-0.5',
                   selected && (activeVariant === 'gold' || activeVariant === 'lime')
-                    ? 'text-slate-900 font-semibold'
+                    ? 'text-game-on-accent/90 font-semibold'
                     : selected
-                      ? 'text-slate-300'
+                      ? 'text-white/80'
                       : 'text-muted',
                 )}
               >

@@ -102,10 +102,10 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
       title={t('lobby.title')}
       subtitle={t('lobby.subtitle')}
       badge={
-        <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold-light shadow-sm backdrop-blur-xl">
+        <div className="inline-flex items-center gap-1.5 rounded-full border border-game-accent/30 bg-game-accent/10 px-3 py-1 text-xs font-semibold text-game-accent-light shadow-sm backdrop-blur-xl">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-game-accent opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-game-accent" />
           </span>
           <span className="font-stats tracking-wider uppercase text-[11px] font-bold">
             {guestReady ? 'Lobby Ready' : 'Radar Beacon Active'}
@@ -117,14 +117,14 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
     >
       <div className="relative space-y-4">
         {/* ── 1. ROOM CODE HERO BAR ────────────────────────────────────── */}
-        <div className="luxury-glass-elevated relative z-10 p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border border-gold/25 rounded-3xl shadow-xl">
+        <div className="luxury-glass-elevated relative z-10 p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 border border-game-accent/25 rounded-3xl shadow-xl">
           <div className="space-y-1 text-center sm:text-start">
             <div className="flex items-center justify-center sm:justify-start gap-2">
-              <span className="text-gold text-[10px] font-bold tracking-widest uppercase font-stats">
+              <span className="text-game-accent text-[10px] font-bold tracking-widest uppercase font-stats">
                 {t('lobby.roomCode')}
               </span>
-              <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
-              <span className="text-[10px] text-steel font-medium">Share to challenge</span>
+              <span className="h-1.5 w-1.5 rounded-full bg-game-accent animate-pulse" />
+              <span className="text-[10px] text-muted font-medium">Share to challenge</span>
             </div>
             <p className="font-stats text-white text-3xl sm:text-5xl tracking-[0.24em] font-bold">
               {roomCode}
@@ -135,7 +135,7 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
             variant="secondary"
             size="lg"
             onClick={copyCode}
-            leftIcon={<AppIcon icon={copied ? Check : Copy} size={17} weight="bold" className={copied ? 'text-gold' : ''} />}
+            leftIcon={<AppIcon icon={copied ? Check : Copy} size={17} weight="bold" className={copied ? 'text-game-accent' : ''} />}
             className="rounded-2xl border-white/12 h-11 text-xs font-bold"
           >
             {copied ? t('common.copied') : t('common.copy')}
@@ -146,29 +146,29 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
         <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 relative z-10">
           <div className="luxury-glass rounded-2xl p-3.5 text-center sm:text-start space-y-1">
             <div className="flex items-center justify-center sm:justify-start gap-1.5">
-              <AppIcon icon={Users} size={15} weight="duotone" className="text-gold" />
-              <p className="text-steel text-[10px] font-bold uppercase tracking-wider font-stats">{t('lobby.playersCount')}</p>
+              <AppIcon icon={Users} size={15} weight="duotone" className="text-game-accent" />
+              <p className="text-muted text-[10px] font-bold uppercase tracking-wider font-stats">{t('lobby.playersCount')}</p>
             </div>
             <p className="font-stats text-xl sm:text-2xl font-bold text-white">{guestReady ? '2/2' : '1/2'}</p>
           </div>
 
           <div className="luxury-glass rounded-2xl p-3.5 text-center sm:text-start space-y-1">
             <div className="flex items-center justify-center sm:justify-start gap-1.5">
-              <AppIcon icon={Coins} size={15} weight="duotone" className="text-gold" />
-              <p className="text-steel text-[10px] font-bold uppercase tracking-wider font-stats">{t('lobby.budget')}</p>
+              <AppIcon icon={Coins} size={15} weight="duotone" className="text-game-accent" />
+              <p className="text-muted text-[10px] font-bold uppercase tracking-wider font-stats">{t('lobby.budget')}</p>
             </div>
-            <p className="font-stats text-xl sm:text-2xl font-bold text-gold-light">
+            <p className="font-stats text-xl sm:text-2xl font-bold text-game-accent-light">
               ${room?.settings?.startingBudget || 100}M
             </p>
           </div>
 
           <div className="luxury-glass rounded-2xl p-3.5 text-center sm:text-start space-y-1">
             <div className="flex items-center justify-center sm:justify-start gap-1.5">
-              <AppIcon icon={Crosshair} size={15} weight="duotone" className="text-gold" />
-              <p className="text-steel text-[10px] font-bold uppercase tracking-wider font-stats">{t('lobby.squadSize')}</p>
+              <AppIcon icon={Crosshair} size={15} weight="duotone" className="text-game-accent" />
+              <p className="text-muted text-[10px] font-bold uppercase tracking-wider font-stats">{t('lobby.squadSize')}</p>
             </div>
             <p className="font-stats text-xl sm:text-2xl font-bold text-white">
-              {room?.settings?.matchSize || 11} <span className="text-xs text-steel font-normal">{t('common.rounds')}</span>
+              {room?.settings?.matchSize || 11} <span className="text-xs text-muted font-normal">{t('common.rounds')}</span>
             </p>
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
           <div className="luxury-glass-elevated p-4 sm:p-5 space-y-4 rounded-3xl">
             <div className="flex items-center justify-between border-b border-white/8 pb-3">
               <h2 className="flex items-center gap-2 text-sm font-bold text-white uppercase font-display">
-                <AppIcon icon={Users} size={17} weight="duotone" className="text-gold" />
+                <AppIcon icon={Users} size={17} weight="duotone" className="text-game-accent" />
                 <span>{t('lobby.playersCount')}</span>
               </h2>
               <StatPill
@@ -191,7 +191,7 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-0.5">
               {/* Host */}
-              <div className="luxury-glass p-3.5 rounded-2xl border border-gold/30 space-y-2">
+              <div className="luxury-glass p-3.5 rounded-2xl border border-game-accent/30 space-y-2">
                 <UserIdentity
                   nickname={state?.hostName || (isHost ? 'You' : 'Host')}
                   subtitle={t('lobby.hostSub')}
@@ -207,7 +207,7 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
 
               {/* Challenger */}
               {guestReady ? (
-                <div className="luxury-glass p-3.5 rounded-2xl border border-sky-400/30 space-y-2">
+                <div className="luxury-glass p-3.5 rounded-2xl border border-info/30 space-y-2">
                   <UserIdentity
                     nickname={state?.guestName || (!isHost ? 'You' : 'Challenger')}
                     subtitle={t('lobby.guestSub')}
@@ -221,14 +221,14 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
                 </div>
               ) : (
                 <div className="luxury-glass relative flex min-h-[120px] flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-white/15 p-4 text-center">
-                  <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-white/5 border border-white/10 text-gold">
+                  <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-white/5 border border-white/10 text-game-accent">
                     <AppIcon icon={Clock} size={18} weight="duotone" />
                   </div>
                   <div className="space-y-0.5">
                     <p className="text-xs font-bold text-white uppercase font-stats">
                       {t('lobby.waitingOpponent')}
                     </p>
-                    <p className="text-steel text-[10px]">
+                    <p className="text-muted text-[10px]">
                       {t('lobby.shareCodePrompt', { code: roomCode })}
                     </p>
                   </div>
@@ -240,22 +240,22 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
           {/* Action Sidebar */}
           <aside className="space-y-3">
             <div className="luxury-glass p-3.5 space-y-3 rounded-2xl">
-              <h3 className="flex items-center gap-2 text-xs font-bold text-steel tracking-widest uppercase font-stats">
-                <AppIcon icon={SlidersHorizontal} size={15} weight="duotone" className="text-gold" />
+              <h3 className="flex items-center gap-2 text-xs font-bold text-muted tracking-widest uppercase font-stats">
+                <AppIcon icon={SlidersHorizontal} size={15} weight="duotone" className="text-game-accent" />
                 <span>{t('lobby.rulesTitle')}</span>
               </h3>
 
               <div className="space-y-2 text-xs">
                 <div className="flex items-center justify-between border-b border-white/8 pb-1.5">
-                  <span className="text-steel">{t('lobby.mode')}</span>
+                  <span className="text-muted">{t('lobby.mode')}</span>
                   <span className="font-bold text-white uppercase font-stats">Snipe</span>
                 </div>
                 <div className="flex items-center justify-between border-b border-white/8 pb-1.5">
-                  <span className="text-steel">{t('createRoom.playerPool')}</span>
+                  <span className="text-muted">{t('createRoom.playerPool')}</span>
                   <span className="font-bold text-white uppercase font-stats">{room?.settings?.poolMode || 'GLOBAL'}</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-steel">{t('lobby.turnTimer')}</span>
+                  <span className="text-muted">{t('lobby.turnTimer')}</span>
                   <span className="font-bold text-white font-stats">30s</span>
                 </div>
               </div>
@@ -266,8 +266,8 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
               size="lg"
               fullWidth
               onClick={() => router.push(`/auction/${roomId}`)}
-              leftIcon={<AppIcon icon={Crosshair} size={18} weight="bold" className="text-slate-950" />}
-              rightIcon={<AppIcon icon={ArrowRight} size={16} weight="bold" className="text-slate-950 rtl:rotate-180" />}
+              leftIcon={<AppIcon icon={Crosshair} size={18} weight="bold" className="text-game-on-accent" />}
+              rightIcon={<AppIcon icon={ArrowRight} size={16} weight="bold" className="text-game-on-accent rtl:rotate-180" />}
               className="rounded-2xl font-bold h-12 text-sm"
             >
               {t('lobby.enterArena')}
@@ -279,8 +279,8 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
               fullWidth
               onClick={handleLeaveOrCancel}
               loading={isLeaving}
-              leftIcon={<AppIcon icon={SignOut} size={16} weight="bold" className="text-rose-400" />}
-              className="rounded-xl h-10 text-xs font-semibold border-rose-500/30 text-rose-300 hover:bg-rose-500/10"
+              leftIcon={<AppIcon icon={SignOut} size={16} weight="bold" className="text-danger" />}
+              className="rounded-xl h-10 text-xs font-semibold border-danger/30 text-danger hover:bg-danger/10"
             >
               {isHost ? (lang === 'ar' ? 'إلغاء الغرفة' : 'Cancel Room') : (lang === 'ar' ? 'مغادرة الغرفة' : 'Leave Room')}
             </Button>

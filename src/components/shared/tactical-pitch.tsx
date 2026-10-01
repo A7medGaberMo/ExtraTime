@@ -342,7 +342,7 @@ export function TacticalPitch({
       <div
         style={scale ? { transform: `scale(${scale})`, transformOrigin: 'top center' } : undefined}
         className={cn(
-          'relative aspect-[3/3.85] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-gold/25 bg-gradient-to-b from-[#080d16] via-[#05080e] to-[#020306] p-1.5 sm:p-2.5 shadow-[0_12px_36px_rgba(0,0,0,0.85),inset_0_1px_1px_0_rgba(255,255,255,0.1)]',
+          'relative aspect-[3/3.85] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-game-accent/25 bg-gradient-to-b from-[var(--et-pitch-from)] via-[var(--et-pitch-via)] to-[var(--et-pitch-to)] p-1.5 sm:p-2.5 shadow-[0_12px_36px_var(--et-shade-85),inset_0_1px_1px_0_var(--et-hi-10)]',
           fillContainer
             ? 'max-w-full h-full'
             : compact
@@ -351,7 +351,7 @@ export function TacticalPitch({
         )}
       >
         {/* Subtle Pitch Gold Stadium Turf Glow */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(229,184,66,0.08)_0%,transparent_75%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--game-glow)_0%,transparent_75%)]" />
 
         {/* Specular White Field Markings (Center Circle, Penalty Boxes, Halfway Line) */}
         <div className="pointer-events-none absolute inset-0">
@@ -388,7 +388,7 @@ export function TacticalPitch({
                 y1={`${coordFrom.y}%`}
                 x2={`${coordTo.x}%`}
                 y2={`${coordTo.y}%`}
-                stroke="rgba(255, 255, 255, 0.12)"
+                stroke="var(--et-hi-12)"
                 strokeWidth="1.2"
                 strokeDasharray="3 3"
                 strokeLinecap="round"
@@ -429,15 +429,15 @@ export function TacticalPitch({
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ type: 'spring', stiffness: 450, damping: 25 }}
                   onClick={() => onSelectSlot?.(expectedPos, slotIndex)}
-                  className="group relative flex flex-col items-center justify-between rounded-xl sm:rounded-2xl border border-white/20 bg-slate-950/90 p-1 shadow-[0_4px_16px_rgba(0,0,0,0.7)] backdrop-blur-xl w-[44px] h-[64px] sm:w-[54px] sm:h-[76px] transition-all hover:scale-105 cursor-pointer"
+                  className="group relative flex flex-col items-center justify-between rounded-xl sm:rounded-2xl border border-white/20 bg-canvas/90 p-1 shadow-[0_4px_16px_var(--et-shade-70)] backdrop-blur-xl w-[44px] h-[64px] sm:w-[54px] sm:h-[76px] transition-all hover:scale-105 cursor-pointer"
                   style={{
-                    borderColor: tierStyle ? `${tierStyle.accent}60` : 'rgba(255,255,255,0.2)',
+                    borderColor: tierStyle ? `${tierStyle.accent}60` : 'var(--et-hi-20)',
                     boxShadow: tierStyle ? `0 0 12px ${tierStyle.glow}` : undefined,
                   }}
                   title={`${player.name} (${expectedPos}) - ${cost !== undefined ? `$${cost}M` : player.rating ? `${player.rating} OVR` : ''}`}
                 >
                   {/* Top Avatar Ring */}
-                  <div className="relative flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-white/20 bg-slate-900 shadow-sm mt-0.5">
+                  <div className="relative flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-white/20 bg-surface shadow-sm mt-0.5">
                     <PlayerImage
                       imageUrl={player.imageUrl}
                       name={player.name}
@@ -445,7 +445,7 @@ export function TacticalPitch({
                       size={32}
                     />
                     {/* Position Mini-Badge */}
-                    <span className="absolute bottom-0 right-0 rounded-full bg-slate-950/95 px-1 text-[5px] sm:text-[6px] font-black uppercase text-steel font-stats border border-white/20 leading-none">
+                    <span className="absolute bottom-0 right-0 rounded-full bg-canvas/95 px-1 text-[5px] sm:text-[6px] font-black uppercase text-muted font-stats border border-white/20 leading-none">
                       {expectedPos}
                     </span>
                   </div>
@@ -458,15 +458,15 @@ export function TacticalPitch({
                   {/* Transfer Price Badge (or Rating if no price) */}
                   <div className="flex w-full items-center justify-center">
                     {cost !== undefined ? (
-                      <span className="font-stats font-black text-gold bg-gold/15 border border-gold/40 px-1.5 py-[1px] rounded-full text-[6.5px] sm:text-[8px] leading-none shadow-[0_0_6px_rgba(229,184,66,0.3)]">
+                      <span className="font-stats font-black text-game-accent bg-game-accent/15 border border-game-accent/40 px-1.5 py-[1px] rounded-full text-[6.5px] sm:text-[8px] leading-none shadow-[0_0_6px_var(--game-glow)]">
                         ${cost}M
                       </span>
                     ) : player.rating ? (
-                      <span className="font-stats font-black text-amber-400 bg-amber-400/15 border border-amber-400/40 px-1.5 py-[1px] rounded-full text-[6.5px] sm:text-[8px] leading-none">
+                      <span className="font-stats font-black text-tier-gold bg-tier-gold/15 border border-tier-gold/40 px-1.5 py-[1px] rounded-full text-[6.5px] sm:text-[8px] leading-none">
                         {player.rating}
                       </span>
                     ) : (
-                      <span className="font-stats font-black text-steel bg-white/10 px-1 rounded text-[6px] leading-none">
+                      <span className="font-stats font-black text-muted bg-white/10 px-1 rounded text-[6px] leading-none">
                         <AppIcon icon={Check} size={8} weight="bold" />
                       </span>
                     )}
@@ -481,20 +481,20 @@ export function TacticalPitch({
                   className={cn(
                     'group relative flex flex-col items-center justify-center rounded-xl sm:rounded-2xl transition-all w-[44px] h-[64px] sm:w-[54px] sm:h-[76px] select-none cursor-pointer',
                     isTargetActive
-                      ? 'border-2 border-gold bg-gold/15 text-gold shadow-[0_0_20px_rgba(229,184,66,0.7),inset_0_1px_0_0_rgba(255,255,255,0.3)] scale-105 z-20 animate-pulse'
-                      : 'border border-dashed border-white/15 bg-slate-950/60 text-steel hover:border-gold/50 hover:bg-slate-900/80 hover:text-white backdrop-blur-md z-10',
+                      ? 'border-2 border-game-accent bg-game-accent/15 text-game-accent shadow-[0_0_20px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-30)] scale-105 z-20 animate-pulse'
+                      : 'border border-dashed border-white/15 bg-canvas/60 text-muted hover:border-game-accent/50 hover:bg-surface/80 hover:text-white backdrop-blur-md z-10',
                   )}
                   title={isTargetActive ? `Current Target: ${expectedPos}` : `Empty ${expectedPos}`}
                 >
                   {isTargetActive ? (
                     <div className="flex flex-col items-center gap-1 p-1 text-center">
-                      <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-gold/25 text-gold animate-bounce border border-gold/50">
+                      <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-game-accent/25 text-game-accent animate-bounce border border-game-accent/50">
                         <AppIcon icon={Plus} size={14} weight="bold" />
                       </span>
-                      <span className="text-[7.5px] sm:text-[9px] font-black tracking-wider text-gold uppercase drop-shadow-sm font-stats">
+                      <span className="text-[7.5px] sm:text-[9px] font-black tracking-wider text-game-accent uppercase drop-shadow-sm font-stats">
                         {expectedPos}
                       </span>
-                      <span className="text-[5.5px] sm:text-[6.5px] font-black uppercase tracking-widest text-gold/80 leading-none">
+                      <span className="text-[5.5px] sm:text-[6.5px] font-black uppercase tracking-widest text-game-accent/80 leading-none">
                         LIVE
                       </span>
                     </div>
@@ -506,7 +506,7 @@ export function TacticalPitch({
                         weight="bold"
                         className="opacity-50 group-hover:opacity-100 transition-opacity"
                       />
-                      <span className="text-[7px] sm:text-[8.5px] font-extrabold tracking-wider uppercase text-steel group-hover:text-gold transition-colors font-stats">
+                      <span className="text-[7px] sm:text-[8.5px] font-extrabold tracking-wider uppercase text-muted group-hover:text-game-accent transition-colors font-stats">
                         {expectedPos}
                       </span>
                     </div>

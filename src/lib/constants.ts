@@ -19,14 +19,67 @@ export const TIER_CONFIG: Record<
   Tier,
   { label: string; color: string; gradient: [string, string] }
 > = {
-  ICON: { label: 'Icon', color: '#D4AF37', gradient: ['#F7F5EF', '#D4AF37'] },
-  HERO: { label: 'Hero', color: '#10B981', gradient: ['#10B981', '#059669'] },
-  ULTIMATE: { label: 'Ultimate', color: '#0EA5E9', gradient: ['#0EA5E9', '#0369A1'] },
-  MASTER: { label: 'Master', color: '#A855F7', gradient: ['#A855F7', '#7C3AED'] },
-  ELITE: { label: 'Elite', color: '#E11D48', gradient: ['#E11D48', '#881337'] },
-  GOLD: { label: 'Gold', color: '#EAB308', gradient: ['#EAB308', '#CA8A04'] },
-  SILVER: { label: 'Silver', color: '#CBD5E1', gradient: ['#CBD5E1', '#64748B'] },
-  BRONZE: { label: 'Bronze', color: '#C97A3A', gradient: ['#C97A3A', '#A0522D'] },
+  ICON: {
+    label: 'Icon',
+    color: 'var(--et-tier-icon)',
+    gradient: ['var(--et-white)', 'var(--et-tier-icon)'],
+  },
+  HERO: {
+    label: 'Hero',
+    color: 'var(--et-tier-hero)',
+    gradient: [
+      'var(--et-tier-hero)',
+      'color-mix(in srgb, var(--et-tier-hero) 70%, var(--et-canvas))',
+    ],
+  },
+  ULTIMATE: {
+    label: 'Ultimate',
+    color: 'var(--et-tier-ultimate)',
+    gradient: [
+      'var(--et-tier-ultimate)',
+      'color-mix(in srgb, var(--et-tier-ultimate) 70%, var(--et-canvas))',
+    ],
+  },
+  MASTER: {
+    label: 'Master',
+    color: 'var(--et-tier-master)',
+    gradient: [
+      'var(--et-tier-master)',
+      'color-mix(in srgb, var(--et-tier-master) 70%, var(--et-canvas))',
+    ],
+  },
+  ELITE: {
+    label: 'Elite',
+    color: 'var(--et-tier-elite)',
+    gradient: [
+      'var(--et-tier-elite)',
+      'color-mix(in srgb, var(--et-tier-elite) 70%, var(--et-canvas))',
+    ],
+  },
+  GOLD: {
+    label: 'Gold',
+    color: 'var(--et-tier-gold)',
+    gradient: [
+      'var(--et-tier-gold)',
+      'color-mix(in srgb, var(--et-tier-gold) 70%, var(--et-canvas))',
+    ],
+  },
+  SILVER: {
+    label: 'Silver',
+    color: 'var(--et-tier-silver)',
+    gradient: [
+      'var(--et-tier-silver)',
+      'color-mix(in srgb, var(--et-tier-silver) 70%, var(--et-canvas))',
+    ],
+  },
+  BRONZE: {
+    label: 'Bronze',
+    color: 'var(--et-tier-bronze)',
+    gradient: [
+      'var(--et-tier-bronze)',
+      'color-mix(in srgb, var(--et-tier-bronze) 70%, var(--et-canvas))',
+    ],
+  },
 };
 
 /** Ordered tiers from highest to lowest */
@@ -75,11 +128,6 @@ export const GAME_TYPE_CONFIG: Record<
     description: 'Outbid your opponent in a secret bid auction to build the ultimate squad.',
     icon: '🎯',
   },
-  pack_opening_duel: {
-    label: 'Pack Duel',
-    description: 'Open packs simultaneously and battle with your drawn players.',
-    icon: '📦',
-  },
   penalty_shootout: {
     label: 'Penalty Shootout',
     description: 'High-stakes penalty kicks to decide the winner.',
@@ -101,9 +149,9 @@ export const GAME_TYPE_CONFIG: Record<
 // Room status display
 // ---------------------------------------------------------------------------
 export const ROOM_STATUS_CONFIG: Record<RoomStatus, { label: string; color: string }> = {
-  waiting: { label: 'Waiting', color: 'text-gold' },
-  ready: { label: 'Ready', color: 'text-blue-400' },
-  in_progress: { label: 'In Progress', color: 'text-amber-400' },
-  completed: { label: 'Completed', color: 'text-slate-400' },
-  abandoned: { label: 'Abandoned', color: 'text-red-400' },
+  waiting: { label: 'Waiting', color: 'text-game-accent' },
+  ready: { label: 'Ready', color: 'text-info' },
+  in_progress: { label: 'In Progress', color: 'text-warning' },
+  completed: { label: 'Completed', color: 'text-muted' },
+  abandoned: { label: 'Abandoned', color: 'text-danger' },
 };

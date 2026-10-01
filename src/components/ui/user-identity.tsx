@@ -20,15 +20,17 @@ export interface UserIdentityProps extends React.HTMLAttributes<HTMLDivElement> 
   className?: string;
 }
 
-// Generate rich consistent sport avatar colors from nickname seed
+// Generate rich consistent sport avatar colors from nickname seed.
+// Palette colors live in theme.css (--color-avatar-*), so components stay
+// free of hard-coded palette classes.
 function getAvatarColors(seed: string): { bg: string; border: string; text: string } {
   const palettes = [
-    { bg: 'from-gold/30 to-slate-900', border: 'border-gold/50', text: 'text-gold' },
-    { bg: 'from-sky-500/30 to-slate-900', border: 'border-sky-400/50', text: 'text-sky-300' },
-    { bg: 'from-amber-500/30 to-slate-900', border: 'border-amber-400/50', text: 'text-amber-300' },
-    { bg: 'from-purple-500/30 to-slate-900', border: 'border-purple-400/50', text: 'text-purple-300' },
-    { bg: 'from-rose-500/30 to-slate-900', border: 'border-rose-400/50', text: 'text-rose-300' },
-    { bg: 'from-emerald-500/30 to-slate-900', border: 'border-emerald-400/50', text: 'text-emerald-300' },
+    { bg: 'from-avatar-1/30 to-surface', border: 'border-avatar-1/50', text: 'text-avatar-1-light' },
+    { bg: 'from-avatar-2/30 to-surface', border: 'border-avatar-2/50', text: 'text-avatar-2-light' },
+    { bg: 'from-avatar-3/30 to-surface', border: 'border-avatar-3/50', text: 'text-avatar-3-light' },
+    { bg: 'from-avatar-4/30 to-surface', border: 'border-avatar-4/50', text: 'text-avatar-4-light' },
+    { bg: 'from-avatar-5/30 to-surface', border: 'border-avatar-5/50', text: 'text-avatar-5-light' },
+    { bg: 'from-avatar-6/30 to-surface', border: 'border-avatar-6/50', text: 'text-avatar-6-light' },
   ];
 
   let hash = 0;
@@ -108,7 +110,7 @@ export function UserIdentity({
 
         {isHost && (
           <div
-            className="absolute -top-1.5 -end-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-amber-400 text-slate-950 shadow-sm"
+            className="absolute -top-1.5 -end-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-brand text-canvas shadow-sm"
             title="Host"
           >
             <AppIcon icon={Crown} size={10} weight="fill" />
@@ -117,7 +119,7 @@ export function UserIdentity({
 
         {isWinner && (
           <div
-            className="absolute -bottom-1 -end-1 flex h-4 w-4 items-center justify-center rounded-full bg-gold text-slate-950 shadow-sm"
+            className="absolute -bottom-1 -end-1 flex h-4 w-4 items-center justify-center rounded-full bg-brand text-canvas shadow-sm"
             title="Winner"
           >
             <AppIcon icon={ShieldCheck} size={11} weight="fill" />
@@ -137,7 +139,7 @@ export function UserIdentity({
             )}
           </div>
           {subtitle && (
-            <span className={cn('text-steel font-medium truncate mt-0.5', sizeMap.sub)}>
+            <span className={cn('text-muted font-medium truncate mt-0.5', sizeMap.sub)}>
               {subtitle}
             </span>
           )}

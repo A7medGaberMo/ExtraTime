@@ -125,13 +125,13 @@ export function DraftPitchBoard({
   };
 
   return (
-    <div className="apple-glass-card relative flex-1 min-h-0 w-full overflow-hidden rounded-2xl sm:rounded-3xl p-1.5 sm:p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.7)] backdrop-blur-2xl flex flex-col justify-between border border-white/15">
+    <div className="apple-glass-card relative flex-1 min-h-0 w-full overflow-hidden rounded-2xl sm:rounded-3xl p-1.5 sm:p-2.5 shadow-[0_20px_50px_var(--et-shade-70)] backdrop-blur-2xl flex flex-col justify-between border border-white/15">
       {/* Pitch Stadium Container - strictly bounded by available height to guarantee zero scroll */}
-      <div className="relative aspect-[3/3.8] min-h-0 flex-1 w-auto max-w-full rounded-xl sm:rounded-2xl border border-white/12 bg-gradient-to-b from-[#03130A] via-[#072414] to-[#03130A] overflow-hidden shadow-inner mx-auto">
+      <div className="relative aspect-[3/3.8] min-h-0 flex-1 w-auto max-w-full rounded-xl sm:rounded-2xl border border-white/12 bg-gradient-to-b from-[var(--et-pitch-green-from)] via-[var(--et-pitch-green-via)] to-[var(--et-pitch-green-to)] overflow-hidden shadow-inner mx-auto">
         {/* Apple Dynamic Stadium Floodlight Ambient Glows */}
-        <div className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 h-44 w-80 rounded-full bg-emerald-400/12 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 left-1/2 -translate-x-1/2 h-44 w-80 rounded-full bg-emerald-400/12 blur-3xl" />
-        <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-52 w-52 rounded-full bg-cyan-400/8 blur-3xl" />
+        <div className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 h-44 w-80 rounded-full bg-game-accent/12 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-20 left-1/2 -translate-x-1/2 h-44 w-80 rounded-full bg-game-accent/12 blur-3xl" />
+        <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-52 w-52 rounded-full bg-game-accent/8 blur-3xl" />
 
         {/* Pitch Lines (Laser-Etched Specular White) */}
         <div className="pointer-events-none absolute inset-0">
@@ -161,10 +161,10 @@ export function DraftPitchBoard({
         >
           <defs>
             <filter id="linkGlow" x="-30%" y="-30%" width="160%" height="160%">
-              <feDropShadow dx="0" dy="0" stdDeviation="3" floodColor="#10B981" floodOpacity="0.8" />
+              <feDropShadow dx="0" dy="0" stdDeviation="3" floodColor="var(--et-success)" floodOpacity="0.8" />
             </filter>
             <filter id="linkGlowAmber" x="-30%" y="-30%" width="160%" height="160%">
-              <feDropShadow dx="0" dy="0" stdDeviation="2.5" floodColor="#F59E0B" floodOpacity="0.7" />
+              <feDropShadow dx="0" dy="0" stdDeviation="2.5" floodColor="var(--et-warning)" floodOpacity="0.7" />
             </filter>
           </defs>
 
@@ -256,25 +256,25 @@ export function DraftPitchBoard({
                   <div
                     className={`relative flex flex-col items-center justify-center rounded-xl sm:rounded-2xl transition-all w-[46px] h-[70px] sm:w-[56px] sm:h-[84px] md:w-[62px] md:h-[94px] ${
                       isSlotActive
-                        ? 'border-2 border-cyan-400 bg-cyan-950/80 text-cyan-300 shadow-[0_0_24px_rgba(0,240,255,0.7),inset_0_1px_0_0_rgba(255,255,255,0.35)] ring-1 ring-cyan-300'
-                        : 'border border-white/15 bg-white/[0.05] text-slate-400 backdrop-blur-md shadow-inner'
+                        ? 'border-2 border-game-accent bg-game-accent/20 text-game-accent-light shadow-[0_0_24px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-35)] ring-1 ring-game-accent-light'
+                        : 'border border-white/15 bg-white/[0.05] text-muted backdrop-blur-md shadow-inner'
                     }`}
                   >
                     {isSlotActive ? (
                       <div className="flex flex-col items-center gap-1.5 p-1">
-                        <span className="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-cyan-400/20 text-cyan-300 animate-pulse border border-cyan-400/40 shadow-sm">
+                        <span className="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-game-accent/20 text-game-accent-light animate-pulse border border-game-accent/40 shadow-sm">
                           <AppIcon icon={Plus} size={16} weight="bold" />
                         </span>
-                        <span className="text-[8.5px] sm:text-[10px] font-black tracking-wider text-cyan-300 uppercase drop-shadow-sm">
+                        <span className="text-[8.5px] sm:text-[10px] font-black tracking-wider text-game-accent-light uppercase drop-shadow-sm">
                           {slot?.position || 'POS'}
                         </span>
                       </div>
                     ) : (
                       <div className="flex flex-col items-center gap-1 p-1">
                         <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-white/[0.06] border border-white/10">
-                          <AppIcon icon={Plus} size={14} weight="bold" className="opacity-40 text-slate-500" />
+                          <AppIcon icon={Plus} size={14} weight="bold" className="opacity-40 text-muted" />
                         </span>
-                        <span className="text-[9px] sm:text-[10px] font-extrabold tracking-tight uppercase text-slate-500">
+                        <span className="text-[9px] sm:text-[10px] font-extrabold tracking-tight uppercase text-muted">
                           {slot?.position || 'POS'}
                         </span>
                       </div>
@@ -288,17 +288,17 @@ export function DraftPitchBoard({
       </div>
 
       {/* ── FOOTER STATUS / INSTRUCTIONS PILL ───────────────────── */}
-      <footer className="mt-1 flex items-center justify-between gap-1.5 sm:gap-2 px-1 text-micro text-slate-400 shrink-0 min-w-0">
+      <footer className="mt-1 flex items-center justify-between gap-1.5 sm:gap-2 px-1 text-micro text-muted shrink-0 min-w-0">
         <div className="flex items-center gap-2 shrink-0">
-          <span className="rounded-full border border-cyan-400/30 bg-cyan-950/60 px-2.5 py-0.5 text-micro font-black tracking-wider text-cyan-300 whitespace-nowrap shrink-0 shadow-sm">
+          <span className="rounded-full border border-game-accent/30 bg-game-accent/15 px-2.5 py-0.5 text-micro font-black tracking-wider text-game-accent-light whitespace-nowrap shrink-0 shadow-sm">
             {formation}
           </span>
           <span className="hidden sm:inline text-white/15">|</span>
-          <span className="hidden sm:inline text-slate-400 font-medium whitespace-nowrap">{t('draft.startingXI')}</span>
+          <span className="hidden sm:inline text-muted font-medium whitespace-nowrap">{t('draft.startingXI')}</span>
         </div>
 
         {isSwappingPhase ? (
-          <div className="flex items-center gap-1.5 font-bold text-cyan-400 animate-pulse truncate min-w-0 text-[10px] sm:text-xs">
+          <div className="flex items-center gap-1.5 font-bold text-game-accent animate-pulse truncate min-w-0 text-[10px] sm:text-xs">
             <AppIcon icon={ArrowsClockwise} size={13} weight="bold" className="shrink-0" />
             <span className="truncate">
               {selectedSlotIndex !== null
@@ -307,7 +307,7 @@ export function DraftPitchBoard({
             </span>
           </div>
         ) : (
-          <span className="inline-flex items-center gap-1.5 text-cyan-400 font-medium truncate min-w-0 text-[10px] sm:text-xs">
+          <span className="inline-flex items-center gap-1.5 text-game-accent font-medium truncate min-w-0 text-[10px] sm:text-xs">
             <AppIcon icon={Lightning} size={12} weight="fill" className="shrink-0" />
             <span className="truncate">{t('draft.tapEmptySlot')}</span>
           </span>

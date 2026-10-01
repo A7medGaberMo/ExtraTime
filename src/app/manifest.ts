@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { ET_CANVAS } from '@/config/theme';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -8,8 +9,8 @@ export default function manifest(): MetadataRoute.Manifest {
       'Draft legendary football icons in real-time Snipe auctions and compete in official Rank trivia duels.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#060a12',
-    theme_color: '#e5b842',
+    background_color: ET_CANVAS,
+    theme_color: ET_CANVAS,
     icons: [
       {
         src: '/ETIcon.png',

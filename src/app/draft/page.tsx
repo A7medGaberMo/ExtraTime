@@ -109,17 +109,17 @@ function DraftHubContent() {
     <article className="animate-fade-in mx-auto flex w-full max-w-4xl select-none flex-col items-center gap-2 sm:gap-2.5 py-0.5 sm:py-1 px-1.5 sm:px-3">
       {/* ── 1. CLEAN APPLE HEADER ────────────────────────────────────── */}
       <header className="relative w-full space-y-0.5 text-center overflow-hidden mb-4">
-        <div className="pointer-events-none absolute top-1/2 left-1/2 h-[120px] w-[260px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/10 blur-[70px]" />
+        <div className="pointer-events-none absolute top-1/2 left-1/2 h-[120px] w-[260px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-game-accent/10 blur-[70px]" />
 
         <div className="relative space-y-0.5">
           <h1 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-white leading-tight mt-6">
             {lang === 'ar' ? (
-              <>استوديو <span className="text-gold">اكسترا درافت</span></>
+              <>استوديو <span className="text-game-accent">اكسترا درافت</span></>
             ) : (
-              <>Pro Draft <span className="text-gold">Studio</span></>
+              <>Pro Draft <span className="text-game-accent">Studio</span></>
             )}
           </h1>
-          <p className="mx-auto max-w-md text-[10.5px] sm:text-xs font-normal leading-relaxed text-steel">
+          <p className="mx-auto max-w-md text-[10.5px] sm:text-xs font-normal leading-relaxed text-muted">
             {lang === 'ar'
               ? 'تحدى منافسيك في ديربي درافت ملحمي.'
               : 'Challenge your rivals in an epic 1v1 draft showdown.'}
@@ -130,16 +130,16 @@ function DraftHubContent() {
       {/* 1v1 PVP DUELS (ZERO-SCROLL COMPACT) */}
       <section className="w-full max-w-2xl space-y-2 pt-0.5">
         {/* Public Matchmaking Banner */}
-        <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl flex items-center justify-between gap-3 border border-gold/20 mt-4">
+        <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl flex items-center justify-between gap-3 border border-game-accent/20 mt-4">
           <div className="flex items-center gap-2.5 min-w-0">
-            <div className="flex h-8.5 w-8.5 shrink-0 items-center justify-center rounded-xl border border-gold/40 bg-gold/15 text-gold p-2">
+            <div className="flex h-8.5 w-8.5 shrink-0 items-center justify-center rounded-xl border border-game-accent/40 bg-game-accent/15 text-game-accent p-2">
               <AppIcon icon={Users} size={18} weight="bold" />
             </div>
             <div className="min-w-0">
               <h3 className="font-display text-xs sm:text-[13px] font-bold text-white truncate">
                 {lang === 'ar' ? 'البحث عن منافس أونلاين' : 'Public Matchmaking'}
               </h3>
-              <p className="text-[10px] text-steel truncate">
+              <p className="text-[10px] text-muted truncate">
                 {lang === 'ar' ? 'ديربي مباشر مع لاعب عشوائي' : 'Duel a random online rival in real time'}
               </p>
             </div>
@@ -150,7 +150,7 @@ function DraftHubContent() {
             size="sm"
             disabled={loading}
             onClick={() => triggerAction({ type: 'public_match' })}
-            className="shrink-0 rounded-xl h-8 px-3 text-xs font-bold text-slate-950 shadow-sm"
+            className="shrink-0 rounded-xl h-8 px-3 text-xs font-bold text-game-on-accent shadow-sm"
           >
             {waitingCount > 0
               ? `${waitingCount} waiting`
@@ -160,16 +160,16 @@ function DraftHubContent() {
 
         {/* Row 2: Private Room + Join by Code */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
-          <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl space-y-2 border border-gold/15">
+          <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl space-y-2 border border-game-accent/15">
             <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/12 bg-white/[0.04] text-slate-300">
+              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/12 bg-white/[0.04] text-foreground">
                 <AppIcon icon={PlusCircle} size={15} weight="bold" />
               </div>
               <div className="min-w-0">
                 <h3 className="font-display text-xs font-bold text-white truncate">
                   {lang === 'ar' ? 'غرفة خاصة' : 'Private Room'}
                 </h3>
-                <p className="text-[9.5px] text-steel truncate">
+                <p className="text-[9.5px] text-muted truncate">
                   {lang === 'ar' ? 'شارك الكود مع صديق' : 'Create room code'}
                 </p>
               </div>
@@ -181,22 +181,22 @@ function DraftHubContent() {
               fullWidth
               disabled={loading}
               onClick={() => triggerAction({ type: 'create_private' })}
-              className="rounded-xl h-8 text-[11px] font-bold hover:border-gold/40 mt-3"
+              className="rounded-xl h-8 text-[11px] font-bold hover:border-game-accent/40 mt-3"
             >
               {lang === 'ar' ? 'إنشاء غرفة خاصة' : 'Create Room'}
             </Button>
           </div>
 
-          <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl space-y-2 border border-gold/15">
+          <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl space-y-2 border border-game-accent/15">
             <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/12 bg-white/[0.04] text-slate-300">
+              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/12 bg-white/[0.04] text-foreground">
                 <AppIcon icon={SignIn} size={15} weight="bold" />
               </div>
               <div className="min-w-0">
                 <h3 className="font-display text-xs font-bold text-white truncate">
                   {lang === 'ar' ? 'انضمام بكود' : 'Join by Code'}
                 </h3>
-                <p className="text-[9.5px] text-steel truncate">
+                <p className="text-[9.5px] text-muted truncate">
                   {lang === 'ar' ? 'أدخل كود صديقك' : 'Enter 6-char PIN'}
                 </p>
               </div>
@@ -214,7 +214,7 @@ function DraftHubContent() {
                 size="sm"
                 disabled={loading || roomCodeInput.trim().length !== 6}
                 onClick={() => triggerAction({ type: 'join_code', code: roomCodeInput.trim() })}
-                className="shrink-0 rounded-xl px-3 h-8 font-bold text-slate-950 text-xs"
+                className="shrink-0 rounded-xl px-3 h-8 font-bold text-game-on-accent text-xs"
               >
                 {lang === 'ar' ? 'انضم' : 'Join'}
               </Button>
@@ -245,7 +245,7 @@ function DraftHubContent() {
                 onClick={() => setNickname(randomName())}
                 aria-label={t('home.nameModal.randomize')}
                 title={t('home.nameModal.randomize')}
-                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-slate-300 transition-colors hover:border-gold/50 hover:text-gold"
+                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-foreground transition-colors hover:border-game-accent/50 hover:text-game-accent"
               >
                 <AppIcon icon={Shuffle} size={18} weight="bold" />
               </button>
@@ -253,7 +253,7 @@ function DraftHubContent() {
           />
 
           <div className="flex items-center justify-end px-1">
-            <span className="font-stats text-xs text-steel">{nickname.length}/18</span>
+            <span className="font-stats text-xs text-muted">{nickname.length}/18</span>
           </div>
 
           <div className="flex items-center justify-end gap-2">
@@ -281,8 +281,8 @@ export default function DraftHubPage() {
     <Suspense
       fallback={
         <div className="min-h-[60vh] flex flex-col items-center justify-center gap-3">
-          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
-          <span className="font-stats text-xs font-bold uppercase tracking-widest text-steel">
+          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-game-accent animate-spin" />
+          <span className="font-stats text-xs font-bold uppercase tracking-widest text-muted">
             Loading Pro Draft...
           </span>
         </div>

@@ -16,7 +16,6 @@ export interface ModeCardProps extends React.HTMLAttributes<HTMLDivElement> {
   selectorSlot?: React.ReactNode;
   actionsSlot: React.ReactNode;
   secondaryLinksSlot?: React.ReactNode;
-  glowColor?: string;
 }
 
 export function ModeCard({
@@ -30,7 +29,6 @@ export function ModeCard({
   selectorSlot,
   actionsSlot,
   secondaryLinksSlot,
-  glowColor,
   className,
   ...props
 }: ModeCardProps) {
@@ -38,7 +36,6 @@ export function ModeCard({
     <Panel
       variant="highlight"
       hasAmbientLight
-      glowColor={glowColor}
       className={cn('p-5 sm:p-7 flex flex-col justify-between gap-5 group', className)}
       {...props}
     >
@@ -46,16 +43,16 @@ export function ModeCard({
         {/* Header Strip */}
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3.5 min-w-0">
-            <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-2xl border border-gold/40 bg-gold/10 text-gold shadow-sm">
+            <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-2xl border border-game-accent/40 bg-game-accent/10 text-game-accent shadow-sm">
               {icon}
             </div>
             <div className="min-w-0">
               {subtitle && (
-                <span className="text-gold text-xs font-semibold tracking-wide uppercase block truncate">
+                <span className="text-game-accent text-xs font-semibold tracking-wide uppercase block truncate">
                   {subtitle}
                 </span>
               )}
-              <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white font-display truncate">
+              <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground font-display truncate">
                 {title}
               </h2>
             </div>
@@ -69,7 +66,7 @@ export function ModeCard({
         </div>
 
         {/* Description */}
-        <p className="text-steel text-xs sm:text-sm font-normal leading-relaxed">
+        <p className="text-muted text-xs sm:text-sm font-normal leading-relaxed">
           {description}
         </p>
 

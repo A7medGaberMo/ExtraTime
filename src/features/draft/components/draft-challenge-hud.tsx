@@ -118,7 +118,7 @@ export function DraftChallengeHud({
                 {challenge.icon ? (
                   <span>{challenge.icon}</span>
                 ) : (
-                  <AppIcon icon={Trophy} size={14} weight="fill" className="text-amber-400" />
+                  <AppIcon icon={Trophy} size={14} weight="fill" className="text-game-accent" />
                 )}
               </div>
             )}
@@ -128,7 +128,7 @@ export function DraftChallengeHud({
             <span
               className="hidden sm:inline rounded-full px-2 py-0.5 text-[8px] font-extrabold uppercase tracking-wider border border-white/10"
               style={{
-                backgroundColor: `${challenge.badgeColor}22`,
+                backgroundColor: `color-mix(in srgb, ${challenge.badgeColor} 13%, transparent)`,
                 color: challenge.badgeColor,
               }}
             >
@@ -144,15 +144,15 @@ export function DraftChallengeHud({
               key={prog.id}
               className={`flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[10px] font-bold transition-all ${
                 prog.isMet
-                  ? 'border-gold/50 bg-gold/15 text-gold shadow-[0_0_12px_rgba(229,184,66,0.35)]'
-                  : 'border-white/10 bg-white/[0.04] text-slate-300'
+                  ? 'border-success/50 bg-success/15 text-success shadow-[0_0_12px_var(--game-glow)]'
+                  : 'border-white/10 bg-white/[0.04] text-foreground'
               }`}
             >
-              <span className="text-slate-400 font-medium">{prog.label}:</span>
-              <span className={`font-stats font-black ${prog.isMet ? 'text-gold' : 'text-white'}`}>
+              <span className="text-muted font-medium">{prog.label}:</span>
+              <span className={`font-stats font-black ${prog.isMet ? 'text-success' : 'text-white'}`}>
                 {prog.current}/{prog.target}
               </span>
-              {prog.isMet && <AppIcon icon={Check} size={11} weight="bold" className="text-gold" />}
+              {prog.isMet && <AppIcon icon={Check} size={11} weight="bold" className="text-success" />}
             </div>
           ))}
         </div>
@@ -161,7 +161,7 @@ export function DraftChallengeHud({
         <button
           type="button"
           onClick={() => setShowRulesModal(true)}
-          className="btn-haptic flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-white/[0.06] text-slate-300 hover:text-white hover:bg-white/[0.12] transition-colors shrink-0 cursor-pointer shadow-sm"
+          className="btn-haptic flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-white/[0.06] text-foreground hover:text-white hover:bg-white/[0.12] transition-colors shrink-0 cursor-pointer shadow-sm"
           title="View Challenge Rules"
           aria-label="View Challenge Rules"
         >
@@ -183,7 +183,7 @@ export function DraftChallengeHud({
               <button
                 type="button"
                 onClick={() => setShowRulesModal(false)}
-                className="btn-haptic absolute top-4 right-4 rtl:right-auto rtl:left-4 flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-white/[0.06] text-slate-300 hover:text-white transition-colors cursor-pointer"
+                className="btn-haptic absolute top-4 right-4 rtl:right-auto rtl:left-4 flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-white/[0.06] text-foreground hover:text-white transition-colors cursor-pointer"
                 title="Close"
                 aria-label="Close rules modal"
               >
@@ -201,18 +201,18 @@ export function DraftChallengeHud({
                       {challenge.icon ? (
                         <span>{challenge.icon}</span>
                       ) : (
-                        <AppIcon icon={Trophy} size={28} weight="fill" className="text-gold" />
+                        <AppIcon icon={Trophy} size={28} weight="fill" className="text-game-accent" />
                       )}
                     </div>
                   )}
                 </div>
                 <h3 className="font-display text-lg font-black text-white">{challenge.title}</h3>
-                <p className="text-xs text-slate-400 leading-relaxed max-w-xs mx-auto">{challenge.description}</p>
+                <p className="text-xs text-muted leading-relaxed max-w-xs mx-auto">{challenge.description}</p>
               </div>
 
               {/* Requirements Checklist */}
               <div className="space-y-1.5 text-start border-t border-white/10 pt-3">
-                <span className="text-[10px] font-black uppercase text-slate-400 tracking-wider">
+                <span className="text-[10px] font-black uppercase text-muted tracking-wider">
                   {t('draft.targetObjectives')}:
                 </span>
                 {progressList.map((prog) => (
@@ -220,18 +220,18 @@ export function DraftChallengeHud({
                     key={prog.id}
                     className="flex items-center justify-between text-xs font-semibold p-2 rounded-xl bg-white/[0.04] border border-white/6"
                   >
-                    <span className="text-slate-200">{prog.label} {t('draft.target')}</span>
-                    <span className={`flex items-center gap-1.5 font-stats font-bold ${prog.isMet ? 'text-gold' : 'text-slate-300'}`}>
+                    <span className="text-foreground">{prog.label} {t('draft.target')}</span>
+                    <span className={`flex items-center gap-1.5 font-stats font-bold ${prog.isMet ? 'text-success' : 'text-foreground'}`}>
                       <span>{prog.current} / {prog.target}</span>
-                      {prog.isMet && <AppIcon icon={Check} size={12} weight="bold" className="text-gold" />}
+                      {prog.isMet && <AppIcon icon={Check} size={12} weight="bold" className="text-success" />}
                     </span>
                   </div>
                 ))}
               </div>
 
-              <div className="flex items-center justify-between pt-2 text-micro text-slate-400 border-t border-white/8">
-                <span>{t('draft.reward')}: <strong className="text-gold font-bold">+{challenge.rewardXp} XP</strong></span>
-                <span>STATUS: <strong className={allMet ? 'text-gold font-black' : 'text-slate-300 font-bold'}>{allMet ? t('draft.objectivesMet') : t('draft.inProgress')}</strong></span>
+              <div className="flex items-center justify-between pt-2 text-micro text-muted border-t border-white/8">
+                <span>{t('draft.reward')}: <strong className="text-game-accent font-bold">+{challenge.rewardXp} XP</strong></span>
+                <span>STATUS: <strong className={allMet ? 'text-success font-black' : 'text-foreground font-bold'}>{allMet ? t('draft.objectivesMet') : t('draft.inProgress')}</strong></span>
               </div>
             </motion.div>
           </div>

@@ -19,11 +19,11 @@ export default function ErrorPage({
 
   return (
     <div className="flex h-[60vh] flex-col items-center justify-center gap-5 px-4 text-center">
-      <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-rose-500/10 text-rose-400">
+      <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-danger/10 text-danger">
         <AppIcon icon={Warning} size={40} weight="duotone" />
       </div>
       <h1 className="text-3xl font-black text-white uppercase font-display">Unexpected Error</h1>
-      <p className="text-steel max-w-md text-sm leading-relaxed font-medium">
+      <p className="text-muted max-w-md text-sm leading-relaxed font-medium">
         Something went wrong while loading this page. It&apos;s not you, it&apos;s us.
       </p>
       <div className="flex gap-3">
@@ -46,7 +46,7 @@ export default function ErrorPage({
         </Link>
       </div>
       {error.digest && (
-        <p className="text-steel mt-4 font-mono text-[10px]">Error ID: {error.digest}</p>
+        <p className="text-muted mt-4 font-mono text-[10px]">Error ID: {error.digest}</p>
       )}
     </div>
   );

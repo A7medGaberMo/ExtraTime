@@ -45,7 +45,7 @@ interface RankRevealViewProps {
 function getPointsBadge(points: number, delta: number) {
   if (points === 2 || delta === 0) {
     return (
-      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-emerald-500/15 border border-emerald-400/40 text-emerald-400 text-xs font-semibold font-stats shadow-sm shrink-0">
+      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-success/15 border border-success/40 text-success text-xs font-semibold font-stats shadow-sm shrink-0">
         <AppIcon icon={Check} size={12} weight="bold" />
         <span>+2 pts</span>
       </div>
@@ -53,20 +53,20 @@ function getPointsBadge(points: number, delta: number) {
   }
   if (points === 1 || delta === 1) {
     return (
-      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs font-semibold font-stats shrink-0">
+      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-game-accent/15 border border-game-accent/30 text-game-accent text-xs font-semibold font-stats shrink-0">
         <span>+1 pt</span>
       </div>
     );
   }
   if (points === 0 || delta === 2) {
     return (
-      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/10 text-steel text-xs font-medium font-stats shrink-0">
+      <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-white/5 border border-white/10 text-muted text-xs font-medium font-stats shrink-0">
         <span>0 pts</span>
       </div>
     );
   }
   return (
-    <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-rose-500/15 border border-rose-500/35 text-rose-400 text-xs font-semibold font-stats shadow-sm shrink-0">
+    <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-danger/15 border border-danger/35 text-danger text-xs font-semibold font-stats shadow-sm shrink-0">
       <span>{points < 0 ? points : -Math.abs(points)} pts</span>
     </div>
   );
@@ -115,25 +115,25 @@ export function RankRevealView({
 
       {/* ── HEADER SCORE SUMMARY STRIP & FULL QUESTION TITLE ───────────── */}
       <div className="text-center shrink-0 space-y-1.5 px-2">
-        <div className="flex items-center justify-between px-3.5 py-2 rounded-2xl bg-slate-900/90 border border-white/12 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
+        <div className="flex items-center justify-between px-3.5 py-2 rounded-2xl bg-surface/90 border border-white/12 shadow-[0_4px_16px_var(--et-shade-40),inset_0_1px_0_0_var(--et-hi-08)] backdrop-blur-xl">
           <div className="flex items-center gap-1.5 font-stats">
-            <span className="text-xs text-steel font-semibold uppercase tracking-wider">
+            <span className="text-xs text-muted font-semibold uppercase tracking-wider">
               {t('rank.yourScore')}:
             </span>
-            <span className="text-sm font-bold text-amber-300 flex items-center gap-1">
+            <span className="text-sm font-bold text-game-accent flex items-center gap-1">
               {userRoundScore > 0 ? `+${userRoundScore}` : userRoundScore} pts
               {userRoundScore === 10 && (
-                <AppIcon icon={Star} size={15} weight="fill" className="text-amber-400 animate-pulse" />
+                <AppIcon icon={Star} size={15} weight="fill" className="text-tier-gold animate-pulse" />
               )}
             </span>
           </div>
 
           {isDuel && opponentRoundScore !== undefined && (
             <div className="flex items-center gap-1.5 font-stats">
-              <span className="text-xs text-steel font-semibold uppercase tracking-wider truncate max-w-[90px]">
+              <span className="text-xs text-muted font-semibold uppercase tracking-wider truncate max-w-[90px]">
                 {opponentName ? `${opponentName}:` : t('rank.rivalScore')}:
               </span>
-              <span className="text-sm font-bold text-slate-300">
+              <span className="text-sm font-bold text-foreground">
                 {opponentRoundScore > 0 ? `+${opponentRoundScore}` : opponentRoundScore} pts
               </span>
             </div>
@@ -145,7 +145,7 @@ export function RankRevealView({
           {questionTitle}
         </h2>
         {questionSubtitle && (
-          <p className="text-xs text-steel font-medium">{questionSubtitle}</p>
+          <p className="text-xs text-muted font-medium">{questionSubtitle}</p>
         )}
       </div>
 
@@ -163,15 +163,15 @@ export function RankRevealView({
           const isTop = item.correctRank === 1;
           const { mainName, tag } = parseEntityName(item.name);
 
-          let rowBorderClass = 'border-white/[0.12] bg-slate-900/85 shadow-[0_4px_16px_rgba(0,0,0,0.35),inset_0_1px_0_0_rgba(255,255,255,0.06)]';
+          let rowBorderClass = 'border-white/[0.12] bg-surface/85 shadow-[0_4px_16px_var(--et-shade-35),inset_0_1px_0_0_var(--et-hi-06)]';
           if (isExact) {
-            rowBorderClass = 'border-emerald-500/50 bg-slate-900/95 shadow-[0_4px_16px_rgba(16,185,129,0.14),inset_0_1px_0_0_rgba(255,255,255,0.1)]';
+            rowBorderClass = 'border-success/50 bg-surface/95 shadow-[0_4px_16px_var(--et-success-glow),inset_0_1px_0_0_var(--et-hi-10)]';
           } else if (isPositiveOne) {
-            rowBorderClass = 'border-amber-400/40 bg-slate-900/90 shadow-[0_4px_16px_rgba(245,158,11,0.1),inset_0_1px_0_0_rgba(255,255,255,0.08)]';
+            rowBorderClass = 'border-game-accent/40 bg-surface/90 shadow-[0_4px_16px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-08)]';
           } else if (isNegative) {
-            rowBorderClass = 'border-rose-500/35 bg-slate-900/90 shadow-[0_4px_16px_rgba(244,63,94,0.1),inset_0_1px_0_0_rgba(255,255,255,0.06)]';
+            rowBorderClass = 'border-danger/35 bg-surface/90 shadow-[0_4px_16px_var(--et-danger-glow),inset_0_1px_0_0_var(--et-hi-06)]';
           } else if (isTop) {
-            rowBorderClass = 'border-white/15 bg-slate-900/90 shadow-[0_4px_16px_rgba(0,0,0,0.4),inset_0_1px_0_0_rgba(255,255,255,0.08)]';
+            rowBorderClass = 'border-white/15 bg-surface/90 shadow-[0_4px_16px_var(--et-shade-40),inset_0_1px_0_0_var(--et-hi-08)]';
           }
 
           return (
@@ -187,8 +187,8 @@ export function RankRevealView({
                     flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-xl text-xs font-bold font-display-number shadow-sm
                     ${
                       isTop
-                        ? 'bg-gradient-to-br from-amber-400 to-yellow-300 text-slate-950 shadow-[0_2px_8px_rgba(245,158,11,0.35)]'
-                        : 'bg-slate-800/90 text-slate-300 border border-white/5'
+                        ? 'bg-gradient-to-br from-game-accent to-game-accent-light text-game-on-accent shadow-[0_2px_8px_var(--game-glow)]'
+                        : 'bg-surface-2/90 text-foreground border border-white/5'
                     }
                   `}
                 >
@@ -207,21 +207,21 @@ export function RankRevealView({
                       {mainName}
                     </span>
                     {tag && (
-                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-amber-300 font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
+                      <span className="shrink-0 px-1.5 py-0.5 rounded-md bg-white/10 border border-white/10 text-game-accent font-stats text-[10px] sm:text-[11px] font-semibold leading-none">
                         {tag}
                       </span>
                     )}
-                    <span className="font-semibold text-amber-300 text-xs font-stats shrink-0">
+                    <span className="font-semibold text-game-accent text-xs font-stats shrink-0">
                       ({item.stat || item.valueLabel})
                     </span>
                   </div>
-                  <div className="flex items-center gap-1 text-[11px] sm:text-xs text-steel font-normal truncate leading-none pt-0.5">
+                  <div className="flex items-center gap-1 text-[11px] sm:text-xs text-muted font-normal truncate leading-none pt-0.5">
                     {item.subText && <span>{item.subText} • </span>}
                     <span>
                       {lang === 'ar' ? `ترتيبك: #${submittedRank}` : `You guessed: #${submittedRank}`}
                     </span>
                     {isExact && (
-                      <span className="text-emerald-400 font-semibold">
+                      <span className="text-success font-semibold">
                         {lang === 'ar' ? ' (مطابق ✓)' : ' (Exact ✓)'}
                       </span>
                     )}
@@ -242,7 +242,7 @@ export function RankRevealView({
           type="button"
           onClick={handleAdvanceClick}
           disabled={isAdvancing}
-          className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 to-yellow-300 shadow-[0_8px_20px_rgba(245,158,11,0.3),inset_0_1px_0_0_rgba(255,255,255,0.35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
+          className="btn-haptic flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-2xl text-xs sm:text-sm font-bold text-game-on-accent bg-gradient-to-r from-game-accent to-game-accent-light shadow-[0_8px_20px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-35)] transition-all active:scale-[0.97] disabled:active:scale-100 cursor-pointer disabled:pointer-events-none font-display uppercase"
         >
           {isLastRound ? (
             <>

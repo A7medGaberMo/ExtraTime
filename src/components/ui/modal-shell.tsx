@@ -49,12 +49,12 @@ export function ModalShell({
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-[75] flex items-center justify-center bg-slate-950/85 p-3.5 backdrop-blur-2xl animate-fade-in select-none"
+      className="fixed inset-0 z-[75] flex items-center justify-center bg-canvas/85 p-3.5 backdrop-blur-2xl animate-fade-in select-none"
       onClick={onClose}
     >
       <div
         className={cn(
-          'relative w-full overflow-hidden rounded-3xl border border-white/18 bg-slate-900/95 p-5 sm:p-7 shadow-[0_24px_60px_rgba(0,0,0,0.85),inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-2xl animate-scale-in',
+          'relative w-full overflow-hidden rounded-3xl border border-white/18 bg-surface/95 p-5 sm:p-7 shadow-[0_24px_60px_var(--et-shade-85),inset_0_1px_0_0_var(--et-hi-12)] backdrop-blur-2xl animate-scale-in',
           maxWidthClass,
           className,
         )}
@@ -64,7 +64,7 @@ export function ModalShell({
           <button
             type="button"
             onClick={onClose}
-            className="btn-haptic absolute top-4 end-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/12 bg-slate-950/85 text-steel transition-all hover:border-gold/40 hover:text-white cursor-pointer"
+            className="btn-haptic absolute top-4 end-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-white/12 bg-canvas/85 text-muted transition-all hover:border-game-accent/40 hover:text-foreground cursor-pointer"
             aria-label="Close"
           >
             <X size={16} weight="bold" />
@@ -75,12 +75,12 @@ export function ModalShell({
           <div className="mb-5 space-y-1.5 text-center px-4">
             {badge && <div className="inline-block mb-1">{badge}</div>}
             {title && (
-              <h3 className="text-xl sm:text-2xl font-black tracking-tight text-white uppercase">
+              <h3 className="text-xl sm:text-2xl font-black tracking-tight text-foreground uppercase">
                 {title}
               </h3>
             )}
             {subtitle && (
-              <p className="text-steel text-xs sm:text-sm font-medium leading-relaxed">
+              <p className="text-muted text-xs sm:text-sm font-medium leading-relaxed">
                 {subtitle}
               </p>
             )}

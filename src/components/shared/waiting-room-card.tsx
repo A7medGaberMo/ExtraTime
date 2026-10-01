@@ -45,28 +45,28 @@ export function WaitingRoomCard({
 
   const themeStyles = {
     gold: {
-      border: 'border-gold/30',
-      bg: 'bg-gold/10',
-      text: 'text-gold',
-      glow: 'shadow-[0_0_16px_rgba(229,184,66,0.2)]',
+      border: 'border-game-accent/30',
+      bg: 'bg-game-accent/10',
+      text: 'text-game-accent',
+      glow: 'shadow-[0_0_16px_var(--game-glow)]',
     },
     lime: {
-      border: 'border-gold/30',
-      bg: 'bg-gold/10',
-      text: 'text-gold',
-      glow: 'shadow-[0_0_16px_rgba(229,184,66,0.2)]',
+      border: 'border-game-accent/30',
+      bg: 'bg-game-accent/10',
+      text: 'text-game-accent',
+      glow: 'shadow-[0_0_16px_var(--game-glow)]',
     },
     amber: {
-      border: 'border-amber-400/30',
-      bg: 'bg-amber-400/10',
-      text: 'text-amber-400',
-      glow: 'shadow-[0_0_16px_rgba(251,191,36,0.2)]',
+      border: 'border-game-accent/30',
+      bg: 'bg-game-accent/10',
+      text: 'text-game-accent',
+      glow: 'shadow-[0_0_16px_var(--game-glow)]',
     },
     cyan: {
-      border: 'border-cyan-400/30',
-      bg: 'bg-cyan-400/10',
-      text: 'text-cyan-400',
-      glow: 'shadow-[0_0_16px_rgba(0,240,255,0.2)]',
+      border: 'border-game-accent/30',
+      bg: 'bg-game-accent/10',
+      text: 'text-game-accent',
+      glow: 'shadow-[0_0_16px_var(--game-glow)]',
     },
   }[themeColor];
 
@@ -98,7 +98,7 @@ export function WaitingRoomCard({
         <h2 className="text-xl sm:text-2xl font-black text-white uppercase font-display">
           {title || t('lobby.waitingOpponent')}
         </h2>
-        <p className="text-steel text-xs font-medium max-w-sm mx-auto leading-relaxed">
+        <p className="text-muted text-xs font-medium max-w-sm mx-auto leading-relaxed">
           {subtitle ||
             (lang === 'ar'
               ? 'شارك هذا الكود مع منافسك لبدء المواجهة:'
@@ -107,8 +107,8 @@ export function WaitingRoomCard({
       </div>
 
       {/* Code Card with Copy Action */}
-      <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/10 bg-slate-950/90 p-3 sm:p-4">
-        <span className="text-steel text-[9px] font-black tracking-widest uppercase font-stats">
+      <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/10 bg-canvas/90 p-3 sm:p-4">
+        <span className="text-muted text-[9px] font-black tracking-widest uppercase font-stats">
           {t('joinRoom.roomCode')}
         </span>
         <div className="flex items-center gap-3">
@@ -126,7 +126,7 @@ export function WaitingRoomCard({
             aria-label="Copy Room Code"
             title="Copy Room Code"
             className={cn(
-              'btn-haptic flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-slate-900 text-steel hover:text-white transition-colors cursor-pointer',
+              'btn-haptic flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-surface text-muted hover:text-white transition-colors cursor-pointer',
               copied ? themeStyles.border : '',
             )}
           >
@@ -141,7 +141,7 @@ export function WaitingRoomCard({
       </div>
 
       {/* Waiting Indicator */}
-      <div className="flex items-center justify-center gap-2 text-xs font-bold text-steel">
+      <div className="flex items-center justify-center gap-2 text-xs font-bold text-muted">
         <AppIcon icon={CircleNotch} size={16} weight="bold" className={cn('animate-spin', themeStyles.text)} />
         <span>{subNotice || t('lobby.waitingOpponent')}</span>
       </div>
@@ -153,7 +153,7 @@ export function WaitingRoomCard({
             variant="ghost"
             size="sm"
             onClick={onCancel}
-            className="text-steel hover:text-white"
+            className="text-muted hover:text-white"
             leftIcon={<AppIcon icon={ArrowLeft} size={14} weight="bold" />}
           >
             {cancelLabel || t('auction.waitingOverlay.cancelMatch')}

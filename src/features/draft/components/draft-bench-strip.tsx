@@ -32,7 +32,7 @@ export function DraftBenchStrip({
     <div className="apple-glass-card w-full space-y-2 rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 shadow-xl border border-white/12">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="flex h-6 w-6 items-center justify-center rounded-lg border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 shadow-sm">
+          <span className="flex h-6 w-6 items-center justify-center rounded-lg border border-game-accent/30 bg-game-accent/10 text-game-accent shadow-sm">
             <AppIcon icon={ArrowsDownUp} size={13} weight="bold" />
           </span>
           <span className="text-xs font-bold uppercase tracking-wider text-white">
@@ -41,7 +41,7 @@ export function DraftBenchStrip({
         </div>
 
         {canSwap && (
-          <span className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-2 py-0.5 text-micro font-bold text-cyan-300 animate-pulse shadow-sm">
+          <span className="rounded-full border border-game-accent/30 bg-game-accent/10 px-2 py-0.5 text-micro font-bold text-game-accent-light animate-pulse shadow-sm">
             {t('draft.tapBenchSwap')}
           </span>
         )}
@@ -77,9 +77,9 @@ export function DraftBenchStrip({
                     onSwapWithBench?.(idx);
                   }
                 }}
-                className={`btn-haptic relative flex items-center gap-2.5 rounded-xl sm:rounded-2xl border p-2 select-none transition-all outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 ${
+                className={`btn-haptic relative flex items-center gap-2.5 rounded-xl sm:rounded-2xl border p-2 select-none transition-all outline-none focus-visible:ring-2 focus-visible:ring-game-accent ${
                   canSwap
-                    ? 'border-cyan-400 bg-cyan-950/40 hover:border-cyan-300 hover:bg-cyan-900/50 shadow-[0_0_20px_rgba(0,240,255,0.25)] cursor-pointer ring-1 ring-cyan-400/50'
+                    ? 'border-game-accent bg-game-accent/10 hover:border-game-accent-light hover:bg-game-accent/15 shadow-[0_0_20px_var(--game-glow)] cursor-pointer ring-1 ring-game-accent/50'
                     : 'border-white/10 bg-white/[0.04] shadow-sm'
                 }`}
               >
@@ -95,7 +95,7 @@ export function DraftBenchStrip({
                     <span className="font-stats text-micro sm:text-xs font-black text-white">
                       {player.rating || 80}
                     </span>
-                    <span className="text-[8.5px] sm:text-[9.5px] font-bold text-slate-400">
+                    <span className="text-[8.5px] sm:text-[9.5px] font-bold text-muted">
                       {player.position.split('/')[0]}
                     </span>
                   </div>
@@ -105,13 +105,13 @@ export function DraftBenchStrip({
                   <span className="block truncate whitespace-nowrap overflow-hidden text-ellipsis text-[10.5px] sm:text-xs font-bold text-white leading-tight">
                     {player.name}
                   </span>
-                  <div className="flex items-center gap-1 text-micro text-slate-400">
+                  <div className="flex items-center gap-1 text-micro text-muted">
                     <span className="truncate">{player.clubName || t('draft.freeAgent')}</span>
                   </div>
                 </div>
 
                 {canSwap && (
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cyan-400 text-slate-950 shadow-md">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-game-accent text-game-on-accent shadow-md">
                     <AppIcon icon={ArrowsDownUp} size={12} weight="bold" />
                   </span>
                 )}
@@ -124,8 +124,8 @@ export function DraftBenchStrip({
               key={idx}
               className={`flex items-center justify-center gap-2 rounded-xl sm:rounded-2xl border p-2.5 sm:p-3 select-none transition-all ${
                 isSlotActive
-                  ? 'border-cyan-400 bg-cyan-950/40 text-cyan-300 animate-pulse shadow-[0_0_16px_rgba(0,240,255,0.3)]'
-                  : 'border-white/10 bg-white/[0.03] text-slate-400'
+                  ? 'border-game-accent bg-game-accent/10 text-game-accent-light animate-pulse shadow-[0_0_16px_var(--game-glow)]'
+                  : 'border-white/10 bg-white/[0.03] text-muted'
               }`}
             >
               {isSlotActive ? (

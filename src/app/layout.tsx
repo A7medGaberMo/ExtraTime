@@ -156,7 +156,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="bg-background text-foreground selection:bg-gold selection:text-slate-950 flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-sans antialiased"
+        className="bg-canvas text-foreground selection:bg-brand selection:text-canvas flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-sans antialiased"
       >
         <ConvexClientProvider>
           <I18nProvider>

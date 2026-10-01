@@ -152,8 +152,8 @@ export default function RankArenaPage() {
   if (!guestId || gameState === undefined) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center gap-3">
-        <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-gold animate-spin" />
-        <span className="text-xs font-black uppercase text-steel font-stats">{t('common.loading')}</span>
+        <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-game-accent animate-spin" />
+        <span className="text-xs font-black uppercase text-muted font-stats">{t('common.loading')}</span>
       </div>
     );
   }
@@ -163,7 +163,7 @@ export default function RankArenaPage() {
       <div className="min-h-[60vh] flex flex-col items-center justify-center gap-4 text-center px-4">
         <Panel variant="highlight" className="max-w-sm p-6 text-center space-y-4">
           <h2 className="text-xl font-black text-white uppercase">Room Not Found</h2>
-          <p className="text-xs text-steel">This game session has expired or does not exist.</p>
+          <p className="text-xs text-muted">This game session has expired or does not exist.</p>
           <Button variant="primary" size="md" fullWidth onClick={() => router.push('/rank')}>
             Back to Rank Hub
           </Button>
@@ -308,13 +308,13 @@ export default function RankArenaPage() {
   if (gameState.status === 'waiting') {
     return (
       <article className="animate-fade-in mx-auto flex max-w-lg flex-col items-center gap-6 px-3 py-8 text-center select-none">
-        <div className="apple-glass-elevated relative w-full rounded-3xl p-6 sm:p-8 border border-white/18 shadow-[0_24px_50px_rgba(0,0,0,0.7)] backdrop-blur-3xl space-y-6">
-          <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-44 w-72 rounded-full bg-amber-400/15 blur-3xl" />
+        <div className="apple-glass-elevated relative w-full rounded-3xl p-6 sm:p-8 border border-white/18 shadow-[0_24px_50px_var(--et-shade-70)] backdrop-blur-3xl space-y-6">
+          <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-44 w-72 rounded-full bg-game-accent/15 blur-3xl" />
 
           <div className="relative space-y-2">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/50 bg-amber-400/15 px-3 py-1 shadow-sm">
-              <AppIcon icon={Users} size={14} weight="fill" className="text-amber-400" />
-              <span className="text-micro sm:text-xs font-black uppercase tracking-wider text-amber-300">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-game-accent/50 bg-game-accent/15 px-3 py-1 shadow-sm">
+              <AppIcon icon={Users} size={14} weight="fill" className="text-game-accent" />
+              <span className="text-micro sm:text-xs font-black uppercase tracking-wider text-game-accent">
                 {lang === 'ar' ? 'في انتظار المنافس' : 'Waiting for Opponent'}
               </span>
             </div>
@@ -322,7 +322,7 @@ export default function RankArenaPage() {
             <h2 className="text-2xl sm:text-3xl font-black text-white uppercase font-display tracking-tight">
               {lang === 'ar' ? 'غرفة المواجهة 1 ضد 1' : '1v1 Duel Lobby'}
             </h2>
-            <p className="text-xs text-slate-300">
+            <p className="text-xs text-foreground">
               {lang === 'ar'
                 ? 'شارك هذا الكود مع منافسك لبدء المواجهة:'
                 : 'Share this code with your rival to start the match:'}
@@ -338,18 +338,18 @@ export default function RankArenaPage() {
               variant="primary"
               size="sm"
               onClick={handleCopyCode}
-              leftIcon={<AppIcon icon={copied ? Check : Copy} size={16} weight="bold" className="text-slate-950" />}
-              className="bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 font-black rounded-xl shadow-[0_4px_16px_rgba(245,158,11,0.35)]"
+              leftIcon={<AppIcon icon={copied ? Check : Copy} size={16} weight="bold" className="text-game-on-accent" />}
+              className="bg-gradient-to-r from-game-accent to-game-accent-light text-game-on-accent font-black rounded-xl shadow-[0_4px_16px_var(--game-glow)]"
             >
               {copied ? t('common.copied') : t('common.copy')}
             </Button>
           </div>
 
           {/* SharePlay Radar Pulse */}
-          <div className="relative flex items-center justify-center gap-2 text-xs text-amber-300 font-black uppercase">
+          <div className="relative flex items-center justify-center gap-2 text-xs text-game-accent font-black uppercase">
             <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-400" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-game-accent opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-game-accent" />
             </span>
             <span>{lang === 'ar' ? 'رادار الغرفة نشط • في انتظار دخول المنافس...' : 'Room radar active • Waiting for rival to connect...'}</span>
           </div>
@@ -358,7 +358,7 @@ export default function RankArenaPage() {
         <button
           type="button"
           onClick={handleAbandon}
-          className="btn-haptic text-xs text-slate-400 hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer font-black uppercase tracking-wider"
+          className="btn-haptic text-xs text-muted hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer font-black uppercase tracking-wider"
         >
           <AppIcon icon={ArrowLeft} size={14} weight="bold" />
           <span>{lang === 'ar' ? 'إلغاء والعودة لمركز الرانك' : 'Cancel and return to Rank Hub'}</span>
@@ -455,12 +455,12 @@ export default function RankArenaPage() {
 
       {/* Pre-Round Question Reveal Overlay — Apple Keynote Presentation */}
       {introSecondsLeft !== null && introSecondsLeft > 0 && gameState.question && (
-        <div className="apple-glass-elevated absolute inset-0 z-30 flex flex-col items-center justify-center rounded-3xl p-6 text-center space-y-5 animate-fade-in border border-white/25 backdrop-blur-3xl shadow-[0_24px_60px_rgba(0,0,0,0.85)]">
-          <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(ellipse_at_center,rgba(245,158,11,0.15),transparent_70%)]" />
+        <div className="apple-glass-elevated absolute inset-0 z-30 flex flex-col items-center justify-center rounded-3xl p-6 text-center space-y-5 animate-fade-in border border-white/25 backdrop-blur-3xl shadow-[0_24px_60px_var(--et-shade-85)]">
+          <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(ellipse_at_center,var(--game-tint),transparent_70%)]" />
 
-          <div className="relative inline-flex items-center gap-1.5 rounded-full border border-amber-400/50 bg-amber-400/15 px-3 py-1 shadow-sm">
-            <AppIcon icon={Clock} size={15} weight="fill" className="text-amber-400" />
-            <span className="text-micro sm:text-xs font-black uppercase tracking-wider text-amber-300">
+          <div className="relative inline-flex items-center gap-1.5 rounded-full border border-game-accent/50 bg-game-accent/15 px-3 py-1 shadow-sm">
+            <AppIcon icon={Clock} size={15} weight="fill" className="text-game-accent" />
+            <span className="text-micro sm:text-xs font-black uppercase tracking-wider text-game-accent">
               {t('rank.roundStarting', {
                 round: gameState.currentRoundIndex + 1,
                 sec: introSecondsLeft,
@@ -473,7 +473,7 @@ export default function RankArenaPage() {
           </h2>
 
           <div className="relative flex items-center justify-center">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-amber-400 to-yellow-300 text-slate-950 font-black text-3xl flex items-center justify-center font-stats shadow-[0_0_28px_rgba(245,158,11,0.6)] border-2 border-white/80 animate-pulse">
+            <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-game-accent to-game-accent-light text-game-on-accent font-black text-3xl flex items-center justify-center font-stats shadow-[0_0_28px_var(--game-glow)] border-2 border-white/80 animate-pulse">
               {introSecondsLeft}
             </div>
           </div>
@@ -481,7 +481,7 @@ export default function RankArenaPage() {
           <button
             type="button"
             onClick={() => setIntroSecondsLeft(null)}
-            className="btn-haptic relative text-micro sm:text-xs text-slate-400 hover:text-white font-black uppercase tracking-wider transition-colors cursor-pointer py-1 px-3 rounded-full border border-white/10 hover:border-white/20 bg-white/5"
+            className="btn-haptic relative text-micro sm:text-xs text-muted hover:text-white font-black uppercase tracking-wider transition-colors cursor-pointer py-1 px-3 rounded-full border border-white/10 hover:border-white/20 bg-white/5"
           >
             {t('rank.skipCountdown')}
           </button>

@@ -23,17 +23,6 @@ interface Particle {
   opacity: number;
 }
 
-const PALETTE = [
-  '#E5B842', // Monaco Signature Gold
-  '#ffd60a', // Bright Gold
-  '#F5D77F', // Champagne Gold
-  '#0a84ff', // Sky
-  '#ff375f', // Rose
-  '#D4A833', // Deep Antique Gold
-  '#bf5af2', // Master Violet
-  '#ffffff', // White sparkle
-];
-
 export function Confetti({ active, duration = 3500, particleCount }: ConfettiProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -58,6 +47,20 @@ export function Confetti({ active, duration = 3500, particleCount }: ConfettiPro
 
     const isMobile = width < 768;
     const count = particleCount ?? (isMobile ? 65 : 120);
+
+    // Canvas 2D fillStyle cannot resolve var(), so the palette tokens are read
+    // once from the document root and used as concrete colors.
+    const rootStyles = getComputedStyle(document.documentElement);
+    const PALETTE = [
+      rootStyles.getPropertyValue('--et-confetti-1').trim(), // Monaco Signature Gold
+      rootStyles.getPropertyValue('--et-confetti-2').trim(), // Bright Gold
+      rootStyles.getPropertyValue('--et-confetti-3').trim(), // Champagne Gold
+      rootStyles.getPropertyValue('--et-confetti-4').trim(), // Sky
+      rootStyles.getPropertyValue('--et-confetti-5').trim(), // Rose
+      rootStyles.getPropertyValue('--et-confetti-6').trim(), // Deep Antique Gold
+      rootStyles.getPropertyValue('--et-confetti-7').trim(), // Master Violet
+      rootStyles.getPropertyValue('--et-confetti-8').trim(), // White sparkle
+    ];
 
     const particles: Particle[] = Array.from({ length: count }, () => {
       const angle = (Math.random() * 60 + 60) * (Math.PI / 180); // Upwards fountain

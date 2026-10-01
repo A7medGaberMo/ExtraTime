@@ -46,17 +46,17 @@ export function QuestionCard({
   }, [activeText]);
 
   return (
-    <div className="w-full max-w-md mx-auto h-[290px] min-h-[290px] max-h-[290px] sm:h-[300px] sm:min-h-[300px] sm:max-h-[300px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 shadow-[0_16px_36px_rgba(0,0,0,0.6)] backdrop-blur-3xl relative overflow-hidden border border-gold/25 bg-gradient-to-b from-slate-900/95 via-[#0a0e17]/95 to-slate-950/95 select-none flex flex-col justify-between shrink-0 transition-all duration-200">
+    <div className="w-full max-w-md mx-auto h-[290px] min-h-[290px] max-h-[290px] sm:h-[300px] sm:min-h-[300px] sm:max-h-[300px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 shadow-[0_16px_36px_var(--et-shade-60)] backdrop-blur-3xl relative overflow-hidden border border-game-accent/25 bg-gradient-to-b from-surface/95 via-well/95 to-canvas/95 select-none flex flex-col justify-between shrink-0 transition-all duration-200">
       {/* Monaco Vault Gold Ambient Top Shimmer */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-game-accent/50 to-transparent" />
 
       {/* ── TOP SECTION: Category & Type Header + Fixed Question Text Window ── */}
       <div className="w-full flex flex-col shrink-0">
         {/* Luxury Vault Header */}
         <div className="flex items-center justify-between gap-2 h-6 sm:h-7 mb-1 sm:mb-1.5">
           {/* Category Pill */}
-          <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-black text-gold bg-gold/10 border border-gold/25 px-2.5 py-0.5 rounded-full shadow-[inset_0_1px_0_rgba(229,184,66,0.15)] h-6 sm:h-7">
-            <AppIcon icon={Tag} size={12} weight="bold" className="text-gold shrink-0" />
+          <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-black text-game-accent bg-game-accent/10 border border-game-accent/25 px-2.5 py-0.5 rounded-full shadow-[inset_0_1px_0_var(--game-glow)] h-6 sm:h-7">
+            <AppIcon icon={Tag} size={12} weight="bold" className="text-game-accent shrink-0" />
             <span className="tracking-wide uppercase font-stats truncate max-w-[140px] sm:max-w-none">
               {categoryLabel}
             </span>
@@ -65,12 +65,12 @@ export function QuestionCard({
           {/* Right: Spectator Pill (if spectating) + Question Type Indicator */}
           <div className="flex items-center gap-1.5 shrink-0">
             {isSpectating && (
-              <span className="text-[10px] font-bold text-gold bg-gold/10 border border-gold/20 px-2 py-0.5 rounded-full flex items-center gap-1 h-6 sm:h-7">
+              <span className="text-[10px] font-bold text-game-accent bg-game-accent/10 border border-game-accent/20 px-2 py-0.5 rounded-full flex items-center gap-1 h-6 sm:h-7">
                 <AppIcon icon={Question} size={11} weight="duotone" />
                 <span className="hidden xs:inline">{isArabic ? 'المنافس يختار...' : 'Opponent answering...'}</span>
               </span>
             )}
-            <span className="text-[10px] sm:text-[11px] font-bold text-slate-400 bg-white/5 border border-white/10 px-2.5 py-0.5 rounded-full uppercase tracking-wider font-stats shrink-0 h-6 sm:h-7 flex items-center">
+            <span className="text-[10px] sm:text-[11px] font-bold text-muted bg-white/5 border border-white/10 px-2.5 py-0.5 rounded-full uppercase tracking-wider font-stats shrink-0 h-6 sm:h-7 flex items-center">
               {isTF ? (isArabic ? 'صح أو خطأ' : 'True / False') : isArabic ? '4 اختيارات' : '4 Choices'}
             </span>
           </div>
@@ -104,18 +104,18 @@ export function QuestionCard({
               const isTrueOpt = opt.id === 'true' || opt.text.en.toLowerCase() === 'true';
 
               let cardStyle = isTrueOpt
-                ? 'bg-emerald-500/[0.08] border-emerald-500/25 hover:bg-emerald-500/15 text-emerald-200'
-                : 'bg-rose-500/[0.08] border-rose-500/25 hover:bg-rose-500/15 text-rose-200';
+                ? 'bg-success/[0.08] border-success/25 hover:bg-success/15 text-success'
+                : 'bg-danger/[0.08] border-danger/25 hover:bg-danger/15 text-danger';
 
               if (isCorrect) {
                 cardStyle =
-                  'border-emerald-400 bg-emerald-500/30 text-emerald-100 shadow-[0_0_24px_rgba(16,185,129,0.4)] scale-[1.01]';
+                  'border-success bg-success/30 text-success shadow-[0_0_24px_var(--et-success-glow)] scale-[1.01]';
               } else if (isWrong) {
                 cardStyle =
-                  'border-rose-500 bg-rose-500/30 text-rose-100 shadow-[0_0_24px_rgba(239,68,68,0.4)] animate-shake';
+                  'border-danger bg-danger/30 text-danger shadow-[0_0_24px_var(--et-danger-glow)] animate-shake';
               } else if (isSelected) {
                 cardStyle =
-                  'border-gold bg-gold/25 text-gold-light shadow-[0_0_20px_rgba(229,184,66,0.35)] scale-[1.01]';
+                  'border-game-accent bg-game-accent/25 text-game-accent-light shadow-[0_0_20px_var(--game-glow)] scale-[1.01]';
               }
 
               return (
@@ -130,14 +130,14 @@ export function QuestionCard({
                   <span
                     className={`w-7 h-7 min-w-[28px] max-w-[28px] rounded-lg sm:rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-sm ${
                       isCorrect
-                        ? 'bg-emerald-400 text-slate-950'
+                        ? 'bg-success text-canvas'
                         : isWrong
-                          ? 'bg-rose-500 text-white'
+                          ? 'bg-danger text-white'
                           : isSelected
-                            ? 'bg-gold text-slate-950'
+                            ? 'bg-game-accent text-game-on-accent'
                             : isTrueOpt
-                              ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
-                              : 'bg-rose-500/20 text-rose-300 border border-rose-500/40'
+                              ? 'bg-success/20 text-success border border-success/40'
+                              : 'bg-danger/20 text-danger border border-danger/40'
                     }`}
                   >
                     {isTrueOpt ? (
@@ -159,11 +159,11 @@ export function QuestionCard({
                         icon={CheckCircle}
                         size={18}
                         weight="fill"
-                        className="text-emerald-400 animate-scale-in"
+                        className="text-success animate-scale-in"
                       />
                     )}
                     {isWrong && (
-                      <AppIcon icon={XCircle} size={18} weight="fill" className="text-rose-400 animate-shake" />
+                      <AppIcon icon={XCircle} size={18} weight="fill" className="text-danger animate-shake" />
                     )}
                   </div>
                 </button>
@@ -181,17 +181,17 @@ export function QuestionCard({
               );
 
               let btnStyles =
-                'apple-glass-card border border-white/10 hover:border-gold/40 hover:bg-gold/[0.05] text-slate-200 shadow-sm';
+                'apple-glass-card border border-white/10 hover:border-game-accent/40 hover:bg-game-accent/[0.05] text-foreground shadow-sm';
 
               if (isCorrect) {
                 btnStyles =
-                  'border-emerald-400 bg-emerald-500/25 text-emerald-200 shadow-[0_0_20px_rgba(16,185,129,0.35)] scale-[1.01]';
+                  'border-success bg-success/25 text-success shadow-[0_0_20px_var(--et-success-glow)] scale-[1.01]';
               } else if (isWrong) {
                 btnStyles =
-                  'border-rose-500 bg-rose-500/25 text-rose-200 shadow-[0_0_20px_rgba(239,68,68,0.35)] animate-shake';
+                  'border-danger bg-danger/25 text-danger shadow-[0_0_20px_var(--et-danger-glow)] animate-shake';
               } else if (isSelected) {
                 btnStyles =
-                  'border-gold bg-gold/25 text-gold-light shadow-[0_0_20px_rgba(229,184,66,0.35)] scale-[1.01]';
+                  'border-game-accent bg-game-accent/25 text-game-accent-light shadow-[0_0_20px_var(--game-glow)] scale-[1.01]';
               }
 
               const letterBadge = ['A', 'B', 'C', 'D'][idx] || `${idx + 1}`;
@@ -208,12 +208,12 @@ export function QuestionCard({
                   <span
                     className={`w-7 h-7 min-w-[28px] max-w-[28px] rounded-lg sm:rounded-xl flex items-center justify-center font-stats text-xs font-black shrink-0 transition-colors ${
                       isCorrect
-                        ? 'bg-emerald-400 text-slate-950 shadow-sm'
+                        ? 'bg-success text-canvas shadow-sm'
                         : isWrong
-                          ? 'bg-rose-500 text-white shadow-sm'
+                          ? 'bg-danger text-white shadow-sm'
                           : isSelected
-                            ? 'bg-gold text-slate-950 shadow-sm'
-                            : 'bg-white/10 text-slate-300'
+                            ? 'bg-game-accent text-game-on-accent shadow-sm'
+                            : 'bg-white/10 text-foreground'
                     }`}
                   >
                     {letterBadge}
@@ -231,11 +231,11 @@ export function QuestionCard({
                         icon={CheckCircle}
                         size={18}
                         weight="fill"
-                        className="text-emerald-400 animate-scale-in"
+                        className="text-success animate-scale-in"
                       />
                     )}
                     {isWrong && (
-                      <AppIcon icon={XCircle} size={18} weight="fill" className="text-rose-400 animate-shake" />
+                      <AppIcon icon={XCircle} size={18} weight="fill" className="text-danger animate-shake" />
                     )}
                   </div>
                 </button>

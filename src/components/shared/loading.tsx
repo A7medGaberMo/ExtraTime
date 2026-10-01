@@ -10,7 +10,7 @@ export function LoadingSpinner({ className, size = 24 }: { className?: string; s
       icon={CircleNotch}
       size={size}
       weight="bold"
-      className={cn('text-gold animate-spin', className)}
+      className={cn('text-game-accent animate-spin', className)}
     />
   );
 }

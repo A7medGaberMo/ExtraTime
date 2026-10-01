@@ -155,8 +155,8 @@ export default function BankHubPage() {
       title={t('bank.title')}
       subtitle={t('bank.subtitle')}
       badge={
-        <div className="hidden xs:inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/10 px-2.5 py-0.5 text-[10px] sm:text-xs font-semibold text-gold-light shadow-sm backdrop-blur-xl">
-          <AppIcon icon={Vault} size={12} weight="fill" className="text-gold" />
+        <div className="hidden xs:inline-flex items-center gap-1.5 rounded-full border border-game-accent/30 bg-game-accent/10 px-2.5 py-0.5 text-[10px] sm:text-xs font-semibold text-game-accent-light shadow-sm backdrop-blur-xl">
+          <AppIcon icon={Vault} size={12} weight="fill" className="text-game-accent" />
           <span className="font-stats tracking-wider uppercase font-bold">
             {t('bank.badge')}
           </span>
@@ -167,7 +167,7 @@ export default function BankHubPage() {
     >
       {/* ── 1. PERSONAL BEST VIP CAPSULE (COMPACT SINGLE-LINE) ────────── */}
       {personalBest && personalBest.totalSoloGames > 0 && pbTier && (
-        <div className="luxury-glass w-full rounded-xl sm:rounded-2xl px-3 py-1.5 sm:py-2 border border-gold/25 flex items-center justify-between gap-2 shadow-sm">
+        <div className="luxury-glass w-full rounded-xl sm:rounded-2xl px-3 py-1.5 sm:py-2 border border-game-accent/25 flex items-center justify-between gap-2 shadow-sm">
           <div className="flex items-center gap-2 min-w-0">
             <span
               className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border shadow-sm"
@@ -188,25 +188,25 @@ export default function BankHubPage() {
               )}
             </span>
             <div className="flex items-baseline gap-1.5 truncate">
-              <span className="text-[10px] font-bold text-steel uppercase tracking-wider font-stats shrink-0">
+              <span className="text-[10px] font-bold text-muted uppercase tracking-wider font-stats shrink-0">
                 {t('bank.hub.personalBest')}:
               </span>
               <span className="text-sm sm:text-base font-black font-stats text-white tabular-nums">
                 {personalBest.personalBestScore}
               </span>
-              <span className="text-[10px] font-bold font-stats text-gold">PTS</span>
+              <span className="text-[10px] font-bold font-stats text-game-accent">PTS</span>
               <span className="hidden sm:inline text-white/20">·</span>
-              <span className="hidden sm:inline text-[10px] font-bold font-stats text-gold-light uppercase" style={{ color: pbTier.color }}>
+              <span className="hidden sm:inline text-[10px] font-bold font-stats text-game-accent-light uppercase" style={{ color: pbTier.color }}>
                 {pbTier.label[lang]}
               </span>
             </div>
           </div>
 
           <div className="flex items-center gap-1.5 shrink-0">
-            <span className="rounded-full border border-gold/30 bg-gold/10 px-2 py-0.5 text-micro font-bold text-gold font-stats tabular-nums">
+            <span className="rounded-full border border-game-accent/30 bg-game-accent/10 px-2 py-0.5 text-micro font-bold text-game-accent font-stats tabular-nums">
               x{personalBest.highestStreak} {isArabic ? 'سلسلة' : 'STREAK'}
             </span>
-            <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-micro font-medium text-steel font-stats tabular-nums">
+            <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-micro font-medium text-muted font-stats tabular-nums">
               {personalBest.totalSoloGames} {isArabic ? 'جولة' : 'RUNS'}
             </span>
           </div>
@@ -214,7 +214,7 @@ export default function BankHubPage() {
       )}
 
       {/* ── 2. PRIMARY CONTROL CONSOLE (DEDICATED BANK IT ARENA) ─────── */}
-      <div className="luxury-glass-elevated relative w-full rounded-2xl sm:rounded-3xl p-3 sm:p-4 border border-gold/25 shadow-[0_20px_50px_rgba(0,0,0,0.7)] backdrop-blur-3xl space-y-3">
+      <div className="luxury-glass-elevated relative w-full rounded-2xl sm:rounded-3xl p-3 sm:p-4 border border-game-accent/25 shadow-[0_20px_50px_var(--et-shade-70)] backdrop-blur-3xl space-y-3">
         {/* Row 1: Manager Identity + Mode Switch */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 items-center">
           {/* Manager Handle Bar */}
@@ -222,7 +222,7 @@ export default function BankHubPage() {
             <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
               <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
               <div className="min-w-0">
-                <span className="text-[9px] text-steel font-bold uppercase tracking-widest block font-stats leading-none">
+                <span className="text-[9px] text-muted font-bold uppercase tracking-widest block font-stats leading-none">
                   {t('joinRoom.managerHandle')}
                 </span>
                 <span className="text-xs sm:text-sm font-bold text-white truncate block mt-0.5">
@@ -236,9 +236,9 @@ export default function BankHubPage() {
                 setPendingAction(null);
                 setShowNameModal(true);
               }}
-              className="btn-haptic flex items-center gap-1.5 rounded-xl border border-white/12 bg-white/5 px-2.5 py-1 text-xs font-semibold text-steel hover:border-gold/50 hover:text-white transition-all cursor-pointer shadow-sm"
+              className="btn-haptic flex items-center gap-1.5 rounded-xl border border-white/12 bg-white/5 px-2.5 py-1 text-xs font-semibold text-muted hover:border-game-accent/50 hover:text-white transition-all cursor-pointer shadow-sm"
             >
-              <AppIcon icon={Shuffle} size={14} weight="bold" className="text-gold" />
+              <AppIcon icon={Shuffle} size={14} weight="bold" className="text-game-accent" />
               <span>{isArabic ? 'تغيير' : 'Randomize'}</span>
             </button>
           </div>
@@ -254,53 +254,53 @@ export default function BankHubPage() {
         </div>
 
         {/* ── THE SIGNATURE BANK IT DOUBLING LADDER (1 >> 2K & CORE RULES) ── */}
-        <div className="rounded-2xl border border-gold/30 bg-gradient-to-b from-slate-900/90 via-[#0a0e17]/95 to-slate-950/95 p-3 sm:p-3.5 shadow-inner space-y-2.5 relative overflow-hidden">
+        <div className="rounded-2xl border border-game-accent/30 bg-gradient-to-b from-surface/90 via-well/95 to-canvas/95 p-3 sm:p-3.5 shadow-inner space-y-2.5 relative overflow-hidden">
           {/* Specular Top Shimmer */}
-          <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold to-transparent opacity-80" />
+          <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-game-accent to-transparent opacity-80" />
 
           {/* Ladder Header: 1 >> 2K */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <span className="flex h-6 w-6 items-center justify-center rounded-lg border border-gold/40 bg-gold/15 text-gold shadow-sm">
+              <span className="flex h-6 w-6 items-center justify-center rounded-lg border border-game-accent/40 bg-game-accent/15 text-game-accent shadow-sm">
                 <AppIcon icon={Lightning} size={14} weight="fill" />
               </span>
-              <span className="text-xs font-black uppercase text-gold-light tracking-wider font-stats">
+              <span className="text-xs font-black uppercase text-game-accent-light tracking-wider font-stats">
                 {isArabic ? 'سلم الجائزة الكبرى المضاعف (2x)' : 'THE 2X DOUBLING LADDER'}
               </span>
             </div>
             {/* 1 >> 2K Milestone */}
-            <div className="flex items-center gap-1.5 px-3 py-0.5 rounded-full border border-gold/40 bg-gold/15 shadow-sm">
+            <div className="flex items-center gap-1.5 px-3 py-0.5 rounded-full border border-game-accent/40 bg-game-accent/15 shadow-sm">
               <span className="text-xs font-black text-white font-stats">1</span>
-              <span className="text-[11px] font-bold text-gold font-stats">{isArabic ? '←' : '➔'}</span>
-              <span className="text-xs font-black text-gold font-stats tracking-wider">2K</span>
+              <span className="text-[11px] font-bold text-game-accent font-stats">{isArabic ? '←' : '➔'}</span>
+              <span className="text-xs font-black text-game-accent font-stats tracking-wider">2K</span>
             </div>
           </div>
 
           {/* Core Tension: Bank Safe vs Wipeout Risk - Clear & Prominent */}
           <div className="grid grid-cols-2 gap-2 pt-0.5">
-            <div className="flex items-center gap-2.5 rounded-xl bg-gold/5 border border-gold/25 p-2 sm:p-2.5 transition-colors hover:border-gold/45">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gold/20 text-gold border border-gold/40 shadow-sm">
+            <div className="flex items-center gap-2.5 rounded-xl bg-game-accent/5 border border-game-accent/25 p-2 sm:p-2.5 transition-colors hover:border-game-accent/45">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-game-accent/20 text-game-accent border border-game-accent/40 shadow-sm">
                 <AppIcon icon={Vault} size={17} weight="fill" />
               </span>
               <div className="min-w-0">
                 <span className="font-black text-white text-xs sm:text-sm block leading-tight">
                   {isArabic ? 'تأمين البنك' : 'Bank Safe'}
                 </span>
-                <span className="text-[10px] sm:text-[11px] text-amber-200/80 font-medium block leading-tight mt-0.5">
+                <span className="text-[10px] sm:text-[11px] text-game-accent-light/80 font-medium block leading-tight mt-0.5">
                   {isArabic ? 'احفظ نقاطك في أي وقت' : 'Lock points anytime'}
                 </span>
               </div>
             </div>
 
-            <div className="flex items-center gap-2.5 rounded-xl bg-rose-500/5 border border-rose-500/25 p-2 sm:p-2.5 transition-colors hover:border-rose-500/45">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-rose-500/20 text-rose-400 border border-rose-500/40 shadow-sm">
+            <div className="flex items-center gap-2.5 rounded-xl bg-danger/5 border border-danger/25 p-2 sm:p-2.5 transition-colors hover:border-danger/45">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-danger/20 text-danger border border-danger/40 shadow-sm">
                 <AppIcon icon={Flame} size={17} weight="fill" />
               </span>
               <div className="min-w-0">
                 <span className="font-black text-white text-xs sm:text-sm block leading-tight">
                   {isArabic ? 'خطر التصفير' : 'Wipeout Risk'}
                 </span>
-                <span className="text-[10px] sm:text-[11px] text-rose-200/80 font-medium block leading-tight mt-0.5">
+                <span className="text-[10px] sm:text-[11px] text-danger/80 font-medium block leading-tight mt-0.5">
                   {isArabic ? 'الخطأ يُصفّر المعلق' : 'Miss wipes unbanked'}
                 </span>
               </div>
@@ -312,10 +312,10 @@ export default function BankHubPage() {
         {activeTab === 'solo' && (
           <div className="space-y-1.5 sm:space-y-2 pt-0.5 animate-fade-in">
             <div className="flex items-center justify-between px-1 text-xs">
-              <span className="text-slate-300 font-medium text-[11px] sm:text-xs">
+              <span className="text-foreground font-medium text-[11px] sm:text-xs">
                 {isArabic ? '12 سؤال متصاعد في 90 ثانية · اجمع أعلى رصيد' : '12 Doubling Questions · 90s Solo Sprint'}
               </span>
-              <span className="font-stats font-bold text-gold text-[10px] sm:text-xs">
+              <span className="font-stats font-bold text-game-accent text-[10px] sm:text-xs">
                 {isArabic ? 'سباق فردي' : 'SOLO RUN'}
               </span>
             </div>
@@ -328,7 +328,7 @@ export default function BankHubPage() {
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Play} size={18} weight="fill" />}
-              className="btn-gold-sheen rounded-2xl font-black h-11 sm:h-12 text-xs sm:text-sm text-slate-950 shadow-lg shadow-gold/25"
+              className="btn-accent-sheen rounded-2xl font-black h-11 sm:h-12 text-xs sm:text-sm text-game-on-accent shadow-lg shadow-game-accent/25"
             >
               <span>{t('bank.hub.startRunNow')}</span>
             </Button>
@@ -341,14 +341,14 @@ export default function BankHubPage() {
             <div className="p-2.5 rounded-xl bg-white/[0.03] border border-white/8 flex items-center justify-between shadow-inner">
               <div className="flex items-center gap-2 min-w-0">
                 <span className="relative flex h-2.5 w-2.5 shrink-0">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-gold" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-game-accent opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-game-accent" />
                 </span>
                 <div className="min-w-0">
                   <span className="text-xs font-bold text-white block truncate">
                     {t('bank.hub.radarTitle')}
                   </span>
-                  <span className="text-[9.5px] text-steel block truncate">
+                  <span className="text-[9.5px] text-muted block truncate">
                     {t('bank.hub.quickDesc')}
                   </span>
                 </div>
@@ -370,7 +370,7 @@ export default function BankHubPage() {
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Sword} size={18} weight="bold" />}
-              className="btn-gold-sheen rounded-2xl font-black h-11 sm:h-12 text-xs sm:text-sm text-slate-950 shadow-lg shadow-gold/25"
+              className="btn-accent-sheen rounded-2xl font-black h-11 sm:h-12 text-xs sm:text-sm text-game-on-accent shadow-lg shadow-game-accent/25"
             >
               <span>{t('bank.hub.findOpponent')}</span>
             </Button>
@@ -380,13 +380,13 @@ export default function BankHubPage() {
         {/* ── TAB 3: PRIVATE DUEL ───────────────────────────────────── */}
         {activeTab === 'duel' && (
           <div className="space-y-1.5 sm:space-y-2 pt-0.5 animate-fade-in">
-            <div className="flex items-center justify-between px-1 text-[10px] text-steel">
+            <div className="flex items-center justify-between px-1 text-[10px] text-muted">
               <span>
                 {isArabic
                   ? 'مبارزة حية 1 ضد 1 · نفس الأسئلة لكلا المدربين'
                   : 'Live 1v1 duel · Same 12 questions for both managers'}
               </span>
-              <span className="font-stats font-bold text-gold text-micro">
+              <span className="font-stats font-bold text-game-accent text-micro">
                 {isArabic ? 'وقت إضافي 15ث' : '15S TIEBREAKER'}
               </span>
             </div>
@@ -399,12 +399,12 @@ export default function BankHubPage() {
               disabled={loading}
               loading={loading}
               leftIcon={<AppIcon icon={Users} size={18} weight="bold" />}
-              className="btn-gold-sheen rounded-2xl font-black h-11 text-xs sm:text-sm text-slate-950 shadow-lg shadow-gold/25"
+              className="btn-accent-sheen rounded-2xl font-black h-11 text-xs sm:text-sm text-game-on-accent shadow-lg shadow-game-accent/25"
             >
               <span>{t('bank.hub.createRoom')}</span>
             </Button>
 
-            <div className="flex items-center gap-2 text-[9px] text-steel font-bold uppercase font-stats">
+            <div className="flex items-center gap-2 text-[9px] text-muted font-bold uppercase font-stats">
               <div className="h-px bg-white/8 flex-1" />
               <span>{t('bank.hub.orJoinWithCode')}</span>
               <div className="h-px bg-white/8 flex-1" />
@@ -459,7 +459,7 @@ export default function BankHubPage() {
                 onClick={() => setNickname(randomName())}
                 aria-label={t('home.nameModal.randomize')}
                 title={t('home.nameModal.randomize')}
-                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-slate-300 transition-colors hover:border-gold/50 hover:text-gold"
+                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-foreground transition-colors hover:border-game-accent/50 hover:text-game-accent"
               >
                 <AppIcon icon={Shuffle} size={18} weight="bold" />
               </button>
@@ -467,7 +467,7 @@ export default function BankHubPage() {
           />
 
           <div className="flex items-center justify-end px-1">
-            <span className="text-steel font-stats text-xs">{nickname.length}/18</span>
+            <span className="text-muted font-stats text-xs">{nickname.length}/18</span>
           </div>
 
           <Button
@@ -477,7 +477,7 @@ export default function BankHubPage() {
             onClick={handleModalSubmit}
             disabled={loading || !nickname.trim()}
             loading={loading}
-            className="rounded-2xl text-slate-950 font-bold"
+            className="rounded-2xl text-game-on-accent font-bold"
           >
             <span>{loading ? t('home.nameModal.finding') : t('home.nameModal.submit')}</span>
           </Button>

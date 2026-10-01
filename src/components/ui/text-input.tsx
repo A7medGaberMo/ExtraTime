@@ -23,12 +23,12 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
         {(label || badgeText) && (
           <div className="flex items-center justify-between">
             {label && (
-              <label className="text-steel text-xs font-semibold tracking-wide">
+              <label className="text-muted text-xs font-semibold tracking-wide">
                 {label}
               </label>
             )}
             {badgeText && (
-              <span className="text-gold text-xs font-semibold tracking-wide">
+              <span className="text-game-accent text-xs font-semibold tracking-wide">
                 {badgeText}
               </span>
             )}
@@ -37,7 +37,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
 
         <div className="relative flex items-center">
           {leftIcon && (
-            <span className="text-steel pointer-events-none absolute start-3.5 flex items-center">
+            <span className="text-muted pointer-events-none absolute start-3.5 flex items-center">
               {leftIcon}
             </span>
           )}
@@ -45,24 +45,24 @@ export const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
           <input
             ref={ref}
             className={cn(
-              'h-11 sm:h-12 w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 text-xs sm:text-sm font-semibold text-white placeholder:text-steel/50 transition-all duration-150 focus:border-gold/50 focus:bg-slate-900/90 focus:outline-none backdrop-blur-md',
+              'h-11 sm:h-12 w-full rounded-2xl border border-white/10 bg-canvas/80 px-4 text-xs sm:text-sm font-semibold text-foreground placeholder:text-muted/50 transition-all duration-150 focus:border-game-accent/50 focus:bg-surface/90 focus:outline-none backdrop-blur-md',
               leftIcon && 'ps-10',
               actionElement && 'pe-10',
-              error && 'border-rose-500/50 focus:border-rose-500',
+              error && 'border-danger/50 focus:border-danger',
               className,
             )}
             {...props}
           />
 
           {actionElement && (
-            <span className="text-steel absolute end-2 flex items-center">
+            <span className="text-muted absolute end-2 flex items-center">
               {actionElement}
             </span>
           )}
         </div>
 
         {error && (
-          <p className="text-rose-400 text-xs font-medium ps-1">{error}</p>
+          <p className="text-danger text-xs font-medium ps-1">{error}</p>
         )}
       </div>
     );

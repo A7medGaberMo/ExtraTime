@@ -36,7 +36,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className, imgClassName 
     return (
       <div
         className={cn(
-          'relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-amber-400/50 bg-slate-950/80 p-0.5 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
+          'relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-tier-gold/50 bg-canvas/80 p-0.5 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
           className,
         )}
         title="Global Icons & Legends"
@@ -45,7 +45,7 @@ export function ClubCrestBadge({ clubName, clubLogoUrl, className, imgClassName 
         <img
           src="/logos/et-logo-metallic-gold.svg"
           alt="Icon Team"
-          className={cn('h-full w-full max-h-full max-w-full object-contain drop-shadow-[0_0_6px_rgba(212,175,55,0.7)] filter', imgClassName)}
+          className={cn('h-full w-full max-h-full max-w-full object-contain drop-shadow-[0_0_6px_var(--et-texture-glow)] filter', imgClassName)}
         />
       </div>
     );
@@ -96,7 +96,7 @@ const CLUB_ALIASES: Record<string, string> = {
   return (
     <div
       className={cn(
-        'relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/25 bg-slate-950/70 p-0.5 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
+        'relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/25 bg-canvas/70 p-0.5 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
         className,
       )}
       title={clubName}
@@ -108,7 +108,7 @@ const CLUB_ALIASES: Record<string, string> = {
           alt={clubName}
           referrerPolicy="no-referrer"
           onError={() => setError(true)}
-          className={cn('h-full w-full max-h-full max-w-full object-contain drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] filter', imgClassName)}
+          className={cn('h-full w-full max-h-full max-w-full object-contain drop-shadow-[0_1px_3px_var(--et-shade-90)] filter', imgClassName)}
         />
       ) : (
         <div className="flex items-center justify-center text-[9px] font-black tracking-tighter text-white/80 uppercase">
@@ -303,7 +303,7 @@ export function CountryFlagBadge({ nationName, flagUrl, className, imgClassName 
   return (
     <div
       className={cn(
-        'relative flex h-5 w-7 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-white/25 bg-slate-950/70 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
+        'relative flex h-5 w-7 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-white/25 bg-canvas/70 shadow-lg backdrop-blur-md transition-transform group-hover:scale-105',
         className,
       )}
       title={nationName}
@@ -315,7 +315,7 @@ export function CountryFlagBadge({ nationName, flagUrl, className, imgClassName 
           alt={nationName}
           referrerPolicy="no-referrer"
           onError={() => setError(true)}
-          className={cn('h-full w-full object-cover drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] filter', imgClassName)}
+          className={cn('h-full w-full object-cover drop-shadow-[0_1px_2px_var(--et-shade-80)] filter', imgClassName)}
         />
       ) : (
         <AppIcon icon={Flag} size={12} weight="duotone" className="text-white/80" />

@@ -130,7 +130,7 @@ export function DraftShowdownModal({
         initial={{ opacity: 0, scale: 0.94, y: 15 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ type: 'spring', stiffness: 450, damping: 32 }}
-        className="apple-glass-elevated relative w-full max-w-lg max-h-[92dvh] overflow-y-auto rounded-3xl p-4 sm:p-6 shadow-[0_30px_70px_rgba(0,0,0,0.85)] space-y-3.5 sm:space-y-4 border border-white/20"
+        className="apple-glass-elevated relative w-full max-w-lg max-h-[92dvh] overflow-y-auto rounded-3xl p-4 sm:p-6 shadow-[0_30px_70px_var(--et-shade-85)] space-y-3.5 sm:space-y-4 border border-white/20"
       >
         {/* Top Bar Navigation (Pitch Review, Hub Link, Close) */}
         <div className="relative z-20 flex items-center justify-between pb-2 border-b border-white/10">
@@ -138,7 +138,7 @@ export function DraftShowdownModal({
             <button
               type="button"
               onClick={onClose}
-              className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.06] px-3 py-1 text-xs font-bold text-slate-300 hover:text-white transition-colors cursor-pointer shadow-sm"
+              className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.06] px-3 py-1 text-xs font-bold text-foreground hover:text-white transition-colors cursor-pointer shadow-sm"
               title="Review Pitch"
               aria-label="Review Pitch"
             >
@@ -150,7 +150,7 @@ export function DraftShowdownModal({
           <div className="flex items-center gap-2">
             <Link
               href="/draft"
-              className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-cyan-400/30 bg-cyan-950/40 px-3 py-1 text-xs font-bold text-cyan-300 hover:text-white transition-colors shadow-sm"
+              className="btn-haptic inline-flex items-center gap-1.5 rounded-full border border-game-accent/30 bg-game-accent/10 px-3 py-1 text-xs font-bold text-game-accent-light hover:text-white transition-colors shadow-sm"
               title="Draft Hub"
               aria-label="Draft Hub"
             >
@@ -161,7 +161,7 @@ export function DraftShowdownModal({
               <button
                 type="button"
                 onClick={onClose}
-                className="btn-haptic flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-white/[0.06] text-slate-300 hover:text-white transition-colors cursor-pointer"
+                className="btn-haptic flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-white/[0.06] text-foreground hover:text-white transition-colors cursor-pointer"
                 title="Close Modal"
                 aria-label="Close showdown modal"
               >
@@ -173,13 +173,13 @@ export function DraftShowdownModal({
 
         {/* Header — Apple Sports Presentation */}
         <div className="text-center space-y-1.5">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/10 px-3 py-0.5 text-[10px] sm:text-xs font-bold text-gold shadow-sm">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-game-accent/30 bg-game-accent/10 px-3 py-0.5 text-[10px] sm:text-xs font-bold text-game-accent shadow-sm">
             <AppIcon icon={Lightning} size={12} weight="fill" />
             {isSolo ? 'BOSS SHOWDOWN' : '1v1 DRAFT SHOWDOWN'}
           </span>
           <div className="flex items-center justify-center gap-2">
             {isSimComplete && isWinner && (
-              <AppIcon icon={Trophy} size={24} weight="fill" className="text-gold shrink-0" />
+              <AppIcon icon={Trophy} size={24} weight="fill" className="text-game-accent shrink-0" />
             )}
             <h2 className="font-display text-xl sm:text-2xl font-black text-white tracking-tight">
               {isSimComplete
@@ -192,30 +192,30 @@ export function DraftShowdownModal({
         </div>
 
         {/* Live Apple Scoreboard Tile */}
-        <div className="apple-segmented-bar relative overflow-hidden rounded-2xl p-3.5 sm:p-4 shadow-inner border border-gold/15">
+        <div className="apple-segmented-bar relative overflow-hidden rounded-2xl p-3.5 sm:p-4 shadow-inner border border-game-accent/15">
           <div className="flex items-center justify-between gap-2 sm:gap-4">
             {/* Host Side */}
             <div className="flex-1 text-center sm:text-start space-y-0.5 min-w-0">
               <span className="block truncate text-xs sm:text-sm font-extrabold text-white">
                 {hostParticipant.name}
               </span>
-              <div className="flex items-center justify-center sm:justify-start gap-1.5 text-[10px] text-slate-400">
+              <div className="flex items-center justify-center sm:justify-start gap-1.5 text-[10px] text-muted">
                 <span>OVR {hostParticipant.squadRating}</span>
                 <span>•</span>
-                <span className="text-gold font-bold">CHEM {hostParticipant.chemistryScore}</span>
+                <span className="text-game-accent font-bold">CHEM {hostParticipant.chemistryScore}</span>
               </div>
             </div>
 
             {/* Live Animated Score with Tabular Lining Figures */}
             <div className="flex flex-col items-center px-2 sm:px-4 shrink-0">
               <div className="flex items-center gap-2 font-display text-3xl sm:text-4xl font-black text-white font-stats">
-                <span className="text-gold">{isSimComplete ? showdownResult.score.host : liveScore.host}</span>
+                <span className="text-game-accent">{isSimComplete ? showdownResult.score.host : liveScore.host}</span>
                 <span className="text-white/30">:</span>
-                <span className="text-purple-400">{isSimComplete ? showdownResult.score.guest : liveScore.guest}</span>
+                <span className="text-tier-master">{isSimComplete ? showdownResult.score.guest : liveScore.guest}</span>
               </div>
 
               {/* Minute badge */}
-              <span className="mt-1 rounded-full border border-gold/30 bg-gold/10 px-2.5 py-0.5 font-stats text-[10px] font-bold text-gold shadow-sm">
+              <span className="mt-1 rounded-full border border-game-accent/30 bg-game-accent/10 px-2.5 py-0.5 font-stats text-[10px] font-bold text-game-accent shadow-sm">
                 {isSimComplete
                   ? showdownResult.isShootout
                     ? `FT (${showdownResult.shootoutScore?.host}-${showdownResult.shootoutScore?.guest} PK)`
@@ -229,10 +229,10 @@ export function DraftShowdownModal({
               <span className="block truncate text-xs sm:text-sm font-extrabold text-white">
                 {guestParticipant?.name || 'Legendary Boss XI'}
               </span>
-              <div className="flex items-center justify-center sm:justify-end gap-1.5 text-[10px] text-slate-400">
+              <div className="flex items-center justify-center sm:justify-end gap-1.5 text-[10px] text-muted">
                 <span>OVR {guestParticipant?.squadRating || 94}</span>
                 <span>•</span>
-                <span className="text-purple-400 font-bold">
+                <span className="text-tier-master font-bold">
                   CHEM {guestParticipant?.chemistryScore || 33}
                 </span>
               </div>
@@ -241,7 +241,7 @@ export function DraftShowdownModal({
 
           {/* Shootout indicator */}
           {showdownResult.isShootout && isSimComplete && (
-            <div className="mt-2 border-t border-white/8 pt-1.5 text-center text-xs font-bold text-gold">
+            <div className="mt-2 border-t border-white/8 pt-1.5 text-center text-xs font-bold text-game-accent">
               Penalties: {showdownResult.shootoutScore?.host} - {showdownResult.shootoutScore?.guest}
             </div>
           )}
@@ -250,44 +250,44 @@ export function DraftShowdownModal({
         {/* Sector Balance Comparison — Apple Complications */}
         <div className="grid grid-cols-3 gap-2 text-center">
           <div className="rounded-xl border border-white/8 bg-white/[0.03] p-2 shadow-sm">
-            <span className="text-[9px] font-extrabold uppercase tracking-wider text-slate-400">ATTACK</span>
+            <span className="text-[9px] font-extrabold uppercase tracking-wider text-muted">ATTACK</span>
             <div className="mt-0.5 flex items-center justify-between text-xs font-stats font-black px-1">
-              <span className="text-gold">{showdownResult.sectors.host.attack}</span>
-              <span className="text-purple-400">{showdownResult.sectors.guest.attack}</span>
+              <span className="text-game-accent">{showdownResult.sectors.host.attack}</span>
+              <span className="text-tier-master">{showdownResult.sectors.guest.attack}</span>
             </div>
           </div>
           <div className="rounded-xl border border-white/8 bg-white/[0.03] p-2 shadow-sm">
-            <span className="text-[9px] font-extrabold uppercase tracking-wider text-slate-400">MIDFIELD</span>
+            <span className="text-[9px] font-extrabold uppercase tracking-wider text-muted">MIDFIELD</span>
             <div className="mt-0.5 flex items-center justify-between text-xs font-stats font-black px-1">
-              <span className="text-gold">{showdownResult.sectors.host.midfield}</span>
-              <span className="text-purple-400">{showdownResult.sectors.guest.midfield}</span>
+              <span className="text-game-accent">{showdownResult.sectors.host.midfield}</span>
+              <span className="text-tier-master">{showdownResult.sectors.guest.midfield}</span>
             </div>
           </div>
           <div className="rounded-xl border border-white/8 bg-white/[0.03] p-2 shadow-sm">
-            <span className="text-[9px] font-extrabold uppercase tracking-wider text-slate-400">DEFENSE</span>
+            <span className="text-[9px] font-extrabold uppercase tracking-wider text-muted">DEFENSE</span>
             <div className="mt-0.5 flex items-center justify-between text-xs font-stats font-black px-1">
-              <span className="text-gold">{showdownResult.sectors.host.defense}</span>
-              <span className="text-purple-400">{showdownResult.sectors.guest.defense}</span>
+              <span className="text-game-accent">{showdownResult.sectors.host.defense}</span>
+              <span className="text-tier-master">{showdownResult.sectors.guest.defense}</span>
             </div>
           </div>
         </div>
 
         {/* Live Match Timeline Ticker — Apple Live Activity Style */}
         <div className="max-h-28 sm:max-h-36 overflow-y-auto space-y-1.5 rounded-2xl border border-white/8 bg-black/25 p-3 shadow-inner">
-          <span className="block text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-slate-400 mb-1">
+          <span className="block text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-muted mb-1">
             Match Highlights
           </span>
           {visibleEvents.length === 0 ? (
-            <span className="block py-2 text-center text-xs text-slate-400">
+            <span className="block py-2 text-center text-xs text-muted">
               Kicking off match...
             </span>
           ) : (
             visibleEvents.map((ev, i) => (
               <div
                 key={i}
-                className="flex items-start gap-2.5 text-[11px] sm:text-xs text-slate-200 border-b border-white/5 pb-1 last:border-0"
+                className="flex items-start gap-2.5 text-[11px] sm:text-xs text-foreground border-b border-white/5 pb-1 last:border-0"
               >
-                <span className="shrink-0 font-stats font-extrabold text-gold w-7 text-start">
+                <span className="shrink-0 font-stats font-extrabold text-game-accent w-7 text-start">
                   {ev.minute <= 90 ? `${ev.minute}'` : 'PK'}
                 </span>
                 <span className="flex-1 truncate">{ev.description}</span>
@@ -306,8 +306,8 @@ export function DraftShowdownModal({
                 fullWidth
                 onClick={onPlayBossMatch}
                 disabled={bossLoading}
-                leftIcon={<AppIcon icon={Sword} size={16} weight="bold" className="text-slate-950" />}
-                className="font-bold text-slate-950 shadow-md shadow-gold/25 rounded-xl py-2.5"
+                leftIcon={<AppIcon icon={Sword} size={16} weight="bold" className="text-game-on-accent" />}
+                className="font-bold text-game-on-accent shadow-md shadow-game-accent/25 rounded-xl py-2.5"
               >
                 {bossLoading ? 'Summoning...' : 'Battle Boss Again'}
               </Button>
@@ -333,12 +333,12 @@ export function DraftShowdownModal({
                 disabled={isRematching || (rematchState?.status === 'pending' && rematchState.iAmInviter) || rematchState?.status === 'accepted'}
                 leftIcon={
                   isRematching || (rematchState?.status === 'pending' && rematchState.iAmInviter) || rematchState?.status === 'accepted' ? (
-                    <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-slate-950" />
+                    <AppIcon icon={CircleNotch} size={16} weight="bold" className="animate-spin text-game-on-accent" />
                   ) : (
-                    <AppIcon icon={ArrowsClockwise} size={16} weight="bold" className="text-slate-950" />
+                    <AppIcon icon={ArrowsClockwise} size={16} weight="bold" className="text-game-on-accent" />
                   )
                 }
-                className="rounded-xl font-bold text-slate-950 py-2.5 shadow-md shadow-gold/20"
+                className="rounded-xl font-bold text-game-on-accent py-2.5 shadow-md shadow-game-accent/20"
               >
                 {rematchState?.status === 'accepted'
                   ? 'Entering Rematch...'
@@ -354,8 +354,8 @@ export function DraftShowdownModal({
         {/* Opponent Rematch Invitation Overlay */}
         {!isSolo && rematchState?.status === 'pending' && !rematchState.iAmInviter && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-            <div className="apple-glass-elevated max-w-sm w-full p-6 text-center space-y-5 rounded-3xl border border-gold/40 shadow-[0_20px_60px_rgba(229,184,66,0.25)]">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-gold/40 bg-gold/10 text-gold mx-auto shadow-[0_0_24px_rgba(229,184,66,0.3)]">
+            <div className="apple-glass-elevated max-w-sm w-full p-6 text-center space-y-5 rounded-3xl border border-game-accent/40 shadow-[0_20px_60px_var(--game-glow)]">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-game-accent/40 bg-game-accent/10 text-game-accent mx-auto shadow-[0_0_24px_var(--game-glow)]">
                 <AppIcon icon={UserPlus} size={32} weight="duotone" />
               </div>
 
@@ -363,7 +363,7 @@ export function DraftShowdownModal({
                 <h2 className="text-xl font-black text-white uppercase font-display tracking-tight">
                   Rematch Invitation!
                 </h2>
-                <p className="text-steel text-xs font-medium max-w-xs mx-auto leading-relaxed">
+                <p className="text-muted text-xs font-medium max-w-xs mx-auto leading-relaxed">
                   {rematchState.inviterName || 'Your opponent'} challenges you to a 1v1 Draft Rematch!
                 </p>
               </div>
@@ -374,8 +374,8 @@ export function DraftShowdownModal({
                   size="lg"
                   fullWidth
                   onClick={onAcceptRematch}
-                  leftIcon={<AppIcon icon={CheckCircle} size={20} weight="fill" className="text-slate-950" />}
-                  className="font-bold text-slate-950 shadow-[0_4px_20px_rgba(229,184,66,0.35)]"
+                  leftIcon={<AppIcon icon={CheckCircle} size={20} weight="fill" className="text-game-on-accent" />}
+                  className="font-bold text-game-on-accent shadow-[0_4px_20px_var(--game-glow)]"
                 >
                   Accept Rematch
                 </Button>
@@ -384,8 +384,8 @@ export function DraftShowdownModal({
                   size="md"
                   fullWidth
                   onClick={onDeclineRematch}
-                  leftIcon={<AppIcon icon={X} size={16} weight="bold" className="text-steel" />}
-                  className="text-steel hover:text-white"
+                  leftIcon={<AppIcon icon={X} size={16} weight="bold" className="text-muted" />}
+                  className="text-muted hover:text-white"
                 >
                   Decline
                 </Button>

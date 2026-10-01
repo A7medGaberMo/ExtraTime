@@ -3,7 +3,6 @@
  */
 export type GameType =
   | 'hidden_bid'
-  | 'pack_opening_duel'
   | 'penalty_shootout'
   | 'classic_draft'
   | 'bank_it';
@@ -17,7 +16,6 @@ export interface GameConfig {
   minPlayers: number;
   maxPlayers: number;
   icon: string;
-  accentColor: string;
   /** Whether the game is currently available to play */
   isAvailable: boolean;
   /** Path for creating or joining this game type */
@@ -35,22 +33,8 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     minPlayers: 2,
     maxPlayers: 2,
     icon: 'Crosshair',
-    accentColor: '#E5B842',
     isAvailable: true,
     routePrefix: '/auction',
-  },
-  pack_opening_duel: {
-    type: 'pack_opening_duel',
-    label: 'Pack Opening Duel',
-    badgeLabel: '📦 PACK DUEL',
-    description:
-      'Open real-time database tier packs simultaneously and compare overall squad power.',
-    minPlayers: 2,
-    maxPlayers: 2,
-    icon: 'Package',
-    accentColor: '#A855F7',
-    isAvailable: true,
-    routePrefix: '/packs',
   },
   penalty_shootout: {
     type: 'penalty_shootout',
@@ -60,7 +44,6 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     minPlayers: 2,
     maxPlayers: 2,
     icon: 'Target',
-    accentColor: '#F59E0B',
     isAvailable: false,
     routePrefix: '/shootout',
   },
@@ -73,7 +56,6 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     minPlayers: 1,
     maxPlayers: 2,
     icon: 'Lightning',
-    accentColor: '#00F0FF',
     isAvailable: true,
     routePrefix: '/draft',
   },
@@ -86,7 +68,6 @@ export const GAME_REGISTRY: Record<GameType, GameConfig> = {
     minPlayers: 1,
     maxPlayers: 2,
     icon: 'Coins',
-    accentColor: '#E5B842',
     isAvailable: true,
     routePrefix: '/bank',
   },

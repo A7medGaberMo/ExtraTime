@@ -68,12 +68,16 @@ export function CircularTimer({
   const isUrgent = remainingSeconds <= 10;
   const isWarning = remainingSeconds <= 25 && !isUrgent;
 
-  const strokeColor = isUrgent ? '#EF4444' : isWarning ? '#F97316' : '#F59E0B';
-  const glowColor = isUrgent
-    ? 'rgba(239, 68, 68, 0.5)'
+  const strokeColor = isUrgent
+    ? 'var(--et-danger)'
     : isWarning
-      ? 'rgba(249, 115, 22, 0.45)'
-      : 'rgba(245, 158, 11, 0.35)';
+      ? 'var(--et-warning)'
+      : 'var(--et-warning)';
+  const glowColor = isUrgent
+    ? 'var(--et-danger)'
+    : isWarning
+      ? 'var(--et-warning)'
+      : 'var(--et-warning)';
 
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
@@ -92,7 +96,7 @@ export function CircularTimer({
           cx={size / 2}
           cy={size / 2}
           r={radius}
-          stroke="rgba(255, 255, 255, 0.1)"
+          stroke="var(--et-hi-10)"
           strokeWidth={strokeWidth}
           fill="none"
         />
@@ -115,10 +119,10 @@ export function CircularTimer({
       <div
         className={`absolute inset-0 flex flex-col items-center justify-center transition-transform duration-200 ${
           isUrgent
-            ? 'animate-pulse scale-105 text-rose-400'
+            ? 'animate-pulse scale-105 text-danger'
             : isWarning
-              ? 'text-amber-400'
-              : 'text-amber-300'
+              ? 'text-warning'
+              : 'text-warning'
         }`}
       >
         <span
@@ -129,7 +133,7 @@ export function CircularTimer({
           {remainingSeconds}
         </span>
         {size > 48 && (
-          <span className="text-[9px] font-bold text-slate-400 uppercase leading-none mt-0.5">
+          <span className="text-[9px] font-bold text-muted uppercase leading-none mt-0.5">
             SEC
           </span>
         )}

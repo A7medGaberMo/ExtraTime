@@ -153,7 +153,7 @@ export default function HomePage() {
                 onClick={() => setNickname(randomName())}
                 aria-label={t('home.nameModal.randomize')}
                 title={t('home.nameModal.randomize')}
-                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-slate-300 transition-colors hover:border-gold/50 hover:text-gold"
+                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white/80 transition-colors hover:border-game-accent/50 hover:text-game-accent"
               >
                 <AppIcon icon={Shuffle} size={18} weight="bold" />
               </button>
@@ -161,7 +161,7 @@ export default function HomePage() {
           />
 
           <div className="flex items-center justify-end px-1">
-            <span className="font-stats text-xs text-steel">{nickname.length}/18</span>
+            <span className="font-stats text-xs text-muted">{nickname.length}/18</span>
           </div>
 
           <Button

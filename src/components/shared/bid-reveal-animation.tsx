@@ -100,7 +100,7 @@ export function BidRevealAnimation({
 
   return (
     <div
-      className={`fixed inset-0 z-[95] flex items-center justify-center bg-slate-950/90 p-2 sm:p-4 backdrop-blur-2xl transition-all duration-300 select-none ${
+      className={`fixed inset-0 z-[95] flex items-center justify-center bg-canvas/90 p-2 sm:p-4 backdrop-blur-2xl transition-all duration-300 select-none ${
         stage === 'exit' ? 'pointer-events-none scale-95 opacity-0' : 'scale-100 opacity-100'
       }`}
       onClick={handleManualClose}
@@ -109,21 +109,21 @@ export function BidRevealAnimation({
       <div
         className={`pointer-events-none absolute top-1/2 left-1/2 h-[280px] w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[120px] transition-colors duration-500 sm:h-[460px] sm:w-[460px] ${
           winnerIsMe
-            ? 'bg-gold/25'
+            ? 'bg-game-accent/25'
             : winningBid > 0
-              ? 'bg-rose-500/20'
-              : 'bg-amber-400/20'
+              ? 'bg-danger/20'
+              : 'bg-warning/20'
         }`}
       />
 
       <div
-        className="relative flex max-h-[94dvh] w-full max-w-lg flex-col items-center gap-2 sm:gap-3.5 overflow-hidden rounded-3xl border border-white/18 bg-slate-900/90 p-3 sm:p-5 shadow-[0_32px_80px_rgba(0,0,0,0.88),inset_0_1px_0_0_rgba(255,255,255,0.15)] backdrop-blur-3xl"
+        className="relative flex max-h-[94dvh] w-full max-w-lg flex-col items-center gap-2 sm:gap-3.5 overflow-hidden rounded-3xl border border-white/18 bg-surface/90 p-3 sm:p-5 shadow-[0_32px_80px_var(--et-shade-90),inset_0_1px_0_0_var(--et-hi-15)] backdrop-blur-3xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Dismiss Button */}
         <button
           onClick={handleManualClose}
-          className="btn-haptic absolute top-3 right-3 z-20 flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-slate-950/80 text-steel transition-all hover:border-gold/40 hover:text-white cursor-pointer active:scale-90"
+          className="btn-haptic absolute top-3 right-3 z-20 flex h-7 w-7 items-center justify-center rounded-full border border-white/12 bg-canvas/80 text-muted transition-all hover:border-game-accent/40 hover:text-white cursor-pointer active:scale-90"
           title="Skip Reveal"
           aria-label="Skip Reveal"
         >
@@ -132,23 +132,23 @@ export function BidRevealAnimation({
 
         {/* ── MINIMAL APPLE KEYNOTE HEADER ── */}
         <header className="z-10 flex flex-col items-center pt-1 text-center space-y-1">
-          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-0.5 text-[10px] font-black tracking-widest uppercase font-stats text-steel">
-            <AppIcon icon={Sword} size={12} weight="duotone" className="text-gold" />
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-0.5 text-[10px] font-black tracking-widest uppercase font-stats text-muted">
+            <AppIcon icon={Sword} size={12} weight="duotone" className="text-game-accent" />
             <span>Round {roundNumber} · {position}</span>
           </div>
 
           <h2 className="text-sm sm:text-base font-black uppercase font-display tracking-wide pt-0.5">
             {winnerIsMe ? (
-              <span className="text-gold">You Won The Star Target</span>
+              <span className="text-game-accent">You Won The Star Target</span>
             ) : winningBid > 0 ? (
-              <span className="text-rose-400">Rival Won The Star Target</span>
+              <span className="text-danger">Rival Won The Star Target</span>
             ) : (
-              <span className="text-amber-300">Both Passed · $0M Tie</span>
+              <span className="text-warning">Both Passed · $0M Tie</span>
             )}
           </h2>
 
           {wasTieLottery && (
-            <span className="text-[9px] font-bold text-amber-300 uppercase font-stats">
+            <span className="text-[9px] font-bold text-warning uppercase font-stats">
               Decided by Tie Draw
             </span>
           )}
@@ -160,8 +160,8 @@ export function BidRevealAnimation({
           <div
             className={`flex flex-col items-center justify-between rounded-2xl border p-2 sm:p-3 transition-all ${
               winnerIsMe
-                ? 'border-gold/40 bg-gold/[0.06] shadow-[0_4px_20px_rgba(229,184,66,0.12)]'
-                : 'border-white/10 bg-slate-950/60'
+                ? 'border-game-accent/40 bg-game-accent/[0.06] shadow-[0_4px_20px_var(--game-glow)]'
+                : 'border-white/10 bg-canvas/60'
             }`}
           >
             <div className="flex items-center justify-between w-full px-1 mb-1.5 font-stats">
@@ -169,7 +169,7 @@ export function BidRevealAnimation({
                 You
               </span>
               <span className={`text-[9.5px] font-black uppercase px-2 py-0.5 rounded-full border ${
-                winnerIsMe ? 'border-gold/40 bg-gold/15 text-gold' : 'border-white/10 bg-white/5 text-steel'
+                winnerIsMe ? 'border-game-accent/40 bg-game-accent/15 text-game-accent' : 'border-white/10 bg-white/5 text-muted'
               }`}>
                 ${myBid ?? 0}M Bid
               </span>
@@ -182,14 +182,14 @@ export function BidRevealAnimation({
                   <PlayerCard player={yourPlayer} size="xs" />
                 </div>
               ) : (
-                <div className="flex h-32 w-24 items-center justify-center rounded-xl border border-white/10 bg-slate-950 text-xs text-steel">
+                <div className="flex h-32 w-24 items-center justify-center rounded-xl border border-white/10 bg-canvas text-xs text-muted">
                   None
                 </div>
               )}
             </div>
 
             <div className="mt-1 text-center w-full pt-1.5 border-t border-white/[0.08]">
-              <span className="text-[9.5px] font-bold text-steel uppercase font-stats tracking-wider">
+              <span className="text-[9.5px] font-bold text-muted uppercase font-stats tracking-wider">
                 {!myPick?.isSub ? '★ Star Target' : 'Backup Sub'} · <strong className="text-white">${yourCost}M</strong>
               </span>
             </div>
@@ -199,16 +199,16 @@ export function BidRevealAnimation({
           <div
             className={`flex flex-col items-center justify-between rounded-2xl border p-2 sm:p-3 transition-all ${
               !winnerIsMe && winningBid > 0
-                ? 'border-rose-500/40 bg-rose-500/[0.06] shadow-[0_4px_20px_rgba(244,63,94,0.12)]'
-                : 'border-white/10 bg-slate-950/60'
+                ? 'border-danger/40 bg-danger/[0.06] shadow-[0_4px_20px_var(--et-danger-glow)]'
+                : 'border-white/10 bg-canvas/60'
             }`}
           >
             <div className="flex items-center justify-between w-full px-1 mb-1.5 font-stats">
-              <span className="text-xs font-black text-steel uppercase tracking-wider">
+              <span className="text-xs font-black text-muted uppercase tracking-wider">
                 Rival
               </span>
               <span className={`text-[9.5px] font-black uppercase px-2 py-0.5 rounded-full border ${
-                !winnerIsMe && winningBid > 0 ? 'border-rose-500/40 bg-rose-500/15 text-rose-300' : 'border-white/10 bg-white/5 text-steel'
+                !winnerIsMe && winningBid > 0 ? 'border-danger/40 bg-danger/15 text-danger' : 'border-white/10 bg-white/5 text-muted'
               }`}>
                 ${opponentBid ?? 0}M Bid
               </span>
@@ -221,14 +221,14 @@ export function BidRevealAnimation({
                   <PlayerCard player={rivalPlayer} size="xs" />
                 </div>
               ) : (
-                <div className="flex h-32 w-24 items-center justify-center rounded-xl border border-white/10 bg-slate-950 text-xs text-steel">
+                <div className="flex h-32 w-24 items-center justify-center rounded-xl border border-white/10 bg-canvas text-xs text-muted">
                   None
                 </div>
               )}
             </div>
 
             <div className="mt-1 text-center w-full pt-1.5 border-t border-white/[0.08]">
-              <span className="text-[9.5px] font-bold text-steel uppercase font-stats tracking-wider">
+              <span className="text-[9.5px] font-bold text-muted uppercase font-stats tracking-wider">
                 {!opponentPick?.isSub ? '★ Star Target' : 'Backup Sub'} · <strong className="text-white">${rivalCost}M</strong>
               </span>
             </div>
@@ -238,13 +238,13 @@ export function BidRevealAnimation({
         {/* ── BOTTOM QUIET TIMER & CONTINUE ── */}
         <div className="z-10 flex w-full items-center justify-between gap-3 pt-1 px-1">
           <div className="flex-1 flex flex-col gap-1">
-            <div className="h-1 w-full overflow-hidden rounded-full bg-slate-950 border border-white/10">
+            <div className="h-1 w-full overflow-hidden rounded-full bg-canvas border border-white/10">
               <div
-                className="h-full rounded-full bg-gold transition-[width] duration-75 ease-linear"
+                className="h-full rounded-full bg-game-accent transition-[width] duration-75 ease-linear"
                 style={{ width: `${Math.max(0, 100 - progressPct)}%` }}
               />
             </div>
-            <span className="text-steel/60 text-[8px] font-bold tracking-wider uppercase font-stats">
+            <span className="text-muted/60 text-[8px] font-bold tracking-wider uppercase font-stats">
               Next round starting...
             </span>
           </div>

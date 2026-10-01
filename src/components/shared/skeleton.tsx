@@ -3,7 +3,7 @@
 import { cn } from '@/lib/utils';
 
 export function Skeleton({ className }: { className?: string }) {
-  return <div className={cn('animate-shimmer rounded-xl bg-slate-800/60', className)} />;
+  return <div className={cn('animate-shimmer rounded-xl bg-surface-2/60', className)} />;
 }
 
 export function PlayerCardSkeleton({ className }: { className?: string }) {

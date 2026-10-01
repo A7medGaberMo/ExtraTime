@@ -191,16 +191,16 @@ export default function RankHubPage() {
       maxWidth="xl"
     >
       {/* ── 1. RADAR CONTROL CONSOLE ─────────────────────────────────── */}
-      <div className="luxury-glass-elevated relative rounded-3xl p-3.5 sm:p-5 border border-gold/20 shadow-[0_24px_50px_rgba(0,0,0,0.7)] backdrop-blur-3xl space-y-3 sm:space-y-3.5">
+      <div className="luxury-glass-elevated relative rounded-3xl p-3.5 sm:p-5 border border-game-accent/20 shadow-[0_24px_50px_var(--et-shade-70)] backdrop-blur-3xl space-y-3 sm:space-y-3.5">
         {/* Soft Ambient Top Glow */}
-        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-36 w-64 rounded-full bg-gold/10 blur-3xl" />
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-36 w-64 rounded-full bg-game-accent/10 blur-3xl" />
 
         {/* Manager Handle Bar */}
         <div className="relative flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.03] p-2 sm:p-2.5 shadow-inner">
           <div className="flex items-center gap-3 min-w-0">
             <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
             <div className="min-w-0">
-              <span className="text-[10px] text-steel font-bold uppercase tracking-widest block font-stats">
+              <span className="text-[10px] text-muted font-bold uppercase tracking-widest block font-stats">
                 {t('joinRoom.managerHandle')}
               </span>
               <span className="text-xs sm:text-sm font-bold text-white truncate block">
@@ -214,9 +214,9 @@ export default function RankHubPage() {
               setPendingAction(null);
               setShowNameModal(true);
             }}
-            className="btn-haptic flex items-center gap-1.5 rounded-xl border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-semibold text-slate-300 hover:border-gold/50 hover:text-white transition-all cursor-pointer shadow-sm"
+            className="btn-haptic flex items-center gap-1.5 rounded-xl border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-semibold text-foreground hover:border-game-accent/50 hover:text-white transition-all cursor-pointer shadow-sm"
           >
-            <AppIcon icon={Shuffle} size={14} weight="bold" className="text-gold" />
+            <AppIcon icon={Shuffle} size={14} weight="bold" className="text-game-accent" />
             <span>{lang === 'ar' ? 'تغيير' : 'Randomize'}</span>
           </button>
         </div>
@@ -234,7 +234,7 @@ export default function RankHubPage() {
 
         {/* Round Count Selector */}
         <div className="relative space-y-1.5">
-          <label className="text-steel text-[10px] font-bold tracking-widest uppercase block px-1 font-stats">
+          <label className="text-muted text-[10px] font-bold tracking-widest uppercase block px-1 font-stats">
             {t('rank.matchLength')}
           </label>
           <SegmentedControl
@@ -250,10 +250,10 @@ export default function RankHubPage() {
           <div className="relative space-y-4 pt-1 animate-fade-in">
             <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/8 space-y-1 text-xs shadow-inner">
               <div className="flex items-center gap-2 font-bold text-white uppercase font-stats">
-                <AppIcon icon={ShieldCheck} size={16} weight="fill" className="text-gold" />
+                <AppIcon icon={ShieldCheck} size={16} weight="fill" className="text-game-accent" />
                 <span>{t('rank.scoringRuleTitle')}</span>
               </div>
-              <p className="text-slate-300 text-xs font-normal leading-relaxed">
+              <p className="text-foreground text-xs font-normal leading-relaxed">
                 {t('rank.scoringRuleDesc')}
               </p>
             </div>
@@ -278,7 +278,7 @@ export default function RankHubPage() {
           <div className="relative space-y-4 pt-1 animate-fade-in">
             <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/8 flex items-center justify-between shadow-inner">
               <div className="space-y-0.5 min-w-0 pr-2">
-                <span className="text-[10px] text-steel font-bold uppercase block font-stats">
+                <span className="text-[10px] text-muted font-bold uppercase block font-stats">
                   {lang === 'ar' ? 'رادار المطابقة السريعة' : 'Radar Matchmaking'}
                 </span>
                 <p className="text-xs text-white font-medium truncate">
@@ -329,7 +329,7 @@ export default function RankHubPage() {
               {t('rank.createPrivateDuel')}
             </Button>
 
-            <div className="flex items-center gap-3 text-[10px] text-steel font-bold uppercase font-stats">
+            <div className="flex items-center gap-3 text-[10px] text-muted font-bold uppercase font-stats">
               <div className="h-px bg-white/8 flex-1" />
               <span>{t('rank.orJoinWithCode')}</span>
               <div className="h-px bg-white/8 flex-1" />
@@ -364,32 +364,32 @@ export default function RankHubPage() {
 
       {/* ── 2. TECHNICAL SPECIFICATION TILES (APPLE LUXURY MINIMAL) ─── */}
       <section className="grid grid-cols-3 gap-2 sm:gap-2.5 w-full">
-        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-gold/15">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-gold font-bold text-xs font-stats">
+        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-game-accent/15">
+          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-game-accent font-bold text-xs font-stats">
             <AppIcon icon={Clock} size={13} weight="fill" />
             <span>{lang === 'ar' ? 'مؤقت 45 ثانية' : '45s Timer'}</span>
           </div>
-          <p className="text-[10px] sm:text-[10.5px] text-steel font-normal truncate">
+          <p className="text-[10px] sm:text-[10.5px] text-muted font-normal truncate">
             {lang === 'ar' ? 'جولات حية وسريعة' : 'Fast live rounds'}
           </p>
         </div>
 
-        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-gold/15">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-gold font-bold text-xs font-stats">
+        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-game-accent/15">
+          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-game-accent font-bold text-xs font-stats">
             <AppIcon icon={ShieldCheck} size={13} weight="fill" />
             <span>{lang === 'ar' ? '+2 إلى -2' : '+2 to -2'}</span>
           </div>
-          <p className="text-[10px] sm:text-[10.5px] text-steel font-normal truncate">
+          <p className="text-[10px] sm:text-[10.5px] text-muted font-normal truncate">
             {lang === 'ar' ? 'حساب دقيق للمراكز' : 'Distance scoring'}
           </p>
         </div>
 
-        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-gold/15">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-gold font-bold text-xs font-stats">
+        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-game-accent/15">
+          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-game-accent font-bold text-xs font-stats">
             <AppIcon icon={ArrowsDownUp} size={13} weight="bold" />
             <span>{lang === 'ar' ? '5 بطاقات' : '5 Cards'}</span>
           </div>
-          <p className="text-[10px] sm:text-[10.5px] text-steel font-normal truncate">
+          <p className="text-[10px] sm:text-[10.5px] text-muted font-normal truncate">
             {lang === 'ar' ? 'ترتيب بالسحب والإفلات' : 'Drag & drop order'}
           </p>
         </div>
@@ -417,7 +417,7 @@ export default function RankHubPage() {
                 onClick={() => setNickname(randomName())}
                 aria-label={t('home.nameModal.randomize')}
                 title={t('home.nameModal.randomize')}
-                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-slate-300 transition-colors hover:border-gold/50 hover:text-gold"
+                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-foreground transition-colors hover:border-game-accent/50 hover:text-game-accent"
               >
                 <AppIcon icon={Shuffle} size={18} weight="bold" />
               </button>
@@ -425,7 +425,7 @@ export default function RankHubPage() {
           />
 
           <div className="flex items-center justify-end px-1">
-            <span className="font-stats text-xs text-steel">{nickname.length}/18</span>
+            <span className="font-stats text-xs text-muted">{nickname.length}/18</span>
           </div>
 
           <Button

@@ -40,5 +40,9 @@ export const metadata: Metadata = {
 };
 
 export default function RankLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <div data-game="rank" className="contents">
+      {children}
+    </div>
+  );
 }

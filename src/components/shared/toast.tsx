@@ -37,17 +37,17 @@ interface ToastContextValue {
 const ToastContext = createContext<ToastContextValue | null>(null);
 
 const variantStyles: Record<ToastVariant, string> = {
-  success: 'border-gold/40 bg-gold/10 shadow-[0_0_20px_rgba(229,184,66,0.15)]',
-  error: 'border-rose-500/40 bg-rose-500/10 shadow-[0_0_20px_rgba(244,63,94,0.15)]',
-  warning: 'border-amber-500/40 bg-amber-500/10 shadow-[0_0_20px_rgba(245,158,11,0.15)]',
-  info: 'border-sky-500/40 bg-sky-500/10 shadow-[0_0_20px_rgba(14,165,233,0.15)]',
+  success: 'border-success/40 bg-success/10 shadow-[0_0_20px_var(--et-success-glow)]',
+  error: 'border-danger/40 bg-danger/10 shadow-[0_0_20px_var(--et-danger-glow)]',
+  warning: 'border-warning/40 bg-warning/10 shadow-[0_0_20px_var(--et-warning-glow)]',
+  info: 'border-info/40 bg-info/10 shadow-[0_0_20px_var(--et-info-glow)]',
 };
 
 const variantIcons: Record<ToastVariant, ReactNode> = {
-  success: <AppIcon icon={CheckCircle} size={20} weight="fill" className="text-gold shrink-0" />,
-  error: <AppIcon icon={WarningCircle} size={20} weight="fill" className="text-rose-400 shrink-0" />,
-  warning: <AppIcon icon={Warning} size={20} weight="fill" className="text-amber-400 shrink-0" />,
-  info: <AppIcon icon={Info} size={20} weight="fill" className="text-sky-400 shrink-0" />,
+  success: <AppIcon icon={CheckCircle} size={20} weight="fill" className="text-success shrink-0" />,
+  error: <AppIcon icon={WarningCircle} size={20} weight="fill" className="text-danger shrink-0" />,
+  warning: <AppIcon icon={Warning} size={20} weight="fill" className="text-warning shrink-0" />,
+  info: <AppIcon icon={Info} size={20} weight="fill" className="text-info shrink-0" />,
 };
 
 export function ToastProvider({ children }: { children: ReactNode }) {
@@ -106,7 +106,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
             <p className="flex-1 text-sm font-bold text-white">{t.message}</p>
             <button
               onClick={() => dismiss(t.id)}
-              className="text-steel shrink-0 rounded-lg p-0.5 transition-colors hover:text-white cursor-pointer"
+              className="text-muted shrink-0 rounded-lg p-0.5 transition-colors hover:text-white cursor-pointer"
             >
               <AppIcon icon={X} size={16} weight="bold" />
             </button>

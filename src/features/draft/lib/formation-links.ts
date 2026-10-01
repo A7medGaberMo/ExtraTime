@@ -193,25 +193,25 @@ export function getLinkStyle(strength: LinkStrength): LinkStyle {
   switch (strength) {
     case 'perfect':
       return {
-        color: '#10B981', // Cupertino Emerald
-        glow: 'rgba(16, 185, 129, 0.7)',
+        color: 'var(--et-success)', // Cupertino Emerald
+        glow: 'var(--accent-glow)',
         width: 2.75,
       };
     case 'strong':
       return {
-        color: '#22C55E', // Vivid Green
-        glow: 'rgba(34, 197, 94, 0.5)',
+        color: 'var(--accent)', // Vivid Green
+        glow: 'var(--accent-glow)',
         width: 2.2,
       };
     case 'weak':
       return {
-        color: '#F59E0B', // Amber Gold
-        glow: 'rgba(245, 158, 11, 0.4)',
+        color: 'var(--et-warning)', // Amber Gold
+        glow: 'var(--et-warning)',
         width: 1.6,
       };
     case 'dead':
       return {
-        color: 'rgba(239, 68, 68, 0.55)', // Dim Red
+        color: 'var(--et-danger)', // Dim Red
         glow: 'transparent',
         dash: '4, 4',
         width: 1.2,
@@ -219,7 +219,7 @@ export function getLinkStyle(strength: LinkStrength): LinkStyle {
     case 'empty':
     default:
       return {
-        color: 'rgba(255, 255, 255, 0.09)',
+        color: 'var(--et-hi-08)',
         glow: 'transparent',
         dash: '3, 4',
         width: 1,

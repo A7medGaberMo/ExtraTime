@@ -30,18 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
-      url: `${baseUrl}/packs`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          en: `${baseUrl}/packs?lang=en`,
-          ar: `${baseUrl}/packs?lang=ar`,
-        },
-      },
-    },
-    {
       url: `${baseUrl}/create-room`,
       lastModified,
       changeFrequency: 'weekly',

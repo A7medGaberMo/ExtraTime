@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: ['/', '/rank', '/packs', '/create-room', '/join-room'],
+        allow: ['/', '/rank', '/create-room', '/join-room'],
         disallow: ['/auction/', '/room/', '/result/', '/api/'],
       },
     ],

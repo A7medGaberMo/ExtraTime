@@ -67,8 +67,8 @@ export function BidSlider({ value, min, max, onChange, className }: BidSliderPro
           className={cn(
             'font-stats inline-flex items-center rounded-full px-3 py-0.5 text-xs font-bold transition-all backdrop-blur-xl',
             isDragging
-              ? 'bg-gold text-slate-950 shadow-[0_0_20px_rgba(229,184,66,0.45),inset_0_1px_0_0_rgba(255,255,255,0.35)] scale-110'
-              : 'border border-white/15 bg-slate-900/95 text-gold shadow-[0_6px_16px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.1)]',
+              ? 'bg-game-accent text-game-on-accent shadow-[0_0_20px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-35)] scale-110'
+              : 'border border-white/15 bg-surface/95 text-game-accent shadow-[0_6px_16px_var(--et-shade-50),inset_0_1px_0_0_var(--et-hi-10)]',
           )}
         >
           ${value}M
@@ -92,30 +92,30 @@ export function BidSlider({ value, min, max, onChange, className }: BidSliderPro
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        className="focus:ring-gold relative flex h-10 cursor-grab items-center rounded-2xl focus:ring-1 focus:outline-none active:cursor-grabbing"
+        className="focus:ring-game-accent relative flex h-10 cursor-grab items-center rounded-2xl focus:ring-1 focus:outline-none active:cursor-grabbing"
       >
         {/* Rail bg (Sunken Glass Track) */}
-        <div className="absolute inset-x-0 h-2.5 rounded-full bg-slate-950/90 border border-white/10 shadow-inner" />
+        <div className="absolute inset-x-0 h-2.5 rounded-full bg-canvas/90 border border-white/10 shadow-inner" />
         {/* Filled rail */}
         <div
-          className="absolute left-0 h-2.5 rounded-full bg-gradient-to-r from-gold/80 to-gold shadow-[0_0_12px_rgba(229,184,66,0.5)] transition-all"
+          className="absolute left-0 h-2.5 rounded-full bg-gradient-to-r from-game-accent/80 to-game-accent shadow-[0_0_12px_var(--game-glow)] transition-all"
           style={{ width: `${pct}%` }}
         />
         {/* Thumb (Apple Specular Disc) */}
         <div
           className={cn(
-            'absolute -ml-3.5 h-7 w-7 rounded-full border-2 border-gold bg-slate-900 transition-all duration-150 flex items-center justify-center',
+            'absolute -ml-3.5 h-7 w-7 rounded-full border-2 border-game-accent bg-surface transition-all duration-150 flex items-center justify-center',
             isDragging
-              ? 'scale-115 shadow-[0_0_24px_rgba(229,184,66,0.65),inset_0_1px_0_0_rgba(255,255,255,0.4)]'
-              : 'shadow-[0_4px_16px_rgba(0,0,0,0.7),0_0_12px_rgba(229,184,66,0.3),inset_0_1px_0_0_rgba(255,255,255,0.25)]',
+              ? 'scale-115 shadow-[0_0_24px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-40)]'
+              : 'shadow-[0_4px_16px_var(--et-shade-70),0_0_12px_var(--game-glow),inset_0_1px_0_0_var(--et-hi-25)]',
           )}
           style={{ left: `${pct}%` }}
         >
-          <div className="bg-gold h-2.5 w-2.5 rounded-full shadow-[0_0_6px_rgba(229,184,66,0.8)]" />
+          <div className="bg-game-accent h-2.5 w-2.5 rounded-full shadow-[0_0_6px_var(--game-glow)]" />
         </div>
         {/* Min/Max labels */}
-        <div className="text-steel font-stats absolute -bottom-5 left-0 text-[10px] font-bold">${min}M</div>
-        <div className="text-steel font-stats absolute right-0 -bottom-5 text-[10px] font-bold">${max}M</div>
+        <div className="text-muted font-stats absolute -bottom-5 left-0 text-[10px] font-bold">${min}M</div>
+        <div className="text-muted font-stats absolute right-0 -bottom-5 text-[10px] font-bold">${max}M</div>
       </div>
     </div>
   );

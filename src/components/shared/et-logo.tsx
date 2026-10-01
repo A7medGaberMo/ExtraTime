@@ -41,7 +41,7 @@ export function ETLogo({
   const viewBox = displayWordmark ? '0 0 400 300' : '0 0 200 200';
   const transform = displayWordmark ? 'translate(100, 35)' : 'translate(0, 0)';
 
-  let fillE = '#FFFFFF';
+  let fillE = 'var(--et-logo-platinum-a)';
   let fillT = 'url(#et-gold-grad-cmp)';
   let bg = 'none';
   let stroke = 'none';
@@ -50,16 +50,16 @@ export function ETLogo({
 
   switch (variant) {
     case 'primary':
-      fillE = '#FFFFFF';
+      fillE = 'var(--et-logo-platinum-a)';
       fillT = 'url(#et-gold-grad-cmp)';
       break;
     case 'monochrome-white':
-      fillE = '#FFFFFF';
-      fillT = '#FFFFFF';
+      fillE = 'var(--et-logo-platinum-a)';
+      fillT = 'var(--et-logo-platinum-a)';
       break;
     case 'monochrome-black':
-      fillE = '#02050A';
-      fillT = '#02050A';
+      fillE = 'var(--et-logo-onyx-a)';
+      fillT = 'var(--et-logo-onyx-a)';
       break;
     case 'metallic-silver':
       fillE = 'url(#et-silver-grad-cmp)';
@@ -74,18 +74,18 @@ export function ETLogo({
       fillT = 'url(#et-steel-grad-cmp)';
       break;
     case 'embossed':
-      fillE = '#E2E8F0';
-      fillT = '#E5B842';
+      fillE = 'var(--et-logo-platinum-b)';
+      fillT = 'var(--et-brand)';
       filter = 'url(#et-emboss-cmp)';
       break;
     case 'debossed':
-      fillE = '#64748B';
-      fillT = '#99751D';
+      fillE = 'var(--et-logo-platinum-e)';
+      fillT = 'var(--et-brand-deep)';
       break;
     case 'glass':
       fillE = 'url(#et-glass-grad-cmp)';
       fillT = 'url(#et-glass-grad-cmp)';
-      stroke = 'rgba(255,255,255,0.4)';
+      stroke = 'var(--et-hi-40)';
       break;
     case 'holographic-foil':
       fillE = 'url(#et-holo-grad-cmp)';
@@ -94,29 +94,29 @@ export function ETLogo({
     case 'minimal-outline':
       fillE = 'none';
       fillT = 'none';
-      stroke = '#E5B842';
+      stroke = 'var(--et-brand)';
       break;
     case 'icon-only':
-      fillE = '#FFFFFF';
+      fillE = 'var(--et-logo-platinum-a)';
       fillT = 'url(#et-gold-grad-cmp)';
       break;
     case 'watermark':
-      fillE = '#FFFFFF';
-      fillT = '#FFFFFF';
+      fillE = 'var(--et-logo-platinum-a)';
+      fillT = 'var(--et-logo-platinum-a)';
       opacity = 0.08;
       break;
     case 'micro-16px':
-      fillE = '#FFFFFF';
-      fillT = '#E5B842';
+      fillE = 'var(--et-logo-platinum-a)';
+      fillT = 'var(--et-brand)';
       break;
     case 'card-badge':
-      fillE = '#FFFFFF';
-      fillT = '#E5B842';
+      fillE = 'var(--et-logo-platinum-a)';
+      fillT = 'var(--et-brand)';
       break;
     case 'favicon':
-      fillE = '#FFFFFF';
-      fillT = '#E5B842';
-      bg = '#02050A';
+      fillE = 'var(--et-logo-platinum-a)';
+      fillT = 'var(--et-brand)';
+      bg = 'var(--et-logo-onyx-a)';
       break;
   }
 
@@ -136,45 +136,45 @@ export function ETLogo({
     >
       <defs>
         <linearGradient id="et-primary-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#34D399" />
-          <stop offset="50%" stopColor="#10B981" />
-          <stop offset="100%" stopColor="#059669" />
+          <stop offset="0%" stopColor="var(--et-logo-emerald-a)" />
+          <stop offset="50%" stopColor="var(--et-logo-emerald-b)" />
+          <stop offset="100%" stopColor="var(--et-logo-emerald-c)" />
         </linearGradient>
         <linearGradient id="et-lime-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FFF7CC" />
-          <stop offset="50%" stopColor="#E5B842" />
-          <stop offset="100%" stopColor="#99751D" />
+          <stop offset="0%" stopColor="var(--et-logo-gold-a)" />
+          <stop offset="50%" stopColor="var(--et-brand)" />
+          <stop offset="100%" stopColor="var(--et-brand-deep)" />
         </linearGradient>
         <linearGradient id="et-silver-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FFFFFF" />
-          <stop offset="25%" stopColor="#E2E8F0" />
-          <stop offset="50%" stopColor="#94A3B8" />
-          <stop offset="75%" stopColor="#CBD5E1" />
-          <stop offset="100%" stopColor="#64748B" />
+          <stop offset="0%" stopColor="var(--et-logo-platinum-a)" />
+          <stop offset="25%" stopColor="var(--et-logo-platinum-b)" />
+          <stop offset="50%" stopColor="var(--et-logo-platinum-c)" />
+          <stop offset="75%" stopColor="var(--et-logo-platinum-d)" />
+          <stop offset="100%" stopColor="var(--et-logo-platinum-e)" />
         </linearGradient>
         <linearGradient id="et-gold-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FFF7CC" />
-          <stop offset="30%" stopColor="#FDE68A" />
-          <stop offset="60%" stopColor="#D4AF37" />
-          <stop offset="85%" stopColor="#92400E" />
-          <stop offset="100%" stopColor="#F59E0B" />
+          <stop offset="0%" stopColor="var(--et-logo-gold-a)" />
+          <stop offset="30%" stopColor="var(--et-logo-gold-b)" />
+          <stop offset="60%" stopColor="var(--et-logo-gold-c)" />
+          <stop offset="85%" stopColor="var(--et-logo-gold-d)" />
+          <stop offset="100%" stopColor="var(--et-logo-gold-e)" />
         </linearGradient>
         <linearGradient id="et-steel-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#94A3B8" />
-          <stop offset="50%" stopColor="#334155" />
-          <stop offset="100%" stopColor="#0F172A" />
+          <stop offset="0%" stopColor="var(--et-logo-steel-a)" />
+          <stop offset="50%" stopColor="var(--et-logo-steel-b)" />
+          <stop offset="100%" stopColor="var(--et-logo-steel-c)" />
         </linearGradient>
         <linearGradient id="et-holo-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FF7A8A" />
-          <stop offset="25%" stopColor="#FDE68A" />
-          <stop offset="50%" stopColor="#34D399" />
-          <stop offset="75%" stopColor="#60A5FA" />
-          <stop offset="100%" stopColor="#C084FC" />
+          <stop offset="0%" stopColor="var(--et-logo-spectrum-a)" />
+          <stop offset="25%" stopColor="var(--et-logo-spectrum-b)" />
+          <stop offset="50%" stopColor="var(--et-logo-spectrum-c)" />
+          <stop offset="75%" stopColor="var(--et-logo-spectrum-d)" />
+          <stop offset="100%" stopColor="var(--et-logo-spectrum-e)" />
         </linearGradient>
         <linearGradient id="et-glass-grad-cmp" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="rgba(255,255,255,0.8)" />
-          <stop offset="50%" stopColor="rgba(255,255,255,0.2)" />
-          <stop offset="100%" stopColor="rgba(255,255,255,0.05)" />
+          <stop offset="0%" stopColor="var(--et-hi-80)" />
+          <stop offset="50%" stopColor="var(--et-hi-20)" />
+          <stop offset="100%" stopColor="var(--et-hi-05)" />
         </linearGradient>
         <filter id="et-emboss-cmp" x="-20%" y="-20%" width="140%" height="140%">
           <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
@@ -226,7 +226,7 @@ export function ETLogo({
               fontWeight="700"
               fontSize="11"
               letterSpacing="8"
-              fill="#848487"
+              fill="var(--et-logo-onyx-b)"
             >
               PLAY • COMPETE • CONNECT
             </text>

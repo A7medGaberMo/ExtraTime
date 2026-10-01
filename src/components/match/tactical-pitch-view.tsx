@@ -60,8 +60,8 @@ export function TacticalPitchView({
   guestName,
   viewerIsHost = true,
   defaultTab,
-  hostColor = '#E5B842',
-  guestColor = '#F43F5E',
+  hostColor = 'var(--accent)',
+  guestColor = 'var(--danger)',
 }: TacticalPitchViewProps) {
   const initialTab = defaultTab ?? (viewerIsHost ? 'host' : 'guest');
   const [tab, setTab] = useState<'host' | 'guest'>(initialTab);
@@ -72,14 +72,14 @@ export function TacticalPitchView({
 
   return (
     <div className="space-y-3">
-      <div className="inline-flex w-full rounded-xl border border-white/10 bg-slate-950/90 p-1 backdrop-blur-xl shadow-inner">
+      <div className="inline-flex w-full rounded-xl border border-white/10 bg-canvas/90 p-1 backdrop-blur-xl shadow-inner">
         <button
           type="button"
           onClick={() => setTab('host')}
           className={`flex-1 rounded-lg py-2 px-2 text-[10px] sm:text-xs font-black tracking-wider uppercase transition-all duration-200 cursor-pointer font-stats ${
             tab === 'host'
-              ? 'bg-gold text-slate-950 shadow-md shadow-gold/25 font-bold'
-              : 'text-steel hover:text-white'
+              ? 'bg-game-accent text-game-on-accent shadow-md shadow-game-accent/25 font-bold'
+              : 'text-muted hover:text-white'
           }`}
         >
           {hostName} {viewerIsHost ? '(YOU)' : ''}
@@ -89,8 +89,8 @@ export function TacticalPitchView({
           onClick={() => setTab('guest')}
           className={`flex-1 rounded-lg py-2 px-2 text-[10px] sm:text-xs font-black tracking-wider uppercase transition-all duration-200 cursor-pointer font-stats ${
             tab === 'guest'
-              ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20 font-bold'
-              : 'text-steel hover:text-white'
+              ? 'bg-danger text-white shadow-md shadow-danger/20 font-bold'
+              : 'text-muted hover:text-white'
           }`}
         >
           {guestName} {!viewerIsHost ? '(YOU)' : ''}

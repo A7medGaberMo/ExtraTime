@@ -118,12 +118,12 @@ export function SpectatorArena({
   return (
     <div className="w-full max-w-md mx-auto flex flex-col gap-2 sm:gap-2.5 animate-fade-in select-none">
       {/* 📺 Integrated Luxury Broadcast Header Capsule */}
-      <div className="w-full bg-gradient-to-r from-slate-900/95 via-[#0a0e17]/95 to-slate-900/95 border border-gold/30 rounded-2xl p-2 sm:p-2.5 flex items-center justify-between gap-2 shadow-[0_4px_20px_rgba(0,0,0,0.5),0_0_20px_rgba(229,184,66,0.12)] shrink-0">
+      <div className="w-full bg-gradient-to-r from-surface/95 via-well/95 to-surface/95 border border-game-accent/30 rounded-2xl p-2 sm:p-2.5 flex items-center justify-between gap-2 shadow-[0_4px_20px_var(--et-shade-50),0_0_20px_var(--game-glow)] shrink-0">
         {/* Left: Opponent Identity */}
         <div className="flex items-center gap-2 min-w-0">
           <span className="relative flex h-2 w-2 shrink-0">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-game-accent opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-game-accent" />
           </span>
           <UserIdentity nickname={opponent.name} size="sm" showAvatarOnly />
           <div className="min-w-0 flex flex-col">
@@ -131,11 +131,11 @@ export function SpectatorArena({
               <span className="text-xs font-bold text-white truncate max-w-[90px] sm:max-w-[130px]">
                 {opponent.name}
               </span>
-              <span className="text-[10px] font-black text-gold bg-gold/15 px-1.5 py-0.5 rounded font-stats tabular-nums">
+              <span className="text-[10px] font-black text-game-accent bg-game-accent/15 px-1.5 py-0.5 rounded font-stats tabular-nums">
                 {opponent.totalBankedScore} pts
               </span>
             </div>
-            <span className="text-[9.5px] text-steel font-stats">
+            <span className="text-[9.5px] text-muted font-stats">
               {isArabic
                 ? `الجولة ${currentRound}/2 · س${Math.min(currentQuestionIndex + 1, 12)}/12`
                 : `Round ${currentRound}/2 · Q${Math.min(currentQuestionIndex + 1, 12)}/12`}
@@ -145,8 +145,8 @@ export function SpectatorArena({
 
         {/* Right: Opponent Timer & Status */}
         <div className="flex items-center gap-2 shrink-0">
-          <span className="hidden xs:inline-flex items-center gap-1 text-[10px] font-bold text-gold uppercase tracking-wider font-stats bg-gold/10 border border-gold/25 px-2 py-0.5 rounded-full">
-            <AppIcon icon={Broadcast} size={11} weight="fill" className="text-gold" />
+          <span className="hidden xs:inline-flex items-center gap-1 text-[10px] font-bold text-game-accent uppercase tracking-wider font-stats bg-game-accent/10 border border-game-accent/25 px-2 py-0.5 rounded-full">
+            <AppIcon icon={Broadcast} size={11} weight="fill" className="text-game-accent" />
             <span>{isArabic ? 'بث مباشر' : 'LIVE'}</span>
           </span>
           {runDeadline && (
@@ -159,12 +159,12 @@ export function SpectatorArena({
       <div
         className={`w-full px-3 py-1.5 rounded-xl border flex items-center justify-between text-xs font-bold shadow-sm transition-all shrink-0 ${
           lastAction?.type === 'correct'
-            ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
+            ? 'bg-success/15 border-success/30 text-success'
             : lastAction?.type === 'wrong'
-              ? 'bg-rose-500/15 border-rose-500/30 text-rose-300'
+              ? 'bg-danger/15 border-danger/30 text-danger'
               : lastAction?.type === 'bank'
-                ? 'bg-gold/20 border-gold/40 text-gold shadow-[0_0_16px_rgba(229,184,66,0.25)]'
-                : 'bg-white/[0.03] border-white/10 text-slate-300'
+                ? 'bg-game-accent/20 border-game-accent/40 text-game-accent shadow-[0_0_16px_var(--game-glow)]'
+                : 'bg-white/[0.03] border-white/10 text-foreground'
         }`}
       >
         <span className="flex items-center gap-2 truncate">
@@ -198,7 +198,7 @@ export function SpectatorArena({
           </span>
         </span>
         {lastAction?.pointsEarned !== undefined && lastAction.pointsEarned > 0 && (
-          <span className="font-stats font-black text-gold tabular-nums shrink-0">
+          <span className="font-stats font-black text-game-accent tabular-nums shrink-0">
             +{lastAction.pointsEarned} pts
           </span>
         )}
@@ -206,9 +206,9 @@ export function SpectatorArena({
 
       {/* Disconnection Warning Banner */}
       {isDisconnected && (
-        <div className="w-full bg-gold/15 border border-gold/30 rounded-xl p-2.5 flex flex-wrap items-center justify-between gap-2 text-gold text-xs font-medium animate-pulse shrink-0">
+        <div className="w-full bg-game-accent/15 border border-game-accent/30 rounded-xl p-2.5 flex flex-wrap items-center justify-between gap-2 text-game-accent text-xs font-medium animate-pulse shrink-0">
           <div className="flex items-center gap-2">
-            <AppIcon icon={Warning} size={16} weight="bold" className="shrink-0 text-gold" />
+            <AppIcon icon={Warning} size={16} weight="bold" className="shrink-0 text-game-accent" />
             <span>
               {isArabic
                 ? `اتصال المنافس مهزوز (انقطاع منذ ${secondsDisconnected}ث)`
@@ -243,16 +243,16 @@ export function SpectatorArena({
 
       {/* Live Question Card OR Opponent Completed Sprint Card */}
       {isSprintComplete ? (
-        <div className="w-full max-w-md mx-auto h-[295px] min-h-[295px] max-h-[295px] sm:h-[305px] sm:min-h-[305px] sm:max-h-[305px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 border border-gold/30 bg-gradient-to-b from-slate-900/95 via-[#0b0f19]/95 to-slate-950/95 shadow-[0_16px_36px_rgba(0,0,0,0.6),0_0_40px_rgba(229,184,66,0.2)] flex flex-col items-center justify-between text-center relative overflow-hidden select-none shrink-0 animate-fade-in">
-          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gold/20 border border-gold/40 flex items-center justify-center text-gold shadow-[0_0_20px_rgba(229,184,66,0.3)] animate-pulse shrink-0 mt-0.5">
+        <div className="w-full max-w-md mx-auto h-[295px] min-h-[295px] max-h-[295px] sm:h-[305px] sm:min-h-[305px] sm:max-h-[305px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 border border-game-accent/30 bg-gradient-to-b from-surface/95 via-well/95 to-canvas/95 shadow-[0_16px_36px_var(--et-shade-60),0_0_40px_var(--game-glow)] flex flex-col items-center justify-between text-center relative overflow-hidden select-none shrink-0 animate-fade-in">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-game-accent/20 border border-game-accent/40 flex items-center justify-center text-game-accent shadow-[0_0_20px_var(--game-glow)] animate-pulse shrink-0 mt-0.5">
             <AppIcon icon={Trophy} size={24} weight="fill" />
           </div>
 
           <div className="space-y-1 px-2">
-            <h3 className={`text-sm sm:text-base font-black text-gold tracking-wide ${isArabic ? 'font-sans' : 'font-display'}`}>
+            <h3 className={`text-sm sm:text-base font-black text-game-accent tracking-wide ${isArabic ? 'font-sans' : 'font-display'}`}>
               {isArabic ? 'المنافس أكمل جميع الأسئلة الـ 12!' : 'Opponent Completed All 12 Questions!'}
             </h3>
-            <p className="text-[11px] sm:text-xs text-slate-300 leading-snug">
+            <p className="text-[11px] sm:text-xs text-foreground leading-snug">
               {isArabic
                 ? 'في انتظار قرار المنافس: هل يبَنِّك ويثبت رصيده قبل انتهاء الـ 90 ثانية؟'
                 : 'Waiting for their decision: Will they bank to lock in their score before time runs out?'}
@@ -260,11 +260,11 @@ export function SpectatorArena({
           </div>
 
           {unbankedPoints > 0 && (
-            <div className="flex items-center gap-2 bg-gold/15 border border-gold/40 px-3.5 py-1.5 rounded-xl shadow-sm mb-0.5">
-              <span className="text-[11px] sm:text-xs font-bold text-gold">
+            <div className="flex items-center gap-2 bg-game-accent/15 border border-game-accent/40 px-3.5 py-1.5 rounded-xl shadow-sm mb-0.5">
+              <span className="text-[11px] sm:text-xs font-bold text-game-accent">
                 {isArabic ? 'نقاط في خطر:' : 'At-Risk Pot:'}
               </span>
-              <span className="text-xs sm:text-sm font-black font-stats text-gold tabular-nums">
+              <span className="text-xs sm:text-sm font-black font-stats text-game-accent tabular-nums">
                 +{unbankedPoints} pts
               </span>
             </div>
@@ -284,8 +284,8 @@ export function SpectatorArena({
           correctOptionId={revealedCorrect}
         />
       ) : (
-        <div className="w-full max-w-md mx-auto h-[295px] min-h-[295px] max-h-[295px] sm:h-[305px] sm:min-h-[305px] sm:max-h-[305px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 border border-white/10 bg-slate-900/60 shadow-[0_16px_36px_rgba(0,0,0,0.6)] backdrop-blur-3xl flex flex-col items-center justify-center gap-3 shrink-0 animate-pulse text-center text-slate-400 text-xs sm:text-sm">
-          <AppIcon icon={Broadcast} size={28} className="text-gold animate-pulse" />
+        <div className="w-full max-w-md mx-auto h-[295px] min-h-[295px] max-h-[295px] sm:h-[305px] sm:min-h-[305px] sm:max-h-[305px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 border border-white/10 bg-surface/60 shadow-[0_16px_36px_var(--et-shade-60)] backdrop-blur-3xl flex flex-col items-center justify-center gap-3 shrink-0 animate-pulse text-center text-muted text-xs sm:text-sm">
+          <AppIcon icon={Broadcast} size={28} className="text-game-accent animate-pulse" />
           <span>{isArabic ? 'المنافس يجهز للبدء...' : 'Opponent is preparing for challenge...'}</span>
         </div>
       )}

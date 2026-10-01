@@ -33,7 +33,6 @@ import type * as matches_mutations from "../matches/mutations.js";
 import type * as matches_queries from "../matches/queries.js";
 import type * as nations_mutations from "../nations/mutations.js";
 import type * as nations_queries from "../nations/queries.js";
-import type * as packs_queries from "../packs/queries.js";
 import type * as players_mutations from "../players/mutations.js";
 import type * as players_queries from "../players/queries.js";
 import type * as rank_mutations from "../rank/mutations.js";
@@ -78,7 +77,6 @@ declare const fullApi: ApiFromModules<{
   "matches/queries": typeof matches_queries;
   "nations/mutations": typeof nations_mutations;
   "nations/queries": typeof nations_queries;
-  "packs/queries": typeof packs_queries;
   "players/mutations": typeof players_mutations;
   "players/queries": typeof players_queries;
   "rank/mutations": typeof rank_mutations;

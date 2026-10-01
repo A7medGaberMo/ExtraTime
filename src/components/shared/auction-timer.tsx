@@ -50,12 +50,12 @@ export function AuctionTimer({
         className={cn(
           'pointer-events-none absolute inset-0 rounded-full opacity-20 blur-md transition-opacity duration-300',
           isCritical
-            ? 'bg-rose-500 opacity-60'
+            ? 'bg-danger opacity-60'
             : isUrgent
-              ? 'bg-amber-500'
+              ? 'bg-warning'
               : boostActive
-                ? 'bg-amber-400 opacity-80'
-                : 'bg-gold',
+                ? 'bg-game-accent-light opacity-80'
+                : 'bg-game-accent',
         )}
       />
 
@@ -65,7 +65,7 @@ export function AuctionTimer({
           cy={size / 2}
           r={radius}
           strokeWidth="4"
-          className="fill-slate-950 stroke-slate-900"
+          className="fill-canvas stroke-surface"
         />
         <circle
           cx={size / 2}
@@ -77,7 +77,7 @@ export function AuctionTimer({
           strokeLinecap="round"
           className="fill-transparent transition-all duration-500 ease-out"
           stroke={
-            isCritical ? '#F43F5E' : isUrgent ? '#F59E0B' : boostActive ? '#FBBF24' : '#E5B842'
+            isCritical ? 'var(--et-danger)' : isUrgent ? 'var(--et-warning)' : boostActive ? 'var(--accent-light)' : 'var(--accent)'
           }
         />
       </svg>
@@ -86,29 +86,29 @@ export function AuctionTimer({
         <span
           className={cn(
             'font-stats text-lg leading-none font-black transition-all duration-300',
-            isCritical && 'scale-110 animate-pulse text-rose-400',
-            isUrgent && !isCritical && 'text-amber-400',
-            boostActive && 'scale-110 text-amber-300',
-            !isUrgent && !boostActive && 'text-gold',
-            !isActive && 'text-steel',
+            isCritical && 'scale-110 animate-pulse text-danger',
+            isUrgent && !isCritical && 'text-warning',
+            boostActive && 'scale-110 text-game-accent-light',
+            !isUrgent && !boostActive && 'text-game-accent',
+            !isActive && 'text-muted',
           )}
         >
           {timeLeft}
         </span>
-        <span className="text-steel mt-0.5 text-[7px] font-black tracking-widest uppercase">
+        <span className="text-muted mt-0.5 text-[7px] font-black tracking-widest uppercase">
           sec
         </span>
       </div>
 
       {/* Perk +10s boost floating banner */}
       {(boostActive || showBoost) && (
-        <div className="absolute -top-3 left-1/2 z-20 flex -translate-x-1/2 animate-bounce items-center gap-1 rounded-full border border-amber-300 bg-amber-400 px-2 py-0.5 text-[9px] font-black tracking-wider whitespace-nowrap text-slate-950 uppercase shadow-lg">
-          <AppIcon icon={Lightning} size={10} weight="fill" className="text-slate-950" /> +10s BOOST
+        <div className="absolute -top-3 left-1/2 z-20 flex -translate-x-1/2 animate-bounce items-center gap-1 rounded-full border border-game-accent-light bg-game-accent px-2 py-0.5 text-[9px] font-black tracking-wider whitespace-nowrap text-game-on-accent uppercase shadow-lg">
+          <AppIcon icon={Lightning} size={10} weight="fill" className="text-game-on-accent" /> +10s BOOST
         </div>
       )}
 
       {isUrgent && (
-        <div className="pointer-events-none absolute inset-0 animate-ping rounded-full border border-rose-500/40" />
+        <div className="pointer-events-none absolute inset-0 animate-ping rounded-full border border-danger/40" />
       )}
     </div>
   );
