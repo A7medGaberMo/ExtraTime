@@ -67,17 +67,11 @@ export function HomeLobby({ queueCounts, onPlayMode, loading }: HomeLobbyProps) 
         <div key={activeMode} className="w-[150vw] h-[150vw] md:w-[80vw] md:h-[80vw] rounded-full blur-[140px] opacity-40 bg-gradient-to-tr from-game-grad-from to-game-grad-to transition-all duration-1000" />
       </div>
 
-      {/* Top Header */}
-      <header className="flex-none pt-[3.5rem] sm:pt-20 px-4 sm:px-8 pb-3 sm:pb-4 flex items-center justify-center z-10 w-full max-w-7xl mx-auto">
-        <h1 className="font-display text-2xl sm:text-3xl font-black tracking-tight text-foreground flex items-center gap-2">
-          Extra<span className="text-brand">Time</span>
-          <span className="text-white/20 font-light hidden sm:inline">/</span>
-          <span className="text-white/60 tracking-widest text-xs uppercase hidden sm:inline">{t('home.heroBadge')}</span>
-        </h1>
-      </header>
+      {/* Screen-reader accessible heading */}
+      <h1 className="sr-only">ExtraTime - {t('home.heroBadge')}</h1>
 
       {/* Main Accordion Container (The Cards) */}
-      <div className="flex-1 min-h-0 w-full max-w-7xl mx-auto px-4 sm:px-8 pb-3 sm:pb-6 flex flex-col lg:flex-row gap-2.5 sm:gap-4 relative z-10">
+      <div className="flex-1 min-h-0 w-full max-w-7xl mx-auto px-4 sm:px-8 pt-16 sm:pt-20 pb-3 sm:pb-6 flex flex-col lg:flex-row gap-2.5 sm:gap-4 relative z-10">
         {HOME_GAMES.map((modeDef) => {
           const isActive = activeMode === modeDef.id;
           const qc = queueCounts[modeDef.id] || 0;

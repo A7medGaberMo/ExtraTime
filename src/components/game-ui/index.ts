@@ -11,3 +11,4 @@ export { GameThemeScope, type GameThemeScopeProps } from './game-theme-scope';
 export { ResultsCard, type ResultsCardProps } from './results-card';
 export { PrimaryButton, SecondaryButton } from './game-buttons';
 export { StatPill, type StatPillProps } from './stat-pill';
+export { Header as GameHeader, Header, type HeaderProps } from '@/components/layout/header';

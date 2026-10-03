@@ -165,9 +165,9 @@ function planTierBudget(
       HERO: 0,
       ULTIMATE: 0.32,
       MASTER: 0.32,
-      ELITE: 0.24,
-      GOLD: 0.12,
-      SILVER: 0,
+      ELITE: 0.26,
+      GOLD: 0.8,
+      SILVER: .2,
       BRONZE: 0,
     };
   } else {
