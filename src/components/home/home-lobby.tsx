@@ -132,6 +132,23 @@ export function HomeLobby({ queueCounts, onPlayMode, loading }: HomeLobbyProps) 
                     </p>
                   </div>
 
+                  {/* Hub Link Arrow Button */}
+                  <div className="flex items-center gap-2 z-20">
+                    <Link
+                      href={modeDef.href}
+                      onClick={(e) => e.stopPropagation()}
+                      aria-label={isRTL ? `الانتقال إلى صالة ${t(modeDef.titleKey)}` : `Go to ${t(modeDef.titleKey)} Hub`}
+                      className="btn-haptic flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 py-1.5 rounded-full bg-white/5 hover:bg-white/15 border border-white/15 hover:border-game-accent/60 text-white/80 hover:text-foreground transition-all backdrop-blur-md group/hub text-[11px] sm:text-xs font-semibold shadow-sm"
+                    >
+                      <span className="hidden sm:inline font-stats uppercase tracking-wider text-[11px]">
+                        {isRTL ? 'صالة اللعبة' : 'Hub'}
+                      </span>
+                      <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white/10 group-hover/hub:bg-game-accent group-hover/hub:text-canvas transition-colors">
+                        <AppIcon icon={ArrowRight} size={13} weight="bold" className="transition-transform group-hover/hub:translate-x-0.5" />
+                      </div>
+                    </Link>
+                  </div>
+
                   {/* Giant faded watermark icon */}
                   <div className={cn("hidden lg:block absolute -right-4 -top-8 opacity-10 pointer-events-none transform -rotate-12 transition-transform duration-[2s] text-game-accent", isActive ? "scale-100" : "scale-50")}>
                     <AppIcon icon={ModeIcon} size={380} weight="fill" />

@@ -24,6 +24,9 @@ export const ar: TranslationDictionary = {
     soundOn: 'تشغيل الصوت',
     soundMuted: 'كتم الصوت',
     language: 'اللغة',
+    switchLanguage: 'حوّل للإنجليزي',
+    liveMatch: 'ماتش لايف',
+    resumeMatch: 'ماتشك شغال — اضغط وكمّل',
     arabic: 'العربية',
     english: 'English',
   },
@@ -266,7 +269,8 @@ export const ar: TranslationDictionary = {
     rounds3: '3 جولات (سريع)',
     rounds5: '5 جولات (ماتش كامل)',
     scoringRuleTitle: 'حساب النقط بالدقة',
-    scoringRuleDesc: 'رتب الـ 5 كروت صح. الترتيب الدقيق +2، غلطة بمكان +1، بمكانين 0، فوارق كبيرة -1 / -2.',
+    scoringRuleDesc:
+      'رتب الـ 5 كروت صح. الترتيب الدقيق +2، غلطة بمكان +1، بمكانين 0، فوارق كبيرة -1 / -2.',
     startSolo: 'ابدأ فردي ({rounds} جولات)',
     findQuick: 'دور على منافس 1 ضد 1',
     inQueueStats: '{count} في الطابور',
@@ -413,18 +417,15 @@ export const ar: TranslationDictionary = {
       'سلسلة معلومات كروية: ضاعف نقاطك مع كل إجابة صحيحة (1 ← 2 ← 4 ← 8 ← 16...). دوس "بَنِّك" في أي وقت لتأمين نقاطك في رصيدك الدائم، أو خاطر بالسؤال اللي بعده. غلطة واحدة أو باص بتصفّر كل النقاط المعلقة!',
     hub: {
       soloTitle: 'تحدي الـ 90 ثانية',
-      soloDesc:
-        '12 سؤال وسلسلة مضاعفة غير محدودة. جاوب صح، ضاعف رصيدك وبَنِّك قبل صفارة النهاية!',
+      soloDesc: '12 سؤال وسلسلة مضاعفة غير محدودة. جاوب صح، ضاعف رصيدك وبَنِّك قبل صفارة النهاية!',
       quickTitle: 'مواجهة سريعة 1 ضد 1',
       quickDesc:
         'جولتان متبادلتان، أسئلة متكافئة لكل لاعب، وبث مباشر لجولة المنافس. لو تعادلتوا هتدخلوا سؤال الحسم الذهبي!',
       createRoom: 'اعمل روم خاصة',
-      createRoomDesc:
-        'خد كود روم من 6 حروف وشاركه مع صاحبك عشان تتحدوا بعض لايف.',
+      createRoomDesc: 'خد كود روم من 6 حروف وشاركه مع صاحبك عشان تتحدوا بعض لايف.',
       createRoomBtn: 'إنشاء الروم',
       joinRoom: 'ادخل بكود الروم',
-      joinRoomDesc:
-        'معاك كود روم من صاحبك؟ اكتب الكود هنا وادخل الماتش فوراً.',
+      joinRoomDesc: 'معاك كود روم من صاحبك؟ اكتب الكود هنا وادخل الماتش فوراً.',
       joinRoomBtn: 'دخول الروم',
       timer90s: '⏱️ 90 ثانية',
       questions12: '🎯 12 سؤال',
@@ -462,8 +463,7 @@ export const ar: TranslationDictionary = {
     howToPlay: 'إزاي تلعب',
     rules: {
       ladderTitle: 'سلم النقاط المضاعف',
-      ladderDesc:
-        'كل إجابة صحيحة ورا بعض بتضاعف نقطك: 1 ← 2 ← 4 ← 8 ← 16 ← 32 ← 64...',
+      ladderDesc: 'كل إجابة صحيحة ورا بعض بتضاعف نقطك: 1 ← 2 ← 4 ← 8 ← 16 ← 32 ← 64...',
       bankTitle: 'بَنِّك واضمن رصيدك',
       bankDesc:
         'دوس "بَنِّك" في أي لحظة لتأمين النقاط المعلقة في رصيدك الدائم. هتبدأ بعدها سلسلة جديدة بأمان.',
@@ -538,6 +538,38 @@ export const ar: TranslationDictionary = {
       bronze: 'البرونزي',
     },
   },
+  snipeHub: {
+    badge: 'مزاد كورة لايف',
+    title: 'سنايب',
+    description: 'خبّي عروضك، اقرا منافسك، واكسبه وانت بتبني أقوى تشكيلة.',
+    liveLabel: 'لايف',
+    liveSuffix: 'مستنيين منافس',
+    liveEmpty: 'الطابور فاضي — خليك أول واحد',
+    liveLoading: 'بنشوف مين مستني…',
+    publicMatch: 'ماتش عام',
+    publicMatchSub: 'مزاد فوري 1 ضد 1',
+    privateRoom: 'روم خاصة',
+    privateRoomSub: 'العب مع صحابك',
+    joinWithCode: 'ادخل بالكود',
+    joinWithCodeSub: 'اكتب كود الروم',
+    features: {
+      secretBids: 'زايد في السر',
+      secretBidsSub: 'عروض مقفولة ومخفية',
+      readRoom: 'اقرا منافسك',
+      readRoomSub: 'توقّع عرضه الجاي',
+      buildSquad: 'ابني تشكيلة أقوى',
+      buildSquadSub: 'اختار لعيبة متفاهمين',
+    },
+    findingMatch: 'بندوّرلك على منافس…',
+    nameModal: {
+      title: 'ادخل ساحة سنايب',
+      subtitle: 'اختار الاسم اللي منافسك هيشوفه',
+      label: 'اسم المدرب',
+      placeholder: 'اسمك في الماتش',
+      submit: 'يلا نبدأ الماتش',
+      randomize: 'اسم عشوائي',
+    },
+  },
   user: {
     guest: 'مدرب فني',
     hostBadge: 'صاحب الروم',
@@ -545,4 +577,3 @@ export const ar: TranslationDictionary = {
     youBadge: 'أنت',
   },
 };
-

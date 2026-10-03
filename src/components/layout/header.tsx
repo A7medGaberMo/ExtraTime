@@ -103,7 +103,7 @@ export function Header({
         ? 'rank'
         : pathname.startsWith('/draft')
           ? 'draft'
-          : pathname.startsWith('/auction') || pathname.startsWith('/room')
+          : pathname.startsWith('/auction') || pathname.startsWith('/room') || pathname.startsWith('/snipe')
             ? 'snipe'
             : null);
 
@@ -111,24 +111,21 @@ export function Header({
   const [domGameId, setDomGameId] = useState<GameId | null>(null);
 
   useEffect(() => {
-    if (urlGameId) {
-      setDomGameId(null);
-      return;
-    }
+    if (urlGameId) return;
 
     const checkDomGame = () => {
       const el = document.querySelector('main [data-game]') || document.querySelector('[data-game]:not(header)');
       if (el) {
         const g = el.getAttribute('data-game') as GameId | null;
         if (g && (g === 'snipe' || g === 'rank' || g === 'draft' || g === 'bank')) {
-          setDomGameId(g);
+          setDomGameId((prev) => (prev !== g ? g : prev));
           return;
         }
       }
-      setDomGameId(null);
+      setDomGameId((prev) => (prev !== null ? null : prev));
     };
 
-    checkDomGame();
+    const rafId = requestAnimationFrame(checkDomGame);
 
     const observer = new MutationObserver((mutations) => {
       for (const mutation of mutations) {
@@ -140,7 +137,7 @@ export function Header({
           const targetEl = mutation.target as Element;
           const g = targetEl.getAttribute('data-game') as GameId | null;
           if (g && (g === 'snipe' || g === 'rank' || g === 'draft' || g === 'bank')) {
-            setDomGameId(g);
+            setDomGameId((prev) => (prev !== g ? g : prev));
             return;
           }
         }
@@ -155,7 +152,10 @@ export function Header({
       childList: true,
     });
 
-    return () => observer.disconnect();
+    return () => {
+      cancelAnimationFrame(rafId);
+      observer.disconnect();
+    };
   }, [pathname, urlGameId]);
 
   // Unified active game id
@@ -195,22 +195,25 @@ export function Header({
       {/* ── Glass Capsule with Dynamic Game Border (NO Background fill) ── */}
       <div
         dir="ltr"
-        className="pointer-events-auto relative w-full max-w-[480px] sm:max-w-lg md:max-w-xl h-13 sm:h-14 rounded-full px-3.5 sm:px-4 flex items-center justify-between gap-2 transition-all duration-500 backdrop-blur-md"
+        className="et-header-capsule pointer-events-auto relative w-full max-w-[480px] sm:max-w-lg md:max-w-xl h-13 sm:h-14 rounded-full px-3.5 sm:px-4 flex items-center justify-between gap-2 backdrop-blur-md"
         style={{
+          ['--hdr-accent' as string]: `var(--game-accent, ${currentAccent})`,
           backgroundColor: 'transparent',
-          borderColor: `color-mix(in srgb, var(--game-accent, ${currentAccent}) 55%, rgba(255, 255, 255, 0.14))`,
+          borderColor: `color-mix(in srgb, var(--game-accent, ${currentAccent}) 50%, rgba(255, 255, 255, 0.12))`,
           borderWidth: '1px',
           borderStyle: 'solid',
-          boxShadow: `0 8px 28px -4px color-mix(in srgb, var(--game-accent, ${currentAccent}) 22%, transparent), inset 0 1px 0 0 rgba(255, 255, 255, 0.16)`,
+          boxShadow: `0 4px 20px -2px color-mix(in srgb, var(--game-accent, ${currentAccent}) 15%, transparent), inset 0 1px 0 0 rgba(255, 255, 255, 0.14)`,
         }}
       >
-        {/* Specular Top Shimmer Gradient — dynamically inherits game accent */}
-        <div
-          className="pointer-events-none absolute top-0 inset-x-8 h-[1.5px] rounded-full opacity-80 transition-all duration-500"
-          style={{
-            background: `linear-gradient(90deg, transparent 5%, var(--game-accent, ${currentAccent}) 50%, transparent 95%)`,
-          }}
-        />
+        {/* Specular Traveling Border Light — animated slow gold light along the border */}
+        <div className="pointer-events-none absolute inset-x-6 top-0 h-[1.5px] overflow-hidden rounded-full">
+          <div
+            className="et-header-light h-full w-28 rounded-full blur-[0.5px] motion-reduce:hidden"
+            style={{
+              background: `linear-gradient(90deg, transparent 0%, var(--game-accent, ${currentAccent}) 50%, transparent 100%)`,
+            }}
+          />
+        </div>
 
         {/* ── LEFT: Fixed Logo & Brand Name on LEFT in BOTH languages ── */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 min-w-0">
@@ -219,18 +222,20 @@ export function Header({
               type="button"
               onClick={handleBackClick}
               aria-label={t('common.back')}
-              className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted hover:text-foreground hover:border-white/30 transition-colors cursor-pointer shrink-0"
+              title={t('common.back')}
+              className="et-header-btn flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full cursor-pointer shrink-0"
             >
-              <AppIcon icon={ArrowLeft} size={15} weight="bold" />
+              <AppIcon icon={ArrowLeft} size={15} weight="bold" className="et-hdr-icon et-hdr-icon-back" />
             </button>
           )}
 
           <Link
             href="/"
-            className="flex items-center gap-2 group transition-opacity hover:opacity-90 shrink-0 select-none"
+            aria-label={`${t('common.appName')} — ${t('nav.home')}`}
+            className="et-header-brand flex items-center gap-2 rounded-full shrink-0 select-none focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             <div
-              className="relative flex h-7.5 w-7.5 sm:h-8 sm:w-8 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 transition-transform group-hover:scale-105 p-0.5 shadow-sm"
+              className="et-header-logo relative flex h-7.5 w-7.5 sm:h-8 sm:w-8 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 p-0.5 shadow-sm"
               style={{
                 borderColor: `color-mix(in srgb, var(--game-accent, ${currentAccent}) 60%, transparent)`,
                 boxShadow: `0 0 10px color-mix(in srgb, var(--game-accent, ${currentAccent}) 30%, transparent)`,
@@ -239,20 +244,19 @@ export function Header({
             >
               <Image
                 src="/ETIcon.png"
-                alt="ExtraTime"
+                alt=""
                 width={26}
                 height={26}
                 className="rounded-full object-cover shrink-0"
               />
             </div>
-            <span className="font-stats font-bold text-xs sm:text-[13px] text-foreground tracking-wide flex items-center">
+            <span
+              className="et-header-wordmark text-xs sm:text-[13px] text-foreground flex items-center"
+              lang="en"
+              dir="ltr"
+            >
               <span>Extra</span>
-              <span
-                className="transition-colors duration-500 font-black ml-0.5"
-                style={{ color: `var(--game-accent, ${currentAccent})` }}
-              >
-                Time
-              </span>
+              <span className="et-header-wordmark-accent ml-0.5">Time</span>
             </span>
           </Link>
         </div>
@@ -273,18 +277,19 @@ export function Header({
                       ? `/draft/${activeMatch.id}`
                       : `/bank/${activeMatch.id}`
               }
-              className="btn-haptic inline-flex items-center gap-1.5 sm:gap-2 rounded-full border px-2.5 py-1 text-xs font-bold transition-all animate-pulse truncate max-w-full group shadow-sm hover:scale-[1.02]"
+              className="et-header-live btn-haptic inline-flex items-center gap-1.5 sm:gap-2 rounded-full border px-2.5 py-1 text-xs font-bold truncate max-w-full shadow-sm"
               style={{
                 borderColor: `color-mix(in srgb, var(--game-accent, ${currentAccent}) 60%, transparent)`,
                 backgroundColor: `color-mix(in srgb, var(--game-accent, ${currentAccent}) 16%, transparent)`,
                 color: `var(--game-accent, ${currentAccent})`,
                 boxShadow: `0 0 12px color-mix(in srgb, var(--game-accent, ${currentAccent}) 25%, transparent)`,
               }}
-              title={lang === 'ar' ? 'الماتش لايف — اضغط للمتابعة' : 'Match live — Tap to resume'}
+              title={t('common.resumeMatch')}
+              aria-label={`${t('common.liveMatch')} — ${t('common.resumeMatch')}`}
             >
-              <span className="relative flex h-2 w-2 shrink-0">
+              <span className="relative flex h-2 w-2 shrink-0" aria-hidden="true">
                 <span
-                  className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
+                  className="motion-safe:animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
                   style={{ backgroundColor: `var(--game-accent, ${currentAccent})` }}
                 />
                 <span
@@ -292,10 +297,13 @@ export function Header({
                   style={{ backgroundColor: `var(--game-accent, ${currentAccent})` }}
                 />
               </span>
-              <span className="font-stats uppercase text-[10px] sm:text-[11px] font-black tracking-wider truncate">
-                {lang === 'ar' ? 'ماتش لايف' : 'LIVE MATCH'}
+              <span
+                className="font-stats uppercase text-[10px] sm:text-[11px] font-black tracking-wider truncate"
+                dir={lang === 'ar' ? 'rtl' : 'ltr'}
+              >
+                {t('common.liveMatch')}
               </span>
-              <span className="hidden xs:inline-block text-[10px] opacity-75 font-mono">
+              <span className="hidden xs:inline-block text-[10px] opacity-75 font-mono" dir="ltr">
                 ({activeMatch.code})
               </span>
             </Link>
@@ -308,29 +316,38 @@ export function Header({
           <button
             type="button"
             onClick={handleToggleSound}
-            className="btn-haptic flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-muted hover:border-white/30 hover:text-foreground transition-all cursor-pointer shadow-xs"
+            className="et-header-btn flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full cursor-pointer"
             title={muted ? t('common.soundMuted') : t('common.soundOn')}
             aria-label={muted ? t('common.soundMuted') : t('common.soundOn')}
+            aria-pressed={!muted}
           >
             <AppIcon
+              key={muted ? 'muted' : 'on'}
               icon={muted ? SpeakerSimpleSlash : SpeakerHigh}
               size={14}
               weight="bold"
-              className={muted ? 'text-danger' : 'transition-colors duration-500'}
+              className={cn('et-hdr-pop', muted ? 'text-danger' : 'transition-colors duration-500')}
               style={!muted ? { color: `var(--game-accent, ${currentAccent})` } : undefined}
             />
           </button>
 
-          {/* Language Switcher Button */}
+          {/* Language Switcher Button — label shows the TARGET language in its own script */}
           <button
             type="button"
             onClick={toggleLang}
-            className="btn-haptic flex h-7.5 sm:h-8 items-center gap-1 rounded-full px-2.5 sm:px-3 border border-white/10 bg-white/[0.04] text-[10px] sm:text-[11px] font-bold text-muted hover:border-white/30 hover:text-foreground transition-all cursor-pointer font-stats shadow-xs"
-            title={t('common.language')}
-            aria-label={t('common.language')}
+            className="et-header-btn flex h-7.5 sm:h-8 items-center gap-1.5 rounded-full px-2.5 sm:px-3 text-[10px] sm:text-[11px] cursor-pointer"
+            title={t('common.switchLanguage')}
+            aria-label={t('common.switchLanguage')}
           >
-            <AppIcon icon={Translate} size={13} weight="bold" />
-            <span className="tracking-tight">{lang === 'en' ? 'عربي' : 'EN'}</span>
+            <AppIcon icon={Translate} size={13} weight="bold" className="et-hdr-icon et-hdr-icon-tilt" />
+            <span
+              key={lang}
+              className="et-hdr-lang-label"
+              lang={lang === 'en' ? 'ar' : 'en'}
+              dir={lang === 'en' ? 'rtl' : 'ltr'}
+            >
+              {lang === 'en' ? 'عربي' : 'EN'}
+            </span>
           </button>
         </div>
       </div>

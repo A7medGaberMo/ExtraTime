@@ -22,6 +22,9 @@ export const en = {
     soundOn: 'Sound On',
     soundMuted: 'Sound Muted',
     language: 'Language',
+    switchLanguage: 'Switch to Arabic',
+    liveMatch: 'Live match',
+    resumeMatch: 'Your match is live — tap to resume',
     arabic: 'العربية',
     english: 'English',
   },
@@ -255,7 +258,8 @@ export const en = {
   },
   rank: {
     hubTitle: 'Rank Mode',
-    hubSubtitle: 'Order 5 clubs, superstars, historic seasons, and tournament records by accurate official metrics.',
+    hubSubtitle:
+      'Order 5 clubs, superstars, historic seasons, and tournament records by accurate official metrics.',
     hubBadge: 'Official Records & Trivia',
     soloTab: 'Solo Sprint',
     quickTab: 'Quick 1v1',
@@ -264,7 +268,8 @@ export const en = {
     rounds3: '3 Rounds (Sprint)',
     rounds5: '5 Rounds (Full Match)',
     scoringRuleTitle: 'Distance Scoring Engine',
-    scoringRuleDesc: 'Rank 5 items strictly by metric. Exact position scores +2, off by 1 scores +1, off by 2 scores 0, misses score -1 / -2.',
+    scoringRuleDesc:
+      'Rank 5 items strictly by metric. Exact position scores +2, off by 1 scores +1, off by 2 scores 0, misses score -1 / -2.',
     startSolo: 'Start Solo ({rounds} Rounds)',
     findQuick: 'Find Quick 1v1 Match',
     inQueueStats: '{count} in Queue',
@@ -298,7 +303,8 @@ export const en = {
   },
   draft: {
     hubTitle: 'Extra Draft',
-    hubSubtitle: 'Select your tactical formation, draft Starting XI icons and super-subs, and complete dynamic challenges!',
+    hubSubtitle:
+      'Select your tactical formation, draft Starting XI icons and super-subs, and complete dynamic challenges!',
     engineBadge: 'ENGINE 3 · EXTRA DRAFT',
     soloTab: 'Solo Challenges',
     duelTab: '1v1 PvP Duels',
@@ -421,8 +427,7 @@ export const en = {
         'Generate a 6-character room code to invite your friend to a private head-to-head match.',
       createRoomBtn: 'Create Room',
       joinRoom: 'Join with Code',
-      joinRoomDesc:
-        'Have a code from a friend? Enter the 6-letter room code to join their lobby.',
+      joinRoomDesc: 'Have a code from a friend? Enter the 6-letter room code to join their lobby.',
       joinRoomBtn: 'Join Room',
       timer90s: '90s Timer',
       questions12: '12 Questions',
@@ -536,6 +541,38 @@ export const en = {
       bronze: 'Bronze',
     },
   },
+  snipeHub: {
+    badge: 'LIVE FOOTBALL AUCTION',
+    title: 'Snipe',
+    description: 'Bid in secret, read your rival, and outsmart them to build the ultimate XI.',
+    liveLabel: 'Live',
+    liveSuffix: 'waiting for a rival',
+    liveEmpty: 'Queue open — be the first in',
+    liveLoading: 'Checking the live queue…',
+    publicMatch: 'Public Match',
+    publicMatchSub: 'Instant 1v1 auction',
+    privateRoom: 'Private Room',
+    privateRoomSub: 'Play with friends',
+    joinWithCode: 'Join with Code',
+    joinWithCodeSub: 'Enter room PIN',
+    features: {
+      secretBids: 'Bid in secret',
+      secretBidsSub: 'Sealed, hidden bids',
+      readRoom: 'Read your rival',
+      readRoomSub: 'Predict their next bid',
+      buildSquad: 'Build a stronger XI',
+      buildSquadSub: 'Draft real chemistry',
+    },
+    findingMatch: 'Finding a rival…',
+    nameModal: {
+      title: 'Enter the Snipe Arena',
+      subtitle: 'Pick the name your rival will see',
+      label: 'Manager name',
+      placeholder: 'Your manager name',
+      submit: 'Start Public Match',
+      randomize: 'Random name',
+    },
+  },
   user: {
     guest: 'Guest Manager',
     hostBadge: 'Host',
@@ -549,4 +586,3 @@ type DeepString<T> = {
 };
 
 export type TranslationDictionary = DeepString<typeof en>;
-

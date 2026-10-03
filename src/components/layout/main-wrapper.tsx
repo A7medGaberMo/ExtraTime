@@ -10,6 +10,7 @@ export function MainWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const isZeroScrollArena =
     pathname === '/' ||
+    pathname === '/snipe' ||
     (pathname.startsWith('/draft/') && pathname !== '/draft') ||
     pathname.startsWith('/auction/') ||
     (pathname.startsWith('/rank/') && pathname !== '/rank') ||

@@ -1,5 +1,16 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, IBM_Plex_Sans_Arabic, Barlow_Condensed } from 'next/font/google';
+import {
+  Inter,
+  Noto_Sans_Arabic,
+  Barlow_Condensed,
+  Sora,
+  Plus_Jakarta_Sans,
+  Changa,
+  Lalezar,
+  Reem_Kufi,
+  Noto_Kufi_Arabic,
+  Cairo,
+} from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
 import { ToastProvider } from '@/components/shared/toast';
@@ -14,10 +25,10 @@ const inter = Inter({
   display: 'swap',
 });
 
-const plexArabic = IBM_Plex_Sans_Arabic({
+const notoSansArabic = Noto_Sans_Arabic({
   subsets: ['arabic'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-plex-arabic',
+  variable: '--font-noto-sans-arabic',
   display: 'swap',
 });
 
@@ -26,6 +37,55 @@ const barlowCondensed = Barlow_Condensed({
   subsets: ['latin'],
   weight: ['500', '600', '700'],
   variable: '--font-barlow-condensed',
+  display: 'swap',
+});
+
+const sora = Sora({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  variable: '--font-sora',
+  display: 'swap',
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-plus-jakarta',
+  display: 'swap',
+});
+
+const changa = Changa({
+  subsets: ['arabic'],
+  weight: ['500', '600', '700'],
+  variable: '--font-changa',
+  display: 'swap',
+});
+
+const lalezar = Lalezar({
+  subsets: ['arabic'],
+  weight: ['400'],
+  variable: '--font-lalezar',
+  display: 'swap',
+});
+
+const reemKufi = Reem_Kufi({
+  subsets: ['arabic'],
+  weight: ['500', '600', '700'],
+  variable: '--font-reem-kufi',
+  display: 'swap',
+});
+
+const notoKufiArabic = Noto_Kufi_Arabic({
+  subsets: ['arabic'],
+  weight: ['600', '700'],
+  variable: '--font-noto-kufi',
+  display: 'swap',
+});
+
+const cairoArabic = Cairo({
+  subsets: ['arabic'],
+  weight: ['900'],
+  variable: '--font-cairo-arabic',
   display: 'swap',
 });
 
@@ -98,7 +158,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'ExtraTime | Secret Bids & Rank Duels',
-    description: 'Draft stars with secret sealed bids and order football legends by official records.',
+    description:
+      'Draft stars with secret sealed bids and order football legends by official records.',
     images: ['/ExtraTimeLogo.png'],
   },
 };
@@ -147,7 +208,7 @@ export default function RootLayout({
     <html
       lang="en"
       dir="ltr"
-      className={`dark ${inter.variable} ${plexArabic.variable} ${barlowCondensed.variable}`}
+      className={`dark ${inter.variable} ${notoSansArabic.variable} ${barlowCondensed.variable} ${sora.variable} ${plusJakarta.variable} ${changa.variable} ${lalezar.variable} ${reemKufi.variable} ${notoKufiArabic.variable} ${cairoArabic.variable}`}
     >
       <head>
         <script
@@ -155,16 +216,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body
-        className="bg-canvas text-foreground selection:bg-brand selection:text-canvas flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-sans antialiased"
-      >
+      <body className="bg-canvas text-foreground selection:bg-brand selection:text-canvas flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-sans antialiased">
         <ConvexClientProvider>
           <I18nProvider>
             <ToastProvider>
               <Header />
-              <MainWrapper>
-                {children}
-              </MainWrapper>
+              <MainWrapper>{children}</MainWrapper>
             </ToastProvider>
           </I18nProvider>
         </ConvexClientProvider>

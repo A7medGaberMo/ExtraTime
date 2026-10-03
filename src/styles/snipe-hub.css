@@ -1,0 +1,980 @@
+/* Shared visual tokens for Snipe surfaces. */
+[data-game='snipe'] {
+  --snipe-bg: #07090f;
+  --snipe-gold-light: #fbbf24;
+  --snipe-gold-mid: #f59e0b;
+  --snipe-gold-deep: #d97706;
+  --snipe-gold-glow: rgba(251, 191, 36, 0.35);
+  --snipe-text-primary: #f5f5f7;
+  --snipe-text-subtitle: #b8becc;
+  --snipe-text-muted: #9aa0ae;
+  --snipe-card-glass: rgba(255, 255, 255, 0.03);
+  --snipe-card-line: rgba(255, 255, 255, 0.08);
+}
+
+.snipe-title {
+  font-family: var(--font-sora), var(--font-display), sans-serif;
+  font-weight: 800;
+  font-size: clamp(60px, 8vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  background: linear-gradient(180deg, #ffffff 15%, #e9e9ef 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html[dir='rtl'] .snipe-title {
+  font-family: var(--font-cairo-arabic), var(--font-display-arabic), sans-serif !important;
+  letter-spacing: normal !important;
+  font-size: clamp(60px, 8vw, 64px);
+  font-weight: 900;
+  line-height: 1.22;
+  background: linear-gradient(180deg, #ffffff 12%, #e5e7eb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.snipe-hero-title {
+  font-size: clamp(3.5rem, 7.5dvh, 4rem);
+  line-height: 0.92;
+}
+
+html[dir='rtl'] .snipe-hero-title {
+  font-size: clamp(4rem, 8.5dvh, 4.5rem);
+  line-height: 1;
+}
+
+.snipe-eyebrow {
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--snipe-gold-light);
+}
+
+html[dir='rtl'] .snipe-eyebrow {
+  font-family: var(--font-changa), var(--font-arabic), sans-serif !important;
+  letter-spacing: normal !important;
+  text-transform: none;
+}
+
+.snipe-body {
+  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  color: #c5cad6;
+}
+
+html[dir='rtl'] .snipe-body {
+  font-family: var(--font-arabic), sans-serif !important;
+  letter-spacing: normal !important;
+  color: #c5cad6;
+}
+
+html[dir='rtl'] .snipe-zone-hero .snipe-body {
+  max-width: 300px;
+  line-height: 1.7;
+}
+
+.snipe-zone-hero .snipe-body {
+  max-width: 300px;
+  text-wrap: balance;
+}
+
+.snipe-zone-hero .snipe-description {
+  margin-inline: auto;
+}
+
+.snipe-cta-btn {
+  background: linear-gradient(
+    to right,
+    var(--snipe-gold-light),
+    var(--snipe-gold-mid) 50%,
+    var(--snipe-gold-deep)
+  );
+  box-shadow:
+    inset 0 1.5px 0.5px rgba(255, 255, 255, 0.5),
+    0 0 28px var(--snipe-gold-glow),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+  transition:
+    filter 0.25s ease,
+    box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html[dir='rtl'] .snipe-cta-btn {
+  background: linear-gradient(
+    to left,
+    var(--snipe-gold-light),
+    var(--snipe-gold-mid) 50%,
+    var(--snipe-gold-deep)
+  );
+}
+
+.snipe-cta-btn:hover {
+  filter: brightness(1.08);
+  box-shadow:
+    inset 0 1.5px 0.5px rgba(255, 255, 255, 0.65),
+    0 0 44px rgba(251, 191, 36, 0.5),
+    0 8px 24px -4px rgba(251, 191, 36, 0.3);
+}
+
+.snipe-cta-btn:active {
+  transform: scale(0.98);
+  filter: brightness(0.96);
+}
+
+.snipe-cta-text {
+  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(120, 53, 15, 0.18);
+}
+
+html[dir='rtl'] .snipe-cta-text,
+html[dir='rtl'] .snipe-card-title {
+  font-family: var(--font-noto-kufi), var(--font-arabic), sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.snipe-card-title {
+  color: var(--snipe-text-primary);
+  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 640px) {
+  .snipe-card-title {
+    font-size: 16px;
+  }
+}
+
+html[dir='rtl'] .snipe-feature-title {
+  font-family: var(--font-noto-kufi), var(--font-arabic), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+html[dir='rtl'] .snipe-feature-subline {
+  font-family: var(--font-arabic), sans-serif;
+  font-size: 11px;
+  letter-spacing: normal;
+}
+
+.snipe-live-pill {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+}
+
+.snipe-radar-stage {
+  container-type: size;
+}
+
+@keyframes snipeCtaShine {
+  0% {
+    transform: translateX(-130%) skewX(-20deg);
+  }
+  25%,
+  100% {
+    transform: translateX(280%) skewX(-20deg);
+  }
+}
+
+.snipe-cta-shine {
+  animation: snipeCtaShine 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.snipe-radar-display {
+  opacity: 0.96;
+  filter: drop-shadow(0 0 26px rgba(251, 191, 36, 0.12));
+  width: min(78vw, 320px);
+  height: min(78vw, 320px);
+}
+
+@supports (height: 1cqh) {
+  .snipe-radar-display {
+    width: min(78vw, 320px, 100cqh);
+    height: min(78vw, 320px, 100cqh);
+    flex-shrink: 1;
+  }
+}
+
+.snipe-radar-ring {
+  border: 1px solid rgba(251, 191, 36, 0.19);
+  box-shadow: inset 0 0 28px rgba(251, 191, 36, 0.035);
+  animation: snipeRingPulse 3.2s ease-in-out infinite alternate;
+}
+
+.snipe-radar-ring-middle {
+  border-color: rgba(251, 191, 36, 0.14);
+  animation-delay: 0.35s;
+}
+
+.snipe-radar-ring-inner {
+  border-color: rgba(251, 191, 36, 0.1);
+  animation-delay: 0.7s;
+}
+
+.snipe-radar-ticks {
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(251, 191, 36, 0.5) 0deg 0.3deg,
+    transparent 0.3deg 6deg
+  );
+  mask: radial-gradient(circle, transparent 0 94%, #000 95% 100%);
+}
+
+.snipe-radar-axis {
+  background: linear-gradient(transparent, rgba(251, 191, 36, 0.2), transparent);
+}
+
+.snipe-radar-axis-horizontal {
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.2), transparent);
+}
+
+.snipe-radar-sweep {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 260deg,
+    rgba(251, 191, 36, 0.025) 315deg,
+    rgba(251, 191, 36, 0.3) 360deg
+  );
+  mask: radial-gradient(circle, transparent 0 20%, #000 34% 96%, transparent 100%);
+  animation: snipeRadarSweep 4s linear infinite;
+}
+
+.snipe-radar-core {
+  border: 1px solid rgba(251, 191, 36, 0.4);
+  background: linear-gradient(165deg, #211b10, #111116 58%, #090a10);
+  color: #fbbf24;
+  box-shadow:
+    0 0 28px rgba(251, 191, 36, 0.28),
+    inset 0 1px 1px rgba(255, 255, 255, 0.24);
+}
+
+.snipe-radar-blip {
+  background: #fbbf24;
+  box-shadow: 0 0 12px rgba(251, 191, 36, 0.9);
+  animation: snipeRadarBlip 4s ease-in-out infinite;
+}
+
+.snipe-radar-blip-one {
+  animation-delay: 0.4s;
+}
+
+.snipe-radar-blip-two {
+  animation-delay: 1.3s;
+}
+
+.snipe-radar-blip-three {
+  animation-delay: 2.2s;
+}
+
+.snipe-radar-blip-four {
+  animation-delay: 3.1s;
+}
+
+@keyframes snipeFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.snipe-stagger-1,
+.snipe-stagger-2,
+.snipe-stagger-3,
+.snipe-stagger-4,
+.snipe-stagger-5 {
+  animation: snipeFadeUp 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.snipe-stagger-1 {
+  animation-delay: 80ms;
+}
+.snipe-stagger-2 {
+  animation-delay: 130ms;
+}
+.snipe-stagger-3 {
+  animation-delay: 180ms;
+}
+.snipe-stagger-4 {
+  animation-delay: 230ms;
+}
+.snipe-stagger-5 {
+  animation-delay: 280ms;
+}
+
+@keyframes snipeRingPulse {
+  from {
+    opacity: 0.55;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes snipeRadarBlip {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes snipeRadarSweep {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-height: 760px) {
+  .snipe-zone-actions > div:nth-of-type(1) > button {
+    height: 54px;
+  }
+
+  .snipe-zone-actions > div:nth-of-type(2) > a {
+    height: 58px;
+  }
+
+  .snipe-zone-actions > div:nth-of-type(3) {
+    min-height: 76px;
+  }
+
+  .snipe-zone-hero > .snipe-body {
+    font-size: 14px;
+  }
+
+  .snipe-hero-title {
+    font-size: clamp(2.85rem, 8dvh, 3.5rem);
+  }
+
+  html[dir='rtl'] .snipe-hero-title {
+    font-size: clamp(3.3rem, 8.5dvh, 3.9rem);
+  }
+}
+
+@media (max-height: 600px) and (min-height: 521px) {
+  .snipe-zone-actions > div:nth-of-type(1) > button {
+    height: 50px;
+  }
+
+  .snipe-zone-actions > div:nth-of-type(2) > a {
+    height: 54px;
+  }
+
+  .snipe-zone-actions > div:nth-of-type(3) {
+    min-height: 72px;
+  }
+
+  .snipe-zone-hero > .snipe-body {
+    font-size: 13px;
+  }
+
+  .snipe-hero-title {
+    font-size: 2.75rem;
+  }
+
+  html[dir='rtl'] .snipe-hero-title {
+    font-size: 3.15rem;
+  }
+}
+
+/* Compact landscape phones while keeping the complete hub on one screen. */
+@media (max-height: 520px) {
+  .snipe-hub-layout {
+    padding-top: calc(max(env(safe-area-inset-top), 8px) + 52px) !important;
+  }
+
+  .snipe-hub-layout > div:first-child {
+    height: 8px;
+  }
+
+  .snipe-radar-core {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+  }
+
+  .snipe-radar-core svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .snipe-hero-title {
+    font-size: 2.5rem;
+  }
+
+  html[dir='rtl'] .snipe-hero-title {
+    font-size: 2.9rem;
+  }
+
+  .snipe-zone-hero > .snipe-body {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .snipe-zone-actions > div:nth-of-type(1) > button {
+    height: 48px;
+  }
+
+  .snipe-zone-actions > div:nth-of-type(2) > a {
+    height: 52px;
+  }
+
+  .snipe-zone-actions > div:nth-of-type(3) {
+    min-height: 60px;
+    padding-block: 4px;
+  }
+}
+
+.snipe-hub-page::after {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  content: '';
+  inset: 0;
+  opacity: 0.018;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.65) 0.5px, transparent 0.8px);
+  background-size: 4px 4px;
+}
+
+/* Header travelling-light keyframes now live in styles/header.css (global). */
+
+/* ───────────────────────── Pro polish layer ───────────────────────── */
+
+/* Title: one-off gold glint that travels across the wordmark every few seconds. */
+.snipe-hub-page h2.snipe-title-sheen {
+  background-image: linear-gradient(
+    110deg,
+    #ffffff 0%,
+    #eceef3 42%,
+    #fde68a 49%,
+    #fbbf24 50%,
+    #fde68a 51%,
+    #eceef3 58%,
+    #ffffff 100%
+  );
+  background-size: 250% 100%;
+  background-position: 100% 0;
+  animation: snipeTitleSheen 7s cubic-bezier(0.65, 0, 0.35, 1) 1.2s infinite;
+}
+
+@keyframes snipeTitleSheen {
+  0% {
+    background-position: 100% 0;
+  }
+  22%,
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+/* Ambient core glow breathes using the individual `scale` property so it
+   never fights the Tailwind translate utilities on the same element. */
+.snipe-core-glow {
+  animation: snipeGlowBreathe 7s ease-in-out infinite alternate;
+}
+
+@keyframes snipeGlowBreathe {
+  from {
+    opacity: 0.75;
+    scale: 0.94;
+  }
+  to {
+    opacity: 1;
+    scale: 1.06;
+  }
+}
+
+/* Degree ticks: `closest-side` keeps the mask on the ring edge of a square box. */
+.snipe-radar-display .snipe-radar-ticks {
+  opacity: 0.55;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(251, 191, 36, 0.55) 0deg 0.6deg,
+    transparent 0.6deg 10deg
+  );
+  mask: radial-gradient(circle closest-side, transparent 0 91%, #000 92% 99%, transparent 100%);
+}
+
+.snipe-radar-bezel {
+  border: 1px dashed rgba(251, 191, 36, 0.13);
+  animation: snipeRadarSweep 60s linear infinite reverse;
+}
+
+.snipe-ring-breathe {
+  animation: snipeRingPulse 3.2s ease-in-out infinite alternate;
+}
+
+.snipe-ring-breathe-delay {
+  animation-delay: 0.8s;
+}
+
+/* Scope corner brackets framing the radar. */
+.snipe-scope-bracket {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  border-color: rgba(251, 191, 36, 0.45);
+  border-style: solid;
+  border-width: 0;
+}
+
+.snipe-scope-bracket-tl {
+  top: -6%;
+  left: -6%;
+  border-top-width: 1.5px;
+  border-left-width: 1.5px;
+  border-top-left-radius: 4px;
+}
+
+.snipe-scope-bracket-tr {
+  top: -6%;
+  right: -6%;
+  border-top-width: 1.5px;
+  border-right-width: 1.5px;
+  border-top-right-radius: 4px;
+}
+
+.snipe-scope-bracket-bl {
+  bottom: -6%;
+  left: -6%;
+  border-bottom-width: 1.5px;
+  border-left-width: 1.5px;
+  border-bottom-left-radius: 4px;
+}
+
+.snipe-scope-bracket-br {
+  bottom: -6%;
+  right: -6%;
+  border-bottom-width: 1.5px;
+  border-right-width: 1.5px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Sonar pings radiating out of the core mark. */
+.snipe-sonar-ping {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border-radius: 9999px;
+  border: 1px solid rgba(251, 191, 36, 0.5);
+  pointer-events: none;
+  opacity: 0;
+  animation: snipeSonarPing 4s cubic-bezier(0.2, 0.6, 0.35, 1) infinite;
+}
+
+.snipe-sonar-ping-delay {
+  animation-delay: 2s;
+}
+
+@keyframes snipeSonarPing {
+  0% {
+    opacity: 0.6;
+    scale: 1;
+  }
+  100% {
+    opacity: 0;
+    scale: 4.4;
+  }
+}
+
+/* Blips flare exactly when the 4s sweep passes their bearing
+   (negative delays = bearing / 360 × 4s − 4s). */
+.snipe-blip-1,
+.snipe-blip-2,
+.snipe-blip-3 {
+  animation: snipeBlipFlare 4s ease-out infinite;
+}
+
+.snipe-blip-1 {
+  animation-delay: -3.48s; /* ≈47° */
+}
+
+.snipe-blip-3 {
+  animation-delay: -2.57s; /* ≈129° */
+}
+
+.snipe-blip-2 {
+  animation-delay: -1.48s; /* ≈227° */
+}
+
+@keyframes snipeBlipFlare {
+  0% {
+    opacity: 1;
+    scale: 1.45;
+  }
+  12% {
+    opacity: 1;
+    scale: 1;
+  }
+  70%,
+  100% {
+    opacity: 0.22;
+    scale: 0.85;
+  }
+}
+
+/* Live pill ping. */
+.snipe-live-ping {
+  animation: snipeLivePing 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes snipeLivePing {
+  75%,
+  100% {
+    opacity: 0;
+    scale: 2.4;
+  }
+}
+
+/* CTA: sub-line typography + RTL fonts. */
+.snipe-cta-sub {
+  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  letter-spacing: 0.02em;
+}
+
+html[dir='rtl'] .snipe-cta-sub {
+  font-family: var(--font-arabic), sans-serif;
+  letter-spacing: normal;
+  font-size: 11.5px;
+}
+
+/* Secondary cards: pointer-tracked spotlight + top hairline highlight + glass edge shimmer. */
+.snipe-action-card {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px) saturate(130%);
+  -webkit-backdrop-filter: blur(12px) saturate(130%);
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.3s ease;
+}
+
+.snipe-action-card:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(251, 191, 36, 0.15),
+    0 6px 20px -4px rgba(251, 191, 36, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.snipe-action-card:active {
+  transform: translateY(0) scale(0.97) !important;
+}
+
+.snipe-action-card::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  pointer-events: none;
+  opacity: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    160px circle at var(--spot-x, 50%) var(--spot-y, 0%),
+    rgba(251, 191, 36, 0.18),
+    transparent 65%
+  );
+  transition: opacity 0.3s ease;
+}
+
+.snipe-action-card:hover::before,
+.snipe-action-card:focus-visible::before {
+  opacity: 1;
+}
+
+/* Feature strip: logical dividers + icon chips. */
+.snipe-feature-strip > div + div {
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.snipe-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border: 1px solid rgba(251, 191, 36, 0.18);
+  background: radial-gradient(circle at 50% 30%, rgba(251, 191, 36, 0.16), rgba(251, 191, 36, 0.03));
+}
+
+/* ───────────────────────── Typography & buttons ───────────────────────── */
+
+/* Eyebrow flanking hairlines (mirror automatically in RTL via flex order). */
+.snipe-eyebrow-line {
+  width: 22px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.7));
+}
+
+.snipe-eyebrow-line-end {
+  background: linear-gradient(90deg, rgba(251, 191, 36, 0.7), transparent);
+}
+
+html[dir='rtl'] .snipe-eyebrow-line {
+  background: linear-gradient(90deg, rgba(251, 191, 36, 0.7), transparent);
+}
+
+html[dir='rtl'] .snipe-eyebrow-line-end {
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.7));
+}
+
+html[dir='rtl'] .snipe-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* CTA: lift on hover, deeper press, native 800 weight, spring arrow. */
+.snipe-cta-btn:not(:disabled):hover {
+  transform: translateY(-2px);
+}
+
+.snipe-cta-btn:not(:disabled):active {
+  transform: translateY(0) scale(0.975);
+  box-shadow:
+    inset 0 3px 8px rgba(120, 53, 15, 0.4),
+    0 0 14px var(--snipe-gold-glow);
+  transition-duration: 0.1s;
+}
+
+.snipe-cta-text {
+  font-weight: 800;
+}
+
+html[dir='rtl'] .snipe-cta-text {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.snipe-cta-arrow {
+  transition:
+    transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.snipe-cta-btn:not(:disabled):hover .snipe-cta-arrow {
+  background-color: #07090f;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 0 12px rgba(251, 191, 36, 0.3);
+  transform: translateX(3px);
+}
+
+html[dir='rtl'] .snipe-cta-btn:not(:disabled):hover .snipe-cta-arrow {
+  transform: translateX(-3px);
+}
+
+/* Matchmaking: indeterminate progress bar along the bottom edge. */
+.snipe-cta-progress {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 3px;
+  overflow: hidden;
+  background: rgba(7, 9, 15, 0.18);
+  pointer-events: none;
+}
+
+.snipe-cta-progress::after {
+  position: absolute;
+  inset-block: 0;
+  width: 35%;
+  content: '';
+  border-radius: 9999px;
+  background: rgba(7, 9, 15, 0.7);
+  animation: snipeCtaProgress 1.3s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes snipeCtaProgress {
+  from {
+    left: -35%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.snipe-cta-btn[aria-busy='true'] {
+  filter: saturate(0.9);
+}
+
+/* Secondary card label: balanced weight per script. */
+.snipe-card-title {
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+html[dir='rtl'] .snipe-card-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (min-width: 640px) {
+  .snipe-card-title {
+    font-size: 16px;
+  }
+}
+
+/* Feature strip type. */
+.snipe-feature-title {
+  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+
+.snipe-feature-subline {
+  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  color: var(--snipe-text-muted);
+}
+
+html[dir='rtl'] .snipe-feature-title,
+html[dir='rtl'] .snipe-feature-subline {
+  line-height: 1.55;
+}
+
+/* Live pill hover affordance. */
+.snipe-live-pill {
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.snipe-live-pill:hover {
+  border-color: rgba(251, 191, 36, 0.42);
+  background-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 16px rgba(251, 191, 36, 0.12);
+  transform: translateY(-1px);
+}
+
+html[dir='rtl'] .snipe-live-pill {
+  font-family: var(--font-noto-kufi), var(--font-arabic), sans-serif;
+}
+
+/* Action zone entrance stagger. */
+.snipe-zone-actions {
+  animation: snipeFadeUp 520ms cubic-bezier(0.16, 1, 0.3, 1) 260ms both;
+}
+
+/* Feature strip hover highlight. */
+.snipe-feature-strip > div {
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease;
+  border-radius: 8px;
+  cursor: default;
+}
+
+.snipe-feature-strip > div:hover {
+  background-color: rgba(251, 191, 36, 0.04);
+}
+
+.snipe-feature-strip > div:hover .snipe-feature-icon {
+  border-color: rgba(251, 191, 36, 0.35);
+  background: radial-gradient(circle at 50% 30%, rgba(251, 191, 36, 0.25), rgba(251, 191, 36, 0.06));
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.15);
+}
+
+.snipe-feature-icon {
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Compact heights: tighten the new chrome so the hub stays zero-scroll. */
+@media (max-height: 760px) {
+  .snipe-card-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .snipe-feature-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .snipe-scope-bracket {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-height: 520px) {
+  .snipe-cta-sub {
+    display: none;
+  }
+
+  .snipe-feature-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snipe-cta-shine,
+  .snipe-radar-sweep,
+  .snipe-radar-blip,
+  .snipe-radar-ring,
+  .snipe-radar-bezel,
+  .snipe-ring-breathe,
+  .snipe-sonar-ping,
+  .snipe-blip-1,
+  .snipe-blip-2,
+  .snipe-blip-3,
+  .snipe-live-ping,
+  .snipe-cta-progress::after,
+  .snipe-core-glow,
+  .snipe-hub-page h2.snipe-title-sheen,
+  .snipe-zone-actions,
+  .snipe-stagger-1,
+  .snipe-stagger-2,
+  .snipe-stagger-3,
+  .snipe-stagger-4,
+  .snipe-stagger-5 {
+    animation: none !important;
+  }
+  .snipe-cta-btn,
+  .snipe-cta-arrow,
+  .snipe-action-card,
+  .snipe-action-card::before,
+  .snipe-live-pill,
+  .snipe-feature-icon,
+  .snipe-feature-strip > div {
+    transition: none;
+  }
+}

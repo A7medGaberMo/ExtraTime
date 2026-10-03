@@ -1,58 +1,72 @@
 @import 'tailwindcss';
 @import '../styles/theme.css';
+@import '../styles/header.css';
 
 @theme {
   /* ═══════════════════════════════════════════════════════════════════
      TYPOGRAPHY — Apple Product & Luxury Automotive Hierarchy
-     Latin: SF Pro Display / Inter · Arabic: IBM Plex Sans Arabic.
+     Latin: SF Pro Display / Inter · Arabic: Noto Sans Arabic + Noto Kufi Arabic.
      Weights: 300 (Light), 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold).
      ═══════════════════════════════════════════════════════════════════ */
   --font-sans:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
-    var(--font-inter), system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', var(--font-inter),
+    system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
   --font-arabic:
-    var(--font-plex-arabic), -apple-system, 'SF Pro Arabic', 'Segoe UI',
-    Tahoma, 'Noto Sans Arabic', system-ui, sans-serif;
+    var(--font-noto-sans-arabic), 'Noto Sans Arabic', 'Segoe UI', Tahoma, system-ui, sans-serif;
 
   --font-display:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
-    var(--font-inter), system-ui, sans-serif;
-  --font-display-arabic: var(--font-arabic);
+    -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', var(--font-inter),
+    system-ui, sans-serif;
+  --font-display-arabic:
+    var(--font-noto-kufi), var(--font-noto-sans-arabic), 'Noto Kufi Arabic', sans-serif;
 
-  --font-mono:
-    ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
 
   /* Tabular Numerics: Lining numbers with fixed column width for scores/timers */
   --font-stat:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-inter),
-    system-ui, sans-serif;
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-inter), system-ui, sans-serif;
 
   /* FUT Card: DIN Condensed-style for authentic Ultimate Team card typography */
   --font-card:
     var(--font-barlow-condensed), 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
 
   /* Apple Type Scale */
-  --text-caption2: 0.6875rem; /* 11px */
-  --text-caption1: 0.75rem;   /* 12px */
-  --text-footnote: 0.8125rem; /* 13px */
-  --text-subhead: 0.9375rem;  /* 15px */
-  --text-body: 1.0625rem;     /* 17px */
-  --text-title3: 1.25rem;     /* 20px */
-  --text-title2: 1.375rem;    /* 22px */
-  --text-title1: 1.75rem;     /* 28px */
-  --text-largetitle: 2.125rem;/* 34px */
+  --text-caption2: 0.6875rem;
+  /* 11px */
+  --text-caption1: 0.75rem;
+  /* 12px */
+  --text-footnote: 0.8125rem;
+  /* 13px */
+  --text-subhead: 0.9375rem;
+  /* 15px */
+  --text-body: 1.0625rem;
+  /* 17px */
+  --text-title3: 1.25rem;
+  /* 20px */
+  --text-title2: 1.375rem;
+  /* 22px */
+  --text-title1: 1.75rem;
+  /* 28px */
+  --text-largetitle: 2.125rem;
+  /* 34px */
 
   /* ═══════════════════ ELEVATION & MATERIALS ═══════════════════ */
   /* Elevation & materials live in src/styles/theme.css (single source of truth). */
 
   /* Radius Scale */
-  --radius-sm: 0.5rem;   /* 8px */
-  --radius-md: 0.75rem;  /* 12px */
-  --radius-lg: 1rem;     /* 16px */
-  --radius-xl: 1.25rem;  /* 20px */
-  --radius-2xl: 1.5rem;  /* 24px */
-  --radius-3xl: 2rem;    /* 32px */
+  --radius-sm: 0.5rem;
+  /* 8px */
+  --radius-md: 0.75rem;
+  /* 12px */
+  --radius-lg: 1rem;
+  /* 16px */
+  --radius-xl: 1.25rem;
+  /* 20px */
+  --radius-2xl: 1.5rem;
+  /* 24px */
+  --radius-3xl: 2rem;
+  /* 32px */
 }
 
 :root {
@@ -77,7 +91,9 @@ html {
   overflow-x: clip;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -121,7 +137,7 @@ html[dir='rtl'] body {
   font-family: var(--font-arabic);
   letter-spacing: normal !important;
   word-spacing: normal;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 html[dir='rtl'] * {
@@ -137,12 +153,25 @@ html[dir='rtl'] .font-stats {
 html[dir='rtl'] h1,
 html[dir='rtl'] h2,
 html[dir='rtl'] h3,
-html[dir='rtl'] h4 {
-  font-family: var(--font-arabic);
+html[dir='rtl'] h4,
+html[dir='rtl'] h5,
+html[dir='rtl'] h6 {
+  font-family: var(--font-display-arabic);
   letter-spacing: 0 !important;
-  line-height: 1.38;
+  line-height: 1.4;
   font-weight: 700;
   text-wrap: balance;
+}
+
+html[dir='rtl'] :is(button, [role='button'], input[type='button'], input[type='submit'], select) {
+  font-family: var(--font-display-arabic);
+  letter-spacing: normal !important;
+}
+
+html[dir='rtl'] :is(.font-stats, .font-display-number) {
+  font-family: var(--font-arabic);
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: normal !important;
 }
 
 html[dir='rtl'] p {
@@ -164,45 +193,100 @@ h4 {
   width: 5px;
   height: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--et-scroll-thumb);
   border-radius: 9999px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--et-scroll-thumb-hover);
 }
 
 /* ═══════════════════ MOTION PRIMITIVES ═══════════════════ */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes slideUp {
-  from { transform: translateY(12px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-@keyframes slideDown {
-  from { transform: translateY(-12px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-@keyframes scaleIn {
-  from { transform: scale(0.97); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-@keyframes pulseAccentGlow {
-  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 35%, transparent); }
-  70% { box-shadow: 0 0 0 8px transparent; }
-  100% { box-shadow: 0 0 0 0 transparent; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-.animate-fade-in { animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-slide-up { animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-slide-down { animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-scale-in { animation: scaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-pulse-accent { animation: pulseAccentGlow 2.5s infinite; }
+@keyframes slideUp {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.97);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseAccentGlow {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px transparent;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-pulse-accent {
+  animation: pulseAccentGlow 2.5s infinite;
+}
 
 /* Tactile Haptic Press */
 .btn-haptic {
@@ -213,6 +297,7 @@ h4 {
     border-color 0.18s ease,
     box-shadow 0.18s ease;
 }
+
 .btn-haptic:active {
   transform: scale(0.98);
 }
@@ -263,12 +348,14 @@ h4 {
     inset 0 1px 0 0 var(--et-hi-65);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .btn-accent-sheen:hover {
   filter: brightness(1.08);
   box-shadow:
     0 12px 28px var(--accent-glow),
     inset 0 1px 0 0 var(--et-hi-80);
 }
+
 .btn-accent-sheen:active {
   transform: scale(0.98);
   filter: brightness(0.98);
@@ -316,26 +403,127 @@ h4 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-4px); }
-  50% { transform: translateX(4px); }
-  75% { transform: translateX(-4px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-4px);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  75% {
+    transform: translateX(-4px);
+  }
 }
+
 .animate-shake {
   animation: shake 0.3s ease-in-out;
 }
 
 @keyframes spinSlow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
+
 .animate-spin-slow {
   animation: spinSlow 3s linear infinite;
+}
+
+/* ═══════════════════ SNIPE HUB RADAR & CTA ANIMATIONS ═══════════════════ */
+@keyframes radarSweep {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar-sweep {
+  animation: radarSweep 6s linear infinite;
+}
+
+@keyframes radarBlip {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  20%,
+  55% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+
+  80% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+.animate-radar-blip-1 {
+  animation: radarBlip 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 0.8s;
+}
+
+.animate-radar-blip-2 {
+  animation: radarBlip 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 2.2s;
+}
+
+.animate-radar-blip-3 {
+  animation: radarBlip 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 3.4s;
+}
+
+@keyframes ctaShineSweep {
+  0% {
+    transform: translateX(-120%) skewX(-20deg);
+  }
+
+  22%,
+  100% {
+    transform: translateX(260%) skewX(-20deg);
+  }
+}
+
+.animate-cta-shine {
+  animation: ctaShineSweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Snipe Hub Typography Utilities */
+.font-sora {
+  font-family: var(--font-sora), var(--font-display), sans-serif;
+}
+
+.font-plus-jakarta {
+  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+}
+
+.font-lalezar {
+  font-family: var(--font-lalezar), var(--font-arabic), sans-serif;
+}
+
+.font-reem-kufi {
+  font-family: var(--font-reem-kufi), var(--font-arabic), sans-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -31,7 +31,7 @@ export interface GameDefinition {
 export const GAMES: Record<GameId, GameDefinition> = {
   snipe: {
     id: 'snipe',
-    href: '/',
+    href: '/snipe',
     createHref: '/create-room?mode=snipe',
     joinHref: '/join-room',
     icon: Crosshair,
