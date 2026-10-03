@@ -360,8 +360,8 @@ export const resolveSealedRound = mutation({
     if (!alreadyResolved) {
       const bothLocked = Boolean(auction.sealedBids?.host && auction.sealedBids?.guest);
       const deadline = auction.bidDeadline ?? 0;
-      // Allow a 2.5s tolerance for clock drift between client and server
-      const expired = deadline > 0 && Date.now() >= deadline - 2500;
+      // Server-authoritative check with minor 300ms drift tolerance
+      const expired = deadline > 0 && Date.now() >= deadline - 300;
       if (!bothLocked && !expired) {
         return { resolved: false, reason: 'waiting_for_bids' };
       }
@@ -393,6 +393,17 @@ export const authoritativeExpireRound = internalMutation({
     const history = auction.roundHistory ?? [];
     const alreadyResolved = history.some((h) => h.roundNumber === args.expectedRound);
     if (alreadyResolved) return;
+
+    // If deadline was extended (e.g. by perk boost), reschedule rather than expiring early
+    const now = Date.now();
+    if (auction.bidDeadline && now < auction.bidDeadline - 500) {
+      await ctx.scheduler.runAt(
+        auction.bidDeadline + 500,
+        internal.auctions.sealed.authoritativeExpireRound,
+        { roomId: args.roomId, expectedRound: args.expectedRound },
+      );
+      return;
+    }
 
     await resolveSealedRoundCore(ctx, args.roomId, auction);
   },

@@ -94,7 +94,7 @@ export function playerPositions(position: string): string[] {
 export function lineFor(position: string): 'GK' | 'DEF' | 'MID' | 'ATT' {
   const norm = normalizePosition(position);
   if (norm === 'GK') return 'GK';
-  if (['CB', 'LB', 'RB'].includes(norm)) return 'DEF';
+  if (['CB', 'LB', 'RB', 'LWB', 'RWB', 'SW'].includes(norm)) return 'DEF';
   if (['CDM', 'CM', 'CAM', 'LM', 'RM'].includes(norm)) return 'MID';
   return 'ATT';
 }

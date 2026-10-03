@@ -45,4 +45,8 @@ export const playersTable = defineTable({
   .searchIndex('search_name', {
     searchField: 'name',
     filterFields: ['tier', 'position'],
+  })
+  .searchIndex('search_position', {
+    searchField: 'position',
+    filterFields: ['tier', 'isLegend'],
   });

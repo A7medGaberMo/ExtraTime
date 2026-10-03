@@ -105,6 +105,13 @@ export const getState = query({
     const me = isParticipant ? (isHost ? auction.host : auction.guest) : null;
     const opponent = isParticipant ? (isHost ? auction.guest : auction.host) : null;
 
+    // Fetch user profiles once for display & winner calculation
+    const [hostUser, guestUser] = await Promise.all([
+      ctx.db.get(auction.host.userId),
+      auction.guest?.userId ? ctx.db.get(auction.guest.userId) : null,
+    ]);
+    const hostName = hostUser?.nickname ?? 'Host';
+    const guestName = guestUser?.nickname ?? 'Opponent';
 
     // ── Perk-revealed data ──
     // If SPY perk was used IN THIS ROUND → spy on the hidden sub player
@@ -177,11 +184,6 @@ export const getState = query({
             : historyEntry.hostBid
           : null;
         const wasTieLottery = historyEntry?.wasTieLottery ?? false;
-
-        const hostUser = await ctx.db.get(auction.host.userId);
-        const guestUser = auction.guest?.userId ? await ctx.db.get(auction.guest.userId) : null;
-        const hostName = hostUser?.nickname ?? 'Host';
-        const guestName = guestUser?.nickname ?? 'Opponent';
         const winnerName = winnerIsMe ? 'You' : isHost ? guestName : hostName;
 
         const myPickData = isHost ? hostPick : guestPick;
@@ -216,10 +218,6 @@ export const getState = query({
         };
       }
     }
-
-    // Fetch user nicknames for display
-    const hostUser = await ctx.db.get(auction.host.userId);
-    const guestUser = auction.guest?.userId ? await ctx.db.get(auction.guest.userId) : null;
 
     const isFrozen = Boolean(
       auction.frozenEffect &&

@@ -102,7 +102,7 @@ export function getPlayerCandidateWeight(player: Doc<'players'>): number {
     return 12;
   }
   // Star players (86-89 / Master)
-  if (rating >= 86 || tier === 'MASTER') {
+  if (rating >= 86 || tier === 'MASTER' || tier === 'HERO') {
     return 8;
   }
   // High-tier regulars (83-85 / Elite)

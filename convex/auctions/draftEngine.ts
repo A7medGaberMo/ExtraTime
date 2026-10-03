@@ -7,7 +7,6 @@ import {
   TIER_RANK,
   tierRank,
   playerPositions,
-  lineFor,
 } from '../lib/constants';
 
 // ── Types ──────────────────────────────────────────────────
@@ -23,6 +22,7 @@ export interface DraftRound {
 
 interface PoolPlayer {
   _id: Id<'players'>;
+  name: string;
   position: string;
   tier: Tier;
   clubId: Id<'clubs'>;
@@ -43,76 +43,40 @@ function weightedPick<T>(items: T[], weights: number[], random: () => number): T
 }
 
 // ── Position Matching ──────────────────────────────────────
-const LEFT_POSITIONS = new Set(['LB', 'LWB', 'LM', 'LW']);
-const RIGHT_POSITIONS = new Set(['RB', 'RWB', 'RM', 'RW']);
-const CENTER_OUTFIELD_POSITIONS = new Set(['CB', 'CDM', 'CM', 'CAM', 'ST', 'CF']);
-
-function matchesExact(playerPosition: string, slot: Position): boolean {
-  return playerPositions(playerPosition).includes(slot);
+function playerIdentity(player: Pick<PoolPlayer, 'name' | 'nationId'>): string {
+  const normalizedName = player.name
+    .normalize('NFKC')
+    .trim()
+    .replace(/\s+/g, ' ')
+    .toLocaleLowerCase();
+  return `${normalizedName}|${player.nationId}`;
 }
 
-function isSideCompatible(playerPosition: string, slot: Position): boolean {
-  const pPositions = playerPositions(playerPosition);
+const NATURAL_VARIANTS: Partial<Record<Position, Position[]>> = {
+  CF: ['ST'],
+  ST: ['CF'],
+  LWB: ['LB'],
+  LB: ['LWB', 'RB', 'CB'],
+  RWB: ['RB'],
+  RB: ['RWB', 'LB', 'CB'],
+  CAM: ['CM', 'CDM'],
+  CDM: ['CM', 'CAM'],
+  CM: ['CDM', 'CAM'],
+  LW: ['LM', 'RW'],
+  LM: ['LW', 'RM'],
+  RW: ['RM', 'LW'],
+  RM: ['RW', 'LM'],
+};
 
-  // Exact match is always compatible
-  if (pPositions.includes(slot)) return true;
-
-  // Left-sided slot: player MUST have a Left or Center position (cannot be purely Right-sided)
-  if (LEFT_POSITIONS.has(slot)) {
-    return pPositions.some((p) => LEFT_POSITIONS.has(p) || CENTER_OUTFIELD_POSITIONS.has(p));
-  }
-
-  // Right-sided slot: player MUST have a Right or Center position (cannot be purely Left-sided)
-  if (RIGHT_POSITIONS.has(slot)) {
-    return pPositions.some((p) => RIGHT_POSITIONS.has(p) || CENTER_OUTFIELD_POSITIONS.has(p));
-  }
-
-  return true;
-}
-
-function matchesLine(playerPosition: string, slot: Position): boolean {
-  if (!isSideCompatible(playerPosition, slot)) return false;
-  const targetLine = lineFor(slot);
-  return playerPositions(playerPosition).some((p) => lineFor(p) === targetLine);
-}
-
-/** Score how well a player fits a formation slot (0–100). */
+/** A player qualifies if exact match (100) or a natural tactical variant (40). GK is strictly isolated. */
 function positionFitScore(playerPosition: string, slot: Position): number {
   const pPositions = playerPositions(playerPosition);
-
-  // 1. Strict GK Isolation
-  const isGkSlot = slot === 'GK';
-  const isPlayerGk = pPositions.includes('GK');
-  if (isGkSlot && !isPlayerGk) return 0;
-  if (!isGkSlot && isPlayerGk) return 0;
-  if (isGkSlot && isPlayerGk) return 100;
-
-  // 2. Exact match for any position (CB, ST, LW, RW, CM, CDM, CAM, LB, RB, LM, RM, CF, LWB, RWB)
   if (pPositions.includes(slot)) return 100;
-
-  // 3. Direct natural variants for all position categories
-  const variants: Partial<Record<Position, Position[]>> = {
-    LB: ['LWB'],
-    LWB: ['LB'],
-    RB: ['RWB'],
-    RWB: ['RB'],
-    ST: ['CF'],
-    CF: ['ST'],
-    LW: ['LM'],
-    LM: ['LW'],
-    RW: ['RM'],
-    RM: ['RW'],
-    CM: ['CDM', 'CAM'],
-    CDM: ['CM', 'CAM'],
-    CAM: ['CM', 'CDM'],
-  };
-
-  const allowed = variants[slot];
-  if (allowed && pPositions.some((p) => allowed.includes(p as Position))) {
-    return 20; // 20 vs 100 means exact match overwhelmingly dominates (90%+)
+  if (slot === 'GK' || pPositions.includes('GK')) return 0;
+  const variants = NATURAL_VARIANTS[slot];
+  if (variants && pPositions.some((p) => variants.includes(p as Position))) {
+    return 40;
   }
-
-  // 4. Return 0 for all other cross-position mismatches
   return 0;
 }
 
@@ -124,65 +88,174 @@ interface ScoringContext {
 }
 
 function scoreCandidate(player: PoolPlayer, slot: Position, ctx: ScoringContext): number {
-  let score = 0;
-
-  // 1. Position fit (0–100, heavily weighted x8 so exact match dominates 90%+)
+  const pPositions = playerPositions(player.position);
   const posFit = positionFitScore(player.position, slot);
   if (posFit === 0) return 0; // Strictly exclude positionally incompatible candidates
-  score += posFit * 8; // Exact match gives +800 pts vs +160 for variant
 
-  // 2. High Tier preference for overall quality, balanced across upper tiers
+  let score = 0;
+
+  // Strong bonus for exact natural position (e.g. true RW for RW instead of fullbacks)
+  const isExact = pPositions.includes(slot);
+  score += isExact ? 250 : 20;
+
+  // Additional bonus if it's the primary (first-listed) natural position
+  if (pPositions[0] === slot) {
+    score += 100;
+  }
+
+  // Prefer high tiers strongly
   const rank = tierRank(player.tier);
-  score += Math.max(0, (6 - rank) * 10);
+  score += (8 - rank) * 100;
 
-  // 3. Tier budget bonus — favor tiers we still need for target ratio
+  // Favor tiers still present in the planned match distribution
   const remaining = ctx.tierBudget.get(player.tier) ?? 0;
-  if (remaining > 0) score += 20;
+  if (remaining > 0) score += 50;
 
-
-  // 4. Club diversity penalty
+  // Club diversity penalty
   const clubCount = ctx.usedClubs.get(player.clubId) ?? 0;
   score -= clubCount * 20;
 
-  // 5. Nation diversity penalty
+  // Nation diversity penalty
   const nationCount = ctx.usedNations.get(player.nationId) ?? 0;
   score -= nationCount * 8;
 
   return Math.max(1, score);
 }
 
-
 // ── Tier Distribution Planning ─────────────────────────────
-// Enforces 80% to 85% Elite & Above (ICON, HERO, ULTIMATE, MASTER, ELITE) and 15% to 20% Gold/Lower
-function planTierBudget(pool: PoolPlayer[], totalSlots: number): Map<Tier, number> {
+// Target ~80% ELITE and above (ICON, HERO, ULTIMATE, MASTER, ELITE) for famous stars.
+// Occasional solid GOLD (~16%) for tactical value/budget, and rare SILVER (~4%).
+// BRONZE is strictly 0%.
+function planTierBudget(
+  pool: PoolPlayer[],
+  totalSlots: number,
+  poolMode: string = 'GLOBAL',
+): Map<Tier, number> {
   const available = new Map<Tier, number>();
   for (const p of pool) {
     available.set(p.tier, (available.get(p.tier) ?? 0) + 1);
   }
 
-  // Target ratios: 85% Elite or higher (ICON, HERO, ULTIMATE, MASTER, ELITE), 15% Gold & lower
-  const targetRatios: Record<Tier, number> = {
-    ICON: 0.15, // Upper tier ~15%
-    HERO: 0.15, // Upper tier ~15%
-    ULTIMATE: 0.22, // Upper tier ~22%
-    MASTER: 0.18, // Upper tier ~18%
-    ELITE: 0.15, // Upper tier ~15% (Total Upper = 85%)
-    GOLD: 0.1, // Lower tier ~10%
-    SILVER: 0.04, // Lower tier ~4%
-    BRONZE: 0.01, // Lower tier ~1%  (Total Lower = 15%)
-  };
-
+  const playerCount = totalSlots * 2;
   const budget = new Map<Tier, number>();
   for (const tier of Object.keys(TIER_RANK) as Tier[]) {
-    const availCount = available.get(tier) ?? 0;
-    if (availCount === 0) {
-      budget.set(tier, 0);
-      continue;
-    }
-    const ratio = targetRatios[tier] ?? 0.05;
-    const ideal = Math.max(1, Math.round(totalSlots * 2 * ratio));
-    budget.set(tier, Math.min(ideal, availCount));
+    budget.set(tier, 0);
   }
+
+  const normMode = String(poolMode).trim().toUpperCase();
+  const isIconsMode = normMode === 'ICONS';
+  const isActiveMode = normMode === 'ACTIVE';
+
+  let idealRatios: Record<Tier, number>;
+  if (isIconsMode) {
+    idealRatios = {
+      ICON: 0.5,
+      HERO: 0.5,
+      ULTIMATE: 0,
+      MASTER: 0,
+      ELITE: 0,
+      GOLD: 0,
+      SILVER: 0,
+      BRONZE: 0,
+    };
+  } else if (isActiveMode) {
+    // Active Stars: 88% Elite+ (Ultimate, Master, Elite), 12% Gold, 0% Silver
+    idealRatios = {
+      ICON: 0,
+      HERO: 0,
+      ULTIMATE: 0.32,
+      MASTER: 0.32,
+      ELITE: 0.24,
+      GOLD: 0.12,
+      SILVER: 0,
+      BRONZE: 0,
+    };
+  } else {
+    // GLOBAL mode: 88% Elite+ superstars (Icon, Hero, Ultimate, Master, Elite), 12% Gold, 0% Silver
+    idealRatios = {
+      ICON: 0.16,
+      HERO: 0.16,
+      ULTIMATE: 0.22,
+      MASTER: 0.20,
+      ELITE: 0.14,
+      GOLD: 0.12,
+      SILVER: 0,
+      BRONZE: 0,
+    };
+  }
+
+  // 1. Initial pass: allocate ideal target using Largest Remainder Method (Hamilton's method)
+  let allocated = 0;
+  const remainders: Array<{ tier: Tier; rem: number }> = [];
+  for (const tier of Object.keys(TIER_RANK) as Tier[]) {
+    const availCount = available.get(tier) ?? 0;
+    const exact = playerCount * (idealRatios[tier] ?? 0);
+    const target = Math.min(availCount, Math.floor(exact));
+    budget.set(tier, target);
+    allocated += target;
+    if (availCount > target) {
+      remainders.push({ tier, rem: exact - target });
+    }
+  }
+
+  // Allocate remaining fractional seats based on highest remainder
+  remainders.sort((a, b) => b.rem - a.rem);
+  let remIdx = 0;
+  while (allocated < playerCount && remIdx < remainders.length) {
+    const tier = remainders[remIdx].tier;
+    const availCount = available.get(tier) ?? 0;
+    const current = budget.get(tier) ?? 0;
+    if (current < availCount) {
+      budget.set(tier, current + 1);
+      allocated++;
+    }
+    remIdx++;
+  }
+
+  // 2. Adaptive filling: prioritize top tiers first, then Gold, then Silver as rare fallback
+  const tierPriorityOrder: Tier[] = [
+    'ULTIMATE',
+    'MASTER',
+    'ICON',
+    'HERO',
+    'ELITE',
+    'GOLD',
+    'SILVER',
+  ];
+
+  while (allocated < playerCount) {
+    let progressed = false;
+    for (const tier of tierPriorityOrder) {
+      const availCount = available.get(tier) ?? 0;
+      const current = budget.get(tier) ?? 0;
+      if (current < availCount) {
+        budget.set(tier, current + 1);
+        allocated++;
+        progressed = true;
+        if (allocated >= playerCount) break;
+      }
+    }
+    if (!progressed) break;
+  }
+
+  // Never exceed 0.1% Bronze (strictly 0 for standard Snipe match sizes)
+  const bronzeLimit = Math.max(0, Math.ceil(playerCount * 0.001) - 1);
+  budget.set('BRONZE', Math.min(available.get('BRONZE') ?? 0, bronzeLimit));
+  allocated = [...budget.values()].reduce((sum, count) => sum + count, 0);
+
+  // If upper tiers cannot fill the entire requirement in smaller pools, allow Bronze as needed to prevent crashing
+  if (allocated < playerCount && (available.get('BRONZE') ?? 0) > 0) {
+    const bronzeNeeded = Math.min(available.get('BRONZE') ?? 0, playerCount - allocated);
+    budget.set('BRONZE', bronzeNeeded);
+    allocated += bronzeNeeded;
+  }
+
+  if (allocated < playerCount) {
+    throw new Error(
+      `Not enough position-eligible players for this Snipe match: need ${playerCount}, found ${allocated}.`,
+    );
+  }
+
   return budget;
 }
 
@@ -198,13 +271,13 @@ function selectSmartPair(
   scoringCtx: ScoringContext,
   random: () => number,
 ): [PoolPlayer, PoolPlayer] {
-  const unused = pool.filter((p) => !used.has(String(p._id)));
+  const unused = pool.filter((p) => !used.has(playerIdentity(p)));
   if (unused.length < 2) {
     throw new Error(`Not enough players for position ${slot}. Only ${unused.length} left.`);
   }
 
-  // Filter candidates strictly matching position category rules
-  let candidates = unused
+  // 1. Filter candidates strictly matching position category rules
+  const candidates = unused
     .map((p) => ({
       player: p,
       score: scoreCandidate(p, slot, scoringCtx),
@@ -212,50 +285,46 @@ function selectSmartPair(
     .filter((c) => c.score > 0);
 
   if (candidates.length < 2) {
-    const isGk = slot === 'GK';
-    // Level 2 Fallback: Line-compatible candidates (excluding cross GK/Outfield)
-    const lineCandidates = unused
-      .filter((p) => {
-        const pIsGk = playerPositions(p.position).includes('GK');
-        if (isGk) return pIsGk;
-        if (pIsGk) return false;
-        return matchesLine(p.position, slot);
-      })
-      .map((p) => ({
-        player: p,
-        score: Math.max(1, scoreCandidate(p, slot, scoringCtx) || 50),
-      }));
-
-    if (lineCandidates.length >= 2) {
-      candidates = lineCandidates;
-    } else {
-      // Level 3 Fallback: Any outfield player for outfield slots, any GK for GK slots
-      const roleCandidates = unused
-        .filter((p) => {
-          const pIsGk = playerPositions(p.position).includes('GK');
-          return isGk ? pIsGk : !pIsGk;
-        })
-        .map((p) => ({
-          player: p,
-          score: 30,
-        }));
-
-      candidates =
-        roleCandidates.length >= 2 ? roleCandidates : unused.map((p) => ({ player: p, score: 10 }));
-    }
+    throw new Error(`Not enough players with eligible ${slot} position. Found ${candidates.length}.`);
   }
 
-  candidates.sort((a, b) => b.score - a.score);
+  // Respect the match-wide tier budget for both cards when possible.
+  // If the tier budget for remaining tiers is depleted, fall back gracefully to all candidates.
+  const withinTierBudget = candidates.filter(
+    ({ player }) => (scoringCtx.tierBudget.get(player.tier) ?? 0) > 0,
+  );
+  const budgetCandidates = withinTierBudget.length >= 2 ? withinTierBudget : candidates;
 
-  // Sample top candidates for position fit and quality
-  const topCandidates = candidates.slice(0, Math.min(8, candidates.length));
+  // Prioritize exact natural position candidates (e.g. true RW for RW) if available
+  const exactCandidates = budgetCandidates.filter(
+    ({ player }) => playerPositions(player.position).includes(slot),
+  );
+  const eligibleCandidates = exactCandidates.length >= 2 ? exactCandidates : budgetCandidates;
+  eligibleCandidates.sort((a, b) => b.score - a.score);
+
+  // Sample top candidates for tier quality and positional fit.
+  const topCandidates = eligibleCandidates.slice(0, Math.min(8, eligibleCandidates.length));
 
   // Pick first candidate weighted by score
   const c1Weights = topCandidates.map((c) => c.score);
   const playerA = weightedPick(topCandidates, c1Weights, random).player;
 
-  // Remaining candidates excluding playerA
-  const subPool = topCandidates.filter((c) => c.player._id !== playerA._id);
+  // Remaining candidates excluding playerA (prefer different player identity)
+  let subPool = topCandidates.filter(
+    (candidate) =>
+      playerIdentity(candidate.player) !== playerIdentity(playerA) &&
+      (candidate.player.tier !== playerA.tier ||
+        (scoringCtx.tierBudget.get(playerA.tier) ?? 0) >= 2),
+  );
+  if (subPool.length === 0) {
+    subPool = eligibleCandidates.filter(
+      (c) => playerIdentity(c.player) !== playerIdentity(playerA),
+    );
+  }
+  if (subPool.length === 0) {
+    subPool = candidates.filter((c) => c.player._id !== playerA._id);
+  }
+
   const c2Weights = subPool.map((c) => c.score);
   const playerB = weightedPick(subPool, c2Weights, random).player;
 
@@ -291,10 +360,12 @@ function selectSmartPair(
   } else if (roll < 0.65) {
     // ⚔️ CLASH_OF_TITANS (~35%): Try to pair equal/similar tiers for a tense duel
     // Attempt to pick a sub from unused that matches playerA's tier
-    const sameTierCandidate = unused.find(
-      (p) =>
-        p._id !== playerA._id && p.tier === playerA.tier && positionFitScore(p.position, slot) > 0,
-    );
+    const sameTierCandidate = topCandidates.find(
+      (candidate) =>
+        playerIdentity(candidate.player) !== playerIdentity(playerA) &&
+        candidate.player.tier === playerA.tier &&
+        (scoringCtx.tierBudget.get(playerA.tier) ?? 0) >= 2,
+    )?.player;
 
     if (sameTierCandidate) {
       const isAFirst = random() < 0.5;
@@ -378,7 +449,7 @@ export function getPRNG(seedStr: string): () => number {
     hash = Math.imul(31, hash) + seedStr.charCodeAt(i) | 0;
   }
   let seed = hash >>> 0;
-  return function() {
+  return function () {
     seed = (seed * 9301 + 49297) % 233280;
     return seed / 233280;
   };
@@ -393,116 +464,139 @@ function getCursor(seed: string, roundNumber: number, position: string, poolMode
   return (hash >>> 0) / 4294967296;
 }
 
+async function sampleTierSlice(
+  ctx: GenericMutationCtx<DataModel>,
+  tier: Tier,
+  limit: number,
+  cursor: number,
+): Promise<Doc<'players'>[]> {
+  const batch = await ctx.db
+    .query('players')
+    .withIndex('by_tier_random', (q) => q.eq('tier', tier).gte('randomKey', cursor))
+    .take(limit);
+  if (batch.length < limit) {
+    const wrap = await ctx.db
+      .query('players')
+      .withIndex('by_tier_random', (q) => q.eq('tier', tier).lt('randomKey', cursor))
+      .take(limit - batch.length);
+    batch.push(...wrap);
+  }
+  return batch;
+}
+
 async function fetchCandidatesForMode(
   ctx: GenericMutationCtx<DataModel>,
   poolMode: PlayerPoolMode,
   formationPositions: Position[],
   seed: string,
-  random: () => number,
 ): Promise<{ players: Doc<'players'>[]; clubById: Map<Id<'clubs'>, Doc<'clubs'>> }> {
-  let players: Doc<'players'>[] = [];
+  void formationPositions;
+  const normMode = String(poolMode).trim().toUpperCase();
 
-  // Query directly by required formation positions using a random cursor
-  const posQueries = formationPositions.map(async (pos, idx) => {
-    const roundNumber = idx + 1;
-    const cursor = getCursor(seed, roundNumber, pos, poolMode);
-    
-    let slice = await ctx.db.query('players').withIndex('by_position_random', (q) => q.eq('position', pos).gte('randomKey', cursor)).take(15);
-    
-    if (slice.length < 15) {
-      const wrap = await ctx.db.query('players').withIndex('by_position_random', (q) => q.eq('position', pos)).take(15 - slice.length);
-      slice = [...slice, ...wrap];
-    }
-    
-    // Shuffle locally
-    return slice.sort(() => random() - 0.5);
-  });
-  
-  const posBatches = await Promise.all(posQueries);
-  let posCandidates = posBatches.flat();
-
-  if (poolMode === 'ICONS') {
-    posCandidates = posCandidates.filter((p) => p.isLegend || p.tier === 'ICON' || p.tier === 'HERO');
-    if (posCandidates.length < formationPositions.length * 2) {
-      const iconCursor = getCursor(seed, 999, 'ICON', poolMode);
-      const heroCursor = getCursor(seed, 998, 'HERO', poolMode);
-      
-      const [iconSlice, heroSlice] = await Promise.all([
-        ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'ICON').gte('randomKey', iconCursor)).take(35),
-        ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'HERO').gte('randomKey', heroCursor)).take(35),
-      ]);
-      
-      let icons = iconSlice;
-      if (icons.length < 35) {
-        const wrap = await ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'ICON')).take(35 - icons.length);
-        icons = [...icons, ...wrap];
-      }
-      
-      let heroes = heroSlice;
-      if (heroes.length < 35) {
-        const wrap = await ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'HERO')).take(35 - heroes.length);
-        heroes = [...heroes, ...wrap];
-      }
-      
-      posCandidates = [...posCandidates, ...icons.sort(() => random() - 0.5), ...heroes.sort(() => random() - 0.5)];
-    }
-  } else if (poolMode === 'ACTIVE') {
-    posCandidates = posCandidates.filter((p) => !p.isLegend && p.tier !== 'ICON' && p.tier !== 'HERO');
-  } else if (poolMode === 'EPL') {
-    const eplClubs = await ctx.db
-      .query('clubs')
-      .withIndex('by_league', (q) => q.eq('league', 'Premier League'))
-      .take(25);
-    const clubIdsSet = new Set(eplClubs.map((c) => String(c._id)));
-    posCandidates = posCandidates.filter(
-      (p) => clubIdsSet.has(String(p.clubId)) && !p.isLegend && p.tier !== 'ICON' && p.tier !== 'HERO'
-    );
-  } else if (poolMode === 'EGYPT') {
-    const egyptClubs = await ctx.db
-      .query('clubs')
-      .withIndex('by_league', (q) => q.eq('league', 'Egyptian Premier League'))
-      .take(25);
-    const clubIdsSet = new Set(egyptClubs.map((c) => String(c._id)));
-    posCandidates = posCandidates.filter(
-      (p) => clubIdsSet.has(String(p.clubId)) && !p.isLegend && p.tier !== 'ICON' && p.tier !== 'HERO'
-    );
+  // 1. League-Specific Pools (EGYPT, EPL, or other League strings)
+  let targetLeague = '';
+  if (normMode === 'EGYPT' || normMode === 'EGYPTIAN PREMIER LEAGUE') {
+    targetLeague = 'Egyptian Premier League';
+  } else if (normMode === 'EPL' || normMode === 'PREMIER LEAGUE') {
+    targetLeague = 'Premier League';
+  } else if (normMode !== 'GLOBAL' && normMode !== 'ACTIVE' && normMode !== 'ICONS') {
+    targetLeague = poolMode;
   }
 
-  // Fallback cushion if any position needs padding
-  if (posCandidates.length < formationPositions.length * 2) {
-    const cushionCursor = getCursor(seed, 997, 'GOLD', poolMode);
-    let cushion = await ctx.db
-      .query('players')
-      .withIndex('by_tier_random', (q) => q.eq('tier', 'GOLD').gte('randomKey', cushionCursor))
-      .take(25);
-      
-    if (cushion.length < 25) {
-      const wrap = await ctx.db.query('players').withIndex('by_tier_random', (q) => q.eq('tier', 'GOLD')).take(25 - cushion.length);
-      cushion = [...cushion, ...wrap];
+  if (targetLeague) {
+    const clubs = await ctx.db
+      .query('clubs')
+      .withIndex('by_league', (q) => q.eq('league', targetLeague))
+      .collect();
+
+    if (clubs.length > 0) {
+      // Fetch players across clubs in this league with a bounded slice
+      const playerBatches = await Promise.all(
+        clubs.map((c) =>
+          ctx.db
+            .query('players')
+            .withIndex('by_club', (q) => q.eq('clubId', c._id))
+            .take(25),
+        ),
+      );
+      const allLeaguePlayers = playerBatches
+        .flat()
+        .filter((p) => !p.isLegend && p.tier !== 'ICON' && p.tier !== 'HERO');
+
+      const clubById = new Map<Id<'clubs'>, Doc<'clubs'>>();
+      for (const c of clubs) {
+        clubById.set(c._id, c);
+      }
+
+      // Prioritize top tiers (Elite/Master/Ultimate) first, then randomKey cursor for broad variety
+      const leagueCursor = getCursor(seed, 1, 'LEAGUE', poolMode);
+      allLeaguePlayers.sort((a, b) => {
+        const rankDiff = tierRank(a.tier) - tierRank(b.tier);
+        if (rankDiff !== 0) return rankDiff;
+        const aKey = (a.randomKey ?? 0) - leagueCursor;
+        const bKey = (b.randomKey ?? 0) - leagueCursor;
+        return (aKey < 0 ? aKey + 1 : aKey) - (bKey < 0 ? bKey + 1 : bKey);
+      });
+
+      const pMap = new Map<string, Doc<'players'>>();
+      for (const p of allLeaguePlayers) {
+        pMap.set(String(p._id), p);
+      }
+      return { players: Array.from(pMap.values()), clubById };
     }
-    
-    posCandidates = [...posCandidates, ...cushion.sort(() => random() - 0.5)];
   }
 
-  players = posCandidates;
+  // 2. ICONS Pool (Legends, Icons, Heroes)
+  if (normMode === 'ICONS') {
+    const iconCursor = getCursor(seed, 1, 'ICON', poolMode);
+    const heroCursor = getCursor(seed, 2, 'HERO', poolMode);
+    const [icons, heroes, legends] = await Promise.all([
+      sampleTierSlice(ctx, 'ICON', 45, iconCursor),
+      sampleTierSlice(ctx, 'HERO', 45, heroCursor),
+      ctx.db.query('players').withIndex('by_legend', (q) => q.eq('isLegend', true)).take(40),
+    ]);
+    const pMap = new Map<string, Doc<'players'>>();
+    for (const p of [...icons, ...heroes, ...legends]) {
+      pMap.set(String(p._id), p);
+    }
+    return { players: Array.from(pMap.values()), clubById: new Map() };
+  }
 
-  // Deduplicate candidate pool
+  // 3. ACTIVE Pool: Active stars (~80% Elite+, ~16% Gold, ~4% Silver, zero legends)
+  if (normMode === 'ACTIVE') {
+    const [ultimates, masters, elites, golds, silvers] = await Promise.all([
+      sampleTierSlice(ctx, 'ULTIMATE', 35, getCursor(seed, 1, 'ULTIMATE', poolMode)),
+      sampleTierSlice(ctx, 'MASTER', 45, getCursor(seed, 2, 'MASTER', poolMode)),
+      sampleTierSlice(ctx, 'ELITE', 55, getCursor(seed, 3, 'ELITE', poolMode)),
+      sampleTierSlice(ctx, 'GOLD', 30, getCursor(seed, 4, 'GOLD', poolMode)),
+      sampleTierSlice(ctx, 'SILVER', 12, getCursor(seed, 5, 'SILVER', poolMode)),
+    ]);
+    const pMap = new Map<string, Doc<'players'>>();
+    for (const p of [...ultimates, ...masters, ...elites, ...golds, ...silvers]) {
+      if (!p.isLegend && p.tier !== 'ICON' && p.tier !== 'HERO') {
+        pMap.set(String(p._id), p);
+      }
+    }
+    return { players: Array.from(pMap.values()), clubById: new Map() };
+  }
+
+  // 4. GLOBAL Pool: ~80% Elite+ stars (ICON, HERO, ULTIMATE, MASTER, ELITE) + ~16% Gold + ~4% Silver
+  // Fast indexed queries via by_tier_random strictly bounded to eliminate DB I/O overhead
+  const [icons, heroes, ultimates, masters, elites, golds, silvers] = await Promise.all([
+    sampleTierSlice(ctx, 'ICON', 22, getCursor(seed, 1, 'ICON', poolMode)),
+    sampleTierSlice(ctx, 'HERO', 22, getCursor(seed, 2, 'HERO', poolMode)),
+    sampleTierSlice(ctx, 'ULTIMATE', 28, getCursor(seed, 3, 'ULTIMATE', poolMode)),
+    sampleTierSlice(ctx, 'MASTER', 35, getCursor(seed, 4, 'MASTER', poolMode)),
+    sampleTierSlice(ctx, 'ELITE', 40, getCursor(seed, 5, 'ELITE', poolMode)),
+    sampleTierSlice(ctx, 'GOLD', 30, getCursor(seed, 6, 'GOLD', poolMode)),
+    sampleTierSlice(ctx, 'SILVER', 12, getCursor(seed, 7, 'SILVER', poolMode)),
+  ]);
+
   const pMap = new Map<string, Doc<'players'>>();
-  for (const p of players) {
+  for (const p of [...icons, ...heroes, ...ultimates, ...masters, ...elites, ...golds, ...silvers]) {
     pMap.set(String(p._id), p);
   }
-  const uniquePlayers = Array.from(pMap.values());
-
-  // Batch hydrate only the unique clubs needed for these candidate players
-  const clubIds = Array.from(new Set(uniquePlayers.map((p) => p.clubId).filter(Boolean))) as Id<'clubs'>[];
-  const clubDocs = await Promise.all(clubIds.map((id) => ctx.db.get(id)));
-
-  const clubById = new Map<Id<'clubs'>, Doc<'clubs'>>();
-  for (const c of clubDocs) {
-    if (c) clubById.set(c._id, c);
-  }
-
-  return { players: uniquePlayers, clubById };
+  return { players: Array.from(pMap.values()), clubById: new Map() };
 }
 
 // ── Main Entry Point ───────────────────────────────────────
@@ -515,39 +609,35 @@ export async function generateDraftRounds(
 ): Promise<DraftRound[]> {
   const random = getPRNG(seed);
   const formationPositions = getFormationPositions(formation, matchSize);
-  const { players: allPlayers, clubById } = await fetchCandidatesForMode(ctx, poolMode, formationPositions, seed, random);
+  const { players: allPlayers, clubById } = await fetchCandidatesForMode(
+    ctx,
+    poolMode,
+    formationPositions,
+    seed,
+  );
 
-
+  const normMode = String(poolMode).trim().toUpperCase();
 
   // Filter player pool by mode
   const filtered: PoolPlayer[] = allPlayers
     .filter((player) => {
-      if (poolMode === 'ICONS')
+      if (normMode === 'ICONS')
         return player.isLegend || player.tier === 'ICON' || player.tier === 'HERO';
-      if (poolMode === 'ACTIVE')
+      if (normMode === 'ACTIVE')
         return !player.isLegend && player.tier !== 'ICON' && player.tier !== 'HERO';
-      if (poolMode === 'EPL') {
-        // Active EPL players only — no legends/icons
-        return (
-          clubById.get(player.clubId)?.league === 'Premier League' &&
-          !player.isLegend &&
-          player.tier !== 'ICON' &&
-          player.tier !== 'HERO'
-        );
+      if (normMode === 'EPL' || normMode === 'PREMIER LEAGUE') {
+        const league = clubById.get(player.clubId)?.league;
+        return (league === 'Premier League' || league === 'EPL') && !player.isLegend && player.tier !== 'ICON' && player.tier !== 'HERO';
       }
-      if (poolMode === 'EGYPT') {
-        // Active Egyptian League players only — no legends/icons
-        return (
-          clubById.get(player.clubId)?.league === 'Egyptian Premier League' &&
-          !player.isLegend &&
-          player.tier !== 'ICON' &&
-          player.tier !== 'HERO'
-        );
+      if (normMode === 'EGYPT' || normMode === 'EGYPTIAN PREMIER LEAGUE') {
+        const league = clubById.get(player.clubId)?.league;
+        return (league === 'Egyptian Premier League') && !player.isLegend && player.tier !== 'ICON' && player.tier !== 'HERO';
       }
-      return true; // GLOBAL — all players including legends
+      return true; // GLOBAL
     })
     .map((p) => ({
       _id: p._id,
+      name: p.name,
       position: p.position,
       tier: p.tier as Tier,
       clubId: p.clubId,
@@ -555,22 +645,19 @@ export async function generateDraftRounds(
       isLegend: p.isLegend,
     }));
 
-  const requiredPlayers = formationPositions.length * 2;
-  const mappedAll: PoolPlayer[] = allPlayers.map((p) => ({
-    _id: p._id,
-    position: p.position,
-    tier: p.tier as Tier,
-    clubId: p.clubId,
-    nationId: p.nationId,
-    isLegend: p.isLegend,
-  }));
-
-  let pool: PoolPlayer[] = [...filtered];
-  if (pool.length < requiredPlayers) {
-    const existingIds = new Set(pool.map((p) => p._id));
-    const extra = mappedAll.filter((p) => !existingIds.has(p._id));
-    pool = [...pool, ...extra];
+  // Remove duplicate database records for the same real player before rounds
+  // are built (imports can contain the same player under separate IDs).
+  const uniquePlayers = new Map<string, PoolPlayer>();
+  for (const player of filtered) {
+    const identity = playerIdentity(player);
+    const existing = uniquePlayers.get(identity);
+    if (!existing || tierRank(player.tier) < tierRank(existing.tier)) {
+      uniquePlayers.set(identity, player);
+    }
   }
+  const pool = [...uniquePlayers.values()];
+
+  const requiredPlayers = formationPositions.length * 2;
 
   if (pool.length < requiredPlayers) {
     throw new Error(
@@ -578,8 +665,8 @@ export async function generateDraftRounds(
     );
   }
 
-  // Plan tier distribution
-  const tierBudget = planTierBudget(pool, formationPositions.length);
+  // Plan tier distribution dynamically based on available pool and poolMode
+  const tierBudget = planTierBudget(pool, formationPositions.length, poolMode);
   const used = new Set<string>();
   const usedClubs = new Map<string, number>();
   const usedNations = new Map<string, number>();
@@ -587,9 +674,9 @@ export async function generateDraftRounds(
   // Sort positions by scarcity (hardest to fill first)
   const positionsByScarcity = formationPositions
     .map((pos, origIdx) => {
-      const available = pool.filter((p) => !used.has(String(p._id)));
-      const exact = available.filter((p) => matchesExact(p.position, pos)).length;
-      return { position: pos, origIdx, scarcity: exact };
+      const available = pool.filter((p) => !used.has(playerIdentity(p)));
+      const compatible = available.filter((p) => positionFitScore(p.position, pos) > 0).length;
+      return { position: pos, origIdx, scarcity: compatible };
     })
     .sort((a, b) => a.scarcity - b.scarcity);
 
@@ -599,16 +686,18 @@ export async function generateDraftRounds(
     const scoringCtx: ScoringContext = { usedClubs, usedNations, tierBudget };
     const [main, sub] = selectSmartPair(pool, used, position, scoringCtx, random);
 
-    used.add(String(main._id));
-    used.add(String(sub._id));
+    used.add(playerIdentity(main));
+    used.add(playerIdentity(sub));
     usedClubs.set(main.clubId, (usedClubs.get(main.clubId) ?? 0) + 1);
     usedClubs.set(sub.clubId, (usedClubs.get(sub.clubId) ?? 0) + 1);
     usedNations.set(main.nationId, (usedNations.get(main.nationId) ?? 0) + 1);
     usedNations.set(sub.nationId, (usedNations.get(sub.nationId) ?? 0) + 1);
 
-    // Decrement tier budget
-    const remaining = tierBudget.get(main.tier) ?? 0;
-    if (remaining > 0) tierBudget.set(main.tier, remaining - 1);
+    // Account for both cards when distributing tiers across the match.
+    for (const player of [main, sub]) {
+      const remaining = tierBudget.get(player.tier) ?? 0;
+      if (remaining > 0) tierBudget.set(player.tier, remaining - 1);
+    }
 
     rawRounds.push({
       roundNumber: 0, // will be reassigned

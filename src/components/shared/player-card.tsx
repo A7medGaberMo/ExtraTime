@@ -243,13 +243,13 @@ export function PlayerCard({
           }
         }}
         className={cn(
-          'relative flex flex-col items-center text-start select-none outline-none focus-visible:ring-2 focus-visible:ring-game-accent/70',
+          'relative flex flex-col items-center text-start select-none outline-none focus-visible:ring-2 focus-visible:ring-gold/70',
           props.onClick ? 'cursor-pointer' : '',
           scaleMap.card,
           className,
         )}
         style={{
-          filter: `drop-shadow(0 10px 20px var(--et-shade-75)) drop-shadow(0 0 12px ${tierStyle.glow})`,
+          filter: `drop-shadow(0 10px 20px rgba(0,0,0,0.75)) drop-shadow(0 0 12px ${tierStyle.glow})`,
         }}
         {...props}
       >
@@ -272,8 +272,8 @@ export function PlayerCard({
                 background: `
                   linear-gradient(135deg, ${tierStyle.highlight}42 0%, transparent 32%),
                   linear-gradient(320deg, ${tierStyle.accent}38 0%, transparent 42%),
-                  radial-gradient(circle at 50% 30%, var(--et-hi-12) 0%, transparent 34%),
-                  radial-gradient(circle at 50% 38%, transparent 0%, var(--et-shade-25) 62%, var(--et-shade-70) 100%)
+                  radial-gradient(circle at 50% 30%, rgba(255,255,255,0.12) 0%, transparent 34%),
+                  radial-gradient(circle at 50% 38%, transparent 0%, rgba(0,0,0,0.24) 62%, rgba(0,0,0,0.68) 100%)
                 `,
               }}
             />
@@ -300,10 +300,10 @@ export function PlayerCard({
                     scaleMap.num,
                   )}
                   style={{
-                    color: isLightCard ? tierStyle.ink : 'var(--et-white)',
+                    color: isLightCard ? tierStyle.ink : '#FFFFFF',
                     textShadow: isLightCard
-                      ? '0 1px 0 var(--et-hi-80)'
-                      : `0 2px 5px var(--et-shade-95), 0 0 10px ${tierStyle.glow}`,
+                      ? '0 1px 0 rgba(255,255,255,0.8)'
+                      : `0 2px 5px rgba(0,0,0,0.95), 0 0 10px ${tierStyle.glow}`,
                   }}
                 >
                   {rating}
@@ -318,16 +318,16 @@ export function PlayerCard({
                     scaleMap.etBadge,
                   )}
                   style={{
-                    borderColor: 'var(--et-hi-30)',
-                    background: 'linear-gradient(180deg, var(--et-shade-90) 0%, var(--et-shade-95) 100%)',
-                    boxShadow: '0 2px 8px var(--et-shade-55), inset 0 1px 0 var(--et-hi-35)',
+                    borderColor: 'rgba(255, 255, 255, 0.3)',
+                    background: 'linear-gradient(180deg, rgba(18, 26, 42, 0.94) 0%, rgba(4, 7, 16, 0.96) 100%)',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.35)',
                   }}
                   title="ExtraTime Authentic Badge"
                 >
                   <ETLogo
                     variant="card-badge"
                     size={scaleMap.etLogoSize}
-                    className="drop-shadow-[0_1px_2px_var(--et-shade-85)]"
+                    className="drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]"
                   />
                 </div>
               </div>
@@ -342,10 +342,10 @@ export function PlayerCard({
                 )}
                 style={{
                   background: `conic-gradient(from 180deg, ${tierStyle.highlight}, ${tierStyle.accent}, ${tierStyle.primary}, ${tierStyle.highlight})`,
-                  boxShadow: `0 0 20px ${tierStyle.glow}, 0 0 36px var(--et-shade-55)`,
+                  boxShadow: `0 0 20px ${tierStyle.glow}, 0 0 36px rgba(0,0,0,0.55)`,
                 }}
               >
-                <div className="relative h-full w-full overflow-hidden rounded-full border border-white/25 bg-canvas/70">
+                <div className="relative h-full w-full overflow-hidden rounded-full border border-white/25 bg-slate-950/70">
                   <div className="pointer-events-none absolute inset-x-3 top-2 z-10 h-6 rounded-full bg-white/20 blur-md" />
                   <PlayerImage
                     src={player?.imageUrl}
@@ -361,7 +361,7 @@ export function PlayerCard({
             <div className="relative z-20 flex w-full shrink-0 items-center justify-center">
               <div
                 className={cn(
-                  'flex w-auto max-w-full items-center justify-center rounded-full border border-white/20 bg-canvas/85 text-center shadow-md backdrop-blur-md',
+                  'flex w-auto max-w-full items-center justify-center rounded-full border border-white/20 bg-slate-950/85 text-center shadow-md backdrop-blur-md',
                   scaleMap.infoPill,
                 )}
                 style={{
@@ -405,11 +405,11 @@ export function PlayerCard({
                   borderColor: isLightCard ? `${tierStyle.accent}80` : `${tierStyle.accent}60`,
                   borderRadius: (size === 'pitch' || size === 'draft') ? '5px 5px 4px 4px' : '999px 999px 12px 12px',
                   background: isLightCard
-                    ? 'linear-gradient(180deg, var(--et-hi-95) 0%, var(--et-hi-90) 100%)'
-                    : 'linear-gradient(180deg, var(--et-shade-90) 0%, var(--et-shade-95) 100%)',
+                    ? 'linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(246,239,226,0.92) 100%)'
+                    : 'linear-gradient(180deg, rgba(12,18,30,0.92) 0%, rgba(2,5,12,0.96) 100%)',
                   boxShadow: isLightCard
-                    ? `inset 0 1px 0 var(--et-hi-95), inset 0 -1px 0 var(--et-shade-20), 0 4px 14px var(--et-shade-20), 0 0 14px ${tierStyle.glow}`
-                    : `inset 0 1px 0 var(--et-hi-25), inset 0 -1px 0 var(--et-shade-60), 0 4px 16px var(--et-shade-70), 0 0 18px ${tierStyle.glow}`,
+                    ? `inset 0 1px 0 rgba(255,255,255,0.95), inset 0 -1px 0 rgba(0,0,0,0.1), 0 4px 14px rgba(0,0,0,0.2), 0 0 14px ${tierStyle.glow}`
+                    : `inset 0 1px 0 rgba(255,255,255,0.25), inset 0 -1px 0 rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.7), 0 0 18px ${tierStyle.glow}`,
                 }}
               >
                 {/* Specular rim on top */}
@@ -433,10 +433,10 @@ export function PlayerCard({
                     getDynamicNameSizeClass(displayName, size),
                   )}
                   style={{
-                    color: isLightCard ? tierStyle.ink : 'var(--et-white)',
+                    color: isLightCard ? tierStyle.ink : '#FFFFFF',
                     textShadow: isLightCard
-                      ? '0 1px 0 var(--et-hi-80)'
-                      : '0 2px 4px var(--et-shade-95)',
+                      ? '0 1px 0 rgba(255,255,255,0.75)'
+                      : '0 2px 4px rgba(0,0,0,0.95)',
                   }}
                 >
                   {displayName}
@@ -453,17 +453,17 @@ export function PlayerCard({
                   style={{
                     borderColor: isLightCard ? `${tierStyle.accent}90` : `${tierStyle.accent}65`,
                     background: isLightCard
-                      ? 'linear-gradient(180deg, var(--et-hi-90) 0%, var(--et-hi-95) 100%)'
-                      : `linear-gradient(180deg, var(--et-shade-90) 0%, var(--et-shade-95) 100%)`,
+                      ? 'linear-gradient(180deg, rgba(255,253,246,0.92) 0%, rgba(235,223,198,0.95) 100%)'
+                      : `linear-gradient(180deg, rgba(16,22,34,0.88) 0%, rgba(4,6,12,0.95) 100%)`,
                     color: isLightCard ? tierStyle.ink : tierStyle.highlight,
-                    boxShadow: `0 2px 8px var(--et-shade-50), 0 0 10px ${tierStyle.glow}, inset 0 1px 0 ${isLightCard ? 'var(--et-hi-60)' : 'var(--et-hi-18)'}`,
+                    boxShadow: `0 2px 8px rgba(0,0,0,0.5), 0 0 10px ${tierStyle.glow}, inset 0 1px 0 rgba(255,255,255,${isLightCard ? '0.6' : '0.18'})`,
                   }}
                 >
                   <span
                     className="truncate drop-shadow-sm"
                     style={{
                       textShadow: isLightCard
-                        ? '0 1px 0 var(--et-hi-70)'
+                        ? '0 1px 0 rgba(255,255,255,0.7)'
                         : `0 0 8px ${tierStyle.glow}`,
                     }}
                   >
@@ -493,7 +493,7 @@ export function PlayerCardSkeleton({ size = 'md' }: { size?: 'pitch' | 'xs' | 's
   return (
     <div
       className={cn(
-        'relative flex animate-pulse flex-col justify-between overflow-hidden border border-white/10 bg-canvas p-3',
+        'relative flex animate-pulse flex-col justify-between overflow-hidden border border-white/10 bg-slate-950 p-3',
         scaleMap,
       )}
       style={{ clipPath: chamferClip }}
