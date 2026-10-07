@@ -1,294 +1,305 @@
 'use client';
 
-import React, { Suspense, useState } from 'react';
+import React, { useState, useId } from 'react';
 import { useRouter } from 'next/navigation';
 import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { useToast } from '@/components/shared/toast';
+import { useI18n } from '@/lib/i18n';
+import { useGuestSession } from '@/hooks/use-guest-session';
+import { useGuestNickname } from '@/hooks/use-guest-nickname';
+import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
+import { sfx } from '@/lib/sfx';
+import { AppIcon } from '@/components/ui/app-icon';
+import { ModalShell } from '@/components/ui/modal-shell';
+import { TextInput } from '@/components/ui/text-input';
+import { Button } from '@/components/ui/button';
 import {
   Users,
-  PlusCircle,
-  SignIn,
+  Key,
+  Timer,
+  Lightning,
+  UsersFour,
   CircleNotch,
   Shuffle,
 } from '@phosphor-icons/react';
-import { AppIcon } from '@/components/ui/app-icon';
-import { Button } from '@/components/ui/button';
-import { ModalShell } from '@/components/ui/modal-shell';
-import { TextInput } from '@/components/ui/text-input';
-import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
-import { useGuestNickname } from '@/hooks/use-guest-nickname';
-import { useGuestSession } from '@/hooks/use-guest-session';
-import { useI18n } from '@/lib/i18n';
-import { sfx } from '@/lib/sfx';
+import {
+  GameHubShell,
+  HubEyebrow,
+  HubTitle,
+  HubVisual,
+  QueuePill,
+  PrimaryActionButton,
+  SecondaryActionButton,
+  RulesStrip,
+  DraftBoardVisual,
+} from '@/components/hub';
 
-type ActionPayload =
+type DraftPendingAction =
   | { type: 'public_match' }
-  | { type: 'create_private' }
-  | { type: 'join_code'; code: string };
+  | { type: 'create_private' };
 
-function DraftHubContent() {
+export default function DraftHubPage() {
   const router = useRouter();
+  const { t } = useI18n();
   const { toast } = useToast();
   const { ensureGuestId } = useGuestSession();
-  const { t, lang } = useI18n();
+  const [nickname, setNickname] = useGuestNickname();
 
-  // Convex Mutations
-  const findPublic = useMutation(api.draft.mutations.findOrCreatePublicMatch);
-  const createPrivate = useMutation(api.draft.mutations.createDuelPrivateRoom);
-  const joinByCode = useMutation(api.draft.mutations.joinDraftByCode);
-
-  // Convex Queries
-  const queueSummary = useQuery(api.draft.queries.getPublicQueueSummary);
-
-  const [roomCodeInput, setRoomCodeInput] = useState('');
+  const nameInputId = useId();
   const [loading, setLoading] = useState(false);
   const [showNameModal, setShowNameModal] = useState(false);
-  const [pendingAction, setPendingAction] = useState<ActionPayload | null>(null);
+  const [pendingAction, setPendingAction] = useState<DraftPendingAction | null>(null);
 
-  const [nickname, setNickname] = useGuestNickname();
-  const waitingCount = queueSummary?.waitingCount ?? 0;
+  // Convex query: Live matchmaking queue counts for Draft
+  const draftQueueSummary = useQuery(api.draft.queries.getPublicQueueSummary);
+  // Convex mutations: Find or create public match, and create private duel
+  const findPublicMatch = useMutation(api.draft.mutations.findOrCreatePublicMatch);
+  const createPrivateRoom = useMutation(api.draft.mutations.createDuelPrivateRoom);
 
-  function triggerAction(action: ActionPayload) {
-    const saved = localStorage.getItem('extratime_guestName');
+  const waitingCount = draftQueueSummary?.waitingCount ?? 0;
+  const queueReady = draftQueueSummary !== undefined;
+
+  const handleStartPublicMatch = () => {
+    const saved =
+      typeof window !== 'undefined' ? localStorage.getItem('extratime_guestName') : null;
     if (saved) {
-      void executeAction(action);
+      void executePublicMatch(saved);
     } else {
-      setPendingAction(action);
+      setPendingAction({ type: 'public_match' });
       setNickname(randomName());
       setShowNameModal(true);
     }
-  }
+  };
 
-  async function executeAction(action: ActionPayload) {
+  const handleCreatePrivate = () => {
+    const saved =
+      typeof window !== 'undefined' ? localStorage.getItem('extratime_guestName') : null;
+    if (saved) {
+      void executeCreatePrivate(saved);
+    } else {
+      setPendingAction({ type: 'create_private' });
+      setNickname(randomName());
+      setShowNameModal(true);
+    }
+  };
+
+  const executePublicMatch = async (managerName?: string) => {
     if (loading) return;
     setLoading(true);
 
     try {
-      const guestId = await ensureGuestId(nickname.trim() || randomName());
-      const sessionToken = localStorage.getItem('extratime_sessionToken') || undefined;
+      const activeName = (managerName || nickname).trim() || randomName();
+      const guestId = await ensureGuestId(activeName);
+      const actionSessionToken =
+        typeof window !== 'undefined'
+          ? localStorage.getItem('extratime_sessionToken') || undefined
+          : undefined;
 
-      switch (action.type) {
-        case 'public_match': {
-          const res = await findPublic({ guestId, sessionToken });
-          sfx.kickoff();
-          router.push(`/draft/${res.gameId}`);
-          break;
-        }
-        case 'create_private': {
-          const res = await createPrivate({ hostId: guestId, sessionToken });
-          sfx.kickoff();
-          router.push(`/draft/${res.gameId}`);
-          break;
-        }
-        case 'join_code': {
-          const res = await joinByCode({
-            guestId,
-            sessionToken,
-            code: action.code,
-          });
-          sfx.kickoff();
-          router.push(`/draft/${res.gameId}`);
-          break;
-        }
-      }
+      const result = await findPublicMatch({
+        guestId,
+        sessionToken: actionSessionToken,
+      });
+
+      sfx.kickoff();
+      router.push(`/draft/${result.gameId}`);
     } catch (error: unknown) {
       const err = error as { message?: string };
-      toast(err.message || 'Action failed. Please try again.', 'error');
+      toast(err.message || 'Matchmaking failed. Please try again.', 'error');
       setLoading(false);
     }
-  }
+  };
 
-  async function handleModalSubmit() {
-    if (!pendingAction || !nickname.trim()) return;
+  const executeCreatePrivate = async (managerName?: string) => {
+    if (loading) return;
+    setLoading(true);
+
+    try {
+      const activeName = (managerName || nickname).trim() || randomName();
+      const guestId = await ensureGuestId(activeName);
+      const actionSessionToken =
+        typeof window !== 'undefined'
+          ? localStorage.getItem('extratime_sessionToken') || undefined
+          : undefined;
+
+      const result = await createPrivateRoom({
+        hostId: guestId,
+        sessionToken: actionSessionToken,
+      });
+
+      sfx.kickoff();
+      router.push(`/draft/${result.gameId}`);
+    } catch (error: unknown) {
+      const err = error as { message?: string };
+      toast(err.message || 'Could not create private room. Please try again.', 'error');
+      setLoading(false);
+    }
+  };
+
+  const handleModalSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!nickname.trim()) return;
+    const action = pendingAction;
     setShowNameModal(false);
-    await executeAction(pendingAction);
-  }
+
+    if (action?.type === 'create_private') {
+      await executeCreatePrivate(nickname.trim());
+    } else {
+      await executePublicMatch(nickname.trim());
+    }
+  };
 
   return (
-    <article className="animate-fade-in mx-auto flex w-full max-w-4xl select-none flex-col items-center gap-2 sm:gap-2.5 py-0.5 sm:py-1 px-1.5 sm:px-3">
-      {/* ── 1. CLEAN APPLE HEADER ────────────────────────────────────── */}
-      <header className="relative w-full space-y-0.5 text-center overflow-hidden mb-4">
-        <div className="pointer-events-none absolute top-1/2 left-1/2 h-[120px] w-[260px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-game-accent/10 blur-[70px]" />
+    <GameHubShell
+      gameId="draft"
+      ariaTitle={`ExtraTime Draft - ${t('draftHub.badge')}`}
+    >
+      {/* ── Top Hero Cluster: Eyebrow + Title + Subtitle ── */}
+      <div className="flex w-full shrink-0 flex-col items-center pt-0.5 text-center">
+        <HubEyebrow text={t('draftHub.badge')} />
+        <HubTitle
+          title={t('draftHub.title')}
+          subtitle={t('draftHub.description')}
+        />
+      </div>
 
-        <div className="relative space-y-0.5">
-          <h1 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-white leading-tight mt-6">
-            {lang === 'ar' ? (
-              <>استوديو <span className="text-game-accent">اكسترا درافت</span></>
-            ) : (
-              <>Pro Draft <span className="text-game-accent">Studio</span></>
-            )}
-          </h1>
-          <p className="mx-auto max-w-md text-[10.5px] sm:text-xs font-normal leading-relaxed text-muted">
-            {lang === 'ar'
-              ? 'تحدى منافسيك في ديربي درافت ملحمي.'
-              : 'Challenge your rivals in an epic 1v1 draft showdown.'}
-          </p>
-        </div>
-      </header>
+      {/* ── Centerpiece: Tactical Draft Board (Same 240x240 frame as Snipe) ── */}
+      <HubVisual>
+        <DraftBoardVisual />
+      </HubVisual>
 
-      {/* 1v1 PVP DUELS (ZERO-SCROLL COMPACT) */}
-      <section className="w-full max-w-2xl space-y-2 pt-0.5">
-        {/* Public Matchmaking Banner */}
-        <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl flex items-center justify-between gap-3 border border-game-accent/20 mt-4">
-          <div className="flex items-center gap-2.5 min-w-0">
-            <div className="flex h-8.5 w-8.5 shrink-0 items-center justify-center rounded-xl border border-game-accent/40 bg-game-accent/15 text-game-accent p-2">
-              <AppIcon icon={Users} size={18} weight="bold" />
-            </div>
-            <div className="min-w-0">
-              <h3 className="font-display text-xs sm:text-[13px] font-bold text-white truncate">
-                {lang === 'ar' ? 'البحث عن منافس أونلاين' : 'Public Matchmaking'}
-              </h3>
-              <p className="text-[10px] text-muted truncate">
-                {lang === 'ar' ? 'ديربي مباشر مع لاعب عشوائي' : 'Duel a random online rival in real time'}
-              </p>
-            </div>
-          </div>
+      {/* ── Live Queue Pill: Aligned after visual in both LTR & RTL ── */}
+      <QueuePill
+        loading={!queueReady}
+        waitingCount={waitingCount}
+        loadingText={t('draftHub.liveLoading')}
+        emptyText={t('draftHub.liveEmpty')}
+        liveLabel={t('draftHub.liveLabel')}
+        liveSuffix={t('draftHub.liveSuffix')}
+      />
 
-          <Button
-            variant="gold"
-            size="sm"
+      {/* ── Bottom Section: Primary CTA + Secondary Cards + Rules Strip ── */}
+      <div className="hub-zone-actions mt-3 sm:mt-5 flex w-full shrink-0 flex-col gap-2 sm:gap-2.5">
+        {/* Primary Full-Width CTA: "PUBLIC MATCH" */}
+        <PrimaryActionButton
+          id="draft-public-match-btn"
+          title={t('draftHub.publicMatch')}
+          subtitle={t('draftHub.publicMatchSub')}
+          loadingTitle={t('draftHub.findingMatch')}
+          onClick={handleStartPublicMatch}
+          loading={loading && pendingAction?.type !== 'create_private'}
+          disabled={loading}
+        />
+
+        {/* Secondary Action Cards: "Private Room" & "Join with Code" */}
+        <div className="grid w-full grid-cols-2 gap-2.5 sm:gap-3">
+          {/* Card 1: Private Room / غرفة خاصة */}
+          <SecondaryActionButton
+            id="draft-private-room-btn"
+            label={t('draftHub.privateRoom')}
+            icon={Users}
+            onClick={handleCreatePrivate}
             disabled={loading}
-            onClick={() => triggerAction({ type: 'public_match' })}
-            className="shrink-0 rounded-xl h-8 px-3 text-xs font-bold text-game-on-accent shadow-sm"
-          >
-            {waitingCount > 0
-              ? `${waitingCount} waiting`
-              : lang === 'ar' ? 'دخول البحث' : 'Enter Match'}
-          </Button>
+          />
+
+          {/* Card 2: Join with Code / انضم بكود */}
+          <SecondaryActionButton
+            id="draft-join-room-link"
+            label={t('draftHub.joinWithCode')}
+            icon={Key}
+            href="/join-room"
+            disabled={loading}
+          />
         </div>
 
-        {/* Row 2: Private Room + Join by Code */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
-          <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl space-y-2 border border-game-accent/15">
-            <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/12 bg-white/[0.04] text-foreground">
-                <AppIcon icon={PlusCircle} size={15} weight="bold" />
-              </div>
-              <div className="min-w-0">
-                <h3 className="font-display text-xs font-bold text-white truncate">
-                  {lang === 'ar' ? 'غرفة خاصة' : 'Private Room'}
-                </h3>
-                <p className="text-[9.5px] text-muted truncate">
-                  {lang === 'ar' ? 'شارك الكود مع صديق' : 'Create room code'}
-                </p>
-              </div>
-            </div>
+        {/* Feature Rules Strip matching reference design: Hairline divider, 3 columns */}
+        <RulesStrip
+          items={[
+            {
+              icon: Timer,
+              title: t('draftHub.features.turnPick'),
+              subtitle: t('draftHub.features.turnPickSub'),
+            },
+            {
+              icon: Lightning,
+              title: t('draftHub.features.boostChemistry'),
+              subtitle: t('draftHub.features.boostChemistrySub'),
+            },
+            {
+              icon: UsersFour,
+              title: t('draftHub.features.buildSquad'),
+              subtitle: t('draftHub.features.buildSquadSub'),
+            },
+          ]}
+        />
+      </div>
 
-            <Button
-              variant="secondary"
-              size="sm"
-              fullWidth
-              disabled={loading}
-              onClick={() => triggerAction({ type: 'create_private' })}
-              className="rounded-xl h-8 text-[11px] font-bold hover:border-game-accent/40 mt-3"
-            >
-              {lang === 'ar' ? 'إنشاء غرفة خاصة' : 'Create Room'}
-            </Button>
-          </div>
-
-          <div className="luxury-glass p-2.5 sm:p-3 rounded-2xl space-y-2 border border-game-accent/15">
-            <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-white/12 bg-white/[0.04] text-foreground">
-                <AppIcon icon={SignIn} size={15} weight="bold" />
-              </div>
-              <div className="min-w-0">
-                <h3 className="font-display text-xs font-bold text-white truncate">
-                  {lang === 'ar' ? 'انضمام بكود' : 'Join by Code'}
-                </h3>
-                <p className="text-[9.5px] text-muted truncate">
-                  {lang === 'ar' ? 'أدخل كود صديقك' : 'Enter 6-char PIN'}
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-1.5 mt-3">
-              <TextInput
-                value={roomCodeInput}
-                onChange={(e) => setRoomCodeInput(e.target.value.toUpperCase().slice(0, 6))}
-                placeholder="CODE"
-                className="font-stats tracking-widest text-center uppercase font-bold !py-1 text-xs"
-              />
-              <Button
-                variant="gold"
-                size="sm"
-                disabled={loading || roomCodeInput.trim().length !== 6}
-                onClick={() => triggerAction({ type: 'join_code', code: roomCodeInput.trim() })}
-                className="shrink-0 rounded-xl px-3 h-8 font-bold text-game-on-accent text-xs"
-              >
-                {lang === 'ar' ? 'انضم' : 'Join'}
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── GUEST NICKNAME MODAL ────────────────────────────────────── */}
+      {/* ── First-Time Manager Handle Modal Shell ── */}
       <ModalShell
         isOpen={showNameModal}
         onClose={() => setShowNameModal(false)}
-        title={t('home.nameModal.title')}
-        subtitle={t('home.nameModal.subtitle')}
-        maxWidth="md"
+        title={t('draftHub.nameModal.title')}
+        subtitle={t('draftHub.nameModal.subtitle')}
+        maxWidth="sm"
       >
-        <div className="space-y-4 pt-1">
-          <TextInput
-            label={t('home.nameModal.label')}
-            placeholder={t('home.nameModal.placeholder')}
-            value={nickname}
-            onChange={(e) => setNickname(e.target.value)}
-            autoFocus
-            maxLength={18}
-            rightIcon={
-              <button
-                type="button"
-                onClick={() => setNickname(randomName())}
-                aria-label={t('home.nameModal.randomize')}
-                title={t('home.nameModal.randomize')}
-                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-foreground transition-colors hover:border-game-accent/50 hover:text-game-accent"
-              >
-                <AppIcon icon={Shuffle} size={18} weight="bold" />
-              </button>
-            }
-          />
-
-          <div className="flex items-center justify-end px-1">
-            <span className="font-stats text-xs text-muted">{nickname.length}/18</span>
+        <form onSubmit={handleModalSubmit} className="space-y-4 pt-1">
+          <div className="flex items-center gap-2">
+            <div className="flex-1">
+              <TextInput
+                id={nameInputId}
+                label={t('draftHub.nameModal.label')}
+                value={nickname}
+                onChange={(e) => setNickname(e.target.value)}
+                placeholder={t('draftHub.nameModal.placeholder')}
+                maxLength={24}
+                autoFocus
+              />
+            </div>
+            <button
+              type="button"
+              onClick={() => setNickname(randomName())}
+              className="btn-haptic group text-muted mt-6 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 transition-colors hover:border-[var(--hub-accent)] hover:bg-[color-mix(in_srgb,var(--hub-accent)_12%,transparent)] focus-visible:outline-2 focus-visible:outline-offset-2"
+              title={t('draftHub.nameModal.randomize')}
+              aria-label={t('draftHub.nameModal.randomize')}
+            >
+              <AppIcon
+                icon={Shuffle}
+                size={18}
+                className="transition-transform duration-500 group-hover:rotate-180 motion-reduce:transition-none"
+              />
+            </button>
           </div>
 
-          <div className="flex items-center justify-end gap-2">
-            <Button variant="secondary" onClick={() => setShowNameModal(false)} className="rounded-xl">
+          <div className="flex items-center justify-end gap-2 pt-2">
+            <Button
+              type="button"
+              variant="ghost"
+              onClick={() => setShowNameModal(false)}
+              disabled={loading}
+            >
               {t('common.cancel')}
             </Button>
             <Button
-              variant="gold"
-              onClick={handleModalSubmit}
-              disabled={loading || !nickname.trim()}
-              loading={loading}
-              className="rounded-xl font-bold"
+              type="submit"
+              variant="primary"
+              disabled={!nickname.trim() || loading}
+              className="font-bold text-slate-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.45)] hover:brightness-105"
+              style={{
+                background:
+                  'linear-gradient(to right, var(--hub-accent-light), var(--hub-accent) 50%, var(--hub-accent-deep))',
+                boxShadow:
+                  '0 0 20px color-mix(in srgb, var(--hub-accent) 35%, transparent), inset 0 1px 0 rgba(255, 255, 255, 0.45)',
+              }}
             >
-              {loading ? t('home.nameModal.finding') : t('common.confirm')}
+              {loading ? (
+                <AppIcon icon={CircleNotch} size={16} className="animate-spin" />
+              ) : (
+                t('draftHub.nameModal.submit')
+              )}
             </Button>
           </div>
-        </div>
+        </form>
       </ModalShell>
-    </article>
-  );
-}
-
-export default function DraftHubPage() {
-  return (
-    <Suspense
-      fallback={
-        <div className="min-h-[60vh] flex flex-col items-center justify-center gap-3">
-          <AppIcon icon={CircleNotch} size={32} weight="bold" className="text-game-accent animate-spin" />
-          <span className="font-stats text-xs font-bold uppercase tracking-widest text-muted">
-            Loading Pro Draft...
-          </span>
-        </div>
-      }
-    >
-      <DraftHubContent />
-    </Suspense>
+    </GameHubShell>
   );
 }

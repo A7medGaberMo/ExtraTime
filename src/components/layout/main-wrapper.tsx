@@ -11,6 +11,7 @@ export function MainWrapper({ children }: { children: React.ReactNode }) {
   const isZeroScrollArena =
     pathname === '/' ||
     pathname === '/snipe' ||
+    pathname === '/draft' ||
     (pathname.startsWith('/draft/') && pathname !== '/draft') ||
     pathname.startsWith('/auction/') ||
     (pathname.startsWith('/rank/') && pathname !== '/rank') ||
@@ -20,7 +21,6 @@ export function MainWrapper({ children }: { children: React.ReactNode }) {
   const isHubPage =
     pathname === '/rank' ||
     pathname === '/bank' ||
-    pathname === '/draft' ||
     pathname === '/create-room' ||
     pathname === '/join-room';
 

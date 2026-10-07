@@ -1,3 +1,5 @@
+@import './game-hub.css';
+
 /* Shared visual tokens for Snipe surfaces. */
 [data-game='snipe'] {
   --snipe-bg: #07090f;
