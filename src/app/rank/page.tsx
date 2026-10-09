@@ -6,59 +6,49 @@ import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { Id } from '../../../convex/_generated/dataModel';
 import { useToast } from '@/components/shared/toast';
-import {
-  Ranking,
-  Sword,
-  Play,
-  Users,
-  Compass,
-  Clock,
-  ShieldCheck,
-  ArrowsDownUp,
-  Key,
-  Shuffle,
-} from '@phosphor-icons/react';
-import { AppIcon } from '@/components/ui/app-icon';
-import { Button } from '@/components/ui/button';
-import { PageShell } from '@/components/ui/page-shell';
-import { SegmentedControl, type SegmentedOption } from '@/components/ui/segmented-control';
-import { StatPill } from '@/components/ui/stat-pill';
-import { TextInput } from '@/components/ui/text-input';
-import { ModalShell } from '@/components/ui/modal-shell';
-import { UserIdentity } from '@/components/ui/user-identity';
 import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
-import { useGuestNickname } from '@/hooks/use-guest-nickname';
+import { Users, Vault, ArrowsDownUp, Timer, Target } from '@phosphor-icons/react';
+import {
+  GameHubShell,
+  HubEyebrow,
+  HubTitle,
+  HubVisual,
+  QueuePill,
+  PrimaryActionButton,
+  SecondaryActionButton,
+  RulesStrip,
+  RankChartVisual,
+  RankSoloButton,
+  RankSetupSheet,
+  type RankSetupMode,
+} from '@/components/hub';
 
 export default function RankHubPage() {
   const router = useRouter();
   const { toast } = useToast();
-  const { t, lang } = useI18n();
+  const { t } = useI18n();
 
+  // Convex mutations
   const ensureGuest = useMutation(api.guests.mutations.ensure);
   const createSolo = useMutation(api.rank.mutations.createSoloGame);
   const createDuel = useMutation(api.rank.mutations.createDuelPrivateRoom);
   const joinDuel = useMutation(api.rank.mutations.joinDuelPrivateRoom);
   const findPublicMatch = useMutation(api.rank.mutations.findOrCreatePublicMatch);
+
+  // Convex live queue summary query
   const queueStats = useQuery(api.rank.queries.getPublicQueueSummary);
+  const queueReady = queueStats !== undefined;
+  const waitingCount = (queueStats?.waiting3 ?? 0) + (queueStats?.waiting5 ?? 0);
 
-  const [nickname, setNickname] = useGuestNickname();
-  const [showNameModal, setShowNameModal] = useState(false);
-  const [pendingAction, setPendingAction] = useState<
-    | { type: 'solo' }
-    | { type: 'quick' }
-    | { type: 'duel_create' }
-    | { type: 'duel_join'; code: string }
-    | null
-  >(null);
-
-  const [roundCount, setRoundCount] = useState<3 | 5>(3);
+  // Sheet interaction state
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const [sheetMode, setSheetMode] = useState<RankSetupMode>('quick');
   const [loading, setLoading] = useState(false);
-  const [activeTab, setActiveTab] = useState<'solo' | 'quick' | 'duel'>('solo');
-  const [joinCode, setJoinCode] = useState('');
 
-  async function ensureGuestUser(): Promise<Id<'guestUsers'>> {
-    const name = nickname.trim() || randomName();
+  // Helper to ensure guest user identity and tokens
+  async function ensureGuestUser(managerName: string): Promise<Id<'guestUsers'>> {
+    const name = managerName.trim() || randomName();
     const existingId =
       typeof window !== 'undefined'
         ? (localStorage.getItem('extratime_guestId') as Id<'guestUsers'> | null)
@@ -67,12 +57,14 @@ export default function RankHubPage() {
       typeof window !== 'undefined'
         ? localStorage.getItem('extratime_sessionToken') || undefined
         : undefined;
+
     const res = await ensureGuest({
       existingId: existingId ?? undefined,
       sessionToken,
       nickname: name,
       avatarSeed: name,
     });
+
     if (typeof window !== 'undefined') {
       localStorage.setItem('extratime_guestId', res.guestId);
       if (res.sessionToken) {
@@ -80,55 +72,50 @@ export default function RankHubPage() {
       }
       localStorage.setItem('extratime_guestName', name);
     }
+
     return res.guestId as Id<'guestUsers'>;
   }
 
-  function triggerActionWithName(
-    action:
-      | { type: 'solo' }
-      | { type: 'quick' }
-      | { type: 'duel_create' }
-      | { type: 'duel_join'; code: string },
-  ) {
-    const saved =
-      typeof window !== 'undefined' ? localStorage.getItem('extratime_guestName') : null;
-    if (saved) {
-      void executeAction(action);
-    } else {
-      setPendingAction(action);
-      setNickname(randomName());
-      setShowNameModal(true);
-    }
-  }
+  // Open the bottom setup sheet in the selected mode
+  const handleOpenSheet = (mode: RankSetupMode) => {
+    setSheetMode(mode);
+    setSheetOpen(true);
+  };
 
-  async function executeAction(
-    action:
-      | { type: 'solo' }
-      | { type: 'quick' }
-      | { type: 'duel_create' }
-      | { type: 'duel_join'; code: string },
-  ) {
+  // Execute the game start mutation with the configured parameters
+  const handleExecuteAction = async ({
+    nickname,
+    roundCount,
+    joinCode,
+  }: {
+    nickname: string;
+    roundCount: 3 | 5;
+    joinCode?: string;
+  }) => {
     if (loading) return;
     setLoading(true);
 
     try {
-      const guestId = await ensureGuestUser();
+      const guestId = await ensureGuestUser(nickname);
       const sessionToken =
         typeof window !== 'undefined'
           ? localStorage.getItem('extratime_sessionToken') || undefined
           : undefined;
 
-      if (action.type === 'solo') {
+      if (sheetMode === 'solo') {
         const result = await createSolo({ guestId, sessionToken, roundCount });
         router.push(`/rank/${result.gameId}`);
-      } else if (action.type === 'quick') {
+      } else if (sheetMode === 'quick') {
         const result = await findPublicMatch({ guestId, sessionToken, roundCount });
         router.push(`/rank/${result.gameId}`);
-      } else if (action.type === 'duel_create') {
+      } else if (sheetMode === 'duel_create') {
         const result = await createDuel({ hostId: guestId, sessionToken, roundCount });
         router.push(`/rank/${result.gameId}`);
-      } else if (action.type === 'duel_join') {
-        const result = await joinDuel({ guestId, sessionToken, code: action.code });
+      } else if (sheetMode === 'join') {
+        if (!joinCode || joinCode.length !== 6) {
+          throw new Error(t('rankHub.sheet.invalidCode'));
+        }
+        const result = await joinDuel({ guestId, sessionToken, code: joinCode });
         router.push(`/rank/${result.gameId}`);
       }
     } catch (err: unknown) {
@@ -136,311 +123,112 @@ export default function RankHubPage() {
       toast(e.message || 'Action failed', 'error');
       setLoading(false);
     }
-  }
-
-  async function handleModalSubmit() {
-    if (!pendingAction || !nickname.trim()) return;
-    setShowNameModal(false);
-    await executeAction(pendingAction);
-  }
-
-  const tabOptions: SegmentedOption<'solo' | 'quick' | 'duel'>[] = [
-    {
-      value: 'solo',
-      label: t('rank.soloTab'),
-      icon: <AppIcon icon={Play} size={15} weight="duotone" />,
-    },
-    {
-      value: 'quick',
-      label: t('rank.quickTab'),
-      icon: <AppIcon icon={Compass} size={15} weight="duotone" />,
-    },
-    {
-      value: 'duel',
-      label: t('rank.duelTab'),
-      icon: <AppIcon icon={Sword} size={15} weight="duotone" />,
-    },
-  ];
-
-  const roundOptions: SegmentedOption<3 | 5>[] = [
-    {
-      value: 3,
-      label: t('rank.rounds3'),
-      sublabel: '~2 min',
-    },
-    {
-      value: 5,
-      label: t('rank.rounds5'),
-      sublabel: '~4 min',
-    },
-  ];
+  };
 
   return (
-    <PageShell
-      title={t('rank.hubTitle')}
-      subtitle={t('rank.hubSubtitle')}
-      badge={
-        <StatPill
-          variant="gold"
-          size="sm"
-          icon={<AppIcon icon={Ranking} size={13} weight="fill" />}
-          label={t('rank.hubBadge')}
-        />
-      }
-      backUrl="/"
-      maxWidth="xl"
+    <GameHubShell
+      gameId="rank"
+      ariaTitle={`ExtraTime Rank - ${t('rankHub.badge')}`}
     >
-      {/* ── 1. RADAR CONTROL CONSOLE ─────────────────────────────────── */}
-      <div className="luxury-glass-elevated relative rounded-3xl p-3.5 sm:p-5 border border-game-accent/20 shadow-[0_24px_50px_var(--et-shade-70)] backdrop-blur-3xl space-y-3 sm:space-y-3.5">
-        {/* Soft Ambient Top Glow */}
-        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-36 w-64 rounded-full bg-game-accent/10 blur-3xl" />
-
-        {/* Manager Handle Bar */}
-        <div className="relative flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.03] p-2 sm:p-2.5 shadow-inner">
-          <div className="flex items-center gap-3 min-w-0">
-            <UserIdentity nickname={nickname} size="sm" showAvatarOnly />
-            <div className="min-w-0">
-              <span className="text-[10px] text-muted font-bold uppercase tracking-widest block font-stats">
-                {t('joinRoom.managerHandle')}
-              </span>
-              <span className="text-xs sm:text-sm font-bold text-white truncate block">
-                {nickname}
-              </span>
-            </div>
-          </div>
-          <button
-            type="button"
-            onClick={() => {
-              setPendingAction(null);
-              setShowNameModal(true);
-            }}
-            className="btn-haptic flex items-center gap-1.5 rounded-xl border border-white/12 bg-white/5 px-3 py-1.5 text-xs font-semibold text-foreground hover:border-game-accent/50 hover:text-white transition-all cursor-pointer shadow-sm"
-          >
-            <AppIcon icon={Shuffle} size={14} weight="bold" className="text-game-accent" />
-            <span>{lang === 'ar' ? 'تغيير' : 'Randomize'}</span>
-          </button>
-        </div>
-
-        {/* Mode Tabs */}
-        <div className="relative">
-          <SegmentedControl
-            options={tabOptions}
-            value={activeTab}
-            onChange={setActiveTab}
-            size="md"
-            activeVariant="gold"
-          />
-        </div>
-
-        {/* Round Count Selector */}
-        <div className="relative space-y-1.5">
-          <label className="text-muted text-[10px] font-bold tracking-widest uppercase block px-1 font-stats">
-            {t('rank.matchLength')}
-          </label>
-          <SegmentedControl
-            options={roundOptions}
-            value={roundCount}
-            onChange={setRoundCount}
-            size="md"
-          />
-        </div>
-
-        {/* ── TAB 1: SOLO PLAY ──────────────────────────────────────── */}
-        {activeTab === 'solo' && (
-          <div className="relative space-y-4 pt-1 animate-fade-in">
-            <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/8 space-y-1 text-xs shadow-inner">
-              <div className="flex items-center gap-2 font-bold text-white uppercase font-stats">
-                <AppIcon icon={ShieldCheck} size={16} weight="fill" className="text-game-accent" />
-                <span>{t('rank.scoringRuleTitle')}</span>
-              </div>
-              <p className="text-foreground text-xs font-normal leading-relaxed">
-                {t('rank.scoringRuleDesc')}
-              </p>
-            </div>
-
-            <Button
-              variant="gold"
-              size="lg"
-              fullWidth
-              onClick={() => triggerActionWithName({ type: 'solo' })}
-              disabled={loading}
-              loading={loading}
-              leftIcon={<AppIcon icon={Play} size={18} weight="fill" />}
-              className="rounded-2xl font-bold h-12 text-sm"
-            >
-              {t('rank.startSolo', { rounds: roundCount })}
-            </Button>
-          </div>
-        )}
-
-        {/* ── TAB 2: QUICK MATCH ────────────────────────────────────── */}
-        {activeTab === 'quick' && (
-          <div className="relative space-y-4 pt-1 animate-fade-in">
-            <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/8 flex items-center justify-between shadow-inner">
-              <div className="space-y-0.5 min-w-0 pr-2">
-                <span className="text-[10px] text-muted font-bold uppercase block font-stats">
-                  {lang === 'ar' ? 'رادار المطابقة السريعة' : 'Radar Matchmaking'}
-                </span>
-                <p className="text-xs text-white font-medium truncate">
-                  {lang === 'ar'
-                    ? `مطابقة فورية مع منافس لايف (${roundCount} جولات)`
-                    : `Live 1v1 matchup (${roundCount} rounds)`}
-                </p>
-              </div>
-              <StatPill
-                variant="gold"
-                size="sm"
-                label={t('rank.inQueueStats', {
-                  count: roundCount === 3 ? (queueStats?.waiting3 ?? 0) : (queueStats?.waiting5 ?? 0),
-                })}
-              />
-            </div>
-
-            <Button
-              variant="gold"
-              size="lg"
-              fullWidth
-              onClick={() => triggerActionWithName({ type: 'quick' })}
-              disabled={loading}
-              loading={loading}
-              leftIcon={<AppIcon icon={Sword} size={18} weight="bold" />}
-              className="rounded-2xl font-bold h-12 text-sm"
-            >
-              {lang === 'ar'
-                ? `ابحث عن منافس لايف (${roundCount} جولات)`
-                : `Find 1v1 Opponent (${roundCount} Rounds)`}
-            </Button>
-          </div>
-        )}
-
-        {/* ── TAB 3: PRIVATE DUEL ───────────────────────────────────── */}
-        {activeTab === 'duel' && (
-          <div className="relative space-y-4 pt-1 animate-fade-in">
-            <Button
-              variant="gold"
-              size="lg"
-              fullWidth
-              onClick={() => triggerActionWithName({ type: 'duel_create' })}
-              disabled={loading}
-              loading={loading}
-              leftIcon={<AppIcon icon={Users} size={18} weight="bold" />}
-              className="rounded-2xl font-bold h-12 text-sm"
-            >
-              {t('rank.createPrivateDuel')}
-            </Button>
-
-            <div className="flex items-center gap-3 text-[10px] text-muted font-bold uppercase font-stats">
-              <div className="h-px bg-white/8 flex-1" />
-              <span>{t('rank.orJoinWithCode')}</span>
-              <div className="h-px bg-white/8 flex-1" />
-            </div>
-
-            <div className="flex items-center gap-2">
-              <div className="flex-1">
-                <TextInput
-                  placeholder={t('rank.joinCodePlaceholder')}
-                  value={joinCode}
-                  onChange={(e) => setJoinCode(e.target.value.toUpperCase().slice(0, 6))}
-                  leftIcon={<AppIcon icon={Key} size={16} weight="bold" />}
-                  aria-label={t('rank.joinCodePlaceholder')}
-                  className="font-stats tracking-widest text-center uppercase"
-                />
-              </div>
-              <Button
-                variant="secondary"
-                size="md"
-                onClick={() =>
-                  triggerActionWithName({ type: 'duel_join', code: joinCode.trim() })
-                }
-                disabled={loading || joinCode.trim().length !== 6}
-                className="rounded-xl font-bold px-4 h-11"
-              >
-                {t('rank.joinDuelBtn')}
-              </Button>
-            </div>
-          </div>
-        )}
+      {/* ── Top Hero Cluster: Eyebrow + Title + Subtitle ── */}
+      <div className="flex w-full shrink-0 flex-col items-center pt-0.5 text-center">
+        <HubEyebrow text={t('rankHub.badge')} />
+        <HubTitle
+          title={t('rankHub.title')}
+          subtitle={t('rankHub.description')}
+        />
       </div>
 
-      {/* ── 2. TECHNICAL SPECIFICATION TILES (APPLE LUXURY MINIMAL) ─── */}
-      <section className="grid grid-cols-3 gap-2 sm:gap-2.5 w-full">
-        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-game-accent/15">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-game-accent font-bold text-xs font-stats">
-            <AppIcon icon={Clock} size={13} weight="fill" />
-            <span>{lang === 'ar' ? 'مؤقت 45 ثانية' : '45s Timer'}</span>
-          </div>
-          <p className="text-[10px] sm:text-[10.5px] text-muted font-normal truncate">
-            {lang === 'ar' ? 'جولات حية وسريعة' : 'Fast live rounds'}
-          </p>
-        </div>
+      {/* ── Centerpiece: Living Ranking Scope Centerpiece (Same 240x240 frame as Snipe & Draft) ── */}
+      <HubVisual>
+        <RankChartVisual />
+      </HubVisual>
 
-        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-game-accent/15">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-game-accent font-bold text-xs font-stats">
-            <AppIcon icon={ShieldCheck} size={13} weight="fill" />
-            <span>{lang === 'ar' ? '+2 إلى -2' : '+2 to -2'}</span>
-          </div>
-          <p className="text-[10px] sm:text-[10.5px] text-muted font-normal truncate">
-            {lang === 'ar' ? 'حساب دقيق للمراكز' : 'Distance scoring'}
-          </p>
-        </div>
+      {/* ── Live Queue Pill: Aligned after visual in both LTR & RTL ── */}
+      <QueuePill
+        loading={!queueReady}
+        waitingCount={waitingCount}
+        loadingText={t('rankHub.liveLoading')}
+        emptyText={t('rankHub.liveEmpty')}
+        liveLabel={t('rankHub.liveLabel')}
+        liveSuffix={t('rankHub.liveSuffix')}
+      />
 
-        <div className="luxury-glass rounded-2xl p-2.5 sm:p-3 text-center sm:text-start space-y-0.5 border border-game-accent/15">
-          <div className="flex items-center justify-center sm:justify-start gap-1.5 text-game-accent font-bold text-xs font-stats">
-            <AppIcon icon={ArrowsDownUp} size={13} weight="bold" />
-            <span>{lang === 'ar' ? '5 بطاقات' : '5 Cards'}</span>
-          </div>
-          <p className="text-[10px] sm:text-[10.5px] text-muted font-normal truncate">
-            {lang === 'ar' ? 'ترتيب بالسحب والإفلات' : 'Drag & drop order'}
-          </p>
-        </div>
-      </section>
-
-      {/* ── 4. MANAGER NAME ENTRY MODAL ──────────────────────────────── */}
-      <ModalShell
-        isOpen={showNameModal}
-        onClose={() => setShowNameModal(false)}
-        title={t('home.nameModal.title')}
-        subtitle={t('home.nameModal.subtitle')}
-        maxWidth="md"
-      >
-        <div className="space-y-4 pt-1">
-          <TextInput
-            label={t('home.nameModal.label')}
-            placeholder={t('home.nameModal.placeholder')}
-            value={nickname}
-            onChange={(e) => setNickname(e.target.value)}
-            autoFocus
-            maxLength={18}
-            rightIcon={
-              <button
-                type="button"
-                onClick={() => setNickname(randomName())}
-                aria-label={t('home.nameModal.randomize')}
-                title={t('home.nameModal.randomize')}
-                className="btn-haptic flex h-8 w-8 cursor-pointer items-center justify-center rounded-xl border border-white/15 bg-white/5 text-foreground transition-colors hover:border-game-accent/50 hover:text-game-accent"
-              >
-                <AppIcon icon={Shuffle} size={18} weight="bold" />
-              </button>
-            }
+      {/* ── Bottom Section: 4 Action Buttons (2 & 2) + Feature Strip ── */}
+      <div className="hub-zone-actions mt-3 sm:mt-5 flex w-full shrink-0 flex-col gap-2 sm:gap-2.5">
+        {/* Row 1 ("Play Now"): 60% Public Match + 40% Solo */}
+        <div className="hub-actions-row-1 flex w-full items-stretch gap-2.5 sm:gap-3 h-[60px] sm:h-[68px]">
+          <PrimaryActionButton
+            id="rank-public-match-btn"
+            title={t('rankHub.publicMatch')}
+            subtitle={t('rankHub.publicMatchSub')}
+            onClick={() => handleOpenSheet('quick')}
+            disabled={loading}
+            containerClassName="basis-[60%] flex-[3_3_0%] min-w-0 h-full"
+            className="h-full sm:h-full rounded-[22px] sm:rounded-[24px] px-3 sm:px-4"
           />
 
-          <div className="flex items-center justify-end px-1">
-            <span className="font-stats text-xs text-muted">{nickname.length}/18</span>
-          </div>
-
-          <Button
-            variant="gold"
-            size="lg"
-            fullWidth
-            onClick={handleModalSubmit}
-            disabled={loading || !nickname.trim()}
-            loading={loading}
-            className="rounded-2xl"
-          >
-            {loading ? t('home.nameModal.finding') : t('common.confirm')}
-          </Button>
+          <RankSoloButton
+            id="rank-solo-btn"
+            title={t('rankHub.playSolo')}
+            subtitle={t('rankHub.playSoloSub')}
+            onClick={() => handleOpenSheet('solo')}
+            disabled={loading}
+            className="basis-[40%] flex-[2_2_0%] min-w-0 h-full rounded-[22px] sm:rounded-[24px]"
+          />
         </div>
-      </ModalShell>
-    </PageShell>
+
+        {/* Row 2 ("With Friends"): Private Room + Join with Code (2 equal columns) */}
+        <div className="hub-actions-row-2 grid w-full grid-cols-2 gap-2.5 sm:gap-3">
+          {/* Card 1: Private Room / غرفة خاصة */}
+          <SecondaryActionButton
+            id="rank-private-room-btn"
+            label={t('rankHub.privateRoom')}
+            icon={Users}
+            onClick={() => handleOpenSheet('duel_create')}
+            disabled={loading}
+          />
+
+          {/* Card 2: Join with Code / انضم بكود */}
+          <SecondaryActionButton
+            id="rank-join-code-btn"
+            label={t('rankHub.joinWithCode')}
+            icon={Vault}
+            onClick={() => handleOpenSheet('join')}
+            disabled={loading}
+          />
+        </div>
+
+        {/* Rules Strip (3 Columns): Sort cards, Beat the clock, Distance scoring */}
+        <RulesStrip
+          items={[
+            {
+              icon: ArrowsDownUp,
+              title: t('rankHub.features.rankCards'),
+              subtitle: t('rankHub.features.rankCardsSub'),
+            },
+            {
+              icon: Timer,
+              title: t('rankHub.features.beatClock'),
+              subtitle: t('rankHub.features.beatClockSub'),
+            },
+            {
+              icon: Target,
+              title: t('rankHub.features.distanceScore'),
+              subtitle: t('rankHub.features.distanceScoreSub'),
+            },
+          ]}
+        />
+      </div>
+
+      {/* ── Setup Bottom Sheet (Holds mode config, rounds, rules, and PIN) ── */}
+      <RankSetupSheet
+        isOpen={sheetOpen}
+        onClose={() => setSheetOpen(false)}
+        mode={sheetMode}
+        onConfirm={handleExecuteAction}
+        loading={loading}
+      />
+    </GameHubShell>
   );
 }

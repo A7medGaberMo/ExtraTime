@@ -23,9 +23,9 @@ export function HubTitle({ title, subtitle, className }: HubTitleProps) {
       </div>
 
       {/* Subtitle */}
-      <div className="hub-stagger-3 mt-3 w-full max-w-[280px] sm:max-w-[310px]">
+      <div className="hub-stagger-3 mt-2 sm:mt-2.5 w-full max-w-[360px] sm:max-w-[420px] h-[38px] sm:h-[42px] flex items-center justify-center">
         <p
-          className="hub-body text-[13px] leading-snug font-normal text-balance text-[#C5CAD6] sm:text-[14.5px]"
+          className="hub-body text-[13px] sm:text-[14px] leading-[1.38] font-normal text-balance whitespace-pre-line text-[#C5CAD6]"
           dir={lang === 'ar' ? 'rtl' : 'ltr'}
         >
           {subtitle}

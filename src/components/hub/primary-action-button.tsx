@@ -15,6 +15,7 @@ export interface PrimaryActionButtonProps {
   loading?: boolean;
   disabled?: boolean;
   className?: string;
+  containerClassName?: string;
 }
 
 export function PrimaryActionButton({
@@ -26,12 +27,13 @@ export function PrimaryActionButton({
   loading = false,
   disabled = false,
   className,
+  containerClassName,
 }: PrimaryActionButtonProps) {
   const { lang } = useI18n();
   const isRtl = lang === 'ar';
 
   return (
-    <div className="w-full">
+    <div className={cn('w-full', containerClassName)}>
       <button
         type="button"
         id={id}
@@ -39,7 +41,7 @@ export function PrimaryActionButton({
         disabled={disabled || loading}
         aria-busy={loading}
         className={cn(
-          'hub-cta-btn group relative flex h-14 w-full items-center justify-between overflow-hidden rounded-2xl border px-5 text-start focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-wait sm:h-[58px] sm:px-6',
+          'hub-cta-btn group relative flex h-14 w-full items-center justify-between overflow-hidden rounded-2xl border px-4 sm:px-6 text-start focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-wait sm:h-[58px]',
           className,
         )}
         style={{

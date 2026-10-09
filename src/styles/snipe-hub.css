@@ -15,7 +15,7 @@
 }
 
 .snipe-title {
-  font-family: var(--font-sora), var(--font-display), sans-serif;
+  font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(60px, 8vw, 64px);
   line-height: 1;
@@ -27,7 +27,7 @@
 }
 
 html[dir='rtl'] .snipe-title {
-  font-family: var(--font-cairo-arabic), var(--font-display-arabic), sans-serif !important;
+  font-family: var(--font-cairo), var(--font-display), sans-serif !important;
   letter-spacing: normal !important;
   font-size: clamp(60px, 8vw, 64px);
   font-weight: 900;
@@ -49,7 +49,7 @@ html[dir='rtl'] .snipe-hero-title {
 }
 
 .snipe-eyebrow {
-  font-family: var(--font-barlow-condensed), sans-serif;
+  font-family: var(--font-ui);
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -57,18 +57,18 @@ html[dir='rtl'] .snipe-hero-title {
 }
 
 html[dir='rtl'] .snipe-eyebrow {
-  font-family: var(--font-changa), var(--font-arabic), sans-serif !important;
+  font-family: var(--font-cairo), var(--font-ui), sans-serif !important;
   letter-spacing: normal !important;
   text-transform: none;
 }
 
 .snipe-body {
-  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  font-family: var(--font-ui);
   color: #c5cad6;
 }
 
 html[dir='rtl'] .snipe-body {
-  font-family: var(--font-arabic), sans-serif !important;
+  font-family: var(--font-cairo), var(--font-ui), sans-serif !important;
   letter-spacing: normal !important;
   color: #c5cad6;
 }

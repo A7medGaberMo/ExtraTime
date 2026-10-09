@@ -212,7 +212,7 @@ export function ETLogo({
         {displayWordmark && (
           <g transform="translate(200, 220)" textAnchor="middle">
             <text
-              fontFamily="'Sora', 'Inter', sans-serif"
+              fontFamily="var(--font-ui), sans-serif"
               fontWeight="900"
               fontSize="34"
               letterSpacing="6"
@@ -222,7 +222,7 @@ export function ETLogo({
             </text>
             <text
               y="24"
-              fontFamily="'Rajdhani', sans-serif"
+              fontFamily="var(--font-ui), sans-serif"
               fontWeight="700"
               fontSize="11"
               letterSpacing="8"

@@ -4,32 +4,13 @@
 
 @theme {
   /* ═══════════════════════════════════════════════════════════════════
-     TYPOGRAPHY — Apple Product & Luxury Automotive Hierarchy
-     Latin: SF Pro Display / Inter · Arabic: Noto Sans Arabic + Noto Kufi Arabic.
-     Weights: 300 (Light), 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold).
+     TYPOGRAPHY — Amiri (Arabic) + Playfair Display / Plus Jakarta Sans (English)
+     Exposed as font-ui and font-display.
      ═══════════════════════════════════════════════════════════════════ */
-  --font-sans:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', var(--font-inter),
-    system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-
-  --font-arabic:
-    var(--font-noto-sans-arabic), 'Noto Sans Arabic', 'Segoe UI', Tahoma, system-ui, sans-serif;
-
-  --font-display:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', var(--font-inter),
-    system-ui, sans-serif;
-  --font-display-arabic:
-    var(--font-noto-kufi), var(--font-noto-sans-arabic), 'Noto Kufi Arabic', sans-serif;
-
+  --font-ui: var(--font-jakarta), var(--font-cairo), system-ui, sans-serif;
+  --font-display: var(--font-playfair), var(--font-cairo), sans-serif;
+  --font-sans: var(--font-ui);
   --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
-
-  /* Tabular Numerics: Lining numbers with fixed column width for scores/timers */
-  --font-stat:
-    -apple-system, BlinkMacSystemFont, 'SF Pro Text', var(--font-inter), system-ui, sans-serif;
-
-  /* FUT Card: DIN Condensed-style for authentic Ultimate Team card typography */
-  --font-card:
-    var(--font-barlow-condensed), 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
 
   /* Apple Type Scale */
   --text-caption2: 0.6875rem;
@@ -51,9 +32,6 @@
   --text-largetitle: 2.125rem;
   /* 34px */
 
-  /* ═══════════════════ ELEVATION & MATERIALS ═══════════════════ */
-  /* Elevation & materials live in src/styles/theme.css (single source of truth). */
-
   /* Radius Scale */
   --radius-sm: 0.5rem;
   /* 8px */
@@ -71,6 +49,12 @@
 
 :root {
   color-scheme: dark;
+  --font-ui: var(--font-jakarta), var(--font-cairo), system-ui, sans-serif;
+  --font-display: var(--font-playfair), var(--font-cairo), sans-serif;
+  --font-arabic: var(--font-cairo), sans-serif;
+  --font-cairo-arabic: var(--font-cairo), sans-serif;
+  --font-noto-kufi: var(--font-cairo), sans-serif;
+  --font-display-arabic: var(--font-cairo), sans-serif;
 }
 
 html,
@@ -87,8 +71,20 @@ body {
 }
 
 html {
+  font-synthesis: none;
   touch-action: pan-y;
   overflow-x: clip;
+}
+
+body {
+  font-family: var(--font-ui);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
 }
 
 *,
@@ -105,7 +101,7 @@ html {
 
 /* Tabular figures for stats, scores, prices & timers */
 .font-stats {
-  font-family: var(--font-stat);
+  font-family: var(--font-ui);
   font-weight: 600;
   font-variant-numeric: tabular-nums lining-nums;
   letter-spacing: -0.01em;
@@ -115,67 +111,19 @@ html {
   font-family: var(--font-display);
   font-weight: 700;
   font-variant-numeric: tabular-nums lining-nums;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.01em;
 }
 
 /* ═══════════════════ FUT CARD TYPOGRAPHY ═══════════════════ */
 .font-card {
-  font-family: var(--font-card);
+  font-family: var(--font-ui);
   font-weight: 600;
-  font-stretch: condensed;
 }
 
 .font-card-num {
-  font-family: var(--font-card);
+  font-family: var(--font-ui);
   font-weight: 700;
-  font-variant-numeric: lining-nums;
-  letter-spacing: -0.01em;
-}
-
-/* ═══════════════════ ARABIC / RTL HIGH-LEVEL TYPOGRAPHY ═══════════════════ */
-html[dir='rtl'] body {
-  font-family: var(--font-arabic);
-  letter-spacing: normal !important;
-  word-spacing: normal;
-  line-height: 1.6;
-}
-
-html[dir='rtl'] * {
-  letter-spacing: normal !important;
-}
-
-html[dir='rtl'] .uppercase,
-html[dir='rtl'] .font-stats {
-  text-transform: none;
-  letter-spacing: normal !important;
-}
-
-html[dir='rtl'] h1,
-html[dir='rtl'] h2,
-html[dir='rtl'] h3,
-html[dir='rtl'] h4,
-html[dir='rtl'] h5,
-html[dir='rtl'] h6 {
-  font-family: var(--font-display-arabic);
-  letter-spacing: 0 !important;
-  line-height: 1.4;
-  font-weight: 700;
-  text-wrap: balance;
-}
-
-html[dir='rtl'] :is(button, [role='button'], input[type='button'], input[type='submit'], select) {
-  font-family: var(--font-display-arabic);
-  letter-spacing: normal !important;
-}
-
-html[dir='rtl'] :is(.font-stats, .font-display-number) {
-  font-family: var(--font-arabic);
-  font-variant-numeric: tabular-nums lining-nums;
-  letter-spacing: normal !important;
-}
-
-html[dir='rtl'] p {
-  text-wrap: pretty;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 /* ═══════════════════ DISPLAY HEADINGS ═══════════════════ */
@@ -184,8 +132,57 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  letter-spacing: -0.025em;
-  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* ═══════════════════ ARABIC / RTL HIGH-LEVEL TYPOGRAPHY (Cairo) ═══════════════════ */
+html[dir='rtl'],
+:lang(ar) {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+html[dir='rtl'] body,
+:lang(ar) body {
+  letter-spacing: 0 !important;
+  word-spacing: normal;
+  line-height: 1.6;
+}
+
+html[dir='rtl'] * {
+  letter-spacing: 0 !important;
+}
+
+html[dir='rtl'] :is(.uppercase, [class*='uppercase']),
+:lang(ar) :is(.uppercase, [class*='uppercase']) {
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+html[dir='rtl'] :is(h1, h2, h3, h4, h5, h6),
+:lang(ar) :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-display);
+  letter-spacing: 0 !important;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+html[dir='rtl'] :is(p, .body-text),
+:lang(ar) :is(p, .body-text) {
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+html[dir='rtl'] :is(button, [role='button'], input[type='button'], input[type='submit'], select),
+:lang(ar) :is(button, [role='button'], input[type='button'], input[type='submit'], select) {
+  font-family: var(--font-ui);
+  letter-spacing: 0 !important;
+}
+
+html[dir='rtl'] :is(.font-stats, .font-display-number, .tabular-nums),
+:lang(ar) :is(.font-stats, .font-display-number, .tabular-nums) {
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: 0 !important;
 }
 
 /* ═══════════════════ SCROLLBARS ═══════════════════ */
@@ -509,22 +506,7 @@ h4 {
   animation: ctaShineSweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-/* Snipe Hub Typography Utilities */
-.font-sora {
-  font-family: var(--font-sora), var(--font-display), sans-serif;
-}
 
-.font-plus-jakarta {
-  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
-}
-
-.font-lalezar {
-  font-family: var(--font-lalezar), var(--font-arabic), sans-serif;
-}
-
-.font-reem-kufi {
-  font-family: var(--font-reem-kufi), var(--font-arabic), sans-serif;
-}
 
 @media (prefers-reduced-motion: reduce) {
   *,

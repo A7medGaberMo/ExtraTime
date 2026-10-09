@@ -1,15 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import {
-  Inter,
-  Noto_Sans_Arabic,
-  Barlow_Condensed,
-  Sora,
-  Plus_Jakarta_Sans,
-  Changa,
-  Lalezar,
-  Reem_Kufi,
-  Noto_Kufi_Arabic,
   Cairo,
+  Playfair_Display,
+  Plus_Jakarta_Sans,
 } from 'next/font/google';
 import './globals.css';
 import { ConvexClientProvider } from '@/providers/convex-provider';
@@ -18,74 +11,21 @@ import { I18nProvider } from '@/lib/i18n';
 import { Header } from '@/components/layout/header';
 import { MainWrapper } from '@/components/layout/main-wrapper';
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-inter',
+const cairo = Cairo({
+  subsets: ['arabic', 'latin'],
+  variable: '--font-cairo',
   display: 'swap',
 });
 
-const notoSansArabic = Noto_Sans_Arabic({
-  subsets: ['arabic'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-noto-sans-arabic',
-  display: 'swap',
-});
-
-// DIN-style condensed — authentic FUT/EA FC card typography
-const barlowCondensed = Barlow_Condensed({
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  weight: ['500', '600', '700'],
-  variable: '--font-barlow-condensed',
-  display: 'swap',
-});
-
-const sora = Sora({
-  subsets: ['latin'],
-  weight: ['700', '800'],
-  variable: '--font-sora',
+  variable: '--font-playfair',
   display: 'swap',
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-plus-jakarta',
-  display: 'swap',
-});
-
-const changa = Changa({
-  subsets: ['arabic'],
-  weight: ['500', '600', '700'],
-  variable: '--font-changa',
-  display: 'swap',
-});
-
-const lalezar = Lalezar({
-  subsets: ['arabic'],
-  weight: ['400'],
-  variable: '--font-lalezar',
-  display: 'swap',
-});
-
-const reemKufi = Reem_Kufi({
-  subsets: ['arabic'],
-  weight: ['500', '600', '700'],
-  variable: '--font-reem-kufi',
-  display: 'swap',
-});
-
-const notoKufiArabic = Noto_Kufi_Arabic({
-  subsets: ['arabic'],
-  weight: ['600', '700'],
-  variable: '--font-noto-kufi',
-  display: 'swap',
-});
-
-const cairoArabic = Cairo({
-  subsets: ['arabic'],
-  weight: ['900'],
-  variable: '--font-cairo-arabic',
+  variable: '--font-jakarta',
   display: 'swap',
 });
 
@@ -208,7 +148,7 @@ export default function RootLayout({
     <html
       lang="en"
       dir="ltr"
-      className={`dark ${inter.variable} ${notoSansArabic.variable} ${barlowCondensed.variable} ${sora.variable} ${plusJakarta.variable} ${changa.variable} ${lalezar.variable} ${reemKufi.variable} ${notoKufiArabic.variable} ${cairoArabic.variable}`}
+      className={`dark ${cairo.variable} ${playfair.variable} ${plusJakarta.variable}`}
     >
       <head>
         <script
@@ -216,7 +156,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-canvas text-foreground selection:bg-brand selection:text-canvas flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-sans antialiased">
+      <body className="bg-canvas text-foreground selection:bg-brand selection:text-canvas flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-ui antialiased">
         <ConvexClientProvider>
           <I18nProvider>
             <ToastProvider>

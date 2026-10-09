@@ -12,6 +12,8 @@ export function MainWrapper({ children }: { children: React.ReactNode }) {
     pathname === '/' ||
     pathname === '/snipe' ||
     pathname === '/draft' ||
+    pathname === '/rank' ||
+    pathname === '/bank' ||
     (pathname.startsWith('/draft/') && pathname !== '/draft') ||
     pathname.startsWith('/auction/') ||
     (pathname.startsWith('/rank/') && pathname !== '/rank') ||
@@ -19,8 +21,6 @@ export function MainWrapper({ children }: { children: React.ReactNode }) {
     pathname.startsWith('/result/');
 
   const isHubPage =
-    pathname === '/rank' ||
-    pathname === '/bank' ||
     pathname === '/create-room' ||
     pathname === '/join-room';
 

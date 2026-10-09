@@ -14,16 +14,29 @@ export interface RulesStripItem {
 export interface RulesStripProps {
   items: [RulesStripItem, RulesStripItem, RulesStripItem];
   className?: string;
+  moreLabel?: string;
+  onMore?: () => void;
 }
 
-export function RulesStrip({ items, className }: RulesStripProps) {
+export function RulesStrip({ items, className, moreLabel, onMore }: RulesStripProps) {
   return (
     <div
       className={cn(
-        'hub-feature-strip grid w-full grid-cols-3 border-t border-white/[0.08] pt-3 pb-0.5',
+        'hub-feature-strip relative grid w-full grid-cols-3 border-t border-white/[0.08] pt-3 pb-0.5',
         className,
       )}
     >
+      {moreLabel && onMore ? (
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-auto">
+          <button
+            type="button"
+            onClick={onMore}
+            className="inline-flex items-center gap-1 px-2.5 py-0.5 text-[10px] tracking-wider uppercase font-semibold text-white/75 bg-[#0d0f14] border border-white/15 rounded-full hover:text-white hover:border-white/30 active:scale-95 transition-all shadow-sm cursor-pointer"
+          >
+            <span>{moreLabel}</span>
+          </button>
+        </div>
+      ) : null}
       {items.map((item, idx) => (
         <div
           key={idx}

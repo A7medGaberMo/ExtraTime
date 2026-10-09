@@ -19,7 +19,7 @@
 
 /* ── Typography & Sheen ──────────────────────────────────────────────── */
 .hub-title {
-  font-family: var(--font-sora), var(--font-display), sans-serif;
+  font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(54px, 8.5vw, 68px);
   line-height: 1;
@@ -31,7 +31,7 @@
 }
 
 html[dir='rtl'] .hub-title {
-  font-family: var(--font-cairo-arabic), var(--font-display-arabic), sans-serif !important;
+  font-family: var(--font-cairo), var(--font-display), sans-serif !important;
   letter-spacing: normal !important;
   font-size: clamp(54px, 8.5vw, 68px);
   font-weight: 900;
@@ -103,14 +103,14 @@ html[dir='rtl'] .hub-eyebrow-line-end {
 }
 
 .hub-body {
-  font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
+  font-family: var(--font-ui);
   color: var(--hub-text-subtitle);
 }
 
 html[dir='rtl'] .hub-body {
-  font-family: var(--font-arabic), sans-serif !important;
+  font-family: var(--font-cairo), var(--font-ui), sans-serif !important;
   letter-spacing: normal !important;
-  line-height: 1.65;
+  line-height: 1.38;
 }
 
 /* ── Atmosphere & Glow ──────────────────────────────────────────────── */
@@ -142,22 +142,17 @@ html[dir='rtl'] .hub-body {
 
 /* ── Visual Stage & Brackets ─────────────────────────────────────────── */
 .hub-radar-stage {
-  container-type: size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hub-radar-display {
   opacity: 0.96;
-  width: clamp(180px, 54vmin, 240px);
-  height: clamp(180px, 54vmin, 240px);
+  width: clamp(170px, min(54vw, 28vh), 216px);
+  height: clamp(170px, min(54vw, 28vh), 216px);
   aspect-ratio: 1 / 1;
-}
-
-@supports (height: 1cqh) {
-  .hub-radar-display {
-    width: clamp(180px, min(65vw, 92cqh), 240px);
-    height: clamp(180px, min(65vw, 92cqh), 240px);
-    flex-shrink: 1;
-  }
+  flex-shrink: 0;
 }
 
 .hub-radar-ticks {
@@ -691,8 +686,8 @@ html[dir='rtl'] .hub-feature-subline {
   }
 
   .hub-radar-display {
-    width: min(65vw, 175px, 88cqh);
-    height: min(65vw, 175px, 88cqh);
+    width: clamp(140px, min(50vw, 25vh), 165px);
+    height: clamp(140px, min(50vw, 25vh), 165px);
   }
 
   .hub-title {
@@ -706,7 +701,7 @@ html[dir='rtl'] .hub-feature-subline {
   .hub-body {
     font-size: 11.5px;
     line-height: 1.25;
-    max-width: 250px;
+    max-width: 320px;
     margin-top: 3px;
   }
 

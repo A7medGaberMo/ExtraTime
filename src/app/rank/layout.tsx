@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import '@/styles/game-hub.css';
 
 export const metadata: Metadata = {
   title: 'Rank Challenge - Football Trivia & Hierarchy Duel',
