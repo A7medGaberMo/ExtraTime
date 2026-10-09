@@ -36,6 +36,10 @@ function subscribeLang(callback: () => void) {
 function getLangSnapshot(): Language {
   if (typeof window === 'undefined') return 'en';
   try {
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get('lang');
+    if (urlLang === 'en' || urlLang === 'ar') return urlLang;
+
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === 'en' || stored === 'ar') return stored;
     if (navigator.language?.startsWith('ar')) return 'ar';

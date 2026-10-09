@@ -21,7 +21,7 @@ export function GameHubShell({
     <div
       data-game={gameId}
       className={cn(
-        'hub-page relative flex h-full min-h-0 w-full flex-col items-center justify-between overflow-hidden bg-[#07090F] select-none',
+        'hub-page relative flex h-full max-h-[100dvh] w-full flex-col items-center overflow-hidden bg-[#07090F] select-none',
         className,
       )}
     >
@@ -54,15 +54,14 @@ export function GameHubShell({
 
       {ariaTitle && <h1 className="sr-only">{ariaTitle}</h1>}
 
-      {/* ── Main Layout: Perfectly Balanced Zero-Scroll Container ── */}
+      {/* ── Main Layout: Perfectly Balanced Zero-Scroll Vertical Stack (Step 1) ── */}
       <div
-        className="hub-container-inner relative z-10 mx-auto flex h-full min-h-0 w-full max-w-[460px] sm:max-w-[500px] flex-1 flex-col px-3.5 sm:px-6"
+        className="hub-container-inner relative z-10 mx-auto flex h-full max-h-[100dvh] w-full max-w-[460px] sm:max-w-[480px] flex-col items-center px-4"
         style={{
-          paddingTop: 'calc(max(env(safe-area-inset-top, 0px), 0.5rem) + 3.25rem + 12px)',
-          paddingBottom: 'calc(max(env(safe-area-inset-bottom, 0px), 12px))',
+          paddingTop: 'calc(var(--hub-header-bottom) + var(--hub-gap-header-eyebrow))',
         }}
       >
-        <div className="flex min-h-0 w-full flex-1 flex-col justify-between">
+        <div className="flex h-full min-h-0 w-full flex-1 flex-col items-center">
           {children}
         </div>
       </div>

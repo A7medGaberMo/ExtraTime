@@ -19,7 +19,7 @@ import {
   SecondaryActionButton,
   RulesStrip,
   RankChartVisual,
-  RankSoloButton,
+  HubSoloButton,
   RankSetupSheet,
   type RankSetupMode,
 } from '@/components/hub';
@@ -131,20 +131,18 @@ export default function RankHubPage() {
       ariaTitle={`ExtraTime Rank - ${t('rankHub.badge')}`}
     >
       {/* ── Top Hero Cluster: Eyebrow + Title + Subtitle ── */}
-      <div className="flex w-full shrink-0 flex-col items-center pt-0.5 text-center">
-        <HubEyebrow text={t('rankHub.badge')} />
-        <HubTitle
-          title={t('rankHub.title')}
-          subtitle={t('rankHub.description')}
-        />
-      </div>
+      <HubEyebrow text={t('rankHub.badge')} />
+      <HubTitle
+        title={t('rankHub.title')}
+        subtitle={t('rankHub.description')}
+      />
 
-      {/* ── Centerpiece: Living Ranking Scope Centerpiece (Same 240x240 frame as Snipe & Draft) ── */}
-      <HubVisual>
+      {/* ── Centerpiece: Living Ranking Scope with 2px outer timer arc ── */}
+      <HubVisual showTimerArc>
         <RankChartVisual />
       </HubVisual>
 
-      {/* ── Live Queue Pill: Aligned after visual in both LTR & RTL ── */}
+      {/* ── Live Queue Pill: Exactly 8px gap below visual frame ── */}
       <QueuePill
         loading={!queueReady}
         waitingCount={waitingCount}
@@ -154,72 +152,80 @@ export default function RankHubPage() {
         liveSuffix={t('rankHub.liveSuffix')}
       />
 
-      {/* ── Bottom Section: 4 Action Buttons (2 & 2) + Feature Strip ── */}
-      <div className="hub-zone-actions mt-3 sm:mt-5 flex w-full shrink-0 flex-col gap-2 sm:gap-2.5">
-        {/* Row 1 ("Play Now"): 60% Public Match + 40% Solo */}
-        <div className="hub-actions-row-1 flex w-full items-stretch gap-2.5 sm:gap-3 h-[60px] sm:h-[68px]">
-          <PrimaryActionButton
-            id="rank-public-match-btn"
-            title={t('rankHub.publicMatch')}
-            subtitle={t('rankHub.publicMatchSub')}
-            onClick={() => handleOpenSheet('quick')}
-            disabled={loading}
-            containerClassName="basis-[60%] flex-[3_3_0%] min-w-0 h-full"
-            className="h-full sm:h-full rounded-[22px] sm:rounded-[24px] px-3 sm:px-4"
-          />
+      {/* ── Row 1: Public Match (flex-1) + Solo Tile (fixed 76px) (Fixed 68px) ── */}
+      <div
+        data-hub-row-1
+        className="flex w-full shrink-0 items-center gap-2.5 sm:gap-3"
+        style={{
+          height: 'var(--hub-row1-height)',
+          marginBottom: 'var(--hub-gap-row1-row2)',
+        }}
+      >
+        <PrimaryActionButton
+          id="rank-public-match-btn"
+          title={t('rankHub.publicMatch')}
+          subtitle={t('rankHub.publicMatchSub')}
+          onClick={() => handleOpenSheet('quick')}
+          disabled={loading}
+          containerClassName="flex-1 min-w-0 h-full"
+        />
 
-          <RankSoloButton
-            id="rank-solo-btn"
-            title={t('rankHub.playSolo')}
-            subtitle={t('rankHub.playSoloSub')}
-            onClick={() => handleOpenSheet('solo')}
-            disabled={loading}
-            className="basis-[40%] flex-[2_2_0%] min-w-0 h-full rounded-[22px] sm:rounded-[24px]"
-          />
-        </div>
-
-        {/* Row 2 ("With Friends"): Private Room + Join with Code (2 equal columns) */}
-        <div className="hub-actions-row-2 grid w-full grid-cols-2 gap-2.5 sm:gap-3">
-          {/* Card 1: Private Room / غرفة خاصة */}
-          <SecondaryActionButton
-            id="rank-private-room-btn"
-            label={t('rankHub.privateRoom')}
-            icon={Users}
-            onClick={() => handleOpenSheet('duel_create')}
-            disabled={loading}
-          />
-
-          {/* Card 2: Join with Code / انضم بكود */}
-          <SecondaryActionButton
-            id="rank-join-code-btn"
-            label={t('rankHub.joinWithCode')}
-            icon={Vault}
-            onClick={() => handleOpenSheet('join')}
-            disabled={loading}
-          />
-        </div>
-
-        {/* Rules Strip (3 Columns): Sort cards, Beat the clock, Distance scoring */}
-        <RulesStrip
-          items={[
-            {
-              icon: ArrowsDownUp,
-              title: t('rankHub.features.rankCards'),
-              subtitle: t('rankHub.features.rankCardsSub'),
-            },
-            {
-              icon: Timer,
-              title: t('rankHub.features.beatClock'),
-              subtitle: t('rankHub.features.beatClockSub'),
-            },
-            {
-              icon: Target,
-              title: t('rankHub.features.distanceScore'),
-              subtitle: t('rankHub.features.distanceScoreSub'),
-            },
-          ]}
+        <HubSoloButton
+          id="rank-solo-btn"
+          title={t('rankHub.playSolo')}
+          onClick={() => handleOpenSheet('solo')}
+          disabled={loading}
         />
       </div>
+
+      {/* ── Row 2: Secondary Cards (Fixed 72px) ── */}
+      <div
+        data-hub-row-2
+        className="grid w-full shrink-0 grid-cols-2 gap-2.5 sm:gap-3"
+        style={{
+          height: 'var(--hub-row2-height)',
+        }}
+      >
+        <SecondaryActionButton
+          id="rank-private-room-btn"
+          label={t('rankHub.privateRoom')}
+          icon={Users}
+          onClick={() => handleOpenSheet('duel_create')}
+          disabled={loading}
+        />
+
+        <SecondaryActionButton
+          id="rank-join-code-btn"
+          label={t('rankHub.joinWithCode')}
+          icon={Vault}
+          onClick={() => handleOpenSheet('join')}
+          disabled={loading}
+        />
+      </div>
+
+      {/* ── Flexible Space: The ONLY flexible gap on the page ── */}
+      <div className="flex-1 min-h-[8px] w-full" aria-hidden="true" />
+
+      {/* ── Rules Strip: Pinned to bottom with safe-area padding ── */}
+      <RulesStrip
+        items={[
+          {
+            icon: ArrowsDownUp,
+            title: t('rankHub.features.rankCards'),
+            subtitle: t('rankHub.features.rankCardsSub'),
+          },
+          {
+            icon: Timer,
+            title: t('rankHub.features.beatClock'),
+            subtitle: t('rankHub.features.beatClockSub'),
+          },
+          {
+            icon: Target,
+            title: t('rankHub.features.distanceScore'),
+            subtitle: t('rankHub.features.distanceScoreSub'),
+          },
+        ]}
+      />
 
       {/* ── Setup Bottom Sheet (Holds mode config, rounds, rules, and PIN) ── */}
       <RankSetupSheet

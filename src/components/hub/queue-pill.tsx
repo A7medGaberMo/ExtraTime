@@ -33,11 +33,15 @@ export function QueuePill({
 
   return (
     <div
+      data-hub-queue-pill
       className={cn(
-        'hub-live-pill mt-3.5 sm:mt-4 inline-flex min-h-9 shrink-0 items-center justify-center gap-1.5 self-center rounded-full border border-white/10 bg-white/[0.035] px-3.5 py-1 text-center text-xs font-medium text-[#D7DAE1] shadow-sm sm:text-[13px]',
+        'hub-live-pill inline-flex shrink-0 items-center justify-center gap-1.5 rounded-full border border-white/10 bg-white/[0.035] px-3.5 text-center font-medium text-[#D7DAE1] shadow-sm',
         className,
       )}
       style={{
+        height: 'var(--hub-pill-height)',
+        width: 'var(--hub-pill-width)',
+        marginBottom: 'var(--hub-gap-pill-row1)',
         borderColor: 'color-mix(in srgb, var(--hub-accent) 22%, rgba(255, 255, 255, 0.08))',
         boxShadow: '0 0 20px color-mix(in srgb, var(--hub-accent) 8%, transparent)',
       }}
@@ -53,7 +57,7 @@ export function QueuePill({
             className="shrink-0 animate-spin"
             style={{ color: 'var(--hub-accent)' }}
           />
-          <span className="text-[#9AA0AE]">{loadingText}</span>
+          <span className="text-[#9AA0AE] truncate">{loadingText}</span>
         </>
       ) : waitingCount === 0 ? (
         <>
@@ -65,7 +69,7 @@ export function QueuePill({
             }}
             aria-hidden="true"
           />
-          <span className="font-semibold text-[#F5F5F7]">{emptyText}</span>
+          <span className="font-semibold text-[#F5F5F7] truncate">{emptyText}</span>
         </>
       ) : (
         <>
@@ -82,18 +86,18 @@ export function QueuePill({
               }}
             />
           </span>
-          <span className="font-semibold text-[#F5F5F7]">{liveLabel}</span>
-          <span className="text-white/25" aria-hidden="true">
+          <span className="font-semibold text-[#F5F5F7] shrink-0">{liveLabel}</span>
+          <span className="text-white/25 shrink-0" aria-hidden="true">
             ·
           </span>
           <bdi
-            className="font-semibold tabular-nums"
+            className="font-semibold tabular-nums shrink-0"
             style={{ color: 'var(--hub-accent-light)' }}
             dir="ltr"
           >
             {formattedCount}
           </bdi>
-          <span>{liveSuffix}</span>
+          <span className="truncate">{liveSuffix}</span>
         </>
       )}
     </div>

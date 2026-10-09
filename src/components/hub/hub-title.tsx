@@ -14,23 +14,37 @@ export function HubTitle({ title, subtitle, className }: HubTitleProps) {
   const { lang } = useI18n();
 
   return (
-    <div className={cn('hub-zone-hero flex w-full shrink-0 flex-col items-center pt-0.5 text-center', className)}>
-      {/* Main Game Title */}
-      <div className="hub-stagger-2 flex items-center justify-center">
-        <h2 className="hub-title hub-title-sheen mt-1.5 leading-none drop-shadow-lg">
+    <>
+      {/* ── Main Game Title (Fixed Height, One Line) ── */}
+      <div
+        data-hub-title
+        className={cn('flex w-full shrink-0 items-center justify-center text-center', className)}
+        style={{
+          height: 'var(--hub-title-height)',
+          marginBottom: 'var(--hub-gap-title-subtitle)',
+        }}
+      >
+        <h2 className="hub-title hub-title-sheen leading-none drop-shadow-lg">
           {title}
         </h2>
       </div>
 
-      {/* Subtitle */}
-      <div className="hub-stagger-3 mt-2 sm:mt-2.5 w-full max-w-[360px] sm:max-w-[420px] h-[38px] sm:h-[42px] flex items-center justify-center">
+      {/* ── Subtitle (Fixed Height, Exactly 2 Lines Reserved) ── */}
+      <div
+        data-hub-subtitle
+        className="flex w-full max-w-[360px] sm:max-w-[420px] shrink-0 items-center justify-center text-center mx-auto"
+        style={{
+          height: 'var(--hub-subtitle-height)',
+          marginBottom: 'var(--hub-gap-subtitle-visual)',
+        }}
+      >
         <p
-          className="hub-body text-[13px] sm:text-[14px] leading-[1.38] font-normal text-balance whitespace-pre-line text-[#C5CAD6]"
+          className="hub-body leading-[1.4] font-normal text-balance whitespace-pre-line text-[#C5CAD6] line-clamp-2"
           dir={lang === 'ar' ? 'rtl' : 'ltr'}
         >
           {subtitle}
         </p>
       </div>
-    </div>
+    </>
   );
 }

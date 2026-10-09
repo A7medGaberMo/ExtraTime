@@ -32,7 +32,7 @@ export function SecondaryActionButton({
   };
 
   const sharedClassName = cn(
-    'hub-action-card btn-haptic group relative flex h-16 items-center justify-center gap-2.5 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.03] px-3 text-center sm:h-[68px]',
+    'hub-action-card btn-haptic group relative flex h-full w-full items-center justify-center gap-2.5 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.03] px-3 text-center',
     disabled && 'pointer-events-none opacity-50',
     className,
   );

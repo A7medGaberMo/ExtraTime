@@ -5,8 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useMutation, useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { useToast } from '@/components/shared/toast';
-import { Users, Key, Trophy, Flame, TrendUp, Vault, Timer } from '@phosphor-icons/react';
-import { AppIcon } from '@/components/ui/app-icon';
+import { Users, Key, TrendUp, Vault, Timer } from '@phosphor-icons/react';
 import {
   GameHubShell,
   HubEyebrow,
@@ -29,7 +28,7 @@ export default function BankHubPage() {
   const { toast } = useToast();
   const { t } = useI18n();
 
-  const { guestId, ensureGuestId } = useGuestSession();
+  const { ensureGuestId } = useGuestSession();
   const [nickname] = useGuestNickname();
 
   const createSolo = useMutation(api.bank.mutations.createSoloGame);
@@ -37,18 +36,11 @@ export default function BankHubPage() {
   const findPublicMatch = useMutation(api.bank.mutations.findOrCreatePublicMatch);
 
   const queueStats = useQuery(api.bank.queries.getPublicQueueSummary);
-  const personalBest = useQuery(
-    api.bank.queries.getPersonalBest,
-    guestId ? { guestId } : 'skip',
-  );
 
   const [loadingAction, setLoadingAction] = useState<'public' | 'solo' | 'duel' | null>(null);
 
   const waitingCount = queueStats?.waitingCount ?? 0;
   const queueReady = queueStats !== undefined;
-
-  const hasStats =
-    personalBest && (personalBest.personalBestScore > 0 || personalBest.highestStreak > 0);
 
   // Helper to ensure guest id silently without modal/name UI
   const getEnsuredIdentity = async () => {
@@ -112,20 +104,18 @@ export default function BankHubPage() {
       ariaTitle={`ExtraTime Bank - ${t('bankHub.badge')}`}
     >
       {/* ── Top Hero Cluster: Eyebrow + Confident Title + Subtitle ── */}
-      <div className="flex w-full shrink-0 flex-col items-center pt-0.5 text-center">
-        <HubEyebrow text={t('bankHub.badge')} />
-        <HubTitle
-          title={t('bankHub.title')}
-          subtitle={t('bankHub.description')}
-        />
-      </div>
+      <HubEyebrow text={t('bankHub.badge')} />
+      <HubTitle
+        title={t('bankHub.title')}
+        subtitle={t('bankHub.description')}
+      />
 
-      {/* ── Centerpiece: Living Bank Vault Scope Centerpiece (240x240 frame) ── */}
+      {/* ── Centerpiece: Living Bank Vault Scope Centerpiece ── */}
       <HubVisual>
         <BankVaultVisual />
       </HubVisual>
 
-      {/* ── Live Queue Pill: Aligned after visual in both LTR & RTL ── */}
+      {/* ── Live Queue Pill: Exactly 8px gap below visual frame ── */}
       <QueuePill
         loading={!queueReady}
         waitingCount={waitingCount}
@@ -135,100 +125,83 @@ export default function BankHubPage() {
         liveSuffix={t('bankHub.liveSuffix')}
       />
 
-      {/* ── Bottom Section: 4 Action Buttons (2 & 2) + Optional Stats + Rules Strip ── */}
-      <div className="hub-zone-actions mt-3 sm:mt-5 flex w-full shrink-0 flex-col gap-2 sm:gap-2.5">
-        {/* Row 1 ("Play Now"): 60% Public Match + 40% Solo (Like Rank) */}
-        <div className="hub-actions-row-1 flex w-full items-stretch gap-2.5 sm:gap-3 h-[60px] sm:h-[68px]">
-          <PrimaryActionButton
-            id="bank-public-match-btn"
-            title={t('bankHub.publicMatch')}
-            subtitle={t('bankHub.publicMatchSub')}
-            loadingTitle={t('bankHub.findingMatch')}
-            onClick={handleStartPublicMatch}
-            loading={loadingAction === 'public'}
-            disabled={loadingAction !== null}
-            containerClassName="basis-[60%] flex-[3_3_0%] min-w-0 h-full"
-            className="h-full sm:h-full rounded-[22px] sm:rounded-[24px] px-3 sm:px-4"
-          />
+      {/* ── Row 1: Public Match (flex-1) + Solo Tile (fixed 76px) (Fixed 68px) ── */}
+      <div
+        data-hub-row-1
+        className="flex w-full shrink-0 items-center gap-2.5 sm:gap-3"
+        style={{
+          height: 'var(--hub-row1-height)',
+          marginBottom: 'var(--hub-gap-row1-row2)',
+        }}
+      >
+        <PrimaryActionButton
+          id="bank-public-match-btn"
+          title={t('bankHub.publicMatch')}
+          subtitle={t('bankHub.publicMatchSub')}
+          loadingTitle={t('bankHub.findingMatch')}
+          onClick={handleStartPublicMatch}
+          loading={loadingAction === 'public'}
+          disabled={loadingAction !== null}
+          containerClassName="flex-1 min-w-0 h-full"
+        />
 
-          <HubSoloButton
-            id="bank-solo-btn"
-            title={t('bankHub.playSolo')}
-            subtitle={t('bankHub.playSoloSub')}
-            onClick={handleStartSolo}
-            loading={loadingAction === 'solo'}
-            disabled={loadingAction !== null}
-            className="basis-[40%] flex-[2_2_0%] min-w-0 h-full rounded-[22px] sm:rounded-[24px]"
-          />
-        </div>
-
-        {/* Row 2 ("With Friends"): Private Room + Join with Code (2 equal columns) */}
-        <div className="hub-actions-row-2 grid w-full grid-cols-2 gap-2.5 sm:gap-3">
-          {/* Card 1: Private Room / غرفة خاصة */}
-          <SecondaryActionButton
-            id="bank-private-room-btn"
-            label={t('bankHub.privateRoom')}
-            icon={Users}
-            onClick={handleCreatePrivate}
-            disabled={loadingAction !== null}
-          />
-
-          {/* Card 2: Join with Code / ادخل بالكود */}
-          <SecondaryActionButton
-            id="bank-join-code-link"
-            label={t('bankHub.joinWithCode')}
-            icon={Key}
-            href="/join-room"
-            disabled={loadingAction !== null}
-          />
-        </div>
-
-        {/* Optional Stats Line between Row 2 and RulesStrip (only viewport height >= 760px and score > 0) */}
-        {hasStats && (
-          <div className="hidden [@media(min-height:760px)]:flex items-center justify-center gap-3 py-0.5 text-[11px] sm:text-xs font-medium text-white/60">
-            {personalBest.personalBestScore > 0 && (
-              <span className="inline-flex items-center gap-1 font-semibold text-amber-400/90">
-                <AppIcon icon={Trophy} size={13} weight="fill" />
-                {t('bankHub.stats.bestScore', {
-                  score: personalBest.personalBestScore.toLocaleString(),
-                })}
-              </span>
-            )}
-            {personalBest.personalBestScore > 0 && personalBest.highestStreak > 0 && (
-              <span className="size-1 rounded-full bg-white/20" />
-            )}
-            {personalBest.highestStreak > 0 && (
-              <span className="inline-flex items-center gap-1 font-semibold text-[var(--hub-accent)]">
-                <AppIcon icon={Flame} size={13} weight="fill" />
-                {t('bankHub.stats.highestStreak', {
-                  streak: personalBest.highestStreak,
-                })}
-              </span>
-            )}
-          </div>
-        )}
-
-        {/* Rules Strip (3 Columns): Clean without sheet chip */}
-        <RulesStrip
-          items={[
-            {
-              icon: TrendUp,
-              title: t('bankHub.features.doubleOrNothing'),
-              subtitle: t('bankHub.features.doubleOrNothingSub'),
-            },
-            {
-              icon: Vault,
-              title: t('bankHub.features.bankIt'),
-              subtitle: t('bankHub.features.bankItSub'),
-            },
-            {
-              icon: Timer,
-              title: t('bankHub.features.risingPressure'),
-              subtitle: t('bankHub.features.risingPressureSub'),
-            },
-          ]}
+        <HubSoloButton
+          id="bank-solo-btn"
+          title={t('bankHub.solo')}
+          onClick={handleStartSolo}
+          loading={loadingAction === 'solo'}
+          disabled={loadingAction !== null}
         />
       </div>
+
+      {/* ── Row 2: Secondary Cards (Fixed 72px) ── */}
+      <div
+        data-hub-row-2
+        className="grid w-full shrink-0 grid-cols-2 gap-2.5 sm:gap-3"
+        style={{
+          height: 'var(--hub-row2-height)',
+        }}
+      >
+        <SecondaryActionButton
+          id="bank-private-room-btn"
+          label={t('bankHub.privateRoom')}
+          icon={Users}
+          onClick={handleCreatePrivate}
+          disabled={loadingAction !== null}
+        />
+
+        <SecondaryActionButton
+          id="bank-join-code-link"
+          label={t('bankHub.joinWithCode')}
+          icon={Key}
+          href="/join-room"
+          disabled={loadingAction !== null}
+        />
+      </div>
+
+      {/* ── Flexible Space: The ONLY flexible gap on the page ── */}
+      <div className="flex-1 min-h-[8px] w-full" aria-hidden="true" />
+
+      {/* ── Rules Strip: Pinned to bottom with safe-area padding ── */}
+      <RulesStrip
+        items={[
+          {
+            icon: TrendUp,
+            title: t('bankHub.features.doubleOrNothing'),
+            subtitle: t('bankHub.features.doubleOrNothingSub'),
+          },
+          {
+            icon: Vault,
+            title: t('bankHub.features.bankIt'),
+            subtitle: t('bankHub.features.bankItSub'),
+          },
+          {
+            icon: Timer,
+            title: t('bankHub.features.risingPressure'),
+            subtitle: t('bankHub.features.risingPressureSub'),
+          },
+        ]}
+      />
     </GameHubShell>
   );
 }

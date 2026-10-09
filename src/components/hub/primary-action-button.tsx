@@ -33,7 +33,7 @@ export function PrimaryActionButton({
   const isRtl = lang === 'ar';
 
   return (
-    <div className={cn('w-full', containerClassName)}>
+    <div className={cn('h-full w-full', containerClassName)}>
       <button
         type="button"
         id={id}
@@ -41,7 +41,7 @@ export function PrimaryActionButton({
         disabled={disabled || loading}
         aria-busy={loading}
         className={cn(
-          'hub-cta-btn group relative flex h-14 w-full items-center justify-between overflow-hidden rounded-2xl border px-4 sm:px-6 text-start focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-wait sm:h-[58px]',
+          'hub-cta-btn group relative flex h-full w-full items-center justify-between overflow-hidden rounded-2xl border px-4 sm:px-6 text-start focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-wait',
           className,
         )}
         style={{
@@ -67,17 +67,17 @@ export function PrimaryActionButton({
                 weight="bold"
                 className="animate-spin text-[#07090F]"
               />
-              <span className="hub-cta-text text-[15px] leading-tight sm:text-base">
+              <span className="hub-cta-text leading-tight">
                 {loadingTitle || title}
               </span>
             </div>
           ) : (
             <>
-              <span className="flex min-w-0 flex-col items-start gap-0.5">
-                <span className="hub-cta-text text-[15px] leading-tight sm:text-base">
+              <span className="flex min-w-0 flex-col items-start gap-0.5 pe-2">
+                <span className="hub-cta-text leading-tight">
                   {title}
                 </span>
-                <span className="hub-cta-sub text-[11px] leading-tight font-semibold text-[#07090F]/65 sm:text-xs">
+                <span className="hub-cta-sub leading-tight font-semibold text-[#07090F]/70">
                   {subtitle}
                 </span>
               </span>

@@ -13,7 +13,7 @@ export interface HubSoloButtonProps {
   loading?: boolean;
   className?: string;
   title?: string;
-  subtitle?: string;
+  subtitle?: string; // Kept for interface compatibility but not rendered
 }
 
 export function HubSoloButton({
@@ -23,11 +23,9 @@ export function HubSoloButton({
   loading = false,
   className,
   title,
-  subtitle,
 }: HubSoloButtonProps) {
   const { t } = useI18n();
   const label = title || t('rankHub.playSolo');
-  const sub = subtitle || t('rankHub.playSoloSub');
   const isDisabled = disabled || loading;
 
   return (
@@ -36,9 +34,9 @@ export function HubSoloButton({
       type="button"
       onClick={onClick}
       disabled={isDisabled}
-      aria-label={`${label} - ${sub}`}
+      aria-label={label}
       className={cn(
-        'hub-solo-tile btn-haptic group relative flex h-full items-center justify-between overflow-hidden rounded-[22px] sm:rounded-[24px] border px-2.5 sm:px-4 text-start transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2',
+        'hub-solo-tile btn-haptic group relative flex h-full w-[76px] shrink-0 flex-col items-center justify-center gap-1.5 overflow-hidden rounded-2xl border transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2',
         isDisabled && 'pointer-events-none opacity-60',
         className,
       )}
@@ -51,19 +49,9 @@ export function HubSoloButton({
         WebkitBackdropFilter: 'blur(14px) saturate(130%)',
       }}
     >
-      {/* Title & Subtitle Cluster */}
-      <div className="relative z-10 flex min-w-0 flex-col items-start gap-0.5 pe-1">
-        <span className="hub-solo-title truncate text-[13px] sm:text-[14.5px] font-bold text-white leading-tight tracking-tight">
-          {label}
-        </span>
-        <span className="hub-solo-sub truncate text-[10px] sm:text-[11px] font-medium text-[#C5CAD6]/75 leading-tight">
-          {sub}
-        </span>
-      </div>
-
-      {/* Action Play Circle */}
+      {/* Action Play Circle: 30px circle */}
       <span
-        className="hub-solo-icon relative z-10 flex size-7 sm:size-8 shrink-0 items-center justify-center rounded-full transition-transform duration-200 group-hover:scale-110"
+        className="hub-solo-icon-circle relative z-10 flex size-[30px] shrink-0 items-center justify-center rounded-full transition-transform duration-200 group-hover:scale-110"
         style={{
           border: '1px solid color-mix(in srgb, var(--hub-accent) 40%, transparent)',
           backgroundColor: 'color-mix(in srgb, var(--hub-accent) 14%, transparent)',
@@ -73,13 +61,18 @@ export function HubSoloButton({
         {loading ? (
           <AppIcon
             icon={CircleNotch}
-            size={13}
+            size={14}
             className="animate-spin"
             style={{ color: 'var(--hub-accent)' }}
           />
         ) : (
-          <AppIcon icon={Play} size={13} weight="fill" className="ms-0.5" />
+          <AppIcon icon={Play} size={14} weight="fill" className="ms-0.5" />
         )}
+      </span>
+
+      {/* Label: 14px bold (no subtitle) */}
+      <span className="hub-solo-label relative z-10 text-[14px] font-bold text-white leading-tight">
+        {label}
       </span>
     </button>
   );
