@@ -256,13 +256,28 @@ export default function BankArenaPage() {
     }
   };
 
-  // Forfeit Match
+  // Detect match abandonment → notify and return directly to bank hub
+  useEffect(() => {
+    if (game?.status === 'abandoned') {
+      toast(isArabic ? 'تم إلغاء الماتش' : 'Match cancelled', 'info');
+      router.replace('/bank');
+    }
+  }, [game?.status, router, toast, isArabic]);
+
+  // Forfeit / Cancel Match
   const handleForfeit = async () => {
     if (!game || !guestId) return;
-    const confirmMsg = isArabic
-      ? 'هل أنت متأكد من الانسحاب من الماتش؟'
-      : 'Are you sure you want to forfeit this match?';
-    if (!window.confirm(confirmMsg)) return;
+    const isWaiting = game.status === 'waiting';
+    if (!isWaiting) {
+      const confirmMsg = isArabic
+        ? 'هل أنت متأكد من الانسحاب من الماتش؟'
+        : 'Are you sure you want to forfeit this match?';
+      if (!window.confirm(confirmMsg)) return;
+    }
+
+    // Direct cancel: immediate route to Bank Hub
+    router.replace('/bank');
+    toast(isArabic ? 'تم إلغاء الغرفة' : 'Lobby cancelled', 'info');
 
     try {
       await forfeitMatch({
@@ -270,11 +285,7 @@ export default function BankArenaPage() {
         guestId,
         sessionToken: sessionToken ?? undefined,
       });
-      router.push('/bank');
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Failed to forfeit';
-      toast({ title: 'Error', message: msg, type: 'error' });
-    }
+    } catch {}
   };
 
   // Sudden Death answer handler

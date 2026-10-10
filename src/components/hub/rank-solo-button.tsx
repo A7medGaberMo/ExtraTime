@@ -25,7 +25,7 @@ export function HubSoloButton({
   title,
 }: HubSoloButtonProps) {
   const { t } = useI18n();
-  const label = title || t('rankHub.playSolo');
+  const label = title || t('rankHub.solo') || t('rankHub.playSolo');
   const isDisabled = disabled || loading;
 
   return (

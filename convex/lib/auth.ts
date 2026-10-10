@@ -1,4 +1,5 @@
 import { GenericMutationCtx } from 'convex/server';
+import { ConvexError } from 'convex/values';
 import { DataModel, Id } from '../_generated/dataModel';
 
 /**
@@ -23,13 +24,13 @@ export async function verifyGuestSession(
 ): Promise<boolean> {
   const guest = await ctx.db.get(guestId);
   if (!guest) {
-    throw new Error('Unauthorized: Guest user not found');
+    throw new ConvexError('Unauthorized: Guest user not found');
   }
 
   // If a session token exists on the user record, enforce strict equality
   if (guest.sessionToken) {
     if (!sessionToken || sessionToken !== guest.sessionToken) {
-      throw new Error('Unauthorized: Invalid or missing session token');
+      throw new ConvexError('Unauthorized: Invalid or missing session token');
     }
   }
 

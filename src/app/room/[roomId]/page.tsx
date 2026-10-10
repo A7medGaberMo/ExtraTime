@@ -48,8 +48,8 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
 
   useEffect(() => {
     if (room?.status === 'abandoned') {
-      toast(lang === 'ar' ? 'تم إلغاء الغرفة من قبل أحد المدربين' : 'Room was cancelled by manager', 'info');
-      router.replace('/');
+      toast(lang === 'ar' ? 'تم إلغاء الغرفة' : 'Room cancelled', 'info');
+      router.replace('/snipe');
     }
   }, [room?.status, router, toast, lang]);
 
@@ -62,6 +62,9 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
   const handleLeaveOrCancel = async () => {
     if (isLeaving) return;
     setIsLeaving(true);
+    // Direct cancel and route to Snipe
+    router.replace('/snipe');
+    toast(lang === 'ar' ? 'تم إلغاء الغرفة' : 'Room cancelled', 'info');
     try {
       if (guestId && roomId) {
         await abandonMatch({
@@ -82,8 +85,6 @@ export default function RoomLobbyPage({ params }: { params: Promise<{ roomId: st
         } catch {}
       }
     }
-    toast(lang === 'ar' ? 'تم إلغاء الغرفة والمغادرة' : 'Room cancelled and exited', 'info');
-    router.replace('/');
   };
 
   const copyCode = () => {

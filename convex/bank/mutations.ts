@@ -1,5 +1,5 @@
 import { mutation, internalMutation } from '../_generated/server';
-import { v } from 'convex/values';
+import { v, ConvexError } from 'convex/values';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
 import { GenericMutationCtx } from 'convex/server';
 import { internal } from '../_generated/api';
@@ -32,7 +32,7 @@ async function generateUniqueBankRoomCode(ctx: GenericMutationCtx<DataModel>): P
       .first();
     if (!existing) return code;
   }
-  throw new Error('Could not generate a unique bank room code');
+  throw new ConvexError('Could not generate a unique bank room code');
 }
 
 async function pickGoldenQuestions(ctx: GenericMutationCtx<DataModel>): Promise<Id<'bankQuestions'>[]> {
@@ -58,7 +58,7 @@ async function pickGoldenQuestions(ctx: GenericMutationCtx<DataModel>): Promise<
     .take(10);
 
   if (fallback.length === 0) {
-    throw new Error('No active bank questions available');
+    throw new ConvexError('No active bank questions available');
   }
   if (fallback.length === 1) {
     return [fallback[0]._id, fallback[0]._id];
@@ -436,12 +436,12 @@ export const joinDuelPrivateRoom = mutation({
       .withIndex('by_code', (q) => q.eq('code', cleanCode))
       .first();
 
-    if (!game) throw new Error('Room not found. Please check the 6-character code.');
+    if (!game) throw new ConvexError('Room not found. Please check the 6-character code.');
     if (game.participants.some((p) => p.guestId === args.guestId)) {
       return { gameId: game._id }; // Seamless reconnect
     }
-    if (game.status !== 'waiting') throw new Error('This room is already in progress or completed.');
-    if (game.participants.length >= 2) throw new Error('This room is full.');
+    if (game.status !== 'waiting') throw new ConvexError('This room is already in progress or completed.');
+    if (game.participants.length >= 2) throw new ConvexError('This room is full.');
 
     const now = Date.now();
     const { runs } = await allocateStratifiedQuestions(ctx, [game.player1Id, args.guestId], true);
@@ -618,12 +618,12 @@ export const submitAnswer = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
-    if (game.status !== 'in_progress') throw new Error('Game is not active');
+    if (!game) throw new ConvexError('Game not found');
+    if (game.status !== 'in_progress') throw new ConvexError('Game is not active');
 
     const activeParticipant = game.participants[game.activeTurnPlayerIndex];
     if (activeParticipant.guestId !== args.guestId) {
-      throw new Error('Not your turn to answer');
+      throw new ConvexError('Not your turn to answer');
     }
 
     const now = Date.now();
@@ -635,7 +635,7 @@ export const submitAnswer = mutation({
 
     const currentQuestionId = game.turnQuestionIds[game.currentQuestionIndex];
     const question = await ctx.db.get(currentQuestionId);
-    if (!question) throw new Error('Question not found');
+    if (!question) throw new ConvexError('Question not found');
 
     const isCorrect = args.optionId.toLowerCase() === question.correctId.toLowerCase();
     const is12thQuestion = game.currentQuestionIndex === 11;
@@ -763,12 +763,12 @@ export const bankPoints = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
-    if (game.status !== 'in_progress') throw new Error('Game is not active');
+    if (!game) throw new ConvexError('Game not found');
+    if (game.status !== 'in_progress') throw new ConvexError('Game is not active');
 
     const activeParticipant = game.participants[game.activeTurnPlayerIndex];
     if (activeParticipant.guestId !== args.guestId) {
-      throw new Error('Not your turn to bank');
+      throw new ConvexError('Not your turn to bank');
     }
 
     const now = Date.now();
@@ -833,12 +833,12 @@ export const passQuestion = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
-    if (game.status !== 'in_progress') throw new Error('Game is not active');
+    if (!game) throw new ConvexError('Game not found');
+    if (game.status !== 'in_progress') throw new ConvexError('Game is not active');
 
     const activeParticipant = game.participants[game.activeTurnPlayerIndex];
     if (activeParticipant.guestId !== args.guestId) {
-      throw new Error('Not your turn to pass');
+      throw new ConvexError('Not your turn to pass');
     }
 
     const now = Date.now();
@@ -927,23 +927,23 @@ export const claimOpponentAbandon = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
     if (game.status === 'completed' || game.status === 'abandoned') {
       return { alreadyResolved: true };
     }
 
     const callerIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
-    if (callerIndex === -1) throw new Error('Not a participant in this game');
+    if (callerIndex === -1) throw new ConvexError('Not a participant in this game');
 
     const opponentIndex = callerIndex === 0 ? 1 : 0;
     const opponent = game.participants[opponentIndex];
-    if (!opponent) throw new Error('No opponent found');
+    if (!opponent) throw new ConvexError('No opponent found');
 
     const now = Date.now();
     const isInactive = now - opponent.lastPingAt > 90_000;
 
     if (!isInactive) {
-      throw new Error('Opponent is still connected or has not reached the 90-second abandonment threshold');
+      throw new ConvexError('Opponent is still connected or has not reached the 90-second abandonment threshold');
     }
 
     await ctx.db.patch(game._id, {
@@ -969,7 +969,7 @@ export const forfeitMatch = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const now = Date.now();
     if (game.status === 'waiting') {
@@ -1073,9 +1073,9 @@ export const submitSuddenDeathAnswer = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
     if (game.status !== 'sudden_death' || !game.suddenDeathState) {
-      throw new Error('Match is not in sudden death');
+      throw new ConvexError('Match is not in sudden death');
     }
 
     const now = Date.now();
@@ -1084,14 +1084,14 @@ export const submitSuddenDeathAnswer = mutation({
     const expectedGuestId = game.participants[game.activeTurnPlayerIndex]?.guestId;
 
     if (args.guestId !== expectedGuestId) {
-      throw new Error('Not your turn in sudden death');
+      throw new ConvexError('Not your turn in sudden death');
     }
 
     // Boundary check for 15s golden question
     const isExpired = game.suddenDeathDeadline && now > game.suddenDeathDeadline;
     const currentQId = isPlayer0 ? sd.questionIds[0] : sd.questionIds[1] ?? sd.questionIds[0];
     const rawQuestion = await ctx.db.get(currentQId);
-    if (!rawQuestion) throw new Error('Question not found');
+    if (!rawQuestion) throw new ConvexError('Question not found');
 
     const isCorrect =
       !isExpired && args.optionId.toLowerCase() === rawQuestion.correctId.toLowerCase();
@@ -1414,7 +1414,7 @@ export const requestBankRematch = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const now = Date.now();
 
@@ -1594,19 +1594,19 @@ export const acceptBankRematch = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const rematchGameId = (game as Record<string, unknown>).rematchGameId as Id<'bankGames'> | undefined;
-    if (!rematchGameId) throw new Error('No rematch invitation found');
+    if (!rematchGameId) throw new ConvexError('No rematch invitation found');
 
     const rematchGame = await ctx.db.get(rematchGameId);
-    if (!rematchGame) throw new Error('Rematch room not found');
+    if (!rematchGame) throw new ConvexError('Rematch room not found');
 
     if (rematchGame.status === 'in_progress') {
       return { gameId: rematchGame._id };
     }
     if (rematchGame.status !== 'waiting') {
-      throw new Error('Rematch invitation is no longer active');
+      throw new ConvexError('Rematch invitation is no longer active');
     }
 
     const now = Date.now();

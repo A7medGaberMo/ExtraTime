@@ -16,6 +16,8 @@ import {
   ShieldCheck,
   Users,
   Trophy,
+  Lock,
+  Globe,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import {
@@ -30,6 +32,7 @@ import {
   PrimaryActionButton,
   SecondaryActionButton,
   RulesStrip,
+  type RulesStripItem,
 } from '@/components/hub';
 import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
@@ -38,7 +41,7 @@ import { sfx } from '@/lib/sfx';
 import { type GameId } from '@/config/games';
 
 type MatchSize = 11 | 5;
-type PoolMode = 'ACTIVE' | 'GLOBAL';
+type PoolMode = 'ACTIVE' | 'GLOBAL' | 'EPL' | 'EGYPT' | 'ICONS';
 
 const TABS: Array<{
   id: GameId;
@@ -51,6 +54,16 @@ const TABS: Array<{
   { id: 'rank', nameEn: 'Rank', nameAr: 'رتّب', icon: Ranking },
   { id: 'bank', nameEn: 'Bank', nameAr: 'بَنِّك', icon: Vault },
 ];
+
+const SNIPE_POOLS: Array<{ id: PoolMode; labelEn: string; labelAr: string }> = [
+  { id: 'ACTIVE', labelEn: 'Stars', labelAr: 'نجوم' },
+  { id: 'GLOBAL', labelEn: 'Global', labelAr: 'شامل' },
+  { id: 'EPL', labelEn: 'EPL', labelAr: 'إنجليزي' },
+  { id: 'EGYPT', labelEn: 'Egypt', labelAr: 'مصري' },
+  { id: 'ICONS', labelEn: 'Icons', labelAr: 'أساطير' },
+];
+
+const SNIPE_BUDGETS = [100, 150, 200];
 
 function CreateRoomContent() {
   const router = useRouter();
@@ -92,8 +105,8 @@ function CreateRoomContent() {
   // ── Snipe Options ──
   const [matchSize, setMatchSize] = useState<MatchSize>(11);
   const [startingBudget, setStartingBudget] = useState<number>(100);
-  const [poolMode] = useState<PoolMode>('ACTIVE');
-  const [isPublic] = useState<boolean>(false);
+  const [poolMode, setPoolMode] = useState<PoolMode>('ACTIVE');
+  const [isPublic, setIsPublic] = useState<boolean>(false);
 
   // ── Rank Options ──
   const [roundCount, setRoundCount] = useState<3 | 5>(3);
@@ -171,24 +184,24 @@ function CreateRoomContent() {
       }
     } catch (err: unknown) {
       const e = err as { message?: string };
-      sfx.wrong();
+      sfx.wipeout();
       toast(e.message || 'Could not launch match', 'error');
       setLoading(false);
     }
   }
 
-  // Titles & Subtitles per game
+  // Pure 1-line Titles (matching hubs)
   const titles = {
-    snipe: isRtl ? 'مزاد سنايب' : 'Snipe Auction',
-    draft: isRtl ? 'ديربي درافت' : 'Pro Draft',
-    rank: isRtl ? 'تحدي رتّب' : 'Rank Duel',
-    bank: isRtl ? 'خزينة بَنِّك' : 'Bank Vault',
+    snipe: isRtl ? 'سنايب' : 'Snipe',
+    draft: isRtl ? 'درافت' : 'Draft',
+    rank: isRtl ? 'رتّب' : 'Rank',
+    bank: isRtl ? 'بَنِّك' : 'Bank',
   };
 
   const subtitles = {
     snipe: isRtl
-      ? 'حدد الميزانية ونظام التشكيلة وتحدَّ صديقك بكود سري.'
-      : 'Configure budget and squad format to challenge a rival.',
+      ? 'حدد الميزانية ونظام التشكيلة والفلتر وتحدَّ صديقك بكود سري.'
+      : 'Configure budget, squad format, and pool filter to duel.',
     draft: isRtl
       ? 'تنافس لايف 1 ضد 1 في اختيار تشكيلة بأعلى كيمياء وتناغم.'
       : 'Turn-by-turn squad drafting faceoff with tactical synergy.',
@@ -200,7 +213,7 @@ function CreateRoomContent() {
       : 'Push-your-luck sprint with 2X doubling ladder and banking.',
   };
 
-  const rulesMap = {
+  const rulesMap: Record<GameId, [RulesStripItem, RulesStripItem, RulesStripItem]> = {
     snipe: [
       {
         icon: Users,
@@ -209,12 +222,30 @@ function CreateRoomContent() {
       },
       {
         icon: ShieldCheck,
-        title: isRtl ? 'مظاريف سرية' : 'Sealed Bids',
-        subtitle: isRtl ? 'مزاد مغلق تكتيكي' : 'Tactical Blind Auction',
+        title: isRtl
+          ? poolMode === 'ACTIVE'
+            ? 'نجوم الدوريات'
+            : poolMode === 'GLOBAL'
+              ? 'شامل'
+              : poolMode === 'EPL'
+                ? 'الدوري الإنجليزي'
+                : poolMode === 'EGYPT'
+                  ? 'الدوري المصري'
+                  : 'الأساطير'
+          : poolMode === 'ACTIVE'
+            ? 'Active Stars'
+            : poolMode === 'GLOBAL'
+              ? 'Global Pool'
+              : poolMode === 'EPL'
+                ? 'Premier League'
+                : poolMode === 'EGYPT'
+                  ? 'Egyptian League'
+                  : 'All-Time Icons',
+        subtitle: isRtl ? 'مظاريف سرية' : 'Sealed Bids',
       },
       {
         icon: Trophy,
-        title: isRtl ? 'كود خاص 6 رموز' : 'Private PIN',
+        title: isPublic ? (isRtl ? 'ماتش عام' : 'Public Arena') : (isRtl ? 'كود خاص 6 رموز' : 'Private PIN'),
         subtitle: isRtl ? 'مبارزة 1 ضد 1' : '1v1 Direct Duel',
       },
     ],
@@ -274,10 +305,10 @@ function CreateRoomContent() {
   return (
     <GameHubShell
       gameId={selectedGame}
-      ariaTitle={`ExtraTime - ${isRtl ? 'إنشاء غرفة خاصة' : 'Create Private Room'}`}
+      ariaTitle={`ExtraTime - ${isRtl ? 'غرفة خاصة' : 'Private Room'}`}
     >
-      {/* ── Top Hero Cluster: Eyebrow + Confident Title + Subtitle ── */}
-      <HubEyebrow text={isRtl ? 'غرفة خاصة 1 ضد 1' : 'PRIVATE 1v1 ARENA'} />
+      {/* ── Top Hero Cluster: Eyebrow + Confident 1-Line Title + Subtitle ── */}
+      <HubEyebrow text={isRtl ? 'غرفة خاصة 1 ضد 1' : 'PRIVATE ROOM'} />
       <HubTitle
         title={titles[selectedGame]}
         subtitle={subtitles[selectedGame]}
@@ -334,72 +365,120 @@ function CreateRoomContent() {
         {selectedGame === 'bank' && <BankVaultVisual />}
       </HubVisual>
 
-      {/* ── Tactical Configuration Pill (Absorbs Queue Pill Slot, Fixed 44px) ── */}
+      {/* ── Tactical Configuration Controls (Absorbs Queue Pill Slot) ── */}
       <div
         data-hub-queue-pill
-        className="flex w-full shrink-0 items-center justify-center gap-1.5 sm:gap-2"
+        className="w-full shrink-0 flex flex-col justify-center"
         style={{
-          height: 'var(--hub-pill-height)',
           marginBottom: 'var(--hub-gap-pill-row1)',
         }}
       >
         {selectedGame === 'snipe' ? (
-          <div className="flex w-full items-center justify-center gap-2 max-w-[340px]">
-            {/* 11v11 vs 5v5 */}
-            <div className="flex items-center rounded-xl border border-white/10 bg-white/[0.03] p-1">
-              <button
-                type="button"
-                onClick={() => {
-                  sfx.tap();
-                  setMatchSize(11);
-                }}
-                className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${
-                  matchSize === 11
-                    ? 'bg-[var(--hub-accent)] text-black shadow-sm font-black'
-                    : 'text-[#9AA0AE] hover:text-white'
-                }`}
-              >
-                11v11
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  sfx.tap();
-                  setMatchSize(5);
-                }}
-                className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${
-                  matchSize === 5
-                    ? 'bg-[var(--hub-accent)] text-black shadow-sm font-black'
-                    : 'text-[#9AA0AE] hover:text-white'
-                }`}
-              >
-                5v5
-              </button>
-            </div>
-
-            {/* Budget Chips */}
-            <div className="flex items-center rounded-xl border border-white/10 bg-white/[0.03] p-1 font-mono">
-              {[100, 150].map((b) => (
+          <div className="flex flex-col gap-1.5 w-full">
+            {/* Format (11v11 / 5v5), Budget ($100M, $150M, $200M), and Privacy (Lock / Globe) */}
+            <div className="flex items-center justify-between gap-1.5 w-full">
+              {/* Match Size */}
+              <div className="flex items-center rounded-xl border border-white/10 bg-white/[0.03] p-0.5 shrink-0">
                 <button
-                  key={b}
                   type="button"
                   onClick={() => {
                     sfx.tap();
-                    setStartingBudget(b);
+                    setMatchSize(11);
                   }}
-                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
-                    startingBudget === b
-                      ? 'bg-[var(--hub-accent)] text-black shadow-sm font-black'
+                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    matchSize === 11
+                      ? 'bg-[var(--hub-accent)] text-black font-black shadow-sm'
                       : 'text-[#9AA0AE] hover:text-white'
                   }`}
                 >
-                  ${b}M
+                  11v11
                 </button>
-              ))}
+                <button
+                  type="button"
+                  onClick={() => {
+                    sfx.tap();
+                    setMatchSize(5);
+                  }}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    matchSize === 5
+                      ? 'bg-[var(--hub-accent)] text-black font-black shadow-sm'
+                      : 'text-[#9AA0AE] hover:text-white'
+                  }`}
+                >
+                  5v5
+                </button>
+              </div>
+
+              {/* Budget: 100M, 150M, 200M */}
+              <div className="flex items-center rounded-xl border border-white/10 bg-white/[0.03] p-0.5 font-mono shrink-0">
+                {SNIPE_BUDGETS.map((b) => (
+                  <button
+                    key={b}
+                    type="button"
+                    onClick={() => {
+                      sfx.tap();
+                      setStartingBudget(b);
+                    }}
+                    className={`px-2 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                      startingBudget === b
+                        ? 'bg-[var(--hub-accent)] text-black font-black shadow-sm'
+                        : 'text-[#9AA0AE] hover:text-white'
+                    }`}
+                  >
+                    ${b}M
+                  </button>
+                ))}
+              </div>
+
+              {/* Clearance / Privacy */}
+              <div className="flex items-center rounded-xl border border-white/10 bg-white/[0.03] p-0.5 shrink-0">
+                <button
+                  type="button"
+                  onClick={() => {
+                    sfx.tap();
+                    setIsPublic(!isPublic);
+                  }}
+                  title={isPublic ? (isRtl ? 'ماتش عام' : 'Public Arena') : (isRtl ? 'كود خاص' : 'Private PIN')}
+                  className={`flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    !isPublic
+                      ? 'bg-white/10 text-white shadow-sm'
+                      : 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                  }`}
+                >
+                  <AppIcon icon={isPublic ? Globe : Lock} size={12} weight="bold" />
+                  <span className="text-[10px] font-mono">
+                    {isPublic ? (isRtl ? 'عام' : 'Public') : (isRtl ? 'خاص' : 'Private')}
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            {/* Snipe Player Pool Filters (5 Chips) */}
+            <div className="flex items-center justify-between gap-1 w-full" dir="ltr">
+              {SNIPE_POOLS.map((pool) => {
+                const isSelected = poolMode === pool.id;
+                return (
+                  <button
+                    key={pool.id}
+                    type="button"
+                    onClick={() => {
+                      sfx.tap();
+                      setPoolMode(pool.id);
+                    }}
+                    className={`flex-1 py-1 px-0.5 rounded-lg border text-center text-[10.5px] font-bold transition-all cursor-pointer truncate ${
+                      isSelected
+                        ? 'border-[var(--hub-accent)] bg-[color-mix(in_srgb,var(--hub-accent)_20%,transparent)] text-white shadow-[0_0_8px_var(--hub-accent-glow)]'
+                        : 'border-white/8 bg-white/[0.02] text-[#9AA0AE] hover:text-white hover:border-white/20'
+                    }`}
+                  >
+                    {isRtl ? pool.labelAr : pool.labelEn}
+                  </button>
+                );
+              })}
             </div>
           </div>
         ) : selectedGame === 'rank' ? (
-          <div className="flex w-full items-center justify-center gap-2 max-w-[320px]">
+          <div className="flex w-full items-center justify-center gap-2">
             <div className="flex items-center rounded-xl border border-white/10 bg-white/[0.03] p-1">
               <button
                 type="button"
@@ -407,13 +486,13 @@ function CreateRoomContent() {
                   sfx.tap();
                   setRoundCount(3);
                 }}
-                className={`px-3.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   roundCount === 3
-                    ? 'bg-[var(--hub-accent)] text-black shadow-sm font-black'
+                    ? 'bg-[var(--hub-accent)] text-black font-black shadow-sm'
                     : 'text-[#9AA0AE] hover:text-white'
                 }`}
               >
-                {isRtl ? '3 جولات' : '3 Rounds'}
+                {isRtl ? '3 جولات سريعة' : '3 Rapid Rounds'}
               </button>
               <button
                 type="button"
@@ -421,25 +500,29 @@ function CreateRoomContent() {
                   sfx.tap();
                   setRoundCount(5);
                 }}
-                className={`px-3.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   roundCount === 5
-                    ? 'bg-[var(--hub-accent)] text-black shadow-sm font-black'
+                    ? 'bg-[var(--hub-accent)] text-black font-black shadow-sm'
                     : 'text-[#9AA0AE] hover:text-white'
                 }`}
               >
-                {isRtl ? '5 جولات' : '5 Rounds'}
+                {isRtl ? '5 جولات (كامل)' : '5 Rounds (Full)'}
               </button>
             </div>
           </div>
         ) : selectedGame === 'draft' ? (
-          <div className="inline-flex items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--hub-accent)_25%,rgba(255,255,255,0.08))] bg-white/[0.03] px-4 py-1.5 text-xs font-bold text-white shadow-sm">
-            <AppIcon icon={Lightning} size={14} weight="fill" className="text-[var(--hub-accent)]" />
-            <span>{isRtl ? 'درافت 14 لاعب · تنافس تكتيكي 1 ضد 1' : '14 Turn Picks · 1v1 Tactical Derby'}</span>
+          <div className="flex w-full items-center justify-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--hub-accent)_25%,rgba(255,255,255,0.08))] bg-white/[0.03] px-4 py-1.5 text-xs font-bold text-white shadow-sm">
+              <AppIcon icon={Lightning} size={14} weight="fill" className="text-[var(--hub-accent)]" />
+              <span>{isRtl ? 'درافت 14 لاعب · تنافس تكتيكي 1 ضد 1' : '14 Turn Picks · 1v1 Tactical Derby'}</span>
+            </div>
           </div>
         ) : (
-          <div className="inline-flex items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--hub-accent)_25%,rgba(255,255,255,0.08))] bg-white/[0.03] px-4 py-1.5 text-xs font-bold text-white shadow-sm">
-            <AppIcon icon={Vault} size={14} weight="fill" className="text-[var(--hub-accent)]" />
-            <span>{isRtl ? '12 سؤالاً · سلّم المضاعفة 2X' : '12 Trivia Questions · 2X Multiplier'}</span>
+          <div className="flex w-full items-center justify-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--hub-accent)_25%,rgba(255,255,255,0.08))] bg-white/[0.03] px-4 py-1.5 text-xs font-bold text-white shadow-sm">
+              <AppIcon icon={Vault} size={14} weight="fill" className="text-[var(--hub-accent)]" />
+              <span>{isRtl ? '12 سؤالاً · سلّم المضاعفة 2X' : '12 Trivia Questions · 2X Multiplier'}</span>
+            </div>
           </div>
         )}
       </div>

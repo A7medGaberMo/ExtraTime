@@ -59,11 +59,11 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
     guestId && roomId ? { roomId: roomId as Id<'rooms'>, userId: guestId } : 'skip',
   );
 
-  // Detect match abandonment → notify and return to hub
+  // Detect match abandonment → notify and return directly to snipe hub
   useEffect(() => {
     if (state?.room?.status === 'abandoned') {
-      toast(lang === 'ar' ? 'تم إلغاء الماتش من قبل أحد المدربين' : 'Match was cancelled by manager', 'info');
-      router.replace('/');
+      toast(lang === 'ar' ? 'تم إلغاء الماتش' : 'Match cancelled', 'info');
+      router.replace('/snipe');
     }
   }, [state?.room?.status, router, toast, lang]);
 
@@ -93,26 +93,23 @@ export default function AuctionPage({ params }: { params: Promise<{ roomId: stri
 
   const handleExitOrCancel = useCallback(async () => {
     setShowExitModal(false);
+    // Direct cancel: instant route to Snipe hub without delay or waiting for next round
+    router.replace('/snipe');
+    toast(lang === 'ar' ? 'تم إلغاء الماتش' : 'Match cancelled', 'info');
     if (guestId && roomId) {
-      try {
-        await abandonMatch({
-          guestId,
+      abandonMatch({
+        guestId,
+        sessionToken: sessionToken ?? undefined,
+        matchType: 'snipe',
+        matchId: roomId,
+      }).catch(() => {
+        cancelRoom({
+          roomId: roomId as Id<'rooms'>,
+          hostId: guestId,
           sessionToken: sessionToken ?? undefined,
-          matchType: 'snipe',
-          matchId: roomId,
-        });
-      } catch {
-        try {
-          await cancelRoom({
-            roomId: roomId as Id<'rooms'>,
-            hostId: guestId,
-            sessionToken: sessionToken ?? undefined,
-          });
-        } catch {}
-      }
+        }).catch(() => {});
+      });
     }
-    toast(lang === 'ar' ? 'تمت مغادرة الماتش بنجاح' : 'Left match successfully', 'info');
-    router.replace('/');
   }, [abandonMatch, cancelRoom, guestId, roomId, sessionToken, lang, toast, router]);
 
   const [bidAmount, setBidAmount] = useState<number>(0);

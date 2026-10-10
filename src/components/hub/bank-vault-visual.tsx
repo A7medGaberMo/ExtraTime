@@ -33,7 +33,6 @@ export function BankVaultVisual() {
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ) {
-      setLitCount(6);
       return;
     }
 

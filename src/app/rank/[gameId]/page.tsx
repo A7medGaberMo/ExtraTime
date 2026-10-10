@@ -74,6 +74,14 @@ export default function RankArenaPage() {
     }
   }, [rematchState?.status, rematchState?.rematchGameId, router]);
 
+  // Detect abandonment
+  useEffect(() => {
+    if (gameState?.status === 'abandoned') {
+      toast(lang === 'ar' ? 'تم إلغاء المبارزة' : 'Duel cancelled', 'info');
+      router.replace('/rank');
+    }
+  }, [gameState?.status, router, toast, lang]);
+
   const submitRoundMutation = useMutation(api.rank.mutations.submitRound);
   const advanceRoundMutation = useMutation(api.rank.mutations.advanceRound);
   const createSoloMutation = useMutation(api.rank.mutations.createSoloGame);
@@ -292,16 +300,15 @@ export default function RankArenaPage() {
 
   async function handleAbandon() {
     if (!guestId) return;
-    try {
-      await abandonGameMutation({
-        gameId,
-        guestId,
-        sessionToken: sessionToken ?? undefined,
-      });
-      router.push('/rank');
-    } catch {
-      router.push('/rank');
-    }
+    // Direct cancel: immediate route to Rank Hub
+    router.replace('/rank');
+    toast(lang === 'ar' ? 'تم إلغاء المبارزة' : 'Duel cancelled', 'info');
+
+    abandonGameMutation({
+      gameId,
+      guestId,
+      sessionToken: sessionToken ?? undefined,
+    }).catch(() => {});
   }
 
   // ── 1. WAITING LOBBY (Duel Mode) ──────────────────────────────────

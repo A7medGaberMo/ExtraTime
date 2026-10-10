@@ -77,26 +77,26 @@ export default function DraftArenaPage({ params }: DraftArenaPageProps) {
   // Detect abandonment
   useEffect(() => {
     if (game?.status === 'abandoned') {
-      toast(lang === 'ar' ? 'تم إلغاء الماتش من قبل أحد المدربين' : 'Draft match was cancelled by manager', 'info');
+      toast(lang === 'ar' ? 'تم إلغاء الماتش' : 'Match cancelled', 'info');
       router.replace('/draft');
     }
   }, [game?.status, router, toast, lang]);
 
-  const handleLeaveDraft = useCallback(async () => {
+  const handleLeaveDraft = useCallback(() => {
     if (isLeaving) return;
     setIsLeaving(true);
-    try {
-      if (guestId && gameId) {
-        await abandonMatch({
-          guestId,
-          sessionToken,
-          matchType: 'draft',
-          matchId: gameId,
-        });
-      }
-    } catch {}
-    toast(lang === 'ar' ? 'تمت مغادرة الماتش والعودة' : 'Left draft match', 'info');
+    // Direct cancel: immediate route to Draft Hub without waiting
     router.replace('/draft');
+    toast(lang === 'ar' ? 'تم إلغاء الماتش' : 'Match cancelled', 'info');
+
+    if (guestId && gameId) {
+      abandonMatch({
+        guestId,
+        sessionToken,
+        matchType: 'draft',
+        matchId: gameId,
+      }).catch(() => {});
+    }
   }, [abandonMatch, isLeaving, guestId, gameId, sessionToken, lang, toast, router]);
 
   // Find user's participant state (or fallback to participant 0)

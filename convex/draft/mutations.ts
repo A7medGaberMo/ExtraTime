@@ -1,5 +1,5 @@
 import { mutation } from '../_generated/server';
-import { v } from 'convex/values';
+import { v, ConvexError } from 'convex/values';
 import { DataModel, Id, Doc } from '../_generated/dataModel';
 import { GenericMutationCtx } from 'convex/server';
 import { verifyGuestSession } from '../lib/auth';
@@ -35,12 +35,12 @@ async function generateUniqueDraftCode(ctx: GenericMutationCtx<DataModel>): Prom
       .first();
     if (!existing) return code;
   }
-  throw new Error('Could not generate unique room code');
+  throw new ConvexError('Could not generate unique room code');
 }
 
 async function getGuest(ctx: GenericMutationCtx<DataModel>, guestId: Id<'guestUsers'>) {
   const guest = await ctx.db.get(guestId);
-  if (!guest) throw new Error('Guest user not found');
+  if (!guest) throw new ConvexError('Guest user not found');
   return guest;
 }
 
@@ -98,7 +98,7 @@ async function buildStartersChemistryInput(
 /**
  * Flexible match helpers for Solo Draft dynamic challenges
  */
-function matchesNation(playerNation?: string, targetNation?: string): boolean {
+export function _matchesNation(playerNation?: string, targetNation?: string): boolean {
   if (!playerNation || !targetNation) return false;
   const p = playerNation.trim().toLowerCase();
   const t = targetNation.trim().toLowerCase();
@@ -108,7 +108,7 @@ function matchesNation(playerNation?: string, targetNation?: string): boolean {
   return false;
 }
 
-function matchesClub(playerClub?: string, targetClub?: string): boolean {
+export function _matchesClub(playerClub?: string, targetClub?: string): boolean {
   if (!playerClub || !targetClub) return false;
   const p = playerClub.trim().toLowerCase();
   const t = targetClub.trim().toLowerCase();
@@ -122,7 +122,7 @@ function matchesClub(playerClub?: string, targetClub?: string): boolean {
   return false;
 }
 
-function matchesLeague(playerLeague?: string, targetLeague?: string): boolean {
+export function _matchesLeague(playerLeague?: string, targetLeague?: string): boolean {
   if (!playerLeague || !targetLeague) return false;
   const p = playerLeague.trim().toLowerCase();
   const t = targetLeague.trim().toLowerCase();
@@ -206,7 +206,7 @@ export const joinDraftByCode = mutation({
       .withIndex('by_code', (q) => q.eq('code', cleanCode))
       .first();
 
-    if (!game) throw new Error('Draft room not found. Check the room code.');
+    if (!game) throw new ConvexError('Draft room not found. Check the room code.');
 
     // Rejoining allowed
     if (game.participants.some((p) => p.guestId === args.guestId)) {
@@ -214,10 +214,10 @@ export const joinDraftByCode = mutation({
     }
 
     if (game.status !== 'waiting') {
-      throw new Error('This draft game has already begun or finished.');
+      throw new ConvexError('This draft game has already begun or finished.');
     }
     if (game.participants.length >= 2) {
-      throw new Error('This draft room is already full.');
+      throw new ConvexError('This draft room is already full.');
     }
 
     const updatedParticipants = [
@@ -369,10 +369,10 @@ export const selectFormation = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const pIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
-    if (pIndex === -1) throw new Error('Participant not in game');
+    if (pIndex === -1) throw new ConvexError('Participant not in game');
 
     const participant = game.participants[pIndex];
     const positions = getFormationSlots(args.formation);
@@ -440,20 +440,20 @@ export const makeDraftPick = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const pIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
-    if (pIndex === -1) throw new Error('Participant not in game');
+    if (pIndex === -1) throw new ConvexError('Participant not in game');
 
     const participant = game.participants[pIndex];
     if (participant.currentSlotIndex >= 14) {
-      throw new Error('Drafting phase already completed');
+      throw new ConvexError('Drafting phase already completed');
     }
 
     // Verify player is among candidates (or auto-picked)
     const isValidPick = participant.currentCandidateIds.some((id) => id === args.playerId);
     if (!isValidPick && participant.currentCandidateIds.length > 0) {
-      throw new Error('Selected player is not in candidate list');
+      throw new ConvexError('Selected player is not in candidate list');
     }
 
     return await executePickForParticipant(ctx, game, pIndex, args.playerId);
@@ -581,10 +581,10 @@ export const autoPickExpiredTurn = mutation({
   },
   handler: async (ctx, args) => {
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const pIndex = game.participants.findIndex((p) => p.guestId === args.targetGuestId);
-    if (pIndex === -1) throw new Error('Participant not in game');
+    if (pIndex === -1) throw new ConvexError('Participant not in game');
 
     const participant = game.participants[pIndex];
     if (participant.currentSlotIndex >= 14) {
@@ -616,18 +616,18 @@ export const swapSquadPlayers = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const pIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
-    if (pIndex === -1) throw new Error('Participant not in game');
+    if (pIndex === -1) throw new ConvexError('Participant not in game');
 
     const participant = game.participants[pIndex];
     const starterSlot = participant.startingXI.find((s) => s.slotIndex === args.starterSlotIndex);
     const benchSlot = participant.bench.find((b) => b.benchIndex === args.benchIndex);
 
-    if (!starterSlot || !benchSlot) throw new Error('Invalid slot indices for swap');
+    if (!starterSlot || !benchSlot) throw new ConvexError('Invalid slot indices for swap');
     if (!starterSlot.playerId || !benchSlot.playerId) {
-      throw new Error('Both slots must be filled to perform swap');
+      throw new ConvexError('Both slots must be filled to perform swap');
     }
 
     // Perform swap
@@ -676,18 +676,18 @@ export const swapStarters = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const pIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
-    if (pIndex === -1) throw new Error('Participant not in game');
+    if (pIndex === -1) throw new ConvexError('Participant not in game');
 
     const participant = game.participants[pIndex];
     const slotA = participant.startingXI.find((s) => s.slotIndex === args.slotIndexA);
     const slotB = participant.startingXI.find((s) => s.slotIndex === args.slotIndexB);
 
-    if (!slotA || !slotB) throw new Error('Invalid starter slot indices for swap');
+    if (!slotA || !slotB) throw new ConvexError('Invalid starter slot indices for swap');
     if (!slotA.playerId || !slotB.playerId) {
-      throw new Error('Both slots must be filled to perform starter swap');
+      throw new ConvexError('Both slots must be filled to perform starter swap');
     }
 
     // Perform swap of player IDs & captaincy
@@ -755,10 +755,10 @@ export const finishDraft = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const pIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
-    if (pIndex === -1) throw new Error('Participant not in game');
+    if (pIndex === -1) throw new ConvexError('Participant not in game');
 
     const newParticipants = [...game.participants];
     newParticipants[pIndex] = {
@@ -864,10 +864,10 @@ export const simulateBossMatch = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const participant = game.participants.find((p) => p.guestId === args.guestId);
-    if (!participant) throw new Error('Participant not in game');
+    if (!participant) throw new ConvexError('Participant not in game');
 
     // Build player squad
     const hostSquad: DraftSimPlayer[] = [];
@@ -961,10 +961,10 @@ export const requestDraftRematch = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.completedGameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const isParticipant = game.participants.some((p) => p.guestId === args.guestId);
-    if (!isParticipant) throw new Error('Not a participant in this game');
+    if (!isParticipant) throw new ConvexError('Not a participant in this game');
 
     // Check if rematch already exists
     const existingRematchId = (game as Record<string, unknown>).rematchGameId as Id<'draftGames'> | undefined;
@@ -1064,19 +1064,19 @@ export const acceptDraftRematch = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.completedGameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const rematchGameId = (game as Record<string, unknown>).rematchGameId as Id<'draftGames'> | undefined;
-    if (!rematchGameId) throw new Error('No rematch invitation found');
+    if (!rematchGameId) throw new ConvexError('No rematch invitation found');
 
     const rematchGame = await ctx.db.get(rematchGameId);
-    if (!rematchGame) throw new Error('Rematch room not found');
+    if (!rematchGame) throw new ConvexError('Rematch room not found');
 
     if (rematchGame.status === 'formation' || rematchGame.status === 'drafting') {
       return { rematchGameId: rematchGame._id };
     }
     if (rematchGame.status !== 'waiting') {
-      throw new Error('Rematch invitation is no longer active');
+      throw new ConvexError('Rematch invitation is no longer active');
     }
 
     const guest = await getGuest(ctx, args.guestId);

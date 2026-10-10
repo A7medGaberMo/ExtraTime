@@ -8,8 +8,10 @@ import {
   SpeakerSimpleSlash,
   Translate,
   ArrowLeft,
+  X,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
+import { useToast, variantStyles as toastVariantStyles, variantIcons as toastVariantIcons } from '@/components/shared/toast';
 import Image from 'next/image';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
@@ -73,6 +75,12 @@ export function Header({
   const { lang, toggleLang, t } = useI18n();
   const isOverlayActive = useOverlayActive();
   const isGameplay = useIsGameplay();
+  const { activeToast, dismiss, registerHeaderActive } = useToast();
+
+  useEffect(() => {
+    registerHeaderActive(true);
+    return () => registerHeaderActive(false);
+  }, [registerHeaderActive]);
 
   const muted = useSyncExternalStore(
     subscribeSound,
@@ -263,7 +271,33 @@ export function Header({
 
         {/* ── CENTER: Spacious Notification & Live Match Slot ── */}
         <div className="flex-1 flex items-center justify-center min-w-0 px-1 sm:px-2 overflow-hidden">
-          {centerContent ? (
+          {activeToast ? (
+            <div
+              key={activeToast.id}
+              role="status"
+              aria-live="polite"
+              className={cn(
+                'pointer-events-auto animate-slide-down flex items-center gap-1.5 sm:gap-2 rounded-full border px-2.5 sm:px-3 py-1 text-xs font-bold max-w-full shadow-lg backdrop-blur-xl truncate transition-all',
+                toastVariantStyles[activeToast.variant],
+              )}
+            >
+              {toastVariantIcons[activeToast.variant]}
+              <span className="truncate text-[10.5px] sm:text-xs font-bold text-white tracking-tight">
+                {activeToast.message}
+              </span>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  dismiss(activeToast.id);
+                }}
+                aria-label="Dismiss notification"
+                className="text-white/60 hover:text-white shrink-0 p-0.5 rounded-full transition-colors cursor-pointer"
+              >
+                <AppIcon icon={X} size={12} weight="bold" />
+              </button>
+            </div>
+          ) : centerContent ? (
             centerContent
           ) : showActivePill ? (
             /* Live Match Notification Banner / Pill */

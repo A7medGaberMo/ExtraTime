@@ -1,7 +1,7 @@
 import { mutation, internalMutation } from '../_generated/server';
 import { internal } from '../_generated/api';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
-import { v } from 'convex/values';
+import { v, ConvexError } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { generateDraftRounds } from '../auctions/draftEngine';
 import { getRandomFormation, MatchSize } from '../auctions/formations';
@@ -26,7 +26,7 @@ async function generateUniqueRoomCode(ctx: GenericMutationCtx<DataModel>): Promi
       .first();
     if (!existing) return code;
   }
-  throw new Error('Could not generate a unique room code');
+  throw new ConvexError('Could not generate a unique room code');
 }
 
 function randomPerk(): 'SCOUT' | 'SPY' | 'FREEZE' {
@@ -118,7 +118,7 @@ async function joinAuction(
 ) {
   const room = await ctx.db.get(roomId);
   if (!room || room.guestId || room.status !== 'waiting') {
-    throw new Error('Room is no longer available');
+    throw new ConvexError('Room is no longer available');
   }
 
   const guestPerk = randomPerk();
@@ -197,9 +197,9 @@ export const join = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const room = await ctx.db.get(args.roomId);
-    if (!room) throw new Error('Room not found');
+    if (!room) throw new ConvexError('Room not found');
     const guest = await ctx.db.get(args.guestId);
-    if (!guest) throw new Error('Guest not found');
+    if (!guest) throw new ConvexError('Guest not found');
 
     const auction = await ctx.db
       .query('auctions')
@@ -214,9 +214,9 @@ export const join = mutation({
       };
     }
 
-    if (room.guestId) throw new Error('Room is full');
-    if (room.status !== 'waiting') throw new Error('Room is not open');
-    if (!auction) throw new Error('Auction not found for room');
+    if (room.guestId) throw new ConvexError('Room is full');
+    if (room.status !== 'waiting') throw new ConvexError('Room is not open');
+    if (!auction) throw new ConvexError('Auction not found for room');
 
     const activeTurnUserId = await joinAuction(ctx, args.roomId, args.guestId, auction);
     return { roomId: args.roomId, activeTurnUserId };
@@ -301,8 +301,8 @@ export const cancel = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.hostId, args.sessionToken);
     const room = await ctx.db.get(args.roomId);
-    if (!room) throw new Error('Room not found');
-    if (room.hostId !== args.hostId) throw new Error('Only room host can cancel');
+    if (!room) throw new ConvexError('Room not found');
+    if (room.hostId !== args.hostId) throw new ConvexError('Only room host can cancel');
 
     await ctx.db.patch(args.roomId, { status: 'abandoned' });
 
@@ -348,7 +348,7 @@ export const abandonUserActiveMatch = mutation({
       const isHost = room.hostId === guestId;
       const isGuest = room.guestId === guestId;
       if (!isHost && !isGuest) {
-        throw new Error('Not authorized to abandon this match');
+        throw new ConvexError('Not authorized to abandon this match');
       }
 
       await ctx.db.patch(room._id, { status: 'abandoned' });
@@ -373,7 +373,7 @@ export const abandonUserActiveMatch = mutation({
 
       const isParticipant = game.participants.some((p) => p.guestId === guestId);
       if (!isParticipant) {
-        throw new Error('Not authorized to abandon this game');
+        throw new ConvexError('Not authorized to abandon this game');
       }
 
       if (game.status === 'waiting' || game.mode === 'solo') {
@@ -401,7 +401,7 @@ export const abandonUserActiveMatch = mutation({
 
       const isParticipant = game.participants.some((p) => p.guestId === guestId);
       if (!isParticipant) {
-        throw new Error('Not authorized to abandon this game');
+        throw new ConvexError('Not authorized to abandon this game');
       }
 
       if (game.status === 'waiting' || game.mode === 'solo') {
@@ -429,7 +429,7 @@ export const abandonUserActiveMatch = mutation({
 
       const isParticipant = game.participants.some((p) => p.guestId === guestId);
       if (!isParticipant) {
-        throw new Error('Not authorized to abandon this game');
+        throw new ConvexError('Not authorized to abandon this game');
       }
 
       if (game.status === 'waiting' || game.mode === 'solo') {
@@ -471,15 +471,15 @@ export const requestSnipeRematch = mutation({
     await verifyGuestSession(ctx, args.userId, args.sessionToken);
 
     const room = await ctx.db.get(args.completedRoomId);
-    if (!room) throw new Error('Room not found');
+    if (!room) throw new ConvexError('Room not found');
 
     const isHost = room.hostId === args.userId;
     const isGuest = room.guestId === args.userId;
-    if (!isHost && !isGuest) throw new Error('Not a participant');
+    if (!isHost && !isGuest) throw new ConvexError('Not a participant');
 
     // Check if room is completed
     if (room.status !== 'completed') {
-      throw new Error('Can only rematch a completed match');
+      throw new ConvexError('Can only rematch a completed match');
     }
 
     // Check if a rematch room already exists (prevents spam / double-clicks)
@@ -555,15 +555,15 @@ export const acceptRematchInvite = mutation({
     await verifyGuestSession(ctx, args.userId, args.sessionToken);
 
     const room = await ctx.db.get(args.rematchRoomId);
-    if (!room) throw new Error('Rematch room not found');
-    if (room.status !== 'waiting') throw new Error('Rematch is no longer available');
-    if (room.hostId === args.userId) throw new Error('Cannot accept your own invite');
+    if (!room) throw new ConvexError('Rematch room not found');
+    if (room.status !== 'waiting') throw new ConvexError('Rematch is no longer available');
+    if (room.hostId === args.userId) throw new ConvexError('Cannot accept your own invite');
 
     const auction = await ctx.db
       .query('auctions')
       .withIndex('by_room', (q) => q.eq('roomId', args.rematchRoomId))
       .first();
-    if (!auction) throw new Error('Auction not found for rematch room');
+    if (!auction) throw new ConvexError('Auction not found for rematch room');
 
     await joinAuction(ctx, args.rematchRoomId, args.userId, auction);
 
@@ -584,7 +584,7 @@ export const declineRematchInvite = mutation({
     await verifyGuestSession(ctx, args.userId, args.sessionToken);
 
     const room = await ctx.db.get(args.rematchRoomId);
-    if (!room) throw new Error('Rematch room not found');
+    if (!room) throw new ConvexError('Rematch room not found');
     if (room.status !== 'waiting') return { success: true }; // Already resolved
 
     // Only the invited player (non-host) or the inviter can cancel

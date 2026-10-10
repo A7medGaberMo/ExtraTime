@@ -1,3 +1,5 @@
+import { ConvexError } from "convex/values";
+
 export interface RankAnswerInput {
   answerKey: string;
   name: { en: string; ar: string };
@@ -66,13 +68,13 @@ export function validateQuestionBank(bank: RankQuestionInput[]): void {
   for (const q of bank) {
     const key = q.title?.en?.trim().toLowerCase();
     if (titles.has(key)) {
-      throw new Error(`Duplicate question title found in bank: "${q.title.en}"`);
+      throw new ConvexError(`Duplicate question title found in bank: "${q.title.en}"`);
     }
     titles.add(key);
 
     const check = validateRankQuestion(q);
     if (!check.valid) {
-      throw new Error(check.error);
+      throw new ConvexError(check.error || "Question validation failed");
     }
   }
 }

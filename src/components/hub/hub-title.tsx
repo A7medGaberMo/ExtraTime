@@ -39,7 +39,7 @@ export function HubTitle({ title, subtitle, className }: HubTitleProps) {
         }}
       >
         <p
-          className="hub-body leading-[1.4] font-normal text-balance whitespace-pre-line text-[#C5CAD6] line-clamp-2"
+          className="hub-body leading-[1.4] font-light text-balance whitespace-pre-line text-[#C5CAD6] line-clamp-2"
           dir={lang === 'ar' ? 'rtl' : 'ltr'}
         >
           {subtitle}

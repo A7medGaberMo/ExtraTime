@@ -1,7 +1,7 @@
 import { mutation, internalMutation } from '../_generated/server';
 import { internal } from '../_generated/api';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
-import { v } from 'convex/values';
+import { v, ConvexError } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { hashSeed, mulberry32 } from '../../src/core/simulation/match-simulator';
 import { isAuctionParticipant } from './sealedView';
@@ -16,9 +16,9 @@ async function getActiveAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<'
     .query('auctions')
     .withIndex('by_room', (q) => q.eq('roomId', roomId))
     .first();
-  if (!auction) throw new Error('Auction not found');
-  if (auction.status !== 'active') throw new Error('Auction is not active');
-  if (!auction.guest) throw new Error('Waiting for opponent');
+  if (!auction) throw new ConvexError('Auction not found');
+  if (auction.status !== 'active') throw new ConvexError('Auction is not active');
+  if (!auction.guest) throw new ConvexError('Waiting for opponent');
   return auction;
 }
 
@@ -256,13 +256,13 @@ export const submitSealedBid = mutation({
 
     const isHost = auction.host.userId === args.userId;
     const me = isHost ? auction.host : auction.guest;
-    if (!me) throw new Error('Player is not in this auction');
+    if (!me) throw new ConvexError('Player is not in this auction');
 
     if (!Number.isInteger(args.amount) || args.amount < 0) {
-      throw new Error('Bid must be a whole number of $M (0 = pass)');
+      throw new ConvexError('Bid must be a whole number of $M (0 = pass)');
     }
     if (args.amount > me.budget) {
-      throw new Error(`Insufficient budget. You have $${me.budget}M`);
+      throw new ConvexError(`Insufficient budget. You have $${me.budget}M`);
     }
 
     // Freeze check: if active in this round against this player, cap maximum bid
@@ -272,7 +272,7 @@ export const submitSealedBid = mutation({
       auction.frozenEffect.targetUserId === args.userId
     ) {
       if (args.amount > auction.frozenEffect.maxBid) {
-        throw new Error(
+        throw new ConvexError(
           `You are FROZEN by your opponent! Your maximum bid this round is capped at $${auction.frozenEffect.maxBid}M.`,
         );
       }
@@ -282,7 +282,7 @@ export const submitSealedBid = mutation({
     if (args.amount === 0) {
       const passesUsed = me.passesUsed ?? 0;
       if (me.budget > 0 && passesUsed >= 1) {
-        throw new Error(
+        throw new ConvexError(
           'You have already used your 1 free Pass ($0M bid) this match. Minimum bid is $1M.',
         );
       }
@@ -352,7 +352,7 @@ export const resolveSealedRound = mutation({
 
 
     if (!isAuctionParticipant(auction, args.userId)) {
-      throw new Error('Only auction participants can resolve the round');
+      throw new ConvexError('Only auction participants can resolve the round');
     }
 
     const history = auction.roundHistory ?? [];

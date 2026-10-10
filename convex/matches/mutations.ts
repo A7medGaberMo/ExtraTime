@@ -1,6 +1,6 @@
 import { mutation } from '../_generated/server';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
-import { v } from 'convex/values';
+import { v, ConvexError } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { simulateTacticalMatch, SimPlayer, SimTier } from '../../src/core/simulation/match-simulator';
 import { isAuctionParticipant } from '../auctions/sealedView';
@@ -20,9 +20,9 @@ async function getCompletedAuction(
     .query('auctions')
     .withIndex('by_room', (q) => q.eq('roomId', roomId))
     .first();
-  if (!auction) throw new Error('Auction not found');
-  if (auction.status !== 'completed') throw new Error('Auction not yet completed');
-  if (!auction.guest) throw new Error('Waiting for opponent');
+  if (!auction) throw new ConvexError('Auction not found');
+  if (auction.status !== 'completed') throw new ConvexError('Auction not yet completed');
+  if (!auction.guest) throw new ConvexError('Waiting for opponent');
   return auction as AuctionWithGuest;
 }
 
@@ -80,7 +80,7 @@ export const runSimulation = mutation({
     const auction = await getCompletedAuction(ctx, args.roomId);
 
     if (!isAuctionParticipant(auction, args.userId)) {
-      throw new Error('Only auction participants can run the match simulation');
+      throw new ConvexError('Only auction participants can run the match simulation');
     }
 
     const match = await ensureMatch(ctx, auction, args.roomId);

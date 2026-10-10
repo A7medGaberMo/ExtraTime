@@ -1,4 +1,5 @@
 import { GenericMutationCtx } from 'convex/server';
+import { ConvexError } from 'convex/values';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
 import { getFormationPositions, MatchSize } from './formations';
 import {
@@ -251,7 +252,7 @@ function planTierBudget(
   }
 
   if (allocated < playerCount) {
-    throw new Error(
+    throw new ConvexError(
       `Not enough position-eligible players for this Snipe match: need ${playerCount}, found ${allocated}.`,
     );
   }
@@ -273,7 +274,7 @@ function selectSmartPair(
 ): [PoolPlayer, PoolPlayer] {
   const unused = pool.filter((p) => !used.has(playerIdentity(p)));
   if (unused.length < 2) {
-    throw new Error(`Not enough players for position ${slot}. Only ${unused.length} left.`);
+    throw new ConvexError(`Not enough players for position ${slot}. Only ${unused.length} left.`);
   }
 
   // 1. Filter candidates strictly matching position category rules
@@ -285,7 +286,7 @@ function selectSmartPair(
     .filter((c) => c.score > 0);
 
   if (candidates.length < 2) {
-    throw new Error(`Not enough players with eligible ${slot} position. Found ${candidates.length}.`);
+    throw new ConvexError(`Not enough players with eligible ${slot} position. Found ${candidates.length}.`);
   }
 
   // Respect the match-wide tier budget for both cards when possible.
@@ -660,7 +661,7 @@ export async function generateDraftRounds(
   const requiredPlayers = formationPositions.length * 2;
 
   if (pool.length < requiredPlayers) {
-    throw new Error(
+    throw new ConvexError(
       `Not enough players for ${matchSize}P Hidden Bid (need ${requiredPlayers}, have ${pool.length}).`,
     );
   }

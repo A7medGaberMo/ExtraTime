@@ -1,6 +1,6 @@
 import { mutation, internalMutation } from '../_generated/server';
 import { Doc } from '../_generated/dataModel';
-import { v } from 'convex/values';
+import { v, ConvexError } from 'convex/values';
 import { tierValidator } from '../lib/constants';
 
 export const create = mutation({
@@ -21,7 +21,7 @@ export const create = mutation({
       ctx.db.get(args.clubId),
       ctx.db.get(args.nationId),
     ]);
-    if (!club || !nation) throw new Error("Invalid club or nation");
+    if (!club || !nation) throw new ConvexError("Invalid club or nation");
 
     return await ctx.db.insert('players', {
       name: args.name,

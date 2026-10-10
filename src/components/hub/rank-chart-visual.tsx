@@ -18,12 +18,15 @@ const BARS: BarData[] = [
 const SLOT_X = [-26, -13, 0, 13, 26]; // 5 symmetric horizontal slot offsets centered at 0px
 
 export function RankChartVisual() {
-  const [order, setOrder] = useState<number[]>([3, 1, 5, 2, 4]);
+  const [order, setOrder] = useState<number[]>(() =>
+    typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ? [1, 2, 3, 4, 5]
+      : [3, 1, 5, 2, 4],
+  );
   const [pauseCount, setPauseCount] = useState(0);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setOrder([1, 2, 3, 4, 5]);
       return;
     }
 

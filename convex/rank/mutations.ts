@@ -1,5 +1,5 @@
 import { mutation } from "../_generated/server";
-import { v } from "convex/values";
+import { v, ConvexError } from "convex/values";
 import { Id, DataModel, Doc } from "../_generated/dataModel";
 import { GenericMutationCtx } from "convex/server";
 import { scoreRoundSubmission } from "./scoring";
@@ -31,7 +31,7 @@ async function generateUniqueRankRoomCode(ctx: GenericMutationCtx<DataModel>): P
       .first();
     if (!existing) return code;
   }
-  throw new Error("Could not generate a unique rank room code");
+  throw new ConvexError("Could not generate a unique rank room code");
 }
 
 function normalizeRankRoomCode(code: string): string {
@@ -130,7 +130,7 @@ async function pickRandomQuestionIds(
   }
 
   if (allActive.length < count) {
-    throw new Error(
+    throw new ConvexError(
       `Not enough active questions in bank. Found ${allActive.length}, required ${count}. Please run seedQuestionBank first.`
     );
   }
@@ -356,7 +356,7 @@ export const seedNewRankQuestionsOnly = mutation({
 
       const check = validateRankQuestion(q);
       if (!check.valid) {
-        throw new Error(check.error);
+        throw new ConvexError(check.error || "Question validation failed");
       }
 
       const docData = {
@@ -493,12 +493,12 @@ export const joinDuelPrivateRoom = mutation({
         .first();
     }
 
-    if (!game) throw new Error("Room not found. Please check the code.");
+    if (!game) throw new ConvexError("Room not found. Please check the code.");
     if (game.participants.some((p) => p.guestId === args.guestId)) {
       return { gameId: game._id }; // Already in room - allow seamless rejoin
     }
-    if (game.status !== "waiting") throw new Error("This room is already in progress or completed.");
-    if (game.participants.length >= 2) throw new Error("This room is full.");
+    if (game.status !== "waiting") throw new ConvexError("This room is already in progress or completed.");
+    if (game.participants.length >= 2) throw new ConvexError("This room is full.");
 
 
     // Pick non-repeated questions for both players and start game
@@ -651,12 +651,12 @@ export const submitRound = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error("Game not found");
-    if (game.status !== "round_active") throw new Error("Round is not active for submission");
+    if (!game) throw new ConvexError("Game not found");
+    if (game.status !== "round_active") throw new ConvexError("Round is not active for submission");
 
 
     const pIndex = game.participants.findIndex((p) => p.guestId === args.guestId);
-    if (pIndex === -1) throw new Error("Player not in this game");
+    if (pIndex === -1) throw new ConvexError("Player not in this game");
 
     const participant = game.participants[pIndex];
     if (participant.hasSubmittedCurrentRound) {
@@ -665,20 +665,20 @@ export const submitRound = mutation({
 
     const currentQId = game.questionIds[game.currentRoundIndex];
     const rawQuestion = await ctx.db.get(currentQId);
-    if (!rawQuestion) throw new Error("Question not found");
+    if (!rawQuestion) throw new ConvexError("Question not found");
 
     // Strict validation of submitted ranking
     if (!Array.isArray(args.submittedOrder) || args.submittedOrder.length !== 5) {
-      throw new Error("Invalid submission: Exactly 5 items must be ranked.");
+      throw new ConvexError("Invalid submission: Exactly 5 items must be ranked.");
     }
     const uniqueKeys = new Set(args.submittedOrder);
     if (uniqueKeys.size !== 5) {
-      throw new Error("Invalid submission: Duplicate answer keys detected.");
+      throw new ConvexError("Invalid submission: Duplicate answer keys detected.");
     }
     const validKeys = new Set(rawQuestion.answers.map((a) => a.answerKey));
     for (const key of args.submittedOrder) {
       if (!validKeys.has(key)) {
-        throw new Error(`Invalid submission: Unknown answer key '${key}' for this question.`);
+        throw new ConvexError(`Invalid submission: Unknown answer key '${key}' for this question.`);
       }
     }
 
@@ -782,12 +782,12 @@ export const resolveExpiredRound = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error("Game not found");
+    if (!game) throw new ConvexError("Game not found");
     if (game.status !== "round_active") {
       return { status: game.status, alreadyResolved: true };
     }
     const isParticipant = game.participants.some((p) => p.guestId === args.guestId);
-    if (!isParticipant) throw new Error("Player not in this game");
+    if (!isParticipant) throw new ConvexError("Player not in this game");
 
     const now = Date.now();
     const deadline = game.roundDeadline ?? 0;
@@ -800,7 +800,7 @@ export const resolveExpiredRound = mutation({
 
     const currentQId = game.questionIds[game.currentRoundIndex];
     const rawQuestion = await ctx.db.get(currentQId);
-    if (!rawQuestion) throw new Error("Question not found");
+    if (!rawQuestion) throw new ConvexError("Question not found");
 
     const roundSeed = `${game.code}_round${game.currentRoundIndex}_${rawQuestion._id}`;
     const initialScrambled = seededShuffle(rawQuestion.answers, roundSeed).map((a) => a.answerKey);
@@ -855,9 +855,9 @@ export const abandonGame = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error("Game not found");
+    if (!game) throw new ConvexError("Game not found");
     const isParticipant = game.participants.some((p) => p.guestId === args.guestId);
-    if (!isParticipant) throw new Error("Player not in this game");
+    if (!isParticipant) throw new ConvexError("Player not in this game");
 
     if (game.status === "completed" || game.status === "abandoned") {
       return { status: game.status };
@@ -897,9 +897,9 @@ export const advanceRound = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.gameId);
-    if (!game) throw new Error("Game not found");
+    if (!game) throw new ConvexError("Game not found");
     if (!game.participants.some((p) => p.guestId === args.guestId)) {
-      throw new Error("Player not in this game");
+      throw new ConvexError("Player not in this game");
     }
     if (game.status !== "round_reveal") {
       return { status: game.status, alreadyAdvanced: true };
@@ -992,10 +992,10 @@ export const requestRankRematch = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.completedGameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const isParticipant = game.participants.some((p) => p.guestId === args.guestId);
-    if (!isParticipant) throw new Error('Not a participant in this game');
+    if (!isParticipant) throw new ConvexError('Not a participant in this game');
 
     // Check if a rematch was already created
     const existingRematchId = (game as Record<string, unknown>).rematchGameId as Id<'rankGames'> | undefined;
@@ -1090,19 +1090,19 @@ export const acceptRankRematch = mutation({
   handler: async (ctx, args) => {
     await verifyGuestSession(ctx, args.guestId, args.sessionToken);
     const game = await ctx.db.get(args.completedGameId);
-    if (!game) throw new Error('Game not found');
+    if (!game) throw new ConvexError('Game not found');
 
     const rematchGameId = (game as Record<string, unknown>).rematchGameId as Id<'rankGames'> | undefined;
-    if (!rematchGameId) throw new Error('No rematch invitation found');
+    if (!rematchGameId) throw new ConvexError('No rematch invitation found');
 
     const rematchGame = await ctx.db.get(rematchGameId);
-    if (!rematchGame) throw new Error('Rematch room not found');
+    if (!rematchGame) throw new ConvexError('Rematch room not found');
 
     if (rematchGame.status === 'round_active') {
       return { rematchGameId: rematchGame._id };
     }
     if (rematchGame.status !== 'waiting') {
-      throw new Error('Rematch invitation is no longer active');
+      throw new ConvexError('Rematch invitation is no longer active');
     }
 
     const guest = await getGuestProfile(ctx, args.guestId);

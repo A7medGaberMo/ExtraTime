@@ -1,6 +1,6 @@
 import { mutation } from '../_generated/server';
 import { Id, DataModel, Doc } from '../_generated/dataModel';
-import { v } from 'convex/values';
+import { v, ConvexError } from 'convex/values';
 import { GenericMutationCtx } from 'convex/server';
 import { isSealedBidMode } from './sealedView';
 import { verifyGuestSession } from '../lib/auth';
@@ -12,15 +12,15 @@ async function getAuction(ctx: GenericMutationCtx<DataModel>, roomId: Id<'rooms'
     .query('auctions')
     .withIndex('by_room', (q) => q.eq('roomId', roomId))
     .first();
-  if (!auction) throw new Error('Auction not found');
-  if (auction.status !== 'active') throw new Error('Auction is not active');
+  if (!auction) throw new ConvexError('Auction not found');
+  if (auction.status !== 'active') throw new ConvexError('Auction is not active');
   return auction;
 }
 
 /** Legacy turn-based bidding is incompatible with sealed Hidden Bid rooms. */
 function assertLegacyTurnBiddingAllowed(auction: Doc<'auctions'>): void {
   if (isSealedBidMode(auction)) {
-    throw new Error(
+    throw new ConvexError(
       'This room uses sealed Hidden Bid. Use submitSealedBid / resolveSealedRound instead.',
     );
   }
@@ -30,7 +30,7 @@ function validateTurnExpiry(expiresAt: number): void {
   // Allow 2s grace period for network latency
   const now = Date.now();
   if (now > expiresAt + 2000) {
-    throw new Error('Turn has already expired');
+    throw new ConvexError('Turn has already expired');
   }
 }
 
@@ -41,7 +41,7 @@ async function resolveRound(
   winnerId: Id<'guestUsers'> | undefined,
   price: number,
 ) {
-  if (!auction.guest) throw new Error('Waiting for opponent');
+  if (!auction.guest) throw new ConvexError('Waiting for opponent');
 
   const round = auction.rounds[auction.currentRound - 1];
   const host = { ...auction.host, squad: [...auction.host.squad] };
@@ -138,7 +138,7 @@ export const placeBid = mutation({
 
     // Validate it's this player's turn
     if (auction.currentBidding.activeTurnUserId !== args.userId) {
-      throw new Error('It is not your turn');
+      throw new ConvexError('It is not your turn');
     }
 
 
@@ -147,19 +147,19 @@ export const placeBid = mutation({
 
     // Validate bid amount
     if (!Number.isInteger(args.amount) || args.amount <= 0) {
-      throw new Error('Bid must be a positive whole number');
+      throw new ConvexError('Bid must be a positive whole number');
     }
 
     const me = auction.host.userId === args.userId ? auction.host : auction.guest;
-    if (!me) throw new Error('Player is not in this auction');
-    if (args.amount > me.budget) throw new Error(`Insufficient budget. You have $${me.budget}M`);
+    if (!me) throw new ConvexError('Player is not in this auction');
+    if (args.amount > me.budget) throw new ConvexError(`Insufficient budget. You have $${me.budget}M`);
 
     const minimum =
       auction.currentBidding.highestBid > 0 ? auction.currentBidding.highestBid + 1 : 1;
-    if (args.amount < minimum) throw new Error(`Minimum bid is $${minimum}M`);
+    if (args.amount < minimum) throw new ConvexError(`Minimum bid is $${minimum}M`);
 
     const opponent = auction.host.userId === args.userId ? auction.guest : auction.host;
-    if (!opponent) throw new Error('Waiting for opponent');
+    if (!opponent) throw new ConvexError('Waiting for opponent');
 
     // AUTO-TAKE FEATURE: If bid is strictly greater than opponent's budget, opponent can NEVER outbid!
     if (args.amount > opponent.budget) {
@@ -190,9 +190,9 @@ export const pass = mutation({
     await verifyGuestSession(ctx, args.userId, args.sessionToken);
     const auction = await getAuction(ctx, args.roomId);
     assertLegacyTurnBiddingAllowed(auction);
-    if (!auction.guest) throw new Error('Waiting for opponent');
+    if (!auction.guest) throw new ConvexError('Waiting for opponent');
     if (auction.currentBidding.activeTurnUserId !== args.userId) {
-      throw new Error('It is not your turn');
+      throw new ConvexError('It is not your turn');
     }
 
     const opponent = auction.host.userId === args.userId ? auction.guest : auction.host;
@@ -243,15 +243,15 @@ async function executePerk(
 
   const isHost = auction.host.userId === userId;
   const me = isHost ? auction.host : auction.guest;
-  if (!me) throw new Error('Player is not in this auction');
+  if (!me) throw new ConvexError('Player is not in this auction');
 
   // ── Once-per-game guard ──
   if (me.perkUsed) {
-    throw new Error('You have already used your perk this game');
+    throw new ConvexError('You have already used your perk this game');
   }
 
   const opponent = isHost ? auction.guest : auction.host;
-  if (!opponent) throw new Error('Waiting for opponent');
+  if (!opponent) throw new ConvexError('Waiting for opponent');
 
   // Mark perk as used & add +10s to the active clock (sealed deadline and/or turn timer).
   const updatedMe = { ...me, perkUsed: true, perkUsedRound: auction.currentRound };
@@ -353,7 +353,7 @@ async function executePerk(
     };
   }
 
-  throw new Error('Unknown perk type');
+  throw new ConvexError('Unknown perk type');
 }
 
 export const usePerk = mutation({
