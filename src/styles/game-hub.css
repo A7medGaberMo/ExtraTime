@@ -53,6 +53,7 @@
     --hub-subtitle-height: 0px;
     --hub-gap-subtitle-visual: 12px;
   }
+
   .hub-subtitle-slot,
   [data-hub-subtitle] {
     display: none !important;
@@ -74,6 +75,7 @@
     --hub-gap-row1-row2: 8px;
     --hub-gap-row2-rules: 8px;
   }
+
   .hub-rules-subline-slot,
   .hub-feature-subline {
     display: none !important;
@@ -86,6 +88,7 @@
     --hub-eyebrow-height: 0px;
     --hub-gap-eyebrow-title: 0px;
   }
+
   .hub-eyebrow-slot,
   [data-hub-eyebrow] {
     display: none !important;
@@ -108,9 +111,9 @@
 html[dir='rtl'] .hub-title {
   font-family: var(--font-cairo), var(--font-display), sans-serif !important;
   letter-spacing: normal !important;
-  font-size: calc(var(--hub-title-font-size) * 0.92);
-  font-weight: 900;
-  line-height: 1.1;
+  font-size: calc(var(--hub-title-font-size) * 0.88);
+  font-weight: 800;
+  line-height: 1.12;
   background: linear-gradient(180deg, #ffffff 12%, #e5e7eb 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -118,16 +121,14 @@ html[dir='rtl'] .hub-title {
 }
 
 .hub-title-sheen {
-  background-image: linear-gradient(
-    110deg,
-    #ffffff 0%,
-    #eceef3 42%,
-    color-mix(in srgb, var(--hub-accent-light) 85%, white) 49%,
-    var(--hub-accent) 50%,
-    color-mix(in srgb, var(--hub-accent-light) 85%, white) 51%,
-    #eceef3 58%,
-    #ffffff 100%
-  );
+  background-image: linear-gradient(110deg,
+      #ffffff 0%,
+      #eceef3 42%,
+      color-mix(in srgb, var(--hub-accent-light) 85%, white) 49%,
+      var(--hub-accent) 50%,
+      color-mix(in srgb, var(--hub-accent-light) 85%, white) 51%,
+      #eceef3 58%,
+      #ffffff 100%);
   background-size: 250% 100%;
   background-position: 100% 0;
   animation: hubTitleSheen 7s cubic-bezier(0.65, 0, 0.35, 1) 1.2s infinite;
@@ -137,6 +138,7 @@ html[dir='rtl'] .hub-title {
   0% {
     background-position: 100% 0;
   }
+
   22%,
   100% {
     background-position: 0% 0;
@@ -187,6 +189,7 @@ html[dir='rtl'] .hub-eyebrow-line-end {
   color: var(--hub-text-subtitle);
   font-size: 13.5px;
   line-height: 1.4;
+  font-weight: 300;
 }
 
 html[dir='rtl'] .hub-body {
@@ -194,6 +197,7 @@ html[dir='rtl'] .hub-body {
   letter-spacing: normal !important;
   font-size: 14px !important;
   line-height: 1.4 !important;
+  font-weight: 300 !important;
 }
 
 /* ── Atmosphere & Glow ──────────────────────────────────────────────── */
@@ -217,6 +221,7 @@ html[dir='rtl'] .hub-body {
     opacity: 0.72;
     transform: translate(-50%, -52%) scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: translate(-50%, -52%) scale(1.05);
@@ -303,11 +308,9 @@ html[dir='rtl'] .hub-body {
   border-radius: 9999px;
   pointer-events: none;
   opacity: 0.55;
-  background: repeating-conic-gradient(
-    from 0deg,
-    color-mix(in srgb, var(--hub-accent) 55%, transparent) 0deg 0.6deg,
-    transparent 0.6deg 10deg
-  );
+  background: repeating-conic-gradient(from 0deg,
+      color-mix(in srgb, var(--hub-accent) 55%, transparent) 0deg 0.6deg,
+      transparent 0.6deg 10deg);
   -webkit-mask: radial-gradient(circle closest-side, transparent 0 91%, #000 92% 99%, transparent 100%);
   mask: radial-gradient(circle closest-side, transparent 0 91%, #000 92% 99%, transparent 100%);
 }
@@ -333,7 +336,8 @@ html[dir='rtl'] .hub-body {
 .hub-center-badge {
   width: 58px;
   height: 58px;
-  border-radius: 9999px; /* CIRCULAR */
+  border-radius: 9999px;
+  /* CIRCULAR */
   border: 1px solid color-mix(in srgb, var(--hub-accent) 40%, transparent);
   background: linear-gradient(165deg, color-mix(in srgb, var(--hub-accent) 18%, #14121a), #111016 58%, #09090f);
   box-shadow: 0 0 16px color-mix(in srgb, var(--hub-accent) 20%, transparent), inset 0 1px 1px rgba(255, 255, 255, 0.25);
@@ -375,6 +379,7 @@ html[dir='rtl'] .hub-live-pill {
 }
 
 @keyframes hubLivePing {
+
   75%,
   100% {
     opacity: 0;
@@ -386,12 +391,10 @@ html[dir='rtl'] .hub-live-pill {
 .hub-cta-btn {
   height: var(--hub-row1-height);
   box-sizing: border-box;
-  background: linear-gradient(
-    to right,
-    var(--hub-accent-light),
-    var(--hub-accent) 50%,
-    var(--hub-accent-deep)
-  );
+  background: linear-gradient(to right,
+      var(--hub-accent-light),
+      var(--hub-accent) 50%,
+      var(--hub-accent-deep));
   box-shadow:
     inset 0 1.5px 0.5px rgba(255, 255, 255, 0.5),
     0 0 24px var(--hub-accent-glow),
@@ -403,12 +406,10 @@ html[dir='rtl'] .hub-live-pill {
 }
 
 html[dir='rtl'] .hub-cta-btn {
-  background: linear-gradient(
-    to left,
-    var(--hub-accent-light),
-    var(--hub-accent) 50%,
-    var(--hub-accent-deep)
-  );
+  background: linear-gradient(to left,
+      var(--hub-accent-light),
+      var(--hub-accent) 50%,
+      var(--hub-accent-deep));
 }
 
 .hub-cta-btn:not(:disabled):hover {
@@ -433,17 +434,17 @@ html[dir='rtl'] .hub-cta-btn {
 
 .hub-cta-text {
   font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14.5px;
 }
 
 html[dir='rtl'] .hub-cta-text {
   font-family: var(--font-cairo), sans-serif !important;
   letter-spacing: normal;
   text-transform: none;
-  font-size: 16px !important;
+  font-size: 15.5px !important;
   font-weight: 700 !important;
 }
 
@@ -451,13 +452,14 @@ html[dir='rtl'] .hub-cta-text {
   font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
   letter-spacing: 0.01em;
   font-size: 11.5px;
+  font-weight: 500;
 }
 
 html[dir='rtl'] .hub-cta-sub {
   font-family: var(--font-cairo), sans-serif !important;
   letter-spacing: normal;
   font-size: 14px !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 .hub-cta-arrow {
@@ -483,6 +485,7 @@ html[dir='rtl'] .hub-cta-btn:not(:disabled):hover .hub-cta-arrow {
   0% {
     transform: translateX(-130%) skewX(-20deg);
   }
+
   25%,
   100% {
     transform: translateX(280%) skewX(-20deg);
@@ -517,6 +520,7 @@ html[dir='rtl'] .hub-cta-btn:not(:disabled):hover .hub-cta-arrow {
   from {
     left: -35%;
   }
+
   to {
     left: 100%;
   }
@@ -567,7 +571,7 @@ html[dir='rtl'] .hub-cta-btn:not(:disabled):hover .hub-cta-arrow {
 
 .hub-solo-label {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
   line-height: 1;
 }
@@ -575,7 +579,7 @@ html[dir='rtl'] .hub-cta-btn:not(:disabled):hover .hub-cta-arrow {
 html[dir='rtl'] .hub-solo-label {
   font-family: var(--font-cairo), sans-serif !important;
   font-size: 14px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 /* ── Secondary Action Cards (Row 2: fixed 72px, no extra padding) ───── */
@@ -610,15 +614,15 @@ html[dir='rtl'] .hub-solo-label {
 .hub-card-title {
   color: var(--hub-text-primary);
   font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
-  font-size: 14.5px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: -0.01em;
 }
 
 html[dir='rtl'] .hub-card-title {
   font-family: var(--font-cairo), sans-serif !important;
-  font-size: 14.5px !important;
-  font-weight: 700 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
   line-height: 1.5;
   letter-spacing: normal;
 }
@@ -632,7 +636,7 @@ html[dir='rtl'] .hub-card-title {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.hub-feature-strip > div + div {
+.hub-feature-strip>div+div {
   border-inline-start: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -645,11 +649,9 @@ html[dir='rtl'] .hub-card-title {
   flex-shrink: 0;
   border-radius: 9999px;
   border: 1px solid color-mix(in srgb, var(--hub-accent) 22%, transparent);
-  background: radial-gradient(
-    circle at 50% 30%,
-    color-mix(in srgb, var(--hub-accent) 18%, transparent),
-    color-mix(in srgb, var(--hub-accent) 4%, transparent)
-  );
+  background: radial-gradient(circle at 50% 30%,
+      color-mix(in srgb, var(--hub-accent) 18%, transparent),
+      color-mix(in srgb, var(--hub-accent) 4%, transparent));
   transition:
     border-color 0.25s ease,
     background 0.25s ease,
@@ -658,7 +660,7 @@ html[dir='rtl'] .hub-card-title {
 
 .hub-feature-title {
   font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
   letter-spacing: -0.005em;
   line-height: 1.25;
@@ -668,13 +670,14 @@ html[dir='rtl'] .hub-card-title {
   font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
   color: var(--hub-text-muted);
   font-size: 11px;
+  font-weight: 300;
   line-height: 1.25;
 }
 
 html[dir='rtl'] .hub-feature-title {
   font-family: var(--font-cairo), sans-serif !important;
   font-size: 14px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   letter-spacing: normal;
   line-height: 1.3;
 }
@@ -682,7 +685,7 @@ html[dir='rtl'] .hub-feature-title {
 html[dir='rtl'] .hub-feature-subline {
   font-family: var(--font-cairo), sans-serif !important;
   font-size: 14px !important;
-  font-weight: 500 !important;
+  font-weight: 300 !important;
   letter-spacing: normal;
   line-height: 1.3;
 }
@@ -699,22 +702,27 @@ html[dir='rtl'] .hub-feature-subline {
     stroke-dashoffset: 748;
     opacity: 0.95;
   }
+
   78% {
     stroke-dashoffset: 0;
     opacity: 0.95;
   }
+
   84% {
     stroke-dashoffset: 0;
     opacity: 0.85;
   }
+
   92% {
     stroke-dashoffset: 0;
     opacity: 0;
   }
+
   94% {
     stroke-dashoffset: 748;
     opacity: 0;
   }
+
   100% {
     stroke-dashoffset: 748;
     opacity: 0.95;
@@ -738,11 +746,13 @@ html[dir='rtl'] .hub-feature-subline {
 }
 
 @keyframes snipeRadarBlip {
+
   0%,
   100% {
     opacity: 0.35;
     transform: scale(0.8);
   }
+
   50% {
     opacity: 1;
     transform: scale(1.2);
@@ -755,15 +765,24 @@ html[dir='rtl'] .hub-feature-subline {
   animation: snipeRadarBlip 4s ease-in-out infinite;
 }
 
-.snipe-blip-1 { animation-delay: 0.4s; }
-.snipe-blip-2 { animation-delay: 1.3s; }
-.snipe-blip-3 { animation-delay: 2.2s; }
+.snipe-blip-1 {
+  animation-delay: 0.4s;
+}
+
+.snipe-blip-2 {
+  animation-delay: 1.3s;
+}
+
+.snipe-blip-3 {
+  animation-delay: 2.2s;
+}
 
 @keyframes snipeSonarPing {
   0% {
     opacity: 0.6;
     scale: 1;
   }
+
   100% {
     opacity: 0;
     scale: 4.4;
@@ -793,6 +812,7 @@ html[dir='rtl'] .hub-feature-subline {
     opacity: 0.55;
     transform: scale(0.985);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -808,16 +828,19 @@ html[dir='rtl'] .hub-feature-subline {
 }
 
 @keyframes draftDotIlluminate {
+
   0%,
   100% {
     opacity: 0.15;
     transform: scale(0.9);
   }
+
   16%,
   68% {
     opacity: 1;
     transform: scale(1.15);
   }
+
   84% {
     opacity: 0.2;
     transform: scale(0.95);
@@ -829,6 +852,7 @@ html[dir='rtl'] .hub-feature-subline {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .hub-cta-shine,
   .hub-cta-progress::after,
   .hub-title-sheen,
@@ -844,9 +868,11 @@ html[dir='rtl'] .hub-feature-subline {
   .draft-formation-dot {
     animation: none !important;
   }
+
   .draft-board-arc {
     stroke-dashoffset: 0 !important;
   }
+
   .hub-cta-btn,
   .hub-cta-arrow,
   .hub-action-card,
@@ -854,4 +880,131 @@ html[dir='rtl'] .hub-feature-subline {
   .hub-solo-tile {
     transition: none !important;
   }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Tactical Extensions: Join Room Cipher & Create Room Command Console
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Tactical 6-Character Code Slots ── */
+.hub-code-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  flex: 1;
+  max-width: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  font-family: var(--font-mono, monospace);
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  user-select: none;
+}
+
+.hub-code-slot-filled {
+  border-color: color-mix(in srgb, var(--hub-accent) 65%, transparent);
+  background: color-mix(in srgb, var(--hub-accent) 14%, rgba(7, 9, 15, 0.8));
+  color: var(--hub-accent-light, #fff);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--hub-accent) 25%, transparent),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.hub-code-slot-active {
+  border-color: var(--hub-accent);
+  box-shadow: 0 0 16px var(--hub-accent-glow),
+              inset 0 0 8px color-mix(in srgb, var(--hub-accent) 30%, transparent);
+  animation: hubSlotActivePulse 1.8s ease-in-out infinite;
+}
+
+@keyframes hubSlotActivePulse {
+  0%, 100% {
+    border-color: var(--hub-accent);
+  }
+  50% {
+    border-color: color-mix(in srgb, var(--hub-accent-light) 90%, white);
+  }
+}
+
+/* ── 4-Game Tactical Switcher Deck ── */
+.hub-game-tab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 4px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.hub-game-tab:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hub-game-tab-active {
+  border-color: var(--hub-accent);
+  background: color-mix(in srgb, var(--hub-accent) 15%, rgba(11, 15, 23, 0.85));
+  box-shadow: 0 0 18px var(--hub-accent-glow),
+              inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+/* ── Tactical Config Deck (Zero Scroll) ── */
+.hub-config-dock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(11, 15, 23, 0.75);
+  backdrop-filter: blur(16px) saturate(130%);
+  -webkit-backdrop-filter: blur(16px) saturate(130%);
+  padding: 10px 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4),
+              inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.hub-config-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 12px;
+  font-weight: 700;
+  color: #c5cad6;
+  transition: all 0.18s ease;
+  cursor: pointer;
+}
+
+html[dir='rtl'] .hub-config-chip {
+  font-family: var(--font-cairo), sans-serif;
+  font-size: 13px;
+}
+
+.hub-config-chip:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.hub-config-chip-active {
+  border-color: var(--hub-accent);
+  background: color-mix(in srgb, var(--hub-accent) 18%, rgba(7, 9, 15, 0.9));
+  color: #fff;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--hub-accent) 25%, transparent),
+              inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }

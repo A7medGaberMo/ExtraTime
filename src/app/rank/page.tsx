@@ -172,7 +172,7 @@ export default function RankHubPage() {
 
         <HubSoloButton
           id="rank-solo-btn"
-          title={t('rankHub.playSolo')}
+          title={t('rankHub.solo')}
           onClick={() => handleOpenSheet('solo')}
           disabled={loading}
         />
@@ -188,10 +188,10 @@ export default function RankHubPage() {
         }}
       >
         <SecondaryActionButton
-          id="rank-private-room-btn"
+          id="rank-private-room-link"
           label={t('rankHub.privateRoom')}
           icon={Users}
-          onClick={() => handleOpenSheet('duel_create')}
+          href="/create-room?mode=rank"
           disabled={loading}
         />
 

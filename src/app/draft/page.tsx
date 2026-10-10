@@ -40,9 +40,8 @@ export default function DraftHubPage() {
 
   // Convex query: Live matchmaking queue counts for Draft
   const draftQueueSummary = useQuery(api.draft.queries.getPublicQueueSummary);
-  // Convex mutations: Find or create public match, and create private duel
+  // Convex mutations: Find or create public match
   const findPublicMatch = useMutation(api.draft.mutations.findOrCreatePublicMatch);
-  const createPrivateRoom = useMutation(api.draft.mutations.createDuelPrivateRoom);
 
   const waitingCount = draftQueueSummary?.waitingCount ?? 0;
   const queueReady = draftQueueSummary !== undefined;
@@ -69,32 +68,6 @@ export default function DraftHubPage() {
     } catch (error: unknown) {
       const err = error as { message?: string };
       toast(err.message || 'Matchmaking failed. Please try again.', 'error');
-      setLoading(false);
-    }
-  };
-
-  const handleCreatePrivate = async () => {
-    if (loading) return;
-    setLoading(true);
-
-    try {
-      const activeName = (nickname || '').trim() || randomName();
-      const guestId = await ensureGuestId(activeName);
-      const actionSessionToken =
-        typeof window !== 'undefined'
-          ? localStorage.getItem('extratime_sessionToken') || undefined
-          : undefined;
-
-      const result = await createPrivateRoom({
-        hostId: guestId,
-        sessionToken: actionSessionToken,
-      });
-
-      sfx.kickoff();
-      router.push(`/draft/${result.gameId}`);
-    } catch (error: unknown) {
-      const err = error as { message?: string };
-      toast(err.message || 'Could not create private room. Please try again.', 'error');
       setLoading(false);
     }
   };
@@ -156,10 +129,10 @@ export default function DraftHubPage() {
         }}
       >
         <SecondaryActionButton
-          id="draft-private-room-btn"
+          id="draft-private-room-link"
           label={t('draftHub.privateRoom')}
           icon={Users}
-          onClick={handleCreatePrivate}
+          href="/create-room?mode=draft"
           disabled={loading}
         />
 

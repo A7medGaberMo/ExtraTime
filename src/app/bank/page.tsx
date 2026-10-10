@@ -32,12 +32,11 @@ export default function BankHubPage() {
   const [nickname] = useGuestNickname();
 
   const createSolo = useMutation(api.bank.mutations.createSoloGame);
-  const createDuel = useMutation(api.bank.mutations.createDuelPrivateRoom);
   const findPublicMatch = useMutation(api.bank.mutations.findOrCreatePublicMatch);
 
   const queueStats = useQuery(api.bank.queries.getPublicQueueSummary);
 
-  const [loadingAction, setLoadingAction] = useState<'public' | 'solo' | 'duel' | null>(null);
+  const [loadingAction, setLoadingAction] = useState<'public' | 'solo' | null>(null);
 
   const waitingCount = queueStats?.waitingCount ?? 0;
   const queueReady = queueStats !== undefined;
@@ -78,21 +77,6 @@ export default function BankHubPage() {
       router.push(`/bank/${res.gameId}`);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Failed to start solo game';
-      toast({ title: 'Error', message: msg, type: 'error' });
-      setLoadingAction(null);
-    }
-  };
-
-  // Row 2 Action 1: Private Room
-  const handleCreatePrivate = async () => {
-    if (loadingAction) return;
-    setLoadingAction('duel');
-    try {
-      const { guestId: ensuredId, token } = await getEnsuredIdentity();
-      const res = await createDuel({ hostId: ensuredId, sessionToken: token });
-      router.push(`/bank/${res.gameId}`);
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Failed to create room';
       toast({ title: 'Error', message: msg, type: 'error' });
       setLoadingAction(null);
     }
@@ -164,10 +148,10 @@ export default function BankHubPage() {
         }}
       >
         <SecondaryActionButton
-          id="bank-private-room-btn"
+          id="bank-private-room-link"
           label={t('bankHub.privateRoom')}
           icon={Users}
-          onClick={handleCreatePrivate}
+          href="/create-room?mode=bank"
           disabled={loadingAction !== null}
         />
 

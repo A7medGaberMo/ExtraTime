@@ -42,7 +42,7 @@ export const GAMES: Record<GameId, GameDefinition> = {
   rank: {
     id: 'rank',
     href: '/rank',
-    createHref: '/rank',
+    createHref: '/create-room?mode=rank',
     joinHref: '/rank',
     icon: Ranking,
     titleKey: 'game.rank.title',
@@ -52,7 +52,7 @@ export const GAMES: Record<GameId, GameDefinition> = {
   draft: {
     id: 'draft',
     href: '/draft',
-    createHref: '/draft',
+    createHref: '/create-room?mode=draft',
     joinHref: '/draft',
     icon: Lightning,
     titleKey: 'game.draft.title',
@@ -62,7 +62,7 @@ export const GAMES: Record<GameId, GameDefinition> = {
   bank: {
     id: 'bank',
     href: '/bank',
-    createHref: '/bank',
+    createHref: '/create-room?mode=bank',
     joinHref: '/bank',
     icon: Vault,
     titleKey: 'game.bank.title',
