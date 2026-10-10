@@ -24,6 +24,7 @@ import {
   Trophy,
   ShieldCheck,
   CircleNotch,
+  Coins,
   type Icon,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
@@ -46,14 +47,16 @@ interface GameTileDef {
   id: GameId;
   nameEn: string;
   nameAr: string;
+  subtitleEn: string;
+  subtitleAr: string;
   icon: Icon;
 }
 
 const GAMES: GameTileDef[] = [
-  { id: 'snipe', nameEn: 'Snipe', nameAr: 'سنايب', icon: Crosshair },
-  { id: 'draft', nameEn: 'Draft', nameAr: 'درافت', icon: TShirt },
-  { id: 'rank', nameEn: 'Rank', nameAr: 'ترتيب', icon: Ranking },
-  { id: 'bank', nameEn: 'Bank', nameAr: 'بَنِّك', icon: Vault },
+  { id: 'snipe', nameEn: 'Snipe', nameAr: 'سنايب', subtitleEn: 'Auction', subtitleAr: 'المزاد', icon: Crosshair },
+  { id: 'draft', nameEn: 'Draft', nameAr: 'درافت', subtitleEn: 'Squad', subtitleAr: 'التشكيلة', icon: TShirt },
+  { id: 'rank', nameEn: 'Rank', nameAr: 'ترتيب', subtitleEn: 'Tiers', subtitleAr: 'القوائم', icon: Ranking },
+  { id: 'bank', nameEn: 'Bank', nameAr: 'بَنِّك', subtitleEn: 'Vault', subtitleAr: 'الخزنة', icon: Vault },
 ];
 
 function CreateRoomContent() {
@@ -104,7 +107,7 @@ function CreateRoomContent() {
     }
   }, []);
 
-  // Keyboard navigation for Game Selector Radio Group
+  // Keyboard navigation for Game Selector
   const handleGameKeyDown = (e: React.KeyboardEvent, index: number) => {
     let nextIndex = index;
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
@@ -410,99 +413,94 @@ function CreateRoomContent() {
   return (
     <div
       data-game={selectedGame}
-      className="hub-page relative flex h-[100dvh] max-h-[100dvh] w-full flex-col justify-between items-center overflow-hidden bg-[#07090F] select-none transition-colors duration-300"
+      className="hub-page relative flex h-[100dvh] max-h-[100dvh] w-full flex-col justify-between items-center overflow-hidden bg-[#07090F] select-none transition-colors duration-700"
       style={{
-        paddingTop: 'calc(max(env(safe-area-inset-top, 0px), 8px) + 52px + 10px)',
+        paddingTop: 'calc(max(env(safe-area-inset-top, 0px), 8px) + 56px + 10px)',
         paddingBottom: 'calc(max(env(safe-area-inset-bottom, 0px), 8px) + 8px)',
       }}
     >
-      {/* ── Background: Subtle Tactical Pitch Grid ── */}
+      {/* ── 1. Stadium Corner Lights FX (Home Vibe) ── */}
+      <div className="absolute top-0 left-0 w-[55vw] h-[55vw] bg-white/5 rounded-full blur-[120px] pointer-events-none mix-blend-screen transform -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute top-0 right-0 w-[55vw] h-[55vw] bg-white/5 rounded-full blur-[120px] pointer-events-none mix-blend-screen transform translate-x-1/2 -translate-y-1/2" />
+
+      {/* ── 2. 3D Perspective Pitch Lines Overlay (Home Vibe) ── */}
       <div
-        className="pointer-events-none absolute inset-0 z-0 opacity-[0.035]"
+        className="absolute inset-0 z-0 opacity-[0.025] pointer-events-none"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px)',
-          backgroundSize: '36px 36px',
+            'linear-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.4) 1px, transparent 1px)',
+          backgroundSize: '100px 100px',
+          transform: 'perspective(1000px) rotateX(68deg) scale(2)',
+          transformOrigin: 'top center',
         }}
-        aria-hidden="true"
       />
 
-      {/* ── Atmospheric Vignette ── */}
+      {/* ── 3. Atmospheric Core Glow (Hub Vibe — follows game accent) ── */}
       <div
-        className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(7,9,15,0.75)_100%)]"
-        aria-hidden="true"
-      />
-
-      {/* ── Atmospheric Core Glow (Token Driven & Animated Breathing) ── */}
-      <div
-        className="hub-core-glow pointer-events-none absolute top-1/2 left-1/2 -z-0 h-[340px] w-[340px] -translate-x-1/2 -translate-y-[52%] rounded-full blur-3xl sm:h-[460px] sm:w-[460px] transition-all duration-500"
+        className="hub-core-glow pointer-events-none absolute top-1/2 left-1/2 -z-0 h-[380px] w-[380px] -translate-x-1/2 -translate-y-[52%] rounded-full blur-3xl sm:h-[500px] sm:w-[500px] transition-all duration-700"
         style={{
           background:
-            'radial-gradient(circle, color-mix(in srgb, var(--hub-accent) 24%, transparent) 0%, color-mix(in srgb, var(--hub-accent) 6%, transparent) 45%, transparent 70%)',
+            'radial-gradient(circle, color-mix(in srgb, var(--hub-accent) 28%, transparent) 0%, color-mix(in srgb, var(--hub-accent) 8%, transparent) 45%, transparent 70%)',
         }}
         aria-hidden="true"
       />
 
-      {/* ── Center Content Column (Max 500px) ── */}
+      {/* ── Main Vertical Arena Stack (Max 500px) ── */}
       <div className="relative z-10 mx-auto flex h-full max-h-full w-full max-w-[500px] flex-1 min-h-0 flex-col justify-between px-3.5 sm:px-4">
-        {/* ── 1. TITLE BLOCK (Compact & Refined) ── */}
-        <div className="relative w-full flex flex-col items-center text-center shrink-0">
-          {/* Small 36px Circular Glass Back Button */}
+        
+        {/* ── TOP HERO: Hub Eyebrow + Metallic Sheen Title ── */}
+        <div className="relative w-full flex flex-col items-center shrink-0">
+          {/* Glass Circular Back Button */}
           <button
             type="button"
             onClick={handleBack}
             aria-label={t('common.back')}
             title={t('common.back')}
-            className="btn-haptic absolute start-0 top-1/2 -translate-y-1/2 size-9 rounded-full border border-white/10 bg-white/[0.04] text-[#C5CAD6] hover:text-white hover:border-[var(--hub-accent)] hover:shadow-[0_0_12px_var(--hub-accent-glow)] flex items-center justify-center transition-all cursor-pointer backdrop-blur-md shadow-xs z-20"
+            className="btn-haptic absolute start-0 top-1/2 -translate-y-1/2 size-9 rounded-full border border-white/10 bg-white/[0.04] text-[#C5CAD6] hover:text-white hover:border-[var(--hub-accent)] hover:shadow-[0_0_14px_var(--hub-accent-glow)] flex items-center justify-center transition-all cursor-pointer backdrop-blur-md shadow-xs z-20"
           >
             <AppIcon icon={ArrowLeft} size={15} weight="bold" className="rtl:rotate-180" />
           </button>
 
-          {/* Eyebrow with Side Lines */}
+          {/* Hub Eyebrow with side lines */}
           <div
             data-hub-eyebrow
-            className="hub-eyebrow-container flex w-full shrink-0 items-center justify-center gap-2.5 sm:gap-3"
-            style={{ height: '20px', marginBottom: '3px' }}
+            className="hub-eyebrow-container flex w-full shrink-0 items-center justify-center gap-2 sm:gap-2.5"
+            style={{ height: '16px', marginBottom: '2px' }}
           >
             <span className="hub-eyebrow-line shrink-0" aria-hidden="true" />
-            <span className="hub-eyebrow shrink-0">
+            <span className="hub-eyebrow shrink-0 text-[11px] sm:text-[11.5px]">
               {isRtl ? 'إعداد الغرفة' : 'ROOM SETUP'}
             </span>
             <span className="hub-eyebrow-line hub-eyebrow-line-end shrink-0" aria-hidden="true" />
           </div>
 
-          {/* Title with Metallic Sheen */}
+          {/* Shimmering Display Title */}
           <div
             data-hub-title
             className="flex w-full shrink-0 items-center justify-center text-center"
-            style={{ height: '36px', marginBottom: '2px' }}
+            style={{ height: '32px' }}
           >
-            <h1 className="hub-title hub-title-sheen leading-none drop-shadow-lg text-[27px] sm:text-[32px]">
+            <h1
+              className="hub-title-sheen font-display font-extrabold leading-none drop-shadow-lg text-center"
+              style={{
+                fontSize: isRtl ? '26px' : '24px',
+                fontFamily: isRtl ? 'var(--font-cairo), sans-serif' : 'var(--font-display)',
+                background: 'linear-gradient(180deg, #ffffff 15%, #e9e9ef 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
+            >
               {isRtl ? 'إنشاء غرفة' : 'Create Room'}
             </h1>
           </div>
-
-          {/* Subtitle (Hidden on short screens <= 660px as per shrink order 1) */}
-          <div
-            data-hub-subtitle
-            className="hidden [@media(min-height:660px)]:flex w-full shrink-0 items-center justify-center text-center"
-            style={{ height: '20px' }}
-          >
-            <p
-              className="hub-body leading-[1.4] text-center text-[#C5CAD6] truncate max-w-full"
-              dir={isRtl ? 'rtl' : 'ltr'}
-            >
-              {isRtl ? 'اختر اللعبة وحدد القواعد وادعُ منافسًا.' : 'Pick the game, set the rules, invite a rival.'}
-            </p>
-          </div>
         </div>
 
-        {/* ── 2. GAME SELECTOR (Radio Group, 4 equal tiles) ── */}
+        {/* ── GAME SELECTION DECK: 4 Stadium Cards (Home Lobby Vibe) ── */}
         <div
           id={gameSelectorId}
           role="radiogroup"
           aria-label={isRtl ? 'اللعبة' : 'Game'}
-          className="w-full grid grid-cols-4 gap-2 shrink-0 my-1 sm:my-1.5"
+          className="w-full grid grid-cols-4 gap-1.5 sm:gap-2 shrink-0 my-1"
         >
           {GAMES.map((game, idx) => {
             const isSelected = selectedGame === game.id;
@@ -519,18 +517,17 @@ function CreateRoomContent() {
                 onClick={() => handleSelectGame(game.id)}
                 onKeyDown={(e) => handleGameKeyDown(e, idx)}
                 className={cn(
-                  'btn-haptic relative group flex h-[50px] sm:h-[56px] flex-col items-center justify-center gap-1 rounded-2xl border transition-all duration-300 cursor-pointer overflow-hidden backdrop-blur-md focus-visible:outline-2 focus-visible:outline-offset-2',
+                  'btn-haptic relative group flex h-[52px] sm:h-[56px] flex-col items-center justify-center gap-0.5 rounded-2xl border transition-all duration-300 cursor-pointer overflow-hidden backdrop-blur-md',
                   isSelected
-                    ? 'border-transparent text-[#05070B] font-bold shadow-lg'
-                    : 'border-white/[0.08] bg-white/[0.03] text-[#C5CAD6] hover:border-white/20 hover:text-white hover:bg-white/[0.06]',
+                    ? 'border-transparent font-bold shadow-lg'
+                    : 'border-white/[0.08] bg-white/[0.03] text-[#C5CAD6] hover:border-white/20 hover:text-white hover:bg-white/[0.05]',
                 )}
                 style={
                   isSelected
                     ? {
                       background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
-                      boxShadow: '0 0 20px var(--hub-accent-glow), 0 2px 8px rgba(0, 0, 0, 0.3)',
+                      boxShadow: '0 0 20px var(--hub-accent-glow), 0 2px 8px rgba(0, 0, 0, 0.35)',
                       color: 'var(--game-on-accent, #05070b)',
-                      outlineColor: 'var(--hub-accent)',
                     }
                     : undefined
                 }
@@ -539,76 +536,111 @@ function CreateRoomContent() {
                   icon={IconComp}
                   size={20}
                   weight={isSelected ? 'fill' : 'duotone'}
-                  className={isSelected ? 'text-[#05070B]' : 'text-[#C5CAD6] transition-colors group-hover:text-white'}
+                  className={isSelected ? 'text-[#05070B]' : 'text-[#C5CAD6] group-hover:text-white'}
                 />
                 <span className={cn(
-                  'text-[12px] sm:text-[13px] font-bold leading-none tracking-tight',
-                  isRtl && 'font-cairo text-[13px] sm:text-[14px]',
+                  'text-[12px] sm:text-[13px] font-extrabold leading-tight tracking-tight',
+                  isRtl && 'font-cairo text-[12.5px] sm:text-[13.5px]',
                 )}>
                   {isRtl ? game.nameAr : game.nameEn}
+                </span>
+                <span
+                  className={cn(
+                    'text-[9px] leading-none hidden [@media(min-height:660px)]:block opacity-75 font-semibold',
+                    isSelected ? 'text-[#05070B]' : 'text-white/40',
+                  )}
+                >
+                  {isRtl ? game.subtitleAr : game.subtitleEn}
                 </span>
               </button>
             );
           })}
         </div>
 
-        {/* ── 3. CONTROL DECK (Single Glass Card with 1px dividers) ── */}
+        {/* ── THE MATCH ARENA CONSOLE (Hub Visual & Control Centerpiece) ── */}
         <div className="w-full flex-1 min-h-0 flex flex-col justify-center my-1 sm:my-1.5">
           <div
-            className="w-full rounded-2xl sm:rounded-3xl border bg-white/[0.03] p-3 sm:p-3.5 backdrop-blur-xl shadow-2xl flex flex-col justify-around gap-1 divide-y divide-white/[0.06] transition-all duration-300"
+            className="w-full rounded-2xl sm:rounded-3xl border bg-white/[0.03] p-3 sm:p-4 backdrop-blur-xl shadow-2xl flex flex-col justify-between gap-2.5 transition-all duration-500 relative overflow-hidden"
             style={{
-              borderColor: 'color-mix(in srgb, var(--hub-accent) 20%, rgba(255, 255, 255, 0.08))',
-              boxShadow: '0 16px 36px -8px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.08)',
+              borderColor: 'color-mix(in srgb, var(--hub-accent) 26%, rgba(255, 255, 255, 0.08))',
+              boxShadow: '0 20px 44px -10px rgba(0, 0, 0, 0.65), inset 0 1px 0 0 rgba(255, 255, 255, 0.1)',
             }}
           >
+            {/* Top Tactical Status Bar */}
+            <div className="flex items-center justify-between pb-1 border-b border-white/[0.06]">
+              <div className="flex items-center gap-1.5">
+                <span
+                  className="size-2 rounded-full animate-pulse"
+                  style={{
+                    backgroundColor: 'var(--hub-accent)',
+                    boxShadow: '0 0 10px var(--hub-accent-glow)',
+                  }}
+                />
+                <span className={cn(
+                  "text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-white/90",
+                  isRtl && "font-cairo text-[11px] sm:text-[12px]"
+                )}>
+                  {isRtl
+                    ? `قواعد ماتش ${GAMES.find((g) => g.id === selectedGame)?.nameAr}`
+                    : `${GAMES.find((g) => g.id === selectedGame)?.nameEn.toUpperCase()} MATCH ARENA`}
+                </span>
+              </div>
+              <span className="text-[10px] font-mono text-white/40 tracking-wider">
+                CUSTOM ROOM
+              </span>
+            </div>
+
             {/* ═══ SNIPE SETTINGS ═══ */}
             {selectedGame === 'snipe' && (
               <>
-                {/* Row 1: Match Format (Type B) */}
-                <div className="flex min-h-[48px] sm:min-h-[52px] items-center justify-between gap-2 pt-1 first:pt-0">
-                  <span className={cn(
-                    "w-[82px] sm:w-[96px] shrink-0 text-[12px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'نظام الماتش' : 'Match format'}
-                  </span>
-                  <div className="grid grid-cols-2 gap-1.5 sm:gap-2 flex-1">
+                {/* 1. Match Size Pitch Cards */}
+                <div className="flex flex-col gap-1.5">
+                  <div className="flex items-center justify-between text-[11.5px] sm:text-[12px] font-semibold text-white/60">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'نظام وتشكيل الماتش' : 'Match Format'}
+                    </span>
+                    <span className="text-white/40 font-mono text-[10px]">
+                      {matchSize === 11 ? '11 PLAYERS' : '5 PLAYERS'}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2">
                     <button
                       type="button"
                       onClick={() => updateSetting('snipe_size', 11, setMatchSize)}
                       className={cn(
-                        'btn-haptic flex h-[44px] sm:h-[48px] items-center justify-center gap-1.5 rounded-xl border px-1.5 transition-all cursor-pointer text-start backdrop-blur-md',
+                        'btn-haptic relative flex h-[50px] sm:h-[54px] items-center gap-2.5 rounded-2xl border p-2 text-start transition-all cursor-pointer backdrop-blur-md overflow-hidden',
                         matchSize === 11
-                          ? 'border-transparent font-bold shadow-md'
-                          : 'border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] hover:border-white/15 hover:bg-white/[0.04]',
+                          ? 'border-transparent font-bold shadow-lg'
+                          : 'border-white/[0.08] bg-white/[0.02] text-[#C5CAD6] hover:border-white/20 hover:bg-white/[0.04]',
                       )}
                       style={
                         matchSize === 11
                           ? {
                               background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
                               color: 'var(--game-on-accent, #05070b)',
-                              boxShadow: '0 0 14px var(--hub-accent-glow)',
+                              boxShadow: '0 0 16px var(--hub-accent-glow)',
                             }
                           : undefined
                       }
                     >
-                      <AppIcon
-                        icon={UsersFour}
-                        size={17}
-                        weight={matchSize === 11 ? 'fill' : 'duotone'}
-                        className={matchSize === 11 ? 'text-[#05070B]' : 'text-white/60'}
-                      />
+                      <div className={cn(
+                        "size-9 rounded-xl flex items-center justify-center shrink-0 border",
+                        matchSize === 11 ? "bg-black/15 border-black/10" : "bg-white/[0.04] border-white/10"
+                      )}>
+                        <AppIcon icon={UsersFour} size={20} weight={matchSize === 11 ? 'fill' : 'duotone'} />
+                      </div>
                       <div className="flex flex-col min-w-0">
                         <span className={cn(
-                          "text-[11.5px] sm:text-[12.5px] font-bold leading-tight whitespace-nowrap",
-                          isRtl && "font-cairo text-[12.5px] sm:text-[13.5px]"
+                          "text-[12.5px] sm:text-[13px] font-extrabold leading-tight truncate",
+                          isRtl && "font-cairo text-[13px] sm:text-[14px]"
                         )}>
-                          {isRtl ? 'ماتش كامل' : 'Full match'}
+                          {isRtl ? 'ماتش كامل' : 'Full Pitch'}
                         </span>
                         <span
                           dir="ltr"
                           className={cn(
-                            'text-[9.5px] sm:text-[10px] leading-tight font-medium hidden [@media(min-height:660px)]:block',
+                            'text-[10px] font-mono leading-tight font-medium',
                             matchSize === 11 ? 'text-[#05070B]/85 font-bold' : 'text-white/45',
                           )}
                         >
@@ -621,38 +653,38 @@ function CreateRoomContent() {
                       type="button"
                       onClick={() => updateSetting('snipe_size', 5, setMatchSize)}
                       className={cn(
-                        'btn-haptic flex h-[44px] sm:h-[48px] items-center justify-center gap-1.5 rounded-xl border px-1.5 transition-all cursor-pointer text-start backdrop-blur-md',
+                        'btn-haptic relative flex h-[50px] sm:h-[54px] items-center gap-2.5 rounded-2xl border p-2 text-start transition-all cursor-pointer backdrop-blur-md overflow-hidden',
                         matchSize === 5
-                          ? 'border-transparent font-bold shadow-md'
-                          : 'border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] hover:border-white/15 hover:bg-white/[0.04]',
+                          ? 'border-transparent font-bold shadow-lg'
+                          : 'border-white/[0.08] bg-white/[0.02] text-[#C5CAD6] hover:border-white/20 hover:bg-white/[0.04]',
                       )}
                       style={
                         matchSize === 5
                           ? {
                               background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
                               color: 'var(--game-on-accent, #05070b)',
-                              boxShadow: '0 0 14px var(--hub-accent-glow)',
+                              boxShadow: '0 0 16px var(--hub-accent-glow)',
                             }
                           : undefined
                       }
                     >
-                      <AppIcon
-                        icon={Users}
-                        size={17}
-                        weight={matchSize === 5 ? 'fill' : 'duotone'}
-                        className={matchSize === 5 ? 'text-[#05070B]' : 'text-white/60'}
-                      />
+                      <div className={cn(
+                        "size-9 rounded-xl flex items-center justify-center shrink-0 border",
+                        matchSize === 5 ? "bg-black/15 border-black/10" : "bg-white/[0.04] border-white/10"
+                      )}>
+                        <AppIcon icon={Users} size={20} weight={matchSize === 5 ? 'fill' : 'duotone'} />
+                      </div>
                       <div className="flex flex-col min-w-0">
                         <span className={cn(
-                          "text-[11.5px] sm:text-[12.5px] font-bold leading-tight whitespace-nowrap",
-                          isRtl && "font-cairo text-[12.5px] sm:text-[13.5px]"
+                          "text-[12.5px] sm:text-[13px] font-extrabold leading-tight truncate",
+                          isRtl && "font-cairo text-[13px] sm:text-[14px]"
                         )}>
-                          {isRtl ? 'خماسي' : '5-a-side'}
+                          {isRtl ? 'ملعب خماسي' : 'Futsal Cage'}
                         </span>
                         <span
                           dir="ltr"
                           className={cn(
-                            'text-[9.5px] sm:text-[10px] leading-tight font-medium hidden [@media(min-height:660px)]:block',
+                            'text-[10px] font-mono leading-tight font-medium',
                             matchSize === 5 ? 'text-[#05070B]/85 font-bold' : 'text-white/45',
                           )}
                         >
@@ -663,15 +695,19 @@ function CreateRoomContent() {
                   </div>
                 </div>
 
-                {/* Row 2: Starting Budget (Type A) */}
-                <div className="flex min-h-[42px] sm:min-h-[46px] items-center justify-between gap-2 pt-1.5">
-                  <span className={cn(
-                    "w-[82px] sm:w-[96px] shrink-0 text-[12px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'الميزانية المبدئية' : 'Starting budget'}
-                  </span>
-                  <div className="flex-1 flex items-center p-1 rounded-xl border border-white/[0.06] bg-black/40 gap-1 backdrop-blur-md">
+                {/* 2. Transfer War Chest Budget */}
+                <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="flex items-center justify-between text-[11.5px] sm:text-[12px] font-semibold text-white/60">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'ميزانية المزاد المبدئية' : 'Transfer War Chest'}
+                    </span>
+                    <span className="flex items-center gap-1 text-[11px] font-mono font-bold" style={{ color: 'var(--hub-accent)' }}>
+                      <AppIcon icon={Coins} size={13} weight="fill" />
+                      <bdi dir="ltr">${startingBudget}M</bdi>
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-1.5 p-1 rounded-2xl border border-white/[0.08] bg-black/40 backdrop-blur-md">
                     {[100, 150, 200].map((b) => {
                       const isSel = startingBudget === b;
                       return (
@@ -680,9 +716,9 @@ function CreateRoomContent() {
                           type="button"
                           onClick={() => updateSetting('snipe_budget', b, setStartingBudget)}
                           className={cn(
-                            'btn-haptic flex-1 h-7.5 sm:h-8 rounded-lg text-[11.5px] sm:text-[12.5px] font-bold transition-all cursor-pointer flex items-center justify-center',
+                            'btn-haptic flex h-9 sm:h-9.5 items-center justify-center rounded-xl text-[12px] sm:text-[13px] font-extrabold transition-all cursor-pointer',
                             isSel
-                              ? 'text-[#05070B] font-extrabold shadow-sm'
+                              ? 'text-[#05070B] shadow-md'
                               : 'text-[#C5CAD6] hover:text-white hover:bg-white/[0.04]',
                           )}
                           style={
@@ -701,13 +737,12 @@ function CreateRoomContent() {
                   </div>
                 </div>
 
-                {/* Row 3: Player Pool (Type C) */}
-                <div className="flex flex-col gap-1 pt-1.5">
-                  <div className={cn(
-                    "text-[12px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'مجموعة اللاعبين' : 'Player pool'}
+                {/* 3. Player Pool Crests */}
+                <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="text-[11.5px] sm:text-[12px] font-semibold text-white/60 text-start">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'مجموعة اللاعبين' : 'Player Talent Pool'}
+                    </span>
                   </div>
                   <div className="grid grid-cols-5 gap-1 sm:gap-1.5">
                     {[
@@ -725,7 +760,7 @@ function CreateRoomContent() {
                           type="button"
                           onClick={() => updateSetting('snipe_pool', pool.id as PoolMode, setPoolMode)}
                           className={cn(
-                            'btn-haptic flex h-[48px] sm:h-[54px] flex-col items-center justify-center rounded-xl border p-0.5 text-center transition-all cursor-pointer backdrop-blur-md',
+                            'btn-haptic flex h-[50px] sm:h-[54px] flex-col items-center justify-center rounded-xl border p-1 text-center transition-all cursor-pointer backdrop-blur-md',
                             isSel
                               ? 'border-transparent text-[#05070B] font-bold shadow-md'
                               : 'border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] hover:border-white/15 hover:text-white hover:bg-white/[0.04]',
@@ -742,13 +777,13 @@ function CreateRoomContent() {
                         >
                           <AppIcon
                             icon={IconC}
-                            size={16}
+                            size={17}
                             weight={isSel ? 'fill' : 'duotone'}
                             className={isSel ? 'text-[#05070B]' : 'text-white/60'}
                           />
                           <span className={cn(
                             "text-[9.5px] sm:text-[10px] font-bold leading-tight line-clamp-2 mt-0.5",
-                            isRtl && "font-cairo text-[10.5px] sm:text-[11px]"
+                            isRtl && "font-cairo text-[10px] sm:text-[11px]"
                           )}>
                             {isRtl ? pool.labelAr : pool.labelEn}
                           </span>
@@ -763,57 +798,67 @@ function CreateRoomContent() {
             {/* ═══ DRAFT SETTINGS ═══ */}
             {selectedGame === 'draft' && (
               <>
-                {/* Row 1: Match Format (Type B) */}
-                <div className="flex min-h-[48px] sm:min-h-[52px] items-center justify-between gap-2.5 pt-1 first:pt-0">
-                  <span className={cn(
-                    "w-[88px] sm:w-[98px] shrink-0 text-[12.5px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13.5px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'نظام الماتش' : 'Match format'}
-                  </span>
-                  <div className="grid grid-cols-2 gap-1.5 sm:gap-2 flex-1">
+                {/* 1. Pick Format */}
+                <div className="flex flex-col gap-1.5">
+                  <div className="flex items-center justify-between text-[11.5px] sm:text-[12px] font-semibold text-white/60">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'نظام وتشكيل الدرافت' : 'Draft Pick Strategy'}
+                    </span>
+                    <span className="text-white/40 font-mono text-[10px]">
+                      11 PICKS
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2">
                     <div
-                      className="flex h-[44px] sm:h-[48px] items-center justify-center gap-2 rounded-xl border border-transparent font-bold text-[#05070B] shadow-md px-2 text-start"
+                      className="flex h-[50px] sm:h-[54px] items-center gap-2.5 rounded-2xl border border-transparent p-2 text-start font-bold shadow-lg"
                       style={{
                         background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
                         color: 'var(--game-on-accent, #05070b)',
-                        boxShadow: '0 0 14px var(--hub-accent-glow)',
+                        boxShadow: '0 0 16px var(--hub-accent-glow)',
                       }}
                     >
-                      <AppIcon icon={TShirt} size={18} weight="fill" className="text-[#05070B]" />
+                      <div className="size-9 rounded-xl flex items-center justify-center shrink-0 bg-black/15 border border-black/10">
+                        <AppIcon icon={TShirt} size={20} weight="fill" className="text-[#05070B]" />
+                      </div>
                       <div className="flex flex-col min-w-0">
-                        <span className={cn("text-[12px] sm:text-[12.5px] font-bold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[13.5px]")}>
-                          {isRtl ? 'ماتش كامل' : '11 vs 11'}
+                        <span className={cn("text-[12.5px] sm:text-[13px] font-extrabold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[14px]")}>
+                          {isRtl ? 'تشكيلة كاملة' : '11 vs 11 Duel'}
                         </span>
-                        <span className="text-[9.5px] sm:text-[10px] text-[#05070B]/85 font-bold hidden [@media(min-height:660px)]:block">
-                          {isRtl ? 'تشكيلة 11 لاعب' : 'Full lineup'}
+                        <span className="text-[10px] font-mono leading-tight text-[#05070B]/85 font-bold">
+                          {isRtl ? '11 مركز رئيسي' : 'Full Lineup'}
                         </span>
                       </div>
                     </div>
 
-                    <div className="flex h-[44px] sm:h-[48px] items-center justify-center gap-2 rounded-xl border border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] px-2 text-start">
-                      <AppIcon icon={Lightning} size={18} weight="duotone" className="text-white/60" />
+                    <div className="flex h-[50px] sm:h-[54px] items-center gap-2.5 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-2 text-start text-[#C5CAD6]">
+                      <div className="size-9 rounded-xl flex items-center justify-center shrink-0 bg-white/[0.04] border border-white/10">
+                        <AppIcon icon={Lightning} size={20} weight="duotone" className="text-white/60" />
+                      </div>
                       <div className="flex flex-col min-w-0">
-                        <span className={cn("text-[12px] sm:text-[12.5px] font-bold leading-tight truncate text-white/90", isRtl && "font-cairo text-[13px] sm:text-[13.5px]")}>
-                          {isRtl ? 'اختيار بالدور' : 'Turn-based'}
+                        <span className={cn("text-[12.5px] sm:text-[13px] font-extrabold leading-tight truncate text-white/90", isRtl && "font-cairo text-[13px] sm:text-[14px]")}>
+                          {isRtl ? 'اختيار بالدور' : 'Turn-Based'}
                         </span>
-                        <span className="text-[9.5px] sm:text-[10px] text-white/45 hidden [@media(min-height:660px)]:block">
-                          {isRtl ? 'لاعب في كل دور' : '1 pick per turn'}
+                        <span className="text-[10px] font-mono leading-tight text-white/45">
+                          {isRtl ? 'لاعب لكل دور' : '1 pick per turn'}
                         </span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Row 2: Chemistry (Type A) */}
-                <div className="flex min-h-[42px] sm:min-h-[46px] items-center justify-between gap-2.5 pt-1.5">
-                  <span className={cn(
-                    "w-[88px] sm:w-[98px] shrink-0 text-[12.5px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13.5px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'نظام الكيمياء' : 'Chemistry'}
-                  </span>
-                  <div className="flex-1 flex items-center p-1 rounded-xl border border-white/[0.06] bg-black/40 gap-1 backdrop-blur-md">
+                {/* 2. Chemistry Engine */}
+                <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="flex items-center justify-between text-[11.5px] sm:text-[12px] font-semibold text-white/60">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'قواعد ربط الكيمياء' : 'Chemistry Engine'}
+                    </span>
+                    <span className="text-white/40 font-mono text-[10px]">
+                      {draftChemistry === 'full' ? 'NATION · CLUB · LEAGUE' : 'OPEN LINK'}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl border border-white/[0.08] bg-black/40 backdrop-blur-md">
                     {[
                       { id: 'full', labelEn: 'Full Synergy', labelAr: 'نادي · دوري · جنسية' },
                       { id: 'relaxed', labelEn: 'Free Link', labelAr: 'ربط حر' },
@@ -825,11 +870,11 @@ function CreateRoomContent() {
                           type="button"
                           onClick={() => updateSetting('draft_chem', opt.id as DraftChemistry, setDraftChemistry)}
                           className={cn(
-                            'btn-haptic flex-1 h-7.5 sm:h-8 rounded-lg text-[11.5px] sm:text-[12.5px] font-bold transition-all cursor-pointer flex items-center justify-center',
+                            'btn-haptic flex h-9 sm:h-9.5 items-center justify-center rounded-xl text-[12px] sm:text-[13px] font-extrabold transition-all cursor-pointer',
                             isSel
-                              ? 'text-[#05070B] font-extrabold shadow-sm'
+                              ? 'text-[#05070B] shadow-md'
                               : 'text-[#C5CAD6] hover:text-white hover:bg-white/[0.04]',
-                            isRtl && 'font-cairo text-[12px] sm:text-[13px]',
+                            isRtl && 'font-cairo text-[12.5px] sm:text-[13.5px]',
                           )}
                           style={
                             isSel
@@ -848,13 +893,12 @@ function CreateRoomContent() {
                   </div>
                 </div>
 
-                {/* Row 3: Player Pool (Type C) */}
-                <div className="flex flex-col gap-1 pt-1.5">
-                  <div className={cn(
-                    "text-[12px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'مجموعة اللاعبين' : 'Player pool'}
+                {/* 3. Player Pool */}
+                <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="text-[11.5px] sm:text-[12px] font-semibold text-white/60 text-start">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'مجموعة اللاعبين' : 'Player Talent Pool'}
+                    </span>
                   </div>
                   <div className="grid grid-cols-5 gap-1 sm:gap-1.5">
                     {[
@@ -872,7 +916,7 @@ function CreateRoomContent() {
                           type="button"
                           onClick={() => updateSetting('draft_pool', pool.id as PoolMode, setDraftPool)}
                           className={cn(
-                            'btn-haptic flex h-[48px] sm:h-[54px] flex-col items-center justify-center rounded-xl border p-0.5 text-center transition-all cursor-pointer backdrop-blur-md',
+                            'btn-haptic flex h-[50px] sm:h-[54px] flex-col items-center justify-center rounded-xl border p-1 text-center transition-all cursor-pointer backdrop-blur-md',
                             isSel
                               ? 'border-transparent text-[#05070B] font-bold shadow-md'
                               : 'border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] hover:border-white/15 hover:text-white hover:bg-white/[0.04]',
@@ -889,13 +933,13 @@ function CreateRoomContent() {
                         >
                           <AppIcon
                             icon={IconC}
-                            size={16}
+                            size={17}
                             weight={isSel ? 'fill' : 'duotone'}
                             className={isSel ? 'text-[#05070B]' : 'text-white/60'}
                           />
                           <span className={cn(
                             "text-[9.5px] sm:text-[10px] font-bold leading-tight line-clamp-2 mt-0.5",
-                            isRtl && "font-cairo text-[10.5px] sm:text-[11px]"
+                            isRtl && "font-cairo text-[10px] sm:text-[11px]"
                           )}>
                             {isRtl ? pool.labelAr : pool.labelEn}
                           </span>
@@ -910,40 +954,48 @@ function CreateRoomContent() {
             {/* ═══ RANK SETTINGS ═══ */}
             {selectedGame === 'rank' && (
               <>
-                {/* Row 1: Match Rounds (Type B) */}
-                <div className="flex min-h-[48px] sm:min-h-[52px] items-center justify-between gap-2.5 pt-1 first:pt-0">
-                  <span className={cn(
-                    "w-[88px] sm:w-[98px] shrink-0 text-[12.5px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13.5px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'نظام الماتش' : 'Match format'}
-                  </span>
-                  <div className="grid grid-cols-2 gap-1.5 sm:gap-2 flex-1">
+                {/* 1. Round Count */}
+                <div className="flex flex-col gap-1.5">
+                  <div className="flex items-center justify-between text-[11.5px] sm:text-[12px] font-semibold text-white/60">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'طول الماتش والجولات' : 'Match Duel Length'}
+                    </span>
+                    <span className="text-white/40 font-mono text-[10px]">
+                      {rankRounds} ROUNDS
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2">
                     <button
                       type="button"
                       onClick={() => updateSetting('rank_rounds', 3, setRankRounds)}
                       className={cn(
-                        'btn-haptic flex h-[44px] sm:h-[48px] items-center justify-center gap-2 rounded-xl border px-2 transition-all cursor-pointer text-start backdrop-blur-md',
+                        'btn-haptic relative flex h-[50px] sm:h-[54px] items-center gap-2.5 rounded-2xl border p-2 text-start transition-all cursor-pointer backdrop-blur-md',
                         rankRounds === 3
-                          ? 'border-transparent font-bold shadow-md'
-                          : 'border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] hover:border-white/15 hover:bg-white/[0.04]',
+                          ? 'border-transparent font-bold shadow-lg'
+                          : 'border-white/[0.08] bg-white/[0.02] text-[#C5CAD6] hover:border-white/20 hover:bg-white/[0.04]',
                       )}
                       style={
                         rankRounds === 3
                           ? {
                               background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
                               color: 'var(--game-on-accent, #05070b)',
-                              boxShadow: '0 0 14px var(--hub-accent-glow)',
+                              boxShadow: '0 0 16px var(--hub-accent-glow)',
                             }
                           : undefined
                       }
                     >
-                      <AppIcon icon={Ranking} size={18} weight={rankRounds === 3 ? 'fill' : 'duotone'} className={rankRounds === 3 ? 'text-[#05070B]' : 'text-white/60'} />
+                      <div className={cn(
+                        "size-9 rounded-xl flex items-center justify-center shrink-0 border",
+                        rankRounds === 3 ? "bg-black/15 border-black/10" : "bg-white/[0.04] border-white/10"
+                      )}>
+                        <AppIcon icon={Ranking} size={20} weight={rankRounds === 3 ? 'fill' : 'duotone'} />
+                      </div>
                       <div className="flex flex-col min-w-0">
-                        <span className={cn("text-[12px] sm:text-[12.5px] font-bold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[13.5px]")}>
+                        <span className={cn("text-[12.5px] sm:text-[13px] font-extrabold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[14px]")}>
                           {isRtl ? '3 جولات' : '3 Rounds'}
                         </span>
-                        <span className={cn('text-[9.5px] sm:text-[10px] leading-tight font-medium hidden [@media(min-height:660px)]:block', rankRounds === 3 ? 'text-[#05070B]/85 font-bold' : 'text-white/45')}>
+                        <span className={cn('text-[10px] font-mono leading-tight font-medium', rankRounds === 3 ? 'text-[#05070B]/85 font-bold' : 'text-white/45')}>
                           {isRtl ? 'سريع · ~2 دقيقة' : 'Fast sprint · ~2m'}
                         </span>
                       </div>
@@ -953,27 +1005,32 @@ function CreateRoomContent() {
                       type="button"
                       onClick={() => updateSetting('rank_rounds', 5, setRankRounds)}
                       className={cn(
-                        'btn-haptic flex h-[44px] sm:h-[48px] items-center justify-center gap-2 rounded-xl border px-2 transition-all cursor-pointer text-start backdrop-blur-md',
+                        'btn-haptic relative flex h-[50px] sm:h-[54px] items-center gap-2.5 rounded-2xl border p-2 text-start transition-all cursor-pointer backdrop-blur-md',
                         rankRounds === 5
-                          ? 'border-transparent font-bold shadow-md'
-                          : 'border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] hover:border-white/15 hover:bg-white/[0.04]',
+                          ? 'border-transparent font-bold shadow-lg'
+                          : 'border-white/[0.08] bg-white/[0.02] text-[#C5CAD6] hover:border-white/20 hover:bg-white/[0.04]',
                       )}
                       style={
                         rankRounds === 5
                           ? {
                               background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
                               color: 'var(--game-on-accent, #05070b)',
-                              boxShadow: '0 0 14px var(--hub-accent-glow)',
+                              boxShadow: '0 0 16px var(--hub-accent-glow)',
                             }
                           : undefined
                       }
                     >
-                      <AppIcon icon={Trophy} size={18} weight={rankRounds === 5 ? 'fill' : 'duotone'} className={rankRounds === 5 ? 'text-[#05070B]' : 'text-white/60'} />
+                      <div className={cn(
+                        "size-9 rounded-xl flex items-center justify-center shrink-0 border",
+                        rankRounds === 5 ? "bg-black/15 border-black/10" : "bg-white/[0.04] border-white/10"
+                      )}>
+                        <AppIcon icon={Trophy} size={20} weight={rankRounds === 5 ? 'fill' : 'duotone'} />
+                      </div>
                       <div className="flex flex-col min-w-0">
-                        <span className={cn("text-[12px] sm:text-[12.5px] font-bold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[13.5px]")}>
+                        <span className={cn("text-[12.5px] sm:text-[13px] font-extrabold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[14px]")}>
                           {isRtl ? '5 جولات' : '5 Rounds'}
                         </span>
-                        <span className={cn('text-[9.5px] sm:text-[10px] leading-tight font-medium hidden [@media(min-height:660px)]:block', rankRounds === 5 ? 'text-[#05070B]/85 font-bold' : 'text-white/45')}>
+                        <span className={cn('text-[10px] font-mono leading-tight font-medium', rankRounds === 5 ? 'text-[#05070B]/85 font-bold' : 'text-white/45')}>
                           {isRtl ? 'ماتش كامل · ~4 دقائق' : 'Full duel · ~4m'}
                         </span>
                       </div>
@@ -981,15 +1038,18 @@ function CreateRoomContent() {
                   </div>
                 </div>
 
-                {/* Row 2: Round Timer (Type A) */}
-                <div className="flex min-h-[42px] sm:min-h-[46px] items-center justify-between gap-2.5 pt-1.5">
-                  <span className={cn(
-                    "w-[88px] sm:w-[98px] shrink-0 text-[12.5px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13.5px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'وقت الجولة' : 'Round timer'}
-                  </span>
-                  <div className="flex-1 flex items-center p-1 rounded-xl border border-white/[0.06] bg-black/40 gap-1 backdrop-blur-md">
+                {/* 2. Round Timer */}
+                <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="flex items-center justify-between text-[11.5px] sm:text-[12px] font-semibold text-white/60">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'وقت التفكير بالجولة' : 'Round Countdown Timer'}
+                    </span>
+                    <span className="text-white/40 font-mono text-[10px]">
+                      {rankTimer} SECONDS
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-1.5 p-1 rounded-2xl border border-white/[0.08] bg-black/40 backdrop-blur-md">
                     {[30, 45, 60].map((sec) => {
                       const isSel = rankTimer === sec;
                       return (
@@ -998,9 +1058,9 @@ function CreateRoomContent() {
                           type="button"
                           onClick={() => updateSetting('rank_timer', sec as RankTimer, setRankTimer)}
                           className={cn(
-                            'btn-haptic flex-1 h-7.5 sm:h-8 rounded-lg text-[11.5px] sm:text-[12.5px] font-bold transition-all cursor-pointer flex items-center justify-center',
+                            'btn-haptic flex h-9 sm:h-9.5 items-center justify-center rounded-xl text-[12px] sm:text-[13px] font-extrabold transition-all cursor-pointer',
                             isSel
-                              ? 'text-[#05070B] font-extrabold shadow-sm'
+                              ? 'text-[#05070B] shadow-md'
                               : 'text-[#C5CAD6] hover:text-white hover:bg-white/[0.04]',
                           )}
                           style={
@@ -1019,25 +1079,25 @@ function CreateRoomContent() {
                   </div>
                 </div>
 
-                {/* Row 3: Scoring System (Type A) */}
-                <div className="flex min-h-[42px] sm:min-h-[46px] items-center justify-between gap-2.5 pt-1.5">
-                  <span className={cn(
-                    "w-[88px] sm:w-[98px] shrink-0 text-[12.5px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13.5px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'احتساب النقاط' : 'Scoring'}
-                  </span>
-                  <div className="flex-1 flex items-center p-1 rounded-xl border border-white/[0.06] bg-black/40 gap-1 backdrop-blur-md">
-                    <div
-                      className="flex-1 h-7.5 sm:h-8 rounded-lg text-[11px] sm:text-[12px] font-bold text-[#05070B] shadow-sm flex items-center justify-center gap-1.5 px-2"
-                      style={{
-                        background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
-                        boxShadow: '0 0 12px var(--hub-accent-glow)',
-                      }}
-                    >
-                      <AppIcon icon={ShieldCheck} size={15} weight="fill" className="text-[#05070B]" />
-                      <span>{isRtl ? '+2 دقة الترتيب' : '+2 Distance Scoring'}</span>
-                    </div>
+                {/* 3. Scoring Engine */}
+                <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="text-[11.5px] sm:text-[12px] font-semibold text-white/60 text-start">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'طريقة احتساب النقاط' : 'Scoring System'}
+                    </span>
+                  </div>
+                  <div
+                    className="flex h-11 sm:h-12 items-center justify-center gap-2 rounded-2xl border border-transparent font-bold shadow-md px-3"
+                    style={{
+                      background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
+                      color: 'var(--game-on-accent, #05070b)',
+                      boxShadow: '0 0 14px var(--hub-accent-glow)',
+                    }}
+                  >
+                    <AppIcon icon={ShieldCheck} size={18} weight="fill" className="text-[#05070B]" />
+                    <span className={cn("text-[12.5px] sm:text-[13px] font-extrabold", isRtl && "font-cairo")}>
+                      {isRtl ? '+2 دقة الترتيب (Distance Scoring)' : '+2 Distance Scoring Engine'}
+                    </span>
                   </div>
                 </div>
               </>
@@ -1046,40 +1106,48 @@ function CreateRoomContent() {
             {/* ═══ BANK SETTINGS ═══ */}
             {selectedGame === 'bank' && (
               <>
-                {/* Row 1: Challenge Format (Type B) */}
-                <div className="flex min-h-[48px] sm:min-h-[52px] items-center justify-between gap-2.5 pt-1 first:pt-0">
-                  <span className={cn(
-                    "w-[88px] sm:w-[98px] shrink-0 text-[12.5px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13.5px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'نظام التحدي' : 'Challenge mode'}
-                  </span>
-                  <div className="grid grid-cols-2 gap-1.5 sm:gap-2 flex-1">
+                {/* 1. Challenge Format */}
+                <div className="flex flex-col gap-1.5">
+                  <div className="flex items-center justify-between text-[11.5px] sm:text-[12px] font-semibold text-white/60">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'نوع التحدي' : 'Bank Challenge Mode'}
+                    </span>
+                    <span className="text-white/40 font-mono text-[10px]">
+                      {bankFormat === 'duel' ? 'H2H DUEL' : 'SOLO RUN'}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2">
                     <button
                       type="button"
                       onClick={() => updateSetting('bank_fmt', 'duel', setBankFormat)}
                       className={cn(
-                        'btn-haptic flex h-[44px] sm:h-[48px] items-center justify-center gap-2 rounded-xl border px-2 transition-all cursor-pointer text-start backdrop-blur-md',
+                        'btn-haptic relative flex h-[50px] sm:h-[54px] items-center gap-2.5 rounded-2xl border p-2 text-start transition-all cursor-pointer backdrop-blur-md',
                         bankFormat === 'duel'
-                          ? 'border-transparent font-bold shadow-md'
-                          : 'border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] hover:border-white/15 hover:bg-white/[0.04]',
+                          ? 'border-transparent font-bold shadow-lg'
+                          : 'border-white/[0.08] bg-white/[0.02] text-[#C5CAD6] hover:border-white/20 hover:bg-white/[0.04]',
                       )}
                       style={
                         bankFormat === 'duel'
                           ? {
                               background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
                               color: 'var(--game-on-accent, #05070b)',
-                              boxShadow: '0 0 14px var(--hub-accent-glow)',
+                              boxShadow: '0 0 16px var(--hub-accent-glow)',
                             }
                           : undefined
                       }
                     >
-                      <AppIcon icon={Users} size={18} weight={bankFormat === 'duel' ? 'fill' : 'duotone'} className={bankFormat === 'duel' ? 'text-[#05070B]' : 'text-white/60'} />
+                      <div className={cn(
+                        "size-9 rounded-xl flex items-center justify-center shrink-0 border",
+                        bankFormat === 'duel' ? "bg-black/15 border-black/10" : "bg-white/[0.04] border-white/10"
+                      )}>
+                        <AppIcon icon={Users} size={20} weight={bankFormat === 'duel' ? 'fill' : 'duotone'} />
+                      </div>
                       <div className="flex flex-col min-w-0">
-                        <span className={cn("text-[12px] sm:text-[12.5px] font-bold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[13.5px]")}>
-                          {isRtl ? 'مبارزة 1 ضد 1' : '1v1 Duel'}
+                        <span className={cn("text-[12.5px] sm:text-[13px] font-extrabold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[14px]")}>
+                          {isRtl ? 'مبارزة 1 ضد 1' : '1v1 Head-to-Head'}
                         </span>
-                        <span className={cn('text-[9.5px] sm:text-[10px] leading-tight font-medium hidden [@media(min-height:660px)]:block', bankFormat === 'duel' ? 'text-[#05070B]/85 font-bold' : 'text-white/45')}>
+                        <span className={cn('text-[10px] font-mono leading-tight font-medium', bankFormat === 'duel' ? 'text-[#05070B]/85 font-bold' : 'text-white/45')}>
                           {isRtl ? 'جولتان · وقت حاسم' : '2 rounds · Sudden death'}
                         </span>
                       </div>
@@ -1089,27 +1157,32 @@ function CreateRoomContent() {
                       type="button"
                       onClick={() => updateSetting('bank_fmt', 'sprint', setBankFormat)}
                       className={cn(
-                        'btn-haptic flex h-[44px] sm:h-[48px] items-center justify-center gap-2 rounded-xl border px-2 transition-all cursor-pointer text-start backdrop-blur-md',
+                        'btn-haptic relative flex h-[50px] sm:h-[54px] items-center gap-2.5 rounded-2xl border p-2 text-start transition-all cursor-pointer backdrop-blur-md',
                         bankFormat === 'sprint'
-                          ? 'border-transparent font-bold shadow-md'
-                          : 'border-white/[0.06] bg-white/[0.02] text-[#C5CAD6] hover:border-white/15 hover:bg-white/[0.04]',
+                          ? 'border-transparent font-bold shadow-lg'
+                          : 'border-white/[0.08] bg-white/[0.02] text-[#C5CAD6] hover:border-white/20 hover:bg-white/[0.04]',
                       )}
                       style={
                         bankFormat === 'sprint'
                           ? {
                               background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
                               color: 'var(--game-on-accent, #05070b)',
-                              boxShadow: '0 0 14px var(--hub-accent-glow)',
+                              boxShadow: '0 0 16px var(--hub-accent-glow)',
                             }
                           : undefined
                       }
                     >
-                      <AppIcon icon={Lightning} size={18} weight={bankFormat === 'sprint' ? 'fill' : 'duotone'} className={bankFormat === 'sprint' ? 'text-[#05070B]' : 'text-white/60'} />
+                      <div className={cn(
+                        "size-9 rounded-xl flex items-center justify-center shrink-0 border",
+                        bankFormat === 'sprint' ? "bg-black/15 border-black/10" : "bg-white/[0.04] border-white/10"
+                      )}>
+                        <AppIcon icon={Lightning} size={20} weight={bankFormat === 'sprint' ? 'fill' : 'duotone'} />
+                      </div>
                       <div className="flex flex-col min-w-0">
-                        <span className={cn("text-[12px] sm:text-[12.5px] font-bold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[13.5px]")}>
+                        <span className={cn("text-[12.5px] sm:text-[13px] font-extrabold leading-tight truncate", isRtl && "font-cairo text-[13px] sm:text-[14px]")}>
                           {isRtl ? 'سباق فردي' : 'Solo Sprint'}
                         </span>
-                        <span className={cn('text-[9.5px] sm:text-[10px] leading-tight font-medium hidden [@media(min-height:660px)]:block', bankFormat === 'sprint' ? 'text-[#05070B]/85 font-bold' : 'text-white/45')}>
+                        <span className={cn('text-[10px] font-mono leading-tight font-medium', bankFormat === 'sprint' ? 'text-[#05070B]/85 font-bold' : 'text-white/45')}>
                           {isRtl ? '90 ثانية · كسر الأرقام' : '90s high-score run'}
                         </span>
                       </div>
@@ -1117,15 +1190,18 @@ function CreateRoomContent() {
                   </div>
                 </div>
 
-                {/* Row 2: Target Ladder (Type A) */}
-                <div className="flex min-h-[42px] sm:min-h-[46px] items-center justify-between gap-2.5 pt-1.5">
-                  <span className={cn(
-                    "w-[88px] sm:w-[98px] shrink-0 text-[12.5px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13.5px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'سلّم النقاط' : 'Target ladder'}
-                  </span>
-                  <div className="flex-1 flex items-center p-1 rounded-xl border border-white/[0.06] bg-black/40 gap-1 backdrop-blur-md">
+                {/* 2. Target Ladder */}
+                <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="flex items-center justify-between text-[11.5px] sm:text-[12px] font-semibold text-white/60">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'سلّم الجائزة الكبرى' : 'Target Points Ladder'}
+                    </span>
+                    <span className="text-white/40 font-mono text-[10px]">
+                      {bankLadder.toUpperCase()} PTS
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-1.5 p-1 rounded-2xl border border-white/[0.08] bg-black/40 backdrop-blur-md">
                     {(['2k', '5k', '10k'] as BankLadder[]).map((lad) => {
                       const isSel = bankLadder === lad;
                       return (
@@ -1134,9 +1210,9 @@ function CreateRoomContent() {
                           type="button"
                           onClick={() => updateSetting('bank_ladder', lad, setBankLadder)}
                           className={cn(
-                            'btn-haptic flex-1 h-7.5 sm:h-8 rounded-lg text-[11.5px] sm:text-[12.5px] font-bold transition-all cursor-pointer flex items-center justify-center',
+                            'btn-haptic flex h-9 sm:h-9.5 items-center justify-center rounded-xl text-[12px] sm:text-[13px] font-extrabold transition-all cursor-pointer',
                             isSel
-                              ? 'text-[#05070B] font-extrabold shadow-sm'
+                              ? 'text-[#05070B] shadow-md'
                               : 'text-[#C5CAD6] hover:text-white hover:bg-white/[0.04]',
                           )}
                           style={
@@ -1155,25 +1231,25 @@ function CreateRoomContent() {
                   </div>
                 </div>
 
-                {/* Row 3: Push-Your-Luck Rules (Type A) */}
-                <div className="flex min-h-[42px] sm:min-h-[46px] items-center justify-between gap-2.5 pt-1.5">
-                  <span className={cn(
-                    "w-[88px] sm:w-[98px] shrink-0 text-[12.5px] sm:text-[13px] font-semibold text-white/70 text-start",
-                    isRtl && "font-cairo text-[13.5px] sm:text-[14px] font-bold text-white/80"
-                  )}>
-                    {isRtl ? 'المخاطرة' : 'Risk rules'}
-                  </span>
-                  <div className="flex-1 flex items-center p-1 rounded-xl border border-white/[0.06] bg-black/40 gap-1 backdrop-blur-md">
-                    <div
-                      className="flex-1 h-7.5 sm:h-8 rounded-lg text-[11px] sm:text-[12px] font-bold text-[#05070B] shadow-sm flex items-center justify-center gap-1.5 px-2"
-                      style={{
-                        background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
-                        boxShadow: '0 0 12px var(--hub-accent-glow)',
-                      }}
-                    >
-                      <AppIcon icon={Vault} size={15} weight="fill" className="text-[#05070B]" />
-                      <span>{isRtl ? 'مضاعفة 2X أو تصفير' : '2X Doubling · Wipeout Risk'}</span>
-                    </div>
+                {/* 3. Push Your Luck Doubling */}
+                <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="text-[11.5px] sm:text-[12px] font-semibold text-white/60 text-start">
+                    <span className={isRtl ? 'font-cairo font-bold text-white/80' : ''}>
+                      {isRtl ? 'قواعد المخاطرة والتصفير' : 'Push-Your-Luck Mechanics'}
+                    </span>
+                  </div>
+                  <div
+                    className="flex h-11 sm:h-12 items-center justify-center gap-2 rounded-2xl border border-transparent font-bold shadow-md px-3"
+                    style={{
+                      background: 'linear-gradient(180deg, var(--hub-accent-light) 0%, var(--hub-accent) 100%)',
+                      color: 'var(--game-on-accent, #05070b)',
+                      boxShadow: '0 0 14px var(--hub-accent-glow)',
+                    }}
+                  >
+                    <AppIcon icon={Vault} size={18} weight="fill" className="text-[#05070B]" />
+                    <span className={cn("text-[12.5px] sm:text-[13px] font-extrabold", isRtl && "font-cairo")}>
+                      {isRtl ? 'مضاعفة 2X أو تصفير الرصيد' : '2X Doubling Streak · Wipeout Risk'}
+                    </span>
                   </div>
                 </div>
               </>
@@ -1181,18 +1257,18 @@ function CreateRoomContent() {
           </div>
         </div>
 
-        {/* ── 4. WHO CAN JOIN (Segmented Control directly above Main Button) ── */}
+        {/* ── WHO CAN JOIN: Hub Queue Pill Style ── */}
         <div className="w-full shrink-0 my-1 sm:my-1.5">
-          <div className="grid grid-cols-2 h-11 sm:h-12 rounded-2xl border border-white/[0.08] bg-white/[0.03] p-1 gap-1 backdrop-blur-md">
+          <div className="grid grid-cols-2 h-11 sm:h-12 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-1 gap-1 backdrop-blur-md shadow-md">
             <button
               type="button"
               onClick={() => handleSetWhoCanJoin('private')}
               className={cn(
-                'btn-haptic flex items-center justify-center gap-2 rounded-xl text-[12.5px] sm:text-[13px] font-bold transition-all cursor-pointer',
+                'btn-haptic flex items-center justify-center gap-2 rounded-xl text-[12px] sm:text-[13px] font-extrabold transition-all cursor-pointer',
                 whoCanJoin === 'private'
                   ? 'border-transparent text-[#05070B] shadow-md'
                   : 'text-[#C5CAD6] hover:text-white hover:bg-white/[0.04]',
-                isRtl && 'font-cairo text-[13.5px] sm:text-[14px]',
+                isRtl && 'font-cairo text-[13px] sm:text-[14px]',
               )}
               style={
                 whoCanJoin === 'private'
@@ -1217,11 +1293,11 @@ function CreateRoomContent() {
               type="button"
               onClick={() => handleSetWhoCanJoin('public')}
               className={cn(
-                'btn-haptic flex items-center justify-center gap-2 rounded-xl text-[12.5px] sm:text-[13px] font-bold transition-all cursor-pointer',
+                'btn-haptic flex items-center justify-center gap-2 rounded-xl text-[12px] sm:text-[13px] font-extrabold transition-all cursor-pointer',
                 whoCanJoin === 'public'
                   ? 'border-transparent text-[#05070B] shadow-md'
                   : 'text-[#C5CAD6] hover:text-white hover:bg-white/[0.04]',
-                isRtl && 'font-cairo text-[13.5px] sm:text-[14px]',
+                isRtl && 'font-cairo text-[13px] sm:text-[14px]',
               )}
               style={
                 whoCanJoin === 'public'
@@ -1244,7 +1320,7 @@ function CreateRoomContent() {
           </div>
         </div>
 
-        {/* ── 5. MAIN ACTION BUTTON (Pinned to Bottom) ── */}
+        {/* ── LAUNCH ARENA CTA BUTTON ── */}
         <div className="w-full shrink-0">
           <PrimaryActionButton
             id="create-room-submit-btn"
@@ -1254,7 +1330,7 @@ function CreateRoomContent() {
             onClick={handleCreateMatch}
             loading={loading}
             disabled={loading}
-            className="h-14 sm:h-[62px]"
+            className="h-14 sm:h-[60px]"
           />
         </div>
       </div>

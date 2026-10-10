@@ -21,7 +21,7 @@ export function GameHubShell({
     <div
       data-game={gameId}
       className={cn(
-        'hub-page relative flex h-full max-h-[100dvh] w-full flex-col items-center overflow-hidden bg-[#07090F] select-none',
+        'hub-page relative flex h-full max-h-[100dvh] w-full flex-col items-center overflow-x-clip bg-[#07090F] select-none',
         className,
       )}
     >

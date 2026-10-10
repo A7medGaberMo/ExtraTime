@@ -29,7 +29,7 @@ export function MainWrapper({ children }: { children: React.ReactNode }) {
       className={cn(
         'animate-fade-in mx-auto w-full max-w-full overflow-x-clip flex flex-col items-center',
         isZeroScrollArena
-          ? 'h-[100dvh] max-h-[100dvh] overflow-hidden justify-between p-0'
+          ? 'h-[100dvh] max-h-[100dvh] overflow-x-clip justify-between p-0'
           : isGameplay
             ? 'h-[100dvh] max-h-[100dvh] overflow-y-auto overflow-x-hidden justify-start sm:justify-center px-1.5 sm:px-4 lg:px-6 pt-1 sm:pt-2 pb-2 sm:pb-4'
             : isHubPage

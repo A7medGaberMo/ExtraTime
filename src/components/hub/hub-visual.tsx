@@ -17,13 +17,11 @@ export function HubVisual({
   className,
 }: HubVisualProps) {
   return (
-    <div
-      data-hub-visual-frame
-      className={cn('hub-visual-frame', className)}
-      style={{
-        marginBottom: 'var(--hub-gap-visual-pill)',
-      }}
-    >
+    <div data-hub-visual-area className="hub-visual-area">
+      <div
+        data-hub-visual-frame
+        className={cn('hub-visual-frame', className)}
+      >
       {/* ── Scope Corner Brackets (Framing inside frame boundary) ── */}
       <span className="hub-scope-bracket hub-scope-bracket-tl" aria-hidden="true" />
       <span className="hub-scope-bracket hub-scope-bracket-tr" aria-hidden="true" />
@@ -110,6 +108,7 @@ export function HubVisual({
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 }

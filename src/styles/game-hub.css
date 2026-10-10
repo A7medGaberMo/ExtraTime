@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════════════
    Shared Game Hub Styling System — Antigravity / ExtraTime
    Used by Snipe, Draft, Rank, and Bank.
-   Exact mathematical alignment across all four covers.
+   The radar visual area absorbs all free height.
    ═══════════════════════════════════════════════════════════════════════ */
 
 [data-game] {
@@ -16,49 +16,79 @@
   --hub-card-glass: rgba(255, 255, 255, 0.03);
   --hub-card-line: rgba(255, 255, 255, 0.08);
 
-  /* ── STEP 1: ONE SHARED LAYOUT WITH FIXED SPACING TOKENS ── */
+  /* ── THE NEW LAYOUT RULE: EXACT FIXED SPACING TOKENS ── */
   --hub-header-bottom: calc(max(env(safe-area-inset-top, 0px), 8px) + 52px);
-  --hub-gap-header-eyebrow: 40px;
+  --hub-gap-header-eyebrow: 24px;
   --hub-eyebrow-height: 20px;
-  --hub-gap-eyebrow-title: 12px;
-  --hub-title-height: 56px;
-  --hub-gap-title-subtitle: 12px;
-  --hub-subtitle-height: 40px;
-  --hub-gap-subtitle-visual: 16px;
-  --hub-visual-size: 220px;
+  --hub-gap-eyebrow-title: 8px;
+  --hub-title-height: 80px;
+  --hub-title-font-size: 72px;
+  --hub-gap-title-subtitle: 8px;
+  --hub-subtitle-height: 48px;
+  --hub-gap-subtitle-visual: 12px;
   --hub-gap-visual-pill: 8px;
   --hub-pill-height: 44px;
   --hub-pill-width: 272px;
-  --hub-gap-pill-row1: 16px;
+  --hub-gap-pill-row1: 12px;
   --hub-row1-height: 68px;
-  --hub-gap-row1-row2: 12px;
+  --hub-gap-row1-row2: 10px;
   --hub-row2-height: 72px;
-  --hub-rules-height: 74px;
-  --hub-safe-bottom: max(env(safe-area-inset-bottom, 0px), 12px);
+  --hub-gap-row2-rules: 12px;
+  --hub-rules-height: 87px;
+  --hub-safe-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
 }
 
-/* ── SHORTER SCREENS SHRINK ORDER (down to 360x640) ──
-   1. reduce visual size first (down to minimum 180px)
-   2. then title size slightly
-   3. then fixed gaps proportionally (never below 8px gap above pill) ── */
-@media (max-height: 720px) {
+@media (min-width: 640px) {
   [data-game] {
-    --hub-gap-header-eyebrow: 16px;
-    --hub-gap-eyebrow-title: 6px;
-    --hub-title-height: 44px;
-    --hub-gap-title-subtitle: 6px;
-    --hub-subtitle-height: 36px;
-    --hub-gap-subtitle-visual: 8px;
-    --hub-visual-size: 180px;
-    --hub-gap-visual-pill: 8px; /* Never below 8px */
-    --hub-pill-height: 40px;
-    --hub-pill-width: 260px;
-    --hub-gap-pill-row1: 8px;
+    --hub-header-bottom: calc(max(env(safe-area-inset-top, 0px), 8px) + 56px);
+  }
+}
+
+/* ── PROGRESSIVE SHRINK ORDER (Never let visual get smaller than 140px) ── */
+
+/* Step 1: When window height <= 725px (e.g., 390x700, 1280x720): Hide subtitle and its 8px gap */
+@media (max-height: 725px) {
+  [data-game] {
+    --hub-gap-title-subtitle: 0px;
+    --hub-subtitle-height: 0px;
+    --hub-gap-subtitle-visual: 12px;
+  }
+  .hub-subtitle-slot,
+  [data-hub-subtitle] {
+    display: none !important;
+  }
+}
+
+/* Step 2 & 3: When window height <= 665px (e.g., 360x640):
+   - Reduce title to ~56px
+   - Hide 2nd line of each rules column
+   - Reduce row 1 to 60px and row 2 to 64px */
+@media (max-height: 665px) {
+  [data-game] {
+    --hub-title-height: 56px;
+    --hub-title-font-size: 52px;
     --hub-row1-height: 60px;
-    --hub-gap-row1-row2: 6px;
     --hub-row2-height: 64px;
-    --hub-rules-height: 60px;
-    --hub-safe-bottom: 6px;
+    --hub-rules-height: 66px;
+    --hub-gap-pill-row1: 8px;
+    --hub-gap-row1-row2: 8px;
+    --hub-gap-row2-rules: 8px;
+  }
+  .hub-rules-subline-slot,
+  .hub-feature-subline {
+    display: none !important;
+  }
+}
+
+/* Step 4: When window height <= 580px: Hide eyebrow */
+@media (max-height: 580px) {
+  [data-game] {
+    --hub-eyebrow-height: 0px;
+    --hub-gap-eyebrow-title: 0px;
+  }
+  .hub-eyebrow-slot,
+  [data-hub-eyebrow] {
+    display: none !important;
   }
 }
 
@@ -66,7 +96,7 @@
 .hub-title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(48px, 7vw, 56px);
+  font-size: var(--hub-title-font-size);
   line-height: 1;
   letter-spacing: -0.035em;
   background: linear-gradient(180deg, #ffffff 15%, #e9e9ef 100%);
@@ -78,22 +108,13 @@
 html[dir='rtl'] .hub-title {
   font-family: var(--font-cairo), var(--font-display), sans-serif !important;
   letter-spacing: normal !important;
-  font-size: clamp(44px, 6.8vw, 52px);
+  font-size: calc(var(--hub-title-font-size) * 0.92);
   font-weight: 900;
   line-height: 1.1;
   background: linear-gradient(180deg, #ffffff 12%, #e5e7eb 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@media (max-height: 720px) {
-  .hub-title {
-    font-size: 38px;
-  }
-  html[dir='rtl'] .hub-title {
-    font-size: 36px;
-  }
 }
 
 .hub-title-sheen {
@@ -122,7 +143,7 @@ html[dir='rtl'] .hub-title {
   }
 }
 
-/* ── STEP 3: Eyebrow consistency (14px + weight 700 in Arabic) ── */
+/* ── Eyebrow (20px tall, >= 14px in Arabic, weight 700) ── */
 .hub-eyebrow {
   font-family: var(--font-barlow-condensed), var(--font-ui), sans-serif;
   font-weight: 700;
@@ -175,17 +196,6 @@ html[dir='rtl'] .hub-body {
   line-height: 1.4 !important;
 }
 
-@media (max-height: 720px) {
-  .hub-body {
-    font-size: 12px;
-    line-height: 1.35;
-  }
-  html[dir='rtl'] .hub-body {
-    font-size: 14px !important;
-    line-height: 1.35 !important;
-  }
-}
-
 /* ── Atmosphere & Glow ──────────────────────────────────────────────── */
 .hub-page::after {
   position: absolute;
@@ -205,18 +215,29 @@ html[dir='rtl'] .hub-body {
 @keyframes hubGlowBreathe {
   from {
     opacity: 0.72;
-    scale: 0.94;
+    transform: translate(-50%, -52%) scale(0.95);
   }
   to {
     opacity: 1;
-    scale: 1.06;
+    transform: translate(-50%, -52%) scale(1.05);
   }
 }
 
-/* ── STEP 2: ONE SHARED VISUAL FRAME ─────────────────────────────────── */
+/* ── Visual Area & Frame (Flex 1, container-type: size, min(100cqh, 100cqw, 240px)) ── */
+.hub-visual-area {
+  flex: 1 1 0%;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  container-type: size;
+  margin-bottom: var(--hub-gap-visual-pill);
+}
+
 .hub-visual-frame {
-  width: var(--hub-visual-size);
-  height: var(--hub-visual-size);
+  width: min(100cqh, 100cqw, 240px);
+  height: min(100cqh, 100cqw, 240px);
   aspect-ratio: 1 / 1;
   position: relative;
   display: flex;
@@ -269,7 +290,7 @@ html[dir='rtl'] .hub-body {
 
 .hub-visual-circle {
   position: absolute;
-  inset: 12px;
+  inset: 10px;
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -308,19 +329,21 @@ html[dir='rtl'] .hub-body {
   border: 1px solid color-mix(in srgb, var(--hub-accent) 26%, transparent);
 }
 
+/* ── Circular 58px Badge on every cover that has one ── */
 .hub-center-badge {
   width: 58px;
   height: 58px;
-  border-radius: 16px;
+  border-radius: 9999px; /* CIRCULAR */
   border: 1px solid color-mix(in srgb, var(--hub-accent) 40%, transparent);
   background: linear-gradient(165deg, color-mix(in srgb, var(--hub-accent) 18%, #14121a), #111016 58%, #09090f);
-  box-shadow: 0 0 20px color-mix(in srgb, var(--hub-accent) 25%, transparent), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--hub-accent) 20%, transparent), inset 0 1px 1px rgba(255, 255, 255, 0.25);
 }
 
 /* ── Live Queue Pill (fixed height 44px, >= 14px in Arabic) ────────── */
 .hub-live-pill {
   height: var(--hub-pill-height);
   width: var(--hub-pill-width);
+  box-sizing: border-box;
   font-variant-numeric: tabular-nums;
   font-feature-settings: 'tnum';
   font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
@@ -359,9 +382,10 @@ html[dir='rtl'] .hub-live-pill {
   }
 }
 
-/* ── Primary Action Button (Public Match) (fixed 68px) ─────────────── */
+/* ── Primary Action Button (Public Match) (fixed 68px, no extra padding) ── */
 .hub-cta-btn {
-  height: 100%;
+  height: var(--hub-row1-height);
+  box-sizing: border-box;
   background: linear-gradient(
     to right,
     var(--hub-accent-light),
@@ -370,7 +394,7 @@ html[dir='rtl'] .hub-live-pill {
   );
   box-shadow:
     inset 0 1.5px 0.5px rgba(255, 255, 255, 0.5),
-    0 0 28px var(--hub-accent-glow),
+    0 0 24px var(--hub-accent-glow),
     0 2px 8px rgba(0, 0, 0, 0.25);
   transition:
     filter 0.25s ease,
@@ -392,7 +416,7 @@ html[dir='rtl'] .hub-cta-btn {
   transform: translateY(-1px);
   box-shadow:
     inset 0 1.5px 0.5px rgba(255, 255, 255, 0.65),
-    0 0 36px var(--hub-accent-glow),
+    0 0 32px var(--hub-accent-glow),
     0 6px 20px -4px var(--hub-accent-glow);
 }
 
@@ -498,10 +522,11 @@ html[dir='rtl'] .hub-cta-btn:not(:disabled):hover .hub-cta-arrow {
   }
 }
 
-/* ── STEP 3: Solo Tile (76px wide, 68px tall, 30px icon circle, 14px bold) ── */
+/* ── Solo Tile (Rank & Bank: fixed 76px wide, 68px tall, 30px play circle, 14px bold) ── */
 .hub-solo-tile {
   width: 76px;
-  height: 100%;
+  height: var(--hub-row1-height);
+  box-sizing: border-box;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -553,9 +578,10 @@ html[dir='rtl'] .hub-solo-label {
   font-weight: 700 !important;
 }
 
-/* ── Secondary Action Cards (Row 2, fixed 72px) ─────────────────────── */
+/* ── Secondary Action Cards (Row 2: fixed 72px, no extra padding) ───── */
 .hub-action-card {
-  height: 100%;
+  height: var(--hub-row2-height);
+  box-sizing: border-box;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.06),
     0 2px 8px rgba(0, 0, 0, 0.2);
@@ -597,10 +623,13 @@ html[dir='rtl'] .hub-card-title {
   letter-spacing: normal;
 }
 
-/* ── Rules Strip (3 Columns, pinned to bottom) ───────────────────────── */
+/* ── Rules Strip (3 Columns: fixed ~87px tall, 1px divider, 12px pt, 30px icon) ── */
 .hub-feature-strip {
   height: var(--hub-rules-height);
-  padding-bottom: var(--hub-safe-bottom);
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hub-feature-strip > div + div {
@@ -611,8 +640,8 @@ html[dir='rtl'] .hub-card-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
   border-radius: 9999px;
   border: 1px solid color-mix(in srgb, var(--hub-accent) 22%, transparent);
@@ -632,12 +661,14 @@ html[dir='rtl'] .hub-card-title {
   font-weight: 700;
   font-size: 12px;
   letter-spacing: -0.005em;
+  line-height: 1.25;
 }
 
 .hub-feature-subline {
   font-family: var(--font-plus-jakarta), var(--font-sans), sans-serif;
   color: var(--hub-text-muted);
   font-size: 11px;
+  line-height: 1.25;
 }
 
 html[dir='rtl'] .hub-feature-title {
@@ -645,7 +676,7 @@ html[dir='rtl'] .hub-feature-title {
   font-size: 14px !important;
   font-weight: 700 !important;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 html[dir='rtl'] .hub-feature-subline {
@@ -653,7 +684,7 @@ html[dir='rtl'] .hub-feature-subline {
   font-size: 14px !important;
   font-weight: 500 !important;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 /* ── Centerpiece Animations ──────────────────────────────────────────── */
@@ -776,10 +807,30 @@ html[dir='rtl'] .hub-feature-subline {
   animation-delay: 0.9s;
 }
 
+@keyframes draftDotIlluminate {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.9);
+  }
+  16%,
+  68% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  84% {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+}
+
+.draft-formation-dot {
+  animation: draftDotIlluminate 8s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hub-cta-shine,
   .hub-cta-progress::after,
-  .hub-core-glow,
   .hub-title-sheen,
   .hub-live-ping,
   .draft-board-arc,
@@ -789,7 +840,8 @@ html[dir='rtl'] .hub-feature-subline {
   .snipe-blip-3,
   .snipe-sonar-ping,
   .draft-ring-breathe,
-  .draft-ring-breathe-delay {
+  .draft-ring-breathe-delay,
+  .draft-formation-dot {
     animation: none !important;
   }
   .draft-board-arc {

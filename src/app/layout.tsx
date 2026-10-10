@@ -156,7 +156,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-canvas text-foreground selection:bg-brand selection:text-canvas flex min-h-screen w-full max-w-[100vw] flex-col justify-between overflow-x-hidden font-ui antialiased">
+      <body className="bg-canvas text-foreground selection:bg-brand selection:text-canvas flex h-[100dvh] min-h-[100dvh] max-h-[100dvh] w-full max-w-[100vw] flex-col justify-between overflow-x-clip font-ui antialiased">
         <ConvexClientProvider>
           <I18nProvider>
             <ToastProvider>

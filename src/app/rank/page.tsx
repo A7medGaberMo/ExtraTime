@@ -184,6 +184,7 @@ export default function RankHubPage() {
         className="grid w-full shrink-0 grid-cols-2 gap-2.5 sm:gap-3"
         style={{
           height: 'var(--hub-row2-height)',
+          marginBottom: 'var(--hub-gap-row2-rules)',
         }}
       >
         <SecondaryActionButton
@@ -202,9 +203,6 @@ export default function RankHubPage() {
           disabled={loading}
         />
       </div>
-
-      {/* ── Flexible Space: The ONLY flexible gap on the page ── */}
-      <div className="flex-1 min-h-[8px] w-full" aria-hidden="true" />
 
       {/* ── Rules Strip: Pinned to bottom with safe-area padding ── */}
       <RulesStrip

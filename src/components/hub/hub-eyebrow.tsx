@@ -13,7 +13,7 @@ export function HubEyebrow({ text, className }: HubEyebrowProps) {
     <div
       data-hub-eyebrow
       className={cn(
-        'hub-eyebrow-container flex w-full shrink-0 items-center justify-center gap-2.5 sm:gap-3',
+        'hub-eyebrow-container hub-eyebrow-slot flex w-full shrink-0 items-center justify-center gap-2.5 sm:gap-3',
         className,
       )}
       style={{

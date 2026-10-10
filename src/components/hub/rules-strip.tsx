@@ -43,11 +43,12 @@ export function RulesStrip({ items, className, moreLabel, onMore }: RulesStripPr
     <div
       data-hub-rules-strip
       className={cn(
-        'hub-feature-strip relative grid w-full grid-cols-3 border-t border-white/[0.08] pt-2 shrink-0',
+        'hub-feature-strip relative grid w-full grid-cols-3 shrink-0',
         className,
       )}
       style={{
-        height: 'var(--hub-rules-height)',
+        height: 'calc(var(--hub-rules-height) + var(--hub-safe-bottom))',
+        paddingTop: '12px',
         paddingBottom: 'var(--hub-safe-bottom)',
       }}
     >
@@ -80,7 +81,7 @@ export function RulesStrip({ items, className, moreLabel, onMore }: RulesStripPr
             <span className="hub-feature-title leading-tight font-semibold text-[#F5F5F7] truncate max-w-full">
               {item.title}
             </span>
-            <span className="hub-feature-subline leading-tight text-[#9AA0AE] truncate max-w-full">
+            <span className="hub-feature-subline hub-rules-subline-slot leading-tight text-[#9AA0AE] truncate max-w-full">
               {formatSignedNumbers(item.subtitle)}
             </span>
           </span>

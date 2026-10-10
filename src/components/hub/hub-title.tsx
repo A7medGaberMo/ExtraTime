@@ -32,7 +32,7 @@ export function HubTitle({ title, subtitle, className }: HubTitleProps) {
       {/* ── Subtitle (Fixed Height, Exactly 2 Lines Reserved) ── */}
       <div
         data-hub-subtitle
-        className="flex w-full max-w-[360px] sm:max-w-[420px] shrink-0 items-center justify-center text-center mx-auto"
+        className="hub-subtitle-slot flex w-full max-w-[360px] sm:max-w-[420px] shrink-0 items-center justify-center text-center mx-auto"
         style={{
           height: 'var(--hub-subtitle-height)',
           marginBottom: 'var(--hub-gap-subtitle-visual)',
