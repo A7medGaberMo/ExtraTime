@@ -5,7 +5,11 @@ import { useState, useSyncExternalStore, useCallback } from 'react';
 function subscribe(cb: () => void) {
   if (typeof window === 'undefined') return () => {};
   window.addEventListener('storage', cb);
-  return () => window.removeEventListener('storage', cb);
+  window.addEventListener('extratime_guestName_change', cb);
+  return () => {
+    window.removeEventListener('storage', cb);
+    window.removeEventListener('extratime_guestName_change', cb);
+  };
 }
 
 function getSnapshot() {
@@ -32,7 +36,13 @@ export function useGuestNickname(defaultFallback = 'Guest') {
   const nickname = localName !== null ? localName : (storedName || defaultFallback);
 
   const setNickname = useCallback((name: string) => {
-    setLocalName(name);
+    const trimmed = name.trimStart();
+    setLocalName(trimmed);
+    try {
+      localStorage.setItem('extratime_guestName', trimmed);
+      window.dispatchEvent(new Event('extratime_guestName_change'));
+      window.dispatchEvent(new Event('storage'));
+    } catch {}
   }, []);
 
   return [nickname, setNickname] as const;

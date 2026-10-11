@@ -46,16 +46,16 @@ export function QuestionCard({
   }, [activeText]);
 
   return (
-    <div className="w-full max-w-md mx-auto h-[290px] min-h-[290px] max-h-[290px] sm:h-[300px] sm:min-h-[300px] sm:max-h-[300px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 shadow-[0_16px_36px_var(--et-shade-60)] backdrop-blur-3xl relative overflow-hidden border border-game-accent/25 bg-gradient-to-b from-surface/95 via-well/95 to-canvas/95 select-none flex flex-col justify-between shrink-0 transition-all duration-200">
-      {/* Monaco Vault Gold Ambient Top Shimmer */}
+    <div className="w-full max-w-md mx-auto h-[290px] min-h-[290px] max-h-[290px] sm:h-[300px] sm:min-h-[300px] sm:max-h-[300px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 shadow-[0_16px_36px_var(--et-shade-60),0_0_24px_var(--game-glow)] backdrop-blur-3xl relative overflow-hidden border border-white/12 bg-gradient-to-b from-surface/95 via-well/95 to-canvas/95 select-none flex flex-col justify-between shrink-0 transition-all duration-200">
+      {/* Ambient Top Shimmer */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-game-accent/50 to-transparent" />
 
       {/* ── TOP SECTION: Category & Type Header + Fixed Question Text Window ── */}
       <div className="w-full flex flex-col shrink-0">
-        {/* Luxury Vault Header */}
+        {/* Luxury Header */}
         <div className="flex items-center justify-between gap-2 h-6 sm:h-7 mb-1 sm:mb-1.5">
           {/* Category Pill */}
-          <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-black text-game-accent bg-game-accent/10 border border-game-accent/25 px-2.5 py-0.5 rounded-full shadow-[inset_0_1px_0_var(--game-glow)] h-6 sm:h-7">
+          <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-black text-game-accent bg-game-accent/15 border border-game-accent/30 px-2.5 py-0.5 rounded-full shadow-[inset_0_1px_0_var(--game-glow)] h-6 sm:h-7">
             <AppIcon icon={Tag} size={12} weight="bold" className="text-game-accent shrink-0" />
             <span className="tracking-wide uppercase font-stats truncate max-w-[140px] sm:max-w-none">
               {categoryLabel}
@@ -80,7 +80,7 @@ export function QuestionCard({
         <div className="w-full h-[86px] sm:h-[92px] flex items-center justify-center px-3 sm:px-4 text-center overflow-y-auto scrollbar-hidden">
           <h2
             className={`text-white text-center tracking-tight ${questionFontSize} ${
-              isArabic ? 'font-sans' : 'font-display'
+              isArabic ? 'font-cairo' : 'font-display'
             }`}
             dir={isArabic ? 'rtl' : 'ltr'}
           >
@@ -115,7 +115,7 @@ export function QuestionCard({
                   'border-danger bg-danger/30 text-danger shadow-[0_0_24px_var(--et-danger-glow)] animate-shake';
               } else if (isSelected) {
                 cardStyle =
-                  'border-game-accent bg-game-accent/25 text-game-accent-light shadow-[0_0_20px_var(--game-glow)] scale-[1.01]';
+                  'border-game-accent bg-game-accent/25 text-white shadow-[0_0_20px_var(--game-glow)] scale-[1.01]';
               }
 
               return (
@@ -148,7 +148,7 @@ export function QuestionCard({
                   </span>
 
                   {/* Balanced Symmetrical Label */}
-                  <span className="text-xs sm:text-sm font-black tracking-wide flex-1 text-center px-1 truncate">
+                  <span className={`text-xs sm:text-sm font-black tracking-wide flex-1 text-center px-1 truncate ${isArabic ? 'font-cairo' : 'font-display'}`}>
                     {opt.text[lang] || opt.text.en}
                   </span>
 
@@ -181,7 +181,7 @@ export function QuestionCard({
               );
 
               let btnStyles =
-                'apple-glass-card border border-white/10 hover:border-game-accent/40 hover:bg-game-accent/[0.05] text-foreground shadow-sm';
+                'apple-glass-card border border-white/10 hover:border-game-accent/50 hover:bg-game-accent/[0.08] text-foreground shadow-sm';
 
               if (isCorrect) {
                 btnStyles =
@@ -191,7 +191,7 @@ export function QuestionCard({
                   'border-danger bg-danger/25 text-danger shadow-[0_0_20px_var(--et-danger-glow)] animate-shake';
               } else if (isSelected) {
                 btnStyles =
-                  'border-game-accent bg-game-accent/25 text-game-accent-light shadow-[0_0_20px_var(--game-glow)] scale-[1.01]';
+                  'border-game-accent bg-game-accent/25 text-white shadow-[0_0_20px_var(--game-glow)] scale-[1.01]';
               }
 
               const letterBadge = ['A', 'B', 'C', 'D'][idx] || `${idx + 1}`;
@@ -220,7 +220,7 @@ export function QuestionCard({
                   </span>
 
                   {/* Balanced Symmetrical Text */}
-                  <span className="text-[11px] sm:text-xs font-bold leading-tight line-clamp-2 break-words flex-1 text-center px-0.5">
+                  <span className={`text-[11px] sm:text-xs font-bold leading-tight line-clamp-2 break-words flex-1 text-center px-0.5 ${isArabic ? 'font-cairo' : 'font-display'}`}>
                     {opt.text[lang] || opt.text.en}
                   </span>
 

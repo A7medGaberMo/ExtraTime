@@ -81,7 +81,7 @@ export function BankActionControls({
   return (
     <div className="w-full flex flex-col gap-1 sm:gap-1.5 shrink-0 select-none">
       <div className="w-full flex items-center gap-2 sm:gap-3">
-        {/* 🏦 Prominent Monaco 24K Gold BANK Button */}
+        {/* 🏦 Hub-Styled BANK Action Button */}
         <Button
           type="button"
           size="lg"
@@ -89,29 +89,29 @@ export function BankActionControls({
           disabled={!resolvedCanBank || isAnyBusy}
           loading={isBanking}
           onClick={handleBankClick}
-          className={`flex-1 min-h-[46px] sm:min-h-[50px] text-xs sm:text-base font-black tracking-wide relative overflow-hidden transition-all duration-200 rounded-xl sm:rounded-2xl ${
+          className={`flex-1 min-h-[46px] sm:min-h-[50px] text-xs sm:text-base font-black tracking-wide relative overflow-hidden transition-all duration-200 rounded-xl sm:rounded-2xl cursor-pointer ${
             resolvedCanBank
               ? isSprintComplete
-                ? 'bg-gradient-to-r from-game-accent via-game-accent-light to-game-accent-deep text-game-on-accent font-black shadow-[0_0_35px_var(--game-glow)] ring-2 ring-game-accent-light animate-pulse scale-[1.02] border-none'
-                : 'bg-gradient-to-r from-game-accent via-game-accent-light to-game-accent-deep text-game-on-accent font-black shadow-[0_4px_24px_var(--game-glow)] scale-[1.01] hover:brightness-110 active:scale-[0.99] border-none'
-              : 'opacity-50 bg-white/[0.04] border border-white/10 text-muted'
+                ? 'bg-gradient-to-r from-game-accent via-game-accent-light to-game-accent-deep rtl:bg-gradient-to-l text-game-on-accent font-black shadow-[0_0_35px_var(--game-glow)] ring-2 ring-game-accent-light animate-pulse scale-[1.01] border-none'
+                : 'bg-gradient-to-r from-game-accent-light via-game-accent to-game-accent-deep rtl:bg-gradient-to-l text-game-on-accent font-black shadow-[0_4px_24px_var(--game-glow),inset_0_1.5px_0.5px_rgba(255,255,255,0.45)] hover:brightness-110 active:scale-[0.98] border-none'
+              : 'opacity-40 bg-white/[0.04] border border-white/10 text-muted cursor-not-allowed'
           }`}
         >
           <div className="flex items-center justify-center gap-2">
             <AppIcon
               icon={Vault}
               size={20}
-              weight="duotone"
+              weight={resolvedCanBank ? 'fill' : 'duotone'}
               className={resolvedCanBank ? 'text-game-on-accent animate-pulse' : 'text-muted'}
             />
 
-            <span className={isArabic ? 'font-sans font-black' : 'font-display font-black'}>
+            <span className={isArabic ? 'font-cairo font-black text-sm sm:text-base' : 'font-display font-black text-xs sm:text-base tracking-wide'}>
               {isSprintComplete
                 ? isArabic
-                  ? 'بَنِّك نقاطك الآن!'
+                  ? 'بنِّك نقاطك الآن!'
                   : 'LOCK IN BANKED POINTS!'
                 : isArabic
-                  ? 'بَنِّك'
+                  ? 'بنِّك'
                   : 'BANK'}
               {resolvedCanBank && unbankedPoints > 0 ? (
                 <span className="font-stats font-black tabular-nums"> (+{unbankedPoints})</span>
@@ -119,7 +119,7 @@ export function BankActionControls({
             </span>
 
             {resolvedCanBank && (
-              <span className="hidden sm:inline text-[9px] uppercase font-bold opacity-80 bg-canvas/20 px-1.5 py-0.5 rounded-md font-stats">
+              <span className="hidden sm:inline text-[9px] uppercase font-bold opacity-80 bg-black/25 px-1.5 py-0.5 rounded-md font-stats text-white">
                 Space / B
               </span>
             )}
@@ -135,11 +135,13 @@ export function BankActionControls({
             disabled={isAnyBusy}
             loading={isPassing}
             onClick={handlePassClick}
-            className="min-w-[84px] sm:min-w-[110px] min-h-[46px] sm:min-h-[50px] text-xs sm:text-sm font-bold text-foreground border-white/15 hover:border-white/30 hover:bg-white/10 hover:text-white rounded-xl sm:rounded-2xl transition-all shadow-sm"
+            className="min-w-[84px] sm:min-w-[110px] min-h-[46px] sm:min-h-[50px] text-xs sm:text-sm font-bold text-foreground border-white/15 hover:border-white/30 hover:bg-white/10 hover:text-white rounded-xl sm:rounded-2xl transition-all shadow-sm cursor-pointer"
           >
             <div className="flex items-center justify-center gap-1.5">
               <AppIcon icon={FastForward} size={16} weight="bold" />
-              <span className={isArabic ? 'font-sans' : 'font-display'}>{isArabic ? 'تخطي' : 'Pass'}</span>
+              <span className={isArabic ? 'font-cairo font-bold' : 'font-display font-bold'}>
+                {isArabic ? 'تخطي' : 'Pass'}
+              </span>
             </div>
           </Button>
         )}
@@ -148,21 +150,21 @@ export function BankActionControls({
       {/* Zero CLS (Cumulative Layout Shift) Stable Hint Slot */}
       <div className="h-5 sm:h-6 flex items-center justify-center text-center text-[10px] sm:text-[11px] font-bold leading-none select-none">
         {resolvedCanBank ? (
-          <span className="text-game-accent/90 animate-fade-in flex items-center gap-1">
+          <span className="text-game-accent animate-fade-in flex items-center gap-1">
             <span>
               {isSprintComplete
                 ? isArabic
                   ? '⚡ تم حفظ نقاطك تلقائياً في رصيدك النهائي!'
                   : '⚡ All points auto-banked into your safe score!'
                 : isArabic
-                  ? '💡 دوس بَنِّك لتأمين النقاط المعلقة قبل ما تجاوب أو تخاطر!'
+                  ? '💡 اضغط بنِّك لتأمين النقاط المعلقة قبل ما تجاوب أو تخاطر!'
                   : '💡 Tap BANK to lock your points into your safe score!'}
             </span>
           </span>
         ) : (
           <span className="text-muted/70 text-[10px] font-medium hidden sm:inline">
             {isArabic
-              ? 'جاوب صح لمضاعفة النقاط، أو بَنِّك لحمايتها'
+              ? 'جاوب صح لمضاعفة النقاط، أو بنِّك لحمايتها'
               : 'Answer correctly to double points, or BANK to secure them'}
           </span>
         )}

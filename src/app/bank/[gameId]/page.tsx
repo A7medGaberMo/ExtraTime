@@ -400,12 +400,21 @@ export default function BankArenaPage() {
   // Loading Screen
   if (game === undefined) {
     return (
-      <div className="min-h-screen bg-canvas flex flex-col items-center justify-center p-4 animate-fade-in">
-        <div className="apple-glass-card rounded-3xl p-8 flex flex-col items-center justify-center gap-4 text-center max-w-sm border border-white/12 shadow-2xl">
-          <AppIcon icon={CircleNotch} size={36} className="text-game-accent animate-spin" />
-          <span className="text-sm font-semibold text-foreground">
-            {isArabic ? 'جاري تجهيز صالة بَنِّك...' : 'Entering Bank It Arena...'}
-          </span>
+      <div className="min-h-screen bg-canvas relative flex flex-col items-center justify-center p-4 selection:bg-game-accent/20 overflow-hidden animate-fade-in">
+        <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-72 w-72 rounded-full bg-game-accent/15 blur-[100px]" />
+        <div className="apple-glass-elevated relative z-10 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 text-center max-w-sm border border-white/12 shadow-[0_24px_50px_var(--et-shade-70),0_0_30px_var(--game-glow)] backdrop-blur-3xl">
+          <div className="w-14 h-14 rounded-2xl bg-game-accent/15 border border-game-accent/30 flex items-center justify-center text-game-accent shadow-[0_0_20px_var(--game-glow)]">
+            <AppIcon icon={Vault} size={28} weight="duotone" className="animate-pulse" />
+          </div>
+          <div className="flex flex-col items-center gap-1.5">
+            <span className={`text-base font-bold text-white ${isArabic ? 'font-cairo' : 'font-display'}`}>
+              {isArabic ? 'جاري تجهيز صالة بنك...' : 'Entering Bank Arena...'}
+            </span>
+            <div className="flex items-center gap-1.5 text-xs text-muted">
+              <AppIcon icon={CircleNotch} size={14} className="text-game-accent animate-spin" />
+              <span>{isArabic ? 'الاتصال بالقاعة...' : 'Connecting to vault...'}</span>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -414,17 +423,23 @@ export default function BankArenaPage() {
   // Not Found Screen
   if (!game) {
     return (
-      <div className="min-h-screen bg-canvas flex flex-col items-center justify-center p-4 text-center animate-fade-in">
-        <div className="apple-glass-card rounded-3xl p-8 flex flex-col items-center justify-center gap-4 text-center max-w-sm border border-white/12 shadow-2xl">
-          <h2 className="text-xl font-bold text-white">
-            {isArabic ? 'الماتش مش موجود أو انتهى' : 'Match Not Found'}
+      <div className="min-h-screen bg-canvas relative flex flex-col items-center justify-center p-4 text-center animate-fade-in overflow-hidden">
+        <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-72 w-72 rounded-full bg-game-accent/15 blur-[100px]" />
+        <div className="apple-glass-elevated relative z-10 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 text-center max-w-sm border border-white/12 shadow-[0_24px_50px_var(--et-shade-70)] backdrop-blur-3xl">
+          <div className="w-14 h-14 rounded-2xl bg-danger/15 border border-danger/30 flex items-center justify-center text-danger shadow-sm">
+            <AppIcon icon={Vault} size={28} weight="duotone" />
+          </div>
+          <h2 className={`text-xl font-bold text-white ${isArabic ? 'font-cairo' : 'font-display'}`}>
+            {isArabic ? 'الماتش غير موجود أو انتهى' : 'Match Not Found'}
           </h2>
           <Button
             variant="gold"
             onClick={() => router.push('/bank')}
-            className="bg-gradient-to-r from-game-accent via-game-accent-light to-game-accent text-game-on-accent font-black shadow-lg shadow-game-accent/30 rounded-2xl"
+            className="w-full bg-gradient-to-r from-game-accent-light via-game-accent to-game-accent-deep rtl:bg-gradient-to-l text-game-on-accent font-black shadow-lg shadow-game-accent/30 rounded-2xl cursor-pointer"
           >
-            <span>{isArabic ? 'الرجوع لصالة بَنِّك' : 'Back to Bank It Hub'}</span>
+            <span className={isArabic ? 'font-cairo font-bold' : 'font-display font-bold'}>
+              {isArabic ? 'الرجوع إلى مركز بنك' : 'Back to Bank Hub'}
+            </span>
           </Button>
         </div>
       </div>
@@ -444,67 +459,74 @@ export default function BankArenaPage() {
     game.status === 'sudden_death' &&
     game.participants[game.activeTurnPlayerIndex]?.guestId === guestId;
 
-  // --- LOBBY WAITING SCREEN ---
+  // --- LOBBY WAITING SCREEN (Duel Mode) ---
   if (game.status === 'waiting') {
     return (
-      <div className="min-h-screen bg-canvas text-white p-4 sm:p-6 flex flex-col items-center justify-center animate-fade-in">
-        <div className="apple-glass-elevated w-full max-w-md p-6 sm:p-8 rounded-3xl border border-white/18 shadow-[0_24px_50px_var(--et-shade-70)] backdrop-blur-3xl flex flex-col items-center text-center relative overflow-hidden space-y-4">
-          <div className="w-16 h-16 rounded-3xl bg-game-accent/15 border border-game-accent/30 flex items-center justify-center text-game-accent shadow-[0_0_30px_var(--game-glow)]">
-            <AppIcon icon={Users} size={32} weight="duotone" />
-          </div>
+      <article className="min-h-screen bg-canvas relative flex flex-col items-center justify-center px-4 py-8 text-center select-none overflow-hidden animate-fade-in">
+        <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 h-72 w-80 rounded-full bg-game-accent/15 blur-[110px]" />
 
-          <h2 className="text-xl sm:text-2xl font-black text-white">
-            {isArabic ? 'في انتظار المنافس...' : 'Waiting for Challenger...'}
-          </h2>
-          <p className="text-xs sm:text-sm text-muted max-w-xs leading-relaxed">
-            {isArabic
-              ? 'شارك كود الروم مع صاحبك أو استنى منافس يدخل عبر الطابور العام.'
-              : 'Share this 6-character room code with your rival to begin the duel.'}
-          </p>
-
-          {/* Room Code Box */}
-          <div className="w-full apple-glass-card border border-white/10 rounded-2xl p-4 flex items-center justify-between gap-3 shadow-inner my-2">
-            <div className="flex flex-col text-start">
-              <span className="text-[10px] font-bold text-muted uppercase tracking-widest">
-                {isArabic ? 'كود الروم' : 'ROOM CODE'}
-              </span>
-              <span className="text-2xl font-mono font-black text-game-accent tracking-widest">
-                {game.code}
+        <div className="apple-glass-elevated relative w-full max-w-md rounded-3xl p-6 sm:p-8 border border-white/18 shadow-[0_24px_50px_var(--et-shade-70),0_0_35px_var(--game-glow)] backdrop-blur-3xl space-y-6">
+          <div className="relative space-y-2">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-game-accent/50 bg-game-accent/15 px-3 py-1 shadow-sm">
+              <AppIcon icon={Users} size={14} weight="fill" className="text-game-accent" />
+              <span className={`text-xs font-black uppercase tracking-wider text-game-accent ${isArabic ? 'font-cairo' : 'font-barlow-condensed'}`}>
+                {isArabic ? 'في انتظار المنافس' : 'Waiting for Opponent'}
               </span>
             </div>
 
+            <h2 className={`text-2xl sm:text-3xl font-black text-white uppercase tracking-tight ${isArabic ? 'font-cairo' : 'font-display'}`}>
+              {isArabic ? 'غرفة مواجهة بنك 1 ضد 1' : '1v1 Bank Duel Lobby'}
+            </h2>
+            <p className={`text-xs text-foreground ${isArabic ? 'font-cairo' : 'font-ui'}`}>
+              {isArabic
+                ? 'شارك هذا الكود مع منافسك لبدء المواجهة:'
+                : 'Share this code with your rival to start the match:'}
+            </p>
+          </div>
+
+          {/* Apple Glass Room Code Card */}
+          <div className="relative p-4 rounded-2xl bg-white/[0.04] border border-white/15 flex items-center justify-between shadow-inner">
+            <span className="text-2xl sm:text-3xl font-stats font-black text-white tracking-[0.24em] ps-2">
+              {game.code}
+            </span>
             <Button
-              type="button"
+              variant="primary"
               size="sm"
-              variant="outline"
               onClick={handleCopyCode}
-              className="gap-1.5 rounded-xl border-white/15"
+              leftIcon={<AppIcon icon={copiedCode ? Check : Copy} size={16} weight="bold" className="text-game-on-accent" />}
+              className="bg-gradient-to-r from-game-accent-light via-game-accent to-game-accent-deep rtl:bg-gradient-to-l text-game-on-accent font-black rounded-xl shadow-[0_4px_16px_var(--game-glow)] cursor-pointer"
             >
-              {copiedCode ? (
-                <>
-                  <AppIcon icon={Check} size={16} weight="bold" className="text-success" />
-                  <span className="text-success">{isArabic ? 'تم النسخ' : 'Copied'}</span>
-                </>
-              ) : (
-                <>
-                  <AppIcon icon={Copy} size={16} weight="bold" />
-                  <span>{isArabic ? 'نسخ' : 'Copy'}</span>
-                </>
-              )}
+              <span className={isArabic ? 'font-cairo font-bold' : 'font-display font-bold'}>
+                {copiedCode ? (isArabic ? 'تم النسخ' : 'Copied') : (isArabic ? 'نسخ' : 'Copy')}
+              </span>
             </Button>
           </div>
 
-          <Button
-            type="button"
-            variant="ghost"
-            size="sm"
-            onClick={handleForfeit}
-            className="text-muted hover:text-danger transition-colors"
-          >
-            <span>{isArabic ? 'إلغاء الروم والرجوع' : 'Cancel Lobby'}</span>
-          </Button>
+          {/* SharePlay Radar Pulse */}
+          <div className="relative flex items-center justify-center gap-2 text-xs text-game-accent font-black uppercase">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-game-accent opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-game-accent" />
+            </span>
+            <span className={isArabic ? 'font-cairo' : 'font-ui'}>
+              {isArabic
+                ? 'رادار الغرفة نشط • في انتظار دخول المنافس...'
+                : 'Room radar active • Waiting for rival to connect...'}
+            </span>
+          </div>
         </div>
-      </div>
+
+        <button
+          type="button"
+          onClick={handleForfeit}
+          className="btn-haptic text-xs text-muted hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer font-black uppercase tracking-wider mt-5"
+        >
+          <AppIcon icon={ArrowLeft} size={14} weight="bold" />
+          <span className={isArabic ? 'font-cairo' : 'font-ui'}>
+            {isArabic ? 'إلغاء والعودة لمركز بنك' : 'Cancel and return to Bank Hub'}
+          </span>
+        </button>
+      </article>
     );
   }
 
@@ -534,14 +556,14 @@ export default function BankArenaPage() {
             </div>
             <div className="flex flex-col leading-tight min-w-0">
               <div className="flex items-center gap-1 sm:gap-1.5">
-                <span className={`text-xs sm:text-sm font-black tracking-wide text-white ${isArabic ? 'font-sans' : 'font-display'}`}>
-                  {isArabic ? 'بَنِّك' : 'BANK IT'}
+                <span className={`text-xs sm:text-sm font-black tracking-wide text-white ${isArabic ? 'font-cairo' : 'font-display'}`}>
+                  {isArabic ? 'بنك' : 'BANK'}
                 </span>
                 <span className="text-[10px] font-black px-1.5 py-0.5 rounded bg-white/10 text-game-accent font-stats tabular-nums shrink-0">
                   {Math.min(game.currentQuestionIndex + 1, BANK_TOTAL_QUESTIONS)}/{BANK_TOTAL_QUESTIONS}
                 </span>
               </div>
-              <span className="text-[10px] text-muted font-medium hidden xs:inline-block truncate">
+              <span className={`text-[10px] text-muted font-medium hidden xs:inline-block truncate ${isArabic ? 'font-cairo' : 'font-ui'}`}>
                 {isSolo
                   ? isArabic
                     ? 'تحدي الـ 90 ثانية'
@@ -662,7 +684,7 @@ export default function BankArenaPage() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-game-accent opacity-75" />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-game-accent" />
                   </span>
-                  <span className={`text-xs sm:text-sm font-black text-game-accent tracking-wide ${isArabic ? 'font-sans' : 'font-display'}`}>
+                  <span className={`text-xs sm:text-sm font-black text-game-accent tracking-wide ${isArabic ? 'font-cairo' : 'font-display'}`}>
                     {isArabic ? `🎯 دورك الآن · الجولة ${game.currentRound}/2` : `🎯 YOUR TURN · Round ${game.currentRound}/2`}
                   </span>
                 </div>
@@ -710,10 +732,10 @@ export default function BankArenaPage() {
                 </div>
 
                 <div className="space-y-1 max-w-sm px-2">
-                  <h3 className={`text-sm sm:text-base font-black text-game-accent tracking-tight ${isArabic ? 'font-sans' : 'font-display'}`}>
-                    {isArabic ? 'أكملت جميع الـ 12 سؤال بنجاح!' : 'ALL 12 QUESTIONS COMPLETED!'}
+                  <h3 className={`text-sm sm:text-base font-black text-game-accent tracking-tight ${isArabic ? 'font-cairo' : 'font-display'}`}>
+                    {isArabic ? 'أكملت جميع الـ 12 سؤالاً بنجاح!' : 'ALL 12 QUESTIONS COMPLETED!'}
                   </h3>
-                  <p className="text-[11px] sm:text-xs text-foreground leading-snug">
+                  <p className={`text-[11px] sm:text-xs text-foreground leading-snug ${isArabic ? 'font-cairo' : 'font-ui'}`}>
                     {isArabic
                       ? 'تم تأمين رصيدك ونقاطك تلقائياً بنجاح!'
                       : 'All questions answered! Your score has been automatically secured.'}
@@ -725,7 +747,7 @@ export default function BankArenaPage() {
                     <>
                       <div className="flex items-center gap-2 bg-game-accent/15 border border-game-accent/40 px-3.5 py-1 rounded-xl shadow-[0_0_20px_var(--game-glow)]">
                         <AppIcon icon={Flame} size={15} weight="fill" className="text-game-accent animate-pulse" />
-                        <span className="text-[11px] sm:text-xs font-bold text-game-accent">
+                        <span className={`text-[11px] sm:text-xs font-bold text-game-accent ${isArabic ? 'font-cairo' : 'font-ui'}`}>
                           {isArabic ? 'نقاط معلقة:' : 'Unbanked Pot:'}
                         </span>
                         <span className="text-xs sm:text-sm font-black font-stats text-game-accent tabular-nums">
@@ -739,18 +761,20 @@ export default function BankArenaPage() {
                         variant="gold"
                         onClick={handleBank}
                         loading={isBanking}
-                        className="w-full max-w-xs min-h-[40px] sm:min-h-[44px] bg-gradient-to-r from-game-accent via-game-accent-light to-game-accent text-game-on-accent font-black shadow-[0_0_30px_var(--game-glow)] rounded-xl sm:rounded-2xl animate-pulse cursor-pointer"
+                        className="w-full max-w-xs min-h-[40px] sm:min-h-[44px] bg-gradient-to-r from-game-accent-light via-game-accent to-game-accent-deep rtl:bg-gradient-to-l text-game-on-accent font-black shadow-[0_0_30px_var(--game-glow)] rounded-xl sm:rounded-2xl animate-pulse cursor-pointer"
                       >
                         <AppIcon icon={Vault} size={17} weight="duotone" />
-                        <span className={isArabic ? 'font-sans font-black text-xs sm:text-sm' : 'font-display font-black text-xs sm:text-sm'}>
-                          {isArabic ? `بَنِّك +${game.unbankedPoints} نقطة فوراً` : `BANK +${game.unbankedPoints} PTS NOW`}
+                        <span className={isArabic ? 'font-cairo font-black text-xs sm:text-sm' : 'font-display font-black text-xs sm:text-sm'}>
+                          {isArabic ? `بنِّك +${game.unbankedPoints} نقطة فوراً` : `BANK +${game.unbankedPoints} PTS NOW`}
                         </span>
                       </Button>
                     </>
                   ) : (
                     <div className="flex items-center gap-1.5 text-game-accent font-bold text-xs bg-game-accent/10 border border-game-accent/20 px-3 py-1.5 rounded-xl">
                       <AppIcon icon={Check} size={15} weight="bold" />
-                      <span>{isArabic ? 'تم تأمين جميع النقاط تلقائياً' : 'All Points Auto-Banked & Secured'}</span>
+                      <span className={isArabic ? 'font-cairo' : 'font-ui'}>
+                        {isArabic ? 'تم تأمين جميع النقاط تلقائياً' : 'All Points Auto-Banked & Secured'}
+                      </span>
                     </div>
                   )}
                 </div>

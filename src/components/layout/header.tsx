@@ -9,6 +9,7 @@ import {
   Translate,
   ArrowLeft,
   X,
+  UserCircle,
 } from '@phosphor-icons/react';
 import { AppIcon } from '@/components/ui/app-icon';
 import { useToast, variantStyles as toastVariantStyles, variantIcons as toastVariantIcons } from '@/components/shared/toast';
@@ -16,6 +17,8 @@ import Image from 'next/image';
 import { useQuery } from 'convex/react';
 import { api } from '../../../convex/_generated/api';
 import { useGuestSession } from '@/hooks/use-guest-session';
+import { useGuestNickname } from '@/hooks/use-guest-nickname';
+import { ManagerNameModal } from '@/components/layout/manager-name-modal';
 import { useOverlayActive } from '@/lib/overlay-state';
 import { useIsGameplay } from '@/hooks/use-is-gameplay';
 import { useI18n } from '@/lib/i18n';
@@ -76,6 +79,8 @@ export function Header({
   const isOverlayActive = useOverlayActive();
   const isGameplay = useIsGameplay();
   const { activeToast, dismiss, registerHeaderActive } = useToast();
+  const [managerNickname] = useGuestNickname();
+  const [isManagerModalOpen, setIsManagerModalOpen] = useState(false);
 
   useEffect(() => {
     registerHeaderActive(true);
@@ -344,8 +349,25 @@ export function Header({
           ) : null}
         </div>
 
-        {/* ── RIGHT: Sound Toggle & Language Switcher on RIGHT in BOTH languages ── */}
+        {/* ── RIGHT: Manager Name, Sound Toggle & Language Switcher on RIGHT in BOTH languages ── */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          {/* Manager Handle Edit Button */}
+          <button
+            type="button"
+            onClick={() => setIsManagerModalOpen(true)}
+            className="et-header-btn flex h-7.5 w-7.5 sm:h-8 sm:w-8 items-center justify-center rounded-full cursor-pointer"
+            title={managerNickname ? `${lang === 'ar' ? 'المدرب' : 'Manager'}: ${managerNickname}` : (lang === 'ar' ? 'اسم المدرب' : 'Manager Name')}
+            aria-label={managerNickname ? `${lang === 'ar' ? 'المدرب' : 'Manager'}: ${managerNickname}` : (lang === 'ar' ? 'اسم المدرب' : 'Manager Name')}
+          >
+            <AppIcon
+              icon={UserCircle}
+              size={15}
+              weight="bold"
+              className="et-hdr-icon transition-colors"
+              style={{ color: `var(--game-accent, ${currentAccent})` }}
+            />
+          </button>
+
           {/* Sound Toggle Button */}
           <button
             type="button"
@@ -385,6 +407,12 @@ export function Header({
           </button>
         </div>
       </div>
+
+      <ManagerNameModal
+        isOpen={isManagerModalOpen}
+        onClose={() => setIsManagerModalOpen(false)}
+        accentColor={currentAccent}
+      />
     </header>
   );
 }

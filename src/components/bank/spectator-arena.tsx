@@ -118,7 +118,7 @@ export function SpectatorArena({
   return (
     <div className="w-full max-w-md mx-auto flex flex-col gap-2 sm:gap-2.5 animate-fade-in select-none">
       {/* 📺 Integrated Luxury Broadcast Header Capsule */}
-      <div className="w-full bg-gradient-to-r from-surface/95 via-well/95 to-surface/95 border border-game-accent/30 rounded-2xl p-2 sm:p-2.5 flex items-center justify-between gap-2 shadow-[0_4px_20px_var(--et-shade-50),0_0_20px_var(--game-glow)] shrink-0">
+      <div className="w-full bg-gradient-to-r from-surface/95 via-well/95 to-surface/95 border border-white/12 rounded-2xl p-2 sm:p-2.5 flex items-center justify-between gap-2 shadow-[0_4px_20px_var(--et-shade-50),0_0_20px_var(--game-glow)] shrink-0">
         {/* Left: Opponent Identity */}
         <div className="flex items-center gap-2 min-w-0">
           <span className="relative flex h-2 w-2 shrink-0">
@@ -175,7 +175,7 @@ export function SpectatorArena({
             {lastAction?.type === 'pass' && '⏭️'}
             {!lastAction && '💬'}
           </span>
-          <span className="truncate">
+          <span className={`truncate ${isArabic ? 'font-cairo' : 'font-ui'}`}>
             {lastAction?.type === 'correct'
               ? isArabic
                 ? 'إجابة صحيحة من المنافس!'
@@ -186,7 +186,7 @@ export function SpectatorArena({
                   : 'Opponent answered wrong! Pot lost.'
                 : lastAction?.type === 'bank'
                   ? isArabic
-                    ? `المنافس بَنَّك رصيده (+${lastAction.pointsEarned ?? 0} نقطة)!`
+                    ? `المنافس بنَّك رصيده (+${lastAction.pointsEarned ?? 0} نقطة)!`
                     : `Opponent banked points (+${lastAction.pointsEarned ?? 0} pts)!`
                   : lastAction?.type === 'pass'
                     ? isArabic
@@ -209,9 +209,9 @@ export function SpectatorArena({
         <div className="w-full bg-game-accent/15 border border-game-accent/30 rounded-xl p-2.5 flex flex-wrap items-center justify-between gap-2 text-game-accent text-xs font-medium animate-pulse shrink-0">
           <div className="flex items-center gap-2">
             <AppIcon icon={Warning} size={16} weight="bold" className="shrink-0 text-game-accent" />
-            <span>
+            <span className={isArabic ? 'font-cairo' : 'font-ui'}>
               {isArabic
-                ? `اتصال المنافس مهزوز (انقطاع منذ ${secondsDisconnected}ث)`
+                ? `اتصال المنافس غير مستقر (انقطاع منذ ${secondsDisconnected}ث)`
                 : `Opponent offline (${secondsDisconnected}s)`}
             </span>
           </div>
@@ -222,10 +222,10 @@ export function SpectatorArena({
               size="sm"
               variant="gold"
               onClick={onClaimVictory}
-              className="font-bold text-xs h-7 px-2.5"
+              className="font-bold text-xs h-7 px-2.5 bg-gradient-to-r from-game-accent to-game-accent-light text-game-on-accent"
             >
               <AppIcon icon={Trophy} size={13} weight="fill" />
-              <span>{isArabic ? 'المطالبة بالفوز' : 'Claim Victory'}</span>
+              <span className={isArabic ? 'font-cairo' : 'font-ui'}>{isArabic ? 'المطالبة بالفوز' : 'Claim Victory'}</span>
             </Button>
           )}
         </div>
@@ -249,20 +249,20 @@ export function SpectatorArena({
           </div>
 
           <div className="space-y-1 px-2">
-            <h3 className={`text-sm sm:text-base font-black text-game-accent tracking-wide ${isArabic ? 'font-sans' : 'font-display'}`}>
+            <h3 className={`text-sm sm:text-base font-black text-game-accent tracking-wide ${isArabic ? 'font-cairo' : 'font-display'}`}>
               {isArabic ? 'المنافس أكمل جميع الأسئلة الـ 12!' : 'Opponent Completed All 12 Questions!'}
             </h3>
-            <p className="text-[11px] sm:text-xs text-foreground leading-snug">
+            <p className={`text-[11px] sm:text-xs text-foreground leading-snug ${isArabic ? 'font-cairo' : 'font-ui'}`}>
               {isArabic
-                ? 'في انتظار قرار المنافس: هل يبَنِّك ويثبت رصيده قبل انتهاء الـ 90 ثانية؟'
+                ? 'في انتظار قرار المنافس: هل يبنِّك ويثبت رصيده قبل انتهاء الـ 90 ثانية؟'
                 : 'Waiting for their decision: Will they bank to lock in their score before time runs out?'}
             </p>
           </div>
 
           {unbankedPoints > 0 && (
             <div className="flex items-center gap-2 bg-game-accent/15 border border-game-accent/40 px-3.5 py-1.5 rounded-xl shadow-sm mb-0.5">
-              <span className="text-[11px] sm:text-xs font-bold text-game-accent">
-                {isArabic ? 'نقاط في خطر:' : 'At-Risk Pot:'}
+              <span className={`text-[11px] sm:text-xs font-bold text-game-accent ${isArabic ? 'font-cairo' : 'font-ui'}`}>
+                {isArabic ? 'نقاط معلقة:' : 'At-Risk Pot:'}
               </span>
               <span className="text-xs sm:text-sm font-black font-stats text-game-accent tabular-nums">
                 +{unbankedPoints} pts
@@ -286,7 +286,9 @@ export function SpectatorArena({
       ) : (
         <div className="w-full max-w-md mx-auto h-[295px] min-h-[295px] max-h-[295px] sm:h-[305px] sm:min-h-[305px] sm:max-h-[305px] apple-glass-elevated rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 border border-white/10 bg-surface/60 shadow-[0_16px_36px_var(--et-shade-60)] backdrop-blur-3xl flex flex-col items-center justify-center gap-3 shrink-0 animate-pulse text-center text-muted text-xs sm:text-sm">
           <AppIcon icon={Broadcast} size={28} className="text-game-accent animate-pulse" />
-          <span>{isArabic ? 'المنافس يجهز للبدء...' : 'Opponent is preparing for challenge...'}</span>
+          <span className={isArabic ? 'font-cairo' : 'font-ui'}>
+            {isArabic ? 'المنافس يجهز للبدء...' : 'Opponent is preparing for challenge...'}
+          </span>
         </div>
       )}
     </div>

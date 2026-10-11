@@ -40,27 +40,27 @@ export function SuddenDeathModal({
   const isArabic = lang === 'ar';
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-2xl animate-fade-in">
-      <div className="w-full max-w-xl apple-glass-elevated border border-game-accent/40 rounded-3xl p-5 sm:p-7 shadow-[0_0_50px_var(--game-glow)] relative overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-2xl animate-fade-in select-none">
+      <div className="w-full max-w-xl apple-glass-elevated border border-game-accent/40 rounded-3xl p-5 sm:p-7 shadow-[0_0_60px_var(--game-glow)] relative overflow-hidden bg-gradient-to-b from-surface/95 via-well/95 to-canvas/95">
         {/* Top Gold Lighting Bar */}
         <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-game-accent via-game-accent-light to-game-accent" />
 
         {/* Modal Header */}
         <div className="flex items-center justify-between gap-3 mb-5">
           <div className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-2xl bg-game-accent/20 border border-game-accent/40 flex items-center justify-center text-game-accent">
+            <div className="w-9 h-9 rounded-2xl bg-game-accent/20 border border-game-accent/40 flex items-center justify-center text-game-accent shadow-[0_0_15px_var(--game-glow)]">
               <AppIcon icon={Lightning} size={20} weight="fill" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className={`text-base sm:text-lg font-black text-game-accent tracking-wide ${isArabic ? 'font-sans' : 'font-display'}`}>
+                <h3 className={`text-base sm:text-lg font-black text-game-accent tracking-wide ${isArabic ? 'font-cairo' : 'font-display'}`}>
                   {isArabic ? 'سؤال الحسم الذهبي' : 'SUDDEN DEATH SHOOTOUT'}
                 </h3>
                 <span className="text-[11px] font-black text-game-accent bg-game-accent/20 px-2 py-0.5 rounded-full border border-game-accent/30 font-stats tabular-nums">
                   {isArabic ? `زوج ${pairIndex} من 3` : `Pair ${pairIndex}/3`}
                 </span>
               </div>
-              <p className="text-xs text-muted">
+              <p className={`text-xs text-muted ${isArabic ? 'font-cairo' : 'font-ui'}`}>
                 {isArabic
                   ? 'سؤال واحد، 15 ثانية فقط. أول فارق يحدد الفائز!'
                   : '15-second golden question. First difference decides the champion!'}
@@ -69,7 +69,7 @@ export function SuddenDeathModal({
           </div>
 
           {/* 15-second Golden Timer */}
-          {deadline && <CircularTimer deadline={deadline} totalDurationMs={15_000} onExpire={onExpire} />}
+          {deadline && <CircularTimer deadline={deadline} totalDurationMs={15_000} size={42} strokeWidth={3.5} onExpire={onExpire} />}
         </div>
 
         {/* Golden Question Content */}
@@ -77,7 +77,7 @@ export function SuddenDeathModal({
           <div className="flex flex-col gap-4">
             <div className="apple-glass-card border border-white/10 rounded-2xl p-4 sm:p-5 text-center">
               <h4
-                className={`text-base sm:text-lg font-black text-white leading-relaxed ${isArabic ? 'font-sans' : 'font-display'}`}
+                className={`text-base sm:text-lg font-black text-white leading-relaxed ${isArabic ? 'font-cairo' : 'font-display'}`}
                 dir={isArabic ? 'rtl' : 'ltr'}
               >
                 {question.question[lang] || question.question.en}
@@ -102,11 +102,11 @@ export function SuddenDeathModal({
                     onClick={() => onSelectOption(opt.id)}
                     className={`min-h-[52px] p-3.5 rounded-2xl border flex items-center justify-between gap-3 text-start transition-all duration-150 select-none cursor-pointer disabled:cursor-not-allowed disabled:opacity-60 ${
                       isSelected
-                        ? 'border-game-accent bg-game-accent/25 text-game-accent shadow-[0_0_15px_var(--game-glow)] scale-[1.02]'
+                        ? 'border-game-accent bg-game-accent/25 text-white shadow-[0_0_20px_var(--game-glow)] scale-[1.02]'
                         : 'apple-glass-card border-white/10 hover:border-game-accent/40 hover:bg-white/[0.08] text-foreground'
                     }`}
                   >
-                    <div className="flex items-center gap-2.5">
+                    <div className="flex items-center gap-2.5 min-w-0">
                       {question.type === 'mcq' && (
                         <span
                           className={`w-6 h-6 rounded-lg flex items-center justify-center font-stats text-xs font-black shrink-0 ${
@@ -116,7 +116,7 @@ export function SuddenDeathModal({
                           {letterBadge}
                         </span>
                       )}
-                      <span className="text-sm sm:text-base font-semibold">
+                      <span className={`text-sm sm:text-base font-semibold truncate ${isArabic ? 'font-cairo' : 'font-ui'}`}>
                         {opt.text[lang] || opt.text.en}
                       </span>
                     </div>
@@ -130,14 +130,14 @@ export function SuddenDeathModal({
           <div className="min-h-[160px] flex flex-col items-center justify-center gap-3 apple-glass-card border border-white/10 rounded-2xl p-6 text-center">
             <AppIcon icon={HourglassSimple} size={36} weight="duotone" className="text-game-accent animate-spin-slow" />
             <div className="flex flex-col gap-1">
-              <span className="text-sm font-bold text-foreground">
+              <span className={`text-sm font-bold text-foreground ${isArabic ? 'font-cairo' : 'font-ui'}`}>
                 {isArabic
                   ? 'المنافس يجاوب سؤاله الذهبي الآن...'
                   : 'Opponent is answering their golden question...'}
               </span>
-              <span className="text-xs text-muted">
+              <span className={`text-xs text-muted ${isArabic ? 'font-cairo' : 'font-ui'}`}>
                 {isArabic
-                  ? 'ثواني ونكشف النتيجة النهائية للماتش'
+                  ? 'ثوانٍ ونكشف النتيجة النهائية للماتش'
                   : 'Revealing shootout outcome in a few seconds'}
               </span>
             </div>

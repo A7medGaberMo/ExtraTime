@@ -12,4 +12,5 @@ export { RankChartVisual } from './rank-chart-visual';
 export { HubSoloButton, RankSoloTile, RankSoloButton, type HubSoloButtonProps, type RankSoloTileProps, type RankSoloButtonProps } from './rank-solo-button';
 export { RankSetupSheet, type RankSetupSheetProps, type RankSetupMode } from './rank-setup-sheet';
 export { BankVaultVisual } from './bank-vault-visual';
+export { BankSetupSheet, type BankSetupSheetProps, type BankSetupMode } from './bank-setup-sheet';
 export { JoinCipherVisual, type JoinCipherVisualProps } from './join-cipher-visual';

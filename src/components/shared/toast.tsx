@@ -179,11 +179,11 @@ export const variantIcons: Record<ToastVariant, ReactNode> = {
 
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [toasts, setToasts] = useState<ToastItem[]>([]);
-  const isHeaderActiveRef = useRef(false);
+  const [isHeaderActive, setIsHeaderActive] = useState(false);
   const activeTimersRef = useRef<Map<string, NodeJS.Timeout>>(new Map());
 
   const registerHeaderActive = useCallback((active: boolean) => {
-    isHeaderActiveRef.current = active;
+    setIsHeaderActive(active);
   }, []);
 
   const dismiss = useCallback((id: string) => {
@@ -285,7 +285,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 
       {/* ── Standalone Top-Center Toast Pill (Centered at Header position) ──
           Always centered at header level. Displays if header is not rendering the toast or in gameplay. */}
-      {toasts.length > 0 && !isHeaderActiveRef.current && (
+      {toasts.length > 0 && !isHeaderActive && (
         <div
           dir="ltr"
           className="fixed top-[max(0.6rem,calc(env(safe-area-inset-top,0px)+0.4rem))] inset-x-0 z-[100] flex flex-col items-center pointer-events-none select-none px-3 gap-1.5"

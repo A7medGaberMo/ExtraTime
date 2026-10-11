@@ -130,7 +130,7 @@ export function ResultsModal({
         />
 
         {/* Outcome Header */}
-        <h2 className={`text-2xl sm:text-3xl font-black tracking-tight mt-1 sm:mt-2 ${isArabic ? 'font-sans' : 'font-display'} ${outcomeColor}`}>
+        <h2 className={`text-2xl sm:text-3xl font-black tracking-tight mt-1 sm:mt-2 ${isArabic ? 'font-cairo' : 'font-display'} ${outcomeColor}`}>
           {outcomeTitle}
         </h2>
 
@@ -238,10 +238,10 @@ export function ResultsModal({
               loading={isRematchPending || (rematchState?.status === 'pending' && rematchState.iAmInviter) || rematchState?.status === 'accepted'}
               disabled={isRematchPending || (rematchState?.status === 'pending' && rematchState.iAmInviter) || rematchState?.status === 'accepted'}
               onClick={onRematch}
-              className="bg-gradient-to-r from-game-accent via-game-accent-light to-game-accent text-game-on-accent font-black shadow-lg shadow-game-accent/30 rounded-xl sm:rounded-2xl"
+              className="bg-gradient-to-r from-game-accent-light via-game-accent to-game-accent-deep rtl:bg-gradient-to-l text-game-on-accent font-black shadow-lg shadow-game-accent/30 rounded-xl sm:rounded-2xl cursor-pointer"
             >
               <AppIcon icon={rematchGameId ? Lightning : ArrowClockwise} size={18} weight="bold" />
-              <span className={isArabic ? 'font-sans font-black' : 'font-display font-black'}>
+              <span className={isArabic ? 'font-cairo font-black text-sm' : 'font-display font-black tracking-wide'}>
                 {rematchState?.status === 'accepted'
                   ? isArabic
                     ? 'جارٍ دخول ماتش الإعادة...'
@@ -256,7 +256,7 @@ export function ResultsModal({
                         : 'Opponent Declined (Try Again)'
                       : isSolo
                         ? isArabic
-                          ? 'العب مرة تانية'
+                          ? 'العب مرة ثانية'
                           : 'Play Again'
                         : isArabic
                           ? 'طلب ريماتش (ماتش جديد)'
@@ -272,11 +272,11 @@ export function ResultsModal({
               variant="secondary"
               fullWidth
               onClick={onHub}
-              className="font-bold text-xs text-foreground apple-glass-card rounded-xl"
+              className="font-bold text-xs text-foreground apple-glass-card rounded-xl cursor-pointer"
             >
-              <AppIcon icon={Trophy} size={16} weight="duotone" />
-              <span className={isArabic ? 'font-sans' : 'font-display'}>
-                {isArabic ? 'صالة بَنِّك' : 'Bank It Hub'}
+              <AppIcon icon={Trophy} size={16} weight="duotone" className="text-game-accent" />
+              <span className={isArabic ? 'font-cairo font-bold' : 'font-display font-bold'}>
+                {isArabic ? 'مركز بنك' : 'Bank Hub'}
               </span>
             </Button>
 
@@ -286,10 +286,10 @@ export function ResultsModal({
               variant="outline"
               fullWidth
               onClick={onHome}
-              className="font-bold text-xs text-muted rounded-xl border-white/10 hover:border-white/20"
+              className="font-bold text-xs text-muted rounded-xl border-white/10 hover:border-white/20 cursor-pointer"
             >
               <AppIcon icon={House} size={16} weight="duotone" />
-              <span className={isArabic ? 'font-sans' : 'font-display'}>
+              <span className={isArabic ? 'font-cairo font-bold' : 'font-display font-bold'}>
                 {isArabic ? 'الرئيسية' : 'Home'}
               </span>
             </Button>
@@ -302,34 +302,35 @@ export function ResultsModal({
               className="btn-haptic flex-1 flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-game-accent/25 bg-game-accent/10 text-game-accent hover:border-game-accent/50 text-[11px] font-semibold transition-all shadow-sm"
             >
               <AppIcon icon={Ranking} size={13} weight="bold" />
-              <span>{isArabic ? 'تحدي رتّب' : 'Play Rank'}</span>
+              <span className={isArabic ? 'font-cairo' : 'font-ui'}>{isArabic ? 'تحدي رتّب' : 'Play Rank'}</span>
             </Link>
             <Link
-              href="/create-room"
+              href="/snipe"
               className="btn-haptic flex-1 flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-game-accent/25 bg-game-accent/10 text-game-accent hover:border-game-accent/50 text-[11px] font-semibold transition-all shadow-sm"
             >
               <AppIcon icon={Cards} size={13} weight="bold" />
-              <span>{isArabic ? 'مزاد واشتباك' : 'Snipe Auction'}</span>
+              <span className={isArabic ? 'font-cairo' : 'font-ui'}>{isArabic ? 'مزاد واشتباك' : 'Snipe Auction'}</span>
             </Link>
           </div>
         </div>
       </div>
+
       {/* Opponent Rematch Invitation Overlay */}
       {!isSolo && rematchState?.status === 'pending' && !rematchState.iAmInviter && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-          <div className="apple-glass-elevated max-w-sm w-full p-6 text-center space-y-5 rounded-3xl border border-game-accent/40 shadow-[0_20px_60px_var(--game-glow)]">
+          <div className="apple-glass-elevated max-w-sm w-full p-6 text-center space-y-5 rounded-3xl border border-game-accent/40 shadow-[0_20px_60px_var(--game-glow)] bg-gradient-to-b from-surface/95 to-canvas/95">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-game-accent/40 bg-game-accent/10 text-game-accent mx-auto shadow-[0_0_24px_var(--game-glow)]">
               <AppIcon icon={UserPlus} size={32} weight="duotone" />
             </div>
 
             <div className="space-y-1.5">
-              <h2 className="text-xl font-black text-white uppercase font-display tracking-tight">
+              <h2 className={`text-xl font-black text-white uppercase tracking-tight ${isArabic ? 'font-cairo' : 'font-display'}`}>
                 {isArabic ? 'دعوة لإعادة الماتش!' : 'Rematch Invitation!'}
               </h2>
-              <p className="text-muted text-xs font-medium max-w-xs mx-auto leading-relaxed">
+              <p className={`text-muted text-xs font-medium max-w-xs mx-auto leading-relaxed ${isArabic ? 'font-cairo' : 'font-ui'}`}>
                 {isArabic
-                  ? `${rematchState.inviterName || 'المنافس'} يتحداك في جولة بَنِّك جديدة!`
-                  : `${rematchState.inviterName || 'Your opponent'} challenges you to a Bank It Rematch!`}
+                  ? `${rematchState.inviterName || 'المنافس'} يتحداك في جولة بنك جديدة!`
+                  : `${rematchState.inviterName || 'Your opponent'} challenges you to a Bank Rematch!`}
               </p>
             </div>
 
@@ -340,9 +341,11 @@ export function ResultsModal({
                 fullWidth
                 onClick={onAcceptRematch}
                 leftIcon={<AppIcon icon={CheckCircle} size={20} weight="fill" className="text-game-on-accent" />}
-                className="font-bold text-game-on-accent shadow-[0_4px_20px_var(--game-glow)]"
+                className="font-bold text-game-on-accent shadow-[0_4px_20px_var(--game-glow)] bg-gradient-to-r from-game-accent via-game-accent-light to-game-accent"
               >
-                {isArabic ? 'قبول التحدي' : 'Accept Rematch'}
+                <span className={isArabic ? 'font-cairo font-bold' : 'font-display font-bold'}>
+                  {isArabic ? 'قبول التحدي' : 'Accept Rematch'}
+                </span>
               </Button>
               <Button
                 variant="ghost"
@@ -352,7 +355,7 @@ export function ResultsModal({
                 leftIcon={<AppIcon icon={X} size={16} weight="bold" className="text-muted" />}
                 className="text-muted hover:text-white"
               >
-                {isArabic ? 'رفض' : 'Decline'}
+                <span className={isArabic ? 'font-cairo' : 'font-ui'}>{isArabic ? 'رفض' : 'Decline'}</span>
               </Button>
             </div>
           </div>

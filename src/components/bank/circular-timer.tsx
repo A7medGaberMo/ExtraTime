@@ -64,20 +64,21 @@ export function CircularTimer({
   const totalSecs = Math.max(1, Math.round(totalDurationMs / 1000));
   const progressRatio = Math.min(1, Math.max(0, remainingSeconds / totalSecs));
 
-  // Color calculation based on urgency: Monaco 24K Gold -> Warning Orange -> Urgent Crimson
+  // Dynamic urgency color calculation matching Hub Theme: Game Accent -> Warning Amber -> Urgent Crimson
   const isUrgent = remainingSeconds <= 10;
   const isWarning = remainingSeconds <= 25 && !isUrgent;
 
   const strokeColor = isUrgent
-    ? 'var(--et-danger)'
+    ? 'var(--et-danger, #ef4444)'
     : isWarning
-      ? 'var(--et-warning)'
-      : 'var(--et-warning)';
+      ? 'var(--et-warning, #f59e0b)'
+      : 'var(--game-accent, #fb7185)';
+
   const glowColor = isUrgent
-    ? 'var(--et-danger)'
+    ? 'var(--et-danger-glow, rgba(239, 68, 68, 0.4))'
     : isWarning
-      ? 'var(--et-warning)'
-      : 'var(--et-warning)';
+      ? 'rgba(245, 158, 11, 0.35)'
+      : 'var(--game-glow, rgba(251, 113, 133, 0.35))';
 
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
@@ -91,12 +92,12 @@ export function CircularTimer({
         className="transform -rotate-90"
         style={{ filter: `drop-shadow(0 0 8px ${glowColor})` }}
       >
-        {/* Background Track */}
+        {/* Background Subtle Track */}
         <circle
           cx={size / 2}
           cy={size / 2}
           r={radius}
-          stroke="var(--et-hi-10)"
+          stroke="rgba(255, 255, 255, 0.08)"
           strokeWidth={strokeWidth}
           fill="none"
         />
@@ -122,18 +123,24 @@ export function CircularTimer({
             ? 'animate-pulse scale-105 text-danger'
             : isWarning
               ? 'text-warning'
-              : 'text-warning'
+              : 'text-game-accent'
         }`}
       >
         <span
-          className={`font-stats font-mono font-black tracking-tight leading-none tabular-nums ${
-            size <= 44 ? 'text-xs' : size <= 52 ? 'text-sm' : 'text-xl'
+          className={`font-stats font-black tracking-tight leading-none tabular-nums ${
+            size <= 38
+              ? 'text-[11px]'
+              : size <= 44
+                ? 'text-xs'
+                : size <= 52
+                  ? 'text-sm'
+                  : 'text-xl'
           }`}
         >
           {remainingSeconds}
         </span>
-        {size > 48 && (
-          <span className="text-[9px] font-bold text-muted uppercase leading-none mt-0.5">
+        {size > 52 && (
+          <span className="text-[8.5px] font-bold text-muted uppercase leading-none mt-0.5 font-stats">
             SEC
           </span>
         )}

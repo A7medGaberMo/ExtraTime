@@ -30,7 +30,7 @@ export function StreakLadder({
     const reversedSteps = [...LADDER_STEPS].reverse();
     return (
       <div className="w-full apple-glass-elevated rounded-3xl p-4 sm:p-5 shadow-[0_24px_50px_var(--et-shade-70),0_0_40px_var(--game-glow)] backdrop-blur-3xl flex flex-col gap-3 select-none border border-game-accent/30 bg-gradient-to-b from-surface/95 via-well/95 to-canvas/95 relative overflow-hidden">
-        {/* Monaco Vault Gold Ambient Top Shimmer */}
+        {/* Ambient Top Shimmer */}
         <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-game-accent to-transparent opacity-85" />
 
         {/* Header */}
@@ -40,11 +40,11 @@ export function StreakLadder({
               <AppIcon icon={Lightning} size={18} weight="fill" />
             </div>
             <div className="flex flex-col">
-              <span className={`text-xs font-black uppercase text-game-accent-light tracking-wider ${isArabic ? 'font-sans' : 'font-display'}`}>
+              <span className={`text-xs font-black uppercase text-game-accent-light tracking-wider ${isArabic ? 'font-cairo' : 'font-display'}`}>
                 {isArabic ? 'سلم الجائزة الكبرى' : 'PRIZE LADDER'}
               </span>
               <span className="text-[10px] text-muted font-stats">
-                {isArabic ? '12 سؤال متصاعد بمضاعفة 2x' : '12-Step Doubling Run'}
+                {isArabic ? '12 سؤالاً بمضاعفة مستمرة 2x' : '12-Step Doubling Run'}
               </span>
             </div>
           </div>
@@ -136,8 +136,8 @@ export function StreakLadder({
 
   // ── HORIZONTAL COMPACT VARIANT (MOBILE & RESPONSIVE DESKTOP) ──────────────
   return (
-    <div className="w-full apple-glass-card rounded-2xl p-2 sm:p-2.5 border border-game-accent/25 bg-gradient-to-r from-surface/95 via-well/95 to-surface/95 shadow-lg backdrop-blur-2xl select-none relative overflow-hidden">
-      {/* Monaco Gold Top Accent Shimmer */}
+    <div className="w-full apple-glass-card rounded-2xl p-2 sm:p-2.5 border border-white/12 bg-surface/85 shadow-lg backdrop-blur-3xl select-none relative overflow-hidden">
+      {/* Top Accent Shimmer */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-game-accent/60 to-transparent" />
 
       {/* Top Status Strip: Multiplier Badge + Next Reward */}
@@ -147,7 +147,7 @@ export function StreakLadder({
           <div
             className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-xl text-xs font-black transition-all ${
               currentStreak > 0
-                ? 'bg-game-accent/20 border border-game-accent/50 text-game-accent-light shadow-[0_0_14px_var(--game-glow)]'
+                ? 'bg-game-accent/20 border border-game-accent/50 text-white shadow-[0_0_14px_var(--game-glow)]'
                 : 'bg-white/5 border border-white/10 text-muted'
             }`}
           >
@@ -157,16 +157,16 @@ export function StreakLadder({
               weight={currentStreak > 0 ? 'fill' : 'bold'}
               className={currentStreak > 0 ? 'text-game-accent animate-pulse' : 'text-muted'}
             />
-            <span className="font-stats font-black tracking-tight tabular-nums">
+            <span className="font-stats font-black tracking-tight tabular-nums text-white">
               x{currentStreak}
             </span>
-            <span className="text-[10px] font-bold opacity-80">
+            <span className="text-[10px] font-bold opacity-80 text-muted">
               {isArabic ? 'متتالية' : 'Streak'}
             </span>
           </div>
 
           {unbankedPoints > 0 && (
-            <span className="text-xs font-stats font-black text-game-accent tabular-nums flex items-center gap-1">
+            <span className="text-xs font-stats font-black text-game-accent tabular-nums flex items-center gap-1 animate-pulse">
               <span>+{unbankedPoints}</span>
               <span className="text-[10px] font-sans opacity-80">pts</span>
             </span>
@@ -178,7 +178,7 @@ export function StreakLadder({
           <span className="text-muted text-[10px] uppercase font-stats">{isArabic ? 'القادم:' : 'Next:'}</span>
           <span className="font-stats font-black text-game-accent tabular-nums">
             {currentStreak >= 12
-              ? (isArabic ? 'الحد الأقصى' : 'MAX (JACKPOT)')
+              ? (isArabic ? 'الحد الأقصى 🏆' : 'MAX (JACKPOT) 🏆')
               : `+${nextStepPoints} pts`}
           </span>
         </div>
@@ -191,13 +191,13 @@ export function StreakLadder({
           const isPassed = currentStreak > step;
           const isJackpot = step === 12;
 
-          let barBg = 'bg-white/10 border-white/5';
+          let barBg = 'bg-white/[0.08] border-white/5';
           if (isActive) {
             barBg =
-              'bg-gradient-to-t from-game-accent via-game-accent-light to-game-accent shadow-[0_0_16px_var(--game-glow)] border-game-accent-light scale-y-125 z-10';
+              'bg-gradient-to-t from-game-accent via-game-accent-light to-white shadow-[0_0_18px_var(--game-glow)] border-white scale-y-125 z-10 animate-pulse';
           } else if (isPassed) {
             barBg =
-              'bg-gradient-to-t from-game-accent/60 to-game-accent shadow-[0_0_8px_var(--game-glow)] border-game-accent/40';
+              'bg-gradient-to-t from-game-accent/70 to-game-accent shadow-[0_0_8px_var(--game-glow)] border-game-accent/50';
           } else if (isJackpot) {
             barBg = 'bg-game-accent/20 border-game-accent/40';
           }
@@ -223,7 +223,7 @@ export function StreakLadder({
         <span>#8 (128pts)</span>
         <span className="text-game-accent font-black flex items-center gap-0.5">
           <AppIcon icon={Crown} size={10} weight="fill" />
-          <span>#12 (2048)</span>
+          <span>#12 (2,048)</span>
         </span>
       </div>
     </div>

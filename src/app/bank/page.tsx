@@ -17,6 +17,8 @@ import {
   RulesStrip,
   BankVaultVisual,
   HubSoloButton,
+  BankSetupSheet,
+  type BankSetupMode,
 } from '@/components/hub';
 import { useI18n } from '@/lib/i18n';
 import { randomEgyptianManagerName as randomName } from '@/lib/random-names';
@@ -29,21 +31,24 @@ export default function BankHubPage() {
   const { t } = useI18n();
 
   const { ensureGuestId } = useGuestSession();
-  const [nickname] = useGuestNickname();
+  const [nickname, setNickname] = useGuestNickname();
 
   const createSolo = useMutation(api.bank.mutations.createSoloGame);
   const findPublicMatch = useMutation(api.bank.mutations.findOrCreatePublicMatch);
+  const joinDuel = useMutation(api.bank.mutations.joinDuelPrivateRoom);
 
   const queueStats = useQuery(api.bank.queries.getPublicQueueSummary);
 
-  const [loadingAction, setLoadingAction] = useState<'public' | 'solo' | null>(null);
+  const [loadingAction, setLoadingAction] = useState<'public' | 'solo' | 'sheet' | null>(null);
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const [sheetMode, setSheetMode] = useState<BankSetupMode>('rules');
 
   const waitingCount = queueStats?.waitingCount ?? 0;
   const queueReady = queueStats !== undefined;
 
-  // Helper to ensure guest id silently without modal/name UI
-  const getEnsuredIdentity = async () => {
-    const activeName = (nickname || '').trim() || randomName();
+  // Helper to ensure guest id silently or with custom nickname
+  const getEnsuredIdentity = async (customName?: string) => {
+    const activeName = (customName || nickname || '').trim() || randomName();
     const ensuredId = await ensureGuestId(activeName);
     const token =
       typeof window !== 'undefined'
@@ -78,6 +83,59 @@ export default function BankHubPage() {
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Failed to start solo game';
       toast({ title: 'Error', message: msg, type: 'error' });
+      setLoadingAction(null);
+    }
+  };
+
+  // Open Sheet Helper
+  const handleOpenSheet = (mode: BankSetupMode) => {
+    setSheetMode(mode);
+    setSheetOpen(true);
+  };
+
+  // Handle Sheet Confirm Actions (e.g. Join with PIN or Rules Got It)
+  const handleSheetConfirm = async ({
+    nickname: sheetNickname,
+    joinCode,
+  }: {
+    nickname: string;
+    joinCode?: string;
+  }) => {
+    if (loadingAction) return;
+    setLoadingAction('sheet');
+
+    try {
+      if (sheetNickname) {
+        setNickname(sheetNickname);
+      }
+      const { guestId: ensuredId, token } = await getEnsuredIdentity(sheetNickname);
+
+      if (sheetMode === 'join') {
+        if (!joinCode || joinCode.length !== 6) {
+          throw new Error('Please enter a valid 6-character room code.');
+        }
+        const res = await joinDuel({
+          guestId: ensuredId,
+          sessionToken: token,
+          code: joinCode,
+        });
+        setSheetOpen(false);
+        router.push(`/bank/${res.gameId}`);
+      } else if (sheetMode === 'solo') {
+        const res = await createSolo({ guestId: ensuredId, sessionToken: token });
+        setSheetOpen(false);
+        router.push(`/bank/${res.gameId}`);
+      } else if (sheetMode === 'quick') {
+        const res = await findPublicMatch({ guestId: ensuredId, sessionToken: token });
+        setSheetOpen(false);
+        router.push(`/bank/${res.gameId}`);
+      } else {
+        setSheetOpen(false);
+      }
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : 'Operation failed';
+      toast({ title: 'Error', message: msg, type: 'error' });
+    } finally {
       setLoadingAction(null);
     }
   };
@@ -156,10 +214,10 @@ export default function BankHubPage() {
         />
 
         <SecondaryActionButton
-          id="bank-join-code-link"
+          id="bank-join-code-btn"
           label={t('bankHub.joinWithCode')}
           icon={Key}
-          href="/join-room"
+          onClick={() => handleOpenSheet('join')}
           disabled={loadingAction !== null}
         />
       </div>
@@ -183,6 +241,15 @@ export default function BankHubPage() {
             subtitle: t('bankHub.features.risingPressureSub'),
           },
         ]}
+      />
+
+      {/* ── Bank Setup & Rules Bottom Sheet ── */}
+      <BankSetupSheet
+        isOpen={sheetOpen}
+        onClose={() => setSheetOpen(false)}
+        mode={sheetMode}
+        onConfirm={handleSheetConfirm}
+        loading={loadingAction === 'sheet'}
       />
     </GameHubShell>
   );
